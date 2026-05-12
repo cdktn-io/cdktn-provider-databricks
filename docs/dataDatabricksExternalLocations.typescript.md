@@ -4,7 +4,7 @@
 
 ### DataDatabricksExternalLocations <a name="DataDatabricksExternalLocations" id="@cdktn/provider-databricks.dataDatabricksExternalLocations.DataDatabricksExternalLocations"></a>
 
-Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/external_locations databricks_external_locations}.
+Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/external_locations databricks_external_locations}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksExternalLocations.DataDatabricksExternalLocations.Initializer"></a>
 
@@ -421,7 +421,7 @@ The construct id used in the generated config for the DataDatabricksExternalLoca
 
 The id of the existing DataDatabricksExternalLocations that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/external_locations#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/external_locations#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -681,8 +681,8 @@ const dataDatabricksExternalLocationsConfig: dataDatabricksExternalLocations.Dat
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksExternalLocations.DataDatabricksExternalLocationsConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksExternalLocations.DataDatabricksExternalLocationsConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksExternalLocations.DataDatabricksExternalLocationsConfig.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksExternalLocations.DataDatabricksExternalLocationsConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/external_locations#id DataDatabricksExternalLocations#id}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksExternalLocations.DataDatabricksExternalLocationsConfig.property.names">names</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/external_locations#names DataDatabricksExternalLocations#names}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksExternalLocations.DataDatabricksExternalLocationsConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/external_locations#id DataDatabricksExternalLocations#id}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksExternalLocations.DataDatabricksExternalLocationsConfig.property.names">names</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/external_locations#names DataDatabricksExternalLocations#names}. |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksExternalLocations.DataDatabricksExternalLocationsConfig.property.providerConfig">providerConfig</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksExternalLocations.DataDatabricksExternalLocationsProviderConfig">DataDatabricksExternalLocationsProviderConfig</a></code> | provider_config block. |
 
 ---
@@ -765,7 +765,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/external_locations#id DataDatabricksExternalLocations#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/external_locations#id DataDatabricksExternalLocations#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -780,7 +780,7 @@ public readonly names: string[];
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/external_locations#names DataDatabricksExternalLocations#names}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/external_locations#names DataDatabricksExternalLocations#names}.
 
 ---
 
@@ -794,7 +794,7 @@ public readonly providerConfig: DataDatabricksExternalLocationsProviderConfig;
 
 provider_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/external_locations#provider_config DataDatabricksExternalLocations#provider_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/external_locations#provider_config DataDatabricksExternalLocations#provider_config}
 
 ---
 
@@ -812,11 +812,11 @@ const dataDatabricksExternalLocationsProviderConfig: dataDatabricksExternalLocat
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksExternalLocations.DataDatabricksExternalLocationsProviderConfig.property.workspaceId">workspaceId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/external_locations#workspace_id DataDatabricksExternalLocations#workspace_id}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksExternalLocations.DataDatabricksExternalLocationsProviderConfig.property.workspaceId">workspaceId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/external_locations#workspace_id DataDatabricksExternalLocations#workspace_id}. |
 
 ---
 
-##### `workspaceId`<sup>Required</sup> <a name="workspaceId" id="@cdktn/provider-databricks.dataDatabricksExternalLocations.DataDatabricksExternalLocationsProviderConfig.property.workspaceId"></a>
+##### `workspaceId`<sup>Optional</sup> <a name="workspaceId" id="@cdktn/provider-databricks.dataDatabricksExternalLocations.DataDatabricksExternalLocationsProviderConfig.property.workspaceId"></a>
 
 ```typescript
 public readonly workspaceId: string;
@@ -824,7 +824,7 @@ public readonly workspaceId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/external_locations#workspace_id DataDatabricksExternalLocations#workspace_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/external_locations#workspace_id DataDatabricksExternalLocations#workspace_id}.
 
 ---
 
@@ -880,6 +880,7 @@ The attribute on the parent resource this class is referencing.
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksExternalLocations.DataDatabricksExternalLocationsProviderConfigOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksExternalLocations.DataDatabricksExternalLocationsProviderConfigOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksExternalLocations.DataDatabricksExternalLocationsProviderConfigOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksExternalLocations.DataDatabricksExternalLocationsProviderConfigOutputReference.resetWorkspaceId">resetWorkspaceId</a></code> | *No description.* |
 
 ---
 
@@ -1032,6 +1033,12 @@ public toString(): string
 Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
+
+##### `resetWorkspaceId` <a name="resetWorkspaceId" id="@cdktn/provider-databricks.dataDatabricksExternalLocations.DataDatabricksExternalLocationsProviderConfigOutputReference.resetWorkspaceId"></a>
+
+```typescript
+public resetWorkspaceId(): void
+```
 
 
 #### Properties <a name="Properties" id="Properties"></a>

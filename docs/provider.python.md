@@ -4,7 +4,7 @@
 
 ### DatabricksProvider <a name="DatabricksProvider" id="@cdktn/provider-databricks.provider.DatabricksProvider"></a>
 
-Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs databricks}.
+Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs databricks}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.provider.DatabricksProvider.Initializer"></a>
 
@@ -38,7 +38,6 @@ provider.DatabricksProvider(
   debug_truncate_bytes: typing.Union[int, float] = None,
   disable_oauth_refresh_token: bool | IResolvable = None,
   discovery_url: str = None,
-  experimental_is_unified_host: bool | IResolvable = None,
   google_credentials: str = None,
   google_service_account: str = None,
   host: str = None,
@@ -64,49 +63,48 @@ provider.DatabricksProvider(
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-databricks.provider.DatabricksProvider.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
 | <code><a href="#@cdktn/provider-databricks.provider.DatabricksProvider.Initializer.parameter.id">id</a></code> | <code>str</code> | The scoped construct ID. |
-| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProvider.Initializer.parameter.accountId">account_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs#account_id DatabricksProvider#account_id}. |
-| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProvider.Initializer.parameter.actionsIdTokenRequestToken">actions_id_token_request_token</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs#actions_id_token_request_token DatabricksProvider#actions_id_token_request_token}. |
-| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProvider.Initializer.parameter.actionsIdTokenRequestUrl">actions_id_token_request_url</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs#actions_id_token_request_url DatabricksProvider#actions_id_token_request_url}. |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProvider.Initializer.parameter.accountId">account_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs#account_id DatabricksProvider#account_id}. |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProvider.Initializer.parameter.actionsIdTokenRequestToken">actions_id_token_request_token</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs#actions_id_token_request_token DatabricksProvider#actions_id_token_request_token}. |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProvider.Initializer.parameter.actionsIdTokenRequestUrl">actions_id_token_request_url</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs#actions_id_token_request_url DatabricksProvider#actions_id_token_request_url}. |
 | <code><a href="#@cdktn/provider-databricks.provider.DatabricksProvider.Initializer.parameter.alias">alias</a></code> | <code>str</code> | Alias name. |
-| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProvider.Initializer.parameter.audience">audience</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs#audience DatabricksProvider#audience}. |
-| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProvider.Initializer.parameter.authType">auth_type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs#auth_type DatabricksProvider#auth_type}. |
-| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProvider.Initializer.parameter.azureClientId">azure_client_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs#azure_client_id DatabricksProvider#azure_client_id}. |
-| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProvider.Initializer.parameter.azureClientSecret">azure_client_secret</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs#azure_client_secret DatabricksProvider#azure_client_secret}. |
-| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProvider.Initializer.parameter.azureEnvironment">azure_environment</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs#azure_environment DatabricksProvider#azure_environment}. |
-| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProvider.Initializer.parameter.azureLoginAppId">azure_login_app_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs#azure_login_app_id DatabricksProvider#azure_login_app_id}. |
-| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProvider.Initializer.parameter.azureTenantId">azure_tenant_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs#azure_tenant_id DatabricksProvider#azure_tenant_id}. |
-| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProvider.Initializer.parameter.azureUseMsi">azure_use_msi</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs#azure_use_msi DatabricksProvider#azure_use_msi}. |
-| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProvider.Initializer.parameter.azureWorkspaceResourceId">azure_workspace_resource_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs#azure_workspace_resource_id DatabricksProvider#azure_workspace_resource_id}. |
-| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProvider.Initializer.parameter.clientId">client_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs#client_id DatabricksProvider#client_id}. |
-| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProvider.Initializer.parameter.clientSecret">client_secret</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs#client_secret DatabricksProvider#client_secret}. |
-| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProvider.Initializer.parameter.cloud">cloud</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs#cloud DatabricksProvider#cloud}. |
-| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProvider.Initializer.parameter.clusterId">cluster_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs#cluster_id DatabricksProvider#cluster_id}. |
-| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProvider.Initializer.parameter.configFile">config_file</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs#config_file DatabricksProvider#config_file}. |
-| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProvider.Initializer.parameter.databricksCliPath">databricks_cli_path</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs#databricks_cli_path DatabricksProvider#databricks_cli_path}. |
-| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProvider.Initializer.parameter.databricksIdTokenFilepath">databricks_id_token_filepath</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs#databricks_id_token_filepath DatabricksProvider#databricks_id_token_filepath}. |
-| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProvider.Initializer.parameter.debugHeaders">debug_headers</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs#debug_headers DatabricksProvider#debug_headers}. |
-| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProvider.Initializer.parameter.debugTruncateBytes">debug_truncate_bytes</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs#debug_truncate_bytes DatabricksProvider#debug_truncate_bytes}. |
-| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProvider.Initializer.parameter.disableOauthRefreshToken">disable_oauth_refresh_token</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs#disable_oauth_refresh_token DatabricksProvider#disable_oauth_refresh_token}. |
-| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProvider.Initializer.parameter.discoveryUrl">discovery_url</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs#discovery_url DatabricksProvider#discovery_url}. |
-| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProvider.Initializer.parameter.experimentalIsUnifiedHost">experimental_is_unified_host</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs#experimental_is_unified_host DatabricksProvider#experimental_is_unified_host}. |
-| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProvider.Initializer.parameter.googleCredentials">google_credentials</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs#google_credentials DatabricksProvider#google_credentials}. |
-| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProvider.Initializer.parameter.googleServiceAccount">google_service_account</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs#google_service_account DatabricksProvider#google_service_account}. |
-| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProvider.Initializer.parameter.host">host</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs#host DatabricksProvider#host}. |
-| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProvider.Initializer.parameter.httpTimeoutSeconds">http_timeout_seconds</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs#http_timeout_seconds DatabricksProvider#http_timeout_seconds}. |
-| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProvider.Initializer.parameter.metadataServiceUrl">metadata_service_url</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs#metadata_service_url DatabricksProvider#metadata_service_url}. |
-| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProvider.Initializer.parameter.oauthCallbackPort">oauth_callback_port</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs#oauth_callback_port DatabricksProvider#oauth_callback_port}. |
-| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProvider.Initializer.parameter.oidcTokenEnv">oidc_token_env</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs#oidc_token_env DatabricksProvider#oidc_token_env}. |
-| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProvider.Initializer.parameter.password">password</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs#password DatabricksProvider#password}. |
-| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProvider.Initializer.parameter.profile">profile</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs#profile DatabricksProvider#profile}. |
-| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProvider.Initializer.parameter.rateLimit">rate_limit</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs#rate_limit DatabricksProvider#rate_limit}. |
-| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProvider.Initializer.parameter.retryTimeoutSeconds">retry_timeout_seconds</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs#retry_timeout_seconds DatabricksProvider#retry_timeout_seconds}. |
-| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProvider.Initializer.parameter.scopes">scopes</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs#scopes DatabricksProvider#scopes}. |
-| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProvider.Initializer.parameter.serverlessComputeId">serverless_compute_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs#serverless_compute_id DatabricksProvider#serverless_compute_id}. |
-| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProvider.Initializer.parameter.skipVerify">skip_verify</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs#skip_verify DatabricksProvider#skip_verify}. |
-| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProvider.Initializer.parameter.token">token</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs#token DatabricksProvider#token}. |
-| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProvider.Initializer.parameter.username">username</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs#username DatabricksProvider#username}. |
-| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProvider.Initializer.parameter.warehouseId">warehouse_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs#warehouse_id DatabricksProvider#warehouse_id}. |
-| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProvider.Initializer.parameter.workspaceId">workspace_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs#workspace_id DatabricksProvider#workspace_id}. |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProvider.Initializer.parameter.audience">audience</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs#audience DatabricksProvider#audience}. |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProvider.Initializer.parameter.authType">auth_type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs#auth_type DatabricksProvider#auth_type}. |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProvider.Initializer.parameter.azureClientId">azure_client_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs#azure_client_id DatabricksProvider#azure_client_id}. |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProvider.Initializer.parameter.azureClientSecret">azure_client_secret</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs#azure_client_secret DatabricksProvider#azure_client_secret}. |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProvider.Initializer.parameter.azureEnvironment">azure_environment</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs#azure_environment DatabricksProvider#azure_environment}. |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProvider.Initializer.parameter.azureLoginAppId">azure_login_app_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs#azure_login_app_id DatabricksProvider#azure_login_app_id}. |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProvider.Initializer.parameter.azureTenantId">azure_tenant_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs#azure_tenant_id DatabricksProvider#azure_tenant_id}. |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProvider.Initializer.parameter.azureUseMsi">azure_use_msi</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs#azure_use_msi DatabricksProvider#azure_use_msi}. |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProvider.Initializer.parameter.azureWorkspaceResourceId">azure_workspace_resource_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs#azure_workspace_resource_id DatabricksProvider#azure_workspace_resource_id}. |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProvider.Initializer.parameter.clientId">client_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs#client_id DatabricksProvider#client_id}. |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProvider.Initializer.parameter.clientSecret">client_secret</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs#client_secret DatabricksProvider#client_secret}. |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProvider.Initializer.parameter.cloud">cloud</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs#cloud DatabricksProvider#cloud}. |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProvider.Initializer.parameter.clusterId">cluster_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs#cluster_id DatabricksProvider#cluster_id}. |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProvider.Initializer.parameter.configFile">config_file</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs#config_file DatabricksProvider#config_file}. |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProvider.Initializer.parameter.databricksCliPath">databricks_cli_path</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs#databricks_cli_path DatabricksProvider#databricks_cli_path}. |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProvider.Initializer.parameter.databricksIdTokenFilepath">databricks_id_token_filepath</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs#databricks_id_token_filepath DatabricksProvider#databricks_id_token_filepath}. |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProvider.Initializer.parameter.debugHeaders">debug_headers</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs#debug_headers DatabricksProvider#debug_headers}. |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProvider.Initializer.parameter.debugTruncateBytes">debug_truncate_bytes</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs#debug_truncate_bytes DatabricksProvider#debug_truncate_bytes}. |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProvider.Initializer.parameter.disableOauthRefreshToken">disable_oauth_refresh_token</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs#disable_oauth_refresh_token DatabricksProvider#disable_oauth_refresh_token}. |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProvider.Initializer.parameter.discoveryUrl">discovery_url</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs#discovery_url DatabricksProvider#discovery_url}. |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProvider.Initializer.parameter.googleCredentials">google_credentials</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs#google_credentials DatabricksProvider#google_credentials}. |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProvider.Initializer.parameter.googleServiceAccount">google_service_account</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs#google_service_account DatabricksProvider#google_service_account}. |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProvider.Initializer.parameter.host">host</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs#host DatabricksProvider#host}. |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProvider.Initializer.parameter.httpTimeoutSeconds">http_timeout_seconds</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs#http_timeout_seconds DatabricksProvider#http_timeout_seconds}. |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProvider.Initializer.parameter.metadataServiceUrl">metadata_service_url</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs#metadata_service_url DatabricksProvider#metadata_service_url}. |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProvider.Initializer.parameter.oauthCallbackPort">oauth_callback_port</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs#oauth_callback_port DatabricksProvider#oauth_callback_port}. |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProvider.Initializer.parameter.oidcTokenEnv">oidc_token_env</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs#oidc_token_env DatabricksProvider#oidc_token_env}. |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProvider.Initializer.parameter.password">password</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs#password DatabricksProvider#password}. |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProvider.Initializer.parameter.profile">profile</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs#profile DatabricksProvider#profile}. |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProvider.Initializer.parameter.rateLimit">rate_limit</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs#rate_limit DatabricksProvider#rate_limit}. |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProvider.Initializer.parameter.retryTimeoutSeconds">retry_timeout_seconds</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs#retry_timeout_seconds DatabricksProvider#retry_timeout_seconds}. |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProvider.Initializer.parameter.scopes">scopes</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs#scopes DatabricksProvider#scopes}. |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProvider.Initializer.parameter.serverlessComputeId">serverless_compute_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs#serverless_compute_id DatabricksProvider#serverless_compute_id}. |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProvider.Initializer.parameter.skipVerify">skip_verify</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs#skip_verify DatabricksProvider#skip_verify}. |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProvider.Initializer.parameter.token">token</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs#token DatabricksProvider#token}. |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProvider.Initializer.parameter.username">username</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs#username DatabricksProvider#username}. |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProvider.Initializer.parameter.warehouseId">warehouse_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs#warehouse_id DatabricksProvider#warehouse_id}. |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProvider.Initializer.parameter.workspaceId">workspace_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs#workspace_id DatabricksProvider#workspace_id}. |
 
 ---
 
@@ -132,7 +130,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs#account_id DatabricksProvider#account_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs#account_id DatabricksProvider#account_id}.
 
 ---
 
@@ -140,7 +138,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs#actions_id_token_request_token DatabricksProvider#actions_id_token_request_token}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs#actions_id_token_request_token DatabricksProvider#actions_id_token_request_token}.
 
 ---
 
@@ -148,7 +146,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs#actions_id_token_request_url DatabricksProvider#actions_id_token_request_url}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs#actions_id_token_request_url DatabricksProvider#actions_id_token_request_url}.
 
 ---
 
@@ -158,7 +156,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 Alias name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs#alias DatabricksProvider#alias}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs#alias DatabricksProvider#alias}
 
 ---
 
@@ -166,7 +164,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs#audience DatabricksProvider#audience}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs#audience DatabricksProvider#audience}.
 
 ---
 
@@ -174,7 +172,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs#auth_type DatabricksProvider#auth_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs#auth_type DatabricksProvider#auth_type}.
 
 ---
 
@@ -182,7 +180,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs#azure_client_id DatabricksProvider#azure_client_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs#azure_client_id DatabricksProvider#azure_client_id}.
 
 ---
 
@@ -190,7 +188,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs#azure_client_secret DatabricksProvider#azure_client_secret}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs#azure_client_secret DatabricksProvider#azure_client_secret}.
 
 ---
 
@@ -198,7 +196,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs#azure_environment DatabricksProvider#azure_environment}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs#azure_environment DatabricksProvider#azure_environment}.
 
 ---
 
@@ -206,7 +204,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs#azure_login_app_id DatabricksProvider#azure_login_app_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs#azure_login_app_id DatabricksProvider#azure_login_app_id}.
 
 ---
 
@@ -214,7 +212,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs#azure_tenant_id DatabricksProvider#azure_tenant_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs#azure_tenant_id DatabricksProvider#azure_tenant_id}.
 
 ---
 
@@ -222,7 +220,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* bool | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs#azure_use_msi DatabricksProvider#azure_use_msi}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs#azure_use_msi DatabricksProvider#azure_use_msi}.
 
 ---
 
@@ -230,7 +228,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs#azure_workspace_resource_id DatabricksProvider#azure_workspace_resource_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs#azure_workspace_resource_id DatabricksProvider#azure_workspace_resource_id}.
 
 ---
 
@@ -238,7 +236,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs#client_id DatabricksProvider#client_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs#client_id DatabricksProvider#client_id}.
 
 ---
 
@@ -246,7 +244,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs#client_secret DatabricksProvider#client_secret}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs#client_secret DatabricksProvider#client_secret}.
 
 ---
 
@@ -254,7 +252,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs#cloud DatabricksProvider#cloud}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs#cloud DatabricksProvider#cloud}.
 
 ---
 
@@ -262,7 +260,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs#cluster_id DatabricksProvider#cluster_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs#cluster_id DatabricksProvider#cluster_id}.
 
 ---
 
@@ -270,7 +268,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs#config_file DatabricksProvider#config_file}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs#config_file DatabricksProvider#config_file}.
 
 ---
 
@@ -278,7 +276,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs#databricks_cli_path DatabricksProvider#databricks_cli_path}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs#databricks_cli_path DatabricksProvider#databricks_cli_path}.
 
 ---
 
@@ -286,7 +284,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs#databricks_id_token_filepath DatabricksProvider#databricks_id_token_filepath}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs#databricks_id_token_filepath DatabricksProvider#databricks_id_token_filepath}.
 
 ---
 
@@ -294,7 +292,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* bool | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs#debug_headers DatabricksProvider#debug_headers}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs#debug_headers DatabricksProvider#debug_headers}.
 
 ---
 
@@ -302,7 +300,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs#debug_truncate_bytes DatabricksProvider#debug_truncate_bytes}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs#debug_truncate_bytes DatabricksProvider#debug_truncate_bytes}.
 
 ---
 
@@ -310,7 +308,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* bool | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs#disable_oauth_refresh_token DatabricksProvider#disable_oauth_refresh_token}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs#disable_oauth_refresh_token DatabricksProvider#disable_oauth_refresh_token}.
 
 ---
 
@@ -318,15 +316,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs#discovery_url DatabricksProvider#discovery_url}.
-
----
-
-##### `experimental_is_unified_host`<sup>Optional</sup> <a name="experimental_is_unified_host" id="@cdktn/provider-databricks.provider.DatabricksProvider.Initializer.parameter.experimentalIsUnifiedHost"></a>
-
-- *Type:* bool | cdktn.IResolvable
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs#experimental_is_unified_host DatabricksProvider#experimental_is_unified_host}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs#discovery_url DatabricksProvider#discovery_url}.
 
 ---
 
@@ -334,7 +324,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs#google_credentials DatabricksProvider#google_credentials}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs#google_credentials DatabricksProvider#google_credentials}.
 
 ---
 
@@ -342,7 +332,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs#google_service_account DatabricksProvider#google_service_account}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs#google_service_account DatabricksProvider#google_service_account}.
 
 ---
 
@@ -350,7 +340,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs#host DatabricksProvider#host}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs#host DatabricksProvider#host}.
 
 ---
 
@@ -358,7 +348,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs#http_timeout_seconds DatabricksProvider#http_timeout_seconds}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs#http_timeout_seconds DatabricksProvider#http_timeout_seconds}.
 
 ---
 
@@ -366,7 +356,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs#metadata_service_url DatabricksProvider#metadata_service_url}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs#metadata_service_url DatabricksProvider#metadata_service_url}.
 
 ---
 
@@ -374,7 +364,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs#oauth_callback_port DatabricksProvider#oauth_callback_port}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs#oauth_callback_port DatabricksProvider#oauth_callback_port}.
 
 ---
 
@@ -382,7 +372,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs#oidc_token_env DatabricksProvider#oidc_token_env}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs#oidc_token_env DatabricksProvider#oidc_token_env}.
 
 ---
 
@@ -390,7 +380,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs#password DatabricksProvider#password}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs#password DatabricksProvider#password}.
 
 ---
 
@@ -398,7 +388,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs#profile DatabricksProvider#profile}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs#profile DatabricksProvider#profile}.
 
 ---
 
@@ -406,7 +396,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs#rate_limit DatabricksProvider#rate_limit}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs#rate_limit DatabricksProvider#rate_limit}.
 
 ---
 
@@ -414,7 +404,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs#retry_timeout_seconds DatabricksProvider#retry_timeout_seconds}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs#retry_timeout_seconds DatabricksProvider#retry_timeout_seconds}.
 
 ---
 
@@ -422,7 +412,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs#scopes DatabricksProvider#scopes}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs#scopes DatabricksProvider#scopes}.
 
 ---
 
@@ -430,7 +420,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs#serverless_compute_id DatabricksProvider#serverless_compute_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs#serverless_compute_id DatabricksProvider#serverless_compute_id}.
 
 ---
 
@@ -438,7 +428,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* bool | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs#skip_verify DatabricksProvider#skip_verify}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs#skip_verify DatabricksProvider#skip_verify}.
 
 ---
 
@@ -446,7 +436,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs#token DatabricksProvider#token}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs#token DatabricksProvider#token}.
 
 ---
 
@@ -454,7 +444,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs#username DatabricksProvider#username}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs#username DatabricksProvider#username}.
 
 ---
 
@@ -462,7 +452,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs#warehouse_id DatabricksProvider#warehouse_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs#warehouse_id DatabricksProvider#warehouse_id}.
 
 ---
 
@@ -470,7 +460,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs#workspace_id DatabricksProvider#workspace_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs#workspace_id DatabricksProvider#workspace_id}.
 
 ---
 
@@ -510,7 +500,6 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 | <code><a href="#@cdktn/provider-databricks.provider.DatabricksProvider.resetDebugTruncateBytes">reset_debug_truncate_bytes</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.provider.DatabricksProvider.resetDisableOauthRefreshToken">reset_disable_oauth_refresh_token</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.provider.DatabricksProvider.resetDiscoveryUrl">reset_discovery_url</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProvider.resetExperimentalIsUnifiedHost">reset_experimental_is_unified_host</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.provider.DatabricksProvider.resetGoogleCredentials">reset_google_credentials</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.provider.DatabricksProvider.resetGoogleServiceAccount">reset_google_service_account</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.provider.DatabricksProvider.resetHost">reset_host</a></code> | *No description.* |
@@ -774,12 +763,6 @@ def reset_disable_oauth_refresh_token() -> None
 def reset_discovery_url() -> None
 ```
 
-##### `reset_experimental_is_unified_host` <a name="reset_experimental_is_unified_host" id="@cdktn/provider-databricks.provider.DatabricksProvider.resetExperimentalIsUnifiedHost"></a>
-
-```python
-def reset_experimental_is_unified_host() -> None
-```
-
 ##### `reset_google_credentials` <a name="reset_google_credentials" id="@cdktn/provider-databricks.provider.DatabricksProvider.resetGoogleCredentials"></a>
 
 ```python
@@ -1002,7 +985,7 @@ The construct id used in the generated config for the DatabricksProvider to impo
 
 The id of the existing DatabricksProvider that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1051,7 +1034,6 @@ Refer to the {@link https://registry.terraform.io/providers/databricks/databrick
 | <code><a href="#@cdktn/provider-databricks.provider.DatabricksProvider.property.debugTruncateBytesInput">debug_truncate_bytes_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.provider.DatabricksProvider.property.disableOauthRefreshTokenInput">disable_oauth_refresh_token_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.provider.DatabricksProvider.property.discoveryUrlInput">discovery_url_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProvider.property.experimentalIsUnifiedHostInput">experimental_is_unified_host_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.provider.DatabricksProvider.property.googleCredentialsInput">google_credentials_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.provider.DatabricksProvider.property.googleServiceAccountInput">google_service_account_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.provider.DatabricksProvider.property.hostInput">host_input</a></code> | <code>str</code> | *No description.* |
@@ -1093,7 +1075,6 @@ Refer to the {@link https://registry.terraform.io/providers/databricks/databrick
 | <code><a href="#@cdktn/provider-databricks.provider.DatabricksProvider.property.debugTruncateBytes">debug_truncate_bytes</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.provider.DatabricksProvider.property.disableOauthRefreshToken">disable_oauth_refresh_token</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.provider.DatabricksProvider.property.discoveryUrl">discovery_url</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProvider.property.experimentalIsUnifiedHost">experimental_is_unified_host</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.provider.DatabricksProvider.property.googleCredentials">google_credentials</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.provider.DatabricksProvider.property.googleServiceAccount">google_service_account</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.provider.DatabricksProvider.property.host">host</a></code> | <code>str</code> | *No description.* |
@@ -1444,16 +1425,6 @@ discovery_url_input: str
 ```
 
 - *Type:* str
-
----
-
-##### `experimental_is_unified_host_input`<sup>Optional</sup> <a name="experimental_is_unified_host_input" id="@cdktn/provider-databricks.provider.DatabricksProvider.property.experimentalIsUnifiedHostInput"></a>
-
-```python
-experimental_is_unified_host_input: bool | IResolvable
-```
-
-- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -1867,16 +1838,6 @@ discovery_url: str
 
 ---
 
-##### `experimental_is_unified_host`<sup>Optional</sup> <a name="experimental_is_unified_host" id="@cdktn/provider-databricks.provider.DatabricksProvider.property.experimentalIsUnifiedHost"></a>
-
-```python
-experimental_is_unified_host: bool | IResolvable
-```
-
-- *Type:* bool | cdktn.IResolvable
-
----
-
 ##### `google_credentials`<sup>Optional</sup> <a name="google_credentials" id="@cdktn/provider-databricks.provider.DatabricksProvider.property.googleCredentials"></a>
 
 ```python
@@ -2109,7 +2070,6 @@ provider.DatabricksProviderConfig(
   debug_truncate_bytes: typing.Union[int, float] = None,
   disable_oauth_refresh_token: bool | IResolvable = None,
   discovery_url: str = None,
-  experimental_is_unified_host: bool | IResolvable = None,
   google_credentials: str = None,
   google_service_account: str = None,
   host: str = None,
@@ -2135,49 +2095,48 @@ provider.DatabricksProviderConfig(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProviderConfig.property.accountId">account_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs#account_id DatabricksProvider#account_id}. |
-| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProviderConfig.property.actionsIdTokenRequestToken">actions_id_token_request_token</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs#actions_id_token_request_token DatabricksProvider#actions_id_token_request_token}. |
-| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProviderConfig.property.actionsIdTokenRequestUrl">actions_id_token_request_url</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs#actions_id_token_request_url DatabricksProvider#actions_id_token_request_url}. |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProviderConfig.property.accountId">account_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs#account_id DatabricksProvider#account_id}. |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProviderConfig.property.actionsIdTokenRequestToken">actions_id_token_request_token</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs#actions_id_token_request_token DatabricksProvider#actions_id_token_request_token}. |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProviderConfig.property.actionsIdTokenRequestUrl">actions_id_token_request_url</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs#actions_id_token_request_url DatabricksProvider#actions_id_token_request_url}. |
 | <code><a href="#@cdktn/provider-databricks.provider.DatabricksProviderConfig.property.alias">alias</a></code> | <code>str</code> | Alias name. |
-| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProviderConfig.property.audience">audience</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs#audience DatabricksProvider#audience}. |
-| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProviderConfig.property.authType">auth_type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs#auth_type DatabricksProvider#auth_type}. |
-| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProviderConfig.property.azureClientId">azure_client_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs#azure_client_id DatabricksProvider#azure_client_id}. |
-| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProviderConfig.property.azureClientSecret">azure_client_secret</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs#azure_client_secret DatabricksProvider#azure_client_secret}. |
-| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProviderConfig.property.azureEnvironment">azure_environment</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs#azure_environment DatabricksProvider#azure_environment}. |
-| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProviderConfig.property.azureLoginAppId">azure_login_app_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs#azure_login_app_id DatabricksProvider#azure_login_app_id}. |
-| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProviderConfig.property.azureTenantId">azure_tenant_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs#azure_tenant_id DatabricksProvider#azure_tenant_id}. |
-| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProviderConfig.property.azureUseMsi">azure_use_msi</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs#azure_use_msi DatabricksProvider#azure_use_msi}. |
-| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProviderConfig.property.azureWorkspaceResourceId">azure_workspace_resource_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs#azure_workspace_resource_id DatabricksProvider#azure_workspace_resource_id}. |
-| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProviderConfig.property.clientId">client_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs#client_id DatabricksProvider#client_id}. |
-| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProviderConfig.property.clientSecret">client_secret</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs#client_secret DatabricksProvider#client_secret}. |
-| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProviderConfig.property.cloud">cloud</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs#cloud DatabricksProvider#cloud}. |
-| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProviderConfig.property.clusterId">cluster_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs#cluster_id DatabricksProvider#cluster_id}. |
-| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProviderConfig.property.configFile">config_file</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs#config_file DatabricksProvider#config_file}. |
-| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProviderConfig.property.databricksCliPath">databricks_cli_path</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs#databricks_cli_path DatabricksProvider#databricks_cli_path}. |
-| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProviderConfig.property.databricksIdTokenFilepath">databricks_id_token_filepath</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs#databricks_id_token_filepath DatabricksProvider#databricks_id_token_filepath}. |
-| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProviderConfig.property.debugHeaders">debug_headers</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs#debug_headers DatabricksProvider#debug_headers}. |
-| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProviderConfig.property.debugTruncateBytes">debug_truncate_bytes</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs#debug_truncate_bytes DatabricksProvider#debug_truncate_bytes}. |
-| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProviderConfig.property.disableOauthRefreshToken">disable_oauth_refresh_token</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs#disable_oauth_refresh_token DatabricksProvider#disable_oauth_refresh_token}. |
-| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProviderConfig.property.discoveryUrl">discovery_url</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs#discovery_url DatabricksProvider#discovery_url}. |
-| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProviderConfig.property.experimentalIsUnifiedHost">experimental_is_unified_host</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs#experimental_is_unified_host DatabricksProvider#experimental_is_unified_host}. |
-| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProviderConfig.property.googleCredentials">google_credentials</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs#google_credentials DatabricksProvider#google_credentials}. |
-| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProviderConfig.property.googleServiceAccount">google_service_account</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs#google_service_account DatabricksProvider#google_service_account}. |
-| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProviderConfig.property.host">host</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs#host DatabricksProvider#host}. |
-| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProviderConfig.property.httpTimeoutSeconds">http_timeout_seconds</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs#http_timeout_seconds DatabricksProvider#http_timeout_seconds}. |
-| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProviderConfig.property.metadataServiceUrl">metadata_service_url</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs#metadata_service_url DatabricksProvider#metadata_service_url}. |
-| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProviderConfig.property.oauthCallbackPort">oauth_callback_port</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs#oauth_callback_port DatabricksProvider#oauth_callback_port}. |
-| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProviderConfig.property.oidcTokenEnv">oidc_token_env</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs#oidc_token_env DatabricksProvider#oidc_token_env}. |
-| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProviderConfig.property.password">password</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs#password DatabricksProvider#password}. |
-| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProviderConfig.property.profile">profile</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs#profile DatabricksProvider#profile}. |
-| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProviderConfig.property.rateLimit">rate_limit</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs#rate_limit DatabricksProvider#rate_limit}. |
-| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProviderConfig.property.retryTimeoutSeconds">retry_timeout_seconds</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs#retry_timeout_seconds DatabricksProvider#retry_timeout_seconds}. |
-| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProviderConfig.property.scopes">scopes</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs#scopes DatabricksProvider#scopes}. |
-| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProviderConfig.property.serverlessComputeId">serverless_compute_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs#serverless_compute_id DatabricksProvider#serverless_compute_id}. |
-| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProviderConfig.property.skipVerify">skip_verify</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs#skip_verify DatabricksProvider#skip_verify}. |
-| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProviderConfig.property.token">token</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs#token DatabricksProvider#token}. |
-| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProviderConfig.property.username">username</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs#username DatabricksProvider#username}. |
-| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProviderConfig.property.warehouseId">warehouse_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs#warehouse_id DatabricksProvider#warehouse_id}. |
-| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProviderConfig.property.workspaceId">workspace_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs#workspace_id DatabricksProvider#workspace_id}. |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProviderConfig.property.audience">audience</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs#audience DatabricksProvider#audience}. |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProviderConfig.property.authType">auth_type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs#auth_type DatabricksProvider#auth_type}. |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProviderConfig.property.azureClientId">azure_client_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs#azure_client_id DatabricksProvider#azure_client_id}. |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProviderConfig.property.azureClientSecret">azure_client_secret</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs#azure_client_secret DatabricksProvider#azure_client_secret}. |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProviderConfig.property.azureEnvironment">azure_environment</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs#azure_environment DatabricksProvider#azure_environment}. |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProviderConfig.property.azureLoginAppId">azure_login_app_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs#azure_login_app_id DatabricksProvider#azure_login_app_id}. |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProviderConfig.property.azureTenantId">azure_tenant_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs#azure_tenant_id DatabricksProvider#azure_tenant_id}. |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProviderConfig.property.azureUseMsi">azure_use_msi</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs#azure_use_msi DatabricksProvider#azure_use_msi}. |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProviderConfig.property.azureWorkspaceResourceId">azure_workspace_resource_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs#azure_workspace_resource_id DatabricksProvider#azure_workspace_resource_id}. |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProviderConfig.property.clientId">client_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs#client_id DatabricksProvider#client_id}. |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProviderConfig.property.clientSecret">client_secret</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs#client_secret DatabricksProvider#client_secret}. |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProviderConfig.property.cloud">cloud</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs#cloud DatabricksProvider#cloud}. |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProviderConfig.property.clusterId">cluster_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs#cluster_id DatabricksProvider#cluster_id}. |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProviderConfig.property.configFile">config_file</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs#config_file DatabricksProvider#config_file}. |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProviderConfig.property.databricksCliPath">databricks_cli_path</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs#databricks_cli_path DatabricksProvider#databricks_cli_path}. |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProviderConfig.property.databricksIdTokenFilepath">databricks_id_token_filepath</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs#databricks_id_token_filepath DatabricksProvider#databricks_id_token_filepath}. |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProviderConfig.property.debugHeaders">debug_headers</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs#debug_headers DatabricksProvider#debug_headers}. |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProviderConfig.property.debugTruncateBytes">debug_truncate_bytes</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs#debug_truncate_bytes DatabricksProvider#debug_truncate_bytes}. |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProviderConfig.property.disableOauthRefreshToken">disable_oauth_refresh_token</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs#disable_oauth_refresh_token DatabricksProvider#disable_oauth_refresh_token}. |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProviderConfig.property.discoveryUrl">discovery_url</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs#discovery_url DatabricksProvider#discovery_url}. |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProviderConfig.property.googleCredentials">google_credentials</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs#google_credentials DatabricksProvider#google_credentials}. |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProviderConfig.property.googleServiceAccount">google_service_account</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs#google_service_account DatabricksProvider#google_service_account}. |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProviderConfig.property.host">host</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs#host DatabricksProvider#host}. |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProviderConfig.property.httpTimeoutSeconds">http_timeout_seconds</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs#http_timeout_seconds DatabricksProvider#http_timeout_seconds}. |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProviderConfig.property.metadataServiceUrl">metadata_service_url</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs#metadata_service_url DatabricksProvider#metadata_service_url}. |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProviderConfig.property.oauthCallbackPort">oauth_callback_port</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs#oauth_callback_port DatabricksProvider#oauth_callback_port}. |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProviderConfig.property.oidcTokenEnv">oidc_token_env</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs#oidc_token_env DatabricksProvider#oidc_token_env}. |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProviderConfig.property.password">password</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs#password DatabricksProvider#password}. |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProviderConfig.property.profile">profile</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs#profile DatabricksProvider#profile}. |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProviderConfig.property.rateLimit">rate_limit</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs#rate_limit DatabricksProvider#rate_limit}. |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProviderConfig.property.retryTimeoutSeconds">retry_timeout_seconds</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs#retry_timeout_seconds DatabricksProvider#retry_timeout_seconds}. |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProviderConfig.property.scopes">scopes</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs#scopes DatabricksProvider#scopes}. |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProviderConfig.property.serverlessComputeId">serverless_compute_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs#serverless_compute_id DatabricksProvider#serverless_compute_id}. |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProviderConfig.property.skipVerify">skip_verify</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs#skip_verify DatabricksProvider#skip_verify}. |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProviderConfig.property.token">token</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs#token DatabricksProvider#token}. |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProviderConfig.property.username">username</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs#username DatabricksProvider#username}. |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProviderConfig.property.warehouseId">warehouse_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs#warehouse_id DatabricksProvider#warehouse_id}. |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProviderConfig.property.workspaceId">workspace_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs#workspace_id DatabricksProvider#workspace_id}. |
 
 ---
 
@@ -2189,7 +2148,7 @@ account_id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs#account_id DatabricksProvider#account_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs#account_id DatabricksProvider#account_id}.
 
 ---
 
@@ -2201,7 +2160,7 @@ actions_id_token_request_token: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs#actions_id_token_request_token DatabricksProvider#actions_id_token_request_token}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs#actions_id_token_request_token DatabricksProvider#actions_id_token_request_token}.
 
 ---
 
@@ -2213,7 +2172,7 @@ actions_id_token_request_url: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs#actions_id_token_request_url DatabricksProvider#actions_id_token_request_url}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs#actions_id_token_request_url DatabricksProvider#actions_id_token_request_url}.
 
 ---
 
@@ -2227,7 +2186,7 @@ alias: str
 
 Alias name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs#alias DatabricksProvider#alias}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs#alias DatabricksProvider#alias}
 
 ---
 
@@ -2239,7 +2198,7 @@ audience: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs#audience DatabricksProvider#audience}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs#audience DatabricksProvider#audience}.
 
 ---
 
@@ -2251,7 +2210,7 @@ auth_type: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs#auth_type DatabricksProvider#auth_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs#auth_type DatabricksProvider#auth_type}.
 
 ---
 
@@ -2263,7 +2222,7 @@ azure_client_id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs#azure_client_id DatabricksProvider#azure_client_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs#azure_client_id DatabricksProvider#azure_client_id}.
 
 ---
 
@@ -2275,7 +2234,7 @@ azure_client_secret: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs#azure_client_secret DatabricksProvider#azure_client_secret}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs#azure_client_secret DatabricksProvider#azure_client_secret}.
 
 ---
 
@@ -2287,7 +2246,7 @@ azure_environment: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs#azure_environment DatabricksProvider#azure_environment}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs#azure_environment DatabricksProvider#azure_environment}.
 
 ---
 
@@ -2299,7 +2258,7 @@ azure_login_app_id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs#azure_login_app_id DatabricksProvider#azure_login_app_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs#azure_login_app_id DatabricksProvider#azure_login_app_id}.
 
 ---
 
@@ -2311,7 +2270,7 @@ azure_tenant_id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs#azure_tenant_id DatabricksProvider#azure_tenant_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs#azure_tenant_id DatabricksProvider#azure_tenant_id}.
 
 ---
 
@@ -2323,7 +2282,7 @@ azure_use_msi: bool | IResolvable
 
 - *Type:* bool | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs#azure_use_msi DatabricksProvider#azure_use_msi}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs#azure_use_msi DatabricksProvider#azure_use_msi}.
 
 ---
 
@@ -2335,7 +2294,7 @@ azure_workspace_resource_id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs#azure_workspace_resource_id DatabricksProvider#azure_workspace_resource_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs#azure_workspace_resource_id DatabricksProvider#azure_workspace_resource_id}.
 
 ---
 
@@ -2347,7 +2306,7 @@ client_id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs#client_id DatabricksProvider#client_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs#client_id DatabricksProvider#client_id}.
 
 ---
 
@@ -2359,7 +2318,7 @@ client_secret: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs#client_secret DatabricksProvider#client_secret}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs#client_secret DatabricksProvider#client_secret}.
 
 ---
 
@@ -2371,7 +2330,7 @@ cloud: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs#cloud DatabricksProvider#cloud}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs#cloud DatabricksProvider#cloud}.
 
 ---
 
@@ -2383,7 +2342,7 @@ cluster_id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs#cluster_id DatabricksProvider#cluster_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs#cluster_id DatabricksProvider#cluster_id}.
 
 ---
 
@@ -2395,7 +2354,7 @@ config_file: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs#config_file DatabricksProvider#config_file}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs#config_file DatabricksProvider#config_file}.
 
 ---
 
@@ -2407,7 +2366,7 @@ databricks_cli_path: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs#databricks_cli_path DatabricksProvider#databricks_cli_path}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs#databricks_cli_path DatabricksProvider#databricks_cli_path}.
 
 ---
 
@@ -2419,7 +2378,7 @@ databricks_id_token_filepath: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs#databricks_id_token_filepath DatabricksProvider#databricks_id_token_filepath}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs#databricks_id_token_filepath DatabricksProvider#databricks_id_token_filepath}.
 
 ---
 
@@ -2431,7 +2390,7 @@ debug_headers: bool | IResolvable
 
 - *Type:* bool | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs#debug_headers DatabricksProvider#debug_headers}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs#debug_headers DatabricksProvider#debug_headers}.
 
 ---
 
@@ -2443,7 +2402,7 @@ debug_truncate_bytes: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs#debug_truncate_bytes DatabricksProvider#debug_truncate_bytes}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs#debug_truncate_bytes DatabricksProvider#debug_truncate_bytes}.
 
 ---
 
@@ -2455,7 +2414,7 @@ disable_oauth_refresh_token: bool | IResolvable
 
 - *Type:* bool | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs#disable_oauth_refresh_token DatabricksProvider#disable_oauth_refresh_token}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs#disable_oauth_refresh_token DatabricksProvider#disable_oauth_refresh_token}.
 
 ---
 
@@ -2467,19 +2426,7 @@ discovery_url: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs#discovery_url DatabricksProvider#discovery_url}.
-
----
-
-##### `experimental_is_unified_host`<sup>Optional</sup> <a name="experimental_is_unified_host" id="@cdktn/provider-databricks.provider.DatabricksProviderConfig.property.experimentalIsUnifiedHost"></a>
-
-```python
-experimental_is_unified_host: bool | IResolvable
-```
-
-- *Type:* bool | cdktn.IResolvable
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs#experimental_is_unified_host DatabricksProvider#experimental_is_unified_host}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs#discovery_url DatabricksProvider#discovery_url}.
 
 ---
 
@@ -2491,7 +2438,7 @@ google_credentials: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs#google_credentials DatabricksProvider#google_credentials}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs#google_credentials DatabricksProvider#google_credentials}.
 
 ---
 
@@ -2503,7 +2450,7 @@ google_service_account: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs#google_service_account DatabricksProvider#google_service_account}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs#google_service_account DatabricksProvider#google_service_account}.
 
 ---
 
@@ -2515,7 +2462,7 @@ host: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs#host DatabricksProvider#host}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs#host DatabricksProvider#host}.
 
 ---
 
@@ -2527,7 +2474,7 @@ http_timeout_seconds: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs#http_timeout_seconds DatabricksProvider#http_timeout_seconds}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs#http_timeout_seconds DatabricksProvider#http_timeout_seconds}.
 
 ---
 
@@ -2539,7 +2486,7 @@ metadata_service_url: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs#metadata_service_url DatabricksProvider#metadata_service_url}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs#metadata_service_url DatabricksProvider#metadata_service_url}.
 
 ---
 
@@ -2551,7 +2498,7 @@ oauth_callback_port: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs#oauth_callback_port DatabricksProvider#oauth_callback_port}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs#oauth_callback_port DatabricksProvider#oauth_callback_port}.
 
 ---
 
@@ -2563,7 +2510,7 @@ oidc_token_env: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs#oidc_token_env DatabricksProvider#oidc_token_env}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs#oidc_token_env DatabricksProvider#oidc_token_env}.
 
 ---
 
@@ -2575,7 +2522,7 @@ password: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs#password DatabricksProvider#password}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs#password DatabricksProvider#password}.
 
 ---
 
@@ -2587,7 +2534,7 @@ profile: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs#profile DatabricksProvider#profile}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs#profile DatabricksProvider#profile}.
 
 ---
 
@@ -2599,7 +2546,7 @@ rate_limit: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs#rate_limit DatabricksProvider#rate_limit}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs#rate_limit DatabricksProvider#rate_limit}.
 
 ---
 
@@ -2611,7 +2558,7 @@ retry_timeout_seconds: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs#retry_timeout_seconds DatabricksProvider#retry_timeout_seconds}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs#retry_timeout_seconds DatabricksProvider#retry_timeout_seconds}.
 
 ---
 
@@ -2623,7 +2570,7 @@ scopes: typing.List[str]
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs#scopes DatabricksProvider#scopes}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs#scopes DatabricksProvider#scopes}.
 
 ---
 
@@ -2635,7 +2582,7 @@ serverless_compute_id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs#serverless_compute_id DatabricksProvider#serverless_compute_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs#serverless_compute_id DatabricksProvider#serverless_compute_id}.
 
 ---
 
@@ -2647,7 +2594,7 @@ skip_verify: bool | IResolvable
 
 - *Type:* bool | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs#skip_verify DatabricksProvider#skip_verify}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs#skip_verify DatabricksProvider#skip_verify}.
 
 ---
 
@@ -2659,7 +2606,7 @@ token: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs#token DatabricksProvider#token}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs#token DatabricksProvider#token}.
 
 ---
 
@@ -2671,7 +2618,7 @@ username: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs#username DatabricksProvider#username}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs#username DatabricksProvider#username}.
 
 ---
 
@@ -2683,7 +2630,7 @@ warehouse_id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs#warehouse_id DatabricksProvider#warehouse_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs#warehouse_id DatabricksProvider#warehouse_id}.
 
 ---
 
@@ -2695,7 +2642,7 @@ workspace_id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs#workspace_id DatabricksProvider#workspace_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs#workspace_id DatabricksProvider#workspace_id}.
 
 ---
 

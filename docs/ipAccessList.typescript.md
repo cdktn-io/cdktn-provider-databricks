@@ -4,7 +4,7 @@
 
 ### IpAccessList <a name="IpAccessList" id="@cdktn/provider-databricks.ipAccessList.IpAccessList"></a>
 
-Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/resources/ip_access_list databricks_ip_access_list}.
+Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/resources/ip_access_list databricks_ip_access_list}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.ipAccessList.IpAccessList.Initializer"></a>
 
@@ -523,7 +523,7 @@ The construct id used in the generated config for the IpAccessList to import.
 
 The id of the existing IpAccessList that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/resources/ip_access_list#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/resources/ip_access_list#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -871,11 +871,11 @@ const ipAccessListConfig: ipAccessList.IpAccessListConfig = { ... }
 | <code><a href="#@cdktn/provider-databricks.ipAccessList.IpAccessListConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.ipAccessList.IpAccessListConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.ipAccessList.IpAccessListConfig.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-databricks.ipAccessList.IpAccessListConfig.property.ipAddresses">ipAddresses</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/resources/ip_access_list#ip_addresses IpAccessList#ip_addresses}. |
-| <code><a href="#@cdktn/provider-databricks.ipAccessList.IpAccessListConfig.property.label">label</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/resources/ip_access_list#label IpAccessList#label}. |
-| <code><a href="#@cdktn/provider-databricks.ipAccessList.IpAccessListConfig.property.listType">listType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/resources/ip_access_list#list_type IpAccessList#list_type}. |
-| <code><a href="#@cdktn/provider-databricks.ipAccessList.IpAccessListConfig.property.enabled">enabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/resources/ip_access_list#enabled IpAccessList#enabled}. |
-| <code><a href="#@cdktn/provider-databricks.ipAccessList.IpAccessListConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/resources/ip_access_list#id IpAccessList#id}. |
+| <code><a href="#@cdktn/provider-databricks.ipAccessList.IpAccessListConfig.property.ipAddresses">ipAddresses</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/resources/ip_access_list#ip_addresses IpAccessList#ip_addresses}. |
+| <code><a href="#@cdktn/provider-databricks.ipAccessList.IpAccessListConfig.property.label">label</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/resources/ip_access_list#label IpAccessList#label}. |
+| <code><a href="#@cdktn/provider-databricks.ipAccessList.IpAccessListConfig.property.listType">listType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/resources/ip_access_list#list_type IpAccessList#list_type}. |
+| <code><a href="#@cdktn/provider-databricks.ipAccessList.IpAccessListConfig.property.enabled">enabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/resources/ip_access_list#enabled IpAccessList#enabled}. |
+| <code><a href="#@cdktn/provider-databricks.ipAccessList.IpAccessListConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/resources/ip_access_list#id IpAccessList#id}. |
 | <code><a href="#@cdktn/provider-databricks.ipAccessList.IpAccessListConfig.property.providerConfig">providerConfig</a></code> | <code><a href="#@cdktn/provider-databricks.ipAccessList.IpAccessListProviderConfig">IpAccessListProviderConfig</a></code> | provider_config block. |
 
 ---
@@ -958,7 +958,7 @@ public readonly ipAddresses: string[];
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/resources/ip_access_list#ip_addresses IpAccessList#ip_addresses}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/resources/ip_access_list#ip_addresses IpAccessList#ip_addresses}.
 
 ---
 
@@ -970,7 +970,7 @@ public readonly label: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/resources/ip_access_list#label IpAccessList#label}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/resources/ip_access_list#label IpAccessList#label}.
 
 ---
 
@@ -982,7 +982,7 @@ public readonly listType: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/resources/ip_access_list#list_type IpAccessList#list_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/resources/ip_access_list#list_type IpAccessList#list_type}.
 
 ---
 
@@ -994,7 +994,7 @@ public readonly enabled: boolean | IResolvable;
 
 - *Type:* boolean | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/resources/ip_access_list#enabled IpAccessList#enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/resources/ip_access_list#enabled IpAccessList#enabled}.
 
 ---
 
@@ -1006,7 +1006,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/resources/ip_access_list#id IpAccessList#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/resources/ip_access_list#id IpAccessList#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1023,7 +1023,7 @@ public readonly providerConfig: IpAccessListProviderConfig;
 
 provider_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/resources/ip_access_list#provider_config IpAccessList#provider_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/resources/ip_access_list#provider_config IpAccessList#provider_config}
 
 ---
 
@@ -1041,11 +1041,11 @@ const ipAccessListProviderConfig: ipAccessList.IpAccessListProviderConfig = { ..
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.ipAccessList.IpAccessListProviderConfig.property.workspaceId">workspaceId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/resources/ip_access_list#workspace_id IpAccessList#workspace_id}. |
+| <code><a href="#@cdktn/provider-databricks.ipAccessList.IpAccessListProviderConfig.property.workspaceId">workspaceId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/resources/ip_access_list#workspace_id IpAccessList#workspace_id}. |
 
 ---
 
-##### `workspaceId`<sup>Required</sup> <a name="workspaceId" id="@cdktn/provider-databricks.ipAccessList.IpAccessListProviderConfig.property.workspaceId"></a>
+##### `workspaceId`<sup>Optional</sup> <a name="workspaceId" id="@cdktn/provider-databricks.ipAccessList.IpAccessListProviderConfig.property.workspaceId"></a>
 
 ```typescript
 public readonly workspaceId: string;
@@ -1053,7 +1053,7 @@ public readonly workspaceId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/resources/ip_access_list#workspace_id IpAccessList#workspace_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/resources/ip_access_list#workspace_id IpAccessList#workspace_id}.
 
 ---
 
@@ -1109,6 +1109,7 @@ The attribute on the parent resource this class is referencing.
 | <code><a href="#@cdktn/provider-databricks.ipAccessList.IpAccessListProviderConfigOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.ipAccessList.IpAccessListProviderConfigOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktn/provider-databricks.ipAccessList.IpAccessListProviderConfigOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-databricks.ipAccessList.IpAccessListProviderConfigOutputReference.resetWorkspaceId">resetWorkspaceId</a></code> | *No description.* |
 
 ---
 
@@ -1261,6 +1262,12 @@ public toString(): string
 Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
+
+##### `resetWorkspaceId` <a name="resetWorkspaceId" id="@cdktn/provider-databricks.ipAccessList.IpAccessListProviderConfigOutputReference.resetWorkspaceId"></a>
+
+```typescript
+public resetWorkspaceId(): void
+```
 
 
 #### Properties <a name="Properties" id="Properties"></a>

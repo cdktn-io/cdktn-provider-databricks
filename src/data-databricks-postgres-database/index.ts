@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/postgres_database
+// https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/postgres_database
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,19 +13,19 @@ import * as cdktn from 'cdktn';
 
 export interface DataDatabricksPostgresDatabaseConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/postgres_database#name DataDatabricksPostgresDatabase#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/postgres_database#name DataDatabricksPostgresDatabase#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/postgres_database#provider_config DataDatabricksPostgresDatabase#provider_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/postgres_database#provider_config DataDatabricksPostgresDatabase#provider_config}
   */
   readonly providerConfig?: DataDatabricksPostgresDatabaseProviderConfig;
 }
 export interface DataDatabricksPostgresDatabaseProviderConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/postgres_database#workspace_id DataDatabricksPostgresDatabase#workspace_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/postgres_database#workspace_id DataDatabricksPostgresDatabase#workspace_id}
   */
-  readonly workspaceId: string;
+  readonly workspaceId?: string;
 }
 
 export function dataDatabricksPostgresDatabaseProviderConfigToTerraform(struct?: DataDatabricksPostgresDatabaseProviderConfig | cdktn.IResolvable): any {
@@ -99,13 +99,16 @@ export class DataDatabricksPostgresDatabaseProviderConfigOutputReference extends
     }
   }
 
-  // workspace_id - computed: false, optional: false, required: true
+  // workspace_id - computed: true, optional: true, required: false
   private _workspaceId?: string; 
   public get workspaceId() {
     return this.getStringAttribute('workspace_id');
   }
   public set workspaceId(value: string) {
     this._workspaceId = value;
+  }
+  public resetWorkspaceId() {
+    this._workspaceId = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get workspaceIdInput() {
@@ -114,11 +117,11 @@ export class DataDatabricksPostgresDatabaseProviderConfigOutputReference extends
 }
 export interface DataDatabricksPostgresDatabaseSpec {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/postgres_database#postgres_database DataDatabricksPostgresDatabase#postgres_database}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/postgres_database#postgres_database DataDatabricksPostgresDatabase#postgres_database}
   */
   readonly postgresDatabase?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/postgres_database#role DataDatabricksPostgresDatabase#role}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/postgres_database#role DataDatabricksPostgresDatabase#role}
   */
   readonly role?: string;
 }
@@ -231,11 +234,11 @@ export class DataDatabricksPostgresDatabaseSpecOutputReference extends cdktn.Com
 }
 export interface DataDatabricksPostgresDatabaseStatus {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/postgres_database#postgres_database DataDatabricksPostgresDatabase#postgres_database}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/postgres_database#postgres_database DataDatabricksPostgresDatabase#postgres_database}
   */
   readonly postgresDatabase?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/postgres_database#role DataDatabricksPostgresDatabase#role}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/postgres_database#role DataDatabricksPostgresDatabase#role}
   */
   readonly role?: string;
 }
@@ -353,7 +356,7 @@ export class DataDatabricksPostgresDatabaseStatusOutputReference extends cdktn.C
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/postgres_database databricks_postgres_database}
+* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/postgres_database databricks_postgres_database}
 */
 export class DataDatabricksPostgresDatabase extends cdktn.TerraformDataSource {
 
@@ -369,7 +372,7 @@ export class DataDatabricksPostgresDatabase extends cdktn.TerraformDataSource {
   * Generates CDKTN code for importing a DataDatabricksPostgresDatabase resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataDatabricksPostgresDatabase to import
-  * @param importFromId The id of the existing DataDatabricksPostgresDatabase that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/postgres_database#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataDatabricksPostgresDatabase that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/postgres_database#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataDatabricksPostgresDatabase to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -381,7 +384,7 @@ export class DataDatabricksPostgresDatabase extends cdktn.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/postgres_database databricks_postgres_database} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/postgres_database databricks_postgres_database} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -392,7 +395,7 @@ export class DataDatabricksPostgresDatabase extends cdktn.TerraformDataSource {
       terraformResourceType: 'databricks_postgres_database',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '1.114.2',
+        providerVersion: '1.115.0',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,

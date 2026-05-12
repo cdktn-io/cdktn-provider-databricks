@@ -1,3 +1,3 @@
 # `databricks_app_space`
 
-Refer to the Terraform Registry for docs: [`databricks_app_space`](https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/resources/app_space).
+Refer to the Terraform Registry for docs: [`databricks_app_space`](https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/resources/app_space).
