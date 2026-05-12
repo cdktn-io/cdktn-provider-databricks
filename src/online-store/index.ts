@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/resources/online_store
+// https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/resources/online_store
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,31 +13,31 @@ import * as cdktn from 'cdktn';
 
 export interface OnlineStoreConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/resources/online_store#capacity OnlineStore#capacity}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/resources/online_store#capacity OnlineStore#capacity}
   */
   readonly capacity: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/resources/online_store#name OnlineStore#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/resources/online_store#name OnlineStore#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/resources/online_store#provider_config OnlineStore#provider_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/resources/online_store#provider_config OnlineStore#provider_config}
   */
   readonly providerConfig?: OnlineStoreProviderConfig;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/resources/online_store#read_replica_count OnlineStore#read_replica_count}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/resources/online_store#read_replica_count OnlineStore#read_replica_count}
   */
   readonly readReplicaCount?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/resources/online_store#usage_policy_id OnlineStore#usage_policy_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/resources/online_store#usage_policy_id OnlineStore#usage_policy_id}
   */
   readonly usagePolicyId?: string;
 }
 export interface OnlineStoreProviderConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/resources/online_store#workspace_id OnlineStore#workspace_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/resources/online_store#workspace_id OnlineStore#workspace_id}
   */
-  readonly workspaceId: string;
+  readonly workspaceId?: string;
 }
 
 export function onlineStoreProviderConfigToTerraform(struct?: OnlineStoreProviderConfig | cdktn.IResolvable): any {
@@ -111,13 +111,16 @@ export class OnlineStoreProviderConfigOutputReference extends cdktn.ComplexObjec
     }
   }
 
-  // workspace_id - computed: false, optional: false, required: true
+  // workspace_id - computed: true, optional: true, required: false
   private _workspaceId?: string; 
   public get workspaceId() {
     return this.getStringAttribute('workspace_id');
   }
   public set workspaceId(value: string) {
     this._workspaceId = value;
+  }
+  public resetWorkspaceId() {
+    this._workspaceId = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get workspaceIdInput() {
@@ -126,7 +129,7 @@ export class OnlineStoreProviderConfigOutputReference extends cdktn.ComplexObjec
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/resources/online_store databricks_online_store}
+* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/resources/online_store databricks_online_store}
 */
 export class OnlineStore extends cdktn.TerraformResource {
 
@@ -142,7 +145,7 @@ export class OnlineStore extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a OnlineStore resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the OnlineStore to import
-  * @param importFromId The id of the existing OnlineStore that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/resources/online_store#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing OnlineStore that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/resources/online_store#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the OnlineStore to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -154,7 +157,7 @@ export class OnlineStore extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/resources/online_store databricks_online_store} Resource
+  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/resources/online_store databricks_online_store} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -165,7 +168,7 @@ export class OnlineStore extends cdktn.TerraformResource {
       terraformResourceType: 'databricks_online_store',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '1.114.2',
+        providerVersion: '1.115.0',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,
@@ -223,7 +226,7 @@ export class OnlineStore extends cdktn.TerraformResource {
     return this._name;
   }
 
-  // provider_config - computed: false, optional: true, required: false
+  // provider_config - computed: true, optional: true, required: false
   private _providerConfig = new OnlineStoreProviderConfigOutputReference(this, "provider_config");
   public get providerConfig() {
     return this._providerConfig;

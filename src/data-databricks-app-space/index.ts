@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/app_space
+// https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/app_space
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,19 +13,19 @@ import * as cdktn from 'cdktn';
 
 export interface DataDatabricksAppSpaceConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/app_space#name DataDatabricksAppSpace#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/app_space#name DataDatabricksAppSpace#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/app_space#provider_config DataDatabricksAppSpace#provider_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/app_space#provider_config DataDatabricksAppSpace#provider_config}
   */
   readonly providerConfig?: DataDatabricksAppSpaceProviderConfig;
 }
 export interface DataDatabricksAppSpaceProviderConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/app_space#workspace_id DataDatabricksAppSpace#workspace_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/app_space#workspace_id DataDatabricksAppSpace#workspace_id}
   */
-  readonly workspaceId: string;
+  readonly workspaceId?: string;
 }
 
 export function dataDatabricksAppSpaceProviderConfigToTerraform(struct?: DataDatabricksAppSpaceProviderConfig | cdktn.IResolvable): any {
@@ -99,13 +99,16 @@ export class DataDatabricksAppSpaceProviderConfigOutputReference extends cdktn.C
     }
   }
 
-  // workspace_id - computed: false, optional: false, required: true
+  // workspace_id - computed: true, optional: true, required: false
   private _workspaceId?: string; 
   public get workspaceId() {
     return this.getStringAttribute('workspace_id');
   }
   public set workspaceId(value: string) {
     this._workspaceId = value;
+  }
+  public resetWorkspaceId() {
+    this._workspaceId = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get workspaceIdInput() {
@@ -114,11 +117,11 @@ export class DataDatabricksAppSpaceProviderConfigOutputReference extends cdktn.C
 }
 export interface DataDatabricksAppSpaceResourcesApp {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/app_space#name DataDatabricksAppSpace#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/app_space#name DataDatabricksAppSpace#name}
   */
   readonly name?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/app_space#permission DataDatabricksAppSpace#permission}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/app_space#permission DataDatabricksAppSpace#permission}
   */
   readonly permission?: string;
 }
@@ -241,15 +244,15 @@ export class DataDatabricksAppSpaceResourcesAppOutputReference extends cdktn.Com
 }
 export interface DataDatabricksAppSpaceResourcesDatabase {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/app_space#database_name DataDatabricksAppSpace#database_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/app_space#database_name DataDatabricksAppSpace#database_name}
   */
   readonly databaseName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/app_space#instance_name DataDatabricksAppSpace#instance_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/app_space#instance_name DataDatabricksAppSpace#instance_name}
   */
   readonly instanceName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/app_space#permission DataDatabricksAppSpace#permission}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/app_space#permission DataDatabricksAppSpace#permission}
   */
   readonly permission: string;
 }
@@ -392,11 +395,11 @@ export class DataDatabricksAppSpaceResourcesDatabaseOutputReference extends cdkt
 }
 export interface DataDatabricksAppSpaceResourcesExperiment {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/app_space#experiment_id DataDatabricksAppSpace#experiment_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/app_space#experiment_id DataDatabricksAppSpace#experiment_id}
   */
   readonly experimentId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/app_space#permission DataDatabricksAppSpace#permission}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/app_space#permission DataDatabricksAppSpace#permission}
   */
   readonly permission: string;
 }
@@ -513,15 +516,15 @@ export class DataDatabricksAppSpaceResourcesExperimentOutputReference extends cd
 }
 export interface DataDatabricksAppSpaceResourcesGenieSpace {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/app_space#name DataDatabricksAppSpace#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/app_space#name DataDatabricksAppSpace#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/app_space#permission DataDatabricksAppSpace#permission}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/app_space#permission DataDatabricksAppSpace#permission}
   */
   readonly permission: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/app_space#space_id DataDatabricksAppSpace#space_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/app_space#space_id DataDatabricksAppSpace#space_id}
   */
   readonly spaceId: string;
 }
@@ -664,14 +667,14 @@ export class DataDatabricksAppSpaceResourcesGenieSpaceOutputReference extends cd
 }
 export interface DataDatabricksAppSpaceResourcesJob {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/app_space#id DataDatabricksAppSpace#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/app_space#id DataDatabricksAppSpace#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/app_space#permission DataDatabricksAppSpace#permission}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/app_space#permission DataDatabricksAppSpace#permission}
   */
   readonly permission: string;
 }
@@ -788,15 +791,15 @@ export class DataDatabricksAppSpaceResourcesJobOutputReference extends cdktn.Com
 }
 export interface DataDatabricksAppSpaceResourcesPostgres {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/app_space#branch DataDatabricksAppSpace#branch}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/app_space#branch DataDatabricksAppSpace#branch}
   */
   readonly branch?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/app_space#database DataDatabricksAppSpace#database}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/app_space#database DataDatabricksAppSpace#database}
   */
   readonly database?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/app_space#permission DataDatabricksAppSpace#permission}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/app_space#permission DataDatabricksAppSpace#permission}
   */
   readonly permission?: string;
 }
@@ -948,15 +951,15 @@ export class DataDatabricksAppSpaceResourcesPostgresOutputReference extends cdkt
 }
 export interface DataDatabricksAppSpaceResourcesSecret {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/app_space#key DataDatabricksAppSpace#key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/app_space#key DataDatabricksAppSpace#key}
   */
   readonly key: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/app_space#permission DataDatabricksAppSpace#permission}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/app_space#permission DataDatabricksAppSpace#permission}
   */
   readonly permission: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/app_space#scope DataDatabricksAppSpace#scope}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/app_space#scope DataDatabricksAppSpace#scope}
   */
   readonly scope: string;
 }
@@ -1099,11 +1102,11 @@ export class DataDatabricksAppSpaceResourcesSecretOutputReference extends cdktn.
 }
 export interface DataDatabricksAppSpaceResourcesServingEndpoint {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/app_space#name DataDatabricksAppSpace#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/app_space#name DataDatabricksAppSpace#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/app_space#permission DataDatabricksAppSpace#permission}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/app_space#permission DataDatabricksAppSpace#permission}
   */
   readonly permission: string;
 }
@@ -1220,14 +1223,14 @@ export class DataDatabricksAppSpaceResourcesServingEndpointOutputReference exten
 }
 export interface DataDatabricksAppSpaceResourcesSqlWarehouse {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/app_space#id DataDatabricksAppSpace#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/app_space#id DataDatabricksAppSpace#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/app_space#permission DataDatabricksAppSpace#permission}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/app_space#permission DataDatabricksAppSpace#permission}
   */
   readonly permission: string;
 }
@@ -1344,15 +1347,15 @@ export class DataDatabricksAppSpaceResourcesSqlWarehouseOutputReference extends 
 }
 export interface DataDatabricksAppSpaceResourcesUcSecurable {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/app_space#permission DataDatabricksAppSpace#permission}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/app_space#permission DataDatabricksAppSpace#permission}
   */
   readonly permission: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/app_space#securable_full_name DataDatabricksAppSpace#securable_full_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/app_space#securable_full_name DataDatabricksAppSpace#securable_full_name}
   */
   readonly securableFullName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/app_space#securable_type DataDatabricksAppSpace#securable_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/app_space#securable_type DataDatabricksAppSpace#securable_type}
   */
   readonly securableType: string;
 }
@@ -1500,51 +1503,51 @@ export class DataDatabricksAppSpaceResourcesUcSecurableOutputReference extends c
 }
 export interface DataDatabricksAppSpaceResources {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/app_space#app DataDatabricksAppSpace#app}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/app_space#app DataDatabricksAppSpace#app}
   */
   readonly app?: DataDatabricksAppSpaceResourcesApp;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/app_space#database DataDatabricksAppSpace#database}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/app_space#database DataDatabricksAppSpace#database}
   */
   readonly database?: DataDatabricksAppSpaceResourcesDatabase;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/app_space#description DataDatabricksAppSpace#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/app_space#description DataDatabricksAppSpace#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/app_space#experiment DataDatabricksAppSpace#experiment}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/app_space#experiment DataDatabricksAppSpace#experiment}
   */
   readonly experiment?: DataDatabricksAppSpaceResourcesExperiment;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/app_space#genie_space DataDatabricksAppSpace#genie_space}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/app_space#genie_space DataDatabricksAppSpace#genie_space}
   */
   readonly genieSpace?: DataDatabricksAppSpaceResourcesGenieSpace;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/app_space#job DataDatabricksAppSpace#job}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/app_space#job DataDatabricksAppSpace#job}
   */
   readonly job?: DataDatabricksAppSpaceResourcesJob;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/app_space#name DataDatabricksAppSpace#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/app_space#name DataDatabricksAppSpace#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/app_space#postgres DataDatabricksAppSpace#postgres}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/app_space#postgres DataDatabricksAppSpace#postgres}
   */
   readonly postgres?: DataDatabricksAppSpaceResourcesPostgres;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/app_space#secret DataDatabricksAppSpace#secret}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/app_space#secret DataDatabricksAppSpace#secret}
   */
   readonly secret?: DataDatabricksAppSpaceResourcesSecret;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/app_space#serving_endpoint DataDatabricksAppSpace#serving_endpoint}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/app_space#serving_endpoint DataDatabricksAppSpace#serving_endpoint}
   */
   readonly servingEndpoint?: DataDatabricksAppSpaceResourcesServingEndpoint;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/app_space#sql_warehouse DataDatabricksAppSpace#sql_warehouse}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/app_space#sql_warehouse DataDatabricksAppSpace#sql_warehouse}
   */
   readonly sqlWarehouse?: DataDatabricksAppSpaceResourcesSqlWarehouse;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/app_space#uc_securable DataDatabricksAppSpace#uc_securable}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/app_space#uc_securable DataDatabricksAppSpace#uc_securable}
   */
   readonly ucSecurable?: DataDatabricksAppSpaceResourcesUcSecurable;
 }
@@ -2025,7 +2028,7 @@ export class DataDatabricksAppSpaceStatusOutputReference extends cdktn.ComplexOb
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/app_space databricks_app_space}
+* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/app_space databricks_app_space}
 */
 export class DataDatabricksAppSpace extends cdktn.TerraformDataSource {
 
@@ -2041,7 +2044,7 @@ export class DataDatabricksAppSpace extends cdktn.TerraformDataSource {
   * Generates CDKTN code for importing a DataDatabricksAppSpace resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataDatabricksAppSpace to import
-  * @param importFromId The id of the existing DataDatabricksAppSpace that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/app_space#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataDatabricksAppSpace that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/app_space#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataDatabricksAppSpace to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -2053,7 +2056,7 @@ export class DataDatabricksAppSpace extends cdktn.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/app_space databricks_app_space} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/app_space databricks_app_space} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -2064,7 +2067,7 @@ export class DataDatabricksAppSpace extends cdktn.TerraformDataSource {
       terraformResourceType: 'databricks_app_space',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '1.114.2',
+        providerVersion: '1.115.0',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,

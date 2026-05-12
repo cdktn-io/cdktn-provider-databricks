@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/external_locations
+// https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/external_locations
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,28 +13,28 @@ import * as cdktn from 'cdktn';
 
 export interface DataDatabricksExternalLocationsConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/external_locations#id DataDatabricksExternalLocations#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/external_locations#id DataDatabricksExternalLocations#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/external_locations#names DataDatabricksExternalLocations#names}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/external_locations#names DataDatabricksExternalLocations#names}
   */
   readonly names?: string[];
   /**
   * provider_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/external_locations#provider_config DataDatabricksExternalLocations#provider_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/external_locations#provider_config DataDatabricksExternalLocations#provider_config}
   */
   readonly providerConfig?: DataDatabricksExternalLocationsProviderConfig;
 }
 export interface DataDatabricksExternalLocationsProviderConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/external_locations#workspace_id DataDatabricksExternalLocations#workspace_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/external_locations#workspace_id DataDatabricksExternalLocations#workspace_id}
   */
-  readonly workspaceId: string;
+  readonly workspaceId?: string;
 }
 
 export function dataDatabricksExternalLocationsProviderConfigToTerraform(struct?: DataDatabricksExternalLocationsProviderConfigOutputReference | DataDatabricksExternalLocationsProviderConfig): any {
@@ -98,13 +98,16 @@ export class DataDatabricksExternalLocationsProviderConfigOutputReference extend
     }
   }
 
-  // workspace_id - computed: false, optional: false, required: true
+  // workspace_id - computed: true, optional: true, required: false
   private _workspaceId?: string; 
   public get workspaceId() {
     return this.getStringAttribute('workspace_id');
   }
   public set workspaceId(value: string) {
     this._workspaceId = value;
+  }
+  public resetWorkspaceId() {
+    this._workspaceId = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get workspaceIdInput() {
@@ -113,7 +116,7 @@ export class DataDatabricksExternalLocationsProviderConfigOutputReference extend
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/external_locations databricks_external_locations}
+* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/external_locations databricks_external_locations}
 */
 export class DataDatabricksExternalLocations extends cdktn.TerraformDataSource {
 
@@ -129,7 +132,7 @@ export class DataDatabricksExternalLocations extends cdktn.TerraformDataSource {
   * Generates CDKTN code for importing a DataDatabricksExternalLocations resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataDatabricksExternalLocations to import
-  * @param importFromId The id of the existing DataDatabricksExternalLocations that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/external_locations#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataDatabricksExternalLocations that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/external_locations#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataDatabricksExternalLocations to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -141,7 +144,7 @@ export class DataDatabricksExternalLocations extends cdktn.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/external_locations databricks_external_locations} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/external_locations databricks_external_locations} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -152,7 +155,7 @@ export class DataDatabricksExternalLocations extends cdktn.TerraformDataSource {
       terraformResourceType: 'databricks_external_locations',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '1.114.2',
+        providerVersion: '1.115.0',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,

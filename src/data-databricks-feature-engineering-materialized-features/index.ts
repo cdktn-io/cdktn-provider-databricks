@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/feature_engineering_materialized_features
+// https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/feature_engineering_materialized_features
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,29 +13,29 @@ import * as cdktn from 'cdktn';
 
 export interface DataDatabricksFeatureEngineeringMaterializedFeaturesConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/feature_engineering_materialized_features#feature_name DataDatabricksFeatureEngineeringMaterializedFeatures#feature_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/feature_engineering_materialized_features#feature_name DataDatabricksFeatureEngineeringMaterializedFeatures#feature_name}
   */
   readonly featureName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/feature_engineering_materialized_features#page_size DataDatabricksFeatureEngineeringMaterializedFeatures#page_size}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/feature_engineering_materialized_features#page_size DataDatabricksFeatureEngineeringMaterializedFeatures#page_size}
   */
   readonly pageSize?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/feature_engineering_materialized_features#provider_config DataDatabricksFeatureEngineeringMaterializedFeatures#provider_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/feature_engineering_materialized_features#provider_config DataDatabricksFeatureEngineeringMaterializedFeatures#provider_config}
   */
   readonly providerConfig?: DataDatabricksFeatureEngineeringMaterializedFeaturesProviderConfig;
 }
 export interface DataDatabricksFeatureEngineeringMaterializedFeaturesMaterializedFeaturesOfflineStoreConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/feature_engineering_materialized_features#catalog_name DataDatabricksFeatureEngineeringMaterializedFeatures#catalog_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/feature_engineering_materialized_features#catalog_name DataDatabricksFeatureEngineeringMaterializedFeatures#catalog_name}
   */
   readonly catalogName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/feature_engineering_materialized_features#schema_name DataDatabricksFeatureEngineeringMaterializedFeatures#schema_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/feature_engineering_materialized_features#schema_name DataDatabricksFeatureEngineeringMaterializedFeatures#schema_name}
   */
   readonly schemaName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/feature_engineering_materialized_features#table_name_prefix DataDatabricksFeatureEngineeringMaterializedFeatures#table_name_prefix}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/feature_engineering_materialized_features#table_name_prefix DataDatabricksFeatureEngineeringMaterializedFeatures#table_name_prefix}
   */
   readonly tableNamePrefix: string;
 }
@@ -168,19 +168,19 @@ export class DataDatabricksFeatureEngineeringMaterializedFeaturesMaterializedFea
 }
 export interface DataDatabricksFeatureEngineeringMaterializedFeaturesMaterializedFeaturesOnlineStoreConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/feature_engineering_materialized_features#catalog_name DataDatabricksFeatureEngineeringMaterializedFeatures#catalog_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/feature_engineering_materialized_features#catalog_name DataDatabricksFeatureEngineeringMaterializedFeatures#catalog_name}
   */
   readonly catalogName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/feature_engineering_materialized_features#online_store_name DataDatabricksFeatureEngineeringMaterializedFeatures#online_store_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/feature_engineering_materialized_features#online_store_name DataDatabricksFeatureEngineeringMaterializedFeatures#online_store_name}
   */
   readonly onlineStoreName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/feature_engineering_materialized_features#schema_name DataDatabricksFeatureEngineeringMaterializedFeatures#schema_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/feature_engineering_materialized_features#schema_name DataDatabricksFeatureEngineeringMaterializedFeatures#schema_name}
   */
   readonly schemaName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/feature_engineering_materialized_features#table_name_prefix DataDatabricksFeatureEngineeringMaterializedFeatures#table_name_prefix}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/feature_engineering_materialized_features#table_name_prefix DataDatabricksFeatureEngineeringMaterializedFeatures#table_name_prefix}
   */
   readonly tableNamePrefix: string;
 }
@@ -339,9 +339,9 @@ export class DataDatabricksFeatureEngineeringMaterializedFeaturesMaterializedFea
 }
 export interface DataDatabricksFeatureEngineeringMaterializedFeaturesMaterializedFeaturesProviderConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/feature_engineering_materialized_features#workspace_id DataDatabricksFeatureEngineeringMaterializedFeatures#workspace_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/feature_engineering_materialized_features#workspace_id DataDatabricksFeatureEngineeringMaterializedFeatures#workspace_id}
   */
-  readonly workspaceId: string;
+  readonly workspaceId?: string;
 }
 
 export function dataDatabricksFeatureEngineeringMaterializedFeaturesMaterializedFeaturesProviderConfigToTerraform(struct?: DataDatabricksFeatureEngineeringMaterializedFeaturesMaterializedFeaturesProviderConfig | cdktn.IResolvable): any {
@@ -415,13 +415,16 @@ export class DataDatabricksFeatureEngineeringMaterializedFeaturesMaterializedFea
     }
   }
 
-  // workspace_id - computed: true, optional: false, required: true
+  // workspace_id - computed: true, optional: true, required: false
   private _workspaceId?: string; 
   public get workspaceId() {
     return this.getStringAttribute('workspace_id');
   }
   public set workspaceId(value: string) {
     this._workspaceId = value;
+  }
+  public resetWorkspaceId() {
+    this._workspaceId = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get workspaceIdInput() {
@@ -430,11 +433,11 @@ export class DataDatabricksFeatureEngineeringMaterializedFeaturesMaterializedFea
 }
 export interface DataDatabricksFeatureEngineeringMaterializedFeaturesMaterializedFeatures {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/feature_engineering_materialized_features#materialized_feature_id DataDatabricksFeatureEngineeringMaterializedFeatures#materialized_feature_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/feature_engineering_materialized_features#materialized_feature_id DataDatabricksFeatureEngineeringMaterializedFeatures#materialized_feature_id}
   */
   readonly materializedFeatureId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/feature_engineering_materialized_features#provider_config DataDatabricksFeatureEngineeringMaterializedFeatures#provider_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/feature_engineering_materialized_features#provider_config DataDatabricksFeatureEngineeringMaterializedFeatures#provider_config}
   */
   readonly providerConfig?: DataDatabricksFeatureEngineeringMaterializedFeaturesMaterializedFeaturesProviderConfig;
 }
@@ -608,9 +611,9 @@ export class DataDatabricksFeatureEngineeringMaterializedFeaturesMaterializedFea
 }
 export interface DataDatabricksFeatureEngineeringMaterializedFeaturesProviderConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/feature_engineering_materialized_features#workspace_id DataDatabricksFeatureEngineeringMaterializedFeatures#workspace_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/feature_engineering_materialized_features#workspace_id DataDatabricksFeatureEngineeringMaterializedFeatures#workspace_id}
   */
-  readonly workspaceId: string;
+  readonly workspaceId?: string;
 }
 
 export function dataDatabricksFeatureEngineeringMaterializedFeaturesProviderConfigToTerraform(struct?: DataDatabricksFeatureEngineeringMaterializedFeaturesProviderConfig | cdktn.IResolvable): any {
@@ -684,13 +687,16 @@ export class DataDatabricksFeatureEngineeringMaterializedFeaturesProviderConfigO
     }
   }
 
-  // workspace_id - computed: false, optional: false, required: true
+  // workspace_id - computed: true, optional: true, required: false
   private _workspaceId?: string; 
   public get workspaceId() {
     return this.getStringAttribute('workspace_id');
   }
   public set workspaceId(value: string) {
     this._workspaceId = value;
+  }
+  public resetWorkspaceId() {
+    this._workspaceId = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get workspaceIdInput() {
@@ -699,7 +705,7 @@ export class DataDatabricksFeatureEngineeringMaterializedFeaturesProviderConfigO
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/feature_engineering_materialized_features databricks_feature_engineering_materialized_features}
+* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/feature_engineering_materialized_features databricks_feature_engineering_materialized_features}
 */
 export class DataDatabricksFeatureEngineeringMaterializedFeatures extends cdktn.TerraformDataSource {
 
@@ -715,7 +721,7 @@ export class DataDatabricksFeatureEngineeringMaterializedFeatures extends cdktn.
   * Generates CDKTN code for importing a DataDatabricksFeatureEngineeringMaterializedFeatures resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataDatabricksFeatureEngineeringMaterializedFeatures to import
-  * @param importFromId The id of the existing DataDatabricksFeatureEngineeringMaterializedFeatures that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/feature_engineering_materialized_features#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataDatabricksFeatureEngineeringMaterializedFeatures that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/feature_engineering_materialized_features#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataDatabricksFeatureEngineeringMaterializedFeatures to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -727,7 +733,7 @@ export class DataDatabricksFeatureEngineeringMaterializedFeatures extends cdktn.
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/feature_engineering_materialized_features databricks_feature_engineering_materialized_features} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/feature_engineering_materialized_features databricks_feature_engineering_materialized_features} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -738,7 +744,7 @@ export class DataDatabricksFeatureEngineeringMaterializedFeatures extends cdktn.
       terraformResourceType: 'databricks_feature_engineering_materialized_features',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '1.114.2',
+        providerVersion: '1.115.0',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,

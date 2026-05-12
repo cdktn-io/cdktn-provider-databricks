@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/resources/restrict_workspace_admins_setting
+// https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/resources/restrict_workspace_admins_setting
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,38 +13,38 @@ import * as cdktn from 'cdktn';
 
 export interface RestrictWorkspaceAdminsSettingConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/resources/restrict_workspace_admins_setting#etag RestrictWorkspaceAdminsSetting#etag}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/resources/restrict_workspace_admins_setting#etag RestrictWorkspaceAdminsSetting#etag}
   */
   readonly etag?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/resources/restrict_workspace_admins_setting#id RestrictWorkspaceAdminsSetting#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/resources/restrict_workspace_admins_setting#id RestrictWorkspaceAdminsSetting#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/resources/restrict_workspace_admins_setting#setting_name RestrictWorkspaceAdminsSetting#setting_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/resources/restrict_workspace_admins_setting#setting_name RestrictWorkspaceAdminsSetting#setting_name}
   */
   readonly settingName?: string;
   /**
   * provider_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/resources/restrict_workspace_admins_setting#provider_config RestrictWorkspaceAdminsSetting#provider_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/resources/restrict_workspace_admins_setting#provider_config RestrictWorkspaceAdminsSetting#provider_config}
   */
   readonly providerConfig?: RestrictWorkspaceAdminsSettingProviderConfig;
   /**
   * restrict_workspace_admins block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/resources/restrict_workspace_admins_setting#restrict_workspace_admins RestrictWorkspaceAdminsSetting#restrict_workspace_admins}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/resources/restrict_workspace_admins_setting#restrict_workspace_admins RestrictWorkspaceAdminsSetting#restrict_workspace_admins}
   */
   readonly restrictWorkspaceAdmins: RestrictWorkspaceAdminsSettingRestrictWorkspaceAdmins;
 }
 export interface RestrictWorkspaceAdminsSettingProviderConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/resources/restrict_workspace_admins_setting#workspace_id RestrictWorkspaceAdminsSetting#workspace_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/resources/restrict_workspace_admins_setting#workspace_id RestrictWorkspaceAdminsSetting#workspace_id}
   */
-  readonly workspaceId: string;
+  readonly workspaceId?: string;
 }
 
 export function restrictWorkspaceAdminsSettingProviderConfigToTerraform(struct?: RestrictWorkspaceAdminsSettingProviderConfigOutputReference | RestrictWorkspaceAdminsSettingProviderConfig): any {
@@ -108,13 +108,16 @@ export class RestrictWorkspaceAdminsSettingProviderConfigOutputReference extends
     }
   }
 
-  // workspace_id - computed: false, optional: false, required: true
+  // workspace_id - computed: true, optional: true, required: false
   private _workspaceId?: string; 
   public get workspaceId() {
     return this.getStringAttribute('workspace_id');
   }
   public set workspaceId(value: string) {
     this._workspaceId = value;
+  }
+  public resetWorkspaceId() {
+    this._workspaceId = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get workspaceIdInput() {
@@ -123,11 +126,11 @@ export class RestrictWorkspaceAdminsSettingProviderConfigOutputReference extends
 }
 export interface RestrictWorkspaceAdminsSettingRestrictWorkspaceAdmins {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/resources/restrict_workspace_admins_setting#disable_gov_tag_creation RestrictWorkspaceAdminsSetting#disable_gov_tag_creation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/resources/restrict_workspace_admins_setting#disable_gov_tag_creation RestrictWorkspaceAdminsSetting#disable_gov_tag_creation}
   */
   readonly disableGovTagCreation?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/resources/restrict_workspace_admins_setting#status RestrictWorkspaceAdminsSetting#status}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/resources/restrict_workspace_admins_setting#status RestrictWorkspaceAdminsSetting#status}
   */
   readonly status: string;
 }
@@ -237,7 +240,7 @@ export class RestrictWorkspaceAdminsSettingRestrictWorkspaceAdminsOutputReferenc
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/resources/restrict_workspace_admins_setting databricks_restrict_workspace_admins_setting}
+* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/resources/restrict_workspace_admins_setting databricks_restrict_workspace_admins_setting}
 */
 export class RestrictWorkspaceAdminsSetting extends cdktn.TerraformResource {
 
@@ -253,7 +256,7 @@ export class RestrictWorkspaceAdminsSetting extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a RestrictWorkspaceAdminsSetting resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the RestrictWorkspaceAdminsSetting to import
-  * @param importFromId The id of the existing RestrictWorkspaceAdminsSetting that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/resources/restrict_workspace_admins_setting#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing RestrictWorkspaceAdminsSetting that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/resources/restrict_workspace_admins_setting#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the RestrictWorkspaceAdminsSetting to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -265,7 +268,7 @@ export class RestrictWorkspaceAdminsSetting extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/resources/restrict_workspace_admins_setting databricks_restrict_workspace_admins_setting} Resource
+  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/resources/restrict_workspace_admins_setting databricks_restrict_workspace_admins_setting} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -276,7 +279,7 @@ export class RestrictWorkspaceAdminsSetting extends cdktn.TerraformResource {
       terraformResourceType: 'databricks_restrict_workspace_admins_setting',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '1.114.2',
+        providerVersion: '1.115.0',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,

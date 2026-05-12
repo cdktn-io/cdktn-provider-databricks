@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/shares
+// https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/shares
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,19 +13,19 @@ import * as cdktn from 'cdktn';
 
 export interface DataDatabricksSharesConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/shares#provider_config DataDatabricksShares#provider_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/shares#provider_config DataDatabricksShares#provider_config}
   */
   readonly providerConfig?: DataDatabricksSharesProviderConfig;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/shares#shares DataDatabricksShares#shares}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/shares#shares DataDatabricksShares#shares}
   */
   readonly shares?: string[];
 }
 export interface DataDatabricksSharesProviderConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/shares#workspace_id DataDatabricksShares#workspace_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/shares#workspace_id DataDatabricksShares#workspace_id}
   */
-  readonly workspaceId: string;
+  readonly workspaceId?: string;
 }
 
 export function dataDatabricksSharesProviderConfigToTerraform(struct?: DataDatabricksSharesProviderConfig | cdktn.IResolvable): any {
@@ -99,13 +99,16 @@ export class DataDatabricksSharesProviderConfigOutputReference extends cdktn.Com
     }
   }
 
-  // workspace_id - computed: false, optional: false, required: true
+  // workspace_id - computed: true, optional: true, required: false
   private _workspaceId?: string; 
   public get workspaceId() {
     return this.getStringAttribute('workspace_id');
   }
   public set workspaceId(value: string) {
     this._workspaceId = value;
+  }
+  public resetWorkspaceId() {
+    this._workspaceId = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get workspaceIdInput() {
@@ -114,7 +117,7 @@ export class DataDatabricksSharesProviderConfigOutputReference extends cdktn.Com
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/shares databricks_shares}
+* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/shares databricks_shares}
 */
 export class DataDatabricksShares extends cdktn.TerraformDataSource {
 
@@ -130,7 +133,7 @@ export class DataDatabricksShares extends cdktn.TerraformDataSource {
   * Generates CDKTN code for importing a DataDatabricksShares resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataDatabricksShares to import
-  * @param importFromId The id of the existing DataDatabricksShares that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/shares#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataDatabricksShares that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/shares#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataDatabricksShares to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -142,7 +145,7 @@ export class DataDatabricksShares extends cdktn.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/shares databricks_shares} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/shares databricks_shares} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -153,7 +156,7 @@ export class DataDatabricksShares extends cdktn.TerraformDataSource {
       terraformResourceType: 'databricks_shares',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '1.114.2',
+        providerVersion: '1.115.0',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,

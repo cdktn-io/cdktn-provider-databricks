@@ -45,6 +45,8 @@ Object.defineProperty(exports, 'directory', { get: function () { return require(
 Object.defineProperty(exports, 'disableLegacyAccessSetting', { get: function () { return require('./disable-legacy-access-setting'); } });
 Object.defineProperty(exports, 'disableLegacyDbfsSetting', { get: function () { return require('./disable-legacy-dbfs-setting'); } });
 Object.defineProperty(exports, 'disableLegacyFeaturesSetting', { get: function () { return require('./disable-legacy-features-setting'); } });
+Object.defineProperty(exports, 'disasterRecoveryFailoverGroup', { get: function () { return require('./disaster-recovery-failover-group'); } });
+Object.defineProperty(exports, 'disasterRecoveryStableUrl', { get: function () { return require('./disaster-recovery-stable-url'); } });
 Object.defineProperty(exports, 'endpoint', { get: function () { return require('./endpoint'); } });
 Object.defineProperty(exports, 'enhancedSecurityMonitoringWorkspaceSetting', { get: function () { return require('./enhanced-security-monitoring-workspace-setting'); } });
 Object.defineProperty(exports, 'entitlements', { get: function () { return require('./entitlements'); } });
@@ -124,6 +126,7 @@ Object.defineProperty(exports, 'schema', { get: function () { return require('./
 Object.defineProperty(exports, 'secret', { get: function () { return require('./secret'); } });
 Object.defineProperty(exports, 'secretAcl', { get: function () { return require('./secret-acl'); } });
 Object.defineProperty(exports, 'secretScope', { get: function () { return require('./secret-scope'); } });
+Object.defineProperty(exports, 'secretUc', { get: function () { return require('./secret-uc'); } });
 Object.defineProperty(exports, 'servicePrincipal', { get: function () { return require('./service-principal'); } });
 Object.defineProperty(exports, 'servicePrincipalFederationPolicy', { get: function () { return require('./service-principal-federation-policy'); } });
 Object.defineProperty(exports, 'servicePrincipalRole', { get: function () { return require('./service-principal-role'); } });
@@ -139,6 +142,8 @@ Object.defineProperty(exports, 'sqlTable', { get: function () { return require('
 Object.defineProperty(exports, 'sqlVisualization', { get: function () { return require('./sql-visualization'); } });
 Object.defineProperty(exports, 'sqlWidget', { get: function () { return require('./sql-widget'); } });
 Object.defineProperty(exports, 'storageCredential', { get: function () { return require('./storage-credential'); } });
+Object.defineProperty(exports, 'supervisorAgent', { get: function () { return require('./supervisor-agent'); } });
+Object.defineProperty(exports, 'supervisorAgentTool', { get: function () { return require('./supervisor-agent-tool'); } });
 Object.defineProperty(exports, 'systemSchema', { get: function () { return require('./system-schema'); } });
 Object.defineProperty(exports, 'table', { get: function () { return require('./table'); } });
 Object.defineProperty(exports, 'tagPolicy', { get: function () { return require('./tag-policy'); } });
@@ -201,6 +206,10 @@ Object.defineProperty(exports, 'dataDatabricksDatabaseSyncedDatabaseTables', { g
 Object.defineProperty(exports, 'dataDatabricksDbfsFile', { get: function () { return require('./data-databricks-dbfs-file'); } });
 Object.defineProperty(exports, 'dataDatabricksDbfsFilePaths', { get: function () { return require('./data-databricks-dbfs-file-paths'); } });
 Object.defineProperty(exports, 'dataDatabricksDirectory', { get: function () { return require('./data-databricks-directory'); } });
+Object.defineProperty(exports, 'dataDatabricksDisasterRecoveryFailoverGroup', { get: function () { return require('./data-databricks-disaster-recovery-failover-group'); } });
+Object.defineProperty(exports, 'dataDatabricksDisasterRecoveryFailoverGroups', { get: function () { return require('./data-databricks-disaster-recovery-failover-groups'); } });
+Object.defineProperty(exports, 'dataDatabricksDisasterRecoveryStableUrl', { get: function () { return require('./data-databricks-disaster-recovery-stable-url'); } });
+Object.defineProperty(exports, 'dataDatabricksDisasterRecoveryStableUrls', { get: function () { return require('./data-databricks-disaster-recovery-stable-urls'); } });
 Object.defineProperty(exports, 'dataDatabricksEndpoint', { get: function () { return require('./data-databricks-endpoint'); } });
 Object.defineProperty(exports, 'dataDatabricksEndpoints', { get: function () { return require('./data-databricks-endpoints'); } });
 Object.defineProperty(exports, 'dataDatabricksEntityTagAssignment', { get: function () { return require('./data-databricks-entity-tag-assignment'); } });
@@ -267,6 +276,8 @@ Object.defineProperty(exports, 'dataDatabricksRegisteredModelVersions', { get: f
 Object.defineProperty(exports, 'dataDatabricksRfaAccessRequestDestinations', { get: function () { return require('./data-databricks-rfa-access-request-destinations'); } });
 Object.defineProperty(exports, 'dataDatabricksSchema', { get: function () { return require('./data-databricks-schema'); } });
 Object.defineProperty(exports, 'dataDatabricksSchemas', { get: function () { return require('./data-databricks-schemas'); } });
+Object.defineProperty(exports, 'dataDatabricksSecretUc', { get: function () { return require('./data-databricks-secret-uc'); } });
+Object.defineProperty(exports, 'dataDatabricksSecretUcs', { get: function () { return require('./data-databricks-secret-ucs'); } });
 Object.defineProperty(exports, 'dataDatabricksServicePrincipal', { get: function () { return require('./data-databricks-service-principal'); } });
 Object.defineProperty(exports, 'dataDatabricksServicePrincipalFederationPolicies', { get: function () { return require('./data-databricks-service-principal-federation-policies'); } });
 Object.defineProperty(exports, 'dataDatabricksServicePrincipalFederationPolicy', { get: function () { return require('./data-databricks-service-principal-federation-policy'); } });
@@ -279,6 +290,10 @@ Object.defineProperty(exports, 'dataDatabricksSqlWarehouse', { get: function () 
 Object.defineProperty(exports, 'dataDatabricksSqlWarehouses', { get: function () { return require('./data-databricks-sql-warehouses'); } });
 Object.defineProperty(exports, 'dataDatabricksStorageCredential', { get: function () { return require('./data-databricks-storage-credential'); } });
 Object.defineProperty(exports, 'dataDatabricksStorageCredentials', { get: function () { return require('./data-databricks-storage-credentials'); } });
+Object.defineProperty(exports, 'dataDatabricksSupervisorAgent', { get: function () { return require('./data-databricks-supervisor-agent'); } });
+Object.defineProperty(exports, 'dataDatabricksSupervisorAgentTool', { get: function () { return require('./data-databricks-supervisor-agent-tool'); } });
+Object.defineProperty(exports, 'dataDatabricksSupervisorAgentTools', { get: function () { return require('./data-databricks-supervisor-agent-tools'); } });
+Object.defineProperty(exports, 'dataDatabricksSupervisorAgents', { get: function () { return require('./data-databricks-supervisor-agents'); } });
 Object.defineProperty(exports, 'dataDatabricksTable', { get: function () { return require('./data-databricks-table'); } });
 Object.defineProperty(exports, 'dataDatabricksTables', { get: function () { return require('./data-databricks-tables'); } });
 Object.defineProperty(exports, 'dataDatabricksTagPolicies', { get: function () { return require('./data-databricks-tag-policies'); } });
