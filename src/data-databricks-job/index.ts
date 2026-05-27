@@ -12,8 +12,8 @@ DataDatabricksJobJobSettingsOutputReference,
 DataDatabricksJobProviderConfig, 
 dataDatabricksJobProviderConfigToTerraform, 
 dataDatabricksJobProviderConfigToHclTerraform, 
-DataDatabricksJobProviderConfigOutputReference} from './index-structs'
-export * from './index-structs'
+DataDatabricksJobProviderConfigOutputReference} from './index-structs/index';
+export * from './index-structs/index';
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
 export interface DataDatabricksJobConfig extends cdktn.TerraformMetaArguments {

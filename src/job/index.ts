@@ -112,8 +112,8 @@ JobTriggerOutputReference,
 JobWebhookNotifications, 
 jobWebhookNotificationsToTerraform, 
 jobWebhookNotificationsToHclTerraform, 
-JobWebhookNotificationsOutputReference} from './index-structs'
-export * from './index-structs'
+JobWebhookNotificationsOutputReference} from './index-structs/index';
+export * from './index-structs/index';
 import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
 export interface JobConfig extends cdktn.TerraformMetaArguments {
