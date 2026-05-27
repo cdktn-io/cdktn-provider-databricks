@@ -75,7 +75,7 @@ JobTaskSparkSubmitTaskOutputReference,
 JobTaskSqlTask,
 jobTaskSqlTaskToTerraform,
 jobTaskSqlTaskToHclTerraform,
-JobTaskSqlTaskOutputReference } from './structs400'
+JobTaskSqlTaskOutputReference } from './structs400';
 import { JobTaskAlertTask,
 jobTaskAlertTaskToTerraform,
 jobTaskAlertTaskToHclTerraform,
@@ -115,7 +115,7 @@ JobTaskDependsOnList,
 JobTaskEmailNotifications,
 jobTaskEmailNotificationsToTerraform,
 jobTaskEmailNotificationsToHclTerraform,
-JobTaskEmailNotificationsOutputReference } from './structs0'
+JobTaskEmailNotificationsOutputReference } from './structs0';
 export interface JobTaskWebhookNotificationsOnStreamingBacklogExceeded {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/resources/job#id Job#id}
@@ -222,7 +222,7 @@ export class JobTaskWebhookNotificationsOnStreamingBacklogExceededList extends c
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
   constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
-    super(terraformResource, terraformAttribute, wrapsSet)
+    super(terraformResource, terraformAttribute, wrapsSet);
   }
 
   /**
@@ -338,7 +338,7 @@ export class JobTaskWebhookNotificationsOnSuccessList extends cdktn.ComplexList 
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
   constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
-    super(terraformResource, terraformAttribute, wrapsSet)
+    super(terraformResource, terraformAttribute, wrapsSet);
   }
 
   /**
@@ -1950,7 +1950,7 @@ export class JobTaskList extends cdktn.ComplexList {
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
   constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
-    super(terraformResource, terraformAttribute, wrapsSet)
+    super(terraformResource, terraformAttribute, wrapsSet);
   }
 
   /**
@@ -3068,7 +3068,7 @@ export class JobWebhookNotificationsOnDurationWarningThresholdExceededList exten
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
   constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
-    super(terraformResource, terraformAttribute, wrapsSet)
+    super(terraformResource, terraformAttribute, wrapsSet);
   }
 
   /**
@@ -3184,7 +3184,7 @@ export class JobWebhookNotificationsOnFailureList extends cdktn.ComplexList {
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
   constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
-    super(terraformResource, terraformAttribute, wrapsSet)
+    super(terraformResource, terraformAttribute, wrapsSet);
   }
 
   /**
@@ -3300,7 +3300,7 @@ export class JobWebhookNotificationsOnStartList extends cdktn.ComplexList {
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
   constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
-    super(terraformResource, terraformAttribute, wrapsSet)
+    super(terraformResource, terraformAttribute, wrapsSet);
   }
 
   /**
@@ -3416,7 +3416,7 @@ export class JobWebhookNotificationsOnStreamingBacklogExceededList extends cdktn
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
   constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
-    super(terraformResource, terraformAttribute, wrapsSet)
+    super(terraformResource, terraformAttribute, wrapsSet);
   }
 
   /**
@@ -3532,7 +3532,7 @@ export class JobWebhookNotificationsOnSuccessList extends cdktn.ComplexList {
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
   constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
-    super(terraformResource, terraformAttribute, wrapsSet)
+    super(terraformResource, terraformAttribute, wrapsSet);
   }
 
   /**
