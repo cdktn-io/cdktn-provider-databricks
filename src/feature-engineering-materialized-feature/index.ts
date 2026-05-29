@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/resources/feature_engineering_materialized_feature
+// https://registry.terraform.io/providers/databricks/databricks/1.116.0/docs/resources/feature_engineering_materialized_feature
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,45 +13,147 @@ import * as cdktn from 'cdktn';
 
 export interface FeatureEngineeringMaterializedFeatureConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/resources/feature_engineering_materialized_feature#cron_schedule FeatureEngineeringMaterializedFeature#cron_schedule}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.116.0/docs/resources/feature_engineering_materialized_feature#cron_schedule FeatureEngineeringMaterializedFeature#cron_schedule}
   */
   readonly cronSchedule?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/resources/feature_engineering_materialized_feature#feature_name FeatureEngineeringMaterializedFeature#feature_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.116.0/docs/resources/feature_engineering_materialized_feature#cron_schedule_trigger FeatureEngineeringMaterializedFeature#cron_schedule_trigger}
+  */
+  readonly cronScheduleTrigger?: FeatureEngineeringMaterializedFeatureCronScheduleTrigger;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.116.0/docs/resources/feature_engineering_materialized_feature#feature_name FeatureEngineeringMaterializedFeature#feature_name}
   */
   readonly featureName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/resources/feature_engineering_materialized_feature#materialized_feature_id FeatureEngineeringMaterializedFeature#materialized_feature_id}
-  */
-  readonly materializedFeatureId?: string;
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/resources/feature_engineering_materialized_feature#offline_store_config FeatureEngineeringMaterializedFeature#offline_store_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.116.0/docs/resources/feature_engineering_materialized_feature#offline_store_config FeatureEngineeringMaterializedFeature#offline_store_config}
   */
   readonly offlineStoreConfig?: FeatureEngineeringMaterializedFeatureOfflineStoreConfig;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/resources/feature_engineering_materialized_feature#online_store_config FeatureEngineeringMaterializedFeature#online_store_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.116.0/docs/resources/feature_engineering_materialized_feature#online_store_config FeatureEngineeringMaterializedFeature#online_store_config}
   */
   readonly onlineStoreConfig?: FeatureEngineeringMaterializedFeatureOnlineStoreConfig;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/resources/feature_engineering_materialized_feature#pipeline_schedule_state FeatureEngineeringMaterializedFeature#pipeline_schedule_state}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.116.0/docs/resources/feature_engineering_materialized_feature#pipeline_schedule_state FeatureEngineeringMaterializedFeature#pipeline_schedule_state}
   */
   readonly pipelineScheduleState?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/resources/feature_engineering_materialized_feature#provider_config FeatureEngineeringMaterializedFeature#provider_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.116.0/docs/resources/feature_engineering_materialized_feature#provider_config FeatureEngineeringMaterializedFeature#provider_config}
   */
   readonly providerConfig?: FeatureEngineeringMaterializedFeatureProviderConfig;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.116.0/docs/resources/feature_engineering_materialized_feature#streaming_mode FeatureEngineeringMaterializedFeature#streaming_mode}
+  */
+  readonly streamingMode?: FeatureEngineeringMaterializedFeatureStreamingMode;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.116.0/docs/resources/feature_engineering_materialized_feature#table_trigger FeatureEngineeringMaterializedFeature#table_trigger}
+  */
+  readonly tableTrigger?: FeatureEngineeringMaterializedFeatureTableTrigger;
+}
+export interface FeatureEngineeringMaterializedFeatureCronScheduleTrigger {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.116.0/docs/resources/feature_engineering_materialized_feature#cron_expression FeatureEngineeringMaterializedFeature#cron_expression}
+  */
+  readonly cronExpression?: string;
+}
+
+export function featureEngineeringMaterializedFeatureCronScheduleTriggerToTerraform(struct?: FeatureEngineeringMaterializedFeatureCronScheduleTrigger | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    cron_expression: cdktn.stringToTerraform(struct!.cronExpression),
+  }
+}
+
+
+export function featureEngineeringMaterializedFeatureCronScheduleTriggerToHclTerraform(struct?: FeatureEngineeringMaterializedFeatureCronScheduleTrigger | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    cron_expression: {
+      value: cdktn.stringToHclTerraform(struct!.cronExpression),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class FeatureEngineeringMaterializedFeatureCronScheduleTriggerOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktn.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false);
+  }
+
+  public get internalValue(): FeatureEngineeringMaterializedFeatureCronScheduleTrigger | cdktn.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._cronExpression !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.cronExpression = this._cronExpression;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: FeatureEngineeringMaterializedFeatureCronScheduleTrigger | cdktn.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._cronExpression = undefined;
+    }
+    else if (cdktn.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._cronExpression = value.cronExpression;
+    }
+  }
+
+  // cron_expression - computed: false, optional: true, required: false
+  private _cronExpression?: string; 
+  public get cronExpression() {
+    return this.getStringAttribute('cron_expression');
+  }
+  public set cronExpression(value: string) {
+    this._cronExpression = value;
+  }
+  public resetCronExpression() {
+    this._cronExpression = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get cronExpressionInput() {
+    return this._cronExpression;
+  }
 }
 export interface FeatureEngineeringMaterializedFeatureOfflineStoreConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/resources/feature_engineering_materialized_feature#catalog_name FeatureEngineeringMaterializedFeature#catalog_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.116.0/docs/resources/feature_engineering_materialized_feature#catalog_name FeatureEngineeringMaterializedFeature#catalog_name}
   */
   readonly catalogName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/resources/feature_engineering_materialized_feature#schema_name FeatureEngineeringMaterializedFeature#schema_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.116.0/docs/resources/feature_engineering_materialized_feature#schema_name FeatureEngineeringMaterializedFeature#schema_name}
   */
   readonly schemaName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/resources/feature_engineering_materialized_feature#table_name_prefix FeatureEngineeringMaterializedFeature#table_name_prefix}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.116.0/docs/resources/feature_engineering_materialized_feature#table_name_prefix FeatureEngineeringMaterializedFeature#table_name_prefix}
   */
   readonly tableNamePrefix: string;
 }
@@ -153,7 +255,7 @@ export class FeatureEngineeringMaterializedFeatureOfflineStoreConfigOutputRefere
     }
   }
 
-  // catalog_name - computed: true, optional: false, required: true
+  // catalog_name - computed: false, optional: false, required: true
   private _catalogName?: string; 
   public get catalogName() {
     return this.getStringAttribute('catalog_name');
@@ -166,7 +268,7 @@ export class FeatureEngineeringMaterializedFeatureOfflineStoreConfigOutputRefere
     return this._catalogName;
   }
 
-  // schema_name - computed: true, optional: false, required: true
+  // schema_name - computed: false, optional: false, required: true
   private _schemaName?: string; 
   public get schemaName() {
     return this.getStringAttribute('schema_name');
@@ -179,7 +281,7 @@ export class FeatureEngineeringMaterializedFeatureOfflineStoreConfigOutputRefere
     return this._schemaName;
   }
 
-  // table_name_prefix - computed: true, optional: false, required: true
+  // table_name_prefix - computed: false, optional: false, required: true
   private _tableNamePrefix?: string; 
   public get tableNamePrefix() {
     return this.getStringAttribute('table_name_prefix');
@@ -194,19 +296,19 @@ export class FeatureEngineeringMaterializedFeatureOfflineStoreConfigOutputRefere
 }
 export interface FeatureEngineeringMaterializedFeatureOnlineStoreConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/resources/feature_engineering_materialized_feature#catalog_name FeatureEngineeringMaterializedFeature#catalog_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.116.0/docs/resources/feature_engineering_materialized_feature#catalog_name FeatureEngineeringMaterializedFeature#catalog_name}
   */
   readonly catalogName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/resources/feature_engineering_materialized_feature#online_store_name FeatureEngineeringMaterializedFeature#online_store_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.116.0/docs/resources/feature_engineering_materialized_feature#online_store_name FeatureEngineeringMaterializedFeature#online_store_name}
   */
   readonly onlineStoreName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/resources/feature_engineering_materialized_feature#schema_name FeatureEngineeringMaterializedFeature#schema_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.116.0/docs/resources/feature_engineering_materialized_feature#schema_name FeatureEngineeringMaterializedFeature#schema_name}
   */
   readonly schemaName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/resources/feature_engineering_materialized_feature#table_name_prefix FeatureEngineeringMaterializedFeature#table_name_prefix}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.116.0/docs/resources/feature_engineering_materialized_feature#table_name_prefix FeatureEngineeringMaterializedFeature#table_name_prefix}
   */
   readonly tableNamePrefix: string;
 }
@@ -321,7 +423,7 @@ export class FeatureEngineeringMaterializedFeatureOnlineStoreConfigOutputReferen
     }
   }
 
-  // catalog_name - computed: true, optional: false, required: true
+  // catalog_name - computed: false, optional: false, required: true
   private _catalogName?: string; 
   public get catalogName() {
     return this.getStringAttribute('catalog_name');
@@ -334,7 +436,7 @@ export class FeatureEngineeringMaterializedFeatureOnlineStoreConfigOutputReferen
     return this._catalogName;
   }
 
-  // online_store_name - computed: true, optional: false, required: true
+  // online_store_name - computed: false, optional: false, required: true
   private _onlineStoreName?: string; 
   public get onlineStoreName() {
     return this.getStringAttribute('online_store_name');
@@ -347,7 +449,7 @@ export class FeatureEngineeringMaterializedFeatureOnlineStoreConfigOutputReferen
     return this._onlineStoreName;
   }
 
-  // schema_name - computed: true, optional: false, required: true
+  // schema_name - computed: false, optional: false, required: true
   private _schemaName?: string; 
   public get schemaName() {
     return this.getStringAttribute('schema_name');
@@ -360,7 +462,7 @@ export class FeatureEngineeringMaterializedFeatureOnlineStoreConfigOutputReferen
     return this._schemaName;
   }
 
-  // table_name_prefix - computed: true, optional: false, required: true
+  // table_name_prefix - computed: false, optional: false, required: true
   private _tableNamePrefix?: string; 
   public get tableNamePrefix() {
     return this.getStringAttribute('table_name_prefix');
@@ -375,7 +477,7 @@ export class FeatureEngineeringMaterializedFeatureOnlineStoreConfigOutputReferen
 }
 export interface FeatureEngineeringMaterializedFeatureProviderConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/resources/feature_engineering_materialized_feature#workspace_id FeatureEngineeringMaterializedFeature#workspace_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.116.0/docs/resources/feature_engineering_materialized_feature#workspace_id FeatureEngineeringMaterializedFeature#workspace_id}
   */
   readonly workspaceId?: string;
 }
@@ -467,9 +569,162 @@ export class FeatureEngineeringMaterializedFeatureProviderConfigOutputReference 
     return this._workspaceId;
   }
 }
+export interface FeatureEngineeringMaterializedFeatureStreamingMode {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.116.0/docs/resources/feature_engineering_materialized_feature#mode FeatureEngineeringMaterializedFeature#mode}
+  */
+  readonly mode?: string;
+}
+
+export function featureEngineeringMaterializedFeatureStreamingModeToTerraform(struct?: FeatureEngineeringMaterializedFeatureStreamingMode | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    mode: cdktn.stringToTerraform(struct!.mode),
+  }
+}
+
+
+export function featureEngineeringMaterializedFeatureStreamingModeToHclTerraform(struct?: FeatureEngineeringMaterializedFeatureStreamingMode | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    mode: {
+      value: cdktn.stringToHclTerraform(struct!.mode),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class FeatureEngineeringMaterializedFeatureStreamingModeOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktn.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false);
+  }
+
+  public get internalValue(): FeatureEngineeringMaterializedFeatureStreamingMode | cdktn.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._mode !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.mode = this._mode;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: FeatureEngineeringMaterializedFeatureStreamingMode | cdktn.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._mode = undefined;
+    }
+    else if (cdktn.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._mode = value.mode;
+    }
+  }
+
+  // mode - computed: false, optional: true, required: false
+  private _mode?: string; 
+  public get mode() {
+    return this.getStringAttribute('mode');
+  }
+  public set mode(value: string) {
+    this._mode = value;
+  }
+  public resetMode() {
+    this._mode = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get modeInput() {
+    return this._mode;
+  }
+}
+export interface FeatureEngineeringMaterializedFeatureTableTrigger {
+}
+
+export function featureEngineeringMaterializedFeatureTableTriggerToTerraform(struct?: FeatureEngineeringMaterializedFeatureTableTrigger | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+
+export function featureEngineeringMaterializedFeatureTableTriggerToHclTerraform(struct?: FeatureEngineeringMaterializedFeatureTableTrigger | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
+export class FeatureEngineeringMaterializedFeatureTableTriggerOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktn.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false);
+  }
+
+  public get internalValue(): FeatureEngineeringMaterializedFeatureTableTrigger | cdktn.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: FeatureEngineeringMaterializedFeatureTableTrigger | cdktn.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+    }
+    else if (cdktn.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+    }
+  }
+}
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/resources/feature_engineering_materialized_feature databricks_feature_engineering_materialized_feature}
+* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.116.0/docs/resources/feature_engineering_materialized_feature databricks_feature_engineering_materialized_feature}
 */
 export class FeatureEngineeringMaterializedFeature extends cdktn.TerraformResource {
 
@@ -485,7 +740,7 @@ export class FeatureEngineeringMaterializedFeature extends cdktn.TerraformResour
   * Generates CDKTN code for importing a FeatureEngineeringMaterializedFeature resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the FeatureEngineeringMaterializedFeature to import
-  * @param importFromId The id of the existing FeatureEngineeringMaterializedFeature that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/resources/feature_engineering_materialized_feature#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing FeatureEngineeringMaterializedFeature that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.116.0/docs/resources/feature_engineering_materialized_feature#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the FeatureEngineeringMaterializedFeature to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -497,7 +752,7 @@ export class FeatureEngineeringMaterializedFeature extends cdktn.TerraformResour
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/resources/feature_engineering_materialized_feature databricks_feature_engineering_materialized_feature} Resource
+  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.116.0/docs/resources/feature_engineering_materialized_feature databricks_feature_engineering_materialized_feature} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -508,7 +763,7 @@ export class FeatureEngineeringMaterializedFeature extends cdktn.TerraformResour
       terraformResourceType: 'databricks_feature_engineering_materialized_feature',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '1.115.0',
+        providerVersion: '1.116.0',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,
@@ -520,12 +775,14 @@ export class FeatureEngineeringMaterializedFeature extends cdktn.TerraformResour
       forEach: config.forEach
     });
     this._cronSchedule = config.cronSchedule;
+    this._cronScheduleTrigger.internalValue = config.cronScheduleTrigger;
     this._featureName = config.featureName;
-    this._materializedFeatureId = config.materializedFeatureId;
     this._offlineStoreConfig.internalValue = config.offlineStoreConfig;
     this._onlineStoreConfig.internalValue = config.onlineStoreConfig;
     this._pipelineScheduleState = config.pipelineScheduleState;
     this._providerConfig.internalValue = config.providerConfig;
+    this._streamingMode.internalValue = config.streamingMode;
+    this._tableTrigger.internalValue = config.tableTrigger;
   }
 
   // ==========
@@ -546,6 +803,22 @@ export class FeatureEngineeringMaterializedFeature extends cdktn.TerraformResour
   // Temporarily expose input value. Use with caution.
   public get cronScheduleInput() {
     return this._cronSchedule;
+  }
+
+  // cron_schedule_trigger - computed: false, optional: true, required: false
+  private _cronScheduleTrigger = new FeatureEngineeringMaterializedFeatureCronScheduleTriggerOutputReference(this, "cron_schedule_trigger");
+  public get cronScheduleTrigger() {
+    return this._cronScheduleTrigger;
+  }
+  public putCronScheduleTrigger(value: FeatureEngineeringMaterializedFeatureCronScheduleTrigger) {
+    this._cronScheduleTrigger.internalValue = value;
+  }
+  public resetCronScheduleTrigger() {
+    this._cronScheduleTrigger.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get cronScheduleTriggerInput() {
+    return this._cronScheduleTrigger.internalValue;
   }
 
   // feature_name - computed: false, optional: false, required: true
@@ -571,23 +844,12 @@ export class FeatureEngineeringMaterializedFeature extends cdktn.TerraformResour
     return this.getStringAttribute('last_materialization_time');
   }
 
-  // materialized_feature_id - computed: false, optional: true, required: false
-  private _materializedFeatureId?: string; 
+  // materialized_feature_id - computed: true, optional: false, required: false
   public get materializedFeatureId() {
     return this.getStringAttribute('materialized_feature_id');
   }
-  public set materializedFeatureId(value: string) {
-    this._materializedFeatureId = value;
-  }
-  public resetMaterializedFeatureId() {
-    this._materializedFeatureId = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get materializedFeatureIdInput() {
-    return this._materializedFeatureId;
-  }
 
-  // offline_store_config - computed: true, optional: true, required: false
+  // offline_store_config - computed: false, optional: true, required: false
   private _offlineStoreConfig = new FeatureEngineeringMaterializedFeatureOfflineStoreConfigOutputReference(this, "offline_store_config");
   public get offlineStoreConfig() {
     return this._offlineStoreConfig;
@@ -603,7 +865,7 @@ export class FeatureEngineeringMaterializedFeature extends cdktn.TerraformResour
     return this._offlineStoreConfig.internalValue;
   }
 
-  // online_store_config - computed: true, optional: true, required: false
+  // online_store_config - computed: false, optional: true, required: false
   private _onlineStoreConfig = new FeatureEngineeringMaterializedFeatureOnlineStoreConfigOutputReference(this, "online_store_config");
   public get onlineStoreConfig() {
     return this._onlineStoreConfig;
@@ -651,9 +913,41 @@ export class FeatureEngineeringMaterializedFeature extends cdktn.TerraformResour
     return this._providerConfig.internalValue;
   }
 
+  // streaming_mode - computed: false, optional: true, required: false
+  private _streamingMode = new FeatureEngineeringMaterializedFeatureStreamingModeOutputReference(this, "streaming_mode");
+  public get streamingMode() {
+    return this._streamingMode;
+  }
+  public putStreamingMode(value: FeatureEngineeringMaterializedFeatureStreamingMode) {
+    this._streamingMode.internalValue = value;
+  }
+  public resetStreamingMode() {
+    this._streamingMode.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get streamingModeInput() {
+    return this._streamingMode.internalValue;
+  }
+
   // table_name - computed: true, optional: false, required: false
   public get tableName() {
     return this.getStringAttribute('table_name');
+  }
+
+  // table_trigger - computed: false, optional: true, required: false
+  private _tableTrigger = new FeatureEngineeringMaterializedFeatureTableTriggerOutputReference(this, "table_trigger");
+  public get tableTrigger() {
+    return this._tableTrigger;
+  }
+  public putTableTrigger(value: FeatureEngineeringMaterializedFeatureTableTrigger) {
+    this._tableTrigger.internalValue = value;
+  }
+  public resetTableTrigger() {
+    this._tableTrigger.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tableTriggerInput() {
+    return this._tableTrigger.internalValue;
   }
 
   // =========
@@ -663,12 +957,14 @@ export class FeatureEngineeringMaterializedFeature extends cdktn.TerraformResour
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       cron_schedule: cdktn.stringToTerraform(this._cronSchedule),
+      cron_schedule_trigger: featureEngineeringMaterializedFeatureCronScheduleTriggerToTerraform(this._cronScheduleTrigger.internalValue),
       feature_name: cdktn.stringToTerraform(this._featureName),
-      materialized_feature_id: cdktn.stringToTerraform(this._materializedFeatureId),
       offline_store_config: featureEngineeringMaterializedFeatureOfflineStoreConfigToTerraform(this._offlineStoreConfig.internalValue),
       online_store_config: featureEngineeringMaterializedFeatureOnlineStoreConfigToTerraform(this._onlineStoreConfig.internalValue),
       pipeline_schedule_state: cdktn.stringToTerraform(this._pipelineScheduleState),
       provider_config: featureEngineeringMaterializedFeatureProviderConfigToTerraform(this._providerConfig.internalValue),
+      streaming_mode: featureEngineeringMaterializedFeatureStreamingModeToTerraform(this._streamingMode.internalValue),
+      table_trigger: featureEngineeringMaterializedFeatureTableTriggerToTerraform(this._tableTrigger.internalValue),
     };
   }
 
@@ -680,14 +976,14 @@ export class FeatureEngineeringMaterializedFeature extends cdktn.TerraformResour
         type: "simple",
         storageClassType: "string",
       },
+      cron_schedule_trigger: {
+        value: featureEngineeringMaterializedFeatureCronScheduleTriggerToHclTerraform(this._cronScheduleTrigger.internalValue),
+        isBlock: true,
+        type: "struct",
+        storageClassType: "FeatureEngineeringMaterializedFeatureCronScheduleTrigger",
+      },
       feature_name: {
         value: cdktn.stringToHclTerraform(this._featureName),
-        isBlock: false,
-        type: "simple",
-        storageClassType: "string",
-      },
-      materialized_feature_id: {
-        value: cdktn.stringToHclTerraform(this._materializedFeatureId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
@@ -715,6 +1011,18 @@ export class FeatureEngineeringMaterializedFeature extends cdktn.TerraformResour
         isBlock: true,
         type: "struct",
         storageClassType: "FeatureEngineeringMaterializedFeatureProviderConfig",
+      },
+      streaming_mode: {
+        value: featureEngineeringMaterializedFeatureStreamingModeToHclTerraform(this._streamingMode.internalValue),
+        isBlock: true,
+        type: "struct",
+        storageClassType: "FeatureEngineeringMaterializedFeatureStreamingMode",
+      },
+      table_trigger: {
+        value: featureEngineeringMaterializedFeatureTableTriggerToHclTerraform(this._tableTrigger.internalValue),
+        isBlock: true,
+        type: "struct",
+        storageClassType: "FeatureEngineeringMaterializedFeatureTableTrigger",
       },
     };
 

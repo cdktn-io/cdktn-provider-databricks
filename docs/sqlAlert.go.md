@@ -4,7 +4,7 @@
 
 ### SqlAlert <a name="SqlAlert" id="@cdktn/provider-databricks.sqlAlert.SqlAlert"></a>
 
-Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/resources/sql_alert databricks_sql_alert}.
+Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.116.0/docs/resources/sql_alert databricks_sql_alert}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.sqlAlert.SqlAlert.Initializer"></a>
 
@@ -557,7 +557,7 @@ The construct id used in the generated config for the SqlAlert to import.
 
 The id of the existing SqlAlert that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/resources/sql_alert#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.116.0/docs/resources/sql_alert#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -988,15 +988,15 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/sqlalert
 | <code><a href="#@cdktn/provider-databricks.sqlAlert.SqlAlertConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.sqlAlert.SqlAlertConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.sqlAlert.SqlAlertConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-databricks.sqlAlert.SqlAlertConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/resources/sql_alert#name SqlAlert#name}. |
+| <code><a href="#@cdktn/provider-databricks.sqlAlert.SqlAlertConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.116.0/docs/resources/sql_alert#name SqlAlert#name}. |
 | <code><a href="#@cdktn/provider-databricks.sqlAlert.SqlAlertConfig.property.options">Options</a></code> | <code><a href="#@cdktn/provider-databricks.sqlAlert.SqlAlertOptions">SqlAlertOptions</a></code> | options block. |
-| <code><a href="#@cdktn/provider-databricks.sqlAlert.SqlAlertConfig.property.queryId">QueryId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/resources/sql_alert#query_id SqlAlert#query_id}. |
-| <code><a href="#@cdktn/provider-databricks.sqlAlert.SqlAlertConfig.property.createdAt">CreatedAt</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/resources/sql_alert#created_at SqlAlert#created_at}. |
-| <code><a href="#@cdktn/provider-databricks.sqlAlert.SqlAlertConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/resources/sql_alert#id SqlAlert#id}. |
-| <code><a href="#@cdktn/provider-databricks.sqlAlert.SqlAlertConfig.property.parent">Parent</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/resources/sql_alert#parent SqlAlert#parent}. |
+| <code><a href="#@cdktn/provider-databricks.sqlAlert.SqlAlertConfig.property.queryId">QueryId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.116.0/docs/resources/sql_alert#query_id SqlAlert#query_id}. |
+| <code><a href="#@cdktn/provider-databricks.sqlAlert.SqlAlertConfig.property.createdAt">CreatedAt</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.116.0/docs/resources/sql_alert#created_at SqlAlert#created_at}. |
+| <code><a href="#@cdktn/provider-databricks.sqlAlert.SqlAlertConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.116.0/docs/resources/sql_alert#id SqlAlert#id}. |
+| <code><a href="#@cdktn/provider-databricks.sqlAlert.SqlAlertConfig.property.parent">Parent</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.116.0/docs/resources/sql_alert#parent SqlAlert#parent}. |
 | <code><a href="#@cdktn/provider-databricks.sqlAlert.SqlAlertConfig.property.providerConfig">ProviderConfig</a></code> | <code><a href="#@cdktn/provider-databricks.sqlAlert.SqlAlertProviderConfig">SqlAlertProviderConfig</a></code> | provider_config block. |
-| <code><a href="#@cdktn/provider-databricks.sqlAlert.SqlAlertConfig.property.rearm">Rearm</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/resources/sql_alert#rearm SqlAlert#rearm}. |
-| <code><a href="#@cdktn/provider-databricks.sqlAlert.SqlAlertConfig.property.updatedAt">UpdatedAt</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/resources/sql_alert#updated_at SqlAlert#updated_at}. |
+| <code><a href="#@cdktn/provider-databricks.sqlAlert.SqlAlertConfig.property.rearm">Rearm</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.116.0/docs/resources/sql_alert#rearm SqlAlert#rearm}. |
+| <code><a href="#@cdktn/provider-databricks.sqlAlert.SqlAlertConfig.property.updatedAt">UpdatedAt</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.116.0/docs/resources/sql_alert#updated_at SqlAlert#updated_at}. |
 
 ---
 
@@ -1078,7 +1078,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/resources/sql_alert#name SqlAlert#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.116.0/docs/resources/sql_alert#name SqlAlert#name}.
 
 ---
 
@@ -1092,7 +1092,7 @@ Options SqlAlertOptions
 
 options block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/resources/sql_alert#options SqlAlert#options}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.116.0/docs/resources/sql_alert#options SqlAlert#options}
 
 ---
 
@@ -1104,7 +1104,7 @@ QueryId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/resources/sql_alert#query_id SqlAlert#query_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.116.0/docs/resources/sql_alert#query_id SqlAlert#query_id}.
 
 ---
 
@@ -1116,7 +1116,7 @@ CreatedAt *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/resources/sql_alert#created_at SqlAlert#created_at}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.116.0/docs/resources/sql_alert#created_at SqlAlert#created_at}.
 
 ---
 
@@ -1128,7 +1128,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/resources/sql_alert#id SqlAlert#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.116.0/docs/resources/sql_alert#id SqlAlert#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1143,7 +1143,7 @@ Parent *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/resources/sql_alert#parent SqlAlert#parent}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.116.0/docs/resources/sql_alert#parent SqlAlert#parent}.
 
 ---
 
@@ -1157,7 +1157,7 @@ ProviderConfig SqlAlertProviderConfig
 
 provider_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/resources/sql_alert#provider_config SqlAlert#provider_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.116.0/docs/resources/sql_alert#provider_config SqlAlert#provider_config}
 
 ---
 
@@ -1169,7 +1169,7 @@ Rearm *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/resources/sql_alert#rearm SqlAlert#rearm}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.116.0/docs/resources/sql_alert#rearm SqlAlert#rearm}.
 
 ---
 
@@ -1181,7 +1181,7 @@ UpdatedAt *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/resources/sql_alert#updated_at SqlAlert#updated_at}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.116.0/docs/resources/sql_alert#updated_at SqlAlert#updated_at}.
 
 ---
 
@@ -1207,13 +1207,13 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/sqlalert
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.sqlAlert.SqlAlertOptions.property.column">Column</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/resources/sql_alert#column SqlAlert#column}. |
-| <code><a href="#@cdktn/provider-databricks.sqlAlert.SqlAlertOptions.property.op">Op</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/resources/sql_alert#op SqlAlert#op}. |
-| <code><a href="#@cdktn/provider-databricks.sqlAlert.SqlAlertOptions.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/resources/sql_alert#value SqlAlert#value}. |
-| <code><a href="#@cdktn/provider-databricks.sqlAlert.SqlAlertOptions.property.customBody">CustomBody</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/resources/sql_alert#custom_body SqlAlert#custom_body}. |
-| <code><a href="#@cdktn/provider-databricks.sqlAlert.SqlAlertOptions.property.customSubject">CustomSubject</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/resources/sql_alert#custom_subject SqlAlert#custom_subject}. |
-| <code><a href="#@cdktn/provider-databricks.sqlAlert.SqlAlertOptions.property.emptyResultState">EmptyResultState</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/resources/sql_alert#empty_result_state SqlAlert#empty_result_state}. |
-| <code><a href="#@cdktn/provider-databricks.sqlAlert.SqlAlertOptions.property.muted">Muted</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/resources/sql_alert#muted SqlAlert#muted}. |
+| <code><a href="#@cdktn/provider-databricks.sqlAlert.SqlAlertOptions.property.column">Column</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.116.0/docs/resources/sql_alert#column SqlAlert#column}. |
+| <code><a href="#@cdktn/provider-databricks.sqlAlert.SqlAlertOptions.property.op">Op</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.116.0/docs/resources/sql_alert#op SqlAlert#op}. |
+| <code><a href="#@cdktn/provider-databricks.sqlAlert.SqlAlertOptions.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.116.0/docs/resources/sql_alert#value SqlAlert#value}. |
+| <code><a href="#@cdktn/provider-databricks.sqlAlert.SqlAlertOptions.property.customBody">CustomBody</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.116.0/docs/resources/sql_alert#custom_body SqlAlert#custom_body}. |
+| <code><a href="#@cdktn/provider-databricks.sqlAlert.SqlAlertOptions.property.customSubject">CustomSubject</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.116.0/docs/resources/sql_alert#custom_subject SqlAlert#custom_subject}. |
+| <code><a href="#@cdktn/provider-databricks.sqlAlert.SqlAlertOptions.property.emptyResultState">EmptyResultState</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.116.0/docs/resources/sql_alert#empty_result_state SqlAlert#empty_result_state}. |
+| <code><a href="#@cdktn/provider-databricks.sqlAlert.SqlAlertOptions.property.muted">Muted</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.116.0/docs/resources/sql_alert#muted SqlAlert#muted}. |
 
 ---
 
@@ -1225,7 +1225,7 @@ Column *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/resources/sql_alert#column SqlAlert#column}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.116.0/docs/resources/sql_alert#column SqlAlert#column}.
 
 ---
 
@@ -1237,7 +1237,7 @@ Op *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/resources/sql_alert#op SqlAlert#op}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.116.0/docs/resources/sql_alert#op SqlAlert#op}.
 
 ---
 
@@ -1249,7 +1249,7 @@ Value *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/resources/sql_alert#value SqlAlert#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.116.0/docs/resources/sql_alert#value SqlAlert#value}.
 
 ---
 
@@ -1261,7 +1261,7 @@ CustomBody *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/resources/sql_alert#custom_body SqlAlert#custom_body}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.116.0/docs/resources/sql_alert#custom_body SqlAlert#custom_body}.
 
 ---
 
@@ -1273,7 +1273,7 @@ CustomSubject *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/resources/sql_alert#custom_subject SqlAlert#custom_subject}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.116.0/docs/resources/sql_alert#custom_subject SqlAlert#custom_subject}.
 
 ---
 
@@ -1285,7 +1285,7 @@ EmptyResultState *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/resources/sql_alert#empty_result_state SqlAlert#empty_result_state}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.116.0/docs/resources/sql_alert#empty_result_state SqlAlert#empty_result_state}.
 
 ---
 
@@ -1297,7 +1297,7 @@ Muted interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/resources/sql_alert#muted SqlAlert#muted}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.116.0/docs/resources/sql_alert#muted SqlAlert#muted}.
 
 ---
 
@@ -1317,7 +1317,7 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/sqlalert
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.sqlAlert.SqlAlertProviderConfig.property.workspaceId">WorkspaceId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/resources/sql_alert#workspace_id SqlAlert#workspace_id}. |
+| <code><a href="#@cdktn/provider-databricks.sqlAlert.SqlAlertProviderConfig.property.workspaceId">WorkspaceId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.116.0/docs/resources/sql_alert#workspace_id SqlAlert#workspace_id}. |
 
 ---
 
@@ -1329,7 +1329,7 @@ WorkspaceId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/resources/sql_alert#workspace_id SqlAlert#workspace_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.116.0/docs/resources/sql_alert#workspace_id SqlAlert#workspace_id}.
 
 ---
 
