@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/resources/workspace_setting_v2
+// https://registry.terraform.io/providers/databricks/databricks/1.116.0/docs/resources/workspace_setting_v2
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,69 +13,77 @@ import * as cdktn from 'cdktn';
 
 export interface WorkspaceSettingV2Config extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/resources/workspace_setting_v2#aibi_dashboard_embedding_access_policy WorkspaceSettingV2#aibi_dashboard_embedding_access_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.116.0/docs/resources/workspace_setting_v2#aibi_dashboard_embedding_access_policy WorkspaceSettingV2#aibi_dashboard_embedding_access_policy}
   */
   readonly aibiDashboardEmbeddingAccessPolicy?: WorkspaceSettingV2AibiDashboardEmbeddingAccessPolicy;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/resources/workspace_setting_v2#aibi_dashboard_embedding_approved_domains WorkspaceSettingV2#aibi_dashboard_embedding_approved_domains}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.116.0/docs/resources/workspace_setting_v2#aibi_dashboard_embedding_approved_domains WorkspaceSettingV2#aibi_dashboard_embedding_approved_domains}
   */
   readonly aibiDashboardEmbeddingApprovedDomains?: WorkspaceSettingV2AibiDashboardEmbeddingApprovedDomains;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/resources/workspace_setting_v2#automatic_cluster_update_workspace WorkspaceSettingV2#automatic_cluster_update_workspace}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.116.0/docs/resources/workspace_setting_v2#allowed_apps_user_api_scopes WorkspaceSettingV2#allowed_apps_user_api_scopes}
+  */
+  readonly allowedAppsUserApiScopes?: WorkspaceSettingV2AllowedAppsUserApiScopes;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.116.0/docs/resources/workspace_setting_v2#automatic_cluster_update_workspace WorkspaceSettingV2#automatic_cluster_update_workspace}
   */
   readonly automaticClusterUpdateWorkspace?: WorkspaceSettingV2AutomaticClusterUpdateWorkspace;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/resources/workspace_setting_v2#boolean_val WorkspaceSettingV2#boolean_val}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.116.0/docs/resources/workspace_setting_v2#boolean_val WorkspaceSettingV2#boolean_val}
   */
   readonly booleanVal?: WorkspaceSettingV2BooleanVal;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/resources/workspace_setting_v2#effective_aibi_dashboard_embedding_access_policy WorkspaceSettingV2#effective_aibi_dashboard_embedding_access_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.116.0/docs/resources/workspace_setting_v2#effective_aibi_dashboard_embedding_access_policy WorkspaceSettingV2#effective_aibi_dashboard_embedding_access_policy}
   */
   readonly effectiveAibiDashboardEmbeddingAccessPolicy?: WorkspaceSettingV2EffectiveAibiDashboardEmbeddingAccessPolicy;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/resources/workspace_setting_v2#effective_aibi_dashboard_embedding_approved_domains WorkspaceSettingV2#effective_aibi_dashboard_embedding_approved_domains}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.116.0/docs/resources/workspace_setting_v2#effective_aibi_dashboard_embedding_approved_domains WorkspaceSettingV2#effective_aibi_dashboard_embedding_approved_domains}
   */
   readonly effectiveAibiDashboardEmbeddingApprovedDomains?: WorkspaceSettingV2EffectiveAibiDashboardEmbeddingApprovedDomains;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/resources/workspace_setting_v2#effective_automatic_cluster_update_workspace WorkspaceSettingV2#effective_automatic_cluster_update_workspace}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.116.0/docs/resources/workspace_setting_v2#effective_automatic_cluster_update_workspace WorkspaceSettingV2#effective_automatic_cluster_update_workspace}
   */
   readonly effectiveAutomaticClusterUpdateWorkspace?: WorkspaceSettingV2EffectiveAutomaticClusterUpdateWorkspace;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/resources/workspace_setting_v2#effective_personal_compute WorkspaceSettingV2#effective_personal_compute}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.116.0/docs/resources/workspace_setting_v2#effective_personal_compute WorkspaceSettingV2#effective_personal_compute}
   */
   readonly effectivePersonalCompute?: WorkspaceSettingV2EffectivePersonalCompute;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/resources/workspace_setting_v2#effective_restrict_workspace_admins WorkspaceSettingV2#effective_restrict_workspace_admins}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.116.0/docs/resources/workspace_setting_v2#effective_restrict_workspace_admins WorkspaceSettingV2#effective_restrict_workspace_admins}
   */
   readonly effectiveRestrictWorkspaceAdmins?: WorkspaceSettingV2EffectiveRestrictWorkspaceAdmins;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/resources/workspace_setting_v2#integer_val WorkspaceSettingV2#integer_val}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.116.0/docs/resources/workspace_setting_v2#integer_val WorkspaceSettingV2#integer_val}
   */
   readonly integerVal?: WorkspaceSettingV2IntegerVal;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/resources/workspace_setting_v2#name WorkspaceSettingV2#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.116.0/docs/resources/workspace_setting_v2#name WorkspaceSettingV2#name}
   */
   readonly name?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/resources/workspace_setting_v2#personal_compute WorkspaceSettingV2#personal_compute}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.116.0/docs/resources/workspace_setting_v2#operational_email_custom_recipient WorkspaceSettingV2#operational_email_custom_recipient}
+  */
+  readonly operationalEmailCustomRecipient?: WorkspaceSettingV2OperationalEmailCustomRecipient;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.116.0/docs/resources/workspace_setting_v2#personal_compute WorkspaceSettingV2#personal_compute}
   */
   readonly personalCompute?: WorkspaceSettingV2PersonalCompute;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/resources/workspace_setting_v2#provider_config WorkspaceSettingV2#provider_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.116.0/docs/resources/workspace_setting_v2#provider_config WorkspaceSettingV2#provider_config}
   */
   readonly providerConfig?: WorkspaceSettingV2ProviderConfig;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/resources/workspace_setting_v2#restrict_workspace_admins WorkspaceSettingV2#restrict_workspace_admins}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.116.0/docs/resources/workspace_setting_v2#restrict_workspace_admins WorkspaceSettingV2#restrict_workspace_admins}
   */
   readonly restrictWorkspaceAdmins?: WorkspaceSettingV2RestrictWorkspaceAdmins;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/resources/workspace_setting_v2#string_val WorkspaceSettingV2#string_val}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.116.0/docs/resources/workspace_setting_v2#string_val WorkspaceSettingV2#string_val}
   */
   readonly stringVal?: WorkspaceSettingV2StringVal;
 }
 export interface WorkspaceSettingV2AibiDashboardEmbeddingAccessPolicy {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/resources/workspace_setting_v2#access_policy_type WorkspaceSettingV2#access_policy_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.116.0/docs/resources/workspace_setting_v2#access_policy_type WorkspaceSettingV2#access_policy_type}
   */
   readonly accessPolicyType: string;
 }
@@ -166,7 +174,7 @@ export class WorkspaceSettingV2AibiDashboardEmbeddingAccessPolicyOutputReference
 }
 export interface WorkspaceSettingV2AibiDashboardEmbeddingApprovedDomains {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/resources/workspace_setting_v2#approved_domains WorkspaceSettingV2#approved_domains}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.116.0/docs/resources/workspace_setting_v2#approved_domains WorkspaceSettingV2#approved_domains}
   */
   readonly approvedDomains?: string[];
 }
@@ -258,17 +266,111 @@ export class WorkspaceSettingV2AibiDashboardEmbeddingApprovedDomainsOutputRefere
     return this._approvedDomains;
   }
 }
+export interface WorkspaceSettingV2AllowedAppsUserApiScopes {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.116.0/docs/resources/workspace_setting_v2#allowed_scopes WorkspaceSettingV2#allowed_scopes}
+  */
+  readonly allowedScopes?: string[];
+}
+
+export function workspaceSettingV2AllowedAppsUserApiScopesToTerraform(struct?: WorkspaceSettingV2AllowedAppsUserApiScopes | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    allowed_scopes: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.allowedScopes),
+  }
+}
+
+
+export function workspaceSettingV2AllowedAppsUserApiScopesToHclTerraform(struct?: WorkspaceSettingV2AllowedAppsUserApiScopes | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    allowed_scopes: {
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.allowedScopes),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class WorkspaceSettingV2AllowedAppsUserApiScopesOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktn.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false);
+  }
+
+  public get internalValue(): WorkspaceSettingV2AllowedAppsUserApiScopes | cdktn.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._allowedScopes !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.allowedScopes = this._allowedScopes;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: WorkspaceSettingV2AllowedAppsUserApiScopes | cdktn.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._allowedScopes = undefined;
+    }
+    else if (cdktn.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._allowedScopes = value.allowedScopes;
+    }
+  }
+
+  // allowed_scopes - computed: false, optional: true, required: false
+  private _allowedScopes?: string[]; 
+  public get allowedScopes() {
+    return this.getListAttribute('allowed_scopes');
+  }
+  public set allowedScopes(value: string[]) {
+    this._allowedScopes = value;
+  }
+  public resetAllowedScopes() {
+    this._allowedScopes = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get allowedScopesInput() {
+    return this._allowedScopes;
+  }
+}
 export interface WorkspaceSettingV2AutomaticClusterUpdateWorkspaceEnablementDetails {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/resources/workspace_setting_v2#forced_for_compliance_mode WorkspaceSettingV2#forced_for_compliance_mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.116.0/docs/resources/workspace_setting_v2#forced_for_compliance_mode WorkspaceSettingV2#forced_for_compliance_mode}
   */
   readonly forcedForComplianceMode?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/resources/workspace_setting_v2#unavailable_for_disabled_entitlement WorkspaceSettingV2#unavailable_for_disabled_entitlement}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.116.0/docs/resources/workspace_setting_v2#unavailable_for_disabled_entitlement WorkspaceSettingV2#unavailable_for_disabled_entitlement}
   */
   readonly unavailableForDisabledEntitlement?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/resources/workspace_setting_v2#unavailable_for_non_enterprise_tier WorkspaceSettingV2#unavailable_for_non_enterprise_tier}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.116.0/docs/resources/workspace_setting_v2#unavailable_for_non_enterprise_tier WorkspaceSettingV2#unavailable_for_non_enterprise_tier}
   */
   readonly unavailableForNonEnterpriseTier?: boolean | cdktn.IResolvable;
 }
@@ -420,11 +522,11 @@ export class WorkspaceSettingV2AutomaticClusterUpdateWorkspaceEnablementDetailsO
 }
 export interface WorkspaceSettingV2AutomaticClusterUpdateWorkspaceMaintenanceWindowWeekDayBasedScheduleWindowStartTime {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/resources/workspace_setting_v2#hours WorkspaceSettingV2#hours}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.116.0/docs/resources/workspace_setting_v2#hours WorkspaceSettingV2#hours}
   */
   readonly hours?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/resources/workspace_setting_v2#minutes WorkspaceSettingV2#minutes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.116.0/docs/resources/workspace_setting_v2#minutes WorkspaceSettingV2#minutes}
   */
   readonly minutes?: number;
 }
@@ -547,15 +649,15 @@ export class WorkspaceSettingV2AutomaticClusterUpdateWorkspaceMaintenanceWindowW
 }
 export interface WorkspaceSettingV2AutomaticClusterUpdateWorkspaceMaintenanceWindowWeekDayBasedSchedule {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/resources/workspace_setting_v2#day_of_week WorkspaceSettingV2#day_of_week}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.116.0/docs/resources/workspace_setting_v2#day_of_week WorkspaceSettingV2#day_of_week}
   */
   readonly dayOfWeek?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/resources/workspace_setting_v2#frequency WorkspaceSettingV2#frequency}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.116.0/docs/resources/workspace_setting_v2#frequency WorkspaceSettingV2#frequency}
   */
   readonly frequency?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/resources/workspace_setting_v2#window_start_time WorkspaceSettingV2#window_start_time}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.116.0/docs/resources/workspace_setting_v2#window_start_time WorkspaceSettingV2#window_start_time}
   */
   readonly windowStartTime?: WorkspaceSettingV2AutomaticClusterUpdateWorkspaceMaintenanceWindowWeekDayBasedScheduleWindowStartTime;
 }
@@ -707,7 +809,7 @@ export class WorkspaceSettingV2AutomaticClusterUpdateWorkspaceMaintenanceWindowW
 }
 export interface WorkspaceSettingV2AutomaticClusterUpdateWorkspaceMaintenanceWindow {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/resources/workspace_setting_v2#week_day_based_schedule WorkspaceSettingV2#week_day_based_schedule}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.116.0/docs/resources/workspace_setting_v2#week_day_based_schedule WorkspaceSettingV2#week_day_based_schedule}
   */
   readonly weekDayBasedSchedule?: WorkspaceSettingV2AutomaticClusterUpdateWorkspaceMaintenanceWindowWeekDayBasedSchedule;
 }
@@ -801,23 +903,23 @@ export class WorkspaceSettingV2AutomaticClusterUpdateWorkspaceMaintenanceWindowO
 }
 export interface WorkspaceSettingV2AutomaticClusterUpdateWorkspace {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/resources/workspace_setting_v2#can_toggle WorkspaceSettingV2#can_toggle}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.116.0/docs/resources/workspace_setting_v2#can_toggle WorkspaceSettingV2#can_toggle}
   */
   readonly canToggle?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/resources/workspace_setting_v2#enabled WorkspaceSettingV2#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.116.0/docs/resources/workspace_setting_v2#enabled WorkspaceSettingV2#enabled}
   */
   readonly enabled?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/resources/workspace_setting_v2#enablement_details WorkspaceSettingV2#enablement_details}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.116.0/docs/resources/workspace_setting_v2#enablement_details WorkspaceSettingV2#enablement_details}
   */
   readonly enablementDetails?: WorkspaceSettingV2AutomaticClusterUpdateWorkspaceEnablementDetails;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/resources/workspace_setting_v2#maintenance_window WorkspaceSettingV2#maintenance_window}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.116.0/docs/resources/workspace_setting_v2#maintenance_window WorkspaceSettingV2#maintenance_window}
   */
   readonly maintenanceWindow?: WorkspaceSettingV2AutomaticClusterUpdateWorkspaceMaintenanceWindow;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/resources/workspace_setting_v2#restart_even_if_no_updates_available WorkspaceSettingV2#restart_even_if_no_updates_available}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.116.0/docs/resources/workspace_setting_v2#restart_even_if_no_updates_available WorkspaceSettingV2#restart_even_if_no_updates_available}
   */
   readonly restartEvenIfNoUpdatesAvailable?: boolean | cdktn.IResolvable;
 }
@@ -1027,7 +1129,7 @@ export class WorkspaceSettingV2AutomaticClusterUpdateWorkspaceOutputReference ex
 }
 export interface WorkspaceSettingV2BooleanVal {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/resources/workspace_setting_v2#value WorkspaceSettingV2#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.116.0/docs/resources/workspace_setting_v2#value WorkspaceSettingV2#value}
   */
   readonly value?: boolean | cdktn.IResolvable;
 }
@@ -1121,7 +1223,7 @@ export class WorkspaceSettingV2BooleanValOutputReference extends cdktn.ComplexOb
 }
 export interface WorkspaceSettingV2EffectiveAibiDashboardEmbeddingAccessPolicy {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/resources/workspace_setting_v2#access_policy_type WorkspaceSettingV2#access_policy_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.116.0/docs/resources/workspace_setting_v2#access_policy_type WorkspaceSettingV2#access_policy_type}
   */
   readonly accessPolicyType: string;
 }
@@ -1212,7 +1314,7 @@ export class WorkspaceSettingV2EffectiveAibiDashboardEmbeddingAccessPolicyOutput
 }
 export interface WorkspaceSettingV2EffectiveAibiDashboardEmbeddingApprovedDomains {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/resources/workspace_setting_v2#approved_domains WorkspaceSettingV2#approved_domains}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.116.0/docs/resources/workspace_setting_v2#approved_domains WorkspaceSettingV2#approved_domains}
   */
   readonly approvedDomains?: string[];
 }
@@ -1304,17 +1406,101 @@ export class WorkspaceSettingV2EffectiveAibiDashboardEmbeddingApprovedDomainsOut
     return this._approvedDomains;
   }
 }
+export interface WorkspaceSettingV2EffectiveAllowedAppsUserApiScopes {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.116.0/docs/resources/workspace_setting_v2#allowed_scopes WorkspaceSettingV2#allowed_scopes}
+  */
+  readonly allowedScopes?: string[];
+}
+
+export function workspaceSettingV2EffectiveAllowedAppsUserApiScopesToTerraform(struct?: WorkspaceSettingV2EffectiveAllowedAppsUserApiScopes): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    allowed_scopes: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.allowedScopes),
+  }
+}
+
+
+export function workspaceSettingV2EffectiveAllowedAppsUserApiScopesToHclTerraform(struct?: WorkspaceSettingV2EffectiveAllowedAppsUserApiScopes): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    allowed_scopes: {
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.allowedScopes),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class WorkspaceSettingV2EffectiveAllowedAppsUserApiScopesOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false);
+  }
+
+  public get internalValue(): WorkspaceSettingV2EffectiveAllowedAppsUserApiScopes | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._allowedScopes !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.allowedScopes = this._allowedScopes;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: WorkspaceSettingV2EffectiveAllowedAppsUserApiScopes | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._allowedScopes = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._allowedScopes = value.allowedScopes;
+    }
+  }
+
+  // allowed_scopes - computed: true, optional: true, required: false
+  private _allowedScopes?: string[]; 
+  public get allowedScopes() {
+    return this.getListAttribute('allowed_scopes');
+  }
+  public set allowedScopes(value: string[]) {
+    this._allowedScopes = value;
+  }
+  public resetAllowedScopes() {
+    this._allowedScopes = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get allowedScopesInput() {
+    return this._allowedScopes;
+  }
+}
 export interface WorkspaceSettingV2EffectiveAutomaticClusterUpdateWorkspaceEnablementDetails {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/resources/workspace_setting_v2#forced_for_compliance_mode WorkspaceSettingV2#forced_for_compliance_mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.116.0/docs/resources/workspace_setting_v2#forced_for_compliance_mode WorkspaceSettingV2#forced_for_compliance_mode}
   */
   readonly forcedForComplianceMode?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/resources/workspace_setting_v2#unavailable_for_disabled_entitlement WorkspaceSettingV2#unavailable_for_disabled_entitlement}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.116.0/docs/resources/workspace_setting_v2#unavailable_for_disabled_entitlement WorkspaceSettingV2#unavailable_for_disabled_entitlement}
   */
   readonly unavailableForDisabledEntitlement?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/resources/workspace_setting_v2#unavailable_for_non_enterprise_tier WorkspaceSettingV2#unavailable_for_non_enterprise_tier}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.116.0/docs/resources/workspace_setting_v2#unavailable_for_non_enterprise_tier WorkspaceSettingV2#unavailable_for_non_enterprise_tier}
   */
   readonly unavailableForNonEnterpriseTier?: boolean | cdktn.IResolvable;
 }
@@ -1466,11 +1652,11 @@ export class WorkspaceSettingV2EffectiveAutomaticClusterUpdateWorkspaceEnablemen
 }
 export interface WorkspaceSettingV2EffectiveAutomaticClusterUpdateWorkspaceMaintenanceWindowWeekDayBasedScheduleWindowStartTime {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/resources/workspace_setting_v2#hours WorkspaceSettingV2#hours}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.116.0/docs/resources/workspace_setting_v2#hours WorkspaceSettingV2#hours}
   */
   readonly hours?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/resources/workspace_setting_v2#minutes WorkspaceSettingV2#minutes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.116.0/docs/resources/workspace_setting_v2#minutes WorkspaceSettingV2#minutes}
   */
   readonly minutes?: number;
 }
@@ -1593,15 +1779,15 @@ export class WorkspaceSettingV2EffectiveAutomaticClusterUpdateWorkspaceMaintenan
 }
 export interface WorkspaceSettingV2EffectiveAutomaticClusterUpdateWorkspaceMaintenanceWindowWeekDayBasedSchedule {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/resources/workspace_setting_v2#day_of_week WorkspaceSettingV2#day_of_week}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.116.0/docs/resources/workspace_setting_v2#day_of_week WorkspaceSettingV2#day_of_week}
   */
   readonly dayOfWeek?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/resources/workspace_setting_v2#frequency WorkspaceSettingV2#frequency}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.116.0/docs/resources/workspace_setting_v2#frequency WorkspaceSettingV2#frequency}
   */
   readonly frequency?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/resources/workspace_setting_v2#window_start_time WorkspaceSettingV2#window_start_time}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.116.0/docs/resources/workspace_setting_v2#window_start_time WorkspaceSettingV2#window_start_time}
   */
   readonly windowStartTime?: WorkspaceSettingV2EffectiveAutomaticClusterUpdateWorkspaceMaintenanceWindowWeekDayBasedScheduleWindowStartTime;
 }
@@ -1753,7 +1939,7 @@ export class WorkspaceSettingV2EffectiveAutomaticClusterUpdateWorkspaceMaintenan
 }
 export interface WorkspaceSettingV2EffectiveAutomaticClusterUpdateWorkspaceMaintenanceWindow {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/resources/workspace_setting_v2#week_day_based_schedule WorkspaceSettingV2#week_day_based_schedule}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.116.0/docs/resources/workspace_setting_v2#week_day_based_schedule WorkspaceSettingV2#week_day_based_schedule}
   */
   readonly weekDayBasedSchedule?: WorkspaceSettingV2EffectiveAutomaticClusterUpdateWorkspaceMaintenanceWindowWeekDayBasedSchedule;
 }
@@ -1847,23 +2033,23 @@ export class WorkspaceSettingV2EffectiveAutomaticClusterUpdateWorkspaceMaintenan
 }
 export interface WorkspaceSettingV2EffectiveAutomaticClusterUpdateWorkspace {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/resources/workspace_setting_v2#can_toggle WorkspaceSettingV2#can_toggle}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.116.0/docs/resources/workspace_setting_v2#can_toggle WorkspaceSettingV2#can_toggle}
   */
   readonly canToggle?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/resources/workspace_setting_v2#enabled WorkspaceSettingV2#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.116.0/docs/resources/workspace_setting_v2#enabled WorkspaceSettingV2#enabled}
   */
   readonly enabled?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/resources/workspace_setting_v2#enablement_details WorkspaceSettingV2#enablement_details}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.116.0/docs/resources/workspace_setting_v2#enablement_details WorkspaceSettingV2#enablement_details}
   */
   readonly enablementDetails?: WorkspaceSettingV2EffectiveAutomaticClusterUpdateWorkspaceEnablementDetails;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/resources/workspace_setting_v2#maintenance_window WorkspaceSettingV2#maintenance_window}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.116.0/docs/resources/workspace_setting_v2#maintenance_window WorkspaceSettingV2#maintenance_window}
   */
   readonly maintenanceWindow?: WorkspaceSettingV2EffectiveAutomaticClusterUpdateWorkspaceMaintenanceWindow;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/resources/workspace_setting_v2#restart_even_if_no_updates_available WorkspaceSettingV2#restart_even_if_no_updates_available}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.116.0/docs/resources/workspace_setting_v2#restart_even_if_no_updates_available WorkspaceSettingV2#restart_even_if_no_updates_available}
   */
   readonly restartEvenIfNoUpdatesAvailable?: boolean | cdktn.IResolvable;
 }
@@ -2073,7 +2259,7 @@ export class WorkspaceSettingV2EffectiveAutomaticClusterUpdateWorkspaceOutputRef
 }
 export interface WorkspaceSettingV2EffectiveBooleanVal {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/resources/workspace_setting_v2#value WorkspaceSettingV2#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.116.0/docs/resources/workspace_setting_v2#value WorkspaceSettingV2#value}
   */
   readonly value?: boolean | cdktn.IResolvable;
 }
@@ -2157,7 +2343,7 @@ export class WorkspaceSettingV2EffectiveBooleanValOutputReference extends cdktn.
 }
 export interface WorkspaceSettingV2EffectiveIntegerVal {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/resources/workspace_setting_v2#value WorkspaceSettingV2#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.116.0/docs/resources/workspace_setting_v2#value WorkspaceSettingV2#value}
   */
   readonly value?: number;
 }
@@ -2239,9 +2425,93 @@ export class WorkspaceSettingV2EffectiveIntegerValOutputReference extends cdktn.
     return this._value;
   }
 }
+export interface WorkspaceSettingV2EffectiveOperationalEmailCustomRecipient {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.116.0/docs/resources/workspace_setting_v2#email WorkspaceSettingV2#email}
+  */
+  readonly email?: string;
+}
+
+export function workspaceSettingV2EffectiveOperationalEmailCustomRecipientToTerraform(struct?: WorkspaceSettingV2EffectiveOperationalEmailCustomRecipient): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    email: cdktn.stringToTerraform(struct!.email),
+  }
+}
+
+
+export function workspaceSettingV2EffectiveOperationalEmailCustomRecipientToHclTerraform(struct?: WorkspaceSettingV2EffectiveOperationalEmailCustomRecipient): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    email: {
+      value: cdktn.stringToHclTerraform(struct!.email),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class WorkspaceSettingV2EffectiveOperationalEmailCustomRecipientOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false);
+  }
+
+  public get internalValue(): WorkspaceSettingV2EffectiveOperationalEmailCustomRecipient | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._email !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.email = this._email;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: WorkspaceSettingV2EffectiveOperationalEmailCustomRecipient | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._email = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._email = value.email;
+    }
+  }
+
+  // email - computed: true, optional: true, required: false
+  private _email?: string; 
+  public get email() {
+    return this.getStringAttribute('email');
+  }
+  public set email(value: string) {
+    this._email = value;
+  }
+  public resetEmail() {
+    this._email = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get emailInput() {
+    return this._email;
+  }
+}
 export interface WorkspaceSettingV2EffectivePersonalCompute {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/resources/workspace_setting_v2#value WorkspaceSettingV2#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.116.0/docs/resources/workspace_setting_v2#value WorkspaceSettingV2#value}
   */
   readonly value?: string;
 }
@@ -2335,11 +2605,11 @@ export class WorkspaceSettingV2EffectivePersonalComputeOutputReference extends c
 }
 export interface WorkspaceSettingV2EffectiveRestrictWorkspaceAdmins {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/resources/workspace_setting_v2#disable_gov_tag_creation WorkspaceSettingV2#disable_gov_tag_creation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.116.0/docs/resources/workspace_setting_v2#disable_gov_tag_creation WorkspaceSettingV2#disable_gov_tag_creation}
   */
   readonly disableGovTagCreation?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/resources/workspace_setting_v2#status WorkspaceSettingV2#status}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.116.0/docs/resources/workspace_setting_v2#status WorkspaceSettingV2#status}
   */
   readonly status: string;
 }
@@ -2459,7 +2729,7 @@ export class WorkspaceSettingV2EffectiveRestrictWorkspaceAdminsOutputReference e
 }
 export interface WorkspaceSettingV2EffectiveStringVal {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/resources/workspace_setting_v2#value WorkspaceSettingV2#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.116.0/docs/resources/workspace_setting_v2#value WorkspaceSettingV2#value}
   */
   readonly value?: string;
 }
@@ -2543,7 +2813,7 @@ export class WorkspaceSettingV2EffectiveStringValOutputReference extends cdktn.C
 }
 export interface WorkspaceSettingV2IntegerVal {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/resources/workspace_setting_v2#value WorkspaceSettingV2#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.116.0/docs/resources/workspace_setting_v2#value WorkspaceSettingV2#value}
   */
   readonly value?: number;
 }
@@ -2635,9 +2905,103 @@ export class WorkspaceSettingV2IntegerValOutputReference extends cdktn.ComplexOb
     return this._value;
   }
 }
+export interface WorkspaceSettingV2OperationalEmailCustomRecipient {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.116.0/docs/resources/workspace_setting_v2#email WorkspaceSettingV2#email}
+  */
+  readonly email?: string;
+}
+
+export function workspaceSettingV2OperationalEmailCustomRecipientToTerraform(struct?: WorkspaceSettingV2OperationalEmailCustomRecipient | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    email: cdktn.stringToTerraform(struct!.email),
+  }
+}
+
+
+export function workspaceSettingV2OperationalEmailCustomRecipientToHclTerraform(struct?: WorkspaceSettingV2OperationalEmailCustomRecipient | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    email: {
+      value: cdktn.stringToHclTerraform(struct!.email),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class WorkspaceSettingV2OperationalEmailCustomRecipientOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktn.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false);
+  }
+
+  public get internalValue(): WorkspaceSettingV2OperationalEmailCustomRecipient | cdktn.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._email !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.email = this._email;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: WorkspaceSettingV2OperationalEmailCustomRecipient | cdktn.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._email = undefined;
+    }
+    else if (cdktn.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._email = value.email;
+    }
+  }
+
+  // email - computed: false, optional: true, required: false
+  private _email?: string; 
+  public get email() {
+    return this.getStringAttribute('email');
+  }
+  public set email(value: string) {
+    this._email = value;
+  }
+  public resetEmail() {
+    this._email = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get emailInput() {
+    return this._email;
+  }
+}
 export interface WorkspaceSettingV2PersonalCompute {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/resources/workspace_setting_v2#value WorkspaceSettingV2#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.116.0/docs/resources/workspace_setting_v2#value WorkspaceSettingV2#value}
   */
   readonly value?: string;
 }
@@ -2731,7 +3095,7 @@ export class WorkspaceSettingV2PersonalComputeOutputReference extends cdktn.Comp
 }
 export interface WorkspaceSettingV2ProviderConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/resources/workspace_setting_v2#workspace_id WorkspaceSettingV2#workspace_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.116.0/docs/resources/workspace_setting_v2#workspace_id WorkspaceSettingV2#workspace_id}
   */
   readonly workspaceId?: string;
 }
@@ -2825,11 +3189,11 @@ export class WorkspaceSettingV2ProviderConfigOutputReference extends cdktn.Compl
 }
 export interface WorkspaceSettingV2RestrictWorkspaceAdmins {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/resources/workspace_setting_v2#disable_gov_tag_creation WorkspaceSettingV2#disable_gov_tag_creation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.116.0/docs/resources/workspace_setting_v2#disable_gov_tag_creation WorkspaceSettingV2#disable_gov_tag_creation}
   */
   readonly disableGovTagCreation?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/resources/workspace_setting_v2#status WorkspaceSettingV2#status}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.116.0/docs/resources/workspace_setting_v2#status WorkspaceSettingV2#status}
   */
   readonly status: string;
 }
@@ -2949,7 +3313,7 @@ export class WorkspaceSettingV2RestrictWorkspaceAdminsOutputReference extends cd
 }
 export interface WorkspaceSettingV2StringVal {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/resources/workspace_setting_v2#value WorkspaceSettingV2#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.116.0/docs/resources/workspace_setting_v2#value WorkspaceSettingV2#value}
   */
   readonly value?: string;
 }
@@ -3043,7 +3407,7 @@ export class WorkspaceSettingV2StringValOutputReference extends cdktn.ComplexObj
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/resources/workspace_setting_v2 databricks_workspace_setting_v2}
+* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.116.0/docs/resources/workspace_setting_v2 databricks_workspace_setting_v2}
 */
 export class WorkspaceSettingV2 extends cdktn.TerraformResource {
 
@@ -3059,7 +3423,7 @@ export class WorkspaceSettingV2 extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a WorkspaceSettingV2 resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the WorkspaceSettingV2 to import
-  * @param importFromId The id of the existing WorkspaceSettingV2 that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/resources/workspace_setting_v2#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing WorkspaceSettingV2 that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.116.0/docs/resources/workspace_setting_v2#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the WorkspaceSettingV2 to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -3071,7 +3435,7 @@ export class WorkspaceSettingV2 extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/resources/workspace_setting_v2 databricks_workspace_setting_v2} Resource
+  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.116.0/docs/resources/workspace_setting_v2 databricks_workspace_setting_v2} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -3082,7 +3446,7 @@ export class WorkspaceSettingV2 extends cdktn.TerraformResource {
       terraformResourceType: 'databricks_workspace_setting_v2',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '1.115.0',
+        providerVersion: '1.116.0',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,
@@ -3095,6 +3459,7 @@ export class WorkspaceSettingV2 extends cdktn.TerraformResource {
     });
     this._aibiDashboardEmbeddingAccessPolicy.internalValue = config.aibiDashboardEmbeddingAccessPolicy;
     this._aibiDashboardEmbeddingApprovedDomains.internalValue = config.aibiDashboardEmbeddingApprovedDomains;
+    this._allowedAppsUserApiScopes.internalValue = config.allowedAppsUserApiScopes;
     this._automaticClusterUpdateWorkspace.internalValue = config.automaticClusterUpdateWorkspace;
     this._booleanVal.internalValue = config.booleanVal;
     this._effectiveAibiDashboardEmbeddingAccessPolicy.internalValue = config.effectiveAibiDashboardEmbeddingAccessPolicy;
@@ -3104,6 +3469,7 @@ export class WorkspaceSettingV2 extends cdktn.TerraformResource {
     this._effectiveRestrictWorkspaceAdmins.internalValue = config.effectiveRestrictWorkspaceAdmins;
     this._integerVal.internalValue = config.integerVal;
     this._name = config.name;
+    this._operationalEmailCustomRecipient.internalValue = config.operationalEmailCustomRecipient;
     this._personalCompute.internalValue = config.personalCompute;
     this._providerConfig.internalValue = config.providerConfig;
     this._restrictWorkspaceAdmins.internalValue = config.restrictWorkspaceAdmins;
@@ -3144,6 +3510,22 @@ export class WorkspaceSettingV2 extends cdktn.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get aibiDashboardEmbeddingApprovedDomainsInput() {
     return this._aibiDashboardEmbeddingApprovedDomains.internalValue;
+  }
+
+  // allowed_apps_user_api_scopes - computed: false, optional: true, required: false
+  private _allowedAppsUserApiScopes = new WorkspaceSettingV2AllowedAppsUserApiScopesOutputReference(this, "allowed_apps_user_api_scopes");
+  public get allowedAppsUserApiScopes() {
+    return this._allowedAppsUserApiScopes;
+  }
+  public putAllowedAppsUserApiScopes(value: WorkspaceSettingV2AllowedAppsUserApiScopes) {
+    this._allowedAppsUserApiScopes.internalValue = value;
+  }
+  public resetAllowedAppsUserApiScopes() {
+    this._allowedAppsUserApiScopes.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get allowedAppsUserApiScopesInput() {
+    return this._allowedAppsUserApiScopes.internalValue;
   }
 
   // automatic_cluster_update_workspace - computed: false, optional: true, required: false
@@ -3210,6 +3592,12 @@ export class WorkspaceSettingV2 extends cdktn.TerraformResource {
     return this._effectiveAibiDashboardEmbeddingApprovedDomains.internalValue;
   }
 
+  // effective_allowed_apps_user_api_scopes - computed: true, optional: false, required: false
+  private _effectiveAllowedAppsUserApiScopes = new WorkspaceSettingV2EffectiveAllowedAppsUserApiScopesOutputReference(this, "effective_allowed_apps_user_api_scopes");
+  public get effectiveAllowedAppsUserApiScopes() {
+    return this._effectiveAllowedAppsUserApiScopes;
+  }
+
   // effective_automatic_cluster_update_workspace - computed: false, optional: true, required: false
   private _effectiveAutomaticClusterUpdateWorkspace = new WorkspaceSettingV2EffectiveAutomaticClusterUpdateWorkspaceOutputReference(this, "effective_automatic_cluster_update_workspace");
   public get effectiveAutomaticClusterUpdateWorkspace() {
@@ -3236,6 +3624,12 @@ export class WorkspaceSettingV2 extends cdktn.TerraformResource {
   private _effectiveIntegerVal = new WorkspaceSettingV2EffectiveIntegerValOutputReference(this, "effective_integer_val");
   public get effectiveIntegerVal() {
     return this._effectiveIntegerVal;
+  }
+
+  // effective_operational_email_custom_recipient - computed: true, optional: false, required: false
+  private _effectiveOperationalEmailCustomRecipient = new WorkspaceSettingV2EffectiveOperationalEmailCustomRecipientOutputReference(this, "effective_operational_email_custom_recipient");
+  public get effectiveOperationalEmailCustomRecipient() {
+    return this._effectiveOperationalEmailCustomRecipient;
   }
 
   // effective_personal_compute - computed: false, optional: true, required: false
@@ -3306,6 +3700,22 @@ export class WorkspaceSettingV2 extends cdktn.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get nameInput() {
     return this._name;
+  }
+
+  // operational_email_custom_recipient - computed: false, optional: true, required: false
+  private _operationalEmailCustomRecipient = new WorkspaceSettingV2OperationalEmailCustomRecipientOutputReference(this, "operational_email_custom_recipient");
+  public get operationalEmailCustomRecipient() {
+    return this._operationalEmailCustomRecipient;
+  }
+  public putOperationalEmailCustomRecipient(value: WorkspaceSettingV2OperationalEmailCustomRecipient) {
+    this._operationalEmailCustomRecipient.internalValue = value;
+  }
+  public resetOperationalEmailCustomRecipient() {
+    this._operationalEmailCustomRecipient.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get operationalEmailCustomRecipientInput() {
+    return this._operationalEmailCustomRecipient.internalValue;
   }
 
   // personal_compute - computed: false, optional: true, required: false
@@ -3380,6 +3790,7 @@ export class WorkspaceSettingV2 extends cdktn.TerraformResource {
     return {
       aibi_dashboard_embedding_access_policy: workspaceSettingV2AibiDashboardEmbeddingAccessPolicyToTerraform(this._aibiDashboardEmbeddingAccessPolicy.internalValue),
       aibi_dashboard_embedding_approved_domains: workspaceSettingV2AibiDashboardEmbeddingApprovedDomainsToTerraform(this._aibiDashboardEmbeddingApprovedDomains.internalValue),
+      allowed_apps_user_api_scopes: workspaceSettingV2AllowedAppsUserApiScopesToTerraform(this._allowedAppsUserApiScopes.internalValue),
       automatic_cluster_update_workspace: workspaceSettingV2AutomaticClusterUpdateWorkspaceToTerraform(this._automaticClusterUpdateWorkspace.internalValue),
       boolean_val: workspaceSettingV2BooleanValToTerraform(this._booleanVal.internalValue),
       effective_aibi_dashboard_embedding_access_policy: workspaceSettingV2EffectiveAibiDashboardEmbeddingAccessPolicyToTerraform(this._effectiveAibiDashboardEmbeddingAccessPolicy.internalValue),
@@ -3389,6 +3800,7 @@ export class WorkspaceSettingV2 extends cdktn.TerraformResource {
       effective_restrict_workspace_admins: workspaceSettingV2EffectiveRestrictWorkspaceAdminsToTerraform(this._effectiveRestrictWorkspaceAdmins.internalValue),
       integer_val: workspaceSettingV2IntegerValToTerraform(this._integerVal.internalValue),
       name: cdktn.stringToTerraform(this._name),
+      operational_email_custom_recipient: workspaceSettingV2OperationalEmailCustomRecipientToTerraform(this._operationalEmailCustomRecipient.internalValue),
       personal_compute: workspaceSettingV2PersonalComputeToTerraform(this._personalCompute.internalValue),
       provider_config: workspaceSettingV2ProviderConfigToTerraform(this._providerConfig.internalValue),
       restrict_workspace_admins: workspaceSettingV2RestrictWorkspaceAdminsToTerraform(this._restrictWorkspaceAdmins.internalValue),
@@ -3409,6 +3821,12 @@ export class WorkspaceSettingV2 extends cdktn.TerraformResource {
         isBlock: true,
         type: "struct",
         storageClassType: "WorkspaceSettingV2AibiDashboardEmbeddingApprovedDomains",
+      },
+      allowed_apps_user_api_scopes: {
+        value: workspaceSettingV2AllowedAppsUserApiScopesToHclTerraform(this._allowedAppsUserApiScopes.internalValue),
+        isBlock: true,
+        type: "struct",
+        storageClassType: "WorkspaceSettingV2AllowedAppsUserApiScopes",
       },
       automatic_cluster_update_workspace: {
         value: workspaceSettingV2AutomaticClusterUpdateWorkspaceToHclTerraform(this._automaticClusterUpdateWorkspace.internalValue),
@@ -3463,6 +3881,12 @@ export class WorkspaceSettingV2 extends cdktn.TerraformResource {
         isBlock: false,
         type: "simple",
         storageClassType: "string",
+      },
+      operational_email_custom_recipient: {
+        value: workspaceSettingV2OperationalEmailCustomRecipientToHclTerraform(this._operationalEmailCustomRecipient.internalValue),
+        isBlock: true,
+        type: "struct",
+        storageClassType: "WorkspaceSettingV2OperationalEmailCustomRecipient",
       },
       personal_compute: {
         value: workspaceSettingV2PersonalComputeToHclTerraform(this._personalCompute.internalValue),
