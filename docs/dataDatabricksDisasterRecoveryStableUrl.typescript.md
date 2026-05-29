@@ -4,7 +4,7 @@
 
 ### DataDatabricksDisasterRecoveryStableUrl <a name="DataDatabricksDisasterRecoveryStableUrl" id="@cdktn/provider-databricks.dataDatabricksDisasterRecoveryStableUrl.DataDatabricksDisasterRecoveryStableUrl"></a>
 
-Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/disaster_recovery_stable_url databricks_disaster_recovery_stable_url}.
+Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.116.0/docs/data-sources/disaster_recovery_stable_url databricks_disaster_recovery_stable_url}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksDisasterRecoveryStableUrl.DataDatabricksDisasterRecoveryStableUrl.Initializer"></a>
 
@@ -387,7 +387,7 @@ The construct id used in the generated config for the DataDatabricksDisasterReco
 
 The id of the existing DataDatabricksDisasterRecoveryStableUrl that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/disaster_recovery_stable_url#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.116.0/docs/data-sources/disaster_recovery_stable_url#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -415,6 +415,7 @@ Refer to the {@link https://registry.terraform.io/providers/databricks/databrick
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksDisasterRecoveryStableUrl.DataDatabricksDisasterRecoveryStableUrl.property.forEach">forEach</a></code> | <code>cdktn.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksDisasterRecoveryStableUrl.DataDatabricksDisasterRecoveryStableUrl.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksDisasterRecoveryStableUrl.DataDatabricksDisasterRecoveryStableUrl.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksDisasterRecoveryStableUrl.DataDatabricksDisasterRecoveryStableUrl.property.failoverGroupName">failoverGroupName</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksDisasterRecoveryStableUrl.DataDatabricksDisasterRecoveryStableUrl.property.initialWorkspaceId">initialWorkspaceId</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksDisasterRecoveryStableUrl.DataDatabricksDisasterRecoveryStableUrl.property.url">url</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksDisasterRecoveryStableUrl.DataDatabricksDisasterRecoveryStableUrl.property.nameInput">nameInput</a></code> | <code>string</code> | *No description.* |
@@ -544,6 +545,16 @@ public readonly provider: TerraformProvider;
 
 ---
 
+##### `failoverGroupName`<sup>Required</sup> <a name="failoverGroupName" id="@cdktn/provider-databricks.dataDatabricksDisasterRecoveryStableUrl.DataDatabricksDisasterRecoveryStableUrl.property.failoverGroupName"></a>
+
+```typescript
+public readonly failoverGroupName: string;
+```
+
+- *Type:* string
+
+---
+
 ##### `initialWorkspaceId`<sup>Required</sup> <a name="initialWorkspaceId" id="@cdktn/provider-databricks.dataDatabricksDisasterRecoveryStableUrl.DataDatabricksDisasterRecoveryStableUrl.property.initialWorkspaceId"></a>
 
 ```typescript
@@ -625,7 +636,7 @@ const dataDatabricksDisasterRecoveryStableUrlConfig: dataDatabricksDisasterRecov
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksDisasterRecoveryStableUrl.DataDatabricksDisasterRecoveryStableUrlConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksDisasterRecoveryStableUrl.DataDatabricksDisasterRecoveryStableUrlConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksDisasterRecoveryStableUrl.DataDatabricksDisasterRecoveryStableUrlConfig.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksDisasterRecoveryStableUrl.DataDatabricksDisasterRecoveryStableUrlConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/disaster_recovery_stable_url#name DataDatabricksDisasterRecoveryStableUrl#name}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksDisasterRecoveryStableUrl.DataDatabricksDisasterRecoveryStableUrlConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.116.0/docs/data-sources/disaster_recovery_stable_url#name DataDatabricksDisasterRecoveryStableUrl#name}. |
 
 ---
 
@@ -707,7 +718,7 @@ public readonly name: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/disaster_recovery_stable_url#name DataDatabricksDisasterRecoveryStableUrl#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.116.0/docs/data-sources/disaster_recovery_stable_url#name DataDatabricksDisasterRecoveryStableUrl#name}.
 
 ---
 

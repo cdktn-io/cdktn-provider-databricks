@@ -4,7 +4,7 @@
 
 ### DataDatabricksSupervisorAgent <a name="DataDatabricksSupervisorAgent" id="@cdktn/provider-databricks.dataDatabricksSupervisorAgent.DataDatabricksSupervisorAgent"></a>
 
-Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/supervisor_agent databricks_supervisor_agent}.
+Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.116.0/docs/data-sources/supervisor_agent databricks_supervisor_agent}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksSupervisorAgent.DataDatabricksSupervisorAgent.Initializer"></a>
 
@@ -37,8 +37,8 @@ dataDatabricksSupervisorAgent.DataDatabricksSupervisorAgent(
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksSupervisorAgent.DataDatabricksSupervisorAgent.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksSupervisorAgent.DataDatabricksSupervisorAgent.Initializer.parameter.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksSupervisorAgent.DataDatabricksSupervisorAgent.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksSupervisorAgent.DataDatabricksSupervisorAgent.Initializer.parameter.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/supervisor_agent#name DataDatabricksSupervisorAgent#name}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksSupervisorAgent.DataDatabricksSupervisorAgent.Initializer.parameter.providerConfig">provider_config</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksSupervisorAgent.DataDatabricksSupervisorAgentProviderConfig">DataDatabricksSupervisorAgentProviderConfig</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/supervisor_agent#provider_config DataDatabricksSupervisorAgent#provider_config}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksSupervisorAgent.DataDatabricksSupervisorAgent.Initializer.parameter.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.116.0/docs/data-sources/supervisor_agent#name DataDatabricksSupervisorAgent#name}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksSupervisorAgent.DataDatabricksSupervisorAgent.Initializer.parameter.providerConfig">provider_config</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksSupervisorAgent.DataDatabricksSupervisorAgentProviderConfig">DataDatabricksSupervisorAgentProviderConfig</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.116.0/docs/data-sources/supervisor_agent#provider_config DataDatabricksSupervisorAgent#provider_config}. |
 
 ---
 
@@ -106,7 +106,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/supervisor_agent#name DataDatabricksSupervisorAgent#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.116.0/docs/data-sources/supervisor_agent#name DataDatabricksSupervisorAgent#name}.
 
 ---
 
@@ -114,7 +114,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* <a href="#@cdktn/provider-databricks.dataDatabricksSupervisorAgent.DataDatabricksSupervisorAgentProviderConfig">DataDatabricksSupervisorAgentProviderConfig</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/supervisor_agent#provider_config DataDatabricksSupervisorAgent#provider_config}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.116.0/docs/data-sources/supervisor_agent#provider_config DataDatabricksSupervisorAgent#provider_config}.
 
 ---
 
@@ -397,7 +397,7 @@ def put_provider_config(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/supervisor_agent#workspace_id DataDatabricksSupervisorAgent#workspace_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.116.0/docs/data-sources/supervisor_agent#workspace_id DataDatabricksSupervisorAgent#workspace_id}.
 
 ---
 
@@ -521,7 +521,7 @@ The construct id used in the generated config for the DataDatabricksSupervisorAg
 
 The id of the existing DataDatabricksSupervisorAgent that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/supervisor_agent#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.116.0/docs/data-sources/supervisor_agent#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -868,8 +868,8 @@ dataDatabricksSupervisorAgent.DataDatabricksSupervisorAgentConfig(
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksSupervisorAgent.DataDatabricksSupervisorAgentConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksSupervisorAgent.DataDatabricksSupervisorAgentConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksSupervisorAgent.DataDatabricksSupervisorAgentConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksSupervisorAgent.DataDatabricksSupervisorAgentConfig.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/supervisor_agent#name DataDatabricksSupervisorAgent#name}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksSupervisorAgent.DataDatabricksSupervisorAgentConfig.property.providerConfig">provider_config</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksSupervisorAgent.DataDatabricksSupervisorAgentProviderConfig">DataDatabricksSupervisorAgentProviderConfig</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/supervisor_agent#provider_config DataDatabricksSupervisorAgent#provider_config}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksSupervisorAgent.DataDatabricksSupervisorAgentConfig.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.116.0/docs/data-sources/supervisor_agent#name DataDatabricksSupervisorAgent#name}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksSupervisorAgent.DataDatabricksSupervisorAgentConfig.property.providerConfig">provider_config</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksSupervisorAgent.DataDatabricksSupervisorAgentProviderConfig">DataDatabricksSupervisorAgentProviderConfig</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.116.0/docs/data-sources/supervisor_agent#provider_config DataDatabricksSupervisorAgent#provider_config}. |
 
 ---
 
@@ -951,7 +951,7 @@ name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/supervisor_agent#name DataDatabricksSupervisorAgent#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.116.0/docs/data-sources/supervisor_agent#name DataDatabricksSupervisorAgent#name}.
 
 ---
 
@@ -963,7 +963,7 @@ provider_config: DataDatabricksSupervisorAgentProviderConfig
 
 - *Type:* <a href="#@cdktn/provider-databricks.dataDatabricksSupervisorAgent.DataDatabricksSupervisorAgentProviderConfig">DataDatabricksSupervisorAgentProviderConfig</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/supervisor_agent#provider_config DataDatabricksSupervisorAgent#provider_config}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.116.0/docs/data-sources/supervisor_agent#provider_config DataDatabricksSupervisorAgent#provider_config}.
 
 ---
 
@@ -983,7 +983,7 @@ dataDatabricksSupervisorAgent.DataDatabricksSupervisorAgentProviderConfig(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksSupervisorAgent.DataDatabricksSupervisorAgentProviderConfig.property.workspaceId">workspace_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/supervisor_agent#workspace_id DataDatabricksSupervisorAgent#workspace_id}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksSupervisorAgent.DataDatabricksSupervisorAgentProviderConfig.property.workspaceId">workspace_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.116.0/docs/data-sources/supervisor_agent#workspace_id DataDatabricksSupervisorAgent#workspace_id}. |
 
 ---
 
@@ -995,7 +995,7 @@ workspace_id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/supervisor_agent#workspace_id DataDatabricksSupervisorAgent#workspace_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.116.0/docs/data-sources/supervisor_agent#workspace_id DataDatabricksSupervisorAgent#workspace_id}.
 
 ---
 
