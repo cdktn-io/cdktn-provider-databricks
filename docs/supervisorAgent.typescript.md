@@ -4,7 +4,7 @@
 
 ### SupervisorAgent <a name="SupervisorAgent" id="@cdktn/provider-databricks.supervisorAgent.SupervisorAgent"></a>
 
-Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.116.0/docs/resources/supervisor_agent databricks_supervisor_agent}.
+Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/supervisor_agent databricks_supervisor_agent}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.supervisorAgent.SupervisorAgent.Initializer"></a>
 
@@ -523,7 +523,7 @@ The construct id used in the generated config for the SupervisorAgent to import.
 
 The id of the existing SupervisorAgent that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.116.0/docs/resources/supervisor_agent#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/supervisor_agent#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -904,10 +904,10 @@ const supervisorAgentConfig: supervisorAgent.SupervisorAgentConfig = { ... }
 | <code><a href="#@cdktn/provider-databricks.supervisorAgent.SupervisorAgentConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.supervisorAgent.SupervisorAgentConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.supervisorAgent.SupervisorAgentConfig.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-databricks.supervisorAgent.SupervisorAgentConfig.property.displayName">displayName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.116.0/docs/resources/supervisor_agent#display_name SupervisorAgent#display_name}. |
-| <code><a href="#@cdktn/provider-databricks.supervisorAgent.SupervisorAgentConfig.property.description">description</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.116.0/docs/resources/supervisor_agent#description SupervisorAgent#description}. |
-| <code><a href="#@cdktn/provider-databricks.supervisorAgent.SupervisorAgentConfig.property.instructions">instructions</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.116.0/docs/resources/supervisor_agent#instructions SupervisorAgent#instructions}. |
-| <code><a href="#@cdktn/provider-databricks.supervisorAgent.SupervisorAgentConfig.property.providerConfig">providerConfig</a></code> | <code><a href="#@cdktn/provider-databricks.supervisorAgent.SupervisorAgentProviderConfig">SupervisorAgentProviderConfig</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.116.0/docs/resources/supervisor_agent#provider_config SupervisorAgent#provider_config}. |
+| <code><a href="#@cdktn/provider-databricks.supervisorAgent.SupervisorAgentConfig.property.displayName">displayName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/supervisor_agent#display_name SupervisorAgent#display_name}. |
+| <code><a href="#@cdktn/provider-databricks.supervisorAgent.SupervisorAgentConfig.property.description">description</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/supervisor_agent#description SupervisorAgent#description}. |
+| <code><a href="#@cdktn/provider-databricks.supervisorAgent.SupervisorAgentConfig.property.instructions">instructions</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/supervisor_agent#instructions SupervisorAgent#instructions}. |
+| <code><a href="#@cdktn/provider-databricks.supervisorAgent.SupervisorAgentConfig.property.providerConfig">providerConfig</a></code> | <code><a href="#@cdktn/provider-databricks.supervisorAgent.SupervisorAgentProviderConfig">SupervisorAgentProviderConfig</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/supervisor_agent#provider_config SupervisorAgent#provider_config}. |
 
 ---
 
@@ -989,7 +989,7 @@ public readonly displayName: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.116.0/docs/resources/supervisor_agent#display_name SupervisorAgent#display_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/supervisor_agent#display_name SupervisorAgent#display_name}.
 
 ---
 
@@ -1001,7 +1001,7 @@ public readonly description: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.116.0/docs/resources/supervisor_agent#description SupervisorAgent#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/supervisor_agent#description SupervisorAgent#description}.
 
 ---
 
@@ -1013,7 +1013,7 @@ public readonly instructions: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.116.0/docs/resources/supervisor_agent#instructions SupervisorAgent#instructions}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/supervisor_agent#instructions SupervisorAgent#instructions}.
 
 ---
 
@@ -1025,7 +1025,7 @@ public readonly providerConfig: SupervisorAgentProviderConfig;
 
 - *Type:* <a href="#@cdktn/provider-databricks.supervisorAgent.SupervisorAgentProviderConfig">SupervisorAgentProviderConfig</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.116.0/docs/resources/supervisor_agent#provider_config SupervisorAgent#provider_config}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/supervisor_agent#provider_config SupervisorAgent#provider_config}.
 
 ---
 
@@ -1043,7 +1043,7 @@ const supervisorAgentProviderConfig: supervisorAgent.SupervisorAgentProviderConf
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.supervisorAgent.SupervisorAgentProviderConfig.property.workspaceId">workspaceId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.116.0/docs/resources/supervisor_agent#workspace_id SupervisorAgent#workspace_id}. |
+| <code><a href="#@cdktn/provider-databricks.supervisorAgent.SupervisorAgentProviderConfig.property.workspaceId">workspaceId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/supervisor_agent#workspace_id SupervisorAgent#workspace_id}. |
 
 ---
 
@@ -1055,7 +1055,7 @@ public readonly workspaceId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.116.0/docs/resources/supervisor_agent#workspace_id SupervisorAgent#workspace_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/supervisor_agent#workspace_id SupervisorAgent#workspace_id}.
 
 ---
 
