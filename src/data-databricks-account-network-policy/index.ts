@@ -13,13 +13,13 @@ import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
 export interface DataDatabricksAccountNetworkPolicyConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.116.0/docs/data-sources/account_network_policy#network_policy_id DataDatabricksAccountNetworkPolicy#network_policy_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/account_network_policy#network_policy_id DataDatabricksAccountNetworkPolicy#network_policy_id}
   */
   readonly networkPolicyId: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.116.0/docs/data-sources/account_network_policy databricks_account_network_policy}
+* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/account_network_policy databricks_account_network_policy}
 */
 export class DataDatabricksAccountNetworkPolicy extends cdktn.TerraformDataSource {
 
@@ -35,7 +35,7 @@ export class DataDatabricksAccountNetworkPolicy extends cdktn.TerraformDataSourc
   * Generates CDKTN code for importing a DataDatabricksAccountNetworkPolicy resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataDatabricksAccountNetworkPolicy to import
-  * @param importFromId The id of the existing DataDatabricksAccountNetworkPolicy that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.116.0/docs/data-sources/account_network_policy#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataDatabricksAccountNetworkPolicy that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/account_network_policy#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataDatabricksAccountNetworkPolicy to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -47,7 +47,7 @@ export class DataDatabricksAccountNetworkPolicy extends cdktn.TerraformDataSourc
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.116.0/docs/data-sources/account_network_policy databricks_account_network_policy} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/account_network_policy databricks_account_network_policy} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -58,7 +58,7 @@ export class DataDatabricksAccountNetworkPolicy extends cdktn.TerraformDataSourc
       terraformResourceType: 'databricks_account_network_policy',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '1.116.0',
+        providerVersion: '1.117.0',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,

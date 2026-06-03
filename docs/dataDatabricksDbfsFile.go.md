@@ -4,7 +4,7 @@
 
 ### DataDatabricksDbfsFile <a name="DataDatabricksDbfsFile" id="@cdktn/provider-databricks.dataDatabricksDbfsFile.DataDatabricksDbfsFile"></a>
 
-Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.116.0/docs/data-sources/dbfs_file databricks_dbfs_file}.
+Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/dbfs_file databricks_dbfs_file}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksDbfsFile.DataDatabricksDbfsFile.Initializer"></a>
 
@@ -414,7 +414,7 @@ The construct id used in the generated config for the DataDatabricksDbfsFile to 
 
 The id of the existing DataDatabricksDbfsFile that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.116.0/docs/data-sources/dbfs_file#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/dbfs_file#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -730,9 +730,9 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadata
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksDbfsFile.DataDatabricksDbfsFileConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksDbfsFile.DataDatabricksDbfsFileConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksDbfsFile.DataDatabricksDbfsFileConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksDbfsFile.DataDatabricksDbfsFileConfig.property.limitFileSize">LimitFileSize</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.116.0/docs/data-sources/dbfs_file#limit_file_size DataDatabricksDbfsFile#limit_file_size}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksDbfsFile.DataDatabricksDbfsFileConfig.property.path">Path</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.116.0/docs/data-sources/dbfs_file#path DataDatabricksDbfsFile#path}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksDbfsFile.DataDatabricksDbfsFileConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.116.0/docs/data-sources/dbfs_file#id DataDatabricksDbfsFile#id}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksDbfsFile.DataDatabricksDbfsFileConfig.property.limitFileSize">LimitFileSize</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/dbfs_file#limit_file_size DataDatabricksDbfsFile#limit_file_size}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksDbfsFile.DataDatabricksDbfsFileConfig.property.path">Path</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/dbfs_file#path DataDatabricksDbfsFile#path}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksDbfsFile.DataDatabricksDbfsFileConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/dbfs_file#id DataDatabricksDbfsFile#id}. |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksDbfsFile.DataDatabricksDbfsFileConfig.property.providerConfig">ProviderConfig</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksDbfsFile.DataDatabricksDbfsFileProviderConfig">DataDatabricksDbfsFileProviderConfig</a></code> | provider_config block. |
 
 ---
@@ -815,7 +815,7 @@ LimitFileSize interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.116.0/docs/data-sources/dbfs_file#limit_file_size DataDatabricksDbfsFile#limit_file_size}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/dbfs_file#limit_file_size DataDatabricksDbfsFile#limit_file_size}.
 
 ---
 
@@ -827,7 +827,7 @@ Path *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.116.0/docs/data-sources/dbfs_file#path DataDatabricksDbfsFile#path}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/dbfs_file#path DataDatabricksDbfsFile#path}.
 
 ---
 
@@ -839,7 +839,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.116.0/docs/data-sources/dbfs_file#id DataDatabricksDbfsFile#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/dbfs_file#id DataDatabricksDbfsFile#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -856,7 +856,7 @@ ProviderConfig DataDatabricksDbfsFileProviderConfig
 
 provider_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.116.0/docs/data-sources/dbfs_file#provider_config DataDatabricksDbfsFile#provider_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/dbfs_file#provider_config DataDatabricksDbfsFile#provider_config}
 
 ---
 
@@ -876,7 +876,7 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadata
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksDbfsFile.DataDatabricksDbfsFileProviderConfig.property.workspaceId">WorkspaceId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.116.0/docs/data-sources/dbfs_file#workspace_id DataDatabricksDbfsFile#workspace_id}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksDbfsFile.DataDatabricksDbfsFileProviderConfig.property.workspaceId">WorkspaceId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/dbfs_file#workspace_id DataDatabricksDbfsFile#workspace_id}. |
 
 ---
 
@@ -888,7 +888,7 @@ WorkspaceId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.116.0/docs/data-sources/dbfs_file#workspace_id DataDatabricksDbfsFile#workspace_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/dbfs_file#workspace_id DataDatabricksDbfsFile#workspace_id}.
 
 ---
 

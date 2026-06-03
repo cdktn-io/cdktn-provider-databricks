@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/databricks/databricks/1.116.0/docs/data-sources/postgres_role
+// https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/postgres_role
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,17 +13,17 @@ import * as cdktn from 'cdktn';
 
 export interface DataDatabricksPostgresRoleConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.116.0/docs/data-sources/postgres_role#name DataDatabricksPostgresRole#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/postgres_role#name DataDatabricksPostgresRole#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.116.0/docs/data-sources/postgres_role#provider_config DataDatabricksPostgresRole#provider_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/postgres_role#provider_config DataDatabricksPostgresRole#provider_config}
   */
   readonly providerConfig?: DataDatabricksPostgresRoleProviderConfig;
 }
 export interface DataDatabricksPostgresRoleProviderConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.116.0/docs/data-sources/postgres_role#workspace_id DataDatabricksPostgresRole#workspace_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/postgres_role#workspace_id DataDatabricksPostgresRole#workspace_id}
   */
   readonly workspaceId?: string;
 }
@@ -117,15 +117,15 @@ export class DataDatabricksPostgresRoleProviderConfigOutputReference extends cdk
 }
 export interface DataDatabricksPostgresRoleSpecAttributes {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.116.0/docs/data-sources/postgres_role#bypassrls DataDatabricksPostgresRole#bypassrls}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/postgres_role#bypassrls DataDatabricksPostgresRole#bypassrls}
   */
   readonly bypassrls?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.116.0/docs/data-sources/postgres_role#createdb DataDatabricksPostgresRole#createdb}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/postgres_role#createdb DataDatabricksPostgresRole#createdb}
   */
   readonly createdb?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.116.0/docs/data-sources/postgres_role#createrole DataDatabricksPostgresRole#createrole}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/postgres_role#createrole DataDatabricksPostgresRole#createrole}
   */
   readonly createrole?: boolean | cdktn.IResolvable;
 }
@@ -277,23 +277,23 @@ export class DataDatabricksPostgresRoleSpecAttributesOutputReference extends cdk
 }
 export interface DataDatabricksPostgresRoleSpec {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.116.0/docs/data-sources/postgres_role#attributes DataDatabricksPostgresRole#attributes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/postgres_role#attributes DataDatabricksPostgresRole#attributes}
   */
   readonly attributes?: DataDatabricksPostgresRoleSpecAttributes;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.116.0/docs/data-sources/postgres_role#auth_method DataDatabricksPostgresRole#auth_method}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/postgres_role#auth_method DataDatabricksPostgresRole#auth_method}
   */
   readonly authMethod?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.116.0/docs/data-sources/postgres_role#identity_type DataDatabricksPostgresRole#identity_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/postgres_role#identity_type DataDatabricksPostgresRole#identity_type}
   */
   readonly identityType?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.116.0/docs/data-sources/postgres_role#membership_roles DataDatabricksPostgresRole#membership_roles}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/postgres_role#membership_roles DataDatabricksPostgresRole#membership_roles}
   */
   readonly membershipRoles?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.116.0/docs/data-sources/postgres_role#postgres_role DataDatabricksPostgresRole#postgres_role}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/postgres_role#postgres_role DataDatabricksPostgresRole#postgres_role}
   */
   readonly postgresRole?: string;
 }
@@ -493,15 +493,15 @@ export class DataDatabricksPostgresRoleSpecOutputReference extends cdktn.Complex
 }
 export interface DataDatabricksPostgresRoleStatusAttributes {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.116.0/docs/data-sources/postgres_role#bypassrls DataDatabricksPostgresRole#bypassrls}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/postgres_role#bypassrls DataDatabricksPostgresRole#bypassrls}
   */
   readonly bypassrls?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.116.0/docs/data-sources/postgres_role#createdb DataDatabricksPostgresRole#createdb}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/postgres_role#createdb DataDatabricksPostgresRole#createdb}
   */
   readonly createdb?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.116.0/docs/data-sources/postgres_role#createrole DataDatabricksPostgresRole#createrole}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/postgres_role#createrole DataDatabricksPostgresRole#createrole}
   */
   readonly createrole?: boolean | cdktn.IResolvable;
 }
@@ -653,23 +653,23 @@ export class DataDatabricksPostgresRoleStatusAttributesOutputReference extends c
 }
 export interface DataDatabricksPostgresRoleStatus {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.116.0/docs/data-sources/postgres_role#attributes DataDatabricksPostgresRole#attributes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/postgres_role#attributes DataDatabricksPostgresRole#attributes}
   */
   readonly attributes?: DataDatabricksPostgresRoleStatusAttributes;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.116.0/docs/data-sources/postgres_role#auth_method DataDatabricksPostgresRole#auth_method}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/postgres_role#auth_method DataDatabricksPostgresRole#auth_method}
   */
   readonly authMethod?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.116.0/docs/data-sources/postgres_role#identity_type DataDatabricksPostgresRole#identity_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/postgres_role#identity_type DataDatabricksPostgresRole#identity_type}
   */
   readonly identityType?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.116.0/docs/data-sources/postgres_role#membership_roles DataDatabricksPostgresRole#membership_roles}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/postgres_role#membership_roles DataDatabricksPostgresRole#membership_roles}
   */
   readonly membershipRoles?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.116.0/docs/data-sources/postgres_role#postgres_role DataDatabricksPostgresRole#postgres_role}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/postgres_role#postgres_role DataDatabricksPostgresRole#postgres_role}
   */
   readonly postgresRole?: string;
 }
@@ -874,7 +874,7 @@ export class DataDatabricksPostgresRoleStatusOutputReference extends cdktn.Compl
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.116.0/docs/data-sources/postgres_role databricks_postgres_role}
+* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/postgres_role databricks_postgres_role}
 */
 export class DataDatabricksPostgresRole extends cdktn.TerraformDataSource {
 
@@ -890,7 +890,7 @@ export class DataDatabricksPostgresRole extends cdktn.TerraformDataSource {
   * Generates CDKTN code for importing a DataDatabricksPostgresRole resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataDatabricksPostgresRole to import
-  * @param importFromId The id of the existing DataDatabricksPostgresRole that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.116.0/docs/data-sources/postgres_role#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataDatabricksPostgresRole that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/postgres_role#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataDatabricksPostgresRole to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -902,7 +902,7 @@ export class DataDatabricksPostgresRole extends cdktn.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.116.0/docs/data-sources/postgres_role databricks_postgres_role} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/postgres_role databricks_postgres_role} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -913,7 +913,7 @@ export class DataDatabricksPostgresRole extends cdktn.TerraformDataSource {
       terraformResourceType: 'databricks_postgres_role',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '1.116.0',
+        providerVersion: '1.117.0',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,

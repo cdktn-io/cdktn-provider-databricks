@@ -1,3 +1,3 @@
 # `databricks_postgres_project`
 
-Refer to the Terraform Registry for docs: [`databricks_postgres_project`](https://registry.terraform.io/providers/databricks/databricks/1.116.0/docs/resources/postgres_project).
+Refer to the Terraform Registry for docs: [`databricks_postgres_project`](https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/postgres_project).

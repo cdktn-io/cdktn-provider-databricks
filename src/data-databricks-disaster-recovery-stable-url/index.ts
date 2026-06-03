@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/databricks/databricks/1.116.0/docs/data-sources/disaster_recovery_stable_url
+// https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/disaster_recovery_stable_url
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,13 +13,13 @@ import * as cdktn from 'cdktn';
 
 export interface DataDatabricksDisasterRecoveryStableUrlConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.116.0/docs/data-sources/disaster_recovery_stable_url#name DataDatabricksDisasterRecoveryStableUrl#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/disaster_recovery_stable_url#name DataDatabricksDisasterRecoveryStableUrl#name}
   */
   readonly name: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.116.0/docs/data-sources/disaster_recovery_stable_url databricks_disaster_recovery_stable_url}
+* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/disaster_recovery_stable_url databricks_disaster_recovery_stable_url}
 */
 export class DataDatabricksDisasterRecoveryStableUrl extends cdktn.TerraformDataSource {
 
@@ -35,7 +35,7 @@ export class DataDatabricksDisasterRecoveryStableUrl extends cdktn.TerraformData
   * Generates CDKTN code for importing a DataDatabricksDisasterRecoveryStableUrl resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataDatabricksDisasterRecoveryStableUrl to import
-  * @param importFromId The id of the existing DataDatabricksDisasterRecoveryStableUrl that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.116.0/docs/data-sources/disaster_recovery_stable_url#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataDatabricksDisasterRecoveryStableUrl that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/disaster_recovery_stable_url#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataDatabricksDisasterRecoveryStableUrl to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -47,7 +47,7 @@ export class DataDatabricksDisasterRecoveryStableUrl extends cdktn.TerraformData
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.116.0/docs/data-sources/disaster_recovery_stable_url databricks_disaster_recovery_stable_url} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/disaster_recovery_stable_url databricks_disaster_recovery_stable_url} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -58,7 +58,7 @@ export class DataDatabricksDisasterRecoveryStableUrl extends cdktn.TerraformData
       terraformResourceType: 'databricks_disaster_recovery_stable_url',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '1.116.0',
+        providerVersion: '1.117.0',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,

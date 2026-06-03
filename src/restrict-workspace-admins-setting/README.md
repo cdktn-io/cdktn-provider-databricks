@@ -1,3 +1,3 @@
 # `databricks_restrict_workspace_admins_setting`
 
-Refer to the Terraform Registry for docs: [`databricks_restrict_workspace_admins_setting`](https://registry.terraform.io/providers/databricks/databricks/1.116.0/docs/resources/restrict_workspace_admins_setting).
+Refer to the Terraform Registry for docs: [`databricks_restrict_workspace_admins_setting`](https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/restrict_workspace_admins_setting).
