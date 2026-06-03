@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/databricks/databricks/1.116.0/docs/resources/mlflow_webhook
+// https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/mlflow_webhook
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,62 +13,62 @@ import * as cdktn from 'cdktn';
 
 export interface MlflowWebhookConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.116.0/docs/resources/mlflow_webhook#description MlflowWebhook#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/mlflow_webhook#description MlflowWebhook#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.116.0/docs/resources/mlflow_webhook#events MlflowWebhook#events}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/mlflow_webhook#events MlflowWebhook#events}
   */
   readonly events: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.116.0/docs/resources/mlflow_webhook#id MlflowWebhook#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/mlflow_webhook#id MlflowWebhook#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.116.0/docs/resources/mlflow_webhook#model_name MlflowWebhook#model_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/mlflow_webhook#model_name MlflowWebhook#model_name}
   */
   readonly modelName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.116.0/docs/resources/mlflow_webhook#status MlflowWebhook#status}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/mlflow_webhook#status MlflowWebhook#status}
   */
   readonly status?: string;
   /**
   * http_url_spec block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.116.0/docs/resources/mlflow_webhook#http_url_spec MlflowWebhook#http_url_spec}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/mlflow_webhook#http_url_spec MlflowWebhook#http_url_spec}
   */
   readonly httpUrlSpec?: MlflowWebhookHttpUrlSpec;
   /**
   * job_spec block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.116.0/docs/resources/mlflow_webhook#job_spec MlflowWebhook#job_spec}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/mlflow_webhook#job_spec MlflowWebhook#job_spec}
   */
   readonly jobSpec?: MlflowWebhookJobSpec;
   /**
   * provider_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.116.0/docs/resources/mlflow_webhook#provider_config MlflowWebhook#provider_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/mlflow_webhook#provider_config MlflowWebhook#provider_config}
   */
   readonly providerConfig?: MlflowWebhookProviderConfig;
 }
 export interface MlflowWebhookHttpUrlSpec {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.116.0/docs/resources/mlflow_webhook#authorization MlflowWebhook#authorization}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/mlflow_webhook#authorization MlflowWebhook#authorization}
   */
   readonly authorization?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.116.0/docs/resources/mlflow_webhook#enable_ssl_verification MlflowWebhook#enable_ssl_verification}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/mlflow_webhook#enable_ssl_verification MlflowWebhook#enable_ssl_verification}
   */
   readonly enableSslVerification?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.116.0/docs/resources/mlflow_webhook#secret MlflowWebhook#secret}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/mlflow_webhook#secret MlflowWebhook#secret}
   */
   readonly secret?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.116.0/docs/resources/mlflow_webhook#url MlflowWebhook#url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/mlflow_webhook#url MlflowWebhook#url}
   */
   readonly url: string;
 }
@@ -236,15 +236,15 @@ export class MlflowWebhookHttpUrlSpecOutputReference extends cdktn.ComplexObject
 }
 export interface MlflowWebhookJobSpec {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.116.0/docs/resources/mlflow_webhook#access_token MlflowWebhook#access_token}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/mlflow_webhook#access_token MlflowWebhook#access_token}
   */
   readonly accessToken: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.116.0/docs/resources/mlflow_webhook#job_id MlflowWebhook#job_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/mlflow_webhook#job_id MlflowWebhook#job_id}
   */
   readonly jobId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.116.0/docs/resources/mlflow_webhook#workspace_url MlflowWebhook#workspace_url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/mlflow_webhook#workspace_url MlflowWebhook#workspace_url}
   */
   readonly workspaceUrl?: string;
 }
@@ -380,7 +380,7 @@ export class MlflowWebhookJobSpecOutputReference extends cdktn.ComplexObject {
 }
 export interface MlflowWebhookProviderConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.116.0/docs/resources/mlflow_webhook#workspace_id MlflowWebhook#workspace_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/mlflow_webhook#workspace_id MlflowWebhook#workspace_id}
   */
   readonly workspaceId?: string;
 }
@@ -464,7 +464,7 @@ export class MlflowWebhookProviderConfigOutputReference extends cdktn.ComplexObj
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.116.0/docs/resources/mlflow_webhook databricks_mlflow_webhook}
+* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/mlflow_webhook databricks_mlflow_webhook}
 */
 export class MlflowWebhook extends cdktn.TerraformResource {
 
@@ -480,7 +480,7 @@ export class MlflowWebhook extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a MlflowWebhook resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the MlflowWebhook to import
-  * @param importFromId The id of the existing MlflowWebhook that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.116.0/docs/resources/mlflow_webhook#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing MlflowWebhook that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/mlflow_webhook#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the MlflowWebhook to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -492,7 +492,7 @@ export class MlflowWebhook extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.116.0/docs/resources/mlflow_webhook databricks_mlflow_webhook} Resource
+  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/mlflow_webhook databricks_mlflow_webhook} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -503,7 +503,7 @@ export class MlflowWebhook extends cdktn.TerraformResource {
       terraformResourceType: 'databricks_mlflow_webhook',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '1.116.0',
+        providerVersion: '1.117.0',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,

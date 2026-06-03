@@ -20,15 +20,15 @@ DataDatabricksAccountNetworkPoliciesItemsEgressOutputReference,
 DataDatabricksAccountNetworkPoliciesItemsIngressOutputReference } from './structs0';
 export interface DataDatabricksAccountNetworkPoliciesItemsIngressDryRun {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.116.0/docs/data-sources/account_network_policies#cross_workspace_access DataDatabricksAccountNetworkPolicies#cross_workspace_access}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/account_network_policies#cross_workspace_access DataDatabricksAccountNetworkPolicies#cross_workspace_access}
   */
   readonly crossWorkspaceAccess?: DataDatabricksAccountNetworkPoliciesItemsIngressDryRunCrossWorkspaceAccess;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.116.0/docs/data-sources/account_network_policies#private_access DataDatabricksAccountNetworkPolicies#private_access}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/account_network_policies#private_access DataDatabricksAccountNetworkPolicies#private_access}
   */
   readonly privateAccess?: DataDatabricksAccountNetworkPoliciesItemsIngressDryRunPrivateAccess;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.116.0/docs/data-sources/account_network_policies#public_access DataDatabricksAccountNetworkPolicies#public_access}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/account_network_policies#public_access DataDatabricksAccountNetworkPolicies#public_access}
   */
   readonly publicAccess?: DataDatabricksAccountNetworkPoliciesItemsIngressDryRunPublicAccess;
 }
@@ -170,7 +170,7 @@ export class DataDatabricksAccountNetworkPoliciesItemsIngressDryRunOutputReferen
 }
 export interface DataDatabricksAccountNetworkPoliciesItems {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.116.0/docs/data-sources/account_network_policies#network_policy_id DataDatabricksAccountNetworkPolicies#network_policy_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/account_network_policies#network_policy_id DataDatabricksAccountNetworkPolicies#network_policy_id}
   */
   readonly networkPolicyId: string;
 }

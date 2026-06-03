@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/databricks/databricks/1.116.0/docs/resources/secret_uc
+// https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/secret_uc
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,41 +13,41 @@ import * as cdktn from 'cdktn';
 
 export interface SecretUcConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.116.0/docs/resources/secret_uc#catalog_name SecretUc#catalog_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/secret_uc#catalog_name SecretUc#catalog_name}
   */
   readonly catalogName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.116.0/docs/resources/secret_uc#comment SecretUc#comment}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/secret_uc#comment SecretUc#comment}
   */
   readonly comment?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.116.0/docs/resources/secret_uc#expire_time SecretUc#expire_time}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/secret_uc#expire_time SecretUc#expire_time}
   */
   readonly expireTime?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.116.0/docs/resources/secret_uc#name SecretUc#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/secret_uc#name SecretUc#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.116.0/docs/resources/secret_uc#owner SecretUc#owner}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/secret_uc#owner SecretUc#owner}
   */
   readonly owner?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.116.0/docs/resources/secret_uc#provider_config SecretUc#provider_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/secret_uc#provider_config SecretUc#provider_config}
   */
   readonly providerConfig?: SecretUcProviderConfig;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.116.0/docs/resources/secret_uc#schema_name SecretUc#schema_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/secret_uc#schema_name SecretUc#schema_name}
   */
   readonly schemaName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.116.0/docs/resources/secret_uc#value SecretUc#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/secret_uc#value SecretUc#value}
   */
   readonly value: string;
 }
 export interface SecretUcProviderConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.116.0/docs/resources/secret_uc#workspace_id SecretUc#workspace_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/secret_uc#workspace_id SecretUc#workspace_id}
   */
   readonly workspaceId?: string;
 }
@@ -141,7 +141,7 @@ export class SecretUcProviderConfigOutputReference extends cdktn.ComplexObject {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.116.0/docs/resources/secret_uc databricks_secret_uc}
+* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/secret_uc databricks_secret_uc}
 */
 export class SecretUc extends cdktn.TerraformResource {
 
@@ -157,7 +157,7 @@ export class SecretUc extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a SecretUc resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the SecretUc to import
-  * @param importFromId The id of the existing SecretUc that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.116.0/docs/resources/secret_uc#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing SecretUc that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/secret_uc#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the SecretUc to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -169,7 +169,7 @@ export class SecretUc extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.116.0/docs/resources/secret_uc databricks_secret_uc} Resource
+  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/secret_uc databricks_secret_uc} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -180,7 +180,7 @@ export class SecretUc extends cdktn.TerraformResource {
       terraformResourceType: 'databricks_secret_uc',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '1.116.0',
+        providerVersion: '1.117.0',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,

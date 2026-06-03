@@ -1,3 +1,3 @@
 # `databricks_azure_adls_gen2_mount`
 
-Refer to the Terraform Registry for docs: [`databricks_azure_adls_gen2_mount`](https://registry.terraform.io/providers/databricks/databricks/1.116.0/docs/resources/azure_adls_gen2_mount).
+Refer to the Terraform Registry for docs: [`databricks_azure_adls_gen2_mount`](https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/azure_adls_gen2_mount).
