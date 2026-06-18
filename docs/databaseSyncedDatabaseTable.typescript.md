@@ -4,7 +4,7 @@
 
 ### DatabaseSyncedDatabaseTable <a name="DatabaseSyncedDatabaseTable" id="@cdktn/provider-databricks.databaseSyncedDatabaseTable.DatabaseSyncedDatabaseTable"></a>
 
-Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/database_synced_database_table databricks_database_synced_database_table}.
+Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/database_synced_database_table databricks_database_synced_database_table}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.databaseSyncedDatabaseTable.DatabaseSyncedDatabaseTable.Initializer"></a>
 
@@ -543,7 +543,7 @@ The construct id used in the generated config for the DatabaseSyncedDatabaseTabl
 
 The id of the existing DatabaseSyncedDatabaseTable that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/database_synced_database_table#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/database_synced_database_table#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -913,11 +913,11 @@ const databaseSyncedDatabaseTableConfig: databaseSyncedDatabaseTable.DatabaseSyn
 | <code><a href="#@cdktn/provider-databricks.databaseSyncedDatabaseTable.DatabaseSyncedDatabaseTableConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.databaseSyncedDatabaseTable.DatabaseSyncedDatabaseTableConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.databaseSyncedDatabaseTable.DatabaseSyncedDatabaseTableConfig.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-databricks.databaseSyncedDatabaseTable.DatabaseSyncedDatabaseTableConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/database_synced_database_table#name DatabaseSyncedDatabaseTable#name}. |
-| <code><a href="#@cdktn/provider-databricks.databaseSyncedDatabaseTable.DatabaseSyncedDatabaseTableConfig.property.databaseInstanceName">databaseInstanceName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/database_synced_database_table#database_instance_name DatabaseSyncedDatabaseTable#database_instance_name}. |
-| <code><a href="#@cdktn/provider-databricks.databaseSyncedDatabaseTable.DatabaseSyncedDatabaseTableConfig.property.logicalDatabaseName">logicalDatabaseName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/database_synced_database_table#logical_database_name DatabaseSyncedDatabaseTable#logical_database_name}. |
-| <code><a href="#@cdktn/provider-databricks.databaseSyncedDatabaseTable.DatabaseSyncedDatabaseTableConfig.property.providerConfig">providerConfig</a></code> | <code><a href="#@cdktn/provider-databricks.databaseSyncedDatabaseTable.DatabaseSyncedDatabaseTableProviderConfig">DatabaseSyncedDatabaseTableProviderConfig</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/database_synced_database_table#provider_config DatabaseSyncedDatabaseTable#provider_config}. |
-| <code><a href="#@cdktn/provider-databricks.databaseSyncedDatabaseTable.DatabaseSyncedDatabaseTableConfig.property.spec">spec</a></code> | <code><a href="#@cdktn/provider-databricks.databaseSyncedDatabaseTable.DatabaseSyncedDatabaseTableSpec">DatabaseSyncedDatabaseTableSpec</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/database_synced_database_table#spec DatabaseSyncedDatabaseTable#spec}. |
+| <code><a href="#@cdktn/provider-databricks.databaseSyncedDatabaseTable.DatabaseSyncedDatabaseTableConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/database_synced_database_table#name DatabaseSyncedDatabaseTable#name}. |
+| <code><a href="#@cdktn/provider-databricks.databaseSyncedDatabaseTable.DatabaseSyncedDatabaseTableConfig.property.databaseInstanceName">databaseInstanceName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/database_synced_database_table#database_instance_name DatabaseSyncedDatabaseTable#database_instance_name}. |
+| <code><a href="#@cdktn/provider-databricks.databaseSyncedDatabaseTable.DatabaseSyncedDatabaseTableConfig.property.logicalDatabaseName">logicalDatabaseName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/database_synced_database_table#logical_database_name DatabaseSyncedDatabaseTable#logical_database_name}. |
+| <code><a href="#@cdktn/provider-databricks.databaseSyncedDatabaseTable.DatabaseSyncedDatabaseTableConfig.property.providerConfig">providerConfig</a></code> | <code><a href="#@cdktn/provider-databricks.databaseSyncedDatabaseTable.DatabaseSyncedDatabaseTableProviderConfig">DatabaseSyncedDatabaseTableProviderConfig</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/database_synced_database_table#provider_config DatabaseSyncedDatabaseTable#provider_config}. |
+| <code><a href="#@cdktn/provider-databricks.databaseSyncedDatabaseTable.DatabaseSyncedDatabaseTableConfig.property.spec">spec</a></code> | <code><a href="#@cdktn/provider-databricks.databaseSyncedDatabaseTable.DatabaseSyncedDatabaseTableSpec">DatabaseSyncedDatabaseTableSpec</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/database_synced_database_table#spec DatabaseSyncedDatabaseTable#spec}. |
 
 ---
 
@@ -999,7 +999,7 @@ public readonly name: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/database_synced_database_table#name DatabaseSyncedDatabaseTable#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/database_synced_database_table#name DatabaseSyncedDatabaseTable#name}.
 
 ---
 
@@ -1011,7 +1011,7 @@ public readonly databaseInstanceName: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/database_synced_database_table#database_instance_name DatabaseSyncedDatabaseTable#database_instance_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/database_synced_database_table#database_instance_name DatabaseSyncedDatabaseTable#database_instance_name}.
 
 ---
 
@@ -1023,7 +1023,7 @@ public readonly logicalDatabaseName: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/database_synced_database_table#logical_database_name DatabaseSyncedDatabaseTable#logical_database_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/database_synced_database_table#logical_database_name DatabaseSyncedDatabaseTable#logical_database_name}.
 
 ---
 
@@ -1035,7 +1035,7 @@ public readonly providerConfig: DatabaseSyncedDatabaseTableProviderConfig;
 
 - *Type:* <a href="#@cdktn/provider-databricks.databaseSyncedDatabaseTable.DatabaseSyncedDatabaseTableProviderConfig">DatabaseSyncedDatabaseTableProviderConfig</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/database_synced_database_table#provider_config DatabaseSyncedDatabaseTable#provider_config}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/database_synced_database_table#provider_config DatabaseSyncedDatabaseTable#provider_config}.
 
 ---
 
@@ -1047,7 +1047,7 @@ public readonly spec: DatabaseSyncedDatabaseTableSpec;
 
 - *Type:* <a href="#@cdktn/provider-databricks.databaseSyncedDatabaseTable.DatabaseSyncedDatabaseTableSpec">DatabaseSyncedDatabaseTableSpec</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/database_synced_database_table#spec DatabaseSyncedDatabaseTable#spec}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/database_synced_database_table#spec DatabaseSyncedDatabaseTable#spec}.
 
 ---
 
@@ -1065,10 +1065,10 @@ const databaseSyncedDatabaseTableDataSynchronizationStatus: databaseSyncedDataba
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.databaseSyncedDatabaseTable.DatabaseSyncedDatabaseTableDataSynchronizationStatus.property.continuousUpdateStatus">continuousUpdateStatus</a></code> | <code><a href="#@cdktn/provider-databricks.databaseSyncedDatabaseTable.DatabaseSyncedDatabaseTableDataSynchronizationStatusContinuousUpdateStatus">DatabaseSyncedDatabaseTableDataSynchronizationStatusContinuousUpdateStatus</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/database_synced_database_table#continuous_update_status DatabaseSyncedDatabaseTable#continuous_update_status}. |
-| <code><a href="#@cdktn/provider-databricks.databaseSyncedDatabaseTable.DatabaseSyncedDatabaseTableDataSynchronizationStatus.property.failedStatus">failedStatus</a></code> | <code><a href="#@cdktn/provider-databricks.databaseSyncedDatabaseTable.DatabaseSyncedDatabaseTableDataSynchronizationStatusFailedStatus">DatabaseSyncedDatabaseTableDataSynchronizationStatusFailedStatus</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/database_synced_database_table#failed_status DatabaseSyncedDatabaseTable#failed_status}. |
-| <code><a href="#@cdktn/provider-databricks.databaseSyncedDatabaseTable.DatabaseSyncedDatabaseTableDataSynchronizationStatus.property.provisioningStatus">provisioningStatus</a></code> | <code><a href="#@cdktn/provider-databricks.databaseSyncedDatabaseTable.DatabaseSyncedDatabaseTableDataSynchronizationStatusProvisioningStatus">DatabaseSyncedDatabaseTableDataSynchronizationStatusProvisioningStatus</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/database_synced_database_table#provisioning_status DatabaseSyncedDatabaseTable#provisioning_status}. |
-| <code><a href="#@cdktn/provider-databricks.databaseSyncedDatabaseTable.DatabaseSyncedDatabaseTableDataSynchronizationStatus.property.triggeredUpdateStatus">triggeredUpdateStatus</a></code> | <code><a href="#@cdktn/provider-databricks.databaseSyncedDatabaseTable.DatabaseSyncedDatabaseTableDataSynchronizationStatusTriggeredUpdateStatus">DatabaseSyncedDatabaseTableDataSynchronizationStatusTriggeredUpdateStatus</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/database_synced_database_table#triggered_update_status DatabaseSyncedDatabaseTable#triggered_update_status}. |
+| <code><a href="#@cdktn/provider-databricks.databaseSyncedDatabaseTable.DatabaseSyncedDatabaseTableDataSynchronizationStatus.property.continuousUpdateStatus">continuousUpdateStatus</a></code> | <code><a href="#@cdktn/provider-databricks.databaseSyncedDatabaseTable.DatabaseSyncedDatabaseTableDataSynchronizationStatusContinuousUpdateStatus">DatabaseSyncedDatabaseTableDataSynchronizationStatusContinuousUpdateStatus</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/database_synced_database_table#continuous_update_status DatabaseSyncedDatabaseTable#continuous_update_status}. |
+| <code><a href="#@cdktn/provider-databricks.databaseSyncedDatabaseTable.DatabaseSyncedDatabaseTableDataSynchronizationStatus.property.failedStatus">failedStatus</a></code> | <code><a href="#@cdktn/provider-databricks.databaseSyncedDatabaseTable.DatabaseSyncedDatabaseTableDataSynchronizationStatusFailedStatus">DatabaseSyncedDatabaseTableDataSynchronizationStatusFailedStatus</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/database_synced_database_table#failed_status DatabaseSyncedDatabaseTable#failed_status}. |
+| <code><a href="#@cdktn/provider-databricks.databaseSyncedDatabaseTable.DatabaseSyncedDatabaseTableDataSynchronizationStatus.property.provisioningStatus">provisioningStatus</a></code> | <code><a href="#@cdktn/provider-databricks.databaseSyncedDatabaseTable.DatabaseSyncedDatabaseTableDataSynchronizationStatusProvisioningStatus">DatabaseSyncedDatabaseTableDataSynchronizationStatusProvisioningStatus</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/database_synced_database_table#provisioning_status DatabaseSyncedDatabaseTable#provisioning_status}. |
+| <code><a href="#@cdktn/provider-databricks.databaseSyncedDatabaseTable.DatabaseSyncedDatabaseTableDataSynchronizationStatus.property.triggeredUpdateStatus">triggeredUpdateStatus</a></code> | <code><a href="#@cdktn/provider-databricks.databaseSyncedDatabaseTable.DatabaseSyncedDatabaseTableDataSynchronizationStatusTriggeredUpdateStatus">DatabaseSyncedDatabaseTableDataSynchronizationStatusTriggeredUpdateStatus</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/database_synced_database_table#triggered_update_status DatabaseSyncedDatabaseTable#triggered_update_status}. |
 
 ---
 
@@ -1080,7 +1080,7 @@ public readonly continuousUpdateStatus: DatabaseSyncedDatabaseTableDataSynchroni
 
 - *Type:* <a href="#@cdktn/provider-databricks.databaseSyncedDatabaseTable.DatabaseSyncedDatabaseTableDataSynchronizationStatusContinuousUpdateStatus">DatabaseSyncedDatabaseTableDataSynchronizationStatusContinuousUpdateStatus</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/database_synced_database_table#continuous_update_status DatabaseSyncedDatabaseTable#continuous_update_status}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/database_synced_database_table#continuous_update_status DatabaseSyncedDatabaseTable#continuous_update_status}.
 
 ---
 
@@ -1092,7 +1092,7 @@ public readonly failedStatus: DatabaseSyncedDatabaseTableDataSynchronizationStat
 
 - *Type:* <a href="#@cdktn/provider-databricks.databaseSyncedDatabaseTable.DatabaseSyncedDatabaseTableDataSynchronizationStatusFailedStatus">DatabaseSyncedDatabaseTableDataSynchronizationStatusFailedStatus</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/database_synced_database_table#failed_status DatabaseSyncedDatabaseTable#failed_status}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/database_synced_database_table#failed_status DatabaseSyncedDatabaseTable#failed_status}.
 
 ---
 
@@ -1104,7 +1104,7 @@ public readonly provisioningStatus: DatabaseSyncedDatabaseTableDataSynchronizati
 
 - *Type:* <a href="#@cdktn/provider-databricks.databaseSyncedDatabaseTable.DatabaseSyncedDatabaseTableDataSynchronizationStatusProvisioningStatus">DatabaseSyncedDatabaseTableDataSynchronizationStatusProvisioningStatus</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/database_synced_database_table#provisioning_status DatabaseSyncedDatabaseTable#provisioning_status}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/database_synced_database_table#provisioning_status DatabaseSyncedDatabaseTable#provisioning_status}.
 
 ---
 
@@ -1116,7 +1116,7 @@ public readonly triggeredUpdateStatus: DatabaseSyncedDatabaseTableDataSynchroniz
 
 - *Type:* <a href="#@cdktn/provider-databricks.databaseSyncedDatabaseTable.DatabaseSyncedDatabaseTableDataSynchronizationStatusTriggeredUpdateStatus">DatabaseSyncedDatabaseTableDataSynchronizationStatusTriggeredUpdateStatus</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/database_synced_database_table#triggered_update_status DatabaseSyncedDatabaseTable#triggered_update_status}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/database_synced_database_table#triggered_update_status DatabaseSyncedDatabaseTable#triggered_update_status}.
 
 ---
 
@@ -1233,7 +1233,7 @@ const databaseSyncedDatabaseTableProviderConfig: databaseSyncedDatabaseTable.Dat
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.databaseSyncedDatabaseTable.DatabaseSyncedDatabaseTableProviderConfig.property.workspaceId">workspaceId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/database_synced_database_table#workspace_id DatabaseSyncedDatabaseTable#workspace_id}. |
+| <code><a href="#@cdktn/provider-databricks.databaseSyncedDatabaseTable.DatabaseSyncedDatabaseTableProviderConfig.property.workspaceId">workspaceId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/database_synced_database_table#workspace_id DatabaseSyncedDatabaseTable#workspace_id}. |
 
 ---
 
@@ -1245,7 +1245,7 @@ public readonly workspaceId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/database_synced_database_table#workspace_id DatabaseSyncedDatabaseTable#workspace_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/database_synced_database_table#workspace_id DatabaseSyncedDatabaseTable#workspace_id}.
 
 ---
 
@@ -1263,13 +1263,27 @@ const databaseSyncedDatabaseTableSpec: databaseSyncedDatabaseTable.DatabaseSynce
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.databaseSyncedDatabaseTable.DatabaseSyncedDatabaseTableSpec.property.createDatabaseObjectsIfMissing">createDatabaseObjectsIfMissing</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/database_synced_database_table#create_database_objects_if_missing DatabaseSyncedDatabaseTable#create_database_objects_if_missing}. |
-| <code><a href="#@cdktn/provider-databricks.databaseSyncedDatabaseTable.DatabaseSyncedDatabaseTableSpec.property.existingPipelineId">existingPipelineId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/database_synced_database_table#existing_pipeline_id DatabaseSyncedDatabaseTable#existing_pipeline_id}. |
-| <code><a href="#@cdktn/provider-databricks.databaseSyncedDatabaseTable.DatabaseSyncedDatabaseTableSpec.property.newPipelineSpec">newPipelineSpec</a></code> | <code><a href="#@cdktn/provider-databricks.databaseSyncedDatabaseTable.DatabaseSyncedDatabaseTableSpecNewPipelineSpec">DatabaseSyncedDatabaseTableSpecNewPipelineSpec</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/database_synced_database_table#new_pipeline_spec DatabaseSyncedDatabaseTable#new_pipeline_spec}. |
-| <code><a href="#@cdktn/provider-databricks.databaseSyncedDatabaseTable.DatabaseSyncedDatabaseTableSpec.property.primaryKeyColumns">primaryKeyColumns</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/database_synced_database_table#primary_key_columns DatabaseSyncedDatabaseTable#primary_key_columns}. |
-| <code><a href="#@cdktn/provider-databricks.databaseSyncedDatabaseTable.DatabaseSyncedDatabaseTableSpec.property.schedulingPolicy">schedulingPolicy</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/database_synced_database_table#scheduling_policy DatabaseSyncedDatabaseTable#scheduling_policy}. |
-| <code><a href="#@cdktn/provider-databricks.databaseSyncedDatabaseTable.DatabaseSyncedDatabaseTableSpec.property.sourceTableFullName">sourceTableFullName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/database_synced_database_table#source_table_full_name DatabaseSyncedDatabaseTable#source_table_full_name}. |
-| <code><a href="#@cdktn/provider-databricks.databaseSyncedDatabaseTable.DatabaseSyncedDatabaseTableSpec.property.timeseriesKey">timeseriesKey</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/database_synced_database_table#timeseries_key DatabaseSyncedDatabaseTable#timeseries_key}. |
+| <code><a href="#@cdktn/provider-databricks.databaseSyncedDatabaseTable.DatabaseSyncedDatabaseTableSpec.property.acceleratedSync">acceleratedSync</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/database_synced_database_table#accelerated_sync DatabaseSyncedDatabaseTable#accelerated_sync}. |
+| <code><a href="#@cdktn/provider-databricks.databaseSyncedDatabaseTable.DatabaseSyncedDatabaseTableSpec.property.createDatabaseObjectsIfMissing">createDatabaseObjectsIfMissing</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/database_synced_database_table#create_database_objects_if_missing DatabaseSyncedDatabaseTable#create_database_objects_if_missing}. |
+| <code><a href="#@cdktn/provider-databricks.databaseSyncedDatabaseTable.DatabaseSyncedDatabaseTableSpec.property.existingPipelineId">existingPipelineId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/database_synced_database_table#existing_pipeline_id DatabaseSyncedDatabaseTable#existing_pipeline_id}. |
+| <code><a href="#@cdktn/provider-databricks.databaseSyncedDatabaseTable.DatabaseSyncedDatabaseTableSpec.property.newPipelineSpec">newPipelineSpec</a></code> | <code><a href="#@cdktn/provider-databricks.databaseSyncedDatabaseTable.DatabaseSyncedDatabaseTableSpecNewPipelineSpec">DatabaseSyncedDatabaseTableSpecNewPipelineSpec</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/database_synced_database_table#new_pipeline_spec DatabaseSyncedDatabaseTable#new_pipeline_spec}. |
+| <code><a href="#@cdktn/provider-databricks.databaseSyncedDatabaseTable.DatabaseSyncedDatabaseTableSpec.property.primaryKeyColumns">primaryKeyColumns</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/database_synced_database_table#primary_key_columns DatabaseSyncedDatabaseTable#primary_key_columns}. |
+| <code><a href="#@cdktn/provider-databricks.databaseSyncedDatabaseTable.DatabaseSyncedDatabaseTableSpec.property.schedulingPolicy">schedulingPolicy</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/database_synced_database_table#scheduling_policy DatabaseSyncedDatabaseTable#scheduling_policy}. |
+| <code><a href="#@cdktn/provider-databricks.databaseSyncedDatabaseTable.DatabaseSyncedDatabaseTableSpec.property.sourceTableFullName">sourceTableFullName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/database_synced_database_table#source_table_full_name DatabaseSyncedDatabaseTable#source_table_full_name}. |
+| <code><a href="#@cdktn/provider-databricks.databaseSyncedDatabaseTable.DatabaseSyncedDatabaseTableSpec.property.timeseriesKey">timeseriesKey</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/database_synced_database_table#timeseries_key DatabaseSyncedDatabaseTable#timeseries_key}. |
+| <code><a href="#@cdktn/provider-databricks.databaseSyncedDatabaseTable.DatabaseSyncedDatabaseTableSpec.property.typeOverrides">typeOverrides</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-databricks.databaseSyncedDatabaseTable.DatabaseSyncedDatabaseTableSpecTypeOverrides">DatabaseSyncedDatabaseTableSpecTypeOverrides</a>[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/database_synced_database_table#type_overrides DatabaseSyncedDatabaseTable#type_overrides}. |
+
+---
+
+##### `acceleratedSync`<sup>Optional</sup> <a name="acceleratedSync" id="@cdktn/provider-databricks.databaseSyncedDatabaseTable.DatabaseSyncedDatabaseTableSpec.property.acceleratedSync"></a>
+
+```typescript
+public readonly acceleratedSync: boolean | IResolvable;
+```
+
+- *Type:* boolean | cdktn.IResolvable
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/database_synced_database_table#accelerated_sync DatabaseSyncedDatabaseTable#accelerated_sync}.
 
 ---
 
@@ -1281,7 +1295,7 @@ public readonly createDatabaseObjectsIfMissing: boolean | IResolvable;
 
 - *Type:* boolean | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/database_synced_database_table#create_database_objects_if_missing DatabaseSyncedDatabaseTable#create_database_objects_if_missing}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/database_synced_database_table#create_database_objects_if_missing DatabaseSyncedDatabaseTable#create_database_objects_if_missing}.
 
 ---
 
@@ -1293,7 +1307,7 @@ public readonly existingPipelineId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/database_synced_database_table#existing_pipeline_id DatabaseSyncedDatabaseTable#existing_pipeline_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/database_synced_database_table#existing_pipeline_id DatabaseSyncedDatabaseTable#existing_pipeline_id}.
 
 ---
 
@@ -1305,7 +1319,7 @@ public readonly newPipelineSpec: DatabaseSyncedDatabaseTableSpecNewPipelineSpec;
 
 - *Type:* <a href="#@cdktn/provider-databricks.databaseSyncedDatabaseTable.DatabaseSyncedDatabaseTableSpecNewPipelineSpec">DatabaseSyncedDatabaseTableSpecNewPipelineSpec</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/database_synced_database_table#new_pipeline_spec DatabaseSyncedDatabaseTable#new_pipeline_spec}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/database_synced_database_table#new_pipeline_spec DatabaseSyncedDatabaseTable#new_pipeline_spec}.
 
 ---
 
@@ -1317,7 +1331,7 @@ public readonly primaryKeyColumns: string[];
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/database_synced_database_table#primary_key_columns DatabaseSyncedDatabaseTable#primary_key_columns}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/database_synced_database_table#primary_key_columns DatabaseSyncedDatabaseTable#primary_key_columns}.
 
 ---
 
@@ -1329,7 +1343,7 @@ public readonly schedulingPolicy: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/database_synced_database_table#scheduling_policy DatabaseSyncedDatabaseTable#scheduling_policy}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/database_synced_database_table#scheduling_policy DatabaseSyncedDatabaseTable#scheduling_policy}.
 
 ---
 
@@ -1341,7 +1355,7 @@ public readonly sourceTableFullName: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/database_synced_database_table#source_table_full_name DatabaseSyncedDatabaseTable#source_table_full_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/database_synced_database_table#source_table_full_name DatabaseSyncedDatabaseTable#source_table_full_name}.
 
 ---
 
@@ -1353,7 +1367,19 @@ public readonly timeseriesKey: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/database_synced_database_table#timeseries_key DatabaseSyncedDatabaseTable#timeseries_key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/database_synced_database_table#timeseries_key DatabaseSyncedDatabaseTable#timeseries_key}.
+
+---
+
+##### `typeOverrides`<sup>Optional</sup> <a name="typeOverrides" id="@cdktn/provider-databricks.databaseSyncedDatabaseTable.DatabaseSyncedDatabaseTableSpec.property.typeOverrides"></a>
+
+```typescript
+public readonly typeOverrides: IResolvable | DatabaseSyncedDatabaseTableSpecTypeOverrides[];
+```
+
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-databricks.databaseSyncedDatabaseTable.DatabaseSyncedDatabaseTableSpecTypeOverrides">DatabaseSyncedDatabaseTableSpecTypeOverrides</a>[]
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/database_synced_database_table#type_overrides DatabaseSyncedDatabaseTable#type_overrides}.
 
 ---
 
@@ -1371,9 +1397,9 @@ const databaseSyncedDatabaseTableSpecNewPipelineSpec: databaseSyncedDatabaseTabl
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.databaseSyncedDatabaseTable.DatabaseSyncedDatabaseTableSpecNewPipelineSpec.property.budgetPolicyId">budgetPolicyId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/database_synced_database_table#budget_policy_id DatabaseSyncedDatabaseTable#budget_policy_id}. |
-| <code><a href="#@cdktn/provider-databricks.databaseSyncedDatabaseTable.DatabaseSyncedDatabaseTableSpecNewPipelineSpec.property.storageCatalog">storageCatalog</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/database_synced_database_table#storage_catalog DatabaseSyncedDatabaseTable#storage_catalog}. |
-| <code><a href="#@cdktn/provider-databricks.databaseSyncedDatabaseTable.DatabaseSyncedDatabaseTableSpecNewPipelineSpec.property.storageSchema">storageSchema</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/database_synced_database_table#storage_schema DatabaseSyncedDatabaseTable#storage_schema}. |
+| <code><a href="#@cdktn/provider-databricks.databaseSyncedDatabaseTable.DatabaseSyncedDatabaseTableSpecNewPipelineSpec.property.budgetPolicyId">budgetPolicyId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/database_synced_database_table#budget_policy_id DatabaseSyncedDatabaseTable#budget_policy_id}. |
+| <code><a href="#@cdktn/provider-databricks.databaseSyncedDatabaseTable.DatabaseSyncedDatabaseTableSpecNewPipelineSpec.property.storageCatalog">storageCatalog</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/database_synced_database_table#storage_catalog DatabaseSyncedDatabaseTable#storage_catalog}. |
+| <code><a href="#@cdktn/provider-databricks.databaseSyncedDatabaseTable.DatabaseSyncedDatabaseTableSpecNewPipelineSpec.property.storageSchema">storageSchema</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/database_synced_database_table#storage_schema DatabaseSyncedDatabaseTable#storage_schema}. |
 
 ---
 
@@ -1385,7 +1411,7 @@ public readonly budgetPolicyId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/database_synced_database_table#budget_policy_id DatabaseSyncedDatabaseTable#budget_policy_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/database_synced_database_table#budget_policy_id DatabaseSyncedDatabaseTable#budget_policy_id}.
 
 ---
 
@@ -1397,7 +1423,7 @@ public readonly storageCatalog: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/database_synced_database_table#storage_catalog DatabaseSyncedDatabaseTable#storage_catalog}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/database_synced_database_table#storage_catalog DatabaseSyncedDatabaseTable#storage_catalog}.
 
 ---
 
@@ -1409,7 +1435,63 @@ public readonly storageSchema: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/database_synced_database_table#storage_schema DatabaseSyncedDatabaseTable#storage_schema}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/database_synced_database_table#storage_schema DatabaseSyncedDatabaseTable#storage_schema}.
+
+---
+
+### DatabaseSyncedDatabaseTableSpecTypeOverrides <a name="DatabaseSyncedDatabaseTableSpecTypeOverrides" id="@cdktn/provider-databricks.databaseSyncedDatabaseTable.DatabaseSyncedDatabaseTableSpecTypeOverrides"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-databricks.databaseSyncedDatabaseTable.DatabaseSyncedDatabaseTableSpecTypeOverrides.Initializer"></a>
+
+```typescript
+import { databaseSyncedDatabaseTable } from '@cdktn/provider-databricks'
+
+const databaseSyncedDatabaseTableSpecTypeOverrides: databaseSyncedDatabaseTable.DatabaseSyncedDatabaseTableSpecTypeOverrides = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-databricks.databaseSyncedDatabaseTable.DatabaseSyncedDatabaseTableSpecTypeOverrides.property.columnName">columnName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/database_synced_database_table#column_name DatabaseSyncedDatabaseTable#column_name}. |
+| <code><a href="#@cdktn/provider-databricks.databaseSyncedDatabaseTable.DatabaseSyncedDatabaseTableSpecTypeOverrides.property.pgType">pgType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/database_synced_database_table#pg_type DatabaseSyncedDatabaseTable#pg_type}. |
+| <code><a href="#@cdktn/provider-databricks.databaseSyncedDatabaseTable.DatabaseSyncedDatabaseTableSpecTypeOverrides.property.size">size</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/database_synced_database_table#size DatabaseSyncedDatabaseTable#size}. |
+
+---
+
+##### `columnName`<sup>Required</sup> <a name="columnName" id="@cdktn/provider-databricks.databaseSyncedDatabaseTable.DatabaseSyncedDatabaseTableSpecTypeOverrides.property.columnName"></a>
+
+```typescript
+public readonly columnName: string;
+```
+
+- *Type:* string
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/database_synced_database_table#column_name DatabaseSyncedDatabaseTable#column_name}.
+
+---
+
+##### `pgType`<sup>Required</sup> <a name="pgType" id="@cdktn/provider-databricks.databaseSyncedDatabaseTable.DatabaseSyncedDatabaseTableSpecTypeOverrides.property.pgType"></a>
+
+```typescript
+public readonly pgType: string;
+```
+
+- *Type:* string
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/database_synced_database_table#pg_type DatabaseSyncedDatabaseTable#pg_type}.
+
+---
+
+##### `size`<sup>Optional</sup> <a name="size" id="@cdktn/provider-databricks.databaseSyncedDatabaseTable.DatabaseSyncedDatabaseTableSpecTypeOverrides.property.size"></a>
+
+```typescript
+public readonly size: number;
+```
+
+- *Type:* number
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/database_synced_database_table#size DatabaseSyncedDatabaseTable#size}.
 
 ---
 
@@ -5134,6 +5216,8 @@ The attribute on the parent resource this class is referencing.
 | <code><a href="#@cdktn/provider-databricks.databaseSyncedDatabaseTable.DatabaseSyncedDatabaseTableSpecOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktn/provider-databricks.databaseSyncedDatabaseTable.DatabaseSyncedDatabaseTableSpecOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktn/provider-databricks.databaseSyncedDatabaseTable.DatabaseSyncedDatabaseTableSpecOutputReference.putNewPipelineSpec">putNewPipelineSpec</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.databaseSyncedDatabaseTable.DatabaseSyncedDatabaseTableSpecOutputReference.putTypeOverrides">putTypeOverrides</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.databaseSyncedDatabaseTable.DatabaseSyncedDatabaseTableSpecOutputReference.resetAcceleratedSync">resetAcceleratedSync</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.databaseSyncedDatabaseTable.DatabaseSyncedDatabaseTableSpecOutputReference.resetCreateDatabaseObjectsIfMissing">resetCreateDatabaseObjectsIfMissing</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.databaseSyncedDatabaseTable.DatabaseSyncedDatabaseTableSpecOutputReference.resetExistingPipelineId">resetExistingPipelineId</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.databaseSyncedDatabaseTable.DatabaseSyncedDatabaseTableSpecOutputReference.resetNewPipelineSpec">resetNewPipelineSpec</a></code> | *No description.* |
@@ -5141,6 +5225,7 @@ The attribute on the parent resource this class is referencing.
 | <code><a href="#@cdktn/provider-databricks.databaseSyncedDatabaseTable.DatabaseSyncedDatabaseTableSpecOutputReference.resetSchedulingPolicy">resetSchedulingPolicy</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.databaseSyncedDatabaseTable.DatabaseSyncedDatabaseTableSpecOutputReference.resetSourceTableFullName">resetSourceTableFullName</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.databaseSyncedDatabaseTable.DatabaseSyncedDatabaseTableSpecOutputReference.resetTimeseriesKey">resetTimeseriesKey</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.databaseSyncedDatabaseTable.DatabaseSyncedDatabaseTableSpecOutputReference.resetTypeOverrides">resetTypeOverrides</a></code> | *No description.* |
 
 ---
 
@@ -5306,6 +5391,24 @@ public putNewPipelineSpec(value: DatabaseSyncedDatabaseTableSpecNewPipelineSpec)
 
 ---
 
+##### `putTypeOverrides` <a name="putTypeOverrides" id="@cdktn/provider-databricks.databaseSyncedDatabaseTable.DatabaseSyncedDatabaseTableSpecOutputReference.putTypeOverrides"></a>
+
+```typescript
+public putTypeOverrides(value: IResolvable | DatabaseSyncedDatabaseTableSpecTypeOverrides[]): void
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-databricks.databaseSyncedDatabaseTable.DatabaseSyncedDatabaseTableSpecOutputReference.putTypeOverrides.parameter.value"></a>
+
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-databricks.databaseSyncedDatabaseTable.DatabaseSyncedDatabaseTableSpecTypeOverrides">DatabaseSyncedDatabaseTableSpecTypeOverrides</a>[]
+
+---
+
+##### `resetAcceleratedSync` <a name="resetAcceleratedSync" id="@cdktn/provider-databricks.databaseSyncedDatabaseTable.DatabaseSyncedDatabaseTableSpecOutputReference.resetAcceleratedSync"></a>
+
+```typescript
+public resetAcceleratedSync(): void
+```
+
 ##### `resetCreateDatabaseObjectsIfMissing` <a name="resetCreateDatabaseObjectsIfMissing" id="@cdktn/provider-databricks.databaseSyncedDatabaseTable.DatabaseSyncedDatabaseTableSpecOutputReference.resetCreateDatabaseObjectsIfMissing"></a>
 
 ```typescript
@@ -5348,6 +5451,12 @@ public resetSourceTableFullName(): void
 public resetTimeseriesKey(): void
 ```
 
+##### `resetTypeOverrides` <a name="resetTypeOverrides" id="@cdktn/provider-databricks.databaseSyncedDatabaseTable.DatabaseSyncedDatabaseTableSpecOutputReference.resetTypeOverrides"></a>
+
+```typescript
+public resetTypeOverrides(): void
+```
+
 
 #### Properties <a name="Properties" id="Properties"></a>
 
@@ -5356,6 +5465,8 @@ public resetTimeseriesKey(): void
 | <code><a href="#@cdktn/provider-databricks.databaseSyncedDatabaseTable.DatabaseSyncedDatabaseTableSpecOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-databricks.databaseSyncedDatabaseTable.DatabaseSyncedDatabaseTableSpecOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.databaseSyncedDatabaseTable.DatabaseSyncedDatabaseTableSpecOutputReference.property.newPipelineSpec">newPipelineSpec</a></code> | <code><a href="#@cdktn/provider-databricks.databaseSyncedDatabaseTable.DatabaseSyncedDatabaseTableSpecNewPipelineSpecOutputReference">DatabaseSyncedDatabaseTableSpecNewPipelineSpecOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.databaseSyncedDatabaseTable.DatabaseSyncedDatabaseTableSpecOutputReference.property.typeOverrides">typeOverrides</a></code> | <code><a href="#@cdktn/provider-databricks.databaseSyncedDatabaseTable.DatabaseSyncedDatabaseTableSpecTypeOverridesList">DatabaseSyncedDatabaseTableSpecTypeOverridesList</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.databaseSyncedDatabaseTable.DatabaseSyncedDatabaseTableSpecOutputReference.property.acceleratedSyncInput">acceleratedSyncInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.databaseSyncedDatabaseTable.DatabaseSyncedDatabaseTableSpecOutputReference.property.createDatabaseObjectsIfMissingInput">createDatabaseObjectsIfMissingInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.databaseSyncedDatabaseTable.DatabaseSyncedDatabaseTableSpecOutputReference.property.existingPipelineIdInput">existingPipelineIdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.databaseSyncedDatabaseTable.DatabaseSyncedDatabaseTableSpecOutputReference.property.newPipelineSpecInput">newPipelineSpecInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-databricks.databaseSyncedDatabaseTable.DatabaseSyncedDatabaseTableSpecNewPipelineSpec">DatabaseSyncedDatabaseTableSpecNewPipelineSpec</a></code> | *No description.* |
@@ -5363,6 +5474,8 @@ public resetTimeseriesKey(): void
 | <code><a href="#@cdktn/provider-databricks.databaseSyncedDatabaseTable.DatabaseSyncedDatabaseTableSpecOutputReference.property.schedulingPolicyInput">schedulingPolicyInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.databaseSyncedDatabaseTable.DatabaseSyncedDatabaseTableSpecOutputReference.property.sourceTableFullNameInput">sourceTableFullNameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.databaseSyncedDatabaseTable.DatabaseSyncedDatabaseTableSpecOutputReference.property.timeseriesKeyInput">timeseriesKeyInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.databaseSyncedDatabaseTable.DatabaseSyncedDatabaseTableSpecOutputReference.property.typeOverridesInput">typeOverridesInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-databricks.databaseSyncedDatabaseTable.DatabaseSyncedDatabaseTableSpecTypeOverrides">DatabaseSyncedDatabaseTableSpecTypeOverrides</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.databaseSyncedDatabaseTable.DatabaseSyncedDatabaseTableSpecOutputReference.property.acceleratedSync">acceleratedSync</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.databaseSyncedDatabaseTable.DatabaseSyncedDatabaseTableSpecOutputReference.property.createDatabaseObjectsIfMissing">createDatabaseObjectsIfMissing</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.databaseSyncedDatabaseTable.DatabaseSyncedDatabaseTableSpecOutputReference.property.existingPipelineId">existingPipelineId</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.databaseSyncedDatabaseTable.DatabaseSyncedDatabaseTableSpecOutputReference.property.primaryKeyColumns">primaryKeyColumns</a></code> | <code>string[]</code> | *No description.* |
@@ -5404,6 +5517,26 @@ public readonly newPipelineSpec: DatabaseSyncedDatabaseTableSpecNewPipelineSpecO
 ```
 
 - *Type:* <a href="#@cdktn/provider-databricks.databaseSyncedDatabaseTable.DatabaseSyncedDatabaseTableSpecNewPipelineSpecOutputReference">DatabaseSyncedDatabaseTableSpecNewPipelineSpecOutputReference</a>
+
+---
+
+##### `typeOverrides`<sup>Required</sup> <a name="typeOverrides" id="@cdktn/provider-databricks.databaseSyncedDatabaseTable.DatabaseSyncedDatabaseTableSpecOutputReference.property.typeOverrides"></a>
+
+```typescript
+public readonly typeOverrides: DatabaseSyncedDatabaseTableSpecTypeOverridesList;
+```
+
+- *Type:* <a href="#@cdktn/provider-databricks.databaseSyncedDatabaseTable.DatabaseSyncedDatabaseTableSpecTypeOverridesList">DatabaseSyncedDatabaseTableSpecTypeOverridesList</a>
+
+---
+
+##### `acceleratedSyncInput`<sup>Optional</sup> <a name="acceleratedSyncInput" id="@cdktn/provider-databricks.databaseSyncedDatabaseTable.DatabaseSyncedDatabaseTableSpecOutputReference.property.acceleratedSyncInput"></a>
+
+```typescript
+public readonly acceleratedSyncInput: boolean | IResolvable;
+```
+
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -5477,6 +5610,26 @@ public readonly timeseriesKeyInput: string;
 
 ---
 
+##### `typeOverridesInput`<sup>Optional</sup> <a name="typeOverridesInput" id="@cdktn/provider-databricks.databaseSyncedDatabaseTable.DatabaseSyncedDatabaseTableSpecOutputReference.property.typeOverridesInput"></a>
+
+```typescript
+public readonly typeOverridesInput: IResolvable | DatabaseSyncedDatabaseTableSpecTypeOverrides[];
+```
+
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-databricks.databaseSyncedDatabaseTable.DatabaseSyncedDatabaseTableSpecTypeOverrides">DatabaseSyncedDatabaseTableSpecTypeOverrides</a>[]
+
+---
+
+##### `acceleratedSync`<sup>Required</sup> <a name="acceleratedSync" id="@cdktn/provider-databricks.databaseSyncedDatabaseTable.DatabaseSyncedDatabaseTableSpecOutputReference.property.acceleratedSync"></a>
+
+```typescript
+public readonly acceleratedSync: boolean | IResolvable;
+```
+
+- *Type:* boolean | cdktn.IResolvable
+
+---
+
 ##### `createDatabaseObjectsIfMissing`<sup>Required</sup> <a name="createDatabaseObjectsIfMissing" id="@cdktn/provider-databricks.databaseSyncedDatabaseTable.DatabaseSyncedDatabaseTableSpecOutputReference.property.createDatabaseObjectsIfMissing"></a>
 
 ```typescript
@@ -5544,6 +5697,506 @@ public readonly internalValue: IResolvable | DatabaseSyncedDatabaseTableSpec;
 ```
 
 - *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-databricks.databaseSyncedDatabaseTable.DatabaseSyncedDatabaseTableSpec">DatabaseSyncedDatabaseTableSpec</a>
+
+---
+
+
+### DatabaseSyncedDatabaseTableSpecTypeOverridesList <a name="DatabaseSyncedDatabaseTableSpecTypeOverridesList" id="@cdktn/provider-databricks.databaseSyncedDatabaseTable.DatabaseSyncedDatabaseTableSpecTypeOverridesList"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-databricks.databaseSyncedDatabaseTable.DatabaseSyncedDatabaseTableSpecTypeOverridesList.Initializer"></a>
+
+```typescript
+import { databaseSyncedDatabaseTable } from '@cdktn/provider-databricks'
+
+new databaseSyncedDatabaseTable.DatabaseSyncedDatabaseTableSpecTypeOverridesList(terraformResource: IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-databricks.databaseSyncedDatabaseTable.DatabaseSyncedDatabaseTableSpecTypeOverridesList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-databricks.databaseSyncedDatabaseTable.DatabaseSyncedDatabaseTableSpecTypeOverridesList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-databricks.databaseSyncedDatabaseTable.DatabaseSyncedDatabaseTableSpecTypeOverridesList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-databricks.databaseSyncedDatabaseTable.DatabaseSyncedDatabaseTableSpecTypeOverridesList.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.databaseSyncedDatabaseTable.DatabaseSyncedDatabaseTableSpecTypeOverridesList.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `wrapsSet`<sup>Required</sup> <a name="wrapsSet" id="@cdktn/provider-databricks.databaseSyncedDatabaseTable.DatabaseSyncedDatabaseTableSpecTypeOverridesList.Initializer.parameter.wrapsSet"></a>
+
+- *Type:* boolean
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-databricks.databaseSyncedDatabaseTable.DatabaseSyncedDatabaseTableSpecTypeOverridesList.allWithMapKey">allWithMapKey</a></code> | Creating an iterator for this complex list. |
+| <code><a href="#@cdktn/provider-databricks.databaseSyncedDatabaseTable.DatabaseSyncedDatabaseTableSpecTypeOverridesList.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.databaseSyncedDatabaseTable.DatabaseSyncedDatabaseTableSpecTypeOverridesList.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-databricks.databaseSyncedDatabaseTable.DatabaseSyncedDatabaseTableSpecTypeOverridesList.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-databricks.databaseSyncedDatabaseTable.DatabaseSyncedDatabaseTableSpecTypeOverridesList.get">get</a></code> | *No description.* |
+
+---
+
+##### `allWithMapKey` <a name="allWithMapKey" id="@cdktn/provider-databricks.databaseSyncedDatabaseTable.DatabaseSyncedDatabaseTableSpecTypeOverridesList.allWithMapKey"></a>
+
+```typescript
+public allWithMapKey(mapKeyAttributeName: string): DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktn/provider-databricks.databaseSyncedDatabaseTable.DatabaseSyncedDatabaseTableSpecTypeOverridesList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* string
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-databricks.databaseSyncedDatabaseTable.DatabaseSyncedDatabaseTableSpecTypeOverridesList.computeFqn"></a>
+
+```typescript
+public computeFqn(): string
+```
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-databricks.databaseSyncedDatabaseTable.DatabaseSyncedDatabaseTableSpecTypeOverridesList.resolve"></a>
+
+```typescript
+public resolve(_context: IResolveContext): any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-databricks.databaseSyncedDatabaseTable.DatabaseSyncedDatabaseTableSpecTypeOverridesList.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktn/provider-databricks.databaseSyncedDatabaseTable.DatabaseSyncedDatabaseTableSpecTypeOverridesList.toString"></a>
+
+```typescript
+public toString(): string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `get` <a name="get" id="@cdktn/provider-databricks.databaseSyncedDatabaseTable.DatabaseSyncedDatabaseTableSpecTypeOverridesList.get"></a>
+
+```typescript
+public get(index: number): DatabaseSyncedDatabaseTableSpecTypeOverridesOutputReference
+```
+
+###### `index`<sup>Required</sup> <a name="index" id="@cdktn/provider-databricks.databaseSyncedDatabaseTable.DatabaseSyncedDatabaseTableSpecTypeOverridesList.get.parameter.index"></a>
+
+- *Type:* number
+
+the index of the item to return.
+
+---
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-databricks.databaseSyncedDatabaseTable.DatabaseSyncedDatabaseTableSpecTypeOverridesList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-databricks.databaseSyncedDatabaseTable.DatabaseSyncedDatabaseTableSpecTypeOverridesList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.databaseSyncedDatabaseTable.DatabaseSyncedDatabaseTableSpecTypeOverridesList.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-databricks.databaseSyncedDatabaseTable.DatabaseSyncedDatabaseTableSpecTypeOverrides">DatabaseSyncedDatabaseTableSpecTypeOverrides</a>[]</code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-databricks.databaseSyncedDatabaseTable.DatabaseSyncedDatabaseTableSpecTypeOverridesList.property.creationStack"></a>
+
+```typescript
+public readonly creationStack: string[];
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-databricks.databaseSyncedDatabaseTable.DatabaseSyncedDatabaseTableSpecTypeOverridesList.property.fqn"></a>
+
+```typescript
+public readonly fqn: string;
+```
+
+- *Type:* string
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-databricks.databaseSyncedDatabaseTable.DatabaseSyncedDatabaseTableSpecTypeOverridesList.property.internalValue"></a>
+
+```typescript
+public readonly internalValue: IResolvable | DatabaseSyncedDatabaseTableSpecTypeOverrides[];
+```
+
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-databricks.databaseSyncedDatabaseTable.DatabaseSyncedDatabaseTableSpecTypeOverrides">DatabaseSyncedDatabaseTableSpecTypeOverrides</a>[]
+
+---
+
+
+### DatabaseSyncedDatabaseTableSpecTypeOverridesOutputReference <a name="DatabaseSyncedDatabaseTableSpecTypeOverridesOutputReference" id="@cdktn/provider-databricks.databaseSyncedDatabaseTable.DatabaseSyncedDatabaseTableSpecTypeOverridesOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-databricks.databaseSyncedDatabaseTable.DatabaseSyncedDatabaseTableSpecTypeOverridesOutputReference.Initializer"></a>
+
+```typescript
+import { databaseSyncedDatabaseTable } from '@cdktn/provider-databricks'
+
+new databaseSyncedDatabaseTable.DatabaseSyncedDatabaseTableSpecTypeOverridesOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-databricks.databaseSyncedDatabaseTable.DatabaseSyncedDatabaseTableSpecTypeOverridesOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-databricks.databaseSyncedDatabaseTable.DatabaseSyncedDatabaseTableSpecTypeOverridesOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-databricks.databaseSyncedDatabaseTable.DatabaseSyncedDatabaseTableSpecTypeOverridesOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
+| <code><a href="#@cdktn/provider-databricks.databaseSyncedDatabaseTable.DatabaseSyncedDatabaseTableSpecTypeOverridesOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-databricks.databaseSyncedDatabaseTable.DatabaseSyncedDatabaseTableSpecTypeOverridesOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.databaseSyncedDatabaseTable.DatabaseSyncedDatabaseTableSpecTypeOverridesOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complexObjectIndex`<sup>Required</sup> <a name="complexObjectIndex" id="@cdktn/provider-databricks.databaseSyncedDatabaseTable.DatabaseSyncedDatabaseTableSpecTypeOverridesOutputReference.Initializer.parameter.complexObjectIndex"></a>
+
+- *Type:* number
+
+the index of this item in the list.
+
+---
+
+##### `complexObjectIsFromSet`<sup>Required</sup> <a name="complexObjectIsFromSet" id="@cdktn/provider-databricks.databaseSyncedDatabaseTable.DatabaseSyncedDatabaseTableSpecTypeOverridesOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* boolean
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-databricks.databaseSyncedDatabaseTable.DatabaseSyncedDatabaseTableSpecTypeOverridesOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.databaseSyncedDatabaseTable.DatabaseSyncedDatabaseTableSpecTypeOverridesOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.databaseSyncedDatabaseTable.DatabaseSyncedDatabaseTableSpecTypeOverridesOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.databaseSyncedDatabaseTable.DatabaseSyncedDatabaseTableSpecTypeOverridesOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.databaseSyncedDatabaseTable.DatabaseSyncedDatabaseTableSpecTypeOverridesOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.databaseSyncedDatabaseTable.DatabaseSyncedDatabaseTableSpecTypeOverridesOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.databaseSyncedDatabaseTable.DatabaseSyncedDatabaseTableSpecTypeOverridesOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.databaseSyncedDatabaseTable.DatabaseSyncedDatabaseTableSpecTypeOverridesOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.databaseSyncedDatabaseTable.DatabaseSyncedDatabaseTableSpecTypeOverridesOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.databaseSyncedDatabaseTable.DatabaseSyncedDatabaseTableSpecTypeOverridesOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.databaseSyncedDatabaseTable.DatabaseSyncedDatabaseTableSpecTypeOverridesOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.databaseSyncedDatabaseTable.DatabaseSyncedDatabaseTableSpecTypeOverridesOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-databricks.databaseSyncedDatabaseTable.DatabaseSyncedDatabaseTableSpecTypeOverridesOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-databricks.databaseSyncedDatabaseTable.DatabaseSyncedDatabaseTableSpecTypeOverridesOutputReference.resetSize">resetSize</a></code> | *No description.* |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-databricks.databaseSyncedDatabaseTable.DatabaseSyncedDatabaseTableSpecTypeOverridesOutputReference.computeFqn"></a>
+
+```typescript
+public computeFqn(): string
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktn/provider-databricks.databaseSyncedDatabaseTable.DatabaseSyncedDatabaseTableSpecTypeOverridesOutputReference.getAnyMapAttribute"></a>
+
+```typescript
+public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.databaseSyncedDatabaseTable.DatabaseSyncedDatabaseTableSpecTypeOverridesOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktn/provider-databricks.databaseSyncedDatabaseTable.DatabaseSyncedDatabaseTableSpecTypeOverridesOutputReference.getBooleanAttribute"></a>
+
+```typescript
+public getBooleanAttribute(terraformAttribute: string): IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.databaseSyncedDatabaseTable.DatabaseSyncedDatabaseTableSpecTypeOverridesOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktn/provider-databricks.databaseSyncedDatabaseTable.DatabaseSyncedDatabaseTableSpecTypeOverridesOutputReference.getBooleanMapAttribute"></a>
+
+```typescript
+public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.databaseSyncedDatabaseTable.DatabaseSyncedDatabaseTableSpecTypeOverridesOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktn/provider-databricks.databaseSyncedDatabaseTable.DatabaseSyncedDatabaseTableSpecTypeOverridesOutputReference.getListAttribute"></a>
+
+```typescript
+public getListAttribute(terraformAttribute: string): string[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.databaseSyncedDatabaseTable.DatabaseSyncedDatabaseTableSpecTypeOverridesOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktn/provider-databricks.databaseSyncedDatabaseTable.DatabaseSyncedDatabaseTableSpecTypeOverridesOutputReference.getNumberAttribute"></a>
+
+```typescript
+public getNumberAttribute(terraformAttribute: string): number
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.databaseSyncedDatabaseTable.DatabaseSyncedDatabaseTableSpecTypeOverridesOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktn/provider-databricks.databaseSyncedDatabaseTable.DatabaseSyncedDatabaseTableSpecTypeOverridesOutputReference.getNumberListAttribute"></a>
+
+```typescript
+public getNumberListAttribute(terraformAttribute: string): number[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.databaseSyncedDatabaseTable.DatabaseSyncedDatabaseTableSpecTypeOverridesOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktn/provider-databricks.databaseSyncedDatabaseTable.DatabaseSyncedDatabaseTableSpecTypeOverridesOutputReference.getNumberMapAttribute"></a>
+
+```typescript
+public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.databaseSyncedDatabaseTable.DatabaseSyncedDatabaseTableSpecTypeOverridesOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktn/provider-databricks.databaseSyncedDatabaseTable.DatabaseSyncedDatabaseTableSpecTypeOverridesOutputReference.getStringAttribute"></a>
+
+```typescript
+public getStringAttribute(terraformAttribute: string): string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.databaseSyncedDatabaseTable.DatabaseSyncedDatabaseTableSpecTypeOverridesOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktn/provider-databricks.databaseSyncedDatabaseTable.DatabaseSyncedDatabaseTableSpecTypeOverridesOutputReference.getStringMapAttribute"></a>
+
+```typescript
+public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.databaseSyncedDatabaseTable.DatabaseSyncedDatabaseTableSpecTypeOverridesOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktn/provider-databricks.databaseSyncedDatabaseTable.DatabaseSyncedDatabaseTableSpecTypeOverridesOutputReference.interpolationForAttribute"></a>
+
+```typescript
+public interpolationForAttribute(property: string): IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-databricks.databaseSyncedDatabaseTable.DatabaseSyncedDatabaseTableSpecTypeOverridesOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* string
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-databricks.databaseSyncedDatabaseTable.DatabaseSyncedDatabaseTableSpecTypeOverridesOutputReference.resolve"></a>
+
+```typescript
+public resolve(_context: IResolveContext): any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-databricks.databaseSyncedDatabaseTable.DatabaseSyncedDatabaseTableSpecTypeOverridesOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktn/provider-databricks.databaseSyncedDatabaseTable.DatabaseSyncedDatabaseTableSpecTypeOverridesOutputReference.toString"></a>
+
+```typescript
+public toString(): string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `resetSize` <a name="resetSize" id="@cdktn/provider-databricks.databaseSyncedDatabaseTable.DatabaseSyncedDatabaseTableSpecTypeOverridesOutputReference.resetSize"></a>
+
+```typescript
+public resetSize(): void
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-databricks.databaseSyncedDatabaseTable.DatabaseSyncedDatabaseTableSpecTypeOverridesOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-databricks.databaseSyncedDatabaseTable.DatabaseSyncedDatabaseTableSpecTypeOverridesOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.databaseSyncedDatabaseTable.DatabaseSyncedDatabaseTableSpecTypeOverridesOutputReference.property.columnNameInput">columnNameInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.databaseSyncedDatabaseTable.DatabaseSyncedDatabaseTableSpecTypeOverridesOutputReference.property.pgTypeInput">pgTypeInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.databaseSyncedDatabaseTable.DatabaseSyncedDatabaseTableSpecTypeOverridesOutputReference.property.sizeInput">sizeInput</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.databaseSyncedDatabaseTable.DatabaseSyncedDatabaseTableSpecTypeOverridesOutputReference.property.columnName">columnName</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.databaseSyncedDatabaseTable.DatabaseSyncedDatabaseTableSpecTypeOverridesOutputReference.property.pgType">pgType</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.databaseSyncedDatabaseTable.DatabaseSyncedDatabaseTableSpecTypeOverridesOutputReference.property.size">size</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.databaseSyncedDatabaseTable.DatabaseSyncedDatabaseTableSpecTypeOverridesOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-databricks.databaseSyncedDatabaseTable.DatabaseSyncedDatabaseTableSpecTypeOverrides">DatabaseSyncedDatabaseTableSpecTypeOverrides</a></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-databricks.databaseSyncedDatabaseTable.DatabaseSyncedDatabaseTableSpecTypeOverridesOutputReference.property.creationStack"></a>
+
+```typescript
+public readonly creationStack: string[];
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-databricks.databaseSyncedDatabaseTable.DatabaseSyncedDatabaseTableSpecTypeOverridesOutputReference.property.fqn"></a>
+
+```typescript
+public readonly fqn: string;
+```
+
+- *Type:* string
+
+---
+
+##### `columnNameInput`<sup>Optional</sup> <a name="columnNameInput" id="@cdktn/provider-databricks.databaseSyncedDatabaseTable.DatabaseSyncedDatabaseTableSpecTypeOverridesOutputReference.property.columnNameInput"></a>
+
+```typescript
+public readonly columnNameInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `pgTypeInput`<sup>Optional</sup> <a name="pgTypeInput" id="@cdktn/provider-databricks.databaseSyncedDatabaseTable.DatabaseSyncedDatabaseTableSpecTypeOverridesOutputReference.property.pgTypeInput"></a>
+
+```typescript
+public readonly pgTypeInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `sizeInput`<sup>Optional</sup> <a name="sizeInput" id="@cdktn/provider-databricks.databaseSyncedDatabaseTable.DatabaseSyncedDatabaseTableSpecTypeOverridesOutputReference.property.sizeInput"></a>
+
+```typescript
+public readonly sizeInput: number;
+```
+
+- *Type:* number
+
+---
+
+##### `columnName`<sup>Required</sup> <a name="columnName" id="@cdktn/provider-databricks.databaseSyncedDatabaseTable.DatabaseSyncedDatabaseTableSpecTypeOverridesOutputReference.property.columnName"></a>
+
+```typescript
+public readonly columnName: string;
+```
+
+- *Type:* string
+
+---
+
+##### `pgType`<sup>Required</sup> <a name="pgType" id="@cdktn/provider-databricks.databaseSyncedDatabaseTable.DatabaseSyncedDatabaseTableSpecTypeOverridesOutputReference.property.pgType"></a>
+
+```typescript
+public readonly pgType: string;
+```
+
+- *Type:* string
+
+---
+
+##### `size`<sup>Required</sup> <a name="size" id="@cdktn/provider-databricks.databaseSyncedDatabaseTable.DatabaseSyncedDatabaseTableSpecTypeOverridesOutputReference.property.size"></a>
+
+```typescript
+public readonly size: number;
+```
+
+- *Type:* number
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-databricks.databaseSyncedDatabaseTable.DatabaseSyncedDatabaseTableSpecTypeOverridesOutputReference.property.internalValue"></a>
+
+```typescript
+public readonly internalValue: IResolvable | DatabaseSyncedDatabaseTableSpecTypeOverrides;
+```
+
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-databricks.databaseSyncedDatabaseTable.DatabaseSyncedDatabaseTableSpecTypeOverrides">DatabaseSyncedDatabaseTableSpecTypeOverrides</a>
 
 ---
 
