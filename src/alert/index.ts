@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/alert
+// https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/alert
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,53 +13,53 @@ import * as cdktn from 'cdktn';
 
 export interface AlertConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/alert#custom_body Alert#custom_body}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/alert#custom_body Alert#custom_body}
   */
   readonly customBody?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/alert#custom_subject Alert#custom_subject}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/alert#custom_subject Alert#custom_subject}
   */
   readonly customSubject?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/alert#display_name Alert#display_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/alert#display_name Alert#display_name}
   */
   readonly displayName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/alert#notify_on_ok Alert#notify_on_ok}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/alert#notify_on_ok Alert#notify_on_ok}
   */
   readonly notifyOnOk?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/alert#owner_user_name Alert#owner_user_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/alert#owner_user_name Alert#owner_user_name}
   */
   readonly ownerUserName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/alert#parent_path Alert#parent_path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/alert#parent_path Alert#parent_path}
   */
   readonly parentPath?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/alert#query_id Alert#query_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/alert#query_id Alert#query_id}
   */
   readonly queryId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/alert#seconds_to_retrigger Alert#seconds_to_retrigger}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/alert#seconds_to_retrigger Alert#seconds_to_retrigger}
   */
   readonly secondsToRetrigger?: number;
   /**
   * condition block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/alert#condition Alert#condition}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/alert#condition Alert#condition}
   */
   readonly condition: AlertCondition;
   /**
   * provider_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/alert#provider_config Alert#provider_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/alert#provider_config Alert#provider_config}
   */
   readonly providerConfig?: AlertProviderConfig;
 }
 export interface AlertConditionOperandColumn {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/alert#name Alert#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/alert#name Alert#name}
   */
   readonly name: string;
 }
@@ -67,7 +67,7 @@ export interface AlertConditionOperandColumn {
 export function alertConditionOperandColumnToTerraform(struct?: AlertConditionOperandColumnOutputReference | AlertConditionOperandColumn): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     name: cdktn.stringToTerraform(struct!.name),
@@ -78,7 +78,7 @@ export function alertConditionOperandColumnToTerraform(struct?: AlertConditionOp
 export function alertConditionOperandColumnToHclTerraform(struct?: AlertConditionOperandColumnOutputReference | AlertConditionOperandColumn): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     name: {
@@ -142,7 +142,7 @@ export interface AlertConditionOperand {
   /**
   * column block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/alert#column Alert#column}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/alert#column Alert#column}
   */
   readonly column: AlertConditionOperandColumn;
 }
@@ -150,7 +150,7 @@ export interface AlertConditionOperand {
 export function alertConditionOperandToTerraform(struct?: AlertConditionOperandOutputReference | AlertConditionOperand): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     column: alertConditionOperandColumnToTerraform(struct!.column),
@@ -161,7 +161,7 @@ export function alertConditionOperandToTerraform(struct?: AlertConditionOperandO
 export function alertConditionOperandToHclTerraform(struct?: AlertConditionOperandOutputReference | AlertConditionOperand): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     column: {
@@ -223,15 +223,15 @@ export class AlertConditionOperandOutputReference extends cdktn.ComplexObject {
 }
 export interface AlertConditionThresholdValue {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/alert#bool_value Alert#bool_value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/alert#bool_value Alert#bool_value}
   */
   readonly boolValue?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/alert#double_value Alert#double_value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/alert#double_value Alert#double_value}
   */
   readonly doubleValue?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/alert#string_value Alert#string_value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/alert#string_value Alert#string_value}
   */
   readonly stringValue?: string;
 }
@@ -239,7 +239,7 @@ export interface AlertConditionThresholdValue {
 export function alertConditionThresholdValueToTerraform(struct?: AlertConditionThresholdValueOutputReference | AlertConditionThresholdValue): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     bool_value: cdktn.booleanToTerraform(struct!.boolValue),
@@ -252,7 +252,7 @@ export function alertConditionThresholdValueToTerraform(struct?: AlertConditionT
 export function alertConditionThresholdValueToHclTerraform(struct?: AlertConditionThresholdValueOutputReference | AlertConditionThresholdValue): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     bool_value: {
@@ -375,7 +375,7 @@ export interface AlertConditionThreshold {
   /**
   * value block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/alert#value Alert#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/alert#value Alert#value}
   */
   readonly value: AlertConditionThresholdValue;
 }
@@ -383,7 +383,7 @@ export interface AlertConditionThreshold {
 export function alertConditionThresholdToTerraform(struct?: AlertConditionThresholdOutputReference | AlertConditionThreshold): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     value: alertConditionThresholdValueToTerraform(struct!.value),
@@ -394,7 +394,7 @@ export function alertConditionThresholdToTerraform(struct?: AlertConditionThresh
 export function alertConditionThresholdToHclTerraform(struct?: AlertConditionThresholdOutputReference | AlertConditionThreshold): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     value: {
@@ -456,23 +456,23 @@ export class AlertConditionThresholdOutputReference extends cdktn.ComplexObject 
 }
 export interface AlertCondition {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/alert#empty_result_state Alert#empty_result_state}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/alert#empty_result_state Alert#empty_result_state}
   */
   readonly emptyResultState?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/alert#op Alert#op}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/alert#op Alert#op}
   */
   readonly op: string;
   /**
   * operand block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/alert#operand Alert#operand}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/alert#operand Alert#operand}
   */
   readonly operand: AlertConditionOperand;
   /**
   * threshold block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/alert#threshold Alert#threshold}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/alert#threshold Alert#threshold}
   */
   readonly threshold?: AlertConditionThreshold;
 }
@@ -480,7 +480,7 @@ export interface AlertCondition {
 export function alertConditionToTerraform(struct?: AlertConditionOutputReference | AlertCondition): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     empty_result_state: cdktn.stringToTerraform(struct!.emptyResultState),
@@ -494,7 +494,7 @@ export function alertConditionToTerraform(struct?: AlertConditionOutputReference
 export function alertConditionToHclTerraform(struct?: AlertConditionOutputReference | AlertCondition): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     empty_result_state: {
@@ -637,7 +637,7 @@ export class AlertConditionOutputReference extends cdktn.ComplexObject {
 }
 export interface AlertProviderConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/alert#workspace_id Alert#workspace_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/alert#workspace_id Alert#workspace_id}
   */
   readonly workspaceId?: string;
 }
@@ -645,7 +645,7 @@ export interface AlertProviderConfig {
 export function alertProviderConfigToTerraform(struct?: AlertProviderConfigOutputReference | AlertProviderConfig): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     workspace_id: cdktn.stringToTerraform(struct!.workspaceId),
@@ -656,7 +656,7 @@ export function alertProviderConfigToTerraform(struct?: AlertProviderConfigOutpu
 export function alertProviderConfigToHclTerraform(struct?: AlertProviderConfigOutputReference | AlertProviderConfig): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     workspace_id: {
@@ -721,7 +721,7 @@ export class AlertProviderConfigOutputReference extends cdktn.ComplexObject {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/alert databricks_alert}
+* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/alert databricks_alert}
 */
 export class Alert extends cdktn.TerraformResource {
 
@@ -737,7 +737,7 @@ export class Alert extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a Alert resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the Alert to import
-  * @param importFromId The id of the existing Alert that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/alert#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing Alert that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/alert#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the Alert to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -749,7 +749,7 @@ export class Alert extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/alert databricks_alert} Resource
+  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/alert databricks_alert} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -760,7 +760,7 @@ export class Alert extends cdktn.TerraformResource {
       terraformResourceType: 'databricks_alert',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '1.117.0',
+        providerVersion: '1.118.0',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,

@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/tag_policy
+// https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/tag_policy
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,17 +13,17 @@ import * as cdktn from 'cdktn';
 
 export interface DataDatabricksTagPolicyConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/tag_policy#provider_config DataDatabricksTagPolicy#provider_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/tag_policy#provider_config DataDatabricksTagPolicy#provider_config}
   */
   readonly providerConfig?: DataDatabricksTagPolicyProviderConfig;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/tag_policy#tag_key DataDatabricksTagPolicy#tag_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/tag_policy#tag_key DataDatabricksTagPolicy#tag_key}
   */
   readonly tagKey: string;
 }
 export interface DataDatabricksTagPolicyProviderConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/tag_policy#workspace_id DataDatabricksTagPolicy#workspace_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/tag_policy#workspace_id DataDatabricksTagPolicy#workspace_id}
   */
   readonly workspaceId?: string;
 }
@@ -31,7 +31,7 @@ export interface DataDatabricksTagPolicyProviderConfig {
 export function dataDatabricksTagPolicyProviderConfigToTerraform(struct?: DataDatabricksTagPolicyProviderConfig | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     workspace_id: cdktn.stringToTerraform(struct!.workspaceId),
@@ -42,7 +42,7 @@ export function dataDatabricksTagPolicyProviderConfigToTerraform(struct?: DataDa
 export function dataDatabricksTagPolicyProviderConfigToHclTerraform(struct?: DataDatabricksTagPolicyProviderConfig | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     workspace_id: {
@@ -117,7 +117,7 @@ export class DataDatabricksTagPolicyProviderConfigOutputReference extends cdktn.
 }
 export interface DataDatabricksTagPolicyValues {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/tag_policy#name DataDatabricksTagPolicy#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/tag_policy#name DataDatabricksTagPolicy#name}
   */
   readonly name: string;
 }
@@ -125,7 +125,7 @@ export interface DataDatabricksTagPolicyValues {
 export function dataDatabricksTagPolicyValuesToTerraform(struct?: DataDatabricksTagPolicyValues): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     name: cdktn.stringToTerraform(struct!.name),
@@ -136,7 +136,7 @@ export function dataDatabricksTagPolicyValuesToTerraform(struct?: DataDatabricks
 export function dataDatabricksTagPolicyValuesToHclTerraform(struct?: DataDatabricksTagPolicyValues): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     name: {
@@ -220,7 +220,7 @@ export class DataDatabricksTagPolicyValuesList extends cdktn.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/tag_policy databricks_tag_policy}
+* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/tag_policy databricks_tag_policy}
 */
 export class DataDatabricksTagPolicy extends cdktn.TerraformDataSource {
 
@@ -236,7 +236,7 @@ export class DataDatabricksTagPolicy extends cdktn.TerraformDataSource {
   * Generates CDKTN code for importing a DataDatabricksTagPolicy resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataDatabricksTagPolicy to import
-  * @param importFromId The id of the existing DataDatabricksTagPolicy that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/tag_policy#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataDatabricksTagPolicy that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/tag_policy#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataDatabricksTagPolicy to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -248,7 +248,7 @@ export class DataDatabricksTagPolicy extends cdktn.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/tag_policy databricks_tag_policy} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/tag_policy databricks_tag_policy} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -259,7 +259,7 @@ export class DataDatabricksTagPolicy extends cdktn.TerraformDataSource {
       terraformResourceType: 'databricks_tag_policy',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '1.117.0',
+        providerVersion: '1.118.0',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,

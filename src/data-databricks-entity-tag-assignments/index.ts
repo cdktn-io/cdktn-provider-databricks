@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/entity_tag_assignments
+// https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/entity_tag_assignments
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,25 +13,25 @@ import * as cdktn from 'cdktn';
 
 export interface DataDatabricksEntityTagAssignmentsConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/entity_tag_assignments#entity_name DataDatabricksEntityTagAssignments#entity_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/entity_tag_assignments#entity_name DataDatabricksEntityTagAssignments#entity_name}
   */
   readonly entityName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/entity_tag_assignments#entity_type DataDatabricksEntityTagAssignments#entity_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/entity_tag_assignments#entity_type DataDatabricksEntityTagAssignments#entity_type}
   */
   readonly entityType: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/entity_tag_assignments#max_results DataDatabricksEntityTagAssignments#max_results}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/entity_tag_assignments#max_results DataDatabricksEntityTagAssignments#max_results}
   */
   readonly maxResults?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/entity_tag_assignments#provider_config DataDatabricksEntityTagAssignments#provider_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/entity_tag_assignments#provider_config DataDatabricksEntityTagAssignments#provider_config}
   */
   readonly providerConfig?: DataDatabricksEntityTagAssignmentsProviderConfig;
 }
 export interface DataDatabricksEntityTagAssignmentsProviderConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/entity_tag_assignments#workspace_id DataDatabricksEntityTagAssignments#workspace_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/entity_tag_assignments#workspace_id DataDatabricksEntityTagAssignments#workspace_id}
   */
   readonly workspaceId?: string;
 }
@@ -39,7 +39,7 @@ export interface DataDatabricksEntityTagAssignmentsProviderConfig {
 export function dataDatabricksEntityTagAssignmentsProviderConfigToTerraform(struct?: DataDatabricksEntityTagAssignmentsProviderConfig | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     workspace_id: cdktn.stringToTerraform(struct!.workspaceId),
@@ -50,7 +50,7 @@ export function dataDatabricksEntityTagAssignmentsProviderConfigToTerraform(stru
 export function dataDatabricksEntityTagAssignmentsProviderConfigToHclTerraform(struct?: DataDatabricksEntityTagAssignmentsProviderConfig | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     workspace_id: {
@@ -125,7 +125,7 @@ export class DataDatabricksEntityTagAssignmentsProviderConfigOutputReference ext
 }
 export interface DataDatabricksEntityTagAssignmentsTagAssignmentsProviderConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/entity_tag_assignments#workspace_id DataDatabricksEntityTagAssignments#workspace_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/entity_tag_assignments#workspace_id DataDatabricksEntityTagAssignments#workspace_id}
   */
   readonly workspaceId?: string;
 }
@@ -133,7 +133,7 @@ export interface DataDatabricksEntityTagAssignmentsTagAssignmentsProviderConfig 
 export function dataDatabricksEntityTagAssignmentsTagAssignmentsProviderConfigToTerraform(struct?: DataDatabricksEntityTagAssignmentsTagAssignmentsProviderConfig | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     workspace_id: cdktn.stringToTerraform(struct!.workspaceId),
@@ -144,7 +144,7 @@ export function dataDatabricksEntityTagAssignmentsTagAssignmentsProviderConfigTo
 export function dataDatabricksEntityTagAssignmentsTagAssignmentsProviderConfigToHclTerraform(struct?: DataDatabricksEntityTagAssignmentsTagAssignmentsProviderConfig | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     workspace_id: {
@@ -219,19 +219,19 @@ export class DataDatabricksEntityTagAssignmentsTagAssignmentsProviderConfigOutpu
 }
 export interface DataDatabricksEntityTagAssignmentsTagAssignments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/entity_tag_assignments#entity_name DataDatabricksEntityTagAssignments#entity_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/entity_tag_assignments#entity_name DataDatabricksEntityTagAssignments#entity_name}
   */
   readonly entityName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/entity_tag_assignments#entity_type DataDatabricksEntityTagAssignments#entity_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/entity_tag_assignments#entity_type DataDatabricksEntityTagAssignments#entity_type}
   */
   readonly entityType: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/entity_tag_assignments#provider_config DataDatabricksEntityTagAssignments#provider_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/entity_tag_assignments#provider_config DataDatabricksEntityTagAssignments#provider_config}
   */
   readonly providerConfig?: DataDatabricksEntityTagAssignmentsTagAssignmentsProviderConfig;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/entity_tag_assignments#tag_key DataDatabricksEntityTagAssignments#tag_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/entity_tag_assignments#tag_key DataDatabricksEntityTagAssignments#tag_key}
   */
   readonly tagKey: string;
 }
@@ -239,7 +239,7 @@ export interface DataDatabricksEntityTagAssignmentsTagAssignments {
 export function dataDatabricksEntityTagAssignmentsTagAssignmentsToTerraform(struct?: DataDatabricksEntityTagAssignmentsTagAssignments): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     entity_name: cdktn.stringToTerraform(struct!.entityName),
@@ -253,7 +253,7 @@ export function dataDatabricksEntityTagAssignmentsTagAssignmentsToTerraform(stru
 export function dataDatabricksEntityTagAssignmentsTagAssignmentsToHclTerraform(struct?: DataDatabricksEntityTagAssignmentsTagAssignments): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     entity_name: {
@@ -435,7 +435,7 @@ export class DataDatabricksEntityTagAssignmentsTagAssignmentsList extends cdktn.
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/entity_tag_assignments databricks_entity_tag_assignments}
+* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/entity_tag_assignments databricks_entity_tag_assignments}
 */
 export class DataDatabricksEntityTagAssignments extends cdktn.TerraformDataSource {
 
@@ -451,7 +451,7 @@ export class DataDatabricksEntityTagAssignments extends cdktn.TerraformDataSourc
   * Generates CDKTN code for importing a DataDatabricksEntityTagAssignments resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataDatabricksEntityTagAssignments to import
-  * @param importFromId The id of the existing DataDatabricksEntityTagAssignments that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/entity_tag_assignments#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataDatabricksEntityTagAssignments that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/entity_tag_assignments#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataDatabricksEntityTagAssignments to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -463,7 +463,7 @@ export class DataDatabricksEntityTagAssignments extends cdktn.TerraformDataSourc
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/entity_tag_assignments databricks_entity_tag_assignments} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/entity_tag_assignments databricks_entity_tag_assignments} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -474,7 +474,7 @@ export class DataDatabricksEntityTagAssignments extends cdktn.TerraformDataSourc
       terraformResourceType: 'databricks_entity_tag_assignments',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '1.117.0',
+        providerVersion: '1.118.0',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,

@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/postgres_databases
+// https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/postgres_databases
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,21 +13,21 @@ import * as cdktn from 'cdktn';
 
 export interface DataDatabricksPostgresDatabasesConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/postgres_databases#page_size DataDatabricksPostgresDatabases#page_size}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/postgres_databases#page_size DataDatabricksPostgresDatabases#page_size}
   */
   readonly pageSize?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/postgres_databases#parent DataDatabricksPostgresDatabases#parent}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/postgres_databases#parent DataDatabricksPostgresDatabases#parent}
   */
   readonly parent: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/postgres_databases#provider_config DataDatabricksPostgresDatabases#provider_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/postgres_databases#provider_config DataDatabricksPostgresDatabases#provider_config}
   */
   readonly providerConfig?: DataDatabricksPostgresDatabasesProviderConfig;
 }
 export interface DataDatabricksPostgresDatabasesDatabasesProviderConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/postgres_databases#workspace_id DataDatabricksPostgresDatabases#workspace_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/postgres_databases#workspace_id DataDatabricksPostgresDatabases#workspace_id}
   */
   readonly workspaceId?: string;
 }
@@ -35,7 +35,7 @@ export interface DataDatabricksPostgresDatabasesDatabasesProviderConfig {
 export function dataDatabricksPostgresDatabasesDatabasesProviderConfigToTerraform(struct?: DataDatabricksPostgresDatabasesDatabasesProviderConfig | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     workspace_id: cdktn.stringToTerraform(struct!.workspaceId),
@@ -46,7 +46,7 @@ export function dataDatabricksPostgresDatabasesDatabasesProviderConfigToTerrafor
 export function dataDatabricksPostgresDatabasesDatabasesProviderConfigToHclTerraform(struct?: DataDatabricksPostgresDatabasesDatabasesProviderConfig | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     workspace_id: {
@@ -121,11 +121,11 @@ export class DataDatabricksPostgresDatabasesDatabasesProviderConfigOutputReferen
 }
 export interface DataDatabricksPostgresDatabasesDatabasesSpec {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/postgres_databases#postgres_database DataDatabricksPostgresDatabases#postgres_database}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/postgres_databases#postgres_database DataDatabricksPostgresDatabases#postgres_database}
   */
   readonly postgresDatabase?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/postgres_databases#role DataDatabricksPostgresDatabases#role}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/postgres_databases#role DataDatabricksPostgresDatabases#role}
   */
   readonly role?: string;
 }
@@ -133,7 +133,7 @@ export interface DataDatabricksPostgresDatabasesDatabasesSpec {
 export function dataDatabricksPostgresDatabasesDatabasesSpecToTerraform(struct?: DataDatabricksPostgresDatabasesDatabasesSpec): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     postgres_database: cdktn.stringToTerraform(struct!.postgresDatabase),
@@ -145,7 +145,7 @@ export function dataDatabricksPostgresDatabasesDatabasesSpecToTerraform(struct?:
 export function dataDatabricksPostgresDatabasesDatabasesSpecToHclTerraform(struct?: DataDatabricksPostgresDatabasesDatabasesSpec): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     postgres_database: {
@@ -238,11 +238,11 @@ export class DataDatabricksPostgresDatabasesDatabasesSpecOutputReference extends
 }
 export interface DataDatabricksPostgresDatabasesDatabasesStatus {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/postgres_databases#postgres_database DataDatabricksPostgresDatabases#postgres_database}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/postgres_databases#postgres_database DataDatabricksPostgresDatabases#postgres_database}
   */
   readonly postgresDatabase?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/postgres_databases#role DataDatabricksPostgresDatabases#role}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/postgres_databases#role DataDatabricksPostgresDatabases#role}
   */
   readonly role?: string;
 }
@@ -250,7 +250,7 @@ export interface DataDatabricksPostgresDatabasesDatabasesStatus {
 export function dataDatabricksPostgresDatabasesDatabasesStatusToTerraform(struct?: DataDatabricksPostgresDatabasesDatabasesStatus): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     postgres_database: cdktn.stringToTerraform(struct!.postgresDatabase),
@@ -262,7 +262,7 @@ export function dataDatabricksPostgresDatabasesDatabasesStatusToTerraform(struct
 export function dataDatabricksPostgresDatabasesDatabasesStatusToHclTerraform(struct?: DataDatabricksPostgresDatabasesDatabasesStatus): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     postgres_database: {
@@ -360,11 +360,11 @@ export class DataDatabricksPostgresDatabasesDatabasesStatusOutputReference exten
 }
 export interface DataDatabricksPostgresDatabasesDatabases {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/postgres_databases#name DataDatabricksPostgresDatabases#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/postgres_databases#name DataDatabricksPostgresDatabases#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/postgres_databases#provider_config DataDatabricksPostgresDatabases#provider_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/postgres_databases#provider_config DataDatabricksPostgresDatabases#provider_config}
   */
   readonly providerConfig?: DataDatabricksPostgresDatabasesDatabasesProviderConfig;
 }
@@ -372,7 +372,7 @@ export interface DataDatabricksPostgresDatabasesDatabases {
 export function dataDatabricksPostgresDatabasesDatabasesToTerraform(struct?: DataDatabricksPostgresDatabasesDatabases): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     name: cdktn.stringToTerraform(struct!.name),
@@ -384,7 +384,7 @@ export function dataDatabricksPostgresDatabasesDatabasesToTerraform(struct?: Dat
 export function dataDatabricksPostgresDatabasesDatabasesToHclTerraform(struct?: DataDatabricksPostgresDatabasesDatabases): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     name: {
@@ -448,6 +448,11 @@ export class DataDatabricksPostgresDatabasesDatabasesOutputReference extends cdk
   // create_time - computed: true, optional: false, required: false
   public get createTime() {
     return this.getStringAttribute('create_time');
+  }
+
+  // database_id - computed: true, optional: false, required: false
+  public get databaseId() {
+    return this.getStringAttribute('database_id');
   }
 
   // name - computed: true, optional: false, required: true
@@ -523,7 +528,7 @@ export class DataDatabricksPostgresDatabasesDatabasesList extends cdktn.ComplexL
 }
 export interface DataDatabricksPostgresDatabasesProviderConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/postgres_databases#workspace_id DataDatabricksPostgresDatabases#workspace_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/postgres_databases#workspace_id DataDatabricksPostgresDatabases#workspace_id}
   */
   readonly workspaceId?: string;
 }
@@ -531,7 +536,7 @@ export interface DataDatabricksPostgresDatabasesProviderConfig {
 export function dataDatabricksPostgresDatabasesProviderConfigToTerraform(struct?: DataDatabricksPostgresDatabasesProviderConfig | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     workspace_id: cdktn.stringToTerraform(struct!.workspaceId),
@@ -542,7 +547,7 @@ export function dataDatabricksPostgresDatabasesProviderConfigToTerraform(struct?
 export function dataDatabricksPostgresDatabasesProviderConfigToHclTerraform(struct?: DataDatabricksPostgresDatabasesProviderConfig | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     workspace_id: {
@@ -617,7 +622,7 @@ export class DataDatabricksPostgresDatabasesProviderConfigOutputReference extend
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/postgres_databases databricks_postgres_databases}
+* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/postgres_databases databricks_postgres_databases}
 */
 export class DataDatabricksPostgresDatabases extends cdktn.TerraformDataSource {
 
@@ -633,7 +638,7 @@ export class DataDatabricksPostgresDatabases extends cdktn.TerraformDataSource {
   * Generates CDKTN code for importing a DataDatabricksPostgresDatabases resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataDatabricksPostgresDatabases to import
-  * @param importFromId The id of the existing DataDatabricksPostgresDatabases that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/postgres_databases#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataDatabricksPostgresDatabases that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/postgres_databases#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataDatabricksPostgresDatabases to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -645,7 +650,7 @@ export class DataDatabricksPostgresDatabases extends cdktn.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/postgres_databases databricks_postgres_databases} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/postgres_databases databricks_postgres_databases} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -656,7 +661,7 @@ export class DataDatabricksPostgresDatabases extends cdktn.TerraformDataSource {
       terraformResourceType: 'databricks_postgres_databases',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '1.117.0',
+        providerVersion: '1.118.0',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,

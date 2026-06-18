@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_setting_v2
+// https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_setting_v2
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,77 +13,77 @@ import * as cdktn from 'cdktn';
 
 export interface AccountSettingV2Config extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_setting_v2#aibi_dashboard_embedding_access_policy AccountSettingV2#aibi_dashboard_embedding_access_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_setting_v2#aibi_dashboard_embedding_access_policy AccountSettingV2#aibi_dashboard_embedding_access_policy}
   */
   readonly aibiDashboardEmbeddingAccessPolicy?: AccountSettingV2AibiDashboardEmbeddingAccessPolicy;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_setting_v2#aibi_dashboard_embedding_approved_domains AccountSettingV2#aibi_dashboard_embedding_approved_domains}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_setting_v2#aibi_dashboard_embedding_approved_domains AccountSettingV2#aibi_dashboard_embedding_approved_domains}
   */
   readonly aibiDashboardEmbeddingApprovedDomains?: AccountSettingV2AibiDashboardEmbeddingApprovedDomains;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_setting_v2#allowed_apps_user_api_scopes AccountSettingV2#allowed_apps_user_api_scopes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_setting_v2#allowed_apps_user_api_scopes AccountSettingV2#allowed_apps_user_api_scopes}
   */
   readonly allowedAppsUserApiScopes?: AccountSettingV2AllowedAppsUserApiScopes;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_setting_v2#automatic_cluster_update_workspace AccountSettingV2#automatic_cluster_update_workspace}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_setting_v2#automatic_cluster_update_workspace AccountSettingV2#automatic_cluster_update_workspace}
   */
   readonly automaticClusterUpdateWorkspace?: AccountSettingV2AutomaticClusterUpdateWorkspace;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_setting_v2#boolean_val AccountSettingV2#boolean_val}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_setting_v2#boolean_val AccountSettingV2#boolean_val}
   */
   readonly booleanVal?: AccountSettingV2BooleanVal;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_setting_v2#collaboration_platform_connectivity AccountSettingV2#collaboration_platform_connectivity}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_setting_v2#collaboration_platform_connectivity AccountSettingV2#collaboration_platform_connectivity}
   */
   readonly collaborationPlatformConnectivity?: AccountSettingV2CollaborationPlatformConnectivity;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_setting_v2#effective_aibi_dashboard_embedding_access_policy AccountSettingV2#effective_aibi_dashboard_embedding_access_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_setting_v2#effective_aibi_dashboard_embedding_access_policy AccountSettingV2#effective_aibi_dashboard_embedding_access_policy}
   */
   readonly effectiveAibiDashboardEmbeddingAccessPolicy?: AccountSettingV2EffectiveAibiDashboardEmbeddingAccessPolicy;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_setting_v2#effective_aibi_dashboard_embedding_approved_domains AccountSettingV2#effective_aibi_dashboard_embedding_approved_domains}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_setting_v2#effective_aibi_dashboard_embedding_approved_domains AccountSettingV2#effective_aibi_dashboard_embedding_approved_domains}
   */
   readonly effectiveAibiDashboardEmbeddingApprovedDomains?: AccountSettingV2EffectiveAibiDashboardEmbeddingApprovedDomains;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_setting_v2#effective_automatic_cluster_update_workspace AccountSettingV2#effective_automatic_cluster_update_workspace}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_setting_v2#effective_automatic_cluster_update_workspace AccountSettingV2#effective_automatic_cluster_update_workspace}
   */
   readonly effectiveAutomaticClusterUpdateWorkspace?: AccountSettingV2EffectiveAutomaticClusterUpdateWorkspace;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_setting_v2#effective_personal_compute AccountSettingV2#effective_personal_compute}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_setting_v2#effective_personal_compute AccountSettingV2#effective_personal_compute}
   */
   readonly effectivePersonalCompute?: AccountSettingV2EffectivePersonalCompute;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_setting_v2#effective_restrict_workspace_admins AccountSettingV2#effective_restrict_workspace_admins}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_setting_v2#effective_restrict_workspace_admins AccountSettingV2#effective_restrict_workspace_admins}
   */
   readonly effectiveRestrictWorkspaceAdmins?: AccountSettingV2EffectiveRestrictWorkspaceAdmins;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_setting_v2#integer_val AccountSettingV2#integer_val}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_setting_v2#integer_val AccountSettingV2#integer_val}
   */
   readonly integerVal?: AccountSettingV2IntegerVal;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_setting_v2#name AccountSettingV2#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_setting_v2#name AccountSettingV2#name}
   */
   readonly name?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_setting_v2#operational_email_custom_recipient AccountSettingV2#operational_email_custom_recipient}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_setting_v2#operational_email_custom_recipient AccountSettingV2#operational_email_custom_recipient}
   */
   readonly operationalEmailCustomRecipient?: AccountSettingV2OperationalEmailCustomRecipient;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_setting_v2#personal_compute AccountSettingV2#personal_compute}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_setting_v2#personal_compute AccountSettingV2#personal_compute}
   */
   readonly personalCompute?: AccountSettingV2PersonalCompute;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_setting_v2#restrict_workspace_admins AccountSettingV2#restrict_workspace_admins}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_setting_v2#restrict_workspace_admins AccountSettingV2#restrict_workspace_admins}
   */
   readonly restrictWorkspaceAdmins?: AccountSettingV2RestrictWorkspaceAdmins;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_setting_v2#string_val AccountSettingV2#string_val}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_setting_v2#string_val AccountSettingV2#string_val}
   */
   readonly stringVal?: AccountSettingV2StringVal;
 }
 export interface AccountSettingV2AibiDashboardEmbeddingAccessPolicy {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_setting_v2#access_policy_type AccountSettingV2#access_policy_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_setting_v2#access_policy_type AccountSettingV2#access_policy_type}
   */
   readonly accessPolicyType: string;
 }
@@ -91,7 +91,7 @@ export interface AccountSettingV2AibiDashboardEmbeddingAccessPolicy {
 export function accountSettingV2AibiDashboardEmbeddingAccessPolicyToTerraform(struct?: AccountSettingV2AibiDashboardEmbeddingAccessPolicy | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     access_policy_type: cdktn.stringToTerraform(struct!.accessPolicyType),
@@ -102,7 +102,7 @@ export function accountSettingV2AibiDashboardEmbeddingAccessPolicyToTerraform(st
 export function accountSettingV2AibiDashboardEmbeddingAccessPolicyToHclTerraform(struct?: AccountSettingV2AibiDashboardEmbeddingAccessPolicy | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     access_policy_type: {
@@ -174,7 +174,7 @@ export class AccountSettingV2AibiDashboardEmbeddingAccessPolicyOutputReference e
 }
 export interface AccountSettingV2AibiDashboardEmbeddingApprovedDomains {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_setting_v2#approved_domains AccountSettingV2#approved_domains}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_setting_v2#approved_domains AccountSettingV2#approved_domains}
   */
   readonly approvedDomains?: string[];
 }
@@ -182,7 +182,7 @@ export interface AccountSettingV2AibiDashboardEmbeddingApprovedDomains {
 export function accountSettingV2AibiDashboardEmbeddingApprovedDomainsToTerraform(struct?: AccountSettingV2AibiDashboardEmbeddingApprovedDomains | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     approved_domains: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.approvedDomains),
@@ -193,7 +193,7 @@ export function accountSettingV2AibiDashboardEmbeddingApprovedDomainsToTerraform
 export function accountSettingV2AibiDashboardEmbeddingApprovedDomainsToHclTerraform(struct?: AccountSettingV2AibiDashboardEmbeddingApprovedDomains | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     approved_domains: {
@@ -268,7 +268,7 @@ export class AccountSettingV2AibiDashboardEmbeddingApprovedDomainsOutputReferenc
 }
 export interface AccountSettingV2AllowedAppsUserApiScopes {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_setting_v2#allowed_scopes AccountSettingV2#allowed_scopes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_setting_v2#allowed_scopes AccountSettingV2#allowed_scopes}
   */
   readonly allowedScopes?: string[];
 }
@@ -276,7 +276,7 @@ export interface AccountSettingV2AllowedAppsUserApiScopes {
 export function accountSettingV2AllowedAppsUserApiScopesToTerraform(struct?: AccountSettingV2AllowedAppsUserApiScopes | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     allowed_scopes: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.allowedScopes),
@@ -287,7 +287,7 @@ export function accountSettingV2AllowedAppsUserApiScopesToTerraform(struct?: Acc
 export function accountSettingV2AllowedAppsUserApiScopesToHclTerraform(struct?: AccountSettingV2AllowedAppsUserApiScopes | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     allowed_scopes: {
@@ -362,15 +362,15 @@ export class AccountSettingV2AllowedAppsUserApiScopesOutputReference extends cdk
 }
 export interface AccountSettingV2AutomaticClusterUpdateWorkspaceEnablementDetails {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_setting_v2#forced_for_compliance_mode AccountSettingV2#forced_for_compliance_mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_setting_v2#forced_for_compliance_mode AccountSettingV2#forced_for_compliance_mode}
   */
   readonly forcedForComplianceMode?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_setting_v2#unavailable_for_disabled_entitlement AccountSettingV2#unavailable_for_disabled_entitlement}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_setting_v2#unavailable_for_disabled_entitlement AccountSettingV2#unavailable_for_disabled_entitlement}
   */
   readonly unavailableForDisabledEntitlement?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_setting_v2#unavailable_for_non_enterprise_tier AccountSettingV2#unavailable_for_non_enterprise_tier}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_setting_v2#unavailable_for_non_enterprise_tier AccountSettingV2#unavailable_for_non_enterprise_tier}
   */
   readonly unavailableForNonEnterpriseTier?: boolean | cdktn.IResolvable;
 }
@@ -378,7 +378,7 @@ export interface AccountSettingV2AutomaticClusterUpdateWorkspaceEnablementDetail
 export function accountSettingV2AutomaticClusterUpdateWorkspaceEnablementDetailsToTerraform(struct?: AccountSettingV2AutomaticClusterUpdateWorkspaceEnablementDetails | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     forced_for_compliance_mode: cdktn.booleanToTerraform(struct!.forcedForComplianceMode),
@@ -391,7 +391,7 @@ export function accountSettingV2AutomaticClusterUpdateWorkspaceEnablementDetails
 export function accountSettingV2AutomaticClusterUpdateWorkspaceEnablementDetailsToHclTerraform(struct?: AccountSettingV2AutomaticClusterUpdateWorkspaceEnablementDetails | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     forced_for_compliance_mode: {
@@ -522,11 +522,11 @@ export class AccountSettingV2AutomaticClusterUpdateWorkspaceEnablementDetailsOut
 }
 export interface AccountSettingV2AutomaticClusterUpdateWorkspaceMaintenanceWindowWeekDayBasedScheduleWindowStartTime {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_setting_v2#hours AccountSettingV2#hours}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_setting_v2#hours AccountSettingV2#hours}
   */
   readonly hours?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_setting_v2#minutes AccountSettingV2#minutes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_setting_v2#minutes AccountSettingV2#minutes}
   */
   readonly minutes?: number;
 }
@@ -534,7 +534,7 @@ export interface AccountSettingV2AutomaticClusterUpdateWorkspaceMaintenanceWindo
 export function accountSettingV2AutomaticClusterUpdateWorkspaceMaintenanceWindowWeekDayBasedScheduleWindowStartTimeToTerraform(struct?: AccountSettingV2AutomaticClusterUpdateWorkspaceMaintenanceWindowWeekDayBasedScheduleWindowStartTime | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     hours: cdktn.numberToTerraform(struct!.hours),
@@ -546,7 +546,7 @@ export function accountSettingV2AutomaticClusterUpdateWorkspaceMaintenanceWindow
 export function accountSettingV2AutomaticClusterUpdateWorkspaceMaintenanceWindowWeekDayBasedScheduleWindowStartTimeToHclTerraform(struct?: AccountSettingV2AutomaticClusterUpdateWorkspaceMaintenanceWindowWeekDayBasedScheduleWindowStartTime | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     hours: {
@@ -649,15 +649,15 @@ export class AccountSettingV2AutomaticClusterUpdateWorkspaceMaintenanceWindowWee
 }
 export interface AccountSettingV2AutomaticClusterUpdateWorkspaceMaintenanceWindowWeekDayBasedSchedule {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_setting_v2#day_of_week AccountSettingV2#day_of_week}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_setting_v2#day_of_week AccountSettingV2#day_of_week}
   */
   readonly dayOfWeek?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_setting_v2#frequency AccountSettingV2#frequency}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_setting_v2#frequency AccountSettingV2#frequency}
   */
   readonly frequency?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_setting_v2#window_start_time AccountSettingV2#window_start_time}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_setting_v2#window_start_time AccountSettingV2#window_start_time}
   */
   readonly windowStartTime?: AccountSettingV2AutomaticClusterUpdateWorkspaceMaintenanceWindowWeekDayBasedScheduleWindowStartTime;
 }
@@ -665,7 +665,7 @@ export interface AccountSettingV2AutomaticClusterUpdateWorkspaceMaintenanceWindo
 export function accountSettingV2AutomaticClusterUpdateWorkspaceMaintenanceWindowWeekDayBasedScheduleToTerraform(struct?: AccountSettingV2AutomaticClusterUpdateWorkspaceMaintenanceWindowWeekDayBasedSchedule | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     day_of_week: cdktn.stringToTerraform(struct!.dayOfWeek),
@@ -678,7 +678,7 @@ export function accountSettingV2AutomaticClusterUpdateWorkspaceMaintenanceWindow
 export function accountSettingV2AutomaticClusterUpdateWorkspaceMaintenanceWindowWeekDayBasedScheduleToHclTerraform(struct?: AccountSettingV2AutomaticClusterUpdateWorkspaceMaintenanceWindowWeekDayBasedSchedule | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     day_of_week: {
@@ -809,7 +809,7 @@ export class AccountSettingV2AutomaticClusterUpdateWorkspaceMaintenanceWindowWee
 }
 export interface AccountSettingV2AutomaticClusterUpdateWorkspaceMaintenanceWindow {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_setting_v2#week_day_based_schedule AccountSettingV2#week_day_based_schedule}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_setting_v2#week_day_based_schedule AccountSettingV2#week_day_based_schedule}
   */
   readonly weekDayBasedSchedule?: AccountSettingV2AutomaticClusterUpdateWorkspaceMaintenanceWindowWeekDayBasedSchedule;
 }
@@ -817,7 +817,7 @@ export interface AccountSettingV2AutomaticClusterUpdateWorkspaceMaintenanceWindo
 export function accountSettingV2AutomaticClusterUpdateWorkspaceMaintenanceWindowToTerraform(struct?: AccountSettingV2AutomaticClusterUpdateWorkspaceMaintenanceWindow | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     week_day_based_schedule: accountSettingV2AutomaticClusterUpdateWorkspaceMaintenanceWindowWeekDayBasedScheduleToTerraform(struct!.weekDayBasedSchedule),
@@ -828,7 +828,7 @@ export function accountSettingV2AutomaticClusterUpdateWorkspaceMaintenanceWindow
 export function accountSettingV2AutomaticClusterUpdateWorkspaceMaintenanceWindowToHclTerraform(struct?: AccountSettingV2AutomaticClusterUpdateWorkspaceMaintenanceWindow | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     week_day_based_schedule: {
@@ -903,23 +903,23 @@ export class AccountSettingV2AutomaticClusterUpdateWorkspaceMaintenanceWindowOut
 }
 export interface AccountSettingV2AutomaticClusterUpdateWorkspace {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_setting_v2#can_toggle AccountSettingV2#can_toggle}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_setting_v2#can_toggle AccountSettingV2#can_toggle}
   */
   readonly canToggle?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_setting_v2#enabled AccountSettingV2#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_setting_v2#enabled AccountSettingV2#enabled}
   */
   readonly enabled?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_setting_v2#enablement_details AccountSettingV2#enablement_details}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_setting_v2#enablement_details AccountSettingV2#enablement_details}
   */
   readonly enablementDetails?: AccountSettingV2AutomaticClusterUpdateWorkspaceEnablementDetails;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_setting_v2#maintenance_window AccountSettingV2#maintenance_window}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_setting_v2#maintenance_window AccountSettingV2#maintenance_window}
   */
   readonly maintenanceWindow?: AccountSettingV2AutomaticClusterUpdateWorkspaceMaintenanceWindow;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_setting_v2#restart_even_if_no_updates_available AccountSettingV2#restart_even_if_no_updates_available}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_setting_v2#restart_even_if_no_updates_available AccountSettingV2#restart_even_if_no_updates_available}
   */
   readonly restartEvenIfNoUpdatesAvailable?: boolean | cdktn.IResolvable;
 }
@@ -927,7 +927,7 @@ export interface AccountSettingV2AutomaticClusterUpdateWorkspace {
 export function accountSettingV2AutomaticClusterUpdateWorkspaceToTerraform(struct?: AccountSettingV2AutomaticClusterUpdateWorkspace | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     can_toggle: cdktn.booleanToTerraform(struct!.canToggle),
@@ -942,7 +942,7 @@ export function accountSettingV2AutomaticClusterUpdateWorkspaceToTerraform(struc
 export function accountSettingV2AutomaticClusterUpdateWorkspaceToHclTerraform(struct?: AccountSettingV2AutomaticClusterUpdateWorkspace | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     can_toggle: {
@@ -1129,7 +1129,7 @@ export class AccountSettingV2AutomaticClusterUpdateWorkspaceOutputReference exte
 }
 export interface AccountSettingV2BooleanVal {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_setting_v2#value AccountSettingV2#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_setting_v2#value AccountSettingV2#value}
   */
   readonly value?: boolean | cdktn.IResolvable;
 }
@@ -1137,7 +1137,7 @@ export interface AccountSettingV2BooleanVal {
 export function accountSettingV2BooleanValToTerraform(struct?: AccountSettingV2BooleanVal | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     value: cdktn.booleanToTerraform(struct!.value),
@@ -1148,7 +1148,7 @@ export function accountSettingV2BooleanValToTerraform(struct?: AccountSettingV2B
 export function accountSettingV2BooleanValToHclTerraform(struct?: AccountSettingV2BooleanVal | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     value: {
@@ -1223,7 +1223,7 @@ export class AccountSettingV2BooleanValOutputReference extends cdktn.ComplexObje
 }
 export interface AccountSettingV2CollaborationPlatformConnectivity {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_setting_v2#connectivity AccountSettingV2#connectivity}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_setting_v2#connectivity AccountSettingV2#connectivity}
   */
   readonly connectivity: string;
 }
@@ -1231,7 +1231,7 @@ export interface AccountSettingV2CollaborationPlatformConnectivity {
 export function accountSettingV2CollaborationPlatformConnectivityToTerraform(struct?: AccountSettingV2CollaborationPlatformConnectivity | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     connectivity: cdktn.stringToTerraform(struct!.connectivity),
@@ -1242,7 +1242,7 @@ export function accountSettingV2CollaborationPlatformConnectivityToTerraform(str
 export function accountSettingV2CollaborationPlatformConnectivityToHclTerraform(struct?: AccountSettingV2CollaborationPlatformConnectivity | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     connectivity: {
@@ -1314,7 +1314,7 @@ export class AccountSettingV2CollaborationPlatformConnectivityOutputReference ex
 }
 export interface AccountSettingV2EffectiveAibiDashboardEmbeddingAccessPolicy {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_setting_v2#access_policy_type AccountSettingV2#access_policy_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_setting_v2#access_policy_type AccountSettingV2#access_policy_type}
   */
   readonly accessPolicyType: string;
 }
@@ -1322,7 +1322,7 @@ export interface AccountSettingV2EffectiveAibiDashboardEmbeddingAccessPolicy {
 export function accountSettingV2EffectiveAibiDashboardEmbeddingAccessPolicyToTerraform(struct?: AccountSettingV2EffectiveAibiDashboardEmbeddingAccessPolicy | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     access_policy_type: cdktn.stringToTerraform(struct!.accessPolicyType),
@@ -1333,7 +1333,7 @@ export function accountSettingV2EffectiveAibiDashboardEmbeddingAccessPolicyToTer
 export function accountSettingV2EffectiveAibiDashboardEmbeddingAccessPolicyToHclTerraform(struct?: AccountSettingV2EffectiveAibiDashboardEmbeddingAccessPolicy | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     access_policy_type: {
@@ -1405,7 +1405,7 @@ export class AccountSettingV2EffectiveAibiDashboardEmbeddingAccessPolicyOutputRe
 }
 export interface AccountSettingV2EffectiveAibiDashboardEmbeddingApprovedDomains {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_setting_v2#approved_domains AccountSettingV2#approved_domains}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_setting_v2#approved_domains AccountSettingV2#approved_domains}
   */
   readonly approvedDomains?: string[];
 }
@@ -1413,7 +1413,7 @@ export interface AccountSettingV2EffectiveAibiDashboardEmbeddingApprovedDomains 
 export function accountSettingV2EffectiveAibiDashboardEmbeddingApprovedDomainsToTerraform(struct?: AccountSettingV2EffectiveAibiDashboardEmbeddingApprovedDomains | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     approved_domains: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.approvedDomains),
@@ -1424,7 +1424,7 @@ export function accountSettingV2EffectiveAibiDashboardEmbeddingApprovedDomainsTo
 export function accountSettingV2EffectiveAibiDashboardEmbeddingApprovedDomainsToHclTerraform(struct?: AccountSettingV2EffectiveAibiDashboardEmbeddingApprovedDomains | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     approved_domains: {
@@ -1499,7 +1499,7 @@ export class AccountSettingV2EffectiveAibiDashboardEmbeddingApprovedDomainsOutpu
 }
 export interface AccountSettingV2EffectiveAllowedAppsUserApiScopes {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_setting_v2#allowed_scopes AccountSettingV2#allowed_scopes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_setting_v2#allowed_scopes AccountSettingV2#allowed_scopes}
   */
   readonly allowedScopes?: string[];
 }
@@ -1507,7 +1507,7 @@ export interface AccountSettingV2EffectiveAllowedAppsUserApiScopes {
 export function accountSettingV2EffectiveAllowedAppsUserApiScopesToTerraform(struct?: AccountSettingV2EffectiveAllowedAppsUserApiScopes): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     allowed_scopes: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.allowedScopes),
@@ -1518,7 +1518,7 @@ export function accountSettingV2EffectiveAllowedAppsUserApiScopesToTerraform(str
 export function accountSettingV2EffectiveAllowedAppsUserApiScopesToHclTerraform(struct?: AccountSettingV2EffectiveAllowedAppsUserApiScopes): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     allowed_scopes: {
@@ -1583,15 +1583,15 @@ export class AccountSettingV2EffectiveAllowedAppsUserApiScopesOutputReference ex
 }
 export interface AccountSettingV2EffectiveAutomaticClusterUpdateWorkspaceEnablementDetails {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_setting_v2#forced_for_compliance_mode AccountSettingV2#forced_for_compliance_mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_setting_v2#forced_for_compliance_mode AccountSettingV2#forced_for_compliance_mode}
   */
   readonly forcedForComplianceMode?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_setting_v2#unavailable_for_disabled_entitlement AccountSettingV2#unavailable_for_disabled_entitlement}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_setting_v2#unavailable_for_disabled_entitlement AccountSettingV2#unavailable_for_disabled_entitlement}
   */
   readonly unavailableForDisabledEntitlement?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_setting_v2#unavailable_for_non_enterprise_tier AccountSettingV2#unavailable_for_non_enterprise_tier}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_setting_v2#unavailable_for_non_enterprise_tier AccountSettingV2#unavailable_for_non_enterprise_tier}
   */
   readonly unavailableForNonEnterpriseTier?: boolean | cdktn.IResolvable;
 }
@@ -1599,7 +1599,7 @@ export interface AccountSettingV2EffectiveAutomaticClusterUpdateWorkspaceEnablem
 export function accountSettingV2EffectiveAutomaticClusterUpdateWorkspaceEnablementDetailsToTerraform(struct?: AccountSettingV2EffectiveAutomaticClusterUpdateWorkspaceEnablementDetails | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     forced_for_compliance_mode: cdktn.booleanToTerraform(struct!.forcedForComplianceMode),
@@ -1612,7 +1612,7 @@ export function accountSettingV2EffectiveAutomaticClusterUpdateWorkspaceEnableme
 export function accountSettingV2EffectiveAutomaticClusterUpdateWorkspaceEnablementDetailsToHclTerraform(struct?: AccountSettingV2EffectiveAutomaticClusterUpdateWorkspaceEnablementDetails | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     forced_for_compliance_mode: {
@@ -1743,11 +1743,11 @@ export class AccountSettingV2EffectiveAutomaticClusterUpdateWorkspaceEnablementD
 }
 export interface AccountSettingV2EffectiveAutomaticClusterUpdateWorkspaceMaintenanceWindowWeekDayBasedScheduleWindowStartTime {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_setting_v2#hours AccountSettingV2#hours}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_setting_v2#hours AccountSettingV2#hours}
   */
   readonly hours?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_setting_v2#minutes AccountSettingV2#minutes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_setting_v2#minutes AccountSettingV2#minutes}
   */
   readonly minutes?: number;
 }
@@ -1755,7 +1755,7 @@ export interface AccountSettingV2EffectiveAutomaticClusterUpdateWorkspaceMainten
 export function accountSettingV2EffectiveAutomaticClusterUpdateWorkspaceMaintenanceWindowWeekDayBasedScheduleWindowStartTimeToTerraform(struct?: AccountSettingV2EffectiveAutomaticClusterUpdateWorkspaceMaintenanceWindowWeekDayBasedScheduleWindowStartTime | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     hours: cdktn.numberToTerraform(struct!.hours),
@@ -1767,7 +1767,7 @@ export function accountSettingV2EffectiveAutomaticClusterUpdateWorkspaceMaintena
 export function accountSettingV2EffectiveAutomaticClusterUpdateWorkspaceMaintenanceWindowWeekDayBasedScheduleWindowStartTimeToHclTerraform(struct?: AccountSettingV2EffectiveAutomaticClusterUpdateWorkspaceMaintenanceWindowWeekDayBasedScheduleWindowStartTime | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     hours: {
@@ -1870,15 +1870,15 @@ export class AccountSettingV2EffectiveAutomaticClusterUpdateWorkspaceMaintenance
 }
 export interface AccountSettingV2EffectiveAutomaticClusterUpdateWorkspaceMaintenanceWindowWeekDayBasedSchedule {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_setting_v2#day_of_week AccountSettingV2#day_of_week}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_setting_v2#day_of_week AccountSettingV2#day_of_week}
   */
   readonly dayOfWeek?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_setting_v2#frequency AccountSettingV2#frequency}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_setting_v2#frequency AccountSettingV2#frequency}
   */
   readonly frequency?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_setting_v2#window_start_time AccountSettingV2#window_start_time}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_setting_v2#window_start_time AccountSettingV2#window_start_time}
   */
   readonly windowStartTime?: AccountSettingV2EffectiveAutomaticClusterUpdateWorkspaceMaintenanceWindowWeekDayBasedScheduleWindowStartTime;
 }
@@ -1886,7 +1886,7 @@ export interface AccountSettingV2EffectiveAutomaticClusterUpdateWorkspaceMainten
 export function accountSettingV2EffectiveAutomaticClusterUpdateWorkspaceMaintenanceWindowWeekDayBasedScheduleToTerraform(struct?: AccountSettingV2EffectiveAutomaticClusterUpdateWorkspaceMaintenanceWindowWeekDayBasedSchedule | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     day_of_week: cdktn.stringToTerraform(struct!.dayOfWeek),
@@ -1899,7 +1899,7 @@ export function accountSettingV2EffectiveAutomaticClusterUpdateWorkspaceMaintena
 export function accountSettingV2EffectiveAutomaticClusterUpdateWorkspaceMaintenanceWindowWeekDayBasedScheduleToHclTerraform(struct?: AccountSettingV2EffectiveAutomaticClusterUpdateWorkspaceMaintenanceWindowWeekDayBasedSchedule | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     day_of_week: {
@@ -2030,7 +2030,7 @@ export class AccountSettingV2EffectiveAutomaticClusterUpdateWorkspaceMaintenance
 }
 export interface AccountSettingV2EffectiveAutomaticClusterUpdateWorkspaceMaintenanceWindow {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_setting_v2#week_day_based_schedule AccountSettingV2#week_day_based_schedule}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_setting_v2#week_day_based_schedule AccountSettingV2#week_day_based_schedule}
   */
   readonly weekDayBasedSchedule?: AccountSettingV2EffectiveAutomaticClusterUpdateWorkspaceMaintenanceWindowWeekDayBasedSchedule;
 }
@@ -2038,7 +2038,7 @@ export interface AccountSettingV2EffectiveAutomaticClusterUpdateWorkspaceMainten
 export function accountSettingV2EffectiveAutomaticClusterUpdateWorkspaceMaintenanceWindowToTerraform(struct?: AccountSettingV2EffectiveAutomaticClusterUpdateWorkspaceMaintenanceWindow | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     week_day_based_schedule: accountSettingV2EffectiveAutomaticClusterUpdateWorkspaceMaintenanceWindowWeekDayBasedScheduleToTerraform(struct!.weekDayBasedSchedule),
@@ -2049,7 +2049,7 @@ export function accountSettingV2EffectiveAutomaticClusterUpdateWorkspaceMaintena
 export function accountSettingV2EffectiveAutomaticClusterUpdateWorkspaceMaintenanceWindowToHclTerraform(struct?: AccountSettingV2EffectiveAutomaticClusterUpdateWorkspaceMaintenanceWindow | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     week_day_based_schedule: {
@@ -2124,23 +2124,23 @@ export class AccountSettingV2EffectiveAutomaticClusterUpdateWorkspaceMaintenance
 }
 export interface AccountSettingV2EffectiveAutomaticClusterUpdateWorkspace {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_setting_v2#can_toggle AccountSettingV2#can_toggle}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_setting_v2#can_toggle AccountSettingV2#can_toggle}
   */
   readonly canToggle?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_setting_v2#enabled AccountSettingV2#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_setting_v2#enabled AccountSettingV2#enabled}
   */
   readonly enabled?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_setting_v2#enablement_details AccountSettingV2#enablement_details}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_setting_v2#enablement_details AccountSettingV2#enablement_details}
   */
   readonly enablementDetails?: AccountSettingV2EffectiveAutomaticClusterUpdateWorkspaceEnablementDetails;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_setting_v2#maintenance_window AccountSettingV2#maintenance_window}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_setting_v2#maintenance_window AccountSettingV2#maintenance_window}
   */
   readonly maintenanceWindow?: AccountSettingV2EffectiveAutomaticClusterUpdateWorkspaceMaintenanceWindow;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_setting_v2#restart_even_if_no_updates_available AccountSettingV2#restart_even_if_no_updates_available}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_setting_v2#restart_even_if_no_updates_available AccountSettingV2#restart_even_if_no_updates_available}
   */
   readonly restartEvenIfNoUpdatesAvailable?: boolean | cdktn.IResolvable;
 }
@@ -2148,7 +2148,7 @@ export interface AccountSettingV2EffectiveAutomaticClusterUpdateWorkspace {
 export function accountSettingV2EffectiveAutomaticClusterUpdateWorkspaceToTerraform(struct?: AccountSettingV2EffectiveAutomaticClusterUpdateWorkspace | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     can_toggle: cdktn.booleanToTerraform(struct!.canToggle),
@@ -2163,7 +2163,7 @@ export function accountSettingV2EffectiveAutomaticClusterUpdateWorkspaceToTerraf
 export function accountSettingV2EffectiveAutomaticClusterUpdateWorkspaceToHclTerraform(struct?: AccountSettingV2EffectiveAutomaticClusterUpdateWorkspace | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     can_toggle: {
@@ -2350,7 +2350,7 @@ export class AccountSettingV2EffectiveAutomaticClusterUpdateWorkspaceOutputRefer
 }
 export interface AccountSettingV2EffectiveBooleanVal {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_setting_v2#value AccountSettingV2#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_setting_v2#value AccountSettingV2#value}
   */
   readonly value?: boolean | cdktn.IResolvable;
 }
@@ -2358,7 +2358,7 @@ export interface AccountSettingV2EffectiveBooleanVal {
 export function accountSettingV2EffectiveBooleanValToTerraform(struct?: AccountSettingV2EffectiveBooleanVal): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     value: cdktn.booleanToTerraform(struct!.value),
@@ -2369,7 +2369,7 @@ export function accountSettingV2EffectiveBooleanValToTerraform(struct?: AccountS
 export function accountSettingV2EffectiveBooleanValToHclTerraform(struct?: AccountSettingV2EffectiveBooleanVal): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     value: {
@@ -2434,7 +2434,7 @@ export class AccountSettingV2EffectiveBooleanValOutputReference extends cdktn.Co
 }
 export interface AccountSettingV2EffectiveCollaborationPlatformConnectivity {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_setting_v2#connectivity AccountSettingV2#connectivity}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_setting_v2#connectivity AccountSettingV2#connectivity}
   */
   readonly connectivity: string;
 }
@@ -2442,7 +2442,7 @@ export interface AccountSettingV2EffectiveCollaborationPlatformConnectivity {
 export function accountSettingV2EffectiveCollaborationPlatformConnectivityToTerraform(struct?: AccountSettingV2EffectiveCollaborationPlatformConnectivity): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     connectivity: cdktn.stringToTerraform(struct!.connectivity),
@@ -2453,7 +2453,7 @@ export function accountSettingV2EffectiveCollaborationPlatformConnectivityToTerr
 export function accountSettingV2EffectiveCollaborationPlatformConnectivityToHclTerraform(struct?: AccountSettingV2EffectiveCollaborationPlatformConnectivity): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     connectivity: {
@@ -2515,7 +2515,7 @@ export class AccountSettingV2EffectiveCollaborationPlatformConnectivityOutputRef
 }
 export interface AccountSettingV2EffectiveIntegerVal {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_setting_v2#value AccountSettingV2#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_setting_v2#value AccountSettingV2#value}
   */
   readonly value?: number;
 }
@@ -2523,7 +2523,7 @@ export interface AccountSettingV2EffectiveIntegerVal {
 export function accountSettingV2EffectiveIntegerValToTerraform(struct?: AccountSettingV2EffectiveIntegerVal): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     value: cdktn.numberToTerraform(struct!.value),
@@ -2534,7 +2534,7 @@ export function accountSettingV2EffectiveIntegerValToTerraform(struct?: AccountS
 export function accountSettingV2EffectiveIntegerValToHclTerraform(struct?: AccountSettingV2EffectiveIntegerVal): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     value: {
@@ -2599,7 +2599,7 @@ export class AccountSettingV2EffectiveIntegerValOutputReference extends cdktn.Co
 }
 export interface AccountSettingV2EffectiveOperationalEmailCustomRecipient {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_setting_v2#email AccountSettingV2#email}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_setting_v2#email AccountSettingV2#email}
   */
   readonly email?: string;
 }
@@ -2607,7 +2607,7 @@ export interface AccountSettingV2EffectiveOperationalEmailCustomRecipient {
 export function accountSettingV2EffectiveOperationalEmailCustomRecipientToTerraform(struct?: AccountSettingV2EffectiveOperationalEmailCustomRecipient): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     email: cdktn.stringToTerraform(struct!.email),
@@ -2618,7 +2618,7 @@ export function accountSettingV2EffectiveOperationalEmailCustomRecipientToTerraf
 export function accountSettingV2EffectiveOperationalEmailCustomRecipientToHclTerraform(struct?: AccountSettingV2EffectiveOperationalEmailCustomRecipient): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     email: {
@@ -2683,7 +2683,7 @@ export class AccountSettingV2EffectiveOperationalEmailCustomRecipientOutputRefer
 }
 export interface AccountSettingV2EffectivePersonalCompute {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_setting_v2#value AccountSettingV2#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_setting_v2#value AccountSettingV2#value}
   */
   readonly value?: string;
 }
@@ -2691,7 +2691,7 @@ export interface AccountSettingV2EffectivePersonalCompute {
 export function accountSettingV2EffectivePersonalComputeToTerraform(struct?: AccountSettingV2EffectivePersonalCompute | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     value: cdktn.stringToTerraform(struct!.value),
@@ -2702,7 +2702,7 @@ export function accountSettingV2EffectivePersonalComputeToTerraform(struct?: Acc
 export function accountSettingV2EffectivePersonalComputeToHclTerraform(struct?: AccountSettingV2EffectivePersonalCompute | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     value: {
@@ -2777,11 +2777,11 @@ export class AccountSettingV2EffectivePersonalComputeOutputReference extends cdk
 }
 export interface AccountSettingV2EffectiveRestrictWorkspaceAdmins {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_setting_v2#disable_gov_tag_creation AccountSettingV2#disable_gov_tag_creation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_setting_v2#disable_gov_tag_creation AccountSettingV2#disable_gov_tag_creation}
   */
   readonly disableGovTagCreation?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_setting_v2#status AccountSettingV2#status}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_setting_v2#status AccountSettingV2#status}
   */
   readonly status: string;
 }
@@ -2789,7 +2789,7 @@ export interface AccountSettingV2EffectiveRestrictWorkspaceAdmins {
 export function accountSettingV2EffectiveRestrictWorkspaceAdminsToTerraform(struct?: AccountSettingV2EffectiveRestrictWorkspaceAdmins | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     disable_gov_tag_creation: cdktn.booleanToTerraform(struct!.disableGovTagCreation),
@@ -2801,7 +2801,7 @@ export function accountSettingV2EffectiveRestrictWorkspaceAdminsToTerraform(stru
 export function accountSettingV2EffectiveRestrictWorkspaceAdminsToHclTerraform(struct?: AccountSettingV2EffectiveRestrictWorkspaceAdmins | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     disable_gov_tag_creation: {
@@ -2901,7 +2901,7 @@ export class AccountSettingV2EffectiveRestrictWorkspaceAdminsOutputReference ext
 }
 export interface AccountSettingV2EffectiveStringVal {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_setting_v2#value AccountSettingV2#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_setting_v2#value AccountSettingV2#value}
   */
   readonly value?: string;
 }
@@ -2909,7 +2909,7 @@ export interface AccountSettingV2EffectiveStringVal {
 export function accountSettingV2EffectiveStringValToTerraform(struct?: AccountSettingV2EffectiveStringVal): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     value: cdktn.stringToTerraform(struct!.value),
@@ -2920,7 +2920,7 @@ export function accountSettingV2EffectiveStringValToTerraform(struct?: AccountSe
 export function accountSettingV2EffectiveStringValToHclTerraform(struct?: AccountSettingV2EffectiveStringVal): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     value: {
@@ -2985,7 +2985,7 @@ export class AccountSettingV2EffectiveStringValOutputReference extends cdktn.Com
 }
 export interface AccountSettingV2IntegerVal {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_setting_v2#value AccountSettingV2#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_setting_v2#value AccountSettingV2#value}
   */
   readonly value?: number;
 }
@@ -2993,7 +2993,7 @@ export interface AccountSettingV2IntegerVal {
 export function accountSettingV2IntegerValToTerraform(struct?: AccountSettingV2IntegerVal | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     value: cdktn.numberToTerraform(struct!.value),
@@ -3004,7 +3004,7 @@ export function accountSettingV2IntegerValToTerraform(struct?: AccountSettingV2I
 export function accountSettingV2IntegerValToHclTerraform(struct?: AccountSettingV2IntegerVal | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     value: {
@@ -3079,7 +3079,7 @@ export class AccountSettingV2IntegerValOutputReference extends cdktn.ComplexObje
 }
 export interface AccountSettingV2OperationalEmailCustomRecipient {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_setting_v2#email AccountSettingV2#email}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_setting_v2#email AccountSettingV2#email}
   */
   readonly email?: string;
 }
@@ -3087,7 +3087,7 @@ export interface AccountSettingV2OperationalEmailCustomRecipient {
 export function accountSettingV2OperationalEmailCustomRecipientToTerraform(struct?: AccountSettingV2OperationalEmailCustomRecipient | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     email: cdktn.stringToTerraform(struct!.email),
@@ -3098,7 +3098,7 @@ export function accountSettingV2OperationalEmailCustomRecipientToTerraform(struc
 export function accountSettingV2OperationalEmailCustomRecipientToHclTerraform(struct?: AccountSettingV2OperationalEmailCustomRecipient | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     email: {
@@ -3173,7 +3173,7 @@ export class AccountSettingV2OperationalEmailCustomRecipientOutputReference exte
 }
 export interface AccountSettingV2PersonalCompute {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_setting_v2#value AccountSettingV2#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_setting_v2#value AccountSettingV2#value}
   */
   readonly value?: string;
 }
@@ -3181,7 +3181,7 @@ export interface AccountSettingV2PersonalCompute {
 export function accountSettingV2PersonalComputeToTerraform(struct?: AccountSettingV2PersonalCompute | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     value: cdktn.stringToTerraform(struct!.value),
@@ -3192,7 +3192,7 @@ export function accountSettingV2PersonalComputeToTerraform(struct?: AccountSetti
 export function accountSettingV2PersonalComputeToHclTerraform(struct?: AccountSettingV2PersonalCompute | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     value: {
@@ -3267,11 +3267,11 @@ export class AccountSettingV2PersonalComputeOutputReference extends cdktn.Comple
 }
 export interface AccountSettingV2RestrictWorkspaceAdmins {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_setting_v2#disable_gov_tag_creation AccountSettingV2#disable_gov_tag_creation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_setting_v2#disable_gov_tag_creation AccountSettingV2#disable_gov_tag_creation}
   */
   readonly disableGovTagCreation?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_setting_v2#status AccountSettingV2#status}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_setting_v2#status AccountSettingV2#status}
   */
   readonly status: string;
 }
@@ -3279,7 +3279,7 @@ export interface AccountSettingV2RestrictWorkspaceAdmins {
 export function accountSettingV2RestrictWorkspaceAdminsToTerraform(struct?: AccountSettingV2RestrictWorkspaceAdmins | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     disable_gov_tag_creation: cdktn.booleanToTerraform(struct!.disableGovTagCreation),
@@ -3291,7 +3291,7 @@ export function accountSettingV2RestrictWorkspaceAdminsToTerraform(struct?: Acco
 export function accountSettingV2RestrictWorkspaceAdminsToHclTerraform(struct?: AccountSettingV2RestrictWorkspaceAdmins | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     disable_gov_tag_creation: {
@@ -3391,7 +3391,7 @@ export class AccountSettingV2RestrictWorkspaceAdminsOutputReference extends cdkt
 }
 export interface AccountSettingV2StringVal {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_setting_v2#value AccountSettingV2#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_setting_v2#value AccountSettingV2#value}
   */
   readonly value?: string;
 }
@@ -3399,7 +3399,7 @@ export interface AccountSettingV2StringVal {
 export function accountSettingV2StringValToTerraform(struct?: AccountSettingV2StringVal | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     value: cdktn.stringToTerraform(struct!.value),
@@ -3410,7 +3410,7 @@ export function accountSettingV2StringValToTerraform(struct?: AccountSettingV2St
 export function accountSettingV2StringValToHclTerraform(struct?: AccountSettingV2StringVal | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     value: {
@@ -3485,7 +3485,7 @@ export class AccountSettingV2StringValOutputReference extends cdktn.ComplexObjec
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_setting_v2 databricks_account_setting_v2}
+* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_setting_v2 databricks_account_setting_v2}
 */
 export class AccountSettingV2 extends cdktn.TerraformResource {
 
@@ -3501,7 +3501,7 @@ export class AccountSettingV2 extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a AccountSettingV2 resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the AccountSettingV2 to import
-  * @param importFromId The id of the existing AccountSettingV2 that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_setting_v2#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing AccountSettingV2 that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_setting_v2#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the AccountSettingV2 to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -3513,7 +3513,7 @@ export class AccountSettingV2 extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_setting_v2 databricks_account_setting_v2} Resource
+  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_setting_v2 databricks_account_setting_v2} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -3524,7 +3524,7 @@ export class AccountSettingV2 extends cdktn.TerraformResource {
       terraformResourceType: 'databricks_account_setting_v2',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '1.117.0',
+        providerVersion: '1.118.0',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,

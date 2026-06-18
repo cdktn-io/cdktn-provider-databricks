@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/catalog
+// https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/catalog
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,104 +13,108 @@ import * as cdktn from 'cdktn';
 
 export interface CatalogConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/catalog#browse_only Catalog#browse_only}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/catalog#browse_only Catalog#browse_only}
   */
   readonly browseOnly?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/catalog#comment Catalog#comment}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/catalog#comment Catalog#comment}
   */
   readonly comment?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/catalog#connection_name Catalog#connection_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/catalog#connection_name Catalog#connection_name}
   */
   readonly connectionName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/catalog#enable_predictive_optimization Catalog#enable_predictive_optimization}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/catalog#custom_max_retention_hours Catalog#custom_max_retention_hours}
+  */
+  readonly customMaxRetentionHours?: number;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/catalog#enable_predictive_optimization Catalog#enable_predictive_optimization}
   */
   readonly enablePredictiveOptimization?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/catalog#force_destroy Catalog#force_destroy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/catalog#force_destroy Catalog#force_destroy}
   */
   readonly forceDestroy?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/catalog#id Catalog#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/catalog#id Catalog#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/catalog#isolation_mode Catalog#isolation_mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/catalog#isolation_mode Catalog#isolation_mode}
   */
   readonly isolationMode?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/catalog#metastore_id Catalog#metastore_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/catalog#metastore_id Catalog#metastore_id}
   */
   readonly metastoreId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/catalog#name Catalog#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/catalog#name Catalog#name}
   */
   readonly name?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/catalog#options Catalog#options}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/catalog#options Catalog#options}
   */
   readonly options?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/catalog#owner Catalog#owner}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/catalog#owner Catalog#owner}
   */
   readonly owner?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/catalog#properties Catalog#properties}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/catalog#properties Catalog#properties}
   */
   readonly properties?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/catalog#provider_name Catalog#provider_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/catalog#provider_name Catalog#provider_name}
   */
   readonly providerName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/catalog#share_name Catalog#share_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/catalog#share_name Catalog#share_name}
   */
   readonly shareName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/catalog#storage_root Catalog#storage_root}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/catalog#storage_root Catalog#storage_root}
   */
   readonly storageRoot?: string;
   /**
   * effective_predictive_optimization_flag block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/catalog#effective_predictive_optimization_flag Catalog#effective_predictive_optimization_flag}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/catalog#effective_predictive_optimization_flag Catalog#effective_predictive_optimization_flag}
   */
   readonly effectivePredictiveOptimizationFlag?: CatalogEffectivePredictiveOptimizationFlag;
   /**
   * managed_encryption_settings block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/catalog#managed_encryption_settings Catalog#managed_encryption_settings}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/catalog#managed_encryption_settings Catalog#managed_encryption_settings}
   */
   readonly managedEncryptionSettings?: CatalogManagedEncryptionSettings;
   /**
   * provider_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/catalog#provider_config Catalog#provider_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/catalog#provider_config Catalog#provider_config}
   */
   readonly providerConfig?: CatalogProviderConfig;
   /**
   * provisioning_info block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/catalog#provisioning_info Catalog#provisioning_info}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/catalog#provisioning_info Catalog#provisioning_info}
   */
   readonly provisioningInfo?: CatalogProvisioningInfo;
 }
 export interface CatalogEffectivePredictiveOptimizationFlag {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/catalog#inherited_from_name Catalog#inherited_from_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/catalog#inherited_from_name Catalog#inherited_from_name}
   */
   readonly inheritedFromName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/catalog#inherited_from_type Catalog#inherited_from_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/catalog#inherited_from_type Catalog#inherited_from_type}
   */
   readonly inheritedFromType?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/catalog#value Catalog#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/catalog#value Catalog#value}
   */
   readonly value: string;
 }
@@ -118,7 +122,7 @@ export interface CatalogEffectivePredictiveOptimizationFlag {
 export function catalogEffectivePredictiveOptimizationFlagToTerraform(struct?: CatalogEffectivePredictiveOptimizationFlagOutputReference | CatalogEffectivePredictiveOptimizationFlag): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     inherited_from_name: cdktn.stringToTerraform(struct!.inheritedFromName),
@@ -131,7 +135,7 @@ export function catalogEffectivePredictiveOptimizationFlagToTerraform(struct?: C
 export function catalogEffectivePredictiveOptimizationFlagToHclTerraform(struct?: CatalogEffectivePredictiveOptimizationFlagOutputReference | CatalogEffectivePredictiveOptimizationFlag): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     inherited_from_name: {
@@ -249,15 +253,15 @@ export class CatalogEffectivePredictiveOptimizationFlagOutputReference extends c
 }
 export interface CatalogManagedEncryptionSettingsAzureEncryptionSettings {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/catalog#azure_cmk_access_connector_id Catalog#azure_cmk_access_connector_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/catalog#azure_cmk_access_connector_id Catalog#azure_cmk_access_connector_id}
   */
   readonly azureCmkAccessConnectorId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/catalog#azure_cmk_managed_identity_id Catalog#azure_cmk_managed_identity_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/catalog#azure_cmk_managed_identity_id Catalog#azure_cmk_managed_identity_id}
   */
   readonly azureCmkManagedIdentityId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/catalog#azure_tenant_id Catalog#azure_tenant_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/catalog#azure_tenant_id Catalog#azure_tenant_id}
   */
   readonly azureTenantId: string;
 }
@@ -265,7 +269,7 @@ export interface CatalogManagedEncryptionSettingsAzureEncryptionSettings {
 export function catalogManagedEncryptionSettingsAzureEncryptionSettingsToTerraform(struct?: CatalogManagedEncryptionSettingsAzureEncryptionSettingsOutputReference | CatalogManagedEncryptionSettingsAzureEncryptionSettings): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     azure_cmk_access_connector_id: cdktn.stringToTerraform(struct!.azureCmkAccessConnectorId),
@@ -278,7 +282,7 @@ export function catalogManagedEncryptionSettingsAzureEncryptionSettingsToTerrafo
 export function catalogManagedEncryptionSettingsAzureEncryptionSettingsToHclTerraform(struct?: CatalogManagedEncryptionSettingsAzureEncryptionSettingsOutputReference | CatalogManagedEncryptionSettingsAzureEncryptionSettings): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     azure_cmk_access_connector_id: {
@@ -396,17 +400,17 @@ export class CatalogManagedEncryptionSettingsAzureEncryptionSettingsOutputRefere
 }
 export interface CatalogManagedEncryptionSettings {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/catalog#azure_key_vault_key_id Catalog#azure_key_vault_key_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/catalog#azure_key_vault_key_id Catalog#azure_key_vault_key_id}
   */
   readonly azureKeyVaultKeyId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/catalog#customer_managed_key_id Catalog#customer_managed_key_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/catalog#customer_managed_key_id Catalog#customer_managed_key_id}
   */
   readonly customerManagedKeyId?: string;
   /**
   * azure_encryption_settings block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/catalog#azure_encryption_settings Catalog#azure_encryption_settings}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/catalog#azure_encryption_settings Catalog#azure_encryption_settings}
   */
   readonly azureEncryptionSettings?: CatalogManagedEncryptionSettingsAzureEncryptionSettings;
 }
@@ -414,7 +418,7 @@ export interface CatalogManagedEncryptionSettings {
 export function catalogManagedEncryptionSettingsToTerraform(struct?: CatalogManagedEncryptionSettingsOutputReference | CatalogManagedEncryptionSettings): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     azure_key_vault_key_id: cdktn.stringToTerraform(struct!.azureKeyVaultKeyId),
@@ -427,7 +431,7 @@ export function catalogManagedEncryptionSettingsToTerraform(struct?: CatalogMana
 export function catalogManagedEncryptionSettingsToHclTerraform(struct?: CatalogManagedEncryptionSettingsOutputReference | CatalogManagedEncryptionSettings): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     azure_key_vault_key_id: {
@@ -548,7 +552,7 @@ export class CatalogManagedEncryptionSettingsOutputReference extends cdktn.Compl
 }
 export interface CatalogProviderConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/catalog#workspace_id Catalog#workspace_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/catalog#workspace_id Catalog#workspace_id}
   */
   readonly workspaceId?: string;
 }
@@ -556,7 +560,7 @@ export interface CatalogProviderConfig {
 export function catalogProviderConfigToTerraform(struct?: CatalogProviderConfigOutputReference | CatalogProviderConfig): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     workspace_id: cdktn.stringToTerraform(struct!.workspaceId),
@@ -567,7 +571,7 @@ export function catalogProviderConfigToTerraform(struct?: CatalogProviderConfigO
 export function catalogProviderConfigToHclTerraform(struct?: CatalogProviderConfigOutputReference | CatalogProviderConfig): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     workspace_id: {
@@ -632,7 +636,7 @@ export class CatalogProviderConfigOutputReference extends cdktn.ComplexObject {
 }
 export interface CatalogProvisioningInfo {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/catalog#state Catalog#state}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/catalog#state Catalog#state}
   */
   readonly state?: string;
 }
@@ -640,7 +644,7 @@ export interface CatalogProvisioningInfo {
 export function catalogProvisioningInfoToTerraform(struct?: CatalogProvisioningInfoOutputReference | CatalogProvisioningInfo): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     state: cdktn.stringToTerraform(struct!.state),
@@ -651,7 +655,7 @@ export function catalogProvisioningInfoToTerraform(struct?: CatalogProvisioningI
 export function catalogProvisioningInfoToHclTerraform(struct?: CatalogProvisioningInfoOutputReference | CatalogProvisioningInfo): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     state: {
@@ -716,7 +720,7 @@ export class CatalogProvisioningInfoOutputReference extends cdktn.ComplexObject 
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/catalog databricks_catalog}
+* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/catalog databricks_catalog}
 */
 export class Catalog extends cdktn.TerraformResource {
 
@@ -732,7 +736,7 @@ export class Catalog extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a Catalog resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the Catalog to import
-  * @param importFromId The id of the existing Catalog that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/catalog#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing Catalog that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/catalog#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the Catalog to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -744,7 +748,7 @@ export class Catalog extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/catalog databricks_catalog} Resource
+  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/catalog databricks_catalog} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -755,7 +759,7 @@ export class Catalog extends cdktn.TerraformResource {
       terraformResourceType: 'databricks_catalog',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '1.117.0',
+        providerVersion: '1.118.0',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,
@@ -769,6 +773,7 @@ export class Catalog extends cdktn.TerraformResource {
     this._browseOnly = config.browseOnly;
     this._comment = config.comment;
     this._connectionName = config.connectionName;
+    this._customMaxRetentionHours = config.customMaxRetentionHours;
     this._enablePredictiveOptimization = config.enablePredictiveOptimization;
     this._forceDestroy = config.forceDestroy;
     this._id = config.id;
@@ -852,6 +857,22 @@ export class Catalog extends cdktn.TerraformResource {
   // created_by - computed: true, optional: false, required: false
   public get createdBy() {
     return this.getStringAttribute('created_by');
+  }
+
+  // custom_max_retention_hours - computed: false, optional: true, required: false
+  private _customMaxRetentionHours?: number; 
+  public get customMaxRetentionHours() {
+    return this.getNumberAttribute('custom_max_retention_hours');
+  }
+  public set customMaxRetentionHours(value: number) {
+    this._customMaxRetentionHours = value;
+  }
+  public resetCustomMaxRetentionHours() {
+    this._customMaxRetentionHours = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get customMaxRetentionHoursInput() {
+    return this._customMaxRetentionHours;
   }
 
   // enable_predictive_optimization - computed: true, optional: true, required: false
@@ -1144,6 +1165,7 @@ export class Catalog extends cdktn.TerraformResource {
       browse_only: cdktn.booleanToTerraform(this._browseOnly),
       comment: cdktn.stringToTerraform(this._comment),
       connection_name: cdktn.stringToTerraform(this._connectionName),
+      custom_max_retention_hours: cdktn.numberToTerraform(this._customMaxRetentionHours),
       enable_predictive_optimization: cdktn.stringToTerraform(this._enablePredictiveOptimization),
       force_destroy: cdktn.booleanToTerraform(this._forceDestroy),
       id: cdktn.stringToTerraform(this._id),
@@ -1182,6 +1204,12 @@ export class Catalog extends cdktn.TerraformResource {
         isBlock: false,
         type: "simple",
         storageClassType: "string",
+      },
+      custom_max_retention_hours: {
+        value: cdktn.numberToHclTerraform(this._customMaxRetentionHours),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
       },
       enable_predictive_optimization: {
         value: cdktn.stringToHclTerraform(this._enablePredictiveOptimization),

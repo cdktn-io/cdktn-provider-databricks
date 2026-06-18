@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/registered_model_versions
+// https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/registered_model_versions
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,44 +13,44 @@ import * as cdktn from 'cdktn';
 
 export interface DataDatabricksRegisteredModelVersionsConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/registered_model_versions#full_name DataDatabricksRegisteredModelVersions#full_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/registered_model_versions#full_name DataDatabricksRegisteredModelVersions#full_name}
   */
   readonly fullName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/registered_model_versions#model_versions DataDatabricksRegisteredModelVersions#model_versions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/registered_model_versions#model_versions DataDatabricksRegisteredModelVersions#model_versions}
   */
   readonly modelVersions?: DataDatabricksRegisteredModelVersionsModelVersions[] | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/registered_model_versions#provider_config DataDatabricksRegisteredModelVersions#provider_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/registered_model_versions#provider_config DataDatabricksRegisteredModelVersions#provider_config}
   */
   readonly providerConfig?: DataDatabricksRegisteredModelVersionsProviderConfig;
 }
 export interface DataDatabricksRegisteredModelVersionsModelVersionsAliases {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/registered_model_versions#alias_name DataDatabricksRegisteredModelVersions#alias_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/registered_model_versions#alias_name DataDatabricksRegisteredModelVersions#alias_name}
   */
   readonly aliasName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/registered_model_versions#catalog_name DataDatabricksRegisteredModelVersions#catalog_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/registered_model_versions#catalog_name DataDatabricksRegisteredModelVersions#catalog_name}
   */
   readonly catalogName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/registered_model_versions#id DataDatabricksRegisteredModelVersions#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/registered_model_versions#id DataDatabricksRegisteredModelVersions#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/registered_model_versions#model_name DataDatabricksRegisteredModelVersions#model_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/registered_model_versions#model_name DataDatabricksRegisteredModelVersions#model_name}
   */
   readonly modelName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/registered_model_versions#schema_name DataDatabricksRegisteredModelVersions#schema_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/registered_model_versions#schema_name DataDatabricksRegisteredModelVersions#schema_name}
   */
   readonly schemaName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/registered_model_versions#version_num DataDatabricksRegisteredModelVersions#version_num}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/registered_model_versions#version_num DataDatabricksRegisteredModelVersions#version_num}
   */
   readonly versionNum?: number;
 }
@@ -58,7 +58,7 @@ export interface DataDatabricksRegisteredModelVersionsModelVersionsAliases {
 export function dataDatabricksRegisteredModelVersionsModelVersionsAliasesToTerraform(struct?: DataDatabricksRegisteredModelVersionsModelVersionsAliases | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     alias_name: cdktn.stringToTerraform(struct!.aliasName),
@@ -74,7 +74,7 @@ export function dataDatabricksRegisteredModelVersionsModelVersionsAliasesToTerra
 export function dataDatabricksRegisteredModelVersionsModelVersionsAliasesToHclTerraform(struct?: DataDatabricksRegisteredModelVersionsModelVersionsAliases | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     alias_name: {
@@ -311,7 +311,7 @@ export class DataDatabricksRegisteredModelVersionsModelVersionsAliasesList exten
 }
 export interface DataDatabricksRegisteredModelVersionsModelVersionsModelVersionDependenciesDependenciesConnection {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/registered_model_versions#connection_name DataDatabricksRegisteredModelVersions#connection_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/registered_model_versions#connection_name DataDatabricksRegisteredModelVersions#connection_name}
   */
   readonly connectionName?: string;
 }
@@ -319,7 +319,7 @@ export interface DataDatabricksRegisteredModelVersionsModelVersionsModelVersionD
 export function dataDatabricksRegisteredModelVersionsModelVersionsModelVersionDependenciesDependenciesConnectionToTerraform(struct?: DataDatabricksRegisteredModelVersionsModelVersionsModelVersionDependenciesDependenciesConnection | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     connection_name: cdktn.stringToTerraform(struct!.connectionName),
@@ -330,7 +330,7 @@ export function dataDatabricksRegisteredModelVersionsModelVersionsModelVersionDe
 export function dataDatabricksRegisteredModelVersionsModelVersionsModelVersionDependenciesDependenciesConnectionToHclTerraform(struct?: DataDatabricksRegisteredModelVersionsModelVersionsModelVersionDependenciesDependenciesConnection | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     connection_name: {
@@ -427,7 +427,7 @@ export class DataDatabricksRegisteredModelVersionsModelVersionsModelVersionDepen
 }
 export interface DataDatabricksRegisteredModelVersionsModelVersionsModelVersionDependenciesDependenciesCredential {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/registered_model_versions#credential_name DataDatabricksRegisteredModelVersions#credential_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/registered_model_versions#credential_name DataDatabricksRegisteredModelVersions#credential_name}
   */
   readonly credentialName?: string;
 }
@@ -435,7 +435,7 @@ export interface DataDatabricksRegisteredModelVersionsModelVersionsModelVersionD
 export function dataDatabricksRegisteredModelVersionsModelVersionsModelVersionDependenciesDependenciesCredentialToTerraform(struct?: DataDatabricksRegisteredModelVersionsModelVersionsModelVersionDependenciesDependenciesCredential | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     credential_name: cdktn.stringToTerraform(struct!.credentialName),
@@ -446,7 +446,7 @@ export function dataDatabricksRegisteredModelVersionsModelVersionsModelVersionDe
 export function dataDatabricksRegisteredModelVersionsModelVersionsModelVersionDependenciesDependenciesCredentialToHclTerraform(struct?: DataDatabricksRegisteredModelVersionsModelVersionsModelVersionDependenciesDependenciesCredential | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     credential_name: {
@@ -543,7 +543,7 @@ export class DataDatabricksRegisteredModelVersionsModelVersionsModelVersionDepen
 }
 export interface DataDatabricksRegisteredModelVersionsModelVersionsModelVersionDependenciesDependenciesFunction {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/registered_model_versions#function_full_name DataDatabricksRegisteredModelVersions#function_full_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/registered_model_versions#function_full_name DataDatabricksRegisteredModelVersions#function_full_name}
   */
   readonly functionFullName: string;
 }
@@ -551,7 +551,7 @@ export interface DataDatabricksRegisteredModelVersionsModelVersionsModelVersionD
 export function dataDatabricksRegisteredModelVersionsModelVersionsModelVersionDependenciesDependenciesFunctionToTerraform(struct?: DataDatabricksRegisteredModelVersionsModelVersionsModelVersionDependenciesDependenciesFunction | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     function_full_name: cdktn.stringToTerraform(struct!.functionFullName),
@@ -562,7 +562,7 @@ export function dataDatabricksRegisteredModelVersionsModelVersionsModelVersionDe
 export function dataDatabricksRegisteredModelVersionsModelVersionsModelVersionDependenciesDependenciesFunctionToHclTerraform(struct?: DataDatabricksRegisteredModelVersionsModelVersionsModelVersionDependenciesDependenciesFunction | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     function_full_name: {
@@ -656,7 +656,7 @@ export class DataDatabricksRegisteredModelVersionsModelVersionsModelVersionDepen
 }
 export interface DataDatabricksRegisteredModelVersionsModelVersionsModelVersionDependenciesDependenciesTable {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/registered_model_versions#table_full_name DataDatabricksRegisteredModelVersions#table_full_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/registered_model_versions#table_full_name DataDatabricksRegisteredModelVersions#table_full_name}
   */
   readonly tableFullName: string;
 }
@@ -664,7 +664,7 @@ export interface DataDatabricksRegisteredModelVersionsModelVersionsModelVersionD
 export function dataDatabricksRegisteredModelVersionsModelVersionsModelVersionDependenciesDependenciesTableToTerraform(struct?: DataDatabricksRegisteredModelVersionsModelVersionsModelVersionDependenciesDependenciesTable | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     table_full_name: cdktn.stringToTerraform(struct!.tableFullName),
@@ -675,7 +675,7 @@ export function dataDatabricksRegisteredModelVersionsModelVersionsModelVersionDe
 export function dataDatabricksRegisteredModelVersionsModelVersionsModelVersionDependenciesDependenciesTableToHclTerraform(struct?: DataDatabricksRegisteredModelVersionsModelVersionsModelVersionDependenciesDependenciesTable | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     table_full_name: {
@@ -769,19 +769,19 @@ export class DataDatabricksRegisteredModelVersionsModelVersionsModelVersionDepen
 }
 export interface DataDatabricksRegisteredModelVersionsModelVersionsModelVersionDependenciesDependencies {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/registered_model_versions#connection DataDatabricksRegisteredModelVersions#connection}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/registered_model_versions#connection DataDatabricksRegisteredModelVersions#connection}
   */
   readonly connection?: DataDatabricksRegisteredModelVersionsModelVersionsModelVersionDependenciesDependenciesConnection[] | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/registered_model_versions#credential DataDatabricksRegisteredModelVersions#credential}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/registered_model_versions#credential DataDatabricksRegisteredModelVersions#credential}
   */
   readonly credential?: DataDatabricksRegisteredModelVersionsModelVersionsModelVersionDependenciesDependenciesCredential[] | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/registered_model_versions#function DataDatabricksRegisteredModelVersions#function}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/registered_model_versions#function DataDatabricksRegisteredModelVersions#function}
   */
   readonly function?: DataDatabricksRegisteredModelVersionsModelVersionsModelVersionDependenciesDependenciesFunction[] | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/registered_model_versions#table DataDatabricksRegisteredModelVersions#table}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/registered_model_versions#table DataDatabricksRegisteredModelVersions#table}
   */
   readonly table?: DataDatabricksRegisteredModelVersionsModelVersionsModelVersionDependenciesDependenciesTable[] | cdktn.IResolvable;
 }
@@ -789,7 +789,7 @@ export interface DataDatabricksRegisteredModelVersionsModelVersionsModelVersionD
 export function dataDatabricksRegisteredModelVersionsModelVersionsModelVersionDependenciesDependenciesToTerraform(struct?: DataDatabricksRegisteredModelVersionsModelVersionsModelVersionDependenciesDependencies | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     connection: cdktn.listMapper(dataDatabricksRegisteredModelVersionsModelVersionsModelVersionDependenciesDependenciesConnectionToTerraform, false)(struct!.connection),
@@ -803,7 +803,7 @@ export function dataDatabricksRegisteredModelVersionsModelVersionsModelVersionDe
 export function dataDatabricksRegisteredModelVersionsModelVersionsModelVersionDependenciesDependenciesToHclTerraform(struct?: DataDatabricksRegisteredModelVersionsModelVersionsModelVersionDependenciesDependencies | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     connection: {
@@ -984,7 +984,7 @@ export class DataDatabricksRegisteredModelVersionsModelVersionsModelVersionDepen
 }
 export interface DataDatabricksRegisteredModelVersionsModelVersionsModelVersionDependencies {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/registered_model_versions#dependencies DataDatabricksRegisteredModelVersions#dependencies}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/registered_model_versions#dependencies DataDatabricksRegisteredModelVersions#dependencies}
   */
   readonly dependencies?: DataDatabricksRegisteredModelVersionsModelVersionsModelVersionDependenciesDependencies[] | cdktn.IResolvable;
 }
@@ -992,7 +992,7 @@ export interface DataDatabricksRegisteredModelVersionsModelVersionsModelVersionD
 export function dataDatabricksRegisteredModelVersionsModelVersionsModelVersionDependenciesToTerraform(struct?: DataDatabricksRegisteredModelVersionsModelVersionsModelVersionDependencies | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     dependencies: cdktn.listMapper(dataDatabricksRegisteredModelVersionsModelVersionsModelVersionDependenciesDependenciesToTerraform, false)(struct!.dependencies),
@@ -1003,7 +1003,7 @@ export function dataDatabricksRegisteredModelVersionsModelVersionsModelVersionDe
 export function dataDatabricksRegisteredModelVersionsModelVersionsModelVersionDependenciesToHclTerraform(struct?: DataDatabricksRegisteredModelVersionsModelVersionsModelVersionDependencies | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     dependencies: {
@@ -1100,78 +1100,78 @@ export class DataDatabricksRegisteredModelVersionsModelVersionsModelVersionDepen
 }
 export interface DataDatabricksRegisteredModelVersionsModelVersions {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/registered_model_versions#aliases DataDatabricksRegisteredModelVersions#aliases}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/registered_model_versions#aliases DataDatabricksRegisteredModelVersions#aliases}
   */
   readonly aliases?: DataDatabricksRegisteredModelVersionsModelVersionsAliases[] | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/registered_model_versions#catalog_name DataDatabricksRegisteredModelVersions#catalog_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/registered_model_versions#catalog_name DataDatabricksRegisteredModelVersions#catalog_name}
   */
   readonly catalogName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/registered_model_versions#comment DataDatabricksRegisteredModelVersions#comment}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/registered_model_versions#comment DataDatabricksRegisteredModelVersions#comment}
   */
   readonly comment?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/registered_model_versions#created_at DataDatabricksRegisteredModelVersions#created_at}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/registered_model_versions#created_at DataDatabricksRegisteredModelVersions#created_at}
   */
   readonly createdAt?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/registered_model_versions#created_by DataDatabricksRegisteredModelVersions#created_by}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/registered_model_versions#created_by DataDatabricksRegisteredModelVersions#created_by}
   */
   readonly createdBy?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/registered_model_versions#id DataDatabricksRegisteredModelVersions#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/registered_model_versions#id DataDatabricksRegisteredModelVersions#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/registered_model_versions#metastore_id DataDatabricksRegisteredModelVersions#metastore_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/registered_model_versions#metastore_id DataDatabricksRegisteredModelVersions#metastore_id}
   */
   readonly metastoreId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/registered_model_versions#model_name DataDatabricksRegisteredModelVersions#model_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/registered_model_versions#model_name DataDatabricksRegisteredModelVersions#model_name}
   */
   readonly modelName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/registered_model_versions#model_version_dependencies DataDatabricksRegisteredModelVersions#model_version_dependencies}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/registered_model_versions#model_version_dependencies DataDatabricksRegisteredModelVersions#model_version_dependencies}
   */
   readonly modelVersionDependencies?: DataDatabricksRegisteredModelVersionsModelVersionsModelVersionDependencies[] | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/registered_model_versions#run_id DataDatabricksRegisteredModelVersions#run_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/registered_model_versions#run_id DataDatabricksRegisteredModelVersions#run_id}
   */
   readonly runId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/registered_model_versions#run_workspace_id DataDatabricksRegisteredModelVersions#run_workspace_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/registered_model_versions#run_workspace_id DataDatabricksRegisteredModelVersions#run_workspace_id}
   */
   readonly runWorkspaceId?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/registered_model_versions#schema_name DataDatabricksRegisteredModelVersions#schema_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/registered_model_versions#schema_name DataDatabricksRegisteredModelVersions#schema_name}
   */
   readonly schemaName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/registered_model_versions#source DataDatabricksRegisteredModelVersions#source}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/registered_model_versions#source DataDatabricksRegisteredModelVersions#source}
   */
   readonly source?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/registered_model_versions#status DataDatabricksRegisteredModelVersions#status}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/registered_model_versions#status DataDatabricksRegisteredModelVersions#status}
   */
   readonly status?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/registered_model_versions#storage_location DataDatabricksRegisteredModelVersions#storage_location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/registered_model_versions#storage_location DataDatabricksRegisteredModelVersions#storage_location}
   */
   readonly storageLocation?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/registered_model_versions#updated_at DataDatabricksRegisteredModelVersions#updated_at}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/registered_model_versions#updated_at DataDatabricksRegisteredModelVersions#updated_at}
   */
   readonly updatedAt?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/registered_model_versions#updated_by DataDatabricksRegisteredModelVersions#updated_by}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/registered_model_versions#updated_by DataDatabricksRegisteredModelVersions#updated_by}
   */
   readonly updatedBy?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/registered_model_versions#version DataDatabricksRegisteredModelVersions#version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/registered_model_versions#version DataDatabricksRegisteredModelVersions#version}
   */
   readonly version?: number;
 }
@@ -1179,7 +1179,7 @@ export interface DataDatabricksRegisteredModelVersionsModelVersions {
 export function dataDatabricksRegisteredModelVersionsModelVersionsToTerraform(struct?: DataDatabricksRegisteredModelVersionsModelVersions | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     aliases: cdktn.listMapper(dataDatabricksRegisteredModelVersionsModelVersionsAliasesToTerraform, false)(struct!.aliases),
@@ -1207,7 +1207,7 @@ export function dataDatabricksRegisteredModelVersionsModelVersionsToTerraform(st
 export function dataDatabricksRegisteredModelVersionsModelVersionsToHclTerraform(struct?: DataDatabricksRegisteredModelVersionsModelVersions | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     aliases: {
@@ -1780,7 +1780,7 @@ export class DataDatabricksRegisteredModelVersionsModelVersionsList extends cdkt
 }
 export interface DataDatabricksRegisteredModelVersionsProviderConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/registered_model_versions#workspace_id DataDatabricksRegisteredModelVersions#workspace_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/registered_model_versions#workspace_id DataDatabricksRegisteredModelVersions#workspace_id}
   */
   readonly workspaceId?: string;
 }
@@ -1788,7 +1788,7 @@ export interface DataDatabricksRegisteredModelVersionsProviderConfig {
 export function dataDatabricksRegisteredModelVersionsProviderConfigToTerraform(struct?: DataDatabricksRegisteredModelVersionsProviderConfig | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     workspace_id: cdktn.stringToTerraform(struct!.workspaceId),
@@ -1799,7 +1799,7 @@ export function dataDatabricksRegisteredModelVersionsProviderConfigToTerraform(s
 export function dataDatabricksRegisteredModelVersionsProviderConfigToHclTerraform(struct?: DataDatabricksRegisteredModelVersionsProviderConfig | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     workspace_id: {
@@ -1874,7 +1874,7 @@ export class DataDatabricksRegisteredModelVersionsProviderConfigOutputReference 
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/registered_model_versions databricks_registered_model_versions}
+* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/registered_model_versions databricks_registered_model_versions}
 */
 export class DataDatabricksRegisteredModelVersions extends cdktn.TerraformDataSource {
 
@@ -1890,7 +1890,7 @@ export class DataDatabricksRegisteredModelVersions extends cdktn.TerraformDataSo
   * Generates CDKTN code for importing a DataDatabricksRegisteredModelVersions resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataDatabricksRegisteredModelVersions to import
-  * @param importFromId The id of the existing DataDatabricksRegisteredModelVersions that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/registered_model_versions#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataDatabricksRegisteredModelVersions that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/registered_model_versions#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataDatabricksRegisteredModelVersions to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -1902,7 +1902,7 @@ export class DataDatabricksRegisteredModelVersions extends cdktn.TerraformDataSo
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/registered_model_versions databricks_registered_model_versions} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/registered_model_versions databricks_registered_model_versions} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -1913,7 +1913,7 @@ export class DataDatabricksRegisteredModelVersions extends cdktn.TerraformDataSo
       terraformResourceType: 'databricks_registered_model_versions',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '1.117.0',
+        providerVersion: '1.118.0',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,

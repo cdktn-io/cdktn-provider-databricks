@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/quality_monitor_v2
+// https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/quality_monitor_v2
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,21 +13,21 @@ import * as cdktn from 'cdktn';
 
 export interface DataDatabricksQualityMonitorV2Config extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/quality_monitor_v2#object_id DataDatabricksQualityMonitorV2#object_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/quality_monitor_v2#object_id DataDatabricksQualityMonitorV2#object_id}
   */
   readonly objectId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/quality_monitor_v2#object_type DataDatabricksQualityMonitorV2#object_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/quality_monitor_v2#object_type DataDatabricksQualityMonitorV2#object_type}
   */
   readonly objectType: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/quality_monitor_v2#provider_config DataDatabricksQualityMonitorV2#provider_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/quality_monitor_v2#provider_config DataDatabricksQualityMonitorV2#provider_config}
   */
   readonly providerConfig?: DataDatabricksQualityMonitorV2ProviderConfig;
 }
 export interface DataDatabricksQualityMonitorV2AnomalyDetectionConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/quality_monitor_v2#excluded_table_full_names DataDatabricksQualityMonitorV2#excluded_table_full_names}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/quality_monitor_v2#excluded_table_full_names DataDatabricksQualityMonitorV2#excluded_table_full_names}
   */
   readonly excludedTableFullNames?: string[];
 }
@@ -35,7 +35,7 @@ export interface DataDatabricksQualityMonitorV2AnomalyDetectionConfig {
 export function dataDatabricksQualityMonitorV2AnomalyDetectionConfigToTerraform(struct?: DataDatabricksQualityMonitorV2AnomalyDetectionConfig): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     excluded_table_full_names: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.excludedTableFullNames),
@@ -46,7 +46,7 @@ export function dataDatabricksQualityMonitorV2AnomalyDetectionConfigToTerraform(
 export function dataDatabricksQualityMonitorV2AnomalyDetectionConfigToHclTerraform(struct?: DataDatabricksQualityMonitorV2AnomalyDetectionConfig): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     excluded_table_full_names: {
@@ -121,7 +121,7 @@ export class DataDatabricksQualityMonitorV2AnomalyDetectionConfigOutputReference
 }
 export interface DataDatabricksQualityMonitorV2ProviderConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/quality_monitor_v2#workspace_id DataDatabricksQualityMonitorV2#workspace_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/quality_monitor_v2#workspace_id DataDatabricksQualityMonitorV2#workspace_id}
   */
   readonly workspaceId?: string;
 }
@@ -129,7 +129,7 @@ export interface DataDatabricksQualityMonitorV2ProviderConfig {
 export function dataDatabricksQualityMonitorV2ProviderConfigToTerraform(struct?: DataDatabricksQualityMonitorV2ProviderConfig | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     workspace_id: cdktn.stringToTerraform(struct!.workspaceId),
@@ -140,7 +140,7 @@ export function dataDatabricksQualityMonitorV2ProviderConfigToTerraform(struct?:
 export function dataDatabricksQualityMonitorV2ProviderConfigToHclTerraform(struct?: DataDatabricksQualityMonitorV2ProviderConfig | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     workspace_id: {
@@ -215,11 +215,11 @@ export class DataDatabricksQualityMonitorV2ProviderConfigOutputReference extends
 }
 export interface DataDatabricksQualityMonitorV2ValidityCheckConfigurationsPercentNullValidityCheck {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/quality_monitor_v2#column_names DataDatabricksQualityMonitorV2#column_names}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/quality_monitor_v2#column_names DataDatabricksQualityMonitorV2#column_names}
   */
   readonly columnNames?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/quality_monitor_v2#upper_bound DataDatabricksQualityMonitorV2#upper_bound}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/quality_monitor_v2#upper_bound DataDatabricksQualityMonitorV2#upper_bound}
   */
   readonly upperBound?: number;
 }
@@ -227,7 +227,7 @@ export interface DataDatabricksQualityMonitorV2ValidityCheckConfigurationsPercen
 export function dataDatabricksQualityMonitorV2ValidityCheckConfigurationsPercentNullValidityCheckToTerraform(struct?: DataDatabricksQualityMonitorV2ValidityCheckConfigurationsPercentNullValidityCheck | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     column_names: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.columnNames),
@@ -239,7 +239,7 @@ export function dataDatabricksQualityMonitorV2ValidityCheckConfigurationsPercent
 export function dataDatabricksQualityMonitorV2ValidityCheckConfigurationsPercentNullValidityCheckToHclTerraform(struct?: DataDatabricksQualityMonitorV2ValidityCheckConfigurationsPercentNullValidityCheck | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     column_names: {
@@ -342,15 +342,15 @@ export class DataDatabricksQualityMonitorV2ValidityCheckConfigurationsPercentNul
 }
 export interface DataDatabricksQualityMonitorV2ValidityCheckConfigurationsRangeValidityCheck {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/quality_monitor_v2#column_names DataDatabricksQualityMonitorV2#column_names}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/quality_monitor_v2#column_names DataDatabricksQualityMonitorV2#column_names}
   */
   readonly columnNames?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/quality_monitor_v2#lower_bound DataDatabricksQualityMonitorV2#lower_bound}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/quality_monitor_v2#lower_bound DataDatabricksQualityMonitorV2#lower_bound}
   */
   readonly lowerBound?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/quality_monitor_v2#upper_bound DataDatabricksQualityMonitorV2#upper_bound}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/quality_monitor_v2#upper_bound DataDatabricksQualityMonitorV2#upper_bound}
   */
   readonly upperBound?: number;
 }
@@ -358,7 +358,7 @@ export interface DataDatabricksQualityMonitorV2ValidityCheckConfigurationsRangeV
 export function dataDatabricksQualityMonitorV2ValidityCheckConfigurationsRangeValidityCheckToTerraform(struct?: DataDatabricksQualityMonitorV2ValidityCheckConfigurationsRangeValidityCheck | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     column_names: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.columnNames),
@@ -371,7 +371,7 @@ export function dataDatabricksQualityMonitorV2ValidityCheckConfigurationsRangeVa
 export function dataDatabricksQualityMonitorV2ValidityCheckConfigurationsRangeValidityCheckToHclTerraform(struct?: DataDatabricksQualityMonitorV2ValidityCheckConfigurationsRangeValidityCheck | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     column_names: {
@@ -502,7 +502,7 @@ export class DataDatabricksQualityMonitorV2ValidityCheckConfigurationsRangeValid
 }
 export interface DataDatabricksQualityMonitorV2ValidityCheckConfigurationsUniquenessValidityCheck {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/quality_monitor_v2#column_names DataDatabricksQualityMonitorV2#column_names}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/quality_monitor_v2#column_names DataDatabricksQualityMonitorV2#column_names}
   */
   readonly columnNames?: string[];
 }
@@ -510,7 +510,7 @@ export interface DataDatabricksQualityMonitorV2ValidityCheckConfigurationsUnique
 export function dataDatabricksQualityMonitorV2ValidityCheckConfigurationsUniquenessValidityCheckToTerraform(struct?: DataDatabricksQualityMonitorV2ValidityCheckConfigurationsUniquenessValidityCheck | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     column_names: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.columnNames),
@@ -521,7 +521,7 @@ export function dataDatabricksQualityMonitorV2ValidityCheckConfigurationsUniquen
 export function dataDatabricksQualityMonitorV2ValidityCheckConfigurationsUniquenessValidityCheckToHclTerraform(struct?: DataDatabricksQualityMonitorV2ValidityCheckConfigurationsUniquenessValidityCheck | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     column_names: {
@@ -596,19 +596,19 @@ export class DataDatabricksQualityMonitorV2ValidityCheckConfigurationsUniqueness
 }
 export interface DataDatabricksQualityMonitorV2ValidityCheckConfigurations {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/quality_monitor_v2#name DataDatabricksQualityMonitorV2#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/quality_monitor_v2#name DataDatabricksQualityMonitorV2#name}
   */
   readonly name?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/quality_monitor_v2#percent_null_validity_check DataDatabricksQualityMonitorV2#percent_null_validity_check}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/quality_monitor_v2#percent_null_validity_check DataDatabricksQualityMonitorV2#percent_null_validity_check}
   */
   readonly percentNullValidityCheck?: DataDatabricksQualityMonitorV2ValidityCheckConfigurationsPercentNullValidityCheck;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/quality_monitor_v2#range_validity_check DataDatabricksQualityMonitorV2#range_validity_check}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/quality_monitor_v2#range_validity_check DataDatabricksQualityMonitorV2#range_validity_check}
   */
   readonly rangeValidityCheck?: DataDatabricksQualityMonitorV2ValidityCheckConfigurationsRangeValidityCheck;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/quality_monitor_v2#uniqueness_validity_check DataDatabricksQualityMonitorV2#uniqueness_validity_check}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/quality_monitor_v2#uniqueness_validity_check DataDatabricksQualityMonitorV2#uniqueness_validity_check}
   */
   readonly uniquenessValidityCheck?: DataDatabricksQualityMonitorV2ValidityCheckConfigurationsUniquenessValidityCheck;
 }
@@ -616,7 +616,7 @@ export interface DataDatabricksQualityMonitorV2ValidityCheckConfigurations {
 export function dataDatabricksQualityMonitorV2ValidityCheckConfigurationsToTerraform(struct?: DataDatabricksQualityMonitorV2ValidityCheckConfigurations): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     name: cdktn.stringToTerraform(struct!.name),
@@ -630,7 +630,7 @@ export function dataDatabricksQualityMonitorV2ValidityCheckConfigurationsToTerra
 export function dataDatabricksQualityMonitorV2ValidityCheckConfigurationsToHclTerraform(struct?: DataDatabricksQualityMonitorV2ValidityCheckConfigurations): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     name: {
@@ -801,7 +801,7 @@ export class DataDatabricksQualityMonitorV2ValidityCheckConfigurationsList exten
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/quality_monitor_v2 databricks_quality_monitor_v2}
+* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/quality_monitor_v2 databricks_quality_monitor_v2}
 */
 export class DataDatabricksQualityMonitorV2 extends cdktn.TerraformDataSource {
 
@@ -817,7 +817,7 @@ export class DataDatabricksQualityMonitorV2 extends cdktn.TerraformDataSource {
   * Generates CDKTN code for importing a DataDatabricksQualityMonitorV2 resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataDatabricksQualityMonitorV2 to import
-  * @param importFromId The id of the existing DataDatabricksQualityMonitorV2 that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/quality_monitor_v2#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataDatabricksQualityMonitorV2 that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/quality_monitor_v2#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataDatabricksQualityMonitorV2 to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -829,7 +829,7 @@ export class DataDatabricksQualityMonitorV2 extends cdktn.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/quality_monitor_v2 databricks_quality_monitor_v2} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/quality_monitor_v2 databricks_quality_monitor_v2} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -840,7 +840,7 @@ export class DataDatabricksQualityMonitorV2 extends cdktn.TerraformDataSource {
       terraformResourceType: 'databricks_quality_monitor_v2',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '1.117.0',
+        providerVersion: '1.118.0',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,

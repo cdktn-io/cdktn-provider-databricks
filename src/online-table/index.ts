@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/online_table
+// https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/online_table
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,32 +13,32 @@ import * as cdktn from 'cdktn';
 
 export interface OnlineTableConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/online_table#id OnlineTable#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/online_table#id OnlineTable#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/online_table#name OnlineTable#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/online_table#name OnlineTable#name}
   */
   readonly name: string;
   /**
   * provider_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/online_table#provider_config OnlineTable#provider_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/online_table#provider_config OnlineTable#provider_config}
   */
   readonly providerConfig?: OnlineTableProviderConfig;
   /**
   * spec block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/online_table#spec OnlineTable#spec}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/online_table#spec OnlineTable#spec}
   */
   readonly spec?: OnlineTableSpec;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/online_table#timeouts OnlineTable#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/online_table#timeouts OnlineTable#timeouts}
   */
   readonly timeouts?: OnlineTableTimeouts;
 }
@@ -48,7 +48,7 @@ export interface OnlineTableStatusContinuousUpdateStatusInitialPipelineSyncProgr
 export function onlineTableStatusContinuousUpdateStatusInitialPipelineSyncProgressToTerraform(struct?: OnlineTableStatusContinuousUpdateStatusInitialPipelineSyncProgress): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -58,7 +58,7 @@ export function onlineTableStatusContinuousUpdateStatusInitialPipelineSyncProgre
 export function onlineTableStatusContinuousUpdateStatusInitialPipelineSyncProgressToHclTerraform(struct?: OnlineTableStatusContinuousUpdateStatusInitialPipelineSyncProgress): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -143,7 +143,7 @@ export interface OnlineTableStatusContinuousUpdateStatus {
 export function onlineTableStatusContinuousUpdateStatusToTerraform(struct?: OnlineTableStatusContinuousUpdateStatus): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -153,7 +153,7 @@ export function onlineTableStatusContinuousUpdateStatusToTerraform(struct?: Onli
 export function onlineTableStatusContinuousUpdateStatusToHclTerraform(struct?: OnlineTableStatusContinuousUpdateStatus): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -229,7 +229,7 @@ export interface OnlineTableStatusFailedStatus {
 export function onlineTableStatusFailedStatusToTerraform(struct?: OnlineTableStatusFailedStatus): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -239,7 +239,7 @@ export function onlineTableStatusFailedStatusToTerraform(struct?: OnlineTableSta
 export function onlineTableStatusFailedStatusToHclTerraform(struct?: OnlineTableStatusFailedStatus): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -309,7 +309,7 @@ export interface OnlineTableStatusProvisioningStatusInitialPipelineSyncProgress 
 export function onlineTableStatusProvisioningStatusInitialPipelineSyncProgressToTerraform(struct?: OnlineTableStatusProvisioningStatusInitialPipelineSyncProgress): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -319,7 +319,7 @@ export function onlineTableStatusProvisioningStatusInitialPipelineSyncProgressTo
 export function onlineTableStatusProvisioningStatusInitialPipelineSyncProgressToHclTerraform(struct?: OnlineTableStatusProvisioningStatusInitialPipelineSyncProgress): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -404,7 +404,7 @@ export interface OnlineTableStatusProvisioningStatus {
 export function onlineTableStatusProvisioningStatusToTerraform(struct?: OnlineTableStatusProvisioningStatus): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -414,7 +414,7 @@ export function onlineTableStatusProvisioningStatusToTerraform(struct?: OnlineTa
 export function onlineTableStatusProvisioningStatusToHclTerraform(struct?: OnlineTableStatusProvisioningStatus): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -480,7 +480,7 @@ export interface OnlineTableStatusTriggeredUpdateStatusTriggeredUpdateProgress {
 export function onlineTableStatusTriggeredUpdateStatusTriggeredUpdateProgressToTerraform(struct?: OnlineTableStatusTriggeredUpdateStatusTriggeredUpdateProgress): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -490,7 +490,7 @@ export function onlineTableStatusTriggeredUpdateStatusTriggeredUpdateProgressToT
 export function onlineTableStatusTriggeredUpdateStatusTriggeredUpdateProgressToHclTerraform(struct?: OnlineTableStatusTriggeredUpdateStatusTriggeredUpdateProgress): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -575,7 +575,7 @@ export interface OnlineTableStatusTriggeredUpdateStatus {
 export function onlineTableStatusTriggeredUpdateStatusToTerraform(struct?: OnlineTableStatusTriggeredUpdateStatus): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -585,7 +585,7 @@ export function onlineTableStatusTriggeredUpdateStatusToTerraform(struct?: Onlin
 export function onlineTableStatusTriggeredUpdateStatusToHclTerraform(struct?: OnlineTableStatusTriggeredUpdateStatus): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -661,7 +661,7 @@ export interface OnlineTableStatus {
 export function onlineTableStatusToTerraform(struct?: OnlineTableStatus): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -671,7 +671,7 @@ export function onlineTableStatusToTerraform(struct?: OnlineTableStatus): any {
 export function onlineTableStatusToHclTerraform(struct?: OnlineTableStatus): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -761,7 +761,7 @@ export class OnlineTableStatusList extends cdktn.ComplexList {
 }
 export interface OnlineTableProviderConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/online_table#workspace_id OnlineTable#workspace_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/online_table#workspace_id OnlineTable#workspace_id}
   */
   readonly workspaceId?: string;
 }
@@ -769,7 +769,7 @@ export interface OnlineTableProviderConfig {
 export function onlineTableProviderConfigToTerraform(struct?: OnlineTableProviderConfigOutputReference | OnlineTableProviderConfig): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     workspace_id: cdktn.stringToTerraform(struct!.workspaceId),
@@ -780,7 +780,7 @@ export function onlineTableProviderConfigToTerraform(struct?: OnlineTableProvide
 export function onlineTableProviderConfigToHclTerraform(struct?: OnlineTableProviderConfigOutputReference | OnlineTableProviderConfig): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     workspace_id: {
@@ -849,7 +849,7 @@ export interface OnlineTableSpecRunContinuously {
 export function onlineTableSpecRunContinuouslyToTerraform(struct?: OnlineTableSpecRunContinuouslyOutputReference | OnlineTableSpecRunContinuously): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -859,7 +859,7 @@ export function onlineTableSpecRunContinuouslyToTerraform(struct?: OnlineTableSp
 export function onlineTableSpecRunContinuouslyToHclTerraform(struct?: OnlineTableSpecRunContinuouslyOutputReference | OnlineTableSpecRunContinuously): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -898,7 +898,7 @@ export interface OnlineTableSpecRunTriggered {
 export function onlineTableSpecRunTriggeredToTerraform(struct?: OnlineTableSpecRunTriggeredOutputReference | OnlineTableSpecRunTriggered): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -908,7 +908,7 @@ export function onlineTableSpecRunTriggeredToTerraform(struct?: OnlineTableSpecR
 export function onlineTableSpecRunTriggeredToHclTerraform(struct?: OnlineTableSpecRunTriggeredOutputReference | OnlineTableSpecRunTriggered): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -943,31 +943,31 @@ export class OnlineTableSpecRunTriggeredOutputReference extends cdktn.ComplexObj
 }
 export interface OnlineTableSpec {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/online_table#perform_full_copy OnlineTable#perform_full_copy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/online_table#perform_full_copy OnlineTable#perform_full_copy}
   */
   readonly performFullCopy?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/online_table#primary_key_columns OnlineTable#primary_key_columns}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/online_table#primary_key_columns OnlineTable#primary_key_columns}
   */
   readonly primaryKeyColumns?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/online_table#source_table_full_name OnlineTable#source_table_full_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/online_table#source_table_full_name OnlineTable#source_table_full_name}
   */
   readonly sourceTableFullName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/online_table#timeseries_key OnlineTable#timeseries_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/online_table#timeseries_key OnlineTable#timeseries_key}
   */
   readonly timeseriesKey?: string;
   /**
   * run_continuously block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/online_table#run_continuously OnlineTable#run_continuously}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/online_table#run_continuously OnlineTable#run_continuously}
   */
   readonly runContinuously?: OnlineTableSpecRunContinuously;
   /**
   * run_triggered block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/online_table#run_triggered OnlineTable#run_triggered}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/online_table#run_triggered OnlineTable#run_triggered}
   */
   readonly runTriggered?: OnlineTableSpecRunTriggered;
 }
@@ -975,7 +975,7 @@ export interface OnlineTableSpec {
 export function onlineTableSpecToTerraform(struct?: OnlineTableSpecOutputReference | OnlineTableSpec): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     perform_full_copy: cdktn.booleanToTerraform(struct!.performFullCopy),
@@ -991,7 +991,7 @@ export function onlineTableSpecToTerraform(struct?: OnlineTableSpecOutputReferen
 export function onlineTableSpecToHclTerraform(struct?: OnlineTableSpecOutputReference | OnlineTableSpec): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     perform_full_copy: {
@@ -1201,7 +1201,7 @@ export class OnlineTableSpecOutputReference extends cdktn.ComplexObject {
 }
 export interface OnlineTableTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/online_table#create OnlineTable#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/online_table#create OnlineTable#create}
   */
   readonly create?: string;
 }
@@ -1209,7 +1209,7 @@ export interface OnlineTableTimeouts {
 export function onlineTableTimeoutsToTerraform(struct?: OnlineTableTimeouts | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     create: cdktn.stringToTerraform(struct!.create),
@@ -1220,7 +1220,7 @@ export function onlineTableTimeoutsToTerraform(struct?: OnlineTableTimeouts | cd
 export function onlineTableTimeoutsToHclTerraform(struct?: OnlineTableTimeouts | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     create: {
@@ -1295,7 +1295,7 @@ export class OnlineTableTimeoutsOutputReference extends cdktn.ComplexObject {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/online_table databricks_online_table}
+* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/online_table databricks_online_table}
 */
 export class OnlineTable extends cdktn.TerraformResource {
 
@@ -1311,7 +1311,7 @@ export class OnlineTable extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a OnlineTable resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the OnlineTable to import
-  * @param importFromId The id of the existing OnlineTable that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/online_table#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing OnlineTable that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/online_table#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the OnlineTable to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -1323,7 +1323,7 @@ export class OnlineTable extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/online_table databricks_online_table} Resource
+  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/online_table databricks_online_table} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -1334,7 +1334,7 @@ export class OnlineTable extends cdktn.TerraformResource {
       terraformResourceType: 'databricks_online_table',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '1.117.0',
+        providerVersion: '1.118.0',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,

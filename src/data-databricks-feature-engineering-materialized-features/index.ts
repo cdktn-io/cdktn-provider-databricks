@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/feature_engineering_materialized_features
+// https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/feature_engineering_materialized_features
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,21 +13,21 @@ import * as cdktn from 'cdktn';
 
 export interface DataDatabricksFeatureEngineeringMaterializedFeaturesConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/feature_engineering_materialized_features#feature_name DataDatabricksFeatureEngineeringMaterializedFeatures#feature_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/feature_engineering_materialized_features#feature_name DataDatabricksFeatureEngineeringMaterializedFeatures#feature_name}
   */
   readonly featureName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/feature_engineering_materialized_features#page_size DataDatabricksFeatureEngineeringMaterializedFeatures#page_size}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/feature_engineering_materialized_features#page_size DataDatabricksFeatureEngineeringMaterializedFeatures#page_size}
   */
   readonly pageSize?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/feature_engineering_materialized_features#provider_config DataDatabricksFeatureEngineeringMaterializedFeatures#provider_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/feature_engineering_materialized_features#provider_config DataDatabricksFeatureEngineeringMaterializedFeatures#provider_config}
   */
   readonly providerConfig?: DataDatabricksFeatureEngineeringMaterializedFeaturesProviderConfig;
 }
 export interface DataDatabricksFeatureEngineeringMaterializedFeaturesMaterializedFeaturesCronScheduleTrigger {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/feature_engineering_materialized_features#cron_expression DataDatabricksFeatureEngineeringMaterializedFeatures#cron_expression}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/feature_engineering_materialized_features#cron_expression DataDatabricksFeatureEngineeringMaterializedFeatures#cron_expression}
   */
   readonly cronExpression?: string;
 }
@@ -35,7 +35,7 @@ export interface DataDatabricksFeatureEngineeringMaterializedFeaturesMaterialize
 export function dataDatabricksFeatureEngineeringMaterializedFeaturesMaterializedFeaturesCronScheduleTriggerToTerraform(struct?: DataDatabricksFeatureEngineeringMaterializedFeaturesMaterializedFeaturesCronScheduleTrigger): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     cron_expression: cdktn.stringToTerraform(struct!.cronExpression),
@@ -46,7 +46,7 @@ export function dataDatabricksFeatureEngineeringMaterializedFeaturesMaterialized
 export function dataDatabricksFeatureEngineeringMaterializedFeaturesMaterializedFeaturesCronScheduleTriggerToHclTerraform(struct?: DataDatabricksFeatureEngineeringMaterializedFeaturesMaterializedFeaturesCronScheduleTrigger): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     cron_expression: {
@@ -111,15 +111,15 @@ export class DataDatabricksFeatureEngineeringMaterializedFeaturesMaterializedFea
 }
 export interface DataDatabricksFeatureEngineeringMaterializedFeaturesMaterializedFeaturesOfflineStoreConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/feature_engineering_materialized_features#catalog_name DataDatabricksFeatureEngineeringMaterializedFeatures#catalog_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/feature_engineering_materialized_features#catalog_name DataDatabricksFeatureEngineeringMaterializedFeatures#catalog_name}
   */
   readonly catalogName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/feature_engineering_materialized_features#schema_name DataDatabricksFeatureEngineeringMaterializedFeatures#schema_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/feature_engineering_materialized_features#schema_name DataDatabricksFeatureEngineeringMaterializedFeatures#schema_name}
   */
   readonly schemaName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/feature_engineering_materialized_features#table_name_prefix DataDatabricksFeatureEngineeringMaterializedFeatures#table_name_prefix}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/feature_engineering_materialized_features#table_name_prefix DataDatabricksFeatureEngineeringMaterializedFeatures#table_name_prefix}
   */
   readonly tableNamePrefix: string;
 }
@@ -127,7 +127,7 @@ export interface DataDatabricksFeatureEngineeringMaterializedFeaturesMaterialize
 export function dataDatabricksFeatureEngineeringMaterializedFeaturesMaterializedFeaturesOfflineStoreConfigToTerraform(struct?: DataDatabricksFeatureEngineeringMaterializedFeaturesMaterializedFeaturesOfflineStoreConfig): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     catalog_name: cdktn.stringToTerraform(struct!.catalogName),
@@ -140,7 +140,7 @@ export function dataDatabricksFeatureEngineeringMaterializedFeaturesMaterialized
 export function dataDatabricksFeatureEngineeringMaterializedFeaturesMaterializedFeaturesOfflineStoreConfigToHclTerraform(struct?: DataDatabricksFeatureEngineeringMaterializedFeaturesMaterializedFeaturesOfflineStoreConfig): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     catalog_name: {
@@ -252,19 +252,19 @@ export class DataDatabricksFeatureEngineeringMaterializedFeaturesMaterializedFea
 }
 export interface DataDatabricksFeatureEngineeringMaterializedFeaturesMaterializedFeaturesOnlineStoreConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/feature_engineering_materialized_features#catalog_name DataDatabricksFeatureEngineeringMaterializedFeatures#catalog_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/feature_engineering_materialized_features#catalog_name DataDatabricksFeatureEngineeringMaterializedFeatures#catalog_name}
   */
   readonly catalogName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/feature_engineering_materialized_features#online_store_name DataDatabricksFeatureEngineeringMaterializedFeatures#online_store_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/feature_engineering_materialized_features#online_store_name DataDatabricksFeatureEngineeringMaterializedFeatures#online_store_name}
   */
   readonly onlineStoreName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/feature_engineering_materialized_features#schema_name DataDatabricksFeatureEngineeringMaterializedFeatures#schema_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/feature_engineering_materialized_features#schema_name DataDatabricksFeatureEngineeringMaterializedFeatures#schema_name}
   */
   readonly schemaName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/feature_engineering_materialized_features#table_name_prefix DataDatabricksFeatureEngineeringMaterializedFeatures#table_name_prefix}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/feature_engineering_materialized_features#table_name_prefix DataDatabricksFeatureEngineeringMaterializedFeatures#table_name_prefix}
   */
   readonly tableNamePrefix: string;
 }
@@ -272,7 +272,7 @@ export interface DataDatabricksFeatureEngineeringMaterializedFeaturesMaterialize
 export function dataDatabricksFeatureEngineeringMaterializedFeaturesMaterializedFeaturesOnlineStoreConfigToTerraform(struct?: DataDatabricksFeatureEngineeringMaterializedFeaturesMaterializedFeaturesOnlineStoreConfig): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     catalog_name: cdktn.stringToTerraform(struct!.catalogName),
@@ -286,7 +286,7 @@ export function dataDatabricksFeatureEngineeringMaterializedFeaturesMaterialized
 export function dataDatabricksFeatureEngineeringMaterializedFeaturesMaterializedFeaturesOnlineStoreConfigToHclTerraform(struct?: DataDatabricksFeatureEngineeringMaterializedFeaturesMaterializedFeaturesOnlineStoreConfig): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     catalog_name: {
@@ -423,7 +423,7 @@ export class DataDatabricksFeatureEngineeringMaterializedFeaturesMaterializedFea
 }
 export interface DataDatabricksFeatureEngineeringMaterializedFeaturesMaterializedFeaturesProviderConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/feature_engineering_materialized_features#workspace_id DataDatabricksFeatureEngineeringMaterializedFeatures#workspace_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/feature_engineering_materialized_features#workspace_id DataDatabricksFeatureEngineeringMaterializedFeatures#workspace_id}
   */
   readonly workspaceId?: string;
 }
@@ -431,7 +431,7 @@ export interface DataDatabricksFeatureEngineeringMaterializedFeaturesMaterialize
 export function dataDatabricksFeatureEngineeringMaterializedFeaturesMaterializedFeaturesProviderConfigToTerraform(struct?: DataDatabricksFeatureEngineeringMaterializedFeaturesMaterializedFeaturesProviderConfig | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     workspace_id: cdktn.stringToTerraform(struct!.workspaceId),
@@ -442,7 +442,7 @@ export function dataDatabricksFeatureEngineeringMaterializedFeaturesMaterialized
 export function dataDatabricksFeatureEngineeringMaterializedFeaturesMaterializedFeaturesProviderConfigToHclTerraform(struct?: DataDatabricksFeatureEngineeringMaterializedFeaturesMaterializedFeaturesProviderConfig | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     workspace_id: {
@@ -517,7 +517,7 @@ export class DataDatabricksFeatureEngineeringMaterializedFeaturesMaterializedFea
 }
 export interface DataDatabricksFeatureEngineeringMaterializedFeaturesMaterializedFeaturesStreamingMode {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/feature_engineering_materialized_features#mode DataDatabricksFeatureEngineeringMaterializedFeatures#mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/feature_engineering_materialized_features#mode DataDatabricksFeatureEngineeringMaterializedFeatures#mode}
   */
   readonly mode?: string;
 }
@@ -525,7 +525,7 @@ export interface DataDatabricksFeatureEngineeringMaterializedFeaturesMaterialize
 export function dataDatabricksFeatureEngineeringMaterializedFeaturesMaterializedFeaturesStreamingModeToTerraform(struct?: DataDatabricksFeatureEngineeringMaterializedFeaturesMaterializedFeaturesStreamingMode): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     mode: cdktn.stringToTerraform(struct!.mode),
@@ -536,7 +536,7 @@ export function dataDatabricksFeatureEngineeringMaterializedFeaturesMaterialized
 export function dataDatabricksFeatureEngineeringMaterializedFeaturesMaterializedFeaturesStreamingModeToHclTerraform(struct?: DataDatabricksFeatureEngineeringMaterializedFeaturesMaterializedFeaturesStreamingMode): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     mode: {
@@ -605,7 +605,7 @@ export interface DataDatabricksFeatureEngineeringMaterializedFeaturesMaterialize
 export function dataDatabricksFeatureEngineeringMaterializedFeaturesMaterializedFeaturesTableTriggerToTerraform(struct?: DataDatabricksFeatureEngineeringMaterializedFeaturesMaterializedFeaturesTableTrigger): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -615,7 +615,7 @@ export function dataDatabricksFeatureEngineeringMaterializedFeaturesMaterialized
 export function dataDatabricksFeatureEngineeringMaterializedFeaturesMaterializedFeaturesTableTriggerToHclTerraform(struct?: DataDatabricksFeatureEngineeringMaterializedFeaturesMaterializedFeaturesTableTrigger): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -650,11 +650,11 @@ export class DataDatabricksFeatureEngineeringMaterializedFeaturesMaterializedFea
 }
 export interface DataDatabricksFeatureEngineeringMaterializedFeaturesMaterializedFeatures {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/feature_engineering_materialized_features#materialized_feature_id DataDatabricksFeatureEngineeringMaterializedFeatures#materialized_feature_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/feature_engineering_materialized_features#materialized_feature_id DataDatabricksFeatureEngineeringMaterializedFeatures#materialized_feature_id}
   */
   readonly materializedFeatureId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/feature_engineering_materialized_features#provider_config DataDatabricksFeatureEngineeringMaterializedFeatures#provider_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/feature_engineering_materialized_features#provider_config DataDatabricksFeatureEngineeringMaterializedFeatures#provider_config}
   */
   readonly providerConfig?: DataDatabricksFeatureEngineeringMaterializedFeaturesMaterializedFeaturesProviderConfig;
 }
@@ -662,7 +662,7 @@ export interface DataDatabricksFeatureEngineeringMaterializedFeaturesMaterialize
 export function dataDatabricksFeatureEngineeringMaterializedFeaturesMaterializedFeaturesToTerraform(struct?: DataDatabricksFeatureEngineeringMaterializedFeaturesMaterializedFeatures): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     materialized_feature_id: cdktn.stringToTerraform(struct!.materializedFeatureId),
@@ -674,7 +674,7 @@ export function dataDatabricksFeatureEngineeringMaterializedFeaturesMaterialized
 export function dataDatabricksFeatureEngineeringMaterializedFeaturesMaterializedFeaturesToHclTerraform(struct?: DataDatabricksFeatureEngineeringMaterializedFeaturesMaterializedFeatures): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     materialized_feature_id: {
@@ -846,7 +846,7 @@ export class DataDatabricksFeatureEngineeringMaterializedFeaturesMaterializedFea
 }
 export interface DataDatabricksFeatureEngineeringMaterializedFeaturesProviderConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/feature_engineering_materialized_features#workspace_id DataDatabricksFeatureEngineeringMaterializedFeatures#workspace_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/feature_engineering_materialized_features#workspace_id DataDatabricksFeatureEngineeringMaterializedFeatures#workspace_id}
   */
   readonly workspaceId?: string;
 }
@@ -854,7 +854,7 @@ export interface DataDatabricksFeatureEngineeringMaterializedFeaturesProviderCon
 export function dataDatabricksFeatureEngineeringMaterializedFeaturesProviderConfigToTerraform(struct?: DataDatabricksFeatureEngineeringMaterializedFeaturesProviderConfig | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     workspace_id: cdktn.stringToTerraform(struct!.workspaceId),
@@ -865,7 +865,7 @@ export function dataDatabricksFeatureEngineeringMaterializedFeaturesProviderConf
 export function dataDatabricksFeatureEngineeringMaterializedFeaturesProviderConfigToHclTerraform(struct?: DataDatabricksFeatureEngineeringMaterializedFeaturesProviderConfig | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     workspace_id: {
@@ -940,7 +940,7 @@ export class DataDatabricksFeatureEngineeringMaterializedFeaturesProviderConfigO
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/feature_engineering_materialized_features databricks_feature_engineering_materialized_features}
+* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/feature_engineering_materialized_features databricks_feature_engineering_materialized_features}
 */
 export class DataDatabricksFeatureEngineeringMaterializedFeatures extends cdktn.TerraformDataSource {
 
@@ -956,7 +956,7 @@ export class DataDatabricksFeatureEngineeringMaterializedFeatures extends cdktn.
   * Generates CDKTN code for importing a DataDatabricksFeatureEngineeringMaterializedFeatures resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataDatabricksFeatureEngineeringMaterializedFeatures to import
-  * @param importFromId The id of the existing DataDatabricksFeatureEngineeringMaterializedFeatures that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/feature_engineering_materialized_features#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataDatabricksFeatureEngineeringMaterializedFeatures that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/feature_engineering_materialized_features#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataDatabricksFeatureEngineeringMaterializedFeatures to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -968,7 +968,7 @@ export class DataDatabricksFeatureEngineeringMaterializedFeatures extends cdktn.
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/feature_engineering_materialized_features databricks_feature_engineering_materialized_features} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/feature_engineering_materialized_features databricks_feature_engineering_materialized_features} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -979,7 +979,7 @@ export class DataDatabricksFeatureEngineeringMaterializedFeatures extends cdktn.
       terraformResourceType: 'databricks_feature_engineering_materialized_features',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '1.117.0',
+        providerVersion: '1.118.0',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,

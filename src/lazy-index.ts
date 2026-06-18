@@ -9,6 +9,8 @@ Object.defineProperty(exports, 'accountFederationPolicy', { get: function () { r
 Object.defineProperty(exports, 'accountNetworkPolicy', { get: function () { return require('./account-network-policy'); } });
 Object.defineProperty(exports, 'accountSettingUserPreferenceV2', { get: function () { return require('./account-setting-user-preference-v2'); } });
 Object.defineProperty(exports, 'accountSettingV2', { get: function () { return require('./account-setting-v2'); } });
+Object.defineProperty(exports, 'aiSearchEndpoint', { get: function () { return require('./ai-search-endpoint'); } });
+Object.defineProperty(exports, 'aiSearchIndex', { get: function () { return require('./ai-search-index'); } });
 Object.defineProperty(exports, 'aibiDashboardEmbeddingAccessPolicySetting', { get: function () { return require('./aibi-dashboard-embedding-access-policy-setting'); } });
 Object.defineProperty(exports, 'aibiDashboardEmbeddingApprovedDomainsSetting', { get: function () { return require('./aibi-dashboard-embedding-approved-domains-setting'); } });
 Object.defineProperty(exports, 'alert', { get: function () { return require('./alert'); } });
@@ -167,6 +169,10 @@ Object.defineProperty(exports, 'dataDatabricksAccountNetworkPolicies', { get: fu
 Object.defineProperty(exports, 'dataDatabricksAccountNetworkPolicy', { get: function () { return require('./data-databricks-account-network-policy'); } });
 Object.defineProperty(exports, 'dataDatabricksAccountSettingUserPreferenceV2', { get: function () { return require('./data-databricks-account-setting-user-preference-v2'); } });
 Object.defineProperty(exports, 'dataDatabricksAccountSettingV2', { get: function () { return require('./data-databricks-account-setting-v2'); } });
+Object.defineProperty(exports, 'dataDatabricksAiSearchEndpoint', { get: function () { return require('./data-databricks-ai-search-endpoint'); } });
+Object.defineProperty(exports, 'dataDatabricksAiSearchEndpoints', { get: function () { return require('./data-databricks-ai-search-endpoints'); } });
+Object.defineProperty(exports, 'dataDatabricksAiSearchIndex', { get: function () { return require('./data-databricks-ai-search-index'); } });
+Object.defineProperty(exports, 'dataDatabricksAiSearchIndexes', { get: function () { return require('./data-databricks-ai-search-indexes'); } });
 Object.defineProperty(exports, 'dataDatabricksAlertV2', { get: function () { return require('./data-databricks-alert-v2'); } });
 Object.defineProperty(exports, 'dataDatabricksAlertsV2', { get: function () { return require('./data-databricks-alerts-v2'); } });
 Object.defineProperty(exports, 'dataDatabricksApp', { get: function () { return require('./data-databricks-app'); } });

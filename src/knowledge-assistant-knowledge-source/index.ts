@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/knowledge_assistant_knowledge_source
+// https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/knowledge_assistant_knowledge_source
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,45 +13,45 @@ import * as cdktn from 'cdktn';
 
 export interface KnowledgeAssistantKnowledgeSourceConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/knowledge_assistant_knowledge_source#description KnowledgeAssistantKnowledgeSource#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/knowledge_assistant_knowledge_source#description KnowledgeAssistantKnowledgeSource#description}
   */
   readonly description: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/knowledge_assistant_knowledge_source#display_name KnowledgeAssistantKnowledgeSource#display_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/knowledge_assistant_knowledge_source#display_name KnowledgeAssistantKnowledgeSource#display_name}
   */
   readonly displayName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/knowledge_assistant_knowledge_source#file_table KnowledgeAssistantKnowledgeSource#file_table}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/knowledge_assistant_knowledge_source#file_table KnowledgeAssistantKnowledgeSource#file_table}
   */
   readonly fileTable?: KnowledgeAssistantKnowledgeSourceFileTable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/knowledge_assistant_knowledge_source#files KnowledgeAssistantKnowledgeSource#files}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/knowledge_assistant_knowledge_source#files KnowledgeAssistantKnowledgeSource#files}
   */
   readonly files?: KnowledgeAssistantKnowledgeSourceFiles;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/knowledge_assistant_knowledge_source#index KnowledgeAssistantKnowledgeSource#index}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/knowledge_assistant_knowledge_source#index KnowledgeAssistantKnowledgeSource#index}
   */
   readonly index?: KnowledgeAssistantKnowledgeSourceIndex;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/knowledge_assistant_knowledge_source#parent KnowledgeAssistantKnowledgeSource#parent}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/knowledge_assistant_knowledge_source#parent KnowledgeAssistantKnowledgeSource#parent}
   */
   readonly parent: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/knowledge_assistant_knowledge_source#provider_config KnowledgeAssistantKnowledgeSource#provider_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/knowledge_assistant_knowledge_source#provider_config KnowledgeAssistantKnowledgeSource#provider_config}
   */
   readonly providerConfig?: KnowledgeAssistantKnowledgeSourceProviderConfig;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/knowledge_assistant_knowledge_source#source_type KnowledgeAssistantKnowledgeSource#source_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/knowledge_assistant_knowledge_source#source_type KnowledgeAssistantKnowledgeSource#source_type}
   */
   readonly sourceType: string;
 }
 export interface KnowledgeAssistantKnowledgeSourceFileTable {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/knowledge_assistant_knowledge_source#file_col KnowledgeAssistantKnowledgeSource#file_col}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/knowledge_assistant_knowledge_source#file_col KnowledgeAssistantKnowledgeSource#file_col}
   */
   readonly fileCol: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/knowledge_assistant_knowledge_source#table_name KnowledgeAssistantKnowledgeSource#table_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/knowledge_assistant_knowledge_source#table_name KnowledgeAssistantKnowledgeSource#table_name}
   */
   readonly tableName: string;
 }
@@ -59,7 +59,7 @@ export interface KnowledgeAssistantKnowledgeSourceFileTable {
 export function knowledgeAssistantKnowledgeSourceFileTableToTerraform(struct?: KnowledgeAssistantKnowledgeSourceFileTable | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     file_col: cdktn.stringToTerraform(struct!.fileCol),
@@ -71,7 +71,7 @@ export function knowledgeAssistantKnowledgeSourceFileTableToTerraform(struct?: K
 export function knowledgeAssistantKnowledgeSourceFileTableToHclTerraform(struct?: KnowledgeAssistantKnowledgeSourceFileTable | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     file_col: {
@@ -168,7 +168,7 @@ export class KnowledgeAssistantKnowledgeSourceFileTableOutputReference extends c
 }
 export interface KnowledgeAssistantKnowledgeSourceFiles {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/knowledge_assistant_knowledge_source#path KnowledgeAssistantKnowledgeSource#path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/knowledge_assistant_knowledge_source#path KnowledgeAssistantKnowledgeSource#path}
   */
   readonly path: string;
 }
@@ -176,7 +176,7 @@ export interface KnowledgeAssistantKnowledgeSourceFiles {
 export function knowledgeAssistantKnowledgeSourceFilesToTerraform(struct?: KnowledgeAssistantKnowledgeSourceFiles | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     path: cdktn.stringToTerraform(struct!.path),
@@ -187,7 +187,7 @@ export function knowledgeAssistantKnowledgeSourceFilesToTerraform(struct?: Knowl
 export function knowledgeAssistantKnowledgeSourceFilesToHclTerraform(struct?: KnowledgeAssistantKnowledgeSourceFiles | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     path: {
@@ -259,15 +259,15 @@ export class KnowledgeAssistantKnowledgeSourceFilesOutputReference extends cdktn
 }
 export interface KnowledgeAssistantKnowledgeSourceIndex {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/knowledge_assistant_knowledge_source#doc_uri_col KnowledgeAssistantKnowledgeSource#doc_uri_col}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/knowledge_assistant_knowledge_source#doc_uri_col KnowledgeAssistantKnowledgeSource#doc_uri_col}
   */
   readonly docUriCol: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/knowledge_assistant_knowledge_source#index_name KnowledgeAssistantKnowledgeSource#index_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/knowledge_assistant_knowledge_source#index_name KnowledgeAssistantKnowledgeSource#index_name}
   */
   readonly indexName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/knowledge_assistant_knowledge_source#text_col KnowledgeAssistantKnowledgeSource#text_col}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/knowledge_assistant_knowledge_source#text_col KnowledgeAssistantKnowledgeSource#text_col}
   */
   readonly textCol: string;
 }
@@ -275,7 +275,7 @@ export interface KnowledgeAssistantKnowledgeSourceIndex {
 export function knowledgeAssistantKnowledgeSourceIndexToTerraform(struct?: KnowledgeAssistantKnowledgeSourceIndex | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     doc_uri_col: cdktn.stringToTerraform(struct!.docUriCol),
@@ -288,7 +288,7 @@ export function knowledgeAssistantKnowledgeSourceIndexToTerraform(struct?: Knowl
 export function knowledgeAssistantKnowledgeSourceIndexToHclTerraform(struct?: KnowledgeAssistantKnowledgeSourceIndex | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     doc_uri_col: {
@@ -410,7 +410,7 @@ export class KnowledgeAssistantKnowledgeSourceIndexOutputReference extends cdktn
 }
 export interface KnowledgeAssistantKnowledgeSourceProviderConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/knowledge_assistant_knowledge_source#workspace_id KnowledgeAssistantKnowledgeSource#workspace_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/knowledge_assistant_knowledge_source#workspace_id KnowledgeAssistantKnowledgeSource#workspace_id}
   */
   readonly workspaceId?: string;
 }
@@ -418,7 +418,7 @@ export interface KnowledgeAssistantKnowledgeSourceProviderConfig {
 export function knowledgeAssistantKnowledgeSourceProviderConfigToTerraform(struct?: KnowledgeAssistantKnowledgeSourceProviderConfig | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     workspace_id: cdktn.stringToTerraform(struct!.workspaceId),
@@ -429,7 +429,7 @@ export function knowledgeAssistantKnowledgeSourceProviderConfigToTerraform(struc
 export function knowledgeAssistantKnowledgeSourceProviderConfigToHclTerraform(struct?: KnowledgeAssistantKnowledgeSourceProviderConfig | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     workspace_id: {
@@ -504,7 +504,7 @@ export class KnowledgeAssistantKnowledgeSourceProviderConfigOutputReference exte
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/knowledge_assistant_knowledge_source databricks_knowledge_assistant_knowledge_source}
+* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/knowledge_assistant_knowledge_source databricks_knowledge_assistant_knowledge_source}
 */
 export class KnowledgeAssistantKnowledgeSource extends cdktn.TerraformResource {
 
@@ -520,7 +520,7 @@ export class KnowledgeAssistantKnowledgeSource extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a KnowledgeAssistantKnowledgeSource resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the KnowledgeAssistantKnowledgeSource to import
-  * @param importFromId The id of the existing KnowledgeAssistantKnowledgeSource that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/knowledge_assistant_knowledge_source#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing KnowledgeAssistantKnowledgeSource that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/knowledge_assistant_knowledge_source#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the KnowledgeAssistantKnowledgeSource to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -532,7 +532,7 @@ export class KnowledgeAssistantKnowledgeSource extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/knowledge_assistant_knowledge_source databricks_knowledge_assistant_knowledge_source} Resource
+  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/knowledge_assistant_knowledge_source databricks_knowledge_assistant_knowledge_source} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -543,7 +543,7 @@ export class KnowledgeAssistantKnowledgeSource extends cdktn.TerraformResource {
       terraformResourceType: 'databricks_knowledge_assistant_knowledge_source',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '1.117.0',
+        providerVersion: '1.118.0',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,

@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/data_quality_monitor
+// https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/data_quality_monitor
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,29 +13,29 @@ import * as cdktn from 'cdktn';
 
 export interface DataQualityMonitorConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/data_quality_monitor#anomaly_detection_config DataQualityMonitor#anomaly_detection_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/data_quality_monitor#anomaly_detection_config DataQualityMonitor#anomaly_detection_config}
   */
   readonly anomalyDetectionConfig?: DataQualityMonitorAnomalyDetectionConfig;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/data_quality_monitor#data_profiling_config DataQualityMonitor#data_profiling_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/data_quality_monitor#data_profiling_config DataQualityMonitor#data_profiling_config}
   */
   readonly dataProfilingConfig?: DataQualityMonitorDataProfilingConfig;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/data_quality_monitor#object_id DataQualityMonitor#object_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/data_quality_monitor#object_id DataQualityMonitor#object_id}
   */
   readonly objectId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/data_quality_monitor#object_type DataQualityMonitor#object_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/data_quality_monitor#object_type DataQualityMonitor#object_type}
   */
   readonly objectType: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/data_quality_monitor#provider_config DataQualityMonitor#provider_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/data_quality_monitor#provider_config DataQualityMonitor#provider_config}
   */
   readonly providerConfig?: DataQualityMonitorProviderConfig;
 }
 export interface DataQualityMonitorAnomalyDetectionConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/data_quality_monitor#excluded_table_full_names DataQualityMonitor#excluded_table_full_names}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/data_quality_monitor#excluded_table_full_names DataQualityMonitor#excluded_table_full_names}
   */
   readonly excludedTableFullNames?: string[];
 }
@@ -43,7 +43,7 @@ export interface DataQualityMonitorAnomalyDetectionConfig {
 export function dataQualityMonitorAnomalyDetectionConfigToTerraform(struct?: DataQualityMonitorAnomalyDetectionConfig | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     excluded_table_full_names: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.excludedTableFullNames),
@@ -54,7 +54,7 @@ export function dataQualityMonitorAnomalyDetectionConfigToTerraform(struct?: Dat
 export function dataQualityMonitorAnomalyDetectionConfigToHclTerraform(struct?: DataQualityMonitorAnomalyDetectionConfig | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     excluded_table_full_names: {
@@ -129,23 +129,23 @@ export class DataQualityMonitorAnomalyDetectionConfigOutputReference extends cdk
 }
 export interface DataQualityMonitorDataProfilingConfigCustomMetrics {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/data_quality_monitor#definition DataQualityMonitor#definition}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/data_quality_monitor#definition DataQualityMonitor#definition}
   */
   readonly definition: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/data_quality_monitor#input_columns DataQualityMonitor#input_columns}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/data_quality_monitor#input_columns DataQualityMonitor#input_columns}
   */
   readonly inputColumns: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/data_quality_monitor#name DataQualityMonitor#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/data_quality_monitor#name DataQualityMonitor#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/data_quality_monitor#output_data_type DataQualityMonitor#output_data_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/data_quality_monitor#output_data_type DataQualityMonitor#output_data_type}
   */
   readonly outputDataType: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/data_quality_monitor#type DataQualityMonitor#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/data_quality_monitor#type DataQualityMonitor#type}
   */
   readonly type: string;
 }
@@ -153,7 +153,7 @@ export interface DataQualityMonitorDataProfilingConfigCustomMetrics {
 export function dataQualityMonitorDataProfilingConfigCustomMetricsToTerraform(struct?: DataQualityMonitorDataProfilingConfigCustomMetrics | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     definition: cdktn.stringToTerraform(struct!.definition),
@@ -168,7 +168,7 @@ export function dataQualityMonitorDataProfilingConfigCustomMetricsToTerraform(st
 export function dataQualityMonitorDataProfilingConfigCustomMetricsToHclTerraform(struct?: DataQualityMonitorDataProfilingConfigCustomMetrics | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     definition: {
@@ -362,27 +362,27 @@ export class DataQualityMonitorDataProfilingConfigCustomMetricsList extends cdkt
 }
 export interface DataQualityMonitorDataProfilingConfigInferenceLog {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/data_quality_monitor#granularities DataQualityMonitor#granularities}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/data_quality_monitor#granularities DataQualityMonitor#granularities}
   */
   readonly granularities: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/data_quality_monitor#label_column DataQualityMonitor#label_column}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/data_quality_monitor#label_column DataQualityMonitor#label_column}
   */
   readonly labelColumn?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/data_quality_monitor#model_id_column DataQualityMonitor#model_id_column}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/data_quality_monitor#model_id_column DataQualityMonitor#model_id_column}
   */
   readonly modelIdColumn: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/data_quality_monitor#prediction_column DataQualityMonitor#prediction_column}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/data_quality_monitor#prediction_column DataQualityMonitor#prediction_column}
   */
   readonly predictionColumn: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/data_quality_monitor#problem_type DataQualityMonitor#problem_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/data_quality_monitor#problem_type DataQualityMonitor#problem_type}
   */
   readonly problemType: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/data_quality_monitor#timestamp_column DataQualityMonitor#timestamp_column}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/data_quality_monitor#timestamp_column DataQualityMonitor#timestamp_column}
   */
   readonly timestampColumn: string;
 }
@@ -390,7 +390,7 @@ export interface DataQualityMonitorDataProfilingConfigInferenceLog {
 export function dataQualityMonitorDataProfilingConfigInferenceLogToTerraform(struct?: DataQualityMonitorDataProfilingConfigInferenceLog | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     granularities: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.granularities),
@@ -406,7 +406,7 @@ export function dataQualityMonitorDataProfilingConfigInferenceLogToTerraform(str
 export function dataQualityMonitorDataProfilingConfigInferenceLogToHclTerraform(struct?: DataQualityMonitorDataProfilingConfigInferenceLog | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     granularities: {
@@ -606,7 +606,7 @@ export class DataQualityMonitorDataProfilingConfigInferenceLogOutputReference ex
 }
 export interface DataQualityMonitorDataProfilingConfigNotificationSettingsOnFailure {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/data_quality_monitor#email_addresses DataQualityMonitor#email_addresses}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/data_quality_monitor#email_addresses DataQualityMonitor#email_addresses}
   */
   readonly emailAddresses?: string[];
 }
@@ -614,7 +614,7 @@ export interface DataQualityMonitorDataProfilingConfigNotificationSettingsOnFail
 export function dataQualityMonitorDataProfilingConfigNotificationSettingsOnFailureToTerraform(struct?: DataQualityMonitorDataProfilingConfigNotificationSettingsOnFailure | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     email_addresses: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.emailAddresses),
@@ -625,7 +625,7 @@ export function dataQualityMonitorDataProfilingConfigNotificationSettingsOnFailu
 export function dataQualityMonitorDataProfilingConfigNotificationSettingsOnFailureToHclTerraform(struct?: DataQualityMonitorDataProfilingConfigNotificationSettingsOnFailure | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     email_addresses: {
@@ -700,7 +700,7 @@ export class DataQualityMonitorDataProfilingConfigNotificationSettingsOnFailureO
 }
 export interface DataQualityMonitorDataProfilingConfigNotificationSettings {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/data_quality_monitor#on_failure DataQualityMonitor#on_failure}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/data_quality_monitor#on_failure DataQualityMonitor#on_failure}
   */
   readonly onFailure?: DataQualityMonitorDataProfilingConfigNotificationSettingsOnFailure;
 }
@@ -708,7 +708,7 @@ export interface DataQualityMonitorDataProfilingConfigNotificationSettings {
 export function dataQualityMonitorDataProfilingConfigNotificationSettingsToTerraform(struct?: DataQualityMonitorDataProfilingConfigNotificationSettings | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     on_failure: dataQualityMonitorDataProfilingConfigNotificationSettingsOnFailureToTerraform(struct!.onFailure),
@@ -719,7 +719,7 @@ export function dataQualityMonitorDataProfilingConfigNotificationSettingsToTerra
 export function dataQualityMonitorDataProfilingConfigNotificationSettingsToHclTerraform(struct?: DataQualityMonitorDataProfilingConfigNotificationSettings | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     on_failure: {
@@ -794,11 +794,11 @@ export class DataQualityMonitorDataProfilingConfigNotificationSettingsOutputRefe
 }
 export interface DataQualityMonitorDataProfilingConfigSchedule {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/data_quality_monitor#quartz_cron_expression DataQualityMonitor#quartz_cron_expression}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/data_quality_monitor#quartz_cron_expression DataQualityMonitor#quartz_cron_expression}
   */
   readonly quartzCronExpression: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/data_quality_monitor#timezone_id DataQualityMonitor#timezone_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/data_quality_monitor#timezone_id DataQualityMonitor#timezone_id}
   */
   readonly timezoneId: string;
 }
@@ -806,7 +806,7 @@ export interface DataQualityMonitorDataProfilingConfigSchedule {
 export function dataQualityMonitorDataProfilingConfigScheduleToTerraform(struct?: DataQualityMonitorDataProfilingConfigSchedule | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     quartz_cron_expression: cdktn.stringToTerraform(struct!.quartzCronExpression),
@@ -818,7 +818,7 @@ export function dataQualityMonitorDataProfilingConfigScheduleToTerraform(struct?
 export function dataQualityMonitorDataProfilingConfigScheduleToHclTerraform(struct?: DataQualityMonitorDataProfilingConfigSchedule | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     quartz_cron_expression: {
@@ -924,7 +924,7 @@ export interface DataQualityMonitorDataProfilingConfigSnapshot {
 export function dataQualityMonitorDataProfilingConfigSnapshotToTerraform(struct?: DataQualityMonitorDataProfilingConfigSnapshot | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -934,7 +934,7 @@ export function dataQualityMonitorDataProfilingConfigSnapshotToTerraform(struct?
 export function dataQualityMonitorDataProfilingConfigSnapshotToHclTerraform(struct?: DataQualityMonitorDataProfilingConfigSnapshot | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -979,11 +979,11 @@ export class DataQualityMonitorDataProfilingConfigSnapshotOutputReference extend
 }
 export interface DataQualityMonitorDataProfilingConfigTimeSeries {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/data_quality_monitor#granularities DataQualityMonitor#granularities}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/data_quality_monitor#granularities DataQualityMonitor#granularities}
   */
   readonly granularities: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/data_quality_monitor#timestamp_column DataQualityMonitor#timestamp_column}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/data_quality_monitor#timestamp_column DataQualityMonitor#timestamp_column}
   */
   readonly timestampColumn: string;
 }
@@ -991,7 +991,7 @@ export interface DataQualityMonitorDataProfilingConfigTimeSeries {
 export function dataQualityMonitorDataProfilingConfigTimeSeriesToTerraform(struct?: DataQualityMonitorDataProfilingConfigTimeSeries | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     granularities: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.granularities),
@@ -1003,7 +1003,7 @@ export function dataQualityMonitorDataProfilingConfigTimeSeriesToTerraform(struc
 export function dataQualityMonitorDataProfilingConfigTimeSeriesToHclTerraform(struct?: DataQualityMonitorDataProfilingConfigTimeSeries | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     granularities: {
@@ -1100,51 +1100,51 @@ export class DataQualityMonitorDataProfilingConfigTimeSeriesOutputReference exte
 }
 export interface DataQualityMonitorDataProfilingConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/data_quality_monitor#assets_dir DataQualityMonitor#assets_dir}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/data_quality_monitor#assets_dir DataQualityMonitor#assets_dir}
   */
   readonly assetsDir?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/data_quality_monitor#baseline_table_name DataQualityMonitor#baseline_table_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/data_quality_monitor#baseline_table_name DataQualityMonitor#baseline_table_name}
   */
   readonly baselineTableName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/data_quality_monitor#custom_metrics DataQualityMonitor#custom_metrics}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/data_quality_monitor#custom_metrics DataQualityMonitor#custom_metrics}
   */
   readonly customMetrics?: DataQualityMonitorDataProfilingConfigCustomMetrics[] | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/data_quality_monitor#inference_log DataQualityMonitor#inference_log}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/data_quality_monitor#inference_log DataQualityMonitor#inference_log}
   */
   readonly inferenceLog?: DataQualityMonitorDataProfilingConfigInferenceLog;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/data_quality_monitor#notification_settings DataQualityMonitor#notification_settings}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/data_quality_monitor#notification_settings DataQualityMonitor#notification_settings}
   */
   readonly notificationSettings?: DataQualityMonitorDataProfilingConfigNotificationSettings;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/data_quality_monitor#output_schema_id DataQualityMonitor#output_schema_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/data_quality_monitor#output_schema_id DataQualityMonitor#output_schema_id}
   */
   readonly outputSchemaId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/data_quality_monitor#schedule DataQualityMonitor#schedule}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/data_quality_monitor#schedule DataQualityMonitor#schedule}
   */
   readonly schedule?: DataQualityMonitorDataProfilingConfigSchedule;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/data_quality_monitor#skip_builtin_dashboard DataQualityMonitor#skip_builtin_dashboard}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/data_quality_monitor#skip_builtin_dashboard DataQualityMonitor#skip_builtin_dashboard}
   */
   readonly skipBuiltinDashboard?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/data_quality_monitor#slicing_exprs DataQualityMonitor#slicing_exprs}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/data_quality_monitor#slicing_exprs DataQualityMonitor#slicing_exprs}
   */
   readonly slicingExprs?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/data_quality_monitor#snapshot DataQualityMonitor#snapshot}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/data_quality_monitor#snapshot DataQualityMonitor#snapshot}
   */
   readonly snapshot?: DataQualityMonitorDataProfilingConfigSnapshot;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/data_quality_monitor#time_series DataQualityMonitor#time_series}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/data_quality_monitor#time_series DataQualityMonitor#time_series}
   */
   readonly timeSeries?: DataQualityMonitorDataProfilingConfigTimeSeries;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/data_quality_monitor#warehouse_id DataQualityMonitor#warehouse_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/data_quality_monitor#warehouse_id DataQualityMonitor#warehouse_id}
   */
   readonly warehouseId?: string;
 }
@@ -1152,7 +1152,7 @@ export interface DataQualityMonitorDataProfilingConfig {
 export function dataQualityMonitorDataProfilingConfigToTerraform(struct?: DataQualityMonitorDataProfilingConfig | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     assets_dir: cdktn.stringToTerraform(struct!.assetsDir),
@@ -1174,7 +1174,7 @@ export function dataQualityMonitorDataProfilingConfigToTerraform(struct?: DataQu
 export function dataQualityMonitorDataProfilingConfigToHclTerraform(struct?: DataQualityMonitorDataProfilingConfig | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     assets_dir: {
@@ -1594,7 +1594,7 @@ export class DataQualityMonitorDataProfilingConfigOutputReference extends cdktn.
 }
 export interface DataQualityMonitorProviderConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/data_quality_monitor#workspace_id DataQualityMonitor#workspace_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/data_quality_monitor#workspace_id DataQualityMonitor#workspace_id}
   */
   readonly workspaceId?: string;
 }
@@ -1602,7 +1602,7 @@ export interface DataQualityMonitorProviderConfig {
 export function dataQualityMonitorProviderConfigToTerraform(struct?: DataQualityMonitorProviderConfig | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     workspace_id: cdktn.stringToTerraform(struct!.workspaceId),
@@ -1613,7 +1613,7 @@ export function dataQualityMonitorProviderConfigToTerraform(struct?: DataQuality
 export function dataQualityMonitorProviderConfigToHclTerraform(struct?: DataQualityMonitorProviderConfig | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     workspace_id: {
@@ -1688,7 +1688,7 @@ export class DataQualityMonitorProviderConfigOutputReference extends cdktn.Compl
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/data_quality_monitor databricks_data_quality_monitor}
+* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/data_quality_monitor databricks_data_quality_monitor}
 */
 export class DataQualityMonitor extends cdktn.TerraformResource {
 
@@ -1704,7 +1704,7 @@ export class DataQualityMonitor extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a DataQualityMonitor resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataQualityMonitor to import
-  * @param importFromId The id of the existing DataQualityMonitor that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/data_quality_monitor#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataQualityMonitor that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/data_quality_monitor#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataQualityMonitor to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -1716,7 +1716,7 @@ export class DataQualityMonitor extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/data_quality_monitor databricks_data_quality_monitor} Resource
+  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/data_quality_monitor databricks_data_quality_monitor} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -1727,7 +1727,7 @@ export class DataQualityMonitor extends cdktn.TerraformResource {
       terraformResourceType: 'databricks_data_quality_monitor',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '1.117.0',
+        providerVersion: '1.118.0',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,

@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/apps_settings_custom_template
+// https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/apps_settings_custom_template
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,17 +13,17 @@ import * as cdktn from 'cdktn';
 
 export interface DataDatabricksAppsSettingsCustomTemplateConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/apps_settings_custom_template#name DataDatabricksAppsSettingsCustomTemplate#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/apps_settings_custom_template#name DataDatabricksAppsSettingsCustomTemplate#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/apps_settings_custom_template#provider_config DataDatabricksAppsSettingsCustomTemplate#provider_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/apps_settings_custom_template#provider_config DataDatabricksAppsSettingsCustomTemplate#provider_config}
   */
   readonly providerConfig?: DataDatabricksAppsSettingsCustomTemplateProviderConfig;
 }
 export interface DataDatabricksAppsSettingsCustomTemplateManifestResourceSpecsExperimentSpec {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/apps_settings_custom_template#permission DataDatabricksAppsSettingsCustomTemplate#permission}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/apps_settings_custom_template#permission DataDatabricksAppsSettingsCustomTemplate#permission}
   */
   readonly permission: string;
 }
@@ -31,7 +31,7 @@ export interface DataDatabricksAppsSettingsCustomTemplateManifestResourceSpecsEx
 export function dataDatabricksAppsSettingsCustomTemplateManifestResourceSpecsExperimentSpecToTerraform(struct?: DataDatabricksAppsSettingsCustomTemplateManifestResourceSpecsExperimentSpec | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     permission: cdktn.stringToTerraform(struct!.permission),
@@ -42,7 +42,7 @@ export function dataDatabricksAppsSettingsCustomTemplateManifestResourceSpecsExp
 export function dataDatabricksAppsSettingsCustomTemplateManifestResourceSpecsExperimentSpecToHclTerraform(struct?: DataDatabricksAppsSettingsCustomTemplateManifestResourceSpecsExperimentSpec | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     permission: {
@@ -114,7 +114,7 @@ export class DataDatabricksAppsSettingsCustomTemplateManifestResourceSpecsExperi
 }
 export interface DataDatabricksAppsSettingsCustomTemplateManifestResourceSpecsJobSpec {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/apps_settings_custom_template#permission DataDatabricksAppsSettingsCustomTemplate#permission}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/apps_settings_custom_template#permission DataDatabricksAppsSettingsCustomTemplate#permission}
   */
   readonly permission: string;
 }
@@ -122,7 +122,7 @@ export interface DataDatabricksAppsSettingsCustomTemplateManifestResourceSpecsJo
 export function dataDatabricksAppsSettingsCustomTemplateManifestResourceSpecsJobSpecToTerraform(struct?: DataDatabricksAppsSettingsCustomTemplateManifestResourceSpecsJobSpec | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     permission: cdktn.stringToTerraform(struct!.permission),
@@ -133,7 +133,7 @@ export function dataDatabricksAppsSettingsCustomTemplateManifestResourceSpecsJob
 export function dataDatabricksAppsSettingsCustomTemplateManifestResourceSpecsJobSpecToHclTerraform(struct?: DataDatabricksAppsSettingsCustomTemplateManifestResourceSpecsJobSpec | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     permission: {
@@ -205,7 +205,7 @@ export class DataDatabricksAppsSettingsCustomTemplateManifestResourceSpecsJobSpe
 }
 export interface DataDatabricksAppsSettingsCustomTemplateManifestResourceSpecsSecretSpec {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/apps_settings_custom_template#permission DataDatabricksAppsSettingsCustomTemplate#permission}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/apps_settings_custom_template#permission DataDatabricksAppsSettingsCustomTemplate#permission}
   */
   readonly permission: string;
 }
@@ -213,7 +213,7 @@ export interface DataDatabricksAppsSettingsCustomTemplateManifestResourceSpecsSe
 export function dataDatabricksAppsSettingsCustomTemplateManifestResourceSpecsSecretSpecToTerraform(struct?: DataDatabricksAppsSettingsCustomTemplateManifestResourceSpecsSecretSpec | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     permission: cdktn.stringToTerraform(struct!.permission),
@@ -224,7 +224,7 @@ export function dataDatabricksAppsSettingsCustomTemplateManifestResourceSpecsSec
 export function dataDatabricksAppsSettingsCustomTemplateManifestResourceSpecsSecretSpecToHclTerraform(struct?: DataDatabricksAppsSettingsCustomTemplateManifestResourceSpecsSecretSpec | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     permission: {
@@ -296,7 +296,7 @@ export class DataDatabricksAppsSettingsCustomTemplateManifestResourceSpecsSecret
 }
 export interface DataDatabricksAppsSettingsCustomTemplateManifestResourceSpecsServingEndpointSpec {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/apps_settings_custom_template#permission DataDatabricksAppsSettingsCustomTemplate#permission}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/apps_settings_custom_template#permission DataDatabricksAppsSettingsCustomTemplate#permission}
   */
   readonly permission: string;
 }
@@ -304,7 +304,7 @@ export interface DataDatabricksAppsSettingsCustomTemplateManifestResourceSpecsSe
 export function dataDatabricksAppsSettingsCustomTemplateManifestResourceSpecsServingEndpointSpecToTerraform(struct?: DataDatabricksAppsSettingsCustomTemplateManifestResourceSpecsServingEndpointSpec | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     permission: cdktn.stringToTerraform(struct!.permission),
@@ -315,7 +315,7 @@ export function dataDatabricksAppsSettingsCustomTemplateManifestResourceSpecsSer
 export function dataDatabricksAppsSettingsCustomTemplateManifestResourceSpecsServingEndpointSpecToHclTerraform(struct?: DataDatabricksAppsSettingsCustomTemplateManifestResourceSpecsServingEndpointSpec | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     permission: {
@@ -387,7 +387,7 @@ export class DataDatabricksAppsSettingsCustomTemplateManifestResourceSpecsServin
 }
 export interface DataDatabricksAppsSettingsCustomTemplateManifestResourceSpecsSqlWarehouseSpec {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/apps_settings_custom_template#permission DataDatabricksAppsSettingsCustomTemplate#permission}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/apps_settings_custom_template#permission DataDatabricksAppsSettingsCustomTemplate#permission}
   */
   readonly permission: string;
 }
@@ -395,7 +395,7 @@ export interface DataDatabricksAppsSettingsCustomTemplateManifestResourceSpecsSq
 export function dataDatabricksAppsSettingsCustomTemplateManifestResourceSpecsSqlWarehouseSpecToTerraform(struct?: DataDatabricksAppsSettingsCustomTemplateManifestResourceSpecsSqlWarehouseSpec | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     permission: cdktn.stringToTerraform(struct!.permission),
@@ -406,7 +406,7 @@ export function dataDatabricksAppsSettingsCustomTemplateManifestResourceSpecsSql
 export function dataDatabricksAppsSettingsCustomTemplateManifestResourceSpecsSqlWarehouseSpecToHclTerraform(struct?: DataDatabricksAppsSettingsCustomTemplateManifestResourceSpecsSqlWarehouseSpec | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     permission: {
@@ -478,11 +478,11 @@ export class DataDatabricksAppsSettingsCustomTemplateManifestResourceSpecsSqlWar
 }
 export interface DataDatabricksAppsSettingsCustomTemplateManifestResourceSpecsUcSecurableSpec {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/apps_settings_custom_template#permission DataDatabricksAppsSettingsCustomTemplate#permission}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/apps_settings_custom_template#permission DataDatabricksAppsSettingsCustomTemplate#permission}
   */
   readonly permission: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/apps_settings_custom_template#securable_type DataDatabricksAppsSettingsCustomTemplate#securable_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/apps_settings_custom_template#securable_type DataDatabricksAppsSettingsCustomTemplate#securable_type}
   */
   readonly securableType: string;
 }
@@ -490,7 +490,7 @@ export interface DataDatabricksAppsSettingsCustomTemplateManifestResourceSpecsUc
 export function dataDatabricksAppsSettingsCustomTemplateManifestResourceSpecsUcSecurableSpecToTerraform(struct?: DataDatabricksAppsSettingsCustomTemplateManifestResourceSpecsUcSecurableSpec | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     permission: cdktn.stringToTerraform(struct!.permission),
@@ -502,7 +502,7 @@ export function dataDatabricksAppsSettingsCustomTemplateManifestResourceSpecsUcS
 export function dataDatabricksAppsSettingsCustomTemplateManifestResourceSpecsUcSecurableSpecToHclTerraform(struct?: DataDatabricksAppsSettingsCustomTemplateManifestResourceSpecsUcSecurableSpec | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     permission: {
@@ -599,35 +599,35 @@ export class DataDatabricksAppsSettingsCustomTemplateManifestResourceSpecsUcSecu
 }
 export interface DataDatabricksAppsSettingsCustomTemplateManifestResourceSpecs {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/apps_settings_custom_template#description DataDatabricksAppsSettingsCustomTemplate#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/apps_settings_custom_template#description DataDatabricksAppsSettingsCustomTemplate#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/apps_settings_custom_template#experiment_spec DataDatabricksAppsSettingsCustomTemplate#experiment_spec}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/apps_settings_custom_template#experiment_spec DataDatabricksAppsSettingsCustomTemplate#experiment_spec}
   */
   readonly experimentSpec?: DataDatabricksAppsSettingsCustomTemplateManifestResourceSpecsExperimentSpec;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/apps_settings_custom_template#job_spec DataDatabricksAppsSettingsCustomTemplate#job_spec}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/apps_settings_custom_template#job_spec DataDatabricksAppsSettingsCustomTemplate#job_spec}
   */
   readonly jobSpec?: DataDatabricksAppsSettingsCustomTemplateManifestResourceSpecsJobSpec;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/apps_settings_custom_template#name DataDatabricksAppsSettingsCustomTemplate#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/apps_settings_custom_template#name DataDatabricksAppsSettingsCustomTemplate#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/apps_settings_custom_template#secret_spec DataDatabricksAppsSettingsCustomTemplate#secret_spec}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/apps_settings_custom_template#secret_spec DataDatabricksAppsSettingsCustomTemplate#secret_spec}
   */
   readonly secretSpec?: DataDatabricksAppsSettingsCustomTemplateManifestResourceSpecsSecretSpec;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/apps_settings_custom_template#serving_endpoint_spec DataDatabricksAppsSettingsCustomTemplate#serving_endpoint_spec}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/apps_settings_custom_template#serving_endpoint_spec DataDatabricksAppsSettingsCustomTemplate#serving_endpoint_spec}
   */
   readonly servingEndpointSpec?: DataDatabricksAppsSettingsCustomTemplateManifestResourceSpecsServingEndpointSpec;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/apps_settings_custom_template#sql_warehouse_spec DataDatabricksAppsSettingsCustomTemplate#sql_warehouse_spec}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/apps_settings_custom_template#sql_warehouse_spec DataDatabricksAppsSettingsCustomTemplate#sql_warehouse_spec}
   */
   readonly sqlWarehouseSpec?: DataDatabricksAppsSettingsCustomTemplateManifestResourceSpecsSqlWarehouseSpec;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/apps_settings_custom_template#uc_securable_spec DataDatabricksAppsSettingsCustomTemplate#uc_securable_spec}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/apps_settings_custom_template#uc_securable_spec DataDatabricksAppsSettingsCustomTemplate#uc_securable_spec}
   */
   readonly ucSecurableSpec?: DataDatabricksAppsSettingsCustomTemplateManifestResourceSpecsUcSecurableSpec;
 }
@@ -635,7 +635,7 @@ export interface DataDatabricksAppsSettingsCustomTemplateManifestResourceSpecs {
 export function dataDatabricksAppsSettingsCustomTemplateManifestResourceSpecsToTerraform(struct?: DataDatabricksAppsSettingsCustomTemplateManifestResourceSpecs | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     description: cdktn.stringToTerraform(struct!.description),
@@ -653,7 +653,7 @@ export function dataDatabricksAppsSettingsCustomTemplateManifestResourceSpecsToT
 export function dataDatabricksAppsSettingsCustomTemplateManifestResourceSpecsToHclTerraform(struct?: DataDatabricksAppsSettingsCustomTemplateManifestResourceSpecs | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     description: {
@@ -943,19 +943,19 @@ export class DataDatabricksAppsSettingsCustomTemplateManifestResourceSpecsList e
 }
 export interface DataDatabricksAppsSettingsCustomTemplateManifest {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/apps_settings_custom_template#description DataDatabricksAppsSettingsCustomTemplate#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/apps_settings_custom_template#description DataDatabricksAppsSettingsCustomTemplate#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/apps_settings_custom_template#name DataDatabricksAppsSettingsCustomTemplate#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/apps_settings_custom_template#name DataDatabricksAppsSettingsCustomTemplate#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/apps_settings_custom_template#resource_specs DataDatabricksAppsSettingsCustomTemplate#resource_specs}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/apps_settings_custom_template#resource_specs DataDatabricksAppsSettingsCustomTemplate#resource_specs}
   */
   readonly resourceSpecs?: DataDatabricksAppsSettingsCustomTemplateManifestResourceSpecs[] | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/apps_settings_custom_template#version DataDatabricksAppsSettingsCustomTemplate#version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/apps_settings_custom_template#version DataDatabricksAppsSettingsCustomTemplate#version}
   */
   readonly version: number;
 }
@@ -963,7 +963,7 @@ export interface DataDatabricksAppsSettingsCustomTemplateManifest {
 export function dataDatabricksAppsSettingsCustomTemplateManifestToTerraform(struct?: DataDatabricksAppsSettingsCustomTemplateManifest): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     description: cdktn.stringToTerraform(struct!.description),
@@ -977,7 +977,7 @@ export function dataDatabricksAppsSettingsCustomTemplateManifestToTerraform(stru
 export function dataDatabricksAppsSettingsCustomTemplateManifestToHclTerraform(struct?: DataDatabricksAppsSettingsCustomTemplateManifest): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     description: {
@@ -1120,7 +1120,7 @@ export class DataDatabricksAppsSettingsCustomTemplateManifestOutputReference ext
 }
 export interface DataDatabricksAppsSettingsCustomTemplateProviderConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/apps_settings_custom_template#workspace_id DataDatabricksAppsSettingsCustomTemplate#workspace_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/apps_settings_custom_template#workspace_id DataDatabricksAppsSettingsCustomTemplate#workspace_id}
   */
   readonly workspaceId?: string;
 }
@@ -1128,7 +1128,7 @@ export interface DataDatabricksAppsSettingsCustomTemplateProviderConfig {
 export function dataDatabricksAppsSettingsCustomTemplateProviderConfigToTerraform(struct?: DataDatabricksAppsSettingsCustomTemplateProviderConfig | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     workspace_id: cdktn.stringToTerraform(struct!.workspaceId),
@@ -1139,7 +1139,7 @@ export function dataDatabricksAppsSettingsCustomTemplateProviderConfigToTerrafor
 export function dataDatabricksAppsSettingsCustomTemplateProviderConfigToHclTerraform(struct?: DataDatabricksAppsSettingsCustomTemplateProviderConfig | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     workspace_id: {
@@ -1214,7 +1214,7 @@ export class DataDatabricksAppsSettingsCustomTemplateProviderConfigOutputReferen
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/apps_settings_custom_template databricks_apps_settings_custom_template}
+* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/apps_settings_custom_template databricks_apps_settings_custom_template}
 */
 export class DataDatabricksAppsSettingsCustomTemplate extends cdktn.TerraformDataSource {
 
@@ -1230,7 +1230,7 @@ export class DataDatabricksAppsSettingsCustomTemplate extends cdktn.TerraformDat
   * Generates CDKTN code for importing a DataDatabricksAppsSettingsCustomTemplate resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataDatabricksAppsSettingsCustomTemplate to import
-  * @param importFromId The id of the existing DataDatabricksAppsSettingsCustomTemplate that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/apps_settings_custom_template#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataDatabricksAppsSettingsCustomTemplate that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/apps_settings_custom_template#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataDatabricksAppsSettingsCustomTemplate to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -1242,7 +1242,7 @@ export class DataDatabricksAppsSettingsCustomTemplate extends cdktn.TerraformDat
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/apps_settings_custom_template databricks_apps_settings_custom_template} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/apps_settings_custom_template databricks_apps_settings_custom_template} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -1253,7 +1253,7 @@ export class DataDatabricksAppsSettingsCustomTemplate extends cdktn.TerraformDat
       terraformResourceType: 'databricks_apps_settings_custom_template',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '1.117.0',
+        providerVersion: '1.118.0',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,

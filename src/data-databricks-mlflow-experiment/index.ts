@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/mlflow_experiment
+// https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/mlflow_experiment
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,52 +13,52 @@ import * as cdktn from 'cdktn';
 
 export interface DataDatabricksMlflowExperimentConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/mlflow_experiment#artifact_location DataDatabricksMlflowExperiment#artifact_location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/mlflow_experiment#artifact_location DataDatabricksMlflowExperiment#artifact_location}
   */
   readonly artifactLocation?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/mlflow_experiment#creation_time DataDatabricksMlflowExperiment#creation_time}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/mlflow_experiment#creation_time DataDatabricksMlflowExperiment#creation_time}
   */
   readonly creationTime?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/mlflow_experiment#experiment_id DataDatabricksMlflowExperiment#experiment_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/mlflow_experiment#experiment_id DataDatabricksMlflowExperiment#experiment_id}
   */
   readonly experimentId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/mlflow_experiment#id DataDatabricksMlflowExperiment#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/mlflow_experiment#id DataDatabricksMlflowExperiment#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/mlflow_experiment#last_update_time DataDatabricksMlflowExperiment#last_update_time}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/mlflow_experiment#last_update_time DataDatabricksMlflowExperiment#last_update_time}
   */
   readonly lastUpdateTime?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/mlflow_experiment#lifecycle_stage DataDatabricksMlflowExperiment#lifecycle_stage}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/mlflow_experiment#lifecycle_stage DataDatabricksMlflowExperiment#lifecycle_stage}
   */
   readonly lifecycleStage?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/mlflow_experiment#name DataDatabricksMlflowExperiment#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/mlflow_experiment#name DataDatabricksMlflowExperiment#name}
   */
   readonly name?: string;
   /**
   * provider_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/mlflow_experiment#provider_config DataDatabricksMlflowExperiment#provider_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/mlflow_experiment#provider_config DataDatabricksMlflowExperiment#provider_config}
   */
   readonly providerConfig?: DataDatabricksMlflowExperimentProviderConfig;
   /**
   * tags block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/mlflow_experiment#tags DataDatabricksMlflowExperiment#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/mlflow_experiment#tags DataDatabricksMlflowExperiment#tags}
   */
   readonly tags?: DataDatabricksMlflowExperimentTags[] | cdktn.IResolvable;
 }
 export interface DataDatabricksMlflowExperimentProviderConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/mlflow_experiment#workspace_id DataDatabricksMlflowExperiment#workspace_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/mlflow_experiment#workspace_id DataDatabricksMlflowExperiment#workspace_id}
   */
   readonly workspaceId?: string;
 }
@@ -66,7 +66,7 @@ export interface DataDatabricksMlflowExperimentProviderConfig {
 export function dataDatabricksMlflowExperimentProviderConfigToTerraform(struct?: DataDatabricksMlflowExperimentProviderConfigOutputReference | DataDatabricksMlflowExperimentProviderConfig): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     workspace_id: cdktn.stringToTerraform(struct!.workspaceId),
@@ -77,7 +77,7 @@ export function dataDatabricksMlflowExperimentProviderConfigToTerraform(struct?:
 export function dataDatabricksMlflowExperimentProviderConfigToHclTerraform(struct?: DataDatabricksMlflowExperimentProviderConfigOutputReference | DataDatabricksMlflowExperimentProviderConfig): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     workspace_id: {
@@ -142,11 +142,11 @@ export class DataDatabricksMlflowExperimentProviderConfigOutputReference extends
 }
 export interface DataDatabricksMlflowExperimentTags {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/mlflow_experiment#key DataDatabricksMlflowExperiment#key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/mlflow_experiment#key DataDatabricksMlflowExperiment#key}
   */
   readonly key?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/mlflow_experiment#value DataDatabricksMlflowExperiment#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/mlflow_experiment#value DataDatabricksMlflowExperiment#value}
   */
   readonly value?: string;
 }
@@ -154,7 +154,7 @@ export interface DataDatabricksMlflowExperimentTags {
 export function dataDatabricksMlflowExperimentTagsToTerraform(struct?: DataDatabricksMlflowExperimentTags | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     key: cdktn.stringToTerraform(struct!.key),
@@ -166,7 +166,7 @@ export function dataDatabricksMlflowExperimentTagsToTerraform(struct?: DataDatab
 export function dataDatabricksMlflowExperimentTagsToHclTerraform(struct?: DataDatabricksMlflowExperimentTags | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     key: {
@@ -291,7 +291,7 @@ export class DataDatabricksMlflowExperimentTagsList extends cdktn.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/mlflow_experiment databricks_mlflow_experiment}
+* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/mlflow_experiment databricks_mlflow_experiment}
 */
 export class DataDatabricksMlflowExperiment extends cdktn.TerraformDataSource {
 
@@ -307,7 +307,7 @@ export class DataDatabricksMlflowExperiment extends cdktn.TerraformDataSource {
   * Generates CDKTN code for importing a DataDatabricksMlflowExperiment resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataDatabricksMlflowExperiment to import
-  * @param importFromId The id of the existing DataDatabricksMlflowExperiment that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/mlflow_experiment#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataDatabricksMlflowExperiment that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/mlflow_experiment#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataDatabricksMlflowExperiment to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -319,7 +319,7 @@ export class DataDatabricksMlflowExperiment extends cdktn.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/mlflow_experiment databricks_mlflow_experiment} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/mlflow_experiment databricks_mlflow_experiment} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -330,7 +330,7 @@ export class DataDatabricksMlflowExperiment extends cdktn.TerraformDataSource {
       terraformResourceType: 'databricks_mlflow_experiment',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '1.117.0',
+        providerVersion: '1.118.0',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,

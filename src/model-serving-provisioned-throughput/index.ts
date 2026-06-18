@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/model_serving_provisioned_throughput
+// https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/model_serving_provisioned_throughput
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,60 +13,60 @@ import * as cdktn from 'cdktn';
 
 export interface ModelServingProvisionedThroughputConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/model_serving_provisioned_throughput#budget_policy_id ModelServingProvisionedThroughput#budget_policy_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/model_serving_provisioned_throughput#budget_policy_id ModelServingProvisionedThroughput#budget_policy_id}
   */
   readonly budgetPolicyId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/model_serving_provisioned_throughput#id ModelServingProvisionedThroughput#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/model_serving_provisioned_throughput#id ModelServingProvisionedThroughput#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/model_serving_provisioned_throughput#name ModelServingProvisionedThroughput#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/model_serving_provisioned_throughput#name ModelServingProvisionedThroughput#name}
   */
   readonly name: string;
   /**
   * ai_gateway block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/model_serving_provisioned_throughput#ai_gateway ModelServingProvisionedThroughput#ai_gateway}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/model_serving_provisioned_throughput#ai_gateway ModelServingProvisionedThroughput#ai_gateway}
   */
   readonly aiGateway?: ModelServingProvisionedThroughputAiGateway;
   /**
   * config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/model_serving_provisioned_throughput#config ModelServingProvisionedThroughput#config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/model_serving_provisioned_throughput#config ModelServingProvisionedThroughput#config}
   */
   readonly config: ModelServingProvisionedThroughputConfigA;
   /**
   * email_notifications block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/model_serving_provisioned_throughput#email_notifications ModelServingProvisionedThroughput#email_notifications}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/model_serving_provisioned_throughput#email_notifications ModelServingProvisionedThroughput#email_notifications}
   */
   readonly emailNotifications?: ModelServingProvisionedThroughputEmailNotifications;
   /**
   * provider_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/model_serving_provisioned_throughput#provider_config ModelServingProvisionedThroughput#provider_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/model_serving_provisioned_throughput#provider_config ModelServingProvisionedThroughput#provider_config}
   */
   readonly providerConfig?: ModelServingProvisionedThroughputProviderConfig;
   /**
   * tags block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/model_serving_provisioned_throughput#tags ModelServingProvisionedThroughput#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/model_serving_provisioned_throughput#tags ModelServingProvisionedThroughput#tags}
   */
   readonly tags?: ModelServingProvisionedThroughputTags[] | cdktn.IResolvable;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/model_serving_provisioned_throughput#timeouts ModelServingProvisionedThroughput#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/model_serving_provisioned_throughput#timeouts ModelServingProvisionedThroughput#timeouts}
   */
   readonly timeouts?: ModelServingProvisionedThroughputTimeouts;
 }
 export interface ModelServingProvisionedThroughputAiGatewayFallbackConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/model_serving_provisioned_throughput#enabled ModelServingProvisionedThroughput#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/model_serving_provisioned_throughput#enabled ModelServingProvisionedThroughput#enabled}
   */
   readonly enabled: boolean | cdktn.IResolvable;
 }
@@ -74,7 +74,7 @@ export interface ModelServingProvisionedThroughputAiGatewayFallbackConfig {
 export function modelServingProvisionedThroughputAiGatewayFallbackConfigToTerraform(struct?: ModelServingProvisionedThroughputAiGatewayFallbackConfigOutputReference | ModelServingProvisionedThroughputAiGatewayFallbackConfig): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     enabled: cdktn.booleanToTerraform(struct!.enabled),
@@ -85,7 +85,7 @@ export function modelServingProvisionedThroughputAiGatewayFallbackConfigToTerraf
 export function modelServingProvisionedThroughputAiGatewayFallbackConfigToHclTerraform(struct?: ModelServingProvisionedThroughputAiGatewayFallbackConfigOutputReference | ModelServingProvisionedThroughputAiGatewayFallbackConfig): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     enabled: {
@@ -147,7 +147,7 @@ export class ModelServingProvisionedThroughputAiGatewayFallbackConfigOutputRefer
 }
 export interface ModelServingProvisionedThroughputAiGatewayGuardrailsInputPii {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/model_serving_provisioned_throughput#behavior ModelServingProvisionedThroughput#behavior}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/model_serving_provisioned_throughput#behavior ModelServingProvisionedThroughput#behavior}
   */
   readonly behavior?: string;
 }
@@ -155,7 +155,7 @@ export interface ModelServingProvisionedThroughputAiGatewayGuardrailsInputPii {
 export function modelServingProvisionedThroughputAiGatewayGuardrailsInputPiiToTerraform(struct?: ModelServingProvisionedThroughputAiGatewayGuardrailsInputPiiOutputReference | ModelServingProvisionedThroughputAiGatewayGuardrailsInputPii): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     behavior: cdktn.stringToTerraform(struct!.behavior),
@@ -166,7 +166,7 @@ export function modelServingProvisionedThroughputAiGatewayGuardrailsInputPiiToTe
 export function modelServingProvisionedThroughputAiGatewayGuardrailsInputPiiToHclTerraform(struct?: ModelServingProvisionedThroughputAiGatewayGuardrailsInputPiiOutputReference | ModelServingProvisionedThroughputAiGatewayGuardrailsInputPii): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     behavior: {
@@ -231,21 +231,21 @@ export class ModelServingProvisionedThroughputAiGatewayGuardrailsInputPiiOutputR
 }
 export interface ModelServingProvisionedThroughputAiGatewayGuardrailsInput {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/model_serving_provisioned_throughput#invalid_keywords ModelServingProvisionedThroughput#invalid_keywords}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/model_serving_provisioned_throughput#invalid_keywords ModelServingProvisionedThroughput#invalid_keywords}
   */
   readonly invalidKeywords?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/model_serving_provisioned_throughput#safety ModelServingProvisionedThroughput#safety}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/model_serving_provisioned_throughput#safety ModelServingProvisionedThroughput#safety}
   */
   readonly safety?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/model_serving_provisioned_throughput#valid_topics ModelServingProvisionedThroughput#valid_topics}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/model_serving_provisioned_throughput#valid_topics ModelServingProvisionedThroughput#valid_topics}
   */
   readonly validTopics?: string[];
   /**
   * pii block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/model_serving_provisioned_throughput#pii ModelServingProvisionedThroughput#pii}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/model_serving_provisioned_throughput#pii ModelServingProvisionedThroughput#pii}
   */
   readonly pii?: ModelServingProvisionedThroughputAiGatewayGuardrailsInputPii;
 }
@@ -253,7 +253,7 @@ export interface ModelServingProvisionedThroughputAiGatewayGuardrailsInput {
 export function modelServingProvisionedThroughputAiGatewayGuardrailsInputToTerraform(struct?: ModelServingProvisionedThroughputAiGatewayGuardrailsInputOutputReference | ModelServingProvisionedThroughputAiGatewayGuardrailsInput): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     invalid_keywords: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.invalidKeywords),
@@ -267,7 +267,7 @@ export function modelServingProvisionedThroughputAiGatewayGuardrailsInputToTerra
 export function modelServingProvisionedThroughputAiGatewayGuardrailsInputToHclTerraform(struct?: ModelServingProvisionedThroughputAiGatewayGuardrailsInputOutputReference | ModelServingProvisionedThroughputAiGatewayGuardrailsInput): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     invalid_keywords: {
@@ -416,7 +416,7 @@ export class ModelServingProvisionedThroughputAiGatewayGuardrailsInputOutputRefe
 }
 export interface ModelServingProvisionedThroughputAiGatewayGuardrailsOutputPii {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/model_serving_provisioned_throughput#behavior ModelServingProvisionedThroughput#behavior}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/model_serving_provisioned_throughput#behavior ModelServingProvisionedThroughput#behavior}
   */
   readonly behavior?: string;
 }
@@ -424,7 +424,7 @@ export interface ModelServingProvisionedThroughputAiGatewayGuardrailsOutputPii {
 export function modelServingProvisionedThroughputAiGatewayGuardrailsOutputPiiToTerraform(struct?: ModelServingProvisionedThroughputAiGatewayGuardrailsOutputPiiOutputReference | ModelServingProvisionedThroughputAiGatewayGuardrailsOutputPii): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     behavior: cdktn.stringToTerraform(struct!.behavior),
@@ -435,7 +435,7 @@ export function modelServingProvisionedThroughputAiGatewayGuardrailsOutputPiiToT
 export function modelServingProvisionedThroughputAiGatewayGuardrailsOutputPiiToHclTerraform(struct?: ModelServingProvisionedThroughputAiGatewayGuardrailsOutputPiiOutputReference | ModelServingProvisionedThroughputAiGatewayGuardrailsOutputPii): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     behavior: {
@@ -500,21 +500,21 @@ export class ModelServingProvisionedThroughputAiGatewayGuardrailsOutputPiiOutput
 }
 export interface ModelServingProvisionedThroughputAiGatewayGuardrailsOutput {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/model_serving_provisioned_throughput#invalid_keywords ModelServingProvisionedThroughput#invalid_keywords}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/model_serving_provisioned_throughput#invalid_keywords ModelServingProvisionedThroughput#invalid_keywords}
   */
   readonly invalidKeywords?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/model_serving_provisioned_throughput#safety ModelServingProvisionedThroughput#safety}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/model_serving_provisioned_throughput#safety ModelServingProvisionedThroughput#safety}
   */
   readonly safety?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/model_serving_provisioned_throughput#valid_topics ModelServingProvisionedThroughput#valid_topics}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/model_serving_provisioned_throughput#valid_topics ModelServingProvisionedThroughput#valid_topics}
   */
   readonly validTopics?: string[];
   /**
   * pii block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/model_serving_provisioned_throughput#pii ModelServingProvisionedThroughput#pii}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/model_serving_provisioned_throughput#pii ModelServingProvisionedThroughput#pii}
   */
   readonly pii?: ModelServingProvisionedThroughputAiGatewayGuardrailsOutputPii;
 }
@@ -522,7 +522,7 @@ export interface ModelServingProvisionedThroughputAiGatewayGuardrailsOutput {
 export function modelServingProvisionedThroughputAiGatewayGuardrailsOutputToTerraform(struct?: ModelServingProvisionedThroughputAiGatewayGuardrailsOutputOutputReference | ModelServingProvisionedThroughputAiGatewayGuardrailsOutput): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     invalid_keywords: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.invalidKeywords),
@@ -536,7 +536,7 @@ export function modelServingProvisionedThroughputAiGatewayGuardrailsOutputToTerr
 export function modelServingProvisionedThroughputAiGatewayGuardrailsOutputToHclTerraform(struct?: ModelServingProvisionedThroughputAiGatewayGuardrailsOutputOutputReference | ModelServingProvisionedThroughputAiGatewayGuardrailsOutput): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     invalid_keywords: {
@@ -687,13 +687,13 @@ export interface ModelServingProvisionedThroughputAiGatewayGuardrails {
   /**
   * input block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/model_serving_provisioned_throughput#input ModelServingProvisionedThroughput#input}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/model_serving_provisioned_throughput#input ModelServingProvisionedThroughput#input}
   */
   readonly input?: ModelServingProvisionedThroughputAiGatewayGuardrailsInput;
   /**
   * output block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/model_serving_provisioned_throughput#output ModelServingProvisionedThroughput#output}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/model_serving_provisioned_throughput#output ModelServingProvisionedThroughput#output}
   */
   readonly output?: ModelServingProvisionedThroughputAiGatewayGuardrailsOutput;
 }
@@ -701,7 +701,7 @@ export interface ModelServingProvisionedThroughputAiGatewayGuardrails {
 export function modelServingProvisionedThroughputAiGatewayGuardrailsToTerraform(struct?: ModelServingProvisionedThroughputAiGatewayGuardrailsOutputReference | ModelServingProvisionedThroughputAiGatewayGuardrails): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     input: modelServingProvisionedThroughputAiGatewayGuardrailsInputToTerraform(struct!.input),
@@ -713,7 +713,7 @@ export function modelServingProvisionedThroughputAiGatewayGuardrailsToTerraform(
 export function modelServingProvisionedThroughputAiGatewayGuardrailsToHclTerraform(struct?: ModelServingProvisionedThroughputAiGatewayGuardrailsOutputReference | ModelServingProvisionedThroughputAiGatewayGuardrails): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     input: {
@@ -806,19 +806,19 @@ export class ModelServingProvisionedThroughputAiGatewayGuardrailsOutputReference
 }
 export interface ModelServingProvisionedThroughputAiGatewayInferenceTableConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/model_serving_provisioned_throughput#catalog_name ModelServingProvisionedThroughput#catalog_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/model_serving_provisioned_throughput#catalog_name ModelServingProvisionedThroughput#catalog_name}
   */
   readonly catalogName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/model_serving_provisioned_throughput#enabled ModelServingProvisionedThroughput#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/model_serving_provisioned_throughput#enabled ModelServingProvisionedThroughput#enabled}
   */
   readonly enabled?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/model_serving_provisioned_throughput#schema_name ModelServingProvisionedThroughput#schema_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/model_serving_provisioned_throughput#schema_name ModelServingProvisionedThroughput#schema_name}
   */
   readonly schemaName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/model_serving_provisioned_throughput#table_name_prefix ModelServingProvisionedThroughput#table_name_prefix}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/model_serving_provisioned_throughput#table_name_prefix ModelServingProvisionedThroughput#table_name_prefix}
   */
   readonly tableNamePrefix?: string;
 }
@@ -826,7 +826,7 @@ export interface ModelServingProvisionedThroughputAiGatewayInferenceTableConfig 
 export function modelServingProvisionedThroughputAiGatewayInferenceTableConfigToTerraform(struct?: ModelServingProvisionedThroughputAiGatewayInferenceTableConfigOutputReference | ModelServingProvisionedThroughputAiGatewayInferenceTableConfig): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     catalog_name: cdktn.stringToTerraform(struct!.catalogName),
@@ -840,7 +840,7 @@ export function modelServingProvisionedThroughputAiGatewayInferenceTableConfigTo
 export function modelServingProvisionedThroughputAiGatewayInferenceTableConfigToHclTerraform(struct?: ModelServingProvisionedThroughputAiGatewayInferenceTableConfigOutputReference | ModelServingProvisionedThroughputAiGatewayInferenceTableConfig): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     catalog_name: {
@@ -989,23 +989,23 @@ export class ModelServingProvisionedThroughputAiGatewayInferenceTableConfigOutpu
 }
 export interface ModelServingProvisionedThroughputAiGatewayRateLimits {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/model_serving_provisioned_throughput#calls ModelServingProvisionedThroughput#calls}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/model_serving_provisioned_throughput#calls ModelServingProvisionedThroughput#calls}
   */
   readonly calls?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/model_serving_provisioned_throughput#key ModelServingProvisionedThroughput#key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/model_serving_provisioned_throughput#key ModelServingProvisionedThroughput#key}
   */
   readonly key?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/model_serving_provisioned_throughput#principal ModelServingProvisionedThroughput#principal}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/model_serving_provisioned_throughput#principal ModelServingProvisionedThroughput#principal}
   */
   readonly principal?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/model_serving_provisioned_throughput#renewal_period ModelServingProvisionedThroughput#renewal_period}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/model_serving_provisioned_throughput#renewal_period ModelServingProvisionedThroughput#renewal_period}
   */
   readonly renewalPeriod: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/model_serving_provisioned_throughput#tokens ModelServingProvisionedThroughput#tokens}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/model_serving_provisioned_throughput#tokens ModelServingProvisionedThroughput#tokens}
   */
   readonly tokens?: number;
 }
@@ -1013,7 +1013,7 @@ export interface ModelServingProvisionedThroughputAiGatewayRateLimits {
 export function modelServingProvisionedThroughputAiGatewayRateLimitsToTerraform(struct?: ModelServingProvisionedThroughputAiGatewayRateLimits | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     calls: cdktn.numberToTerraform(struct!.calls),
@@ -1028,7 +1028,7 @@ export function modelServingProvisionedThroughputAiGatewayRateLimitsToTerraform(
 export function modelServingProvisionedThroughputAiGatewayRateLimitsToHclTerraform(struct?: ModelServingProvisionedThroughputAiGatewayRateLimits | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     calls: {
@@ -1234,7 +1234,7 @@ export class ModelServingProvisionedThroughputAiGatewayRateLimitsList extends cd
 }
 export interface ModelServingProvisionedThroughputAiGatewayUsageTrackingConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/model_serving_provisioned_throughput#enabled ModelServingProvisionedThroughput#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/model_serving_provisioned_throughput#enabled ModelServingProvisionedThroughput#enabled}
   */
   readonly enabled?: boolean | cdktn.IResolvable;
 }
@@ -1242,7 +1242,7 @@ export interface ModelServingProvisionedThroughputAiGatewayUsageTrackingConfig {
 export function modelServingProvisionedThroughputAiGatewayUsageTrackingConfigToTerraform(struct?: ModelServingProvisionedThroughputAiGatewayUsageTrackingConfigOutputReference | ModelServingProvisionedThroughputAiGatewayUsageTrackingConfig): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     enabled: cdktn.booleanToTerraform(struct!.enabled),
@@ -1253,7 +1253,7 @@ export function modelServingProvisionedThroughputAiGatewayUsageTrackingConfigToT
 export function modelServingProvisionedThroughputAiGatewayUsageTrackingConfigToHclTerraform(struct?: ModelServingProvisionedThroughputAiGatewayUsageTrackingConfigOutputReference | ModelServingProvisionedThroughputAiGatewayUsageTrackingConfig): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     enabled: {
@@ -1320,31 +1320,31 @@ export interface ModelServingProvisionedThroughputAiGateway {
   /**
   * fallback_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/model_serving_provisioned_throughput#fallback_config ModelServingProvisionedThroughput#fallback_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/model_serving_provisioned_throughput#fallback_config ModelServingProvisionedThroughput#fallback_config}
   */
   readonly fallbackConfig?: ModelServingProvisionedThroughputAiGatewayFallbackConfig;
   /**
   * guardrails block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/model_serving_provisioned_throughput#guardrails ModelServingProvisionedThroughput#guardrails}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/model_serving_provisioned_throughput#guardrails ModelServingProvisionedThroughput#guardrails}
   */
   readonly guardrails?: ModelServingProvisionedThroughputAiGatewayGuardrails;
   /**
   * inference_table_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/model_serving_provisioned_throughput#inference_table_config ModelServingProvisionedThroughput#inference_table_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/model_serving_provisioned_throughput#inference_table_config ModelServingProvisionedThroughput#inference_table_config}
   */
   readonly inferenceTableConfig?: ModelServingProvisionedThroughputAiGatewayInferenceTableConfig;
   /**
   * rate_limits block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/model_serving_provisioned_throughput#rate_limits ModelServingProvisionedThroughput#rate_limits}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/model_serving_provisioned_throughput#rate_limits ModelServingProvisionedThroughput#rate_limits}
   */
   readonly rateLimits?: ModelServingProvisionedThroughputAiGatewayRateLimits[] | cdktn.IResolvable;
   /**
   * usage_tracking_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/model_serving_provisioned_throughput#usage_tracking_config ModelServingProvisionedThroughput#usage_tracking_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/model_serving_provisioned_throughput#usage_tracking_config ModelServingProvisionedThroughput#usage_tracking_config}
   */
   readonly usageTrackingConfig?: ModelServingProvisionedThroughputAiGatewayUsageTrackingConfig;
 }
@@ -1352,7 +1352,7 @@ export interface ModelServingProvisionedThroughputAiGateway {
 export function modelServingProvisionedThroughputAiGatewayToTerraform(struct?: ModelServingProvisionedThroughputAiGatewayOutputReference | ModelServingProvisionedThroughputAiGateway): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     fallback_config: modelServingProvisionedThroughputAiGatewayFallbackConfigToTerraform(struct!.fallbackConfig),
@@ -1367,7 +1367,7 @@ export function modelServingProvisionedThroughputAiGatewayToTerraform(struct?: M
 export function modelServingProvisionedThroughputAiGatewayToHclTerraform(struct?: ModelServingProvisionedThroughputAiGatewayOutputReference | ModelServingProvisionedThroughputAiGateway): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     fallback_config: {
@@ -1544,23 +1544,23 @@ export class ModelServingProvisionedThroughputAiGatewayOutputReference extends c
 }
 export interface ModelServingProvisionedThroughputConfigServedEntities {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/model_serving_provisioned_throughput#burst_scaling_enabled ModelServingProvisionedThroughput#burst_scaling_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/model_serving_provisioned_throughput#burst_scaling_enabled ModelServingProvisionedThroughput#burst_scaling_enabled}
   */
   readonly burstScalingEnabled?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/model_serving_provisioned_throughput#entity_name ModelServingProvisionedThroughput#entity_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/model_serving_provisioned_throughput#entity_name ModelServingProvisionedThroughput#entity_name}
   */
   readonly entityName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/model_serving_provisioned_throughput#entity_version ModelServingProvisionedThroughput#entity_version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/model_serving_provisioned_throughput#entity_version ModelServingProvisionedThroughput#entity_version}
   */
   readonly entityVersion: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/model_serving_provisioned_throughput#name ModelServingProvisionedThroughput#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/model_serving_provisioned_throughput#name ModelServingProvisionedThroughput#name}
   */
   readonly name?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/model_serving_provisioned_throughput#provisioned_model_units ModelServingProvisionedThroughput#provisioned_model_units}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/model_serving_provisioned_throughput#provisioned_model_units ModelServingProvisionedThroughput#provisioned_model_units}
   */
   readonly provisionedModelUnits: number;
 }
@@ -1568,7 +1568,7 @@ export interface ModelServingProvisionedThroughputConfigServedEntities {
 export function modelServingProvisionedThroughputConfigServedEntitiesToTerraform(struct?: ModelServingProvisionedThroughputConfigServedEntities | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     burst_scaling_enabled: cdktn.booleanToTerraform(struct!.burstScalingEnabled),
@@ -1583,7 +1583,7 @@ export function modelServingProvisionedThroughputConfigServedEntitiesToTerraform
 export function modelServingProvisionedThroughputConfigServedEntitiesToHclTerraform(struct?: ModelServingProvisionedThroughputConfigServedEntities | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     burst_scaling_enabled: {
@@ -1783,15 +1783,15 @@ export class ModelServingProvisionedThroughputConfigServedEntitiesList extends c
 }
 export interface ModelServingProvisionedThroughputConfigTrafficConfigRoutes {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/model_serving_provisioned_throughput#served_entity_name ModelServingProvisionedThroughput#served_entity_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/model_serving_provisioned_throughput#served_entity_name ModelServingProvisionedThroughput#served_entity_name}
   */
   readonly servedEntityName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/model_serving_provisioned_throughput#served_model_name ModelServingProvisionedThroughput#served_model_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/model_serving_provisioned_throughput#served_model_name ModelServingProvisionedThroughput#served_model_name}
   */
   readonly servedModelName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/model_serving_provisioned_throughput#traffic_percentage ModelServingProvisionedThroughput#traffic_percentage}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/model_serving_provisioned_throughput#traffic_percentage ModelServingProvisionedThroughput#traffic_percentage}
   */
   readonly trafficPercentage: number;
 }
@@ -1799,7 +1799,7 @@ export interface ModelServingProvisionedThroughputConfigTrafficConfigRoutes {
 export function modelServingProvisionedThroughputConfigTrafficConfigRoutesToTerraform(struct?: ModelServingProvisionedThroughputConfigTrafficConfigRoutes | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     served_entity_name: cdktn.stringToTerraform(struct!.servedEntityName),
@@ -1812,7 +1812,7 @@ export function modelServingProvisionedThroughputConfigTrafficConfigRoutesToTerr
 export function modelServingProvisionedThroughputConfigTrafficConfigRoutesToHclTerraform(struct?: ModelServingProvisionedThroughputConfigTrafficConfigRoutes | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     served_entity_name: {
@@ -1964,7 +1964,7 @@ export interface ModelServingProvisionedThroughputConfigTrafficConfig {
   /**
   * routes block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/model_serving_provisioned_throughput#routes ModelServingProvisionedThroughput#routes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/model_serving_provisioned_throughput#routes ModelServingProvisionedThroughput#routes}
   */
   readonly routes?: ModelServingProvisionedThroughputConfigTrafficConfigRoutes[] | cdktn.IResolvable;
 }
@@ -1972,7 +1972,7 @@ export interface ModelServingProvisionedThroughputConfigTrafficConfig {
 export function modelServingProvisionedThroughputConfigTrafficConfigToTerraform(struct?: ModelServingProvisionedThroughputConfigTrafficConfigOutputReference | ModelServingProvisionedThroughputConfigTrafficConfig): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     routes: cdktn.listMapper(modelServingProvisionedThroughputConfigTrafficConfigRoutesToTerraform, true)(struct!.routes),
@@ -1983,7 +1983,7 @@ export function modelServingProvisionedThroughputConfigTrafficConfigToTerraform(
 export function modelServingProvisionedThroughputConfigTrafficConfigToHclTerraform(struct?: ModelServingProvisionedThroughputConfigTrafficConfigOutputReference | ModelServingProvisionedThroughputConfigTrafficConfig): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     routes: {
@@ -2050,13 +2050,13 @@ export interface ModelServingProvisionedThroughputConfigA {
   /**
   * served_entities block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/model_serving_provisioned_throughput#served_entities ModelServingProvisionedThroughput#served_entities}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/model_serving_provisioned_throughput#served_entities ModelServingProvisionedThroughput#served_entities}
   */
   readonly servedEntities?: ModelServingProvisionedThroughputConfigServedEntities[] | cdktn.IResolvable;
   /**
   * traffic_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/model_serving_provisioned_throughput#traffic_config ModelServingProvisionedThroughput#traffic_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/model_serving_provisioned_throughput#traffic_config ModelServingProvisionedThroughput#traffic_config}
   */
   readonly trafficConfig?: ModelServingProvisionedThroughputConfigTrafficConfig;
 }
@@ -2064,7 +2064,7 @@ export interface ModelServingProvisionedThroughputConfigA {
 export function modelServingProvisionedThroughputConfigAToTerraform(struct?: ModelServingProvisionedThroughputConfigAOutputReference | ModelServingProvisionedThroughputConfigA): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     served_entities: cdktn.listMapper(modelServingProvisionedThroughputConfigServedEntitiesToTerraform, true)(struct!.servedEntities),
@@ -2076,7 +2076,7 @@ export function modelServingProvisionedThroughputConfigAToTerraform(struct?: Mod
 export function modelServingProvisionedThroughputConfigAToHclTerraform(struct?: ModelServingProvisionedThroughputConfigAOutputReference | ModelServingProvisionedThroughputConfigA): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     served_entities: {
@@ -2169,11 +2169,11 @@ export class ModelServingProvisionedThroughputConfigAOutputReference extends cdk
 }
 export interface ModelServingProvisionedThroughputEmailNotifications {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/model_serving_provisioned_throughput#on_update_failure ModelServingProvisionedThroughput#on_update_failure}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/model_serving_provisioned_throughput#on_update_failure ModelServingProvisionedThroughput#on_update_failure}
   */
   readonly onUpdateFailure?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/model_serving_provisioned_throughput#on_update_success ModelServingProvisionedThroughput#on_update_success}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/model_serving_provisioned_throughput#on_update_success ModelServingProvisionedThroughput#on_update_success}
   */
   readonly onUpdateSuccess?: string[];
 }
@@ -2181,7 +2181,7 @@ export interface ModelServingProvisionedThroughputEmailNotifications {
 export function modelServingProvisionedThroughputEmailNotificationsToTerraform(struct?: ModelServingProvisionedThroughputEmailNotificationsOutputReference | ModelServingProvisionedThroughputEmailNotifications): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     on_update_failure: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.onUpdateFailure),
@@ -2193,7 +2193,7 @@ export function modelServingProvisionedThroughputEmailNotificationsToTerraform(s
 export function modelServingProvisionedThroughputEmailNotificationsToHclTerraform(struct?: ModelServingProvisionedThroughputEmailNotificationsOutputReference | ModelServingProvisionedThroughputEmailNotifications): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     on_update_failure: {
@@ -2286,7 +2286,7 @@ export class ModelServingProvisionedThroughputEmailNotificationsOutputReference 
 }
 export interface ModelServingProvisionedThroughputProviderConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/model_serving_provisioned_throughput#workspace_id ModelServingProvisionedThroughput#workspace_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/model_serving_provisioned_throughput#workspace_id ModelServingProvisionedThroughput#workspace_id}
   */
   readonly workspaceId?: string;
 }
@@ -2294,7 +2294,7 @@ export interface ModelServingProvisionedThroughputProviderConfig {
 export function modelServingProvisionedThroughputProviderConfigToTerraform(struct?: ModelServingProvisionedThroughputProviderConfigOutputReference | ModelServingProvisionedThroughputProviderConfig): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     workspace_id: cdktn.stringToTerraform(struct!.workspaceId),
@@ -2305,7 +2305,7 @@ export function modelServingProvisionedThroughputProviderConfigToTerraform(struc
 export function modelServingProvisionedThroughputProviderConfigToHclTerraform(struct?: ModelServingProvisionedThroughputProviderConfigOutputReference | ModelServingProvisionedThroughputProviderConfig): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     workspace_id: {
@@ -2370,11 +2370,11 @@ export class ModelServingProvisionedThroughputProviderConfigOutputReference exte
 }
 export interface ModelServingProvisionedThroughputTags {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/model_serving_provisioned_throughput#key ModelServingProvisionedThroughput#key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/model_serving_provisioned_throughput#key ModelServingProvisionedThroughput#key}
   */
   readonly key: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/model_serving_provisioned_throughput#value ModelServingProvisionedThroughput#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/model_serving_provisioned_throughput#value ModelServingProvisionedThroughput#value}
   */
   readonly value?: string;
 }
@@ -2382,7 +2382,7 @@ export interface ModelServingProvisionedThroughputTags {
 export function modelServingProvisionedThroughputTagsToTerraform(struct?: ModelServingProvisionedThroughputTags | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     key: cdktn.stringToTerraform(struct!.key),
@@ -2394,7 +2394,7 @@ export function modelServingProvisionedThroughputTagsToTerraform(struct?: ModelS
 export function modelServingProvisionedThroughputTagsToHclTerraform(struct?: ModelServingProvisionedThroughputTags | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     key: {
@@ -2516,11 +2516,11 @@ export class ModelServingProvisionedThroughputTagsList extends cdktn.ComplexList
 }
 export interface ModelServingProvisionedThroughputTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/model_serving_provisioned_throughput#create ModelServingProvisionedThroughput#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/model_serving_provisioned_throughput#create ModelServingProvisionedThroughput#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/model_serving_provisioned_throughput#update ModelServingProvisionedThroughput#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/model_serving_provisioned_throughput#update ModelServingProvisionedThroughput#update}
   */
   readonly update?: string;
 }
@@ -2528,7 +2528,7 @@ export interface ModelServingProvisionedThroughputTimeouts {
 export function modelServingProvisionedThroughputTimeoutsToTerraform(struct?: ModelServingProvisionedThroughputTimeouts | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     create: cdktn.stringToTerraform(struct!.create),
@@ -2540,7 +2540,7 @@ export function modelServingProvisionedThroughputTimeoutsToTerraform(struct?: Mo
 export function modelServingProvisionedThroughputTimeoutsToHclTerraform(struct?: ModelServingProvisionedThroughputTimeouts | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     create: {
@@ -2643,7 +2643,7 @@ export class ModelServingProvisionedThroughputTimeoutsOutputReference extends cd
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/model_serving_provisioned_throughput databricks_model_serving_provisioned_throughput}
+* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/model_serving_provisioned_throughput databricks_model_serving_provisioned_throughput}
 */
 export class ModelServingProvisionedThroughput extends cdktn.TerraformResource {
 
@@ -2659,7 +2659,7 @@ export class ModelServingProvisionedThroughput extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a ModelServingProvisionedThroughput resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ModelServingProvisionedThroughput to import
-  * @param importFromId The id of the existing ModelServingProvisionedThroughput that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/model_serving_provisioned_throughput#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing ModelServingProvisionedThroughput that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/model_serving_provisioned_throughput#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ModelServingProvisionedThroughput to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -2671,7 +2671,7 @@ export class ModelServingProvisionedThroughput extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/model_serving_provisioned_throughput databricks_model_serving_provisioned_throughput} Resource
+  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/model_serving_provisioned_throughput databricks_model_serving_provisioned_throughput} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -2682,7 +2682,7 @@ export class ModelServingProvisionedThroughput extends cdktn.TerraformResource {
       terraformResourceType: 'databricks_model_serving_provisioned_throughput',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '1.117.0',
+        providerVersion: '1.118.0',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,

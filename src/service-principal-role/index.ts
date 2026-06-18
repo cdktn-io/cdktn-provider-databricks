@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/service_principal_role
+// https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/service_principal_role
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,34 +15,34 @@ export interface ServicePrincipalRoleConfig extends cdktn.TerraformMetaArguments
   /**
   * Specifies whether to use account-level or workspace-level API. Valid values are `account` and `workspace`. When not set, the API level is inferred from the provider host.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/service_principal_role#api ServicePrincipalRole#api}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/service_principal_role#api ServicePrincipalRole#api}
   */
   readonly api?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/service_principal_role#id ServicePrincipalRole#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/service_principal_role#id ServicePrincipalRole#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/service_principal_role#role ServicePrincipalRole#role}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/service_principal_role#role ServicePrincipalRole#role}
   */
   readonly role: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/service_principal_role#service_principal_id ServicePrincipalRole#service_principal_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/service_principal_role#service_principal_id ServicePrincipalRole#service_principal_id}
   */
   readonly servicePrincipalId: string;
   /**
   * provider_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/service_principal_role#provider_config ServicePrincipalRole#provider_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/service_principal_role#provider_config ServicePrincipalRole#provider_config}
   */
   readonly providerConfig?: ServicePrincipalRoleProviderConfig;
 }
 export interface ServicePrincipalRoleProviderConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/service_principal_role#workspace_id ServicePrincipalRole#workspace_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/service_principal_role#workspace_id ServicePrincipalRole#workspace_id}
   */
   readonly workspaceId?: string;
 }
@@ -50,7 +50,7 @@ export interface ServicePrincipalRoleProviderConfig {
 export function servicePrincipalRoleProviderConfigToTerraform(struct?: ServicePrincipalRoleProviderConfigOutputReference | ServicePrincipalRoleProviderConfig): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     workspace_id: cdktn.stringToTerraform(struct!.workspaceId),
@@ -61,7 +61,7 @@ export function servicePrincipalRoleProviderConfigToTerraform(struct?: ServicePr
 export function servicePrincipalRoleProviderConfigToHclTerraform(struct?: ServicePrincipalRoleProviderConfigOutputReference | ServicePrincipalRoleProviderConfig): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     workspace_id: {
@@ -126,7 +126,7 @@ export class ServicePrincipalRoleProviderConfigOutputReference extends cdktn.Com
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/service_principal_role databricks_service_principal_role}
+* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/service_principal_role databricks_service_principal_role}
 */
 export class ServicePrincipalRole extends cdktn.TerraformResource {
 
@@ -142,7 +142,7 @@ export class ServicePrincipalRole extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a ServicePrincipalRole resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ServicePrincipalRole to import
-  * @param importFromId The id of the existing ServicePrincipalRole that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/service_principal_role#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing ServicePrincipalRole that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/service_principal_role#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ServicePrincipalRole to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -154,7 +154,7 @@ export class ServicePrincipalRole extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/service_principal_role databricks_service_principal_role} Resource
+  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/service_principal_role databricks_service_principal_role} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -165,7 +165,7 @@ export class ServicePrincipalRole extends cdktn.TerraformResource {
       terraformResourceType: 'databricks_service_principal_role',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '1.117.0',
+        providerVersion: '1.118.0',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,

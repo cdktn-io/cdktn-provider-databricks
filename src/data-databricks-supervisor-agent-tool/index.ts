@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/supervisor_agent_tool
+// https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/supervisor_agent_tool
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,17 +13,17 @@ import * as cdktn from 'cdktn';
 
 export interface DataDatabricksSupervisorAgentToolConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/supervisor_agent_tool#name DataDatabricksSupervisorAgentTool#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/supervisor_agent_tool#name DataDatabricksSupervisorAgentTool#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/supervisor_agent_tool#provider_config DataDatabricksSupervisorAgentTool#provider_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/supervisor_agent_tool#provider_config DataDatabricksSupervisorAgentTool#provider_config}
   */
   readonly providerConfig?: DataDatabricksSupervisorAgentToolProviderConfig;
 }
 export interface DataDatabricksSupervisorAgentToolApp {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/supervisor_agent_tool#name DataDatabricksSupervisorAgentTool#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/supervisor_agent_tool#name DataDatabricksSupervisorAgentTool#name}
   */
   readonly name: string;
 }
@@ -31,7 +31,7 @@ export interface DataDatabricksSupervisorAgentToolApp {
 export function dataDatabricksSupervisorAgentToolAppToTerraform(struct?: DataDatabricksSupervisorAgentToolApp): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     name: cdktn.stringToTerraform(struct!.name),
@@ -42,7 +42,7 @@ export function dataDatabricksSupervisorAgentToolAppToTerraform(struct?: DataDat
 export function dataDatabricksSupervisorAgentToolAppToHclTerraform(struct?: DataDatabricksSupervisorAgentToolApp): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     name: {
@@ -104,7 +104,7 @@ export class DataDatabricksSupervisorAgentToolAppOutputReference extends cdktn.C
 }
 export interface DataDatabricksSupervisorAgentToolGenieSpace {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/supervisor_agent_tool#id DataDatabricksSupervisorAgentTool#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/supervisor_agent_tool#id DataDatabricksSupervisorAgentTool#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -115,7 +115,7 @@ export interface DataDatabricksSupervisorAgentToolGenieSpace {
 export function dataDatabricksSupervisorAgentToolGenieSpaceToTerraform(struct?: DataDatabricksSupervisorAgentToolGenieSpace): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     id: cdktn.stringToTerraform(struct!.id),
@@ -126,7 +126,7 @@ export function dataDatabricksSupervisorAgentToolGenieSpaceToTerraform(struct?: 
 export function dataDatabricksSupervisorAgentToolGenieSpaceToHclTerraform(struct?: DataDatabricksSupervisorAgentToolGenieSpace): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     id: {
@@ -188,11 +188,11 @@ export class DataDatabricksSupervisorAgentToolGenieSpaceOutputReference extends 
 }
 export interface DataDatabricksSupervisorAgentToolKnowledgeAssistant {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/supervisor_agent_tool#knowledge_assistant_id DataDatabricksSupervisorAgentTool#knowledge_assistant_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/supervisor_agent_tool#knowledge_assistant_id DataDatabricksSupervisorAgentTool#knowledge_assistant_id}
   */
   readonly knowledgeAssistantId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/supervisor_agent_tool#serving_endpoint_name DataDatabricksSupervisorAgentTool#serving_endpoint_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/supervisor_agent_tool#serving_endpoint_name DataDatabricksSupervisorAgentTool#serving_endpoint_name}
   */
   readonly servingEndpointName?: string;
 }
@@ -200,7 +200,7 @@ export interface DataDatabricksSupervisorAgentToolKnowledgeAssistant {
 export function dataDatabricksSupervisorAgentToolKnowledgeAssistantToTerraform(struct?: DataDatabricksSupervisorAgentToolKnowledgeAssistant): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     knowledge_assistant_id: cdktn.stringToTerraform(struct!.knowledgeAssistantId),
@@ -212,7 +212,7 @@ export function dataDatabricksSupervisorAgentToolKnowledgeAssistantToTerraform(s
 export function dataDatabricksSupervisorAgentToolKnowledgeAssistantToHclTerraform(struct?: DataDatabricksSupervisorAgentToolKnowledgeAssistant): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     knowledge_assistant_id: {
@@ -302,7 +302,7 @@ export class DataDatabricksSupervisorAgentToolKnowledgeAssistantOutputReference 
 }
 export interface DataDatabricksSupervisorAgentToolProviderConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/supervisor_agent_tool#workspace_id DataDatabricksSupervisorAgentTool#workspace_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/supervisor_agent_tool#workspace_id DataDatabricksSupervisorAgentTool#workspace_id}
   */
   readonly workspaceId?: string;
 }
@@ -310,7 +310,7 @@ export interface DataDatabricksSupervisorAgentToolProviderConfig {
 export function dataDatabricksSupervisorAgentToolProviderConfigToTerraform(struct?: DataDatabricksSupervisorAgentToolProviderConfig | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     workspace_id: cdktn.stringToTerraform(struct!.workspaceId),
@@ -321,7 +321,7 @@ export function dataDatabricksSupervisorAgentToolProviderConfigToTerraform(struc
 export function dataDatabricksSupervisorAgentToolProviderConfigToHclTerraform(struct?: DataDatabricksSupervisorAgentToolProviderConfig | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     workspace_id: {
@@ -396,7 +396,7 @@ export class DataDatabricksSupervisorAgentToolProviderConfigOutputReference exte
 }
 export interface DataDatabricksSupervisorAgentToolUcConnection {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/supervisor_agent_tool#name DataDatabricksSupervisorAgentTool#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/supervisor_agent_tool#name DataDatabricksSupervisorAgentTool#name}
   */
   readonly name: string;
 }
@@ -404,7 +404,7 @@ export interface DataDatabricksSupervisorAgentToolUcConnection {
 export function dataDatabricksSupervisorAgentToolUcConnectionToTerraform(struct?: DataDatabricksSupervisorAgentToolUcConnection): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     name: cdktn.stringToTerraform(struct!.name),
@@ -415,7 +415,7 @@ export function dataDatabricksSupervisorAgentToolUcConnectionToTerraform(struct?
 export function dataDatabricksSupervisorAgentToolUcConnectionToHclTerraform(struct?: DataDatabricksSupervisorAgentToolUcConnection): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     name: {
@@ -477,7 +477,7 @@ export class DataDatabricksSupervisorAgentToolUcConnectionOutputReference extend
 }
 export interface DataDatabricksSupervisorAgentToolUcFunction {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/supervisor_agent_tool#name DataDatabricksSupervisorAgentTool#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/supervisor_agent_tool#name DataDatabricksSupervisorAgentTool#name}
   */
   readonly name: string;
 }
@@ -485,7 +485,7 @@ export interface DataDatabricksSupervisorAgentToolUcFunction {
 export function dataDatabricksSupervisorAgentToolUcFunctionToTerraform(struct?: DataDatabricksSupervisorAgentToolUcFunction): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     name: cdktn.stringToTerraform(struct!.name),
@@ -496,7 +496,7 @@ export function dataDatabricksSupervisorAgentToolUcFunctionToTerraform(struct?: 
 export function dataDatabricksSupervisorAgentToolUcFunctionToHclTerraform(struct?: DataDatabricksSupervisorAgentToolUcFunction): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     name: {
@@ -558,7 +558,7 @@ export class DataDatabricksSupervisorAgentToolUcFunctionOutputReference extends 
 }
 export interface DataDatabricksSupervisorAgentToolVolume {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/supervisor_agent_tool#name DataDatabricksSupervisorAgentTool#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/supervisor_agent_tool#name DataDatabricksSupervisorAgentTool#name}
   */
   readonly name: string;
 }
@@ -566,7 +566,7 @@ export interface DataDatabricksSupervisorAgentToolVolume {
 export function dataDatabricksSupervisorAgentToolVolumeToTerraform(struct?: DataDatabricksSupervisorAgentToolVolume): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     name: cdktn.stringToTerraform(struct!.name),
@@ -577,7 +577,7 @@ export function dataDatabricksSupervisorAgentToolVolumeToTerraform(struct?: Data
 export function dataDatabricksSupervisorAgentToolVolumeToHclTerraform(struct?: DataDatabricksSupervisorAgentToolVolume): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     name: {
@@ -639,7 +639,7 @@ export class DataDatabricksSupervisorAgentToolVolumeOutputReference extends cdkt
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/supervisor_agent_tool databricks_supervisor_agent_tool}
+* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/supervisor_agent_tool databricks_supervisor_agent_tool}
 */
 export class DataDatabricksSupervisorAgentTool extends cdktn.TerraformDataSource {
 
@@ -655,7 +655,7 @@ export class DataDatabricksSupervisorAgentTool extends cdktn.TerraformDataSource
   * Generates CDKTN code for importing a DataDatabricksSupervisorAgentTool resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataDatabricksSupervisorAgentTool to import
-  * @param importFromId The id of the existing DataDatabricksSupervisorAgentTool that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/supervisor_agent_tool#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataDatabricksSupervisorAgentTool that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/supervisor_agent_tool#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataDatabricksSupervisorAgentTool to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -667,7 +667,7 @@ export class DataDatabricksSupervisorAgentTool extends cdktn.TerraformDataSource
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/supervisor_agent_tool databricks_supervisor_agent_tool} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/supervisor_agent_tool databricks_supervisor_agent_tool} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -678,7 +678,7 @@ export class DataDatabricksSupervisorAgentTool extends cdktn.TerraformDataSource
       terraformResourceType: 'databricks_supervisor_agent_tool',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '1.117.0',
+        providerVersion: '1.118.0',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,

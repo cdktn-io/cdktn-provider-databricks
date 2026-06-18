@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/vector_search_endpoint
+// https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/vector_search_endpoint
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,40 +13,40 @@ import * as cdktn from 'cdktn';
 
 export interface VectorSearchEndpointConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/vector_search_endpoint#budget_policy_id VectorSearchEndpoint#budget_policy_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/vector_search_endpoint#budget_policy_id VectorSearchEndpoint#budget_policy_id}
   */
   readonly budgetPolicyId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/vector_search_endpoint#endpoint_type VectorSearchEndpoint#endpoint_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/vector_search_endpoint#endpoint_type VectorSearchEndpoint#endpoint_type}
   */
   readonly endpointType: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/vector_search_endpoint#id VectorSearchEndpoint#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/vector_search_endpoint#id VectorSearchEndpoint#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/vector_search_endpoint#name VectorSearchEndpoint#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/vector_search_endpoint#name VectorSearchEndpoint#name}
   */
   readonly name: string;
   /**
   * provider_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/vector_search_endpoint#provider_config VectorSearchEndpoint#provider_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/vector_search_endpoint#provider_config VectorSearchEndpoint#provider_config}
   */
   readonly providerConfig?: VectorSearchEndpointProviderConfig;
   /**
   * scaling_info block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/vector_search_endpoint#scaling_info VectorSearchEndpoint#scaling_info}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/vector_search_endpoint#scaling_info VectorSearchEndpoint#scaling_info}
   */
   readonly scalingInfo?: VectorSearchEndpointScalingInfo;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/vector_search_endpoint#timeouts VectorSearchEndpoint#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/vector_search_endpoint#timeouts VectorSearchEndpoint#timeouts}
   */
   readonly timeouts?: VectorSearchEndpointTimeouts;
 }
@@ -56,7 +56,7 @@ export interface VectorSearchEndpointEndpointStatus {
 export function vectorSearchEndpointEndpointStatusToTerraform(struct?: VectorSearchEndpointEndpointStatus): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -66,7 +66,7 @@ export function vectorSearchEndpointEndpointStatusToTerraform(struct?: VectorSea
 export function vectorSearchEndpointEndpointStatusToHclTerraform(struct?: VectorSearchEndpointEndpointStatus): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -132,7 +132,7 @@ export class VectorSearchEndpointEndpointStatusList extends cdktn.ComplexList {
 }
 export interface VectorSearchEndpointProviderConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/vector_search_endpoint#workspace_id VectorSearchEndpoint#workspace_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/vector_search_endpoint#workspace_id VectorSearchEndpoint#workspace_id}
   */
   readonly workspaceId?: string;
 }
@@ -140,7 +140,7 @@ export interface VectorSearchEndpointProviderConfig {
 export function vectorSearchEndpointProviderConfigToTerraform(struct?: VectorSearchEndpointProviderConfigOutputReference | VectorSearchEndpointProviderConfig): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     workspace_id: cdktn.stringToTerraform(struct!.workspaceId),
@@ -151,7 +151,7 @@ export function vectorSearchEndpointProviderConfigToTerraform(struct?: VectorSea
 export function vectorSearchEndpointProviderConfigToHclTerraform(struct?: VectorSearchEndpointProviderConfigOutputReference | VectorSearchEndpointProviderConfig): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     workspace_id: {
@@ -216,11 +216,11 @@ export class VectorSearchEndpointProviderConfigOutputReference extends cdktn.Com
 }
 export interface VectorSearchEndpointScalingInfo {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/vector_search_endpoint#requested_target_qps VectorSearchEndpoint#requested_target_qps}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/vector_search_endpoint#requested_target_qps VectorSearchEndpoint#requested_target_qps}
   */
   readonly requestedTargetQps?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/vector_search_endpoint#state VectorSearchEndpoint#state}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/vector_search_endpoint#state VectorSearchEndpoint#state}
   */
   readonly state?: string;
 }
@@ -228,7 +228,7 @@ export interface VectorSearchEndpointScalingInfo {
 export function vectorSearchEndpointScalingInfoToTerraform(struct?: VectorSearchEndpointScalingInfoOutputReference | VectorSearchEndpointScalingInfo): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     requested_target_qps: cdktn.numberToTerraform(struct!.requestedTargetQps),
@@ -240,7 +240,7 @@ export function vectorSearchEndpointScalingInfoToTerraform(struct?: VectorSearch
 export function vectorSearchEndpointScalingInfoToHclTerraform(struct?: VectorSearchEndpointScalingInfoOutputReference | VectorSearchEndpointScalingInfo): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     requested_target_qps: {
@@ -333,7 +333,7 @@ export class VectorSearchEndpointScalingInfoOutputReference extends cdktn.Comple
 }
 export interface VectorSearchEndpointTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/vector_search_endpoint#create VectorSearchEndpoint#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/vector_search_endpoint#create VectorSearchEndpoint#create}
   */
   readonly create?: string;
 }
@@ -341,7 +341,7 @@ export interface VectorSearchEndpointTimeouts {
 export function vectorSearchEndpointTimeoutsToTerraform(struct?: VectorSearchEndpointTimeouts | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     create: cdktn.stringToTerraform(struct!.create),
@@ -352,7 +352,7 @@ export function vectorSearchEndpointTimeoutsToTerraform(struct?: VectorSearchEnd
 export function vectorSearchEndpointTimeoutsToHclTerraform(struct?: VectorSearchEndpointTimeouts | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     create: {
@@ -427,7 +427,7 @@ export class VectorSearchEndpointTimeoutsOutputReference extends cdktn.ComplexOb
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/vector_search_endpoint databricks_vector_search_endpoint}
+* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/vector_search_endpoint databricks_vector_search_endpoint}
 */
 export class VectorSearchEndpoint extends cdktn.TerraformResource {
 
@@ -443,7 +443,7 @@ export class VectorSearchEndpoint extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a VectorSearchEndpoint resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the VectorSearchEndpoint to import
-  * @param importFromId The id of the existing VectorSearchEndpoint that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/vector_search_endpoint#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing VectorSearchEndpoint that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/vector_search_endpoint#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the VectorSearchEndpoint to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -455,7 +455,7 @@ export class VectorSearchEndpoint extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/vector_search_endpoint databricks_vector_search_endpoint} Resource
+  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/vector_search_endpoint databricks_vector_search_endpoint} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -466,7 +466,7 @@ export class VectorSearchEndpoint extends cdktn.TerraformResource {
       terraformResourceType: 'databricks_vector_search_endpoint',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '1.117.0',
+        providerVersion: '1.118.0',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,

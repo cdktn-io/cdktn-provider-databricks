@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/instance_pool
+// https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/instance_pool
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,44 +13,44 @@ import * as cdktn from 'cdktn';
 
 export interface DataDatabricksInstancePoolConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/instance_pool#id DataDatabricksInstancePool#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/instance_pool#id DataDatabricksInstancePool#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/instance_pool#name DataDatabricksInstancePool#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/instance_pool#name DataDatabricksInstancePool#name}
   */
   readonly name: string;
   /**
   * pool_info block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/instance_pool#pool_info DataDatabricksInstancePool#pool_info}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/instance_pool#pool_info DataDatabricksInstancePool#pool_info}
   */
   readonly poolInfo?: DataDatabricksInstancePoolPoolInfo;
   /**
   * provider_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/instance_pool#provider_config DataDatabricksInstancePool#provider_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/instance_pool#provider_config DataDatabricksInstancePool#provider_config}
   */
   readonly providerConfig?: DataDatabricksInstancePoolProviderConfig;
 }
 export interface DataDatabricksInstancePoolPoolInfoAwsAttributes {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/instance_pool#availability DataDatabricksInstancePool#availability}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/instance_pool#availability DataDatabricksInstancePool#availability}
   */
   readonly availability?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/instance_pool#instance_profile_arn DataDatabricksInstancePool#instance_profile_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/instance_pool#instance_profile_arn DataDatabricksInstancePool#instance_profile_arn}
   */
   readonly instanceProfileArn?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/instance_pool#spot_bid_price_percent DataDatabricksInstancePool#spot_bid_price_percent}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/instance_pool#spot_bid_price_percent DataDatabricksInstancePool#spot_bid_price_percent}
   */
   readonly spotBidPricePercent?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/instance_pool#zone_id DataDatabricksInstancePool#zone_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/instance_pool#zone_id DataDatabricksInstancePool#zone_id}
   */
   readonly zoneId?: string;
 }
@@ -58,7 +58,7 @@ export interface DataDatabricksInstancePoolPoolInfoAwsAttributes {
 export function dataDatabricksInstancePoolPoolInfoAwsAttributesToTerraform(struct?: DataDatabricksInstancePoolPoolInfoAwsAttributesOutputReference | DataDatabricksInstancePoolPoolInfoAwsAttributes): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     availability: cdktn.stringToTerraform(struct!.availability),
@@ -72,7 +72,7 @@ export function dataDatabricksInstancePoolPoolInfoAwsAttributesToTerraform(struc
 export function dataDatabricksInstancePoolPoolInfoAwsAttributesToHclTerraform(struct?: DataDatabricksInstancePoolPoolInfoAwsAttributesOutputReference | DataDatabricksInstancePoolPoolInfoAwsAttributes): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     availability: {
@@ -221,11 +221,11 @@ export class DataDatabricksInstancePoolPoolInfoAwsAttributesOutputReference exte
 }
 export interface DataDatabricksInstancePoolPoolInfoAzureAttributes {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/instance_pool#availability DataDatabricksInstancePool#availability}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/instance_pool#availability DataDatabricksInstancePool#availability}
   */
   readonly availability?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/instance_pool#spot_bid_max_price DataDatabricksInstancePool#spot_bid_max_price}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/instance_pool#spot_bid_max_price DataDatabricksInstancePool#spot_bid_max_price}
   */
   readonly spotBidMaxPrice?: number;
 }
@@ -233,7 +233,7 @@ export interface DataDatabricksInstancePoolPoolInfoAzureAttributes {
 export function dataDatabricksInstancePoolPoolInfoAzureAttributesToTerraform(struct?: DataDatabricksInstancePoolPoolInfoAzureAttributesOutputReference | DataDatabricksInstancePoolPoolInfoAzureAttributes): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     availability: cdktn.stringToTerraform(struct!.availability),
@@ -245,7 +245,7 @@ export function dataDatabricksInstancePoolPoolInfoAzureAttributesToTerraform(str
 export function dataDatabricksInstancePoolPoolInfoAzureAttributesToHclTerraform(struct?: DataDatabricksInstancePoolPoolInfoAzureAttributesOutputReference | DataDatabricksInstancePoolPoolInfoAzureAttributes): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     availability: {
@@ -338,11 +338,11 @@ export class DataDatabricksInstancePoolPoolInfoAzureAttributesOutputReference ex
 }
 export interface DataDatabricksInstancePoolPoolInfoDiskSpecDiskType {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/instance_pool#azure_disk_volume_type DataDatabricksInstancePool#azure_disk_volume_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/instance_pool#azure_disk_volume_type DataDatabricksInstancePool#azure_disk_volume_type}
   */
   readonly azureDiskVolumeType?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/instance_pool#ebs_volume_type DataDatabricksInstancePool#ebs_volume_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/instance_pool#ebs_volume_type DataDatabricksInstancePool#ebs_volume_type}
   */
   readonly ebsVolumeType?: string;
 }
@@ -350,7 +350,7 @@ export interface DataDatabricksInstancePoolPoolInfoDiskSpecDiskType {
 export function dataDatabricksInstancePoolPoolInfoDiskSpecDiskTypeToTerraform(struct?: DataDatabricksInstancePoolPoolInfoDiskSpecDiskTypeOutputReference | DataDatabricksInstancePoolPoolInfoDiskSpecDiskType): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     azure_disk_volume_type: cdktn.stringToTerraform(struct!.azureDiskVolumeType),
@@ -362,7 +362,7 @@ export function dataDatabricksInstancePoolPoolInfoDiskSpecDiskTypeToTerraform(st
 export function dataDatabricksInstancePoolPoolInfoDiskSpecDiskTypeToHclTerraform(struct?: DataDatabricksInstancePoolPoolInfoDiskSpecDiskTypeOutputReference | DataDatabricksInstancePoolPoolInfoDiskSpecDiskType): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     azure_disk_volume_type: {
@@ -455,17 +455,17 @@ export class DataDatabricksInstancePoolPoolInfoDiskSpecDiskTypeOutputReference e
 }
 export interface DataDatabricksInstancePoolPoolInfoDiskSpec {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/instance_pool#disk_count DataDatabricksInstancePool#disk_count}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/instance_pool#disk_count DataDatabricksInstancePool#disk_count}
   */
   readonly diskCount?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/instance_pool#disk_size DataDatabricksInstancePool#disk_size}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/instance_pool#disk_size DataDatabricksInstancePool#disk_size}
   */
   readonly diskSize?: number;
   /**
   * disk_type block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/instance_pool#disk_type DataDatabricksInstancePool#disk_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/instance_pool#disk_type DataDatabricksInstancePool#disk_type}
   */
   readonly diskType?: DataDatabricksInstancePoolPoolInfoDiskSpecDiskType;
 }
@@ -473,7 +473,7 @@ export interface DataDatabricksInstancePoolPoolInfoDiskSpec {
 export function dataDatabricksInstancePoolPoolInfoDiskSpecToTerraform(struct?: DataDatabricksInstancePoolPoolInfoDiskSpecOutputReference | DataDatabricksInstancePoolPoolInfoDiskSpec): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     disk_count: cdktn.numberToTerraform(struct!.diskCount),
@@ -486,7 +486,7 @@ export function dataDatabricksInstancePoolPoolInfoDiskSpecToTerraform(struct?: D
 export function dataDatabricksInstancePoolPoolInfoDiskSpecToHclTerraform(struct?: DataDatabricksInstancePoolPoolInfoDiskSpecOutputReference | DataDatabricksInstancePoolPoolInfoDiskSpec): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     disk_count: {
@@ -607,15 +607,15 @@ export class DataDatabricksInstancePoolPoolInfoDiskSpecOutputReference extends c
 }
 export interface DataDatabricksInstancePoolPoolInfoGcpAttributes {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/instance_pool#gcp_availability DataDatabricksInstancePool#gcp_availability}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/instance_pool#gcp_availability DataDatabricksInstancePool#gcp_availability}
   */
   readonly gcpAvailability?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/instance_pool#local_ssd_count DataDatabricksInstancePool#local_ssd_count}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/instance_pool#local_ssd_count DataDatabricksInstancePool#local_ssd_count}
   */
   readonly localSsdCount?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/instance_pool#zone_id DataDatabricksInstancePool#zone_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/instance_pool#zone_id DataDatabricksInstancePool#zone_id}
   */
   readonly zoneId?: string;
 }
@@ -623,7 +623,7 @@ export interface DataDatabricksInstancePoolPoolInfoGcpAttributes {
 export function dataDatabricksInstancePoolPoolInfoGcpAttributesToTerraform(struct?: DataDatabricksInstancePoolPoolInfoGcpAttributesOutputReference | DataDatabricksInstancePoolPoolInfoGcpAttributes): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     gcp_availability: cdktn.stringToTerraform(struct!.gcpAvailability),
@@ -636,7 +636,7 @@ export function dataDatabricksInstancePoolPoolInfoGcpAttributesToTerraform(struc
 export function dataDatabricksInstancePoolPoolInfoGcpAttributesToHclTerraform(struct?: DataDatabricksInstancePoolPoolInfoGcpAttributesOutputReference | DataDatabricksInstancePoolPoolInfoGcpAttributes): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     gcp_availability: {
@@ -757,11 +757,11 @@ export class DataDatabricksInstancePoolPoolInfoGcpAttributesOutputReference exte
 }
 export interface DataDatabricksInstancePoolPoolInfoInstancePoolFleetAttributesFleetOnDemandOption {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/instance_pool#allocation_strategy DataDatabricksInstancePool#allocation_strategy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/instance_pool#allocation_strategy DataDatabricksInstancePool#allocation_strategy}
   */
   readonly allocationStrategy: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/instance_pool#instance_pools_to_use_count DataDatabricksInstancePool#instance_pools_to_use_count}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/instance_pool#instance_pools_to_use_count DataDatabricksInstancePool#instance_pools_to_use_count}
   */
   readonly instancePoolsToUseCount?: number;
 }
@@ -769,7 +769,7 @@ export interface DataDatabricksInstancePoolPoolInfoInstancePoolFleetAttributesFl
 export function dataDatabricksInstancePoolPoolInfoInstancePoolFleetAttributesFleetOnDemandOptionToTerraform(struct?: DataDatabricksInstancePoolPoolInfoInstancePoolFleetAttributesFleetOnDemandOptionOutputReference | DataDatabricksInstancePoolPoolInfoInstancePoolFleetAttributesFleetOnDemandOption): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     allocation_strategy: cdktn.stringToTerraform(struct!.allocationStrategy),
@@ -781,7 +781,7 @@ export function dataDatabricksInstancePoolPoolInfoInstancePoolFleetAttributesFle
 export function dataDatabricksInstancePoolPoolInfoInstancePoolFleetAttributesFleetOnDemandOptionToHclTerraform(struct?: DataDatabricksInstancePoolPoolInfoInstancePoolFleetAttributesFleetOnDemandOptionOutputReference | DataDatabricksInstancePoolPoolInfoInstancePoolFleetAttributesFleetOnDemandOption): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     allocation_strategy: {
@@ -871,11 +871,11 @@ export class DataDatabricksInstancePoolPoolInfoInstancePoolFleetAttributesFleetO
 }
 export interface DataDatabricksInstancePoolPoolInfoInstancePoolFleetAttributesFleetSpotOption {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/instance_pool#allocation_strategy DataDatabricksInstancePool#allocation_strategy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/instance_pool#allocation_strategy DataDatabricksInstancePool#allocation_strategy}
   */
   readonly allocationStrategy: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/instance_pool#instance_pools_to_use_count DataDatabricksInstancePool#instance_pools_to_use_count}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/instance_pool#instance_pools_to_use_count DataDatabricksInstancePool#instance_pools_to_use_count}
   */
   readonly instancePoolsToUseCount?: number;
 }
@@ -883,7 +883,7 @@ export interface DataDatabricksInstancePoolPoolInfoInstancePoolFleetAttributesFl
 export function dataDatabricksInstancePoolPoolInfoInstancePoolFleetAttributesFleetSpotOptionToTerraform(struct?: DataDatabricksInstancePoolPoolInfoInstancePoolFleetAttributesFleetSpotOptionOutputReference | DataDatabricksInstancePoolPoolInfoInstancePoolFleetAttributesFleetSpotOption): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     allocation_strategy: cdktn.stringToTerraform(struct!.allocationStrategy),
@@ -895,7 +895,7 @@ export function dataDatabricksInstancePoolPoolInfoInstancePoolFleetAttributesFle
 export function dataDatabricksInstancePoolPoolInfoInstancePoolFleetAttributesFleetSpotOptionToHclTerraform(struct?: DataDatabricksInstancePoolPoolInfoInstancePoolFleetAttributesFleetSpotOptionOutputReference | DataDatabricksInstancePoolPoolInfoInstancePoolFleetAttributesFleetSpotOption): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     allocation_strategy: {
@@ -985,11 +985,11 @@ export class DataDatabricksInstancePoolPoolInfoInstancePoolFleetAttributesFleetS
 }
 export interface DataDatabricksInstancePoolPoolInfoInstancePoolFleetAttributesLaunchTemplateOverride {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/instance_pool#availability_zone DataDatabricksInstancePool#availability_zone}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/instance_pool#availability_zone DataDatabricksInstancePool#availability_zone}
   */
   readonly availabilityZone: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/instance_pool#instance_type DataDatabricksInstancePool#instance_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/instance_pool#instance_type DataDatabricksInstancePool#instance_type}
   */
   readonly instanceType: string;
 }
@@ -997,7 +997,7 @@ export interface DataDatabricksInstancePoolPoolInfoInstancePoolFleetAttributesLa
 export function dataDatabricksInstancePoolPoolInfoInstancePoolFleetAttributesLaunchTemplateOverrideToTerraform(struct?: DataDatabricksInstancePoolPoolInfoInstancePoolFleetAttributesLaunchTemplateOverride | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     availability_zone: cdktn.stringToTerraform(struct!.availabilityZone),
@@ -1009,7 +1009,7 @@ export function dataDatabricksInstancePoolPoolInfoInstancePoolFleetAttributesLau
 export function dataDatabricksInstancePoolPoolInfoInstancePoolFleetAttributesLaunchTemplateOverrideToHclTerraform(struct?: DataDatabricksInstancePoolPoolInfoInstancePoolFleetAttributesLaunchTemplateOverride | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     availability_zone: {
@@ -1130,19 +1130,19 @@ export interface DataDatabricksInstancePoolPoolInfoInstancePoolFleetAttributes {
   /**
   * fleet_on_demand_option block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/instance_pool#fleet_on_demand_option DataDatabricksInstancePool#fleet_on_demand_option}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/instance_pool#fleet_on_demand_option DataDatabricksInstancePool#fleet_on_demand_option}
   */
   readonly fleetOnDemandOption?: DataDatabricksInstancePoolPoolInfoInstancePoolFleetAttributesFleetOnDemandOption;
   /**
   * fleet_spot_option block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/instance_pool#fleet_spot_option DataDatabricksInstancePool#fleet_spot_option}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/instance_pool#fleet_spot_option DataDatabricksInstancePool#fleet_spot_option}
   */
   readonly fleetSpotOption?: DataDatabricksInstancePoolPoolInfoInstancePoolFleetAttributesFleetSpotOption;
   /**
   * launch_template_override block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/instance_pool#launch_template_override DataDatabricksInstancePool#launch_template_override}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/instance_pool#launch_template_override DataDatabricksInstancePool#launch_template_override}
   */
   readonly launchTemplateOverride: DataDatabricksInstancePoolPoolInfoInstancePoolFleetAttributesLaunchTemplateOverride[] | cdktn.IResolvable;
 }
@@ -1150,7 +1150,7 @@ export interface DataDatabricksInstancePoolPoolInfoInstancePoolFleetAttributes {
 export function dataDatabricksInstancePoolPoolInfoInstancePoolFleetAttributesToTerraform(struct?: DataDatabricksInstancePoolPoolInfoInstancePoolFleetAttributes | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     fleet_on_demand_option: dataDatabricksInstancePoolPoolInfoInstancePoolFleetAttributesFleetOnDemandOptionToTerraform(struct!.fleetOnDemandOption),
@@ -1163,7 +1163,7 @@ export function dataDatabricksInstancePoolPoolInfoInstancePoolFleetAttributesToT
 export function dataDatabricksInstancePoolPoolInfoInstancePoolFleetAttributesToHclTerraform(struct?: DataDatabricksInstancePoolPoolInfoInstancePoolFleetAttributes | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     fleet_on_demand_option: {
@@ -1313,7 +1313,7 @@ export class DataDatabricksInstancePoolPoolInfoInstancePoolFleetAttributesList e
 }
 export interface DataDatabricksInstancePoolPoolInfoNodeTypeFlexibility {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/instance_pool#alternate_node_type_ids DataDatabricksInstancePool#alternate_node_type_ids}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/instance_pool#alternate_node_type_ids DataDatabricksInstancePool#alternate_node_type_ids}
   */
   readonly alternateNodeTypeIds: string[];
 }
@@ -1321,7 +1321,7 @@ export interface DataDatabricksInstancePoolPoolInfoNodeTypeFlexibility {
 export function dataDatabricksInstancePoolPoolInfoNodeTypeFlexibilityToTerraform(struct?: DataDatabricksInstancePoolPoolInfoNodeTypeFlexibilityOutputReference | DataDatabricksInstancePoolPoolInfoNodeTypeFlexibility): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     alternate_node_type_ids: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.alternateNodeTypeIds),
@@ -1332,7 +1332,7 @@ export function dataDatabricksInstancePoolPoolInfoNodeTypeFlexibilityToTerraform
 export function dataDatabricksInstancePoolPoolInfoNodeTypeFlexibilityToHclTerraform(struct?: DataDatabricksInstancePoolPoolInfoNodeTypeFlexibilityOutputReference | DataDatabricksInstancePoolPoolInfoNodeTypeFlexibility): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     alternate_node_type_ids: {
@@ -1394,11 +1394,11 @@ export class DataDatabricksInstancePoolPoolInfoNodeTypeFlexibilityOutputReferenc
 }
 export interface DataDatabricksInstancePoolPoolInfoPreloadedDockerImageBasicAuth {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/instance_pool#password DataDatabricksInstancePool#password}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/instance_pool#password DataDatabricksInstancePool#password}
   */
   readonly password: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/instance_pool#username DataDatabricksInstancePool#username}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/instance_pool#username DataDatabricksInstancePool#username}
   */
   readonly username: string;
 }
@@ -1406,7 +1406,7 @@ export interface DataDatabricksInstancePoolPoolInfoPreloadedDockerImageBasicAuth
 export function dataDatabricksInstancePoolPoolInfoPreloadedDockerImageBasicAuthToTerraform(struct?: DataDatabricksInstancePoolPoolInfoPreloadedDockerImageBasicAuthOutputReference | DataDatabricksInstancePoolPoolInfoPreloadedDockerImageBasicAuth): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     password: cdktn.stringToTerraform(struct!.password),
@@ -1418,7 +1418,7 @@ export function dataDatabricksInstancePoolPoolInfoPreloadedDockerImageBasicAuthT
 export function dataDatabricksInstancePoolPoolInfoPreloadedDockerImageBasicAuthToHclTerraform(struct?: DataDatabricksInstancePoolPoolInfoPreloadedDockerImageBasicAuthOutputReference | DataDatabricksInstancePoolPoolInfoPreloadedDockerImageBasicAuth): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     password: {
@@ -1505,13 +1505,13 @@ export class DataDatabricksInstancePoolPoolInfoPreloadedDockerImageBasicAuthOutp
 }
 export interface DataDatabricksInstancePoolPoolInfoPreloadedDockerImage {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/instance_pool#url DataDatabricksInstancePool#url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/instance_pool#url DataDatabricksInstancePool#url}
   */
   readonly url: string;
   /**
   * basic_auth block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/instance_pool#basic_auth DataDatabricksInstancePool#basic_auth}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/instance_pool#basic_auth DataDatabricksInstancePool#basic_auth}
   */
   readonly basicAuth?: DataDatabricksInstancePoolPoolInfoPreloadedDockerImageBasicAuth;
 }
@@ -1519,7 +1519,7 @@ export interface DataDatabricksInstancePoolPoolInfoPreloadedDockerImage {
 export function dataDatabricksInstancePoolPoolInfoPreloadedDockerImageToTerraform(struct?: DataDatabricksInstancePoolPoolInfoPreloadedDockerImage | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     url: cdktn.stringToTerraform(struct!.url),
@@ -1531,7 +1531,7 @@ export function dataDatabricksInstancePoolPoolInfoPreloadedDockerImageToTerrafor
 export function dataDatabricksInstancePoolPoolInfoPreloadedDockerImageToHclTerraform(struct?: DataDatabricksInstancePoolPoolInfoPreloadedDockerImage | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     url: {
@@ -1653,19 +1653,19 @@ export class DataDatabricksInstancePoolPoolInfoPreloadedDockerImageList extends 
 }
 export interface DataDatabricksInstancePoolPoolInfoStats {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/instance_pool#idle_count DataDatabricksInstancePool#idle_count}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/instance_pool#idle_count DataDatabricksInstancePool#idle_count}
   */
   readonly idleCount?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/instance_pool#pending_idle_count DataDatabricksInstancePool#pending_idle_count}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/instance_pool#pending_idle_count DataDatabricksInstancePool#pending_idle_count}
   */
   readonly pendingIdleCount?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/instance_pool#pending_used_count DataDatabricksInstancePool#pending_used_count}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/instance_pool#pending_used_count DataDatabricksInstancePool#pending_used_count}
   */
   readonly pendingUsedCount?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/instance_pool#used_count DataDatabricksInstancePool#used_count}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/instance_pool#used_count DataDatabricksInstancePool#used_count}
   */
   readonly usedCount?: number;
 }
@@ -1673,7 +1673,7 @@ export interface DataDatabricksInstancePoolPoolInfoStats {
 export function dataDatabricksInstancePoolPoolInfoStatsToTerraform(struct?: DataDatabricksInstancePoolPoolInfoStatsOutputReference | DataDatabricksInstancePoolPoolInfoStats): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     idle_count: cdktn.numberToTerraform(struct!.idleCount),
@@ -1687,7 +1687,7 @@ export function dataDatabricksInstancePoolPoolInfoStatsToTerraform(struct?: Data
 export function dataDatabricksInstancePoolPoolInfoStatsToHclTerraform(struct?: DataDatabricksInstancePoolPoolInfoStatsOutputReference | DataDatabricksInstancePoolPoolInfoStats): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     idle_count: {
@@ -1836,95 +1836,95 @@ export class DataDatabricksInstancePoolPoolInfoStatsOutputReference extends cdkt
 }
 export interface DataDatabricksInstancePoolPoolInfo {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/instance_pool#custom_tags DataDatabricksInstancePool#custom_tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/instance_pool#custom_tags DataDatabricksInstancePool#custom_tags}
   */
   readonly customTags?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/instance_pool#default_tags DataDatabricksInstancePool#default_tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/instance_pool#default_tags DataDatabricksInstancePool#default_tags}
   */
   readonly defaultTags?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/instance_pool#enable_elastic_disk DataDatabricksInstancePool#enable_elastic_disk}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/instance_pool#enable_elastic_disk DataDatabricksInstancePool#enable_elastic_disk}
   */
   readonly enableElasticDisk?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/instance_pool#idle_instance_autotermination_minutes DataDatabricksInstancePool#idle_instance_autotermination_minutes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/instance_pool#idle_instance_autotermination_minutes DataDatabricksInstancePool#idle_instance_autotermination_minutes}
   */
   readonly idleInstanceAutoterminationMinutes: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/instance_pool#instance_pool_id DataDatabricksInstancePool#instance_pool_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/instance_pool#instance_pool_id DataDatabricksInstancePool#instance_pool_id}
   */
   readonly instancePoolId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/instance_pool#instance_pool_name DataDatabricksInstancePool#instance_pool_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/instance_pool#instance_pool_name DataDatabricksInstancePool#instance_pool_name}
   */
   readonly instancePoolName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/instance_pool#max_capacity DataDatabricksInstancePool#max_capacity}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/instance_pool#max_capacity DataDatabricksInstancePool#max_capacity}
   */
   readonly maxCapacity?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/instance_pool#min_idle_instances DataDatabricksInstancePool#min_idle_instances}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/instance_pool#min_idle_instances DataDatabricksInstancePool#min_idle_instances}
   */
   readonly minIdleInstances?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/instance_pool#node_type_id DataDatabricksInstancePool#node_type_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/instance_pool#node_type_id DataDatabricksInstancePool#node_type_id}
   */
   readonly nodeTypeId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/instance_pool#preloaded_spark_versions DataDatabricksInstancePool#preloaded_spark_versions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/instance_pool#preloaded_spark_versions DataDatabricksInstancePool#preloaded_spark_versions}
   */
   readonly preloadedSparkVersions?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/instance_pool#state DataDatabricksInstancePool#state}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/instance_pool#state DataDatabricksInstancePool#state}
   */
   readonly state?: string;
   /**
   * aws_attributes block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/instance_pool#aws_attributes DataDatabricksInstancePool#aws_attributes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/instance_pool#aws_attributes DataDatabricksInstancePool#aws_attributes}
   */
   readonly awsAttributes?: DataDatabricksInstancePoolPoolInfoAwsAttributes;
   /**
   * azure_attributes block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/instance_pool#azure_attributes DataDatabricksInstancePool#azure_attributes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/instance_pool#azure_attributes DataDatabricksInstancePool#azure_attributes}
   */
   readonly azureAttributes?: DataDatabricksInstancePoolPoolInfoAzureAttributes;
   /**
   * disk_spec block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/instance_pool#disk_spec DataDatabricksInstancePool#disk_spec}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/instance_pool#disk_spec DataDatabricksInstancePool#disk_spec}
   */
   readonly diskSpec?: DataDatabricksInstancePoolPoolInfoDiskSpec;
   /**
   * gcp_attributes block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/instance_pool#gcp_attributes DataDatabricksInstancePool#gcp_attributes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/instance_pool#gcp_attributes DataDatabricksInstancePool#gcp_attributes}
   */
   readonly gcpAttributes?: DataDatabricksInstancePoolPoolInfoGcpAttributes;
   /**
   * instance_pool_fleet_attributes block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/instance_pool#instance_pool_fleet_attributes DataDatabricksInstancePool#instance_pool_fleet_attributes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/instance_pool#instance_pool_fleet_attributes DataDatabricksInstancePool#instance_pool_fleet_attributes}
   */
   readonly instancePoolFleetAttributes?: DataDatabricksInstancePoolPoolInfoInstancePoolFleetAttributes[] | cdktn.IResolvable;
   /**
   * node_type_flexibility block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/instance_pool#node_type_flexibility DataDatabricksInstancePool#node_type_flexibility}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/instance_pool#node_type_flexibility DataDatabricksInstancePool#node_type_flexibility}
   */
   readonly nodeTypeFlexibility?: DataDatabricksInstancePoolPoolInfoNodeTypeFlexibility;
   /**
   * preloaded_docker_image block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/instance_pool#preloaded_docker_image DataDatabricksInstancePool#preloaded_docker_image}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/instance_pool#preloaded_docker_image DataDatabricksInstancePool#preloaded_docker_image}
   */
   readonly preloadedDockerImage?: DataDatabricksInstancePoolPoolInfoPreloadedDockerImage[] | cdktn.IResolvable;
   /**
   * stats block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/instance_pool#stats DataDatabricksInstancePool#stats}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/instance_pool#stats DataDatabricksInstancePool#stats}
   */
   readonly stats?: DataDatabricksInstancePoolPoolInfoStats;
 }
@@ -1932,7 +1932,7 @@ export interface DataDatabricksInstancePoolPoolInfo {
 export function dataDatabricksInstancePoolPoolInfoToTerraform(struct?: DataDatabricksInstancePoolPoolInfoOutputReference | DataDatabricksInstancePoolPoolInfo): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     custom_tags: cdktn.hashMapper(cdktn.stringToTerraform)(struct!.customTags),
@@ -1961,7 +1961,7 @@ export function dataDatabricksInstancePoolPoolInfoToTerraform(struct?: DataDatab
 export function dataDatabricksInstancePoolPoolInfoToHclTerraform(struct?: DataDatabricksInstancePoolPoolInfoOutputReference | DataDatabricksInstancePoolPoolInfo): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     custom_tags: {
@@ -2524,7 +2524,7 @@ export class DataDatabricksInstancePoolPoolInfoOutputReference extends cdktn.Com
 }
 export interface DataDatabricksInstancePoolProviderConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/instance_pool#workspace_id DataDatabricksInstancePool#workspace_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/instance_pool#workspace_id DataDatabricksInstancePool#workspace_id}
   */
   readonly workspaceId?: string;
 }
@@ -2532,7 +2532,7 @@ export interface DataDatabricksInstancePoolProviderConfig {
 export function dataDatabricksInstancePoolProviderConfigToTerraform(struct?: DataDatabricksInstancePoolProviderConfigOutputReference | DataDatabricksInstancePoolProviderConfig): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     workspace_id: cdktn.stringToTerraform(struct!.workspaceId),
@@ -2543,7 +2543,7 @@ export function dataDatabricksInstancePoolProviderConfigToTerraform(struct?: Dat
 export function dataDatabricksInstancePoolProviderConfigToHclTerraform(struct?: DataDatabricksInstancePoolProviderConfigOutputReference | DataDatabricksInstancePoolProviderConfig): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     workspace_id: {
@@ -2608,7 +2608,7 @@ export class DataDatabricksInstancePoolProviderConfigOutputReference extends cdk
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/instance_pool databricks_instance_pool}
+* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/instance_pool databricks_instance_pool}
 */
 export class DataDatabricksInstancePool extends cdktn.TerraformDataSource {
 
@@ -2624,7 +2624,7 @@ export class DataDatabricksInstancePool extends cdktn.TerraformDataSource {
   * Generates CDKTN code for importing a DataDatabricksInstancePool resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataDatabricksInstancePool to import
-  * @param importFromId The id of the existing DataDatabricksInstancePool that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/instance_pool#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataDatabricksInstancePool that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/instance_pool#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataDatabricksInstancePool to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -2636,7 +2636,7 @@ export class DataDatabricksInstancePool extends cdktn.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/instance_pool databricks_instance_pool} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/instance_pool databricks_instance_pool} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -2647,7 +2647,7 @@ export class DataDatabricksInstancePool extends cdktn.TerraformDataSource {
       terraformResourceType: 'databricks_instance_pool',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '1.117.0',
+        providerVersion: '1.118.0',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,

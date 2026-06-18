@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/postgres_endpoint
+// https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/postgres_endpoint
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,17 +13,17 @@ import * as cdktn from 'cdktn';
 
 export interface DataDatabricksPostgresEndpointConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/postgres_endpoint#name DataDatabricksPostgresEndpoint#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/postgres_endpoint#name DataDatabricksPostgresEndpoint#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/postgres_endpoint#provider_config DataDatabricksPostgresEndpoint#provider_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/postgres_endpoint#provider_config DataDatabricksPostgresEndpoint#provider_config}
   */
   readonly providerConfig?: DataDatabricksPostgresEndpointProviderConfig;
 }
 export interface DataDatabricksPostgresEndpointProviderConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/postgres_endpoint#workspace_id DataDatabricksPostgresEndpoint#workspace_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/postgres_endpoint#workspace_id DataDatabricksPostgresEndpoint#workspace_id}
   */
   readonly workspaceId?: string;
 }
@@ -31,7 +31,7 @@ export interface DataDatabricksPostgresEndpointProviderConfig {
 export function dataDatabricksPostgresEndpointProviderConfigToTerraform(struct?: DataDatabricksPostgresEndpointProviderConfig | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     workspace_id: cdktn.stringToTerraform(struct!.workspaceId),
@@ -42,7 +42,7 @@ export function dataDatabricksPostgresEndpointProviderConfigToTerraform(struct?:
 export function dataDatabricksPostgresEndpointProviderConfigToHclTerraform(struct?: DataDatabricksPostgresEndpointProviderConfig | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     workspace_id: {
@@ -117,15 +117,15 @@ export class DataDatabricksPostgresEndpointProviderConfigOutputReference extends
 }
 export interface DataDatabricksPostgresEndpointSpecGroup {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/postgres_endpoint#enable_readable_secondaries DataDatabricksPostgresEndpoint#enable_readable_secondaries}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/postgres_endpoint#enable_readable_secondaries DataDatabricksPostgresEndpoint#enable_readable_secondaries}
   */
   readonly enableReadableSecondaries?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/postgres_endpoint#max DataDatabricksPostgresEndpoint#max}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/postgres_endpoint#max DataDatabricksPostgresEndpoint#max}
   */
   readonly max: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/postgres_endpoint#min DataDatabricksPostgresEndpoint#min}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/postgres_endpoint#min DataDatabricksPostgresEndpoint#min}
   */
   readonly min: number;
 }
@@ -133,7 +133,7 @@ export interface DataDatabricksPostgresEndpointSpecGroup {
 export function dataDatabricksPostgresEndpointSpecGroupToTerraform(struct?: DataDatabricksPostgresEndpointSpecGroup | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     enable_readable_secondaries: cdktn.booleanToTerraform(struct!.enableReadableSecondaries),
@@ -146,7 +146,7 @@ export function dataDatabricksPostgresEndpointSpecGroupToTerraform(struct?: Data
 export function dataDatabricksPostgresEndpointSpecGroupToHclTerraform(struct?: DataDatabricksPostgresEndpointSpecGroup | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     enable_readable_secondaries: {
@@ -271,7 +271,7 @@ export class DataDatabricksPostgresEndpointSpecGroupOutputReference extends cdkt
 }
 export interface DataDatabricksPostgresEndpointSpecSettings {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/postgres_endpoint#pg_settings DataDatabricksPostgresEndpoint#pg_settings}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/postgres_endpoint#pg_settings DataDatabricksPostgresEndpoint#pg_settings}
   */
   readonly pgSettings?: { [key: string]: string };
 }
@@ -279,7 +279,7 @@ export interface DataDatabricksPostgresEndpointSpecSettings {
 export function dataDatabricksPostgresEndpointSpecSettingsToTerraform(struct?: DataDatabricksPostgresEndpointSpecSettings | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     pg_settings: cdktn.hashMapper(cdktn.stringToTerraform)(struct!.pgSettings),
@@ -290,7 +290,7 @@ export function dataDatabricksPostgresEndpointSpecSettingsToTerraform(struct?: D
 export function dataDatabricksPostgresEndpointSpecSettingsToHclTerraform(struct?: DataDatabricksPostgresEndpointSpecSettings | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     pg_settings: {
@@ -365,35 +365,35 @@ export class DataDatabricksPostgresEndpointSpecSettingsOutputReference extends c
 }
 export interface DataDatabricksPostgresEndpointSpec {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/postgres_endpoint#autoscaling_limit_max_cu DataDatabricksPostgresEndpoint#autoscaling_limit_max_cu}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/postgres_endpoint#autoscaling_limit_max_cu DataDatabricksPostgresEndpoint#autoscaling_limit_max_cu}
   */
   readonly autoscalingLimitMaxCu?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/postgres_endpoint#autoscaling_limit_min_cu DataDatabricksPostgresEndpoint#autoscaling_limit_min_cu}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/postgres_endpoint#autoscaling_limit_min_cu DataDatabricksPostgresEndpoint#autoscaling_limit_min_cu}
   */
   readonly autoscalingLimitMinCu?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/postgres_endpoint#disabled DataDatabricksPostgresEndpoint#disabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/postgres_endpoint#disabled DataDatabricksPostgresEndpoint#disabled}
   */
   readonly disabled?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/postgres_endpoint#endpoint_type DataDatabricksPostgresEndpoint#endpoint_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/postgres_endpoint#endpoint_type DataDatabricksPostgresEndpoint#endpoint_type}
   */
   readonly endpointType: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/postgres_endpoint#group DataDatabricksPostgresEndpoint#group}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/postgres_endpoint#group DataDatabricksPostgresEndpoint#group}
   */
   readonly group?: DataDatabricksPostgresEndpointSpecGroup;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/postgres_endpoint#no_suspension DataDatabricksPostgresEndpoint#no_suspension}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/postgres_endpoint#no_suspension DataDatabricksPostgresEndpoint#no_suspension}
   */
   readonly noSuspension?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/postgres_endpoint#settings DataDatabricksPostgresEndpoint#settings}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/postgres_endpoint#settings DataDatabricksPostgresEndpoint#settings}
   */
   readonly settings?: DataDatabricksPostgresEndpointSpecSettings;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/postgres_endpoint#suspend_timeout_duration DataDatabricksPostgresEndpoint#suspend_timeout_duration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/postgres_endpoint#suspend_timeout_duration DataDatabricksPostgresEndpoint#suspend_timeout_duration}
   */
   readonly suspendTimeoutDuration?: string;
 }
@@ -401,7 +401,7 @@ export interface DataDatabricksPostgresEndpointSpec {
 export function dataDatabricksPostgresEndpointSpecToTerraform(struct?: DataDatabricksPostgresEndpointSpec): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     autoscaling_limit_max_cu: cdktn.numberToTerraform(struct!.autoscalingLimitMaxCu),
@@ -419,7 +419,7 @@ export function dataDatabricksPostgresEndpointSpecToTerraform(struct?: DataDatab
 export function dataDatabricksPostgresEndpointSpecToHclTerraform(struct?: DataDatabricksPostgresEndpointSpec): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     autoscaling_limit_max_cu: {
@@ -677,11 +677,11 @@ export class DataDatabricksPostgresEndpointSpecOutputReference extends cdktn.Com
 }
 export interface DataDatabricksPostgresEndpointStatusGroup {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/postgres_endpoint#max DataDatabricksPostgresEndpoint#max}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/postgres_endpoint#max DataDatabricksPostgresEndpoint#max}
   */
   readonly max: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/postgres_endpoint#min DataDatabricksPostgresEndpoint#min}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/postgres_endpoint#min DataDatabricksPostgresEndpoint#min}
   */
   readonly min: number;
 }
@@ -689,7 +689,7 @@ export interface DataDatabricksPostgresEndpointStatusGroup {
 export function dataDatabricksPostgresEndpointStatusGroupToTerraform(struct?: DataDatabricksPostgresEndpointStatusGroup): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     max: cdktn.numberToTerraform(struct!.max),
@@ -701,7 +701,7 @@ export function dataDatabricksPostgresEndpointStatusGroupToTerraform(struct?: Da
 export function dataDatabricksPostgresEndpointStatusGroupToHclTerraform(struct?: DataDatabricksPostgresEndpointStatusGroup): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     max: {
@@ -797,7 +797,7 @@ export interface DataDatabricksPostgresEndpointStatusHosts {
 export function dataDatabricksPostgresEndpointStatusHostsToTerraform(struct?: DataDatabricksPostgresEndpointStatusHosts): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -807,7 +807,7 @@ export function dataDatabricksPostgresEndpointStatusHostsToTerraform(struct?: Da
 export function dataDatabricksPostgresEndpointStatusHostsToHclTerraform(struct?: DataDatabricksPostgresEndpointStatusHosts): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -852,7 +852,7 @@ export class DataDatabricksPostgresEndpointStatusHostsOutputReference extends cd
 }
 export interface DataDatabricksPostgresEndpointStatusSettings {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/postgres_endpoint#pg_settings DataDatabricksPostgresEndpoint#pg_settings}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/postgres_endpoint#pg_settings DataDatabricksPostgresEndpoint#pg_settings}
   */
   readonly pgSettings?: { [key: string]: string };
 }
@@ -860,7 +860,7 @@ export interface DataDatabricksPostgresEndpointStatusSettings {
 export function dataDatabricksPostgresEndpointStatusSettingsToTerraform(struct?: DataDatabricksPostgresEndpointStatusSettings): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     pg_settings: cdktn.hashMapper(cdktn.stringToTerraform)(struct!.pgSettings),
@@ -871,7 +871,7 @@ export function dataDatabricksPostgresEndpointStatusSettingsToTerraform(struct?:
 export function dataDatabricksPostgresEndpointStatusSettingsToHclTerraform(struct?: DataDatabricksPostgresEndpointStatusSettings): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     pg_settings: {
@@ -940,7 +940,7 @@ export interface DataDatabricksPostgresEndpointStatus {
 export function dataDatabricksPostgresEndpointStatusToTerraform(struct?: DataDatabricksPostgresEndpointStatus): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -950,7 +950,7 @@ export function dataDatabricksPostgresEndpointStatusToTerraform(struct?: DataDat
 export function dataDatabricksPostgresEndpointStatusToHclTerraform(struct?: DataDatabricksPostgresEndpointStatus): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -1043,7 +1043,7 @@ export class DataDatabricksPostgresEndpointStatusOutputReference extends cdktn.C
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/postgres_endpoint databricks_postgres_endpoint}
+* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/postgres_endpoint databricks_postgres_endpoint}
 */
 export class DataDatabricksPostgresEndpoint extends cdktn.TerraformDataSource {
 
@@ -1059,7 +1059,7 @@ export class DataDatabricksPostgresEndpoint extends cdktn.TerraformDataSource {
   * Generates CDKTN code for importing a DataDatabricksPostgresEndpoint resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataDatabricksPostgresEndpoint to import
-  * @param importFromId The id of the existing DataDatabricksPostgresEndpoint that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/postgres_endpoint#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataDatabricksPostgresEndpoint that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/postgres_endpoint#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataDatabricksPostgresEndpoint to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -1071,7 +1071,7 @@ export class DataDatabricksPostgresEndpoint extends cdktn.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/postgres_endpoint databricks_postgres_endpoint} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/postgres_endpoint databricks_postgres_endpoint} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -1082,7 +1082,7 @@ export class DataDatabricksPostgresEndpoint extends cdktn.TerraformDataSource {
       terraformResourceType: 'databricks_postgres_endpoint',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '1.117.0',
+        providerVersion: '1.118.0',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,
@@ -1104,6 +1104,11 @@ export class DataDatabricksPostgresEndpoint extends cdktn.TerraformDataSource {
   // create_time - computed: true, optional: false, required: false
   public get createTime() {
     return this.getStringAttribute('create_time');
+  }
+
+  // endpoint_id - computed: true, optional: false, required: false
+  public get endpointId() {
+    return this.getStringAttribute('endpoint_id');
   }
 
   // name - computed: false, optional: false, required: true

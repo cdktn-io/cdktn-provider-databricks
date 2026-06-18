@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/feature_engineering_feature
+// https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/feature_engineering_feature
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,17 +13,17 @@ import * as cdktn from 'cdktn';
 
 export interface DataDatabricksFeatureEngineeringFeatureConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/feature_engineering_feature#full_name DataDatabricksFeatureEngineeringFeature#full_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/feature_engineering_feature#full_name DataDatabricksFeatureEngineeringFeature#full_name}
   */
   readonly fullName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/feature_engineering_feature#provider_config DataDatabricksFeatureEngineeringFeature#provider_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/feature_engineering_feature#provider_config DataDatabricksFeatureEngineeringFeature#provider_config}
   */
   readonly providerConfig?: DataDatabricksFeatureEngineeringFeatureProviderConfig;
 }
 export interface DataDatabricksFeatureEngineeringFeatureEntities {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/feature_engineering_feature#name DataDatabricksFeatureEngineeringFeature#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/feature_engineering_feature#name DataDatabricksFeatureEngineeringFeature#name}
   */
   readonly name: string;
 }
@@ -31,7 +31,7 @@ export interface DataDatabricksFeatureEngineeringFeatureEntities {
 export function dataDatabricksFeatureEngineeringFeatureEntitiesToTerraform(struct?: DataDatabricksFeatureEngineeringFeatureEntities): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     name: cdktn.stringToTerraform(struct!.name),
@@ -42,7 +42,7 @@ export function dataDatabricksFeatureEngineeringFeatureEntitiesToTerraform(struc
 export function dataDatabricksFeatureEngineeringFeatureEntitiesToHclTerraform(struct?: DataDatabricksFeatureEngineeringFeatureEntities): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     name: {
@@ -126,11 +126,11 @@ export class DataDatabricksFeatureEngineeringFeatureEntitiesList extends cdktn.C
 }
 export interface DataDatabricksFeatureEngineeringFeatureFunctionAggregationFunctionApproxCountDistinct {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/feature_engineering_feature#input DataDatabricksFeatureEngineeringFeature#input}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/feature_engineering_feature#input DataDatabricksFeatureEngineeringFeature#input}
   */
   readonly input: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/feature_engineering_feature#relative_sd DataDatabricksFeatureEngineeringFeature#relative_sd}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/feature_engineering_feature#relative_sd DataDatabricksFeatureEngineeringFeature#relative_sd}
   */
   readonly relativeSd?: number;
 }
@@ -138,7 +138,7 @@ export interface DataDatabricksFeatureEngineeringFeatureFunctionAggregationFunct
 export function dataDatabricksFeatureEngineeringFeatureFunctionAggregationFunctionApproxCountDistinctToTerraform(struct?: DataDatabricksFeatureEngineeringFeatureFunctionAggregationFunctionApproxCountDistinct | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     input: cdktn.stringToTerraform(struct!.input),
@@ -150,7 +150,7 @@ export function dataDatabricksFeatureEngineeringFeatureFunctionAggregationFuncti
 export function dataDatabricksFeatureEngineeringFeatureFunctionAggregationFunctionApproxCountDistinctToHclTerraform(struct?: DataDatabricksFeatureEngineeringFeatureFunctionAggregationFunctionApproxCountDistinct | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     input: {
@@ -250,15 +250,15 @@ export class DataDatabricksFeatureEngineeringFeatureFunctionAggregationFunctionA
 }
 export interface DataDatabricksFeatureEngineeringFeatureFunctionAggregationFunctionApproxPercentile {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/feature_engineering_feature#accuracy DataDatabricksFeatureEngineeringFeature#accuracy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/feature_engineering_feature#accuracy DataDatabricksFeatureEngineeringFeature#accuracy}
   */
   readonly accuracy?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/feature_engineering_feature#input DataDatabricksFeatureEngineeringFeature#input}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/feature_engineering_feature#input DataDatabricksFeatureEngineeringFeature#input}
   */
   readonly input: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/feature_engineering_feature#percentile DataDatabricksFeatureEngineeringFeature#percentile}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/feature_engineering_feature#percentile DataDatabricksFeatureEngineeringFeature#percentile}
   */
   readonly percentile: number;
 }
@@ -266,7 +266,7 @@ export interface DataDatabricksFeatureEngineeringFeatureFunctionAggregationFunct
 export function dataDatabricksFeatureEngineeringFeatureFunctionAggregationFunctionApproxPercentileToTerraform(struct?: DataDatabricksFeatureEngineeringFeatureFunctionAggregationFunctionApproxPercentile | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     accuracy: cdktn.numberToTerraform(struct!.accuracy),
@@ -279,7 +279,7 @@ export function dataDatabricksFeatureEngineeringFeatureFunctionAggregationFuncti
 export function dataDatabricksFeatureEngineeringFeatureFunctionAggregationFunctionApproxPercentileToHclTerraform(struct?: DataDatabricksFeatureEngineeringFeatureFunctionAggregationFunctionApproxPercentile | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     accuracy: {
@@ -404,7 +404,7 @@ export class DataDatabricksFeatureEngineeringFeatureFunctionAggregationFunctionA
 }
 export interface DataDatabricksFeatureEngineeringFeatureFunctionAggregationFunctionAvg {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/feature_engineering_feature#input DataDatabricksFeatureEngineeringFeature#input}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/feature_engineering_feature#input DataDatabricksFeatureEngineeringFeature#input}
   */
   readonly input: string;
 }
@@ -412,7 +412,7 @@ export interface DataDatabricksFeatureEngineeringFeatureFunctionAggregationFunct
 export function dataDatabricksFeatureEngineeringFeatureFunctionAggregationFunctionAvgToTerraform(struct?: DataDatabricksFeatureEngineeringFeatureFunctionAggregationFunctionAvg | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     input: cdktn.stringToTerraform(struct!.input),
@@ -423,7 +423,7 @@ export function dataDatabricksFeatureEngineeringFeatureFunctionAggregationFuncti
 export function dataDatabricksFeatureEngineeringFeatureFunctionAggregationFunctionAvgToHclTerraform(struct?: DataDatabricksFeatureEngineeringFeatureFunctionAggregationFunctionAvg | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     input: {
@@ -495,7 +495,7 @@ export class DataDatabricksFeatureEngineeringFeatureFunctionAggregationFunctionA
 }
 export interface DataDatabricksFeatureEngineeringFeatureFunctionAggregationFunctionCountFunction {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/feature_engineering_feature#input DataDatabricksFeatureEngineeringFeature#input}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/feature_engineering_feature#input DataDatabricksFeatureEngineeringFeature#input}
   */
   readonly input: string;
 }
@@ -503,7 +503,7 @@ export interface DataDatabricksFeatureEngineeringFeatureFunctionAggregationFunct
 export function dataDatabricksFeatureEngineeringFeatureFunctionAggregationFunctionCountFunctionToTerraform(struct?: DataDatabricksFeatureEngineeringFeatureFunctionAggregationFunctionCountFunction | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     input: cdktn.stringToTerraform(struct!.input),
@@ -514,7 +514,7 @@ export function dataDatabricksFeatureEngineeringFeatureFunctionAggregationFuncti
 export function dataDatabricksFeatureEngineeringFeatureFunctionAggregationFunctionCountFunctionToHclTerraform(struct?: DataDatabricksFeatureEngineeringFeatureFunctionAggregationFunctionCountFunction | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     input: {
@@ -586,7 +586,7 @@ export class DataDatabricksFeatureEngineeringFeatureFunctionAggregationFunctionC
 }
 export interface DataDatabricksFeatureEngineeringFeatureFunctionAggregationFunctionFirst {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/feature_engineering_feature#input DataDatabricksFeatureEngineeringFeature#input}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/feature_engineering_feature#input DataDatabricksFeatureEngineeringFeature#input}
   */
   readonly input: string;
 }
@@ -594,7 +594,7 @@ export interface DataDatabricksFeatureEngineeringFeatureFunctionAggregationFunct
 export function dataDatabricksFeatureEngineeringFeatureFunctionAggregationFunctionFirstToTerraform(struct?: DataDatabricksFeatureEngineeringFeatureFunctionAggregationFunctionFirst | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     input: cdktn.stringToTerraform(struct!.input),
@@ -605,7 +605,7 @@ export function dataDatabricksFeatureEngineeringFeatureFunctionAggregationFuncti
 export function dataDatabricksFeatureEngineeringFeatureFunctionAggregationFunctionFirstToHclTerraform(struct?: DataDatabricksFeatureEngineeringFeatureFunctionAggregationFunctionFirst | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     input: {
@@ -677,7 +677,7 @@ export class DataDatabricksFeatureEngineeringFeatureFunctionAggregationFunctionF
 }
 export interface DataDatabricksFeatureEngineeringFeatureFunctionAggregationFunctionLast {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/feature_engineering_feature#input DataDatabricksFeatureEngineeringFeature#input}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/feature_engineering_feature#input DataDatabricksFeatureEngineeringFeature#input}
   */
   readonly input: string;
 }
@@ -685,7 +685,7 @@ export interface DataDatabricksFeatureEngineeringFeatureFunctionAggregationFunct
 export function dataDatabricksFeatureEngineeringFeatureFunctionAggregationFunctionLastToTerraform(struct?: DataDatabricksFeatureEngineeringFeatureFunctionAggregationFunctionLast | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     input: cdktn.stringToTerraform(struct!.input),
@@ -696,7 +696,7 @@ export function dataDatabricksFeatureEngineeringFeatureFunctionAggregationFuncti
 export function dataDatabricksFeatureEngineeringFeatureFunctionAggregationFunctionLastToHclTerraform(struct?: DataDatabricksFeatureEngineeringFeatureFunctionAggregationFunctionLast | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     input: {
@@ -768,7 +768,7 @@ export class DataDatabricksFeatureEngineeringFeatureFunctionAggregationFunctionL
 }
 export interface DataDatabricksFeatureEngineeringFeatureFunctionAggregationFunctionMax {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/feature_engineering_feature#input DataDatabricksFeatureEngineeringFeature#input}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/feature_engineering_feature#input DataDatabricksFeatureEngineeringFeature#input}
   */
   readonly input: string;
 }
@@ -776,7 +776,7 @@ export interface DataDatabricksFeatureEngineeringFeatureFunctionAggregationFunct
 export function dataDatabricksFeatureEngineeringFeatureFunctionAggregationFunctionMaxToTerraform(struct?: DataDatabricksFeatureEngineeringFeatureFunctionAggregationFunctionMax | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     input: cdktn.stringToTerraform(struct!.input),
@@ -787,7 +787,7 @@ export function dataDatabricksFeatureEngineeringFeatureFunctionAggregationFuncti
 export function dataDatabricksFeatureEngineeringFeatureFunctionAggregationFunctionMaxToHclTerraform(struct?: DataDatabricksFeatureEngineeringFeatureFunctionAggregationFunctionMax | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     input: {
@@ -859,7 +859,7 @@ export class DataDatabricksFeatureEngineeringFeatureFunctionAggregationFunctionM
 }
 export interface DataDatabricksFeatureEngineeringFeatureFunctionAggregationFunctionMin {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/feature_engineering_feature#input DataDatabricksFeatureEngineeringFeature#input}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/feature_engineering_feature#input DataDatabricksFeatureEngineeringFeature#input}
   */
   readonly input: string;
 }
@@ -867,7 +867,7 @@ export interface DataDatabricksFeatureEngineeringFeatureFunctionAggregationFunct
 export function dataDatabricksFeatureEngineeringFeatureFunctionAggregationFunctionMinToTerraform(struct?: DataDatabricksFeatureEngineeringFeatureFunctionAggregationFunctionMin | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     input: cdktn.stringToTerraform(struct!.input),
@@ -878,7 +878,7 @@ export function dataDatabricksFeatureEngineeringFeatureFunctionAggregationFuncti
 export function dataDatabricksFeatureEngineeringFeatureFunctionAggregationFunctionMinToHclTerraform(struct?: DataDatabricksFeatureEngineeringFeatureFunctionAggregationFunctionMin | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     input: {
@@ -950,7 +950,7 @@ export class DataDatabricksFeatureEngineeringFeatureFunctionAggregationFunctionM
 }
 export interface DataDatabricksFeatureEngineeringFeatureFunctionAggregationFunctionStddevPop {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/feature_engineering_feature#input DataDatabricksFeatureEngineeringFeature#input}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/feature_engineering_feature#input DataDatabricksFeatureEngineeringFeature#input}
   */
   readonly input: string;
 }
@@ -958,7 +958,7 @@ export interface DataDatabricksFeatureEngineeringFeatureFunctionAggregationFunct
 export function dataDatabricksFeatureEngineeringFeatureFunctionAggregationFunctionStddevPopToTerraform(struct?: DataDatabricksFeatureEngineeringFeatureFunctionAggregationFunctionStddevPop | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     input: cdktn.stringToTerraform(struct!.input),
@@ -969,7 +969,7 @@ export function dataDatabricksFeatureEngineeringFeatureFunctionAggregationFuncti
 export function dataDatabricksFeatureEngineeringFeatureFunctionAggregationFunctionStddevPopToHclTerraform(struct?: DataDatabricksFeatureEngineeringFeatureFunctionAggregationFunctionStddevPop | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     input: {
@@ -1041,7 +1041,7 @@ export class DataDatabricksFeatureEngineeringFeatureFunctionAggregationFunctionS
 }
 export interface DataDatabricksFeatureEngineeringFeatureFunctionAggregationFunctionStddevSamp {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/feature_engineering_feature#input DataDatabricksFeatureEngineeringFeature#input}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/feature_engineering_feature#input DataDatabricksFeatureEngineeringFeature#input}
   */
   readonly input: string;
 }
@@ -1049,7 +1049,7 @@ export interface DataDatabricksFeatureEngineeringFeatureFunctionAggregationFunct
 export function dataDatabricksFeatureEngineeringFeatureFunctionAggregationFunctionStddevSampToTerraform(struct?: DataDatabricksFeatureEngineeringFeatureFunctionAggregationFunctionStddevSamp | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     input: cdktn.stringToTerraform(struct!.input),
@@ -1060,7 +1060,7 @@ export function dataDatabricksFeatureEngineeringFeatureFunctionAggregationFuncti
 export function dataDatabricksFeatureEngineeringFeatureFunctionAggregationFunctionStddevSampToHclTerraform(struct?: DataDatabricksFeatureEngineeringFeatureFunctionAggregationFunctionStddevSamp | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     input: {
@@ -1132,7 +1132,7 @@ export class DataDatabricksFeatureEngineeringFeatureFunctionAggregationFunctionS
 }
 export interface DataDatabricksFeatureEngineeringFeatureFunctionAggregationFunctionSum {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/feature_engineering_feature#input DataDatabricksFeatureEngineeringFeature#input}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/feature_engineering_feature#input DataDatabricksFeatureEngineeringFeature#input}
   */
   readonly input: string;
 }
@@ -1140,7 +1140,7 @@ export interface DataDatabricksFeatureEngineeringFeatureFunctionAggregationFunct
 export function dataDatabricksFeatureEngineeringFeatureFunctionAggregationFunctionSumToTerraform(struct?: DataDatabricksFeatureEngineeringFeatureFunctionAggregationFunctionSum | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     input: cdktn.stringToTerraform(struct!.input),
@@ -1151,7 +1151,7 @@ export function dataDatabricksFeatureEngineeringFeatureFunctionAggregationFuncti
 export function dataDatabricksFeatureEngineeringFeatureFunctionAggregationFunctionSumToHclTerraform(struct?: DataDatabricksFeatureEngineeringFeatureFunctionAggregationFunctionSum | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     input: {
@@ -1223,11 +1223,11 @@ export class DataDatabricksFeatureEngineeringFeatureFunctionAggregationFunctionS
 }
 export interface DataDatabricksFeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowContinuous {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/feature_engineering_feature#offset DataDatabricksFeatureEngineeringFeature#offset}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/feature_engineering_feature#offset DataDatabricksFeatureEngineeringFeature#offset}
   */
   readonly offset?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/feature_engineering_feature#window_duration DataDatabricksFeatureEngineeringFeature#window_duration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/feature_engineering_feature#window_duration DataDatabricksFeatureEngineeringFeature#window_duration}
   */
   readonly windowDuration: string;
 }
@@ -1235,7 +1235,7 @@ export interface DataDatabricksFeatureEngineeringFeatureFunctionAggregationFunct
 export function dataDatabricksFeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowContinuousToTerraform(struct?: DataDatabricksFeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowContinuous | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     offset: cdktn.stringToTerraform(struct!.offset),
@@ -1247,7 +1247,7 @@ export function dataDatabricksFeatureEngineeringFeatureFunctionAggregationFuncti
 export function dataDatabricksFeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowContinuousToHclTerraform(struct?: DataDatabricksFeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowContinuous | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     offset: {
@@ -1347,11 +1347,11 @@ export class DataDatabricksFeatureEngineeringFeatureFunctionAggregationFunctionT
 }
 export interface DataDatabricksFeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowRolling {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/feature_engineering_feature#delay DataDatabricksFeatureEngineeringFeature#delay}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/feature_engineering_feature#delay DataDatabricksFeatureEngineeringFeature#delay}
   */
   readonly delay?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/feature_engineering_feature#window_duration DataDatabricksFeatureEngineeringFeature#window_duration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/feature_engineering_feature#window_duration DataDatabricksFeatureEngineeringFeature#window_duration}
   */
   readonly windowDuration: string;
 }
@@ -1359,7 +1359,7 @@ export interface DataDatabricksFeatureEngineeringFeatureFunctionAggregationFunct
 export function dataDatabricksFeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowRollingToTerraform(struct?: DataDatabricksFeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowRolling | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     delay: cdktn.stringToTerraform(struct!.delay),
@@ -1371,7 +1371,7 @@ export function dataDatabricksFeatureEngineeringFeatureFunctionAggregationFuncti
 export function dataDatabricksFeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowRollingToHclTerraform(struct?: DataDatabricksFeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowRolling | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     delay: {
@@ -1471,11 +1471,11 @@ export class DataDatabricksFeatureEngineeringFeatureFunctionAggregationFunctionT
 }
 export interface DataDatabricksFeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowSliding {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/feature_engineering_feature#slide_duration DataDatabricksFeatureEngineeringFeature#slide_duration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/feature_engineering_feature#slide_duration DataDatabricksFeatureEngineeringFeature#slide_duration}
   */
   readonly slideDuration: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/feature_engineering_feature#window_duration DataDatabricksFeatureEngineeringFeature#window_duration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/feature_engineering_feature#window_duration DataDatabricksFeatureEngineeringFeature#window_duration}
   */
   readonly windowDuration: string;
 }
@@ -1483,7 +1483,7 @@ export interface DataDatabricksFeatureEngineeringFeatureFunctionAggregationFunct
 export function dataDatabricksFeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowSlidingToTerraform(struct?: DataDatabricksFeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowSliding | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     slide_duration: cdktn.stringToTerraform(struct!.slideDuration),
@@ -1495,7 +1495,7 @@ export function dataDatabricksFeatureEngineeringFeatureFunctionAggregationFuncti
 export function dataDatabricksFeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowSlidingToHclTerraform(struct?: DataDatabricksFeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowSliding | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     slide_duration: {
@@ -1592,7 +1592,7 @@ export class DataDatabricksFeatureEngineeringFeatureFunctionAggregationFunctionT
 }
 export interface DataDatabricksFeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowTumbling {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/feature_engineering_feature#window_duration DataDatabricksFeatureEngineeringFeature#window_duration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/feature_engineering_feature#window_duration DataDatabricksFeatureEngineeringFeature#window_duration}
   */
   readonly windowDuration: string;
 }
@@ -1600,7 +1600,7 @@ export interface DataDatabricksFeatureEngineeringFeatureFunctionAggregationFunct
 export function dataDatabricksFeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowTumblingToTerraform(struct?: DataDatabricksFeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowTumbling | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     window_duration: cdktn.stringToTerraform(struct!.windowDuration),
@@ -1611,7 +1611,7 @@ export function dataDatabricksFeatureEngineeringFeatureFunctionAggregationFuncti
 export function dataDatabricksFeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowTumblingToHclTerraform(struct?: DataDatabricksFeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowTumbling | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     window_duration: {
@@ -1683,19 +1683,19 @@ export class DataDatabricksFeatureEngineeringFeatureFunctionAggregationFunctionT
 }
 export interface DataDatabricksFeatureEngineeringFeatureFunctionAggregationFunctionTimeWindow {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/feature_engineering_feature#continuous DataDatabricksFeatureEngineeringFeature#continuous}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/feature_engineering_feature#continuous DataDatabricksFeatureEngineeringFeature#continuous}
   */
   readonly continuous?: DataDatabricksFeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowContinuous;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/feature_engineering_feature#rolling DataDatabricksFeatureEngineeringFeature#rolling}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/feature_engineering_feature#rolling DataDatabricksFeatureEngineeringFeature#rolling}
   */
   readonly rolling?: DataDatabricksFeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowRolling;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/feature_engineering_feature#sliding DataDatabricksFeatureEngineeringFeature#sliding}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/feature_engineering_feature#sliding DataDatabricksFeatureEngineeringFeature#sliding}
   */
   readonly sliding?: DataDatabricksFeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowSliding;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/feature_engineering_feature#tumbling DataDatabricksFeatureEngineeringFeature#tumbling}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/feature_engineering_feature#tumbling DataDatabricksFeatureEngineeringFeature#tumbling}
   */
   readonly tumbling?: DataDatabricksFeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowTumbling;
 }
@@ -1703,7 +1703,7 @@ export interface DataDatabricksFeatureEngineeringFeatureFunctionAggregationFunct
 export function dataDatabricksFeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowToTerraform(struct?: DataDatabricksFeatureEngineeringFeatureFunctionAggregationFunctionTimeWindow | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     continuous: dataDatabricksFeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowContinuousToTerraform(struct!.continuous),
@@ -1717,7 +1717,7 @@ export function dataDatabricksFeatureEngineeringFeatureFunctionAggregationFuncti
 export function dataDatabricksFeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowToHclTerraform(struct?: DataDatabricksFeatureEngineeringFeatureFunctionAggregationFunctionTimeWindow | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     continuous: {
@@ -1876,7 +1876,7 @@ export class DataDatabricksFeatureEngineeringFeatureFunctionAggregationFunctionT
 }
 export interface DataDatabricksFeatureEngineeringFeatureFunctionAggregationFunctionVarPop {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/feature_engineering_feature#input DataDatabricksFeatureEngineeringFeature#input}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/feature_engineering_feature#input DataDatabricksFeatureEngineeringFeature#input}
   */
   readonly input: string;
 }
@@ -1884,7 +1884,7 @@ export interface DataDatabricksFeatureEngineeringFeatureFunctionAggregationFunct
 export function dataDatabricksFeatureEngineeringFeatureFunctionAggregationFunctionVarPopToTerraform(struct?: DataDatabricksFeatureEngineeringFeatureFunctionAggregationFunctionVarPop | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     input: cdktn.stringToTerraform(struct!.input),
@@ -1895,7 +1895,7 @@ export function dataDatabricksFeatureEngineeringFeatureFunctionAggregationFuncti
 export function dataDatabricksFeatureEngineeringFeatureFunctionAggregationFunctionVarPopToHclTerraform(struct?: DataDatabricksFeatureEngineeringFeatureFunctionAggregationFunctionVarPop | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     input: {
@@ -1967,7 +1967,7 @@ export class DataDatabricksFeatureEngineeringFeatureFunctionAggregationFunctionV
 }
 export interface DataDatabricksFeatureEngineeringFeatureFunctionAggregationFunctionVarSamp {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/feature_engineering_feature#input DataDatabricksFeatureEngineeringFeature#input}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/feature_engineering_feature#input DataDatabricksFeatureEngineeringFeature#input}
   */
   readonly input: string;
 }
@@ -1975,7 +1975,7 @@ export interface DataDatabricksFeatureEngineeringFeatureFunctionAggregationFunct
 export function dataDatabricksFeatureEngineeringFeatureFunctionAggregationFunctionVarSampToTerraform(struct?: DataDatabricksFeatureEngineeringFeatureFunctionAggregationFunctionVarSamp | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     input: cdktn.stringToTerraform(struct!.input),
@@ -1986,7 +1986,7 @@ export function dataDatabricksFeatureEngineeringFeatureFunctionAggregationFuncti
 export function dataDatabricksFeatureEngineeringFeatureFunctionAggregationFunctionVarSampToHclTerraform(struct?: DataDatabricksFeatureEngineeringFeatureFunctionAggregationFunctionVarSamp | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     input: {
@@ -2058,59 +2058,59 @@ export class DataDatabricksFeatureEngineeringFeatureFunctionAggregationFunctionV
 }
 export interface DataDatabricksFeatureEngineeringFeatureFunctionAggregationFunction {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/feature_engineering_feature#approx_count_distinct DataDatabricksFeatureEngineeringFeature#approx_count_distinct}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/feature_engineering_feature#approx_count_distinct DataDatabricksFeatureEngineeringFeature#approx_count_distinct}
   */
   readonly approxCountDistinct?: DataDatabricksFeatureEngineeringFeatureFunctionAggregationFunctionApproxCountDistinct;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/feature_engineering_feature#approx_percentile DataDatabricksFeatureEngineeringFeature#approx_percentile}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/feature_engineering_feature#approx_percentile DataDatabricksFeatureEngineeringFeature#approx_percentile}
   */
   readonly approxPercentile?: DataDatabricksFeatureEngineeringFeatureFunctionAggregationFunctionApproxPercentile;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/feature_engineering_feature#avg DataDatabricksFeatureEngineeringFeature#avg}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/feature_engineering_feature#avg DataDatabricksFeatureEngineeringFeature#avg}
   */
   readonly avg?: DataDatabricksFeatureEngineeringFeatureFunctionAggregationFunctionAvg;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/feature_engineering_feature#count_function DataDatabricksFeatureEngineeringFeature#count_function}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/feature_engineering_feature#count_function DataDatabricksFeatureEngineeringFeature#count_function}
   */
   readonly countFunction?: DataDatabricksFeatureEngineeringFeatureFunctionAggregationFunctionCountFunction;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/feature_engineering_feature#first DataDatabricksFeatureEngineeringFeature#first}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/feature_engineering_feature#first DataDatabricksFeatureEngineeringFeature#first}
   */
   readonly first?: DataDatabricksFeatureEngineeringFeatureFunctionAggregationFunctionFirst;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/feature_engineering_feature#last DataDatabricksFeatureEngineeringFeature#last}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/feature_engineering_feature#last DataDatabricksFeatureEngineeringFeature#last}
   */
   readonly last?: DataDatabricksFeatureEngineeringFeatureFunctionAggregationFunctionLast;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/feature_engineering_feature#max DataDatabricksFeatureEngineeringFeature#max}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/feature_engineering_feature#max DataDatabricksFeatureEngineeringFeature#max}
   */
   readonly max?: DataDatabricksFeatureEngineeringFeatureFunctionAggregationFunctionMax;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/feature_engineering_feature#min DataDatabricksFeatureEngineeringFeature#min}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/feature_engineering_feature#min DataDatabricksFeatureEngineeringFeature#min}
   */
   readonly min?: DataDatabricksFeatureEngineeringFeatureFunctionAggregationFunctionMin;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/feature_engineering_feature#stddev_pop DataDatabricksFeatureEngineeringFeature#stddev_pop}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/feature_engineering_feature#stddev_pop DataDatabricksFeatureEngineeringFeature#stddev_pop}
   */
   readonly stddevPop?: DataDatabricksFeatureEngineeringFeatureFunctionAggregationFunctionStddevPop;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/feature_engineering_feature#stddev_samp DataDatabricksFeatureEngineeringFeature#stddev_samp}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/feature_engineering_feature#stddev_samp DataDatabricksFeatureEngineeringFeature#stddev_samp}
   */
   readonly stddevSamp?: DataDatabricksFeatureEngineeringFeatureFunctionAggregationFunctionStddevSamp;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/feature_engineering_feature#sum DataDatabricksFeatureEngineeringFeature#sum}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/feature_engineering_feature#sum DataDatabricksFeatureEngineeringFeature#sum}
   */
   readonly sum?: DataDatabricksFeatureEngineeringFeatureFunctionAggregationFunctionSum;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/feature_engineering_feature#time_window DataDatabricksFeatureEngineeringFeature#time_window}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/feature_engineering_feature#time_window DataDatabricksFeatureEngineeringFeature#time_window}
   */
   readonly timeWindow?: DataDatabricksFeatureEngineeringFeatureFunctionAggregationFunctionTimeWindow;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/feature_engineering_feature#var_pop DataDatabricksFeatureEngineeringFeature#var_pop}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/feature_engineering_feature#var_pop DataDatabricksFeatureEngineeringFeature#var_pop}
   */
   readonly varPop?: DataDatabricksFeatureEngineeringFeatureFunctionAggregationFunctionVarPop;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/feature_engineering_feature#var_samp DataDatabricksFeatureEngineeringFeature#var_samp}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/feature_engineering_feature#var_samp DataDatabricksFeatureEngineeringFeature#var_samp}
   */
   readonly varSamp?: DataDatabricksFeatureEngineeringFeatureFunctionAggregationFunctionVarSamp;
 }
@@ -2118,7 +2118,7 @@ export interface DataDatabricksFeatureEngineeringFeatureFunctionAggregationFunct
 export function dataDatabricksFeatureEngineeringFeatureFunctionAggregationFunctionToTerraform(struct?: DataDatabricksFeatureEngineeringFeatureFunctionAggregationFunction | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     approx_count_distinct: dataDatabricksFeatureEngineeringFeatureFunctionAggregationFunctionApproxCountDistinctToTerraform(struct!.approxCountDistinct),
@@ -2142,7 +2142,7 @@ export function dataDatabricksFeatureEngineeringFeatureFunctionAggregationFuncti
 export function dataDatabricksFeatureEngineeringFeatureFunctionAggregationFunctionToHclTerraform(struct?: DataDatabricksFeatureEngineeringFeatureFunctionAggregationFunction | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     approx_count_distinct: {
@@ -2581,7 +2581,7 @@ export class DataDatabricksFeatureEngineeringFeatureFunctionAggregationFunctionO
 }
 export interface DataDatabricksFeatureEngineeringFeatureFunctionColumnSelection {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/feature_engineering_feature#column DataDatabricksFeatureEngineeringFeature#column}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/feature_engineering_feature#column DataDatabricksFeatureEngineeringFeature#column}
   */
   readonly column: string;
 }
@@ -2589,7 +2589,7 @@ export interface DataDatabricksFeatureEngineeringFeatureFunctionColumnSelection 
 export function dataDatabricksFeatureEngineeringFeatureFunctionColumnSelectionToTerraform(struct?: DataDatabricksFeatureEngineeringFeatureFunctionColumnSelection | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     column: cdktn.stringToTerraform(struct!.column),
@@ -2600,7 +2600,7 @@ export function dataDatabricksFeatureEngineeringFeatureFunctionColumnSelectionTo
 export function dataDatabricksFeatureEngineeringFeatureFunctionColumnSelectionToHclTerraform(struct?: DataDatabricksFeatureEngineeringFeatureFunctionColumnSelection | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     column: {
@@ -2672,11 +2672,11 @@ export class DataDatabricksFeatureEngineeringFeatureFunctionColumnSelectionOutpu
 }
 export interface DataDatabricksFeatureEngineeringFeatureFunctionExtraParameters {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/feature_engineering_feature#key DataDatabricksFeatureEngineeringFeature#key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/feature_engineering_feature#key DataDatabricksFeatureEngineeringFeature#key}
   */
   readonly key: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/feature_engineering_feature#value DataDatabricksFeatureEngineeringFeature#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/feature_engineering_feature#value DataDatabricksFeatureEngineeringFeature#value}
   */
   readonly value: string;
 }
@@ -2684,7 +2684,7 @@ export interface DataDatabricksFeatureEngineeringFeatureFunctionExtraParameters 
 export function dataDatabricksFeatureEngineeringFeatureFunctionExtraParametersToTerraform(struct?: DataDatabricksFeatureEngineeringFeatureFunctionExtraParameters | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     key: cdktn.stringToTerraform(struct!.key),
@@ -2696,7 +2696,7 @@ export function dataDatabricksFeatureEngineeringFeatureFunctionExtraParametersTo
 export function dataDatabricksFeatureEngineeringFeatureFunctionExtraParametersToHclTerraform(struct?: DataDatabricksFeatureEngineeringFeatureFunctionExtraParameters | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     key: {
@@ -2815,19 +2815,19 @@ export class DataDatabricksFeatureEngineeringFeatureFunctionExtraParametersList 
 }
 export interface DataDatabricksFeatureEngineeringFeatureFunction {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/feature_engineering_feature#aggregation_function DataDatabricksFeatureEngineeringFeature#aggregation_function}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/feature_engineering_feature#aggregation_function DataDatabricksFeatureEngineeringFeature#aggregation_function}
   */
   readonly aggregationFunction?: DataDatabricksFeatureEngineeringFeatureFunctionAggregationFunction;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/feature_engineering_feature#column_selection DataDatabricksFeatureEngineeringFeature#column_selection}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/feature_engineering_feature#column_selection DataDatabricksFeatureEngineeringFeature#column_selection}
   */
   readonly columnSelection?: DataDatabricksFeatureEngineeringFeatureFunctionColumnSelection;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/feature_engineering_feature#extra_parameters DataDatabricksFeatureEngineeringFeature#extra_parameters}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/feature_engineering_feature#extra_parameters DataDatabricksFeatureEngineeringFeature#extra_parameters}
   */
   readonly extraParameters?: DataDatabricksFeatureEngineeringFeatureFunctionExtraParameters[] | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/feature_engineering_feature#function_type DataDatabricksFeatureEngineeringFeature#function_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/feature_engineering_feature#function_type DataDatabricksFeatureEngineeringFeature#function_type}
   */
   readonly functionType?: string;
 }
@@ -2835,7 +2835,7 @@ export interface DataDatabricksFeatureEngineeringFeatureFunction {
 export function dataDatabricksFeatureEngineeringFeatureFunctionToTerraform(struct?: DataDatabricksFeatureEngineeringFeatureFunction): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     aggregation_function: dataDatabricksFeatureEngineeringFeatureFunctionAggregationFunctionToTerraform(struct!.aggregationFunction),
@@ -2849,7 +2849,7 @@ export function dataDatabricksFeatureEngineeringFeatureFunctionToTerraform(struc
 export function dataDatabricksFeatureEngineeringFeatureFunctionToHclTerraform(struct?: DataDatabricksFeatureEngineeringFeatureFunction): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     aggregation_function: {
@@ -2998,11 +2998,11 @@ export class DataDatabricksFeatureEngineeringFeatureFunctionOutputReference exte
 }
 export interface DataDatabricksFeatureEngineeringFeatureLineageContextJobContext {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/feature_engineering_feature#job_id DataDatabricksFeatureEngineeringFeature#job_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/feature_engineering_feature#job_id DataDatabricksFeatureEngineeringFeature#job_id}
   */
   readonly jobId?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/feature_engineering_feature#job_run_id DataDatabricksFeatureEngineeringFeature#job_run_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/feature_engineering_feature#job_run_id DataDatabricksFeatureEngineeringFeature#job_run_id}
   */
   readonly jobRunId?: number;
 }
@@ -3010,7 +3010,7 @@ export interface DataDatabricksFeatureEngineeringFeatureLineageContextJobContext
 export function dataDatabricksFeatureEngineeringFeatureLineageContextJobContextToTerraform(struct?: DataDatabricksFeatureEngineeringFeatureLineageContextJobContext | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     job_id: cdktn.numberToTerraform(struct!.jobId),
@@ -3022,7 +3022,7 @@ export function dataDatabricksFeatureEngineeringFeatureLineageContextJobContextT
 export function dataDatabricksFeatureEngineeringFeatureLineageContextJobContextToHclTerraform(struct?: DataDatabricksFeatureEngineeringFeatureLineageContextJobContext | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     job_id: {
@@ -3125,11 +3125,11 @@ export class DataDatabricksFeatureEngineeringFeatureLineageContextJobContextOutp
 }
 export interface DataDatabricksFeatureEngineeringFeatureLineageContext {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/feature_engineering_feature#job_context DataDatabricksFeatureEngineeringFeature#job_context}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/feature_engineering_feature#job_context DataDatabricksFeatureEngineeringFeature#job_context}
   */
   readonly jobContext?: DataDatabricksFeatureEngineeringFeatureLineageContextJobContext;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/feature_engineering_feature#notebook_id DataDatabricksFeatureEngineeringFeature#notebook_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/feature_engineering_feature#notebook_id DataDatabricksFeatureEngineeringFeature#notebook_id}
   */
   readonly notebookId?: number;
 }
@@ -3137,7 +3137,7 @@ export interface DataDatabricksFeatureEngineeringFeatureLineageContext {
 export function dataDatabricksFeatureEngineeringFeatureLineageContextToTerraform(struct?: DataDatabricksFeatureEngineeringFeatureLineageContext): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     job_context: dataDatabricksFeatureEngineeringFeatureLineageContextJobContextToTerraform(struct!.jobContext),
@@ -3149,7 +3149,7 @@ export function dataDatabricksFeatureEngineeringFeatureLineageContextToTerraform
 export function dataDatabricksFeatureEngineeringFeatureLineageContextToHclTerraform(struct?: DataDatabricksFeatureEngineeringFeatureLineageContext): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     job_context: {
@@ -3242,7 +3242,7 @@ export class DataDatabricksFeatureEngineeringFeatureLineageContextOutputReferenc
 }
 export interface DataDatabricksFeatureEngineeringFeatureProviderConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/feature_engineering_feature#workspace_id DataDatabricksFeatureEngineeringFeature#workspace_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/feature_engineering_feature#workspace_id DataDatabricksFeatureEngineeringFeature#workspace_id}
   */
   readonly workspaceId?: string;
 }
@@ -3250,7 +3250,7 @@ export interface DataDatabricksFeatureEngineeringFeatureProviderConfig {
 export function dataDatabricksFeatureEngineeringFeatureProviderConfigToTerraform(struct?: DataDatabricksFeatureEngineeringFeatureProviderConfig | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     workspace_id: cdktn.stringToTerraform(struct!.workspaceId),
@@ -3261,7 +3261,7 @@ export function dataDatabricksFeatureEngineeringFeatureProviderConfigToTerraform
 export function dataDatabricksFeatureEngineeringFeatureProviderConfigToHclTerraform(struct?: DataDatabricksFeatureEngineeringFeatureProviderConfig | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     workspace_id: {
@@ -3336,27 +3336,27 @@ export class DataDatabricksFeatureEngineeringFeatureProviderConfigOutputReferenc
 }
 export interface DataDatabricksFeatureEngineeringFeatureSourceDeltaTableSource {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/feature_engineering_feature#dataframe_schema DataDatabricksFeatureEngineeringFeature#dataframe_schema}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/feature_engineering_feature#dataframe_schema DataDatabricksFeatureEngineeringFeature#dataframe_schema}
   */
   readonly dataframeSchema?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/feature_engineering_feature#entity_columns DataDatabricksFeatureEngineeringFeature#entity_columns}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/feature_engineering_feature#entity_columns DataDatabricksFeatureEngineeringFeature#entity_columns}
   */
   readonly entityColumns?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/feature_engineering_feature#filter_condition DataDatabricksFeatureEngineeringFeature#filter_condition}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/feature_engineering_feature#filter_condition DataDatabricksFeatureEngineeringFeature#filter_condition}
   */
   readonly filterCondition?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/feature_engineering_feature#full_name DataDatabricksFeatureEngineeringFeature#full_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/feature_engineering_feature#full_name DataDatabricksFeatureEngineeringFeature#full_name}
   */
   readonly fullName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/feature_engineering_feature#timeseries_column DataDatabricksFeatureEngineeringFeature#timeseries_column}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/feature_engineering_feature#timeseries_column DataDatabricksFeatureEngineeringFeature#timeseries_column}
   */
   readonly timeseriesColumn?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/feature_engineering_feature#transformation_sql DataDatabricksFeatureEngineeringFeature#transformation_sql}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/feature_engineering_feature#transformation_sql DataDatabricksFeatureEngineeringFeature#transformation_sql}
   */
   readonly transformationSql?: string;
 }
@@ -3364,7 +3364,7 @@ export interface DataDatabricksFeatureEngineeringFeatureSourceDeltaTableSource {
 export function dataDatabricksFeatureEngineeringFeatureSourceDeltaTableSourceToTerraform(struct?: DataDatabricksFeatureEngineeringFeatureSourceDeltaTableSource | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     dataframe_schema: cdktn.stringToTerraform(struct!.dataframeSchema),
@@ -3380,7 +3380,7 @@ export function dataDatabricksFeatureEngineeringFeatureSourceDeltaTableSourceToT
 export function dataDatabricksFeatureEngineeringFeatureSourceDeltaTableSourceToHclTerraform(struct?: DataDatabricksFeatureEngineeringFeatureSourceDeltaTableSource | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     dataframe_schema: {
@@ -3592,7 +3592,7 @@ export class DataDatabricksFeatureEngineeringFeatureSourceDeltaTableSourceOutput
 }
 export interface DataDatabricksFeatureEngineeringFeatureSourceKafkaSourceEntityColumnIdentifiers {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/feature_engineering_feature#variant_expr_path DataDatabricksFeatureEngineeringFeature#variant_expr_path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/feature_engineering_feature#variant_expr_path DataDatabricksFeatureEngineeringFeature#variant_expr_path}
   */
   readonly variantExprPath: string;
 }
@@ -3600,7 +3600,7 @@ export interface DataDatabricksFeatureEngineeringFeatureSourceKafkaSourceEntityC
 export function dataDatabricksFeatureEngineeringFeatureSourceKafkaSourceEntityColumnIdentifiersToTerraform(struct?: DataDatabricksFeatureEngineeringFeatureSourceKafkaSourceEntityColumnIdentifiers | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     variant_expr_path: cdktn.stringToTerraform(struct!.variantExprPath),
@@ -3611,7 +3611,7 @@ export function dataDatabricksFeatureEngineeringFeatureSourceKafkaSourceEntityCo
 export function dataDatabricksFeatureEngineeringFeatureSourceKafkaSourceEntityColumnIdentifiersToHclTerraform(struct?: DataDatabricksFeatureEngineeringFeatureSourceKafkaSourceEntityColumnIdentifiers | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     variant_expr_path: {
@@ -3705,7 +3705,7 @@ export class DataDatabricksFeatureEngineeringFeatureSourceKafkaSourceEntityColum
 }
 export interface DataDatabricksFeatureEngineeringFeatureSourceKafkaSourceTimeseriesColumnIdentifier {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/feature_engineering_feature#variant_expr_path DataDatabricksFeatureEngineeringFeature#variant_expr_path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/feature_engineering_feature#variant_expr_path DataDatabricksFeatureEngineeringFeature#variant_expr_path}
   */
   readonly variantExprPath: string;
 }
@@ -3713,7 +3713,7 @@ export interface DataDatabricksFeatureEngineeringFeatureSourceKafkaSourceTimeser
 export function dataDatabricksFeatureEngineeringFeatureSourceKafkaSourceTimeseriesColumnIdentifierToTerraform(struct?: DataDatabricksFeatureEngineeringFeatureSourceKafkaSourceTimeseriesColumnIdentifier | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     variant_expr_path: cdktn.stringToTerraform(struct!.variantExprPath),
@@ -3724,7 +3724,7 @@ export function dataDatabricksFeatureEngineeringFeatureSourceKafkaSourceTimeseri
 export function dataDatabricksFeatureEngineeringFeatureSourceKafkaSourceTimeseriesColumnIdentifierToHclTerraform(struct?: DataDatabricksFeatureEngineeringFeatureSourceKafkaSourceTimeseriesColumnIdentifier | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     variant_expr_path: {
@@ -3796,19 +3796,19 @@ export class DataDatabricksFeatureEngineeringFeatureSourceKafkaSourceTimeseriesC
 }
 export interface DataDatabricksFeatureEngineeringFeatureSourceKafkaSource {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/feature_engineering_feature#entity_column_identifiers DataDatabricksFeatureEngineeringFeature#entity_column_identifiers}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/feature_engineering_feature#entity_column_identifiers DataDatabricksFeatureEngineeringFeature#entity_column_identifiers}
   */
   readonly entityColumnIdentifiers?: DataDatabricksFeatureEngineeringFeatureSourceKafkaSourceEntityColumnIdentifiers[] | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/feature_engineering_feature#filter_condition DataDatabricksFeatureEngineeringFeature#filter_condition}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/feature_engineering_feature#filter_condition DataDatabricksFeatureEngineeringFeature#filter_condition}
   */
   readonly filterCondition?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/feature_engineering_feature#name DataDatabricksFeatureEngineeringFeature#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/feature_engineering_feature#name DataDatabricksFeatureEngineeringFeature#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/feature_engineering_feature#timeseries_column_identifier DataDatabricksFeatureEngineeringFeature#timeseries_column_identifier}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/feature_engineering_feature#timeseries_column_identifier DataDatabricksFeatureEngineeringFeature#timeseries_column_identifier}
   */
   readonly timeseriesColumnIdentifier?: DataDatabricksFeatureEngineeringFeatureSourceKafkaSourceTimeseriesColumnIdentifier;
 }
@@ -3816,7 +3816,7 @@ export interface DataDatabricksFeatureEngineeringFeatureSourceKafkaSource {
 export function dataDatabricksFeatureEngineeringFeatureSourceKafkaSourceToTerraform(struct?: DataDatabricksFeatureEngineeringFeatureSourceKafkaSource | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     entity_column_identifiers: cdktn.listMapper(dataDatabricksFeatureEngineeringFeatureSourceKafkaSourceEntityColumnIdentifiersToTerraform, false)(struct!.entityColumnIdentifiers),
@@ -3830,7 +3830,7 @@ export function dataDatabricksFeatureEngineeringFeatureSourceKafkaSourceToTerraf
 export function dataDatabricksFeatureEngineeringFeatureSourceKafkaSourceToHclTerraform(struct?: DataDatabricksFeatureEngineeringFeatureSourceKafkaSource | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     entity_column_identifiers: {
@@ -3986,11 +3986,11 @@ export class DataDatabricksFeatureEngineeringFeatureSourceKafkaSourceOutputRefer
 }
 export interface DataDatabricksFeatureEngineeringFeatureSourceRequestSourceFlatSchemaFields {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/feature_engineering_feature#data_type DataDatabricksFeatureEngineeringFeature#data_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/feature_engineering_feature#data_type DataDatabricksFeatureEngineeringFeature#data_type}
   */
   readonly dataType: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/feature_engineering_feature#name DataDatabricksFeatureEngineeringFeature#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/feature_engineering_feature#name DataDatabricksFeatureEngineeringFeature#name}
   */
   readonly name: string;
 }
@@ -3998,7 +3998,7 @@ export interface DataDatabricksFeatureEngineeringFeatureSourceRequestSourceFlatS
 export function dataDatabricksFeatureEngineeringFeatureSourceRequestSourceFlatSchemaFieldsToTerraform(struct?: DataDatabricksFeatureEngineeringFeatureSourceRequestSourceFlatSchemaFields): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     data_type: cdktn.stringToTerraform(struct!.dataType),
@@ -4010,7 +4010,7 @@ export function dataDatabricksFeatureEngineeringFeatureSourceRequestSourceFlatSc
 export function dataDatabricksFeatureEngineeringFeatureSourceRequestSourceFlatSchemaFieldsToHclTerraform(struct?: DataDatabricksFeatureEngineeringFeatureSourceRequestSourceFlatSchemaFields): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     data_type: {
@@ -4119,7 +4119,7 @@ export class DataDatabricksFeatureEngineeringFeatureSourceRequestSourceFlatSchem
 }
 export interface DataDatabricksFeatureEngineeringFeatureSourceRequestSourceFlatSchema {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/feature_engineering_feature#fields DataDatabricksFeatureEngineeringFeature#fields}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/feature_engineering_feature#fields DataDatabricksFeatureEngineeringFeature#fields}
   */
   readonly fields: DataDatabricksFeatureEngineeringFeatureSourceRequestSourceFlatSchemaFields[] | cdktn.IResolvable;
 }
@@ -4127,7 +4127,7 @@ export interface DataDatabricksFeatureEngineeringFeatureSourceRequestSourceFlatS
 export function dataDatabricksFeatureEngineeringFeatureSourceRequestSourceFlatSchemaToTerraform(struct?: DataDatabricksFeatureEngineeringFeatureSourceRequestSourceFlatSchema | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     fields: cdktn.listMapper(dataDatabricksFeatureEngineeringFeatureSourceRequestSourceFlatSchemaFieldsToTerraform, false)(struct!.fields),
@@ -4138,7 +4138,7 @@ export function dataDatabricksFeatureEngineeringFeatureSourceRequestSourceFlatSc
 export function dataDatabricksFeatureEngineeringFeatureSourceRequestSourceFlatSchemaToHclTerraform(struct?: DataDatabricksFeatureEngineeringFeatureSourceRequestSourceFlatSchema | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     fields: {
@@ -4210,7 +4210,7 @@ export class DataDatabricksFeatureEngineeringFeatureSourceRequestSourceFlatSchem
 }
 export interface DataDatabricksFeatureEngineeringFeatureSourceRequestSource {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/feature_engineering_feature#flat_schema DataDatabricksFeatureEngineeringFeature#flat_schema}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/feature_engineering_feature#flat_schema DataDatabricksFeatureEngineeringFeature#flat_schema}
   */
   readonly flatSchema?: DataDatabricksFeatureEngineeringFeatureSourceRequestSourceFlatSchema;
 }
@@ -4218,7 +4218,7 @@ export interface DataDatabricksFeatureEngineeringFeatureSourceRequestSource {
 export function dataDatabricksFeatureEngineeringFeatureSourceRequestSourceToTerraform(struct?: DataDatabricksFeatureEngineeringFeatureSourceRequestSource | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     flat_schema: dataDatabricksFeatureEngineeringFeatureSourceRequestSourceFlatSchemaToTerraform(struct!.flatSchema),
@@ -4229,7 +4229,7 @@ export function dataDatabricksFeatureEngineeringFeatureSourceRequestSourceToTerr
 export function dataDatabricksFeatureEngineeringFeatureSourceRequestSourceToHclTerraform(struct?: DataDatabricksFeatureEngineeringFeatureSourceRequestSource | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     flat_schema: {
@@ -4302,30 +4302,159 @@ export class DataDatabricksFeatureEngineeringFeatureSourceRequestSourceOutputRef
     return this._flatSchema.internalValue;
   }
 }
+export interface DataDatabricksFeatureEngineeringFeatureSourceStreamSource {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/feature_engineering_feature#filter_condition DataDatabricksFeatureEngineeringFeature#filter_condition}
+  */
+  readonly filterCondition?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/feature_engineering_feature#full_name DataDatabricksFeatureEngineeringFeature#full_name}
+  */
+  readonly fullName: string;
+}
+
+export function dataDatabricksFeatureEngineeringFeatureSourceStreamSourceToTerraform(struct?: DataDatabricksFeatureEngineeringFeatureSourceStreamSource | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  return {
+    filter_condition: cdktn.stringToTerraform(struct!.filterCondition),
+    full_name: cdktn.stringToTerraform(struct!.fullName),
+  }
+}
+
+
+export function dataDatabricksFeatureEngineeringFeatureSourceStreamSourceToHclTerraform(struct?: DataDatabricksFeatureEngineeringFeatureSourceStreamSource | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  const attrs = {
+    filter_condition: {
+      value: cdktn.stringToHclTerraform(struct!.filterCondition),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    full_name: {
+      value: cdktn.stringToHclTerraform(struct!.fullName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class DataDatabricksFeatureEngineeringFeatureSourceStreamSourceOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktn.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false);
+  }
+
+  public get internalValue(): DataDatabricksFeatureEngineeringFeatureSourceStreamSource | cdktn.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._filterCondition !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.filterCondition = this._filterCondition;
+    }
+    if (this._fullName !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.fullName = this._fullName;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataDatabricksFeatureEngineeringFeatureSourceStreamSource | cdktn.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._filterCondition = undefined;
+      this._fullName = undefined;
+    }
+    else if (cdktn.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._filterCondition = value.filterCondition;
+      this._fullName = value.fullName;
+    }
+  }
+
+  // filter_condition - computed: true, optional: true, required: false
+  private _filterCondition?: string; 
+  public get filterCondition() {
+    return this.getStringAttribute('filter_condition');
+  }
+  public set filterCondition(value: string) {
+    this._filterCondition = value;
+  }
+  public resetFilterCondition() {
+    this._filterCondition = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get filterConditionInput() {
+    return this._filterCondition;
+  }
+
+  // full_name - computed: true, optional: false, required: true
+  private _fullName?: string; 
+  public get fullName() {
+    return this.getStringAttribute('full_name');
+  }
+  public set fullName(value: string) {
+    this._fullName = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get fullNameInput() {
+    return this._fullName;
+  }
+}
 export interface DataDatabricksFeatureEngineeringFeatureSource {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/feature_engineering_feature#delta_table_source DataDatabricksFeatureEngineeringFeature#delta_table_source}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/feature_engineering_feature#delta_table_source DataDatabricksFeatureEngineeringFeature#delta_table_source}
   */
   readonly deltaTableSource?: DataDatabricksFeatureEngineeringFeatureSourceDeltaTableSource;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/feature_engineering_feature#kafka_source DataDatabricksFeatureEngineeringFeature#kafka_source}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/feature_engineering_feature#kafka_source DataDatabricksFeatureEngineeringFeature#kafka_source}
   */
   readonly kafkaSource?: DataDatabricksFeatureEngineeringFeatureSourceKafkaSource;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/feature_engineering_feature#request_source DataDatabricksFeatureEngineeringFeature#request_source}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/feature_engineering_feature#request_source DataDatabricksFeatureEngineeringFeature#request_source}
   */
   readonly requestSource?: DataDatabricksFeatureEngineeringFeatureSourceRequestSource;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/feature_engineering_feature#stream_source DataDatabricksFeatureEngineeringFeature#stream_source}
+  */
+  readonly streamSource?: DataDatabricksFeatureEngineeringFeatureSourceStreamSource;
 }
 
 export function dataDatabricksFeatureEngineeringFeatureSourceToTerraform(struct?: DataDatabricksFeatureEngineeringFeatureSource): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     delta_table_source: dataDatabricksFeatureEngineeringFeatureSourceDeltaTableSourceToTerraform(struct!.deltaTableSource),
     kafka_source: dataDatabricksFeatureEngineeringFeatureSourceKafkaSourceToTerraform(struct!.kafkaSource),
     request_source: dataDatabricksFeatureEngineeringFeatureSourceRequestSourceToTerraform(struct!.requestSource),
+    stream_source: dataDatabricksFeatureEngineeringFeatureSourceStreamSourceToTerraform(struct!.streamSource),
   }
 }
 
@@ -4333,7 +4462,7 @@ export function dataDatabricksFeatureEngineeringFeatureSourceToTerraform(struct?
 export function dataDatabricksFeatureEngineeringFeatureSourceToHclTerraform(struct?: DataDatabricksFeatureEngineeringFeatureSource): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     delta_table_source: {
@@ -4353,6 +4482,12 @@ export function dataDatabricksFeatureEngineeringFeatureSourceToHclTerraform(stru
       isBlock: true,
       type: "struct",
       storageClassType: "DataDatabricksFeatureEngineeringFeatureSourceRequestSource",
+    },
+    stream_source: {
+      value: dataDatabricksFeatureEngineeringFeatureSourceStreamSourceToHclTerraform(struct!.streamSource),
+      isBlock: true,
+      type: "struct",
+      storageClassType: "DataDatabricksFeatureEngineeringFeatureSourceStreamSource",
     },
   };
 
@@ -4386,6 +4521,10 @@ export class DataDatabricksFeatureEngineeringFeatureSourceOutputReference extend
       hasAnyValues = true;
       internalValueResult.requestSource = this._requestSource?.internalValue;
     }
+    if (this._streamSource?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.streamSource = this._streamSource?.internalValue;
+    }
     return hasAnyValues ? internalValueResult : undefined;
   }
 
@@ -4395,12 +4534,14 @@ export class DataDatabricksFeatureEngineeringFeatureSourceOutputReference extend
       this._deltaTableSource.internalValue = undefined;
       this._kafkaSource.internalValue = undefined;
       this._requestSource.internalValue = undefined;
+      this._streamSource.internalValue = undefined;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
       this._deltaTableSource.internalValue = value.deltaTableSource;
       this._kafkaSource.internalValue = value.kafkaSource;
       this._requestSource.internalValue = value.requestSource;
+      this._streamSource.internalValue = value.streamSource;
     }
   }
 
@@ -4451,14 +4592,30 @@ export class DataDatabricksFeatureEngineeringFeatureSourceOutputReference extend
   public get requestSourceInput() {
     return this._requestSource.internalValue;
   }
+
+  // stream_source - computed: true, optional: true, required: false
+  private _streamSource = new DataDatabricksFeatureEngineeringFeatureSourceStreamSourceOutputReference(this, "stream_source");
+  public get streamSource() {
+    return this._streamSource;
+  }
+  public putStreamSource(value: DataDatabricksFeatureEngineeringFeatureSourceStreamSource) {
+    this._streamSource.internalValue = value;
+  }
+  public resetStreamSource() {
+    this._streamSource.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get streamSourceInput() {
+    return this._streamSource.internalValue;
+  }
 }
 export interface DataDatabricksFeatureEngineeringFeatureTimeWindowContinuous {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/feature_engineering_feature#offset DataDatabricksFeatureEngineeringFeature#offset}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/feature_engineering_feature#offset DataDatabricksFeatureEngineeringFeature#offset}
   */
   readonly offset?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/feature_engineering_feature#window_duration DataDatabricksFeatureEngineeringFeature#window_duration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/feature_engineering_feature#window_duration DataDatabricksFeatureEngineeringFeature#window_duration}
   */
   readonly windowDuration: string;
 }
@@ -4466,7 +4623,7 @@ export interface DataDatabricksFeatureEngineeringFeatureTimeWindowContinuous {
 export function dataDatabricksFeatureEngineeringFeatureTimeWindowContinuousToTerraform(struct?: DataDatabricksFeatureEngineeringFeatureTimeWindowContinuous | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     offset: cdktn.stringToTerraform(struct!.offset),
@@ -4478,7 +4635,7 @@ export function dataDatabricksFeatureEngineeringFeatureTimeWindowContinuousToTer
 export function dataDatabricksFeatureEngineeringFeatureTimeWindowContinuousToHclTerraform(struct?: DataDatabricksFeatureEngineeringFeatureTimeWindowContinuous | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     offset: {
@@ -4578,11 +4735,11 @@ export class DataDatabricksFeatureEngineeringFeatureTimeWindowContinuousOutputRe
 }
 export interface DataDatabricksFeatureEngineeringFeatureTimeWindowRolling {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/feature_engineering_feature#delay DataDatabricksFeatureEngineeringFeature#delay}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/feature_engineering_feature#delay DataDatabricksFeatureEngineeringFeature#delay}
   */
   readonly delay?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/feature_engineering_feature#window_duration DataDatabricksFeatureEngineeringFeature#window_duration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/feature_engineering_feature#window_duration DataDatabricksFeatureEngineeringFeature#window_duration}
   */
   readonly windowDuration: string;
 }
@@ -4590,7 +4747,7 @@ export interface DataDatabricksFeatureEngineeringFeatureTimeWindowRolling {
 export function dataDatabricksFeatureEngineeringFeatureTimeWindowRollingToTerraform(struct?: DataDatabricksFeatureEngineeringFeatureTimeWindowRolling | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     delay: cdktn.stringToTerraform(struct!.delay),
@@ -4602,7 +4759,7 @@ export function dataDatabricksFeatureEngineeringFeatureTimeWindowRollingToTerraf
 export function dataDatabricksFeatureEngineeringFeatureTimeWindowRollingToHclTerraform(struct?: DataDatabricksFeatureEngineeringFeatureTimeWindowRolling | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     delay: {
@@ -4702,11 +4859,11 @@ export class DataDatabricksFeatureEngineeringFeatureTimeWindowRollingOutputRefer
 }
 export interface DataDatabricksFeatureEngineeringFeatureTimeWindowSliding {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/feature_engineering_feature#slide_duration DataDatabricksFeatureEngineeringFeature#slide_duration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/feature_engineering_feature#slide_duration DataDatabricksFeatureEngineeringFeature#slide_duration}
   */
   readonly slideDuration: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/feature_engineering_feature#window_duration DataDatabricksFeatureEngineeringFeature#window_duration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/feature_engineering_feature#window_duration DataDatabricksFeatureEngineeringFeature#window_duration}
   */
   readonly windowDuration: string;
 }
@@ -4714,7 +4871,7 @@ export interface DataDatabricksFeatureEngineeringFeatureTimeWindowSliding {
 export function dataDatabricksFeatureEngineeringFeatureTimeWindowSlidingToTerraform(struct?: DataDatabricksFeatureEngineeringFeatureTimeWindowSliding | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     slide_duration: cdktn.stringToTerraform(struct!.slideDuration),
@@ -4726,7 +4883,7 @@ export function dataDatabricksFeatureEngineeringFeatureTimeWindowSlidingToTerraf
 export function dataDatabricksFeatureEngineeringFeatureTimeWindowSlidingToHclTerraform(struct?: DataDatabricksFeatureEngineeringFeatureTimeWindowSliding | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     slide_duration: {
@@ -4823,7 +4980,7 @@ export class DataDatabricksFeatureEngineeringFeatureTimeWindowSlidingOutputRefer
 }
 export interface DataDatabricksFeatureEngineeringFeatureTimeWindowTumbling {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/feature_engineering_feature#window_duration DataDatabricksFeatureEngineeringFeature#window_duration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/feature_engineering_feature#window_duration DataDatabricksFeatureEngineeringFeature#window_duration}
   */
   readonly windowDuration: string;
 }
@@ -4831,7 +4988,7 @@ export interface DataDatabricksFeatureEngineeringFeatureTimeWindowTumbling {
 export function dataDatabricksFeatureEngineeringFeatureTimeWindowTumblingToTerraform(struct?: DataDatabricksFeatureEngineeringFeatureTimeWindowTumbling | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     window_duration: cdktn.stringToTerraform(struct!.windowDuration),
@@ -4842,7 +4999,7 @@ export function dataDatabricksFeatureEngineeringFeatureTimeWindowTumblingToTerra
 export function dataDatabricksFeatureEngineeringFeatureTimeWindowTumblingToHclTerraform(struct?: DataDatabricksFeatureEngineeringFeatureTimeWindowTumbling | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     window_duration: {
@@ -4914,19 +5071,19 @@ export class DataDatabricksFeatureEngineeringFeatureTimeWindowTumblingOutputRefe
 }
 export interface DataDatabricksFeatureEngineeringFeatureTimeWindow {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/feature_engineering_feature#continuous DataDatabricksFeatureEngineeringFeature#continuous}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/feature_engineering_feature#continuous DataDatabricksFeatureEngineeringFeature#continuous}
   */
   readonly continuous?: DataDatabricksFeatureEngineeringFeatureTimeWindowContinuous;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/feature_engineering_feature#rolling DataDatabricksFeatureEngineeringFeature#rolling}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/feature_engineering_feature#rolling DataDatabricksFeatureEngineeringFeature#rolling}
   */
   readonly rolling?: DataDatabricksFeatureEngineeringFeatureTimeWindowRolling;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/feature_engineering_feature#sliding DataDatabricksFeatureEngineeringFeature#sliding}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/feature_engineering_feature#sliding DataDatabricksFeatureEngineeringFeature#sliding}
   */
   readonly sliding?: DataDatabricksFeatureEngineeringFeatureTimeWindowSliding;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/feature_engineering_feature#tumbling DataDatabricksFeatureEngineeringFeature#tumbling}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/feature_engineering_feature#tumbling DataDatabricksFeatureEngineeringFeature#tumbling}
   */
   readonly tumbling?: DataDatabricksFeatureEngineeringFeatureTimeWindowTumbling;
 }
@@ -4934,7 +5091,7 @@ export interface DataDatabricksFeatureEngineeringFeatureTimeWindow {
 export function dataDatabricksFeatureEngineeringFeatureTimeWindowToTerraform(struct?: DataDatabricksFeatureEngineeringFeatureTimeWindow): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     continuous: dataDatabricksFeatureEngineeringFeatureTimeWindowContinuousToTerraform(struct!.continuous),
@@ -4948,7 +5105,7 @@ export function dataDatabricksFeatureEngineeringFeatureTimeWindowToTerraform(str
 export function dataDatabricksFeatureEngineeringFeatureTimeWindowToHclTerraform(struct?: DataDatabricksFeatureEngineeringFeatureTimeWindow): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     continuous: {
@@ -5097,7 +5254,7 @@ export class DataDatabricksFeatureEngineeringFeatureTimeWindowOutputReference ex
 }
 export interface DataDatabricksFeatureEngineeringFeatureTimeseriesColumn {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/feature_engineering_feature#name DataDatabricksFeatureEngineeringFeature#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/feature_engineering_feature#name DataDatabricksFeatureEngineeringFeature#name}
   */
   readonly name: string;
 }
@@ -5105,7 +5262,7 @@ export interface DataDatabricksFeatureEngineeringFeatureTimeseriesColumn {
 export function dataDatabricksFeatureEngineeringFeatureTimeseriesColumnToTerraform(struct?: DataDatabricksFeatureEngineeringFeatureTimeseriesColumn): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     name: cdktn.stringToTerraform(struct!.name),
@@ -5116,7 +5273,7 @@ export function dataDatabricksFeatureEngineeringFeatureTimeseriesColumnToTerrafo
 export function dataDatabricksFeatureEngineeringFeatureTimeseriesColumnToHclTerraform(struct?: DataDatabricksFeatureEngineeringFeatureTimeseriesColumn): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     name: {
@@ -5178,7 +5335,7 @@ export class DataDatabricksFeatureEngineeringFeatureTimeseriesColumnOutputRefere
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/feature_engineering_feature databricks_feature_engineering_feature}
+* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/feature_engineering_feature databricks_feature_engineering_feature}
 */
 export class DataDatabricksFeatureEngineeringFeature extends cdktn.TerraformDataSource {
 
@@ -5194,7 +5351,7 @@ export class DataDatabricksFeatureEngineeringFeature extends cdktn.TerraformData
   * Generates CDKTN code for importing a DataDatabricksFeatureEngineeringFeature resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataDatabricksFeatureEngineeringFeature to import
-  * @param importFromId The id of the existing DataDatabricksFeatureEngineeringFeature that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/feature_engineering_feature#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataDatabricksFeatureEngineeringFeature that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/feature_engineering_feature#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataDatabricksFeatureEngineeringFeature to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -5206,7 +5363,7 @@ export class DataDatabricksFeatureEngineeringFeature extends cdktn.TerraformData
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/feature_engineering_feature databricks_feature_engineering_feature} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/feature_engineering_feature databricks_feature_engineering_feature} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -5217,7 +5374,7 @@ export class DataDatabricksFeatureEngineeringFeature extends cdktn.TerraformData
       terraformResourceType: 'databricks_feature_engineering_feature',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '1.117.0',
+        providerVersion: '1.118.0',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,

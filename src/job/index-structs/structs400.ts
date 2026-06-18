@@ -62,7 +62,7 @@ jobTaskForEachTaskTaskHealthToHclTerraform,
 JobTaskForEachTaskTaskHealthOutputReference } from './structs0';
 export interface JobTaskForEachTaskTaskLibraryProviderConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#workspace_id Job#workspace_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#workspace_id Job#workspace_id}
   */
   readonly workspaceId?: string;
 }
@@ -70,7 +70,7 @@ export interface JobTaskForEachTaskTaskLibraryProviderConfig {
 export function jobTaskForEachTaskTaskLibraryProviderConfigToTerraform(struct?: JobTaskForEachTaskTaskLibraryProviderConfigOutputReference | JobTaskForEachTaskTaskLibraryProviderConfig): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     workspace_id: cdktn.stringToTerraform(struct!.workspaceId),
@@ -81,7 +81,7 @@ export function jobTaskForEachTaskTaskLibraryProviderConfigToTerraform(struct?: 
 export function jobTaskForEachTaskTaskLibraryProviderConfigToHclTerraform(struct?: JobTaskForEachTaskTaskLibraryProviderConfigOutputReference | JobTaskForEachTaskTaskLibraryProviderConfig): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     workspace_id: {
@@ -146,11 +146,11 @@ export class JobTaskForEachTaskTaskLibraryProviderConfigOutputReference extends 
 }
 export interface JobTaskForEachTaskTaskLibraryPypi {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#package Job#package}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#package Job#package}
   */
   readonly package: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#repo Job#repo}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#repo Job#repo}
   */
   readonly repo?: string;
 }
@@ -158,7 +158,7 @@ export interface JobTaskForEachTaskTaskLibraryPypi {
 export function jobTaskForEachTaskTaskLibraryPypiToTerraform(struct?: JobTaskForEachTaskTaskLibraryPypiOutputReference | JobTaskForEachTaskTaskLibraryPypi): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     package: cdktn.stringToTerraform(struct!.package),
@@ -170,7 +170,7 @@ export function jobTaskForEachTaskTaskLibraryPypiToTerraform(struct?: JobTaskFor
 export function jobTaskForEachTaskTaskLibraryPypiToHclTerraform(struct?: JobTaskForEachTaskTaskLibraryPypiOutputReference | JobTaskForEachTaskTaskLibraryPypi): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     package: {
@@ -260,43 +260,43 @@ export class JobTaskForEachTaskTaskLibraryPypiOutputReference extends cdktn.Comp
 }
 export interface JobTaskForEachTaskTaskLibrary {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#egg Job#egg}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#egg Job#egg}
   */
   readonly egg?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#jar Job#jar}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#jar Job#jar}
   */
   readonly jar?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#requirements Job#requirements}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#requirements Job#requirements}
   */
   readonly requirements?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#whl Job#whl}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#whl Job#whl}
   */
   readonly whl?: string;
   /**
   * cran block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#cran Job#cran}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#cran Job#cran}
   */
   readonly cran?: JobTaskForEachTaskTaskLibraryCran;
   /**
   * maven block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#maven Job#maven}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#maven Job#maven}
   */
   readonly maven?: JobTaskForEachTaskTaskLibraryMaven;
   /**
   * provider_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#provider_config Job#provider_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#provider_config Job#provider_config}
   */
   readonly providerConfig?: JobTaskForEachTaskTaskLibraryProviderConfig;
   /**
   * pypi block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#pypi Job#pypi}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#pypi Job#pypi}
   */
   readonly pypi?: JobTaskForEachTaskTaskLibraryPypi;
 }
@@ -304,7 +304,7 @@ export interface JobTaskForEachTaskTaskLibrary {
 export function jobTaskForEachTaskTaskLibraryToTerraform(struct?: JobTaskForEachTaskTaskLibrary | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     egg: cdktn.stringToTerraform(struct!.egg),
@@ -322,7 +322,7 @@ export function jobTaskForEachTaskTaskLibraryToTerraform(struct?: JobTaskForEach
 export function jobTaskForEachTaskTaskLibraryToHclTerraform(struct?: JobTaskForEachTaskTaskLibrary | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     egg: {
@@ -615,11 +615,11 @@ export class JobTaskForEachTaskTaskLibraryList extends cdktn.ComplexList {
 }
 export interface JobTaskForEachTaskTaskNewClusterAutoscale {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#max_workers Job#max_workers}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#max_workers Job#max_workers}
   */
   readonly maxWorkers?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#min_workers Job#min_workers}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#min_workers Job#min_workers}
   */
   readonly minWorkers?: number;
 }
@@ -627,7 +627,7 @@ export interface JobTaskForEachTaskTaskNewClusterAutoscale {
 export function jobTaskForEachTaskTaskNewClusterAutoscaleToTerraform(struct?: JobTaskForEachTaskTaskNewClusterAutoscaleOutputReference | JobTaskForEachTaskTaskNewClusterAutoscale): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     max_workers: cdktn.numberToTerraform(struct!.maxWorkers),
@@ -639,7 +639,7 @@ export function jobTaskForEachTaskTaskNewClusterAutoscaleToTerraform(struct?: Jo
 export function jobTaskForEachTaskTaskNewClusterAutoscaleToHclTerraform(struct?: JobTaskForEachTaskTaskNewClusterAutoscaleOutputReference | JobTaskForEachTaskTaskNewClusterAutoscale): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     max_workers: {
@@ -732,43 +732,43 @@ export class JobTaskForEachTaskTaskNewClusterAutoscaleOutputReference extends cd
 }
 export interface JobTaskForEachTaskTaskNewClusterAwsAttributes {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#availability Job#availability}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#availability Job#availability}
   */
   readonly availability?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#ebs_volume_count Job#ebs_volume_count}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#ebs_volume_count Job#ebs_volume_count}
   */
   readonly ebsVolumeCount?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#ebs_volume_iops Job#ebs_volume_iops}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#ebs_volume_iops Job#ebs_volume_iops}
   */
   readonly ebsVolumeIops?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#ebs_volume_size Job#ebs_volume_size}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#ebs_volume_size Job#ebs_volume_size}
   */
   readonly ebsVolumeSize?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#ebs_volume_throughput Job#ebs_volume_throughput}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#ebs_volume_throughput Job#ebs_volume_throughput}
   */
   readonly ebsVolumeThroughput?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#ebs_volume_type Job#ebs_volume_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#ebs_volume_type Job#ebs_volume_type}
   */
   readonly ebsVolumeType?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#first_on_demand Job#first_on_demand}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#first_on_demand Job#first_on_demand}
   */
   readonly firstOnDemand?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#instance_profile_arn Job#instance_profile_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#instance_profile_arn Job#instance_profile_arn}
   */
   readonly instanceProfileArn?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#spot_bid_price_percent Job#spot_bid_price_percent}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#spot_bid_price_percent Job#spot_bid_price_percent}
   */
   readonly spotBidPricePercent?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#zone_id Job#zone_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#zone_id Job#zone_id}
   */
   readonly zoneId?: string;
 }
@@ -776,7 +776,7 @@ export interface JobTaskForEachTaskTaskNewClusterAwsAttributes {
 export function jobTaskForEachTaskTaskNewClusterAwsAttributesToTerraform(struct?: JobTaskForEachTaskTaskNewClusterAwsAttributesOutputReference | JobTaskForEachTaskTaskNewClusterAwsAttributes): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     availability: cdktn.stringToTerraform(struct!.availability),
@@ -796,7 +796,7 @@ export function jobTaskForEachTaskTaskNewClusterAwsAttributesToTerraform(struct?
 export function jobTaskForEachTaskTaskNewClusterAwsAttributesToHclTerraform(struct?: JobTaskForEachTaskTaskNewClusterAwsAttributesOutputReference | JobTaskForEachTaskTaskNewClusterAwsAttributes): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     availability: {
@@ -1113,11 +1113,11 @@ export class JobTaskForEachTaskTaskNewClusterAwsAttributesOutputReference extend
 }
 export interface JobTaskForEachTaskTaskNewClusterAzureAttributesLogAnalyticsInfo {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#log_analytics_primary_key Job#log_analytics_primary_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#log_analytics_primary_key Job#log_analytics_primary_key}
   */
   readonly logAnalyticsPrimaryKey?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#log_analytics_workspace_id Job#log_analytics_workspace_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#log_analytics_workspace_id Job#log_analytics_workspace_id}
   */
   readonly logAnalyticsWorkspaceId?: string;
 }
@@ -1125,7 +1125,7 @@ export interface JobTaskForEachTaskTaskNewClusterAzureAttributesLogAnalyticsInfo
 export function jobTaskForEachTaskTaskNewClusterAzureAttributesLogAnalyticsInfoToTerraform(struct?: JobTaskForEachTaskTaskNewClusterAzureAttributesLogAnalyticsInfoOutputReference | JobTaskForEachTaskTaskNewClusterAzureAttributesLogAnalyticsInfo): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     log_analytics_primary_key: cdktn.stringToTerraform(struct!.logAnalyticsPrimaryKey),
@@ -1137,7 +1137,7 @@ export function jobTaskForEachTaskTaskNewClusterAzureAttributesLogAnalyticsInfoT
 export function jobTaskForEachTaskTaskNewClusterAzureAttributesLogAnalyticsInfoToHclTerraform(struct?: JobTaskForEachTaskTaskNewClusterAzureAttributesLogAnalyticsInfoOutputReference | JobTaskForEachTaskTaskNewClusterAzureAttributesLogAnalyticsInfo): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     log_analytics_primary_key: {
@@ -1230,21 +1230,21 @@ export class JobTaskForEachTaskTaskNewClusterAzureAttributesLogAnalyticsInfoOutp
 }
 export interface JobTaskForEachTaskTaskNewClusterAzureAttributes {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#availability Job#availability}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#availability Job#availability}
   */
   readonly availability?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#first_on_demand Job#first_on_demand}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#first_on_demand Job#first_on_demand}
   */
   readonly firstOnDemand?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#spot_bid_max_price Job#spot_bid_max_price}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#spot_bid_max_price Job#spot_bid_max_price}
   */
   readonly spotBidMaxPrice?: number;
   /**
   * log_analytics_info block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#log_analytics_info Job#log_analytics_info}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#log_analytics_info Job#log_analytics_info}
   */
   readonly logAnalyticsInfo?: JobTaskForEachTaskTaskNewClusterAzureAttributesLogAnalyticsInfo;
 }
@@ -1252,7 +1252,7 @@ export interface JobTaskForEachTaskTaskNewClusterAzureAttributes {
 export function jobTaskForEachTaskTaskNewClusterAzureAttributesToTerraform(struct?: JobTaskForEachTaskTaskNewClusterAzureAttributesOutputReference | JobTaskForEachTaskTaskNewClusterAzureAttributes): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     availability: cdktn.stringToTerraform(struct!.availability),
@@ -1266,7 +1266,7 @@ export function jobTaskForEachTaskTaskNewClusterAzureAttributesToTerraform(struc
 export function jobTaskForEachTaskTaskNewClusterAzureAttributesToHclTerraform(struct?: JobTaskForEachTaskTaskNewClusterAzureAttributesOutputReference | JobTaskForEachTaskTaskNewClusterAzureAttributes): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     availability: {
@@ -1415,7 +1415,7 @@ export class JobTaskForEachTaskTaskNewClusterAzureAttributesOutputReference exte
 }
 export interface JobTaskForEachTaskTaskNewClusterClusterLogConfDbfs {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#destination Job#destination}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#destination Job#destination}
   */
   readonly destination: string;
 }
@@ -1423,7 +1423,7 @@ export interface JobTaskForEachTaskTaskNewClusterClusterLogConfDbfs {
 export function jobTaskForEachTaskTaskNewClusterClusterLogConfDbfsToTerraform(struct?: JobTaskForEachTaskTaskNewClusterClusterLogConfDbfsOutputReference | JobTaskForEachTaskTaskNewClusterClusterLogConfDbfs): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     destination: cdktn.stringToTerraform(struct!.destination),
@@ -1434,7 +1434,7 @@ export function jobTaskForEachTaskTaskNewClusterClusterLogConfDbfsToTerraform(st
 export function jobTaskForEachTaskTaskNewClusterClusterLogConfDbfsToHclTerraform(struct?: JobTaskForEachTaskTaskNewClusterClusterLogConfDbfsOutputReference | JobTaskForEachTaskTaskNewClusterClusterLogConfDbfs): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     destination: {
@@ -1496,31 +1496,31 @@ export class JobTaskForEachTaskTaskNewClusterClusterLogConfDbfsOutputReference e
 }
 export interface JobTaskForEachTaskTaskNewClusterClusterLogConfS3 {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#canned_acl Job#canned_acl}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#canned_acl Job#canned_acl}
   */
   readonly cannedAcl?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#destination Job#destination}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#destination Job#destination}
   */
   readonly destination: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#enable_encryption Job#enable_encryption}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#enable_encryption Job#enable_encryption}
   */
   readonly enableEncryption?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#encryption_type Job#encryption_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#encryption_type Job#encryption_type}
   */
   readonly encryptionType?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#endpoint Job#endpoint}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#endpoint Job#endpoint}
   */
   readonly endpoint?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#kms_key Job#kms_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#kms_key Job#kms_key}
   */
   readonly kmsKey?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#region Job#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#region Job#region}
   */
   readonly region?: string;
 }
@@ -1528,7 +1528,7 @@ export interface JobTaskForEachTaskTaskNewClusterClusterLogConfS3 {
 export function jobTaskForEachTaskTaskNewClusterClusterLogConfS3ToTerraform(struct?: JobTaskForEachTaskTaskNewClusterClusterLogConfS3OutputReference | JobTaskForEachTaskTaskNewClusterClusterLogConfS3): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     canned_acl: cdktn.stringToTerraform(struct!.cannedAcl),
@@ -1545,7 +1545,7 @@ export function jobTaskForEachTaskTaskNewClusterClusterLogConfS3ToTerraform(stru
 export function jobTaskForEachTaskTaskNewClusterClusterLogConfS3ToHclTerraform(struct?: JobTaskForEachTaskTaskNewClusterClusterLogConfS3OutputReference | JobTaskForEachTaskTaskNewClusterClusterLogConfS3): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     canned_acl: {
@@ -1775,7 +1775,7 @@ export class JobTaskForEachTaskTaskNewClusterClusterLogConfS3OutputReference ext
 }
 export interface JobTaskForEachTaskTaskNewClusterClusterLogConfVolumes {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#destination Job#destination}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#destination Job#destination}
   */
   readonly destination: string;
 }
@@ -1783,7 +1783,7 @@ export interface JobTaskForEachTaskTaskNewClusterClusterLogConfVolumes {
 export function jobTaskForEachTaskTaskNewClusterClusterLogConfVolumesToTerraform(struct?: JobTaskForEachTaskTaskNewClusterClusterLogConfVolumesOutputReference | JobTaskForEachTaskTaskNewClusterClusterLogConfVolumes): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     destination: cdktn.stringToTerraform(struct!.destination),
@@ -1794,7 +1794,7 @@ export function jobTaskForEachTaskTaskNewClusterClusterLogConfVolumesToTerraform
 export function jobTaskForEachTaskTaskNewClusterClusterLogConfVolumesToHclTerraform(struct?: JobTaskForEachTaskTaskNewClusterClusterLogConfVolumesOutputReference | JobTaskForEachTaskTaskNewClusterClusterLogConfVolumes): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     destination: {
@@ -1858,19 +1858,19 @@ export interface JobTaskForEachTaskTaskNewClusterClusterLogConf {
   /**
   * dbfs block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#dbfs Job#dbfs}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#dbfs Job#dbfs}
   */
   readonly dbfs?: JobTaskForEachTaskTaskNewClusterClusterLogConfDbfs;
   /**
   * s3 block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#s3 Job#s3}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#s3 Job#s3}
   */
   readonly s3?: JobTaskForEachTaskTaskNewClusterClusterLogConfS3;
   /**
   * volumes block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#volumes Job#volumes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#volumes Job#volumes}
   */
   readonly volumes?: JobTaskForEachTaskTaskNewClusterClusterLogConfVolumes;
 }
@@ -1878,7 +1878,7 @@ export interface JobTaskForEachTaskTaskNewClusterClusterLogConf {
 export function jobTaskForEachTaskTaskNewClusterClusterLogConfToTerraform(struct?: JobTaskForEachTaskTaskNewClusterClusterLogConfOutputReference | JobTaskForEachTaskTaskNewClusterClusterLogConf): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     dbfs: jobTaskForEachTaskTaskNewClusterClusterLogConfDbfsToTerraform(struct!.dbfs),
@@ -1891,7 +1891,7 @@ export function jobTaskForEachTaskTaskNewClusterClusterLogConfToTerraform(struct
 export function jobTaskForEachTaskTaskNewClusterClusterLogConfToHclTerraform(struct?: JobTaskForEachTaskTaskNewClusterClusterLogConfOutputReference | JobTaskForEachTaskTaskNewClusterClusterLogConf): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     dbfs: {
@@ -2012,11 +2012,11 @@ export class JobTaskForEachTaskTaskNewClusterClusterLogConfOutputReference exten
 }
 export interface JobTaskForEachTaskTaskNewClusterClusterMountInfoNetworkFilesystemInfo {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#mount_options Job#mount_options}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#mount_options Job#mount_options}
   */
   readonly mountOptions?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#server_address Job#server_address}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#server_address Job#server_address}
   */
   readonly serverAddress: string;
 }
@@ -2024,7 +2024,7 @@ export interface JobTaskForEachTaskTaskNewClusterClusterMountInfoNetworkFilesyst
 export function jobTaskForEachTaskTaskNewClusterClusterMountInfoNetworkFilesystemInfoToTerraform(struct?: JobTaskForEachTaskTaskNewClusterClusterMountInfoNetworkFilesystemInfoOutputReference | JobTaskForEachTaskTaskNewClusterClusterMountInfoNetworkFilesystemInfo): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     mount_options: cdktn.stringToTerraform(struct!.mountOptions),
@@ -2036,7 +2036,7 @@ export function jobTaskForEachTaskTaskNewClusterClusterMountInfoNetworkFilesyste
 export function jobTaskForEachTaskTaskNewClusterClusterMountInfoNetworkFilesystemInfoToHclTerraform(struct?: JobTaskForEachTaskTaskNewClusterClusterMountInfoNetworkFilesystemInfoOutputReference | JobTaskForEachTaskTaskNewClusterClusterMountInfoNetworkFilesystemInfo): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     mount_options: {
@@ -2126,17 +2126,17 @@ export class JobTaskForEachTaskTaskNewClusterClusterMountInfoNetworkFilesystemIn
 }
 export interface JobTaskForEachTaskTaskNewClusterClusterMountInfo {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#local_mount_dir_path Job#local_mount_dir_path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#local_mount_dir_path Job#local_mount_dir_path}
   */
   readonly localMountDirPath: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#remote_mount_dir_path Job#remote_mount_dir_path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#remote_mount_dir_path Job#remote_mount_dir_path}
   */
   readonly remoteMountDirPath?: string;
   /**
   * network_filesystem_info block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#network_filesystem_info Job#network_filesystem_info}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#network_filesystem_info Job#network_filesystem_info}
   */
   readonly networkFilesystemInfo: JobTaskForEachTaskTaskNewClusterClusterMountInfoNetworkFilesystemInfo;
 }
@@ -2144,7 +2144,7 @@ export interface JobTaskForEachTaskTaskNewClusterClusterMountInfo {
 export function jobTaskForEachTaskTaskNewClusterClusterMountInfoToTerraform(struct?: JobTaskForEachTaskTaskNewClusterClusterMountInfo | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     local_mount_dir_path: cdktn.stringToTerraform(struct!.localMountDirPath),
@@ -2157,7 +2157,7 @@ export function jobTaskForEachTaskTaskNewClusterClusterMountInfoToTerraform(stru
 export function jobTaskForEachTaskTaskNewClusterClusterMountInfoToHclTerraform(struct?: JobTaskForEachTaskTaskNewClusterClusterMountInfo | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     local_mount_dir_path: {
@@ -2304,11 +2304,11 @@ export class JobTaskForEachTaskTaskNewClusterClusterMountInfoList extends cdktn.
 }
 export interface JobTaskForEachTaskTaskNewClusterDockerImageBasicAuth {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#password Job#password}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#password Job#password}
   */
   readonly password: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#username Job#username}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#username Job#username}
   */
   readonly username: string;
 }
@@ -2316,7 +2316,7 @@ export interface JobTaskForEachTaskTaskNewClusterDockerImageBasicAuth {
 export function jobTaskForEachTaskTaskNewClusterDockerImageBasicAuthToTerraform(struct?: JobTaskForEachTaskTaskNewClusterDockerImageBasicAuthOutputReference | JobTaskForEachTaskTaskNewClusterDockerImageBasicAuth): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     password: cdktn.stringToTerraform(struct!.password),
@@ -2328,7 +2328,7 @@ export function jobTaskForEachTaskTaskNewClusterDockerImageBasicAuthToTerraform(
 export function jobTaskForEachTaskTaskNewClusterDockerImageBasicAuthToHclTerraform(struct?: JobTaskForEachTaskTaskNewClusterDockerImageBasicAuthOutputReference | JobTaskForEachTaskTaskNewClusterDockerImageBasicAuth): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     password: {
@@ -2415,13 +2415,13 @@ export class JobTaskForEachTaskTaskNewClusterDockerImageBasicAuthOutputReference
 }
 export interface JobTaskForEachTaskTaskNewClusterDockerImage {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#url Job#url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#url Job#url}
   */
   readonly url: string;
   /**
   * basic_auth block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#basic_auth Job#basic_auth}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#basic_auth Job#basic_auth}
   */
   readonly basicAuth?: JobTaskForEachTaskTaskNewClusterDockerImageBasicAuth;
 }
@@ -2429,7 +2429,7 @@ export interface JobTaskForEachTaskTaskNewClusterDockerImage {
 export function jobTaskForEachTaskTaskNewClusterDockerImageToTerraform(struct?: JobTaskForEachTaskTaskNewClusterDockerImageOutputReference | JobTaskForEachTaskTaskNewClusterDockerImage): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     url: cdktn.stringToTerraform(struct!.url),
@@ -2441,7 +2441,7 @@ export function jobTaskForEachTaskTaskNewClusterDockerImageToTerraform(struct?: 
 export function jobTaskForEachTaskTaskNewClusterDockerImageToHclTerraform(struct?: JobTaskForEachTaskTaskNewClusterDockerImageOutputReference | JobTaskForEachTaskTaskNewClusterDockerImage): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     url: {
@@ -2531,7 +2531,7 @@ export class JobTaskForEachTaskTaskNewClusterDockerImageOutputReference extends 
 }
 export interface JobTaskForEachTaskTaskNewClusterDriverNodeTypeFlexibility {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#alternate_node_type_ids Job#alternate_node_type_ids}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#alternate_node_type_ids Job#alternate_node_type_ids}
   */
   readonly alternateNodeTypeIds?: string[];
 }
@@ -2539,7 +2539,7 @@ export interface JobTaskForEachTaskTaskNewClusterDriverNodeTypeFlexibility {
 export function jobTaskForEachTaskTaskNewClusterDriverNodeTypeFlexibilityToTerraform(struct?: JobTaskForEachTaskTaskNewClusterDriverNodeTypeFlexibilityOutputReference | JobTaskForEachTaskTaskNewClusterDriverNodeTypeFlexibility): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     alternate_node_type_ids: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.alternateNodeTypeIds),
@@ -2550,7 +2550,7 @@ export function jobTaskForEachTaskTaskNewClusterDriverNodeTypeFlexibilityToTerra
 export function jobTaskForEachTaskTaskNewClusterDriverNodeTypeFlexibilityToHclTerraform(struct?: JobTaskForEachTaskTaskNewClusterDriverNodeTypeFlexibilityOutputReference | JobTaskForEachTaskTaskNewClusterDriverNodeTypeFlexibility): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     alternate_node_type_ids: {
@@ -2615,35 +2615,35 @@ export class JobTaskForEachTaskTaskNewClusterDriverNodeTypeFlexibilityOutputRefe
 }
 export interface JobTaskForEachTaskTaskNewClusterGcpAttributes {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#availability Job#availability}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#availability Job#availability}
   */
   readonly availability?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#boot_disk_size Job#boot_disk_size}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#boot_disk_size Job#boot_disk_size}
   */
   readonly bootDiskSize?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#confidential_compute_type Job#confidential_compute_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#confidential_compute_type Job#confidential_compute_type}
   */
   readonly confidentialComputeType?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#first_on_demand Job#first_on_demand}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#first_on_demand Job#first_on_demand}
   */
   readonly firstOnDemand?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#google_service_account Job#google_service_account}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#google_service_account Job#google_service_account}
   */
   readonly googleServiceAccount?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#local_ssd_count Job#local_ssd_count}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#local_ssd_count Job#local_ssd_count}
   */
   readonly localSsdCount?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#use_preemptible_executors Job#use_preemptible_executors}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#use_preemptible_executors Job#use_preemptible_executors}
   */
   readonly usePreemptibleExecutors?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#zone_id Job#zone_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#zone_id Job#zone_id}
   */
   readonly zoneId?: string;
 }
@@ -2651,7 +2651,7 @@ export interface JobTaskForEachTaskTaskNewClusterGcpAttributes {
 export function jobTaskForEachTaskTaskNewClusterGcpAttributesToTerraform(struct?: JobTaskForEachTaskTaskNewClusterGcpAttributesOutputReference | JobTaskForEachTaskTaskNewClusterGcpAttributes): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     availability: cdktn.stringToTerraform(struct!.availability),
@@ -2669,7 +2669,7 @@ export function jobTaskForEachTaskTaskNewClusterGcpAttributesToTerraform(struct?
 export function jobTaskForEachTaskTaskNewClusterGcpAttributesToHclTerraform(struct?: JobTaskForEachTaskTaskNewClusterGcpAttributesOutputReference | JobTaskForEachTaskTaskNewClusterGcpAttributes): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     availability: {
@@ -2930,7 +2930,7 @@ export class JobTaskForEachTaskTaskNewClusterGcpAttributesOutputReference extend
 }
 export interface JobTaskForEachTaskTaskNewClusterInitScriptsAbfss {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#destination Job#destination}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#destination Job#destination}
   */
   readonly destination: string;
 }
@@ -2938,7 +2938,7 @@ export interface JobTaskForEachTaskTaskNewClusterInitScriptsAbfss {
 export function jobTaskForEachTaskTaskNewClusterInitScriptsAbfssToTerraform(struct?: JobTaskForEachTaskTaskNewClusterInitScriptsAbfssOutputReference | JobTaskForEachTaskTaskNewClusterInitScriptsAbfss): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     destination: cdktn.stringToTerraform(struct!.destination),
@@ -2949,7 +2949,7 @@ export function jobTaskForEachTaskTaskNewClusterInitScriptsAbfssToTerraform(stru
 export function jobTaskForEachTaskTaskNewClusterInitScriptsAbfssToHclTerraform(struct?: JobTaskForEachTaskTaskNewClusterInitScriptsAbfssOutputReference | JobTaskForEachTaskTaskNewClusterInitScriptsAbfss): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     destination: {
@@ -3011,7 +3011,7 @@ export class JobTaskForEachTaskTaskNewClusterInitScriptsAbfssOutputReference ext
 }
 export interface JobTaskForEachTaskTaskNewClusterInitScriptsDbfs {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#destination Job#destination}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#destination Job#destination}
   */
   readonly destination: string;
 }
@@ -3019,7 +3019,7 @@ export interface JobTaskForEachTaskTaskNewClusterInitScriptsDbfs {
 export function jobTaskForEachTaskTaskNewClusterInitScriptsDbfsToTerraform(struct?: JobTaskForEachTaskTaskNewClusterInitScriptsDbfsOutputReference | JobTaskForEachTaskTaskNewClusterInitScriptsDbfs): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     destination: cdktn.stringToTerraform(struct!.destination),
@@ -3030,7 +3030,7 @@ export function jobTaskForEachTaskTaskNewClusterInitScriptsDbfsToTerraform(struc
 export function jobTaskForEachTaskTaskNewClusterInitScriptsDbfsToHclTerraform(struct?: JobTaskForEachTaskTaskNewClusterInitScriptsDbfsOutputReference | JobTaskForEachTaskTaskNewClusterInitScriptsDbfs): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     destination: {
@@ -3092,7 +3092,7 @@ export class JobTaskForEachTaskTaskNewClusterInitScriptsDbfsOutputReference exte
 }
 export interface JobTaskForEachTaskTaskNewClusterInitScriptsFile {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#destination Job#destination}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#destination Job#destination}
   */
   readonly destination: string;
 }
@@ -3100,7 +3100,7 @@ export interface JobTaskForEachTaskTaskNewClusterInitScriptsFile {
 export function jobTaskForEachTaskTaskNewClusterInitScriptsFileToTerraform(struct?: JobTaskForEachTaskTaskNewClusterInitScriptsFileOutputReference | JobTaskForEachTaskTaskNewClusterInitScriptsFile): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     destination: cdktn.stringToTerraform(struct!.destination),
@@ -3111,7 +3111,7 @@ export function jobTaskForEachTaskTaskNewClusterInitScriptsFileToTerraform(struc
 export function jobTaskForEachTaskTaskNewClusterInitScriptsFileToHclTerraform(struct?: JobTaskForEachTaskTaskNewClusterInitScriptsFileOutputReference | JobTaskForEachTaskTaskNewClusterInitScriptsFile): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     destination: {
@@ -3173,7 +3173,7 @@ export class JobTaskForEachTaskTaskNewClusterInitScriptsFileOutputReference exte
 }
 export interface JobTaskForEachTaskTaskNewClusterInitScriptsGcs {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#destination Job#destination}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#destination Job#destination}
   */
   readonly destination: string;
 }
@@ -3181,7 +3181,7 @@ export interface JobTaskForEachTaskTaskNewClusterInitScriptsGcs {
 export function jobTaskForEachTaskTaskNewClusterInitScriptsGcsToTerraform(struct?: JobTaskForEachTaskTaskNewClusterInitScriptsGcsOutputReference | JobTaskForEachTaskTaskNewClusterInitScriptsGcs): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     destination: cdktn.stringToTerraform(struct!.destination),
@@ -3192,7 +3192,7 @@ export function jobTaskForEachTaskTaskNewClusterInitScriptsGcsToTerraform(struct
 export function jobTaskForEachTaskTaskNewClusterInitScriptsGcsToHclTerraform(struct?: JobTaskForEachTaskTaskNewClusterInitScriptsGcsOutputReference | JobTaskForEachTaskTaskNewClusterInitScriptsGcs): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     destination: {
@@ -3254,31 +3254,31 @@ export class JobTaskForEachTaskTaskNewClusterInitScriptsGcsOutputReference exten
 }
 export interface JobTaskForEachTaskTaskNewClusterInitScriptsS3 {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#canned_acl Job#canned_acl}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#canned_acl Job#canned_acl}
   */
   readonly cannedAcl?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#destination Job#destination}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#destination Job#destination}
   */
   readonly destination: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#enable_encryption Job#enable_encryption}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#enable_encryption Job#enable_encryption}
   */
   readonly enableEncryption?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#encryption_type Job#encryption_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#encryption_type Job#encryption_type}
   */
   readonly encryptionType?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#endpoint Job#endpoint}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#endpoint Job#endpoint}
   */
   readonly endpoint?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#kms_key Job#kms_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#kms_key Job#kms_key}
   */
   readonly kmsKey?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#region Job#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#region Job#region}
   */
   readonly region?: string;
 }
@@ -3286,7 +3286,7 @@ export interface JobTaskForEachTaskTaskNewClusterInitScriptsS3 {
 export function jobTaskForEachTaskTaskNewClusterInitScriptsS3ToTerraform(struct?: JobTaskForEachTaskTaskNewClusterInitScriptsS3OutputReference | JobTaskForEachTaskTaskNewClusterInitScriptsS3): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     canned_acl: cdktn.stringToTerraform(struct!.cannedAcl),
@@ -3303,7 +3303,7 @@ export function jobTaskForEachTaskTaskNewClusterInitScriptsS3ToTerraform(struct?
 export function jobTaskForEachTaskTaskNewClusterInitScriptsS3ToHclTerraform(struct?: JobTaskForEachTaskTaskNewClusterInitScriptsS3OutputReference | JobTaskForEachTaskTaskNewClusterInitScriptsS3): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     canned_acl: {
@@ -3533,7 +3533,7 @@ export class JobTaskForEachTaskTaskNewClusterInitScriptsS3OutputReference extend
 }
 export interface JobTaskForEachTaskTaskNewClusterInitScriptsVolumes {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#destination Job#destination}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#destination Job#destination}
   */
   readonly destination: string;
 }
@@ -3541,7 +3541,7 @@ export interface JobTaskForEachTaskTaskNewClusterInitScriptsVolumes {
 export function jobTaskForEachTaskTaskNewClusterInitScriptsVolumesToTerraform(struct?: JobTaskForEachTaskTaskNewClusterInitScriptsVolumesOutputReference | JobTaskForEachTaskTaskNewClusterInitScriptsVolumes): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     destination: cdktn.stringToTerraform(struct!.destination),
@@ -3552,7 +3552,7 @@ export function jobTaskForEachTaskTaskNewClusterInitScriptsVolumesToTerraform(st
 export function jobTaskForEachTaskTaskNewClusterInitScriptsVolumesToHclTerraform(struct?: JobTaskForEachTaskTaskNewClusterInitScriptsVolumesOutputReference | JobTaskForEachTaskTaskNewClusterInitScriptsVolumes): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     destination: {
@@ -3614,7 +3614,7 @@ export class JobTaskForEachTaskTaskNewClusterInitScriptsVolumesOutputReference e
 }
 export interface JobTaskForEachTaskTaskNewClusterInitScriptsWorkspace {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#destination Job#destination}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#destination Job#destination}
   */
   readonly destination: string;
 }
@@ -3622,7 +3622,7 @@ export interface JobTaskForEachTaskTaskNewClusterInitScriptsWorkspace {
 export function jobTaskForEachTaskTaskNewClusterInitScriptsWorkspaceToTerraform(struct?: JobTaskForEachTaskTaskNewClusterInitScriptsWorkspaceOutputReference | JobTaskForEachTaskTaskNewClusterInitScriptsWorkspace): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     destination: cdktn.stringToTerraform(struct!.destination),
@@ -3633,7 +3633,7 @@ export function jobTaskForEachTaskTaskNewClusterInitScriptsWorkspaceToTerraform(
 export function jobTaskForEachTaskTaskNewClusterInitScriptsWorkspaceToHclTerraform(struct?: JobTaskForEachTaskTaskNewClusterInitScriptsWorkspaceOutputReference | JobTaskForEachTaskTaskNewClusterInitScriptsWorkspace): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     destination: {
@@ -3697,43 +3697,43 @@ export interface JobTaskForEachTaskTaskNewClusterInitScripts {
   /**
   * abfss block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#abfss Job#abfss}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#abfss Job#abfss}
   */
   readonly abfss?: JobTaskForEachTaskTaskNewClusterInitScriptsAbfss;
   /**
   * dbfs block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#dbfs Job#dbfs}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#dbfs Job#dbfs}
   */
   readonly dbfs?: JobTaskForEachTaskTaskNewClusterInitScriptsDbfs;
   /**
   * file block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#file Job#file}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#file Job#file}
   */
   readonly file?: JobTaskForEachTaskTaskNewClusterInitScriptsFile;
   /**
   * gcs block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#gcs Job#gcs}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#gcs Job#gcs}
   */
   readonly gcs?: JobTaskForEachTaskTaskNewClusterInitScriptsGcs;
   /**
   * s3 block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#s3 Job#s3}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#s3 Job#s3}
   */
   readonly s3?: JobTaskForEachTaskTaskNewClusterInitScriptsS3;
   /**
   * volumes block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#volumes Job#volumes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#volumes Job#volumes}
   */
   readonly volumes?: JobTaskForEachTaskTaskNewClusterInitScriptsVolumes;
   /**
   * workspace block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#workspace Job#workspace}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#workspace Job#workspace}
   */
   readonly workspace?: JobTaskForEachTaskTaskNewClusterInitScriptsWorkspace;
 }
@@ -3741,7 +3741,7 @@ export interface JobTaskForEachTaskTaskNewClusterInitScripts {
 export function jobTaskForEachTaskTaskNewClusterInitScriptsToTerraform(struct?: JobTaskForEachTaskTaskNewClusterInitScripts | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     abfss: jobTaskForEachTaskTaskNewClusterInitScriptsAbfssToTerraform(struct!.abfss),
@@ -3758,7 +3758,7 @@ export function jobTaskForEachTaskTaskNewClusterInitScriptsToTerraform(struct?: 
 export function jobTaskForEachTaskTaskNewClusterInitScriptsToHclTerraform(struct?: JobTaskForEachTaskTaskNewClusterInitScripts | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     abfss: {
@@ -4023,11 +4023,11 @@ export class JobTaskForEachTaskTaskNewClusterInitScriptsList extends cdktn.Compl
 }
 export interface JobTaskForEachTaskTaskNewClusterLibraryCran {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#package Job#package}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#package Job#package}
   */
   readonly package: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#repo Job#repo}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#repo Job#repo}
   */
   readonly repo?: string;
 }
@@ -4035,7 +4035,7 @@ export interface JobTaskForEachTaskTaskNewClusterLibraryCran {
 export function jobTaskForEachTaskTaskNewClusterLibraryCranToTerraform(struct?: JobTaskForEachTaskTaskNewClusterLibraryCranOutputReference | JobTaskForEachTaskTaskNewClusterLibraryCran): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     package: cdktn.stringToTerraform(struct!.package),
@@ -4047,7 +4047,7 @@ export function jobTaskForEachTaskTaskNewClusterLibraryCranToTerraform(struct?: 
 export function jobTaskForEachTaskTaskNewClusterLibraryCranToHclTerraform(struct?: JobTaskForEachTaskTaskNewClusterLibraryCranOutputReference | JobTaskForEachTaskTaskNewClusterLibraryCran): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     package: {
@@ -4137,15 +4137,15 @@ export class JobTaskForEachTaskTaskNewClusterLibraryCranOutputReference extends 
 }
 export interface JobTaskForEachTaskTaskNewClusterLibraryMaven {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#coordinates Job#coordinates}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#coordinates Job#coordinates}
   */
   readonly coordinates: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#exclusions Job#exclusions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#exclusions Job#exclusions}
   */
   readonly exclusions?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#repo Job#repo}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#repo Job#repo}
   */
   readonly repo?: string;
 }
@@ -4153,7 +4153,7 @@ export interface JobTaskForEachTaskTaskNewClusterLibraryMaven {
 export function jobTaskForEachTaskTaskNewClusterLibraryMavenToTerraform(struct?: JobTaskForEachTaskTaskNewClusterLibraryMavenOutputReference | JobTaskForEachTaskTaskNewClusterLibraryMaven): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     coordinates: cdktn.stringToTerraform(struct!.coordinates),
@@ -4166,7 +4166,7 @@ export function jobTaskForEachTaskTaskNewClusterLibraryMavenToTerraform(struct?:
 export function jobTaskForEachTaskTaskNewClusterLibraryMavenToHclTerraform(struct?: JobTaskForEachTaskTaskNewClusterLibraryMavenOutputReference | JobTaskForEachTaskTaskNewClusterLibraryMaven): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     coordinates: {
@@ -4284,7 +4284,7 @@ export class JobTaskForEachTaskTaskNewClusterLibraryMavenOutputReference extends
 }
 export interface JobTaskForEachTaskTaskNewClusterLibraryProviderConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#workspace_id Job#workspace_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#workspace_id Job#workspace_id}
   */
   readonly workspaceId?: string;
 }
@@ -4292,7 +4292,7 @@ export interface JobTaskForEachTaskTaskNewClusterLibraryProviderConfig {
 export function jobTaskForEachTaskTaskNewClusterLibraryProviderConfigToTerraform(struct?: JobTaskForEachTaskTaskNewClusterLibraryProviderConfigOutputReference | JobTaskForEachTaskTaskNewClusterLibraryProviderConfig): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     workspace_id: cdktn.stringToTerraform(struct!.workspaceId),
@@ -4303,7 +4303,7 @@ export function jobTaskForEachTaskTaskNewClusterLibraryProviderConfigToTerraform
 export function jobTaskForEachTaskTaskNewClusterLibraryProviderConfigToHclTerraform(struct?: JobTaskForEachTaskTaskNewClusterLibraryProviderConfigOutputReference | JobTaskForEachTaskTaskNewClusterLibraryProviderConfig): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     workspace_id: {
@@ -4368,11 +4368,11 @@ export class JobTaskForEachTaskTaskNewClusterLibraryProviderConfigOutputReferenc
 }
 export interface JobTaskForEachTaskTaskNewClusterLibraryPypi {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#package Job#package}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#package Job#package}
   */
   readonly package: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#repo Job#repo}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#repo Job#repo}
   */
   readonly repo?: string;
 }
@@ -4380,7 +4380,7 @@ export interface JobTaskForEachTaskTaskNewClusterLibraryPypi {
 export function jobTaskForEachTaskTaskNewClusterLibraryPypiToTerraform(struct?: JobTaskForEachTaskTaskNewClusterLibraryPypiOutputReference | JobTaskForEachTaskTaskNewClusterLibraryPypi): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     package: cdktn.stringToTerraform(struct!.package),
@@ -4392,7 +4392,7 @@ export function jobTaskForEachTaskTaskNewClusterLibraryPypiToTerraform(struct?: 
 export function jobTaskForEachTaskTaskNewClusterLibraryPypiToHclTerraform(struct?: JobTaskForEachTaskTaskNewClusterLibraryPypiOutputReference | JobTaskForEachTaskTaskNewClusterLibraryPypi): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     package: {
@@ -4482,43 +4482,43 @@ export class JobTaskForEachTaskTaskNewClusterLibraryPypiOutputReference extends 
 }
 export interface JobTaskForEachTaskTaskNewClusterLibrary {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#egg Job#egg}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#egg Job#egg}
   */
   readonly egg?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#jar Job#jar}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#jar Job#jar}
   */
   readonly jar?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#requirements Job#requirements}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#requirements Job#requirements}
   */
   readonly requirements?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#whl Job#whl}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#whl Job#whl}
   */
   readonly whl?: string;
   /**
   * cran block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#cran Job#cran}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#cran Job#cran}
   */
   readonly cran?: JobTaskForEachTaskTaskNewClusterLibraryCran;
   /**
   * maven block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#maven Job#maven}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#maven Job#maven}
   */
   readonly maven?: JobTaskForEachTaskTaskNewClusterLibraryMaven;
   /**
   * provider_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#provider_config Job#provider_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#provider_config Job#provider_config}
   */
   readonly providerConfig?: JobTaskForEachTaskTaskNewClusterLibraryProviderConfig;
   /**
   * pypi block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#pypi Job#pypi}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#pypi Job#pypi}
   */
   readonly pypi?: JobTaskForEachTaskTaskNewClusterLibraryPypi;
 }
@@ -4526,7 +4526,7 @@ export interface JobTaskForEachTaskTaskNewClusterLibrary {
 export function jobTaskForEachTaskTaskNewClusterLibraryToTerraform(struct?: JobTaskForEachTaskTaskNewClusterLibrary | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     egg: cdktn.stringToTerraform(struct!.egg),
@@ -4544,7 +4544,7 @@ export function jobTaskForEachTaskTaskNewClusterLibraryToTerraform(struct?: JobT
 export function jobTaskForEachTaskTaskNewClusterLibraryToHclTerraform(struct?: JobTaskForEachTaskTaskNewClusterLibrary | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     egg: {
@@ -4837,7 +4837,7 @@ export class JobTaskForEachTaskTaskNewClusterLibraryList extends cdktn.ComplexLi
 }
 export interface JobTaskForEachTaskTaskNewClusterProviderConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#workspace_id Job#workspace_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#workspace_id Job#workspace_id}
   */
   readonly workspaceId?: string;
 }
@@ -4845,7 +4845,7 @@ export interface JobTaskForEachTaskTaskNewClusterProviderConfig {
 export function jobTaskForEachTaskTaskNewClusterProviderConfigToTerraform(struct?: JobTaskForEachTaskTaskNewClusterProviderConfigOutputReference | JobTaskForEachTaskTaskNewClusterProviderConfig): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     workspace_id: cdktn.stringToTerraform(struct!.workspaceId),
@@ -4856,7 +4856,7 @@ export function jobTaskForEachTaskTaskNewClusterProviderConfigToTerraform(struct
 export function jobTaskForEachTaskTaskNewClusterProviderConfigToHclTerraform(struct?: JobTaskForEachTaskTaskNewClusterProviderConfigOutputReference | JobTaskForEachTaskTaskNewClusterProviderConfig): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     workspace_id: {
@@ -4921,7 +4921,7 @@ export class JobTaskForEachTaskTaskNewClusterProviderConfigOutputReference exten
 }
 export interface JobTaskForEachTaskTaskNewClusterWorkerNodeTypeFlexibility {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#alternate_node_type_ids Job#alternate_node_type_ids}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#alternate_node_type_ids Job#alternate_node_type_ids}
   */
   readonly alternateNodeTypeIds?: string[];
 }
@@ -4929,7 +4929,7 @@ export interface JobTaskForEachTaskTaskNewClusterWorkerNodeTypeFlexibility {
 export function jobTaskForEachTaskTaskNewClusterWorkerNodeTypeFlexibilityToTerraform(struct?: JobTaskForEachTaskTaskNewClusterWorkerNodeTypeFlexibilityOutputReference | JobTaskForEachTaskTaskNewClusterWorkerNodeTypeFlexibility): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     alternate_node_type_ids: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.alternateNodeTypeIds),
@@ -4940,7 +4940,7 @@ export function jobTaskForEachTaskTaskNewClusterWorkerNodeTypeFlexibilityToTerra
 export function jobTaskForEachTaskTaskNewClusterWorkerNodeTypeFlexibilityToHclTerraform(struct?: JobTaskForEachTaskTaskNewClusterWorkerNodeTypeFlexibilityOutputReference | JobTaskForEachTaskTaskNewClusterWorkerNodeTypeFlexibility): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     alternate_node_type_ids: {
@@ -5005,11 +5005,11 @@ export class JobTaskForEachTaskTaskNewClusterWorkerNodeTypeFlexibilityOutputRefe
 }
 export interface JobTaskForEachTaskTaskNewClusterWorkloadTypeClients {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#jobs Job#jobs}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#jobs Job#jobs}
   */
   readonly jobs?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#notebooks Job#notebooks}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#notebooks Job#notebooks}
   */
   readonly notebooks?: boolean | cdktn.IResolvable;
 }
@@ -5017,7 +5017,7 @@ export interface JobTaskForEachTaskTaskNewClusterWorkloadTypeClients {
 export function jobTaskForEachTaskTaskNewClusterWorkloadTypeClientsToTerraform(struct?: JobTaskForEachTaskTaskNewClusterWorkloadTypeClientsOutputReference | JobTaskForEachTaskTaskNewClusterWorkloadTypeClients): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     jobs: cdktn.booleanToTerraform(struct!.jobs),
@@ -5029,7 +5029,7 @@ export function jobTaskForEachTaskTaskNewClusterWorkloadTypeClientsToTerraform(s
 export function jobTaskForEachTaskTaskNewClusterWorkloadTypeClientsToHclTerraform(struct?: JobTaskForEachTaskTaskNewClusterWorkloadTypeClientsOutputReference | JobTaskForEachTaskTaskNewClusterWorkloadTypeClients): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     jobs: {
@@ -5124,7 +5124,7 @@ export interface JobTaskForEachTaskTaskNewClusterWorkloadType {
   /**
   * clients block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#clients Job#clients}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#clients Job#clients}
   */
   readonly clients: JobTaskForEachTaskTaskNewClusterWorkloadTypeClients;
 }
@@ -5132,7 +5132,7 @@ export interface JobTaskForEachTaskTaskNewClusterWorkloadType {
 export function jobTaskForEachTaskTaskNewClusterWorkloadTypeToTerraform(struct?: JobTaskForEachTaskTaskNewClusterWorkloadTypeOutputReference | JobTaskForEachTaskTaskNewClusterWorkloadType): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     clients: jobTaskForEachTaskTaskNewClusterWorkloadTypeClientsToTerraform(struct!.clients),
@@ -5143,7 +5143,7 @@ export function jobTaskForEachTaskTaskNewClusterWorkloadTypeToTerraform(struct?:
 export function jobTaskForEachTaskTaskNewClusterWorkloadTypeToHclTerraform(struct?: JobTaskForEachTaskTaskNewClusterWorkloadTypeOutputReference | JobTaskForEachTaskTaskNewClusterWorkloadType): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     clients: {
@@ -5205,181 +5205,181 @@ export class JobTaskForEachTaskTaskNewClusterWorkloadTypeOutputReference extends
 }
 export interface JobTaskForEachTaskTaskNewCluster {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#apply_policy_default_values Job#apply_policy_default_values}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#apply_policy_default_values Job#apply_policy_default_values}
   */
   readonly applyPolicyDefaultValues?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#cluster_id Job#cluster_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#cluster_id Job#cluster_id}
   */
   readonly clusterId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#cluster_name Job#cluster_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#cluster_name Job#cluster_name}
   */
   readonly clusterName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#custom_tags Job#custom_tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#custom_tags Job#custom_tags}
   */
   readonly customTags?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#data_security_mode Job#data_security_mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#data_security_mode Job#data_security_mode}
   */
   readonly dataSecurityMode?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#driver_instance_pool_id Job#driver_instance_pool_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#driver_instance_pool_id Job#driver_instance_pool_id}
   */
   readonly driverInstancePoolId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#driver_node_type_id Job#driver_node_type_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#driver_node_type_id Job#driver_node_type_id}
   */
   readonly driverNodeTypeId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#enable_elastic_disk Job#enable_elastic_disk}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#enable_elastic_disk Job#enable_elastic_disk}
   */
   readonly enableElasticDisk?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#enable_local_disk_encryption Job#enable_local_disk_encryption}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#enable_local_disk_encryption Job#enable_local_disk_encryption}
   */
   readonly enableLocalDiskEncryption?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#idempotency_token Job#idempotency_token}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#idempotency_token Job#idempotency_token}
   */
   readonly idempotencyToken?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#instance_pool_id Job#instance_pool_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#instance_pool_id Job#instance_pool_id}
   */
   readonly instancePoolId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#is_single_node Job#is_single_node}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#is_single_node Job#is_single_node}
   */
   readonly isSingleNode?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#kind Job#kind}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#kind Job#kind}
   */
   readonly kind?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#node_type_id Job#node_type_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#node_type_id Job#node_type_id}
   */
   readonly nodeTypeId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#num_workers Job#num_workers}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#num_workers Job#num_workers}
   */
   readonly numWorkers?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#policy_id Job#policy_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#policy_id Job#policy_id}
   */
   readonly policyId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#remote_disk_throughput Job#remote_disk_throughput}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#remote_disk_throughput Job#remote_disk_throughput}
   */
   readonly remoteDiskThroughput?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#runtime_engine Job#runtime_engine}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#runtime_engine Job#runtime_engine}
   */
   readonly runtimeEngine?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#single_user_name Job#single_user_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#single_user_name Job#single_user_name}
   */
   readonly singleUserName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#spark_conf Job#spark_conf}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#spark_conf Job#spark_conf}
   */
   readonly sparkConf?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#spark_env_vars Job#spark_env_vars}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#spark_env_vars Job#spark_env_vars}
   */
   readonly sparkEnvVars?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#spark_version Job#spark_version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#spark_version Job#spark_version}
   */
   readonly sparkVersion?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#ssh_public_keys Job#ssh_public_keys}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#ssh_public_keys Job#ssh_public_keys}
   */
   readonly sshPublicKeys?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#total_initial_remote_disk_size Job#total_initial_remote_disk_size}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#total_initial_remote_disk_size Job#total_initial_remote_disk_size}
   */
   readonly totalInitialRemoteDiskSize?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#use_ml_runtime Job#use_ml_runtime}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#use_ml_runtime Job#use_ml_runtime}
   */
   readonly useMlRuntime?: boolean | cdktn.IResolvable;
   /**
   * autoscale block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#autoscale Job#autoscale}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#autoscale Job#autoscale}
   */
   readonly autoscale?: JobTaskForEachTaskTaskNewClusterAutoscale;
   /**
   * aws_attributes block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#aws_attributes Job#aws_attributes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#aws_attributes Job#aws_attributes}
   */
   readonly awsAttributes?: JobTaskForEachTaskTaskNewClusterAwsAttributes;
   /**
   * azure_attributes block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#azure_attributes Job#azure_attributes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#azure_attributes Job#azure_attributes}
   */
   readonly azureAttributes?: JobTaskForEachTaskTaskNewClusterAzureAttributes;
   /**
   * cluster_log_conf block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#cluster_log_conf Job#cluster_log_conf}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#cluster_log_conf Job#cluster_log_conf}
   */
   readonly clusterLogConf?: JobTaskForEachTaskTaskNewClusterClusterLogConf;
   /**
   * cluster_mount_info block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#cluster_mount_info Job#cluster_mount_info}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#cluster_mount_info Job#cluster_mount_info}
   */
   readonly clusterMountInfo?: JobTaskForEachTaskTaskNewClusterClusterMountInfo[] | cdktn.IResolvable;
   /**
   * docker_image block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#docker_image Job#docker_image}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#docker_image Job#docker_image}
   */
   readonly dockerImage?: JobTaskForEachTaskTaskNewClusterDockerImage;
   /**
   * driver_node_type_flexibility block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#driver_node_type_flexibility Job#driver_node_type_flexibility}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#driver_node_type_flexibility Job#driver_node_type_flexibility}
   */
   readonly driverNodeTypeFlexibility?: JobTaskForEachTaskTaskNewClusterDriverNodeTypeFlexibility;
   /**
   * gcp_attributes block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#gcp_attributes Job#gcp_attributes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#gcp_attributes Job#gcp_attributes}
   */
   readonly gcpAttributes?: JobTaskForEachTaskTaskNewClusterGcpAttributes;
   /**
   * init_scripts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#init_scripts Job#init_scripts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#init_scripts Job#init_scripts}
   */
   readonly initScripts?: JobTaskForEachTaskTaskNewClusterInitScripts[] | cdktn.IResolvable;
   /**
   * library block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#library Job#library}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#library Job#library}
   */
   readonly library?: JobTaskForEachTaskTaskNewClusterLibrary[] | cdktn.IResolvable;
   /**
   * provider_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#provider_config Job#provider_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#provider_config Job#provider_config}
   */
   readonly providerConfig?: JobTaskForEachTaskTaskNewClusterProviderConfig;
   /**
   * worker_node_type_flexibility block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#worker_node_type_flexibility Job#worker_node_type_flexibility}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#worker_node_type_flexibility Job#worker_node_type_flexibility}
   */
   readonly workerNodeTypeFlexibility?: JobTaskForEachTaskTaskNewClusterWorkerNodeTypeFlexibility;
   /**
   * workload_type block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#workload_type Job#workload_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#workload_type Job#workload_type}
   */
   readonly workloadType?: JobTaskForEachTaskTaskNewClusterWorkloadType;
 }
@@ -5387,7 +5387,7 @@ export interface JobTaskForEachTaskTaskNewCluster {
 export function jobTaskForEachTaskTaskNewClusterToTerraform(struct?: JobTaskForEachTaskTaskNewClusterOutputReference | JobTaskForEachTaskTaskNewCluster): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     apply_policy_default_values: cdktn.booleanToTerraform(struct!.applyPolicyDefaultValues),
@@ -5435,7 +5435,7 @@ export function jobTaskForEachTaskTaskNewClusterToTerraform(struct?: JobTaskForE
 export function jobTaskForEachTaskTaskNewClusterToHclTerraform(struct?: JobTaskForEachTaskTaskNewClusterOutputReference | JobTaskForEachTaskTaskNewCluster): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     apply_policy_default_values: {
@@ -6536,19 +6536,19 @@ export class JobTaskForEachTaskTaskNewClusterOutputReference extends cdktn.Compl
 }
 export interface JobTaskForEachTaskTaskNotebookTask {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#base_parameters Job#base_parameters}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#base_parameters Job#base_parameters}
   */
   readonly baseParameters?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#notebook_path Job#notebook_path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#notebook_path Job#notebook_path}
   */
   readonly notebookPath: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#source Job#source}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#source Job#source}
   */
   readonly source?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#warehouse_id Job#warehouse_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#warehouse_id Job#warehouse_id}
   */
   readonly warehouseId?: string;
 }
@@ -6556,7 +6556,7 @@ export interface JobTaskForEachTaskTaskNotebookTask {
 export function jobTaskForEachTaskTaskNotebookTaskToTerraform(struct?: JobTaskForEachTaskTaskNotebookTaskOutputReference | JobTaskForEachTaskTaskNotebookTask): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     base_parameters: cdktn.hashMapper(cdktn.stringToTerraform)(struct!.baseParameters),
@@ -6570,7 +6570,7 @@ export function jobTaskForEachTaskTaskNotebookTaskToTerraform(struct?: JobTaskFo
 export function jobTaskForEachTaskTaskNotebookTaskToHclTerraform(struct?: JobTaskForEachTaskTaskNotebookTaskOutputReference | JobTaskForEachTaskTaskNotebookTask): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     base_parameters: {
@@ -6716,15 +6716,15 @@ export class JobTaskForEachTaskTaskNotebookTaskOutputReference extends cdktn.Com
 }
 export interface JobTaskForEachTaskTaskNotificationSettings {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#alert_on_last_attempt Job#alert_on_last_attempt}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#alert_on_last_attempt Job#alert_on_last_attempt}
   */
   readonly alertOnLastAttempt?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#no_alert_for_canceled_runs Job#no_alert_for_canceled_runs}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#no_alert_for_canceled_runs Job#no_alert_for_canceled_runs}
   */
   readonly noAlertForCanceledRuns?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#no_alert_for_skipped_runs Job#no_alert_for_skipped_runs}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#no_alert_for_skipped_runs Job#no_alert_for_skipped_runs}
   */
   readonly noAlertForSkippedRuns?: boolean | cdktn.IResolvable;
 }
@@ -6732,7 +6732,7 @@ export interface JobTaskForEachTaskTaskNotificationSettings {
 export function jobTaskForEachTaskTaskNotificationSettingsToTerraform(struct?: JobTaskForEachTaskTaskNotificationSettingsOutputReference | JobTaskForEachTaskTaskNotificationSettings): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     alert_on_last_attempt: cdktn.booleanToTerraform(struct!.alertOnLastAttempt),
@@ -6745,7 +6745,7 @@ export function jobTaskForEachTaskTaskNotificationSettingsToTerraform(struct?: J
 export function jobTaskForEachTaskTaskNotificationSettingsToHclTerraform(struct?: JobTaskForEachTaskTaskNotificationSettingsOutputReference | JobTaskForEachTaskTaskNotificationSettings): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     alert_on_last_attempt: {
@@ -6866,31 +6866,31 @@ export class JobTaskForEachTaskTaskNotificationSettingsOutputReference extends c
 }
 export interface JobTaskForEachTaskTaskPipelineTask {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#full_refresh Job#full_refresh}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#full_refresh Job#full_refresh}
   */
   readonly fullRefresh?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#full_refresh_selection Job#full_refresh_selection}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#full_refresh_selection Job#full_refresh_selection}
   */
   readonly fullRefreshSelection?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#parameters Job#parameters}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#parameters Job#parameters}
   */
   readonly parameters?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#pipeline_id Job#pipeline_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#pipeline_id Job#pipeline_id}
   */
   readonly pipelineId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#refresh_flow_selection Job#refresh_flow_selection}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#refresh_flow_selection Job#refresh_flow_selection}
   */
   readonly refreshFlowSelection?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#refresh_selection Job#refresh_selection}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#refresh_selection Job#refresh_selection}
   */
   readonly refreshSelection?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#reset_checkpoint_selection Job#reset_checkpoint_selection}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#reset_checkpoint_selection Job#reset_checkpoint_selection}
   */
   readonly resetCheckpointSelection?: string[];
 }
@@ -6898,7 +6898,7 @@ export interface JobTaskForEachTaskTaskPipelineTask {
 export function jobTaskForEachTaskTaskPipelineTaskToTerraform(struct?: JobTaskForEachTaskTaskPipelineTaskOutputReference | JobTaskForEachTaskTaskPipelineTask): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     full_refresh: cdktn.booleanToTerraform(struct!.fullRefresh),
@@ -6915,7 +6915,7 @@ export function jobTaskForEachTaskTaskPipelineTaskToTerraform(struct?: JobTaskFo
 export function jobTaskForEachTaskTaskPipelineTaskToHclTerraform(struct?: JobTaskForEachTaskTaskPipelineTaskOutputReference | JobTaskForEachTaskTaskPipelineTask): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     full_refresh: {
@@ -7145,23 +7145,23 @@ export class JobTaskForEachTaskTaskPipelineTaskOutputReference extends cdktn.Com
 }
 export interface JobTaskForEachTaskTaskPowerBiTaskPowerBiModel {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#authentication_method Job#authentication_method}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#authentication_method Job#authentication_method}
   */
   readonly authenticationMethod?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#model_name Job#model_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#model_name Job#model_name}
   */
   readonly modelName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#overwrite_existing Job#overwrite_existing}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#overwrite_existing Job#overwrite_existing}
   */
   readonly overwriteExisting?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#storage_mode Job#storage_mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#storage_mode Job#storage_mode}
   */
   readonly storageMode?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#workspace_name Job#workspace_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#workspace_name Job#workspace_name}
   */
   readonly workspaceName?: string;
 }
@@ -7169,7 +7169,7 @@ export interface JobTaskForEachTaskTaskPowerBiTaskPowerBiModel {
 export function jobTaskForEachTaskTaskPowerBiTaskPowerBiModelToTerraform(struct?: JobTaskForEachTaskTaskPowerBiTaskPowerBiModelOutputReference | JobTaskForEachTaskTaskPowerBiTaskPowerBiModel): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     authentication_method: cdktn.stringToTerraform(struct!.authenticationMethod),
@@ -7184,7 +7184,7 @@ export function jobTaskForEachTaskTaskPowerBiTaskPowerBiModelToTerraform(struct?
 export function jobTaskForEachTaskTaskPowerBiTaskPowerBiModelToHclTerraform(struct?: JobTaskForEachTaskTaskPowerBiTaskPowerBiModelOutputReference | JobTaskForEachTaskTaskPowerBiTaskPowerBiModel): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     authentication_method: {
@@ -7361,19 +7361,19 @@ export class JobTaskForEachTaskTaskPowerBiTaskPowerBiModelOutputReference extend
 }
 export interface JobTaskForEachTaskTaskPowerBiTaskTables {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#catalog Job#catalog}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#catalog Job#catalog}
   */
   readonly catalog?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#name Job#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#name Job#name}
   */
   readonly name?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#schema Job#schema}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#schema Job#schema}
   */
   readonly schema?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#storage_mode Job#storage_mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#storage_mode Job#storage_mode}
   */
   readonly storageMode?: string;
 }
@@ -7381,7 +7381,7 @@ export interface JobTaskForEachTaskTaskPowerBiTaskTables {
 export function jobTaskForEachTaskTaskPowerBiTaskTablesToTerraform(struct?: JobTaskForEachTaskTaskPowerBiTaskTables | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     catalog: cdktn.stringToTerraform(struct!.catalog),
@@ -7395,7 +7395,7 @@ export function jobTaskForEachTaskTaskPowerBiTaskTablesToTerraform(struct?: JobT
 export function jobTaskForEachTaskTaskPowerBiTaskTablesToHclTerraform(struct?: JobTaskForEachTaskTaskPowerBiTaskTables | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     catalog: {
@@ -7576,27 +7576,27 @@ export class JobTaskForEachTaskTaskPowerBiTaskTablesList extends cdktn.ComplexLi
 }
 export interface JobTaskForEachTaskTaskPowerBiTask {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#connection_resource_name Job#connection_resource_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#connection_resource_name Job#connection_resource_name}
   */
   readonly connectionResourceName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#refresh_after_update Job#refresh_after_update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#refresh_after_update Job#refresh_after_update}
   */
   readonly refreshAfterUpdate?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#warehouse_id Job#warehouse_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#warehouse_id Job#warehouse_id}
   */
   readonly warehouseId?: string;
   /**
   * power_bi_model block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#power_bi_model Job#power_bi_model}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#power_bi_model Job#power_bi_model}
   */
   readonly powerBiModel?: JobTaskForEachTaskTaskPowerBiTaskPowerBiModel;
   /**
   * tables block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#tables Job#tables}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#tables Job#tables}
   */
   readonly tables?: JobTaskForEachTaskTaskPowerBiTaskTables[] | cdktn.IResolvable;
 }
@@ -7604,7 +7604,7 @@ export interface JobTaskForEachTaskTaskPowerBiTask {
 export function jobTaskForEachTaskTaskPowerBiTaskToTerraform(struct?: JobTaskForEachTaskTaskPowerBiTaskOutputReference | JobTaskForEachTaskTaskPowerBiTask): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     connection_resource_name: cdktn.stringToTerraform(struct!.connectionResourceName),
@@ -7619,7 +7619,7 @@ export function jobTaskForEachTaskTaskPowerBiTaskToTerraform(struct?: JobTaskFor
 export function jobTaskForEachTaskTaskPowerBiTaskToHclTerraform(struct?: JobTaskForEachTaskTaskPowerBiTaskOutputReference | JobTaskForEachTaskTaskPowerBiTask): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     connection_resource_name: {
@@ -7796,11 +7796,11 @@ export class JobTaskForEachTaskTaskPowerBiTaskOutputReference extends cdktn.Comp
 }
 export interface JobTaskForEachTaskTaskPythonOperatorTaskParameters {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#name Job#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#name Job#name}
   */
   readonly name?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#value Job#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#value Job#value}
   */
   readonly value?: string;
 }
@@ -7808,7 +7808,7 @@ export interface JobTaskForEachTaskTaskPythonOperatorTaskParameters {
 export function jobTaskForEachTaskTaskPythonOperatorTaskParametersToTerraform(struct?: JobTaskForEachTaskTaskPythonOperatorTaskParameters | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     name: cdktn.stringToTerraform(struct!.name),
@@ -7820,7 +7820,7 @@ export function jobTaskForEachTaskTaskPythonOperatorTaskParametersToTerraform(st
 export function jobTaskForEachTaskTaskPythonOperatorTaskParametersToHclTerraform(struct?: JobTaskForEachTaskTaskPythonOperatorTaskParameters | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     name: {
@@ -7945,13 +7945,13 @@ export class JobTaskForEachTaskTaskPythonOperatorTaskParametersList extends cdkt
 }
 export interface JobTaskForEachTaskTaskPythonOperatorTask {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#main Job#main}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#main Job#main}
   */
   readonly main?: string;
   /**
   * parameters block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#parameters Job#parameters}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#parameters Job#parameters}
   */
   readonly parameters?: JobTaskForEachTaskTaskPythonOperatorTaskParameters[] | cdktn.IResolvable;
 }
@@ -7959,7 +7959,7 @@ export interface JobTaskForEachTaskTaskPythonOperatorTask {
 export function jobTaskForEachTaskTaskPythonOperatorTaskToTerraform(struct?: JobTaskForEachTaskTaskPythonOperatorTaskOutputReference | JobTaskForEachTaskTaskPythonOperatorTask): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     main: cdktn.stringToTerraform(struct!.main),
@@ -7971,7 +7971,7 @@ export function jobTaskForEachTaskTaskPythonOperatorTaskToTerraform(struct?: Job
 export function jobTaskForEachTaskTaskPythonOperatorTaskToHclTerraform(struct?: JobTaskForEachTaskTaskPythonOperatorTaskOutputReference | JobTaskForEachTaskTaskPythonOperatorTask): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     main: {
@@ -8064,19 +8064,19 @@ export class JobTaskForEachTaskTaskPythonOperatorTaskOutputReference extends cdk
 }
 export interface JobTaskForEachTaskTaskPythonWheelTask {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#entry_point Job#entry_point}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#entry_point Job#entry_point}
   */
   readonly entryPoint?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#named_parameters Job#named_parameters}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#named_parameters Job#named_parameters}
   */
   readonly namedParameters?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#package_name Job#package_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#package_name Job#package_name}
   */
   readonly packageName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#parameters Job#parameters}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#parameters Job#parameters}
   */
   readonly parameters?: string[];
 }
@@ -8084,7 +8084,7 @@ export interface JobTaskForEachTaskTaskPythonWheelTask {
 export function jobTaskForEachTaskTaskPythonWheelTaskToTerraform(struct?: JobTaskForEachTaskTaskPythonWheelTaskOutputReference | JobTaskForEachTaskTaskPythonWheelTask): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     entry_point: cdktn.stringToTerraform(struct!.entryPoint),
@@ -8098,7 +8098,7 @@ export function jobTaskForEachTaskTaskPythonWheelTaskToTerraform(struct?: JobTas
 export function jobTaskForEachTaskTaskPythonWheelTaskToHclTerraform(struct?: JobTaskForEachTaskTaskPythonWheelTaskOutputReference | JobTaskForEachTaskTaskPythonWheelTask): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     entry_point: {
@@ -8247,23 +8247,23 @@ export class JobTaskForEachTaskTaskPythonWheelTaskOutputReference extends cdktn.
 }
 export interface JobTaskForEachTaskTaskRunJobTaskPipelineParams {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#full_refresh Job#full_refresh}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#full_refresh Job#full_refresh}
   */
   readonly fullRefresh?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#full_refresh_selection Job#full_refresh_selection}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#full_refresh_selection Job#full_refresh_selection}
   */
   readonly fullRefreshSelection?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#refresh_flow_selection Job#refresh_flow_selection}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#refresh_flow_selection Job#refresh_flow_selection}
   */
   readonly refreshFlowSelection?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#refresh_selection Job#refresh_selection}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#refresh_selection Job#refresh_selection}
   */
   readonly refreshSelection?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#reset_checkpoint_selection Job#reset_checkpoint_selection}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#reset_checkpoint_selection Job#reset_checkpoint_selection}
   */
   readonly resetCheckpointSelection?: string[];
 }
@@ -8271,7 +8271,7 @@ export interface JobTaskForEachTaskTaskRunJobTaskPipelineParams {
 export function jobTaskForEachTaskTaskRunJobTaskPipelineParamsToTerraform(struct?: JobTaskForEachTaskTaskRunJobTaskPipelineParamsOutputReference | JobTaskForEachTaskTaskRunJobTaskPipelineParams): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     full_refresh: cdktn.booleanToTerraform(struct!.fullRefresh),
@@ -8286,7 +8286,7 @@ export function jobTaskForEachTaskTaskRunJobTaskPipelineParamsToTerraform(struct
 export function jobTaskForEachTaskTaskRunJobTaskPipelineParamsToHclTerraform(struct?: JobTaskForEachTaskTaskRunJobTaskPipelineParamsOutputReference | JobTaskForEachTaskTaskRunJobTaskPipelineParams): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     full_refresh: {
@@ -8463,45 +8463,45 @@ export class JobTaskForEachTaskTaskRunJobTaskPipelineParamsOutputReference exten
 }
 export interface JobTaskForEachTaskTaskRunJobTask {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#dbt_commands Job#dbt_commands}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#dbt_commands Job#dbt_commands}
   */
   readonly dbtCommands?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#jar_params Job#jar_params}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#jar_params Job#jar_params}
   */
   readonly jarParams?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#job_id Job#job_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#job_id Job#job_id}
   */
   readonly jobId: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#job_parameters Job#job_parameters}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#job_parameters Job#job_parameters}
   */
   readonly jobParameters?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#notebook_params Job#notebook_params}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#notebook_params Job#notebook_params}
   */
   readonly notebookParams?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#python_named_params Job#python_named_params}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#python_named_params Job#python_named_params}
   */
   readonly pythonNamedParams?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#python_params Job#python_params}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#python_params Job#python_params}
   */
   readonly pythonParams?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#spark_submit_params Job#spark_submit_params}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#spark_submit_params Job#spark_submit_params}
   */
   readonly sparkSubmitParams?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#sql_params Job#sql_params}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#sql_params Job#sql_params}
   */
   readonly sqlParams?: { [key: string]: string };
   /**
   * pipeline_params block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#pipeline_params Job#pipeline_params}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#pipeline_params Job#pipeline_params}
   */
   readonly pipelineParams?: JobTaskForEachTaskTaskRunJobTaskPipelineParams;
 }
@@ -8509,7 +8509,7 @@ export interface JobTaskForEachTaskTaskRunJobTask {
 export function jobTaskForEachTaskTaskRunJobTaskToTerraform(struct?: JobTaskForEachTaskTaskRunJobTaskOutputReference | JobTaskForEachTaskTaskRunJobTask): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     dbt_commands: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.dbtCommands),
@@ -8529,7 +8529,7 @@ export function jobTaskForEachTaskTaskRunJobTaskToTerraform(struct?: JobTaskForE
 export function jobTaskForEachTaskTaskRunJobTaskToHclTerraform(struct?: JobTaskForEachTaskTaskRunJobTaskOutputReference | JobTaskForEachTaskTaskRunJobTask): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     dbt_commands: {
@@ -8843,19 +8843,19 @@ export class JobTaskForEachTaskTaskRunJobTaskOutputReference extends cdktn.Compl
 }
 export interface JobTaskForEachTaskTaskSparkJarTask {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#jar_uri Job#jar_uri}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#jar_uri Job#jar_uri}
   */
   readonly jarUri?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#main_class_name Job#main_class_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#main_class_name Job#main_class_name}
   */
   readonly mainClassName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#parameters Job#parameters}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#parameters Job#parameters}
   */
   readonly parameters?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#run_as_repl Job#run_as_repl}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#run_as_repl Job#run_as_repl}
   */
   readonly runAsRepl?: boolean | cdktn.IResolvable;
 }
@@ -8863,7 +8863,7 @@ export interface JobTaskForEachTaskTaskSparkJarTask {
 export function jobTaskForEachTaskTaskSparkJarTaskToTerraform(struct?: JobTaskForEachTaskTaskSparkJarTaskOutputReference | JobTaskForEachTaskTaskSparkJarTask): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     jar_uri: cdktn.stringToTerraform(struct!.jarUri),
@@ -8877,7 +8877,7 @@ export function jobTaskForEachTaskTaskSparkJarTaskToTerraform(struct?: JobTaskFo
 export function jobTaskForEachTaskTaskSparkJarTaskToHclTerraform(struct?: JobTaskForEachTaskTaskSparkJarTaskOutputReference | JobTaskForEachTaskTaskSparkJarTask): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     jar_uri: {
@@ -9026,15 +9026,15 @@ export class JobTaskForEachTaskTaskSparkJarTaskOutputReference extends cdktn.Com
 }
 export interface JobTaskForEachTaskTaskSparkPythonTask {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#parameters Job#parameters}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#parameters Job#parameters}
   */
   readonly parameters?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#python_file Job#python_file}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#python_file Job#python_file}
   */
   readonly pythonFile: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#source Job#source}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#source Job#source}
   */
   readonly source?: string;
 }
@@ -9042,7 +9042,7 @@ export interface JobTaskForEachTaskTaskSparkPythonTask {
 export function jobTaskForEachTaskTaskSparkPythonTaskToTerraform(struct?: JobTaskForEachTaskTaskSparkPythonTaskOutputReference | JobTaskForEachTaskTaskSparkPythonTask): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     parameters: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.parameters),
@@ -9055,7 +9055,7 @@ export function jobTaskForEachTaskTaskSparkPythonTaskToTerraform(struct?: JobTas
 export function jobTaskForEachTaskTaskSparkPythonTaskToHclTerraform(struct?: JobTaskForEachTaskTaskSparkPythonTaskOutputReference | JobTaskForEachTaskTaskSparkPythonTask): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     parameters: {
@@ -9173,7 +9173,7 @@ export class JobTaskForEachTaskTaskSparkPythonTaskOutputReference extends cdktn.
 }
 export interface JobTaskForEachTaskTaskSparkSubmitTask {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#parameters Job#parameters}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#parameters Job#parameters}
   */
   readonly parameters?: string[];
 }
@@ -9181,7 +9181,7 @@ export interface JobTaskForEachTaskTaskSparkSubmitTask {
 export function jobTaskForEachTaskTaskSparkSubmitTaskToTerraform(struct?: JobTaskForEachTaskTaskSparkSubmitTaskOutputReference | JobTaskForEachTaskTaskSparkSubmitTask): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     parameters: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.parameters),
@@ -9192,7 +9192,7 @@ export function jobTaskForEachTaskTaskSparkSubmitTaskToTerraform(struct?: JobTas
 export function jobTaskForEachTaskTaskSparkSubmitTaskToHclTerraform(struct?: JobTaskForEachTaskTaskSparkSubmitTaskOutputReference | JobTaskForEachTaskTaskSparkSubmitTask): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     parameters: {
@@ -9257,11 +9257,11 @@ export class JobTaskForEachTaskTaskSparkSubmitTaskOutputReference extends cdktn.
 }
 export interface JobTaskForEachTaskTaskSqlTaskAlertSubscriptions {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#destination_id Job#destination_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#destination_id Job#destination_id}
   */
   readonly destinationId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#user_name Job#user_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#user_name Job#user_name}
   */
   readonly userName?: string;
 }
@@ -9269,7 +9269,7 @@ export interface JobTaskForEachTaskTaskSqlTaskAlertSubscriptions {
 export function jobTaskForEachTaskTaskSqlTaskAlertSubscriptionsToTerraform(struct?: JobTaskForEachTaskTaskSqlTaskAlertSubscriptions | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     destination_id: cdktn.stringToTerraform(struct!.destinationId),
@@ -9281,7 +9281,7 @@ export function jobTaskForEachTaskTaskSqlTaskAlertSubscriptionsToTerraform(struc
 export function jobTaskForEachTaskTaskSqlTaskAlertSubscriptionsToHclTerraform(struct?: JobTaskForEachTaskTaskSqlTaskAlertSubscriptions | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     destination_id: {
@@ -9406,17 +9406,17 @@ export class JobTaskForEachTaskTaskSqlTaskAlertSubscriptionsList extends cdktn.C
 }
 export interface JobTaskForEachTaskTaskSqlTaskAlert {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#alert_id Job#alert_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#alert_id Job#alert_id}
   */
   readonly alertId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#pause_subscriptions Job#pause_subscriptions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#pause_subscriptions Job#pause_subscriptions}
   */
   readonly pauseSubscriptions?: boolean | cdktn.IResolvable;
   /**
   * subscriptions block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#subscriptions Job#subscriptions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#subscriptions Job#subscriptions}
   */
   readonly subscriptions?: JobTaskForEachTaskTaskSqlTaskAlertSubscriptions[] | cdktn.IResolvable;
 }
@@ -9424,7 +9424,7 @@ export interface JobTaskForEachTaskTaskSqlTaskAlert {
 export function jobTaskForEachTaskTaskSqlTaskAlertToTerraform(struct?: JobTaskForEachTaskTaskSqlTaskAlertOutputReference | JobTaskForEachTaskTaskSqlTaskAlert): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     alert_id: cdktn.stringToTerraform(struct!.alertId),
@@ -9437,7 +9437,7 @@ export function jobTaskForEachTaskTaskSqlTaskAlertToTerraform(struct?: JobTaskFo
 export function jobTaskForEachTaskTaskSqlTaskAlertToHclTerraform(struct?: JobTaskForEachTaskTaskSqlTaskAlertOutputReference | JobTaskForEachTaskTaskSqlTaskAlert): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     alert_id: {
@@ -9555,11 +9555,11 @@ export class JobTaskForEachTaskTaskSqlTaskAlertOutputReference extends cdktn.Com
 }
 export interface JobTaskForEachTaskTaskSqlTaskDashboardSubscriptions {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#destination_id Job#destination_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#destination_id Job#destination_id}
   */
   readonly destinationId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#user_name Job#user_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#user_name Job#user_name}
   */
   readonly userName?: string;
 }
@@ -9567,7 +9567,7 @@ export interface JobTaskForEachTaskTaskSqlTaskDashboardSubscriptions {
 export function jobTaskForEachTaskTaskSqlTaskDashboardSubscriptionsToTerraform(struct?: JobTaskForEachTaskTaskSqlTaskDashboardSubscriptions | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     destination_id: cdktn.stringToTerraform(struct!.destinationId),
@@ -9579,7 +9579,7 @@ export function jobTaskForEachTaskTaskSqlTaskDashboardSubscriptionsToTerraform(s
 export function jobTaskForEachTaskTaskSqlTaskDashboardSubscriptionsToHclTerraform(struct?: JobTaskForEachTaskTaskSqlTaskDashboardSubscriptions | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     destination_id: {
@@ -9704,21 +9704,21 @@ export class JobTaskForEachTaskTaskSqlTaskDashboardSubscriptionsList extends cdk
 }
 export interface JobTaskForEachTaskTaskSqlTaskDashboard {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#custom_subject Job#custom_subject}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#custom_subject Job#custom_subject}
   */
   readonly customSubject?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#dashboard_id Job#dashboard_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#dashboard_id Job#dashboard_id}
   */
   readonly dashboardId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#pause_subscriptions Job#pause_subscriptions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#pause_subscriptions Job#pause_subscriptions}
   */
   readonly pauseSubscriptions?: boolean | cdktn.IResolvable;
   /**
   * subscriptions block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#subscriptions Job#subscriptions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#subscriptions Job#subscriptions}
   */
   readonly subscriptions?: JobTaskForEachTaskTaskSqlTaskDashboardSubscriptions[] | cdktn.IResolvable;
 }
@@ -9726,7 +9726,7 @@ export interface JobTaskForEachTaskTaskSqlTaskDashboard {
 export function jobTaskForEachTaskTaskSqlTaskDashboardToTerraform(struct?: JobTaskForEachTaskTaskSqlTaskDashboardOutputReference | JobTaskForEachTaskTaskSqlTaskDashboard): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     custom_subject: cdktn.stringToTerraform(struct!.customSubject),
@@ -9740,7 +9740,7 @@ export function jobTaskForEachTaskTaskSqlTaskDashboardToTerraform(struct?: JobTa
 export function jobTaskForEachTaskTaskSqlTaskDashboardToHclTerraform(struct?: JobTaskForEachTaskTaskSqlTaskDashboardOutputReference | JobTaskForEachTaskTaskSqlTaskDashboard): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     custom_subject: {
@@ -9886,11 +9886,11 @@ export class JobTaskForEachTaskTaskSqlTaskDashboardOutputReference extends cdktn
 }
 export interface JobTaskForEachTaskTaskSqlTaskFile {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#path Job#path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#path Job#path}
   */
   readonly path: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#source Job#source}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#source Job#source}
   */
   readonly source?: string;
 }
@@ -9898,7 +9898,7 @@ export interface JobTaskForEachTaskTaskSqlTaskFile {
 export function jobTaskForEachTaskTaskSqlTaskFileToTerraform(struct?: JobTaskForEachTaskTaskSqlTaskFileOutputReference | JobTaskForEachTaskTaskSqlTaskFile): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     path: cdktn.stringToTerraform(struct!.path),
@@ -9910,7 +9910,7 @@ export function jobTaskForEachTaskTaskSqlTaskFileToTerraform(struct?: JobTaskFor
 export function jobTaskForEachTaskTaskSqlTaskFileToHclTerraform(struct?: JobTaskForEachTaskTaskSqlTaskFileOutputReference | JobTaskForEachTaskTaskSqlTaskFile): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     path: {
@@ -10000,7 +10000,7 @@ export class JobTaskForEachTaskTaskSqlTaskFileOutputReference extends cdktn.Comp
 }
 export interface JobTaskForEachTaskTaskSqlTaskQuery {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#query_id Job#query_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#query_id Job#query_id}
   */
   readonly queryId: string;
 }
@@ -10008,7 +10008,7 @@ export interface JobTaskForEachTaskTaskSqlTaskQuery {
 export function jobTaskForEachTaskTaskSqlTaskQueryToTerraform(struct?: JobTaskForEachTaskTaskSqlTaskQueryOutputReference | JobTaskForEachTaskTaskSqlTaskQuery): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     query_id: cdktn.stringToTerraform(struct!.queryId),
@@ -10019,7 +10019,7 @@ export function jobTaskForEachTaskTaskSqlTaskQueryToTerraform(struct?: JobTaskFo
 export function jobTaskForEachTaskTaskSqlTaskQueryToHclTerraform(struct?: JobTaskForEachTaskTaskSqlTaskQueryOutputReference | JobTaskForEachTaskTaskSqlTaskQuery): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     query_id: {
@@ -10081,35 +10081,35 @@ export class JobTaskForEachTaskTaskSqlTaskQueryOutputReference extends cdktn.Com
 }
 export interface JobTaskForEachTaskTaskSqlTask {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#parameters Job#parameters}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#parameters Job#parameters}
   */
   readonly parameters?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#warehouse_id Job#warehouse_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#warehouse_id Job#warehouse_id}
   */
   readonly warehouseId: string;
   /**
   * alert block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#alert Job#alert}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#alert Job#alert}
   */
   readonly alert?: JobTaskForEachTaskTaskSqlTaskAlert;
   /**
   * dashboard block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#dashboard Job#dashboard}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#dashboard Job#dashboard}
   */
   readonly dashboard?: JobTaskForEachTaskTaskSqlTaskDashboard;
   /**
   * file block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#file Job#file}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#file Job#file}
   */
   readonly file?: JobTaskForEachTaskTaskSqlTaskFile;
   /**
   * query block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#query Job#query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#query Job#query}
   */
   readonly query?: JobTaskForEachTaskTaskSqlTaskQuery;
 }
@@ -10117,7 +10117,7 @@ export interface JobTaskForEachTaskTaskSqlTask {
 export function jobTaskForEachTaskTaskSqlTaskToTerraform(struct?: JobTaskForEachTaskTaskSqlTaskOutputReference | JobTaskForEachTaskTaskSqlTask): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     parameters: cdktn.hashMapper(cdktn.stringToTerraform)(struct!.parameters),
@@ -10133,7 +10133,7 @@ export function jobTaskForEachTaskTaskSqlTaskToTerraform(struct?: JobTaskForEach
 export function jobTaskForEachTaskTaskSqlTaskToHclTerraform(struct?: JobTaskForEachTaskTaskSqlTaskOutputReference | JobTaskForEachTaskTaskSqlTask): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     parameters: {
@@ -10335,7 +10335,7 @@ export class JobTaskForEachTaskTaskSqlTaskOutputReference extends cdktn.ComplexO
 }
 export interface JobTaskForEachTaskTaskWebhookNotificationsOnDurationWarningThresholdExceeded {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#id Job#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#id Job#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -10346,7 +10346,7 @@ export interface JobTaskForEachTaskTaskWebhookNotificationsOnDurationWarningThre
 export function jobTaskForEachTaskTaskWebhookNotificationsOnDurationWarningThresholdExceededToTerraform(struct?: JobTaskForEachTaskTaskWebhookNotificationsOnDurationWarningThresholdExceeded | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     id: cdktn.stringToTerraform(struct!.id),
@@ -10357,7 +10357,7 @@ export function jobTaskForEachTaskTaskWebhookNotificationsOnDurationWarningThres
 export function jobTaskForEachTaskTaskWebhookNotificationsOnDurationWarningThresholdExceededToHclTerraform(struct?: JobTaskForEachTaskTaskWebhookNotificationsOnDurationWarningThresholdExceeded | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     id: {
@@ -10451,7 +10451,7 @@ export class JobTaskForEachTaskTaskWebhookNotificationsOnDurationWarningThreshol
 }
 export interface JobTaskForEachTaskTaskWebhookNotificationsOnFailure {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#id Job#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#id Job#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -10462,7 +10462,7 @@ export interface JobTaskForEachTaskTaskWebhookNotificationsOnFailure {
 export function jobTaskForEachTaskTaskWebhookNotificationsOnFailureToTerraform(struct?: JobTaskForEachTaskTaskWebhookNotificationsOnFailure | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     id: cdktn.stringToTerraform(struct!.id),
@@ -10473,7 +10473,7 @@ export function jobTaskForEachTaskTaskWebhookNotificationsOnFailureToTerraform(s
 export function jobTaskForEachTaskTaskWebhookNotificationsOnFailureToHclTerraform(struct?: JobTaskForEachTaskTaskWebhookNotificationsOnFailure | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     id: {
@@ -10567,7 +10567,7 @@ export class JobTaskForEachTaskTaskWebhookNotificationsOnFailureList extends cdk
 }
 export interface JobTaskForEachTaskTaskWebhookNotificationsOnStart {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#id Job#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#id Job#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -10578,7 +10578,7 @@ export interface JobTaskForEachTaskTaskWebhookNotificationsOnStart {
 export function jobTaskForEachTaskTaskWebhookNotificationsOnStartToTerraform(struct?: JobTaskForEachTaskTaskWebhookNotificationsOnStart | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     id: cdktn.stringToTerraform(struct!.id),
@@ -10589,7 +10589,7 @@ export function jobTaskForEachTaskTaskWebhookNotificationsOnStartToTerraform(str
 export function jobTaskForEachTaskTaskWebhookNotificationsOnStartToHclTerraform(struct?: JobTaskForEachTaskTaskWebhookNotificationsOnStart | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     id: {
@@ -10683,7 +10683,7 @@ export class JobTaskForEachTaskTaskWebhookNotificationsOnStartList extends cdktn
 }
 export interface JobTaskForEachTaskTaskWebhookNotificationsOnStreamingBacklogExceeded {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#id Job#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#id Job#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -10694,7 +10694,7 @@ export interface JobTaskForEachTaskTaskWebhookNotificationsOnStreamingBacklogExc
 export function jobTaskForEachTaskTaskWebhookNotificationsOnStreamingBacklogExceededToTerraform(struct?: JobTaskForEachTaskTaskWebhookNotificationsOnStreamingBacklogExceeded | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     id: cdktn.stringToTerraform(struct!.id),
@@ -10705,7 +10705,7 @@ export function jobTaskForEachTaskTaskWebhookNotificationsOnStreamingBacklogExce
 export function jobTaskForEachTaskTaskWebhookNotificationsOnStreamingBacklogExceededToHclTerraform(struct?: JobTaskForEachTaskTaskWebhookNotificationsOnStreamingBacklogExceeded | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     id: {
@@ -10799,7 +10799,7 @@ export class JobTaskForEachTaskTaskWebhookNotificationsOnStreamingBacklogExceede
 }
 export interface JobTaskForEachTaskTaskWebhookNotificationsOnSuccess {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#id Job#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#id Job#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -10810,7 +10810,7 @@ export interface JobTaskForEachTaskTaskWebhookNotificationsOnSuccess {
 export function jobTaskForEachTaskTaskWebhookNotificationsOnSuccessToTerraform(struct?: JobTaskForEachTaskTaskWebhookNotificationsOnSuccess | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     id: cdktn.stringToTerraform(struct!.id),
@@ -10821,7 +10821,7 @@ export function jobTaskForEachTaskTaskWebhookNotificationsOnSuccessToTerraform(s
 export function jobTaskForEachTaskTaskWebhookNotificationsOnSuccessToHclTerraform(struct?: JobTaskForEachTaskTaskWebhookNotificationsOnSuccess | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     id: {
@@ -10917,31 +10917,31 @@ export interface JobTaskForEachTaskTaskWebhookNotifications {
   /**
   * on_duration_warning_threshold_exceeded block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#on_duration_warning_threshold_exceeded Job#on_duration_warning_threshold_exceeded}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#on_duration_warning_threshold_exceeded Job#on_duration_warning_threshold_exceeded}
   */
   readonly onDurationWarningThresholdExceeded?: JobTaskForEachTaskTaskWebhookNotificationsOnDurationWarningThresholdExceeded[] | cdktn.IResolvable;
   /**
   * on_failure block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#on_failure Job#on_failure}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#on_failure Job#on_failure}
   */
   readonly onFailure?: JobTaskForEachTaskTaskWebhookNotificationsOnFailure[] | cdktn.IResolvable;
   /**
   * on_start block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#on_start Job#on_start}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#on_start Job#on_start}
   */
   readonly onStart?: JobTaskForEachTaskTaskWebhookNotificationsOnStart[] | cdktn.IResolvable;
   /**
   * on_streaming_backlog_exceeded block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#on_streaming_backlog_exceeded Job#on_streaming_backlog_exceeded}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#on_streaming_backlog_exceeded Job#on_streaming_backlog_exceeded}
   */
   readonly onStreamingBacklogExceeded?: JobTaskForEachTaskTaskWebhookNotificationsOnStreamingBacklogExceeded[] | cdktn.IResolvable;
   /**
   * on_success block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#on_success Job#on_success}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#on_success Job#on_success}
   */
   readonly onSuccess?: JobTaskForEachTaskTaskWebhookNotificationsOnSuccess[] | cdktn.IResolvable;
 }
@@ -10949,7 +10949,7 @@ export interface JobTaskForEachTaskTaskWebhookNotifications {
 export function jobTaskForEachTaskTaskWebhookNotificationsToTerraform(struct?: JobTaskForEachTaskTaskWebhookNotificationsOutputReference | JobTaskForEachTaskTaskWebhookNotifications): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     on_duration_warning_threshold_exceeded: cdktn.listMapper(jobTaskForEachTaskTaskWebhookNotificationsOnDurationWarningThresholdExceededToTerraform, true)(struct!.onDurationWarningThresholdExceeded),
@@ -10964,7 +10964,7 @@ export function jobTaskForEachTaskTaskWebhookNotificationsToTerraform(struct?: J
 export function jobTaskForEachTaskTaskWebhookNotificationsToHclTerraform(struct?: JobTaskForEachTaskTaskWebhookNotificationsOutputReference | JobTaskForEachTaskTaskWebhookNotifications): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     on_duration_warning_threshold_exceeded: {
@@ -11141,207 +11141,207 @@ export class JobTaskForEachTaskTaskWebhookNotificationsOutputReference extends c
 }
 export interface JobTaskForEachTaskTask {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#description Job#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#description Job#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#disable_auto_optimization Job#disable_auto_optimization}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#disable_auto_optimization Job#disable_auto_optimization}
   */
   readonly disableAutoOptimization?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#disabled Job#disabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#disabled Job#disabled}
   */
   readonly disabled?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#environment_key Job#environment_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#environment_key Job#environment_key}
   */
   readonly environmentKey?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#existing_cluster_id Job#existing_cluster_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#existing_cluster_id Job#existing_cluster_id}
   */
   readonly existingClusterId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#job_cluster_key Job#job_cluster_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#job_cluster_key Job#job_cluster_key}
   */
   readonly jobClusterKey?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#max_retries Job#max_retries}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#max_retries Job#max_retries}
   */
   readonly maxRetries?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#min_retry_interval_millis Job#min_retry_interval_millis}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#min_retry_interval_millis Job#min_retry_interval_millis}
   */
   readonly minRetryIntervalMillis?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#retry_on_timeout Job#retry_on_timeout}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#retry_on_timeout Job#retry_on_timeout}
   */
   readonly retryOnTimeout?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#run_if Job#run_if}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#run_if Job#run_if}
   */
   readonly runIf?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#task_key Job#task_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#task_key Job#task_key}
   */
   readonly taskKey: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#timeout_seconds Job#timeout_seconds}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#timeout_seconds Job#timeout_seconds}
   */
   readonly timeoutSeconds?: number;
   /**
   * alert_task block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#alert_task Job#alert_task}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#alert_task Job#alert_task}
   */
   readonly alertTask?: JobTaskForEachTaskTaskAlertTask;
   /**
   * clean_rooms_notebook_task block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#clean_rooms_notebook_task Job#clean_rooms_notebook_task}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#clean_rooms_notebook_task Job#clean_rooms_notebook_task}
   */
   readonly cleanRoomsNotebookTask?: JobTaskForEachTaskTaskCleanRoomsNotebookTask;
   /**
   * compute block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#compute Job#compute}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#compute Job#compute}
   */
   readonly compute?: JobTaskForEachTaskTaskCompute;
   /**
   * condition_task block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#condition_task Job#condition_task}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#condition_task Job#condition_task}
   */
   readonly conditionTask?: JobTaskForEachTaskTaskConditionTask;
   /**
   * dashboard_task block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#dashboard_task Job#dashboard_task}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#dashboard_task Job#dashboard_task}
   */
   readonly dashboardTask?: JobTaskForEachTaskTaskDashboardTask;
   /**
   * dbt_cloud_task block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#dbt_cloud_task Job#dbt_cloud_task}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#dbt_cloud_task Job#dbt_cloud_task}
   */
   readonly dbtCloudTask?: JobTaskForEachTaskTaskDbtCloudTask;
   /**
   * dbt_platform_task block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#dbt_platform_task Job#dbt_platform_task}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#dbt_platform_task Job#dbt_platform_task}
   */
   readonly dbtPlatformTask?: JobTaskForEachTaskTaskDbtPlatformTask;
   /**
   * dbt_task block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#dbt_task Job#dbt_task}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#dbt_task Job#dbt_task}
   */
   readonly dbtTask?: JobTaskForEachTaskTaskDbtTask;
   /**
   * depends_on block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#depends_on Job#depends_on}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#depends_on Job#depends_on}
   */
   readonly dependsOn?: JobTaskForEachTaskTaskDependsOn[] | cdktn.IResolvable;
   /**
   * email_notifications block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#email_notifications Job#email_notifications}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#email_notifications Job#email_notifications}
   */
   readonly emailNotifications?: JobTaskForEachTaskTaskEmailNotifications;
   /**
   * gen_ai_compute_task block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#gen_ai_compute_task Job#gen_ai_compute_task}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#gen_ai_compute_task Job#gen_ai_compute_task}
   */
   readonly genAiComputeTask?: JobTaskForEachTaskTaskGenAiComputeTask;
   /**
   * health block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#health Job#health}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#health Job#health}
   */
   readonly health?: JobTaskForEachTaskTaskHealth;
   /**
   * library block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#library Job#library}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#library Job#library}
   */
   readonly library?: JobTaskForEachTaskTaskLibrary[] | cdktn.IResolvable;
   /**
   * new_cluster block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#new_cluster Job#new_cluster}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#new_cluster Job#new_cluster}
   */
   readonly newCluster?: JobTaskForEachTaskTaskNewCluster;
   /**
   * notebook_task block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#notebook_task Job#notebook_task}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#notebook_task Job#notebook_task}
   */
   readonly notebookTask?: JobTaskForEachTaskTaskNotebookTask;
   /**
   * notification_settings block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#notification_settings Job#notification_settings}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#notification_settings Job#notification_settings}
   */
   readonly notificationSettings?: JobTaskForEachTaskTaskNotificationSettings;
   /**
   * pipeline_task block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#pipeline_task Job#pipeline_task}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#pipeline_task Job#pipeline_task}
   */
   readonly pipelineTask?: JobTaskForEachTaskTaskPipelineTask;
   /**
   * power_bi_task block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#power_bi_task Job#power_bi_task}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#power_bi_task Job#power_bi_task}
   */
   readonly powerBiTask?: JobTaskForEachTaskTaskPowerBiTask;
   /**
   * python_operator_task block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#python_operator_task Job#python_operator_task}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#python_operator_task Job#python_operator_task}
   */
   readonly pythonOperatorTask?: JobTaskForEachTaskTaskPythonOperatorTask;
   /**
   * python_wheel_task block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#python_wheel_task Job#python_wheel_task}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#python_wheel_task Job#python_wheel_task}
   */
   readonly pythonWheelTask?: JobTaskForEachTaskTaskPythonWheelTask;
   /**
   * run_job_task block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#run_job_task Job#run_job_task}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#run_job_task Job#run_job_task}
   */
   readonly runJobTask?: JobTaskForEachTaskTaskRunJobTask;
   /**
   * spark_jar_task block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#spark_jar_task Job#spark_jar_task}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#spark_jar_task Job#spark_jar_task}
   */
   readonly sparkJarTask?: JobTaskForEachTaskTaskSparkJarTask;
   /**
   * spark_python_task block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#spark_python_task Job#spark_python_task}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#spark_python_task Job#spark_python_task}
   */
   readonly sparkPythonTask?: JobTaskForEachTaskTaskSparkPythonTask;
   /**
   * spark_submit_task block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#spark_submit_task Job#spark_submit_task}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#spark_submit_task Job#spark_submit_task}
   */
   readonly sparkSubmitTask?: JobTaskForEachTaskTaskSparkSubmitTask;
   /**
   * sql_task block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#sql_task Job#sql_task}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#sql_task Job#sql_task}
   */
   readonly sqlTask?: JobTaskForEachTaskTaskSqlTask;
   /**
   * webhook_notifications block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#webhook_notifications Job#webhook_notifications}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#webhook_notifications Job#webhook_notifications}
   */
   readonly webhookNotifications?: JobTaskForEachTaskTaskWebhookNotifications;
 }
@@ -11349,7 +11349,7 @@ export interface JobTaskForEachTaskTask {
 export function jobTaskForEachTaskTaskToTerraform(struct?: JobTaskForEachTaskTaskOutputReference | JobTaskForEachTaskTask): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     description: cdktn.stringToTerraform(struct!.description),
@@ -11397,7 +11397,7 @@ export function jobTaskForEachTaskTaskToTerraform(struct?: JobTaskForEachTaskTas
 export function jobTaskForEachTaskTaskToHclTerraform(struct?: JobTaskForEachTaskTaskOutputReference | JobTaskForEachTaskTask): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     description: {
@@ -12495,17 +12495,17 @@ export class JobTaskForEachTaskTaskOutputReference extends cdktn.ComplexObject {
 }
 export interface JobTaskForEachTask {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#concurrency Job#concurrency}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#concurrency Job#concurrency}
   */
   readonly concurrency?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#inputs Job#inputs}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#inputs Job#inputs}
   */
   readonly inputs: string;
   /**
   * task block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#task Job#task}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#task Job#task}
   */
   readonly task: JobTaskForEachTaskTask;
 }
@@ -12513,7 +12513,7 @@ export interface JobTaskForEachTask {
 export function jobTaskForEachTaskToTerraform(struct?: JobTaskForEachTaskOutputReference | JobTaskForEachTask): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     concurrency: cdktn.numberToTerraform(struct!.concurrency),
@@ -12526,7 +12526,7 @@ export function jobTaskForEachTaskToTerraform(struct?: JobTaskForEachTaskOutputR
 export function jobTaskForEachTaskToHclTerraform(struct?: JobTaskForEachTaskOutputReference | JobTaskForEachTask): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     concurrency: {
@@ -12641,15 +12641,15 @@ export class JobTaskForEachTaskOutputReference extends cdktn.ComplexObject {
 }
 export interface JobTaskGenAiComputeTaskCompute {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#gpu_node_pool_id Job#gpu_node_pool_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#gpu_node_pool_id Job#gpu_node_pool_id}
   */
   readonly gpuNodePoolId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#gpu_type Job#gpu_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#gpu_type Job#gpu_type}
   */
   readonly gpuType?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#num_gpus Job#num_gpus}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#num_gpus Job#num_gpus}
   */
   readonly numGpus: number;
 }
@@ -12657,7 +12657,7 @@ export interface JobTaskGenAiComputeTaskCompute {
 export function jobTaskGenAiComputeTaskComputeToTerraform(struct?: JobTaskGenAiComputeTaskComputeOutputReference | JobTaskGenAiComputeTaskCompute): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     gpu_node_pool_id: cdktn.stringToTerraform(struct!.gpuNodePoolId),
@@ -12670,7 +12670,7 @@ export function jobTaskGenAiComputeTaskComputeToTerraform(struct?: JobTaskGenAiC
 export function jobTaskGenAiComputeTaskComputeToHclTerraform(struct?: JobTaskGenAiComputeTaskComputeOutputReference | JobTaskGenAiComputeTaskCompute): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     gpu_node_pool_id: {
@@ -12788,37 +12788,37 @@ export class JobTaskGenAiComputeTaskComputeOutputReference extends cdktn.Complex
 }
 export interface JobTaskGenAiComputeTask {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#command Job#command}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#command Job#command}
   */
   readonly command?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#dl_runtime_image Job#dl_runtime_image}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#dl_runtime_image Job#dl_runtime_image}
   */
   readonly dlRuntimeImage: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#mlflow_experiment_name Job#mlflow_experiment_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#mlflow_experiment_name Job#mlflow_experiment_name}
   */
   readonly mlflowExperimentName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#source Job#source}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#source Job#source}
   */
   readonly source?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#training_script_path Job#training_script_path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#training_script_path Job#training_script_path}
   */
   readonly trainingScriptPath?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#yaml_parameters Job#yaml_parameters}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#yaml_parameters Job#yaml_parameters}
   */
   readonly yamlParameters?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#yaml_parameters_file_path Job#yaml_parameters_file_path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#yaml_parameters_file_path Job#yaml_parameters_file_path}
   */
   readonly yamlParametersFilePath?: string;
   /**
   * compute block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#compute Job#compute}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#compute Job#compute}
   */
   readonly compute?: JobTaskGenAiComputeTaskCompute;
 }
@@ -12826,7 +12826,7 @@ export interface JobTaskGenAiComputeTask {
 export function jobTaskGenAiComputeTaskToTerraform(struct?: JobTaskGenAiComputeTaskOutputReference | JobTaskGenAiComputeTask): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     command: cdktn.stringToTerraform(struct!.command),
@@ -12844,7 +12844,7 @@ export function jobTaskGenAiComputeTaskToTerraform(struct?: JobTaskGenAiComputeT
 export function jobTaskGenAiComputeTaskToHclTerraform(struct?: JobTaskGenAiComputeTaskOutputReference | JobTaskGenAiComputeTask): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     command: {
@@ -13102,15 +13102,15 @@ export class JobTaskGenAiComputeTaskOutputReference extends cdktn.ComplexObject 
 }
 export interface JobTaskHealthRules {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#metric Job#metric}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#metric Job#metric}
   */
   readonly metric: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#op Job#op}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#op Job#op}
   */
   readonly op: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#value Job#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#value Job#value}
   */
   readonly value: number;
 }
@@ -13118,7 +13118,7 @@ export interface JobTaskHealthRules {
 export function jobTaskHealthRulesToTerraform(struct?: JobTaskHealthRules | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     metric: cdktn.stringToTerraform(struct!.metric),
@@ -13131,7 +13131,7 @@ export function jobTaskHealthRulesToTerraform(struct?: JobTaskHealthRules | cdkt
 export function jobTaskHealthRulesToHclTerraform(struct?: JobTaskHealthRules | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     metric: {
@@ -13277,7 +13277,7 @@ export interface JobTaskHealth {
   /**
   * rules block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#rules Job#rules}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#rules Job#rules}
   */
   readonly rules: JobTaskHealthRules[] | cdktn.IResolvable;
 }
@@ -13285,7 +13285,7 @@ export interface JobTaskHealth {
 export function jobTaskHealthToTerraform(struct?: JobTaskHealthOutputReference | JobTaskHealth): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     rules: cdktn.listMapper(jobTaskHealthRulesToTerraform, true)(struct!.rules),
@@ -13296,7 +13296,7 @@ export function jobTaskHealthToTerraform(struct?: JobTaskHealthOutputReference |
 export function jobTaskHealthToHclTerraform(struct?: JobTaskHealthOutputReference | JobTaskHealth): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     rules: {
@@ -13358,11 +13358,11 @@ export class JobTaskHealthOutputReference extends cdktn.ComplexObject {
 }
 export interface JobTaskLibraryCran {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#package Job#package}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#package Job#package}
   */
   readonly package: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#repo Job#repo}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#repo Job#repo}
   */
   readonly repo?: string;
 }
@@ -13370,7 +13370,7 @@ export interface JobTaskLibraryCran {
 export function jobTaskLibraryCranToTerraform(struct?: JobTaskLibraryCranOutputReference | JobTaskLibraryCran): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     package: cdktn.stringToTerraform(struct!.package),
@@ -13382,7 +13382,7 @@ export function jobTaskLibraryCranToTerraform(struct?: JobTaskLibraryCranOutputR
 export function jobTaskLibraryCranToHclTerraform(struct?: JobTaskLibraryCranOutputReference | JobTaskLibraryCran): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     package: {
@@ -13472,15 +13472,15 @@ export class JobTaskLibraryCranOutputReference extends cdktn.ComplexObject {
 }
 export interface JobTaskLibraryMaven {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#coordinates Job#coordinates}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#coordinates Job#coordinates}
   */
   readonly coordinates: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#exclusions Job#exclusions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#exclusions Job#exclusions}
   */
   readonly exclusions?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#repo Job#repo}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#repo Job#repo}
   */
   readonly repo?: string;
 }
@@ -13488,7 +13488,7 @@ export interface JobTaskLibraryMaven {
 export function jobTaskLibraryMavenToTerraform(struct?: JobTaskLibraryMavenOutputReference | JobTaskLibraryMaven): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     coordinates: cdktn.stringToTerraform(struct!.coordinates),
@@ -13501,7 +13501,7 @@ export function jobTaskLibraryMavenToTerraform(struct?: JobTaskLibraryMavenOutpu
 export function jobTaskLibraryMavenToHclTerraform(struct?: JobTaskLibraryMavenOutputReference | JobTaskLibraryMaven): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     coordinates: {
@@ -13619,7 +13619,7 @@ export class JobTaskLibraryMavenOutputReference extends cdktn.ComplexObject {
 }
 export interface JobTaskLibraryProviderConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#workspace_id Job#workspace_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#workspace_id Job#workspace_id}
   */
   readonly workspaceId?: string;
 }
@@ -13627,7 +13627,7 @@ export interface JobTaskLibraryProviderConfig {
 export function jobTaskLibraryProviderConfigToTerraform(struct?: JobTaskLibraryProviderConfigOutputReference | JobTaskLibraryProviderConfig): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     workspace_id: cdktn.stringToTerraform(struct!.workspaceId),
@@ -13638,7 +13638,7 @@ export function jobTaskLibraryProviderConfigToTerraform(struct?: JobTaskLibraryP
 export function jobTaskLibraryProviderConfigToHclTerraform(struct?: JobTaskLibraryProviderConfigOutputReference | JobTaskLibraryProviderConfig): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     workspace_id: {
@@ -13703,11 +13703,11 @@ export class JobTaskLibraryProviderConfigOutputReference extends cdktn.ComplexOb
 }
 export interface JobTaskLibraryPypi {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#package Job#package}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#package Job#package}
   */
   readonly package: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#repo Job#repo}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#repo Job#repo}
   */
   readonly repo?: string;
 }
@@ -13715,7 +13715,7 @@ export interface JobTaskLibraryPypi {
 export function jobTaskLibraryPypiToTerraform(struct?: JobTaskLibraryPypiOutputReference | JobTaskLibraryPypi): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     package: cdktn.stringToTerraform(struct!.package),
@@ -13727,7 +13727,7 @@ export function jobTaskLibraryPypiToTerraform(struct?: JobTaskLibraryPypiOutputR
 export function jobTaskLibraryPypiToHclTerraform(struct?: JobTaskLibraryPypiOutputReference | JobTaskLibraryPypi): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     package: {
@@ -13817,43 +13817,43 @@ export class JobTaskLibraryPypiOutputReference extends cdktn.ComplexObject {
 }
 export interface JobTaskLibrary {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#egg Job#egg}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#egg Job#egg}
   */
   readonly egg?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#jar Job#jar}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#jar Job#jar}
   */
   readonly jar?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#requirements Job#requirements}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#requirements Job#requirements}
   */
   readonly requirements?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#whl Job#whl}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#whl Job#whl}
   */
   readonly whl?: string;
   /**
   * cran block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#cran Job#cran}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#cran Job#cran}
   */
   readonly cran?: JobTaskLibraryCran;
   /**
   * maven block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#maven Job#maven}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#maven Job#maven}
   */
   readonly maven?: JobTaskLibraryMaven;
   /**
   * provider_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#provider_config Job#provider_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#provider_config Job#provider_config}
   */
   readonly providerConfig?: JobTaskLibraryProviderConfig;
   /**
   * pypi block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#pypi Job#pypi}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#pypi Job#pypi}
   */
   readonly pypi?: JobTaskLibraryPypi;
 }
@@ -13861,7 +13861,7 @@ export interface JobTaskLibrary {
 export function jobTaskLibraryToTerraform(struct?: JobTaskLibrary | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     egg: cdktn.stringToTerraform(struct!.egg),
@@ -13879,7 +13879,7 @@ export function jobTaskLibraryToTerraform(struct?: JobTaskLibrary | cdktn.IResol
 export function jobTaskLibraryToHclTerraform(struct?: JobTaskLibrary | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     egg: {
@@ -14172,11 +14172,11 @@ export class JobTaskLibraryList extends cdktn.ComplexList {
 }
 export interface JobTaskNewClusterAutoscale {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#max_workers Job#max_workers}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#max_workers Job#max_workers}
   */
   readonly maxWorkers?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#min_workers Job#min_workers}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#min_workers Job#min_workers}
   */
   readonly minWorkers?: number;
 }
@@ -14184,7 +14184,7 @@ export interface JobTaskNewClusterAutoscale {
 export function jobTaskNewClusterAutoscaleToTerraform(struct?: JobTaskNewClusterAutoscaleOutputReference | JobTaskNewClusterAutoscale): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     max_workers: cdktn.numberToTerraform(struct!.maxWorkers),
@@ -14196,7 +14196,7 @@ export function jobTaskNewClusterAutoscaleToTerraform(struct?: JobTaskNewCluster
 export function jobTaskNewClusterAutoscaleToHclTerraform(struct?: JobTaskNewClusterAutoscaleOutputReference | JobTaskNewClusterAutoscale): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     max_workers: {
@@ -14289,43 +14289,43 @@ export class JobTaskNewClusterAutoscaleOutputReference extends cdktn.ComplexObje
 }
 export interface JobTaskNewClusterAwsAttributes {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#availability Job#availability}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#availability Job#availability}
   */
   readonly availability?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#ebs_volume_count Job#ebs_volume_count}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#ebs_volume_count Job#ebs_volume_count}
   */
   readonly ebsVolumeCount?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#ebs_volume_iops Job#ebs_volume_iops}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#ebs_volume_iops Job#ebs_volume_iops}
   */
   readonly ebsVolumeIops?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#ebs_volume_size Job#ebs_volume_size}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#ebs_volume_size Job#ebs_volume_size}
   */
   readonly ebsVolumeSize?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#ebs_volume_throughput Job#ebs_volume_throughput}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#ebs_volume_throughput Job#ebs_volume_throughput}
   */
   readonly ebsVolumeThroughput?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#ebs_volume_type Job#ebs_volume_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#ebs_volume_type Job#ebs_volume_type}
   */
   readonly ebsVolumeType?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#first_on_demand Job#first_on_demand}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#first_on_demand Job#first_on_demand}
   */
   readonly firstOnDemand?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#instance_profile_arn Job#instance_profile_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#instance_profile_arn Job#instance_profile_arn}
   */
   readonly instanceProfileArn?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#spot_bid_price_percent Job#spot_bid_price_percent}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#spot_bid_price_percent Job#spot_bid_price_percent}
   */
   readonly spotBidPricePercent?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#zone_id Job#zone_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#zone_id Job#zone_id}
   */
   readonly zoneId?: string;
 }
@@ -14333,7 +14333,7 @@ export interface JobTaskNewClusterAwsAttributes {
 export function jobTaskNewClusterAwsAttributesToTerraform(struct?: JobTaskNewClusterAwsAttributesOutputReference | JobTaskNewClusterAwsAttributes): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     availability: cdktn.stringToTerraform(struct!.availability),
@@ -14353,7 +14353,7 @@ export function jobTaskNewClusterAwsAttributesToTerraform(struct?: JobTaskNewClu
 export function jobTaskNewClusterAwsAttributesToHclTerraform(struct?: JobTaskNewClusterAwsAttributesOutputReference | JobTaskNewClusterAwsAttributes): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     availability: {
@@ -14670,11 +14670,11 @@ export class JobTaskNewClusterAwsAttributesOutputReference extends cdktn.Complex
 }
 export interface JobTaskNewClusterAzureAttributesLogAnalyticsInfo {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#log_analytics_primary_key Job#log_analytics_primary_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#log_analytics_primary_key Job#log_analytics_primary_key}
   */
   readonly logAnalyticsPrimaryKey?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#log_analytics_workspace_id Job#log_analytics_workspace_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#log_analytics_workspace_id Job#log_analytics_workspace_id}
   */
   readonly logAnalyticsWorkspaceId?: string;
 }
@@ -14682,7 +14682,7 @@ export interface JobTaskNewClusterAzureAttributesLogAnalyticsInfo {
 export function jobTaskNewClusterAzureAttributesLogAnalyticsInfoToTerraform(struct?: JobTaskNewClusterAzureAttributesLogAnalyticsInfoOutputReference | JobTaskNewClusterAzureAttributesLogAnalyticsInfo): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     log_analytics_primary_key: cdktn.stringToTerraform(struct!.logAnalyticsPrimaryKey),
@@ -14694,7 +14694,7 @@ export function jobTaskNewClusterAzureAttributesLogAnalyticsInfoToTerraform(stru
 export function jobTaskNewClusterAzureAttributesLogAnalyticsInfoToHclTerraform(struct?: JobTaskNewClusterAzureAttributesLogAnalyticsInfoOutputReference | JobTaskNewClusterAzureAttributesLogAnalyticsInfo): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     log_analytics_primary_key: {
@@ -14787,21 +14787,21 @@ export class JobTaskNewClusterAzureAttributesLogAnalyticsInfoOutputReference ext
 }
 export interface JobTaskNewClusterAzureAttributes {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#availability Job#availability}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#availability Job#availability}
   */
   readonly availability?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#first_on_demand Job#first_on_demand}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#first_on_demand Job#first_on_demand}
   */
   readonly firstOnDemand?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#spot_bid_max_price Job#spot_bid_max_price}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#spot_bid_max_price Job#spot_bid_max_price}
   */
   readonly spotBidMaxPrice?: number;
   /**
   * log_analytics_info block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#log_analytics_info Job#log_analytics_info}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#log_analytics_info Job#log_analytics_info}
   */
   readonly logAnalyticsInfo?: JobTaskNewClusterAzureAttributesLogAnalyticsInfo;
 }
@@ -14809,7 +14809,7 @@ export interface JobTaskNewClusterAzureAttributes {
 export function jobTaskNewClusterAzureAttributesToTerraform(struct?: JobTaskNewClusterAzureAttributesOutputReference | JobTaskNewClusterAzureAttributes): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     availability: cdktn.stringToTerraform(struct!.availability),
@@ -14823,7 +14823,7 @@ export function jobTaskNewClusterAzureAttributesToTerraform(struct?: JobTaskNewC
 export function jobTaskNewClusterAzureAttributesToHclTerraform(struct?: JobTaskNewClusterAzureAttributesOutputReference | JobTaskNewClusterAzureAttributes): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     availability: {
@@ -14972,7 +14972,7 @@ export class JobTaskNewClusterAzureAttributesOutputReference extends cdktn.Compl
 }
 export interface JobTaskNewClusterClusterLogConfDbfs {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#destination Job#destination}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#destination Job#destination}
   */
   readonly destination: string;
 }
@@ -14980,7 +14980,7 @@ export interface JobTaskNewClusterClusterLogConfDbfs {
 export function jobTaskNewClusterClusterLogConfDbfsToTerraform(struct?: JobTaskNewClusterClusterLogConfDbfsOutputReference | JobTaskNewClusterClusterLogConfDbfs): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     destination: cdktn.stringToTerraform(struct!.destination),
@@ -14991,7 +14991,7 @@ export function jobTaskNewClusterClusterLogConfDbfsToTerraform(struct?: JobTaskN
 export function jobTaskNewClusterClusterLogConfDbfsToHclTerraform(struct?: JobTaskNewClusterClusterLogConfDbfsOutputReference | JobTaskNewClusterClusterLogConfDbfs): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     destination: {
@@ -15053,31 +15053,31 @@ export class JobTaskNewClusterClusterLogConfDbfsOutputReference extends cdktn.Co
 }
 export interface JobTaskNewClusterClusterLogConfS3 {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#canned_acl Job#canned_acl}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#canned_acl Job#canned_acl}
   */
   readonly cannedAcl?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#destination Job#destination}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#destination Job#destination}
   */
   readonly destination: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#enable_encryption Job#enable_encryption}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#enable_encryption Job#enable_encryption}
   */
   readonly enableEncryption?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#encryption_type Job#encryption_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#encryption_type Job#encryption_type}
   */
   readonly encryptionType?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#endpoint Job#endpoint}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#endpoint Job#endpoint}
   */
   readonly endpoint?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#kms_key Job#kms_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#kms_key Job#kms_key}
   */
   readonly kmsKey?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#region Job#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#region Job#region}
   */
   readonly region?: string;
 }
@@ -15085,7 +15085,7 @@ export interface JobTaskNewClusterClusterLogConfS3 {
 export function jobTaskNewClusterClusterLogConfS3ToTerraform(struct?: JobTaskNewClusterClusterLogConfS3OutputReference | JobTaskNewClusterClusterLogConfS3): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     canned_acl: cdktn.stringToTerraform(struct!.cannedAcl),
@@ -15102,7 +15102,7 @@ export function jobTaskNewClusterClusterLogConfS3ToTerraform(struct?: JobTaskNew
 export function jobTaskNewClusterClusterLogConfS3ToHclTerraform(struct?: JobTaskNewClusterClusterLogConfS3OutputReference | JobTaskNewClusterClusterLogConfS3): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     canned_acl: {
@@ -15332,7 +15332,7 @@ export class JobTaskNewClusterClusterLogConfS3OutputReference extends cdktn.Comp
 }
 export interface JobTaskNewClusterClusterLogConfVolumes {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#destination Job#destination}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#destination Job#destination}
   */
   readonly destination: string;
 }
@@ -15340,7 +15340,7 @@ export interface JobTaskNewClusterClusterLogConfVolumes {
 export function jobTaskNewClusterClusterLogConfVolumesToTerraform(struct?: JobTaskNewClusterClusterLogConfVolumesOutputReference | JobTaskNewClusterClusterLogConfVolumes): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     destination: cdktn.stringToTerraform(struct!.destination),
@@ -15351,7 +15351,7 @@ export function jobTaskNewClusterClusterLogConfVolumesToTerraform(struct?: JobTa
 export function jobTaskNewClusterClusterLogConfVolumesToHclTerraform(struct?: JobTaskNewClusterClusterLogConfVolumesOutputReference | JobTaskNewClusterClusterLogConfVolumes): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     destination: {
@@ -15415,19 +15415,19 @@ export interface JobTaskNewClusterClusterLogConf {
   /**
   * dbfs block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#dbfs Job#dbfs}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#dbfs Job#dbfs}
   */
   readonly dbfs?: JobTaskNewClusterClusterLogConfDbfs;
   /**
   * s3 block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#s3 Job#s3}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#s3 Job#s3}
   */
   readonly s3?: JobTaskNewClusterClusterLogConfS3;
   /**
   * volumes block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#volumes Job#volumes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#volumes Job#volumes}
   */
   readonly volumes?: JobTaskNewClusterClusterLogConfVolumes;
 }
@@ -15435,7 +15435,7 @@ export interface JobTaskNewClusterClusterLogConf {
 export function jobTaskNewClusterClusterLogConfToTerraform(struct?: JobTaskNewClusterClusterLogConfOutputReference | JobTaskNewClusterClusterLogConf): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     dbfs: jobTaskNewClusterClusterLogConfDbfsToTerraform(struct!.dbfs),
@@ -15448,7 +15448,7 @@ export function jobTaskNewClusterClusterLogConfToTerraform(struct?: JobTaskNewCl
 export function jobTaskNewClusterClusterLogConfToHclTerraform(struct?: JobTaskNewClusterClusterLogConfOutputReference | JobTaskNewClusterClusterLogConf): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     dbfs: {
@@ -15569,11 +15569,11 @@ export class JobTaskNewClusterClusterLogConfOutputReference extends cdktn.Comple
 }
 export interface JobTaskNewClusterClusterMountInfoNetworkFilesystemInfo {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#mount_options Job#mount_options}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#mount_options Job#mount_options}
   */
   readonly mountOptions?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#server_address Job#server_address}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#server_address Job#server_address}
   */
   readonly serverAddress: string;
 }
@@ -15581,7 +15581,7 @@ export interface JobTaskNewClusterClusterMountInfoNetworkFilesystemInfo {
 export function jobTaskNewClusterClusterMountInfoNetworkFilesystemInfoToTerraform(struct?: JobTaskNewClusterClusterMountInfoNetworkFilesystemInfoOutputReference | JobTaskNewClusterClusterMountInfoNetworkFilesystemInfo): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     mount_options: cdktn.stringToTerraform(struct!.mountOptions),
@@ -15593,7 +15593,7 @@ export function jobTaskNewClusterClusterMountInfoNetworkFilesystemInfoToTerrafor
 export function jobTaskNewClusterClusterMountInfoNetworkFilesystemInfoToHclTerraform(struct?: JobTaskNewClusterClusterMountInfoNetworkFilesystemInfoOutputReference | JobTaskNewClusterClusterMountInfoNetworkFilesystemInfo): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     mount_options: {
@@ -15683,17 +15683,17 @@ export class JobTaskNewClusterClusterMountInfoNetworkFilesystemInfoOutputReferen
 }
 export interface JobTaskNewClusterClusterMountInfo {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#local_mount_dir_path Job#local_mount_dir_path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#local_mount_dir_path Job#local_mount_dir_path}
   */
   readonly localMountDirPath: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#remote_mount_dir_path Job#remote_mount_dir_path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#remote_mount_dir_path Job#remote_mount_dir_path}
   */
   readonly remoteMountDirPath?: string;
   /**
   * network_filesystem_info block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#network_filesystem_info Job#network_filesystem_info}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#network_filesystem_info Job#network_filesystem_info}
   */
   readonly networkFilesystemInfo: JobTaskNewClusterClusterMountInfoNetworkFilesystemInfo;
 }
@@ -15701,7 +15701,7 @@ export interface JobTaskNewClusterClusterMountInfo {
 export function jobTaskNewClusterClusterMountInfoToTerraform(struct?: JobTaskNewClusterClusterMountInfo | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     local_mount_dir_path: cdktn.stringToTerraform(struct!.localMountDirPath),
@@ -15714,7 +15714,7 @@ export function jobTaskNewClusterClusterMountInfoToTerraform(struct?: JobTaskNew
 export function jobTaskNewClusterClusterMountInfoToHclTerraform(struct?: JobTaskNewClusterClusterMountInfo | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     local_mount_dir_path: {
@@ -15861,11 +15861,11 @@ export class JobTaskNewClusterClusterMountInfoList extends cdktn.ComplexList {
 }
 export interface JobTaskNewClusterDockerImageBasicAuth {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#password Job#password}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#password Job#password}
   */
   readonly password: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#username Job#username}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#username Job#username}
   */
   readonly username: string;
 }
@@ -15873,7 +15873,7 @@ export interface JobTaskNewClusterDockerImageBasicAuth {
 export function jobTaskNewClusterDockerImageBasicAuthToTerraform(struct?: JobTaskNewClusterDockerImageBasicAuthOutputReference | JobTaskNewClusterDockerImageBasicAuth): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     password: cdktn.stringToTerraform(struct!.password),
@@ -15885,7 +15885,7 @@ export function jobTaskNewClusterDockerImageBasicAuthToTerraform(struct?: JobTas
 export function jobTaskNewClusterDockerImageBasicAuthToHclTerraform(struct?: JobTaskNewClusterDockerImageBasicAuthOutputReference | JobTaskNewClusterDockerImageBasicAuth): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     password: {
@@ -15972,13 +15972,13 @@ export class JobTaskNewClusterDockerImageBasicAuthOutputReference extends cdktn.
 }
 export interface JobTaskNewClusterDockerImage {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#url Job#url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#url Job#url}
   */
   readonly url: string;
   /**
   * basic_auth block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#basic_auth Job#basic_auth}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#basic_auth Job#basic_auth}
   */
   readonly basicAuth?: JobTaskNewClusterDockerImageBasicAuth;
 }
@@ -15986,7 +15986,7 @@ export interface JobTaskNewClusterDockerImage {
 export function jobTaskNewClusterDockerImageToTerraform(struct?: JobTaskNewClusterDockerImageOutputReference | JobTaskNewClusterDockerImage): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     url: cdktn.stringToTerraform(struct!.url),
@@ -15998,7 +15998,7 @@ export function jobTaskNewClusterDockerImageToTerraform(struct?: JobTaskNewClust
 export function jobTaskNewClusterDockerImageToHclTerraform(struct?: JobTaskNewClusterDockerImageOutputReference | JobTaskNewClusterDockerImage): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     url: {
@@ -16088,7 +16088,7 @@ export class JobTaskNewClusterDockerImageOutputReference extends cdktn.ComplexOb
 }
 export interface JobTaskNewClusterDriverNodeTypeFlexibility {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#alternate_node_type_ids Job#alternate_node_type_ids}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#alternate_node_type_ids Job#alternate_node_type_ids}
   */
   readonly alternateNodeTypeIds?: string[];
 }
@@ -16096,7 +16096,7 @@ export interface JobTaskNewClusterDriverNodeTypeFlexibility {
 export function jobTaskNewClusterDriverNodeTypeFlexibilityToTerraform(struct?: JobTaskNewClusterDriverNodeTypeFlexibilityOutputReference | JobTaskNewClusterDriverNodeTypeFlexibility): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     alternate_node_type_ids: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.alternateNodeTypeIds),
@@ -16107,7 +16107,7 @@ export function jobTaskNewClusterDriverNodeTypeFlexibilityToTerraform(struct?: J
 export function jobTaskNewClusterDriverNodeTypeFlexibilityToHclTerraform(struct?: JobTaskNewClusterDriverNodeTypeFlexibilityOutputReference | JobTaskNewClusterDriverNodeTypeFlexibility): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     alternate_node_type_ids: {
@@ -16172,35 +16172,35 @@ export class JobTaskNewClusterDriverNodeTypeFlexibilityOutputReference extends c
 }
 export interface JobTaskNewClusterGcpAttributes {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#availability Job#availability}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#availability Job#availability}
   */
   readonly availability?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#boot_disk_size Job#boot_disk_size}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#boot_disk_size Job#boot_disk_size}
   */
   readonly bootDiskSize?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#confidential_compute_type Job#confidential_compute_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#confidential_compute_type Job#confidential_compute_type}
   */
   readonly confidentialComputeType?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#first_on_demand Job#first_on_demand}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#first_on_demand Job#first_on_demand}
   */
   readonly firstOnDemand?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#google_service_account Job#google_service_account}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#google_service_account Job#google_service_account}
   */
   readonly googleServiceAccount?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#local_ssd_count Job#local_ssd_count}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#local_ssd_count Job#local_ssd_count}
   */
   readonly localSsdCount?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#use_preemptible_executors Job#use_preemptible_executors}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#use_preemptible_executors Job#use_preemptible_executors}
   */
   readonly usePreemptibleExecutors?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#zone_id Job#zone_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#zone_id Job#zone_id}
   */
   readonly zoneId?: string;
 }
@@ -16208,7 +16208,7 @@ export interface JobTaskNewClusterGcpAttributes {
 export function jobTaskNewClusterGcpAttributesToTerraform(struct?: JobTaskNewClusterGcpAttributesOutputReference | JobTaskNewClusterGcpAttributes): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     availability: cdktn.stringToTerraform(struct!.availability),
@@ -16226,7 +16226,7 @@ export function jobTaskNewClusterGcpAttributesToTerraform(struct?: JobTaskNewClu
 export function jobTaskNewClusterGcpAttributesToHclTerraform(struct?: JobTaskNewClusterGcpAttributesOutputReference | JobTaskNewClusterGcpAttributes): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     availability: {
@@ -16487,7 +16487,7 @@ export class JobTaskNewClusterGcpAttributesOutputReference extends cdktn.Complex
 }
 export interface JobTaskNewClusterInitScriptsAbfss {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#destination Job#destination}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#destination Job#destination}
   */
   readonly destination: string;
 }
@@ -16495,7 +16495,7 @@ export interface JobTaskNewClusterInitScriptsAbfss {
 export function jobTaskNewClusterInitScriptsAbfssToTerraform(struct?: JobTaskNewClusterInitScriptsAbfssOutputReference | JobTaskNewClusterInitScriptsAbfss): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     destination: cdktn.stringToTerraform(struct!.destination),
@@ -16506,7 +16506,7 @@ export function jobTaskNewClusterInitScriptsAbfssToTerraform(struct?: JobTaskNew
 export function jobTaskNewClusterInitScriptsAbfssToHclTerraform(struct?: JobTaskNewClusterInitScriptsAbfssOutputReference | JobTaskNewClusterInitScriptsAbfss): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     destination: {
@@ -16568,7 +16568,7 @@ export class JobTaskNewClusterInitScriptsAbfssOutputReference extends cdktn.Comp
 }
 export interface JobTaskNewClusterInitScriptsDbfs {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#destination Job#destination}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#destination Job#destination}
   */
   readonly destination: string;
 }
@@ -16576,7 +16576,7 @@ export interface JobTaskNewClusterInitScriptsDbfs {
 export function jobTaskNewClusterInitScriptsDbfsToTerraform(struct?: JobTaskNewClusterInitScriptsDbfsOutputReference | JobTaskNewClusterInitScriptsDbfs): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     destination: cdktn.stringToTerraform(struct!.destination),
@@ -16587,7 +16587,7 @@ export function jobTaskNewClusterInitScriptsDbfsToTerraform(struct?: JobTaskNewC
 export function jobTaskNewClusterInitScriptsDbfsToHclTerraform(struct?: JobTaskNewClusterInitScriptsDbfsOutputReference | JobTaskNewClusterInitScriptsDbfs): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     destination: {
@@ -16649,7 +16649,7 @@ export class JobTaskNewClusterInitScriptsDbfsOutputReference extends cdktn.Compl
 }
 export interface JobTaskNewClusterInitScriptsFile {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#destination Job#destination}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#destination Job#destination}
   */
   readonly destination: string;
 }
@@ -16657,7 +16657,7 @@ export interface JobTaskNewClusterInitScriptsFile {
 export function jobTaskNewClusterInitScriptsFileToTerraform(struct?: JobTaskNewClusterInitScriptsFileOutputReference | JobTaskNewClusterInitScriptsFile): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     destination: cdktn.stringToTerraform(struct!.destination),
@@ -16668,7 +16668,7 @@ export function jobTaskNewClusterInitScriptsFileToTerraform(struct?: JobTaskNewC
 export function jobTaskNewClusterInitScriptsFileToHclTerraform(struct?: JobTaskNewClusterInitScriptsFileOutputReference | JobTaskNewClusterInitScriptsFile): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     destination: {
@@ -16730,7 +16730,7 @@ export class JobTaskNewClusterInitScriptsFileOutputReference extends cdktn.Compl
 }
 export interface JobTaskNewClusterInitScriptsGcs {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#destination Job#destination}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#destination Job#destination}
   */
   readonly destination: string;
 }
@@ -16738,7 +16738,7 @@ export interface JobTaskNewClusterInitScriptsGcs {
 export function jobTaskNewClusterInitScriptsGcsToTerraform(struct?: JobTaskNewClusterInitScriptsGcsOutputReference | JobTaskNewClusterInitScriptsGcs): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     destination: cdktn.stringToTerraform(struct!.destination),
@@ -16749,7 +16749,7 @@ export function jobTaskNewClusterInitScriptsGcsToTerraform(struct?: JobTaskNewCl
 export function jobTaskNewClusterInitScriptsGcsToHclTerraform(struct?: JobTaskNewClusterInitScriptsGcsOutputReference | JobTaskNewClusterInitScriptsGcs): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     destination: {
@@ -16811,31 +16811,31 @@ export class JobTaskNewClusterInitScriptsGcsOutputReference extends cdktn.Comple
 }
 export interface JobTaskNewClusterInitScriptsS3 {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#canned_acl Job#canned_acl}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#canned_acl Job#canned_acl}
   */
   readonly cannedAcl?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#destination Job#destination}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#destination Job#destination}
   */
   readonly destination: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#enable_encryption Job#enable_encryption}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#enable_encryption Job#enable_encryption}
   */
   readonly enableEncryption?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#encryption_type Job#encryption_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#encryption_type Job#encryption_type}
   */
   readonly encryptionType?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#endpoint Job#endpoint}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#endpoint Job#endpoint}
   */
   readonly endpoint?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#kms_key Job#kms_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#kms_key Job#kms_key}
   */
   readonly kmsKey?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#region Job#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#region Job#region}
   */
   readonly region?: string;
 }
@@ -16843,7 +16843,7 @@ export interface JobTaskNewClusterInitScriptsS3 {
 export function jobTaskNewClusterInitScriptsS3ToTerraform(struct?: JobTaskNewClusterInitScriptsS3OutputReference | JobTaskNewClusterInitScriptsS3): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     canned_acl: cdktn.stringToTerraform(struct!.cannedAcl),
@@ -16860,7 +16860,7 @@ export function jobTaskNewClusterInitScriptsS3ToTerraform(struct?: JobTaskNewClu
 export function jobTaskNewClusterInitScriptsS3ToHclTerraform(struct?: JobTaskNewClusterInitScriptsS3OutputReference | JobTaskNewClusterInitScriptsS3): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     canned_acl: {
@@ -17090,7 +17090,7 @@ export class JobTaskNewClusterInitScriptsS3OutputReference extends cdktn.Complex
 }
 export interface JobTaskNewClusterInitScriptsVolumes {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#destination Job#destination}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#destination Job#destination}
   */
   readonly destination: string;
 }
@@ -17098,7 +17098,7 @@ export interface JobTaskNewClusterInitScriptsVolumes {
 export function jobTaskNewClusterInitScriptsVolumesToTerraform(struct?: JobTaskNewClusterInitScriptsVolumesOutputReference | JobTaskNewClusterInitScriptsVolumes): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     destination: cdktn.stringToTerraform(struct!.destination),
@@ -17109,7 +17109,7 @@ export function jobTaskNewClusterInitScriptsVolumesToTerraform(struct?: JobTaskN
 export function jobTaskNewClusterInitScriptsVolumesToHclTerraform(struct?: JobTaskNewClusterInitScriptsVolumesOutputReference | JobTaskNewClusterInitScriptsVolumes): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     destination: {
@@ -17171,7 +17171,7 @@ export class JobTaskNewClusterInitScriptsVolumesOutputReference extends cdktn.Co
 }
 export interface JobTaskNewClusterInitScriptsWorkspace {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#destination Job#destination}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#destination Job#destination}
   */
   readonly destination: string;
 }
@@ -17179,7 +17179,7 @@ export interface JobTaskNewClusterInitScriptsWorkspace {
 export function jobTaskNewClusterInitScriptsWorkspaceToTerraform(struct?: JobTaskNewClusterInitScriptsWorkspaceOutputReference | JobTaskNewClusterInitScriptsWorkspace): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     destination: cdktn.stringToTerraform(struct!.destination),
@@ -17190,7 +17190,7 @@ export function jobTaskNewClusterInitScriptsWorkspaceToTerraform(struct?: JobTas
 export function jobTaskNewClusterInitScriptsWorkspaceToHclTerraform(struct?: JobTaskNewClusterInitScriptsWorkspaceOutputReference | JobTaskNewClusterInitScriptsWorkspace): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     destination: {
@@ -17254,43 +17254,43 @@ export interface JobTaskNewClusterInitScripts {
   /**
   * abfss block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#abfss Job#abfss}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#abfss Job#abfss}
   */
   readonly abfss?: JobTaskNewClusterInitScriptsAbfss;
   /**
   * dbfs block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#dbfs Job#dbfs}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#dbfs Job#dbfs}
   */
   readonly dbfs?: JobTaskNewClusterInitScriptsDbfs;
   /**
   * file block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#file Job#file}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#file Job#file}
   */
   readonly file?: JobTaskNewClusterInitScriptsFile;
   /**
   * gcs block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#gcs Job#gcs}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#gcs Job#gcs}
   */
   readonly gcs?: JobTaskNewClusterInitScriptsGcs;
   /**
   * s3 block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#s3 Job#s3}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#s3 Job#s3}
   */
   readonly s3?: JobTaskNewClusterInitScriptsS3;
   /**
   * volumes block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#volumes Job#volumes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#volumes Job#volumes}
   */
   readonly volumes?: JobTaskNewClusterInitScriptsVolumes;
   /**
   * workspace block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#workspace Job#workspace}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#workspace Job#workspace}
   */
   readonly workspace?: JobTaskNewClusterInitScriptsWorkspace;
 }
@@ -17298,7 +17298,7 @@ export interface JobTaskNewClusterInitScripts {
 export function jobTaskNewClusterInitScriptsToTerraform(struct?: JobTaskNewClusterInitScripts | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     abfss: jobTaskNewClusterInitScriptsAbfssToTerraform(struct!.abfss),
@@ -17315,7 +17315,7 @@ export function jobTaskNewClusterInitScriptsToTerraform(struct?: JobTaskNewClust
 export function jobTaskNewClusterInitScriptsToHclTerraform(struct?: JobTaskNewClusterInitScripts | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     abfss: {
@@ -17580,11 +17580,11 @@ export class JobTaskNewClusterInitScriptsList extends cdktn.ComplexList {
 }
 export interface JobTaskNewClusterLibraryCran {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#package Job#package}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#package Job#package}
   */
   readonly package: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#repo Job#repo}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#repo Job#repo}
   */
   readonly repo?: string;
 }
@@ -17592,7 +17592,7 @@ export interface JobTaskNewClusterLibraryCran {
 export function jobTaskNewClusterLibraryCranToTerraform(struct?: JobTaskNewClusterLibraryCranOutputReference | JobTaskNewClusterLibraryCran): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     package: cdktn.stringToTerraform(struct!.package),
@@ -17604,7 +17604,7 @@ export function jobTaskNewClusterLibraryCranToTerraform(struct?: JobTaskNewClust
 export function jobTaskNewClusterLibraryCranToHclTerraform(struct?: JobTaskNewClusterLibraryCranOutputReference | JobTaskNewClusterLibraryCran): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     package: {
@@ -17694,15 +17694,15 @@ export class JobTaskNewClusterLibraryCranOutputReference extends cdktn.ComplexOb
 }
 export interface JobTaskNewClusterLibraryMaven {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#coordinates Job#coordinates}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#coordinates Job#coordinates}
   */
   readonly coordinates: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#exclusions Job#exclusions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#exclusions Job#exclusions}
   */
   readonly exclusions?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#repo Job#repo}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#repo Job#repo}
   */
   readonly repo?: string;
 }
@@ -17710,7 +17710,7 @@ export interface JobTaskNewClusterLibraryMaven {
 export function jobTaskNewClusterLibraryMavenToTerraform(struct?: JobTaskNewClusterLibraryMavenOutputReference | JobTaskNewClusterLibraryMaven): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     coordinates: cdktn.stringToTerraform(struct!.coordinates),
@@ -17723,7 +17723,7 @@ export function jobTaskNewClusterLibraryMavenToTerraform(struct?: JobTaskNewClus
 export function jobTaskNewClusterLibraryMavenToHclTerraform(struct?: JobTaskNewClusterLibraryMavenOutputReference | JobTaskNewClusterLibraryMaven): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     coordinates: {
@@ -17841,7 +17841,7 @@ export class JobTaskNewClusterLibraryMavenOutputReference extends cdktn.ComplexO
 }
 export interface JobTaskNewClusterLibraryProviderConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#workspace_id Job#workspace_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#workspace_id Job#workspace_id}
   */
   readonly workspaceId?: string;
 }
@@ -17849,7 +17849,7 @@ export interface JobTaskNewClusterLibraryProviderConfig {
 export function jobTaskNewClusterLibraryProviderConfigToTerraform(struct?: JobTaskNewClusterLibraryProviderConfigOutputReference | JobTaskNewClusterLibraryProviderConfig): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     workspace_id: cdktn.stringToTerraform(struct!.workspaceId),
@@ -17860,7 +17860,7 @@ export function jobTaskNewClusterLibraryProviderConfigToTerraform(struct?: JobTa
 export function jobTaskNewClusterLibraryProviderConfigToHclTerraform(struct?: JobTaskNewClusterLibraryProviderConfigOutputReference | JobTaskNewClusterLibraryProviderConfig): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     workspace_id: {
@@ -17925,11 +17925,11 @@ export class JobTaskNewClusterLibraryProviderConfigOutputReference extends cdktn
 }
 export interface JobTaskNewClusterLibraryPypi {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#package Job#package}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#package Job#package}
   */
   readonly package: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#repo Job#repo}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#repo Job#repo}
   */
   readonly repo?: string;
 }
@@ -17937,7 +17937,7 @@ export interface JobTaskNewClusterLibraryPypi {
 export function jobTaskNewClusterLibraryPypiToTerraform(struct?: JobTaskNewClusterLibraryPypiOutputReference | JobTaskNewClusterLibraryPypi): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     package: cdktn.stringToTerraform(struct!.package),
@@ -17949,7 +17949,7 @@ export function jobTaskNewClusterLibraryPypiToTerraform(struct?: JobTaskNewClust
 export function jobTaskNewClusterLibraryPypiToHclTerraform(struct?: JobTaskNewClusterLibraryPypiOutputReference | JobTaskNewClusterLibraryPypi): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     package: {
@@ -18039,43 +18039,43 @@ export class JobTaskNewClusterLibraryPypiOutputReference extends cdktn.ComplexOb
 }
 export interface JobTaskNewClusterLibrary {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#egg Job#egg}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#egg Job#egg}
   */
   readonly egg?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#jar Job#jar}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#jar Job#jar}
   */
   readonly jar?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#requirements Job#requirements}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#requirements Job#requirements}
   */
   readonly requirements?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#whl Job#whl}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#whl Job#whl}
   */
   readonly whl?: string;
   /**
   * cran block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#cran Job#cran}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#cran Job#cran}
   */
   readonly cran?: JobTaskNewClusterLibraryCran;
   /**
   * maven block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#maven Job#maven}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#maven Job#maven}
   */
   readonly maven?: JobTaskNewClusterLibraryMaven;
   /**
   * provider_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#provider_config Job#provider_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#provider_config Job#provider_config}
   */
   readonly providerConfig?: JobTaskNewClusterLibraryProviderConfig;
   /**
   * pypi block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#pypi Job#pypi}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#pypi Job#pypi}
   */
   readonly pypi?: JobTaskNewClusterLibraryPypi;
 }
@@ -18083,7 +18083,7 @@ export interface JobTaskNewClusterLibrary {
 export function jobTaskNewClusterLibraryToTerraform(struct?: JobTaskNewClusterLibrary | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     egg: cdktn.stringToTerraform(struct!.egg),
@@ -18101,7 +18101,7 @@ export function jobTaskNewClusterLibraryToTerraform(struct?: JobTaskNewClusterLi
 export function jobTaskNewClusterLibraryToHclTerraform(struct?: JobTaskNewClusterLibrary | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     egg: {
@@ -18394,7 +18394,7 @@ export class JobTaskNewClusterLibraryList extends cdktn.ComplexList {
 }
 export interface JobTaskNewClusterProviderConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#workspace_id Job#workspace_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#workspace_id Job#workspace_id}
   */
   readonly workspaceId?: string;
 }
@@ -18402,7 +18402,7 @@ export interface JobTaskNewClusterProviderConfig {
 export function jobTaskNewClusterProviderConfigToTerraform(struct?: JobTaskNewClusterProviderConfigOutputReference | JobTaskNewClusterProviderConfig): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     workspace_id: cdktn.stringToTerraform(struct!.workspaceId),
@@ -18413,7 +18413,7 @@ export function jobTaskNewClusterProviderConfigToTerraform(struct?: JobTaskNewCl
 export function jobTaskNewClusterProviderConfigToHclTerraform(struct?: JobTaskNewClusterProviderConfigOutputReference | JobTaskNewClusterProviderConfig): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     workspace_id: {
@@ -18478,7 +18478,7 @@ export class JobTaskNewClusterProviderConfigOutputReference extends cdktn.Comple
 }
 export interface JobTaskNewClusterWorkerNodeTypeFlexibility {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#alternate_node_type_ids Job#alternate_node_type_ids}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#alternate_node_type_ids Job#alternate_node_type_ids}
   */
   readonly alternateNodeTypeIds?: string[];
 }
@@ -18486,7 +18486,7 @@ export interface JobTaskNewClusterWorkerNodeTypeFlexibility {
 export function jobTaskNewClusterWorkerNodeTypeFlexibilityToTerraform(struct?: JobTaskNewClusterWorkerNodeTypeFlexibilityOutputReference | JobTaskNewClusterWorkerNodeTypeFlexibility): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     alternate_node_type_ids: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.alternateNodeTypeIds),
@@ -18497,7 +18497,7 @@ export function jobTaskNewClusterWorkerNodeTypeFlexibilityToTerraform(struct?: J
 export function jobTaskNewClusterWorkerNodeTypeFlexibilityToHclTerraform(struct?: JobTaskNewClusterWorkerNodeTypeFlexibilityOutputReference | JobTaskNewClusterWorkerNodeTypeFlexibility): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     alternate_node_type_ids: {
@@ -18562,11 +18562,11 @@ export class JobTaskNewClusterWorkerNodeTypeFlexibilityOutputReference extends c
 }
 export interface JobTaskNewClusterWorkloadTypeClients {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#jobs Job#jobs}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#jobs Job#jobs}
   */
   readonly jobs?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#notebooks Job#notebooks}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#notebooks Job#notebooks}
   */
   readonly notebooks?: boolean | cdktn.IResolvable;
 }
@@ -18574,7 +18574,7 @@ export interface JobTaskNewClusterWorkloadTypeClients {
 export function jobTaskNewClusterWorkloadTypeClientsToTerraform(struct?: JobTaskNewClusterWorkloadTypeClientsOutputReference | JobTaskNewClusterWorkloadTypeClients): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     jobs: cdktn.booleanToTerraform(struct!.jobs),
@@ -18586,7 +18586,7 @@ export function jobTaskNewClusterWorkloadTypeClientsToTerraform(struct?: JobTask
 export function jobTaskNewClusterWorkloadTypeClientsToHclTerraform(struct?: JobTaskNewClusterWorkloadTypeClientsOutputReference | JobTaskNewClusterWorkloadTypeClients): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     jobs: {
@@ -18681,7 +18681,7 @@ export interface JobTaskNewClusterWorkloadType {
   /**
   * clients block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#clients Job#clients}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#clients Job#clients}
   */
   readonly clients: JobTaskNewClusterWorkloadTypeClients;
 }
@@ -18689,7 +18689,7 @@ export interface JobTaskNewClusterWorkloadType {
 export function jobTaskNewClusterWorkloadTypeToTerraform(struct?: JobTaskNewClusterWorkloadTypeOutputReference | JobTaskNewClusterWorkloadType): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     clients: jobTaskNewClusterWorkloadTypeClientsToTerraform(struct!.clients),
@@ -18700,7 +18700,7 @@ export function jobTaskNewClusterWorkloadTypeToTerraform(struct?: JobTaskNewClus
 export function jobTaskNewClusterWorkloadTypeToHclTerraform(struct?: JobTaskNewClusterWorkloadTypeOutputReference | JobTaskNewClusterWorkloadType): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     clients: {
@@ -18762,185 +18762,185 @@ export class JobTaskNewClusterWorkloadTypeOutputReference extends cdktn.ComplexO
 }
 export interface JobTaskNewCluster {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#__apply_policy_default_values_allow_list Job#__apply_policy_default_values_allow_list}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#__apply_policy_default_values_allow_list Job#__apply_policy_default_values_allow_list}
   */
   readonly applyPolicyDefaultValuesAllowList?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#apply_policy_default_values Job#apply_policy_default_values}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#apply_policy_default_values Job#apply_policy_default_values}
   */
   readonly applyPolicyDefaultValues?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#cluster_id Job#cluster_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#cluster_id Job#cluster_id}
   */
   readonly clusterId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#cluster_name Job#cluster_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#cluster_name Job#cluster_name}
   */
   readonly clusterName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#custom_tags Job#custom_tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#custom_tags Job#custom_tags}
   */
   readonly customTags?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#data_security_mode Job#data_security_mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#data_security_mode Job#data_security_mode}
   */
   readonly dataSecurityMode?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#driver_instance_pool_id Job#driver_instance_pool_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#driver_instance_pool_id Job#driver_instance_pool_id}
   */
   readonly driverInstancePoolId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#driver_node_type_id Job#driver_node_type_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#driver_node_type_id Job#driver_node_type_id}
   */
   readonly driverNodeTypeId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#enable_elastic_disk Job#enable_elastic_disk}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#enable_elastic_disk Job#enable_elastic_disk}
   */
   readonly enableElasticDisk?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#enable_local_disk_encryption Job#enable_local_disk_encryption}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#enable_local_disk_encryption Job#enable_local_disk_encryption}
   */
   readonly enableLocalDiskEncryption?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#idempotency_token Job#idempotency_token}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#idempotency_token Job#idempotency_token}
   */
   readonly idempotencyToken?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#instance_pool_id Job#instance_pool_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#instance_pool_id Job#instance_pool_id}
   */
   readonly instancePoolId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#is_single_node Job#is_single_node}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#is_single_node Job#is_single_node}
   */
   readonly isSingleNode?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#kind Job#kind}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#kind Job#kind}
   */
   readonly kind?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#node_type_id Job#node_type_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#node_type_id Job#node_type_id}
   */
   readonly nodeTypeId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#num_workers Job#num_workers}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#num_workers Job#num_workers}
   */
   readonly numWorkers?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#policy_id Job#policy_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#policy_id Job#policy_id}
   */
   readonly policyId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#remote_disk_throughput Job#remote_disk_throughput}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#remote_disk_throughput Job#remote_disk_throughput}
   */
   readonly remoteDiskThroughput?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#runtime_engine Job#runtime_engine}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#runtime_engine Job#runtime_engine}
   */
   readonly runtimeEngine?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#single_user_name Job#single_user_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#single_user_name Job#single_user_name}
   */
   readonly singleUserName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#spark_conf Job#spark_conf}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#spark_conf Job#spark_conf}
   */
   readonly sparkConf?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#spark_env_vars Job#spark_env_vars}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#spark_env_vars Job#spark_env_vars}
   */
   readonly sparkEnvVars?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#spark_version Job#spark_version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#spark_version Job#spark_version}
   */
   readonly sparkVersion?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#ssh_public_keys Job#ssh_public_keys}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#ssh_public_keys Job#ssh_public_keys}
   */
   readonly sshPublicKeys?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#total_initial_remote_disk_size Job#total_initial_remote_disk_size}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#total_initial_remote_disk_size Job#total_initial_remote_disk_size}
   */
   readonly totalInitialRemoteDiskSize?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#use_ml_runtime Job#use_ml_runtime}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#use_ml_runtime Job#use_ml_runtime}
   */
   readonly useMlRuntime?: boolean | cdktn.IResolvable;
   /**
   * autoscale block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#autoscale Job#autoscale}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#autoscale Job#autoscale}
   */
   readonly autoscale?: JobTaskNewClusterAutoscale;
   /**
   * aws_attributes block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#aws_attributes Job#aws_attributes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#aws_attributes Job#aws_attributes}
   */
   readonly awsAttributes?: JobTaskNewClusterAwsAttributes;
   /**
   * azure_attributes block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#azure_attributes Job#azure_attributes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#azure_attributes Job#azure_attributes}
   */
   readonly azureAttributes?: JobTaskNewClusterAzureAttributes;
   /**
   * cluster_log_conf block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#cluster_log_conf Job#cluster_log_conf}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#cluster_log_conf Job#cluster_log_conf}
   */
   readonly clusterLogConf?: JobTaskNewClusterClusterLogConf;
   /**
   * cluster_mount_info block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#cluster_mount_info Job#cluster_mount_info}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#cluster_mount_info Job#cluster_mount_info}
   */
   readonly clusterMountInfo?: JobTaskNewClusterClusterMountInfo[] | cdktn.IResolvable;
   /**
   * docker_image block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#docker_image Job#docker_image}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#docker_image Job#docker_image}
   */
   readonly dockerImage?: JobTaskNewClusterDockerImage;
   /**
   * driver_node_type_flexibility block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#driver_node_type_flexibility Job#driver_node_type_flexibility}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#driver_node_type_flexibility Job#driver_node_type_flexibility}
   */
   readonly driverNodeTypeFlexibility?: JobTaskNewClusterDriverNodeTypeFlexibility;
   /**
   * gcp_attributes block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#gcp_attributes Job#gcp_attributes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#gcp_attributes Job#gcp_attributes}
   */
   readonly gcpAttributes?: JobTaskNewClusterGcpAttributes;
   /**
   * init_scripts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#init_scripts Job#init_scripts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#init_scripts Job#init_scripts}
   */
   readonly initScripts?: JobTaskNewClusterInitScripts[] | cdktn.IResolvable;
   /**
   * library block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#library Job#library}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#library Job#library}
   */
   readonly library?: JobTaskNewClusterLibrary[] | cdktn.IResolvable;
   /**
   * provider_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#provider_config Job#provider_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#provider_config Job#provider_config}
   */
   readonly providerConfig?: JobTaskNewClusterProviderConfig;
   /**
   * worker_node_type_flexibility block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#worker_node_type_flexibility Job#worker_node_type_flexibility}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#worker_node_type_flexibility Job#worker_node_type_flexibility}
   */
   readonly workerNodeTypeFlexibility?: JobTaskNewClusterWorkerNodeTypeFlexibility;
   /**
   * workload_type block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#workload_type Job#workload_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#workload_type Job#workload_type}
   */
   readonly workloadType?: JobTaskNewClusterWorkloadType;
 }
@@ -18948,7 +18948,7 @@ export interface JobTaskNewCluster {
 export function jobTaskNewClusterToTerraform(struct?: JobTaskNewClusterOutputReference | JobTaskNewCluster): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     __apply_policy_default_values_allow_list: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.applyPolicyDefaultValuesAllowList),
@@ -18997,7 +18997,7 @@ export function jobTaskNewClusterToTerraform(struct?: JobTaskNewClusterOutputRef
 export function jobTaskNewClusterToHclTerraform(struct?: JobTaskNewClusterOutputReference | JobTaskNewCluster): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     __apply_policy_default_values_allow_list: {
@@ -20126,19 +20126,19 @@ export class JobTaskNewClusterOutputReference extends cdktn.ComplexObject {
 }
 export interface JobTaskNotebookTask {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#base_parameters Job#base_parameters}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#base_parameters Job#base_parameters}
   */
   readonly baseParameters?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#notebook_path Job#notebook_path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#notebook_path Job#notebook_path}
   */
   readonly notebookPath: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#source Job#source}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#source Job#source}
   */
   readonly source?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#warehouse_id Job#warehouse_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#warehouse_id Job#warehouse_id}
   */
   readonly warehouseId?: string;
 }
@@ -20146,7 +20146,7 @@ export interface JobTaskNotebookTask {
 export function jobTaskNotebookTaskToTerraform(struct?: JobTaskNotebookTaskOutputReference | JobTaskNotebookTask): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     base_parameters: cdktn.hashMapper(cdktn.stringToTerraform)(struct!.baseParameters),
@@ -20160,7 +20160,7 @@ export function jobTaskNotebookTaskToTerraform(struct?: JobTaskNotebookTaskOutpu
 export function jobTaskNotebookTaskToHclTerraform(struct?: JobTaskNotebookTaskOutputReference | JobTaskNotebookTask): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     base_parameters: {
@@ -20306,15 +20306,15 @@ export class JobTaskNotebookTaskOutputReference extends cdktn.ComplexObject {
 }
 export interface JobTaskNotificationSettings {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#alert_on_last_attempt Job#alert_on_last_attempt}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#alert_on_last_attempt Job#alert_on_last_attempt}
   */
   readonly alertOnLastAttempt?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#no_alert_for_canceled_runs Job#no_alert_for_canceled_runs}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#no_alert_for_canceled_runs Job#no_alert_for_canceled_runs}
   */
   readonly noAlertForCanceledRuns?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#no_alert_for_skipped_runs Job#no_alert_for_skipped_runs}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#no_alert_for_skipped_runs Job#no_alert_for_skipped_runs}
   */
   readonly noAlertForSkippedRuns?: boolean | cdktn.IResolvable;
 }
@@ -20322,7 +20322,7 @@ export interface JobTaskNotificationSettings {
 export function jobTaskNotificationSettingsToTerraform(struct?: JobTaskNotificationSettingsOutputReference | JobTaskNotificationSettings): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     alert_on_last_attempt: cdktn.booleanToTerraform(struct!.alertOnLastAttempt),
@@ -20335,7 +20335,7 @@ export function jobTaskNotificationSettingsToTerraform(struct?: JobTaskNotificat
 export function jobTaskNotificationSettingsToHclTerraform(struct?: JobTaskNotificationSettingsOutputReference | JobTaskNotificationSettings): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     alert_on_last_attempt: {
@@ -20456,31 +20456,31 @@ export class JobTaskNotificationSettingsOutputReference extends cdktn.ComplexObj
 }
 export interface JobTaskPipelineTask {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#full_refresh Job#full_refresh}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#full_refresh Job#full_refresh}
   */
   readonly fullRefresh?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#full_refresh_selection Job#full_refresh_selection}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#full_refresh_selection Job#full_refresh_selection}
   */
   readonly fullRefreshSelection?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#parameters Job#parameters}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#parameters Job#parameters}
   */
   readonly parameters?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#pipeline_id Job#pipeline_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#pipeline_id Job#pipeline_id}
   */
   readonly pipelineId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#refresh_flow_selection Job#refresh_flow_selection}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#refresh_flow_selection Job#refresh_flow_selection}
   */
   readonly refreshFlowSelection?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#refresh_selection Job#refresh_selection}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#refresh_selection Job#refresh_selection}
   */
   readonly refreshSelection?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#reset_checkpoint_selection Job#reset_checkpoint_selection}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#reset_checkpoint_selection Job#reset_checkpoint_selection}
   */
   readonly resetCheckpointSelection?: string[];
 }
@@ -20488,7 +20488,7 @@ export interface JobTaskPipelineTask {
 export function jobTaskPipelineTaskToTerraform(struct?: JobTaskPipelineTaskOutputReference | JobTaskPipelineTask): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     full_refresh: cdktn.booleanToTerraform(struct!.fullRefresh),
@@ -20505,7 +20505,7 @@ export function jobTaskPipelineTaskToTerraform(struct?: JobTaskPipelineTaskOutpu
 export function jobTaskPipelineTaskToHclTerraform(struct?: JobTaskPipelineTaskOutputReference | JobTaskPipelineTask): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     full_refresh: {
@@ -20735,23 +20735,23 @@ export class JobTaskPipelineTaskOutputReference extends cdktn.ComplexObject {
 }
 export interface JobTaskPowerBiTaskPowerBiModel {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#authentication_method Job#authentication_method}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#authentication_method Job#authentication_method}
   */
   readonly authenticationMethod?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#model_name Job#model_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#model_name Job#model_name}
   */
   readonly modelName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#overwrite_existing Job#overwrite_existing}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#overwrite_existing Job#overwrite_existing}
   */
   readonly overwriteExisting?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#storage_mode Job#storage_mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#storage_mode Job#storage_mode}
   */
   readonly storageMode?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#workspace_name Job#workspace_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#workspace_name Job#workspace_name}
   */
   readonly workspaceName?: string;
 }
@@ -20759,7 +20759,7 @@ export interface JobTaskPowerBiTaskPowerBiModel {
 export function jobTaskPowerBiTaskPowerBiModelToTerraform(struct?: JobTaskPowerBiTaskPowerBiModelOutputReference | JobTaskPowerBiTaskPowerBiModel): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     authentication_method: cdktn.stringToTerraform(struct!.authenticationMethod),
@@ -20774,7 +20774,7 @@ export function jobTaskPowerBiTaskPowerBiModelToTerraform(struct?: JobTaskPowerB
 export function jobTaskPowerBiTaskPowerBiModelToHclTerraform(struct?: JobTaskPowerBiTaskPowerBiModelOutputReference | JobTaskPowerBiTaskPowerBiModel): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     authentication_method: {
@@ -20951,19 +20951,19 @@ export class JobTaskPowerBiTaskPowerBiModelOutputReference extends cdktn.Complex
 }
 export interface JobTaskPowerBiTaskTables {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#catalog Job#catalog}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#catalog Job#catalog}
   */
   readonly catalog?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#name Job#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#name Job#name}
   */
   readonly name?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#schema Job#schema}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#schema Job#schema}
   */
   readonly schema?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#storage_mode Job#storage_mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#storage_mode Job#storage_mode}
   */
   readonly storageMode?: string;
 }
@@ -20971,7 +20971,7 @@ export interface JobTaskPowerBiTaskTables {
 export function jobTaskPowerBiTaskTablesToTerraform(struct?: JobTaskPowerBiTaskTables | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     catalog: cdktn.stringToTerraform(struct!.catalog),
@@ -20985,7 +20985,7 @@ export function jobTaskPowerBiTaskTablesToTerraform(struct?: JobTaskPowerBiTaskT
 export function jobTaskPowerBiTaskTablesToHclTerraform(struct?: JobTaskPowerBiTaskTables | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     catalog: {
@@ -21166,27 +21166,27 @@ export class JobTaskPowerBiTaskTablesList extends cdktn.ComplexList {
 }
 export interface JobTaskPowerBiTask {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#connection_resource_name Job#connection_resource_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#connection_resource_name Job#connection_resource_name}
   */
   readonly connectionResourceName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#refresh_after_update Job#refresh_after_update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#refresh_after_update Job#refresh_after_update}
   */
   readonly refreshAfterUpdate?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#warehouse_id Job#warehouse_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#warehouse_id Job#warehouse_id}
   */
   readonly warehouseId?: string;
   /**
   * power_bi_model block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#power_bi_model Job#power_bi_model}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#power_bi_model Job#power_bi_model}
   */
   readonly powerBiModel?: JobTaskPowerBiTaskPowerBiModel;
   /**
   * tables block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#tables Job#tables}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#tables Job#tables}
   */
   readonly tables?: JobTaskPowerBiTaskTables[] | cdktn.IResolvable;
 }
@@ -21194,7 +21194,7 @@ export interface JobTaskPowerBiTask {
 export function jobTaskPowerBiTaskToTerraform(struct?: JobTaskPowerBiTaskOutputReference | JobTaskPowerBiTask): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     connection_resource_name: cdktn.stringToTerraform(struct!.connectionResourceName),
@@ -21209,7 +21209,7 @@ export function jobTaskPowerBiTaskToTerraform(struct?: JobTaskPowerBiTaskOutputR
 export function jobTaskPowerBiTaskToHclTerraform(struct?: JobTaskPowerBiTaskOutputReference | JobTaskPowerBiTask): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     connection_resource_name: {
@@ -21386,11 +21386,11 @@ export class JobTaskPowerBiTaskOutputReference extends cdktn.ComplexObject {
 }
 export interface JobTaskPythonOperatorTaskParameters {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#name Job#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#name Job#name}
   */
   readonly name?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#value Job#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#value Job#value}
   */
   readonly value?: string;
 }
@@ -21398,7 +21398,7 @@ export interface JobTaskPythonOperatorTaskParameters {
 export function jobTaskPythonOperatorTaskParametersToTerraform(struct?: JobTaskPythonOperatorTaskParameters | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     name: cdktn.stringToTerraform(struct!.name),
@@ -21410,7 +21410,7 @@ export function jobTaskPythonOperatorTaskParametersToTerraform(struct?: JobTaskP
 export function jobTaskPythonOperatorTaskParametersToHclTerraform(struct?: JobTaskPythonOperatorTaskParameters | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     name: {
@@ -21535,13 +21535,13 @@ export class JobTaskPythonOperatorTaskParametersList extends cdktn.ComplexList {
 }
 export interface JobTaskPythonOperatorTask {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#main Job#main}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#main Job#main}
   */
   readonly main?: string;
   /**
   * parameters block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#parameters Job#parameters}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#parameters Job#parameters}
   */
   readonly parameters?: JobTaskPythonOperatorTaskParameters[] | cdktn.IResolvable;
 }
@@ -21549,7 +21549,7 @@ export interface JobTaskPythonOperatorTask {
 export function jobTaskPythonOperatorTaskToTerraform(struct?: JobTaskPythonOperatorTaskOutputReference | JobTaskPythonOperatorTask): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     main: cdktn.stringToTerraform(struct!.main),
@@ -21561,7 +21561,7 @@ export function jobTaskPythonOperatorTaskToTerraform(struct?: JobTaskPythonOpera
 export function jobTaskPythonOperatorTaskToHclTerraform(struct?: JobTaskPythonOperatorTaskOutputReference | JobTaskPythonOperatorTask): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     main: {
@@ -21654,19 +21654,19 @@ export class JobTaskPythonOperatorTaskOutputReference extends cdktn.ComplexObjec
 }
 export interface JobTaskPythonWheelTask {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#entry_point Job#entry_point}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#entry_point Job#entry_point}
   */
   readonly entryPoint?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#named_parameters Job#named_parameters}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#named_parameters Job#named_parameters}
   */
   readonly namedParameters?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#package_name Job#package_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#package_name Job#package_name}
   */
   readonly packageName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#parameters Job#parameters}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#parameters Job#parameters}
   */
   readonly parameters?: string[];
 }
@@ -21674,7 +21674,7 @@ export interface JobTaskPythonWheelTask {
 export function jobTaskPythonWheelTaskToTerraform(struct?: JobTaskPythonWheelTaskOutputReference | JobTaskPythonWheelTask): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     entry_point: cdktn.stringToTerraform(struct!.entryPoint),
@@ -21688,7 +21688,7 @@ export function jobTaskPythonWheelTaskToTerraform(struct?: JobTaskPythonWheelTas
 export function jobTaskPythonWheelTaskToHclTerraform(struct?: JobTaskPythonWheelTaskOutputReference | JobTaskPythonWheelTask): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     entry_point: {
@@ -21837,23 +21837,23 @@ export class JobTaskPythonWheelTaskOutputReference extends cdktn.ComplexObject {
 }
 export interface JobTaskRunJobTaskPipelineParams {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#full_refresh Job#full_refresh}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#full_refresh Job#full_refresh}
   */
   readonly fullRefresh?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#full_refresh_selection Job#full_refresh_selection}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#full_refresh_selection Job#full_refresh_selection}
   */
   readonly fullRefreshSelection?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#refresh_flow_selection Job#refresh_flow_selection}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#refresh_flow_selection Job#refresh_flow_selection}
   */
   readonly refreshFlowSelection?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#refresh_selection Job#refresh_selection}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#refresh_selection Job#refresh_selection}
   */
   readonly refreshSelection?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#reset_checkpoint_selection Job#reset_checkpoint_selection}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#reset_checkpoint_selection Job#reset_checkpoint_selection}
   */
   readonly resetCheckpointSelection?: string[];
 }
@@ -21861,7 +21861,7 @@ export interface JobTaskRunJobTaskPipelineParams {
 export function jobTaskRunJobTaskPipelineParamsToTerraform(struct?: JobTaskRunJobTaskPipelineParamsOutputReference | JobTaskRunJobTaskPipelineParams): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     full_refresh: cdktn.booleanToTerraform(struct!.fullRefresh),
@@ -21876,7 +21876,7 @@ export function jobTaskRunJobTaskPipelineParamsToTerraform(struct?: JobTaskRunJo
 export function jobTaskRunJobTaskPipelineParamsToHclTerraform(struct?: JobTaskRunJobTaskPipelineParamsOutputReference | JobTaskRunJobTaskPipelineParams): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     full_refresh: {
@@ -22053,45 +22053,45 @@ export class JobTaskRunJobTaskPipelineParamsOutputReference extends cdktn.Comple
 }
 export interface JobTaskRunJobTask {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#dbt_commands Job#dbt_commands}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#dbt_commands Job#dbt_commands}
   */
   readonly dbtCommands?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#jar_params Job#jar_params}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#jar_params Job#jar_params}
   */
   readonly jarParams?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#job_id Job#job_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#job_id Job#job_id}
   */
   readonly jobId: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#job_parameters Job#job_parameters}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#job_parameters Job#job_parameters}
   */
   readonly jobParameters?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#notebook_params Job#notebook_params}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#notebook_params Job#notebook_params}
   */
   readonly notebookParams?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#python_named_params Job#python_named_params}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#python_named_params Job#python_named_params}
   */
   readonly pythonNamedParams?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#python_params Job#python_params}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#python_params Job#python_params}
   */
   readonly pythonParams?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#spark_submit_params Job#spark_submit_params}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#spark_submit_params Job#spark_submit_params}
   */
   readonly sparkSubmitParams?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#sql_params Job#sql_params}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#sql_params Job#sql_params}
   */
   readonly sqlParams?: { [key: string]: string };
   /**
   * pipeline_params block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#pipeline_params Job#pipeline_params}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#pipeline_params Job#pipeline_params}
   */
   readonly pipelineParams?: JobTaskRunJobTaskPipelineParams;
 }
@@ -22099,7 +22099,7 @@ export interface JobTaskRunJobTask {
 export function jobTaskRunJobTaskToTerraform(struct?: JobTaskRunJobTaskOutputReference | JobTaskRunJobTask): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     dbt_commands: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.dbtCommands),
@@ -22119,7 +22119,7 @@ export function jobTaskRunJobTaskToTerraform(struct?: JobTaskRunJobTaskOutputRef
 export function jobTaskRunJobTaskToHclTerraform(struct?: JobTaskRunJobTaskOutputReference | JobTaskRunJobTask): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     dbt_commands: {
@@ -22433,19 +22433,19 @@ export class JobTaskRunJobTaskOutputReference extends cdktn.ComplexObject {
 }
 export interface JobTaskSparkJarTask {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#jar_uri Job#jar_uri}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#jar_uri Job#jar_uri}
   */
   readonly jarUri?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#main_class_name Job#main_class_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#main_class_name Job#main_class_name}
   */
   readonly mainClassName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#parameters Job#parameters}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#parameters Job#parameters}
   */
   readonly parameters?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#run_as_repl Job#run_as_repl}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#run_as_repl Job#run_as_repl}
   */
   readonly runAsRepl?: boolean | cdktn.IResolvable;
 }
@@ -22453,7 +22453,7 @@ export interface JobTaskSparkJarTask {
 export function jobTaskSparkJarTaskToTerraform(struct?: JobTaskSparkJarTaskOutputReference | JobTaskSparkJarTask): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     jar_uri: cdktn.stringToTerraform(struct!.jarUri),
@@ -22467,7 +22467,7 @@ export function jobTaskSparkJarTaskToTerraform(struct?: JobTaskSparkJarTaskOutpu
 export function jobTaskSparkJarTaskToHclTerraform(struct?: JobTaskSparkJarTaskOutputReference | JobTaskSparkJarTask): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     jar_uri: {
@@ -22616,15 +22616,15 @@ export class JobTaskSparkJarTaskOutputReference extends cdktn.ComplexObject {
 }
 export interface JobTaskSparkPythonTask {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#parameters Job#parameters}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#parameters Job#parameters}
   */
   readonly parameters?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#python_file Job#python_file}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#python_file Job#python_file}
   */
   readonly pythonFile: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#source Job#source}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#source Job#source}
   */
   readonly source?: string;
 }
@@ -22632,7 +22632,7 @@ export interface JobTaskSparkPythonTask {
 export function jobTaskSparkPythonTaskToTerraform(struct?: JobTaskSparkPythonTaskOutputReference | JobTaskSparkPythonTask): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     parameters: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.parameters),
@@ -22645,7 +22645,7 @@ export function jobTaskSparkPythonTaskToTerraform(struct?: JobTaskSparkPythonTas
 export function jobTaskSparkPythonTaskToHclTerraform(struct?: JobTaskSparkPythonTaskOutputReference | JobTaskSparkPythonTask): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     parameters: {
@@ -22763,7 +22763,7 @@ export class JobTaskSparkPythonTaskOutputReference extends cdktn.ComplexObject {
 }
 export interface JobTaskSparkSubmitTask {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#parameters Job#parameters}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#parameters Job#parameters}
   */
   readonly parameters?: string[];
 }
@@ -22771,7 +22771,7 @@ export interface JobTaskSparkSubmitTask {
 export function jobTaskSparkSubmitTaskToTerraform(struct?: JobTaskSparkSubmitTaskOutputReference | JobTaskSparkSubmitTask): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     parameters: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.parameters),
@@ -22782,7 +22782,7 @@ export function jobTaskSparkSubmitTaskToTerraform(struct?: JobTaskSparkSubmitTas
 export function jobTaskSparkSubmitTaskToHclTerraform(struct?: JobTaskSparkSubmitTaskOutputReference | JobTaskSparkSubmitTask): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     parameters: {
@@ -22847,11 +22847,11 @@ export class JobTaskSparkSubmitTaskOutputReference extends cdktn.ComplexObject {
 }
 export interface JobTaskSqlTaskAlertSubscriptions {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#destination_id Job#destination_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#destination_id Job#destination_id}
   */
   readonly destinationId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#user_name Job#user_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#user_name Job#user_name}
   */
   readonly userName?: string;
 }
@@ -22859,7 +22859,7 @@ export interface JobTaskSqlTaskAlertSubscriptions {
 export function jobTaskSqlTaskAlertSubscriptionsToTerraform(struct?: JobTaskSqlTaskAlertSubscriptions | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     destination_id: cdktn.stringToTerraform(struct!.destinationId),
@@ -22871,7 +22871,7 @@ export function jobTaskSqlTaskAlertSubscriptionsToTerraform(struct?: JobTaskSqlT
 export function jobTaskSqlTaskAlertSubscriptionsToHclTerraform(struct?: JobTaskSqlTaskAlertSubscriptions | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     destination_id: {
@@ -22996,17 +22996,17 @@ export class JobTaskSqlTaskAlertSubscriptionsList extends cdktn.ComplexList {
 }
 export interface JobTaskSqlTaskAlert {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#alert_id Job#alert_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#alert_id Job#alert_id}
   */
   readonly alertId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#pause_subscriptions Job#pause_subscriptions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#pause_subscriptions Job#pause_subscriptions}
   */
   readonly pauseSubscriptions?: boolean | cdktn.IResolvable;
   /**
   * subscriptions block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#subscriptions Job#subscriptions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#subscriptions Job#subscriptions}
   */
   readonly subscriptions?: JobTaskSqlTaskAlertSubscriptions[] | cdktn.IResolvable;
 }
@@ -23014,7 +23014,7 @@ export interface JobTaskSqlTaskAlert {
 export function jobTaskSqlTaskAlertToTerraform(struct?: JobTaskSqlTaskAlertOutputReference | JobTaskSqlTaskAlert): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     alert_id: cdktn.stringToTerraform(struct!.alertId),
@@ -23027,7 +23027,7 @@ export function jobTaskSqlTaskAlertToTerraform(struct?: JobTaskSqlTaskAlertOutpu
 export function jobTaskSqlTaskAlertToHclTerraform(struct?: JobTaskSqlTaskAlertOutputReference | JobTaskSqlTaskAlert): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     alert_id: {
@@ -23145,11 +23145,11 @@ export class JobTaskSqlTaskAlertOutputReference extends cdktn.ComplexObject {
 }
 export interface JobTaskSqlTaskDashboardSubscriptions {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#destination_id Job#destination_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#destination_id Job#destination_id}
   */
   readonly destinationId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#user_name Job#user_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#user_name Job#user_name}
   */
   readonly userName?: string;
 }
@@ -23157,7 +23157,7 @@ export interface JobTaskSqlTaskDashboardSubscriptions {
 export function jobTaskSqlTaskDashboardSubscriptionsToTerraform(struct?: JobTaskSqlTaskDashboardSubscriptions | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     destination_id: cdktn.stringToTerraform(struct!.destinationId),
@@ -23169,7 +23169,7 @@ export function jobTaskSqlTaskDashboardSubscriptionsToTerraform(struct?: JobTask
 export function jobTaskSqlTaskDashboardSubscriptionsToHclTerraform(struct?: JobTaskSqlTaskDashboardSubscriptions | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     destination_id: {
@@ -23294,21 +23294,21 @@ export class JobTaskSqlTaskDashboardSubscriptionsList extends cdktn.ComplexList 
 }
 export interface JobTaskSqlTaskDashboard {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#custom_subject Job#custom_subject}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#custom_subject Job#custom_subject}
   */
   readonly customSubject?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#dashboard_id Job#dashboard_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#dashboard_id Job#dashboard_id}
   */
   readonly dashboardId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#pause_subscriptions Job#pause_subscriptions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#pause_subscriptions Job#pause_subscriptions}
   */
   readonly pauseSubscriptions?: boolean | cdktn.IResolvable;
   /**
   * subscriptions block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#subscriptions Job#subscriptions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#subscriptions Job#subscriptions}
   */
   readonly subscriptions?: JobTaskSqlTaskDashboardSubscriptions[] | cdktn.IResolvable;
 }
@@ -23316,7 +23316,7 @@ export interface JobTaskSqlTaskDashboard {
 export function jobTaskSqlTaskDashboardToTerraform(struct?: JobTaskSqlTaskDashboardOutputReference | JobTaskSqlTaskDashboard): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     custom_subject: cdktn.stringToTerraform(struct!.customSubject),
@@ -23330,7 +23330,7 @@ export function jobTaskSqlTaskDashboardToTerraform(struct?: JobTaskSqlTaskDashbo
 export function jobTaskSqlTaskDashboardToHclTerraform(struct?: JobTaskSqlTaskDashboardOutputReference | JobTaskSqlTaskDashboard): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     custom_subject: {
@@ -23476,11 +23476,11 @@ export class JobTaskSqlTaskDashboardOutputReference extends cdktn.ComplexObject 
 }
 export interface JobTaskSqlTaskFile {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#path Job#path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#path Job#path}
   */
   readonly path: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#source Job#source}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#source Job#source}
   */
   readonly source?: string;
 }
@@ -23488,7 +23488,7 @@ export interface JobTaskSqlTaskFile {
 export function jobTaskSqlTaskFileToTerraform(struct?: JobTaskSqlTaskFileOutputReference | JobTaskSqlTaskFile): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     path: cdktn.stringToTerraform(struct!.path),
@@ -23500,7 +23500,7 @@ export function jobTaskSqlTaskFileToTerraform(struct?: JobTaskSqlTaskFileOutputR
 export function jobTaskSqlTaskFileToHclTerraform(struct?: JobTaskSqlTaskFileOutputReference | JobTaskSqlTaskFile): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     path: {
@@ -23590,7 +23590,7 @@ export class JobTaskSqlTaskFileOutputReference extends cdktn.ComplexObject {
 }
 export interface JobTaskSqlTaskQuery {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#query_id Job#query_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#query_id Job#query_id}
   */
   readonly queryId: string;
 }
@@ -23598,7 +23598,7 @@ export interface JobTaskSqlTaskQuery {
 export function jobTaskSqlTaskQueryToTerraform(struct?: JobTaskSqlTaskQueryOutputReference | JobTaskSqlTaskQuery): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     query_id: cdktn.stringToTerraform(struct!.queryId),
@@ -23609,7 +23609,7 @@ export function jobTaskSqlTaskQueryToTerraform(struct?: JobTaskSqlTaskQueryOutpu
 export function jobTaskSqlTaskQueryToHclTerraform(struct?: JobTaskSqlTaskQueryOutputReference | JobTaskSqlTaskQuery): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     query_id: {
@@ -23671,35 +23671,35 @@ export class JobTaskSqlTaskQueryOutputReference extends cdktn.ComplexObject {
 }
 export interface JobTaskSqlTask {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#parameters Job#parameters}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#parameters Job#parameters}
   */
   readonly parameters?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#warehouse_id Job#warehouse_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#warehouse_id Job#warehouse_id}
   */
   readonly warehouseId: string;
   /**
   * alert block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#alert Job#alert}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#alert Job#alert}
   */
   readonly alert?: JobTaskSqlTaskAlert;
   /**
   * dashboard block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#dashboard Job#dashboard}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#dashboard Job#dashboard}
   */
   readonly dashboard?: JobTaskSqlTaskDashboard;
   /**
   * file block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#file Job#file}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#file Job#file}
   */
   readonly file?: JobTaskSqlTaskFile;
   /**
   * query block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/job#query Job#query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/job#query Job#query}
   */
   readonly query?: JobTaskSqlTaskQuery;
 }
@@ -23707,7 +23707,7 @@ export interface JobTaskSqlTask {
 export function jobTaskSqlTaskToTerraform(struct?: JobTaskSqlTaskOutputReference | JobTaskSqlTask): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     parameters: cdktn.hashMapper(cdktn.stringToTerraform)(struct!.parameters),
@@ -23723,7 +23723,7 @@ export function jobTaskSqlTaskToTerraform(struct?: JobTaskSqlTaskOutputReference
 export function jobTaskSqlTaskToHclTerraform(struct?: JobTaskSqlTaskOutputReference | JobTaskSqlTask): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     parameters: {
