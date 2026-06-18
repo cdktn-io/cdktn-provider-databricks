@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/secret_ucs
+// https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/secret_ucs
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,29 +13,29 @@ import * as cdktn from 'cdktn';
 
 export interface DataDatabricksSecretUcsConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/secret_ucs#catalog_name DataDatabricksSecretUcs#catalog_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/secret_ucs#catalog_name DataDatabricksSecretUcs#catalog_name}
   */
   readonly catalogName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/secret_ucs#include_browse DataDatabricksSecretUcs#include_browse}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/secret_ucs#include_browse DataDatabricksSecretUcs#include_browse}
   */
   readonly includeBrowse?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/secret_ucs#page_size DataDatabricksSecretUcs#page_size}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/secret_ucs#page_size DataDatabricksSecretUcs#page_size}
   */
   readonly pageSize?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/secret_ucs#provider_config DataDatabricksSecretUcs#provider_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/secret_ucs#provider_config DataDatabricksSecretUcs#provider_config}
   */
   readonly providerConfig?: DataDatabricksSecretUcsProviderConfig;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/secret_ucs#schema_name DataDatabricksSecretUcs#schema_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/secret_ucs#schema_name DataDatabricksSecretUcs#schema_name}
   */
   readonly schemaName?: string;
 }
 export interface DataDatabricksSecretUcsProviderConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/secret_ucs#workspace_id DataDatabricksSecretUcs#workspace_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/secret_ucs#workspace_id DataDatabricksSecretUcs#workspace_id}
   */
   readonly workspaceId?: string;
 }
@@ -43,7 +43,7 @@ export interface DataDatabricksSecretUcsProviderConfig {
 export function dataDatabricksSecretUcsProviderConfigToTerraform(struct?: DataDatabricksSecretUcsProviderConfig | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     workspace_id: cdktn.stringToTerraform(struct!.workspaceId),
@@ -54,7 +54,7 @@ export function dataDatabricksSecretUcsProviderConfigToTerraform(struct?: DataDa
 export function dataDatabricksSecretUcsProviderConfigToHclTerraform(struct?: DataDatabricksSecretUcsProviderConfig | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     workspace_id: {
@@ -129,7 +129,7 @@ export class DataDatabricksSecretUcsProviderConfigOutputReference extends cdktn.
 }
 export interface DataDatabricksSecretUcsSecretsProviderConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/secret_ucs#workspace_id DataDatabricksSecretUcs#workspace_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/secret_ucs#workspace_id DataDatabricksSecretUcs#workspace_id}
   */
   readonly workspaceId?: string;
 }
@@ -137,7 +137,7 @@ export interface DataDatabricksSecretUcsSecretsProviderConfig {
 export function dataDatabricksSecretUcsSecretsProviderConfigToTerraform(struct?: DataDatabricksSecretUcsSecretsProviderConfig | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     workspace_id: cdktn.stringToTerraform(struct!.workspaceId),
@@ -148,7 +148,7 @@ export function dataDatabricksSecretUcsSecretsProviderConfigToTerraform(struct?:
 export function dataDatabricksSecretUcsSecretsProviderConfigToHclTerraform(struct?: DataDatabricksSecretUcsSecretsProviderConfig | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     workspace_id: {
@@ -223,11 +223,11 @@ export class DataDatabricksSecretUcsSecretsProviderConfigOutputReference extends
 }
 export interface DataDatabricksSecretUcsSecrets {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/secret_ucs#full_name DataDatabricksSecretUcs#full_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/secret_ucs#full_name DataDatabricksSecretUcs#full_name}
   */
   readonly fullName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/secret_ucs#provider_config DataDatabricksSecretUcs#provider_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/secret_ucs#provider_config DataDatabricksSecretUcs#provider_config}
   */
   readonly providerConfig?: DataDatabricksSecretUcsSecretsProviderConfig;
 }
@@ -235,7 +235,7 @@ export interface DataDatabricksSecretUcsSecrets {
 export function dataDatabricksSecretUcsSecretsToTerraform(struct?: DataDatabricksSecretUcsSecrets): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     full_name: cdktn.stringToTerraform(struct!.fullName),
@@ -247,7 +247,7 @@ export function dataDatabricksSecretUcsSecretsToTerraform(struct?: DataDatabrick
 export function dataDatabricksSecretUcsSecretsToHclTerraform(struct?: DataDatabricksSecretUcsSecrets): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     full_name: {
@@ -439,7 +439,7 @@ export class DataDatabricksSecretUcsSecretsList extends cdktn.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/secret_ucs databricks_secret_ucs}
+* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/secret_ucs databricks_secret_ucs}
 */
 export class DataDatabricksSecretUcs extends cdktn.TerraformDataSource {
 
@@ -455,7 +455,7 @@ export class DataDatabricksSecretUcs extends cdktn.TerraformDataSource {
   * Generates CDKTN code for importing a DataDatabricksSecretUcs resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataDatabricksSecretUcs to import
-  * @param importFromId The id of the existing DataDatabricksSecretUcs that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/secret_ucs#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataDatabricksSecretUcs that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/secret_ucs#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataDatabricksSecretUcs to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -467,7 +467,7 @@ export class DataDatabricksSecretUcs extends cdktn.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/secret_ucs databricks_secret_ucs} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/secret_ucs databricks_secret_ucs} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -478,7 +478,7 @@ export class DataDatabricksSecretUcs extends cdktn.TerraformDataSource {
       terraformResourceType: 'databricks_secret_ucs',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '1.117.0',
+        providerVersion: '1.118.0',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,

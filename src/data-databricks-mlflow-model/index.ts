@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/mlflow_model
+// https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/mlflow_model
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,47 +13,47 @@ import * as cdktn from 'cdktn';
 
 export interface DataDatabricksMlflowModelConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/mlflow_model#description DataDatabricksMlflowModel#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/mlflow_model#description DataDatabricksMlflowModel#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/mlflow_model#name DataDatabricksMlflowModel#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/mlflow_model#name DataDatabricksMlflowModel#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/mlflow_model#permission_level DataDatabricksMlflowModel#permission_level}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/mlflow_model#permission_level DataDatabricksMlflowModel#permission_level}
   */
   readonly permissionLevel?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/mlflow_model#user_id DataDatabricksMlflowModel#user_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/mlflow_model#user_id DataDatabricksMlflowModel#user_id}
   */
   readonly userId?: string;
   /**
   * latest_versions block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/mlflow_model#latest_versions DataDatabricksMlflowModel#latest_versions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/mlflow_model#latest_versions DataDatabricksMlflowModel#latest_versions}
   */
   readonly latestVersions?: DataDatabricksMlflowModelLatestVersions[] | cdktn.IResolvable;
   /**
   * provider_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/mlflow_model#provider_config DataDatabricksMlflowModel#provider_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/mlflow_model#provider_config DataDatabricksMlflowModel#provider_config}
   */
   readonly providerConfig?: DataDatabricksMlflowModelProviderConfig;
   /**
   * tags block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/mlflow_model#tags DataDatabricksMlflowModel#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/mlflow_model#tags DataDatabricksMlflowModel#tags}
   */
   readonly tags?: DataDatabricksMlflowModelTags[] | cdktn.IResolvable;
 }
 export interface DataDatabricksMlflowModelLatestVersionsTags {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/mlflow_model#key DataDatabricksMlflowModel#key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/mlflow_model#key DataDatabricksMlflowModel#key}
   */
   readonly key?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/mlflow_model#value DataDatabricksMlflowModel#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/mlflow_model#value DataDatabricksMlflowModel#value}
   */
   readonly value?: string;
 }
@@ -61,7 +61,7 @@ export interface DataDatabricksMlflowModelLatestVersionsTags {
 export function dataDatabricksMlflowModelLatestVersionsTagsToTerraform(struct?: DataDatabricksMlflowModelLatestVersionsTags | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     key: cdktn.stringToTerraform(struct!.key),
@@ -73,7 +73,7 @@ export function dataDatabricksMlflowModelLatestVersionsTagsToTerraform(struct?: 
 export function dataDatabricksMlflowModelLatestVersionsTagsToHclTerraform(struct?: DataDatabricksMlflowModelLatestVersionsTags | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     key: {
@@ -198,57 +198,57 @@ export class DataDatabricksMlflowModelLatestVersionsTagsList extends cdktn.Compl
 }
 export interface DataDatabricksMlflowModelLatestVersions {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/mlflow_model#creation_timestamp DataDatabricksMlflowModel#creation_timestamp}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/mlflow_model#creation_timestamp DataDatabricksMlflowModel#creation_timestamp}
   */
   readonly creationTimestamp?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/mlflow_model#current_stage DataDatabricksMlflowModel#current_stage}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/mlflow_model#current_stage DataDatabricksMlflowModel#current_stage}
   */
   readonly currentStage?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/mlflow_model#description DataDatabricksMlflowModel#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/mlflow_model#description DataDatabricksMlflowModel#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/mlflow_model#last_updated_timestamp DataDatabricksMlflowModel#last_updated_timestamp}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/mlflow_model#last_updated_timestamp DataDatabricksMlflowModel#last_updated_timestamp}
   */
   readonly lastUpdatedTimestamp?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/mlflow_model#name DataDatabricksMlflowModel#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/mlflow_model#name DataDatabricksMlflowModel#name}
   */
   readonly name?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/mlflow_model#run_id DataDatabricksMlflowModel#run_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/mlflow_model#run_id DataDatabricksMlflowModel#run_id}
   */
   readonly runId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/mlflow_model#run_link DataDatabricksMlflowModel#run_link}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/mlflow_model#run_link DataDatabricksMlflowModel#run_link}
   */
   readonly runLink?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/mlflow_model#source DataDatabricksMlflowModel#source}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/mlflow_model#source DataDatabricksMlflowModel#source}
   */
   readonly source?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/mlflow_model#status DataDatabricksMlflowModel#status}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/mlflow_model#status DataDatabricksMlflowModel#status}
   */
   readonly status?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/mlflow_model#status_message DataDatabricksMlflowModel#status_message}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/mlflow_model#status_message DataDatabricksMlflowModel#status_message}
   */
   readonly statusMessage?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/mlflow_model#user_id DataDatabricksMlflowModel#user_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/mlflow_model#user_id DataDatabricksMlflowModel#user_id}
   */
   readonly userId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/mlflow_model#version DataDatabricksMlflowModel#version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/mlflow_model#version DataDatabricksMlflowModel#version}
   */
   readonly version?: string;
   /**
   * tags block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/mlflow_model#tags DataDatabricksMlflowModel#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/mlflow_model#tags DataDatabricksMlflowModel#tags}
   */
   readonly tags?: DataDatabricksMlflowModelLatestVersionsTags[] | cdktn.IResolvable;
 }
@@ -256,7 +256,7 @@ export interface DataDatabricksMlflowModelLatestVersions {
 export function dataDatabricksMlflowModelLatestVersionsToTerraform(struct?: DataDatabricksMlflowModelLatestVersions | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     creation_timestamp: cdktn.numberToTerraform(struct!.creationTimestamp),
@@ -279,7 +279,7 @@ export function dataDatabricksMlflowModelLatestVersionsToTerraform(struct?: Data
 export function dataDatabricksMlflowModelLatestVersionsToHclTerraform(struct?: DataDatabricksMlflowModelLatestVersions | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     creation_timestamp: {
@@ -712,7 +712,7 @@ export class DataDatabricksMlflowModelLatestVersionsList extends cdktn.ComplexLi
 }
 export interface DataDatabricksMlflowModelProviderConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/mlflow_model#workspace_id DataDatabricksMlflowModel#workspace_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/mlflow_model#workspace_id DataDatabricksMlflowModel#workspace_id}
   */
   readonly workspaceId?: string;
 }
@@ -720,7 +720,7 @@ export interface DataDatabricksMlflowModelProviderConfig {
 export function dataDatabricksMlflowModelProviderConfigToTerraform(struct?: DataDatabricksMlflowModelProviderConfigOutputReference | DataDatabricksMlflowModelProviderConfig): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     workspace_id: cdktn.stringToTerraform(struct!.workspaceId),
@@ -731,7 +731,7 @@ export function dataDatabricksMlflowModelProviderConfigToTerraform(struct?: Data
 export function dataDatabricksMlflowModelProviderConfigToHclTerraform(struct?: DataDatabricksMlflowModelProviderConfigOutputReference | DataDatabricksMlflowModelProviderConfig): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     workspace_id: {
@@ -796,11 +796,11 @@ export class DataDatabricksMlflowModelProviderConfigOutputReference extends cdkt
 }
 export interface DataDatabricksMlflowModelTags {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/mlflow_model#key DataDatabricksMlflowModel#key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/mlflow_model#key DataDatabricksMlflowModel#key}
   */
   readonly key?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/mlflow_model#value DataDatabricksMlflowModel#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/mlflow_model#value DataDatabricksMlflowModel#value}
   */
   readonly value?: string;
 }
@@ -808,7 +808,7 @@ export interface DataDatabricksMlflowModelTags {
 export function dataDatabricksMlflowModelTagsToTerraform(struct?: DataDatabricksMlflowModelTags | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     key: cdktn.stringToTerraform(struct!.key),
@@ -820,7 +820,7 @@ export function dataDatabricksMlflowModelTagsToTerraform(struct?: DataDatabricks
 export function dataDatabricksMlflowModelTagsToHclTerraform(struct?: DataDatabricksMlflowModelTags | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     key: {
@@ -945,7 +945,7 @@ export class DataDatabricksMlflowModelTagsList extends cdktn.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/mlflow_model databricks_mlflow_model}
+* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/mlflow_model databricks_mlflow_model}
 */
 export class DataDatabricksMlflowModel extends cdktn.TerraformDataSource {
 
@@ -961,7 +961,7 @@ export class DataDatabricksMlflowModel extends cdktn.TerraformDataSource {
   * Generates CDKTN code for importing a DataDatabricksMlflowModel resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataDatabricksMlflowModel to import
-  * @param importFromId The id of the existing DataDatabricksMlflowModel that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/mlflow_model#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataDatabricksMlflowModel that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/mlflow_model#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataDatabricksMlflowModel to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -973,7 +973,7 @@ export class DataDatabricksMlflowModel extends cdktn.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/mlflow_model databricks_mlflow_model} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/mlflow_model databricks_mlflow_model} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -984,7 +984,7 @@ export class DataDatabricksMlflowModel extends cdktn.TerraformDataSource {
       terraformResourceType: 'databricks_mlflow_model',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '1.117.0',
+        providerVersion: '1.118.0',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,

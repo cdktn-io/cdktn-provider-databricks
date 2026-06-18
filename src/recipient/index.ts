@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/recipient
+// https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/recipient
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,68 +13,68 @@ import * as cdktn from 'cdktn';
 
 export interface RecipientConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/recipient#authentication_type Recipient#authentication_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/recipient#authentication_type Recipient#authentication_type}
   */
   readonly authenticationType: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/recipient#comment Recipient#comment}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/recipient#comment Recipient#comment}
   */
   readonly comment?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/recipient#data_recipient_global_metastore_id Recipient#data_recipient_global_metastore_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/recipient#data_recipient_global_metastore_id Recipient#data_recipient_global_metastore_id}
   */
   readonly dataRecipientGlobalMetastoreId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/recipient#expiration_time Recipient#expiration_time}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/recipient#expiration_time Recipient#expiration_time}
   */
   readonly expirationTime?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/recipient#id Recipient#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/recipient#id Recipient#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/recipient#name Recipient#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/recipient#name Recipient#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/recipient#owner Recipient#owner}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/recipient#owner Recipient#owner}
   */
   readonly owner?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/recipient#sharing_code Recipient#sharing_code}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/recipient#sharing_code Recipient#sharing_code}
   */
   readonly sharingCode?: string;
   /**
   * ip_access_list block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/recipient#ip_access_list Recipient#ip_access_list}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/recipient#ip_access_list Recipient#ip_access_list}
   */
   readonly ipAccessList?: RecipientIpAccessListStruct;
   /**
   * properties_kvpairs block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/recipient#properties_kvpairs Recipient#properties_kvpairs}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/recipient#properties_kvpairs Recipient#properties_kvpairs}
   */
   readonly propertiesKvpairs?: RecipientPropertiesKvpairs;
   /**
   * provider_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/recipient#provider_config Recipient#provider_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/recipient#provider_config Recipient#provider_config}
   */
   readonly providerConfig?: RecipientProviderConfig;
   /**
   * tokens block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/recipient#tokens Recipient#tokens}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/recipient#tokens Recipient#tokens}
   */
   readonly tokens?: RecipientTokens[] | cdktn.IResolvable;
 }
 export interface RecipientIpAccessListStruct {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/recipient#allowed_ip_addresses Recipient#allowed_ip_addresses}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/recipient#allowed_ip_addresses Recipient#allowed_ip_addresses}
   */
   readonly allowedIpAddresses?: string[];
 }
@@ -82,7 +82,7 @@ export interface RecipientIpAccessListStruct {
 export function recipientIpAccessListStructToTerraform(struct?: RecipientIpAccessListStructOutputReference | RecipientIpAccessListStruct): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     allowed_ip_addresses: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.allowedIpAddresses),
@@ -93,7 +93,7 @@ export function recipientIpAccessListStructToTerraform(struct?: RecipientIpAcces
 export function recipientIpAccessListStructToHclTerraform(struct?: RecipientIpAccessListStructOutputReference | RecipientIpAccessListStruct): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     allowed_ip_addresses: {
@@ -158,7 +158,7 @@ export class RecipientIpAccessListStructOutputReference extends cdktn.ComplexObj
 }
 export interface RecipientPropertiesKvpairs {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/recipient#properties Recipient#properties}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/recipient#properties Recipient#properties}
   */
   readonly properties: { [key: string]: string };
 }
@@ -166,7 +166,7 @@ export interface RecipientPropertiesKvpairs {
 export function recipientPropertiesKvpairsToTerraform(struct?: RecipientPropertiesKvpairsOutputReference | RecipientPropertiesKvpairs): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     properties: cdktn.hashMapper(cdktn.stringToTerraform)(struct!.properties),
@@ -177,7 +177,7 @@ export function recipientPropertiesKvpairsToTerraform(struct?: RecipientProperti
 export function recipientPropertiesKvpairsToHclTerraform(struct?: RecipientPropertiesKvpairsOutputReference | RecipientPropertiesKvpairs): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     properties: {
@@ -239,7 +239,7 @@ export class RecipientPropertiesKvpairsOutputReference extends cdktn.ComplexObje
 }
 export interface RecipientProviderConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/recipient#workspace_id Recipient#workspace_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/recipient#workspace_id Recipient#workspace_id}
   */
   readonly workspaceId?: string;
 }
@@ -247,7 +247,7 @@ export interface RecipientProviderConfig {
 export function recipientProviderConfigToTerraform(struct?: RecipientProviderConfigOutputReference | RecipientProviderConfig): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     workspace_id: cdktn.stringToTerraform(struct!.workspaceId),
@@ -258,7 +258,7 @@ export function recipientProviderConfigToTerraform(struct?: RecipientProviderCon
 export function recipientProviderConfigToHclTerraform(struct?: RecipientProviderConfigOutputReference | RecipientProviderConfig): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     workspace_id: {
@@ -327,7 +327,7 @@ export interface RecipientTokens {
 export function recipientTokensToTerraform(struct?: RecipientTokens | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -337,7 +337,7 @@ export function recipientTokensToTerraform(struct?: RecipientTokens | cdktn.IRes
 export function recipientTokensToHclTerraform(struct?: RecipientTokens | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -439,7 +439,7 @@ export class RecipientTokensList extends cdktn.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/recipient databricks_recipient}
+* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/recipient databricks_recipient}
 */
 export class Recipient extends cdktn.TerraformResource {
 
@@ -455,7 +455,7 @@ export class Recipient extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a Recipient resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the Recipient to import
-  * @param importFromId The id of the existing Recipient that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/recipient#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing Recipient that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/recipient#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the Recipient to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -467,7 +467,7 @@ export class Recipient extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/recipient databricks_recipient} Resource
+  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/recipient databricks_recipient} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -478,7 +478,7 @@ export class Recipient extends cdktn.TerraformResource {
       terraformResourceType: 'databricks_recipient',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '1.117.0',
+        providerVersion: '1.118.0',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,

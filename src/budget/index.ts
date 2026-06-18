@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/budget
+// https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/budget
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,56 +13,56 @@ import * as cdktn from 'cdktn';
 
 export interface BudgetConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/budget#account_id Budget#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/budget#account_id Budget#account_id}
   */
   readonly accountId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/budget#budget_configuration_id Budget#budget_configuration_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/budget#budget_configuration_id Budget#budget_configuration_id}
   */
   readonly budgetConfigurationId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/budget#create_time Budget#create_time}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/budget#create_time Budget#create_time}
   */
   readonly createTime?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/budget#display_name Budget#display_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/budget#display_name Budget#display_name}
   */
   readonly displayName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/budget#id Budget#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/budget#id Budget#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/budget#update_time Budget#update_time}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/budget#update_time Budget#update_time}
   */
   readonly updateTime?: number;
   /**
   * alert_configurations block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/budget#alert_configurations Budget#alert_configurations}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/budget#alert_configurations Budget#alert_configurations}
   */
   readonly alertConfigurations?: BudgetAlertConfigurations[] | cdktn.IResolvable;
   /**
   * filter block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/budget#filter Budget#filter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/budget#filter Budget#filter}
   */
   readonly filter?: BudgetFilter;
 }
 export interface BudgetAlertConfigurationsActionConfigurations {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/budget#action_configuration_id Budget#action_configuration_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/budget#action_configuration_id Budget#action_configuration_id}
   */
   readonly actionConfigurationId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/budget#action_type Budget#action_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/budget#action_type Budget#action_type}
   */
   readonly actionType?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/budget#target Budget#target}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/budget#target Budget#target}
   */
   readonly target?: string;
 }
@@ -70,7 +70,7 @@ export interface BudgetAlertConfigurationsActionConfigurations {
 export function budgetAlertConfigurationsActionConfigurationsToTerraform(struct?: BudgetAlertConfigurationsActionConfigurations | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     action_configuration_id: cdktn.stringToTerraform(struct!.actionConfigurationId),
@@ -83,7 +83,7 @@ export function budgetAlertConfigurationsActionConfigurationsToTerraform(struct?
 export function budgetAlertConfigurationsActionConfigurationsToHclTerraform(struct?: BudgetAlertConfigurationsActionConfigurations | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     action_configuration_id: {
@@ -236,29 +236,29 @@ export class BudgetAlertConfigurationsActionConfigurationsList extends cdktn.Com
 }
 export interface BudgetAlertConfigurations {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/budget#alert_configuration_id Budget#alert_configuration_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/budget#alert_configuration_id Budget#alert_configuration_id}
   */
   readonly alertConfigurationId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/budget#quantity_threshold Budget#quantity_threshold}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/budget#quantity_threshold Budget#quantity_threshold}
   */
   readonly quantityThreshold?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/budget#quantity_type Budget#quantity_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/budget#quantity_type Budget#quantity_type}
   */
   readonly quantityType?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/budget#time_period Budget#time_period}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/budget#time_period Budget#time_period}
   */
   readonly timePeriod?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/budget#trigger_type Budget#trigger_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/budget#trigger_type Budget#trigger_type}
   */
   readonly triggerType?: string;
   /**
   * action_configurations block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/budget#action_configurations Budget#action_configurations}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/budget#action_configurations Budget#action_configurations}
   */
   readonly actionConfigurations?: BudgetAlertConfigurationsActionConfigurations[] | cdktn.IResolvable;
 }
@@ -266,7 +266,7 @@ export interface BudgetAlertConfigurations {
 export function budgetAlertConfigurationsToTerraform(struct?: BudgetAlertConfigurations | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     alert_configuration_id: cdktn.stringToTerraform(struct!.alertConfigurationId),
@@ -282,7 +282,7 @@ export function budgetAlertConfigurationsToTerraform(struct?: BudgetAlertConfigu
 export function budgetAlertConfigurationsToHclTerraform(struct?: BudgetAlertConfigurations | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     alert_configuration_id: {
@@ -519,11 +519,11 @@ export class BudgetAlertConfigurationsList extends cdktn.ComplexList {
 }
 export interface BudgetFilterTagsValue {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/budget#operator Budget#operator}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/budget#operator Budget#operator}
   */
   readonly operator?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/budget#values Budget#values}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/budget#values Budget#values}
   */
   readonly values?: string[];
 }
@@ -531,7 +531,7 @@ export interface BudgetFilterTagsValue {
 export function budgetFilterTagsValueToTerraform(struct?: BudgetFilterTagsValueOutputReference | BudgetFilterTagsValue): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     operator: cdktn.stringToTerraform(struct!.operator),
@@ -543,7 +543,7 @@ export function budgetFilterTagsValueToTerraform(struct?: BudgetFilterTagsValueO
 export function budgetFilterTagsValueToHclTerraform(struct?: BudgetFilterTagsValueOutputReference | BudgetFilterTagsValue): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     operator: {
@@ -636,13 +636,13 @@ export class BudgetFilterTagsValueOutputReference extends cdktn.ComplexObject {
 }
 export interface BudgetFilterTags {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/budget#key Budget#key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/budget#key Budget#key}
   */
   readonly key?: string;
   /**
   * value block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/budget#value Budget#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/budget#value Budget#value}
   */
   readonly value?: BudgetFilterTagsValue;
 }
@@ -650,7 +650,7 @@ export interface BudgetFilterTags {
 export function budgetFilterTagsToTerraform(struct?: BudgetFilterTags | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     key: cdktn.stringToTerraform(struct!.key),
@@ -662,7 +662,7 @@ export function budgetFilterTagsToTerraform(struct?: BudgetFilterTags | cdktn.IR
 export function budgetFilterTagsToHclTerraform(struct?: BudgetFilterTags | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     key: {
@@ -787,11 +787,11 @@ export class BudgetFilterTagsList extends cdktn.ComplexList {
 }
 export interface BudgetFilterWorkspaceId {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/budget#operator Budget#operator}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/budget#operator Budget#operator}
   */
   readonly operator?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/budget#values Budget#values}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/budget#values Budget#values}
   */
   readonly values?: number[];
 }
@@ -799,7 +799,7 @@ export interface BudgetFilterWorkspaceId {
 export function budgetFilterWorkspaceIdToTerraform(struct?: BudgetFilterWorkspaceIdOutputReference | BudgetFilterWorkspaceId): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     operator: cdktn.stringToTerraform(struct!.operator),
@@ -811,7 +811,7 @@ export function budgetFilterWorkspaceIdToTerraform(struct?: BudgetFilterWorkspac
 export function budgetFilterWorkspaceIdToHclTerraform(struct?: BudgetFilterWorkspaceIdOutputReference | BudgetFilterWorkspaceId): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     operator: {
@@ -906,13 +906,13 @@ export interface BudgetFilter {
   /**
   * tags block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/budget#tags Budget#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/budget#tags Budget#tags}
   */
   readonly tags?: BudgetFilterTags[] | cdktn.IResolvable;
   /**
   * workspace_id block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/budget#workspace_id Budget#workspace_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/budget#workspace_id Budget#workspace_id}
   */
   readonly workspaceId?: BudgetFilterWorkspaceId;
 }
@@ -920,7 +920,7 @@ export interface BudgetFilter {
 export function budgetFilterToTerraform(struct?: BudgetFilterOutputReference | BudgetFilter): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     tags: cdktn.listMapper(budgetFilterTagsToTerraform, true)(struct!.tags),
@@ -932,7 +932,7 @@ export function budgetFilterToTerraform(struct?: BudgetFilterOutputReference | B
 export function budgetFilterToHclTerraform(struct?: BudgetFilterOutputReference | BudgetFilter): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     tags: {
@@ -1025,7 +1025,7 @@ export class BudgetFilterOutputReference extends cdktn.ComplexObject {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/budget databricks_budget}
+* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/budget databricks_budget}
 */
 export class Budget extends cdktn.TerraformResource {
 
@@ -1041,7 +1041,7 @@ export class Budget extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a Budget resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the Budget to import
-  * @param importFromId The id of the existing Budget that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/budget#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing Budget that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/budget#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the Budget to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -1053,7 +1053,7 @@ export class Budget extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/budget databricks_budget} Resource
+  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/budget databricks_budget} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -1064,7 +1064,7 @@ export class Budget extends cdktn.TerraformResource {
       terraformResourceType: 'databricks_budget',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '1.117.0',
+        providerVersion: '1.118.0',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,

@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/postgres_synced_table
+// https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/postgres_synced_table
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,17 +13,17 @@ import * as cdktn from 'cdktn';
 
 export interface DataDatabricksPostgresSyncedTableConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/postgres_synced_table#name DataDatabricksPostgresSyncedTable#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/postgres_synced_table#name DataDatabricksPostgresSyncedTable#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/postgres_synced_table#provider_config DataDatabricksPostgresSyncedTable#provider_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/postgres_synced_table#provider_config DataDatabricksPostgresSyncedTable#provider_config}
   */
   readonly providerConfig?: DataDatabricksPostgresSyncedTableProviderConfig;
 }
 export interface DataDatabricksPostgresSyncedTableProviderConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/postgres_synced_table#workspace_id DataDatabricksPostgresSyncedTable#workspace_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/postgres_synced_table#workspace_id DataDatabricksPostgresSyncedTable#workspace_id}
   */
   readonly workspaceId?: string;
 }
@@ -31,7 +31,7 @@ export interface DataDatabricksPostgresSyncedTableProviderConfig {
 export function dataDatabricksPostgresSyncedTableProviderConfigToTerraform(struct?: DataDatabricksPostgresSyncedTableProviderConfig | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     workspace_id: cdktn.stringToTerraform(struct!.workspaceId),
@@ -42,7 +42,7 @@ export function dataDatabricksPostgresSyncedTableProviderConfigToTerraform(struc
 export function dataDatabricksPostgresSyncedTableProviderConfigToHclTerraform(struct?: DataDatabricksPostgresSyncedTableProviderConfig | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     workspace_id: {
@@ -117,15 +117,15 @@ export class DataDatabricksPostgresSyncedTableProviderConfigOutputReference exte
 }
 export interface DataDatabricksPostgresSyncedTableSpecNewPipelineSpec {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/postgres_synced_table#budget_policy_id DataDatabricksPostgresSyncedTable#budget_policy_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/postgres_synced_table#budget_policy_id DataDatabricksPostgresSyncedTable#budget_policy_id}
   */
   readonly budgetPolicyId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/postgres_synced_table#storage_catalog DataDatabricksPostgresSyncedTable#storage_catalog}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/postgres_synced_table#storage_catalog DataDatabricksPostgresSyncedTable#storage_catalog}
   */
   readonly storageCatalog?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/postgres_synced_table#storage_schema DataDatabricksPostgresSyncedTable#storage_schema}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/postgres_synced_table#storage_schema DataDatabricksPostgresSyncedTable#storage_schema}
   */
   readonly storageSchema?: string;
 }
@@ -133,7 +133,7 @@ export interface DataDatabricksPostgresSyncedTableSpecNewPipelineSpec {
 export function dataDatabricksPostgresSyncedTableSpecNewPipelineSpecToTerraform(struct?: DataDatabricksPostgresSyncedTableSpecNewPipelineSpec | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     budget_policy_id: cdktn.stringToTerraform(struct!.budgetPolicyId),
@@ -146,7 +146,7 @@ export function dataDatabricksPostgresSyncedTableSpecNewPipelineSpecToTerraform(
 export function dataDatabricksPostgresSyncedTableSpecNewPipelineSpecToHclTerraform(struct?: DataDatabricksPostgresSyncedTableSpecNewPipelineSpec | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     budget_policy_id: {
@@ -275,51 +275,236 @@ export class DataDatabricksPostgresSyncedTableSpecNewPipelineSpecOutputReference
     return this._storageSchema;
   }
 }
+export interface DataDatabricksPostgresSyncedTableSpecTypeOverrides {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/postgres_synced_table#column_name DataDatabricksPostgresSyncedTable#column_name}
+  */
+  readonly columnName: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/postgres_synced_table#pg_type DataDatabricksPostgresSyncedTable#pg_type}
+  */
+  readonly pgType: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/postgres_synced_table#size DataDatabricksPostgresSyncedTable#size}
+  */
+  readonly size?: number;
+}
+
+export function dataDatabricksPostgresSyncedTableSpecTypeOverridesToTerraform(struct?: DataDatabricksPostgresSyncedTableSpecTypeOverrides | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  return {
+    column_name: cdktn.stringToTerraform(struct!.columnName),
+    pg_type: cdktn.stringToTerraform(struct!.pgType),
+    size: cdktn.numberToTerraform(struct!.size),
+  }
+}
+
+
+export function dataDatabricksPostgresSyncedTableSpecTypeOverridesToHclTerraform(struct?: DataDatabricksPostgresSyncedTableSpecTypeOverrides | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  const attrs = {
+    column_name: {
+      value: cdktn.stringToHclTerraform(struct!.columnName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    pg_type: {
+      value: cdktn.stringToHclTerraform(struct!.pgType),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    size: {
+      value: cdktn.numberToHclTerraform(struct!.size),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class DataDatabricksPostgresSyncedTableSpecTypeOverridesOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktn.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DataDatabricksPostgresSyncedTableSpecTypeOverrides | cdktn.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._columnName !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.columnName = this._columnName;
+    }
+    if (this._pgType !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.pgType = this._pgType;
+    }
+    if (this._size !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.size = this._size;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataDatabricksPostgresSyncedTableSpecTypeOverrides | cdktn.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._columnName = undefined;
+      this._pgType = undefined;
+      this._size = undefined;
+    }
+    else if (cdktn.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._columnName = value.columnName;
+      this._pgType = value.pgType;
+      this._size = value.size;
+    }
+  }
+
+  // column_name - computed: true, optional: false, required: true
+  private _columnName?: string; 
+  public get columnName() {
+    return this.getStringAttribute('column_name');
+  }
+  public set columnName(value: string) {
+    this._columnName = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get columnNameInput() {
+    return this._columnName;
+  }
+
+  // pg_type - computed: true, optional: false, required: true
+  private _pgType?: string; 
+  public get pgType() {
+    return this.getStringAttribute('pg_type');
+  }
+  public set pgType(value: string) {
+    this._pgType = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get pgTypeInput() {
+    return this._pgType;
+  }
+
+  // size - computed: true, optional: true, required: false
+  private _size?: number; 
+  public get size() {
+    return this.getNumberAttribute('size');
+  }
+  public set size(value: number) {
+    this._size = value;
+  }
+  public resetSize() {
+    this._size = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get sizeInput() {
+    return this._size;
+  }
+}
+
+export class DataDatabricksPostgresSyncedTableSpecTypeOverridesList extends cdktn.ComplexList {
+  public internalValue? : DataDatabricksPostgresSyncedTableSpecTypeOverrides[] | cdktn.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet);
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DataDatabricksPostgresSyncedTableSpecTypeOverridesOutputReference {
+    return new DataDatabricksPostgresSyncedTableSpecTypeOverridesOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface DataDatabricksPostgresSyncedTableSpec {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/postgres_synced_table#branch DataDatabricksPostgresSyncedTable#branch}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/postgres_synced_table#accelerated_sync DataDatabricksPostgresSyncedTable#accelerated_sync}
+  */
+  readonly acceleratedSync?: boolean | cdktn.IResolvable;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/postgres_synced_table#branch DataDatabricksPostgresSyncedTable#branch}
   */
   readonly branch?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/postgres_synced_table#create_database_objects_if_missing DataDatabricksPostgresSyncedTable#create_database_objects_if_missing}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/postgres_synced_table#create_database_objects_if_missing DataDatabricksPostgresSyncedTable#create_database_objects_if_missing}
   */
   readonly createDatabaseObjectsIfMissing?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/postgres_synced_table#existing_pipeline_id DataDatabricksPostgresSyncedTable#existing_pipeline_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/postgres_synced_table#existing_pipeline_id DataDatabricksPostgresSyncedTable#existing_pipeline_id}
   */
   readonly existingPipelineId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/postgres_synced_table#new_pipeline_spec DataDatabricksPostgresSyncedTable#new_pipeline_spec}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/postgres_synced_table#new_pipeline_spec DataDatabricksPostgresSyncedTable#new_pipeline_spec}
   */
   readonly newPipelineSpec?: DataDatabricksPostgresSyncedTableSpecNewPipelineSpec;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/postgres_synced_table#postgres_database DataDatabricksPostgresSyncedTable#postgres_database}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/postgres_synced_table#postgres_database DataDatabricksPostgresSyncedTable#postgres_database}
   */
   readonly postgresDatabase?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/postgres_synced_table#primary_key_columns DataDatabricksPostgresSyncedTable#primary_key_columns}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/postgres_synced_table#primary_key_columns DataDatabricksPostgresSyncedTable#primary_key_columns}
   */
   readonly primaryKeyColumns?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/postgres_synced_table#scheduling_policy DataDatabricksPostgresSyncedTable#scheduling_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/postgres_synced_table#scheduling_policy DataDatabricksPostgresSyncedTable#scheduling_policy}
   */
   readonly schedulingPolicy?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/postgres_synced_table#source_table_full_name DataDatabricksPostgresSyncedTable#source_table_full_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/postgres_synced_table#source_table_full_name DataDatabricksPostgresSyncedTable#source_table_full_name}
   */
   readonly sourceTableFullName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/postgres_synced_table#timeseries_key DataDatabricksPostgresSyncedTable#timeseries_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/postgres_synced_table#timeseries_key DataDatabricksPostgresSyncedTable#timeseries_key}
   */
   readonly timeseriesKey?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/postgres_synced_table#type_overrides DataDatabricksPostgresSyncedTable#type_overrides}
+  */
+  readonly typeOverrides?: DataDatabricksPostgresSyncedTableSpecTypeOverrides[] | cdktn.IResolvable;
 }
 
 export function dataDatabricksPostgresSyncedTableSpecToTerraform(struct?: DataDatabricksPostgresSyncedTableSpec): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
+    accelerated_sync: cdktn.booleanToTerraform(struct!.acceleratedSync),
     branch: cdktn.stringToTerraform(struct!.branch),
     create_database_objects_if_missing: cdktn.booleanToTerraform(struct!.createDatabaseObjectsIfMissing),
     existing_pipeline_id: cdktn.stringToTerraform(struct!.existingPipelineId),
@@ -329,6 +514,7 @@ export function dataDatabricksPostgresSyncedTableSpecToTerraform(struct?: DataDa
     scheduling_policy: cdktn.stringToTerraform(struct!.schedulingPolicy),
     source_table_full_name: cdktn.stringToTerraform(struct!.sourceTableFullName),
     timeseries_key: cdktn.stringToTerraform(struct!.timeseriesKey),
+    type_overrides: cdktn.listMapper(dataDatabricksPostgresSyncedTableSpecTypeOverridesToTerraform, false)(struct!.typeOverrides),
   }
 }
 
@@ -336,9 +522,15 @@ export function dataDatabricksPostgresSyncedTableSpecToTerraform(struct?: DataDa
 export function dataDatabricksPostgresSyncedTableSpecToHclTerraform(struct?: DataDatabricksPostgresSyncedTableSpec): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
+    accelerated_sync: {
+      value: cdktn.booleanToHclTerraform(struct!.acceleratedSync),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
     branch: {
       value: cdktn.stringToHclTerraform(struct!.branch),
       isBlock: false,
@@ -393,6 +585,12 @@ export function dataDatabricksPostgresSyncedTableSpecToHclTerraform(struct?: Dat
       type: "simple",
       storageClassType: "string",
     },
+    type_overrides: {
+      value: cdktn.listMapperHcl(dataDatabricksPostgresSyncedTableSpecTypeOverridesToHclTerraform, false)(struct!.typeOverrides),
+      isBlock: true,
+      type: "list",
+      storageClassType: "DataDatabricksPostgresSyncedTableSpecTypeOverridesList",
+    },
   };
 
   // remove undefined attributes
@@ -413,6 +611,10 @@ export class DataDatabricksPostgresSyncedTableSpecOutputReference extends cdktn.
   public get internalValue(): DataDatabricksPostgresSyncedTableSpec | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
+    if (this._acceleratedSync !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.acceleratedSync = this._acceleratedSync;
+    }
     if (this._branch !== undefined) {
       hasAnyValues = true;
       internalValueResult.branch = this._branch;
@@ -449,12 +651,17 @@ export class DataDatabricksPostgresSyncedTableSpecOutputReference extends cdktn.
       hasAnyValues = true;
       internalValueResult.timeseriesKey = this._timeseriesKey;
     }
+    if (this._typeOverrides?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.typeOverrides = this._typeOverrides?.internalValue;
+    }
     return hasAnyValues ? internalValueResult : undefined;
   }
 
   public set internalValue(value: DataDatabricksPostgresSyncedTableSpec | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
+      this._acceleratedSync = undefined;
       this._branch = undefined;
       this._createDatabaseObjectsIfMissing = undefined;
       this._existingPipelineId = undefined;
@@ -464,9 +671,11 @@ export class DataDatabricksPostgresSyncedTableSpecOutputReference extends cdktn.
       this._schedulingPolicy = undefined;
       this._sourceTableFullName = undefined;
       this._timeseriesKey = undefined;
+      this._typeOverrides.internalValue = undefined;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
+      this._acceleratedSync = value.acceleratedSync;
       this._branch = value.branch;
       this._createDatabaseObjectsIfMissing = value.createDatabaseObjectsIfMissing;
       this._existingPipelineId = value.existingPipelineId;
@@ -476,7 +685,24 @@ export class DataDatabricksPostgresSyncedTableSpecOutputReference extends cdktn.
       this._schedulingPolicy = value.schedulingPolicy;
       this._sourceTableFullName = value.sourceTableFullName;
       this._timeseriesKey = value.timeseriesKey;
+      this._typeOverrides.internalValue = value.typeOverrides;
     }
+  }
+
+  // accelerated_sync - computed: true, optional: true, required: false
+  private _acceleratedSync?: boolean | cdktn.IResolvable; 
+  public get acceleratedSync() {
+    return this.getBooleanAttribute('accelerated_sync');
+  }
+  public set acceleratedSync(value: boolean | cdktn.IResolvable) {
+    this._acceleratedSync = value;
+  }
+  public resetAcceleratedSync() {
+    this._acceleratedSync = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get acceleratedSyncInput() {
+    return this._acceleratedSync;
   }
 
   // branch - computed: true, optional: true, required: false
@@ -622,6 +848,22 @@ export class DataDatabricksPostgresSyncedTableSpecOutputReference extends cdktn.
   public get timeseriesKeyInput() {
     return this._timeseriesKey;
   }
+
+  // type_overrides - computed: true, optional: true, required: false
+  private _typeOverrides = new DataDatabricksPostgresSyncedTableSpecTypeOverridesList(this, "type_overrides", false);
+  public get typeOverrides() {
+    return this._typeOverrides;
+  }
+  public putTypeOverrides(value: DataDatabricksPostgresSyncedTableSpecTypeOverrides[] | cdktn.IResolvable) {
+    this._typeOverrides.internalValue = value;
+  }
+  public resetTypeOverrides() {
+    this._typeOverrides.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get typeOverridesInput() {
+    return this._typeOverrides.internalValue;
+  }
 }
 export interface DataDatabricksPostgresSyncedTableStatusLastSyncDeltaTableSyncInfo {
 }
@@ -629,7 +871,7 @@ export interface DataDatabricksPostgresSyncedTableStatusLastSyncDeltaTableSyncIn
 export function dataDatabricksPostgresSyncedTableStatusLastSyncDeltaTableSyncInfoToTerraform(struct?: DataDatabricksPostgresSyncedTableStatusLastSyncDeltaTableSyncInfo): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -639,7 +881,7 @@ export function dataDatabricksPostgresSyncedTableStatusLastSyncDeltaTableSyncInf
 export function dataDatabricksPostgresSyncedTableStatusLastSyncDeltaTableSyncInfoToHclTerraform(struct?: DataDatabricksPostgresSyncedTableStatusLastSyncDeltaTableSyncInfo): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -688,7 +930,7 @@ export interface DataDatabricksPostgresSyncedTableStatusLastSync {
 export function dataDatabricksPostgresSyncedTableStatusLastSyncToTerraform(struct?: DataDatabricksPostgresSyncedTableStatusLastSync): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -698,7 +940,7 @@ export function dataDatabricksPostgresSyncedTableStatusLastSyncToTerraform(struc
 export function dataDatabricksPostgresSyncedTableStatusLastSyncToHclTerraform(struct?: DataDatabricksPostgresSyncedTableStatusLastSync): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -753,7 +995,7 @@ export interface DataDatabricksPostgresSyncedTableStatusOngoingSyncProgress {
 export function dataDatabricksPostgresSyncedTableStatusOngoingSyncProgressToTerraform(struct?: DataDatabricksPostgresSyncedTableStatusOngoingSyncProgress): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -763,7 +1005,7 @@ export function dataDatabricksPostgresSyncedTableStatusOngoingSyncProgressToTerr
 export function dataDatabricksPostgresSyncedTableStatusOngoingSyncProgressToHclTerraform(struct?: DataDatabricksPostgresSyncedTableStatusOngoingSyncProgress): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -827,7 +1069,7 @@ export interface DataDatabricksPostgresSyncedTableStatus {
 export function dataDatabricksPostgresSyncedTableStatusToTerraform(struct?: DataDatabricksPostgresSyncedTableStatus): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -837,7 +1079,7 @@ export function dataDatabricksPostgresSyncedTableStatusToTerraform(struct?: Data
 export function dataDatabricksPostgresSyncedTableStatusToHclTerraform(struct?: DataDatabricksPostgresSyncedTableStatus): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -924,7 +1166,7 @@ export class DataDatabricksPostgresSyncedTableStatusOutputReference extends cdkt
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/postgres_synced_table databricks_postgres_synced_table}
+* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/postgres_synced_table databricks_postgres_synced_table}
 */
 export class DataDatabricksPostgresSyncedTable extends cdktn.TerraformDataSource {
 
@@ -940,7 +1182,7 @@ export class DataDatabricksPostgresSyncedTable extends cdktn.TerraformDataSource
   * Generates CDKTN code for importing a DataDatabricksPostgresSyncedTable resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataDatabricksPostgresSyncedTable to import
-  * @param importFromId The id of the existing DataDatabricksPostgresSyncedTable that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/postgres_synced_table#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataDatabricksPostgresSyncedTable that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/postgres_synced_table#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataDatabricksPostgresSyncedTable to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -952,7 +1194,7 @@ export class DataDatabricksPostgresSyncedTable extends cdktn.TerraformDataSource
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/data-sources/postgres_synced_table databricks_postgres_synced_table} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/postgres_synced_table databricks_postgres_synced_table} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -963,7 +1205,7 @@ export class DataDatabricksPostgresSyncedTable extends cdktn.TerraformDataSource
       terraformResourceType: 'databricks_postgres_synced_table',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '1.117.0',
+        providerVersion: '1.118.0',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,
@@ -1026,6 +1268,11 @@ export class DataDatabricksPostgresSyncedTable extends cdktn.TerraformDataSource
   private _status = new DataDatabricksPostgresSyncedTableStatusOutputReference(this, "status");
   public get status() {
     return this._status;
+  }
+
+  // synced_table_id - computed: true, optional: false, required: false
+  public get syncedTableId() {
+    return this.getStringAttribute('synced_table_id');
   }
 
   // uid - computed: true, optional: false, required: false

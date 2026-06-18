@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline
+// https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,218 +13,218 @@ import * as cdktn from 'cdktn';
 
 export interface PipelineConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#allow_duplicate_names Pipeline#allow_duplicate_names}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#allow_duplicate_names Pipeline#allow_duplicate_names}
   */
   readonly allowDuplicateNames?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#budget_policy_id Pipeline#budget_policy_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#budget_policy_id Pipeline#budget_policy_id}
   */
   readonly budgetPolicyId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#catalog Pipeline#catalog}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#catalog Pipeline#catalog}
   */
   readonly catalog?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#cause Pipeline#cause}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#cause Pipeline#cause}
   */
   readonly cause?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#channel Pipeline#channel}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#channel Pipeline#channel}
   */
   readonly channel?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#cluster_id Pipeline#cluster_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#cluster_id Pipeline#cluster_id}
   */
   readonly clusterId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#configuration Pipeline#configuration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#configuration Pipeline#configuration}
   */
   readonly configuration?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#continuous Pipeline#continuous}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#continuous Pipeline#continuous}
   */
   readonly continuous?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#creator_user_name Pipeline#creator_user_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#creator_user_name Pipeline#creator_user_name}
   */
   readonly creatorUserName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#development Pipeline#development}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#development Pipeline#development}
   */
   readonly development?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#edition Pipeline#edition}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#edition Pipeline#edition}
   */
   readonly edition?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#expected_last_modified Pipeline#expected_last_modified}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#expected_last_modified Pipeline#expected_last_modified}
   */
   readonly expectedLastModified?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#health Pipeline#health}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#health Pipeline#health}
   */
   readonly health?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#id Pipeline#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#id Pipeline#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#last_modified Pipeline#last_modified}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#last_modified Pipeline#last_modified}
   */
   readonly lastModified?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#name Pipeline#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#name Pipeline#name}
   */
   readonly name?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#photon Pipeline#photon}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#photon Pipeline#photon}
   */
   readonly photon?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#root_path Pipeline#root_path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#root_path Pipeline#root_path}
   */
   readonly rootPath?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#run_as_user_name Pipeline#run_as_user_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#run_as_user_name Pipeline#run_as_user_name}
   */
   readonly runAsUserName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#schema Pipeline#schema}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#schema Pipeline#schema}
   */
   readonly schema?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#serverless Pipeline#serverless}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#serverless Pipeline#serverless}
   */
   readonly serverless?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#state Pipeline#state}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#state Pipeline#state}
   */
   readonly state?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#storage Pipeline#storage}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#storage Pipeline#storage}
   */
   readonly storage?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#tags Pipeline#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#tags Pipeline#tags}
   */
   readonly tags?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#target Pipeline#target}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#target Pipeline#target}
   */
   readonly target?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#url Pipeline#url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#url Pipeline#url}
   */
   readonly url?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#usage_policy_id Pipeline#usage_policy_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#usage_policy_id Pipeline#usage_policy_id}
   */
   readonly usagePolicyId?: string;
   /**
   * cluster block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#cluster Pipeline#cluster}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#cluster Pipeline#cluster}
   */
   readonly cluster?: PipelineCluster[] | cdktn.IResolvable;
   /**
   * deployment block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#deployment Pipeline#deployment}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#deployment Pipeline#deployment}
   */
   readonly deployment?: PipelineDeployment;
   /**
   * environment block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#environment Pipeline#environment}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#environment Pipeline#environment}
   */
   readonly environment?: PipelineEnvironment;
   /**
   * event_log block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#event_log Pipeline#event_log}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#event_log Pipeline#event_log}
   */
   readonly eventLog?: PipelineEventLog;
   /**
   * filters block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#filters Pipeline#filters}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#filters Pipeline#filters}
   */
   readonly filters?: PipelineFilters;
   /**
   * gateway_definition block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#gateway_definition Pipeline#gateway_definition}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#gateway_definition Pipeline#gateway_definition}
   */
   readonly gatewayDefinition?: PipelineGatewayDefinition;
   /**
   * ingestion_definition block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#ingestion_definition Pipeline#ingestion_definition}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#ingestion_definition Pipeline#ingestion_definition}
   */
   readonly ingestionDefinition?: PipelineIngestionDefinition;
   /**
   * latest_updates block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#latest_updates Pipeline#latest_updates}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#latest_updates Pipeline#latest_updates}
   */
   readonly latestUpdates?: PipelineLatestUpdates[] | cdktn.IResolvable;
   /**
   * library block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#library Pipeline#library}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#library Pipeline#library}
   */
   readonly library?: PipelineLibrary[] | cdktn.IResolvable;
   /**
   * notification block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#notification Pipeline#notification}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#notification Pipeline#notification}
   */
   readonly notification?: PipelineNotification[] | cdktn.IResolvable;
   /**
   * provider_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#provider_config Pipeline#provider_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#provider_config Pipeline#provider_config}
   */
   readonly providerConfig?: PipelineProviderConfig;
   /**
   * restart_window block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#restart_window Pipeline#restart_window}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#restart_window Pipeline#restart_window}
   */
   readonly restartWindow?: PipelineRestartWindow;
   /**
   * run_as block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#run_as Pipeline#run_as}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#run_as Pipeline#run_as}
   */
   readonly runAs?: PipelineRunAs;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#timeouts Pipeline#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#timeouts Pipeline#timeouts}
   */
   readonly timeouts?: PipelineTimeouts;
   /**
   * trigger block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#trigger Pipeline#trigger}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#trigger Pipeline#trigger}
   */
   readonly trigger?: PipelineTrigger;
 }
 export interface PipelineClusterAutoscale {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#max_workers Pipeline#max_workers}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#max_workers Pipeline#max_workers}
   */
   readonly maxWorkers: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#min_workers Pipeline#min_workers}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#min_workers Pipeline#min_workers}
   */
   readonly minWorkers: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#mode Pipeline#mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#mode Pipeline#mode}
   */
   readonly mode?: string;
 }
@@ -232,7 +232,7 @@ export interface PipelineClusterAutoscale {
 export function pipelineClusterAutoscaleToTerraform(struct?: PipelineClusterAutoscaleOutputReference | PipelineClusterAutoscale): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     max_workers: cdktn.numberToTerraform(struct!.maxWorkers),
@@ -245,7 +245,7 @@ export function pipelineClusterAutoscaleToTerraform(struct?: PipelineClusterAuto
 export function pipelineClusterAutoscaleToHclTerraform(struct?: PipelineClusterAutoscaleOutputReference | PipelineClusterAutoscale): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     max_workers: {
@@ -360,43 +360,43 @@ export class PipelineClusterAutoscaleOutputReference extends cdktn.ComplexObject
 }
 export interface PipelineClusterAwsAttributes {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#availability Pipeline#availability}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#availability Pipeline#availability}
   */
   readonly availability?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#ebs_volume_count Pipeline#ebs_volume_count}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#ebs_volume_count Pipeline#ebs_volume_count}
   */
   readonly ebsVolumeCount?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#ebs_volume_iops Pipeline#ebs_volume_iops}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#ebs_volume_iops Pipeline#ebs_volume_iops}
   */
   readonly ebsVolumeIops?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#ebs_volume_size Pipeline#ebs_volume_size}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#ebs_volume_size Pipeline#ebs_volume_size}
   */
   readonly ebsVolumeSize?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#ebs_volume_throughput Pipeline#ebs_volume_throughput}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#ebs_volume_throughput Pipeline#ebs_volume_throughput}
   */
   readonly ebsVolumeThroughput?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#ebs_volume_type Pipeline#ebs_volume_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#ebs_volume_type Pipeline#ebs_volume_type}
   */
   readonly ebsVolumeType?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#first_on_demand Pipeline#first_on_demand}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#first_on_demand Pipeline#first_on_demand}
   */
   readonly firstOnDemand?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#instance_profile_arn Pipeline#instance_profile_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#instance_profile_arn Pipeline#instance_profile_arn}
   */
   readonly instanceProfileArn?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#spot_bid_price_percent Pipeline#spot_bid_price_percent}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#spot_bid_price_percent Pipeline#spot_bid_price_percent}
   */
   readonly spotBidPricePercent?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#zone_id Pipeline#zone_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#zone_id Pipeline#zone_id}
   */
   readonly zoneId?: string;
 }
@@ -404,7 +404,7 @@ export interface PipelineClusterAwsAttributes {
 export function pipelineClusterAwsAttributesToTerraform(struct?: PipelineClusterAwsAttributesOutputReference | PipelineClusterAwsAttributes): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     availability: cdktn.stringToTerraform(struct!.availability),
@@ -424,7 +424,7 @@ export function pipelineClusterAwsAttributesToTerraform(struct?: PipelineCluster
 export function pipelineClusterAwsAttributesToHclTerraform(struct?: PipelineClusterAwsAttributesOutputReference | PipelineClusterAwsAttributes): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     availability: {
@@ -741,11 +741,11 @@ export class PipelineClusterAwsAttributesOutputReference extends cdktn.ComplexOb
 }
 export interface PipelineClusterAzureAttributesLogAnalyticsInfo {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#log_analytics_primary_key Pipeline#log_analytics_primary_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#log_analytics_primary_key Pipeline#log_analytics_primary_key}
   */
   readonly logAnalyticsPrimaryKey?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#log_analytics_workspace_id Pipeline#log_analytics_workspace_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#log_analytics_workspace_id Pipeline#log_analytics_workspace_id}
   */
   readonly logAnalyticsWorkspaceId?: string;
 }
@@ -753,7 +753,7 @@ export interface PipelineClusterAzureAttributesLogAnalyticsInfo {
 export function pipelineClusterAzureAttributesLogAnalyticsInfoToTerraform(struct?: PipelineClusterAzureAttributesLogAnalyticsInfoOutputReference | PipelineClusterAzureAttributesLogAnalyticsInfo): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     log_analytics_primary_key: cdktn.stringToTerraform(struct!.logAnalyticsPrimaryKey),
@@ -765,7 +765,7 @@ export function pipelineClusterAzureAttributesLogAnalyticsInfoToTerraform(struct
 export function pipelineClusterAzureAttributesLogAnalyticsInfoToHclTerraform(struct?: PipelineClusterAzureAttributesLogAnalyticsInfoOutputReference | PipelineClusterAzureAttributesLogAnalyticsInfo): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     log_analytics_primary_key: {
@@ -858,21 +858,21 @@ export class PipelineClusterAzureAttributesLogAnalyticsInfoOutputReference exten
 }
 export interface PipelineClusterAzureAttributes {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#availability Pipeline#availability}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#availability Pipeline#availability}
   */
   readonly availability?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#first_on_demand Pipeline#first_on_demand}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#first_on_demand Pipeline#first_on_demand}
   */
   readonly firstOnDemand?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#spot_bid_max_price Pipeline#spot_bid_max_price}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#spot_bid_max_price Pipeline#spot_bid_max_price}
   */
   readonly spotBidMaxPrice?: number;
   /**
   * log_analytics_info block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#log_analytics_info Pipeline#log_analytics_info}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#log_analytics_info Pipeline#log_analytics_info}
   */
   readonly logAnalyticsInfo?: PipelineClusterAzureAttributesLogAnalyticsInfo;
 }
@@ -880,7 +880,7 @@ export interface PipelineClusterAzureAttributes {
 export function pipelineClusterAzureAttributesToTerraform(struct?: PipelineClusterAzureAttributesOutputReference | PipelineClusterAzureAttributes): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     availability: cdktn.stringToTerraform(struct!.availability),
@@ -894,7 +894,7 @@ export function pipelineClusterAzureAttributesToTerraform(struct?: PipelineClust
 export function pipelineClusterAzureAttributesToHclTerraform(struct?: PipelineClusterAzureAttributesOutputReference | PipelineClusterAzureAttributes): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     availability: {
@@ -1043,7 +1043,7 @@ export class PipelineClusterAzureAttributesOutputReference extends cdktn.Complex
 }
 export interface PipelineClusterClusterLogConfDbfs {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#destination Pipeline#destination}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#destination Pipeline#destination}
   */
   readonly destination: string;
 }
@@ -1051,7 +1051,7 @@ export interface PipelineClusterClusterLogConfDbfs {
 export function pipelineClusterClusterLogConfDbfsToTerraform(struct?: PipelineClusterClusterLogConfDbfsOutputReference | PipelineClusterClusterLogConfDbfs): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     destination: cdktn.stringToTerraform(struct!.destination),
@@ -1062,7 +1062,7 @@ export function pipelineClusterClusterLogConfDbfsToTerraform(struct?: PipelineCl
 export function pipelineClusterClusterLogConfDbfsToHclTerraform(struct?: PipelineClusterClusterLogConfDbfsOutputReference | PipelineClusterClusterLogConfDbfs): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     destination: {
@@ -1124,31 +1124,31 @@ export class PipelineClusterClusterLogConfDbfsOutputReference extends cdktn.Comp
 }
 export interface PipelineClusterClusterLogConfS3 {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#canned_acl Pipeline#canned_acl}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#canned_acl Pipeline#canned_acl}
   */
   readonly cannedAcl?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#destination Pipeline#destination}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#destination Pipeline#destination}
   */
   readonly destination: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#enable_encryption Pipeline#enable_encryption}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#enable_encryption Pipeline#enable_encryption}
   */
   readonly enableEncryption?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#encryption_type Pipeline#encryption_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#encryption_type Pipeline#encryption_type}
   */
   readonly encryptionType?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#endpoint Pipeline#endpoint}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#endpoint Pipeline#endpoint}
   */
   readonly endpoint?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#kms_key Pipeline#kms_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#kms_key Pipeline#kms_key}
   */
   readonly kmsKey?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#region Pipeline#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#region Pipeline#region}
   */
   readonly region?: string;
 }
@@ -1156,7 +1156,7 @@ export interface PipelineClusterClusterLogConfS3 {
 export function pipelineClusterClusterLogConfS3ToTerraform(struct?: PipelineClusterClusterLogConfS3OutputReference | PipelineClusterClusterLogConfS3): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     canned_acl: cdktn.stringToTerraform(struct!.cannedAcl),
@@ -1173,7 +1173,7 @@ export function pipelineClusterClusterLogConfS3ToTerraform(struct?: PipelineClus
 export function pipelineClusterClusterLogConfS3ToHclTerraform(struct?: PipelineClusterClusterLogConfS3OutputReference | PipelineClusterClusterLogConfS3): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     canned_acl: {
@@ -1403,7 +1403,7 @@ export class PipelineClusterClusterLogConfS3OutputReference extends cdktn.Comple
 }
 export interface PipelineClusterClusterLogConfVolumes {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#destination Pipeline#destination}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#destination Pipeline#destination}
   */
   readonly destination: string;
 }
@@ -1411,7 +1411,7 @@ export interface PipelineClusterClusterLogConfVolumes {
 export function pipelineClusterClusterLogConfVolumesToTerraform(struct?: PipelineClusterClusterLogConfVolumesOutputReference | PipelineClusterClusterLogConfVolumes): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     destination: cdktn.stringToTerraform(struct!.destination),
@@ -1422,7 +1422,7 @@ export function pipelineClusterClusterLogConfVolumesToTerraform(struct?: Pipelin
 export function pipelineClusterClusterLogConfVolumesToHclTerraform(struct?: PipelineClusterClusterLogConfVolumesOutputReference | PipelineClusterClusterLogConfVolumes): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     destination: {
@@ -1486,19 +1486,19 @@ export interface PipelineClusterClusterLogConf {
   /**
   * dbfs block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#dbfs Pipeline#dbfs}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#dbfs Pipeline#dbfs}
   */
   readonly dbfs?: PipelineClusterClusterLogConfDbfs;
   /**
   * s3 block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#s3 Pipeline#s3}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#s3 Pipeline#s3}
   */
   readonly s3?: PipelineClusterClusterLogConfS3;
   /**
   * volumes block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#volumes Pipeline#volumes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#volumes Pipeline#volumes}
   */
   readonly volumes?: PipelineClusterClusterLogConfVolumes;
 }
@@ -1506,7 +1506,7 @@ export interface PipelineClusterClusterLogConf {
 export function pipelineClusterClusterLogConfToTerraform(struct?: PipelineClusterClusterLogConfOutputReference | PipelineClusterClusterLogConf): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     dbfs: pipelineClusterClusterLogConfDbfsToTerraform(struct!.dbfs),
@@ -1519,7 +1519,7 @@ export function pipelineClusterClusterLogConfToTerraform(struct?: PipelineCluste
 export function pipelineClusterClusterLogConfToHclTerraform(struct?: PipelineClusterClusterLogConfOutputReference | PipelineClusterClusterLogConf): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     dbfs: {
@@ -1640,27 +1640,27 @@ export class PipelineClusterClusterLogConfOutputReference extends cdktn.ComplexO
 }
 export interface PipelineClusterGcpAttributes {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#availability Pipeline#availability}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#availability Pipeline#availability}
   */
   readonly availability?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#confidential_compute_type Pipeline#confidential_compute_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#confidential_compute_type Pipeline#confidential_compute_type}
   */
   readonly confidentialComputeType?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#first_on_demand Pipeline#first_on_demand}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#first_on_demand Pipeline#first_on_demand}
   */
   readonly firstOnDemand?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#google_service_account Pipeline#google_service_account}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#google_service_account Pipeline#google_service_account}
   */
   readonly googleServiceAccount?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#local_ssd_count Pipeline#local_ssd_count}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#local_ssd_count Pipeline#local_ssd_count}
   */
   readonly localSsdCount?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#zone_id Pipeline#zone_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#zone_id Pipeline#zone_id}
   */
   readonly zoneId?: string;
 }
@@ -1668,7 +1668,7 @@ export interface PipelineClusterGcpAttributes {
 export function pipelineClusterGcpAttributesToTerraform(struct?: PipelineClusterGcpAttributesOutputReference | PipelineClusterGcpAttributes): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     availability: cdktn.stringToTerraform(struct!.availability),
@@ -1684,7 +1684,7 @@ export function pipelineClusterGcpAttributesToTerraform(struct?: PipelineCluster
 export function pipelineClusterGcpAttributesToHclTerraform(struct?: PipelineClusterGcpAttributesOutputReference | PipelineClusterGcpAttributes): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     availability: {
@@ -1889,7 +1889,7 @@ export class PipelineClusterGcpAttributesOutputReference extends cdktn.ComplexOb
 }
 export interface PipelineClusterInitScriptsAbfss {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#destination Pipeline#destination}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#destination Pipeline#destination}
   */
   readonly destination: string;
 }
@@ -1897,7 +1897,7 @@ export interface PipelineClusterInitScriptsAbfss {
 export function pipelineClusterInitScriptsAbfssToTerraform(struct?: PipelineClusterInitScriptsAbfssOutputReference | PipelineClusterInitScriptsAbfss): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     destination: cdktn.stringToTerraform(struct!.destination),
@@ -1908,7 +1908,7 @@ export function pipelineClusterInitScriptsAbfssToTerraform(struct?: PipelineClus
 export function pipelineClusterInitScriptsAbfssToHclTerraform(struct?: PipelineClusterInitScriptsAbfssOutputReference | PipelineClusterInitScriptsAbfss): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     destination: {
@@ -1970,7 +1970,7 @@ export class PipelineClusterInitScriptsAbfssOutputReference extends cdktn.Comple
 }
 export interface PipelineClusterInitScriptsDbfs {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#destination Pipeline#destination}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#destination Pipeline#destination}
   */
   readonly destination: string;
 }
@@ -1978,7 +1978,7 @@ export interface PipelineClusterInitScriptsDbfs {
 export function pipelineClusterInitScriptsDbfsToTerraform(struct?: PipelineClusterInitScriptsDbfsOutputReference | PipelineClusterInitScriptsDbfs): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     destination: cdktn.stringToTerraform(struct!.destination),
@@ -1989,7 +1989,7 @@ export function pipelineClusterInitScriptsDbfsToTerraform(struct?: PipelineClust
 export function pipelineClusterInitScriptsDbfsToHclTerraform(struct?: PipelineClusterInitScriptsDbfsOutputReference | PipelineClusterInitScriptsDbfs): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     destination: {
@@ -2051,7 +2051,7 @@ export class PipelineClusterInitScriptsDbfsOutputReference extends cdktn.Complex
 }
 export interface PipelineClusterInitScriptsFile {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#destination Pipeline#destination}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#destination Pipeline#destination}
   */
   readonly destination: string;
 }
@@ -2059,7 +2059,7 @@ export interface PipelineClusterInitScriptsFile {
 export function pipelineClusterInitScriptsFileToTerraform(struct?: PipelineClusterInitScriptsFileOutputReference | PipelineClusterInitScriptsFile): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     destination: cdktn.stringToTerraform(struct!.destination),
@@ -2070,7 +2070,7 @@ export function pipelineClusterInitScriptsFileToTerraform(struct?: PipelineClust
 export function pipelineClusterInitScriptsFileToHclTerraform(struct?: PipelineClusterInitScriptsFileOutputReference | PipelineClusterInitScriptsFile): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     destination: {
@@ -2132,7 +2132,7 @@ export class PipelineClusterInitScriptsFileOutputReference extends cdktn.Complex
 }
 export interface PipelineClusterInitScriptsGcs {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#destination Pipeline#destination}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#destination Pipeline#destination}
   */
   readonly destination: string;
 }
@@ -2140,7 +2140,7 @@ export interface PipelineClusterInitScriptsGcs {
 export function pipelineClusterInitScriptsGcsToTerraform(struct?: PipelineClusterInitScriptsGcsOutputReference | PipelineClusterInitScriptsGcs): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     destination: cdktn.stringToTerraform(struct!.destination),
@@ -2151,7 +2151,7 @@ export function pipelineClusterInitScriptsGcsToTerraform(struct?: PipelineCluste
 export function pipelineClusterInitScriptsGcsToHclTerraform(struct?: PipelineClusterInitScriptsGcsOutputReference | PipelineClusterInitScriptsGcs): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     destination: {
@@ -2213,31 +2213,31 @@ export class PipelineClusterInitScriptsGcsOutputReference extends cdktn.ComplexO
 }
 export interface PipelineClusterInitScriptsS3 {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#canned_acl Pipeline#canned_acl}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#canned_acl Pipeline#canned_acl}
   */
   readonly cannedAcl?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#destination Pipeline#destination}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#destination Pipeline#destination}
   */
   readonly destination: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#enable_encryption Pipeline#enable_encryption}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#enable_encryption Pipeline#enable_encryption}
   */
   readonly enableEncryption?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#encryption_type Pipeline#encryption_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#encryption_type Pipeline#encryption_type}
   */
   readonly encryptionType?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#endpoint Pipeline#endpoint}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#endpoint Pipeline#endpoint}
   */
   readonly endpoint?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#kms_key Pipeline#kms_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#kms_key Pipeline#kms_key}
   */
   readonly kmsKey?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#region Pipeline#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#region Pipeline#region}
   */
   readonly region?: string;
 }
@@ -2245,7 +2245,7 @@ export interface PipelineClusterInitScriptsS3 {
 export function pipelineClusterInitScriptsS3ToTerraform(struct?: PipelineClusterInitScriptsS3OutputReference | PipelineClusterInitScriptsS3): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     canned_acl: cdktn.stringToTerraform(struct!.cannedAcl),
@@ -2262,7 +2262,7 @@ export function pipelineClusterInitScriptsS3ToTerraform(struct?: PipelineCluster
 export function pipelineClusterInitScriptsS3ToHclTerraform(struct?: PipelineClusterInitScriptsS3OutputReference | PipelineClusterInitScriptsS3): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     canned_acl: {
@@ -2492,7 +2492,7 @@ export class PipelineClusterInitScriptsS3OutputReference extends cdktn.ComplexOb
 }
 export interface PipelineClusterInitScriptsVolumes {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#destination Pipeline#destination}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#destination Pipeline#destination}
   */
   readonly destination: string;
 }
@@ -2500,7 +2500,7 @@ export interface PipelineClusterInitScriptsVolumes {
 export function pipelineClusterInitScriptsVolumesToTerraform(struct?: PipelineClusterInitScriptsVolumesOutputReference | PipelineClusterInitScriptsVolumes): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     destination: cdktn.stringToTerraform(struct!.destination),
@@ -2511,7 +2511,7 @@ export function pipelineClusterInitScriptsVolumesToTerraform(struct?: PipelineCl
 export function pipelineClusterInitScriptsVolumesToHclTerraform(struct?: PipelineClusterInitScriptsVolumesOutputReference | PipelineClusterInitScriptsVolumes): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     destination: {
@@ -2573,7 +2573,7 @@ export class PipelineClusterInitScriptsVolumesOutputReference extends cdktn.Comp
 }
 export interface PipelineClusterInitScriptsWorkspace {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#destination Pipeline#destination}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#destination Pipeline#destination}
   */
   readonly destination: string;
 }
@@ -2581,7 +2581,7 @@ export interface PipelineClusterInitScriptsWorkspace {
 export function pipelineClusterInitScriptsWorkspaceToTerraform(struct?: PipelineClusterInitScriptsWorkspaceOutputReference | PipelineClusterInitScriptsWorkspace): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     destination: cdktn.stringToTerraform(struct!.destination),
@@ -2592,7 +2592,7 @@ export function pipelineClusterInitScriptsWorkspaceToTerraform(struct?: Pipeline
 export function pipelineClusterInitScriptsWorkspaceToHclTerraform(struct?: PipelineClusterInitScriptsWorkspaceOutputReference | PipelineClusterInitScriptsWorkspace): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     destination: {
@@ -2656,43 +2656,43 @@ export interface PipelineClusterInitScripts {
   /**
   * abfss block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#abfss Pipeline#abfss}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#abfss Pipeline#abfss}
   */
   readonly abfss?: PipelineClusterInitScriptsAbfss;
   /**
   * dbfs block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#dbfs Pipeline#dbfs}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#dbfs Pipeline#dbfs}
   */
   readonly dbfs?: PipelineClusterInitScriptsDbfs;
   /**
   * file block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#file Pipeline#file}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#file Pipeline#file}
   */
   readonly file?: PipelineClusterInitScriptsFile;
   /**
   * gcs block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#gcs Pipeline#gcs}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#gcs Pipeline#gcs}
   */
   readonly gcs?: PipelineClusterInitScriptsGcs;
   /**
   * s3 block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#s3 Pipeline#s3}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#s3 Pipeline#s3}
   */
   readonly s3?: PipelineClusterInitScriptsS3;
   /**
   * volumes block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#volumes Pipeline#volumes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#volumes Pipeline#volumes}
   */
   readonly volumes?: PipelineClusterInitScriptsVolumes;
   /**
   * workspace block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#workspace Pipeline#workspace}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#workspace Pipeline#workspace}
   */
   readonly workspace?: PipelineClusterInitScriptsWorkspace;
 }
@@ -2700,7 +2700,7 @@ export interface PipelineClusterInitScripts {
 export function pipelineClusterInitScriptsToTerraform(struct?: PipelineClusterInitScripts | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     abfss: pipelineClusterInitScriptsAbfssToTerraform(struct!.abfss),
@@ -2717,7 +2717,7 @@ export function pipelineClusterInitScriptsToTerraform(struct?: PipelineClusterIn
 export function pipelineClusterInitScriptsToHclTerraform(struct?: PipelineClusterInitScripts | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     abfss: {
@@ -2982,91 +2982,91 @@ export class PipelineClusterInitScriptsList extends cdktn.ComplexList {
 }
 export interface PipelineCluster {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#apply_policy_default_values Pipeline#apply_policy_default_values}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#apply_policy_default_values Pipeline#apply_policy_default_values}
   */
   readonly applyPolicyDefaultValues?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#custom_tags Pipeline#custom_tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#custom_tags Pipeline#custom_tags}
   */
   readonly customTags?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#driver_instance_pool_id Pipeline#driver_instance_pool_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#driver_instance_pool_id Pipeline#driver_instance_pool_id}
   */
   readonly driverInstancePoolId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#driver_node_type_id Pipeline#driver_node_type_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#driver_node_type_id Pipeline#driver_node_type_id}
   */
   readonly driverNodeTypeId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#enable_local_disk_encryption Pipeline#enable_local_disk_encryption}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#enable_local_disk_encryption Pipeline#enable_local_disk_encryption}
   */
   readonly enableLocalDiskEncryption?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#instance_pool_id Pipeline#instance_pool_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#instance_pool_id Pipeline#instance_pool_id}
   */
   readonly instancePoolId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#label Pipeline#label}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#label Pipeline#label}
   */
   readonly label?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#node_type_id Pipeline#node_type_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#node_type_id Pipeline#node_type_id}
   */
   readonly nodeTypeId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#num_workers Pipeline#num_workers}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#num_workers Pipeline#num_workers}
   */
   readonly numWorkers?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#policy_id Pipeline#policy_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#policy_id Pipeline#policy_id}
   */
   readonly policyId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#spark_conf Pipeline#spark_conf}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#spark_conf Pipeline#spark_conf}
   */
   readonly sparkConf?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#spark_env_vars Pipeline#spark_env_vars}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#spark_env_vars Pipeline#spark_env_vars}
   */
   readonly sparkEnvVars?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#ssh_public_keys Pipeline#ssh_public_keys}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#ssh_public_keys Pipeline#ssh_public_keys}
   */
   readonly sshPublicKeys?: string[];
   /**
   * autoscale block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#autoscale Pipeline#autoscale}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#autoscale Pipeline#autoscale}
   */
   readonly autoscale?: PipelineClusterAutoscale;
   /**
   * aws_attributes block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#aws_attributes Pipeline#aws_attributes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#aws_attributes Pipeline#aws_attributes}
   */
   readonly awsAttributes?: PipelineClusterAwsAttributes;
   /**
   * azure_attributes block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#azure_attributes Pipeline#azure_attributes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#azure_attributes Pipeline#azure_attributes}
   */
   readonly azureAttributes?: PipelineClusterAzureAttributes;
   /**
   * cluster_log_conf block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#cluster_log_conf Pipeline#cluster_log_conf}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#cluster_log_conf Pipeline#cluster_log_conf}
   */
   readonly clusterLogConf?: PipelineClusterClusterLogConf;
   /**
   * gcp_attributes block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#gcp_attributes Pipeline#gcp_attributes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#gcp_attributes Pipeline#gcp_attributes}
   */
   readonly gcpAttributes?: PipelineClusterGcpAttributes;
   /**
   * init_scripts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#init_scripts Pipeline#init_scripts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#init_scripts Pipeline#init_scripts}
   */
   readonly initScripts?: PipelineClusterInitScripts[] | cdktn.IResolvable;
 }
@@ -3074,7 +3074,7 @@ export interface PipelineCluster {
 export function pipelineClusterToTerraform(struct?: PipelineCluster | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     apply_policy_default_values: cdktn.booleanToTerraform(struct!.applyPolicyDefaultValues),
@@ -3103,7 +3103,7 @@ export function pipelineClusterToTerraform(struct?: PipelineCluster | cdktn.IRes
 export function pipelineClusterToHclTerraform(struct?: PipelineCluster | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     apply_policy_default_values: {
@@ -3704,19 +3704,19 @@ export class PipelineClusterList extends cdktn.ComplexList {
 }
 export interface PipelineDeployment {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#deployment_id Pipeline#deployment_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#deployment_id Pipeline#deployment_id}
   */
   readonly deploymentId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#kind Pipeline#kind}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#kind Pipeline#kind}
   */
   readonly kind: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#metadata_file_path Pipeline#metadata_file_path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#metadata_file_path Pipeline#metadata_file_path}
   */
   readonly metadataFilePath?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#version_id Pipeline#version_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#version_id Pipeline#version_id}
   */
   readonly versionId?: string;
 }
@@ -3724,7 +3724,7 @@ export interface PipelineDeployment {
 export function pipelineDeploymentToTerraform(struct?: PipelineDeploymentOutputReference | PipelineDeployment): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     deployment_id: cdktn.stringToTerraform(struct!.deploymentId),
@@ -3738,7 +3738,7 @@ export function pipelineDeploymentToTerraform(struct?: PipelineDeploymentOutputR
 export function pipelineDeploymentToHclTerraform(struct?: PipelineDeploymentOutputReference | PipelineDeployment): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     deployment_id: {
@@ -3884,11 +3884,11 @@ export class PipelineDeploymentOutputReference extends cdktn.ComplexObject {
 }
 export interface PipelineEnvironment {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#dependencies Pipeline#dependencies}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#dependencies Pipeline#dependencies}
   */
   readonly dependencies?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#environment_version Pipeline#environment_version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#environment_version Pipeline#environment_version}
   */
   readonly environmentVersion?: string;
 }
@@ -3896,7 +3896,7 @@ export interface PipelineEnvironment {
 export function pipelineEnvironmentToTerraform(struct?: PipelineEnvironmentOutputReference | PipelineEnvironment): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     dependencies: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.dependencies),
@@ -3908,7 +3908,7 @@ export function pipelineEnvironmentToTerraform(struct?: PipelineEnvironmentOutpu
 export function pipelineEnvironmentToHclTerraform(struct?: PipelineEnvironmentOutputReference | PipelineEnvironment): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     dependencies: {
@@ -4001,15 +4001,15 @@ export class PipelineEnvironmentOutputReference extends cdktn.ComplexObject {
 }
 export interface PipelineEventLog {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#catalog Pipeline#catalog}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#catalog Pipeline#catalog}
   */
   readonly catalog?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#name Pipeline#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#name Pipeline#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#schema Pipeline#schema}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#schema Pipeline#schema}
   */
   readonly schema?: string;
 }
@@ -4017,7 +4017,7 @@ export interface PipelineEventLog {
 export function pipelineEventLogToTerraform(struct?: PipelineEventLogOutputReference | PipelineEventLog): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     catalog: cdktn.stringToTerraform(struct!.catalog),
@@ -4030,7 +4030,7 @@ export function pipelineEventLogToTerraform(struct?: PipelineEventLogOutputRefer
 export function pipelineEventLogToHclTerraform(struct?: PipelineEventLogOutputReference | PipelineEventLog): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     catalog: {
@@ -4148,11 +4148,11 @@ export class PipelineEventLogOutputReference extends cdktn.ComplexObject {
 }
 export interface PipelineFilters {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#exclude Pipeline#exclude}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#exclude Pipeline#exclude}
   */
   readonly exclude?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#include Pipeline#include}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#include Pipeline#include}
   */
   readonly include?: string[];
 }
@@ -4160,7 +4160,7 @@ export interface PipelineFilters {
 export function pipelineFiltersToTerraform(struct?: PipelineFiltersOutputReference | PipelineFilters): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     exclude: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.exclude),
@@ -4172,7 +4172,7 @@ export function pipelineFiltersToTerraform(struct?: PipelineFiltersOutputReferen
 export function pipelineFiltersToHclTerraform(struct?: PipelineFiltersOutputReference | PipelineFilters): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     exclude: {
@@ -4265,7 +4265,7 @@ export class PipelineFiltersOutputReference extends cdktn.ComplexObject {
 }
 export interface PipelineGatewayDefinitionConnectionParameters {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#source_catalog Pipeline#source_catalog}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#source_catalog Pipeline#source_catalog}
   */
   readonly sourceCatalog?: string;
 }
@@ -4273,7 +4273,7 @@ export interface PipelineGatewayDefinitionConnectionParameters {
 export function pipelineGatewayDefinitionConnectionParametersToTerraform(struct?: PipelineGatewayDefinitionConnectionParametersOutputReference | PipelineGatewayDefinitionConnectionParameters): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     source_catalog: cdktn.stringToTerraform(struct!.sourceCatalog),
@@ -4284,7 +4284,7 @@ export function pipelineGatewayDefinitionConnectionParametersToTerraform(struct?
 export function pipelineGatewayDefinitionConnectionParametersToHclTerraform(struct?: PipelineGatewayDefinitionConnectionParametersOutputReference | PipelineGatewayDefinitionConnectionParameters): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     source_catalog: {
@@ -4349,29 +4349,29 @@ export class PipelineGatewayDefinitionConnectionParametersOutputReference extend
 }
 export interface PipelineGatewayDefinition {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#connection_id Pipeline#connection_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#connection_id Pipeline#connection_id}
   */
   readonly connectionId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#connection_name Pipeline#connection_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#connection_name Pipeline#connection_name}
   */
   readonly connectionName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#gateway_storage_catalog Pipeline#gateway_storage_catalog}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#gateway_storage_catalog Pipeline#gateway_storage_catalog}
   */
   readonly gatewayStorageCatalog: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#gateway_storage_name Pipeline#gateway_storage_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#gateway_storage_name Pipeline#gateway_storage_name}
   */
   readonly gatewayStorageName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#gateway_storage_schema Pipeline#gateway_storage_schema}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#gateway_storage_schema Pipeline#gateway_storage_schema}
   */
   readonly gatewayStorageSchema: string;
   /**
   * connection_parameters block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#connection_parameters Pipeline#connection_parameters}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#connection_parameters Pipeline#connection_parameters}
   */
   readonly connectionParameters?: PipelineGatewayDefinitionConnectionParameters;
 }
@@ -4379,7 +4379,7 @@ export interface PipelineGatewayDefinition {
 export function pipelineGatewayDefinitionToTerraform(struct?: PipelineGatewayDefinitionOutputReference | PipelineGatewayDefinition): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     connection_id: cdktn.stringToTerraform(struct!.connectionId),
@@ -4395,7 +4395,7 @@ export function pipelineGatewayDefinitionToTerraform(struct?: PipelineGatewayDef
 export function pipelineGatewayDefinitionToHclTerraform(struct?: PipelineGatewayDefinitionOutputReference | PipelineGatewayDefinition): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     connection_id: {
@@ -4591,15 +4591,15 @@ export class PipelineGatewayDefinitionOutputReference extends cdktn.ComplexObjec
 }
 export interface PipelineIngestionDefinitionDataStagingOptions {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#catalog_name Pipeline#catalog_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#catalog_name Pipeline#catalog_name}
   */
   readonly catalogName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#schema_name Pipeline#schema_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#schema_name Pipeline#schema_name}
   */
   readonly schemaName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#volume_name Pipeline#volume_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#volume_name Pipeline#volume_name}
   */
   readonly volumeName?: string;
 }
@@ -4607,7 +4607,7 @@ export interface PipelineIngestionDefinitionDataStagingOptions {
 export function pipelineIngestionDefinitionDataStagingOptionsToTerraform(struct?: PipelineIngestionDefinitionDataStagingOptionsOutputReference | PipelineIngestionDefinitionDataStagingOptions): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     catalog_name: cdktn.stringToTerraform(struct!.catalogName),
@@ -4620,7 +4620,7 @@ export function pipelineIngestionDefinitionDataStagingOptionsToTerraform(struct?
 export function pipelineIngestionDefinitionDataStagingOptionsToHclTerraform(struct?: PipelineIngestionDefinitionDataStagingOptionsOutputReference | PipelineIngestionDefinitionDataStagingOptions): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     catalog_name: {
@@ -4735,15 +4735,15 @@ export class PipelineIngestionDefinitionDataStagingOptionsOutputReference extend
 }
 export interface PipelineIngestionDefinitionFullRefreshWindow {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#days_of_week Pipeline#days_of_week}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#days_of_week Pipeline#days_of_week}
   */
   readonly daysOfWeek?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#start_hour Pipeline#start_hour}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#start_hour Pipeline#start_hour}
   */
   readonly startHour: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#time_zone_id Pipeline#time_zone_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#time_zone_id Pipeline#time_zone_id}
   */
   readonly timeZoneId?: string;
 }
@@ -4751,7 +4751,7 @@ export interface PipelineIngestionDefinitionFullRefreshWindow {
 export function pipelineIngestionDefinitionFullRefreshWindowToTerraform(struct?: PipelineIngestionDefinitionFullRefreshWindowOutputReference | PipelineIngestionDefinitionFullRefreshWindow): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     days_of_week: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.daysOfWeek),
@@ -4764,7 +4764,7 @@ export function pipelineIngestionDefinitionFullRefreshWindowToTerraform(struct?:
 export function pipelineIngestionDefinitionFullRefreshWindowToHclTerraform(struct?: PipelineIngestionDefinitionFullRefreshWindowOutputReference | PipelineIngestionDefinitionFullRefreshWindow): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     days_of_week: {
@@ -4882,11 +4882,11 @@ export class PipelineIngestionDefinitionFullRefreshWindowOutputReference extends
 }
 export interface PipelineIngestionDefinitionObjectsReportTableConfigurationAutoFullRefreshPolicy {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#enabled Pipeline#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#enabled Pipeline#enabled}
   */
   readonly enabled: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#min_interval_hours Pipeline#min_interval_hours}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#min_interval_hours Pipeline#min_interval_hours}
   */
   readonly minIntervalHours?: number;
 }
@@ -4894,7 +4894,7 @@ export interface PipelineIngestionDefinitionObjectsReportTableConfigurationAutoF
 export function pipelineIngestionDefinitionObjectsReportTableConfigurationAutoFullRefreshPolicyToTerraform(struct?: PipelineIngestionDefinitionObjectsReportTableConfigurationAutoFullRefreshPolicyOutputReference | PipelineIngestionDefinitionObjectsReportTableConfigurationAutoFullRefreshPolicy): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     enabled: cdktn.booleanToTerraform(struct!.enabled),
@@ -4906,7 +4906,7 @@ export function pipelineIngestionDefinitionObjectsReportTableConfigurationAutoFu
 export function pipelineIngestionDefinitionObjectsReportTableConfigurationAutoFullRefreshPolicyToHclTerraform(struct?: PipelineIngestionDefinitionObjectsReportTableConfigurationAutoFullRefreshPolicyOutputReference | PipelineIngestionDefinitionObjectsReportTableConfigurationAutoFullRefreshPolicy): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     enabled: {
@@ -4996,15 +4996,15 @@ export class PipelineIngestionDefinitionObjectsReportTableConfigurationAutoFullR
 }
 export interface PipelineIngestionDefinitionObjectsReportTableConfigurationQueryBasedConnectorConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#cursor_columns Pipeline#cursor_columns}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#cursor_columns Pipeline#cursor_columns}
   */
   readonly cursorColumns?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#deletion_condition Pipeline#deletion_condition}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#deletion_condition Pipeline#deletion_condition}
   */
   readonly deletionCondition?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#hard_deletion_sync_min_interval_in_seconds Pipeline#hard_deletion_sync_min_interval_in_seconds}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#hard_deletion_sync_min_interval_in_seconds Pipeline#hard_deletion_sync_min_interval_in_seconds}
   */
   readonly hardDeletionSyncMinIntervalInSeconds?: number;
 }
@@ -5012,7 +5012,7 @@ export interface PipelineIngestionDefinitionObjectsReportTableConfigurationQuery
 export function pipelineIngestionDefinitionObjectsReportTableConfigurationQueryBasedConnectorConfigToTerraform(struct?: PipelineIngestionDefinitionObjectsReportTableConfigurationQueryBasedConnectorConfigOutputReference | PipelineIngestionDefinitionObjectsReportTableConfigurationQueryBasedConnectorConfig): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     cursor_columns: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.cursorColumns),
@@ -5025,7 +5025,7 @@ export function pipelineIngestionDefinitionObjectsReportTableConfigurationQueryB
 export function pipelineIngestionDefinitionObjectsReportTableConfigurationQueryBasedConnectorConfigToHclTerraform(struct?: PipelineIngestionDefinitionObjectsReportTableConfigurationQueryBasedConnectorConfigOutputReference | PipelineIngestionDefinitionObjectsReportTableConfigurationQueryBasedConnectorConfig): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     cursor_columns: {
@@ -5146,11 +5146,11 @@ export class PipelineIngestionDefinitionObjectsReportTableConfigurationQueryBase
 }
 export interface PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersReportParameters {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#key Pipeline#key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#key Pipeline#key}
   */
   readonly key?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#value Pipeline#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#value Pipeline#value}
   */
   readonly value?: string;
 }
@@ -5158,7 +5158,7 @@ export interface PipelineIngestionDefinitionObjectsReportTableConfigurationWorkd
 export function pipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersReportParametersToTerraform(struct?: PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersReportParameters | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     key: cdktn.stringToTerraform(struct!.key),
@@ -5170,7 +5170,7 @@ export function pipelineIngestionDefinitionObjectsReportTableConfigurationWorkda
 export function pipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersReportParametersToHclTerraform(struct?: PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersReportParameters | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     key: {
@@ -5295,17 +5295,17 @@ export class PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayRe
 }
 export interface PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParameters {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#incremental Pipeline#incremental}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#incremental Pipeline#incremental}
   */
   readonly incremental?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#parameters Pipeline#parameters}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#parameters Pipeline#parameters}
   */
   readonly parameters?: { [key: string]: string };
   /**
   * report_parameters block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#report_parameters Pipeline#report_parameters}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#report_parameters Pipeline#report_parameters}
   */
   readonly reportParameters?: PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersReportParameters[] | cdktn.IResolvable;
 }
@@ -5313,7 +5313,7 @@ export interface PipelineIngestionDefinitionObjectsReportTableConfigurationWorkd
 export function pipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersToTerraform(struct?: PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersOutputReference | PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParameters): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     incremental: cdktn.booleanToTerraform(struct!.incremental),
@@ -5326,7 +5326,7 @@ export function pipelineIngestionDefinitionObjectsReportTableConfigurationWorkda
 export function pipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersToHclTerraform(struct?: PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersOutputReference | PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParameters): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     incremental: {
@@ -5447,49 +5447,61 @@ export class PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayRe
 }
 export interface PipelineIngestionDefinitionObjectsReportTableConfiguration {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#exclude_columns Pipeline#exclude_columns}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#clustering_columns Pipeline#clustering_columns}
+  */
+  readonly clusteringColumns?: string[];
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#enable_auto_clustering Pipeline#enable_auto_clustering}
+  */
+  readonly enableAutoClustering?: boolean | cdktn.IResolvable;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#exclude_columns Pipeline#exclude_columns}
   */
   readonly excludeColumns?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#include_columns Pipeline#include_columns}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#include_columns Pipeline#include_columns}
   */
   readonly includeColumns?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#primary_keys Pipeline#primary_keys}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#primary_keys Pipeline#primary_keys}
   */
   readonly primaryKeys?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#row_filter Pipeline#row_filter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#row_filter Pipeline#row_filter}
   */
   readonly rowFilter?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#salesforce_include_formula_fields Pipeline#salesforce_include_formula_fields}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#salesforce_include_formula_fields Pipeline#salesforce_include_formula_fields}
   */
   readonly salesforceIncludeFormulaFields?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#scd_type Pipeline#scd_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#scd_type Pipeline#scd_type}
   */
   readonly scdType?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#sequence_by Pipeline#sequence_by}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#sequence_by Pipeline#sequence_by}
   */
   readonly sequenceBy?: string[];
   /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#table_properties Pipeline#table_properties}
+  */
+  readonly tableProperties?: { [key: string]: string };
+  /**
   * auto_full_refresh_policy block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#auto_full_refresh_policy Pipeline#auto_full_refresh_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#auto_full_refresh_policy Pipeline#auto_full_refresh_policy}
   */
   readonly autoFullRefreshPolicy?: PipelineIngestionDefinitionObjectsReportTableConfigurationAutoFullRefreshPolicy;
   /**
   * query_based_connector_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#query_based_connector_config Pipeline#query_based_connector_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#query_based_connector_config Pipeline#query_based_connector_config}
   */
   readonly queryBasedConnectorConfig?: PipelineIngestionDefinitionObjectsReportTableConfigurationQueryBasedConnectorConfig;
   /**
   * workday_report_parameters block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#workday_report_parameters Pipeline#workday_report_parameters}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#workday_report_parameters Pipeline#workday_report_parameters}
   */
   readonly workdayReportParameters?: PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParameters;
 }
@@ -5497,9 +5509,11 @@ export interface PipelineIngestionDefinitionObjectsReportTableConfiguration {
 export function pipelineIngestionDefinitionObjectsReportTableConfigurationToTerraform(struct?: PipelineIngestionDefinitionObjectsReportTableConfigurationOutputReference | PipelineIngestionDefinitionObjectsReportTableConfiguration): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
+    clustering_columns: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.clusteringColumns),
+    enable_auto_clustering: cdktn.booleanToTerraform(struct!.enableAutoClustering),
     exclude_columns: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.excludeColumns),
     include_columns: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.includeColumns),
     primary_keys: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.primaryKeys),
@@ -5507,6 +5521,7 @@ export function pipelineIngestionDefinitionObjectsReportTableConfigurationToTerr
     salesforce_include_formula_fields: cdktn.booleanToTerraform(struct!.salesforceIncludeFormulaFields),
     scd_type: cdktn.stringToTerraform(struct!.scdType),
     sequence_by: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.sequenceBy),
+    table_properties: cdktn.hashMapper(cdktn.stringToTerraform)(struct!.tableProperties),
     auto_full_refresh_policy: pipelineIngestionDefinitionObjectsReportTableConfigurationAutoFullRefreshPolicyToTerraform(struct!.autoFullRefreshPolicy),
     query_based_connector_config: pipelineIngestionDefinitionObjectsReportTableConfigurationQueryBasedConnectorConfigToTerraform(struct!.queryBasedConnectorConfig),
     workday_report_parameters: pipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersToTerraform(struct!.workdayReportParameters),
@@ -5517,9 +5532,21 @@ export function pipelineIngestionDefinitionObjectsReportTableConfigurationToTerr
 export function pipelineIngestionDefinitionObjectsReportTableConfigurationToHclTerraform(struct?: PipelineIngestionDefinitionObjectsReportTableConfigurationOutputReference | PipelineIngestionDefinitionObjectsReportTableConfiguration): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
+    clustering_columns: {
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.clusteringColumns),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+    enable_auto_clustering: {
+      value: cdktn.booleanToHclTerraform(struct!.enableAutoClustering),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
     exclude_columns: {
       value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.excludeColumns),
       isBlock: false,
@@ -5562,6 +5589,12 @@ export function pipelineIngestionDefinitionObjectsReportTableConfigurationToHclT
       type: "list",
       storageClassType: "stringList",
     },
+    table_properties: {
+      value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(struct!.tableProperties),
+      isBlock: false,
+      type: "map",
+      storageClassType: "stringMap",
+    },
     auto_full_refresh_policy: {
       value: pipelineIngestionDefinitionObjectsReportTableConfigurationAutoFullRefreshPolicyToHclTerraform(struct!.autoFullRefreshPolicy),
       isBlock: true,
@@ -5600,6 +5633,14 @@ export class PipelineIngestionDefinitionObjectsReportTableConfigurationOutputRef
   public get internalValue(): PipelineIngestionDefinitionObjectsReportTableConfiguration | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
+    if (this._clusteringColumns !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.clusteringColumns = this._clusteringColumns;
+    }
+    if (this._enableAutoClustering !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.enableAutoClustering = this._enableAutoClustering;
+    }
     if (this._excludeColumns !== undefined) {
       hasAnyValues = true;
       internalValueResult.excludeColumns = this._excludeColumns;
@@ -5628,6 +5669,10 @@ export class PipelineIngestionDefinitionObjectsReportTableConfigurationOutputRef
       hasAnyValues = true;
       internalValueResult.sequenceBy = this._sequenceBy;
     }
+    if (this._tableProperties !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.tableProperties = this._tableProperties;
+    }
     if (this._autoFullRefreshPolicy?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.autoFullRefreshPolicy = this._autoFullRefreshPolicy?.internalValue;
@@ -5646,6 +5691,8 @@ export class PipelineIngestionDefinitionObjectsReportTableConfigurationOutputRef
   public set internalValue(value: PipelineIngestionDefinitionObjectsReportTableConfiguration | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
+      this._clusteringColumns = undefined;
+      this._enableAutoClustering = undefined;
       this._excludeColumns = undefined;
       this._includeColumns = undefined;
       this._primaryKeys = undefined;
@@ -5653,12 +5700,15 @@ export class PipelineIngestionDefinitionObjectsReportTableConfigurationOutputRef
       this._salesforceIncludeFormulaFields = undefined;
       this._scdType = undefined;
       this._sequenceBy = undefined;
+      this._tableProperties = undefined;
       this._autoFullRefreshPolicy.internalValue = undefined;
       this._queryBasedConnectorConfig.internalValue = undefined;
       this._workdayReportParameters.internalValue = undefined;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
+      this._clusteringColumns = value.clusteringColumns;
+      this._enableAutoClustering = value.enableAutoClustering;
       this._excludeColumns = value.excludeColumns;
       this._includeColumns = value.includeColumns;
       this._primaryKeys = value.primaryKeys;
@@ -5666,10 +5716,43 @@ export class PipelineIngestionDefinitionObjectsReportTableConfigurationOutputRef
       this._salesforceIncludeFormulaFields = value.salesforceIncludeFormulaFields;
       this._scdType = value.scdType;
       this._sequenceBy = value.sequenceBy;
+      this._tableProperties = value.tableProperties;
       this._autoFullRefreshPolicy.internalValue = value.autoFullRefreshPolicy;
       this._queryBasedConnectorConfig.internalValue = value.queryBasedConnectorConfig;
       this._workdayReportParameters.internalValue = value.workdayReportParameters;
     }
+  }
+
+  // clustering_columns - computed: false, optional: true, required: false
+  private _clusteringColumns?: string[]; 
+  public get clusteringColumns() {
+    return this.getListAttribute('clustering_columns');
+  }
+  public set clusteringColumns(value: string[]) {
+    this._clusteringColumns = value;
+  }
+  public resetClusteringColumns() {
+    this._clusteringColumns = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get clusteringColumnsInput() {
+    return this._clusteringColumns;
+  }
+
+  // enable_auto_clustering - computed: false, optional: true, required: false
+  private _enableAutoClustering?: boolean | cdktn.IResolvable; 
+  public get enableAutoClustering() {
+    return this.getBooleanAttribute('enable_auto_clustering');
+  }
+  public set enableAutoClustering(value: boolean | cdktn.IResolvable) {
+    this._enableAutoClustering = value;
+  }
+  public resetEnableAutoClustering() {
+    this._enableAutoClustering = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get enableAutoClusteringInput() {
+    return this._enableAutoClustering;
   }
 
   // exclude_columns - computed: false, optional: true, required: false
@@ -5784,6 +5867,22 @@ export class PipelineIngestionDefinitionObjectsReportTableConfigurationOutputRef
     return this._sequenceBy;
   }
 
+  // table_properties - computed: false, optional: true, required: false
+  private _tableProperties?: { [key: string]: string }; 
+  public get tableProperties() {
+    return this.getStringMapAttribute('table_properties');
+  }
+  public set tableProperties(value: { [key: string]: string }) {
+    this._tableProperties = value;
+  }
+  public resetTableProperties() {
+    this._tableProperties = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tablePropertiesInput() {
+    return this._tableProperties;
+  }
+
   // auto_full_refresh_policy - computed: false, optional: true, required: false
   private _autoFullRefreshPolicy = new PipelineIngestionDefinitionObjectsReportTableConfigurationAutoFullRefreshPolicyOutputReference(this, "auto_full_refresh_policy");
   public get autoFullRefreshPolicy() {
@@ -5834,25 +5933,25 @@ export class PipelineIngestionDefinitionObjectsReportTableConfigurationOutputRef
 }
 export interface PipelineIngestionDefinitionObjectsReport {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#destination_catalog Pipeline#destination_catalog}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#destination_catalog Pipeline#destination_catalog}
   */
   readonly destinationCatalog: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#destination_schema Pipeline#destination_schema}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#destination_schema Pipeline#destination_schema}
   */
   readonly destinationSchema: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#destination_table Pipeline#destination_table}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#destination_table Pipeline#destination_table}
   */
   readonly destinationTable?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#source_url Pipeline#source_url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#source_url Pipeline#source_url}
   */
   readonly sourceUrl: string;
   /**
   * table_configuration block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#table_configuration Pipeline#table_configuration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#table_configuration Pipeline#table_configuration}
   */
   readonly tableConfiguration?: PipelineIngestionDefinitionObjectsReportTableConfiguration;
 }
@@ -5860,7 +5959,7 @@ export interface PipelineIngestionDefinitionObjectsReport {
 export function pipelineIngestionDefinitionObjectsReportToTerraform(struct?: PipelineIngestionDefinitionObjectsReportOutputReference | PipelineIngestionDefinitionObjectsReport): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     destination_catalog: cdktn.stringToTerraform(struct!.destinationCatalog),
@@ -5875,7 +5974,7 @@ export function pipelineIngestionDefinitionObjectsReportToTerraform(struct?: Pip
 export function pipelineIngestionDefinitionObjectsReportToHclTerraform(struct?: PipelineIngestionDefinitionObjectsReportOutputReference | PipelineIngestionDefinitionObjectsReport): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     destination_catalog: {
@@ -6043,7 +6142,7 @@ export class PipelineIngestionDefinitionObjectsReportOutputReference extends cdk
 }
 export interface PipelineIngestionDefinitionObjectsSchemaConnectorOptionsConfluenceOptions {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#include_confluence_spaces Pipeline#include_confluence_spaces}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#include_confluence_spaces Pipeline#include_confluence_spaces}
   */
   readonly includeConfluenceSpaces?: string[];
 }
@@ -6051,7 +6150,7 @@ export interface PipelineIngestionDefinitionObjectsSchemaConnectorOptionsConflue
 export function pipelineIngestionDefinitionObjectsSchemaConnectorOptionsConfluenceOptionsToTerraform(struct?: PipelineIngestionDefinitionObjectsSchemaConnectorOptionsConfluenceOptionsOutputReference | PipelineIngestionDefinitionObjectsSchemaConnectorOptionsConfluenceOptions): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     include_confluence_spaces: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.includeConfluenceSpaces),
@@ -6062,7 +6161,7 @@ export function pipelineIngestionDefinitionObjectsSchemaConnectorOptionsConfluen
 export function pipelineIngestionDefinitionObjectsSchemaConnectorOptionsConfluenceOptionsToHclTerraform(struct?: PipelineIngestionDefinitionObjectsSchemaConnectorOptionsConfluenceOptionsOutputReference | PipelineIngestionDefinitionObjectsSchemaConnectorOptionsConfluenceOptions): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     include_confluence_spaces: {
@@ -6127,15 +6226,15 @@ export class PipelineIngestionDefinitionObjectsSchemaConnectorOptionsConfluenceO
 }
 export interface PipelineIngestionDefinitionObjectsSchemaConnectorOptionsGdriveOptionsFileIngestionOptionsFileFilters {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#modified_after Pipeline#modified_after}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#modified_after Pipeline#modified_after}
   */
   readonly modifiedAfter?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#modified_before Pipeline#modified_before}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#modified_before Pipeline#modified_before}
   */
   readonly modifiedBefore?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#path_filter Pipeline#path_filter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#path_filter Pipeline#path_filter}
   */
   readonly pathFilter?: string;
 }
@@ -6143,7 +6242,7 @@ export interface PipelineIngestionDefinitionObjectsSchemaConnectorOptionsGdriveO
 export function pipelineIngestionDefinitionObjectsSchemaConnectorOptionsGdriveOptionsFileIngestionOptionsFileFiltersToTerraform(struct?: PipelineIngestionDefinitionObjectsSchemaConnectorOptionsGdriveOptionsFileIngestionOptionsFileFilters | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     modified_after: cdktn.stringToTerraform(struct!.modifiedAfter),
@@ -6156,7 +6255,7 @@ export function pipelineIngestionDefinitionObjectsSchemaConnectorOptionsGdriveOp
 export function pipelineIngestionDefinitionObjectsSchemaConnectorOptionsGdriveOptionsFileIngestionOptionsFileFiltersToHclTerraform(struct?: PipelineIngestionDefinitionObjectsSchemaConnectorOptionsGdriveOptionsFileIngestionOptionsFileFilters | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     modified_after: {
@@ -6309,49 +6408,49 @@ export class PipelineIngestionDefinitionObjectsSchemaConnectorOptionsGdriveOptio
 }
 export interface PipelineIngestionDefinitionObjectsSchemaConnectorOptionsGdriveOptionsFileIngestionOptions {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#corrupt_record_column Pipeline#corrupt_record_column}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#corrupt_record_column Pipeline#corrupt_record_column}
   */
   readonly corruptRecordColumn?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#format Pipeline#format}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#format Pipeline#format}
   */
   readonly format?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#format_options Pipeline#format_options}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#format_options Pipeline#format_options}
   */
   readonly formatOptions?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#ignore_corrupt_files Pipeline#ignore_corrupt_files}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#ignore_corrupt_files Pipeline#ignore_corrupt_files}
   */
   readonly ignoreCorruptFiles?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#infer_column_types Pipeline#infer_column_types}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#infer_column_types Pipeline#infer_column_types}
   */
   readonly inferColumnTypes?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#reader_case_sensitive Pipeline#reader_case_sensitive}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#reader_case_sensitive Pipeline#reader_case_sensitive}
   */
   readonly readerCaseSensitive?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#rescued_data_column Pipeline#rescued_data_column}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#rescued_data_column Pipeline#rescued_data_column}
   */
   readonly rescuedDataColumn?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#schema_evolution_mode Pipeline#schema_evolution_mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#schema_evolution_mode Pipeline#schema_evolution_mode}
   */
   readonly schemaEvolutionMode?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#schema_hints Pipeline#schema_hints}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#schema_hints Pipeline#schema_hints}
   */
   readonly schemaHints?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#single_variant_column Pipeline#single_variant_column}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#single_variant_column Pipeline#single_variant_column}
   */
   readonly singleVariantColumn?: string;
   /**
   * file_filters block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#file_filters Pipeline#file_filters}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#file_filters Pipeline#file_filters}
   */
   readonly fileFilters?: PipelineIngestionDefinitionObjectsSchemaConnectorOptionsGdriveOptionsFileIngestionOptionsFileFilters[] | cdktn.IResolvable;
 }
@@ -6359,7 +6458,7 @@ export interface PipelineIngestionDefinitionObjectsSchemaConnectorOptionsGdriveO
 export function pipelineIngestionDefinitionObjectsSchemaConnectorOptionsGdriveOptionsFileIngestionOptionsToTerraform(struct?: PipelineIngestionDefinitionObjectsSchemaConnectorOptionsGdriveOptionsFileIngestionOptionsOutputReference | PipelineIngestionDefinitionObjectsSchemaConnectorOptionsGdriveOptionsFileIngestionOptions): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     corrupt_record_column: cdktn.stringToTerraform(struct!.corruptRecordColumn),
@@ -6380,7 +6479,7 @@ export function pipelineIngestionDefinitionObjectsSchemaConnectorOptionsGdriveOp
 export function pipelineIngestionDefinitionObjectsSchemaConnectorOptionsGdriveOptionsFileIngestionOptionsToHclTerraform(struct?: PipelineIngestionDefinitionObjectsSchemaConnectorOptionsGdriveOptionsFileIngestionOptionsOutputReference | PipelineIngestionDefinitionObjectsSchemaConnectorOptionsGdriveOptionsFileIngestionOptions): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     corrupt_record_column: {
@@ -6725,17 +6824,17 @@ export class PipelineIngestionDefinitionObjectsSchemaConnectorOptionsGdriveOptio
 }
 export interface PipelineIngestionDefinitionObjectsSchemaConnectorOptionsGdriveOptions {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#entity_type Pipeline#entity_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#entity_type Pipeline#entity_type}
   */
   readonly entityType?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#url Pipeline#url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#url Pipeline#url}
   */
   readonly url?: string;
   /**
   * file_ingestion_options block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#file_ingestion_options Pipeline#file_ingestion_options}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#file_ingestion_options Pipeline#file_ingestion_options}
   */
   readonly fileIngestionOptions?: PipelineIngestionDefinitionObjectsSchemaConnectorOptionsGdriveOptionsFileIngestionOptions;
 }
@@ -6743,7 +6842,7 @@ export interface PipelineIngestionDefinitionObjectsSchemaConnectorOptionsGdriveO
 export function pipelineIngestionDefinitionObjectsSchemaConnectorOptionsGdriveOptionsToTerraform(struct?: PipelineIngestionDefinitionObjectsSchemaConnectorOptionsGdriveOptionsOutputReference | PipelineIngestionDefinitionObjectsSchemaConnectorOptionsGdriveOptions): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     entity_type: cdktn.stringToTerraform(struct!.entityType),
@@ -6756,7 +6855,7 @@ export function pipelineIngestionDefinitionObjectsSchemaConnectorOptionsGdriveOp
 export function pipelineIngestionDefinitionObjectsSchemaConnectorOptionsGdriveOptionsToHclTerraform(struct?: PipelineIngestionDefinitionObjectsSchemaConnectorOptionsGdriveOptionsOutputReference | PipelineIngestionDefinitionObjectsSchemaConnectorOptionsGdriveOptions): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     entity_type: {
@@ -6877,15 +6976,15 @@ export class PipelineIngestionDefinitionObjectsSchemaConnectorOptionsGdriveOptio
 }
 export interface PipelineIngestionDefinitionObjectsSchemaConnectorOptionsGoogleAdsOptions {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#lookback_window_days Pipeline#lookback_window_days}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#lookback_window_days Pipeline#lookback_window_days}
   */
   readonly lookbackWindowDays?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#manager_account_id Pipeline#manager_account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#manager_account_id Pipeline#manager_account_id}
   */
   readonly managerAccountId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#sync_start_date Pipeline#sync_start_date}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#sync_start_date Pipeline#sync_start_date}
   */
   readonly syncStartDate?: string;
 }
@@ -6893,7 +6992,7 @@ export interface PipelineIngestionDefinitionObjectsSchemaConnectorOptionsGoogleA
 export function pipelineIngestionDefinitionObjectsSchemaConnectorOptionsGoogleAdsOptionsToTerraform(struct?: PipelineIngestionDefinitionObjectsSchemaConnectorOptionsGoogleAdsOptionsOutputReference | PipelineIngestionDefinitionObjectsSchemaConnectorOptionsGoogleAdsOptions): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     lookback_window_days: cdktn.numberToTerraform(struct!.lookbackWindowDays),
@@ -6906,7 +7005,7 @@ export function pipelineIngestionDefinitionObjectsSchemaConnectorOptionsGoogleAd
 export function pipelineIngestionDefinitionObjectsSchemaConnectorOptionsGoogleAdsOptionsToHclTerraform(struct?: PipelineIngestionDefinitionObjectsSchemaConnectorOptionsGoogleAdsOptionsOutputReference | PipelineIngestionDefinitionObjectsSchemaConnectorOptionsGoogleAdsOptions): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     lookback_window_days: {
@@ -7024,7 +7123,7 @@ export class PipelineIngestionDefinitionObjectsSchemaConnectorOptionsGoogleAdsOp
 }
 export interface PipelineIngestionDefinitionObjectsSchemaConnectorOptionsJiraOptions {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#include_jira_spaces Pipeline#include_jira_spaces}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#include_jira_spaces Pipeline#include_jira_spaces}
   */
   readonly includeJiraSpaces?: string[];
 }
@@ -7032,7 +7131,7 @@ export interface PipelineIngestionDefinitionObjectsSchemaConnectorOptionsJiraOpt
 export function pipelineIngestionDefinitionObjectsSchemaConnectorOptionsJiraOptionsToTerraform(struct?: PipelineIngestionDefinitionObjectsSchemaConnectorOptionsJiraOptionsOutputReference | PipelineIngestionDefinitionObjectsSchemaConnectorOptionsJiraOptions): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     include_jira_spaces: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.includeJiraSpaces),
@@ -7043,7 +7142,7 @@ export function pipelineIngestionDefinitionObjectsSchemaConnectorOptionsJiraOpti
 export function pipelineIngestionDefinitionObjectsSchemaConnectorOptionsJiraOptionsToHclTerraform(struct?: PipelineIngestionDefinitionObjectsSchemaConnectorOptionsJiraOptionsOutputReference | PipelineIngestionDefinitionObjectsSchemaConnectorOptionsJiraOptions): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     include_jira_spaces: {
@@ -7108,23 +7207,23 @@ export class PipelineIngestionDefinitionObjectsSchemaConnectorOptionsJiraOptions
 }
 export interface PipelineIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptionsKeyTransformerJsonOptions {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#as_variant Pipeline#as_variant}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#as_variant Pipeline#as_variant}
   */
   readonly asVariant?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#schema Pipeline#schema}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#schema Pipeline#schema}
   */
   readonly schema?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#schema_evolution_mode Pipeline#schema_evolution_mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#schema_evolution_mode Pipeline#schema_evolution_mode}
   */
   readonly schemaEvolutionMode?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#schema_file_path Pipeline#schema_file_path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#schema_file_path Pipeline#schema_file_path}
   */
   readonly schemaFilePath?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#schema_hints Pipeline#schema_hints}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#schema_hints Pipeline#schema_hints}
   */
   readonly schemaHints?: string;
 }
@@ -7132,7 +7231,7 @@ export interface PipelineIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOp
 export function pipelineIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptionsKeyTransformerJsonOptionsToTerraform(struct?: PipelineIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptionsKeyTransformerJsonOptionsOutputReference | PipelineIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptionsKeyTransformerJsonOptions): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     as_variant: cdktn.booleanToTerraform(struct!.asVariant),
@@ -7147,7 +7246,7 @@ export function pipelineIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOpt
 export function pipelineIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptionsKeyTransformerJsonOptionsToHclTerraform(struct?: PipelineIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptionsKeyTransformerJsonOptionsOutputReference | PipelineIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptionsKeyTransformerJsonOptions): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     as_variant: {
@@ -7324,13 +7423,13 @@ export class PipelineIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOption
 }
 export interface PipelineIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptionsKeyTransformer {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#format Pipeline#format}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#format Pipeline#format}
   */
   readonly format?: string;
   /**
   * json_options block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#json_options Pipeline#json_options}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#json_options Pipeline#json_options}
   */
   readonly jsonOptions?: PipelineIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptionsKeyTransformerJsonOptions;
 }
@@ -7338,7 +7437,7 @@ export interface PipelineIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOp
 export function pipelineIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptionsKeyTransformerToTerraform(struct?: PipelineIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptionsKeyTransformerOutputReference | PipelineIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptionsKeyTransformer): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     format: cdktn.stringToTerraform(struct!.format),
@@ -7350,7 +7449,7 @@ export function pipelineIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOpt
 export function pipelineIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptionsKeyTransformerToHclTerraform(struct?: PipelineIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptionsKeyTransformerOutputReference | PipelineIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptionsKeyTransformer): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     format: {
@@ -7443,23 +7542,23 @@ export class PipelineIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOption
 }
 export interface PipelineIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptionsValueTransformerJsonOptions {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#as_variant Pipeline#as_variant}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#as_variant Pipeline#as_variant}
   */
   readonly asVariant?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#schema Pipeline#schema}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#schema Pipeline#schema}
   */
   readonly schema?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#schema_evolution_mode Pipeline#schema_evolution_mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#schema_evolution_mode Pipeline#schema_evolution_mode}
   */
   readonly schemaEvolutionMode?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#schema_file_path Pipeline#schema_file_path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#schema_file_path Pipeline#schema_file_path}
   */
   readonly schemaFilePath?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#schema_hints Pipeline#schema_hints}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#schema_hints Pipeline#schema_hints}
   */
   readonly schemaHints?: string;
 }
@@ -7467,7 +7566,7 @@ export interface PipelineIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOp
 export function pipelineIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptionsValueTransformerJsonOptionsToTerraform(struct?: PipelineIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptionsValueTransformerJsonOptionsOutputReference | PipelineIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptionsValueTransformerJsonOptions): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     as_variant: cdktn.booleanToTerraform(struct!.asVariant),
@@ -7482,7 +7581,7 @@ export function pipelineIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOpt
 export function pipelineIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptionsValueTransformerJsonOptionsToHclTerraform(struct?: PipelineIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptionsValueTransformerJsonOptionsOutputReference | PipelineIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptionsValueTransformerJsonOptions): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     as_variant: {
@@ -7659,13 +7758,13 @@ export class PipelineIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOption
 }
 export interface PipelineIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptionsValueTransformer {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#format Pipeline#format}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#format Pipeline#format}
   */
   readonly format?: string;
   /**
   * json_options block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#json_options Pipeline#json_options}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#json_options Pipeline#json_options}
   */
   readonly jsonOptions?: PipelineIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptionsValueTransformerJsonOptions;
 }
@@ -7673,7 +7772,7 @@ export interface PipelineIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOp
 export function pipelineIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptionsValueTransformerToTerraform(struct?: PipelineIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptionsValueTransformerOutputReference | PipelineIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptionsValueTransformer): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     format: cdktn.stringToTerraform(struct!.format),
@@ -7685,7 +7784,7 @@ export function pipelineIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOpt
 export function pipelineIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptionsValueTransformerToHclTerraform(struct?: PipelineIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptionsValueTransformerOutputReference | PipelineIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptionsValueTransformer): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     format: {
@@ -7778,35 +7877,35 @@ export class PipelineIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOption
 }
 export interface PipelineIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptions {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#client_config Pipeline#client_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#client_config Pipeline#client_config}
   */
   readonly clientConfig?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#max_offsets_per_trigger Pipeline#max_offsets_per_trigger}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#max_offsets_per_trigger Pipeline#max_offsets_per_trigger}
   */
   readonly maxOffsetsPerTrigger?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#starting_offset Pipeline#starting_offset}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#starting_offset Pipeline#starting_offset}
   */
   readonly startingOffset?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#topic_pattern Pipeline#topic_pattern}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#topic_pattern Pipeline#topic_pattern}
   */
   readonly topicPattern?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#topics Pipeline#topics}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#topics Pipeline#topics}
   */
   readonly topics?: string[];
   /**
   * key_transformer block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#key_transformer Pipeline#key_transformer}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#key_transformer Pipeline#key_transformer}
   */
   readonly keyTransformer?: PipelineIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptionsKeyTransformer;
   /**
   * value_transformer block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#value_transformer Pipeline#value_transformer}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#value_transformer Pipeline#value_transformer}
   */
   readonly valueTransformer?: PipelineIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptionsValueTransformer;
 }
@@ -7814,7 +7913,7 @@ export interface PipelineIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOp
 export function pipelineIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptionsToTerraform(struct?: PipelineIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptionsOutputReference | PipelineIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptions): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     client_config: cdktn.hashMapper(cdktn.stringToTerraform)(struct!.clientConfig),
@@ -7831,7 +7930,7 @@ export function pipelineIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOpt
 export function pipelineIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptionsToHclTerraform(struct?: PipelineIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptionsOutputReference | PipelineIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptions): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     client_config: {
@@ -8064,35 +8163,35 @@ export class PipelineIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOption
 }
 export interface PipelineIngestionDefinitionObjectsSchemaConnectorOptionsMetaAdsOptions {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#action_attribution_windows Pipeline#action_attribution_windows}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#action_attribution_windows Pipeline#action_attribution_windows}
   */
   readonly actionAttributionWindows?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#action_breakdowns Pipeline#action_breakdowns}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#action_breakdowns Pipeline#action_breakdowns}
   */
   readonly actionBreakdowns?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#action_report_time Pipeline#action_report_time}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#action_report_time Pipeline#action_report_time}
   */
   readonly actionReportTime?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#breakdowns Pipeline#breakdowns}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#breakdowns Pipeline#breakdowns}
   */
   readonly breakdowns?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#custom_insights_lookback_window Pipeline#custom_insights_lookback_window}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#custom_insights_lookback_window Pipeline#custom_insights_lookback_window}
   */
   readonly customInsightsLookbackWindow?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#level Pipeline#level}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#level Pipeline#level}
   */
   readonly level?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#start_date Pipeline#start_date}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#start_date Pipeline#start_date}
   */
   readonly startDate?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#time_increment Pipeline#time_increment}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#time_increment Pipeline#time_increment}
   */
   readonly timeIncrement?: string;
 }
@@ -8100,7 +8199,7 @@ export interface PipelineIngestionDefinitionObjectsSchemaConnectorOptionsMetaAds
 export function pipelineIngestionDefinitionObjectsSchemaConnectorOptionsMetaAdsOptionsToTerraform(struct?: PipelineIngestionDefinitionObjectsSchemaConnectorOptionsMetaAdsOptionsOutputReference | PipelineIngestionDefinitionObjectsSchemaConnectorOptionsMetaAdsOptions): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     action_attribution_windows: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.actionAttributionWindows),
@@ -8118,7 +8217,7 @@ export function pipelineIngestionDefinitionObjectsSchemaConnectorOptionsMetaAdsO
 export function pipelineIngestionDefinitionObjectsSchemaConnectorOptionsMetaAdsOptionsToHclTerraform(struct?: PipelineIngestionDefinitionObjectsSchemaConnectorOptionsMetaAdsOptionsOutputReference | PipelineIngestionDefinitionObjectsSchemaConnectorOptionsMetaAdsOptions): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     action_attribution_windows: {
@@ -8379,43 +8478,43 @@ export class PipelineIngestionDefinitionObjectsSchemaConnectorOptionsMetaAdsOpti
 }
 export interface PipelineIngestionDefinitionObjectsSchemaConnectorOptionsOutlookOptions {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#attachment_mode Pipeline#attachment_mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#attachment_mode Pipeline#attachment_mode}
   */
   readonly attachmentMode?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#body_format Pipeline#body_format}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#body_format Pipeline#body_format}
   */
   readonly bodyFormat?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#folder_filter Pipeline#folder_filter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#folder_filter Pipeline#folder_filter}
   */
   readonly folderFilter?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#include_folders Pipeline#include_folders}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#include_folders Pipeline#include_folders}
   */
   readonly includeFolders?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#include_mailboxes Pipeline#include_mailboxes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#include_mailboxes Pipeline#include_mailboxes}
   */
   readonly includeMailboxes?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#include_senders Pipeline#include_senders}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#include_senders Pipeline#include_senders}
   */
   readonly includeSenders?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#include_subjects Pipeline#include_subjects}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#include_subjects Pipeline#include_subjects}
   */
   readonly includeSubjects?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#sender_filter Pipeline#sender_filter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#sender_filter Pipeline#sender_filter}
   */
   readonly senderFilter?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#start_date Pipeline#start_date}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#start_date Pipeline#start_date}
   */
   readonly startDate?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#subject_filter Pipeline#subject_filter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#subject_filter Pipeline#subject_filter}
   */
   readonly subjectFilter?: string[];
 }
@@ -8423,7 +8522,7 @@ export interface PipelineIngestionDefinitionObjectsSchemaConnectorOptionsOutlook
 export function pipelineIngestionDefinitionObjectsSchemaConnectorOptionsOutlookOptionsToTerraform(struct?: PipelineIngestionDefinitionObjectsSchemaConnectorOptionsOutlookOptionsOutputReference | PipelineIngestionDefinitionObjectsSchemaConnectorOptionsOutlookOptions): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     attachment_mode: cdktn.stringToTerraform(struct!.attachmentMode),
@@ -8443,7 +8542,7 @@ export function pipelineIngestionDefinitionObjectsSchemaConnectorOptionsOutlookO
 export function pipelineIngestionDefinitionObjectsSchemaConnectorOptionsOutlookOptionsToHclTerraform(struct?: PipelineIngestionDefinitionObjectsSchemaConnectorOptionsOutlookOptionsOutputReference | PipelineIngestionDefinitionObjectsSchemaConnectorOptionsOutlookOptions): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     attachment_mode: {
@@ -8760,15 +8859,15 @@ export class PipelineIngestionDefinitionObjectsSchemaConnectorOptionsOutlookOpti
 }
 export interface PipelineIngestionDefinitionObjectsSchemaConnectorOptionsSharepointOptionsFileIngestionOptionsFileFilters {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#modified_after Pipeline#modified_after}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#modified_after Pipeline#modified_after}
   */
   readonly modifiedAfter?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#modified_before Pipeline#modified_before}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#modified_before Pipeline#modified_before}
   */
   readonly modifiedBefore?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#path_filter Pipeline#path_filter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#path_filter Pipeline#path_filter}
   */
   readonly pathFilter?: string;
 }
@@ -8776,7 +8875,7 @@ export interface PipelineIngestionDefinitionObjectsSchemaConnectorOptionsSharepo
 export function pipelineIngestionDefinitionObjectsSchemaConnectorOptionsSharepointOptionsFileIngestionOptionsFileFiltersToTerraform(struct?: PipelineIngestionDefinitionObjectsSchemaConnectorOptionsSharepointOptionsFileIngestionOptionsFileFilters | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     modified_after: cdktn.stringToTerraform(struct!.modifiedAfter),
@@ -8789,7 +8888,7 @@ export function pipelineIngestionDefinitionObjectsSchemaConnectorOptionsSharepoi
 export function pipelineIngestionDefinitionObjectsSchemaConnectorOptionsSharepointOptionsFileIngestionOptionsFileFiltersToHclTerraform(struct?: PipelineIngestionDefinitionObjectsSchemaConnectorOptionsSharepointOptionsFileIngestionOptionsFileFilters | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     modified_after: {
@@ -8942,49 +9041,49 @@ export class PipelineIngestionDefinitionObjectsSchemaConnectorOptionsSharepointO
 }
 export interface PipelineIngestionDefinitionObjectsSchemaConnectorOptionsSharepointOptionsFileIngestionOptions {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#corrupt_record_column Pipeline#corrupt_record_column}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#corrupt_record_column Pipeline#corrupt_record_column}
   */
   readonly corruptRecordColumn?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#format Pipeline#format}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#format Pipeline#format}
   */
   readonly format?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#format_options Pipeline#format_options}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#format_options Pipeline#format_options}
   */
   readonly formatOptions?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#ignore_corrupt_files Pipeline#ignore_corrupt_files}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#ignore_corrupt_files Pipeline#ignore_corrupt_files}
   */
   readonly ignoreCorruptFiles?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#infer_column_types Pipeline#infer_column_types}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#infer_column_types Pipeline#infer_column_types}
   */
   readonly inferColumnTypes?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#reader_case_sensitive Pipeline#reader_case_sensitive}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#reader_case_sensitive Pipeline#reader_case_sensitive}
   */
   readonly readerCaseSensitive?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#rescued_data_column Pipeline#rescued_data_column}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#rescued_data_column Pipeline#rescued_data_column}
   */
   readonly rescuedDataColumn?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#schema_evolution_mode Pipeline#schema_evolution_mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#schema_evolution_mode Pipeline#schema_evolution_mode}
   */
   readonly schemaEvolutionMode?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#schema_hints Pipeline#schema_hints}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#schema_hints Pipeline#schema_hints}
   */
   readonly schemaHints?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#single_variant_column Pipeline#single_variant_column}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#single_variant_column Pipeline#single_variant_column}
   */
   readonly singleVariantColumn?: string;
   /**
   * file_filters block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#file_filters Pipeline#file_filters}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#file_filters Pipeline#file_filters}
   */
   readonly fileFilters?: PipelineIngestionDefinitionObjectsSchemaConnectorOptionsSharepointOptionsFileIngestionOptionsFileFilters[] | cdktn.IResolvable;
 }
@@ -8992,7 +9091,7 @@ export interface PipelineIngestionDefinitionObjectsSchemaConnectorOptionsSharepo
 export function pipelineIngestionDefinitionObjectsSchemaConnectorOptionsSharepointOptionsFileIngestionOptionsToTerraform(struct?: PipelineIngestionDefinitionObjectsSchemaConnectorOptionsSharepointOptionsFileIngestionOptionsOutputReference | PipelineIngestionDefinitionObjectsSchemaConnectorOptionsSharepointOptionsFileIngestionOptions): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     corrupt_record_column: cdktn.stringToTerraform(struct!.corruptRecordColumn),
@@ -9013,7 +9112,7 @@ export function pipelineIngestionDefinitionObjectsSchemaConnectorOptionsSharepoi
 export function pipelineIngestionDefinitionObjectsSchemaConnectorOptionsSharepointOptionsFileIngestionOptionsToHclTerraform(struct?: PipelineIngestionDefinitionObjectsSchemaConnectorOptionsSharepointOptionsFileIngestionOptionsOutputReference | PipelineIngestionDefinitionObjectsSchemaConnectorOptionsSharepointOptionsFileIngestionOptions): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     corrupt_record_column: {
@@ -9358,17 +9457,17 @@ export class PipelineIngestionDefinitionObjectsSchemaConnectorOptionsSharepointO
 }
 export interface PipelineIngestionDefinitionObjectsSchemaConnectorOptionsSharepointOptions {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#entity_type Pipeline#entity_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#entity_type Pipeline#entity_type}
   */
   readonly entityType?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#url Pipeline#url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#url Pipeline#url}
   */
   readonly url?: string;
   /**
   * file_ingestion_options block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#file_ingestion_options Pipeline#file_ingestion_options}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#file_ingestion_options Pipeline#file_ingestion_options}
   */
   readonly fileIngestionOptions?: PipelineIngestionDefinitionObjectsSchemaConnectorOptionsSharepointOptionsFileIngestionOptions;
 }
@@ -9376,7 +9475,7 @@ export interface PipelineIngestionDefinitionObjectsSchemaConnectorOptionsSharepo
 export function pipelineIngestionDefinitionObjectsSchemaConnectorOptionsSharepointOptionsToTerraform(struct?: PipelineIngestionDefinitionObjectsSchemaConnectorOptionsSharepointOptionsOutputReference | PipelineIngestionDefinitionObjectsSchemaConnectorOptionsSharepointOptions): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     entity_type: cdktn.stringToTerraform(struct!.entityType),
@@ -9389,7 +9488,7 @@ export function pipelineIngestionDefinitionObjectsSchemaConnectorOptionsSharepoi
 export function pipelineIngestionDefinitionObjectsSchemaConnectorOptionsSharepointOptionsToHclTerraform(struct?: PipelineIngestionDefinitionObjectsSchemaConnectorOptionsSharepointOptionsOutputReference | PipelineIngestionDefinitionObjectsSchemaConnectorOptionsSharepointOptions): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     entity_type: {
@@ -9510,7 +9609,7 @@ export class PipelineIngestionDefinitionObjectsSchemaConnectorOptionsSharepointO
 }
 export interface PipelineIngestionDefinitionObjectsSchemaConnectorOptionsSmartsheetOptions {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#enforce_schema Pipeline#enforce_schema}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#enforce_schema Pipeline#enforce_schema}
   */
   readonly enforceSchema?: boolean | cdktn.IResolvable;
 }
@@ -9518,7 +9617,7 @@ export interface PipelineIngestionDefinitionObjectsSchemaConnectorOptionsSmartsh
 export function pipelineIngestionDefinitionObjectsSchemaConnectorOptionsSmartsheetOptionsToTerraform(struct?: PipelineIngestionDefinitionObjectsSchemaConnectorOptionsSmartsheetOptionsOutputReference | PipelineIngestionDefinitionObjectsSchemaConnectorOptionsSmartsheetOptions): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     enforce_schema: cdktn.booleanToTerraform(struct!.enforceSchema),
@@ -9529,7 +9628,7 @@ export function pipelineIngestionDefinitionObjectsSchemaConnectorOptionsSmartshe
 export function pipelineIngestionDefinitionObjectsSchemaConnectorOptionsSmartsheetOptionsToHclTerraform(struct?: PipelineIngestionDefinitionObjectsSchemaConnectorOptionsSmartsheetOptionsOutputReference | PipelineIngestionDefinitionObjectsSchemaConnectorOptionsSmartsheetOptions): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     enforce_schema: {
@@ -9594,31 +9693,31 @@ export class PipelineIngestionDefinitionObjectsSchemaConnectorOptionsSmartsheetO
 }
 export interface PipelineIngestionDefinitionObjectsSchemaConnectorOptionsTiktokAdsOptions {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#data_level Pipeline#data_level}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#data_level Pipeline#data_level}
   */
   readonly dataLevel?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#dimensions Pipeline#dimensions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#dimensions Pipeline#dimensions}
   */
   readonly dimensions?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#lookback_window_days Pipeline#lookback_window_days}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#lookback_window_days Pipeline#lookback_window_days}
   */
   readonly lookbackWindowDays?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#metrics Pipeline#metrics}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#metrics Pipeline#metrics}
   */
   readonly metrics?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#query_lifetime Pipeline#query_lifetime}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#query_lifetime Pipeline#query_lifetime}
   */
   readonly queryLifetime?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#report_type Pipeline#report_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#report_type Pipeline#report_type}
   */
   readonly reportType?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#sync_start_date Pipeline#sync_start_date}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#sync_start_date Pipeline#sync_start_date}
   */
   readonly syncStartDate?: string;
 }
@@ -9626,7 +9725,7 @@ export interface PipelineIngestionDefinitionObjectsSchemaConnectorOptionsTiktokA
 export function pipelineIngestionDefinitionObjectsSchemaConnectorOptionsTiktokAdsOptionsToTerraform(struct?: PipelineIngestionDefinitionObjectsSchemaConnectorOptionsTiktokAdsOptionsOutputReference | PipelineIngestionDefinitionObjectsSchemaConnectorOptionsTiktokAdsOptions): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     data_level: cdktn.stringToTerraform(struct!.dataLevel),
@@ -9643,7 +9742,7 @@ export function pipelineIngestionDefinitionObjectsSchemaConnectorOptionsTiktokAd
 export function pipelineIngestionDefinitionObjectsSchemaConnectorOptionsTiktokAdsOptionsToHclTerraform(struct?: PipelineIngestionDefinitionObjectsSchemaConnectorOptionsTiktokAdsOptionsOutputReference | PipelineIngestionDefinitionObjectsSchemaConnectorOptionsTiktokAdsOptions): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     data_level: {
@@ -9876,7 +9975,7 @@ export class PipelineIngestionDefinitionObjectsSchemaConnectorOptionsTiktokAdsOp
 }
 export interface PipelineIngestionDefinitionObjectsSchemaConnectorOptionsZendeskSupportOptions {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#start_date Pipeline#start_date}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#start_date Pipeline#start_date}
   */
   readonly startDate?: string;
 }
@@ -9884,7 +9983,7 @@ export interface PipelineIngestionDefinitionObjectsSchemaConnectorOptionsZendesk
 export function pipelineIngestionDefinitionObjectsSchemaConnectorOptionsZendeskSupportOptionsToTerraform(struct?: PipelineIngestionDefinitionObjectsSchemaConnectorOptionsZendeskSupportOptionsOutputReference | PipelineIngestionDefinitionObjectsSchemaConnectorOptionsZendeskSupportOptions): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     start_date: cdktn.stringToTerraform(struct!.startDate),
@@ -9895,7 +9994,7 @@ export function pipelineIngestionDefinitionObjectsSchemaConnectorOptionsZendeskS
 export function pipelineIngestionDefinitionObjectsSchemaConnectorOptionsZendeskSupportOptionsToHclTerraform(struct?: PipelineIngestionDefinitionObjectsSchemaConnectorOptionsZendeskSupportOptionsOutputReference | PipelineIngestionDefinitionObjectsSchemaConnectorOptionsZendeskSupportOptions): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     start_date: {
@@ -9962,67 +10061,67 @@ export interface PipelineIngestionDefinitionObjectsSchemaConnectorOptions {
   /**
   * confluence_options block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#confluence_options Pipeline#confluence_options}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#confluence_options Pipeline#confluence_options}
   */
   readonly confluenceOptions?: PipelineIngestionDefinitionObjectsSchemaConnectorOptionsConfluenceOptions;
   /**
   * gdrive_options block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#gdrive_options Pipeline#gdrive_options}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#gdrive_options Pipeline#gdrive_options}
   */
   readonly gdriveOptions?: PipelineIngestionDefinitionObjectsSchemaConnectorOptionsGdriveOptions;
   /**
   * google_ads_options block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#google_ads_options Pipeline#google_ads_options}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#google_ads_options Pipeline#google_ads_options}
   */
   readonly googleAdsOptions?: PipelineIngestionDefinitionObjectsSchemaConnectorOptionsGoogleAdsOptions;
   /**
   * jira_options block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#jira_options Pipeline#jira_options}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#jira_options Pipeline#jira_options}
   */
   readonly jiraOptions?: PipelineIngestionDefinitionObjectsSchemaConnectorOptionsJiraOptions;
   /**
   * kafka_options block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#kafka_options Pipeline#kafka_options}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#kafka_options Pipeline#kafka_options}
   */
   readonly kafkaOptions?: PipelineIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptions;
   /**
   * meta_ads_options block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#meta_ads_options Pipeline#meta_ads_options}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#meta_ads_options Pipeline#meta_ads_options}
   */
   readonly metaAdsOptions?: PipelineIngestionDefinitionObjectsSchemaConnectorOptionsMetaAdsOptions;
   /**
   * outlook_options block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#outlook_options Pipeline#outlook_options}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#outlook_options Pipeline#outlook_options}
   */
   readonly outlookOptions?: PipelineIngestionDefinitionObjectsSchemaConnectorOptionsOutlookOptions;
   /**
   * sharepoint_options block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#sharepoint_options Pipeline#sharepoint_options}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#sharepoint_options Pipeline#sharepoint_options}
   */
   readonly sharepointOptions?: PipelineIngestionDefinitionObjectsSchemaConnectorOptionsSharepointOptions;
   /**
   * smartsheet_options block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#smartsheet_options Pipeline#smartsheet_options}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#smartsheet_options Pipeline#smartsheet_options}
   */
   readonly smartsheetOptions?: PipelineIngestionDefinitionObjectsSchemaConnectorOptionsSmartsheetOptions;
   /**
   * tiktok_ads_options block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#tiktok_ads_options Pipeline#tiktok_ads_options}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#tiktok_ads_options Pipeline#tiktok_ads_options}
   */
   readonly tiktokAdsOptions?: PipelineIngestionDefinitionObjectsSchemaConnectorOptionsTiktokAdsOptions;
   /**
   * zendesk_support_options block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#zendesk_support_options Pipeline#zendesk_support_options}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#zendesk_support_options Pipeline#zendesk_support_options}
   */
   readonly zendeskSupportOptions?: PipelineIngestionDefinitionObjectsSchemaConnectorOptionsZendeskSupportOptions;
 }
@@ -10030,7 +10129,7 @@ export interface PipelineIngestionDefinitionObjectsSchemaConnectorOptions {
 export function pipelineIngestionDefinitionObjectsSchemaConnectorOptionsToTerraform(struct?: PipelineIngestionDefinitionObjectsSchemaConnectorOptionsOutputReference | PipelineIngestionDefinitionObjectsSchemaConnectorOptions): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     confluence_options: pipelineIngestionDefinitionObjectsSchemaConnectorOptionsConfluenceOptionsToTerraform(struct!.confluenceOptions),
@@ -10051,7 +10150,7 @@ export function pipelineIngestionDefinitionObjectsSchemaConnectorOptionsToTerraf
 export function pipelineIngestionDefinitionObjectsSchemaConnectorOptionsToHclTerraform(struct?: PipelineIngestionDefinitionObjectsSchemaConnectorOptionsOutputReference | PipelineIngestionDefinitionObjectsSchemaConnectorOptions): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     confluence_options: {
@@ -10396,11 +10495,11 @@ export class PipelineIngestionDefinitionObjectsSchemaConnectorOptionsOutputRefer
 }
 export interface PipelineIngestionDefinitionObjectsSchemaTableConfigurationAutoFullRefreshPolicy {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#enabled Pipeline#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#enabled Pipeline#enabled}
   */
   readonly enabled: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#min_interval_hours Pipeline#min_interval_hours}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#min_interval_hours Pipeline#min_interval_hours}
   */
   readonly minIntervalHours?: number;
 }
@@ -10408,7 +10507,7 @@ export interface PipelineIngestionDefinitionObjectsSchemaTableConfigurationAutoF
 export function pipelineIngestionDefinitionObjectsSchemaTableConfigurationAutoFullRefreshPolicyToTerraform(struct?: PipelineIngestionDefinitionObjectsSchemaTableConfigurationAutoFullRefreshPolicyOutputReference | PipelineIngestionDefinitionObjectsSchemaTableConfigurationAutoFullRefreshPolicy): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     enabled: cdktn.booleanToTerraform(struct!.enabled),
@@ -10420,7 +10519,7 @@ export function pipelineIngestionDefinitionObjectsSchemaTableConfigurationAutoFu
 export function pipelineIngestionDefinitionObjectsSchemaTableConfigurationAutoFullRefreshPolicyToHclTerraform(struct?: PipelineIngestionDefinitionObjectsSchemaTableConfigurationAutoFullRefreshPolicyOutputReference | PipelineIngestionDefinitionObjectsSchemaTableConfigurationAutoFullRefreshPolicy): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     enabled: {
@@ -10510,15 +10609,15 @@ export class PipelineIngestionDefinitionObjectsSchemaTableConfigurationAutoFullR
 }
 export interface PipelineIngestionDefinitionObjectsSchemaTableConfigurationQueryBasedConnectorConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#cursor_columns Pipeline#cursor_columns}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#cursor_columns Pipeline#cursor_columns}
   */
   readonly cursorColumns?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#deletion_condition Pipeline#deletion_condition}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#deletion_condition Pipeline#deletion_condition}
   */
   readonly deletionCondition?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#hard_deletion_sync_min_interval_in_seconds Pipeline#hard_deletion_sync_min_interval_in_seconds}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#hard_deletion_sync_min_interval_in_seconds Pipeline#hard_deletion_sync_min_interval_in_seconds}
   */
   readonly hardDeletionSyncMinIntervalInSeconds?: number;
 }
@@ -10526,7 +10625,7 @@ export interface PipelineIngestionDefinitionObjectsSchemaTableConfigurationQuery
 export function pipelineIngestionDefinitionObjectsSchemaTableConfigurationQueryBasedConnectorConfigToTerraform(struct?: PipelineIngestionDefinitionObjectsSchemaTableConfigurationQueryBasedConnectorConfigOutputReference | PipelineIngestionDefinitionObjectsSchemaTableConfigurationQueryBasedConnectorConfig): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     cursor_columns: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.cursorColumns),
@@ -10539,7 +10638,7 @@ export function pipelineIngestionDefinitionObjectsSchemaTableConfigurationQueryB
 export function pipelineIngestionDefinitionObjectsSchemaTableConfigurationQueryBasedConnectorConfigToHclTerraform(struct?: PipelineIngestionDefinitionObjectsSchemaTableConfigurationQueryBasedConnectorConfigOutputReference | PipelineIngestionDefinitionObjectsSchemaTableConfigurationQueryBasedConnectorConfig): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     cursor_columns: {
@@ -10660,11 +10759,11 @@ export class PipelineIngestionDefinitionObjectsSchemaTableConfigurationQueryBase
 }
 export interface PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersReportParameters {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#key Pipeline#key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#key Pipeline#key}
   */
   readonly key?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#value Pipeline#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#value Pipeline#value}
   */
   readonly value?: string;
 }
@@ -10672,7 +10771,7 @@ export interface PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkd
 export function pipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersReportParametersToTerraform(struct?: PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersReportParameters | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     key: cdktn.stringToTerraform(struct!.key),
@@ -10684,7 +10783,7 @@ export function pipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkda
 export function pipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersReportParametersToHclTerraform(struct?: PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersReportParameters | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     key: {
@@ -10809,17 +10908,17 @@ export class PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayRe
 }
 export interface PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParameters {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#incremental Pipeline#incremental}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#incremental Pipeline#incremental}
   */
   readonly incremental?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#parameters Pipeline#parameters}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#parameters Pipeline#parameters}
   */
   readonly parameters?: { [key: string]: string };
   /**
   * report_parameters block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#report_parameters Pipeline#report_parameters}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#report_parameters Pipeline#report_parameters}
   */
   readonly reportParameters?: PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersReportParameters[] | cdktn.IResolvable;
 }
@@ -10827,7 +10926,7 @@ export interface PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkd
 export function pipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersToTerraform(struct?: PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersOutputReference | PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParameters): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     incremental: cdktn.booleanToTerraform(struct!.incremental),
@@ -10840,7 +10939,7 @@ export function pipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkda
 export function pipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersToHclTerraform(struct?: PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersOutputReference | PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParameters): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     incremental: {
@@ -10961,49 +11060,61 @@ export class PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayRe
 }
 export interface PipelineIngestionDefinitionObjectsSchemaTableConfiguration {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#exclude_columns Pipeline#exclude_columns}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#clustering_columns Pipeline#clustering_columns}
+  */
+  readonly clusteringColumns?: string[];
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#enable_auto_clustering Pipeline#enable_auto_clustering}
+  */
+  readonly enableAutoClustering?: boolean | cdktn.IResolvable;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#exclude_columns Pipeline#exclude_columns}
   */
   readonly excludeColumns?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#include_columns Pipeline#include_columns}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#include_columns Pipeline#include_columns}
   */
   readonly includeColumns?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#primary_keys Pipeline#primary_keys}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#primary_keys Pipeline#primary_keys}
   */
   readonly primaryKeys?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#row_filter Pipeline#row_filter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#row_filter Pipeline#row_filter}
   */
   readonly rowFilter?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#salesforce_include_formula_fields Pipeline#salesforce_include_formula_fields}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#salesforce_include_formula_fields Pipeline#salesforce_include_formula_fields}
   */
   readonly salesforceIncludeFormulaFields?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#scd_type Pipeline#scd_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#scd_type Pipeline#scd_type}
   */
   readonly scdType?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#sequence_by Pipeline#sequence_by}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#sequence_by Pipeline#sequence_by}
   */
   readonly sequenceBy?: string[];
   /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#table_properties Pipeline#table_properties}
+  */
+  readonly tableProperties?: { [key: string]: string };
+  /**
   * auto_full_refresh_policy block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#auto_full_refresh_policy Pipeline#auto_full_refresh_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#auto_full_refresh_policy Pipeline#auto_full_refresh_policy}
   */
   readonly autoFullRefreshPolicy?: PipelineIngestionDefinitionObjectsSchemaTableConfigurationAutoFullRefreshPolicy;
   /**
   * query_based_connector_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#query_based_connector_config Pipeline#query_based_connector_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#query_based_connector_config Pipeline#query_based_connector_config}
   */
   readonly queryBasedConnectorConfig?: PipelineIngestionDefinitionObjectsSchemaTableConfigurationQueryBasedConnectorConfig;
   /**
   * workday_report_parameters block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#workday_report_parameters Pipeline#workday_report_parameters}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#workday_report_parameters Pipeline#workday_report_parameters}
   */
   readonly workdayReportParameters?: PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParameters;
 }
@@ -11011,9 +11122,11 @@ export interface PipelineIngestionDefinitionObjectsSchemaTableConfiguration {
 export function pipelineIngestionDefinitionObjectsSchemaTableConfigurationToTerraform(struct?: PipelineIngestionDefinitionObjectsSchemaTableConfigurationOutputReference | PipelineIngestionDefinitionObjectsSchemaTableConfiguration): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
+    clustering_columns: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.clusteringColumns),
+    enable_auto_clustering: cdktn.booleanToTerraform(struct!.enableAutoClustering),
     exclude_columns: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.excludeColumns),
     include_columns: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.includeColumns),
     primary_keys: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.primaryKeys),
@@ -11021,6 +11134,7 @@ export function pipelineIngestionDefinitionObjectsSchemaTableConfigurationToTerr
     salesforce_include_formula_fields: cdktn.booleanToTerraform(struct!.salesforceIncludeFormulaFields),
     scd_type: cdktn.stringToTerraform(struct!.scdType),
     sequence_by: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.sequenceBy),
+    table_properties: cdktn.hashMapper(cdktn.stringToTerraform)(struct!.tableProperties),
     auto_full_refresh_policy: pipelineIngestionDefinitionObjectsSchemaTableConfigurationAutoFullRefreshPolicyToTerraform(struct!.autoFullRefreshPolicy),
     query_based_connector_config: pipelineIngestionDefinitionObjectsSchemaTableConfigurationQueryBasedConnectorConfigToTerraform(struct!.queryBasedConnectorConfig),
     workday_report_parameters: pipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersToTerraform(struct!.workdayReportParameters),
@@ -11031,9 +11145,21 @@ export function pipelineIngestionDefinitionObjectsSchemaTableConfigurationToTerr
 export function pipelineIngestionDefinitionObjectsSchemaTableConfigurationToHclTerraform(struct?: PipelineIngestionDefinitionObjectsSchemaTableConfigurationOutputReference | PipelineIngestionDefinitionObjectsSchemaTableConfiguration): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
+    clustering_columns: {
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.clusteringColumns),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+    enable_auto_clustering: {
+      value: cdktn.booleanToHclTerraform(struct!.enableAutoClustering),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
     exclude_columns: {
       value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.excludeColumns),
       isBlock: false,
@@ -11076,6 +11202,12 @@ export function pipelineIngestionDefinitionObjectsSchemaTableConfigurationToHclT
       type: "list",
       storageClassType: "stringList",
     },
+    table_properties: {
+      value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(struct!.tableProperties),
+      isBlock: false,
+      type: "map",
+      storageClassType: "stringMap",
+    },
     auto_full_refresh_policy: {
       value: pipelineIngestionDefinitionObjectsSchemaTableConfigurationAutoFullRefreshPolicyToHclTerraform(struct!.autoFullRefreshPolicy),
       isBlock: true,
@@ -11114,6 +11246,14 @@ export class PipelineIngestionDefinitionObjectsSchemaTableConfigurationOutputRef
   public get internalValue(): PipelineIngestionDefinitionObjectsSchemaTableConfiguration | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
+    if (this._clusteringColumns !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.clusteringColumns = this._clusteringColumns;
+    }
+    if (this._enableAutoClustering !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.enableAutoClustering = this._enableAutoClustering;
+    }
     if (this._excludeColumns !== undefined) {
       hasAnyValues = true;
       internalValueResult.excludeColumns = this._excludeColumns;
@@ -11142,6 +11282,10 @@ export class PipelineIngestionDefinitionObjectsSchemaTableConfigurationOutputRef
       hasAnyValues = true;
       internalValueResult.sequenceBy = this._sequenceBy;
     }
+    if (this._tableProperties !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.tableProperties = this._tableProperties;
+    }
     if (this._autoFullRefreshPolicy?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.autoFullRefreshPolicy = this._autoFullRefreshPolicy?.internalValue;
@@ -11160,6 +11304,8 @@ export class PipelineIngestionDefinitionObjectsSchemaTableConfigurationOutputRef
   public set internalValue(value: PipelineIngestionDefinitionObjectsSchemaTableConfiguration | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
+      this._clusteringColumns = undefined;
+      this._enableAutoClustering = undefined;
       this._excludeColumns = undefined;
       this._includeColumns = undefined;
       this._primaryKeys = undefined;
@@ -11167,12 +11313,15 @@ export class PipelineIngestionDefinitionObjectsSchemaTableConfigurationOutputRef
       this._salesforceIncludeFormulaFields = undefined;
       this._scdType = undefined;
       this._sequenceBy = undefined;
+      this._tableProperties = undefined;
       this._autoFullRefreshPolicy.internalValue = undefined;
       this._queryBasedConnectorConfig.internalValue = undefined;
       this._workdayReportParameters.internalValue = undefined;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
+      this._clusteringColumns = value.clusteringColumns;
+      this._enableAutoClustering = value.enableAutoClustering;
       this._excludeColumns = value.excludeColumns;
       this._includeColumns = value.includeColumns;
       this._primaryKeys = value.primaryKeys;
@@ -11180,10 +11329,43 @@ export class PipelineIngestionDefinitionObjectsSchemaTableConfigurationOutputRef
       this._salesforceIncludeFormulaFields = value.salesforceIncludeFormulaFields;
       this._scdType = value.scdType;
       this._sequenceBy = value.sequenceBy;
+      this._tableProperties = value.tableProperties;
       this._autoFullRefreshPolicy.internalValue = value.autoFullRefreshPolicy;
       this._queryBasedConnectorConfig.internalValue = value.queryBasedConnectorConfig;
       this._workdayReportParameters.internalValue = value.workdayReportParameters;
     }
+  }
+
+  // clustering_columns - computed: false, optional: true, required: false
+  private _clusteringColumns?: string[]; 
+  public get clusteringColumns() {
+    return this.getListAttribute('clustering_columns');
+  }
+  public set clusteringColumns(value: string[]) {
+    this._clusteringColumns = value;
+  }
+  public resetClusteringColumns() {
+    this._clusteringColumns = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get clusteringColumnsInput() {
+    return this._clusteringColumns;
+  }
+
+  // enable_auto_clustering - computed: false, optional: true, required: false
+  private _enableAutoClustering?: boolean | cdktn.IResolvable; 
+  public get enableAutoClustering() {
+    return this.getBooleanAttribute('enable_auto_clustering');
+  }
+  public set enableAutoClustering(value: boolean | cdktn.IResolvable) {
+    this._enableAutoClustering = value;
+  }
+  public resetEnableAutoClustering() {
+    this._enableAutoClustering = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get enableAutoClusteringInput() {
+    return this._enableAutoClustering;
   }
 
   // exclude_columns - computed: false, optional: true, required: false
@@ -11298,6 +11480,22 @@ export class PipelineIngestionDefinitionObjectsSchemaTableConfigurationOutputRef
     return this._sequenceBy;
   }
 
+  // table_properties - computed: false, optional: true, required: false
+  private _tableProperties?: { [key: string]: string }; 
+  public get tableProperties() {
+    return this.getStringMapAttribute('table_properties');
+  }
+  public set tableProperties(value: { [key: string]: string }) {
+    this._tableProperties = value;
+  }
+  public resetTableProperties() {
+    this._tableProperties = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tablePropertiesInput() {
+    return this._tableProperties;
+  }
+
   // auto_full_refresh_policy - computed: false, optional: true, required: false
   private _autoFullRefreshPolicy = new PipelineIngestionDefinitionObjectsSchemaTableConfigurationAutoFullRefreshPolicyOutputReference(this, "auto_full_refresh_policy");
   public get autoFullRefreshPolicy() {
@@ -11348,31 +11546,31 @@ export class PipelineIngestionDefinitionObjectsSchemaTableConfigurationOutputRef
 }
 export interface PipelineIngestionDefinitionObjectsSchema {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#destination_catalog Pipeline#destination_catalog}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#destination_catalog Pipeline#destination_catalog}
   */
   readonly destinationCatalog: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#destination_schema Pipeline#destination_schema}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#destination_schema Pipeline#destination_schema}
   */
   readonly destinationSchema: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#source_catalog Pipeline#source_catalog}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#source_catalog Pipeline#source_catalog}
   */
   readonly sourceCatalog?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#source_schema Pipeline#source_schema}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#source_schema Pipeline#source_schema}
   */
   readonly sourceSchema: string;
   /**
   * connector_options block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#connector_options Pipeline#connector_options}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#connector_options Pipeline#connector_options}
   */
   readonly connectorOptions?: PipelineIngestionDefinitionObjectsSchemaConnectorOptions;
   /**
   * table_configuration block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#table_configuration Pipeline#table_configuration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#table_configuration Pipeline#table_configuration}
   */
   readonly tableConfiguration?: PipelineIngestionDefinitionObjectsSchemaTableConfiguration;
 }
@@ -11380,7 +11578,7 @@ export interface PipelineIngestionDefinitionObjectsSchema {
 export function pipelineIngestionDefinitionObjectsSchemaToTerraform(struct?: PipelineIngestionDefinitionObjectsSchemaOutputReference | PipelineIngestionDefinitionObjectsSchema): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     destination_catalog: cdktn.stringToTerraform(struct!.destinationCatalog),
@@ -11396,7 +11594,7 @@ export function pipelineIngestionDefinitionObjectsSchemaToTerraform(struct?: Pip
 export function pipelineIngestionDefinitionObjectsSchemaToHclTerraform(struct?: PipelineIngestionDefinitionObjectsSchemaOutputReference | PipelineIngestionDefinitionObjectsSchema): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     destination_catalog: {
@@ -11592,7 +11790,7 @@ export class PipelineIngestionDefinitionObjectsSchemaOutputReference extends cdk
 }
 export interface PipelineIngestionDefinitionObjectsTableConnectorOptionsConfluenceOptions {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#include_confluence_spaces Pipeline#include_confluence_spaces}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#include_confluence_spaces Pipeline#include_confluence_spaces}
   */
   readonly includeConfluenceSpaces?: string[];
 }
@@ -11600,7 +11798,7 @@ export interface PipelineIngestionDefinitionObjectsTableConnectorOptionsConfluen
 export function pipelineIngestionDefinitionObjectsTableConnectorOptionsConfluenceOptionsToTerraform(struct?: PipelineIngestionDefinitionObjectsTableConnectorOptionsConfluenceOptionsOutputReference | PipelineIngestionDefinitionObjectsTableConnectorOptionsConfluenceOptions): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     include_confluence_spaces: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.includeConfluenceSpaces),
@@ -11611,7 +11809,7 @@ export function pipelineIngestionDefinitionObjectsTableConnectorOptionsConfluenc
 export function pipelineIngestionDefinitionObjectsTableConnectorOptionsConfluenceOptionsToHclTerraform(struct?: PipelineIngestionDefinitionObjectsTableConnectorOptionsConfluenceOptionsOutputReference | PipelineIngestionDefinitionObjectsTableConnectorOptionsConfluenceOptions): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     include_confluence_spaces: {
@@ -11676,15 +11874,15 @@ export class PipelineIngestionDefinitionObjectsTableConnectorOptionsConfluenceOp
 }
 export interface PipelineIngestionDefinitionObjectsTableConnectorOptionsGdriveOptionsFileIngestionOptionsFileFilters {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#modified_after Pipeline#modified_after}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#modified_after Pipeline#modified_after}
   */
   readonly modifiedAfter?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#modified_before Pipeline#modified_before}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#modified_before Pipeline#modified_before}
   */
   readonly modifiedBefore?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#path_filter Pipeline#path_filter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#path_filter Pipeline#path_filter}
   */
   readonly pathFilter?: string;
 }
@@ -11692,7 +11890,7 @@ export interface PipelineIngestionDefinitionObjectsTableConnectorOptionsGdriveOp
 export function pipelineIngestionDefinitionObjectsTableConnectorOptionsGdriveOptionsFileIngestionOptionsFileFiltersToTerraform(struct?: PipelineIngestionDefinitionObjectsTableConnectorOptionsGdriveOptionsFileIngestionOptionsFileFilters | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     modified_after: cdktn.stringToTerraform(struct!.modifiedAfter),
@@ -11705,7 +11903,7 @@ export function pipelineIngestionDefinitionObjectsTableConnectorOptionsGdriveOpt
 export function pipelineIngestionDefinitionObjectsTableConnectorOptionsGdriveOptionsFileIngestionOptionsFileFiltersToHclTerraform(struct?: PipelineIngestionDefinitionObjectsTableConnectorOptionsGdriveOptionsFileIngestionOptionsFileFilters | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     modified_after: {
@@ -11858,49 +12056,49 @@ export class PipelineIngestionDefinitionObjectsTableConnectorOptionsGdriveOption
 }
 export interface PipelineIngestionDefinitionObjectsTableConnectorOptionsGdriveOptionsFileIngestionOptions {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#corrupt_record_column Pipeline#corrupt_record_column}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#corrupt_record_column Pipeline#corrupt_record_column}
   */
   readonly corruptRecordColumn?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#format Pipeline#format}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#format Pipeline#format}
   */
   readonly format?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#format_options Pipeline#format_options}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#format_options Pipeline#format_options}
   */
   readonly formatOptions?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#ignore_corrupt_files Pipeline#ignore_corrupt_files}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#ignore_corrupt_files Pipeline#ignore_corrupt_files}
   */
   readonly ignoreCorruptFiles?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#infer_column_types Pipeline#infer_column_types}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#infer_column_types Pipeline#infer_column_types}
   */
   readonly inferColumnTypes?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#reader_case_sensitive Pipeline#reader_case_sensitive}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#reader_case_sensitive Pipeline#reader_case_sensitive}
   */
   readonly readerCaseSensitive?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#rescued_data_column Pipeline#rescued_data_column}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#rescued_data_column Pipeline#rescued_data_column}
   */
   readonly rescuedDataColumn?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#schema_evolution_mode Pipeline#schema_evolution_mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#schema_evolution_mode Pipeline#schema_evolution_mode}
   */
   readonly schemaEvolutionMode?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#schema_hints Pipeline#schema_hints}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#schema_hints Pipeline#schema_hints}
   */
   readonly schemaHints?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#single_variant_column Pipeline#single_variant_column}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#single_variant_column Pipeline#single_variant_column}
   */
   readonly singleVariantColumn?: string;
   /**
   * file_filters block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#file_filters Pipeline#file_filters}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#file_filters Pipeline#file_filters}
   */
   readonly fileFilters?: PipelineIngestionDefinitionObjectsTableConnectorOptionsGdriveOptionsFileIngestionOptionsFileFilters[] | cdktn.IResolvable;
 }
@@ -11908,7 +12106,7 @@ export interface PipelineIngestionDefinitionObjectsTableConnectorOptionsGdriveOp
 export function pipelineIngestionDefinitionObjectsTableConnectorOptionsGdriveOptionsFileIngestionOptionsToTerraform(struct?: PipelineIngestionDefinitionObjectsTableConnectorOptionsGdriveOptionsFileIngestionOptionsOutputReference | PipelineIngestionDefinitionObjectsTableConnectorOptionsGdriveOptionsFileIngestionOptions): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     corrupt_record_column: cdktn.stringToTerraform(struct!.corruptRecordColumn),
@@ -11929,7 +12127,7 @@ export function pipelineIngestionDefinitionObjectsTableConnectorOptionsGdriveOpt
 export function pipelineIngestionDefinitionObjectsTableConnectorOptionsGdriveOptionsFileIngestionOptionsToHclTerraform(struct?: PipelineIngestionDefinitionObjectsTableConnectorOptionsGdriveOptionsFileIngestionOptionsOutputReference | PipelineIngestionDefinitionObjectsTableConnectorOptionsGdriveOptionsFileIngestionOptions): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     corrupt_record_column: {
@@ -12274,17 +12472,17 @@ export class PipelineIngestionDefinitionObjectsTableConnectorOptionsGdriveOption
 }
 export interface PipelineIngestionDefinitionObjectsTableConnectorOptionsGdriveOptions {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#entity_type Pipeline#entity_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#entity_type Pipeline#entity_type}
   */
   readonly entityType?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#url Pipeline#url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#url Pipeline#url}
   */
   readonly url?: string;
   /**
   * file_ingestion_options block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#file_ingestion_options Pipeline#file_ingestion_options}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#file_ingestion_options Pipeline#file_ingestion_options}
   */
   readonly fileIngestionOptions?: PipelineIngestionDefinitionObjectsTableConnectorOptionsGdriveOptionsFileIngestionOptions;
 }
@@ -12292,7 +12490,7 @@ export interface PipelineIngestionDefinitionObjectsTableConnectorOptionsGdriveOp
 export function pipelineIngestionDefinitionObjectsTableConnectorOptionsGdriveOptionsToTerraform(struct?: PipelineIngestionDefinitionObjectsTableConnectorOptionsGdriveOptionsOutputReference | PipelineIngestionDefinitionObjectsTableConnectorOptionsGdriveOptions): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     entity_type: cdktn.stringToTerraform(struct!.entityType),
@@ -12305,7 +12503,7 @@ export function pipelineIngestionDefinitionObjectsTableConnectorOptionsGdriveOpt
 export function pipelineIngestionDefinitionObjectsTableConnectorOptionsGdriveOptionsToHclTerraform(struct?: PipelineIngestionDefinitionObjectsTableConnectorOptionsGdriveOptionsOutputReference | PipelineIngestionDefinitionObjectsTableConnectorOptionsGdriveOptions): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     entity_type: {
@@ -12426,15 +12624,15 @@ export class PipelineIngestionDefinitionObjectsTableConnectorOptionsGdriveOption
 }
 export interface PipelineIngestionDefinitionObjectsTableConnectorOptionsGoogleAdsOptions {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#lookback_window_days Pipeline#lookback_window_days}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#lookback_window_days Pipeline#lookback_window_days}
   */
   readonly lookbackWindowDays?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#manager_account_id Pipeline#manager_account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#manager_account_id Pipeline#manager_account_id}
   */
   readonly managerAccountId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#sync_start_date Pipeline#sync_start_date}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#sync_start_date Pipeline#sync_start_date}
   */
   readonly syncStartDate?: string;
 }
@@ -12442,7 +12640,7 @@ export interface PipelineIngestionDefinitionObjectsTableConnectorOptionsGoogleAd
 export function pipelineIngestionDefinitionObjectsTableConnectorOptionsGoogleAdsOptionsToTerraform(struct?: PipelineIngestionDefinitionObjectsTableConnectorOptionsGoogleAdsOptionsOutputReference | PipelineIngestionDefinitionObjectsTableConnectorOptionsGoogleAdsOptions): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     lookback_window_days: cdktn.numberToTerraform(struct!.lookbackWindowDays),
@@ -12455,7 +12653,7 @@ export function pipelineIngestionDefinitionObjectsTableConnectorOptionsGoogleAds
 export function pipelineIngestionDefinitionObjectsTableConnectorOptionsGoogleAdsOptionsToHclTerraform(struct?: PipelineIngestionDefinitionObjectsTableConnectorOptionsGoogleAdsOptionsOutputReference | PipelineIngestionDefinitionObjectsTableConnectorOptionsGoogleAdsOptions): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     lookback_window_days: {
@@ -12573,7 +12771,7 @@ export class PipelineIngestionDefinitionObjectsTableConnectorOptionsGoogleAdsOpt
 }
 export interface PipelineIngestionDefinitionObjectsTableConnectorOptionsJiraOptions {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#include_jira_spaces Pipeline#include_jira_spaces}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#include_jira_spaces Pipeline#include_jira_spaces}
   */
   readonly includeJiraSpaces?: string[];
 }
@@ -12581,7 +12779,7 @@ export interface PipelineIngestionDefinitionObjectsTableConnectorOptionsJiraOpti
 export function pipelineIngestionDefinitionObjectsTableConnectorOptionsJiraOptionsToTerraform(struct?: PipelineIngestionDefinitionObjectsTableConnectorOptionsJiraOptionsOutputReference | PipelineIngestionDefinitionObjectsTableConnectorOptionsJiraOptions): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     include_jira_spaces: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.includeJiraSpaces),
@@ -12592,7 +12790,7 @@ export function pipelineIngestionDefinitionObjectsTableConnectorOptionsJiraOptio
 export function pipelineIngestionDefinitionObjectsTableConnectorOptionsJiraOptionsToHclTerraform(struct?: PipelineIngestionDefinitionObjectsTableConnectorOptionsJiraOptionsOutputReference | PipelineIngestionDefinitionObjectsTableConnectorOptionsJiraOptions): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     include_jira_spaces: {
@@ -12657,23 +12855,23 @@ export class PipelineIngestionDefinitionObjectsTableConnectorOptionsJiraOptionsO
 }
 export interface PipelineIngestionDefinitionObjectsTableConnectorOptionsKafkaOptionsKeyTransformerJsonOptions {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#as_variant Pipeline#as_variant}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#as_variant Pipeline#as_variant}
   */
   readonly asVariant?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#schema Pipeline#schema}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#schema Pipeline#schema}
   */
   readonly schema?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#schema_evolution_mode Pipeline#schema_evolution_mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#schema_evolution_mode Pipeline#schema_evolution_mode}
   */
   readonly schemaEvolutionMode?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#schema_file_path Pipeline#schema_file_path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#schema_file_path Pipeline#schema_file_path}
   */
   readonly schemaFilePath?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#schema_hints Pipeline#schema_hints}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#schema_hints Pipeline#schema_hints}
   */
   readonly schemaHints?: string;
 }
@@ -12681,7 +12879,7 @@ export interface PipelineIngestionDefinitionObjectsTableConnectorOptionsKafkaOpt
 export function pipelineIngestionDefinitionObjectsTableConnectorOptionsKafkaOptionsKeyTransformerJsonOptionsToTerraform(struct?: PipelineIngestionDefinitionObjectsTableConnectorOptionsKafkaOptionsKeyTransformerJsonOptionsOutputReference | PipelineIngestionDefinitionObjectsTableConnectorOptionsKafkaOptionsKeyTransformerJsonOptions): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     as_variant: cdktn.booleanToTerraform(struct!.asVariant),
@@ -12696,7 +12894,7 @@ export function pipelineIngestionDefinitionObjectsTableConnectorOptionsKafkaOpti
 export function pipelineIngestionDefinitionObjectsTableConnectorOptionsKafkaOptionsKeyTransformerJsonOptionsToHclTerraform(struct?: PipelineIngestionDefinitionObjectsTableConnectorOptionsKafkaOptionsKeyTransformerJsonOptionsOutputReference | PipelineIngestionDefinitionObjectsTableConnectorOptionsKafkaOptionsKeyTransformerJsonOptions): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     as_variant: {
@@ -12873,13 +13071,13 @@ export class PipelineIngestionDefinitionObjectsTableConnectorOptionsKafkaOptions
 }
 export interface PipelineIngestionDefinitionObjectsTableConnectorOptionsKafkaOptionsKeyTransformer {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#format Pipeline#format}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#format Pipeline#format}
   */
   readonly format?: string;
   /**
   * json_options block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#json_options Pipeline#json_options}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#json_options Pipeline#json_options}
   */
   readonly jsonOptions?: PipelineIngestionDefinitionObjectsTableConnectorOptionsKafkaOptionsKeyTransformerJsonOptions;
 }
@@ -12887,7 +13085,7 @@ export interface PipelineIngestionDefinitionObjectsTableConnectorOptionsKafkaOpt
 export function pipelineIngestionDefinitionObjectsTableConnectorOptionsKafkaOptionsKeyTransformerToTerraform(struct?: PipelineIngestionDefinitionObjectsTableConnectorOptionsKafkaOptionsKeyTransformerOutputReference | PipelineIngestionDefinitionObjectsTableConnectorOptionsKafkaOptionsKeyTransformer): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     format: cdktn.stringToTerraform(struct!.format),
@@ -12899,7 +13097,7 @@ export function pipelineIngestionDefinitionObjectsTableConnectorOptionsKafkaOpti
 export function pipelineIngestionDefinitionObjectsTableConnectorOptionsKafkaOptionsKeyTransformerToHclTerraform(struct?: PipelineIngestionDefinitionObjectsTableConnectorOptionsKafkaOptionsKeyTransformerOutputReference | PipelineIngestionDefinitionObjectsTableConnectorOptionsKafkaOptionsKeyTransformer): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     format: {
@@ -12992,23 +13190,23 @@ export class PipelineIngestionDefinitionObjectsTableConnectorOptionsKafkaOptions
 }
 export interface PipelineIngestionDefinitionObjectsTableConnectorOptionsKafkaOptionsValueTransformerJsonOptions {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#as_variant Pipeline#as_variant}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#as_variant Pipeline#as_variant}
   */
   readonly asVariant?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#schema Pipeline#schema}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#schema Pipeline#schema}
   */
   readonly schema?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#schema_evolution_mode Pipeline#schema_evolution_mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#schema_evolution_mode Pipeline#schema_evolution_mode}
   */
   readonly schemaEvolutionMode?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#schema_file_path Pipeline#schema_file_path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#schema_file_path Pipeline#schema_file_path}
   */
   readonly schemaFilePath?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#schema_hints Pipeline#schema_hints}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#schema_hints Pipeline#schema_hints}
   */
   readonly schemaHints?: string;
 }
@@ -13016,7 +13214,7 @@ export interface PipelineIngestionDefinitionObjectsTableConnectorOptionsKafkaOpt
 export function pipelineIngestionDefinitionObjectsTableConnectorOptionsKafkaOptionsValueTransformerJsonOptionsToTerraform(struct?: PipelineIngestionDefinitionObjectsTableConnectorOptionsKafkaOptionsValueTransformerJsonOptionsOutputReference | PipelineIngestionDefinitionObjectsTableConnectorOptionsKafkaOptionsValueTransformerJsonOptions): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     as_variant: cdktn.booleanToTerraform(struct!.asVariant),
@@ -13031,7 +13229,7 @@ export function pipelineIngestionDefinitionObjectsTableConnectorOptionsKafkaOpti
 export function pipelineIngestionDefinitionObjectsTableConnectorOptionsKafkaOptionsValueTransformerJsonOptionsToHclTerraform(struct?: PipelineIngestionDefinitionObjectsTableConnectorOptionsKafkaOptionsValueTransformerJsonOptionsOutputReference | PipelineIngestionDefinitionObjectsTableConnectorOptionsKafkaOptionsValueTransformerJsonOptions): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     as_variant: {
@@ -13208,13 +13406,13 @@ export class PipelineIngestionDefinitionObjectsTableConnectorOptionsKafkaOptions
 }
 export interface PipelineIngestionDefinitionObjectsTableConnectorOptionsKafkaOptionsValueTransformer {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#format Pipeline#format}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#format Pipeline#format}
   */
   readonly format?: string;
   /**
   * json_options block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#json_options Pipeline#json_options}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#json_options Pipeline#json_options}
   */
   readonly jsonOptions?: PipelineIngestionDefinitionObjectsTableConnectorOptionsKafkaOptionsValueTransformerJsonOptions;
 }
@@ -13222,7 +13420,7 @@ export interface PipelineIngestionDefinitionObjectsTableConnectorOptionsKafkaOpt
 export function pipelineIngestionDefinitionObjectsTableConnectorOptionsKafkaOptionsValueTransformerToTerraform(struct?: PipelineIngestionDefinitionObjectsTableConnectorOptionsKafkaOptionsValueTransformerOutputReference | PipelineIngestionDefinitionObjectsTableConnectorOptionsKafkaOptionsValueTransformer): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     format: cdktn.stringToTerraform(struct!.format),
@@ -13234,7 +13432,7 @@ export function pipelineIngestionDefinitionObjectsTableConnectorOptionsKafkaOpti
 export function pipelineIngestionDefinitionObjectsTableConnectorOptionsKafkaOptionsValueTransformerToHclTerraform(struct?: PipelineIngestionDefinitionObjectsTableConnectorOptionsKafkaOptionsValueTransformerOutputReference | PipelineIngestionDefinitionObjectsTableConnectorOptionsKafkaOptionsValueTransformer): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     format: {
@@ -13327,35 +13525,35 @@ export class PipelineIngestionDefinitionObjectsTableConnectorOptionsKafkaOptions
 }
 export interface PipelineIngestionDefinitionObjectsTableConnectorOptionsKafkaOptions {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#client_config Pipeline#client_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#client_config Pipeline#client_config}
   */
   readonly clientConfig?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#max_offsets_per_trigger Pipeline#max_offsets_per_trigger}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#max_offsets_per_trigger Pipeline#max_offsets_per_trigger}
   */
   readonly maxOffsetsPerTrigger?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#starting_offset Pipeline#starting_offset}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#starting_offset Pipeline#starting_offset}
   */
   readonly startingOffset?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#topic_pattern Pipeline#topic_pattern}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#topic_pattern Pipeline#topic_pattern}
   */
   readonly topicPattern?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#topics Pipeline#topics}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#topics Pipeline#topics}
   */
   readonly topics?: string[];
   /**
   * key_transformer block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#key_transformer Pipeline#key_transformer}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#key_transformer Pipeline#key_transformer}
   */
   readonly keyTransformer?: PipelineIngestionDefinitionObjectsTableConnectorOptionsKafkaOptionsKeyTransformer;
   /**
   * value_transformer block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#value_transformer Pipeline#value_transformer}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#value_transformer Pipeline#value_transformer}
   */
   readonly valueTransformer?: PipelineIngestionDefinitionObjectsTableConnectorOptionsKafkaOptionsValueTransformer;
 }
@@ -13363,7 +13561,7 @@ export interface PipelineIngestionDefinitionObjectsTableConnectorOptionsKafkaOpt
 export function pipelineIngestionDefinitionObjectsTableConnectorOptionsKafkaOptionsToTerraform(struct?: PipelineIngestionDefinitionObjectsTableConnectorOptionsKafkaOptionsOutputReference | PipelineIngestionDefinitionObjectsTableConnectorOptionsKafkaOptions): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     client_config: cdktn.hashMapper(cdktn.stringToTerraform)(struct!.clientConfig),
@@ -13380,7 +13578,7 @@ export function pipelineIngestionDefinitionObjectsTableConnectorOptionsKafkaOpti
 export function pipelineIngestionDefinitionObjectsTableConnectorOptionsKafkaOptionsToHclTerraform(struct?: PipelineIngestionDefinitionObjectsTableConnectorOptionsKafkaOptionsOutputReference | PipelineIngestionDefinitionObjectsTableConnectorOptionsKafkaOptions): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     client_config: {
@@ -13613,35 +13811,35 @@ export class PipelineIngestionDefinitionObjectsTableConnectorOptionsKafkaOptions
 }
 export interface PipelineIngestionDefinitionObjectsTableConnectorOptionsMetaAdsOptions {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#action_attribution_windows Pipeline#action_attribution_windows}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#action_attribution_windows Pipeline#action_attribution_windows}
   */
   readonly actionAttributionWindows?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#action_breakdowns Pipeline#action_breakdowns}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#action_breakdowns Pipeline#action_breakdowns}
   */
   readonly actionBreakdowns?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#action_report_time Pipeline#action_report_time}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#action_report_time Pipeline#action_report_time}
   */
   readonly actionReportTime?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#breakdowns Pipeline#breakdowns}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#breakdowns Pipeline#breakdowns}
   */
   readonly breakdowns?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#custom_insights_lookback_window Pipeline#custom_insights_lookback_window}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#custom_insights_lookback_window Pipeline#custom_insights_lookback_window}
   */
   readonly customInsightsLookbackWindow?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#level Pipeline#level}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#level Pipeline#level}
   */
   readonly level?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#start_date Pipeline#start_date}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#start_date Pipeline#start_date}
   */
   readonly startDate?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#time_increment Pipeline#time_increment}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#time_increment Pipeline#time_increment}
   */
   readonly timeIncrement?: string;
 }
@@ -13649,7 +13847,7 @@ export interface PipelineIngestionDefinitionObjectsTableConnectorOptionsMetaAdsO
 export function pipelineIngestionDefinitionObjectsTableConnectorOptionsMetaAdsOptionsToTerraform(struct?: PipelineIngestionDefinitionObjectsTableConnectorOptionsMetaAdsOptionsOutputReference | PipelineIngestionDefinitionObjectsTableConnectorOptionsMetaAdsOptions): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     action_attribution_windows: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.actionAttributionWindows),
@@ -13667,7 +13865,7 @@ export function pipelineIngestionDefinitionObjectsTableConnectorOptionsMetaAdsOp
 export function pipelineIngestionDefinitionObjectsTableConnectorOptionsMetaAdsOptionsToHclTerraform(struct?: PipelineIngestionDefinitionObjectsTableConnectorOptionsMetaAdsOptionsOutputReference | PipelineIngestionDefinitionObjectsTableConnectorOptionsMetaAdsOptions): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     action_attribution_windows: {
@@ -13928,43 +14126,43 @@ export class PipelineIngestionDefinitionObjectsTableConnectorOptionsMetaAdsOptio
 }
 export interface PipelineIngestionDefinitionObjectsTableConnectorOptionsOutlookOptions {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#attachment_mode Pipeline#attachment_mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#attachment_mode Pipeline#attachment_mode}
   */
   readonly attachmentMode?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#body_format Pipeline#body_format}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#body_format Pipeline#body_format}
   */
   readonly bodyFormat?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#folder_filter Pipeline#folder_filter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#folder_filter Pipeline#folder_filter}
   */
   readonly folderFilter?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#include_folders Pipeline#include_folders}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#include_folders Pipeline#include_folders}
   */
   readonly includeFolders?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#include_mailboxes Pipeline#include_mailboxes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#include_mailboxes Pipeline#include_mailboxes}
   */
   readonly includeMailboxes?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#include_senders Pipeline#include_senders}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#include_senders Pipeline#include_senders}
   */
   readonly includeSenders?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#include_subjects Pipeline#include_subjects}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#include_subjects Pipeline#include_subjects}
   */
   readonly includeSubjects?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#sender_filter Pipeline#sender_filter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#sender_filter Pipeline#sender_filter}
   */
   readonly senderFilter?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#start_date Pipeline#start_date}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#start_date Pipeline#start_date}
   */
   readonly startDate?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#subject_filter Pipeline#subject_filter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#subject_filter Pipeline#subject_filter}
   */
   readonly subjectFilter?: string[];
 }
@@ -13972,7 +14170,7 @@ export interface PipelineIngestionDefinitionObjectsTableConnectorOptionsOutlookO
 export function pipelineIngestionDefinitionObjectsTableConnectorOptionsOutlookOptionsToTerraform(struct?: PipelineIngestionDefinitionObjectsTableConnectorOptionsOutlookOptionsOutputReference | PipelineIngestionDefinitionObjectsTableConnectorOptionsOutlookOptions): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     attachment_mode: cdktn.stringToTerraform(struct!.attachmentMode),
@@ -13992,7 +14190,7 @@ export function pipelineIngestionDefinitionObjectsTableConnectorOptionsOutlookOp
 export function pipelineIngestionDefinitionObjectsTableConnectorOptionsOutlookOptionsToHclTerraform(struct?: PipelineIngestionDefinitionObjectsTableConnectorOptionsOutlookOptionsOutputReference | PipelineIngestionDefinitionObjectsTableConnectorOptionsOutlookOptions): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     attachment_mode: {
@@ -14309,15 +14507,15 @@ export class PipelineIngestionDefinitionObjectsTableConnectorOptionsOutlookOptio
 }
 export interface PipelineIngestionDefinitionObjectsTableConnectorOptionsSharepointOptionsFileIngestionOptionsFileFilters {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#modified_after Pipeline#modified_after}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#modified_after Pipeline#modified_after}
   */
   readonly modifiedAfter?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#modified_before Pipeline#modified_before}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#modified_before Pipeline#modified_before}
   */
   readonly modifiedBefore?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#path_filter Pipeline#path_filter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#path_filter Pipeline#path_filter}
   */
   readonly pathFilter?: string;
 }
@@ -14325,7 +14523,7 @@ export interface PipelineIngestionDefinitionObjectsTableConnectorOptionsSharepoi
 export function pipelineIngestionDefinitionObjectsTableConnectorOptionsSharepointOptionsFileIngestionOptionsFileFiltersToTerraform(struct?: PipelineIngestionDefinitionObjectsTableConnectorOptionsSharepointOptionsFileIngestionOptionsFileFilters | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     modified_after: cdktn.stringToTerraform(struct!.modifiedAfter),
@@ -14338,7 +14536,7 @@ export function pipelineIngestionDefinitionObjectsTableConnectorOptionsSharepoin
 export function pipelineIngestionDefinitionObjectsTableConnectorOptionsSharepointOptionsFileIngestionOptionsFileFiltersToHclTerraform(struct?: PipelineIngestionDefinitionObjectsTableConnectorOptionsSharepointOptionsFileIngestionOptionsFileFilters | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     modified_after: {
@@ -14491,49 +14689,49 @@ export class PipelineIngestionDefinitionObjectsTableConnectorOptionsSharepointOp
 }
 export interface PipelineIngestionDefinitionObjectsTableConnectorOptionsSharepointOptionsFileIngestionOptions {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#corrupt_record_column Pipeline#corrupt_record_column}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#corrupt_record_column Pipeline#corrupt_record_column}
   */
   readonly corruptRecordColumn?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#format Pipeline#format}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#format Pipeline#format}
   */
   readonly format?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#format_options Pipeline#format_options}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#format_options Pipeline#format_options}
   */
   readonly formatOptions?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#ignore_corrupt_files Pipeline#ignore_corrupt_files}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#ignore_corrupt_files Pipeline#ignore_corrupt_files}
   */
   readonly ignoreCorruptFiles?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#infer_column_types Pipeline#infer_column_types}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#infer_column_types Pipeline#infer_column_types}
   */
   readonly inferColumnTypes?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#reader_case_sensitive Pipeline#reader_case_sensitive}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#reader_case_sensitive Pipeline#reader_case_sensitive}
   */
   readonly readerCaseSensitive?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#rescued_data_column Pipeline#rescued_data_column}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#rescued_data_column Pipeline#rescued_data_column}
   */
   readonly rescuedDataColumn?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#schema_evolution_mode Pipeline#schema_evolution_mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#schema_evolution_mode Pipeline#schema_evolution_mode}
   */
   readonly schemaEvolutionMode?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#schema_hints Pipeline#schema_hints}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#schema_hints Pipeline#schema_hints}
   */
   readonly schemaHints?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#single_variant_column Pipeline#single_variant_column}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#single_variant_column Pipeline#single_variant_column}
   */
   readonly singleVariantColumn?: string;
   /**
   * file_filters block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#file_filters Pipeline#file_filters}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#file_filters Pipeline#file_filters}
   */
   readonly fileFilters?: PipelineIngestionDefinitionObjectsTableConnectorOptionsSharepointOptionsFileIngestionOptionsFileFilters[] | cdktn.IResolvable;
 }
@@ -14541,7 +14739,7 @@ export interface PipelineIngestionDefinitionObjectsTableConnectorOptionsSharepoi
 export function pipelineIngestionDefinitionObjectsTableConnectorOptionsSharepointOptionsFileIngestionOptionsToTerraform(struct?: PipelineIngestionDefinitionObjectsTableConnectorOptionsSharepointOptionsFileIngestionOptionsOutputReference | PipelineIngestionDefinitionObjectsTableConnectorOptionsSharepointOptionsFileIngestionOptions): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     corrupt_record_column: cdktn.stringToTerraform(struct!.corruptRecordColumn),
@@ -14562,7 +14760,7 @@ export function pipelineIngestionDefinitionObjectsTableConnectorOptionsSharepoin
 export function pipelineIngestionDefinitionObjectsTableConnectorOptionsSharepointOptionsFileIngestionOptionsToHclTerraform(struct?: PipelineIngestionDefinitionObjectsTableConnectorOptionsSharepointOptionsFileIngestionOptionsOutputReference | PipelineIngestionDefinitionObjectsTableConnectorOptionsSharepointOptionsFileIngestionOptions): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     corrupt_record_column: {
@@ -14907,17 +15105,17 @@ export class PipelineIngestionDefinitionObjectsTableConnectorOptionsSharepointOp
 }
 export interface PipelineIngestionDefinitionObjectsTableConnectorOptionsSharepointOptions {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#entity_type Pipeline#entity_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#entity_type Pipeline#entity_type}
   */
   readonly entityType?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#url Pipeline#url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#url Pipeline#url}
   */
   readonly url?: string;
   /**
   * file_ingestion_options block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#file_ingestion_options Pipeline#file_ingestion_options}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#file_ingestion_options Pipeline#file_ingestion_options}
   */
   readonly fileIngestionOptions?: PipelineIngestionDefinitionObjectsTableConnectorOptionsSharepointOptionsFileIngestionOptions;
 }
@@ -14925,7 +15123,7 @@ export interface PipelineIngestionDefinitionObjectsTableConnectorOptionsSharepoi
 export function pipelineIngestionDefinitionObjectsTableConnectorOptionsSharepointOptionsToTerraform(struct?: PipelineIngestionDefinitionObjectsTableConnectorOptionsSharepointOptionsOutputReference | PipelineIngestionDefinitionObjectsTableConnectorOptionsSharepointOptions): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     entity_type: cdktn.stringToTerraform(struct!.entityType),
@@ -14938,7 +15136,7 @@ export function pipelineIngestionDefinitionObjectsTableConnectorOptionsSharepoin
 export function pipelineIngestionDefinitionObjectsTableConnectorOptionsSharepointOptionsToHclTerraform(struct?: PipelineIngestionDefinitionObjectsTableConnectorOptionsSharepointOptionsOutputReference | PipelineIngestionDefinitionObjectsTableConnectorOptionsSharepointOptions): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     entity_type: {
@@ -15059,7 +15257,7 @@ export class PipelineIngestionDefinitionObjectsTableConnectorOptionsSharepointOp
 }
 export interface PipelineIngestionDefinitionObjectsTableConnectorOptionsSmartsheetOptions {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#enforce_schema Pipeline#enforce_schema}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#enforce_schema Pipeline#enforce_schema}
   */
   readonly enforceSchema?: boolean | cdktn.IResolvable;
 }
@@ -15067,7 +15265,7 @@ export interface PipelineIngestionDefinitionObjectsTableConnectorOptionsSmartshe
 export function pipelineIngestionDefinitionObjectsTableConnectorOptionsSmartsheetOptionsToTerraform(struct?: PipelineIngestionDefinitionObjectsTableConnectorOptionsSmartsheetOptionsOutputReference | PipelineIngestionDefinitionObjectsTableConnectorOptionsSmartsheetOptions): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     enforce_schema: cdktn.booleanToTerraform(struct!.enforceSchema),
@@ -15078,7 +15276,7 @@ export function pipelineIngestionDefinitionObjectsTableConnectorOptionsSmartshee
 export function pipelineIngestionDefinitionObjectsTableConnectorOptionsSmartsheetOptionsToHclTerraform(struct?: PipelineIngestionDefinitionObjectsTableConnectorOptionsSmartsheetOptionsOutputReference | PipelineIngestionDefinitionObjectsTableConnectorOptionsSmartsheetOptions): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     enforce_schema: {
@@ -15143,31 +15341,31 @@ export class PipelineIngestionDefinitionObjectsTableConnectorOptionsSmartsheetOp
 }
 export interface PipelineIngestionDefinitionObjectsTableConnectorOptionsTiktokAdsOptions {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#data_level Pipeline#data_level}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#data_level Pipeline#data_level}
   */
   readonly dataLevel?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#dimensions Pipeline#dimensions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#dimensions Pipeline#dimensions}
   */
   readonly dimensions?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#lookback_window_days Pipeline#lookback_window_days}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#lookback_window_days Pipeline#lookback_window_days}
   */
   readonly lookbackWindowDays?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#metrics Pipeline#metrics}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#metrics Pipeline#metrics}
   */
   readonly metrics?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#query_lifetime Pipeline#query_lifetime}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#query_lifetime Pipeline#query_lifetime}
   */
   readonly queryLifetime?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#report_type Pipeline#report_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#report_type Pipeline#report_type}
   */
   readonly reportType?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#sync_start_date Pipeline#sync_start_date}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#sync_start_date Pipeline#sync_start_date}
   */
   readonly syncStartDate?: string;
 }
@@ -15175,7 +15373,7 @@ export interface PipelineIngestionDefinitionObjectsTableConnectorOptionsTiktokAd
 export function pipelineIngestionDefinitionObjectsTableConnectorOptionsTiktokAdsOptionsToTerraform(struct?: PipelineIngestionDefinitionObjectsTableConnectorOptionsTiktokAdsOptionsOutputReference | PipelineIngestionDefinitionObjectsTableConnectorOptionsTiktokAdsOptions): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     data_level: cdktn.stringToTerraform(struct!.dataLevel),
@@ -15192,7 +15390,7 @@ export function pipelineIngestionDefinitionObjectsTableConnectorOptionsTiktokAds
 export function pipelineIngestionDefinitionObjectsTableConnectorOptionsTiktokAdsOptionsToHclTerraform(struct?: PipelineIngestionDefinitionObjectsTableConnectorOptionsTiktokAdsOptionsOutputReference | PipelineIngestionDefinitionObjectsTableConnectorOptionsTiktokAdsOptions): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     data_level: {
@@ -15425,7 +15623,7 @@ export class PipelineIngestionDefinitionObjectsTableConnectorOptionsTiktokAdsOpt
 }
 export interface PipelineIngestionDefinitionObjectsTableConnectorOptionsZendeskSupportOptions {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#start_date Pipeline#start_date}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#start_date Pipeline#start_date}
   */
   readonly startDate?: string;
 }
@@ -15433,7 +15631,7 @@ export interface PipelineIngestionDefinitionObjectsTableConnectorOptionsZendeskS
 export function pipelineIngestionDefinitionObjectsTableConnectorOptionsZendeskSupportOptionsToTerraform(struct?: PipelineIngestionDefinitionObjectsTableConnectorOptionsZendeskSupportOptionsOutputReference | PipelineIngestionDefinitionObjectsTableConnectorOptionsZendeskSupportOptions): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     start_date: cdktn.stringToTerraform(struct!.startDate),
@@ -15444,7 +15642,7 @@ export function pipelineIngestionDefinitionObjectsTableConnectorOptionsZendeskSu
 export function pipelineIngestionDefinitionObjectsTableConnectorOptionsZendeskSupportOptionsToHclTerraform(struct?: PipelineIngestionDefinitionObjectsTableConnectorOptionsZendeskSupportOptionsOutputReference | PipelineIngestionDefinitionObjectsTableConnectorOptionsZendeskSupportOptions): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     start_date: {
@@ -15511,67 +15709,67 @@ export interface PipelineIngestionDefinitionObjectsTableConnectorOptions {
   /**
   * confluence_options block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#confluence_options Pipeline#confluence_options}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#confluence_options Pipeline#confluence_options}
   */
   readonly confluenceOptions?: PipelineIngestionDefinitionObjectsTableConnectorOptionsConfluenceOptions;
   /**
   * gdrive_options block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#gdrive_options Pipeline#gdrive_options}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#gdrive_options Pipeline#gdrive_options}
   */
   readonly gdriveOptions?: PipelineIngestionDefinitionObjectsTableConnectorOptionsGdriveOptions;
   /**
   * google_ads_options block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#google_ads_options Pipeline#google_ads_options}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#google_ads_options Pipeline#google_ads_options}
   */
   readonly googleAdsOptions?: PipelineIngestionDefinitionObjectsTableConnectorOptionsGoogleAdsOptions;
   /**
   * jira_options block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#jira_options Pipeline#jira_options}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#jira_options Pipeline#jira_options}
   */
   readonly jiraOptions?: PipelineIngestionDefinitionObjectsTableConnectorOptionsJiraOptions;
   /**
   * kafka_options block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#kafka_options Pipeline#kafka_options}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#kafka_options Pipeline#kafka_options}
   */
   readonly kafkaOptions?: PipelineIngestionDefinitionObjectsTableConnectorOptionsKafkaOptions;
   /**
   * meta_ads_options block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#meta_ads_options Pipeline#meta_ads_options}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#meta_ads_options Pipeline#meta_ads_options}
   */
   readonly metaAdsOptions?: PipelineIngestionDefinitionObjectsTableConnectorOptionsMetaAdsOptions;
   /**
   * outlook_options block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#outlook_options Pipeline#outlook_options}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#outlook_options Pipeline#outlook_options}
   */
   readonly outlookOptions?: PipelineIngestionDefinitionObjectsTableConnectorOptionsOutlookOptions;
   /**
   * sharepoint_options block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#sharepoint_options Pipeline#sharepoint_options}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#sharepoint_options Pipeline#sharepoint_options}
   */
   readonly sharepointOptions?: PipelineIngestionDefinitionObjectsTableConnectorOptionsSharepointOptions;
   /**
   * smartsheet_options block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#smartsheet_options Pipeline#smartsheet_options}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#smartsheet_options Pipeline#smartsheet_options}
   */
   readonly smartsheetOptions?: PipelineIngestionDefinitionObjectsTableConnectorOptionsSmartsheetOptions;
   /**
   * tiktok_ads_options block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#tiktok_ads_options Pipeline#tiktok_ads_options}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#tiktok_ads_options Pipeline#tiktok_ads_options}
   */
   readonly tiktokAdsOptions?: PipelineIngestionDefinitionObjectsTableConnectorOptionsTiktokAdsOptions;
   /**
   * zendesk_support_options block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#zendesk_support_options Pipeline#zendesk_support_options}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#zendesk_support_options Pipeline#zendesk_support_options}
   */
   readonly zendeskSupportOptions?: PipelineIngestionDefinitionObjectsTableConnectorOptionsZendeskSupportOptions;
 }
@@ -15579,7 +15777,7 @@ export interface PipelineIngestionDefinitionObjectsTableConnectorOptions {
 export function pipelineIngestionDefinitionObjectsTableConnectorOptionsToTerraform(struct?: PipelineIngestionDefinitionObjectsTableConnectorOptionsOutputReference | PipelineIngestionDefinitionObjectsTableConnectorOptions): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     confluence_options: pipelineIngestionDefinitionObjectsTableConnectorOptionsConfluenceOptionsToTerraform(struct!.confluenceOptions),
@@ -15600,7 +15798,7 @@ export function pipelineIngestionDefinitionObjectsTableConnectorOptionsToTerrafo
 export function pipelineIngestionDefinitionObjectsTableConnectorOptionsToHclTerraform(struct?: PipelineIngestionDefinitionObjectsTableConnectorOptionsOutputReference | PipelineIngestionDefinitionObjectsTableConnectorOptions): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     confluence_options: {
@@ -15945,11 +16143,11 @@ export class PipelineIngestionDefinitionObjectsTableConnectorOptionsOutputRefere
 }
 export interface PipelineIngestionDefinitionObjectsTableTableConfigurationAutoFullRefreshPolicy {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#enabled Pipeline#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#enabled Pipeline#enabled}
   */
   readonly enabled: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#min_interval_hours Pipeline#min_interval_hours}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#min_interval_hours Pipeline#min_interval_hours}
   */
   readonly minIntervalHours?: number;
 }
@@ -15957,7 +16155,7 @@ export interface PipelineIngestionDefinitionObjectsTableTableConfigurationAutoFu
 export function pipelineIngestionDefinitionObjectsTableTableConfigurationAutoFullRefreshPolicyToTerraform(struct?: PipelineIngestionDefinitionObjectsTableTableConfigurationAutoFullRefreshPolicyOutputReference | PipelineIngestionDefinitionObjectsTableTableConfigurationAutoFullRefreshPolicy): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     enabled: cdktn.booleanToTerraform(struct!.enabled),
@@ -15969,7 +16167,7 @@ export function pipelineIngestionDefinitionObjectsTableTableConfigurationAutoFul
 export function pipelineIngestionDefinitionObjectsTableTableConfigurationAutoFullRefreshPolicyToHclTerraform(struct?: PipelineIngestionDefinitionObjectsTableTableConfigurationAutoFullRefreshPolicyOutputReference | PipelineIngestionDefinitionObjectsTableTableConfigurationAutoFullRefreshPolicy): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     enabled: {
@@ -16059,15 +16257,15 @@ export class PipelineIngestionDefinitionObjectsTableTableConfigurationAutoFullRe
 }
 export interface PipelineIngestionDefinitionObjectsTableTableConfigurationQueryBasedConnectorConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#cursor_columns Pipeline#cursor_columns}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#cursor_columns Pipeline#cursor_columns}
   */
   readonly cursorColumns?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#deletion_condition Pipeline#deletion_condition}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#deletion_condition Pipeline#deletion_condition}
   */
   readonly deletionCondition?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#hard_deletion_sync_min_interval_in_seconds Pipeline#hard_deletion_sync_min_interval_in_seconds}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#hard_deletion_sync_min_interval_in_seconds Pipeline#hard_deletion_sync_min_interval_in_seconds}
   */
   readonly hardDeletionSyncMinIntervalInSeconds?: number;
 }
@@ -16075,7 +16273,7 @@ export interface PipelineIngestionDefinitionObjectsTableTableConfigurationQueryB
 export function pipelineIngestionDefinitionObjectsTableTableConfigurationQueryBasedConnectorConfigToTerraform(struct?: PipelineIngestionDefinitionObjectsTableTableConfigurationQueryBasedConnectorConfigOutputReference | PipelineIngestionDefinitionObjectsTableTableConfigurationQueryBasedConnectorConfig): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     cursor_columns: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.cursorColumns),
@@ -16088,7 +16286,7 @@ export function pipelineIngestionDefinitionObjectsTableTableConfigurationQueryBa
 export function pipelineIngestionDefinitionObjectsTableTableConfigurationQueryBasedConnectorConfigToHclTerraform(struct?: PipelineIngestionDefinitionObjectsTableTableConfigurationQueryBasedConnectorConfigOutputReference | PipelineIngestionDefinitionObjectsTableTableConfigurationQueryBasedConnectorConfig): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     cursor_columns: {
@@ -16209,11 +16407,11 @@ export class PipelineIngestionDefinitionObjectsTableTableConfigurationQueryBased
 }
 export interface PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersReportParameters {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#key Pipeline#key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#key Pipeline#key}
   */
   readonly key?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#value Pipeline#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#value Pipeline#value}
   */
   readonly value?: string;
 }
@@ -16221,7 +16419,7 @@ export interface PipelineIngestionDefinitionObjectsTableTableConfigurationWorkda
 export function pipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersReportParametersToTerraform(struct?: PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersReportParameters | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     key: cdktn.stringToTerraform(struct!.key),
@@ -16233,7 +16431,7 @@ export function pipelineIngestionDefinitionObjectsTableTableConfigurationWorkday
 export function pipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersReportParametersToHclTerraform(struct?: PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersReportParameters | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     key: {
@@ -16358,17 +16556,17 @@ export class PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayRep
 }
 export interface PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParameters {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#incremental Pipeline#incremental}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#incremental Pipeline#incremental}
   */
   readonly incremental?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#parameters Pipeline#parameters}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#parameters Pipeline#parameters}
   */
   readonly parameters?: { [key: string]: string };
   /**
   * report_parameters block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#report_parameters Pipeline#report_parameters}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#report_parameters Pipeline#report_parameters}
   */
   readonly reportParameters?: PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersReportParameters[] | cdktn.IResolvable;
 }
@@ -16376,7 +16574,7 @@ export interface PipelineIngestionDefinitionObjectsTableTableConfigurationWorkda
 export function pipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersToTerraform(struct?: PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersOutputReference | PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParameters): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     incremental: cdktn.booleanToTerraform(struct!.incremental),
@@ -16389,7 +16587,7 @@ export function pipelineIngestionDefinitionObjectsTableTableConfigurationWorkday
 export function pipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersToHclTerraform(struct?: PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersOutputReference | PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParameters): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     incremental: {
@@ -16510,49 +16708,61 @@ export class PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayRep
 }
 export interface PipelineIngestionDefinitionObjectsTableTableConfiguration {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#exclude_columns Pipeline#exclude_columns}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#clustering_columns Pipeline#clustering_columns}
+  */
+  readonly clusteringColumns?: string[];
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#enable_auto_clustering Pipeline#enable_auto_clustering}
+  */
+  readonly enableAutoClustering?: boolean | cdktn.IResolvable;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#exclude_columns Pipeline#exclude_columns}
   */
   readonly excludeColumns?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#include_columns Pipeline#include_columns}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#include_columns Pipeline#include_columns}
   */
   readonly includeColumns?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#primary_keys Pipeline#primary_keys}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#primary_keys Pipeline#primary_keys}
   */
   readonly primaryKeys?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#row_filter Pipeline#row_filter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#row_filter Pipeline#row_filter}
   */
   readonly rowFilter?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#salesforce_include_formula_fields Pipeline#salesforce_include_formula_fields}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#salesforce_include_formula_fields Pipeline#salesforce_include_formula_fields}
   */
   readonly salesforceIncludeFormulaFields?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#scd_type Pipeline#scd_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#scd_type Pipeline#scd_type}
   */
   readonly scdType?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#sequence_by Pipeline#sequence_by}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#sequence_by Pipeline#sequence_by}
   */
   readonly sequenceBy?: string[];
   /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#table_properties Pipeline#table_properties}
+  */
+  readonly tableProperties?: { [key: string]: string };
+  /**
   * auto_full_refresh_policy block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#auto_full_refresh_policy Pipeline#auto_full_refresh_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#auto_full_refresh_policy Pipeline#auto_full_refresh_policy}
   */
   readonly autoFullRefreshPolicy?: PipelineIngestionDefinitionObjectsTableTableConfigurationAutoFullRefreshPolicy;
   /**
   * query_based_connector_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#query_based_connector_config Pipeline#query_based_connector_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#query_based_connector_config Pipeline#query_based_connector_config}
   */
   readonly queryBasedConnectorConfig?: PipelineIngestionDefinitionObjectsTableTableConfigurationQueryBasedConnectorConfig;
   /**
   * workday_report_parameters block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#workday_report_parameters Pipeline#workday_report_parameters}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#workday_report_parameters Pipeline#workday_report_parameters}
   */
   readonly workdayReportParameters?: PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParameters;
 }
@@ -16560,9 +16770,11 @@ export interface PipelineIngestionDefinitionObjectsTableTableConfiguration {
 export function pipelineIngestionDefinitionObjectsTableTableConfigurationToTerraform(struct?: PipelineIngestionDefinitionObjectsTableTableConfigurationOutputReference | PipelineIngestionDefinitionObjectsTableTableConfiguration): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
+    clustering_columns: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.clusteringColumns),
+    enable_auto_clustering: cdktn.booleanToTerraform(struct!.enableAutoClustering),
     exclude_columns: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.excludeColumns),
     include_columns: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.includeColumns),
     primary_keys: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.primaryKeys),
@@ -16570,6 +16782,7 @@ export function pipelineIngestionDefinitionObjectsTableTableConfigurationToTerra
     salesforce_include_formula_fields: cdktn.booleanToTerraform(struct!.salesforceIncludeFormulaFields),
     scd_type: cdktn.stringToTerraform(struct!.scdType),
     sequence_by: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.sequenceBy),
+    table_properties: cdktn.hashMapper(cdktn.stringToTerraform)(struct!.tableProperties),
     auto_full_refresh_policy: pipelineIngestionDefinitionObjectsTableTableConfigurationAutoFullRefreshPolicyToTerraform(struct!.autoFullRefreshPolicy),
     query_based_connector_config: pipelineIngestionDefinitionObjectsTableTableConfigurationQueryBasedConnectorConfigToTerraform(struct!.queryBasedConnectorConfig),
     workday_report_parameters: pipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersToTerraform(struct!.workdayReportParameters),
@@ -16580,9 +16793,21 @@ export function pipelineIngestionDefinitionObjectsTableTableConfigurationToTerra
 export function pipelineIngestionDefinitionObjectsTableTableConfigurationToHclTerraform(struct?: PipelineIngestionDefinitionObjectsTableTableConfigurationOutputReference | PipelineIngestionDefinitionObjectsTableTableConfiguration): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
+    clustering_columns: {
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.clusteringColumns),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+    enable_auto_clustering: {
+      value: cdktn.booleanToHclTerraform(struct!.enableAutoClustering),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
     exclude_columns: {
       value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.excludeColumns),
       isBlock: false,
@@ -16625,6 +16850,12 @@ export function pipelineIngestionDefinitionObjectsTableTableConfigurationToHclTe
       type: "list",
       storageClassType: "stringList",
     },
+    table_properties: {
+      value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(struct!.tableProperties),
+      isBlock: false,
+      type: "map",
+      storageClassType: "stringMap",
+    },
     auto_full_refresh_policy: {
       value: pipelineIngestionDefinitionObjectsTableTableConfigurationAutoFullRefreshPolicyToHclTerraform(struct!.autoFullRefreshPolicy),
       isBlock: true,
@@ -16663,6 +16894,14 @@ export class PipelineIngestionDefinitionObjectsTableTableConfigurationOutputRefe
   public get internalValue(): PipelineIngestionDefinitionObjectsTableTableConfiguration | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
+    if (this._clusteringColumns !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.clusteringColumns = this._clusteringColumns;
+    }
+    if (this._enableAutoClustering !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.enableAutoClustering = this._enableAutoClustering;
+    }
     if (this._excludeColumns !== undefined) {
       hasAnyValues = true;
       internalValueResult.excludeColumns = this._excludeColumns;
@@ -16691,6 +16930,10 @@ export class PipelineIngestionDefinitionObjectsTableTableConfigurationOutputRefe
       hasAnyValues = true;
       internalValueResult.sequenceBy = this._sequenceBy;
     }
+    if (this._tableProperties !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.tableProperties = this._tableProperties;
+    }
     if (this._autoFullRefreshPolicy?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.autoFullRefreshPolicy = this._autoFullRefreshPolicy?.internalValue;
@@ -16709,6 +16952,8 @@ export class PipelineIngestionDefinitionObjectsTableTableConfigurationOutputRefe
   public set internalValue(value: PipelineIngestionDefinitionObjectsTableTableConfiguration | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
+      this._clusteringColumns = undefined;
+      this._enableAutoClustering = undefined;
       this._excludeColumns = undefined;
       this._includeColumns = undefined;
       this._primaryKeys = undefined;
@@ -16716,12 +16961,15 @@ export class PipelineIngestionDefinitionObjectsTableTableConfigurationOutputRefe
       this._salesforceIncludeFormulaFields = undefined;
       this._scdType = undefined;
       this._sequenceBy = undefined;
+      this._tableProperties = undefined;
       this._autoFullRefreshPolicy.internalValue = undefined;
       this._queryBasedConnectorConfig.internalValue = undefined;
       this._workdayReportParameters.internalValue = undefined;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
+      this._clusteringColumns = value.clusteringColumns;
+      this._enableAutoClustering = value.enableAutoClustering;
       this._excludeColumns = value.excludeColumns;
       this._includeColumns = value.includeColumns;
       this._primaryKeys = value.primaryKeys;
@@ -16729,10 +16977,43 @@ export class PipelineIngestionDefinitionObjectsTableTableConfigurationOutputRefe
       this._salesforceIncludeFormulaFields = value.salesforceIncludeFormulaFields;
       this._scdType = value.scdType;
       this._sequenceBy = value.sequenceBy;
+      this._tableProperties = value.tableProperties;
       this._autoFullRefreshPolicy.internalValue = value.autoFullRefreshPolicy;
       this._queryBasedConnectorConfig.internalValue = value.queryBasedConnectorConfig;
       this._workdayReportParameters.internalValue = value.workdayReportParameters;
     }
+  }
+
+  // clustering_columns - computed: false, optional: true, required: false
+  private _clusteringColumns?: string[]; 
+  public get clusteringColumns() {
+    return this.getListAttribute('clustering_columns');
+  }
+  public set clusteringColumns(value: string[]) {
+    this._clusteringColumns = value;
+  }
+  public resetClusteringColumns() {
+    this._clusteringColumns = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get clusteringColumnsInput() {
+    return this._clusteringColumns;
+  }
+
+  // enable_auto_clustering - computed: false, optional: true, required: false
+  private _enableAutoClustering?: boolean | cdktn.IResolvable; 
+  public get enableAutoClustering() {
+    return this.getBooleanAttribute('enable_auto_clustering');
+  }
+  public set enableAutoClustering(value: boolean | cdktn.IResolvable) {
+    this._enableAutoClustering = value;
+  }
+  public resetEnableAutoClustering() {
+    this._enableAutoClustering = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get enableAutoClusteringInput() {
+    return this._enableAutoClustering;
   }
 
   // exclude_columns - computed: false, optional: true, required: false
@@ -16847,6 +17128,22 @@ export class PipelineIngestionDefinitionObjectsTableTableConfigurationOutputRefe
     return this._sequenceBy;
   }
 
+  // table_properties - computed: false, optional: true, required: false
+  private _tableProperties?: { [key: string]: string }; 
+  public get tableProperties() {
+    return this.getStringMapAttribute('table_properties');
+  }
+  public set tableProperties(value: { [key: string]: string }) {
+    this._tableProperties = value;
+  }
+  public resetTableProperties() {
+    this._tableProperties = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tablePropertiesInput() {
+    return this._tableProperties;
+  }
+
   // auto_full_refresh_policy - computed: false, optional: true, required: false
   private _autoFullRefreshPolicy = new PipelineIngestionDefinitionObjectsTableTableConfigurationAutoFullRefreshPolicyOutputReference(this, "auto_full_refresh_policy");
   public get autoFullRefreshPolicy() {
@@ -16897,39 +17194,39 @@ export class PipelineIngestionDefinitionObjectsTableTableConfigurationOutputRefe
 }
 export interface PipelineIngestionDefinitionObjectsTable {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#destination_catalog Pipeline#destination_catalog}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#destination_catalog Pipeline#destination_catalog}
   */
   readonly destinationCatalog: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#destination_schema Pipeline#destination_schema}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#destination_schema Pipeline#destination_schema}
   */
   readonly destinationSchema: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#destination_table Pipeline#destination_table}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#destination_table Pipeline#destination_table}
   */
   readonly destinationTable?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#source_catalog Pipeline#source_catalog}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#source_catalog Pipeline#source_catalog}
   */
   readonly sourceCatalog?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#source_schema Pipeline#source_schema}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#source_schema Pipeline#source_schema}
   */
   readonly sourceSchema?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#source_table Pipeline#source_table}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#source_table Pipeline#source_table}
   */
   readonly sourceTable: string;
   /**
   * connector_options block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#connector_options Pipeline#connector_options}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#connector_options Pipeline#connector_options}
   */
   readonly connectorOptions?: PipelineIngestionDefinitionObjectsTableConnectorOptions;
   /**
   * table_configuration block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#table_configuration Pipeline#table_configuration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#table_configuration Pipeline#table_configuration}
   */
   readonly tableConfiguration?: PipelineIngestionDefinitionObjectsTableTableConfiguration;
 }
@@ -16937,7 +17234,7 @@ export interface PipelineIngestionDefinitionObjectsTable {
 export function pipelineIngestionDefinitionObjectsTableToTerraform(struct?: PipelineIngestionDefinitionObjectsTableOutputReference | PipelineIngestionDefinitionObjectsTable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     destination_catalog: cdktn.stringToTerraform(struct!.destinationCatalog),
@@ -16955,7 +17252,7 @@ export function pipelineIngestionDefinitionObjectsTableToTerraform(struct?: Pipe
 export function pipelineIngestionDefinitionObjectsTableToHclTerraform(struct?: PipelineIngestionDefinitionObjectsTableOutputReference | PipelineIngestionDefinitionObjectsTable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     destination_catalog: {
@@ -17209,19 +17506,19 @@ export interface PipelineIngestionDefinitionObjects {
   /**
   * report block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#report Pipeline#report}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#report Pipeline#report}
   */
   readonly report?: PipelineIngestionDefinitionObjectsReport;
   /**
   * schema block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#schema Pipeline#schema}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#schema Pipeline#schema}
   */
   readonly schema?: PipelineIngestionDefinitionObjectsSchema;
   /**
   * table block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#table Pipeline#table}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#table Pipeline#table}
   */
   readonly table?: PipelineIngestionDefinitionObjectsTable;
 }
@@ -17229,7 +17526,7 @@ export interface PipelineIngestionDefinitionObjects {
 export function pipelineIngestionDefinitionObjectsToTerraform(struct?: PipelineIngestionDefinitionObjects | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     report: pipelineIngestionDefinitionObjectsReportToTerraform(struct!.report),
@@ -17242,7 +17539,7 @@ export function pipelineIngestionDefinitionObjectsToTerraform(struct?: PipelineI
 export function pipelineIngestionDefinitionObjectsToHclTerraform(struct?: PipelineIngestionDefinitionObjects | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     report: {
@@ -17395,11 +17692,11 @@ export class PipelineIngestionDefinitionObjectsList extends cdktn.ComplexList {
 }
 export interface PipelineIngestionDefinitionSourceConfigurationsCatalogPostgresSlotConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#publication_name Pipeline#publication_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#publication_name Pipeline#publication_name}
   */
   readonly publicationName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#slot_name Pipeline#slot_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#slot_name Pipeline#slot_name}
   */
   readonly slotName?: string;
 }
@@ -17407,7 +17704,7 @@ export interface PipelineIngestionDefinitionSourceConfigurationsCatalogPostgresS
 export function pipelineIngestionDefinitionSourceConfigurationsCatalogPostgresSlotConfigToTerraform(struct?: PipelineIngestionDefinitionSourceConfigurationsCatalogPostgresSlotConfigOutputReference | PipelineIngestionDefinitionSourceConfigurationsCatalogPostgresSlotConfig): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     publication_name: cdktn.stringToTerraform(struct!.publicationName),
@@ -17419,7 +17716,7 @@ export function pipelineIngestionDefinitionSourceConfigurationsCatalogPostgresSl
 export function pipelineIngestionDefinitionSourceConfigurationsCatalogPostgresSlotConfigToHclTerraform(struct?: PipelineIngestionDefinitionSourceConfigurationsCatalogPostgresSlotConfigOutputReference | PipelineIngestionDefinitionSourceConfigurationsCatalogPostgresSlotConfig): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     publication_name: {
@@ -17514,7 +17811,7 @@ export interface PipelineIngestionDefinitionSourceConfigurationsCatalogPostgres 
   /**
   * slot_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#slot_config Pipeline#slot_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#slot_config Pipeline#slot_config}
   */
   readonly slotConfig?: PipelineIngestionDefinitionSourceConfigurationsCatalogPostgresSlotConfig;
 }
@@ -17522,7 +17819,7 @@ export interface PipelineIngestionDefinitionSourceConfigurationsCatalogPostgres 
 export function pipelineIngestionDefinitionSourceConfigurationsCatalogPostgresToTerraform(struct?: PipelineIngestionDefinitionSourceConfigurationsCatalogPostgresOutputReference | PipelineIngestionDefinitionSourceConfigurationsCatalogPostgres): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     slot_config: pipelineIngestionDefinitionSourceConfigurationsCatalogPostgresSlotConfigToTerraform(struct!.slotConfig),
@@ -17533,7 +17830,7 @@ export function pipelineIngestionDefinitionSourceConfigurationsCatalogPostgresTo
 export function pipelineIngestionDefinitionSourceConfigurationsCatalogPostgresToHclTerraform(struct?: PipelineIngestionDefinitionSourceConfigurationsCatalogPostgresOutputReference | PipelineIngestionDefinitionSourceConfigurationsCatalogPostgres): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     slot_config: {
@@ -17598,13 +17895,13 @@ export class PipelineIngestionDefinitionSourceConfigurationsCatalogPostgresOutpu
 }
 export interface PipelineIngestionDefinitionSourceConfigurationsCatalog {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#source_catalog Pipeline#source_catalog}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#source_catalog Pipeline#source_catalog}
   */
   readonly sourceCatalog?: string;
   /**
   * postgres block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#postgres Pipeline#postgres}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#postgres Pipeline#postgres}
   */
   readonly postgres?: PipelineIngestionDefinitionSourceConfigurationsCatalogPostgres;
 }
@@ -17612,7 +17909,7 @@ export interface PipelineIngestionDefinitionSourceConfigurationsCatalog {
 export function pipelineIngestionDefinitionSourceConfigurationsCatalogToTerraform(struct?: PipelineIngestionDefinitionSourceConfigurationsCatalogOutputReference | PipelineIngestionDefinitionSourceConfigurationsCatalog): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     source_catalog: cdktn.stringToTerraform(struct!.sourceCatalog),
@@ -17624,7 +17921,7 @@ export function pipelineIngestionDefinitionSourceConfigurationsCatalogToTerrafor
 export function pipelineIngestionDefinitionSourceConfigurationsCatalogToHclTerraform(struct?: PipelineIngestionDefinitionSourceConfigurationsCatalogOutputReference | PipelineIngestionDefinitionSourceConfigurationsCatalog): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     source_catalog: {
@@ -17717,7 +18014,7 @@ export class PipelineIngestionDefinitionSourceConfigurationsCatalogOutputReferen
 }
 export interface PipelineIngestionDefinitionSourceConfigurationsGoogleAdsConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#manager_account_id Pipeline#manager_account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#manager_account_id Pipeline#manager_account_id}
   */
   readonly managerAccountId?: string;
 }
@@ -17725,7 +18022,7 @@ export interface PipelineIngestionDefinitionSourceConfigurationsGoogleAdsConfig 
 export function pipelineIngestionDefinitionSourceConfigurationsGoogleAdsConfigToTerraform(struct?: PipelineIngestionDefinitionSourceConfigurationsGoogleAdsConfigOutputReference | PipelineIngestionDefinitionSourceConfigurationsGoogleAdsConfig): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     manager_account_id: cdktn.stringToTerraform(struct!.managerAccountId),
@@ -17736,7 +18033,7 @@ export function pipelineIngestionDefinitionSourceConfigurationsGoogleAdsConfigTo
 export function pipelineIngestionDefinitionSourceConfigurationsGoogleAdsConfigToHclTerraform(struct?: PipelineIngestionDefinitionSourceConfigurationsGoogleAdsConfigOutputReference | PipelineIngestionDefinitionSourceConfigurationsGoogleAdsConfig): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     manager_account_id: {
@@ -17803,13 +18100,13 @@ export interface PipelineIngestionDefinitionSourceConfigurations {
   /**
   * catalog block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#catalog Pipeline#catalog}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#catalog Pipeline#catalog}
   */
   readonly catalog?: PipelineIngestionDefinitionSourceConfigurationsCatalog;
   /**
   * google_ads_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#google_ads_config Pipeline#google_ads_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#google_ads_config Pipeline#google_ads_config}
   */
   readonly googleAdsConfig?: PipelineIngestionDefinitionSourceConfigurationsGoogleAdsConfig;
 }
@@ -17817,7 +18114,7 @@ export interface PipelineIngestionDefinitionSourceConfigurations {
 export function pipelineIngestionDefinitionSourceConfigurationsToTerraform(struct?: PipelineIngestionDefinitionSourceConfigurations | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     catalog: pipelineIngestionDefinitionSourceConfigurationsCatalogToTerraform(struct!.catalog),
@@ -17829,7 +18126,7 @@ export function pipelineIngestionDefinitionSourceConfigurationsToTerraform(struc
 export function pipelineIngestionDefinitionSourceConfigurationsToHclTerraform(struct?: PipelineIngestionDefinitionSourceConfigurations | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     catalog: {
@@ -17954,11 +18251,11 @@ export class PipelineIngestionDefinitionSourceConfigurationsList extends cdktn.C
 }
 export interface PipelineIngestionDefinitionTableConfigurationAutoFullRefreshPolicy {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#enabled Pipeline#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#enabled Pipeline#enabled}
   */
   readonly enabled: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#min_interval_hours Pipeline#min_interval_hours}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#min_interval_hours Pipeline#min_interval_hours}
   */
   readonly minIntervalHours?: number;
 }
@@ -17966,7 +18263,7 @@ export interface PipelineIngestionDefinitionTableConfigurationAutoFullRefreshPol
 export function pipelineIngestionDefinitionTableConfigurationAutoFullRefreshPolicyToTerraform(struct?: PipelineIngestionDefinitionTableConfigurationAutoFullRefreshPolicyOutputReference | PipelineIngestionDefinitionTableConfigurationAutoFullRefreshPolicy): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     enabled: cdktn.booleanToTerraform(struct!.enabled),
@@ -17978,7 +18275,7 @@ export function pipelineIngestionDefinitionTableConfigurationAutoFullRefreshPoli
 export function pipelineIngestionDefinitionTableConfigurationAutoFullRefreshPolicyToHclTerraform(struct?: PipelineIngestionDefinitionTableConfigurationAutoFullRefreshPolicyOutputReference | PipelineIngestionDefinitionTableConfigurationAutoFullRefreshPolicy): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     enabled: {
@@ -18068,15 +18365,15 @@ export class PipelineIngestionDefinitionTableConfigurationAutoFullRefreshPolicyO
 }
 export interface PipelineIngestionDefinitionTableConfigurationQueryBasedConnectorConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#cursor_columns Pipeline#cursor_columns}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#cursor_columns Pipeline#cursor_columns}
   */
   readonly cursorColumns?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#deletion_condition Pipeline#deletion_condition}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#deletion_condition Pipeline#deletion_condition}
   */
   readonly deletionCondition?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#hard_deletion_sync_min_interval_in_seconds Pipeline#hard_deletion_sync_min_interval_in_seconds}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#hard_deletion_sync_min_interval_in_seconds Pipeline#hard_deletion_sync_min_interval_in_seconds}
   */
   readonly hardDeletionSyncMinIntervalInSeconds?: number;
 }
@@ -18084,7 +18381,7 @@ export interface PipelineIngestionDefinitionTableConfigurationQueryBasedConnecto
 export function pipelineIngestionDefinitionTableConfigurationQueryBasedConnectorConfigToTerraform(struct?: PipelineIngestionDefinitionTableConfigurationQueryBasedConnectorConfigOutputReference | PipelineIngestionDefinitionTableConfigurationQueryBasedConnectorConfig): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     cursor_columns: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.cursorColumns),
@@ -18097,7 +18394,7 @@ export function pipelineIngestionDefinitionTableConfigurationQueryBasedConnector
 export function pipelineIngestionDefinitionTableConfigurationQueryBasedConnectorConfigToHclTerraform(struct?: PipelineIngestionDefinitionTableConfigurationQueryBasedConnectorConfigOutputReference | PipelineIngestionDefinitionTableConfigurationQueryBasedConnectorConfig): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     cursor_columns: {
@@ -18218,11 +18515,11 @@ export class PipelineIngestionDefinitionTableConfigurationQueryBasedConnectorCon
 }
 export interface PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersReportParameters {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#key Pipeline#key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#key Pipeline#key}
   */
   readonly key?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#value Pipeline#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#value Pipeline#value}
   */
   readonly value?: string;
 }
@@ -18230,7 +18527,7 @@ export interface PipelineIngestionDefinitionTableConfigurationWorkdayReportParam
 export function pipelineIngestionDefinitionTableConfigurationWorkdayReportParametersReportParametersToTerraform(struct?: PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersReportParameters | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     key: cdktn.stringToTerraform(struct!.key),
@@ -18242,7 +18539,7 @@ export function pipelineIngestionDefinitionTableConfigurationWorkdayReportParame
 export function pipelineIngestionDefinitionTableConfigurationWorkdayReportParametersReportParametersToHclTerraform(struct?: PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersReportParameters | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     key: {
@@ -18367,17 +18664,17 @@ export class PipelineIngestionDefinitionTableConfigurationWorkdayReportParameter
 }
 export interface PipelineIngestionDefinitionTableConfigurationWorkdayReportParameters {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#incremental Pipeline#incremental}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#incremental Pipeline#incremental}
   */
   readonly incremental?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#parameters Pipeline#parameters}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#parameters Pipeline#parameters}
   */
   readonly parameters?: { [key: string]: string };
   /**
   * report_parameters block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#report_parameters Pipeline#report_parameters}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#report_parameters Pipeline#report_parameters}
   */
   readonly reportParameters?: PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersReportParameters[] | cdktn.IResolvable;
 }
@@ -18385,7 +18682,7 @@ export interface PipelineIngestionDefinitionTableConfigurationWorkdayReportParam
 export function pipelineIngestionDefinitionTableConfigurationWorkdayReportParametersToTerraform(struct?: PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersOutputReference | PipelineIngestionDefinitionTableConfigurationWorkdayReportParameters): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     incremental: cdktn.booleanToTerraform(struct!.incremental),
@@ -18398,7 +18695,7 @@ export function pipelineIngestionDefinitionTableConfigurationWorkdayReportParame
 export function pipelineIngestionDefinitionTableConfigurationWorkdayReportParametersToHclTerraform(struct?: PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersOutputReference | PipelineIngestionDefinitionTableConfigurationWorkdayReportParameters): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     incremental: {
@@ -18519,49 +18816,61 @@ export class PipelineIngestionDefinitionTableConfigurationWorkdayReportParameter
 }
 export interface PipelineIngestionDefinitionTableConfiguration {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#exclude_columns Pipeline#exclude_columns}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#clustering_columns Pipeline#clustering_columns}
+  */
+  readonly clusteringColumns?: string[];
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#enable_auto_clustering Pipeline#enable_auto_clustering}
+  */
+  readonly enableAutoClustering?: boolean | cdktn.IResolvable;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#exclude_columns Pipeline#exclude_columns}
   */
   readonly excludeColumns?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#include_columns Pipeline#include_columns}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#include_columns Pipeline#include_columns}
   */
   readonly includeColumns?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#primary_keys Pipeline#primary_keys}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#primary_keys Pipeline#primary_keys}
   */
   readonly primaryKeys?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#row_filter Pipeline#row_filter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#row_filter Pipeline#row_filter}
   */
   readonly rowFilter?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#salesforce_include_formula_fields Pipeline#salesforce_include_formula_fields}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#salesforce_include_formula_fields Pipeline#salesforce_include_formula_fields}
   */
   readonly salesforceIncludeFormulaFields?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#scd_type Pipeline#scd_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#scd_type Pipeline#scd_type}
   */
   readonly scdType?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#sequence_by Pipeline#sequence_by}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#sequence_by Pipeline#sequence_by}
   */
   readonly sequenceBy?: string[];
   /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#table_properties Pipeline#table_properties}
+  */
+  readonly tableProperties?: { [key: string]: string };
+  /**
   * auto_full_refresh_policy block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#auto_full_refresh_policy Pipeline#auto_full_refresh_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#auto_full_refresh_policy Pipeline#auto_full_refresh_policy}
   */
   readonly autoFullRefreshPolicy?: PipelineIngestionDefinitionTableConfigurationAutoFullRefreshPolicy;
   /**
   * query_based_connector_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#query_based_connector_config Pipeline#query_based_connector_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#query_based_connector_config Pipeline#query_based_connector_config}
   */
   readonly queryBasedConnectorConfig?: PipelineIngestionDefinitionTableConfigurationQueryBasedConnectorConfig;
   /**
   * workday_report_parameters block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#workday_report_parameters Pipeline#workday_report_parameters}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#workday_report_parameters Pipeline#workday_report_parameters}
   */
   readonly workdayReportParameters?: PipelineIngestionDefinitionTableConfigurationWorkdayReportParameters;
 }
@@ -18569,9 +18878,11 @@ export interface PipelineIngestionDefinitionTableConfiguration {
 export function pipelineIngestionDefinitionTableConfigurationToTerraform(struct?: PipelineIngestionDefinitionTableConfigurationOutputReference | PipelineIngestionDefinitionTableConfiguration): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
+    clustering_columns: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.clusteringColumns),
+    enable_auto_clustering: cdktn.booleanToTerraform(struct!.enableAutoClustering),
     exclude_columns: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.excludeColumns),
     include_columns: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.includeColumns),
     primary_keys: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.primaryKeys),
@@ -18579,6 +18890,7 @@ export function pipelineIngestionDefinitionTableConfigurationToTerraform(struct?
     salesforce_include_formula_fields: cdktn.booleanToTerraform(struct!.salesforceIncludeFormulaFields),
     scd_type: cdktn.stringToTerraform(struct!.scdType),
     sequence_by: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.sequenceBy),
+    table_properties: cdktn.hashMapper(cdktn.stringToTerraform)(struct!.tableProperties),
     auto_full_refresh_policy: pipelineIngestionDefinitionTableConfigurationAutoFullRefreshPolicyToTerraform(struct!.autoFullRefreshPolicy),
     query_based_connector_config: pipelineIngestionDefinitionTableConfigurationQueryBasedConnectorConfigToTerraform(struct!.queryBasedConnectorConfig),
     workday_report_parameters: pipelineIngestionDefinitionTableConfigurationWorkdayReportParametersToTerraform(struct!.workdayReportParameters),
@@ -18589,9 +18901,21 @@ export function pipelineIngestionDefinitionTableConfigurationToTerraform(struct?
 export function pipelineIngestionDefinitionTableConfigurationToHclTerraform(struct?: PipelineIngestionDefinitionTableConfigurationOutputReference | PipelineIngestionDefinitionTableConfiguration): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
+    clustering_columns: {
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.clusteringColumns),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+    enable_auto_clustering: {
+      value: cdktn.booleanToHclTerraform(struct!.enableAutoClustering),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
     exclude_columns: {
       value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.excludeColumns),
       isBlock: false,
@@ -18634,6 +18958,12 @@ export function pipelineIngestionDefinitionTableConfigurationToHclTerraform(stru
       type: "list",
       storageClassType: "stringList",
     },
+    table_properties: {
+      value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(struct!.tableProperties),
+      isBlock: false,
+      type: "map",
+      storageClassType: "stringMap",
+    },
     auto_full_refresh_policy: {
       value: pipelineIngestionDefinitionTableConfigurationAutoFullRefreshPolicyToHclTerraform(struct!.autoFullRefreshPolicy),
       isBlock: true,
@@ -18672,6 +19002,14 @@ export class PipelineIngestionDefinitionTableConfigurationOutputReference extend
   public get internalValue(): PipelineIngestionDefinitionTableConfiguration | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
+    if (this._clusteringColumns !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.clusteringColumns = this._clusteringColumns;
+    }
+    if (this._enableAutoClustering !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.enableAutoClustering = this._enableAutoClustering;
+    }
     if (this._excludeColumns !== undefined) {
       hasAnyValues = true;
       internalValueResult.excludeColumns = this._excludeColumns;
@@ -18700,6 +19038,10 @@ export class PipelineIngestionDefinitionTableConfigurationOutputReference extend
       hasAnyValues = true;
       internalValueResult.sequenceBy = this._sequenceBy;
     }
+    if (this._tableProperties !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.tableProperties = this._tableProperties;
+    }
     if (this._autoFullRefreshPolicy?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.autoFullRefreshPolicy = this._autoFullRefreshPolicy?.internalValue;
@@ -18718,6 +19060,8 @@ export class PipelineIngestionDefinitionTableConfigurationOutputReference extend
   public set internalValue(value: PipelineIngestionDefinitionTableConfiguration | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
+      this._clusteringColumns = undefined;
+      this._enableAutoClustering = undefined;
       this._excludeColumns = undefined;
       this._includeColumns = undefined;
       this._primaryKeys = undefined;
@@ -18725,12 +19069,15 @@ export class PipelineIngestionDefinitionTableConfigurationOutputReference extend
       this._salesforceIncludeFormulaFields = undefined;
       this._scdType = undefined;
       this._sequenceBy = undefined;
+      this._tableProperties = undefined;
       this._autoFullRefreshPolicy.internalValue = undefined;
       this._queryBasedConnectorConfig.internalValue = undefined;
       this._workdayReportParameters.internalValue = undefined;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
+      this._clusteringColumns = value.clusteringColumns;
+      this._enableAutoClustering = value.enableAutoClustering;
       this._excludeColumns = value.excludeColumns;
       this._includeColumns = value.includeColumns;
       this._primaryKeys = value.primaryKeys;
@@ -18738,10 +19085,43 @@ export class PipelineIngestionDefinitionTableConfigurationOutputReference extend
       this._salesforceIncludeFormulaFields = value.salesforceIncludeFormulaFields;
       this._scdType = value.scdType;
       this._sequenceBy = value.sequenceBy;
+      this._tableProperties = value.tableProperties;
       this._autoFullRefreshPolicy.internalValue = value.autoFullRefreshPolicy;
       this._queryBasedConnectorConfig.internalValue = value.queryBasedConnectorConfig;
       this._workdayReportParameters.internalValue = value.workdayReportParameters;
     }
+  }
+
+  // clustering_columns - computed: false, optional: true, required: false
+  private _clusteringColumns?: string[]; 
+  public get clusteringColumns() {
+    return this.getListAttribute('clustering_columns');
+  }
+  public set clusteringColumns(value: string[]) {
+    this._clusteringColumns = value;
+  }
+  public resetClusteringColumns() {
+    this._clusteringColumns = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get clusteringColumnsInput() {
+    return this._clusteringColumns;
+  }
+
+  // enable_auto_clustering - computed: false, optional: true, required: false
+  private _enableAutoClustering?: boolean | cdktn.IResolvable; 
+  public get enableAutoClustering() {
+    return this.getBooleanAttribute('enable_auto_clustering');
+  }
+  public set enableAutoClustering(value: boolean | cdktn.IResolvable) {
+    this._enableAutoClustering = value;
+  }
+  public resetEnableAutoClustering() {
+    this._enableAutoClustering = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get enableAutoClusteringInput() {
+    return this._enableAutoClustering;
   }
 
   // exclude_columns - computed: false, optional: true, required: false
@@ -18856,6 +19236,22 @@ export class PipelineIngestionDefinitionTableConfigurationOutputReference extend
     return this._sequenceBy;
   }
 
+  // table_properties - computed: false, optional: true, required: false
+  private _tableProperties?: { [key: string]: string }; 
+  public get tableProperties() {
+    return this.getStringMapAttribute('table_properties');
+  }
+  public set tableProperties(value: { [key: string]: string }) {
+    this._tableProperties = value;
+  }
+  public resetTableProperties() {
+    this._tableProperties = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tablePropertiesInput() {
+    return this._tableProperties;
+  }
+
   // auto_full_refresh_policy - computed: false, optional: true, required: false
   private _autoFullRefreshPolicy = new PipelineIngestionDefinitionTableConfigurationAutoFullRefreshPolicyOutputReference(this, "auto_full_refresh_policy");
   public get autoFullRefreshPolicy() {
@@ -18906,57 +19302,57 @@ export class PipelineIngestionDefinitionTableConfigurationOutputReference extend
 }
 export interface PipelineIngestionDefinition {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#connection_name Pipeline#connection_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#connection_name Pipeline#connection_name}
   */
   readonly connectionName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#connector_type Pipeline#connector_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#connector_type Pipeline#connector_type}
   */
   readonly connectorType?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#ingest_from_uc_foreign_catalog Pipeline#ingest_from_uc_foreign_catalog}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#ingest_from_uc_foreign_catalog Pipeline#ingest_from_uc_foreign_catalog}
   */
   readonly ingestFromUcForeignCatalog?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#ingestion_gateway_id Pipeline#ingestion_gateway_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#ingestion_gateway_id Pipeline#ingestion_gateway_id}
   */
   readonly ingestionGatewayId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#netsuite_jar_path Pipeline#netsuite_jar_path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#netsuite_jar_path Pipeline#netsuite_jar_path}
   */
   readonly netsuiteJarPath?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#source_type Pipeline#source_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#source_type Pipeline#source_type}
   */
   readonly sourceType?: string;
   /**
   * data_staging_options block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#data_staging_options Pipeline#data_staging_options}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#data_staging_options Pipeline#data_staging_options}
   */
   readonly dataStagingOptions?: PipelineIngestionDefinitionDataStagingOptions;
   /**
   * full_refresh_window block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#full_refresh_window Pipeline#full_refresh_window}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#full_refresh_window Pipeline#full_refresh_window}
   */
   readonly fullRefreshWindow?: PipelineIngestionDefinitionFullRefreshWindow;
   /**
   * objects block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#objects Pipeline#objects}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#objects Pipeline#objects}
   */
   readonly objects?: PipelineIngestionDefinitionObjects[] | cdktn.IResolvable;
   /**
   * source_configurations block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#source_configurations Pipeline#source_configurations}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#source_configurations Pipeline#source_configurations}
   */
   readonly sourceConfigurations?: PipelineIngestionDefinitionSourceConfigurations[] | cdktn.IResolvable;
   /**
   * table_configuration block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#table_configuration Pipeline#table_configuration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#table_configuration Pipeline#table_configuration}
   */
   readonly tableConfiguration?: PipelineIngestionDefinitionTableConfiguration;
 }
@@ -18964,7 +19360,7 @@ export interface PipelineIngestionDefinition {
 export function pipelineIngestionDefinitionToTerraform(struct?: PipelineIngestionDefinitionOutputReference | PipelineIngestionDefinition): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     connection_name: cdktn.stringToTerraform(struct!.connectionName),
@@ -18985,7 +19381,7 @@ export function pipelineIngestionDefinitionToTerraform(struct?: PipelineIngestio
 export function pipelineIngestionDefinitionToHclTerraform(struct?: PipelineIngestionDefinitionOutputReference | PipelineIngestionDefinition): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     connection_name: {
@@ -19330,15 +19726,15 @@ export class PipelineIngestionDefinitionOutputReference extends cdktn.ComplexObj
 }
 export interface PipelineLatestUpdates {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#creation_time Pipeline#creation_time}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#creation_time Pipeline#creation_time}
   */
   readonly creationTime?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#state Pipeline#state}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#state Pipeline#state}
   */
   readonly state?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#update_id Pipeline#update_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#update_id Pipeline#update_id}
   */
   readonly updateId?: string;
 }
@@ -19346,7 +19742,7 @@ export interface PipelineLatestUpdates {
 export function pipelineLatestUpdatesToTerraform(struct?: PipelineLatestUpdates | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     creation_time: cdktn.stringToTerraform(struct!.creationTime),
@@ -19359,7 +19755,7 @@ export function pipelineLatestUpdatesToTerraform(struct?: PipelineLatestUpdates 
 export function pipelineLatestUpdatesToHclTerraform(struct?: PipelineLatestUpdates | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     creation_time: {
@@ -19512,7 +19908,7 @@ export class PipelineLatestUpdatesList extends cdktn.ComplexList {
 }
 export interface PipelineLibraryFile {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#path Pipeline#path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#path Pipeline#path}
   */
   readonly path: string;
 }
@@ -19520,7 +19916,7 @@ export interface PipelineLibraryFile {
 export function pipelineLibraryFileToTerraform(struct?: PipelineLibraryFileOutputReference | PipelineLibraryFile): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     path: cdktn.stringToTerraform(struct!.path),
@@ -19531,7 +19927,7 @@ export function pipelineLibraryFileToTerraform(struct?: PipelineLibraryFileOutpu
 export function pipelineLibraryFileToHclTerraform(struct?: PipelineLibraryFileOutputReference | PipelineLibraryFile): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     path: {
@@ -19593,7 +19989,7 @@ export class PipelineLibraryFileOutputReference extends cdktn.ComplexObject {
 }
 export interface PipelineLibraryGlob {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#include Pipeline#include}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#include Pipeline#include}
   */
   readonly include: string;
 }
@@ -19601,7 +19997,7 @@ export interface PipelineLibraryGlob {
 export function pipelineLibraryGlobToTerraform(struct?: PipelineLibraryGlobOutputReference | PipelineLibraryGlob): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     include: cdktn.stringToTerraform(struct!.include),
@@ -19612,7 +20008,7 @@ export function pipelineLibraryGlobToTerraform(struct?: PipelineLibraryGlobOutpu
 export function pipelineLibraryGlobToHclTerraform(struct?: PipelineLibraryGlobOutputReference | PipelineLibraryGlob): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     include: {
@@ -19674,15 +20070,15 @@ export class PipelineLibraryGlobOutputReference extends cdktn.ComplexObject {
 }
 export interface PipelineLibraryMaven {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#coordinates Pipeline#coordinates}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#coordinates Pipeline#coordinates}
   */
   readonly coordinates: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#exclusions Pipeline#exclusions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#exclusions Pipeline#exclusions}
   */
   readonly exclusions?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#repo Pipeline#repo}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#repo Pipeline#repo}
   */
   readonly repo?: string;
 }
@@ -19690,7 +20086,7 @@ export interface PipelineLibraryMaven {
 export function pipelineLibraryMavenToTerraform(struct?: PipelineLibraryMavenOutputReference | PipelineLibraryMaven): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     coordinates: cdktn.stringToTerraform(struct!.coordinates),
@@ -19703,7 +20099,7 @@ export function pipelineLibraryMavenToTerraform(struct?: PipelineLibraryMavenOut
 export function pipelineLibraryMavenToHclTerraform(struct?: PipelineLibraryMavenOutputReference | PipelineLibraryMaven): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     coordinates: {
@@ -19821,7 +20217,7 @@ export class PipelineLibraryMavenOutputReference extends cdktn.ComplexObject {
 }
 export interface PipelineLibraryNotebook {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#path Pipeline#path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#path Pipeline#path}
   */
   readonly path: string;
 }
@@ -19829,7 +20225,7 @@ export interface PipelineLibraryNotebook {
 export function pipelineLibraryNotebookToTerraform(struct?: PipelineLibraryNotebookOutputReference | PipelineLibraryNotebook): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     path: cdktn.stringToTerraform(struct!.path),
@@ -19840,7 +20236,7 @@ export function pipelineLibraryNotebookToTerraform(struct?: PipelineLibraryNoteb
 export function pipelineLibraryNotebookToHclTerraform(struct?: PipelineLibraryNotebookOutputReference | PipelineLibraryNotebook): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     path: {
@@ -19902,35 +20298,35 @@ export class PipelineLibraryNotebookOutputReference extends cdktn.ComplexObject 
 }
 export interface PipelineLibrary {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#jar Pipeline#jar}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#jar Pipeline#jar}
   */
   readonly jar?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#whl Pipeline#whl}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#whl Pipeline#whl}
   */
   readonly whl?: string;
   /**
   * file block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#file Pipeline#file}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#file Pipeline#file}
   */
   readonly file?: PipelineLibraryFile;
   /**
   * glob block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#glob Pipeline#glob}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#glob Pipeline#glob}
   */
   readonly glob?: PipelineLibraryGlob;
   /**
   * maven block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#maven Pipeline#maven}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#maven Pipeline#maven}
   */
   readonly maven?: PipelineLibraryMaven;
   /**
   * notebook block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#notebook Pipeline#notebook}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#notebook Pipeline#notebook}
   */
   readonly notebook?: PipelineLibraryNotebook;
 }
@@ -19938,7 +20334,7 @@ export interface PipelineLibrary {
 export function pipelineLibraryToTerraform(struct?: PipelineLibrary | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     jar: cdktn.stringToTerraform(struct!.jar),
@@ -19954,7 +20350,7 @@ export function pipelineLibraryToTerraform(struct?: PipelineLibrary | cdktn.IRes
 export function pipelineLibraryToHclTerraform(struct?: PipelineLibrary | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     jar: {
@@ -20191,11 +20587,11 @@ export class PipelineLibraryList extends cdktn.ComplexList {
 }
 export interface PipelineNotification {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#alerts Pipeline#alerts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#alerts Pipeline#alerts}
   */
   readonly alerts?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#email_recipients Pipeline#email_recipients}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#email_recipients Pipeline#email_recipients}
   */
   readonly emailRecipients?: string[];
 }
@@ -20203,7 +20599,7 @@ export interface PipelineNotification {
 export function pipelineNotificationToTerraform(struct?: PipelineNotification | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     alerts: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.alerts),
@@ -20215,7 +20611,7 @@ export function pipelineNotificationToTerraform(struct?: PipelineNotification | 
 export function pipelineNotificationToHclTerraform(struct?: PipelineNotification | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     alerts: {
@@ -20340,7 +20736,7 @@ export class PipelineNotificationList extends cdktn.ComplexList {
 }
 export interface PipelineProviderConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#workspace_id Pipeline#workspace_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#workspace_id Pipeline#workspace_id}
   */
   readonly workspaceId?: string;
 }
@@ -20348,7 +20744,7 @@ export interface PipelineProviderConfig {
 export function pipelineProviderConfigToTerraform(struct?: PipelineProviderConfigOutputReference | PipelineProviderConfig): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     workspace_id: cdktn.stringToTerraform(struct!.workspaceId),
@@ -20359,7 +20755,7 @@ export function pipelineProviderConfigToTerraform(struct?: PipelineProviderConfi
 export function pipelineProviderConfigToHclTerraform(struct?: PipelineProviderConfigOutputReference | PipelineProviderConfig): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     workspace_id: {
@@ -20424,15 +20820,15 @@ export class PipelineProviderConfigOutputReference extends cdktn.ComplexObject {
 }
 export interface PipelineRestartWindow {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#days_of_week Pipeline#days_of_week}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#days_of_week Pipeline#days_of_week}
   */
   readonly daysOfWeek?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#start_hour Pipeline#start_hour}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#start_hour Pipeline#start_hour}
   */
   readonly startHour: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#time_zone_id Pipeline#time_zone_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#time_zone_id Pipeline#time_zone_id}
   */
   readonly timeZoneId?: string;
 }
@@ -20440,7 +20836,7 @@ export interface PipelineRestartWindow {
 export function pipelineRestartWindowToTerraform(struct?: PipelineRestartWindowOutputReference | PipelineRestartWindow): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     days_of_week: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.daysOfWeek),
@@ -20453,7 +20849,7 @@ export function pipelineRestartWindowToTerraform(struct?: PipelineRestartWindowO
 export function pipelineRestartWindowToHclTerraform(struct?: PipelineRestartWindowOutputReference | PipelineRestartWindow): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     days_of_week: {
@@ -20571,11 +20967,11 @@ export class PipelineRestartWindowOutputReference extends cdktn.ComplexObject {
 }
 export interface PipelineRunAs {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#service_principal_name Pipeline#service_principal_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#service_principal_name Pipeline#service_principal_name}
   */
   readonly servicePrincipalName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#user_name Pipeline#user_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#user_name Pipeline#user_name}
   */
   readonly userName?: string;
 }
@@ -20583,7 +20979,7 @@ export interface PipelineRunAs {
 export function pipelineRunAsToTerraform(struct?: PipelineRunAsOutputReference | PipelineRunAs): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     service_principal_name: cdktn.stringToTerraform(struct!.servicePrincipalName),
@@ -20595,7 +20991,7 @@ export function pipelineRunAsToTerraform(struct?: PipelineRunAsOutputReference |
 export function pipelineRunAsToHclTerraform(struct?: PipelineRunAsOutputReference | PipelineRunAs): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     service_principal_name: {
@@ -20688,7 +21084,7 @@ export class PipelineRunAsOutputReference extends cdktn.ComplexObject {
 }
 export interface PipelineTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#default Pipeline#default}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#default Pipeline#default}
   */
   readonly default?: string;
 }
@@ -20696,7 +21092,7 @@ export interface PipelineTimeouts {
 export function pipelineTimeoutsToTerraform(struct?: PipelineTimeouts | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     default: cdktn.stringToTerraform(struct!.default),
@@ -20707,7 +21103,7 @@ export function pipelineTimeoutsToTerraform(struct?: PipelineTimeouts | cdktn.IR
 export function pipelineTimeoutsToHclTerraform(struct?: PipelineTimeouts | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     default: {
@@ -20782,11 +21178,11 @@ export class PipelineTimeoutsOutputReference extends cdktn.ComplexObject {
 }
 export interface PipelineTriggerCron {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#quartz_cron_schedule Pipeline#quartz_cron_schedule}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#quartz_cron_schedule Pipeline#quartz_cron_schedule}
   */
   readonly quartzCronSchedule?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#timezone_id Pipeline#timezone_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#timezone_id Pipeline#timezone_id}
   */
   readonly timezoneId?: string;
 }
@@ -20794,7 +21190,7 @@ export interface PipelineTriggerCron {
 export function pipelineTriggerCronToTerraform(struct?: PipelineTriggerCronOutputReference | PipelineTriggerCron): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     quartz_cron_schedule: cdktn.stringToTerraform(struct!.quartzCronSchedule),
@@ -20806,7 +21202,7 @@ export function pipelineTriggerCronToTerraform(struct?: PipelineTriggerCronOutpu
 export function pipelineTriggerCronToHclTerraform(struct?: PipelineTriggerCronOutputReference | PipelineTriggerCron): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     quartz_cron_schedule: {
@@ -20903,7 +21299,7 @@ export interface PipelineTriggerManual {
 export function pipelineTriggerManualToTerraform(struct?: PipelineTriggerManualOutputReference | PipelineTriggerManual): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -20913,7 +21309,7 @@ export function pipelineTriggerManualToTerraform(struct?: PipelineTriggerManualO
 export function pipelineTriggerManualToHclTerraform(struct?: PipelineTriggerManualOutputReference | PipelineTriggerManual): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -20950,13 +21346,13 @@ export interface PipelineTrigger {
   /**
   * cron block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#cron Pipeline#cron}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#cron Pipeline#cron}
   */
   readonly cron?: PipelineTriggerCron;
   /**
   * manual block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#manual Pipeline#manual}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#manual Pipeline#manual}
   */
   readonly manual?: PipelineTriggerManual;
 }
@@ -20964,7 +21360,7 @@ export interface PipelineTrigger {
 export function pipelineTriggerToTerraform(struct?: PipelineTriggerOutputReference | PipelineTrigger): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     cron: pipelineTriggerCronToTerraform(struct!.cron),
@@ -20976,7 +21372,7 @@ export function pipelineTriggerToTerraform(struct?: PipelineTriggerOutputReferen
 export function pipelineTriggerToHclTerraform(struct?: PipelineTriggerOutputReference | PipelineTrigger): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     cron: {
@@ -21069,7 +21465,7 @@ export class PipelineTriggerOutputReference extends cdktn.ComplexObject {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline databricks_pipeline}
+* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline databricks_pipeline}
 */
 export class Pipeline extends cdktn.TerraformResource {
 
@@ -21085,7 +21481,7 @@ export class Pipeline extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a Pipeline resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the Pipeline to import
-  * @param importFromId The id of the existing Pipeline that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing Pipeline that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the Pipeline to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -21097,7 +21493,7 @@ export class Pipeline extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/pipeline databricks_pipeline} Resource
+  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/pipeline databricks_pipeline} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -21108,7 +21504,7 @@ export class Pipeline extends cdktn.TerraformResource {
       terraformResourceType: 'databricks_pipeline',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '1.117.0',
+        providerVersion: '1.118.0',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,

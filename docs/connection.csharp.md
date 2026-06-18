@@ -4,7 +4,7 @@
 
 ### Connection <a name="Connection" id="@cdktn/provider-databricks.connection.Connection"></a>
 
-Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/connection databricks_connection}.
+Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/connection databricks_connection}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.connection.Connection.Initializer"></a>
 
@@ -74,9 +74,11 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktn/provider-databricks.connection.Connection.moveFromId">MoveFromId</a></code> | Move the resource corresponding to "id" to this resource. |
 | <code><a href="#@cdktn/provider-databricks.connection.Connection.moveTo">MoveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktn/provider-databricks.connection.Connection.moveToId">MoveToId</a></code> | Moves this resource to the resource corresponding to "id". |
+| <code><a href="#@cdktn/provider-databricks.connection.Connection.putEnvironmentSettings">PutEnvironmentSettings</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.connection.Connection.putProviderConfig">PutProviderConfig</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.connection.Connection.resetComment">ResetComment</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.connection.Connection.resetConnectionType">ResetConnectionType</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.connection.Connection.resetEnvironmentSettings">ResetEnvironmentSettings</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.connection.Connection.resetId">ResetId</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.connection.Connection.resetName">ResetName</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.connection.Connection.resetOptions">ResetOptions</a></code> | *No description.* |
@@ -396,6 +398,18 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 
 ---
 
+##### `PutEnvironmentSettings` <a name="PutEnvironmentSettings" id="@cdktn/provider-databricks.connection.Connection.putEnvironmentSettings"></a>
+
+```csharp
+private void PutEnvironmentSettings(ConnectionEnvironmentSettings Value)
+```
+
+###### `Value`<sup>Required</sup> <a name="Value" id="@cdktn/provider-databricks.connection.Connection.putEnvironmentSettings.parameter.value"></a>
+
+- *Type:* <a href="#@cdktn/provider-databricks.connection.ConnectionEnvironmentSettings">ConnectionEnvironmentSettings</a>
+
+---
+
 ##### `PutProviderConfig` <a name="PutProviderConfig" id="@cdktn/provider-databricks.connection.Connection.putProviderConfig"></a>
 
 ```csharp
@@ -418,6 +432,12 @@ private void ResetComment()
 
 ```csharp
 private void ResetConnectionType()
+```
+
+##### `ResetEnvironmentSettings` <a name="ResetEnvironmentSettings" id="@cdktn/provider-databricks.connection.Connection.resetEnvironmentSettings"></a>
+
+```csharp
+private void ResetEnvironmentSettings()
 ```
 
 ##### `ResetId` <a name="ResetId" id="@cdktn/provider-databricks.connection.Connection.resetId"></a>
@@ -565,7 +585,7 @@ The construct id used in the generated config for the Connection to import.
 
 The id of the existing Connection that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/connection#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/connection#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -599,6 +619,7 @@ Refer to the {@link https://registry.terraform.io/providers/databricks/databrick
 | <code><a href="#@cdktn/provider-databricks.connection.Connection.property.createdAt">CreatedAt</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.connection.Connection.property.createdBy">CreatedBy</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.connection.Connection.property.credentialType">CredentialType</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.connection.Connection.property.environmentSettings">EnvironmentSettings</a></code> | <code><a href="#@cdktn/provider-databricks.connection.ConnectionEnvironmentSettingsOutputReference">ConnectionEnvironmentSettingsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.connection.Connection.property.fullName">FullName</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.connection.Connection.property.metastoreId">MetastoreId</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.connection.Connection.property.providerConfig">ProviderConfig</a></code> | <code><a href="#@cdktn/provider-databricks.connection.ConnectionProviderConfigOutputReference">ConnectionProviderConfigOutputReference</a></code> | *No description.* |
@@ -609,6 +630,7 @@ Refer to the {@link https://registry.terraform.io/providers/databricks/databrick
 | <code><a href="#@cdktn/provider-databricks.connection.Connection.property.url">Url</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.connection.Connection.property.commentInput">CommentInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.connection.Connection.property.connectionTypeInput">ConnectionTypeInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.connection.Connection.property.environmentSettingsInput">EnvironmentSettingsInput</a></code> | <code><a href="#@cdktn/provider-databricks.connection.ConnectionEnvironmentSettings">ConnectionEnvironmentSettings</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.connection.Connection.property.idInput">IdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.connection.Connection.property.nameInput">NameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.connection.Connection.property.optionsInput">OptionsInput</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | *No description.* |
@@ -809,6 +831,16 @@ public string CredentialType { get; }
 
 ---
 
+##### `EnvironmentSettings`<sup>Required</sup> <a name="EnvironmentSettings" id="@cdktn/provider-databricks.connection.Connection.property.environmentSettings"></a>
+
+```csharp
+public ConnectionEnvironmentSettingsOutputReference EnvironmentSettings { get; }
+```
+
+- *Type:* <a href="#@cdktn/provider-databricks.connection.ConnectionEnvironmentSettingsOutputReference">ConnectionEnvironmentSettingsOutputReference</a>
+
+---
+
 ##### `FullName`<sup>Required</sup> <a name="FullName" id="@cdktn/provider-databricks.connection.Connection.property.fullName"></a>
 
 ```csharp
@@ -906,6 +938,16 @@ public string ConnectionTypeInput { get; }
 ```
 
 - *Type:* string
+
+---
+
+##### `EnvironmentSettingsInput`<sup>Optional</sup> <a name="EnvironmentSettingsInput" id="@cdktn/provider-databricks.connection.Connection.property.environmentSettingsInput"></a>
+
+```csharp
+public ConnectionEnvironmentSettings EnvironmentSettingsInput { get; }
+```
+
+- *Type:* <a href="#@cdktn/provider-databricks.connection.ConnectionEnvironmentSettings">ConnectionEnvironmentSettings</a>
 
 ---
 
@@ -1096,6 +1138,7 @@ new ConnectionConfig {
     (FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner)[] Provisioners = null,
     string Comment = null,
     string ConnectionType = null,
+    ConnectionEnvironmentSettings EnvironmentSettings = null,
     string Id = null,
     string Name = null,
     System.Collections.Generic.IDictionary<string, string> Options = null,
@@ -1117,15 +1160,16 @@ new ConnectionConfig {
 | <code><a href="#@cdktn/provider-databricks.connection.ConnectionConfig.property.lifecycle">Lifecycle</a></code> | <code>Io.Cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.connection.ConnectionConfig.property.provider">Provider</a></code> | <code>Io.Cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.connection.ConnectionConfig.property.provisioners">Provisioners</a></code> | <code>Io.Cdktn.FileProvisioner\|Io.Cdktn.LocalExecProvisioner\|Io.Cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-databricks.connection.ConnectionConfig.property.comment">Comment</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/connection#comment Connection#comment}. |
-| <code><a href="#@cdktn/provider-databricks.connection.ConnectionConfig.property.connectionType">ConnectionType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/connection#connection_type Connection#connection_type}. |
-| <code><a href="#@cdktn/provider-databricks.connection.ConnectionConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/connection#id Connection#id}. |
-| <code><a href="#@cdktn/provider-databricks.connection.ConnectionConfig.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/connection#name Connection#name}. |
-| <code><a href="#@cdktn/provider-databricks.connection.ConnectionConfig.property.options">Options</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/connection#options Connection#options}. |
-| <code><a href="#@cdktn/provider-databricks.connection.ConnectionConfig.property.owner">Owner</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/connection#owner Connection#owner}. |
-| <code><a href="#@cdktn/provider-databricks.connection.ConnectionConfig.property.properties">Properties</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/connection#properties Connection#properties}. |
+| <code><a href="#@cdktn/provider-databricks.connection.ConnectionConfig.property.comment">Comment</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/connection#comment Connection#comment}. |
+| <code><a href="#@cdktn/provider-databricks.connection.ConnectionConfig.property.connectionType">ConnectionType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/connection#connection_type Connection#connection_type}. |
+| <code><a href="#@cdktn/provider-databricks.connection.ConnectionConfig.property.environmentSettings">EnvironmentSettings</a></code> | <code><a href="#@cdktn/provider-databricks.connection.ConnectionEnvironmentSettings">ConnectionEnvironmentSettings</a></code> | environment_settings block. |
+| <code><a href="#@cdktn/provider-databricks.connection.ConnectionConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/connection#id Connection#id}. |
+| <code><a href="#@cdktn/provider-databricks.connection.ConnectionConfig.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/connection#name Connection#name}. |
+| <code><a href="#@cdktn/provider-databricks.connection.ConnectionConfig.property.options">Options</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/connection#options Connection#options}. |
+| <code><a href="#@cdktn/provider-databricks.connection.ConnectionConfig.property.owner">Owner</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/connection#owner Connection#owner}. |
+| <code><a href="#@cdktn/provider-databricks.connection.ConnectionConfig.property.properties">Properties</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/connection#properties Connection#properties}. |
 | <code><a href="#@cdktn/provider-databricks.connection.ConnectionConfig.property.providerConfig">ProviderConfig</a></code> | <code><a href="#@cdktn/provider-databricks.connection.ConnectionProviderConfig">ConnectionProviderConfig</a></code> | provider_config block. |
-| <code><a href="#@cdktn/provider-databricks.connection.ConnectionConfig.property.readOnly">ReadOnly</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/connection#read_only Connection#read_only}. |
+| <code><a href="#@cdktn/provider-databricks.connection.ConnectionConfig.property.readOnly">ReadOnly</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/connection#read_only Connection#read_only}. |
 
 ---
 
@@ -1207,7 +1251,7 @@ public string Comment { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/connection#comment Connection#comment}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/connection#comment Connection#comment}.
 
 ---
 
@@ -1219,7 +1263,21 @@ public string ConnectionType { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/connection#connection_type Connection#connection_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/connection#connection_type Connection#connection_type}.
+
+---
+
+##### `EnvironmentSettings`<sup>Optional</sup> <a name="EnvironmentSettings" id="@cdktn/provider-databricks.connection.ConnectionConfig.property.environmentSettings"></a>
+
+```csharp
+public ConnectionEnvironmentSettings EnvironmentSettings { get; set; }
+```
+
+- *Type:* <a href="#@cdktn/provider-databricks.connection.ConnectionEnvironmentSettings">ConnectionEnvironmentSettings</a>
+
+environment_settings block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/connection#environment_settings Connection#environment_settings}
 
 ---
 
@@ -1231,7 +1289,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/connection#id Connection#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/connection#id Connection#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1246,7 +1304,7 @@ public string Name { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/connection#name Connection#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/connection#name Connection#name}.
 
 ---
 
@@ -1258,7 +1316,7 @@ public System.Collections.Generic.IDictionary<string, string> Options { get; set
 
 - *Type:* System.Collections.Generic.IDictionary<string, string>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/connection#options Connection#options}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/connection#options Connection#options}.
 
 ---
 
@@ -1270,7 +1328,7 @@ public string Owner { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/connection#owner Connection#owner}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/connection#owner Connection#owner}.
 
 ---
 
@@ -1282,7 +1340,7 @@ public System.Collections.Generic.IDictionary<string, string> Properties { get; 
 
 - *Type:* System.Collections.Generic.IDictionary<string, string>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/connection#properties Connection#properties}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/connection#properties Connection#properties}.
 
 ---
 
@@ -1296,7 +1354,7 @@ public ConnectionProviderConfig ProviderConfig { get; set; }
 
 provider_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/connection#provider_config Connection#provider_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/connection#provider_config Connection#provider_config}
 
 ---
 
@@ -1308,7 +1366,53 @@ public bool|IResolvable ReadOnly { get; set; }
 
 - *Type:* bool|Io.Cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/connection#read_only Connection#read_only}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/connection#read_only Connection#read_only}.
+
+---
+
+### ConnectionEnvironmentSettings <a name="ConnectionEnvironmentSettings" id="@cdktn/provider-databricks.connection.ConnectionEnvironmentSettings"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-databricks.connection.ConnectionEnvironmentSettings.Initializer"></a>
+
+```csharp
+using Io.Cdktn.Providers.Databricks;
+
+new ConnectionEnvironmentSettings {
+    string EnvironmentVersion = null,
+    string[] JavaDependencies = null
+};
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-databricks.connection.ConnectionEnvironmentSettings.property.environmentVersion">EnvironmentVersion</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/connection#environment_version Connection#environment_version}. |
+| <code><a href="#@cdktn/provider-databricks.connection.ConnectionEnvironmentSettings.property.javaDependencies">JavaDependencies</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/connection#java_dependencies Connection#java_dependencies}. |
+
+---
+
+##### `EnvironmentVersion`<sup>Optional</sup> <a name="EnvironmentVersion" id="@cdktn/provider-databricks.connection.ConnectionEnvironmentSettings.property.environmentVersion"></a>
+
+```csharp
+public string EnvironmentVersion { get; set; }
+```
+
+- *Type:* string
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/connection#environment_version Connection#environment_version}.
+
+---
+
+##### `JavaDependencies`<sup>Optional</sup> <a name="JavaDependencies" id="@cdktn/provider-databricks.connection.ConnectionEnvironmentSettings.property.javaDependencies"></a>
+
+```csharp
+public string[] JavaDependencies { get; set; }
+```
+
+- *Type:* string[]
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/connection#java_dependencies Connection#java_dependencies}.
 
 ---
 
@@ -1328,7 +1432,7 @@ new ConnectionProviderConfig {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.connection.ConnectionProviderConfig.property.workspaceId">WorkspaceId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/connection#workspace_id Connection#workspace_id}. |
+| <code><a href="#@cdktn/provider-databricks.connection.ConnectionProviderConfig.property.workspaceId">WorkspaceId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/connection#workspace_id Connection#workspace_id}. |
 
 ---
 
@@ -1340,7 +1444,7 @@ public string WorkspaceId { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/connection#workspace_id Connection#workspace_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/connection#workspace_id Connection#workspace_id}.
 
 ---
 
@@ -1358,6 +1462,313 @@ new ConnectionProvisioningInfo {
 
 
 ## Classes <a name="Classes" id="Classes"></a>
+
+### ConnectionEnvironmentSettingsOutputReference <a name="ConnectionEnvironmentSettingsOutputReference" id="@cdktn/provider-databricks.connection.ConnectionEnvironmentSettingsOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-databricks.connection.ConnectionEnvironmentSettingsOutputReference.Initializer"></a>
+
+```csharp
+using Io.Cdktn.Providers.Databricks;
+
+new ConnectionEnvironmentSettingsOutputReference(IInterpolatingParent TerraformResource, string TerraformAttribute);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-databricks.connection.ConnectionEnvironmentSettingsOutputReference.Initializer.parameter.terraformResource">TerraformResource</a></code> | <code>Io.Cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-databricks.connection.ConnectionEnvironmentSettingsOutputReference.Initializer.parameter.terraformAttribute">TerraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `TerraformResource`<sup>Required</sup> <a name="TerraformResource" id="@cdktn/provider-databricks.connection.ConnectionEnvironmentSettingsOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* Io.Cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-databricks.connection.ConnectionEnvironmentSettingsOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-databricks.connection.ConnectionEnvironmentSettingsOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.connection.ConnectionEnvironmentSettingsOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.connection.ConnectionEnvironmentSettingsOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.connection.ConnectionEnvironmentSettingsOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.connection.ConnectionEnvironmentSettingsOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.connection.ConnectionEnvironmentSettingsOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.connection.ConnectionEnvironmentSettingsOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.connection.ConnectionEnvironmentSettingsOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.connection.ConnectionEnvironmentSettingsOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.connection.ConnectionEnvironmentSettingsOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.connection.ConnectionEnvironmentSettingsOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.connection.ConnectionEnvironmentSettingsOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-databricks.connection.ConnectionEnvironmentSettingsOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-databricks.connection.ConnectionEnvironmentSettingsOutputReference.resetEnvironmentVersion">ResetEnvironmentVersion</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.connection.ConnectionEnvironmentSettingsOutputReference.resetJavaDependencies">ResetJavaDependencies</a></code> | *No description.* |
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktn/provider-databricks.connection.ConnectionEnvironmentSettingsOutputReference.computeFqn"></a>
+
+```csharp
+private string ComputeFqn()
+```
+
+##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktn/provider-databricks.connection.ConnectionEnvironmentSettingsOutputReference.getAnyMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, object> GetAnyMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-databricks.connection.ConnectionEnvironmentSettingsOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktn/provider-databricks.connection.ConnectionEnvironmentSettingsOutputReference.getBooleanAttribute"></a>
+
+```csharp
+private IResolvable GetBooleanAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-databricks.connection.ConnectionEnvironmentSettingsOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktn/provider-databricks.connection.ConnectionEnvironmentSettingsOutputReference.getBooleanMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, bool> GetBooleanMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-databricks.connection.ConnectionEnvironmentSettingsOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetListAttribute` <a name="GetListAttribute" id="@cdktn/provider-databricks.connection.ConnectionEnvironmentSettingsOutputReference.getListAttribute"></a>
+
+```csharp
+private string[] GetListAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-databricks.connection.ConnectionEnvironmentSettingsOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktn/provider-databricks.connection.ConnectionEnvironmentSettingsOutputReference.getNumberAttribute"></a>
+
+```csharp
+private double GetNumberAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-databricks.connection.ConnectionEnvironmentSettingsOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktn/provider-databricks.connection.ConnectionEnvironmentSettingsOutputReference.getNumberListAttribute"></a>
+
+```csharp
+private double[] GetNumberListAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-databricks.connection.ConnectionEnvironmentSettingsOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktn/provider-databricks.connection.ConnectionEnvironmentSettingsOutputReference.getNumberMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, double> GetNumberMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-databricks.connection.ConnectionEnvironmentSettingsOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktn/provider-databricks.connection.ConnectionEnvironmentSettingsOutputReference.getStringAttribute"></a>
+
+```csharp
+private string GetStringAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-databricks.connection.ConnectionEnvironmentSettingsOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktn/provider-databricks.connection.ConnectionEnvironmentSettingsOutputReference.getStringMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, string> GetStringMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-databricks.connection.ConnectionEnvironmentSettingsOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktn/provider-databricks.connection.ConnectionEnvironmentSettingsOutputReference.interpolationForAttribute"></a>
+
+```csharp
+private IResolvable InterpolationForAttribute(string Property)
+```
+
+###### `Property`<sup>Required</sup> <a name="Property" id="@cdktn/provider-databricks.connection.ConnectionEnvironmentSettingsOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* string
+
+---
+
+##### `Resolve` <a name="Resolve" id="@cdktn/provider-databricks.connection.ConnectionEnvironmentSettingsOutputReference.resolve"></a>
+
+```csharp
+private object Resolve(IResolveContext Context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `Context`<sup>Required</sup> <a name="Context" id="@cdktn/provider-databricks.connection.ConnectionEnvironmentSettingsOutputReference.resolve.parameter._context"></a>
+
+- *Type:* Io.Cdktn.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktn/provider-databricks.connection.ConnectionEnvironmentSettingsOutputReference.toString"></a>
+
+```csharp
+private string ToString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `ResetEnvironmentVersion` <a name="ResetEnvironmentVersion" id="@cdktn/provider-databricks.connection.ConnectionEnvironmentSettingsOutputReference.resetEnvironmentVersion"></a>
+
+```csharp
+private void ResetEnvironmentVersion()
+```
+
+##### `ResetJavaDependencies` <a name="ResetJavaDependencies" id="@cdktn/provider-databricks.connection.ConnectionEnvironmentSettingsOutputReference.resetJavaDependencies"></a>
+
+```csharp
+private void ResetJavaDependencies()
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-databricks.connection.ConnectionEnvironmentSettingsOutputReference.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-databricks.connection.ConnectionEnvironmentSettingsOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.connection.ConnectionEnvironmentSettingsOutputReference.property.environmentVersionInput">EnvironmentVersionInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.connection.ConnectionEnvironmentSettingsOutputReference.property.javaDependenciesInput">JavaDependenciesInput</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.connection.ConnectionEnvironmentSettingsOutputReference.property.environmentVersion">EnvironmentVersion</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.connection.ConnectionEnvironmentSettingsOutputReference.property.javaDependencies">JavaDependencies</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.connection.ConnectionEnvironmentSettingsOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktn/provider-databricks.connection.ConnectionEnvironmentSettings">ConnectionEnvironmentSettings</a></code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktn/provider-databricks.connection.ConnectionEnvironmentSettingsOutputReference.property.creationStack"></a>
+
+```csharp
+public string[] CreationStack { get; }
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktn/provider-databricks.connection.ConnectionEnvironmentSettingsOutputReference.property.fqn"></a>
+
+```csharp
+public string Fqn { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `EnvironmentVersionInput`<sup>Optional</sup> <a name="EnvironmentVersionInput" id="@cdktn/provider-databricks.connection.ConnectionEnvironmentSettingsOutputReference.property.environmentVersionInput"></a>
+
+```csharp
+public string EnvironmentVersionInput { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `JavaDependenciesInput`<sup>Optional</sup> <a name="JavaDependenciesInput" id="@cdktn/provider-databricks.connection.ConnectionEnvironmentSettingsOutputReference.property.javaDependenciesInput"></a>
+
+```csharp
+public string[] JavaDependenciesInput { get; }
+```
+
+- *Type:* string[]
+
+---
+
+##### `EnvironmentVersion`<sup>Required</sup> <a name="EnvironmentVersion" id="@cdktn/provider-databricks.connection.ConnectionEnvironmentSettingsOutputReference.property.environmentVersion"></a>
+
+```csharp
+public string EnvironmentVersion { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `JavaDependencies`<sup>Required</sup> <a name="JavaDependencies" id="@cdktn/provider-databricks.connection.ConnectionEnvironmentSettingsOutputReference.property.javaDependencies"></a>
+
+```csharp
+public string[] JavaDependencies { get; }
+```
+
+- *Type:* string[]
+
+---
+
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktn/provider-databricks.connection.ConnectionEnvironmentSettingsOutputReference.property.internalValue"></a>
+
+```csharp
+public ConnectionEnvironmentSettings InternalValue { get; }
+```
+
+- *Type:* <a href="#@cdktn/provider-databricks.connection.ConnectionEnvironmentSettings">ConnectionEnvironmentSettings</a>
+
+---
+
 
 ### ConnectionProviderConfigOutputReference <a name="ConnectionProviderConfigOutputReference" id="@cdktn/provider-databricks.connection.ConnectionProviderConfigOutputReference"></a>
 

@@ -1,3 +1,3 @@
 # `databricks_repo`
 
-Refer to the Terraform Registry for docs: [`databricks_repo`](https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/repo).
+Refer to the Terraform Registry for docs: [`databricks_repo`](https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/repo).

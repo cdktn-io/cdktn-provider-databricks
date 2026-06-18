@@ -4,13 +4,129 @@
  */
 
 import * as cdktn from 'cdktn';
+export interface AccountNetworkPolicyEgressNetworkAccessAllowedDatabricksDestinations {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_network_policy#workspace_ids AccountNetworkPolicy#workspace_ids}
+  */
+  readonly workspaceIds?: number[];
+}
+
+export function accountNetworkPolicyEgressNetworkAccessAllowedDatabricksDestinationsToTerraform(struct?: AccountNetworkPolicyEgressNetworkAccessAllowedDatabricksDestinations | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  return {
+    workspace_ids: cdktn.listMapper(cdktn.numberToTerraform, false)(struct!.workspaceIds),
+  }
+}
+
+
+export function accountNetworkPolicyEgressNetworkAccessAllowedDatabricksDestinationsToHclTerraform(struct?: AccountNetworkPolicyEgressNetworkAccessAllowedDatabricksDestinations | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  const attrs = {
+    workspace_ids: {
+      value: cdktn.listMapperHcl(cdktn.numberToHclTerraform, false)(struct!.workspaceIds),
+      isBlock: false,
+      type: "list",
+      storageClassType: "numberList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class AccountNetworkPolicyEgressNetworkAccessAllowedDatabricksDestinationsOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktn.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): AccountNetworkPolicyEgressNetworkAccessAllowedDatabricksDestinations | cdktn.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._workspaceIds !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.workspaceIds = this._workspaceIds;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: AccountNetworkPolicyEgressNetworkAccessAllowedDatabricksDestinations | cdktn.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._workspaceIds = undefined;
+    }
+    else if (cdktn.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._workspaceIds = value.workspaceIds;
+    }
+  }
+
+  // workspace_ids - computed: false, optional: true, required: false
+  private _workspaceIds?: number[]; 
+  public get workspaceIds() {
+    return this.getNumberListAttribute('workspace_ids');
+  }
+  public set workspaceIds(value: number[]) {
+    this._workspaceIds = value;
+  }
+  public resetWorkspaceIds() {
+    this._workspaceIds = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get workspaceIdsInput() {
+    return this._workspaceIds;
+  }
+}
+
+export class AccountNetworkPolicyEgressNetworkAccessAllowedDatabricksDestinationsList extends cdktn.ComplexList {
+  public internalValue? : AccountNetworkPolicyEgressNetworkAccessAllowedDatabricksDestinations[] | cdktn.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet);
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): AccountNetworkPolicyEgressNetworkAccessAllowedDatabricksDestinationsOutputReference {
+    return new AccountNetworkPolicyEgressNetworkAccessAllowedDatabricksDestinationsOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface AccountNetworkPolicyEgressNetworkAccessAllowedInternetDestinations {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_network_policy#destination AccountNetworkPolicy#destination}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_network_policy#destination AccountNetworkPolicy#destination}
   */
   readonly destination?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_network_policy#internet_destination_type AccountNetworkPolicy#internet_destination_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_network_policy#internet_destination_type AccountNetworkPolicy#internet_destination_type}
   */
   readonly internetDestinationType?: string;
 }
@@ -18,7 +134,7 @@ export interface AccountNetworkPolicyEgressNetworkAccessAllowedInternetDestinati
 export function accountNetworkPolicyEgressNetworkAccessAllowedInternetDestinationsToTerraform(struct?: AccountNetworkPolicyEgressNetworkAccessAllowedInternetDestinations | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     destination: cdktn.stringToTerraform(struct!.destination),
@@ -30,7 +146,7 @@ export function accountNetworkPolicyEgressNetworkAccessAllowedInternetDestinatio
 export function accountNetworkPolicyEgressNetworkAccessAllowedInternetDestinationsToHclTerraform(struct?: AccountNetworkPolicyEgressNetworkAccessAllowedInternetDestinations | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     destination: {
@@ -155,23 +271,23 @@ export class AccountNetworkPolicyEgressNetworkAccessAllowedInternetDestinationsL
 }
 export interface AccountNetworkPolicyEgressNetworkAccessAllowedStorageDestinations {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_network_policy#azure_storage_account AccountNetworkPolicy#azure_storage_account}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_network_policy#azure_storage_account AccountNetworkPolicy#azure_storage_account}
   */
   readonly azureStorageAccount?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_network_policy#azure_storage_service AccountNetworkPolicy#azure_storage_service}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_network_policy#azure_storage_service AccountNetworkPolicy#azure_storage_service}
   */
   readonly azureStorageService?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_network_policy#bucket_name AccountNetworkPolicy#bucket_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_network_policy#bucket_name AccountNetworkPolicy#bucket_name}
   */
   readonly bucketName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_network_policy#region AccountNetworkPolicy#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_network_policy#region AccountNetworkPolicy#region}
   */
   readonly region?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_network_policy#storage_destination_type AccountNetworkPolicy#storage_destination_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_network_policy#storage_destination_type AccountNetworkPolicy#storage_destination_type}
   */
   readonly storageDestinationType?: string;
 }
@@ -179,7 +295,7 @@ export interface AccountNetworkPolicyEgressNetworkAccessAllowedStorageDestinatio
 export function accountNetworkPolicyEgressNetworkAccessAllowedStorageDestinationsToTerraform(struct?: AccountNetworkPolicyEgressNetworkAccessAllowedStorageDestinations | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     azure_storage_account: cdktn.stringToTerraform(struct!.azureStorageAccount),
@@ -194,7 +310,7 @@ export function accountNetworkPolicyEgressNetworkAccessAllowedStorageDestination
 export function accountNetworkPolicyEgressNetworkAccessAllowedStorageDestinationsToHclTerraform(struct?: AccountNetworkPolicyEgressNetworkAccessAllowedStorageDestinations | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     azure_storage_account: {
@@ -403,11 +519,11 @@ export class AccountNetworkPolicyEgressNetworkAccessAllowedStorageDestinationsLi
 }
 export interface AccountNetworkPolicyEgressNetworkAccessBlockedInternetDestinations {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_network_policy#destination AccountNetworkPolicy#destination}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_network_policy#destination AccountNetworkPolicy#destination}
   */
   readonly destination?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_network_policy#internet_destination_type AccountNetworkPolicy#internet_destination_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_network_policy#internet_destination_type AccountNetworkPolicy#internet_destination_type}
   */
   readonly internetDestinationType?: string;
 }
@@ -415,7 +531,7 @@ export interface AccountNetworkPolicyEgressNetworkAccessBlockedInternetDestinati
 export function accountNetworkPolicyEgressNetworkAccessBlockedInternetDestinationsToTerraform(struct?: AccountNetworkPolicyEgressNetworkAccessBlockedInternetDestinations | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     destination: cdktn.stringToTerraform(struct!.destination),
@@ -427,7 +543,7 @@ export function accountNetworkPolicyEgressNetworkAccessBlockedInternetDestinatio
 export function accountNetworkPolicyEgressNetworkAccessBlockedInternetDestinationsToHclTerraform(struct?: AccountNetworkPolicyEgressNetworkAccessBlockedInternetDestinations | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     destination: {
@@ -552,11 +668,11 @@ export class AccountNetworkPolicyEgressNetworkAccessBlockedInternetDestinationsL
 }
 export interface AccountNetworkPolicyEgressNetworkAccessPolicyEnforcement {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_network_policy#dry_run_mode_product_filter AccountNetworkPolicy#dry_run_mode_product_filter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_network_policy#dry_run_mode_product_filter AccountNetworkPolicy#dry_run_mode_product_filter}
   */
   readonly dryRunModeProductFilter?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_network_policy#enforcement_mode AccountNetworkPolicy#enforcement_mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_network_policy#enforcement_mode AccountNetworkPolicy#enforcement_mode}
   */
   readonly enforcementMode?: string;
 }
@@ -564,7 +680,7 @@ export interface AccountNetworkPolicyEgressNetworkAccessPolicyEnforcement {
 export function accountNetworkPolicyEgressNetworkAccessPolicyEnforcementToTerraform(struct?: AccountNetworkPolicyEgressNetworkAccessPolicyEnforcement | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     dry_run_mode_product_filter: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.dryRunModeProductFilter),
@@ -576,7 +692,7 @@ export function accountNetworkPolicyEgressNetworkAccessPolicyEnforcementToTerraf
 export function accountNetworkPolicyEgressNetworkAccessPolicyEnforcementToHclTerraform(struct?: AccountNetworkPolicyEgressNetworkAccessPolicyEnforcement | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     dry_run_mode_product_filter: {
@@ -679,23 +795,27 @@ export class AccountNetworkPolicyEgressNetworkAccessPolicyEnforcementOutputRefer
 }
 export interface AccountNetworkPolicyEgressNetworkAccess {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_network_policy#allowed_internet_destinations AccountNetworkPolicy#allowed_internet_destinations}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_network_policy#allowed_databricks_destinations AccountNetworkPolicy#allowed_databricks_destinations}
+  */
+  readonly allowedDatabricksDestinations?: AccountNetworkPolicyEgressNetworkAccessAllowedDatabricksDestinations[] | cdktn.IResolvable;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_network_policy#allowed_internet_destinations AccountNetworkPolicy#allowed_internet_destinations}
   */
   readonly allowedInternetDestinations?: AccountNetworkPolicyEgressNetworkAccessAllowedInternetDestinations[] | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_network_policy#allowed_storage_destinations AccountNetworkPolicy#allowed_storage_destinations}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_network_policy#allowed_storage_destinations AccountNetworkPolicy#allowed_storage_destinations}
   */
   readonly allowedStorageDestinations?: AccountNetworkPolicyEgressNetworkAccessAllowedStorageDestinations[] | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_network_policy#blocked_internet_destinations AccountNetworkPolicy#blocked_internet_destinations}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_network_policy#blocked_internet_destinations AccountNetworkPolicy#blocked_internet_destinations}
   */
   readonly blockedInternetDestinations?: AccountNetworkPolicyEgressNetworkAccessBlockedInternetDestinations[] | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_network_policy#policy_enforcement AccountNetworkPolicy#policy_enforcement}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_network_policy#policy_enforcement AccountNetworkPolicy#policy_enforcement}
   */
   readonly policyEnforcement?: AccountNetworkPolicyEgressNetworkAccessPolicyEnforcement;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_network_policy#restriction_mode AccountNetworkPolicy#restriction_mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_network_policy#restriction_mode AccountNetworkPolicy#restriction_mode}
   */
   readonly restrictionMode: string;
 }
@@ -703,9 +823,10 @@ export interface AccountNetworkPolicyEgressNetworkAccess {
 export function accountNetworkPolicyEgressNetworkAccessToTerraform(struct?: AccountNetworkPolicyEgressNetworkAccess | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
+    allowed_databricks_destinations: cdktn.listMapper(accountNetworkPolicyEgressNetworkAccessAllowedDatabricksDestinationsToTerraform, false)(struct!.allowedDatabricksDestinations),
     allowed_internet_destinations: cdktn.listMapper(accountNetworkPolicyEgressNetworkAccessAllowedInternetDestinationsToTerraform, false)(struct!.allowedInternetDestinations),
     allowed_storage_destinations: cdktn.listMapper(accountNetworkPolicyEgressNetworkAccessAllowedStorageDestinationsToTerraform, false)(struct!.allowedStorageDestinations),
     blocked_internet_destinations: cdktn.listMapper(accountNetworkPolicyEgressNetworkAccessBlockedInternetDestinationsToTerraform, false)(struct!.blockedInternetDestinations),
@@ -718,9 +839,15 @@ export function accountNetworkPolicyEgressNetworkAccessToTerraform(struct?: Acco
 export function accountNetworkPolicyEgressNetworkAccessToHclTerraform(struct?: AccountNetworkPolicyEgressNetworkAccess | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
+    allowed_databricks_destinations: {
+      value: cdktn.listMapperHcl(accountNetworkPolicyEgressNetworkAccessAllowedDatabricksDestinationsToHclTerraform, false)(struct!.allowedDatabricksDestinations),
+      isBlock: true,
+      type: "list",
+      storageClassType: "AccountNetworkPolicyEgressNetworkAccessAllowedDatabricksDestinationsList",
+    },
     allowed_internet_destinations: {
       value: cdktn.listMapperHcl(accountNetworkPolicyEgressNetworkAccessAllowedInternetDestinationsToHclTerraform, false)(struct!.allowedInternetDestinations),
       isBlock: true,
@@ -775,6 +902,10 @@ export class AccountNetworkPolicyEgressNetworkAccessOutputReference extends cdkt
     }
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
+    if (this._allowedDatabricksDestinations?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.allowedDatabricksDestinations = this._allowedDatabricksDestinations?.internalValue;
+    }
     if (this._allowedInternetDestinations?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.allowedInternetDestinations = this._allowedInternetDestinations?.internalValue;
@@ -802,6 +933,7 @@ export class AccountNetworkPolicyEgressNetworkAccessOutputReference extends cdkt
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
+      this._allowedDatabricksDestinations.internalValue = undefined;
       this._allowedInternetDestinations.internalValue = undefined;
       this._allowedStorageDestinations.internalValue = undefined;
       this._blockedInternetDestinations.internalValue = undefined;
@@ -815,12 +947,29 @@ export class AccountNetworkPolicyEgressNetworkAccessOutputReference extends cdkt
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
       this.resolvableValue = undefined;
+      this._allowedDatabricksDestinations.internalValue = value.allowedDatabricksDestinations;
       this._allowedInternetDestinations.internalValue = value.allowedInternetDestinations;
       this._allowedStorageDestinations.internalValue = value.allowedStorageDestinations;
       this._blockedInternetDestinations.internalValue = value.blockedInternetDestinations;
       this._policyEnforcement.internalValue = value.policyEnforcement;
       this._restrictionMode = value.restrictionMode;
     }
+  }
+
+  // allowed_databricks_destinations - computed: false, optional: true, required: false
+  private _allowedDatabricksDestinations = new AccountNetworkPolicyEgressNetworkAccessAllowedDatabricksDestinationsList(this, "allowed_databricks_destinations", false);
+  public get allowedDatabricksDestinations() {
+    return this._allowedDatabricksDestinations;
+  }
+  public putAllowedDatabricksDestinations(value: AccountNetworkPolicyEgressNetworkAccessAllowedDatabricksDestinations[] | cdktn.IResolvable) {
+    this._allowedDatabricksDestinations.internalValue = value;
+  }
+  public resetAllowedDatabricksDestinations() {
+    this._allowedDatabricksDestinations.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get allowedDatabricksDestinationsInput() {
+    return this._allowedDatabricksDestinations.internalValue;
   }
 
   // allowed_internet_destinations - computed: false, optional: true, required: false
@@ -902,7 +1051,7 @@ export class AccountNetworkPolicyEgressNetworkAccessOutputReference extends cdkt
 }
 export interface AccountNetworkPolicyEgress {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_network_policy#network_access AccountNetworkPolicy#network_access}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_network_policy#network_access AccountNetworkPolicy#network_access}
   */
   readonly networkAccess?: AccountNetworkPolicyEgressNetworkAccess;
 }
@@ -910,7 +1059,7 @@ export interface AccountNetworkPolicyEgress {
 export function accountNetworkPolicyEgressToTerraform(struct?: AccountNetworkPolicyEgress | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     network_access: accountNetworkPolicyEgressNetworkAccessToTerraform(struct!.networkAccess),
@@ -921,7 +1070,7 @@ export function accountNetworkPolicyEgressToTerraform(struct?: AccountNetworkPol
 export function accountNetworkPolicyEgressToHclTerraform(struct?: AccountNetworkPolicyEgress | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     network_access: {
@@ -996,11 +1145,11 @@ export class AccountNetworkPolicyEgressOutputReference extends cdktn.ComplexObje
 }
 export interface AccountNetworkPolicyIngressCrossWorkspaceAccessAllowRulesAuthenticationIdentities {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_network_policy#principal_id AccountNetworkPolicy#principal_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_network_policy#principal_id AccountNetworkPolicy#principal_id}
   */
   readonly principalId?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_network_policy#principal_type AccountNetworkPolicy#principal_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_network_policy#principal_type AccountNetworkPolicy#principal_type}
   */
   readonly principalType?: string;
 }
@@ -1008,7 +1157,7 @@ export interface AccountNetworkPolicyIngressCrossWorkspaceAccessAllowRulesAuthen
 export function accountNetworkPolicyIngressCrossWorkspaceAccessAllowRulesAuthenticationIdentitiesToTerraform(struct?: AccountNetworkPolicyIngressCrossWorkspaceAccessAllowRulesAuthenticationIdentities | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     principal_id: cdktn.numberToTerraform(struct!.principalId),
@@ -1020,7 +1169,7 @@ export function accountNetworkPolicyIngressCrossWorkspaceAccessAllowRulesAuthent
 export function accountNetworkPolicyIngressCrossWorkspaceAccessAllowRulesAuthenticationIdentitiesToHclTerraform(struct?: AccountNetworkPolicyIngressCrossWorkspaceAccessAllowRulesAuthenticationIdentities | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     principal_id: {
@@ -1145,11 +1294,11 @@ export class AccountNetworkPolicyIngressCrossWorkspaceAccessAllowRulesAuthentica
 }
 export interface AccountNetworkPolicyIngressCrossWorkspaceAccessAllowRulesAuthentication {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_network_policy#identities AccountNetworkPolicy#identities}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_network_policy#identities AccountNetworkPolicy#identities}
   */
   readonly identities?: AccountNetworkPolicyIngressCrossWorkspaceAccessAllowRulesAuthenticationIdentities[] | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_network_policy#identity_type AccountNetworkPolicy#identity_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_network_policy#identity_type AccountNetworkPolicy#identity_type}
   */
   readonly identityType?: string;
 }
@@ -1157,7 +1306,7 @@ export interface AccountNetworkPolicyIngressCrossWorkspaceAccessAllowRulesAuthen
 export function accountNetworkPolicyIngressCrossWorkspaceAccessAllowRulesAuthenticationToTerraform(struct?: AccountNetworkPolicyIngressCrossWorkspaceAccessAllowRulesAuthentication | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     identities: cdktn.listMapper(accountNetworkPolicyIngressCrossWorkspaceAccessAllowRulesAuthenticationIdentitiesToTerraform, false)(struct!.identities),
@@ -1169,7 +1318,7 @@ export function accountNetworkPolicyIngressCrossWorkspaceAccessAllowRulesAuthent
 export function accountNetworkPolicyIngressCrossWorkspaceAccessAllowRulesAuthenticationToHclTerraform(struct?: AccountNetworkPolicyIngressCrossWorkspaceAccessAllowRulesAuthentication | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     identities: {
@@ -1272,11 +1421,11 @@ export class AccountNetworkPolicyIngressCrossWorkspaceAccessAllowRulesAuthentica
 }
 export interface AccountNetworkPolicyIngressCrossWorkspaceAccessAllowRulesDestinationAccountApi {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_network_policy#scope_qualifier AccountNetworkPolicy#scope_qualifier}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_network_policy#scope_qualifier AccountNetworkPolicy#scope_qualifier}
   */
   readonly scopeQualifier?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_network_policy#scopes AccountNetworkPolicy#scopes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_network_policy#scopes AccountNetworkPolicy#scopes}
   */
   readonly scopes?: string[];
 }
@@ -1284,7 +1433,7 @@ export interface AccountNetworkPolicyIngressCrossWorkspaceAccessAllowRulesDestin
 export function accountNetworkPolicyIngressCrossWorkspaceAccessAllowRulesDestinationAccountApiToTerraform(struct?: AccountNetworkPolicyIngressCrossWorkspaceAccessAllowRulesDestinationAccountApi | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     scope_qualifier: cdktn.stringToTerraform(struct!.scopeQualifier),
@@ -1296,7 +1445,7 @@ export function accountNetworkPolicyIngressCrossWorkspaceAccessAllowRulesDestina
 export function accountNetworkPolicyIngressCrossWorkspaceAccessAllowRulesDestinationAccountApiToHclTerraform(struct?: AccountNetworkPolicyIngressCrossWorkspaceAccessAllowRulesDestinationAccountApi | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     scope_qualifier: {
@@ -1399,7 +1548,7 @@ export class AccountNetworkPolicyIngressCrossWorkspaceAccessAllowRulesDestinatio
 }
 export interface AccountNetworkPolicyIngressCrossWorkspaceAccessAllowRulesDestinationAccountDatabricksOne {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_network_policy#all_destinations AccountNetworkPolicy#all_destinations}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_network_policy#all_destinations AccountNetworkPolicy#all_destinations}
   */
   readonly allDestinations?: boolean | cdktn.IResolvable;
 }
@@ -1407,7 +1556,7 @@ export interface AccountNetworkPolicyIngressCrossWorkspaceAccessAllowRulesDestin
 export function accountNetworkPolicyIngressCrossWorkspaceAccessAllowRulesDestinationAccountDatabricksOneToTerraform(struct?: AccountNetworkPolicyIngressCrossWorkspaceAccessAllowRulesDestinationAccountDatabricksOne | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     all_destinations: cdktn.booleanToTerraform(struct!.allDestinations),
@@ -1418,7 +1567,7 @@ export function accountNetworkPolicyIngressCrossWorkspaceAccessAllowRulesDestina
 export function accountNetworkPolicyIngressCrossWorkspaceAccessAllowRulesDestinationAccountDatabricksOneToHclTerraform(struct?: AccountNetworkPolicyIngressCrossWorkspaceAccessAllowRulesDestinationAccountDatabricksOne | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     all_destinations: {
@@ -1493,7 +1642,7 @@ export class AccountNetworkPolicyIngressCrossWorkspaceAccessAllowRulesDestinatio
 }
 export interface AccountNetworkPolicyIngressCrossWorkspaceAccessAllowRulesDestinationAccountUi {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_network_policy#all_destinations AccountNetworkPolicy#all_destinations}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_network_policy#all_destinations AccountNetworkPolicy#all_destinations}
   */
   readonly allDestinations?: boolean | cdktn.IResolvable;
 }
@@ -1501,7 +1650,7 @@ export interface AccountNetworkPolicyIngressCrossWorkspaceAccessAllowRulesDestin
 export function accountNetworkPolicyIngressCrossWorkspaceAccessAllowRulesDestinationAccountUiToTerraform(struct?: AccountNetworkPolicyIngressCrossWorkspaceAccessAllowRulesDestinationAccountUi | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     all_destinations: cdktn.booleanToTerraform(struct!.allDestinations),
@@ -1512,7 +1661,7 @@ export function accountNetworkPolicyIngressCrossWorkspaceAccessAllowRulesDestina
 export function accountNetworkPolicyIngressCrossWorkspaceAccessAllowRulesDestinationAccountUiToHclTerraform(struct?: AccountNetworkPolicyIngressCrossWorkspaceAccessAllowRulesDestinationAccountUi | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     all_destinations: {
@@ -1587,7 +1736,7 @@ export class AccountNetworkPolicyIngressCrossWorkspaceAccessAllowRulesDestinatio
 }
 export interface AccountNetworkPolicyIngressCrossWorkspaceAccessAllowRulesDestinationAppsRuntime {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_network_policy#all_destinations AccountNetworkPolicy#all_destinations}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_network_policy#all_destinations AccountNetworkPolicy#all_destinations}
   */
   readonly allDestinations?: boolean | cdktn.IResolvable;
 }
@@ -1595,7 +1744,7 @@ export interface AccountNetworkPolicyIngressCrossWorkspaceAccessAllowRulesDestin
 export function accountNetworkPolicyIngressCrossWorkspaceAccessAllowRulesDestinationAppsRuntimeToTerraform(struct?: AccountNetworkPolicyIngressCrossWorkspaceAccessAllowRulesDestinationAppsRuntime | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     all_destinations: cdktn.booleanToTerraform(struct!.allDestinations),
@@ -1606,7 +1755,7 @@ export function accountNetworkPolicyIngressCrossWorkspaceAccessAllowRulesDestina
 export function accountNetworkPolicyIngressCrossWorkspaceAccessAllowRulesDestinationAppsRuntimeToHclTerraform(struct?: AccountNetworkPolicyIngressCrossWorkspaceAccessAllowRulesDestinationAppsRuntime | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     all_destinations: {
@@ -1681,7 +1830,7 @@ export class AccountNetworkPolicyIngressCrossWorkspaceAccessAllowRulesDestinatio
 }
 export interface AccountNetworkPolicyIngressCrossWorkspaceAccessAllowRulesDestinationLakebaseRuntime {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_network_policy#all_destinations AccountNetworkPolicy#all_destinations}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_network_policy#all_destinations AccountNetworkPolicy#all_destinations}
   */
   readonly allDestinations?: boolean | cdktn.IResolvable;
 }
@@ -1689,7 +1838,7 @@ export interface AccountNetworkPolicyIngressCrossWorkspaceAccessAllowRulesDestin
 export function accountNetworkPolicyIngressCrossWorkspaceAccessAllowRulesDestinationLakebaseRuntimeToTerraform(struct?: AccountNetworkPolicyIngressCrossWorkspaceAccessAllowRulesDestinationLakebaseRuntime | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     all_destinations: cdktn.booleanToTerraform(struct!.allDestinations),
@@ -1700,7 +1849,7 @@ export function accountNetworkPolicyIngressCrossWorkspaceAccessAllowRulesDestina
 export function accountNetworkPolicyIngressCrossWorkspaceAccessAllowRulesDestinationLakebaseRuntimeToHclTerraform(struct?: AccountNetworkPolicyIngressCrossWorkspaceAccessAllowRulesDestinationLakebaseRuntime | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     all_destinations: {
@@ -1775,11 +1924,11 @@ export class AccountNetworkPolicyIngressCrossWorkspaceAccessAllowRulesDestinatio
 }
 export interface AccountNetworkPolicyIngressCrossWorkspaceAccessAllowRulesDestinationWorkspaceApi {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_network_policy#scope_qualifier AccountNetworkPolicy#scope_qualifier}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_network_policy#scope_qualifier AccountNetworkPolicy#scope_qualifier}
   */
   readonly scopeQualifier?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_network_policy#scopes AccountNetworkPolicy#scopes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_network_policy#scopes AccountNetworkPolicy#scopes}
   */
   readonly scopes?: string[];
 }
@@ -1787,7 +1936,7 @@ export interface AccountNetworkPolicyIngressCrossWorkspaceAccessAllowRulesDestin
 export function accountNetworkPolicyIngressCrossWorkspaceAccessAllowRulesDestinationWorkspaceApiToTerraform(struct?: AccountNetworkPolicyIngressCrossWorkspaceAccessAllowRulesDestinationWorkspaceApi | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     scope_qualifier: cdktn.stringToTerraform(struct!.scopeQualifier),
@@ -1799,7 +1948,7 @@ export function accountNetworkPolicyIngressCrossWorkspaceAccessAllowRulesDestina
 export function accountNetworkPolicyIngressCrossWorkspaceAccessAllowRulesDestinationWorkspaceApiToHclTerraform(struct?: AccountNetworkPolicyIngressCrossWorkspaceAccessAllowRulesDestinationWorkspaceApi | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     scope_qualifier: {
@@ -1902,7 +2051,7 @@ export class AccountNetworkPolicyIngressCrossWorkspaceAccessAllowRulesDestinatio
 }
 export interface AccountNetworkPolicyIngressCrossWorkspaceAccessAllowRulesDestinationWorkspaceUi {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_network_policy#all_destinations AccountNetworkPolicy#all_destinations}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_network_policy#all_destinations AccountNetworkPolicy#all_destinations}
   */
   readonly allDestinations?: boolean | cdktn.IResolvable;
 }
@@ -1910,7 +2059,7 @@ export interface AccountNetworkPolicyIngressCrossWorkspaceAccessAllowRulesDestin
 export function accountNetworkPolicyIngressCrossWorkspaceAccessAllowRulesDestinationWorkspaceUiToTerraform(struct?: AccountNetworkPolicyIngressCrossWorkspaceAccessAllowRulesDestinationWorkspaceUi | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     all_destinations: cdktn.booleanToTerraform(struct!.allDestinations),
@@ -1921,7 +2070,7 @@ export function accountNetworkPolicyIngressCrossWorkspaceAccessAllowRulesDestina
 export function accountNetworkPolicyIngressCrossWorkspaceAccessAllowRulesDestinationWorkspaceUiToHclTerraform(struct?: AccountNetworkPolicyIngressCrossWorkspaceAccessAllowRulesDestinationWorkspaceUi | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     all_destinations: {
@@ -1996,35 +2145,35 @@ export class AccountNetworkPolicyIngressCrossWorkspaceAccessAllowRulesDestinatio
 }
 export interface AccountNetworkPolicyIngressCrossWorkspaceAccessAllowRulesDestination {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_network_policy#account_api AccountNetworkPolicy#account_api}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_network_policy#account_api AccountNetworkPolicy#account_api}
   */
   readonly accountApi?: AccountNetworkPolicyIngressCrossWorkspaceAccessAllowRulesDestinationAccountApi;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_network_policy#account_databricks_one AccountNetworkPolicy#account_databricks_one}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_network_policy#account_databricks_one AccountNetworkPolicy#account_databricks_one}
   */
   readonly accountDatabricksOne?: AccountNetworkPolicyIngressCrossWorkspaceAccessAllowRulesDestinationAccountDatabricksOne;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_network_policy#account_ui AccountNetworkPolicy#account_ui}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_network_policy#account_ui AccountNetworkPolicy#account_ui}
   */
   readonly accountUi?: AccountNetworkPolicyIngressCrossWorkspaceAccessAllowRulesDestinationAccountUi;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_network_policy#all_destinations AccountNetworkPolicy#all_destinations}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_network_policy#all_destinations AccountNetworkPolicy#all_destinations}
   */
   readonly allDestinations?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_network_policy#apps_runtime AccountNetworkPolicy#apps_runtime}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_network_policy#apps_runtime AccountNetworkPolicy#apps_runtime}
   */
   readonly appsRuntime?: AccountNetworkPolicyIngressCrossWorkspaceAccessAllowRulesDestinationAppsRuntime;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_network_policy#lakebase_runtime AccountNetworkPolicy#lakebase_runtime}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_network_policy#lakebase_runtime AccountNetworkPolicy#lakebase_runtime}
   */
   readonly lakebaseRuntime?: AccountNetworkPolicyIngressCrossWorkspaceAccessAllowRulesDestinationLakebaseRuntime;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_network_policy#workspace_api AccountNetworkPolicy#workspace_api}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_network_policy#workspace_api AccountNetworkPolicy#workspace_api}
   */
   readonly workspaceApi?: AccountNetworkPolicyIngressCrossWorkspaceAccessAllowRulesDestinationWorkspaceApi;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_network_policy#workspace_ui AccountNetworkPolicy#workspace_ui}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_network_policy#workspace_ui AccountNetworkPolicy#workspace_ui}
   */
   readonly workspaceUi?: AccountNetworkPolicyIngressCrossWorkspaceAccessAllowRulesDestinationWorkspaceUi;
 }
@@ -2032,7 +2181,7 @@ export interface AccountNetworkPolicyIngressCrossWorkspaceAccessAllowRulesDestin
 export function accountNetworkPolicyIngressCrossWorkspaceAccessAllowRulesDestinationToTerraform(struct?: AccountNetworkPolicyIngressCrossWorkspaceAccessAllowRulesDestination | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     account_api: accountNetworkPolicyIngressCrossWorkspaceAccessAllowRulesDestinationAccountApiToTerraform(struct!.accountApi),
@@ -2050,7 +2199,7 @@ export function accountNetworkPolicyIngressCrossWorkspaceAccessAllowRulesDestina
 export function accountNetworkPolicyIngressCrossWorkspaceAccessAllowRulesDestinationToHclTerraform(struct?: AccountNetworkPolicyIngressCrossWorkspaceAccessAllowRulesDestination | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     account_api: {
@@ -2321,7 +2470,7 @@ export class AccountNetworkPolicyIngressCrossWorkspaceAccessAllowRulesDestinatio
 }
 export interface AccountNetworkPolicyIngressCrossWorkspaceAccessAllowRulesOriginSelectedWorkspaces {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_network_policy#workspace_ids AccountNetworkPolicy#workspace_ids}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_network_policy#workspace_ids AccountNetworkPolicy#workspace_ids}
   */
   readonly workspaceIds?: number[];
 }
@@ -2329,7 +2478,7 @@ export interface AccountNetworkPolicyIngressCrossWorkspaceAccessAllowRulesOrigin
 export function accountNetworkPolicyIngressCrossWorkspaceAccessAllowRulesOriginSelectedWorkspacesToTerraform(struct?: AccountNetworkPolicyIngressCrossWorkspaceAccessAllowRulesOriginSelectedWorkspaces | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     workspace_ids: cdktn.listMapper(cdktn.numberToTerraform, false)(struct!.workspaceIds),
@@ -2340,7 +2489,7 @@ export function accountNetworkPolicyIngressCrossWorkspaceAccessAllowRulesOriginS
 export function accountNetworkPolicyIngressCrossWorkspaceAccessAllowRulesOriginSelectedWorkspacesToHclTerraform(struct?: AccountNetworkPolicyIngressCrossWorkspaceAccessAllowRulesOriginSelectedWorkspaces | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     workspace_ids: {
@@ -2415,11 +2564,11 @@ export class AccountNetworkPolicyIngressCrossWorkspaceAccessAllowRulesOriginSele
 }
 export interface AccountNetworkPolicyIngressCrossWorkspaceAccessAllowRulesOrigin {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_network_policy#all_source_workspaces AccountNetworkPolicy#all_source_workspaces}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_network_policy#all_source_workspaces AccountNetworkPolicy#all_source_workspaces}
   */
   readonly allSourceWorkspaces?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_network_policy#selected_workspaces AccountNetworkPolicy#selected_workspaces}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_network_policy#selected_workspaces AccountNetworkPolicy#selected_workspaces}
   */
   readonly selectedWorkspaces?: AccountNetworkPolicyIngressCrossWorkspaceAccessAllowRulesOriginSelectedWorkspaces;
 }
@@ -2427,7 +2576,7 @@ export interface AccountNetworkPolicyIngressCrossWorkspaceAccessAllowRulesOrigin
 export function accountNetworkPolicyIngressCrossWorkspaceAccessAllowRulesOriginToTerraform(struct?: AccountNetworkPolicyIngressCrossWorkspaceAccessAllowRulesOrigin | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     all_source_workspaces: cdktn.booleanToTerraform(struct!.allSourceWorkspaces),
@@ -2439,7 +2588,7 @@ export function accountNetworkPolicyIngressCrossWorkspaceAccessAllowRulesOriginT
 export function accountNetworkPolicyIngressCrossWorkspaceAccessAllowRulesOriginToHclTerraform(struct?: AccountNetworkPolicyIngressCrossWorkspaceAccessAllowRulesOrigin | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     all_source_workspaces: {
@@ -2542,19 +2691,19 @@ export class AccountNetworkPolicyIngressCrossWorkspaceAccessAllowRulesOriginOutp
 }
 export interface AccountNetworkPolicyIngressCrossWorkspaceAccessAllowRules {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_network_policy#authentication AccountNetworkPolicy#authentication}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_network_policy#authentication AccountNetworkPolicy#authentication}
   */
   readonly authentication?: AccountNetworkPolicyIngressCrossWorkspaceAccessAllowRulesAuthentication;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_network_policy#destination AccountNetworkPolicy#destination}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_network_policy#destination AccountNetworkPolicy#destination}
   */
   readonly destination?: AccountNetworkPolicyIngressCrossWorkspaceAccessAllowRulesDestination;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_network_policy#label AccountNetworkPolicy#label}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_network_policy#label AccountNetworkPolicy#label}
   */
   readonly label?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_network_policy#origin AccountNetworkPolicy#origin}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_network_policy#origin AccountNetworkPolicy#origin}
   */
   readonly origin?: AccountNetworkPolicyIngressCrossWorkspaceAccessAllowRulesOrigin;
 }
@@ -2562,7 +2711,7 @@ export interface AccountNetworkPolicyIngressCrossWorkspaceAccessAllowRules {
 export function accountNetworkPolicyIngressCrossWorkspaceAccessAllowRulesToTerraform(struct?: AccountNetworkPolicyIngressCrossWorkspaceAccessAllowRules | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     authentication: accountNetworkPolicyIngressCrossWorkspaceAccessAllowRulesAuthenticationToTerraform(struct!.authentication),
@@ -2576,7 +2725,7 @@ export function accountNetworkPolicyIngressCrossWorkspaceAccessAllowRulesToTerra
 export function accountNetworkPolicyIngressCrossWorkspaceAccessAllowRulesToHclTerraform(struct?: AccountNetworkPolicyIngressCrossWorkspaceAccessAllowRules | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     authentication: {
@@ -2757,11 +2906,11 @@ export class AccountNetworkPolicyIngressCrossWorkspaceAccessAllowRulesList exten
 }
 export interface AccountNetworkPolicyIngressCrossWorkspaceAccessDenyRulesAuthenticationIdentities {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_network_policy#principal_id AccountNetworkPolicy#principal_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_network_policy#principal_id AccountNetworkPolicy#principal_id}
   */
   readonly principalId?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_network_policy#principal_type AccountNetworkPolicy#principal_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_network_policy#principal_type AccountNetworkPolicy#principal_type}
   */
   readonly principalType?: string;
 }
@@ -2769,7 +2918,7 @@ export interface AccountNetworkPolicyIngressCrossWorkspaceAccessDenyRulesAuthent
 export function accountNetworkPolicyIngressCrossWorkspaceAccessDenyRulesAuthenticationIdentitiesToTerraform(struct?: AccountNetworkPolicyIngressCrossWorkspaceAccessDenyRulesAuthenticationIdentities | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     principal_id: cdktn.numberToTerraform(struct!.principalId),
@@ -2781,7 +2930,7 @@ export function accountNetworkPolicyIngressCrossWorkspaceAccessDenyRulesAuthenti
 export function accountNetworkPolicyIngressCrossWorkspaceAccessDenyRulesAuthenticationIdentitiesToHclTerraform(struct?: AccountNetworkPolicyIngressCrossWorkspaceAccessDenyRulesAuthenticationIdentities | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     principal_id: {
@@ -2906,11 +3055,11 @@ export class AccountNetworkPolicyIngressCrossWorkspaceAccessDenyRulesAuthenticat
 }
 export interface AccountNetworkPolicyIngressCrossWorkspaceAccessDenyRulesAuthentication {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_network_policy#identities AccountNetworkPolicy#identities}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_network_policy#identities AccountNetworkPolicy#identities}
   */
   readonly identities?: AccountNetworkPolicyIngressCrossWorkspaceAccessDenyRulesAuthenticationIdentities[] | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_network_policy#identity_type AccountNetworkPolicy#identity_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_network_policy#identity_type AccountNetworkPolicy#identity_type}
   */
   readonly identityType?: string;
 }
@@ -2918,7 +3067,7 @@ export interface AccountNetworkPolicyIngressCrossWorkspaceAccessDenyRulesAuthent
 export function accountNetworkPolicyIngressCrossWorkspaceAccessDenyRulesAuthenticationToTerraform(struct?: AccountNetworkPolicyIngressCrossWorkspaceAccessDenyRulesAuthentication | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     identities: cdktn.listMapper(accountNetworkPolicyIngressCrossWorkspaceAccessDenyRulesAuthenticationIdentitiesToTerraform, false)(struct!.identities),
@@ -2930,7 +3079,7 @@ export function accountNetworkPolicyIngressCrossWorkspaceAccessDenyRulesAuthenti
 export function accountNetworkPolicyIngressCrossWorkspaceAccessDenyRulesAuthenticationToHclTerraform(struct?: AccountNetworkPolicyIngressCrossWorkspaceAccessDenyRulesAuthentication | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     identities: {
@@ -3033,11 +3182,11 @@ export class AccountNetworkPolicyIngressCrossWorkspaceAccessDenyRulesAuthenticat
 }
 export interface AccountNetworkPolicyIngressCrossWorkspaceAccessDenyRulesDestinationAccountApi {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_network_policy#scope_qualifier AccountNetworkPolicy#scope_qualifier}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_network_policy#scope_qualifier AccountNetworkPolicy#scope_qualifier}
   */
   readonly scopeQualifier?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_network_policy#scopes AccountNetworkPolicy#scopes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_network_policy#scopes AccountNetworkPolicy#scopes}
   */
   readonly scopes?: string[];
 }
@@ -3045,7 +3194,7 @@ export interface AccountNetworkPolicyIngressCrossWorkspaceAccessDenyRulesDestina
 export function accountNetworkPolicyIngressCrossWorkspaceAccessDenyRulesDestinationAccountApiToTerraform(struct?: AccountNetworkPolicyIngressCrossWorkspaceAccessDenyRulesDestinationAccountApi | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     scope_qualifier: cdktn.stringToTerraform(struct!.scopeQualifier),
@@ -3057,7 +3206,7 @@ export function accountNetworkPolicyIngressCrossWorkspaceAccessDenyRulesDestinat
 export function accountNetworkPolicyIngressCrossWorkspaceAccessDenyRulesDestinationAccountApiToHclTerraform(struct?: AccountNetworkPolicyIngressCrossWorkspaceAccessDenyRulesDestinationAccountApi | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     scope_qualifier: {
@@ -3160,7 +3309,7 @@ export class AccountNetworkPolicyIngressCrossWorkspaceAccessDenyRulesDestination
 }
 export interface AccountNetworkPolicyIngressCrossWorkspaceAccessDenyRulesDestinationAccountDatabricksOne {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_network_policy#all_destinations AccountNetworkPolicy#all_destinations}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_network_policy#all_destinations AccountNetworkPolicy#all_destinations}
   */
   readonly allDestinations?: boolean | cdktn.IResolvable;
 }
@@ -3168,7 +3317,7 @@ export interface AccountNetworkPolicyIngressCrossWorkspaceAccessDenyRulesDestina
 export function accountNetworkPolicyIngressCrossWorkspaceAccessDenyRulesDestinationAccountDatabricksOneToTerraform(struct?: AccountNetworkPolicyIngressCrossWorkspaceAccessDenyRulesDestinationAccountDatabricksOne | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     all_destinations: cdktn.booleanToTerraform(struct!.allDestinations),
@@ -3179,7 +3328,7 @@ export function accountNetworkPolicyIngressCrossWorkspaceAccessDenyRulesDestinat
 export function accountNetworkPolicyIngressCrossWorkspaceAccessDenyRulesDestinationAccountDatabricksOneToHclTerraform(struct?: AccountNetworkPolicyIngressCrossWorkspaceAccessDenyRulesDestinationAccountDatabricksOne | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     all_destinations: {
@@ -3254,7 +3403,7 @@ export class AccountNetworkPolicyIngressCrossWorkspaceAccessDenyRulesDestination
 }
 export interface AccountNetworkPolicyIngressCrossWorkspaceAccessDenyRulesDestinationAccountUi {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_network_policy#all_destinations AccountNetworkPolicy#all_destinations}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_network_policy#all_destinations AccountNetworkPolicy#all_destinations}
   */
   readonly allDestinations?: boolean | cdktn.IResolvable;
 }
@@ -3262,7 +3411,7 @@ export interface AccountNetworkPolicyIngressCrossWorkspaceAccessDenyRulesDestina
 export function accountNetworkPolicyIngressCrossWorkspaceAccessDenyRulesDestinationAccountUiToTerraform(struct?: AccountNetworkPolicyIngressCrossWorkspaceAccessDenyRulesDestinationAccountUi | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     all_destinations: cdktn.booleanToTerraform(struct!.allDestinations),
@@ -3273,7 +3422,7 @@ export function accountNetworkPolicyIngressCrossWorkspaceAccessDenyRulesDestinat
 export function accountNetworkPolicyIngressCrossWorkspaceAccessDenyRulesDestinationAccountUiToHclTerraform(struct?: AccountNetworkPolicyIngressCrossWorkspaceAccessDenyRulesDestinationAccountUi | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     all_destinations: {
@@ -3348,7 +3497,7 @@ export class AccountNetworkPolicyIngressCrossWorkspaceAccessDenyRulesDestination
 }
 export interface AccountNetworkPolicyIngressCrossWorkspaceAccessDenyRulesDestinationAppsRuntime {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_network_policy#all_destinations AccountNetworkPolicy#all_destinations}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_network_policy#all_destinations AccountNetworkPolicy#all_destinations}
   */
   readonly allDestinations?: boolean | cdktn.IResolvable;
 }
@@ -3356,7 +3505,7 @@ export interface AccountNetworkPolicyIngressCrossWorkspaceAccessDenyRulesDestina
 export function accountNetworkPolicyIngressCrossWorkspaceAccessDenyRulesDestinationAppsRuntimeToTerraform(struct?: AccountNetworkPolicyIngressCrossWorkspaceAccessDenyRulesDestinationAppsRuntime | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     all_destinations: cdktn.booleanToTerraform(struct!.allDestinations),
@@ -3367,7 +3516,7 @@ export function accountNetworkPolicyIngressCrossWorkspaceAccessDenyRulesDestinat
 export function accountNetworkPolicyIngressCrossWorkspaceAccessDenyRulesDestinationAppsRuntimeToHclTerraform(struct?: AccountNetworkPolicyIngressCrossWorkspaceAccessDenyRulesDestinationAppsRuntime | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     all_destinations: {
@@ -3442,7 +3591,7 @@ export class AccountNetworkPolicyIngressCrossWorkspaceAccessDenyRulesDestination
 }
 export interface AccountNetworkPolicyIngressCrossWorkspaceAccessDenyRulesDestinationLakebaseRuntime {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_network_policy#all_destinations AccountNetworkPolicy#all_destinations}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_network_policy#all_destinations AccountNetworkPolicy#all_destinations}
   */
   readonly allDestinations?: boolean | cdktn.IResolvable;
 }
@@ -3450,7 +3599,7 @@ export interface AccountNetworkPolicyIngressCrossWorkspaceAccessDenyRulesDestina
 export function accountNetworkPolicyIngressCrossWorkspaceAccessDenyRulesDestinationLakebaseRuntimeToTerraform(struct?: AccountNetworkPolicyIngressCrossWorkspaceAccessDenyRulesDestinationLakebaseRuntime | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     all_destinations: cdktn.booleanToTerraform(struct!.allDestinations),
@@ -3461,7 +3610,7 @@ export function accountNetworkPolicyIngressCrossWorkspaceAccessDenyRulesDestinat
 export function accountNetworkPolicyIngressCrossWorkspaceAccessDenyRulesDestinationLakebaseRuntimeToHclTerraform(struct?: AccountNetworkPolicyIngressCrossWorkspaceAccessDenyRulesDestinationLakebaseRuntime | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     all_destinations: {
@@ -3536,11 +3685,11 @@ export class AccountNetworkPolicyIngressCrossWorkspaceAccessDenyRulesDestination
 }
 export interface AccountNetworkPolicyIngressCrossWorkspaceAccessDenyRulesDestinationWorkspaceApi {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_network_policy#scope_qualifier AccountNetworkPolicy#scope_qualifier}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_network_policy#scope_qualifier AccountNetworkPolicy#scope_qualifier}
   */
   readonly scopeQualifier?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_network_policy#scopes AccountNetworkPolicy#scopes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_network_policy#scopes AccountNetworkPolicy#scopes}
   */
   readonly scopes?: string[];
 }
@@ -3548,7 +3697,7 @@ export interface AccountNetworkPolicyIngressCrossWorkspaceAccessDenyRulesDestina
 export function accountNetworkPolicyIngressCrossWorkspaceAccessDenyRulesDestinationWorkspaceApiToTerraform(struct?: AccountNetworkPolicyIngressCrossWorkspaceAccessDenyRulesDestinationWorkspaceApi | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     scope_qualifier: cdktn.stringToTerraform(struct!.scopeQualifier),
@@ -3560,7 +3709,7 @@ export function accountNetworkPolicyIngressCrossWorkspaceAccessDenyRulesDestinat
 export function accountNetworkPolicyIngressCrossWorkspaceAccessDenyRulesDestinationWorkspaceApiToHclTerraform(struct?: AccountNetworkPolicyIngressCrossWorkspaceAccessDenyRulesDestinationWorkspaceApi | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     scope_qualifier: {
@@ -3663,7 +3812,7 @@ export class AccountNetworkPolicyIngressCrossWorkspaceAccessDenyRulesDestination
 }
 export interface AccountNetworkPolicyIngressCrossWorkspaceAccessDenyRulesDestinationWorkspaceUi {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_network_policy#all_destinations AccountNetworkPolicy#all_destinations}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_network_policy#all_destinations AccountNetworkPolicy#all_destinations}
   */
   readonly allDestinations?: boolean | cdktn.IResolvable;
 }
@@ -3671,7 +3820,7 @@ export interface AccountNetworkPolicyIngressCrossWorkspaceAccessDenyRulesDestina
 export function accountNetworkPolicyIngressCrossWorkspaceAccessDenyRulesDestinationWorkspaceUiToTerraform(struct?: AccountNetworkPolicyIngressCrossWorkspaceAccessDenyRulesDestinationWorkspaceUi | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     all_destinations: cdktn.booleanToTerraform(struct!.allDestinations),
@@ -3682,7 +3831,7 @@ export function accountNetworkPolicyIngressCrossWorkspaceAccessDenyRulesDestinat
 export function accountNetworkPolicyIngressCrossWorkspaceAccessDenyRulesDestinationWorkspaceUiToHclTerraform(struct?: AccountNetworkPolicyIngressCrossWorkspaceAccessDenyRulesDestinationWorkspaceUi | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     all_destinations: {
@@ -3757,35 +3906,35 @@ export class AccountNetworkPolicyIngressCrossWorkspaceAccessDenyRulesDestination
 }
 export interface AccountNetworkPolicyIngressCrossWorkspaceAccessDenyRulesDestination {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_network_policy#account_api AccountNetworkPolicy#account_api}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_network_policy#account_api AccountNetworkPolicy#account_api}
   */
   readonly accountApi?: AccountNetworkPolicyIngressCrossWorkspaceAccessDenyRulesDestinationAccountApi;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_network_policy#account_databricks_one AccountNetworkPolicy#account_databricks_one}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_network_policy#account_databricks_one AccountNetworkPolicy#account_databricks_one}
   */
   readonly accountDatabricksOne?: AccountNetworkPolicyIngressCrossWorkspaceAccessDenyRulesDestinationAccountDatabricksOne;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_network_policy#account_ui AccountNetworkPolicy#account_ui}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_network_policy#account_ui AccountNetworkPolicy#account_ui}
   */
   readonly accountUi?: AccountNetworkPolicyIngressCrossWorkspaceAccessDenyRulesDestinationAccountUi;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_network_policy#all_destinations AccountNetworkPolicy#all_destinations}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_network_policy#all_destinations AccountNetworkPolicy#all_destinations}
   */
   readonly allDestinations?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_network_policy#apps_runtime AccountNetworkPolicy#apps_runtime}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_network_policy#apps_runtime AccountNetworkPolicy#apps_runtime}
   */
   readonly appsRuntime?: AccountNetworkPolicyIngressCrossWorkspaceAccessDenyRulesDestinationAppsRuntime;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_network_policy#lakebase_runtime AccountNetworkPolicy#lakebase_runtime}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_network_policy#lakebase_runtime AccountNetworkPolicy#lakebase_runtime}
   */
   readonly lakebaseRuntime?: AccountNetworkPolicyIngressCrossWorkspaceAccessDenyRulesDestinationLakebaseRuntime;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_network_policy#workspace_api AccountNetworkPolicy#workspace_api}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_network_policy#workspace_api AccountNetworkPolicy#workspace_api}
   */
   readonly workspaceApi?: AccountNetworkPolicyIngressCrossWorkspaceAccessDenyRulesDestinationWorkspaceApi;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_network_policy#workspace_ui AccountNetworkPolicy#workspace_ui}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_network_policy#workspace_ui AccountNetworkPolicy#workspace_ui}
   */
   readonly workspaceUi?: AccountNetworkPolicyIngressCrossWorkspaceAccessDenyRulesDestinationWorkspaceUi;
 }
@@ -3793,7 +3942,7 @@ export interface AccountNetworkPolicyIngressCrossWorkspaceAccessDenyRulesDestina
 export function accountNetworkPolicyIngressCrossWorkspaceAccessDenyRulesDestinationToTerraform(struct?: AccountNetworkPolicyIngressCrossWorkspaceAccessDenyRulesDestination | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     account_api: accountNetworkPolicyIngressCrossWorkspaceAccessDenyRulesDestinationAccountApiToTerraform(struct!.accountApi),
@@ -3811,7 +3960,7 @@ export function accountNetworkPolicyIngressCrossWorkspaceAccessDenyRulesDestinat
 export function accountNetworkPolicyIngressCrossWorkspaceAccessDenyRulesDestinationToHclTerraform(struct?: AccountNetworkPolicyIngressCrossWorkspaceAccessDenyRulesDestination | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     account_api: {
@@ -4082,7 +4231,7 @@ export class AccountNetworkPolicyIngressCrossWorkspaceAccessDenyRulesDestination
 }
 export interface AccountNetworkPolicyIngressCrossWorkspaceAccessDenyRulesOriginSelectedWorkspaces {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_network_policy#workspace_ids AccountNetworkPolicy#workspace_ids}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_network_policy#workspace_ids AccountNetworkPolicy#workspace_ids}
   */
   readonly workspaceIds?: number[];
 }
@@ -4090,7 +4239,7 @@ export interface AccountNetworkPolicyIngressCrossWorkspaceAccessDenyRulesOriginS
 export function accountNetworkPolicyIngressCrossWorkspaceAccessDenyRulesOriginSelectedWorkspacesToTerraform(struct?: AccountNetworkPolicyIngressCrossWorkspaceAccessDenyRulesOriginSelectedWorkspaces | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     workspace_ids: cdktn.listMapper(cdktn.numberToTerraform, false)(struct!.workspaceIds),
@@ -4101,7 +4250,7 @@ export function accountNetworkPolicyIngressCrossWorkspaceAccessDenyRulesOriginSe
 export function accountNetworkPolicyIngressCrossWorkspaceAccessDenyRulesOriginSelectedWorkspacesToHclTerraform(struct?: AccountNetworkPolicyIngressCrossWorkspaceAccessDenyRulesOriginSelectedWorkspaces | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     workspace_ids: {
@@ -4176,11 +4325,11 @@ export class AccountNetworkPolicyIngressCrossWorkspaceAccessDenyRulesOriginSelec
 }
 export interface AccountNetworkPolicyIngressCrossWorkspaceAccessDenyRulesOrigin {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_network_policy#all_source_workspaces AccountNetworkPolicy#all_source_workspaces}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_network_policy#all_source_workspaces AccountNetworkPolicy#all_source_workspaces}
   */
   readonly allSourceWorkspaces?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_network_policy#selected_workspaces AccountNetworkPolicy#selected_workspaces}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_network_policy#selected_workspaces AccountNetworkPolicy#selected_workspaces}
   */
   readonly selectedWorkspaces?: AccountNetworkPolicyIngressCrossWorkspaceAccessDenyRulesOriginSelectedWorkspaces;
 }
@@ -4188,7 +4337,7 @@ export interface AccountNetworkPolicyIngressCrossWorkspaceAccessDenyRulesOrigin 
 export function accountNetworkPolicyIngressCrossWorkspaceAccessDenyRulesOriginToTerraform(struct?: AccountNetworkPolicyIngressCrossWorkspaceAccessDenyRulesOrigin | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     all_source_workspaces: cdktn.booleanToTerraform(struct!.allSourceWorkspaces),
@@ -4200,7 +4349,7 @@ export function accountNetworkPolicyIngressCrossWorkspaceAccessDenyRulesOriginTo
 export function accountNetworkPolicyIngressCrossWorkspaceAccessDenyRulesOriginToHclTerraform(struct?: AccountNetworkPolicyIngressCrossWorkspaceAccessDenyRulesOrigin | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     all_source_workspaces: {
@@ -4303,19 +4452,19 @@ export class AccountNetworkPolicyIngressCrossWorkspaceAccessDenyRulesOriginOutpu
 }
 export interface AccountNetworkPolicyIngressCrossWorkspaceAccessDenyRules {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_network_policy#authentication AccountNetworkPolicy#authentication}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_network_policy#authentication AccountNetworkPolicy#authentication}
   */
   readonly authentication?: AccountNetworkPolicyIngressCrossWorkspaceAccessDenyRulesAuthentication;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_network_policy#destination AccountNetworkPolicy#destination}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_network_policy#destination AccountNetworkPolicy#destination}
   */
   readonly destination?: AccountNetworkPolicyIngressCrossWorkspaceAccessDenyRulesDestination;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_network_policy#label AccountNetworkPolicy#label}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_network_policy#label AccountNetworkPolicy#label}
   */
   readonly label?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_network_policy#origin AccountNetworkPolicy#origin}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_network_policy#origin AccountNetworkPolicy#origin}
   */
   readonly origin?: AccountNetworkPolicyIngressCrossWorkspaceAccessDenyRulesOrigin;
 }
@@ -4323,7 +4472,7 @@ export interface AccountNetworkPolicyIngressCrossWorkspaceAccessDenyRules {
 export function accountNetworkPolicyIngressCrossWorkspaceAccessDenyRulesToTerraform(struct?: AccountNetworkPolicyIngressCrossWorkspaceAccessDenyRules | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     authentication: accountNetworkPolicyIngressCrossWorkspaceAccessDenyRulesAuthenticationToTerraform(struct!.authentication),
@@ -4337,7 +4486,7 @@ export function accountNetworkPolicyIngressCrossWorkspaceAccessDenyRulesToTerraf
 export function accountNetworkPolicyIngressCrossWorkspaceAccessDenyRulesToHclTerraform(struct?: AccountNetworkPolicyIngressCrossWorkspaceAccessDenyRules | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     authentication: {
@@ -4518,15 +4667,15 @@ export class AccountNetworkPolicyIngressCrossWorkspaceAccessDenyRulesList extend
 }
 export interface AccountNetworkPolicyIngressCrossWorkspaceAccess {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_network_policy#allow_rules AccountNetworkPolicy#allow_rules}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_network_policy#allow_rules AccountNetworkPolicy#allow_rules}
   */
   readonly allowRules?: AccountNetworkPolicyIngressCrossWorkspaceAccessAllowRules[] | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_network_policy#deny_rules AccountNetworkPolicy#deny_rules}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_network_policy#deny_rules AccountNetworkPolicy#deny_rules}
   */
   readonly denyRules?: AccountNetworkPolicyIngressCrossWorkspaceAccessDenyRules[] | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_network_policy#restriction_mode AccountNetworkPolicy#restriction_mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_network_policy#restriction_mode AccountNetworkPolicy#restriction_mode}
   */
   readonly restrictionMode: string;
 }
@@ -4534,7 +4683,7 @@ export interface AccountNetworkPolicyIngressCrossWorkspaceAccess {
 export function accountNetworkPolicyIngressCrossWorkspaceAccessToTerraform(struct?: AccountNetworkPolicyIngressCrossWorkspaceAccess | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     allow_rules: cdktn.listMapper(accountNetworkPolicyIngressCrossWorkspaceAccessAllowRulesToTerraform, false)(struct!.allowRules),
@@ -4547,7 +4696,7 @@ export function accountNetworkPolicyIngressCrossWorkspaceAccessToTerraform(struc
 export function accountNetworkPolicyIngressCrossWorkspaceAccessToHclTerraform(struct?: AccountNetworkPolicyIngressCrossWorkspaceAccess | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     allow_rules: {
@@ -4675,11 +4824,11 @@ export class AccountNetworkPolicyIngressCrossWorkspaceAccessOutputReference exte
 }
 export interface AccountNetworkPolicyIngressPrivateAccessAllowRulesAuthenticationIdentities {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_network_policy#principal_id AccountNetworkPolicy#principal_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_network_policy#principal_id AccountNetworkPolicy#principal_id}
   */
   readonly principalId?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_network_policy#principal_type AccountNetworkPolicy#principal_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_network_policy#principal_type AccountNetworkPolicy#principal_type}
   */
   readonly principalType?: string;
 }
@@ -4687,7 +4836,7 @@ export interface AccountNetworkPolicyIngressPrivateAccessAllowRulesAuthenticatio
 export function accountNetworkPolicyIngressPrivateAccessAllowRulesAuthenticationIdentitiesToTerraform(struct?: AccountNetworkPolicyIngressPrivateAccessAllowRulesAuthenticationIdentities | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     principal_id: cdktn.numberToTerraform(struct!.principalId),
@@ -4699,7 +4848,7 @@ export function accountNetworkPolicyIngressPrivateAccessAllowRulesAuthentication
 export function accountNetworkPolicyIngressPrivateAccessAllowRulesAuthenticationIdentitiesToHclTerraform(struct?: AccountNetworkPolicyIngressPrivateAccessAllowRulesAuthenticationIdentities | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     principal_id: {
@@ -4824,11 +4973,11 @@ export class AccountNetworkPolicyIngressPrivateAccessAllowRulesAuthenticationIde
 }
 export interface AccountNetworkPolicyIngressPrivateAccessAllowRulesAuthentication {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_network_policy#identities AccountNetworkPolicy#identities}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_network_policy#identities AccountNetworkPolicy#identities}
   */
   readonly identities?: AccountNetworkPolicyIngressPrivateAccessAllowRulesAuthenticationIdentities[] | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_network_policy#identity_type AccountNetworkPolicy#identity_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_network_policy#identity_type AccountNetworkPolicy#identity_type}
   */
   readonly identityType?: string;
 }
@@ -4836,7 +4985,7 @@ export interface AccountNetworkPolicyIngressPrivateAccessAllowRulesAuthenticatio
 export function accountNetworkPolicyIngressPrivateAccessAllowRulesAuthenticationToTerraform(struct?: AccountNetworkPolicyIngressPrivateAccessAllowRulesAuthentication | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     identities: cdktn.listMapper(accountNetworkPolicyIngressPrivateAccessAllowRulesAuthenticationIdentitiesToTerraform, false)(struct!.identities),
@@ -4848,7 +4997,7 @@ export function accountNetworkPolicyIngressPrivateAccessAllowRulesAuthentication
 export function accountNetworkPolicyIngressPrivateAccessAllowRulesAuthenticationToHclTerraform(struct?: AccountNetworkPolicyIngressPrivateAccessAllowRulesAuthentication | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     identities: {
@@ -4951,11 +5100,11 @@ export class AccountNetworkPolicyIngressPrivateAccessAllowRulesAuthenticationOut
 }
 export interface AccountNetworkPolicyIngressPrivateAccessAllowRulesDestinationAccountApi {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_network_policy#scope_qualifier AccountNetworkPolicy#scope_qualifier}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_network_policy#scope_qualifier AccountNetworkPolicy#scope_qualifier}
   */
   readonly scopeQualifier?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_network_policy#scopes AccountNetworkPolicy#scopes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_network_policy#scopes AccountNetworkPolicy#scopes}
   */
   readonly scopes?: string[];
 }
@@ -4963,7 +5112,7 @@ export interface AccountNetworkPolicyIngressPrivateAccessAllowRulesDestinationAc
 export function accountNetworkPolicyIngressPrivateAccessAllowRulesDestinationAccountApiToTerraform(struct?: AccountNetworkPolicyIngressPrivateAccessAllowRulesDestinationAccountApi | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     scope_qualifier: cdktn.stringToTerraform(struct!.scopeQualifier),
@@ -4975,7 +5124,7 @@ export function accountNetworkPolicyIngressPrivateAccessAllowRulesDestinationAcc
 export function accountNetworkPolicyIngressPrivateAccessAllowRulesDestinationAccountApiToHclTerraform(struct?: AccountNetworkPolicyIngressPrivateAccessAllowRulesDestinationAccountApi | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     scope_qualifier: {
@@ -5078,7 +5227,7 @@ export class AccountNetworkPolicyIngressPrivateAccessAllowRulesDestinationAccoun
 }
 export interface AccountNetworkPolicyIngressPrivateAccessAllowRulesDestinationAccountDatabricksOne {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_network_policy#all_destinations AccountNetworkPolicy#all_destinations}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_network_policy#all_destinations AccountNetworkPolicy#all_destinations}
   */
   readonly allDestinations?: boolean | cdktn.IResolvable;
 }
@@ -5086,7 +5235,7 @@ export interface AccountNetworkPolicyIngressPrivateAccessAllowRulesDestinationAc
 export function accountNetworkPolicyIngressPrivateAccessAllowRulesDestinationAccountDatabricksOneToTerraform(struct?: AccountNetworkPolicyIngressPrivateAccessAllowRulesDestinationAccountDatabricksOne | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     all_destinations: cdktn.booleanToTerraform(struct!.allDestinations),
@@ -5097,7 +5246,7 @@ export function accountNetworkPolicyIngressPrivateAccessAllowRulesDestinationAcc
 export function accountNetworkPolicyIngressPrivateAccessAllowRulesDestinationAccountDatabricksOneToHclTerraform(struct?: AccountNetworkPolicyIngressPrivateAccessAllowRulesDestinationAccountDatabricksOne | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     all_destinations: {
@@ -5172,7 +5321,7 @@ export class AccountNetworkPolicyIngressPrivateAccessAllowRulesDestinationAccoun
 }
 export interface AccountNetworkPolicyIngressPrivateAccessAllowRulesDestinationAccountUi {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_network_policy#all_destinations AccountNetworkPolicy#all_destinations}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_network_policy#all_destinations AccountNetworkPolicy#all_destinations}
   */
   readonly allDestinations?: boolean | cdktn.IResolvable;
 }
@@ -5180,7 +5329,7 @@ export interface AccountNetworkPolicyIngressPrivateAccessAllowRulesDestinationAc
 export function accountNetworkPolicyIngressPrivateAccessAllowRulesDestinationAccountUiToTerraform(struct?: AccountNetworkPolicyIngressPrivateAccessAllowRulesDestinationAccountUi | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     all_destinations: cdktn.booleanToTerraform(struct!.allDestinations),
@@ -5191,7 +5340,7 @@ export function accountNetworkPolicyIngressPrivateAccessAllowRulesDestinationAcc
 export function accountNetworkPolicyIngressPrivateAccessAllowRulesDestinationAccountUiToHclTerraform(struct?: AccountNetworkPolicyIngressPrivateAccessAllowRulesDestinationAccountUi | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     all_destinations: {
@@ -5266,7 +5415,7 @@ export class AccountNetworkPolicyIngressPrivateAccessAllowRulesDestinationAccoun
 }
 export interface AccountNetworkPolicyIngressPrivateAccessAllowRulesDestinationAppsRuntime {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_network_policy#all_destinations AccountNetworkPolicy#all_destinations}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_network_policy#all_destinations AccountNetworkPolicy#all_destinations}
   */
   readonly allDestinations?: boolean | cdktn.IResolvable;
 }
@@ -5274,7 +5423,7 @@ export interface AccountNetworkPolicyIngressPrivateAccessAllowRulesDestinationAp
 export function accountNetworkPolicyIngressPrivateAccessAllowRulesDestinationAppsRuntimeToTerraform(struct?: AccountNetworkPolicyIngressPrivateAccessAllowRulesDestinationAppsRuntime | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     all_destinations: cdktn.booleanToTerraform(struct!.allDestinations),
@@ -5285,7 +5434,7 @@ export function accountNetworkPolicyIngressPrivateAccessAllowRulesDestinationApp
 export function accountNetworkPolicyIngressPrivateAccessAllowRulesDestinationAppsRuntimeToHclTerraform(struct?: AccountNetworkPolicyIngressPrivateAccessAllowRulesDestinationAppsRuntime | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     all_destinations: {
@@ -5360,7 +5509,7 @@ export class AccountNetworkPolicyIngressPrivateAccessAllowRulesDestinationAppsRu
 }
 export interface AccountNetworkPolicyIngressPrivateAccessAllowRulesDestinationLakebaseRuntime {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_network_policy#all_destinations AccountNetworkPolicy#all_destinations}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_network_policy#all_destinations AccountNetworkPolicy#all_destinations}
   */
   readonly allDestinations?: boolean | cdktn.IResolvable;
 }
@@ -5368,7 +5517,7 @@ export interface AccountNetworkPolicyIngressPrivateAccessAllowRulesDestinationLa
 export function accountNetworkPolicyIngressPrivateAccessAllowRulesDestinationLakebaseRuntimeToTerraform(struct?: AccountNetworkPolicyIngressPrivateAccessAllowRulesDestinationLakebaseRuntime | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     all_destinations: cdktn.booleanToTerraform(struct!.allDestinations),
@@ -5379,7 +5528,7 @@ export function accountNetworkPolicyIngressPrivateAccessAllowRulesDestinationLak
 export function accountNetworkPolicyIngressPrivateAccessAllowRulesDestinationLakebaseRuntimeToHclTerraform(struct?: AccountNetworkPolicyIngressPrivateAccessAllowRulesDestinationLakebaseRuntime | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     all_destinations: {
@@ -5454,11 +5603,11 @@ export class AccountNetworkPolicyIngressPrivateAccessAllowRulesDestinationLakeba
 }
 export interface AccountNetworkPolicyIngressPrivateAccessAllowRulesDestinationWorkspaceApi {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_network_policy#scope_qualifier AccountNetworkPolicy#scope_qualifier}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_network_policy#scope_qualifier AccountNetworkPolicy#scope_qualifier}
   */
   readonly scopeQualifier?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_network_policy#scopes AccountNetworkPolicy#scopes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_network_policy#scopes AccountNetworkPolicy#scopes}
   */
   readonly scopes?: string[];
 }
@@ -5466,7 +5615,7 @@ export interface AccountNetworkPolicyIngressPrivateAccessAllowRulesDestinationWo
 export function accountNetworkPolicyIngressPrivateAccessAllowRulesDestinationWorkspaceApiToTerraform(struct?: AccountNetworkPolicyIngressPrivateAccessAllowRulesDestinationWorkspaceApi | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     scope_qualifier: cdktn.stringToTerraform(struct!.scopeQualifier),
@@ -5478,7 +5627,7 @@ export function accountNetworkPolicyIngressPrivateAccessAllowRulesDestinationWor
 export function accountNetworkPolicyIngressPrivateAccessAllowRulesDestinationWorkspaceApiToHclTerraform(struct?: AccountNetworkPolicyIngressPrivateAccessAllowRulesDestinationWorkspaceApi | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     scope_qualifier: {
@@ -5581,7 +5730,7 @@ export class AccountNetworkPolicyIngressPrivateAccessAllowRulesDestinationWorksp
 }
 export interface AccountNetworkPolicyIngressPrivateAccessAllowRulesDestinationWorkspaceUi {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_network_policy#all_destinations AccountNetworkPolicy#all_destinations}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_network_policy#all_destinations AccountNetworkPolicy#all_destinations}
   */
   readonly allDestinations?: boolean | cdktn.IResolvable;
 }
@@ -5589,7 +5738,7 @@ export interface AccountNetworkPolicyIngressPrivateAccessAllowRulesDestinationWo
 export function accountNetworkPolicyIngressPrivateAccessAllowRulesDestinationWorkspaceUiToTerraform(struct?: AccountNetworkPolicyIngressPrivateAccessAllowRulesDestinationWorkspaceUi | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     all_destinations: cdktn.booleanToTerraform(struct!.allDestinations),
@@ -5600,7 +5749,7 @@ export function accountNetworkPolicyIngressPrivateAccessAllowRulesDestinationWor
 export function accountNetworkPolicyIngressPrivateAccessAllowRulesDestinationWorkspaceUiToHclTerraform(struct?: AccountNetworkPolicyIngressPrivateAccessAllowRulesDestinationWorkspaceUi | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     all_destinations: {
@@ -5675,35 +5824,35 @@ export class AccountNetworkPolicyIngressPrivateAccessAllowRulesDestinationWorksp
 }
 export interface AccountNetworkPolicyIngressPrivateAccessAllowRulesDestination {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_network_policy#account_api AccountNetworkPolicy#account_api}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_network_policy#account_api AccountNetworkPolicy#account_api}
   */
   readonly accountApi?: AccountNetworkPolicyIngressPrivateAccessAllowRulesDestinationAccountApi;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_network_policy#account_databricks_one AccountNetworkPolicy#account_databricks_one}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_network_policy#account_databricks_one AccountNetworkPolicy#account_databricks_one}
   */
   readonly accountDatabricksOne?: AccountNetworkPolicyIngressPrivateAccessAllowRulesDestinationAccountDatabricksOne;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_network_policy#account_ui AccountNetworkPolicy#account_ui}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_network_policy#account_ui AccountNetworkPolicy#account_ui}
   */
   readonly accountUi?: AccountNetworkPolicyIngressPrivateAccessAllowRulesDestinationAccountUi;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_network_policy#all_destinations AccountNetworkPolicy#all_destinations}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_network_policy#all_destinations AccountNetworkPolicy#all_destinations}
   */
   readonly allDestinations?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_network_policy#apps_runtime AccountNetworkPolicy#apps_runtime}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_network_policy#apps_runtime AccountNetworkPolicy#apps_runtime}
   */
   readonly appsRuntime?: AccountNetworkPolicyIngressPrivateAccessAllowRulesDestinationAppsRuntime;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_network_policy#lakebase_runtime AccountNetworkPolicy#lakebase_runtime}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_network_policy#lakebase_runtime AccountNetworkPolicy#lakebase_runtime}
   */
   readonly lakebaseRuntime?: AccountNetworkPolicyIngressPrivateAccessAllowRulesDestinationLakebaseRuntime;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_network_policy#workspace_api AccountNetworkPolicy#workspace_api}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_network_policy#workspace_api AccountNetworkPolicy#workspace_api}
   */
   readonly workspaceApi?: AccountNetworkPolicyIngressPrivateAccessAllowRulesDestinationWorkspaceApi;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_network_policy#workspace_ui AccountNetworkPolicy#workspace_ui}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_network_policy#workspace_ui AccountNetworkPolicy#workspace_ui}
   */
   readonly workspaceUi?: AccountNetworkPolicyIngressPrivateAccessAllowRulesDestinationWorkspaceUi;
 }
@@ -5711,7 +5860,7 @@ export interface AccountNetworkPolicyIngressPrivateAccessAllowRulesDestination {
 export function accountNetworkPolicyIngressPrivateAccessAllowRulesDestinationToTerraform(struct?: AccountNetworkPolicyIngressPrivateAccessAllowRulesDestination | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     account_api: accountNetworkPolicyIngressPrivateAccessAllowRulesDestinationAccountApiToTerraform(struct!.accountApi),
@@ -5729,7 +5878,7 @@ export function accountNetworkPolicyIngressPrivateAccessAllowRulesDestinationToT
 export function accountNetworkPolicyIngressPrivateAccessAllowRulesDestinationToHclTerraform(struct?: AccountNetworkPolicyIngressPrivateAccessAllowRulesDestination | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     account_api: {
@@ -6000,7 +6149,7 @@ export class AccountNetworkPolicyIngressPrivateAccessAllowRulesDestinationOutput
 }
 export interface AccountNetworkPolicyIngressPrivateAccessAllowRulesOriginEndpoints {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_network_policy#endpoint_ids AccountNetworkPolicy#endpoint_ids}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_network_policy#endpoint_ids AccountNetworkPolicy#endpoint_ids}
   */
   readonly endpointIds?: string[];
 }
@@ -6008,7 +6157,7 @@ export interface AccountNetworkPolicyIngressPrivateAccessAllowRulesOriginEndpoin
 export function accountNetworkPolicyIngressPrivateAccessAllowRulesOriginEndpointsToTerraform(struct?: AccountNetworkPolicyIngressPrivateAccessAllowRulesOriginEndpoints | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     endpoint_ids: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.endpointIds),
@@ -6019,7 +6168,7 @@ export function accountNetworkPolicyIngressPrivateAccessAllowRulesOriginEndpoint
 export function accountNetworkPolicyIngressPrivateAccessAllowRulesOriginEndpointsToHclTerraform(struct?: AccountNetworkPolicyIngressPrivateAccessAllowRulesOriginEndpoints | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     endpoint_ids: {
@@ -6094,19 +6243,19 @@ export class AccountNetworkPolicyIngressPrivateAccessAllowRulesOriginEndpointsOu
 }
 export interface AccountNetworkPolicyIngressPrivateAccessAllowRulesOrigin {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_network_policy#all_private_access AccountNetworkPolicy#all_private_access}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_network_policy#all_private_access AccountNetworkPolicy#all_private_access}
   */
   readonly allPrivateAccess?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_network_policy#all_registered_endpoints AccountNetworkPolicy#all_registered_endpoints}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_network_policy#all_registered_endpoints AccountNetworkPolicy#all_registered_endpoints}
   */
   readonly allRegisteredEndpoints?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_network_policy#azure_workspace_private_link AccountNetworkPolicy#azure_workspace_private_link}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_network_policy#azure_workspace_private_link AccountNetworkPolicy#azure_workspace_private_link}
   */
   readonly azureWorkspacePrivateLink?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_network_policy#endpoints AccountNetworkPolicy#endpoints}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_network_policy#endpoints AccountNetworkPolicy#endpoints}
   */
   readonly endpoints?: AccountNetworkPolicyIngressPrivateAccessAllowRulesOriginEndpoints;
 }
@@ -6114,7 +6263,7 @@ export interface AccountNetworkPolicyIngressPrivateAccessAllowRulesOrigin {
 export function accountNetworkPolicyIngressPrivateAccessAllowRulesOriginToTerraform(struct?: AccountNetworkPolicyIngressPrivateAccessAllowRulesOrigin | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     all_private_access: cdktn.booleanToTerraform(struct!.allPrivateAccess),
@@ -6128,7 +6277,7 @@ export function accountNetworkPolicyIngressPrivateAccessAllowRulesOriginToTerraf
 export function accountNetworkPolicyIngressPrivateAccessAllowRulesOriginToHclTerraform(struct?: AccountNetworkPolicyIngressPrivateAccessAllowRulesOrigin | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     all_private_access: {
@@ -6287,19 +6436,19 @@ export class AccountNetworkPolicyIngressPrivateAccessAllowRulesOriginOutputRefer
 }
 export interface AccountNetworkPolicyIngressPrivateAccessAllowRules {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_network_policy#authentication AccountNetworkPolicy#authentication}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_network_policy#authentication AccountNetworkPolicy#authentication}
   */
   readonly authentication?: AccountNetworkPolicyIngressPrivateAccessAllowRulesAuthentication;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_network_policy#destination AccountNetworkPolicy#destination}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_network_policy#destination AccountNetworkPolicy#destination}
   */
   readonly destination?: AccountNetworkPolicyIngressPrivateAccessAllowRulesDestination;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_network_policy#label AccountNetworkPolicy#label}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_network_policy#label AccountNetworkPolicy#label}
   */
   readonly label?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_network_policy#origin AccountNetworkPolicy#origin}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_network_policy#origin AccountNetworkPolicy#origin}
   */
   readonly origin?: AccountNetworkPolicyIngressPrivateAccessAllowRulesOrigin;
 }
@@ -6307,7 +6456,7 @@ export interface AccountNetworkPolicyIngressPrivateAccessAllowRules {
 export function accountNetworkPolicyIngressPrivateAccessAllowRulesToTerraform(struct?: AccountNetworkPolicyIngressPrivateAccessAllowRules | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     authentication: accountNetworkPolicyIngressPrivateAccessAllowRulesAuthenticationToTerraform(struct!.authentication),
@@ -6321,7 +6470,7 @@ export function accountNetworkPolicyIngressPrivateAccessAllowRulesToTerraform(st
 export function accountNetworkPolicyIngressPrivateAccessAllowRulesToHclTerraform(struct?: AccountNetworkPolicyIngressPrivateAccessAllowRules | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     authentication: {
@@ -6502,11 +6651,11 @@ export class AccountNetworkPolicyIngressPrivateAccessAllowRulesList extends cdkt
 }
 export interface AccountNetworkPolicyIngressPrivateAccessDenyRulesAuthenticationIdentities {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_network_policy#principal_id AccountNetworkPolicy#principal_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_network_policy#principal_id AccountNetworkPolicy#principal_id}
   */
   readonly principalId?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_network_policy#principal_type AccountNetworkPolicy#principal_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_network_policy#principal_type AccountNetworkPolicy#principal_type}
   */
   readonly principalType?: string;
 }
@@ -6514,7 +6663,7 @@ export interface AccountNetworkPolicyIngressPrivateAccessDenyRulesAuthentication
 export function accountNetworkPolicyIngressPrivateAccessDenyRulesAuthenticationIdentitiesToTerraform(struct?: AccountNetworkPolicyIngressPrivateAccessDenyRulesAuthenticationIdentities | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     principal_id: cdktn.numberToTerraform(struct!.principalId),
@@ -6526,7 +6675,7 @@ export function accountNetworkPolicyIngressPrivateAccessDenyRulesAuthenticationI
 export function accountNetworkPolicyIngressPrivateAccessDenyRulesAuthenticationIdentitiesToHclTerraform(struct?: AccountNetworkPolicyIngressPrivateAccessDenyRulesAuthenticationIdentities | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     principal_id: {
@@ -6651,11 +6800,11 @@ export class AccountNetworkPolicyIngressPrivateAccessDenyRulesAuthenticationIden
 }
 export interface AccountNetworkPolicyIngressPrivateAccessDenyRulesAuthentication {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_network_policy#identities AccountNetworkPolicy#identities}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_network_policy#identities AccountNetworkPolicy#identities}
   */
   readonly identities?: AccountNetworkPolicyIngressPrivateAccessDenyRulesAuthenticationIdentities[] | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_network_policy#identity_type AccountNetworkPolicy#identity_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_network_policy#identity_type AccountNetworkPolicy#identity_type}
   */
   readonly identityType?: string;
 }
@@ -6663,7 +6812,7 @@ export interface AccountNetworkPolicyIngressPrivateAccessDenyRulesAuthentication
 export function accountNetworkPolicyIngressPrivateAccessDenyRulesAuthenticationToTerraform(struct?: AccountNetworkPolicyIngressPrivateAccessDenyRulesAuthentication | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     identities: cdktn.listMapper(accountNetworkPolicyIngressPrivateAccessDenyRulesAuthenticationIdentitiesToTerraform, false)(struct!.identities),
@@ -6675,7 +6824,7 @@ export function accountNetworkPolicyIngressPrivateAccessDenyRulesAuthenticationT
 export function accountNetworkPolicyIngressPrivateAccessDenyRulesAuthenticationToHclTerraform(struct?: AccountNetworkPolicyIngressPrivateAccessDenyRulesAuthentication | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     identities: {
@@ -6778,11 +6927,11 @@ export class AccountNetworkPolicyIngressPrivateAccessDenyRulesAuthenticationOutp
 }
 export interface AccountNetworkPolicyIngressPrivateAccessDenyRulesDestinationAccountApi {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_network_policy#scope_qualifier AccountNetworkPolicy#scope_qualifier}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_network_policy#scope_qualifier AccountNetworkPolicy#scope_qualifier}
   */
   readonly scopeQualifier?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_network_policy#scopes AccountNetworkPolicy#scopes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_network_policy#scopes AccountNetworkPolicy#scopes}
   */
   readonly scopes?: string[];
 }
@@ -6790,7 +6939,7 @@ export interface AccountNetworkPolicyIngressPrivateAccessDenyRulesDestinationAcc
 export function accountNetworkPolicyIngressPrivateAccessDenyRulesDestinationAccountApiToTerraform(struct?: AccountNetworkPolicyIngressPrivateAccessDenyRulesDestinationAccountApi | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     scope_qualifier: cdktn.stringToTerraform(struct!.scopeQualifier),
@@ -6802,7 +6951,7 @@ export function accountNetworkPolicyIngressPrivateAccessDenyRulesDestinationAcco
 export function accountNetworkPolicyIngressPrivateAccessDenyRulesDestinationAccountApiToHclTerraform(struct?: AccountNetworkPolicyIngressPrivateAccessDenyRulesDestinationAccountApi | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     scope_qualifier: {
@@ -6905,7 +7054,7 @@ export class AccountNetworkPolicyIngressPrivateAccessDenyRulesDestinationAccount
 }
 export interface AccountNetworkPolicyIngressPrivateAccessDenyRulesDestinationAccountDatabricksOne {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_network_policy#all_destinations AccountNetworkPolicy#all_destinations}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_network_policy#all_destinations AccountNetworkPolicy#all_destinations}
   */
   readonly allDestinations?: boolean | cdktn.IResolvable;
 }
@@ -6913,7 +7062,7 @@ export interface AccountNetworkPolicyIngressPrivateAccessDenyRulesDestinationAcc
 export function accountNetworkPolicyIngressPrivateAccessDenyRulesDestinationAccountDatabricksOneToTerraform(struct?: AccountNetworkPolicyIngressPrivateAccessDenyRulesDestinationAccountDatabricksOne | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     all_destinations: cdktn.booleanToTerraform(struct!.allDestinations),
@@ -6924,7 +7073,7 @@ export function accountNetworkPolicyIngressPrivateAccessDenyRulesDestinationAcco
 export function accountNetworkPolicyIngressPrivateAccessDenyRulesDestinationAccountDatabricksOneToHclTerraform(struct?: AccountNetworkPolicyIngressPrivateAccessDenyRulesDestinationAccountDatabricksOne | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     all_destinations: {
@@ -6999,7 +7148,7 @@ export class AccountNetworkPolicyIngressPrivateAccessDenyRulesDestinationAccount
 }
 export interface AccountNetworkPolicyIngressPrivateAccessDenyRulesDestinationAccountUi {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_network_policy#all_destinations AccountNetworkPolicy#all_destinations}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_network_policy#all_destinations AccountNetworkPolicy#all_destinations}
   */
   readonly allDestinations?: boolean | cdktn.IResolvable;
 }
@@ -7007,7 +7156,7 @@ export interface AccountNetworkPolicyIngressPrivateAccessDenyRulesDestinationAcc
 export function accountNetworkPolicyIngressPrivateAccessDenyRulesDestinationAccountUiToTerraform(struct?: AccountNetworkPolicyIngressPrivateAccessDenyRulesDestinationAccountUi | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     all_destinations: cdktn.booleanToTerraform(struct!.allDestinations),
@@ -7018,7 +7167,7 @@ export function accountNetworkPolicyIngressPrivateAccessDenyRulesDestinationAcco
 export function accountNetworkPolicyIngressPrivateAccessDenyRulesDestinationAccountUiToHclTerraform(struct?: AccountNetworkPolicyIngressPrivateAccessDenyRulesDestinationAccountUi | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     all_destinations: {
@@ -7093,7 +7242,7 @@ export class AccountNetworkPolicyIngressPrivateAccessDenyRulesDestinationAccount
 }
 export interface AccountNetworkPolicyIngressPrivateAccessDenyRulesDestinationAppsRuntime {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_network_policy#all_destinations AccountNetworkPolicy#all_destinations}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_network_policy#all_destinations AccountNetworkPolicy#all_destinations}
   */
   readonly allDestinations?: boolean | cdktn.IResolvable;
 }
@@ -7101,7 +7250,7 @@ export interface AccountNetworkPolicyIngressPrivateAccessDenyRulesDestinationApp
 export function accountNetworkPolicyIngressPrivateAccessDenyRulesDestinationAppsRuntimeToTerraform(struct?: AccountNetworkPolicyIngressPrivateAccessDenyRulesDestinationAppsRuntime | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     all_destinations: cdktn.booleanToTerraform(struct!.allDestinations),
@@ -7112,7 +7261,7 @@ export function accountNetworkPolicyIngressPrivateAccessDenyRulesDestinationApps
 export function accountNetworkPolicyIngressPrivateAccessDenyRulesDestinationAppsRuntimeToHclTerraform(struct?: AccountNetworkPolicyIngressPrivateAccessDenyRulesDestinationAppsRuntime | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     all_destinations: {
@@ -7187,7 +7336,7 @@ export class AccountNetworkPolicyIngressPrivateAccessDenyRulesDestinationAppsRun
 }
 export interface AccountNetworkPolicyIngressPrivateAccessDenyRulesDestinationLakebaseRuntime {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_network_policy#all_destinations AccountNetworkPolicy#all_destinations}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_network_policy#all_destinations AccountNetworkPolicy#all_destinations}
   */
   readonly allDestinations?: boolean | cdktn.IResolvable;
 }
@@ -7195,7 +7344,7 @@ export interface AccountNetworkPolicyIngressPrivateAccessDenyRulesDestinationLak
 export function accountNetworkPolicyIngressPrivateAccessDenyRulesDestinationLakebaseRuntimeToTerraform(struct?: AccountNetworkPolicyIngressPrivateAccessDenyRulesDestinationLakebaseRuntime | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     all_destinations: cdktn.booleanToTerraform(struct!.allDestinations),
@@ -7206,7 +7355,7 @@ export function accountNetworkPolicyIngressPrivateAccessDenyRulesDestinationLake
 export function accountNetworkPolicyIngressPrivateAccessDenyRulesDestinationLakebaseRuntimeToHclTerraform(struct?: AccountNetworkPolicyIngressPrivateAccessDenyRulesDestinationLakebaseRuntime | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     all_destinations: {
@@ -7281,11 +7430,11 @@ export class AccountNetworkPolicyIngressPrivateAccessDenyRulesDestinationLakebas
 }
 export interface AccountNetworkPolicyIngressPrivateAccessDenyRulesDestinationWorkspaceApi {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_network_policy#scope_qualifier AccountNetworkPolicy#scope_qualifier}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_network_policy#scope_qualifier AccountNetworkPolicy#scope_qualifier}
   */
   readonly scopeQualifier?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_network_policy#scopes AccountNetworkPolicy#scopes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_network_policy#scopes AccountNetworkPolicy#scopes}
   */
   readonly scopes?: string[];
 }
@@ -7293,7 +7442,7 @@ export interface AccountNetworkPolicyIngressPrivateAccessDenyRulesDestinationWor
 export function accountNetworkPolicyIngressPrivateAccessDenyRulesDestinationWorkspaceApiToTerraform(struct?: AccountNetworkPolicyIngressPrivateAccessDenyRulesDestinationWorkspaceApi | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     scope_qualifier: cdktn.stringToTerraform(struct!.scopeQualifier),
@@ -7305,7 +7454,7 @@ export function accountNetworkPolicyIngressPrivateAccessDenyRulesDestinationWork
 export function accountNetworkPolicyIngressPrivateAccessDenyRulesDestinationWorkspaceApiToHclTerraform(struct?: AccountNetworkPolicyIngressPrivateAccessDenyRulesDestinationWorkspaceApi | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     scope_qualifier: {
@@ -7408,7 +7557,7 @@ export class AccountNetworkPolicyIngressPrivateAccessDenyRulesDestinationWorkspa
 }
 export interface AccountNetworkPolicyIngressPrivateAccessDenyRulesDestinationWorkspaceUi {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_network_policy#all_destinations AccountNetworkPolicy#all_destinations}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_network_policy#all_destinations AccountNetworkPolicy#all_destinations}
   */
   readonly allDestinations?: boolean | cdktn.IResolvable;
 }
@@ -7416,7 +7565,7 @@ export interface AccountNetworkPolicyIngressPrivateAccessDenyRulesDestinationWor
 export function accountNetworkPolicyIngressPrivateAccessDenyRulesDestinationWorkspaceUiToTerraform(struct?: AccountNetworkPolicyIngressPrivateAccessDenyRulesDestinationWorkspaceUi | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     all_destinations: cdktn.booleanToTerraform(struct!.allDestinations),
@@ -7427,7 +7576,7 @@ export function accountNetworkPolicyIngressPrivateAccessDenyRulesDestinationWork
 export function accountNetworkPolicyIngressPrivateAccessDenyRulesDestinationWorkspaceUiToHclTerraform(struct?: AccountNetworkPolicyIngressPrivateAccessDenyRulesDestinationWorkspaceUi | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     all_destinations: {
@@ -7502,35 +7651,35 @@ export class AccountNetworkPolicyIngressPrivateAccessDenyRulesDestinationWorkspa
 }
 export interface AccountNetworkPolicyIngressPrivateAccessDenyRulesDestination {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_network_policy#account_api AccountNetworkPolicy#account_api}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_network_policy#account_api AccountNetworkPolicy#account_api}
   */
   readonly accountApi?: AccountNetworkPolicyIngressPrivateAccessDenyRulesDestinationAccountApi;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_network_policy#account_databricks_one AccountNetworkPolicy#account_databricks_one}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_network_policy#account_databricks_one AccountNetworkPolicy#account_databricks_one}
   */
   readonly accountDatabricksOne?: AccountNetworkPolicyIngressPrivateAccessDenyRulesDestinationAccountDatabricksOne;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_network_policy#account_ui AccountNetworkPolicy#account_ui}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_network_policy#account_ui AccountNetworkPolicy#account_ui}
   */
   readonly accountUi?: AccountNetworkPolicyIngressPrivateAccessDenyRulesDestinationAccountUi;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_network_policy#all_destinations AccountNetworkPolicy#all_destinations}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_network_policy#all_destinations AccountNetworkPolicy#all_destinations}
   */
   readonly allDestinations?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_network_policy#apps_runtime AccountNetworkPolicy#apps_runtime}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_network_policy#apps_runtime AccountNetworkPolicy#apps_runtime}
   */
   readonly appsRuntime?: AccountNetworkPolicyIngressPrivateAccessDenyRulesDestinationAppsRuntime;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_network_policy#lakebase_runtime AccountNetworkPolicy#lakebase_runtime}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_network_policy#lakebase_runtime AccountNetworkPolicy#lakebase_runtime}
   */
   readonly lakebaseRuntime?: AccountNetworkPolicyIngressPrivateAccessDenyRulesDestinationLakebaseRuntime;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_network_policy#workspace_api AccountNetworkPolicy#workspace_api}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_network_policy#workspace_api AccountNetworkPolicy#workspace_api}
   */
   readonly workspaceApi?: AccountNetworkPolicyIngressPrivateAccessDenyRulesDestinationWorkspaceApi;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_network_policy#workspace_ui AccountNetworkPolicy#workspace_ui}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_network_policy#workspace_ui AccountNetworkPolicy#workspace_ui}
   */
   readonly workspaceUi?: AccountNetworkPolicyIngressPrivateAccessDenyRulesDestinationWorkspaceUi;
 }
@@ -7538,7 +7687,7 @@ export interface AccountNetworkPolicyIngressPrivateAccessDenyRulesDestination {
 export function accountNetworkPolicyIngressPrivateAccessDenyRulesDestinationToTerraform(struct?: AccountNetworkPolicyIngressPrivateAccessDenyRulesDestination | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     account_api: accountNetworkPolicyIngressPrivateAccessDenyRulesDestinationAccountApiToTerraform(struct!.accountApi),
@@ -7556,7 +7705,7 @@ export function accountNetworkPolicyIngressPrivateAccessDenyRulesDestinationToTe
 export function accountNetworkPolicyIngressPrivateAccessDenyRulesDestinationToHclTerraform(struct?: AccountNetworkPolicyIngressPrivateAccessDenyRulesDestination | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     account_api: {
@@ -7827,7 +7976,7 @@ export class AccountNetworkPolicyIngressPrivateAccessDenyRulesDestinationOutputR
 }
 export interface AccountNetworkPolicyIngressPrivateAccessDenyRulesOriginEndpoints {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_network_policy#endpoint_ids AccountNetworkPolicy#endpoint_ids}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_network_policy#endpoint_ids AccountNetworkPolicy#endpoint_ids}
   */
   readonly endpointIds?: string[];
 }
@@ -7835,7 +7984,7 @@ export interface AccountNetworkPolicyIngressPrivateAccessDenyRulesOriginEndpoint
 export function accountNetworkPolicyIngressPrivateAccessDenyRulesOriginEndpointsToTerraform(struct?: AccountNetworkPolicyIngressPrivateAccessDenyRulesOriginEndpoints | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     endpoint_ids: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.endpointIds),
@@ -7846,7 +7995,7 @@ export function accountNetworkPolicyIngressPrivateAccessDenyRulesOriginEndpoints
 export function accountNetworkPolicyIngressPrivateAccessDenyRulesOriginEndpointsToHclTerraform(struct?: AccountNetworkPolicyIngressPrivateAccessDenyRulesOriginEndpoints | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     endpoint_ids: {
@@ -7921,19 +8070,19 @@ export class AccountNetworkPolicyIngressPrivateAccessDenyRulesOriginEndpointsOut
 }
 export interface AccountNetworkPolicyIngressPrivateAccessDenyRulesOrigin {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_network_policy#all_private_access AccountNetworkPolicy#all_private_access}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_network_policy#all_private_access AccountNetworkPolicy#all_private_access}
   */
   readonly allPrivateAccess?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_network_policy#all_registered_endpoints AccountNetworkPolicy#all_registered_endpoints}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_network_policy#all_registered_endpoints AccountNetworkPolicy#all_registered_endpoints}
   */
   readonly allRegisteredEndpoints?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_network_policy#azure_workspace_private_link AccountNetworkPolicy#azure_workspace_private_link}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_network_policy#azure_workspace_private_link AccountNetworkPolicy#azure_workspace_private_link}
   */
   readonly azureWorkspacePrivateLink?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_network_policy#endpoints AccountNetworkPolicy#endpoints}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_network_policy#endpoints AccountNetworkPolicy#endpoints}
   */
   readonly endpoints?: AccountNetworkPolicyIngressPrivateAccessDenyRulesOriginEndpoints;
 }
@@ -7941,7 +8090,7 @@ export interface AccountNetworkPolicyIngressPrivateAccessDenyRulesOrigin {
 export function accountNetworkPolicyIngressPrivateAccessDenyRulesOriginToTerraform(struct?: AccountNetworkPolicyIngressPrivateAccessDenyRulesOrigin | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     all_private_access: cdktn.booleanToTerraform(struct!.allPrivateAccess),
@@ -7955,7 +8104,7 @@ export function accountNetworkPolicyIngressPrivateAccessDenyRulesOriginToTerrafo
 export function accountNetworkPolicyIngressPrivateAccessDenyRulesOriginToHclTerraform(struct?: AccountNetworkPolicyIngressPrivateAccessDenyRulesOrigin | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     all_private_access: {
@@ -8114,19 +8263,19 @@ export class AccountNetworkPolicyIngressPrivateAccessDenyRulesOriginOutputRefere
 }
 export interface AccountNetworkPolicyIngressPrivateAccessDenyRules {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_network_policy#authentication AccountNetworkPolicy#authentication}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_network_policy#authentication AccountNetworkPolicy#authentication}
   */
   readonly authentication?: AccountNetworkPolicyIngressPrivateAccessDenyRulesAuthentication;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_network_policy#destination AccountNetworkPolicy#destination}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_network_policy#destination AccountNetworkPolicy#destination}
   */
   readonly destination?: AccountNetworkPolicyIngressPrivateAccessDenyRulesDestination;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_network_policy#label AccountNetworkPolicy#label}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_network_policy#label AccountNetworkPolicy#label}
   */
   readonly label?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_network_policy#origin AccountNetworkPolicy#origin}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_network_policy#origin AccountNetworkPolicy#origin}
   */
   readonly origin?: AccountNetworkPolicyIngressPrivateAccessDenyRulesOrigin;
 }
@@ -8134,7 +8283,7 @@ export interface AccountNetworkPolicyIngressPrivateAccessDenyRules {
 export function accountNetworkPolicyIngressPrivateAccessDenyRulesToTerraform(struct?: AccountNetworkPolicyIngressPrivateAccessDenyRules | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     authentication: accountNetworkPolicyIngressPrivateAccessDenyRulesAuthenticationToTerraform(struct!.authentication),
@@ -8148,7 +8297,7 @@ export function accountNetworkPolicyIngressPrivateAccessDenyRulesToTerraform(str
 export function accountNetworkPolicyIngressPrivateAccessDenyRulesToHclTerraform(struct?: AccountNetworkPolicyIngressPrivateAccessDenyRules | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     authentication: {
@@ -8329,15 +8478,15 @@ export class AccountNetworkPolicyIngressPrivateAccessDenyRulesList extends cdktn
 }
 export interface AccountNetworkPolicyIngressPrivateAccess {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_network_policy#allow_rules AccountNetworkPolicy#allow_rules}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_network_policy#allow_rules AccountNetworkPolicy#allow_rules}
   */
   readonly allowRules?: AccountNetworkPolicyIngressPrivateAccessAllowRules[] | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_network_policy#deny_rules AccountNetworkPolicy#deny_rules}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_network_policy#deny_rules AccountNetworkPolicy#deny_rules}
   */
   readonly denyRules?: AccountNetworkPolicyIngressPrivateAccessDenyRules[] | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_network_policy#restriction_mode AccountNetworkPolicy#restriction_mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_network_policy#restriction_mode AccountNetworkPolicy#restriction_mode}
   */
   readonly restrictionMode: string;
 }
@@ -8345,7 +8494,7 @@ export interface AccountNetworkPolicyIngressPrivateAccess {
 export function accountNetworkPolicyIngressPrivateAccessToTerraform(struct?: AccountNetworkPolicyIngressPrivateAccess | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     allow_rules: cdktn.listMapper(accountNetworkPolicyIngressPrivateAccessAllowRulesToTerraform, false)(struct!.allowRules),
@@ -8358,7 +8507,7 @@ export function accountNetworkPolicyIngressPrivateAccessToTerraform(struct?: Acc
 export function accountNetworkPolicyIngressPrivateAccessToHclTerraform(struct?: AccountNetworkPolicyIngressPrivateAccess | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     allow_rules: {
@@ -8486,11 +8635,11 @@ export class AccountNetworkPolicyIngressPrivateAccessOutputReference extends cdk
 }
 export interface AccountNetworkPolicyIngressPublicAccessAllowRulesAuthenticationIdentities {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_network_policy#principal_id AccountNetworkPolicy#principal_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_network_policy#principal_id AccountNetworkPolicy#principal_id}
   */
   readonly principalId?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_network_policy#principal_type AccountNetworkPolicy#principal_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_network_policy#principal_type AccountNetworkPolicy#principal_type}
   */
   readonly principalType?: string;
 }
@@ -8498,7 +8647,7 @@ export interface AccountNetworkPolicyIngressPublicAccessAllowRulesAuthentication
 export function accountNetworkPolicyIngressPublicAccessAllowRulesAuthenticationIdentitiesToTerraform(struct?: AccountNetworkPolicyIngressPublicAccessAllowRulesAuthenticationIdentities | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     principal_id: cdktn.numberToTerraform(struct!.principalId),
@@ -8510,7 +8659,7 @@ export function accountNetworkPolicyIngressPublicAccessAllowRulesAuthenticationI
 export function accountNetworkPolicyIngressPublicAccessAllowRulesAuthenticationIdentitiesToHclTerraform(struct?: AccountNetworkPolicyIngressPublicAccessAllowRulesAuthenticationIdentities | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     principal_id: {
@@ -8635,11 +8784,11 @@ export class AccountNetworkPolicyIngressPublicAccessAllowRulesAuthenticationIden
 }
 export interface AccountNetworkPolicyIngressPublicAccessAllowRulesAuthentication {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_network_policy#identities AccountNetworkPolicy#identities}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_network_policy#identities AccountNetworkPolicy#identities}
   */
   readonly identities?: AccountNetworkPolicyIngressPublicAccessAllowRulesAuthenticationIdentities[] | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_network_policy#identity_type AccountNetworkPolicy#identity_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_network_policy#identity_type AccountNetworkPolicy#identity_type}
   */
   readonly identityType?: string;
 }
@@ -8647,7 +8796,7 @@ export interface AccountNetworkPolicyIngressPublicAccessAllowRulesAuthentication
 export function accountNetworkPolicyIngressPublicAccessAllowRulesAuthenticationToTerraform(struct?: AccountNetworkPolicyIngressPublicAccessAllowRulesAuthentication | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     identities: cdktn.listMapper(accountNetworkPolicyIngressPublicAccessAllowRulesAuthenticationIdentitiesToTerraform, false)(struct!.identities),
@@ -8659,7 +8808,7 @@ export function accountNetworkPolicyIngressPublicAccessAllowRulesAuthenticationT
 export function accountNetworkPolicyIngressPublicAccessAllowRulesAuthenticationToHclTerraform(struct?: AccountNetworkPolicyIngressPublicAccessAllowRulesAuthentication | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     identities: {
@@ -8762,11 +8911,11 @@ export class AccountNetworkPolicyIngressPublicAccessAllowRulesAuthenticationOutp
 }
 export interface AccountNetworkPolicyIngressPublicAccessAllowRulesDestinationAccountApi {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_network_policy#scope_qualifier AccountNetworkPolicy#scope_qualifier}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_network_policy#scope_qualifier AccountNetworkPolicy#scope_qualifier}
   */
   readonly scopeQualifier?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_network_policy#scopes AccountNetworkPolicy#scopes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_network_policy#scopes AccountNetworkPolicy#scopes}
   */
   readonly scopes?: string[];
 }
@@ -8774,7 +8923,7 @@ export interface AccountNetworkPolicyIngressPublicAccessAllowRulesDestinationAcc
 export function accountNetworkPolicyIngressPublicAccessAllowRulesDestinationAccountApiToTerraform(struct?: AccountNetworkPolicyIngressPublicAccessAllowRulesDestinationAccountApi | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     scope_qualifier: cdktn.stringToTerraform(struct!.scopeQualifier),
@@ -8786,7 +8935,7 @@ export function accountNetworkPolicyIngressPublicAccessAllowRulesDestinationAcco
 export function accountNetworkPolicyIngressPublicAccessAllowRulesDestinationAccountApiToHclTerraform(struct?: AccountNetworkPolicyIngressPublicAccessAllowRulesDestinationAccountApi | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     scope_qualifier: {
@@ -8889,7 +9038,7 @@ export class AccountNetworkPolicyIngressPublicAccessAllowRulesDestinationAccount
 }
 export interface AccountNetworkPolicyIngressPublicAccessAllowRulesDestinationAccountDatabricksOne {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_network_policy#all_destinations AccountNetworkPolicy#all_destinations}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_network_policy#all_destinations AccountNetworkPolicy#all_destinations}
   */
   readonly allDestinations?: boolean | cdktn.IResolvable;
 }
@@ -8897,7 +9046,7 @@ export interface AccountNetworkPolicyIngressPublicAccessAllowRulesDestinationAcc
 export function accountNetworkPolicyIngressPublicAccessAllowRulesDestinationAccountDatabricksOneToTerraform(struct?: AccountNetworkPolicyIngressPublicAccessAllowRulesDestinationAccountDatabricksOne | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     all_destinations: cdktn.booleanToTerraform(struct!.allDestinations),
@@ -8908,7 +9057,7 @@ export function accountNetworkPolicyIngressPublicAccessAllowRulesDestinationAcco
 export function accountNetworkPolicyIngressPublicAccessAllowRulesDestinationAccountDatabricksOneToHclTerraform(struct?: AccountNetworkPolicyIngressPublicAccessAllowRulesDestinationAccountDatabricksOne | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     all_destinations: {
@@ -8983,7 +9132,7 @@ export class AccountNetworkPolicyIngressPublicAccessAllowRulesDestinationAccount
 }
 export interface AccountNetworkPolicyIngressPublicAccessAllowRulesDestinationAccountUi {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_network_policy#all_destinations AccountNetworkPolicy#all_destinations}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_network_policy#all_destinations AccountNetworkPolicy#all_destinations}
   */
   readonly allDestinations?: boolean | cdktn.IResolvable;
 }
@@ -8991,7 +9140,7 @@ export interface AccountNetworkPolicyIngressPublicAccessAllowRulesDestinationAcc
 export function accountNetworkPolicyIngressPublicAccessAllowRulesDestinationAccountUiToTerraform(struct?: AccountNetworkPolicyIngressPublicAccessAllowRulesDestinationAccountUi | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     all_destinations: cdktn.booleanToTerraform(struct!.allDestinations),
@@ -9002,7 +9151,7 @@ export function accountNetworkPolicyIngressPublicAccessAllowRulesDestinationAcco
 export function accountNetworkPolicyIngressPublicAccessAllowRulesDestinationAccountUiToHclTerraform(struct?: AccountNetworkPolicyIngressPublicAccessAllowRulesDestinationAccountUi | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     all_destinations: {
@@ -9077,7 +9226,7 @@ export class AccountNetworkPolicyIngressPublicAccessAllowRulesDestinationAccount
 }
 export interface AccountNetworkPolicyIngressPublicAccessAllowRulesDestinationAppsRuntime {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_network_policy#all_destinations AccountNetworkPolicy#all_destinations}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_network_policy#all_destinations AccountNetworkPolicy#all_destinations}
   */
   readonly allDestinations?: boolean | cdktn.IResolvable;
 }
@@ -9085,7 +9234,7 @@ export interface AccountNetworkPolicyIngressPublicAccessAllowRulesDestinationApp
 export function accountNetworkPolicyIngressPublicAccessAllowRulesDestinationAppsRuntimeToTerraform(struct?: AccountNetworkPolicyIngressPublicAccessAllowRulesDestinationAppsRuntime | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     all_destinations: cdktn.booleanToTerraform(struct!.allDestinations),
@@ -9096,7 +9245,7 @@ export function accountNetworkPolicyIngressPublicAccessAllowRulesDestinationApps
 export function accountNetworkPolicyIngressPublicAccessAllowRulesDestinationAppsRuntimeToHclTerraform(struct?: AccountNetworkPolicyIngressPublicAccessAllowRulesDestinationAppsRuntime | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     all_destinations: {
@@ -9171,7 +9320,7 @@ export class AccountNetworkPolicyIngressPublicAccessAllowRulesDestinationAppsRun
 }
 export interface AccountNetworkPolicyIngressPublicAccessAllowRulesDestinationLakebaseRuntime {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_network_policy#all_destinations AccountNetworkPolicy#all_destinations}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_network_policy#all_destinations AccountNetworkPolicy#all_destinations}
   */
   readonly allDestinations?: boolean | cdktn.IResolvable;
 }
@@ -9179,7 +9328,7 @@ export interface AccountNetworkPolicyIngressPublicAccessAllowRulesDestinationLak
 export function accountNetworkPolicyIngressPublicAccessAllowRulesDestinationLakebaseRuntimeToTerraform(struct?: AccountNetworkPolicyIngressPublicAccessAllowRulesDestinationLakebaseRuntime | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     all_destinations: cdktn.booleanToTerraform(struct!.allDestinations),
@@ -9190,7 +9339,7 @@ export function accountNetworkPolicyIngressPublicAccessAllowRulesDestinationLake
 export function accountNetworkPolicyIngressPublicAccessAllowRulesDestinationLakebaseRuntimeToHclTerraform(struct?: AccountNetworkPolicyIngressPublicAccessAllowRulesDestinationLakebaseRuntime | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     all_destinations: {
@@ -9265,11 +9414,11 @@ export class AccountNetworkPolicyIngressPublicAccessAllowRulesDestinationLakebas
 }
 export interface AccountNetworkPolicyIngressPublicAccessAllowRulesDestinationWorkspaceApi {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_network_policy#scope_qualifier AccountNetworkPolicy#scope_qualifier}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_network_policy#scope_qualifier AccountNetworkPolicy#scope_qualifier}
   */
   readonly scopeQualifier?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_network_policy#scopes AccountNetworkPolicy#scopes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_network_policy#scopes AccountNetworkPolicy#scopes}
   */
   readonly scopes?: string[];
 }
@@ -9277,7 +9426,7 @@ export interface AccountNetworkPolicyIngressPublicAccessAllowRulesDestinationWor
 export function accountNetworkPolicyIngressPublicAccessAllowRulesDestinationWorkspaceApiToTerraform(struct?: AccountNetworkPolicyIngressPublicAccessAllowRulesDestinationWorkspaceApi | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     scope_qualifier: cdktn.stringToTerraform(struct!.scopeQualifier),
@@ -9289,7 +9438,7 @@ export function accountNetworkPolicyIngressPublicAccessAllowRulesDestinationWork
 export function accountNetworkPolicyIngressPublicAccessAllowRulesDestinationWorkspaceApiToHclTerraform(struct?: AccountNetworkPolicyIngressPublicAccessAllowRulesDestinationWorkspaceApi | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     scope_qualifier: {
@@ -9392,7 +9541,7 @@ export class AccountNetworkPolicyIngressPublicAccessAllowRulesDestinationWorkspa
 }
 export interface AccountNetworkPolicyIngressPublicAccessAllowRulesDestinationWorkspaceUi {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_network_policy#all_destinations AccountNetworkPolicy#all_destinations}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_network_policy#all_destinations AccountNetworkPolicy#all_destinations}
   */
   readonly allDestinations?: boolean | cdktn.IResolvable;
 }
@@ -9400,7 +9549,7 @@ export interface AccountNetworkPolicyIngressPublicAccessAllowRulesDestinationWor
 export function accountNetworkPolicyIngressPublicAccessAllowRulesDestinationWorkspaceUiToTerraform(struct?: AccountNetworkPolicyIngressPublicAccessAllowRulesDestinationWorkspaceUi | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     all_destinations: cdktn.booleanToTerraform(struct!.allDestinations),
@@ -9411,7 +9560,7 @@ export function accountNetworkPolicyIngressPublicAccessAllowRulesDestinationWork
 export function accountNetworkPolicyIngressPublicAccessAllowRulesDestinationWorkspaceUiToHclTerraform(struct?: AccountNetworkPolicyIngressPublicAccessAllowRulesDestinationWorkspaceUi | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     all_destinations: {
@@ -9486,35 +9635,35 @@ export class AccountNetworkPolicyIngressPublicAccessAllowRulesDestinationWorkspa
 }
 export interface AccountNetworkPolicyIngressPublicAccessAllowRulesDestination {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_network_policy#account_api AccountNetworkPolicy#account_api}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_network_policy#account_api AccountNetworkPolicy#account_api}
   */
   readonly accountApi?: AccountNetworkPolicyIngressPublicAccessAllowRulesDestinationAccountApi;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_network_policy#account_databricks_one AccountNetworkPolicy#account_databricks_one}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_network_policy#account_databricks_one AccountNetworkPolicy#account_databricks_one}
   */
   readonly accountDatabricksOne?: AccountNetworkPolicyIngressPublicAccessAllowRulesDestinationAccountDatabricksOne;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_network_policy#account_ui AccountNetworkPolicy#account_ui}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_network_policy#account_ui AccountNetworkPolicy#account_ui}
   */
   readonly accountUi?: AccountNetworkPolicyIngressPublicAccessAllowRulesDestinationAccountUi;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_network_policy#all_destinations AccountNetworkPolicy#all_destinations}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_network_policy#all_destinations AccountNetworkPolicy#all_destinations}
   */
   readonly allDestinations?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_network_policy#apps_runtime AccountNetworkPolicy#apps_runtime}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_network_policy#apps_runtime AccountNetworkPolicy#apps_runtime}
   */
   readonly appsRuntime?: AccountNetworkPolicyIngressPublicAccessAllowRulesDestinationAppsRuntime;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_network_policy#lakebase_runtime AccountNetworkPolicy#lakebase_runtime}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_network_policy#lakebase_runtime AccountNetworkPolicy#lakebase_runtime}
   */
   readonly lakebaseRuntime?: AccountNetworkPolicyIngressPublicAccessAllowRulesDestinationLakebaseRuntime;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_network_policy#workspace_api AccountNetworkPolicy#workspace_api}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_network_policy#workspace_api AccountNetworkPolicy#workspace_api}
   */
   readonly workspaceApi?: AccountNetworkPolicyIngressPublicAccessAllowRulesDestinationWorkspaceApi;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_network_policy#workspace_ui AccountNetworkPolicy#workspace_ui}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_network_policy#workspace_ui AccountNetworkPolicy#workspace_ui}
   */
   readonly workspaceUi?: AccountNetworkPolicyIngressPublicAccessAllowRulesDestinationWorkspaceUi;
 }
@@ -9522,7 +9671,7 @@ export interface AccountNetworkPolicyIngressPublicAccessAllowRulesDestination {
 export function accountNetworkPolicyIngressPublicAccessAllowRulesDestinationToTerraform(struct?: AccountNetworkPolicyIngressPublicAccessAllowRulesDestination | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     account_api: accountNetworkPolicyIngressPublicAccessAllowRulesDestinationAccountApiToTerraform(struct!.accountApi),
@@ -9540,7 +9689,7 @@ export function accountNetworkPolicyIngressPublicAccessAllowRulesDestinationToTe
 export function accountNetworkPolicyIngressPublicAccessAllowRulesDestinationToHclTerraform(struct?: AccountNetworkPolicyIngressPublicAccessAllowRulesDestination | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     account_api: {
@@ -9811,7 +9960,7 @@ export class AccountNetworkPolicyIngressPublicAccessAllowRulesDestinationOutputR
 }
 export interface AccountNetworkPolicyIngressPublicAccessAllowRulesOriginExcludedIpRanges {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_network_policy#ip_ranges AccountNetworkPolicy#ip_ranges}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_network_policy#ip_ranges AccountNetworkPolicy#ip_ranges}
   */
   readonly ipRanges?: string[];
 }
@@ -9819,7 +9968,7 @@ export interface AccountNetworkPolicyIngressPublicAccessAllowRulesOriginExcluded
 export function accountNetworkPolicyIngressPublicAccessAllowRulesOriginExcludedIpRangesToTerraform(struct?: AccountNetworkPolicyIngressPublicAccessAllowRulesOriginExcludedIpRanges | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     ip_ranges: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.ipRanges),
@@ -9830,7 +9979,7 @@ export function accountNetworkPolicyIngressPublicAccessAllowRulesOriginExcludedI
 export function accountNetworkPolicyIngressPublicAccessAllowRulesOriginExcludedIpRangesToHclTerraform(struct?: AccountNetworkPolicyIngressPublicAccessAllowRulesOriginExcludedIpRanges | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     ip_ranges: {
@@ -9905,7 +10054,7 @@ export class AccountNetworkPolicyIngressPublicAccessAllowRulesOriginExcludedIpRa
 }
 export interface AccountNetworkPolicyIngressPublicAccessAllowRulesOriginIncludedIpRanges {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_network_policy#ip_ranges AccountNetworkPolicy#ip_ranges}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_network_policy#ip_ranges AccountNetworkPolicy#ip_ranges}
   */
   readonly ipRanges?: string[];
 }
@@ -9913,7 +10062,7 @@ export interface AccountNetworkPolicyIngressPublicAccessAllowRulesOriginIncluded
 export function accountNetworkPolicyIngressPublicAccessAllowRulesOriginIncludedIpRangesToTerraform(struct?: AccountNetworkPolicyIngressPublicAccessAllowRulesOriginIncludedIpRanges | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     ip_ranges: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.ipRanges),
@@ -9924,7 +10073,7 @@ export function accountNetworkPolicyIngressPublicAccessAllowRulesOriginIncludedI
 export function accountNetworkPolicyIngressPublicAccessAllowRulesOriginIncludedIpRangesToHclTerraform(struct?: AccountNetworkPolicyIngressPublicAccessAllowRulesOriginIncludedIpRanges | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     ip_ranges: {
@@ -9999,15 +10148,15 @@ export class AccountNetworkPolicyIngressPublicAccessAllowRulesOriginIncludedIpRa
 }
 export interface AccountNetworkPolicyIngressPublicAccessAllowRulesOrigin {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_network_policy#all_ip_ranges AccountNetworkPolicy#all_ip_ranges}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_network_policy#all_ip_ranges AccountNetworkPolicy#all_ip_ranges}
   */
   readonly allIpRanges?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_network_policy#excluded_ip_ranges AccountNetworkPolicy#excluded_ip_ranges}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_network_policy#excluded_ip_ranges AccountNetworkPolicy#excluded_ip_ranges}
   */
   readonly excludedIpRanges?: AccountNetworkPolicyIngressPublicAccessAllowRulesOriginExcludedIpRanges;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_network_policy#included_ip_ranges AccountNetworkPolicy#included_ip_ranges}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_network_policy#included_ip_ranges AccountNetworkPolicy#included_ip_ranges}
   */
   readonly includedIpRanges?: AccountNetworkPolicyIngressPublicAccessAllowRulesOriginIncludedIpRanges;
 }
@@ -10015,7 +10164,7 @@ export interface AccountNetworkPolicyIngressPublicAccessAllowRulesOrigin {
 export function accountNetworkPolicyIngressPublicAccessAllowRulesOriginToTerraform(struct?: AccountNetworkPolicyIngressPublicAccessAllowRulesOrigin | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     all_ip_ranges: cdktn.booleanToTerraform(struct!.allIpRanges),
@@ -10028,7 +10177,7 @@ export function accountNetworkPolicyIngressPublicAccessAllowRulesOriginToTerrafo
 export function accountNetworkPolicyIngressPublicAccessAllowRulesOriginToHclTerraform(struct?: AccountNetworkPolicyIngressPublicAccessAllowRulesOrigin | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     all_ip_ranges: {
@@ -10159,19 +10308,19 @@ export class AccountNetworkPolicyIngressPublicAccessAllowRulesOriginOutputRefere
 }
 export interface AccountNetworkPolicyIngressPublicAccessAllowRules {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_network_policy#authentication AccountNetworkPolicy#authentication}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_network_policy#authentication AccountNetworkPolicy#authentication}
   */
   readonly authentication?: AccountNetworkPolicyIngressPublicAccessAllowRulesAuthentication;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_network_policy#destination AccountNetworkPolicy#destination}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_network_policy#destination AccountNetworkPolicy#destination}
   */
   readonly destination?: AccountNetworkPolicyIngressPublicAccessAllowRulesDestination;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_network_policy#label AccountNetworkPolicy#label}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_network_policy#label AccountNetworkPolicy#label}
   */
   readonly label?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_network_policy#origin AccountNetworkPolicy#origin}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_network_policy#origin AccountNetworkPolicy#origin}
   */
   readonly origin?: AccountNetworkPolicyIngressPublicAccessAllowRulesOrigin;
 }
@@ -10179,7 +10328,7 @@ export interface AccountNetworkPolicyIngressPublicAccessAllowRules {
 export function accountNetworkPolicyIngressPublicAccessAllowRulesToTerraform(struct?: AccountNetworkPolicyIngressPublicAccessAllowRules | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     authentication: accountNetworkPolicyIngressPublicAccessAllowRulesAuthenticationToTerraform(struct!.authentication),
@@ -10193,7 +10342,7 @@ export function accountNetworkPolicyIngressPublicAccessAllowRulesToTerraform(str
 export function accountNetworkPolicyIngressPublicAccessAllowRulesToHclTerraform(struct?: AccountNetworkPolicyIngressPublicAccessAllowRules | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     authentication: {
@@ -10374,11 +10523,11 @@ export class AccountNetworkPolicyIngressPublicAccessAllowRulesList extends cdktn
 }
 export interface AccountNetworkPolicyIngressPublicAccessDenyRulesAuthenticationIdentities {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_network_policy#principal_id AccountNetworkPolicy#principal_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_network_policy#principal_id AccountNetworkPolicy#principal_id}
   */
   readonly principalId?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_network_policy#principal_type AccountNetworkPolicy#principal_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_network_policy#principal_type AccountNetworkPolicy#principal_type}
   */
   readonly principalType?: string;
 }
@@ -10386,7 +10535,7 @@ export interface AccountNetworkPolicyIngressPublicAccessDenyRulesAuthenticationI
 export function accountNetworkPolicyIngressPublicAccessDenyRulesAuthenticationIdentitiesToTerraform(struct?: AccountNetworkPolicyIngressPublicAccessDenyRulesAuthenticationIdentities | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     principal_id: cdktn.numberToTerraform(struct!.principalId),
@@ -10398,7 +10547,7 @@ export function accountNetworkPolicyIngressPublicAccessDenyRulesAuthenticationId
 export function accountNetworkPolicyIngressPublicAccessDenyRulesAuthenticationIdentitiesToHclTerraform(struct?: AccountNetworkPolicyIngressPublicAccessDenyRulesAuthenticationIdentities | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     principal_id: {
@@ -10523,11 +10672,11 @@ export class AccountNetworkPolicyIngressPublicAccessDenyRulesAuthenticationIdent
 }
 export interface AccountNetworkPolicyIngressPublicAccessDenyRulesAuthentication {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_network_policy#identities AccountNetworkPolicy#identities}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_network_policy#identities AccountNetworkPolicy#identities}
   */
   readonly identities?: AccountNetworkPolicyIngressPublicAccessDenyRulesAuthenticationIdentities[] | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_network_policy#identity_type AccountNetworkPolicy#identity_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_network_policy#identity_type AccountNetworkPolicy#identity_type}
   */
   readonly identityType?: string;
 }
@@ -10535,7 +10684,7 @@ export interface AccountNetworkPolicyIngressPublicAccessDenyRulesAuthentication 
 export function accountNetworkPolicyIngressPublicAccessDenyRulesAuthenticationToTerraform(struct?: AccountNetworkPolicyIngressPublicAccessDenyRulesAuthentication | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     identities: cdktn.listMapper(accountNetworkPolicyIngressPublicAccessDenyRulesAuthenticationIdentitiesToTerraform, false)(struct!.identities),
@@ -10547,7 +10696,7 @@ export function accountNetworkPolicyIngressPublicAccessDenyRulesAuthenticationTo
 export function accountNetworkPolicyIngressPublicAccessDenyRulesAuthenticationToHclTerraform(struct?: AccountNetworkPolicyIngressPublicAccessDenyRulesAuthentication | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     identities: {
@@ -10650,11 +10799,11 @@ export class AccountNetworkPolicyIngressPublicAccessDenyRulesAuthenticationOutpu
 }
 export interface AccountNetworkPolicyIngressPublicAccessDenyRulesDestinationAccountApi {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_network_policy#scope_qualifier AccountNetworkPolicy#scope_qualifier}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_network_policy#scope_qualifier AccountNetworkPolicy#scope_qualifier}
   */
   readonly scopeQualifier?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_network_policy#scopes AccountNetworkPolicy#scopes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_network_policy#scopes AccountNetworkPolicy#scopes}
   */
   readonly scopes?: string[];
 }
@@ -10662,7 +10811,7 @@ export interface AccountNetworkPolicyIngressPublicAccessDenyRulesDestinationAcco
 export function accountNetworkPolicyIngressPublicAccessDenyRulesDestinationAccountApiToTerraform(struct?: AccountNetworkPolicyIngressPublicAccessDenyRulesDestinationAccountApi | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     scope_qualifier: cdktn.stringToTerraform(struct!.scopeQualifier),
@@ -10674,7 +10823,7 @@ export function accountNetworkPolicyIngressPublicAccessDenyRulesDestinationAccou
 export function accountNetworkPolicyIngressPublicAccessDenyRulesDestinationAccountApiToHclTerraform(struct?: AccountNetworkPolicyIngressPublicAccessDenyRulesDestinationAccountApi | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     scope_qualifier: {
@@ -10777,7 +10926,7 @@ export class AccountNetworkPolicyIngressPublicAccessDenyRulesDestinationAccountA
 }
 export interface AccountNetworkPolicyIngressPublicAccessDenyRulesDestinationAccountDatabricksOne {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_network_policy#all_destinations AccountNetworkPolicy#all_destinations}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_network_policy#all_destinations AccountNetworkPolicy#all_destinations}
   */
   readonly allDestinations?: boolean | cdktn.IResolvable;
 }
@@ -10785,7 +10934,7 @@ export interface AccountNetworkPolicyIngressPublicAccessDenyRulesDestinationAcco
 export function accountNetworkPolicyIngressPublicAccessDenyRulesDestinationAccountDatabricksOneToTerraform(struct?: AccountNetworkPolicyIngressPublicAccessDenyRulesDestinationAccountDatabricksOne | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     all_destinations: cdktn.booleanToTerraform(struct!.allDestinations),
@@ -10796,7 +10945,7 @@ export function accountNetworkPolicyIngressPublicAccessDenyRulesDestinationAccou
 export function accountNetworkPolicyIngressPublicAccessDenyRulesDestinationAccountDatabricksOneToHclTerraform(struct?: AccountNetworkPolicyIngressPublicAccessDenyRulesDestinationAccountDatabricksOne | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     all_destinations: {
@@ -10871,7 +11020,7 @@ export class AccountNetworkPolicyIngressPublicAccessDenyRulesDestinationAccountD
 }
 export interface AccountNetworkPolicyIngressPublicAccessDenyRulesDestinationAccountUi {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_network_policy#all_destinations AccountNetworkPolicy#all_destinations}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_network_policy#all_destinations AccountNetworkPolicy#all_destinations}
   */
   readonly allDestinations?: boolean | cdktn.IResolvable;
 }
@@ -10879,7 +11028,7 @@ export interface AccountNetworkPolicyIngressPublicAccessDenyRulesDestinationAcco
 export function accountNetworkPolicyIngressPublicAccessDenyRulesDestinationAccountUiToTerraform(struct?: AccountNetworkPolicyIngressPublicAccessDenyRulesDestinationAccountUi | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     all_destinations: cdktn.booleanToTerraform(struct!.allDestinations),
@@ -10890,7 +11039,7 @@ export function accountNetworkPolicyIngressPublicAccessDenyRulesDestinationAccou
 export function accountNetworkPolicyIngressPublicAccessDenyRulesDestinationAccountUiToHclTerraform(struct?: AccountNetworkPolicyIngressPublicAccessDenyRulesDestinationAccountUi | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     all_destinations: {
@@ -10965,7 +11114,7 @@ export class AccountNetworkPolicyIngressPublicAccessDenyRulesDestinationAccountU
 }
 export interface AccountNetworkPolicyIngressPublicAccessDenyRulesDestinationAppsRuntime {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_network_policy#all_destinations AccountNetworkPolicy#all_destinations}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_network_policy#all_destinations AccountNetworkPolicy#all_destinations}
   */
   readonly allDestinations?: boolean | cdktn.IResolvable;
 }
@@ -10973,7 +11122,7 @@ export interface AccountNetworkPolicyIngressPublicAccessDenyRulesDestinationApps
 export function accountNetworkPolicyIngressPublicAccessDenyRulesDestinationAppsRuntimeToTerraform(struct?: AccountNetworkPolicyIngressPublicAccessDenyRulesDestinationAppsRuntime | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     all_destinations: cdktn.booleanToTerraform(struct!.allDestinations),
@@ -10984,7 +11133,7 @@ export function accountNetworkPolicyIngressPublicAccessDenyRulesDestinationAppsR
 export function accountNetworkPolicyIngressPublicAccessDenyRulesDestinationAppsRuntimeToHclTerraform(struct?: AccountNetworkPolicyIngressPublicAccessDenyRulesDestinationAppsRuntime | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     all_destinations: {
@@ -11059,7 +11208,7 @@ export class AccountNetworkPolicyIngressPublicAccessDenyRulesDestinationAppsRunt
 }
 export interface AccountNetworkPolicyIngressPublicAccessDenyRulesDestinationLakebaseRuntime {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_network_policy#all_destinations AccountNetworkPolicy#all_destinations}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_network_policy#all_destinations AccountNetworkPolicy#all_destinations}
   */
   readonly allDestinations?: boolean | cdktn.IResolvable;
 }
@@ -11067,7 +11216,7 @@ export interface AccountNetworkPolicyIngressPublicAccessDenyRulesDestinationLake
 export function accountNetworkPolicyIngressPublicAccessDenyRulesDestinationLakebaseRuntimeToTerraform(struct?: AccountNetworkPolicyIngressPublicAccessDenyRulesDestinationLakebaseRuntime | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     all_destinations: cdktn.booleanToTerraform(struct!.allDestinations),
@@ -11078,7 +11227,7 @@ export function accountNetworkPolicyIngressPublicAccessDenyRulesDestinationLakeb
 export function accountNetworkPolicyIngressPublicAccessDenyRulesDestinationLakebaseRuntimeToHclTerraform(struct?: AccountNetworkPolicyIngressPublicAccessDenyRulesDestinationLakebaseRuntime | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     all_destinations: {
@@ -11153,11 +11302,11 @@ export class AccountNetworkPolicyIngressPublicAccessDenyRulesDestinationLakebase
 }
 export interface AccountNetworkPolicyIngressPublicAccessDenyRulesDestinationWorkspaceApi {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_network_policy#scope_qualifier AccountNetworkPolicy#scope_qualifier}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_network_policy#scope_qualifier AccountNetworkPolicy#scope_qualifier}
   */
   readonly scopeQualifier?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_network_policy#scopes AccountNetworkPolicy#scopes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_network_policy#scopes AccountNetworkPolicy#scopes}
   */
   readonly scopes?: string[];
 }
@@ -11165,7 +11314,7 @@ export interface AccountNetworkPolicyIngressPublicAccessDenyRulesDestinationWork
 export function accountNetworkPolicyIngressPublicAccessDenyRulesDestinationWorkspaceApiToTerraform(struct?: AccountNetworkPolicyIngressPublicAccessDenyRulesDestinationWorkspaceApi | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     scope_qualifier: cdktn.stringToTerraform(struct!.scopeQualifier),
@@ -11177,7 +11326,7 @@ export function accountNetworkPolicyIngressPublicAccessDenyRulesDestinationWorks
 export function accountNetworkPolicyIngressPublicAccessDenyRulesDestinationWorkspaceApiToHclTerraform(struct?: AccountNetworkPolicyIngressPublicAccessDenyRulesDestinationWorkspaceApi | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     scope_qualifier: {
@@ -11280,7 +11429,7 @@ export class AccountNetworkPolicyIngressPublicAccessDenyRulesDestinationWorkspac
 }
 export interface AccountNetworkPolicyIngressPublicAccessDenyRulesDestinationWorkspaceUi {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_network_policy#all_destinations AccountNetworkPolicy#all_destinations}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_network_policy#all_destinations AccountNetworkPolicy#all_destinations}
   */
   readonly allDestinations?: boolean | cdktn.IResolvable;
 }
@@ -11288,7 +11437,7 @@ export interface AccountNetworkPolicyIngressPublicAccessDenyRulesDestinationWork
 export function accountNetworkPolicyIngressPublicAccessDenyRulesDestinationWorkspaceUiToTerraform(struct?: AccountNetworkPolicyIngressPublicAccessDenyRulesDestinationWorkspaceUi | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     all_destinations: cdktn.booleanToTerraform(struct!.allDestinations),
@@ -11299,7 +11448,7 @@ export function accountNetworkPolicyIngressPublicAccessDenyRulesDestinationWorks
 export function accountNetworkPolicyIngressPublicAccessDenyRulesDestinationWorkspaceUiToHclTerraform(struct?: AccountNetworkPolicyIngressPublicAccessDenyRulesDestinationWorkspaceUi | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     all_destinations: {
@@ -11374,35 +11523,35 @@ export class AccountNetworkPolicyIngressPublicAccessDenyRulesDestinationWorkspac
 }
 export interface AccountNetworkPolicyIngressPublicAccessDenyRulesDestination {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_network_policy#account_api AccountNetworkPolicy#account_api}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_network_policy#account_api AccountNetworkPolicy#account_api}
   */
   readonly accountApi?: AccountNetworkPolicyIngressPublicAccessDenyRulesDestinationAccountApi;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_network_policy#account_databricks_one AccountNetworkPolicy#account_databricks_one}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_network_policy#account_databricks_one AccountNetworkPolicy#account_databricks_one}
   */
   readonly accountDatabricksOne?: AccountNetworkPolicyIngressPublicAccessDenyRulesDestinationAccountDatabricksOne;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_network_policy#account_ui AccountNetworkPolicy#account_ui}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_network_policy#account_ui AccountNetworkPolicy#account_ui}
   */
   readonly accountUi?: AccountNetworkPolicyIngressPublicAccessDenyRulesDestinationAccountUi;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_network_policy#all_destinations AccountNetworkPolicy#all_destinations}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_network_policy#all_destinations AccountNetworkPolicy#all_destinations}
   */
   readonly allDestinations?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_network_policy#apps_runtime AccountNetworkPolicy#apps_runtime}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_network_policy#apps_runtime AccountNetworkPolicy#apps_runtime}
   */
   readonly appsRuntime?: AccountNetworkPolicyIngressPublicAccessDenyRulesDestinationAppsRuntime;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_network_policy#lakebase_runtime AccountNetworkPolicy#lakebase_runtime}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_network_policy#lakebase_runtime AccountNetworkPolicy#lakebase_runtime}
   */
   readonly lakebaseRuntime?: AccountNetworkPolicyIngressPublicAccessDenyRulesDestinationLakebaseRuntime;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_network_policy#workspace_api AccountNetworkPolicy#workspace_api}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_network_policy#workspace_api AccountNetworkPolicy#workspace_api}
   */
   readonly workspaceApi?: AccountNetworkPolicyIngressPublicAccessDenyRulesDestinationWorkspaceApi;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_network_policy#workspace_ui AccountNetworkPolicy#workspace_ui}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_network_policy#workspace_ui AccountNetworkPolicy#workspace_ui}
   */
   readonly workspaceUi?: AccountNetworkPolicyIngressPublicAccessDenyRulesDestinationWorkspaceUi;
 }
@@ -11410,7 +11559,7 @@ export interface AccountNetworkPolicyIngressPublicAccessDenyRulesDestination {
 export function accountNetworkPolicyIngressPublicAccessDenyRulesDestinationToTerraform(struct?: AccountNetworkPolicyIngressPublicAccessDenyRulesDestination | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     account_api: accountNetworkPolicyIngressPublicAccessDenyRulesDestinationAccountApiToTerraform(struct!.accountApi),
@@ -11428,7 +11577,7 @@ export function accountNetworkPolicyIngressPublicAccessDenyRulesDestinationToTer
 export function accountNetworkPolicyIngressPublicAccessDenyRulesDestinationToHclTerraform(struct?: AccountNetworkPolicyIngressPublicAccessDenyRulesDestination | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     account_api: {
@@ -11699,7 +11848,7 @@ export class AccountNetworkPolicyIngressPublicAccessDenyRulesDestinationOutputRe
 }
 export interface AccountNetworkPolicyIngressPublicAccessDenyRulesOriginExcludedIpRanges {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_network_policy#ip_ranges AccountNetworkPolicy#ip_ranges}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_network_policy#ip_ranges AccountNetworkPolicy#ip_ranges}
   */
   readonly ipRanges?: string[];
 }
@@ -11707,7 +11856,7 @@ export interface AccountNetworkPolicyIngressPublicAccessDenyRulesOriginExcludedI
 export function accountNetworkPolicyIngressPublicAccessDenyRulesOriginExcludedIpRangesToTerraform(struct?: AccountNetworkPolicyIngressPublicAccessDenyRulesOriginExcludedIpRanges | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     ip_ranges: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.ipRanges),
@@ -11718,7 +11867,7 @@ export function accountNetworkPolicyIngressPublicAccessDenyRulesOriginExcludedIp
 export function accountNetworkPolicyIngressPublicAccessDenyRulesOriginExcludedIpRangesToHclTerraform(struct?: AccountNetworkPolicyIngressPublicAccessDenyRulesOriginExcludedIpRanges | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     ip_ranges: {
@@ -11793,7 +11942,7 @@ export class AccountNetworkPolicyIngressPublicAccessDenyRulesOriginExcludedIpRan
 }
 export interface AccountNetworkPolicyIngressPublicAccessDenyRulesOriginIncludedIpRanges {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_network_policy#ip_ranges AccountNetworkPolicy#ip_ranges}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_network_policy#ip_ranges AccountNetworkPolicy#ip_ranges}
   */
   readonly ipRanges?: string[];
 }
@@ -11801,7 +11950,7 @@ export interface AccountNetworkPolicyIngressPublicAccessDenyRulesOriginIncludedI
 export function accountNetworkPolicyIngressPublicAccessDenyRulesOriginIncludedIpRangesToTerraform(struct?: AccountNetworkPolicyIngressPublicAccessDenyRulesOriginIncludedIpRanges | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     ip_ranges: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.ipRanges),
@@ -11812,7 +11961,7 @@ export function accountNetworkPolicyIngressPublicAccessDenyRulesOriginIncludedIp
 export function accountNetworkPolicyIngressPublicAccessDenyRulesOriginIncludedIpRangesToHclTerraform(struct?: AccountNetworkPolicyIngressPublicAccessDenyRulesOriginIncludedIpRanges | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     ip_ranges: {
@@ -11887,15 +12036,15 @@ export class AccountNetworkPolicyIngressPublicAccessDenyRulesOriginIncludedIpRan
 }
 export interface AccountNetworkPolicyIngressPublicAccessDenyRulesOrigin {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_network_policy#all_ip_ranges AccountNetworkPolicy#all_ip_ranges}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_network_policy#all_ip_ranges AccountNetworkPolicy#all_ip_ranges}
   */
   readonly allIpRanges?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_network_policy#excluded_ip_ranges AccountNetworkPolicy#excluded_ip_ranges}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_network_policy#excluded_ip_ranges AccountNetworkPolicy#excluded_ip_ranges}
   */
   readonly excludedIpRanges?: AccountNetworkPolicyIngressPublicAccessDenyRulesOriginExcludedIpRanges;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_network_policy#included_ip_ranges AccountNetworkPolicy#included_ip_ranges}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_network_policy#included_ip_ranges AccountNetworkPolicy#included_ip_ranges}
   */
   readonly includedIpRanges?: AccountNetworkPolicyIngressPublicAccessDenyRulesOriginIncludedIpRanges;
 }
@@ -11903,7 +12052,7 @@ export interface AccountNetworkPolicyIngressPublicAccessDenyRulesOrigin {
 export function accountNetworkPolicyIngressPublicAccessDenyRulesOriginToTerraform(struct?: AccountNetworkPolicyIngressPublicAccessDenyRulesOrigin | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     all_ip_ranges: cdktn.booleanToTerraform(struct!.allIpRanges),
@@ -11916,7 +12065,7 @@ export function accountNetworkPolicyIngressPublicAccessDenyRulesOriginToTerrafor
 export function accountNetworkPolicyIngressPublicAccessDenyRulesOriginToHclTerraform(struct?: AccountNetworkPolicyIngressPublicAccessDenyRulesOrigin | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     all_ip_ranges: {
@@ -12047,19 +12196,19 @@ export class AccountNetworkPolicyIngressPublicAccessDenyRulesOriginOutputReferen
 }
 export interface AccountNetworkPolicyIngressPublicAccessDenyRules {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_network_policy#authentication AccountNetworkPolicy#authentication}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_network_policy#authentication AccountNetworkPolicy#authentication}
   */
   readonly authentication?: AccountNetworkPolicyIngressPublicAccessDenyRulesAuthentication;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_network_policy#destination AccountNetworkPolicy#destination}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_network_policy#destination AccountNetworkPolicy#destination}
   */
   readonly destination?: AccountNetworkPolicyIngressPublicAccessDenyRulesDestination;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_network_policy#label AccountNetworkPolicy#label}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_network_policy#label AccountNetworkPolicy#label}
   */
   readonly label?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_network_policy#origin AccountNetworkPolicy#origin}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_network_policy#origin AccountNetworkPolicy#origin}
   */
   readonly origin?: AccountNetworkPolicyIngressPublicAccessDenyRulesOrigin;
 }
@@ -12067,7 +12216,7 @@ export interface AccountNetworkPolicyIngressPublicAccessDenyRules {
 export function accountNetworkPolicyIngressPublicAccessDenyRulesToTerraform(struct?: AccountNetworkPolicyIngressPublicAccessDenyRules | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     authentication: accountNetworkPolicyIngressPublicAccessDenyRulesAuthenticationToTerraform(struct!.authentication),
@@ -12081,7 +12230,7 @@ export function accountNetworkPolicyIngressPublicAccessDenyRulesToTerraform(stru
 export function accountNetworkPolicyIngressPublicAccessDenyRulesToHclTerraform(struct?: AccountNetworkPolicyIngressPublicAccessDenyRules | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     authentication: {
@@ -12262,15 +12411,15 @@ export class AccountNetworkPolicyIngressPublicAccessDenyRulesList extends cdktn.
 }
 export interface AccountNetworkPolicyIngressPublicAccess {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_network_policy#allow_rules AccountNetworkPolicy#allow_rules}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_network_policy#allow_rules AccountNetworkPolicy#allow_rules}
   */
   readonly allowRules?: AccountNetworkPolicyIngressPublicAccessAllowRules[] | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_network_policy#deny_rules AccountNetworkPolicy#deny_rules}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_network_policy#deny_rules AccountNetworkPolicy#deny_rules}
   */
   readonly denyRules?: AccountNetworkPolicyIngressPublicAccessDenyRules[] | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_network_policy#restriction_mode AccountNetworkPolicy#restriction_mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_network_policy#restriction_mode AccountNetworkPolicy#restriction_mode}
   */
   readonly restrictionMode: string;
 }
@@ -12278,7 +12427,7 @@ export interface AccountNetworkPolicyIngressPublicAccess {
 export function accountNetworkPolicyIngressPublicAccessToTerraform(struct?: AccountNetworkPolicyIngressPublicAccess | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     allow_rules: cdktn.listMapper(accountNetworkPolicyIngressPublicAccessAllowRulesToTerraform, false)(struct!.allowRules),
@@ -12291,7 +12440,7 @@ export function accountNetworkPolicyIngressPublicAccessToTerraform(struct?: Acco
 export function accountNetworkPolicyIngressPublicAccessToHclTerraform(struct?: AccountNetworkPolicyIngressPublicAccess | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     allow_rules: {
@@ -12419,15 +12568,15 @@ export class AccountNetworkPolicyIngressPublicAccessOutputReference extends cdkt
 }
 export interface AccountNetworkPolicyIngress {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_network_policy#cross_workspace_access AccountNetworkPolicy#cross_workspace_access}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_network_policy#cross_workspace_access AccountNetworkPolicy#cross_workspace_access}
   */
   readonly crossWorkspaceAccess?: AccountNetworkPolicyIngressCrossWorkspaceAccess;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_network_policy#private_access AccountNetworkPolicy#private_access}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_network_policy#private_access AccountNetworkPolicy#private_access}
   */
   readonly privateAccess?: AccountNetworkPolicyIngressPrivateAccess;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_network_policy#public_access AccountNetworkPolicy#public_access}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_network_policy#public_access AccountNetworkPolicy#public_access}
   */
   readonly publicAccess?: AccountNetworkPolicyIngressPublicAccess;
 }
@@ -12435,7 +12584,7 @@ export interface AccountNetworkPolicyIngress {
 export function accountNetworkPolicyIngressToTerraform(struct?: AccountNetworkPolicyIngress | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     cross_workspace_access: accountNetworkPolicyIngressCrossWorkspaceAccessToTerraform(struct!.crossWorkspaceAccess),
@@ -12448,7 +12597,7 @@ export function accountNetworkPolicyIngressToTerraform(struct?: AccountNetworkPo
 export function accountNetworkPolicyIngressToHclTerraform(struct?: AccountNetworkPolicyIngress | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     cross_workspace_access: {
@@ -12579,11 +12728,11 @@ export class AccountNetworkPolicyIngressOutputReference extends cdktn.ComplexObj
 }
 export interface AccountNetworkPolicyIngressDryRunCrossWorkspaceAccessAllowRulesAuthenticationIdentities {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_network_policy#principal_id AccountNetworkPolicy#principal_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_network_policy#principal_id AccountNetworkPolicy#principal_id}
   */
   readonly principalId?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_network_policy#principal_type AccountNetworkPolicy#principal_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_network_policy#principal_type AccountNetworkPolicy#principal_type}
   */
   readonly principalType?: string;
 }
@@ -12591,7 +12740,7 @@ export interface AccountNetworkPolicyIngressDryRunCrossWorkspaceAccessAllowRules
 export function accountNetworkPolicyIngressDryRunCrossWorkspaceAccessAllowRulesAuthenticationIdentitiesToTerraform(struct?: AccountNetworkPolicyIngressDryRunCrossWorkspaceAccessAllowRulesAuthenticationIdentities | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     principal_id: cdktn.numberToTerraform(struct!.principalId),
@@ -12603,7 +12752,7 @@ export function accountNetworkPolicyIngressDryRunCrossWorkspaceAccessAllowRulesA
 export function accountNetworkPolicyIngressDryRunCrossWorkspaceAccessAllowRulesAuthenticationIdentitiesToHclTerraform(struct?: AccountNetworkPolicyIngressDryRunCrossWorkspaceAccessAllowRulesAuthenticationIdentities | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     principal_id: {
@@ -12728,11 +12877,11 @@ export class AccountNetworkPolicyIngressDryRunCrossWorkspaceAccessAllowRulesAuth
 }
 export interface AccountNetworkPolicyIngressDryRunCrossWorkspaceAccessAllowRulesAuthentication {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_network_policy#identities AccountNetworkPolicy#identities}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_network_policy#identities AccountNetworkPolicy#identities}
   */
   readonly identities?: AccountNetworkPolicyIngressDryRunCrossWorkspaceAccessAllowRulesAuthenticationIdentities[] | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_network_policy#identity_type AccountNetworkPolicy#identity_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_network_policy#identity_type AccountNetworkPolicy#identity_type}
   */
   readonly identityType?: string;
 }
@@ -12740,7 +12889,7 @@ export interface AccountNetworkPolicyIngressDryRunCrossWorkspaceAccessAllowRules
 export function accountNetworkPolicyIngressDryRunCrossWorkspaceAccessAllowRulesAuthenticationToTerraform(struct?: AccountNetworkPolicyIngressDryRunCrossWorkspaceAccessAllowRulesAuthentication | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     identities: cdktn.listMapper(accountNetworkPolicyIngressDryRunCrossWorkspaceAccessAllowRulesAuthenticationIdentitiesToTerraform, false)(struct!.identities),
@@ -12752,7 +12901,7 @@ export function accountNetworkPolicyIngressDryRunCrossWorkspaceAccessAllowRulesA
 export function accountNetworkPolicyIngressDryRunCrossWorkspaceAccessAllowRulesAuthenticationToHclTerraform(struct?: AccountNetworkPolicyIngressDryRunCrossWorkspaceAccessAllowRulesAuthentication | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     identities: {
@@ -12855,11 +13004,11 @@ export class AccountNetworkPolicyIngressDryRunCrossWorkspaceAccessAllowRulesAuth
 }
 export interface AccountNetworkPolicyIngressDryRunCrossWorkspaceAccessAllowRulesDestinationAccountApi {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_network_policy#scope_qualifier AccountNetworkPolicy#scope_qualifier}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_network_policy#scope_qualifier AccountNetworkPolicy#scope_qualifier}
   */
   readonly scopeQualifier?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_network_policy#scopes AccountNetworkPolicy#scopes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_network_policy#scopes AccountNetworkPolicy#scopes}
   */
   readonly scopes?: string[];
 }
@@ -12867,7 +13016,7 @@ export interface AccountNetworkPolicyIngressDryRunCrossWorkspaceAccessAllowRules
 export function accountNetworkPolicyIngressDryRunCrossWorkspaceAccessAllowRulesDestinationAccountApiToTerraform(struct?: AccountNetworkPolicyIngressDryRunCrossWorkspaceAccessAllowRulesDestinationAccountApi | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     scope_qualifier: cdktn.stringToTerraform(struct!.scopeQualifier),
@@ -12879,7 +13028,7 @@ export function accountNetworkPolicyIngressDryRunCrossWorkspaceAccessAllowRulesD
 export function accountNetworkPolicyIngressDryRunCrossWorkspaceAccessAllowRulesDestinationAccountApiToHclTerraform(struct?: AccountNetworkPolicyIngressDryRunCrossWorkspaceAccessAllowRulesDestinationAccountApi | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     scope_qualifier: {
@@ -12982,7 +13131,7 @@ export class AccountNetworkPolicyIngressDryRunCrossWorkspaceAccessAllowRulesDest
 }
 export interface AccountNetworkPolicyIngressDryRunCrossWorkspaceAccessAllowRulesDestinationAccountDatabricksOne {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_network_policy#all_destinations AccountNetworkPolicy#all_destinations}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_network_policy#all_destinations AccountNetworkPolicy#all_destinations}
   */
   readonly allDestinations?: boolean | cdktn.IResolvable;
 }
@@ -12990,7 +13139,7 @@ export interface AccountNetworkPolicyIngressDryRunCrossWorkspaceAccessAllowRules
 export function accountNetworkPolicyIngressDryRunCrossWorkspaceAccessAllowRulesDestinationAccountDatabricksOneToTerraform(struct?: AccountNetworkPolicyIngressDryRunCrossWorkspaceAccessAllowRulesDestinationAccountDatabricksOne | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     all_destinations: cdktn.booleanToTerraform(struct!.allDestinations),
@@ -13001,7 +13150,7 @@ export function accountNetworkPolicyIngressDryRunCrossWorkspaceAccessAllowRulesD
 export function accountNetworkPolicyIngressDryRunCrossWorkspaceAccessAllowRulesDestinationAccountDatabricksOneToHclTerraform(struct?: AccountNetworkPolicyIngressDryRunCrossWorkspaceAccessAllowRulesDestinationAccountDatabricksOne | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     all_destinations: {
@@ -13076,7 +13225,7 @@ export class AccountNetworkPolicyIngressDryRunCrossWorkspaceAccessAllowRulesDest
 }
 export interface AccountNetworkPolicyIngressDryRunCrossWorkspaceAccessAllowRulesDestinationAccountUi {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_network_policy#all_destinations AccountNetworkPolicy#all_destinations}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_network_policy#all_destinations AccountNetworkPolicy#all_destinations}
   */
   readonly allDestinations?: boolean | cdktn.IResolvable;
 }
@@ -13084,7 +13233,7 @@ export interface AccountNetworkPolicyIngressDryRunCrossWorkspaceAccessAllowRules
 export function accountNetworkPolicyIngressDryRunCrossWorkspaceAccessAllowRulesDestinationAccountUiToTerraform(struct?: AccountNetworkPolicyIngressDryRunCrossWorkspaceAccessAllowRulesDestinationAccountUi | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     all_destinations: cdktn.booleanToTerraform(struct!.allDestinations),
@@ -13095,7 +13244,7 @@ export function accountNetworkPolicyIngressDryRunCrossWorkspaceAccessAllowRulesD
 export function accountNetworkPolicyIngressDryRunCrossWorkspaceAccessAllowRulesDestinationAccountUiToHclTerraform(struct?: AccountNetworkPolicyIngressDryRunCrossWorkspaceAccessAllowRulesDestinationAccountUi | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     all_destinations: {
@@ -13170,7 +13319,7 @@ export class AccountNetworkPolicyIngressDryRunCrossWorkspaceAccessAllowRulesDest
 }
 export interface AccountNetworkPolicyIngressDryRunCrossWorkspaceAccessAllowRulesDestinationAppsRuntime {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_network_policy#all_destinations AccountNetworkPolicy#all_destinations}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_network_policy#all_destinations AccountNetworkPolicy#all_destinations}
   */
   readonly allDestinations?: boolean | cdktn.IResolvable;
 }
@@ -13178,7 +13327,7 @@ export interface AccountNetworkPolicyIngressDryRunCrossWorkspaceAccessAllowRules
 export function accountNetworkPolicyIngressDryRunCrossWorkspaceAccessAllowRulesDestinationAppsRuntimeToTerraform(struct?: AccountNetworkPolicyIngressDryRunCrossWorkspaceAccessAllowRulesDestinationAppsRuntime | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     all_destinations: cdktn.booleanToTerraform(struct!.allDestinations),
@@ -13189,7 +13338,7 @@ export function accountNetworkPolicyIngressDryRunCrossWorkspaceAccessAllowRulesD
 export function accountNetworkPolicyIngressDryRunCrossWorkspaceAccessAllowRulesDestinationAppsRuntimeToHclTerraform(struct?: AccountNetworkPolicyIngressDryRunCrossWorkspaceAccessAllowRulesDestinationAppsRuntime | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     all_destinations: {
@@ -13264,7 +13413,7 @@ export class AccountNetworkPolicyIngressDryRunCrossWorkspaceAccessAllowRulesDest
 }
 export interface AccountNetworkPolicyIngressDryRunCrossWorkspaceAccessAllowRulesDestinationLakebaseRuntime {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_network_policy#all_destinations AccountNetworkPolicy#all_destinations}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_network_policy#all_destinations AccountNetworkPolicy#all_destinations}
   */
   readonly allDestinations?: boolean | cdktn.IResolvable;
 }
@@ -13272,7 +13421,7 @@ export interface AccountNetworkPolicyIngressDryRunCrossWorkspaceAccessAllowRules
 export function accountNetworkPolicyIngressDryRunCrossWorkspaceAccessAllowRulesDestinationLakebaseRuntimeToTerraform(struct?: AccountNetworkPolicyIngressDryRunCrossWorkspaceAccessAllowRulesDestinationLakebaseRuntime | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     all_destinations: cdktn.booleanToTerraform(struct!.allDestinations),
@@ -13283,7 +13432,7 @@ export function accountNetworkPolicyIngressDryRunCrossWorkspaceAccessAllowRulesD
 export function accountNetworkPolicyIngressDryRunCrossWorkspaceAccessAllowRulesDestinationLakebaseRuntimeToHclTerraform(struct?: AccountNetworkPolicyIngressDryRunCrossWorkspaceAccessAllowRulesDestinationLakebaseRuntime | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     all_destinations: {
@@ -13358,11 +13507,11 @@ export class AccountNetworkPolicyIngressDryRunCrossWorkspaceAccessAllowRulesDest
 }
 export interface AccountNetworkPolicyIngressDryRunCrossWorkspaceAccessAllowRulesDestinationWorkspaceApi {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_network_policy#scope_qualifier AccountNetworkPolicy#scope_qualifier}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_network_policy#scope_qualifier AccountNetworkPolicy#scope_qualifier}
   */
   readonly scopeQualifier?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_network_policy#scopes AccountNetworkPolicy#scopes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_network_policy#scopes AccountNetworkPolicy#scopes}
   */
   readonly scopes?: string[];
 }
@@ -13370,7 +13519,7 @@ export interface AccountNetworkPolicyIngressDryRunCrossWorkspaceAccessAllowRules
 export function accountNetworkPolicyIngressDryRunCrossWorkspaceAccessAllowRulesDestinationWorkspaceApiToTerraform(struct?: AccountNetworkPolicyIngressDryRunCrossWorkspaceAccessAllowRulesDestinationWorkspaceApi | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     scope_qualifier: cdktn.stringToTerraform(struct!.scopeQualifier),
@@ -13382,7 +13531,7 @@ export function accountNetworkPolicyIngressDryRunCrossWorkspaceAccessAllowRulesD
 export function accountNetworkPolicyIngressDryRunCrossWorkspaceAccessAllowRulesDestinationWorkspaceApiToHclTerraform(struct?: AccountNetworkPolicyIngressDryRunCrossWorkspaceAccessAllowRulesDestinationWorkspaceApi | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     scope_qualifier: {
@@ -13485,7 +13634,7 @@ export class AccountNetworkPolicyIngressDryRunCrossWorkspaceAccessAllowRulesDest
 }
 export interface AccountNetworkPolicyIngressDryRunCrossWorkspaceAccessAllowRulesDestinationWorkspaceUi {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_network_policy#all_destinations AccountNetworkPolicy#all_destinations}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_network_policy#all_destinations AccountNetworkPolicy#all_destinations}
   */
   readonly allDestinations?: boolean | cdktn.IResolvable;
 }
@@ -13493,7 +13642,7 @@ export interface AccountNetworkPolicyIngressDryRunCrossWorkspaceAccessAllowRules
 export function accountNetworkPolicyIngressDryRunCrossWorkspaceAccessAllowRulesDestinationWorkspaceUiToTerraform(struct?: AccountNetworkPolicyIngressDryRunCrossWorkspaceAccessAllowRulesDestinationWorkspaceUi | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     all_destinations: cdktn.booleanToTerraform(struct!.allDestinations),
@@ -13504,7 +13653,7 @@ export function accountNetworkPolicyIngressDryRunCrossWorkspaceAccessAllowRulesD
 export function accountNetworkPolicyIngressDryRunCrossWorkspaceAccessAllowRulesDestinationWorkspaceUiToHclTerraform(struct?: AccountNetworkPolicyIngressDryRunCrossWorkspaceAccessAllowRulesDestinationWorkspaceUi | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     all_destinations: {
@@ -13579,35 +13728,35 @@ export class AccountNetworkPolicyIngressDryRunCrossWorkspaceAccessAllowRulesDest
 }
 export interface AccountNetworkPolicyIngressDryRunCrossWorkspaceAccessAllowRulesDestination {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_network_policy#account_api AccountNetworkPolicy#account_api}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_network_policy#account_api AccountNetworkPolicy#account_api}
   */
   readonly accountApi?: AccountNetworkPolicyIngressDryRunCrossWorkspaceAccessAllowRulesDestinationAccountApi;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_network_policy#account_databricks_one AccountNetworkPolicy#account_databricks_one}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_network_policy#account_databricks_one AccountNetworkPolicy#account_databricks_one}
   */
   readonly accountDatabricksOne?: AccountNetworkPolicyIngressDryRunCrossWorkspaceAccessAllowRulesDestinationAccountDatabricksOne;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_network_policy#account_ui AccountNetworkPolicy#account_ui}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_network_policy#account_ui AccountNetworkPolicy#account_ui}
   */
   readonly accountUi?: AccountNetworkPolicyIngressDryRunCrossWorkspaceAccessAllowRulesDestinationAccountUi;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_network_policy#all_destinations AccountNetworkPolicy#all_destinations}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_network_policy#all_destinations AccountNetworkPolicy#all_destinations}
   */
   readonly allDestinations?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_network_policy#apps_runtime AccountNetworkPolicy#apps_runtime}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_network_policy#apps_runtime AccountNetworkPolicy#apps_runtime}
   */
   readonly appsRuntime?: AccountNetworkPolicyIngressDryRunCrossWorkspaceAccessAllowRulesDestinationAppsRuntime;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_network_policy#lakebase_runtime AccountNetworkPolicy#lakebase_runtime}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_network_policy#lakebase_runtime AccountNetworkPolicy#lakebase_runtime}
   */
   readonly lakebaseRuntime?: AccountNetworkPolicyIngressDryRunCrossWorkspaceAccessAllowRulesDestinationLakebaseRuntime;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_network_policy#workspace_api AccountNetworkPolicy#workspace_api}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_network_policy#workspace_api AccountNetworkPolicy#workspace_api}
   */
   readonly workspaceApi?: AccountNetworkPolicyIngressDryRunCrossWorkspaceAccessAllowRulesDestinationWorkspaceApi;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_network_policy#workspace_ui AccountNetworkPolicy#workspace_ui}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_network_policy#workspace_ui AccountNetworkPolicy#workspace_ui}
   */
   readonly workspaceUi?: AccountNetworkPolicyIngressDryRunCrossWorkspaceAccessAllowRulesDestinationWorkspaceUi;
 }
@@ -13615,7 +13764,7 @@ export interface AccountNetworkPolicyIngressDryRunCrossWorkspaceAccessAllowRules
 export function accountNetworkPolicyIngressDryRunCrossWorkspaceAccessAllowRulesDestinationToTerraform(struct?: AccountNetworkPolicyIngressDryRunCrossWorkspaceAccessAllowRulesDestination | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     account_api: accountNetworkPolicyIngressDryRunCrossWorkspaceAccessAllowRulesDestinationAccountApiToTerraform(struct!.accountApi),
@@ -13633,7 +13782,7 @@ export function accountNetworkPolicyIngressDryRunCrossWorkspaceAccessAllowRulesD
 export function accountNetworkPolicyIngressDryRunCrossWorkspaceAccessAllowRulesDestinationToHclTerraform(struct?: AccountNetworkPolicyIngressDryRunCrossWorkspaceAccessAllowRulesDestination | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     account_api: {
@@ -13904,7 +14053,7 @@ export class AccountNetworkPolicyIngressDryRunCrossWorkspaceAccessAllowRulesDest
 }
 export interface AccountNetworkPolicyIngressDryRunCrossWorkspaceAccessAllowRulesOriginSelectedWorkspaces {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_network_policy#workspace_ids AccountNetworkPolicy#workspace_ids}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_network_policy#workspace_ids AccountNetworkPolicy#workspace_ids}
   */
   readonly workspaceIds?: number[];
 }
@@ -13912,7 +14061,7 @@ export interface AccountNetworkPolicyIngressDryRunCrossWorkspaceAccessAllowRules
 export function accountNetworkPolicyIngressDryRunCrossWorkspaceAccessAllowRulesOriginSelectedWorkspacesToTerraform(struct?: AccountNetworkPolicyIngressDryRunCrossWorkspaceAccessAllowRulesOriginSelectedWorkspaces | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     workspace_ids: cdktn.listMapper(cdktn.numberToTerraform, false)(struct!.workspaceIds),
@@ -13923,7 +14072,7 @@ export function accountNetworkPolicyIngressDryRunCrossWorkspaceAccessAllowRulesO
 export function accountNetworkPolicyIngressDryRunCrossWorkspaceAccessAllowRulesOriginSelectedWorkspacesToHclTerraform(struct?: AccountNetworkPolicyIngressDryRunCrossWorkspaceAccessAllowRulesOriginSelectedWorkspaces | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     workspace_ids: {
@@ -13998,11 +14147,11 @@ export class AccountNetworkPolicyIngressDryRunCrossWorkspaceAccessAllowRulesOrig
 }
 export interface AccountNetworkPolicyIngressDryRunCrossWorkspaceAccessAllowRulesOrigin {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_network_policy#all_source_workspaces AccountNetworkPolicy#all_source_workspaces}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_network_policy#all_source_workspaces AccountNetworkPolicy#all_source_workspaces}
   */
   readonly allSourceWorkspaces?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_network_policy#selected_workspaces AccountNetworkPolicy#selected_workspaces}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_network_policy#selected_workspaces AccountNetworkPolicy#selected_workspaces}
   */
   readonly selectedWorkspaces?: AccountNetworkPolicyIngressDryRunCrossWorkspaceAccessAllowRulesOriginSelectedWorkspaces;
 }
@@ -14010,7 +14159,7 @@ export interface AccountNetworkPolicyIngressDryRunCrossWorkspaceAccessAllowRules
 export function accountNetworkPolicyIngressDryRunCrossWorkspaceAccessAllowRulesOriginToTerraform(struct?: AccountNetworkPolicyIngressDryRunCrossWorkspaceAccessAllowRulesOrigin | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     all_source_workspaces: cdktn.booleanToTerraform(struct!.allSourceWorkspaces),
@@ -14022,7 +14171,7 @@ export function accountNetworkPolicyIngressDryRunCrossWorkspaceAccessAllowRulesO
 export function accountNetworkPolicyIngressDryRunCrossWorkspaceAccessAllowRulesOriginToHclTerraform(struct?: AccountNetworkPolicyIngressDryRunCrossWorkspaceAccessAllowRulesOrigin | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     all_source_workspaces: {
@@ -14125,19 +14274,19 @@ export class AccountNetworkPolicyIngressDryRunCrossWorkspaceAccessAllowRulesOrig
 }
 export interface AccountNetworkPolicyIngressDryRunCrossWorkspaceAccessAllowRules {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_network_policy#authentication AccountNetworkPolicy#authentication}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_network_policy#authentication AccountNetworkPolicy#authentication}
   */
   readonly authentication?: AccountNetworkPolicyIngressDryRunCrossWorkspaceAccessAllowRulesAuthentication;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_network_policy#destination AccountNetworkPolicy#destination}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_network_policy#destination AccountNetworkPolicy#destination}
   */
   readonly destination?: AccountNetworkPolicyIngressDryRunCrossWorkspaceAccessAllowRulesDestination;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_network_policy#label AccountNetworkPolicy#label}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_network_policy#label AccountNetworkPolicy#label}
   */
   readonly label?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_network_policy#origin AccountNetworkPolicy#origin}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_network_policy#origin AccountNetworkPolicy#origin}
   */
   readonly origin?: AccountNetworkPolicyIngressDryRunCrossWorkspaceAccessAllowRulesOrigin;
 }
@@ -14145,7 +14294,7 @@ export interface AccountNetworkPolicyIngressDryRunCrossWorkspaceAccessAllowRules
 export function accountNetworkPolicyIngressDryRunCrossWorkspaceAccessAllowRulesToTerraform(struct?: AccountNetworkPolicyIngressDryRunCrossWorkspaceAccessAllowRules | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     authentication: accountNetworkPolicyIngressDryRunCrossWorkspaceAccessAllowRulesAuthenticationToTerraform(struct!.authentication),
@@ -14159,7 +14308,7 @@ export function accountNetworkPolicyIngressDryRunCrossWorkspaceAccessAllowRulesT
 export function accountNetworkPolicyIngressDryRunCrossWorkspaceAccessAllowRulesToHclTerraform(struct?: AccountNetworkPolicyIngressDryRunCrossWorkspaceAccessAllowRules | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     authentication: {
@@ -14340,11 +14489,11 @@ export class AccountNetworkPolicyIngressDryRunCrossWorkspaceAccessAllowRulesList
 }
 export interface AccountNetworkPolicyIngressDryRunCrossWorkspaceAccessDenyRulesAuthenticationIdentities {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_network_policy#principal_id AccountNetworkPolicy#principal_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_network_policy#principal_id AccountNetworkPolicy#principal_id}
   */
   readonly principalId?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_network_policy#principal_type AccountNetworkPolicy#principal_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_network_policy#principal_type AccountNetworkPolicy#principal_type}
   */
   readonly principalType?: string;
 }
@@ -14352,7 +14501,7 @@ export interface AccountNetworkPolicyIngressDryRunCrossWorkspaceAccessDenyRulesA
 export function accountNetworkPolicyIngressDryRunCrossWorkspaceAccessDenyRulesAuthenticationIdentitiesToTerraform(struct?: AccountNetworkPolicyIngressDryRunCrossWorkspaceAccessDenyRulesAuthenticationIdentities | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     principal_id: cdktn.numberToTerraform(struct!.principalId),
@@ -14364,7 +14513,7 @@ export function accountNetworkPolicyIngressDryRunCrossWorkspaceAccessDenyRulesAu
 export function accountNetworkPolicyIngressDryRunCrossWorkspaceAccessDenyRulesAuthenticationIdentitiesToHclTerraform(struct?: AccountNetworkPolicyIngressDryRunCrossWorkspaceAccessDenyRulesAuthenticationIdentities | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     principal_id: {
@@ -14489,11 +14638,11 @@ export class AccountNetworkPolicyIngressDryRunCrossWorkspaceAccessDenyRulesAuthe
 }
 export interface AccountNetworkPolicyIngressDryRunCrossWorkspaceAccessDenyRulesAuthentication {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_network_policy#identities AccountNetworkPolicy#identities}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_network_policy#identities AccountNetworkPolicy#identities}
   */
   readonly identities?: AccountNetworkPolicyIngressDryRunCrossWorkspaceAccessDenyRulesAuthenticationIdentities[] | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_network_policy#identity_type AccountNetworkPolicy#identity_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_network_policy#identity_type AccountNetworkPolicy#identity_type}
   */
   readonly identityType?: string;
 }
@@ -14501,7 +14650,7 @@ export interface AccountNetworkPolicyIngressDryRunCrossWorkspaceAccessDenyRulesA
 export function accountNetworkPolicyIngressDryRunCrossWorkspaceAccessDenyRulesAuthenticationToTerraform(struct?: AccountNetworkPolicyIngressDryRunCrossWorkspaceAccessDenyRulesAuthentication | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     identities: cdktn.listMapper(accountNetworkPolicyIngressDryRunCrossWorkspaceAccessDenyRulesAuthenticationIdentitiesToTerraform, false)(struct!.identities),
@@ -14513,7 +14662,7 @@ export function accountNetworkPolicyIngressDryRunCrossWorkspaceAccessDenyRulesAu
 export function accountNetworkPolicyIngressDryRunCrossWorkspaceAccessDenyRulesAuthenticationToHclTerraform(struct?: AccountNetworkPolicyIngressDryRunCrossWorkspaceAccessDenyRulesAuthentication | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     identities: {
@@ -14616,11 +14765,11 @@ export class AccountNetworkPolicyIngressDryRunCrossWorkspaceAccessDenyRulesAuthe
 }
 export interface AccountNetworkPolicyIngressDryRunCrossWorkspaceAccessDenyRulesDestinationAccountApi {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_network_policy#scope_qualifier AccountNetworkPolicy#scope_qualifier}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_network_policy#scope_qualifier AccountNetworkPolicy#scope_qualifier}
   */
   readonly scopeQualifier?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_network_policy#scopes AccountNetworkPolicy#scopes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_network_policy#scopes AccountNetworkPolicy#scopes}
   */
   readonly scopes?: string[];
 }
@@ -14628,7 +14777,7 @@ export interface AccountNetworkPolicyIngressDryRunCrossWorkspaceAccessDenyRulesD
 export function accountNetworkPolicyIngressDryRunCrossWorkspaceAccessDenyRulesDestinationAccountApiToTerraform(struct?: AccountNetworkPolicyIngressDryRunCrossWorkspaceAccessDenyRulesDestinationAccountApi | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     scope_qualifier: cdktn.stringToTerraform(struct!.scopeQualifier),
@@ -14640,7 +14789,7 @@ export function accountNetworkPolicyIngressDryRunCrossWorkspaceAccessDenyRulesDe
 export function accountNetworkPolicyIngressDryRunCrossWorkspaceAccessDenyRulesDestinationAccountApiToHclTerraform(struct?: AccountNetworkPolicyIngressDryRunCrossWorkspaceAccessDenyRulesDestinationAccountApi | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     scope_qualifier: {
@@ -14743,7 +14892,7 @@ export class AccountNetworkPolicyIngressDryRunCrossWorkspaceAccessDenyRulesDesti
 }
 export interface AccountNetworkPolicyIngressDryRunCrossWorkspaceAccessDenyRulesDestinationAccountDatabricksOne {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_network_policy#all_destinations AccountNetworkPolicy#all_destinations}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_network_policy#all_destinations AccountNetworkPolicy#all_destinations}
   */
   readonly allDestinations?: boolean | cdktn.IResolvable;
 }
@@ -14751,7 +14900,7 @@ export interface AccountNetworkPolicyIngressDryRunCrossWorkspaceAccessDenyRulesD
 export function accountNetworkPolicyIngressDryRunCrossWorkspaceAccessDenyRulesDestinationAccountDatabricksOneToTerraform(struct?: AccountNetworkPolicyIngressDryRunCrossWorkspaceAccessDenyRulesDestinationAccountDatabricksOne | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     all_destinations: cdktn.booleanToTerraform(struct!.allDestinations),
@@ -14762,7 +14911,7 @@ export function accountNetworkPolicyIngressDryRunCrossWorkspaceAccessDenyRulesDe
 export function accountNetworkPolicyIngressDryRunCrossWorkspaceAccessDenyRulesDestinationAccountDatabricksOneToHclTerraform(struct?: AccountNetworkPolicyIngressDryRunCrossWorkspaceAccessDenyRulesDestinationAccountDatabricksOne | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     all_destinations: {
@@ -14837,7 +14986,7 @@ export class AccountNetworkPolicyIngressDryRunCrossWorkspaceAccessDenyRulesDesti
 }
 export interface AccountNetworkPolicyIngressDryRunCrossWorkspaceAccessDenyRulesDestinationAccountUi {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_network_policy#all_destinations AccountNetworkPolicy#all_destinations}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_network_policy#all_destinations AccountNetworkPolicy#all_destinations}
   */
   readonly allDestinations?: boolean | cdktn.IResolvable;
 }
@@ -14845,7 +14994,7 @@ export interface AccountNetworkPolicyIngressDryRunCrossWorkspaceAccessDenyRulesD
 export function accountNetworkPolicyIngressDryRunCrossWorkspaceAccessDenyRulesDestinationAccountUiToTerraform(struct?: AccountNetworkPolicyIngressDryRunCrossWorkspaceAccessDenyRulesDestinationAccountUi | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     all_destinations: cdktn.booleanToTerraform(struct!.allDestinations),
@@ -14856,7 +15005,7 @@ export function accountNetworkPolicyIngressDryRunCrossWorkspaceAccessDenyRulesDe
 export function accountNetworkPolicyIngressDryRunCrossWorkspaceAccessDenyRulesDestinationAccountUiToHclTerraform(struct?: AccountNetworkPolicyIngressDryRunCrossWorkspaceAccessDenyRulesDestinationAccountUi | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     all_destinations: {
@@ -14931,7 +15080,7 @@ export class AccountNetworkPolicyIngressDryRunCrossWorkspaceAccessDenyRulesDesti
 }
 export interface AccountNetworkPolicyIngressDryRunCrossWorkspaceAccessDenyRulesDestinationAppsRuntime {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_network_policy#all_destinations AccountNetworkPolicy#all_destinations}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_network_policy#all_destinations AccountNetworkPolicy#all_destinations}
   */
   readonly allDestinations?: boolean | cdktn.IResolvable;
 }
@@ -14939,7 +15088,7 @@ export interface AccountNetworkPolicyIngressDryRunCrossWorkspaceAccessDenyRulesD
 export function accountNetworkPolicyIngressDryRunCrossWorkspaceAccessDenyRulesDestinationAppsRuntimeToTerraform(struct?: AccountNetworkPolicyIngressDryRunCrossWorkspaceAccessDenyRulesDestinationAppsRuntime | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     all_destinations: cdktn.booleanToTerraform(struct!.allDestinations),
@@ -14950,7 +15099,7 @@ export function accountNetworkPolicyIngressDryRunCrossWorkspaceAccessDenyRulesDe
 export function accountNetworkPolicyIngressDryRunCrossWorkspaceAccessDenyRulesDestinationAppsRuntimeToHclTerraform(struct?: AccountNetworkPolicyIngressDryRunCrossWorkspaceAccessDenyRulesDestinationAppsRuntime | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     all_destinations: {
@@ -15025,7 +15174,7 @@ export class AccountNetworkPolicyIngressDryRunCrossWorkspaceAccessDenyRulesDesti
 }
 export interface AccountNetworkPolicyIngressDryRunCrossWorkspaceAccessDenyRulesDestinationLakebaseRuntime {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_network_policy#all_destinations AccountNetworkPolicy#all_destinations}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_network_policy#all_destinations AccountNetworkPolicy#all_destinations}
   */
   readonly allDestinations?: boolean | cdktn.IResolvable;
 }
@@ -15033,7 +15182,7 @@ export interface AccountNetworkPolicyIngressDryRunCrossWorkspaceAccessDenyRulesD
 export function accountNetworkPolicyIngressDryRunCrossWorkspaceAccessDenyRulesDestinationLakebaseRuntimeToTerraform(struct?: AccountNetworkPolicyIngressDryRunCrossWorkspaceAccessDenyRulesDestinationLakebaseRuntime | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     all_destinations: cdktn.booleanToTerraform(struct!.allDestinations),
@@ -15044,7 +15193,7 @@ export function accountNetworkPolicyIngressDryRunCrossWorkspaceAccessDenyRulesDe
 export function accountNetworkPolicyIngressDryRunCrossWorkspaceAccessDenyRulesDestinationLakebaseRuntimeToHclTerraform(struct?: AccountNetworkPolicyIngressDryRunCrossWorkspaceAccessDenyRulesDestinationLakebaseRuntime | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     all_destinations: {
@@ -15119,11 +15268,11 @@ export class AccountNetworkPolicyIngressDryRunCrossWorkspaceAccessDenyRulesDesti
 }
 export interface AccountNetworkPolicyIngressDryRunCrossWorkspaceAccessDenyRulesDestinationWorkspaceApi {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_network_policy#scope_qualifier AccountNetworkPolicy#scope_qualifier}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_network_policy#scope_qualifier AccountNetworkPolicy#scope_qualifier}
   */
   readonly scopeQualifier?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_network_policy#scopes AccountNetworkPolicy#scopes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_network_policy#scopes AccountNetworkPolicy#scopes}
   */
   readonly scopes?: string[];
 }
@@ -15131,7 +15280,7 @@ export interface AccountNetworkPolicyIngressDryRunCrossWorkspaceAccessDenyRulesD
 export function accountNetworkPolicyIngressDryRunCrossWorkspaceAccessDenyRulesDestinationWorkspaceApiToTerraform(struct?: AccountNetworkPolicyIngressDryRunCrossWorkspaceAccessDenyRulesDestinationWorkspaceApi | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     scope_qualifier: cdktn.stringToTerraform(struct!.scopeQualifier),
@@ -15143,7 +15292,7 @@ export function accountNetworkPolicyIngressDryRunCrossWorkspaceAccessDenyRulesDe
 export function accountNetworkPolicyIngressDryRunCrossWorkspaceAccessDenyRulesDestinationWorkspaceApiToHclTerraform(struct?: AccountNetworkPolicyIngressDryRunCrossWorkspaceAccessDenyRulesDestinationWorkspaceApi | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     scope_qualifier: {
@@ -15246,7 +15395,7 @@ export class AccountNetworkPolicyIngressDryRunCrossWorkspaceAccessDenyRulesDesti
 }
 export interface AccountNetworkPolicyIngressDryRunCrossWorkspaceAccessDenyRulesDestinationWorkspaceUi {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_network_policy#all_destinations AccountNetworkPolicy#all_destinations}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_network_policy#all_destinations AccountNetworkPolicy#all_destinations}
   */
   readonly allDestinations?: boolean | cdktn.IResolvable;
 }
@@ -15254,7 +15403,7 @@ export interface AccountNetworkPolicyIngressDryRunCrossWorkspaceAccessDenyRulesD
 export function accountNetworkPolicyIngressDryRunCrossWorkspaceAccessDenyRulesDestinationWorkspaceUiToTerraform(struct?: AccountNetworkPolicyIngressDryRunCrossWorkspaceAccessDenyRulesDestinationWorkspaceUi | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     all_destinations: cdktn.booleanToTerraform(struct!.allDestinations),
@@ -15265,7 +15414,7 @@ export function accountNetworkPolicyIngressDryRunCrossWorkspaceAccessDenyRulesDe
 export function accountNetworkPolicyIngressDryRunCrossWorkspaceAccessDenyRulesDestinationWorkspaceUiToHclTerraform(struct?: AccountNetworkPolicyIngressDryRunCrossWorkspaceAccessDenyRulesDestinationWorkspaceUi | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     all_destinations: {
@@ -15340,35 +15489,35 @@ export class AccountNetworkPolicyIngressDryRunCrossWorkspaceAccessDenyRulesDesti
 }
 export interface AccountNetworkPolicyIngressDryRunCrossWorkspaceAccessDenyRulesDestination {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_network_policy#account_api AccountNetworkPolicy#account_api}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_network_policy#account_api AccountNetworkPolicy#account_api}
   */
   readonly accountApi?: AccountNetworkPolicyIngressDryRunCrossWorkspaceAccessDenyRulesDestinationAccountApi;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_network_policy#account_databricks_one AccountNetworkPolicy#account_databricks_one}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_network_policy#account_databricks_one AccountNetworkPolicy#account_databricks_one}
   */
   readonly accountDatabricksOne?: AccountNetworkPolicyIngressDryRunCrossWorkspaceAccessDenyRulesDestinationAccountDatabricksOne;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_network_policy#account_ui AccountNetworkPolicy#account_ui}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_network_policy#account_ui AccountNetworkPolicy#account_ui}
   */
   readonly accountUi?: AccountNetworkPolicyIngressDryRunCrossWorkspaceAccessDenyRulesDestinationAccountUi;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_network_policy#all_destinations AccountNetworkPolicy#all_destinations}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_network_policy#all_destinations AccountNetworkPolicy#all_destinations}
   */
   readonly allDestinations?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_network_policy#apps_runtime AccountNetworkPolicy#apps_runtime}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_network_policy#apps_runtime AccountNetworkPolicy#apps_runtime}
   */
   readonly appsRuntime?: AccountNetworkPolicyIngressDryRunCrossWorkspaceAccessDenyRulesDestinationAppsRuntime;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_network_policy#lakebase_runtime AccountNetworkPolicy#lakebase_runtime}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_network_policy#lakebase_runtime AccountNetworkPolicy#lakebase_runtime}
   */
   readonly lakebaseRuntime?: AccountNetworkPolicyIngressDryRunCrossWorkspaceAccessDenyRulesDestinationLakebaseRuntime;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_network_policy#workspace_api AccountNetworkPolicy#workspace_api}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_network_policy#workspace_api AccountNetworkPolicy#workspace_api}
   */
   readonly workspaceApi?: AccountNetworkPolicyIngressDryRunCrossWorkspaceAccessDenyRulesDestinationWorkspaceApi;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_network_policy#workspace_ui AccountNetworkPolicy#workspace_ui}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_network_policy#workspace_ui AccountNetworkPolicy#workspace_ui}
   */
   readonly workspaceUi?: AccountNetworkPolicyIngressDryRunCrossWorkspaceAccessDenyRulesDestinationWorkspaceUi;
 }
@@ -15376,7 +15525,7 @@ export interface AccountNetworkPolicyIngressDryRunCrossWorkspaceAccessDenyRulesD
 export function accountNetworkPolicyIngressDryRunCrossWorkspaceAccessDenyRulesDestinationToTerraform(struct?: AccountNetworkPolicyIngressDryRunCrossWorkspaceAccessDenyRulesDestination | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     account_api: accountNetworkPolicyIngressDryRunCrossWorkspaceAccessDenyRulesDestinationAccountApiToTerraform(struct!.accountApi),
@@ -15394,7 +15543,7 @@ export function accountNetworkPolicyIngressDryRunCrossWorkspaceAccessDenyRulesDe
 export function accountNetworkPolicyIngressDryRunCrossWorkspaceAccessDenyRulesDestinationToHclTerraform(struct?: AccountNetworkPolicyIngressDryRunCrossWorkspaceAccessDenyRulesDestination | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     account_api: {
@@ -15665,7 +15814,7 @@ export class AccountNetworkPolicyIngressDryRunCrossWorkspaceAccessDenyRulesDesti
 }
 export interface AccountNetworkPolicyIngressDryRunCrossWorkspaceAccessDenyRulesOriginSelectedWorkspaces {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_network_policy#workspace_ids AccountNetworkPolicy#workspace_ids}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_network_policy#workspace_ids AccountNetworkPolicy#workspace_ids}
   */
   readonly workspaceIds?: number[];
 }
@@ -15673,7 +15822,7 @@ export interface AccountNetworkPolicyIngressDryRunCrossWorkspaceAccessDenyRulesO
 export function accountNetworkPolicyIngressDryRunCrossWorkspaceAccessDenyRulesOriginSelectedWorkspacesToTerraform(struct?: AccountNetworkPolicyIngressDryRunCrossWorkspaceAccessDenyRulesOriginSelectedWorkspaces | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     workspace_ids: cdktn.listMapper(cdktn.numberToTerraform, false)(struct!.workspaceIds),
@@ -15684,7 +15833,7 @@ export function accountNetworkPolicyIngressDryRunCrossWorkspaceAccessDenyRulesOr
 export function accountNetworkPolicyIngressDryRunCrossWorkspaceAccessDenyRulesOriginSelectedWorkspacesToHclTerraform(struct?: AccountNetworkPolicyIngressDryRunCrossWorkspaceAccessDenyRulesOriginSelectedWorkspaces | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     workspace_ids: {
@@ -15759,11 +15908,11 @@ export class AccountNetworkPolicyIngressDryRunCrossWorkspaceAccessDenyRulesOrigi
 }
 export interface AccountNetworkPolicyIngressDryRunCrossWorkspaceAccessDenyRulesOrigin {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_network_policy#all_source_workspaces AccountNetworkPolicy#all_source_workspaces}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_network_policy#all_source_workspaces AccountNetworkPolicy#all_source_workspaces}
   */
   readonly allSourceWorkspaces?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_network_policy#selected_workspaces AccountNetworkPolicy#selected_workspaces}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_network_policy#selected_workspaces AccountNetworkPolicy#selected_workspaces}
   */
   readonly selectedWorkspaces?: AccountNetworkPolicyIngressDryRunCrossWorkspaceAccessDenyRulesOriginSelectedWorkspaces;
 }
@@ -15771,7 +15920,7 @@ export interface AccountNetworkPolicyIngressDryRunCrossWorkspaceAccessDenyRulesO
 export function accountNetworkPolicyIngressDryRunCrossWorkspaceAccessDenyRulesOriginToTerraform(struct?: AccountNetworkPolicyIngressDryRunCrossWorkspaceAccessDenyRulesOrigin | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     all_source_workspaces: cdktn.booleanToTerraform(struct!.allSourceWorkspaces),
@@ -15783,7 +15932,7 @@ export function accountNetworkPolicyIngressDryRunCrossWorkspaceAccessDenyRulesOr
 export function accountNetworkPolicyIngressDryRunCrossWorkspaceAccessDenyRulesOriginToHclTerraform(struct?: AccountNetworkPolicyIngressDryRunCrossWorkspaceAccessDenyRulesOrigin | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     all_source_workspaces: {
@@ -15886,19 +16035,19 @@ export class AccountNetworkPolicyIngressDryRunCrossWorkspaceAccessDenyRulesOrigi
 }
 export interface AccountNetworkPolicyIngressDryRunCrossWorkspaceAccessDenyRules {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_network_policy#authentication AccountNetworkPolicy#authentication}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_network_policy#authentication AccountNetworkPolicy#authentication}
   */
   readonly authentication?: AccountNetworkPolicyIngressDryRunCrossWorkspaceAccessDenyRulesAuthentication;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_network_policy#destination AccountNetworkPolicy#destination}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_network_policy#destination AccountNetworkPolicy#destination}
   */
   readonly destination?: AccountNetworkPolicyIngressDryRunCrossWorkspaceAccessDenyRulesDestination;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_network_policy#label AccountNetworkPolicy#label}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_network_policy#label AccountNetworkPolicy#label}
   */
   readonly label?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_network_policy#origin AccountNetworkPolicy#origin}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_network_policy#origin AccountNetworkPolicy#origin}
   */
   readonly origin?: AccountNetworkPolicyIngressDryRunCrossWorkspaceAccessDenyRulesOrigin;
 }
@@ -15906,7 +16055,7 @@ export interface AccountNetworkPolicyIngressDryRunCrossWorkspaceAccessDenyRules 
 export function accountNetworkPolicyIngressDryRunCrossWorkspaceAccessDenyRulesToTerraform(struct?: AccountNetworkPolicyIngressDryRunCrossWorkspaceAccessDenyRules | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     authentication: accountNetworkPolicyIngressDryRunCrossWorkspaceAccessDenyRulesAuthenticationToTerraform(struct!.authentication),
@@ -15920,7 +16069,7 @@ export function accountNetworkPolicyIngressDryRunCrossWorkspaceAccessDenyRulesTo
 export function accountNetworkPolicyIngressDryRunCrossWorkspaceAccessDenyRulesToHclTerraform(struct?: AccountNetworkPolicyIngressDryRunCrossWorkspaceAccessDenyRules | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     authentication: {
@@ -16101,15 +16250,15 @@ export class AccountNetworkPolicyIngressDryRunCrossWorkspaceAccessDenyRulesList 
 }
 export interface AccountNetworkPolicyIngressDryRunCrossWorkspaceAccess {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_network_policy#allow_rules AccountNetworkPolicy#allow_rules}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_network_policy#allow_rules AccountNetworkPolicy#allow_rules}
   */
   readonly allowRules?: AccountNetworkPolicyIngressDryRunCrossWorkspaceAccessAllowRules[] | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_network_policy#deny_rules AccountNetworkPolicy#deny_rules}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_network_policy#deny_rules AccountNetworkPolicy#deny_rules}
   */
   readonly denyRules?: AccountNetworkPolicyIngressDryRunCrossWorkspaceAccessDenyRules[] | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_network_policy#restriction_mode AccountNetworkPolicy#restriction_mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_network_policy#restriction_mode AccountNetworkPolicy#restriction_mode}
   */
   readonly restrictionMode: string;
 }
@@ -16117,7 +16266,7 @@ export interface AccountNetworkPolicyIngressDryRunCrossWorkspaceAccess {
 export function accountNetworkPolicyIngressDryRunCrossWorkspaceAccessToTerraform(struct?: AccountNetworkPolicyIngressDryRunCrossWorkspaceAccess | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     allow_rules: cdktn.listMapper(accountNetworkPolicyIngressDryRunCrossWorkspaceAccessAllowRulesToTerraform, false)(struct!.allowRules),
@@ -16130,7 +16279,7 @@ export function accountNetworkPolicyIngressDryRunCrossWorkspaceAccessToTerraform
 export function accountNetworkPolicyIngressDryRunCrossWorkspaceAccessToHclTerraform(struct?: AccountNetworkPolicyIngressDryRunCrossWorkspaceAccess | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     allow_rules: {
@@ -16258,11 +16407,11 @@ export class AccountNetworkPolicyIngressDryRunCrossWorkspaceAccessOutputReferenc
 }
 export interface AccountNetworkPolicyIngressDryRunPrivateAccessAllowRulesAuthenticationIdentities {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_network_policy#principal_id AccountNetworkPolicy#principal_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_network_policy#principal_id AccountNetworkPolicy#principal_id}
   */
   readonly principalId?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_network_policy#principal_type AccountNetworkPolicy#principal_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_network_policy#principal_type AccountNetworkPolicy#principal_type}
   */
   readonly principalType?: string;
 }
@@ -16270,7 +16419,7 @@ export interface AccountNetworkPolicyIngressDryRunPrivateAccessAllowRulesAuthent
 export function accountNetworkPolicyIngressDryRunPrivateAccessAllowRulesAuthenticationIdentitiesToTerraform(struct?: AccountNetworkPolicyIngressDryRunPrivateAccessAllowRulesAuthenticationIdentities | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     principal_id: cdktn.numberToTerraform(struct!.principalId),
@@ -16282,7 +16431,7 @@ export function accountNetworkPolicyIngressDryRunPrivateAccessAllowRulesAuthenti
 export function accountNetworkPolicyIngressDryRunPrivateAccessAllowRulesAuthenticationIdentitiesToHclTerraform(struct?: AccountNetworkPolicyIngressDryRunPrivateAccessAllowRulesAuthenticationIdentities | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     principal_id: {
@@ -16407,11 +16556,11 @@ export class AccountNetworkPolicyIngressDryRunPrivateAccessAllowRulesAuthenticat
 }
 export interface AccountNetworkPolicyIngressDryRunPrivateAccessAllowRulesAuthentication {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_network_policy#identities AccountNetworkPolicy#identities}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_network_policy#identities AccountNetworkPolicy#identities}
   */
   readonly identities?: AccountNetworkPolicyIngressDryRunPrivateAccessAllowRulesAuthenticationIdentities[] | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_network_policy#identity_type AccountNetworkPolicy#identity_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_network_policy#identity_type AccountNetworkPolicy#identity_type}
   */
   readonly identityType?: string;
 }
@@ -16419,7 +16568,7 @@ export interface AccountNetworkPolicyIngressDryRunPrivateAccessAllowRulesAuthent
 export function accountNetworkPolicyIngressDryRunPrivateAccessAllowRulesAuthenticationToTerraform(struct?: AccountNetworkPolicyIngressDryRunPrivateAccessAllowRulesAuthentication | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     identities: cdktn.listMapper(accountNetworkPolicyIngressDryRunPrivateAccessAllowRulesAuthenticationIdentitiesToTerraform, false)(struct!.identities),
@@ -16431,7 +16580,7 @@ export function accountNetworkPolicyIngressDryRunPrivateAccessAllowRulesAuthenti
 export function accountNetworkPolicyIngressDryRunPrivateAccessAllowRulesAuthenticationToHclTerraform(struct?: AccountNetworkPolicyIngressDryRunPrivateAccessAllowRulesAuthentication | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     identities: {
@@ -16534,11 +16683,11 @@ export class AccountNetworkPolicyIngressDryRunPrivateAccessAllowRulesAuthenticat
 }
 export interface AccountNetworkPolicyIngressDryRunPrivateAccessAllowRulesDestinationAccountApi {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_network_policy#scope_qualifier AccountNetworkPolicy#scope_qualifier}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_network_policy#scope_qualifier AccountNetworkPolicy#scope_qualifier}
   */
   readonly scopeQualifier?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_network_policy#scopes AccountNetworkPolicy#scopes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_network_policy#scopes AccountNetworkPolicy#scopes}
   */
   readonly scopes?: string[];
 }
@@ -16546,7 +16695,7 @@ export interface AccountNetworkPolicyIngressDryRunPrivateAccessAllowRulesDestina
 export function accountNetworkPolicyIngressDryRunPrivateAccessAllowRulesDestinationAccountApiToTerraform(struct?: AccountNetworkPolicyIngressDryRunPrivateAccessAllowRulesDestinationAccountApi | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     scope_qualifier: cdktn.stringToTerraform(struct!.scopeQualifier),
@@ -16558,7 +16707,7 @@ export function accountNetworkPolicyIngressDryRunPrivateAccessAllowRulesDestinat
 export function accountNetworkPolicyIngressDryRunPrivateAccessAllowRulesDestinationAccountApiToHclTerraform(struct?: AccountNetworkPolicyIngressDryRunPrivateAccessAllowRulesDestinationAccountApi | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     scope_qualifier: {
@@ -16661,7 +16810,7 @@ export class AccountNetworkPolicyIngressDryRunPrivateAccessAllowRulesDestination
 }
 export interface AccountNetworkPolicyIngressDryRunPrivateAccessAllowRulesDestinationAccountDatabricksOne {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_network_policy#all_destinations AccountNetworkPolicy#all_destinations}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_network_policy#all_destinations AccountNetworkPolicy#all_destinations}
   */
   readonly allDestinations?: boolean | cdktn.IResolvable;
 }
@@ -16669,7 +16818,7 @@ export interface AccountNetworkPolicyIngressDryRunPrivateAccessAllowRulesDestina
 export function accountNetworkPolicyIngressDryRunPrivateAccessAllowRulesDestinationAccountDatabricksOneToTerraform(struct?: AccountNetworkPolicyIngressDryRunPrivateAccessAllowRulesDestinationAccountDatabricksOne | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     all_destinations: cdktn.booleanToTerraform(struct!.allDestinations),
@@ -16680,7 +16829,7 @@ export function accountNetworkPolicyIngressDryRunPrivateAccessAllowRulesDestinat
 export function accountNetworkPolicyIngressDryRunPrivateAccessAllowRulesDestinationAccountDatabricksOneToHclTerraform(struct?: AccountNetworkPolicyIngressDryRunPrivateAccessAllowRulesDestinationAccountDatabricksOne | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     all_destinations: {
@@ -16755,7 +16904,7 @@ export class AccountNetworkPolicyIngressDryRunPrivateAccessAllowRulesDestination
 }
 export interface AccountNetworkPolicyIngressDryRunPrivateAccessAllowRulesDestinationAccountUi {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_network_policy#all_destinations AccountNetworkPolicy#all_destinations}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_network_policy#all_destinations AccountNetworkPolicy#all_destinations}
   */
   readonly allDestinations?: boolean | cdktn.IResolvable;
 }
@@ -16763,7 +16912,7 @@ export interface AccountNetworkPolicyIngressDryRunPrivateAccessAllowRulesDestina
 export function accountNetworkPolicyIngressDryRunPrivateAccessAllowRulesDestinationAccountUiToTerraform(struct?: AccountNetworkPolicyIngressDryRunPrivateAccessAllowRulesDestinationAccountUi | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     all_destinations: cdktn.booleanToTerraform(struct!.allDestinations),
@@ -16774,7 +16923,7 @@ export function accountNetworkPolicyIngressDryRunPrivateAccessAllowRulesDestinat
 export function accountNetworkPolicyIngressDryRunPrivateAccessAllowRulesDestinationAccountUiToHclTerraform(struct?: AccountNetworkPolicyIngressDryRunPrivateAccessAllowRulesDestinationAccountUi | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     all_destinations: {
@@ -16849,7 +16998,7 @@ export class AccountNetworkPolicyIngressDryRunPrivateAccessAllowRulesDestination
 }
 export interface AccountNetworkPolicyIngressDryRunPrivateAccessAllowRulesDestinationAppsRuntime {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_network_policy#all_destinations AccountNetworkPolicy#all_destinations}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_network_policy#all_destinations AccountNetworkPolicy#all_destinations}
   */
   readonly allDestinations?: boolean | cdktn.IResolvable;
 }
@@ -16857,7 +17006,7 @@ export interface AccountNetworkPolicyIngressDryRunPrivateAccessAllowRulesDestina
 export function accountNetworkPolicyIngressDryRunPrivateAccessAllowRulesDestinationAppsRuntimeToTerraform(struct?: AccountNetworkPolicyIngressDryRunPrivateAccessAllowRulesDestinationAppsRuntime | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     all_destinations: cdktn.booleanToTerraform(struct!.allDestinations),
@@ -16868,7 +17017,7 @@ export function accountNetworkPolicyIngressDryRunPrivateAccessAllowRulesDestinat
 export function accountNetworkPolicyIngressDryRunPrivateAccessAllowRulesDestinationAppsRuntimeToHclTerraform(struct?: AccountNetworkPolicyIngressDryRunPrivateAccessAllowRulesDestinationAppsRuntime | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     all_destinations: {
@@ -16943,7 +17092,7 @@ export class AccountNetworkPolicyIngressDryRunPrivateAccessAllowRulesDestination
 }
 export interface AccountNetworkPolicyIngressDryRunPrivateAccessAllowRulesDestinationLakebaseRuntime {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_network_policy#all_destinations AccountNetworkPolicy#all_destinations}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_network_policy#all_destinations AccountNetworkPolicy#all_destinations}
   */
   readonly allDestinations?: boolean | cdktn.IResolvable;
 }
@@ -16951,7 +17100,7 @@ export interface AccountNetworkPolicyIngressDryRunPrivateAccessAllowRulesDestina
 export function accountNetworkPolicyIngressDryRunPrivateAccessAllowRulesDestinationLakebaseRuntimeToTerraform(struct?: AccountNetworkPolicyIngressDryRunPrivateAccessAllowRulesDestinationLakebaseRuntime | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     all_destinations: cdktn.booleanToTerraform(struct!.allDestinations),
@@ -16962,7 +17111,7 @@ export function accountNetworkPolicyIngressDryRunPrivateAccessAllowRulesDestinat
 export function accountNetworkPolicyIngressDryRunPrivateAccessAllowRulesDestinationLakebaseRuntimeToHclTerraform(struct?: AccountNetworkPolicyIngressDryRunPrivateAccessAllowRulesDestinationLakebaseRuntime | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     all_destinations: {
@@ -17037,11 +17186,11 @@ export class AccountNetworkPolicyIngressDryRunPrivateAccessAllowRulesDestination
 }
 export interface AccountNetworkPolicyIngressDryRunPrivateAccessAllowRulesDestinationWorkspaceApi {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_network_policy#scope_qualifier AccountNetworkPolicy#scope_qualifier}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_network_policy#scope_qualifier AccountNetworkPolicy#scope_qualifier}
   */
   readonly scopeQualifier?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_network_policy#scopes AccountNetworkPolicy#scopes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_network_policy#scopes AccountNetworkPolicy#scopes}
   */
   readonly scopes?: string[];
 }
@@ -17049,7 +17198,7 @@ export interface AccountNetworkPolicyIngressDryRunPrivateAccessAllowRulesDestina
 export function accountNetworkPolicyIngressDryRunPrivateAccessAllowRulesDestinationWorkspaceApiToTerraform(struct?: AccountNetworkPolicyIngressDryRunPrivateAccessAllowRulesDestinationWorkspaceApi | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     scope_qualifier: cdktn.stringToTerraform(struct!.scopeQualifier),
@@ -17061,7 +17210,7 @@ export function accountNetworkPolicyIngressDryRunPrivateAccessAllowRulesDestinat
 export function accountNetworkPolicyIngressDryRunPrivateAccessAllowRulesDestinationWorkspaceApiToHclTerraform(struct?: AccountNetworkPolicyIngressDryRunPrivateAccessAllowRulesDestinationWorkspaceApi | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     scope_qualifier: {
@@ -17164,7 +17313,7 @@ export class AccountNetworkPolicyIngressDryRunPrivateAccessAllowRulesDestination
 }
 export interface AccountNetworkPolicyIngressDryRunPrivateAccessAllowRulesDestinationWorkspaceUi {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_network_policy#all_destinations AccountNetworkPolicy#all_destinations}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_network_policy#all_destinations AccountNetworkPolicy#all_destinations}
   */
   readonly allDestinations?: boolean | cdktn.IResolvable;
 }
@@ -17172,7 +17321,7 @@ export interface AccountNetworkPolicyIngressDryRunPrivateAccessAllowRulesDestina
 export function accountNetworkPolicyIngressDryRunPrivateAccessAllowRulesDestinationWorkspaceUiToTerraform(struct?: AccountNetworkPolicyIngressDryRunPrivateAccessAllowRulesDestinationWorkspaceUi | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     all_destinations: cdktn.booleanToTerraform(struct!.allDestinations),
@@ -17183,7 +17332,7 @@ export function accountNetworkPolicyIngressDryRunPrivateAccessAllowRulesDestinat
 export function accountNetworkPolicyIngressDryRunPrivateAccessAllowRulesDestinationWorkspaceUiToHclTerraform(struct?: AccountNetworkPolicyIngressDryRunPrivateAccessAllowRulesDestinationWorkspaceUi | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     all_destinations: {
@@ -17258,35 +17407,35 @@ export class AccountNetworkPolicyIngressDryRunPrivateAccessAllowRulesDestination
 }
 export interface AccountNetworkPolicyIngressDryRunPrivateAccessAllowRulesDestination {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_network_policy#account_api AccountNetworkPolicy#account_api}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_network_policy#account_api AccountNetworkPolicy#account_api}
   */
   readonly accountApi?: AccountNetworkPolicyIngressDryRunPrivateAccessAllowRulesDestinationAccountApi;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_network_policy#account_databricks_one AccountNetworkPolicy#account_databricks_one}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_network_policy#account_databricks_one AccountNetworkPolicy#account_databricks_one}
   */
   readonly accountDatabricksOne?: AccountNetworkPolicyIngressDryRunPrivateAccessAllowRulesDestinationAccountDatabricksOne;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_network_policy#account_ui AccountNetworkPolicy#account_ui}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_network_policy#account_ui AccountNetworkPolicy#account_ui}
   */
   readonly accountUi?: AccountNetworkPolicyIngressDryRunPrivateAccessAllowRulesDestinationAccountUi;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_network_policy#all_destinations AccountNetworkPolicy#all_destinations}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_network_policy#all_destinations AccountNetworkPolicy#all_destinations}
   */
   readonly allDestinations?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_network_policy#apps_runtime AccountNetworkPolicy#apps_runtime}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_network_policy#apps_runtime AccountNetworkPolicy#apps_runtime}
   */
   readonly appsRuntime?: AccountNetworkPolicyIngressDryRunPrivateAccessAllowRulesDestinationAppsRuntime;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_network_policy#lakebase_runtime AccountNetworkPolicy#lakebase_runtime}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_network_policy#lakebase_runtime AccountNetworkPolicy#lakebase_runtime}
   */
   readonly lakebaseRuntime?: AccountNetworkPolicyIngressDryRunPrivateAccessAllowRulesDestinationLakebaseRuntime;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_network_policy#workspace_api AccountNetworkPolicy#workspace_api}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_network_policy#workspace_api AccountNetworkPolicy#workspace_api}
   */
   readonly workspaceApi?: AccountNetworkPolicyIngressDryRunPrivateAccessAllowRulesDestinationWorkspaceApi;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_network_policy#workspace_ui AccountNetworkPolicy#workspace_ui}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_network_policy#workspace_ui AccountNetworkPolicy#workspace_ui}
   */
   readonly workspaceUi?: AccountNetworkPolicyIngressDryRunPrivateAccessAllowRulesDestinationWorkspaceUi;
 }
@@ -17294,7 +17443,7 @@ export interface AccountNetworkPolicyIngressDryRunPrivateAccessAllowRulesDestina
 export function accountNetworkPolicyIngressDryRunPrivateAccessAllowRulesDestinationToTerraform(struct?: AccountNetworkPolicyIngressDryRunPrivateAccessAllowRulesDestination | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     account_api: accountNetworkPolicyIngressDryRunPrivateAccessAllowRulesDestinationAccountApiToTerraform(struct!.accountApi),
@@ -17312,7 +17461,7 @@ export function accountNetworkPolicyIngressDryRunPrivateAccessAllowRulesDestinat
 export function accountNetworkPolicyIngressDryRunPrivateAccessAllowRulesDestinationToHclTerraform(struct?: AccountNetworkPolicyIngressDryRunPrivateAccessAllowRulesDestination | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     account_api: {
@@ -17583,7 +17732,7 @@ export class AccountNetworkPolicyIngressDryRunPrivateAccessAllowRulesDestination
 }
 export interface AccountNetworkPolicyIngressDryRunPrivateAccessAllowRulesOriginEndpoints {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_network_policy#endpoint_ids AccountNetworkPolicy#endpoint_ids}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_network_policy#endpoint_ids AccountNetworkPolicy#endpoint_ids}
   */
   readonly endpointIds?: string[];
 }
@@ -17591,7 +17740,7 @@ export interface AccountNetworkPolicyIngressDryRunPrivateAccessAllowRulesOriginE
 export function accountNetworkPolicyIngressDryRunPrivateAccessAllowRulesOriginEndpointsToTerraform(struct?: AccountNetworkPolicyIngressDryRunPrivateAccessAllowRulesOriginEndpoints | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     endpoint_ids: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.endpointIds),
@@ -17602,7 +17751,7 @@ export function accountNetworkPolicyIngressDryRunPrivateAccessAllowRulesOriginEn
 export function accountNetworkPolicyIngressDryRunPrivateAccessAllowRulesOriginEndpointsToHclTerraform(struct?: AccountNetworkPolicyIngressDryRunPrivateAccessAllowRulesOriginEndpoints | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     endpoint_ids: {
@@ -17677,19 +17826,19 @@ export class AccountNetworkPolicyIngressDryRunPrivateAccessAllowRulesOriginEndpo
 }
 export interface AccountNetworkPolicyIngressDryRunPrivateAccessAllowRulesOrigin {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_network_policy#all_private_access AccountNetworkPolicy#all_private_access}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_network_policy#all_private_access AccountNetworkPolicy#all_private_access}
   */
   readonly allPrivateAccess?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_network_policy#all_registered_endpoints AccountNetworkPolicy#all_registered_endpoints}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_network_policy#all_registered_endpoints AccountNetworkPolicy#all_registered_endpoints}
   */
   readonly allRegisteredEndpoints?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_network_policy#azure_workspace_private_link AccountNetworkPolicy#azure_workspace_private_link}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_network_policy#azure_workspace_private_link AccountNetworkPolicy#azure_workspace_private_link}
   */
   readonly azureWorkspacePrivateLink?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_network_policy#endpoints AccountNetworkPolicy#endpoints}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_network_policy#endpoints AccountNetworkPolicy#endpoints}
   */
   readonly endpoints?: AccountNetworkPolicyIngressDryRunPrivateAccessAllowRulesOriginEndpoints;
 }
@@ -17697,7 +17846,7 @@ export interface AccountNetworkPolicyIngressDryRunPrivateAccessAllowRulesOrigin 
 export function accountNetworkPolicyIngressDryRunPrivateAccessAllowRulesOriginToTerraform(struct?: AccountNetworkPolicyIngressDryRunPrivateAccessAllowRulesOrigin | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     all_private_access: cdktn.booleanToTerraform(struct!.allPrivateAccess),
@@ -17711,7 +17860,7 @@ export function accountNetworkPolicyIngressDryRunPrivateAccessAllowRulesOriginTo
 export function accountNetworkPolicyIngressDryRunPrivateAccessAllowRulesOriginToHclTerraform(struct?: AccountNetworkPolicyIngressDryRunPrivateAccessAllowRulesOrigin | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     all_private_access: {
@@ -17870,19 +18019,19 @@ export class AccountNetworkPolicyIngressDryRunPrivateAccessAllowRulesOriginOutpu
 }
 export interface AccountNetworkPolicyIngressDryRunPrivateAccessAllowRules {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_network_policy#authentication AccountNetworkPolicy#authentication}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_network_policy#authentication AccountNetworkPolicy#authentication}
   */
   readonly authentication?: AccountNetworkPolicyIngressDryRunPrivateAccessAllowRulesAuthentication;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_network_policy#destination AccountNetworkPolicy#destination}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_network_policy#destination AccountNetworkPolicy#destination}
   */
   readonly destination?: AccountNetworkPolicyIngressDryRunPrivateAccessAllowRulesDestination;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_network_policy#label AccountNetworkPolicy#label}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_network_policy#label AccountNetworkPolicy#label}
   */
   readonly label?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_network_policy#origin AccountNetworkPolicy#origin}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_network_policy#origin AccountNetworkPolicy#origin}
   */
   readonly origin?: AccountNetworkPolicyIngressDryRunPrivateAccessAllowRulesOrigin;
 }
@@ -17890,7 +18039,7 @@ export interface AccountNetworkPolicyIngressDryRunPrivateAccessAllowRules {
 export function accountNetworkPolicyIngressDryRunPrivateAccessAllowRulesToTerraform(struct?: AccountNetworkPolicyIngressDryRunPrivateAccessAllowRules | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     authentication: accountNetworkPolicyIngressDryRunPrivateAccessAllowRulesAuthenticationToTerraform(struct!.authentication),
@@ -17904,7 +18053,7 @@ export function accountNetworkPolicyIngressDryRunPrivateAccessAllowRulesToTerraf
 export function accountNetworkPolicyIngressDryRunPrivateAccessAllowRulesToHclTerraform(struct?: AccountNetworkPolicyIngressDryRunPrivateAccessAllowRules | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     authentication: {
@@ -18085,11 +18234,11 @@ export class AccountNetworkPolicyIngressDryRunPrivateAccessAllowRulesList extend
 }
 export interface AccountNetworkPolicyIngressDryRunPrivateAccessDenyRulesAuthenticationIdentities {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_network_policy#principal_id AccountNetworkPolicy#principal_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_network_policy#principal_id AccountNetworkPolicy#principal_id}
   */
   readonly principalId?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_network_policy#principal_type AccountNetworkPolicy#principal_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_network_policy#principal_type AccountNetworkPolicy#principal_type}
   */
   readonly principalType?: string;
 }
@@ -18097,7 +18246,7 @@ export interface AccountNetworkPolicyIngressDryRunPrivateAccessDenyRulesAuthenti
 export function accountNetworkPolicyIngressDryRunPrivateAccessDenyRulesAuthenticationIdentitiesToTerraform(struct?: AccountNetworkPolicyIngressDryRunPrivateAccessDenyRulesAuthenticationIdentities | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     principal_id: cdktn.numberToTerraform(struct!.principalId),
@@ -18109,7 +18258,7 @@ export function accountNetworkPolicyIngressDryRunPrivateAccessDenyRulesAuthentic
 export function accountNetworkPolicyIngressDryRunPrivateAccessDenyRulesAuthenticationIdentitiesToHclTerraform(struct?: AccountNetworkPolicyIngressDryRunPrivateAccessDenyRulesAuthenticationIdentities | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     principal_id: {
@@ -18234,11 +18383,11 @@ export class AccountNetworkPolicyIngressDryRunPrivateAccessDenyRulesAuthenticati
 }
 export interface AccountNetworkPolicyIngressDryRunPrivateAccessDenyRulesAuthentication {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_network_policy#identities AccountNetworkPolicy#identities}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_network_policy#identities AccountNetworkPolicy#identities}
   */
   readonly identities?: AccountNetworkPolicyIngressDryRunPrivateAccessDenyRulesAuthenticationIdentities[] | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_network_policy#identity_type AccountNetworkPolicy#identity_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_network_policy#identity_type AccountNetworkPolicy#identity_type}
   */
   readonly identityType?: string;
 }
@@ -18246,7 +18395,7 @@ export interface AccountNetworkPolicyIngressDryRunPrivateAccessDenyRulesAuthenti
 export function accountNetworkPolicyIngressDryRunPrivateAccessDenyRulesAuthenticationToTerraform(struct?: AccountNetworkPolicyIngressDryRunPrivateAccessDenyRulesAuthentication | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     identities: cdktn.listMapper(accountNetworkPolicyIngressDryRunPrivateAccessDenyRulesAuthenticationIdentitiesToTerraform, false)(struct!.identities),
@@ -18258,7 +18407,7 @@ export function accountNetworkPolicyIngressDryRunPrivateAccessDenyRulesAuthentic
 export function accountNetworkPolicyIngressDryRunPrivateAccessDenyRulesAuthenticationToHclTerraform(struct?: AccountNetworkPolicyIngressDryRunPrivateAccessDenyRulesAuthentication | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     identities: {
@@ -18361,11 +18510,11 @@ export class AccountNetworkPolicyIngressDryRunPrivateAccessDenyRulesAuthenticati
 }
 export interface AccountNetworkPolicyIngressDryRunPrivateAccessDenyRulesDestinationAccountApi {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_network_policy#scope_qualifier AccountNetworkPolicy#scope_qualifier}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_network_policy#scope_qualifier AccountNetworkPolicy#scope_qualifier}
   */
   readonly scopeQualifier?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_network_policy#scopes AccountNetworkPolicy#scopes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_network_policy#scopes AccountNetworkPolicy#scopes}
   */
   readonly scopes?: string[];
 }
@@ -18373,7 +18522,7 @@ export interface AccountNetworkPolicyIngressDryRunPrivateAccessDenyRulesDestinat
 export function accountNetworkPolicyIngressDryRunPrivateAccessDenyRulesDestinationAccountApiToTerraform(struct?: AccountNetworkPolicyIngressDryRunPrivateAccessDenyRulesDestinationAccountApi | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     scope_qualifier: cdktn.stringToTerraform(struct!.scopeQualifier),
@@ -18385,7 +18534,7 @@ export function accountNetworkPolicyIngressDryRunPrivateAccessDenyRulesDestinati
 export function accountNetworkPolicyIngressDryRunPrivateAccessDenyRulesDestinationAccountApiToHclTerraform(struct?: AccountNetworkPolicyIngressDryRunPrivateAccessDenyRulesDestinationAccountApi | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     scope_qualifier: {
@@ -18488,7 +18637,7 @@ export class AccountNetworkPolicyIngressDryRunPrivateAccessDenyRulesDestinationA
 }
 export interface AccountNetworkPolicyIngressDryRunPrivateAccessDenyRulesDestinationAccountDatabricksOne {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_network_policy#all_destinations AccountNetworkPolicy#all_destinations}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_network_policy#all_destinations AccountNetworkPolicy#all_destinations}
   */
   readonly allDestinations?: boolean | cdktn.IResolvable;
 }
@@ -18496,7 +18645,7 @@ export interface AccountNetworkPolicyIngressDryRunPrivateAccessDenyRulesDestinat
 export function accountNetworkPolicyIngressDryRunPrivateAccessDenyRulesDestinationAccountDatabricksOneToTerraform(struct?: AccountNetworkPolicyIngressDryRunPrivateAccessDenyRulesDestinationAccountDatabricksOne | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     all_destinations: cdktn.booleanToTerraform(struct!.allDestinations),
@@ -18507,7 +18656,7 @@ export function accountNetworkPolicyIngressDryRunPrivateAccessDenyRulesDestinati
 export function accountNetworkPolicyIngressDryRunPrivateAccessDenyRulesDestinationAccountDatabricksOneToHclTerraform(struct?: AccountNetworkPolicyIngressDryRunPrivateAccessDenyRulesDestinationAccountDatabricksOne | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     all_destinations: {
@@ -18582,7 +18731,7 @@ export class AccountNetworkPolicyIngressDryRunPrivateAccessDenyRulesDestinationA
 }
 export interface AccountNetworkPolicyIngressDryRunPrivateAccessDenyRulesDestinationAccountUi {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_network_policy#all_destinations AccountNetworkPolicy#all_destinations}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_network_policy#all_destinations AccountNetworkPolicy#all_destinations}
   */
   readonly allDestinations?: boolean | cdktn.IResolvable;
 }
@@ -18590,7 +18739,7 @@ export interface AccountNetworkPolicyIngressDryRunPrivateAccessDenyRulesDestinat
 export function accountNetworkPolicyIngressDryRunPrivateAccessDenyRulesDestinationAccountUiToTerraform(struct?: AccountNetworkPolicyIngressDryRunPrivateAccessDenyRulesDestinationAccountUi | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     all_destinations: cdktn.booleanToTerraform(struct!.allDestinations),
@@ -18601,7 +18750,7 @@ export function accountNetworkPolicyIngressDryRunPrivateAccessDenyRulesDestinati
 export function accountNetworkPolicyIngressDryRunPrivateAccessDenyRulesDestinationAccountUiToHclTerraform(struct?: AccountNetworkPolicyIngressDryRunPrivateAccessDenyRulesDestinationAccountUi | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     all_destinations: {
@@ -18676,7 +18825,7 @@ export class AccountNetworkPolicyIngressDryRunPrivateAccessDenyRulesDestinationA
 }
 export interface AccountNetworkPolicyIngressDryRunPrivateAccessDenyRulesDestinationAppsRuntime {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_network_policy#all_destinations AccountNetworkPolicy#all_destinations}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_network_policy#all_destinations AccountNetworkPolicy#all_destinations}
   */
   readonly allDestinations?: boolean | cdktn.IResolvable;
 }
@@ -18684,7 +18833,7 @@ export interface AccountNetworkPolicyIngressDryRunPrivateAccessDenyRulesDestinat
 export function accountNetworkPolicyIngressDryRunPrivateAccessDenyRulesDestinationAppsRuntimeToTerraform(struct?: AccountNetworkPolicyIngressDryRunPrivateAccessDenyRulesDestinationAppsRuntime | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     all_destinations: cdktn.booleanToTerraform(struct!.allDestinations),
@@ -18695,7 +18844,7 @@ export function accountNetworkPolicyIngressDryRunPrivateAccessDenyRulesDestinati
 export function accountNetworkPolicyIngressDryRunPrivateAccessDenyRulesDestinationAppsRuntimeToHclTerraform(struct?: AccountNetworkPolicyIngressDryRunPrivateAccessDenyRulesDestinationAppsRuntime | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     all_destinations: {
@@ -18770,7 +18919,7 @@ export class AccountNetworkPolicyIngressDryRunPrivateAccessDenyRulesDestinationA
 }
 export interface AccountNetworkPolicyIngressDryRunPrivateAccessDenyRulesDestinationLakebaseRuntime {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_network_policy#all_destinations AccountNetworkPolicy#all_destinations}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_network_policy#all_destinations AccountNetworkPolicy#all_destinations}
   */
   readonly allDestinations?: boolean | cdktn.IResolvable;
 }
@@ -18778,7 +18927,7 @@ export interface AccountNetworkPolicyIngressDryRunPrivateAccessDenyRulesDestinat
 export function accountNetworkPolicyIngressDryRunPrivateAccessDenyRulesDestinationLakebaseRuntimeToTerraform(struct?: AccountNetworkPolicyIngressDryRunPrivateAccessDenyRulesDestinationLakebaseRuntime | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     all_destinations: cdktn.booleanToTerraform(struct!.allDestinations),
@@ -18789,7 +18938,7 @@ export function accountNetworkPolicyIngressDryRunPrivateAccessDenyRulesDestinati
 export function accountNetworkPolicyIngressDryRunPrivateAccessDenyRulesDestinationLakebaseRuntimeToHclTerraform(struct?: AccountNetworkPolicyIngressDryRunPrivateAccessDenyRulesDestinationLakebaseRuntime | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     all_destinations: {
@@ -18864,11 +19013,11 @@ export class AccountNetworkPolicyIngressDryRunPrivateAccessDenyRulesDestinationL
 }
 export interface AccountNetworkPolicyIngressDryRunPrivateAccessDenyRulesDestinationWorkspaceApi {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_network_policy#scope_qualifier AccountNetworkPolicy#scope_qualifier}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_network_policy#scope_qualifier AccountNetworkPolicy#scope_qualifier}
   */
   readonly scopeQualifier?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_network_policy#scopes AccountNetworkPolicy#scopes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_network_policy#scopes AccountNetworkPolicy#scopes}
   */
   readonly scopes?: string[];
 }
@@ -18876,7 +19025,7 @@ export interface AccountNetworkPolicyIngressDryRunPrivateAccessDenyRulesDestinat
 export function accountNetworkPolicyIngressDryRunPrivateAccessDenyRulesDestinationWorkspaceApiToTerraform(struct?: AccountNetworkPolicyIngressDryRunPrivateAccessDenyRulesDestinationWorkspaceApi | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     scope_qualifier: cdktn.stringToTerraform(struct!.scopeQualifier),
@@ -18888,7 +19037,7 @@ export function accountNetworkPolicyIngressDryRunPrivateAccessDenyRulesDestinati
 export function accountNetworkPolicyIngressDryRunPrivateAccessDenyRulesDestinationWorkspaceApiToHclTerraform(struct?: AccountNetworkPolicyIngressDryRunPrivateAccessDenyRulesDestinationWorkspaceApi | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     scope_qualifier: {
@@ -18991,7 +19140,7 @@ export class AccountNetworkPolicyIngressDryRunPrivateAccessDenyRulesDestinationW
 }
 export interface AccountNetworkPolicyIngressDryRunPrivateAccessDenyRulesDestinationWorkspaceUi {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_network_policy#all_destinations AccountNetworkPolicy#all_destinations}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_network_policy#all_destinations AccountNetworkPolicy#all_destinations}
   */
   readonly allDestinations?: boolean | cdktn.IResolvable;
 }
@@ -18999,7 +19148,7 @@ export interface AccountNetworkPolicyIngressDryRunPrivateAccessDenyRulesDestinat
 export function accountNetworkPolicyIngressDryRunPrivateAccessDenyRulesDestinationWorkspaceUiToTerraform(struct?: AccountNetworkPolicyIngressDryRunPrivateAccessDenyRulesDestinationWorkspaceUi | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     all_destinations: cdktn.booleanToTerraform(struct!.allDestinations),
@@ -19010,7 +19159,7 @@ export function accountNetworkPolicyIngressDryRunPrivateAccessDenyRulesDestinati
 export function accountNetworkPolicyIngressDryRunPrivateAccessDenyRulesDestinationWorkspaceUiToHclTerraform(struct?: AccountNetworkPolicyIngressDryRunPrivateAccessDenyRulesDestinationWorkspaceUi | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     all_destinations: {
@@ -19085,35 +19234,35 @@ export class AccountNetworkPolicyIngressDryRunPrivateAccessDenyRulesDestinationW
 }
 export interface AccountNetworkPolicyIngressDryRunPrivateAccessDenyRulesDestination {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_network_policy#account_api AccountNetworkPolicy#account_api}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_network_policy#account_api AccountNetworkPolicy#account_api}
   */
   readonly accountApi?: AccountNetworkPolicyIngressDryRunPrivateAccessDenyRulesDestinationAccountApi;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_network_policy#account_databricks_one AccountNetworkPolicy#account_databricks_one}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_network_policy#account_databricks_one AccountNetworkPolicy#account_databricks_one}
   */
   readonly accountDatabricksOne?: AccountNetworkPolicyIngressDryRunPrivateAccessDenyRulesDestinationAccountDatabricksOne;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_network_policy#account_ui AccountNetworkPolicy#account_ui}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_network_policy#account_ui AccountNetworkPolicy#account_ui}
   */
   readonly accountUi?: AccountNetworkPolicyIngressDryRunPrivateAccessDenyRulesDestinationAccountUi;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_network_policy#all_destinations AccountNetworkPolicy#all_destinations}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_network_policy#all_destinations AccountNetworkPolicy#all_destinations}
   */
   readonly allDestinations?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_network_policy#apps_runtime AccountNetworkPolicy#apps_runtime}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_network_policy#apps_runtime AccountNetworkPolicy#apps_runtime}
   */
   readonly appsRuntime?: AccountNetworkPolicyIngressDryRunPrivateAccessDenyRulesDestinationAppsRuntime;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_network_policy#lakebase_runtime AccountNetworkPolicy#lakebase_runtime}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_network_policy#lakebase_runtime AccountNetworkPolicy#lakebase_runtime}
   */
   readonly lakebaseRuntime?: AccountNetworkPolicyIngressDryRunPrivateAccessDenyRulesDestinationLakebaseRuntime;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_network_policy#workspace_api AccountNetworkPolicy#workspace_api}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_network_policy#workspace_api AccountNetworkPolicy#workspace_api}
   */
   readonly workspaceApi?: AccountNetworkPolicyIngressDryRunPrivateAccessDenyRulesDestinationWorkspaceApi;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_network_policy#workspace_ui AccountNetworkPolicy#workspace_ui}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_network_policy#workspace_ui AccountNetworkPolicy#workspace_ui}
   */
   readonly workspaceUi?: AccountNetworkPolicyIngressDryRunPrivateAccessDenyRulesDestinationWorkspaceUi;
 }
@@ -19121,7 +19270,7 @@ export interface AccountNetworkPolicyIngressDryRunPrivateAccessDenyRulesDestinat
 export function accountNetworkPolicyIngressDryRunPrivateAccessDenyRulesDestinationToTerraform(struct?: AccountNetworkPolicyIngressDryRunPrivateAccessDenyRulesDestination | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     account_api: accountNetworkPolicyIngressDryRunPrivateAccessDenyRulesDestinationAccountApiToTerraform(struct!.accountApi),
@@ -19139,7 +19288,7 @@ export function accountNetworkPolicyIngressDryRunPrivateAccessDenyRulesDestinati
 export function accountNetworkPolicyIngressDryRunPrivateAccessDenyRulesDestinationToHclTerraform(struct?: AccountNetworkPolicyIngressDryRunPrivateAccessDenyRulesDestination | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     account_api: {
@@ -19410,7 +19559,7 @@ export class AccountNetworkPolicyIngressDryRunPrivateAccessDenyRulesDestinationO
 }
 export interface AccountNetworkPolicyIngressDryRunPrivateAccessDenyRulesOriginEndpoints {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_network_policy#endpoint_ids AccountNetworkPolicy#endpoint_ids}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_network_policy#endpoint_ids AccountNetworkPolicy#endpoint_ids}
   */
   readonly endpointIds?: string[];
 }
@@ -19418,7 +19567,7 @@ export interface AccountNetworkPolicyIngressDryRunPrivateAccessDenyRulesOriginEn
 export function accountNetworkPolicyIngressDryRunPrivateAccessDenyRulesOriginEndpointsToTerraform(struct?: AccountNetworkPolicyIngressDryRunPrivateAccessDenyRulesOriginEndpoints | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     endpoint_ids: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.endpointIds),
@@ -19429,7 +19578,7 @@ export function accountNetworkPolicyIngressDryRunPrivateAccessDenyRulesOriginEnd
 export function accountNetworkPolicyIngressDryRunPrivateAccessDenyRulesOriginEndpointsToHclTerraform(struct?: AccountNetworkPolicyIngressDryRunPrivateAccessDenyRulesOriginEndpoints | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     endpoint_ids: {
@@ -19504,19 +19653,19 @@ export class AccountNetworkPolicyIngressDryRunPrivateAccessDenyRulesOriginEndpoi
 }
 export interface AccountNetworkPolicyIngressDryRunPrivateAccessDenyRulesOrigin {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_network_policy#all_private_access AccountNetworkPolicy#all_private_access}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_network_policy#all_private_access AccountNetworkPolicy#all_private_access}
   */
   readonly allPrivateAccess?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_network_policy#all_registered_endpoints AccountNetworkPolicy#all_registered_endpoints}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_network_policy#all_registered_endpoints AccountNetworkPolicy#all_registered_endpoints}
   */
   readonly allRegisteredEndpoints?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_network_policy#azure_workspace_private_link AccountNetworkPolicy#azure_workspace_private_link}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_network_policy#azure_workspace_private_link AccountNetworkPolicy#azure_workspace_private_link}
   */
   readonly azureWorkspacePrivateLink?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_network_policy#endpoints AccountNetworkPolicy#endpoints}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_network_policy#endpoints AccountNetworkPolicy#endpoints}
   */
   readonly endpoints?: AccountNetworkPolicyIngressDryRunPrivateAccessDenyRulesOriginEndpoints;
 }
@@ -19524,7 +19673,7 @@ export interface AccountNetworkPolicyIngressDryRunPrivateAccessDenyRulesOrigin {
 export function accountNetworkPolicyIngressDryRunPrivateAccessDenyRulesOriginToTerraform(struct?: AccountNetworkPolicyIngressDryRunPrivateAccessDenyRulesOrigin | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     all_private_access: cdktn.booleanToTerraform(struct!.allPrivateAccess),
@@ -19538,7 +19687,7 @@ export function accountNetworkPolicyIngressDryRunPrivateAccessDenyRulesOriginToT
 export function accountNetworkPolicyIngressDryRunPrivateAccessDenyRulesOriginToHclTerraform(struct?: AccountNetworkPolicyIngressDryRunPrivateAccessDenyRulesOrigin | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     all_private_access: {
@@ -19697,19 +19846,19 @@ export class AccountNetworkPolicyIngressDryRunPrivateAccessDenyRulesOriginOutput
 }
 export interface AccountNetworkPolicyIngressDryRunPrivateAccessDenyRules {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_network_policy#authentication AccountNetworkPolicy#authentication}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_network_policy#authentication AccountNetworkPolicy#authentication}
   */
   readonly authentication?: AccountNetworkPolicyIngressDryRunPrivateAccessDenyRulesAuthentication;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_network_policy#destination AccountNetworkPolicy#destination}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_network_policy#destination AccountNetworkPolicy#destination}
   */
   readonly destination?: AccountNetworkPolicyIngressDryRunPrivateAccessDenyRulesDestination;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_network_policy#label AccountNetworkPolicy#label}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_network_policy#label AccountNetworkPolicy#label}
   */
   readonly label?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_network_policy#origin AccountNetworkPolicy#origin}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_network_policy#origin AccountNetworkPolicy#origin}
   */
   readonly origin?: AccountNetworkPolicyIngressDryRunPrivateAccessDenyRulesOrigin;
 }
@@ -19717,7 +19866,7 @@ export interface AccountNetworkPolicyIngressDryRunPrivateAccessDenyRules {
 export function accountNetworkPolicyIngressDryRunPrivateAccessDenyRulesToTerraform(struct?: AccountNetworkPolicyIngressDryRunPrivateAccessDenyRules | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     authentication: accountNetworkPolicyIngressDryRunPrivateAccessDenyRulesAuthenticationToTerraform(struct!.authentication),
@@ -19731,7 +19880,7 @@ export function accountNetworkPolicyIngressDryRunPrivateAccessDenyRulesToTerrafo
 export function accountNetworkPolicyIngressDryRunPrivateAccessDenyRulesToHclTerraform(struct?: AccountNetworkPolicyIngressDryRunPrivateAccessDenyRules | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     authentication: {
@@ -19912,15 +20061,15 @@ export class AccountNetworkPolicyIngressDryRunPrivateAccessDenyRulesList extends
 }
 export interface AccountNetworkPolicyIngressDryRunPrivateAccess {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_network_policy#allow_rules AccountNetworkPolicy#allow_rules}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_network_policy#allow_rules AccountNetworkPolicy#allow_rules}
   */
   readonly allowRules?: AccountNetworkPolicyIngressDryRunPrivateAccessAllowRules[] | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_network_policy#deny_rules AccountNetworkPolicy#deny_rules}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_network_policy#deny_rules AccountNetworkPolicy#deny_rules}
   */
   readonly denyRules?: AccountNetworkPolicyIngressDryRunPrivateAccessDenyRules[] | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_network_policy#restriction_mode AccountNetworkPolicy#restriction_mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_network_policy#restriction_mode AccountNetworkPolicy#restriction_mode}
   */
   readonly restrictionMode: string;
 }
@@ -19928,7 +20077,7 @@ export interface AccountNetworkPolicyIngressDryRunPrivateAccess {
 export function accountNetworkPolicyIngressDryRunPrivateAccessToTerraform(struct?: AccountNetworkPolicyIngressDryRunPrivateAccess | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     allow_rules: cdktn.listMapper(accountNetworkPolicyIngressDryRunPrivateAccessAllowRulesToTerraform, false)(struct!.allowRules),
@@ -19941,7 +20090,7 @@ export function accountNetworkPolicyIngressDryRunPrivateAccessToTerraform(struct
 export function accountNetworkPolicyIngressDryRunPrivateAccessToHclTerraform(struct?: AccountNetworkPolicyIngressDryRunPrivateAccess | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     allow_rules: {
@@ -20069,11 +20218,11 @@ export class AccountNetworkPolicyIngressDryRunPrivateAccessOutputReference exten
 }
 export interface AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesAuthenticationIdentities {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_network_policy#principal_id AccountNetworkPolicy#principal_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_network_policy#principal_id AccountNetworkPolicy#principal_id}
   */
   readonly principalId?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_network_policy#principal_type AccountNetworkPolicy#principal_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_network_policy#principal_type AccountNetworkPolicy#principal_type}
   */
   readonly principalType?: string;
 }
@@ -20081,7 +20230,7 @@ export interface AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesAuthenti
 export function accountNetworkPolicyIngressDryRunPublicAccessAllowRulesAuthenticationIdentitiesToTerraform(struct?: AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesAuthenticationIdentities | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     principal_id: cdktn.numberToTerraform(struct!.principalId),
@@ -20093,7 +20242,7 @@ export function accountNetworkPolicyIngressDryRunPublicAccessAllowRulesAuthentic
 export function accountNetworkPolicyIngressDryRunPublicAccessAllowRulesAuthenticationIdentitiesToHclTerraform(struct?: AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesAuthenticationIdentities | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     principal_id: {
@@ -20218,11 +20367,11 @@ export class AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesAuthenticati
 }
 export interface AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesAuthentication {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_network_policy#identities AccountNetworkPolicy#identities}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_network_policy#identities AccountNetworkPolicy#identities}
   */
   readonly identities?: AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesAuthenticationIdentities[] | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_network_policy#identity_type AccountNetworkPolicy#identity_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_network_policy#identity_type AccountNetworkPolicy#identity_type}
   */
   readonly identityType?: string;
 }
@@ -20230,7 +20379,7 @@ export interface AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesAuthenti
 export function accountNetworkPolicyIngressDryRunPublicAccessAllowRulesAuthenticationToTerraform(struct?: AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesAuthentication | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     identities: cdktn.listMapper(accountNetworkPolicyIngressDryRunPublicAccessAllowRulesAuthenticationIdentitiesToTerraform, false)(struct!.identities),
@@ -20242,7 +20391,7 @@ export function accountNetworkPolicyIngressDryRunPublicAccessAllowRulesAuthentic
 export function accountNetworkPolicyIngressDryRunPublicAccessAllowRulesAuthenticationToHclTerraform(struct?: AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesAuthentication | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     identities: {
@@ -20345,11 +20494,11 @@ export class AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesAuthenticati
 }
 export interface AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestinationAccountApi {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_network_policy#scope_qualifier AccountNetworkPolicy#scope_qualifier}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_network_policy#scope_qualifier AccountNetworkPolicy#scope_qualifier}
   */
   readonly scopeQualifier?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_network_policy#scopes AccountNetworkPolicy#scopes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_network_policy#scopes AccountNetworkPolicy#scopes}
   */
   readonly scopes?: string[];
 }
@@ -20357,7 +20506,7 @@ export interface AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestinat
 export function accountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestinationAccountApiToTerraform(struct?: AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestinationAccountApi | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     scope_qualifier: cdktn.stringToTerraform(struct!.scopeQualifier),
@@ -20369,7 +20518,7 @@ export function accountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestinati
 export function accountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestinationAccountApiToHclTerraform(struct?: AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestinationAccountApi | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     scope_qualifier: {
@@ -20472,7 +20621,7 @@ export class AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestinationA
 }
 export interface AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestinationAccountDatabricksOne {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_network_policy#all_destinations AccountNetworkPolicy#all_destinations}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_network_policy#all_destinations AccountNetworkPolicy#all_destinations}
   */
   readonly allDestinations?: boolean | cdktn.IResolvable;
 }
@@ -20480,7 +20629,7 @@ export interface AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestinat
 export function accountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestinationAccountDatabricksOneToTerraform(struct?: AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestinationAccountDatabricksOne | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     all_destinations: cdktn.booleanToTerraform(struct!.allDestinations),
@@ -20491,7 +20640,7 @@ export function accountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestinati
 export function accountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestinationAccountDatabricksOneToHclTerraform(struct?: AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestinationAccountDatabricksOne | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     all_destinations: {
@@ -20566,7 +20715,7 @@ export class AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestinationA
 }
 export interface AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestinationAccountUi {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_network_policy#all_destinations AccountNetworkPolicy#all_destinations}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_network_policy#all_destinations AccountNetworkPolicy#all_destinations}
   */
   readonly allDestinations?: boolean | cdktn.IResolvable;
 }
@@ -20574,7 +20723,7 @@ export interface AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestinat
 export function accountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestinationAccountUiToTerraform(struct?: AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestinationAccountUi | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     all_destinations: cdktn.booleanToTerraform(struct!.allDestinations),
@@ -20585,7 +20734,7 @@ export function accountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestinati
 export function accountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestinationAccountUiToHclTerraform(struct?: AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestinationAccountUi | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     all_destinations: {
@@ -20660,7 +20809,7 @@ export class AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestinationA
 }
 export interface AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestinationAppsRuntime {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_network_policy#all_destinations AccountNetworkPolicy#all_destinations}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_network_policy#all_destinations AccountNetworkPolicy#all_destinations}
   */
   readonly allDestinations?: boolean | cdktn.IResolvable;
 }
@@ -20668,7 +20817,7 @@ export interface AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestinat
 export function accountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestinationAppsRuntimeToTerraform(struct?: AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestinationAppsRuntime | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     all_destinations: cdktn.booleanToTerraform(struct!.allDestinations),
@@ -20679,7 +20828,7 @@ export function accountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestinati
 export function accountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestinationAppsRuntimeToHclTerraform(struct?: AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestinationAppsRuntime | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     all_destinations: {
@@ -20754,7 +20903,7 @@ export class AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestinationA
 }
 export interface AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestinationLakebaseRuntime {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_network_policy#all_destinations AccountNetworkPolicy#all_destinations}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_network_policy#all_destinations AccountNetworkPolicy#all_destinations}
   */
   readonly allDestinations?: boolean | cdktn.IResolvable;
 }
@@ -20762,7 +20911,7 @@ export interface AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestinat
 export function accountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestinationLakebaseRuntimeToTerraform(struct?: AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestinationLakebaseRuntime | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     all_destinations: cdktn.booleanToTerraform(struct!.allDestinations),
@@ -20773,7 +20922,7 @@ export function accountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestinati
 export function accountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestinationLakebaseRuntimeToHclTerraform(struct?: AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestinationLakebaseRuntime | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     all_destinations: {
@@ -20848,11 +20997,11 @@ export class AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestinationL
 }
 export interface AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestinationWorkspaceApi {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_network_policy#scope_qualifier AccountNetworkPolicy#scope_qualifier}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_network_policy#scope_qualifier AccountNetworkPolicy#scope_qualifier}
   */
   readonly scopeQualifier?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_network_policy#scopes AccountNetworkPolicy#scopes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_network_policy#scopes AccountNetworkPolicy#scopes}
   */
   readonly scopes?: string[];
 }
@@ -20860,7 +21009,7 @@ export interface AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestinat
 export function accountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestinationWorkspaceApiToTerraform(struct?: AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestinationWorkspaceApi | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     scope_qualifier: cdktn.stringToTerraform(struct!.scopeQualifier),
@@ -20872,7 +21021,7 @@ export function accountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestinati
 export function accountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestinationWorkspaceApiToHclTerraform(struct?: AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestinationWorkspaceApi | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     scope_qualifier: {
@@ -20975,7 +21124,7 @@ export class AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestinationW
 }
 export interface AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestinationWorkspaceUi {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_network_policy#all_destinations AccountNetworkPolicy#all_destinations}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_network_policy#all_destinations AccountNetworkPolicy#all_destinations}
   */
   readonly allDestinations?: boolean | cdktn.IResolvable;
 }
@@ -20983,7 +21132,7 @@ export interface AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestinat
 export function accountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestinationWorkspaceUiToTerraform(struct?: AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestinationWorkspaceUi | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     all_destinations: cdktn.booleanToTerraform(struct!.allDestinations),
@@ -20994,7 +21143,7 @@ export function accountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestinati
 export function accountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestinationWorkspaceUiToHclTerraform(struct?: AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestinationWorkspaceUi | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     all_destinations: {
@@ -21069,35 +21218,35 @@ export class AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestinationW
 }
 export interface AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestination {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_network_policy#account_api AccountNetworkPolicy#account_api}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_network_policy#account_api AccountNetworkPolicy#account_api}
   */
   readonly accountApi?: AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestinationAccountApi;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_network_policy#account_databricks_one AccountNetworkPolicy#account_databricks_one}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_network_policy#account_databricks_one AccountNetworkPolicy#account_databricks_one}
   */
   readonly accountDatabricksOne?: AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestinationAccountDatabricksOne;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_network_policy#account_ui AccountNetworkPolicy#account_ui}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_network_policy#account_ui AccountNetworkPolicy#account_ui}
   */
   readonly accountUi?: AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestinationAccountUi;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_network_policy#all_destinations AccountNetworkPolicy#all_destinations}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_network_policy#all_destinations AccountNetworkPolicy#all_destinations}
   */
   readonly allDestinations?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_network_policy#apps_runtime AccountNetworkPolicy#apps_runtime}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_network_policy#apps_runtime AccountNetworkPolicy#apps_runtime}
   */
   readonly appsRuntime?: AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestinationAppsRuntime;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_network_policy#lakebase_runtime AccountNetworkPolicy#lakebase_runtime}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_network_policy#lakebase_runtime AccountNetworkPolicy#lakebase_runtime}
   */
   readonly lakebaseRuntime?: AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestinationLakebaseRuntime;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_network_policy#workspace_api AccountNetworkPolicy#workspace_api}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_network_policy#workspace_api AccountNetworkPolicy#workspace_api}
   */
   readonly workspaceApi?: AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestinationWorkspaceApi;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_network_policy#workspace_ui AccountNetworkPolicy#workspace_ui}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_network_policy#workspace_ui AccountNetworkPolicy#workspace_ui}
   */
   readonly workspaceUi?: AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestinationWorkspaceUi;
 }
@@ -21105,7 +21254,7 @@ export interface AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestinat
 export function accountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestinationToTerraform(struct?: AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestination | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     account_api: accountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestinationAccountApiToTerraform(struct!.accountApi),
@@ -21123,7 +21272,7 @@ export function accountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestinati
 export function accountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestinationToHclTerraform(struct?: AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestination | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     account_api: {
@@ -21394,7 +21543,7 @@ export class AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestinationO
 }
 export interface AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesOriginExcludedIpRanges {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_network_policy#ip_ranges AccountNetworkPolicy#ip_ranges}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_network_policy#ip_ranges AccountNetworkPolicy#ip_ranges}
   */
   readonly ipRanges?: string[];
 }
@@ -21402,7 +21551,7 @@ export interface AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesOriginEx
 export function accountNetworkPolicyIngressDryRunPublicAccessAllowRulesOriginExcludedIpRangesToTerraform(struct?: AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesOriginExcludedIpRanges | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     ip_ranges: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.ipRanges),
@@ -21413,7 +21562,7 @@ export function accountNetworkPolicyIngressDryRunPublicAccessAllowRulesOriginExc
 export function accountNetworkPolicyIngressDryRunPublicAccessAllowRulesOriginExcludedIpRangesToHclTerraform(struct?: AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesOriginExcludedIpRanges | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     ip_ranges: {
@@ -21488,7 +21637,7 @@ export class AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesOriginExclud
 }
 export interface AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesOriginIncludedIpRanges {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_network_policy#ip_ranges AccountNetworkPolicy#ip_ranges}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_network_policy#ip_ranges AccountNetworkPolicy#ip_ranges}
   */
   readonly ipRanges?: string[];
 }
@@ -21496,7 +21645,7 @@ export interface AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesOriginIn
 export function accountNetworkPolicyIngressDryRunPublicAccessAllowRulesOriginIncludedIpRangesToTerraform(struct?: AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesOriginIncludedIpRanges | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     ip_ranges: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.ipRanges),
@@ -21507,7 +21656,7 @@ export function accountNetworkPolicyIngressDryRunPublicAccessAllowRulesOriginInc
 export function accountNetworkPolicyIngressDryRunPublicAccessAllowRulesOriginIncludedIpRangesToHclTerraform(struct?: AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesOriginIncludedIpRanges | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     ip_ranges: {
@@ -21582,15 +21731,15 @@ export class AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesOriginInclud
 }
 export interface AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesOrigin {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_network_policy#all_ip_ranges AccountNetworkPolicy#all_ip_ranges}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_network_policy#all_ip_ranges AccountNetworkPolicy#all_ip_ranges}
   */
   readonly allIpRanges?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_network_policy#excluded_ip_ranges AccountNetworkPolicy#excluded_ip_ranges}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_network_policy#excluded_ip_ranges AccountNetworkPolicy#excluded_ip_ranges}
   */
   readonly excludedIpRanges?: AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesOriginExcludedIpRanges;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_network_policy#included_ip_ranges AccountNetworkPolicy#included_ip_ranges}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_network_policy#included_ip_ranges AccountNetworkPolicy#included_ip_ranges}
   */
   readonly includedIpRanges?: AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesOriginIncludedIpRanges;
 }
@@ -21598,7 +21747,7 @@ export interface AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesOrigin {
 export function accountNetworkPolicyIngressDryRunPublicAccessAllowRulesOriginToTerraform(struct?: AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesOrigin | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     all_ip_ranges: cdktn.booleanToTerraform(struct!.allIpRanges),
@@ -21611,7 +21760,7 @@ export function accountNetworkPolicyIngressDryRunPublicAccessAllowRulesOriginToT
 export function accountNetworkPolicyIngressDryRunPublicAccessAllowRulesOriginToHclTerraform(struct?: AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesOrigin | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     all_ip_ranges: {
@@ -21742,19 +21891,19 @@ export class AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesOriginOutput
 }
 export interface AccountNetworkPolicyIngressDryRunPublicAccessAllowRules {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_network_policy#authentication AccountNetworkPolicy#authentication}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_network_policy#authentication AccountNetworkPolicy#authentication}
   */
   readonly authentication?: AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesAuthentication;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_network_policy#destination AccountNetworkPolicy#destination}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_network_policy#destination AccountNetworkPolicy#destination}
   */
   readonly destination?: AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestination;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_network_policy#label AccountNetworkPolicy#label}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_network_policy#label AccountNetworkPolicy#label}
   */
   readonly label?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_network_policy#origin AccountNetworkPolicy#origin}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_network_policy#origin AccountNetworkPolicy#origin}
   */
   readonly origin?: AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesOrigin;
 }
@@ -21762,7 +21911,7 @@ export interface AccountNetworkPolicyIngressDryRunPublicAccessAllowRules {
 export function accountNetworkPolicyIngressDryRunPublicAccessAllowRulesToTerraform(struct?: AccountNetworkPolicyIngressDryRunPublicAccessAllowRules | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     authentication: accountNetworkPolicyIngressDryRunPublicAccessAllowRulesAuthenticationToTerraform(struct!.authentication),
@@ -21776,7 +21925,7 @@ export function accountNetworkPolicyIngressDryRunPublicAccessAllowRulesToTerrafo
 export function accountNetworkPolicyIngressDryRunPublicAccessAllowRulesToHclTerraform(struct?: AccountNetworkPolicyIngressDryRunPublicAccessAllowRules | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     authentication: {
@@ -21957,11 +22106,11 @@ export class AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesList extends
 }
 export interface AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesAuthenticationIdentities {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_network_policy#principal_id AccountNetworkPolicy#principal_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_network_policy#principal_id AccountNetworkPolicy#principal_id}
   */
   readonly principalId?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_network_policy#principal_type AccountNetworkPolicy#principal_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_network_policy#principal_type AccountNetworkPolicy#principal_type}
   */
   readonly principalType?: string;
 }
@@ -21969,7 +22118,7 @@ export interface AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesAuthentic
 export function accountNetworkPolicyIngressDryRunPublicAccessDenyRulesAuthenticationIdentitiesToTerraform(struct?: AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesAuthenticationIdentities | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     principal_id: cdktn.numberToTerraform(struct!.principalId),
@@ -21981,7 +22130,7 @@ export function accountNetworkPolicyIngressDryRunPublicAccessDenyRulesAuthentica
 export function accountNetworkPolicyIngressDryRunPublicAccessDenyRulesAuthenticationIdentitiesToHclTerraform(struct?: AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesAuthenticationIdentities | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     principal_id: {
@@ -22106,11 +22255,11 @@ export class AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesAuthenticatio
 }
 export interface AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesAuthentication {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_network_policy#identities AccountNetworkPolicy#identities}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_network_policy#identities AccountNetworkPolicy#identities}
   */
   readonly identities?: AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesAuthenticationIdentities[] | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_network_policy#identity_type AccountNetworkPolicy#identity_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_network_policy#identity_type AccountNetworkPolicy#identity_type}
   */
   readonly identityType?: string;
 }
@@ -22118,7 +22267,7 @@ export interface AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesAuthentic
 export function accountNetworkPolicyIngressDryRunPublicAccessDenyRulesAuthenticationToTerraform(struct?: AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesAuthentication | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     identities: cdktn.listMapper(accountNetworkPolicyIngressDryRunPublicAccessDenyRulesAuthenticationIdentitiesToTerraform, false)(struct!.identities),
@@ -22130,7 +22279,7 @@ export function accountNetworkPolicyIngressDryRunPublicAccessDenyRulesAuthentica
 export function accountNetworkPolicyIngressDryRunPublicAccessDenyRulesAuthenticationToHclTerraform(struct?: AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesAuthentication | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     identities: {
@@ -22233,11 +22382,11 @@ export class AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesAuthenticatio
 }
 export interface AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationAccountApi {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_network_policy#scope_qualifier AccountNetworkPolicy#scope_qualifier}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_network_policy#scope_qualifier AccountNetworkPolicy#scope_qualifier}
   */
   readonly scopeQualifier?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_network_policy#scopes AccountNetworkPolicy#scopes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_network_policy#scopes AccountNetworkPolicy#scopes}
   */
   readonly scopes?: string[];
 }
@@ -22245,7 +22394,7 @@ export interface AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinati
 export function accountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationAccountApiToTerraform(struct?: AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationAccountApi | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     scope_qualifier: cdktn.stringToTerraform(struct!.scopeQualifier),
@@ -22257,7 +22406,7 @@ export function accountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinatio
 export function accountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationAccountApiToHclTerraform(struct?: AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationAccountApi | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     scope_qualifier: {
@@ -22360,7 +22509,7 @@ export class AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationAc
 }
 export interface AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationAccountDatabricksOne {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_network_policy#all_destinations AccountNetworkPolicy#all_destinations}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_network_policy#all_destinations AccountNetworkPolicy#all_destinations}
   */
   readonly allDestinations?: boolean | cdktn.IResolvable;
 }
@@ -22368,7 +22517,7 @@ export interface AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinati
 export function accountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationAccountDatabricksOneToTerraform(struct?: AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationAccountDatabricksOne | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     all_destinations: cdktn.booleanToTerraform(struct!.allDestinations),
@@ -22379,7 +22528,7 @@ export function accountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinatio
 export function accountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationAccountDatabricksOneToHclTerraform(struct?: AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationAccountDatabricksOne | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     all_destinations: {
@@ -22454,7 +22603,7 @@ export class AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationAc
 }
 export interface AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationAccountUi {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_network_policy#all_destinations AccountNetworkPolicy#all_destinations}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_network_policy#all_destinations AccountNetworkPolicy#all_destinations}
   */
   readonly allDestinations?: boolean | cdktn.IResolvable;
 }
@@ -22462,7 +22611,7 @@ export interface AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinati
 export function accountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationAccountUiToTerraform(struct?: AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationAccountUi | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     all_destinations: cdktn.booleanToTerraform(struct!.allDestinations),
@@ -22473,7 +22622,7 @@ export function accountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinatio
 export function accountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationAccountUiToHclTerraform(struct?: AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationAccountUi | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     all_destinations: {
@@ -22548,7 +22697,7 @@ export class AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationAc
 }
 export interface AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationAppsRuntime {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_network_policy#all_destinations AccountNetworkPolicy#all_destinations}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_network_policy#all_destinations AccountNetworkPolicy#all_destinations}
   */
   readonly allDestinations?: boolean | cdktn.IResolvable;
 }
@@ -22556,7 +22705,7 @@ export interface AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinati
 export function accountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationAppsRuntimeToTerraform(struct?: AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationAppsRuntime | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     all_destinations: cdktn.booleanToTerraform(struct!.allDestinations),
@@ -22567,7 +22716,7 @@ export function accountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinatio
 export function accountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationAppsRuntimeToHclTerraform(struct?: AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationAppsRuntime | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     all_destinations: {
@@ -22642,7 +22791,7 @@ export class AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationAp
 }
 export interface AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationLakebaseRuntime {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_network_policy#all_destinations AccountNetworkPolicy#all_destinations}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_network_policy#all_destinations AccountNetworkPolicy#all_destinations}
   */
   readonly allDestinations?: boolean | cdktn.IResolvable;
 }
@@ -22650,7 +22799,7 @@ export interface AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinati
 export function accountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationLakebaseRuntimeToTerraform(struct?: AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationLakebaseRuntime | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     all_destinations: cdktn.booleanToTerraform(struct!.allDestinations),
@@ -22661,7 +22810,7 @@ export function accountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinatio
 export function accountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationLakebaseRuntimeToHclTerraform(struct?: AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationLakebaseRuntime | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     all_destinations: {
@@ -22736,11 +22885,11 @@ export class AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationLa
 }
 export interface AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationWorkspaceApi {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_network_policy#scope_qualifier AccountNetworkPolicy#scope_qualifier}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_network_policy#scope_qualifier AccountNetworkPolicy#scope_qualifier}
   */
   readonly scopeQualifier?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_network_policy#scopes AccountNetworkPolicy#scopes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_network_policy#scopes AccountNetworkPolicy#scopes}
   */
   readonly scopes?: string[];
 }
@@ -22748,7 +22897,7 @@ export interface AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinati
 export function accountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationWorkspaceApiToTerraform(struct?: AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationWorkspaceApi | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     scope_qualifier: cdktn.stringToTerraform(struct!.scopeQualifier),
@@ -22760,7 +22909,7 @@ export function accountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinatio
 export function accountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationWorkspaceApiToHclTerraform(struct?: AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationWorkspaceApi | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     scope_qualifier: {
@@ -22863,7 +23012,7 @@ export class AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationWo
 }
 export interface AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationWorkspaceUi {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_network_policy#all_destinations AccountNetworkPolicy#all_destinations}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_network_policy#all_destinations AccountNetworkPolicy#all_destinations}
   */
   readonly allDestinations?: boolean | cdktn.IResolvable;
 }
@@ -22871,7 +23020,7 @@ export interface AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinati
 export function accountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationWorkspaceUiToTerraform(struct?: AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationWorkspaceUi | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     all_destinations: cdktn.booleanToTerraform(struct!.allDestinations),
@@ -22882,7 +23031,7 @@ export function accountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinatio
 export function accountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationWorkspaceUiToHclTerraform(struct?: AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationWorkspaceUi | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     all_destinations: {
@@ -22957,35 +23106,35 @@ export class AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationWo
 }
 export interface AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestination {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_network_policy#account_api AccountNetworkPolicy#account_api}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_network_policy#account_api AccountNetworkPolicy#account_api}
   */
   readonly accountApi?: AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationAccountApi;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_network_policy#account_databricks_one AccountNetworkPolicy#account_databricks_one}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_network_policy#account_databricks_one AccountNetworkPolicy#account_databricks_one}
   */
   readonly accountDatabricksOne?: AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationAccountDatabricksOne;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_network_policy#account_ui AccountNetworkPolicy#account_ui}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_network_policy#account_ui AccountNetworkPolicy#account_ui}
   */
   readonly accountUi?: AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationAccountUi;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_network_policy#all_destinations AccountNetworkPolicy#all_destinations}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_network_policy#all_destinations AccountNetworkPolicy#all_destinations}
   */
   readonly allDestinations?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_network_policy#apps_runtime AccountNetworkPolicy#apps_runtime}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_network_policy#apps_runtime AccountNetworkPolicy#apps_runtime}
   */
   readonly appsRuntime?: AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationAppsRuntime;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_network_policy#lakebase_runtime AccountNetworkPolicy#lakebase_runtime}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_network_policy#lakebase_runtime AccountNetworkPolicy#lakebase_runtime}
   */
   readonly lakebaseRuntime?: AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationLakebaseRuntime;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_network_policy#workspace_api AccountNetworkPolicy#workspace_api}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_network_policy#workspace_api AccountNetworkPolicy#workspace_api}
   */
   readonly workspaceApi?: AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationWorkspaceApi;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_network_policy#workspace_ui AccountNetworkPolicy#workspace_ui}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_network_policy#workspace_ui AccountNetworkPolicy#workspace_ui}
   */
   readonly workspaceUi?: AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationWorkspaceUi;
 }
@@ -22993,7 +23142,7 @@ export interface AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinati
 export function accountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationToTerraform(struct?: AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestination | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     account_api: accountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationAccountApiToTerraform(struct!.accountApi),
@@ -23011,7 +23160,7 @@ export function accountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinatio
 export function accountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationToHclTerraform(struct?: AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestination | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     account_api: {
@@ -23282,7 +23431,7 @@ export class AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationOu
 }
 export interface AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesOriginExcludedIpRanges {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_network_policy#ip_ranges AccountNetworkPolicy#ip_ranges}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_network_policy#ip_ranges AccountNetworkPolicy#ip_ranges}
   */
   readonly ipRanges?: string[];
 }
@@ -23290,7 +23439,7 @@ export interface AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesOriginExc
 export function accountNetworkPolicyIngressDryRunPublicAccessDenyRulesOriginExcludedIpRangesToTerraform(struct?: AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesOriginExcludedIpRanges | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     ip_ranges: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.ipRanges),
@@ -23301,7 +23450,7 @@ export function accountNetworkPolicyIngressDryRunPublicAccessDenyRulesOriginExcl
 export function accountNetworkPolicyIngressDryRunPublicAccessDenyRulesOriginExcludedIpRangesToHclTerraform(struct?: AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesOriginExcludedIpRanges | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     ip_ranges: {
@@ -23376,7 +23525,7 @@ export class AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesOriginExclude
 }
 export interface AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesOriginIncludedIpRanges {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_network_policy#ip_ranges AccountNetworkPolicy#ip_ranges}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_network_policy#ip_ranges AccountNetworkPolicy#ip_ranges}
   */
   readonly ipRanges?: string[];
 }
@@ -23384,7 +23533,7 @@ export interface AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesOriginInc
 export function accountNetworkPolicyIngressDryRunPublicAccessDenyRulesOriginIncludedIpRangesToTerraform(struct?: AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesOriginIncludedIpRanges | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     ip_ranges: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.ipRanges),
@@ -23395,7 +23544,7 @@ export function accountNetworkPolicyIngressDryRunPublicAccessDenyRulesOriginIncl
 export function accountNetworkPolicyIngressDryRunPublicAccessDenyRulesOriginIncludedIpRangesToHclTerraform(struct?: AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesOriginIncludedIpRanges | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     ip_ranges: {
@@ -23470,15 +23619,15 @@ export class AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesOriginInclude
 }
 export interface AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesOrigin {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_network_policy#all_ip_ranges AccountNetworkPolicy#all_ip_ranges}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_network_policy#all_ip_ranges AccountNetworkPolicy#all_ip_ranges}
   */
   readonly allIpRanges?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_network_policy#excluded_ip_ranges AccountNetworkPolicy#excluded_ip_ranges}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_network_policy#excluded_ip_ranges AccountNetworkPolicy#excluded_ip_ranges}
   */
   readonly excludedIpRanges?: AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesOriginExcludedIpRanges;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_network_policy#included_ip_ranges AccountNetworkPolicy#included_ip_ranges}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_network_policy#included_ip_ranges AccountNetworkPolicy#included_ip_ranges}
   */
   readonly includedIpRanges?: AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesOriginIncludedIpRanges;
 }
@@ -23486,7 +23635,7 @@ export interface AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesOrigin {
 export function accountNetworkPolicyIngressDryRunPublicAccessDenyRulesOriginToTerraform(struct?: AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesOrigin | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     all_ip_ranges: cdktn.booleanToTerraform(struct!.allIpRanges),
@@ -23499,7 +23648,7 @@ export function accountNetworkPolicyIngressDryRunPublicAccessDenyRulesOriginToTe
 export function accountNetworkPolicyIngressDryRunPublicAccessDenyRulesOriginToHclTerraform(struct?: AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesOrigin | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     all_ip_ranges: {
@@ -23626,377 +23775,5 @@ export class AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesOriginOutputR
   // Temporarily expose input value. Use with caution.
   public get includedIpRangesInput() {
     return this._includedIpRanges.internalValue;
-  }
-}
-export interface AccountNetworkPolicyIngressDryRunPublicAccessDenyRules {
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_network_policy#authentication AccountNetworkPolicy#authentication}
-  */
-  readonly authentication?: AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesAuthentication;
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_network_policy#destination AccountNetworkPolicy#destination}
-  */
-  readonly destination?: AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestination;
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_network_policy#label AccountNetworkPolicy#label}
-  */
-  readonly label?: string;
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_network_policy#origin AccountNetworkPolicy#origin}
-  */
-  readonly origin?: AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesOrigin;
-}
-
-export function accountNetworkPolicyIngressDryRunPublicAccessDenyRulesToTerraform(struct?: AccountNetworkPolicyIngressDryRunPublicAccessDenyRules | cdktn.IResolvable): any {
-  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
-  }
-  return {
-    authentication: accountNetworkPolicyIngressDryRunPublicAccessDenyRulesAuthenticationToTerraform(struct!.authentication),
-    destination: accountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationToTerraform(struct!.destination),
-    label: cdktn.stringToTerraform(struct!.label),
-    origin: accountNetworkPolicyIngressDryRunPublicAccessDenyRulesOriginToTerraform(struct!.origin),
-  }
-}
-
-
-export function accountNetworkPolicyIngressDryRunPublicAccessDenyRulesToHclTerraform(struct?: AccountNetworkPolicyIngressDryRunPublicAccessDenyRules | cdktn.IResolvable): any {
-  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
-  }
-  const attrs = {
-    authentication: {
-      value: accountNetworkPolicyIngressDryRunPublicAccessDenyRulesAuthenticationToHclTerraform(struct!.authentication),
-      isBlock: true,
-      type: "struct",
-      storageClassType: "AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesAuthentication",
-    },
-    destination: {
-      value: accountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationToHclTerraform(struct!.destination),
-      isBlock: true,
-      type: "struct",
-      storageClassType: "AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestination",
-    },
-    label: {
-      value: cdktn.stringToHclTerraform(struct!.label),
-      isBlock: false,
-      type: "simple",
-      storageClassType: "string",
-    },
-    origin: {
-      value: accountNetworkPolicyIngressDryRunPublicAccessDenyRulesOriginToHclTerraform(struct!.origin),
-      isBlock: true,
-      type: "struct",
-      storageClassType: "AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesOrigin",
-    },
-  };
-
-  // remove undefined attributes
-  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
-}
-
-export class AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesOutputReference extends cdktn.ComplexObject {
-  private isEmptyObject = false;
-  private resolvableValue?: cdktn.IResolvable;
-
-  /**
-  * @param terraformResource The parent resource
-  * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param complexObjectIndex the index of this item in the list
-  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
-  */
-  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
-    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
-  }
-
-  public get internalValue(): AccountNetworkPolicyIngressDryRunPublicAccessDenyRules | cdktn.IResolvable | undefined {
-    if (this.resolvableValue) {
-      return this.resolvableValue;
-    }
-    let hasAnyValues = this.isEmptyObject;
-    const internalValueResult: any = {};
-    if (this._authentication?.internalValue !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.authentication = this._authentication?.internalValue;
-    }
-    if (this._destination?.internalValue !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.destination = this._destination?.internalValue;
-    }
-    if (this._label !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.label = this._label;
-    }
-    if (this._origin?.internalValue !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.origin = this._origin?.internalValue;
-    }
-    return hasAnyValues ? internalValueResult : undefined;
-  }
-
-  public set internalValue(value: AccountNetworkPolicyIngressDryRunPublicAccessDenyRules | cdktn.IResolvable | undefined) {
-    if (value === undefined) {
-      this.isEmptyObject = false;
-      this.resolvableValue = undefined;
-      this._authentication.internalValue = undefined;
-      this._destination.internalValue = undefined;
-      this._label = undefined;
-      this._origin.internalValue = undefined;
-    }
-    else if (cdktn.Tokenization.isResolvable(value)) {
-      this.isEmptyObject = false;
-      this.resolvableValue = value;
-    }
-    else {
-      this.isEmptyObject = Object.keys(value).length === 0;
-      this.resolvableValue = undefined;
-      this._authentication.internalValue = value.authentication;
-      this._destination.internalValue = value.destination;
-      this._label = value.label;
-      this._origin.internalValue = value.origin;
-    }
-  }
-
-  // authentication - computed: false, optional: true, required: false
-  private _authentication = new AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesAuthenticationOutputReference(this, "authentication");
-  public get authentication() {
-    return this._authentication;
-  }
-  public putAuthentication(value: AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesAuthentication) {
-    this._authentication.internalValue = value;
-  }
-  public resetAuthentication() {
-    this._authentication.internalValue = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get authenticationInput() {
-    return this._authentication.internalValue;
-  }
-
-  // destination - computed: false, optional: true, required: false
-  private _destination = new AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationOutputReference(this, "destination");
-  public get destination() {
-    return this._destination;
-  }
-  public putDestination(value: AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestination) {
-    this._destination.internalValue = value;
-  }
-  public resetDestination() {
-    this._destination.internalValue = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get destinationInput() {
-    return this._destination.internalValue;
-  }
-
-  // label - computed: false, optional: true, required: false
-  private _label?: string; 
-  public get label() {
-    return this.getStringAttribute('label');
-  }
-  public set label(value: string) {
-    this._label = value;
-  }
-  public resetLabel() {
-    this._label = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get labelInput() {
-    return this._label;
-  }
-
-  // origin - computed: false, optional: true, required: false
-  private _origin = new AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesOriginOutputReference(this, "origin");
-  public get origin() {
-    return this._origin;
-  }
-  public putOrigin(value: AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesOrigin) {
-    this._origin.internalValue = value;
-  }
-  public resetOrigin() {
-    this._origin.internalValue = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get originInput() {
-    return this._origin.internalValue;
-  }
-}
-
-export class AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesList extends cdktn.ComplexList {
-  public internalValue? : AccountNetworkPolicyIngressDryRunPublicAccessDenyRules[] | cdktn.IResolvable
-
-  /**
-  * @param terraformResource The parent resource
-  * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
-  */
-  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
-    super(terraformResource, terraformAttribute, wrapsSet);
-  }
-
-  /**
-  * @param index the index of the item to return
-  */
-  public get(index: number): AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesOutputReference {
-    return new AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
-  }
-}
-export interface AccountNetworkPolicyIngressDryRunPublicAccess {
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_network_policy#allow_rules AccountNetworkPolicy#allow_rules}
-  */
-  readonly allowRules?: AccountNetworkPolicyIngressDryRunPublicAccessAllowRules[] | cdktn.IResolvable;
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_network_policy#deny_rules AccountNetworkPolicy#deny_rules}
-  */
-  readonly denyRules?: AccountNetworkPolicyIngressDryRunPublicAccessDenyRules[] | cdktn.IResolvable;
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.117.0/docs/resources/account_network_policy#restriction_mode AccountNetworkPolicy#restriction_mode}
-  */
-  readonly restrictionMode: string;
-}
-
-export function accountNetworkPolicyIngressDryRunPublicAccessToTerraform(struct?: AccountNetworkPolicyIngressDryRunPublicAccess | cdktn.IResolvable): any {
-  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
-  }
-  return {
-    allow_rules: cdktn.listMapper(accountNetworkPolicyIngressDryRunPublicAccessAllowRulesToTerraform, false)(struct!.allowRules),
-    deny_rules: cdktn.listMapper(accountNetworkPolicyIngressDryRunPublicAccessDenyRulesToTerraform, false)(struct!.denyRules),
-    restriction_mode: cdktn.stringToTerraform(struct!.restrictionMode),
-  }
-}
-
-
-export function accountNetworkPolicyIngressDryRunPublicAccessToHclTerraform(struct?: AccountNetworkPolicyIngressDryRunPublicAccess | cdktn.IResolvable): any {
-  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
-  }
-  const attrs = {
-    allow_rules: {
-      value: cdktn.listMapperHcl(accountNetworkPolicyIngressDryRunPublicAccessAllowRulesToHclTerraform, false)(struct!.allowRules),
-      isBlock: true,
-      type: "list",
-      storageClassType: "AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesList",
-    },
-    deny_rules: {
-      value: cdktn.listMapperHcl(accountNetworkPolicyIngressDryRunPublicAccessDenyRulesToHclTerraform, false)(struct!.denyRules),
-      isBlock: true,
-      type: "list",
-      storageClassType: "AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesList",
-    },
-    restriction_mode: {
-      value: cdktn.stringToHclTerraform(struct!.restrictionMode),
-      isBlock: false,
-      type: "simple",
-      storageClassType: "string",
-    },
-  };
-
-  // remove undefined attributes
-  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
-}
-
-export class AccountNetworkPolicyIngressDryRunPublicAccessOutputReference extends cdktn.ComplexObject {
-  private isEmptyObject = false;
-  private resolvableValue?: cdktn.IResolvable;
-
-  /**
-  * @param terraformResource The parent resource
-  * @param terraformAttribute The attribute on the parent resource this class is referencing
-  */
-  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
-    super(terraformResource, terraformAttribute, false);
-  }
-
-  public get internalValue(): AccountNetworkPolicyIngressDryRunPublicAccess | cdktn.IResolvable | undefined {
-    if (this.resolvableValue) {
-      return this.resolvableValue;
-    }
-    let hasAnyValues = this.isEmptyObject;
-    const internalValueResult: any = {};
-    if (this._allowRules?.internalValue !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.allowRules = this._allowRules?.internalValue;
-    }
-    if (this._denyRules?.internalValue !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.denyRules = this._denyRules?.internalValue;
-    }
-    if (this._restrictionMode !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.restrictionMode = this._restrictionMode;
-    }
-    return hasAnyValues ? internalValueResult : undefined;
-  }
-
-  public set internalValue(value: AccountNetworkPolicyIngressDryRunPublicAccess | cdktn.IResolvable | undefined) {
-    if (value === undefined) {
-      this.isEmptyObject = false;
-      this.resolvableValue = undefined;
-      this._allowRules.internalValue = undefined;
-      this._denyRules.internalValue = undefined;
-      this._restrictionMode = undefined;
-    }
-    else if (cdktn.Tokenization.isResolvable(value)) {
-      this.isEmptyObject = false;
-      this.resolvableValue = value;
-    }
-    else {
-      this.isEmptyObject = Object.keys(value).length === 0;
-      this.resolvableValue = undefined;
-      this._allowRules.internalValue = value.allowRules;
-      this._denyRules.internalValue = value.denyRules;
-      this._restrictionMode = value.restrictionMode;
-    }
-  }
-
-  // allow_rules - computed: false, optional: true, required: false
-  private _allowRules = new AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesList(this, "allow_rules", false);
-  public get allowRules() {
-    return this._allowRules;
-  }
-  public putAllowRules(value: AccountNetworkPolicyIngressDryRunPublicAccessAllowRules[] | cdktn.IResolvable) {
-    this._allowRules.internalValue = value;
-  }
-  public resetAllowRules() {
-    this._allowRules.internalValue = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get allowRulesInput() {
-    return this._allowRules.internalValue;
-  }
-
-  // deny_rules - computed: false, optional: true, required: false
-  private _denyRules = new AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesList(this, "deny_rules", false);
-  public get denyRules() {
-    return this._denyRules;
-  }
-  public putDenyRules(value: AccountNetworkPolicyIngressDryRunPublicAccessDenyRules[] | cdktn.IResolvable) {
-    this._denyRules.internalValue = value;
-  }
-  public resetDenyRules() {
-    this._denyRules.internalValue = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get denyRulesInput() {
-    return this._denyRules.internalValue;
-  }
-
-  // restriction_mode - computed: false, optional: false, required: true
-  private _restrictionMode?: string; 
-  public get restrictionMode() {
-    return this.getStringAttribute('restriction_mode');
-  }
-  public set restrictionMode(value: string) {
-    this._restrictionMode = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get restrictionModeInput() {
-    return this._restrictionMode;
   }
 }
