@@ -1,3 +1,3 @@
 # `databricks_data_classification_catalog_config`
 
-Refer to the Terraform Registry for docs: [`databricks_data_classification_catalog_config`](https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/data_classification_catalog_config).
+Refer to the Terraform Registry for docs: [`databricks_data_classification_catalog_config`](https://registry.terraform.io/providers/databricks/databricks/1.119.0/docs/resources/data_classification_catalog_config).

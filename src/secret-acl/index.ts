@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/secret_acl
+// https://registry.terraform.io/providers/databricks/databricks/1.119.0/docs/resources/secret_acl
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,34 +13,34 @@ import * as cdktn from 'cdktn';
 
 export interface SecretAclConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/secret_acl#id SecretAcl#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.119.0/docs/resources/secret_acl#id SecretAcl#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/secret_acl#permission SecretAcl#permission}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.119.0/docs/resources/secret_acl#permission SecretAcl#permission}
   */
   readonly permission: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/secret_acl#principal SecretAcl#principal}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.119.0/docs/resources/secret_acl#principal SecretAcl#principal}
   */
   readonly principal: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/secret_acl#scope SecretAcl#scope}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.119.0/docs/resources/secret_acl#scope SecretAcl#scope}
   */
   readonly scope: string;
   /**
   * provider_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/secret_acl#provider_config SecretAcl#provider_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.119.0/docs/resources/secret_acl#provider_config SecretAcl#provider_config}
   */
   readonly providerConfig?: SecretAclProviderConfig;
 }
 export interface SecretAclProviderConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/secret_acl#workspace_id SecretAcl#workspace_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.119.0/docs/resources/secret_acl#workspace_id SecretAcl#workspace_id}
   */
   readonly workspaceId?: string;
 }
@@ -124,7 +124,7 @@ export class SecretAclProviderConfigOutputReference extends cdktn.ComplexObject 
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/secret_acl databricks_secret_acl}
+* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.119.0/docs/resources/secret_acl databricks_secret_acl}
 */
 export class SecretAcl extends cdktn.TerraformResource {
 
@@ -140,7 +140,7 @@ export class SecretAcl extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a SecretAcl resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the SecretAcl to import
-  * @param importFromId The id of the existing SecretAcl that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/secret_acl#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing SecretAcl that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.119.0/docs/resources/secret_acl#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the SecretAcl to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -152,7 +152,7 @@ export class SecretAcl extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/secret_acl databricks_secret_acl} Resource
+  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.119.0/docs/resources/secret_acl databricks_secret_acl} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -163,7 +163,7 @@ export class SecretAcl extends cdktn.TerraformResource {
       terraformResourceType: 'databricks_secret_acl',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '1.118.0',
+        providerVersion: '1.119.0',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,

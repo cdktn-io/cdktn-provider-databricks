@@ -30,19 +30,19 @@ accountNetworkPolicyIngressDryRunPrivateAccessToHclTerraform,
 AccountNetworkPolicyIngressDryRunPrivateAccessOutputReference } from './structs0';
 export interface AccountNetworkPolicyIngressDryRunPublicAccessDenyRules {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_network_policy#authentication AccountNetworkPolicy#authentication}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.119.0/docs/resources/account_network_policy#authentication AccountNetworkPolicy#authentication}
   */
   readonly authentication?: AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesAuthentication;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_network_policy#destination AccountNetworkPolicy#destination}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.119.0/docs/resources/account_network_policy#destination AccountNetworkPolicy#destination}
   */
   readonly destination?: AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestination;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_network_policy#label AccountNetworkPolicy#label}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.119.0/docs/resources/account_network_policy#label AccountNetworkPolicy#label}
   */
   readonly label?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_network_policy#origin AccountNetworkPolicy#origin}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.119.0/docs/resources/account_network_policy#origin AccountNetworkPolicy#origin}
   */
   readonly origin?: AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesOrigin;
 }
@@ -245,15 +245,15 @@ export class AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesList extends 
 }
 export interface AccountNetworkPolicyIngressDryRunPublicAccess {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_network_policy#allow_rules AccountNetworkPolicy#allow_rules}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.119.0/docs/resources/account_network_policy#allow_rules AccountNetworkPolicy#allow_rules}
   */
   readonly allowRules?: AccountNetworkPolicyIngressDryRunPublicAccessAllowRules[] | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_network_policy#deny_rules AccountNetworkPolicy#deny_rules}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.119.0/docs/resources/account_network_policy#deny_rules AccountNetworkPolicy#deny_rules}
   */
   readonly denyRules?: AccountNetworkPolicyIngressDryRunPublicAccessDenyRules[] | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_network_policy#restriction_mode AccountNetworkPolicy#restriction_mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.119.0/docs/resources/account_network_policy#restriction_mode AccountNetworkPolicy#restriction_mode}
   */
   readonly restrictionMode: string;
 }
@@ -402,15 +402,15 @@ export class AccountNetworkPolicyIngressDryRunPublicAccessOutputReference extend
 }
 export interface AccountNetworkPolicyIngressDryRun {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_network_policy#cross_workspace_access AccountNetworkPolicy#cross_workspace_access}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.119.0/docs/resources/account_network_policy#cross_workspace_access AccountNetworkPolicy#cross_workspace_access}
   */
   readonly crossWorkspaceAccess?: AccountNetworkPolicyIngressDryRunCrossWorkspaceAccess;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_network_policy#private_access AccountNetworkPolicy#private_access}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.119.0/docs/resources/account_network_policy#private_access AccountNetworkPolicy#private_access}
   */
   readonly privateAccess?: AccountNetworkPolicyIngressDryRunPrivateAccess;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/account_network_policy#public_access AccountNetworkPolicy#public_access}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.119.0/docs/resources/account_network_policy#public_access AccountNetworkPolicy#public_access}
   */
   readonly publicAccess?: AccountNetworkPolicyIngressDryRunPublicAccess;
 }
