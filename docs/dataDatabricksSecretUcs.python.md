@@ -4,7 +4,7 @@
 
 ### DataDatabricksSecretUcs <a name="DataDatabricksSecretUcs" id="@cdktn/provider-databricks.dataDatabricksSecretUcs.DataDatabricksSecretUcs"></a>
 
-Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/secret_ucs databricks_secret_ucs}.
+Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.119.0/docs/data-sources/secret_ucs databricks_secret_ucs}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksSecretUcs.DataDatabricksSecretUcs.Initializer"></a>
 
@@ -40,11 +40,11 @@ dataDatabricksSecretUcs.DataDatabricksSecretUcs(
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksSecretUcs.DataDatabricksSecretUcs.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksSecretUcs.DataDatabricksSecretUcs.Initializer.parameter.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksSecretUcs.DataDatabricksSecretUcs.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksSecretUcs.DataDatabricksSecretUcs.Initializer.parameter.catalogName">catalog_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/secret_ucs#catalog_name DataDatabricksSecretUcs#catalog_name}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksSecretUcs.DataDatabricksSecretUcs.Initializer.parameter.includeBrowse">include_browse</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/secret_ucs#include_browse DataDatabricksSecretUcs#include_browse}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksSecretUcs.DataDatabricksSecretUcs.Initializer.parameter.pageSize">page_size</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/secret_ucs#page_size DataDatabricksSecretUcs#page_size}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksSecretUcs.DataDatabricksSecretUcs.Initializer.parameter.providerConfig">provider_config</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksSecretUcs.DataDatabricksSecretUcsProviderConfig">DataDatabricksSecretUcsProviderConfig</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/secret_ucs#provider_config DataDatabricksSecretUcs#provider_config}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksSecretUcs.DataDatabricksSecretUcs.Initializer.parameter.schemaName">schema_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/secret_ucs#schema_name DataDatabricksSecretUcs#schema_name}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksSecretUcs.DataDatabricksSecretUcs.Initializer.parameter.catalogName">catalog_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.119.0/docs/data-sources/secret_ucs#catalog_name DataDatabricksSecretUcs#catalog_name}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksSecretUcs.DataDatabricksSecretUcs.Initializer.parameter.includeBrowse">include_browse</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.119.0/docs/data-sources/secret_ucs#include_browse DataDatabricksSecretUcs#include_browse}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksSecretUcs.DataDatabricksSecretUcs.Initializer.parameter.pageSize">page_size</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.119.0/docs/data-sources/secret_ucs#page_size DataDatabricksSecretUcs#page_size}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksSecretUcs.DataDatabricksSecretUcs.Initializer.parameter.providerConfig">provider_config</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksSecretUcs.DataDatabricksSecretUcsProviderConfig">DataDatabricksSecretUcsProviderConfig</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.119.0/docs/data-sources/secret_ucs#provider_config DataDatabricksSecretUcs#provider_config}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksSecretUcs.DataDatabricksSecretUcs.Initializer.parameter.schemaName">schema_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.119.0/docs/data-sources/secret_ucs#schema_name DataDatabricksSecretUcs#schema_name}. |
 
 ---
 
@@ -112,7 +112,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/secret_ucs#catalog_name DataDatabricksSecretUcs#catalog_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.119.0/docs/data-sources/secret_ucs#catalog_name DataDatabricksSecretUcs#catalog_name}.
 
 ---
 
@@ -120,7 +120,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* bool | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/secret_ucs#include_browse DataDatabricksSecretUcs#include_browse}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.119.0/docs/data-sources/secret_ucs#include_browse DataDatabricksSecretUcs#include_browse}.
 
 ---
 
@@ -128,7 +128,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/secret_ucs#page_size DataDatabricksSecretUcs#page_size}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.119.0/docs/data-sources/secret_ucs#page_size DataDatabricksSecretUcs#page_size}.
 
 ---
 
@@ -136,7 +136,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* <a href="#@cdktn/provider-databricks.dataDatabricksSecretUcs.DataDatabricksSecretUcsProviderConfig">DataDatabricksSecretUcsProviderConfig</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/secret_ucs#provider_config DataDatabricksSecretUcs#provider_config}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.119.0/docs/data-sources/secret_ucs#provider_config DataDatabricksSecretUcs#provider_config}.
 
 ---
 
@@ -144,7 +144,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/secret_ucs#schema_name DataDatabricksSecretUcs#schema_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.119.0/docs/data-sources/secret_ucs#schema_name DataDatabricksSecretUcs#schema_name}.
 
 ---
 
@@ -431,7 +431,7 @@ def put_provider_config(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/secret_ucs#workspace_id DataDatabricksSecretUcs#workspace_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.119.0/docs/data-sources/secret_ucs#workspace_id DataDatabricksSecretUcs#workspace_id}.
 
 ---
 
@@ -579,7 +579,7 @@ The construct id used in the generated config for the DataDatabricksSecretUcs to
 
 The id of the existing DataDatabricksSecretUcs that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/secret_ucs#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.119.0/docs/data-sources/secret_ucs#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -907,11 +907,11 @@ dataDatabricksSecretUcs.DataDatabricksSecretUcsConfig(
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksSecretUcs.DataDatabricksSecretUcsConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksSecretUcs.DataDatabricksSecretUcsConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksSecretUcs.DataDatabricksSecretUcsConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksSecretUcs.DataDatabricksSecretUcsConfig.property.catalogName">catalog_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/secret_ucs#catalog_name DataDatabricksSecretUcs#catalog_name}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksSecretUcs.DataDatabricksSecretUcsConfig.property.includeBrowse">include_browse</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/secret_ucs#include_browse DataDatabricksSecretUcs#include_browse}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksSecretUcs.DataDatabricksSecretUcsConfig.property.pageSize">page_size</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/secret_ucs#page_size DataDatabricksSecretUcs#page_size}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksSecretUcs.DataDatabricksSecretUcsConfig.property.providerConfig">provider_config</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksSecretUcs.DataDatabricksSecretUcsProviderConfig">DataDatabricksSecretUcsProviderConfig</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/secret_ucs#provider_config DataDatabricksSecretUcs#provider_config}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksSecretUcs.DataDatabricksSecretUcsConfig.property.schemaName">schema_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/secret_ucs#schema_name DataDatabricksSecretUcs#schema_name}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksSecretUcs.DataDatabricksSecretUcsConfig.property.catalogName">catalog_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.119.0/docs/data-sources/secret_ucs#catalog_name DataDatabricksSecretUcs#catalog_name}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksSecretUcs.DataDatabricksSecretUcsConfig.property.includeBrowse">include_browse</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.119.0/docs/data-sources/secret_ucs#include_browse DataDatabricksSecretUcs#include_browse}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksSecretUcs.DataDatabricksSecretUcsConfig.property.pageSize">page_size</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.119.0/docs/data-sources/secret_ucs#page_size DataDatabricksSecretUcs#page_size}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksSecretUcs.DataDatabricksSecretUcsConfig.property.providerConfig">provider_config</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksSecretUcs.DataDatabricksSecretUcsProviderConfig">DataDatabricksSecretUcsProviderConfig</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.119.0/docs/data-sources/secret_ucs#provider_config DataDatabricksSecretUcs#provider_config}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksSecretUcs.DataDatabricksSecretUcsConfig.property.schemaName">schema_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.119.0/docs/data-sources/secret_ucs#schema_name DataDatabricksSecretUcs#schema_name}. |
 
 ---
 
@@ -993,7 +993,7 @@ catalog_name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/secret_ucs#catalog_name DataDatabricksSecretUcs#catalog_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.119.0/docs/data-sources/secret_ucs#catalog_name DataDatabricksSecretUcs#catalog_name}.
 
 ---
 
@@ -1005,7 +1005,7 @@ include_browse: bool | IResolvable
 
 - *Type:* bool | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/secret_ucs#include_browse DataDatabricksSecretUcs#include_browse}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.119.0/docs/data-sources/secret_ucs#include_browse DataDatabricksSecretUcs#include_browse}.
 
 ---
 
@@ -1017,7 +1017,7 @@ page_size: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/secret_ucs#page_size DataDatabricksSecretUcs#page_size}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.119.0/docs/data-sources/secret_ucs#page_size DataDatabricksSecretUcs#page_size}.
 
 ---
 
@@ -1029,7 +1029,7 @@ provider_config: DataDatabricksSecretUcsProviderConfig
 
 - *Type:* <a href="#@cdktn/provider-databricks.dataDatabricksSecretUcs.DataDatabricksSecretUcsProviderConfig">DataDatabricksSecretUcsProviderConfig</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/secret_ucs#provider_config DataDatabricksSecretUcs#provider_config}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.119.0/docs/data-sources/secret_ucs#provider_config DataDatabricksSecretUcs#provider_config}.
 
 ---
 
@@ -1041,7 +1041,7 @@ schema_name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/secret_ucs#schema_name DataDatabricksSecretUcs#schema_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.119.0/docs/data-sources/secret_ucs#schema_name DataDatabricksSecretUcs#schema_name}.
 
 ---
 
@@ -1061,7 +1061,7 @@ dataDatabricksSecretUcs.DataDatabricksSecretUcsProviderConfig(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksSecretUcs.DataDatabricksSecretUcsProviderConfig.property.workspaceId">workspace_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/secret_ucs#workspace_id DataDatabricksSecretUcs#workspace_id}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksSecretUcs.DataDatabricksSecretUcsProviderConfig.property.workspaceId">workspace_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.119.0/docs/data-sources/secret_ucs#workspace_id DataDatabricksSecretUcs#workspace_id}. |
 
 ---
 
@@ -1073,7 +1073,7 @@ workspace_id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/secret_ucs#workspace_id DataDatabricksSecretUcs#workspace_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.119.0/docs/data-sources/secret_ucs#workspace_id DataDatabricksSecretUcs#workspace_id}.
 
 ---
 
@@ -1094,8 +1094,8 @@ dataDatabricksSecretUcs.DataDatabricksSecretUcsSecrets(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksSecretUcs.DataDatabricksSecretUcsSecrets.property.fullName">full_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/secret_ucs#full_name DataDatabricksSecretUcs#full_name}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksSecretUcs.DataDatabricksSecretUcsSecrets.property.providerConfig">provider_config</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksSecretUcs.DataDatabricksSecretUcsSecretsProviderConfig">DataDatabricksSecretUcsSecretsProviderConfig</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/secret_ucs#provider_config DataDatabricksSecretUcs#provider_config}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksSecretUcs.DataDatabricksSecretUcsSecrets.property.fullName">full_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.119.0/docs/data-sources/secret_ucs#full_name DataDatabricksSecretUcs#full_name}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksSecretUcs.DataDatabricksSecretUcsSecrets.property.providerConfig">provider_config</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksSecretUcs.DataDatabricksSecretUcsSecretsProviderConfig">DataDatabricksSecretUcsSecretsProviderConfig</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.119.0/docs/data-sources/secret_ucs#provider_config DataDatabricksSecretUcs#provider_config}. |
 
 ---
 
@@ -1107,7 +1107,7 @@ full_name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/secret_ucs#full_name DataDatabricksSecretUcs#full_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.119.0/docs/data-sources/secret_ucs#full_name DataDatabricksSecretUcs#full_name}.
 
 ---
 
@@ -1119,7 +1119,7 @@ provider_config: DataDatabricksSecretUcsSecretsProviderConfig
 
 - *Type:* <a href="#@cdktn/provider-databricks.dataDatabricksSecretUcs.DataDatabricksSecretUcsSecretsProviderConfig">DataDatabricksSecretUcsSecretsProviderConfig</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/secret_ucs#provider_config DataDatabricksSecretUcs#provider_config}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.119.0/docs/data-sources/secret_ucs#provider_config DataDatabricksSecretUcs#provider_config}.
 
 ---
 
@@ -1139,7 +1139,7 @@ dataDatabricksSecretUcs.DataDatabricksSecretUcsSecretsProviderConfig(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksSecretUcs.DataDatabricksSecretUcsSecretsProviderConfig.property.workspaceId">workspace_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/secret_ucs#workspace_id DataDatabricksSecretUcs#workspace_id}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksSecretUcs.DataDatabricksSecretUcsSecretsProviderConfig.property.workspaceId">workspace_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.119.0/docs/data-sources/secret_ucs#workspace_id DataDatabricksSecretUcs#workspace_id}. |
 
 ---
 
@@ -1151,7 +1151,7 @@ workspace_id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/secret_ucs#workspace_id DataDatabricksSecretUcs#workspace_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.119.0/docs/data-sources/secret_ucs#workspace_id DataDatabricksSecretUcs#workspace_id}.
 
 ---
 
@@ -1892,7 +1892,7 @@ def put_provider_config(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/secret_ucs#workspace_id DataDatabricksSecretUcs#workspace_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.119.0/docs/data-sources/secret_ucs#workspace_id DataDatabricksSecretUcs#workspace_id}.
 
 ---
 

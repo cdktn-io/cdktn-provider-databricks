@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/aws_s3_mount
+// https://registry.terraform.io/providers/databricks/databricks/1.119.0/docs/resources/aws_s3_mount
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,32 +13,32 @@ import * as cdktn from 'cdktn';
 
 export interface AwsS3MountConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/aws_s3_mount#cluster_id AwsS3Mount#cluster_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.119.0/docs/resources/aws_s3_mount#cluster_id AwsS3Mount#cluster_id}
   */
   readonly clusterId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/aws_s3_mount#id AwsS3Mount#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.119.0/docs/resources/aws_s3_mount#id AwsS3Mount#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/aws_s3_mount#instance_profile AwsS3Mount#instance_profile}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.119.0/docs/resources/aws_s3_mount#instance_profile AwsS3Mount#instance_profile}
   */
   readonly instanceProfile?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/aws_s3_mount#mount_name AwsS3Mount#mount_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.119.0/docs/resources/aws_s3_mount#mount_name AwsS3Mount#mount_name}
   */
   readonly mountName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/aws_s3_mount#s3_bucket_name AwsS3Mount#s3_bucket_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.119.0/docs/resources/aws_s3_mount#s3_bucket_name AwsS3Mount#s3_bucket_name}
   */
   readonly s3BucketName: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/aws_s3_mount databricks_aws_s3_mount}
+* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.119.0/docs/resources/aws_s3_mount databricks_aws_s3_mount}
 */
 export class AwsS3Mount extends cdktn.TerraformResource {
 
@@ -54,7 +54,7 @@ export class AwsS3Mount extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a AwsS3Mount resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the AwsS3Mount to import
-  * @param importFromId The id of the existing AwsS3Mount that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/aws_s3_mount#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing AwsS3Mount that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.119.0/docs/resources/aws_s3_mount#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the AwsS3Mount to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -66,7 +66,7 @@ export class AwsS3Mount extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/aws_s3_mount databricks_aws_s3_mount} Resource
+  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.119.0/docs/resources/aws_s3_mount databricks_aws_s3_mount} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -77,7 +77,7 @@ export class AwsS3Mount extends cdktn.TerraformResource {
       terraformResourceType: 'databricks_aws_s3_mount',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '1.118.0',
+        providerVersion: '1.119.0',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,

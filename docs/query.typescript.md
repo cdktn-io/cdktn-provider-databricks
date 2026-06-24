@@ -4,7 +4,7 @@
 
 ### Query <a name="Query" id="@cdktn/provider-databricks.query.Query"></a>
 
-Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/query databricks_query}.
+Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.119.0/docs/resources/query databricks_query}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.query.Query.Initializer"></a>
 
@@ -585,7 +585,7 @@ The construct id used in the generated config for the Query to import.
 
 The id of the existing Query that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/query#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.119.0/docs/resources/query#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1142,19 +1142,19 @@ const queryConfig: query.QueryConfig = { ... }
 | <code><a href="#@cdktn/provider-databricks.query.QueryConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.query.QueryConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.query.QueryConfig.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-databricks.query.QueryConfig.property.displayName">displayName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/query#display_name Query#display_name}. |
-| <code><a href="#@cdktn/provider-databricks.query.QueryConfig.property.queryText">queryText</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/query#query_text Query#query_text}. |
-| <code><a href="#@cdktn/provider-databricks.query.QueryConfig.property.warehouseId">warehouseId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/query#warehouse_id Query#warehouse_id}. |
-| <code><a href="#@cdktn/provider-databricks.query.QueryConfig.property.applyAutoLimit">applyAutoLimit</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/query#apply_auto_limit Query#apply_auto_limit}. |
-| <code><a href="#@cdktn/provider-databricks.query.QueryConfig.property.catalog">catalog</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/query#catalog Query#catalog}. |
-| <code><a href="#@cdktn/provider-databricks.query.QueryConfig.property.description">description</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/query#description Query#description}. |
-| <code><a href="#@cdktn/provider-databricks.query.QueryConfig.property.ownerUserName">ownerUserName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/query#owner_user_name Query#owner_user_name}. |
+| <code><a href="#@cdktn/provider-databricks.query.QueryConfig.property.displayName">displayName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.119.0/docs/resources/query#display_name Query#display_name}. |
+| <code><a href="#@cdktn/provider-databricks.query.QueryConfig.property.queryText">queryText</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.119.0/docs/resources/query#query_text Query#query_text}. |
+| <code><a href="#@cdktn/provider-databricks.query.QueryConfig.property.warehouseId">warehouseId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.119.0/docs/resources/query#warehouse_id Query#warehouse_id}. |
+| <code><a href="#@cdktn/provider-databricks.query.QueryConfig.property.applyAutoLimit">applyAutoLimit</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.119.0/docs/resources/query#apply_auto_limit Query#apply_auto_limit}. |
+| <code><a href="#@cdktn/provider-databricks.query.QueryConfig.property.catalog">catalog</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.119.0/docs/resources/query#catalog Query#catalog}. |
+| <code><a href="#@cdktn/provider-databricks.query.QueryConfig.property.description">description</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.119.0/docs/resources/query#description Query#description}. |
+| <code><a href="#@cdktn/provider-databricks.query.QueryConfig.property.ownerUserName">ownerUserName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.119.0/docs/resources/query#owner_user_name Query#owner_user_name}. |
 | <code><a href="#@cdktn/provider-databricks.query.QueryConfig.property.parameter">parameter</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-databricks.query.QueryParameter">QueryParameter</a>[]</code> | parameter block. |
-| <code><a href="#@cdktn/provider-databricks.query.QueryConfig.property.parentPath">parentPath</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/query#parent_path Query#parent_path}. |
+| <code><a href="#@cdktn/provider-databricks.query.QueryConfig.property.parentPath">parentPath</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.119.0/docs/resources/query#parent_path Query#parent_path}. |
 | <code><a href="#@cdktn/provider-databricks.query.QueryConfig.property.providerConfig">providerConfig</a></code> | <code><a href="#@cdktn/provider-databricks.query.QueryProviderConfig">QueryProviderConfig</a></code> | provider_config block. |
-| <code><a href="#@cdktn/provider-databricks.query.QueryConfig.property.runAsMode">runAsMode</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/query#run_as_mode Query#run_as_mode}. |
-| <code><a href="#@cdktn/provider-databricks.query.QueryConfig.property.schema">schema</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/query#schema Query#schema}. |
-| <code><a href="#@cdktn/provider-databricks.query.QueryConfig.property.tags">tags</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/query#tags Query#tags}. |
+| <code><a href="#@cdktn/provider-databricks.query.QueryConfig.property.runAsMode">runAsMode</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.119.0/docs/resources/query#run_as_mode Query#run_as_mode}. |
+| <code><a href="#@cdktn/provider-databricks.query.QueryConfig.property.schema">schema</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.119.0/docs/resources/query#schema Query#schema}. |
+| <code><a href="#@cdktn/provider-databricks.query.QueryConfig.property.tags">tags</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.119.0/docs/resources/query#tags Query#tags}. |
 
 ---
 
@@ -1236,7 +1236,7 @@ public readonly displayName: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/query#display_name Query#display_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.119.0/docs/resources/query#display_name Query#display_name}.
 
 ---
 
@@ -1248,7 +1248,7 @@ public readonly queryText: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/query#query_text Query#query_text}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.119.0/docs/resources/query#query_text Query#query_text}.
 
 ---
 
@@ -1260,7 +1260,7 @@ public readonly warehouseId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/query#warehouse_id Query#warehouse_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.119.0/docs/resources/query#warehouse_id Query#warehouse_id}.
 
 ---
 
@@ -1272,7 +1272,7 @@ public readonly applyAutoLimit: boolean | IResolvable;
 
 - *Type:* boolean | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/query#apply_auto_limit Query#apply_auto_limit}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.119.0/docs/resources/query#apply_auto_limit Query#apply_auto_limit}.
 
 ---
 
@@ -1284,7 +1284,7 @@ public readonly catalog: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/query#catalog Query#catalog}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.119.0/docs/resources/query#catalog Query#catalog}.
 
 ---
 
@@ -1296,7 +1296,7 @@ public readonly description: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/query#description Query#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.119.0/docs/resources/query#description Query#description}.
 
 ---
 
@@ -1308,7 +1308,7 @@ public readonly ownerUserName: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/query#owner_user_name Query#owner_user_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.119.0/docs/resources/query#owner_user_name Query#owner_user_name}.
 
 ---
 
@@ -1322,7 +1322,7 @@ public readonly parameter: IResolvable | QueryParameter[];
 
 parameter block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/query#parameter Query#parameter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.119.0/docs/resources/query#parameter Query#parameter}
 
 ---
 
@@ -1334,7 +1334,7 @@ public readonly parentPath: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/query#parent_path Query#parent_path}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.119.0/docs/resources/query#parent_path Query#parent_path}.
 
 ---
 
@@ -1348,7 +1348,7 @@ public readonly providerConfig: QueryProviderConfig;
 
 provider_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/query#provider_config Query#provider_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.119.0/docs/resources/query#provider_config Query#provider_config}
 
 ---
 
@@ -1360,7 +1360,7 @@ public readonly runAsMode: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/query#run_as_mode Query#run_as_mode}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.119.0/docs/resources/query#run_as_mode Query#run_as_mode}.
 
 ---
 
@@ -1372,7 +1372,7 @@ public readonly schema: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/query#schema Query#schema}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.119.0/docs/resources/query#schema Query#schema}.
 
 ---
 
@@ -1384,7 +1384,7 @@ public readonly tags: string[];
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/query#tags Query#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.119.0/docs/resources/query#tags Query#tags}.
 
 ---
 
@@ -1402,14 +1402,14 @@ const queryParameter: query.QueryParameter = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.query.QueryParameter.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/query#name Query#name}. |
+| <code><a href="#@cdktn/provider-databricks.query.QueryParameter.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.119.0/docs/resources/query#name Query#name}. |
 | <code><a href="#@cdktn/provider-databricks.query.QueryParameter.property.dateRangeValue">dateRangeValue</a></code> | <code><a href="#@cdktn/provider-databricks.query.QueryParameterDateRangeValue">QueryParameterDateRangeValue</a></code> | date_range_value block. |
 | <code><a href="#@cdktn/provider-databricks.query.QueryParameter.property.dateValue">dateValue</a></code> | <code><a href="#@cdktn/provider-databricks.query.QueryParameterDateValue">QueryParameterDateValue</a></code> | date_value block. |
 | <code><a href="#@cdktn/provider-databricks.query.QueryParameter.property.enumValue">enumValue</a></code> | <code><a href="#@cdktn/provider-databricks.query.QueryParameterEnumValue">QueryParameterEnumValue</a></code> | enum_value block. |
 | <code><a href="#@cdktn/provider-databricks.query.QueryParameter.property.numericValue">numericValue</a></code> | <code><a href="#@cdktn/provider-databricks.query.QueryParameterNumericValue">QueryParameterNumericValue</a></code> | numeric_value block. |
 | <code><a href="#@cdktn/provider-databricks.query.QueryParameter.property.queryBackedValue">queryBackedValue</a></code> | <code><a href="#@cdktn/provider-databricks.query.QueryParameterQueryBackedValue">QueryParameterQueryBackedValue</a></code> | query_backed_value block. |
 | <code><a href="#@cdktn/provider-databricks.query.QueryParameter.property.textValue">textValue</a></code> | <code><a href="#@cdktn/provider-databricks.query.QueryParameterTextValue">QueryParameterTextValue</a></code> | text_value block. |
-| <code><a href="#@cdktn/provider-databricks.query.QueryParameter.property.title">title</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/query#title Query#title}. |
+| <code><a href="#@cdktn/provider-databricks.query.QueryParameter.property.title">title</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.119.0/docs/resources/query#title Query#title}. |
 
 ---
 
@@ -1421,7 +1421,7 @@ public readonly name: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/query#name Query#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.119.0/docs/resources/query#name Query#name}.
 
 ---
 
@@ -1435,7 +1435,7 @@ public readonly dateRangeValue: QueryParameterDateRangeValue;
 
 date_range_value block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/query#date_range_value Query#date_range_value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.119.0/docs/resources/query#date_range_value Query#date_range_value}
 
 ---
 
@@ -1449,7 +1449,7 @@ public readonly dateValue: QueryParameterDateValue;
 
 date_value block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/query#date_value Query#date_value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.119.0/docs/resources/query#date_value Query#date_value}
 
 ---
 
@@ -1463,7 +1463,7 @@ public readonly enumValue: QueryParameterEnumValue;
 
 enum_value block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/query#enum_value Query#enum_value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.119.0/docs/resources/query#enum_value Query#enum_value}
 
 ---
 
@@ -1477,7 +1477,7 @@ public readonly numericValue: QueryParameterNumericValue;
 
 numeric_value block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/query#numeric_value Query#numeric_value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.119.0/docs/resources/query#numeric_value Query#numeric_value}
 
 ---
 
@@ -1491,7 +1491,7 @@ public readonly queryBackedValue: QueryParameterQueryBackedValue;
 
 query_backed_value block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/query#query_backed_value Query#query_backed_value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.119.0/docs/resources/query#query_backed_value Query#query_backed_value}
 
 ---
 
@@ -1505,7 +1505,7 @@ public readonly textValue: QueryParameterTextValue;
 
 text_value block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/query#text_value Query#text_value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.119.0/docs/resources/query#text_value Query#text_value}
 
 ---
 
@@ -1517,7 +1517,7 @@ public readonly title: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/query#title Query#title}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.119.0/docs/resources/query#title Query#title}.
 
 ---
 
@@ -1536,9 +1536,9 @@ const queryParameterDateRangeValue: query.QueryParameterDateRangeValue = { ... }
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-databricks.query.QueryParameterDateRangeValue.property.dateRangeValue">dateRangeValue</a></code> | <code><a href="#@cdktn/provider-databricks.query.QueryParameterDateRangeValueDateRangeValue">QueryParameterDateRangeValueDateRangeValue</a></code> | date_range_value block. |
-| <code><a href="#@cdktn/provider-databricks.query.QueryParameterDateRangeValue.property.dynamicDateRangeValue">dynamicDateRangeValue</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/query#dynamic_date_range_value Query#dynamic_date_range_value}. |
-| <code><a href="#@cdktn/provider-databricks.query.QueryParameterDateRangeValue.property.precision">precision</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/query#precision Query#precision}. |
-| <code><a href="#@cdktn/provider-databricks.query.QueryParameterDateRangeValue.property.startDayOfWeek">startDayOfWeek</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/query#start_day_of_week Query#start_day_of_week}. |
+| <code><a href="#@cdktn/provider-databricks.query.QueryParameterDateRangeValue.property.dynamicDateRangeValue">dynamicDateRangeValue</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.119.0/docs/resources/query#dynamic_date_range_value Query#dynamic_date_range_value}. |
+| <code><a href="#@cdktn/provider-databricks.query.QueryParameterDateRangeValue.property.precision">precision</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.119.0/docs/resources/query#precision Query#precision}. |
+| <code><a href="#@cdktn/provider-databricks.query.QueryParameterDateRangeValue.property.startDayOfWeek">startDayOfWeek</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.119.0/docs/resources/query#start_day_of_week Query#start_day_of_week}. |
 
 ---
 
@@ -1552,7 +1552,7 @@ public readonly dateRangeValue: QueryParameterDateRangeValueDateRangeValue;
 
 date_range_value block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/query#date_range_value Query#date_range_value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.119.0/docs/resources/query#date_range_value Query#date_range_value}
 
 ---
 
@@ -1564,7 +1564,7 @@ public readonly dynamicDateRangeValue: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/query#dynamic_date_range_value Query#dynamic_date_range_value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.119.0/docs/resources/query#dynamic_date_range_value Query#dynamic_date_range_value}.
 
 ---
 
@@ -1576,7 +1576,7 @@ public readonly precision: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/query#precision Query#precision}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.119.0/docs/resources/query#precision Query#precision}.
 
 ---
 
@@ -1588,7 +1588,7 @@ public readonly startDayOfWeek: number;
 
 - *Type:* number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/query#start_day_of_week Query#start_day_of_week}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.119.0/docs/resources/query#start_day_of_week Query#start_day_of_week}.
 
 ---
 
@@ -1606,8 +1606,8 @@ const queryParameterDateRangeValueDateRangeValue: query.QueryParameterDateRangeV
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.query.QueryParameterDateRangeValueDateRangeValue.property.end">end</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/query#end Query#end}. |
-| <code><a href="#@cdktn/provider-databricks.query.QueryParameterDateRangeValueDateRangeValue.property.start">start</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/query#start Query#start}. |
+| <code><a href="#@cdktn/provider-databricks.query.QueryParameterDateRangeValueDateRangeValue.property.end">end</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.119.0/docs/resources/query#end Query#end}. |
+| <code><a href="#@cdktn/provider-databricks.query.QueryParameterDateRangeValueDateRangeValue.property.start">start</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.119.0/docs/resources/query#start Query#start}. |
 
 ---
 
@@ -1619,7 +1619,7 @@ public readonly end: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/query#end Query#end}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.119.0/docs/resources/query#end Query#end}.
 
 ---
 
@@ -1631,7 +1631,7 @@ public readonly start: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/query#start Query#start}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.119.0/docs/resources/query#start Query#start}.
 
 ---
 
@@ -1649,9 +1649,9 @@ const queryParameterDateValue: query.QueryParameterDateValue = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.query.QueryParameterDateValue.property.dateValue">dateValue</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/query#date_value Query#date_value}. |
-| <code><a href="#@cdktn/provider-databricks.query.QueryParameterDateValue.property.dynamicDateValue">dynamicDateValue</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/query#dynamic_date_value Query#dynamic_date_value}. |
-| <code><a href="#@cdktn/provider-databricks.query.QueryParameterDateValue.property.precision">precision</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/query#precision Query#precision}. |
+| <code><a href="#@cdktn/provider-databricks.query.QueryParameterDateValue.property.dateValue">dateValue</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.119.0/docs/resources/query#date_value Query#date_value}. |
+| <code><a href="#@cdktn/provider-databricks.query.QueryParameterDateValue.property.dynamicDateValue">dynamicDateValue</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.119.0/docs/resources/query#dynamic_date_value Query#dynamic_date_value}. |
+| <code><a href="#@cdktn/provider-databricks.query.QueryParameterDateValue.property.precision">precision</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.119.0/docs/resources/query#precision Query#precision}. |
 
 ---
 
@@ -1663,7 +1663,7 @@ public readonly dateValue: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/query#date_value Query#date_value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.119.0/docs/resources/query#date_value Query#date_value}.
 
 ---
 
@@ -1675,7 +1675,7 @@ public readonly dynamicDateValue: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/query#dynamic_date_value Query#dynamic_date_value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.119.0/docs/resources/query#dynamic_date_value Query#dynamic_date_value}.
 
 ---
 
@@ -1687,7 +1687,7 @@ public readonly precision: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/query#precision Query#precision}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.119.0/docs/resources/query#precision Query#precision}.
 
 ---
 
@@ -1705,9 +1705,9 @@ const queryParameterEnumValue: query.QueryParameterEnumValue = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.query.QueryParameterEnumValue.property.enumOptions">enumOptions</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/query#enum_options Query#enum_options}. |
+| <code><a href="#@cdktn/provider-databricks.query.QueryParameterEnumValue.property.enumOptions">enumOptions</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.119.0/docs/resources/query#enum_options Query#enum_options}. |
 | <code><a href="#@cdktn/provider-databricks.query.QueryParameterEnumValue.property.multiValuesOptions">multiValuesOptions</a></code> | <code><a href="#@cdktn/provider-databricks.query.QueryParameterEnumValueMultiValuesOptions">QueryParameterEnumValueMultiValuesOptions</a></code> | multi_values_options block. |
-| <code><a href="#@cdktn/provider-databricks.query.QueryParameterEnumValue.property.values">values</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/query#values Query#values}. |
+| <code><a href="#@cdktn/provider-databricks.query.QueryParameterEnumValue.property.values">values</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.119.0/docs/resources/query#values Query#values}. |
 
 ---
 
@@ -1719,7 +1719,7 @@ public readonly enumOptions: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/query#enum_options Query#enum_options}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.119.0/docs/resources/query#enum_options Query#enum_options}.
 
 ---
 
@@ -1733,7 +1733,7 @@ public readonly multiValuesOptions: QueryParameterEnumValueMultiValuesOptions;
 
 multi_values_options block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/query#multi_values_options Query#multi_values_options}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.119.0/docs/resources/query#multi_values_options Query#multi_values_options}
 
 ---
 
@@ -1745,7 +1745,7 @@ public readonly values: string[];
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/query#values Query#values}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.119.0/docs/resources/query#values Query#values}.
 
 ---
 
@@ -1763,9 +1763,9 @@ const queryParameterEnumValueMultiValuesOptions: query.QueryParameterEnumValueMu
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.query.QueryParameterEnumValueMultiValuesOptions.property.prefix">prefix</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/query#prefix Query#prefix}. |
-| <code><a href="#@cdktn/provider-databricks.query.QueryParameterEnumValueMultiValuesOptions.property.separator">separator</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/query#separator Query#separator}. |
-| <code><a href="#@cdktn/provider-databricks.query.QueryParameterEnumValueMultiValuesOptions.property.suffix">suffix</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/query#suffix Query#suffix}. |
+| <code><a href="#@cdktn/provider-databricks.query.QueryParameterEnumValueMultiValuesOptions.property.prefix">prefix</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.119.0/docs/resources/query#prefix Query#prefix}. |
+| <code><a href="#@cdktn/provider-databricks.query.QueryParameterEnumValueMultiValuesOptions.property.separator">separator</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.119.0/docs/resources/query#separator Query#separator}. |
+| <code><a href="#@cdktn/provider-databricks.query.QueryParameterEnumValueMultiValuesOptions.property.suffix">suffix</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.119.0/docs/resources/query#suffix Query#suffix}. |
 
 ---
 
@@ -1777,7 +1777,7 @@ public readonly prefix: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/query#prefix Query#prefix}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.119.0/docs/resources/query#prefix Query#prefix}.
 
 ---
 
@@ -1789,7 +1789,7 @@ public readonly separator: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/query#separator Query#separator}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.119.0/docs/resources/query#separator Query#separator}.
 
 ---
 
@@ -1801,7 +1801,7 @@ public readonly suffix: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/query#suffix Query#suffix}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.119.0/docs/resources/query#suffix Query#suffix}.
 
 ---
 
@@ -1819,7 +1819,7 @@ const queryParameterNumericValue: query.QueryParameterNumericValue = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.query.QueryParameterNumericValue.property.value">value</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/query#value Query#value}. |
+| <code><a href="#@cdktn/provider-databricks.query.QueryParameterNumericValue.property.value">value</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.119.0/docs/resources/query#value Query#value}. |
 
 ---
 
@@ -1831,7 +1831,7 @@ public readonly value: number;
 
 - *Type:* number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/query#value Query#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.119.0/docs/resources/query#value Query#value}.
 
 ---
 
@@ -1849,9 +1849,9 @@ const queryParameterQueryBackedValue: query.QueryParameterQueryBackedValue = { .
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.query.QueryParameterQueryBackedValue.property.queryId">queryId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/query#query_id Query#query_id}. |
+| <code><a href="#@cdktn/provider-databricks.query.QueryParameterQueryBackedValue.property.queryId">queryId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.119.0/docs/resources/query#query_id Query#query_id}. |
 | <code><a href="#@cdktn/provider-databricks.query.QueryParameterQueryBackedValue.property.multiValuesOptions">multiValuesOptions</a></code> | <code><a href="#@cdktn/provider-databricks.query.QueryParameterQueryBackedValueMultiValuesOptions">QueryParameterQueryBackedValueMultiValuesOptions</a></code> | multi_values_options block. |
-| <code><a href="#@cdktn/provider-databricks.query.QueryParameterQueryBackedValue.property.values">values</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/query#values Query#values}. |
+| <code><a href="#@cdktn/provider-databricks.query.QueryParameterQueryBackedValue.property.values">values</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.119.0/docs/resources/query#values Query#values}. |
 
 ---
 
@@ -1863,7 +1863,7 @@ public readonly queryId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/query#query_id Query#query_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.119.0/docs/resources/query#query_id Query#query_id}.
 
 ---
 
@@ -1877,7 +1877,7 @@ public readonly multiValuesOptions: QueryParameterQueryBackedValueMultiValuesOpt
 
 multi_values_options block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/query#multi_values_options Query#multi_values_options}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.119.0/docs/resources/query#multi_values_options Query#multi_values_options}
 
 ---
 
@@ -1889,7 +1889,7 @@ public readonly values: string[];
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/query#values Query#values}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.119.0/docs/resources/query#values Query#values}.
 
 ---
 
@@ -1907,9 +1907,9 @@ const queryParameterQueryBackedValueMultiValuesOptions: query.QueryParameterQuer
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.query.QueryParameterQueryBackedValueMultiValuesOptions.property.prefix">prefix</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/query#prefix Query#prefix}. |
-| <code><a href="#@cdktn/provider-databricks.query.QueryParameterQueryBackedValueMultiValuesOptions.property.separator">separator</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/query#separator Query#separator}. |
-| <code><a href="#@cdktn/provider-databricks.query.QueryParameterQueryBackedValueMultiValuesOptions.property.suffix">suffix</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/query#suffix Query#suffix}. |
+| <code><a href="#@cdktn/provider-databricks.query.QueryParameterQueryBackedValueMultiValuesOptions.property.prefix">prefix</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.119.0/docs/resources/query#prefix Query#prefix}. |
+| <code><a href="#@cdktn/provider-databricks.query.QueryParameterQueryBackedValueMultiValuesOptions.property.separator">separator</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.119.0/docs/resources/query#separator Query#separator}. |
+| <code><a href="#@cdktn/provider-databricks.query.QueryParameterQueryBackedValueMultiValuesOptions.property.suffix">suffix</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.119.0/docs/resources/query#suffix Query#suffix}. |
 
 ---
 
@@ -1921,7 +1921,7 @@ public readonly prefix: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/query#prefix Query#prefix}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.119.0/docs/resources/query#prefix Query#prefix}.
 
 ---
 
@@ -1933,7 +1933,7 @@ public readonly separator: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/query#separator Query#separator}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.119.0/docs/resources/query#separator Query#separator}.
 
 ---
 
@@ -1945,7 +1945,7 @@ public readonly suffix: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/query#suffix Query#suffix}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.119.0/docs/resources/query#suffix Query#suffix}.
 
 ---
 
@@ -1963,7 +1963,7 @@ const queryParameterTextValue: query.QueryParameterTextValue = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.query.QueryParameterTextValue.property.value">value</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/query#value Query#value}. |
+| <code><a href="#@cdktn/provider-databricks.query.QueryParameterTextValue.property.value">value</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.119.0/docs/resources/query#value Query#value}. |
 
 ---
 
@@ -1975,7 +1975,7 @@ public readonly value: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/query#value Query#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.119.0/docs/resources/query#value Query#value}.
 
 ---
 
@@ -1993,7 +1993,7 @@ const queryProviderConfig: query.QueryProviderConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.query.QueryProviderConfig.property.workspaceId">workspaceId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/query#workspace_id Query#workspace_id}. |
+| <code><a href="#@cdktn/provider-databricks.query.QueryProviderConfig.property.workspaceId">workspaceId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.119.0/docs/resources/query#workspace_id Query#workspace_id}. |
 
 ---
 
@@ -2005,7 +2005,7 @@ public readonly workspaceId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/query#workspace_id Query#workspace_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.119.0/docs/resources/query#workspace_id Query#workspace_id}.
 
 ---
 

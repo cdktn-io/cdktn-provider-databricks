@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/environments_workspace_base_environment
+// https://registry.terraform.io/providers/databricks/databricks/1.119.0/docs/data-sources/environments_workspace_base_environment
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,17 +13,17 @@ import * as cdktn from 'cdktn';
 
 export interface DataDatabricksEnvironmentsWorkspaceBaseEnvironmentConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/environments_workspace_base_environment#name DataDatabricksEnvironmentsWorkspaceBaseEnvironment#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.119.0/docs/data-sources/environments_workspace_base_environment#name DataDatabricksEnvironmentsWorkspaceBaseEnvironment#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/environments_workspace_base_environment#provider_config DataDatabricksEnvironmentsWorkspaceBaseEnvironment#provider_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.119.0/docs/data-sources/environments_workspace_base_environment#provider_config DataDatabricksEnvironmentsWorkspaceBaseEnvironment#provider_config}
   */
   readonly providerConfig?: DataDatabricksEnvironmentsWorkspaceBaseEnvironmentProviderConfig;
 }
 export interface DataDatabricksEnvironmentsWorkspaceBaseEnvironmentProviderConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/environments_workspace_base_environment#workspace_id DataDatabricksEnvironmentsWorkspaceBaseEnvironment#workspace_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.119.0/docs/data-sources/environments_workspace_base_environment#workspace_id DataDatabricksEnvironmentsWorkspaceBaseEnvironment#workspace_id}
   */
   readonly workspaceId?: string;
 }
@@ -117,7 +117,7 @@ export class DataDatabricksEnvironmentsWorkspaceBaseEnvironmentProviderConfigOut
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/environments_workspace_base_environment databricks_environments_workspace_base_environment}
+* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.119.0/docs/data-sources/environments_workspace_base_environment databricks_environments_workspace_base_environment}
 */
 export class DataDatabricksEnvironmentsWorkspaceBaseEnvironment extends cdktn.TerraformDataSource {
 
@@ -133,7 +133,7 @@ export class DataDatabricksEnvironmentsWorkspaceBaseEnvironment extends cdktn.Te
   * Generates CDKTN code for importing a DataDatabricksEnvironmentsWorkspaceBaseEnvironment resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataDatabricksEnvironmentsWorkspaceBaseEnvironment to import
-  * @param importFromId The id of the existing DataDatabricksEnvironmentsWorkspaceBaseEnvironment that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/environments_workspace_base_environment#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataDatabricksEnvironmentsWorkspaceBaseEnvironment that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.119.0/docs/data-sources/environments_workspace_base_environment#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataDatabricksEnvironmentsWorkspaceBaseEnvironment to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -145,7 +145,7 @@ export class DataDatabricksEnvironmentsWorkspaceBaseEnvironment extends cdktn.Te
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/environments_workspace_base_environment databricks_environments_workspace_base_environment} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.119.0/docs/data-sources/environments_workspace_base_environment databricks_environments_workspace_base_environment} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -156,7 +156,7 @@ export class DataDatabricksEnvironmentsWorkspaceBaseEnvironment extends cdktn.Te
       terraformResourceType: 'databricks_environments_workspace_base_environment',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '1.118.0',
+        providerVersion: '1.119.0',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,
