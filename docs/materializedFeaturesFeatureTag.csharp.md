@@ -4,7 +4,7 @@
 
 ### MaterializedFeaturesFeatureTag <a name="MaterializedFeaturesFeatureTag" id="@cdktn/provider-databricks.materializedFeaturesFeatureTag.MaterializedFeaturesFeatureTag"></a>
 
-Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/materialized_features_feature_tag databricks_materialized_features_feature_tag}.
+Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.119.0/docs/resources/materialized_features_feature_tag databricks_materialized_features_feature_tag}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.materializedFeaturesFeatureTag.MaterializedFeaturesFeatureTag.Initializer"></a>
 
@@ -516,7 +516,7 @@ The construct id used in the generated config for the MaterializedFeaturesFeatur
 
 The id of the existing MaterializedFeaturesFeatureTag that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/materialized_features_feature_tag#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.119.0/docs/resources/materialized_features_feature_tag#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -809,9 +809,9 @@ new MaterializedFeaturesFeatureTagConfig {
 | <code><a href="#@cdktn/provider-databricks.materializedFeaturesFeatureTag.MaterializedFeaturesFeatureTagConfig.property.lifecycle">Lifecycle</a></code> | <code>Io.Cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.materializedFeaturesFeatureTag.MaterializedFeaturesFeatureTagConfig.property.provider">Provider</a></code> | <code>Io.Cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.materializedFeaturesFeatureTag.MaterializedFeaturesFeatureTagConfig.property.provisioners">Provisioners</a></code> | <code>Io.Cdktn.FileProvisioner\|Io.Cdktn.LocalExecProvisioner\|Io.Cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-databricks.materializedFeaturesFeatureTag.MaterializedFeaturesFeatureTagConfig.property.key">Key</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/materialized_features_feature_tag#key MaterializedFeaturesFeatureTag#key}. |
-| <code><a href="#@cdktn/provider-databricks.materializedFeaturesFeatureTag.MaterializedFeaturesFeatureTagConfig.property.providerConfig">ProviderConfig</a></code> | <code><a href="#@cdktn/provider-databricks.materializedFeaturesFeatureTag.MaterializedFeaturesFeatureTagProviderConfig">MaterializedFeaturesFeatureTagProviderConfig</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/materialized_features_feature_tag#provider_config MaterializedFeaturesFeatureTag#provider_config}. |
-| <code><a href="#@cdktn/provider-databricks.materializedFeaturesFeatureTag.MaterializedFeaturesFeatureTagConfig.property.value">Value</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/materialized_features_feature_tag#value MaterializedFeaturesFeatureTag#value}. |
+| <code><a href="#@cdktn/provider-databricks.materializedFeaturesFeatureTag.MaterializedFeaturesFeatureTagConfig.property.key">Key</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.119.0/docs/resources/materialized_features_feature_tag#key MaterializedFeaturesFeatureTag#key}. |
+| <code><a href="#@cdktn/provider-databricks.materializedFeaturesFeatureTag.MaterializedFeaturesFeatureTagConfig.property.providerConfig">ProviderConfig</a></code> | <code><a href="#@cdktn/provider-databricks.materializedFeaturesFeatureTag.MaterializedFeaturesFeatureTagProviderConfig">MaterializedFeaturesFeatureTagProviderConfig</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.119.0/docs/resources/materialized_features_feature_tag#provider_config MaterializedFeaturesFeatureTag#provider_config}. |
+| <code><a href="#@cdktn/provider-databricks.materializedFeaturesFeatureTag.MaterializedFeaturesFeatureTagConfig.property.value">Value</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.119.0/docs/resources/materialized_features_feature_tag#value MaterializedFeaturesFeatureTag#value}. |
 
 ---
 
@@ -893,7 +893,7 @@ public string Key { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/materialized_features_feature_tag#key MaterializedFeaturesFeatureTag#key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.119.0/docs/resources/materialized_features_feature_tag#key MaterializedFeaturesFeatureTag#key}.
 
 ---
 
@@ -905,7 +905,7 @@ public MaterializedFeaturesFeatureTagProviderConfig ProviderConfig { get; set; }
 
 - *Type:* <a href="#@cdktn/provider-databricks.materializedFeaturesFeatureTag.MaterializedFeaturesFeatureTagProviderConfig">MaterializedFeaturesFeatureTagProviderConfig</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/materialized_features_feature_tag#provider_config MaterializedFeaturesFeatureTag#provider_config}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.119.0/docs/resources/materialized_features_feature_tag#provider_config MaterializedFeaturesFeatureTag#provider_config}.
 
 ---
 
@@ -917,7 +917,7 @@ public string Value { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/materialized_features_feature_tag#value MaterializedFeaturesFeatureTag#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.119.0/docs/resources/materialized_features_feature_tag#value MaterializedFeaturesFeatureTag#value}.
 
 ---
 
@@ -937,7 +937,7 @@ new MaterializedFeaturesFeatureTagProviderConfig {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.materializedFeaturesFeatureTag.MaterializedFeaturesFeatureTagProviderConfig.property.workspaceId">WorkspaceId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/materialized_features_feature_tag#workspace_id MaterializedFeaturesFeatureTag#workspace_id}. |
+| <code><a href="#@cdktn/provider-databricks.materializedFeaturesFeatureTag.MaterializedFeaturesFeatureTagProviderConfig.property.workspaceId">WorkspaceId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.119.0/docs/resources/materialized_features_feature_tag#workspace_id MaterializedFeaturesFeatureTag#workspace_id}. |
 
 ---
 
@@ -949,7 +949,7 @@ public string WorkspaceId { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/materialized_features_feature_tag#workspace_id MaterializedFeaturesFeatureTag#workspace_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.119.0/docs/resources/materialized_features_feature_tag#workspace_id MaterializedFeaturesFeatureTag#workspace_id}.
 
 ---
 

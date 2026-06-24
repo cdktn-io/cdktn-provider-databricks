@@ -4,7 +4,7 @@
 
 ### DataDatabricksGroup <a name="DataDatabricksGroup" id="@cdktn/provider-databricks.dataDatabricksGroup.DataDatabricksGroup"></a>
 
-Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/group databricks_group}.
+Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.119.0/docs/data-sources/group databricks_group}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksGroup.DataDatabricksGroup.Initializer"></a>
 
@@ -519,7 +519,7 @@ The construct id used in the generated config for the DataDatabricksGroup to imp
 
 The id of the existing DataDatabricksGroup that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/group#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.119.0/docs/data-sources/group#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1135,24 +1135,24 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadata
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksGroup.DataDatabricksGroupConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksGroup.DataDatabricksGroupConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksGroup.DataDatabricksGroupConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksGroup.DataDatabricksGroupConfig.property.displayName">DisplayName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/group#display_name DataDatabricksGroup#display_name}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksGroup.DataDatabricksGroupConfig.property.aclPrincipalId">AclPrincipalId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/group#acl_principal_id DataDatabricksGroup#acl_principal_id}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksGroup.DataDatabricksGroupConfig.property.allowClusterCreate">AllowClusterCreate</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/group#allow_cluster_create DataDatabricksGroup#allow_cluster_create}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksGroup.DataDatabricksGroupConfig.property.allowInstancePoolCreate">AllowInstancePoolCreate</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/group#allow_instance_pool_create DataDatabricksGroup#allow_instance_pool_create}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksGroup.DataDatabricksGroupConfig.property.displayName">DisplayName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.119.0/docs/data-sources/group#display_name DataDatabricksGroup#display_name}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksGroup.DataDatabricksGroupConfig.property.aclPrincipalId">AclPrincipalId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.119.0/docs/data-sources/group#acl_principal_id DataDatabricksGroup#acl_principal_id}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksGroup.DataDatabricksGroupConfig.property.allowClusterCreate">AllowClusterCreate</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.119.0/docs/data-sources/group#allow_cluster_create DataDatabricksGroup#allow_cluster_create}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksGroup.DataDatabricksGroupConfig.property.allowInstancePoolCreate">AllowInstancePoolCreate</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.119.0/docs/data-sources/group#allow_instance_pool_create DataDatabricksGroup#allow_instance_pool_create}. |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksGroup.DataDatabricksGroupConfig.property.api">Api</a></code> | <code>*string</code> | Specifies whether to use account-level or workspace-level API. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksGroup.DataDatabricksGroupConfig.property.childGroups">ChildGroups</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/group#child_groups DataDatabricksGroup#child_groups}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksGroup.DataDatabricksGroupConfig.property.databricksSqlAccess">DatabricksSqlAccess</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/group#databricks_sql_access DataDatabricksGroup#databricks_sql_access}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksGroup.DataDatabricksGroupConfig.property.externalId">ExternalId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/group#external_id DataDatabricksGroup#external_id}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksGroup.DataDatabricksGroupConfig.property.groups">Groups</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/group#groups DataDatabricksGroup#groups}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksGroup.DataDatabricksGroupConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/group#id DataDatabricksGroup#id}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksGroup.DataDatabricksGroupConfig.property.instanceProfiles">InstanceProfiles</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/group#instance_profiles DataDatabricksGroup#instance_profiles}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksGroup.DataDatabricksGroupConfig.property.members">Members</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/group#members DataDatabricksGroup#members}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksGroup.DataDatabricksGroupConfig.property.childGroups">ChildGroups</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.119.0/docs/data-sources/group#child_groups DataDatabricksGroup#child_groups}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksGroup.DataDatabricksGroupConfig.property.databricksSqlAccess">DatabricksSqlAccess</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.119.0/docs/data-sources/group#databricks_sql_access DataDatabricksGroup#databricks_sql_access}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksGroup.DataDatabricksGroupConfig.property.externalId">ExternalId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.119.0/docs/data-sources/group#external_id DataDatabricksGroup#external_id}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksGroup.DataDatabricksGroupConfig.property.groups">Groups</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.119.0/docs/data-sources/group#groups DataDatabricksGroup#groups}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksGroup.DataDatabricksGroupConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.119.0/docs/data-sources/group#id DataDatabricksGroup#id}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksGroup.DataDatabricksGroupConfig.property.instanceProfiles">InstanceProfiles</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.119.0/docs/data-sources/group#instance_profiles DataDatabricksGroup#instance_profiles}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksGroup.DataDatabricksGroupConfig.property.members">Members</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.119.0/docs/data-sources/group#members DataDatabricksGroup#members}. |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksGroup.DataDatabricksGroupConfig.property.providerConfig">ProviderConfig</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksGroup.DataDatabricksGroupProviderConfig">DataDatabricksGroupProviderConfig</a></code> | provider_config block. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksGroup.DataDatabricksGroupConfig.property.recursive">Recursive</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/group#recursive DataDatabricksGroup#recursive}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksGroup.DataDatabricksGroupConfig.property.servicePrincipals">ServicePrincipals</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/group#service_principals DataDatabricksGroup#service_principals}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksGroup.DataDatabricksGroupConfig.property.users">Users</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/group#users DataDatabricksGroup#users}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksGroup.DataDatabricksGroupConfig.property.workspaceAccess">WorkspaceAccess</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/group#workspace_access DataDatabricksGroup#workspace_access}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksGroup.DataDatabricksGroupConfig.property.workspaceConsume">WorkspaceConsume</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/group#workspace_consume DataDatabricksGroup#workspace_consume}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksGroup.DataDatabricksGroupConfig.property.recursive">Recursive</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.119.0/docs/data-sources/group#recursive DataDatabricksGroup#recursive}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksGroup.DataDatabricksGroupConfig.property.servicePrincipals">ServicePrincipals</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.119.0/docs/data-sources/group#service_principals DataDatabricksGroup#service_principals}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksGroup.DataDatabricksGroupConfig.property.users">Users</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.119.0/docs/data-sources/group#users DataDatabricksGroup#users}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksGroup.DataDatabricksGroupConfig.property.workspaceAccess">WorkspaceAccess</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.119.0/docs/data-sources/group#workspace_access DataDatabricksGroup#workspace_access}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksGroup.DataDatabricksGroupConfig.property.workspaceConsume">WorkspaceConsume</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.119.0/docs/data-sources/group#workspace_consume DataDatabricksGroup#workspace_consume}. |
 
 ---
 
@@ -1234,7 +1234,7 @@ DisplayName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/group#display_name DataDatabricksGroup#display_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.119.0/docs/data-sources/group#display_name DataDatabricksGroup#display_name}.
 
 ---
 
@@ -1246,7 +1246,7 @@ AclPrincipalId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/group#acl_principal_id DataDatabricksGroup#acl_principal_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.119.0/docs/data-sources/group#acl_principal_id DataDatabricksGroup#acl_principal_id}.
 
 ---
 
@@ -1258,7 +1258,7 @@ AllowClusterCreate interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/group#allow_cluster_create DataDatabricksGroup#allow_cluster_create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.119.0/docs/data-sources/group#allow_cluster_create DataDatabricksGroup#allow_cluster_create}.
 
 ---
 
@@ -1270,7 +1270,7 @@ AllowInstancePoolCreate interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/group#allow_instance_pool_create DataDatabricksGroup#allow_instance_pool_create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.119.0/docs/data-sources/group#allow_instance_pool_create DataDatabricksGroup#allow_instance_pool_create}.
 
 ---
 
@@ -1286,7 +1286,7 @@ Specifies whether to use account-level or workspace-level API.
 
 Valid values are `account` and `workspace`. When not set, the API level is inferred from the provider host.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/group#api DataDatabricksGroup#api}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.119.0/docs/data-sources/group#api DataDatabricksGroup#api}
 
 ---
 
@@ -1298,7 +1298,7 @@ ChildGroups *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/group#child_groups DataDatabricksGroup#child_groups}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.119.0/docs/data-sources/group#child_groups DataDatabricksGroup#child_groups}.
 
 ---
 
@@ -1310,7 +1310,7 @@ DatabricksSqlAccess interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/group#databricks_sql_access DataDatabricksGroup#databricks_sql_access}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.119.0/docs/data-sources/group#databricks_sql_access DataDatabricksGroup#databricks_sql_access}.
 
 ---
 
@@ -1322,7 +1322,7 @@ ExternalId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/group#external_id DataDatabricksGroup#external_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.119.0/docs/data-sources/group#external_id DataDatabricksGroup#external_id}.
 
 ---
 
@@ -1334,7 +1334,7 @@ Groups *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/group#groups DataDatabricksGroup#groups}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.119.0/docs/data-sources/group#groups DataDatabricksGroup#groups}.
 
 ---
 
@@ -1346,7 +1346,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/group#id DataDatabricksGroup#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.119.0/docs/data-sources/group#id DataDatabricksGroup#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1361,7 +1361,7 @@ InstanceProfiles *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/group#instance_profiles DataDatabricksGroup#instance_profiles}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.119.0/docs/data-sources/group#instance_profiles DataDatabricksGroup#instance_profiles}.
 
 ---
 
@@ -1373,7 +1373,7 @@ Members *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/group#members DataDatabricksGroup#members}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.119.0/docs/data-sources/group#members DataDatabricksGroup#members}.
 
 ---
 
@@ -1387,7 +1387,7 @@ ProviderConfig DataDatabricksGroupProviderConfig
 
 provider_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/group#provider_config DataDatabricksGroup#provider_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.119.0/docs/data-sources/group#provider_config DataDatabricksGroup#provider_config}
 
 ---
 
@@ -1399,7 +1399,7 @@ Recursive interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/group#recursive DataDatabricksGroup#recursive}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.119.0/docs/data-sources/group#recursive DataDatabricksGroup#recursive}.
 
 ---
 
@@ -1411,7 +1411,7 @@ ServicePrincipals *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/group#service_principals DataDatabricksGroup#service_principals}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.119.0/docs/data-sources/group#service_principals DataDatabricksGroup#service_principals}.
 
 ---
 
@@ -1423,7 +1423,7 @@ Users *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/group#users DataDatabricksGroup#users}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.119.0/docs/data-sources/group#users DataDatabricksGroup#users}.
 
 ---
 
@@ -1435,7 +1435,7 @@ WorkspaceAccess interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/group#workspace_access DataDatabricksGroup#workspace_access}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.119.0/docs/data-sources/group#workspace_access DataDatabricksGroup#workspace_access}.
 
 ---
 
@@ -1447,7 +1447,7 @@ WorkspaceConsume interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/group#workspace_consume DataDatabricksGroup#workspace_consume}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.119.0/docs/data-sources/group#workspace_consume DataDatabricksGroup#workspace_consume}.
 
 ---
 
@@ -1467,7 +1467,7 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadata
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksGroup.DataDatabricksGroupProviderConfig.property.workspaceId">WorkspaceId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/group#workspace_id DataDatabricksGroup#workspace_id}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksGroup.DataDatabricksGroupProviderConfig.property.workspaceId">WorkspaceId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.119.0/docs/data-sources/group#workspace_id DataDatabricksGroup#workspace_id}. |
 
 ---
 
@@ -1479,7 +1479,7 @@ WorkspaceId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/data-sources/group#workspace_id DataDatabricksGroup#workspace_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.119.0/docs/data-sources/group#workspace_id DataDatabricksGroup#workspace_id}.
 
 ---
 

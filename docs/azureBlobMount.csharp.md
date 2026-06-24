@@ -4,7 +4,7 @@
 
 ### AzureBlobMount <a name="AzureBlobMount" id="@cdktn/provider-databricks.azureBlobMount.AzureBlobMount"></a>
 
-Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/azure_blob_mount databricks_azure_blob_mount}.
+Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.119.0/docs/resources/azure_blob_mount databricks_azure_blob_mount}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.azureBlobMount.AzureBlobMount.Initializer"></a>
 
@@ -510,7 +510,7 @@ The construct id used in the generated config for the AzureBlobMount to import.
 
 The id of the existing AzureBlobMount that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/azure_blob_mount#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.119.0/docs/resources/azure_blob_mount#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -952,15 +952,15 @@ new AzureBlobMountConfig {
 | <code><a href="#@cdktn/provider-databricks.azureBlobMount.AzureBlobMountConfig.property.lifecycle">Lifecycle</a></code> | <code>Io.Cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.azureBlobMount.AzureBlobMountConfig.property.provider">Provider</a></code> | <code>Io.Cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.azureBlobMount.AzureBlobMountConfig.property.provisioners">Provisioners</a></code> | <code>Io.Cdktn.FileProvisioner\|Io.Cdktn.LocalExecProvisioner\|Io.Cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-databricks.azureBlobMount.AzureBlobMountConfig.property.authType">AuthType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/azure_blob_mount#auth_type AzureBlobMount#auth_type}. |
-| <code><a href="#@cdktn/provider-databricks.azureBlobMount.AzureBlobMountConfig.property.containerName">ContainerName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/azure_blob_mount#container_name AzureBlobMount#container_name}. |
-| <code><a href="#@cdktn/provider-databricks.azureBlobMount.AzureBlobMountConfig.property.mountName">MountName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/azure_blob_mount#mount_name AzureBlobMount#mount_name}. |
-| <code><a href="#@cdktn/provider-databricks.azureBlobMount.AzureBlobMountConfig.property.storageAccountName">StorageAccountName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/azure_blob_mount#storage_account_name AzureBlobMount#storage_account_name}. |
-| <code><a href="#@cdktn/provider-databricks.azureBlobMount.AzureBlobMountConfig.property.tokenSecretKey">TokenSecretKey</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/azure_blob_mount#token_secret_key AzureBlobMount#token_secret_key}. |
-| <code><a href="#@cdktn/provider-databricks.azureBlobMount.AzureBlobMountConfig.property.tokenSecretScope">TokenSecretScope</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/azure_blob_mount#token_secret_scope AzureBlobMount#token_secret_scope}. |
-| <code><a href="#@cdktn/provider-databricks.azureBlobMount.AzureBlobMountConfig.property.clusterId">ClusterId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/azure_blob_mount#cluster_id AzureBlobMount#cluster_id}. |
-| <code><a href="#@cdktn/provider-databricks.azureBlobMount.AzureBlobMountConfig.property.directory">Directory</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/azure_blob_mount#directory AzureBlobMount#directory}. |
-| <code><a href="#@cdktn/provider-databricks.azureBlobMount.AzureBlobMountConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/azure_blob_mount#id AzureBlobMount#id}. |
+| <code><a href="#@cdktn/provider-databricks.azureBlobMount.AzureBlobMountConfig.property.authType">AuthType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.119.0/docs/resources/azure_blob_mount#auth_type AzureBlobMount#auth_type}. |
+| <code><a href="#@cdktn/provider-databricks.azureBlobMount.AzureBlobMountConfig.property.containerName">ContainerName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.119.0/docs/resources/azure_blob_mount#container_name AzureBlobMount#container_name}. |
+| <code><a href="#@cdktn/provider-databricks.azureBlobMount.AzureBlobMountConfig.property.mountName">MountName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.119.0/docs/resources/azure_blob_mount#mount_name AzureBlobMount#mount_name}. |
+| <code><a href="#@cdktn/provider-databricks.azureBlobMount.AzureBlobMountConfig.property.storageAccountName">StorageAccountName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.119.0/docs/resources/azure_blob_mount#storage_account_name AzureBlobMount#storage_account_name}. |
+| <code><a href="#@cdktn/provider-databricks.azureBlobMount.AzureBlobMountConfig.property.tokenSecretKey">TokenSecretKey</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.119.0/docs/resources/azure_blob_mount#token_secret_key AzureBlobMount#token_secret_key}. |
+| <code><a href="#@cdktn/provider-databricks.azureBlobMount.AzureBlobMountConfig.property.tokenSecretScope">TokenSecretScope</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.119.0/docs/resources/azure_blob_mount#token_secret_scope AzureBlobMount#token_secret_scope}. |
+| <code><a href="#@cdktn/provider-databricks.azureBlobMount.AzureBlobMountConfig.property.clusterId">ClusterId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.119.0/docs/resources/azure_blob_mount#cluster_id AzureBlobMount#cluster_id}. |
+| <code><a href="#@cdktn/provider-databricks.azureBlobMount.AzureBlobMountConfig.property.directory">Directory</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.119.0/docs/resources/azure_blob_mount#directory AzureBlobMount#directory}. |
+| <code><a href="#@cdktn/provider-databricks.azureBlobMount.AzureBlobMountConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.119.0/docs/resources/azure_blob_mount#id AzureBlobMount#id}. |
 
 ---
 
@@ -1042,7 +1042,7 @@ public string AuthType { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/azure_blob_mount#auth_type AzureBlobMount#auth_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.119.0/docs/resources/azure_blob_mount#auth_type AzureBlobMount#auth_type}.
 
 ---
 
@@ -1054,7 +1054,7 @@ public string ContainerName { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/azure_blob_mount#container_name AzureBlobMount#container_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.119.0/docs/resources/azure_blob_mount#container_name AzureBlobMount#container_name}.
 
 ---
 
@@ -1066,7 +1066,7 @@ public string MountName { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/azure_blob_mount#mount_name AzureBlobMount#mount_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.119.0/docs/resources/azure_blob_mount#mount_name AzureBlobMount#mount_name}.
 
 ---
 
@@ -1078,7 +1078,7 @@ public string StorageAccountName { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/azure_blob_mount#storage_account_name AzureBlobMount#storage_account_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.119.0/docs/resources/azure_blob_mount#storage_account_name AzureBlobMount#storage_account_name}.
 
 ---
 
@@ -1090,7 +1090,7 @@ public string TokenSecretKey { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/azure_blob_mount#token_secret_key AzureBlobMount#token_secret_key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.119.0/docs/resources/azure_blob_mount#token_secret_key AzureBlobMount#token_secret_key}.
 
 ---
 
@@ -1102,7 +1102,7 @@ public string TokenSecretScope { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/azure_blob_mount#token_secret_scope AzureBlobMount#token_secret_scope}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.119.0/docs/resources/azure_blob_mount#token_secret_scope AzureBlobMount#token_secret_scope}.
 
 ---
 
@@ -1114,7 +1114,7 @@ public string ClusterId { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/azure_blob_mount#cluster_id AzureBlobMount#cluster_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.119.0/docs/resources/azure_blob_mount#cluster_id AzureBlobMount#cluster_id}.
 
 ---
 
@@ -1126,7 +1126,7 @@ public string Directory { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/azure_blob_mount#directory AzureBlobMount#directory}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.119.0/docs/resources/azure_blob_mount#directory AzureBlobMount#directory}.
 
 ---
 
@@ -1138,7 +1138,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/azure_blob_mount#id AzureBlobMount#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.119.0/docs/resources/azure_blob_mount#id AzureBlobMount#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

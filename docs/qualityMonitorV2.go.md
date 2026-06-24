@@ -4,7 +4,7 @@
 
 ### QualityMonitorV2 <a name="QualityMonitorV2" id="@cdktn/provider-databricks.qualityMonitorV2.QualityMonitorV2"></a>
 
-Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/quality_monitor_v2 databricks_quality_monitor_v2}.
+Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.119.0/docs/resources/quality_monitor_v2 databricks_quality_monitor_v2}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.qualityMonitorV2.QualityMonitorV2.Initializer"></a>
 
@@ -529,7 +529,7 @@ The construct id used in the generated config for the QualityMonitorV2 to import
 
 The id of the existing QualityMonitorV2 that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/quality_monitor_v2#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.119.0/docs/resources/quality_monitor_v2#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -839,7 +839,7 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/qualitym
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.qualityMonitorV2.QualityMonitorV2AnomalyDetectionConfig.property.excludedTableFullNames">ExcludedTableFullNames</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/quality_monitor_v2#excluded_table_full_names QualityMonitorV2#excluded_table_full_names}. |
+| <code><a href="#@cdktn/provider-databricks.qualityMonitorV2.QualityMonitorV2AnomalyDetectionConfig.property.excludedTableFullNames">ExcludedTableFullNames</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.119.0/docs/resources/quality_monitor_v2#excluded_table_full_names QualityMonitorV2#excluded_table_full_names}. |
 
 ---
 
@@ -851,7 +851,7 @@ ExcludedTableFullNames *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/quality_monitor_v2#excluded_table_full_names QualityMonitorV2#excluded_table_full_names}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.119.0/docs/resources/quality_monitor_v2#excluded_table_full_names QualityMonitorV2#excluded_table_full_names}.
 
 ---
 
@@ -888,10 +888,10 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/qualitym
 | <code><a href="#@cdktn/provider-databricks.qualityMonitorV2.QualityMonitorV2Config.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.qualityMonitorV2.QualityMonitorV2Config.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.qualityMonitorV2.QualityMonitorV2Config.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-databricks.qualityMonitorV2.QualityMonitorV2Config.property.objectId">ObjectId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/quality_monitor_v2#object_id QualityMonitorV2#object_id}. |
-| <code><a href="#@cdktn/provider-databricks.qualityMonitorV2.QualityMonitorV2Config.property.objectType">ObjectType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/quality_monitor_v2#object_type QualityMonitorV2#object_type}. |
-| <code><a href="#@cdktn/provider-databricks.qualityMonitorV2.QualityMonitorV2Config.property.providerConfig">ProviderConfig</a></code> | <code><a href="#@cdktn/provider-databricks.qualityMonitorV2.QualityMonitorV2ProviderConfig">QualityMonitorV2ProviderConfig</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/quality_monitor_v2#provider_config QualityMonitorV2#provider_config}. |
-| <code><a href="#@cdktn/provider-databricks.qualityMonitorV2.QualityMonitorV2Config.property.validityCheckConfigurations">ValidityCheckConfigurations</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/quality_monitor_v2#validity_check_configurations QualityMonitorV2#validity_check_configurations}. |
+| <code><a href="#@cdktn/provider-databricks.qualityMonitorV2.QualityMonitorV2Config.property.objectId">ObjectId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.119.0/docs/resources/quality_monitor_v2#object_id QualityMonitorV2#object_id}. |
+| <code><a href="#@cdktn/provider-databricks.qualityMonitorV2.QualityMonitorV2Config.property.objectType">ObjectType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.119.0/docs/resources/quality_monitor_v2#object_type QualityMonitorV2#object_type}. |
+| <code><a href="#@cdktn/provider-databricks.qualityMonitorV2.QualityMonitorV2Config.property.providerConfig">ProviderConfig</a></code> | <code><a href="#@cdktn/provider-databricks.qualityMonitorV2.QualityMonitorV2ProviderConfig">QualityMonitorV2ProviderConfig</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.119.0/docs/resources/quality_monitor_v2#provider_config QualityMonitorV2#provider_config}. |
+| <code><a href="#@cdktn/provider-databricks.qualityMonitorV2.QualityMonitorV2Config.property.validityCheckConfigurations">ValidityCheckConfigurations</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.119.0/docs/resources/quality_monitor_v2#validity_check_configurations QualityMonitorV2#validity_check_configurations}. |
 
 ---
 
@@ -973,7 +973,7 @@ ObjectId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/quality_monitor_v2#object_id QualityMonitorV2#object_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.119.0/docs/resources/quality_monitor_v2#object_id QualityMonitorV2#object_id}.
 
 ---
 
@@ -985,7 +985,7 @@ ObjectType *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/quality_monitor_v2#object_type QualityMonitorV2#object_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.119.0/docs/resources/quality_monitor_v2#object_type QualityMonitorV2#object_type}.
 
 ---
 
@@ -997,7 +997,7 @@ ProviderConfig QualityMonitorV2ProviderConfig
 
 - *Type:* <a href="#@cdktn/provider-databricks.qualityMonitorV2.QualityMonitorV2ProviderConfig">QualityMonitorV2ProviderConfig</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/quality_monitor_v2#provider_config QualityMonitorV2#provider_config}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.119.0/docs/resources/quality_monitor_v2#provider_config QualityMonitorV2#provider_config}.
 
 ---
 
@@ -1009,7 +1009,7 @@ ValidityCheckConfigurations interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/quality_monitor_v2#validity_check_configurations QualityMonitorV2#validity_check_configurations}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.119.0/docs/resources/quality_monitor_v2#validity_check_configurations QualityMonitorV2#validity_check_configurations}.
 
 ---
 
@@ -1029,7 +1029,7 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/qualitym
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.qualityMonitorV2.QualityMonitorV2ProviderConfig.property.workspaceId">WorkspaceId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/quality_monitor_v2#workspace_id QualityMonitorV2#workspace_id}. |
+| <code><a href="#@cdktn/provider-databricks.qualityMonitorV2.QualityMonitorV2ProviderConfig.property.workspaceId">WorkspaceId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.119.0/docs/resources/quality_monitor_v2#workspace_id QualityMonitorV2#workspace_id}. |
 
 ---
 
@@ -1041,7 +1041,7 @@ WorkspaceId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/quality_monitor_v2#workspace_id QualityMonitorV2#workspace_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.119.0/docs/resources/quality_monitor_v2#workspace_id QualityMonitorV2#workspace_id}.
 
 ---
 
@@ -1064,10 +1064,10 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/qualitym
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.qualityMonitorV2.QualityMonitorV2ValidityCheckConfigurations.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/quality_monitor_v2#name QualityMonitorV2#name}. |
-| <code><a href="#@cdktn/provider-databricks.qualityMonitorV2.QualityMonitorV2ValidityCheckConfigurations.property.percentNullValidityCheck">PercentNullValidityCheck</a></code> | <code><a href="#@cdktn/provider-databricks.qualityMonitorV2.QualityMonitorV2ValidityCheckConfigurationsPercentNullValidityCheck">QualityMonitorV2ValidityCheckConfigurationsPercentNullValidityCheck</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/quality_monitor_v2#percent_null_validity_check QualityMonitorV2#percent_null_validity_check}. |
-| <code><a href="#@cdktn/provider-databricks.qualityMonitorV2.QualityMonitorV2ValidityCheckConfigurations.property.rangeValidityCheck">RangeValidityCheck</a></code> | <code><a href="#@cdktn/provider-databricks.qualityMonitorV2.QualityMonitorV2ValidityCheckConfigurationsRangeValidityCheck">QualityMonitorV2ValidityCheckConfigurationsRangeValidityCheck</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/quality_monitor_v2#range_validity_check QualityMonitorV2#range_validity_check}. |
-| <code><a href="#@cdktn/provider-databricks.qualityMonitorV2.QualityMonitorV2ValidityCheckConfigurations.property.uniquenessValidityCheck">UniquenessValidityCheck</a></code> | <code><a href="#@cdktn/provider-databricks.qualityMonitorV2.QualityMonitorV2ValidityCheckConfigurationsUniquenessValidityCheck">QualityMonitorV2ValidityCheckConfigurationsUniquenessValidityCheck</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/quality_monitor_v2#uniqueness_validity_check QualityMonitorV2#uniqueness_validity_check}. |
+| <code><a href="#@cdktn/provider-databricks.qualityMonitorV2.QualityMonitorV2ValidityCheckConfigurations.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.119.0/docs/resources/quality_monitor_v2#name QualityMonitorV2#name}. |
+| <code><a href="#@cdktn/provider-databricks.qualityMonitorV2.QualityMonitorV2ValidityCheckConfigurations.property.percentNullValidityCheck">PercentNullValidityCheck</a></code> | <code><a href="#@cdktn/provider-databricks.qualityMonitorV2.QualityMonitorV2ValidityCheckConfigurationsPercentNullValidityCheck">QualityMonitorV2ValidityCheckConfigurationsPercentNullValidityCheck</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.119.0/docs/resources/quality_monitor_v2#percent_null_validity_check QualityMonitorV2#percent_null_validity_check}. |
+| <code><a href="#@cdktn/provider-databricks.qualityMonitorV2.QualityMonitorV2ValidityCheckConfigurations.property.rangeValidityCheck">RangeValidityCheck</a></code> | <code><a href="#@cdktn/provider-databricks.qualityMonitorV2.QualityMonitorV2ValidityCheckConfigurationsRangeValidityCheck">QualityMonitorV2ValidityCheckConfigurationsRangeValidityCheck</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.119.0/docs/resources/quality_monitor_v2#range_validity_check QualityMonitorV2#range_validity_check}. |
+| <code><a href="#@cdktn/provider-databricks.qualityMonitorV2.QualityMonitorV2ValidityCheckConfigurations.property.uniquenessValidityCheck">UniquenessValidityCheck</a></code> | <code><a href="#@cdktn/provider-databricks.qualityMonitorV2.QualityMonitorV2ValidityCheckConfigurationsUniquenessValidityCheck">QualityMonitorV2ValidityCheckConfigurationsUniquenessValidityCheck</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.119.0/docs/resources/quality_monitor_v2#uniqueness_validity_check QualityMonitorV2#uniqueness_validity_check}. |
 
 ---
 
@@ -1079,7 +1079,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/quality_monitor_v2#name QualityMonitorV2#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.119.0/docs/resources/quality_monitor_v2#name QualityMonitorV2#name}.
 
 ---
 
@@ -1091,7 +1091,7 @@ PercentNullValidityCheck QualityMonitorV2ValidityCheckConfigurationsPercentNullV
 
 - *Type:* <a href="#@cdktn/provider-databricks.qualityMonitorV2.QualityMonitorV2ValidityCheckConfigurationsPercentNullValidityCheck">QualityMonitorV2ValidityCheckConfigurationsPercentNullValidityCheck</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/quality_monitor_v2#percent_null_validity_check QualityMonitorV2#percent_null_validity_check}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.119.0/docs/resources/quality_monitor_v2#percent_null_validity_check QualityMonitorV2#percent_null_validity_check}.
 
 ---
 
@@ -1103,7 +1103,7 @@ RangeValidityCheck QualityMonitorV2ValidityCheckConfigurationsRangeValidityCheck
 
 - *Type:* <a href="#@cdktn/provider-databricks.qualityMonitorV2.QualityMonitorV2ValidityCheckConfigurationsRangeValidityCheck">QualityMonitorV2ValidityCheckConfigurationsRangeValidityCheck</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/quality_monitor_v2#range_validity_check QualityMonitorV2#range_validity_check}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.119.0/docs/resources/quality_monitor_v2#range_validity_check QualityMonitorV2#range_validity_check}.
 
 ---
 
@@ -1115,7 +1115,7 @@ UniquenessValidityCheck QualityMonitorV2ValidityCheckConfigurationsUniquenessVal
 
 - *Type:* <a href="#@cdktn/provider-databricks.qualityMonitorV2.QualityMonitorV2ValidityCheckConfigurationsUniquenessValidityCheck">QualityMonitorV2ValidityCheckConfigurationsUniquenessValidityCheck</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/quality_monitor_v2#uniqueness_validity_check QualityMonitorV2#uniqueness_validity_check}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.119.0/docs/resources/quality_monitor_v2#uniqueness_validity_check QualityMonitorV2#uniqueness_validity_check}.
 
 ---
 
@@ -1136,8 +1136,8 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/qualitym
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.qualityMonitorV2.QualityMonitorV2ValidityCheckConfigurationsPercentNullValidityCheck.property.columnNames">ColumnNames</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/quality_monitor_v2#column_names QualityMonitorV2#column_names}. |
-| <code><a href="#@cdktn/provider-databricks.qualityMonitorV2.QualityMonitorV2ValidityCheckConfigurationsPercentNullValidityCheck.property.upperBound">UpperBound</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/quality_monitor_v2#upper_bound QualityMonitorV2#upper_bound}. |
+| <code><a href="#@cdktn/provider-databricks.qualityMonitorV2.QualityMonitorV2ValidityCheckConfigurationsPercentNullValidityCheck.property.columnNames">ColumnNames</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.119.0/docs/resources/quality_monitor_v2#column_names QualityMonitorV2#column_names}. |
+| <code><a href="#@cdktn/provider-databricks.qualityMonitorV2.QualityMonitorV2ValidityCheckConfigurationsPercentNullValidityCheck.property.upperBound">UpperBound</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.119.0/docs/resources/quality_monitor_v2#upper_bound QualityMonitorV2#upper_bound}. |
 
 ---
 
@@ -1149,7 +1149,7 @@ ColumnNames *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/quality_monitor_v2#column_names QualityMonitorV2#column_names}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.119.0/docs/resources/quality_monitor_v2#column_names QualityMonitorV2#column_names}.
 
 ---
 
@@ -1161,7 +1161,7 @@ UpperBound *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/quality_monitor_v2#upper_bound QualityMonitorV2#upper_bound}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.119.0/docs/resources/quality_monitor_v2#upper_bound QualityMonitorV2#upper_bound}.
 
 ---
 
@@ -1183,9 +1183,9 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/qualitym
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.qualityMonitorV2.QualityMonitorV2ValidityCheckConfigurationsRangeValidityCheck.property.columnNames">ColumnNames</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/quality_monitor_v2#column_names QualityMonitorV2#column_names}. |
-| <code><a href="#@cdktn/provider-databricks.qualityMonitorV2.QualityMonitorV2ValidityCheckConfigurationsRangeValidityCheck.property.lowerBound">LowerBound</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/quality_monitor_v2#lower_bound QualityMonitorV2#lower_bound}. |
-| <code><a href="#@cdktn/provider-databricks.qualityMonitorV2.QualityMonitorV2ValidityCheckConfigurationsRangeValidityCheck.property.upperBound">UpperBound</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/quality_monitor_v2#upper_bound QualityMonitorV2#upper_bound}. |
+| <code><a href="#@cdktn/provider-databricks.qualityMonitorV2.QualityMonitorV2ValidityCheckConfigurationsRangeValidityCheck.property.columnNames">ColumnNames</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.119.0/docs/resources/quality_monitor_v2#column_names QualityMonitorV2#column_names}. |
+| <code><a href="#@cdktn/provider-databricks.qualityMonitorV2.QualityMonitorV2ValidityCheckConfigurationsRangeValidityCheck.property.lowerBound">LowerBound</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.119.0/docs/resources/quality_monitor_v2#lower_bound QualityMonitorV2#lower_bound}. |
+| <code><a href="#@cdktn/provider-databricks.qualityMonitorV2.QualityMonitorV2ValidityCheckConfigurationsRangeValidityCheck.property.upperBound">UpperBound</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.119.0/docs/resources/quality_monitor_v2#upper_bound QualityMonitorV2#upper_bound}. |
 
 ---
 
@@ -1197,7 +1197,7 @@ ColumnNames *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/quality_monitor_v2#column_names QualityMonitorV2#column_names}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.119.0/docs/resources/quality_monitor_v2#column_names QualityMonitorV2#column_names}.
 
 ---
 
@@ -1209,7 +1209,7 @@ LowerBound *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/quality_monitor_v2#lower_bound QualityMonitorV2#lower_bound}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.119.0/docs/resources/quality_monitor_v2#lower_bound QualityMonitorV2#lower_bound}.
 
 ---
 
@@ -1221,7 +1221,7 @@ UpperBound *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/quality_monitor_v2#upper_bound QualityMonitorV2#upper_bound}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.119.0/docs/resources/quality_monitor_v2#upper_bound QualityMonitorV2#upper_bound}.
 
 ---
 
@@ -1241,7 +1241,7 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/qualitym
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.qualityMonitorV2.QualityMonitorV2ValidityCheckConfigurationsUniquenessValidityCheck.property.columnNames">ColumnNames</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/quality_monitor_v2#column_names QualityMonitorV2#column_names}. |
+| <code><a href="#@cdktn/provider-databricks.qualityMonitorV2.QualityMonitorV2ValidityCheckConfigurationsUniquenessValidityCheck.property.columnNames">ColumnNames</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.119.0/docs/resources/quality_monitor_v2#column_names QualityMonitorV2#column_names}. |
 
 ---
 
@@ -1253,7 +1253,7 @@ ColumnNames *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.118.0/docs/resources/quality_monitor_v2#column_names QualityMonitorV2#column_names}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.119.0/docs/resources/quality_monitor_v2#column_names QualityMonitorV2#column_names}.
 
 ---
 
