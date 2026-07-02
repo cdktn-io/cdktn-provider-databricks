@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/databricks/databricks/1.119.0/docs/resources/quality_monitor_v2
+// https://registry.terraform.io/providers/databricks/databricks/1.120.0/docs/resources/quality_monitor_v2
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,25 +13,25 @@ import * as cdktn from 'cdktn';
 
 export interface QualityMonitorV2Config extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.119.0/docs/resources/quality_monitor_v2#object_id QualityMonitorV2#object_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.120.0/docs/resources/quality_monitor_v2#object_id QualityMonitorV2#object_id}
   */
   readonly objectId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.119.0/docs/resources/quality_monitor_v2#object_type QualityMonitorV2#object_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.120.0/docs/resources/quality_monitor_v2#object_type QualityMonitorV2#object_type}
   */
   readonly objectType: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.119.0/docs/resources/quality_monitor_v2#provider_config QualityMonitorV2#provider_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.120.0/docs/resources/quality_monitor_v2#provider_config QualityMonitorV2#provider_config}
   */
   readonly providerConfig?: QualityMonitorV2ProviderConfig;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.119.0/docs/resources/quality_monitor_v2#validity_check_configurations QualityMonitorV2#validity_check_configurations}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.120.0/docs/resources/quality_monitor_v2#validity_check_configurations QualityMonitorV2#validity_check_configurations}
   */
   readonly validityCheckConfigurations?: QualityMonitorV2ValidityCheckConfigurations[] | cdktn.IResolvable;
 }
 export interface QualityMonitorV2AnomalyDetectionConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.119.0/docs/resources/quality_monitor_v2#excluded_table_full_names QualityMonitorV2#excluded_table_full_names}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.120.0/docs/resources/quality_monitor_v2#excluded_table_full_names QualityMonitorV2#excluded_table_full_names}
   */
   readonly excludedTableFullNames?: string[];
 }
@@ -125,7 +125,7 @@ export class QualityMonitorV2AnomalyDetectionConfigOutputReference extends cdktn
 }
 export interface QualityMonitorV2ProviderConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.119.0/docs/resources/quality_monitor_v2#workspace_id QualityMonitorV2#workspace_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.120.0/docs/resources/quality_monitor_v2#workspace_id QualityMonitorV2#workspace_id}
   */
   readonly workspaceId?: string;
 }
@@ -219,11 +219,11 @@ export class QualityMonitorV2ProviderConfigOutputReference extends cdktn.Complex
 }
 export interface QualityMonitorV2ValidityCheckConfigurationsPercentNullValidityCheck {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.119.0/docs/resources/quality_monitor_v2#column_names QualityMonitorV2#column_names}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.120.0/docs/resources/quality_monitor_v2#column_names QualityMonitorV2#column_names}
   */
   readonly columnNames?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.119.0/docs/resources/quality_monitor_v2#upper_bound QualityMonitorV2#upper_bound}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.120.0/docs/resources/quality_monitor_v2#upper_bound QualityMonitorV2#upper_bound}
   */
   readonly upperBound?: number;
 }
@@ -346,15 +346,15 @@ export class QualityMonitorV2ValidityCheckConfigurationsPercentNullValidityCheck
 }
 export interface QualityMonitorV2ValidityCheckConfigurationsRangeValidityCheck {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.119.0/docs/resources/quality_monitor_v2#column_names QualityMonitorV2#column_names}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.120.0/docs/resources/quality_monitor_v2#column_names QualityMonitorV2#column_names}
   */
   readonly columnNames?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.119.0/docs/resources/quality_monitor_v2#lower_bound QualityMonitorV2#lower_bound}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.120.0/docs/resources/quality_monitor_v2#lower_bound QualityMonitorV2#lower_bound}
   */
   readonly lowerBound?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.119.0/docs/resources/quality_monitor_v2#upper_bound QualityMonitorV2#upper_bound}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.120.0/docs/resources/quality_monitor_v2#upper_bound QualityMonitorV2#upper_bound}
   */
   readonly upperBound?: number;
 }
@@ -506,7 +506,7 @@ export class QualityMonitorV2ValidityCheckConfigurationsRangeValidityCheckOutput
 }
 export interface QualityMonitorV2ValidityCheckConfigurationsUniquenessValidityCheck {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.119.0/docs/resources/quality_monitor_v2#column_names QualityMonitorV2#column_names}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.120.0/docs/resources/quality_monitor_v2#column_names QualityMonitorV2#column_names}
   */
   readonly columnNames?: string[];
 }
@@ -600,19 +600,19 @@ export class QualityMonitorV2ValidityCheckConfigurationsUniquenessValidityCheckO
 }
 export interface QualityMonitorV2ValidityCheckConfigurations {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.119.0/docs/resources/quality_monitor_v2#name QualityMonitorV2#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.120.0/docs/resources/quality_monitor_v2#name QualityMonitorV2#name}
   */
   readonly name?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.119.0/docs/resources/quality_monitor_v2#percent_null_validity_check QualityMonitorV2#percent_null_validity_check}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.120.0/docs/resources/quality_monitor_v2#percent_null_validity_check QualityMonitorV2#percent_null_validity_check}
   */
   readonly percentNullValidityCheck?: QualityMonitorV2ValidityCheckConfigurationsPercentNullValidityCheck;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.119.0/docs/resources/quality_monitor_v2#range_validity_check QualityMonitorV2#range_validity_check}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.120.0/docs/resources/quality_monitor_v2#range_validity_check QualityMonitorV2#range_validity_check}
   */
   readonly rangeValidityCheck?: QualityMonitorV2ValidityCheckConfigurationsRangeValidityCheck;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.119.0/docs/resources/quality_monitor_v2#uniqueness_validity_check QualityMonitorV2#uniqueness_validity_check}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.120.0/docs/resources/quality_monitor_v2#uniqueness_validity_check QualityMonitorV2#uniqueness_validity_check}
   */
   readonly uniquenessValidityCheck?: QualityMonitorV2ValidityCheckConfigurationsUniquenessValidityCheck;
 }
@@ -815,7 +815,7 @@ export class QualityMonitorV2ValidityCheckConfigurationsList extends cdktn.Compl
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.119.0/docs/resources/quality_monitor_v2 databricks_quality_monitor_v2}
+* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.120.0/docs/resources/quality_monitor_v2 databricks_quality_monitor_v2}
 */
 export class QualityMonitorV2 extends cdktn.TerraformResource {
 
@@ -831,7 +831,7 @@ export class QualityMonitorV2 extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a QualityMonitorV2 resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the QualityMonitorV2 to import
-  * @param importFromId The id of the existing QualityMonitorV2 that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.119.0/docs/resources/quality_monitor_v2#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing QualityMonitorV2 that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.120.0/docs/resources/quality_monitor_v2#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the QualityMonitorV2 to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -843,7 +843,7 @@ export class QualityMonitorV2 extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.119.0/docs/resources/quality_monitor_v2 databricks_quality_monitor_v2} Resource
+  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.120.0/docs/resources/quality_monitor_v2 databricks_quality_monitor_v2} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -854,7 +854,7 @@ export class QualityMonitorV2 extends cdktn.TerraformResource {
       terraformResourceType: 'databricks_quality_monitor_v2',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '1.119.0',
+        providerVersion: '1.120.0',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,

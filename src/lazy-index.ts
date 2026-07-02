@@ -110,6 +110,7 @@ Object.defineProperty(exports, 'pipeline', { get: function () { return require('
 Object.defineProperty(exports, 'policyInfo', { get: function () { return require('./policy-info'); } });
 Object.defineProperty(exports, 'postgresBranch', { get: function () { return require('./postgres-branch'); } });
 Object.defineProperty(exports, 'postgresCatalog', { get: function () { return require('./postgres-catalog'); } });
+Object.defineProperty(exports, 'postgresDataApi', { get: function () { return require('./postgres-data-api'); } });
 Object.defineProperty(exports, 'postgresDatabase', { get: function () { return require('./postgres-database'); } });
 Object.defineProperty(exports, 'postgresEndpoint', { get: function () { return require('./postgres-endpoint'); } });
 Object.defineProperty(exports, 'postgresProject', { get: function () { return require('./postgres-project'); } });
@@ -266,6 +267,7 @@ Object.defineProperty(exports, 'dataDatabricksPolicyInfos', { get: function () {
 Object.defineProperty(exports, 'dataDatabricksPostgresBranch', { get: function () { return require('./data-databricks-postgres-branch'); } });
 Object.defineProperty(exports, 'dataDatabricksPostgresBranches', { get: function () { return require('./data-databricks-postgres-branches'); } });
 Object.defineProperty(exports, 'dataDatabricksPostgresCatalog', { get: function () { return require('./data-databricks-postgres-catalog'); } });
+Object.defineProperty(exports, 'dataDatabricksPostgresDataApi', { get: function () { return require('./data-databricks-postgres-data-api'); } });
 Object.defineProperty(exports, 'dataDatabricksPostgresDatabase', { get: function () { return require('./data-databricks-postgres-database'); } });
 Object.defineProperty(exports, 'dataDatabricksPostgresDatabases', { get: function () { return require('./data-databricks-postgres-databases'); } });
 Object.defineProperty(exports, 'dataDatabricksPostgresEndpoint', { get: function () { return require('./data-databricks-postgres-endpoint'); } });

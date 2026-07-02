@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/databricks/databricks/1.119.0/docs/resources/environments_workspace_base_environment
+// https://registry.terraform.io/providers/databricks/databricks/1.120.0/docs/resources/environments_workspace_base_environment
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,29 +13,29 @@ import * as cdktn from 'cdktn';
 
 export interface EnvironmentsWorkspaceBaseEnvironmentConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.119.0/docs/resources/environments_workspace_base_environment#base_environment_type EnvironmentsWorkspaceBaseEnvironment#base_environment_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.120.0/docs/resources/environments_workspace_base_environment#base_environment_type EnvironmentsWorkspaceBaseEnvironment#base_environment_type}
   */
   readonly baseEnvironmentType?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.119.0/docs/resources/environments_workspace_base_environment#display_name EnvironmentsWorkspaceBaseEnvironment#display_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.120.0/docs/resources/environments_workspace_base_environment#display_name EnvironmentsWorkspaceBaseEnvironment#display_name}
   */
   readonly displayName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.119.0/docs/resources/environments_workspace_base_environment#filepath EnvironmentsWorkspaceBaseEnvironment#filepath}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.120.0/docs/resources/environments_workspace_base_environment#filepath EnvironmentsWorkspaceBaseEnvironment#filepath}
   */
   readonly filepath?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.119.0/docs/resources/environments_workspace_base_environment#provider_config EnvironmentsWorkspaceBaseEnvironment#provider_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.120.0/docs/resources/environments_workspace_base_environment#provider_config EnvironmentsWorkspaceBaseEnvironment#provider_config}
   */
   readonly providerConfig?: EnvironmentsWorkspaceBaseEnvironmentProviderConfig;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.119.0/docs/resources/environments_workspace_base_environment#workspace_base_environment_id EnvironmentsWorkspaceBaseEnvironment#workspace_base_environment_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.120.0/docs/resources/environments_workspace_base_environment#workspace_base_environment_id EnvironmentsWorkspaceBaseEnvironment#workspace_base_environment_id}
   */
   readonly workspaceBaseEnvironmentId?: string;
 }
 export interface EnvironmentsWorkspaceBaseEnvironmentProviderConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.119.0/docs/resources/environments_workspace_base_environment#workspace_id EnvironmentsWorkspaceBaseEnvironment#workspace_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.120.0/docs/resources/environments_workspace_base_environment#workspace_id EnvironmentsWorkspaceBaseEnvironment#workspace_id}
   */
   readonly workspaceId?: string;
 }
@@ -127,9 +127,126 @@ export class EnvironmentsWorkspaceBaseEnvironmentProviderConfigOutputReference e
     return this._workspaceId;
   }
 }
+export interface EnvironmentsWorkspaceBaseEnvironmentSpec {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.120.0/docs/resources/environments_workspace_base_environment#dependencies EnvironmentsWorkspaceBaseEnvironment#dependencies}
+  */
+  readonly dependencies?: string[];
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.120.0/docs/resources/environments_workspace_base_environment#environment_version EnvironmentsWorkspaceBaseEnvironment#environment_version}
+  */
+  readonly environmentVersion?: string;
+}
+
+export function environmentsWorkspaceBaseEnvironmentSpecToTerraform(struct?: EnvironmentsWorkspaceBaseEnvironmentSpec): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  return {
+    dependencies: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.dependencies),
+    environment_version: cdktn.stringToTerraform(struct!.environmentVersion),
+  }
+}
+
+
+export function environmentsWorkspaceBaseEnvironmentSpecToHclTerraform(struct?: EnvironmentsWorkspaceBaseEnvironmentSpec): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  const attrs = {
+    dependencies: {
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.dependencies),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+    environment_version: {
+      value: cdktn.stringToHclTerraform(struct!.environmentVersion),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class EnvironmentsWorkspaceBaseEnvironmentSpecOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false);
+  }
+
+  public get internalValue(): EnvironmentsWorkspaceBaseEnvironmentSpec | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._dependencies !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.dependencies = this._dependencies;
+    }
+    if (this._environmentVersion !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.environmentVersion = this._environmentVersion;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: EnvironmentsWorkspaceBaseEnvironmentSpec | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._dependencies = undefined;
+      this._environmentVersion = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._dependencies = value.dependencies;
+      this._environmentVersion = value.environmentVersion;
+    }
+  }
+
+  // dependencies - computed: true, optional: true, required: false
+  private _dependencies?: string[]; 
+  public get dependencies() {
+    return this.getListAttribute('dependencies');
+  }
+  public set dependencies(value: string[]) {
+    this._dependencies = value;
+  }
+  public resetDependencies() {
+    this._dependencies = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get dependenciesInput() {
+    return this._dependencies;
+  }
+
+  // environment_version - computed: true, optional: true, required: false
+  private _environmentVersion?: string; 
+  public get environmentVersion() {
+    return this.getStringAttribute('environment_version');
+  }
+  public set environmentVersion(value: string) {
+    this._environmentVersion = value;
+  }
+  public resetEnvironmentVersion() {
+    this._environmentVersion = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get environmentVersionInput() {
+    return this._environmentVersion;
+  }
+}
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.119.0/docs/resources/environments_workspace_base_environment databricks_environments_workspace_base_environment}
+* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.120.0/docs/resources/environments_workspace_base_environment databricks_environments_workspace_base_environment}
 */
 export class EnvironmentsWorkspaceBaseEnvironment extends cdktn.TerraformResource {
 
@@ -145,7 +262,7 @@ export class EnvironmentsWorkspaceBaseEnvironment extends cdktn.TerraformResourc
   * Generates CDKTN code for importing a EnvironmentsWorkspaceBaseEnvironment resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the EnvironmentsWorkspaceBaseEnvironment to import
-  * @param importFromId The id of the existing EnvironmentsWorkspaceBaseEnvironment that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.119.0/docs/resources/environments_workspace_base_environment#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing EnvironmentsWorkspaceBaseEnvironment that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.120.0/docs/resources/environments_workspace_base_environment#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the EnvironmentsWorkspaceBaseEnvironment to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -157,7 +274,7 @@ export class EnvironmentsWorkspaceBaseEnvironment extends cdktn.TerraformResourc
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.119.0/docs/resources/environments_workspace_base_environment databricks_environments_workspace_base_environment} Resource
+  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.120.0/docs/resources/environments_workspace_base_environment databricks_environments_workspace_base_environment} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -168,7 +285,7 @@ export class EnvironmentsWorkspaceBaseEnvironment extends cdktn.TerraformResourc
       terraformResourceType: 'databricks_environments_workspace_base_environment',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '1.119.0',
+        providerVersion: '1.120.0',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,
@@ -284,6 +401,12 @@ export class EnvironmentsWorkspaceBaseEnvironment extends cdktn.TerraformResourc
   // Temporarily expose input value. Use with caution.
   public get providerConfigInput() {
     return this._providerConfig.internalValue;
+  }
+
+  // spec - computed: true, optional: false, required: false
+  private _spec = new EnvironmentsWorkspaceBaseEnvironmentSpecOutputReference(this, "spec");
+  public get spec() {
+    return this._spec;
   }
 
   // status - computed: true, optional: false, required: false

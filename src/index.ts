@@ -110,6 +110,7 @@ export * as pipeline from './pipeline/index';
 export * as policyInfo from './policy-info/index';
 export * as postgresBranch from './postgres-branch/index';
 export * as postgresCatalog from './postgres-catalog/index';
+export * as postgresDataApi from './postgres-data-api/index';
 export * as postgresDatabase from './postgres-database/index';
 export * as postgresEndpoint from './postgres-endpoint/index';
 export * as postgresProject from './postgres-project/index';
@@ -266,6 +267,7 @@ export * as dataDatabricksPolicyInfos from './data-databricks-policy-infos/index
 export * as dataDatabricksPostgresBranch from './data-databricks-postgres-branch/index';
 export * as dataDatabricksPostgresBranches from './data-databricks-postgres-branches/index';
 export * as dataDatabricksPostgresCatalog from './data-databricks-postgres-catalog/index';
+export * as dataDatabricksPostgresDataApi from './data-databricks-postgres-data-api/index';
 export * as dataDatabricksPostgresDatabase from './data-databricks-postgres-database/index';
 export * as dataDatabricksPostgresDatabases from './data-databricks-postgres-databases/index';
 export * as dataDatabricksPostgresEndpoint from './data-databricks-postgres-endpoint/index';
