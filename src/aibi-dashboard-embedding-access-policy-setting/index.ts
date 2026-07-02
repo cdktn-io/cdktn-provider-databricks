@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/databricks/databricks/1.119.0/docs/resources/aibi_dashboard_embedding_access_policy_setting
+// https://registry.terraform.io/providers/databricks/databricks/1.120.0/docs/resources/aibi_dashboard_embedding_access_policy_setting
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,36 +13,36 @@ import * as cdktn from 'cdktn';
 
 export interface AibiDashboardEmbeddingAccessPolicySettingConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.119.0/docs/resources/aibi_dashboard_embedding_access_policy_setting#etag AibiDashboardEmbeddingAccessPolicySetting#etag}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.120.0/docs/resources/aibi_dashboard_embedding_access_policy_setting#etag AibiDashboardEmbeddingAccessPolicySetting#etag}
   */
   readonly etag?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.119.0/docs/resources/aibi_dashboard_embedding_access_policy_setting#id AibiDashboardEmbeddingAccessPolicySetting#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.120.0/docs/resources/aibi_dashboard_embedding_access_policy_setting#id AibiDashboardEmbeddingAccessPolicySetting#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.119.0/docs/resources/aibi_dashboard_embedding_access_policy_setting#setting_name AibiDashboardEmbeddingAccessPolicySetting#setting_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.120.0/docs/resources/aibi_dashboard_embedding_access_policy_setting#setting_name AibiDashboardEmbeddingAccessPolicySetting#setting_name}
   */
   readonly settingName?: string;
   /**
   * aibi_dashboard_embedding_access_policy block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.119.0/docs/resources/aibi_dashboard_embedding_access_policy_setting#aibi_dashboard_embedding_access_policy AibiDashboardEmbeddingAccessPolicySetting#aibi_dashboard_embedding_access_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.120.0/docs/resources/aibi_dashboard_embedding_access_policy_setting#aibi_dashboard_embedding_access_policy AibiDashboardEmbeddingAccessPolicySetting#aibi_dashboard_embedding_access_policy}
   */
   readonly aibiDashboardEmbeddingAccessPolicy: AibiDashboardEmbeddingAccessPolicySettingAibiDashboardEmbeddingAccessPolicy;
   /**
   * provider_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.119.0/docs/resources/aibi_dashboard_embedding_access_policy_setting#provider_config AibiDashboardEmbeddingAccessPolicySetting#provider_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.120.0/docs/resources/aibi_dashboard_embedding_access_policy_setting#provider_config AibiDashboardEmbeddingAccessPolicySetting#provider_config}
   */
   readonly providerConfig?: AibiDashboardEmbeddingAccessPolicySettingProviderConfig;
 }
 export interface AibiDashboardEmbeddingAccessPolicySettingAibiDashboardEmbeddingAccessPolicy {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.119.0/docs/resources/aibi_dashboard_embedding_access_policy_setting#access_policy_type AibiDashboardEmbeddingAccessPolicySetting#access_policy_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.120.0/docs/resources/aibi_dashboard_embedding_access_policy_setting#access_policy_type AibiDashboardEmbeddingAccessPolicySetting#access_policy_type}
   */
   readonly accessPolicyType: string;
 }
@@ -123,7 +123,7 @@ export class AibiDashboardEmbeddingAccessPolicySettingAibiDashboardEmbeddingAcce
 }
 export interface AibiDashboardEmbeddingAccessPolicySettingProviderConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.119.0/docs/resources/aibi_dashboard_embedding_access_policy_setting#workspace_id AibiDashboardEmbeddingAccessPolicySetting#workspace_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.120.0/docs/resources/aibi_dashboard_embedding_access_policy_setting#workspace_id AibiDashboardEmbeddingAccessPolicySetting#workspace_id}
   */
   readonly workspaceId?: string;
 }
@@ -207,7 +207,7 @@ export class AibiDashboardEmbeddingAccessPolicySettingProviderConfigOutputRefere
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.119.0/docs/resources/aibi_dashboard_embedding_access_policy_setting databricks_aibi_dashboard_embedding_access_policy_setting}
+* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.120.0/docs/resources/aibi_dashboard_embedding_access_policy_setting databricks_aibi_dashboard_embedding_access_policy_setting}
 */
 export class AibiDashboardEmbeddingAccessPolicySetting extends cdktn.TerraformResource {
 
@@ -223,7 +223,7 @@ export class AibiDashboardEmbeddingAccessPolicySetting extends cdktn.TerraformRe
   * Generates CDKTN code for importing a AibiDashboardEmbeddingAccessPolicySetting resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the AibiDashboardEmbeddingAccessPolicySetting to import
-  * @param importFromId The id of the existing AibiDashboardEmbeddingAccessPolicySetting that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.119.0/docs/resources/aibi_dashboard_embedding_access_policy_setting#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing AibiDashboardEmbeddingAccessPolicySetting that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.120.0/docs/resources/aibi_dashboard_embedding_access_policy_setting#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the AibiDashboardEmbeddingAccessPolicySetting to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -235,7 +235,7 @@ export class AibiDashboardEmbeddingAccessPolicySetting extends cdktn.TerraformRe
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.119.0/docs/resources/aibi_dashboard_embedding_access_policy_setting databricks_aibi_dashboard_embedding_access_policy_setting} Resource
+  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.120.0/docs/resources/aibi_dashboard_embedding_access_policy_setting databricks_aibi_dashboard_embedding_access_policy_setting} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -246,7 +246,7 @@ export class AibiDashboardEmbeddingAccessPolicySetting extends cdktn.TerraformRe
       terraformResourceType: 'databricks_aibi_dashboard_embedding_access_policy_setting',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '1.119.0',
+        providerVersion: '1.120.0',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,

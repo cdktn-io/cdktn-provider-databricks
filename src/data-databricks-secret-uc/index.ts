@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/databricks/databricks/1.119.0/docs/data-sources/secret_uc
+// https://registry.terraform.io/providers/databricks/databricks/1.120.0/docs/data-sources/secret_uc
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,17 +13,17 @@ import * as cdktn from 'cdktn';
 
 export interface DataDatabricksSecretUcConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.119.0/docs/data-sources/secret_uc#full_name DataDatabricksSecretUc#full_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.120.0/docs/data-sources/secret_uc#full_name DataDatabricksSecretUc#full_name}
   */
   readonly fullName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.119.0/docs/data-sources/secret_uc#provider_config DataDatabricksSecretUc#provider_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.120.0/docs/data-sources/secret_uc#provider_config DataDatabricksSecretUc#provider_config}
   */
   readonly providerConfig?: DataDatabricksSecretUcProviderConfig;
 }
 export interface DataDatabricksSecretUcProviderConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.119.0/docs/data-sources/secret_uc#workspace_id DataDatabricksSecretUc#workspace_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.120.0/docs/data-sources/secret_uc#workspace_id DataDatabricksSecretUc#workspace_id}
   */
   readonly workspaceId?: string;
 }
@@ -117,7 +117,7 @@ export class DataDatabricksSecretUcProviderConfigOutputReference extends cdktn.C
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.119.0/docs/data-sources/secret_uc databricks_secret_uc}
+* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.120.0/docs/data-sources/secret_uc databricks_secret_uc}
 */
 export class DataDatabricksSecretUc extends cdktn.TerraformDataSource {
 
@@ -133,7 +133,7 @@ export class DataDatabricksSecretUc extends cdktn.TerraformDataSource {
   * Generates CDKTN code for importing a DataDatabricksSecretUc resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataDatabricksSecretUc to import
-  * @param importFromId The id of the existing DataDatabricksSecretUc that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.119.0/docs/data-sources/secret_uc#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataDatabricksSecretUc that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.120.0/docs/data-sources/secret_uc#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataDatabricksSecretUc to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -145,7 +145,7 @@ export class DataDatabricksSecretUc extends cdktn.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.119.0/docs/data-sources/secret_uc databricks_secret_uc} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.120.0/docs/data-sources/secret_uc databricks_secret_uc} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -156,7 +156,7 @@ export class DataDatabricksSecretUc extends cdktn.TerraformDataSource {
       terraformResourceType: 'databricks_secret_uc',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '1.119.0',
+        providerVersion: '1.120.0',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,
