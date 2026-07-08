@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/databricks/databricks/1.120.0/docs/resources/ai_search_index
+// https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/ai_search_index
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,49 +13,49 @@ import * as cdktn from 'cdktn';
 
 export interface AiSearchIndexConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.120.0/docs/resources/ai_search_index#delta_sync_index_spec AiSearchIndex#delta_sync_index_spec}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/ai_search_index#delta_sync_index_spec AiSearchIndex#delta_sync_index_spec}
   */
   readonly deltaSyncIndexSpec?: AiSearchIndexDeltaSyncIndexSpec;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.120.0/docs/resources/ai_search_index#direct_access_index_spec AiSearchIndex#direct_access_index_spec}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/ai_search_index#direct_access_index_spec AiSearchIndex#direct_access_index_spec}
   */
   readonly directAccessIndexSpec?: AiSearchIndexDirectAccessIndexSpec;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.120.0/docs/resources/ai_search_index#index_id AiSearchIndex#index_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/ai_search_index#index_id AiSearchIndex#index_id}
   */
   readonly indexId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.120.0/docs/resources/ai_search_index#index_subtype AiSearchIndex#index_subtype}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/ai_search_index#index_subtype AiSearchIndex#index_subtype}
   */
   readonly indexSubtype?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.120.0/docs/resources/ai_search_index#index_type AiSearchIndex#index_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/ai_search_index#index_type AiSearchIndex#index_type}
   */
   readonly indexType: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.120.0/docs/resources/ai_search_index#parent AiSearchIndex#parent}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/ai_search_index#parent AiSearchIndex#parent}
   */
   readonly parent: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.120.0/docs/resources/ai_search_index#primary_key AiSearchIndex#primary_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/ai_search_index#primary_key AiSearchIndex#primary_key}
   */
   readonly primaryKey: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.120.0/docs/resources/ai_search_index#provider_config AiSearchIndex#provider_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/ai_search_index#provider_config AiSearchIndex#provider_config}
   */
   readonly providerConfig?: AiSearchIndexProviderConfig;
 }
 export interface AiSearchIndexDeltaSyncIndexSpecEmbeddingSourceColumns {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.120.0/docs/resources/ai_search_index#embedding_model_endpoint AiSearchIndex#embedding_model_endpoint}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/ai_search_index#embedding_model_endpoint AiSearchIndex#embedding_model_endpoint}
   */
   readonly embeddingModelEndpoint?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.120.0/docs/resources/ai_search_index#model_endpoint_name_for_query AiSearchIndex#model_endpoint_name_for_query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/ai_search_index#model_endpoint_name_for_query AiSearchIndex#model_endpoint_name_for_query}
   */
   readonly modelEndpointNameForQuery?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.120.0/docs/resources/ai_search_index#name AiSearchIndex#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/ai_search_index#name AiSearchIndex#name}
   */
   readonly name?: string;
 }
@@ -229,11 +229,11 @@ export class AiSearchIndexDeltaSyncIndexSpecEmbeddingSourceColumnsList extends c
 }
 export interface AiSearchIndexDeltaSyncIndexSpecEmbeddingVectorColumns {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.120.0/docs/resources/ai_search_index#embedding_dimension AiSearchIndex#embedding_dimension}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/ai_search_index#embedding_dimension AiSearchIndex#embedding_dimension}
   */
   readonly embeddingDimension?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.120.0/docs/resources/ai_search_index#name AiSearchIndex#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/ai_search_index#name AiSearchIndex#name}
   */
   readonly name?: string;
 }
@@ -378,27 +378,27 @@ export class AiSearchIndexDeltaSyncIndexSpecEmbeddingVectorColumnsList extends c
 }
 export interface AiSearchIndexDeltaSyncIndexSpec {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.120.0/docs/resources/ai_search_index#columns_to_sync AiSearchIndex#columns_to_sync}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/ai_search_index#columns_to_sync AiSearchIndex#columns_to_sync}
   */
   readonly columnsToSync?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.120.0/docs/resources/ai_search_index#embedding_source_columns AiSearchIndex#embedding_source_columns}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/ai_search_index#embedding_source_columns AiSearchIndex#embedding_source_columns}
   */
   readonly embeddingSourceColumns?: AiSearchIndexDeltaSyncIndexSpecEmbeddingSourceColumns[] | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.120.0/docs/resources/ai_search_index#embedding_vector_columns AiSearchIndex#embedding_vector_columns}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/ai_search_index#embedding_vector_columns AiSearchIndex#embedding_vector_columns}
   */
   readonly embeddingVectorColumns?: AiSearchIndexDeltaSyncIndexSpecEmbeddingVectorColumns[] | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.120.0/docs/resources/ai_search_index#embedding_writeback_table AiSearchIndex#embedding_writeback_table}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/ai_search_index#embedding_writeback_table AiSearchIndex#embedding_writeback_table}
   */
   readonly embeddingWritebackTable?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.120.0/docs/resources/ai_search_index#pipeline_type AiSearchIndex#pipeline_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/ai_search_index#pipeline_type AiSearchIndex#pipeline_type}
   */
   readonly pipelineType: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.120.0/docs/resources/ai_search_index#source_table AiSearchIndex#source_table}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/ai_search_index#source_table AiSearchIndex#source_table}
   */
   readonly sourceTable?: string;
 }
@@ -639,15 +639,15 @@ export class AiSearchIndexDeltaSyncIndexSpecOutputReference extends cdktn.Comple
 }
 export interface AiSearchIndexDirectAccessIndexSpecEmbeddingSourceColumns {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.120.0/docs/resources/ai_search_index#embedding_model_endpoint AiSearchIndex#embedding_model_endpoint}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/ai_search_index#embedding_model_endpoint AiSearchIndex#embedding_model_endpoint}
   */
   readonly embeddingModelEndpoint?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.120.0/docs/resources/ai_search_index#model_endpoint_name_for_query AiSearchIndex#model_endpoint_name_for_query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/ai_search_index#model_endpoint_name_for_query AiSearchIndex#model_endpoint_name_for_query}
   */
   readonly modelEndpointNameForQuery?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.120.0/docs/resources/ai_search_index#name AiSearchIndex#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/ai_search_index#name AiSearchIndex#name}
   */
   readonly name?: string;
 }
@@ -821,11 +821,11 @@ export class AiSearchIndexDirectAccessIndexSpecEmbeddingSourceColumnsList extend
 }
 export interface AiSearchIndexDirectAccessIndexSpecEmbeddingVectorColumns {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.120.0/docs/resources/ai_search_index#embedding_dimension AiSearchIndex#embedding_dimension}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/ai_search_index#embedding_dimension AiSearchIndex#embedding_dimension}
   */
   readonly embeddingDimension?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.120.0/docs/resources/ai_search_index#name AiSearchIndex#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/ai_search_index#name AiSearchIndex#name}
   */
   readonly name?: string;
 }
@@ -970,15 +970,15 @@ export class AiSearchIndexDirectAccessIndexSpecEmbeddingVectorColumnsList extend
 }
 export interface AiSearchIndexDirectAccessIndexSpec {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.120.0/docs/resources/ai_search_index#embedding_source_columns AiSearchIndex#embedding_source_columns}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/ai_search_index#embedding_source_columns AiSearchIndex#embedding_source_columns}
   */
   readonly embeddingSourceColumns?: AiSearchIndexDirectAccessIndexSpecEmbeddingSourceColumns[] | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.120.0/docs/resources/ai_search_index#embedding_vector_columns AiSearchIndex#embedding_vector_columns}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/ai_search_index#embedding_vector_columns AiSearchIndex#embedding_vector_columns}
   */
   readonly embeddingVectorColumns?: AiSearchIndexDirectAccessIndexSpecEmbeddingVectorColumns[] | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.120.0/docs/resources/ai_search_index#schema_json AiSearchIndex#schema_json}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/ai_search_index#schema_json AiSearchIndex#schema_json}
   */
   readonly schemaJson?: string;
 }
@@ -1130,7 +1130,7 @@ export class AiSearchIndexDirectAccessIndexSpecOutputReference extends cdktn.Com
 }
 export interface AiSearchIndexProviderConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.120.0/docs/resources/ai_search_index#workspace_id AiSearchIndex#workspace_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/ai_search_index#workspace_id AiSearchIndex#workspace_id}
   */
   readonly workspaceId?: string;
 }
@@ -1293,7 +1293,7 @@ export class AiSearchIndexStatusOutputReference extends cdktn.ComplexObject {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.120.0/docs/resources/ai_search_index databricks_ai_search_index}
+* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/ai_search_index databricks_ai_search_index}
 */
 export class AiSearchIndex extends cdktn.TerraformResource {
 
@@ -1309,7 +1309,7 @@ export class AiSearchIndex extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a AiSearchIndex resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the AiSearchIndex to import
-  * @param importFromId The id of the existing AiSearchIndex that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.120.0/docs/resources/ai_search_index#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing AiSearchIndex that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/ai_search_index#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the AiSearchIndex to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -1321,7 +1321,7 @@ export class AiSearchIndex extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.120.0/docs/resources/ai_search_index databricks_ai_search_index} Resource
+  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/ai_search_index databricks_ai_search_index} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -1332,7 +1332,7 @@ export class AiSearchIndex extends cdktn.TerraformResource {
       terraformResourceType: 'databricks_ai_search_index',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '1.120.0',
+        providerVersion: '1.121.0',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,

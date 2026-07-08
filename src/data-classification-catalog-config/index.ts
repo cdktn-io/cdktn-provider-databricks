@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/databricks/databricks/1.120.0/docs/resources/data_classification_catalog_config
+// https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/data_classification_catalog_config
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,29 +13,33 @@ import * as cdktn from 'cdktn';
 
 export interface DataClassificationCatalogConfigConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.120.0/docs/resources/data_classification_catalog_config#auto_tag_configs DataClassificationCatalogConfig#auto_tag_configs}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/data_classification_catalog_config#auto_tag_configs DataClassificationCatalogConfig#auto_tag_configs}
   */
   readonly autoTagConfigs?: DataClassificationCatalogConfigAutoTagConfigs[] | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.120.0/docs/resources/data_classification_catalog_config#included_schemas DataClassificationCatalogConfig#included_schemas}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/data_classification_catalog_config#excluded_schemas DataClassificationCatalogConfig#excluded_schemas}
+  */
+  readonly excludedSchemas?: DataClassificationCatalogConfigExcludedSchemas;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/data_classification_catalog_config#included_schemas DataClassificationCatalogConfig#included_schemas}
   */
   readonly includedSchemas?: DataClassificationCatalogConfigIncludedSchemas;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.120.0/docs/resources/data_classification_catalog_config#parent DataClassificationCatalogConfig#parent}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/data_classification_catalog_config#parent DataClassificationCatalogConfig#parent}
   */
   readonly parent: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.120.0/docs/resources/data_classification_catalog_config#provider_config DataClassificationCatalogConfig#provider_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/data_classification_catalog_config#provider_config DataClassificationCatalogConfig#provider_config}
   */
   readonly providerConfig?: DataClassificationCatalogConfigProviderConfig;
 }
 export interface DataClassificationCatalogConfigAutoTagConfigs {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.120.0/docs/resources/data_classification_catalog_config#auto_tagging_mode DataClassificationCatalogConfig#auto_tagging_mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/data_classification_catalog_config#auto_tagging_mode DataClassificationCatalogConfig#auto_tagging_mode}
   */
   readonly autoTaggingMode: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.120.0/docs/resources/data_classification_catalog_config#classification_tag DataClassificationCatalogConfig#classification_tag}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/data_classification_catalog_config#classification_tag DataClassificationCatalogConfig#classification_tag}
   */
   readonly classificationTag: string;
 }
@@ -172,9 +176,100 @@ export class DataClassificationCatalogConfigAutoTagConfigsList extends cdktn.Com
     return new DataClassificationCatalogConfigAutoTagConfigsOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
+export interface DataClassificationCatalogConfigExcludedSchemas {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/data_classification_catalog_config#names DataClassificationCatalogConfig#names}
+  */
+  readonly names: string[];
+}
+
+export function dataClassificationCatalogConfigExcludedSchemasToTerraform(struct?: DataClassificationCatalogConfigExcludedSchemas | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  return {
+    names: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.names),
+  }
+}
+
+
+export function dataClassificationCatalogConfigExcludedSchemasToHclTerraform(struct?: DataClassificationCatalogConfigExcludedSchemas | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  const attrs = {
+    names: {
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.names),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class DataClassificationCatalogConfigExcludedSchemasOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktn.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false);
+  }
+
+  public get internalValue(): DataClassificationCatalogConfigExcludedSchemas | cdktn.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._names !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.names = this._names;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataClassificationCatalogConfigExcludedSchemas | cdktn.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._names = undefined;
+    }
+    else if (cdktn.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._names = value.names;
+    }
+  }
+
+  // names - computed: false, optional: false, required: true
+  private _names?: string[]; 
+  public get names() {
+    return this.getListAttribute('names');
+  }
+  public set names(value: string[]) {
+    this._names = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get namesInput() {
+    return this._names;
+  }
+}
 export interface DataClassificationCatalogConfigIncludedSchemas {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.120.0/docs/resources/data_classification_catalog_config#names DataClassificationCatalogConfig#names}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/data_classification_catalog_config#names DataClassificationCatalogConfig#names}
   */
   readonly names: string[];
 }
@@ -265,7 +360,7 @@ export class DataClassificationCatalogConfigIncludedSchemasOutputReference exten
 }
 export interface DataClassificationCatalogConfigProviderConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.120.0/docs/resources/data_classification_catalog_config#workspace_id DataClassificationCatalogConfig#workspace_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/data_classification_catalog_config#workspace_id DataClassificationCatalogConfig#workspace_id}
   */
   readonly workspaceId?: string;
 }
@@ -359,7 +454,7 @@ export class DataClassificationCatalogConfigProviderConfigOutputReference extend
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.120.0/docs/resources/data_classification_catalog_config databricks_data_classification_catalog_config}
+* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/data_classification_catalog_config databricks_data_classification_catalog_config}
 */
 export class DataClassificationCatalogConfig extends cdktn.TerraformResource {
 
@@ -375,7 +470,7 @@ export class DataClassificationCatalogConfig extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a DataClassificationCatalogConfig resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataClassificationCatalogConfig to import
-  * @param importFromId The id of the existing DataClassificationCatalogConfig that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.120.0/docs/resources/data_classification_catalog_config#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataClassificationCatalogConfig that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/data_classification_catalog_config#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataClassificationCatalogConfig to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -387,7 +482,7 @@ export class DataClassificationCatalogConfig extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.120.0/docs/resources/data_classification_catalog_config databricks_data_classification_catalog_config} Resource
+  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/data_classification_catalog_config databricks_data_classification_catalog_config} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -398,7 +493,7 @@ export class DataClassificationCatalogConfig extends cdktn.TerraformResource {
       terraformResourceType: 'databricks_data_classification_catalog_config',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '1.120.0',
+        providerVersion: '1.121.0',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,
@@ -410,6 +505,7 @@ export class DataClassificationCatalogConfig extends cdktn.TerraformResource {
       forEach: config.forEach
     });
     this._autoTagConfigs.internalValue = config.autoTagConfigs;
+    this._excludedSchemas.internalValue = config.excludedSchemas;
     this._includedSchemas.internalValue = config.includedSchemas;
     this._parent = config.parent;
     this._providerConfig.internalValue = config.providerConfig;
@@ -433,6 +529,22 @@ export class DataClassificationCatalogConfig extends cdktn.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get autoTagConfigsInput() {
     return this._autoTagConfigs.internalValue;
+  }
+
+  // excluded_schemas - computed: false, optional: true, required: false
+  private _excludedSchemas = new DataClassificationCatalogConfigExcludedSchemasOutputReference(this, "excluded_schemas");
+  public get excludedSchemas() {
+    return this._excludedSchemas;
+  }
+  public putExcludedSchemas(value: DataClassificationCatalogConfigExcludedSchemas) {
+    this._excludedSchemas.internalValue = value;
+  }
+  public resetExcludedSchemas() {
+    this._excludedSchemas.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get excludedSchemasInput() {
+    return this._excludedSchemas.internalValue;
   }
 
   // included_schemas - computed: false, optional: true, required: false
@@ -492,6 +604,7 @@ export class DataClassificationCatalogConfig extends cdktn.TerraformResource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       auto_tag_configs: cdktn.listMapper(dataClassificationCatalogConfigAutoTagConfigsToTerraform, false)(this._autoTagConfigs.internalValue),
+      excluded_schemas: dataClassificationCatalogConfigExcludedSchemasToTerraform(this._excludedSchemas.internalValue),
       included_schemas: dataClassificationCatalogConfigIncludedSchemasToTerraform(this._includedSchemas.internalValue),
       parent: cdktn.stringToTerraform(this._parent),
       provider_config: dataClassificationCatalogConfigProviderConfigToTerraform(this._providerConfig.internalValue),
@@ -505,6 +618,12 @@ export class DataClassificationCatalogConfig extends cdktn.TerraformResource {
         isBlock: true,
         type: "list",
         storageClassType: "DataClassificationCatalogConfigAutoTagConfigsList",
+      },
+      excluded_schemas: {
+        value: dataClassificationCatalogConfigExcludedSchemasToHclTerraform(this._excludedSchemas.internalValue),
+        isBlock: true,
+        type: "struct",
+        storageClassType: "DataClassificationCatalogConfigExcludedSchemas",
       },
       included_schemas: {
         value: dataClassificationCatalogConfigIncludedSchemasToHclTerraform(this._includedSchemas.internalValue),
