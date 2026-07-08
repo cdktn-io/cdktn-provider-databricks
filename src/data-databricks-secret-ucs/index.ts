@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/databricks/databricks/1.120.0/docs/data-sources/secret_ucs
+// https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/data-sources/secret_ucs
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,29 +13,25 @@ import * as cdktn from 'cdktn';
 
 export interface DataDatabricksSecretUcsConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.120.0/docs/data-sources/secret_ucs#catalog_name DataDatabricksSecretUcs#catalog_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/data-sources/secret_ucs#catalog_name DataDatabricksSecretUcs#catalog_name}
   */
   readonly catalogName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.120.0/docs/data-sources/secret_ucs#include_browse DataDatabricksSecretUcs#include_browse}
-  */
-  readonly includeBrowse?: boolean | cdktn.IResolvable;
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.120.0/docs/data-sources/secret_ucs#page_size DataDatabricksSecretUcs#page_size}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/data-sources/secret_ucs#page_size DataDatabricksSecretUcs#page_size}
   */
   readonly pageSize?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.120.0/docs/data-sources/secret_ucs#provider_config DataDatabricksSecretUcs#provider_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/data-sources/secret_ucs#provider_config DataDatabricksSecretUcs#provider_config}
   */
   readonly providerConfig?: DataDatabricksSecretUcsProviderConfig;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.120.0/docs/data-sources/secret_ucs#schema_name DataDatabricksSecretUcs#schema_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/data-sources/secret_ucs#schema_name DataDatabricksSecretUcs#schema_name}
   */
   readonly schemaName?: string;
 }
 export interface DataDatabricksSecretUcsProviderConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.120.0/docs/data-sources/secret_ucs#workspace_id DataDatabricksSecretUcs#workspace_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/data-sources/secret_ucs#workspace_id DataDatabricksSecretUcs#workspace_id}
   */
   readonly workspaceId?: string;
 }
@@ -129,7 +125,7 @@ export class DataDatabricksSecretUcsProviderConfigOutputReference extends cdktn.
 }
 export interface DataDatabricksSecretUcsSecretsProviderConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.120.0/docs/data-sources/secret_ucs#workspace_id DataDatabricksSecretUcs#workspace_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/data-sources/secret_ucs#workspace_id DataDatabricksSecretUcs#workspace_id}
   */
   readonly workspaceId?: string;
 }
@@ -223,11 +219,11 @@ export class DataDatabricksSecretUcsSecretsProviderConfigOutputReference extends
 }
 export interface DataDatabricksSecretUcsSecrets {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.120.0/docs/data-sources/secret_ucs#full_name DataDatabricksSecretUcs#full_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/data-sources/secret_ucs#full_name DataDatabricksSecretUcs#full_name}
   */
   readonly fullName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.120.0/docs/data-sources/secret_ucs#provider_config DataDatabricksSecretUcs#provider_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/data-sources/secret_ucs#provider_config DataDatabricksSecretUcs#provider_config}
   */
   readonly providerConfig?: DataDatabricksSecretUcsSecretsProviderConfig;
 }
@@ -308,11 +304,6 @@ export class DataDatabricksSecretUcsSecretsOutputReference extends cdktn.Complex
     }
   }
 
-  // browse_only - computed: true, optional: false, required: false
-  public get browseOnly() {
-    return this.getBooleanAttribute('browse_only');
-  }
-
   // catalog_name - computed: true, optional: false, required: false
   public get catalogName() {
     return this.getStringAttribute('catalog_name');
@@ -346,11 +337,6 @@ export class DataDatabricksSecretUcsSecretsOutputReference extends cdktn.Complex
   // expire_time - computed: true, optional: false, required: false
   public get expireTime() {
     return this.getStringAttribute('expire_time');
-  }
-
-  // external_secret_id - computed: true, optional: false, required: false
-  public get externalSecretId() {
-    return this.getStringAttribute('external_secret_id');
   }
 
   // full_name - computed: true, optional: false, required: true
@@ -439,7 +425,7 @@ export class DataDatabricksSecretUcsSecretsList extends cdktn.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.120.0/docs/data-sources/secret_ucs databricks_secret_ucs}
+* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/data-sources/secret_ucs databricks_secret_ucs}
 */
 export class DataDatabricksSecretUcs extends cdktn.TerraformDataSource {
 
@@ -455,7 +441,7 @@ export class DataDatabricksSecretUcs extends cdktn.TerraformDataSource {
   * Generates CDKTN code for importing a DataDatabricksSecretUcs resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataDatabricksSecretUcs to import
-  * @param importFromId The id of the existing DataDatabricksSecretUcs that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.120.0/docs/data-sources/secret_ucs#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataDatabricksSecretUcs that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/data-sources/secret_ucs#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataDatabricksSecretUcs to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -467,7 +453,7 @@ export class DataDatabricksSecretUcs extends cdktn.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.120.0/docs/data-sources/secret_ucs databricks_secret_ucs} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/data-sources/secret_ucs databricks_secret_ucs} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -478,7 +464,7 @@ export class DataDatabricksSecretUcs extends cdktn.TerraformDataSource {
       terraformResourceType: 'databricks_secret_ucs',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '1.120.0',
+        providerVersion: '1.121.0',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,
@@ -490,7 +476,6 @@ export class DataDatabricksSecretUcs extends cdktn.TerraformDataSource {
       forEach: config.forEach
     });
     this._catalogName = config.catalogName;
-    this._includeBrowse = config.includeBrowse;
     this._pageSize = config.pageSize;
     this._providerConfig.internalValue = config.providerConfig;
     this._schemaName = config.schemaName;
@@ -514,22 +499,6 @@ export class DataDatabricksSecretUcs extends cdktn.TerraformDataSource {
   // Temporarily expose input value. Use with caution.
   public get catalogNameInput() {
     return this._catalogName;
-  }
-
-  // include_browse - computed: false, optional: true, required: false
-  private _includeBrowse?: boolean | cdktn.IResolvable; 
-  public get includeBrowse() {
-    return this.getBooleanAttribute('include_browse');
-  }
-  public set includeBrowse(value: boolean | cdktn.IResolvable) {
-    this._includeBrowse = value;
-  }
-  public resetIncludeBrowse() {
-    this._includeBrowse = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get includeBrowseInput() {
-    return this._includeBrowse;
   }
 
   // page_size - computed: false, optional: true, required: false
@@ -593,7 +562,6 @@ export class DataDatabricksSecretUcs extends cdktn.TerraformDataSource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       catalog_name: cdktn.stringToTerraform(this._catalogName),
-      include_browse: cdktn.booleanToTerraform(this._includeBrowse),
       page_size: cdktn.numberToTerraform(this._pageSize),
       provider_config: dataDatabricksSecretUcsProviderConfigToTerraform(this._providerConfig.internalValue),
       schema_name: cdktn.stringToTerraform(this._schemaName),
@@ -607,12 +575,6 @@ export class DataDatabricksSecretUcs extends cdktn.TerraformDataSource {
         isBlock: false,
         type: "simple",
         storageClassType: "string",
-      },
-      include_browse: {
-        value: cdktn.booleanToHclTerraform(this._includeBrowse),
-        isBlock: false,
-        type: "simple",
-        storageClassType: "boolean",
       },
       page_size: {
         value: cdktn.numberToHclTerraform(this._pageSize),

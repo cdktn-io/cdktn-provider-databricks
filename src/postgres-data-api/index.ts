@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/databricks/databricks/1.120.0/docs/resources/postgres_data_api
+// https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/postgres_data_api
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,21 +13,21 @@ import * as cdktn from 'cdktn';
 
 export interface PostgresDataApiConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.120.0/docs/resources/postgres_data_api#parent PostgresDataApi#parent}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/postgres_data_api#parent PostgresDataApi#parent}
   */
   readonly parent: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.120.0/docs/resources/postgres_data_api#provider_config PostgresDataApi#provider_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/postgres_data_api#provider_config PostgresDataApi#provider_config}
   */
   readonly providerConfig?: PostgresDataApiProviderConfig;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.120.0/docs/resources/postgres_data_api#spec PostgresDataApi#spec}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/postgres_data_api#spec PostgresDataApi#spec}
   */
   readonly spec?: PostgresDataApiSpec;
 }
 export interface PostgresDataApiProviderConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.120.0/docs/resources/postgres_data_api#workspace_id PostgresDataApi#workspace_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/postgres_data_api#workspace_id PostgresDataApi#workspace_id}
   */
   readonly workspaceId?: string;
 }
@@ -121,39 +121,39 @@ export class PostgresDataApiProviderConfigOutputReference extends cdktn.ComplexO
 }
 export interface PostgresDataApiSpec {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.120.0/docs/resources/postgres_data_api#db_aggregates_enabled PostgresDataApi#db_aggregates_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/postgres_data_api#db_aggregates_enabled PostgresDataApi#db_aggregates_enabled}
   */
   readonly dbAggregatesEnabled?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.120.0/docs/resources/postgres_data_api#db_extra_search_path PostgresDataApi#db_extra_search_path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/postgres_data_api#db_extra_search_path PostgresDataApi#db_extra_search_path}
   */
   readonly dbExtraSearchPath?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.120.0/docs/resources/postgres_data_api#db_max_rows PostgresDataApi#db_max_rows}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/postgres_data_api#db_max_rows PostgresDataApi#db_max_rows}
   */
   readonly dbMaxRows?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.120.0/docs/resources/postgres_data_api#db_schemas PostgresDataApi#db_schemas}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/postgres_data_api#db_schemas PostgresDataApi#db_schemas}
   */
   readonly dbSchemas?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.120.0/docs/resources/postgres_data_api#jwt_cache_max_lifetime PostgresDataApi#jwt_cache_max_lifetime}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/postgres_data_api#jwt_cache_max_lifetime PostgresDataApi#jwt_cache_max_lifetime}
   */
   readonly jwtCacheMaxLifetime?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.120.0/docs/resources/postgres_data_api#jwt_role_claim_key PostgresDataApi#jwt_role_claim_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/postgres_data_api#jwt_role_claim_key PostgresDataApi#jwt_role_claim_key}
   */
   readonly jwtRoleClaimKey?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.120.0/docs/resources/postgres_data_api#openapi_mode PostgresDataApi#openapi_mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/postgres_data_api#openapi_mode PostgresDataApi#openapi_mode}
   */
   readonly openapiMode?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.120.0/docs/resources/postgres_data_api#server_cors_allowed_origins PostgresDataApi#server_cors_allowed_origins}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/postgres_data_api#server_cors_allowed_origins PostgresDataApi#server_cors_allowed_origins}
   */
   readonly serverCorsAllowedOrigins?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.120.0/docs/resources/postgres_data_api#server_timing_enabled PostgresDataApi#server_timing_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/postgres_data_api#server_timing_enabled PostgresDataApi#server_timing_enabled}
   */
   readonly serverTimingEnabled?: boolean | cdktn.IResolvable;
 }
@@ -583,7 +583,7 @@ export class PostgresDataApiStatusOutputReference extends cdktn.ComplexObject {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.120.0/docs/resources/postgres_data_api databricks_postgres_data_api}
+* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/postgres_data_api databricks_postgres_data_api}
 */
 export class PostgresDataApi extends cdktn.TerraformResource {
 
@@ -599,7 +599,7 @@ export class PostgresDataApi extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a PostgresDataApi resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the PostgresDataApi to import
-  * @param importFromId The id of the existing PostgresDataApi that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.120.0/docs/resources/postgres_data_api#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing PostgresDataApi that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/postgres_data_api#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the PostgresDataApi to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -611,7 +611,7 @@ export class PostgresDataApi extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.120.0/docs/resources/postgres_data_api databricks_postgres_data_api} Resource
+  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/postgres_data_api databricks_postgres_data_api} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -622,7 +622,7 @@ export class PostgresDataApi extends cdktn.TerraformResource {
       terraformResourceType: 'databricks_postgres_data_api',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '1.120.0',
+        providerVersion: '1.121.0',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,
