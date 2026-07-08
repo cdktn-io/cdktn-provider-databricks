@@ -4,7 +4,7 @@
 
 ### SecretUc <a name="SecretUc" id="@cdktn/provider-databricks.secretUc.SecretUc"></a>
 
-Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.120.0/docs/resources/secret_uc databricks_secret_uc}.
+Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/secret_uc databricks_secret_uc}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.secretUc.SecretUc.Initializer"></a>
 
@@ -43,14 +43,14 @@ secretUc.SecretUc(
 | <code><a href="#@cdktn/provider-databricks.secretUc.SecretUc.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.secretUc.SecretUc.Initializer.parameter.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.secretUc.SecretUc.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-databricks.secretUc.SecretUc.Initializer.parameter.catalogName">catalog_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.120.0/docs/resources/secret_uc#catalog_name SecretUc#catalog_name}. |
-| <code><a href="#@cdktn/provider-databricks.secretUc.SecretUc.Initializer.parameter.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.120.0/docs/resources/secret_uc#name SecretUc#name}. |
-| <code><a href="#@cdktn/provider-databricks.secretUc.SecretUc.Initializer.parameter.schemaName">schema_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.120.0/docs/resources/secret_uc#schema_name SecretUc#schema_name}. |
-| <code><a href="#@cdktn/provider-databricks.secretUc.SecretUc.Initializer.parameter.value">value</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.120.0/docs/resources/secret_uc#value SecretUc#value}. |
-| <code><a href="#@cdktn/provider-databricks.secretUc.SecretUc.Initializer.parameter.comment">comment</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.120.0/docs/resources/secret_uc#comment SecretUc#comment}. |
-| <code><a href="#@cdktn/provider-databricks.secretUc.SecretUc.Initializer.parameter.expireTime">expire_time</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.120.0/docs/resources/secret_uc#expire_time SecretUc#expire_time}. |
-| <code><a href="#@cdktn/provider-databricks.secretUc.SecretUc.Initializer.parameter.owner">owner</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.120.0/docs/resources/secret_uc#owner SecretUc#owner}. |
-| <code><a href="#@cdktn/provider-databricks.secretUc.SecretUc.Initializer.parameter.providerConfig">provider_config</a></code> | <code><a href="#@cdktn/provider-databricks.secretUc.SecretUcProviderConfig">SecretUcProviderConfig</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.120.0/docs/resources/secret_uc#provider_config SecretUc#provider_config}. |
+| <code><a href="#@cdktn/provider-databricks.secretUc.SecretUc.Initializer.parameter.catalogName">catalog_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/secret_uc#catalog_name SecretUc#catalog_name}. |
+| <code><a href="#@cdktn/provider-databricks.secretUc.SecretUc.Initializer.parameter.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/secret_uc#name SecretUc#name}. |
+| <code><a href="#@cdktn/provider-databricks.secretUc.SecretUc.Initializer.parameter.schemaName">schema_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/secret_uc#schema_name SecretUc#schema_name}. |
+| <code><a href="#@cdktn/provider-databricks.secretUc.SecretUc.Initializer.parameter.value">value</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/secret_uc#value SecretUc#value}. |
+| <code><a href="#@cdktn/provider-databricks.secretUc.SecretUc.Initializer.parameter.comment">comment</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/secret_uc#comment SecretUc#comment}. |
+| <code><a href="#@cdktn/provider-databricks.secretUc.SecretUc.Initializer.parameter.expireTime">expire_time</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/secret_uc#expire_time SecretUc#expire_time}. |
+| <code><a href="#@cdktn/provider-databricks.secretUc.SecretUc.Initializer.parameter.owner">owner</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/secret_uc#owner SecretUc#owner}. |
+| <code><a href="#@cdktn/provider-databricks.secretUc.SecretUc.Initializer.parameter.providerConfig">provider_config</a></code> | <code><a href="#@cdktn/provider-databricks.secretUc.SecretUcProviderConfig">SecretUcProviderConfig</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/secret_uc#provider_config SecretUc#provider_config}. |
 
 ---
 
@@ -118,7 +118,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.120.0/docs/resources/secret_uc#catalog_name SecretUc#catalog_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/secret_uc#catalog_name SecretUc#catalog_name}.
 
 ---
 
@@ -126,7 +126,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.120.0/docs/resources/secret_uc#name SecretUc#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/secret_uc#name SecretUc#name}.
 
 ---
 
@@ -134,7 +134,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.120.0/docs/resources/secret_uc#schema_name SecretUc#schema_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/secret_uc#schema_name SecretUc#schema_name}.
 
 ---
 
@@ -142,7 +142,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.120.0/docs/resources/secret_uc#value SecretUc#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/secret_uc#value SecretUc#value}.
 
 ---
 
@@ -150,7 +150,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.120.0/docs/resources/secret_uc#comment SecretUc#comment}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/secret_uc#comment SecretUc#comment}.
 
 ---
 
@@ -158,7 +158,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.120.0/docs/resources/secret_uc#expire_time SecretUc#expire_time}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/secret_uc#expire_time SecretUc#expire_time}.
 
 ---
 
@@ -166,7 +166,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.120.0/docs/resources/secret_uc#owner SecretUc#owner}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/secret_uc#owner SecretUc#owner}.
 
 ---
 
@@ -174,7 +174,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* <a href="#@cdktn/provider-databricks.secretUc.SecretUcProviderConfig">SecretUcProviderConfig</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.120.0/docs/resources/secret_uc#provider_config SecretUc#provider_config}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/secret_uc#provider_config SecretUc#provider_config}.
 
 ---
 
@@ -574,7 +574,7 @@ def put_provider_config(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.120.0/docs/resources/secret_uc#workspace_id SecretUc#workspace_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/secret_uc#workspace_id SecretUc#workspace_id}.
 
 ---
 
@@ -716,7 +716,7 @@ The construct id used in the generated config for the SecretUc to import.
 
 The id of the existing SecretUc that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.120.0/docs/resources/secret_uc#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/secret_uc#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -746,12 +746,10 @@ Refer to the {@link https://registry.terraform.io/providers/databricks/databrick
 | <code><a href="#@cdktn/provider-databricks.secretUc.SecretUc.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.secretUc.SecretUc.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.secretUc.SecretUc.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-databricks.secretUc.SecretUc.property.browseOnly">browse_only</a></code> | <code>cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.secretUc.SecretUc.property.createdBy">created_by</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.secretUc.SecretUc.property.createTime">create_time</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.secretUc.SecretUc.property.effectiveOwner">effective_owner</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.secretUc.SecretUc.property.effectiveValue">effective_value</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-databricks.secretUc.SecretUc.property.externalSecretId">external_secret_id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.secretUc.SecretUc.property.fullName">full_name</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.secretUc.SecretUc.property.metastoreId">metastore_id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.secretUc.SecretUc.property.providerConfig">provider_config</a></code> | <code><a href="#@cdktn/provider-databricks.secretUc.SecretUcProviderConfigOutputReference">SecretUcProviderConfigOutputReference</a></code> | *No description.* |
@@ -917,16 +915,6 @@ provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecPro
 
 ---
 
-##### `browse_only`<sup>Required</sup> <a name="browse_only" id="@cdktn/provider-databricks.secretUc.SecretUc.property.browseOnly"></a>
-
-```python
-browse_only: IResolvable
-```
-
-- *Type:* cdktn.IResolvable
-
----
-
 ##### `created_by`<sup>Required</sup> <a name="created_by" id="@cdktn/provider-databricks.secretUc.SecretUc.property.createdBy"></a>
 
 ```python
@@ -961,16 +949,6 @@ effective_owner: str
 
 ```python
 effective_value: str
-```
-
-- *Type:* str
-
----
-
-##### `external_secret_id`<sup>Required</sup> <a name="external_secret_id" id="@cdktn/provider-databricks.secretUc.SecretUc.property.externalSecretId"></a>
-
-```python
-external_secret_id: str
 ```
 
 - *Type:* str
@@ -1234,14 +1212,14 @@ secretUc.SecretUcConfig(
 | <code><a href="#@cdktn/provider-databricks.secretUc.SecretUcConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.secretUc.SecretUcConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.secretUc.SecretUcConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-databricks.secretUc.SecretUcConfig.property.catalogName">catalog_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.120.0/docs/resources/secret_uc#catalog_name SecretUc#catalog_name}. |
-| <code><a href="#@cdktn/provider-databricks.secretUc.SecretUcConfig.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.120.0/docs/resources/secret_uc#name SecretUc#name}. |
-| <code><a href="#@cdktn/provider-databricks.secretUc.SecretUcConfig.property.schemaName">schema_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.120.0/docs/resources/secret_uc#schema_name SecretUc#schema_name}. |
-| <code><a href="#@cdktn/provider-databricks.secretUc.SecretUcConfig.property.value">value</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.120.0/docs/resources/secret_uc#value SecretUc#value}. |
-| <code><a href="#@cdktn/provider-databricks.secretUc.SecretUcConfig.property.comment">comment</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.120.0/docs/resources/secret_uc#comment SecretUc#comment}. |
-| <code><a href="#@cdktn/provider-databricks.secretUc.SecretUcConfig.property.expireTime">expire_time</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.120.0/docs/resources/secret_uc#expire_time SecretUc#expire_time}. |
-| <code><a href="#@cdktn/provider-databricks.secretUc.SecretUcConfig.property.owner">owner</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.120.0/docs/resources/secret_uc#owner SecretUc#owner}. |
-| <code><a href="#@cdktn/provider-databricks.secretUc.SecretUcConfig.property.providerConfig">provider_config</a></code> | <code><a href="#@cdktn/provider-databricks.secretUc.SecretUcProviderConfig">SecretUcProviderConfig</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.120.0/docs/resources/secret_uc#provider_config SecretUc#provider_config}. |
+| <code><a href="#@cdktn/provider-databricks.secretUc.SecretUcConfig.property.catalogName">catalog_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/secret_uc#catalog_name SecretUc#catalog_name}. |
+| <code><a href="#@cdktn/provider-databricks.secretUc.SecretUcConfig.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/secret_uc#name SecretUc#name}. |
+| <code><a href="#@cdktn/provider-databricks.secretUc.SecretUcConfig.property.schemaName">schema_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/secret_uc#schema_name SecretUc#schema_name}. |
+| <code><a href="#@cdktn/provider-databricks.secretUc.SecretUcConfig.property.value">value</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/secret_uc#value SecretUc#value}. |
+| <code><a href="#@cdktn/provider-databricks.secretUc.SecretUcConfig.property.comment">comment</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/secret_uc#comment SecretUc#comment}. |
+| <code><a href="#@cdktn/provider-databricks.secretUc.SecretUcConfig.property.expireTime">expire_time</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/secret_uc#expire_time SecretUc#expire_time}. |
+| <code><a href="#@cdktn/provider-databricks.secretUc.SecretUcConfig.property.owner">owner</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/secret_uc#owner SecretUc#owner}. |
+| <code><a href="#@cdktn/provider-databricks.secretUc.SecretUcConfig.property.providerConfig">provider_config</a></code> | <code><a href="#@cdktn/provider-databricks.secretUc.SecretUcProviderConfig">SecretUcProviderConfig</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/secret_uc#provider_config SecretUc#provider_config}. |
 
 ---
 
@@ -1323,7 +1301,7 @@ catalog_name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.120.0/docs/resources/secret_uc#catalog_name SecretUc#catalog_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/secret_uc#catalog_name SecretUc#catalog_name}.
 
 ---
 
@@ -1335,7 +1313,7 @@ name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.120.0/docs/resources/secret_uc#name SecretUc#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/secret_uc#name SecretUc#name}.
 
 ---
 
@@ -1347,7 +1325,7 @@ schema_name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.120.0/docs/resources/secret_uc#schema_name SecretUc#schema_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/secret_uc#schema_name SecretUc#schema_name}.
 
 ---
 
@@ -1359,7 +1337,7 @@ value: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.120.0/docs/resources/secret_uc#value SecretUc#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/secret_uc#value SecretUc#value}.
 
 ---
 
@@ -1371,7 +1349,7 @@ comment: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.120.0/docs/resources/secret_uc#comment SecretUc#comment}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/secret_uc#comment SecretUc#comment}.
 
 ---
 
@@ -1383,7 +1361,7 @@ expire_time: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.120.0/docs/resources/secret_uc#expire_time SecretUc#expire_time}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/secret_uc#expire_time SecretUc#expire_time}.
 
 ---
 
@@ -1395,7 +1373,7 @@ owner: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.120.0/docs/resources/secret_uc#owner SecretUc#owner}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/secret_uc#owner SecretUc#owner}.
 
 ---
 
@@ -1407,7 +1385,7 @@ provider_config: SecretUcProviderConfig
 
 - *Type:* <a href="#@cdktn/provider-databricks.secretUc.SecretUcProviderConfig">SecretUcProviderConfig</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.120.0/docs/resources/secret_uc#provider_config SecretUc#provider_config}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/secret_uc#provider_config SecretUc#provider_config}.
 
 ---
 
@@ -1427,7 +1405,7 @@ secretUc.SecretUcProviderConfig(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.secretUc.SecretUcProviderConfig.property.workspaceId">workspace_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.120.0/docs/resources/secret_uc#workspace_id SecretUc#workspace_id}. |
+| <code><a href="#@cdktn/provider-databricks.secretUc.SecretUcProviderConfig.property.workspaceId">workspace_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/secret_uc#workspace_id SecretUc#workspace_id}. |
 
 ---
 
@@ -1439,7 +1417,7 @@ workspace_id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.120.0/docs/resources/secret_uc#workspace_id SecretUc#workspace_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/secret_uc#workspace_id SecretUc#workspace_id}.
 
 ---
 
