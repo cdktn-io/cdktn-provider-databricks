@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/data-sources/user
+// https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/data-sources/user
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,34 +15,34 @@ export interface DataDatabricksUserConfig extends cdktn.TerraformMetaArguments {
   /**
   * Specifies whether to use account-level or workspace-level API. Valid values are `account` and `workspace`. When not set, the API level is inferred from the provider host.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/data-sources/user#api DataDatabricksUser#api}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/data-sources/user#api DataDatabricksUser#api}
   */
   readonly api?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/data-sources/user#id DataDatabricksUser#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/data-sources/user#id DataDatabricksUser#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/data-sources/user#user_id DataDatabricksUser#user_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/data-sources/user#user_id DataDatabricksUser#user_id}
   */
   readonly userId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/data-sources/user#user_name DataDatabricksUser#user_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/data-sources/user#user_name DataDatabricksUser#user_name}
   */
   readonly userName?: string;
   /**
   * provider_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/data-sources/user#provider_config DataDatabricksUser#provider_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/data-sources/user#provider_config DataDatabricksUser#provider_config}
   */
   readonly providerConfig?: DataDatabricksUserProviderConfig;
 }
 export interface DataDatabricksUserProviderConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/data-sources/user#workspace_id DataDatabricksUser#workspace_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/data-sources/user#workspace_id DataDatabricksUser#workspace_id}
   */
   readonly workspaceId?: string;
 }
@@ -126,7 +126,7 @@ export class DataDatabricksUserProviderConfigOutputReference extends cdktn.Compl
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/data-sources/user databricks_user}
+* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/data-sources/user databricks_user}
 */
 export class DataDatabricksUser extends cdktn.TerraformDataSource {
 
@@ -142,7 +142,7 @@ export class DataDatabricksUser extends cdktn.TerraformDataSource {
   * Generates CDKTN code for importing a DataDatabricksUser resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataDatabricksUser to import
-  * @param importFromId The id of the existing DataDatabricksUser that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/data-sources/user#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataDatabricksUser that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/data-sources/user#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataDatabricksUser to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -154,7 +154,7 @@ export class DataDatabricksUser extends cdktn.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/data-sources/user databricks_user} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/data-sources/user databricks_user} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -165,7 +165,7 @@ export class DataDatabricksUser extends cdktn.TerraformDataSource {
       terraformResourceType: 'databricks_user',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '1.121.0',
+        providerVersion: '1.122.0',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,

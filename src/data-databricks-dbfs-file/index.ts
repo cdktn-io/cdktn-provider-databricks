@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/data-sources/dbfs_file
+// https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/data-sources/dbfs_file
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,30 +13,30 @@ import * as cdktn from 'cdktn';
 
 export interface DataDatabricksDbfsFileConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/data-sources/dbfs_file#id DataDatabricksDbfsFile#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/data-sources/dbfs_file#id DataDatabricksDbfsFile#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/data-sources/dbfs_file#limit_file_size DataDatabricksDbfsFile#limit_file_size}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/data-sources/dbfs_file#limit_file_size DataDatabricksDbfsFile#limit_file_size}
   */
   readonly limitFileSize: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/data-sources/dbfs_file#path DataDatabricksDbfsFile#path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/data-sources/dbfs_file#path DataDatabricksDbfsFile#path}
   */
   readonly path: string;
   /**
   * provider_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/data-sources/dbfs_file#provider_config DataDatabricksDbfsFile#provider_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/data-sources/dbfs_file#provider_config DataDatabricksDbfsFile#provider_config}
   */
   readonly providerConfig?: DataDatabricksDbfsFileProviderConfig;
 }
 export interface DataDatabricksDbfsFileProviderConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/data-sources/dbfs_file#workspace_id DataDatabricksDbfsFile#workspace_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/data-sources/dbfs_file#workspace_id DataDatabricksDbfsFile#workspace_id}
   */
   readonly workspaceId?: string;
 }
@@ -120,7 +120,7 @@ export class DataDatabricksDbfsFileProviderConfigOutputReference extends cdktn.C
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/data-sources/dbfs_file databricks_dbfs_file}
+* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/data-sources/dbfs_file databricks_dbfs_file}
 */
 export class DataDatabricksDbfsFile extends cdktn.TerraformDataSource {
 
@@ -136,7 +136,7 @@ export class DataDatabricksDbfsFile extends cdktn.TerraformDataSource {
   * Generates CDKTN code for importing a DataDatabricksDbfsFile resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataDatabricksDbfsFile to import
-  * @param importFromId The id of the existing DataDatabricksDbfsFile that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/data-sources/dbfs_file#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataDatabricksDbfsFile that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/data-sources/dbfs_file#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataDatabricksDbfsFile to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -148,7 +148,7 @@ export class DataDatabricksDbfsFile extends cdktn.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/data-sources/dbfs_file databricks_dbfs_file} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/data-sources/dbfs_file databricks_dbfs_file} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -159,7 +159,7 @@ export class DataDatabricksDbfsFile extends cdktn.TerraformDataSource {
       terraformResourceType: 'databricks_dbfs_file',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '1.121.0',
+        providerVersion: '1.122.0',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,
