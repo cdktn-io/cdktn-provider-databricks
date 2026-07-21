@@ -4,7 +4,7 @@
 
 ### EnvironmentsDefaultWorkspaceBaseEnvironment <a name="EnvironmentsDefaultWorkspaceBaseEnvironment" id="@cdktn/provider-databricks.environmentsDefaultWorkspaceBaseEnvironment.EnvironmentsDefaultWorkspaceBaseEnvironment"></a>
 
-Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/environments_default_workspace_base_environment databricks_environments_default_workspace_base_environment}.
+Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/environments_default_workspace_base_environment databricks_environments_default_workspace_base_environment}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.environmentsDefaultWorkspaceBaseEnvironment.EnvironmentsDefaultWorkspaceBaseEnvironment.Initializer"></a>
 
@@ -36,9 +36,9 @@ EnvironmentsDefaultWorkspaceBaseEnvironment.Builder.create(Construct scope, java
 | <code><a href="#@cdktn/provider-databricks.environmentsDefaultWorkspaceBaseEnvironment.EnvironmentsDefaultWorkspaceBaseEnvironment.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>io.cdktn.cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.environmentsDefaultWorkspaceBaseEnvironment.EnvironmentsDefaultWorkspaceBaseEnvironment.Initializer.parameter.provider">provider</a></code> | <code>io.cdktn.cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.environmentsDefaultWorkspaceBaseEnvironment.EnvironmentsDefaultWorkspaceBaseEnvironment.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktn/provider-databricks.environmentsDefaultWorkspaceBaseEnvironment.EnvironmentsDefaultWorkspaceBaseEnvironment.Initializer.parameter.cpuWorkspaceBaseEnvironment">cpuWorkspaceBaseEnvironment</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/environments_default_workspace_base_environment#cpu_workspace_base_environment EnvironmentsDefaultWorkspaceBaseEnvironment#cpu_workspace_base_environment}. |
-| <code><a href="#@cdktn/provider-databricks.environmentsDefaultWorkspaceBaseEnvironment.EnvironmentsDefaultWorkspaceBaseEnvironment.Initializer.parameter.gpuWorkspaceBaseEnvironment">gpuWorkspaceBaseEnvironment</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/environments_default_workspace_base_environment#gpu_workspace_base_environment EnvironmentsDefaultWorkspaceBaseEnvironment#gpu_workspace_base_environment}. |
-| <code><a href="#@cdktn/provider-databricks.environmentsDefaultWorkspaceBaseEnvironment.EnvironmentsDefaultWorkspaceBaseEnvironment.Initializer.parameter.providerConfig">providerConfig</a></code> | <code><a href="#@cdktn/provider-databricks.environmentsDefaultWorkspaceBaseEnvironment.EnvironmentsDefaultWorkspaceBaseEnvironmentProviderConfig">EnvironmentsDefaultWorkspaceBaseEnvironmentProviderConfig</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/environments_default_workspace_base_environment#provider_config EnvironmentsDefaultWorkspaceBaseEnvironment#provider_config}. |
+| <code><a href="#@cdktn/provider-databricks.environmentsDefaultWorkspaceBaseEnvironment.EnvironmentsDefaultWorkspaceBaseEnvironment.Initializer.parameter.cpuWorkspaceBaseEnvironment">cpuWorkspaceBaseEnvironment</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/environments_default_workspace_base_environment#cpu_workspace_base_environment EnvironmentsDefaultWorkspaceBaseEnvironment#cpu_workspace_base_environment}. |
+| <code><a href="#@cdktn/provider-databricks.environmentsDefaultWorkspaceBaseEnvironment.EnvironmentsDefaultWorkspaceBaseEnvironment.Initializer.parameter.gpuWorkspaceBaseEnvironment">gpuWorkspaceBaseEnvironment</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/environments_default_workspace_base_environment#gpu_workspace_base_environment EnvironmentsDefaultWorkspaceBaseEnvironment#gpu_workspace_base_environment}. |
+| <code><a href="#@cdktn/provider-databricks.environmentsDefaultWorkspaceBaseEnvironment.EnvironmentsDefaultWorkspaceBaseEnvironment.Initializer.parameter.providerConfig">providerConfig</a></code> | <code><a href="#@cdktn/provider-databricks.environmentsDefaultWorkspaceBaseEnvironment.EnvironmentsDefaultWorkspaceBaseEnvironmentProviderConfig">EnvironmentsDefaultWorkspaceBaseEnvironmentProviderConfig</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/environments_default_workspace_base_environment#provider_config EnvironmentsDefaultWorkspaceBaseEnvironment#provider_config}. |
 
 ---
 
@@ -106,7 +106,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/environments_default_workspace_base_environment#cpu_workspace_base_environment EnvironmentsDefaultWorkspaceBaseEnvironment#cpu_workspace_base_environment}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/environments_default_workspace_base_environment#cpu_workspace_base_environment EnvironmentsDefaultWorkspaceBaseEnvironment#cpu_workspace_base_environment}.
 
 ---
 
@@ -114,7 +114,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/environments_default_workspace_base_environment#gpu_workspace_base_environment EnvironmentsDefaultWorkspaceBaseEnvironment#gpu_workspace_base_environment}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/environments_default_workspace_base_environment#gpu_workspace_base_environment EnvironmentsDefaultWorkspaceBaseEnvironment#gpu_workspace_base_environment}.
 
 ---
 
@@ -122,7 +122,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* <a href="#@cdktn/provider-databricks.environmentsDefaultWorkspaceBaseEnvironment.EnvironmentsDefaultWorkspaceBaseEnvironmentProviderConfig">EnvironmentsDefaultWorkspaceBaseEnvironmentProviderConfig</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/environments_default_workspace_base_environment#provider_config EnvironmentsDefaultWorkspaceBaseEnvironment#provider_config}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/environments_default_workspace_base_environment#provider_config EnvironmentsDefaultWorkspaceBaseEnvironment#provider_config}.
 
 ---
 
@@ -605,7 +605,7 @@ The construct id used in the generated config for the EnvironmentsDefaultWorkspa
 
 The id of the existing EnvironmentsDefaultWorkspaceBaseEnvironment that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/environments_default_workspace_base_environment#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/environments_default_workspace_base_environment#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -909,9 +909,9 @@ EnvironmentsDefaultWorkspaceBaseEnvironmentConfig.builder()
 | <code><a href="#@cdktn/provider-databricks.environmentsDefaultWorkspaceBaseEnvironment.EnvironmentsDefaultWorkspaceBaseEnvironmentConfig.property.lifecycle">lifecycle</a></code> | <code>io.cdktn.cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.environmentsDefaultWorkspaceBaseEnvironment.EnvironmentsDefaultWorkspaceBaseEnvironmentConfig.property.provider">provider</a></code> | <code>io.cdktn.cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.environmentsDefaultWorkspaceBaseEnvironment.EnvironmentsDefaultWorkspaceBaseEnvironmentConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktn/provider-databricks.environmentsDefaultWorkspaceBaseEnvironment.EnvironmentsDefaultWorkspaceBaseEnvironmentConfig.property.cpuWorkspaceBaseEnvironment">cpuWorkspaceBaseEnvironment</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/environments_default_workspace_base_environment#cpu_workspace_base_environment EnvironmentsDefaultWorkspaceBaseEnvironment#cpu_workspace_base_environment}. |
-| <code><a href="#@cdktn/provider-databricks.environmentsDefaultWorkspaceBaseEnvironment.EnvironmentsDefaultWorkspaceBaseEnvironmentConfig.property.gpuWorkspaceBaseEnvironment">gpuWorkspaceBaseEnvironment</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/environments_default_workspace_base_environment#gpu_workspace_base_environment EnvironmentsDefaultWorkspaceBaseEnvironment#gpu_workspace_base_environment}. |
-| <code><a href="#@cdktn/provider-databricks.environmentsDefaultWorkspaceBaseEnvironment.EnvironmentsDefaultWorkspaceBaseEnvironmentConfig.property.providerConfig">providerConfig</a></code> | <code><a href="#@cdktn/provider-databricks.environmentsDefaultWorkspaceBaseEnvironment.EnvironmentsDefaultWorkspaceBaseEnvironmentProviderConfig">EnvironmentsDefaultWorkspaceBaseEnvironmentProviderConfig</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/environments_default_workspace_base_environment#provider_config EnvironmentsDefaultWorkspaceBaseEnvironment#provider_config}. |
+| <code><a href="#@cdktn/provider-databricks.environmentsDefaultWorkspaceBaseEnvironment.EnvironmentsDefaultWorkspaceBaseEnvironmentConfig.property.cpuWorkspaceBaseEnvironment">cpuWorkspaceBaseEnvironment</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/environments_default_workspace_base_environment#cpu_workspace_base_environment EnvironmentsDefaultWorkspaceBaseEnvironment#cpu_workspace_base_environment}. |
+| <code><a href="#@cdktn/provider-databricks.environmentsDefaultWorkspaceBaseEnvironment.EnvironmentsDefaultWorkspaceBaseEnvironmentConfig.property.gpuWorkspaceBaseEnvironment">gpuWorkspaceBaseEnvironment</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/environments_default_workspace_base_environment#gpu_workspace_base_environment EnvironmentsDefaultWorkspaceBaseEnvironment#gpu_workspace_base_environment}. |
+| <code><a href="#@cdktn/provider-databricks.environmentsDefaultWorkspaceBaseEnvironment.EnvironmentsDefaultWorkspaceBaseEnvironmentConfig.property.providerConfig">providerConfig</a></code> | <code><a href="#@cdktn/provider-databricks.environmentsDefaultWorkspaceBaseEnvironment.EnvironmentsDefaultWorkspaceBaseEnvironmentProviderConfig">EnvironmentsDefaultWorkspaceBaseEnvironmentProviderConfig</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/environments_default_workspace_base_environment#provider_config EnvironmentsDefaultWorkspaceBaseEnvironment#provider_config}. |
 
 ---
 
@@ -993,7 +993,7 @@ public java.lang.String getCpuWorkspaceBaseEnvironment();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/environments_default_workspace_base_environment#cpu_workspace_base_environment EnvironmentsDefaultWorkspaceBaseEnvironment#cpu_workspace_base_environment}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/environments_default_workspace_base_environment#cpu_workspace_base_environment EnvironmentsDefaultWorkspaceBaseEnvironment#cpu_workspace_base_environment}.
 
 ---
 
@@ -1005,7 +1005,7 @@ public java.lang.String getGpuWorkspaceBaseEnvironment();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/environments_default_workspace_base_environment#gpu_workspace_base_environment EnvironmentsDefaultWorkspaceBaseEnvironment#gpu_workspace_base_environment}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/environments_default_workspace_base_environment#gpu_workspace_base_environment EnvironmentsDefaultWorkspaceBaseEnvironment#gpu_workspace_base_environment}.
 
 ---
 
@@ -1017,7 +1017,7 @@ public EnvironmentsDefaultWorkspaceBaseEnvironmentProviderConfig getProviderConf
 
 - *Type:* <a href="#@cdktn/provider-databricks.environmentsDefaultWorkspaceBaseEnvironment.EnvironmentsDefaultWorkspaceBaseEnvironmentProviderConfig">EnvironmentsDefaultWorkspaceBaseEnvironmentProviderConfig</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/environments_default_workspace_base_environment#provider_config EnvironmentsDefaultWorkspaceBaseEnvironment#provider_config}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/environments_default_workspace_base_environment#provider_config EnvironmentsDefaultWorkspaceBaseEnvironment#provider_config}.
 
 ---
 
@@ -1037,7 +1037,7 @@ EnvironmentsDefaultWorkspaceBaseEnvironmentProviderConfig.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.environmentsDefaultWorkspaceBaseEnvironment.EnvironmentsDefaultWorkspaceBaseEnvironmentProviderConfig.property.workspaceId">workspaceId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/environments_default_workspace_base_environment#workspace_id EnvironmentsDefaultWorkspaceBaseEnvironment#workspace_id}. |
+| <code><a href="#@cdktn/provider-databricks.environmentsDefaultWorkspaceBaseEnvironment.EnvironmentsDefaultWorkspaceBaseEnvironmentProviderConfig.property.workspaceId">workspaceId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/environments_default_workspace_base_environment#workspace_id EnvironmentsDefaultWorkspaceBaseEnvironment#workspace_id}. |
 
 ---
 
@@ -1049,7 +1049,7 @@ public java.lang.String getWorkspaceId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/environments_default_workspace_base_environment#workspace_id EnvironmentsDefaultWorkspaceBaseEnvironment#workspace_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/environments_default_workspace_base_environment#workspace_id EnvironmentsDefaultWorkspaceBaseEnvironment#workspace_id}.
 
 ---
 

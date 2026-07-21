@@ -4,7 +4,7 @@
 
 ### DataDatabricksWorkspaceNetworkOption <a name="DataDatabricksWorkspaceNetworkOption" id="@cdktn/provider-databricks.dataDatabricksWorkspaceNetworkOption.DataDatabricksWorkspaceNetworkOption"></a>
 
-Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/data-sources/workspace_network_option databricks_workspace_network_option}.
+Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/data-sources/workspace_network_option databricks_workspace_network_option}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksWorkspaceNetworkOption.DataDatabricksWorkspaceNetworkOption.Initializer"></a>
 
@@ -387,7 +387,7 @@ The construct id used in the generated config for the DataDatabricksWorkspaceNet
 
 The id of the existing DataDatabricksWorkspaceNetworkOption that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/data-sources/workspace_network_option#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/data-sources/workspace_network_option#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -614,7 +614,7 @@ const dataDatabricksWorkspaceNetworkOptionConfig: dataDatabricksWorkspaceNetwork
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceNetworkOption.DataDatabricksWorkspaceNetworkOptionConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceNetworkOption.DataDatabricksWorkspaceNetworkOptionConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceNetworkOption.DataDatabricksWorkspaceNetworkOptionConfig.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceNetworkOption.DataDatabricksWorkspaceNetworkOptionConfig.property.workspaceId">workspaceId</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/data-sources/workspace_network_option#workspace_id DataDatabricksWorkspaceNetworkOption#workspace_id}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceNetworkOption.DataDatabricksWorkspaceNetworkOptionConfig.property.workspaceId">workspaceId</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/data-sources/workspace_network_option#workspace_id DataDatabricksWorkspaceNetworkOption#workspace_id}. |
 
 ---
 
@@ -696,7 +696,7 @@ public readonly workspaceId: number;
 
 - *Type:* number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/data-sources/workspace_network_option#workspace_id DataDatabricksWorkspaceNetworkOption#workspace_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/data-sources/workspace_network_option#workspace_id DataDatabricksWorkspaceNetworkOption#workspace_id}.
 
 ---
 

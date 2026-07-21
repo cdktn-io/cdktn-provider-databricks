@@ -4,7 +4,7 @@
 
 ### ModelServing <a name="ModelServing" id="@cdktn/provider-databricks.modelServing.ModelServing"></a>
 
-Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/model_serving databricks_model_serving}.
+Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/model_serving databricks_model_serving}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.modelServing.ModelServing.Initializer"></a>
 
@@ -48,16 +48,16 @@ modelServing.ModelServing(
 | <code><a href="#@cdktn/provider-databricks.modelServing.ModelServing.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.modelServing.ModelServing.Initializer.parameter.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.modelServing.ModelServing.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-databricks.modelServing.ModelServing.Initializer.parameter.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/model_serving#name ModelServing#name}. |
+| <code><a href="#@cdktn/provider-databricks.modelServing.ModelServing.Initializer.parameter.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/model_serving#name ModelServing#name}. |
 | <code><a href="#@cdktn/provider-databricks.modelServing.ModelServing.Initializer.parameter.aiGateway">ai_gateway</a></code> | <code><a href="#@cdktn/provider-databricks.modelServing.ModelServingAiGateway">ModelServingAiGateway</a></code> | ai_gateway block. |
-| <code><a href="#@cdktn/provider-databricks.modelServing.ModelServing.Initializer.parameter.budgetPolicyId">budget_policy_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/model_serving#budget_policy_id ModelServing#budget_policy_id}. |
+| <code><a href="#@cdktn/provider-databricks.modelServing.ModelServing.Initializer.parameter.budgetPolicyId">budget_policy_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/model_serving#budget_policy_id ModelServing#budget_policy_id}. |
 | <code><a href="#@cdktn/provider-databricks.modelServing.ModelServing.Initializer.parameter.config">config</a></code> | <code><a href="#@cdktn/provider-databricks.modelServing.ModelServingConfigA">ModelServingConfigA</a></code> | config block. |
-| <code><a href="#@cdktn/provider-databricks.modelServing.ModelServing.Initializer.parameter.description">description</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/model_serving#description ModelServing#description}. |
+| <code><a href="#@cdktn/provider-databricks.modelServing.ModelServing.Initializer.parameter.description">description</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/model_serving#description ModelServing#description}. |
 | <code><a href="#@cdktn/provider-databricks.modelServing.ModelServing.Initializer.parameter.emailNotifications">email_notifications</a></code> | <code><a href="#@cdktn/provider-databricks.modelServing.ModelServingEmailNotifications">ModelServingEmailNotifications</a></code> | email_notifications block. |
-| <code><a href="#@cdktn/provider-databricks.modelServing.ModelServing.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/model_serving#id ModelServing#id}. |
+| <code><a href="#@cdktn/provider-databricks.modelServing.ModelServing.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/model_serving#id ModelServing#id}. |
 | <code><a href="#@cdktn/provider-databricks.modelServing.ModelServing.Initializer.parameter.providerConfig">provider_config</a></code> | <code><a href="#@cdktn/provider-databricks.modelServing.ModelServingProviderConfig">ModelServingProviderConfig</a></code> | provider_config block. |
 | <code><a href="#@cdktn/provider-databricks.modelServing.ModelServing.Initializer.parameter.rateLimits">rate_limits</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-databricks.modelServing.ModelServingRateLimits">ModelServingRateLimits</a>]</code> | rate_limits block. |
-| <code><a href="#@cdktn/provider-databricks.modelServing.ModelServing.Initializer.parameter.routeOptimized">route_optimized</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/model_serving#route_optimized ModelServing#route_optimized}. |
+| <code><a href="#@cdktn/provider-databricks.modelServing.ModelServing.Initializer.parameter.routeOptimized">route_optimized</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/model_serving#route_optimized ModelServing#route_optimized}. |
 | <code><a href="#@cdktn/provider-databricks.modelServing.ModelServing.Initializer.parameter.tags">tags</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-databricks.modelServing.ModelServingTags">ModelServingTags</a>]</code> | tags block. |
 | <code><a href="#@cdktn/provider-databricks.modelServing.ModelServing.Initializer.parameter.telemetryConfig">telemetry_config</a></code> | <code><a href="#@cdktn/provider-databricks.modelServing.ModelServingTelemetryConfig">ModelServingTelemetryConfig</a></code> | telemetry_config block. |
 | <code><a href="#@cdktn/provider-databricks.modelServing.ModelServing.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-databricks.modelServing.ModelServingTimeouts">ModelServingTimeouts</a></code> | timeouts block. |
@@ -128,7 +128,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/model_serving#name ModelServing#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/model_serving#name ModelServing#name}.
 
 ---
 
@@ -138,7 +138,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 ai_gateway block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/model_serving#ai_gateway ModelServing#ai_gateway}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/model_serving#ai_gateway ModelServing#ai_gateway}
 
 ---
 
@@ -146,7 +146,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/model_serving#budget_policy_id ModelServing#budget_policy_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/model_serving#budget_policy_id ModelServing#budget_policy_id}.
 
 ---
 
@@ -156,7 +156,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/model_serving#config ModelServing#config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/model_serving#config ModelServing#config}
 
 ---
 
@@ -164,7 +164,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/model_serving#description ModelServing#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/model_serving#description ModelServing#description}.
 
 ---
 
@@ -174,7 +174,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 email_notifications block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/model_serving#email_notifications ModelServing#email_notifications}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/model_serving#email_notifications ModelServing#email_notifications}
 
 ---
 
@@ -182,7 +182,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/model_serving#id ModelServing#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/model_serving#id ModelServing#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -195,7 +195,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 provider_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/model_serving#provider_config ModelServing#provider_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/model_serving#provider_config ModelServing#provider_config}
 
 ---
 
@@ -205,7 +205,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 rate_limits block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/model_serving#rate_limits ModelServing#rate_limits}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/model_serving#rate_limits ModelServing#rate_limits}
 
 ---
 
@@ -213,7 +213,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* bool | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/model_serving#route_optimized ModelServing#route_optimized}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/model_serving#route_optimized ModelServing#route_optimized}.
 
 ---
 
@@ -223,7 +223,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 tags block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/model_serving#tags ModelServing#tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/model_serving#tags ModelServing#tags}
 
 ---
 
@@ -233,7 +233,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 telemetry_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/model_serving#telemetry_config ModelServing#telemetry_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/model_serving#telemetry_config ModelServing#telemetry_config}
 
 ---
 
@@ -243,7 +243,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/model_serving#timeouts ModelServing#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/model_serving#timeouts ModelServing#timeouts}
 
 ---
 
@@ -664,7 +664,7 @@ def put_ai_gateway(
 
 fallback_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/model_serving#fallback_config ModelServing#fallback_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/model_serving#fallback_config ModelServing#fallback_config}
 
 ---
 
@@ -674,7 +674,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 guardrails block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/model_serving#guardrails ModelServing#guardrails}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/model_serving#guardrails ModelServing#guardrails}
 
 ---
 
@@ -684,7 +684,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 inference_table_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/model_serving#inference_table_config ModelServing#inference_table_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/model_serving#inference_table_config ModelServing#inference_table_config}
 
 ---
 
@@ -694,7 +694,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 rate_limits block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/model_serving#rate_limits ModelServing#rate_limits}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/model_serving#rate_limits ModelServing#rate_limits}
 
 ---
 
@@ -704,7 +704,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 usage_tracking_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/model_serving#usage_tracking_config ModelServing#usage_tracking_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/model_serving#usage_tracking_config ModelServing#usage_tracking_config}
 
 ---
 
@@ -725,7 +725,7 @@ def put_config(
 
 auto_capture_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/model_serving#auto_capture_config ModelServing#auto_capture_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/model_serving#auto_capture_config ModelServing#auto_capture_config}
 
 ---
 
@@ -735,7 +735,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 served_entities block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/model_serving#served_entities ModelServing#served_entities}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/model_serving#served_entities ModelServing#served_entities}
 
 ---
 
@@ -745,7 +745,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 served_models block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/model_serving#served_models ModelServing#served_models}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/model_serving#served_models ModelServing#served_models}
 
 ---
 
@@ -755,7 +755,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 traffic_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/model_serving#traffic_config ModelServing#traffic_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/model_serving#traffic_config ModelServing#traffic_config}
 
 ---
 
@@ -772,7 +772,7 @@ def put_email_notifications(
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/model_serving#on_update_failure ModelServing#on_update_failure}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/model_serving#on_update_failure ModelServing#on_update_failure}.
 
 ---
 
@@ -780,7 +780,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/model_serving#on_update_success ModelServing#on_update_success}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/model_serving#on_update_success ModelServing#on_update_success}.
 
 ---
 
@@ -796,7 +796,7 @@ def put_provider_config(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/model_serving#workspace_id ModelServing#workspace_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/model_serving#workspace_id ModelServing#workspace_id}.
 
 ---
 
@@ -842,7 +842,7 @@ def put_telemetry_config(
 
 inference_table_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/model_serving#inference_table_config ModelServing#inference_table_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/model_serving#inference_table_config ModelServing#inference_table_config}
 
 ---
 
@@ -859,7 +859,7 @@ def put_timeouts(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/model_serving#create ModelServing#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/model_serving#create ModelServing#create}.
 
 ---
 
@@ -867,7 +867,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/model_serving#update ModelServing#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/model_serving#update ModelServing#update}.
 
 ---
 
@@ -1057,7 +1057,7 @@ The construct id used in the generated config for the ModelServing to import.
 
 The id of the existing ModelServing that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/model_serving#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/model_serving#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1598,7 +1598,7 @@ fallback_config: ModelServingAiGatewayFallbackConfig
 
 fallback_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/model_serving#fallback_config ModelServing#fallback_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/model_serving#fallback_config ModelServing#fallback_config}
 
 ---
 
@@ -1612,7 +1612,7 @@ guardrails: ModelServingAiGatewayGuardrails
 
 guardrails block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/model_serving#guardrails ModelServing#guardrails}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/model_serving#guardrails ModelServing#guardrails}
 
 ---
 
@@ -1626,7 +1626,7 @@ inference_table_config: ModelServingAiGatewayInferenceTableConfig
 
 inference_table_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/model_serving#inference_table_config ModelServing#inference_table_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/model_serving#inference_table_config ModelServing#inference_table_config}
 
 ---
 
@@ -1640,7 +1640,7 @@ rate_limits: IResolvable | typing.List[ModelServingAiGatewayRateLimits]
 
 rate_limits block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/model_serving#rate_limits ModelServing#rate_limits}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/model_serving#rate_limits ModelServing#rate_limits}
 
 ---
 
@@ -1654,7 +1654,7 @@ usage_tracking_config: ModelServingAiGatewayUsageTrackingConfig
 
 usage_tracking_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/model_serving#usage_tracking_config ModelServing#usage_tracking_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/model_serving#usage_tracking_config ModelServing#usage_tracking_config}
 
 ---
 
@@ -1674,7 +1674,7 @@ modelServing.ModelServingAiGatewayFallbackConfig(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.modelServing.ModelServingAiGatewayFallbackConfig.property.enabled">enabled</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/model_serving#enabled ModelServing#enabled}. |
+| <code><a href="#@cdktn/provider-databricks.modelServing.ModelServingAiGatewayFallbackConfig.property.enabled">enabled</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/model_serving#enabled ModelServing#enabled}. |
 
 ---
 
@@ -1686,7 +1686,7 @@ enabled: bool | IResolvable
 
 - *Type:* bool | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/model_serving#enabled ModelServing#enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/model_serving#enabled ModelServing#enabled}.
 
 ---
 
@@ -1722,7 +1722,7 @@ input: ModelServingAiGatewayGuardrailsInput
 
 input block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/model_serving#input ModelServing#input}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/model_serving#input ModelServing#input}
 
 ---
 
@@ -1736,7 +1736,7 @@ output: ModelServingAiGatewayGuardrailsOutput
 
 output block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/model_serving#output ModelServing#output}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/model_serving#output ModelServing#output}
 
 ---
 
@@ -1759,10 +1759,10 @@ modelServing.ModelServingAiGatewayGuardrailsInput(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.modelServing.ModelServingAiGatewayGuardrailsInput.property.invalidKeywords">invalid_keywords</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/model_serving#invalid_keywords ModelServing#invalid_keywords}. |
+| <code><a href="#@cdktn/provider-databricks.modelServing.ModelServingAiGatewayGuardrailsInput.property.invalidKeywords">invalid_keywords</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/model_serving#invalid_keywords ModelServing#invalid_keywords}. |
 | <code><a href="#@cdktn/provider-databricks.modelServing.ModelServingAiGatewayGuardrailsInput.property.pii">pii</a></code> | <code><a href="#@cdktn/provider-databricks.modelServing.ModelServingAiGatewayGuardrailsInputPii">ModelServingAiGatewayGuardrailsInputPii</a></code> | pii block. |
-| <code><a href="#@cdktn/provider-databricks.modelServing.ModelServingAiGatewayGuardrailsInput.property.safety">safety</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/model_serving#safety ModelServing#safety}. |
-| <code><a href="#@cdktn/provider-databricks.modelServing.ModelServingAiGatewayGuardrailsInput.property.validTopics">valid_topics</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/model_serving#valid_topics ModelServing#valid_topics}. |
+| <code><a href="#@cdktn/provider-databricks.modelServing.ModelServingAiGatewayGuardrailsInput.property.safety">safety</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/model_serving#safety ModelServing#safety}. |
+| <code><a href="#@cdktn/provider-databricks.modelServing.ModelServingAiGatewayGuardrailsInput.property.validTopics">valid_topics</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/model_serving#valid_topics ModelServing#valid_topics}. |
 
 ---
 
@@ -1774,7 +1774,7 @@ invalid_keywords: typing.List[str]
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/model_serving#invalid_keywords ModelServing#invalid_keywords}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/model_serving#invalid_keywords ModelServing#invalid_keywords}.
 
 ---
 
@@ -1788,7 +1788,7 @@ pii: ModelServingAiGatewayGuardrailsInputPii
 
 pii block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/model_serving#pii ModelServing#pii}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/model_serving#pii ModelServing#pii}
 
 ---
 
@@ -1800,7 +1800,7 @@ safety: bool | IResolvable
 
 - *Type:* bool | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/model_serving#safety ModelServing#safety}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/model_serving#safety ModelServing#safety}.
 
 ---
 
@@ -1812,7 +1812,7 @@ valid_topics: typing.List[str]
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/model_serving#valid_topics ModelServing#valid_topics}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/model_serving#valid_topics ModelServing#valid_topics}.
 
 ---
 
@@ -1832,7 +1832,7 @@ modelServing.ModelServingAiGatewayGuardrailsInputPii(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.modelServing.ModelServingAiGatewayGuardrailsInputPii.property.behavior">behavior</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/model_serving#behavior ModelServing#behavior}. |
+| <code><a href="#@cdktn/provider-databricks.modelServing.ModelServingAiGatewayGuardrailsInputPii.property.behavior">behavior</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/model_serving#behavior ModelServing#behavior}. |
 
 ---
 
@@ -1844,7 +1844,7 @@ behavior: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/model_serving#behavior ModelServing#behavior}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/model_serving#behavior ModelServing#behavior}.
 
 ---
 
@@ -1867,10 +1867,10 @@ modelServing.ModelServingAiGatewayGuardrailsOutput(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.modelServing.ModelServingAiGatewayGuardrailsOutput.property.invalidKeywords">invalid_keywords</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/model_serving#invalid_keywords ModelServing#invalid_keywords}. |
+| <code><a href="#@cdktn/provider-databricks.modelServing.ModelServingAiGatewayGuardrailsOutput.property.invalidKeywords">invalid_keywords</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/model_serving#invalid_keywords ModelServing#invalid_keywords}. |
 | <code><a href="#@cdktn/provider-databricks.modelServing.ModelServingAiGatewayGuardrailsOutput.property.pii">pii</a></code> | <code><a href="#@cdktn/provider-databricks.modelServing.ModelServingAiGatewayGuardrailsOutputPii">ModelServingAiGatewayGuardrailsOutputPii</a></code> | pii block. |
-| <code><a href="#@cdktn/provider-databricks.modelServing.ModelServingAiGatewayGuardrailsOutput.property.safety">safety</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/model_serving#safety ModelServing#safety}. |
-| <code><a href="#@cdktn/provider-databricks.modelServing.ModelServingAiGatewayGuardrailsOutput.property.validTopics">valid_topics</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/model_serving#valid_topics ModelServing#valid_topics}. |
+| <code><a href="#@cdktn/provider-databricks.modelServing.ModelServingAiGatewayGuardrailsOutput.property.safety">safety</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/model_serving#safety ModelServing#safety}. |
+| <code><a href="#@cdktn/provider-databricks.modelServing.ModelServingAiGatewayGuardrailsOutput.property.validTopics">valid_topics</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/model_serving#valid_topics ModelServing#valid_topics}. |
 
 ---
 
@@ -1882,7 +1882,7 @@ invalid_keywords: typing.List[str]
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/model_serving#invalid_keywords ModelServing#invalid_keywords}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/model_serving#invalid_keywords ModelServing#invalid_keywords}.
 
 ---
 
@@ -1896,7 +1896,7 @@ pii: ModelServingAiGatewayGuardrailsOutputPii
 
 pii block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/model_serving#pii ModelServing#pii}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/model_serving#pii ModelServing#pii}
 
 ---
 
@@ -1908,7 +1908,7 @@ safety: bool | IResolvable
 
 - *Type:* bool | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/model_serving#safety ModelServing#safety}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/model_serving#safety ModelServing#safety}.
 
 ---
 
@@ -1920,7 +1920,7 @@ valid_topics: typing.List[str]
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/model_serving#valid_topics ModelServing#valid_topics}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/model_serving#valid_topics ModelServing#valid_topics}.
 
 ---
 
@@ -1940,7 +1940,7 @@ modelServing.ModelServingAiGatewayGuardrailsOutputPii(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.modelServing.ModelServingAiGatewayGuardrailsOutputPii.property.behavior">behavior</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/model_serving#behavior ModelServing#behavior}. |
+| <code><a href="#@cdktn/provider-databricks.modelServing.ModelServingAiGatewayGuardrailsOutputPii.property.behavior">behavior</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/model_serving#behavior ModelServing#behavior}. |
 
 ---
 
@@ -1952,7 +1952,7 @@ behavior: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/model_serving#behavior ModelServing#behavior}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/model_serving#behavior ModelServing#behavior}.
 
 ---
 
@@ -1975,10 +1975,10 @@ modelServing.ModelServingAiGatewayInferenceTableConfig(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.modelServing.ModelServingAiGatewayInferenceTableConfig.property.catalogName">catalog_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/model_serving#catalog_name ModelServing#catalog_name}. |
-| <code><a href="#@cdktn/provider-databricks.modelServing.ModelServingAiGatewayInferenceTableConfig.property.enabled">enabled</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/model_serving#enabled ModelServing#enabled}. |
-| <code><a href="#@cdktn/provider-databricks.modelServing.ModelServingAiGatewayInferenceTableConfig.property.schemaName">schema_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/model_serving#schema_name ModelServing#schema_name}. |
-| <code><a href="#@cdktn/provider-databricks.modelServing.ModelServingAiGatewayInferenceTableConfig.property.tableNamePrefix">table_name_prefix</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/model_serving#table_name_prefix ModelServing#table_name_prefix}. |
+| <code><a href="#@cdktn/provider-databricks.modelServing.ModelServingAiGatewayInferenceTableConfig.property.catalogName">catalog_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/model_serving#catalog_name ModelServing#catalog_name}. |
+| <code><a href="#@cdktn/provider-databricks.modelServing.ModelServingAiGatewayInferenceTableConfig.property.enabled">enabled</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/model_serving#enabled ModelServing#enabled}. |
+| <code><a href="#@cdktn/provider-databricks.modelServing.ModelServingAiGatewayInferenceTableConfig.property.schemaName">schema_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/model_serving#schema_name ModelServing#schema_name}. |
+| <code><a href="#@cdktn/provider-databricks.modelServing.ModelServingAiGatewayInferenceTableConfig.property.tableNamePrefix">table_name_prefix</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/model_serving#table_name_prefix ModelServing#table_name_prefix}. |
 
 ---
 
@@ -1990,7 +1990,7 @@ catalog_name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/model_serving#catalog_name ModelServing#catalog_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/model_serving#catalog_name ModelServing#catalog_name}.
 
 ---
 
@@ -2002,7 +2002,7 @@ enabled: bool | IResolvable
 
 - *Type:* bool | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/model_serving#enabled ModelServing#enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/model_serving#enabled ModelServing#enabled}.
 
 ---
 
@@ -2014,7 +2014,7 @@ schema_name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/model_serving#schema_name ModelServing#schema_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/model_serving#schema_name ModelServing#schema_name}.
 
 ---
 
@@ -2026,7 +2026,7 @@ table_name_prefix: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/model_serving#table_name_prefix ModelServing#table_name_prefix}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/model_serving#table_name_prefix ModelServing#table_name_prefix}.
 
 ---
 
@@ -2050,11 +2050,11 @@ modelServing.ModelServingAiGatewayRateLimits(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.modelServing.ModelServingAiGatewayRateLimits.property.renewalPeriod">renewal_period</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/model_serving#renewal_period ModelServing#renewal_period}. |
-| <code><a href="#@cdktn/provider-databricks.modelServing.ModelServingAiGatewayRateLimits.property.calls">calls</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/model_serving#calls ModelServing#calls}. |
-| <code><a href="#@cdktn/provider-databricks.modelServing.ModelServingAiGatewayRateLimits.property.key">key</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/model_serving#key ModelServing#key}. |
-| <code><a href="#@cdktn/provider-databricks.modelServing.ModelServingAiGatewayRateLimits.property.principal">principal</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/model_serving#principal ModelServing#principal}. |
-| <code><a href="#@cdktn/provider-databricks.modelServing.ModelServingAiGatewayRateLimits.property.tokens">tokens</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/model_serving#tokens ModelServing#tokens}. |
+| <code><a href="#@cdktn/provider-databricks.modelServing.ModelServingAiGatewayRateLimits.property.renewalPeriod">renewal_period</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/model_serving#renewal_period ModelServing#renewal_period}. |
+| <code><a href="#@cdktn/provider-databricks.modelServing.ModelServingAiGatewayRateLimits.property.calls">calls</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/model_serving#calls ModelServing#calls}. |
+| <code><a href="#@cdktn/provider-databricks.modelServing.ModelServingAiGatewayRateLimits.property.key">key</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/model_serving#key ModelServing#key}. |
+| <code><a href="#@cdktn/provider-databricks.modelServing.ModelServingAiGatewayRateLimits.property.principal">principal</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/model_serving#principal ModelServing#principal}. |
+| <code><a href="#@cdktn/provider-databricks.modelServing.ModelServingAiGatewayRateLimits.property.tokens">tokens</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/model_serving#tokens ModelServing#tokens}. |
 
 ---
 
@@ -2066,7 +2066,7 @@ renewal_period: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/model_serving#renewal_period ModelServing#renewal_period}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/model_serving#renewal_period ModelServing#renewal_period}.
 
 ---
 
@@ -2078,7 +2078,7 @@ calls: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/model_serving#calls ModelServing#calls}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/model_serving#calls ModelServing#calls}.
 
 ---
 
@@ -2090,7 +2090,7 @@ key: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/model_serving#key ModelServing#key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/model_serving#key ModelServing#key}.
 
 ---
 
@@ -2102,7 +2102,7 @@ principal: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/model_serving#principal ModelServing#principal}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/model_serving#principal ModelServing#principal}.
 
 ---
 
@@ -2114,7 +2114,7 @@ tokens: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/model_serving#tokens ModelServing#tokens}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/model_serving#tokens ModelServing#tokens}.
 
 ---
 
@@ -2134,7 +2134,7 @@ modelServing.ModelServingAiGatewayUsageTrackingConfig(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.modelServing.ModelServingAiGatewayUsageTrackingConfig.property.enabled">enabled</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/model_serving#enabled ModelServing#enabled}. |
+| <code><a href="#@cdktn/provider-databricks.modelServing.ModelServingAiGatewayUsageTrackingConfig.property.enabled">enabled</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/model_serving#enabled ModelServing#enabled}. |
 
 ---
 
@@ -2146,7 +2146,7 @@ enabled: bool | IResolvable
 
 - *Type:* bool | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/model_serving#enabled ModelServing#enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/model_serving#enabled ModelServing#enabled}.
 
 ---
 
@@ -2192,16 +2192,16 @@ modelServing.ModelServingConfig(
 | <code><a href="#@cdktn/provider-databricks.modelServing.ModelServingConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.modelServing.ModelServingConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.modelServing.ModelServingConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-databricks.modelServing.ModelServingConfig.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/model_serving#name ModelServing#name}. |
+| <code><a href="#@cdktn/provider-databricks.modelServing.ModelServingConfig.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/model_serving#name ModelServing#name}. |
 | <code><a href="#@cdktn/provider-databricks.modelServing.ModelServingConfig.property.aiGateway">ai_gateway</a></code> | <code><a href="#@cdktn/provider-databricks.modelServing.ModelServingAiGateway">ModelServingAiGateway</a></code> | ai_gateway block. |
-| <code><a href="#@cdktn/provider-databricks.modelServing.ModelServingConfig.property.budgetPolicyId">budget_policy_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/model_serving#budget_policy_id ModelServing#budget_policy_id}. |
+| <code><a href="#@cdktn/provider-databricks.modelServing.ModelServingConfig.property.budgetPolicyId">budget_policy_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/model_serving#budget_policy_id ModelServing#budget_policy_id}. |
 | <code><a href="#@cdktn/provider-databricks.modelServing.ModelServingConfig.property.config">config</a></code> | <code><a href="#@cdktn/provider-databricks.modelServing.ModelServingConfigA">ModelServingConfigA</a></code> | config block. |
-| <code><a href="#@cdktn/provider-databricks.modelServing.ModelServingConfig.property.description">description</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/model_serving#description ModelServing#description}. |
+| <code><a href="#@cdktn/provider-databricks.modelServing.ModelServingConfig.property.description">description</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/model_serving#description ModelServing#description}. |
 | <code><a href="#@cdktn/provider-databricks.modelServing.ModelServingConfig.property.emailNotifications">email_notifications</a></code> | <code><a href="#@cdktn/provider-databricks.modelServing.ModelServingEmailNotifications">ModelServingEmailNotifications</a></code> | email_notifications block. |
-| <code><a href="#@cdktn/provider-databricks.modelServing.ModelServingConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/model_serving#id ModelServing#id}. |
+| <code><a href="#@cdktn/provider-databricks.modelServing.ModelServingConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/model_serving#id ModelServing#id}. |
 | <code><a href="#@cdktn/provider-databricks.modelServing.ModelServingConfig.property.providerConfig">provider_config</a></code> | <code><a href="#@cdktn/provider-databricks.modelServing.ModelServingProviderConfig">ModelServingProviderConfig</a></code> | provider_config block. |
 | <code><a href="#@cdktn/provider-databricks.modelServing.ModelServingConfig.property.rateLimits">rate_limits</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-databricks.modelServing.ModelServingRateLimits">ModelServingRateLimits</a>]</code> | rate_limits block. |
-| <code><a href="#@cdktn/provider-databricks.modelServing.ModelServingConfig.property.routeOptimized">route_optimized</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/model_serving#route_optimized ModelServing#route_optimized}. |
+| <code><a href="#@cdktn/provider-databricks.modelServing.ModelServingConfig.property.routeOptimized">route_optimized</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/model_serving#route_optimized ModelServing#route_optimized}. |
 | <code><a href="#@cdktn/provider-databricks.modelServing.ModelServingConfig.property.tags">tags</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-databricks.modelServing.ModelServingTags">ModelServingTags</a>]</code> | tags block. |
 | <code><a href="#@cdktn/provider-databricks.modelServing.ModelServingConfig.property.telemetryConfig">telemetry_config</a></code> | <code><a href="#@cdktn/provider-databricks.modelServing.ModelServingTelemetryConfig">ModelServingTelemetryConfig</a></code> | telemetry_config block. |
 | <code><a href="#@cdktn/provider-databricks.modelServing.ModelServingConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-databricks.modelServing.ModelServingTimeouts">ModelServingTimeouts</a></code> | timeouts block. |
@@ -2286,7 +2286,7 @@ name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/model_serving#name ModelServing#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/model_serving#name ModelServing#name}.
 
 ---
 
@@ -2300,7 +2300,7 @@ ai_gateway: ModelServingAiGateway
 
 ai_gateway block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/model_serving#ai_gateway ModelServing#ai_gateway}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/model_serving#ai_gateway ModelServing#ai_gateway}
 
 ---
 
@@ -2312,7 +2312,7 @@ budget_policy_id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/model_serving#budget_policy_id ModelServing#budget_policy_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/model_serving#budget_policy_id ModelServing#budget_policy_id}.
 
 ---
 
@@ -2326,7 +2326,7 @@ config: ModelServingConfigA
 
 config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/model_serving#config ModelServing#config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/model_serving#config ModelServing#config}
 
 ---
 
@@ -2338,7 +2338,7 @@ description: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/model_serving#description ModelServing#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/model_serving#description ModelServing#description}.
 
 ---
 
@@ -2352,7 +2352,7 @@ email_notifications: ModelServingEmailNotifications
 
 email_notifications block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/model_serving#email_notifications ModelServing#email_notifications}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/model_serving#email_notifications ModelServing#email_notifications}
 
 ---
 
@@ -2364,7 +2364,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/model_serving#id ModelServing#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/model_serving#id ModelServing#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -2381,7 +2381,7 @@ provider_config: ModelServingProviderConfig
 
 provider_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/model_serving#provider_config ModelServing#provider_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/model_serving#provider_config ModelServing#provider_config}
 
 ---
 
@@ -2395,7 +2395,7 @@ rate_limits: IResolvable | typing.List[ModelServingRateLimits]
 
 rate_limits block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/model_serving#rate_limits ModelServing#rate_limits}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/model_serving#rate_limits ModelServing#rate_limits}
 
 ---
 
@@ -2407,7 +2407,7 @@ route_optimized: bool | IResolvable
 
 - *Type:* bool | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/model_serving#route_optimized ModelServing#route_optimized}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/model_serving#route_optimized ModelServing#route_optimized}.
 
 ---
 
@@ -2421,7 +2421,7 @@ tags: IResolvable | typing.List[ModelServingTags]
 
 tags block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/model_serving#tags ModelServing#tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/model_serving#tags ModelServing#tags}
 
 ---
 
@@ -2435,7 +2435,7 @@ telemetry_config: ModelServingTelemetryConfig
 
 telemetry_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/model_serving#telemetry_config ModelServing#telemetry_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/model_serving#telemetry_config ModelServing#telemetry_config}
 
 ---
 
@@ -2449,7 +2449,7 @@ timeouts: ModelServingTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/model_serving#timeouts ModelServing#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/model_serving#timeouts ModelServing#timeouts}
 
 ---
 
@@ -2489,7 +2489,7 @@ auto_capture_config: ModelServingConfigAutoCaptureConfig
 
 auto_capture_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/model_serving#auto_capture_config ModelServing#auto_capture_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/model_serving#auto_capture_config ModelServing#auto_capture_config}
 
 ---
 
@@ -2503,7 +2503,7 @@ served_entities: IResolvable | typing.List[ModelServingConfigServedEntities]
 
 served_entities block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/model_serving#served_entities ModelServing#served_entities}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/model_serving#served_entities ModelServing#served_entities}
 
 ---
 
@@ -2517,7 +2517,7 @@ served_models: IResolvable | typing.List[ModelServingConfigServedModels]
 
 served_models block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/model_serving#served_models ModelServing#served_models}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/model_serving#served_models ModelServing#served_models}
 
 ---
 
@@ -2531,7 +2531,7 @@ traffic_config: ModelServingConfigTrafficConfig
 
 traffic_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/model_serving#traffic_config ModelServing#traffic_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/model_serving#traffic_config ModelServing#traffic_config}
 
 ---
 
@@ -2554,10 +2554,10 @@ modelServing.ModelServingConfigAutoCaptureConfig(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.modelServing.ModelServingConfigAutoCaptureConfig.property.catalogName">catalog_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/model_serving#catalog_name ModelServing#catalog_name}. |
-| <code><a href="#@cdktn/provider-databricks.modelServing.ModelServingConfigAutoCaptureConfig.property.enabled">enabled</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/model_serving#enabled ModelServing#enabled}. |
-| <code><a href="#@cdktn/provider-databricks.modelServing.ModelServingConfigAutoCaptureConfig.property.schemaName">schema_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/model_serving#schema_name ModelServing#schema_name}. |
-| <code><a href="#@cdktn/provider-databricks.modelServing.ModelServingConfigAutoCaptureConfig.property.tableNamePrefix">table_name_prefix</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/model_serving#table_name_prefix ModelServing#table_name_prefix}. |
+| <code><a href="#@cdktn/provider-databricks.modelServing.ModelServingConfigAutoCaptureConfig.property.catalogName">catalog_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/model_serving#catalog_name ModelServing#catalog_name}. |
+| <code><a href="#@cdktn/provider-databricks.modelServing.ModelServingConfigAutoCaptureConfig.property.enabled">enabled</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/model_serving#enabled ModelServing#enabled}. |
+| <code><a href="#@cdktn/provider-databricks.modelServing.ModelServingConfigAutoCaptureConfig.property.schemaName">schema_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/model_serving#schema_name ModelServing#schema_name}. |
+| <code><a href="#@cdktn/provider-databricks.modelServing.ModelServingConfigAutoCaptureConfig.property.tableNamePrefix">table_name_prefix</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/model_serving#table_name_prefix ModelServing#table_name_prefix}. |
 
 ---
 
@@ -2569,7 +2569,7 @@ catalog_name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/model_serving#catalog_name ModelServing#catalog_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/model_serving#catalog_name ModelServing#catalog_name}.
 
 ---
 
@@ -2581,7 +2581,7 @@ enabled: bool | IResolvable
 
 - *Type:* bool | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/model_serving#enabled ModelServing#enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/model_serving#enabled ModelServing#enabled}.
 
 ---
 
@@ -2593,7 +2593,7 @@ schema_name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/model_serving#schema_name ModelServing#schema_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/model_serving#schema_name ModelServing#schema_name}.
 
 ---
 
@@ -2605,7 +2605,7 @@ table_name_prefix: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/model_serving#table_name_prefix ModelServing#table_name_prefix}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/model_serving#table_name_prefix ModelServing#table_name_prefix}.
 
 ---
 
@@ -2639,21 +2639,21 @@ modelServing.ModelServingConfigServedEntities(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.modelServing.ModelServingConfigServedEntities.property.burstScalingEnabled">burst_scaling_enabled</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/model_serving#burst_scaling_enabled ModelServing#burst_scaling_enabled}. |
-| <code><a href="#@cdktn/provider-databricks.modelServing.ModelServingConfigServedEntities.property.entityName">entity_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/model_serving#entity_name ModelServing#entity_name}. |
-| <code><a href="#@cdktn/provider-databricks.modelServing.ModelServingConfigServedEntities.property.entityVersion">entity_version</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/model_serving#entity_version ModelServing#entity_version}. |
-| <code><a href="#@cdktn/provider-databricks.modelServing.ModelServingConfigServedEntities.property.environmentVars">environment_vars</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/model_serving#environment_vars ModelServing#environment_vars}. |
+| <code><a href="#@cdktn/provider-databricks.modelServing.ModelServingConfigServedEntities.property.burstScalingEnabled">burst_scaling_enabled</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/model_serving#burst_scaling_enabled ModelServing#burst_scaling_enabled}. |
+| <code><a href="#@cdktn/provider-databricks.modelServing.ModelServingConfigServedEntities.property.entityName">entity_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/model_serving#entity_name ModelServing#entity_name}. |
+| <code><a href="#@cdktn/provider-databricks.modelServing.ModelServingConfigServedEntities.property.entityVersion">entity_version</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/model_serving#entity_version ModelServing#entity_version}. |
+| <code><a href="#@cdktn/provider-databricks.modelServing.ModelServingConfigServedEntities.property.environmentVars">environment_vars</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/model_serving#environment_vars ModelServing#environment_vars}. |
 | <code><a href="#@cdktn/provider-databricks.modelServing.ModelServingConfigServedEntities.property.externalModel">external_model</a></code> | <code><a href="#@cdktn/provider-databricks.modelServing.ModelServingConfigServedEntitiesExternalModel">ModelServingConfigServedEntitiesExternalModel</a></code> | external_model block. |
-| <code><a href="#@cdktn/provider-databricks.modelServing.ModelServingConfigServedEntities.property.instanceProfileArn">instance_profile_arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/model_serving#instance_profile_arn ModelServing#instance_profile_arn}. |
-| <code><a href="#@cdktn/provider-databricks.modelServing.ModelServingConfigServedEntities.property.maxProvisionedConcurrency">max_provisioned_concurrency</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/model_serving#max_provisioned_concurrency ModelServing#max_provisioned_concurrency}. |
-| <code><a href="#@cdktn/provider-databricks.modelServing.ModelServingConfigServedEntities.property.maxProvisionedThroughput">max_provisioned_throughput</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/model_serving#max_provisioned_throughput ModelServing#max_provisioned_throughput}. |
-| <code><a href="#@cdktn/provider-databricks.modelServing.ModelServingConfigServedEntities.property.minProvisionedConcurrency">min_provisioned_concurrency</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/model_serving#min_provisioned_concurrency ModelServing#min_provisioned_concurrency}. |
-| <code><a href="#@cdktn/provider-databricks.modelServing.ModelServingConfigServedEntities.property.minProvisionedThroughput">min_provisioned_throughput</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/model_serving#min_provisioned_throughput ModelServing#min_provisioned_throughput}. |
-| <code><a href="#@cdktn/provider-databricks.modelServing.ModelServingConfigServedEntities.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/model_serving#name ModelServing#name}. |
-| <code><a href="#@cdktn/provider-databricks.modelServing.ModelServingConfigServedEntities.property.provisionedModelUnits">provisioned_model_units</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/model_serving#provisioned_model_units ModelServing#provisioned_model_units}. |
-| <code><a href="#@cdktn/provider-databricks.modelServing.ModelServingConfigServedEntities.property.scaleToZeroEnabled">scale_to_zero_enabled</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/model_serving#scale_to_zero_enabled ModelServing#scale_to_zero_enabled}. |
-| <code><a href="#@cdktn/provider-databricks.modelServing.ModelServingConfigServedEntities.property.workloadSize">workload_size</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/model_serving#workload_size ModelServing#workload_size}. |
-| <code><a href="#@cdktn/provider-databricks.modelServing.ModelServingConfigServedEntities.property.workloadType">workload_type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/model_serving#workload_type ModelServing#workload_type}. |
+| <code><a href="#@cdktn/provider-databricks.modelServing.ModelServingConfigServedEntities.property.instanceProfileArn">instance_profile_arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/model_serving#instance_profile_arn ModelServing#instance_profile_arn}. |
+| <code><a href="#@cdktn/provider-databricks.modelServing.ModelServingConfigServedEntities.property.maxProvisionedConcurrency">max_provisioned_concurrency</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/model_serving#max_provisioned_concurrency ModelServing#max_provisioned_concurrency}. |
+| <code><a href="#@cdktn/provider-databricks.modelServing.ModelServingConfigServedEntities.property.maxProvisionedThroughput">max_provisioned_throughput</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/model_serving#max_provisioned_throughput ModelServing#max_provisioned_throughput}. |
+| <code><a href="#@cdktn/provider-databricks.modelServing.ModelServingConfigServedEntities.property.minProvisionedConcurrency">min_provisioned_concurrency</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/model_serving#min_provisioned_concurrency ModelServing#min_provisioned_concurrency}. |
+| <code><a href="#@cdktn/provider-databricks.modelServing.ModelServingConfigServedEntities.property.minProvisionedThroughput">min_provisioned_throughput</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/model_serving#min_provisioned_throughput ModelServing#min_provisioned_throughput}. |
+| <code><a href="#@cdktn/provider-databricks.modelServing.ModelServingConfigServedEntities.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/model_serving#name ModelServing#name}. |
+| <code><a href="#@cdktn/provider-databricks.modelServing.ModelServingConfigServedEntities.property.provisionedModelUnits">provisioned_model_units</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/model_serving#provisioned_model_units ModelServing#provisioned_model_units}. |
+| <code><a href="#@cdktn/provider-databricks.modelServing.ModelServingConfigServedEntities.property.scaleToZeroEnabled">scale_to_zero_enabled</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/model_serving#scale_to_zero_enabled ModelServing#scale_to_zero_enabled}. |
+| <code><a href="#@cdktn/provider-databricks.modelServing.ModelServingConfigServedEntities.property.workloadSize">workload_size</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/model_serving#workload_size ModelServing#workload_size}. |
+| <code><a href="#@cdktn/provider-databricks.modelServing.ModelServingConfigServedEntities.property.workloadType">workload_type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/model_serving#workload_type ModelServing#workload_type}. |
 
 ---
 
@@ -2665,7 +2665,7 @@ burst_scaling_enabled: bool | IResolvable
 
 - *Type:* bool | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/model_serving#burst_scaling_enabled ModelServing#burst_scaling_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/model_serving#burst_scaling_enabled ModelServing#burst_scaling_enabled}.
 
 ---
 
@@ -2677,7 +2677,7 @@ entity_name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/model_serving#entity_name ModelServing#entity_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/model_serving#entity_name ModelServing#entity_name}.
 
 ---
 
@@ -2689,7 +2689,7 @@ entity_version: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/model_serving#entity_version ModelServing#entity_version}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/model_serving#entity_version ModelServing#entity_version}.
 
 ---
 
@@ -2701,7 +2701,7 @@ environment_vars: typing.Mapping[str]
 
 - *Type:* typing.Mapping[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/model_serving#environment_vars ModelServing#environment_vars}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/model_serving#environment_vars ModelServing#environment_vars}.
 
 ---
 
@@ -2715,7 +2715,7 @@ external_model: ModelServingConfigServedEntitiesExternalModel
 
 external_model block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/model_serving#external_model ModelServing#external_model}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/model_serving#external_model ModelServing#external_model}
 
 ---
 
@@ -2727,7 +2727,7 @@ instance_profile_arn: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/model_serving#instance_profile_arn ModelServing#instance_profile_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/model_serving#instance_profile_arn ModelServing#instance_profile_arn}.
 
 ---
 
@@ -2739,7 +2739,7 @@ max_provisioned_concurrency: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/model_serving#max_provisioned_concurrency ModelServing#max_provisioned_concurrency}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/model_serving#max_provisioned_concurrency ModelServing#max_provisioned_concurrency}.
 
 ---
 
@@ -2751,7 +2751,7 @@ max_provisioned_throughput: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/model_serving#max_provisioned_throughput ModelServing#max_provisioned_throughput}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/model_serving#max_provisioned_throughput ModelServing#max_provisioned_throughput}.
 
 ---
 
@@ -2763,7 +2763,7 @@ min_provisioned_concurrency: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/model_serving#min_provisioned_concurrency ModelServing#min_provisioned_concurrency}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/model_serving#min_provisioned_concurrency ModelServing#min_provisioned_concurrency}.
 
 ---
 
@@ -2775,7 +2775,7 @@ min_provisioned_throughput: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/model_serving#min_provisioned_throughput ModelServing#min_provisioned_throughput}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/model_serving#min_provisioned_throughput ModelServing#min_provisioned_throughput}.
 
 ---
 
@@ -2787,7 +2787,7 @@ name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/model_serving#name ModelServing#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/model_serving#name ModelServing#name}.
 
 ---
 
@@ -2799,7 +2799,7 @@ provisioned_model_units: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/model_serving#provisioned_model_units ModelServing#provisioned_model_units}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/model_serving#provisioned_model_units ModelServing#provisioned_model_units}.
 
 ---
 
@@ -2811,7 +2811,7 @@ scale_to_zero_enabled: bool | IResolvable
 
 - *Type:* bool | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/model_serving#scale_to_zero_enabled ModelServing#scale_to_zero_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/model_serving#scale_to_zero_enabled ModelServing#scale_to_zero_enabled}.
 
 ---
 
@@ -2823,7 +2823,7 @@ workload_size: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/model_serving#workload_size ModelServing#workload_size}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/model_serving#workload_size ModelServing#workload_size}.
 
 ---
 
@@ -2835,7 +2835,7 @@ workload_type: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/model_serving#workload_type ModelServing#workload_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/model_serving#workload_type ModelServing#workload_type}.
 
 ---
 
@@ -2866,9 +2866,9 @@ modelServing.ModelServingConfigServedEntitiesExternalModel(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.modelServing.ModelServingConfigServedEntitiesExternalModel.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/model_serving#name ModelServing#name}. |
-| <code><a href="#@cdktn/provider-databricks.modelServing.ModelServingConfigServedEntitiesExternalModel.property.provider">provider</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/model_serving#provider ModelServing#provider}. |
-| <code><a href="#@cdktn/provider-databricks.modelServing.ModelServingConfigServedEntitiesExternalModel.property.task">task</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/model_serving#task ModelServing#task}. |
+| <code><a href="#@cdktn/provider-databricks.modelServing.ModelServingConfigServedEntitiesExternalModel.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/model_serving#name ModelServing#name}. |
+| <code><a href="#@cdktn/provider-databricks.modelServing.ModelServingConfigServedEntitiesExternalModel.property.provider">provider</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/model_serving#provider ModelServing#provider}. |
+| <code><a href="#@cdktn/provider-databricks.modelServing.ModelServingConfigServedEntitiesExternalModel.property.task">task</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/model_serving#task ModelServing#task}. |
 | <code><a href="#@cdktn/provider-databricks.modelServing.ModelServingConfigServedEntitiesExternalModel.property.ai21LabsConfig">ai21_labs_config</a></code> | <code><a href="#@cdktn/provider-databricks.modelServing.ModelServingConfigServedEntitiesExternalModelAi21LabsConfig">ModelServingConfigServedEntitiesExternalModelAi21LabsConfig</a></code> | ai21labs_config block. |
 | <code><a href="#@cdktn/provider-databricks.modelServing.ModelServingConfigServedEntitiesExternalModel.property.amazonBedrockConfig">amazon_bedrock_config</a></code> | <code><a href="#@cdktn/provider-databricks.modelServing.ModelServingConfigServedEntitiesExternalModelAmazonBedrockConfig">ModelServingConfigServedEntitiesExternalModelAmazonBedrockConfig</a></code> | amazon_bedrock_config block. |
 | <code><a href="#@cdktn/provider-databricks.modelServing.ModelServingConfigServedEntitiesExternalModel.property.anthropicConfig">anthropic_config</a></code> | <code><a href="#@cdktn/provider-databricks.modelServing.ModelServingConfigServedEntitiesExternalModelAnthropicConfig">ModelServingConfigServedEntitiesExternalModelAnthropicConfig</a></code> | anthropic_config block. |
@@ -2889,7 +2889,7 @@ name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/model_serving#name ModelServing#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/model_serving#name ModelServing#name}.
 
 ---
 
@@ -2901,7 +2901,7 @@ provider: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/model_serving#provider ModelServing#provider}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/model_serving#provider ModelServing#provider}.
 
 ---
 
@@ -2913,7 +2913,7 @@ task: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/model_serving#task ModelServing#task}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/model_serving#task ModelServing#task}.
 
 ---
 
@@ -2927,7 +2927,7 @@ ai21_labs_config: ModelServingConfigServedEntitiesExternalModelAi21LabsConfig
 
 ai21labs_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/model_serving#ai21labs_config ModelServing#ai21labs_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/model_serving#ai21labs_config ModelServing#ai21labs_config}
 
 ---
 
@@ -2941,7 +2941,7 @@ amazon_bedrock_config: ModelServingConfigServedEntitiesExternalModelAmazonBedroc
 
 amazon_bedrock_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/model_serving#amazon_bedrock_config ModelServing#amazon_bedrock_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/model_serving#amazon_bedrock_config ModelServing#amazon_bedrock_config}
 
 ---
 
@@ -2955,7 +2955,7 @@ anthropic_config: ModelServingConfigServedEntitiesExternalModelAnthropicConfig
 
 anthropic_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/model_serving#anthropic_config ModelServing#anthropic_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/model_serving#anthropic_config ModelServing#anthropic_config}
 
 ---
 
@@ -2969,7 +2969,7 @@ cohere_config: ModelServingConfigServedEntitiesExternalModelCohereConfig
 
 cohere_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/model_serving#cohere_config ModelServing#cohere_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/model_serving#cohere_config ModelServing#cohere_config}
 
 ---
 
@@ -2983,7 +2983,7 @@ custom_provider_config: ModelServingConfigServedEntitiesExternalModelCustomProvi
 
 custom_provider_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/model_serving#custom_provider_config ModelServing#custom_provider_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/model_serving#custom_provider_config ModelServing#custom_provider_config}
 
 ---
 
@@ -2997,7 +2997,7 @@ databricks_model_serving_config: ModelServingConfigServedEntitiesExternalModelDa
 
 databricks_model_serving_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/model_serving#databricks_model_serving_config ModelServing#databricks_model_serving_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/model_serving#databricks_model_serving_config ModelServing#databricks_model_serving_config}
 
 ---
 
@@ -3011,7 +3011,7 @@ google_cloud_vertex_ai_config: ModelServingConfigServedEntitiesExternalModelGoog
 
 google_cloud_vertex_ai_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/model_serving#google_cloud_vertex_ai_config ModelServing#google_cloud_vertex_ai_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/model_serving#google_cloud_vertex_ai_config ModelServing#google_cloud_vertex_ai_config}
 
 ---
 
@@ -3025,7 +3025,7 @@ openai_config: ModelServingConfigServedEntitiesExternalModelOpenaiConfig
 
 openai_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/model_serving#openai_config ModelServing#openai_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/model_serving#openai_config ModelServing#openai_config}
 
 ---
 
@@ -3039,7 +3039,7 @@ palm_config: ModelServingConfigServedEntitiesExternalModelPalmConfig
 
 palm_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/model_serving#palm_config ModelServing#palm_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/model_serving#palm_config ModelServing#palm_config}
 
 ---
 
@@ -3060,8 +3060,8 @@ modelServing.ModelServingConfigServedEntitiesExternalModelAi21LabsConfig(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.modelServing.ModelServingConfigServedEntitiesExternalModelAi21LabsConfig.property.ai21LabsApiKey">ai21_labs_api_key</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/model_serving#ai21labs_api_key ModelServing#ai21labs_api_key}. |
-| <code><a href="#@cdktn/provider-databricks.modelServing.ModelServingConfigServedEntitiesExternalModelAi21LabsConfig.property.ai21LabsApiKeyPlaintext">ai21_labs_api_key_plaintext</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/model_serving#ai21labs_api_key_plaintext ModelServing#ai21labs_api_key_plaintext}. |
+| <code><a href="#@cdktn/provider-databricks.modelServing.ModelServingConfigServedEntitiesExternalModelAi21LabsConfig.property.ai21LabsApiKey">ai21_labs_api_key</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/model_serving#ai21labs_api_key ModelServing#ai21labs_api_key}. |
+| <code><a href="#@cdktn/provider-databricks.modelServing.ModelServingConfigServedEntitiesExternalModelAi21LabsConfig.property.ai21LabsApiKeyPlaintext">ai21_labs_api_key_plaintext</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/model_serving#ai21labs_api_key_plaintext ModelServing#ai21labs_api_key_plaintext}. |
 
 ---
 
@@ -3073,7 +3073,7 @@ ai21_labs_api_key: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/model_serving#ai21labs_api_key ModelServing#ai21labs_api_key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/model_serving#ai21labs_api_key ModelServing#ai21labs_api_key}.
 
 ---
 
@@ -3085,7 +3085,7 @@ ai21_labs_api_key_plaintext: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/model_serving#ai21labs_api_key_plaintext ModelServing#ai21labs_api_key_plaintext}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/model_serving#ai21labs_api_key_plaintext ModelServing#ai21labs_api_key_plaintext}.
 
 ---
 
@@ -3111,13 +3111,13 @@ modelServing.ModelServingConfigServedEntitiesExternalModelAmazonBedrockConfig(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.modelServing.ModelServingConfigServedEntitiesExternalModelAmazonBedrockConfig.property.awsRegion">aws_region</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/model_serving#aws_region ModelServing#aws_region}. |
-| <code><a href="#@cdktn/provider-databricks.modelServing.ModelServingConfigServedEntitiesExternalModelAmazonBedrockConfig.property.bedrockProvider">bedrock_provider</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/model_serving#bedrock_provider ModelServing#bedrock_provider}. |
-| <code><a href="#@cdktn/provider-databricks.modelServing.ModelServingConfigServedEntitiesExternalModelAmazonBedrockConfig.property.awsAccessKeyId">aws_access_key_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/model_serving#aws_access_key_id ModelServing#aws_access_key_id}. |
-| <code><a href="#@cdktn/provider-databricks.modelServing.ModelServingConfigServedEntitiesExternalModelAmazonBedrockConfig.property.awsAccessKeyIdPlaintext">aws_access_key_id_plaintext</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/model_serving#aws_access_key_id_plaintext ModelServing#aws_access_key_id_plaintext}. |
-| <code><a href="#@cdktn/provider-databricks.modelServing.ModelServingConfigServedEntitiesExternalModelAmazonBedrockConfig.property.awsSecretAccessKey">aws_secret_access_key</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/model_serving#aws_secret_access_key ModelServing#aws_secret_access_key}. |
-| <code><a href="#@cdktn/provider-databricks.modelServing.ModelServingConfigServedEntitiesExternalModelAmazonBedrockConfig.property.awsSecretAccessKeyPlaintext">aws_secret_access_key_plaintext</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/model_serving#aws_secret_access_key_plaintext ModelServing#aws_secret_access_key_plaintext}. |
-| <code><a href="#@cdktn/provider-databricks.modelServing.ModelServingConfigServedEntitiesExternalModelAmazonBedrockConfig.property.instanceProfileArn">instance_profile_arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/model_serving#instance_profile_arn ModelServing#instance_profile_arn}. |
+| <code><a href="#@cdktn/provider-databricks.modelServing.ModelServingConfigServedEntitiesExternalModelAmazonBedrockConfig.property.awsRegion">aws_region</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/model_serving#aws_region ModelServing#aws_region}. |
+| <code><a href="#@cdktn/provider-databricks.modelServing.ModelServingConfigServedEntitiesExternalModelAmazonBedrockConfig.property.bedrockProvider">bedrock_provider</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/model_serving#bedrock_provider ModelServing#bedrock_provider}. |
+| <code><a href="#@cdktn/provider-databricks.modelServing.ModelServingConfigServedEntitiesExternalModelAmazonBedrockConfig.property.awsAccessKeyId">aws_access_key_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/model_serving#aws_access_key_id ModelServing#aws_access_key_id}. |
+| <code><a href="#@cdktn/provider-databricks.modelServing.ModelServingConfigServedEntitiesExternalModelAmazonBedrockConfig.property.awsAccessKeyIdPlaintext">aws_access_key_id_plaintext</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/model_serving#aws_access_key_id_plaintext ModelServing#aws_access_key_id_plaintext}. |
+| <code><a href="#@cdktn/provider-databricks.modelServing.ModelServingConfigServedEntitiesExternalModelAmazonBedrockConfig.property.awsSecretAccessKey">aws_secret_access_key</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/model_serving#aws_secret_access_key ModelServing#aws_secret_access_key}. |
+| <code><a href="#@cdktn/provider-databricks.modelServing.ModelServingConfigServedEntitiesExternalModelAmazonBedrockConfig.property.awsSecretAccessKeyPlaintext">aws_secret_access_key_plaintext</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/model_serving#aws_secret_access_key_plaintext ModelServing#aws_secret_access_key_plaintext}. |
+| <code><a href="#@cdktn/provider-databricks.modelServing.ModelServingConfigServedEntitiesExternalModelAmazonBedrockConfig.property.instanceProfileArn">instance_profile_arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/model_serving#instance_profile_arn ModelServing#instance_profile_arn}. |
 
 ---
 
@@ -3129,7 +3129,7 @@ aws_region: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/model_serving#aws_region ModelServing#aws_region}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/model_serving#aws_region ModelServing#aws_region}.
 
 ---
 
@@ -3141,7 +3141,7 @@ bedrock_provider: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/model_serving#bedrock_provider ModelServing#bedrock_provider}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/model_serving#bedrock_provider ModelServing#bedrock_provider}.
 
 ---
 
@@ -3153,7 +3153,7 @@ aws_access_key_id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/model_serving#aws_access_key_id ModelServing#aws_access_key_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/model_serving#aws_access_key_id ModelServing#aws_access_key_id}.
 
 ---
 
@@ -3165,7 +3165,7 @@ aws_access_key_id_plaintext: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/model_serving#aws_access_key_id_plaintext ModelServing#aws_access_key_id_plaintext}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/model_serving#aws_access_key_id_plaintext ModelServing#aws_access_key_id_plaintext}.
 
 ---
 
@@ -3177,7 +3177,7 @@ aws_secret_access_key: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/model_serving#aws_secret_access_key ModelServing#aws_secret_access_key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/model_serving#aws_secret_access_key ModelServing#aws_secret_access_key}.
 
 ---
 
@@ -3189,7 +3189,7 @@ aws_secret_access_key_plaintext: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/model_serving#aws_secret_access_key_plaintext ModelServing#aws_secret_access_key_plaintext}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/model_serving#aws_secret_access_key_plaintext ModelServing#aws_secret_access_key_plaintext}.
 
 ---
 
@@ -3201,7 +3201,7 @@ instance_profile_arn: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/model_serving#instance_profile_arn ModelServing#instance_profile_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/model_serving#instance_profile_arn ModelServing#instance_profile_arn}.
 
 ---
 
@@ -3222,8 +3222,8 @@ modelServing.ModelServingConfigServedEntitiesExternalModelAnthropicConfig(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.modelServing.ModelServingConfigServedEntitiesExternalModelAnthropicConfig.property.anthropicApiKey">anthropic_api_key</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/model_serving#anthropic_api_key ModelServing#anthropic_api_key}. |
-| <code><a href="#@cdktn/provider-databricks.modelServing.ModelServingConfigServedEntitiesExternalModelAnthropicConfig.property.anthropicApiKeyPlaintext">anthropic_api_key_plaintext</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/model_serving#anthropic_api_key_plaintext ModelServing#anthropic_api_key_plaintext}. |
+| <code><a href="#@cdktn/provider-databricks.modelServing.ModelServingConfigServedEntitiesExternalModelAnthropicConfig.property.anthropicApiKey">anthropic_api_key</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/model_serving#anthropic_api_key ModelServing#anthropic_api_key}. |
+| <code><a href="#@cdktn/provider-databricks.modelServing.ModelServingConfigServedEntitiesExternalModelAnthropicConfig.property.anthropicApiKeyPlaintext">anthropic_api_key_plaintext</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/model_serving#anthropic_api_key_plaintext ModelServing#anthropic_api_key_plaintext}. |
 
 ---
 
@@ -3235,7 +3235,7 @@ anthropic_api_key: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/model_serving#anthropic_api_key ModelServing#anthropic_api_key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/model_serving#anthropic_api_key ModelServing#anthropic_api_key}.
 
 ---
 
@@ -3247,7 +3247,7 @@ anthropic_api_key_plaintext: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/model_serving#anthropic_api_key_plaintext ModelServing#anthropic_api_key_plaintext}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/model_serving#anthropic_api_key_plaintext ModelServing#anthropic_api_key_plaintext}.
 
 ---
 
@@ -3269,9 +3269,9 @@ modelServing.ModelServingConfigServedEntitiesExternalModelCohereConfig(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.modelServing.ModelServingConfigServedEntitiesExternalModelCohereConfig.property.cohereApiBase">cohere_api_base</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/model_serving#cohere_api_base ModelServing#cohere_api_base}. |
-| <code><a href="#@cdktn/provider-databricks.modelServing.ModelServingConfigServedEntitiesExternalModelCohereConfig.property.cohereApiKey">cohere_api_key</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/model_serving#cohere_api_key ModelServing#cohere_api_key}. |
-| <code><a href="#@cdktn/provider-databricks.modelServing.ModelServingConfigServedEntitiesExternalModelCohereConfig.property.cohereApiKeyPlaintext">cohere_api_key_plaintext</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/model_serving#cohere_api_key_plaintext ModelServing#cohere_api_key_plaintext}. |
+| <code><a href="#@cdktn/provider-databricks.modelServing.ModelServingConfigServedEntitiesExternalModelCohereConfig.property.cohereApiBase">cohere_api_base</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/model_serving#cohere_api_base ModelServing#cohere_api_base}. |
+| <code><a href="#@cdktn/provider-databricks.modelServing.ModelServingConfigServedEntitiesExternalModelCohereConfig.property.cohereApiKey">cohere_api_key</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/model_serving#cohere_api_key ModelServing#cohere_api_key}. |
+| <code><a href="#@cdktn/provider-databricks.modelServing.ModelServingConfigServedEntitiesExternalModelCohereConfig.property.cohereApiKeyPlaintext">cohere_api_key_plaintext</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/model_serving#cohere_api_key_plaintext ModelServing#cohere_api_key_plaintext}. |
 
 ---
 
@@ -3283,7 +3283,7 @@ cohere_api_base: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/model_serving#cohere_api_base ModelServing#cohere_api_base}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/model_serving#cohere_api_base ModelServing#cohere_api_base}.
 
 ---
 
@@ -3295,7 +3295,7 @@ cohere_api_key: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/model_serving#cohere_api_key ModelServing#cohere_api_key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/model_serving#cohere_api_key ModelServing#cohere_api_key}.
 
 ---
 
@@ -3307,7 +3307,7 @@ cohere_api_key_plaintext: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/model_serving#cohere_api_key_plaintext ModelServing#cohere_api_key_plaintext}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/model_serving#cohere_api_key_plaintext ModelServing#cohere_api_key_plaintext}.
 
 ---
 
@@ -3329,7 +3329,7 @@ modelServing.ModelServingConfigServedEntitiesExternalModelCustomProviderConfig(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.modelServing.ModelServingConfigServedEntitiesExternalModelCustomProviderConfig.property.customProviderUrl">custom_provider_url</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/model_serving#custom_provider_url ModelServing#custom_provider_url}. |
+| <code><a href="#@cdktn/provider-databricks.modelServing.ModelServingConfigServedEntitiesExternalModelCustomProviderConfig.property.customProviderUrl">custom_provider_url</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/model_serving#custom_provider_url ModelServing#custom_provider_url}. |
 | <code><a href="#@cdktn/provider-databricks.modelServing.ModelServingConfigServedEntitiesExternalModelCustomProviderConfig.property.apiKeyAuth">api_key_auth</a></code> | <code><a href="#@cdktn/provider-databricks.modelServing.ModelServingConfigServedEntitiesExternalModelCustomProviderConfigApiKeyAuth">ModelServingConfigServedEntitiesExternalModelCustomProviderConfigApiKeyAuth</a></code> | api_key_auth block. |
 | <code><a href="#@cdktn/provider-databricks.modelServing.ModelServingConfigServedEntitiesExternalModelCustomProviderConfig.property.bearerTokenAuth">bearer_token_auth</a></code> | <code><a href="#@cdktn/provider-databricks.modelServing.ModelServingConfigServedEntitiesExternalModelCustomProviderConfigBearerTokenAuth">ModelServingConfigServedEntitiesExternalModelCustomProviderConfigBearerTokenAuth</a></code> | bearer_token_auth block. |
 
@@ -3343,7 +3343,7 @@ custom_provider_url: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/model_serving#custom_provider_url ModelServing#custom_provider_url}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/model_serving#custom_provider_url ModelServing#custom_provider_url}.
 
 ---
 
@@ -3357,7 +3357,7 @@ api_key_auth: ModelServingConfigServedEntitiesExternalModelCustomProviderConfigA
 
 api_key_auth block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/model_serving#api_key_auth ModelServing#api_key_auth}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/model_serving#api_key_auth ModelServing#api_key_auth}
 
 ---
 
@@ -3371,7 +3371,7 @@ bearer_token_auth: ModelServingConfigServedEntitiesExternalModelCustomProviderCo
 
 bearer_token_auth block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/model_serving#bearer_token_auth ModelServing#bearer_token_auth}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/model_serving#bearer_token_auth ModelServing#bearer_token_auth}
 
 ---
 
@@ -3393,9 +3393,9 @@ modelServing.ModelServingConfigServedEntitiesExternalModelCustomProviderConfigAp
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.modelServing.ModelServingConfigServedEntitiesExternalModelCustomProviderConfigApiKeyAuth.property.key">key</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/model_serving#key ModelServing#key}. |
-| <code><a href="#@cdktn/provider-databricks.modelServing.ModelServingConfigServedEntitiesExternalModelCustomProviderConfigApiKeyAuth.property.value">value</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/model_serving#value ModelServing#value}. |
-| <code><a href="#@cdktn/provider-databricks.modelServing.ModelServingConfigServedEntitiesExternalModelCustomProviderConfigApiKeyAuth.property.valuePlaintext">value_plaintext</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/model_serving#value_plaintext ModelServing#value_plaintext}. |
+| <code><a href="#@cdktn/provider-databricks.modelServing.ModelServingConfigServedEntitiesExternalModelCustomProviderConfigApiKeyAuth.property.key">key</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/model_serving#key ModelServing#key}. |
+| <code><a href="#@cdktn/provider-databricks.modelServing.ModelServingConfigServedEntitiesExternalModelCustomProviderConfigApiKeyAuth.property.value">value</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/model_serving#value ModelServing#value}. |
+| <code><a href="#@cdktn/provider-databricks.modelServing.ModelServingConfigServedEntitiesExternalModelCustomProviderConfigApiKeyAuth.property.valuePlaintext">value_plaintext</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/model_serving#value_plaintext ModelServing#value_plaintext}. |
 
 ---
 
@@ -3407,7 +3407,7 @@ key: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/model_serving#key ModelServing#key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/model_serving#key ModelServing#key}.
 
 ---
 
@@ -3419,7 +3419,7 @@ value: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/model_serving#value ModelServing#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/model_serving#value ModelServing#value}.
 
 ---
 
@@ -3431,7 +3431,7 @@ value_plaintext: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/model_serving#value_plaintext ModelServing#value_plaintext}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/model_serving#value_plaintext ModelServing#value_plaintext}.
 
 ---
 
@@ -3452,8 +3452,8 @@ modelServing.ModelServingConfigServedEntitiesExternalModelCustomProviderConfigBe
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.modelServing.ModelServingConfigServedEntitiesExternalModelCustomProviderConfigBearerTokenAuth.property.token">token</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/model_serving#token ModelServing#token}. |
-| <code><a href="#@cdktn/provider-databricks.modelServing.ModelServingConfigServedEntitiesExternalModelCustomProviderConfigBearerTokenAuth.property.tokenPlaintext">token_plaintext</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/model_serving#token_plaintext ModelServing#token_plaintext}. |
+| <code><a href="#@cdktn/provider-databricks.modelServing.ModelServingConfigServedEntitiesExternalModelCustomProviderConfigBearerTokenAuth.property.token">token</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/model_serving#token ModelServing#token}. |
+| <code><a href="#@cdktn/provider-databricks.modelServing.ModelServingConfigServedEntitiesExternalModelCustomProviderConfigBearerTokenAuth.property.tokenPlaintext">token_plaintext</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/model_serving#token_plaintext ModelServing#token_plaintext}. |
 
 ---
 
@@ -3465,7 +3465,7 @@ token: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/model_serving#token ModelServing#token}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/model_serving#token ModelServing#token}.
 
 ---
 
@@ -3477,7 +3477,7 @@ token_plaintext: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/model_serving#token_plaintext ModelServing#token_plaintext}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/model_serving#token_plaintext ModelServing#token_plaintext}.
 
 ---
 
@@ -3499,9 +3499,9 @@ modelServing.ModelServingConfigServedEntitiesExternalModelDatabricksModelServing
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.modelServing.ModelServingConfigServedEntitiesExternalModelDatabricksModelServingConfig.property.databricksWorkspaceUrl">databricks_workspace_url</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/model_serving#databricks_workspace_url ModelServing#databricks_workspace_url}. |
-| <code><a href="#@cdktn/provider-databricks.modelServing.ModelServingConfigServedEntitiesExternalModelDatabricksModelServingConfig.property.databricksApiToken">databricks_api_token</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/model_serving#databricks_api_token ModelServing#databricks_api_token}. |
-| <code><a href="#@cdktn/provider-databricks.modelServing.ModelServingConfigServedEntitiesExternalModelDatabricksModelServingConfig.property.databricksApiTokenPlaintext">databricks_api_token_plaintext</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/model_serving#databricks_api_token_plaintext ModelServing#databricks_api_token_plaintext}. |
+| <code><a href="#@cdktn/provider-databricks.modelServing.ModelServingConfigServedEntitiesExternalModelDatabricksModelServingConfig.property.databricksWorkspaceUrl">databricks_workspace_url</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/model_serving#databricks_workspace_url ModelServing#databricks_workspace_url}. |
+| <code><a href="#@cdktn/provider-databricks.modelServing.ModelServingConfigServedEntitiesExternalModelDatabricksModelServingConfig.property.databricksApiToken">databricks_api_token</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/model_serving#databricks_api_token ModelServing#databricks_api_token}. |
+| <code><a href="#@cdktn/provider-databricks.modelServing.ModelServingConfigServedEntitiesExternalModelDatabricksModelServingConfig.property.databricksApiTokenPlaintext">databricks_api_token_plaintext</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/model_serving#databricks_api_token_plaintext ModelServing#databricks_api_token_plaintext}. |
 
 ---
 
@@ -3513,7 +3513,7 @@ databricks_workspace_url: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/model_serving#databricks_workspace_url ModelServing#databricks_workspace_url}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/model_serving#databricks_workspace_url ModelServing#databricks_workspace_url}.
 
 ---
 
@@ -3525,7 +3525,7 @@ databricks_api_token: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/model_serving#databricks_api_token ModelServing#databricks_api_token}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/model_serving#databricks_api_token ModelServing#databricks_api_token}.
 
 ---
 
@@ -3537,7 +3537,7 @@ databricks_api_token_plaintext: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/model_serving#databricks_api_token_plaintext ModelServing#databricks_api_token_plaintext}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/model_serving#databricks_api_token_plaintext ModelServing#databricks_api_token_plaintext}.
 
 ---
 
@@ -3560,10 +3560,10 @@ modelServing.ModelServingConfigServedEntitiesExternalModelGoogleCloudVertexAiCon
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.modelServing.ModelServingConfigServedEntitiesExternalModelGoogleCloudVertexAiConfig.property.projectId">project_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/model_serving#project_id ModelServing#project_id}. |
-| <code><a href="#@cdktn/provider-databricks.modelServing.ModelServingConfigServedEntitiesExternalModelGoogleCloudVertexAiConfig.property.region">region</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/model_serving#region ModelServing#region}. |
-| <code><a href="#@cdktn/provider-databricks.modelServing.ModelServingConfigServedEntitiesExternalModelGoogleCloudVertexAiConfig.property.privateKey">private_key</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/model_serving#private_key ModelServing#private_key}. |
-| <code><a href="#@cdktn/provider-databricks.modelServing.ModelServingConfigServedEntitiesExternalModelGoogleCloudVertexAiConfig.property.privateKeyPlaintext">private_key_plaintext</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/model_serving#private_key_plaintext ModelServing#private_key_plaintext}. |
+| <code><a href="#@cdktn/provider-databricks.modelServing.ModelServingConfigServedEntitiesExternalModelGoogleCloudVertexAiConfig.property.projectId">project_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/model_serving#project_id ModelServing#project_id}. |
+| <code><a href="#@cdktn/provider-databricks.modelServing.ModelServingConfigServedEntitiesExternalModelGoogleCloudVertexAiConfig.property.region">region</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/model_serving#region ModelServing#region}. |
+| <code><a href="#@cdktn/provider-databricks.modelServing.ModelServingConfigServedEntitiesExternalModelGoogleCloudVertexAiConfig.property.privateKey">private_key</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/model_serving#private_key ModelServing#private_key}. |
+| <code><a href="#@cdktn/provider-databricks.modelServing.ModelServingConfigServedEntitiesExternalModelGoogleCloudVertexAiConfig.property.privateKeyPlaintext">private_key_plaintext</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/model_serving#private_key_plaintext ModelServing#private_key_plaintext}. |
 
 ---
 
@@ -3575,7 +3575,7 @@ project_id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/model_serving#project_id ModelServing#project_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/model_serving#project_id ModelServing#project_id}.
 
 ---
 
@@ -3587,7 +3587,7 @@ region: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/model_serving#region ModelServing#region}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/model_serving#region ModelServing#region}.
 
 ---
 
@@ -3599,7 +3599,7 @@ private_key: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/model_serving#private_key ModelServing#private_key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/model_serving#private_key ModelServing#private_key}.
 
 ---
 
@@ -3611,7 +3611,7 @@ private_key_plaintext: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/model_serving#private_key_plaintext ModelServing#private_key_plaintext}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/model_serving#private_key_plaintext ModelServing#private_key_plaintext}.
 
 ---
 
@@ -3641,17 +3641,17 @@ modelServing.ModelServingConfigServedEntitiesExternalModelOpenaiConfig(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.modelServing.ModelServingConfigServedEntitiesExternalModelOpenaiConfig.property.microsoftEntraClientId">microsoft_entra_client_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/model_serving#microsoft_entra_client_id ModelServing#microsoft_entra_client_id}. |
-| <code><a href="#@cdktn/provider-databricks.modelServing.ModelServingConfigServedEntitiesExternalModelOpenaiConfig.property.microsoftEntraClientSecret">microsoft_entra_client_secret</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/model_serving#microsoft_entra_client_secret ModelServing#microsoft_entra_client_secret}. |
-| <code><a href="#@cdktn/provider-databricks.modelServing.ModelServingConfigServedEntitiesExternalModelOpenaiConfig.property.microsoftEntraClientSecretPlaintext">microsoft_entra_client_secret_plaintext</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/model_serving#microsoft_entra_client_secret_plaintext ModelServing#microsoft_entra_client_secret_plaintext}. |
-| <code><a href="#@cdktn/provider-databricks.modelServing.ModelServingConfigServedEntitiesExternalModelOpenaiConfig.property.microsoftEntraTenantId">microsoft_entra_tenant_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/model_serving#microsoft_entra_tenant_id ModelServing#microsoft_entra_tenant_id}. |
-| <code><a href="#@cdktn/provider-databricks.modelServing.ModelServingConfigServedEntitiesExternalModelOpenaiConfig.property.openaiApiBase">openai_api_base</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/model_serving#openai_api_base ModelServing#openai_api_base}. |
-| <code><a href="#@cdktn/provider-databricks.modelServing.ModelServingConfigServedEntitiesExternalModelOpenaiConfig.property.openaiApiKey">openai_api_key</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/model_serving#openai_api_key ModelServing#openai_api_key}. |
-| <code><a href="#@cdktn/provider-databricks.modelServing.ModelServingConfigServedEntitiesExternalModelOpenaiConfig.property.openaiApiKeyPlaintext">openai_api_key_plaintext</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/model_serving#openai_api_key_plaintext ModelServing#openai_api_key_plaintext}. |
-| <code><a href="#@cdktn/provider-databricks.modelServing.ModelServingConfigServedEntitiesExternalModelOpenaiConfig.property.openaiApiType">openai_api_type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/model_serving#openai_api_type ModelServing#openai_api_type}. |
-| <code><a href="#@cdktn/provider-databricks.modelServing.ModelServingConfigServedEntitiesExternalModelOpenaiConfig.property.openaiApiVersion">openai_api_version</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/model_serving#openai_api_version ModelServing#openai_api_version}. |
-| <code><a href="#@cdktn/provider-databricks.modelServing.ModelServingConfigServedEntitiesExternalModelOpenaiConfig.property.openaiDeploymentName">openai_deployment_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/model_serving#openai_deployment_name ModelServing#openai_deployment_name}. |
-| <code><a href="#@cdktn/provider-databricks.modelServing.ModelServingConfigServedEntitiesExternalModelOpenaiConfig.property.openaiOrganization">openai_organization</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/model_serving#openai_organization ModelServing#openai_organization}. |
+| <code><a href="#@cdktn/provider-databricks.modelServing.ModelServingConfigServedEntitiesExternalModelOpenaiConfig.property.microsoftEntraClientId">microsoft_entra_client_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/model_serving#microsoft_entra_client_id ModelServing#microsoft_entra_client_id}. |
+| <code><a href="#@cdktn/provider-databricks.modelServing.ModelServingConfigServedEntitiesExternalModelOpenaiConfig.property.microsoftEntraClientSecret">microsoft_entra_client_secret</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/model_serving#microsoft_entra_client_secret ModelServing#microsoft_entra_client_secret}. |
+| <code><a href="#@cdktn/provider-databricks.modelServing.ModelServingConfigServedEntitiesExternalModelOpenaiConfig.property.microsoftEntraClientSecretPlaintext">microsoft_entra_client_secret_plaintext</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/model_serving#microsoft_entra_client_secret_plaintext ModelServing#microsoft_entra_client_secret_plaintext}. |
+| <code><a href="#@cdktn/provider-databricks.modelServing.ModelServingConfigServedEntitiesExternalModelOpenaiConfig.property.microsoftEntraTenantId">microsoft_entra_tenant_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/model_serving#microsoft_entra_tenant_id ModelServing#microsoft_entra_tenant_id}. |
+| <code><a href="#@cdktn/provider-databricks.modelServing.ModelServingConfigServedEntitiesExternalModelOpenaiConfig.property.openaiApiBase">openai_api_base</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/model_serving#openai_api_base ModelServing#openai_api_base}. |
+| <code><a href="#@cdktn/provider-databricks.modelServing.ModelServingConfigServedEntitiesExternalModelOpenaiConfig.property.openaiApiKey">openai_api_key</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/model_serving#openai_api_key ModelServing#openai_api_key}. |
+| <code><a href="#@cdktn/provider-databricks.modelServing.ModelServingConfigServedEntitiesExternalModelOpenaiConfig.property.openaiApiKeyPlaintext">openai_api_key_plaintext</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/model_serving#openai_api_key_plaintext ModelServing#openai_api_key_plaintext}. |
+| <code><a href="#@cdktn/provider-databricks.modelServing.ModelServingConfigServedEntitiesExternalModelOpenaiConfig.property.openaiApiType">openai_api_type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/model_serving#openai_api_type ModelServing#openai_api_type}. |
+| <code><a href="#@cdktn/provider-databricks.modelServing.ModelServingConfigServedEntitiesExternalModelOpenaiConfig.property.openaiApiVersion">openai_api_version</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/model_serving#openai_api_version ModelServing#openai_api_version}. |
+| <code><a href="#@cdktn/provider-databricks.modelServing.ModelServingConfigServedEntitiesExternalModelOpenaiConfig.property.openaiDeploymentName">openai_deployment_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/model_serving#openai_deployment_name ModelServing#openai_deployment_name}. |
+| <code><a href="#@cdktn/provider-databricks.modelServing.ModelServingConfigServedEntitiesExternalModelOpenaiConfig.property.openaiOrganization">openai_organization</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/model_serving#openai_organization ModelServing#openai_organization}. |
 
 ---
 
@@ -3663,7 +3663,7 @@ microsoft_entra_client_id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/model_serving#microsoft_entra_client_id ModelServing#microsoft_entra_client_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/model_serving#microsoft_entra_client_id ModelServing#microsoft_entra_client_id}.
 
 ---
 
@@ -3675,7 +3675,7 @@ microsoft_entra_client_secret: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/model_serving#microsoft_entra_client_secret ModelServing#microsoft_entra_client_secret}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/model_serving#microsoft_entra_client_secret ModelServing#microsoft_entra_client_secret}.
 
 ---
 
@@ -3687,7 +3687,7 @@ microsoft_entra_client_secret_plaintext: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/model_serving#microsoft_entra_client_secret_plaintext ModelServing#microsoft_entra_client_secret_plaintext}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/model_serving#microsoft_entra_client_secret_plaintext ModelServing#microsoft_entra_client_secret_plaintext}.
 
 ---
 
@@ -3699,7 +3699,7 @@ microsoft_entra_tenant_id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/model_serving#microsoft_entra_tenant_id ModelServing#microsoft_entra_tenant_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/model_serving#microsoft_entra_tenant_id ModelServing#microsoft_entra_tenant_id}.
 
 ---
 
@@ -3711,7 +3711,7 @@ openai_api_base: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/model_serving#openai_api_base ModelServing#openai_api_base}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/model_serving#openai_api_base ModelServing#openai_api_base}.
 
 ---
 
@@ -3723,7 +3723,7 @@ openai_api_key: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/model_serving#openai_api_key ModelServing#openai_api_key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/model_serving#openai_api_key ModelServing#openai_api_key}.
 
 ---
 
@@ -3735,7 +3735,7 @@ openai_api_key_plaintext: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/model_serving#openai_api_key_plaintext ModelServing#openai_api_key_plaintext}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/model_serving#openai_api_key_plaintext ModelServing#openai_api_key_plaintext}.
 
 ---
 
@@ -3747,7 +3747,7 @@ openai_api_type: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/model_serving#openai_api_type ModelServing#openai_api_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/model_serving#openai_api_type ModelServing#openai_api_type}.
 
 ---
 
@@ -3759,7 +3759,7 @@ openai_api_version: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/model_serving#openai_api_version ModelServing#openai_api_version}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/model_serving#openai_api_version ModelServing#openai_api_version}.
 
 ---
 
@@ -3771,7 +3771,7 @@ openai_deployment_name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/model_serving#openai_deployment_name ModelServing#openai_deployment_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/model_serving#openai_deployment_name ModelServing#openai_deployment_name}.
 
 ---
 
@@ -3783,7 +3783,7 @@ openai_organization: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/model_serving#openai_organization ModelServing#openai_organization}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/model_serving#openai_organization ModelServing#openai_organization}.
 
 ---
 
@@ -3804,8 +3804,8 @@ modelServing.ModelServingConfigServedEntitiesExternalModelPalmConfig(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.modelServing.ModelServingConfigServedEntitiesExternalModelPalmConfig.property.palmApiKey">palm_api_key</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/model_serving#palm_api_key ModelServing#palm_api_key}. |
-| <code><a href="#@cdktn/provider-databricks.modelServing.ModelServingConfigServedEntitiesExternalModelPalmConfig.property.palmApiKeyPlaintext">palm_api_key_plaintext</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/model_serving#palm_api_key_plaintext ModelServing#palm_api_key_plaintext}. |
+| <code><a href="#@cdktn/provider-databricks.modelServing.ModelServingConfigServedEntitiesExternalModelPalmConfig.property.palmApiKey">palm_api_key</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/model_serving#palm_api_key ModelServing#palm_api_key}. |
+| <code><a href="#@cdktn/provider-databricks.modelServing.ModelServingConfigServedEntitiesExternalModelPalmConfig.property.palmApiKeyPlaintext">palm_api_key_plaintext</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/model_serving#palm_api_key_plaintext ModelServing#palm_api_key_plaintext}. |
 
 ---
 
@@ -3817,7 +3817,7 @@ palm_api_key: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/model_serving#palm_api_key ModelServing#palm_api_key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/model_serving#palm_api_key ModelServing#palm_api_key}.
 
 ---
 
@@ -3829,7 +3829,7 @@ palm_api_key_plaintext: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/model_serving#palm_api_key_plaintext ModelServing#palm_api_key_plaintext}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/model_serving#palm_api_key_plaintext ModelServing#palm_api_key_plaintext}.
 
 ---
 
@@ -3862,20 +3862,20 @@ modelServing.ModelServingConfigServedModels(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.modelServing.ModelServingConfigServedModels.property.modelName">model_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/model_serving#model_name ModelServing#model_name}. |
-| <code><a href="#@cdktn/provider-databricks.modelServing.ModelServingConfigServedModels.property.modelVersion">model_version</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/model_serving#model_version ModelServing#model_version}. |
-| <code><a href="#@cdktn/provider-databricks.modelServing.ModelServingConfigServedModels.property.burstScalingEnabled">burst_scaling_enabled</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/model_serving#burst_scaling_enabled ModelServing#burst_scaling_enabled}. |
-| <code><a href="#@cdktn/provider-databricks.modelServing.ModelServingConfigServedModels.property.environmentVars">environment_vars</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/model_serving#environment_vars ModelServing#environment_vars}. |
-| <code><a href="#@cdktn/provider-databricks.modelServing.ModelServingConfigServedModels.property.instanceProfileArn">instance_profile_arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/model_serving#instance_profile_arn ModelServing#instance_profile_arn}. |
-| <code><a href="#@cdktn/provider-databricks.modelServing.ModelServingConfigServedModels.property.maxProvisionedConcurrency">max_provisioned_concurrency</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/model_serving#max_provisioned_concurrency ModelServing#max_provisioned_concurrency}. |
-| <code><a href="#@cdktn/provider-databricks.modelServing.ModelServingConfigServedModels.property.maxProvisionedThroughput">max_provisioned_throughput</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/model_serving#max_provisioned_throughput ModelServing#max_provisioned_throughput}. |
-| <code><a href="#@cdktn/provider-databricks.modelServing.ModelServingConfigServedModels.property.minProvisionedConcurrency">min_provisioned_concurrency</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/model_serving#min_provisioned_concurrency ModelServing#min_provisioned_concurrency}. |
-| <code><a href="#@cdktn/provider-databricks.modelServing.ModelServingConfigServedModels.property.minProvisionedThroughput">min_provisioned_throughput</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/model_serving#min_provisioned_throughput ModelServing#min_provisioned_throughput}. |
-| <code><a href="#@cdktn/provider-databricks.modelServing.ModelServingConfigServedModels.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/model_serving#name ModelServing#name}. |
-| <code><a href="#@cdktn/provider-databricks.modelServing.ModelServingConfigServedModels.property.provisionedModelUnits">provisioned_model_units</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/model_serving#provisioned_model_units ModelServing#provisioned_model_units}. |
-| <code><a href="#@cdktn/provider-databricks.modelServing.ModelServingConfigServedModels.property.scaleToZeroEnabled">scale_to_zero_enabled</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/model_serving#scale_to_zero_enabled ModelServing#scale_to_zero_enabled}. |
-| <code><a href="#@cdktn/provider-databricks.modelServing.ModelServingConfigServedModels.property.workloadSize">workload_size</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/model_serving#workload_size ModelServing#workload_size}. |
-| <code><a href="#@cdktn/provider-databricks.modelServing.ModelServingConfigServedModels.property.workloadType">workload_type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/model_serving#workload_type ModelServing#workload_type}. |
+| <code><a href="#@cdktn/provider-databricks.modelServing.ModelServingConfigServedModels.property.modelName">model_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/model_serving#model_name ModelServing#model_name}. |
+| <code><a href="#@cdktn/provider-databricks.modelServing.ModelServingConfigServedModels.property.modelVersion">model_version</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/model_serving#model_version ModelServing#model_version}. |
+| <code><a href="#@cdktn/provider-databricks.modelServing.ModelServingConfigServedModels.property.burstScalingEnabled">burst_scaling_enabled</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/model_serving#burst_scaling_enabled ModelServing#burst_scaling_enabled}. |
+| <code><a href="#@cdktn/provider-databricks.modelServing.ModelServingConfigServedModels.property.environmentVars">environment_vars</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/model_serving#environment_vars ModelServing#environment_vars}. |
+| <code><a href="#@cdktn/provider-databricks.modelServing.ModelServingConfigServedModels.property.instanceProfileArn">instance_profile_arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/model_serving#instance_profile_arn ModelServing#instance_profile_arn}. |
+| <code><a href="#@cdktn/provider-databricks.modelServing.ModelServingConfigServedModels.property.maxProvisionedConcurrency">max_provisioned_concurrency</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/model_serving#max_provisioned_concurrency ModelServing#max_provisioned_concurrency}. |
+| <code><a href="#@cdktn/provider-databricks.modelServing.ModelServingConfigServedModels.property.maxProvisionedThroughput">max_provisioned_throughput</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/model_serving#max_provisioned_throughput ModelServing#max_provisioned_throughput}. |
+| <code><a href="#@cdktn/provider-databricks.modelServing.ModelServingConfigServedModels.property.minProvisionedConcurrency">min_provisioned_concurrency</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/model_serving#min_provisioned_concurrency ModelServing#min_provisioned_concurrency}. |
+| <code><a href="#@cdktn/provider-databricks.modelServing.ModelServingConfigServedModels.property.minProvisionedThroughput">min_provisioned_throughput</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/model_serving#min_provisioned_throughput ModelServing#min_provisioned_throughput}. |
+| <code><a href="#@cdktn/provider-databricks.modelServing.ModelServingConfigServedModels.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/model_serving#name ModelServing#name}. |
+| <code><a href="#@cdktn/provider-databricks.modelServing.ModelServingConfigServedModels.property.provisionedModelUnits">provisioned_model_units</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/model_serving#provisioned_model_units ModelServing#provisioned_model_units}. |
+| <code><a href="#@cdktn/provider-databricks.modelServing.ModelServingConfigServedModels.property.scaleToZeroEnabled">scale_to_zero_enabled</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/model_serving#scale_to_zero_enabled ModelServing#scale_to_zero_enabled}. |
+| <code><a href="#@cdktn/provider-databricks.modelServing.ModelServingConfigServedModels.property.workloadSize">workload_size</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/model_serving#workload_size ModelServing#workload_size}. |
+| <code><a href="#@cdktn/provider-databricks.modelServing.ModelServingConfigServedModels.property.workloadType">workload_type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/model_serving#workload_type ModelServing#workload_type}. |
 
 ---
 
@@ -3887,7 +3887,7 @@ model_name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/model_serving#model_name ModelServing#model_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/model_serving#model_name ModelServing#model_name}.
 
 ---
 
@@ -3899,7 +3899,7 @@ model_version: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/model_serving#model_version ModelServing#model_version}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/model_serving#model_version ModelServing#model_version}.
 
 ---
 
@@ -3911,7 +3911,7 @@ burst_scaling_enabled: bool | IResolvable
 
 - *Type:* bool | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/model_serving#burst_scaling_enabled ModelServing#burst_scaling_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/model_serving#burst_scaling_enabled ModelServing#burst_scaling_enabled}.
 
 ---
 
@@ -3923,7 +3923,7 @@ environment_vars: typing.Mapping[str]
 
 - *Type:* typing.Mapping[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/model_serving#environment_vars ModelServing#environment_vars}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/model_serving#environment_vars ModelServing#environment_vars}.
 
 ---
 
@@ -3935,7 +3935,7 @@ instance_profile_arn: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/model_serving#instance_profile_arn ModelServing#instance_profile_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/model_serving#instance_profile_arn ModelServing#instance_profile_arn}.
 
 ---
 
@@ -3947,7 +3947,7 @@ max_provisioned_concurrency: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/model_serving#max_provisioned_concurrency ModelServing#max_provisioned_concurrency}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/model_serving#max_provisioned_concurrency ModelServing#max_provisioned_concurrency}.
 
 ---
 
@@ -3959,7 +3959,7 @@ max_provisioned_throughput: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/model_serving#max_provisioned_throughput ModelServing#max_provisioned_throughput}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/model_serving#max_provisioned_throughput ModelServing#max_provisioned_throughput}.
 
 ---
 
@@ -3971,7 +3971,7 @@ min_provisioned_concurrency: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/model_serving#min_provisioned_concurrency ModelServing#min_provisioned_concurrency}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/model_serving#min_provisioned_concurrency ModelServing#min_provisioned_concurrency}.
 
 ---
 
@@ -3983,7 +3983,7 @@ min_provisioned_throughput: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/model_serving#min_provisioned_throughput ModelServing#min_provisioned_throughput}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/model_serving#min_provisioned_throughput ModelServing#min_provisioned_throughput}.
 
 ---
 
@@ -3995,7 +3995,7 @@ name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/model_serving#name ModelServing#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/model_serving#name ModelServing#name}.
 
 ---
 
@@ -4007,7 +4007,7 @@ provisioned_model_units: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/model_serving#provisioned_model_units ModelServing#provisioned_model_units}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/model_serving#provisioned_model_units ModelServing#provisioned_model_units}.
 
 ---
 
@@ -4019,7 +4019,7 @@ scale_to_zero_enabled: bool | IResolvable
 
 - *Type:* bool | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/model_serving#scale_to_zero_enabled ModelServing#scale_to_zero_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/model_serving#scale_to_zero_enabled ModelServing#scale_to_zero_enabled}.
 
 ---
 
@@ -4031,7 +4031,7 @@ workload_size: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/model_serving#workload_size ModelServing#workload_size}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/model_serving#workload_size ModelServing#workload_size}.
 
 ---
 
@@ -4043,7 +4043,7 @@ workload_type: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/model_serving#workload_type ModelServing#workload_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/model_serving#workload_type ModelServing#workload_type}.
 
 ---
 
@@ -4077,7 +4077,7 @@ routes: IResolvable | typing.List[ModelServingConfigTrafficConfigRoutes]
 
 routes block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/model_serving#routes ModelServing#routes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/model_serving#routes ModelServing#routes}
 
 ---
 
@@ -4099,9 +4099,9 @@ modelServing.ModelServingConfigTrafficConfigRoutes(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.modelServing.ModelServingConfigTrafficConfigRoutes.property.trafficPercentage">traffic_percentage</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/model_serving#traffic_percentage ModelServing#traffic_percentage}. |
-| <code><a href="#@cdktn/provider-databricks.modelServing.ModelServingConfigTrafficConfigRoutes.property.servedEntityName">served_entity_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/model_serving#served_entity_name ModelServing#served_entity_name}. |
-| <code><a href="#@cdktn/provider-databricks.modelServing.ModelServingConfigTrafficConfigRoutes.property.servedModelName">served_model_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/model_serving#served_model_name ModelServing#served_model_name}. |
+| <code><a href="#@cdktn/provider-databricks.modelServing.ModelServingConfigTrafficConfigRoutes.property.trafficPercentage">traffic_percentage</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/model_serving#traffic_percentage ModelServing#traffic_percentage}. |
+| <code><a href="#@cdktn/provider-databricks.modelServing.ModelServingConfigTrafficConfigRoutes.property.servedEntityName">served_entity_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/model_serving#served_entity_name ModelServing#served_entity_name}. |
+| <code><a href="#@cdktn/provider-databricks.modelServing.ModelServingConfigTrafficConfigRoutes.property.servedModelName">served_model_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/model_serving#served_model_name ModelServing#served_model_name}. |
 
 ---
 
@@ -4113,7 +4113,7 @@ traffic_percentage: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/model_serving#traffic_percentage ModelServing#traffic_percentage}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/model_serving#traffic_percentage ModelServing#traffic_percentage}.
 
 ---
 
@@ -4125,7 +4125,7 @@ served_entity_name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/model_serving#served_entity_name ModelServing#served_entity_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/model_serving#served_entity_name ModelServing#served_entity_name}.
 
 ---
 
@@ -4137,7 +4137,7 @@ served_model_name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/model_serving#served_model_name ModelServing#served_model_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/model_serving#served_model_name ModelServing#served_model_name}.
 
 ---
 
@@ -4158,8 +4158,8 @@ modelServing.ModelServingEmailNotifications(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.modelServing.ModelServingEmailNotifications.property.onUpdateFailure">on_update_failure</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/model_serving#on_update_failure ModelServing#on_update_failure}. |
-| <code><a href="#@cdktn/provider-databricks.modelServing.ModelServingEmailNotifications.property.onUpdateSuccess">on_update_success</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/model_serving#on_update_success ModelServing#on_update_success}. |
+| <code><a href="#@cdktn/provider-databricks.modelServing.ModelServingEmailNotifications.property.onUpdateFailure">on_update_failure</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/model_serving#on_update_failure ModelServing#on_update_failure}. |
+| <code><a href="#@cdktn/provider-databricks.modelServing.ModelServingEmailNotifications.property.onUpdateSuccess">on_update_success</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/model_serving#on_update_success ModelServing#on_update_success}. |
 
 ---
 
@@ -4171,7 +4171,7 @@ on_update_failure: typing.List[str]
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/model_serving#on_update_failure ModelServing#on_update_failure}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/model_serving#on_update_failure ModelServing#on_update_failure}.
 
 ---
 
@@ -4183,7 +4183,7 @@ on_update_success: typing.List[str]
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/model_serving#on_update_success ModelServing#on_update_success}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/model_serving#on_update_success ModelServing#on_update_success}.
 
 ---
 
@@ -4203,7 +4203,7 @@ modelServing.ModelServingProviderConfig(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.modelServing.ModelServingProviderConfig.property.workspaceId">workspace_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/model_serving#workspace_id ModelServing#workspace_id}. |
+| <code><a href="#@cdktn/provider-databricks.modelServing.ModelServingProviderConfig.property.workspaceId">workspace_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/model_serving#workspace_id ModelServing#workspace_id}. |
 
 ---
 
@@ -4215,7 +4215,7 @@ workspace_id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/model_serving#workspace_id ModelServing#workspace_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/model_serving#workspace_id ModelServing#workspace_id}.
 
 ---
 
@@ -4237,9 +4237,9 @@ modelServing.ModelServingRateLimits(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.modelServing.ModelServingRateLimits.property.calls">calls</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/model_serving#calls ModelServing#calls}. |
-| <code><a href="#@cdktn/provider-databricks.modelServing.ModelServingRateLimits.property.renewalPeriod">renewal_period</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/model_serving#renewal_period ModelServing#renewal_period}. |
-| <code><a href="#@cdktn/provider-databricks.modelServing.ModelServingRateLimits.property.key">key</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/model_serving#key ModelServing#key}. |
+| <code><a href="#@cdktn/provider-databricks.modelServing.ModelServingRateLimits.property.calls">calls</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/model_serving#calls ModelServing#calls}. |
+| <code><a href="#@cdktn/provider-databricks.modelServing.ModelServingRateLimits.property.renewalPeriod">renewal_period</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/model_serving#renewal_period ModelServing#renewal_period}. |
+| <code><a href="#@cdktn/provider-databricks.modelServing.ModelServingRateLimits.property.key">key</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/model_serving#key ModelServing#key}. |
 
 ---
 
@@ -4251,7 +4251,7 @@ calls: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/model_serving#calls ModelServing#calls}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/model_serving#calls ModelServing#calls}.
 
 ---
 
@@ -4263,7 +4263,7 @@ renewal_period: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/model_serving#renewal_period ModelServing#renewal_period}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/model_serving#renewal_period ModelServing#renewal_period}.
 
 ---
 
@@ -4275,7 +4275,7 @@ key: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/model_serving#key ModelServing#key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/model_serving#key ModelServing#key}.
 
 ---
 
@@ -4296,8 +4296,8 @@ modelServing.ModelServingTags(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.modelServing.ModelServingTags.property.key">key</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/model_serving#key ModelServing#key}. |
-| <code><a href="#@cdktn/provider-databricks.modelServing.ModelServingTags.property.value">value</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/model_serving#value ModelServing#value}. |
+| <code><a href="#@cdktn/provider-databricks.modelServing.ModelServingTags.property.key">key</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/model_serving#key ModelServing#key}. |
+| <code><a href="#@cdktn/provider-databricks.modelServing.ModelServingTags.property.value">value</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/model_serving#value ModelServing#value}. |
 
 ---
 
@@ -4309,7 +4309,7 @@ key: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/model_serving#key ModelServing#key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/model_serving#key ModelServing#key}.
 
 ---
 
@@ -4321,7 +4321,7 @@ value: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/model_serving#value ModelServing#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/model_serving#value ModelServing#value}.
 
 ---
 
@@ -4355,7 +4355,7 @@ inference_table_config: ModelServingTelemetryConfigInferenceTableConfig
 
 inference_table_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/model_serving#inference_table_config ModelServing#inference_table_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/model_serving#inference_table_config ModelServing#inference_table_config}
 
 ---
 
@@ -4376,8 +4376,8 @@ modelServing.ModelServingTelemetryConfigInferenceTableConfig(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.modelServing.ModelServingTelemetryConfigInferenceTableConfig.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/model_serving#name ModelServing#name}. |
-| <code><a href="#@cdktn/provider-databricks.modelServing.ModelServingTelemetryConfigInferenceTableConfig.property.samplingFraction">sampling_fraction</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/model_serving#sampling_fraction ModelServing#sampling_fraction}. |
+| <code><a href="#@cdktn/provider-databricks.modelServing.ModelServingTelemetryConfigInferenceTableConfig.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/model_serving#name ModelServing#name}. |
+| <code><a href="#@cdktn/provider-databricks.modelServing.ModelServingTelemetryConfigInferenceTableConfig.property.samplingFraction">sampling_fraction</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/model_serving#sampling_fraction ModelServing#sampling_fraction}. |
 
 ---
 
@@ -4389,7 +4389,7 @@ name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/model_serving#name ModelServing#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/model_serving#name ModelServing#name}.
 
 ---
 
@@ -4401,7 +4401,7 @@ sampling_fraction: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/model_serving#sampling_fraction ModelServing#sampling_fraction}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/model_serving#sampling_fraction ModelServing#sampling_fraction}.
 
 ---
 
@@ -4422,8 +4422,8 @@ modelServing.ModelServingTimeouts(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.modelServing.ModelServingTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/model_serving#create ModelServing#create}. |
-| <code><a href="#@cdktn/provider-databricks.modelServing.ModelServingTimeouts.property.update">update</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/model_serving#update ModelServing#update}. |
+| <code><a href="#@cdktn/provider-databricks.modelServing.ModelServingTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/model_serving#create ModelServing#create}. |
+| <code><a href="#@cdktn/provider-databricks.modelServing.ModelServingTimeouts.property.update">update</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/model_serving#update ModelServing#update}. |
 
 ---
 
@@ -4435,7 +4435,7 @@ create: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/model_serving#create ModelServing#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/model_serving#create ModelServing#create}.
 
 ---
 
@@ -4447,7 +4447,7 @@ update: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/model_serving#update ModelServing#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/model_serving#update ModelServing#update}.
 
 ---
 
@@ -4994,7 +4994,7 @@ def put_pii(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/model_serving#behavior ModelServing#behavior}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/model_serving#behavior ModelServing#behavior}.
 
 ---
 
@@ -5704,7 +5704,7 @@ def put_pii(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/model_serving#behavior ModelServing#behavior}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/model_serving#behavior ModelServing#behavior}.
 
 ---
 
@@ -6416,7 +6416,7 @@ def put_input(
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/model_serving#invalid_keywords ModelServing#invalid_keywords}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/model_serving#invalid_keywords ModelServing#invalid_keywords}.
 
 ---
 
@@ -6426,7 +6426,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 pii block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/model_serving#pii ModelServing#pii}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/model_serving#pii ModelServing#pii}
 
 ---
 
@@ -6434,7 +6434,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* bool | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/model_serving#safety ModelServing#safety}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/model_serving#safety ModelServing#safety}.
 
 ---
 
@@ -6442,7 +6442,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/model_serving#valid_topics ModelServing#valid_topics}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/model_serving#valid_topics ModelServing#valid_topics}.
 
 ---
 
@@ -6461,7 +6461,7 @@ def put_output(
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/model_serving#invalid_keywords ModelServing#invalid_keywords}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/model_serving#invalid_keywords ModelServing#invalid_keywords}.
 
 ---
 
@@ -6471,7 +6471,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 pii block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/model_serving#pii ModelServing#pii}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/model_serving#pii ModelServing#pii}
 
 ---
 
@@ -6479,7 +6479,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* bool | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/model_serving#safety ModelServing#safety}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/model_serving#safety ModelServing#safety}.
 
 ---
 
@@ -6487,7 +6487,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/model_serving#valid_topics ModelServing#valid_topics}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/model_serving#valid_topics ModelServing#valid_topics}.
 
 ---
 
@@ -7233,7 +7233,7 @@ def put_fallback_config(
 
 - *Type:* bool | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/model_serving#enabled ModelServing#enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/model_serving#enabled ModelServing#enabled}.
 
 ---
 
@@ -7252,7 +7252,7 @@ def put_guardrails(
 
 input block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/model_serving#input ModelServing#input}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/model_serving#input ModelServing#input}
 
 ---
 
@@ -7262,7 +7262,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 output block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/model_serving#output ModelServing#output}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/model_serving#output ModelServing#output}
 
 ---
 
@@ -7281,7 +7281,7 @@ def put_inference_table_config(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/model_serving#catalog_name ModelServing#catalog_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/model_serving#catalog_name ModelServing#catalog_name}.
 
 ---
 
@@ -7289,7 +7289,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* bool | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/model_serving#enabled ModelServing#enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/model_serving#enabled ModelServing#enabled}.
 
 ---
 
@@ -7297,7 +7297,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/model_serving#schema_name ModelServing#schema_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/model_serving#schema_name ModelServing#schema_name}.
 
 ---
 
@@ -7305,7 +7305,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/model_serving#table_name_prefix ModelServing#table_name_prefix}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/model_serving#table_name_prefix ModelServing#table_name_prefix}.
 
 ---
 
@@ -7335,7 +7335,7 @@ def put_usage_tracking_config(
 
 - *Type:* bool | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/model_serving#enabled ModelServing#enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/model_serving#enabled ModelServing#enabled}.
 
 ---
 
@@ -8681,7 +8681,7 @@ def put_auto_capture_config(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/model_serving#catalog_name ModelServing#catalog_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/model_serving#catalog_name ModelServing#catalog_name}.
 
 ---
 
@@ -8689,7 +8689,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* bool | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/model_serving#enabled ModelServing#enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/model_serving#enabled ModelServing#enabled}.
 
 ---
 
@@ -8697,7 +8697,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/model_serving#schema_name ModelServing#schema_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/model_serving#schema_name ModelServing#schema_name}.
 
 ---
 
@@ -8705,7 +8705,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/model_serving#table_name_prefix ModelServing#table_name_prefix}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/model_serving#table_name_prefix ModelServing#table_name_prefix}.
 
 ---
 
@@ -8751,7 +8751,7 @@ def put_traffic_config(
 
 routes block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/model_serving#routes ModelServing#routes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/model_serving#routes ModelServing#routes}
 
 ---
 
@@ -11723,7 +11723,7 @@ def put_api_key_auth(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/model_serving#key ModelServing#key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/model_serving#key ModelServing#key}.
 
 ---
 
@@ -11731,7 +11731,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/model_serving#value ModelServing#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/model_serving#value ModelServing#value}.
 
 ---
 
@@ -11739,7 +11739,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/model_serving#value_plaintext ModelServing#value_plaintext}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/model_serving#value_plaintext ModelServing#value_plaintext}.
 
 ---
 
@@ -11756,7 +11756,7 @@ def put_bearer_token_auth(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/model_serving#token ModelServing#token}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/model_serving#token ModelServing#token}.
 
 ---
 
@@ -11764,7 +11764,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/model_serving#token_plaintext ModelServing#token_plaintext}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/model_serving#token_plaintext ModelServing#token_plaintext}.
 
 ---
 
@@ -13474,7 +13474,7 @@ def put_ai21_labs_config(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/model_serving#ai21labs_api_key ModelServing#ai21labs_api_key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/model_serving#ai21labs_api_key ModelServing#ai21labs_api_key}.
 
 ---
 
@@ -13482,7 +13482,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/model_serving#ai21labs_api_key_plaintext ModelServing#ai21labs_api_key_plaintext}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/model_serving#ai21labs_api_key_plaintext ModelServing#ai21labs_api_key_plaintext}.
 
 ---
 
@@ -13504,7 +13504,7 @@ def put_amazon_bedrock_config(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/model_serving#aws_region ModelServing#aws_region}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/model_serving#aws_region ModelServing#aws_region}.
 
 ---
 
@@ -13512,7 +13512,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/model_serving#bedrock_provider ModelServing#bedrock_provider}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/model_serving#bedrock_provider ModelServing#bedrock_provider}.
 
 ---
 
@@ -13520,7 +13520,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/model_serving#aws_access_key_id ModelServing#aws_access_key_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/model_serving#aws_access_key_id ModelServing#aws_access_key_id}.
 
 ---
 
@@ -13528,7 +13528,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/model_serving#aws_access_key_id_plaintext ModelServing#aws_access_key_id_plaintext}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/model_serving#aws_access_key_id_plaintext ModelServing#aws_access_key_id_plaintext}.
 
 ---
 
@@ -13536,7 +13536,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/model_serving#aws_secret_access_key ModelServing#aws_secret_access_key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/model_serving#aws_secret_access_key ModelServing#aws_secret_access_key}.
 
 ---
 
@@ -13544,7 +13544,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/model_serving#aws_secret_access_key_plaintext ModelServing#aws_secret_access_key_plaintext}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/model_serving#aws_secret_access_key_plaintext ModelServing#aws_secret_access_key_plaintext}.
 
 ---
 
@@ -13552,7 +13552,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/model_serving#instance_profile_arn ModelServing#instance_profile_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/model_serving#instance_profile_arn ModelServing#instance_profile_arn}.
 
 ---
 
@@ -13569,7 +13569,7 @@ def put_anthropic_config(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/model_serving#anthropic_api_key ModelServing#anthropic_api_key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/model_serving#anthropic_api_key ModelServing#anthropic_api_key}.
 
 ---
 
@@ -13577,7 +13577,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/model_serving#anthropic_api_key_plaintext ModelServing#anthropic_api_key_plaintext}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/model_serving#anthropic_api_key_plaintext ModelServing#anthropic_api_key_plaintext}.
 
 ---
 
@@ -13595,7 +13595,7 @@ def put_cohere_config(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/model_serving#cohere_api_base ModelServing#cohere_api_base}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/model_serving#cohere_api_base ModelServing#cohere_api_base}.
 
 ---
 
@@ -13603,7 +13603,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/model_serving#cohere_api_key ModelServing#cohere_api_key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/model_serving#cohere_api_key ModelServing#cohere_api_key}.
 
 ---
 
@@ -13611,7 +13611,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/model_serving#cohere_api_key_plaintext ModelServing#cohere_api_key_plaintext}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/model_serving#cohere_api_key_plaintext ModelServing#cohere_api_key_plaintext}.
 
 ---
 
@@ -13629,7 +13629,7 @@ def put_custom_provider_config(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/model_serving#custom_provider_url ModelServing#custom_provider_url}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/model_serving#custom_provider_url ModelServing#custom_provider_url}.
 
 ---
 
@@ -13639,7 +13639,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 api_key_auth block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/model_serving#api_key_auth ModelServing#api_key_auth}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/model_serving#api_key_auth ModelServing#api_key_auth}
 
 ---
 
@@ -13649,7 +13649,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 bearer_token_auth block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/model_serving#bearer_token_auth ModelServing#bearer_token_auth}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/model_serving#bearer_token_auth ModelServing#bearer_token_auth}
 
 ---
 
@@ -13667,7 +13667,7 @@ def put_databricks_model_serving_config(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/model_serving#databricks_workspace_url ModelServing#databricks_workspace_url}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/model_serving#databricks_workspace_url ModelServing#databricks_workspace_url}.
 
 ---
 
@@ -13675,7 +13675,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/model_serving#databricks_api_token ModelServing#databricks_api_token}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/model_serving#databricks_api_token ModelServing#databricks_api_token}.
 
 ---
 
@@ -13683,7 +13683,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/model_serving#databricks_api_token_plaintext ModelServing#databricks_api_token_plaintext}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/model_serving#databricks_api_token_plaintext ModelServing#databricks_api_token_plaintext}.
 
 ---
 
@@ -13702,7 +13702,7 @@ def put_google_cloud_vertex_ai_config(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/model_serving#project_id ModelServing#project_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/model_serving#project_id ModelServing#project_id}.
 
 ---
 
@@ -13710,7 +13710,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/model_serving#region ModelServing#region}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/model_serving#region ModelServing#region}.
 
 ---
 
@@ -13718,7 +13718,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/model_serving#private_key ModelServing#private_key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/model_serving#private_key ModelServing#private_key}.
 
 ---
 
@@ -13726,7 +13726,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/model_serving#private_key_plaintext ModelServing#private_key_plaintext}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/model_serving#private_key_plaintext ModelServing#private_key_plaintext}.
 
 ---
 
@@ -13752,7 +13752,7 @@ def put_openai_config(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/model_serving#microsoft_entra_client_id ModelServing#microsoft_entra_client_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/model_serving#microsoft_entra_client_id ModelServing#microsoft_entra_client_id}.
 
 ---
 
@@ -13760,7 +13760,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/model_serving#microsoft_entra_client_secret ModelServing#microsoft_entra_client_secret}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/model_serving#microsoft_entra_client_secret ModelServing#microsoft_entra_client_secret}.
 
 ---
 
@@ -13768,7 +13768,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/model_serving#microsoft_entra_client_secret_plaintext ModelServing#microsoft_entra_client_secret_plaintext}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/model_serving#microsoft_entra_client_secret_plaintext ModelServing#microsoft_entra_client_secret_plaintext}.
 
 ---
 
@@ -13776,7 +13776,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/model_serving#microsoft_entra_tenant_id ModelServing#microsoft_entra_tenant_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/model_serving#microsoft_entra_tenant_id ModelServing#microsoft_entra_tenant_id}.
 
 ---
 
@@ -13784,7 +13784,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/model_serving#openai_api_base ModelServing#openai_api_base}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/model_serving#openai_api_base ModelServing#openai_api_base}.
 
 ---
 
@@ -13792,7 +13792,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/model_serving#openai_api_key ModelServing#openai_api_key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/model_serving#openai_api_key ModelServing#openai_api_key}.
 
 ---
 
@@ -13800,7 +13800,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/model_serving#openai_api_key_plaintext ModelServing#openai_api_key_plaintext}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/model_serving#openai_api_key_plaintext ModelServing#openai_api_key_plaintext}.
 
 ---
 
@@ -13808,7 +13808,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/model_serving#openai_api_type ModelServing#openai_api_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/model_serving#openai_api_type ModelServing#openai_api_type}.
 
 ---
 
@@ -13816,7 +13816,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/model_serving#openai_api_version ModelServing#openai_api_version}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/model_serving#openai_api_version ModelServing#openai_api_version}.
 
 ---
 
@@ -13824,7 +13824,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/model_serving#openai_deployment_name ModelServing#openai_deployment_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/model_serving#openai_deployment_name ModelServing#openai_deployment_name}.
 
 ---
 
@@ -13832,7 +13832,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/model_serving#openai_organization ModelServing#openai_organization}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/model_serving#openai_organization ModelServing#openai_organization}.
 
 ---
 
@@ -13849,7 +13849,7 @@ def put_palm_config(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/model_serving#palm_api_key ModelServing#palm_api_key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/model_serving#palm_api_key ModelServing#palm_api_key}.
 
 ---
 
@@ -13857,7 +13857,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/model_serving#palm_api_key_plaintext ModelServing#palm_api_key_plaintext}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/model_serving#palm_api_key_plaintext ModelServing#palm_api_key_plaintext}.
 
 ---
 
@@ -15014,7 +15014,7 @@ def put_external_model(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/model_serving#name ModelServing#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/model_serving#name ModelServing#name}.
 
 ---
 
@@ -15022,7 +15022,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/model_serving#provider ModelServing#provider}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/model_serving#provider ModelServing#provider}.
 
 ---
 
@@ -15030,7 +15030,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/model_serving#task ModelServing#task}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/model_serving#task ModelServing#task}.
 
 ---
 
@@ -15040,7 +15040,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 ai21labs_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/model_serving#ai21labs_config ModelServing#ai21labs_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/model_serving#ai21labs_config ModelServing#ai21labs_config}
 
 ---
 
@@ -15050,7 +15050,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 amazon_bedrock_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/model_serving#amazon_bedrock_config ModelServing#amazon_bedrock_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/model_serving#amazon_bedrock_config ModelServing#amazon_bedrock_config}
 
 ---
 
@@ -15060,7 +15060,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 anthropic_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/model_serving#anthropic_config ModelServing#anthropic_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/model_serving#anthropic_config ModelServing#anthropic_config}
 
 ---
 
@@ -15070,7 +15070,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 cohere_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/model_serving#cohere_config ModelServing#cohere_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/model_serving#cohere_config ModelServing#cohere_config}
 
 ---
 
@@ -15080,7 +15080,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 custom_provider_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/model_serving#custom_provider_config ModelServing#custom_provider_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/model_serving#custom_provider_config ModelServing#custom_provider_config}
 
 ---
 
@@ -15090,7 +15090,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 databricks_model_serving_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/model_serving#databricks_model_serving_config ModelServing#databricks_model_serving_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/model_serving#databricks_model_serving_config ModelServing#databricks_model_serving_config}
 
 ---
 
@@ -15100,7 +15100,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 google_cloud_vertex_ai_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/model_serving#google_cloud_vertex_ai_config ModelServing#google_cloud_vertex_ai_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/model_serving#google_cloud_vertex_ai_config ModelServing#google_cloud_vertex_ai_config}
 
 ---
 
@@ -15110,7 +15110,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 openai_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/model_serving#openai_config ModelServing#openai_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/model_serving#openai_config ModelServing#openai_config}
 
 ---
 
@@ -15120,7 +15120,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 palm_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/model_serving#palm_config ModelServing#palm_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/model_serving#palm_config ModelServing#palm_config}
 
 ---
 
@@ -19570,7 +19570,7 @@ def put_inference_table_config(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/model_serving#name ModelServing#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/model_serving#name ModelServing#name}.
 
 ---
 
@@ -19578,7 +19578,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/model_serving#sampling_fraction ModelServing#sampling_fraction}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/model_serving#sampling_fraction ModelServing#sampling_fraction}.
 
 ---
 

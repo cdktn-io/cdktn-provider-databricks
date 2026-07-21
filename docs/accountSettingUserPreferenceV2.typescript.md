@@ -4,7 +4,7 @@
 
 ### AccountSettingUserPreferenceV2 <a name="AccountSettingUserPreferenceV2" id="@cdktn/provider-databricks.accountSettingUserPreferenceV2.AccountSettingUserPreferenceV2"></a>
 
-Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/account_setting_user_preference_v2 databricks_account_setting_user_preference_v2}.
+Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/account_setting_user_preference_v2 databricks_account_setting_user_preference_v2}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.accountSettingUserPreferenceV2.AccountSettingUserPreferenceV2.Initializer"></a>
 
@@ -543,7 +543,7 @@ The construct id used in the generated config for the AccountSettingUserPreferen
 
 The id of the existing AccountSettingUserPreferenceV2 that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/account_setting_user_preference_v2#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/account_setting_user_preference_v2#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -862,7 +862,7 @@ const accountSettingUserPreferenceV2BooleanVal: accountSettingUserPreferenceV2.A
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.accountSettingUserPreferenceV2.AccountSettingUserPreferenceV2BooleanVal.property.value">value</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/account_setting_user_preference_v2#value AccountSettingUserPreferenceV2#value}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingUserPreferenceV2.AccountSettingUserPreferenceV2BooleanVal.property.value">value</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/account_setting_user_preference_v2#value AccountSettingUserPreferenceV2#value}. |
 
 ---
 
@@ -874,7 +874,7 @@ public readonly value: boolean | IResolvable;
 
 - *Type:* boolean | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/account_setting_user_preference_v2#value AccountSettingUserPreferenceV2#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/account_setting_user_preference_v2#value AccountSettingUserPreferenceV2#value}.
 
 ---
 
@@ -899,10 +899,10 @@ const accountSettingUserPreferenceV2Config: accountSettingUserPreferenceV2.Accou
 | <code><a href="#@cdktn/provider-databricks.accountSettingUserPreferenceV2.AccountSettingUserPreferenceV2Config.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.accountSettingUserPreferenceV2.AccountSettingUserPreferenceV2Config.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.accountSettingUserPreferenceV2.AccountSettingUserPreferenceV2Config.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-databricks.accountSettingUserPreferenceV2.AccountSettingUserPreferenceV2Config.property.booleanVal">booleanVal</a></code> | <code><a href="#@cdktn/provider-databricks.accountSettingUserPreferenceV2.AccountSettingUserPreferenceV2BooleanVal">AccountSettingUserPreferenceV2BooleanVal</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/account_setting_user_preference_v2#boolean_val AccountSettingUserPreferenceV2#boolean_val}. |
-| <code><a href="#@cdktn/provider-databricks.accountSettingUserPreferenceV2.AccountSettingUserPreferenceV2Config.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/account_setting_user_preference_v2#name AccountSettingUserPreferenceV2#name}. |
-| <code><a href="#@cdktn/provider-databricks.accountSettingUserPreferenceV2.AccountSettingUserPreferenceV2Config.property.stringVal">stringVal</a></code> | <code><a href="#@cdktn/provider-databricks.accountSettingUserPreferenceV2.AccountSettingUserPreferenceV2StringVal">AccountSettingUserPreferenceV2StringVal</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/account_setting_user_preference_v2#string_val AccountSettingUserPreferenceV2#string_val}. |
-| <code><a href="#@cdktn/provider-databricks.accountSettingUserPreferenceV2.AccountSettingUserPreferenceV2Config.property.userId">userId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/account_setting_user_preference_v2#user_id AccountSettingUserPreferenceV2#user_id}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingUserPreferenceV2.AccountSettingUserPreferenceV2Config.property.booleanVal">booleanVal</a></code> | <code><a href="#@cdktn/provider-databricks.accountSettingUserPreferenceV2.AccountSettingUserPreferenceV2BooleanVal">AccountSettingUserPreferenceV2BooleanVal</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/account_setting_user_preference_v2#boolean_val AccountSettingUserPreferenceV2#boolean_val}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingUserPreferenceV2.AccountSettingUserPreferenceV2Config.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/account_setting_user_preference_v2#name AccountSettingUserPreferenceV2#name}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingUserPreferenceV2.AccountSettingUserPreferenceV2Config.property.stringVal">stringVal</a></code> | <code><a href="#@cdktn/provider-databricks.accountSettingUserPreferenceV2.AccountSettingUserPreferenceV2StringVal">AccountSettingUserPreferenceV2StringVal</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/account_setting_user_preference_v2#string_val AccountSettingUserPreferenceV2#string_val}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingUserPreferenceV2.AccountSettingUserPreferenceV2Config.property.userId">userId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/account_setting_user_preference_v2#user_id AccountSettingUserPreferenceV2#user_id}. |
 
 ---
 
@@ -984,7 +984,7 @@ public readonly booleanVal: AccountSettingUserPreferenceV2BooleanVal;
 
 - *Type:* <a href="#@cdktn/provider-databricks.accountSettingUserPreferenceV2.AccountSettingUserPreferenceV2BooleanVal">AccountSettingUserPreferenceV2BooleanVal</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/account_setting_user_preference_v2#boolean_val AccountSettingUserPreferenceV2#boolean_val}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/account_setting_user_preference_v2#boolean_val AccountSettingUserPreferenceV2#boolean_val}.
 
 ---
 
@@ -996,7 +996,7 @@ public readonly name: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/account_setting_user_preference_v2#name AccountSettingUserPreferenceV2#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/account_setting_user_preference_v2#name AccountSettingUserPreferenceV2#name}.
 
 ---
 
@@ -1008,7 +1008,7 @@ public readonly stringVal: AccountSettingUserPreferenceV2StringVal;
 
 - *Type:* <a href="#@cdktn/provider-databricks.accountSettingUserPreferenceV2.AccountSettingUserPreferenceV2StringVal">AccountSettingUserPreferenceV2StringVal</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/account_setting_user_preference_v2#string_val AccountSettingUserPreferenceV2#string_val}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/account_setting_user_preference_v2#string_val AccountSettingUserPreferenceV2#string_val}.
 
 ---
 
@@ -1020,7 +1020,7 @@ public readonly userId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/account_setting_user_preference_v2#user_id AccountSettingUserPreferenceV2#user_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/account_setting_user_preference_v2#user_id AccountSettingUserPreferenceV2#user_id}.
 
 ---
 
@@ -1038,7 +1038,7 @@ const accountSettingUserPreferenceV2EffectiveBooleanVal: accountSettingUserPrefe
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.accountSettingUserPreferenceV2.AccountSettingUserPreferenceV2EffectiveBooleanVal.property.value">value</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/account_setting_user_preference_v2#value AccountSettingUserPreferenceV2#value}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingUserPreferenceV2.AccountSettingUserPreferenceV2EffectiveBooleanVal.property.value">value</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/account_setting_user_preference_v2#value AccountSettingUserPreferenceV2#value}. |
 
 ---
 
@@ -1050,7 +1050,7 @@ public readonly value: boolean | IResolvable;
 
 - *Type:* boolean | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/account_setting_user_preference_v2#value AccountSettingUserPreferenceV2#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/account_setting_user_preference_v2#value AccountSettingUserPreferenceV2#value}.
 
 ---
 
@@ -1068,7 +1068,7 @@ const accountSettingUserPreferenceV2EffectiveStringVal: accountSettingUserPrefer
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.accountSettingUserPreferenceV2.AccountSettingUserPreferenceV2EffectiveStringVal.property.value">value</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/account_setting_user_preference_v2#value AccountSettingUserPreferenceV2#value}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingUserPreferenceV2.AccountSettingUserPreferenceV2EffectiveStringVal.property.value">value</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/account_setting_user_preference_v2#value AccountSettingUserPreferenceV2#value}. |
 
 ---
 
@@ -1080,7 +1080,7 @@ public readonly value: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/account_setting_user_preference_v2#value AccountSettingUserPreferenceV2#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/account_setting_user_preference_v2#value AccountSettingUserPreferenceV2#value}.
 
 ---
 
@@ -1098,7 +1098,7 @@ const accountSettingUserPreferenceV2StringVal: accountSettingUserPreferenceV2.Ac
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.accountSettingUserPreferenceV2.AccountSettingUserPreferenceV2StringVal.property.value">value</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/account_setting_user_preference_v2#value AccountSettingUserPreferenceV2#value}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingUserPreferenceV2.AccountSettingUserPreferenceV2StringVal.property.value">value</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/account_setting_user_preference_v2#value AccountSettingUserPreferenceV2#value}. |
 
 ---
 
@@ -1110,7 +1110,7 @@ public readonly value: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/account_setting_user_preference_v2#value AccountSettingUserPreferenceV2#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/account_setting_user_preference_v2#value AccountSettingUserPreferenceV2#value}.
 
 ---
 

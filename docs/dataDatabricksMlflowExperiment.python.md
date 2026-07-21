@@ -4,7 +4,7 @@
 
 ### DataDatabricksMlflowExperiment <a name="DataDatabricksMlflowExperiment" id="@cdktn/provider-databricks.dataDatabricksMlflowExperiment.DataDatabricksMlflowExperiment"></a>
 
-Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/data-sources/mlflow_experiment databricks_mlflow_experiment}.
+Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/data-sources/mlflow_experiment databricks_mlflow_experiment}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksMlflowExperiment.DataDatabricksMlflowExperiment.Initializer"></a>
 
@@ -29,7 +29,8 @@ dataDatabricksMlflowExperiment.DataDatabricksMlflowExperiment(
   lifecycle_stage: str = None,
   name: str = None,
   provider_config: DataDatabricksMlflowExperimentProviderConfig = None,
-  tags: IResolvable | typing.List[DataDatabricksMlflowExperimentTags] = None
+  tags: IResolvable | typing.List[DataDatabricksMlflowExperimentTags] = None,
+  trace_location: DataDatabricksMlflowExperimentTraceLocation = None
 )
 ```
 
@@ -44,15 +45,16 @@ dataDatabricksMlflowExperiment.DataDatabricksMlflowExperiment(
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksMlflowExperiment.DataDatabricksMlflowExperiment.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksMlflowExperiment.DataDatabricksMlflowExperiment.Initializer.parameter.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksMlflowExperiment.DataDatabricksMlflowExperiment.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksMlflowExperiment.DataDatabricksMlflowExperiment.Initializer.parameter.artifactLocation">artifact_location</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/data-sources/mlflow_experiment#artifact_location DataDatabricksMlflowExperiment#artifact_location}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksMlflowExperiment.DataDatabricksMlflowExperiment.Initializer.parameter.creationTime">creation_time</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/data-sources/mlflow_experiment#creation_time DataDatabricksMlflowExperiment#creation_time}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksMlflowExperiment.DataDatabricksMlflowExperiment.Initializer.parameter.experimentId">experiment_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/data-sources/mlflow_experiment#experiment_id DataDatabricksMlflowExperiment#experiment_id}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksMlflowExperiment.DataDatabricksMlflowExperiment.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/data-sources/mlflow_experiment#id DataDatabricksMlflowExperiment#id}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksMlflowExperiment.DataDatabricksMlflowExperiment.Initializer.parameter.lastUpdateTime">last_update_time</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/data-sources/mlflow_experiment#last_update_time DataDatabricksMlflowExperiment#last_update_time}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksMlflowExperiment.DataDatabricksMlflowExperiment.Initializer.parameter.lifecycleStage">lifecycle_stage</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/data-sources/mlflow_experiment#lifecycle_stage DataDatabricksMlflowExperiment#lifecycle_stage}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksMlflowExperiment.DataDatabricksMlflowExperiment.Initializer.parameter.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/data-sources/mlflow_experiment#name DataDatabricksMlflowExperiment#name}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksMlflowExperiment.DataDatabricksMlflowExperiment.Initializer.parameter.artifactLocation">artifact_location</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/data-sources/mlflow_experiment#artifact_location DataDatabricksMlflowExperiment#artifact_location}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksMlflowExperiment.DataDatabricksMlflowExperiment.Initializer.parameter.creationTime">creation_time</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/data-sources/mlflow_experiment#creation_time DataDatabricksMlflowExperiment#creation_time}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksMlflowExperiment.DataDatabricksMlflowExperiment.Initializer.parameter.experimentId">experiment_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/data-sources/mlflow_experiment#experiment_id DataDatabricksMlflowExperiment#experiment_id}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksMlflowExperiment.DataDatabricksMlflowExperiment.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/data-sources/mlflow_experiment#id DataDatabricksMlflowExperiment#id}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksMlflowExperiment.DataDatabricksMlflowExperiment.Initializer.parameter.lastUpdateTime">last_update_time</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/data-sources/mlflow_experiment#last_update_time DataDatabricksMlflowExperiment#last_update_time}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksMlflowExperiment.DataDatabricksMlflowExperiment.Initializer.parameter.lifecycleStage">lifecycle_stage</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/data-sources/mlflow_experiment#lifecycle_stage DataDatabricksMlflowExperiment#lifecycle_stage}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksMlflowExperiment.DataDatabricksMlflowExperiment.Initializer.parameter.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/data-sources/mlflow_experiment#name DataDatabricksMlflowExperiment#name}. |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksMlflowExperiment.DataDatabricksMlflowExperiment.Initializer.parameter.providerConfig">provider_config</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksMlflowExperiment.DataDatabricksMlflowExperimentProviderConfig">DataDatabricksMlflowExperimentProviderConfig</a></code> | provider_config block. |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksMlflowExperiment.DataDatabricksMlflowExperiment.Initializer.parameter.tags">tags</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-databricks.dataDatabricksMlflowExperiment.DataDatabricksMlflowExperimentTags">DataDatabricksMlflowExperimentTags</a>]</code> | tags block. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksMlflowExperiment.DataDatabricksMlflowExperiment.Initializer.parameter.traceLocation">trace_location</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksMlflowExperiment.DataDatabricksMlflowExperimentTraceLocation">DataDatabricksMlflowExperimentTraceLocation</a></code> | trace_location block. |
 
 ---
 
@@ -120,7 +122,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/data-sources/mlflow_experiment#artifact_location DataDatabricksMlflowExperiment#artifact_location}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/data-sources/mlflow_experiment#artifact_location DataDatabricksMlflowExperiment#artifact_location}.
 
 ---
 
@@ -128,7 +130,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/data-sources/mlflow_experiment#creation_time DataDatabricksMlflowExperiment#creation_time}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/data-sources/mlflow_experiment#creation_time DataDatabricksMlflowExperiment#creation_time}.
 
 ---
 
@@ -136,7 +138,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/data-sources/mlflow_experiment#experiment_id DataDatabricksMlflowExperiment#experiment_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/data-sources/mlflow_experiment#experiment_id DataDatabricksMlflowExperiment#experiment_id}.
 
 ---
 
@@ -144,7 +146,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/data-sources/mlflow_experiment#id DataDatabricksMlflowExperiment#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/data-sources/mlflow_experiment#id DataDatabricksMlflowExperiment#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -155,7 +157,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/data-sources/mlflow_experiment#last_update_time DataDatabricksMlflowExperiment#last_update_time}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/data-sources/mlflow_experiment#last_update_time DataDatabricksMlflowExperiment#last_update_time}.
 
 ---
 
@@ -163,7 +165,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/data-sources/mlflow_experiment#lifecycle_stage DataDatabricksMlflowExperiment#lifecycle_stage}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/data-sources/mlflow_experiment#lifecycle_stage DataDatabricksMlflowExperiment#lifecycle_stage}.
 
 ---
 
@@ -171,7 +173,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/data-sources/mlflow_experiment#name DataDatabricksMlflowExperiment#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/data-sources/mlflow_experiment#name DataDatabricksMlflowExperiment#name}.
 
 ---
 
@@ -181,7 +183,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 provider_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/data-sources/mlflow_experiment#provider_config DataDatabricksMlflowExperiment#provider_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/data-sources/mlflow_experiment#provider_config DataDatabricksMlflowExperiment#provider_config}
 
 ---
 
@@ -191,7 +193,17 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 tags block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/data-sources/mlflow_experiment#tags DataDatabricksMlflowExperiment#tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/data-sources/mlflow_experiment#tags DataDatabricksMlflowExperiment#tags}
+
+---
+
+##### `trace_location`<sup>Optional</sup> <a name="trace_location" id="@cdktn/provider-databricks.dataDatabricksMlflowExperiment.DataDatabricksMlflowExperiment.Initializer.parameter.traceLocation"></a>
+
+- *Type:* <a href="#@cdktn/provider-databricks.dataDatabricksMlflowExperiment.DataDatabricksMlflowExperimentTraceLocation">DataDatabricksMlflowExperimentTraceLocation</a>
+
+trace_location block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/data-sources/mlflow_experiment#trace_location DataDatabricksMlflowExperiment#trace_location}
 
 ---
 
@@ -219,6 +231,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksMlflowExperiment.DataDatabricksMlflowExperiment.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksMlflowExperiment.DataDatabricksMlflowExperiment.putProviderConfig">put_provider_config</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksMlflowExperiment.DataDatabricksMlflowExperiment.putTags">put_tags</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksMlflowExperiment.DataDatabricksMlflowExperiment.putTraceLocation">put_trace_location</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksMlflowExperiment.DataDatabricksMlflowExperiment.resetArtifactLocation">reset_artifact_location</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksMlflowExperiment.DataDatabricksMlflowExperiment.resetCreationTime">reset_creation_time</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksMlflowExperiment.DataDatabricksMlflowExperiment.resetExperimentId">reset_experiment_id</a></code> | *No description.* |
@@ -228,6 +241,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksMlflowExperiment.DataDatabricksMlflowExperiment.resetName">reset_name</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksMlflowExperiment.DataDatabricksMlflowExperiment.resetProviderConfig">reset_provider_config</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksMlflowExperiment.DataDatabricksMlflowExperiment.resetTags">reset_tags</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksMlflowExperiment.DataDatabricksMlflowExperiment.resetTraceLocation">reset_trace_location</a></code> | *No description.* |
 
 ---
 
@@ -483,7 +497,7 @@ def put_provider_config(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/data-sources/mlflow_experiment#workspace_id DataDatabricksMlflowExperiment#workspace_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/data-sources/mlflow_experiment#workspace_id DataDatabricksMlflowExperiment#workspace_id}.
 
 ---
 
@@ -498,6 +512,24 @@ def put_tags(
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-databricks.dataDatabricksMlflowExperiment.DataDatabricksMlflowExperiment.putTags.parameter.value"></a>
 
 - *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-databricks.dataDatabricksMlflowExperiment.DataDatabricksMlflowExperimentTags">DataDatabricksMlflowExperimentTags</a>]
+
+---
+
+##### `put_trace_location` <a name="put_trace_location" id="@cdktn/provider-databricks.dataDatabricksMlflowExperiment.DataDatabricksMlflowExperiment.putTraceLocation"></a>
+
+```python
+def put_trace_location(
+  uc_trace_location: DataDatabricksMlflowExperimentTraceLocationUcTraceLocation = None
+) -> None
+```
+
+###### `uc_trace_location`<sup>Optional</sup> <a name="uc_trace_location" id="@cdktn/provider-databricks.dataDatabricksMlflowExperiment.DataDatabricksMlflowExperiment.putTraceLocation.parameter.ucTraceLocation"></a>
+
+- *Type:* <a href="#@cdktn/provider-databricks.dataDatabricksMlflowExperiment.DataDatabricksMlflowExperimentTraceLocationUcTraceLocation">DataDatabricksMlflowExperimentTraceLocationUcTraceLocation</a>
+
+uc_trace_location block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/data-sources/mlflow_experiment#uc_trace_location DataDatabricksMlflowExperiment#uc_trace_location}
 
 ---
 
@@ -553,6 +585,12 @@ def reset_provider_config() -> None
 
 ```python
 def reset_tags() -> None
+```
+
+##### `reset_trace_location` <a name="reset_trace_location" id="@cdktn/provider-databricks.dataDatabricksMlflowExperiment.DataDatabricksMlflowExperiment.resetTraceLocation"></a>
+
+```python
+def reset_trace_location() -> None
 ```
 
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
@@ -669,7 +707,7 @@ The construct id used in the generated config for the DataDatabricksMlflowExperi
 
 The id of the existing DataDatabricksMlflowExperiment that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/data-sources/mlflow_experiment#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/data-sources/mlflow_experiment#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -699,6 +737,7 @@ Refer to the {@link https://registry.terraform.io/providers/databricks/databrick
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksMlflowExperiment.DataDatabricksMlflowExperiment.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksMlflowExperiment.DataDatabricksMlflowExperiment.property.providerConfig">provider_config</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksMlflowExperiment.DataDatabricksMlflowExperimentProviderConfigOutputReference">DataDatabricksMlflowExperimentProviderConfigOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksMlflowExperiment.DataDatabricksMlflowExperiment.property.tags">tags</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksMlflowExperiment.DataDatabricksMlflowExperimentTagsList">DataDatabricksMlflowExperimentTagsList</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksMlflowExperiment.DataDatabricksMlflowExperiment.property.traceLocation">trace_location</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksMlflowExperiment.DataDatabricksMlflowExperimentTraceLocationOutputReference">DataDatabricksMlflowExperimentTraceLocationOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksMlflowExperiment.DataDatabricksMlflowExperiment.property.artifactLocationInput">artifact_location_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksMlflowExperiment.DataDatabricksMlflowExperiment.property.creationTimeInput">creation_time_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksMlflowExperiment.DataDatabricksMlflowExperiment.property.experimentIdInput">experiment_id_input</a></code> | <code>str</code> | *No description.* |
@@ -708,6 +747,7 @@ Refer to the {@link https://registry.terraform.io/providers/databricks/databrick
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksMlflowExperiment.DataDatabricksMlflowExperiment.property.nameInput">name_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksMlflowExperiment.DataDatabricksMlflowExperiment.property.providerConfigInput">provider_config_input</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksMlflowExperiment.DataDatabricksMlflowExperimentProviderConfig">DataDatabricksMlflowExperimentProviderConfig</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksMlflowExperiment.DataDatabricksMlflowExperiment.property.tagsInput">tags_input</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-databricks.dataDatabricksMlflowExperiment.DataDatabricksMlflowExperimentTags">DataDatabricksMlflowExperimentTags</a>]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksMlflowExperiment.DataDatabricksMlflowExperiment.property.traceLocationInput">trace_location_input</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksMlflowExperiment.DataDatabricksMlflowExperimentTraceLocation">DataDatabricksMlflowExperimentTraceLocation</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksMlflowExperiment.DataDatabricksMlflowExperiment.property.artifactLocation">artifact_location</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksMlflowExperiment.DataDatabricksMlflowExperiment.property.creationTime">creation_time</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksMlflowExperiment.DataDatabricksMlflowExperiment.property.experimentId">experiment_id</a></code> | <code>str</code> | *No description.* |
@@ -860,6 +900,16 @@ tags: DataDatabricksMlflowExperimentTagsList
 
 ---
 
+##### `trace_location`<sup>Required</sup> <a name="trace_location" id="@cdktn/provider-databricks.dataDatabricksMlflowExperiment.DataDatabricksMlflowExperiment.property.traceLocation"></a>
+
+```python
+trace_location: DataDatabricksMlflowExperimentTraceLocationOutputReference
+```
+
+- *Type:* <a href="#@cdktn/provider-databricks.dataDatabricksMlflowExperiment.DataDatabricksMlflowExperimentTraceLocationOutputReference">DataDatabricksMlflowExperimentTraceLocationOutputReference</a>
+
+---
+
 ##### `artifact_location_input`<sup>Optional</sup> <a name="artifact_location_input" id="@cdktn/provider-databricks.dataDatabricksMlflowExperiment.DataDatabricksMlflowExperiment.property.artifactLocationInput"></a>
 
 ```python
@@ -947,6 +997,16 @@ tags_input: IResolvable | typing.List[DataDatabricksMlflowExperimentTags]
 ```
 
 - *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-databricks.dataDatabricksMlflowExperiment.DataDatabricksMlflowExperimentTags">DataDatabricksMlflowExperimentTags</a>]
+
+---
+
+##### `trace_location_input`<sup>Optional</sup> <a name="trace_location_input" id="@cdktn/provider-databricks.dataDatabricksMlflowExperiment.DataDatabricksMlflowExperiment.property.traceLocationInput"></a>
+
+```python
+trace_location_input: DataDatabricksMlflowExperimentTraceLocation
+```
+
+- *Type:* <a href="#@cdktn/provider-databricks.dataDatabricksMlflowExperiment.DataDatabricksMlflowExperimentTraceLocation">DataDatabricksMlflowExperimentTraceLocation</a>
 
 ---
 
@@ -1063,7 +1123,8 @@ dataDatabricksMlflowExperiment.DataDatabricksMlflowExperimentConfig(
   lifecycle_stage: str = None,
   name: str = None,
   provider_config: DataDatabricksMlflowExperimentProviderConfig = None,
-  tags: IResolvable | typing.List[DataDatabricksMlflowExperimentTags] = None
+  tags: IResolvable | typing.List[DataDatabricksMlflowExperimentTags] = None,
+  trace_location: DataDatabricksMlflowExperimentTraceLocation = None
 )
 ```
 
@@ -1078,15 +1139,16 @@ dataDatabricksMlflowExperiment.DataDatabricksMlflowExperimentConfig(
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksMlflowExperiment.DataDatabricksMlflowExperimentConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksMlflowExperiment.DataDatabricksMlflowExperimentConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksMlflowExperiment.DataDatabricksMlflowExperimentConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksMlflowExperiment.DataDatabricksMlflowExperimentConfig.property.artifactLocation">artifact_location</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/data-sources/mlflow_experiment#artifact_location DataDatabricksMlflowExperiment#artifact_location}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksMlflowExperiment.DataDatabricksMlflowExperimentConfig.property.creationTime">creation_time</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/data-sources/mlflow_experiment#creation_time DataDatabricksMlflowExperiment#creation_time}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksMlflowExperiment.DataDatabricksMlflowExperimentConfig.property.experimentId">experiment_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/data-sources/mlflow_experiment#experiment_id DataDatabricksMlflowExperiment#experiment_id}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksMlflowExperiment.DataDatabricksMlflowExperimentConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/data-sources/mlflow_experiment#id DataDatabricksMlflowExperiment#id}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksMlflowExperiment.DataDatabricksMlflowExperimentConfig.property.lastUpdateTime">last_update_time</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/data-sources/mlflow_experiment#last_update_time DataDatabricksMlflowExperiment#last_update_time}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksMlflowExperiment.DataDatabricksMlflowExperimentConfig.property.lifecycleStage">lifecycle_stage</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/data-sources/mlflow_experiment#lifecycle_stage DataDatabricksMlflowExperiment#lifecycle_stage}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksMlflowExperiment.DataDatabricksMlflowExperimentConfig.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/data-sources/mlflow_experiment#name DataDatabricksMlflowExperiment#name}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksMlflowExperiment.DataDatabricksMlflowExperimentConfig.property.artifactLocation">artifact_location</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/data-sources/mlflow_experiment#artifact_location DataDatabricksMlflowExperiment#artifact_location}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksMlflowExperiment.DataDatabricksMlflowExperimentConfig.property.creationTime">creation_time</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/data-sources/mlflow_experiment#creation_time DataDatabricksMlflowExperiment#creation_time}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksMlflowExperiment.DataDatabricksMlflowExperimentConfig.property.experimentId">experiment_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/data-sources/mlflow_experiment#experiment_id DataDatabricksMlflowExperiment#experiment_id}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksMlflowExperiment.DataDatabricksMlflowExperimentConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/data-sources/mlflow_experiment#id DataDatabricksMlflowExperiment#id}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksMlflowExperiment.DataDatabricksMlflowExperimentConfig.property.lastUpdateTime">last_update_time</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/data-sources/mlflow_experiment#last_update_time DataDatabricksMlflowExperiment#last_update_time}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksMlflowExperiment.DataDatabricksMlflowExperimentConfig.property.lifecycleStage">lifecycle_stage</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/data-sources/mlflow_experiment#lifecycle_stage DataDatabricksMlflowExperiment#lifecycle_stage}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksMlflowExperiment.DataDatabricksMlflowExperimentConfig.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/data-sources/mlflow_experiment#name DataDatabricksMlflowExperiment#name}. |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksMlflowExperiment.DataDatabricksMlflowExperimentConfig.property.providerConfig">provider_config</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksMlflowExperiment.DataDatabricksMlflowExperimentProviderConfig">DataDatabricksMlflowExperimentProviderConfig</a></code> | provider_config block. |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksMlflowExperiment.DataDatabricksMlflowExperimentConfig.property.tags">tags</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-databricks.dataDatabricksMlflowExperiment.DataDatabricksMlflowExperimentTags">DataDatabricksMlflowExperimentTags</a>]</code> | tags block. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksMlflowExperiment.DataDatabricksMlflowExperimentConfig.property.traceLocation">trace_location</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksMlflowExperiment.DataDatabricksMlflowExperimentTraceLocation">DataDatabricksMlflowExperimentTraceLocation</a></code> | trace_location block. |
 
 ---
 
@@ -1168,7 +1230,7 @@ artifact_location: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/data-sources/mlflow_experiment#artifact_location DataDatabricksMlflowExperiment#artifact_location}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/data-sources/mlflow_experiment#artifact_location DataDatabricksMlflowExperiment#artifact_location}.
 
 ---
 
@@ -1180,7 +1242,7 @@ creation_time: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/data-sources/mlflow_experiment#creation_time DataDatabricksMlflowExperiment#creation_time}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/data-sources/mlflow_experiment#creation_time DataDatabricksMlflowExperiment#creation_time}.
 
 ---
 
@@ -1192,7 +1254,7 @@ experiment_id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/data-sources/mlflow_experiment#experiment_id DataDatabricksMlflowExperiment#experiment_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/data-sources/mlflow_experiment#experiment_id DataDatabricksMlflowExperiment#experiment_id}.
 
 ---
 
@@ -1204,7 +1266,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/data-sources/mlflow_experiment#id DataDatabricksMlflowExperiment#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/data-sources/mlflow_experiment#id DataDatabricksMlflowExperiment#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1219,7 +1281,7 @@ last_update_time: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/data-sources/mlflow_experiment#last_update_time DataDatabricksMlflowExperiment#last_update_time}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/data-sources/mlflow_experiment#last_update_time DataDatabricksMlflowExperiment#last_update_time}.
 
 ---
 
@@ -1231,7 +1293,7 @@ lifecycle_stage: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/data-sources/mlflow_experiment#lifecycle_stage DataDatabricksMlflowExperiment#lifecycle_stage}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/data-sources/mlflow_experiment#lifecycle_stage DataDatabricksMlflowExperiment#lifecycle_stage}.
 
 ---
 
@@ -1243,7 +1305,7 @@ name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/data-sources/mlflow_experiment#name DataDatabricksMlflowExperiment#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/data-sources/mlflow_experiment#name DataDatabricksMlflowExperiment#name}.
 
 ---
 
@@ -1257,7 +1319,7 @@ provider_config: DataDatabricksMlflowExperimentProviderConfig
 
 provider_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/data-sources/mlflow_experiment#provider_config DataDatabricksMlflowExperiment#provider_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/data-sources/mlflow_experiment#provider_config DataDatabricksMlflowExperiment#provider_config}
 
 ---
 
@@ -1271,7 +1333,21 @@ tags: IResolvable | typing.List[DataDatabricksMlflowExperimentTags]
 
 tags block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/data-sources/mlflow_experiment#tags DataDatabricksMlflowExperiment#tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/data-sources/mlflow_experiment#tags DataDatabricksMlflowExperiment#tags}
+
+---
+
+##### `trace_location`<sup>Optional</sup> <a name="trace_location" id="@cdktn/provider-databricks.dataDatabricksMlflowExperiment.DataDatabricksMlflowExperimentConfig.property.traceLocation"></a>
+
+```python
+trace_location: DataDatabricksMlflowExperimentTraceLocation
+```
+
+- *Type:* <a href="#@cdktn/provider-databricks.dataDatabricksMlflowExperiment.DataDatabricksMlflowExperimentTraceLocation">DataDatabricksMlflowExperimentTraceLocation</a>
+
+trace_location block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/data-sources/mlflow_experiment#trace_location DataDatabricksMlflowExperiment#trace_location}
 
 ---
 
@@ -1291,7 +1367,7 @@ dataDatabricksMlflowExperiment.DataDatabricksMlflowExperimentProviderConfig(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksMlflowExperiment.DataDatabricksMlflowExperimentProviderConfig.property.workspaceId">workspace_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/data-sources/mlflow_experiment#workspace_id DataDatabricksMlflowExperiment#workspace_id}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksMlflowExperiment.DataDatabricksMlflowExperimentProviderConfig.property.workspaceId">workspace_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/data-sources/mlflow_experiment#workspace_id DataDatabricksMlflowExperiment#workspace_id}. |
 
 ---
 
@@ -1303,7 +1379,7 @@ workspace_id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/data-sources/mlflow_experiment#workspace_id DataDatabricksMlflowExperiment#workspace_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/data-sources/mlflow_experiment#workspace_id DataDatabricksMlflowExperiment#workspace_id}.
 
 ---
 
@@ -1324,8 +1400,8 @@ dataDatabricksMlflowExperiment.DataDatabricksMlflowExperimentTags(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksMlflowExperiment.DataDatabricksMlflowExperimentTags.property.key">key</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/data-sources/mlflow_experiment#key DataDatabricksMlflowExperiment#key}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksMlflowExperiment.DataDatabricksMlflowExperimentTags.property.value">value</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/data-sources/mlflow_experiment#value DataDatabricksMlflowExperiment#value}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksMlflowExperiment.DataDatabricksMlflowExperimentTags.property.key">key</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/data-sources/mlflow_experiment#key DataDatabricksMlflowExperiment#key}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksMlflowExperiment.DataDatabricksMlflowExperimentTags.property.value">value</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/data-sources/mlflow_experiment#value DataDatabricksMlflowExperiment#value}. |
 
 ---
 
@@ -1337,7 +1413,7 @@ key: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/data-sources/mlflow_experiment#key DataDatabricksMlflowExperiment#key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/data-sources/mlflow_experiment#key DataDatabricksMlflowExperiment#key}.
 
 ---
 
@@ -1349,7 +1425,101 @@ value: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/data-sources/mlflow_experiment#value DataDatabricksMlflowExperiment#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/data-sources/mlflow_experiment#value DataDatabricksMlflowExperiment#value}.
+
+---
+
+### DataDatabricksMlflowExperimentTraceLocation <a name="DataDatabricksMlflowExperimentTraceLocation" id="@cdktn/provider-databricks.dataDatabricksMlflowExperiment.DataDatabricksMlflowExperimentTraceLocation"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksMlflowExperiment.DataDatabricksMlflowExperimentTraceLocation.Initializer"></a>
+
+```python
+from cdktn_provider_databricks import data_databricks_mlflow_experiment
+
+dataDatabricksMlflowExperiment.DataDatabricksMlflowExperimentTraceLocation(
+  uc_trace_location: DataDatabricksMlflowExperimentTraceLocationUcTraceLocation = None
+)
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksMlflowExperiment.DataDatabricksMlflowExperimentTraceLocation.property.ucTraceLocation">uc_trace_location</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksMlflowExperiment.DataDatabricksMlflowExperimentTraceLocationUcTraceLocation">DataDatabricksMlflowExperimentTraceLocationUcTraceLocation</a></code> | uc_trace_location block. |
+
+---
+
+##### `uc_trace_location`<sup>Optional</sup> <a name="uc_trace_location" id="@cdktn/provider-databricks.dataDatabricksMlflowExperiment.DataDatabricksMlflowExperimentTraceLocation.property.ucTraceLocation"></a>
+
+```python
+uc_trace_location: DataDatabricksMlflowExperimentTraceLocationUcTraceLocation
+```
+
+- *Type:* <a href="#@cdktn/provider-databricks.dataDatabricksMlflowExperiment.DataDatabricksMlflowExperimentTraceLocationUcTraceLocation">DataDatabricksMlflowExperimentTraceLocationUcTraceLocation</a>
+
+uc_trace_location block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/data-sources/mlflow_experiment#uc_trace_location DataDatabricksMlflowExperiment#uc_trace_location}
+
+---
+
+### DataDatabricksMlflowExperimentTraceLocationUcTraceLocation <a name="DataDatabricksMlflowExperimentTraceLocationUcTraceLocation" id="@cdktn/provider-databricks.dataDatabricksMlflowExperiment.DataDatabricksMlflowExperimentTraceLocationUcTraceLocation"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksMlflowExperiment.DataDatabricksMlflowExperimentTraceLocationUcTraceLocation.Initializer"></a>
+
+```python
+from cdktn_provider_databricks import data_databricks_mlflow_experiment
+
+dataDatabricksMlflowExperiment.DataDatabricksMlflowExperimentTraceLocationUcTraceLocation(
+  catalog: str,
+  schema: str,
+  table_prefix: str = None
+)
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksMlflowExperiment.DataDatabricksMlflowExperimentTraceLocationUcTraceLocation.property.catalog">catalog</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/data-sources/mlflow_experiment#catalog DataDatabricksMlflowExperiment#catalog}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksMlflowExperiment.DataDatabricksMlflowExperimentTraceLocationUcTraceLocation.property.schema">schema</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/data-sources/mlflow_experiment#schema DataDatabricksMlflowExperiment#schema}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksMlflowExperiment.DataDatabricksMlflowExperimentTraceLocationUcTraceLocation.property.tablePrefix">table_prefix</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/data-sources/mlflow_experiment#table_prefix DataDatabricksMlflowExperiment#table_prefix}. |
+
+---
+
+##### `catalog`<sup>Required</sup> <a name="catalog" id="@cdktn/provider-databricks.dataDatabricksMlflowExperiment.DataDatabricksMlflowExperimentTraceLocationUcTraceLocation.property.catalog"></a>
+
+```python
+catalog: str
+```
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/data-sources/mlflow_experiment#catalog DataDatabricksMlflowExperiment#catalog}.
+
+---
+
+##### `schema`<sup>Required</sup> <a name="schema" id="@cdktn/provider-databricks.dataDatabricksMlflowExperiment.DataDatabricksMlflowExperimentTraceLocationUcTraceLocation.property.schema"></a>
+
+```python
+schema: str
+```
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/data-sources/mlflow_experiment#schema DataDatabricksMlflowExperiment#schema}.
+
+---
+
+##### `table_prefix`<sup>Optional</sup> <a name="table_prefix" id="@cdktn/provider-databricks.dataDatabricksMlflowExperiment.DataDatabricksMlflowExperimentTraceLocationUcTraceLocation.property.tablePrefix"></a>
+
+```python
+table_prefix: str
+```
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/data-sources/mlflow_experiment#table_prefix DataDatabricksMlflowExperiment#table_prefix}.
 
 ---
 
@@ -2176,6 +2346,691 @@ internal_value: IResolvable | DataDatabricksMlflowExperimentTags
 ```
 
 - *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-databricks.dataDatabricksMlflowExperiment.DataDatabricksMlflowExperimentTags">DataDatabricksMlflowExperimentTags</a>
+
+---
+
+
+### DataDatabricksMlflowExperimentTraceLocationOutputReference <a name="DataDatabricksMlflowExperimentTraceLocationOutputReference" id="@cdktn/provider-databricks.dataDatabricksMlflowExperiment.DataDatabricksMlflowExperimentTraceLocationOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksMlflowExperiment.DataDatabricksMlflowExperimentTraceLocationOutputReference.Initializer"></a>
+
+```python
+from cdktn_provider_databricks import data_databricks_mlflow_experiment
+
+dataDatabricksMlflowExperiment.DataDatabricksMlflowExperimentTraceLocationOutputReference(
+  terraform_resource: IInterpolatingParent,
+  terraform_attribute: str
+)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksMlflowExperiment.DataDatabricksMlflowExperimentTraceLocationOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksMlflowExperiment.DataDatabricksMlflowExperimentTraceLocationOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-databricks.dataDatabricksMlflowExperiment.DataDatabricksMlflowExperimentTraceLocationOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-databricks.dataDatabricksMlflowExperiment.DataDatabricksMlflowExperimentTraceLocationOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksMlflowExperiment.DataDatabricksMlflowExperimentTraceLocationOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksMlflowExperiment.DataDatabricksMlflowExperimentTraceLocationOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksMlflowExperiment.DataDatabricksMlflowExperimentTraceLocationOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksMlflowExperiment.DataDatabricksMlflowExperimentTraceLocationOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksMlflowExperiment.DataDatabricksMlflowExperimentTraceLocationOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksMlflowExperiment.DataDatabricksMlflowExperimentTraceLocationOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksMlflowExperiment.DataDatabricksMlflowExperimentTraceLocationOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksMlflowExperiment.DataDatabricksMlflowExperimentTraceLocationOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksMlflowExperiment.DataDatabricksMlflowExperimentTraceLocationOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksMlflowExperiment.DataDatabricksMlflowExperimentTraceLocationOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksMlflowExperiment.DataDatabricksMlflowExperimentTraceLocationOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksMlflowExperiment.DataDatabricksMlflowExperimentTraceLocationOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksMlflowExperiment.DataDatabricksMlflowExperimentTraceLocationOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksMlflowExperiment.DataDatabricksMlflowExperimentTraceLocationOutputReference.putUcTraceLocation">put_uc_trace_location</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksMlflowExperiment.DataDatabricksMlflowExperimentTraceLocationOutputReference.resetUcTraceLocation">reset_uc_trace_location</a></code> | *No description.* |
+
+---
+
+##### `compute_fqn` <a name="compute_fqn" id="@cdktn/provider-databricks.dataDatabricksMlflowExperiment.DataDatabricksMlflowExperimentTraceLocationOutputReference.computeFqn"></a>
+
+```python
+def compute_fqn() -> str
+```
+
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktn/provider-databricks.dataDatabricksMlflowExperiment.DataDatabricksMlflowExperimentTraceLocationOutputReference.getAnyMapAttribute"></a>
+
+```python
+def get_any_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Any]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-databricks.dataDatabricksMlflowExperiment.DataDatabricksMlflowExperimentTraceLocationOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktn/provider-databricks.dataDatabricksMlflowExperiment.DataDatabricksMlflowExperimentTraceLocationOutputReference.getBooleanAttribute"></a>
+
+```python
+def get_boolean_attribute(
+  terraform_attribute: str
+) -> IResolvable
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-databricks.dataDatabricksMlflowExperiment.DataDatabricksMlflowExperimentTraceLocationOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktn/provider-databricks.dataDatabricksMlflowExperiment.DataDatabricksMlflowExperimentTraceLocationOutputReference.getBooleanMapAttribute"></a>
+
+```python
+def get_boolean_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[bool]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-databricks.dataDatabricksMlflowExperiment.DataDatabricksMlflowExperimentTraceLocationOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktn/provider-databricks.dataDatabricksMlflowExperiment.DataDatabricksMlflowExperimentTraceLocationOutputReference.getListAttribute"></a>
+
+```python
+def get_list_attribute(
+  terraform_attribute: str
+) -> typing.List[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-databricks.dataDatabricksMlflowExperiment.DataDatabricksMlflowExperimentTraceLocationOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktn/provider-databricks.dataDatabricksMlflowExperiment.DataDatabricksMlflowExperimentTraceLocationOutputReference.getNumberAttribute"></a>
+
+```python
+def get_number_attribute(
+  terraform_attribute: str
+) -> typing.Union[int, float]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-databricks.dataDatabricksMlflowExperiment.DataDatabricksMlflowExperimentTraceLocationOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktn/provider-databricks.dataDatabricksMlflowExperiment.DataDatabricksMlflowExperimentTraceLocationOutputReference.getNumberListAttribute"></a>
+
+```python
+def get_number_list_attribute(
+  terraform_attribute: str
+) -> typing.List[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-databricks.dataDatabricksMlflowExperiment.DataDatabricksMlflowExperimentTraceLocationOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktn/provider-databricks.dataDatabricksMlflowExperiment.DataDatabricksMlflowExperimentTraceLocationOutputReference.getNumberMapAttribute"></a>
+
+```python
+def get_number_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-databricks.dataDatabricksMlflowExperiment.DataDatabricksMlflowExperimentTraceLocationOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktn/provider-databricks.dataDatabricksMlflowExperiment.DataDatabricksMlflowExperimentTraceLocationOutputReference.getStringAttribute"></a>
+
+```python
+def get_string_attribute(
+  terraform_attribute: str
+) -> str
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-databricks.dataDatabricksMlflowExperiment.DataDatabricksMlflowExperimentTraceLocationOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktn/provider-databricks.dataDatabricksMlflowExperiment.DataDatabricksMlflowExperimentTraceLocationOutputReference.getStringMapAttribute"></a>
+
+```python
+def get_string_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-databricks.dataDatabricksMlflowExperiment.DataDatabricksMlflowExperimentTraceLocationOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktn/provider-databricks.dataDatabricksMlflowExperiment.DataDatabricksMlflowExperimentTraceLocationOutputReference.interpolationForAttribute"></a>
+
+```python
+def interpolation_for_attribute(
+  property: str
+) -> IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-databricks.dataDatabricksMlflowExperiment.DataDatabricksMlflowExperimentTraceLocationOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* str
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-databricks.dataDatabricksMlflowExperiment.DataDatabricksMlflowExperimentTraceLocationOutputReference.resolve"></a>
+
+```python
+def resolve(
+  _context: IResolveContext
+) -> typing.Any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-databricks.dataDatabricksMlflowExperiment.DataDatabricksMlflowExperimentTraceLocationOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `to_string` <a name="to_string" id="@cdktn/provider-databricks.dataDatabricksMlflowExperiment.DataDatabricksMlflowExperimentTraceLocationOutputReference.toString"></a>
+
+```python
+def to_string() -> str
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `put_uc_trace_location` <a name="put_uc_trace_location" id="@cdktn/provider-databricks.dataDatabricksMlflowExperiment.DataDatabricksMlflowExperimentTraceLocationOutputReference.putUcTraceLocation"></a>
+
+```python
+def put_uc_trace_location(
+  catalog: str,
+  schema: str,
+  table_prefix: str = None
+) -> None
+```
+
+###### `catalog`<sup>Required</sup> <a name="catalog" id="@cdktn/provider-databricks.dataDatabricksMlflowExperiment.DataDatabricksMlflowExperimentTraceLocationOutputReference.putUcTraceLocation.parameter.catalog"></a>
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/data-sources/mlflow_experiment#catalog DataDatabricksMlflowExperiment#catalog}.
+
+---
+
+###### `schema`<sup>Required</sup> <a name="schema" id="@cdktn/provider-databricks.dataDatabricksMlflowExperiment.DataDatabricksMlflowExperimentTraceLocationOutputReference.putUcTraceLocation.parameter.schema"></a>
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/data-sources/mlflow_experiment#schema DataDatabricksMlflowExperiment#schema}.
+
+---
+
+###### `table_prefix`<sup>Optional</sup> <a name="table_prefix" id="@cdktn/provider-databricks.dataDatabricksMlflowExperiment.DataDatabricksMlflowExperimentTraceLocationOutputReference.putUcTraceLocation.parameter.tablePrefix"></a>
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/data-sources/mlflow_experiment#table_prefix DataDatabricksMlflowExperiment#table_prefix}.
+
+---
+
+##### `reset_uc_trace_location` <a name="reset_uc_trace_location" id="@cdktn/provider-databricks.dataDatabricksMlflowExperiment.DataDatabricksMlflowExperimentTraceLocationOutputReference.resetUcTraceLocation"></a>
+
+```python
+def reset_uc_trace_location() -> None
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksMlflowExperiment.DataDatabricksMlflowExperimentTraceLocationOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksMlflowExperiment.DataDatabricksMlflowExperimentTraceLocationOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksMlflowExperiment.DataDatabricksMlflowExperimentTraceLocationOutputReference.property.ucTraceLocation">uc_trace_location</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksMlflowExperiment.DataDatabricksMlflowExperimentTraceLocationUcTraceLocationOutputReference">DataDatabricksMlflowExperimentTraceLocationUcTraceLocationOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksMlflowExperiment.DataDatabricksMlflowExperimentTraceLocationOutputReference.property.ucTraceLocationInput">uc_trace_location_input</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksMlflowExperiment.DataDatabricksMlflowExperimentTraceLocationUcTraceLocation">DataDatabricksMlflowExperimentTraceLocationUcTraceLocation</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksMlflowExperiment.DataDatabricksMlflowExperimentTraceLocationOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksMlflowExperiment.DataDatabricksMlflowExperimentTraceLocation">DataDatabricksMlflowExperimentTraceLocation</a></code> | *No description.* |
+
+---
+
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktn/provider-databricks.dataDatabricksMlflowExperiment.DataDatabricksMlflowExperimentTraceLocationOutputReference.property.creationStack"></a>
+
+```python
+creation_stack: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-databricks.dataDatabricksMlflowExperiment.DataDatabricksMlflowExperimentTraceLocationOutputReference.property.fqn"></a>
+
+```python
+fqn: str
+```
+
+- *Type:* str
+
+---
+
+##### `uc_trace_location`<sup>Required</sup> <a name="uc_trace_location" id="@cdktn/provider-databricks.dataDatabricksMlflowExperiment.DataDatabricksMlflowExperimentTraceLocationOutputReference.property.ucTraceLocation"></a>
+
+```python
+uc_trace_location: DataDatabricksMlflowExperimentTraceLocationUcTraceLocationOutputReference
+```
+
+- *Type:* <a href="#@cdktn/provider-databricks.dataDatabricksMlflowExperiment.DataDatabricksMlflowExperimentTraceLocationUcTraceLocationOutputReference">DataDatabricksMlflowExperimentTraceLocationUcTraceLocationOutputReference</a>
+
+---
+
+##### `uc_trace_location_input`<sup>Optional</sup> <a name="uc_trace_location_input" id="@cdktn/provider-databricks.dataDatabricksMlflowExperiment.DataDatabricksMlflowExperimentTraceLocationOutputReference.property.ucTraceLocationInput"></a>
+
+```python
+uc_trace_location_input: DataDatabricksMlflowExperimentTraceLocationUcTraceLocation
+```
+
+- *Type:* <a href="#@cdktn/provider-databricks.dataDatabricksMlflowExperiment.DataDatabricksMlflowExperimentTraceLocationUcTraceLocation">DataDatabricksMlflowExperimentTraceLocationUcTraceLocation</a>
+
+---
+
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktn/provider-databricks.dataDatabricksMlflowExperiment.DataDatabricksMlflowExperimentTraceLocationOutputReference.property.internalValue"></a>
+
+```python
+internal_value: DataDatabricksMlflowExperimentTraceLocation
+```
+
+- *Type:* <a href="#@cdktn/provider-databricks.dataDatabricksMlflowExperiment.DataDatabricksMlflowExperimentTraceLocation">DataDatabricksMlflowExperimentTraceLocation</a>
+
+---
+
+
+### DataDatabricksMlflowExperimentTraceLocationUcTraceLocationOutputReference <a name="DataDatabricksMlflowExperimentTraceLocationUcTraceLocationOutputReference" id="@cdktn/provider-databricks.dataDatabricksMlflowExperiment.DataDatabricksMlflowExperimentTraceLocationUcTraceLocationOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksMlflowExperiment.DataDatabricksMlflowExperimentTraceLocationUcTraceLocationOutputReference.Initializer"></a>
+
+```python
+from cdktn_provider_databricks import data_databricks_mlflow_experiment
+
+dataDatabricksMlflowExperiment.DataDatabricksMlflowExperimentTraceLocationUcTraceLocationOutputReference(
+  terraform_resource: IInterpolatingParent,
+  terraform_attribute: str
+)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksMlflowExperiment.DataDatabricksMlflowExperimentTraceLocationUcTraceLocationOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksMlflowExperiment.DataDatabricksMlflowExperimentTraceLocationUcTraceLocationOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-databricks.dataDatabricksMlflowExperiment.DataDatabricksMlflowExperimentTraceLocationUcTraceLocationOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-databricks.dataDatabricksMlflowExperiment.DataDatabricksMlflowExperimentTraceLocationUcTraceLocationOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksMlflowExperiment.DataDatabricksMlflowExperimentTraceLocationUcTraceLocationOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksMlflowExperiment.DataDatabricksMlflowExperimentTraceLocationUcTraceLocationOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksMlflowExperiment.DataDatabricksMlflowExperimentTraceLocationUcTraceLocationOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksMlflowExperiment.DataDatabricksMlflowExperimentTraceLocationUcTraceLocationOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksMlflowExperiment.DataDatabricksMlflowExperimentTraceLocationUcTraceLocationOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksMlflowExperiment.DataDatabricksMlflowExperimentTraceLocationUcTraceLocationOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksMlflowExperiment.DataDatabricksMlflowExperimentTraceLocationUcTraceLocationOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksMlflowExperiment.DataDatabricksMlflowExperimentTraceLocationUcTraceLocationOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksMlflowExperiment.DataDatabricksMlflowExperimentTraceLocationUcTraceLocationOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksMlflowExperiment.DataDatabricksMlflowExperimentTraceLocationUcTraceLocationOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksMlflowExperiment.DataDatabricksMlflowExperimentTraceLocationUcTraceLocationOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksMlflowExperiment.DataDatabricksMlflowExperimentTraceLocationUcTraceLocationOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksMlflowExperiment.DataDatabricksMlflowExperimentTraceLocationUcTraceLocationOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksMlflowExperiment.DataDatabricksMlflowExperimentTraceLocationUcTraceLocationOutputReference.resetTablePrefix">reset_table_prefix</a></code> | *No description.* |
+
+---
+
+##### `compute_fqn` <a name="compute_fqn" id="@cdktn/provider-databricks.dataDatabricksMlflowExperiment.DataDatabricksMlflowExperimentTraceLocationUcTraceLocationOutputReference.computeFqn"></a>
+
+```python
+def compute_fqn() -> str
+```
+
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktn/provider-databricks.dataDatabricksMlflowExperiment.DataDatabricksMlflowExperimentTraceLocationUcTraceLocationOutputReference.getAnyMapAttribute"></a>
+
+```python
+def get_any_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Any]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-databricks.dataDatabricksMlflowExperiment.DataDatabricksMlflowExperimentTraceLocationUcTraceLocationOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktn/provider-databricks.dataDatabricksMlflowExperiment.DataDatabricksMlflowExperimentTraceLocationUcTraceLocationOutputReference.getBooleanAttribute"></a>
+
+```python
+def get_boolean_attribute(
+  terraform_attribute: str
+) -> IResolvable
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-databricks.dataDatabricksMlflowExperiment.DataDatabricksMlflowExperimentTraceLocationUcTraceLocationOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktn/provider-databricks.dataDatabricksMlflowExperiment.DataDatabricksMlflowExperimentTraceLocationUcTraceLocationOutputReference.getBooleanMapAttribute"></a>
+
+```python
+def get_boolean_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[bool]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-databricks.dataDatabricksMlflowExperiment.DataDatabricksMlflowExperimentTraceLocationUcTraceLocationOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktn/provider-databricks.dataDatabricksMlflowExperiment.DataDatabricksMlflowExperimentTraceLocationUcTraceLocationOutputReference.getListAttribute"></a>
+
+```python
+def get_list_attribute(
+  terraform_attribute: str
+) -> typing.List[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-databricks.dataDatabricksMlflowExperiment.DataDatabricksMlflowExperimentTraceLocationUcTraceLocationOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktn/provider-databricks.dataDatabricksMlflowExperiment.DataDatabricksMlflowExperimentTraceLocationUcTraceLocationOutputReference.getNumberAttribute"></a>
+
+```python
+def get_number_attribute(
+  terraform_attribute: str
+) -> typing.Union[int, float]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-databricks.dataDatabricksMlflowExperiment.DataDatabricksMlflowExperimentTraceLocationUcTraceLocationOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktn/provider-databricks.dataDatabricksMlflowExperiment.DataDatabricksMlflowExperimentTraceLocationUcTraceLocationOutputReference.getNumberListAttribute"></a>
+
+```python
+def get_number_list_attribute(
+  terraform_attribute: str
+) -> typing.List[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-databricks.dataDatabricksMlflowExperiment.DataDatabricksMlflowExperimentTraceLocationUcTraceLocationOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktn/provider-databricks.dataDatabricksMlflowExperiment.DataDatabricksMlflowExperimentTraceLocationUcTraceLocationOutputReference.getNumberMapAttribute"></a>
+
+```python
+def get_number_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-databricks.dataDatabricksMlflowExperiment.DataDatabricksMlflowExperimentTraceLocationUcTraceLocationOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktn/provider-databricks.dataDatabricksMlflowExperiment.DataDatabricksMlflowExperimentTraceLocationUcTraceLocationOutputReference.getStringAttribute"></a>
+
+```python
+def get_string_attribute(
+  terraform_attribute: str
+) -> str
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-databricks.dataDatabricksMlflowExperiment.DataDatabricksMlflowExperimentTraceLocationUcTraceLocationOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktn/provider-databricks.dataDatabricksMlflowExperiment.DataDatabricksMlflowExperimentTraceLocationUcTraceLocationOutputReference.getStringMapAttribute"></a>
+
+```python
+def get_string_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-databricks.dataDatabricksMlflowExperiment.DataDatabricksMlflowExperimentTraceLocationUcTraceLocationOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktn/provider-databricks.dataDatabricksMlflowExperiment.DataDatabricksMlflowExperimentTraceLocationUcTraceLocationOutputReference.interpolationForAttribute"></a>
+
+```python
+def interpolation_for_attribute(
+  property: str
+) -> IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-databricks.dataDatabricksMlflowExperiment.DataDatabricksMlflowExperimentTraceLocationUcTraceLocationOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* str
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-databricks.dataDatabricksMlflowExperiment.DataDatabricksMlflowExperimentTraceLocationUcTraceLocationOutputReference.resolve"></a>
+
+```python
+def resolve(
+  _context: IResolveContext
+) -> typing.Any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-databricks.dataDatabricksMlflowExperiment.DataDatabricksMlflowExperimentTraceLocationUcTraceLocationOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `to_string` <a name="to_string" id="@cdktn/provider-databricks.dataDatabricksMlflowExperiment.DataDatabricksMlflowExperimentTraceLocationUcTraceLocationOutputReference.toString"></a>
+
+```python
+def to_string() -> str
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `reset_table_prefix` <a name="reset_table_prefix" id="@cdktn/provider-databricks.dataDatabricksMlflowExperiment.DataDatabricksMlflowExperimentTraceLocationUcTraceLocationOutputReference.resetTablePrefix"></a>
+
+```python
+def reset_table_prefix() -> None
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksMlflowExperiment.DataDatabricksMlflowExperimentTraceLocationUcTraceLocationOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksMlflowExperiment.DataDatabricksMlflowExperimentTraceLocationUcTraceLocationOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksMlflowExperiment.DataDatabricksMlflowExperimentTraceLocationUcTraceLocationOutputReference.property.catalogInput">catalog_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksMlflowExperiment.DataDatabricksMlflowExperimentTraceLocationUcTraceLocationOutputReference.property.schemaInput">schema_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksMlflowExperiment.DataDatabricksMlflowExperimentTraceLocationUcTraceLocationOutputReference.property.tablePrefixInput">table_prefix_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksMlflowExperiment.DataDatabricksMlflowExperimentTraceLocationUcTraceLocationOutputReference.property.catalog">catalog</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksMlflowExperiment.DataDatabricksMlflowExperimentTraceLocationUcTraceLocationOutputReference.property.schema">schema</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksMlflowExperiment.DataDatabricksMlflowExperimentTraceLocationUcTraceLocationOutputReference.property.tablePrefix">table_prefix</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksMlflowExperiment.DataDatabricksMlflowExperimentTraceLocationUcTraceLocationOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksMlflowExperiment.DataDatabricksMlflowExperimentTraceLocationUcTraceLocation">DataDatabricksMlflowExperimentTraceLocationUcTraceLocation</a></code> | *No description.* |
+
+---
+
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktn/provider-databricks.dataDatabricksMlflowExperiment.DataDatabricksMlflowExperimentTraceLocationUcTraceLocationOutputReference.property.creationStack"></a>
+
+```python
+creation_stack: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-databricks.dataDatabricksMlflowExperiment.DataDatabricksMlflowExperimentTraceLocationUcTraceLocationOutputReference.property.fqn"></a>
+
+```python
+fqn: str
+```
+
+- *Type:* str
+
+---
+
+##### `catalog_input`<sup>Optional</sup> <a name="catalog_input" id="@cdktn/provider-databricks.dataDatabricksMlflowExperiment.DataDatabricksMlflowExperimentTraceLocationUcTraceLocationOutputReference.property.catalogInput"></a>
+
+```python
+catalog_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `schema_input`<sup>Optional</sup> <a name="schema_input" id="@cdktn/provider-databricks.dataDatabricksMlflowExperiment.DataDatabricksMlflowExperimentTraceLocationUcTraceLocationOutputReference.property.schemaInput"></a>
+
+```python
+schema_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `table_prefix_input`<sup>Optional</sup> <a name="table_prefix_input" id="@cdktn/provider-databricks.dataDatabricksMlflowExperiment.DataDatabricksMlflowExperimentTraceLocationUcTraceLocationOutputReference.property.tablePrefixInput"></a>
+
+```python
+table_prefix_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `catalog`<sup>Required</sup> <a name="catalog" id="@cdktn/provider-databricks.dataDatabricksMlflowExperiment.DataDatabricksMlflowExperimentTraceLocationUcTraceLocationOutputReference.property.catalog"></a>
+
+```python
+catalog: str
+```
+
+- *Type:* str
+
+---
+
+##### `schema`<sup>Required</sup> <a name="schema" id="@cdktn/provider-databricks.dataDatabricksMlflowExperiment.DataDatabricksMlflowExperimentTraceLocationUcTraceLocationOutputReference.property.schema"></a>
+
+```python
+schema: str
+```
+
+- *Type:* str
+
+---
+
+##### `table_prefix`<sup>Required</sup> <a name="table_prefix" id="@cdktn/provider-databricks.dataDatabricksMlflowExperiment.DataDatabricksMlflowExperimentTraceLocationUcTraceLocationOutputReference.property.tablePrefix"></a>
+
+```python
+table_prefix: str
+```
+
+- *Type:* str
+
+---
+
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktn/provider-databricks.dataDatabricksMlflowExperiment.DataDatabricksMlflowExperimentTraceLocationUcTraceLocationOutputReference.property.internalValue"></a>
+
+```python
+internal_value: DataDatabricksMlflowExperimentTraceLocationUcTraceLocation
+```
+
+- *Type:* <a href="#@cdktn/provider-databricks.dataDatabricksMlflowExperiment.DataDatabricksMlflowExperimentTraceLocationUcTraceLocation">DataDatabricksMlflowExperimentTraceLocationUcTraceLocation</a>
 
 ---
 

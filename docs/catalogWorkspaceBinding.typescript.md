@@ -4,7 +4,7 @@
 
 ### CatalogWorkspaceBinding <a name="CatalogWorkspaceBinding" id="@cdktn/provider-databricks.catalogWorkspaceBinding.CatalogWorkspaceBinding"></a>
 
-Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/catalog_workspace_binding databricks_catalog_workspace_binding}.
+Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/catalog_workspace_binding databricks_catalog_workspace_binding}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.catalogWorkspaceBinding.CatalogWorkspaceBinding.Initializer"></a>
 
@@ -544,7 +544,7 @@ The construct id used in the generated config for the CatalogWorkspaceBinding to
 
 The id of the existing CatalogWorkspaceBinding that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/catalog_workspace_binding#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/catalog_workspace_binding#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -914,13 +914,13 @@ const catalogWorkspaceBindingConfig: catalogWorkspaceBinding.CatalogWorkspaceBin
 | <code><a href="#@cdktn/provider-databricks.catalogWorkspaceBinding.CatalogWorkspaceBindingConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.catalogWorkspaceBinding.CatalogWorkspaceBindingConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.catalogWorkspaceBinding.CatalogWorkspaceBindingConfig.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-databricks.catalogWorkspaceBinding.CatalogWorkspaceBindingConfig.property.workspaceId">workspaceId</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/catalog_workspace_binding#workspace_id CatalogWorkspaceBinding#workspace_id}. |
-| <code><a href="#@cdktn/provider-databricks.catalogWorkspaceBinding.CatalogWorkspaceBindingConfig.property.bindingType">bindingType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/catalog_workspace_binding#binding_type CatalogWorkspaceBinding#binding_type}. |
-| <code><a href="#@cdktn/provider-databricks.catalogWorkspaceBinding.CatalogWorkspaceBindingConfig.property.catalogName">catalogName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/catalog_workspace_binding#catalog_name CatalogWorkspaceBinding#catalog_name}. |
-| <code><a href="#@cdktn/provider-databricks.catalogWorkspaceBinding.CatalogWorkspaceBindingConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/catalog_workspace_binding#id CatalogWorkspaceBinding#id}. |
+| <code><a href="#@cdktn/provider-databricks.catalogWorkspaceBinding.CatalogWorkspaceBindingConfig.property.workspaceId">workspaceId</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/catalog_workspace_binding#workspace_id CatalogWorkspaceBinding#workspace_id}. |
+| <code><a href="#@cdktn/provider-databricks.catalogWorkspaceBinding.CatalogWorkspaceBindingConfig.property.bindingType">bindingType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/catalog_workspace_binding#binding_type CatalogWorkspaceBinding#binding_type}. |
+| <code><a href="#@cdktn/provider-databricks.catalogWorkspaceBinding.CatalogWorkspaceBindingConfig.property.catalogName">catalogName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/catalog_workspace_binding#catalog_name CatalogWorkspaceBinding#catalog_name}. |
+| <code><a href="#@cdktn/provider-databricks.catalogWorkspaceBinding.CatalogWorkspaceBindingConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/catalog_workspace_binding#id CatalogWorkspaceBinding#id}. |
 | <code><a href="#@cdktn/provider-databricks.catalogWorkspaceBinding.CatalogWorkspaceBindingConfig.property.providerConfig">providerConfig</a></code> | <code><a href="#@cdktn/provider-databricks.catalogWorkspaceBinding.CatalogWorkspaceBindingProviderConfig">CatalogWorkspaceBindingProviderConfig</a></code> | provider_config block. |
-| <code><a href="#@cdktn/provider-databricks.catalogWorkspaceBinding.CatalogWorkspaceBindingConfig.property.securableName">securableName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/catalog_workspace_binding#securable_name CatalogWorkspaceBinding#securable_name}. |
-| <code><a href="#@cdktn/provider-databricks.catalogWorkspaceBinding.CatalogWorkspaceBindingConfig.property.securableType">securableType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/catalog_workspace_binding#securable_type CatalogWorkspaceBinding#securable_type}. |
+| <code><a href="#@cdktn/provider-databricks.catalogWorkspaceBinding.CatalogWorkspaceBindingConfig.property.securableName">securableName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/catalog_workspace_binding#securable_name CatalogWorkspaceBinding#securable_name}. |
+| <code><a href="#@cdktn/provider-databricks.catalogWorkspaceBinding.CatalogWorkspaceBindingConfig.property.securableType">securableType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/catalog_workspace_binding#securable_type CatalogWorkspaceBinding#securable_type}. |
 
 ---
 
@@ -1002,7 +1002,7 @@ public readonly workspaceId: number;
 
 - *Type:* number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/catalog_workspace_binding#workspace_id CatalogWorkspaceBinding#workspace_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/catalog_workspace_binding#workspace_id CatalogWorkspaceBinding#workspace_id}.
 
 ---
 
@@ -1014,7 +1014,7 @@ public readonly bindingType: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/catalog_workspace_binding#binding_type CatalogWorkspaceBinding#binding_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/catalog_workspace_binding#binding_type CatalogWorkspaceBinding#binding_type}.
 
 ---
 
@@ -1026,7 +1026,7 @@ public readonly catalogName: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/catalog_workspace_binding#catalog_name CatalogWorkspaceBinding#catalog_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/catalog_workspace_binding#catalog_name CatalogWorkspaceBinding#catalog_name}.
 
 ---
 
@@ -1038,7 +1038,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/catalog_workspace_binding#id CatalogWorkspaceBinding#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/catalog_workspace_binding#id CatalogWorkspaceBinding#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1055,7 +1055,7 @@ public readonly providerConfig: CatalogWorkspaceBindingProviderConfig;
 
 provider_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/catalog_workspace_binding#provider_config CatalogWorkspaceBinding#provider_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/catalog_workspace_binding#provider_config CatalogWorkspaceBinding#provider_config}
 
 ---
 
@@ -1067,7 +1067,7 @@ public readonly securableName: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/catalog_workspace_binding#securable_name CatalogWorkspaceBinding#securable_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/catalog_workspace_binding#securable_name CatalogWorkspaceBinding#securable_name}.
 
 ---
 
@@ -1079,7 +1079,7 @@ public readonly securableType: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/catalog_workspace_binding#securable_type CatalogWorkspaceBinding#securable_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/catalog_workspace_binding#securable_type CatalogWorkspaceBinding#securable_type}.
 
 ---
 
@@ -1097,7 +1097,7 @@ const catalogWorkspaceBindingProviderConfig: catalogWorkspaceBinding.CatalogWork
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.catalogWorkspaceBinding.CatalogWorkspaceBindingProviderConfig.property.workspaceId">workspaceId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/catalog_workspace_binding#workspace_id CatalogWorkspaceBinding#workspace_id}. |
+| <code><a href="#@cdktn/provider-databricks.catalogWorkspaceBinding.CatalogWorkspaceBindingProviderConfig.property.workspaceId">workspaceId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/catalog_workspace_binding#workspace_id CatalogWorkspaceBinding#workspace_id}. |
 
 ---
 
@@ -1109,7 +1109,7 @@ public readonly workspaceId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/catalog_workspace_binding#workspace_id CatalogWorkspaceBinding#workspace_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/catalog_workspace_binding#workspace_id CatalogWorkspaceBinding#workspace_id}.
 
 ---
 
