@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/disaster_recovery_stable_url
+// https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/disaster_recovery_stable_url
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,21 +13,21 @@ import * as cdktn from 'cdktn';
 
 export interface DisasterRecoveryStableUrlConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/disaster_recovery_stable_url#initial_workspace_id DisasterRecoveryStableUrl#initial_workspace_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/disaster_recovery_stable_url#initial_workspace_id DisasterRecoveryStableUrl#initial_workspace_id}
   */
   readonly initialWorkspaceId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/disaster_recovery_stable_url#parent DisasterRecoveryStableUrl#parent}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/disaster_recovery_stable_url#parent DisasterRecoveryStableUrl#parent}
   */
   readonly parent: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/disaster_recovery_stable_url#stable_url_id DisasterRecoveryStableUrl#stable_url_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/disaster_recovery_stable_url#stable_url_id DisasterRecoveryStableUrl#stable_url_id}
   */
   readonly stableUrlId: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/disaster_recovery_stable_url databricks_disaster_recovery_stable_url}
+* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/disaster_recovery_stable_url databricks_disaster_recovery_stable_url}
 */
 export class DisasterRecoveryStableUrl extends cdktn.TerraformResource {
 
@@ -43,7 +43,7 @@ export class DisasterRecoveryStableUrl extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a DisasterRecoveryStableUrl resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DisasterRecoveryStableUrl to import
-  * @param importFromId The id of the existing DisasterRecoveryStableUrl that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/disaster_recovery_stable_url#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DisasterRecoveryStableUrl that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/disaster_recovery_stable_url#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DisasterRecoveryStableUrl to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -55,7 +55,7 @@ export class DisasterRecoveryStableUrl extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/disaster_recovery_stable_url databricks_disaster_recovery_stable_url} Resource
+  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/disaster_recovery_stable_url databricks_disaster_recovery_stable_url} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -66,7 +66,7 @@ export class DisasterRecoveryStableUrl extends cdktn.TerraformResource {
       terraformResourceType: 'databricks_disaster_recovery_stable_url',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '1.121.0',
+        providerVersion: '1.122.0',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,
@@ -85,6 +85,11 @@ export class DisasterRecoveryStableUrl extends cdktn.TerraformResource {
   // ==========
   // ATTRIBUTES
   // ==========
+
+  // effective_workspace_id - computed: true, optional: false, required: false
+  public get effectiveWorkspaceId() {
+    return this.getStringAttribute('effective_workspace_id');
+  }
 
   // failover_group_name - computed: true, optional: false, required: false
   public get failoverGroupName() {
@@ -133,6 +138,11 @@ export class DisasterRecoveryStableUrl extends cdktn.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get stableUrlIdInput() {
     return this._stableUrlId;
+  }
+
+  // stable_workspace_id - computed: true, optional: false, required: false
+  public get stableWorkspaceId() {
+    return this.getStringAttribute('stable_workspace_id');
   }
 
   // url - computed: true, optional: false, required: false

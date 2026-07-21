@@ -1,3 +1,3 @@
 # `databricks_supervisor_agent`
 
-Refer to the Terraform Registry for docs: [`databricks_supervisor_agent`](https://registry.terraform.io/providers/databricks/databricks/1.121.0/docs/resources/supervisor_agent).
+Refer to the Terraform Registry for docs: [`databricks_supervisor_agent`](https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/supervisor_agent).
