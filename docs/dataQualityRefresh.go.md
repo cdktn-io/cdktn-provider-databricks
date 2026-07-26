@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/databricks/databrick
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataQualityRefresh.DataQualityRefresh.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/dataqualityrefresh"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/dataqualityrefresh"
 
 dataqualityrefresh.NewDataQualityRefresh(scope Construct, id *string, config DataQualityRefreshConfig) DataQualityRefresh
 ```
@@ -420,7 +420,7 @@ func ResetProviderConfig()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-databricks.dataQualityRefresh.DataQualityRefresh.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/dataqualityrefresh"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/dataqualityrefresh"
 
 dataqualityrefresh.DataQualityRefresh_IsConstruct(x interface{}) *bool
 ```
@@ -452,7 +452,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-databricks.dataQualityRefresh.DataQualityRefresh.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/dataqualityrefresh"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/dataqualityrefresh"
 
 dataqualityrefresh.DataQualityRefresh_IsTerraformElement(x interface{}) *bool
 ```
@@ -466,7 +466,7 @@ dataqualityrefresh.DataQualityRefresh_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-databricks.dataQualityRefresh.DataQualityRefresh.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/dataqualityrefresh"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/dataqualityrefresh"
 
 dataqualityrefresh.DataQualityRefresh_IsTerraformResource(x interface{}) *bool
 ```
@@ -480,7 +480,7 @@ dataqualityrefresh.DataQualityRefresh_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-databricks.dataQualityRefresh.DataQualityRefresh.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/dataqualityrefresh"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/dataqualityrefresh"
 
 dataqualityrefresh.DataQualityRefresh_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -841,7 +841,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataQualityRefresh.DataQualityRefreshConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/dataqualityrefresh"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/dataqualityrefresh"
 
 &dataqualityrefresh.DataQualityRefreshConfig {
 	Connection: interface{},
@@ -853,7 +853,7 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/dataqual
 	Provisioners: *[]interface{},
 	ObjectId: *string,
 	ObjectType: *string,
-	ProviderConfig: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.dataQualityRefresh.DataQualityRefreshProviderConfig,
+	ProviderConfig: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18.dataQualityRefresh.DataQualityRefreshProviderConfig,
 }
 ```
 
@@ -985,7 +985,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataQualityRefresh.DataQualityRefreshProviderConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/dataqualityrefresh"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/dataqualityrefresh"
 
 &dataqualityrefresh.DataQualityRefreshProviderConfig {
 	WorkspaceId: *string,
@@ -1019,7 +1019,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataQualityRefresh.DataQualityRefreshProviderConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/dataqualityrefresh"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/dataqualityrefresh"
 
 dataqualityrefresh.NewDataQualityRefreshProviderConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataQualityRefreshProviderConfigOutputReference
 ```

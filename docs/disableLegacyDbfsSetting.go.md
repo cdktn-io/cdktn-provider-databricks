@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/databricks/databrick
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.disableLegacyDbfsSetting.DisableLegacyDbfsSetting.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/disablelegacydbfssetting"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/disablelegacydbfssetting"
 
 disablelegacydbfssetting.NewDisableLegacyDbfsSetting(scope Construct, id *string, config DisableLegacyDbfsSettingConfig) DisableLegacyDbfsSetting
 ```
@@ -454,7 +454,7 @@ func ResetSettingName()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-databricks.disableLegacyDbfsSetting.DisableLegacyDbfsSetting.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/disablelegacydbfssetting"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/disablelegacydbfssetting"
 
 disablelegacydbfssetting.DisableLegacyDbfsSetting_IsConstruct(x interface{}) *bool
 ```
@@ -486,7 +486,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-databricks.disableLegacyDbfsSetting.DisableLegacyDbfsSetting.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/disablelegacydbfssetting"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/disablelegacydbfssetting"
 
 disablelegacydbfssetting.DisableLegacyDbfsSetting_IsTerraformElement(x interface{}) *bool
 ```
@@ -500,7 +500,7 @@ disablelegacydbfssetting.DisableLegacyDbfsSetting_IsTerraformElement(x interface
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-databricks.disableLegacyDbfsSetting.DisableLegacyDbfsSetting.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/disablelegacydbfssetting"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/disablelegacydbfssetting"
 
 disablelegacydbfssetting.DisableLegacyDbfsSetting_IsTerraformResource(x interface{}) *bool
 ```
@@ -514,7 +514,7 @@ disablelegacydbfssetting.DisableLegacyDbfsSetting_IsTerraformResource(x interfac
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-databricks.disableLegacyDbfsSetting.DisableLegacyDbfsSetting.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/disablelegacydbfssetting"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/disablelegacydbfssetting"
 
 disablelegacydbfssetting.DisableLegacyDbfsSetting_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -853,7 +853,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.disableLegacyDbfsSetting.DisableLegacyDbfsSettingConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/disablelegacydbfssetting"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/disablelegacydbfssetting"
 
 &disablelegacydbfssetting.DisableLegacyDbfsSettingConfig {
 	Connection: interface{},
@@ -863,10 +863,10 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/disablel
 	Lifecycle: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle,
 	Provider: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider,
 	Provisioners: *[]interface{},
-	DisableLegacyDbfs: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.disableLegacyDbfsSetting.DisableLegacyDbfsSettingDisableLegacyDbfs,
+	DisableLegacyDbfs: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18.disableLegacyDbfsSetting.DisableLegacyDbfsSettingDisableLegacyDbfs,
 	Etag: *string,
 	Id: *string,
-	ProviderConfig: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.disableLegacyDbfsSetting.DisableLegacyDbfsSettingProviderConfig,
+	ProviderConfig: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18.disableLegacyDbfsSetting.DisableLegacyDbfsSettingProviderConfig,
 	SettingName: *string,
 }
 ```
@@ -1032,7 +1032,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.disableLegacyDbfsSetting.DisableLegacyDbfsSettingDisableLegacyDbfs.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/disablelegacydbfssetting"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/disablelegacydbfssetting"
 
 &disablelegacydbfssetting.DisableLegacyDbfsSettingDisableLegacyDbfs {
 	Value: interface{},
@@ -1064,7 +1064,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.disableLegacyDbfsSetting.DisableLegacyDbfsSettingProviderConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/disablelegacydbfssetting"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/disablelegacydbfssetting"
 
 &disablelegacydbfssetting.DisableLegacyDbfsSettingProviderConfig {
 	WorkspaceId: *string,
@@ -1098,7 +1098,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.disableLegacyDbfsSetting.DisableLegacyDbfsSettingDisableLegacyDbfsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/disablelegacydbfssetting"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/disablelegacydbfssetting"
 
 disablelegacydbfssetting.NewDisableLegacyDbfsSettingDisableLegacyDbfsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DisableLegacyDbfsSettingDisableLegacyDbfsOutputReference
 ```
@@ -1369,7 +1369,7 @@ func InternalValue() DisableLegacyDbfsSettingDisableLegacyDbfs
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.disableLegacyDbfsSetting.DisableLegacyDbfsSettingProviderConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/disablelegacydbfssetting"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/disablelegacydbfssetting"
 
 disablelegacydbfssetting.NewDisableLegacyDbfsSettingProviderConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DisableLegacyDbfsSettingProviderConfigOutputReference
 ```

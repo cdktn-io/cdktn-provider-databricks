@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/databricks/databrick
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksServicePrincipals.DataDatabricksServicePrincipals.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksserviceprincipals"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksserviceprincipals"
 
 datadatabricksserviceprincipals.NewDataDatabricksServicePrincipals(scope Construct, id *string, config DataDatabricksServicePrincipalsConfig) DataDatabricksServicePrincipals
 ```
@@ -366,7 +366,7 @@ func ResetServicePrincipals()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-databricks.dataDatabricksServicePrincipals.DataDatabricksServicePrincipals.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksserviceprincipals"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksserviceprincipals"
 
 datadatabricksserviceprincipals.DataDatabricksServicePrincipals_IsConstruct(x interface{}) *bool
 ```
@@ -398,7 +398,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-databricks.dataDatabricksServicePrincipals.DataDatabricksServicePrincipals.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksserviceprincipals"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksserviceprincipals"
 
 datadatabricksserviceprincipals.DataDatabricksServicePrincipals_IsTerraformElement(x interface{}) *bool
 ```
@@ -412,7 +412,7 @@ datadatabricksserviceprincipals.DataDatabricksServicePrincipals_IsTerraformEleme
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-databricks.dataDatabricksServicePrincipals.DataDatabricksServicePrincipals.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksserviceprincipals"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksserviceprincipals"
 
 datadatabricksserviceprincipals.DataDatabricksServicePrincipals_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -426,7 +426,7 @@ datadatabricksserviceprincipals.DataDatabricksServicePrincipals_IsTerraformDataS
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-databricks.dataDatabricksServicePrincipals.DataDatabricksServicePrincipals.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksserviceprincipals"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksserviceprincipals"
 
 datadatabricksserviceprincipals.DataDatabricksServicePrincipals_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -765,7 +765,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksServicePrincipals.DataDatabricksServicePrincipalsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksserviceprincipals"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksserviceprincipals"
 
 &datadatabricksserviceprincipals.DataDatabricksServicePrincipalsConfig {
 	Connection: interface{},
@@ -779,7 +779,7 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadata
 	ApplicationIds: *[]*string,
 	DisplayNameContains: *string,
 	Id: *string,
-	ProviderConfig: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.dataDatabricksServicePrincipals.DataDatabricksServicePrincipalsProviderConfig,
+	ProviderConfig: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18.dataDatabricksServicePrincipals.DataDatabricksServicePrincipalsProviderConfig,
 	ServicePrincipals: interface{},
 }
 ```
@@ -962,7 +962,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksServicePrincipals.DataDatabricksServicePrincipalsProviderConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksserviceprincipals"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksserviceprincipals"
 
 &datadatabricksserviceprincipals.DataDatabricksServicePrincipalsProviderConfig {
 	WorkspaceId: *string,
@@ -994,7 +994,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksServicePrincipals.DataDatabricksServicePrincipalsServicePrincipals.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksserviceprincipals"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksserviceprincipals"
 
 &datadatabricksserviceprincipals.DataDatabricksServicePrincipalsServicePrincipals {
 	AclPrincipalId: *string,
@@ -1157,7 +1157,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksServicePrincipals.DataDatabricksServicePrincipalsProviderConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksserviceprincipals"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksserviceprincipals"
 
 datadatabricksserviceprincipals.NewDataDatabricksServicePrincipalsProviderConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksServicePrincipalsProviderConfigOutputReference
 ```
@@ -1435,7 +1435,7 @@ func InternalValue() DataDatabricksServicePrincipalsProviderConfig
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksServicePrincipals.DataDatabricksServicePrincipalsServicePrincipalsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksserviceprincipals"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksserviceprincipals"
 
 datadatabricksserviceprincipals.NewDataDatabricksServicePrincipalsServicePrincipalsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDatabricksServicePrincipalsServicePrincipalsList
 ```
@@ -1595,7 +1595,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksServicePrincipals.DataDatabricksServicePrincipalsServicePrincipalsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksserviceprincipals"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksserviceprincipals"
 
 datadatabricksserviceprincipals.NewDataDatabricksServicePrincipalsServicePrincipalsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataDatabricksServicePrincipalsServicePrincipalsOutputReference
 ```

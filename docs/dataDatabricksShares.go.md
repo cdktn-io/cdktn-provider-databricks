@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/databricks/databrick
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksShares.DataDatabricksShares.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksshares"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksshares"
 
 datadatabricksshares.NewDataDatabricksShares(scope Construct, id *string, config DataDatabricksSharesConfig) DataDatabricksShares
 ```
@@ -325,7 +325,7 @@ func ResetShares()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-databricks.dataDatabricksShares.DataDatabricksShares.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksshares"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksshares"
 
 datadatabricksshares.DataDatabricksShares_IsConstruct(x interface{}) *bool
 ```
@@ -357,7 +357,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-databricks.dataDatabricksShares.DataDatabricksShares.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksshares"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksshares"
 
 datadatabricksshares.DataDatabricksShares_IsTerraformElement(x interface{}) *bool
 ```
@@ -371,7 +371,7 @@ datadatabricksshares.DataDatabricksShares_IsTerraformElement(x interface{}) *boo
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-databricks.dataDatabricksShares.DataDatabricksShares.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksshares"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksshares"
 
 datadatabricksshares.DataDatabricksShares_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -385,7 +385,7 @@ datadatabricksshares.DataDatabricksShares_IsTerraformDataSource(x interface{}) *
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-databricks.dataDatabricksShares.DataDatabricksShares.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksshares"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksshares"
 
 datadatabricksshares.DataDatabricksShares_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -636,7 +636,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksShares.DataDatabricksSharesConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksshares"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksshares"
 
 &datadatabricksshares.DataDatabricksSharesConfig {
 	Connection: interface{},
@@ -646,7 +646,7 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadata
 	Lifecycle: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle,
 	Provider: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider,
 	Provisioners: *[]interface{},
-	ProviderConfig: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.dataDatabricksShares.DataDatabricksSharesProviderConfig,
+	ProviderConfig: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18.dataDatabricksShares.DataDatabricksSharesProviderConfig,
 	Shares: *[]*string,
 }
 ```
@@ -766,7 +766,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksShares.DataDatabricksSharesProviderConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksshares"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksshares"
 
 &datadatabricksshares.DataDatabricksSharesProviderConfig {
 	WorkspaceId: *string,
@@ -800,7 +800,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksShares.DataDatabricksSharesProviderConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksshares"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksshares"
 
 datadatabricksshares.NewDataDatabricksSharesProviderConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksSharesProviderConfigOutputReference
 ```

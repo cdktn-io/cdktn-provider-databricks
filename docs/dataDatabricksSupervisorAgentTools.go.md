@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/databricks/databrick
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksSupervisorAgentTools.DataDatabricksSupervisorAgentTools.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabrickssupervisoragenttools"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabrickssupervisoragenttools"
 
 datadatabrickssupervisoragenttools.NewDataDatabricksSupervisorAgentTools(scope Construct, id *string, config DataDatabricksSupervisorAgentToolsConfig) DataDatabricksSupervisorAgentTools
 ```
@@ -325,7 +325,7 @@ func ResetProviderConfig()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-databricks.dataDatabricksSupervisorAgentTools.DataDatabricksSupervisorAgentTools.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabrickssupervisoragenttools"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabrickssupervisoragenttools"
 
 datadatabrickssupervisoragenttools.DataDatabricksSupervisorAgentTools_IsConstruct(x interface{}) *bool
 ```
@@ -357,7 +357,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-databricks.dataDatabricksSupervisorAgentTools.DataDatabricksSupervisorAgentTools.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabrickssupervisoragenttools"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabrickssupervisoragenttools"
 
 datadatabrickssupervisoragenttools.DataDatabricksSupervisorAgentTools_IsTerraformElement(x interface{}) *bool
 ```
@@ -371,7 +371,7 @@ datadatabrickssupervisoragenttools.DataDatabricksSupervisorAgentTools_IsTerrafor
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-databricks.dataDatabricksSupervisorAgentTools.DataDatabricksSupervisorAgentTools.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabrickssupervisoragenttools"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabrickssupervisoragenttools"
 
 datadatabrickssupervisoragenttools.DataDatabricksSupervisorAgentTools_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -385,7 +385,7 @@ datadatabrickssupervisoragenttools.DataDatabricksSupervisorAgentTools_IsTerrafor
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-databricks.dataDatabricksSupervisorAgentTools.DataDatabricksSupervisorAgentTools.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabrickssupervisoragenttools"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabrickssupervisoragenttools"
 
 datadatabrickssupervisoragenttools.DataDatabricksSupervisorAgentTools_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -669,7 +669,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksSupervisorAgentTools.DataDatabricksSupervisorAgentToolsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabrickssupervisoragenttools"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabrickssupervisoragenttools"
 
 &datadatabrickssupervisoragenttools.DataDatabricksSupervisorAgentToolsConfig {
 	Connection: interface{},
@@ -681,7 +681,7 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadata
 	Provisioners: *[]interface{},
 	Parent: *string,
 	PageSize: *f64,
-	ProviderConfig: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.dataDatabricksSupervisorAgentTools.DataDatabricksSupervisorAgentToolsProviderConfig,
+	ProviderConfig: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18.dataDatabricksSupervisorAgentTools.DataDatabricksSupervisorAgentToolsProviderConfig,
 }
 ```
 
@@ -813,7 +813,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksSupervisorAgentTools.DataDatabricksSupervisorAgentToolsProviderConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabrickssupervisoragenttools"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabrickssupervisoragenttools"
 
 &datadatabrickssupervisoragenttools.DataDatabricksSupervisorAgentToolsProviderConfig {
 	WorkspaceId: *string,
@@ -845,11 +845,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksSupervisorAgentTools.DataDatabricksSupervisorAgentToolsTools.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabrickssupervisoragenttools"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabrickssupervisoragenttools"
 
 &datadatabrickssupervisoragenttools.DataDatabricksSupervisorAgentToolsTools {
 	Name: *string,
-	ProviderConfig: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.dataDatabricksSupervisorAgentTools.DataDatabricksSupervisorAgentToolsToolsProviderConfig,
+	ProviderConfig: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18.dataDatabricksSupervisorAgentTools.DataDatabricksSupervisorAgentToolsToolsProviderConfig,
 }
 ```
 
@@ -891,7 +891,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksSupervisorAgentTools.DataDatabricksSupervisorAgentToolsToolsApp.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabrickssupervisoragenttools"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabrickssupervisoragenttools"
 
 &datadatabrickssupervisoragenttools.DataDatabricksSupervisorAgentToolsToolsApp {
 	Name: *string,
@@ -923,7 +923,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksSupervisorAgentTools.DataDatabricksSupervisorAgentToolsToolsGenieSpace.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabrickssupervisoragenttools"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabrickssupervisoragenttools"
 
 &datadatabrickssupervisoragenttools.DataDatabricksSupervisorAgentToolsToolsGenieSpace {
 	Id: *string,
@@ -958,7 +958,7 @@ If you experience problems setting this value it might not be settable. Please t
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksSupervisorAgentTools.DataDatabricksSupervisorAgentToolsToolsKnowledgeAssistant.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabrickssupervisoragenttools"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabrickssupervisoragenttools"
 
 &datadatabrickssupervisoragenttools.DataDatabricksSupervisorAgentToolsToolsKnowledgeAssistant {
 	KnowledgeAssistantId: *string,
@@ -1004,7 +1004,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksSupervisorAgentTools.DataDatabricksSupervisorAgentToolsToolsProviderConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabrickssupervisoragenttools"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabrickssupervisoragenttools"
 
 &datadatabrickssupervisoragenttools.DataDatabricksSupervisorAgentToolsToolsProviderConfig {
 	WorkspaceId: *string,
@@ -1036,7 +1036,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksSupervisorAgentTools.DataDatabricksSupervisorAgentToolsToolsUcConnection.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabrickssupervisoragenttools"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabrickssupervisoragenttools"
 
 &datadatabrickssupervisoragenttools.DataDatabricksSupervisorAgentToolsToolsUcConnection {
 	Name: *string,
@@ -1068,7 +1068,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksSupervisorAgentTools.DataDatabricksSupervisorAgentToolsToolsUcFunction.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabrickssupervisoragenttools"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabrickssupervisoragenttools"
 
 &datadatabrickssupervisoragenttools.DataDatabricksSupervisorAgentToolsToolsUcFunction {
 	Name: *string,
@@ -1100,7 +1100,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksSupervisorAgentTools.DataDatabricksSupervisorAgentToolsToolsVolume.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabrickssupervisoragenttools"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabrickssupervisoragenttools"
 
 &datadatabrickssupervisoragenttools.DataDatabricksSupervisorAgentToolsToolsVolume {
 	Name: *string,
@@ -1134,7 +1134,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksSupervisorAgentTools.DataDatabricksSupervisorAgentToolsProviderConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabrickssupervisoragenttools"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabrickssupervisoragenttools"
 
 datadatabrickssupervisoragenttools.NewDataDatabricksSupervisorAgentToolsProviderConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksSupervisorAgentToolsProviderConfigOutputReference
 ```
@@ -1412,7 +1412,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksSupervisorAgentTools.DataDatabricksSupervisorAgentToolsToolsAppOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabrickssupervisoragenttools"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabrickssupervisoragenttools"
 
 datadatabrickssupervisoragenttools.NewDataDatabricksSupervisorAgentToolsToolsAppOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksSupervisorAgentToolsToolsAppOutputReference
 ```
@@ -1683,7 +1683,7 @@ func InternalValue() DataDatabricksSupervisorAgentToolsToolsApp
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksSupervisorAgentTools.DataDatabricksSupervisorAgentToolsToolsGenieSpaceOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabrickssupervisoragenttools"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabrickssupervisoragenttools"
 
 datadatabrickssupervisoragenttools.NewDataDatabricksSupervisorAgentToolsToolsGenieSpaceOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksSupervisorAgentToolsToolsGenieSpaceOutputReference
 ```
@@ -1954,7 +1954,7 @@ func InternalValue() DataDatabricksSupervisorAgentToolsToolsGenieSpace
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksSupervisorAgentTools.DataDatabricksSupervisorAgentToolsToolsKnowledgeAssistantOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabrickssupervisoragenttools"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabrickssupervisoragenttools"
 
 datadatabrickssupervisoragenttools.NewDataDatabricksSupervisorAgentToolsToolsKnowledgeAssistantOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksSupervisorAgentToolsToolsKnowledgeAssistantOutputReference
 ```
@@ -2254,7 +2254,7 @@ func InternalValue() DataDatabricksSupervisorAgentToolsToolsKnowledgeAssistant
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksSupervisorAgentTools.DataDatabricksSupervisorAgentToolsToolsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabrickssupervisoragenttools"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabrickssupervisoragenttools"
 
 datadatabrickssupervisoragenttools.NewDataDatabricksSupervisorAgentToolsToolsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDatabricksSupervisorAgentToolsToolsList
 ```
@@ -2414,7 +2414,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksSupervisorAgentTools.DataDatabricksSupervisorAgentToolsToolsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabrickssupervisoragenttools"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabrickssupervisoragenttools"
 
 datadatabrickssupervisoragenttools.NewDataDatabricksSupervisorAgentToolsToolsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataDatabricksSupervisorAgentToolsToolsOutputReference
 ```
@@ -2855,7 +2855,7 @@ func InternalValue() DataDatabricksSupervisorAgentToolsTools
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksSupervisorAgentTools.DataDatabricksSupervisorAgentToolsToolsProviderConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabrickssupervisoragenttools"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabrickssupervisoragenttools"
 
 datadatabrickssupervisoragenttools.NewDataDatabricksSupervisorAgentToolsToolsProviderConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksSupervisorAgentToolsToolsProviderConfigOutputReference
 ```
@@ -3133,7 +3133,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksSupervisorAgentTools.DataDatabricksSupervisorAgentToolsToolsUcConnectionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabrickssupervisoragenttools"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabrickssupervisoragenttools"
 
 datadatabrickssupervisoragenttools.NewDataDatabricksSupervisorAgentToolsToolsUcConnectionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksSupervisorAgentToolsToolsUcConnectionOutputReference
 ```
@@ -3404,7 +3404,7 @@ func InternalValue() DataDatabricksSupervisorAgentToolsToolsUcConnection
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksSupervisorAgentTools.DataDatabricksSupervisorAgentToolsToolsUcFunctionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabrickssupervisoragenttools"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabrickssupervisoragenttools"
 
 datadatabrickssupervisoragenttools.NewDataDatabricksSupervisorAgentToolsToolsUcFunctionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksSupervisorAgentToolsToolsUcFunctionOutputReference
 ```
@@ -3675,7 +3675,7 @@ func InternalValue() DataDatabricksSupervisorAgentToolsToolsUcFunction
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksSupervisorAgentTools.DataDatabricksSupervisorAgentToolsToolsVolumeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabrickssupervisoragenttools"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabrickssupervisoragenttools"
 
 datadatabrickssupervisoragenttools.NewDataDatabricksSupervisorAgentToolsToolsVolumeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksSupervisorAgentToolsToolsVolumeOutputReference
 ```

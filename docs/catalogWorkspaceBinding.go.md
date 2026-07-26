@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/databricks/databrick
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.catalogWorkspaceBinding.CatalogWorkspaceBinding.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/catalogworkspacebinding"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/catalogworkspacebinding"
 
 catalogworkspacebinding.NewCatalogWorkspaceBinding(scope Construct, id *string, config CatalogWorkspaceBindingConfig) CatalogWorkspaceBinding
 ```
@@ -455,7 +455,7 @@ func ResetSecurableType()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-databricks.catalogWorkspaceBinding.CatalogWorkspaceBinding.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/catalogworkspacebinding"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/catalogworkspacebinding"
 
 catalogworkspacebinding.CatalogWorkspaceBinding_IsConstruct(x interface{}) *bool
 ```
@@ -487,7 +487,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-databricks.catalogWorkspaceBinding.CatalogWorkspaceBinding.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/catalogworkspacebinding"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/catalogworkspacebinding"
 
 catalogworkspacebinding.CatalogWorkspaceBinding_IsTerraformElement(x interface{}) *bool
 ```
@@ -501,7 +501,7 @@ catalogworkspacebinding.CatalogWorkspaceBinding_IsTerraformElement(x interface{}
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-databricks.catalogWorkspaceBinding.CatalogWorkspaceBinding.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/catalogworkspacebinding"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/catalogworkspacebinding"
 
 catalogworkspacebinding.CatalogWorkspaceBinding_IsTerraformResource(x interface{}) *bool
 ```
@@ -515,7 +515,7 @@ catalogworkspacebinding.CatalogWorkspaceBinding_IsTerraformResource(x interface{
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-databricks.catalogWorkspaceBinding.CatalogWorkspaceBinding.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/catalogworkspacebinding"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/catalogworkspacebinding"
 
 catalogworkspacebinding.CatalogWorkspaceBinding_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -898,7 +898,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.catalogWorkspaceBinding.CatalogWorkspaceBindingConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/catalogworkspacebinding"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/catalogworkspacebinding"
 
 &catalogworkspacebinding.CatalogWorkspaceBindingConfig {
 	Connection: interface{},
@@ -912,7 +912,7 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/catalogw
 	BindingType: *string,
 	CatalogName: *string,
 	Id: *string,
-	ProviderConfig: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.catalogWorkspaceBinding.CatalogWorkspaceBindingProviderConfig,
+	ProviderConfig: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18.catalogWorkspaceBinding.CatalogWorkspaceBindingProviderConfig,
 	SecurableName: *string,
 	SecurableType: *string,
 }
@@ -1103,7 +1103,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.catalogWorkspaceBinding.CatalogWorkspaceBindingProviderConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/catalogworkspacebinding"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/catalogworkspacebinding"
 
 &catalogworkspacebinding.CatalogWorkspaceBindingProviderConfig {
 	WorkspaceId: *string,
@@ -1137,7 +1137,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.catalogWorkspaceBinding.CatalogWorkspaceBindingProviderConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/catalogworkspacebinding"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/catalogworkspacebinding"
 
 catalogworkspacebinding.NewCatalogWorkspaceBindingProviderConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CatalogWorkspaceBindingProviderConfigOutputReference
 ```

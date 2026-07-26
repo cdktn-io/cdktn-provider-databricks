@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/databricks/databrick
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksSqlWarehouses.DataDatabricksSqlWarehouses.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabrickssqlwarehouses"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabrickssqlwarehouses"
 
 datadatabrickssqlwarehouses.NewDataDatabricksSqlWarehouses(scope Construct, id *string, config DataDatabricksSqlWarehousesConfig) DataDatabricksSqlWarehouses
 ```
@@ -339,7 +339,7 @@ func ResetWarehouseNameContains()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-databricks.dataDatabricksSqlWarehouses.DataDatabricksSqlWarehouses.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabrickssqlwarehouses"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabrickssqlwarehouses"
 
 datadatabrickssqlwarehouses.DataDatabricksSqlWarehouses_IsConstruct(x interface{}) *bool
 ```
@@ -371,7 +371,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-databricks.dataDatabricksSqlWarehouses.DataDatabricksSqlWarehouses.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabrickssqlwarehouses"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabrickssqlwarehouses"
 
 datadatabrickssqlwarehouses.DataDatabricksSqlWarehouses_IsTerraformElement(x interface{}) *bool
 ```
@@ -385,7 +385,7 @@ datadatabrickssqlwarehouses.DataDatabricksSqlWarehouses_IsTerraformElement(x int
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-databricks.dataDatabricksSqlWarehouses.DataDatabricksSqlWarehouses.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabrickssqlwarehouses"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabrickssqlwarehouses"
 
 datadatabrickssqlwarehouses.DataDatabricksSqlWarehouses_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -399,7 +399,7 @@ datadatabrickssqlwarehouses.DataDatabricksSqlWarehouses_IsTerraformDataSource(x 
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-databricks.dataDatabricksSqlWarehouses.DataDatabricksSqlWarehouses.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabrickssqlwarehouses"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabrickssqlwarehouses"
 
 datadatabrickssqlwarehouses.DataDatabricksSqlWarehouses_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -694,7 +694,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksSqlWarehouses.DataDatabricksSqlWarehousesConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabrickssqlwarehouses"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabrickssqlwarehouses"
 
 &datadatabrickssqlwarehouses.DataDatabricksSqlWarehousesConfig {
 	Connection: interface{},
@@ -706,7 +706,7 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadata
 	Provisioners: *[]interface{},
 	Id: *string,
 	Ids: *[]*string,
-	ProviderConfig: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.dataDatabricksSqlWarehouses.DataDatabricksSqlWarehousesProviderConfig,
+	ProviderConfig: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18.dataDatabricksSqlWarehouses.DataDatabricksSqlWarehousesProviderConfig,
 	WarehouseNameContains: *string,
 }
 ```
@@ -857,7 +857,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksSqlWarehouses.DataDatabricksSqlWarehousesProviderConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabrickssqlwarehouses"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabrickssqlwarehouses"
 
 &datadatabrickssqlwarehouses.DataDatabricksSqlWarehousesProviderConfig {
 	WorkspaceId: *string,
@@ -891,7 +891,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksSqlWarehouses.DataDatabricksSqlWarehousesProviderConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabrickssqlwarehouses"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabrickssqlwarehouses"
 
 datadatabrickssqlwarehouses.NewDataDatabricksSqlWarehousesProviderConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksSqlWarehousesProviderConfigOutputReference
 ```

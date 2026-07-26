@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/databricks/databrick
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.schema.Schema.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/schema"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/schema"
 
 schema.NewSchema(scope Construct, id *string, config SchemaConfig) Schema
 ```
@@ -476,7 +476,7 @@ func ResetStorageRoot()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-databricks.schema.Schema.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/schema"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/schema"
 
 schema.Schema_IsConstruct(x interface{}) *bool
 ```
@@ -508,7 +508,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-databricks.schema.Schema.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/schema"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/schema"
 
 schema.Schema_IsTerraformElement(x interface{}) *bool
 ```
@@ -522,7 +522,7 @@ schema.Schema_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-databricks.schema.Schema.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/schema"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/schema"
 
 schema.Schema_IsTerraformResource(x interface{}) *bool
 ```
@@ -536,7 +536,7 @@ schema.Schema_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-databricks.schema.Schema.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/schema"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/schema"
 
 schema.Schema_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1018,7 +1018,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.schema.SchemaConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/schema"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/schema"
 
 &schema.SchemaConfig {
 	Connection: interface{},
@@ -1037,7 +1037,7 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/schema"
 	MetastoreId: *string,
 	Owner: *string,
 	Properties: *map[string]*string,
-	ProviderConfig: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.schema.SchemaProviderConfig,
+	ProviderConfig: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18.schema.SchemaProviderConfig,
 	StorageRoot: *string,
 }
 ```
@@ -1279,7 +1279,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.schema.SchemaProviderConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/schema"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/schema"
 
 &schema.SchemaProviderConfig {
 	WorkspaceId: *string,
@@ -1313,7 +1313,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.schema.SchemaProviderConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/schema"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/schema"
 
 schema.NewSchemaProviderConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SchemaProviderConfigOutputReference
 ```

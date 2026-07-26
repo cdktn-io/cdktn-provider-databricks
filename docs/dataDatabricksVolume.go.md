@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/databricks/databrick
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksVolume.DataDatabricksVolume.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksvolume"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksvolume"
 
 datadatabricksvolume.NewDataDatabricksVolume(scope Construct, id *string, config DataDatabricksVolumeConfig) DataDatabricksVolume
 ```
@@ -345,7 +345,7 @@ func ResetVolumeInfo()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-databricks.dataDatabricksVolume.DataDatabricksVolume.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksvolume"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksvolume"
 
 datadatabricksvolume.DataDatabricksVolume_IsConstruct(x interface{}) *bool
 ```
@@ -377,7 +377,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-databricks.dataDatabricksVolume.DataDatabricksVolume.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksvolume"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksvolume"
 
 datadatabricksvolume.DataDatabricksVolume_IsTerraformElement(x interface{}) *bool
 ```
@@ -391,7 +391,7 @@ datadatabricksvolume.DataDatabricksVolume_IsTerraformElement(x interface{}) *boo
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-databricks.dataDatabricksVolume.DataDatabricksVolume.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksvolume"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksvolume"
 
 datadatabricksvolume.DataDatabricksVolume_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -405,7 +405,7 @@ datadatabricksvolume.DataDatabricksVolume_IsTerraformDataSource(x interface{}) *
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-databricks.dataDatabricksVolume.DataDatabricksVolume.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksvolume"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksvolume"
 
 datadatabricksvolume.DataDatabricksVolume_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -700,7 +700,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksVolume.DataDatabricksVolumeConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksvolume"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksvolume"
 
 &datadatabricksvolume.DataDatabricksVolumeConfig {
 	Connection: interface{},
@@ -712,8 +712,8 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadata
 	Provisioners: *[]interface{},
 	Name: *string,
 	Id: *string,
-	ProviderConfig: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.dataDatabricksVolume.DataDatabricksVolumeProviderConfig,
-	VolumeInfo: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.dataDatabricksVolume.DataDatabricksVolumeVolumeInfo,
+	ProviderConfig: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18.dataDatabricksVolume.DataDatabricksVolumeProviderConfig,
+	VolumeInfo: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18.dataDatabricksVolume.DataDatabricksVolumeVolumeInfo,
 }
 ```
 
@@ -865,7 +865,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksVolume.DataDatabricksVolumeProviderConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksvolume"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksvolume"
 
 &datadatabricksvolume.DataDatabricksVolumeProviderConfig {
 	WorkspaceId: *string,
@@ -897,7 +897,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksVolume.DataDatabricksVolumeVolumeInfo.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksvolume"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksvolume"
 
 &datadatabricksvolume.DataDatabricksVolumeVolumeInfo {
 	AccessPoint: *string,
@@ -906,7 +906,7 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadata
 	Comment: *string,
 	CreatedAt: *f64,
 	CreatedBy: *string,
-	EncryptionDetails: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.dataDatabricksVolume.DataDatabricksVolumeVolumeInfoEncryptionDetails,
+	EncryptionDetails: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18.dataDatabricksVolume.DataDatabricksVolumeVolumeInfoEncryptionDetails,
 	FullName: *string,
 	MetastoreId: *string,
 	Name: *string,
@@ -1155,10 +1155,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksVolume.DataDatabricksVolumeVolumeInfoEncryptionDetails.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksvolume"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksvolume"
 
 &datadatabricksvolume.DataDatabricksVolumeVolumeInfoEncryptionDetails {
-	SseEncryptionDetails: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.dataDatabricksVolume.DataDatabricksVolumeVolumeInfoEncryptionDetailsSseEncryptionDetails,
+	SseEncryptionDetails: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18.dataDatabricksVolume.DataDatabricksVolumeVolumeInfoEncryptionDetailsSseEncryptionDetails,
 }
 ```
 
@@ -1189,7 +1189,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksVolume.DataDatabricksVolumeVolumeInfoEncryptionDetailsSseEncryptionDetails.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksvolume"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksvolume"
 
 &datadatabricksvolume.DataDatabricksVolumeVolumeInfoEncryptionDetailsSseEncryptionDetails {
 	Algorithm: *string,
@@ -1237,7 +1237,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksVolume.DataDatabricksVolumeProviderConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksvolume"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksvolume"
 
 datadatabricksvolume.NewDataDatabricksVolumeProviderConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksVolumeProviderConfigOutputReference
 ```
@@ -1515,7 +1515,7 @@ func InternalValue() DataDatabricksVolumeProviderConfig
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksVolume.DataDatabricksVolumeVolumeInfoEncryptionDetailsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksvolume"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksvolume"
 
 datadatabricksvolume.NewDataDatabricksVolumeVolumeInfoEncryptionDetailsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksVolumeVolumeInfoEncryptionDetailsOutputReference
 ```
@@ -1806,7 +1806,7 @@ func InternalValue() DataDatabricksVolumeVolumeInfoEncryptionDetails
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksVolume.DataDatabricksVolumeVolumeInfoEncryptionDetailsSseEncryptionDetailsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksvolume"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksvolume"
 
 datadatabricksvolume.NewDataDatabricksVolumeVolumeInfoEncryptionDetailsSseEncryptionDetailsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksVolumeVolumeInfoEncryptionDetailsSseEncryptionDetailsOutputReference
 ```
@@ -2113,7 +2113,7 @@ func InternalValue() DataDatabricksVolumeVolumeInfoEncryptionDetailsSseEncryptio
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksVolume.DataDatabricksVolumeVolumeInfoOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksvolume"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksvolume"
 
 datadatabricksvolume.NewDataDatabricksVolumeVolumeInfoOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksVolumeVolumeInfoOutputReference
 ```

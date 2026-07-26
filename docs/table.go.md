@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/databricks/databrick
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.table.Table.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/table"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/table"
 
 table.NewTable(scope Construct, id *string, config TableConfig) Table
 ```
@@ -482,7 +482,7 @@ func ResetViewDefinition()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-databricks.table.Table.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/table"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/table"
 
 table.Table_IsConstruct(x interface{}) *bool
 ```
@@ -514,7 +514,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-databricks.table.Table.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/table"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/table"
 
 table.Table_IsTerraformElement(x interface{}) *bool
 ```
@@ -528,7 +528,7 @@ table.Table_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-databricks.table.Table.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/table"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/table"
 
 table.Table_IsTerraformResource(x interface{}) *bool
 ```
@@ -542,7 +542,7 @@ table.Table_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-databricks.table.Table.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/table"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/table"
 
 table.Table_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1079,7 +1079,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.table.TableColumn.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/table"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/table"
 
 &table.TableColumn {
 	Name: *string,
@@ -1251,7 +1251,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.table.TableConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/table"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/table"
 
 &table.TableConfig {
 	Connection: interface{},
@@ -1271,7 +1271,7 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/table"
 	Id: *string,
 	Owner: *string,
 	Properties: *map[string]*string,
-	ProviderConfig: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.table.TableProviderConfig,
+	ProviderConfig: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18.table.TableProviderConfig,
 	StorageCredentialName: *string,
 	StorageLocation: *string,
 	ViewDefinition: *string,
@@ -1556,7 +1556,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.table.TableProviderConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/table"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/table"
 
 &table.TableProviderConfig {
 	WorkspaceId: *string,
@@ -1590,7 +1590,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.table.TableColumnList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/table"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/table"
 
 table.NewTableColumnList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) TableColumnList
 ```
@@ -1750,7 +1750,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.table.TableColumnOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/table"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/table"
 
 table.NewTableColumnOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) TableColumnOutputReference
 ```
@@ -2308,7 +2308,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.table.TableProviderConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/table"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/table"
 
 table.NewTableProviderConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) TableProviderConfigOutputReference
 ```

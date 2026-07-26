@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/databricks/databrick
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksGroup.DataDatabricksGroup.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksgroup"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksgroup"
 
 datadatabricksgroup.NewDataDatabricksGroup(scope Construct, id *string, config DataDatabricksGroupConfig) DataDatabricksGroup
 ```
@@ -437,7 +437,7 @@ func ResetWorkspaceConsume()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-databricks.dataDatabricksGroup.DataDatabricksGroup.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksgroup"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksgroup"
 
 datadatabricksgroup.DataDatabricksGroup_IsConstruct(x interface{}) *bool
 ```
@@ -469,7 +469,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-databricks.dataDatabricksGroup.DataDatabricksGroup.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksgroup"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksgroup"
 
 datadatabricksgroup.DataDatabricksGroup_IsTerraformElement(x interface{}) *bool
 ```
@@ -483,7 +483,7 @@ datadatabricksgroup.DataDatabricksGroup_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-databricks.dataDatabricksGroup.DataDatabricksGroup.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksgroup"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksgroup"
 
 datadatabricksgroup.DataDatabricksGroup_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -497,7 +497,7 @@ datadatabricksgroup.DataDatabricksGroup_IsTerraformDataSource(x interface{}) *bo
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-databricks.dataDatabricksGroup.DataDatabricksGroup.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksgroup"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksgroup"
 
 datadatabricksgroup.DataDatabricksGroup_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1122,7 +1122,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksGroup.DataDatabricksGroupConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksgroup"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksgroup"
 
 &datadatabricksgroup.DataDatabricksGroupConfig {
 	Connection: interface{},
@@ -1144,7 +1144,7 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadata
 	Id: *string,
 	InstanceProfiles: *[]*string,
 	Members: *[]*string,
-	ProviderConfig: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.dataDatabricksGroup.DataDatabricksGroupProviderConfig,
+	ProviderConfig: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18.dataDatabricksGroup.DataDatabricksGroupProviderConfig,
 	Recursive: interface{},
 	Roles: *[]*string,
 	ServicePrincipals: *[]*string,
@@ -1499,7 +1499,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksGroup.DataDatabricksGroupProviderConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksgroup"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksgroup"
 
 &datadatabricksgroup.DataDatabricksGroupProviderConfig {
 	WorkspaceId: *string,
@@ -1533,7 +1533,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksGroup.DataDatabricksGroupProviderConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksgroup"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksgroup"
 
 datadatabricksgroup.NewDataDatabricksGroupProviderConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksGroupProviderConfigOutputReference
 ```

@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/databricks/databrick
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksWorkspaceNetworkOption.DataDatabricksWorkspaceNetworkOption.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksworkspacenetworkoption"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksworkspacenetworkoption"
 
 datadatabricksworkspacenetworkoption.NewDataDatabricksWorkspaceNetworkOption(scope Construct, id *string, config DataDatabricksWorkspaceNetworkOptionConfig) DataDatabricksWorkspaceNetworkOption
 ```
@@ -298,7 +298,7 @@ func InterpolationForAttribute(terraformAttribute *string) IResolvable
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-databricks.dataDatabricksWorkspaceNetworkOption.DataDatabricksWorkspaceNetworkOption.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksworkspacenetworkoption"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksworkspacenetworkoption"
 
 datadatabricksworkspacenetworkoption.DataDatabricksWorkspaceNetworkOption_IsConstruct(x interface{}) *bool
 ```
@@ -330,7 +330,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-databricks.dataDatabricksWorkspaceNetworkOption.DataDatabricksWorkspaceNetworkOption.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksworkspacenetworkoption"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksworkspacenetworkoption"
 
 datadatabricksworkspacenetworkoption.DataDatabricksWorkspaceNetworkOption_IsTerraformElement(x interface{}) *bool
 ```
@@ -344,7 +344,7 @@ datadatabricksworkspacenetworkoption.DataDatabricksWorkspaceNetworkOption_IsTerr
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-databricks.dataDatabricksWorkspaceNetworkOption.DataDatabricksWorkspaceNetworkOption.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksworkspacenetworkoption"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksworkspacenetworkoption"
 
 datadatabricksworkspacenetworkoption.DataDatabricksWorkspaceNetworkOption_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -358,7 +358,7 @@ datadatabricksworkspacenetworkoption.DataDatabricksWorkspaceNetworkOption_IsTerr
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-databricks.dataDatabricksWorkspaceNetworkOption.DataDatabricksWorkspaceNetworkOption.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksworkspacenetworkoption"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksworkspacenetworkoption"
 
 datadatabricksworkspacenetworkoption.DataDatabricksWorkspaceNetworkOption_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -598,7 +598,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksWorkspaceNetworkOption.DataDatabricksWorkspaceNetworkOptionConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksworkspacenetworkoption"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksworkspacenetworkoption"
 
 &datadatabricksworkspacenetworkoption.DataDatabricksWorkspaceNetworkOptionConfig {
 	Connection: interface{},

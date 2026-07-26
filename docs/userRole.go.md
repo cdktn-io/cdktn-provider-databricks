@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/databricks/databrick
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.userRole.UserRole.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/userrole"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/userrole"
 
 userrole.NewUserRole(scope Construct, id *string, config UserRoleConfig) UserRole
 ```
@@ -434,7 +434,7 @@ func ResetProviderConfig()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-databricks.userRole.UserRole.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/userrole"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/userrole"
 
 userrole.UserRole_IsConstruct(x interface{}) *bool
 ```
@@ -466,7 +466,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-databricks.userRole.UserRole.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/userrole"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/userrole"
 
 userrole.UserRole_IsTerraformElement(x interface{}) *bool
 ```
@@ -480,7 +480,7 @@ userrole.UserRole_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-databricks.userRole.UserRole.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/userrole"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/userrole"
 
 userrole.UserRole_IsTerraformResource(x interface{}) *bool
 ```
@@ -494,7 +494,7 @@ userrole.UserRole_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-databricks.userRole.UserRole.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/userrole"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/userrole"
 
 userrole.UserRole_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -833,7 +833,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.userRole.UserRoleConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/userrole"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/userrole"
 
 &userrole.UserRoleConfig {
 	Connection: interface{},
@@ -847,7 +847,7 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/userrole
 	UserId: *string,
 	Api: *string,
 	Id: *string,
-	ProviderConfig: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.userRole.UserRoleProviderConfig,
+	ProviderConfig: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18.userRole.UserRoleProviderConfig,
 }
 ```
 
@@ -1014,7 +1014,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.userRole.UserRoleProviderConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/userrole"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/userrole"
 
 &userrole.UserRoleProviderConfig {
 	WorkspaceId: *string,
@@ -1048,7 +1048,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.userRole.UserRoleProviderConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/userrole"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/userrole"
 
 userrole.NewUserRoleProviderConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) UserRoleProviderConfigOutputReference
 ```

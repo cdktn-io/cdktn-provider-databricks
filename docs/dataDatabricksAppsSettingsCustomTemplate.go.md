@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/databricks/databrick
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksAppsSettingsCustomTemplate.DataDatabricksAppsSettingsCustomTemplate.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksappssettingscustomtemplate"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksappssettingscustomtemplate"
 
 datadatabricksappssettingscustomtemplate.NewDataDatabricksAppsSettingsCustomTemplate(scope Construct, id *string, config DataDatabricksAppsSettingsCustomTemplateConfig) DataDatabricksAppsSettingsCustomTemplate
 ```
@@ -318,7 +318,7 @@ func ResetProviderConfig()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-databricks.dataDatabricksAppsSettingsCustomTemplate.DataDatabricksAppsSettingsCustomTemplate.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksappssettingscustomtemplate"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksappssettingscustomtemplate"
 
 datadatabricksappssettingscustomtemplate.DataDatabricksAppsSettingsCustomTemplate_IsConstruct(x interface{}) *bool
 ```
@@ -350,7 +350,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-databricks.dataDatabricksAppsSettingsCustomTemplate.DataDatabricksAppsSettingsCustomTemplate.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksappssettingscustomtemplate"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksappssettingscustomtemplate"
 
 datadatabricksappssettingscustomtemplate.DataDatabricksAppsSettingsCustomTemplate_IsTerraformElement(x interface{}) *bool
 ```
@@ -364,7 +364,7 @@ datadatabricksappssettingscustomtemplate.DataDatabricksAppsSettingsCustomTemplat
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-databricks.dataDatabricksAppsSettingsCustomTemplate.DataDatabricksAppsSettingsCustomTemplate.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksappssettingscustomtemplate"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksappssettingscustomtemplate"
 
 datadatabricksappssettingscustomtemplate.DataDatabricksAppsSettingsCustomTemplate_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -378,7 +378,7 @@ datadatabricksappssettingscustomtemplate.DataDatabricksAppsSettingsCustomTemplat
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-databricks.dataDatabricksAppsSettingsCustomTemplate.DataDatabricksAppsSettingsCustomTemplate.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksappssettingscustomtemplate"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksappssettingscustomtemplate"
 
 datadatabricksappssettingscustomtemplate.DataDatabricksAppsSettingsCustomTemplate_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -695,7 +695,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksAppsSettingsCustomTemplate.DataDatabricksAppsSettingsCustomTemplateConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksappssettingscustomtemplate"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksappssettingscustomtemplate"
 
 &datadatabricksappssettingscustomtemplate.DataDatabricksAppsSettingsCustomTemplateConfig {
 	Connection: interface{},
@@ -706,7 +706,7 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadata
 	Provider: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider,
 	Provisioners: *[]interface{},
 	Name: *string,
-	ProviderConfig: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.dataDatabricksAppsSettingsCustomTemplate.DataDatabricksAppsSettingsCustomTemplateProviderConfig,
+	ProviderConfig: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18.dataDatabricksAppsSettingsCustomTemplate.DataDatabricksAppsSettingsCustomTemplateProviderConfig,
 }
 ```
 
@@ -825,7 +825,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksAppsSettingsCustomTemplate.DataDatabricksAppsSettingsCustomTemplateManifest.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksappssettingscustomtemplate"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksappssettingscustomtemplate"
 
 &datadatabricksappssettingscustomtemplate.DataDatabricksAppsSettingsCustomTemplateManifest {
 	Name: *string,
@@ -899,17 +899,17 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksAppsSettingsCustomTemplate.DataDatabricksAppsSettingsCustomTemplateManifestResourceSpecs.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksappssettingscustomtemplate"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksappssettingscustomtemplate"
 
 &datadatabricksappssettingscustomtemplate.DataDatabricksAppsSettingsCustomTemplateManifestResourceSpecs {
 	Name: *string,
 	Description: *string,
-	ExperimentSpec: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.dataDatabricksAppsSettingsCustomTemplate.DataDatabricksAppsSettingsCustomTemplateManifestResourceSpecsExperimentSpec,
-	JobSpec: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.dataDatabricksAppsSettingsCustomTemplate.DataDatabricksAppsSettingsCustomTemplateManifestResourceSpecsJobSpec,
-	SecretSpec: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.dataDatabricksAppsSettingsCustomTemplate.DataDatabricksAppsSettingsCustomTemplateManifestResourceSpecsSecretSpec,
-	ServingEndpointSpec: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.dataDatabricksAppsSettingsCustomTemplate.DataDatabricksAppsSettingsCustomTemplateManifestResourceSpecsServingEndpointSpec,
-	SqlWarehouseSpec: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.dataDatabricksAppsSettingsCustomTemplate.DataDatabricksAppsSettingsCustomTemplateManifestResourceSpecsSqlWarehouseSpec,
-	UcSecurableSpec: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.dataDatabricksAppsSettingsCustomTemplate.DataDatabricksAppsSettingsCustomTemplateManifestResourceSpecsUcSecurableSpec,
+	ExperimentSpec: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18.dataDatabricksAppsSettingsCustomTemplate.DataDatabricksAppsSettingsCustomTemplateManifestResourceSpecsExperimentSpec,
+	JobSpec: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18.dataDatabricksAppsSettingsCustomTemplate.DataDatabricksAppsSettingsCustomTemplateManifestResourceSpecsJobSpec,
+	SecretSpec: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18.dataDatabricksAppsSettingsCustomTemplate.DataDatabricksAppsSettingsCustomTemplateManifestResourceSpecsSecretSpec,
+	ServingEndpointSpec: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18.dataDatabricksAppsSettingsCustomTemplate.DataDatabricksAppsSettingsCustomTemplateManifestResourceSpecsServingEndpointSpec,
+	SqlWarehouseSpec: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18.dataDatabricksAppsSettingsCustomTemplate.DataDatabricksAppsSettingsCustomTemplateManifestResourceSpecsSqlWarehouseSpec,
+	UcSecurableSpec: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18.dataDatabricksAppsSettingsCustomTemplate.DataDatabricksAppsSettingsCustomTemplateManifestResourceSpecsUcSecurableSpec,
 }
 ```
 
@@ -1029,7 +1029,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksAppsSettingsCustomTemplate.DataDatabricksAppsSettingsCustomTemplateManifestResourceSpecsExperimentSpec.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksappssettingscustomtemplate"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksappssettingscustomtemplate"
 
 &datadatabricksappssettingscustomtemplate.DataDatabricksAppsSettingsCustomTemplateManifestResourceSpecsExperimentSpec {
 	Permission: *string,
@@ -1061,7 +1061,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksAppsSettingsCustomTemplate.DataDatabricksAppsSettingsCustomTemplateManifestResourceSpecsJobSpec.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksappssettingscustomtemplate"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksappssettingscustomtemplate"
 
 &datadatabricksappssettingscustomtemplate.DataDatabricksAppsSettingsCustomTemplateManifestResourceSpecsJobSpec {
 	Permission: *string,
@@ -1093,7 +1093,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksAppsSettingsCustomTemplate.DataDatabricksAppsSettingsCustomTemplateManifestResourceSpecsSecretSpec.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksappssettingscustomtemplate"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksappssettingscustomtemplate"
 
 &datadatabricksappssettingscustomtemplate.DataDatabricksAppsSettingsCustomTemplateManifestResourceSpecsSecretSpec {
 	Permission: *string,
@@ -1125,7 +1125,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksAppsSettingsCustomTemplate.DataDatabricksAppsSettingsCustomTemplateManifestResourceSpecsServingEndpointSpec.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksappssettingscustomtemplate"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksappssettingscustomtemplate"
 
 &datadatabricksappssettingscustomtemplate.DataDatabricksAppsSettingsCustomTemplateManifestResourceSpecsServingEndpointSpec {
 	Permission: *string,
@@ -1157,7 +1157,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksAppsSettingsCustomTemplate.DataDatabricksAppsSettingsCustomTemplateManifestResourceSpecsSqlWarehouseSpec.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksappssettingscustomtemplate"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksappssettingscustomtemplate"
 
 &datadatabricksappssettingscustomtemplate.DataDatabricksAppsSettingsCustomTemplateManifestResourceSpecsSqlWarehouseSpec {
 	Permission: *string,
@@ -1189,7 +1189,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksAppsSettingsCustomTemplate.DataDatabricksAppsSettingsCustomTemplateManifestResourceSpecsUcSecurableSpec.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksappssettingscustomtemplate"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksappssettingscustomtemplate"
 
 &datadatabricksappssettingscustomtemplate.DataDatabricksAppsSettingsCustomTemplateManifestResourceSpecsUcSecurableSpec {
 	Permission: *string,
@@ -1235,7 +1235,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksAppsSettingsCustomTemplate.DataDatabricksAppsSettingsCustomTemplateProviderConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksappssettingscustomtemplate"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksappssettingscustomtemplate"
 
 &datadatabricksappssettingscustomtemplate.DataDatabricksAppsSettingsCustomTemplateProviderConfig {
 	WorkspaceId: *string,
@@ -1269,7 +1269,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksAppsSettingsCustomTemplate.DataDatabricksAppsSettingsCustomTemplateManifestOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksappssettingscustomtemplate"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksappssettingscustomtemplate"
 
 datadatabricksappssettingscustomtemplate.NewDataDatabricksAppsSettingsCustomTemplateManifestOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksAppsSettingsCustomTemplateManifestOutputReference
 ```
@@ -1633,7 +1633,7 @@ func InternalValue() DataDatabricksAppsSettingsCustomTemplateManifest
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksAppsSettingsCustomTemplate.DataDatabricksAppsSettingsCustomTemplateManifestResourceSpecsExperimentSpecOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksappssettingscustomtemplate"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksappssettingscustomtemplate"
 
 datadatabricksappssettingscustomtemplate.NewDataDatabricksAppsSettingsCustomTemplateManifestResourceSpecsExperimentSpecOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksAppsSettingsCustomTemplateManifestResourceSpecsExperimentSpecOutputReference
 ```
@@ -1904,7 +1904,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksAppsSettingsCustomTemplate.DataDatabricksAppsSettingsCustomTemplateManifestResourceSpecsJobSpecOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksappssettingscustomtemplate"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksappssettingscustomtemplate"
 
 datadatabricksappssettingscustomtemplate.NewDataDatabricksAppsSettingsCustomTemplateManifestResourceSpecsJobSpecOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksAppsSettingsCustomTemplateManifestResourceSpecsJobSpecOutputReference
 ```
@@ -2175,7 +2175,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksAppsSettingsCustomTemplate.DataDatabricksAppsSettingsCustomTemplateManifestResourceSpecsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksappssettingscustomtemplate"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksappssettingscustomtemplate"
 
 datadatabricksappssettingscustomtemplate.NewDataDatabricksAppsSettingsCustomTemplateManifestResourceSpecsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDatabricksAppsSettingsCustomTemplateManifestResourceSpecsList
 ```
@@ -2335,7 +2335,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksAppsSettingsCustomTemplate.DataDatabricksAppsSettingsCustomTemplateManifestResourceSpecsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksappssettingscustomtemplate"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksappssettingscustomtemplate"
 
 datadatabricksappssettingscustomtemplate.NewDataDatabricksAppsSettingsCustomTemplateManifestResourceSpecsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataDatabricksAppsSettingsCustomTemplateManifestResourceSpecsOutputReference
 ```
@@ -2905,7 +2905,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksAppsSettingsCustomTemplate.DataDatabricksAppsSettingsCustomTemplateManifestResourceSpecsSecretSpecOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksappssettingscustomtemplate"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksappssettingscustomtemplate"
 
 datadatabricksappssettingscustomtemplate.NewDataDatabricksAppsSettingsCustomTemplateManifestResourceSpecsSecretSpecOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksAppsSettingsCustomTemplateManifestResourceSpecsSecretSpecOutputReference
 ```
@@ -3176,7 +3176,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksAppsSettingsCustomTemplate.DataDatabricksAppsSettingsCustomTemplateManifestResourceSpecsServingEndpointSpecOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksappssettingscustomtemplate"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksappssettingscustomtemplate"
 
 datadatabricksappssettingscustomtemplate.NewDataDatabricksAppsSettingsCustomTemplateManifestResourceSpecsServingEndpointSpecOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksAppsSettingsCustomTemplateManifestResourceSpecsServingEndpointSpecOutputReference
 ```
@@ -3447,7 +3447,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksAppsSettingsCustomTemplate.DataDatabricksAppsSettingsCustomTemplateManifestResourceSpecsSqlWarehouseSpecOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksappssettingscustomtemplate"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksappssettingscustomtemplate"
 
 datadatabricksappssettingscustomtemplate.NewDataDatabricksAppsSettingsCustomTemplateManifestResourceSpecsSqlWarehouseSpecOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksAppsSettingsCustomTemplateManifestResourceSpecsSqlWarehouseSpecOutputReference
 ```
@@ -3718,7 +3718,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksAppsSettingsCustomTemplate.DataDatabricksAppsSettingsCustomTemplateManifestResourceSpecsUcSecurableSpecOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksappssettingscustomtemplate"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksappssettingscustomtemplate"
 
 datadatabricksappssettingscustomtemplate.NewDataDatabricksAppsSettingsCustomTemplateManifestResourceSpecsUcSecurableSpecOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksAppsSettingsCustomTemplateManifestResourceSpecsUcSecurableSpecOutputReference
 ```
@@ -4011,7 +4011,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksAppsSettingsCustomTemplate.DataDatabricksAppsSettingsCustomTemplateProviderConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksappssettingscustomtemplate"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksappssettingscustomtemplate"
 
 datadatabricksappssettingscustomtemplate.NewDataDatabricksAppsSettingsCustomTemplateProviderConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksAppsSettingsCustomTemplateProviderConfigOutputReference
 ```

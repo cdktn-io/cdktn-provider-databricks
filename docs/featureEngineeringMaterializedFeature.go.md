@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/databricks/databrick
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.featureEngineeringMaterializedFeature.FeatureEngineeringMaterializedFeature.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/featureengineeringmaterializedfeature"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/featureengineeringmaterializedfeature"
 
 featureengineeringmaterializedfeature.NewFeatureEngineeringMaterializedFeature(scope Construct, id *string, config FeatureEngineeringMaterializedFeatureConfig) FeatureEngineeringMaterializedFeature
 ```
@@ -534,7 +534,7 @@ func ResetTableTrigger()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-databricks.featureEngineeringMaterializedFeature.FeatureEngineeringMaterializedFeature.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/featureengineeringmaterializedfeature"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/featureengineeringmaterializedfeature"
 
 featureengineeringmaterializedfeature.FeatureEngineeringMaterializedFeature_IsConstruct(x interface{}) *bool
 ```
@@ -566,7 +566,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-databricks.featureEngineeringMaterializedFeature.FeatureEngineeringMaterializedFeature.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/featureengineeringmaterializedfeature"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/featureengineeringmaterializedfeature"
 
 featureengineeringmaterializedfeature.FeatureEngineeringMaterializedFeature_IsTerraformElement(x interface{}) *bool
 ```
@@ -580,7 +580,7 @@ featureengineeringmaterializedfeature.FeatureEngineeringMaterializedFeature_IsTe
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-databricks.featureEngineeringMaterializedFeature.FeatureEngineeringMaterializedFeature.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/featureengineeringmaterializedfeature"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/featureengineeringmaterializedfeature"
 
 featureengineeringmaterializedfeature.FeatureEngineeringMaterializedFeature_IsTerraformResource(x interface{}) *bool
 ```
@@ -594,7 +594,7 @@ featureengineeringmaterializedfeature.FeatureEngineeringMaterializedFeature_IsTe
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-databricks.featureEngineeringMaterializedFeature.FeatureEngineeringMaterializedFeature.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/featureengineeringmaterializedfeature"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/featureengineeringmaterializedfeature"
 
 featureengineeringmaterializedfeature.FeatureEngineeringMaterializedFeature_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1065,7 +1065,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.featureEngineeringMaterializedFeature.FeatureEngineeringMaterializedFeatureConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/featureengineeringmaterializedfeature"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/featureengineeringmaterializedfeature"
 
 &featureengineeringmaterializedfeature.FeatureEngineeringMaterializedFeatureConfig {
 	Connection: interface{},
@@ -1077,13 +1077,13 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/featuree
 	Provisioners: *[]interface{},
 	FeatureName: *string,
 	CronSchedule: *string,
-	CronScheduleTrigger: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.featureEngineeringMaterializedFeature.FeatureEngineeringMaterializedFeatureCronScheduleTrigger,
-	OfflineStoreConfig: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.featureEngineeringMaterializedFeature.FeatureEngineeringMaterializedFeatureOfflineStoreConfig,
-	OnlineStoreConfig: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.featureEngineeringMaterializedFeature.FeatureEngineeringMaterializedFeatureOnlineStoreConfig,
+	CronScheduleTrigger: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18.featureEngineeringMaterializedFeature.FeatureEngineeringMaterializedFeatureCronScheduleTrigger,
+	OfflineStoreConfig: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18.featureEngineeringMaterializedFeature.FeatureEngineeringMaterializedFeatureOfflineStoreConfig,
+	OnlineStoreConfig: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18.featureEngineeringMaterializedFeature.FeatureEngineeringMaterializedFeatureOnlineStoreConfig,
 	PipelineScheduleState: *string,
-	ProviderConfig: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.featureEngineeringMaterializedFeature.FeatureEngineeringMaterializedFeatureProviderConfig,
-	StreamingMode: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.featureEngineeringMaterializedFeature.FeatureEngineeringMaterializedFeatureStreamingMode,
-	TableTrigger: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.featureEngineeringMaterializedFeature.FeatureEngineeringMaterializedFeatureTableTrigger,
+	ProviderConfig: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18.featureEngineeringMaterializedFeature.FeatureEngineeringMaterializedFeatureProviderConfig,
+	StreamingMode: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18.featureEngineeringMaterializedFeature.FeatureEngineeringMaterializedFeatureStreamingMode,
+	TableTrigger: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18.featureEngineeringMaterializedFeature.FeatureEngineeringMaterializedFeatureTableTrigger,
 }
 ```
 
@@ -1293,7 +1293,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.featureEngineeringMaterializedFeature.FeatureEngineeringMaterializedFeatureCronScheduleTrigger.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/featureengineeringmaterializedfeature"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/featureengineeringmaterializedfeature"
 
 &featureengineeringmaterializedfeature.FeatureEngineeringMaterializedFeatureCronScheduleTrigger {
 	CronExpression: *string,
@@ -1325,7 +1325,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.featureEngineeringMaterializedFeature.FeatureEngineeringMaterializedFeatureOfflineStoreConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/featureengineeringmaterializedfeature"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/featureengineeringmaterializedfeature"
 
 &featureengineeringmaterializedfeature.FeatureEngineeringMaterializedFeatureOfflineStoreConfig {
 	CatalogName: *string,
@@ -1385,7 +1385,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.featureEngineeringMaterializedFeature.FeatureEngineeringMaterializedFeatureOnlineStoreConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/featureengineeringmaterializedfeature"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/featureengineeringmaterializedfeature"
 
 &featureengineeringmaterializedfeature.FeatureEngineeringMaterializedFeatureOnlineStoreConfig {
 	CatalogName: *string,
@@ -1459,7 +1459,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.featureEngineeringMaterializedFeature.FeatureEngineeringMaterializedFeatureProviderConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/featureengineeringmaterializedfeature"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/featureengineeringmaterializedfeature"
 
 &featureengineeringmaterializedfeature.FeatureEngineeringMaterializedFeatureProviderConfig {
 	WorkspaceId: *string,
@@ -1491,7 +1491,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.featureEngineeringMaterializedFeature.FeatureEngineeringMaterializedFeatureStreamingMode.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/featureengineeringmaterializedfeature"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/featureengineeringmaterializedfeature"
 
 &featureengineeringmaterializedfeature.FeatureEngineeringMaterializedFeatureStreamingMode {
 	FreshnessTarget: *string,
@@ -1537,7 +1537,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.featureEngineeringMaterializedFeature.FeatureEngineeringMaterializedFeatureTableTrigger.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/featureengineeringmaterializedfeature"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/featureengineeringmaterializedfeature"
 
 &featureengineeringmaterializedfeature.FeatureEngineeringMaterializedFeatureTableTrigger {
 
@@ -1552,7 +1552,7 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/featuree
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.featureEngineeringMaterializedFeature.FeatureEngineeringMaterializedFeatureCronScheduleTriggerOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/featureengineeringmaterializedfeature"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/featureengineeringmaterializedfeature"
 
 featureengineeringmaterializedfeature.NewFeatureEngineeringMaterializedFeatureCronScheduleTriggerOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) FeatureEngineeringMaterializedFeatureCronScheduleTriggerOutputReference
 ```
@@ -1830,7 +1830,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.featureEngineeringMaterializedFeature.FeatureEngineeringMaterializedFeatureOfflineStoreConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/featureengineeringmaterializedfeature"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/featureengineeringmaterializedfeature"
 
 featureengineeringmaterializedfeature.NewFeatureEngineeringMaterializedFeatureOfflineStoreConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) FeatureEngineeringMaterializedFeatureOfflineStoreConfigOutputReference
 ```
@@ -2145,7 +2145,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.featureEngineeringMaterializedFeature.FeatureEngineeringMaterializedFeatureOnlineStoreConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/featureengineeringmaterializedfeature"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/featureengineeringmaterializedfeature"
 
 featureengineeringmaterializedfeature.NewFeatureEngineeringMaterializedFeatureOnlineStoreConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) FeatureEngineeringMaterializedFeatureOnlineStoreConfigOutputReference
 ```
@@ -2482,7 +2482,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.featureEngineeringMaterializedFeature.FeatureEngineeringMaterializedFeatureProviderConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/featureengineeringmaterializedfeature"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/featureengineeringmaterializedfeature"
 
 featureengineeringmaterializedfeature.NewFeatureEngineeringMaterializedFeatureProviderConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) FeatureEngineeringMaterializedFeatureProviderConfigOutputReference
 ```
@@ -2760,7 +2760,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.featureEngineeringMaterializedFeature.FeatureEngineeringMaterializedFeatureStreamingModeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/featureengineeringmaterializedfeature"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/featureengineeringmaterializedfeature"
 
 featureengineeringmaterializedfeature.NewFeatureEngineeringMaterializedFeatureStreamingModeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) FeatureEngineeringMaterializedFeatureStreamingModeOutputReference
 ```
@@ -3067,7 +3067,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.featureEngineeringMaterializedFeature.FeatureEngineeringMaterializedFeatureTableTriggerOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/featureengineeringmaterializedfeature"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/featureengineeringmaterializedfeature"
 
 featureengineeringmaterializedfeature.NewFeatureEngineeringMaterializedFeatureTableTriggerOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) FeatureEngineeringMaterializedFeatureTableTriggerOutputReference
 ```

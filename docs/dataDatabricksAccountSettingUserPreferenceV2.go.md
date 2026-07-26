@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/databricks/databrick
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksAccountSettingUserPreferenceV2.DataDatabricksAccountSettingUserPreferenceV2.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksaccountsettinguserpreferencev2"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksaccountsettinguserpreferencev2"
 
 datadatabricksaccountsettinguserpreferencev2.NewDataDatabricksAccountSettingUserPreferenceV2(scope Construct, id *string, config DataDatabricksAccountSettingUserPreferenceV2Config) DataDatabricksAccountSettingUserPreferenceV2
 ```
@@ -298,7 +298,7 @@ func InterpolationForAttribute(terraformAttribute *string) IResolvable
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-databricks.dataDatabricksAccountSettingUserPreferenceV2.DataDatabricksAccountSettingUserPreferenceV2.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksaccountsettinguserpreferencev2"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksaccountsettinguserpreferencev2"
 
 datadatabricksaccountsettinguserpreferencev2.DataDatabricksAccountSettingUserPreferenceV2_IsConstruct(x interface{}) *bool
 ```
@@ -330,7 +330,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-databricks.dataDatabricksAccountSettingUserPreferenceV2.DataDatabricksAccountSettingUserPreferenceV2.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksaccountsettinguserpreferencev2"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksaccountsettinguserpreferencev2"
 
 datadatabricksaccountsettinguserpreferencev2.DataDatabricksAccountSettingUserPreferenceV2_IsTerraformElement(x interface{}) *bool
 ```
@@ -344,7 +344,7 @@ datadatabricksaccountsettinguserpreferencev2.DataDatabricksAccountSettingUserPre
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-databricks.dataDatabricksAccountSettingUserPreferenceV2.DataDatabricksAccountSettingUserPreferenceV2.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksaccountsettinguserpreferencev2"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksaccountsettinguserpreferencev2"
 
 datadatabricksaccountsettinguserpreferencev2.DataDatabricksAccountSettingUserPreferenceV2_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -358,7 +358,7 @@ datadatabricksaccountsettinguserpreferencev2.DataDatabricksAccountSettingUserPre
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-databricks.dataDatabricksAccountSettingUserPreferenceV2.DataDatabricksAccountSettingUserPreferenceV2.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksaccountsettinguserpreferencev2"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksaccountsettinguserpreferencev2"
 
 datadatabricksaccountsettinguserpreferencev2.DataDatabricksAccountSettingUserPreferenceV2_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -653,7 +653,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksAccountSettingUserPreferenceV2.DataDatabricksAccountSettingUserPreferenceV2BooleanVal.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksaccountsettinguserpreferencev2"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksaccountsettinguserpreferencev2"
 
 &datadatabricksaccountsettinguserpreferencev2.DataDatabricksAccountSettingUserPreferenceV2BooleanVal {
 	Value: interface{},
@@ -685,7 +685,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksAccountSettingUserPreferenceV2.DataDatabricksAccountSettingUserPreferenceV2Config.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksaccountsettinguserpreferencev2"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksaccountsettinguserpreferencev2"
 
 &datadatabricksaccountsettinguserpreferencev2.DataDatabricksAccountSettingUserPreferenceV2Config {
 	Connection: interface{},
@@ -815,7 +815,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksAccountSettingUserPreferenceV2.DataDatabricksAccountSettingUserPreferenceV2EffectiveBooleanVal.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksaccountsettinguserpreferencev2"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksaccountsettinguserpreferencev2"
 
 &datadatabricksaccountsettinguserpreferencev2.DataDatabricksAccountSettingUserPreferenceV2EffectiveBooleanVal {
 	Value: interface{},
@@ -847,7 +847,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksAccountSettingUserPreferenceV2.DataDatabricksAccountSettingUserPreferenceV2EffectiveStringVal.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksaccountsettinguserpreferencev2"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksaccountsettinguserpreferencev2"
 
 &datadatabricksaccountsettinguserpreferencev2.DataDatabricksAccountSettingUserPreferenceV2EffectiveStringVal {
 	Value: *string,
@@ -879,7 +879,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksAccountSettingUserPreferenceV2.DataDatabricksAccountSettingUserPreferenceV2StringVal.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksaccountsettinguserpreferencev2"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksaccountsettinguserpreferencev2"
 
 &datadatabricksaccountsettinguserpreferencev2.DataDatabricksAccountSettingUserPreferenceV2StringVal {
 	Value: *string,
@@ -913,7 +913,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksAccountSettingUserPreferenceV2.DataDatabricksAccountSettingUserPreferenceV2BooleanValOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksaccountsettinguserpreferencev2"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksaccountsettinguserpreferencev2"
 
 datadatabricksaccountsettinguserpreferencev2.NewDataDatabricksAccountSettingUserPreferenceV2BooleanValOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksAccountSettingUserPreferenceV2BooleanValOutputReference
 ```
@@ -1191,7 +1191,7 @@ func InternalValue() DataDatabricksAccountSettingUserPreferenceV2BooleanVal
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksAccountSettingUserPreferenceV2.DataDatabricksAccountSettingUserPreferenceV2EffectiveBooleanValOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksaccountsettinguserpreferencev2"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksaccountsettinguserpreferencev2"
 
 datadatabricksaccountsettinguserpreferencev2.NewDataDatabricksAccountSettingUserPreferenceV2EffectiveBooleanValOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksAccountSettingUserPreferenceV2EffectiveBooleanValOutputReference
 ```
@@ -1469,7 +1469,7 @@ func InternalValue() DataDatabricksAccountSettingUserPreferenceV2EffectiveBoolea
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksAccountSettingUserPreferenceV2.DataDatabricksAccountSettingUserPreferenceV2EffectiveStringValOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksaccountsettinguserpreferencev2"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksaccountsettinguserpreferencev2"
 
 datadatabricksaccountsettinguserpreferencev2.NewDataDatabricksAccountSettingUserPreferenceV2EffectiveStringValOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksAccountSettingUserPreferenceV2EffectiveStringValOutputReference
 ```
@@ -1747,7 +1747,7 @@ func InternalValue() DataDatabricksAccountSettingUserPreferenceV2EffectiveString
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksAccountSettingUserPreferenceV2.DataDatabricksAccountSettingUserPreferenceV2StringValOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksaccountsettinguserpreferencev2"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksaccountsettinguserpreferencev2"
 
 datadatabricksaccountsettinguserpreferencev2.NewDataDatabricksAccountSettingUserPreferenceV2StringValOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksAccountSettingUserPreferenceV2StringValOutputReference
 ```
