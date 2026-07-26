@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/databricks/databrick
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.artifactAllowlist.ArtifactAllowlist.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/artifactallowlist"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/artifactallowlist"
 
 artifactallowlist.NewArtifactAllowlist(scope Construct, id *string, config ArtifactAllowlistConfig) ArtifactAllowlist
 ```
@@ -461,7 +461,7 @@ func ResetProviderConfig()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-databricks.artifactAllowlist.ArtifactAllowlist.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/artifactallowlist"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/artifactallowlist"
 
 artifactallowlist.ArtifactAllowlist_IsConstruct(x interface{}) *bool
 ```
@@ -493,7 +493,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-databricks.artifactAllowlist.ArtifactAllowlist.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/artifactallowlist"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/artifactallowlist"
 
 artifactallowlist.ArtifactAllowlist_IsTerraformElement(x interface{}) *bool
 ```
@@ -507,7 +507,7 @@ artifactallowlist.ArtifactAllowlist_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-databricks.artifactAllowlist.ArtifactAllowlist.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/artifactallowlist"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/artifactallowlist"
 
 artifactallowlist.ArtifactAllowlist_IsTerraformResource(x interface{}) *bool
 ```
@@ -521,7 +521,7 @@ artifactallowlist.ArtifactAllowlist_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-databricks.artifactAllowlist.ArtifactAllowlist.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/artifactallowlist"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/artifactallowlist"
 
 artifactallowlist.ArtifactAllowlist_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -904,7 +904,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.artifactAllowlist.ArtifactAllowlistArtifactMatcher.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/artifactallowlist"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/artifactallowlist"
 
 &artifactallowlist.ArtifactAllowlistArtifactMatcher {
 	Artifact: *string,
@@ -950,7 +950,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.artifactAllowlist.ArtifactAllowlistConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/artifactallowlist"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/artifactallowlist"
 
 &artifactallowlist.ArtifactAllowlistConfig {
 	Connection: interface{},
@@ -966,7 +966,7 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/artifact
 	CreatedBy: *string,
 	Id: *string,
 	MetastoreId: *string,
-	ProviderConfig: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.artifactAllowlist.ArtifactAllowlistProviderConfig,
+	ProviderConfig: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18.artifactAllowlist.ArtifactAllowlistProviderConfig,
 }
 ```
 
@@ -1157,7 +1157,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.artifactAllowlist.ArtifactAllowlistProviderConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/artifactallowlist"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/artifactallowlist"
 
 &artifactallowlist.ArtifactAllowlistProviderConfig {
 	WorkspaceId: *string,
@@ -1191,7 +1191,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.artifactAllowlist.ArtifactAllowlistArtifactMatcherList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/artifactallowlist"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/artifactallowlist"
 
 artifactallowlist.NewArtifactAllowlistArtifactMatcherList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ArtifactAllowlistArtifactMatcherList
 ```
@@ -1351,7 +1351,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.artifactAllowlist.ArtifactAllowlistArtifactMatcherOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/artifactallowlist"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/artifactallowlist"
 
 artifactallowlist.NewArtifactAllowlistArtifactMatcherOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ArtifactAllowlistArtifactMatcherOutputReference
 ```
@@ -1662,7 +1662,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.artifactAllowlist.ArtifactAllowlistProviderConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/artifactallowlist"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/artifactallowlist"
 
 artifactallowlist.NewArtifactAllowlistProviderConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ArtifactAllowlistProviderConfigOutputReference
 ```

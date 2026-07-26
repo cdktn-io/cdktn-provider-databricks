@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/databricks/databrick
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.directory.Directory.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/directory"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/directory"
 
 directory.NewDirectory(scope Construct, id *string, config DirectoryConfig) Directory
 ```
@@ -441,7 +441,7 @@ func ResetProviderConfig()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-databricks.directory.Directory.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/directory"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/directory"
 
 directory.Directory_IsConstruct(x interface{}) *bool
 ```
@@ -473,7 +473,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-databricks.directory.Directory.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/directory"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/directory"
 
 directory.Directory_IsTerraformElement(x interface{}) *bool
 ```
@@ -487,7 +487,7 @@ directory.Directory_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-databricks.directory.Directory.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/directory"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/directory"
 
 directory.Directory_IsTerraformResource(x interface{}) *bool
 ```
@@ -501,7 +501,7 @@ directory.Directory_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-databricks.directory.Directory.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/directory"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/directory"
 
 directory.Directory_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -851,7 +851,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.directory.DirectoryConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/directory"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/directory"
 
 &directory.DirectoryConfig {
 	Connection: interface{},
@@ -865,7 +865,7 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/director
 	DeleteRecursive: interface{},
 	Id: *string,
 	ObjectId: *f64,
-	ProviderConfig: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.directory.DirectoryProviderConfig,
+	ProviderConfig: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18.directory.DirectoryProviderConfig,
 }
 ```
 
@@ -1028,7 +1028,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.directory.DirectoryProviderConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/directory"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/directory"
 
 &directory.DirectoryProviderConfig {
 	WorkspaceId: *string,
@@ -1062,7 +1062,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.directory.DirectoryProviderConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/directory"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/directory"
 
 directory.NewDirectoryProviderConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DirectoryProviderConfigOutputReference
 ```

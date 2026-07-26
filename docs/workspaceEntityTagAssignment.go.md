@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/databricks/databrick
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.workspaceEntityTagAssignment.WorkspaceEntityTagAssignment.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/workspaceentitytagassignment"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/workspaceentitytagassignment"
 
 workspaceentitytagassignment.NewWorkspaceEntityTagAssignment(scope Construct, id *string, config WorkspaceEntityTagAssignmentConfig) WorkspaceEntityTagAssignment
 ```
@@ -427,7 +427,7 @@ func ResetTagValue()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-databricks.workspaceEntityTagAssignment.WorkspaceEntityTagAssignment.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/workspaceentitytagassignment"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/workspaceentitytagassignment"
 
 workspaceentitytagassignment.WorkspaceEntityTagAssignment_IsConstruct(x interface{}) *bool
 ```
@@ -459,7 +459,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-databricks.workspaceEntityTagAssignment.WorkspaceEntityTagAssignment.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/workspaceentitytagassignment"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/workspaceentitytagassignment"
 
 workspaceentitytagassignment.WorkspaceEntityTagAssignment_IsTerraformElement(x interface{}) *bool
 ```
@@ -473,7 +473,7 @@ workspaceentitytagassignment.WorkspaceEntityTagAssignment_IsTerraformElement(x i
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-databricks.workspaceEntityTagAssignment.WorkspaceEntityTagAssignment.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/workspaceentitytagassignment"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/workspaceentitytagassignment"
 
 workspaceentitytagassignment.WorkspaceEntityTagAssignment_IsTerraformResource(x interface{}) *bool
 ```
@@ -487,7 +487,7 @@ workspaceentitytagassignment.WorkspaceEntityTagAssignment_IsTerraformResource(x 
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-databricks.workspaceEntityTagAssignment.WorkspaceEntityTagAssignment.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/workspaceentitytagassignment"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/workspaceentitytagassignment"
 
 workspaceentitytagassignment.WorkspaceEntityTagAssignment_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -826,7 +826,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.workspaceEntityTagAssignment.WorkspaceEntityTagAssignmentConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/workspaceentitytagassignment"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/workspaceentitytagassignment"
 
 &workspaceentitytagassignment.WorkspaceEntityTagAssignmentConfig {
 	Connection: interface{},
@@ -839,7 +839,7 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/workspac
 	EntityId: *string,
 	EntityType: *string,
 	TagKey: *string,
-	ProviderConfig: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.workspaceEntityTagAssignment.WorkspaceEntityTagAssignmentProviderConfig,
+	ProviderConfig: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18.workspaceEntityTagAssignment.WorkspaceEntityTagAssignmentProviderConfig,
 	TagValue: *string,
 }
 ```
@@ -998,7 +998,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.workspaceEntityTagAssignment.WorkspaceEntityTagAssignmentProviderConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/workspaceentitytagassignment"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/workspaceentitytagassignment"
 
 &workspaceentitytagassignment.WorkspaceEntityTagAssignmentProviderConfig {
 	WorkspaceId: *string,
@@ -1032,7 +1032,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.workspaceEntityTagAssignment.WorkspaceEntityTagAssignmentProviderConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/workspaceentitytagassignment"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/workspaceentitytagassignment"
 
 workspaceentitytagassignment.NewWorkspaceEntityTagAssignmentProviderConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) WorkspaceEntityTagAssignmentProviderConfigOutputReference
 ```

@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/databricks/databrick
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksExternalLocations.DataDatabricksExternalLocations.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksexternallocations"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksexternallocations"
 
 datadatabricksexternallocations.NewDataDatabricksExternalLocations(scope Construct, id *string, config DataDatabricksExternalLocationsConfig) DataDatabricksExternalLocations
 ```
@@ -332,7 +332,7 @@ func ResetProviderConfig()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-databricks.dataDatabricksExternalLocations.DataDatabricksExternalLocations.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksexternallocations"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksexternallocations"
 
 datadatabricksexternallocations.DataDatabricksExternalLocations_IsConstruct(x interface{}) *bool
 ```
@@ -364,7 +364,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-databricks.dataDatabricksExternalLocations.DataDatabricksExternalLocations.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksexternallocations"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksexternallocations"
 
 datadatabricksexternallocations.DataDatabricksExternalLocations_IsTerraformElement(x interface{}) *bool
 ```
@@ -378,7 +378,7 @@ datadatabricksexternallocations.DataDatabricksExternalLocations_IsTerraformEleme
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-databricks.dataDatabricksExternalLocations.DataDatabricksExternalLocations.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksexternallocations"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksexternallocations"
 
 datadatabricksexternallocations.DataDatabricksExternalLocations_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -392,7 +392,7 @@ datadatabricksexternallocations.DataDatabricksExternalLocations_IsTerraformDataS
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-databricks.dataDatabricksExternalLocations.DataDatabricksExternalLocations.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksexternallocations"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksexternallocations"
 
 datadatabricksexternallocations.DataDatabricksExternalLocations_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -665,7 +665,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksExternalLocations.DataDatabricksExternalLocationsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksexternallocations"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksexternallocations"
 
 &datadatabricksexternallocations.DataDatabricksExternalLocationsConfig {
 	Connection: interface{},
@@ -677,7 +677,7 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadata
 	Provisioners: *[]interface{},
 	Id: *string,
 	Names: *[]*string,
-	ProviderConfig: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.dataDatabricksExternalLocations.DataDatabricksExternalLocationsProviderConfig,
+	ProviderConfig: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18.dataDatabricksExternalLocations.DataDatabricksExternalLocationsProviderConfig,
 }
 ```
 
@@ -814,7 +814,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksExternalLocations.DataDatabricksExternalLocationsProviderConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksexternallocations"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksexternallocations"
 
 &datadatabricksexternallocations.DataDatabricksExternalLocationsProviderConfig {
 	WorkspaceId: *string,
@@ -848,7 +848,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksExternalLocations.DataDatabricksExternalLocationsProviderConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksexternallocations"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksexternallocations"
 
 datadatabricksexternallocations.NewDataDatabricksExternalLocationsProviderConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksExternalLocationsProviderConfigOutputReference
 ```

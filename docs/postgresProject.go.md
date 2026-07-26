@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/databricks/databrick
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.postgresProject.PostgresProject.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/postgresproject"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/postgresproject"
 
 postgresproject.NewPostgresProject(scope Construct, id *string, config PostgresProjectConfig) PostgresProject
 ```
@@ -487,7 +487,7 @@ func ResetSpec()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-databricks.postgresProject.PostgresProject.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/postgresproject"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/postgresproject"
 
 postgresproject.PostgresProject_IsConstruct(x interface{}) *bool
 ```
@@ -519,7 +519,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-databricks.postgresProject.PostgresProject.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/postgresproject"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/postgresproject"
 
 postgresproject.PostgresProject_IsTerraformElement(x interface{}) *bool
 ```
@@ -533,7 +533,7 @@ postgresproject.PostgresProject_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-databricks.postgresProject.PostgresProject.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/postgresproject"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/postgresproject"
 
 postgresproject.PostgresProject_IsTerraformResource(x interface{}) *bool
 ```
@@ -547,7 +547,7 @@ postgresproject.PostgresProject_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-databricks.postgresProject.PostgresProject.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/postgresproject"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/postgresproject"
 
 postgresproject.PostgresProject_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -985,7 +985,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.postgresProject.PostgresProjectConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/postgresproject"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/postgresproject"
 
 &postgresproject.PostgresProjectConfig {
 	Connection: interface{},
@@ -996,11 +996,11 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/postgres
 	Provider: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider,
 	Provisioners: *[]interface{},
 	ProjectId: *string,
-	InitialBranchSpec: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.postgresProject.PostgresProjectInitialBranchSpec,
-	InitialEndpointSpec: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.postgresProject.PostgresProjectInitialEndpointSpec,
-	ProviderConfig: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.postgresProject.PostgresProjectProviderConfig,
+	InitialBranchSpec: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18.postgresProject.PostgresProjectInitialBranchSpec,
+	InitialEndpointSpec: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18.postgresProject.PostgresProjectInitialEndpointSpec,
+	ProviderConfig: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18.postgresProject.PostgresProjectProviderConfig,
 	PurgeOnDelete: interface{},
-	Spec: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.postgresProject.PostgresProjectSpec,
+	Spec: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18.postgresProject.PostgresProjectSpec,
 }
 ```
 
@@ -1171,7 +1171,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.postgresProject.PostgresProjectInitialBranchSpec.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/postgresproject"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/postgresproject"
 
 &postgresproject.PostgresProjectInitialBranchSpec {
 	IsProtected: interface{},
@@ -1203,12 +1203,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.postgresProject.PostgresProjectInitialEndpointSpec.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/postgresproject"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/postgresproject"
 
 &postgresproject.PostgresProjectInitialEndpointSpec {
 	AutoscalingLimitMaxCu: *f64,
 	AutoscalingLimitMinCu: *f64,
-	Group: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.postgresProject.PostgresProjectInitialEndpointSpecGroup,
+	Group: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18.postgresProject.PostgresProjectInitialEndpointSpecGroup,
 	NoSuspension: interface{},
 	SuspendTimeoutDuration: *string,
 }
@@ -1291,7 +1291,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.postgresProject.PostgresProjectInitialEndpointSpecGroup.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/postgresproject"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/postgresproject"
 
 &postgresproject.PostgresProjectInitialEndpointSpecGroup {
 	Max: *f64,
@@ -1351,7 +1351,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.postgresProject.PostgresProjectProviderConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/postgresproject"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/postgresproject"
 
 &postgresproject.PostgresProjectProviderConfig {
 	WorkspaceId: *string,
@@ -1383,13 +1383,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.postgresProject.PostgresProjectSpec.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/postgresproject"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/postgresproject"
 
 &postgresproject.PostgresProjectSpec {
 	BudgetPolicyId: *string,
 	CustomTags: interface{},
 	DefaultBranch: *string,
-	DefaultEndpointSettings: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.postgresProject.PostgresProjectSpecDefaultEndpointSettings,
+	DefaultEndpointSettings: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18.postgresProject.PostgresProjectSpecDefaultEndpointSettings,
 	DisplayName: *string,
 	EnablePgNativeLogin: interface{},
 	HistoryRetentionDuration: *string,
@@ -1513,7 +1513,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.postgresProject.PostgresProjectSpecCustomTags.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/postgresproject"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/postgresproject"
 
 &postgresproject.PostgresProjectSpecCustomTags {
 	Key: *string,
@@ -1559,7 +1559,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.postgresProject.PostgresProjectSpecDefaultEndpointSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/postgresproject"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/postgresproject"
 
 &postgresproject.PostgresProjectSpecDefaultEndpointSettings {
 	AutoscalingLimitMaxCu: *f64,
@@ -1647,7 +1647,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.postgresProject.PostgresProjectStatus.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/postgresproject"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/postgresproject"
 
 &postgresproject.PostgresProjectStatus {
 
@@ -1660,7 +1660,7 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/postgres
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.postgresProject.PostgresProjectStatusCustomTags.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/postgresproject"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/postgresproject"
 
 &postgresproject.PostgresProjectStatusCustomTags {
 	Key: *string,
@@ -1706,7 +1706,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.postgresProject.PostgresProjectStatusDefaultEndpointSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/postgresproject"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/postgresproject"
 
 &postgresproject.PostgresProjectStatusDefaultEndpointSettings {
 	AutoscalingLimitMaxCu: *f64,
@@ -1796,7 +1796,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.postgresProject.PostgresProjectInitialBranchSpecOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/postgresproject"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/postgresproject"
 
 postgresproject.NewPostgresProjectInitialBranchSpecOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PostgresProjectInitialBranchSpecOutputReference
 ```
@@ -2074,7 +2074,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.postgresProject.PostgresProjectInitialEndpointSpecGroupOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/postgresproject"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/postgresproject"
 
 postgresproject.NewPostgresProjectInitialEndpointSpecGroupOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PostgresProjectInitialEndpointSpecGroupOutputReference
 ```
@@ -2396,7 +2396,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.postgresProject.PostgresProjectInitialEndpointSpecOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/postgresproject"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/postgresproject"
 
 postgresproject.NewPostgresProjectInitialEndpointSpecOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PostgresProjectInitialEndpointSpecOutputReference
 ```
@@ -2803,7 +2803,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.postgresProject.PostgresProjectProviderConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/postgresproject"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/postgresproject"
 
 postgresproject.NewPostgresProjectProviderConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PostgresProjectProviderConfigOutputReference
 ```
@@ -3081,7 +3081,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.postgresProject.PostgresProjectSpecCustomTagsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/postgresproject"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/postgresproject"
 
 postgresproject.NewPostgresProjectSpecCustomTagsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) PostgresProjectSpecCustomTagsList
 ```
@@ -3241,7 +3241,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.postgresProject.PostgresProjectSpecCustomTagsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/postgresproject"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/postgresproject"
 
 postgresproject.NewPostgresProjectSpecCustomTagsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) PostgresProjectSpecCustomTagsOutputReference
 ```
@@ -3566,7 +3566,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.postgresProject.PostgresProjectSpecDefaultEndpointSettingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/postgresproject"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/postgresproject"
 
 postgresproject.NewPostgresProjectSpecDefaultEndpointSettingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PostgresProjectSpecDefaultEndpointSettingsOutputReference
 ```
@@ -3960,7 +3960,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.postgresProject.PostgresProjectSpecOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/postgresproject"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/postgresproject"
 
 postgresproject.NewPostgresProjectSpecOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PostgresProjectSpecOutputReference
 ```
@@ -4467,7 +4467,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.postgresProject.PostgresProjectStatusCustomTagsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/postgresproject"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/postgresproject"
 
 postgresproject.NewPostgresProjectStatusCustomTagsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) PostgresProjectStatusCustomTagsList
 ```
@@ -4627,7 +4627,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.postgresProject.PostgresProjectStatusCustomTagsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/postgresproject"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/postgresproject"
 
 postgresproject.NewPostgresProjectStatusCustomTagsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) PostgresProjectStatusCustomTagsOutputReference
 ```
@@ -4952,7 +4952,7 @@ func InternalValue() PostgresProjectStatusCustomTags
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.postgresProject.PostgresProjectStatusDefaultEndpointSettingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/postgresproject"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/postgresproject"
 
 postgresproject.NewPostgresProjectStatusDefaultEndpointSettingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PostgresProjectStatusDefaultEndpointSettingsOutputReference
 ```
@@ -5346,7 +5346,7 @@ func InternalValue() PostgresProjectStatusDefaultEndpointSettings
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.postgresProject.PostgresProjectStatusOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/postgresproject"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/postgresproject"
 
 postgresproject.NewPostgresProjectStatusOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PostgresProjectStatusOutputReference
 ```

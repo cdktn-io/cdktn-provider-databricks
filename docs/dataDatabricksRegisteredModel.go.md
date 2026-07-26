@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/databricks/databrick
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksRegisteredModel.DataDatabricksRegisteredModel.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksregisteredmodel"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksregisteredmodel"
 
 datadatabricksregisteredmodel.NewDataDatabricksRegisteredModel(scope Construct, id *string, config DataDatabricksRegisteredModelConfig) DataDatabricksRegisteredModel
 ```
@@ -352,7 +352,7 @@ func ResetProviderConfig()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-databricks.dataDatabricksRegisteredModel.DataDatabricksRegisteredModel.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksregisteredmodel"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksregisteredmodel"
 
 datadatabricksregisteredmodel.DataDatabricksRegisteredModel_IsConstruct(x interface{}) *bool
 ```
@@ -384,7 +384,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-databricks.dataDatabricksRegisteredModel.DataDatabricksRegisteredModel.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksregisteredmodel"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksregisteredmodel"
 
 datadatabricksregisteredmodel.DataDatabricksRegisteredModel_IsTerraformElement(x interface{}) *bool
 ```
@@ -398,7 +398,7 @@ datadatabricksregisteredmodel.DataDatabricksRegisteredModel_IsTerraformElement(x
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-databricks.dataDatabricksRegisteredModel.DataDatabricksRegisteredModel.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksregisteredmodel"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksregisteredmodel"
 
 datadatabricksregisteredmodel.DataDatabricksRegisteredModel_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -412,7 +412,7 @@ datadatabricksregisteredmodel.DataDatabricksRegisteredModel_IsTerraformDataSourc
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-databricks.dataDatabricksRegisteredModel.DataDatabricksRegisteredModel.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksregisteredmodel"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksregisteredmodel"
 
 datadatabricksregisteredmodel.DataDatabricksRegisteredModel_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -729,7 +729,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksRegisteredModel.DataDatabricksRegisteredModelConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksregisteredmodel"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksregisteredmodel"
 
 &datadatabricksregisteredmodel.DataDatabricksRegisteredModelConfig {
 	Connection: interface{},
@@ -743,7 +743,7 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadata
 	IncludeAliases: interface{},
 	IncludeBrowse: interface{},
 	ModelInfo: interface{},
-	ProviderConfig: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.dataDatabricksRegisteredModel.DataDatabricksRegisteredModelProviderConfig,
+	ProviderConfig: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18.dataDatabricksRegisteredModel.DataDatabricksRegisteredModelProviderConfig,
 }
 ```
 
@@ -901,7 +901,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksRegisteredModel.DataDatabricksRegisteredModelModelInfo.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksregisteredmodel"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksregisteredmodel"
 
 &datadatabricksregisteredmodel.DataDatabricksRegisteredModelModelInfo {
 	Aliases: interface{},
@@ -1101,7 +1101,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksRegisteredModel.DataDatabricksRegisteredModelModelInfoAliases.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksregisteredmodel"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksregisteredmodel"
 
 &datadatabricksregisteredmodel.DataDatabricksRegisteredModelModelInfoAliases {
 	AliasName: *string,
@@ -1206,7 +1206,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksRegisteredModel.DataDatabricksRegisteredModelProviderConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksregisteredmodel"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksregisteredmodel"
 
 &datadatabricksregisteredmodel.DataDatabricksRegisteredModelProviderConfig {
 	WorkspaceId: *string,
@@ -1240,7 +1240,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksRegisteredModel.DataDatabricksRegisteredModelModelInfoAliasesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksregisteredmodel"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksregisteredmodel"
 
 datadatabricksregisteredmodel.NewDataDatabricksRegisteredModelModelInfoAliasesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDatabricksRegisteredModelModelInfoAliasesList
 ```
@@ -1400,7 +1400,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksRegisteredModel.DataDatabricksRegisteredModelModelInfoAliasesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksregisteredmodel"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksregisteredmodel"
 
 datadatabricksregisteredmodel.NewDataDatabricksRegisteredModelModelInfoAliasesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataDatabricksRegisteredModelModelInfoAliasesOutputReference
 ```
@@ -1841,7 +1841,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksRegisteredModel.DataDatabricksRegisteredModelModelInfoList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksregisteredmodel"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksregisteredmodel"
 
 datadatabricksregisteredmodel.NewDataDatabricksRegisteredModelModelInfoList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDatabricksRegisteredModelModelInfoList
 ```
@@ -2001,7 +2001,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksRegisteredModel.DataDatabricksRegisteredModelModelInfoOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksregisteredmodel"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksregisteredmodel"
 
 datadatabricksregisteredmodel.NewDataDatabricksRegisteredModelModelInfoOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataDatabricksRegisteredModelModelInfoOutputReference
 ```
@@ -2669,7 +2669,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksRegisteredModel.DataDatabricksRegisteredModelProviderConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksregisteredmodel"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksregisteredmodel"
 
 datadatabricksregisteredmodel.NewDataDatabricksRegisteredModelProviderConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksRegisteredModelProviderConfigOutputReference
 ```
