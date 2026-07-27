@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/databricks/databrick
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksDatabaseDatabaseCatalogs.DataDatabricksDatabaseDatabaseCatalogs.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksdatabasedatabasecatalogs"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksdatabasedatabasecatalogs"
 
 datadatabricksdatabasedatabasecatalogs.NewDataDatabricksDatabaseDatabaseCatalogs(scope Construct, id *string, config DataDatabricksDatabaseDatabaseCatalogsConfig) DataDatabricksDatabaseDatabaseCatalogs
 ```
@@ -325,7 +325,7 @@ func ResetProviderConfig()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-databricks.dataDatabricksDatabaseDatabaseCatalogs.DataDatabricksDatabaseDatabaseCatalogs.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksdatabasedatabasecatalogs"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksdatabasedatabasecatalogs"
 
 datadatabricksdatabasedatabasecatalogs.DataDatabricksDatabaseDatabaseCatalogs_IsConstruct(x interface{}) *bool
 ```
@@ -357,7 +357,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-databricks.dataDatabricksDatabaseDatabaseCatalogs.DataDatabricksDatabaseDatabaseCatalogs.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksdatabasedatabasecatalogs"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksdatabasedatabasecatalogs"
 
 datadatabricksdatabasedatabasecatalogs.DataDatabricksDatabaseDatabaseCatalogs_IsTerraformElement(x interface{}) *bool
 ```
@@ -371,7 +371,7 @@ datadatabricksdatabasedatabasecatalogs.DataDatabricksDatabaseDatabaseCatalogs_Is
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-databricks.dataDatabricksDatabaseDatabaseCatalogs.DataDatabricksDatabaseDatabaseCatalogs.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksdatabasedatabasecatalogs"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksdatabasedatabasecatalogs"
 
 datadatabricksdatabasedatabasecatalogs.DataDatabricksDatabaseDatabaseCatalogs_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -385,7 +385,7 @@ datadatabricksdatabasedatabasecatalogs.DataDatabricksDatabaseDatabaseCatalogs_Is
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-databricks.dataDatabricksDatabaseDatabaseCatalogs.DataDatabricksDatabaseDatabaseCatalogs.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksdatabasedatabasecatalogs"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksdatabasedatabasecatalogs"
 
 datadatabricksdatabasedatabasecatalogs.DataDatabricksDatabaseDatabaseCatalogs_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -669,7 +669,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksDatabaseDatabaseCatalogs.DataDatabricksDatabaseDatabaseCatalogsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksdatabasedatabasecatalogs"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksdatabasedatabasecatalogs"
 
 &datadatabricksdatabasedatabasecatalogs.DataDatabricksDatabaseDatabaseCatalogsConfig {
 	Connection: interface{},
@@ -681,7 +681,7 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadata
 	Provisioners: *[]interface{},
 	InstanceName: *string,
 	PageSize: *f64,
-	ProviderConfig: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18.dataDatabricksDatabaseDatabaseCatalogs.DataDatabricksDatabaseDatabaseCatalogsProviderConfig,
+	ProviderConfig: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.dataDatabricksDatabaseDatabaseCatalogs.DataDatabricksDatabaseDatabaseCatalogsProviderConfig,
 }
 ```
 
@@ -813,11 +813,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksDatabaseDatabaseCatalogs.DataDatabricksDatabaseDatabaseCatalogsDatabaseCatalogs.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksdatabasedatabasecatalogs"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksdatabasedatabasecatalogs"
 
 &datadatabricksdatabasedatabasecatalogs.DataDatabricksDatabaseDatabaseCatalogsDatabaseCatalogs {
 	Name: *string,
-	ProviderConfig: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18.dataDatabricksDatabaseDatabaseCatalogs.DataDatabricksDatabaseDatabaseCatalogsDatabaseCatalogsProviderConfig,
+	ProviderConfig: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.dataDatabricksDatabaseDatabaseCatalogs.DataDatabricksDatabaseDatabaseCatalogsDatabaseCatalogsProviderConfig,
 }
 ```
 
@@ -859,7 +859,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksDatabaseDatabaseCatalogs.DataDatabricksDatabaseDatabaseCatalogsDatabaseCatalogsProviderConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksdatabasedatabasecatalogs"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksdatabasedatabasecatalogs"
 
 &datadatabricksdatabasedatabasecatalogs.DataDatabricksDatabaseDatabaseCatalogsDatabaseCatalogsProviderConfig {
 	WorkspaceId: *string,
@@ -891,7 +891,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksDatabaseDatabaseCatalogs.DataDatabricksDatabaseDatabaseCatalogsProviderConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksdatabasedatabasecatalogs"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksdatabasedatabasecatalogs"
 
 &datadatabricksdatabasedatabasecatalogs.DataDatabricksDatabaseDatabaseCatalogsProviderConfig {
 	WorkspaceId: *string,
@@ -925,7 +925,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksDatabaseDatabaseCatalogs.DataDatabricksDatabaseDatabaseCatalogsDatabaseCatalogsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksdatabasedatabasecatalogs"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksdatabasedatabasecatalogs"
 
 datadatabricksdatabasedatabasecatalogs.NewDataDatabricksDatabaseDatabaseCatalogsDatabaseCatalogsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDatabricksDatabaseDatabaseCatalogsDatabaseCatalogsList
 ```
@@ -1085,7 +1085,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksDatabaseDatabaseCatalogs.DataDatabricksDatabaseDatabaseCatalogsDatabaseCatalogsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksdatabasedatabasecatalogs"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksdatabasedatabasecatalogs"
 
 datadatabricksdatabasedatabasecatalogs.NewDataDatabricksDatabaseDatabaseCatalogsDatabaseCatalogsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataDatabricksDatabaseDatabaseCatalogsDatabaseCatalogsOutputReference
 ```
@@ -1460,7 +1460,7 @@ func InternalValue() DataDatabricksDatabaseDatabaseCatalogsDatabaseCatalogs
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksDatabaseDatabaseCatalogs.DataDatabricksDatabaseDatabaseCatalogsDatabaseCatalogsProviderConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksdatabasedatabasecatalogs"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksdatabasedatabasecatalogs"
 
 datadatabricksdatabasedatabasecatalogs.NewDataDatabricksDatabaseDatabaseCatalogsDatabaseCatalogsProviderConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksDatabaseDatabaseCatalogsDatabaseCatalogsProviderConfigOutputReference
 ```
@@ -1738,7 +1738,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksDatabaseDatabaseCatalogs.DataDatabricksDatabaseDatabaseCatalogsProviderConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksdatabasedatabasecatalogs"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksdatabasedatabasecatalogs"
 
 datadatabricksdatabasedatabasecatalogs.NewDataDatabricksDatabaseDatabaseCatalogsProviderConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksDatabaseDatabaseCatalogsProviderConfigOutputReference
 ```

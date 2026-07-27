@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/databricks/databrick
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.externalMetadata.ExternalMetadata.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/externalmetadata"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/externalmetadata"
 
 externalmetadata.NewExternalMetadata(scope Construct, id *string, config ExternalMetadataConfig) ExternalMetadata
 ```
@@ -455,7 +455,7 @@ func ResetUrl()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-databricks.externalMetadata.ExternalMetadata.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/externalmetadata"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/externalmetadata"
 
 externalmetadata.ExternalMetadata_IsConstruct(x interface{}) *bool
 ```
@@ -487,7 +487,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-databricks.externalMetadata.ExternalMetadata.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/externalmetadata"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/externalmetadata"
 
 externalmetadata.ExternalMetadata_IsTerraformElement(x interface{}) *bool
 ```
@@ -501,7 +501,7 @@ externalmetadata.ExternalMetadata_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-databricks.externalMetadata.ExternalMetadata.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/externalmetadata"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/externalmetadata"
 
 externalmetadata.ExternalMetadata_IsTerraformResource(x interface{}) *bool
 ```
@@ -515,7 +515,7 @@ externalmetadata.ExternalMetadata_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-databricks.externalMetadata.ExternalMetadata.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/externalmetadata"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/externalmetadata"
 
 externalmetadata.ExternalMetadata_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1008,7 +1008,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.externalMetadata.ExternalMetadataConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/externalmetadata"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/externalmetadata"
 
 &externalmetadata.ExternalMetadataConfig {
 	Connection: interface{},
@@ -1025,7 +1025,7 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/external
 	Description: *string,
 	Owner: *string,
 	Properties: *map[string]*string,
-	ProviderConfig: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18.externalMetadata.ExternalMetadataProviderConfig,
+	ProviderConfig: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.externalMetadata.ExternalMetadataProviderConfig,
 	Url: *string,
 }
 ```
@@ -1236,7 +1236,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.externalMetadata.ExternalMetadataProviderConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/externalmetadata"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/externalmetadata"
 
 &externalmetadata.ExternalMetadataProviderConfig {
 	WorkspaceId: *string,
@@ -1270,7 +1270,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.externalMetadata.ExternalMetadataProviderConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/externalmetadata"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/externalmetadata"
 
 externalmetadata.NewExternalMetadataProviderConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ExternalMetadataProviderConfigOutputReference
 ```

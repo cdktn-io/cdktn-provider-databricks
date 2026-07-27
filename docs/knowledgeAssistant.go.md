@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/databricks/databrick
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.knowledgeAssistant.KnowledgeAssistant.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/knowledgeassistant"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/knowledgeassistant"
 
 knowledgeassistant.NewKnowledgeAssistant(scope Construct, id *string, config KnowledgeAssistantConfig) KnowledgeAssistant
 ```
@@ -427,7 +427,7 @@ func ResetProviderConfig()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-databricks.knowledgeAssistant.KnowledgeAssistant.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/knowledgeassistant"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/knowledgeassistant"
 
 knowledgeassistant.KnowledgeAssistant_IsConstruct(x interface{}) *bool
 ```
@@ -459,7 +459,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-databricks.knowledgeAssistant.KnowledgeAssistant.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/knowledgeassistant"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/knowledgeassistant"
 
 knowledgeassistant.KnowledgeAssistant_IsTerraformElement(x interface{}) *bool
 ```
@@ -473,7 +473,7 @@ knowledgeassistant.KnowledgeAssistant_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-databricks.knowledgeAssistant.KnowledgeAssistant.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/knowledgeassistant"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/knowledgeassistant"
 
 knowledgeassistant.KnowledgeAssistant_IsTerraformResource(x interface{}) *bool
 ```
@@ -487,7 +487,7 @@ knowledgeassistant.KnowledgeAssistant_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-databricks.knowledgeAssistant.KnowledgeAssistant.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/knowledgeassistant"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/knowledgeassistant"
 
 knowledgeassistant.KnowledgeAssistant_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -892,7 +892,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.knowledgeAssistant.KnowledgeAssistantConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/knowledgeassistant"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/knowledgeassistant"
 
 &knowledgeassistant.KnowledgeAssistantConfig {
 	Connection: interface{},
@@ -905,7 +905,7 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/knowledg
 	Description: *string,
 	DisplayName: *string,
 	Instructions: *string,
-	ProviderConfig: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18.knowledgeAssistant.KnowledgeAssistantProviderConfig,
+	ProviderConfig: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.knowledgeAssistant.KnowledgeAssistantProviderConfig,
 }
 ```
 
@@ -1050,7 +1050,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.knowledgeAssistant.KnowledgeAssistantProviderConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/knowledgeassistant"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/knowledgeassistant"
 
 &knowledgeassistant.KnowledgeAssistantProviderConfig {
 	WorkspaceId: *string,
@@ -1084,7 +1084,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.knowledgeAssistant.KnowledgeAssistantProviderConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/knowledgeassistant"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/knowledgeassistant"
 
 knowledgeassistant.NewKnowledgeAssistantProviderConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) KnowledgeAssistantProviderConfigOutputReference
 ```

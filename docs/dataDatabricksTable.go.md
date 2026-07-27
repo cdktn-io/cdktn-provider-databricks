@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/databricks/databrick
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksTable.DataDatabricksTable.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabrickstable"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabrickstable"
 
 datadatabrickstable.NewDataDatabricksTable(scope Construct, id *string, config DataDatabricksTableConfig) DataDatabricksTable
 ```
@@ -345,7 +345,7 @@ func ResetTableInfo()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-databricks.dataDatabricksTable.DataDatabricksTable.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabrickstable"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabrickstable"
 
 datadatabrickstable.DataDatabricksTable_IsConstruct(x interface{}) *bool
 ```
@@ -377,7 +377,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-databricks.dataDatabricksTable.DataDatabricksTable.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabrickstable"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabrickstable"
 
 datadatabrickstable.DataDatabricksTable_IsTerraformElement(x interface{}) *bool
 ```
@@ -391,7 +391,7 @@ datadatabrickstable.DataDatabricksTable_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-databricks.dataDatabricksTable.DataDatabricksTable.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabrickstable"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabrickstable"
 
 datadatabrickstable.DataDatabricksTable_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -405,7 +405,7 @@ datadatabrickstable.DataDatabricksTable_IsTerraformDataSource(x interface{}) *bo
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-databricks.dataDatabricksTable.DataDatabricksTable.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabrickstable"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabrickstable"
 
 datadatabrickstable.DataDatabricksTable_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -700,7 +700,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksTable.DataDatabricksTableConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabrickstable"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabrickstable"
 
 &datadatabrickstable.DataDatabricksTableConfig {
 	Connection: interface{},
@@ -712,8 +712,8 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadata
 	Provisioners: *[]interface{},
 	Name: *string,
 	Id: *string,
-	ProviderConfig: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18.dataDatabricksTable.DataDatabricksTableProviderConfig,
-	TableInfo: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18.dataDatabricksTable.DataDatabricksTableTableInfo,
+	ProviderConfig: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.dataDatabricksTable.DataDatabricksTableProviderConfig,
+	TableInfo: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.dataDatabricksTable.DataDatabricksTableTableInfo,
 }
 ```
 
@@ -865,7 +865,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksTable.DataDatabricksTableProviderConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabrickstable"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabrickstable"
 
 &datadatabrickstable.DataDatabricksTableProviderConfig {
 	WorkspaceId: *string,
@@ -897,7 +897,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksTable.DataDatabricksTableTableInfo.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabrickstable"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabrickstable"
 
 &datadatabrickstable.DataDatabricksTableTableInfo {
 	AccessPoint: *string,
@@ -910,19 +910,19 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadata
 	DataAccessConfigurationId: *string,
 	DataSourceFormat: *string,
 	DeletedAt: *f64,
-	DeltaRuntimePropertiesKvpairs: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18.dataDatabricksTable.DataDatabricksTableTableInfoDeltaRuntimePropertiesKvpairs,
-	EffectivePredictiveOptimizationFlag: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18.dataDatabricksTable.DataDatabricksTableTableInfoEffectivePredictiveOptimizationFlag,
+	DeltaRuntimePropertiesKvpairs: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.dataDatabricksTable.DataDatabricksTableTableInfoDeltaRuntimePropertiesKvpairs,
+	EffectivePredictiveOptimizationFlag: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.dataDatabricksTable.DataDatabricksTableTableInfoEffectivePredictiveOptimizationFlag,
 	EnablePredictiveOptimization: *string,
-	EncryptionDetails: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18.dataDatabricksTable.DataDatabricksTableTableInfoEncryptionDetails,
+	EncryptionDetails: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.dataDatabricksTable.DataDatabricksTableTableInfoEncryptionDetails,
 	FullName: *string,
 	MetastoreId: *string,
 	Name: *string,
 	Owner: *string,
 	PipelineId: *string,
 	Properties: *map[string]*string,
-	RowFilter: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18.dataDatabricksTable.DataDatabricksTableTableInfoRowFilter,
+	RowFilter: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.dataDatabricksTable.DataDatabricksTableTableInfoRowFilter,
 	SchemaName: *string,
-	SecurableKindManifest: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18.dataDatabricksTable.DataDatabricksTableTableInfoSecurableKindManifest,
+	SecurableKindManifest: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.dataDatabricksTable.DataDatabricksTableTableInfoSecurableKindManifest,
 	SqlPath: *string,
 	StorageCredentialName: *string,
 	StorageLocation: *string,
@@ -932,7 +932,7 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadata
 	UpdatedAt: *f64,
 	UpdatedBy: *string,
 	ViewDefinition: *string,
-	ViewDependencies: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18.dataDatabricksTable.DataDatabricksTableTableInfoViewDependencies,
+	ViewDependencies: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.dataDatabricksTable.DataDatabricksTableTableInfoViewDependencies,
 }
 ```
 
@@ -1393,11 +1393,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksTable.DataDatabricksTableTableInfoColumns.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabrickstable"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabrickstable"
 
 &datadatabrickstable.DataDatabricksTableTableInfoColumns {
 	Comment: *string,
-	Mask: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18.dataDatabricksTable.DataDatabricksTableTableInfoColumnsMask,
+	Mask: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.dataDatabricksTable.DataDatabricksTableTableInfoColumnsMask,
 	Name: *string,
 	Nullable: interface{},
 	PartitionIndex: *f64,
@@ -1581,7 +1581,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksTable.DataDatabricksTableTableInfoColumnsMask.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabrickstable"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabrickstable"
 
 &datadatabrickstable.DataDatabricksTableTableInfoColumnsMask {
 	FunctionName: *string,
@@ -1643,7 +1643,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksTable.DataDatabricksTableTableInfoColumnsMaskUsingArguments.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabrickstable"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabrickstable"
 
 &datadatabrickstable.DataDatabricksTableTableInfoColumnsMaskUsingArguments {
 	Column: *string,
@@ -1689,7 +1689,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksTable.DataDatabricksTableTableInfoDeltaRuntimePropertiesKvpairs.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabrickstable"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabrickstable"
 
 &datadatabrickstable.DataDatabricksTableTableInfoDeltaRuntimePropertiesKvpairs {
 	DeltaRuntimeProperties: *map[string]*string,
@@ -1721,7 +1721,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksTable.DataDatabricksTableTableInfoEffectivePredictiveOptimizationFlag.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabrickstable"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabrickstable"
 
 &datadatabrickstable.DataDatabricksTableTableInfoEffectivePredictiveOptimizationFlag {
 	Value: *string,
@@ -1781,10 +1781,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksTable.DataDatabricksTableTableInfoEncryptionDetails.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabrickstable"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabrickstable"
 
 &datadatabrickstable.DataDatabricksTableTableInfoEncryptionDetails {
-	SseEncryptionDetails: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18.dataDatabricksTable.DataDatabricksTableTableInfoEncryptionDetailsSseEncryptionDetails,
+	SseEncryptionDetails: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.dataDatabricksTable.DataDatabricksTableTableInfoEncryptionDetailsSseEncryptionDetails,
 }
 ```
 
@@ -1815,7 +1815,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksTable.DataDatabricksTableTableInfoEncryptionDetailsSseEncryptionDetails.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabrickstable"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabrickstable"
 
 &datadatabrickstable.DataDatabricksTableTableInfoEncryptionDetailsSseEncryptionDetails {
 	Algorithm: *string,
@@ -1861,7 +1861,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksTable.DataDatabricksTableTableInfoRowFilter.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabrickstable"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabrickstable"
 
 &datadatabrickstable.DataDatabricksTableTableInfoRowFilter {
 	FunctionName: *string,
@@ -1923,7 +1923,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksTable.DataDatabricksTableTableInfoRowFilterInputArguments.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabrickstable"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabrickstable"
 
 &datadatabrickstable.DataDatabricksTableTableInfoRowFilterInputArguments {
 	Column: *string,
@@ -1969,7 +1969,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksTable.DataDatabricksTableTableInfoSecurableKindManifest.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabrickstable"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabrickstable"
 
 &datadatabrickstable.DataDatabricksTableTableInfoSecurableKindManifest {
 	AssignablePrivileges: *[]*string,
@@ -2059,7 +2059,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksTable.DataDatabricksTableTableInfoSecurableKindManifestOptions.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabrickstable"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabrickstable"
 
 &datadatabrickstable.DataDatabricksTableTableInfoSecurableKindManifestOptions {
 	AllowedValues: *[]*string,
@@ -2273,12 +2273,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksTable.DataDatabricksTableTableInfoTableConstraints.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabrickstable"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabrickstable"
 
 &datadatabrickstable.DataDatabricksTableTableInfoTableConstraints {
-	ForeignKeyConstraint: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18.dataDatabricksTable.DataDatabricksTableTableInfoTableConstraintsForeignKeyConstraint,
-	NamedTableConstraint: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18.dataDatabricksTable.DataDatabricksTableTableInfoTableConstraintsNamedTableConstraint,
-	PrimaryKeyConstraint: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18.dataDatabricksTable.DataDatabricksTableTableInfoTableConstraintsPrimaryKeyConstraint,
+	ForeignKeyConstraint: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.dataDatabricksTable.DataDatabricksTableTableInfoTableConstraintsForeignKeyConstraint,
+	NamedTableConstraint: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.dataDatabricksTable.DataDatabricksTableTableInfoTableConstraintsNamedTableConstraint,
+	PrimaryKeyConstraint: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.dataDatabricksTable.DataDatabricksTableTableInfoTableConstraintsPrimaryKeyConstraint,
 }
 ```
 
@@ -2339,7 +2339,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksTable.DataDatabricksTableTableInfoTableConstraintsForeignKeyConstraint.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabrickstable"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabrickstable"
 
 &datadatabrickstable.DataDatabricksTableTableInfoTableConstraintsForeignKeyConstraint {
 	ChildColumns: *[]*string,
@@ -2427,7 +2427,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksTable.DataDatabricksTableTableInfoTableConstraintsNamedTableConstraint.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabrickstable"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabrickstable"
 
 &datadatabrickstable.DataDatabricksTableTableInfoTableConstraintsNamedTableConstraint {
 	Name: *string,
@@ -2459,7 +2459,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksTable.DataDatabricksTableTableInfoTableConstraintsPrimaryKeyConstraint.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabrickstable"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabrickstable"
 
 &datadatabrickstable.DataDatabricksTableTableInfoTableConstraintsPrimaryKeyConstraint {
 	ChildColumns: *[]*string,
@@ -2533,7 +2533,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksTable.DataDatabricksTableTableInfoViewDependencies.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabrickstable"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabrickstable"
 
 &datadatabrickstable.DataDatabricksTableTableInfoViewDependencies {
 	Dependencies: interface{},
@@ -2567,13 +2567,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksTable.DataDatabricksTableTableInfoViewDependenciesDependencies.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabrickstable"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabrickstable"
 
 &datadatabrickstable.DataDatabricksTableTableInfoViewDependenciesDependencies {
-	Connection: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18.dataDatabricksTable.DataDatabricksTableTableInfoViewDependenciesDependenciesConnection,
-	Credential: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18.dataDatabricksTable.DataDatabricksTableTableInfoViewDependenciesDependenciesCredential,
-	Function: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18.dataDatabricksTable.DataDatabricksTableTableInfoViewDependenciesDependenciesFunction,
-	Table: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18.dataDatabricksTable.DataDatabricksTableTableInfoViewDependenciesDependenciesTable,
+	Connection: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.dataDatabricksTable.DataDatabricksTableTableInfoViewDependenciesDependenciesConnection,
+	Credential: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.dataDatabricksTable.DataDatabricksTableTableInfoViewDependenciesDependenciesCredential,
+	Function: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.dataDatabricksTable.DataDatabricksTableTableInfoViewDependenciesDependenciesFunction,
+	Table: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.dataDatabricksTable.DataDatabricksTableTableInfoViewDependenciesDependenciesTable,
 }
 ```
 
@@ -2649,7 +2649,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksTable.DataDatabricksTableTableInfoViewDependenciesDependenciesConnection.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabrickstable"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabrickstable"
 
 &datadatabrickstable.DataDatabricksTableTableInfoViewDependenciesDependenciesConnection {
 	ConnectionName: *string,
@@ -2681,7 +2681,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksTable.DataDatabricksTableTableInfoViewDependenciesDependenciesCredential.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabrickstable"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabrickstable"
 
 &datadatabrickstable.DataDatabricksTableTableInfoViewDependenciesDependenciesCredential {
 	CredentialName: *string,
@@ -2713,7 +2713,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksTable.DataDatabricksTableTableInfoViewDependenciesDependenciesFunction.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabrickstable"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabrickstable"
 
 &datadatabrickstable.DataDatabricksTableTableInfoViewDependenciesDependenciesFunction {
 	FunctionFullName: *string,
@@ -2745,7 +2745,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksTable.DataDatabricksTableTableInfoViewDependenciesDependenciesTable.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabrickstable"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabrickstable"
 
 &datadatabrickstable.DataDatabricksTableTableInfoViewDependenciesDependenciesTable {
 	TableFullName: *string,
@@ -2779,7 +2779,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksTable.DataDatabricksTableProviderConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabrickstable"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabrickstable"
 
 datadatabrickstable.NewDataDatabricksTableProviderConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksTableProviderConfigOutputReference
 ```
@@ -3057,7 +3057,7 @@ func InternalValue() DataDatabricksTableProviderConfig
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksTable.DataDatabricksTableTableInfoColumnsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabrickstable"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabrickstable"
 
 datadatabrickstable.NewDataDatabricksTableTableInfoColumnsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDatabricksTableTableInfoColumnsList
 ```
@@ -3217,7 +3217,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksTable.DataDatabricksTableTableInfoColumnsMaskOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabrickstable"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabrickstable"
 
 datadatabrickstable.NewDataDatabricksTableTableInfoColumnsMaskOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksTableTableInfoColumnsMaskOutputReference
 ```
@@ -3566,7 +3566,7 @@ func InternalValue() DataDatabricksTableTableInfoColumnsMask
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksTable.DataDatabricksTableTableInfoColumnsMaskUsingArgumentsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabrickstable"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabrickstable"
 
 datadatabrickstable.NewDataDatabricksTableTableInfoColumnsMaskUsingArgumentsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDatabricksTableTableInfoColumnsMaskUsingArgumentsList
 ```
@@ -3726,7 +3726,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksTable.DataDatabricksTableTableInfoColumnsMaskUsingArgumentsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabrickstable"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabrickstable"
 
 datadatabrickstable.NewDataDatabricksTableTableInfoColumnsMaskUsingArgumentsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataDatabricksTableTableInfoColumnsMaskUsingArgumentsOutputReference
 ```
@@ -4051,7 +4051,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksTable.DataDatabricksTableTableInfoColumnsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabrickstable"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabrickstable"
 
 datadatabrickstable.NewDataDatabricksTableTableInfoColumnsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataDatabricksTableTableInfoColumnsOutputReference
 ```
@@ -4679,7 +4679,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksTable.DataDatabricksTableTableInfoDeltaRuntimePropertiesKvpairsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabrickstable"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabrickstable"
 
 datadatabrickstable.NewDataDatabricksTableTableInfoDeltaRuntimePropertiesKvpairsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksTableTableInfoDeltaRuntimePropertiesKvpairsOutputReference
 ```
@@ -4950,7 +4950,7 @@ func InternalValue() DataDatabricksTableTableInfoDeltaRuntimePropertiesKvpairs
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksTable.DataDatabricksTableTableInfoEffectivePredictiveOptimizationFlagOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabrickstable"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabrickstable"
 
 datadatabrickstable.NewDataDatabricksTableTableInfoEffectivePredictiveOptimizationFlagOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksTableTableInfoEffectivePredictiveOptimizationFlagOutputReference
 ```
@@ -5279,7 +5279,7 @@ func InternalValue() DataDatabricksTableTableInfoEffectivePredictiveOptimization
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksTable.DataDatabricksTableTableInfoEncryptionDetailsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabrickstable"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabrickstable"
 
 datadatabrickstable.NewDataDatabricksTableTableInfoEncryptionDetailsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksTableTableInfoEncryptionDetailsOutputReference
 ```
@@ -5570,7 +5570,7 @@ func InternalValue() DataDatabricksTableTableInfoEncryptionDetails
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksTable.DataDatabricksTableTableInfoEncryptionDetailsSseEncryptionDetailsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabrickstable"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabrickstable"
 
 datadatabrickstable.NewDataDatabricksTableTableInfoEncryptionDetailsSseEncryptionDetailsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksTableTableInfoEncryptionDetailsSseEncryptionDetailsOutputReference
 ```
@@ -5877,7 +5877,7 @@ func InternalValue() DataDatabricksTableTableInfoEncryptionDetailsSseEncryptionD
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksTable.DataDatabricksTableTableInfoOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabrickstable"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabrickstable"
 
 datadatabrickstable.NewDataDatabricksTableTableInfoOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksTableTableInfoOutputReference
 ```
@@ -7187,7 +7187,7 @@ func InternalValue() DataDatabricksTableTableInfo
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksTable.DataDatabricksTableTableInfoRowFilterInputArgumentsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabrickstable"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabrickstable"
 
 datadatabrickstable.NewDataDatabricksTableTableInfoRowFilterInputArgumentsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDatabricksTableTableInfoRowFilterInputArgumentsList
 ```
@@ -7347,7 +7347,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksTable.DataDatabricksTableTableInfoRowFilterInputArgumentsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabrickstable"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabrickstable"
 
 datadatabrickstable.NewDataDatabricksTableTableInfoRowFilterInputArgumentsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataDatabricksTableTableInfoRowFilterInputArgumentsOutputReference
 ```
@@ -7672,7 +7672,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksTable.DataDatabricksTableTableInfoRowFilterOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabrickstable"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabrickstable"
 
 datadatabrickstable.NewDataDatabricksTableTableInfoRowFilterOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksTableTableInfoRowFilterOutputReference
 ```
@@ -8007,7 +8007,7 @@ func InternalValue() DataDatabricksTableTableInfoRowFilter
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksTable.DataDatabricksTableTableInfoSecurableKindManifestOptionsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabrickstable"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabrickstable"
 
 datadatabrickstable.NewDataDatabricksTableTableInfoSecurableKindManifestOptionsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDatabricksTableTableInfoSecurableKindManifestOptionsList
 ```
@@ -8167,7 +8167,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksTable.DataDatabricksTableTableInfoSecurableKindManifestOptionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabrickstable"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabrickstable"
 
 datadatabrickstable.NewDataDatabricksTableTableInfoSecurableKindManifestOptionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataDatabricksTableTableInfoSecurableKindManifestOptionsOutputReference
 ```
@@ -8840,7 +8840,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksTable.DataDatabricksTableTableInfoSecurableKindManifestOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabrickstable"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabrickstable"
 
 datadatabrickstable.NewDataDatabricksTableTableInfoSecurableKindManifestOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksTableTableInfoSecurableKindManifestOutputReference
 ```
@@ -9247,7 +9247,7 @@ func InternalValue() DataDatabricksTableTableInfoSecurableKindManifest
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksTable.DataDatabricksTableTableInfoTableConstraintsForeignKeyConstraintOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabrickstable"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabrickstable"
 
 datadatabrickstable.NewDataDatabricksTableTableInfoTableConstraintsForeignKeyConstraintOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksTableTableInfoTableConstraintsForeignKeyConstraintOutputReference
 ```
@@ -9613,7 +9613,7 @@ func InternalValue() DataDatabricksTableTableInfoTableConstraintsForeignKeyConst
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksTable.DataDatabricksTableTableInfoTableConstraintsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabrickstable"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabrickstable"
 
 datadatabrickstable.NewDataDatabricksTableTableInfoTableConstraintsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDatabricksTableTableInfoTableConstraintsList
 ```
@@ -9773,7 +9773,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksTable.DataDatabricksTableTableInfoTableConstraintsNamedTableConstraintOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabrickstable"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabrickstable"
 
 datadatabrickstable.NewDataDatabricksTableTableInfoTableConstraintsNamedTableConstraintOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksTableTableInfoTableConstraintsNamedTableConstraintOutputReference
 ```
@@ -10044,7 +10044,7 @@ func InternalValue() DataDatabricksTableTableInfoTableConstraintsNamedTableConst
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksTable.DataDatabricksTableTableInfoTableConstraintsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabrickstable"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabrickstable"
 
 datadatabrickstable.NewDataDatabricksTableTableInfoTableConstraintsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataDatabricksTableTableInfoTableConstraintsOutputReference
 ```
@@ -10437,7 +10437,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksTable.DataDatabricksTableTableInfoTableConstraintsPrimaryKeyConstraintOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabrickstable"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabrickstable"
 
 datadatabrickstable.NewDataDatabricksTableTableInfoTableConstraintsPrimaryKeyConstraintOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksTableTableInfoTableConstraintsPrimaryKeyConstraintOutputReference
 ```
@@ -10788,7 +10788,7 @@ func InternalValue() DataDatabricksTableTableInfoTableConstraintsPrimaryKeyConst
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksTable.DataDatabricksTableTableInfoViewDependenciesDependenciesConnectionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabrickstable"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabrickstable"
 
 datadatabrickstable.NewDataDatabricksTableTableInfoViewDependenciesDependenciesConnectionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksTableTableInfoViewDependenciesDependenciesConnectionOutputReference
 ```
@@ -11066,7 +11066,7 @@ func InternalValue() DataDatabricksTableTableInfoViewDependenciesDependenciesCon
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksTable.DataDatabricksTableTableInfoViewDependenciesDependenciesCredentialOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabrickstable"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabrickstable"
 
 datadatabrickstable.NewDataDatabricksTableTableInfoViewDependenciesDependenciesCredentialOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksTableTableInfoViewDependenciesDependenciesCredentialOutputReference
 ```
@@ -11344,7 +11344,7 @@ func InternalValue() DataDatabricksTableTableInfoViewDependenciesDependenciesCre
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksTable.DataDatabricksTableTableInfoViewDependenciesDependenciesFunctionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabrickstable"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabrickstable"
 
 datadatabrickstable.NewDataDatabricksTableTableInfoViewDependenciesDependenciesFunctionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksTableTableInfoViewDependenciesDependenciesFunctionOutputReference
 ```
@@ -11615,7 +11615,7 @@ func InternalValue() DataDatabricksTableTableInfoViewDependenciesDependenciesFun
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksTable.DataDatabricksTableTableInfoViewDependenciesDependenciesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabrickstable"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabrickstable"
 
 datadatabrickstable.NewDataDatabricksTableTableInfoViewDependenciesDependenciesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDatabricksTableTableInfoViewDependenciesDependenciesList
 ```
@@ -11775,7 +11775,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksTable.DataDatabricksTableTableInfoViewDependenciesDependenciesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabrickstable"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabrickstable"
 
 datadatabrickstable.NewDataDatabricksTableTableInfoViewDependenciesDependenciesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataDatabricksTableTableInfoViewDependenciesDependenciesOutputReference
 ```
@@ -12210,7 +12210,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksTable.DataDatabricksTableTableInfoViewDependenciesDependenciesTableOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabrickstable"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabrickstable"
 
 datadatabrickstable.NewDataDatabricksTableTableInfoViewDependenciesDependenciesTableOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksTableTableInfoViewDependenciesDependenciesTableOutputReference
 ```
@@ -12481,7 +12481,7 @@ func InternalValue() DataDatabricksTableTableInfoViewDependenciesDependenciesTab
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksTable.DataDatabricksTableTableInfoViewDependenciesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabrickstable"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabrickstable"
 
 datadatabrickstable.NewDataDatabricksTableTableInfoViewDependenciesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksTableTableInfoViewDependenciesOutputReference
 ```

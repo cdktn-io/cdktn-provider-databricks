@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/databricks/databrick
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.mlflowWebhook.MlflowWebhook.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/mlflowwebhook"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/mlflowwebhook"
 
 mlflowwebhook.NewMlflowWebhook(scope Construct, id *string, config MlflowWebhookConfig) MlflowWebhook
 ```
@@ -488,7 +488,7 @@ func ResetStatus()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-databricks.mlflowWebhook.MlflowWebhook.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/mlflowwebhook"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/mlflowwebhook"
 
 mlflowwebhook.MlflowWebhook_IsConstruct(x interface{}) *bool
 ```
@@ -520,7 +520,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-databricks.mlflowWebhook.MlflowWebhook.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/mlflowwebhook"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/mlflowwebhook"
 
 mlflowwebhook.MlflowWebhook_IsTerraformElement(x interface{}) *bool
 ```
@@ -534,7 +534,7 @@ mlflowwebhook.MlflowWebhook_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-databricks.mlflowWebhook.MlflowWebhook.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/mlflowwebhook"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/mlflowwebhook"
 
 mlflowwebhook.MlflowWebhook_IsTerraformResource(x interface{}) *bool
 ```
@@ -548,7 +548,7 @@ mlflowwebhook.MlflowWebhook_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-databricks.mlflowWebhook.MlflowWebhook.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/mlflowwebhook"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/mlflowwebhook"
 
 mlflowwebhook.MlflowWebhook_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -953,7 +953,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.mlflowWebhook.MlflowWebhookConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/mlflowwebhook"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/mlflowwebhook"
 
 &mlflowwebhook.MlflowWebhookConfig {
 	Connection: interface{},
@@ -965,11 +965,11 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/mlflowwe
 	Provisioners: *[]interface{},
 	Events: *[]*string,
 	Description: *string,
-	HttpUrlSpec: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18.mlflowWebhook.MlflowWebhookHttpUrlSpec,
+	HttpUrlSpec: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.mlflowWebhook.MlflowWebhookHttpUrlSpec,
 	Id: *string,
-	JobSpec: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18.mlflowWebhook.MlflowWebhookJobSpec,
+	JobSpec: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.mlflowWebhook.MlflowWebhookJobSpec,
 	ModelName: *string,
-	ProviderConfig: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18.mlflowWebhook.MlflowWebhookProviderConfig,
+	ProviderConfig: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.mlflowWebhook.MlflowWebhookProviderConfig,
 	Status: *string,
 }
 ```
@@ -1176,7 +1176,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.mlflowWebhook.MlflowWebhookHttpUrlSpec.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/mlflowwebhook"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/mlflowwebhook"
 
 &mlflowwebhook.MlflowWebhookHttpUrlSpec {
 	Url: *string,
@@ -1250,7 +1250,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.mlflowWebhook.MlflowWebhookJobSpec.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/mlflowwebhook"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/mlflowwebhook"
 
 &mlflowwebhook.MlflowWebhookJobSpec {
 	AccessToken: *string,
@@ -1310,7 +1310,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.mlflowWebhook.MlflowWebhookProviderConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/mlflowwebhook"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/mlflowwebhook"
 
 &mlflowwebhook.MlflowWebhookProviderConfig {
 	WorkspaceId: *string,
@@ -1344,7 +1344,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.mlflowWebhook.MlflowWebhookHttpUrlSpecOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/mlflowwebhook"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/mlflowwebhook"
 
 mlflowwebhook.NewMlflowWebhookHttpUrlSpecOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MlflowWebhookHttpUrlSpecOutputReference
 ```
@@ -1702,7 +1702,7 @@ func InternalValue() MlflowWebhookHttpUrlSpec
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.mlflowWebhook.MlflowWebhookJobSpecOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/mlflowwebhook"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/mlflowwebhook"
 
 mlflowwebhook.NewMlflowWebhookJobSpecOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MlflowWebhookJobSpecOutputReference
 ```
@@ -2024,7 +2024,7 @@ func InternalValue() MlflowWebhookJobSpec
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.mlflowWebhook.MlflowWebhookProviderConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/mlflowwebhook"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/mlflowwebhook"
 
 mlflowwebhook.NewMlflowWebhookProviderConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MlflowWebhookProviderConfigOutputReference
 ```

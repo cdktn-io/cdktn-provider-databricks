@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/databricks/databrick
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.sqlVisualization.SqlVisualization.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/sqlvisualization"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/sqlvisualization"
 
 sqlvisualization.NewSqlVisualization(scope Construct, id *string, config SqlVisualizationConfig) SqlVisualization
 ```
@@ -448,7 +448,7 @@ func ResetVisualizationId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-databricks.sqlVisualization.SqlVisualization.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/sqlvisualization"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/sqlvisualization"
 
 sqlvisualization.SqlVisualization_IsConstruct(x interface{}) *bool
 ```
@@ -480,7 +480,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-databricks.sqlVisualization.SqlVisualization.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/sqlvisualization"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/sqlvisualization"
 
 sqlvisualization.SqlVisualization_IsTerraformElement(x interface{}) *bool
 ```
@@ -494,7 +494,7 @@ sqlvisualization.SqlVisualization_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-databricks.sqlVisualization.SqlVisualization.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/sqlvisualization"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/sqlvisualization"
 
 sqlvisualization.SqlVisualization_IsTerraformResource(x interface{}) *bool
 ```
@@ -508,7 +508,7 @@ sqlvisualization.SqlVisualization_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-databricks.sqlVisualization.SqlVisualization.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/sqlvisualization"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/sqlvisualization"
 
 sqlvisualization.SqlVisualization_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -935,7 +935,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.sqlVisualization.SqlVisualizationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/sqlvisualization"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/sqlvisualization"
 
 &sqlvisualization.SqlVisualizationConfig {
 	Connection: interface{},
@@ -951,7 +951,7 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/sqlvisua
 	Type: *string,
 	Description: *string,
 	Id: *string,
-	ProviderConfig: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18.sqlVisualization.SqlVisualizationProviderConfig,
+	ProviderConfig: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.sqlVisualization.SqlVisualizationProviderConfig,
 	QueryPlan: *string,
 	VisualizationId: *string,
 }
@@ -1168,7 +1168,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.sqlVisualization.SqlVisualizationProviderConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/sqlvisualization"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/sqlvisualization"
 
 &sqlvisualization.SqlVisualizationProviderConfig {
 	WorkspaceId: *string,
@@ -1202,7 +1202,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.sqlVisualization.SqlVisualizationProviderConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/sqlvisualization"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/sqlvisualization"
 
 sqlvisualization.NewSqlVisualizationProviderConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SqlVisualizationProviderConfigOutputReference
 ```

@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/databricks/databrick
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksPostgresCdfStatuses.DataDatabricksPostgresCdfStatuses.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabrickspostgrescdfstatuses"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabrickspostgrescdfstatuses"
 
 datadatabrickspostgrescdfstatuses.NewDataDatabricksPostgresCdfStatuses(scope Construct, id *string, config DataDatabricksPostgresCdfStatusesConfig) DataDatabricksPostgresCdfStatuses
 ```
@@ -325,7 +325,7 @@ func ResetProviderConfig()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-databricks.dataDatabricksPostgresCdfStatuses.DataDatabricksPostgresCdfStatuses.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabrickspostgrescdfstatuses"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabrickspostgrescdfstatuses"
 
 datadatabrickspostgrescdfstatuses.DataDatabricksPostgresCdfStatuses_IsConstruct(x interface{}) *bool
 ```
@@ -357,7 +357,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-databricks.dataDatabricksPostgresCdfStatuses.DataDatabricksPostgresCdfStatuses.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabrickspostgrescdfstatuses"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabrickspostgrescdfstatuses"
 
 datadatabrickspostgrescdfstatuses.DataDatabricksPostgresCdfStatuses_IsTerraformElement(x interface{}) *bool
 ```
@@ -371,7 +371,7 @@ datadatabrickspostgrescdfstatuses.DataDatabricksPostgresCdfStatuses_IsTerraformE
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-databricks.dataDatabricksPostgresCdfStatuses.DataDatabricksPostgresCdfStatuses.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabrickspostgrescdfstatuses"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabrickspostgrescdfstatuses"
 
 datadatabrickspostgrescdfstatuses.DataDatabricksPostgresCdfStatuses_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -385,7 +385,7 @@ datadatabrickspostgrescdfstatuses.DataDatabricksPostgresCdfStatuses_IsTerraformD
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-databricks.dataDatabricksPostgresCdfStatuses.DataDatabricksPostgresCdfStatuses.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabrickspostgrescdfstatuses"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabrickspostgrescdfstatuses"
 
 datadatabrickspostgrescdfstatuses.DataDatabricksPostgresCdfStatuses_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -669,11 +669,11 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksPostgresCdfStatuses.DataDatabricksPostgresCdfStatusesCdfStatuses.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabrickspostgrescdfstatuses"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabrickspostgrescdfstatuses"
 
 &datadatabrickspostgrescdfstatuses.DataDatabricksPostgresCdfStatusesCdfStatuses {
 	Name: *string,
-	ProviderConfig: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18.dataDatabricksPostgresCdfStatuses.DataDatabricksPostgresCdfStatusesCdfStatusesProviderConfig,
+	ProviderConfig: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.dataDatabricksPostgresCdfStatuses.DataDatabricksPostgresCdfStatusesCdfStatusesProviderConfig,
 }
 ```
 
@@ -715,7 +715,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksPostgresCdfStatuses.DataDatabricksPostgresCdfStatusesCdfStatusesProviderConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabrickspostgrescdfstatuses"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabrickspostgrescdfstatuses"
 
 &datadatabrickspostgrescdfstatuses.DataDatabricksPostgresCdfStatusesCdfStatusesProviderConfig {
 	WorkspaceId: *string,
@@ -747,7 +747,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksPostgresCdfStatuses.DataDatabricksPostgresCdfStatusesConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabrickspostgrescdfstatuses"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabrickspostgrescdfstatuses"
 
 &datadatabrickspostgrescdfstatuses.DataDatabricksPostgresCdfStatusesConfig {
 	Connection: interface{},
@@ -759,7 +759,7 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadata
 	Provisioners: *[]interface{},
 	Parent: *string,
 	PageSize: *f64,
-	ProviderConfig: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18.dataDatabricksPostgresCdfStatuses.DataDatabricksPostgresCdfStatusesProviderConfig,
+	ProviderConfig: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.dataDatabricksPostgresCdfStatuses.DataDatabricksPostgresCdfStatusesProviderConfig,
 }
 ```
 
@@ -891,7 +891,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksPostgresCdfStatuses.DataDatabricksPostgresCdfStatusesProviderConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabrickspostgrescdfstatuses"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabrickspostgrescdfstatuses"
 
 &datadatabrickspostgrescdfstatuses.DataDatabricksPostgresCdfStatusesProviderConfig {
 	WorkspaceId: *string,
@@ -925,7 +925,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksPostgresCdfStatuses.DataDatabricksPostgresCdfStatusesCdfStatusesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabrickspostgrescdfstatuses"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabrickspostgrescdfstatuses"
 
 datadatabrickspostgrescdfstatuses.NewDataDatabricksPostgresCdfStatusesCdfStatusesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDatabricksPostgresCdfStatusesCdfStatusesList
 ```
@@ -1085,7 +1085,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksPostgresCdfStatuses.DataDatabricksPostgresCdfStatusesCdfStatusesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabrickspostgrescdfstatuses"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabrickspostgrescdfstatuses"
 
 datadatabrickspostgrescdfstatuses.NewDataDatabricksPostgresCdfStatusesCdfStatusesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataDatabricksPostgresCdfStatusesCdfStatusesOutputReference
 ```
@@ -1493,7 +1493,7 @@ func InternalValue() DataDatabricksPostgresCdfStatusesCdfStatuses
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksPostgresCdfStatuses.DataDatabricksPostgresCdfStatusesCdfStatusesProviderConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabrickspostgrescdfstatuses"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabrickspostgrescdfstatuses"
 
 datadatabrickspostgrescdfstatuses.NewDataDatabricksPostgresCdfStatusesCdfStatusesProviderConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksPostgresCdfStatusesCdfStatusesProviderConfigOutputReference
 ```
@@ -1771,7 +1771,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksPostgresCdfStatuses.DataDatabricksPostgresCdfStatusesProviderConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabrickspostgrescdfstatuses"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabrickspostgrescdfstatuses"
 
 datadatabrickspostgrescdfstatuses.NewDataDatabricksPostgresCdfStatusesProviderConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksPostgresCdfStatusesProviderConfigOutputReference
 ```

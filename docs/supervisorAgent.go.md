@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/databricks/databrick
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.supervisorAgent.SupervisorAgent.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/supervisoragent"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/supervisoragent"
 
 supervisoragent.NewSupervisorAgent(scope Construct, id *string, config SupervisorAgentConfig) SupervisorAgent
 ```
@@ -434,7 +434,7 @@ func ResetProviderConfig()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-databricks.supervisorAgent.SupervisorAgent.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/supervisoragent"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/supervisoragent"
 
 supervisoragent.SupervisorAgent_IsConstruct(x interface{}) *bool
 ```
@@ -466,7 +466,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-databricks.supervisorAgent.SupervisorAgent.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/supervisoragent"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/supervisoragent"
 
 supervisoragent.SupervisorAgent_IsTerraformElement(x interface{}) *bool
 ```
@@ -480,7 +480,7 @@ supervisoragent.SupervisorAgent_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-databricks.supervisorAgent.SupervisorAgent.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/supervisoragent"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/supervisoragent"
 
 supervisoragent.SupervisorAgent_IsTerraformResource(x interface{}) *bool
 ```
@@ -494,7 +494,7 @@ supervisoragent.SupervisorAgent_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-databricks.supervisorAgent.SupervisorAgent.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/supervisoragent"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/supervisoragent"
 
 supervisoragent.SupervisorAgent_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -888,7 +888,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.supervisorAgent.SupervisorAgentConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/supervisoragent"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/supervisoragent"
 
 &supervisoragent.SupervisorAgentConfig {
 	Connection: interface{},
@@ -901,7 +901,7 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/supervis
 	DisplayName: *string,
 	Description: *string,
 	Instructions: *string,
-	ProviderConfig: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18.supervisorAgent.SupervisorAgentProviderConfig,
+	ProviderConfig: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.supervisorAgent.SupervisorAgentProviderConfig,
 }
 ```
 
@@ -1046,7 +1046,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.supervisorAgent.SupervisorAgentProviderConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/supervisoragent"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/supervisoragent"
 
 &supervisoragent.SupervisorAgentProviderConfig {
 	WorkspaceId: *string,
@@ -1080,7 +1080,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.supervisorAgent.SupervisorAgentProviderConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/supervisoragent"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/supervisoragent"
 
 supervisoragent.NewSupervisorAgentProviderConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SupervisorAgentProviderConfigOutputReference
 ```

@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/databricks/databrick
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.materializedFeaturesFeatureTag.MaterializedFeaturesFeatureTag.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/materializedfeaturesfeaturetag"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/materializedfeaturesfeaturetag"
 
 materializedfeaturesfeaturetag.NewMaterializedFeaturesFeatureTag(scope Construct, id *string, config MaterializedFeaturesFeatureTagConfig) MaterializedFeaturesFeatureTag
 ```
@@ -427,7 +427,7 @@ func ResetValue()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-databricks.materializedFeaturesFeatureTag.MaterializedFeaturesFeatureTag.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/materializedfeaturesfeaturetag"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/materializedfeaturesfeaturetag"
 
 materializedfeaturesfeaturetag.MaterializedFeaturesFeatureTag_IsConstruct(x interface{}) *bool
 ```
@@ -459,7 +459,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-databricks.materializedFeaturesFeatureTag.MaterializedFeaturesFeatureTag.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/materializedfeaturesfeaturetag"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/materializedfeaturesfeaturetag"
 
 materializedfeaturesfeaturetag.MaterializedFeaturesFeatureTag_IsTerraformElement(x interface{}) *bool
 ```
@@ -473,7 +473,7 @@ materializedfeaturesfeaturetag.MaterializedFeaturesFeatureTag_IsTerraformElement
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-databricks.materializedFeaturesFeatureTag.MaterializedFeaturesFeatureTag.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/materializedfeaturesfeaturetag"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/materializedfeaturesfeaturetag"
 
 materializedfeaturesfeaturetag.MaterializedFeaturesFeatureTag_IsTerraformResource(x interface{}) *bool
 ```
@@ -487,7 +487,7 @@ materializedfeaturesfeaturetag.MaterializedFeaturesFeatureTag_IsTerraformResourc
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-databricks.materializedFeaturesFeatureTag.MaterializedFeaturesFeatureTag.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/materializedfeaturesfeaturetag"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/materializedfeaturesfeaturetag"
 
 materializedfeaturesfeaturetag.MaterializedFeaturesFeatureTag_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -782,7 +782,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.materializedFeaturesFeatureTag.MaterializedFeaturesFeatureTagConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/materializedfeaturesfeaturetag"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/materializedfeaturesfeaturetag"
 
 &materializedfeaturesfeaturetag.MaterializedFeaturesFeatureTagConfig {
 	Connection: interface{},
@@ -793,7 +793,7 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/material
 	Provider: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider,
 	Provisioners: *[]interface{},
 	Key: *string,
-	ProviderConfig: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18.materializedFeaturesFeatureTag.MaterializedFeaturesFeatureTagProviderConfig,
+	ProviderConfig: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.materializedFeaturesFeatureTag.MaterializedFeaturesFeatureTagProviderConfig,
 	Value: *string,
 }
 ```
@@ -926,7 +926,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.materializedFeaturesFeatureTag.MaterializedFeaturesFeatureTagProviderConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/materializedfeaturesfeaturetag"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/materializedfeaturesfeaturetag"
 
 &materializedfeaturesfeaturetag.MaterializedFeaturesFeatureTagProviderConfig {
 	WorkspaceId: *string,
@@ -960,7 +960,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.materializedFeaturesFeatureTag.MaterializedFeaturesFeatureTagProviderConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/materializedfeaturesfeaturetag"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/materializedfeaturesfeaturetag"
 
 materializedfeaturesfeaturetag.NewMaterializedFeaturesFeatureTagProviderConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MaterializedFeaturesFeatureTagProviderConfigOutputReference
 ```

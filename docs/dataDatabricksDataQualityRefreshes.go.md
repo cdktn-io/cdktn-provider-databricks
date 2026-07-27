@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/databricks/databrick
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksDataQualityRefreshes.DataDatabricksDataQualityRefreshes.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksdataqualityrefreshes"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksdataqualityrefreshes"
 
 datadatabricksdataqualityrefreshes.NewDataDatabricksDataQualityRefreshes(scope Construct, id *string, config DataDatabricksDataQualityRefreshesConfig) DataDatabricksDataQualityRefreshes
 ```
@@ -325,7 +325,7 @@ func ResetProviderConfig()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-databricks.dataDatabricksDataQualityRefreshes.DataDatabricksDataQualityRefreshes.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksdataqualityrefreshes"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksdataqualityrefreshes"
 
 datadatabricksdataqualityrefreshes.DataDatabricksDataQualityRefreshes_IsConstruct(x interface{}) *bool
 ```
@@ -357,7 +357,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-databricks.dataDatabricksDataQualityRefreshes.DataDatabricksDataQualityRefreshes.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksdataqualityrefreshes"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksdataqualityrefreshes"
 
 datadatabricksdataqualityrefreshes.DataDatabricksDataQualityRefreshes_IsTerraformElement(x interface{}) *bool
 ```
@@ -371,7 +371,7 @@ datadatabricksdataqualityrefreshes.DataDatabricksDataQualityRefreshes_IsTerrafor
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-databricks.dataDatabricksDataQualityRefreshes.DataDatabricksDataQualityRefreshes.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksdataqualityrefreshes"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksdataqualityrefreshes"
 
 datadatabricksdataqualityrefreshes.DataDatabricksDataQualityRefreshes_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -385,7 +385,7 @@ datadatabricksdataqualityrefreshes.DataDatabricksDataQualityRefreshes_IsTerrafor
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-databricks.dataDatabricksDataQualityRefreshes.DataDatabricksDataQualityRefreshes.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksdataqualityrefreshes"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksdataqualityrefreshes"
 
 datadatabricksdataqualityrefreshes.DataDatabricksDataQualityRefreshes_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -691,7 +691,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksDataQualityRefreshes.DataDatabricksDataQualityRefreshesConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksdataqualityrefreshes"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksdataqualityrefreshes"
 
 &datadatabricksdataqualityrefreshes.DataDatabricksDataQualityRefreshesConfig {
 	Connection: interface{},
@@ -704,7 +704,7 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadata
 	ObjectId: *string,
 	ObjectType: *string,
 	PageSize: *f64,
-	ProviderConfig: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18.dataDatabricksDataQualityRefreshes.DataDatabricksDataQualityRefreshesProviderConfig,
+	ProviderConfig: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.dataDatabricksDataQualityRefreshes.DataDatabricksDataQualityRefreshesProviderConfig,
 }
 ```
 
@@ -849,7 +849,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksDataQualityRefreshes.DataDatabricksDataQualityRefreshesProviderConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksdataqualityrefreshes"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksdataqualityrefreshes"
 
 &datadatabricksdataqualityrefreshes.DataDatabricksDataQualityRefreshesProviderConfig {
 	WorkspaceId: *string,
@@ -881,13 +881,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksDataQualityRefreshes.DataDatabricksDataQualityRefreshesRefreshes.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksdataqualityrefreshes"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksdataqualityrefreshes"
 
 &datadatabricksdataqualityrefreshes.DataDatabricksDataQualityRefreshesRefreshes {
 	ObjectId: *string,
 	ObjectType: *string,
 	RefreshId: *f64,
-	ProviderConfig: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18.dataDatabricksDataQualityRefreshes.DataDatabricksDataQualityRefreshesRefreshesProviderConfig,
+	ProviderConfig: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.dataDatabricksDataQualityRefreshes.DataDatabricksDataQualityRefreshesRefreshesProviderConfig,
 }
 ```
 
@@ -955,7 +955,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksDataQualityRefreshes.DataDatabricksDataQualityRefreshesRefreshesProviderConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksdataqualityrefreshes"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksdataqualityrefreshes"
 
 &datadatabricksdataqualityrefreshes.DataDatabricksDataQualityRefreshesRefreshesProviderConfig {
 	WorkspaceId: *string,
@@ -989,7 +989,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksDataQualityRefreshes.DataDatabricksDataQualityRefreshesProviderConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksdataqualityrefreshes"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksdataqualityrefreshes"
 
 datadatabricksdataqualityrefreshes.NewDataDatabricksDataQualityRefreshesProviderConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksDataQualityRefreshesProviderConfigOutputReference
 ```
@@ -1267,7 +1267,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksDataQualityRefreshes.DataDatabricksDataQualityRefreshesRefreshesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksdataqualityrefreshes"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksdataqualityrefreshes"
 
 datadatabricksdataqualityrefreshes.NewDataDatabricksDataQualityRefreshesRefreshesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDatabricksDataQualityRefreshesRefreshesList
 ```
@@ -1427,7 +1427,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksDataQualityRefreshes.DataDatabricksDataQualityRefreshesRefreshesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksdataqualityrefreshes"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksdataqualityrefreshes"
 
 datadatabricksdataqualityrefreshes.NewDataDatabricksDataQualityRefreshesRefreshesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataDatabricksDataQualityRefreshesRefreshesOutputReference
 ```
@@ -1857,7 +1857,7 @@ func InternalValue() DataDatabricksDataQualityRefreshesRefreshes
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksDataQualityRefreshes.DataDatabricksDataQualityRefreshesRefreshesProviderConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksdataqualityrefreshes"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksdataqualityrefreshes"
 
 datadatabricksdataqualityrefreshes.NewDataDatabricksDataQualityRefreshesRefreshesProviderConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksDataQualityRefreshesRefreshesProviderConfigOutputReference
 ```

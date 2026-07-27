@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/databricks/databrick
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksMwsNetworkConnectivityConfigs.DataDatabricksMwsNetworkConnectivityConfigs.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksmwsnetworkconnectivityconfigs"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksmwsnetworkconnectivityconfigs"
 
 datadatabricksmwsnetworkconnectivityconfigs.NewDataDatabricksMwsNetworkConnectivityConfigs(scope Construct, id *string, config DataDatabricksMwsNetworkConnectivityConfigsConfig) DataDatabricksMwsNetworkConnectivityConfigs
 ```
@@ -319,7 +319,7 @@ func ResetRegion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-databricks.dataDatabricksMwsNetworkConnectivityConfigs.DataDatabricksMwsNetworkConnectivityConfigs.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksmwsnetworkconnectivityconfigs"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksmwsnetworkconnectivityconfigs"
 
 datadatabricksmwsnetworkconnectivityconfigs.DataDatabricksMwsNetworkConnectivityConfigs_IsConstruct(x interface{}) *bool
 ```
@@ -351,7 +351,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-databricks.dataDatabricksMwsNetworkConnectivityConfigs.DataDatabricksMwsNetworkConnectivityConfigs.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksmwsnetworkconnectivityconfigs"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksmwsnetworkconnectivityconfigs"
 
 datadatabricksmwsnetworkconnectivityconfigs.DataDatabricksMwsNetworkConnectivityConfigs_IsTerraformElement(x interface{}) *bool
 ```
@@ -365,7 +365,7 @@ datadatabricksmwsnetworkconnectivityconfigs.DataDatabricksMwsNetworkConnectivity
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-databricks.dataDatabricksMwsNetworkConnectivityConfigs.DataDatabricksMwsNetworkConnectivityConfigs.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksmwsnetworkconnectivityconfigs"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksmwsnetworkconnectivityconfigs"
 
 datadatabricksmwsnetworkconnectivityconfigs.DataDatabricksMwsNetworkConnectivityConfigs_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -379,7 +379,7 @@ datadatabricksmwsnetworkconnectivityconfigs.DataDatabricksMwsNetworkConnectivity
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-databricks.dataDatabricksMwsNetworkConnectivityConfigs.DataDatabricksMwsNetworkConnectivityConfigs.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksmwsnetworkconnectivityconfigs"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksmwsnetworkconnectivityconfigs"
 
 datadatabricksmwsnetworkconnectivityconfigs.DataDatabricksMwsNetworkConnectivityConfigs_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -652,7 +652,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksMwsNetworkConnectivityConfigs.DataDatabricksMwsNetworkConnectivityConfigsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksmwsnetworkconnectivityconfigs"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksmwsnetworkconnectivityconfigs"
 
 &datadatabricksmwsnetworkconnectivityconfigs.DataDatabricksMwsNetworkConnectivityConfigsConfig {
 	Connection: interface{},

@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/databricks/databrick
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksAiSearchEndpoints.DataDatabricksAiSearchEndpoints.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksaisearchendpoints"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksaisearchendpoints"
 
 datadatabricksaisearchendpoints.NewDataDatabricksAiSearchEndpoints(scope Construct, id *string, config DataDatabricksAiSearchEndpointsConfig) DataDatabricksAiSearchEndpoints
 ```
@@ -325,7 +325,7 @@ func ResetProviderConfig()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-databricks.dataDatabricksAiSearchEndpoints.DataDatabricksAiSearchEndpoints.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksaisearchendpoints"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksaisearchendpoints"
 
 datadatabricksaisearchendpoints.DataDatabricksAiSearchEndpoints_IsConstruct(x interface{}) *bool
 ```
@@ -357,7 +357,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-databricks.dataDatabricksAiSearchEndpoints.DataDatabricksAiSearchEndpoints.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksaisearchendpoints"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksaisearchendpoints"
 
 datadatabricksaisearchendpoints.DataDatabricksAiSearchEndpoints_IsTerraformElement(x interface{}) *bool
 ```
@@ -371,7 +371,7 @@ datadatabricksaisearchendpoints.DataDatabricksAiSearchEndpoints_IsTerraformEleme
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-databricks.dataDatabricksAiSearchEndpoints.DataDatabricksAiSearchEndpoints.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksaisearchendpoints"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksaisearchendpoints"
 
 datadatabricksaisearchendpoints.DataDatabricksAiSearchEndpoints_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -385,7 +385,7 @@ datadatabricksaisearchendpoints.DataDatabricksAiSearchEndpoints_IsTerraformDataS
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-databricks.dataDatabricksAiSearchEndpoints.DataDatabricksAiSearchEndpoints.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksaisearchendpoints"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksaisearchendpoints"
 
 datadatabricksaisearchendpoints.DataDatabricksAiSearchEndpoints_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -669,7 +669,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksAiSearchEndpoints.DataDatabricksAiSearchEndpointsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksaisearchendpoints"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksaisearchendpoints"
 
 &datadatabricksaisearchendpoints.DataDatabricksAiSearchEndpointsConfig {
 	Connection: interface{},
@@ -681,7 +681,7 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadata
 	Provisioners: *[]interface{},
 	Parent: *string,
 	PageSize: *f64,
-	ProviderConfig: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18.dataDatabricksAiSearchEndpoints.DataDatabricksAiSearchEndpointsProviderConfig,
+	ProviderConfig: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.dataDatabricksAiSearchEndpoints.DataDatabricksAiSearchEndpointsProviderConfig,
 }
 ```
 
@@ -813,11 +813,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksAiSearchEndpoints.DataDatabricksAiSearchEndpointsEndpoints.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksaisearchendpoints"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksaisearchendpoints"
 
 &datadatabricksaisearchendpoints.DataDatabricksAiSearchEndpointsEndpoints {
 	Name: *string,
-	ProviderConfig: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18.dataDatabricksAiSearchEndpoints.DataDatabricksAiSearchEndpointsEndpointsProviderConfig,
+	ProviderConfig: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.dataDatabricksAiSearchEndpoints.DataDatabricksAiSearchEndpointsEndpointsProviderConfig,
 }
 ```
 
@@ -859,7 +859,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksAiSearchEndpoints.DataDatabricksAiSearchEndpointsEndpointsCustomTags.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksaisearchendpoints"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksaisearchendpoints"
 
 &datadatabricksaisearchendpoints.DataDatabricksAiSearchEndpointsEndpointsCustomTags {
 	Key: *string,
@@ -905,7 +905,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksAiSearchEndpoints.DataDatabricksAiSearchEndpointsEndpointsEndpointStatus.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksaisearchendpoints"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksaisearchendpoints"
 
 &datadatabricksaisearchendpoints.DataDatabricksAiSearchEndpointsEndpointsEndpointStatus {
 
@@ -918,7 +918,7 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadata
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksAiSearchEndpoints.DataDatabricksAiSearchEndpointsEndpointsProviderConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksaisearchendpoints"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksaisearchendpoints"
 
 &datadatabricksaisearchendpoints.DataDatabricksAiSearchEndpointsEndpointsProviderConfig {
 	WorkspaceId: *string,
@@ -950,7 +950,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksAiSearchEndpoints.DataDatabricksAiSearchEndpointsEndpointsScalingInfo.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksaisearchendpoints"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksaisearchendpoints"
 
 &datadatabricksaisearchendpoints.DataDatabricksAiSearchEndpointsEndpointsScalingInfo {
 	RequestedTargetQps: *f64,
@@ -982,7 +982,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksAiSearchEndpoints.DataDatabricksAiSearchEndpointsEndpointsThroughputInfo.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksaisearchendpoints"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksaisearchendpoints"
 
 &datadatabricksaisearchendpoints.DataDatabricksAiSearchEndpointsEndpointsThroughputInfo {
 	MaximumConcurrencyAllowed: *f64,
@@ -1056,7 +1056,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksAiSearchEndpoints.DataDatabricksAiSearchEndpointsProviderConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksaisearchendpoints"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksaisearchendpoints"
 
 &datadatabricksaisearchendpoints.DataDatabricksAiSearchEndpointsProviderConfig {
 	WorkspaceId: *string,
@@ -1090,7 +1090,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksAiSearchEndpoints.DataDatabricksAiSearchEndpointsEndpointsCustomTagsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksaisearchendpoints"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksaisearchendpoints"
 
 datadatabricksaisearchendpoints.NewDataDatabricksAiSearchEndpointsEndpointsCustomTagsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDatabricksAiSearchEndpointsEndpointsCustomTagsList
 ```
@@ -1250,7 +1250,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksAiSearchEndpoints.DataDatabricksAiSearchEndpointsEndpointsCustomTagsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksaisearchendpoints"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksaisearchendpoints"
 
 datadatabricksaisearchendpoints.NewDataDatabricksAiSearchEndpointsEndpointsCustomTagsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataDatabricksAiSearchEndpointsEndpointsCustomTagsOutputReference
 ```
@@ -1568,7 +1568,7 @@ func InternalValue() DataDatabricksAiSearchEndpointsEndpointsCustomTags
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksAiSearchEndpoints.DataDatabricksAiSearchEndpointsEndpointsEndpointStatusOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksaisearchendpoints"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksaisearchendpoints"
 
 datadatabricksaisearchendpoints.NewDataDatabricksAiSearchEndpointsEndpointsEndpointStatusOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksAiSearchEndpointsEndpointsEndpointStatusOutputReference
 ```
@@ -1839,7 +1839,7 @@ func InternalValue() DataDatabricksAiSearchEndpointsEndpointsEndpointStatus
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksAiSearchEndpoints.DataDatabricksAiSearchEndpointsEndpointsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksaisearchendpoints"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksaisearchendpoints"
 
 datadatabricksaisearchendpoints.NewDataDatabricksAiSearchEndpointsEndpointsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDatabricksAiSearchEndpointsEndpointsList
 ```
@@ -1999,7 +1999,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksAiSearchEndpoints.DataDatabricksAiSearchEndpointsEndpointsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksaisearchendpoints"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksaisearchendpoints"
 
 datadatabricksaisearchendpoints.NewDataDatabricksAiSearchEndpointsEndpointsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataDatabricksAiSearchEndpointsEndpointsOutputReference
 ```
@@ -2506,7 +2506,7 @@ func InternalValue() DataDatabricksAiSearchEndpointsEndpoints
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksAiSearchEndpoints.DataDatabricksAiSearchEndpointsEndpointsProviderConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksaisearchendpoints"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksaisearchendpoints"
 
 datadatabricksaisearchendpoints.NewDataDatabricksAiSearchEndpointsEndpointsProviderConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksAiSearchEndpointsEndpointsProviderConfigOutputReference
 ```
@@ -2784,7 +2784,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksAiSearchEndpoints.DataDatabricksAiSearchEndpointsEndpointsScalingInfoOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksaisearchendpoints"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksaisearchendpoints"
 
 datadatabricksaisearchendpoints.NewDataDatabricksAiSearchEndpointsEndpointsScalingInfoOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksAiSearchEndpointsEndpointsScalingInfoOutputReference
 ```
@@ -3073,7 +3073,7 @@ func InternalValue() DataDatabricksAiSearchEndpointsEndpointsScalingInfo
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksAiSearchEndpoints.DataDatabricksAiSearchEndpointsEndpointsThroughputInfoOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksaisearchendpoints"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksaisearchendpoints"
 
 datadatabricksaisearchendpoints.NewDataDatabricksAiSearchEndpointsEndpointsThroughputInfoOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksAiSearchEndpointsEndpointsThroughputInfoOutputReference
 ```
@@ -3493,7 +3493,7 @@ func InternalValue() DataDatabricksAiSearchEndpointsEndpointsThroughputInfo
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksAiSearchEndpoints.DataDatabricksAiSearchEndpointsProviderConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksaisearchendpoints"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksaisearchendpoints"
 
 datadatabricksaisearchendpoints.NewDataDatabricksAiSearchEndpointsProviderConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksAiSearchEndpointsProviderConfigOutputReference
 ```

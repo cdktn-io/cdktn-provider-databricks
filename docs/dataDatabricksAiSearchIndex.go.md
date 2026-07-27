@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/databricks/databrick
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksAiSearchIndex.DataDatabricksAiSearchIndex.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksaisearchindex"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksaisearchindex"
 
 datadatabricksaisearchindex.NewDataDatabricksAiSearchIndex(scope Construct, id *string, config DataDatabricksAiSearchIndexConfig) DataDatabricksAiSearchIndex
 ```
@@ -318,7 +318,7 @@ func ResetProviderConfig()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-databricks.dataDatabricksAiSearchIndex.DataDatabricksAiSearchIndex.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksaisearchindex"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksaisearchindex"
 
 datadatabricksaisearchindex.DataDatabricksAiSearchIndex_IsConstruct(x interface{}) *bool
 ```
@@ -350,7 +350,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-databricks.dataDatabricksAiSearchIndex.DataDatabricksAiSearchIndex.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksaisearchindex"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksaisearchindex"
 
 datadatabricksaisearchindex.DataDatabricksAiSearchIndex_IsTerraformElement(x interface{}) *bool
 ```
@@ -364,7 +364,7 @@ datadatabricksaisearchindex.DataDatabricksAiSearchIndex_IsTerraformElement(x int
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-databricks.dataDatabricksAiSearchIndex.DataDatabricksAiSearchIndex.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksaisearchindex"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksaisearchindex"
 
 datadatabricksaisearchindex.DataDatabricksAiSearchIndex_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -378,7 +378,7 @@ datadatabricksaisearchindex.DataDatabricksAiSearchIndex_IsTerraformDataSource(x 
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-databricks.dataDatabricksAiSearchIndex.DataDatabricksAiSearchIndex.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksaisearchindex"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksaisearchindex"
 
 datadatabricksaisearchindex.DataDatabricksAiSearchIndex_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -717,7 +717,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksAiSearchIndex.DataDatabricksAiSearchIndexConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksaisearchindex"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksaisearchindex"
 
 &datadatabricksaisearchindex.DataDatabricksAiSearchIndexConfig {
 	Connection: interface{},
@@ -728,7 +728,7 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadata
 	Provider: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider,
 	Provisioners: *[]interface{},
 	Name: *string,
-	ProviderConfig: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18.dataDatabricksAiSearchIndex.DataDatabricksAiSearchIndexProviderConfig,
+	ProviderConfig: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.dataDatabricksAiSearchIndex.DataDatabricksAiSearchIndexProviderConfig,
 }
 ```
 
@@ -847,7 +847,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksAiSearchIndex.DataDatabricksAiSearchIndexDeltaSyncIndexSpec.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksaisearchindex"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksaisearchindex"
 
 &datadatabricksaisearchindex.DataDatabricksAiSearchIndexDeltaSyncIndexSpec {
 	PipelineType: *string,
@@ -949,7 +949,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksAiSearchIndex.DataDatabricksAiSearchIndexDeltaSyncIndexSpecEmbeddingSourceColumns.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksaisearchindex"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksaisearchindex"
 
 &datadatabricksaisearchindex.DataDatabricksAiSearchIndexDeltaSyncIndexSpecEmbeddingSourceColumns {
 	EmbeddingModelEndpoint: *string,
@@ -1009,7 +1009,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksAiSearchIndex.DataDatabricksAiSearchIndexDeltaSyncIndexSpecEmbeddingVectorColumns.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksaisearchindex"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksaisearchindex"
 
 &datadatabricksaisearchindex.DataDatabricksAiSearchIndexDeltaSyncIndexSpecEmbeddingVectorColumns {
 	EmbeddingDimension: *f64,
@@ -1055,7 +1055,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksAiSearchIndex.DataDatabricksAiSearchIndexDirectAccessIndexSpec.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksaisearchindex"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksaisearchindex"
 
 &datadatabricksaisearchindex.DataDatabricksAiSearchIndexDirectAccessIndexSpec {
 	EmbeddingSourceColumns: interface{},
@@ -1115,7 +1115,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksAiSearchIndex.DataDatabricksAiSearchIndexDirectAccessIndexSpecEmbeddingSourceColumns.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksaisearchindex"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksaisearchindex"
 
 &datadatabricksaisearchindex.DataDatabricksAiSearchIndexDirectAccessIndexSpecEmbeddingSourceColumns {
 	EmbeddingModelEndpoint: *string,
@@ -1175,7 +1175,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksAiSearchIndex.DataDatabricksAiSearchIndexDirectAccessIndexSpecEmbeddingVectorColumns.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksaisearchindex"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksaisearchindex"
 
 &datadatabricksaisearchindex.DataDatabricksAiSearchIndexDirectAccessIndexSpecEmbeddingVectorColumns {
 	EmbeddingDimension: *f64,
@@ -1221,7 +1221,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksAiSearchIndex.DataDatabricksAiSearchIndexProviderConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksaisearchindex"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksaisearchindex"
 
 &datadatabricksaisearchindex.DataDatabricksAiSearchIndexProviderConfig {
 	WorkspaceId: *string,
@@ -1253,7 +1253,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksAiSearchIndex.DataDatabricksAiSearchIndexStatus.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksaisearchindex"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksaisearchindex"
 
 &datadatabricksaisearchindex.DataDatabricksAiSearchIndexStatus {
 
@@ -1268,7 +1268,7 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadata
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksAiSearchIndex.DataDatabricksAiSearchIndexDeltaSyncIndexSpecEmbeddingSourceColumnsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksaisearchindex"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksaisearchindex"
 
 datadatabricksaisearchindex.NewDataDatabricksAiSearchIndexDeltaSyncIndexSpecEmbeddingSourceColumnsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDatabricksAiSearchIndexDeltaSyncIndexSpecEmbeddingSourceColumnsList
 ```
@@ -1428,7 +1428,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksAiSearchIndex.DataDatabricksAiSearchIndexDeltaSyncIndexSpecEmbeddingSourceColumnsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksaisearchindex"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksaisearchindex"
 
 datadatabricksaisearchindex.NewDataDatabricksAiSearchIndexDeltaSyncIndexSpecEmbeddingSourceColumnsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataDatabricksAiSearchIndexDeltaSyncIndexSpecEmbeddingSourceColumnsOutputReference
 ```
@@ -1782,7 +1782,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksAiSearchIndex.DataDatabricksAiSearchIndexDeltaSyncIndexSpecEmbeddingVectorColumnsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksaisearchindex"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksaisearchindex"
 
 datadatabricksaisearchindex.NewDataDatabricksAiSearchIndexDeltaSyncIndexSpecEmbeddingVectorColumnsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDatabricksAiSearchIndexDeltaSyncIndexSpecEmbeddingVectorColumnsList
 ```
@@ -1942,7 +1942,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksAiSearchIndex.DataDatabricksAiSearchIndexDeltaSyncIndexSpecEmbeddingVectorColumnsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksaisearchindex"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksaisearchindex"
 
 datadatabricksaisearchindex.NewDataDatabricksAiSearchIndexDeltaSyncIndexSpecEmbeddingVectorColumnsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataDatabricksAiSearchIndexDeltaSyncIndexSpecEmbeddingVectorColumnsOutputReference
 ```
@@ -2267,7 +2267,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksAiSearchIndex.DataDatabricksAiSearchIndexDeltaSyncIndexSpecOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksaisearchindex"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksaisearchindex"
 
 datadatabricksaisearchindex.NewDataDatabricksAiSearchIndexDeltaSyncIndexSpecOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksAiSearchIndexDeltaSyncIndexSpecOutputReference
 ```
@@ -2720,7 +2720,7 @@ func InternalValue() DataDatabricksAiSearchIndexDeltaSyncIndexSpec
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksAiSearchIndex.DataDatabricksAiSearchIndexDirectAccessIndexSpecEmbeddingSourceColumnsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksaisearchindex"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksaisearchindex"
 
 datadatabricksaisearchindex.NewDataDatabricksAiSearchIndexDirectAccessIndexSpecEmbeddingSourceColumnsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDatabricksAiSearchIndexDirectAccessIndexSpecEmbeddingSourceColumnsList
 ```
@@ -2880,7 +2880,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksAiSearchIndex.DataDatabricksAiSearchIndexDirectAccessIndexSpecEmbeddingSourceColumnsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksaisearchindex"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksaisearchindex"
 
 datadatabricksaisearchindex.NewDataDatabricksAiSearchIndexDirectAccessIndexSpecEmbeddingSourceColumnsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataDatabricksAiSearchIndexDirectAccessIndexSpecEmbeddingSourceColumnsOutputReference
 ```
@@ -3234,7 +3234,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksAiSearchIndex.DataDatabricksAiSearchIndexDirectAccessIndexSpecEmbeddingVectorColumnsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksaisearchindex"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksaisearchindex"
 
 datadatabricksaisearchindex.NewDataDatabricksAiSearchIndexDirectAccessIndexSpecEmbeddingVectorColumnsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDatabricksAiSearchIndexDirectAccessIndexSpecEmbeddingVectorColumnsList
 ```
@@ -3394,7 +3394,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksAiSearchIndex.DataDatabricksAiSearchIndexDirectAccessIndexSpecEmbeddingVectorColumnsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksaisearchindex"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksaisearchindex"
 
 datadatabricksaisearchindex.NewDataDatabricksAiSearchIndexDirectAccessIndexSpecEmbeddingVectorColumnsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataDatabricksAiSearchIndexDirectAccessIndexSpecEmbeddingVectorColumnsOutputReference
 ```
@@ -3719,7 +3719,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksAiSearchIndex.DataDatabricksAiSearchIndexDirectAccessIndexSpecOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksaisearchindex"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksaisearchindex"
 
 datadatabricksaisearchindex.NewDataDatabricksAiSearchIndexDirectAccessIndexSpecOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksAiSearchIndexDirectAccessIndexSpecOutputReference
 ```
@@ -4081,7 +4081,7 @@ func InternalValue() DataDatabricksAiSearchIndexDirectAccessIndexSpec
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksAiSearchIndex.DataDatabricksAiSearchIndexProviderConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksaisearchindex"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksaisearchindex"
 
 datadatabricksaisearchindex.NewDataDatabricksAiSearchIndexProviderConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksAiSearchIndexProviderConfigOutputReference
 ```
@@ -4359,7 +4359,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksAiSearchIndex.DataDatabricksAiSearchIndexStatusOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksaisearchindex"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksaisearchindex"
 
 datadatabricksaisearchindex.NewDataDatabricksAiSearchIndexStatusOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksAiSearchIndexStatusOutputReference
 ```

@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/databricks/databrick
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.qualityMonitorV2.QualityMonitorV2.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/qualitymonitorv2"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/qualitymonitorv2"
 
 qualitymonitorv2.NewQualityMonitorV2(scope Construct, id *string, config QualityMonitorV2Config) QualityMonitorV2
 ```
@@ -440,7 +440,7 @@ func ResetValidityCheckConfigurations()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-databricks.qualityMonitorV2.QualityMonitorV2.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/qualitymonitorv2"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/qualitymonitorv2"
 
 qualitymonitorv2.QualityMonitorV2_IsConstruct(x interface{}) *bool
 ```
@@ -472,7 +472,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-databricks.qualityMonitorV2.QualityMonitorV2.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/qualitymonitorv2"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/qualitymonitorv2"
 
 qualitymonitorv2.QualityMonitorV2_IsTerraformElement(x interface{}) *bool
 ```
@@ -486,7 +486,7 @@ qualitymonitorv2.QualityMonitorV2_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-databricks.qualityMonitorV2.QualityMonitorV2.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/qualitymonitorv2"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/qualitymonitorv2"
 
 qualitymonitorv2.QualityMonitorV2_IsTerraformResource(x interface{}) *bool
 ```
@@ -500,7 +500,7 @@ qualitymonitorv2.QualityMonitorV2_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-databricks.qualityMonitorV2.QualityMonitorV2.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/qualitymonitorv2"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/qualitymonitorv2"
 
 qualitymonitorv2.QualityMonitorV2_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -828,7 +828,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.qualityMonitorV2.QualityMonitorV2AnomalyDetectionConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/qualitymonitorv2"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/qualitymonitorv2"
 
 &qualitymonitorv2.QualityMonitorV2AnomalyDetectionConfig {
 	ExcludedTableFullNames: *[]*string,
@@ -860,7 +860,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.qualityMonitorV2.QualityMonitorV2Config.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/qualitymonitorv2"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/qualitymonitorv2"
 
 &qualitymonitorv2.QualityMonitorV2Config {
 	Connection: interface{},
@@ -872,7 +872,7 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/qualitym
 	Provisioners: *[]interface{},
 	ObjectId: *string,
 	ObjectType: *string,
-	ProviderConfig: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18.qualityMonitorV2.QualityMonitorV2ProviderConfig,
+	ProviderConfig: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.qualityMonitorV2.QualityMonitorV2ProviderConfig,
 	ValidityCheckConfigurations: interface{},
 }
 ```
@@ -1018,7 +1018,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.qualityMonitorV2.QualityMonitorV2ProviderConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/qualitymonitorv2"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/qualitymonitorv2"
 
 &qualitymonitorv2.QualityMonitorV2ProviderConfig {
 	WorkspaceId: *string,
@@ -1050,13 +1050,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.qualityMonitorV2.QualityMonitorV2ValidityCheckConfigurations.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/qualitymonitorv2"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/qualitymonitorv2"
 
 &qualitymonitorv2.QualityMonitorV2ValidityCheckConfigurations {
 	Name: *string,
-	PercentNullValidityCheck: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18.qualityMonitorV2.QualityMonitorV2ValidityCheckConfigurationsPercentNullValidityCheck,
-	RangeValidityCheck: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18.qualityMonitorV2.QualityMonitorV2ValidityCheckConfigurationsRangeValidityCheck,
-	UniquenessValidityCheck: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18.qualityMonitorV2.QualityMonitorV2ValidityCheckConfigurationsUniquenessValidityCheck,
+	PercentNullValidityCheck: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.qualityMonitorV2.QualityMonitorV2ValidityCheckConfigurationsPercentNullValidityCheck,
+	RangeValidityCheck: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.qualityMonitorV2.QualityMonitorV2ValidityCheckConfigurationsRangeValidityCheck,
+	UniquenessValidityCheck: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.qualityMonitorV2.QualityMonitorV2ValidityCheckConfigurationsUniquenessValidityCheck,
 }
 ```
 
@@ -1124,7 +1124,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.qualityMonitorV2.QualityMonitorV2ValidityCheckConfigurationsPercentNullValidityCheck.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/qualitymonitorv2"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/qualitymonitorv2"
 
 &qualitymonitorv2.QualityMonitorV2ValidityCheckConfigurationsPercentNullValidityCheck {
 	ColumnNames: *[]*string,
@@ -1170,7 +1170,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.qualityMonitorV2.QualityMonitorV2ValidityCheckConfigurationsRangeValidityCheck.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/qualitymonitorv2"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/qualitymonitorv2"
 
 &qualitymonitorv2.QualityMonitorV2ValidityCheckConfigurationsRangeValidityCheck {
 	ColumnNames: *[]*string,
@@ -1230,7 +1230,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.qualityMonitorV2.QualityMonitorV2ValidityCheckConfigurationsUniquenessValidityCheck.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/qualitymonitorv2"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/qualitymonitorv2"
 
 &qualitymonitorv2.QualityMonitorV2ValidityCheckConfigurationsUniquenessValidityCheck {
 	ColumnNames: *[]*string,
@@ -1264,7 +1264,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.qualityMonitorV2.QualityMonitorV2AnomalyDetectionConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/qualitymonitorv2"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/qualitymonitorv2"
 
 qualitymonitorv2.NewQualityMonitorV2AnomalyDetectionConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) QualityMonitorV2AnomalyDetectionConfigOutputReference
 ```
@@ -1564,7 +1564,7 @@ func InternalValue() QualityMonitorV2AnomalyDetectionConfig
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.qualityMonitorV2.QualityMonitorV2ProviderConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/qualitymonitorv2"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/qualitymonitorv2"
 
 qualitymonitorv2.NewQualityMonitorV2ProviderConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) QualityMonitorV2ProviderConfigOutputReference
 ```
@@ -1842,7 +1842,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.qualityMonitorV2.QualityMonitorV2ValidityCheckConfigurationsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/qualitymonitorv2"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/qualitymonitorv2"
 
 qualitymonitorv2.NewQualityMonitorV2ValidityCheckConfigurationsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) QualityMonitorV2ValidityCheckConfigurationsList
 ```
@@ -2002,7 +2002,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.qualityMonitorV2.QualityMonitorV2ValidityCheckConfigurationsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/qualitymonitorv2"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/qualitymonitorv2"
 
 qualitymonitorv2.NewQualityMonitorV2ValidityCheckConfigurationsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) QualityMonitorV2ValidityCheckConfigurationsOutputReference
 ```
@@ -2424,7 +2424,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.qualityMonitorV2.QualityMonitorV2ValidityCheckConfigurationsPercentNullValidityCheckOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/qualitymonitorv2"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/qualitymonitorv2"
 
 qualitymonitorv2.NewQualityMonitorV2ValidityCheckConfigurationsPercentNullValidityCheckOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) QualityMonitorV2ValidityCheckConfigurationsPercentNullValidityCheckOutputReference
 ```
@@ -2731,7 +2731,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.qualityMonitorV2.QualityMonitorV2ValidityCheckConfigurationsRangeValidityCheckOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/qualitymonitorv2"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/qualitymonitorv2"
 
 qualitymonitorv2.NewQualityMonitorV2ValidityCheckConfigurationsRangeValidityCheckOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) QualityMonitorV2ValidityCheckConfigurationsRangeValidityCheckOutputReference
 ```
@@ -3067,7 +3067,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.qualityMonitorV2.QualityMonitorV2ValidityCheckConfigurationsUniquenessValidityCheckOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/qualitymonitorv2"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/qualitymonitorv2"
 
 qualitymonitorv2.NewQualityMonitorV2ValidityCheckConfigurationsUniquenessValidityCheckOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) QualityMonitorV2ValidityCheckConfigurationsUniquenessValidityCheckOutputReference
 ```

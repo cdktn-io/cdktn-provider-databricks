@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/databricks/databrick
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksSecretUcs.DataDatabricksSecretUcs.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabrickssecretucs"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabrickssecretucs"
 
 datadatabrickssecretucs.NewDataDatabricksSecretUcs(scope Construct, id *string, config DataDatabricksSecretUcsConfig) DataDatabricksSecretUcs
 ```
@@ -339,7 +339,7 @@ func ResetSchemaName()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-databricks.dataDatabricksSecretUcs.DataDatabricksSecretUcs.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabrickssecretucs"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabrickssecretucs"
 
 datadatabrickssecretucs.DataDatabricksSecretUcs_IsConstruct(x interface{}) *bool
 ```
@@ -371,7 +371,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-databricks.dataDatabricksSecretUcs.DataDatabricksSecretUcs.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabrickssecretucs"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabrickssecretucs"
 
 datadatabrickssecretucs.DataDatabricksSecretUcs_IsTerraformElement(x interface{}) *bool
 ```
@@ -385,7 +385,7 @@ datadatabrickssecretucs.DataDatabricksSecretUcs_IsTerraformElement(x interface{}
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-databricks.dataDatabricksSecretUcs.DataDatabricksSecretUcs.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabrickssecretucs"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabrickssecretucs"
 
 datadatabrickssecretucs.DataDatabricksSecretUcs_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -399,7 +399,7 @@ datadatabrickssecretucs.DataDatabricksSecretUcs_IsTerraformDataSource(x interfac
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-databricks.dataDatabricksSecretUcs.DataDatabricksSecretUcs.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabrickssecretucs"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabrickssecretucs"
 
 datadatabrickssecretucs.DataDatabricksSecretUcs_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -705,7 +705,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksSecretUcs.DataDatabricksSecretUcsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabrickssecretucs"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabrickssecretucs"
 
 &datadatabrickssecretucs.DataDatabricksSecretUcsConfig {
 	Connection: interface{},
@@ -717,7 +717,7 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadata
 	Provisioners: *[]interface{},
 	CatalogName: *string,
 	PageSize: *f64,
-	ProviderConfig: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18.dataDatabricksSecretUcs.DataDatabricksSecretUcsProviderConfig,
+	ProviderConfig: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.dataDatabricksSecretUcs.DataDatabricksSecretUcsProviderConfig,
 	SchemaName: *string,
 }
 ```
@@ -863,7 +863,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksSecretUcs.DataDatabricksSecretUcsProviderConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabrickssecretucs"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabrickssecretucs"
 
 &datadatabrickssecretucs.DataDatabricksSecretUcsProviderConfig {
 	WorkspaceId: *string,
@@ -895,11 +895,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksSecretUcs.DataDatabricksSecretUcsSecrets.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabrickssecretucs"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabrickssecretucs"
 
 &datadatabrickssecretucs.DataDatabricksSecretUcsSecrets {
 	FullName: *string,
-	ProviderConfig: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18.dataDatabricksSecretUcs.DataDatabricksSecretUcsSecretsProviderConfig,
+	ProviderConfig: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.dataDatabricksSecretUcs.DataDatabricksSecretUcsSecretsProviderConfig,
 }
 ```
 
@@ -941,7 +941,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksSecretUcs.DataDatabricksSecretUcsSecretsProviderConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabrickssecretucs"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabrickssecretucs"
 
 &datadatabrickssecretucs.DataDatabricksSecretUcsSecretsProviderConfig {
 	WorkspaceId: *string,
@@ -975,7 +975,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksSecretUcs.DataDatabricksSecretUcsProviderConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabrickssecretucs"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabrickssecretucs"
 
 datadatabrickssecretucs.NewDataDatabricksSecretUcsProviderConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksSecretUcsProviderConfigOutputReference
 ```
@@ -1253,7 +1253,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksSecretUcs.DataDatabricksSecretUcsSecretsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabrickssecretucs"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabrickssecretucs"
 
 datadatabrickssecretucs.NewDataDatabricksSecretUcsSecretsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDatabricksSecretUcsSecretsList
 ```
@@ -1413,7 +1413,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksSecretUcs.DataDatabricksSecretUcsSecretsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabrickssecretucs"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabrickssecretucs"
 
 datadatabrickssecretucs.NewDataDatabricksSecretUcsSecretsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataDatabricksSecretUcsSecretsOutputReference
 ```
@@ -1898,7 +1898,7 @@ func InternalValue() DataDatabricksSecretUcsSecrets
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksSecretUcs.DataDatabricksSecretUcsSecretsProviderConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabrickssecretucs"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabrickssecretucs"
 
 datadatabrickssecretucs.NewDataDatabricksSecretUcsSecretsProviderConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksSecretUcsSecretsProviderConfigOutputReference
 ```

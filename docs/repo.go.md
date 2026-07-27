@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/databricks/databrick
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.repo.Repo.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/repo"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/repo"
 
 repo.NewRepo(scope Construct, id *string, config RepoConfig) Repo
 ```
@@ -482,7 +482,7 @@ func ResetTag()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-databricks.repo.Repo.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/repo"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/repo"
 
 repo.Repo_IsConstruct(x interface{}) *bool
 ```
@@ -514,7 +514,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-databricks.repo.Repo.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/repo"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/repo"
 
 repo.Repo_IsTerraformElement(x interface{}) *bool
 ```
@@ -528,7 +528,7 @@ repo.Repo_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-databricks.repo.Repo.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/repo"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/repo"
 
 repo.Repo_IsTerraformResource(x interface{}) *bool
 ```
@@ -542,7 +542,7 @@ repo.Repo_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-databricks.repo.Repo.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/repo"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/repo"
 
 repo.Repo_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -980,7 +980,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.repo.RepoConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/repo"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/repo"
 
 &repo.RepoConfig {
 	Connection: interface{},
@@ -996,8 +996,8 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/repo"
 	GitProvider: *string,
 	Id: *string,
 	Path: *string,
-	ProviderConfig: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18.repo.RepoProviderConfig,
-	SparseCheckout: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18.repo.RepoSparseCheckout,
+	ProviderConfig: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.repo.RepoProviderConfig,
+	SparseCheckout: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.repo.RepoSparseCheckout,
 	Tag: *string,
 }
 ```
@@ -1215,7 +1215,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.repo.RepoProviderConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/repo"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/repo"
 
 &repo.RepoProviderConfig {
 	WorkspaceId: *string,
@@ -1247,7 +1247,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.repo.RepoSparseCheckout.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/repo"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/repo"
 
 &repo.RepoSparseCheckout {
 	Patterns: *[]*string,
@@ -1281,7 +1281,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.repo.RepoProviderConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/repo"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/repo"
 
 repo.NewRepoProviderConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) RepoProviderConfigOutputReference
 ```
@@ -1559,7 +1559,7 @@ func InternalValue() RepoProviderConfig
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.repo.RepoSparseCheckoutOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/repo"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/repo"
 
 repo.NewRepoSparseCheckoutOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) RepoSparseCheckoutOutputReference
 ```

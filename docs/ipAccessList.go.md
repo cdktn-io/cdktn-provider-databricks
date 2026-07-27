@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/databricks/databrick
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.ipAccessList.IpAccessList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/ipaccesslist"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/ipaccesslist"
 
 ipaccesslist.NewIpAccessList(scope Construct, id *string, config IpAccessListConfig) IpAccessList
 ```
@@ -434,7 +434,7 @@ func ResetProviderConfig()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-databricks.ipAccessList.IpAccessList.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/ipaccesslist"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/ipaccesslist"
 
 ipaccesslist.IpAccessList_IsConstruct(x interface{}) *bool
 ```
@@ -466,7 +466,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-databricks.ipAccessList.IpAccessList.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/ipaccesslist"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/ipaccesslist"
 
 ipaccesslist.IpAccessList_IsTerraformElement(x interface{}) *bool
 ```
@@ -480,7 +480,7 @@ ipaccesslist.IpAccessList_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-databricks.ipAccessList.IpAccessList.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/ipaccesslist"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/ipaccesslist"
 
 ipaccesslist.IpAccessList_IsTerraformResource(x interface{}) *bool
 ```
@@ -494,7 +494,7 @@ ipaccesslist.IpAccessList_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-databricks.ipAccessList.IpAccessList.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/ipaccesslist"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/ipaccesslist"
 
 ipaccesslist.IpAccessList_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -855,7 +855,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.ipAccessList.IpAccessListConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/ipaccesslist"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/ipaccesslist"
 
 &ipaccesslist.IpAccessListConfig {
 	Connection: interface{},
@@ -870,7 +870,7 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/ipaccess
 	ListType: *string,
 	Enabled: interface{},
 	Id: *string,
-	ProviderConfig: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18.ipAccessList.IpAccessListProviderConfig,
+	ProviderConfig: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.ipAccessList.IpAccessListProviderConfig,
 }
 ```
 
@@ -1046,7 +1046,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.ipAccessList.IpAccessListProviderConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/ipaccesslist"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/ipaccesslist"
 
 &ipaccesslist.IpAccessListProviderConfig {
 	WorkspaceId: *string,
@@ -1080,7 +1080,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.ipAccessList.IpAccessListProviderConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/ipaccesslist"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/ipaccesslist"
 
 ipaccesslist.NewIpAccessListProviderConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) IpAccessListProviderConfigOutputReference
 ```

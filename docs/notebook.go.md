@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/databricks/databrick
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.notebook.Notebook.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/notebook"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/notebook"
 
 notebook.NewNotebook(scope Construct, id *string, config NotebookConfig) Notebook
 ```
@@ -476,7 +476,7 @@ func ResetSource()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-databricks.notebook.Notebook.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/notebook"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/notebook"
 
 notebook.Notebook_IsConstruct(x interface{}) *bool
 ```
@@ -508,7 +508,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-databricks.notebook.Notebook.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/notebook"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/notebook"
 
 notebook.Notebook_IsTerraformElement(x interface{}) *bool
 ```
@@ -522,7 +522,7 @@ notebook.Notebook_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-databricks.notebook.Notebook.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/notebook"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/notebook"
 
 notebook.Notebook_IsTerraformResource(x interface{}) *bool
 ```
@@ -536,7 +536,7 @@ notebook.Notebook_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-databricks.notebook.Notebook.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/notebook"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/notebook"
 
 notebook.Notebook_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1007,7 +1007,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.notebook.NotebookConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/notebook"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/notebook"
 
 &notebook.NotebookConfig {
 	Connection: interface{},
@@ -1025,7 +1025,7 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/notebook
 	Md5: *string,
 	ObjectId: *f64,
 	ObjectType: *string,
-	ProviderConfig: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18.notebook.NotebookProviderConfig,
+	ProviderConfig: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.notebook.NotebookProviderConfig,
 	Source: *string,
 }
 ```
@@ -1254,7 +1254,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.notebook.NotebookProviderConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/notebook"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/notebook"
 
 &notebook.NotebookProviderConfig {
 	WorkspaceId: *string,
@@ -1288,7 +1288,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.notebook.NotebookProviderConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/notebook"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/notebook"
 
 notebook.NewNotebookProviderConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) NotebookProviderConfigOutputReference
 ```

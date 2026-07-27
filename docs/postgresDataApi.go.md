@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/databricks/databrick
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.postgresDataApi.PostgresDataApi.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/postgresdataapi"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/postgresdataapi"
 
 postgresdataapi.NewPostgresDataApi(scope Construct, id *string, config PostgresDataApiConfig) PostgresDataApi
 ```
@@ -440,7 +440,7 @@ func ResetSpec()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-databricks.postgresDataApi.PostgresDataApi.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/postgresdataapi"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/postgresdataapi"
 
 postgresdataapi.PostgresDataApi_IsConstruct(x interface{}) *bool
 ```
@@ -472,7 +472,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-databricks.postgresDataApi.PostgresDataApi.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/postgresdataapi"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/postgresdataapi"
 
 postgresdataapi.PostgresDataApi_IsTerraformElement(x interface{}) *bool
 ```
@@ -486,7 +486,7 @@ postgresdataapi.PostgresDataApi_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-databricks.postgresDataApi.PostgresDataApi.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/postgresdataapi"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/postgresdataapi"
 
 postgresdataapi.PostgresDataApi_IsTerraformResource(x interface{}) *bool
 ```
@@ -500,7 +500,7 @@ postgresdataapi.PostgresDataApi_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-databricks.postgresDataApi.PostgresDataApi.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/postgresdataapi"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/postgresdataapi"
 
 postgresdataapi.PostgresDataApi_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -839,7 +839,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.postgresDataApi.PostgresDataApiConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/postgresdataapi"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/postgresdataapi"
 
 &postgresdataapi.PostgresDataApiConfig {
 	Connection: interface{},
@@ -850,8 +850,8 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/postgres
 	Provider: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider,
 	Provisioners: *[]interface{},
 	Parent: *string,
-	ProviderConfig: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18.postgresDataApi.PostgresDataApiProviderConfig,
-	Spec: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18.postgresDataApi.PostgresDataApiSpec,
+	ProviderConfig: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.postgresDataApi.PostgresDataApiProviderConfig,
+	Spec: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.postgresDataApi.PostgresDataApiSpec,
 }
 ```
 
@@ -983,7 +983,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.postgresDataApi.PostgresDataApiProviderConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/postgresdataapi"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/postgresdataapi"
 
 &postgresdataapi.PostgresDataApiProviderConfig {
 	WorkspaceId: *string,
@@ -1015,7 +1015,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.postgresDataApi.PostgresDataApiSpec.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/postgresdataapi"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/postgresdataapi"
 
 &postgresdataapi.PostgresDataApiSpec {
 	DbAggregatesEnabled: interface{},
@@ -1159,7 +1159,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.postgresDataApi.PostgresDataApiStatus.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/postgresdataapi"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/postgresdataapi"
 
 &postgresdataapi.PostgresDataApiStatus {
 
@@ -1174,7 +1174,7 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/postgres
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.postgresDataApi.PostgresDataApiProviderConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/postgresdataapi"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/postgresdataapi"
 
 postgresdataapi.NewPostgresDataApiProviderConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PostgresDataApiProviderConfigOutputReference
 ```
@@ -1452,7 +1452,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.postgresDataApi.PostgresDataApiSpecOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/postgresdataapi"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/postgresdataapi"
 
 postgresdataapi.NewPostgresDataApiSpecOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PostgresDataApiSpecOutputReference
 ```
@@ -1962,7 +1962,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.postgresDataApi.PostgresDataApiStatusOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/postgresdataapi"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/postgresdataapi"
 
 postgresdataapi.NewPostgresDataApiStatusOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PostgresDataApiStatusOutputReference
 ```
