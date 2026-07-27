@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/databricks/databrick
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dbfsFile.DbfsFile.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/dbfsfile"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/dbfsfile"
 
 dbfsfile.NewDbfsFile(scope Construct, id *string, config DbfsFileConfig) DbfsFile
 ```
@@ -448,7 +448,7 @@ func ResetSource()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-databricks.dbfsFile.DbfsFile.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/dbfsfile"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/dbfsfile"
 
 dbfsfile.DbfsFile_IsConstruct(x interface{}) *bool
 ```
@@ -480,7 +480,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-databricks.dbfsFile.DbfsFile.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/dbfsfile"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/dbfsfile"
 
 dbfsfile.DbfsFile_IsTerraformElement(x interface{}) *bool
 ```
@@ -494,7 +494,7 @@ dbfsfile.DbfsFile_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-databricks.dbfsFile.DbfsFile.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/dbfsfile"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/dbfsfile"
 
 dbfsfile.DbfsFile_IsTerraformResource(x interface{}) *bool
 ```
@@ -508,7 +508,7 @@ dbfsfile.DbfsFile_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-databricks.dbfsFile.DbfsFile.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/dbfsfile"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/dbfsfile"
 
 dbfsfile.DbfsFile_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -891,7 +891,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dbfsFile.DbfsFileConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/dbfsfile"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/dbfsfile"
 
 &dbfsfile.DbfsFileConfig {
 	Connection: interface{},
@@ -905,7 +905,7 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/dbfsfile
 	ContentBase64: *string,
 	Id: *string,
 	Md5: *string,
-	ProviderConfig: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18.dbfsFile.DbfsFileProviderConfig,
+	ProviderConfig: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.dbfsFile.DbfsFileProviderConfig,
 	Source: *string,
 }
 ```
@@ -1082,7 +1082,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dbfsFile.DbfsFileProviderConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/dbfsfile"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/dbfsfile"
 
 &dbfsfile.DbfsFileProviderConfig {
 	WorkspaceId: *string,
@@ -1116,7 +1116,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dbfsFile.DbfsFileProviderConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/dbfsfile"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/dbfsfile"
 
 dbfsfile.NewDbfsFileProviderConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DbfsFileProviderConfigOutputReference
 ```

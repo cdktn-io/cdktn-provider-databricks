@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/databricks/databrick
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksDataClassificationCatalogConfig.DataDatabricksDataClassificationCatalogConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksdataclassificationcatalogconfig"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksdataclassificationcatalogconfig"
 
 datadatabricksdataclassificationcatalogconfig.NewDataDatabricksDataClassificationCatalogConfig(scope Construct, id *string, config DataDatabricksDataClassificationCatalogConfigConfig) DataDatabricksDataClassificationCatalogConfig
 ```
@@ -318,7 +318,7 @@ func ResetProviderConfig()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-databricks.dataDatabricksDataClassificationCatalogConfig.DataDatabricksDataClassificationCatalogConfig.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksdataclassificationcatalogconfig"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksdataclassificationcatalogconfig"
 
 datadatabricksdataclassificationcatalogconfig.DataDatabricksDataClassificationCatalogConfig_IsConstruct(x interface{}) *bool
 ```
@@ -350,7 +350,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-databricks.dataDatabricksDataClassificationCatalogConfig.DataDatabricksDataClassificationCatalogConfig.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksdataclassificationcatalogconfig"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksdataclassificationcatalogconfig"
 
 datadatabricksdataclassificationcatalogconfig.DataDatabricksDataClassificationCatalogConfig_IsTerraformElement(x interface{}) *bool
 ```
@@ -364,7 +364,7 @@ datadatabricksdataclassificationcatalogconfig.DataDatabricksDataClassificationCa
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-databricks.dataDatabricksDataClassificationCatalogConfig.DataDatabricksDataClassificationCatalogConfig.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksdataclassificationcatalogconfig"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksdataclassificationcatalogconfig"
 
 datadatabricksdataclassificationcatalogconfig.DataDatabricksDataClassificationCatalogConfig_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -378,7 +378,7 @@ datadatabricksdataclassificationcatalogconfig.DataDatabricksDataClassificationCa
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-databricks.dataDatabricksDataClassificationCatalogConfig.DataDatabricksDataClassificationCatalogConfig.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksdataclassificationcatalogconfig"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksdataclassificationcatalogconfig"
 
 datadatabricksdataclassificationcatalogconfig.DataDatabricksDataClassificationCatalogConfig_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -662,7 +662,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksDataClassificationCatalogConfig.DataDatabricksDataClassificationCatalogConfigAutoTagConfigs.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksdataclassificationcatalogconfig"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksdataclassificationcatalogconfig"
 
 &datadatabricksdataclassificationcatalogconfig.DataDatabricksDataClassificationCatalogConfigAutoTagConfigs {
 	AutoTaggingMode: *string,
@@ -708,7 +708,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksDataClassificationCatalogConfig.DataDatabricksDataClassificationCatalogConfigConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksdataclassificationcatalogconfig"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksdataclassificationcatalogconfig"
 
 &datadatabricksdataclassificationcatalogconfig.DataDatabricksDataClassificationCatalogConfigConfig {
 	Connection: interface{},
@@ -719,7 +719,7 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadata
 	Provider: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider,
 	Provisioners: *[]interface{},
 	Name: *string,
-	ProviderConfig: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18.dataDatabricksDataClassificationCatalogConfig.DataDatabricksDataClassificationCatalogConfigProviderConfig,
+	ProviderConfig: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.dataDatabricksDataClassificationCatalogConfig.DataDatabricksDataClassificationCatalogConfigProviderConfig,
 }
 ```
 
@@ -838,7 +838,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksDataClassificationCatalogConfig.DataDatabricksDataClassificationCatalogConfigExcludedSchemas.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksdataclassificationcatalogconfig"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksdataclassificationcatalogconfig"
 
 &datadatabricksdataclassificationcatalogconfig.DataDatabricksDataClassificationCatalogConfigExcludedSchemas {
 	Names: *[]*string,
@@ -870,7 +870,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksDataClassificationCatalogConfig.DataDatabricksDataClassificationCatalogConfigIncludedSchemas.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksdataclassificationcatalogconfig"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksdataclassificationcatalogconfig"
 
 &datadatabricksdataclassificationcatalogconfig.DataDatabricksDataClassificationCatalogConfigIncludedSchemas {
 	Names: *[]*string,
@@ -902,7 +902,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksDataClassificationCatalogConfig.DataDatabricksDataClassificationCatalogConfigProviderConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksdataclassificationcatalogconfig"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksdataclassificationcatalogconfig"
 
 &datadatabricksdataclassificationcatalogconfig.DataDatabricksDataClassificationCatalogConfigProviderConfig {
 	WorkspaceId: *string,
@@ -936,7 +936,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksDataClassificationCatalogConfig.DataDatabricksDataClassificationCatalogConfigAutoTagConfigsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksdataclassificationcatalogconfig"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksdataclassificationcatalogconfig"
 
 datadatabricksdataclassificationcatalogconfig.NewDataDatabricksDataClassificationCatalogConfigAutoTagConfigsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDatabricksDataClassificationCatalogConfigAutoTagConfigsList
 ```
@@ -1096,7 +1096,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksDataClassificationCatalogConfig.DataDatabricksDataClassificationCatalogConfigAutoTagConfigsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksdataclassificationcatalogconfig"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksdataclassificationcatalogconfig"
 
 datadatabricksdataclassificationcatalogconfig.NewDataDatabricksDataClassificationCatalogConfigAutoTagConfigsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataDatabricksDataClassificationCatalogConfigAutoTagConfigsOutputReference
 ```
@@ -1407,7 +1407,7 @@ func InternalValue() DataDatabricksDataClassificationCatalogConfigAutoTagConfigs
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksDataClassificationCatalogConfig.DataDatabricksDataClassificationCatalogConfigExcludedSchemasOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksdataclassificationcatalogconfig"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksdataclassificationcatalogconfig"
 
 datadatabricksdataclassificationcatalogconfig.NewDataDatabricksDataClassificationCatalogConfigExcludedSchemasOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksDataClassificationCatalogConfigExcludedSchemasOutputReference
 ```
@@ -1678,7 +1678,7 @@ func InternalValue() DataDatabricksDataClassificationCatalogConfigExcludedSchema
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksDataClassificationCatalogConfig.DataDatabricksDataClassificationCatalogConfigIncludedSchemasOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksdataclassificationcatalogconfig"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksdataclassificationcatalogconfig"
 
 datadatabricksdataclassificationcatalogconfig.NewDataDatabricksDataClassificationCatalogConfigIncludedSchemasOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksDataClassificationCatalogConfigIncludedSchemasOutputReference
 ```
@@ -1949,7 +1949,7 @@ func InternalValue() DataDatabricksDataClassificationCatalogConfigIncludedSchema
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksDataClassificationCatalogConfig.DataDatabricksDataClassificationCatalogConfigProviderConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksdataclassificationcatalogconfig"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksdataclassificationcatalogconfig"
 
 datadatabricksdataclassificationcatalogconfig.NewDataDatabricksDataClassificationCatalogConfigProviderConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksDataClassificationCatalogConfigProviderConfigOutputReference
 ```

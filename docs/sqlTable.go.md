@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/databricks/databrick
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.sqlTable.SqlTable.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/sqltable"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/sqltable"
 
 sqltable.NewSqlTable(scope Construct, id *string, config SqlTableConfig) SqlTable
 ```
@@ -531,7 +531,7 @@ func ResetWarehouseId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-databricks.sqlTable.SqlTable.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/sqltable"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/sqltable"
 
 sqltable.SqlTable_IsConstruct(x interface{}) *bool
 ```
@@ -563,7 +563,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-databricks.sqlTable.SqlTable.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/sqltable"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/sqltable"
 
 sqltable.SqlTable_IsTerraformElement(x interface{}) *bool
 ```
@@ -577,7 +577,7 @@ sqltable.SqlTable_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-databricks.sqlTable.SqlTable.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/sqltable"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/sqltable"
 
 sqltable.SqlTable_IsTerraformResource(x interface{}) *bool
 ```
@@ -591,7 +591,7 @@ sqltable.SqlTable_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-databricks.sqlTable.SqlTable.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/sqltable"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/sqltable"
 
 sqltable.SqlTable_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1260,7 +1260,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.sqlTable.SqlTableColumn.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/sqltable"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/sqltable"
 
 &sqltable.SqlTableColumn {
 	Name: *string,
@@ -1362,7 +1362,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.sqlTable.SqlTableConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/sqltable"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/sqltable"
 
 &sqltable.SqlTableConfig {
 	Connection: interface{},
@@ -1386,7 +1386,7 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/sqltable
 	Owner: *string,
 	Partitions: *[]*string,
 	Properties: *map[string]*string,
-	ProviderConfig: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18.sqlTable.SqlTableProviderConfig,
+	ProviderConfig: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.sqlTable.SqlTableProviderConfig,
 	StorageCredentialName: *string,
 	StorageLocation: *string,
 	ViewDefinition: *string,
@@ -1737,7 +1737,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.sqlTable.SqlTableProviderConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/sqltable"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/sqltable"
 
 &sqltable.SqlTableProviderConfig {
 	WorkspaceId: *string,
@@ -1771,7 +1771,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.sqlTable.SqlTableColumnList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/sqltable"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/sqltable"
 
 sqltable.NewSqlTableColumnList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SqlTableColumnList
 ```
@@ -1931,7 +1931,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.sqlTable.SqlTableColumnOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/sqltable"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/sqltable"
 
 sqltable.NewSqlTableColumnOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SqlTableColumnOutputReference
 ```
@@ -2365,7 +2365,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.sqlTable.SqlTableProviderConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/sqltable"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/sqltable"
 
 sqltable.NewSqlTableProviderConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SqlTableProviderConfigOutputReference
 ```

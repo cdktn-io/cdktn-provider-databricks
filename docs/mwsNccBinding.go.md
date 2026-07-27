@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/databricks/databrick
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.mwsNccBinding.MwsNccBinding.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/mwsnccbinding"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/mwsnccbinding"
 
 mwsnccbinding.NewMwsNccBinding(scope Construct, id *string, config MwsNccBindingConfig) MwsNccBinding
 ```
@@ -407,7 +407,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-databricks.mwsNccBinding.MwsNccBinding.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/mwsnccbinding"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/mwsnccbinding"
 
 mwsnccbinding.MwsNccBinding_IsConstruct(x interface{}) *bool
 ```
@@ -439,7 +439,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-databricks.mwsNccBinding.MwsNccBinding.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/mwsnccbinding"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/mwsnccbinding"
 
 mwsnccbinding.MwsNccBinding_IsTerraformElement(x interface{}) *bool
 ```
@@ -453,7 +453,7 @@ mwsnccbinding.MwsNccBinding_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-databricks.mwsNccBinding.MwsNccBinding.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/mwsnccbinding"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/mwsnccbinding"
 
 mwsnccbinding.MwsNccBinding_IsTerraformResource(x interface{}) *bool
 ```
@@ -467,7 +467,7 @@ mwsnccbinding.MwsNccBinding_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-databricks.mwsNccBinding.MwsNccBinding.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/mwsnccbinding"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/mwsnccbinding"
 
 mwsnccbinding.MwsNccBinding_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -762,7 +762,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.mwsNccBinding.MwsNccBindingConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/mwsnccbinding"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/mwsnccbinding"
 
 &mwsnccbinding.MwsNccBindingConfig {
 	Connection: interface{},

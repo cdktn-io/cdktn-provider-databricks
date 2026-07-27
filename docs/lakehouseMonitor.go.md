@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/databricks/databrick
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.lakehouseMonitor.LakehouseMonitor.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/lakehousemonitor"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/lakehousemonitor"
 
 lakehousemonitor.NewLakehouseMonitor(scope Construct, id *string, config LakehouseMonitorConfig) LakehouseMonitor
 ```
@@ -622,7 +622,7 @@ func ResetWarehouseId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-databricks.lakehouseMonitor.LakehouseMonitor.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/lakehousemonitor"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/lakehousemonitor"
 
 lakehousemonitor.LakehouseMonitor_IsConstruct(x interface{}) *bool
 ```
@@ -654,7 +654,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-databricks.lakehouseMonitor.LakehouseMonitor.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/lakehousemonitor"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/lakehousemonitor"
 
 lakehousemonitor.LakehouseMonitor_IsTerraformElement(x interface{}) *bool
 ```
@@ -668,7 +668,7 @@ lakehousemonitor.LakehouseMonitor_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-databricks.lakehouseMonitor.LakehouseMonitor.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/lakehousemonitor"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/lakehousemonitor"
 
 lakehousemonitor.LakehouseMonitor_IsTerraformResource(x interface{}) *bool
 ```
@@ -682,7 +682,7 @@ lakehousemonitor.LakehouseMonitor_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-databricks.lakehouseMonitor.LakehouseMonitor.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/lakehousemonitor"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/lakehousemonitor"
 
 lakehousemonitor.LakehouseMonitor_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1362,7 +1362,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.lakehouseMonitor.LakehouseMonitorConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/lakehousemonitor"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/lakehousemonitor"
 
 &lakehousemonitor.LakehouseMonitorConfig {
 	Connection: interface{},
@@ -1377,18 +1377,18 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/lakehous
 	TableName: *string,
 	BaselineTableName: *string,
 	CustomMetrics: interface{},
-	DataClassificationConfig: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18.lakehouseMonitor.LakehouseMonitorDataClassificationConfig,
+	DataClassificationConfig: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.lakehouseMonitor.LakehouseMonitorDataClassificationConfig,
 	Id: *string,
-	InferenceLog: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18.lakehouseMonitor.LakehouseMonitorInferenceLog,
+	InferenceLog: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.lakehouseMonitor.LakehouseMonitorInferenceLog,
 	LatestMonitorFailureMsg: *string,
-	Notifications: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18.lakehouseMonitor.LakehouseMonitorNotifications,
-	ProviderConfig: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18.lakehouseMonitor.LakehouseMonitorProviderConfig,
-	Schedule: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18.lakehouseMonitor.LakehouseMonitorSchedule,
+	Notifications: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.lakehouseMonitor.LakehouseMonitorNotifications,
+	ProviderConfig: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.lakehouseMonitor.LakehouseMonitorProviderConfig,
+	Schedule: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.lakehouseMonitor.LakehouseMonitorSchedule,
 	SkipBuiltinDashboard: interface{},
 	SlicingExprs: *[]*string,
-	Snapshot: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18.lakehouseMonitor.LakehouseMonitorSnapshot,
-	Timeouts: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18.lakehouseMonitor.LakehouseMonitorTimeouts,
-	TimeSeries: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18.lakehouseMonitor.LakehouseMonitorTimeSeries,
+	Snapshot: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.lakehouseMonitor.LakehouseMonitorSnapshot,
+	Timeouts: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.lakehouseMonitor.LakehouseMonitorTimeouts,
+	TimeSeries: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.lakehouseMonitor.LakehouseMonitorTimeSeries,
 	WarehouseId: *string,
 }
 ```
@@ -1737,7 +1737,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.lakehouseMonitor.LakehouseMonitorCustomMetrics.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/lakehousemonitor"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/lakehousemonitor"
 
 &lakehousemonitor.LakehouseMonitorCustomMetrics {
 	Definition: *string,
@@ -1825,7 +1825,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.lakehouseMonitor.LakehouseMonitorDataClassificationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/lakehousemonitor"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/lakehousemonitor"
 
 &lakehousemonitor.LakehouseMonitorDataClassificationConfig {
 	Enabled: interface{},
@@ -1857,7 +1857,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.lakehouseMonitor.LakehouseMonitorInferenceLog.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/lakehousemonitor"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/lakehousemonitor"
 
 &lakehousemonitor.LakehouseMonitorInferenceLog {
 	Granularities: *[]*string,
@@ -1973,11 +1973,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.lakehouseMonitor.LakehouseMonitorNotifications.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/lakehousemonitor"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/lakehousemonitor"
 
 &lakehousemonitor.LakehouseMonitorNotifications {
-	OnFailure: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18.lakehouseMonitor.LakehouseMonitorNotificationsOnFailure,
-	OnNewClassificationTagDetected: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18.lakehouseMonitor.LakehouseMonitorNotificationsOnNewClassificationTagDetected,
+	OnFailure: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.lakehouseMonitor.LakehouseMonitorNotificationsOnFailure,
+	OnNewClassificationTagDetected: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.lakehouseMonitor.LakehouseMonitorNotificationsOnNewClassificationTagDetected,
 }
 ```
 
@@ -2023,7 +2023,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.lakehouseMonitor.LakehouseMonitorNotificationsOnFailure.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/lakehousemonitor"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/lakehousemonitor"
 
 &lakehousemonitor.LakehouseMonitorNotificationsOnFailure {
 	EmailAddresses: *[]*string,
@@ -2055,7 +2055,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.lakehouseMonitor.LakehouseMonitorNotificationsOnNewClassificationTagDetected.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/lakehousemonitor"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/lakehousemonitor"
 
 &lakehousemonitor.LakehouseMonitorNotificationsOnNewClassificationTagDetected {
 	EmailAddresses: *[]*string,
@@ -2087,7 +2087,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.lakehouseMonitor.LakehouseMonitorProviderConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/lakehousemonitor"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/lakehousemonitor"
 
 &lakehousemonitor.LakehouseMonitorProviderConfig {
 	WorkspaceId: *string,
@@ -2119,7 +2119,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.lakehouseMonitor.LakehouseMonitorSchedule.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/lakehousemonitor"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/lakehousemonitor"
 
 &lakehousemonitor.LakehouseMonitorSchedule {
 	QuartzCronExpression: *string,
@@ -2165,7 +2165,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.lakehouseMonitor.LakehouseMonitorSnapshot.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/lakehousemonitor"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/lakehousemonitor"
 
 &lakehousemonitor.LakehouseMonitorSnapshot {
 
@@ -2178,7 +2178,7 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/lakehous
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.lakehouseMonitor.LakehouseMonitorTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/lakehousemonitor"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/lakehousemonitor"
 
 &lakehousemonitor.LakehouseMonitorTimeouts {
 	Create: *string,
@@ -2210,7 +2210,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.lakehouseMonitor.LakehouseMonitorTimeSeries.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/lakehousemonitor"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/lakehousemonitor"
 
 &lakehousemonitor.LakehouseMonitorTimeSeries {
 	Granularities: *[]*string,
@@ -2258,7 +2258,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.lakehouseMonitor.LakehouseMonitorCustomMetricsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/lakehousemonitor"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/lakehousemonitor"
 
 lakehousemonitor.NewLakehouseMonitorCustomMetricsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) LakehouseMonitorCustomMetricsList
 ```
@@ -2418,7 +2418,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.lakehouseMonitor.LakehouseMonitorCustomMetricsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/lakehousemonitor"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/lakehousemonitor"
 
 lakehousemonitor.NewLakehouseMonitorCustomMetricsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) LakehouseMonitorCustomMetricsOutputReference
 ```
@@ -2795,7 +2795,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.lakehouseMonitor.LakehouseMonitorDataClassificationConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/lakehousemonitor"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/lakehousemonitor"
 
 lakehousemonitor.NewLakehouseMonitorDataClassificationConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) LakehouseMonitorDataClassificationConfigOutputReference
 ```
@@ -3073,7 +3073,7 @@ func InternalValue() LakehouseMonitorDataClassificationConfig
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.lakehouseMonitor.LakehouseMonitorInferenceLogOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/lakehousemonitor"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/lakehousemonitor"
 
 lakehousemonitor.NewLakehouseMonitorInferenceLogOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) LakehouseMonitorInferenceLogOutputReference
 ```
@@ -3490,7 +3490,7 @@ func InternalValue() LakehouseMonitorInferenceLog
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.lakehouseMonitor.LakehouseMonitorNotificationsOnFailureOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/lakehousemonitor"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/lakehousemonitor"
 
 lakehousemonitor.NewLakehouseMonitorNotificationsOnFailureOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) LakehouseMonitorNotificationsOnFailureOutputReference
 ```
@@ -3768,7 +3768,7 @@ func InternalValue() LakehouseMonitorNotificationsOnFailure
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.lakehouseMonitor.LakehouseMonitorNotificationsOnNewClassificationTagDetectedOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/lakehousemonitor"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/lakehousemonitor"
 
 lakehousemonitor.NewLakehouseMonitorNotificationsOnNewClassificationTagDetectedOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) LakehouseMonitorNotificationsOnNewClassificationTagDetectedOutputReference
 ```
@@ -4046,7 +4046,7 @@ func InternalValue() LakehouseMonitorNotificationsOnNewClassificationTagDetected
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.lakehouseMonitor.LakehouseMonitorNotificationsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/lakehousemonitor"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/lakehousemonitor"
 
 lakehousemonitor.NewLakehouseMonitorNotificationsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) LakehouseMonitorNotificationsOutputReference
 ```
@@ -4379,7 +4379,7 @@ func InternalValue() LakehouseMonitorNotifications
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.lakehouseMonitor.LakehouseMonitorProviderConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/lakehousemonitor"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/lakehousemonitor"
 
 lakehousemonitor.NewLakehouseMonitorProviderConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) LakehouseMonitorProviderConfigOutputReference
 ```
@@ -4657,7 +4657,7 @@ func InternalValue() LakehouseMonitorProviderConfig
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.lakehouseMonitor.LakehouseMonitorScheduleOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/lakehousemonitor"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/lakehousemonitor"
 
 lakehousemonitor.NewLakehouseMonitorScheduleOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) LakehouseMonitorScheduleOutputReference
 ```
@@ -4961,7 +4961,7 @@ func InternalValue() LakehouseMonitorSchedule
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.lakehouseMonitor.LakehouseMonitorSnapshotOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/lakehousemonitor"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/lakehousemonitor"
 
 lakehousemonitor.NewLakehouseMonitorSnapshotOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) LakehouseMonitorSnapshotOutputReference
 ```
@@ -5210,7 +5210,7 @@ func InternalValue() LakehouseMonitorSnapshot
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.lakehouseMonitor.LakehouseMonitorTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/lakehousemonitor"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/lakehousemonitor"
 
 lakehousemonitor.NewLakehouseMonitorTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) LakehouseMonitorTimeoutsOutputReference
 ```
@@ -5488,7 +5488,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.lakehouseMonitor.LakehouseMonitorTimeSeriesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/lakehousemonitor"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/lakehousemonitor"
 
 lakehousemonitor.NewLakehouseMonitorTimeSeriesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) LakehouseMonitorTimeSeriesOutputReference
 ```

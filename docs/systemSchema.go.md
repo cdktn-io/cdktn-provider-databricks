@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/databricks/databrick
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.systemSchema.SystemSchema.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/systemschema"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/systemschema"
 
 systemschema.NewSystemSchema(scope Construct, id *string, config SystemSchemaConfig) SystemSchema
 ```
@@ -427,7 +427,7 @@ func ResetProviderConfig()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-databricks.systemSchema.SystemSchema.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/systemschema"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/systemschema"
 
 systemschema.SystemSchema_IsConstruct(x interface{}) *bool
 ```
@@ -459,7 +459,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-databricks.systemSchema.SystemSchema.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/systemschema"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/systemschema"
 
 systemschema.SystemSchema_IsTerraformElement(x interface{}) *bool
 ```
@@ -473,7 +473,7 @@ systemschema.SystemSchema_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-databricks.systemSchema.SystemSchema.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/systemschema"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/systemschema"
 
 systemschema.SystemSchema_IsTerraformResource(x interface{}) *bool
 ```
@@ -487,7 +487,7 @@ systemschema.SystemSchema_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-databricks.systemSchema.SystemSchema.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/systemschema"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/systemschema"
 
 systemschema.SystemSchema_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -826,7 +826,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.systemSchema.SystemSchemaConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/systemschema"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/systemschema"
 
 &systemschema.SystemSchemaConfig {
 	Connection: interface{},
@@ -838,7 +838,7 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/systemsc
 	Provisioners: *[]interface{},
 	Schema: *string,
 	Id: *string,
-	ProviderConfig: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18.systemSchema.SystemSchemaProviderConfig,
+	ProviderConfig: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.systemSchema.SystemSchemaProviderConfig,
 }
 ```
 
@@ -975,7 +975,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.systemSchema.SystemSchemaProviderConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/systemschema"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/systemschema"
 
 &systemschema.SystemSchemaProviderConfig {
 	WorkspaceId: *string,
@@ -1009,7 +1009,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.systemSchema.SystemSchemaProviderConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/systemschema"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/systemschema"
 
 systemschema.NewSystemSchemaProviderConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SystemSchemaProviderConfigOutputReference
 ```

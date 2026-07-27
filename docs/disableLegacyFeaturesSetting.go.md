@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/databricks/databrick
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.disableLegacyFeaturesSetting.DisableLegacyFeaturesSetting.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/disablelegacyfeaturessetting"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/disablelegacyfeaturessetting"
 
 disablelegacyfeaturessetting.NewDisableLegacyFeaturesSetting(scope Construct, id *string, config DisableLegacyFeaturesSettingConfig) DisableLegacyFeaturesSetting
 ```
@@ -454,7 +454,7 @@ func ResetSettingName()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-databricks.disableLegacyFeaturesSetting.DisableLegacyFeaturesSetting.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/disablelegacyfeaturessetting"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/disablelegacyfeaturessetting"
 
 disablelegacyfeaturessetting.DisableLegacyFeaturesSetting_IsConstruct(x interface{}) *bool
 ```
@@ -486,7 +486,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-databricks.disableLegacyFeaturesSetting.DisableLegacyFeaturesSetting.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/disablelegacyfeaturessetting"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/disablelegacyfeaturessetting"
 
 disablelegacyfeaturessetting.DisableLegacyFeaturesSetting_IsTerraformElement(x interface{}) *bool
 ```
@@ -500,7 +500,7 @@ disablelegacyfeaturessetting.DisableLegacyFeaturesSetting_IsTerraformElement(x i
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-databricks.disableLegacyFeaturesSetting.DisableLegacyFeaturesSetting.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/disablelegacyfeaturessetting"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/disablelegacyfeaturessetting"
 
 disablelegacyfeaturessetting.DisableLegacyFeaturesSetting_IsTerraformResource(x interface{}) *bool
 ```
@@ -514,7 +514,7 @@ disablelegacyfeaturessetting.DisableLegacyFeaturesSetting_IsTerraformResource(x 
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-databricks.disableLegacyFeaturesSetting.DisableLegacyFeaturesSetting.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/disablelegacyfeaturessetting"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/disablelegacyfeaturessetting"
 
 disablelegacyfeaturessetting.DisableLegacyFeaturesSetting_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -853,7 +853,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.disableLegacyFeaturesSetting.DisableLegacyFeaturesSettingConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/disablelegacyfeaturessetting"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/disablelegacyfeaturessetting"
 
 &disablelegacyfeaturessetting.DisableLegacyFeaturesSettingConfig {
 	Connection: interface{},
@@ -863,10 +863,10 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/disablel
 	Lifecycle: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle,
 	Provider: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider,
 	Provisioners: *[]interface{},
-	DisableLegacyFeatures: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18.disableLegacyFeaturesSetting.DisableLegacyFeaturesSettingDisableLegacyFeatures,
+	DisableLegacyFeatures: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.disableLegacyFeaturesSetting.DisableLegacyFeaturesSettingDisableLegacyFeatures,
 	Etag: *string,
 	Id: *string,
-	ProviderConfig: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18.disableLegacyFeaturesSetting.DisableLegacyFeaturesSettingProviderConfig,
+	ProviderConfig: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.disableLegacyFeaturesSetting.DisableLegacyFeaturesSettingProviderConfig,
 	SettingName: *string,
 }
 ```
@@ -1032,7 +1032,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.disableLegacyFeaturesSetting.DisableLegacyFeaturesSettingDisableLegacyFeatures.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/disablelegacyfeaturessetting"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/disablelegacyfeaturessetting"
 
 &disablelegacyfeaturessetting.DisableLegacyFeaturesSettingDisableLegacyFeatures {
 	Value: interface{},
@@ -1064,7 +1064,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.disableLegacyFeaturesSetting.DisableLegacyFeaturesSettingProviderConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/disablelegacyfeaturessetting"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/disablelegacyfeaturessetting"
 
 &disablelegacyfeaturessetting.DisableLegacyFeaturesSettingProviderConfig {
 	WorkspaceId: *string,
@@ -1098,7 +1098,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.disableLegacyFeaturesSetting.DisableLegacyFeaturesSettingDisableLegacyFeaturesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/disablelegacyfeaturessetting"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/disablelegacyfeaturessetting"
 
 disablelegacyfeaturessetting.NewDisableLegacyFeaturesSettingDisableLegacyFeaturesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DisableLegacyFeaturesSettingDisableLegacyFeaturesOutputReference
 ```
@@ -1369,7 +1369,7 @@ func InternalValue() DisableLegacyFeaturesSettingDisableLegacyFeatures
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.disableLegacyFeaturesSetting.DisableLegacyFeaturesSettingProviderConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/disablelegacyfeaturessetting"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/disablelegacyfeaturessetting"
 
 disablelegacyfeaturessetting.NewDisableLegacyFeaturesSettingProviderConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DisableLegacyFeaturesSettingProviderConfigOutputReference
 ```

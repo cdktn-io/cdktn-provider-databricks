@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/databricks/databrick
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.disasterRecoveryFailoverGroup.DisasterRecoveryFailoverGroup.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/disasterrecoveryfailovergroup"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/disasterrecoveryfailovergroup"
 
 disasterrecoveryfailovergroup.NewDisasterRecoveryFailoverGroup(scope Construct, id *string, config DisasterRecoveryFailoverGroupConfig) DisasterRecoveryFailoverGroup
 ```
@@ -433,7 +433,7 @@ func ResetUnityCatalogAssets()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-databricks.disasterRecoveryFailoverGroup.DisasterRecoveryFailoverGroup.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/disasterrecoveryfailovergroup"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/disasterrecoveryfailovergroup"
 
 disasterrecoveryfailovergroup.DisasterRecoveryFailoverGroup_IsConstruct(x interface{}) *bool
 ```
@@ -465,7 +465,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-databricks.disasterRecoveryFailoverGroup.DisasterRecoveryFailoverGroup.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/disasterrecoveryfailovergroup"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/disasterrecoveryfailovergroup"
 
 disasterrecoveryfailovergroup.DisasterRecoveryFailoverGroup_IsTerraformElement(x interface{}) *bool
 ```
@@ -479,7 +479,7 @@ disasterrecoveryfailovergroup.DisasterRecoveryFailoverGroup_IsTerraformElement(x
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-databricks.disasterRecoveryFailoverGroup.DisasterRecoveryFailoverGroup.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/disasterrecoveryfailovergroup"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/disasterrecoveryfailovergroup"
 
 disasterrecoveryfailovergroup.DisasterRecoveryFailoverGroup_IsTerraformResource(x interface{}) *bool
 ```
@@ -493,7 +493,7 @@ disasterrecoveryfailovergroup.DisasterRecoveryFailoverGroup_IsTerraformResource(
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-databricks.disasterRecoveryFailoverGroup.DisasterRecoveryFailoverGroup.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/disasterrecoveryfailovergroup"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/disasterrecoveryfailovergroup"
 
 disasterrecoveryfailovergroup.DisasterRecoveryFailoverGroup_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -931,7 +931,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.disasterRecoveryFailoverGroup.DisasterRecoveryFailoverGroupConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/disasterrecoveryfailovergroup"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/disasterrecoveryfailovergroup"
 
 &disasterrecoveryfailovergroup.DisasterRecoveryFailoverGroupConfig {
 	Connection: interface{},
@@ -946,7 +946,7 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/disaster
 	Parent: *string,
 	Regions: *[]*string,
 	WorkspaceSets: interface{},
-	UnityCatalogAssets: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18.disasterRecoveryFailoverGroup.DisasterRecoveryFailoverGroupUnityCatalogAssets,
+	UnityCatalogAssets: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.disasterRecoveryFailoverGroup.DisasterRecoveryFailoverGroupUnityCatalogAssets,
 }
 ```
 
@@ -1117,7 +1117,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.disasterRecoveryFailoverGroup.DisasterRecoveryFailoverGroupUnityCatalogAssets.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/disasterrecoveryfailovergroup"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/disasterrecoveryfailovergroup"
 
 &disasterrecoveryfailovergroup.DisasterRecoveryFailoverGroupUnityCatalogAssets {
 	Catalogs: interface{},
@@ -1177,7 +1177,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.disasterRecoveryFailoverGroup.DisasterRecoveryFailoverGroupUnityCatalogAssetsCatalogs.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/disasterrecoveryfailovergroup"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/disasterrecoveryfailovergroup"
 
 &disasterrecoveryfailovergroup.DisasterRecoveryFailoverGroupUnityCatalogAssetsCatalogs {
 	Name: *string,
@@ -1209,7 +1209,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.disasterRecoveryFailoverGroup.DisasterRecoveryFailoverGroupUnityCatalogAssetsLocationMappings.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/disasterrecoveryfailovergroup"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/disasterrecoveryfailovergroup"
 
 &disasterrecoveryfailovergroup.DisasterRecoveryFailoverGroupUnityCatalogAssetsLocationMappings {
 	Name: *string,
@@ -1255,7 +1255,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.disasterRecoveryFailoverGroup.DisasterRecoveryFailoverGroupUnityCatalogAssetsLocationMappingsUriByRegion.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/disasterrecoveryfailovergroup"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/disasterrecoveryfailovergroup"
 
 &disasterrecoveryfailovergroup.DisasterRecoveryFailoverGroupUnityCatalogAssetsLocationMappingsUriByRegion {
 	Region: *string,
@@ -1301,7 +1301,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.disasterRecoveryFailoverGroup.DisasterRecoveryFailoverGroupWorkspaceSets.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/disasterrecoveryfailovergroup"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/disasterrecoveryfailovergroup"
 
 &disasterrecoveryfailovergroup.DisasterRecoveryFailoverGroupWorkspaceSets {
 	Name: *string,
@@ -1377,7 +1377,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.disasterRecoveryFailoverGroup.DisasterRecoveryFailoverGroupUnityCatalogAssetsCatalogsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/disasterrecoveryfailovergroup"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/disasterrecoveryfailovergroup"
 
 disasterrecoveryfailovergroup.NewDisasterRecoveryFailoverGroupUnityCatalogAssetsCatalogsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DisasterRecoveryFailoverGroupUnityCatalogAssetsCatalogsList
 ```
@@ -1537,7 +1537,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.disasterRecoveryFailoverGroup.DisasterRecoveryFailoverGroupUnityCatalogAssetsCatalogsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/disasterrecoveryfailovergroup"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/disasterrecoveryfailovergroup"
 
 disasterrecoveryfailovergroup.NewDisasterRecoveryFailoverGroupUnityCatalogAssetsCatalogsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DisasterRecoveryFailoverGroupUnityCatalogAssetsCatalogsOutputReference
 ```
@@ -1826,7 +1826,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.disasterRecoveryFailoverGroup.DisasterRecoveryFailoverGroupUnityCatalogAssetsLocationMappingsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/disasterrecoveryfailovergroup"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/disasterrecoveryfailovergroup"
 
 disasterrecoveryfailovergroup.NewDisasterRecoveryFailoverGroupUnityCatalogAssetsLocationMappingsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DisasterRecoveryFailoverGroupUnityCatalogAssetsLocationMappingsList
 ```
@@ -1986,7 +1986,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.disasterRecoveryFailoverGroup.DisasterRecoveryFailoverGroupUnityCatalogAssetsLocationMappingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/disasterrecoveryfailovergroup"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/disasterrecoveryfailovergroup"
 
 disasterrecoveryfailovergroup.NewDisasterRecoveryFailoverGroupUnityCatalogAssetsLocationMappingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DisasterRecoveryFailoverGroupUnityCatalogAssetsLocationMappingsOutputReference
 ```
@@ -2310,7 +2310,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.disasterRecoveryFailoverGroup.DisasterRecoveryFailoverGroupUnityCatalogAssetsLocationMappingsUriByRegionList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/disasterrecoveryfailovergroup"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/disasterrecoveryfailovergroup"
 
 disasterrecoveryfailovergroup.NewDisasterRecoveryFailoverGroupUnityCatalogAssetsLocationMappingsUriByRegionList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DisasterRecoveryFailoverGroupUnityCatalogAssetsLocationMappingsUriByRegionList
 ```
@@ -2470,7 +2470,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.disasterRecoveryFailoverGroup.DisasterRecoveryFailoverGroupUnityCatalogAssetsLocationMappingsUriByRegionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/disasterrecoveryfailovergroup"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/disasterrecoveryfailovergroup"
 
 disasterrecoveryfailovergroup.NewDisasterRecoveryFailoverGroupUnityCatalogAssetsLocationMappingsUriByRegionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DisasterRecoveryFailoverGroupUnityCatalogAssetsLocationMappingsUriByRegionOutputReference
 ```
@@ -2781,7 +2781,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.disasterRecoveryFailoverGroup.DisasterRecoveryFailoverGroupUnityCatalogAssetsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/disasterrecoveryfailovergroup"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/disasterrecoveryfailovergroup"
 
 disasterrecoveryfailovergroup.NewDisasterRecoveryFailoverGroupUnityCatalogAssetsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DisasterRecoveryFailoverGroupUnityCatalogAssetsOutputReference
 ```
@@ -3129,7 +3129,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.disasterRecoveryFailoverGroup.DisasterRecoveryFailoverGroupWorkspaceSetsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/disasterrecoveryfailovergroup"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/disasterrecoveryfailovergroup"
 
 disasterrecoveryfailovergroup.NewDisasterRecoveryFailoverGroupWorkspaceSetsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DisasterRecoveryFailoverGroupWorkspaceSetsList
 ```
@@ -3289,7 +3289,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.disasterRecoveryFailoverGroup.DisasterRecoveryFailoverGroupWorkspaceSetsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/disasterrecoveryfailovergroup"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/disasterrecoveryfailovergroup"
 
 disasterrecoveryfailovergroup.NewDisasterRecoveryFailoverGroupWorkspaceSetsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DisasterRecoveryFailoverGroupWorkspaceSetsOutputReference
 ```

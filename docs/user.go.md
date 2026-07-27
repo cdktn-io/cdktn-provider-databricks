@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/databricks/databrick
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.user.User.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/user"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/user"
 
 user.NewUser(scope Construct, id *string, config UserConfig) User
 ```
@@ -539,7 +539,7 @@ func ResetWorkspaceConsume()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-databricks.user.User.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/user"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/user"
 
 user.User_IsConstruct(x interface{}) *bool
 ```
@@ -571,7 +571,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-databricks.user.User.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/user"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/user"
 
 user.User_IsTerraformElement(x interface{}) *bool
 ```
@@ -585,7 +585,7 @@ user.User_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-databricks.user.User.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/user"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/user"
 
 user.User_IsTerraformResource(x interface{}) *bool
 ```
@@ -599,7 +599,7 @@ user.User_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-databricks.user.User.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/user"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/user"
 
 user.User_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1246,7 +1246,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.user.UserConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/user"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/user"
 
 &user.UserConfig {
 	Connection: interface{},
@@ -1271,7 +1271,7 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/user"
 	ForceDeleteRepos: interface{},
 	Home: *string,
 	Id: *string,
-	ProviderConfig: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18.user.UserProviderConfig,
+	ProviderConfig: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.user.UserProviderConfig,
 	Repos: *string,
 	WorkspaceAccess: interface{},
 	WorkspaceConsume: interface{},
@@ -1623,7 +1623,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.user.UserProviderConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/user"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/user"
 
 &user.UserProviderConfig {
 	WorkspaceId: *string,
@@ -1657,7 +1657,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.user.UserProviderConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/user"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/user"
 
 user.NewUserProviderConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) UserProviderConfigOutputReference
 ```

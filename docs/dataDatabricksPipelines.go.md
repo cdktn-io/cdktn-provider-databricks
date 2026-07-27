@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/databricks/databrick
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksPipelines.DataDatabricksPipelines.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabrickspipelines"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabrickspipelines"
 
 datadatabrickspipelines.NewDataDatabricksPipelines(scope Construct, id *string, config DataDatabricksPipelinesConfig) DataDatabricksPipelines
 ```
@@ -339,7 +339,7 @@ func ResetProviderConfig()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-databricks.dataDatabricksPipelines.DataDatabricksPipelines.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabrickspipelines"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabrickspipelines"
 
 datadatabrickspipelines.DataDatabricksPipelines_IsConstruct(x interface{}) *bool
 ```
@@ -371,7 +371,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-databricks.dataDatabricksPipelines.DataDatabricksPipelines.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabrickspipelines"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabrickspipelines"
 
 datadatabrickspipelines.DataDatabricksPipelines_IsTerraformElement(x interface{}) *bool
 ```
@@ -385,7 +385,7 @@ datadatabrickspipelines.DataDatabricksPipelines_IsTerraformElement(x interface{}
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-databricks.dataDatabricksPipelines.DataDatabricksPipelines.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabrickspipelines"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabrickspipelines"
 
 datadatabrickspipelines.DataDatabricksPipelines_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -399,7 +399,7 @@ datadatabrickspipelines.DataDatabricksPipelines_IsTerraformDataSource(x interfac
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-databricks.dataDatabricksPipelines.DataDatabricksPipelines.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabrickspipelines"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabrickspipelines"
 
 datadatabrickspipelines.DataDatabricksPipelines_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -694,7 +694,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksPipelines.DataDatabricksPipelinesConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabrickspipelines"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabrickspipelines"
 
 &datadatabrickspipelines.DataDatabricksPipelinesConfig {
 	Connection: interface{},
@@ -707,7 +707,7 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadata
 	Id: *string,
 	Ids: *[]*string,
 	PipelineName: *string,
-	ProviderConfig: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18.dataDatabricksPipelines.DataDatabricksPipelinesProviderConfig,
+	ProviderConfig: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.dataDatabricksPipelines.DataDatabricksPipelinesProviderConfig,
 }
 ```
 
@@ -857,7 +857,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksPipelines.DataDatabricksPipelinesProviderConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabrickspipelines"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabrickspipelines"
 
 &datadatabrickspipelines.DataDatabricksPipelinesProviderConfig {
 	WorkspaceId: *string,
@@ -891,7 +891,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksPipelines.DataDatabricksPipelinesProviderConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabrickspipelines"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabrickspipelines"
 
 datadatabrickspipelines.NewDataDatabricksPipelinesProviderConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksPipelinesProviderConfigOutputReference
 ```

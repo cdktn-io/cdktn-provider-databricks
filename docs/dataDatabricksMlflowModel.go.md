@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/databricks/databrick
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksMlflowModel.DataDatabricksMlflowModel.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksmlflowmodel"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksmlflowmodel"
 
 datadatabricksmlflowmodel.NewDataDatabricksMlflowModel(scope Construct, id *string, config DataDatabricksMlflowModelConfig) DataDatabricksMlflowModel
 ```
@@ -379,7 +379,7 @@ func ResetUserId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-databricks.dataDatabricksMlflowModel.DataDatabricksMlflowModel.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksmlflowmodel"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksmlflowmodel"
 
 datadatabricksmlflowmodel.DataDatabricksMlflowModel_IsConstruct(x interface{}) *bool
 ```
@@ -411,7 +411,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-databricks.dataDatabricksMlflowModel.DataDatabricksMlflowModel.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksmlflowmodel"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksmlflowmodel"
 
 datadatabricksmlflowmodel.DataDatabricksMlflowModel_IsTerraformElement(x interface{}) *bool
 ```
@@ -425,7 +425,7 @@ datadatabricksmlflowmodel.DataDatabricksMlflowModel_IsTerraformElement(x interfa
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-databricks.dataDatabricksMlflowModel.DataDatabricksMlflowModel.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksmlflowmodel"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksmlflowmodel"
 
 datadatabricksmlflowmodel.DataDatabricksMlflowModel_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -439,7 +439,7 @@ datadatabricksmlflowmodel.DataDatabricksMlflowModel_IsTerraformDataSource(x inte
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-databricks.dataDatabricksMlflowModel.DataDatabricksMlflowModel.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksmlflowmodel"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksmlflowmodel"
 
 datadatabricksmlflowmodel.DataDatabricksMlflowModel_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -811,7 +811,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksMlflowModel.DataDatabricksMlflowModelConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksmlflowmodel"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksmlflowmodel"
 
 &datadatabricksmlflowmodel.DataDatabricksMlflowModelConfig {
 	Connection: interface{},
@@ -825,7 +825,7 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadata
 	Description: *string,
 	LatestVersions: interface{},
 	PermissionLevel: *string,
-	ProviderConfig: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18.dataDatabricksMlflowModel.DataDatabricksMlflowModelProviderConfig,
+	ProviderConfig: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.dataDatabricksMlflowModel.DataDatabricksMlflowModelProviderConfig,
 	Tags: interface{},
 	UserId: *string,
 }
@@ -1017,7 +1017,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksMlflowModel.DataDatabricksMlflowModelLatestVersions.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksmlflowmodel"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksmlflowmodel"
 
 &datadatabricksmlflowmodel.DataDatabricksMlflowModelLatestVersions {
 	CreationTimestamp: *f64,
@@ -1219,7 +1219,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksMlflowModel.DataDatabricksMlflowModelLatestVersionsTags.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksmlflowmodel"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksmlflowmodel"
 
 &datadatabricksmlflowmodel.DataDatabricksMlflowModelLatestVersionsTags {
 	Key: *string,
@@ -1265,7 +1265,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksMlflowModel.DataDatabricksMlflowModelProviderConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksmlflowmodel"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksmlflowmodel"
 
 &datadatabricksmlflowmodel.DataDatabricksMlflowModelProviderConfig {
 	WorkspaceId: *string,
@@ -1297,7 +1297,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksMlflowModel.DataDatabricksMlflowModelTags.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksmlflowmodel"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksmlflowmodel"
 
 &datadatabricksmlflowmodel.DataDatabricksMlflowModelTags {
 	Key: *string,
@@ -1345,7 +1345,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksMlflowModel.DataDatabricksMlflowModelLatestVersionsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksmlflowmodel"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksmlflowmodel"
 
 datadatabricksmlflowmodel.NewDataDatabricksMlflowModelLatestVersionsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDatabricksMlflowModelLatestVersionsList
 ```
@@ -1505,7 +1505,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksMlflowModel.DataDatabricksMlflowModelLatestVersionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksmlflowmodel"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksmlflowmodel"
 
 datadatabricksmlflowmodel.NewDataDatabricksMlflowModelLatestVersionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataDatabricksMlflowModelLatestVersionsOutputReference
 ```
@@ -2162,7 +2162,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksMlflowModel.DataDatabricksMlflowModelLatestVersionsTagsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksmlflowmodel"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksmlflowmodel"
 
 datadatabricksmlflowmodel.NewDataDatabricksMlflowModelLatestVersionsTagsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDatabricksMlflowModelLatestVersionsTagsList
 ```
@@ -2322,7 +2322,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksMlflowModel.DataDatabricksMlflowModelLatestVersionsTagsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksmlflowmodel"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksmlflowmodel"
 
 datadatabricksmlflowmodel.NewDataDatabricksMlflowModelLatestVersionsTagsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataDatabricksMlflowModelLatestVersionsTagsOutputReference
 ```
@@ -2647,7 +2647,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksMlflowModel.DataDatabricksMlflowModelProviderConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksmlflowmodel"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksmlflowmodel"
 
 datadatabricksmlflowmodel.NewDataDatabricksMlflowModelProviderConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksMlflowModelProviderConfigOutputReference
 ```
@@ -2925,7 +2925,7 @@ func InternalValue() DataDatabricksMlflowModelProviderConfig
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksMlflowModel.DataDatabricksMlflowModelTagsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksmlflowmodel"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksmlflowmodel"
 
 datadatabricksmlflowmodel.NewDataDatabricksMlflowModelTagsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDatabricksMlflowModelTagsList
 ```
@@ -3085,7 +3085,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksMlflowModel.DataDatabricksMlflowModelTagsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksmlflowmodel"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksmlflowmodel"
 
 datadatabricksmlflowmodel.NewDataDatabricksMlflowModelTagsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataDatabricksMlflowModelTagsOutputReference
 ```

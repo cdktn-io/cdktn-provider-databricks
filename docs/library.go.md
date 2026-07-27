@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/databricks/databrick
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.library.Library.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/library"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/library"
 
 library.NewLibrary(scope Construct, id *string, config LibraryConfig) Library
 ```
@@ -515,7 +515,7 @@ func ResetWhl()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-databricks.library.Library.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/library"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/library"
 
 library.Library_IsConstruct(x interface{}) *bool
 ```
@@ -547,7 +547,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-databricks.library.Library.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/library"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/library"
 
 library.Library_IsTerraformElement(x interface{}) *bool
 ```
@@ -561,7 +561,7 @@ library.Library_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-databricks.library.Library.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/library"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/library"
 
 library.Library_IsTerraformResource(x interface{}) *bool
 ```
@@ -575,7 +575,7 @@ library.Library_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-databricks.library.Library.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/library"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/library"
 
 library.Library_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1024,7 +1024,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.library.LibraryConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/library"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/library"
 
 &library.LibraryConfig {
 	Connection: interface{},
@@ -1277,7 +1277,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.library.LibraryCran.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/library"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/library"
 
 &library.LibraryCran {
 	Package: *string,
@@ -1323,7 +1323,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.library.LibraryMaven.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/library"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/library"
 
 &library.LibraryMaven {
 	Coordinates: *string,
@@ -1383,7 +1383,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.library.LibraryProviderConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/library"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/library"
 
 &library.LibraryProviderConfig {
 	WorkspaceId: *string,
@@ -1415,7 +1415,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.library.LibraryPypi.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/library"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/library"
 
 &library.LibraryPypi {
 	Package: *string,
@@ -1463,7 +1463,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.library.LibraryCranList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/library"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/library"
 
 library.NewLibraryCranList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) LibraryCranList
 ```
@@ -1623,7 +1623,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.library.LibraryCranOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/library"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/library"
 
 library.NewLibraryCranOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) LibraryCranOutputReference
 ```
@@ -1941,7 +1941,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.library.LibraryMavenList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/library"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/library"
 
 library.NewLibraryMavenList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) LibraryMavenList
 ```
@@ -2101,7 +2101,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.library.LibraryMavenOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/library"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/library"
 
 library.NewLibraryMavenOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) LibraryMavenOutputReference
 ```
@@ -2448,7 +2448,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.library.LibraryProviderConfigList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/library"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/library"
 
 library.NewLibraryProviderConfigList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) LibraryProviderConfigList
 ```
@@ -2608,7 +2608,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.library.LibraryProviderConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/library"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/library"
 
 library.NewLibraryProviderConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) LibraryProviderConfigOutputReference
 ```
@@ -2897,7 +2897,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.library.LibraryPypiList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/library"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/library"
 
 library.NewLibraryPypiList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) LibraryPypiList
 ```
@@ -3057,7 +3057,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.library.LibraryPypiOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/library"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/library"
 
 library.NewLibraryPypiOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) LibraryPypiOutputReference
 ```

@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/databricks/databrick
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.grant.Grant.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/grant"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/grant"
 
 grant.NewGrant(scope Construct, id *string, config GrantConfig) Grant
 ```
@@ -525,7 +525,7 @@ func ResetVolume()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-databricks.grant.Grant.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/grant"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/grant"
 
 grant.Grant_IsConstruct(x interface{}) *bool
 ```
@@ -557,7 +557,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-databricks.grant.Grant.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/grant"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/grant"
 
 grant.Grant_IsTerraformElement(x interface{}) *bool
 ```
@@ -571,7 +571,7 @@ grant.Grant_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-databricks.grant.Grant.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/grant"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/grant"
 
 grant.Grant_IsTerraformResource(x interface{}) *bool
 ```
@@ -585,7 +585,7 @@ grant.Grant_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-databricks.grant.Grant.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/grant"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/grant"
 
 grant.Grant_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1210,7 +1210,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.grant.GrantConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/grant"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/grant"
 
 &grant.GrantConfig {
 	Connection: interface{},
@@ -1231,7 +1231,7 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/grant"
 	Metastore: *string,
 	Model: *string,
 	Pipeline: *string,
-	ProviderConfig: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18.grant.GrantProviderConfig,
+	ProviderConfig: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.grant.GrantProviderConfig,
 	Recipient: *string,
 	Schema: *string,
 	Share: *string,
@@ -1569,7 +1569,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.grant.GrantProviderConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/grant"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/grant"
 
 &grant.GrantProviderConfig {
 	WorkspaceId: *string,
@@ -1603,7 +1603,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.grant.GrantProviderConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/grant"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/grant"
 
 grant.NewGrantProviderConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GrantProviderConfigOutputReference
 ```

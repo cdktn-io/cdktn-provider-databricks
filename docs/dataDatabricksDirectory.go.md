@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/databricks/databrick
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksDirectory.DataDatabricksDirectory.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksdirectory"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksdirectory"
 
 datadatabricksdirectory.NewDataDatabricksDirectory(scope Construct, id *string, config DataDatabricksDirectoryConfig) DataDatabricksDirectory
 ```
@@ -339,7 +339,7 @@ func ResetWorkspacePath()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-databricks.dataDatabricksDirectory.DataDatabricksDirectory.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksdirectory"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksdirectory"
 
 datadatabricksdirectory.DataDatabricksDirectory_IsConstruct(x interface{}) *bool
 ```
@@ -371,7 +371,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-databricks.dataDatabricksDirectory.DataDatabricksDirectory.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksdirectory"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksdirectory"
 
 datadatabricksdirectory.DataDatabricksDirectory_IsTerraformElement(x interface{}) *bool
 ```
@@ -385,7 +385,7 @@ datadatabricksdirectory.DataDatabricksDirectory_IsTerraformElement(x interface{}
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-databricks.dataDatabricksDirectory.DataDatabricksDirectory.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksdirectory"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksdirectory"
 
 datadatabricksdirectory.DataDatabricksDirectory_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -399,7 +399,7 @@ datadatabricksdirectory.DataDatabricksDirectory_IsTerraformDataSource(x interfac
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-databricks.dataDatabricksDirectory.DataDatabricksDirectory.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksdirectory"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksdirectory"
 
 datadatabricksdirectory.DataDatabricksDirectory_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -716,7 +716,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksDirectory.DataDatabricksDirectoryConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksdirectory"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksdirectory"
 
 &datadatabricksdirectory.DataDatabricksDirectoryConfig {
 	Connection: interface{},
@@ -729,7 +729,7 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadata
 	Path: *string,
 	Id: *string,
 	ObjectId: *f64,
-	ProviderConfig: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18.dataDatabricksDirectory.DataDatabricksDirectoryProviderConfig,
+	ProviderConfig: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.dataDatabricksDirectory.DataDatabricksDirectoryProviderConfig,
 	WorkspacePath: *string,
 }
 ```
@@ -893,7 +893,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksDirectory.DataDatabricksDirectoryProviderConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksdirectory"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksdirectory"
 
 &datadatabricksdirectory.DataDatabricksDirectoryProviderConfig {
 	WorkspaceId: *string,
@@ -927,7 +927,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksDirectory.DataDatabricksDirectoryProviderConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksdirectory"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksdirectory"
 
 datadatabricksdirectory.NewDataDatabricksDirectoryProviderConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksDirectoryProviderConfigOutputReference
 ```

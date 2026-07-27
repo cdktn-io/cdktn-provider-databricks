@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/databricks/databrick
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.instanceProfile.InstanceProfile.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/instanceprofile"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/instanceprofile"
 
 instanceprofile.NewInstanceProfile(scope Construct, id *string, config InstanceProfileConfig) InstanceProfile
 ```
@@ -448,7 +448,7 @@ func ResetSkipValidation()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-databricks.instanceProfile.InstanceProfile.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/instanceprofile"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/instanceprofile"
 
 instanceprofile.InstanceProfile_IsConstruct(x interface{}) *bool
 ```
@@ -480,7 +480,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-databricks.instanceProfile.InstanceProfile.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/instanceprofile"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/instanceprofile"
 
 instanceprofile.InstanceProfile_IsTerraformElement(x interface{}) *bool
 ```
@@ -494,7 +494,7 @@ instanceprofile.InstanceProfile_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-databricks.instanceProfile.InstanceProfile.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/instanceprofile"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/instanceprofile"
 
 instanceprofile.InstanceProfile_IsTerraformResource(x interface{}) *bool
 ```
@@ -508,7 +508,7 @@ instanceprofile.InstanceProfile_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-databricks.instanceProfile.InstanceProfile.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/instanceprofile"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/instanceprofile"
 
 instanceprofile.InstanceProfile_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -869,7 +869,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.instanceProfile.InstanceProfileConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/instanceprofile"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/instanceprofile"
 
 &instanceprofile.InstanceProfileConfig {
 	Connection: interface{},
@@ -883,7 +883,7 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/instance
 	IamRoleArn: *string,
 	Id: *string,
 	IsMetaInstanceProfile: interface{},
-	ProviderConfig: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18.instanceProfile.InstanceProfileProviderConfig,
+	ProviderConfig: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.instanceProfile.InstanceProfileProviderConfig,
 	SkipValidation: interface{},
 }
 ```
@@ -1060,7 +1060,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.instanceProfile.InstanceProfileProviderConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/instanceprofile"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/instanceprofile"
 
 &instanceprofile.InstanceProfileProviderConfig {
 	WorkspaceId: *string,
@@ -1094,7 +1094,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.instanceProfile.InstanceProfileProviderConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/instanceprofile"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/instanceprofile"
 
 instanceprofile.NewInstanceProfileProviderConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) InstanceProfileProviderConfigOutputReference
 ```
