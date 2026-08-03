@@ -4,7 +4,7 @@
 
 ### Endpoint <a name="Endpoint" id="@cdktn/provider-databricks.endpoint.Endpoint"></a>
 
-Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/endpoint databricks_endpoint}.
+Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/endpoint databricks_endpoint}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.endpoint.Endpoint.Initializer"></a>
 
@@ -24,7 +24,9 @@ endpoint.Endpoint(
   display_name: str,
   parent: str,
   region: str,
-  azure_private_endpoint_info: EndpointAzurePrivateEndpointInfo = None
+  aws_vpc_endpoint_info: EndpointAwsVpcEndpointInfo = None,
+  azure_private_endpoint_info: EndpointAzurePrivateEndpointInfo = None,
+  gcp_psc_endpoint_info: EndpointGcpPscEndpointInfo = None
 )
 ```
 
@@ -39,10 +41,12 @@ endpoint.Endpoint(
 | <code><a href="#@cdktn/provider-databricks.endpoint.Endpoint.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.endpoint.Endpoint.Initializer.parameter.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.endpoint.Endpoint.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-databricks.endpoint.Endpoint.Initializer.parameter.displayName">display_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/endpoint#display_name Endpoint#display_name}. |
-| <code><a href="#@cdktn/provider-databricks.endpoint.Endpoint.Initializer.parameter.parent">parent</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/endpoint#parent Endpoint#parent}. |
-| <code><a href="#@cdktn/provider-databricks.endpoint.Endpoint.Initializer.parameter.region">region</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/endpoint#region Endpoint#region}. |
-| <code><a href="#@cdktn/provider-databricks.endpoint.Endpoint.Initializer.parameter.azurePrivateEndpointInfo">azure_private_endpoint_info</a></code> | <code><a href="#@cdktn/provider-databricks.endpoint.EndpointAzurePrivateEndpointInfo">EndpointAzurePrivateEndpointInfo</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/endpoint#azure_private_endpoint_info Endpoint#azure_private_endpoint_info}. |
+| <code><a href="#@cdktn/provider-databricks.endpoint.Endpoint.Initializer.parameter.displayName">display_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/endpoint#display_name Endpoint#display_name}. |
+| <code><a href="#@cdktn/provider-databricks.endpoint.Endpoint.Initializer.parameter.parent">parent</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/endpoint#parent Endpoint#parent}. |
+| <code><a href="#@cdktn/provider-databricks.endpoint.Endpoint.Initializer.parameter.region">region</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/endpoint#region Endpoint#region}. |
+| <code><a href="#@cdktn/provider-databricks.endpoint.Endpoint.Initializer.parameter.awsVpcEndpointInfo">aws_vpc_endpoint_info</a></code> | <code><a href="#@cdktn/provider-databricks.endpoint.EndpointAwsVpcEndpointInfo">EndpointAwsVpcEndpointInfo</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/endpoint#aws_vpc_endpoint_info Endpoint#aws_vpc_endpoint_info}. |
+| <code><a href="#@cdktn/provider-databricks.endpoint.Endpoint.Initializer.parameter.azurePrivateEndpointInfo">azure_private_endpoint_info</a></code> | <code><a href="#@cdktn/provider-databricks.endpoint.EndpointAzurePrivateEndpointInfo">EndpointAzurePrivateEndpointInfo</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/endpoint#azure_private_endpoint_info Endpoint#azure_private_endpoint_info}. |
+| <code><a href="#@cdktn/provider-databricks.endpoint.Endpoint.Initializer.parameter.gcpPscEndpointInfo">gcp_psc_endpoint_info</a></code> | <code><a href="#@cdktn/provider-databricks.endpoint.EndpointGcpPscEndpointInfo">EndpointGcpPscEndpointInfo</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/endpoint#gcp_psc_endpoint_info Endpoint#gcp_psc_endpoint_info}. |
 
 ---
 
@@ -110,7 +114,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/endpoint#display_name Endpoint#display_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/endpoint#display_name Endpoint#display_name}.
 
 ---
 
@@ -118,7 +122,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/endpoint#parent Endpoint#parent}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/endpoint#parent Endpoint#parent}.
 
 ---
 
@@ -126,7 +130,15 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/endpoint#region Endpoint#region}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/endpoint#region Endpoint#region}.
+
+---
+
+##### `aws_vpc_endpoint_info`<sup>Optional</sup> <a name="aws_vpc_endpoint_info" id="@cdktn/provider-databricks.endpoint.Endpoint.Initializer.parameter.awsVpcEndpointInfo"></a>
+
+- *Type:* <a href="#@cdktn/provider-databricks.endpoint.EndpointAwsVpcEndpointInfo">EndpointAwsVpcEndpointInfo</a>
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/endpoint#aws_vpc_endpoint_info Endpoint#aws_vpc_endpoint_info}.
 
 ---
 
@@ -134,7 +146,15 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* <a href="#@cdktn/provider-databricks.endpoint.EndpointAzurePrivateEndpointInfo">EndpointAzurePrivateEndpointInfo</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/endpoint#azure_private_endpoint_info Endpoint#azure_private_endpoint_info}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/endpoint#azure_private_endpoint_info Endpoint#azure_private_endpoint_info}.
+
+---
+
+##### `gcp_psc_endpoint_info`<sup>Optional</sup> <a name="gcp_psc_endpoint_info" id="@cdktn/provider-databricks.endpoint.Endpoint.Initializer.parameter.gcpPscEndpointInfo"></a>
+
+- *Type:* <a href="#@cdktn/provider-databricks.endpoint.EndpointGcpPscEndpointInfo">EndpointGcpPscEndpointInfo</a>
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/endpoint#gcp_psc_endpoint_info Endpoint#gcp_psc_endpoint_info}.
 
 ---
 
@@ -166,8 +186,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 | <code><a href="#@cdktn/provider-databricks.endpoint.Endpoint.moveFromId">move_from_id</a></code> | Move the resource corresponding to "id" to this resource. |
 | <code><a href="#@cdktn/provider-databricks.endpoint.Endpoint.moveTo">move_to</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktn/provider-databricks.endpoint.Endpoint.moveToId">move_to_id</a></code> | Moves this resource to the resource corresponding to "id". |
+| <code><a href="#@cdktn/provider-databricks.endpoint.Endpoint.putAwsVpcEndpointInfo">put_aws_vpc_endpoint_info</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.endpoint.Endpoint.putAzurePrivateEndpointInfo">put_azure_private_endpoint_info</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.endpoint.Endpoint.putGcpPscEndpointInfo">put_gcp_psc_endpoint_info</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.endpoint.Endpoint.resetAwsVpcEndpointInfo">reset_aws_vpc_endpoint_info</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.endpoint.Endpoint.resetAzurePrivateEndpointInfo">reset_azure_private_endpoint_info</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.endpoint.Endpoint.resetGcpPscEndpointInfo">reset_gcp_psc_endpoint_info</a></code> | *No description.* |
 
 ---
 
@@ -519,6 +543,22 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 
 ---
 
+##### `put_aws_vpc_endpoint_info` <a name="put_aws_vpc_endpoint_info" id="@cdktn/provider-databricks.endpoint.Endpoint.putAwsVpcEndpointInfo"></a>
+
+```python
+def put_aws_vpc_endpoint_info(
+  aws_vpc_endpoint_id: str
+) -> None
+```
+
+###### `aws_vpc_endpoint_id`<sup>Required</sup> <a name="aws_vpc_endpoint_id" id="@cdktn/provider-databricks.endpoint.Endpoint.putAwsVpcEndpointInfo.parameter.awsVpcEndpointId"></a>
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/endpoint#aws_vpc_endpoint_id Endpoint#aws_vpc_endpoint_id}.
+
+---
+
 ##### `put_azure_private_endpoint_info` <a name="put_azure_private_endpoint_info" id="@cdktn/provider-databricks.endpoint.Endpoint.putAzurePrivateEndpointInfo"></a>
 
 ```python
@@ -532,7 +572,7 @@ def put_azure_private_endpoint_info(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/endpoint#private_endpoint_name Endpoint#private_endpoint_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/endpoint#private_endpoint_name Endpoint#private_endpoint_name}.
 
 ---
 
@@ -540,14 +580,60 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/endpoint#private_endpoint_resource_guid Endpoint#private_endpoint_resource_guid}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/endpoint#private_endpoint_resource_guid Endpoint#private_endpoint_resource_guid}.
 
 ---
+
+##### `put_gcp_psc_endpoint_info` <a name="put_gcp_psc_endpoint_info" id="@cdktn/provider-databricks.endpoint.Endpoint.putGcpPscEndpointInfo"></a>
+
+```python
+def put_gcp_psc_endpoint_info(
+  endpoint_region: str,
+  project_id: str,
+  psc_endpoint: str
+) -> None
+```
+
+###### `endpoint_region`<sup>Required</sup> <a name="endpoint_region" id="@cdktn/provider-databricks.endpoint.Endpoint.putGcpPscEndpointInfo.parameter.endpointRegion"></a>
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/endpoint#endpoint_region Endpoint#endpoint_region}.
+
+---
+
+###### `project_id`<sup>Required</sup> <a name="project_id" id="@cdktn/provider-databricks.endpoint.Endpoint.putGcpPscEndpointInfo.parameter.projectId"></a>
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/endpoint#project_id Endpoint#project_id}.
+
+---
+
+###### `psc_endpoint`<sup>Required</sup> <a name="psc_endpoint" id="@cdktn/provider-databricks.endpoint.Endpoint.putGcpPscEndpointInfo.parameter.pscEndpoint"></a>
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/endpoint#psc_endpoint Endpoint#psc_endpoint}.
+
+---
+
+##### `reset_aws_vpc_endpoint_info` <a name="reset_aws_vpc_endpoint_info" id="@cdktn/provider-databricks.endpoint.Endpoint.resetAwsVpcEndpointInfo"></a>
+
+```python
+def reset_aws_vpc_endpoint_info() -> None
+```
 
 ##### `reset_azure_private_endpoint_info` <a name="reset_azure_private_endpoint_info" id="@cdktn/provider-databricks.endpoint.Endpoint.resetAzurePrivateEndpointInfo"></a>
 
 ```python
 def reset_azure_private_endpoint_info() -> None
+```
+
+##### `reset_gcp_psc_endpoint_info` <a name="reset_gcp_psc_endpoint_info" id="@cdktn/provider-databricks.endpoint.Endpoint.resetGcpPscEndpointInfo"></a>
+
+```python
+def reset_gcp_psc_endpoint_info() -> None
 ```
 
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
@@ -664,7 +750,7 @@ The construct id used in the generated config for the Endpoint to import.
 
 The id of the existing Endpoint that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/endpoint#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/endpoint#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -695,14 +781,18 @@ Refer to the {@link https://registry.terraform.io/providers/databricks/databrick
 | <code><a href="#@cdktn/provider-databricks.endpoint.Endpoint.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.endpoint.Endpoint.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.endpoint.Endpoint.property.accountId">account_id</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.endpoint.Endpoint.property.awsVpcEndpointInfo">aws_vpc_endpoint_info</a></code> | <code><a href="#@cdktn/provider-databricks.endpoint.EndpointAwsVpcEndpointInfoOutputReference">EndpointAwsVpcEndpointInfoOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.endpoint.Endpoint.property.azurePrivateEndpointInfo">azure_private_endpoint_info</a></code> | <code><a href="#@cdktn/provider-databricks.endpoint.EndpointAzurePrivateEndpointInfoOutputReference">EndpointAzurePrivateEndpointInfoOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.endpoint.Endpoint.property.createTime">create_time</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.endpoint.Endpoint.property.endpointId">endpoint_id</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.endpoint.Endpoint.property.gcpPscEndpointInfo">gcp_psc_endpoint_info</a></code> | <code><a href="#@cdktn/provider-databricks.endpoint.EndpointGcpPscEndpointInfoOutputReference">EndpointGcpPscEndpointInfoOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.endpoint.Endpoint.property.name">name</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.endpoint.Endpoint.property.state">state</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.endpoint.Endpoint.property.useCase">use_case</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.endpoint.Endpoint.property.awsVpcEndpointInfoInput">aws_vpc_endpoint_info_input</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-databricks.endpoint.EndpointAwsVpcEndpointInfo">EndpointAwsVpcEndpointInfo</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.endpoint.Endpoint.property.azurePrivateEndpointInfoInput">azure_private_endpoint_info_input</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-databricks.endpoint.EndpointAzurePrivateEndpointInfo">EndpointAzurePrivateEndpointInfo</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.endpoint.Endpoint.property.displayNameInput">display_name_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.endpoint.Endpoint.property.gcpPscEndpointInfoInput">gcp_psc_endpoint_info_input</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-databricks.endpoint.EndpointGcpPscEndpointInfo">EndpointGcpPscEndpointInfo</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.endpoint.Endpoint.property.parentInput">parent_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.endpoint.Endpoint.property.regionInput">region_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.endpoint.Endpoint.property.displayName">display_name</a></code> | <code>str</code> | *No description.* |
@@ -863,6 +953,16 @@ account_id: str
 
 ---
 
+##### `aws_vpc_endpoint_info`<sup>Required</sup> <a name="aws_vpc_endpoint_info" id="@cdktn/provider-databricks.endpoint.Endpoint.property.awsVpcEndpointInfo"></a>
+
+```python
+aws_vpc_endpoint_info: EndpointAwsVpcEndpointInfoOutputReference
+```
+
+- *Type:* <a href="#@cdktn/provider-databricks.endpoint.EndpointAwsVpcEndpointInfoOutputReference">EndpointAwsVpcEndpointInfoOutputReference</a>
+
+---
+
 ##### `azure_private_endpoint_info`<sup>Required</sup> <a name="azure_private_endpoint_info" id="@cdktn/provider-databricks.endpoint.Endpoint.property.azurePrivateEndpointInfo"></a>
 
 ```python
@@ -890,6 +990,16 @@ endpoint_id: str
 ```
 
 - *Type:* str
+
+---
+
+##### `gcp_psc_endpoint_info`<sup>Required</sup> <a name="gcp_psc_endpoint_info" id="@cdktn/provider-databricks.endpoint.Endpoint.property.gcpPscEndpointInfo"></a>
+
+```python
+gcp_psc_endpoint_info: EndpointGcpPscEndpointInfoOutputReference
+```
+
+- *Type:* <a href="#@cdktn/provider-databricks.endpoint.EndpointGcpPscEndpointInfoOutputReference">EndpointGcpPscEndpointInfoOutputReference</a>
 
 ---
 
@@ -923,6 +1033,16 @@ use_case: str
 
 ---
 
+##### `aws_vpc_endpoint_info_input`<sup>Optional</sup> <a name="aws_vpc_endpoint_info_input" id="@cdktn/provider-databricks.endpoint.Endpoint.property.awsVpcEndpointInfoInput"></a>
+
+```python
+aws_vpc_endpoint_info_input: IResolvable | EndpointAwsVpcEndpointInfo
+```
+
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-databricks.endpoint.EndpointAwsVpcEndpointInfo">EndpointAwsVpcEndpointInfo</a>
+
+---
+
 ##### `azure_private_endpoint_info_input`<sup>Optional</sup> <a name="azure_private_endpoint_info_input" id="@cdktn/provider-databricks.endpoint.Endpoint.property.azurePrivateEndpointInfoInput"></a>
 
 ```python
@@ -940,6 +1060,16 @@ display_name_input: str
 ```
 
 - *Type:* str
+
+---
+
+##### `gcp_psc_endpoint_info_input`<sup>Optional</sup> <a name="gcp_psc_endpoint_info_input" id="@cdktn/provider-databricks.endpoint.Endpoint.property.gcpPscEndpointInfoInput"></a>
+
+```python
+gcp_psc_endpoint_info_input: IResolvable | EndpointGcpPscEndpointInfo
+```
+
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-databricks.endpoint.EndpointGcpPscEndpointInfo">EndpointGcpPscEndpointInfo</a>
 
 ---
 
@@ -1013,6 +1143,38 @@ tfResourceType: str
 
 ## Structs <a name="Structs" id="Structs"></a>
 
+### EndpointAwsVpcEndpointInfo <a name="EndpointAwsVpcEndpointInfo" id="@cdktn/provider-databricks.endpoint.EndpointAwsVpcEndpointInfo"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-databricks.endpoint.EndpointAwsVpcEndpointInfo.Initializer"></a>
+
+```python
+from cdktn_provider_databricks import endpoint
+
+endpoint.EndpointAwsVpcEndpointInfo(
+  aws_vpc_endpoint_id: str
+)
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-databricks.endpoint.EndpointAwsVpcEndpointInfo.property.awsVpcEndpointId">aws_vpc_endpoint_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/endpoint#aws_vpc_endpoint_id Endpoint#aws_vpc_endpoint_id}. |
+
+---
+
+##### `aws_vpc_endpoint_id`<sup>Required</sup> <a name="aws_vpc_endpoint_id" id="@cdktn/provider-databricks.endpoint.EndpointAwsVpcEndpointInfo.property.awsVpcEndpointId"></a>
+
+```python
+aws_vpc_endpoint_id: str
+```
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/endpoint#aws_vpc_endpoint_id Endpoint#aws_vpc_endpoint_id}.
+
+---
+
 ### EndpointAzurePrivateEndpointInfo <a name="EndpointAzurePrivateEndpointInfo" id="@cdktn/provider-databricks.endpoint.EndpointAzurePrivateEndpointInfo"></a>
 
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.endpoint.EndpointAzurePrivateEndpointInfo.Initializer"></a>
@@ -1030,8 +1192,8 @@ endpoint.EndpointAzurePrivateEndpointInfo(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.endpoint.EndpointAzurePrivateEndpointInfo.property.privateEndpointName">private_endpoint_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/endpoint#private_endpoint_name Endpoint#private_endpoint_name}. |
-| <code><a href="#@cdktn/provider-databricks.endpoint.EndpointAzurePrivateEndpointInfo.property.privateEndpointResourceGuid">private_endpoint_resource_guid</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/endpoint#private_endpoint_resource_guid Endpoint#private_endpoint_resource_guid}. |
+| <code><a href="#@cdktn/provider-databricks.endpoint.EndpointAzurePrivateEndpointInfo.property.privateEndpointName">private_endpoint_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/endpoint#private_endpoint_name Endpoint#private_endpoint_name}. |
+| <code><a href="#@cdktn/provider-databricks.endpoint.EndpointAzurePrivateEndpointInfo.property.privateEndpointResourceGuid">private_endpoint_resource_guid</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/endpoint#private_endpoint_resource_guid Endpoint#private_endpoint_resource_guid}. |
 
 ---
 
@@ -1043,7 +1205,7 @@ private_endpoint_name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/endpoint#private_endpoint_name Endpoint#private_endpoint_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/endpoint#private_endpoint_name Endpoint#private_endpoint_name}.
 
 ---
 
@@ -1055,7 +1217,7 @@ private_endpoint_resource_guid: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/endpoint#private_endpoint_resource_guid Endpoint#private_endpoint_resource_guid}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/endpoint#private_endpoint_resource_guid Endpoint#private_endpoint_resource_guid}.
 
 ---
 
@@ -1077,7 +1239,9 @@ endpoint.EndpointConfig(
   display_name: str,
   parent: str,
   region: str,
-  azure_private_endpoint_info: EndpointAzurePrivateEndpointInfo = None
+  aws_vpc_endpoint_info: EndpointAwsVpcEndpointInfo = None,
+  azure_private_endpoint_info: EndpointAzurePrivateEndpointInfo = None,
+  gcp_psc_endpoint_info: EndpointGcpPscEndpointInfo = None
 )
 ```
 
@@ -1092,10 +1256,12 @@ endpoint.EndpointConfig(
 | <code><a href="#@cdktn/provider-databricks.endpoint.EndpointConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.endpoint.EndpointConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.endpoint.EndpointConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-databricks.endpoint.EndpointConfig.property.displayName">display_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/endpoint#display_name Endpoint#display_name}. |
-| <code><a href="#@cdktn/provider-databricks.endpoint.EndpointConfig.property.parent">parent</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/endpoint#parent Endpoint#parent}. |
-| <code><a href="#@cdktn/provider-databricks.endpoint.EndpointConfig.property.region">region</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/endpoint#region Endpoint#region}. |
-| <code><a href="#@cdktn/provider-databricks.endpoint.EndpointConfig.property.azurePrivateEndpointInfo">azure_private_endpoint_info</a></code> | <code><a href="#@cdktn/provider-databricks.endpoint.EndpointAzurePrivateEndpointInfo">EndpointAzurePrivateEndpointInfo</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/endpoint#azure_private_endpoint_info Endpoint#azure_private_endpoint_info}. |
+| <code><a href="#@cdktn/provider-databricks.endpoint.EndpointConfig.property.displayName">display_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/endpoint#display_name Endpoint#display_name}. |
+| <code><a href="#@cdktn/provider-databricks.endpoint.EndpointConfig.property.parent">parent</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/endpoint#parent Endpoint#parent}. |
+| <code><a href="#@cdktn/provider-databricks.endpoint.EndpointConfig.property.region">region</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/endpoint#region Endpoint#region}. |
+| <code><a href="#@cdktn/provider-databricks.endpoint.EndpointConfig.property.awsVpcEndpointInfo">aws_vpc_endpoint_info</a></code> | <code><a href="#@cdktn/provider-databricks.endpoint.EndpointAwsVpcEndpointInfo">EndpointAwsVpcEndpointInfo</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/endpoint#aws_vpc_endpoint_info Endpoint#aws_vpc_endpoint_info}. |
+| <code><a href="#@cdktn/provider-databricks.endpoint.EndpointConfig.property.azurePrivateEndpointInfo">azure_private_endpoint_info</a></code> | <code><a href="#@cdktn/provider-databricks.endpoint.EndpointAzurePrivateEndpointInfo">EndpointAzurePrivateEndpointInfo</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/endpoint#azure_private_endpoint_info Endpoint#azure_private_endpoint_info}. |
+| <code><a href="#@cdktn/provider-databricks.endpoint.EndpointConfig.property.gcpPscEndpointInfo">gcp_psc_endpoint_info</a></code> | <code><a href="#@cdktn/provider-databricks.endpoint.EndpointGcpPscEndpointInfo">EndpointGcpPscEndpointInfo</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/endpoint#gcp_psc_endpoint_info Endpoint#gcp_psc_endpoint_info}. |
 
 ---
 
@@ -1177,7 +1343,7 @@ display_name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/endpoint#display_name Endpoint#display_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/endpoint#display_name Endpoint#display_name}.
 
 ---
 
@@ -1189,7 +1355,7 @@ parent: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/endpoint#parent Endpoint#parent}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/endpoint#parent Endpoint#parent}.
 
 ---
 
@@ -1201,7 +1367,19 @@ region: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/endpoint#region Endpoint#region}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/endpoint#region Endpoint#region}.
+
+---
+
+##### `aws_vpc_endpoint_info`<sup>Optional</sup> <a name="aws_vpc_endpoint_info" id="@cdktn/provider-databricks.endpoint.EndpointConfig.property.awsVpcEndpointInfo"></a>
+
+```python
+aws_vpc_endpoint_info: EndpointAwsVpcEndpointInfo
+```
+
+- *Type:* <a href="#@cdktn/provider-databricks.endpoint.EndpointAwsVpcEndpointInfo">EndpointAwsVpcEndpointInfo</a>
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/endpoint#aws_vpc_endpoint_info Endpoint#aws_vpc_endpoint_info}.
 
 ---
 
@@ -1213,11 +1391,401 @@ azure_private_endpoint_info: EndpointAzurePrivateEndpointInfo
 
 - *Type:* <a href="#@cdktn/provider-databricks.endpoint.EndpointAzurePrivateEndpointInfo">EndpointAzurePrivateEndpointInfo</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/endpoint#azure_private_endpoint_info Endpoint#azure_private_endpoint_info}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/endpoint#azure_private_endpoint_info Endpoint#azure_private_endpoint_info}.
+
+---
+
+##### `gcp_psc_endpoint_info`<sup>Optional</sup> <a name="gcp_psc_endpoint_info" id="@cdktn/provider-databricks.endpoint.EndpointConfig.property.gcpPscEndpointInfo"></a>
+
+```python
+gcp_psc_endpoint_info: EndpointGcpPscEndpointInfo
+```
+
+- *Type:* <a href="#@cdktn/provider-databricks.endpoint.EndpointGcpPscEndpointInfo">EndpointGcpPscEndpointInfo</a>
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/endpoint#gcp_psc_endpoint_info Endpoint#gcp_psc_endpoint_info}.
+
+---
+
+### EndpointGcpPscEndpointInfo <a name="EndpointGcpPscEndpointInfo" id="@cdktn/provider-databricks.endpoint.EndpointGcpPscEndpointInfo"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-databricks.endpoint.EndpointGcpPscEndpointInfo.Initializer"></a>
+
+```python
+from cdktn_provider_databricks import endpoint
+
+endpoint.EndpointGcpPscEndpointInfo(
+  endpoint_region: str,
+  project_id: str,
+  psc_endpoint: str
+)
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-databricks.endpoint.EndpointGcpPscEndpointInfo.property.endpointRegion">endpoint_region</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/endpoint#endpoint_region Endpoint#endpoint_region}. |
+| <code><a href="#@cdktn/provider-databricks.endpoint.EndpointGcpPscEndpointInfo.property.projectId">project_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/endpoint#project_id Endpoint#project_id}. |
+| <code><a href="#@cdktn/provider-databricks.endpoint.EndpointGcpPscEndpointInfo.property.pscEndpoint">psc_endpoint</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/endpoint#psc_endpoint Endpoint#psc_endpoint}. |
+
+---
+
+##### `endpoint_region`<sup>Required</sup> <a name="endpoint_region" id="@cdktn/provider-databricks.endpoint.EndpointGcpPscEndpointInfo.property.endpointRegion"></a>
+
+```python
+endpoint_region: str
+```
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/endpoint#endpoint_region Endpoint#endpoint_region}.
+
+---
+
+##### `project_id`<sup>Required</sup> <a name="project_id" id="@cdktn/provider-databricks.endpoint.EndpointGcpPscEndpointInfo.property.projectId"></a>
+
+```python
+project_id: str
+```
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/endpoint#project_id Endpoint#project_id}.
+
+---
+
+##### `psc_endpoint`<sup>Required</sup> <a name="psc_endpoint" id="@cdktn/provider-databricks.endpoint.EndpointGcpPscEndpointInfo.property.pscEndpoint"></a>
+
+```python
+psc_endpoint: str
+```
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/endpoint#psc_endpoint Endpoint#psc_endpoint}.
 
 ---
 
 ## Classes <a name="Classes" id="Classes"></a>
+
+### EndpointAwsVpcEndpointInfoOutputReference <a name="EndpointAwsVpcEndpointInfoOutputReference" id="@cdktn/provider-databricks.endpoint.EndpointAwsVpcEndpointInfoOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-databricks.endpoint.EndpointAwsVpcEndpointInfoOutputReference.Initializer"></a>
+
+```python
+from cdktn_provider_databricks import endpoint
+
+endpoint.EndpointAwsVpcEndpointInfoOutputReference(
+  terraform_resource: IInterpolatingParent,
+  terraform_attribute: str
+)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-databricks.endpoint.EndpointAwsVpcEndpointInfoOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-databricks.endpoint.EndpointAwsVpcEndpointInfoOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-databricks.endpoint.EndpointAwsVpcEndpointInfoOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-databricks.endpoint.EndpointAwsVpcEndpointInfoOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-databricks.endpoint.EndpointAwsVpcEndpointInfoOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.endpoint.EndpointAwsVpcEndpointInfoOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.endpoint.EndpointAwsVpcEndpointInfoOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.endpoint.EndpointAwsVpcEndpointInfoOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.endpoint.EndpointAwsVpcEndpointInfoOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.endpoint.EndpointAwsVpcEndpointInfoOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.endpoint.EndpointAwsVpcEndpointInfoOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.endpoint.EndpointAwsVpcEndpointInfoOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.endpoint.EndpointAwsVpcEndpointInfoOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.endpoint.EndpointAwsVpcEndpointInfoOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.endpoint.EndpointAwsVpcEndpointInfoOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.endpoint.EndpointAwsVpcEndpointInfoOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-databricks.endpoint.EndpointAwsVpcEndpointInfoOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+
+---
+
+##### `compute_fqn` <a name="compute_fqn" id="@cdktn/provider-databricks.endpoint.EndpointAwsVpcEndpointInfoOutputReference.computeFqn"></a>
+
+```python
+def compute_fqn() -> str
+```
+
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktn/provider-databricks.endpoint.EndpointAwsVpcEndpointInfoOutputReference.getAnyMapAttribute"></a>
+
+```python
+def get_any_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Any]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-databricks.endpoint.EndpointAwsVpcEndpointInfoOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktn/provider-databricks.endpoint.EndpointAwsVpcEndpointInfoOutputReference.getBooleanAttribute"></a>
+
+```python
+def get_boolean_attribute(
+  terraform_attribute: str
+) -> IResolvable
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-databricks.endpoint.EndpointAwsVpcEndpointInfoOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktn/provider-databricks.endpoint.EndpointAwsVpcEndpointInfoOutputReference.getBooleanMapAttribute"></a>
+
+```python
+def get_boolean_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[bool]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-databricks.endpoint.EndpointAwsVpcEndpointInfoOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktn/provider-databricks.endpoint.EndpointAwsVpcEndpointInfoOutputReference.getListAttribute"></a>
+
+```python
+def get_list_attribute(
+  terraform_attribute: str
+) -> typing.List[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-databricks.endpoint.EndpointAwsVpcEndpointInfoOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktn/provider-databricks.endpoint.EndpointAwsVpcEndpointInfoOutputReference.getNumberAttribute"></a>
+
+```python
+def get_number_attribute(
+  terraform_attribute: str
+) -> typing.Union[int, float]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-databricks.endpoint.EndpointAwsVpcEndpointInfoOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktn/provider-databricks.endpoint.EndpointAwsVpcEndpointInfoOutputReference.getNumberListAttribute"></a>
+
+```python
+def get_number_list_attribute(
+  terraform_attribute: str
+) -> typing.List[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-databricks.endpoint.EndpointAwsVpcEndpointInfoOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktn/provider-databricks.endpoint.EndpointAwsVpcEndpointInfoOutputReference.getNumberMapAttribute"></a>
+
+```python
+def get_number_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-databricks.endpoint.EndpointAwsVpcEndpointInfoOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktn/provider-databricks.endpoint.EndpointAwsVpcEndpointInfoOutputReference.getStringAttribute"></a>
+
+```python
+def get_string_attribute(
+  terraform_attribute: str
+) -> str
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-databricks.endpoint.EndpointAwsVpcEndpointInfoOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktn/provider-databricks.endpoint.EndpointAwsVpcEndpointInfoOutputReference.getStringMapAttribute"></a>
+
+```python
+def get_string_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-databricks.endpoint.EndpointAwsVpcEndpointInfoOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktn/provider-databricks.endpoint.EndpointAwsVpcEndpointInfoOutputReference.interpolationForAttribute"></a>
+
+```python
+def interpolation_for_attribute(
+  property: str
+) -> IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-databricks.endpoint.EndpointAwsVpcEndpointInfoOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* str
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-databricks.endpoint.EndpointAwsVpcEndpointInfoOutputReference.resolve"></a>
+
+```python
+def resolve(
+  _context: IResolveContext
+) -> typing.Any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-databricks.endpoint.EndpointAwsVpcEndpointInfoOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `to_string` <a name="to_string" id="@cdktn/provider-databricks.endpoint.EndpointAwsVpcEndpointInfoOutputReference.toString"></a>
+
+```python
+def to_string() -> str
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-databricks.endpoint.EndpointAwsVpcEndpointInfoOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-databricks.endpoint.EndpointAwsVpcEndpointInfoOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.endpoint.EndpointAwsVpcEndpointInfoOutputReference.property.awsAccountId">aws_account_id</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.endpoint.EndpointAwsVpcEndpointInfoOutputReference.property.awsEndpointServiceId">aws_endpoint_service_id</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.endpoint.EndpointAwsVpcEndpointInfoOutputReference.property.awsVpcEndpointIdInput">aws_vpc_endpoint_id_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.endpoint.EndpointAwsVpcEndpointInfoOutputReference.property.awsVpcEndpointId">aws_vpc_endpoint_id</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.endpoint.EndpointAwsVpcEndpointInfoOutputReference.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-databricks.endpoint.EndpointAwsVpcEndpointInfo">EndpointAwsVpcEndpointInfo</a></code> | *No description.* |
+
+---
+
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktn/provider-databricks.endpoint.EndpointAwsVpcEndpointInfoOutputReference.property.creationStack"></a>
+
+```python
+creation_stack: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-databricks.endpoint.EndpointAwsVpcEndpointInfoOutputReference.property.fqn"></a>
+
+```python
+fqn: str
+```
+
+- *Type:* str
+
+---
+
+##### `aws_account_id`<sup>Required</sup> <a name="aws_account_id" id="@cdktn/provider-databricks.endpoint.EndpointAwsVpcEndpointInfoOutputReference.property.awsAccountId"></a>
+
+```python
+aws_account_id: str
+```
+
+- *Type:* str
+
+---
+
+##### `aws_endpoint_service_id`<sup>Required</sup> <a name="aws_endpoint_service_id" id="@cdktn/provider-databricks.endpoint.EndpointAwsVpcEndpointInfoOutputReference.property.awsEndpointServiceId"></a>
+
+```python
+aws_endpoint_service_id: str
+```
+
+- *Type:* str
+
+---
+
+##### `aws_vpc_endpoint_id_input`<sup>Optional</sup> <a name="aws_vpc_endpoint_id_input" id="@cdktn/provider-databricks.endpoint.EndpointAwsVpcEndpointInfoOutputReference.property.awsVpcEndpointIdInput"></a>
+
+```python
+aws_vpc_endpoint_id_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `aws_vpc_endpoint_id`<sup>Required</sup> <a name="aws_vpc_endpoint_id" id="@cdktn/provider-databricks.endpoint.EndpointAwsVpcEndpointInfoOutputReference.property.awsVpcEndpointId"></a>
+
+```python
+aws_vpc_endpoint_id: str
+```
+
+- *Type:* str
+
+---
+
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktn/provider-databricks.endpoint.EndpointAwsVpcEndpointInfoOutputReference.property.internalValue"></a>
+
+```python
+internal_value: IResolvable | EndpointAwsVpcEndpointInfo
+```
+
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-databricks.endpoint.EndpointAwsVpcEndpointInfo">EndpointAwsVpcEndpointInfo</a>
+
+---
+
 
 ### EndpointAzurePrivateEndpointInfoOutputReference <a name="EndpointAzurePrivateEndpointInfoOutputReference" id="@cdktn/provider-databricks.endpoint.EndpointAzurePrivateEndpointInfoOutputReference"></a>
 
@@ -1555,6 +2123,368 @@ internal_value: IResolvable | EndpointAzurePrivateEndpointInfo
 ```
 
 - *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-databricks.endpoint.EndpointAzurePrivateEndpointInfo">EndpointAzurePrivateEndpointInfo</a>
+
+---
+
+
+### EndpointGcpPscEndpointInfoOutputReference <a name="EndpointGcpPscEndpointInfoOutputReference" id="@cdktn/provider-databricks.endpoint.EndpointGcpPscEndpointInfoOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-databricks.endpoint.EndpointGcpPscEndpointInfoOutputReference.Initializer"></a>
+
+```python
+from cdktn_provider_databricks import endpoint
+
+endpoint.EndpointGcpPscEndpointInfoOutputReference(
+  terraform_resource: IInterpolatingParent,
+  terraform_attribute: str
+)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-databricks.endpoint.EndpointGcpPscEndpointInfoOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-databricks.endpoint.EndpointGcpPscEndpointInfoOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-databricks.endpoint.EndpointGcpPscEndpointInfoOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-databricks.endpoint.EndpointGcpPscEndpointInfoOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-databricks.endpoint.EndpointGcpPscEndpointInfoOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.endpoint.EndpointGcpPscEndpointInfoOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.endpoint.EndpointGcpPscEndpointInfoOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.endpoint.EndpointGcpPscEndpointInfoOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.endpoint.EndpointGcpPscEndpointInfoOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.endpoint.EndpointGcpPscEndpointInfoOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.endpoint.EndpointGcpPscEndpointInfoOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.endpoint.EndpointGcpPscEndpointInfoOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.endpoint.EndpointGcpPscEndpointInfoOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.endpoint.EndpointGcpPscEndpointInfoOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.endpoint.EndpointGcpPscEndpointInfoOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.endpoint.EndpointGcpPscEndpointInfoOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-databricks.endpoint.EndpointGcpPscEndpointInfoOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+
+---
+
+##### `compute_fqn` <a name="compute_fqn" id="@cdktn/provider-databricks.endpoint.EndpointGcpPscEndpointInfoOutputReference.computeFqn"></a>
+
+```python
+def compute_fqn() -> str
+```
+
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktn/provider-databricks.endpoint.EndpointGcpPscEndpointInfoOutputReference.getAnyMapAttribute"></a>
+
+```python
+def get_any_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Any]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-databricks.endpoint.EndpointGcpPscEndpointInfoOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktn/provider-databricks.endpoint.EndpointGcpPscEndpointInfoOutputReference.getBooleanAttribute"></a>
+
+```python
+def get_boolean_attribute(
+  terraform_attribute: str
+) -> IResolvable
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-databricks.endpoint.EndpointGcpPscEndpointInfoOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktn/provider-databricks.endpoint.EndpointGcpPscEndpointInfoOutputReference.getBooleanMapAttribute"></a>
+
+```python
+def get_boolean_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[bool]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-databricks.endpoint.EndpointGcpPscEndpointInfoOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktn/provider-databricks.endpoint.EndpointGcpPscEndpointInfoOutputReference.getListAttribute"></a>
+
+```python
+def get_list_attribute(
+  terraform_attribute: str
+) -> typing.List[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-databricks.endpoint.EndpointGcpPscEndpointInfoOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktn/provider-databricks.endpoint.EndpointGcpPscEndpointInfoOutputReference.getNumberAttribute"></a>
+
+```python
+def get_number_attribute(
+  terraform_attribute: str
+) -> typing.Union[int, float]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-databricks.endpoint.EndpointGcpPscEndpointInfoOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktn/provider-databricks.endpoint.EndpointGcpPscEndpointInfoOutputReference.getNumberListAttribute"></a>
+
+```python
+def get_number_list_attribute(
+  terraform_attribute: str
+) -> typing.List[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-databricks.endpoint.EndpointGcpPscEndpointInfoOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktn/provider-databricks.endpoint.EndpointGcpPscEndpointInfoOutputReference.getNumberMapAttribute"></a>
+
+```python
+def get_number_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-databricks.endpoint.EndpointGcpPscEndpointInfoOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktn/provider-databricks.endpoint.EndpointGcpPscEndpointInfoOutputReference.getStringAttribute"></a>
+
+```python
+def get_string_attribute(
+  terraform_attribute: str
+) -> str
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-databricks.endpoint.EndpointGcpPscEndpointInfoOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktn/provider-databricks.endpoint.EndpointGcpPscEndpointInfoOutputReference.getStringMapAttribute"></a>
+
+```python
+def get_string_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-databricks.endpoint.EndpointGcpPscEndpointInfoOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktn/provider-databricks.endpoint.EndpointGcpPscEndpointInfoOutputReference.interpolationForAttribute"></a>
+
+```python
+def interpolation_for_attribute(
+  property: str
+) -> IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-databricks.endpoint.EndpointGcpPscEndpointInfoOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* str
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-databricks.endpoint.EndpointGcpPscEndpointInfoOutputReference.resolve"></a>
+
+```python
+def resolve(
+  _context: IResolveContext
+) -> typing.Any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-databricks.endpoint.EndpointGcpPscEndpointInfoOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `to_string` <a name="to_string" id="@cdktn/provider-databricks.endpoint.EndpointGcpPscEndpointInfoOutputReference.toString"></a>
+
+```python
+def to_string() -> str
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-databricks.endpoint.EndpointGcpPscEndpointInfoOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-databricks.endpoint.EndpointGcpPscEndpointInfoOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.endpoint.EndpointGcpPscEndpointInfoOutputReference.property.pscConnectionId">psc_connection_id</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.endpoint.EndpointGcpPscEndpointInfoOutputReference.property.serviceAttachmentId">service_attachment_id</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.endpoint.EndpointGcpPscEndpointInfoOutputReference.property.endpointRegionInput">endpoint_region_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.endpoint.EndpointGcpPscEndpointInfoOutputReference.property.projectIdInput">project_id_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.endpoint.EndpointGcpPscEndpointInfoOutputReference.property.pscEndpointInput">psc_endpoint_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.endpoint.EndpointGcpPscEndpointInfoOutputReference.property.endpointRegion">endpoint_region</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.endpoint.EndpointGcpPscEndpointInfoOutputReference.property.projectId">project_id</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.endpoint.EndpointGcpPscEndpointInfoOutputReference.property.pscEndpoint">psc_endpoint</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.endpoint.EndpointGcpPscEndpointInfoOutputReference.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-databricks.endpoint.EndpointGcpPscEndpointInfo">EndpointGcpPscEndpointInfo</a></code> | *No description.* |
+
+---
+
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktn/provider-databricks.endpoint.EndpointGcpPscEndpointInfoOutputReference.property.creationStack"></a>
+
+```python
+creation_stack: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-databricks.endpoint.EndpointGcpPscEndpointInfoOutputReference.property.fqn"></a>
+
+```python
+fqn: str
+```
+
+- *Type:* str
+
+---
+
+##### `psc_connection_id`<sup>Required</sup> <a name="psc_connection_id" id="@cdktn/provider-databricks.endpoint.EndpointGcpPscEndpointInfoOutputReference.property.pscConnectionId"></a>
+
+```python
+psc_connection_id: str
+```
+
+- *Type:* str
+
+---
+
+##### `service_attachment_id`<sup>Required</sup> <a name="service_attachment_id" id="@cdktn/provider-databricks.endpoint.EndpointGcpPscEndpointInfoOutputReference.property.serviceAttachmentId"></a>
+
+```python
+service_attachment_id: str
+```
+
+- *Type:* str
+
+---
+
+##### `endpoint_region_input`<sup>Optional</sup> <a name="endpoint_region_input" id="@cdktn/provider-databricks.endpoint.EndpointGcpPscEndpointInfoOutputReference.property.endpointRegionInput"></a>
+
+```python
+endpoint_region_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `project_id_input`<sup>Optional</sup> <a name="project_id_input" id="@cdktn/provider-databricks.endpoint.EndpointGcpPscEndpointInfoOutputReference.property.projectIdInput"></a>
+
+```python
+project_id_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `psc_endpoint_input`<sup>Optional</sup> <a name="psc_endpoint_input" id="@cdktn/provider-databricks.endpoint.EndpointGcpPscEndpointInfoOutputReference.property.pscEndpointInput"></a>
+
+```python
+psc_endpoint_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `endpoint_region`<sup>Required</sup> <a name="endpoint_region" id="@cdktn/provider-databricks.endpoint.EndpointGcpPscEndpointInfoOutputReference.property.endpointRegion"></a>
+
+```python
+endpoint_region: str
+```
+
+- *Type:* str
+
+---
+
+##### `project_id`<sup>Required</sup> <a name="project_id" id="@cdktn/provider-databricks.endpoint.EndpointGcpPscEndpointInfoOutputReference.property.projectId"></a>
+
+```python
+project_id: str
+```
+
+- *Type:* str
+
+---
+
+##### `psc_endpoint`<sup>Required</sup> <a name="psc_endpoint" id="@cdktn/provider-databricks.endpoint.EndpointGcpPscEndpointInfoOutputReference.property.pscEndpoint"></a>
+
+```python
+psc_endpoint: str
+```
+
+- *Type:* str
+
+---
+
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktn/provider-databricks.endpoint.EndpointGcpPscEndpointInfoOutputReference.property.internalValue"></a>
+
+```python
+internal_value: IResolvable | EndpointGcpPscEndpointInfo
+```
+
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-databricks.endpoint.EndpointGcpPscEndpointInfo">EndpointGcpPscEndpointInfo</a>
 
 ---
 

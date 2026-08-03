@@ -4,7 +4,7 @@
 
 ### Pipeline <a name="Pipeline" id="@cdktn/provider-databricks.pipeline.Pipeline"></a>
 
-Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline databricks_pipeline}.
+Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline databricks_pipeline}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.pipeline.Pipeline.Initializer"></a>
 
@@ -76,49 +76,49 @@ Pipeline.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktn/provider-databricks.pipeline.Pipeline.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>io.cdktn.cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.pipeline.Pipeline.Initializer.parameter.provider">provider</a></code> | <code>io.cdktn.cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.pipeline.Pipeline.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktn/provider-databricks.pipeline.Pipeline.Initializer.parameter.allowDuplicateNames">allowDuplicateNames</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#allow_duplicate_names Pipeline#allow_duplicate_names}. |
-| <code><a href="#@cdktn/provider-databricks.pipeline.Pipeline.Initializer.parameter.budgetPolicyId">budgetPolicyId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#budget_policy_id Pipeline#budget_policy_id}. |
-| <code><a href="#@cdktn/provider-databricks.pipeline.Pipeline.Initializer.parameter.catalog">catalog</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#catalog Pipeline#catalog}. |
-| <code><a href="#@cdktn/provider-databricks.pipeline.Pipeline.Initializer.parameter.cause">cause</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#cause Pipeline#cause}. |
-| <code><a href="#@cdktn/provider-databricks.pipeline.Pipeline.Initializer.parameter.channel">channel</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#channel Pipeline#channel}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.Pipeline.Initializer.parameter.allowDuplicateNames">allowDuplicateNames</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#allow_duplicate_names Pipeline#allow_duplicate_names}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.Pipeline.Initializer.parameter.budgetPolicyId">budgetPolicyId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#budget_policy_id Pipeline#budget_policy_id}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.Pipeline.Initializer.parameter.catalog">catalog</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#catalog Pipeline#catalog}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.Pipeline.Initializer.parameter.cause">cause</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#cause Pipeline#cause}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.Pipeline.Initializer.parameter.channel">channel</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#channel Pipeline#channel}. |
 | <code><a href="#@cdktn/provider-databricks.pipeline.Pipeline.Initializer.parameter.cluster">cluster</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-databricks.pipeline.PipelineCluster">PipelineCluster</a>></code> | cluster block. |
-| <code><a href="#@cdktn/provider-databricks.pipeline.Pipeline.Initializer.parameter.clusterId">clusterId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#cluster_id Pipeline#cluster_id}. |
-| <code><a href="#@cdktn/provider-databricks.pipeline.Pipeline.Initializer.parameter.configuration">configuration</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#configuration Pipeline#configuration}. |
-| <code><a href="#@cdktn/provider-databricks.pipeline.Pipeline.Initializer.parameter.continuous">continuous</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#continuous Pipeline#continuous}. |
-| <code><a href="#@cdktn/provider-databricks.pipeline.Pipeline.Initializer.parameter.creatorUserName">creatorUserName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#creator_user_name Pipeline#creator_user_name}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.Pipeline.Initializer.parameter.clusterId">clusterId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#cluster_id Pipeline#cluster_id}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.Pipeline.Initializer.parameter.configuration">configuration</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#configuration Pipeline#configuration}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.Pipeline.Initializer.parameter.continuous">continuous</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#continuous Pipeline#continuous}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.Pipeline.Initializer.parameter.creatorUserName">creatorUserName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#creator_user_name Pipeline#creator_user_name}. |
 | <code><a href="#@cdktn/provider-databricks.pipeline.Pipeline.Initializer.parameter.deployment">deployment</a></code> | <code><a href="#@cdktn/provider-databricks.pipeline.PipelineDeployment">PipelineDeployment</a></code> | deployment block. |
-| <code><a href="#@cdktn/provider-databricks.pipeline.Pipeline.Initializer.parameter.development">development</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#development Pipeline#development}. |
-| <code><a href="#@cdktn/provider-databricks.pipeline.Pipeline.Initializer.parameter.edition">edition</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#edition Pipeline#edition}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.Pipeline.Initializer.parameter.development">development</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#development Pipeline#development}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.Pipeline.Initializer.parameter.edition">edition</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#edition Pipeline#edition}. |
 | <code><a href="#@cdktn/provider-databricks.pipeline.Pipeline.Initializer.parameter.environment">environment</a></code> | <code><a href="#@cdktn/provider-databricks.pipeline.PipelineEnvironment">PipelineEnvironment</a></code> | environment block. |
 | <code><a href="#@cdktn/provider-databricks.pipeline.Pipeline.Initializer.parameter.eventLog">eventLog</a></code> | <code><a href="#@cdktn/provider-databricks.pipeline.PipelineEventLog">PipelineEventLog</a></code> | event_log block. |
-| <code><a href="#@cdktn/provider-databricks.pipeline.Pipeline.Initializer.parameter.expectedLastModified">expectedLastModified</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#expected_last_modified Pipeline#expected_last_modified}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.Pipeline.Initializer.parameter.expectedLastModified">expectedLastModified</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#expected_last_modified Pipeline#expected_last_modified}. |
 | <code><a href="#@cdktn/provider-databricks.pipeline.Pipeline.Initializer.parameter.filters">filters</a></code> | <code><a href="#@cdktn/provider-databricks.pipeline.PipelineFilters">PipelineFilters</a></code> | filters block. |
 | <code><a href="#@cdktn/provider-databricks.pipeline.Pipeline.Initializer.parameter.gatewayDefinition">gatewayDefinition</a></code> | <code><a href="#@cdktn/provider-databricks.pipeline.PipelineGatewayDefinition">PipelineGatewayDefinition</a></code> | gateway_definition block. |
-| <code><a href="#@cdktn/provider-databricks.pipeline.Pipeline.Initializer.parameter.health">health</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#health Pipeline#health}. |
-| <code><a href="#@cdktn/provider-databricks.pipeline.Pipeline.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#id Pipeline#id}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.Pipeline.Initializer.parameter.health">health</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#health Pipeline#health}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.Pipeline.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#id Pipeline#id}. |
 | <code><a href="#@cdktn/provider-databricks.pipeline.Pipeline.Initializer.parameter.ingestionDefinition">ingestionDefinition</a></code> | <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinition">PipelineIngestionDefinition</a></code> | ingestion_definition block. |
-| <code><a href="#@cdktn/provider-databricks.pipeline.Pipeline.Initializer.parameter.lastModified">lastModified</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#last_modified Pipeline#last_modified}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.Pipeline.Initializer.parameter.lastModified">lastModified</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#last_modified Pipeline#last_modified}. |
 | <code><a href="#@cdktn/provider-databricks.pipeline.Pipeline.Initializer.parameter.latestUpdates">latestUpdates</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-databricks.pipeline.PipelineLatestUpdates">PipelineLatestUpdates</a>></code> | latest_updates block. |
 | <code><a href="#@cdktn/provider-databricks.pipeline.Pipeline.Initializer.parameter.library">library</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-databricks.pipeline.PipelineLibrary">PipelineLibrary</a>></code> | library block. |
-| <code><a href="#@cdktn/provider-databricks.pipeline.Pipeline.Initializer.parameter.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#name Pipeline#name}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.Pipeline.Initializer.parameter.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#name Pipeline#name}. |
 | <code><a href="#@cdktn/provider-databricks.pipeline.Pipeline.Initializer.parameter.notification">notification</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-databricks.pipeline.PipelineNotification">PipelineNotification</a>></code> | notification block. |
-| <code><a href="#@cdktn/provider-databricks.pipeline.Pipeline.Initializer.parameter.photon">photon</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#photon Pipeline#photon}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.Pipeline.Initializer.parameter.photon">photon</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#photon Pipeline#photon}. |
 | <code><a href="#@cdktn/provider-databricks.pipeline.Pipeline.Initializer.parameter.providerConfig">providerConfig</a></code> | <code><a href="#@cdktn/provider-databricks.pipeline.PipelineProviderConfig">PipelineProviderConfig</a></code> | provider_config block. |
 | <code><a href="#@cdktn/provider-databricks.pipeline.Pipeline.Initializer.parameter.restartWindow">restartWindow</a></code> | <code><a href="#@cdktn/provider-databricks.pipeline.PipelineRestartWindow">PipelineRestartWindow</a></code> | restart_window block. |
-| <code><a href="#@cdktn/provider-databricks.pipeline.Pipeline.Initializer.parameter.rootPath">rootPath</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#root_path Pipeline#root_path}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.Pipeline.Initializer.parameter.rootPath">rootPath</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#root_path Pipeline#root_path}. |
 | <code><a href="#@cdktn/provider-databricks.pipeline.Pipeline.Initializer.parameter.runAs">runAs</a></code> | <code><a href="#@cdktn/provider-databricks.pipeline.PipelineRunAs">PipelineRunAs</a></code> | run_as block. |
-| <code><a href="#@cdktn/provider-databricks.pipeline.Pipeline.Initializer.parameter.runAsUserName">runAsUserName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#run_as_user_name Pipeline#run_as_user_name}. |
-| <code><a href="#@cdktn/provider-databricks.pipeline.Pipeline.Initializer.parameter.schema">schema</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#schema Pipeline#schema}. |
-| <code><a href="#@cdktn/provider-databricks.pipeline.Pipeline.Initializer.parameter.serverless">serverless</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#serverless Pipeline#serverless}. |
-| <code><a href="#@cdktn/provider-databricks.pipeline.Pipeline.Initializer.parameter.serverlessComputeId">serverlessComputeId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#serverless_compute_id Pipeline#serverless_compute_id}. |
-| <code><a href="#@cdktn/provider-databricks.pipeline.Pipeline.Initializer.parameter.state">state</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#state Pipeline#state}. |
-| <code><a href="#@cdktn/provider-databricks.pipeline.Pipeline.Initializer.parameter.storage">storage</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#storage Pipeline#storage}. |
-| <code><a href="#@cdktn/provider-databricks.pipeline.Pipeline.Initializer.parameter.tags">tags</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#tags Pipeline#tags}. |
-| <code><a href="#@cdktn/provider-databricks.pipeline.Pipeline.Initializer.parameter.target">target</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#target Pipeline#target}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.Pipeline.Initializer.parameter.runAsUserName">runAsUserName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#run_as_user_name Pipeline#run_as_user_name}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.Pipeline.Initializer.parameter.schema">schema</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#schema Pipeline#schema}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.Pipeline.Initializer.parameter.serverless">serverless</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#serverless Pipeline#serverless}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.Pipeline.Initializer.parameter.serverlessComputeId">serverlessComputeId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#serverless_compute_id Pipeline#serverless_compute_id}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.Pipeline.Initializer.parameter.state">state</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#state Pipeline#state}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.Pipeline.Initializer.parameter.storage">storage</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#storage Pipeline#storage}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.Pipeline.Initializer.parameter.tags">tags</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#tags Pipeline#tags}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.Pipeline.Initializer.parameter.target">target</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#target Pipeline#target}. |
 | <code><a href="#@cdktn/provider-databricks.pipeline.Pipeline.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-databricks.pipeline.PipelineTimeouts">PipelineTimeouts</a></code> | timeouts block. |
 | <code><a href="#@cdktn/provider-databricks.pipeline.Pipeline.Initializer.parameter.trigger">trigger</a></code> | <code><a href="#@cdktn/provider-databricks.pipeline.PipelineTrigger">PipelineTrigger</a></code> | trigger block. |
-| <code><a href="#@cdktn/provider-databricks.pipeline.Pipeline.Initializer.parameter.url">url</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#url Pipeline#url}. |
-| <code><a href="#@cdktn/provider-databricks.pipeline.Pipeline.Initializer.parameter.usagePolicyId">usagePolicyId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#usage_policy_id Pipeline#usage_policy_id}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.Pipeline.Initializer.parameter.url">url</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#url Pipeline#url}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.Pipeline.Initializer.parameter.usagePolicyId">usagePolicyId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#usage_policy_id Pipeline#usage_policy_id}. |
 
 ---
 
@@ -186,7 +186,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#allow_duplicate_names Pipeline#allow_duplicate_names}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#allow_duplicate_names Pipeline#allow_duplicate_names}.
 
 ---
 
@@ -194,7 +194,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#budget_policy_id Pipeline#budget_policy_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#budget_policy_id Pipeline#budget_policy_id}.
 
 ---
 
@@ -202,7 +202,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#catalog Pipeline#catalog}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#catalog Pipeline#catalog}.
 
 ---
 
@@ -210,7 +210,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#cause Pipeline#cause}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#cause Pipeline#cause}.
 
 ---
 
@@ -218,7 +218,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#channel Pipeline#channel}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#channel Pipeline#channel}.
 
 ---
 
@@ -228,7 +228,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 cluster block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#cluster Pipeline#cluster}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#cluster Pipeline#cluster}
 
 ---
 
@@ -236,7 +236,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#cluster_id Pipeline#cluster_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#cluster_id Pipeline#cluster_id}.
 
 ---
 
@@ -244,7 +244,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* java.util.Map<java.lang.String, java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#configuration Pipeline#configuration}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#configuration Pipeline#configuration}.
 
 ---
 
@@ -252,7 +252,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#continuous Pipeline#continuous}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#continuous Pipeline#continuous}.
 
 ---
 
@@ -260,7 +260,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#creator_user_name Pipeline#creator_user_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#creator_user_name Pipeline#creator_user_name}.
 
 ---
 
@@ -270,7 +270,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 deployment block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#deployment Pipeline#deployment}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#deployment Pipeline#deployment}
 
 ---
 
@@ -278,7 +278,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#development Pipeline#development}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#development Pipeline#development}.
 
 ---
 
@@ -286,7 +286,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#edition Pipeline#edition}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#edition Pipeline#edition}.
 
 ---
 
@@ -296,7 +296,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 environment block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#environment Pipeline#environment}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#environment Pipeline#environment}
 
 ---
 
@@ -306,7 +306,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 event_log block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#event_log Pipeline#event_log}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#event_log Pipeline#event_log}
 
 ---
 
@@ -314,7 +314,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#expected_last_modified Pipeline#expected_last_modified}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#expected_last_modified Pipeline#expected_last_modified}.
 
 ---
 
@@ -324,7 +324,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 filters block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#filters Pipeline#filters}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#filters Pipeline#filters}
 
 ---
 
@@ -334,7 +334,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 gateway_definition block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#gateway_definition Pipeline#gateway_definition}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#gateway_definition Pipeline#gateway_definition}
 
 ---
 
@@ -342,7 +342,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#health Pipeline#health}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#health Pipeline#health}.
 
 ---
 
@@ -350,7 +350,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#id Pipeline#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#id Pipeline#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -363,7 +363,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 ingestion_definition block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#ingestion_definition Pipeline#ingestion_definition}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#ingestion_definition Pipeline#ingestion_definition}
 
 ---
 
@@ -371,7 +371,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#last_modified Pipeline#last_modified}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#last_modified Pipeline#last_modified}.
 
 ---
 
@@ -381,7 +381,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 latest_updates block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#latest_updates Pipeline#latest_updates}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#latest_updates Pipeline#latest_updates}
 
 ---
 
@@ -391,7 +391,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 library block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#library Pipeline#library}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#library Pipeline#library}
 
 ---
 
@@ -399,7 +399,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#name Pipeline#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#name Pipeline#name}.
 
 ---
 
@@ -409,7 +409,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 notification block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#notification Pipeline#notification}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#notification Pipeline#notification}
 
 ---
 
@@ -417,7 +417,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#photon Pipeline#photon}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#photon Pipeline#photon}.
 
 ---
 
@@ -427,7 +427,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 provider_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#provider_config Pipeline#provider_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#provider_config Pipeline#provider_config}
 
 ---
 
@@ -437,7 +437,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 restart_window block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#restart_window Pipeline#restart_window}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#restart_window Pipeline#restart_window}
 
 ---
 
@@ -445,7 +445,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#root_path Pipeline#root_path}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#root_path Pipeline#root_path}.
 
 ---
 
@@ -455,7 +455,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 run_as block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#run_as Pipeline#run_as}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#run_as Pipeline#run_as}
 
 ---
 
@@ -463,7 +463,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#run_as_user_name Pipeline#run_as_user_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#run_as_user_name Pipeline#run_as_user_name}.
 
 ---
 
@@ -471,7 +471,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#schema Pipeline#schema}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#schema Pipeline#schema}.
 
 ---
 
@@ -479,7 +479,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#serverless Pipeline#serverless}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#serverless Pipeline#serverless}.
 
 ---
 
@@ -487,7 +487,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#serverless_compute_id Pipeline#serverless_compute_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#serverless_compute_id Pipeline#serverless_compute_id}.
 
 ---
 
@@ -495,7 +495,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#state Pipeline#state}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#state Pipeline#state}.
 
 ---
 
@@ -503,7 +503,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#storage Pipeline#storage}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#storage Pipeline#storage}.
 
 ---
 
@@ -511,7 +511,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* java.util.Map<java.lang.String, java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#tags Pipeline#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#tags Pipeline#tags}.
 
 ---
 
@@ -519,7 +519,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#target Pipeline#target}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#target Pipeline#target}.
 
 ---
 
@@ -529,7 +529,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#timeouts Pipeline#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#timeouts Pipeline#timeouts}
 
 ---
 
@@ -539,7 +539,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 trigger block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#trigger Pipeline#trigger}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#trigger Pipeline#trigger}
 
 ---
 
@@ -547,7 +547,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#url Pipeline#url}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#url Pipeline#url}.
 
 ---
 
@@ -555,7 +555,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#usage_policy_id Pipeline#usage_policy_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#usage_policy_id Pipeline#usage_policy_id}.
 
 ---
 
@@ -1500,7 +1500,7 @@ The construct id used in the generated config for the Pipeline to import.
 
 The id of the existing Pipeline that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -2675,25 +2675,25 @@ PipelineCluster.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineCluster.property.applyPolicyDefaultValues">applyPolicyDefaultValues</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#apply_policy_default_values Pipeline#apply_policy_default_values}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineCluster.property.applyPolicyDefaultValues">applyPolicyDefaultValues</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#apply_policy_default_values Pipeline#apply_policy_default_values}. |
 | <code><a href="#@cdktn/provider-databricks.pipeline.PipelineCluster.property.autoscale">autoscale</a></code> | <code><a href="#@cdktn/provider-databricks.pipeline.PipelineClusterAutoscale">PipelineClusterAutoscale</a></code> | autoscale block. |
 | <code><a href="#@cdktn/provider-databricks.pipeline.PipelineCluster.property.awsAttributes">awsAttributes</a></code> | <code><a href="#@cdktn/provider-databricks.pipeline.PipelineClusterAwsAttributes">PipelineClusterAwsAttributes</a></code> | aws_attributes block. |
 | <code><a href="#@cdktn/provider-databricks.pipeline.PipelineCluster.property.azureAttributes">azureAttributes</a></code> | <code><a href="#@cdktn/provider-databricks.pipeline.PipelineClusterAzureAttributes">PipelineClusterAzureAttributes</a></code> | azure_attributes block. |
 | <code><a href="#@cdktn/provider-databricks.pipeline.PipelineCluster.property.clusterLogConf">clusterLogConf</a></code> | <code><a href="#@cdktn/provider-databricks.pipeline.PipelineClusterClusterLogConf">PipelineClusterClusterLogConf</a></code> | cluster_log_conf block. |
-| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineCluster.property.customTags">customTags</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#custom_tags Pipeline#custom_tags}. |
-| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineCluster.property.driverInstancePoolId">driverInstancePoolId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#driver_instance_pool_id Pipeline#driver_instance_pool_id}. |
-| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineCluster.property.driverNodeTypeId">driverNodeTypeId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#driver_node_type_id Pipeline#driver_node_type_id}. |
-| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineCluster.property.enableLocalDiskEncryption">enableLocalDiskEncryption</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#enable_local_disk_encryption Pipeline#enable_local_disk_encryption}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineCluster.property.customTags">customTags</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#custom_tags Pipeline#custom_tags}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineCluster.property.driverInstancePoolId">driverInstancePoolId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#driver_instance_pool_id Pipeline#driver_instance_pool_id}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineCluster.property.driverNodeTypeId">driverNodeTypeId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#driver_node_type_id Pipeline#driver_node_type_id}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineCluster.property.enableLocalDiskEncryption">enableLocalDiskEncryption</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#enable_local_disk_encryption Pipeline#enable_local_disk_encryption}. |
 | <code><a href="#@cdktn/provider-databricks.pipeline.PipelineCluster.property.gcpAttributes">gcpAttributes</a></code> | <code><a href="#@cdktn/provider-databricks.pipeline.PipelineClusterGcpAttributes">PipelineClusterGcpAttributes</a></code> | gcp_attributes block. |
 | <code><a href="#@cdktn/provider-databricks.pipeline.PipelineCluster.property.initScripts">initScripts</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-databricks.pipeline.PipelineClusterInitScripts">PipelineClusterInitScripts</a>></code> | init_scripts block. |
-| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineCluster.property.instancePoolId">instancePoolId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#instance_pool_id Pipeline#instance_pool_id}. |
-| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineCluster.property.label">label</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#label Pipeline#label}. |
-| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineCluster.property.nodeTypeId">nodeTypeId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#node_type_id Pipeline#node_type_id}. |
-| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineCluster.property.numWorkers">numWorkers</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#num_workers Pipeline#num_workers}. |
-| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineCluster.property.policyId">policyId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#policy_id Pipeline#policy_id}. |
-| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineCluster.property.sparkConf">sparkConf</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#spark_conf Pipeline#spark_conf}. |
-| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineCluster.property.sparkEnvVars">sparkEnvVars</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#spark_env_vars Pipeline#spark_env_vars}. |
-| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineCluster.property.sshPublicKeys">sshPublicKeys</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#ssh_public_keys Pipeline#ssh_public_keys}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineCluster.property.instancePoolId">instancePoolId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#instance_pool_id Pipeline#instance_pool_id}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineCluster.property.label">label</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#label Pipeline#label}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineCluster.property.nodeTypeId">nodeTypeId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#node_type_id Pipeline#node_type_id}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineCluster.property.numWorkers">numWorkers</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#num_workers Pipeline#num_workers}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineCluster.property.policyId">policyId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#policy_id Pipeline#policy_id}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineCluster.property.sparkConf">sparkConf</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#spark_conf Pipeline#spark_conf}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineCluster.property.sparkEnvVars">sparkEnvVars</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#spark_env_vars Pipeline#spark_env_vars}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineCluster.property.sshPublicKeys">sshPublicKeys</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#ssh_public_keys Pipeline#ssh_public_keys}. |
 
 ---
 
@@ -2705,7 +2705,7 @@ public java.lang.Boolean|IResolvable getApplyPolicyDefaultValues();
 
 - *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#apply_policy_default_values Pipeline#apply_policy_default_values}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#apply_policy_default_values Pipeline#apply_policy_default_values}.
 
 ---
 
@@ -2719,7 +2719,7 @@ public PipelineClusterAutoscale getAutoscale();
 
 autoscale block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#autoscale Pipeline#autoscale}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#autoscale Pipeline#autoscale}
 
 ---
 
@@ -2733,7 +2733,7 @@ public PipelineClusterAwsAttributes getAwsAttributes();
 
 aws_attributes block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#aws_attributes Pipeline#aws_attributes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#aws_attributes Pipeline#aws_attributes}
 
 ---
 
@@ -2747,7 +2747,7 @@ public PipelineClusterAzureAttributes getAzureAttributes();
 
 azure_attributes block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#azure_attributes Pipeline#azure_attributes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#azure_attributes Pipeline#azure_attributes}
 
 ---
 
@@ -2761,7 +2761,7 @@ public PipelineClusterClusterLogConf getClusterLogConf();
 
 cluster_log_conf block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#cluster_log_conf Pipeline#cluster_log_conf}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#cluster_log_conf Pipeline#cluster_log_conf}
 
 ---
 
@@ -2773,7 +2773,7 @@ public java.util.Map<java.lang.String, java.lang.String> getCustomTags();
 
 - *Type:* java.util.Map<java.lang.String, java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#custom_tags Pipeline#custom_tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#custom_tags Pipeline#custom_tags}.
 
 ---
 
@@ -2785,7 +2785,7 @@ public java.lang.String getDriverInstancePoolId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#driver_instance_pool_id Pipeline#driver_instance_pool_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#driver_instance_pool_id Pipeline#driver_instance_pool_id}.
 
 ---
 
@@ -2797,7 +2797,7 @@ public java.lang.String getDriverNodeTypeId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#driver_node_type_id Pipeline#driver_node_type_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#driver_node_type_id Pipeline#driver_node_type_id}.
 
 ---
 
@@ -2809,7 +2809,7 @@ public java.lang.Boolean|IResolvable getEnableLocalDiskEncryption();
 
 - *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#enable_local_disk_encryption Pipeline#enable_local_disk_encryption}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#enable_local_disk_encryption Pipeline#enable_local_disk_encryption}.
 
 ---
 
@@ -2823,7 +2823,7 @@ public PipelineClusterGcpAttributes getGcpAttributes();
 
 gcp_attributes block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#gcp_attributes Pipeline#gcp_attributes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#gcp_attributes Pipeline#gcp_attributes}
 
 ---
 
@@ -2837,7 +2837,7 @@ public IResolvable|java.util.List<PipelineClusterInitScripts> getInitScripts();
 
 init_scripts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#init_scripts Pipeline#init_scripts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#init_scripts Pipeline#init_scripts}
 
 ---
 
@@ -2849,7 +2849,7 @@ public java.lang.String getInstancePoolId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#instance_pool_id Pipeline#instance_pool_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#instance_pool_id Pipeline#instance_pool_id}.
 
 ---
 
@@ -2861,7 +2861,7 @@ public java.lang.String getLabel();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#label Pipeline#label}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#label Pipeline#label}.
 
 ---
 
@@ -2873,7 +2873,7 @@ public java.lang.String getNodeTypeId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#node_type_id Pipeline#node_type_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#node_type_id Pipeline#node_type_id}.
 
 ---
 
@@ -2885,7 +2885,7 @@ public java.lang.Number getNumWorkers();
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#num_workers Pipeline#num_workers}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#num_workers Pipeline#num_workers}.
 
 ---
 
@@ -2897,7 +2897,7 @@ public java.lang.String getPolicyId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#policy_id Pipeline#policy_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#policy_id Pipeline#policy_id}.
 
 ---
 
@@ -2909,7 +2909,7 @@ public java.util.Map<java.lang.String, java.lang.String> getSparkConf();
 
 - *Type:* java.util.Map<java.lang.String, java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#spark_conf Pipeline#spark_conf}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#spark_conf Pipeline#spark_conf}.
 
 ---
 
@@ -2921,7 +2921,7 @@ public java.util.Map<java.lang.String, java.lang.String> getSparkEnvVars();
 
 - *Type:* java.util.Map<java.lang.String, java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#spark_env_vars Pipeline#spark_env_vars}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#spark_env_vars Pipeline#spark_env_vars}.
 
 ---
 
@@ -2933,7 +2933,7 @@ public java.util.List<java.lang.String> getSshPublicKeys();
 
 - *Type:* java.util.List<java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#ssh_public_keys Pipeline#ssh_public_keys}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#ssh_public_keys Pipeline#ssh_public_keys}.
 
 ---
 
@@ -2955,9 +2955,9 @@ PipelineClusterAutoscale.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineClusterAutoscale.property.maxWorkers">maxWorkers</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#max_workers Pipeline#max_workers}. |
-| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineClusterAutoscale.property.minWorkers">minWorkers</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#min_workers Pipeline#min_workers}. |
-| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineClusterAutoscale.property.mode">mode</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#mode Pipeline#mode}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineClusterAutoscale.property.maxWorkers">maxWorkers</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#max_workers Pipeline#max_workers}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineClusterAutoscale.property.minWorkers">minWorkers</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#min_workers Pipeline#min_workers}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineClusterAutoscale.property.mode">mode</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#mode Pipeline#mode}. |
 
 ---
 
@@ -2969,7 +2969,7 @@ public java.lang.Number getMaxWorkers();
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#max_workers Pipeline#max_workers}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#max_workers Pipeline#max_workers}.
 
 ---
 
@@ -2981,7 +2981,7 @@ public java.lang.Number getMinWorkers();
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#min_workers Pipeline#min_workers}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#min_workers Pipeline#min_workers}.
 
 ---
 
@@ -2993,7 +2993,7 @@ public java.lang.String getMode();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#mode Pipeline#mode}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#mode Pipeline#mode}.
 
 ---
 
@@ -3022,16 +3022,16 @@ PipelineClusterAwsAttributes.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineClusterAwsAttributes.property.availability">availability</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#availability Pipeline#availability}. |
-| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineClusterAwsAttributes.property.ebsVolumeCount">ebsVolumeCount</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#ebs_volume_count Pipeline#ebs_volume_count}. |
-| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineClusterAwsAttributes.property.ebsVolumeIops">ebsVolumeIops</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#ebs_volume_iops Pipeline#ebs_volume_iops}. |
-| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineClusterAwsAttributes.property.ebsVolumeSize">ebsVolumeSize</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#ebs_volume_size Pipeline#ebs_volume_size}. |
-| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineClusterAwsAttributes.property.ebsVolumeThroughput">ebsVolumeThroughput</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#ebs_volume_throughput Pipeline#ebs_volume_throughput}. |
-| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineClusterAwsAttributes.property.ebsVolumeType">ebsVolumeType</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#ebs_volume_type Pipeline#ebs_volume_type}. |
-| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineClusterAwsAttributes.property.firstOnDemand">firstOnDemand</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#first_on_demand Pipeline#first_on_demand}. |
-| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineClusterAwsAttributes.property.instanceProfileArn">instanceProfileArn</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#instance_profile_arn Pipeline#instance_profile_arn}. |
-| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineClusterAwsAttributes.property.spotBidPricePercent">spotBidPricePercent</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#spot_bid_price_percent Pipeline#spot_bid_price_percent}. |
-| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineClusterAwsAttributes.property.zoneId">zoneId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#zone_id Pipeline#zone_id}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineClusterAwsAttributes.property.availability">availability</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#availability Pipeline#availability}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineClusterAwsAttributes.property.ebsVolumeCount">ebsVolumeCount</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#ebs_volume_count Pipeline#ebs_volume_count}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineClusterAwsAttributes.property.ebsVolumeIops">ebsVolumeIops</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#ebs_volume_iops Pipeline#ebs_volume_iops}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineClusterAwsAttributes.property.ebsVolumeSize">ebsVolumeSize</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#ebs_volume_size Pipeline#ebs_volume_size}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineClusterAwsAttributes.property.ebsVolumeThroughput">ebsVolumeThroughput</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#ebs_volume_throughput Pipeline#ebs_volume_throughput}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineClusterAwsAttributes.property.ebsVolumeType">ebsVolumeType</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#ebs_volume_type Pipeline#ebs_volume_type}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineClusterAwsAttributes.property.firstOnDemand">firstOnDemand</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#first_on_demand Pipeline#first_on_demand}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineClusterAwsAttributes.property.instanceProfileArn">instanceProfileArn</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#instance_profile_arn Pipeline#instance_profile_arn}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineClusterAwsAttributes.property.spotBidPricePercent">spotBidPricePercent</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#spot_bid_price_percent Pipeline#spot_bid_price_percent}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineClusterAwsAttributes.property.zoneId">zoneId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#zone_id Pipeline#zone_id}. |
 
 ---
 
@@ -3043,7 +3043,7 @@ public java.lang.String getAvailability();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#availability Pipeline#availability}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#availability Pipeline#availability}.
 
 ---
 
@@ -3055,7 +3055,7 @@ public java.lang.Number getEbsVolumeCount();
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#ebs_volume_count Pipeline#ebs_volume_count}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#ebs_volume_count Pipeline#ebs_volume_count}.
 
 ---
 
@@ -3067,7 +3067,7 @@ public java.lang.Number getEbsVolumeIops();
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#ebs_volume_iops Pipeline#ebs_volume_iops}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#ebs_volume_iops Pipeline#ebs_volume_iops}.
 
 ---
 
@@ -3079,7 +3079,7 @@ public java.lang.Number getEbsVolumeSize();
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#ebs_volume_size Pipeline#ebs_volume_size}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#ebs_volume_size Pipeline#ebs_volume_size}.
 
 ---
 
@@ -3091,7 +3091,7 @@ public java.lang.Number getEbsVolumeThroughput();
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#ebs_volume_throughput Pipeline#ebs_volume_throughput}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#ebs_volume_throughput Pipeline#ebs_volume_throughput}.
 
 ---
 
@@ -3103,7 +3103,7 @@ public java.lang.String getEbsVolumeType();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#ebs_volume_type Pipeline#ebs_volume_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#ebs_volume_type Pipeline#ebs_volume_type}.
 
 ---
 
@@ -3115,7 +3115,7 @@ public java.lang.Number getFirstOnDemand();
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#first_on_demand Pipeline#first_on_demand}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#first_on_demand Pipeline#first_on_demand}.
 
 ---
 
@@ -3127,7 +3127,7 @@ public java.lang.String getInstanceProfileArn();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#instance_profile_arn Pipeline#instance_profile_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#instance_profile_arn Pipeline#instance_profile_arn}.
 
 ---
 
@@ -3139,7 +3139,7 @@ public java.lang.Number getSpotBidPricePercent();
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#spot_bid_price_percent Pipeline#spot_bid_price_percent}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#spot_bid_price_percent Pipeline#spot_bid_price_percent}.
 
 ---
 
@@ -3151,7 +3151,7 @@ public java.lang.String getZoneId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#zone_id Pipeline#zone_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#zone_id Pipeline#zone_id}.
 
 ---
 
@@ -3175,11 +3175,11 @@ PipelineClusterAzureAttributes.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineClusterAzureAttributes.property.availability">availability</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#availability Pipeline#availability}. |
-| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineClusterAzureAttributes.property.capacityReservationGroup">capacityReservationGroup</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#capacity_reservation_group Pipeline#capacity_reservation_group}. |
-| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineClusterAzureAttributes.property.firstOnDemand">firstOnDemand</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#first_on_demand Pipeline#first_on_demand}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineClusterAzureAttributes.property.availability">availability</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#availability Pipeline#availability}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineClusterAzureAttributes.property.capacityReservationGroup">capacityReservationGroup</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#capacity_reservation_group Pipeline#capacity_reservation_group}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineClusterAzureAttributes.property.firstOnDemand">firstOnDemand</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#first_on_demand Pipeline#first_on_demand}. |
 | <code><a href="#@cdktn/provider-databricks.pipeline.PipelineClusterAzureAttributes.property.logAnalyticsInfo">logAnalyticsInfo</a></code> | <code><a href="#@cdktn/provider-databricks.pipeline.PipelineClusterAzureAttributesLogAnalyticsInfo">PipelineClusterAzureAttributesLogAnalyticsInfo</a></code> | log_analytics_info block. |
-| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineClusterAzureAttributes.property.spotBidMaxPrice">spotBidMaxPrice</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#spot_bid_max_price Pipeline#spot_bid_max_price}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineClusterAzureAttributes.property.spotBidMaxPrice">spotBidMaxPrice</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#spot_bid_max_price Pipeline#spot_bid_max_price}. |
 
 ---
 
@@ -3191,7 +3191,7 @@ public java.lang.String getAvailability();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#availability Pipeline#availability}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#availability Pipeline#availability}.
 
 ---
 
@@ -3203,7 +3203,7 @@ public java.lang.String getCapacityReservationGroup();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#capacity_reservation_group Pipeline#capacity_reservation_group}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#capacity_reservation_group Pipeline#capacity_reservation_group}.
 
 ---
 
@@ -3215,7 +3215,7 @@ public java.lang.Number getFirstOnDemand();
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#first_on_demand Pipeline#first_on_demand}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#first_on_demand Pipeline#first_on_demand}.
 
 ---
 
@@ -3229,7 +3229,7 @@ public PipelineClusterAzureAttributesLogAnalyticsInfo getLogAnalyticsInfo();
 
 log_analytics_info block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#log_analytics_info Pipeline#log_analytics_info}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#log_analytics_info Pipeline#log_analytics_info}
 
 ---
 
@@ -3241,7 +3241,7 @@ public java.lang.Number getSpotBidMaxPrice();
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#spot_bid_max_price Pipeline#spot_bid_max_price}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#spot_bid_max_price Pipeline#spot_bid_max_price}.
 
 ---
 
@@ -3262,8 +3262,8 @@ PipelineClusterAzureAttributesLogAnalyticsInfo.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineClusterAzureAttributesLogAnalyticsInfo.property.logAnalyticsPrimaryKey">logAnalyticsPrimaryKey</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#log_analytics_primary_key Pipeline#log_analytics_primary_key}. |
-| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineClusterAzureAttributesLogAnalyticsInfo.property.logAnalyticsWorkspaceId">logAnalyticsWorkspaceId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#log_analytics_workspace_id Pipeline#log_analytics_workspace_id}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineClusterAzureAttributesLogAnalyticsInfo.property.logAnalyticsPrimaryKey">logAnalyticsPrimaryKey</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#log_analytics_primary_key Pipeline#log_analytics_primary_key}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineClusterAzureAttributesLogAnalyticsInfo.property.logAnalyticsWorkspaceId">logAnalyticsWorkspaceId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#log_analytics_workspace_id Pipeline#log_analytics_workspace_id}. |
 
 ---
 
@@ -3275,7 +3275,7 @@ public java.lang.String getLogAnalyticsPrimaryKey();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#log_analytics_primary_key Pipeline#log_analytics_primary_key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#log_analytics_primary_key Pipeline#log_analytics_primary_key}.
 
 ---
 
@@ -3287,7 +3287,7 @@ public java.lang.String getLogAnalyticsWorkspaceId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#log_analytics_workspace_id Pipeline#log_analytics_workspace_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#log_analytics_workspace_id Pipeline#log_analytics_workspace_id}.
 
 ---
 
@@ -3325,7 +3325,7 @@ public PipelineClusterClusterLogConfDbfs getDbfs();
 
 dbfs block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#dbfs Pipeline#dbfs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#dbfs Pipeline#dbfs}
 
 ---
 
@@ -3339,7 +3339,7 @@ public PipelineClusterClusterLogConfS3 getS3();
 
 s3 block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#s3 Pipeline#s3}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#s3 Pipeline#s3}
 
 ---
 
@@ -3353,7 +3353,7 @@ public PipelineClusterClusterLogConfVolumes getVolumes();
 
 volumes block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#volumes Pipeline#volumes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#volumes Pipeline#volumes}
 
 ---
 
@@ -3373,7 +3373,7 @@ PipelineClusterClusterLogConfDbfs.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineClusterClusterLogConfDbfs.property.destination">destination</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#destination Pipeline#destination}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineClusterClusterLogConfDbfs.property.destination">destination</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#destination Pipeline#destination}. |
 
 ---
 
@@ -3385,7 +3385,7 @@ public java.lang.String getDestination();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#destination Pipeline#destination}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#destination Pipeline#destination}.
 
 ---
 
@@ -3411,13 +3411,13 @@ PipelineClusterClusterLogConfS3.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineClusterClusterLogConfS3.property.destination">destination</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#destination Pipeline#destination}. |
-| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineClusterClusterLogConfS3.property.cannedAcl">cannedAcl</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#canned_acl Pipeline#canned_acl}. |
-| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineClusterClusterLogConfS3.property.enableEncryption">enableEncryption</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#enable_encryption Pipeline#enable_encryption}. |
-| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineClusterClusterLogConfS3.property.encryptionType">encryptionType</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#encryption_type Pipeline#encryption_type}. |
-| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineClusterClusterLogConfS3.property.endpoint">endpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#endpoint Pipeline#endpoint}. |
-| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineClusterClusterLogConfS3.property.kmsKey">kmsKey</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#kms_key Pipeline#kms_key}. |
-| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineClusterClusterLogConfS3.property.region">region</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#region Pipeline#region}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineClusterClusterLogConfS3.property.destination">destination</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#destination Pipeline#destination}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineClusterClusterLogConfS3.property.cannedAcl">cannedAcl</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#canned_acl Pipeline#canned_acl}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineClusterClusterLogConfS3.property.enableEncryption">enableEncryption</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#enable_encryption Pipeline#enable_encryption}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineClusterClusterLogConfS3.property.encryptionType">encryptionType</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#encryption_type Pipeline#encryption_type}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineClusterClusterLogConfS3.property.endpoint">endpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#endpoint Pipeline#endpoint}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineClusterClusterLogConfS3.property.kmsKey">kmsKey</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#kms_key Pipeline#kms_key}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineClusterClusterLogConfS3.property.region">region</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#region Pipeline#region}. |
 
 ---
 
@@ -3429,7 +3429,7 @@ public java.lang.String getDestination();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#destination Pipeline#destination}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#destination Pipeline#destination}.
 
 ---
 
@@ -3441,7 +3441,7 @@ public java.lang.String getCannedAcl();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#canned_acl Pipeline#canned_acl}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#canned_acl Pipeline#canned_acl}.
 
 ---
 
@@ -3453,7 +3453,7 @@ public java.lang.Boolean|IResolvable getEnableEncryption();
 
 - *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#enable_encryption Pipeline#enable_encryption}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#enable_encryption Pipeline#enable_encryption}.
 
 ---
 
@@ -3465,7 +3465,7 @@ public java.lang.String getEncryptionType();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#encryption_type Pipeline#encryption_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#encryption_type Pipeline#encryption_type}.
 
 ---
 
@@ -3477,7 +3477,7 @@ public java.lang.String getEndpoint();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#endpoint Pipeline#endpoint}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#endpoint Pipeline#endpoint}.
 
 ---
 
@@ -3489,7 +3489,7 @@ public java.lang.String getKmsKey();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#kms_key Pipeline#kms_key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#kms_key Pipeline#kms_key}.
 
 ---
 
@@ -3501,7 +3501,7 @@ public java.lang.String getRegion();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#region Pipeline#region}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#region Pipeline#region}.
 
 ---
 
@@ -3521,7 +3521,7 @@ PipelineClusterClusterLogConfVolumes.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineClusterClusterLogConfVolumes.property.destination">destination</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#destination Pipeline#destination}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineClusterClusterLogConfVolumes.property.destination">destination</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#destination Pipeline#destination}. |
 
 ---
 
@@ -3533,7 +3533,7 @@ public java.lang.String getDestination();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#destination Pipeline#destination}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#destination Pipeline#destination}.
 
 ---
 
@@ -3558,12 +3558,12 @@ PipelineClusterGcpAttributes.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineClusterGcpAttributes.property.availability">availability</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#availability Pipeline#availability}. |
-| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineClusterGcpAttributes.property.confidentialComputeType">confidentialComputeType</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#confidential_compute_type Pipeline#confidential_compute_type}. |
-| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineClusterGcpAttributes.property.firstOnDemand">firstOnDemand</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#first_on_demand Pipeline#first_on_demand}. |
-| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineClusterGcpAttributes.property.googleServiceAccount">googleServiceAccount</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#google_service_account Pipeline#google_service_account}. |
-| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineClusterGcpAttributes.property.localSsdCount">localSsdCount</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#local_ssd_count Pipeline#local_ssd_count}. |
-| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineClusterGcpAttributes.property.zoneId">zoneId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#zone_id Pipeline#zone_id}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineClusterGcpAttributes.property.availability">availability</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#availability Pipeline#availability}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineClusterGcpAttributes.property.confidentialComputeType">confidentialComputeType</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#confidential_compute_type Pipeline#confidential_compute_type}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineClusterGcpAttributes.property.firstOnDemand">firstOnDemand</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#first_on_demand Pipeline#first_on_demand}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineClusterGcpAttributes.property.googleServiceAccount">googleServiceAccount</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#google_service_account Pipeline#google_service_account}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineClusterGcpAttributes.property.localSsdCount">localSsdCount</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#local_ssd_count Pipeline#local_ssd_count}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineClusterGcpAttributes.property.zoneId">zoneId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#zone_id Pipeline#zone_id}. |
 
 ---
 
@@ -3575,7 +3575,7 @@ public java.lang.String getAvailability();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#availability Pipeline#availability}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#availability Pipeline#availability}.
 
 ---
 
@@ -3587,7 +3587,7 @@ public java.lang.String getConfidentialComputeType();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#confidential_compute_type Pipeline#confidential_compute_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#confidential_compute_type Pipeline#confidential_compute_type}.
 
 ---
 
@@ -3599,7 +3599,7 @@ public java.lang.Number getFirstOnDemand();
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#first_on_demand Pipeline#first_on_demand}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#first_on_demand Pipeline#first_on_demand}.
 
 ---
 
@@ -3611,7 +3611,7 @@ public java.lang.String getGoogleServiceAccount();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#google_service_account Pipeline#google_service_account}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#google_service_account Pipeline#google_service_account}.
 
 ---
 
@@ -3623,7 +3623,7 @@ public java.lang.Number getLocalSsdCount();
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#local_ssd_count Pipeline#local_ssd_count}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#local_ssd_count Pipeline#local_ssd_count}.
 
 ---
 
@@ -3635,7 +3635,7 @@ public java.lang.String getZoneId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#zone_id Pipeline#zone_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#zone_id Pipeline#zone_id}.
 
 ---
 
@@ -3681,7 +3681,7 @@ public PipelineClusterInitScriptsAbfss getAbfss();
 
 abfss block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#abfss Pipeline#abfss}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#abfss Pipeline#abfss}
 
 ---
 
@@ -3695,7 +3695,7 @@ public PipelineClusterInitScriptsDbfs getDbfs();
 
 dbfs block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#dbfs Pipeline#dbfs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#dbfs Pipeline#dbfs}
 
 ---
 
@@ -3709,7 +3709,7 @@ public PipelineClusterInitScriptsFile getFile();
 
 file block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#file Pipeline#file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#file Pipeline#file}
 
 ---
 
@@ -3723,7 +3723,7 @@ public PipelineClusterInitScriptsGcs getGcs();
 
 gcs block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#gcs Pipeline#gcs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#gcs Pipeline#gcs}
 
 ---
 
@@ -3737,7 +3737,7 @@ public PipelineClusterInitScriptsS3 getS3();
 
 s3 block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#s3 Pipeline#s3}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#s3 Pipeline#s3}
 
 ---
 
@@ -3751,7 +3751,7 @@ public PipelineClusterInitScriptsVolumes getVolumes();
 
 volumes block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#volumes Pipeline#volumes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#volumes Pipeline#volumes}
 
 ---
 
@@ -3765,7 +3765,7 @@ public PipelineClusterInitScriptsWorkspace getWorkspace();
 
 workspace block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#workspace Pipeline#workspace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#workspace Pipeline#workspace}
 
 ---
 
@@ -3785,7 +3785,7 @@ PipelineClusterInitScriptsAbfss.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineClusterInitScriptsAbfss.property.destination">destination</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#destination Pipeline#destination}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineClusterInitScriptsAbfss.property.destination">destination</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#destination Pipeline#destination}. |
 
 ---
 
@@ -3797,7 +3797,7 @@ public java.lang.String getDestination();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#destination Pipeline#destination}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#destination Pipeline#destination}.
 
 ---
 
@@ -3817,7 +3817,7 @@ PipelineClusterInitScriptsDbfs.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineClusterInitScriptsDbfs.property.destination">destination</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#destination Pipeline#destination}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineClusterInitScriptsDbfs.property.destination">destination</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#destination Pipeline#destination}. |
 
 ---
 
@@ -3829,7 +3829,7 @@ public java.lang.String getDestination();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#destination Pipeline#destination}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#destination Pipeline#destination}.
 
 ---
 
@@ -3849,7 +3849,7 @@ PipelineClusterInitScriptsFile.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineClusterInitScriptsFile.property.destination">destination</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#destination Pipeline#destination}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineClusterInitScriptsFile.property.destination">destination</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#destination Pipeline#destination}. |
 
 ---
 
@@ -3861,7 +3861,7 @@ public java.lang.String getDestination();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#destination Pipeline#destination}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#destination Pipeline#destination}.
 
 ---
 
@@ -3881,7 +3881,7 @@ PipelineClusterInitScriptsGcs.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineClusterInitScriptsGcs.property.destination">destination</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#destination Pipeline#destination}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineClusterInitScriptsGcs.property.destination">destination</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#destination Pipeline#destination}. |
 
 ---
 
@@ -3893,7 +3893,7 @@ public java.lang.String getDestination();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#destination Pipeline#destination}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#destination Pipeline#destination}.
 
 ---
 
@@ -3919,13 +3919,13 @@ PipelineClusterInitScriptsS3.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineClusterInitScriptsS3.property.destination">destination</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#destination Pipeline#destination}. |
-| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineClusterInitScriptsS3.property.cannedAcl">cannedAcl</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#canned_acl Pipeline#canned_acl}. |
-| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineClusterInitScriptsS3.property.enableEncryption">enableEncryption</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#enable_encryption Pipeline#enable_encryption}. |
-| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineClusterInitScriptsS3.property.encryptionType">encryptionType</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#encryption_type Pipeline#encryption_type}. |
-| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineClusterInitScriptsS3.property.endpoint">endpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#endpoint Pipeline#endpoint}. |
-| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineClusterInitScriptsS3.property.kmsKey">kmsKey</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#kms_key Pipeline#kms_key}. |
-| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineClusterInitScriptsS3.property.region">region</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#region Pipeline#region}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineClusterInitScriptsS3.property.destination">destination</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#destination Pipeline#destination}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineClusterInitScriptsS3.property.cannedAcl">cannedAcl</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#canned_acl Pipeline#canned_acl}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineClusterInitScriptsS3.property.enableEncryption">enableEncryption</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#enable_encryption Pipeline#enable_encryption}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineClusterInitScriptsS3.property.encryptionType">encryptionType</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#encryption_type Pipeline#encryption_type}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineClusterInitScriptsS3.property.endpoint">endpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#endpoint Pipeline#endpoint}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineClusterInitScriptsS3.property.kmsKey">kmsKey</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#kms_key Pipeline#kms_key}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineClusterInitScriptsS3.property.region">region</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#region Pipeline#region}. |
 
 ---
 
@@ -3937,7 +3937,7 @@ public java.lang.String getDestination();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#destination Pipeline#destination}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#destination Pipeline#destination}.
 
 ---
 
@@ -3949,7 +3949,7 @@ public java.lang.String getCannedAcl();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#canned_acl Pipeline#canned_acl}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#canned_acl Pipeline#canned_acl}.
 
 ---
 
@@ -3961,7 +3961,7 @@ public java.lang.Boolean|IResolvable getEnableEncryption();
 
 - *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#enable_encryption Pipeline#enable_encryption}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#enable_encryption Pipeline#enable_encryption}.
 
 ---
 
@@ -3973,7 +3973,7 @@ public java.lang.String getEncryptionType();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#encryption_type Pipeline#encryption_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#encryption_type Pipeline#encryption_type}.
 
 ---
 
@@ -3985,7 +3985,7 @@ public java.lang.String getEndpoint();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#endpoint Pipeline#endpoint}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#endpoint Pipeline#endpoint}.
 
 ---
 
@@ -3997,7 +3997,7 @@ public java.lang.String getKmsKey();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#kms_key Pipeline#kms_key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#kms_key Pipeline#kms_key}.
 
 ---
 
@@ -4009,7 +4009,7 @@ public java.lang.String getRegion();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#region Pipeline#region}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#region Pipeline#region}.
 
 ---
 
@@ -4029,7 +4029,7 @@ PipelineClusterInitScriptsVolumes.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineClusterInitScriptsVolumes.property.destination">destination</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#destination Pipeline#destination}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineClusterInitScriptsVolumes.property.destination">destination</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#destination Pipeline#destination}. |
 
 ---
 
@@ -4041,7 +4041,7 @@ public java.lang.String getDestination();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#destination Pipeline#destination}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#destination Pipeline#destination}.
 
 ---
 
@@ -4061,7 +4061,7 @@ PipelineClusterInitScriptsWorkspace.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineClusterInitScriptsWorkspace.property.destination">destination</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#destination Pipeline#destination}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineClusterInitScriptsWorkspace.property.destination">destination</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#destination Pipeline#destination}. |
 
 ---
 
@@ -4073,7 +4073,7 @@ public java.lang.String getDestination();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#destination Pipeline#destination}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#destination Pipeline#destination}.
 
 ---
 
@@ -4149,49 +4149,49 @@ PipelineConfig.builder()
 | <code><a href="#@cdktn/provider-databricks.pipeline.PipelineConfig.property.lifecycle">lifecycle</a></code> | <code>io.cdktn.cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.pipeline.PipelineConfig.property.provider">provider</a></code> | <code>io.cdktn.cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.pipeline.PipelineConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineConfig.property.allowDuplicateNames">allowDuplicateNames</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#allow_duplicate_names Pipeline#allow_duplicate_names}. |
-| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineConfig.property.budgetPolicyId">budgetPolicyId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#budget_policy_id Pipeline#budget_policy_id}. |
-| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineConfig.property.catalog">catalog</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#catalog Pipeline#catalog}. |
-| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineConfig.property.cause">cause</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#cause Pipeline#cause}. |
-| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineConfig.property.channel">channel</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#channel Pipeline#channel}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineConfig.property.allowDuplicateNames">allowDuplicateNames</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#allow_duplicate_names Pipeline#allow_duplicate_names}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineConfig.property.budgetPolicyId">budgetPolicyId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#budget_policy_id Pipeline#budget_policy_id}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineConfig.property.catalog">catalog</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#catalog Pipeline#catalog}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineConfig.property.cause">cause</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#cause Pipeline#cause}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineConfig.property.channel">channel</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#channel Pipeline#channel}. |
 | <code><a href="#@cdktn/provider-databricks.pipeline.PipelineConfig.property.cluster">cluster</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-databricks.pipeline.PipelineCluster">PipelineCluster</a>></code> | cluster block. |
-| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineConfig.property.clusterId">clusterId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#cluster_id Pipeline#cluster_id}. |
-| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineConfig.property.configuration">configuration</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#configuration Pipeline#configuration}. |
-| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineConfig.property.continuous">continuous</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#continuous Pipeline#continuous}. |
-| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineConfig.property.creatorUserName">creatorUserName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#creator_user_name Pipeline#creator_user_name}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineConfig.property.clusterId">clusterId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#cluster_id Pipeline#cluster_id}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineConfig.property.configuration">configuration</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#configuration Pipeline#configuration}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineConfig.property.continuous">continuous</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#continuous Pipeline#continuous}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineConfig.property.creatorUserName">creatorUserName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#creator_user_name Pipeline#creator_user_name}. |
 | <code><a href="#@cdktn/provider-databricks.pipeline.PipelineConfig.property.deployment">deployment</a></code> | <code><a href="#@cdktn/provider-databricks.pipeline.PipelineDeployment">PipelineDeployment</a></code> | deployment block. |
-| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineConfig.property.development">development</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#development Pipeline#development}. |
-| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineConfig.property.edition">edition</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#edition Pipeline#edition}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineConfig.property.development">development</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#development Pipeline#development}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineConfig.property.edition">edition</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#edition Pipeline#edition}. |
 | <code><a href="#@cdktn/provider-databricks.pipeline.PipelineConfig.property.environment">environment</a></code> | <code><a href="#@cdktn/provider-databricks.pipeline.PipelineEnvironment">PipelineEnvironment</a></code> | environment block. |
 | <code><a href="#@cdktn/provider-databricks.pipeline.PipelineConfig.property.eventLog">eventLog</a></code> | <code><a href="#@cdktn/provider-databricks.pipeline.PipelineEventLog">PipelineEventLog</a></code> | event_log block. |
-| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineConfig.property.expectedLastModified">expectedLastModified</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#expected_last_modified Pipeline#expected_last_modified}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineConfig.property.expectedLastModified">expectedLastModified</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#expected_last_modified Pipeline#expected_last_modified}. |
 | <code><a href="#@cdktn/provider-databricks.pipeline.PipelineConfig.property.filters">filters</a></code> | <code><a href="#@cdktn/provider-databricks.pipeline.PipelineFilters">PipelineFilters</a></code> | filters block. |
 | <code><a href="#@cdktn/provider-databricks.pipeline.PipelineConfig.property.gatewayDefinition">gatewayDefinition</a></code> | <code><a href="#@cdktn/provider-databricks.pipeline.PipelineGatewayDefinition">PipelineGatewayDefinition</a></code> | gateway_definition block. |
-| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineConfig.property.health">health</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#health Pipeline#health}. |
-| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#id Pipeline#id}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineConfig.property.health">health</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#health Pipeline#health}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#id Pipeline#id}. |
 | <code><a href="#@cdktn/provider-databricks.pipeline.PipelineConfig.property.ingestionDefinition">ingestionDefinition</a></code> | <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinition">PipelineIngestionDefinition</a></code> | ingestion_definition block. |
-| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineConfig.property.lastModified">lastModified</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#last_modified Pipeline#last_modified}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineConfig.property.lastModified">lastModified</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#last_modified Pipeline#last_modified}. |
 | <code><a href="#@cdktn/provider-databricks.pipeline.PipelineConfig.property.latestUpdates">latestUpdates</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-databricks.pipeline.PipelineLatestUpdates">PipelineLatestUpdates</a>></code> | latest_updates block. |
 | <code><a href="#@cdktn/provider-databricks.pipeline.PipelineConfig.property.library">library</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-databricks.pipeline.PipelineLibrary">PipelineLibrary</a>></code> | library block. |
-| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineConfig.property.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#name Pipeline#name}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineConfig.property.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#name Pipeline#name}. |
 | <code><a href="#@cdktn/provider-databricks.pipeline.PipelineConfig.property.notification">notification</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-databricks.pipeline.PipelineNotification">PipelineNotification</a>></code> | notification block. |
-| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineConfig.property.photon">photon</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#photon Pipeline#photon}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineConfig.property.photon">photon</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#photon Pipeline#photon}. |
 | <code><a href="#@cdktn/provider-databricks.pipeline.PipelineConfig.property.providerConfig">providerConfig</a></code> | <code><a href="#@cdktn/provider-databricks.pipeline.PipelineProviderConfig">PipelineProviderConfig</a></code> | provider_config block. |
 | <code><a href="#@cdktn/provider-databricks.pipeline.PipelineConfig.property.restartWindow">restartWindow</a></code> | <code><a href="#@cdktn/provider-databricks.pipeline.PipelineRestartWindow">PipelineRestartWindow</a></code> | restart_window block. |
-| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineConfig.property.rootPath">rootPath</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#root_path Pipeline#root_path}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineConfig.property.rootPath">rootPath</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#root_path Pipeline#root_path}. |
 | <code><a href="#@cdktn/provider-databricks.pipeline.PipelineConfig.property.runAs">runAs</a></code> | <code><a href="#@cdktn/provider-databricks.pipeline.PipelineRunAs">PipelineRunAs</a></code> | run_as block. |
-| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineConfig.property.runAsUserName">runAsUserName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#run_as_user_name Pipeline#run_as_user_name}. |
-| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineConfig.property.schema">schema</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#schema Pipeline#schema}. |
-| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineConfig.property.serverless">serverless</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#serverless Pipeline#serverless}. |
-| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineConfig.property.serverlessComputeId">serverlessComputeId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#serverless_compute_id Pipeline#serverless_compute_id}. |
-| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineConfig.property.state">state</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#state Pipeline#state}. |
-| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineConfig.property.storage">storage</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#storage Pipeline#storage}. |
-| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineConfig.property.tags">tags</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#tags Pipeline#tags}. |
-| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineConfig.property.target">target</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#target Pipeline#target}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineConfig.property.runAsUserName">runAsUserName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#run_as_user_name Pipeline#run_as_user_name}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineConfig.property.schema">schema</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#schema Pipeline#schema}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineConfig.property.serverless">serverless</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#serverless Pipeline#serverless}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineConfig.property.serverlessComputeId">serverlessComputeId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#serverless_compute_id Pipeline#serverless_compute_id}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineConfig.property.state">state</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#state Pipeline#state}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineConfig.property.storage">storage</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#storage Pipeline#storage}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineConfig.property.tags">tags</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#tags Pipeline#tags}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineConfig.property.target">target</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#target Pipeline#target}. |
 | <code><a href="#@cdktn/provider-databricks.pipeline.PipelineConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-databricks.pipeline.PipelineTimeouts">PipelineTimeouts</a></code> | timeouts block. |
 | <code><a href="#@cdktn/provider-databricks.pipeline.PipelineConfig.property.trigger">trigger</a></code> | <code><a href="#@cdktn/provider-databricks.pipeline.PipelineTrigger">PipelineTrigger</a></code> | trigger block. |
-| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineConfig.property.url">url</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#url Pipeline#url}. |
-| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineConfig.property.usagePolicyId">usagePolicyId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#usage_policy_id Pipeline#usage_policy_id}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineConfig.property.url">url</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#url Pipeline#url}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineConfig.property.usagePolicyId">usagePolicyId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#usage_policy_id Pipeline#usage_policy_id}. |
 
 ---
 
@@ -4273,7 +4273,7 @@ public java.lang.Boolean|IResolvable getAllowDuplicateNames();
 
 - *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#allow_duplicate_names Pipeline#allow_duplicate_names}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#allow_duplicate_names Pipeline#allow_duplicate_names}.
 
 ---
 
@@ -4285,7 +4285,7 @@ public java.lang.String getBudgetPolicyId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#budget_policy_id Pipeline#budget_policy_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#budget_policy_id Pipeline#budget_policy_id}.
 
 ---
 
@@ -4297,7 +4297,7 @@ public java.lang.String getCatalog();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#catalog Pipeline#catalog}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#catalog Pipeline#catalog}.
 
 ---
 
@@ -4309,7 +4309,7 @@ public java.lang.String getCause();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#cause Pipeline#cause}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#cause Pipeline#cause}.
 
 ---
 
@@ -4321,7 +4321,7 @@ public java.lang.String getChannel();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#channel Pipeline#channel}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#channel Pipeline#channel}.
 
 ---
 
@@ -4335,7 +4335,7 @@ public IResolvable|java.util.List<PipelineCluster> getCluster();
 
 cluster block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#cluster Pipeline#cluster}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#cluster Pipeline#cluster}
 
 ---
 
@@ -4347,7 +4347,7 @@ public java.lang.String getClusterId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#cluster_id Pipeline#cluster_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#cluster_id Pipeline#cluster_id}.
 
 ---
 
@@ -4359,7 +4359,7 @@ public java.util.Map<java.lang.String, java.lang.String> getConfiguration();
 
 - *Type:* java.util.Map<java.lang.String, java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#configuration Pipeline#configuration}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#configuration Pipeline#configuration}.
 
 ---
 
@@ -4371,7 +4371,7 @@ public java.lang.Boolean|IResolvable getContinuous();
 
 - *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#continuous Pipeline#continuous}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#continuous Pipeline#continuous}.
 
 ---
 
@@ -4383,7 +4383,7 @@ public java.lang.String getCreatorUserName();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#creator_user_name Pipeline#creator_user_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#creator_user_name Pipeline#creator_user_name}.
 
 ---
 
@@ -4397,7 +4397,7 @@ public PipelineDeployment getDeployment();
 
 deployment block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#deployment Pipeline#deployment}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#deployment Pipeline#deployment}
 
 ---
 
@@ -4409,7 +4409,7 @@ public java.lang.Boolean|IResolvable getDevelopment();
 
 - *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#development Pipeline#development}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#development Pipeline#development}.
 
 ---
 
@@ -4421,7 +4421,7 @@ public java.lang.String getEdition();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#edition Pipeline#edition}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#edition Pipeline#edition}.
 
 ---
 
@@ -4435,7 +4435,7 @@ public PipelineEnvironment getEnvironment();
 
 environment block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#environment Pipeline#environment}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#environment Pipeline#environment}
 
 ---
 
@@ -4449,7 +4449,7 @@ public PipelineEventLog getEventLog();
 
 event_log block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#event_log Pipeline#event_log}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#event_log Pipeline#event_log}
 
 ---
 
@@ -4461,7 +4461,7 @@ public java.lang.Number getExpectedLastModified();
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#expected_last_modified Pipeline#expected_last_modified}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#expected_last_modified Pipeline#expected_last_modified}.
 
 ---
 
@@ -4475,7 +4475,7 @@ public PipelineFilters getFilters();
 
 filters block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#filters Pipeline#filters}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#filters Pipeline#filters}
 
 ---
 
@@ -4489,7 +4489,7 @@ public PipelineGatewayDefinition getGatewayDefinition();
 
 gateway_definition block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#gateway_definition Pipeline#gateway_definition}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#gateway_definition Pipeline#gateway_definition}
 
 ---
 
@@ -4501,7 +4501,7 @@ public java.lang.String getHealth();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#health Pipeline#health}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#health Pipeline#health}.
 
 ---
 
@@ -4513,7 +4513,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#id Pipeline#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#id Pipeline#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -4530,7 +4530,7 @@ public PipelineIngestionDefinition getIngestionDefinition();
 
 ingestion_definition block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#ingestion_definition Pipeline#ingestion_definition}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#ingestion_definition Pipeline#ingestion_definition}
 
 ---
 
@@ -4542,7 +4542,7 @@ public java.lang.Number getLastModified();
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#last_modified Pipeline#last_modified}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#last_modified Pipeline#last_modified}.
 
 ---
 
@@ -4556,7 +4556,7 @@ public IResolvable|java.util.List<PipelineLatestUpdates> getLatestUpdates();
 
 latest_updates block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#latest_updates Pipeline#latest_updates}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#latest_updates Pipeline#latest_updates}
 
 ---
 
@@ -4570,7 +4570,7 @@ public IResolvable|java.util.List<PipelineLibrary> getLibrary();
 
 library block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#library Pipeline#library}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#library Pipeline#library}
 
 ---
 
@@ -4582,7 +4582,7 @@ public java.lang.String getName();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#name Pipeline#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#name Pipeline#name}.
 
 ---
 
@@ -4596,7 +4596,7 @@ public IResolvable|java.util.List<PipelineNotification> getNotification();
 
 notification block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#notification Pipeline#notification}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#notification Pipeline#notification}
 
 ---
 
@@ -4608,7 +4608,7 @@ public java.lang.Boolean|IResolvable getPhoton();
 
 - *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#photon Pipeline#photon}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#photon Pipeline#photon}.
 
 ---
 
@@ -4622,7 +4622,7 @@ public PipelineProviderConfig getProviderConfig();
 
 provider_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#provider_config Pipeline#provider_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#provider_config Pipeline#provider_config}
 
 ---
 
@@ -4636,7 +4636,7 @@ public PipelineRestartWindow getRestartWindow();
 
 restart_window block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#restart_window Pipeline#restart_window}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#restart_window Pipeline#restart_window}
 
 ---
 
@@ -4648,7 +4648,7 @@ public java.lang.String getRootPath();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#root_path Pipeline#root_path}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#root_path Pipeline#root_path}.
 
 ---
 
@@ -4662,7 +4662,7 @@ public PipelineRunAs getRunAs();
 
 run_as block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#run_as Pipeline#run_as}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#run_as Pipeline#run_as}
 
 ---
 
@@ -4674,7 +4674,7 @@ public java.lang.String getRunAsUserName();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#run_as_user_name Pipeline#run_as_user_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#run_as_user_name Pipeline#run_as_user_name}.
 
 ---
 
@@ -4686,7 +4686,7 @@ public java.lang.String getSchema();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#schema Pipeline#schema}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#schema Pipeline#schema}.
 
 ---
 
@@ -4698,7 +4698,7 @@ public java.lang.Boolean|IResolvable getServerless();
 
 - *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#serverless Pipeline#serverless}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#serverless Pipeline#serverless}.
 
 ---
 
@@ -4710,7 +4710,7 @@ public java.lang.String getServerlessComputeId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#serverless_compute_id Pipeline#serverless_compute_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#serverless_compute_id Pipeline#serverless_compute_id}.
 
 ---
 
@@ -4722,7 +4722,7 @@ public java.lang.String getState();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#state Pipeline#state}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#state Pipeline#state}.
 
 ---
 
@@ -4734,7 +4734,7 @@ public java.lang.String getStorage();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#storage Pipeline#storage}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#storage Pipeline#storage}.
 
 ---
 
@@ -4746,7 +4746,7 @@ public java.util.Map<java.lang.String, java.lang.String> getTags();
 
 - *Type:* java.util.Map<java.lang.String, java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#tags Pipeline#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#tags Pipeline#tags}.
 
 ---
 
@@ -4758,7 +4758,7 @@ public java.lang.String getTarget();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#target Pipeline#target}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#target Pipeline#target}.
 
 ---
 
@@ -4772,7 +4772,7 @@ public PipelineTimeouts getTimeouts();
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#timeouts Pipeline#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#timeouts Pipeline#timeouts}
 
 ---
 
@@ -4786,7 +4786,7 @@ public PipelineTrigger getTrigger();
 
 trigger block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#trigger Pipeline#trigger}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#trigger Pipeline#trigger}
 
 ---
 
@@ -4798,7 +4798,7 @@ public java.lang.String getUrl();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#url Pipeline#url}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#url Pipeline#url}.
 
 ---
 
@@ -4810,7 +4810,7 @@ public java.lang.String getUsagePolicyId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#usage_policy_id Pipeline#usage_policy_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#usage_policy_id Pipeline#usage_policy_id}.
 
 ---
 
@@ -4833,10 +4833,10 @@ PipelineDeployment.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineDeployment.property.kind">kind</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#kind Pipeline#kind}. |
-| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineDeployment.property.deploymentId">deploymentId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#deployment_id Pipeline#deployment_id}. |
-| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineDeployment.property.metadataFilePath">metadataFilePath</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#metadata_file_path Pipeline#metadata_file_path}. |
-| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineDeployment.property.versionId">versionId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#version_id Pipeline#version_id}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineDeployment.property.kind">kind</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#kind Pipeline#kind}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineDeployment.property.deploymentId">deploymentId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#deployment_id Pipeline#deployment_id}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineDeployment.property.metadataFilePath">metadataFilePath</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#metadata_file_path Pipeline#metadata_file_path}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineDeployment.property.versionId">versionId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#version_id Pipeline#version_id}. |
 
 ---
 
@@ -4848,7 +4848,7 @@ public java.lang.String getKind();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#kind Pipeline#kind}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#kind Pipeline#kind}.
 
 ---
 
@@ -4860,7 +4860,7 @@ public java.lang.String getDeploymentId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#deployment_id Pipeline#deployment_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#deployment_id Pipeline#deployment_id}.
 
 ---
 
@@ -4872,7 +4872,7 @@ public java.lang.String getMetadataFilePath();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#metadata_file_path Pipeline#metadata_file_path}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#metadata_file_path Pipeline#metadata_file_path}.
 
 ---
 
@@ -4884,7 +4884,7 @@ public java.lang.String getVersionId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#version_id Pipeline#version_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#version_id Pipeline#version_id}.
 
 ---
 
@@ -4905,8 +4905,8 @@ PipelineEnvironment.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineEnvironment.property.dependencies">dependencies</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#dependencies Pipeline#dependencies}. |
-| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineEnvironment.property.environmentVersion">environmentVersion</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#environment_version Pipeline#environment_version}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineEnvironment.property.dependencies">dependencies</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#dependencies Pipeline#dependencies}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineEnvironment.property.environmentVersion">environmentVersion</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#environment_version Pipeline#environment_version}. |
 
 ---
 
@@ -4918,7 +4918,7 @@ public java.util.List<java.lang.String> getDependencies();
 
 - *Type:* java.util.List<java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#dependencies Pipeline#dependencies}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#dependencies Pipeline#dependencies}.
 
 ---
 
@@ -4930,7 +4930,7 @@ public java.lang.String getEnvironmentVersion();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#environment_version Pipeline#environment_version}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#environment_version Pipeline#environment_version}.
 
 ---
 
@@ -4952,9 +4952,9 @@ PipelineEventLog.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineEventLog.property.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#name Pipeline#name}. |
-| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineEventLog.property.catalog">catalog</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#catalog Pipeline#catalog}. |
-| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineEventLog.property.schema">schema</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#schema Pipeline#schema}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineEventLog.property.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#name Pipeline#name}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineEventLog.property.catalog">catalog</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#catalog Pipeline#catalog}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineEventLog.property.schema">schema</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#schema Pipeline#schema}. |
 
 ---
 
@@ -4966,7 +4966,7 @@ public java.lang.String getName();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#name Pipeline#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#name Pipeline#name}.
 
 ---
 
@@ -4978,7 +4978,7 @@ public java.lang.String getCatalog();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#catalog Pipeline#catalog}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#catalog Pipeline#catalog}.
 
 ---
 
@@ -4990,7 +4990,7 @@ public java.lang.String getSchema();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#schema Pipeline#schema}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#schema Pipeline#schema}.
 
 ---
 
@@ -5011,8 +5011,8 @@ PipelineFilters.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineFilters.property.exclude">exclude</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#exclude Pipeline#exclude}. |
-| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineFilters.property.include">include</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#include Pipeline#include}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineFilters.property.exclude">exclude</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#exclude Pipeline#exclude}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineFilters.property.include">include</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#include Pipeline#include}. |
 
 ---
 
@@ -5024,7 +5024,7 @@ public java.util.List<java.lang.String> getExclude();
 
 - *Type:* java.util.List<java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#exclude Pipeline#exclude}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#exclude Pipeline#exclude}.
 
 ---
 
@@ -5036,7 +5036,7 @@ public java.util.List<java.lang.String> getInclude();
 
 - *Type:* java.util.List<java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#include Pipeline#include}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#include Pipeline#include}.
 
 ---
 
@@ -5061,12 +5061,12 @@ PipelineGatewayDefinition.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineGatewayDefinition.property.connectionName">connectionName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#connection_name Pipeline#connection_name}. |
-| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineGatewayDefinition.property.gatewayStorageCatalog">gatewayStorageCatalog</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#gateway_storage_catalog Pipeline#gateway_storage_catalog}. |
-| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineGatewayDefinition.property.gatewayStorageSchema">gatewayStorageSchema</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#gateway_storage_schema Pipeline#gateway_storage_schema}. |
-| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineGatewayDefinition.property.connectionId">connectionId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#connection_id Pipeline#connection_id}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineGatewayDefinition.property.connectionName">connectionName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#connection_name Pipeline#connection_name}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineGatewayDefinition.property.gatewayStorageCatalog">gatewayStorageCatalog</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#gateway_storage_catalog Pipeline#gateway_storage_catalog}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineGatewayDefinition.property.gatewayStorageSchema">gatewayStorageSchema</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#gateway_storage_schema Pipeline#gateway_storage_schema}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineGatewayDefinition.property.connectionId">connectionId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#connection_id Pipeline#connection_id}. |
 | <code><a href="#@cdktn/provider-databricks.pipeline.PipelineGatewayDefinition.property.connectionParameters">connectionParameters</a></code> | <code><a href="#@cdktn/provider-databricks.pipeline.PipelineGatewayDefinitionConnectionParameters">PipelineGatewayDefinitionConnectionParameters</a></code> | connection_parameters block. |
-| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineGatewayDefinition.property.gatewayStorageName">gatewayStorageName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#gateway_storage_name Pipeline#gateway_storage_name}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineGatewayDefinition.property.gatewayStorageName">gatewayStorageName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#gateway_storage_name Pipeline#gateway_storage_name}. |
 
 ---
 
@@ -5078,7 +5078,7 @@ public java.lang.String getConnectionName();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#connection_name Pipeline#connection_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#connection_name Pipeline#connection_name}.
 
 ---
 
@@ -5090,7 +5090,7 @@ public java.lang.String getGatewayStorageCatalog();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#gateway_storage_catalog Pipeline#gateway_storage_catalog}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#gateway_storage_catalog Pipeline#gateway_storage_catalog}.
 
 ---
 
@@ -5102,7 +5102,7 @@ public java.lang.String getGatewayStorageSchema();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#gateway_storage_schema Pipeline#gateway_storage_schema}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#gateway_storage_schema Pipeline#gateway_storage_schema}.
 
 ---
 
@@ -5114,7 +5114,7 @@ public java.lang.String getConnectionId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#connection_id Pipeline#connection_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#connection_id Pipeline#connection_id}.
 
 ---
 
@@ -5128,7 +5128,7 @@ public PipelineGatewayDefinitionConnectionParameters getConnectionParameters();
 
 connection_parameters block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#connection_parameters Pipeline#connection_parameters}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#connection_parameters Pipeline#connection_parameters}
 
 ---
 
@@ -5140,7 +5140,7 @@ public java.lang.String getGatewayStorageName();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#gateway_storage_name Pipeline#gateway_storage_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#gateway_storage_name Pipeline#gateway_storage_name}.
 
 ---
 
@@ -5160,7 +5160,7 @@ PipelineGatewayDefinitionConnectionParameters.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineGatewayDefinitionConnectionParameters.property.sourceCatalog">sourceCatalog</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#source_catalog Pipeline#source_catalog}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineGatewayDefinitionConnectionParameters.property.sourceCatalog">sourceCatalog</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#source_catalog Pipeline#source_catalog}. |
 
 ---
 
@@ -5172,7 +5172,7 @@ public java.lang.String getSourceCatalog();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#source_catalog Pipeline#source_catalog}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#source_catalog Pipeline#source_catalog}.
 
 ---
 
@@ -5202,16 +5202,16 @@ PipelineIngestionDefinition.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinition.property.connectionName">connectionName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#connection_name Pipeline#connection_name}. |
-| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinition.property.connectorType">connectorType</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#connector_type Pipeline#connector_type}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinition.property.connectionName">connectionName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#connection_name Pipeline#connection_name}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinition.property.connectorType">connectorType</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#connector_type Pipeline#connector_type}. |
 | <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinition.property.dataStagingOptions">dataStagingOptions</a></code> | <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionDataStagingOptions">PipelineIngestionDefinitionDataStagingOptions</a></code> | data_staging_options block. |
 | <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinition.property.fullRefreshWindow">fullRefreshWindow</a></code> | <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionFullRefreshWindow">PipelineIngestionDefinitionFullRefreshWindow</a></code> | full_refresh_window block. |
-| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinition.property.ingestFromUcForeignCatalog">ingestFromUcForeignCatalog</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#ingest_from_uc_foreign_catalog Pipeline#ingest_from_uc_foreign_catalog}. |
-| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinition.property.ingestionGatewayId">ingestionGatewayId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#ingestion_gateway_id Pipeline#ingestion_gateway_id}. |
-| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinition.property.netsuiteJarPath">netsuiteJarPath</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#netsuite_jar_path Pipeline#netsuite_jar_path}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinition.property.ingestFromUcForeignCatalog">ingestFromUcForeignCatalog</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#ingest_from_uc_foreign_catalog Pipeline#ingest_from_uc_foreign_catalog}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinition.property.ingestionGatewayId">ingestionGatewayId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#ingestion_gateway_id Pipeline#ingestion_gateway_id}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinition.property.netsuiteJarPath">netsuiteJarPath</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#netsuite_jar_path Pipeline#netsuite_jar_path}. |
 | <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinition.property.objects">objects</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjects">PipelineIngestionDefinitionObjects</a>></code> | objects block. |
 | <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinition.property.sourceConfigurations">sourceConfigurations</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionSourceConfigurations">PipelineIngestionDefinitionSourceConfigurations</a>></code> | source_configurations block. |
-| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinition.property.sourceType">sourceType</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#source_type Pipeline#source_type}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinition.property.sourceType">sourceType</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#source_type Pipeline#source_type}. |
 | <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinition.property.tableConfiguration">tableConfiguration</a></code> | <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfiguration">PipelineIngestionDefinitionTableConfiguration</a></code> | table_configuration block. |
 
 ---
@@ -5224,7 +5224,7 @@ public java.lang.String getConnectionName();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#connection_name Pipeline#connection_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#connection_name Pipeline#connection_name}.
 
 ---
 
@@ -5236,7 +5236,7 @@ public java.lang.String getConnectorType();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#connector_type Pipeline#connector_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#connector_type Pipeline#connector_type}.
 
 ---
 
@@ -5250,7 +5250,7 @@ public PipelineIngestionDefinitionDataStagingOptions getDataStagingOptions();
 
 data_staging_options block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#data_staging_options Pipeline#data_staging_options}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#data_staging_options Pipeline#data_staging_options}
 
 ---
 
@@ -5264,7 +5264,7 @@ public PipelineIngestionDefinitionFullRefreshWindow getFullRefreshWindow();
 
 full_refresh_window block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#full_refresh_window Pipeline#full_refresh_window}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#full_refresh_window Pipeline#full_refresh_window}
 
 ---
 
@@ -5276,7 +5276,7 @@ public java.lang.Boolean|IResolvable getIngestFromUcForeignCatalog();
 
 - *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#ingest_from_uc_foreign_catalog Pipeline#ingest_from_uc_foreign_catalog}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#ingest_from_uc_foreign_catalog Pipeline#ingest_from_uc_foreign_catalog}.
 
 ---
 
@@ -5288,7 +5288,7 @@ public java.lang.String getIngestionGatewayId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#ingestion_gateway_id Pipeline#ingestion_gateway_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#ingestion_gateway_id Pipeline#ingestion_gateway_id}.
 
 ---
 
@@ -5300,7 +5300,7 @@ public java.lang.String getNetsuiteJarPath();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#netsuite_jar_path Pipeline#netsuite_jar_path}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#netsuite_jar_path Pipeline#netsuite_jar_path}.
 
 ---
 
@@ -5314,7 +5314,7 @@ public IResolvable|java.util.List<PipelineIngestionDefinitionObjects> getObjects
 
 objects block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#objects Pipeline#objects}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#objects Pipeline#objects}
 
 ---
 
@@ -5328,7 +5328,7 @@ public IResolvable|java.util.List<PipelineIngestionDefinitionSourceConfiguration
 
 source_configurations block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#source_configurations Pipeline#source_configurations}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#source_configurations Pipeline#source_configurations}
 
 ---
 
@@ -5340,7 +5340,7 @@ public java.lang.String getSourceType();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#source_type Pipeline#source_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#source_type Pipeline#source_type}.
 
 ---
 
@@ -5354,7 +5354,7 @@ public PipelineIngestionDefinitionTableConfiguration getTableConfiguration();
 
 table_configuration block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#table_configuration Pipeline#table_configuration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#table_configuration Pipeline#table_configuration}
 
 ---
 
@@ -5376,9 +5376,9 @@ PipelineIngestionDefinitionDataStagingOptions.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionDataStagingOptions.property.catalogName">catalogName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#catalog_name Pipeline#catalog_name}. |
-| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionDataStagingOptions.property.schemaName">schemaName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#schema_name Pipeline#schema_name}. |
-| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionDataStagingOptions.property.volumeName">volumeName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#volume_name Pipeline#volume_name}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionDataStagingOptions.property.catalogName">catalogName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#catalog_name Pipeline#catalog_name}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionDataStagingOptions.property.schemaName">schemaName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#schema_name Pipeline#schema_name}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionDataStagingOptions.property.volumeName">volumeName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#volume_name Pipeline#volume_name}. |
 
 ---
 
@@ -5390,7 +5390,7 @@ public java.lang.String getCatalogName();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#catalog_name Pipeline#catalog_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#catalog_name Pipeline#catalog_name}.
 
 ---
 
@@ -5402,7 +5402,7 @@ public java.lang.String getSchemaName();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#schema_name Pipeline#schema_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#schema_name Pipeline#schema_name}.
 
 ---
 
@@ -5414,7 +5414,7 @@ public java.lang.String getVolumeName();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#volume_name Pipeline#volume_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#volume_name Pipeline#volume_name}.
 
 ---
 
@@ -5436,9 +5436,9 @@ PipelineIngestionDefinitionFullRefreshWindow.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionFullRefreshWindow.property.startHour">startHour</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#start_hour Pipeline#start_hour}. |
-| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionFullRefreshWindow.property.daysOfWeek">daysOfWeek</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#days_of_week Pipeline#days_of_week}. |
-| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionFullRefreshWindow.property.timeZoneId">timeZoneId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#time_zone_id Pipeline#time_zone_id}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionFullRefreshWindow.property.startHour">startHour</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#start_hour Pipeline#start_hour}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionFullRefreshWindow.property.daysOfWeek">daysOfWeek</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#days_of_week Pipeline#days_of_week}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionFullRefreshWindow.property.timeZoneId">timeZoneId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#time_zone_id Pipeline#time_zone_id}. |
 
 ---
 
@@ -5450,7 +5450,7 @@ public java.lang.Number getStartHour();
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#start_hour Pipeline#start_hour}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#start_hour Pipeline#start_hour}.
 
 ---
 
@@ -5462,7 +5462,7 @@ public java.util.List<java.lang.String> getDaysOfWeek();
 
 - *Type:* java.util.List<java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#days_of_week Pipeline#days_of_week}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#days_of_week Pipeline#days_of_week}.
 
 ---
 
@@ -5474,7 +5474,7 @@ public java.lang.String getTimeZoneId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#time_zone_id Pipeline#time_zone_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#time_zone_id Pipeline#time_zone_id}.
 
 ---
 
@@ -5512,7 +5512,7 @@ public PipelineIngestionDefinitionObjectsReport getReport();
 
 report block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#report Pipeline#report}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#report Pipeline#report}
 
 ---
 
@@ -5526,7 +5526,7 @@ public PipelineIngestionDefinitionObjectsSchema getSchema();
 
 schema block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#schema Pipeline#schema}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#schema Pipeline#schema}
 
 ---
 
@@ -5540,7 +5540,7 @@ public PipelineIngestionDefinitionObjectsTable getTable();
 
 table block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#table Pipeline#table}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#table Pipeline#table}
 
 ---
 
@@ -5564,10 +5564,10 @@ PipelineIngestionDefinitionObjectsReport.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReport.property.destinationCatalog">destinationCatalog</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#destination_catalog Pipeline#destination_catalog}. |
-| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReport.property.destinationSchema">destinationSchema</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#destination_schema Pipeline#destination_schema}. |
-| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReport.property.sourceUrl">sourceUrl</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#source_url Pipeline#source_url}. |
-| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReport.property.destinationTable">destinationTable</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#destination_table Pipeline#destination_table}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReport.property.destinationCatalog">destinationCatalog</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#destination_catalog Pipeline#destination_catalog}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReport.property.destinationSchema">destinationSchema</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#destination_schema Pipeline#destination_schema}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReport.property.sourceUrl">sourceUrl</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#source_url Pipeline#source_url}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReport.property.destinationTable">destinationTable</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#destination_table Pipeline#destination_table}. |
 | <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReport.property.tableConfiguration">tableConfiguration</a></code> | <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfiguration">PipelineIngestionDefinitionObjectsReportTableConfiguration</a></code> | table_configuration block. |
 
 ---
@@ -5580,7 +5580,7 @@ public java.lang.String getDestinationCatalog();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#destination_catalog Pipeline#destination_catalog}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#destination_catalog Pipeline#destination_catalog}.
 
 ---
 
@@ -5592,7 +5592,7 @@ public java.lang.String getDestinationSchema();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#destination_schema Pipeline#destination_schema}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#destination_schema Pipeline#destination_schema}.
 
 ---
 
@@ -5604,7 +5604,7 @@ public java.lang.String getSourceUrl();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#source_url Pipeline#source_url}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#source_url Pipeline#source_url}.
 
 ---
 
@@ -5616,7 +5616,7 @@ public java.lang.String getDestinationTable();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#destination_table Pipeline#destination_table}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#destination_table Pipeline#destination_table}.
 
 ---
 
@@ -5630,7 +5630,7 @@ public PipelineIngestionDefinitionObjectsReportTableConfiguration getTableConfig
 
 table_configuration block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#table_configuration Pipeline#table_configuration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#table_configuration Pipeline#table_configuration}
 
 ---
 
@@ -5664,18 +5664,18 @@ PipelineIngestionDefinitionObjectsReportTableConfiguration.builder()
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfiguration.property.autoFullRefreshPolicy">autoFullRefreshPolicy</a></code> | <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationAutoFullRefreshPolicy">PipelineIngestionDefinitionObjectsReportTableConfigurationAutoFullRefreshPolicy</a></code> | auto_full_refresh_policy block. |
-| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfiguration.property.clusteringColumns">clusteringColumns</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#clustering_columns Pipeline#clustering_columns}. |
-| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfiguration.property.enableAutoClustering">enableAutoClustering</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#enable_auto_clustering Pipeline#enable_auto_clustering}. |
-| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfiguration.property.excludeColumns">excludeColumns</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#exclude_columns Pipeline#exclude_columns}. |
-| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfiguration.property.includeColumns">includeColumns</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#include_columns Pipeline#include_columns}. |
-| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfiguration.property.primaryKeys">primaryKeys</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#primary_keys Pipeline#primary_keys}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfiguration.property.clusteringColumns">clusteringColumns</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#clustering_columns Pipeline#clustering_columns}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfiguration.property.enableAutoClustering">enableAutoClustering</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#enable_auto_clustering Pipeline#enable_auto_clustering}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfiguration.property.excludeColumns">excludeColumns</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#exclude_columns Pipeline#exclude_columns}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfiguration.property.includeColumns">includeColumns</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#include_columns Pipeline#include_columns}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfiguration.property.primaryKeys">primaryKeys</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#primary_keys Pipeline#primary_keys}. |
 | <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfiguration.property.queryBasedConnectorConfig">queryBasedConnectorConfig</a></code> | <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationQueryBasedConnectorConfig">PipelineIngestionDefinitionObjectsReportTableConfigurationQueryBasedConnectorConfig</a></code> | query_based_connector_config block. |
-| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfiguration.property.rowFilter">rowFilter</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#row_filter Pipeline#row_filter}. |
-| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfiguration.property.salesforceIncludeFormulaFields">salesforceIncludeFormulaFields</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#salesforce_include_formula_fields Pipeline#salesforce_include_formula_fields}. |
-| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfiguration.property.scdType">scdType</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#scd_type Pipeline#scd_type}. |
-| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfiguration.property.sequenceBy">sequenceBy</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#sequence_by Pipeline#sequence_by}. |
-| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfiguration.property.sourceMetadataColumn">sourceMetadataColumn</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#source_metadata_column Pipeline#source_metadata_column}. |
-| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfiguration.property.tableProperties">tableProperties</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#table_properties Pipeline#table_properties}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfiguration.property.rowFilter">rowFilter</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#row_filter Pipeline#row_filter}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfiguration.property.salesforceIncludeFormulaFields">salesforceIncludeFormulaFields</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#salesforce_include_formula_fields Pipeline#salesforce_include_formula_fields}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfiguration.property.scdType">scdType</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#scd_type Pipeline#scd_type}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfiguration.property.sequenceBy">sequenceBy</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#sequence_by Pipeline#sequence_by}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfiguration.property.sourceMetadataColumn">sourceMetadataColumn</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#source_metadata_column Pipeline#source_metadata_column}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfiguration.property.tableProperties">tableProperties</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#table_properties Pipeline#table_properties}. |
 | <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfiguration.property.workdayReportParameters">workdayReportParameters</a></code> | <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParameters">PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParameters</a></code> | workday_report_parameters block. |
 
 ---
@@ -5690,7 +5690,7 @@ public PipelineIngestionDefinitionObjectsReportTableConfigurationAutoFullRefresh
 
 auto_full_refresh_policy block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#auto_full_refresh_policy Pipeline#auto_full_refresh_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#auto_full_refresh_policy Pipeline#auto_full_refresh_policy}
 
 ---
 
@@ -5702,7 +5702,7 @@ public java.util.List<java.lang.String> getClusteringColumns();
 
 - *Type:* java.util.List<java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#clustering_columns Pipeline#clustering_columns}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#clustering_columns Pipeline#clustering_columns}.
 
 ---
 
@@ -5714,7 +5714,7 @@ public java.lang.Boolean|IResolvable getEnableAutoClustering();
 
 - *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#enable_auto_clustering Pipeline#enable_auto_clustering}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#enable_auto_clustering Pipeline#enable_auto_clustering}.
 
 ---
 
@@ -5726,7 +5726,7 @@ public java.util.List<java.lang.String> getExcludeColumns();
 
 - *Type:* java.util.List<java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#exclude_columns Pipeline#exclude_columns}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#exclude_columns Pipeline#exclude_columns}.
 
 ---
 
@@ -5738,7 +5738,7 @@ public java.util.List<java.lang.String> getIncludeColumns();
 
 - *Type:* java.util.List<java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#include_columns Pipeline#include_columns}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#include_columns Pipeline#include_columns}.
 
 ---
 
@@ -5750,7 +5750,7 @@ public java.util.List<java.lang.String> getPrimaryKeys();
 
 - *Type:* java.util.List<java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#primary_keys Pipeline#primary_keys}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#primary_keys Pipeline#primary_keys}.
 
 ---
 
@@ -5764,7 +5764,7 @@ public PipelineIngestionDefinitionObjectsReportTableConfigurationQueryBasedConne
 
 query_based_connector_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#query_based_connector_config Pipeline#query_based_connector_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#query_based_connector_config Pipeline#query_based_connector_config}
 
 ---
 
@@ -5776,7 +5776,7 @@ public java.lang.String getRowFilter();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#row_filter Pipeline#row_filter}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#row_filter Pipeline#row_filter}.
 
 ---
 
@@ -5788,7 +5788,7 @@ public java.lang.Boolean|IResolvable getSalesforceIncludeFormulaFields();
 
 - *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#salesforce_include_formula_fields Pipeline#salesforce_include_formula_fields}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#salesforce_include_formula_fields Pipeline#salesforce_include_formula_fields}.
 
 ---
 
@@ -5800,7 +5800,7 @@ public java.lang.String getScdType();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#scd_type Pipeline#scd_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#scd_type Pipeline#scd_type}.
 
 ---
 
@@ -5812,7 +5812,7 @@ public java.util.List<java.lang.String> getSequenceBy();
 
 - *Type:* java.util.List<java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#sequence_by Pipeline#sequence_by}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#sequence_by Pipeline#sequence_by}.
 
 ---
 
@@ -5824,7 +5824,7 @@ public java.lang.String getSourceMetadataColumn();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#source_metadata_column Pipeline#source_metadata_column}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#source_metadata_column Pipeline#source_metadata_column}.
 
 ---
 
@@ -5836,7 +5836,7 @@ public java.util.Map<java.lang.String, java.lang.String> getTableProperties();
 
 - *Type:* java.util.Map<java.lang.String, java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#table_properties Pipeline#table_properties}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#table_properties Pipeline#table_properties}.
 
 ---
 
@@ -5850,7 +5850,7 @@ public PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportPa
 
 workday_report_parameters block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#workday_report_parameters Pipeline#workday_report_parameters}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#workday_report_parameters Pipeline#workday_report_parameters}
 
 ---
 
@@ -5871,8 +5871,8 @@ PipelineIngestionDefinitionObjectsReportTableConfigurationAutoFullRefreshPolicy.
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationAutoFullRefreshPolicy.property.enabled">enabled</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#enabled Pipeline#enabled}. |
-| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationAutoFullRefreshPolicy.property.minIntervalHours">minIntervalHours</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#min_interval_hours Pipeline#min_interval_hours}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationAutoFullRefreshPolicy.property.enabled">enabled</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#enabled Pipeline#enabled}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationAutoFullRefreshPolicy.property.minIntervalHours">minIntervalHours</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#min_interval_hours Pipeline#min_interval_hours}. |
 
 ---
 
@@ -5884,7 +5884,7 @@ public java.lang.Boolean|IResolvable getEnabled();
 
 - *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#enabled Pipeline#enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#enabled Pipeline#enabled}.
 
 ---
 
@@ -5896,7 +5896,7 @@ public java.lang.Number getMinIntervalHours();
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#min_interval_hours Pipeline#min_interval_hours}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#min_interval_hours Pipeline#min_interval_hours}.
 
 ---
 
@@ -5918,9 +5918,9 @@ PipelineIngestionDefinitionObjectsReportTableConfigurationQueryBasedConnectorCon
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationQueryBasedConnectorConfig.property.cursorColumns">cursorColumns</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#cursor_columns Pipeline#cursor_columns}. |
-| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationQueryBasedConnectorConfig.property.deletionCondition">deletionCondition</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#deletion_condition Pipeline#deletion_condition}. |
-| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationQueryBasedConnectorConfig.property.hardDeletionSyncMinIntervalInSeconds">hardDeletionSyncMinIntervalInSeconds</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#hard_deletion_sync_min_interval_in_seconds Pipeline#hard_deletion_sync_min_interval_in_seconds}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationQueryBasedConnectorConfig.property.cursorColumns">cursorColumns</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#cursor_columns Pipeline#cursor_columns}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationQueryBasedConnectorConfig.property.deletionCondition">deletionCondition</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#deletion_condition Pipeline#deletion_condition}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationQueryBasedConnectorConfig.property.hardDeletionSyncMinIntervalInSeconds">hardDeletionSyncMinIntervalInSeconds</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#hard_deletion_sync_min_interval_in_seconds Pipeline#hard_deletion_sync_min_interval_in_seconds}. |
 
 ---
 
@@ -5932,7 +5932,7 @@ public java.util.List<java.lang.String> getCursorColumns();
 
 - *Type:* java.util.List<java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#cursor_columns Pipeline#cursor_columns}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#cursor_columns Pipeline#cursor_columns}.
 
 ---
 
@@ -5944,7 +5944,7 @@ public java.lang.String getDeletionCondition();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#deletion_condition Pipeline#deletion_condition}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#deletion_condition Pipeline#deletion_condition}.
 
 ---
 
@@ -5956,7 +5956,7 @@ public java.lang.Number getHardDeletionSyncMinIntervalInSeconds();
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#hard_deletion_sync_min_interval_in_seconds Pipeline#hard_deletion_sync_min_interval_in_seconds}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#hard_deletion_sync_min_interval_in_seconds Pipeline#hard_deletion_sync_min_interval_in_seconds}.
 
 ---
 
@@ -5978,8 +5978,8 @@ PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParameter
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParameters.property.incremental">incremental</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#incremental Pipeline#incremental}. |
-| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParameters.property.parameters">parameters</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#parameters Pipeline#parameters}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParameters.property.incremental">incremental</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#incremental Pipeline#incremental}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParameters.property.parameters">parameters</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#parameters Pipeline#parameters}. |
 | <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParameters.property.reportParameters">reportParameters</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersReportParameters">PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersReportParameters</a>></code> | report_parameters block. |
 
 ---
@@ -5992,7 +5992,7 @@ public java.lang.Boolean|IResolvable getIncremental();
 
 - *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#incremental Pipeline#incremental}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#incremental Pipeline#incremental}.
 
 ---
 
@@ -6004,7 +6004,7 @@ public java.util.Map<java.lang.String, java.lang.String> getParameters();
 
 - *Type:* java.util.Map<java.lang.String, java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#parameters Pipeline#parameters}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#parameters Pipeline#parameters}.
 
 ---
 
@@ -6018,7 +6018,7 @@ public IResolvable|java.util.List<PipelineIngestionDefinitionObjectsReportTableC
 
 report_parameters block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#report_parameters Pipeline#report_parameters}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#report_parameters Pipeline#report_parameters}
 
 ---
 
@@ -6039,8 +6039,8 @@ PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParameter
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersReportParameters.property.key">key</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#key Pipeline#key}. |
-| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersReportParameters.property.value">value</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#value Pipeline#value}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersReportParameters.property.key">key</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#key Pipeline#key}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersReportParameters.property.value">value</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#value Pipeline#value}. |
 
 ---
 
@@ -6052,7 +6052,7 @@ public java.lang.String getKey();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#key Pipeline#key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#key Pipeline#key}.
 
 ---
 
@@ -6064,7 +6064,7 @@ public java.lang.String getValue();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#value Pipeline#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#value Pipeline#value}.
 
 ---
 
@@ -6080,6 +6080,7 @@ PipelineIngestionDefinitionObjectsSchema.builder()
     .destinationSchema(java.lang.String)
     .sourceSchema(java.lang.String)
 //  .connectorOptions(PipelineIngestionDefinitionObjectsSchemaConnectorOptions)
+//  .fanoutOptions(PipelineIngestionDefinitionObjectsSchemaFanoutOptions)
 //  .sourceCatalog(java.lang.String)
 //  .tableConfiguration(PipelineIngestionDefinitionObjectsSchemaTableConfiguration)
     .build();
@@ -6089,11 +6090,12 @@ PipelineIngestionDefinitionObjectsSchema.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchema.property.destinationCatalog">destinationCatalog</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#destination_catalog Pipeline#destination_catalog}. |
-| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchema.property.destinationSchema">destinationSchema</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#destination_schema Pipeline#destination_schema}. |
-| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchema.property.sourceSchema">sourceSchema</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#source_schema Pipeline#source_schema}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchema.property.destinationCatalog">destinationCatalog</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#destination_catalog Pipeline#destination_catalog}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchema.property.destinationSchema">destinationSchema</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#destination_schema Pipeline#destination_schema}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchema.property.sourceSchema">sourceSchema</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#source_schema Pipeline#source_schema}. |
 | <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchema.property.connectorOptions">connectorOptions</a></code> | <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptions">PipelineIngestionDefinitionObjectsSchemaConnectorOptions</a></code> | connector_options block. |
-| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchema.property.sourceCatalog">sourceCatalog</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#source_catalog Pipeline#source_catalog}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchema.property.fanoutOptions">fanoutOptions</a></code> | <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaFanoutOptions">PipelineIngestionDefinitionObjectsSchemaFanoutOptions</a></code> | fanout_options block. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchema.property.sourceCatalog">sourceCatalog</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#source_catalog Pipeline#source_catalog}. |
 | <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchema.property.tableConfiguration">tableConfiguration</a></code> | <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfiguration">PipelineIngestionDefinitionObjectsSchemaTableConfiguration</a></code> | table_configuration block. |
 
 ---
@@ -6106,7 +6108,7 @@ public java.lang.String getDestinationCatalog();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#destination_catalog Pipeline#destination_catalog}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#destination_catalog Pipeline#destination_catalog}.
 
 ---
 
@@ -6118,7 +6120,7 @@ public java.lang.String getDestinationSchema();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#destination_schema Pipeline#destination_schema}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#destination_schema Pipeline#destination_schema}.
 
 ---
 
@@ -6130,7 +6132,7 @@ public java.lang.String getSourceSchema();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#source_schema Pipeline#source_schema}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#source_schema Pipeline#source_schema}.
 
 ---
 
@@ -6144,7 +6146,21 @@ public PipelineIngestionDefinitionObjectsSchemaConnectorOptions getConnectorOpti
 
 connector_options block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#connector_options Pipeline#connector_options}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#connector_options Pipeline#connector_options}
+
+---
+
+##### `fanoutOptions`<sup>Optional</sup> <a name="fanoutOptions" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchema.property.fanoutOptions"></a>
+
+```java
+public PipelineIngestionDefinitionObjectsSchemaFanoutOptions getFanoutOptions();
+```
+
+- *Type:* <a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaFanoutOptions">PipelineIngestionDefinitionObjectsSchemaFanoutOptions</a>
+
+fanout_options block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#fanout_options Pipeline#fanout_options}
 
 ---
 
@@ -6156,7 +6172,7 @@ public java.lang.String getSourceCatalog();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#source_catalog Pipeline#source_catalog}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#source_catalog Pipeline#source_catalog}.
 
 ---
 
@@ -6170,7 +6186,7 @@ public PipelineIngestionDefinitionObjectsSchemaTableConfiguration getTableConfig
 
 table_configuration block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#table_configuration Pipeline#table_configuration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#table_configuration Pipeline#table_configuration}
 
 ---
 
@@ -6189,6 +6205,7 @@ PipelineIngestionDefinitionObjectsSchemaConnectorOptions.builder()
 //  .kafkaOptions(PipelineIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptions)
 //  .metaAdsOptions(PipelineIngestionDefinitionObjectsSchemaConnectorOptionsMetaAdsOptions)
 //  .outlookOptions(PipelineIngestionDefinitionObjectsSchemaConnectorOptionsOutlookOptions)
+//  .redditAdsOptions(PipelineIngestionDefinitionObjectsSchemaConnectorOptionsRedditAdsOptions)
 //  .sharepointOptions(PipelineIngestionDefinitionObjectsSchemaConnectorOptionsSharepointOptions)
 //  .smartsheetOptions(PipelineIngestionDefinitionObjectsSchemaConnectorOptionsSmartsheetOptions)
 //  .tiktokAdsOptions(PipelineIngestionDefinitionObjectsSchemaConnectorOptionsTiktokAdsOptions)
@@ -6207,6 +6224,7 @@ PipelineIngestionDefinitionObjectsSchemaConnectorOptions.builder()
 | <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptions.property.kafkaOptions">kafkaOptions</a></code> | <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptions">PipelineIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptions</a></code> | kafka_options block. |
 | <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptions.property.metaAdsOptions">metaAdsOptions</a></code> | <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsMetaAdsOptions">PipelineIngestionDefinitionObjectsSchemaConnectorOptionsMetaAdsOptions</a></code> | meta_ads_options block. |
 | <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptions.property.outlookOptions">outlookOptions</a></code> | <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsOutlookOptions">PipelineIngestionDefinitionObjectsSchemaConnectorOptionsOutlookOptions</a></code> | outlook_options block. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptions.property.redditAdsOptions">redditAdsOptions</a></code> | <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsRedditAdsOptions">PipelineIngestionDefinitionObjectsSchemaConnectorOptionsRedditAdsOptions</a></code> | reddit_ads_options block. |
 | <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptions.property.sharepointOptions">sharepointOptions</a></code> | <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsSharepointOptions">PipelineIngestionDefinitionObjectsSchemaConnectorOptionsSharepointOptions</a></code> | sharepoint_options block. |
 | <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptions.property.smartsheetOptions">smartsheetOptions</a></code> | <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsSmartsheetOptions">PipelineIngestionDefinitionObjectsSchemaConnectorOptionsSmartsheetOptions</a></code> | smartsheet_options block. |
 | <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptions.property.tiktokAdsOptions">tiktokAdsOptions</a></code> | <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsTiktokAdsOptions">PipelineIngestionDefinitionObjectsSchemaConnectorOptionsTiktokAdsOptions</a></code> | tiktok_ads_options block. |
@@ -6224,7 +6242,7 @@ public PipelineIngestionDefinitionObjectsSchemaConnectorOptionsConfluenceOptions
 
 confluence_options block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#confluence_options Pipeline#confluence_options}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#confluence_options Pipeline#confluence_options}
 
 ---
 
@@ -6238,7 +6256,7 @@ public PipelineIngestionDefinitionObjectsSchemaConnectorOptionsGdriveOptions get
 
 gdrive_options block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#gdrive_options Pipeline#gdrive_options}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#gdrive_options Pipeline#gdrive_options}
 
 ---
 
@@ -6252,7 +6270,7 @@ public PipelineIngestionDefinitionObjectsSchemaConnectorOptionsGoogleAdsOptions 
 
 google_ads_options block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#google_ads_options Pipeline#google_ads_options}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#google_ads_options Pipeline#google_ads_options}
 
 ---
 
@@ -6266,7 +6284,7 @@ public PipelineIngestionDefinitionObjectsSchemaConnectorOptionsJiraOptions getJi
 
 jira_options block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#jira_options Pipeline#jira_options}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#jira_options Pipeline#jira_options}
 
 ---
 
@@ -6280,7 +6298,7 @@ public PipelineIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptions getK
 
 kafka_options block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#kafka_options Pipeline#kafka_options}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#kafka_options Pipeline#kafka_options}
 
 ---
 
@@ -6294,7 +6312,7 @@ public PipelineIngestionDefinitionObjectsSchemaConnectorOptionsMetaAdsOptions ge
 
 meta_ads_options block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#meta_ads_options Pipeline#meta_ads_options}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#meta_ads_options Pipeline#meta_ads_options}
 
 ---
 
@@ -6308,7 +6326,21 @@ public PipelineIngestionDefinitionObjectsSchemaConnectorOptionsOutlookOptions ge
 
 outlook_options block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#outlook_options Pipeline#outlook_options}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#outlook_options Pipeline#outlook_options}
+
+---
+
+##### `redditAdsOptions`<sup>Optional</sup> <a name="redditAdsOptions" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptions.property.redditAdsOptions"></a>
+
+```java
+public PipelineIngestionDefinitionObjectsSchemaConnectorOptionsRedditAdsOptions getRedditAdsOptions();
+```
+
+- *Type:* <a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsRedditAdsOptions">PipelineIngestionDefinitionObjectsSchemaConnectorOptionsRedditAdsOptions</a>
+
+reddit_ads_options block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#reddit_ads_options Pipeline#reddit_ads_options}
 
 ---
 
@@ -6322,7 +6354,7 @@ public PipelineIngestionDefinitionObjectsSchemaConnectorOptionsSharepointOptions
 
 sharepoint_options block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#sharepoint_options Pipeline#sharepoint_options}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#sharepoint_options Pipeline#sharepoint_options}
 
 ---
 
@@ -6336,7 +6368,7 @@ public PipelineIngestionDefinitionObjectsSchemaConnectorOptionsSmartsheetOptions
 
 smartsheet_options block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#smartsheet_options Pipeline#smartsheet_options}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#smartsheet_options Pipeline#smartsheet_options}
 
 ---
 
@@ -6350,7 +6382,7 @@ public PipelineIngestionDefinitionObjectsSchemaConnectorOptionsTiktokAdsOptions 
 
 tiktok_ads_options block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#tiktok_ads_options Pipeline#tiktok_ads_options}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#tiktok_ads_options Pipeline#tiktok_ads_options}
 
 ---
 
@@ -6364,7 +6396,7 @@ public PipelineIngestionDefinitionObjectsSchemaConnectorOptionsZendeskSupportOpt
 
 zendesk_support_options block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#zendesk_support_options Pipeline#zendesk_support_options}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#zendesk_support_options Pipeline#zendesk_support_options}
 
 ---
 
@@ -6384,7 +6416,7 @@ PipelineIngestionDefinitionObjectsSchemaConnectorOptionsConfluenceOptions.builde
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsConfluenceOptions.property.includeConfluenceSpaces">includeConfluenceSpaces</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#include_confluence_spaces Pipeline#include_confluence_spaces}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsConfluenceOptions.property.includeConfluenceSpaces">includeConfluenceSpaces</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#include_confluence_spaces Pipeline#include_confluence_spaces}. |
 
 ---
 
@@ -6396,7 +6428,7 @@ public java.util.List<java.lang.String> getIncludeConfluenceSpaces();
 
 - *Type:* java.util.List<java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#include_confluence_spaces Pipeline#include_confluence_spaces}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#include_confluence_spaces Pipeline#include_confluence_spaces}.
 
 ---
 
@@ -6418,9 +6450,9 @@ PipelineIngestionDefinitionObjectsSchemaConnectorOptionsGdriveOptions.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsGdriveOptions.property.entityType">entityType</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#entity_type Pipeline#entity_type}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsGdriveOptions.property.entityType">entityType</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#entity_type Pipeline#entity_type}. |
 | <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsGdriveOptions.property.fileIngestionOptions">fileIngestionOptions</a></code> | <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsGdriveOptionsFileIngestionOptions">PipelineIngestionDefinitionObjectsSchemaConnectorOptionsGdriveOptionsFileIngestionOptions</a></code> | file_ingestion_options block. |
-| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsGdriveOptions.property.url">url</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#url Pipeline#url}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsGdriveOptions.property.url">url</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#url Pipeline#url}. |
 
 ---
 
@@ -6432,7 +6464,7 @@ public java.lang.String getEntityType();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#entity_type Pipeline#entity_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#entity_type Pipeline#entity_type}.
 
 ---
 
@@ -6446,7 +6478,7 @@ public PipelineIngestionDefinitionObjectsSchemaConnectorOptionsGdriveOptionsFile
 
 file_ingestion_options block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#file_ingestion_options Pipeline#file_ingestion_options}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#file_ingestion_options Pipeline#file_ingestion_options}
 
 ---
 
@@ -6458,7 +6490,7 @@ public java.lang.String getUrl();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#url Pipeline#url}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#url Pipeline#url}.
 
 ---
 
@@ -6488,17 +6520,17 @@ PipelineIngestionDefinitionObjectsSchemaConnectorOptionsGdriveOptionsFileIngesti
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsGdriveOptionsFileIngestionOptions.property.corruptRecordColumn">corruptRecordColumn</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#corrupt_record_column Pipeline#corrupt_record_column}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsGdriveOptionsFileIngestionOptions.property.corruptRecordColumn">corruptRecordColumn</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#corrupt_record_column Pipeline#corrupt_record_column}. |
 | <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsGdriveOptionsFileIngestionOptions.property.fileFilters">fileFilters</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsGdriveOptionsFileIngestionOptionsFileFilters">PipelineIngestionDefinitionObjectsSchemaConnectorOptionsGdriveOptionsFileIngestionOptionsFileFilters</a>></code> | file_filters block. |
-| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsGdriveOptionsFileIngestionOptions.property.format">format</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#format Pipeline#format}. |
-| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsGdriveOptionsFileIngestionOptions.property.formatOptions">formatOptions</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#format_options Pipeline#format_options}. |
-| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsGdriveOptionsFileIngestionOptions.property.ignoreCorruptFiles">ignoreCorruptFiles</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#ignore_corrupt_files Pipeline#ignore_corrupt_files}. |
-| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsGdriveOptionsFileIngestionOptions.property.inferColumnTypes">inferColumnTypes</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#infer_column_types Pipeline#infer_column_types}. |
-| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsGdriveOptionsFileIngestionOptions.property.readerCaseSensitive">readerCaseSensitive</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#reader_case_sensitive Pipeline#reader_case_sensitive}. |
-| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsGdriveOptionsFileIngestionOptions.property.rescuedDataColumn">rescuedDataColumn</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#rescued_data_column Pipeline#rescued_data_column}. |
-| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsGdriveOptionsFileIngestionOptions.property.schemaEvolutionMode">schemaEvolutionMode</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#schema_evolution_mode Pipeline#schema_evolution_mode}. |
-| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsGdriveOptionsFileIngestionOptions.property.schemaHints">schemaHints</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#schema_hints Pipeline#schema_hints}. |
-| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsGdriveOptionsFileIngestionOptions.property.singleVariantColumn">singleVariantColumn</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#single_variant_column Pipeline#single_variant_column}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsGdriveOptionsFileIngestionOptions.property.format">format</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#format Pipeline#format}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsGdriveOptionsFileIngestionOptions.property.formatOptions">formatOptions</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#format_options Pipeline#format_options}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsGdriveOptionsFileIngestionOptions.property.ignoreCorruptFiles">ignoreCorruptFiles</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#ignore_corrupt_files Pipeline#ignore_corrupt_files}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsGdriveOptionsFileIngestionOptions.property.inferColumnTypes">inferColumnTypes</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#infer_column_types Pipeline#infer_column_types}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsGdriveOptionsFileIngestionOptions.property.readerCaseSensitive">readerCaseSensitive</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#reader_case_sensitive Pipeline#reader_case_sensitive}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsGdriveOptionsFileIngestionOptions.property.rescuedDataColumn">rescuedDataColumn</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#rescued_data_column Pipeline#rescued_data_column}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsGdriveOptionsFileIngestionOptions.property.schemaEvolutionMode">schemaEvolutionMode</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#schema_evolution_mode Pipeline#schema_evolution_mode}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsGdriveOptionsFileIngestionOptions.property.schemaHints">schemaHints</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#schema_hints Pipeline#schema_hints}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsGdriveOptionsFileIngestionOptions.property.singleVariantColumn">singleVariantColumn</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#single_variant_column Pipeline#single_variant_column}. |
 
 ---
 
@@ -6510,7 +6542,7 @@ public java.lang.String getCorruptRecordColumn();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#corrupt_record_column Pipeline#corrupt_record_column}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#corrupt_record_column Pipeline#corrupt_record_column}.
 
 ---
 
@@ -6524,7 +6556,7 @@ public IResolvable|java.util.List<PipelineIngestionDefinitionObjectsSchemaConnec
 
 file_filters block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#file_filters Pipeline#file_filters}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#file_filters Pipeline#file_filters}
 
 ---
 
@@ -6536,7 +6568,7 @@ public java.lang.String getFormat();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#format Pipeline#format}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#format Pipeline#format}.
 
 ---
 
@@ -6548,7 +6580,7 @@ public java.util.Map<java.lang.String, java.lang.String> getFormatOptions();
 
 - *Type:* java.util.Map<java.lang.String, java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#format_options Pipeline#format_options}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#format_options Pipeline#format_options}.
 
 ---
 
@@ -6560,7 +6592,7 @@ public java.lang.Boolean|IResolvable getIgnoreCorruptFiles();
 
 - *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#ignore_corrupt_files Pipeline#ignore_corrupt_files}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#ignore_corrupt_files Pipeline#ignore_corrupt_files}.
 
 ---
 
@@ -6572,7 +6604,7 @@ public java.lang.Boolean|IResolvable getInferColumnTypes();
 
 - *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#infer_column_types Pipeline#infer_column_types}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#infer_column_types Pipeline#infer_column_types}.
 
 ---
 
@@ -6584,7 +6616,7 @@ public java.lang.Boolean|IResolvable getReaderCaseSensitive();
 
 - *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#reader_case_sensitive Pipeline#reader_case_sensitive}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#reader_case_sensitive Pipeline#reader_case_sensitive}.
 
 ---
 
@@ -6596,7 +6628,7 @@ public java.lang.String getRescuedDataColumn();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#rescued_data_column Pipeline#rescued_data_column}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#rescued_data_column Pipeline#rescued_data_column}.
 
 ---
 
@@ -6608,7 +6640,7 @@ public java.lang.String getSchemaEvolutionMode();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#schema_evolution_mode Pipeline#schema_evolution_mode}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#schema_evolution_mode Pipeline#schema_evolution_mode}.
 
 ---
 
@@ -6620,7 +6652,7 @@ public java.lang.String getSchemaHints();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#schema_hints Pipeline#schema_hints}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#schema_hints Pipeline#schema_hints}.
 
 ---
 
@@ -6632,7 +6664,7 @@ public java.lang.String getSingleVariantColumn();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#single_variant_column Pipeline#single_variant_column}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#single_variant_column Pipeline#single_variant_column}.
 
 ---
 
@@ -6654,9 +6686,9 @@ PipelineIngestionDefinitionObjectsSchemaConnectorOptionsGdriveOptionsFileIngesti
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsGdriveOptionsFileIngestionOptionsFileFilters.property.modifiedAfter">modifiedAfter</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#modified_after Pipeline#modified_after}. |
-| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsGdriveOptionsFileIngestionOptionsFileFilters.property.modifiedBefore">modifiedBefore</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#modified_before Pipeline#modified_before}. |
-| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsGdriveOptionsFileIngestionOptionsFileFilters.property.pathFilter">pathFilter</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#path_filter Pipeline#path_filter}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsGdriveOptionsFileIngestionOptionsFileFilters.property.modifiedAfter">modifiedAfter</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#modified_after Pipeline#modified_after}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsGdriveOptionsFileIngestionOptionsFileFilters.property.modifiedBefore">modifiedBefore</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#modified_before Pipeline#modified_before}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsGdriveOptionsFileIngestionOptionsFileFilters.property.pathFilter">pathFilter</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#path_filter Pipeline#path_filter}. |
 
 ---
 
@@ -6668,7 +6700,7 @@ public java.lang.String getModifiedAfter();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#modified_after Pipeline#modified_after}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#modified_after Pipeline#modified_after}.
 
 ---
 
@@ -6680,7 +6712,7 @@ public java.lang.String getModifiedBefore();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#modified_before Pipeline#modified_before}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#modified_before Pipeline#modified_before}.
 
 ---
 
@@ -6692,7 +6724,7 @@ public java.lang.String getPathFilter();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#path_filter Pipeline#path_filter}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#path_filter Pipeline#path_filter}.
 
 ---
 
@@ -6715,10 +6747,10 @@ PipelineIngestionDefinitionObjectsSchemaConnectorOptionsGoogleAdsOptions.builder
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsGoogleAdsOptions.property.managerAccountId">managerAccountId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#manager_account_id Pipeline#manager_account_id}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsGoogleAdsOptions.property.managerAccountId">managerAccountId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#manager_account_id Pipeline#manager_account_id}. |
 | <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsGoogleAdsOptions.property.customReportOptions">customReportOptions</a></code> | <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsGoogleAdsOptionsCustomReportOptions">PipelineIngestionDefinitionObjectsSchemaConnectorOptionsGoogleAdsOptionsCustomReportOptions</a></code> | custom_report_options block. |
-| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsGoogleAdsOptions.property.lookbackWindowDays">lookbackWindowDays</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#lookback_window_days Pipeline#lookback_window_days}. |
-| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsGoogleAdsOptions.property.syncStartDate">syncStartDate</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#sync_start_date Pipeline#sync_start_date}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsGoogleAdsOptions.property.lookbackWindowDays">lookbackWindowDays</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#lookback_window_days Pipeline#lookback_window_days}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsGoogleAdsOptions.property.syncStartDate">syncStartDate</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#sync_start_date Pipeline#sync_start_date}. |
 
 ---
 
@@ -6730,7 +6762,7 @@ public java.lang.String getManagerAccountId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#manager_account_id Pipeline#manager_account_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#manager_account_id Pipeline#manager_account_id}.
 
 ---
 
@@ -6744,7 +6776,7 @@ public PipelineIngestionDefinitionObjectsSchemaConnectorOptionsGoogleAdsOptionsC
 
 custom_report_options block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#custom_report_options Pipeline#custom_report_options}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#custom_report_options Pipeline#custom_report_options}
 
 ---
 
@@ -6756,7 +6788,7 @@ public java.lang.Number getLookbackWindowDays();
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#lookback_window_days Pipeline#lookback_window_days}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#lookback_window_days Pipeline#lookback_window_days}.
 
 ---
 
@@ -6768,7 +6800,7 @@ public java.lang.String getSyncStartDate();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#sync_start_date Pipeline#sync_start_date}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#sync_start_date Pipeline#sync_start_date}.
 
 ---
 
@@ -6791,10 +6823,10 @@ PipelineIngestionDefinitionObjectsSchemaConnectorOptionsGoogleAdsOptionsCustomRe
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsGoogleAdsOptionsCustomReportOptions.property.resource">resource</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#resource Pipeline#resource}. |
-| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsGoogleAdsOptionsCustomReportOptions.property.metrics">metrics</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#metrics Pipeline#metrics}. |
-| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsGoogleAdsOptionsCustomReportOptions.property.resourceFields">resourceFields</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#resource_fields Pipeline#resource_fields}. |
-| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsGoogleAdsOptionsCustomReportOptions.property.segments">segments</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#segments Pipeline#segments}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsGoogleAdsOptionsCustomReportOptions.property.resource">resource</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#resource Pipeline#resource}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsGoogleAdsOptionsCustomReportOptions.property.metrics">metrics</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#metrics Pipeline#metrics}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsGoogleAdsOptionsCustomReportOptions.property.resourceFields">resourceFields</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#resource_fields Pipeline#resource_fields}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsGoogleAdsOptionsCustomReportOptions.property.segments">segments</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#segments Pipeline#segments}. |
 
 ---
 
@@ -6806,7 +6838,7 @@ public java.lang.String getResource();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#resource Pipeline#resource}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#resource Pipeline#resource}.
 
 ---
 
@@ -6818,7 +6850,7 @@ public java.util.List<java.lang.String> getMetrics();
 
 - *Type:* java.util.List<java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#metrics Pipeline#metrics}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#metrics Pipeline#metrics}.
 
 ---
 
@@ -6830,7 +6862,7 @@ public java.util.List<java.lang.String> getResourceFields();
 
 - *Type:* java.util.List<java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#resource_fields Pipeline#resource_fields}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#resource_fields Pipeline#resource_fields}.
 
 ---
 
@@ -6842,7 +6874,7 @@ public java.util.List<java.lang.String> getSegments();
 
 - *Type:* java.util.List<java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#segments Pipeline#segments}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#segments Pipeline#segments}.
 
 ---
 
@@ -6862,7 +6894,7 @@ PipelineIngestionDefinitionObjectsSchemaConnectorOptionsJiraOptions.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsJiraOptions.property.includeJiraSpaces">includeJiraSpaces</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#include_jira_spaces Pipeline#include_jira_spaces}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsJiraOptions.property.includeJiraSpaces">includeJiraSpaces</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#include_jira_spaces Pipeline#include_jira_spaces}. |
 
 ---
 
@@ -6874,7 +6906,7 @@ public java.util.List<java.lang.String> getIncludeJiraSpaces();
 
 - *Type:* java.util.List<java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#include_jira_spaces Pipeline#include_jira_spaces}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#include_jira_spaces Pipeline#include_jira_spaces}.
 
 ---
 
@@ -6900,12 +6932,12 @@ PipelineIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptions.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptions.property.clientConfig">clientConfig</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#client_config Pipeline#client_config}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptions.property.clientConfig">clientConfig</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#client_config Pipeline#client_config}. |
 | <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptions.property.keyTransformer">keyTransformer</a></code> | <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptionsKeyTransformer">PipelineIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptionsKeyTransformer</a></code> | key_transformer block. |
-| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptions.property.maxOffsetsPerTrigger">maxOffsetsPerTrigger</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#max_offsets_per_trigger Pipeline#max_offsets_per_trigger}. |
-| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptions.property.startingOffset">startingOffset</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#starting_offset Pipeline#starting_offset}. |
-| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptions.property.topicPattern">topicPattern</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#topic_pattern Pipeline#topic_pattern}. |
-| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptions.property.topics">topics</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#topics Pipeline#topics}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptions.property.maxOffsetsPerTrigger">maxOffsetsPerTrigger</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#max_offsets_per_trigger Pipeline#max_offsets_per_trigger}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptions.property.startingOffset">startingOffset</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#starting_offset Pipeline#starting_offset}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptions.property.topicPattern">topicPattern</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#topic_pattern Pipeline#topic_pattern}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptions.property.topics">topics</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#topics Pipeline#topics}. |
 | <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptions.property.valueTransformer">valueTransformer</a></code> | <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptionsValueTransformer">PipelineIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptionsValueTransformer</a></code> | value_transformer block. |
 
 ---
@@ -6918,7 +6950,7 @@ public java.util.Map<java.lang.String, java.lang.String> getClientConfig();
 
 - *Type:* java.util.Map<java.lang.String, java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#client_config Pipeline#client_config}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#client_config Pipeline#client_config}.
 
 ---
 
@@ -6932,7 +6964,7 @@ public PipelineIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptionsKeyTr
 
 key_transformer block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#key_transformer Pipeline#key_transformer}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#key_transformer Pipeline#key_transformer}
 
 ---
 
@@ -6944,7 +6976,7 @@ public java.lang.Number getMaxOffsetsPerTrigger();
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#max_offsets_per_trigger Pipeline#max_offsets_per_trigger}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#max_offsets_per_trigger Pipeline#max_offsets_per_trigger}.
 
 ---
 
@@ -6956,7 +6988,7 @@ public java.lang.String getStartingOffset();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#starting_offset Pipeline#starting_offset}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#starting_offset Pipeline#starting_offset}.
 
 ---
 
@@ -6968,7 +7000,7 @@ public java.lang.String getTopicPattern();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#topic_pattern Pipeline#topic_pattern}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#topic_pattern Pipeline#topic_pattern}.
 
 ---
 
@@ -6980,7 +7012,7 @@ public java.util.List<java.lang.String> getTopics();
 
 - *Type:* java.util.List<java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#topics Pipeline#topics}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#topics Pipeline#topics}.
 
 ---
 
@@ -6994,7 +7026,7 @@ public PipelineIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptionsValue
 
 value_transformer block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#value_transformer Pipeline#value_transformer}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#value_transformer Pipeline#value_transformer}
 
 ---
 
@@ -7015,7 +7047,7 @@ PipelineIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptionsKeyTransform
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptionsKeyTransformer.property.format">format</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#format Pipeline#format}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptionsKeyTransformer.property.format">format</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#format Pipeline#format}. |
 | <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptionsKeyTransformer.property.jsonOptions">jsonOptions</a></code> | <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptionsKeyTransformerJsonOptions">PipelineIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptionsKeyTransformerJsonOptions</a></code> | json_options block. |
 
 ---
@@ -7028,7 +7060,7 @@ public java.lang.String getFormat();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#format Pipeline#format}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#format Pipeline#format}.
 
 ---
 
@@ -7042,7 +7074,7 @@ public PipelineIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptionsKeyTr
 
 json_options block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#json_options Pipeline#json_options}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#json_options Pipeline#json_options}
 
 ---
 
@@ -7066,11 +7098,11 @@ PipelineIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptionsKeyTransform
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptionsKeyTransformerJsonOptions.property.asVariant">asVariant</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#as_variant Pipeline#as_variant}. |
-| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptionsKeyTransformerJsonOptions.property.schema">schema</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#schema Pipeline#schema}. |
-| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptionsKeyTransformerJsonOptions.property.schemaEvolutionMode">schemaEvolutionMode</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#schema_evolution_mode Pipeline#schema_evolution_mode}. |
-| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptionsKeyTransformerJsonOptions.property.schemaFilePath">schemaFilePath</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#schema_file_path Pipeline#schema_file_path}. |
-| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptionsKeyTransformerJsonOptions.property.schemaHints">schemaHints</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#schema_hints Pipeline#schema_hints}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptionsKeyTransformerJsonOptions.property.asVariant">asVariant</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#as_variant Pipeline#as_variant}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptionsKeyTransformerJsonOptions.property.schema">schema</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#schema Pipeline#schema}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptionsKeyTransformerJsonOptions.property.schemaEvolutionMode">schemaEvolutionMode</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#schema_evolution_mode Pipeline#schema_evolution_mode}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptionsKeyTransformerJsonOptions.property.schemaFilePath">schemaFilePath</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#schema_file_path Pipeline#schema_file_path}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptionsKeyTransformerJsonOptions.property.schemaHints">schemaHints</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#schema_hints Pipeline#schema_hints}. |
 
 ---
 
@@ -7082,7 +7114,7 @@ public java.lang.Boolean|IResolvable getAsVariant();
 
 - *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#as_variant Pipeline#as_variant}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#as_variant Pipeline#as_variant}.
 
 ---
 
@@ -7094,7 +7126,7 @@ public java.lang.String getSchema();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#schema Pipeline#schema}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#schema Pipeline#schema}.
 
 ---
 
@@ -7106,7 +7138,7 @@ public java.lang.String getSchemaEvolutionMode();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#schema_evolution_mode Pipeline#schema_evolution_mode}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#schema_evolution_mode Pipeline#schema_evolution_mode}.
 
 ---
 
@@ -7118,7 +7150,7 @@ public java.lang.String getSchemaFilePath();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#schema_file_path Pipeline#schema_file_path}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#schema_file_path Pipeline#schema_file_path}.
 
 ---
 
@@ -7130,7 +7162,7 @@ public java.lang.String getSchemaHints();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#schema_hints Pipeline#schema_hints}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#schema_hints Pipeline#schema_hints}.
 
 ---
 
@@ -7151,7 +7183,7 @@ PipelineIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptionsValueTransfo
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptionsValueTransformer.property.format">format</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#format Pipeline#format}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptionsValueTransformer.property.format">format</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#format Pipeline#format}. |
 | <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptionsValueTransformer.property.jsonOptions">jsonOptions</a></code> | <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptionsValueTransformerJsonOptions">PipelineIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptionsValueTransformerJsonOptions</a></code> | json_options block. |
 
 ---
@@ -7164,7 +7196,7 @@ public java.lang.String getFormat();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#format Pipeline#format}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#format Pipeline#format}.
 
 ---
 
@@ -7178,7 +7210,7 @@ public PipelineIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptionsValue
 
 json_options block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#json_options Pipeline#json_options}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#json_options Pipeline#json_options}
 
 ---
 
@@ -7202,11 +7234,11 @@ PipelineIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptionsValueTransfo
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptionsValueTransformerJsonOptions.property.asVariant">asVariant</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#as_variant Pipeline#as_variant}. |
-| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptionsValueTransformerJsonOptions.property.schema">schema</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#schema Pipeline#schema}. |
-| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptionsValueTransformerJsonOptions.property.schemaEvolutionMode">schemaEvolutionMode</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#schema_evolution_mode Pipeline#schema_evolution_mode}. |
-| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptionsValueTransformerJsonOptions.property.schemaFilePath">schemaFilePath</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#schema_file_path Pipeline#schema_file_path}. |
-| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptionsValueTransformerJsonOptions.property.schemaHints">schemaHints</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#schema_hints Pipeline#schema_hints}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptionsValueTransformerJsonOptions.property.asVariant">asVariant</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#as_variant Pipeline#as_variant}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptionsValueTransformerJsonOptions.property.schema">schema</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#schema Pipeline#schema}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptionsValueTransformerJsonOptions.property.schemaEvolutionMode">schemaEvolutionMode</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#schema_evolution_mode Pipeline#schema_evolution_mode}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptionsValueTransformerJsonOptions.property.schemaFilePath">schemaFilePath</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#schema_file_path Pipeline#schema_file_path}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptionsValueTransformerJsonOptions.property.schemaHints">schemaHints</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#schema_hints Pipeline#schema_hints}. |
 
 ---
 
@@ -7218,7 +7250,7 @@ public java.lang.Boolean|IResolvable getAsVariant();
 
 - *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#as_variant Pipeline#as_variant}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#as_variant Pipeline#as_variant}.
 
 ---
 
@@ -7230,7 +7262,7 @@ public java.lang.String getSchema();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#schema Pipeline#schema}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#schema Pipeline#schema}.
 
 ---
 
@@ -7242,7 +7274,7 @@ public java.lang.String getSchemaEvolutionMode();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#schema_evolution_mode Pipeline#schema_evolution_mode}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#schema_evolution_mode Pipeline#schema_evolution_mode}.
 
 ---
 
@@ -7254,7 +7286,7 @@ public java.lang.String getSchemaFilePath();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#schema_file_path Pipeline#schema_file_path}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#schema_file_path Pipeline#schema_file_path}.
 
 ---
 
@@ -7266,7 +7298,7 @@ public java.lang.String getSchemaHints();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#schema_hints Pipeline#schema_hints}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#schema_hints Pipeline#schema_hints}.
 
 ---
 
@@ -7294,15 +7326,15 @@ PipelineIngestionDefinitionObjectsSchemaConnectorOptionsMetaAdsOptions.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsMetaAdsOptions.property.actionAttributionWindows">actionAttributionWindows</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#action_attribution_windows Pipeline#action_attribution_windows}. |
-| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsMetaAdsOptions.property.actionBreakdowns">actionBreakdowns</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#action_breakdowns Pipeline#action_breakdowns}. |
-| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsMetaAdsOptions.property.actionReportTime">actionReportTime</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#action_report_time Pipeline#action_report_time}. |
-| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsMetaAdsOptions.property.breakdowns">breakdowns</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#breakdowns Pipeline#breakdowns}. |
-| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsMetaAdsOptions.property.customInsightsLookbackWindow">customInsightsLookbackWindow</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#custom_insights_lookback_window Pipeline#custom_insights_lookback_window}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsMetaAdsOptions.property.actionAttributionWindows">actionAttributionWindows</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#action_attribution_windows Pipeline#action_attribution_windows}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsMetaAdsOptions.property.actionBreakdowns">actionBreakdowns</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#action_breakdowns Pipeline#action_breakdowns}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsMetaAdsOptions.property.actionReportTime">actionReportTime</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#action_report_time Pipeline#action_report_time}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsMetaAdsOptions.property.breakdowns">breakdowns</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#breakdowns Pipeline#breakdowns}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsMetaAdsOptions.property.customInsightsLookbackWindow">customInsightsLookbackWindow</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#custom_insights_lookback_window Pipeline#custom_insights_lookback_window}. |
 | <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsMetaAdsOptions.property.customReportOptions">customReportOptions</a></code> | <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsMetaAdsOptionsCustomReportOptions">PipelineIngestionDefinitionObjectsSchemaConnectorOptionsMetaAdsOptionsCustomReportOptions</a></code> | custom_report_options block. |
-| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsMetaAdsOptions.property.level">level</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#level Pipeline#level}. |
-| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsMetaAdsOptions.property.startDate">startDate</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#start_date Pipeline#start_date}. |
-| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsMetaAdsOptions.property.timeIncrement">timeIncrement</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#time_increment Pipeline#time_increment}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsMetaAdsOptions.property.level">level</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#level Pipeline#level}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsMetaAdsOptions.property.startDate">startDate</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#start_date Pipeline#start_date}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsMetaAdsOptions.property.timeIncrement">timeIncrement</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#time_increment Pipeline#time_increment}. |
 
 ---
 
@@ -7314,7 +7346,7 @@ public java.util.List<java.lang.String> getActionAttributionWindows();
 
 - *Type:* java.util.List<java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#action_attribution_windows Pipeline#action_attribution_windows}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#action_attribution_windows Pipeline#action_attribution_windows}.
 
 ---
 
@@ -7326,7 +7358,7 @@ public java.util.List<java.lang.String> getActionBreakdowns();
 
 - *Type:* java.util.List<java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#action_breakdowns Pipeline#action_breakdowns}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#action_breakdowns Pipeline#action_breakdowns}.
 
 ---
 
@@ -7338,7 +7370,7 @@ public java.lang.String getActionReportTime();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#action_report_time Pipeline#action_report_time}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#action_report_time Pipeline#action_report_time}.
 
 ---
 
@@ -7350,7 +7382,7 @@ public java.util.List<java.lang.String> getBreakdowns();
 
 - *Type:* java.util.List<java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#breakdowns Pipeline#breakdowns}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#breakdowns Pipeline#breakdowns}.
 
 ---
 
@@ -7362,7 +7394,7 @@ public java.lang.Number getCustomInsightsLookbackWindow();
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#custom_insights_lookback_window Pipeline#custom_insights_lookback_window}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#custom_insights_lookback_window Pipeline#custom_insights_lookback_window}.
 
 ---
 
@@ -7376,7 +7408,7 @@ public PipelineIngestionDefinitionObjectsSchemaConnectorOptionsMetaAdsOptionsCus
 
 custom_report_options block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#custom_report_options Pipeline#custom_report_options}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#custom_report_options Pipeline#custom_report_options}
 
 ---
 
@@ -7388,7 +7420,7 @@ public java.lang.String getLevel();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#level Pipeline#level}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#level Pipeline#level}.
 
 ---
 
@@ -7400,7 +7432,7 @@ public java.lang.String getStartDate();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#start_date Pipeline#start_date}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#start_date Pipeline#start_date}.
 
 ---
 
@@ -7412,7 +7444,7 @@ public java.lang.String getTimeIncrement();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#time_increment Pipeline#time_increment}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#time_increment Pipeline#time_increment}.
 
 ---
 
@@ -7437,12 +7469,12 @@ PipelineIngestionDefinitionObjectsSchemaConnectorOptionsMetaAdsOptionsCustomRepo
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsMetaAdsOptionsCustomReportOptions.property.actionAttributionWindows">actionAttributionWindows</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#action_attribution_windows Pipeline#action_attribution_windows}. |
-| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsMetaAdsOptionsCustomReportOptions.property.actionBreakdowns">actionBreakdowns</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#action_breakdowns Pipeline#action_breakdowns}. |
-| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsMetaAdsOptionsCustomReportOptions.property.actionReportTime">actionReportTime</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#action_report_time Pipeline#action_report_time}. |
-| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsMetaAdsOptionsCustomReportOptions.property.breakdowns">breakdowns</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#breakdowns Pipeline#breakdowns}. |
-| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsMetaAdsOptionsCustomReportOptions.property.level">level</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#level Pipeline#level}. |
-| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsMetaAdsOptionsCustomReportOptions.property.timeIncrement">timeIncrement</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#time_increment Pipeline#time_increment}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsMetaAdsOptionsCustomReportOptions.property.actionAttributionWindows">actionAttributionWindows</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#action_attribution_windows Pipeline#action_attribution_windows}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsMetaAdsOptionsCustomReportOptions.property.actionBreakdowns">actionBreakdowns</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#action_breakdowns Pipeline#action_breakdowns}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsMetaAdsOptionsCustomReportOptions.property.actionReportTime">actionReportTime</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#action_report_time Pipeline#action_report_time}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsMetaAdsOptionsCustomReportOptions.property.breakdowns">breakdowns</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#breakdowns Pipeline#breakdowns}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsMetaAdsOptionsCustomReportOptions.property.level">level</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#level Pipeline#level}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsMetaAdsOptionsCustomReportOptions.property.timeIncrement">timeIncrement</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#time_increment Pipeline#time_increment}. |
 
 ---
 
@@ -7454,7 +7486,7 @@ public java.util.List<java.lang.String> getActionAttributionWindows();
 
 - *Type:* java.util.List<java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#action_attribution_windows Pipeline#action_attribution_windows}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#action_attribution_windows Pipeline#action_attribution_windows}.
 
 ---
 
@@ -7466,7 +7498,7 @@ public java.util.List<java.lang.String> getActionBreakdowns();
 
 - *Type:* java.util.List<java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#action_breakdowns Pipeline#action_breakdowns}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#action_breakdowns Pipeline#action_breakdowns}.
 
 ---
 
@@ -7478,7 +7510,7 @@ public java.lang.String getActionReportTime();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#action_report_time Pipeline#action_report_time}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#action_report_time Pipeline#action_report_time}.
 
 ---
 
@@ -7490,7 +7522,7 @@ public java.util.List<java.lang.String> getBreakdowns();
 
 - *Type:* java.util.List<java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#breakdowns Pipeline#breakdowns}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#breakdowns Pipeline#breakdowns}.
 
 ---
 
@@ -7502,7 +7534,7 @@ public java.lang.String getLevel();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#level Pipeline#level}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#level Pipeline#level}.
 
 ---
 
@@ -7514,7 +7546,7 @@ public java.lang.String getTimeIncrement();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#time_increment Pipeline#time_increment}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#time_increment Pipeline#time_increment}.
 
 ---
 
@@ -7543,16 +7575,16 @@ PipelineIngestionDefinitionObjectsSchemaConnectorOptionsOutlookOptions.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsOutlookOptions.property.attachmentMode">attachmentMode</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#attachment_mode Pipeline#attachment_mode}. |
-| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsOutlookOptions.property.bodyFormat">bodyFormat</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#body_format Pipeline#body_format}. |
-| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsOutlookOptions.property.folderFilter">folderFilter</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#folder_filter Pipeline#folder_filter}. |
-| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsOutlookOptions.property.includeFolders">includeFolders</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#include_folders Pipeline#include_folders}. |
-| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsOutlookOptions.property.includeMailboxes">includeMailboxes</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#include_mailboxes Pipeline#include_mailboxes}. |
-| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsOutlookOptions.property.includeSenders">includeSenders</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#include_senders Pipeline#include_senders}. |
-| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsOutlookOptions.property.includeSubjects">includeSubjects</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#include_subjects Pipeline#include_subjects}. |
-| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsOutlookOptions.property.senderFilter">senderFilter</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#sender_filter Pipeline#sender_filter}. |
-| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsOutlookOptions.property.startDate">startDate</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#start_date Pipeline#start_date}. |
-| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsOutlookOptions.property.subjectFilter">subjectFilter</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#subject_filter Pipeline#subject_filter}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsOutlookOptions.property.attachmentMode">attachmentMode</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#attachment_mode Pipeline#attachment_mode}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsOutlookOptions.property.bodyFormat">bodyFormat</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#body_format Pipeline#body_format}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsOutlookOptions.property.folderFilter">folderFilter</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#folder_filter Pipeline#folder_filter}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsOutlookOptions.property.includeFolders">includeFolders</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#include_folders Pipeline#include_folders}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsOutlookOptions.property.includeMailboxes">includeMailboxes</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#include_mailboxes Pipeline#include_mailboxes}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsOutlookOptions.property.includeSenders">includeSenders</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#include_senders Pipeline#include_senders}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsOutlookOptions.property.includeSubjects">includeSubjects</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#include_subjects Pipeline#include_subjects}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsOutlookOptions.property.senderFilter">senderFilter</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#sender_filter Pipeline#sender_filter}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsOutlookOptions.property.startDate">startDate</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#start_date Pipeline#start_date}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsOutlookOptions.property.subjectFilter">subjectFilter</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#subject_filter Pipeline#subject_filter}. |
 
 ---
 
@@ -7564,7 +7596,7 @@ public java.lang.String getAttachmentMode();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#attachment_mode Pipeline#attachment_mode}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#attachment_mode Pipeline#attachment_mode}.
 
 ---
 
@@ -7576,7 +7608,7 @@ public java.lang.String getBodyFormat();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#body_format Pipeline#body_format}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#body_format Pipeline#body_format}.
 
 ---
 
@@ -7588,7 +7620,7 @@ public java.util.List<java.lang.String> getFolderFilter();
 
 - *Type:* java.util.List<java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#folder_filter Pipeline#folder_filter}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#folder_filter Pipeline#folder_filter}.
 
 ---
 
@@ -7600,7 +7632,7 @@ public java.util.List<java.lang.String> getIncludeFolders();
 
 - *Type:* java.util.List<java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#include_folders Pipeline#include_folders}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#include_folders Pipeline#include_folders}.
 
 ---
 
@@ -7612,7 +7644,7 @@ public java.util.List<java.lang.String> getIncludeMailboxes();
 
 - *Type:* java.util.List<java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#include_mailboxes Pipeline#include_mailboxes}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#include_mailboxes Pipeline#include_mailboxes}.
 
 ---
 
@@ -7624,7 +7656,7 @@ public java.util.List<java.lang.String> getIncludeSenders();
 
 - *Type:* java.util.List<java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#include_senders Pipeline#include_senders}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#include_senders Pipeline#include_senders}.
 
 ---
 
@@ -7636,7 +7668,7 @@ public java.util.List<java.lang.String> getIncludeSubjects();
 
 - *Type:* java.util.List<java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#include_subjects Pipeline#include_subjects}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#include_subjects Pipeline#include_subjects}.
 
 ---
 
@@ -7648,7 +7680,7 @@ public java.util.List<java.lang.String> getSenderFilter();
 
 - *Type:* java.util.List<java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#sender_filter Pipeline#sender_filter}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#sender_filter Pipeline#sender_filter}.
 
 ---
 
@@ -7660,7 +7692,7 @@ public java.lang.String getStartDate();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#start_date Pipeline#start_date}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#start_date Pipeline#start_date}.
 
 ---
 
@@ -7672,7 +7704,115 @@ public java.util.List<java.lang.String> getSubjectFilter();
 
 - *Type:* java.util.List<java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#subject_filter Pipeline#subject_filter}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#subject_filter Pipeline#subject_filter}.
+
+---
+
+### PipelineIngestionDefinitionObjectsSchemaConnectorOptionsRedditAdsOptions <a name="PipelineIngestionDefinitionObjectsSchemaConnectorOptionsRedditAdsOptions" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsRedditAdsOptions"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsRedditAdsOptions.Initializer"></a>
+
+```java
+import io.cdktn.providers.databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsRedditAdsOptions;
+
+PipelineIngestionDefinitionObjectsSchemaConnectorOptionsRedditAdsOptions.builder()
+//  .customReportOptions(PipelineIngestionDefinitionObjectsSchemaConnectorOptionsRedditAdsOptionsCustomReportOptions)
+//  .lookbackWindowDays(java.lang.Number)
+//  .syncStartDate(java.lang.String)
+    .build();
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsRedditAdsOptions.property.customReportOptions">customReportOptions</a></code> | <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsRedditAdsOptionsCustomReportOptions">PipelineIngestionDefinitionObjectsSchemaConnectorOptionsRedditAdsOptionsCustomReportOptions</a></code> | custom_report_options block. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsRedditAdsOptions.property.lookbackWindowDays">lookbackWindowDays</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#lookback_window_days Pipeline#lookback_window_days}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsRedditAdsOptions.property.syncStartDate">syncStartDate</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#sync_start_date Pipeline#sync_start_date}. |
+
+---
+
+##### `customReportOptions`<sup>Optional</sup> <a name="customReportOptions" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsRedditAdsOptions.property.customReportOptions"></a>
+
+```java
+public PipelineIngestionDefinitionObjectsSchemaConnectorOptionsRedditAdsOptionsCustomReportOptions getCustomReportOptions();
+```
+
+- *Type:* <a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsRedditAdsOptionsCustomReportOptions">PipelineIngestionDefinitionObjectsSchemaConnectorOptionsRedditAdsOptionsCustomReportOptions</a>
+
+custom_report_options block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#custom_report_options Pipeline#custom_report_options}
+
+---
+
+##### `lookbackWindowDays`<sup>Optional</sup> <a name="lookbackWindowDays" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsRedditAdsOptions.property.lookbackWindowDays"></a>
+
+```java
+public java.lang.Number getLookbackWindowDays();
+```
+
+- *Type:* java.lang.Number
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#lookback_window_days Pipeline#lookback_window_days}.
+
+---
+
+##### `syncStartDate`<sup>Optional</sup> <a name="syncStartDate" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsRedditAdsOptions.property.syncStartDate"></a>
+
+```java
+public java.lang.String getSyncStartDate();
+```
+
+- *Type:* java.lang.String
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#sync_start_date Pipeline#sync_start_date}.
+
+---
+
+### PipelineIngestionDefinitionObjectsSchemaConnectorOptionsRedditAdsOptionsCustomReportOptions <a name="PipelineIngestionDefinitionObjectsSchemaConnectorOptionsRedditAdsOptionsCustomReportOptions" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsRedditAdsOptionsCustomReportOptions"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsRedditAdsOptionsCustomReportOptions.Initializer"></a>
+
+```java
+import io.cdktn.providers.databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsRedditAdsOptionsCustomReportOptions;
+
+PipelineIngestionDefinitionObjectsSchemaConnectorOptionsRedditAdsOptionsCustomReportOptions.builder()
+//  .breakdowns(java.util.List<java.lang.String>)
+//  .fields(java.util.List<java.lang.String>)
+    .build();
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsRedditAdsOptionsCustomReportOptions.property.breakdowns">breakdowns</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#breakdowns Pipeline#breakdowns}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsRedditAdsOptionsCustomReportOptions.property.fields">fields</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#fields Pipeline#fields}. |
+
+---
+
+##### `breakdowns`<sup>Optional</sup> <a name="breakdowns" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsRedditAdsOptionsCustomReportOptions.property.breakdowns"></a>
+
+```java
+public java.util.List<java.lang.String> getBreakdowns();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#breakdowns Pipeline#breakdowns}.
+
+---
+
+##### `fields`<sup>Optional</sup> <a name="fields" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsRedditAdsOptionsCustomReportOptions.property.fields"></a>
+
+```java
+public java.util.List<java.lang.String> getFields();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#fields Pipeline#fields}.
 
 ---
 
@@ -7694,9 +7834,9 @@ PipelineIngestionDefinitionObjectsSchemaConnectorOptionsSharepointOptions.builde
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsSharepointOptions.property.entityType">entityType</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#entity_type Pipeline#entity_type}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsSharepointOptions.property.entityType">entityType</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#entity_type Pipeline#entity_type}. |
 | <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsSharepointOptions.property.fileIngestionOptions">fileIngestionOptions</a></code> | <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsSharepointOptionsFileIngestionOptions">PipelineIngestionDefinitionObjectsSchemaConnectorOptionsSharepointOptionsFileIngestionOptions</a></code> | file_ingestion_options block. |
-| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsSharepointOptions.property.url">url</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#url Pipeline#url}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsSharepointOptions.property.url">url</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#url Pipeline#url}. |
 
 ---
 
@@ -7708,7 +7848,7 @@ public java.lang.String getEntityType();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#entity_type Pipeline#entity_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#entity_type Pipeline#entity_type}.
 
 ---
 
@@ -7722,7 +7862,7 @@ public PipelineIngestionDefinitionObjectsSchemaConnectorOptionsSharepointOptions
 
 file_ingestion_options block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#file_ingestion_options Pipeline#file_ingestion_options}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#file_ingestion_options Pipeline#file_ingestion_options}
 
 ---
 
@@ -7734,7 +7874,7 @@ public java.lang.String getUrl();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#url Pipeline#url}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#url Pipeline#url}.
 
 ---
 
@@ -7764,17 +7904,17 @@ PipelineIngestionDefinitionObjectsSchemaConnectorOptionsSharepointOptionsFileIng
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsSharepointOptionsFileIngestionOptions.property.corruptRecordColumn">corruptRecordColumn</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#corrupt_record_column Pipeline#corrupt_record_column}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsSharepointOptionsFileIngestionOptions.property.corruptRecordColumn">corruptRecordColumn</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#corrupt_record_column Pipeline#corrupt_record_column}. |
 | <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsSharepointOptionsFileIngestionOptions.property.fileFilters">fileFilters</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsSharepointOptionsFileIngestionOptionsFileFilters">PipelineIngestionDefinitionObjectsSchemaConnectorOptionsSharepointOptionsFileIngestionOptionsFileFilters</a>></code> | file_filters block. |
-| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsSharepointOptionsFileIngestionOptions.property.format">format</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#format Pipeline#format}. |
-| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsSharepointOptionsFileIngestionOptions.property.formatOptions">formatOptions</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#format_options Pipeline#format_options}. |
-| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsSharepointOptionsFileIngestionOptions.property.ignoreCorruptFiles">ignoreCorruptFiles</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#ignore_corrupt_files Pipeline#ignore_corrupt_files}. |
-| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsSharepointOptionsFileIngestionOptions.property.inferColumnTypes">inferColumnTypes</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#infer_column_types Pipeline#infer_column_types}. |
-| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsSharepointOptionsFileIngestionOptions.property.readerCaseSensitive">readerCaseSensitive</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#reader_case_sensitive Pipeline#reader_case_sensitive}. |
-| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsSharepointOptionsFileIngestionOptions.property.rescuedDataColumn">rescuedDataColumn</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#rescued_data_column Pipeline#rescued_data_column}. |
-| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsSharepointOptionsFileIngestionOptions.property.schemaEvolutionMode">schemaEvolutionMode</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#schema_evolution_mode Pipeline#schema_evolution_mode}. |
-| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsSharepointOptionsFileIngestionOptions.property.schemaHints">schemaHints</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#schema_hints Pipeline#schema_hints}. |
-| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsSharepointOptionsFileIngestionOptions.property.singleVariantColumn">singleVariantColumn</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#single_variant_column Pipeline#single_variant_column}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsSharepointOptionsFileIngestionOptions.property.format">format</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#format Pipeline#format}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsSharepointOptionsFileIngestionOptions.property.formatOptions">formatOptions</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#format_options Pipeline#format_options}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsSharepointOptionsFileIngestionOptions.property.ignoreCorruptFiles">ignoreCorruptFiles</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#ignore_corrupt_files Pipeline#ignore_corrupt_files}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsSharepointOptionsFileIngestionOptions.property.inferColumnTypes">inferColumnTypes</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#infer_column_types Pipeline#infer_column_types}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsSharepointOptionsFileIngestionOptions.property.readerCaseSensitive">readerCaseSensitive</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#reader_case_sensitive Pipeline#reader_case_sensitive}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsSharepointOptionsFileIngestionOptions.property.rescuedDataColumn">rescuedDataColumn</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#rescued_data_column Pipeline#rescued_data_column}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsSharepointOptionsFileIngestionOptions.property.schemaEvolutionMode">schemaEvolutionMode</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#schema_evolution_mode Pipeline#schema_evolution_mode}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsSharepointOptionsFileIngestionOptions.property.schemaHints">schemaHints</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#schema_hints Pipeline#schema_hints}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsSharepointOptionsFileIngestionOptions.property.singleVariantColumn">singleVariantColumn</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#single_variant_column Pipeline#single_variant_column}. |
 
 ---
 
@@ -7786,7 +7926,7 @@ public java.lang.String getCorruptRecordColumn();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#corrupt_record_column Pipeline#corrupt_record_column}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#corrupt_record_column Pipeline#corrupt_record_column}.
 
 ---
 
@@ -7800,7 +7940,7 @@ public IResolvable|java.util.List<PipelineIngestionDefinitionObjectsSchemaConnec
 
 file_filters block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#file_filters Pipeline#file_filters}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#file_filters Pipeline#file_filters}
 
 ---
 
@@ -7812,7 +7952,7 @@ public java.lang.String getFormat();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#format Pipeline#format}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#format Pipeline#format}.
 
 ---
 
@@ -7824,7 +7964,7 @@ public java.util.Map<java.lang.String, java.lang.String> getFormatOptions();
 
 - *Type:* java.util.Map<java.lang.String, java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#format_options Pipeline#format_options}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#format_options Pipeline#format_options}.
 
 ---
 
@@ -7836,7 +7976,7 @@ public java.lang.Boolean|IResolvable getIgnoreCorruptFiles();
 
 - *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#ignore_corrupt_files Pipeline#ignore_corrupt_files}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#ignore_corrupt_files Pipeline#ignore_corrupt_files}.
 
 ---
 
@@ -7848,7 +7988,7 @@ public java.lang.Boolean|IResolvable getInferColumnTypes();
 
 - *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#infer_column_types Pipeline#infer_column_types}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#infer_column_types Pipeline#infer_column_types}.
 
 ---
 
@@ -7860,7 +8000,7 @@ public java.lang.Boolean|IResolvable getReaderCaseSensitive();
 
 - *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#reader_case_sensitive Pipeline#reader_case_sensitive}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#reader_case_sensitive Pipeline#reader_case_sensitive}.
 
 ---
 
@@ -7872,7 +8012,7 @@ public java.lang.String getRescuedDataColumn();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#rescued_data_column Pipeline#rescued_data_column}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#rescued_data_column Pipeline#rescued_data_column}.
 
 ---
 
@@ -7884,7 +8024,7 @@ public java.lang.String getSchemaEvolutionMode();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#schema_evolution_mode Pipeline#schema_evolution_mode}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#schema_evolution_mode Pipeline#schema_evolution_mode}.
 
 ---
 
@@ -7896,7 +8036,7 @@ public java.lang.String getSchemaHints();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#schema_hints Pipeline#schema_hints}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#schema_hints Pipeline#schema_hints}.
 
 ---
 
@@ -7908,7 +8048,7 @@ public java.lang.String getSingleVariantColumn();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#single_variant_column Pipeline#single_variant_column}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#single_variant_column Pipeline#single_variant_column}.
 
 ---
 
@@ -7930,9 +8070,9 @@ PipelineIngestionDefinitionObjectsSchemaConnectorOptionsSharepointOptionsFileIng
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsSharepointOptionsFileIngestionOptionsFileFilters.property.modifiedAfter">modifiedAfter</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#modified_after Pipeline#modified_after}. |
-| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsSharepointOptionsFileIngestionOptionsFileFilters.property.modifiedBefore">modifiedBefore</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#modified_before Pipeline#modified_before}. |
-| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsSharepointOptionsFileIngestionOptionsFileFilters.property.pathFilter">pathFilter</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#path_filter Pipeline#path_filter}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsSharepointOptionsFileIngestionOptionsFileFilters.property.modifiedAfter">modifiedAfter</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#modified_after Pipeline#modified_after}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsSharepointOptionsFileIngestionOptionsFileFilters.property.modifiedBefore">modifiedBefore</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#modified_before Pipeline#modified_before}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsSharepointOptionsFileIngestionOptionsFileFilters.property.pathFilter">pathFilter</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#path_filter Pipeline#path_filter}. |
 
 ---
 
@@ -7944,7 +8084,7 @@ public java.lang.String getModifiedAfter();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#modified_after Pipeline#modified_after}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#modified_after Pipeline#modified_after}.
 
 ---
 
@@ -7956,7 +8096,7 @@ public java.lang.String getModifiedBefore();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#modified_before Pipeline#modified_before}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#modified_before Pipeline#modified_before}.
 
 ---
 
@@ -7968,7 +8108,7 @@ public java.lang.String getPathFilter();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#path_filter Pipeline#path_filter}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#path_filter Pipeline#path_filter}.
 
 ---
 
@@ -7988,7 +8128,7 @@ PipelineIngestionDefinitionObjectsSchemaConnectorOptionsSmartsheetOptions.builde
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsSmartsheetOptions.property.enforceSchema">enforceSchema</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#enforce_schema Pipeline#enforce_schema}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsSmartsheetOptions.property.enforceSchema">enforceSchema</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#enforce_schema Pipeline#enforce_schema}. |
 
 ---
 
@@ -8000,7 +8140,7 @@ public java.lang.Boolean|IResolvable getEnforceSchema();
 
 - *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#enforce_schema Pipeline#enforce_schema}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#enforce_schema Pipeline#enforce_schema}.
 
 ---
 
@@ -8028,13 +8168,13 @@ PipelineIngestionDefinitionObjectsSchemaConnectorOptionsTiktokAdsOptions.builder
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsTiktokAdsOptions.property.customReportOptions">customReportOptions</a></code> | <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsTiktokAdsOptionsCustomReportOptions">PipelineIngestionDefinitionObjectsSchemaConnectorOptionsTiktokAdsOptionsCustomReportOptions</a></code> | custom_report_options block. |
-| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsTiktokAdsOptions.property.dataLevel">dataLevel</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#data_level Pipeline#data_level}. |
-| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsTiktokAdsOptions.property.dimensions">dimensions</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#dimensions Pipeline#dimensions}. |
-| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsTiktokAdsOptions.property.lookbackWindowDays">lookbackWindowDays</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#lookback_window_days Pipeline#lookback_window_days}. |
-| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsTiktokAdsOptions.property.metrics">metrics</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#metrics Pipeline#metrics}. |
-| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsTiktokAdsOptions.property.queryLifetime">queryLifetime</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#query_lifetime Pipeline#query_lifetime}. |
-| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsTiktokAdsOptions.property.reportType">reportType</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#report_type Pipeline#report_type}. |
-| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsTiktokAdsOptions.property.syncStartDate">syncStartDate</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#sync_start_date Pipeline#sync_start_date}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsTiktokAdsOptions.property.dataLevel">dataLevel</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#data_level Pipeline#data_level}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsTiktokAdsOptions.property.dimensions">dimensions</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#dimensions Pipeline#dimensions}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsTiktokAdsOptions.property.lookbackWindowDays">lookbackWindowDays</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#lookback_window_days Pipeline#lookback_window_days}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsTiktokAdsOptions.property.metrics">metrics</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#metrics Pipeline#metrics}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsTiktokAdsOptions.property.queryLifetime">queryLifetime</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#query_lifetime Pipeline#query_lifetime}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsTiktokAdsOptions.property.reportType">reportType</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#report_type Pipeline#report_type}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsTiktokAdsOptions.property.syncStartDate">syncStartDate</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#sync_start_date Pipeline#sync_start_date}. |
 
 ---
 
@@ -8048,7 +8188,7 @@ public PipelineIngestionDefinitionObjectsSchemaConnectorOptionsTiktokAdsOptionsC
 
 custom_report_options block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#custom_report_options Pipeline#custom_report_options}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#custom_report_options Pipeline#custom_report_options}
 
 ---
 
@@ -8060,7 +8200,7 @@ public java.lang.String getDataLevel();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#data_level Pipeline#data_level}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#data_level Pipeline#data_level}.
 
 ---
 
@@ -8072,7 +8212,7 @@ public java.util.List<java.lang.String> getDimensions();
 
 - *Type:* java.util.List<java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#dimensions Pipeline#dimensions}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#dimensions Pipeline#dimensions}.
 
 ---
 
@@ -8084,7 +8224,7 @@ public java.lang.Number getLookbackWindowDays();
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#lookback_window_days Pipeline#lookback_window_days}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#lookback_window_days Pipeline#lookback_window_days}.
 
 ---
 
@@ -8096,7 +8236,7 @@ public java.util.List<java.lang.String> getMetrics();
 
 - *Type:* java.util.List<java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#metrics Pipeline#metrics}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#metrics Pipeline#metrics}.
 
 ---
 
@@ -8108,7 +8248,7 @@ public java.lang.Boolean|IResolvable getQueryLifetime();
 
 - *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#query_lifetime Pipeline#query_lifetime}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#query_lifetime Pipeline#query_lifetime}.
 
 ---
 
@@ -8120,7 +8260,7 @@ public java.lang.String getReportType();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#report_type Pipeline#report_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#report_type Pipeline#report_type}.
 
 ---
 
@@ -8132,7 +8272,7 @@ public java.lang.String getSyncStartDate();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#sync_start_date Pipeline#sync_start_date}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#sync_start_date Pipeline#sync_start_date}.
 
 ---
 
@@ -8156,11 +8296,11 @@ PipelineIngestionDefinitionObjectsSchemaConnectorOptionsTiktokAdsOptionsCustomRe
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsTiktokAdsOptionsCustomReportOptions.property.dataLevel">dataLevel</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#data_level Pipeline#data_level}. |
-| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsTiktokAdsOptionsCustomReportOptions.property.dimensions">dimensions</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#dimensions Pipeline#dimensions}. |
-| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsTiktokAdsOptionsCustomReportOptions.property.metrics">metrics</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#metrics Pipeline#metrics}. |
-| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsTiktokAdsOptionsCustomReportOptions.property.queryLifetime">queryLifetime</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#query_lifetime Pipeline#query_lifetime}. |
-| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsTiktokAdsOptionsCustomReportOptions.property.reportType">reportType</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#report_type Pipeline#report_type}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsTiktokAdsOptionsCustomReportOptions.property.dataLevel">dataLevel</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#data_level Pipeline#data_level}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsTiktokAdsOptionsCustomReportOptions.property.dimensions">dimensions</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#dimensions Pipeline#dimensions}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsTiktokAdsOptionsCustomReportOptions.property.metrics">metrics</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#metrics Pipeline#metrics}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsTiktokAdsOptionsCustomReportOptions.property.queryLifetime">queryLifetime</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#query_lifetime Pipeline#query_lifetime}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsTiktokAdsOptionsCustomReportOptions.property.reportType">reportType</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#report_type Pipeline#report_type}. |
 
 ---
 
@@ -8172,7 +8312,7 @@ public java.lang.String getDataLevel();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#data_level Pipeline#data_level}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#data_level Pipeline#data_level}.
 
 ---
 
@@ -8184,7 +8324,7 @@ public java.util.List<java.lang.String> getDimensions();
 
 - *Type:* java.util.List<java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#dimensions Pipeline#dimensions}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#dimensions Pipeline#dimensions}.
 
 ---
 
@@ -8196,7 +8336,7 @@ public java.util.List<java.lang.String> getMetrics();
 
 - *Type:* java.util.List<java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#metrics Pipeline#metrics}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#metrics Pipeline#metrics}.
 
 ---
 
@@ -8208,7 +8348,7 @@ public java.lang.Boolean|IResolvable getQueryLifetime();
 
 - *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#query_lifetime Pipeline#query_lifetime}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#query_lifetime Pipeline#query_lifetime}.
 
 ---
 
@@ -8220,7 +8360,7 @@ public java.lang.String getReportType();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#report_type Pipeline#report_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#report_type Pipeline#report_type}.
 
 ---
 
@@ -8240,7 +8380,7 @@ PipelineIngestionDefinitionObjectsSchemaConnectorOptionsZendeskSupportOptions.bu
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsZendeskSupportOptions.property.startDate">startDate</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#start_date Pipeline#start_date}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsZendeskSupportOptions.property.startDate">startDate</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#start_date Pipeline#start_date}. |
 
 ---
 
@@ -8252,7 +8392,191 @@ public java.lang.String getStartDate();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#start_date Pipeline#start_date}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#start_date Pipeline#start_date}.
+
+---
+
+### PipelineIngestionDefinitionObjectsSchemaFanoutOptions <a name="PipelineIngestionDefinitionObjectsSchemaFanoutOptions" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaFanoutOptions"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaFanoutOptions.Initializer"></a>
+
+```java
+import io.cdktn.providers.databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaFanoutOptions;
+
+PipelineIngestionDefinitionObjectsSchemaFanoutOptions.builder()
+//  .fanoutBy(java.lang.String)
+//  .transforms(IResolvable|java.util.List<PipelineIngestionDefinitionObjectsSchemaFanoutOptionsTransforms>)
+    .build();
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaFanoutOptions.property.fanoutBy">fanoutBy</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#fanout_by Pipeline#fanout_by}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaFanoutOptions.property.transforms">transforms</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaFanoutOptionsTransforms">PipelineIngestionDefinitionObjectsSchemaFanoutOptionsTransforms</a>></code> | transforms block. |
+
+---
+
+##### `fanoutBy`<sup>Optional</sup> <a name="fanoutBy" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaFanoutOptions.property.fanoutBy"></a>
+
+```java
+public java.lang.String getFanoutBy();
+```
+
+- *Type:* java.lang.String
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#fanout_by Pipeline#fanout_by}.
+
+---
+
+##### `transforms`<sup>Optional</sup> <a name="transforms" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaFanoutOptions.property.transforms"></a>
+
+```java
+public IResolvable|java.util.List<PipelineIngestionDefinitionObjectsSchemaFanoutOptionsTransforms> getTransforms();
+```
+
+- *Type:* io.cdktn.cdktn.IResolvable|java.util.List<<a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaFanoutOptionsTransforms">PipelineIngestionDefinitionObjectsSchemaFanoutOptionsTransforms</a>>
+
+transforms block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#transforms Pipeline#transforms}
+
+---
+
+### PipelineIngestionDefinitionObjectsSchemaFanoutOptionsTransforms <a name="PipelineIngestionDefinitionObjectsSchemaFanoutOptionsTransforms" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaFanoutOptionsTransforms"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaFanoutOptionsTransforms.Initializer"></a>
+
+```java
+import io.cdktn.providers.databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaFanoutOptionsTransforms;
+
+PipelineIngestionDefinitionObjectsSchemaFanoutOptionsTransforms.builder()
+//  .format(java.lang.String)
+//  .jsonOptions(PipelineIngestionDefinitionObjectsSchemaFanoutOptionsTransformsJsonOptions)
+    .build();
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaFanoutOptionsTransforms.property.format">format</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#format Pipeline#format}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaFanoutOptionsTransforms.property.jsonOptions">jsonOptions</a></code> | <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaFanoutOptionsTransformsJsonOptions">PipelineIngestionDefinitionObjectsSchemaFanoutOptionsTransformsJsonOptions</a></code> | json_options block. |
+
+---
+
+##### `format`<sup>Optional</sup> <a name="format" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaFanoutOptionsTransforms.property.format"></a>
+
+```java
+public java.lang.String getFormat();
+```
+
+- *Type:* java.lang.String
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#format Pipeline#format}.
+
+---
+
+##### `jsonOptions`<sup>Optional</sup> <a name="jsonOptions" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaFanoutOptionsTransforms.property.jsonOptions"></a>
+
+```java
+public PipelineIngestionDefinitionObjectsSchemaFanoutOptionsTransformsJsonOptions getJsonOptions();
+```
+
+- *Type:* <a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaFanoutOptionsTransformsJsonOptions">PipelineIngestionDefinitionObjectsSchemaFanoutOptionsTransformsJsonOptions</a>
+
+json_options block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#json_options Pipeline#json_options}
+
+---
+
+### PipelineIngestionDefinitionObjectsSchemaFanoutOptionsTransformsJsonOptions <a name="PipelineIngestionDefinitionObjectsSchemaFanoutOptionsTransformsJsonOptions" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaFanoutOptionsTransformsJsonOptions"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaFanoutOptionsTransformsJsonOptions.Initializer"></a>
+
+```java
+import io.cdktn.providers.databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaFanoutOptionsTransformsJsonOptions;
+
+PipelineIngestionDefinitionObjectsSchemaFanoutOptionsTransformsJsonOptions.builder()
+//  .asVariant(java.lang.Boolean|IResolvable)
+//  .schema(java.lang.String)
+//  .schemaEvolutionMode(java.lang.String)
+//  .schemaFilePath(java.lang.String)
+//  .schemaHints(java.lang.String)
+    .build();
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaFanoutOptionsTransformsJsonOptions.property.asVariant">asVariant</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#as_variant Pipeline#as_variant}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaFanoutOptionsTransformsJsonOptions.property.schema">schema</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#schema Pipeline#schema}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaFanoutOptionsTransformsJsonOptions.property.schemaEvolutionMode">schemaEvolutionMode</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#schema_evolution_mode Pipeline#schema_evolution_mode}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaFanoutOptionsTransformsJsonOptions.property.schemaFilePath">schemaFilePath</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#schema_file_path Pipeline#schema_file_path}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaFanoutOptionsTransformsJsonOptions.property.schemaHints">schemaHints</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#schema_hints Pipeline#schema_hints}. |
+
+---
+
+##### `asVariant`<sup>Optional</sup> <a name="asVariant" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaFanoutOptionsTransformsJsonOptions.property.asVariant"></a>
+
+```java
+public java.lang.Boolean|IResolvable getAsVariant();
+```
+
+- *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#as_variant Pipeline#as_variant}.
+
+---
+
+##### `schema`<sup>Optional</sup> <a name="schema" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaFanoutOptionsTransformsJsonOptions.property.schema"></a>
+
+```java
+public java.lang.String getSchema();
+```
+
+- *Type:* java.lang.String
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#schema Pipeline#schema}.
+
+---
+
+##### `schemaEvolutionMode`<sup>Optional</sup> <a name="schemaEvolutionMode" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaFanoutOptionsTransformsJsonOptions.property.schemaEvolutionMode"></a>
+
+```java
+public java.lang.String getSchemaEvolutionMode();
+```
+
+- *Type:* java.lang.String
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#schema_evolution_mode Pipeline#schema_evolution_mode}.
+
+---
+
+##### `schemaFilePath`<sup>Optional</sup> <a name="schemaFilePath" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaFanoutOptionsTransformsJsonOptions.property.schemaFilePath"></a>
+
+```java
+public java.lang.String getSchemaFilePath();
+```
+
+- *Type:* java.lang.String
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#schema_file_path Pipeline#schema_file_path}.
+
+---
+
+##### `schemaHints`<sup>Optional</sup> <a name="schemaHints" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaFanoutOptionsTransformsJsonOptions.property.schemaHints"></a>
+
+```java
+public java.lang.String getSchemaHints();
+```
+
+- *Type:* java.lang.String
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#schema_hints Pipeline#schema_hints}.
 
 ---
 
@@ -8286,18 +8610,18 @@ PipelineIngestionDefinitionObjectsSchemaTableConfiguration.builder()
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfiguration.property.autoFullRefreshPolicy">autoFullRefreshPolicy</a></code> | <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationAutoFullRefreshPolicy">PipelineIngestionDefinitionObjectsSchemaTableConfigurationAutoFullRefreshPolicy</a></code> | auto_full_refresh_policy block. |
-| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfiguration.property.clusteringColumns">clusteringColumns</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#clustering_columns Pipeline#clustering_columns}. |
-| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfiguration.property.enableAutoClustering">enableAutoClustering</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#enable_auto_clustering Pipeline#enable_auto_clustering}. |
-| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfiguration.property.excludeColumns">excludeColumns</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#exclude_columns Pipeline#exclude_columns}. |
-| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfiguration.property.includeColumns">includeColumns</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#include_columns Pipeline#include_columns}. |
-| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfiguration.property.primaryKeys">primaryKeys</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#primary_keys Pipeline#primary_keys}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfiguration.property.clusteringColumns">clusteringColumns</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#clustering_columns Pipeline#clustering_columns}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfiguration.property.enableAutoClustering">enableAutoClustering</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#enable_auto_clustering Pipeline#enable_auto_clustering}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfiguration.property.excludeColumns">excludeColumns</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#exclude_columns Pipeline#exclude_columns}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfiguration.property.includeColumns">includeColumns</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#include_columns Pipeline#include_columns}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfiguration.property.primaryKeys">primaryKeys</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#primary_keys Pipeline#primary_keys}. |
 | <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfiguration.property.queryBasedConnectorConfig">queryBasedConnectorConfig</a></code> | <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationQueryBasedConnectorConfig">PipelineIngestionDefinitionObjectsSchemaTableConfigurationQueryBasedConnectorConfig</a></code> | query_based_connector_config block. |
-| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfiguration.property.rowFilter">rowFilter</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#row_filter Pipeline#row_filter}. |
-| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfiguration.property.salesforceIncludeFormulaFields">salesforceIncludeFormulaFields</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#salesforce_include_formula_fields Pipeline#salesforce_include_formula_fields}. |
-| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfiguration.property.scdType">scdType</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#scd_type Pipeline#scd_type}. |
-| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfiguration.property.sequenceBy">sequenceBy</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#sequence_by Pipeline#sequence_by}. |
-| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfiguration.property.sourceMetadataColumn">sourceMetadataColumn</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#source_metadata_column Pipeline#source_metadata_column}. |
-| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfiguration.property.tableProperties">tableProperties</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#table_properties Pipeline#table_properties}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfiguration.property.rowFilter">rowFilter</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#row_filter Pipeline#row_filter}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfiguration.property.salesforceIncludeFormulaFields">salesforceIncludeFormulaFields</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#salesforce_include_formula_fields Pipeline#salesforce_include_formula_fields}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfiguration.property.scdType">scdType</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#scd_type Pipeline#scd_type}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfiguration.property.sequenceBy">sequenceBy</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#sequence_by Pipeline#sequence_by}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfiguration.property.sourceMetadataColumn">sourceMetadataColumn</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#source_metadata_column Pipeline#source_metadata_column}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfiguration.property.tableProperties">tableProperties</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#table_properties Pipeline#table_properties}. |
 | <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfiguration.property.workdayReportParameters">workdayReportParameters</a></code> | <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParameters">PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParameters</a></code> | workday_report_parameters block. |
 
 ---
@@ -8312,7 +8636,7 @@ public PipelineIngestionDefinitionObjectsSchemaTableConfigurationAutoFullRefresh
 
 auto_full_refresh_policy block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#auto_full_refresh_policy Pipeline#auto_full_refresh_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#auto_full_refresh_policy Pipeline#auto_full_refresh_policy}
 
 ---
 
@@ -8324,7 +8648,7 @@ public java.util.List<java.lang.String> getClusteringColumns();
 
 - *Type:* java.util.List<java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#clustering_columns Pipeline#clustering_columns}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#clustering_columns Pipeline#clustering_columns}.
 
 ---
 
@@ -8336,7 +8660,7 @@ public java.lang.Boolean|IResolvable getEnableAutoClustering();
 
 - *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#enable_auto_clustering Pipeline#enable_auto_clustering}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#enable_auto_clustering Pipeline#enable_auto_clustering}.
 
 ---
 
@@ -8348,7 +8672,7 @@ public java.util.List<java.lang.String> getExcludeColumns();
 
 - *Type:* java.util.List<java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#exclude_columns Pipeline#exclude_columns}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#exclude_columns Pipeline#exclude_columns}.
 
 ---
 
@@ -8360,7 +8684,7 @@ public java.util.List<java.lang.String> getIncludeColumns();
 
 - *Type:* java.util.List<java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#include_columns Pipeline#include_columns}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#include_columns Pipeline#include_columns}.
 
 ---
 
@@ -8372,7 +8696,7 @@ public java.util.List<java.lang.String> getPrimaryKeys();
 
 - *Type:* java.util.List<java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#primary_keys Pipeline#primary_keys}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#primary_keys Pipeline#primary_keys}.
 
 ---
 
@@ -8386,7 +8710,7 @@ public PipelineIngestionDefinitionObjectsSchemaTableConfigurationQueryBasedConne
 
 query_based_connector_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#query_based_connector_config Pipeline#query_based_connector_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#query_based_connector_config Pipeline#query_based_connector_config}
 
 ---
 
@@ -8398,7 +8722,7 @@ public java.lang.String getRowFilter();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#row_filter Pipeline#row_filter}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#row_filter Pipeline#row_filter}.
 
 ---
 
@@ -8410,7 +8734,7 @@ public java.lang.Boolean|IResolvable getSalesforceIncludeFormulaFields();
 
 - *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#salesforce_include_formula_fields Pipeline#salesforce_include_formula_fields}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#salesforce_include_formula_fields Pipeline#salesforce_include_formula_fields}.
 
 ---
 
@@ -8422,7 +8746,7 @@ public java.lang.String getScdType();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#scd_type Pipeline#scd_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#scd_type Pipeline#scd_type}.
 
 ---
 
@@ -8434,7 +8758,7 @@ public java.util.List<java.lang.String> getSequenceBy();
 
 - *Type:* java.util.List<java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#sequence_by Pipeline#sequence_by}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#sequence_by Pipeline#sequence_by}.
 
 ---
 
@@ -8446,7 +8770,7 @@ public java.lang.String getSourceMetadataColumn();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#source_metadata_column Pipeline#source_metadata_column}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#source_metadata_column Pipeline#source_metadata_column}.
 
 ---
 
@@ -8458,7 +8782,7 @@ public java.util.Map<java.lang.String, java.lang.String> getTableProperties();
 
 - *Type:* java.util.Map<java.lang.String, java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#table_properties Pipeline#table_properties}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#table_properties Pipeline#table_properties}.
 
 ---
 
@@ -8472,7 +8796,7 @@ public PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportPa
 
 workday_report_parameters block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#workday_report_parameters Pipeline#workday_report_parameters}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#workday_report_parameters Pipeline#workday_report_parameters}
 
 ---
 
@@ -8493,8 +8817,8 @@ PipelineIngestionDefinitionObjectsSchemaTableConfigurationAutoFullRefreshPolicy.
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationAutoFullRefreshPolicy.property.enabled">enabled</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#enabled Pipeline#enabled}. |
-| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationAutoFullRefreshPolicy.property.minIntervalHours">minIntervalHours</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#min_interval_hours Pipeline#min_interval_hours}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationAutoFullRefreshPolicy.property.enabled">enabled</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#enabled Pipeline#enabled}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationAutoFullRefreshPolicy.property.minIntervalHours">minIntervalHours</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#min_interval_hours Pipeline#min_interval_hours}. |
 
 ---
 
@@ -8506,7 +8830,7 @@ public java.lang.Boolean|IResolvable getEnabled();
 
 - *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#enabled Pipeline#enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#enabled Pipeline#enabled}.
 
 ---
 
@@ -8518,7 +8842,7 @@ public java.lang.Number getMinIntervalHours();
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#min_interval_hours Pipeline#min_interval_hours}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#min_interval_hours Pipeline#min_interval_hours}.
 
 ---
 
@@ -8540,9 +8864,9 @@ PipelineIngestionDefinitionObjectsSchemaTableConfigurationQueryBasedConnectorCon
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationQueryBasedConnectorConfig.property.cursorColumns">cursorColumns</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#cursor_columns Pipeline#cursor_columns}. |
-| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationQueryBasedConnectorConfig.property.deletionCondition">deletionCondition</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#deletion_condition Pipeline#deletion_condition}. |
-| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationQueryBasedConnectorConfig.property.hardDeletionSyncMinIntervalInSeconds">hardDeletionSyncMinIntervalInSeconds</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#hard_deletion_sync_min_interval_in_seconds Pipeline#hard_deletion_sync_min_interval_in_seconds}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationQueryBasedConnectorConfig.property.cursorColumns">cursorColumns</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#cursor_columns Pipeline#cursor_columns}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationQueryBasedConnectorConfig.property.deletionCondition">deletionCondition</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#deletion_condition Pipeline#deletion_condition}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationQueryBasedConnectorConfig.property.hardDeletionSyncMinIntervalInSeconds">hardDeletionSyncMinIntervalInSeconds</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#hard_deletion_sync_min_interval_in_seconds Pipeline#hard_deletion_sync_min_interval_in_seconds}. |
 
 ---
 
@@ -8554,7 +8878,7 @@ public java.util.List<java.lang.String> getCursorColumns();
 
 - *Type:* java.util.List<java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#cursor_columns Pipeline#cursor_columns}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#cursor_columns Pipeline#cursor_columns}.
 
 ---
 
@@ -8566,7 +8890,7 @@ public java.lang.String getDeletionCondition();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#deletion_condition Pipeline#deletion_condition}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#deletion_condition Pipeline#deletion_condition}.
 
 ---
 
@@ -8578,7 +8902,7 @@ public java.lang.Number getHardDeletionSyncMinIntervalInSeconds();
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#hard_deletion_sync_min_interval_in_seconds Pipeline#hard_deletion_sync_min_interval_in_seconds}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#hard_deletion_sync_min_interval_in_seconds Pipeline#hard_deletion_sync_min_interval_in_seconds}.
 
 ---
 
@@ -8600,8 +8924,8 @@ PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParameter
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParameters.property.incremental">incremental</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#incremental Pipeline#incremental}. |
-| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParameters.property.parameters">parameters</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#parameters Pipeline#parameters}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParameters.property.incremental">incremental</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#incremental Pipeline#incremental}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParameters.property.parameters">parameters</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#parameters Pipeline#parameters}. |
 | <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParameters.property.reportParameters">reportParameters</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersReportParameters">PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersReportParameters</a>></code> | report_parameters block. |
 
 ---
@@ -8614,7 +8938,7 @@ public java.lang.Boolean|IResolvable getIncremental();
 
 - *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#incremental Pipeline#incremental}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#incremental Pipeline#incremental}.
 
 ---
 
@@ -8626,7 +8950,7 @@ public java.util.Map<java.lang.String, java.lang.String> getParameters();
 
 - *Type:* java.util.Map<java.lang.String, java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#parameters Pipeline#parameters}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#parameters Pipeline#parameters}.
 
 ---
 
@@ -8640,7 +8964,7 @@ public IResolvable|java.util.List<PipelineIngestionDefinitionObjectsSchemaTableC
 
 report_parameters block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#report_parameters Pipeline#report_parameters}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#report_parameters Pipeline#report_parameters}
 
 ---
 
@@ -8661,8 +8985,8 @@ PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParameter
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersReportParameters.property.key">key</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#key Pipeline#key}. |
-| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersReportParameters.property.value">value</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#value Pipeline#value}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersReportParameters.property.key">key</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#key Pipeline#key}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersReportParameters.property.value">value</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#value Pipeline#value}. |
 
 ---
 
@@ -8674,7 +8998,7 @@ public java.lang.String getKey();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#key Pipeline#key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#key Pipeline#key}.
 
 ---
 
@@ -8686,7 +9010,7 @@ public java.lang.String getValue();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#value Pipeline#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#value Pipeline#value}.
 
 ---
 
@@ -8713,13 +9037,13 @@ PipelineIngestionDefinitionObjectsTable.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTable.property.destinationCatalog">destinationCatalog</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#destination_catalog Pipeline#destination_catalog}. |
-| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTable.property.destinationSchema">destinationSchema</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#destination_schema Pipeline#destination_schema}. |
-| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTable.property.sourceTable">sourceTable</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#source_table Pipeline#source_table}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTable.property.destinationCatalog">destinationCatalog</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#destination_catalog Pipeline#destination_catalog}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTable.property.destinationSchema">destinationSchema</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#destination_schema Pipeline#destination_schema}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTable.property.sourceTable">sourceTable</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#source_table Pipeline#source_table}. |
 | <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTable.property.connectorOptions">connectorOptions</a></code> | <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptions">PipelineIngestionDefinitionObjectsTableConnectorOptions</a></code> | connector_options block. |
-| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTable.property.destinationTable">destinationTable</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#destination_table Pipeline#destination_table}. |
-| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTable.property.sourceCatalog">sourceCatalog</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#source_catalog Pipeline#source_catalog}. |
-| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTable.property.sourceSchema">sourceSchema</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#source_schema Pipeline#source_schema}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTable.property.destinationTable">destinationTable</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#destination_table Pipeline#destination_table}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTable.property.sourceCatalog">sourceCatalog</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#source_catalog Pipeline#source_catalog}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTable.property.sourceSchema">sourceSchema</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#source_schema Pipeline#source_schema}. |
 | <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTable.property.tableConfiguration">tableConfiguration</a></code> | <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfiguration">PipelineIngestionDefinitionObjectsTableTableConfiguration</a></code> | table_configuration block. |
 
 ---
@@ -8732,7 +9056,7 @@ public java.lang.String getDestinationCatalog();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#destination_catalog Pipeline#destination_catalog}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#destination_catalog Pipeline#destination_catalog}.
 
 ---
 
@@ -8744,7 +9068,7 @@ public java.lang.String getDestinationSchema();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#destination_schema Pipeline#destination_schema}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#destination_schema Pipeline#destination_schema}.
 
 ---
 
@@ -8756,7 +9080,7 @@ public java.lang.String getSourceTable();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#source_table Pipeline#source_table}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#source_table Pipeline#source_table}.
 
 ---
 
@@ -8770,7 +9094,7 @@ public PipelineIngestionDefinitionObjectsTableConnectorOptions getConnectorOptio
 
 connector_options block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#connector_options Pipeline#connector_options}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#connector_options Pipeline#connector_options}
 
 ---
 
@@ -8782,7 +9106,7 @@ public java.lang.String getDestinationTable();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#destination_table Pipeline#destination_table}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#destination_table Pipeline#destination_table}.
 
 ---
 
@@ -8794,7 +9118,7 @@ public java.lang.String getSourceCatalog();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#source_catalog Pipeline#source_catalog}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#source_catalog Pipeline#source_catalog}.
 
 ---
 
@@ -8806,7 +9130,7 @@ public java.lang.String getSourceSchema();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#source_schema Pipeline#source_schema}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#source_schema Pipeline#source_schema}.
 
 ---
 
@@ -8820,7 +9144,7 @@ public PipelineIngestionDefinitionObjectsTableTableConfiguration getTableConfigu
 
 table_configuration block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#table_configuration Pipeline#table_configuration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#table_configuration Pipeline#table_configuration}
 
 ---
 
@@ -8839,6 +9163,7 @@ PipelineIngestionDefinitionObjectsTableConnectorOptions.builder()
 //  .kafkaOptions(PipelineIngestionDefinitionObjectsTableConnectorOptionsKafkaOptions)
 //  .metaAdsOptions(PipelineIngestionDefinitionObjectsTableConnectorOptionsMetaAdsOptions)
 //  .outlookOptions(PipelineIngestionDefinitionObjectsTableConnectorOptionsOutlookOptions)
+//  .redditAdsOptions(PipelineIngestionDefinitionObjectsTableConnectorOptionsRedditAdsOptions)
 //  .sharepointOptions(PipelineIngestionDefinitionObjectsTableConnectorOptionsSharepointOptions)
 //  .smartsheetOptions(PipelineIngestionDefinitionObjectsTableConnectorOptionsSmartsheetOptions)
 //  .tiktokAdsOptions(PipelineIngestionDefinitionObjectsTableConnectorOptionsTiktokAdsOptions)
@@ -8857,6 +9182,7 @@ PipelineIngestionDefinitionObjectsTableConnectorOptions.builder()
 | <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptions.property.kafkaOptions">kafkaOptions</a></code> | <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsKafkaOptions">PipelineIngestionDefinitionObjectsTableConnectorOptionsKafkaOptions</a></code> | kafka_options block. |
 | <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptions.property.metaAdsOptions">metaAdsOptions</a></code> | <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsMetaAdsOptions">PipelineIngestionDefinitionObjectsTableConnectorOptionsMetaAdsOptions</a></code> | meta_ads_options block. |
 | <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptions.property.outlookOptions">outlookOptions</a></code> | <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsOutlookOptions">PipelineIngestionDefinitionObjectsTableConnectorOptionsOutlookOptions</a></code> | outlook_options block. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptions.property.redditAdsOptions">redditAdsOptions</a></code> | <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsRedditAdsOptions">PipelineIngestionDefinitionObjectsTableConnectorOptionsRedditAdsOptions</a></code> | reddit_ads_options block. |
 | <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptions.property.sharepointOptions">sharepointOptions</a></code> | <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsSharepointOptions">PipelineIngestionDefinitionObjectsTableConnectorOptionsSharepointOptions</a></code> | sharepoint_options block. |
 | <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptions.property.smartsheetOptions">smartsheetOptions</a></code> | <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsSmartsheetOptions">PipelineIngestionDefinitionObjectsTableConnectorOptionsSmartsheetOptions</a></code> | smartsheet_options block. |
 | <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptions.property.tiktokAdsOptions">tiktokAdsOptions</a></code> | <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsTiktokAdsOptions">PipelineIngestionDefinitionObjectsTableConnectorOptionsTiktokAdsOptions</a></code> | tiktok_ads_options block. |
@@ -8874,7 +9200,7 @@ public PipelineIngestionDefinitionObjectsTableConnectorOptionsConfluenceOptions 
 
 confluence_options block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#confluence_options Pipeline#confluence_options}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#confluence_options Pipeline#confluence_options}
 
 ---
 
@@ -8888,7 +9214,7 @@ public PipelineIngestionDefinitionObjectsTableConnectorOptionsGdriveOptions getG
 
 gdrive_options block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#gdrive_options Pipeline#gdrive_options}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#gdrive_options Pipeline#gdrive_options}
 
 ---
 
@@ -8902,7 +9228,7 @@ public PipelineIngestionDefinitionObjectsTableConnectorOptionsGoogleAdsOptions g
 
 google_ads_options block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#google_ads_options Pipeline#google_ads_options}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#google_ads_options Pipeline#google_ads_options}
 
 ---
 
@@ -8916,7 +9242,7 @@ public PipelineIngestionDefinitionObjectsTableConnectorOptionsJiraOptions getJir
 
 jira_options block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#jira_options Pipeline#jira_options}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#jira_options Pipeline#jira_options}
 
 ---
 
@@ -8930,7 +9256,7 @@ public PipelineIngestionDefinitionObjectsTableConnectorOptionsKafkaOptions getKa
 
 kafka_options block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#kafka_options Pipeline#kafka_options}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#kafka_options Pipeline#kafka_options}
 
 ---
 
@@ -8944,7 +9270,7 @@ public PipelineIngestionDefinitionObjectsTableConnectorOptionsMetaAdsOptions get
 
 meta_ads_options block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#meta_ads_options Pipeline#meta_ads_options}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#meta_ads_options Pipeline#meta_ads_options}
 
 ---
 
@@ -8958,7 +9284,21 @@ public PipelineIngestionDefinitionObjectsTableConnectorOptionsOutlookOptions get
 
 outlook_options block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#outlook_options Pipeline#outlook_options}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#outlook_options Pipeline#outlook_options}
+
+---
+
+##### `redditAdsOptions`<sup>Optional</sup> <a name="redditAdsOptions" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptions.property.redditAdsOptions"></a>
+
+```java
+public PipelineIngestionDefinitionObjectsTableConnectorOptionsRedditAdsOptions getRedditAdsOptions();
+```
+
+- *Type:* <a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsRedditAdsOptions">PipelineIngestionDefinitionObjectsTableConnectorOptionsRedditAdsOptions</a>
+
+reddit_ads_options block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#reddit_ads_options Pipeline#reddit_ads_options}
 
 ---
 
@@ -8972,7 +9312,7 @@ public PipelineIngestionDefinitionObjectsTableConnectorOptionsSharepointOptions 
 
 sharepoint_options block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#sharepoint_options Pipeline#sharepoint_options}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#sharepoint_options Pipeline#sharepoint_options}
 
 ---
 
@@ -8986,7 +9326,7 @@ public PipelineIngestionDefinitionObjectsTableConnectorOptionsSmartsheetOptions 
 
 smartsheet_options block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#smartsheet_options Pipeline#smartsheet_options}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#smartsheet_options Pipeline#smartsheet_options}
 
 ---
 
@@ -9000,7 +9340,7 @@ public PipelineIngestionDefinitionObjectsTableConnectorOptionsTiktokAdsOptions g
 
 tiktok_ads_options block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#tiktok_ads_options Pipeline#tiktok_ads_options}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#tiktok_ads_options Pipeline#tiktok_ads_options}
 
 ---
 
@@ -9014,7 +9354,7 @@ public PipelineIngestionDefinitionObjectsTableConnectorOptionsZendeskSupportOpti
 
 zendesk_support_options block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#zendesk_support_options Pipeline#zendesk_support_options}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#zendesk_support_options Pipeline#zendesk_support_options}
 
 ---
 
@@ -9034,7 +9374,7 @@ PipelineIngestionDefinitionObjectsTableConnectorOptionsConfluenceOptions.builder
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsConfluenceOptions.property.includeConfluenceSpaces">includeConfluenceSpaces</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#include_confluence_spaces Pipeline#include_confluence_spaces}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsConfluenceOptions.property.includeConfluenceSpaces">includeConfluenceSpaces</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#include_confluence_spaces Pipeline#include_confluence_spaces}. |
 
 ---
 
@@ -9046,7 +9386,7 @@ public java.util.List<java.lang.String> getIncludeConfluenceSpaces();
 
 - *Type:* java.util.List<java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#include_confluence_spaces Pipeline#include_confluence_spaces}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#include_confluence_spaces Pipeline#include_confluence_spaces}.
 
 ---
 
@@ -9068,9 +9408,9 @@ PipelineIngestionDefinitionObjectsTableConnectorOptionsGdriveOptions.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsGdriveOptions.property.entityType">entityType</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#entity_type Pipeline#entity_type}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsGdriveOptions.property.entityType">entityType</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#entity_type Pipeline#entity_type}. |
 | <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsGdriveOptions.property.fileIngestionOptions">fileIngestionOptions</a></code> | <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsGdriveOptionsFileIngestionOptions">PipelineIngestionDefinitionObjectsTableConnectorOptionsGdriveOptionsFileIngestionOptions</a></code> | file_ingestion_options block. |
-| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsGdriveOptions.property.url">url</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#url Pipeline#url}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsGdriveOptions.property.url">url</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#url Pipeline#url}. |
 
 ---
 
@@ -9082,7 +9422,7 @@ public java.lang.String getEntityType();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#entity_type Pipeline#entity_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#entity_type Pipeline#entity_type}.
 
 ---
 
@@ -9096,7 +9436,7 @@ public PipelineIngestionDefinitionObjectsTableConnectorOptionsGdriveOptionsFileI
 
 file_ingestion_options block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#file_ingestion_options Pipeline#file_ingestion_options}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#file_ingestion_options Pipeline#file_ingestion_options}
 
 ---
 
@@ -9108,7 +9448,7 @@ public java.lang.String getUrl();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#url Pipeline#url}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#url Pipeline#url}.
 
 ---
 
@@ -9138,17 +9478,17 @@ PipelineIngestionDefinitionObjectsTableConnectorOptionsGdriveOptionsFileIngestio
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsGdriveOptionsFileIngestionOptions.property.corruptRecordColumn">corruptRecordColumn</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#corrupt_record_column Pipeline#corrupt_record_column}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsGdriveOptionsFileIngestionOptions.property.corruptRecordColumn">corruptRecordColumn</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#corrupt_record_column Pipeline#corrupt_record_column}. |
 | <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsGdriveOptionsFileIngestionOptions.property.fileFilters">fileFilters</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsGdriveOptionsFileIngestionOptionsFileFilters">PipelineIngestionDefinitionObjectsTableConnectorOptionsGdriveOptionsFileIngestionOptionsFileFilters</a>></code> | file_filters block. |
-| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsGdriveOptionsFileIngestionOptions.property.format">format</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#format Pipeline#format}. |
-| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsGdriveOptionsFileIngestionOptions.property.formatOptions">formatOptions</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#format_options Pipeline#format_options}. |
-| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsGdriveOptionsFileIngestionOptions.property.ignoreCorruptFiles">ignoreCorruptFiles</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#ignore_corrupt_files Pipeline#ignore_corrupt_files}. |
-| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsGdriveOptionsFileIngestionOptions.property.inferColumnTypes">inferColumnTypes</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#infer_column_types Pipeline#infer_column_types}. |
-| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsGdriveOptionsFileIngestionOptions.property.readerCaseSensitive">readerCaseSensitive</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#reader_case_sensitive Pipeline#reader_case_sensitive}. |
-| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsGdriveOptionsFileIngestionOptions.property.rescuedDataColumn">rescuedDataColumn</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#rescued_data_column Pipeline#rescued_data_column}. |
-| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsGdriveOptionsFileIngestionOptions.property.schemaEvolutionMode">schemaEvolutionMode</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#schema_evolution_mode Pipeline#schema_evolution_mode}. |
-| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsGdriveOptionsFileIngestionOptions.property.schemaHints">schemaHints</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#schema_hints Pipeline#schema_hints}. |
-| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsGdriveOptionsFileIngestionOptions.property.singleVariantColumn">singleVariantColumn</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#single_variant_column Pipeline#single_variant_column}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsGdriveOptionsFileIngestionOptions.property.format">format</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#format Pipeline#format}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsGdriveOptionsFileIngestionOptions.property.formatOptions">formatOptions</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#format_options Pipeline#format_options}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsGdriveOptionsFileIngestionOptions.property.ignoreCorruptFiles">ignoreCorruptFiles</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#ignore_corrupt_files Pipeline#ignore_corrupt_files}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsGdriveOptionsFileIngestionOptions.property.inferColumnTypes">inferColumnTypes</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#infer_column_types Pipeline#infer_column_types}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsGdriveOptionsFileIngestionOptions.property.readerCaseSensitive">readerCaseSensitive</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#reader_case_sensitive Pipeline#reader_case_sensitive}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsGdriveOptionsFileIngestionOptions.property.rescuedDataColumn">rescuedDataColumn</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#rescued_data_column Pipeline#rescued_data_column}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsGdriveOptionsFileIngestionOptions.property.schemaEvolutionMode">schemaEvolutionMode</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#schema_evolution_mode Pipeline#schema_evolution_mode}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsGdriveOptionsFileIngestionOptions.property.schemaHints">schemaHints</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#schema_hints Pipeline#schema_hints}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsGdriveOptionsFileIngestionOptions.property.singleVariantColumn">singleVariantColumn</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#single_variant_column Pipeline#single_variant_column}. |
 
 ---
 
@@ -9160,7 +9500,7 @@ public java.lang.String getCorruptRecordColumn();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#corrupt_record_column Pipeline#corrupt_record_column}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#corrupt_record_column Pipeline#corrupt_record_column}.
 
 ---
 
@@ -9174,7 +9514,7 @@ public IResolvable|java.util.List<PipelineIngestionDefinitionObjectsTableConnect
 
 file_filters block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#file_filters Pipeline#file_filters}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#file_filters Pipeline#file_filters}
 
 ---
 
@@ -9186,7 +9526,7 @@ public java.lang.String getFormat();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#format Pipeline#format}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#format Pipeline#format}.
 
 ---
 
@@ -9198,7 +9538,7 @@ public java.util.Map<java.lang.String, java.lang.String> getFormatOptions();
 
 - *Type:* java.util.Map<java.lang.String, java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#format_options Pipeline#format_options}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#format_options Pipeline#format_options}.
 
 ---
 
@@ -9210,7 +9550,7 @@ public java.lang.Boolean|IResolvable getIgnoreCorruptFiles();
 
 - *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#ignore_corrupt_files Pipeline#ignore_corrupt_files}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#ignore_corrupt_files Pipeline#ignore_corrupt_files}.
 
 ---
 
@@ -9222,7 +9562,7 @@ public java.lang.Boolean|IResolvable getInferColumnTypes();
 
 - *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#infer_column_types Pipeline#infer_column_types}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#infer_column_types Pipeline#infer_column_types}.
 
 ---
 
@@ -9234,7 +9574,7 @@ public java.lang.Boolean|IResolvable getReaderCaseSensitive();
 
 - *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#reader_case_sensitive Pipeline#reader_case_sensitive}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#reader_case_sensitive Pipeline#reader_case_sensitive}.
 
 ---
 
@@ -9246,7 +9586,7 @@ public java.lang.String getRescuedDataColumn();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#rescued_data_column Pipeline#rescued_data_column}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#rescued_data_column Pipeline#rescued_data_column}.
 
 ---
 
@@ -9258,7 +9598,7 @@ public java.lang.String getSchemaEvolutionMode();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#schema_evolution_mode Pipeline#schema_evolution_mode}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#schema_evolution_mode Pipeline#schema_evolution_mode}.
 
 ---
 
@@ -9270,7 +9610,7 @@ public java.lang.String getSchemaHints();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#schema_hints Pipeline#schema_hints}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#schema_hints Pipeline#schema_hints}.
 
 ---
 
@@ -9282,7 +9622,7 @@ public java.lang.String getSingleVariantColumn();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#single_variant_column Pipeline#single_variant_column}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#single_variant_column Pipeline#single_variant_column}.
 
 ---
 
@@ -9304,9 +9644,9 @@ PipelineIngestionDefinitionObjectsTableConnectorOptionsGdriveOptionsFileIngestio
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsGdriveOptionsFileIngestionOptionsFileFilters.property.modifiedAfter">modifiedAfter</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#modified_after Pipeline#modified_after}. |
-| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsGdriveOptionsFileIngestionOptionsFileFilters.property.modifiedBefore">modifiedBefore</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#modified_before Pipeline#modified_before}. |
-| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsGdriveOptionsFileIngestionOptionsFileFilters.property.pathFilter">pathFilter</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#path_filter Pipeline#path_filter}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsGdriveOptionsFileIngestionOptionsFileFilters.property.modifiedAfter">modifiedAfter</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#modified_after Pipeline#modified_after}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsGdriveOptionsFileIngestionOptionsFileFilters.property.modifiedBefore">modifiedBefore</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#modified_before Pipeline#modified_before}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsGdriveOptionsFileIngestionOptionsFileFilters.property.pathFilter">pathFilter</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#path_filter Pipeline#path_filter}. |
 
 ---
 
@@ -9318,7 +9658,7 @@ public java.lang.String getModifiedAfter();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#modified_after Pipeline#modified_after}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#modified_after Pipeline#modified_after}.
 
 ---
 
@@ -9330,7 +9670,7 @@ public java.lang.String getModifiedBefore();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#modified_before Pipeline#modified_before}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#modified_before Pipeline#modified_before}.
 
 ---
 
@@ -9342,7 +9682,7 @@ public java.lang.String getPathFilter();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#path_filter Pipeline#path_filter}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#path_filter Pipeline#path_filter}.
 
 ---
 
@@ -9365,10 +9705,10 @@ PipelineIngestionDefinitionObjectsTableConnectorOptionsGoogleAdsOptions.builder(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsGoogleAdsOptions.property.managerAccountId">managerAccountId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#manager_account_id Pipeline#manager_account_id}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsGoogleAdsOptions.property.managerAccountId">managerAccountId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#manager_account_id Pipeline#manager_account_id}. |
 | <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsGoogleAdsOptions.property.customReportOptions">customReportOptions</a></code> | <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsGoogleAdsOptionsCustomReportOptions">PipelineIngestionDefinitionObjectsTableConnectorOptionsGoogleAdsOptionsCustomReportOptions</a></code> | custom_report_options block. |
-| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsGoogleAdsOptions.property.lookbackWindowDays">lookbackWindowDays</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#lookback_window_days Pipeline#lookback_window_days}. |
-| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsGoogleAdsOptions.property.syncStartDate">syncStartDate</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#sync_start_date Pipeline#sync_start_date}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsGoogleAdsOptions.property.lookbackWindowDays">lookbackWindowDays</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#lookback_window_days Pipeline#lookback_window_days}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsGoogleAdsOptions.property.syncStartDate">syncStartDate</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#sync_start_date Pipeline#sync_start_date}. |
 
 ---
 
@@ -9380,7 +9720,7 @@ public java.lang.String getManagerAccountId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#manager_account_id Pipeline#manager_account_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#manager_account_id Pipeline#manager_account_id}.
 
 ---
 
@@ -9394,7 +9734,7 @@ public PipelineIngestionDefinitionObjectsTableConnectorOptionsGoogleAdsOptionsCu
 
 custom_report_options block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#custom_report_options Pipeline#custom_report_options}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#custom_report_options Pipeline#custom_report_options}
 
 ---
 
@@ -9406,7 +9746,7 @@ public java.lang.Number getLookbackWindowDays();
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#lookback_window_days Pipeline#lookback_window_days}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#lookback_window_days Pipeline#lookback_window_days}.
 
 ---
 
@@ -9418,7 +9758,7 @@ public java.lang.String getSyncStartDate();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#sync_start_date Pipeline#sync_start_date}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#sync_start_date Pipeline#sync_start_date}.
 
 ---
 
@@ -9441,10 +9781,10 @@ PipelineIngestionDefinitionObjectsTableConnectorOptionsGoogleAdsOptionsCustomRep
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsGoogleAdsOptionsCustomReportOptions.property.resource">resource</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#resource Pipeline#resource}. |
-| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsGoogleAdsOptionsCustomReportOptions.property.metrics">metrics</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#metrics Pipeline#metrics}. |
-| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsGoogleAdsOptionsCustomReportOptions.property.resourceFields">resourceFields</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#resource_fields Pipeline#resource_fields}. |
-| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsGoogleAdsOptionsCustomReportOptions.property.segments">segments</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#segments Pipeline#segments}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsGoogleAdsOptionsCustomReportOptions.property.resource">resource</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#resource Pipeline#resource}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsGoogleAdsOptionsCustomReportOptions.property.metrics">metrics</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#metrics Pipeline#metrics}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsGoogleAdsOptionsCustomReportOptions.property.resourceFields">resourceFields</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#resource_fields Pipeline#resource_fields}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsGoogleAdsOptionsCustomReportOptions.property.segments">segments</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#segments Pipeline#segments}. |
 
 ---
 
@@ -9456,7 +9796,7 @@ public java.lang.String getResource();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#resource Pipeline#resource}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#resource Pipeline#resource}.
 
 ---
 
@@ -9468,7 +9808,7 @@ public java.util.List<java.lang.String> getMetrics();
 
 - *Type:* java.util.List<java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#metrics Pipeline#metrics}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#metrics Pipeline#metrics}.
 
 ---
 
@@ -9480,7 +9820,7 @@ public java.util.List<java.lang.String> getResourceFields();
 
 - *Type:* java.util.List<java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#resource_fields Pipeline#resource_fields}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#resource_fields Pipeline#resource_fields}.
 
 ---
 
@@ -9492,7 +9832,7 @@ public java.util.List<java.lang.String> getSegments();
 
 - *Type:* java.util.List<java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#segments Pipeline#segments}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#segments Pipeline#segments}.
 
 ---
 
@@ -9512,7 +9852,7 @@ PipelineIngestionDefinitionObjectsTableConnectorOptionsJiraOptions.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsJiraOptions.property.includeJiraSpaces">includeJiraSpaces</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#include_jira_spaces Pipeline#include_jira_spaces}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsJiraOptions.property.includeJiraSpaces">includeJiraSpaces</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#include_jira_spaces Pipeline#include_jira_spaces}. |
 
 ---
 
@@ -9524,7 +9864,7 @@ public java.util.List<java.lang.String> getIncludeJiraSpaces();
 
 - *Type:* java.util.List<java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#include_jira_spaces Pipeline#include_jira_spaces}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#include_jira_spaces Pipeline#include_jira_spaces}.
 
 ---
 
@@ -9550,12 +9890,12 @@ PipelineIngestionDefinitionObjectsTableConnectorOptionsKafkaOptions.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsKafkaOptions.property.clientConfig">clientConfig</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#client_config Pipeline#client_config}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsKafkaOptions.property.clientConfig">clientConfig</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#client_config Pipeline#client_config}. |
 | <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsKafkaOptions.property.keyTransformer">keyTransformer</a></code> | <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsKafkaOptionsKeyTransformer">PipelineIngestionDefinitionObjectsTableConnectorOptionsKafkaOptionsKeyTransformer</a></code> | key_transformer block. |
-| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsKafkaOptions.property.maxOffsetsPerTrigger">maxOffsetsPerTrigger</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#max_offsets_per_trigger Pipeline#max_offsets_per_trigger}. |
-| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsKafkaOptions.property.startingOffset">startingOffset</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#starting_offset Pipeline#starting_offset}. |
-| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsKafkaOptions.property.topicPattern">topicPattern</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#topic_pattern Pipeline#topic_pattern}. |
-| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsKafkaOptions.property.topics">topics</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#topics Pipeline#topics}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsKafkaOptions.property.maxOffsetsPerTrigger">maxOffsetsPerTrigger</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#max_offsets_per_trigger Pipeline#max_offsets_per_trigger}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsKafkaOptions.property.startingOffset">startingOffset</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#starting_offset Pipeline#starting_offset}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsKafkaOptions.property.topicPattern">topicPattern</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#topic_pattern Pipeline#topic_pattern}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsKafkaOptions.property.topics">topics</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#topics Pipeline#topics}. |
 | <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsKafkaOptions.property.valueTransformer">valueTransformer</a></code> | <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsKafkaOptionsValueTransformer">PipelineIngestionDefinitionObjectsTableConnectorOptionsKafkaOptionsValueTransformer</a></code> | value_transformer block. |
 
 ---
@@ -9568,7 +9908,7 @@ public java.util.Map<java.lang.String, java.lang.String> getClientConfig();
 
 - *Type:* java.util.Map<java.lang.String, java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#client_config Pipeline#client_config}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#client_config Pipeline#client_config}.
 
 ---
 
@@ -9582,7 +9922,7 @@ public PipelineIngestionDefinitionObjectsTableConnectorOptionsKafkaOptionsKeyTra
 
 key_transformer block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#key_transformer Pipeline#key_transformer}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#key_transformer Pipeline#key_transformer}
 
 ---
 
@@ -9594,7 +9934,7 @@ public java.lang.Number getMaxOffsetsPerTrigger();
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#max_offsets_per_trigger Pipeline#max_offsets_per_trigger}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#max_offsets_per_trigger Pipeline#max_offsets_per_trigger}.
 
 ---
 
@@ -9606,7 +9946,7 @@ public java.lang.String getStartingOffset();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#starting_offset Pipeline#starting_offset}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#starting_offset Pipeline#starting_offset}.
 
 ---
 
@@ -9618,7 +9958,7 @@ public java.lang.String getTopicPattern();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#topic_pattern Pipeline#topic_pattern}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#topic_pattern Pipeline#topic_pattern}.
 
 ---
 
@@ -9630,7 +9970,7 @@ public java.util.List<java.lang.String> getTopics();
 
 - *Type:* java.util.List<java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#topics Pipeline#topics}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#topics Pipeline#topics}.
 
 ---
 
@@ -9644,7 +9984,7 @@ public PipelineIngestionDefinitionObjectsTableConnectorOptionsKafkaOptionsValueT
 
 value_transformer block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#value_transformer Pipeline#value_transformer}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#value_transformer Pipeline#value_transformer}
 
 ---
 
@@ -9665,7 +10005,7 @@ PipelineIngestionDefinitionObjectsTableConnectorOptionsKafkaOptionsKeyTransforme
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsKafkaOptionsKeyTransformer.property.format">format</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#format Pipeline#format}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsKafkaOptionsKeyTransformer.property.format">format</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#format Pipeline#format}. |
 | <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsKafkaOptionsKeyTransformer.property.jsonOptions">jsonOptions</a></code> | <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsKafkaOptionsKeyTransformerJsonOptions">PipelineIngestionDefinitionObjectsTableConnectorOptionsKafkaOptionsKeyTransformerJsonOptions</a></code> | json_options block. |
 
 ---
@@ -9678,7 +10018,7 @@ public java.lang.String getFormat();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#format Pipeline#format}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#format Pipeline#format}.
 
 ---
 
@@ -9692,7 +10032,7 @@ public PipelineIngestionDefinitionObjectsTableConnectorOptionsKafkaOptionsKeyTra
 
 json_options block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#json_options Pipeline#json_options}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#json_options Pipeline#json_options}
 
 ---
 
@@ -9716,11 +10056,11 @@ PipelineIngestionDefinitionObjectsTableConnectorOptionsKafkaOptionsKeyTransforme
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsKafkaOptionsKeyTransformerJsonOptions.property.asVariant">asVariant</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#as_variant Pipeline#as_variant}. |
-| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsKafkaOptionsKeyTransformerJsonOptions.property.schema">schema</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#schema Pipeline#schema}. |
-| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsKafkaOptionsKeyTransformerJsonOptions.property.schemaEvolutionMode">schemaEvolutionMode</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#schema_evolution_mode Pipeline#schema_evolution_mode}. |
-| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsKafkaOptionsKeyTransformerJsonOptions.property.schemaFilePath">schemaFilePath</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#schema_file_path Pipeline#schema_file_path}. |
-| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsKafkaOptionsKeyTransformerJsonOptions.property.schemaHints">schemaHints</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#schema_hints Pipeline#schema_hints}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsKafkaOptionsKeyTransformerJsonOptions.property.asVariant">asVariant</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#as_variant Pipeline#as_variant}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsKafkaOptionsKeyTransformerJsonOptions.property.schema">schema</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#schema Pipeline#schema}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsKafkaOptionsKeyTransformerJsonOptions.property.schemaEvolutionMode">schemaEvolutionMode</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#schema_evolution_mode Pipeline#schema_evolution_mode}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsKafkaOptionsKeyTransformerJsonOptions.property.schemaFilePath">schemaFilePath</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#schema_file_path Pipeline#schema_file_path}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsKafkaOptionsKeyTransformerJsonOptions.property.schemaHints">schemaHints</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#schema_hints Pipeline#schema_hints}. |
 
 ---
 
@@ -9732,7 +10072,7 @@ public java.lang.Boolean|IResolvable getAsVariant();
 
 - *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#as_variant Pipeline#as_variant}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#as_variant Pipeline#as_variant}.
 
 ---
 
@@ -9744,7 +10084,7 @@ public java.lang.String getSchema();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#schema Pipeline#schema}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#schema Pipeline#schema}.
 
 ---
 
@@ -9756,7 +10096,7 @@ public java.lang.String getSchemaEvolutionMode();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#schema_evolution_mode Pipeline#schema_evolution_mode}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#schema_evolution_mode Pipeline#schema_evolution_mode}.
 
 ---
 
@@ -9768,7 +10108,7 @@ public java.lang.String getSchemaFilePath();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#schema_file_path Pipeline#schema_file_path}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#schema_file_path Pipeline#schema_file_path}.
 
 ---
 
@@ -9780,7 +10120,7 @@ public java.lang.String getSchemaHints();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#schema_hints Pipeline#schema_hints}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#schema_hints Pipeline#schema_hints}.
 
 ---
 
@@ -9801,7 +10141,7 @@ PipelineIngestionDefinitionObjectsTableConnectorOptionsKafkaOptionsValueTransfor
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsKafkaOptionsValueTransformer.property.format">format</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#format Pipeline#format}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsKafkaOptionsValueTransformer.property.format">format</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#format Pipeline#format}. |
 | <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsKafkaOptionsValueTransformer.property.jsonOptions">jsonOptions</a></code> | <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsKafkaOptionsValueTransformerJsonOptions">PipelineIngestionDefinitionObjectsTableConnectorOptionsKafkaOptionsValueTransformerJsonOptions</a></code> | json_options block. |
 
 ---
@@ -9814,7 +10154,7 @@ public java.lang.String getFormat();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#format Pipeline#format}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#format Pipeline#format}.
 
 ---
 
@@ -9828,7 +10168,7 @@ public PipelineIngestionDefinitionObjectsTableConnectorOptionsKafkaOptionsValueT
 
 json_options block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#json_options Pipeline#json_options}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#json_options Pipeline#json_options}
 
 ---
 
@@ -9852,11 +10192,11 @@ PipelineIngestionDefinitionObjectsTableConnectorOptionsKafkaOptionsValueTransfor
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsKafkaOptionsValueTransformerJsonOptions.property.asVariant">asVariant</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#as_variant Pipeline#as_variant}. |
-| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsKafkaOptionsValueTransformerJsonOptions.property.schema">schema</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#schema Pipeline#schema}. |
-| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsKafkaOptionsValueTransformerJsonOptions.property.schemaEvolutionMode">schemaEvolutionMode</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#schema_evolution_mode Pipeline#schema_evolution_mode}. |
-| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsKafkaOptionsValueTransformerJsonOptions.property.schemaFilePath">schemaFilePath</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#schema_file_path Pipeline#schema_file_path}. |
-| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsKafkaOptionsValueTransformerJsonOptions.property.schemaHints">schemaHints</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#schema_hints Pipeline#schema_hints}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsKafkaOptionsValueTransformerJsonOptions.property.asVariant">asVariant</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#as_variant Pipeline#as_variant}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsKafkaOptionsValueTransformerJsonOptions.property.schema">schema</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#schema Pipeline#schema}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsKafkaOptionsValueTransformerJsonOptions.property.schemaEvolutionMode">schemaEvolutionMode</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#schema_evolution_mode Pipeline#schema_evolution_mode}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsKafkaOptionsValueTransformerJsonOptions.property.schemaFilePath">schemaFilePath</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#schema_file_path Pipeline#schema_file_path}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsKafkaOptionsValueTransformerJsonOptions.property.schemaHints">schemaHints</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#schema_hints Pipeline#schema_hints}. |
 
 ---
 
@@ -9868,7 +10208,7 @@ public java.lang.Boolean|IResolvable getAsVariant();
 
 - *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#as_variant Pipeline#as_variant}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#as_variant Pipeline#as_variant}.
 
 ---
 
@@ -9880,7 +10220,7 @@ public java.lang.String getSchema();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#schema Pipeline#schema}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#schema Pipeline#schema}.
 
 ---
 
@@ -9892,7 +10232,7 @@ public java.lang.String getSchemaEvolutionMode();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#schema_evolution_mode Pipeline#schema_evolution_mode}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#schema_evolution_mode Pipeline#schema_evolution_mode}.
 
 ---
 
@@ -9904,7 +10244,7 @@ public java.lang.String getSchemaFilePath();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#schema_file_path Pipeline#schema_file_path}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#schema_file_path Pipeline#schema_file_path}.
 
 ---
 
@@ -9916,7 +10256,7 @@ public java.lang.String getSchemaHints();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#schema_hints Pipeline#schema_hints}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#schema_hints Pipeline#schema_hints}.
 
 ---
 
@@ -9944,15 +10284,15 @@ PipelineIngestionDefinitionObjectsTableConnectorOptionsMetaAdsOptions.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsMetaAdsOptions.property.actionAttributionWindows">actionAttributionWindows</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#action_attribution_windows Pipeline#action_attribution_windows}. |
-| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsMetaAdsOptions.property.actionBreakdowns">actionBreakdowns</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#action_breakdowns Pipeline#action_breakdowns}. |
-| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsMetaAdsOptions.property.actionReportTime">actionReportTime</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#action_report_time Pipeline#action_report_time}. |
-| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsMetaAdsOptions.property.breakdowns">breakdowns</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#breakdowns Pipeline#breakdowns}. |
-| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsMetaAdsOptions.property.customInsightsLookbackWindow">customInsightsLookbackWindow</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#custom_insights_lookback_window Pipeline#custom_insights_lookback_window}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsMetaAdsOptions.property.actionAttributionWindows">actionAttributionWindows</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#action_attribution_windows Pipeline#action_attribution_windows}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsMetaAdsOptions.property.actionBreakdowns">actionBreakdowns</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#action_breakdowns Pipeline#action_breakdowns}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsMetaAdsOptions.property.actionReportTime">actionReportTime</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#action_report_time Pipeline#action_report_time}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsMetaAdsOptions.property.breakdowns">breakdowns</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#breakdowns Pipeline#breakdowns}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsMetaAdsOptions.property.customInsightsLookbackWindow">customInsightsLookbackWindow</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#custom_insights_lookback_window Pipeline#custom_insights_lookback_window}. |
 | <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsMetaAdsOptions.property.customReportOptions">customReportOptions</a></code> | <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsMetaAdsOptionsCustomReportOptions">PipelineIngestionDefinitionObjectsTableConnectorOptionsMetaAdsOptionsCustomReportOptions</a></code> | custom_report_options block. |
-| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsMetaAdsOptions.property.level">level</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#level Pipeline#level}. |
-| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsMetaAdsOptions.property.startDate">startDate</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#start_date Pipeline#start_date}. |
-| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsMetaAdsOptions.property.timeIncrement">timeIncrement</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#time_increment Pipeline#time_increment}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsMetaAdsOptions.property.level">level</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#level Pipeline#level}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsMetaAdsOptions.property.startDate">startDate</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#start_date Pipeline#start_date}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsMetaAdsOptions.property.timeIncrement">timeIncrement</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#time_increment Pipeline#time_increment}. |
 
 ---
 
@@ -9964,7 +10304,7 @@ public java.util.List<java.lang.String> getActionAttributionWindows();
 
 - *Type:* java.util.List<java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#action_attribution_windows Pipeline#action_attribution_windows}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#action_attribution_windows Pipeline#action_attribution_windows}.
 
 ---
 
@@ -9976,7 +10316,7 @@ public java.util.List<java.lang.String> getActionBreakdowns();
 
 - *Type:* java.util.List<java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#action_breakdowns Pipeline#action_breakdowns}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#action_breakdowns Pipeline#action_breakdowns}.
 
 ---
 
@@ -9988,7 +10328,7 @@ public java.lang.String getActionReportTime();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#action_report_time Pipeline#action_report_time}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#action_report_time Pipeline#action_report_time}.
 
 ---
 
@@ -10000,7 +10340,7 @@ public java.util.List<java.lang.String> getBreakdowns();
 
 - *Type:* java.util.List<java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#breakdowns Pipeline#breakdowns}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#breakdowns Pipeline#breakdowns}.
 
 ---
 
@@ -10012,7 +10352,7 @@ public java.lang.Number getCustomInsightsLookbackWindow();
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#custom_insights_lookback_window Pipeline#custom_insights_lookback_window}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#custom_insights_lookback_window Pipeline#custom_insights_lookback_window}.
 
 ---
 
@@ -10026,7 +10366,7 @@ public PipelineIngestionDefinitionObjectsTableConnectorOptionsMetaAdsOptionsCust
 
 custom_report_options block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#custom_report_options Pipeline#custom_report_options}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#custom_report_options Pipeline#custom_report_options}
 
 ---
 
@@ -10038,7 +10378,7 @@ public java.lang.String getLevel();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#level Pipeline#level}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#level Pipeline#level}.
 
 ---
 
@@ -10050,7 +10390,7 @@ public java.lang.String getStartDate();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#start_date Pipeline#start_date}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#start_date Pipeline#start_date}.
 
 ---
 
@@ -10062,7 +10402,7 @@ public java.lang.String getTimeIncrement();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#time_increment Pipeline#time_increment}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#time_increment Pipeline#time_increment}.
 
 ---
 
@@ -10087,12 +10427,12 @@ PipelineIngestionDefinitionObjectsTableConnectorOptionsMetaAdsOptionsCustomRepor
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsMetaAdsOptionsCustomReportOptions.property.actionAttributionWindows">actionAttributionWindows</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#action_attribution_windows Pipeline#action_attribution_windows}. |
-| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsMetaAdsOptionsCustomReportOptions.property.actionBreakdowns">actionBreakdowns</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#action_breakdowns Pipeline#action_breakdowns}. |
-| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsMetaAdsOptionsCustomReportOptions.property.actionReportTime">actionReportTime</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#action_report_time Pipeline#action_report_time}. |
-| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsMetaAdsOptionsCustomReportOptions.property.breakdowns">breakdowns</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#breakdowns Pipeline#breakdowns}. |
-| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsMetaAdsOptionsCustomReportOptions.property.level">level</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#level Pipeline#level}. |
-| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsMetaAdsOptionsCustomReportOptions.property.timeIncrement">timeIncrement</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#time_increment Pipeline#time_increment}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsMetaAdsOptionsCustomReportOptions.property.actionAttributionWindows">actionAttributionWindows</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#action_attribution_windows Pipeline#action_attribution_windows}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsMetaAdsOptionsCustomReportOptions.property.actionBreakdowns">actionBreakdowns</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#action_breakdowns Pipeline#action_breakdowns}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsMetaAdsOptionsCustomReportOptions.property.actionReportTime">actionReportTime</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#action_report_time Pipeline#action_report_time}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsMetaAdsOptionsCustomReportOptions.property.breakdowns">breakdowns</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#breakdowns Pipeline#breakdowns}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsMetaAdsOptionsCustomReportOptions.property.level">level</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#level Pipeline#level}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsMetaAdsOptionsCustomReportOptions.property.timeIncrement">timeIncrement</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#time_increment Pipeline#time_increment}. |
 
 ---
 
@@ -10104,7 +10444,7 @@ public java.util.List<java.lang.String> getActionAttributionWindows();
 
 - *Type:* java.util.List<java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#action_attribution_windows Pipeline#action_attribution_windows}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#action_attribution_windows Pipeline#action_attribution_windows}.
 
 ---
 
@@ -10116,7 +10456,7 @@ public java.util.List<java.lang.String> getActionBreakdowns();
 
 - *Type:* java.util.List<java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#action_breakdowns Pipeline#action_breakdowns}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#action_breakdowns Pipeline#action_breakdowns}.
 
 ---
 
@@ -10128,7 +10468,7 @@ public java.lang.String getActionReportTime();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#action_report_time Pipeline#action_report_time}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#action_report_time Pipeline#action_report_time}.
 
 ---
 
@@ -10140,7 +10480,7 @@ public java.util.List<java.lang.String> getBreakdowns();
 
 - *Type:* java.util.List<java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#breakdowns Pipeline#breakdowns}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#breakdowns Pipeline#breakdowns}.
 
 ---
 
@@ -10152,7 +10492,7 @@ public java.lang.String getLevel();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#level Pipeline#level}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#level Pipeline#level}.
 
 ---
 
@@ -10164,7 +10504,7 @@ public java.lang.String getTimeIncrement();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#time_increment Pipeline#time_increment}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#time_increment Pipeline#time_increment}.
 
 ---
 
@@ -10193,16 +10533,16 @@ PipelineIngestionDefinitionObjectsTableConnectorOptionsOutlookOptions.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsOutlookOptions.property.attachmentMode">attachmentMode</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#attachment_mode Pipeline#attachment_mode}. |
-| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsOutlookOptions.property.bodyFormat">bodyFormat</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#body_format Pipeline#body_format}. |
-| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsOutlookOptions.property.folderFilter">folderFilter</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#folder_filter Pipeline#folder_filter}. |
-| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsOutlookOptions.property.includeFolders">includeFolders</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#include_folders Pipeline#include_folders}. |
-| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsOutlookOptions.property.includeMailboxes">includeMailboxes</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#include_mailboxes Pipeline#include_mailboxes}. |
-| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsOutlookOptions.property.includeSenders">includeSenders</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#include_senders Pipeline#include_senders}. |
-| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsOutlookOptions.property.includeSubjects">includeSubjects</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#include_subjects Pipeline#include_subjects}. |
-| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsOutlookOptions.property.senderFilter">senderFilter</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#sender_filter Pipeline#sender_filter}. |
-| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsOutlookOptions.property.startDate">startDate</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#start_date Pipeline#start_date}. |
-| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsOutlookOptions.property.subjectFilter">subjectFilter</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#subject_filter Pipeline#subject_filter}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsOutlookOptions.property.attachmentMode">attachmentMode</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#attachment_mode Pipeline#attachment_mode}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsOutlookOptions.property.bodyFormat">bodyFormat</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#body_format Pipeline#body_format}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsOutlookOptions.property.folderFilter">folderFilter</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#folder_filter Pipeline#folder_filter}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsOutlookOptions.property.includeFolders">includeFolders</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#include_folders Pipeline#include_folders}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsOutlookOptions.property.includeMailboxes">includeMailboxes</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#include_mailboxes Pipeline#include_mailboxes}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsOutlookOptions.property.includeSenders">includeSenders</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#include_senders Pipeline#include_senders}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsOutlookOptions.property.includeSubjects">includeSubjects</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#include_subjects Pipeline#include_subjects}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsOutlookOptions.property.senderFilter">senderFilter</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#sender_filter Pipeline#sender_filter}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsOutlookOptions.property.startDate">startDate</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#start_date Pipeline#start_date}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsOutlookOptions.property.subjectFilter">subjectFilter</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#subject_filter Pipeline#subject_filter}. |
 
 ---
 
@@ -10214,7 +10554,7 @@ public java.lang.String getAttachmentMode();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#attachment_mode Pipeline#attachment_mode}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#attachment_mode Pipeline#attachment_mode}.
 
 ---
 
@@ -10226,7 +10566,7 @@ public java.lang.String getBodyFormat();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#body_format Pipeline#body_format}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#body_format Pipeline#body_format}.
 
 ---
 
@@ -10238,7 +10578,7 @@ public java.util.List<java.lang.String> getFolderFilter();
 
 - *Type:* java.util.List<java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#folder_filter Pipeline#folder_filter}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#folder_filter Pipeline#folder_filter}.
 
 ---
 
@@ -10250,7 +10590,7 @@ public java.util.List<java.lang.String> getIncludeFolders();
 
 - *Type:* java.util.List<java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#include_folders Pipeline#include_folders}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#include_folders Pipeline#include_folders}.
 
 ---
 
@@ -10262,7 +10602,7 @@ public java.util.List<java.lang.String> getIncludeMailboxes();
 
 - *Type:* java.util.List<java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#include_mailboxes Pipeline#include_mailboxes}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#include_mailboxes Pipeline#include_mailboxes}.
 
 ---
 
@@ -10274,7 +10614,7 @@ public java.util.List<java.lang.String> getIncludeSenders();
 
 - *Type:* java.util.List<java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#include_senders Pipeline#include_senders}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#include_senders Pipeline#include_senders}.
 
 ---
 
@@ -10286,7 +10626,7 @@ public java.util.List<java.lang.String> getIncludeSubjects();
 
 - *Type:* java.util.List<java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#include_subjects Pipeline#include_subjects}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#include_subjects Pipeline#include_subjects}.
 
 ---
 
@@ -10298,7 +10638,7 @@ public java.util.List<java.lang.String> getSenderFilter();
 
 - *Type:* java.util.List<java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#sender_filter Pipeline#sender_filter}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#sender_filter Pipeline#sender_filter}.
 
 ---
 
@@ -10310,7 +10650,7 @@ public java.lang.String getStartDate();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#start_date Pipeline#start_date}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#start_date Pipeline#start_date}.
 
 ---
 
@@ -10322,7 +10662,115 @@ public java.util.List<java.lang.String> getSubjectFilter();
 
 - *Type:* java.util.List<java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#subject_filter Pipeline#subject_filter}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#subject_filter Pipeline#subject_filter}.
+
+---
+
+### PipelineIngestionDefinitionObjectsTableConnectorOptionsRedditAdsOptions <a name="PipelineIngestionDefinitionObjectsTableConnectorOptionsRedditAdsOptions" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsRedditAdsOptions"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsRedditAdsOptions.Initializer"></a>
+
+```java
+import io.cdktn.providers.databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsRedditAdsOptions;
+
+PipelineIngestionDefinitionObjectsTableConnectorOptionsRedditAdsOptions.builder()
+//  .customReportOptions(PipelineIngestionDefinitionObjectsTableConnectorOptionsRedditAdsOptionsCustomReportOptions)
+//  .lookbackWindowDays(java.lang.Number)
+//  .syncStartDate(java.lang.String)
+    .build();
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsRedditAdsOptions.property.customReportOptions">customReportOptions</a></code> | <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsRedditAdsOptionsCustomReportOptions">PipelineIngestionDefinitionObjectsTableConnectorOptionsRedditAdsOptionsCustomReportOptions</a></code> | custom_report_options block. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsRedditAdsOptions.property.lookbackWindowDays">lookbackWindowDays</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#lookback_window_days Pipeline#lookback_window_days}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsRedditAdsOptions.property.syncStartDate">syncStartDate</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#sync_start_date Pipeline#sync_start_date}. |
+
+---
+
+##### `customReportOptions`<sup>Optional</sup> <a name="customReportOptions" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsRedditAdsOptions.property.customReportOptions"></a>
+
+```java
+public PipelineIngestionDefinitionObjectsTableConnectorOptionsRedditAdsOptionsCustomReportOptions getCustomReportOptions();
+```
+
+- *Type:* <a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsRedditAdsOptionsCustomReportOptions">PipelineIngestionDefinitionObjectsTableConnectorOptionsRedditAdsOptionsCustomReportOptions</a>
+
+custom_report_options block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#custom_report_options Pipeline#custom_report_options}
+
+---
+
+##### `lookbackWindowDays`<sup>Optional</sup> <a name="lookbackWindowDays" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsRedditAdsOptions.property.lookbackWindowDays"></a>
+
+```java
+public java.lang.Number getLookbackWindowDays();
+```
+
+- *Type:* java.lang.Number
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#lookback_window_days Pipeline#lookback_window_days}.
+
+---
+
+##### `syncStartDate`<sup>Optional</sup> <a name="syncStartDate" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsRedditAdsOptions.property.syncStartDate"></a>
+
+```java
+public java.lang.String getSyncStartDate();
+```
+
+- *Type:* java.lang.String
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#sync_start_date Pipeline#sync_start_date}.
+
+---
+
+### PipelineIngestionDefinitionObjectsTableConnectorOptionsRedditAdsOptionsCustomReportOptions <a name="PipelineIngestionDefinitionObjectsTableConnectorOptionsRedditAdsOptionsCustomReportOptions" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsRedditAdsOptionsCustomReportOptions"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsRedditAdsOptionsCustomReportOptions.Initializer"></a>
+
+```java
+import io.cdktn.providers.databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsRedditAdsOptionsCustomReportOptions;
+
+PipelineIngestionDefinitionObjectsTableConnectorOptionsRedditAdsOptionsCustomReportOptions.builder()
+//  .breakdowns(java.util.List<java.lang.String>)
+//  .fields(java.util.List<java.lang.String>)
+    .build();
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsRedditAdsOptionsCustomReportOptions.property.breakdowns">breakdowns</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#breakdowns Pipeline#breakdowns}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsRedditAdsOptionsCustomReportOptions.property.fields">fields</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#fields Pipeline#fields}. |
+
+---
+
+##### `breakdowns`<sup>Optional</sup> <a name="breakdowns" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsRedditAdsOptionsCustomReportOptions.property.breakdowns"></a>
+
+```java
+public java.util.List<java.lang.String> getBreakdowns();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#breakdowns Pipeline#breakdowns}.
+
+---
+
+##### `fields`<sup>Optional</sup> <a name="fields" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsRedditAdsOptionsCustomReportOptions.property.fields"></a>
+
+```java
+public java.util.List<java.lang.String> getFields();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#fields Pipeline#fields}.
 
 ---
 
@@ -10344,9 +10792,9 @@ PipelineIngestionDefinitionObjectsTableConnectorOptionsSharepointOptions.builder
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsSharepointOptions.property.entityType">entityType</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#entity_type Pipeline#entity_type}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsSharepointOptions.property.entityType">entityType</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#entity_type Pipeline#entity_type}. |
 | <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsSharepointOptions.property.fileIngestionOptions">fileIngestionOptions</a></code> | <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsSharepointOptionsFileIngestionOptions">PipelineIngestionDefinitionObjectsTableConnectorOptionsSharepointOptionsFileIngestionOptions</a></code> | file_ingestion_options block. |
-| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsSharepointOptions.property.url">url</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#url Pipeline#url}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsSharepointOptions.property.url">url</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#url Pipeline#url}. |
 
 ---
 
@@ -10358,7 +10806,7 @@ public java.lang.String getEntityType();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#entity_type Pipeline#entity_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#entity_type Pipeline#entity_type}.
 
 ---
 
@@ -10372,7 +10820,7 @@ public PipelineIngestionDefinitionObjectsTableConnectorOptionsSharepointOptionsF
 
 file_ingestion_options block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#file_ingestion_options Pipeline#file_ingestion_options}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#file_ingestion_options Pipeline#file_ingestion_options}
 
 ---
 
@@ -10384,7 +10832,7 @@ public java.lang.String getUrl();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#url Pipeline#url}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#url Pipeline#url}.
 
 ---
 
@@ -10414,17 +10862,17 @@ PipelineIngestionDefinitionObjectsTableConnectorOptionsSharepointOptionsFileInge
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsSharepointOptionsFileIngestionOptions.property.corruptRecordColumn">corruptRecordColumn</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#corrupt_record_column Pipeline#corrupt_record_column}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsSharepointOptionsFileIngestionOptions.property.corruptRecordColumn">corruptRecordColumn</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#corrupt_record_column Pipeline#corrupt_record_column}. |
 | <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsSharepointOptionsFileIngestionOptions.property.fileFilters">fileFilters</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsSharepointOptionsFileIngestionOptionsFileFilters">PipelineIngestionDefinitionObjectsTableConnectorOptionsSharepointOptionsFileIngestionOptionsFileFilters</a>></code> | file_filters block. |
-| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsSharepointOptionsFileIngestionOptions.property.format">format</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#format Pipeline#format}. |
-| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsSharepointOptionsFileIngestionOptions.property.formatOptions">formatOptions</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#format_options Pipeline#format_options}. |
-| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsSharepointOptionsFileIngestionOptions.property.ignoreCorruptFiles">ignoreCorruptFiles</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#ignore_corrupt_files Pipeline#ignore_corrupt_files}. |
-| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsSharepointOptionsFileIngestionOptions.property.inferColumnTypes">inferColumnTypes</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#infer_column_types Pipeline#infer_column_types}. |
-| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsSharepointOptionsFileIngestionOptions.property.readerCaseSensitive">readerCaseSensitive</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#reader_case_sensitive Pipeline#reader_case_sensitive}. |
-| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsSharepointOptionsFileIngestionOptions.property.rescuedDataColumn">rescuedDataColumn</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#rescued_data_column Pipeline#rescued_data_column}. |
-| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsSharepointOptionsFileIngestionOptions.property.schemaEvolutionMode">schemaEvolutionMode</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#schema_evolution_mode Pipeline#schema_evolution_mode}. |
-| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsSharepointOptionsFileIngestionOptions.property.schemaHints">schemaHints</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#schema_hints Pipeline#schema_hints}. |
-| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsSharepointOptionsFileIngestionOptions.property.singleVariantColumn">singleVariantColumn</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#single_variant_column Pipeline#single_variant_column}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsSharepointOptionsFileIngestionOptions.property.format">format</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#format Pipeline#format}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsSharepointOptionsFileIngestionOptions.property.formatOptions">formatOptions</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#format_options Pipeline#format_options}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsSharepointOptionsFileIngestionOptions.property.ignoreCorruptFiles">ignoreCorruptFiles</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#ignore_corrupt_files Pipeline#ignore_corrupt_files}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsSharepointOptionsFileIngestionOptions.property.inferColumnTypes">inferColumnTypes</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#infer_column_types Pipeline#infer_column_types}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsSharepointOptionsFileIngestionOptions.property.readerCaseSensitive">readerCaseSensitive</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#reader_case_sensitive Pipeline#reader_case_sensitive}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsSharepointOptionsFileIngestionOptions.property.rescuedDataColumn">rescuedDataColumn</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#rescued_data_column Pipeline#rescued_data_column}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsSharepointOptionsFileIngestionOptions.property.schemaEvolutionMode">schemaEvolutionMode</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#schema_evolution_mode Pipeline#schema_evolution_mode}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsSharepointOptionsFileIngestionOptions.property.schemaHints">schemaHints</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#schema_hints Pipeline#schema_hints}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsSharepointOptionsFileIngestionOptions.property.singleVariantColumn">singleVariantColumn</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#single_variant_column Pipeline#single_variant_column}. |
 
 ---
 
@@ -10436,7 +10884,7 @@ public java.lang.String getCorruptRecordColumn();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#corrupt_record_column Pipeline#corrupt_record_column}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#corrupt_record_column Pipeline#corrupt_record_column}.
 
 ---
 
@@ -10450,7 +10898,7 @@ public IResolvable|java.util.List<PipelineIngestionDefinitionObjectsTableConnect
 
 file_filters block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#file_filters Pipeline#file_filters}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#file_filters Pipeline#file_filters}
 
 ---
 
@@ -10462,7 +10910,7 @@ public java.lang.String getFormat();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#format Pipeline#format}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#format Pipeline#format}.
 
 ---
 
@@ -10474,7 +10922,7 @@ public java.util.Map<java.lang.String, java.lang.String> getFormatOptions();
 
 - *Type:* java.util.Map<java.lang.String, java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#format_options Pipeline#format_options}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#format_options Pipeline#format_options}.
 
 ---
 
@@ -10486,7 +10934,7 @@ public java.lang.Boolean|IResolvable getIgnoreCorruptFiles();
 
 - *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#ignore_corrupt_files Pipeline#ignore_corrupt_files}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#ignore_corrupt_files Pipeline#ignore_corrupt_files}.
 
 ---
 
@@ -10498,7 +10946,7 @@ public java.lang.Boolean|IResolvable getInferColumnTypes();
 
 - *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#infer_column_types Pipeline#infer_column_types}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#infer_column_types Pipeline#infer_column_types}.
 
 ---
 
@@ -10510,7 +10958,7 @@ public java.lang.Boolean|IResolvable getReaderCaseSensitive();
 
 - *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#reader_case_sensitive Pipeline#reader_case_sensitive}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#reader_case_sensitive Pipeline#reader_case_sensitive}.
 
 ---
 
@@ -10522,7 +10970,7 @@ public java.lang.String getRescuedDataColumn();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#rescued_data_column Pipeline#rescued_data_column}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#rescued_data_column Pipeline#rescued_data_column}.
 
 ---
 
@@ -10534,7 +10982,7 @@ public java.lang.String getSchemaEvolutionMode();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#schema_evolution_mode Pipeline#schema_evolution_mode}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#schema_evolution_mode Pipeline#schema_evolution_mode}.
 
 ---
 
@@ -10546,7 +10994,7 @@ public java.lang.String getSchemaHints();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#schema_hints Pipeline#schema_hints}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#schema_hints Pipeline#schema_hints}.
 
 ---
 
@@ -10558,7 +11006,7 @@ public java.lang.String getSingleVariantColumn();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#single_variant_column Pipeline#single_variant_column}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#single_variant_column Pipeline#single_variant_column}.
 
 ---
 
@@ -10580,9 +11028,9 @@ PipelineIngestionDefinitionObjectsTableConnectorOptionsSharepointOptionsFileInge
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsSharepointOptionsFileIngestionOptionsFileFilters.property.modifiedAfter">modifiedAfter</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#modified_after Pipeline#modified_after}. |
-| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsSharepointOptionsFileIngestionOptionsFileFilters.property.modifiedBefore">modifiedBefore</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#modified_before Pipeline#modified_before}. |
-| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsSharepointOptionsFileIngestionOptionsFileFilters.property.pathFilter">pathFilter</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#path_filter Pipeline#path_filter}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsSharepointOptionsFileIngestionOptionsFileFilters.property.modifiedAfter">modifiedAfter</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#modified_after Pipeline#modified_after}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsSharepointOptionsFileIngestionOptionsFileFilters.property.modifiedBefore">modifiedBefore</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#modified_before Pipeline#modified_before}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsSharepointOptionsFileIngestionOptionsFileFilters.property.pathFilter">pathFilter</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#path_filter Pipeline#path_filter}. |
 
 ---
 
@@ -10594,7 +11042,7 @@ public java.lang.String getModifiedAfter();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#modified_after Pipeline#modified_after}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#modified_after Pipeline#modified_after}.
 
 ---
 
@@ -10606,7 +11054,7 @@ public java.lang.String getModifiedBefore();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#modified_before Pipeline#modified_before}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#modified_before Pipeline#modified_before}.
 
 ---
 
@@ -10618,7 +11066,7 @@ public java.lang.String getPathFilter();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#path_filter Pipeline#path_filter}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#path_filter Pipeline#path_filter}.
 
 ---
 
@@ -10638,7 +11086,7 @@ PipelineIngestionDefinitionObjectsTableConnectorOptionsSmartsheetOptions.builder
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsSmartsheetOptions.property.enforceSchema">enforceSchema</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#enforce_schema Pipeline#enforce_schema}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsSmartsheetOptions.property.enforceSchema">enforceSchema</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#enforce_schema Pipeline#enforce_schema}. |
 
 ---
 
@@ -10650,7 +11098,7 @@ public java.lang.Boolean|IResolvable getEnforceSchema();
 
 - *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#enforce_schema Pipeline#enforce_schema}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#enforce_schema Pipeline#enforce_schema}.
 
 ---
 
@@ -10678,13 +11126,13 @@ PipelineIngestionDefinitionObjectsTableConnectorOptionsTiktokAdsOptions.builder(
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsTiktokAdsOptions.property.customReportOptions">customReportOptions</a></code> | <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsTiktokAdsOptionsCustomReportOptions">PipelineIngestionDefinitionObjectsTableConnectorOptionsTiktokAdsOptionsCustomReportOptions</a></code> | custom_report_options block. |
-| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsTiktokAdsOptions.property.dataLevel">dataLevel</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#data_level Pipeline#data_level}. |
-| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsTiktokAdsOptions.property.dimensions">dimensions</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#dimensions Pipeline#dimensions}. |
-| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsTiktokAdsOptions.property.lookbackWindowDays">lookbackWindowDays</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#lookback_window_days Pipeline#lookback_window_days}. |
-| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsTiktokAdsOptions.property.metrics">metrics</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#metrics Pipeline#metrics}. |
-| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsTiktokAdsOptions.property.queryLifetime">queryLifetime</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#query_lifetime Pipeline#query_lifetime}. |
-| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsTiktokAdsOptions.property.reportType">reportType</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#report_type Pipeline#report_type}. |
-| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsTiktokAdsOptions.property.syncStartDate">syncStartDate</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#sync_start_date Pipeline#sync_start_date}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsTiktokAdsOptions.property.dataLevel">dataLevel</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#data_level Pipeline#data_level}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsTiktokAdsOptions.property.dimensions">dimensions</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#dimensions Pipeline#dimensions}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsTiktokAdsOptions.property.lookbackWindowDays">lookbackWindowDays</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#lookback_window_days Pipeline#lookback_window_days}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsTiktokAdsOptions.property.metrics">metrics</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#metrics Pipeline#metrics}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsTiktokAdsOptions.property.queryLifetime">queryLifetime</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#query_lifetime Pipeline#query_lifetime}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsTiktokAdsOptions.property.reportType">reportType</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#report_type Pipeline#report_type}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsTiktokAdsOptions.property.syncStartDate">syncStartDate</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#sync_start_date Pipeline#sync_start_date}. |
 
 ---
 
@@ -10698,7 +11146,7 @@ public PipelineIngestionDefinitionObjectsTableConnectorOptionsTiktokAdsOptionsCu
 
 custom_report_options block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#custom_report_options Pipeline#custom_report_options}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#custom_report_options Pipeline#custom_report_options}
 
 ---
 
@@ -10710,7 +11158,7 @@ public java.lang.String getDataLevel();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#data_level Pipeline#data_level}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#data_level Pipeline#data_level}.
 
 ---
 
@@ -10722,7 +11170,7 @@ public java.util.List<java.lang.String> getDimensions();
 
 - *Type:* java.util.List<java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#dimensions Pipeline#dimensions}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#dimensions Pipeline#dimensions}.
 
 ---
 
@@ -10734,7 +11182,7 @@ public java.lang.Number getLookbackWindowDays();
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#lookback_window_days Pipeline#lookback_window_days}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#lookback_window_days Pipeline#lookback_window_days}.
 
 ---
 
@@ -10746,7 +11194,7 @@ public java.util.List<java.lang.String> getMetrics();
 
 - *Type:* java.util.List<java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#metrics Pipeline#metrics}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#metrics Pipeline#metrics}.
 
 ---
 
@@ -10758,7 +11206,7 @@ public java.lang.Boolean|IResolvable getQueryLifetime();
 
 - *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#query_lifetime Pipeline#query_lifetime}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#query_lifetime Pipeline#query_lifetime}.
 
 ---
 
@@ -10770,7 +11218,7 @@ public java.lang.String getReportType();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#report_type Pipeline#report_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#report_type Pipeline#report_type}.
 
 ---
 
@@ -10782,7 +11230,7 @@ public java.lang.String getSyncStartDate();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#sync_start_date Pipeline#sync_start_date}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#sync_start_date Pipeline#sync_start_date}.
 
 ---
 
@@ -10806,11 +11254,11 @@ PipelineIngestionDefinitionObjectsTableConnectorOptionsTiktokAdsOptionsCustomRep
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsTiktokAdsOptionsCustomReportOptions.property.dataLevel">dataLevel</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#data_level Pipeline#data_level}. |
-| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsTiktokAdsOptionsCustomReportOptions.property.dimensions">dimensions</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#dimensions Pipeline#dimensions}. |
-| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsTiktokAdsOptionsCustomReportOptions.property.metrics">metrics</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#metrics Pipeline#metrics}. |
-| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsTiktokAdsOptionsCustomReportOptions.property.queryLifetime">queryLifetime</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#query_lifetime Pipeline#query_lifetime}. |
-| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsTiktokAdsOptionsCustomReportOptions.property.reportType">reportType</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#report_type Pipeline#report_type}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsTiktokAdsOptionsCustomReportOptions.property.dataLevel">dataLevel</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#data_level Pipeline#data_level}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsTiktokAdsOptionsCustomReportOptions.property.dimensions">dimensions</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#dimensions Pipeline#dimensions}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsTiktokAdsOptionsCustomReportOptions.property.metrics">metrics</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#metrics Pipeline#metrics}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsTiktokAdsOptionsCustomReportOptions.property.queryLifetime">queryLifetime</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#query_lifetime Pipeline#query_lifetime}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsTiktokAdsOptionsCustomReportOptions.property.reportType">reportType</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#report_type Pipeline#report_type}. |
 
 ---
 
@@ -10822,7 +11270,7 @@ public java.lang.String getDataLevel();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#data_level Pipeline#data_level}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#data_level Pipeline#data_level}.
 
 ---
 
@@ -10834,7 +11282,7 @@ public java.util.List<java.lang.String> getDimensions();
 
 - *Type:* java.util.List<java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#dimensions Pipeline#dimensions}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#dimensions Pipeline#dimensions}.
 
 ---
 
@@ -10846,7 +11294,7 @@ public java.util.List<java.lang.String> getMetrics();
 
 - *Type:* java.util.List<java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#metrics Pipeline#metrics}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#metrics Pipeline#metrics}.
 
 ---
 
@@ -10858,7 +11306,7 @@ public java.lang.Boolean|IResolvable getQueryLifetime();
 
 - *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#query_lifetime Pipeline#query_lifetime}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#query_lifetime Pipeline#query_lifetime}.
 
 ---
 
@@ -10870,7 +11318,7 @@ public java.lang.String getReportType();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#report_type Pipeline#report_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#report_type Pipeline#report_type}.
 
 ---
 
@@ -10890,7 +11338,7 @@ PipelineIngestionDefinitionObjectsTableConnectorOptionsZendeskSupportOptions.bui
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsZendeskSupportOptions.property.startDate">startDate</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#start_date Pipeline#start_date}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsZendeskSupportOptions.property.startDate">startDate</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#start_date Pipeline#start_date}. |
 
 ---
 
@@ -10902,7 +11350,7 @@ public java.lang.String getStartDate();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#start_date Pipeline#start_date}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#start_date Pipeline#start_date}.
 
 ---
 
@@ -10936,18 +11384,18 @@ PipelineIngestionDefinitionObjectsTableTableConfiguration.builder()
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfiguration.property.autoFullRefreshPolicy">autoFullRefreshPolicy</a></code> | <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationAutoFullRefreshPolicy">PipelineIngestionDefinitionObjectsTableTableConfigurationAutoFullRefreshPolicy</a></code> | auto_full_refresh_policy block. |
-| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfiguration.property.clusteringColumns">clusteringColumns</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#clustering_columns Pipeline#clustering_columns}. |
-| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfiguration.property.enableAutoClustering">enableAutoClustering</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#enable_auto_clustering Pipeline#enable_auto_clustering}. |
-| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfiguration.property.excludeColumns">excludeColumns</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#exclude_columns Pipeline#exclude_columns}. |
-| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfiguration.property.includeColumns">includeColumns</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#include_columns Pipeline#include_columns}. |
-| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfiguration.property.primaryKeys">primaryKeys</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#primary_keys Pipeline#primary_keys}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfiguration.property.clusteringColumns">clusteringColumns</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#clustering_columns Pipeline#clustering_columns}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfiguration.property.enableAutoClustering">enableAutoClustering</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#enable_auto_clustering Pipeline#enable_auto_clustering}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfiguration.property.excludeColumns">excludeColumns</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#exclude_columns Pipeline#exclude_columns}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfiguration.property.includeColumns">includeColumns</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#include_columns Pipeline#include_columns}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfiguration.property.primaryKeys">primaryKeys</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#primary_keys Pipeline#primary_keys}. |
 | <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfiguration.property.queryBasedConnectorConfig">queryBasedConnectorConfig</a></code> | <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationQueryBasedConnectorConfig">PipelineIngestionDefinitionObjectsTableTableConfigurationQueryBasedConnectorConfig</a></code> | query_based_connector_config block. |
-| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfiguration.property.rowFilter">rowFilter</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#row_filter Pipeline#row_filter}. |
-| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfiguration.property.salesforceIncludeFormulaFields">salesforceIncludeFormulaFields</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#salesforce_include_formula_fields Pipeline#salesforce_include_formula_fields}. |
-| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfiguration.property.scdType">scdType</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#scd_type Pipeline#scd_type}. |
-| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfiguration.property.sequenceBy">sequenceBy</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#sequence_by Pipeline#sequence_by}. |
-| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfiguration.property.sourceMetadataColumn">sourceMetadataColumn</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#source_metadata_column Pipeline#source_metadata_column}. |
-| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfiguration.property.tableProperties">tableProperties</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#table_properties Pipeline#table_properties}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfiguration.property.rowFilter">rowFilter</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#row_filter Pipeline#row_filter}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfiguration.property.salesforceIncludeFormulaFields">salesforceIncludeFormulaFields</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#salesforce_include_formula_fields Pipeline#salesforce_include_formula_fields}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfiguration.property.scdType">scdType</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#scd_type Pipeline#scd_type}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfiguration.property.sequenceBy">sequenceBy</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#sequence_by Pipeline#sequence_by}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfiguration.property.sourceMetadataColumn">sourceMetadataColumn</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#source_metadata_column Pipeline#source_metadata_column}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfiguration.property.tableProperties">tableProperties</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#table_properties Pipeline#table_properties}. |
 | <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfiguration.property.workdayReportParameters">workdayReportParameters</a></code> | <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParameters">PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParameters</a></code> | workday_report_parameters block. |
 
 ---
@@ -10962,7 +11410,7 @@ public PipelineIngestionDefinitionObjectsTableTableConfigurationAutoFullRefreshP
 
 auto_full_refresh_policy block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#auto_full_refresh_policy Pipeline#auto_full_refresh_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#auto_full_refresh_policy Pipeline#auto_full_refresh_policy}
 
 ---
 
@@ -10974,7 +11422,7 @@ public java.util.List<java.lang.String> getClusteringColumns();
 
 - *Type:* java.util.List<java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#clustering_columns Pipeline#clustering_columns}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#clustering_columns Pipeline#clustering_columns}.
 
 ---
 
@@ -10986,7 +11434,7 @@ public java.lang.Boolean|IResolvable getEnableAutoClustering();
 
 - *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#enable_auto_clustering Pipeline#enable_auto_clustering}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#enable_auto_clustering Pipeline#enable_auto_clustering}.
 
 ---
 
@@ -10998,7 +11446,7 @@ public java.util.List<java.lang.String> getExcludeColumns();
 
 - *Type:* java.util.List<java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#exclude_columns Pipeline#exclude_columns}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#exclude_columns Pipeline#exclude_columns}.
 
 ---
 
@@ -11010,7 +11458,7 @@ public java.util.List<java.lang.String> getIncludeColumns();
 
 - *Type:* java.util.List<java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#include_columns Pipeline#include_columns}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#include_columns Pipeline#include_columns}.
 
 ---
 
@@ -11022,7 +11470,7 @@ public java.util.List<java.lang.String> getPrimaryKeys();
 
 - *Type:* java.util.List<java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#primary_keys Pipeline#primary_keys}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#primary_keys Pipeline#primary_keys}.
 
 ---
 
@@ -11036,7 +11484,7 @@ public PipelineIngestionDefinitionObjectsTableTableConfigurationQueryBasedConnec
 
 query_based_connector_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#query_based_connector_config Pipeline#query_based_connector_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#query_based_connector_config Pipeline#query_based_connector_config}
 
 ---
 
@@ -11048,7 +11496,7 @@ public java.lang.String getRowFilter();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#row_filter Pipeline#row_filter}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#row_filter Pipeline#row_filter}.
 
 ---
 
@@ -11060,7 +11508,7 @@ public java.lang.Boolean|IResolvable getSalesforceIncludeFormulaFields();
 
 - *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#salesforce_include_formula_fields Pipeline#salesforce_include_formula_fields}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#salesforce_include_formula_fields Pipeline#salesforce_include_formula_fields}.
 
 ---
 
@@ -11072,7 +11520,7 @@ public java.lang.String getScdType();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#scd_type Pipeline#scd_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#scd_type Pipeline#scd_type}.
 
 ---
 
@@ -11084,7 +11532,7 @@ public java.util.List<java.lang.String> getSequenceBy();
 
 - *Type:* java.util.List<java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#sequence_by Pipeline#sequence_by}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#sequence_by Pipeline#sequence_by}.
 
 ---
 
@@ -11096,7 +11544,7 @@ public java.lang.String getSourceMetadataColumn();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#source_metadata_column Pipeline#source_metadata_column}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#source_metadata_column Pipeline#source_metadata_column}.
 
 ---
 
@@ -11108,7 +11556,7 @@ public java.util.Map<java.lang.String, java.lang.String> getTableProperties();
 
 - *Type:* java.util.Map<java.lang.String, java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#table_properties Pipeline#table_properties}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#table_properties Pipeline#table_properties}.
 
 ---
 
@@ -11122,7 +11570,7 @@ public PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportPar
 
 workday_report_parameters block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#workday_report_parameters Pipeline#workday_report_parameters}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#workday_report_parameters Pipeline#workday_report_parameters}
 
 ---
 
@@ -11143,8 +11591,8 @@ PipelineIngestionDefinitionObjectsTableTableConfigurationAutoFullRefreshPolicy.b
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationAutoFullRefreshPolicy.property.enabled">enabled</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#enabled Pipeline#enabled}. |
-| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationAutoFullRefreshPolicy.property.minIntervalHours">minIntervalHours</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#min_interval_hours Pipeline#min_interval_hours}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationAutoFullRefreshPolicy.property.enabled">enabled</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#enabled Pipeline#enabled}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationAutoFullRefreshPolicy.property.minIntervalHours">minIntervalHours</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#min_interval_hours Pipeline#min_interval_hours}. |
 
 ---
 
@@ -11156,7 +11604,7 @@ public java.lang.Boolean|IResolvable getEnabled();
 
 - *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#enabled Pipeline#enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#enabled Pipeline#enabled}.
 
 ---
 
@@ -11168,7 +11616,7 @@ public java.lang.Number getMinIntervalHours();
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#min_interval_hours Pipeline#min_interval_hours}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#min_interval_hours Pipeline#min_interval_hours}.
 
 ---
 
@@ -11190,9 +11638,9 @@ PipelineIngestionDefinitionObjectsTableTableConfigurationQueryBasedConnectorConf
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationQueryBasedConnectorConfig.property.cursorColumns">cursorColumns</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#cursor_columns Pipeline#cursor_columns}. |
-| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationQueryBasedConnectorConfig.property.deletionCondition">deletionCondition</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#deletion_condition Pipeline#deletion_condition}. |
-| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationQueryBasedConnectorConfig.property.hardDeletionSyncMinIntervalInSeconds">hardDeletionSyncMinIntervalInSeconds</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#hard_deletion_sync_min_interval_in_seconds Pipeline#hard_deletion_sync_min_interval_in_seconds}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationQueryBasedConnectorConfig.property.cursorColumns">cursorColumns</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#cursor_columns Pipeline#cursor_columns}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationQueryBasedConnectorConfig.property.deletionCondition">deletionCondition</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#deletion_condition Pipeline#deletion_condition}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationQueryBasedConnectorConfig.property.hardDeletionSyncMinIntervalInSeconds">hardDeletionSyncMinIntervalInSeconds</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#hard_deletion_sync_min_interval_in_seconds Pipeline#hard_deletion_sync_min_interval_in_seconds}. |
 
 ---
 
@@ -11204,7 +11652,7 @@ public java.util.List<java.lang.String> getCursorColumns();
 
 - *Type:* java.util.List<java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#cursor_columns Pipeline#cursor_columns}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#cursor_columns Pipeline#cursor_columns}.
 
 ---
 
@@ -11216,7 +11664,7 @@ public java.lang.String getDeletionCondition();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#deletion_condition Pipeline#deletion_condition}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#deletion_condition Pipeline#deletion_condition}.
 
 ---
 
@@ -11228,7 +11676,7 @@ public java.lang.Number getHardDeletionSyncMinIntervalInSeconds();
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#hard_deletion_sync_min_interval_in_seconds Pipeline#hard_deletion_sync_min_interval_in_seconds}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#hard_deletion_sync_min_interval_in_seconds Pipeline#hard_deletion_sync_min_interval_in_seconds}.
 
 ---
 
@@ -11250,8 +11698,8 @@ PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParameters
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParameters.property.incremental">incremental</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#incremental Pipeline#incremental}. |
-| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParameters.property.parameters">parameters</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#parameters Pipeline#parameters}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParameters.property.incremental">incremental</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#incremental Pipeline#incremental}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParameters.property.parameters">parameters</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#parameters Pipeline#parameters}. |
 | <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParameters.property.reportParameters">reportParameters</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersReportParameters">PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersReportParameters</a>></code> | report_parameters block. |
 
 ---
@@ -11264,7 +11712,7 @@ public java.lang.Boolean|IResolvable getIncremental();
 
 - *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#incremental Pipeline#incremental}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#incremental Pipeline#incremental}.
 
 ---
 
@@ -11276,7 +11724,7 @@ public java.util.Map<java.lang.String, java.lang.String> getParameters();
 
 - *Type:* java.util.Map<java.lang.String, java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#parameters Pipeline#parameters}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#parameters Pipeline#parameters}.
 
 ---
 
@@ -11290,7 +11738,7 @@ public IResolvable|java.util.List<PipelineIngestionDefinitionObjectsTableTableCo
 
 report_parameters block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#report_parameters Pipeline#report_parameters}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#report_parameters Pipeline#report_parameters}
 
 ---
 
@@ -11311,8 +11759,8 @@ PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParameters
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersReportParameters.property.key">key</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#key Pipeline#key}. |
-| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersReportParameters.property.value">value</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#value Pipeline#value}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersReportParameters.property.key">key</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#key Pipeline#key}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersReportParameters.property.value">value</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#value Pipeline#value}. |
 
 ---
 
@@ -11324,7 +11772,7 @@ public java.lang.String getKey();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#key Pipeline#key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#key Pipeline#key}.
 
 ---
 
@@ -11336,7 +11784,7 @@ public java.lang.String getValue();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#value Pipeline#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#value Pipeline#value}.
 
 ---
 
@@ -11372,7 +11820,7 @@ public PipelineIngestionDefinitionSourceConfigurationsCatalog getCatalog();
 
 catalog block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#catalog Pipeline#catalog}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#catalog Pipeline#catalog}
 
 ---
 
@@ -11386,7 +11834,7 @@ public PipelineIngestionDefinitionSourceConfigurationsGoogleAdsConfig getGoogleA
 
 google_ads_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#google_ads_config Pipeline#google_ads_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#google_ads_config Pipeline#google_ads_config}
 
 ---
 
@@ -11408,7 +11856,7 @@ PipelineIngestionDefinitionSourceConfigurationsCatalog.builder()
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionSourceConfigurationsCatalog.property.postgres">postgres</a></code> | <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionSourceConfigurationsCatalogPostgres">PipelineIngestionDefinitionSourceConfigurationsCatalogPostgres</a></code> | postgres block. |
-| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionSourceConfigurationsCatalog.property.sourceCatalog">sourceCatalog</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#source_catalog Pipeline#source_catalog}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionSourceConfigurationsCatalog.property.sourceCatalog">sourceCatalog</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#source_catalog Pipeline#source_catalog}. |
 
 ---
 
@@ -11422,7 +11870,7 @@ public PipelineIngestionDefinitionSourceConfigurationsCatalogPostgres getPostgre
 
 postgres block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#postgres Pipeline#postgres}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#postgres Pipeline#postgres}
 
 ---
 
@@ -11434,7 +11882,7 @@ public java.lang.String getSourceCatalog();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#source_catalog Pipeline#source_catalog}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#source_catalog Pipeline#source_catalog}.
 
 ---
 
@@ -11468,7 +11916,7 @@ public PipelineIngestionDefinitionSourceConfigurationsCatalogPostgresSlotConfig 
 
 slot_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#slot_config Pipeline#slot_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#slot_config Pipeline#slot_config}
 
 ---
 
@@ -11489,8 +11937,8 @@ PipelineIngestionDefinitionSourceConfigurationsCatalogPostgresSlotConfig.builder
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionSourceConfigurationsCatalogPostgresSlotConfig.property.publicationName">publicationName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#publication_name Pipeline#publication_name}. |
-| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionSourceConfigurationsCatalogPostgresSlotConfig.property.slotName">slotName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#slot_name Pipeline#slot_name}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionSourceConfigurationsCatalogPostgresSlotConfig.property.publicationName">publicationName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#publication_name Pipeline#publication_name}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionSourceConfigurationsCatalogPostgresSlotConfig.property.slotName">slotName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#slot_name Pipeline#slot_name}. |
 
 ---
 
@@ -11502,7 +11950,7 @@ public java.lang.String getPublicationName();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#publication_name Pipeline#publication_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#publication_name Pipeline#publication_name}.
 
 ---
 
@@ -11514,7 +11962,7 @@ public java.lang.String getSlotName();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#slot_name Pipeline#slot_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#slot_name Pipeline#slot_name}.
 
 ---
 
@@ -11534,7 +11982,7 @@ PipelineIngestionDefinitionSourceConfigurationsGoogleAdsConfig.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionSourceConfigurationsGoogleAdsConfig.property.managerAccountId">managerAccountId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#manager_account_id Pipeline#manager_account_id}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionSourceConfigurationsGoogleAdsConfig.property.managerAccountId">managerAccountId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#manager_account_id Pipeline#manager_account_id}. |
 
 ---
 
@@ -11546,7 +11994,7 @@ public java.lang.String getManagerAccountId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#manager_account_id Pipeline#manager_account_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#manager_account_id Pipeline#manager_account_id}.
 
 ---
 
@@ -11580,18 +12028,18 @@ PipelineIngestionDefinitionTableConfiguration.builder()
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfiguration.property.autoFullRefreshPolicy">autoFullRefreshPolicy</a></code> | <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationAutoFullRefreshPolicy">PipelineIngestionDefinitionTableConfigurationAutoFullRefreshPolicy</a></code> | auto_full_refresh_policy block. |
-| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfiguration.property.clusteringColumns">clusteringColumns</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#clustering_columns Pipeline#clustering_columns}. |
-| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfiguration.property.enableAutoClustering">enableAutoClustering</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#enable_auto_clustering Pipeline#enable_auto_clustering}. |
-| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfiguration.property.excludeColumns">excludeColumns</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#exclude_columns Pipeline#exclude_columns}. |
-| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfiguration.property.includeColumns">includeColumns</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#include_columns Pipeline#include_columns}. |
-| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfiguration.property.primaryKeys">primaryKeys</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#primary_keys Pipeline#primary_keys}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfiguration.property.clusteringColumns">clusteringColumns</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#clustering_columns Pipeline#clustering_columns}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfiguration.property.enableAutoClustering">enableAutoClustering</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#enable_auto_clustering Pipeline#enable_auto_clustering}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfiguration.property.excludeColumns">excludeColumns</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#exclude_columns Pipeline#exclude_columns}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfiguration.property.includeColumns">includeColumns</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#include_columns Pipeline#include_columns}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfiguration.property.primaryKeys">primaryKeys</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#primary_keys Pipeline#primary_keys}. |
 | <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfiguration.property.queryBasedConnectorConfig">queryBasedConnectorConfig</a></code> | <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationQueryBasedConnectorConfig">PipelineIngestionDefinitionTableConfigurationQueryBasedConnectorConfig</a></code> | query_based_connector_config block. |
-| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfiguration.property.rowFilter">rowFilter</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#row_filter Pipeline#row_filter}. |
-| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfiguration.property.salesforceIncludeFormulaFields">salesforceIncludeFormulaFields</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#salesforce_include_formula_fields Pipeline#salesforce_include_formula_fields}. |
-| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfiguration.property.scdType">scdType</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#scd_type Pipeline#scd_type}. |
-| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfiguration.property.sequenceBy">sequenceBy</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#sequence_by Pipeline#sequence_by}. |
-| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfiguration.property.sourceMetadataColumn">sourceMetadataColumn</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#source_metadata_column Pipeline#source_metadata_column}. |
-| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfiguration.property.tableProperties">tableProperties</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#table_properties Pipeline#table_properties}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfiguration.property.rowFilter">rowFilter</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#row_filter Pipeline#row_filter}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfiguration.property.salesforceIncludeFormulaFields">salesforceIncludeFormulaFields</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#salesforce_include_formula_fields Pipeline#salesforce_include_formula_fields}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfiguration.property.scdType">scdType</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#scd_type Pipeline#scd_type}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfiguration.property.sequenceBy">sequenceBy</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#sequence_by Pipeline#sequence_by}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfiguration.property.sourceMetadataColumn">sourceMetadataColumn</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#source_metadata_column Pipeline#source_metadata_column}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfiguration.property.tableProperties">tableProperties</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#table_properties Pipeline#table_properties}. |
 | <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfiguration.property.workdayReportParameters">workdayReportParameters</a></code> | <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParameters">PipelineIngestionDefinitionTableConfigurationWorkdayReportParameters</a></code> | workday_report_parameters block. |
 
 ---
@@ -11606,7 +12054,7 @@ public PipelineIngestionDefinitionTableConfigurationAutoFullRefreshPolicy getAut
 
 auto_full_refresh_policy block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#auto_full_refresh_policy Pipeline#auto_full_refresh_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#auto_full_refresh_policy Pipeline#auto_full_refresh_policy}
 
 ---
 
@@ -11618,7 +12066,7 @@ public java.util.List<java.lang.String> getClusteringColumns();
 
 - *Type:* java.util.List<java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#clustering_columns Pipeline#clustering_columns}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#clustering_columns Pipeline#clustering_columns}.
 
 ---
 
@@ -11630,7 +12078,7 @@ public java.lang.Boolean|IResolvable getEnableAutoClustering();
 
 - *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#enable_auto_clustering Pipeline#enable_auto_clustering}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#enable_auto_clustering Pipeline#enable_auto_clustering}.
 
 ---
 
@@ -11642,7 +12090,7 @@ public java.util.List<java.lang.String> getExcludeColumns();
 
 - *Type:* java.util.List<java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#exclude_columns Pipeline#exclude_columns}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#exclude_columns Pipeline#exclude_columns}.
 
 ---
 
@@ -11654,7 +12102,7 @@ public java.util.List<java.lang.String> getIncludeColumns();
 
 - *Type:* java.util.List<java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#include_columns Pipeline#include_columns}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#include_columns Pipeline#include_columns}.
 
 ---
 
@@ -11666,7 +12114,7 @@ public java.util.List<java.lang.String> getPrimaryKeys();
 
 - *Type:* java.util.List<java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#primary_keys Pipeline#primary_keys}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#primary_keys Pipeline#primary_keys}.
 
 ---
 
@@ -11680,7 +12128,7 @@ public PipelineIngestionDefinitionTableConfigurationQueryBasedConnectorConfig ge
 
 query_based_connector_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#query_based_connector_config Pipeline#query_based_connector_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#query_based_connector_config Pipeline#query_based_connector_config}
 
 ---
 
@@ -11692,7 +12140,7 @@ public java.lang.String getRowFilter();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#row_filter Pipeline#row_filter}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#row_filter Pipeline#row_filter}.
 
 ---
 
@@ -11704,7 +12152,7 @@ public java.lang.Boolean|IResolvable getSalesforceIncludeFormulaFields();
 
 - *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#salesforce_include_formula_fields Pipeline#salesforce_include_formula_fields}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#salesforce_include_formula_fields Pipeline#salesforce_include_formula_fields}.
 
 ---
 
@@ -11716,7 +12164,7 @@ public java.lang.String getScdType();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#scd_type Pipeline#scd_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#scd_type Pipeline#scd_type}.
 
 ---
 
@@ -11728,7 +12176,7 @@ public java.util.List<java.lang.String> getSequenceBy();
 
 - *Type:* java.util.List<java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#sequence_by Pipeline#sequence_by}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#sequence_by Pipeline#sequence_by}.
 
 ---
 
@@ -11740,7 +12188,7 @@ public java.lang.String getSourceMetadataColumn();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#source_metadata_column Pipeline#source_metadata_column}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#source_metadata_column Pipeline#source_metadata_column}.
 
 ---
 
@@ -11752,7 +12200,7 @@ public java.util.Map<java.lang.String, java.lang.String> getTableProperties();
 
 - *Type:* java.util.Map<java.lang.String, java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#table_properties Pipeline#table_properties}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#table_properties Pipeline#table_properties}.
 
 ---
 
@@ -11766,7 +12214,7 @@ public PipelineIngestionDefinitionTableConfigurationWorkdayReportParameters getW
 
 workday_report_parameters block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#workday_report_parameters Pipeline#workday_report_parameters}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#workday_report_parameters Pipeline#workday_report_parameters}
 
 ---
 
@@ -11787,8 +12235,8 @@ PipelineIngestionDefinitionTableConfigurationAutoFullRefreshPolicy.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationAutoFullRefreshPolicy.property.enabled">enabled</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#enabled Pipeline#enabled}. |
-| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationAutoFullRefreshPolicy.property.minIntervalHours">minIntervalHours</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#min_interval_hours Pipeline#min_interval_hours}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationAutoFullRefreshPolicy.property.enabled">enabled</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#enabled Pipeline#enabled}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationAutoFullRefreshPolicy.property.minIntervalHours">minIntervalHours</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#min_interval_hours Pipeline#min_interval_hours}. |
 
 ---
 
@@ -11800,7 +12248,7 @@ public java.lang.Boolean|IResolvable getEnabled();
 
 - *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#enabled Pipeline#enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#enabled Pipeline#enabled}.
 
 ---
 
@@ -11812,7 +12260,7 @@ public java.lang.Number getMinIntervalHours();
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#min_interval_hours Pipeline#min_interval_hours}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#min_interval_hours Pipeline#min_interval_hours}.
 
 ---
 
@@ -11834,9 +12282,9 @@ PipelineIngestionDefinitionTableConfigurationQueryBasedConnectorConfig.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationQueryBasedConnectorConfig.property.cursorColumns">cursorColumns</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#cursor_columns Pipeline#cursor_columns}. |
-| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationQueryBasedConnectorConfig.property.deletionCondition">deletionCondition</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#deletion_condition Pipeline#deletion_condition}. |
-| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationQueryBasedConnectorConfig.property.hardDeletionSyncMinIntervalInSeconds">hardDeletionSyncMinIntervalInSeconds</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#hard_deletion_sync_min_interval_in_seconds Pipeline#hard_deletion_sync_min_interval_in_seconds}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationQueryBasedConnectorConfig.property.cursorColumns">cursorColumns</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#cursor_columns Pipeline#cursor_columns}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationQueryBasedConnectorConfig.property.deletionCondition">deletionCondition</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#deletion_condition Pipeline#deletion_condition}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationQueryBasedConnectorConfig.property.hardDeletionSyncMinIntervalInSeconds">hardDeletionSyncMinIntervalInSeconds</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#hard_deletion_sync_min_interval_in_seconds Pipeline#hard_deletion_sync_min_interval_in_seconds}. |
 
 ---
 
@@ -11848,7 +12296,7 @@ public java.util.List<java.lang.String> getCursorColumns();
 
 - *Type:* java.util.List<java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#cursor_columns Pipeline#cursor_columns}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#cursor_columns Pipeline#cursor_columns}.
 
 ---
 
@@ -11860,7 +12308,7 @@ public java.lang.String getDeletionCondition();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#deletion_condition Pipeline#deletion_condition}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#deletion_condition Pipeline#deletion_condition}.
 
 ---
 
@@ -11872,7 +12320,7 @@ public java.lang.Number getHardDeletionSyncMinIntervalInSeconds();
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#hard_deletion_sync_min_interval_in_seconds Pipeline#hard_deletion_sync_min_interval_in_seconds}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#hard_deletion_sync_min_interval_in_seconds Pipeline#hard_deletion_sync_min_interval_in_seconds}.
 
 ---
 
@@ -11894,8 +12342,8 @@ PipelineIngestionDefinitionTableConfigurationWorkdayReportParameters.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParameters.property.incremental">incremental</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#incremental Pipeline#incremental}. |
-| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParameters.property.parameters">parameters</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#parameters Pipeline#parameters}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParameters.property.incremental">incremental</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#incremental Pipeline#incremental}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParameters.property.parameters">parameters</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#parameters Pipeline#parameters}. |
 | <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParameters.property.reportParameters">reportParameters</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersReportParameters">PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersReportParameters</a>></code> | report_parameters block. |
 
 ---
@@ -11908,7 +12356,7 @@ public java.lang.Boolean|IResolvable getIncremental();
 
 - *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#incremental Pipeline#incremental}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#incremental Pipeline#incremental}.
 
 ---
 
@@ -11920,7 +12368,7 @@ public java.util.Map<java.lang.String, java.lang.String> getParameters();
 
 - *Type:* java.util.Map<java.lang.String, java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#parameters Pipeline#parameters}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#parameters Pipeline#parameters}.
 
 ---
 
@@ -11934,7 +12382,7 @@ public IResolvable|java.util.List<PipelineIngestionDefinitionTableConfigurationW
 
 report_parameters block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#report_parameters Pipeline#report_parameters}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#report_parameters Pipeline#report_parameters}
 
 ---
 
@@ -11955,8 +12403,8 @@ PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersReportParame
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersReportParameters.property.key">key</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#key Pipeline#key}. |
-| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersReportParameters.property.value">value</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#value Pipeline#value}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersReportParameters.property.key">key</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#key Pipeline#key}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersReportParameters.property.value">value</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#value Pipeline#value}. |
 
 ---
 
@@ -11968,7 +12416,7 @@ public java.lang.String getKey();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#key Pipeline#key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#key Pipeline#key}.
 
 ---
 
@@ -11980,7 +12428,7 @@ public java.lang.String getValue();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#value Pipeline#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#value Pipeline#value}.
 
 ---
 
@@ -12002,9 +12450,9 @@ PipelineLatestUpdates.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineLatestUpdates.property.creationTime">creationTime</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#creation_time Pipeline#creation_time}. |
-| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineLatestUpdates.property.state">state</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#state Pipeline#state}. |
-| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineLatestUpdates.property.updateId">updateId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#update_id Pipeline#update_id}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineLatestUpdates.property.creationTime">creationTime</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#creation_time Pipeline#creation_time}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineLatestUpdates.property.state">state</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#state Pipeline#state}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineLatestUpdates.property.updateId">updateId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#update_id Pipeline#update_id}. |
 
 ---
 
@@ -12016,7 +12464,7 @@ public java.lang.String getCreationTime();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#creation_time Pipeline#creation_time}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#creation_time Pipeline#creation_time}.
 
 ---
 
@@ -12028,7 +12476,7 @@ public java.lang.String getState();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#state Pipeline#state}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#state Pipeline#state}.
 
 ---
 
@@ -12040,7 +12488,7 @@ public java.lang.String getUpdateId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#update_id Pipeline#update_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#update_id Pipeline#update_id}.
 
 ---
 
@@ -12067,10 +12515,10 @@ PipelineLibrary.builder()
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-databricks.pipeline.PipelineLibrary.property.file">file</a></code> | <code><a href="#@cdktn/provider-databricks.pipeline.PipelineLibraryFile">PipelineLibraryFile</a></code> | file block. |
 | <code><a href="#@cdktn/provider-databricks.pipeline.PipelineLibrary.property.glob">glob</a></code> | <code><a href="#@cdktn/provider-databricks.pipeline.PipelineLibraryGlob">PipelineLibraryGlob</a></code> | glob block. |
-| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineLibrary.property.jar">jar</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#jar Pipeline#jar}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineLibrary.property.jar">jar</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#jar Pipeline#jar}. |
 | <code><a href="#@cdktn/provider-databricks.pipeline.PipelineLibrary.property.maven">maven</a></code> | <code><a href="#@cdktn/provider-databricks.pipeline.PipelineLibraryMaven">PipelineLibraryMaven</a></code> | maven block. |
 | <code><a href="#@cdktn/provider-databricks.pipeline.PipelineLibrary.property.notebook">notebook</a></code> | <code><a href="#@cdktn/provider-databricks.pipeline.PipelineLibraryNotebook">PipelineLibraryNotebook</a></code> | notebook block. |
-| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineLibrary.property.whl">whl</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#whl Pipeline#whl}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineLibrary.property.whl">whl</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#whl Pipeline#whl}. |
 
 ---
 
@@ -12084,7 +12532,7 @@ public PipelineLibraryFile getFile();
 
 file block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#file Pipeline#file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#file Pipeline#file}
 
 ---
 
@@ -12098,7 +12546,7 @@ public PipelineLibraryGlob getGlob();
 
 glob block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#glob Pipeline#glob}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#glob Pipeline#glob}
 
 ---
 
@@ -12110,7 +12558,7 @@ public java.lang.String getJar();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#jar Pipeline#jar}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#jar Pipeline#jar}.
 
 ---
 
@@ -12124,7 +12572,7 @@ public PipelineLibraryMaven getMaven();
 
 maven block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#maven Pipeline#maven}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#maven Pipeline#maven}
 
 ---
 
@@ -12138,7 +12586,7 @@ public PipelineLibraryNotebook getNotebook();
 
 notebook block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#notebook Pipeline#notebook}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#notebook Pipeline#notebook}
 
 ---
 
@@ -12150,7 +12598,7 @@ public java.lang.String getWhl();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#whl Pipeline#whl}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#whl Pipeline#whl}.
 
 ---
 
@@ -12170,7 +12618,7 @@ PipelineLibraryFile.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineLibraryFile.property.path">path</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#path Pipeline#path}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineLibraryFile.property.path">path</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#path Pipeline#path}. |
 
 ---
 
@@ -12182,7 +12630,7 @@ public java.lang.String getPath();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#path Pipeline#path}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#path Pipeline#path}.
 
 ---
 
@@ -12202,7 +12650,7 @@ PipelineLibraryGlob.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineLibraryGlob.property.include">include</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#include Pipeline#include}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineLibraryGlob.property.include">include</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#include Pipeline#include}. |
 
 ---
 
@@ -12214,7 +12662,7 @@ public java.lang.String getInclude();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#include Pipeline#include}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#include Pipeline#include}.
 
 ---
 
@@ -12236,9 +12684,9 @@ PipelineLibraryMaven.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineLibraryMaven.property.coordinates">coordinates</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#coordinates Pipeline#coordinates}. |
-| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineLibraryMaven.property.exclusions">exclusions</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#exclusions Pipeline#exclusions}. |
-| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineLibraryMaven.property.repo">repo</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#repo Pipeline#repo}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineLibraryMaven.property.coordinates">coordinates</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#coordinates Pipeline#coordinates}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineLibraryMaven.property.exclusions">exclusions</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#exclusions Pipeline#exclusions}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineLibraryMaven.property.repo">repo</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#repo Pipeline#repo}. |
 
 ---
 
@@ -12250,7 +12698,7 @@ public java.lang.String getCoordinates();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#coordinates Pipeline#coordinates}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#coordinates Pipeline#coordinates}.
 
 ---
 
@@ -12262,7 +12710,7 @@ public java.util.List<java.lang.String> getExclusions();
 
 - *Type:* java.util.List<java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#exclusions Pipeline#exclusions}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#exclusions Pipeline#exclusions}.
 
 ---
 
@@ -12274,7 +12722,7 @@ public java.lang.String getRepo();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#repo Pipeline#repo}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#repo Pipeline#repo}.
 
 ---
 
@@ -12294,7 +12742,7 @@ PipelineLibraryNotebook.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineLibraryNotebook.property.path">path</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#path Pipeline#path}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineLibraryNotebook.property.path">path</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#path Pipeline#path}. |
 
 ---
 
@@ -12306,7 +12754,7 @@ public java.lang.String getPath();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#path Pipeline#path}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#path Pipeline#path}.
 
 ---
 
@@ -12327,8 +12775,8 @@ PipelineNotification.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineNotification.property.alerts">alerts</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#alerts Pipeline#alerts}. |
-| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineNotification.property.emailRecipients">emailRecipients</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#email_recipients Pipeline#email_recipients}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineNotification.property.alerts">alerts</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#alerts Pipeline#alerts}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineNotification.property.emailRecipients">emailRecipients</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#email_recipients Pipeline#email_recipients}. |
 
 ---
 
@@ -12340,7 +12788,7 @@ public java.util.List<java.lang.String> getAlerts();
 
 - *Type:* java.util.List<java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#alerts Pipeline#alerts}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#alerts Pipeline#alerts}.
 
 ---
 
@@ -12352,7 +12800,7 @@ public java.util.List<java.lang.String> getEmailRecipients();
 
 - *Type:* java.util.List<java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#email_recipients Pipeline#email_recipients}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#email_recipients Pipeline#email_recipients}.
 
 ---
 
@@ -12372,7 +12820,7 @@ PipelineProviderConfig.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineProviderConfig.property.workspaceId">workspaceId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#workspace_id Pipeline#workspace_id}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineProviderConfig.property.workspaceId">workspaceId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#workspace_id Pipeline#workspace_id}. |
 
 ---
 
@@ -12384,7 +12832,7 @@ public java.lang.String getWorkspaceId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#workspace_id Pipeline#workspace_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#workspace_id Pipeline#workspace_id}.
 
 ---
 
@@ -12406,9 +12854,9 @@ PipelineRestartWindow.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineRestartWindow.property.startHour">startHour</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#start_hour Pipeline#start_hour}. |
-| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineRestartWindow.property.daysOfWeek">daysOfWeek</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#days_of_week Pipeline#days_of_week}. |
-| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineRestartWindow.property.timeZoneId">timeZoneId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#time_zone_id Pipeline#time_zone_id}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineRestartWindow.property.startHour">startHour</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#start_hour Pipeline#start_hour}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineRestartWindow.property.daysOfWeek">daysOfWeek</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#days_of_week Pipeline#days_of_week}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineRestartWindow.property.timeZoneId">timeZoneId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#time_zone_id Pipeline#time_zone_id}. |
 
 ---
 
@@ -12420,7 +12868,7 @@ public java.lang.Number getStartHour();
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#start_hour Pipeline#start_hour}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#start_hour Pipeline#start_hour}.
 
 ---
 
@@ -12432,7 +12880,7 @@ public java.util.List<java.lang.String> getDaysOfWeek();
 
 - *Type:* java.util.List<java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#days_of_week Pipeline#days_of_week}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#days_of_week Pipeline#days_of_week}.
 
 ---
 
@@ -12444,7 +12892,7 @@ public java.lang.String getTimeZoneId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#time_zone_id Pipeline#time_zone_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#time_zone_id Pipeline#time_zone_id}.
 
 ---
 
@@ -12465,8 +12913,8 @@ PipelineRunAs.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineRunAs.property.servicePrincipalName">servicePrincipalName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#service_principal_name Pipeline#service_principal_name}. |
-| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineRunAs.property.userName">userName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#user_name Pipeline#user_name}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineRunAs.property.servicePrincipalName">servicePrincipalName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#service_principal_name Pipeline#service_principal_name}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineRunAs.property.userName">userName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#user_name Pipeline#user_name}. |
 
 ---
 
@@ -12478,7 +12926,7 @@ public java.lang.String getServicePrincipalName();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#service_principal_name Pipeline#service_principal_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#service_principal_name Pipeline#service_principal_name}.
 
 ---
 
@@ -12490,7 +12938,7 @@ public java.lang.String getUserName();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#user_name Pipeline#user_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#user_name Pipeline#user_name}.
 
 ---
 
@@ -12510,7 +12958,7 @@ PipelineTimeouts.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineTimeouts.property.default">default</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#default Pipeline#default}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineTimeouts.property.default">default</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#default Pipeline#default}. |
 
 ---
 
@@ -12522,7 +12970,7 @@ public java.lang.String getDefault();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#default Pipeline#default}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#default Pipeline#default}.
 
 ---
 
@@ -12558,7 +13006,7 @@ public PipelineTriggerCron getCron();
 
 cron block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#cron Pipeline#cron}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#cron Pipeline#cron}
 
 ---
 
@@ -12572,7 +13020,7 @@ public PipelineTriggerManual getManual();
 
 manual block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#manual Pipeline#manual}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#manual Pipeline#manual}
 
 ---
 
@@ -12593,8 +13041,8 @@ PipelineTriggerCron.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineTriggerCron.property.quartzCronSchedule">quartzCronSchedule</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#quartz_cron_schedule Pipeline#quartz_cron_schedule}. |
-| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineTriggerCron.property.timezoneId">timezoneId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#timezone_id Pipeline#timezone_id}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineTriggerCron.property.quartzCronSchedule">quartzCronSchedule</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#quartz_cron_schedule Pipeline#quartz_cron_schedule}. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineTriggerCron.property.timezoneId">timezoneId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#timezone_id Pipeline#timezone_id}. |
 
 ---
 
@@ -12606,7 +13054,7 @@ public java.lang.String getQuartzCronSchedule();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#quartz_cron_schedule Pipeline#quartz_cron_schedule}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#quartz_cron_schedule Pipeline#quartz_cron_schedule}.
 
 ---
 
@@ -12618,7 +13066,7 @@ public java.lang.String getTimezoneId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/pipeline#timezone_id Pipeline#timezone_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/pipeline#timezone_id Pipeline#timezone_id}.
 
 ---
 
@@ -31769,6 +32217,7 @@ The attribute on the parent resource this class is referencing.
 | <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsOutputReference.putKafkaOptions">putKafkaOptions</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsOutputReference.putMetaAdsOptions">putMetaAdsOptions</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsOutputReference.putOutlookOptions">putOutlookOptions</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsOutputReference.putRedditAdsOptions">putRedditAdsOptions</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsOutputReference.putSharepointOptions">putSharepointOptions</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsOutputReference.putSmartsheetOptions">putSmartsheetOptions</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsOutputReference.putTiktokAdsOptions">putTiktokAdsOptions</a></code> | *No description.* |
@@ -31780,6 +32229,7 @@ The attribute on the parent resource this class is referencing.
 | <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsOutputReference.resetKafkaOptions">resetKafkaOptions</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsOutputReference.resetMetaAdsOptions">resetMetaAdsOptions</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsOutputReference.resetOutlookOptions">resetOutlookOptions</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsOutputReference.resetRedditAdsOptions">resetRedditAdsOptions</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsOutputReference.resetSharepointOptions">resetSharepointOptions</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsOutputReference.resetSmartsheetOptions">resetSmartsheetOptions</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsOutputReference.resetTiktokAdsOptions">resetTiktokAdsOptions</a></code> | *No description.* |
@@ -32021,6 +32471,18 @@ public void putOutlookOptions(PipelineIngestionDefinitionObjectsSchemaConnectorO
 
 ---
 
+##### `putRedditAdsOptions` <a name="putRedditAdsOptions" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsOutputReference.putRedditAdsOptions"></a>
+
+```java
+public void putRedditAdsOptions(PipelineIngestionDefinitionObjectsSchemaConnectorOptionsRedditAdsOptions value)
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsOutputReference.putRedditAdsOptions.parameter.value"></a>
+
+- *Type:* <a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsRedditAdsOptions">PipelineIngestionDefinitionObjectsSchemaConnectorOptionsRedditAdsOptions</a>
+
+---
+
 ##### `putSharepointOptions` <a name="putSharepointOptions" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsOutputReference.putSharepointOptions"></a>
 
 ```java
@@ -32111,6 +32573,12 @@ public void resetMetaAdsOptions()
 public void resetOutlookOptions()
 ```
 
+##### `resetRedditAdsOptions` <a name="resetRedditAdsOptions" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsOutputReference.resetRedditAdsOptions"></a>
+
+```java
+public void resetRedditAdsOptions()
+```
+
 ##### `resetSharepointOptions` <a name="resetSharepointOptions" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsOutputReference.resetSharepointOptions"></a>
 
 ```java
@@ -32149,6 +32617,7 @@ public void resetZendeskSupportOptions()
 | <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsOutputReference.property.kafkaOptions">kafkaOptions</a></code> | <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptionsOutputReference">PipelineIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptionsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsOutputReference.property.metaAdsOptions">metaAdsOptions</a></code> | <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsMetaAdsOptionsOutputReference">PipelineIngestionDefinitionObjectsSchemaConnectorOptionsMetaAdsOptionsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsOutputReference.property.outlookOptions">outlookOptions</a></code> | <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsOutlookOptionsOutputReference">PipelineIngestionDefinitionObjectsSchemaConnectorOptionsOutlookOptionsOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsOutputReference.property.redditAdsOptions">redditAdsOptions</a></code> | <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsRedditAdsOptionsOutputReference">PipelineIngestionDefinitionObjectsSchemaConnectorOptionsRedditAdsOptionsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsOutputReference.property.sharepointOptions">sharepointOptions</a></code> | <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsSharepointOptionsOutputReference">PipelineIngestionDefinitionObjectsSchemaConnectorOptionsSharepointOptionsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsOutputReference.property.smartsheetOptions">smartsheetOptions</a></code> | <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsSmartsheetOptionsOutputReference">PipelineIngestionDefinitionObjectsSchemaConnectorOptionsSmartsheetOptionsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsOutputReference.property.tiktokAdsOptions">tiktokAdsOptions</a></code> | <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsTiktokAdsOptionsOutputReference">PipelineIngestionDefinitionObjectsSchemaConnectorOptionsTiktokAdsOptionsOutputReference</a></code> | *No description.* |
@@ -32160,6 +32629,7 @@ public void resetZendeskSupportOptions()
 | <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsOutputReference.property.kafkaOptionsInput">kafkaOptionsInput</a></code> | <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptions">PipelineIngestionDefinitionObjectsSchemaConnectorOptionsKafkaOptions</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsOutputReference.property.metaAdsOptionsInput">metaAdsOptionsInput</a></code> | <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsMetaAdsOptions">PipelineIngestionDefinitionObjectsSchemaConnectorOptionsMetaAdsOptions</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsOutputReference.property.outlookOptionsInput">outlookOptionsInput</a></code> | <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsOutlookOptions">PipelineIngestionDefinitionObjectsSchemaConnectorOptionsOutlookOptions</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsOutputReference.property.redditAdsOptionsInput">redditAdsOptionsInput</a></code> | <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsRedditAdsOptions">PipelineIngestionDefinitionObjectsSchemaConnectorOptionsRedditAdsOptions</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsOutputReference.property.sharepointOptionsInput">sharepointOptionsInput</a></code> | <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsSharepointOptions">PipelineIngestionDefinitionObjectsSchemaConnectorOptionsSharepointOptions</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsOutputReference.property.smartsheetOptionsInput">smartsheetOptionsInput</a></code> | <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsSmartsheetOptions">PipelineIngestionDefinitionObjectsSchemaConnectorOptionsSmartsheetOptions</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsOutputReference.property.tiktokAdsOptionsInput">tiktokAdsOptionsInput</a></code> | <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsTiktokAdsOptions">PipelineIngestionDefinitionObjectsSchemaConnectorOptionsTiktokAdsOptions</a></code> | *No description.* |
@@ -32259,6 +32729,16 @@ public PipelineIngestionDefinitionObjectsSchemaConnectorOptionsOutlookOptionsOut
 ```
 
 - *Type:* <a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsOutlookOptionsOutputReference">PipelineIngestionDefinitionObjectsSchemaConnectorOptionsOutlookOptionsOutputReference</a>
+
+---
+
+##### `redditAdsOptions`<sup>Required</sup> <a name="redditAdsOptions" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsOutputReference.property.redditAdsOptions"></a>
+
+```java
+public PipelineIngestionDefinitionObjectsSchemaConnectorOptionsRedditAdsOptionsOutputReference getRedditAdsOptions();
+```
+
+- *Type:* <a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsRedditAdsOptionsOutputReference">PipelineIngestionDefinitionObjectsSchemaConnectorOptionsRedditAdsOptionsOutputReference</a>
 
 ---
 
@@ -32372,6 +32852,16 @@ public PipelineIngestionDefinitionObjectsSchemaConnectorOptionsOutlookOptions ge
 
 ---
 
+##### `redditAdsOptionsInput`<sup>Optional</sup> <a name="redditAdsOptionsInput" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsOutputReference.property.redditAdsOptionsInput"></a>
+
+```java
+public PipelineIngestionDefinitionObjectsSchemaConnectorOptionsRedditAdsOptions getRedditAdsOptionsInput();
+```
+
+- *Type:* <a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsRedditAdsOptions">PipelineIngestionDefinitionObjectsSchemaConnectorOptionsRedditAdsOptions</a>
+
+---
+
 ##### `sharepointOptionsInput`<sup>Optional</sup> <a name="sharepointOptionsInput" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsOutputReference.property.sharepointOptionsInput"></a>
 
 ```java
@@ -32419,6 +32909,662 @@ public PipelineIngestionDefinitionObjectsSchemaConnectorOptions getInternalValue
 ```
 
 - *Type:* <a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptions">PipelineIngestionDefinitionObjectsSchemaConnectorOptions</a>
+
+---
+
+
+### PipelineIngestionDefinitionObjectsSchemaConnectorOptionsRedditAdsOptionsCustomReportOptionsOutputReference <a name="PipelineIngestionDefinitionObjectsSchemaConnectorOptionsRedditAdsOptionsCustomReportOptionsOutputReference" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsRedditAdsOptionsCustomReportOptionsOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsRedditAdsOptionsCustomReportOptionsOutputReference.Initializer"></a>
+
+```java
+import io.cdktn.providers.databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsRedditAdsOptionsCustomReportOptionsOutputReference;
+
+new PipelineIngestionDefinitionObjectsSchemaConnectorOptionsRedditAdsOptionsCustomReportOptionsOutputReference(IInterpolatingParent terraformResource, java.lang.String terraformAttribute);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsRedditAdsOptionsCustomReportOptionsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>io.cdktn.cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsRedditAdsOptionsCustomReportOptionsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>java.lang.String</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsRedditAdsOptionsCustomReportOptionsOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* io.cdktn.cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsRedditAdsOptionsCustomReportOptionsOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsRedditAdsOptionsCustomReportOptionsOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsRedditAdsOptionsCustomReportOptionsOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsRedditAdsOptionsCustomReportOptionsOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsRedditAdsOptionsCustomReportOptionsOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsRedditAdsOptionsCustomReportOptionsOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsRedditAdsOptionsCustomReportOptionsOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsRedditAdsOptionsCustomReportOptionsOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsRedditAdsOptionsCustomReportOptionsOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsRedditAdsOptionsCustomReportOptionsOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsRedditAdsOptionsCustomReportOptionsOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsRedditAdsOptionsCustomReportOptionsOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsRedditAdsOptionsCustomReportOptionsOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsRedditAdsOptionsCustomReportOptionsOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsRedditAdsOptionsCustomReportOptionsOutputReference.resetBreakdowns">resetBreakdowns</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsRedditAdsOptionsCustomReportOptionsOutputReference.resetFields">resetFields</a></code> | *No description.* |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsRedditAdsOptionsCustomReportOptionsOutputReference.computeFqn"></a>
+
+```java
+public java.lang.String computeFqn()
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsRedditAdsOptionsCustomReportOptionsOutputReference.getAnyMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Object> getAnyMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsRedditAdsOptionsCustomReportOptionsOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsRedditAdsOptionsCustomReportOptionsOutputReference.getBooleanAttribute"></a>
+
+```java
+public IResolvable getBooleanAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsRedditAdsOptionsCustomReportOptionsOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsRedditAdsOptionsCustomReportOptionsOutputReference.getBooleanMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Boolean> getBooleanMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsRedditAdsOptionsCustomReportOptionsOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsRedditAdsOptionsCustomReportOptionsOutputReference.getListAttribute"></a>
+
+```java
+public java.util.List<java.lang.String> getListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsRedditAdsOptionsCustomReportOptionsOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsRedditAdsOptionsCustomReportOptionsOutputReference.getNumberAttribute"></a>
+
+```java
+public java.lang.Number getNumberAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsRedditAdsOptionsCustomReportOptionsOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsRedditAdsOptionsCustomReportOptionsOutputReference.getNumberListAttribute"></a>
+
+```java
+public java.util.List<java.lang.Number> getNumberListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsRedditAdsOptionsCustomReportOptionsOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsRedditAdsOptionsCustomReportOptionsOutputReference.getNumberMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Number> getNumberMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsRedditAdsOptionsCustomReportOptionsOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsRedditAdsOptionsCustomReportOptionsOutputReference.getStringAttribute"></a>
+
+```java
+public java.lang.String getStringAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsRedditAdsOptionsCustomReportOptionsOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsRedditAdsOptionsCustomReportOptionsOutputReference.getStringMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.String> getStringMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsRedditAdsOptionsCustomReportOptionsOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsRedditAdsOptionsCustomReportOptionsOutputReference.interpolationForAttribute"></a>
+
+```java
+public IResolvable interpolationForAttribute(java.lang.String property)
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsRedditAdsOptionsCustomReportOptionsOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsRedditAdsOptionsCustomReportOptionsOutputReference.resolve"></a>
+
+```java
+public java.lang.Object resolve(IResolveContext _context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsRedditAdsOptionsCustomReportOptionsOutputReference.resolve.parameter._context"></a>
+
+- *Type:* io.cdktn.cdktn.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsRedditAdsOptionsCustomReportOptionsOutputReference.toString"></a>
+
+```java
+public java.lang.String toString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `resetBreakdowns` <a name="resetBreakdowns" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsRedditAdsOptionsCustomReportOptionsOutputReference.resetBreakdowns"></a>
+
+```java
+public void resetBreakdowns()
+```
+
+##### `resetFields` <a name="resetFields" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsRedditAdsOptionsCustomReportOptionsOutputReference.resetFields"></a>
+
+```java
+public void resetFields()
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsRedditAdsOptionsCustomReportOptionsOutputReference.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsRedditAdsOptionsCustomReportOptionsOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsRedditAdsOptionsCustomReportOptionsOutputReference.property.breakdownsInput">breakdownsInput</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsRedditAdsOptionsCustomReportOptionsOutputReference.property.fieldsInput">fieldsInput</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsRedditAdsOptionsCustomReportOptionsOutputReference.property.breakdowns">breakdowns</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsRedditAdsOptionsCustomReportOptionsOutputReference.property.fields">fields</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsRedditAdsOptionsCustomReportOptionsOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsRedditAdsOptionsCustomReportOptions">PipelineIngestionDefinitionObjectsSchemaConnectorOptionsRedditAdsOptionsCustomReportOptions</a></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsRedditAdsOptionsCustomReportOptionsOutputReference.property.creationStack"></a>
+
+```java
+public java.util.List<java.lang.String> getCreationStack();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsRedditAdsOptionsCustomReportOptionsOutputReference.property.fqn"></a>
+
+```java
+public java.lang.String getFqn();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `breakdownsInput`<sup>Optional</sup> <a name="breakdownsInput" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsRedditAdsOptionsCustomReportOptionsOutputReference.property.breakdownsInput"></a>
+
+```java
+public java.util.List<java.lang.String> getBreakdownsInput();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+---
+
+##### `fieldsInput`<sup>Optional</sup> <a name="fieldsInput" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsRedditAdsOptionsCustomReportOptionsOutputReference.property.fieldsInput"></a>
+
+```java
+public java.util.List<java.lang.String> getFieldsInput();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+---
+
+##### `breakdowns`<sup>Required</sup> <a name="breakdowns" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsRedditAdsOptionsCustomReportOptionsOutputReference.property.breakdowns"></a>
+
+```java
+public java.util.List<java.lang.String> getBreakdowns();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+---
+
+##### `fields`<sup>Required</sup> <a name="fields" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsRedditAdsOptionsCustomReportOptionsOutputReference.property.fields"></a>
+
+```java
+public java.util.List<java.lang.String> getFields();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsRedditAdsOptionsCustomReportOptionsOutputReference.property.internalValue"></a>
+
+```java
+public PipelineIngestionDefinitionObjectsSchemaConnectorOptionsRedditAdsOptionsCustomReportOptions getInternalValue();
+```
+
+- *Type:* <a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsRedditAdsOptionsCustomReportOptions">PipelineIngestionDefinitionObjectsSchemaConnectorOptionsRedditAdsOptionsCustomReportOptions</a>
+
+---
+
+
+### PipelineIngestionDefinitionObjectsSchemaConnectorOptionsRedditAdsOptionsOutputReference <a name="PipelineIngestionDefinitionObjectsSchemaConnectorOptionsRedditAdsOptionsOutputReference" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsRedditAdsOptionsOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsRedditAdsOptionsOutputReference.Initializer"></a>
+
+```java
+import io.cdktn.providers.databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsRedditAdsOptionsOutputReference;
+
+new PipelineIngestionDefinitionObjectsSchemaConnectorOptionsRedditAdsOptionsOutputReference(IInterpolatingParent terraformResource, java.lang.String terraformAttribute);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsRedditAdsOptionsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>io.cdktn.cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsRedditAdsOptionsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>java.lang.String</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsRedditAdsOptionsOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* io.cdktn.cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsRedditAdsOptionsOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsRedditAdsOptionsOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsRedditAdsOptionsOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsRedditAdsOptionsOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsRedditAdsOptionsOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsRedditAdsOptionsOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsRedditAdsOptionsOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsRedditAdsOptionsOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsRedditAdsOptionsOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsRedditAdsOptionsOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsRedditAdsOptionsOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsRedditAdsOptionsOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsRedditAdsOptionsOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsRedditAdsOptionsOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsRedditAdsOptionsOutputReference.putCustomReportOptions">putCustomReportOptions</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsRedditAdsOptionsOutputReference.resetCustomReportOptions">resetCustomReportOptions</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsRedditAdsOptionsOutputReference.resetLookbackWindowDays">resetLookbackWindowDays</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsRedditAdsOptionsOutputReference.resetSyncStartDate">resetSyncStartDate</a></code> | *No description.* |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsRedditAdsOptionsOutputReference.computeFqn"></a>
+
+```java
+public java.lang.String computeFqn()
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsRedditAdsOptionsOutputReference.getAnyMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Object> getAnyMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsRedditAdsOptionsOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsRedditAdsOptionsOutputReference.getBooleanAttribute"></a>
+
+```java
+public IResolvable getBooleanAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsRedditAdsOptionsOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsRedditAdsOptionsOutputReference.getBooleanMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Boolean> getBooleanMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsRedditAdsOptionsOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsRedditAdsOptionsOutputReference.getListAttribute"></a>
+
+```java
+public java.util.List<java.lang.String> getListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsRedditAdsOptionsOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsRedditAdsOptionsOutputReference.getNumberAttribute"></a>
+
+```java
+public java.lang.Number getNumberAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsRedditAdsOptionsOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsRedditAdsOptionsOutputReference.getNumberListAttribute"></a>
+
+```java
+public java.util.List<java.lang.Number> getNumberListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsRedditAdsOptionsOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsRedditAdsOptionsOutputReference.getNumberMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Number> getNumberMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsRedditAdsOptionsOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsRedditAdsOptionsOutputReference.getStringAttribute"></a>
+
+```java
+public java.lang.String getStringAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsRedditAdsOptionsOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsRedditAdsOptionsOutputReference.getStringMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.String> getStringMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsRedditAdsOptionsOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsRedditAdsOptionsOutputReference.interpolationForAttribute"></a>
+
+```java
+public IResolvable interpolationForAttribute(java.lang.String property)
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsRedditAdsOptionsOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsRedditAdsOptionsOutputReference.resolve"></a>
+
+```java
+public java.lang.Object resolve(IResolveContext _context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsRedditAdsOptionsOutputReference.resolve.parameter._context"></a>
+
+- *Type:* io.cdktn.cdktn.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsRedditAdsOptionsOutputReference.toString"></a>
+
+```java
+public java.lang.String toString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `putCustomReportOptions` <a name="putCustomReportOptions" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsRedditAdsOptionsOutputReference.putCustomReportOptions"></a>
+
+```java
+public void putCustomReportOptions(PipelineIngestionDefinitionObjectsSchemaConnectorOptionsRedditAdsOptionsCustomReportOptions value)
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsRedditAdsOptionsOutputReference.putCustomReportOptions.parameter.value"></a>
+
+- *Type:* <a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsRedditAdsOptionsCustomReportOptions">PipelineIngestionDefinitionObjectsSchemaConnectorOptionsRedditAdsOptionsCustomReportOptions</a>
+
+---
+
+##### `resetCustomReportOptions` <a name="resetCustomReportOptions" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsRedditAdsOptionsOutputReference.resetCustomReportOptions"></a>
+
+```java
+public void resetCustomReportOptions()
+```
+
+##### `resetLookbackWindowDays` <a name="resetLookbackWindowDays" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsRedditAdsOptionsOutputReference.resetLookbackWindowDays"></a>
+
+```java
+public void resetLookbackWindowDays()
+```
+
+##### `resetSyncStartDate` <a name="resetSyncStartDate" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsRedditAdsOptionsOutputReference.resetSyncStartDate"></a>
+
+```java
+public void resetSyncStartDate()
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsRedditAdsOptionsOutputReference.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsRedditAdsOptionsOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsRedditAdsOptionsOutputReference.property.customReportOptions">customReportOptions</a></code> | <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsRedditAdsOptionsCustomReportOptionsOutputReference">PipelineIngestionDefinitionObjectsSchemaConnectorOptionsRedditAdsOptionsCustomReportOptionsOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsRedditAdsOptionsOutputReference.property.customReportOptionsInput">customReportOptionsInput</a></code> | <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsRedditAdsOptionsCustomReportOptions">PipelineIngestionDefinitionObjectsSchemaConnectorOptionsRedditAdsOptionsCustomReportOptions</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsRedditAdsOptionsOutputReference.property.lookbackWindowDaysInput">lookbackWindowDaysInput</a></code> | <code>java.lang.Number</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsRedditAdsOptionsOutputReference.property.syncStartDateInput">syncStartDateInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsRedditAdsOptionsOutputReference.property.lookbackWindowDays">lookbackWindowDays</a></code> | <code>java.lang.Number</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsRedditAdsOptionsOutputReference.property.syncStartDate">syncStartDate</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsRedditAdsOptionsOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsRedditAdsOptions">PipelineIngestionDefinitionObjectsSchemaConnectorOptionsRedditAdsOptions</a></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsRedditAdsOptionsOutputReference.property.creationStack"></a>
+
+```java
+public java.util.List<java.lang.String> getCreationStack();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsRedditAdsOptionsOutputReference.property.fqn"></a>
+
+```java
+public java.lang.String getFqn();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `customReportOptions`<sup>Required</sup> <a name="customReportOptions" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsRedditAdsOptionsOutputReference.property.customReportOptions"></a>
+
+```java
+public PipelineIngestionDefinitionObjectsSchemaConnectorOptionsRedditAdsOptionsCustomReportOptionsOutputReference getCustomReportOptions();
+```
+
+- *Type:* <a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsRedditAdsOptionsCustomReportOptionsOutputReference">PipelineIngestionDefinitionObjectsSchemaConnectorOptionsRedditAdsOptionsCustomReportOptionsOutputReference</a>
+
+---
+
+##### `customReportOptionsInput`<sup>Optional</sup> <a name="customReportOptionsInput" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsRedditAdsOptionsOutputReference.property.customReportOptionsInput"></a>
+
+```java
+public PipelineIngestionDefinitionObjectsSchemaConnectorOptionsRedditAdsOptionsCustomReportOptions getCustomReportOptionsInput();
+```
+
+- *Type:* <a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsRedditAdsOptionsCustomReportOptions">PipelineIngestionDefinitionObjectsSchemaConnectorOptionsRedditAdsOptionsCustomReportOptions</a>
+
+---
+
+##### `lookbackWindowDaysInput`<sup>Optional</sup> <a name="lookbackWindowDaysInput" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsRedditAdsOptionsOutputReference.property.lookbackWindowDaysInput"></a>
+
+```java
+public java.lang.Number getLookbackWindowDaysInput();
+```
+
+- *Type:* java.lang.Number
+
+---
+
+##### `syncStartDateInput`<sup>Optional</sup> <a name="syncStartDateInput" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsRedditAdsOptionsOutputReference.property.syncStartDateInput"></a>
+
+```java
+public java.lang.String getSyncStartDateInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `lookbackWindowDays`<sup>Required</sup> <a name="lookbackWindowDays" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsRedditAdsOptionsOutputReference.property.lookbackWindowDays"></a>
+
+```java
+public java.lang.Number getLookbackWindowDays();
+```
+
+- *Type:* java.lang.Number
+
+---
+
+##### `syncStartDate`<sup>Required</sup> <a name="syncStartDate" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsRedditAdsOptionsOutputReference.property.syncStartDate"></a>
+
+```java
+public java.lang.String getSyncStartDate();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsRedditAdsOptionsOutputReference.property.internalValue"></a>
+
+```java
+public PipelineIngestionDefinitionObjectsSchemaConnectorOptionsRedditAdsOptions getInternalValue();
+```
+
+- *Type:* <a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsRedditAdsOptions">PipelineIngestionDefinitionObjectsSchemaConnectorOptionsRedditAdsOptions</a>
 
 ---
 
@@ -35311,6 +36457,1218 @@ public PipelineIngestionDefinitionObjectsSchemaConnectorOptionsZendeskSupportOpt
 ---
 
 
+### PipelineIngestionDefinitionObjectsSchemaFanoutOptionsOutputReference <a name="PipelineIngestionDefinitionObjectsSchemaFanoutOptionsOutputReference" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaFanoutOptionsOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaFanoutOptionsOutputReference.Initializer"></a>
+
+```java
+import io.cdktn.providers.databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaFanoutOptionsOutputReference;
+
+new PipelineIngestionDefinitionObjectsSchemaFanoutOptionsOutputReference(IInterpolatingParent terraformResource, java.lang.String terraformAttribute);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaFanoutOptionsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>io.cdktn.cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaFanoutOptionsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>java.lang.String</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaFanoutOptionsOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* io.cdktn.cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaFanoutOptionsOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaFanoutOptionsOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaFanoutOptionsOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaFanoutOptionsOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaFanoutOptionsOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaFanoutOptionsOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaFanoutOptionsOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaFanoutOptionsOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaFanoutOptionsOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaFanoutOptionsOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaFanoutOptionsOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaFanoutOptionsOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaFanoutOptionsOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaFanoutOptionsOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaFanoutOptionsOutputReference.putTransforms">putTransforms</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaFanoutOptionsOutputReference.resetFanoutBy">resetFanoutBy</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaFanoutOptionsOutputReference.resetTransforms">resetTransforms</a></code> | *No description.* |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaFanoutOptionsOutputReference.computeFqn"></a>
+
+```java
+public java.lang.String computeFqn()
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaFanoutOptionsOutputReference.getAnyMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Object> getAnyMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaFanoutOptionsOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaFanoutOptionsOutputReference.getBooleanAttribute"></a>
+
+```java
+public IResolvable getBooleanAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaFanoutOptionsOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaFanoutOptionsOutputReference.getBooleanMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Boolean> getBooleanMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaFanoutOptionsOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaFanoutOptionsOutputReference.getListAttribute"></a>
+
+```java
+public java.util.List<java.lang.String> getListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaFanoutOptionsOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaFanoutOptionsOutputReference.getNumberAttribute"></a>
+
+```java
+public java.lang.Number getNumberAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaFanoutOptionsOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaFanoutOptionsOutputReference.getNumberListAttribute"></a>
+
+```java
+public java.util.List<java.lang.Number> getNumberListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaFanoutOptionsOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaFanoutOptionsOutputReference.getNumberMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Number> getNumberMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaFanoutOptionsOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaFanoutOptionsOutputReference.getStringAttribute"></a>
+
+```java
+public java.lang.String getStringAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaFanoutOptionsOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaFanoutOptionsOutputReference.getStringMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.String> getStringMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaFanoutOptionsOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaFanoutOptionsOutputReference.interpolationForAttribute"></a>
+
+```java
+public IResolvable interpolationForAttribute(java.lang.String property)
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaFanoutOptionsOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaFanoutOptionsOutputReference.resolve"></a>
+
+```java
+public java.lang.Object resolve(IResolveContext _context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaFanoutOptionsOutputReference.resolve.parameter._context"></a>
+
+- *Type:* io.cdktn.cdktn.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaFanoutOptionsOutputReference.toString"></a>
+
+```java
+public java.lang.String toString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `putTransforms` <a name="putTransforms" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaFanoutOptionsOutputReference.putTransforms"></a>
+
+```java
+public void putTransforms(IResolvable|java.util.List<PipelineIngestionDefinitionObjectsSchemaFanoutOptionsTransforms> value)
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaFanoutOptionsOutputReference.putTransforms.parameter.value"></a>
+
+- *Type:* io.cdktn.cdktn.IResolvable|java.util.List<<a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaFanoutOptionsTransforms">PipelineIngestionDefinitionObjectsSchemaFanoutOptionsTransforms</a>>
+
+---
+
+##### `resetFanoutBy` <a name="resetFanoutBy" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaFanoutOptionsOutputReference.resetFanoutBy"></a>
+
+```java
+public void resetFanoutBy()
+```
+
+##### `resetTransforms` <a name="resetTransforms" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaFanoutOptionsOutputReference.resetTransforms"></a>
+
+```java
+public void resetTransforms()
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaFanoutOptionsOutputReference.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaFanoutOptionsOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaFanoutOptionsOutputReference.property.transforms">transforms</a></code> | <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaFanoutOptionsTransformsList">PipelineIngestionDefinitionObjectsSchemaFanoutOptionsTransformsList</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaFanoutOptionsOutputReference.property.fanoutByInput">fanoutByInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaFanoutOptionsOutputReference.property.transformsInput">transformsInput</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaFanoutOptionsTransforms">PipelineIngestionDefinitionObjectsSchemaFanoutOptionsTransforms</a>></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaFanoutOptionsOutputReference.property.fanoutBy">fanoutBy</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaFanoutOptionsOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaFanoutOptions">PipelineIngestionDefinitionObjectsSchemaFanoutOptions</a></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaFanoutOptionsOutputReference.property.creationStack"></a>
+
+```java
+public java.util.List<java.lang.String> getCreationStack();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaFanoutOptionsOutputReference.property.fqn"></a>
+
+```java
+public java.lang.String getFqn();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `transforms`<sup>Required</sup> <a name="transforms" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaFanoutOptionsOutputReference.property.transforms"></a>
+
+```java
+public PipelineIngestionDefinitionObjectsSchemaFanoutOptionsTransformsList getTransforms();
+```
+
+- *Type:* <a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaFanoutOptionsTransformsList">PipelineIngestionDefinitionObjectsSchemaFanoutOptionsTransformsList</a>
+
+---
+
+##### `fanoutByInput`<sup>Optional</sup> <a name="fanoutByInput" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaFanoutOptionsOutputReference.property.fanoutByInput"></a>
+
+```java
+public java.lang.String getFanoutByInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `transformsInput`<sup>Optional</sup> <a name="transformsInput" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaFanoutOptionsOutputReference.property.transformsInput"></a>
+
+```java
+public IResolvable|java.util.List<PipelineIngestionDefinitionObjectsSchemaFanoutOptionsTransforms> getTransformsInput();
+```
+
+- *Type:* io.cdktn.cdktn.IResolvable|java.util.List<<a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaFanoutOptionsTransforms">PipelineIngestionDefinitionObjectsSchemaFanoutOptionsTransforms</a>>
+
+---
+
+##### `fanoutBy`<sup>Required</sup> <a name="fanoutBy" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaFanoutOptionsOutputReference.property.fanoutBy"></a>
+
+```java
+public java.lang.String getFanoutBy();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaFanoutOptionsOutputReference.property.internalValue"></a>
+
+```java
+public PipelineIngestionDefinitionObjectsSchemaFanoutOptions getInternalValue();
+```
+
+- *Type:* <a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaFanoutOptions">PipelineIngestionDefinitionObjectsSchemaFanoutOptions</a>
+
+---
+
+
+### PipelineIngestionDefinitionObjectsSchemaFanoutOptionsTransformsJsonOptionsOutputReference <a name="PipelineIngestionDefinitionObjectsSchemaFanoutOptionsTransformsJsonOptionsOutputReference" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaFanoutOptionsTransformsJsonOptionsOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaFanoutOptionsTransformsJsonOptionsOutputReference.Initializer"></a>
+
+```java
+import io.cdktn.providers.databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaFanoutOptionsTransformsJsonOptionsOutputReference;
+
+new PipelineIngestionDefinitionObjectsSchemaFanoutOptionsTransformsJsonOptionsOutputReference(IInterpolatingParent terraformResource, java.lang.String terraformAttribute);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaFanoutOptionsTransformsJsonOptionsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>io.cdktn.cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaFanoutOptionsTransformsJsonOptionsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>java.lang.String</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaFanoutOptionsTransformsJsonOptionsOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* io.cdktn.cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaFanoutOptionsTransformsJsonOptionsOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaFanoutOptionsTransformsJsonOptionsOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaFanoutOptionsTransformsJsonOptionsOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaFanoutOptionsTransformsJsonOptionsOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaFanoutOptionsTransformsJsonOptionsOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaFanoutOptionsTransformsJsonOptionsOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaFanoutOptionsTransformsJsonOptionsOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaFanoutOptionsTransformsJsonOptionsOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaFanoutOptionsTransformsJsonOptionsOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaFanoutOptionsTransformsJsonOptionsOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaFanoutOptionsTransformsJsonOptionsOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaFanoutOptionsTransformsJsonOptionsOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaFanoutOptionsTransformsJsonOptionsOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaFanoutOptionsTransformsJsonOptionsOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaFanoutOptionsTransformsJsonOptionsOutputReference.resetAsVariant">resetAsVariant</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaFanoutOptionsTransformsJsonOptionsOutputReference.resetSchema">resetSchema</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaFanoutOptionsTransformsJsonOptionsOutputReference.resetSchemaEvolutionMode">resetSchemaEvolutionMode</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaFanoutOptionsTransformsJsonOptionsOutputReference.resetSchemaFilePath">resetSchemaFilePath</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaFanoutOptionsTransformsJsonOptionsOutputReference.resetSchemaHints">resetSchemaHints</a></code> | *No description.* |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaFanoutOptionsTransformsJsonOptionsOutputReference.computeFqn"></a>
+
+```java
+public java.lang.String computeFqn()
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaFanoutOptionsTransformsJsonOptionsOutputReference.getAnyMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Object> getAnyMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaFanoutOptionsTransformsJsonOptionsOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaFanoutOptionsTransformsJsonOptionsOutputReference.getBooleanAttribute"></a>
+
+```java
+public IResolvable getBooleanAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaFanoutOptionsTransformsJsonOptionsOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaFanoutOptionsTransformsJsonOptionsOutputReference.getBooleanMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Boolean> getBooleanMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaFanoutOptionsTransformsJsonOptionsOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaFanoutOptionsTransformsJsonOptionsOutputReference.getListAttribute"></a>
+
+```java
+public java.util.List<java.lang.String> getListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaFanoutOptionsTransformsJsonOptionsOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaFanoutOptionsTransformsJsonOptionsOutputReference.getNumberAttribute"></a>
+
+```java
+public java.lang.Number getNumberAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaFanoutOptionsTransformsJsonOptionsOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaFanoutOptionsTransformsJsonOptionsOutputReference.getNumberListAttribute"></a>
+
+```java
+public java.util.List<java.lang.Number> getNumberListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaFanoutOptionsTransformsJsonOptionsOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaFanoutOptionsTransformsJsonOptionsOutputReference.getNumberMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Number> getNumberMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaFanoutOptionsTransformsJsonOptionsOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaFanoutOptionsTransformsJsonOptionsOutputReference.getStringAttribute"></a>
+
+```java
+public java.lang.String getStringAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaFanoutOptionsTransformsJsonOptionsOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaFanoutOptionsTransformsJsonOptionsOutputReference.getStringMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.String> getStringMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaFanoutOptionsTransformsJsonOptionsOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaFanoutOptionsTransformsJsonOptionsOutputReference.interpolationForAttribute"></a>
+
+```java
+public IResolvable interpolationForAttribute(java.lang.String property)
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaFanoutOptionsTransformsJsonOptionsOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaFanoutOptionsTransformsJsonOptionsOutputReference.resolve"></a>
+
+```java
+public java.lang.Object resolve(IResolveContext _context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaFanoutOptionsTransformsJsonOptionsOutputReference.resolve.parameter._context"></a>
+
+- *Type:* io.cdktn.cdktn.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaFanoutOptionsTransformsJsonOptionsOutputReference.toString"></a>
+
+```java
+public java.lang.String toString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `resetAsVariant` <a name="resetAsVariant" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaFanoutOptionsTransformsJsonOptionsOutputReference.resetAsVariant"></a>
+
+```java
+public void resetAsVariant()
+```
+
+##### `resetSchema` <a name="resetSchema" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaFanoutOptionsTransformsJsonOptionsOutputReference.resetSchema"></a>
+
+```java
+public void resetSchema()
+```
+
+##### `resetSchemaEvolutionMode` <a name="resetSchemaEvolutionMode" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaFanoutOptionsTransformsJsonOptionsOutputReference.resetSchemaEvolutionMode"></a>
+
+```java
+public void resetSchemaEvolutionMode()
+```
+
+##### `resetSchemaFilePath` <a name="resetSchemaFilePath" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaFanoutOptionsTransformsJsonOptionsOutputReference.resetSchemaFilePath"></a>
+
+```java
+public void resetSchemaFilePath()
+```
+
+##### `resetSchemaHints` <a name="resetSchemaHints" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaFanoutOptionsTransformsJsonOptionsOutputReference.resetSchemaHints"></a>
+
+```java
+public void resetSchemaHints()
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaFanoutOptionsTransformsJsonOptionsOutputReference.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaFanoutOptionsTransformsJsonOptionsOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaFanoutOptionsTransformsJsonOptionsOutputReference.property.asVariantInput">asVariantInput</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaFanoutOptionsTransformsJsonOptionsOutputReference.property.schemaEvolutionModeInput">schemaEvolutionModeInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaFanoutOptionsTransformsJsonOptionsOutputReference.property.schemaFilePathInput">schemaFilePathInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaFanoutOptionsTransformsJsonOptionsOutputReference.property.schemaHintsInput">schemaHintsInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaFanoutOptionsTransformsJsonOptionsOutputReference.property.schemaInput">schemaInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaFanoutOptionsTransformsJsonOptionsOutputReference.property.asVariant">asVariant</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaFanoutOptionsTransformsJsonOptionsOutputReference.property.schema">schema</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaFanoutOptionsTransformsJsonOptionsOutputReference.property.schemaEvolutionMode">schemaEvolutionMode</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaFanoutOptionsTransformsJsonOptionsOutputReference.property.schemaFilePath">schemaFilePath</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaFanoutOptionsTransformsJsonOptionsOutputReference.property.schemaHints">schemaHints</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaFanoutOptionsTransformsJsonOptionsOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaFanoutOptionsTransformsJsonOptions">PipelineIngestionDefinitionObjectsSchemaFanoutOptionsTransformsJsonOptions</a></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaFanoutOptionsTransformsJsonOptionsOutputReference.property.creationStack"></a>
+
+```java
+public java.util.List<java.lang.String> getCreationStack();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaFanoutOptionsTransformsJsonOptionsOutputReference.property.fqn"></a>
+
+```java
+public java.lang.String getFqn();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `asVariantInput`<sup>Optional</sup> <a name="asVariantInput" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaFanoutOptionsTransformsJsonOptionsOutputReference.property.asVariantInput"></a>
+
+```java
+public java.lang.Boolean|IResolvable getAsVariantInput();
+```
+
+- *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
+
+---
+
+##### `schemaEvolutionModeInput`<sup>Optional</sup> <a name="schemaEvolutionModeInput" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaFanoutOptionsTransformsJsonOptionsOutputReference.property.schemaEvolutionModeInput"></a>
+
+```java
+public java.lang.String getSchemaEvolutionModeInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `schemaFilePathInput`<sup>Optional</sup> <a name="schemaFilePathInput" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaFanoutOptionsTransformsJsonOptionsOutputReference.property.schemaFilePathInput"></a>
+
+```java
+public java.lang.String getSchemaFilePathInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `schemaHintsInput`<sup>Optional</sup> <a name="schemaHintsInput" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaFanoutOptionsTransformsJsonOptionsOutputReference.property.schemaHintsInput"></a>
+
+```java
+public java.lang.String getSchemaHintsInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `schemaInput`<sup>Optional</sup> <a name="schemaInput" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaFanoutOptionsTransformsJsonOptionsOutputReference.property.schemaInput"></a>
+
+```java
+public java.lang.String getSchemaInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `asVariant`<sup>Required</sup> <a name="asVariant" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaFanoutOptionsTransformsJsonOptionsOutputReference.property.asVariant"></a>
+
+```java
+public java.lang.Boolean|IResolvable getAsVariant();
+```
+
+- *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
+
+---
+
+##### `schema`<sup>Required</sup> <a name="schema" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaFanoutOptionsTransformsJsonOptionsOutputReference.property.schema"></a>
+
+```java
+public java.lang.String getSchema();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `schemaEvolutionMode`<sup>Required</sup> <a name="schemaEvolutionMode" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaFanoutOptionsTransformsJsonOptionsOutputReference.property.schemaEvolutionMode"></a>
+
+```java
+public java.lang.String getSchemaEvolutionMode();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `schemaFilePath`<sup>Required</sup> <a name="schemaFilePath" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaFanoutOptionsTransformsJsonOptionsOutputReference.property.schemaFilePath"></a>
+
+```java
+public java.lang.String getSchemaFilePath();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `schemaHints`<sup>Required</sup> <a name="schemaHints" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaFanoutOptionsTransformsJsonOptionsOutputReference.property.schemaHints"></a>
+
+```java
+public java.lang.String getSchemaHints();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaFanoutOptionsTransformsJsonOptionsOutputReference.property.internalValue"></a>
+
+```java
+public PipelineIngestionDefinitionObjectsSchemaFanoutOptionsTransformsJsonOptions getInternalValue();
+```
+
+- *Type:* <a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaFanoutOptionsTransformsJsonOptions">PipelineIngestionDefinitionObjectsSchemaFanoutOptionsTransformsJsonOptions</a>
+
+---
+
+
+### PipelineIngestionDefinitionObjectsSchemaFanoutOptionsTransformsList <a name="PipelineIngestionDefinitionObjectsSchemaFanoutOptionsTransformsList" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaFanoutOptionsTransformsList"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaFanoutOptionsTransformsList.Initializer"></a>
+
+```java
+import io.cdktn.providers.databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaFanoutOptionsTransformsList;
+
+new PipelineIngestionDefinitionObjectsSchemaFanoutOptionsTransformsList(IInterpolatingParent terraformResource, java.lang.String terraformAttribute, java.lang.Boolean wrapsSet);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaFanoutOptionsTransformsList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>io.cdktn.cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaFanoutOptionsTransformsList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>java.lang.String</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaFanoutOptionsTransformsList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>java.lang.Boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaFanoutOptionsTransformsList.Initializer.parameter.terraformResource"></a>
+
+- *Type:* io.cdktn.cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaFanoutOptionsTransformsList.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `wrapsSet`<sup>Required</sup> <a name="wrapsSet" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaFanoutOptionsTransformsList.Initializer.parameter.wrapsSet"></a>
+
+- *Type:* java.lang.Boolean
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaFanoutOptionsTransformsList.allWithMapKey">allWithMapKey</a></code> | Creating an iterator for this complex list. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaFanoutOptionsTransformsList.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaFanoutOptionsTransformsList.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaFanoutOptionsTransformsList.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaFanoutOptionsTransformsList.get">get</a></code> | *No description.* |
+
+---
+
+##### `allWithMapKey` <a name="allWithMapKey" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaFanoutOptionsTransformsList.allWithMapKey"></a>
+
+```java
+public DynamicListTerraformIterator allWithMapKey(java.lang.String mapKeyAttributeName)
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaFanoutOptionsTransformsList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaFanoutOptionsTransformsList.computeFqn"></a>
+
+```java
+public java.lang.String computeFqn()
+```
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaFanoutOptionsTransformsList.resolve"></a>
+
+```java
+public java.lang.Object resolve(IResolveContext _context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaFanoutOptionsTransformsList.resolve.parameter._context"></a>
+
+- *Type:* io.cdktn.cdktn.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaFanoutOptionsTransformsList.toString"></a>
+
+```java
+public java.lang.String toString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `get` <a name="get" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaFanoutOptionsTransformsList.get"></a>
+
+```java
+public PipelineIngestionDefinitionObjectsSchemaFanoutOptionsTransformsOutputReference get(java.lang.Number index)
+```
+
+###### `index`<sup>Required</sup> <a name="index" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaFanoutOptionsTransformsList.get.parameter.index"></a>
+
+- *Type:* java.lang.Number
+
+the index of the item to return.
+
+---
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaFanoutOptionsTransformsList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaFanoutOptionsTransformsList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaFanoutOptionsTransformsList.property.internalValue">internalValue</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaFanoutOptionsTransforms">PipelineIngestionDefinitionObjectsSchemaFanoutOptionsTransforms</a>></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaFanoutOptionsTransformsList.property.creationStack"></a>
+
+```java
+public java.util.List<java.lang.String> getCreationStack();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaFanoutOptionsTransformsList.property.fqn"></a>
+
+```java
+public java.lang.String getFqn();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaFanoutOptionsTransformsList.property.internalValue"></a>
+
+```java
+public IResolvable|java.util.List<PipelineIngestionDefinitionObjectsSchemaFanoutOptionsTransforms> getInternalValue();
+```
+
+- *Type:* io.cdktn.cdktn.IResolvable|java.util.List<<a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaFanoutOptionsTransforms">PipelineIngestionDefinitionObjectsSchemaFanoutOptionsTransforms</a>>
+
+---
+
+
+### PipelineIngestionDefinitionObjectsSchemaFanoutOptionsTransformsOutputReference <a name="PipelineIngestionDefinitionObjectsSchemaFanoutOptionsTransformsOutputReference" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaFanoutOptionsTransformsOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaFanoutOptionsTransformsOutputReference.Initializer"></a>
+
+```java
+import io.cdktn.providers.databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaFanoutOptionsTransformsOutputReference;
+
+new PipelineIngestionDefinitionObjectsSchemaFanoutOptionsTransformsOutputReference(IInterpolatingParent terraformResource, java.lang.String terraformAttribute, java.lang.Number complexObjectIndex, java.lang.Boolean complexObjectIsFromSet);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaFanoutOptionsTransformsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>io.cdktn.cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaFanoutOptionsTransformsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>java.lang.String</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaFanoutOptionsTransformsOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>java.lang.Number</code> | the index of this item in the list. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaFanoutOptionsTransformsOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>java.lang.Boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaFanoutOptionsTransformsOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* io.cdktn.cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaFanoutOptionsTransformsOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complexObjectIndex`<sup>Required</sup> <a name="complexObjectIndex" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaFanoutOptionsTransformsOutputReference.Initializer.parameter.complexObjectIndex"></a>
+
+- *Type:* java.lang.Number
+
+the index of this item in the list.
+
+---
+
+##### `complexObjectIsFromSet`<sup>Required</sup> <a name="complexObjectIsFromSet" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaFanoutOptionsTransformsOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* java.lang.Boolean
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaFanoutOptionsTransformsOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaFanoutOptionsTransformsOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaFanoutOptionsTransformsOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaFanoutOptionsTransformsOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaFanoutOptionsTransformsOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaFanoutOptionsTransformsOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaFanoutOptionsTransformsOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaFanoutOptionsTransformsOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaFanoutOptionsTransformsOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaFanoutOptionsTransformsOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaFanoutOptionsTransformsOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaFanoutOptionsTransformsOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaFanoutOptionsTransformsOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaFanoutOptionsTransformsOutputReference.putJsonOptions">putJsonOptions</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaFanoutOptionsTransformsOutputReference.resetFormat">resetFormat</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaFanoutOptionsTransformsOutputReference.resetJsonOptions">resetJsonOptions</a></code> | *No description.* |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaFanoutOptionsTransformsOutputReference.computeFqn"></a>
+
+```java
+public java.lang.String computeFqn()
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaFanoutOptionsTransformsOutputReference.getAnyMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Object> getAnyMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaFanoutOptionsTransformsOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaFanoutOptionsTransformsOutputReference.getBooleanAttribute"></a>
+
+```java
+public IResolvable getBooleanAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaFanoutOptionsTransformsOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaFanoutOptionsTransformsOutputReference.getBooleanMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Boolean> getBooleanMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaFanoutOptionsTransformsOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaFanoutOptionsTransformsOutputReference.getListAttribute"></a>
+
+```java
+public java.util.List<java.lang.String> getListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaFanoutOptionsTransformsOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaFanoutOptionsTransformsOutputReference.getNumberAttribute"></a>
+
+```java
+public java.lang.Number getNumberAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaFanoutOptionsTransformsOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaFanoutOptionsTransformsOutputReference.getNumberListAttribute"></a>
+
+```java
+public java.util.List<java.lang.Number> getNumberListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaFanoutOptionsTransformsOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaFanoutOptionsTransformsOutputReference.getNumberMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Number> getNumberMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaFanoutOptionsTransformsOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaFanoutOptionsTransformsOutputReference.getStringAttribute"></a>
+
+```java
+public java.lang.String getStringAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaFanoutOptionsTransformsOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaFanoutOptionsTransformsOutputReference.getStringMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.String> getStringMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaFanoutOptionsTransformsOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaFanoutOptionsTransformsOutputReference.interpolationForAttribute"></a>
+
+```java
+public IResolvable interpolationForAttribute(java.lang.String property)
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaFanoutOptionsTransformsOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaFanoutOptionsTransformsOutputReference.resolve"></a>
+
+```java
+public java.lang.Object resolve(IResolveContext _context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaFanoutOptionsTransformsOutputReference.resolve.parameter._context"></a>
+
+- *Type:* io.cdktn.cdktn.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaFanoutOptionsTransformsOutputReference.toString"></a>
+
+```java
+public java.lang.String toString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `putJsonOptions` <a name="putJsonOptions" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaFanoutOptionsTransformsOutputReference.putJsonOptions"></a>
+
+```java
+public void putJsonOptions(PipelineIngestionDefinitionObjectsSchemaFanoutOptionsTransformsJsonOptions value)
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaFanoutOptionsTransformsOutputReference.putJsonOptions.parameter.value"></a>
+
+- *Type:* <a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaFanoutOptionsTransformsJsonOptions">PipelineIngestionDefinitionObjectsSchemaFanoutOptionsTransformsJsonOptions</a>
+
+---
+
+##### `resetFormat` <a name="resetFormat" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaFanoutOptionsTransformsOutputReference.resetFormat"></a>
+
+```java
+public void resetFormat()
+```
+
+##### `resetJsonOptions` <a name="resetJsonOptions" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaFanoutOptionsTransformsOutputReference.resetJsonOptions"></a>
+
+```java
+public void resetJsonOptions()
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaFanoutOptionsTransformsOutputReference.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaFanoutOptionsTransformsOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaFanoutOptionsTransformsOutputReference.property.jsonOptions">jsonOptions</a></code> | <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaFanoutOptionsTransformsJsonOptionsOutputReference">PipelineIngestionDefinitionObjectsSchemaFanoutOptionsTransformsJsonOptionsOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaFanoutOptionsTransformsOutputReference.property.formatInput">formatInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaFanoutOptionsTransformsOutputReference.property.jsonOptionsInput">jsonOptionsInput</a></code> | <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaFanoutOptionsTransformsJsonOptions">PipelineIngestionDefinitionObjectsSchemaFanoutOptionsTransformsJsonOptions</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaFanoutOptionsTransformsOutputReference.property.format">format</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaFanoutOptionsTransformsOutputReference.property.internalValue">internalValue</a></code> | <code>io.cdktn.cdktn.IResolvable\|<a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaFanoutOptionsTransforms">PipelineIngestionDefinitionObjectsSchemaFanoutOptionsTransforms</a></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaFanoutOptionsTransformsOutputReference.property.creationStack"></a>
+
+```java
+public java.util.List<java.lang.String> getCreationStack();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaFanoutOptionsTransformsOutputReference.property.fqn"></a>
+
+```java
+public java.lang.String getFqn();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `jsonOptions`<sup>Required</sup> <a name="jsonOptions" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaFanoutOptionsTransformsOutputReference.property.jsonOptions"></a>
+
+```java
+public PipelineIngestionDefinitionObjectsSchemaFanoutOptionsTransformsJsonOptionsOutputReference getJsonOptions();
+```
+
+- *Type:* <a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaFanoutOptionsTransformsJsonOptionsOutputReference">PipelineIngestionDefinitionObjectsSchemaFanoutOptionsTransformsJsonOptionsOutputReference</a>
+
+---
+
+##### `formatInput`<sup>Optional</sup> <a name="formatInput" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaFanoutOptionsTransformsOutputReference.property.formatInput"></a>
+
+```java
+public java.lang.String getFormatInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `jsonOptionsInput`<sup>Optional</sup> <a name="jsonOptionsInput" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaFanoutOptionsTransformsOutputReference.property.jsonOptionsInput"></a>
+
+```java
+public PipelineIngestionDefinitionObjectsSchemaFanoutOptionsTransformsJsonOptions getJsonOptionsInput();
+```
+
+- *Type:* <a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaFanoutOptionsTransformsJsonOptions">PipelineIngestionDefinitionObjectsSchemaFanoutOptionsTransformsJsonOptions</a>
+
+---
+
+##### `format`<sup>Required</sup> <a name="format" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaFanoutOptionsTransformsOutputReference.property.format"></a>
+
+```java
+public java.lang.String getFormat();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaFanoutOptionsTransformsOutputReference.property.internalValue"></a>
+
+```java
+public IResolvable|PipelineIngestionDefinitionObjectsSchemaFanoutOptionsTransforms getInternalValue();
+```
+
+- *Type:* io.cdktn.cdktn.IResolvable|<a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaFanoutOptionsTransforms">PipelineIngestionDefinitionObjectsSchemaFanoutOptionsTransforms</a>
+
+---
+
+
 ### PipelineIngestionDefinitionObjectsSchemaOutputReference <a name="PipelineIngestionDefinitionObjectsSchemaOutputReference" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaOutputReference"></a>
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaOutputReference.Initializer"></a>
@@ -35362,8 +37720,10 @@ The attribute on the parent resource this class is referencing.
 | <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaOutputReference.putConnectorOptions">putConnectorOptions</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaOutputReference.putFanoutOptions">putFanoutOptions</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaOutputReference.putTableConfiguration">putTableConfiguration</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaOutputReference.resetConnectorOptions">resetConnectorOptions</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaOutputReference.resetFanoutOptions">resetFanoutOptions</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaOutputReference.resetSourceCatalog">resetSourceCatalog</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaOutputReference.resetTableConfiguration">resetTableConfiguration</a></code> | *No description.* |
 
@@ -35531,6 +37891,18 @@ public void putConnectorOptions(PipelineIngestionDefinitionObjectsSchemaConnecto
 
 ---
 
+##### `putFanoutOptions` <a name="putFanoutOptions" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaOutputReference.putFanoutOptions"></a>
+
+```java
+public void putFanoutOptions(PipelineIngestionDefinitionObjectsSchemaFanoutOptions value)
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaOutputReference.putFanoutOptions.parameter.value"></a>
+
+- *Type:* <a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaFanoutOptions">PipelineIngestionDefinitionObjectsSchemaFanoutOptions</a>
+
+---
+
 ##### `putTableConfiguration` <a name="putTableConfiguration" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaOutputReference.putTableConfiguration"></a>
 
 ```java
@@ -35547,6 +37919,12 @@ public void putTableConfiguration(PipelineIngestionDefinitionObjectsSchemaTableC
 
 ```java
 public void resetConnectorOptions()
+```
+
+##### `resetFanoutOptions` <a name="resetFanoutOptions" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaOutputReference.resetFanoutOptions"></a>
+
+```java
+public void resetFanoutOptions()
 ```
 
 ##### `resetSourceCatalog` <a name="resetSourceCatalog" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaOutputReference.resetSourceCatalog"></a>
@@ -35569,10 +37947,12 @@ public void resetTableConfiguration()
 | <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaOutputReference.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaOutputReference.property.connectorOptions">connectorOptions</a></code> | <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsOutputReference">PipelineIngestionDefinitionObjectsSchemaConnectorOptionsOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaOutputReference.property.fanoutOptions">fanoutOptions</a></code> | <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaFanoutOptionsOutputReference">PipelineIngestionDefinitionObjectsSchemaFanoutOptionsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaOutputReference.property.tableConfiguration">tableConfiguration</a></code> | <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationOutputReference">PipelineIngestionDefinitionObjectsSchemaTableConfigurationOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaOutputReference.property.connectorOptionsInput">connectorOptionsInput</a></code> | <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptions">PipelineIngestionDefinitionObjectsSchemaConnectorOptions</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaOutputReference.property.destinationCatalogInput">destinationCatalogInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaOutputReference.property.destinationSchemaInput">destinationSchemaInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaOutputReference.property.fanoutOptionsInput">fanoutOptionsInput</a></code> | <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaFanoutOptions">PipelineIngestionDefinitionObjectsSchemaFanoutOptions</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaOutputReference.property.sourceCatalogInput">sourceCatalogInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaOutputReference.property.sourceSchemaInput">sourceSchemaInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaOutputReference.property.tableConfigurationInput">tableConfigurationInput</a></code> | <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfiguration">PipelineIngestionDefinitionObjectsSchemaTableConfiguration</a></code> | *No description.* |
@@ -35618,6 +37998,16 @@ public PipelineIngestionDefinitionObjectsSchemaConnectorOptionsOutputReference g
 
 ---
 
+##### `fanoutOptions`<sup>Required</sup> <a name="fanoutOptions" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaOutputReference.property.fanoutOptions"></a>
+
+```java
+public PipelineIngestionDefinitionObjectsSchemaFanoutOptionsOutputReference getFanoutOptions();
+```
+
+- *Type:* <a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaFanoutOptionsOutputReference">PipelineIngestionDefinitionObjectsSchemaFanoutOptionsOutputReference</a>
+
+---
+
 ##### `tableConfiguration`<sup>Required</sup> <a name="tableConfiguration" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaOutputReference.property.tableConfiguration"></a>
 
 ```java
@@ -35655,6 +38045,16 @@ public java.lang.String getDestinationSchemaInput();
 ```
 
 - *Type:* java.lang.String
+
+---
+
+##### `fanoutOptionsInput`<sup>Optional</sup> <a name="fanoutOptionsInput" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaOutputReference.property.fanoutOptionsInput"></a>
+
+```java
+public PipelineIngestionDefinitionObjectsSchemaFanoutOptions getFanoutOptionsInput();
+```
+
+- *Type:* <a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaFanoutOptions">PipelineIngestionDefinitionObjectsSchemaFanoutOptions</a>
 
 ---
 
@@ -44080,6 +46480,7 @@ The attribute on the parent resource this class is referencing.
 | <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsOutputReference.putKafkaOptions">putKafkaOptions</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsOutputReference.putMetaAdsOptions">putMetaAdsOptions</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsOutputReference.putOutlookOptions">putOutlookOptions</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsOutputReference.putRedditAdsOptions">putRedditAdsOptions</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsOutputReference.putSharepointOptions">putSharepointOptions</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsOutputReference.putSmartsheetOptions">putSmartsheetOptions</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsOutputReference.putTiktokAdsOptions">putTiktokAdsOptions</a></code> | *No description.* |
@@ -44091,6 +46492,7 @@ The attribute on the parent resource this class is referencing.
 | <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsOutputReference.resetKafkaOptions">resetKafkaOptions</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsOutputReference.resetMetaAdsOptions">resetMetaAdsOptions</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsOutputReference.resetOutlookOptions">resetOutlookOptions</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsOutputReference.resetRedditAdsOptions">resetRedditAdsOptions</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsOutputReference.resetSharepointOptions">resetSharepointOptions</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsOutputReference.resetSmartsheetOptions">resetSmartsheetOptions</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsOutputReference.resetTiktokAdsOptions">resetTiktokAdsOptions</a></code> | *No description.* |
@@ -44332,6 +46734,18 @@ public void putOutlookOptions(PipelineIngestionDefinitionObjectsTableConnectorOp
 
 ---
 
+##### `putRedditAdsOptions` <a name="putRedditAdsOptions" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsOutputReference.putRedditAdsOptions"></a>
+
+```java
+public void putRedditAdsOptions(PipelineIngestionDefinitionObjectsTableConnectorOptionsRedditAdsOptions value)
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsOutputReference.putRedditAdsOptions.parameter.value"></a>
+
+- *Type:* <a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsRedditAdsOptions">PipelineIngestionDefinitionObjectsTableConnectorOptionsRedditAdsOptions</a>
+
+---
+
 ##### `putSharepointOptions` <a name="putSharepointOptions" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsOutputReference.putSharepointOptions"></a>
 
 ```java
@@ -44422,6 +46836,12 @@ public void resetMetaAdsOptions()
 public void resetOutlookOptions()
 ```
 
+##### `resetRedditAdsOptions` <a name="resetRedditAdsOptions" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsOutputReference.resetRedditAdsOptions"></a>
+
+```java
+public void resetRedditAdsOptions()
+```
+
 ##### `resetSharepointOptions` <a name="resetSharepointOptions" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsOutputReference.resetSharepointOptions"></a>
 
 ```java
@@ -44460,6 +46880,7 @@ public void resetZendeskSupportOptions()
 | <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsOutputReference.property.kafkaOptions">kafkaOptions</a></code> | <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsKafkaOptionsOutputReference">PipelineIngestionDefinitionObjectsTableConnectorOptionsKafkaOptionsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsOutputReference.property.metaAdsOptions">metaAdsOptions</a></code> | <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsMetaAdsOptionsOutputReference">PipelineIngestionDefinitionObjectsTableConnectorOptionsMetaAdsOptionsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsOutputReference.property.outlookOptions">outlookOptions</a></code> | <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsOutlookOptionsOutputReference">PipelineIngestionDefinitionObjectsTableConnectorOptionsOutlookOptionsOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsOutputReference.property.redditAdsOptions">redditAdsOptions</a></code> | <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsRedditAdsOptionsOutputReference">PipelineIngestionDefinitionObjectsTableConnectorOptionsRedditAdsOptionsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsOutputReference.property.sharepointOptions">sharepointOptions</a></code> | <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsSharepointOptionsOutputReference">PipelineIngestionDefinitionObjectsTableConnectorOptionsSharepointOptionsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsOutputReference.property.smartsheetOptions">smartsheetOptions</a></code> | <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsSmartsheetOptionsOutputReference">PipelineIngestionDefinitionObjectsTableConnectorOptionsSmartsheetOptionsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsOutputReference.property.tiktokAdsOptions">tiktokAdsOptions</a></code> | <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsTiktokAdsOptionsOutputReference">PipelineIngestionDefinitionObjectsTableConnectorOptionsTiktokAdsOptionsOutputReference</a></code> | *No description.* |
@@ -44471,6 +46892,7 @@ public void resetZendeskSupportOptions()
 | <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsOutputReference.property.kafkaOptionsInput">kafkaOptionsInput</a></code> | <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsKafkaOptions">PipelineIngestionDefinitionObjectsTableConnectorOptionsKafkaOptions</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsOutputReference.property.metaAdsOptionsInput">metaAdsOptionsInput</a></code> | <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsMetaAdsOptions">PipelineIngestionDefinitionObjectsTableConnectorOptionsMetaAdsOptions</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsOutputReference.property.outlookOptionsInput">outlookOptionsInput</a></code> | <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsOutlookOptions">PipelineIngestionDefinitionObjectsTableConnectorOptionsOutlookOptions</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsOutputReference.property.redditAdsOptionsInput">redditAdsOptionsInput</a></code> | <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsRedditAdsOptions">PipelineIngestionDefinitionObjectsTableConnectorOptionsRedditAdsOptions</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsOutputReference.property.sharepointOptionsInput">sharepointOptionsInput</a></code> | <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsSharepointOptions">PipelineIngestionDefinitionObjectsTableConnectorOptionsSharepointOptions</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsOutputReference.property.smartsheetOptionsInput">smartsheetOptionsInput</a></code> | <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsSmartsheetOptions">PipelineIngestionDefinitionObjectsTableConnectorOptionsSmartsheetOptions</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsOutputReference.property.tiktokAdsOptionsInput">tiktokAdsOptionsInput</a></code> | <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsTiktokAdsOptions">PipelineIngestionDefinitionObjectsTableConnectorOptionsTiktokAdsOptions</a></code> | *No description.* |
@@ -44570,6 +46992,16 @@ public PipelineIngestionDefinitionObjectsTableConnectorOptionsOutlookOptionsOutp
 ```
 
 - *Type:* <a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsOutlookOptionsOutputReference">PipelineIngestionDefinitionObjectsTableConnectorOptionsOutlookOptionsOutputReference</a>
+
+---
+
+##### `redditAdsOptions`<sup>Required</sup> <a name="redditAdsOptions" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsOutputReference.property.redditAdsOptions"></a>
+
+```java
+public PipelineIngestionDefinitionObjectsTableConnectorOptionsRedditAdsOptionsOutputReference getRedditAdsOptions();
+```
+
+- *Type:* <a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsRedditAdsOptionsOutputReference">PipelineIngestionDefinitionObjectsTableConnectorOptionsRedditAdsOptionsOutputReference</a>
 
 ---
 
@@ -44683,6 +47115,16 @@ public PipelineIngestionDefinitionObjectsTableConnectorOptionsOutlookOptions get
 
 ---
 
+##### `redditAdsOptionsInput`<sup>Optional</sup> <a name="redditAdsOptionsInput" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsOutputReference.property.redditAdsOptionsInput"></a>
+
+```java
+public PipelineIngestionDefinitionObjectsTableConnectorOptionsRedditAdsOptions getRedditAdsOptionsInput();
+```
+
+- *Type:* <a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsRedditAdsOptions">PipelineIngestionDefinitionObjectsTableConnectorOptionsRedditAdsOptions</a>
+
+---
+
 ##### `sharepointOptionsInput`<sup>Optional</sup> <a name="sharepointOptionsInput" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsOutputReference.property.sharepointOptionsInput"></a>
 
 ```java
@@ -44730,6 +47172,662 @@ public PipelineIngestionDefinitionObjectsTableConnectorOptions getInternalValue(
 ```
 
 - *Type:* <a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptions">PipelineIngestionDefinitionObjectsTableConnectorOptions</a>
+
+---
+
+
+### PipelineIngestionDefinitionObjectsTableConnectorOptionsRedditAdsOptionsCustomReportOptionsOutputReference <a name="PipelineIngestionDefinitionObjectsTableConnectorOptionsRedditAdsOptionsCustomReportOptionsOutputReference" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsRedditAdsOptionsCustomReportOptionsOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsRedditAdsOptionsCustomReportOptionsOutputReference.Initializer"></a>
+
+```java
+import io.cdktn.providers.databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsRedditAdsOptionsCustomReportOptionsOutputReference;
+
+new PipelineIngestionDefinitionObjectsTableConnectorOptionsRedditAdsOptionsCustomReportOptionsOutputReference(IInterpolatingParent terraformResource, java.lang.String terraformAttribute);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsRedditAdsOptionsCustomReportOptionsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>io.cdktn.cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsRedditAdsOptionsCustomReportOptionsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>java.lang.String</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsRedditAdsOptionsCustomReportOptionsOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* io.cdktn.cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsRedditAdsOptionsCustomReportOptionsOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsRedditAdsOptionsCustomReportOptionsOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsRedditAdsOptionsCustomReportOptionsOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsRedditAdsOptionsCustomReportOptionsOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsRedditAdsOptionsCustomReportOptionsOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsRedditAdsOptionsCustomReportOptionsOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsRedditAdsOptionsCustomReportOptionsOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsRedditAdsOptionsCustomReportOptionsOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsRedditAdsOptionsCustomReportOptionsOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsRedditAdsOptionsCustomReportOptionsOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsRedditAdsOptionsCustomReportOptionsOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsRedditAdsOptionsCustomReportOptionsOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsRedditAdsOptionsCustomReportOptionsOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsRedditAdsOptionsCustomReportOptionsOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsRedditAdsOptionsCustomReportOptionsOutputReference.resetBreakdowns">resetBreakdowns</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsRedditAdsOptionsCustomReportOptionsOutputReference.resetFields">resetFields</a></code> | *No description.* |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsRedditAdsOptionsCustomReportOptionsOutputReference.computeFqn"></a>
+
+```java
+public java.lang.String computeFqn()
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsRedditAdsOptionsCustomReportOptionsOutputReference.getAnyMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Object> getAnyMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsRedditAdsOptionsCustomReportOptionsOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsRedditAdsOptionsCustomReportOptionsOutputReference.getBooleanAttribute"></a>
+
+```java
+public IResolvable getBooleanAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsRedditAdsOptionsCustomReportOptionsOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsRedditAdsOptionsCustomReportOptionsOutputReference.getBooleanMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Boolean> getBooleanMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsRedditAdsOptionsCustomReportOptionsOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsRedditAdsOptionsCustomReportOptionsOutputReference.getListAttribute"></a>
+
+```java
+public java.util.List<java.lang.String> getListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsRedditAdsOptionsCustomReportOptionsOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsRedditAdsOptionsCustomReportOptionsOutputReference.getNumberAttribute"></a>
+
+```java
+public java.lang.Number getNumberAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsRedditAdsOptionsCustomReportOptionsOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsRedditAdsOptionsCustomReportOptionsOutputReference.getNumberListAttribute"></a>
+
+```java
+public java.util.List<java.lang.Number> getNumberListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsRedditAdsOptionsCustomReportOptionsOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsRedditAdsOptionsCustomReportOptionsOutputReference.getNumberMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Number> getNumberMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsRedditAdsOptionsCustomReportOptionsOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsRedditAdsOptionsCustomReportOptionsOutputReference.getStringAttribute"></a>
+
+```java
+public java.lang.String getStringAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsRedditAdsOptionsCustomReportOptionsOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsRedditAdsOptionsCustomReportOptionsOutputReference.getStringMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.String> getStringMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsRedditAdsOptionsCustomReportOptionsOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsRedditAdsOptionsCustomReportOptionsOutputReference.interpolationForAttribute"></a>
+
+```java
+public IResolvable interpolationForAttribute(java.lang.String property)
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsRedditAdsOptionsCustomReportOptionsOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsRedditAdsOptionsCustomReportOptionsOutputReference.resolve"></a>
+
+```java
+public java.lang.Object resolve(IResolveContext _context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsRedditAdsOptionsCustomReportOptionsOutputReference.resolve.parameter._context"></a>
+
+- *Type:* io.cdktn.cdktn.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsRedditAdsOptionsCustomReportOptionsOutputReference.toString"></a>
+
+```java
+public java.lang.String toString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `resetBreakdowns` <a name="resetBreakdowns" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsRedditAdsOptionsCustomReportOptionsOutputReference.resetBreakdowns"></a>
+
+```java
+public void resetBreakdowns()
+```
+
+##### `resetFields` <a name="resetFields" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsRedditAdsOptionsCustomReportOptionsOutputReference.resetFields"></a>
+
+```java
+public void resetFields()
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsRedditAdsOptionsCustomReportOptionsOutputReference.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsRedditAdsOptionsCustomReportOptionsOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsRedditAdsOptionsCustomReportOptionsOutputReference.property.breakdownsInput">breakdownsInput</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsRedditAdsOptionsCustomReportOptionsOutputReference.property.fieldsInput">fieldsInput</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsRedditAdsOptionsCustomReportOptionsOutputReference.property.breakdowns">breakdowns</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsRedditAdsOptionsCustomReportOptionsOutputReference.property.fields">fields</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsRedditAdsOptionsCustomReportOptionsOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsRedditAdsOptionsCustomReportOptions">PipelineIngestionDefinitionObjectsTableConnectorOptionsRedditAdsOptionsCustomReportOptions</a></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsRedditAdsOptionsCustomReportOptionsOutputReference.property.creationStack"></a>
+
+```java
+public java.util.List<java.lang.String> getCreationStack();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsRedditAdsOptionsCustomReportOptionsOutputReference.property.fqn"></a>
+
+```java
+public java.lang.String getFqn();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `breakdownsInput`<sup>Optional</sup> <a name="breakdownsInput" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsRedditAdsOptionsCustomReportOptionsOutputReference.property.breakdownsInput"></a>
+
+```java
+public java.util.List<java.lang.String> getBreakdownsInput();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+---
+
+##### `fieldsInput`<sup>Optional</sup> <a name="fieldsInput" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsRedditAdsOptionsCustomReportOptionsOutputReference.property.fieldsInput"></a>
+
+```java
+public java.util.List<java.lang.String> getFieldsInput();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+---
+
+##### `breakdowns`<sup>Required</sup> <a name="breakdowns" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsRedditAdsOptionsCustomReportOptionsOutputReference.property.breakdowns"></a>
+
+```java
+public java.util.List<java.lang.String> getBreakdowns();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+---
+
+##### `fields`<sup>Required</sup> <a name="fields" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsRedditAdsOptionsCustomReportOptionsOutputReference.property.fields"></a>
+
+```java
+public java.util.List<java.lang.String> getFields();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsRedditAdsOptionsCustomReportOptionsOutputReference.property.internalValue"></a>
+
+```java
+public PipelineIngestionDefinitionObjectsTableConnectorOptionsRedditAdsOptionsCustomReportOptions getInternalValue();
+```
+
+- *Type:* <a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsRedditAdsOptionsCustomReportOptions">PipelineIngestionDefinitionObjectsTableConnectorOptionsRedditAdsOptionsCustomReportOptions</a>
+
+---
+
+
+### PipelineIngestionDefinitionObjectsTableConnectorOptionsRedditAdsOptionsOutputReference <a name="PipelineIngestionDefinitionObjectsTableConnectorOptionsRedditAdsOptionsOutputReference" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsRedditAdsOptionsOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsRedditAdsOptionsOutputReference.Initializer"></a>
+
+```java
+import io.cdktn.providers.databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsRedditAdsOptionsOutputReference;
+
+new PipelineIngestionDefinitionObjectsTableConnectorOptionsRedditAdsOptionsOutputReference(IInterpolatingParent terraformResource, java.lang.String terraformAttribute);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsRedditAdsOptionsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>io.cdktn.cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsRedditAdsOptionsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>java.lang.String</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsRedditAdsOptionsOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* io.cdktn.cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsRedditAdsOptionsOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsRedditAdsOptionsOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsRedditAdsOptionsOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsRedditAdsOptionsOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsRedditAdsOptionsOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsRedditAdsOptionsOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsRedditAdsOptionsOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsRedditAdsOptionsOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsRedditAdsOptionsOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsRedditAdsOptionsOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsRedditAdsOptionsOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsRedditAdsOptionsOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsRedditAdsOptionsOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsRedditAdsOptionsOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsRedditAdsOptionsOutputReference.putCustomReportOptions">putCustomReportOptions</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsRedditAdsOptionsOutputReference.resetCustomReportOptions">resetCustomReportOptions</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsRedditAdsOptionsOutputReference.resetLookbackWindowDays">resetLookbackWindowDays</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsRedditAdsOptionsOutputReference.resetSyncStartDate">resetSyncStartDate</a></code> | *No description.* |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsRedditAdsOptionsOutputReference.computeFqn"></a>
+
+```java
+public java.lang.String computeFqn()
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsRedditAdsOptionsOutputReference.getAnyMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Object> getAnyMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsRedditAdsOptionsOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsRedditAdsOptionsOutputReference.getBooleanAttribute"></a>
+
+```java
+public IResolvable getBooleanAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsRedditAdsOptionsOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsRedditAdsOptionsOutputReference.getBooleanMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Boolean> getBooleanMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsRedditAdsOptionsOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsRedditAdsOptionsOutputReference.getListAttribute"></a>
+
+```java
+public java.util.List<java.lang.String> getListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsRedditAdsOptionsOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsRedditAdsOptionsOutputReference.getNumberAttribute"></a>
+
+```java
+public java.lang.Number getNumberAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsRedditAdsOptionsOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsRedditAdsOptionsOutputReference.getNumberListAttribute"></a>
+
+```java
+public java.util.List<java.lang.Number> getNumberListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsRedditAdsOptionsOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsRedditAdsOptionsOutputReference.getNumberMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Number> getNumberMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsRedditAdsOptionsOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsRedditAdsOptionsOutputReference.getStringAttribute"></a>
+
+```java
+public java.lang.String getStringAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsRedditAdsOptionsOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsRedditAdsOptionsOutputReference.getStringMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.String> getStringMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsRedditAdsOptionsOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsRedditAdsOptionsOutputReference.interpolationForAttribute"></a>
+
+```java
+public IResolvable interpolationForAttribute(java.lang.String property)
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsRedditAdsOptionsOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsRedditAdsOptionsOutputReference.resolve"></a>
+
+```java
+public java.lang.Object resolve(IResolveContext _context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsRedditAdsOptionsOutputReference.resolve.parameter._context"></a>
+
+- *Type:* io.cdktn.cdktn.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsRedditAdsOptionsOutputReference.toString"></a>
+
+```java
+public java.lang.String toString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `putCustomReportOptions` <a name="putCustomReportOptions" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsRedditAdsOptionsOutputReference.putCustomReportOptions"></a>
+
+```java
+public void putCustomReportOptions(PipelineIngestionDefinitionObjectsTableConnectorOptionsRedditAdsOptionsCustomReportOptions value)
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsRedditAdsOptionsOutputReference.putCustomReportOptions.parameter.value"></a>
+
+- *Type:* <a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsRedditAdsOptionsCustomReportOptions">PipelineIngestionDefinitionObjectsTableConnectorOptionsRedditAdsOptionsCustomReportOptions</a>
+
+---
+
+##### `resetCustomReportOptions` <a name="resetCustomReportOptions" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsRedditAdsOptionsOutputReference.resetCustomReportOptions"></a>
+
+```java
+public void resetCustomReportOptions()
+```
+
+##### `resetLookbackWindowDays` <a name="resetLookbackWindowDays" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsRedditAdsOptionsOutputReference.resetLookbackWindowDays"></a>
+
+```java
+public void resetLookbackWindowDays()
+```
+
+##### `resetSyncStartDate` <a name="resetSyncStartDate" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsRedditAdsOptionsOutputReference.resetSyncStartDate"></a>
+
+```java
+public void resetSyncStartDate()
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsRedditAdsOptionsOutputReference.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsRedditAdsOptionsOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsRedditAdsOptionsOutputReference.property.customReportOptions">customReportOptions</a></code> | <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsRedditAdsOptionsCustomReportOptionsOutputReference">PipelineIngestionDefinitionObjectsTableConnectorOptionsRedditAdsOptionsCustomReportOptionsOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsRedditAdsOptionsOutputReference.property.customReportOptionsInput">customReportOptionsInput</a></code> | <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsRedditAdsOptionsCustomReportOptions">PipelineIngestionDefinitionObjectsTableConnectorOptionsRedditAdsOptionsCustomReportOptions</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsRedditAdsOptionsOutputReference.property.lookbackWindowDaysInput">lookbackWindowDaysInput</a></code> | <code>java.lang.Number</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsRedditAdsOptionsOutputReference.property.syncStartDateInput">syncStartDateInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsRedditAdsOptionsOutputReference.property.lookbackWindowDays">lookbackWindowDays</a></code> | <code>java.lang.Number</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsRedditAdsOptionsOutputReference.property.syncStartDate">syncStartDate</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsRedditAdsOptionsOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsRedditAdsOptions">PipelineIngestionDefinitionObjectsTableConnectorOptionsRedditAdsOptions</a></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsRedditAdsOptionsOutputReference.property.creationStack"></a>
+
+```java
+public java.util.List<java.lang.String> getCreationStack();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsRedditAdsOptionsOutputReference.property.fqn"></a>
+
+```java
+public java.lang.String getFqn();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `customReportOptions`<sup>Required</sup> <a name="customReportOptions" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsRedditAdsOptionsOutputReference.property.customReportOptions"></a>
+
+```java
+public PipelineIngestionDefinitionObjectsTableConnectorOptionsRedditAdsOptionsCustomReportOptionsOutputReference getCustomReportOptions();
+```
+
+- *Type:* <a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsRedditAdsOptionsCustomReportOptionsOutputReference">PipelineIngestionDefinitionObjectsTableConnectorOptionsRedditAdsOptionsCustomReportOptionsOutputReference</a>
+
+---
+
+##### `customReportOptionsInput`<sup>Optional</sup> <a name="customReportOptionsInput" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsRedditAdsOptionsOutputReference.property.customReportOptionsInput"></a>
+
+```java
+public PipelineIngestionDefinitionObjectsTableConnectorOptionsRedditAdsOptionsCustomReportOptions getCustomReportOptionsInput();
+```
+
+- *Type:* <a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsRedditAdsOptionsCustomReportOptions">PipelineIngestionDefinitionObjectsTableConnectorOptionsRedditAdsOptionsCustomReportOptions</a>
+
+---
+
+##### `lookbackWindowDaysInput`<sup>Optional</sup> <a name="lookbackWindowDaysInput" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsRedditAdsOptionsOutputReference.property.lookbackWindowDaysInput"></a>
+
+```java
+public java.lang.Number getLookbackWindowDaysInput();
+```
+
+- *Type:* java.lang.Number
+
+---
+
+##### `syncStartDateInput`<sup>Optional</sup> <a name="syncStartDateInput" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsRedditAdsOptionsOutputReference.property.syncStartDateInput"></a>
+
+```java
+public java.lang.String getSyncStartDateInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `lookbackWindowDays`<sup>Required</sup> <a name="lookbackWindowDays" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsRedditAdsOptionsOutputReference.property.lookbackWindowDays"></a>
+
+```java
+public java.lang.Number getLookbackWindowDays();
+```
+
+- *Type:* java.lang.Number
+
+---
+
+##### `syncStartDate`<sup>Required</sup> <a name="syncStartDate" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsRedditAdsOptionsOutputReference.property.syncStartDate"></a>
+
+```java
+public java.lang.String getSyncStartDate();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsRedditAdsOptionsOutputReference.property.internalValue"></a>
+
+```java
+public PipelineIngestionDefinitionObjectsTableConnectorOptionsRedditAdsOptions getInternalValue();
+```
+
+- *Type:* <a href="#@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsRedditAdsOptions">PipelineIngestionDefinitionObjectsTableConnectorOptionsRedditAdsOptions</a>
 
 ---
 

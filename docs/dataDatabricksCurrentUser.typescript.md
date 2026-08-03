@@ -4,7 +4,7 @@
 
 ### DataDatabricksCurrentUser <a name="DataDatabricksCurrentUser" id="@cdktn/provider-databricks.dataDatabricksCurrentUser.DataDatabricksCurrentUser"></a>
 
-Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/data-sources/current_user databricks_current_user}.
+Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/data-sources/current_user databricks_current_user}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksCurrentUser.DataDatabricksCurrentUser.Initializer"></a>
 
@@ -414,7 +414,7 @@ The construct id used in the generated config for the DataDatabricksCurrentUser 
 
 The id of the existing DataDatabricksCurrentUser that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/data-sources/current_user#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/data-sources/current_user#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -729,7 +729,7 @@ const dataDatabricksCurrentUserConfig: dataDatabricksCurrentUser.DataDatabricksC
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksCurrentUser.DataDatabricksCurrentUserConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksCurrentUser.DataDatabricksCurrentUserConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksCurrentUser.DataDatabricksCurrentUserConfig.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksCurrentUser.DataDatabricksCurrentUserConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/data-sources/current_user#id DataDatabricksCurrentUser#id}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksCurrentUser.DataDatabricksCurrentUserConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/data-sources/current_user#id DataDatabricksCurrentUser#id}. |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksCurrentUser.DataDatabricksCurrentUserConfig.property.providerConfig">providerConfig</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksCurrentUser.DataDatabricksCurrentUserProviderConfig">DataDatabricksCurrentUserProviderConfig</a></code> | provider_config block. |
 
 ---
@@ -812,7 +812,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/data-sources/current_user#id DataDatabricksCurrentUser#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/data-sources/current_user#id DataDatabricksCurrentUser#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -829,7 +829,7 @@ public readonly providerConfig: DataDatabricksCurrentUserProviderConfig;
 
 provider_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/data-sources/current_user#provider_config DataDatabricksCurrentUser#provider_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/data-sources/current_user#provider_config DataDatabricksCurrentUser#provider_config}
 
 ---
 
@@ -847,7 +847,7 @@ const dataDatabricksCurrentUserProviderConfig: dataDatabricksCurrentUser.DataDat
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksCurrentUser.DataDatabricksCurrentUserProviderConfig.property.workspaceId">workspaceId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/data-sources/current_user#workspace_id DataDatabricksCurrentUser#workspace_id}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksCurrentUser.DataDatabricksCurrentUserProviderConfig.property.workspaceId">workspaceId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/data-sources/current_user#workspace_id DataDatabricksCurrentUser#workspace_id}. |
 
 ---
 
@@ -859,7 +859,7 @@ public readonly workspaceId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/data-sources/current_user#workspace_id DataDatabricksCurrentUser#workspace_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/data-sources/current_user#workspace_id DataDatabricksCurrentUser#workspace_id}.
 
 ---
 
