@@ -284,6 +284,7 @@ Object.defineProperty(exports, 'dataDatabricksPostgresRoles', { get: function ()
 Object.defineProperty(exports, 'dataDatabricksPostgresSyncedTable', { get: function () { return require('./data-databricks-postgres-synced-table'); } });
 Object.defineProperty(exports, 'dataDatabricksQualityMonitorV2', { get: function () { return require('./data-databricks-quality-monitor-v2'); } });
 Object.defineProperty(exports, 'dataDatabricksQualityMonitorsV2', { get: function () { return require('./data-databricks-quality-monitors-v2'); } });
+Object.defineProperty(exports, 'dataDatabricksRecipients', { get: function () { return require('./data-databricks-recipients'); } });
 Object.defineProperty(exports, 'dataDatabricksRegisteredModel', { get: function () { return require('./data-databricks-registered-model'); } });
 Object.defineProperty(exports, 'dataDatabricksRegisteredModelVersions', { get: function () { return require('./data-databricks-registered-model-versions'); } });
 Object.defineProperty(exports, 'dataDatabricksRfaAccessRequestDestinations', { get: function () { return require('./data-databricks-rfa-access-request-destinations'); } });

@@ -284,6 +284,7 @@ export * as dataDatabricksPostgresRoles from './data-databricks-postgres-roles/i
 export * as dataDatabricksPostgresSyncedTable from './data-databricks-postgres-synced-table/index';
 export * as dataDatabricksQualityMonitorV2 from './data-databricks-quality-monitor-v2/index';
 export * as dataDatabricksQualityMonitorsV2 from './data-databricks-quality-monitors-v2/index';
+export * as dataDatabricksRecipients from './data-databricks-recipients/index';
 export * as dataDatabricksRegisteredModel from './data-databricks-registered-model/index';
 export * as dataDatabricksRegisteredModelVersions from './data-databricks-registered-model-versions/index';
 export * as dataDatabricksRfaAccessRequestDestinations from './data-databricks-rfa-access-request-destinations/index';
