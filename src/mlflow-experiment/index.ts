@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/mlflow_experiment
+// https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/mlflow_experiment
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,68 +13,68 @@ import * as cdktn from 'cdktn';
 
 export interface MlflowExperimentConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/mlflow_experiment#artifact_location MlflowExperiment#artifact_location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/mlflow_experiment#artifact_location MlflowExperiment#artifact_location}
   */
   readonly artifactLocation?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/mlflow_experiment#creation_time MlflowExperiment#creation_time}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/mlflow_experiment#creation_time MlflowExperiment#creation_time}
   */
   readonly creationTime?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/mlflow_experiment#description MlflowExperiment#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/mlflow_experiment#description MlflowExperiment#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/mlflow_experiment#experiment_id MlflowExperiment#experiment_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/mlflow_experiment#experiment_id MlflowExperiment#experiment_id}
   */
   readonly experimentId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/mlflow_experiment#id MlflowExperiment#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/mlflow_experiment#id MlflowExperiment#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/mlflow_experiment#last_update_time MlflowExperiment#last_update_time}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/mlflow_experiment#last_update_time MlflowExperiment#last_update_time}
   */
   readonly lastUpdateTime?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/mlflow_experiment#lifecycle_stage MlflowExperiment#lifecycle_stage}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/mlflow_experiment#lifecycle_stage MlflowExperiment#lifecycle_stage}
   */
   readonly lifecycleStage?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/mlflow_experiment#name MlflowExperiment#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/mlflow_experiment#name MlflowExperiment#name}
   */
   readonly name: string;
   /**
   * provider_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/mlflow_experiment#provider_config MlflowExperiment#provider_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/mlflow_experiment#provider_config MlflowExperiment#provider_config}
   */
   readonly providerConfig?: MlflowExperimentProviderConfig;
   /**
   * tags block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/mlflow_experiment#tags MlflowExperiment#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/mlflow_experiment#tags MlflowExperiment#tags}
   */
   readonly tags?: MlflowExperimentTags[] | cdktn.IResolvable;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/mlflow_experiment#timeouts MlflowExperiment#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/mlflow_experiment#timeouts MlflowExperiment#timeouts}
   */
   readonly timeouts?: MlflowExperimentTimeouts;
   /**
   * trace_location block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/mlflow_experiment#trace_location MlflowExperiment#trace_location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/mlflow_experiment#trace_location MlflowExperiment#trace_location}
   */
   readonly traceLocation?: MlflowExperimentTraceLocation;
 }
 export interface MlflowExperimentProviderConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/mlflow_experiment#workspace_id MlflowExperiment#workspace_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/mlflow_experiment#workspace_id MlflowExperiment#workspace_id}
   */
   readonly workspaceId?: string;
 }
@@ -158,11 +158,11 @@ export class MlflowExperimentProviderConfigOutputReference extends cdktn.Complex
 }
 export interface MlflowExperimentTags {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/mlflow_experiment#key MlflowExperiment#key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/mlflow_experiment#key MlflowExperiment#key}
   */
   readonly key?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/mlflow_experiment#value MlflowExperiment#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/mlflow_experiment#value MlflowExperiment#value}
   */
   readonly value?: string;
 }
@@ -366,15 +366,19 @@ export class MlflowExperimentTimeoutsOutputReference extends cdktn.ComplexObject
 }
 export interface MlflowExperimentTraceLocationUcTraceLocation {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/mlflow_experiment#catalog MlflowExperiment#catalog}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/mlflow_experiment#catalog MlflowExperiment#catalog}
   */
   readonly catalog: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/mlflow_experiment#schema MlflowExperiment#schema}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/mlflow_experiment#effective_table_prefix MlflowExperiment#effective_table_prefix}
+  */
+  readonly effectiveTablePrefix?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/mlflow_experiment#schema MlflowExperiment#schema}
   */
   readonly schema: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/mlflow_experiment#table_prefix MlflowExperiment#table_prefix}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/mlflow_experiment#table_prefix MlflowExperiment#table_prefix}
   */
   readonly tablePrefix?: string;
 }
@@ -386,6 +390,7 @@ export function mlflowExperimentTraceLocationUcTraceLocationToTerraform(struct?:
   }
   return {
     catalog: cdktn.stringToTerraform(struct!.catalog),
+    effective_table_prefix: cdktn.stringToTerraform(struct!.effectiveTablePrefix),
     schema: cdktn.stringToTerraform(struct!.schema),
     table_prefix: cdktn.stringToTerraform(struct!.tablePrefix),
   }
@@ -400,6 +405,12 @@ export function mlflowExperimentTraceLocationUcTraceLocationToHclTerraform(struc
   const attrs = {
     catalog: {
       value: cdktn.stringToHclTerraform(struct!.catalog),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    effective_table_prefix: {
+      value: cdktn.stringToHclTerraform(struct!.effectiveTablePrefix),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -440,6 +451,10 @@ export class MlflowExperimentTraceLocationUcTraceLocationOutputReference extends
       hasAnyValues = true;
       internalValueResult.catalog = this._catalog;
     }
+    if (this._effectiveTablePrefix !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.effectiveTablePrefix = this._effectiveTablePrefix;
+    }
     if (this._schema !== undefined) {
       hasAnyValues = true;
       internalValueResult.schema = this._schema;
@@ -455,12 +470,14 @@ export class MlflowExperimentTraceLocationUcTraceLocationOutputReference extends
     if (value === undefined) {
       this.isEmptyObject = false;
       this._catalog = undefined;
+      this._effectiveTablePrefix = undefined;
       this._schema = undefined;
       this._tablePrefix = undefined;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
       this._catalog = value.catalog;
+      this._effectiveTablePrefix = value.effectiveTablePrefix;
       this._schema = value.schema;
       this._tablePrefix = value.tablePrefix;
     }
@@ -477,6 +494,22 @@ export class MlflowExperimentTraceLocationUcTraceLocationOutputReference extends
   // Temporarily expose input value. Use with caution.
   public get catalogInput() {
     return this._catalog;
+  }
+
+  // effective_table_prefix - computed: true, optional: true, required: false
+  private _effectiveTablePrefix?: string; 
+  public get effectiveTablePrefix() {
+    return this.getStringAttribute('effective_table_prefix');
+  }
+  public set effectiveTablePrefix(value: string) {
+    this._effectiveTablePrefix = value;
+  }
+  public resetEffectiveTablePrefix() {
+    this._effectiveTablePrefix = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get effectiveTablePrefixInput() {
+    return this._effectiveTablePrefix;
   }
 
   // schema - computed: false, optional: false, required: true
@@ -512,7 +545,7 @@ export interface MlflowExperimentTraceLocation {
   /**
   * uc_trace_location block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/mlflow_experiment#uc_trace_location MlflowExperiment#uc_trace_location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/mlflow_experiment#uc_trace_location MlflowExperiment#uc_trace_location}
   */
   readonly ucTraceLocation?: MlflowExperimentTraceLocationUcTraceLocation;
 }
@@ -596,7 +629,7 @@ export class MlflowExperimentTraceLocationOutputReference extends cdktn.ComplexO
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/mlflow_experiment databricks_mlflow_experiment}
+* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/mlflow_experiment databricks_mlflow_experiment}
 */
 export class MlflowExperiment extends cdktn.TerraformResource {
 
@@ -612,7 +645,7 @@ export class MlflowExperiment extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a MlflowExperiment resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the MlflowExperiment to import
-  * @param importFromId The id of the existing MlflowExperiment that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/mlflow_experiment#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing MlflowExperiment that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/mlflow_experiment#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the MlflowExperiment to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -624,7 +657,7 @@ export class MlflowExperiment extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/mlflow_experiment databricks_mlflow_experiment} Resource
+  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/mlflow_experiment databricks_mlflow_experiment} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -635,7 +668,7 @@ export class MlflowExperiment extends cdktn.TerraformResource {
       terraformResourceType: 'databricks_mlflow_experiment',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '1.122.0',
+        providerVersion: '1.124.0',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,

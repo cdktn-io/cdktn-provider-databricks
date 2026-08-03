@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/postgres_synced_table
+// https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/postgres_synced_table
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,21 +13,21 @@ import * as cdktn from 'cdktn';
 
 export interface PostgresSyncedTableConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/postgres_synced_table#provider_config PostgresSyncedTable#provider_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/postgres_synced_table#provider_config PostgresSyncedTable#provider_config}
   */
   readonly providerConfig?: PostgresSyncedTableProviderConfig;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/postgres_synced_table#spec PostgresSyncedTable#spec}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/postgres_synced_table#spec PostgresSyncedTable#spec}
   */
   readonly spec?: PostgresSyncedTableSpec;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/postgres_synced_table#synced_table_id PostgresSyncedTable#synced_table_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/postgres_synced_table#synced_table_id PostgresSyncedTable#synced_table_id}
   */
   readonly syncedTableId: string;
 }
 export interface PostgresSyncedTableProviderConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/postgres_synced_table#workspace_id PostgresSyncedTable#workspace_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/postgres_synced_table#workspace_id PostgresSyncedTable#workspace_id}
   */
   readonly workspaceId?: string;
 }
@@ -119,17 +119,226 @@ export class PostgresSyncedTableProviderConfigOutputReference extends cdktn.Comp
     return this._workspaceId;
   }
 }
+export interface PostgresSyncedTableSpecExtraColumns {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/postgres_synced_table#column_name PostgresSyncedTable#column_name}
+  */
+  readonly columnName: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/postgres_synced_table#column_type PostgresSyncedTable#column_type}
+  */
+  readonly columnType: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/postgres_synced_table#compute PostgresSyncedTable#compute}
+  */
+  readonly compute?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/postgres_synced_table#maintenance PostgresSyncedTable#maintenance}
+  */
+  readonly maintenance?: string;
+}
+
+export function postgresSyncedTableSpecExtraColumnsToTerraform(struct?: PostgresSyncedTableSpecExtraColumns | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  return {
+    column_name: cdktn.stringToTerraform(struct!.columnName),
+    column_type: cdktn.stringToTerraform(struct!.columnType),
+    compute: cdktn.stringToTerraform(struct!.compute),
+    maintenance: cdktn.stringToTerraform(struct!.maintenance),
+  }
+}
+
+
+export function postgresSyncedTableSpecExtraColumnsToHclTerraform(struct?: PostgresSyncedTableSpecExtraColumns | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  const attrs = {
+    column_name: {
+      value: cdktn.stringToHclTerraform(struct!.columnName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    column_type: {
+      value: cdktn.stringToHclTerraform(struct!.columnType),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    compute: {
+      value: cdktn.stringToHclTerraform(struct!.compute),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    maintenance: {
+      value: cdktn.stringToHclTerraform(struct!.maintenance),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class PostgresSyncedTableSpecExtraColumnsOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktn.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): PostgresSyncedTableSpecExtraColumns | cdktn.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._columnName !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.columnName = this._columnName;
+    }
+    if (this._columnType !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.columnType = this._columnType;
+    }
+    if (this._compute !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.compute = this._compute;
+    }
+    if (this._maintenance !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.maintenance = this._maintenance;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: PostgresSyncedTableSpecExtraColumns | cdktn.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._columnName = undefined;
+      this._columnType = undefined;
+      this._compute = undefined;
+      this._maintenance = undefined;
+    }
+    else if (cdktn.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._columnName = value.columnName;
+      this._columnType = value.columnType;
+      this._compute = value.compute;
+      this._maintenance = value.maintenance;
+    }
+  }
+
+  // column_name - computed: true, optional: false, required: true
+  private _columnName?: string; 
+  public get columnName() {
+    return this.getStringAttribute('column_name');
+  }
+  public set columnName(value: string) {
+    this._columnName = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get columnNameInput() {
+    return this._columnName;
+  }
+
+  // column_type - computed: true, optional: false, required: true
+  private _columnType?: string; 
+  public get columnType() {
+    return this.getStringAttribute('column_type');
+  }
+  public set columnType(value: string) {
+    this._columnType = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get columnTypeInput() {
+    return this._columnType;
+  }
+
+  // compute - computed: true, optional: true, required: false
+  private _compute?: string; 
+  public get compute() {
+    return this.getStringAttribute('compute');
+  }
+  public set compute(value: string) {
+    this._compute = value;
+  }
+  public resetCompute() {
+    this._compute = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get computeInput() {
+    return this._compute;
+  }
+
+  // maintenance - computed: true, optional: true, required: false
+  private _maintenance?: string; 
+  public get maintenance() {
+    return this.getStringAttribute('maintenance');
+  }
+  public set maintenance(value: string) {
+    this._maintenance = value;
+  }
+  public resetMaintenance() {
+    this._maintenance = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get maintenanceInput() {
+    return this._maintenance;
+  }
+}
+
+export class PostgresSyncedTableSpecExtraColumnsList extends cdktn.ComplexList {
+  public internalValue? : PostgresSyncedTableSpecExtraColumns[] | cdktn.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet);
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): PostgresSyncedTableSpecExtraColumnsOutputReference {
+    return new PostgresSyncedTableSpecExtraColumnsOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface PostgresSyncedTableSpecNewPipelineSpec {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/postgres_synced_table#budget_policy_id PostgresSyncedTable#budget_policy_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/postgres_synced_table#budget_policy_id PostgresSyncedTable#budget_policy_id}
   */
   readonly budgetPolicyId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/postgres_synced_table#storage_catalog PostgresSyncedTable#storage_catalog}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/postgres_synced_table#storage_catalog PostgresSyncedTable#storage_catalog}
   */
   readonly storageCatalog?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/postgres_synced_table#storage_schema PostgresSyncedTable#storage_schema}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/postgres_synced_table#storage_schema PostgresSyncedTable#storage_schema}
   */
   readonly storageSchema?: string;
 }
@@ -281,15 +490,15 @@ export class PostgresSyncedTableSpecNewPipelineSpecOutputReference extends cdktn
 }
 export interface PostgresSyncedTableSpecTypeOverrides {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/postgres_synced_table#column_name PostgresSyncedTable#column_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/postgres_synced_table#column_name PostgresSyncedTable#column_name}
   */
   readonly columnName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/postgres_synced_table#pg_type PostgresSyncedTable#pg_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/postgres_synced_table#pg_type PostgresSyncedTable#pg_type}
   */
   readonly pgType: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/postgres_synced_table#size PostgresSyncedTable#size}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/postgres_synced_table#size PostgresSyncedTable#size}
   */
   readonly size?: number;
 }
@@ -457,47 +666,51 @@ export class PostgresSyncedTableSpecTypeOverridesList extends cdktn.ComplexList 
 }
 export interface PostgresSyncedTableSpec {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/postgres_synced_table#accelerated_sync PostgresSyncedTable#accelerated_sync}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/postgres_synced_table#accelerated_sync PostgresSyncedTable#accelerated_sync}
   */
   readonly acceleratedSync?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/postgres_synced_table#branch PostgresSyncedTable#branch}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/postgres_synced_table#branch PostgresSyncedTable#branch}
   */
   readonly branch?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/postgres_synced_table#create_database_objects_if_missing PostgresSyncedTable#create_database_objects_if_missing}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/postgres_synced_table#create_database_objects_if_missing PostgresSyncedTable#create_database_objects_if_missing}
   */
   readonly createDatabaseObjectsIfMissing?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/postgres_synced_table#existing_pipeline_id PostgresSyncedTable#existing_pipeline_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/postgres_synced_table#existing_pipeline_id PostgresSyncedTable#existing_pipeline_id}
   */
   readonly existingPipelineId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/postgres_synced_table#new_pipeline_spec PostgresSyncedTable#new_pipeline_spec}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/postgres_synced_table#extra_columns PostgresSyncedTable#extra_columns}
+  */
+  readonly extraColumns?: PostgresSyncedTableSpecExtraColumns[] | cdktn.IResolvable;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/postgres_synced_table#new_pipeline_spec PostgresSyncedTable#new_pipeline_spec}
   */
   readonly newPipelineSpec?: PostgresSyncedTableSpecNewPipelineSpec;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/postgres_synced_table#postgres_database PostgresSyncedTable#postgres_database}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/postgres_synced_table#postgres_database PostgresSyncedTable#postgres_database}
   */
   readonly postgresDatabase?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/postgres_synced_table#primary_key_columns PostgresSyncedTable#primary_key_columns}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/postgres_synced_table#primary_key_columns PostgresSyncedTable#primary_key_columns}
   */
   readonly primaryKeyColumns?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/postgres_synced_table#scheduling_policy PostgresSyncedTable#scheduling_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/postgres_synced_table#scheduling_policy PostgresSyncedTable#scheduling_policy}
   */
   readonly schedulingPolicy?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/postgres_synced_table#source_table_full_name PostgresSyncedTable#source_table_full_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/postgres_synced_table#source_table_full_name PostgresSyncedTable#source_table_full_name}
   */
   readonly sourceTableFullName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/postgres_synced_table#timeseries_key PostgresSyncedTable#timeseries_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/postgres_synced_table#timeseries_key PostgresSyncedTable#timeseries_key}
   */
   readonly timeseriesKey?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/postgres_synced_table#type_overrides PostgresSyncedTable#type_overrides}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/postgres_synced_table#type_overrides PostgresSyncedTable#type_overrides}
   */
   readonly typeOverrides?: PostgresSyncedTableSpecTypeOverrides[] | cdktn.IResolvable;
 }
@@ -512,6 +725,7 @@ export function postgresSyncedTableSpecToTerraform(struct?: PostgresSyncedTableS
     branch: cdktn.stringToTerraform(struct!.branch),
     create_database_objects_if_missing: cdktn.booleanToTerraform(struct!.createDatabaseObjectsIfMissing),
     existing_pipeline_id: cdktn.stringToTerraform(struct!.existingPipelineId),
+    extra_columns: cdktn.listMapper(postgresSyncedTableSpecExtraColumnsToTerraform, false)(struct!.extraColumns),
     new_pipeline_spec: postgresSyncedTableSpecNewPipelineSpecToTerraform(struct!.newPipelineSpec),
     postgres_database: cdktn.stringToTerraform(struct!.postgresDatabase),
     primary_key_columns: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.primaryKeyColumns),
@@ -552,6 +766,12 @@ export function postgresSyncedTableSpecToHclTerraform(struct?: PostgresSyncedTab
       isBlock: false,
       type: "simple",
       storageClassType: "string",
+    },
+    extra_columns: {
+      value: cdktn.listMapperHcl(postgresSyncedTableSpecExtraColumnsToHclTerraform, false)(struct!.extraColumns),
+      isBlock: true,
+      type: "list",
+      storageClassType: "PostgresSyncedTableSpecExtraColumnsList",
     },
     new_pipeline_spec: {
       value: postgresSyncedTableSpecNewPipelineSpecToHclTerraform(struct!.newPipelineSpec),
@@ -635,6 +855,10 @@ export class PostgresSyncedTableSpecOutputReference extends cdktn.ComplexObject 
       hasAnyValues = true;
       internalValueResult.existingPipelineId = this._existingPipelineId;
     }
+    if (this._extraColumns?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.extraColumns = this._extraColumns?.internalValue;
+    }
     if (this._newPipelineSpec?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.newPipelineSpec = this._newPipelineSpec?.internalValue;
@@ -674,6 +898,7 @@ export class PostgresSyncedTableSpecOutputReference extends cdktn.ComplexObject 
       this._branch = undefined;
       this._createDatabaseObjectsIfMissing = undefined;
       this._existingPipelineId = undefined;
+      this._extraColumns.internalValue = undefined;
       this._newPipelineSpec.internalValue = undefined;
       this._postgresDatabase = undefined;
       this._primaryKeyColumns = undefined;
@@ -693,6 +918,7 @@ export class PostgresSyncedTableSpecOutputReference extends cdktn.ComplexObject 
       this._branch = value.branch;
       this._createDatabaseObjectsIfMissing = value.createDatabaseObjectsIfMissing;
       this._existingPipelineId = value.existingPipelineId;
+      this._extraColumns.internalValue = value.extraColumns;
       this._newPipelineSpec.internalValue = value.newPipelineSpec;
       this._postgresDatabase = value.postgresDatabase;
       this._primaryKeyColumns = value.primaryKeyColumns;
@@ -765,6 +991,22 @@ export class PostgresSyncedTableSpecOutputReference extends cdktn.ComplexObject 
   // Temporarily expose input value. Use with caution.
   public get existingPipelineIdInput() {
     return this._existingPipelineId;
+  }
+
+  // extra_columns - computed: true, optional: true, required: false
+  private _extraColumns = new PostgresSyncedTableSpecExtraColumnsList(this, "extra_columns", false);
+  public get extraColumns() {
+    return this._extraColumns;
+  }
+  public putExtraColumns(value: PostgresSyncedTableSpecExtraColumns[] | cdktn.IResolvable) {
+    this._extraColumns.internalValue = value;
+  }
+  public resetExtraColumns() {
+    this._extraColumns.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get extraColumnsInput() {
+    return this._extraColumns.internalValue;
   }
 
   // new_pipeline_spec - computed: true, optional: true, required: false
@@ -1180,7 +1422,7 @@ export class PostgresSyncedTableStatusOutputReference extends cdktn.ComplexObjec
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/postgres_synced_table databricks_postgres_synced_table}
+* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/postgres_synced_table databricks_postgres_synced_table}
 */
 export class PostgresSyncedTable extends cdktn.TerraformResource {
 
@@ -1196,7 +1438,7 @@ export class PostgresSyncedTable extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a PostgresSyncedTable resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the PostgresSyncedTable to import
-  * @param importFromId The id of the existing PostgresSyncedTable that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/postgres_synced_table#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing PostgresSyncedTable that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/postgres_synced_table#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the PostgresSyncedTable to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -1208,7 +1450,7 @@ export class PostgresSyncedTable extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/resources/postgres_synced_table databricks_postgres_synced_table} Resource
+  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/postgres_synced_table databricks_postgres_synced_table} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -1219,7 +1461,7 @@ export class PostgresSyncedTable extends cdktn.TerraformResource {
       terraformResourceType: 'databricks_postgres_synced_table',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '1.122.0',
+        providerVersion: '1.124.0',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,
