@@ -9,6 +9,9 @@ Object.defineProperty(exports, 'accountFederationPolicy', { get: function () { r
 Object.defineProperty(exports, 'accountNetworkPolicy', { get: function () { return require('./account-network-policy'); } });
 Object.defineProperty(exports, 'accountSettingUserPreferenceV2', { get: function () { return require('./account-setting-user-preference-v2'); } });
 Object.defineProperty(exports, 'accountSettingV2', { get: function () { return require('./account-setting-v2'); } });
+Object.defineProperty(exports, 'aiGatewayMcpService', { get: function () { return require('./ai-gateway-mcp-service'); } });
+Object.defineProperty(exports, 'aiGatewayModelProviderService', { get: function () { return require('./ai-gateway-model-provider-service'); } });
+Object.defineProperty(exports, 'aiGatewayModelService', { get: function () { return require('./ai-gateway-model-service'); } });
 Object.defineProperty(exports, 'aiSearchEndpoint', { get: function () { return require('./ai-search-endpoint'); } });
 Object.defineProperty(exports, 'aiSearchIndex', { get: function () { return require('./ai-search-index'); } });
 Object.defineProperty(exports, 'aibiDashboardEmbeddingAccessPolicySetting', { get: function () { return require('./aibi-dashboard-embedding-access-policy-setting'); } });
@@ -171,6 +174,12 @@ Object.defineProperty(exports, 'dataDatabricksAccountNetworkPolicies', { get: fu
 Object.defineProperty(exports, 'dataDatabricksAccountNetworkPolicy', { get: function () { return require('./data-databricks-account-network-policy'); } });
 Object.defineProperty(exports, 'dataDatabricksAccountSettingUserPreferenceV2', { get: function () { return require('./data-databricks-account-setting-user-preference-v2'); } });
 Object.defineProperty(exports, 'dataDatabricksAccountSettingV2', { get: function () { return require('./data-databricks-account-setting-v2'); } });
+Object.defineProperty(exports, 'dataDatabricksAiGatewayMcpService', { get: function () { return require('./data-databricks-ai-gateway-mcp-service'); } });
+Object.defineProperty(exports, 'dataDatabricksAiGatewayMcpServices', { get: function () { return require('./data-databricks-ai-gateway-mcp-services'); } });
+Object.defineProperty(exports, 'dataDatabricksAiGatewayModelProviderService', { get: function () { return require('./data-databricks-ai-gateway-model-provider-service'); } });
+Object.defineProperty(exports, 'dataDatabricksAiGatewayModelProviderServices', { get: function () { return require('./data-databricks-ai-gateway-model-provider-services'); } });
+Object.defineProperty(exports, 'dataDatabricksAiGatewayModelService', { get: function () { return require('./data-databricks-ai-gateway-model-service'); } });
+Object.defineProperty(exports, 'dataDatabricksAiGatewayModelServices', { get: function () { return require('./data-databricks-ai-gateway-model-services'); } });
 Object.defineProperty(exports, 'dataDatabricksAiSearchEndpoint', { get: function () { return require('./data-databricks-ai-search-endpoint'); } });
 Object.defineProperty(exports, 'dataDatabricksAiSearchEndpoints', { get: function () { return require('./data-databricks-ai-search-endpoints'); } });
 Object.defineProperty(exports, 'dataDatabricksAiSearchIndex', { get: function () { return require('./data-databricks-ai-search-index'); } });
@@ -284,6 +293,7 @@ Object.defineProperty(exports, 'dataDatabricksPostgresRoles', { get: function ()
 Object.defineProperty(exports, 'dataDatabricksPostgresSyncedTable', { get: function () { return require('./data-databricks-postgres-synced-table'); } });
 Object.defineProperty(exports, 'dataDatabricksQualityMonitorV2', { get: function () { return require('./data-databricks-quality-monitor-v2'); } });
 Object.defineProperty(exports, 'dataDatabricksQualityMonitorsV2', { get: function () { return require('./data-databricks-quality-monitors-v2'); } });
+Object.defineProperty(exports, 'dataDatabricksRecipients', { get: function () { return require('./data-databricks-recipients'); } });
 Object.defineProperty(exports, 'dataDatabricksRegisteredModel', { get: function () { return require('./data-databricks-registered-model'); } });
 Object.defineProperty(exports, 'dataDatabricksRegisteredModelVersions', { get: function () { return require('./data-databricks-registered-model-versions'); } });
 Object.defineProperty(exports, 'dataDatabricksRfaAccessRequestDestinations', { get: function () { return require('./data-databricks-rfa-access-request-destinations'); } });

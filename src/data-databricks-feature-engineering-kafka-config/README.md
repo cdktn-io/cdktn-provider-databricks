@@ -1,3 +1,3 @@
 # `data_databricks_feature_engineering_kafka_config`
 
-Refer to the Terraform Registry for docs: [`data_databricks_feature_engineering_kafka_config`](https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/data-sources/feature_engineering_kafka_config).
+Refer to the Terraform Registry for docs: [`data_databricks_feature_engineering_kafka_config`](https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/data-sources/feature_engineering_kafka_config).

@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/data-sources/online_store
+// https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/data-sources/online_store
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,17 +13,17 @@ import * as cdktn from 'cdktn';
 
 export interface DataDatabricksOnlineStoreConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/data-sources/online_store#name DataDatabricksOnlineStore#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/data-sources/online_store#name DataDatabricksOnlineStore#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/data-sources/online_store#provider_config DataDatabricksOnlineStore#provider_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/data-sources/online_store#provider_config DataDatabricksOnlineStore#provider_config}
   */
   readonly providerConfig?: DataDatabricksOnlineStoreProviderConfig;
 }
 export interface DataDatabricksOnlineStoreProviderConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/data-sources/online_store#workspace_id DataDatabricksOnlineStore#workspace_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/data-sources/online_store#workspace_id DataDatabricksOnlineStore#workspace_id}
   */
   readonly workspaceId?: string;
 }
@@ -117,7 +117,7 @@ export class DataDatabricksOnlineStoreProviderConfigOutputReference extends cdkt
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/data-sources/online_store databricks_online_store}
+* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/data-sources/online_store databricks_online_store}
 */
 export class DataDatabricksOnlineStore extends cdktn.TerraformDataSource {
 
@@ -133,7 +133,7 @@ export class DataDatabricksOnlineStore extends cdktn.TerraformDataSource {
   * Generates CDKTN code for importing a DataDatabricksOnlineStore resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataDatabricksOnlineStore to import
-  * @param importFromId The id of the existing DataDatabricksOnlineStore that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/data-sources/online_store#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataDatabricksOnlineStore that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/data-sources/online_store#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataDatabricksOnlineStore to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -145,7 +145,7 @@ export class DataDatabricksOnlineStore extends cdktn.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.122.0/docs/data-sources/online_store databricks_online_store} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/data-sources/online_store databricks_online_store} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -156,7 +156,7 @@ export class DataDatabricksOnlineStore extends cdktn.TerraformDataSource {
       terraformResourceType: 'databricks_online_store',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '1.122.0',
+        providerVersion: '1.124.0',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,
