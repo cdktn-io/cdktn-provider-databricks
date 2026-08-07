@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/databricks/databrick
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.aiGatewayMcpService.AiGatewayMcpService.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/aigatewaymcpservice"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/aigatewaymcpservice"
 
 aigatewaymcpservice.NewAiGatewayMcpService(scope Construct, id *string, config AiGatewayMcpServiceConfig) AiGatewayMcpService
 ```
@@ -454,7 +454,7 @@ func ResetProviderConfig()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-databricks.aiGatewayMcpService.AiGatewayMcpService.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/aigatewaymcpservice"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/aigatewaymcpservice"
 
 aigatewaymcpservice.AiGatewayMcpService_IsConstruct(x interface{}) *bool
 ```
@@ -486,7 +486,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-databricks.aiGatewayMcpService.AiGatewayMcpService.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/aigatewaymcpservice"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/aigatewaymcpservice"
 
 aigatewaymcpservice.AiGatewayMcpService_IsTerraformElement(x interface{}) *bool
 ```
@@ -500,7 +500,7 @@ aigatewaymcpservice.AiGatewayMcpService_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-databricks.aiGatewayMcpService.AiGatewayMcpService.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/aigatewaymcpservice"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/aigatewaymcpservice"
 
 aigatewaymcpservice.AiGatewayMcpService_IsTerraformResource(x interface{}) *bool
 ```
@@ -514,7 +514,7 @@ aigatewaymcpservice.AiGatewayMcpService_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-databricks.aiGatewayMcpService.AiGatewayMcpService.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/aigatewaymcpservice"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/aigatewaymcpservice"
 
 aigatewaymcpservice.AiGatewayMcpService_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -974,7 +974,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.aiGatewayMcpService.AiGatewayMcpServiceConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/aigatewaymcpservice"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/aigatewaymcpservice"
 
 &aigatewaymcpservice.AiGatewayMcpServiceConfig {
 	Connection: interface{},
@@ -987,9 +987,9 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/aigatewa
 	McpServiceId: *string,
 	Parent: *string,
 	Comment: *string,
-	Config: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.aiGatewayMcpService.AiGatewayMcpServiceConfigA,
+	Config: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18.aiGatewayMcpService.AiGatewayMcpServiceConfigA,
 	Owner: *string,
-	ProviderConfig: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.aiGatewayMcpService.AiGatewayMcpServiceProviderConfig,
+	ProviderConfig: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18.aiGatewayMcpService.AiGatewayMcpServiceProviderConfig,
 }
 ```
 
@@ -1160,12 +1160,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.aiGatewayMcpService.AiGatewayMcpServiceConfigA.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/aigatewaymcpservice"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/aigatewaymcpservice"
 
 &aigatewaymcpservice.AiGatewayMcpServiceConfigA {
 	IncludeToolSelectors: *[]*string,
 	RateLimits: interface{},
-	SourceConnection: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.aiGatewayMcpService.AiGatewayMcpServiceConfigSourceConnection,
+	SourceConnection: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18.aiGatewayMcpService.AiGatewayMcpServiceConfigSourceConnection,
 }
 ```
 
@@ -1220,7 +1220,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.aiGatewayMcpService.AiGatewayMcpServiceConfigRateLimits.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/aigatewaymcpservice"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/aigatewaymcpservice"
 
 &aigatewaymcpservice.AiGatewayMcpServiceConfigRateLimits {
 	Key: *string,
@@ -1336,7 +1336,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.aiGatewayMcpService.AiGatewayMcpServiceConfigSourceConnection.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/aigatewaymcpservice"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/aigatewaymcpservice"
 
 &aigatewaymcpservice.AiGatewayMcpServiceConfigSourceConnection {
 	Name: *string,
@@ -1368,7 +1368,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.aiGatewayMcpService.AiGatewayMcpServiceProviderConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/aigatewaymcpservice"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/aigatewaymcpservice"
 
 &aigatewaymcpservice.AiGatewayMcpServiceProviderConfig {
 	WorkspaceId: *string,
@@ -1402,7 +1402,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.aiGatewayMcpService.AiGatewayMcpServiceConfigAOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/aigatewaymcpservice"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/aigatewaymcpservice"
 
 aigatewaymcpservice.NewAiGatewayMcpServiceConfigAOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AiGatewayMcpServiceConfigAOutputReference
 ```
@@ -1764,7 +1764,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.aiGatewayMcpService.AiGatewayMcpServiceConfigRateLimitsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/aigatewaymcpservice"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/aigatewaymcpservice"
 
 aigatewaymcpservice.NewAiGatewayMcpServiceConfigRateLimitsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AiGatewayMcpServiceConfigRateLimitsList
 ```
@@ -1924,7 +1924,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.aiGatewayMcpService.AiGatewayMcpServiceConfigRateLimitsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/aigatewaymcpservice"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/aigatewaymcpservice"
 
 aigatewaymcpservice.NewAiGatewayMcpServiceConfigRateLimitsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) AiGatewayMcpServiceConfigRateLimitsOutputReference
 ```
@@ -2380,7 +2380,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.aiGatewayMcpService.AiGatewayMcpServiceConfigSourceConnectionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/aigatewaymcpservice"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/aigatewaymcpservice"
 
 aigatewaymcpservice.NewAiGatewayMcpServiceConfigSourceConnectionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AiGatewayMcpServiceConfigSourceConnectionOutputReference
 ```
@@ -2662,7 +2662,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.aiGatewayMcpService.AiGatewayMcpServiceProviderConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/aigatewaymcpservice"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/aigatewaymcpservice"
 
 aigatewaymcpservice.NewAiGatewayMcpServiceProviderConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AiGatewayMcpServiceProviderConfigOutputReference
 ```

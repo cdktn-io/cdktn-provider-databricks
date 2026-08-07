@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/databricks/databrick
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.query.Query.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/query"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/query"
 
 query.NewQuery(scope Construct, id *string, config QueryConfig) Query
 ```
@@ -496,7 +496,7 @@ func ResetTags()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-databricks.query.Query.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/query"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/query"
 
 query.Query_IsConstruct(x interface{}) *bool
 ```
@@ -528,7 +528,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-databricks.query.Query.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/query"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/query"
 
 query.Query_IsTerraformElement(x interface{}) *bool
 ```
@@ -542,7 +542,7 @@ query.Query_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-databricks.query.Query.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/query"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/query"
 
 query.Query_IsTerraformResource(x interface{}) *bool
 ```
@@ -556,7 +556,7 @@ query.Query_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-databricks.query.Query.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/query"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/query"
 
 query.Query_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1126,7 +1126,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.query.QueryConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/query"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/query"
 
 &query.QueryConfig {
 	Connection: interface{},
@@ -1145,7 +1145,7 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/query"
 	OwnerUserName: *string,
 	Parameter: interface{},
 	ParentPath: *string,
-	ProviderConfig: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.query.QueryProviderConfig,
+	ProviderConfig: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18.query.QueryProviderConfig,
 	RunAsMode: *string,
 	Schema: *string,
 	Tags: *[]*string,
@@ -1414,16 +1414,16 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.query.QueryParameter.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/query"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/query"
 
 &query.QueryParameter {
 	Name: *string,
-	DateRangeValue: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.query.QueryParameterDateRangeValue,
-	DateValue: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.query.QueryParameterDateValue,
-	EnumValue: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.query.QueryParameterEnumValue,
-	NumericValue: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.query.QueryParameterNumericValue,
-	QueryBackedValue: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.query.QueryParameterQueryBackedValue,
-	TextValue: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.query.QueryParameterTextValue,
+	DateRangeValue: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18.query.QueryParameterDateRangeValue,
+	DateValue: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18.query.QueryParameterDateValue,
+	EnumValue: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18.query.QueryParameterEnumValue,
+	NumericValue: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18.query.QueryParameterNumericValue,
+	QueryBackedValue: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18.query.QueryParameterQueryBackedValue,
+	TextValue: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18.query.QueryParameterTextValue,
 	Title: *string,
 }
 ```
@@ -1556,10 +1556,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.query.QueryParameterDateRangeValue.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/query"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/query"
 
 &query.QueryParameterDateRangeValue {
-	DateRangeValue: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.query.QueryParameterDateRangeValueDateRangeValue,
+	DateRangeValue: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18.query.QueryParameterDateRangeValueDateRangeValue,
 	DynamicDateRangeValue: *string,
 	Precision: *string,
 	StartDayOfWeek: *f64,
@@ -1632,7 +1632,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.query.QueryParameterDateRangeValueDateRangeValue.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/query"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/query"
 
 &query.QueryParameterDateRangeValueDateRangeValue {
 	End: *string,
@@ -1678,7 +1678,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.query.QueryParameterDateValue.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/query"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/query"
 
 &query.QueryParameterDateValue {
 	DateValue: *string,
@@ -1738,11 +1738,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.query.QueryParameterEnumValue.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/query"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/query"
 
 &query.QueryParameterEnumValue {
 	EnumOptions: *string,
-	MultiValuesOptions: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.query.QueryParameterEnumValueMultiValuesOptions,
+	MultiValuesOptions: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18.query.QueryParameterEnumValueMultiValuesOptions,
 	Values: *[]*string,
 }
 ```
@@ -1800,7 +1800,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.query.QueryParameterEnumValueMultiValuesOptions.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/query"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/query"
 
 &query.QueryParameterEnumValueMultiValuesOptions {
 	Prefix: *string,
@@ -1860,7 +1860,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.query.QueryParameterNumericValue.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/query"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/query"
 
 &query.QueryParameterNumericValue {
 	Value: *f64,
@@ -1892,11 +1892,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.query.QueryParameterQueryBackedValue.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/query"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/query"
 
 &query.QueryParameterQueryBackedValue {
 	QueryId: *string,
-	MultiValuesOptions: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.query.QueryParameterQueryBackedValueMultiValuesOptions,
+	MultiValuesOptions: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18.query.QueryParameterQueryBackedValueMultiValuesOptions,
 	Values: *[]*string,
 }
 ```
@@ -1954,7 +1954,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.query.QueryParameterQueryBackedValueMultiValuesOptions.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/query"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/query"
 
 &query.QueryParameterQueryBackedValueMultiValuesOptions {
 	Prefix: *string,
@@ -2014,7 +2014,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.query.QueryParameterTextValue.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/query"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/query"
 
 &query.QueryParameterTextValue {
 	Value: *string,
@@ -2046,7 +2046,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.query.QueryProviderConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/query"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/query"
 
 &query.QueryProviderConfig {
 	WorkspaceId: *string,
@@ -2080,7 +2080,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.query.QueryParameterDateRangeValueDateRangeValueOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/query"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/query"
 
 query.NewQueryParameterDateRangeValueDateRangeValueOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) QueryParameterDateRangeValueDateRangeValueOutputReference
 ```
@@ -2373,7 +2373,7 @@ func InternalValue() QueryParameterDateRangeValueDateRangeValue
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.query.QueryParameterDateRangeValueOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/query"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/query"
 
 query.NewQueryParameterDateRangeValueOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) QueryParameterDateRangeValueOutputReference
 ```
@@ -2751,7 +2751,7 @@ func InternalValue() QueryParameterDateRangeValue
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.query.QueryParameterDateValueOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/query"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/query"
 
 query.NewQueryParameterDateValueOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) QueryParameterDateValueOutputReference
 ```
@@ -3087,7 +3087,7 @@ func InternalValue() QueryParameterDateValue
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.query.QueryParameterEnumValueMultiValuesOptionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/query"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/query"
 
 query.NewQueryParameterEnumValueMultiValuesOptionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) QueryParameterEnumValueMultiValuesOptionsOutputReference
 ```
@@ -3423,7 +3423,7 @@ func InternalValue() QueryParameterEnumValueMultiValuesOptions
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.query.QueryParameterEnumValueOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/query"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/query"
 
 query.NewQueryParameterEnumValueOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) QueryParameterEnumValueOutputReference
 ```
@@ -3772,7 +3772,7 @@ func InternalValue() QueryParameterEnumValue
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.query.QueryParameterList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/query"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/query"
 
 query.NewQueryParameterList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) QueryParameterList
 ```
@@ -3932,7 +3932,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.query.QueryParameterNumericValueOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/query"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/query"
 
 query.NewQueryParameterNumericValueOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) QueryParameterNumericValueOutputReference
 ```
@@ -4203,7 +4203,7 @@ func InternalValue() QueryParameterNumericValue
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.query.QueryParameterOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/query"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/query"
 
 query.NewQueryParameterOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) QueryParameterOutputReference
 ```
@@ -4773,7 +4773,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.query.QueryParameterQueryBackedValueMultiValuesOptionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/query"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/query"
 
 query.NewQueryParameterQueryBackedValueMultiValuesOptionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) QueryParameterQueryBackedValueMultiValuesOptionsOutputReference
 ```
@@ -5109,7 +5109,7 @@ func InternalValue() QueryParameterQueryBackedValueMultiValuesOptions
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.query.QueryParameterQueryBackedValueOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/query"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/query"
 
 query.NewQueryParameterQueryBackedValueOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) QueryParameterQueryBackedValueOutputReference
 ```
@@ -5451,7 +5451,7 @@ func InternalValue() QueryParameterQueryBackedValue
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.query.QueryParameterTextValueOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/query"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/query"
 
 query.NewQueryParameterTextValueOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) QueryParameterTextValueOutputReference
 ```
@@ -5722,7 +5722,7 @@ func InternalValue() QueryParameterTextValue
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.query.QueryProviderConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/query"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/query"
 
 query.NewQueryProviderConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) QueryProviderConfigOutputReference
 ```

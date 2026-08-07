@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/databricks/databrick
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.appSpace.AppSpace.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/appspace"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/appspace"
 
 appspace.NewAppSpace(scope Construct, id *string, config AppSpaceConfig) AppSpace
 ```
@@ -461,7 +461,7 @@ func ResetUserApiScopes()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-databricks.appSpace.AppSpace.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/appspace"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/appspace"
 
 appspace.AppSpace_IsConstruct(x interface{}) *bool
 ```
@@ -493,7 +493,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-databricks.appSpace.AppSpace.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/appspace"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/appspace"
 
 appspace.AppSpace_IsTerraformElement(x interface{}) *bool
 ```
@@ -507,7 +507,7 @@ appspace.AppSpace_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-databricks.appSpace.AppSpace.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/appspace"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/appspace"
 
 appspace.AppSpace_IsTerraformResource(x interface{}) *bool
 ```
@@ -521,7 +521,7 @@ appspace.AppSpace_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-databricks.appSpace.AppSpace.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/appspace"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/appspace"
 
 appspace.AppSpace_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1003,7 +1003,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.appSpace.AppSpaceConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/appspace"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/appspace"
 
 &appspace.AppSpaceConfig {
 	Connection: interface{},
@@ -1015,7 +1015,7 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/appspace
 	Provisioners: *[]interface{},
 	Name: *string,
 	Description: *string,
-	ProviderConfig: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.appSpace.AppSpaceProviderConfig,
+	ProviderConfig: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18.appSpace.AppSpaceProviderConfig,
 	Resources: interface{},
 	UsagePolicyId: *string,
 	UserApiScopes: *[]*string,
@@ -1189,7 +1189,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.appSpace.AppSpaceProviderConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/appspace"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/appspace"
 
 &appspace.AppSpaceProviderConfig {
 	WorkspaceId: *string,
@@ -1221,21 +1221,21 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.appSpace.AppSpaceResources.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/appspace"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/appspace"
 
 &appspace.AppSpaceResources {
 	Name: *string,
-	App: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.appSpace.AppSpaceResourcesApp,
-	Database: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.appSpace.AppSpaceResourcesDatabase,
+	App: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18.appSpace.AppSpaceResourcesApp,
+	Database: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18.appSpace.AppSpaceResourcesDatabase,
 	Description: *string,
-	Experiment: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.appSpace.AppSpaceResourcesExperiment,
-	GenieSpace: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.appSpace.AppSpaceResourcesGenieSpace,
-	Job: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.appSpace.AppSpaceResourcesJob,
-	Postgres: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.appSpace.AppSpaceResourcesPostgres,
-	Secret: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.appSpace.AppSpaceResourcesSecret,
-	ServingEndpoint: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.appSpace.AppSpaceResourcesServingEndpoint,
-	SqlWarehouse: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.appSpace.AppSpaceResourcesSqlWarehouse,
-	UcSecurable: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.appSpace.AppSpaceResourcesUcSecurable,
+	Experiment: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18.appSpace.AppSpaceResourcesExperiment,
+	GenieSpace: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18.appSpace.AppSpaceResourcesGenieSpace,
+	Job: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18.appSpace.AppSpaceResourcesJob,
+	Postgres: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18.appSpace.AppSpaceResourcesPostgres,
+	Secret: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18.appSpace.AppSpaceResourcesSecret,
+	ServingEndpoint: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18.appSpace.AppSpaceResourcesServingEndpoint,
+	SqlWarehouse: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18.appSpace.AppSpaceResourcesSqlWarehouse,
+	UcSecurable: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18.appSpace.AppSpaceResourcesUcSecurable,
 }
 ```
 
@@ -1407,7 +1407,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.appSpace.AppSpaceResourcesApp.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/appspace"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/appspace"
 
 &appspace.AppSpaceResourcesApp {
 	Name: *string,
@@ -1453,7 +1453,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.appSpace.AppSpaceResourcesDatabase.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/appspace"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/appspace"
 
 &appspace.AppSpaceResourcesDatabase {
 	DatabaseName: *string,
@@ -1513,7 +1513,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.appSpace.AppSpaceResourcesExperiment.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/appspace"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/appspace"
 
 &appspace.AppSpaceResourcesExperiment {
 	ExperimentId: *string,
@@ -1559,7 +1559,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.appSpace.AppSpaceResourcesGenieSpace.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/appspace"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/appspace"
 
 &appspace.AppSpaceResourcesGenieSpace {
 	Name: *string,
@@ -1619,7 +1619,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.appSpace.AppSpaceResourcesJob.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/appspace"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/appspace"
 
 &appspace.AppSpaceResourcesJob {
 	Id: *string,
@@ -1668,7 +1668,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.appSpace.AppSpaceResourcesPostgres.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/appspace"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/appspace"
 
 &appspace.AppSpaceResourcesPostgres {
 	Branch: *string,
@@ -1728,7 +1728,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.appSpace.AppSpaceResourcesSecret.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/appspace"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/appspace"
 
 &appspace.AppSpaceResourcesSecret {
 	Key: *string,
@@ -1788,7 +1788,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.appSpace.AppSpaceResourcesServingEndpoint.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/appspace"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/appspace"
 
 &appspace.AppSpaceResourcesServingEndpoint {
 	Name: *string,
@@ -1834,7 +1834,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.appSpace.AppSpaceResourcesSqlWarehouse.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/appspace"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/appspace"
 
 &appspace.AppSpaceResourcesSqlWarehouse {
 	Id: *string,
@@ -1883,7 +1883,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.appSpace.AppSpaceResourcesUcSecurable.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/appspace"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/appspace"
 
 &appspace.AppSpaceResourcesUcSecurable {
 	Permission: *string,
@@ -1943,7 +1943,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.appSpace.AppSpaceStatus.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/appspace"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/appspace"
 
 &appspace.AppSpaceStatus {
 
@@ -1958,7 +1958,7 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/appspace
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.appSpace.AppSpaceProviderConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/appspace"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/appspace"
 
 appspace.NewAppSpaceProviderConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppSpaceProviderConfigOutputReference
 ```
@@ -2236,7 +2236,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.appSpace.AppSpaceResourcesAppOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/appspace"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/appspace"
 
 appspace.NewAppSpaceResourcesAppOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppSpaceResourcesAppOutputReference
 ```
@@ -2543,7 +2543,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.appSpace.AppSpaceResourcesDatabaseOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/appspace"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/appspace"
 
 appspace.NewAppSpaceResourcesDatabaseOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppSpaceResourcesDatabaseOutputReference
 ```
@@ -2858,7 +2858,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.appSpace.AppSpaceResourcesExperimentOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/appspace"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/appspace"
 
 appspace.NewAppSpaceResourcesExperimentOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppSpaceResourcesExperimentOutputReference
 ```
@@ -3151,7 +3151,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.appSpace.AppSpaceResourcesGenieSpaceOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/appspace"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/appspace"
 
 appspace.NewAppSpaceResourcesGenieSpaceOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppSpaceResourcesGenieSpaceOutputReference
 ```
@@ -3466,7 +3466,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.appSpace.AppSpaceResourcesJobOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/appspace"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/appspace"
 
 appspace.NewAppSpaceResourcesJobOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppSpaceResourcesJobOutputReference
 ```
@@ -3759,7 +3759,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.appSpace.AppSpaceResourcesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/appspace"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/appspace"
 
 appspace.NewAppSpaceResourcesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AppSpaceResourcesList
 ```
@@ -3919,7 +3919,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.appSpace.AppSpaceResourcesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/appspace"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/appspace"
 
 appspace.NewAppSpaceResourcesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) AppSpaceResourcesOutputReference
 ```
@@ -4657,7 +4657,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.appSpace.AppSpaceResourcesPostgresOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/appspace"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/appspace"
 
 appspace.NewAppSpaceResourcesPostgresOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppSpaceResourcesPostgresOutputReference
 ```
@@ -4993,7 +4993,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.appSpace.AppSpaceResourcesSecretOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/appspace"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/appspace"
 
 appspace.NewAppSpaceResourcesSecretOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppSpaceResourcesSecretOutputReference
 ```
@@ -5308,7 +5308,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.appSpace.AppSpaceResourcesServingEndpointOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/appspace"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/appspace"
 
 appspace.NewAppSpaceResourcesServingEndpointOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppSpaceResourcesServingEndpointOutputReference
 ```
@@ -5601,7 +5601,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.appSpace.AppSpaceResourcesSqlWarehouseOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/appspace"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/appspace"
 
 appspace.NewAppSpaceResourcesSqlWarehouseOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppSpaceResourcesSqlWarehouseOutputReference
 ```
@@ -5894,7 +5894,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.appSpace.AppSpaceResourcesUcSecurableOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/appspace"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/appspace"
 
 appspace.NewAppSpaceResourcesUcSecurableOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppSpaceResourcesUcSecurableOutputReference
 ```
@@ -6220,7 +6220,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.appSpace.AppSpaceStatusOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/appspace"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/appspace"
 
 appspace.NewAppSpaceStatusOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppSpaceStatusOutputReference
 ```

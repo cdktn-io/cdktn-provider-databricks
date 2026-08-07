@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/databricks/databrick
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeature.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/featureengineeringfeature"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/featureengineeringfeature"
 
 featureengineeringfeature.NewFeatureEngineeringFeature(scope Construct, id *string, config FeatureEngineeringFeatureConfig) FeatureEngineeringFeature
 ```
@@ -547,7 +547,7 @@ func ResetTimeWindow()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeature.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/featureengineeringfeature"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/featureengineeringfeature"
 
 featureengineeringfeature.FeatureEngineeringFeature_IsConstruct(x interface{}) *bool
 ```
@@ -579,7 +579,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeature.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/featureengineeringfeature"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/featureengineeringfeature"
 
 featureengineeringfeature.FeatureEngineeringFeature_IsTerraformElement(x interface{}) *bool
 ```
@@ -593,7 +593,7 @@ featureengineeringfeature.FeatureEngineeringFeature_IsTerraformElement(x interfa
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeature.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/featureengineeringfeature"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/featureengineeringfeature"
 
 featureengineeringfeature.FeatureEngineeringFeature_IsTerraformResource(x interface{}) *bool
 ```
@@ -607,7 +607,7 @@ featureengineeringfeature.FeatureEngineeringFeature_IsTerraformResource(x interf
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeature.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/featureengineeringfeature"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/featureengineeringfeature"
 
 featureengineeringfeature.FeatureEngineeringFeature_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1133,7 +1133,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/featureengineeringfeature"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/featureengineeringfeature"
 
 &featureengineeringfeature.FeatureEngineeringFeatureConfig {
 	Connection: interface{},
@@ -1144,16 +1144,16 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/featuree
 	Provider: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider,
 	Provisioners: *[]interface{},
 	FullName: *string,
-	Function: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.featureEngineeringFeature.FeatureEngineeringFeatureFunction,
-	Source: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.featureEngineeringFeature.FeatureEngineeringFeatureSource,
+	Function: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18.featureEngineeringFeature.FeatureEngineeringFeatureFunction,
+	Source: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18.featureEngineeringFeature.FeatureEngineeringFeatureSource,
 	Description: *string,
 	Entities: interface{},
 	FilterCondition: *string,
 	Inputs: *[]*string,
-	LineageContext: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.featureEngineeringFeature.FeatureEngineeringFeatureLineageContext,
-	ProviderConfig: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.featureEngineeringFeature.FeatureEngineeringFeatureProviderConfig,
-	TimeseriesColumn: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.featureEngineeringFeature.FeatureEngineeringFeatureTimeseriesColumn,
-	TimeWindow: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.featureEngineeringFeature.FeatureEngineeringFeatureTimeWindow,
+	LineageContext: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18.featureEngineeringFeature.FeatureEngineeringFeatureLineageContext,
+	ProviderConfig: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18.featureEngineeringFeature.FeatureEngineeringFeatureProviderConfig,
+	TimeseriesColumn: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18.featureEngineeringFeature.FeatureEngineeringFeatureTimeseriesColumn,
+	TimeWindow: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18.featureEngineeringFeature.FeatureEngineeringFeatureTimeWindow,
 }
 ```
 
@@ -1389,7 +1389,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureEntities.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/featureengineeringfeature"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/featureengineeringfeature"
 
 &featureengineeringfeature.FeatureEngineeringFeatureEntities {
 	Name: *string,
@@ -1421,11 +1421,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunction.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/featureengineeringfeature"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/featureengineeringfeature"
 
 &featureengineeringfeature.FeatureEngineeringFeatureFunction {
-	AggregationFunction: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunction,
-	ColumnSelection: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.featureEngineeringFeature.FeatureEngineeringFeatureFunctionColumnSelection,
+	AggregationFunction: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunction,
+	ColumnSelection: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18.featureEngineeringFeature.FeatureEngineeringFeatureFunctionColumnSelection,
 	ExtraParameters: interface{},
 	FunctionType: *string,
 }
@@ -1495,27 +1495,27 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunction.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/featureengineeringfeature"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/featureengineeringfeature"
 
 &featureengineeringfeature.FeatureEngineeringFeatureFunctionAggregationFunction {
-	ApproxCountDistinct: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionApproxCountDistinct,
-	ApproxPercentile: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionApproxPercentile,
-	Avg: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionAvg,
-	CountFunction: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionCountFunction,
-	First: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionFirst,
-	FirstDistinct: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionFirstDistinct,
-	FirstN: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionFirstN,
-	Last: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionLast,
-	LastDistinct: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionLastDistinct,
-	LastN: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionLastN,
-	Max: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionMax,
-	Min: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionMin,
-	StddevPop: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionStddevPop,
-	StddevSamp: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionStddevSamp,
-	Sum: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionSum,
-	TimeWindow: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindow,
-	VarPop: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionVarPop,
-	VarSamp: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionVarSamp,
+	ApproxCountDistinct: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionApproxCountDistinct,
+	ApproxPercentile: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionApproxPercentile,
+	Avg: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionAvg,
+	CountFunction: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionCountFunction,
+	First: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionFirst,
+	FirstDistinct: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionFirstDistinct,
+	FirstN: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionFirstN,
+	Last: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionLast,
+	LastDistinct: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionLastDistinct,
+	LastN: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionLastN,
+	Max: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionMax,
+	Min: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionMin,
+	StddevPop: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionStddevPop,
+	StddevSamp: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionStddevSamp,
+	Sum: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionSum,
+	TimeWindow: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindow,
+	VarPop: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionVarPop,
+	VarSamp: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionVarSamp,
 }
 ```
 
@@ -1765,7 +1765,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionApproxCountDistinct.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/featureengineeringfeature"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/featureengineeringfeature"
 
 &featureengineeringfeature.FeatureEngineeringFeatureFunctionAggregationFunctionApproxCountDistinct {
 	Input: *string,
@@ -1811,7 +1811,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionApproxPercentile.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/featureengineeringfeature"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/featureengineeringfeature"
 
 &featureengineeringfeature.FeatureEngineeringFeatureFunctionAggregationFunctionApproxPercentile {
 	Input: *string,
@@ -1871,7 +1871,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionAvg.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/featureengineeringfeature"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/featureengineeringfeature"
 
 &featureengineeringfeature.FeatureEngineeringFeatureFunctionAggregationFunctionAvg {
 	Input: *string,
@@ -1903,7 +1903,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionCountFunction.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/featureengineeringfeature"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/featureengineeringfeature"
 
 &featureengineeringfeature.FeatureEngineeringFeatureFunctionAggregationFunctionCountFunction {
 	Input: *string,
@@ -1935,7 +1935,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionFirst.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/featureengineeringfeature"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/featureengineeringfeature"
 
 &featureengineeringfeature.FeatureEngineeringFeatureFunctionAggregationFunctionFirst {
 	Input: *string,
@@ -1967,7 +1967,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionFirstDistinct.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/featureengineeringfeature"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/featureengineeringfeature"
 
 &featureengineeringfeature.FeatureEngineeringFeatureFunctionAggregationFunctionFirstDistinct {
 	Input: *string,
@@ -2013,7 +2013,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionFirstN.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/featureengineeringfeature"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/featureengineeringfeature"
 
 &featureengineeringfeature.FeatureEngineeringFeatureFunctionAggregationFunctionFirstN {
 	Input: *string,
@@ -2059,7 +2059,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionLast.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/featureengineeringfeature"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/featureengineeringfeature"
 
 &featureengineeringfeature.FeatureEngineeringFeatureFunctionAggregationFunctionLast {
 	Input: *string,
@@ -2091,7 +2091,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionLastDistinct.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/featureengineeringfeature"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/featureengineeringfeature"
 
 &featureengineeringfeature.FeatureEngineeringFeatureFunctionAggregationFunctionLastDistinct {
 	Input: *string,
@@ -2137,7 +2137,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionLastN.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/featureengineeringfeature"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/featureengineeringfeature"
 
 &featureengineeringfeature.FeatureEngineeringFeatureFunctionAggregationFunctionLastN {
 	Input: *string,
@@ -2183,7 +2183,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionMax.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/featureengineeringfeature"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/featureengineeringfeature"
 
 &featureengineeringfeature.FeatureEngineeringFeatureFunctionAggregationFunctionMax {
 	Input: *string,
@@ -2215,7 +2215,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionMin.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/featureengineeringfeature"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/featureengineeringfeature"
 
 &featureengineeringfeature.FeatureEngineeringFeatureFunctionAggregationFunctionMin {
 	Input: *string,
@@ -2247,7 +2247,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionStddevPop.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/featureengineeringfeature"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/featureengineeringfeature"
 
 &featureengineeringfeature.FeatureEngineeringFeatureFunctionAggregationFunctionStddevPop {
 	Input: *string,
@@ -2279,7 +2279,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionStddevSamp.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/featureengineeringfeature"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/featureengineeringfeature"
 
 &featureengineeringfeature.FeatureEngineeringFeatureFunctionAggregationFunctionStddevSamp {
 	Input: *string,
@@ -2311,7 +2311,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionSum.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/featureengineeringfeature"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/featureengineeringfeature"
 
 &featureengineeringfeature.FeatureEngineeringFeatureFunctionAggregationFunctionSum {
 	Input: *string,
@@ -2343,14 +2343,14 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindow.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/featureengineeringfeature"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/featureengineeringfeature"
 
 &featureengineeringfeature.FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindow {
-	Continuous: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowContinuous,
-	Rolling: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowRolling,
-	Sawtooth: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowSawtooth,
-	Sliding: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowSliding,
-	Tumbling: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowTumbling,
+	Continuous: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowContinuous,
+	Rolling: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowRolling,
+	Sawtooth: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowSawtooth,
+	Sliding: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowSliding,
+	Tumbling: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowTumbling,
 }
 ```
 
@@ -2431,7 +2431,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowContinuous.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/featureengineeringfeature"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/featureengineeringfeature"
 
 &featureengineeringfeature.FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowContinuous {
 	WindowDuration: *string,
@@ -2477,7 +2477,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowRolling.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/featureengineeringfeature"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/featureengineeringfeature"
 
 &featureengineeringfeature.FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowRolling {
 	Delay: *string,
@@ -2523,7 +2523,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowSawtooth.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/featureengineeringfeature"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/featureengineeringfeature"
 
 &featureengineeringfeature.FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowSawtooth {
 	Delay: *string,
@@ -2569,7 +2569,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowSliding.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/featureengineeringfeature"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/featureengineeringfeature"
 
 &featureengineeringfeature.FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowSliding {
 	SlideDuration: *string,
@@ -2615,7 +2615,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowTumbling.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/featureengineeringfeature"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/featureengineeringfeature"
 
 &featureengineeringfeature.FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowTumbling {
 	WindowDuration: *string,
@@ -2647,7 +2647,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionVarPop.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/featureengineeringfeature"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/featureengineeringfeature"
 
 &featureengineeringfeature.FeatureEngineeringFeatureFunctionAggregationFunctionVarPop {
 	Input: *string,
@@ -2679,7 +2679,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionVarSamp.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/featureengineeringfeature"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/featureengineeringfeature"
 
 &featureengineeringfeature.FeatureEngineeringFeatureFunctionAggregationFunctionVarSamp {
 	Input: *string,
@@ -2711,7 +2711,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionColumnSelection.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/featureengineeringfeature"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/featureengineeringfeature"
 
 &featureengineeringfeature.FeatureEngineeringFeatureFunctionColumnSelection {
 	Column: *string,
@@ -2743,7 +2743,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionExtraParameters.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/featureengineeringfeature"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/featureengineeringfeature"
 
 &featureengineeringfeature.FeatureEngineeringFeatureFunctionExtraParameters {
 	Key: *string,
@@ -2789,10 +2789,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureLineageContext.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/featureengineeringfeature"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/featureengineeringfeature"
 
 &featureengineeringfeature.FeatureEngineeringFeatureLineageContext {
-	JobContext: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.featureEngineeringFeature.FeatureEngineeringFeatureLineageContextJobContext,
+	JobContext: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18.featureEngineeringFeature.FeatureEngineeringFeatureLineageContextJobContext,
 	NotebookId: *f64,
 }
 ```
@@ -2835,7 +2835,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureLineageContextJobContext.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/featureengineeringfeature"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/featureengineeringfeature"
 
 &featureengineeringfeature.FeatureEngineeringFeatureLineageContextJobContext {
 	JobId: *f64,
@@ -2881,7 +2881,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureProviderConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/featureengineeringfeature"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/featureengineeringfeature"
 
 &featureengineeringfeature.FeatureEngineeringFeatureProviderConfig {
 	WorkspaceId: *string,
@@ -2913,13 +2913,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSource.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/featureengineeringfeature"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/featureengineeringfeature"
 
 &featureengineeringfeature.FeatureEngineeringFeatureSource {
-	DeltaTableSource: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.featureEngineeringFeature.FeatureEngineeringFeatureSourceDeltaTableSource,
-	KafkaSource: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.featureEngineeringFeature.FeatureEngineeringFeatureSourceKafkaSource,
-	RequestSource: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.featureEngineeringFeature.FeatureEngineeringFeatureSourceRequestSource,
-	StreamSource: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.featureEngineeringFeature.FeatureEngineeringFeatureSourceStreamSource,
+	DeltaTableSource: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18.featureEngineeringFeature.FeatureEngineeringFeatureSourceDeltaTableSource,
+	KafkaSource: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18.featureEngineeringFeature.FeatureEngineeringFeatureSourceKafkaSource,
+	RequestSource: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18.featureEngineeringFeature.FeatureEngineeringFeatureSourceRequestSource,
+	StreamSource: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18.featureEngineeringFeature.FeatureEngineeringFeatureSourceStreamSource,
 }
 ```
 
@@ -2987,7 +2987,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSourceDeltaTableSource.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/featureengineeringfeature"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/featureengineeringfeature"
 
 &featureengineeringfeature.FeatureEngineeringFeatureSourceDeltaTableSource {
 	FullName: *string,
@@ -3089,13 +3089,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSourceKafkaSource.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/featureengineeringfeature"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/featureengineeringfeature"
 
 &featureengineeringfeature.FeatureEngineeringFeatureSourceKafkaSource {
 	Name: *string,
 	EntityColumnIdentifiers: interface{},
 	FilterCondition: *string,
-	TimeseriesColumnIdentifier: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.featureEngineeringFeature.FeatureEngineeringFeatureSourceKafkaSourceTimeseriesColumnIdentifier,
+	TimeseriesColumnIdentifier: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18.featureEngineeringFeature.FeatureEngineeringFeatureSourceKafkaSourceTimeseriesColumnIdentifier,
 }
 ```
 
@@ -3163,7 +3163,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSourceKafkaSourceEntityColumnIdentifiers.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/featureengineeringfeature"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/featureengineeringfeature"
 
 &featureengineeringfeature.FeatureEngineeringFeatureSourceKafkaSourceEntityColumnIdentifiers {
 	VariantExprPath: *string,
@@ -3195,7 +3195,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSourceKafkaSourceTimeseriesColumnIdentifier.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/featureengineeringfeature"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/featureengineeringfeature"
 
 &featureengineeringfeature.FeatureEngineeringFeatureSourceKafkaSourceTimeseriesColumnIdentifier {
 	VariantExprPath: *string,
@@ -3227,10 +3227,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSourceRequestSource.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/featureengineeringfeature"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/featureengineeringfeature"
 
 &featureengineeringfeature.FeatureEngineeringFeatureSourceRequestSource {
-	FlatSchema: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.featureEngineeringFeature.FeatureEngineeringFeatureSourceRequestSourceFlatSchema,
+	FlatSchema: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18.featureEngineeringFeature.FeatureEngineeringFeatureSourceRequestSourceFlatSchema,
 }
 ```
 
@@ -3259,7 +3259,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSourceRequestSourceFlatSchema.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/featureengineeringfeature"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/featureengineeringfeature"
 
 &featureengineeringfeature.FeatureEngineeringFeatureSourceRequestSourceFlatSchema {
 	Fields: interface{},
@@ -3291,7 +3291,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSourceRequestSourceFlatSchemaFields.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/featureengineeringfeature"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/featureengineeringfeature"
 
 &featureengineeringfeature.FeatureEngineeringFeatureSourceRequestSourceFlatSchemaFields {
 	DataType: *string,
@@ -3337,7 +3337,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSourceStreamSource.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/featureengineeringfeature"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/featureengineeringfeature"
 
 &featureengineeringfeature.FeatureEngineeringFeatureSourceStreamSource {
 	FullName: *string,
@@ -3411,7 +3411,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureTimeseriesColumn.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/featureengineeringfeature"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/featureengineeringfeature"
 
 &featureengineeringfeature.FeatureEngineeringFeatureTimeseriesColumn {
 	Name: *string,
@@ -3443,14 +3443,14 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureTimeWindow.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/featureengineeringfeature"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/featureengineeringfeature"
 
 &featureengineeringfeature.FeatureEngineeringFeatureTimeWindow {
-	Continuous: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.featureEngineeringFeature.FeatureEngineeringFeatureTimeWindowContinuous,
-	Rolling: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.featureEngineeringFeature.FeatureEngineeringFeatureTimeWindowRolling,
-	Sawtooth: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.featureEngineeringFeature.FeatureEngineeringFeatureTimeWindowSawtooth,
-	Sliding: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.featureEngineeringFeature.FeatureEngineeringFeatureTimeWindowSliding,
-	Tumbling: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.featureEngineeringFeature.FeatureEngineeringFeatureTimeWindowTumbling,
+	Continuous: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18.featureEngineeringFeature.FeatureEngineeringFeatureTimeWindowContinuous,
+	Rolling: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18.featureEngineeringFeature.FeatureEngineeringFeatureTimeWindowRolling,
+	Sawtooth: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18.featureEngineeringFeature.FeatureEngineeringFeatureTimeWindowSawtooth,
+	Sliding: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18.featureEngineeringFeature.FeatureEngineeringFeatureTimeWindowSliding,
+	Tumbling: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18.featureEngineeringFeature.FeatureEngineeringFeatureTimeWindowTumbling,
 }
 ```
 
@@ -3531,7 +3531,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureTimeWindowContinuous.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/featureengineeringfeature"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/featureengineeringfeature"
 
 &featureengineeringfeature.FeatureEngineeringFeatureTimeWindowContinuous {
 	WindowDuration: *string,
@@ -3577,7 +3577,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureTimeWindowRolling.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/featureengineeringfeature"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/featureengineeringfeature"
 
 &featureengineeringfeature.FeatureEngineeringFeatureTimeWindowRolling {
 	Delay: *string,
@@ -3623,7 +3623,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureTimeWindowSawtooth.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/featureengineeringfeature"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/featureengineeringfeature"
 
 &featureengineeringfeature.FeatureEngineeringFeatureTimeWindowSawtooth {
 	Delay: *string,
@@ -3669,7 +3669,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureTimeWindowSliding.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/featureengineeringfeature"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/featureengineeringfeature"
 
 &featureengineeringfeature.FeatureEngineeringFeatureTimeWindowSliding {
 	SlideDuration: *string,
@@ -3715,7 +3715,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureTimeWindowTumbling.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/featureengineeringfeature"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/featureengineeringfeature"
 
 &featureengineeringfeature.FeatureEngineeringFeatureTimeWindowTumbling {
 	WindowDuration: *string,
@@ -3749,7 +3749,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureEntitiesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/featureengineeringfeature"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/featureengineeringfeature"
 
 featureengineeringfeature.NewFeatureEngineeringFeatureEntitiesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) FeatureEngineeringFeatureEntitiesList
 ```
@@ -3909,7 +3909,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureEntitiesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/featureengineeringfeature"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/featureengineeringfeature"
 
 featureengineeringfeature.NewFeatureEngineeringFeatureEntitiesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) FeatureEngineeringFeatureEntitiesOutputReference
 ```
@@ -4198,7 +4198,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionApproxCountDistinctOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/featureengineeringfeature"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/featureengineeringfeature"
 
 featureengineeringfeature.NewFeatureEngineeringFeatureFunctionAggregationFunctionApproxCountDistinctOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) FeatureEngineeringFeatureFunctionAggregationFunctionApproxCountDistinctOutputReference
 ```
@@ -4498,7 +4498,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionApproxPercentileOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/featureengineeringfeature"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/featureengineeringfeature"
 
 featureengineeringfeature.NewFeatureEngineeringFeatureFunctionAggregationFunctionApproxPercentileOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) FeatureEngineeringFeatureFunctionAggregationFunctionApproxPercentileOutputReference
 ```
@@ -4820,7 +4820,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionAvgOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/featureengineeringfeature"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/featureengineeringfeature"
 
 featureengineeringfeature.NewFeatureEngineeringFeatureFunctionAggregationFunctionAvgOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) FeatureEngineeringFeatureFunctionAggregationFunctionAvgOutputReference
 ```
@@ -5091,7 +5091,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionCountFunctionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/featureengineeringfeature"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/featureengineeringfeature"
 
 featureengineeringfeature.NewFeatureEngineeringFeatureFunctionAggregationFunctionCountFunctionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) FeatureEngineeringFeatureFunctionAggregationFunctionCountFunctionOutputReference
 ```
@@ -5362,7 +5362,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionFirstDistinctOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/featureengineeringfeature"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/featureengineeringfeature"
 
 featureengineeringfeature.NewFeatureEngineeringFeatureFunctionAggregationFunctionFirstDistinctOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) FeatureEngineeringFeatureFunctionAggregationFunctionFirstDistinctOutputReference
 ```
@@ -5655,7 +5655,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionFirstNOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/featureengineeringfeature"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/featureengineeringfeature"
 
 featureengineeringfeature.NewFeatureEngineeringFeatureFunctionAggregationFunctionFirstNOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) FeatureEngineeringFeatureFunctionAggregationFunctionFirstNOutputReference
 ```
@@ -5948,7 +5948,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionFirstOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/featureengineeringfeature"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/featureengineeringfeature"
 
 featureengineeringfeature.NewFeatureEngineeringFeatureFunctionAggregationFunctionFirstOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) FeatureEngineeringFeatureFunctionAggregationFunctionFirstOutputReference
 ```
@@ -6219,7 +6219,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionLastDistinctOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/featureengineeringfeature"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/featureengineeringfeature"
 
 featureengineeringfeature.NewFeatureEngineeringFeatureFunctionAggregationFunctionLastDistinctOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) FeatureEngineeringFeatureFunctionAggregationFunctionLastDistinctOutputReference
 ```
@@ -6512,7 +6512,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionLastNOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/featureengineeringfeature"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/featureengineeringfeature"
 
 featureengineeringfeature.NewFeatureEngineeringFeatureFunctionAggregationFunctionLastNOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) FeatureEngineeringFeatureFunctionAggregationFunctionLastNOutputReference
 ```
@@ -6805,7 +6805,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionLastOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/featureengineeringfeature"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/featureengineeringfeature"
 
 featureengineeringfeature.NewFeatureEngineeringFeatureFunctionAggregationFunctionLastOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) FeatureEngineeringFeatureFunctionAggregationFunctionLastOutputReference
 ```
@@ -7076,7 +7076,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionMaxOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/featureengineeringfeature"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/featureengineeringfeature"
 
 featureengineeringfeature.NewFeatureEngineeringFeatureFunctionAggregationFunctionMaxOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) FeatureEngineeringFeatureFunctionAggregationFunctionMaxOutputReference
 ```
@@ -7347,7 +7347,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionMinOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/featureengineeringfeature"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/featureengineeringfeature"
 
 featureengineeringfeature.NewFeatureEngineeringFeatureFunctionAggregationFunctionMinOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) FeatureEngineeringFeatureFunctionAggregationFunctionMinOutputReference
 ```
@@ -7618,7 +7618,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/featureengineeringfeature"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/featureengineeringfeature"
 
 featureengineeringfeature.NewFeatureEngineeringFeatureFunctionAggregationFunctionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) FeatureEngineeringFeatureFunctionAggregationFunctionOutputReference
 ```
@@ -8623,7 +8623,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionStddevPopOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/featureengineeringfeature"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/featureengineeringfeature"
 
 featureengineeringfeature.NewFeatureEngineeringFeatureFunctionAggregationFunctionStddevPopOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) FeatureEngineeringFeatureFunctionAggregationFunctionStddevPopOutputReference
 ```
@@ -8894,7 +8894,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionStddevSampOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/featureengineeringfeature"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/featureengineeringfeature"
 
 featureengineeringfeature.NewFeatureEngineeringFeatureFunctionAggregationFunctionStddevSampOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) FeatureEngineeringFeatureFunctionAggregationFunctionStddevSampOutputReference
 ```
@@ -9165,7 +9165,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionSumOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/featureengineeringfeature"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/featureengineeringfeature"
 
 featureengineeringfeature.NewFeatureEngineeringFeatureFunctionAggregationFunctionSumOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) FeatureEngineeringFeatureFunctionAggregationFunctionSumOutputReference
 ```
@@ -9436,7 +9436,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowContinuousOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/featureengineeringfeature"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/featureengineeringfeature"
 
 featureengineeringfeature.NewFeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowContinuousOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowContinuousOutputReference
 ```
@@ -9736,7 +9736,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/featureengineeringfeature"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/featureengineeringfeature"
 
 featureengineeringfeature.NewFeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowOutputReference
 ```
@@ -10195,7 +10195,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowRollingOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/featureengineeringfeature"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/featureengineeringfeature"
 
 featureengineeringfeature.NewFeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowRollingOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowRollingOutputReference
 ```
@@ -10502,7 +10502,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowSawtoothOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/featureengineeringfeature"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/featureengineeringfeature"
 
 featureengineeringfeature.NewFeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowSawtoothOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowSawtoothOutputReference
 ```
@@ -10809,7 +10809,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowSlidingOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/featureengineeringfeature"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/featureengineeringfeature"
 
 featureengineeringfeature.NewFeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowSlidingOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowSlidingOutputReference
 ```
@@ -11109,7 +11109,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowTumblingOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/featureengineeringfeature"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/featureengineeringfeature"
 
 featureengineeringfeature.NewFeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowTumblingOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowTumblingOutputReference
 ```
@@ -11380,7 +11380,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionVarPopOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/featureengineeringfeature"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/featureengineeringfeature"
 
 featureengineeringfeature.NewFeatureEngineeringFeatureFunctionAggregationFunctionVarPopOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) FeatureEngineeringFeatureFunctionAggregationFunctionVarPopOutputReference
 ```
@@ -11651,7 +11651,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionVarSampOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/featureengineeringfeature"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/featureengineeringfeature"
 
 featureengineeringfeature.NewFeatureEngineeringFeatureFunctionAggregationFunctionVarSampOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) FeatureEngineeringFeatureFunctionAggregationFunctionVarSampOutputReference
 ```
@@ -11922,7 +11922,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionColumnSelectionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/featureengineeringfeature"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/featureengineeringfeature"
 
 featureengineeringfeature.NewFeatureEngineeringFeatureFunctionColumnSelectionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) FeatureEngineeringFeatureFunctionColumnSelectionOutputReference
 ```
@@ -12193,7 +12193,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionExtraParametersList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/featureengineeringfeature"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/featureengineeringfeature"
 
 featureengineeringfeature.NewFeatureEngineeringFeatureFunctionExtraParametersList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) FeatureEngineeringFeatureFunctionExtraParametersList
 ```
@@ -12353,7 +12353,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionExtraParametersOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/featureengineeringfeature"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/featureengineeringfeature"
 
 featureengineeringfeature.NewFeatureEngineeringFeatureFunctionExtraParametersOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) FeatureEngineeringFeatureFunctionExtraParametersOutputReference
 ```
@@ -12664,7 +12664,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/featureengineeringfeature"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/featureengineeringfeature"
 
 featureengineeringfeature.NewFeatureEngineeringFeatureFunctionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) FeatureEngineeringFeatureFunctionOutputReference
 ```
@@ -13068,7 +13068,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureLineageContextJobContextOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/featureengineeringfeature"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/featureengineeringfeature"
 
 featureengineeringfeature.NewFeatureEngineeringFeatureLineageContextJobContextOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) FeatureEngineeringFeatureLineageContextJobContextOutputReference
 ```
@@ -13375,7 +13375,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureLineageContextOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/featureengineeringfeature"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/featureengineeringfeature"
 
 featureengineeringfeature.NewFeatureEngineeringFeatureLineageContextOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) FeatureEngineeringFeatureLineageContextOutputReference
 ```
@@ -13695,7 +13695,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureProviderConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/featureengineeringfeature"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/featureengineeringfeature"
 
 featureengineeringfeature.NewFeatureEngineeringFeatureProviderConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) FeatureEngineeringFeatureProviderConfigOutputReference
 ```
@@ -13973,7 +13973,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSourceDeltaTableSourceOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/featureengineeringfeature"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/featureengineeringfeature"
 
 featureengineeringfeature.NewFeatureEngineeringFeatureSourceDeltaTableSourceOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) FeatureEngineeringFeatureSourceDeltaTableSourceOutputReference
 ```
@@ -14389,7 +14389,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSourceKafkaSourceEntityColumnIdentifiersList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/featureengineeringfeature"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/featureengineeringfeature"
 
 featureengineeringfeature.NewFeatureEngineeringFeatureSourceKafkaSourceEntityColumnIdentifiersList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) FeatureEngineeringFeatureSourceKafkaSourceEntityColumnIdentifiersList
 ```
@@ -14549,7 +14549,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSourceKafkaSourceEntityColumnIdentifiersOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/featureengineeringfeature"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/featureengineeringfeature"
 
 featureengineeringfeature.NewFeatureEngineeringFeatureSourceKafkaSourceEntityColumnIdentifiersOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) FeatureEngineeringFeatureSourceKafkaSourceEntityColumnIdentifiersOutputReference
 ```
@@ -14838,7 +14838,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSourceKafkaSourceOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/featureengineeringfeature"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/featureengineeringfeature"
 
 featureengineeringfeature.NewFeatureEngineeringFeatureSourceKafkaSourceOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) FeatureEngineeringFeatureSourceKafkaSourceOutputReference
 ```
@@ -15222,7 +15222,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSourceKafkaSourceTimeseriesColumnIdentifierOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/featureengineeringfeature"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/featureengineeringfeature"
 
 featureengineeringfeature.NewFeatureEngineeringFeatureSourceKafkaSourceTimeseriesColumnIdentifierOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) FeatureEngineeringFeatureSourceKafkaSourceTimeseriesColumnIdentifierOutputReference
 ```
@@ -15493,7 +15493,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSourceOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/featureengineeringfeature"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/featureengineeringfeature"
 
 featureengineeringfeature.NewFeatureEngineeringFeatureSourceOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) FeatureEngineeringFeatureSourceOutputReference
 ```
@@ -15910,7 +15910,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSourceRequestSourceFlatSchemaFieldsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/featureengineeringfeature"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/featureengineeringfeature"
 
 featureengineeringfeature.NewFeatureEngineeringFeatureSourceRequestSourceFlatSchemaFieldsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) FeatureEngineeringFeatureSourceRequestSourceFlatSchemaFieldsList
 ```
@@ -16070,7 +16070,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSourceRequestSourceFlatSchemaFieldsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/featureengineeringfeature"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/featureengineeringfeature"
 
 featureengineeringfeature.NewFeatureEngineeringFeatureSourceRequestSourceFlatSchemaFieldsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) FeatureEngineeringFeatureSourceRequestSourceFlatSchemaFieldsOutputReference
 ```
@@ -16381,7 +16381,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSourceRequestSourceFlatSchemaOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/featureengineeringfeature"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/featureengineeringfeature"
 
 featureengineeringfeature.NewFeatureEngineeringFeatureSourceRequestSourceFlatSchemaOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) FeatureEngineeringFeatureSourceRequestSourceFlatSchemaOutputReference
 ```
@@ -16665,7 +16665,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSourceRequestSourceOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/featureengineeringfeature"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/featureengineeringfeature"
 
 featureengineeringfeature.NewFeatureEngineeringFeatureSourceRequestSourceOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) FeatureEngineeringFeatureSourceRequestSourceOutputReference
 ```
@@ -16956,7 +16956,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSourceStreamSourceOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/featureengineeringfeature"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/featureengineeringfeature"
 
 featureengineeringfeature.NewFeatureEngineeringFeatureSourceStreamSourceOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) FeatureEngineeringFeatureSourceStreamSourceOutputReference
 ```
@@ -17314,7 +17314,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureTimeseriesColumnOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/featureengineeringfeature"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/featureengineeringfeature"
 
 featureengineeringfeature.NewFeatureEngineeringFeatureTimeseriesColumnOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) FeatureEngineeringFeatureTimeseriesColumnOutputReference
 ```
@@ -17585,7 +17585,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureTimeWindowContinuousOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/featureengineeringfeature"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/featureengineeringfeature"
 
 featureengineeringfeature.NewFeatureEngineeringFeatureTimeWindowContinuousOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) FeatureEngineeringFeatureTimeWindowContinuousOutputReference
 ```
@@ -17885,7 +17885,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureTimeWindowOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/featureengineeringfeature"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/featureengineeringfeature"
 
 featureengineeringfeature.NewFeatureEngineeringFeatureTimeWindowOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) FeatureEngineeringFeatureTimeWindowOutputReference
 ```
@@ -18344,7 +18344,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureTimeWindowRollingOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/featureengineeringfeature"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/featureengineeringfeature"
 
 featureengineeringfeature.NewFeatureEngineeringFeatureTimeWindowRollingOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) FeatureEngineeringFeatureTimeWindowRollingOutputReference
 ```
@@ -18651,7 +18651,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureTimeWindowSawtoothOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/featureengineeringfeature"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/featureengineeringfeature"
 
 featureengineeringfeature.NewFeatureEngineeringFeatureTimeWindowSawtoothOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) FeatureEngineeringFeatureTimeWindowSawtoothOutputReference
 ```
@@ -18958,7 +18958,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureTimeWindowSlidingOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/featureengineeringfeature"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/featureengineeringfeature"
 
 featureengineeringfeature.NewFeatureEngineeringFeatureTimeWindowSlidingOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) FeatureEngineeringFeatureTimeWindowSlidingOutputReference
 ```
@@ -19258,7 +19258,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureTimeWindowTumblingOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/featureengineeringfeature"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/featureengineeringfeature"
 
 featureengineeringfeature.NewFeatureEngineeringFeatureTimeWindowTumblingOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) FeatureEngineeringFeatureTimeWindowTumblingOutputReference
 ```

@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/databricks/databrick
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksDatabaseSyncedDatabaseTable.DataDatabricksDatabaseSyncedDatabaseTable.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksdatabasesynceddatabasetable"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksdatabasesynceddatabasetable"
 
 datadatabricksdatabasesynceddatabasetable.NewDataDatabricksDatabaseSyncedDatabaseTable(scope Construct, id *string, config DataDatabricksDatabaseSyncedDatabaseTableConfig) DataDatabricksDatabaseSyncedDatabaseTable
 ```
@@ -318,7 +318,7 @@ func ResetProviderConfig()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-databricks.dataDatabricksDatabaseSyncedDatabaseTable.DataDatabricksDatabaseSyncedDatabaseTable.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksdatabasesynceddatabasetable"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksdatabasesynceddatabasetable"
 
 datadatabricksdatabasesynceddatabasetable.DataDatabricksDatabaseSyncedDatabaseTable_IsConstruct(x interface{}) *bool
 ```
@@ -350,7 +350,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-databricks.dataDatabricksDatabaseSyncedDatabaseTable.DataDatabricksDatabaseSyncedDatabaseTable.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksdatabasesynceddatabasetable"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksdatabasesynceddatabasetable"
 
 datadatabricksdatabasesynceddatabasetable.DataDatabricksDatabaseSyncedDatabaseTable_IsTerraformElement(x interface{}) *bool
 ```
@@ -364,7 +364,7 @@ datadatabricksdatabasesynceddatabasetable.DataDatabricksDatabaseSyncedDatabaseTa
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-databricks.dataDatabricksDatabaseSyncedDatabaseTable.DataDatabricksDatabaseSyncedDatabaseTable.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksdatabasesynceddatabasetable"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksdatabasesynceddatabasetable"
 
 datadatabricksdatabasesynceddatabasetable.DataDatabricksDatabaseSyncedDatabaseTable_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -378,7 +378,7 @@ datadatabricksdatabasesynceddatabasetable.DataDatabricksDatabaseSyncedDatabaseTa
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-databricks.dataDatabricksDatabaseSyncedDatabaseTable.DataDatabricksDatabaseSyncedDatabaseTable.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksdatabasesynceddatabasetable"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksdatabasesynceddatabasetable"
 
 datadatabricksdatabasesynceddatabasetable.DataDatabricksDatabaseSyncedDatabaseTable_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -706,7 +706,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksDatabaseSyncedDatabaseTable.DataDatabricksDatabaseSyncedDatabaseTableConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksdatabasesynceddatabasetable"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksdatabasesynceddatabasetable"
 
 &datadatabricksdatabasesynceddatabasetable.DataDatabricksDatabaseSyncedDatabaseTableConfig {
 	Connection: interface{},
@@ -717,7 +717,7 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadata
 	Provider: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider,
 	Provisioners: *[]interface{},
 	Name: *string,
-	ProviderConfig: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.dataDatabricksDatabaseSyncedDatabaseTable.DataDatabricksDatabaseSyncedDatabaseTableProviderConfig,
+	ProviderConfig: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18.dataDatabricksDatabaseSyncedDatabaseTable.DataDatabricksDatabaseSyncedDatabaseTableProviderConfig,
 }
 ```
 
@@ -836,13 +836,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksDatabaseSyncedDatabaseTable.DataDatabricksDatabaseSyncedDatabaseTableDataSynchronizationStatus.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksdatabasesynceddatabasetable"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksdatabasesynceddatabasetable"
 
 &datadatabricksdatabasesynceddatabasetable.DataDatabricksDatabaseSyncedDatabaseTableDataSynchronizationStatus {
-	ContinuousUpdateStatus: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.dataDatabricksDatabaseSyncedDatabaseTable.DataDatabricksDatabaseSyncedDatabaseTableDataSynchronizationStatusContinuousUpdateStatus,
-	FailedStatus: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.dataDatabricksDatabaseSyncedDatabaseTable.DataDatabricksDatabaseSyncedDatabaseTableDataSynchronizationStatusFailedStatus,
-	ProvisioningStatus: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.dataDatabricksDatabaseSyncedDatabaseTable.DataDatabricksDatabaseSyncedDatabaseTableDataSynchronizationStatusProvisioningStatus,
-	TriggeredUpdateStatus: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.dataDatabricksDatabaseSyncedDatabaseTable.DataDatabricksDatabaseSyncedDatabaseTableDataSynchronizationStatusTriggeredUpdateStatus,
+	ContinuousUpdateStatus: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18.dataDatabricksDatabaseSyncedDatabaseTable.DataDatabricksDatabaseSyncedDatabaseTableDataSynchronizationStatusContinuousUpdateStatus,
+	FailedStatus: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18.dataDatabricksDatabaseSyncedDatabaseTable.DataDatabricksDatabaseSyncedDatabaseTableDataSynchronizationStatusFailedStatus,
+	ProvisioningStatus: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18.dataDatabricksDatabaseSyncedDatabaseTable.DataDatabricksDatabaseSyncedDatabaseTableDataSynchronizationStatusProvisioningStatus,
+	TriggeredUpdateStatus: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18.dataDatabricksDatabaseSyncedDatabaseTable.DataDatabricksDatabaseSyncedDatabaseTableDataSynchronizationStatusTriggeredUpdateStatus,
 }
 ```
 
@@ -910,7 +910,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksDatabaseSyncedDatabaseTable.DataDatabricksDatabaseSyncedDatabaseTableDataSynchronizationStatusContinuousUpdateStatus.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksdatabasesynceddatabasetable"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksdatabasesynceddatabasetable"
 
 &datadatabricksdatabasesynceddatabasetable.DataDatabricksDatabaseSyncedDatabaseTableDataSynchronizationStatusContinuousUpdateStatus {
 
@@ -923,7 +923,7 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadata
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksDatabaseSyncedDatabaseTable.DataDatabricksDatabaseSyncedDatabaseTableDataSynchronizationStatusContinuousUpdateStatusInitialPipelineSyncProgress.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksdatabasesynceddatabasetable"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksdatabasesynceddatabasetable"
 
 &datadatabricksdatabasesynceddatabasetable.DataDatabricksDatabaseSyncedDatabaseTableDataSynchronizationStatusContinuousUpdateStatusInitialPipelineSyncProgress {
 
@@ -936,7 +936,7 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadata
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksDatabaseSyncedDatabaseTable.DataDatabricksDatabaseSyncedDatabaseTableDataSynchronizationStatusFailedStatus.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksdatabasesynceddatabasetable"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksdatabasesynceddatabasetable"
 
 &datadatabricksdatabasesynceddatabasetable.DataDatabricksDatabaseSyncedDatabaseTableDataSynchronizationStatusFailedStatus {
 
@@ -949,7 +949,7 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadata
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksDatabaseSyncedDatabaseTable.DataDatabricksDatabaseSyncedDatabaseTableDataSynchronizationStatusLastSync.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksdatabasesynceddatabasetable"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksdatabasesynceddatabasetable"
 
 &datadatabricksdatabasesynceddatabasetable.DataDatabricksDatabaseSyncedDatabaseTableDataSynchronizationStatusLastSync {
 
@@ -962,7 +962,7 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadata
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksDatabaseSyncedDatabaseTable.DataDatabricksDatabaseSyncedDatabaseTableDataSynchronizationStatusLastSyncDeltaTableSyncInfo.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksdatabasesynceddatabasetable"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksdatabasesynceddatabasetable"
 
 &datadatabricksdatabasesynceddatabasetable.DataDatabricksDatabaseSyncedDatabaseTableDataSynchronizationStatusLastSyncDeltaTableSyncInfo {
 
@@ -975,7 +975,7 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadata
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksDatabaseSyncedDatabaseTable.DataDatabricksDatabaseSyncedDatabaseTableDataSynchronizationStatusProvisioningStatus.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksdatabasesynceddatabasetable"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksdatabasesynceddatabasetable"
 
 &datadatabricksdatabasesynceddatabasetable.DataDatabricksDatabaseSyncedDatabaseTableDataSynchronizationStatusProvisioningStatus {
 
@@ -988,7 +988,7 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadata
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksDatabaseSyncedDatabaseTable.DataDatabricksDatabaseSyncedDatabaseTableDataSynchronizationStatusProvisioningStatusInitialPipelineSyncProgress.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksdatabasesynceddatabasetable"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksdatabasesynceddatabasetable"
 
 &datadatabricksdatabasesynceddatabasetable.DataDatabricksDatabaseSyncedDatabaseTableDataSynchronizationStatusProvisioningStatusInitialPipelineSyncProgress {
 
@@ -1001,7 +1001,7 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadata
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksDatabaseSyncedDatabaseTable.DataDatabricksDatabaseSyncedDatabaseTableDataSynchronizationStatusTriggeredUpdateStatus.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksdatabasesynceddatabasetable"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksdatabasesynceddatabasetable"
 
 &datadatabricksdatabasesynceddatabasetable.DataDatabricksDatabaseSyncedDatabaseTableDataSynchronizationStatusTriggeredUpdateStatus {
 
@@ -1014,7 +1014,7 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadata
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksDatabaseSyncedDatabaseTable.DataDatabricksDatabaseSyncedDatabaseTableDataSynchronizationStatusTriggeredUpdateStatusTriggeredUpdateProgress.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksdatabasesynceddatabasetable"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksdatabasesynceddatabasetable"
 
 &datadatabricksdatabasesynceddatabasetable.DataDatabricksDatabaseSyncedDatabaseTableDataSynchronizationStatusTriggeredUpdateStatusTriggeredUpdateProgress {
 
@@ -1027,7 +1027,7 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadata
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksDatabaseSyncedDatabaseTable.DataDatabricksDatabaseSyncedDatabaseTableProviderConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksdatabasesynceddatabasetable"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksdatabasesynceddatabasetable"
 
 &datadatabricksdatabasesynceddatabasetable.DataDatabricksDatabaseSyncedDatabaseTableProviderConfig {
 	WorkspaceId: *string,
@@ -1059,13 +1059,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksDatabaseSyncedDatabaseTable.DataDatabricksDatabaseSyncedDatabaseTableSpec.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksdatabasesynceddatabasetable"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksdatabasesynceddatabasetable"
 
 &datadatabricksdatabasesynceddatabasetable.DataDatabricksDatabaseSyncedDatabaseTableSpec {
 	AcceleratedSync: interface{},
 	CreateDatabaseObjectsIfMissing: interface{},
 	ExistingPipelineId: *string,
-	NewPipelineSpec: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.dataDatabricksDatabaseSyncedDatabaseTable.DataDatabricksDatabaseSyncedDatabaseTableSpecNewPipelineSpec,
+	NewPipelineSpec: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18.dataDatabricksDatabaseSyncedDatabaseTable.DataDatabricksDatabaseSyncedDatabaseTableSpecNewPipelineSpec,
 	PrimaryKeyColumns: *[]*string,
 	SchedulingPolicy: *string,
 	SourceTableFullName: *string,
@@ -1203,7 +1203,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksDatabaseSyncedDatabaseTable.DataDatabricksDatabaseSyncedDatabaseTableSpecNewPipelineSpec.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksdatabasesynceddatabasetable"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksdatabasesynceddatabasetable"
 
 &datadatabricksdatabasesynceddatabasetable.DataDatabricksDatabaseSyncedDatabaseTableSpecNewPipelineSpec {
 	BudgetPolicyId: *string,
@@ -1263,7 +1263,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksDatabaseSyncedDatabaseTable.DataDatabricksDatabaseSyncedDatabaseTableSpecTypeOverrides.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksdatabasesynceddatabasetable"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksdatabasesynceddatabasetable"
 
 &datadatabricksdatabasesynceddatabasetable.DataDatabricksDatabaseSyncedDatabaseTableSpecTypeOverrides {
 	ColumnName: *string,
@@ -1325,7 +1325,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksDatabaseSyncedDatabaseTable.DataDatabricksDatabaseSyncedDatabaseTableDataSynchronizationStatusContinuousUpdateStatusInitialPipelineSyncProgressOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksdatabasesynceddatabasetable"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksdatabasesynceddatabasetable"
 
 datadatabricksdatabasesynceddatabasetable.NewDataDatabricksDatabaseSyncedDatabaseTableDataSynchronizationStatusContinuousUpdateStatusInitialPipelineSyncProgressOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksDatabaseSyncedDatabaseTableDataSynchronizationStatusContinuousUpdateStatusInitialPipelineSyncProgressOutputReference
 ```
@@ -1640,7 +1640,7 @@ func InternalValue() DataDatabricksDatabaseSyncedDatabaseTableDataSynchronizatio
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksDatabaseSyncedDatabaseTable.DataDatabricksDatabaseSyncedDatabaseTableDataSynchronizationStatusContinuousUpdateStatusOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksdatabasesynceddatabasetable"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksdatabasesynceddatabasetable"
 
 datadatabricksdatabasesynceddatabasetable.NewDataDatabricksDatabaseSyncedDatabaseTableDataSynchronizationStatusContinuousUpdateStatusOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksDatabaseSyncedDatabaseTableDataSynchronizationStatusContinuousUpdateStatusOutputReference
 ```
@@ -1922,7 +1922,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksDatabaseSyncedDatabaseTable.DataDatabricksDatabaseSyncedDatabaseTableDataSynchronizationStatusFailedStatusOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksdatabasesynceddatabasetable"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksdatabasesynceddatabasetable"
 
 datadatabricksdatabasesynceddatabasetable.NewDataDatabricksDatabaseSyncedDatabaseTableDataSynchronizationStatusFailedStatusOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksDatabaseSyncedDatabaseTableDataSynchronizationStatusFailedStatusOutputReference
 ```
@@ -2193,7 +2193,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksDatabaseSyncedDatabaseTable.DataDatabricksDatabaseSyncedDatabaseTableDataSynchronizationStatusLastSyncDeltaTableSyncInfoOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksdatabasesynceddatabasetable"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksdatabasesynceddatabasetable"
 
 datadatabricksdatabasesynceddatabasetable.NewDataDatabricksDatabaseSyncedDatabaseTableDataSynchronizationStatusLastSyncDeltaTableSyncInfoOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksDatabaseSyncedDatabaseTableDataSynchronizationStatusLastSyncDeltaTableSyncInfoOutputReference
 ```
@@ -2464,7 +2464,7 @@ func InternalValue() DataDatabricksDatabaseSyncedDatabaseTableDataSynchronizatio
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksDatabaseSyncedDatabaseTable.DataDatabricksDatabaseSyncedDatabaseTableDataSynchronizationStatusLastSyncOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksdatabasesynceddatabasetable"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksdatabasesynceddatabasetable"
 
 datadatabricksdatabasesynceddatabasetable.NewDataDatabricksDatabaseSyncedDatabaseTableDataSynchronizationStatusLastSyncOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksDatabaseSyncedDatabaseTableDataSynchronizationStatusLastSyncOutputReference
 ```
@@ -2746,7 +2746,7 @@ func InternalValue() DataDatabricksDatabaseSyncedDatabaseTableDataSynchronizatio
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksDatabaseSyncedDatabaseTable.DataDatabricksDatabaseSyncedDatabaseTableDataSynchronizationStatusOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksdatabasesynceddatabasetable"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksdatabasesynceddatabasetable"
 
 datadatabricksdatabasesynceddatabasetable.NewDataDatabricksDatabaseSyncedDatabaseTableDataSynchronizationStatusOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksDatabaseSyncedDatabaseTableDataSynchronizationStatusOutputReference
 ```
@@ -3207,7 +3207,7 @@ func InternalValue() DataDatabricksDatabaseSyncedDatabaseTableDataSynchronizatio
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksDatabaseSyncedDatabaseTable.DataDatabricksDatabaseSyncedDatabaseTableDataSynchronizationStatusProvisioningStatusInitialPipelineSyncProgressOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksdatabasesynceddatabasetable"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksdatabasesynceddatabasetable"
 
 datadatabricksdatabasesynceddatabasetable.NewDataDatabricksDatabaseSyncedDatabaseTableDataSynchronizationStatusProvisioningStatusInitialPipelineSyncProgressOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksDatabaseSyncedDatabaseTableDataSynchronizationStatusProvisioningStatusInitialPipelineSyncProgressOutputReference
 ```
@@ -3522,7 +3522,7 @@ func InternalValue() DataDatabricksDatabaseSyncedDatabaseTableDataSynchronizatio
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksDatabaseSyncedDatabaseTable.DataDatabricksDatabaseSyncedDatabaseTableDataSynchronizationStatusProvisioningStatusOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksdatabasesynceddatabasetable"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksdatabasesynceddatabasetable"
 
 datadatabricksdatabasesynceddatabasetable.NewDataDatabricksDatabaseSyncedDatabaseTableDataSynchronizationStatusProvisioningStatusOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksDatabaseSyncedDatabaseTableDataSynchronizationStatusProvisioningStatusOutputReference
 ```
@@ -3782,7 +3782,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksDatabaseSyncedDatabaseTable.DataDatabricksDatabaseSyncedDatabaseTableDataSynchronizationStatusTriggeredUpdateStatusOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksdatabasesynceddatabasetable"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksdatabasesynceddatabasetable"
 
 datadatabricksdatabasesynceddatabasetable.NewDataDatabricksDatabaseSyncedDatabaseTableDataSynchronizationStatusTriggeredUpdateStatusOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksDatabaseSyncedDatabaseTableDataSynchronizationStatusTriggeredUpdateStatusOutputReference
 ```
@@ -4064,7 +4064,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksDatabaseSyncedDatabaseTable.DataDatabricksDatabaseSyncedDatabaseTableDataSynchronizationStatusTriggeredUpdateStatusTriggeredUpdateProgressOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksdatabasesynceddatabasetable"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksdatabasesynceddatabasetable"
 
 datadatabricksdatabasesynceddatabasetable.NewDataDatabricksDatabaseSyncedDatabaseTableDataSynchronizationStatusTriggeredUpdateStatusTriggeredUpdateProgressOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksDatabaseSyncedDatabaseTableDataSynchronizationStatusTriggeredUpdateStatusTriggeredUpdateProgressOutputReference
 ```
@@ -4379,7 +4379,7 @@ func InternalValue() DataDatabricksDatabaseSyncedDatabaseTableDataSynchronizatio
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksDatabaseSyncedDatabaseTable.DataDatabricksDatabaseSyncedDatabaseTableProviderConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksdatabasesynceddatabasetable"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksdatabasesynceddatabasetable"
 
 datadatabricksdatabasesynceddatabasetable.NewDataDatabricksDatabaseSyncedDatabaseTableProviderConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksDatabaseSyncedDatabaseTableProviderConfigOutputReference
 ```
@@ -4657,7 +4657,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksDatabaseSyncedDatabaseTable.DataDatabricksDatabaseSyncedDatabaseTableSpecNewPipelineSpecOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksdatabasesynceddatabasetable"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksdatabasesynceddatabasetable"
 
 datadatabricksdatabasesynceddatabasetable.NewDataDatabricksDatabaseSyncedDatabaseTableSpecNewPipelineSpecOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksDatabaseSyncedDatabaseTableSpecNewPipelineSpecOutputReference
 ```
@@ -4993,7 +4993,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksDatabaseSyncedDatabaseTable.DataDatabricksDatabaseSyncedDatabaseTableSpecOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksdatabasesynceddatabasetable"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksdatabasesynceddatabasetable"
 
 datadatabricksdatabasesynceddatabasetable.NewDataDatabricksDatabaseSyncedDatabaseTableSpecOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksDatabaseSyncedDatabaseTableSpecOutputReference
 ```
@@ -5529,7 +5529,7 @@ func InternalValue() DataDatabricksDatabaseSyncedDatabaseTableSpec
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksDatabaseSyncedDatabaseTable.DataDatabricksDatabaseSyncedDatabaseTableSpecTypeOverridesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksdatabasesynceddatabasetable"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksdatabasesynceddatabasetable"
 
 datadatabricksdatabasesynceddatabasetable.NewDataDatabricksDatabaseSyncedDatabaseTableSpecTypeOverridesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDatabricksDatabaseSyncedDatabaseTableSpecTypeOverridesList
 ```
@@ -5689,7 +5689,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksDatabaseSyncedDatabaseTable.DataDatabricksDatabaseSyncedDatabaseTableSpecTypeOverridesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksdatabasesynceddatabasetable"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksdatabasesynceddatabasetable"
 
 datadatabricksdatabasesynceddatabasetable.NewDataDatabricksDatabaseSyncedDatabaseTableSpecTypeOverridesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataDatabricksDatabaseSyncedDatabaseTableSpecTypeOverridesOutputReference
 ```

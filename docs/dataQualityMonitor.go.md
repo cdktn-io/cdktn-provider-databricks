@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/databricks/databrick
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitor.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/dataqualitymonitor"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/dataqualitymonitor"
 
 dataqualitymonitor.NewDataQualityMonitor(scope Construct, id *string, config DataQualityMonitorConfig) DataQualityMonitor
 ```
@@ -460,7 +460,7 @@ func ResetProviderConfig()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitor.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/dataqualitymonitor"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/dataqualitymonitor"
 
 dataqualitymonitor.DataQualityMonitor_IsConstruct(x interface{}) *bool
 ```
@@ -492,7 +492,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitor.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/dataqualitymonitor"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/dataqualitymonitor"
 
 dataqualitymonitor.DataQualityMonitor_IsTerraformElement(x interface{}) *bool
 ```
@@ -506,7 +506,7 @@ dataqualitymonitor.DataQualityMonitor_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitor.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/dataqualitymonitor"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/dataqualitymonitor"
 
 dataqualitymonitor.DataQualityMonitor_IsTerraformResource(x interface{}) *bool
 ```
@@ -520,7 +520,7 @@ dataqualitymonitor.DataQualityMonitor_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitor.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/dataqualitymonitor"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/dataqualitymonitor"
 
 dataqualitymonitor.DataQualityMonitor_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -859,7 +859,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorAnomalyDetectionConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/dataqualitymonitor"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/dataqualitymonitor"
 
 &dataqualitymonitor.DataQualityMonitorAnomalyDetectionConfig {
 	ExcludedTableFullNames: *[]*string,
@@ -891,7 +891,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/dataqualitymonitor"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/dataqualitymonitor"
 
 &dataqualitymonitor.DataQualityMonitorConfig {
 	Connection: interface{},
@@ -903,9 +903,9 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/dataqual
 	Provisioners: *[]interface{},
 	ObjectId: *string,
 	ObjectType: *string,
-	AnomalyDetectionConfig: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.dataQualityMonitor.DataQualityMonitorAnomalyDetectionConfig,
-	DataProfilingConfig: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.dataQualityMonitor.DataQualityMonitorDataProfilingConfig,
-	ProviderConfig: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.dataQualityMonitor.DataQualityMonitorProviderConfig,
+	AnomalyDetectionConfig: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18.dataQualityMonitor.DataQualityMonitorAnomalyDetectionConfig,
+	DataProfilingConfig: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18.dataQualityMonitor.DataQualityMonitorDataProfilingConfig,
+	ProviderConfig: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18.dataQualityMonitor.DataQualityMonitorProviderConfig,
 }
 ```
 
@@ -1063,20 +1063,20 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorDataProfilingConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/dataqualitymonitor"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/dataqualitymonitor"
 
 &dataqualitymonitor.DataQualityMonitorDataProfilingConfig {
 	OutputSchemaId: *string,
 	AssetsDir: *string,
 	BaselineTableName: *string,
 	CustomMetrics: interface{},
-	InferenceLog: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.dataQualityMonitor.DataQualityMonitorDataProfilingConfigInferenceLog,
-	NotificationSettings: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.dataQualityMonitor.DataQualityMonitorDataProfilingConfigNotificationSettings,
-	Schedule: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.dataQualityMonitor.DataQualityMonitorDataProfilingConfigSchedule,
+	InferenceLog: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18.dataQualityMonitor.DataQualityMonitorDataProfilingConfigInferenceLog,
+	NotificationSettings: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18.dataQualityMonitor.DataQualityMonitorDataProfilingConfigNotificationSettings,
+	Schedule: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18.dataQualityMonitor.DataQualityMonitorDataProfilingConfigSchedule,
 	SkipBuiltinDashboard: interface{},
 	SlicingExprs: *[]*string,
-	Snapshot: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.dataQualityMonitor.DataQualityMonitorDataProfilingConfigSnapshot,
-	TimeSeries: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.dataQualityMonitor.DataQualityMonitorDataProfilingConfigTimeSeries,
+	Snapshot: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18.dataQualityMonitor.DataQualityMonitorDataProfilingConfigSnapshot,
+	TimeSeries: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18.dataQualityMonitor.DataQualityMonitorDataProfilingConfigTimeSeries,
 	WarehouseId: *string,
 }
 ```
@@ -1249,7 +1249,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorDataProfilingConfigCustomMetrics.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/dataqualitymonitor"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/dataqualitymonitor"
 
 &dataqualitymonitor.DataQualityMonitorDataProfilingConfigCustomMetrics {
 	Definition: *string,
@@ -1337,7 +1337,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorDataProfilingConfigInferenceLog.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/dataqualitymonitor"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/dataqualitymonitor"
 
 &dataqualitymonitor.DataQualityMonitorDataProfilingConfigInferenceLog {
 	Granularities: *[]*string,
@@ -1439,10 +1439,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorDataProfilingConfigNotificationSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/dataqualitymonitor"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/dataqualitymonitor"
 
 &dataqualitymonitor.DataQualityMonitorDataProfilingConfigNotificationSettings {
-	OnFailure: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.dataQualityMonitor.DataQualityMonitorDataProfilingConfigNotificationSettingsOnFailure,
+	OnFailure: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18.dataQualityMonitor.DataQualityMonitorDataProfilingConfigNotificationSettingsOnFailure,
 }
 ```
 
@@ -1471,7 +1471,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorDataProfilingConfigNotificationSettingsOnFailure.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/dataqualitymonitor"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/dataqualitymonitor"
 
 &dataqualitymonitor.DataQualityMonitorDataProfilingConfigNotificationSettingsOnFailure {
 	EmailAddresses: *[]*string,
@@ -1503,7 +1503,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorDataProfilingConfigSchedule.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/dataqualitymonitor"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/dataqualitymonitor"
 
 &dataqualitymonitor.DataQualityMonitorDataProfilingConfigSchedule {
 	QuartzCronExpression: *string,
@@ -1549,7 +1549,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorDataProfilingConfigSnapshot.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/dataqualitymonitor"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/dataqualitymonitor"
 
 &dataqualitymonitor.DataQualityMonitorDataProfilingConfigSnapshot {
 
@@ -1562,7 +1562,7 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/dataqual
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorDataProfilingConfigTimeSeries.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/dataqualitymonitor"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/dataqualitymonitor"
 
 &dataqualitymonitor.DataQualityMonitorDataProfilingConfigTimeSeries {
 	Granularities: *[]*string,
@@ -1608,7 +1608,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorProviderConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/dataqualitymonitor"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/dataqualitymonitor"
 
 &dataqualitymonitor.DataQualityMonitorProviderConfig {
 	WorkspaceId: *string,
@@ -1642,7 +1642,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorAnomalyDetectionConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/dataqualitymonitor"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/dataqualitymonitor"
 
 dataqualitymonitor.NewDataQualityMonitorAnomalyDetectionConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataQualityMonitorAnomalyDetectionConfigOutputReference
 ```
@@ -1920,7 +1920,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorDataProfilingConfigCustomMetricsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/dataqualitymonitor"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/dataqualitymonitor"
 
 dataqualitymonitor.NewDataQualityMonitorDataProfilingConfigCustomMetricsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataQualityMonitorDataProfilingConfigCustomMetricsList
 ```
@@ -2080,7 +2080,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorDataProfilingConfigCustomMetricsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/dataqualitymonitor"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/dataqualitymonitor"
 
 dataqualitymonitor.NewDataQualityMonitorDataProfilingConfigCustomMetricsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataQualityMonitorDataProfilingConfigCustomMetricsOutputReference
 ```
@@ -2457,7 +2457,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorDataProfilingConfigInferenceLogOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/dataqualitymonitor"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/dataqualitymonitor"
 
 dataqualitymonitor.NewDataQualityMonitorDataProfilingConfigInferenceLogOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataQualityMonitorDataProfilingConfigInferenceLogOutputReference
 ```
@@ -2845,7 +2845,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorDataProfilingConfigNotificationSettingsOnFailureOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/dataqualitymonitor"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/dataqualitymonitor"
 
 dataqualitymonitor.NewDataQualityMonitorDataProfilingConfigNotificationSettingsOnFailureOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataQualityMonitorDataProfilingConfigNotificationSettingsOnFailureOutputReference
 ```
@@ -3123,7 +3123,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorDataProfilingConfigNotificationSettingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/dataqualitymonitor"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/dataqualitymonitor"
 
 dataqualitymonitor.NewDataQualityMonitorDataProfilingConfigNotificationSettingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataQualityMonitorDataProfilingConfigNotificationSettingsOutputReference
 ```
@@ -3414,7 +3414,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorDataProfilingConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/dataqualitymonitor"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/dataqualitymonitor"
 
 dataqualitymonitor.NewDataQualityMonitorDataProfilingConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataQualityMonitorDataProfilingConfigOutputReference
 ```
@@ -4170,7 +4170,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorDataProfilingConfigScheduleOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/dataqualitymonitor"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/dataqualitymonitor"
 
 dataqualitymonitor.NewDataQualityMonitorDataProfilingConfigScheduleOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataQualityMonitorDataProfilingConfigScheduleOutputReference
 ```
@@ -4474,7 +4474,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorDataProfilingConfigSnapshotOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/dataqualitymonitor"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/dataqualitymonitor"
 
 dataqualitymonitor.NewDataQualityMonitorDataProfilingConfigSnapshotOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataQualityMonitorDataProfilingConfigSnapshotOutputReference
 ```
@@ -4723,7 +4723,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorDataProfilingConfigTimeSeriesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/dataqualitymonitor"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/dataqualitymonitor"
 
 dataqualitymonitor.NewDataQualityMonitorDataProfilingConfigTimeSeriesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataQualityMonitorDataProfilingConfigTimeSeriesOutputReference
 ```
@@ -5016,7 +5016,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorProviderConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/dataqualitymonitor"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/dataqualitymonitor"
 
 dataqualitymonitor.NewDataQualityMonitorProviderConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataQualityMonitorProviderConfigOutputReference
 ```

@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/databricks/databrick
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.knowledgeAssistantKnowledgeSource.KnowledgeAssistantKnowledgeSource.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/knowledgeassistantknowledgesource"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/knowledgeassistantknowledgesource"
 
 knowledgeassistantknowledgesource.NewKnowledgeAssistantKnowledgeSource(scope Construct, id *string, config KnowledgeAssistantKnowledgeSourceConfig) KnowledgeAssistantKnowledgeSource
 ```
@@ -480,7 +480,7 @@ func ResetProviderConfig()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-databricks.knowledgeAssistantKnowledgeSource.KnowledgeAssistantKnowledgeSource.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/knowledgeassistantknowledgesource"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/knowledgeassistantknowledgesource"
 
 knowledgeassistantknowledgesource.KnowledgeAssistantKnowledgeSource_IsConstruct(x interface{}) *bool
 ```
@@ -512,7 +512,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-databricks.knowledgeAssistantKnowledgeSource.KnowledgeAssistantKnowledgeSource.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/knowledgeassistantknowledgesource"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/knowledgeassistantknowledgesource"
 
 knowledgeassistantknowledgesource.KnowledgeAssistantKnowledgeSource_IsTerraformElement(x interface{}) *bool
 ```
@@ -526,7 +526,7 @@ knowledgeassistantknowledgesource.KnowledgeAssistantKnowledgeSource_IsTerraformE
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-databricks.knowledgeAssistantKnowledgeSource.KnowledgeAssistantKnowledgeSource.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/knowledgeassistantknowledgesource"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/knowledgeassistantknowledgesource"
 
 knowledgeassistantknowledgesource.KnowledgeAssistantKnowledgeSource_IsTerraformResource(x interface{}) *bool
 ```
@@ -540,7 +540,7 @@ knowledgeassistantknowledgesource.KnowledgeAssistantKnowledgeSource_IsTerraformR
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-databricks.knowledgeAssistantKnowledgeSource.KnowledgeAssistantKnowledgeSource.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/knowledgeassistantknowledgesource"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/knowledgeassistantknowledgesource"
 
 knowledgeassistantknowledgesource.KnowledgeAssistantKnowledgeSource_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1000,7 +1000,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.knowledgeAssistantKnowledgeSource.KnowledgeAssistantKnowledgeSourceConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/knowledgeassistantknowledgesource"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/knowledgeassistantknowledgesource"
 
 &knowledgeassistantknowledgesource.KnowledgeAssistantKnowledgeSourceConfig {
 	Connection: interface{},
@@ -1014,10 +1014,10 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/knowledg
 	DisplayName: *string,
 	Parent: *string,
 	SourceType: *string,
-	Files: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.knowledgeAssistantKnowledgeSource.KnowledgeAssistantKnowledgeSourceFiles,
-	FileTable: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.knowledgeAssistantKnowledgeSource.KnowledgeAssistantKnowledgeSourceFileTable,
-	Index: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.knowledgeAssistantKnowledgeSource.KnowledgeAssistantKnowledgeSourceIndex,
-	ProviderConfig: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.knowledgeAssistantKnowledgeSource.KnowledgeAssistantKnowledgeSourceProviderConfig,
+	Files: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18.knowledgeAssistantKnowledgeSource.KnowledgeAssistantKnowledgeSourceFiles,
+	FileTable: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18.knowledgeAssistantKnowledgeSource.KnowledgeAssistantKnowledgeSourceFileTable,
+	Index: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18.knowledgeAssistantKnowledgeSource.KnowledgeAssistantKnowledgeSourceIndex,
+	ProviderConfig: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18.knowledgeAssistantKnowledgeSource.KnowledgeAssistantKnowledgeSourceProviderConfig,
 }
 ```
 
@@ -1214,7 +1214,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.knowledgeAssistantKnowledgeSource.KnowledgeAssistantKnowledgeSourceFiles.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/knowledgeassistantknowledgesource"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/knowledgeassistantknowledgesource"
 
 &knowledgeassistantknowledgesource.KnowledgeAssistantKnowledgeSourceFiles {
 	Path: *string,
@@ -1246,7 +1246,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.knowledgeAssistantKnowledgeSource.KnowledgeAssistantKnowledgeSourceFileTable.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/knowledgeassistantknowledgesource"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/knowledgeassistantknowledgesource"
 
 &knowledgeassistantknowledgesource.KnowledgeAssistantKnowledgeSourceFileTable {
 	FileCol: *string,
@@ -1292,7 +1292,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.knowledgeAssistantKnowledgeSource.KnowledgeAssistantKnowledgeSourceIndex.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/knowledgeassistantknowledgesource"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/knowledgeassistantknowledgesource"
 
 &knowledgeassistantknowledgesource.KnowledgeAssistantKnowledgeSourceIndex {
 	DocUriCol: *string,
@@ -1352,7 +1352,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.knowledgeAssistantKnowledgeSource.KnowledgeAssistantKnowledgeSourceProviderConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/knowledgeassistantknowledgesource"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/knowledgeassistantknowledgesource"
 
 &knowledgeassistantknowledgesource.KnowledgeAssistantKnowledgeSourceProviderConfig {
 	WorkspaceId: *string,
@@ -1386,7 +1386,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.knowledgeAssistantKnowledgeSource.KnowledgeAssistantKnowledgeSourceFilesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/knowledgeassistantknowledgesource"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/knowledgeassistantknowledgesource"
 
 knowledgeassistantknowledgesource.NewKnowledgeAssistantKnowledgeSourceFilesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) KnowledgeAssistantKnowledgeSourceFilesOutputReference
 ```
@@ -1657,7 +1657,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.knowledgeAssistantKnowledgeSource.KnowledgeAssistantKnowledgeSourceFileTableOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/knowledgeassistantknowledgesource"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/knowledgeassistantknowledgesource"
 
 knowledgeassistantknowledgesource.NewKnowledgeAssistantKnowledgeSourceFileTableOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) KnowledgeAssistantKnowledgeSourceFileTableOutputReference
 ```
@@ -1950,7 +1950,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.knowledgeAssistantKnowledgeSource.KnowledgeAssistantKnowledgeSourceIndexOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/knowledgeassistantknowledgesource"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/knowledgeassistantknowledgesource"
 
 knowledgeassistantknowledgesource.NewKnowledgeAssistantKnowledgeSourceIndexOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) KnowledgeAssistantKnowledgeSourceIndexOutputReference
 ```
@@ -2265,7 +2265,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.knowledgeAssistantKnowledgeSource.KnowledgeAssistantKnowledgeSourceProviderConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/knowledgeassistantknowledgesource"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/knowledgeassistantknowledgesource"
 
 knowledgeassistantknowledgesource.NewKnowledgeAssistantKnowledgeSourceProviderConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) KnowledgeAssistantKnowledgeSourceProviderConfigOutputReference
 ```

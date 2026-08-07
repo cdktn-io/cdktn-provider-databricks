@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/databricks/databrick
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.permissionAssignment.PermissionAssignment.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/permissionassignment"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/permissionassignment"
 
 permissionassignment.NewPermissionAssignment(scope Construct, id *string, config PermissionAssignmentConfig) PermissionAssignment
 ```
@@ -455,7 +455,7 @@ func ResetUserName()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-databricks.permissionAssignment.PermissionAssignment.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/permissionassignment"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/permissionassignment"
 
 permissionassignment.PermissionAssignment_IsConstruct(x interface{}) *bool
 ```
@@ -487,7 +487,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-databricks.permissionAssignment.PermissionAssignment.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/permissionassignment"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/permissionassignment"
 
 permissionassignment.PermissionAssignment_IsTerraformElement(x interface{}) *bool
 ```
@@ -501,7 +501,7 @@ permissionassignment.PermissionAssignment_IsTerraformElement(x interface{}) *boo
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-databricks.permissionAssignment.PermissionAssignment.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/permissionassignment"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/permissionassignment"
 
 permissionassignment.PermissionAssignment_IsTerraformResource(x interface{}) *bool
 ```
@@ -515,7 +515,7 @@ permissionassignment.PermissionAssignment_IsTerraformResource(x interface{}) *bo
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-databricks.permissionAssignment.PermissionAssignment.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/permissionassignment"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/permissionassignment"
 
 permissionassignment.PermissionAssignment_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -909,7 +909,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.permissionAssignment.PermissionAssignmentConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/permissionassignment"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/permissionassignment"
 
 &permissionassignment.PermissionAssignmentConfig {
 	Connection: interface{},
@@ -923,7 +923,7 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/permissi
 	GroupName: *string,
 	Id: *string,
 	PrincipalId: *f64,
-	ProviderConfig: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.permissionAssignment.PermissionAssignmentProviderConfig,
+	ProviderConfig: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18.permissionAssignment.PermissionAssignmentProviderConfig,
 	ServicePrincipalName: *string,
 	UserName: *string,
 }
@@ -1114,7 +1114,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.permissionAssignment.PermissionAssignmentProviderConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/permissionassignment"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/permissionassignment"
 
 &permissionassignment.PermissionAssignmentProviderConfig {
 	WorkspaceId: *string,
@@ -1148,7 +1148,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.permissionAssignment.PermissionAssignmentProviderConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/permissionassignment"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/permissionassignment"
 
 permissionassignment.NewPermissionAssignmentProviderConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PermissionAssignmentProviderConfigOutputReference
 ```

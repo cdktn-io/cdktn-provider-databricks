@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/databricks/databrick
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.alert.Alert.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/alert"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/alert"
 
 alert.NewAlert(scope Construct, id *string, config AlertConfig) Alert
 ```
@@ -475,7 +475,7 @@ func ResetSecondsToRetrigger()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-databricks.alert.Alert.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/alert"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/alert"
 
 alert.Alert_IsConstruct(x interface{}) *bool
 ```
@@ -507,7 +507,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-databricks.alert.Alert.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/alert"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/alert"
 
 alert.Alert_IsTerraformElement(x interface{}) *bool
 ```
@@ -521,7 +521,7 @@ alert.Alert_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-databricks.alert.Alert.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/alert"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/alert"
 
 alert.Alert_IsTerraformResource(x interface{}) *bool
 ```
@@ -535,7 +535,7 @@ alert.Alert_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-databricks.alert.Alert.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/alert"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/alert"
 
 alert.Alert_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1050,13 +1050,13 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.alert.AlertCondition.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/alert"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/alert"
 
 &alert.AlertCondition {
 	Op: *string,
-	Operand: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.alert.AlertConditionOperand,
+	Operand: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18.alert.AlertConditionOperand,
 	EmptyResultState: *string,
-	Threshold: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.alert.AlertConditionThreshold,
+	Threshold: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18.alert.AlertConditionThreshold,
 }
 ```
 
@@ -1128,10 +1128,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.alert.AlertConditionOperand.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/alert"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/alert"
 
 &alert.AlertConditionOperand {
-	Column: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.alert.AlertConditionOperandColumn,
+	Column: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18.alert.AlertConditionOperandColumn,
 }
 ```
 
@@ -1162,7 +1162,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.alert.AlertConditionOperandColumn.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/alert"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/alert"
 
 &alert.AlertConditionOperandColumn {
 	Name: *string,
@@ -1194,10 +1194,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.alert.AlertConditionThreshold.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/alert"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/alert"
 
 &alert.AlertConditionThreshold {
-	Value: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.alert.AlertConditionThresholdValue,
+	Value: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18.alert.AlertConditionThresholdValue,
 }
 ```
 
@@ -1228,7 +1228,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.alert.AlertConditionThresholdValue.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/alert"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/alert"
 
 &alert.AlertConditionThresholdValue {
 	BoolValue: interface{},
@@ -1288,7 +1288,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.alert.AlertConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/alert"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/alert"
 
 &alert.AlertConfig {
 	Connection: interface{},
@@ -1298,7 +1298,7 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/alert"
 	Lifecycle: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle,
 	Provider: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider,
 	Provisioners: *[]interface{},
-	Condition: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.alert.AlertCondition,
+	Condition: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18.alert.AlertCondition,
 	DisplayName: *string,
 	QueryId: *string,
 	CustomBody: *string,
@@ -1306,7 +1306,7 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/alert"
 	NotifyOnOk: interface{},
 	OwnerUserName: *string,
 	ParentPath: *string,
-	ProviderConfig: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.alert.AlertProviderConfig,
+	ProviderConfig: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18.alert.AlertProviderConfig,
 	SecondsToRetrigger: *f64,
 }
 ```
@@ -1534,7 +1534,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.alert.AlertProviderConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/alert"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/alert"
 
 &alert.AlertProviderConfig {
 	WorkspaceId: *string,
@@ -1568,7 +1568,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.alert.AlertConditionOperandColumnOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/alert"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/alert"
 
 alert.NewAlertConditionOperandColumnOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AlertConditionOperandColumnOutputReference
 ```
@@ -1839,7 +1839,7 @@ func InternalValue() AlertConditionOperandColumn
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.alert.AlertConditionOperandOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/alert"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/alert"
 
 alert.NewAlertConditionOperandOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AlertConditionOperandOutputReference
 ```
@@ -2123,7 +2123,7 @@ func InternalValue() AlertConditionOperand
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.alert.AlertConditionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/alert"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/alert"
 
 alert.NewAlertConditionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AlertConditionOutputReference
 ```
@@ -2500,7 +2500,7 @@ func InternalValue() AlertCondition
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.alert.AlertConditionThresholdOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/alert"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/alert"
 
 alert.NewAlertConditionThresholdOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AlertConditionThresholdOutputReference
 ```
@@ -2784,7 +2784,7 @@ func InternalValue() AlertConditionThreshold
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.alert.AlertConditionThresholdValueOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/alert"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/alert"
 
 alert.NewAlertConditionThresholdValueOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AlertConditionThresholdValueOutputReference
 ```
@@ -3120,7 +3120,7 @@ func InternalValue() AlertConditionThresholdValue
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.alert.AlertProviderConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/alert"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/alert"
 
 alert.NewAlertProviderConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AlertProviderConfigOutputReference
 ```

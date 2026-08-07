@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/databricks/databrick
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksRecipients.DataDatabricksRecipients.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksrecipients"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksrecipients"
 
 datadatabricksrecipients.NewDataDatabricksRecipients(scope Construct, id *string, config DataDatabricksRecipientsConfig) DataDatabricksRecipients
 ```
@@ -325,7 +325,7 @@ func ResetRecipients()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-databricks.dataDatabricksRecipients.DataDatabricksRecipients.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksrecipients"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksrecipients"
 
 datadatabricksrecipients.DataDatabricksRecipients_IsConstruct(x interface{}) *bool
 ```
@@ -357,7 +357,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-databricks.dataDatabricksRecipients.DataDatabricksRecipients.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksrecipients"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksrecipients"
 
 datadatabricksrecipients.DataDatabricksRecipients_IsTerraformElement(x interface{}) *bool
 ```
@@ -371,7 +371,7 @@ datadatabricksrecipients.DataDatabricksRecipients_IsTerraformElement(x interface
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-databricks.dataDatabricksRecipients.DataDatabricksRecipients.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksrecipients"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksrecipients"
 
 datadatabricksrecipients.DataDatabricksRecipients_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -385,7 +385,7 @@ datadatabricksrecipients.DataDatabricksRecipients_IsTerraformDataSource(x interf
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-databricks.dataDatabricksRecipients.DataDatabricksRecipients.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksrecipients"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksrecipients"
 
 datadatabricksrecipients.DataDatabricksRecipients_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -636,7 +636,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksRecipients.DataDatabricksRecipientsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksrecipients"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksrecipients"
 
 &datadatabricksrecipients.DataDatabricksRecipientsConfig {
 	Connection: interface{},
@@ -646,7 +646,7 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadata
 	Lifecycle: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle,
 	Provider: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider,
 	Provisioners: *[]interface{},
-	ProviderConfig: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.dataDatabricksRecipients.DataDatabricksRecipientsProviderConfig,
+	ProviderConfig: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18.dataDatabricksRecipients.DataDatabricksRecipientsProviderConfig,
 	Recipients: *[]*string,
 }
 ```
@@ -766,7 +766,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksRecipients.DataDatabricksRecipientsProviderConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksrecipients"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksrecipients"
 
 &datadatabricksrecipients.DataDatabricksRecipientsProviderConfig {
 	WorkspaceId: *string,
@@ -800,7 +800,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksRecipients.DataDatabricksRecipientsProviderConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksrecipients"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksrecipients"
 
 datadatabricksrecipients.NewDataDatabricksRecipientsProviderConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksRecipientsProviderConfigOutputReference
 ```

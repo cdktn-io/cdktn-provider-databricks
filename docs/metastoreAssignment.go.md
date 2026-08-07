@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/databricks/databrick
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.metastoreAssignment.MetastoreAssignment.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/metastoreassignment"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/metastoreassignment"
 
 metastoreassignment.NewMetastoreAssignment(scope Construct, id *string, config MetastoreAssignmentConfig) MetastoreAssignment
 ```
@@ -441,7 +441,7 @@ func ResetProviderConfig()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-databricks.metastoreAssignment.MetastoreAssignment.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/metastoreassignment"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/metastoreassignment"
 
 metastoreassignment.MetastoreAssignment_IsConstruct(x interface{}) *bool
 ```
@@ -473,7 +473,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-databricks.metastoreAssignment.MetastoreAssignment.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/metastoreassignment"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/metastoreassignment"
 
 metastoreassignment.MetastoreAssignment_IsTerraformElement(x interface{}) *bool
 ```
@@ -487,7 +487,7 @@ metastoreassignment.MetastoreAssignment_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-databricks.metastoreAssignment.MetastoreAssignment.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/metastoreassignment"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/metastoreassignment"
 
 metastoreassignment.MetastoreAssignment_IsTerraformResource(x interface{}) *bool
 ```
@@ -501,7 +501,7 @@ metastoreassignment.MetastoreAssignment_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-databricks.metastoreAssignment.MetastoreAssignment.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/metastoreassignment"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/metastoreassignment"
 
 metastoreassignment.MetastoreAssignment_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -862,7 +862,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.metastoreAssignment.MetastoreAssignmentConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/metastoreassignment"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/metastoreassignment"
 
 &metastoreassignment.MetastoreAssignmentConfig {
 	Connection: interface{},
@@ -877,7 +877,7 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/metastor
 	Api: *string,
 	DefaultCatalogName: *string,
 	Id: *string,
-	ProviderConfig: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.metastoreAssignment.MetastoreAssignmentProviderConfig,
+	ProviderConfig: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18.metastoreAssignment.MetastoreAssignmentProviderConfig,
 }
 ```
 
@@ -1057,7 +1057,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.metastoreAssignment.MetastoreAssignmentProviderConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/metastoreassignment"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/metastoreassignment"
 
 &metastoreassignment.MetastoreAssignmentProviderConfig {
 	WorkspaceId: *string,
@@ -1091,7 +1091,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.metastoreAssignment.MetastoreAssignmentProviderConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/metastoreassignment"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/metastoreassignment"
 
 metastoreassignment.NewMetastoreAssignmentProviderConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MetastoreAssignmentProviderConfigOutputReference
 ```
