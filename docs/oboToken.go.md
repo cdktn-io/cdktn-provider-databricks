@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/databricks/databrick
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.oboToken.OboToken.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/obotoken"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/obotoken"
 
 obotoken.NewOboToken(scope Construct, id *string, config OboTokenConfig) OboToken
 ```
@@ -441,7 +441,7 @@ func ResetProviderConfig()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-databricks.oboToken.OboToken.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/obotoken"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/obotoken"
 
 obotoken.OboToken_IsConstruct(x interface{}) *bool
 ```
@@ -473,7 +473,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-databricks.oboToken.OboToken.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/obotoken"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/obotoken"
 
 obotoken.OboToken_IsTerraformElement(x interface{}) *bool
 ```
@@ -487,7 +487,7 @@ obotoken.OboToken_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-databricks.oboToken.OboToken.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/obotoken"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/obotoken"
 
 obotoken.OboToken_IsTerraformResource(x interface{}) *bool
 ```
@@ -501,7 +501,7 @@ obotoken.OboToken_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-databricks.oboToken.OboToken.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/obotoken"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/obotoken"
 
 obotoken.OboToken_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -851,7 +851,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.oboToken.OboTokenConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/obotoken"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/obotoken"
 
 &obotoken.OboTokenConfig {
 	Connection: interface{},
@@ -865,7 +865,7 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/obotoken
 	Comment: *string,
 	Id: *string,
 	LifetimeSeconds: *f64,
-	ProviderConfig: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.oboToken.OboTokenProviderConfig,
+	ProviderConfig: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18.oboToken.OboTokenProviderConfig,
 }
 ```
 
@@ -1028,7 +1028,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.oboToken.OboTokenProviderConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/obotoken"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/obotoken"
 
 &obotoken.OboTokenProviderConfig {
 	WorkspaceId: *string,
@@ -1062,7 +1062,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.oboToken.OboTokenProviderConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/obotoken"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/obotoken"
 
 obotoken.NewOboTokenProviderConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) OboTokenProviderConfigOutputReference
 ```

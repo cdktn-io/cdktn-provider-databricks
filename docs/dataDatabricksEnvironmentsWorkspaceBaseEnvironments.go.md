@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/databricks/databrick
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksEnvironmentsWorkspaceBaseEnvironments.DataDatabricksEnvironmentsWorkspaceBaseEnvironments.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksenvironmentsworkspacebaseenvironments"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksenvironmentsworkspacebaseenvironments"
 
 datadatabricksenvironmentsworkspacebaseenvironments.NewDataDatabricksEnvironmentsWorkspaceBaseEnvironments(scope Construct, id *string, config DataDatabricksEnvironmentsWorkspaceBaseEnvironmentsConfig) DataDatabricksEnvironmentsWorkspaceBaseEnvironments
 ```
@@ -325,7 +325,7 @@ func ResetProviderConfig()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-databricks.dataDatabricksEnvironmentsWorkspaceBaseEnvironments.DataDatabricksEnvironmentsWorkspaceBaseEnvironments.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksenvironmentsworkspacebaseenvironments"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksenvironmentsworkspacebaseenvironments"
 
 datadatabricksenvironmentsworkspacebaseenvironments.DataDatabricksEnvironmentsWorkspaceBaseEnvironments_IsConstruct(x interface{}) *bool
 ```
@@ -357,7 +357,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-databricks.dataDatabricksEnvironmentsWorkspaceBaseEnvironments.DataDatabricksEnvironmentsWorkspaceBaseEnvironments.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksenvironmentsworkspacebaseenvironments"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksenvironmentsworkspacebaseenvironments"
 
 datadatabricksenvironmentsworkspacebaseenvironments.DataDatabricksEnvironmentsWorkspaceBaseEnvironments_IsTerraformElement(x interface{}) *bool
 ```
@@ -371,7 +371,7 @@ datadatabricksenvironmentsworkspacebaseenvironments.DataDatabricksEnvironmentsWo
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-databricks.dataDatabricksEnvironmentsWorkspaceBaseEnvironments.DataDatabricksEnvironmentsWorkspaceBaseEnvironments.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksenvironmentsworkspacebaseenvironments"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksenvironmentsworkspacebaseenvironments"
 
 datadatabricksenvironmentsworkspacebaseenvironments.DataDatabricksEnvironmentsWorkspaceBaseEnvironments_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -385,7 +385,7 @@ datadatabricksenvironmentsworkspacebaseenvironments.DataDatabricksEnvironmentsWo
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-databricks.dataDatabricksEnvironmentsWorkspaceBaseEnvironments.DataDatabricksEnvironmentsWorkspaceBaseEnvironments.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksenvironmentsworkspacebaseenvironments"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksenvironmentsworkspacebaseenvironments"
 
 datadatabricksenvironmentsworkspacebaseenvironments.DataDatabricksEnvironmentsWorkspaceBaseEnvironments_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -647,7 +647,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksEnvironmentsWorkspaceBaseEnvironments.DataDatabricksEnvironmentsWorkspaceBaseEnvironmentsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksenvironmentsworkspacebaseenvironments"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksenvironmentsworkspacebaseenvironments"
 
 &datadatabricksenvironmentsworkspacebaseenvironments.DataDatabricksEnvironmentsWorkspaceBaseEnvironmentsConfig {
 	Connection: interface{},
@@ -658,7 +658,7 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadata
 	Provider: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider,
 	Provisioners: *[]interface{},
 	PageSize: *f64,
-	ProviderConfig: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.dataDatabricksEnvironmentsWorkspaceBaseEnvironments.DataDatabricksEnvironmentsWorkspaceBaseEnvironmentsProviderConfig,
+	ProviderConfig: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18.dataDatabricksEnvironmentsWorkspaceBaseEnvironments.DataDatabricksEnvironmentsWorkspaceBaseEnvironmentsProviderConfig,
 }
 ```
 
@@ -777,7 +777,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksEnvironmentsWorkspaceBaseEnvironments.DataDatabricksEnvironmentsWorkspaceBaseEnvironmentsProviderConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksenvironmentsworkspacebaseenvironments"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksenvironmentsworkspacebaseenvironments"
 
 &datadatabricksenvironmentsworkspacebaseenvironments.DataDatabricksEnvironmentsWorkspaceBaseEnvironmentsProviderConfig {
 	WorkspaceId: *string,
@@ -809,11 +809,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksEnvironmentsWorkspaceBaseEnvironments.DataDatabricksEnvironmentsWorkspaceBaseEnvironmentsWorkspaceBaseEnvironments.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksenvironmentsworkspacebaseenvironments"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksenvironmentsworkspacebaseenvironments"
 
 &datadatabricksenvironmentsworkspacebaseenvironments.DataDatabricksEnvironmentsWorkspaceBaseEnvironmentsWorkspaceBaseEnvironments {
 	Name: *string,
-	ProviderConfig: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.dataDatabricksEnvironmentsWorkspaceBaseEnvironments.DataDatabricksEnvironmentsWorkspaceBaseEnvironmentsWorkspaceBaseEnvironmentsProviderConfig,
+	ProviderConfig: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18.dataDatabricksEnvironmentsWorkspaceBaseEnvironments.DataDatabricksEnvironmentsWorkspaceBaseEnvironmentsWorkspaceBaseEnvironmentsProviderConfig,
 }
 ```
 
@@ -855,7 +855,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksEnvironmentsWorkspaceBaseEnvironments.DataDatabricksEnvironmentsWorkspaceBaseEnvironmentsWorkspaceBaseEnvironmentsProviderConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksenvironmentsworkspacebaseenvironments"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksenvironmentsworkspacebaseenvironments"
 
 &datadatabricksenvironmentsworkspacebaseenvironments.DataDatabricksEnvironmentsWorkspaceBaseEnvironmentsWorkspaceBaseEnvironmentsProviderConfig {
 	WorkspaceId: *string,
@@ -887,7 +887,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksEnvironmentsWorkspaceBaseEnvironments.DataDatabricksEnvironmentsWorkspaceBaseEnvironmentsWorkspaceBaseEnvironmentsSpec.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksenvironmentsworkspacebaseenvironments"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksenvironmentsworkspacebaseenvironments"
 
 &datadatabricksenvironmentsworkspacebaseenvironments.DataDatabricksEnvironmentsWorkspaceBaseEnvironmentsWorkspaceBaseEnvironmentsSpec {
 	Dependencies: *[]*string,
@@ -935,7 +935,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksEnvironmentsWorkspaceBaseEnvironments.DataDatabricksEnvironmentsWorkspaceBaseEnvironmentsProviderConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksenvironmentsworkspacebaseenvironments"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksenvironmentsworkspacebaseenvironments"
 
 datadatabricksenvironmentsworkspacebaseenvironments.NewDataDatabricksEnvironmentsWorkspaceBaseEnvironmentsProviderConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksEnvironmentsWorkspaceBaseEnvironmentsProviderConfigOutputReference
 ```
@@ -1213,7 +1213,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksEnvironmentsWorkspaceBaseEnvironments.DataDatabricksEnvironmentsWorkspaceBaseEnvironmentsWorkspaceBaseEnvironmentsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksenvironmentsworkspacebaseenvironments"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksenvironmentsworkspacebaseenvironments"
 
 datadatabricksenvironmentsworkspacebaseenvironments.NewDataDatabricksEnvironmentsWorkspaceBaseEnvironmentsWorkspaceBaseEnvironmentsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDatabricksEnvironmentsWorkspaceBaseEnvironmentsWorkspaceBaseEnvironmentsList
 ```
@@ -1373,7 +1373,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksEnvironmentsWorkspaceBaseEnvironments.DataDatabricksEnvironmentsWorkspaceBaseEnvironmentsWorkspaceBaseEnvironmentsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksenvironmentsworkspacebaseenvironments"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksenvironmentsworkspacebaseenvironments"
 
 datadatabricksenvironmentsworkspacebaseenvironments.NewDataDatabricksEnvironmentsWorkspaceBaseEnvironmentsWorkspaceBaseEnvironmentsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataDatabricksEnvironmentsWorkspaceBaseEnvironmentsWorkspaceBaseEnvironmentsOutputReference
 ```
@@ -1836,7 +1836,7 @@ func InternalValue() DataDatabricksEnvironmentsWorkspaceBaseEnvironmentsWorkspac
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksEnvironmentsWorkspaceBaseEnvironments.DataDatabricksEnvironmentsWorkspaceBaseEnvironmentsWorkspaceBaseEnvironmentsProviderConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksenvironmentsworkspacebaseenvironments"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksenvironmentsworkspacebaseenvironments"
 
 datadatabricksenvironmentsworkspacebaseenvironments.NewDataDatabricksEnvironmentsWorkspaceBaseEnvironmentsWorkspaceBaseEnvironmentsProviderConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksEnvironmentsWorkspaceBaseEnvironmentsWorkspaceBaseEnvironmentsProviderConfigOutputReference
 ```
@@ -2114,7 +2114,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksEnvironmentsWorkspaceBaseEnvironments.DataDatabricksEnvironmentsWorkspaceBaseEnvironmentsWorkspaceBaseEnvironmentsSpecOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksenvironmentsworkspacebaseenvironments"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksenvironmentsworkspacebaseenvironments"
 
 datadatabricksenvironmentsworkspacebaseenvironments.NewDataDatabricksEnvironmentsWorkspaceBaseEnvironmentsWorkspaceBaseEnvironmentsSpecOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksEnvironmentsWorkspaceBaseEnvironmentsWorkspaceBaseEnvironmentsSpecOutputReference
 ```

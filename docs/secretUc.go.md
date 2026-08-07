@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/databricks/databrick
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.secretUc.SecretUc.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/secretuc"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/secretuc"
 
 secretuc.NewSecretUc(scope Construct, id *string, config SecretUcConfig) SecretUc
 ```
@@ -441,7 +441,7 @@ func ResetProviderConfig()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-databricks.secretUc.SecretUc.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/secretuc"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/secretuc"
 
 secretuc.SecretUc_IsConstruct(x interface{}) *bool
 ```
@@ -473,7 +473,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-databricks.secretUc.SecretUc.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/secretuc"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/secretuc"
 
 secretuc.SecretUc_IsTerraformElement(x interface{}) *bool
 ```
@@ -487,7 +487,7 @@ secretuc.SecretUc_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-databricks.secretUc.SecretUc.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/secretuc"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/secretuc"
 
 secretuc.SecretUc_IsTerraformResource(x interface{}) *bool
 ```
@@ -501,7 +501,7 @@ secretuc.SecretUc_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-databricks.secretUc.SecretUc.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/secretuc"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/secretuc"
 
 secretuc.SecretUc_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -994,7 +994,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.secretUc.SecretUcConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/secretuc"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/secretuc"
 
 &secretuc.SecretUcConfig {
 	Connection: interface{},
@@ -1011,7 +1011,7 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/secretuc
 	Comment: *string,
 	ExpireTime: *string,
 	Owner: *string,
-	ProviderConfig: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.secretUc.SecretUcProviderConfig,
+	ProviderConfig: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18.secretUc.SecretUcProviderConfig,
 }
 ```
 
@@ -1208,7 +1208,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.secretUc.SecretUcProviderConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/secretuc"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/secretuc"
 
 &secretuc.SecretUcProviderConfig {
 	WorkspaceId: *string,
@@ -1242,7 +1242,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.secretUc.SecretUcProviderConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/secretuc"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/secretuc"
 
 secretuc.NewSecretUcProviderConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SecretUcProviderConfigOutputReference
 ```

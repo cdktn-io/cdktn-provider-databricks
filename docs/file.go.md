@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/databricks/databrick
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.file.File.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/file"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/file"
 
 file.NewFile(scope Construct, id *string, config FileConfig) File
 ```
@@ -455,7 +455,7 @@ func ResetSource()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-databricks.file.File.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/file"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/file"
 
 file.File_IsConstruct(x interface{}) *bool
 ```
@@ -487,7 +487,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-databricks.file.File.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/file"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/file"
 
 file.File_IsTerraformElement(x interface{}) *bool
 ```
@@ -501,7 +501,7 @@ file.File_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-databricks.file.File.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/file"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/file"
 
 file.File_IsTerraformResource(x interface{}) *bool
 ```
@@ -515,7 +515,7 @@ file.File_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-databricks.file.File.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/file"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/file"
 
 file.File_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -920,7 +920,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.file.FileConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/file"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/file"
 
 &file.FileConfig {
 	Connection: interface{},
@@ -934,7 +934,7 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/file"
 	ContentBase64: *string,
 	Id: *string,
 	Md5: *string,
-	ProviderConfig: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.file.FileProviderConfig,
+	ProviderConfig: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18.file.FileProviderConfig,
 	RemoteFileModified: interface{},
 	Source: *string,
 }
@@ -1125,7 +1125,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.file.FileProviderConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/file"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/file"
 
 &file.FileProviderConfig {
 	WorkspaceId: *string,
@@ -1159,7 +1159,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.file.FileProviderConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/file"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/file"
 
 file.NewFileProviderConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) FileProviderConfigOutputReference
 ```

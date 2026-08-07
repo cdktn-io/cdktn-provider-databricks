@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/databricks/databrick
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.gitCredential.GitCredential.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/gitcredential"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/gitcredential"
 
 gitcredential.NewGitCredential(scope Construct, id *string, config GitCredentialConfig) GitCredential
 ```
@@ -476,7 +476,7 @@ func ResetProviderConfig()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-databricks.gitCredential.GitCredential.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/gitcredential"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/gitcredential"
 
 gitcredential.GitCredential_IsConstruct(x interface{}) *bool
 ```
@@ -508,7 +508,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-databricks.gitCredential.GitCredential.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/gitcredential"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/gitcredential"
 
 gitcredential.GitCredential_IsTerraformElement(x interface{}) *bool
 ```
@@ -522,7 +522,7 @@ gitcredential.GitCredential_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-databricks.gitCredential.GitCredential.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/gitcredential"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/gitcredential"
 
 gitcredential.GitCredential_IsTerraformResource(x interface{}) *bool
 ```
@@ -536,7 +536,7 @@ gitcredential.GitCredential_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-databricks.gitCredential.GitCredential.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/gitcredential"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/gitcredential"
 
 gitcredential.GitCredential_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -985,7 +985,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.gitCredential.GitCredentialConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/gitcredential"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/gitcredential"
 
 &gitcredential.GitCredentialConfig {
 	Connection: interface{},
@@ -1004,7 +1004,7 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/gitcrede
 	Name: *string,
 	PersonalAccessToken: *string,
 	PrincipalId: *f64,
-	ProviderConfig: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.gitCredential.GitCredentialProviderConfig,
+	ProviderConfig: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18.gitCredential.GitCredentialProviderConfig,
 }
 ```
 
@@ -1232,7 +1232,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.gitCredential.GitCredentialProviderConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/gitcredential"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/gitcredential"
 
 &gitcredential.GitCredentialProviderConfig {
 	WorkspaceId: *string,
@@ -1266,7 +1266,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.gitCredential.GitCredentialProviderConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/gitcredential"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/gitcredential"
 
 gitcredential.NewGitCredentialProviderConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GitCredentialProviderConfigOutputReference
 ```

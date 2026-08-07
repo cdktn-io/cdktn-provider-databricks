@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/databricks/databrick
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksDbfsFile.DataDatabricksDbfsFile.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksdbfsfile"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksdbfsfile"
 
 datadatabricksdbfsfile.NewDataDatabricksDbfsFile(scope Construct, id *string, config DataDatabricksDbfsFileConfig) DataDatabricksDbfsFile
 ```
@@ -325,7 +325,7 @@ func ResetProviderConfig()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-databricks.dataDatabricksDbfsFile.DataDatabricksDbfsFile.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksdbfsfile"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksdbfsfile"
 
 datadatabricksdbfsfile.DataDatabricksDbfsFile_IsConstruct(x interface{}) *bool
 ```
@@ -357,7 +357,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-databricks.dataDatabricksDbfsFile.DataDatabricksDbfsFile.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksdbfsfile"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksdbfsfile"
 
 datadatabricksdbfsfile.DataDatabricksDbfsFile_IsTerraformElement(x interface{}) *bool
 ```
@@ -371,7 +371,7 @@ datadatabricksdbfsfile.DataDatabricksDbfsFile_IsTerraformElement(x interface{}) 
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-databricks.dataDatabricksDbfsFile.DataDatabricksDbfsFile.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksdbfsfile"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksdbfsfile"
 
 datadatabricksdbfsfile.DataDatabricksDbfsFile_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -385,7 +385,7 @@ datadatabricksdbfsfile.DataDatabricksDbfsFile_IsTerraformDataSource(x interface{
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-databricks.dataDatabricksDbfsFile.DataDatabricksDbfsFile.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksdbfsfile"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksdbfsfile"
 
 datadatabricksdbfsfile.DataDatabricksDbfsFile_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -702,7 +702,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksDbfsFile.DataDatabricksDbfsFileConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksdbfsfile"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksdbfsfile"
 
 &datadatabricksdbfsfile.DataDatabricksDbfsFileConfig {
 	Connection: interface{},
@@ -715,7 +715,7 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadata
 	LimitFileSize: interface{},
 	Path: *string,
 	Id: *string,
-	ProviderConfig: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.dataDatabricksDbfsFile.DataDatabricksDbfsFileProviderConfig,
+	ProviderConfig: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18.dataDatabricksDbfsFile.DataDatabricksDbfsFileProviderConfig,
 }
 ```
 
@@ -865,7 +865,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksDbfsFile.DataDatabricksDbfsFileProviderConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksdbfsfile"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksdbfsfile"
 
 &datadatabricksdbfsfile.DataDatabricksDbfsFileProviderConfig {
 	WorkspaceId: *string,
@@ -899,7 +899,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksDbfsFile.DataDatabricksDbfsFileProviderConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksdbfsfile"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksdbfsfile"
 
 datadatabricksdbfsfile.NewDataDatabricksDbfsFileProviderConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksDbfsFileProviderConfigOutputReference
 ```

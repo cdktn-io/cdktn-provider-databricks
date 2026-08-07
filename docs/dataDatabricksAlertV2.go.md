@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/databricks/databrick
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksAlertV2.DataDatabricksAlertV2.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksalertv2"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksalertv2"
 
 datadatabricksalertv2.NewDataDatabricksAlertV2(scope Construct, id *string, config DataDatabricksAlertV2Config) DataDatabricksAlertV2
 ```
@@ -318,7 +318,7 @@ func ResetProviderConfig()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-databricks.dataDatabricksAlertV2.DataDatabricksAlertV2.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksalertv2"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksalertv2"
 
 datadatabricksalertv2.DataDatabricksAlertV2_IsConstruct(x interface{}) *bool
 ```
@@ -350,7 +350,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-databricks.dataDatabricksAlertV2.DataDatabricksAlertV2.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksalertv2"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksalertv2"
 
 datadatabricksalertv2.DataDatabricksAlertV2_IsTerraformElement(x interface{}) *bool
 ```
@@ -364,7 +364,7 @@ datadatabricksalertv2.DataDatabricksAlertV2_IsTerraformElement(x interface{}) *b
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-databricks.dataDatabricksAlertV2.DataDatabricksAlertV2.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksalertv2"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksalertv2"
 
 datadatabricksalertv2.DataDatabricksAlertV2_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -378,7 +378,7 @@ datadatabricksalertv2.DataDatabricksAlertV2_IsTerraformDataSource(x interface{})
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-databricks.dataDatabricksAlertV2.DataDatabricksAlertV2.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksalertv2"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksalertv2"
 
 datadatabricksalertv2.DataDatabricksAlertV2_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -805,7 +805,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksAlertV2.DataDatabricksAlertV2Config.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksalertv2"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksalertv2"
 
 &datadatabricksalertv2.DataDatabricksAlertV2Config {
 	Connection: interface{},
@@ -816,7 +816,7 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadata
 	Provider: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider,
 	Provisioners: *[]interface{},
 	Id: *string,
-	ProviderConfig: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.dataDatabricksAlertV2.DataDatabricksAlertV2ProviderConfig,
+	ProviderConfig: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18.dataDatabricksAlertV2.DataDatabricksAlertV2ProviderConfig,
 }
 ```
 
@@ -938,7 +938,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksAlertV2.DataDatabricksAlertV2EffectiveRunAs.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksalertv2"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksalertv2"
 
 &datadatabricksalertv2.DataDatabricksAlertV2EffectiveRunAs {
 	ServicePrincipalName: *string,
@@ -984,14 +984,14 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksAlertV2.DataDatabricksAlertV2Evaluation.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksalertv2"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksalertv2"
 
 &datadatabricksalertv2.DataDatabricksAlertV2Evaluation {
 	ComparisonOperator: *string,
-	Source: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.dataDatabricksAlertV2.DataDatabricksAlertV2EvaluationSource,
+	Source: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18.dataDatabricksAlertV2.DataDatabricksAlertV2EvaluationSource,
 	EmptyResultState: *string,
-	Notification: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.dataDatabricksAlertV2.DataDatabricksAlertV2EvaluationNotification,
-	Threshold: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.dataDatabricksAlertV2.DataDatabricksAlertV2EvaluationThreshold,
+	Notification: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18.dataDatabricksAlertV2.DataDatabricksAlertV2EvaluationNotification,
+	Threshold: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18.dataDatabricksAlertV2.DataDatabricksAlertV2EvaluationThreshold,
 }
 ```
 
@@ -1072,7 +1072,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksAlertV2.DataDatabricksAlertV2EvaluationNotification.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksalertv2"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksalertv2"
 
 &datadatabricksalertv2.DataDatabricksAlertV2EvaluationNotification {
 	NotifyOnOk: interface{},
@@ -1132,7 +1132,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksAlertV2.DataDatabricksAlertV2EvaluationNotificationSubscriptions.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksalertv2"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksalertv2"
 
 &datadatabricksalertv2.DataDatabricksAlertV2EvaluationNotificationSubscriptions {
 	DestinationId: *string,
@@ -1178,7 +1178,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksAlertV2.DataDatabricksAlertV2EvaluationSource.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksalertv2"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksalertv2"
 
 &datadatabricksalertv2.DataDatabricksAlertV2EvaluationSource {
 	Name: *string,
@@ -1238,11 +1238,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksAlertV2.DataDatabricksAlertV2EvaluationThreshold.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksalertv2"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksalertv2"
 
 &datadatabricksalertv2.DataDatabricksAlertV2EvaluationThreshold {
-	Column: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.dataDatabricksAlertV2.DataDatabricksAlertV2EvaluationThresholdColumn,
-	Value: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.dataDatabricksAlertV2.DataDatabricksAlertV2EvaluationThresholdValue,
+	Column: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18.dataDatabricksAlertV2.DataDatabricksAlertV2EvaluationThresholdColumn,
+	Value: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18.dataDatabricksAlertV2.DataDatabricksAlertV2EvaluationThresholdValue,
 }
 ```
 
@@ -1284,7 +1284,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksAlertV2.DataDatabricksAlertV2EvaluationThresholdColumn.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksalertv2"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksalertv2"
 
 &datadatabricksalertv2.DataDatabricksAlertV2EvaluationThresholdColumn {
 	Name: *string,
@@ -1344,7 +1344,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksAlertV2.DataDatabricksAlertV2EvaluationThresholdValue.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksalertv2"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksalertv2"
 
 &datadatabricksalertv2.DataDatabricksAlertV2EvaluationThresholdValue {
 	BoolValue: interface{},
@@ -1404,7 +1404,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksAlertV2.DataDatabricksAlertV2Parameters.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksalertv2"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksalertv2"
 
 &datadatabricksalertv2.DataDatabricksAlertV2Parameters {
 	Name: *string,
@@ -1464,7 +1464,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksAlertV2.DataDatabricksAlertV2ProviderConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksalertv2"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksalertv2"
 
 &datadatabricksalertv2.DataDatabricksAlertV2ProviderConfig {
 	WorkspaceId: *string,
@@ -1496,7 +1496,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksAlertV2.DataDatabricksAlertV2RunAs.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksalertv2"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksalertv2"
 
 &datadatabricksalertv2.DataDatabricksAlertV2RunAs {
 	ServicePrincipalName: *string,
@@ -1542,7 +1542,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksAlertV2.DataDatabricksAlertV2Schedule.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksalertv2"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksalertv2"
 
 &datadatabricksalertv2.DataDatabricksAlertV2Schedule {
 	QuartzCronSchedule: *string,
@@ -1604,7 +1604,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksAlertV2.DataDatabricksAlertV2EffectiveRunAsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksalertv2"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksalertv2"
 
 datadatabricksalertv2.NewDataDatabricksAlertV2EffectiveRunAsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksAlertV2EffectiveRunAsOutputReference
 ```
@@ -1911,7 +1911,7 @@ func InternalValue() DataDatabricksAlertV2EffectiveRunAs
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksAlertV2.DataDatabricksAlertV2EvaluationNotificationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksalertv2"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksalertv2"
 
 datadatabricksalertv2.NewDataDatabricksAlertV2EvaluationNotificationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksAlertV2EvaluationNotificationOutputReference
 ```
@@ -2282,7 +2282,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksAlertV2.DataDatabricksAlertV2EvaluationNotificationSubscriptionsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksalertv2"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksalertv2"
 
 datadatabricksalertv2.NewDataDatabricksAlertV2EvaluationNotificationSubscriptionsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDatabricksAlertV2EvaluationNotificationSubscriptionsList
 ```
@@ -2442,7 +2442,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksAlertV2.DataDatabricksAlertV2EvaluationNotificationSubscriptionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksalertv2"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksalertv2"
 
 datadatabricksalertv2.NewDataDatabricksAlertV2EvaluationNotificationSubscriptionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataDatabricksAlertV2EvaluationNotificationSubscriptionsOutputReference
 ```
@@ -2767,7 +2767,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksAlertV2.DataDatabricksAlertV2EvaluationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksalertv2"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksalertv2"
 
 datadatabricksalertv2.NewDataDatabricksAlertV2EvaluationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksAlertV2EvaluationOutputReference
 ```
@@ -3208,7 +3208,7 @@ func InternalValue() DataDatabricksAlertV2Evaluation
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksAlertV2.DataDatabricksAlertV2EvaluationSourceOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksalertv2"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksalertv2"
 
 datadatabricksalertv2.NewDataDatabricksAlertV2EvaluationSourceOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksAlertV2EvaluationSourceOutputReference
 ```
@@ -3537,7 +3537,7 @@ func InternalValue() DataDatabricksAlertV2EvaluationSource
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksAlertV2.DataDatabricksAlertV2EvaluationThresholdColumnOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksalertv2"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksalertv2"
 
 datadatabricksalertv2.NewDataDatabricksAlertV2EvaluationThresholdColumnOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksAlertV2EvaluationThresholdColumnOutputReference
 ```
@@ -3866,7 +3866,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksAlertV2.DataDatabricksAlertV2EvaluationThresholdOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksalertv2"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksalertv2"
 
 datadatabricksalertv2.NewDataDatabricksAlertV2EvaluationThresholdOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksAlertV2EvaluationThresholdOutputReference
 ```
@@ -4199,7 +4199,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksAlertV2.DataDatabricksAlertV2EvaluationThresholdValueOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksalertv2"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksalertv2"
 
 datadatabricksalertv2.NewDataDatabricksAlertV2EvaluationThresholdValueOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksAlertV2EvaluationThresholdValueOutputReference
 ```
@@ -4535,7 +4535,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksAlertV2.DataDatabricksAlertV2ParametersList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksalertv2"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksalertv2"
 
 datadatabricksalertv2.NewDataDatabricksAlertV2ParametersList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDatabricksAlertV2ParametersList
 ```
@@ -4695,7 +4695,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksAlertV2.DataDatabricksAlertV2ParametersOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksalertv2"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksalertv2"
 
 datadatabricksalertv2.NewDataDatabricksAlertV2ParametersOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataDatabricksAlertV2ParametersOutputReference
 ```
@@ -5042,7 +5042,7 @@ func InternalValue() DataDatabricksAlertV2Parameters
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksAlertV2.DataDatabricksAlertV2ProviderConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksalertv2"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksalertv2"
 
 datadatabricksalertv2.NewDataDatabricksAlertV2ProviderConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksAlertV2ProviderConfigOutputReference
 ```
@@ -5320,7 +5320,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksAlertV2.DataDatabricksAlertV2RunAsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksalertv2"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksalertv2"
 
 datadatabricksalertv2.NewDataDatabricksAlertV2RunAsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksAlertV2RunAsOutputReference
 ```
@@ -5627,7 +5627,7 @@ func InternalValue() DataDatabricksAlertV2RunAs
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksAlertV2.DataDatabricksAlertV2ScheduleOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksalertv2"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksalertv2"
 
 datadatabricksalertv2.NewDataDatabricksAlertV2ScheduleOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksAlertV2ScheduleOutputReference
 ```

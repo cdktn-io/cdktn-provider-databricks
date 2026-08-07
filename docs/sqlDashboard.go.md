@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/databricks/databrick
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.sqlDashboard.SqlDashboard.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/sqldashboard"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/sqldashboard"
 
 sqldashboard.NewSqlDashboard(scope Construct, id *string, config SqlDashboardConfig) SqlDashboard
 ```
@@ -469,7 +469,7 @@ func ResetUpdatedAt()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-databricks.sqlDashboard.SqlDashboard.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/sqldashboard"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/sqldashboard"
 
 sqldashboard.SqlDashboard_IsConstruct(x interface{}) *bool
 ```
@@ -501,7 +501,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-databricks.sqlDashboard.SqlDashboard.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/sqldashboard"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/sqldashboard"
 
 sqldashboard.SqlDashboard_IsTerraformElement(x interface{}) *bool
 ```
@@ -515,7 +515,7 @@ sqldashboard.SqlDashboard_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-databricks.sqlDashboard.SqlDashboard.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/sqldashboard"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/sqldashboard"
 
 sqldashboard.SqlDashboard_IsTerraformResource(x interface{}) *bool
 ```
@@ -529,7 +529,7 @@ sqldashboard.SqlDashboard_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-databricks.sqlDashboard.SqlDashboard.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/sqldashboard"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/sqldashboard"
 
 sqldashboard.SqlDashboard_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -956,7 +956,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.sqlDashboard.SqlDashboardConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/sqldashboard"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/sqldashboard"
 
 &sqldashboard.SqlDashboardConfig {
 	Connection: interface{},
@@ -971,7 +971,7 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/sqldashb
 	DashboardFiltersEnabled: interface{},
 	Id: *string,
 	Parent: *string,
-	ProviderConfig: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.sqlDashboard.SqlDashboardProviderConfig,
+	ProviderConfig: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18.sqlDashboard.SqlDashboardProviderConfig,
 	RunAsRole: *string,
 	Tags: *[]*string,
 	UpdatedAt: *string,
@@ -1189,7 +1189,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.sqlDashboard.SqlDashboardProviderConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/sqldashboard"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/sqldashboard"
 
 &sqldashboard.SqlDashboardProviderConfig {
 	WorkspaceId: *string,
@@ -1223,7 +1223,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.sqlDashboard.SqlDashboardProviderConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/sqldashboard"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/sqldashboard"
 
 sqldashboard.NewSqlDashboardProviderConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SqlDashboardProviderConfigOutputReference
 ```

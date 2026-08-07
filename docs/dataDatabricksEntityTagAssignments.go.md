@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/databricks/databrick
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksEntityTagAssignments.DataDatabricksEntityTagAssignments.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksentitytagassignments"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksentitytagassignments"
 
 datadatabricksentitytagassignments.NewDataDatabricksEntityTagAssignments(scope Construct, id *string, config DataDatabricksEntityTagAssignmentsConfig) DataDatabricksEntityTagAssignments
 ```
@@ -325,7 +325,7 @@ func ResetProviderConfig()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-databricks.dataDatabricksEntityTagAssignments.DataDatabricksEntityTagAssignments.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksentitytagassignments"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksentitytagassignments"
 
 datadatabricksentitytagassignments.DataDatabricksEntityTagAssignments_IsConstruct(x interface{}) *bool
 ```
@@ -357,7 +357,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-databricks.dataDatabricksEntityTagAssignments.DataDatabricksEntityTagAssignments.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksentitytagassignments"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksentitytagassignments"
 
 datadatabricksentitytagassignments.DataDatabricksEntityTagAssignments_IsTerraformElement(x interface{}) *bool
 ```
@@ -371,7 +371,7 @@ datadatabricksentitytagassignments.DataDatabricksEntityTagAssignments_IsTerrafor
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-databricks.dataDatabricksEntityTagAssignments.DataDatabricksEntityTagAssignments.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksentitytagassignments"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksentitytagassignments"
 
 datadatabricksentitytagassignments.DataDatabricksEntityTagAssignments_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -385,7 +385,7 @@ datadatabricksentitytagassignments.DataDatabricksEntityTagAssignments_IsTerrafor
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-databricks.dataDatabricksEntityTagAssignments.DataDatabricksEntityTagAssignments.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksentitytagassignments"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksentitytagassignments"
 
 datadatabricksentitytagassignments.DataDatabricksEntityTagAssignments_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -691,7 +691,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksEntityTagAssignments.DataDatabricksEntityTagAssignmentsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksentitytagassignments"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksentitytagassignments"
 
 &datadatabricksentitytagassignments.DataDatabricksEntityTagAssignmentsConfig {
 	Connection: interface{},
@@ -704,7 +704,7 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadata
 	EntityName: *string,
 	EntityType: *string,
 	MaxResults: *f64,
-	ProviderConfig: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.dataDatabricksEntityTagAssignments.DataDatabricksEntityTagAssignmentsProviderConfig,
+	ProviderConfig: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18.dataDatabricksEntityTagAssignments.DataDatabricksEntityTagAssignmentsProviderConfig,
 }
 ```
 
@@ -849,7 +849,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksEntityTagAssignments.DataDatabricksEntityTagAssignmentsProviderConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksentitytagassignments"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksentitytagassignments"
 
 &datadatabricksentitytagassignments.DataDatabricksEntityTagAssignmentsProviderConfig {
 	WorkspaceId: *string,
@@ -881,13 +881,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksEntityTagAssignments.DataDatabricksEntityTagAssignmentsTagAssignments.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksentitytagassignments"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksentitytagassignments"
 
 &datadatabricksentitytagassignments.DataDatabricksEntityTagAssignmentsTagAssignments {
 	EntityName: *string,
 	EntityType: *string,
 	TagKey: *string,
-	ProviderConfig: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.dataDatabricksEntityTagAssignments.DataDatabricksEntityTagAssignmentsTagAssignmentsProviderConfig,
+	ProviderConfig: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18.dataDatabricksEntityTagAssignments.DataDatabricksEntityTagAssignmentsTagAssignmentsProviderConfig,
 }
 ```
 
@@ -955,7 +955,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksEntityTagAssignments.DataDatabricksEntityTagAssignmentsTagAssignmentsProviderConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksentitytagassignments"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksentitytagassignments"
 
 &datadatabricksentitytagassignments.DataDatabricksEntityTagAssignmentsTagAssignmentsProviderConfig {
 	WorkspaceId: *string,
@@ -989,7 +989,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksEntityTagAssignments.DataDatabricksEntityTagAssignmentsProviderConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksentitytagassignments"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksentitytagassignments"
 
 datadatabricksentitytagassignments.NewDataDatabricksEntityTagAssignmentsProviderConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksEntityTagAssignmentsProviderConfigOutputReference
 ```
@@ -1267,7 +1267,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksEntityTagAssignments.DataDatabricksEntityTagAssignmentsTagAssignmentsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksentitytagassignments"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksentitytagassignments"
 
 datadatabricksentitytagassignments.NewDataDatabricksEntityTagAssignmentsTagAssignmentsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDatabricksEntityTagAssignmentsTagAssignmentsList
 ```
@@ -1427,7 +1427,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksEntityTagAssignments.DataDatabricksEntityTagAssignmentsTagAssignmentsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksentitytagassignments"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksentitytagassignments"
 
 datadatabricksentitytagassignments.NewDataDatabricksEntityTagAssignmentsTagAssignmentsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataDatabricksEntityTagAssignmentsTagAssignmentsOutputReference
 ```
@@ -1846,7 +1846,7 @@ func InternalValue() DataDatabricksEntityTagAssignmentsTagAssignments
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksEntityTagAssignments.DataDatabricksEntityTagAssignmentsTagAssignmentsProviderConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksentitytagassignments"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksentitytagassignments"
 
 datadatabricksentitytagassignments.NewDataDatabricksEntityTagAssignmentsTagAssignmentsProviderConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksEntityTagAssignmentsTagAssignmentsProviderConfigOutputReference
 ```

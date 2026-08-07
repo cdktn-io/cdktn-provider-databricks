@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/databricks/databrick
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksViews.DataDatabricksViews.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksviews"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksviews"
 
 datadatabricksviews.NewDataDatabricksViews(scope Construct, id *string, config DataDatabricksViewsConfig) DataDatabricksViews
 ```
@@ -332,7 +332,7 @@ func ResetProviderConfig()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-databricks.dataDatabricksViews.DataDatabricksViews.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksviews"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksviews"
 
 datadatabricksviews.DataDatabricksViews_IsConstruct(x interface{}) *bool
 ```
@@ -364,7 +364,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-databricks.dataDatabricksViews.DataDatabricksViews.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksviews"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksviews"
 
 datadatabricksviews.DataDatabricksViews_IsTerraformElement(x interface{}) *bool
 ```
@@ -378,7 +378,7 @@ datadatabricksviews.DataDatabricksViews_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-databricks.dataDatabricksViews.DataDatabricksViews.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksviews"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksviews"
 
 datadatabricksviews.DataDatabricksViews_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -392,7 +392,7 @@ datadatabricksviews.DataDatabricksViews_IsTerraformDataSource(x interface{}) *bo
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-databricks.dataDatabricksViews.DataDatabricksViews.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksviews"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksviews"
 
 datadatabricksviews.DataDatabricksViews_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -709,7 +709,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksViews.DataDatabricksViewsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksviews"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksviews"
 
 &datadatabricksviews.DataDatabricksViewsConfig {
 	Connection: interface{},
@@ -723,7 +723,7 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadata
 	SchemaName: *string,
 	Id: *string,
 	Ids: *[]*string,
-	ProviderConfig: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.dataDatabricksViews.DataDatabricksViewsProviderConfig,
+	ProviderConfig: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18.dataDatabricksViews.DataDatabricksViewsProviderConfig,
 }
 ```
 
@@ -886,7 +886,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksViews.DataDatabricksViewsProviderConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksviews"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksviews"
 
 &datadatabricksviews.DataDatabricksViewsProviderConfig {
 	WorkspaceId: *string,
@@ -920,7 +920,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksViews.DataDatabricksViewsProviderConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksviews"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksviews"
 
 datadatabricksviews.NewDataDatabricksViewsProviderConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksViewsProviderConfigOutputReference
 ```

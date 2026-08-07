@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/databricks/databrick
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.postgresCdfConfig.PostgresCdfConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/postgrescdfconfig"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/postgrescdfconfig"
 
 postgrescdfconfig.NewPostgresCdfConfig(scope Construct, id *string, config PostgresCdfConfigConfig) PostgresCdfConfig
 ```
@@ -427,7 +427,7 @@ func ResetProviderConfig()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-databricks.postgresCdfConfig.PostgresCdfConfig.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/postgrescdfconfig"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/postgrescdfconfig"
 
 postgrescdfconfig.PostgresCdfConfig_IsConstruct(x interface{}) *bool
 ```
@@ -459,7 +459,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-databricks.postgresCdfConfig.PostgresCdfConfig.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/postgrescdfconfig"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/postgrescdfconfig"
 
 postgrescdfconfig.PostgresCdfConfig_IsTerraformElement(x interface{}) *bool
 ```
@@ -473,7 +473,7 @@ postgrescdfconfig.PostgresCdfConfig_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-databricks.postgresCdfConfig.PostgresCdfConfig.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/postgrescdfconfig"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/postgrescdfconfig"
 
 postgrescdfconfig.PostgresCdfConfig_IsTerraformResource(x interface{}) *bool
 ```
@@ -487,7 +487,7 @@ postgrescdfconfig.PostgresCdfConfig_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-databricks.postgresCdfConfig.PostgresCdfConfig.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/postgrescdfconfig"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/postgrescdfconfig"
 
 postgrescdfconfig.PostgresCdfConfig_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -870,7 +870,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.postgresCdfConfig.PostgresCdfConfigConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/postgrescdfconfig"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/postgrescdfconfig"
 
 &postgrescdfconfig.PostgresCdfConfigConfig {
 	Connection: interface{},
@@ -885,7 +885,7 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/postgres
 	PostgresSchema: *string,
 	Schema: *string,
 	CdfConfigId: *string,
-	ProviderConfig: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.postgresCdfConfig.PostgresCdfConfigProviderConfig,
+	ProviderConfig: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18.postgresCdfConfig.PostgresCdfConfigProviderConfig,
 }
 ```
 
@@ -1056,7 +1056,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.postgresCdfConfig.PostgresCdfConfigProviderConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/postgrescdfconfig"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/postgrescdfconfig"
 
 &postgrescdfconfig.PostgresCdfConfigProviderConfig {
 	WorkspaceId: *string,
@@ -1090,7 +1090,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.postgresCdfConfig.PostgresCdfConfigProviderConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/postgrescdfconfig"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/postgrescdfconfig"
 
 postgrescdfconfig.NewPostgresCdfConfigProviderConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PostgresCdfConfigProviderConfigOutputReference
 ```

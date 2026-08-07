@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/databricks/databrick
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksEndpoint.DataDatabricksEndpoint.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksendpoint"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksendpoint"
 
 datadatabricksendpoint.NewDataDatabricksEndpoint(scope Construct, id *string, config DataDatabricksEndpointConfig) DataDatabricksEndpoint
 ```
@@ -298,7 +298,7 @@ func InterpolationForAttribute(terraformAttribute *string) IResolvable
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-databricks.dataDatabricksEndpoint.DataDatabricksEndpoint.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksendpoint"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksendpoint"
 
 datadatabricksendpoint.DataDatabricksEndpoint_IsConstruct(x interface{}) *bool
 ```
@@ -330,7 +330,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-databricks.dataDatabricksEndpoint.DataDatabricksEndpoint.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksendpoint"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksendpoint"
 
 datadatabricksendpoint.DataDatabricksEndpoint_IsTerraformElement(x interface{}) *bool
 ```
@@ -344,7 +344,7 @@ datadatabricksendpoint.DataDatabricksEndpoint_IsTerraformElement(x interface{}) 
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-databricks.dataDatabricksEndpoint.DataDatabricksEndpoint.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksendpoint"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksendpoint"
 
 datadatabricksendpoint.DataDatabricksEndpoint_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -358,7 +358,7 @@ datadatabricksendpoint.DataDatabricksEndpoint_IsTerraformDataSource(x interface{
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-databricks.dataDatabricksEndpoint.DataDatabricksEndpoint.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksendpoint"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksendpoint"
 
 datadatabricksendpoint.DataDatabricksEndpoint_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -697,7 +697,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksEndpoint.DataDatabricksEndpointAwsVpcEndpointInfo.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksendpoint"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksendpoint"
 
 &datadatabricksendpoint.DataDatabricksEndpointAwsVpcEndpointInfo {
 	AwsVpcEndpointId: *string,
@@ -729,7 +729,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksEndpoint.DataDatabricksEndpointAzurePrivateEndpointInfo.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksendpoint"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksendpoint"
 
 &datadatabricksendpoint.DataDatabricksEndpointAzurePrivateEndpointInfo {
 	PrivateEndpointName: *string,
@@ -775,7 +775,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksEndpoint.DataDatabricksEndpointConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksendpoint"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksendpoint"
 
 &datadatabricksendpoint.DataDatabricksEndpointConfig {
 	Connection: interface{},
@@ -891,7 +891,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksEndpoint.DataDatabricksEndpointGcpPscEndpointInfo.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksendpoint"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksendpoint"
 
 &datadatabricksendpoint.DataDatabricksEndpointGcpPscEndpointInfo {
 	EndpointRegion: *string,
@@ -953,7 +953,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksEndpoint.DataDatabricksEndpointAwsVpcEndpointInfoOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksendpoint"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksendpoint"
 
 datadatabricksendpoint.NewDataDatabricksEndpointAwsVpcEndpointInfoOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksEndpointAwsVpcEndpointInfoOutputReference
 ```
@@ -1246,7 +1246,7 @@ func InternalValue() DataDatabricksEndpointAwsVpcEndpointInfo
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksEndpoint.DataDatabricksEndpointAzurePrivateEndpointInfoOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksendpoint"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksendpoint"
 
 datadatabricksendpoint.NewDataDatabricksEndpointAzurePrivateEndpointInfoOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksEndpointAzurePrivateEndpointInfoOutputReference
 ```
@@ -1561,7 +1561,7 @@ func InternalValue() DataDatabricksEndpointAzurePrivateEndpointInfo
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksEndpoint.DataDatabricksEndpointGcpPscEndpointInfoOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksendpoint"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksendpoint"
 
 datadatabricksendpoint.NewDataDatabricksEndpointGcpPscEndpointInfoOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksEndpointGcpPscEndpointInfoOutputReference
 ```

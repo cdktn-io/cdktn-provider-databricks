@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/databricks/databrick
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.aibiDashboardEmbeddingAccessPolicySetting.AibiDashboardEmbeddingAccessPolicySetting.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/aibidashboardembeddingaccesspolicysetting"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/aibidashboardembeddingaccesspolicysetting"
 
 aibidashboardembeddingaccesspolicysetting.NewAibiDashboardEmbeddingAccessPolicySetting(scope Construct, id *string, config AibiDashboardEmbeddingAccessPolicySettingConfig) AibiDashboardEmbeddingAccessPolicySetting
 ```
@@ -454,7 +454,7 @@ func ResetSettingName()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-databricks.aibiDashboardEmbeddingAccessPolicySetting.AibiDashboardEmbeddingAccessPolicySetting.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/aibidashboardembeddingaccesspolicysetting"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/aibidashboardembeddingaccesspolicysetting"
 
 aibidashboardembeddingaccesspolicysetting.AibiDashboardEmbeddingAccessPolicySetting_IsConstruct(x interface{}) *bool
 ```
@@ -486,7 +486,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-databricks.aibiDashboardEmbeddingAccessPolicySetting.AibiDashboardEmbeddingAccessPolicySetting.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/aibidashboardembeddingaccesspolicysetting"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/aibidashboardembeddingaccesspolicysetting"
 
 aibidashboardembeddingaccesspolicysetting.AibiDashboardEmbeddingAccessPolicySetting_IsTerraformElement(x interface{}) *bool
 ```
@@ -500,7 +500,7 @@ aibidashboardembeddingaccesspolicysetting.AibiDashboardEmbeddingAccessPolicySett
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-databricks.aibiDashboardEmbeddingAccessPolicySetting.AibiDashboardEmbeddingAccessPolicySetting.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/aibidashboardembeddingaccesspolicysetting"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/aibidashboardembeddingaccesspolicysetting"
 
 aibidashboardembeddingaccesspolicysetting.AibiDashboardEmbeddingAccessPolicySetting_IsTerraformResource(x interface{}) *bool
 ```
@@ -514,7 +514,7 @@ aibidashboardembeddingaccesspolicysetting.AibiDashboardEmbeddingAccessPolicySett
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-databricks.aibiDashboardEmbeddingAccessPolicySetting.AibiDashboardEmbeddingAccessPolicySetting.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/aibidashboardembeddingaccesspolicysetting"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/aibidashboardembeddingaccesspolicysetting"
 
 aibidashboardembeddingaccesspolicysetting.AibiDashboardEmbeddingAccessPolicySetting_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -853,7 +853,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.aibiDashboardEmbeddingAccessPolicySetting.AibiDashboardEmbeddingAccessPolicySettingAibiDashboardEmbeddingAccessPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/aibidashboardembeddingaccesspolicysetting"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/aibidashboardembeddingaccesspolicysetting"
 
 &aibidashboardembeddingaccesspolicysetting.AibiDashboardEmbeddingAccessPolicySettingAibiDashboardEmbeddingAccessPolicy {
 	AccessPolicyType: *string,
@@ -885,7 +885,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.aibiDashboardEmbeddingAccessPolicySetting.AibiDashboardEmbeddingAccessPolicySettingConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/aibidashboardembeddingaccesspolicysetting"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/aibidashboardembeddingaccesspolicysetting"
 
 &aibidashboardembeddingaccesspolicysetting.AibiDashboardEmbeddingAccessPolicySettingConfig {
 	Connection: interface{},
@@ -895,10 +895,10 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/aibidash
 	Lifecycle: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle,
 	Provider: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider,
 	Provisioners: *[]interface{},
-	AibiDashboardEmbeddingAccessPolicy: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.aibiDashboardEmbeddingAccessPolicySetting.AibiDashboardEmbeddingAccessPolicySettingAibiDashboardEmbeddingAccessPolicy,
+	AibiDashboardEmbeddingAccessPolicy: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18.aibiDashboardEmbeddingAccessPolicySetting.AibiDashboardEmbeddingAccessPolicySettingAibiDashboardEmbeddingAccessPolicy,
 	Etag: *string,
 	Id: *string,
-	ProviderConfig: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.aibiDashboardEmbeddingAccessPolicySetting.AibiDashboardEmbeddingAccessPolicySettingProviderConfig,
+	ProviderConfig: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18.aibiDashboardEmbeddingAccessPolicySetting.AibiDashboardEmbeddingAccessPolicySettingProviderConfig,
 	SettingName: *string,
 }
 ```
@@ -1064,7 +1064,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.aibiDashboardEmbeddingAccessPolicySetting.AibiDashboardEmbeddingAccessPolicySettingProviderConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/aibidashboardembeddingaccesspolicysetting"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/aibidashboardembeddingaccesspolicysetting"
 
 &aibidashboardembeddingaccesspolicysetting.AibiDashboardEmbeddingAccessPolicySettingProviderConfig {
 	WorkspaceId: *string,
@@ -1098,7 +1098,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.aibiDashboardEmbeddingAccessPolicySetting.AibiDashboardEmbeddingAccessPolicySettingAibiDashboardEmbeddingAccessPolicyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/aibidashboardembeddingaccesspolicysetting"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/aibidashboardembeddingaccesspolicysetting"
 
 aibidashboardembeddingaccesspolicysetting.NewAibiDashboardEmbeddingAccessPolicySettingAibiDashboardEmbeddingAccessPolicyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AibiDashboardEmbeddingAccessPolicySettingAibiDashboardEmbeddingAccessPolicyOutputReference
 ```
@@ -1369,7 +1369,7 @@ func InternalValue() AibiDashboardEmbeddingAccessPolicySettingAibiDashboardEmbed
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.aibiDashboardEmbeddingAccessPolicySetting.AibiDashboardEmbeddingAccessPolicySettingProviderConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/aibidashboardembeddingaccesspolicysetting"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/aibidashboardembeddingaccesspolicysetting"
 
 aibidashboardembeddingaccesspolicysetting.NewAibiDashboardEmbeddingAccessPolicySettingProviderConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AibiDashboardEmbeddingAccessPolicySettingProviderConfigOutputReference
 ```

@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/databricks/databrick
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksDashboards.DataDatabricksDashboards.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksdashboards"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksdashboards"
 
 datadatabricksdashboards.NewDataDatabricksDashboards(scope Construct, id *string, config DataDatabricksDashboardsConfig) DataDatabricksDashboards
 ```
@@ -325,7 +325,7 @@ func ResetProviderConfig()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-databricks.dataDatabricksDashboards.DataDatabricksDashboards.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksdashboards"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksdashboards"
 
 datadatabricksdashboards.DataDatabricksDashboards_IsConstruct(x interface{}) *bool
 ```
@@ -357,7 +357,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-databricks.dataDatabricksDashboards.DataDatabricksDashboards.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksdashboards"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksdashboards"
 
 datadatabricksdashboards.DataDatabricksDashboards_IsTerraformElement(x interface{}) *bool
 ```
@@ -371,7 +371,7 @@ datadatabricksdashboards.DataDatabricksDashboards_IsTerraformElement(x interface
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-databricks.dataDatabricksDashboards.DataDatabricksDashboards.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksdashboards"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksdashboards"
 
 datadatabricksdashboards.DataDatabricksDashboards_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -385,7 +385,7 @@ datadatabricksdashboards.DataDatabricksDashboards_IsTerraformDataSource(x interf
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-databricks.dataDatabricksDashboards.DataDatabricksDashboards.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksdashboards"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksdashboards"
 
 datadatabricksdashboards.DataDatabricksDashboards_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -647,7 +647,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksDashboards.DataDatabricksDashboardsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksdashboards"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksdashboards"
 
 &datadatabricksdashboards.DataDatabricksDashboardsConfig {
 	Connection: interface{},
@@ -658,7 +658,7 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadata
 	Provider: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider,
 	Provisioners: *[]interface{},
 	DashboardNameContains: *string,
-	ProviderConfig: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.dataDatabricksDashboards.DataDatabricksDashboardsProviderConfig,
+	ProviderConfig: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18.dataDatabricksDashboards.DataDatabricksDashboardsProviderConfig,
 }
 ```
 
@@ -777,7 +777,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksDashboards.DataDatabricksDashboardsDashboards.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksdashboards"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksdashboards"
 
 &datadatabricksdashboards.DataDatabricksDashboardsDashboards {
 	DisplayName: *string,
@@ -837,7 +837,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksDashboards.DataDatabricksDashboardsProviderConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksdashboards"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksdashboards"
 
 &datadatabricksdashboards.DataDatabricksDashboardsProviderConfig {
 	WorkspaceId: *string,
@@ -871,7 +871,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksDashboards.DataDatabricksDashboardsDashboardsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksdashboards"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksdashboards"
 
 datadatabricksdashboards.NewDataDatabricksDashboardsDashboardsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDatabricksDashboardsDashboardsList
 ```
@@ -1031,7 +1031,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksDashboards.DataDatabricksDashboardsDashboardsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksdashboards"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksdashboards"
 
 datadatabricksdashboards.NewDataDatabricksDashboardsDashboardsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataDatabricksDashboardsDashboardsOutputReference
 ```
@@ -1462,7 +1462,7 @@ func InternalValue() DataDatabricksDashboardsDashboards
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksDashboards.DataDatabricksDashboardsProviderConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksdashboards"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksdashboards"
 
 datadatabricksdashboards.NewDataDatabricksDashboardsProviderConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksDashboardsProviderConfigOutputReference
 ```

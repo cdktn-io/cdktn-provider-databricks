@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/databricks/databrick
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.postgresCatalog.PostgresCatalog.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/postgrescatalog"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/postgrescatalog"
 
 postgrescatalog.NewPostgresCatalog(scope Construct, id *string, config PostgresCatalogConfig) PostgresCatalog
 ```
@@ -440,7 +440,7 @@ func ResetSpec()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-databricks.postgresCatalog.PostgresCatalog.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/postgrescatalog"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/postgrescatalog"
 
 postgrescatalog.PostgresCatalog_IsConstruct(x interface{}) *bool
 ```
@@ -472,7 +472,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-databricks.postgresCatalog.PostgresCatalog.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/postgrescatalog"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/postgrescatalog"
 
 postgrescatalog.PostgresCatalog_IsTerraformElement(x interface{}) *bool
 ```
@@ -486,7 +486,7 @@ postgrescatalog.PostgresCatalog_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-databricks.postgresCatalog.PostgresCatalog.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/postgrescatalog"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/postgrescatalog"
 
 postgrescatalog.PostgresCatalog_IsTerraformResource(x interface{}) *bool
 ```
@@ -500,7 +500,7 @@ postgrescatalog.PostgresCatalog_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-databricks.postgresCatalog.PostgresCatalog.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/postgrescatalog"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/postgrescatalog"
 
 postgrescatalog.PostgresCatalog_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -850,7 +850,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.postgresCatalog.PostgresCatalogConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/postgrescatalog"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/postgrescatalog"
 
 &postgrescatalog.PostgresCatalogConfig {
 	Connection: interface{},
@@ -861,8 +861,8 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/postgres
 	Provider: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider,
 	Provisioners: *[]interface{},
 	CatalogId: *string,
-	ProviderConfig: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.postgresCatalog.PostgresCatalogProviderConfig,
-	Spec: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.postgresCatalog.PostgresCatalogSpec,
+	ProviderConfig: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18.postgresCatalog.PostgresCatalogProviderConfig,
+	Spec: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18.postgresCatalog.PostgresCatalogSpec,
 }
 ```
 
@@ -994,7 +994,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.postgresCatalog.PostgresCatalogProviderConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/postgrescatalog"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/postgrescatalog"
 
 &postgrescatalog.PostgresCatalogProviderConfig {
 	WorkspaceId: *string,
@@ -1026,7 +1026,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.postgresCatalog.PostgresCatalogSpec.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/postgrescatalog"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/postgrescatalog"
 
 &postgrescatalog.PostgresCatalogSpec {
 	PostgresDatabase: *string,
@@ -1086,7 +1086,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.postgresCatalog.PostgresCatalogStatus.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/postgrescatalog"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/postgrescatalog"
 
 &postgrescatalog.PostgresCatalogStatus {
 
@@ -1101,7 +1101,7 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/postgres
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.postgresCatalog.PostgresCatalogProviderConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/postgrescatalog"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/postgrescatalog"
 
 postgrescatalog.NewPostgresCatalogProviderConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PostgresCatalogProviderConfigOutputReference
 ```
@@ -1379,7 +1379,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.postgresCatalog.PostgresCatalogSpecOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/postgrescatalog"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/postgrescatalog"
 
 postgrescatalog.NewPostgresCatalogSpecOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PostgresCatalogSpecOutputReference
 ```
@@ -1708,7 +1708,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.postgresCatalog.PostgresCatalogStatusOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/postgrescatalog"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/postgrescatalog"
 
 postgrescatalog.NewPostgresCatalogStatusOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PostgresCatalogStatusOutputReference
 ```

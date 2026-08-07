@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/databricks/databrick
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.aiGatewayModelService.AiGatewayModelService.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/aigatewaymodelservice"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/aigatewaymodelservice"
 
 aigatewaymodelservice.NewAiGatewayModelService(scope Construct, id *string, config AiGatewayModelServiceConfig) AiGatewayModelService
 ```
@@ -454,7 +454,7 @@ func ResetProviderConfig()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-databricks.aiGatewayModelService.AiGatewayModelService.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/aigatewaymodelservice"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/aigatewaymodelservice"
 
 aigatewaymodelservice.AiGatewayModelService_IsConstruct(x interface{}) *bool
 ```
@@ -486,7 +486,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-databricks.aiGatewayModelService.AiGatewayModelService.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/aigatewaymodelservice"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/aigatewaymodelservice"
 
 aigatewaymodelservice.AiGatewayModelService_IsTerraformElement(x interface{}) *bool
 ```
@@ -500,7 +500,7 @@ aigatewaymodelservice.AiGatewayModelService_IsTerraformElement(x interface{}) *b
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-databricks.aiGatewayModelService.AiGatewayModelService.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/aigatewaymodelservice"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/aigatewaymodelservice"
 
 aigatewaymodelservice.AiGatewayModelService_IsTerraformResource(x interface{}) *bool
 ```
@@ -514,7 +514,7 @@ aigatewaymodelservice.AiGatewayModelService_IsTerraformResource(x interface{}) *
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-databricks.aiGatewayModelService.AiGatewayModelService.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/aigatewaymodelservice"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/aigatewaymodelservice"
 
 aigatewaymodelservice.AiGatewayModelService_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -985,7 +985,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.aiGatewayModelService.AiGatewayModelServiceConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/aigatewaymodelservice"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/aigatewaymodelservice"
 
 &aigatewaymodelservice.AiGatewayModelServiceConfig {
 	Connection: interface{},
@@ -998,9 +998,9 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/aigatewa
 	ModelServiceId: *string,
 	Parent: *string,
 	Comment: *string,
-	Config: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.aiGatewayModelService.AiGatewayModelServiceConfigA,
+	Config: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18.aiGatewayModelService.AiGatewayModelServiceConfigA,
 	Owner: *string,
-	ProviderConfig: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.aiGatewayModelService.AiGatewayModelServiceProviderConfig,
+	ProviderConfig: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18.aiGatewayModelService.AiGatewayModelServiceProviderConfig,
 }
 ```
 
@@ -1171,12 +1171,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.aiGatewayModelService.AiGatewayModelServiceConfigA.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/aigatewaymodelservice"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/aigatewaymodelservice"
 
 &aigatewaymodelservice.AiGatewayModelServiceConfigA {
-	InferenceTable: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.aiGatewayModelService.AiGatewayModelServiceConfigInferenceTable,
+	InferenceTable: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18.aiGatewayModelService.AiGatewayModelServiceConfigInferenceTable,
 	RateLimits: interface{},
-	Routing: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.aiGatewayModelService.AiGatewayModelServiceConfigRouting,
+	Routing: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18.aiGatewayModelService.AiGatewayModelServiceConfigRouting,
 }
 ```
 
@@ -1231,7 +1231,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.aiGatewayModelService.AiGatewayModelServiceConfigInferenceTable.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/aigatewaymodelservice"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/aigatewaymodelservice"
 
 &aigatewaymodelservice.AiGatewayModelServiceConfigInferenceTable {
 	Parent: *string,
@@ -1291,7 +1291,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.aiGatewayModelService.AiGatewayModelServiceConfigRateLimits.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/aigatewaymodelservice"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/aigatewaymodelservice"
 
 &aigatewaymodelservice.AiGatewayModelServiceConfigRateLimits {
 	Key: *string,
@@ -1407,13 +1407,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.aiGatewayModelService.AiGatewayModelServiceConfigRouting.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/aigatewaymodelservice"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/aigatewaymodelservice"
 
 &aigatewaymodelservice.AiGatewayModelServiceConfigRouting {
 	Destinations: interface{},
-	Fallback: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.aiGatewayModelService.AiGatewayModelServiceConfigRoutingFallback,
+	Fallback: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18.aiGatewayModelService.AiGatewayModelServiceConfigRoutingFallback,
 	FirstTokenTimeout: *string,
-	TrafficSplitting: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.aiGatewayModelService.AiGatewayModelServiceConfigRoutingTrafficSplitting,
+	TrafficSplitting: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18.aiGatewayModelService.AiGatewayModelServiceConfigRoutingTrafficSplitting,
 }
 ```
 
@@ -1481,14 +1481,14 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.aiGatewayModelService.AiGatewayModelServiceConfigRoutingDestinations.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/aigatewaymodelservice"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/aigatewaymodelservice"
 
 &aigatewaymodelservice.AiGatewayModelServiceConfigRoutingDestinations {
 	DestinationType: *string,
 	Name: *string,
-	ExternalModelConfig: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.aiGatewayModelService.AiGatewayModelServiceConfigRoutingDestinationsExternalModelConfig,
-	PayPerTokenConfig: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.aiGatewayModelService.AiGatewayModelServiceConfigRoutingDestinationsPayPerTokenConfig,
-	ProvisionedThroughputConfig: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.aiGatewayModelService.AiGatewayModelServiceConfigRoutingDestinationsProvisionedThroughputConfig,
+	ExternalModelConfig: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18.aiGatewayModelService.AiGatewayModelServiceConfigRoutingDestinationsExternalModelConfig,
+	PayPerTokenConfig: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18.aiGatewayModelService.AiGatewayModelServiceConfigRoutingDestinationsPayPerTokenConfig,
+	ProvisionedThroughputConfig: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18.aiGatewayModelService.AiGatewayModelServiceConfigRoutingDestinationsProvisionedThroughputConfig,
 	TrafficPercentage: *f64,
 }
 ```
@@ -1583,11 +1583,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.aiGatewayModelService.AiGatewayModelServiceConfigRoutingDestinationsExternalModelConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/aigatewaymodelservice"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/aigatewaymodelservice"
 
 &aigatewaymodelservice.AiGatewayModelServiceConfigRoutingDestinationsExternalModelConfig {
 	ModelProviderService: *string,
-	Target: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.aiGatewayModelService.AiGatewayModelServiceConfigRoutingDestinationsExternalModelConfigTarget,
+	Target: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18.aiGatewayModelService.AiGatewayModelServiceConfigRoutingDestinationsExternalModelConfigTarget,
 }
 ```
 
@@ -1629,7 +1629,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.aiGatewayModelService.AiGatewayModelServiceConfigRoutingDestinationsExternalModelConfigTarget.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/aigatewaymodelservice"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/aigatewaymodelservice"
 
 &aigatewaymodelservice.AiGatewayModelServiceConfigRoutingDestinationsExternalModelConfigTarget {
 	Model: *string,
@@ -1675,7 +1675,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.aiGatewayModelService.AiGatewayModelServiceConfigRoutingDestinationsPayPerTokenConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/aigatewaymodelservice"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/aigatewaymodelservice"
 
 &aigatewaymodelservice.AiGatewayModelServiceConfigRoutingDestinationsPayPerTokenConfig {
 	Model: *string,
@@ -1707,7 +1707,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.aiGatewayModelService.AiGatewayModelServiceConfigRoutingDestinationsProvisionedThroughputConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/aigatewaymodelservice"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/aigatewaymodelservice"
 
 &aigatewaymodelservice.AiGatewayModelServiceConfigRoutingDestinationsProvisionedThroughputConfig {
 	ModelServingEndpoint: *string,
@@ -1739,7 +1739,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.aiGatewayModelService.AiGatewayModelServiceConfigRoutingFallback.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/aigatewaymodelservice"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/aigatewaymodelservice"
 
 &aigatewaymodelservice.AiGatewayModelServiceConfigRoutingFallback {
 	Destinations: interface{},
@@ -1771,14 +1771,14 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.aiGatewayModelService.AiGatewayModelServiceConfigRoutingFallbackDestinations.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/aigatewaymodelservice"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/aigatewaymodelservice"
 
 &aigatewaymodelservice.AiGatewayModelServiceConfigRoutingFallbackDestinations {
 	DestinationType: *string,
 	Name: *string,
-	ExternalModelConfig: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.aiGatewayModelService.AiGatewayModelServiceConfigRoutingFallbackDestinationsExternalModelConfig,
-	PayPerTokenConfig: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.aiGatewayModelService.AiGatewayModelServiceConfigRoutingFallbackDestinationsPayPerTokenConfig,
-	ProvisionedThroughputConfig: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.aiGatewayModelService.AiGatewayModelServiceConfigRoutingFallbackDestinationsProvisionedThroughputConfig,
+	ExternalModelConfig: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18.aiGatewayModelService.AiGatewayModelServiceConfigRoutingFallbackDestinationsExternalModelConfig,
+	PayPerTokenConfig: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18.aiGatewayModelService.AiGatewayModelServiceConfigRoutingFallbackDestinationsPayPerTokenConfig,
+	ProvisionedThroughputConfig: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18.aiGatewayModelService.AiGatewayModelServiceConfigRoutingFallbackDestinationsProvisionedThroughputConfig,
 	TrafficPercentage: *f64,
 }
 ```
@@ -1873,11 +1873,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.aiGatewayModelService.AiGatewayModelServiceConfigRoutingFallbackDestinationsExternalModelConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/aigatewaymodelservice"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/aigatewaymodelservice"
 
 &aigatewaymodelservice.AiGatewayModelServiceConfigRoutingFallbackDestinationsExternalModelConfig {
 	ModelProviderService: *string,
-	Target: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.aiGatewayModelService.AiGatewayModelServiceConfigRoutingFallbackDestinationsExternalModelConfigTarget,
+	Target: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18.aiGatewayModelService.AiGatewayModelServiceConfigRoutingFallbackDestinationsExternalModelConfigTarget,
 }
 ```
 
@@ -1919,7 +1919,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.aiGatewayModelService.AiGatewayModelServiceConfigRoutingFallbackDestinationsExternalModelConfigTarget.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/aigatewaymodelservice"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/aigatewaymodelservice"
 
 &aigatewaymodelservice.AiGatewayModelServiceConfigRoutingFallbackDestinationsExternalModelConfigTarget {
 	Model: *string,
@@ -1965,7 +1965,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.aiGatewayModelService.AiGatewayModelServiceConfigRoutingFallbackDestinationsPayPerTokenConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/aigatewaymodelservice"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/aigatewaymodelservice"
 
 &aigatewaymodelservice.AiGatewayModelServiceConfigRoutingFallbackDestinationsPayPerTokenConfig {
 	Model: *string,
@@ -1997,7 +1997,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.aiGatewayModelService.AiGatewayModelServiceConfigRoutingFallbackDestinationsProvisionedThroughputConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/aigatewaymodelservice"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/aigatewaymodelservice"
 
 &aigatewaymodelservice.AiGatewayModelServiceConfigRoutingFallbackDestinationsProvisionedThroughputConfig {
 	ModelServingEndpoint: *string,
@@ -2029,7 +2029,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.aiGatewayModelService.AiGatewayModelServiceConfigRoutingTrafficSplitting.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/aigatewaymodelservice"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/aigatewaymodelservice"
 
 &aigatewaymodelservice.AiGatewayModelServiceConfigRoutingTrafficSplitting {
 
@@ -2042,7 +2042,7 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/aigatewa
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.aiGatewayModelService.AiGatewayModelServiceProviderConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/aigatewaymodelservice"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/aigatewaymodelservice"
 
 &aigatewaymodelservice.AiGatewayModelServiceProviderConfig {
 	WorkspaceId: *string,
@@ -2076,7 +2076,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.aiGatewayModelService.AiGatewayModelServiceConfigAOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/aigatewaymodelservice"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/aigatewaymodelservice"
 
 aigatewaymodelservice.NewAiGatewayModelServiceConfigAOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AiGatewayModelServiceConfigAOutputReference
 ```
@@ -2451,7 +2451,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.aiGatewayModelService.AiGatewayModelServiceConfigInferenceTableOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/aigatewaymodelservice"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/aigatewaymodelservice"
 
 aigatewaymodelservice.NewAiGatewayModelServiceConfigInferenceTableOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AiGatewayModelServiceConfigInferenceTableOutputReference
 ```
@@ -2802,7 +2802,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.aiGatewayModelService.AiGatewayModelServiceConfigRateLimitsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/aigatewaymodelservice"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/aigatewaymodelservice"
 
 aigatewaymodelservice.NewAiGatewayModelServiceConfigRateLimitsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AiGatewayModelServiceConfigRateLimitsList
 ```
@@ -2962,7 +2962,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.aiGatewayModelService.AiGatewayModelServiceConfigRateLimitsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/aigatewaymodelservice"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/aigatewaymodelservice"
 
 aigatewaymodelservice.NewAiGatewayModelServiceConfigRateLimitsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) AiGatewayModelServiceConfigRateLimitsOutputReference
 ```
@@ -3418,7 +3418,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.aiGatewayModelService.AiGatewayModelServiceConfigRoutingDestinationsExternalModelConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/aigatewaymodelservice"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/aigatewaymodelservice"
 
 aigatewaymodelservice.NewAiGatewayModelServiceConfigRoutingDestinationsExternalModelConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AiGatewayModelServiceConfigRoutingDestinationsExternalModelConfigOutputReference
 ```
@@ -3724,7 +3724,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.aiGatewayModelService.AiGatewayModelServiceConfigRoutingDestinationsExternalModelConfigTargetOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/aigatewaymodelservice"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/aigatewaymodelservice"
 
 aigatewaymodelservice.NewAiGatewayModelServiceConfigRoutingDestinationsExternalModelConfigTargetOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AiGatewayModelServiceConfigRoutingDestinationsExternalModelConfigTargetOutputReference
 ```
@@ -4024,7 +4024,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.aiGatewayModelService.AiGatewayModelServiceConfigRoutingDestinationsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/aigatewaymodelservice"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/aigatewaymodelservice"
 
 aigatewaymodelservice.NewAiGatewayModelServiceConfigRoutingDestinationsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AiGatewayModelServiceConfigRoutingDestinationsList
 ```
@@ -4184,7 +4184,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.aiGatewayModelService.AiGatewayModelServiceConfigRoutingDestinationsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/aigatewaymodelservice"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/aigatewaymodelservice"
 
 aigatewaymodelservice.NewAiGatewayModelServiceConfigRoutingDestinationsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) AiGatewayModelServiceConfigRoutingDestinationsOutputReference
 ```
@@ -4661,7 +4661,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.aiGatewayModelService.AiGatewayModelServiceConfigRoutingDestinationsPayPerTokenConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/aigatewaymodelservice"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/aigatewaymodelservice"
 
 aigatewaymodelservice.NewAiGatewayModelServiceConfigRoutingDestinationsPayPerTokenConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AiGatewayModelServiceConfigRoutingDestinationsPayPerTokenConfigOutputReference
 ```
@@ -4932,7 +4932,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.aiGatewayModelService.AiGatewayModelServiceConfigRoutingDestinationsProvisionedThroughputConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/aigatewaymodelservice"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/aigatewaymodelservice"
 
 aigatewaymodelservice.NewAiGatewayModelServiceConfigRoutingDestinationsProvisionedThroughputConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AiGatewayModelServiceConfigRoutingDestinationsProvisionedThroughputConfigOutputReference
 ```
@@ -5214,7 +5214,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.aiGatewayModelService.AiGatewayModelServiceConfigRoutingFallbackDestinationsExternalModelConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/aigatewaymodelservice"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/aigatewaymodelservice"
 
 aigatewaymodelservice.NewAiGatewayModelServiceConfigRoutingFallbackDestinationsExternalModelConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AiGatewayModelServiceConfigRoutingFallbackDestinationsExternalModelConfigOutputReference
 ```
@@ -5520,7 +5520,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.aiGatewayModelService.AiGatewayModelServiceConfigRoutingFallbackDestinationsExternalModelConfigTargetOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/aigatewaymodelservice"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/aigatewaymodelservice"
 
 aigatewaymodelservice.NewAiGatewayModelServiceConfigRoutingFallbackDestinationsExternalModelConfigTargetOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AiGatewayModelServiceConfigRoutingFallbackDestinationsExternalModelConfigTargetOutputReference
 ```
@@ -5820,7 +5820,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.aiGatewayModelService.AiGatewayModelServiceConfigRoutingFallbackDestinationsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/aigatewaymodelservice"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/aigatewaymodelservice"
 
 aigatewaymodelservice.NewAiGatewayModelServiceConfigRoutingFallbackDestinationsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AiGatewayModelServiceConfigRoutingFallbackDestinationsList
 ```
@@ -5980,7 +5980,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.aiGatewayModelService.AiGatewayModelServiceConfigRoutingFallbackDestinationsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/aigatewaymodelservice"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/aigatewaymodelservice"
 
 aigatewaymodelservice.NewAiGatewayModelServiceConfigRoutingFallbackDestinationsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) AiGatewayModelServiceConfigRoutingFallbackDestinationsOutputReference
 ```
@@ -6457,7 +6457,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.aiGatewayModelService.AiGatewayModelServiceConfigRoutingFallbackDestinationsPayPerTokenConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/aigatewaymodelservice"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/aigatewaymodelservice"
 
 aigatewaymodelservice.NewAiGatewayModelServiceConfigRoutingFallbackDestinationsPayPerTokenConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AiGatewayModelServiceConfigRoutingFallbackDestinationsPayPerTokenConfigOutputReference
 ```
@@ -6728,7 +6728,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.aiGatewayModelService.AiGatewayModelServiceConfigRoutingFallbackDestinationsProvisionedThroughputConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/aigatewaymodelservice"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/aigatewaymodelservice"
 
 aigatewaymodelservice.NewAiGatewayModelServiceConfigRoutingFallbackDestinationsProvisionedThroughputConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AiGatewayModelServiceConfigRoutingFallbackDestinationsProvisionedThroughputConfigOutputReference
 ```
@@ -7010,7 +7010,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.aiGatewayModelService.AiGatewayModelServiceConfigRoutingFallbackOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/aigatewaymodelservice"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/aigatewaymodelservice"
 
 aigatewaymodelservice.NewAiGatewayModelServiceConfigRoutingFallbackOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AiGatewayModelServiceConfigRoutingFallbackOutputReference
 ```
@@ -7301,7 +7301,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.aiGatewayModelService.AiGatewayModelServiceConfigRoutingOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/aigatewaymodelservice"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/aigatewaymodelservice"
 
 aigatewaymodelservice.NewAiGatewayModelServiceConfigRoutingOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AiGatewayModelServiceConfigRoutingOutputReference
 ```
@@ -7705,7 +7705,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.aiGatewayModelService.AiGatewayModelServiceConfigRoutingTrafficSplittingOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/aigatewaymodelservice"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/aigatewaymodelservice"
 
 aigatewaymodelservice.NewAiGatewayModelServiceConfigRoutingTrafficSplittingOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AiGatewayModelServiceConfigRoutingTrafficSplittingOutputReference
 ```
@@ -7954,7 +7954,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.aiGatewayModelService.AiGatewayModelServiceProviderConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/aigatewaymodelservice"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/aigatewaymodelservice"
 
 aigatewaymodelservice.NewAiGatewayModelServiceProviderConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AiGatewayModelServiceProviderConfigOutputReference
 ```
