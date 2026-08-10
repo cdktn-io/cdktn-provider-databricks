@@ -4,7 +4,7 @@
 
 ### DataDatabricksBudgetPolicies <a name="DataDatabricksBudgetPolicies" id="@cdktn/provider-databricks.dataDatabricksBudgetPolicies.DataDatabricksBudgetPolicies"></a>
 
-Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/data-sources/budget_policies databricks_budget_policies}.
+Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/data-sources/budget_policies databricks_budget_policies}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksBudgetPolicies.DataDatabricksBudgetPolicies.Initializer"></a>
 
@@ -434,7 +434,7 @@ The construct id used in the generated config for the DataDatabricksBudgetPolici
 
 The id of the existing DataDatabricksBudgetPolicies that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/data-sources/budget_policies#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/data-sources/budget_policies#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -716,9 +716,9 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadata
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksBudgetPolicies.DataDatabricksBudgetPoliciesConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksBudgetPolicies.DataDatabricksBudgetPoliciesConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksBudgetPolicies.DataDatabricksBudgetPoliciesConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksBudgetPolicies.DataDatabricksBudgetPoliciesConfig.property.filterBy">FilterBy</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksBudgetPolicies.DataDatabricksBudgetPoliciesFilterBy">DataDatabricksBudgetPoliciesFilterBy</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/data-sources/budget_policies#filter_by DataDatabricksBudgetPolicies#filter_by}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksBudgetPolicies.DataDatabricksBudgetPoliciesConfig.property.pageSize">PageSize</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/data-sources/budget_policies#page_size DataDatabricksBudgetPolicies#page_size}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksBudgetPolicies.DataDatabricksBudgetPoliciesConfig.property.sortSpec">SortSpec</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksBudgetPolicies.DataDatabricksBudgetPoliciesSortSpec">DataDatabricksBudgetPoliciesSortSpec</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/data-sources/budget_policies#sort_spec DataDatabricksBudgetPolicies#sort_spec}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksBudgetPolicies.DataDatabricksBudgetPoliciesConfig.property.filterBy">FilterBy</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksBudgetPolicies.DataDatabricksBudgetPoliciesFilterBy">DataDatabricksBudgetPoliciesFilterBy</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/data-sources/budget_policies#filter_by DataDatabricksBudgetPolicies#filter_by}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksBudgetPolicies.DataDatabricksBudgetPoliciesConfig.property.pageSize">PageSize</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/data-sources/budget_policies#page_size DataDatabricksBudgetPolicies#page_size}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksBudgetPolicies.DataDatabricksBudgetPoliciesConfig.property.sortSpec">SortSpec</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksBudgetPolicies.DataDatabricksBudgetPoliciesSortSpec">DataDatabricksBudgetPoliciesSortSpec</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/data-sources/budget_policies#sort_spec DataDatabricksBudgetPolicies#sort_spec}. |
 
 ---
 
@@ -800,7 +800,7 @@ FilterBy DataDatabricksBudgetPoliciesFilterBy
 
 - *Type:* <a href="#@cdktn/provider-databricks.dataDatabricksBudgetPolicies.DataDatabricksBudgetPoliciesFilterBy">DataDatabricksBudgetPoliciesFilterBy</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/data-sources/budget_policies#filter_by DataDatabricksBudgetPolicies#filter_by}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/data-sources/budget_policies#filter_by DataDatabricksBudgetPolicies#filter_by}.
 
 ---
 
@@ -812,7 +812,7 @@ PageSize *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/data-sources/budget_policies#page_size DataDatabricksBudgetPolicies#page_size}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/data-sources/budget_policies#page_size DataDatabricksBudgetPolicies#page_size}.
 
 ---
 
@@ -824,7 +824,7 @@ SortSpec DataDatabricksBudgetPoliciesSortSpec
 
 - *Type:* <a href="#@cdktn/provider-databricks.dataDatabricksBudgetPolicies.DataDatabricksBudgetPoliciesSortSpec">DataDatabricksBudgetPoliciesSortSpec</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/data-sources/budget_policies#sort_spec DataDatabricksBudgetPolicies#sort_spec}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/data-sources/budget_policies#sort_spec DataDatabricksBudgetPolicies#sort_spec}.
 
 ---
 
@@ -846,9 +846,9 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadata
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksBudgetPolicies.DataDatabricksBudgetPoliciesFilterBy.property.creatorUserId">CreatorUserId</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/data-sources/budget_policies#creator_user_id DataDatabricksBudgetPolicies#creator_user_id}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksBudgetPolicies.DataDatabricksBudgetPoliciesFilterBy.property.creatorUserName">CreatorUserName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/data-sources/budget_policies#creator_user_name DataDatabricksBudgetPolicies#creator_user_name}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksBudgetPolicies.DataDatabricksBudgetPoliciesFilterBy.property.policyName">PolicyName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/data-sources/budget_policies#policy_name DataDatabricksBudgetPolicies#policy_name}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksBudgetPolicies.DataDatabricksBudgetPoliciesFilterBy.property.creatorUserId">CreatorUserId</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/data-sources/budget_policies#creator_user_id DataDatabricksBudgetPolicies#creator_user_id}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksBudgetPolicies.DataDatabricksBudgetPoliciesFilterBy.property.creatorUserName">CreatorUserName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/data-sources/budget_policies#creator_user_name DataDatabricksBudgetPolicies#creator_user_name}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksBudgetPolicies.DataDatabricksBudgetPoliciesFilterBy.property.policyName">PolicyName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/data-sources/budget_policies#policy_name DataDatabricksBudgetPolicies#policy_name}. |
 
 ---
 
@@ -860,7 +860,7 @@ CreatorUserId *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/data-sources/budget_policies#creator_user_id DataDatabricksBudgetPolicies#creator_user_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/data-sources/budget_policies#creator_user_id DataDatabricksBudgetPolicies#creator_user_id}.
 
 ---
 
@@ -872,7 +872,7 @@ CreatorUserName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/data-sources/budget_policies#creator_user_name DataDatabricksBudgetPolicies#creator_user_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/data-sources/budget_policies#creator_user_name DataDatabricksBudgetPolicies#creator_user_name}.
 
 ---
 
@@ -884,7 +884,7 @@ PolicyName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/data-sources/budget_policies#policy_name DataDatabricksBudgetPolicies#policy_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/data-sources/budget_policies#policy_name DataDatabricksBudgetPolicies#policy_name}.
 
 ---
 
@@ -904,7 +904,7 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadata
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksBudgetPolicies.DataDatabricksBudgetPoliciesPolicies.property.policyId">PolicyId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/data-sources/budget_policies#policy_id DataDatabricksBudgetPolicies#policy_id}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksBudgetPolicies.DataDatabricksBudgetPoliciesPolicies.property.policyId">PolicyId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/data-sources/budget_policies#policy_id DataDatabricksBudgetPolicies#policy_id}. |
 
 ---
 
@@ -916,7 +916,7 @@ PolicyId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/data-sources/budget_policies#policy_id DataDatabricksBudgetPolicies#policy_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/data-sources/budget_policies#policy_id DataDatabricksBudgetPolicies#policy_id}.
 
 ---
 
@@ -937,8 +937,8 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadata
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksBudgetPolicies.DataDatabricksBudgetPoliciesPoliciesCustomTags.property.key">Key</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/data-sources/budget_policies#key DataDatabricksBudgetPolicies#key}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksBudgetPolicies.DataDatabricksBudgetPoliciesPoliciesCustomTags.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/data-sources/budget_policies#value DataDatabricksBudgetPolicies#value}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksBudgetPolicies.DataDatabricksBudgetPoliciesPoliciesCustomTags.property.key">Key</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/data-sources/budget_policies#key DataDatabricksBudgetPolicies#key}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksBudgetPolicies.DataDatabricksBudgetPoliciesPoliciesCustomTags.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/data-sources/budget_policies#value DataDatabricksBudgetPolicies#value}. |
 
 ---
 
@@ -950,7 +950,7 @@ Key *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/data-sources/budget_policies#key DataDatabricksBudgetPolicies#key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/data-sources/budget_policies#key DataDatabricksBudgetPolicies#key}.
 
 ---
 
@@ -962,7 +962,7 @@ Value *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/data-sources/budget_policies#value DataDatabricksBudgetPolicies#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/data-sources/budget_policies#value DataDatabricksBudgetPolicies#value}.
 
 ---
 
@@ -983,8 +983,8 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadata
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksBudgetPolicies.DataDatabricksBudgetPoliciesSortSpec.property.descending">Descending</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/data-sources/budget_policies#descending DataDatabricksBudgetPolicies#descending}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksBudgetPolicies.DataDatabricksBudgetPoliciesSortSpec.property.field">Field</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/data-sources/budget_policies#field DataDatabricksBudgetPolicies#field}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksBudgetPolicies.DataDatabricksBudgetPoliciesSortSpec.property.descending">Descending</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/data-sources/budget_policies#descending DataDatabricksBudgetPolicies#descending}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksBudgetPolicies.DataDatabricksBudgetPoliciesSortSpec.property.field">Field</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/data-sources/budget_policies#field DataDatabricksBudgetPolicies#field}. |
 
 ---
 
@@ -996,7 +996,7 @@ Descending interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/data-sources/budget_policies#descending DataDatabricksBudgetPolicies#descending}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/data-sources/budget_policies#descending DataDatabricksBudgetPolicies#descending}.
 
 ---
 
@@ -1008,7 +1008,7 @@ Field *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/data-sources/budget_policies#field DataDatabricksBudgetPolicies#field}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/data-sources/budget_policies#field DataDatabricksBudgetPolicies#field}.
 
 ---
 

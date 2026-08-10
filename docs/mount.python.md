@@ -4,7 +4,7 @@
 
 ### Mount <a name="Mount" id="@cdktn/provider-databricks.mount.Mount"></a>
 
-Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/mount databricks_mount}.
+Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/mount databricks_mount}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.mount.Mount.Initializer"></a>
 
@@ -51,17 +51,17 @@ mount.Mount(
 | <code><a href="#@cdktn/provider-databricks.mount.Mount.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.mount.Mount.Initializer.parameter.abfs">abfs</a></code> | <code><a href="#@cdktn/provider-databricks.mount.MountAbfs">MountAbfs</a></code> | abfs block. |
 | <code><a href="#@cdktn/provider-databricks.mount.Mount.Initializer.parameter.adl">adl</a></code> | <code><a href="#@cdktn/provider-databricks.mount.MountAdl">MountAdl</a></code> | adl block. |
-| <code><a href="#@cdktn/provider-databricks.mount.Mount.Initializer.parameter.clusterId">cluster_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/mount#cluster_id Mount#cluster_id}. |
-| <code><a href="#@cdktn/provider-databricks.mount.Mount.Initializer.parameter.encryptionType">encryption_type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/mount#encryption_type Mount#encryption_type}. |
-| <code><a href="#@cdktn/provider-databricks.mount.Mount.Initializer.parameter.extraConfigs">extra_configs</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/mount#extra_configs Mount#extra_configs}. |
+| <code><a href="#@cdktn/provider-databricks.mount.Mount.Initializer.parameter.clusterId">cluster_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/mount#cluster_id Mount#cluster_id}. |
+| <code><a href="#@cdktn/provider-databricks.mount.Mount.Initializer.parameter.encryptionType">encryption_type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/mount#encryption_type Mount#encryption_type}. |
+| <code><a href="#@cdktn/provider-databricks.mount.Mount.Initializer.parameter.extraConfigs">extra_configs</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/mount#extra_configs Mount#extra_configs}. |
 | <code><a href="#@cdktn/provider-databricks.mount.Mount.Initializer.parameter.gs">gs</a></code> | <code><a href="#@cdktn/provider-databricks.mount.MountGs">MountGs</a></code> | gs block. |
-| <code><a href="#@cdktn/provider-databricks.mount.Mount.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/mount#id Mount#id}. |
-| <code><a href="#@cdktn/provider-databricks.mount.Mount.Initializer.parameter.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/mount#name Mount#name}. |
+| <code><a href="#@cdktn/provider-databricks.mount.Mount.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/mount#id Mount#id}. |
+| <code><a href="#@cdktn/provider-databricks.mount.Mount.Initializer.parameter.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/mount#name Mount#name}. |
 | <code><a href="#@cdktn/provider-databricks.mount.Mount.Initializer.parameter.providerConfig">provider_config</a></code> | <code><a href="#@cdktn/provider-databricks.mount.MountProviderConfig">MountProviderConfig</a></code> | provider_config block. |
-| <code><a href="#@cdktn/provider-databricks.mount.Mount.Initializer.parameter.resourceId">resource_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/mount#resource_id Mount#resource_id}. |
+| <code><a href="#@cdktn/provider-databricks.mount.Mount.Initializer.parameter.resourceId">resource_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/mount#resource_id Mount#resource_id}. |
 | <code><a href="#@cdktn/provider-databricks.mount.Mount.Initializer.parameter.s3">s3</a></code> | <code><a href="#@cdktn/provider-databricks.mount.MountS3">MountS3</a></code> | s3 block. |
 | <code><a href="#@cdktn/provider-databricks.mount.Mount.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-databricks.mount.MountTimeouts">MountTimeouts</a></code> | timeouts block. |
-| <code><a href="#@cdktn/provider-databricks.mount.Mount.Initializer.parameter.uri">uri</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/mount#uri Mount#uri}. |
+| <code><a href="#@cdktn/provider-databricks.mount.Mount.Initializer.parameter.uri">uri</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/mount#uri Mount#uri}. |
 | <code><a href="#@cdktn/provider-databricks.mount.Mount.Initializer.parameter.wasb">wasb</a></code> | <code><a href="#@cdktn/provider-databricks.mount.MountWasb">MountWasb</a></code> | wasb block. |
 
 ---
@@ -132,7 +132,7 @@ Must be unique amongst siblings in the same scope
 
 abfs block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/mount#abfs Mount#abfs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/mount#abfs Mount#abfs}
 
 ---
 
@@ -142,7 +142,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 adl block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/mount#adl Mount#adl}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/mount#adl Mount#adl}
 
 ---
 
@@ -150,7 +150,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/mount#cluster_id Mount#cluster_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/mount#cluster_id Mount#cluster_id}.
 
 ---
 
@@ -158,7 +158,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/mount#encryption_type Mount#encryption_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/mount#encryption_type Mount#encryption_type}.
 
 ---
 
@@ -166,7 +166,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* typing.Mapping[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/mount#extra_configs Mount#extra_configs}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/mount#extra_configs Mount#extra_configs}.
 
 ---
 
@@ -176,7 +176,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 gs block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/mount#gs Mount#gs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/mount#gs Mount#gs}
 
 ---
 
@@ -184,7 +184,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/mount#id Mount#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/mount#id Mount#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -195,7 +195,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/mount#name Mount#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/mount#name Mount#name}.
 
 ---
 
@@ -205,7 +205,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 provider_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/mount#provider_config Mount#provider_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/mount#provider_config Mount#provider_config}
 
 ---
 
@@ -213,7 +213,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/mount#resource_id Mount#resource_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/mount#resource_id Mount#resource_id}.
 
 ---
 
@@ -223,7 +223,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 s3 block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/mount#s3 Mount#s3}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/mount#s3 Mount#s3}
 
 ---
 
@@ -233,7 +233,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/mount#timeouts Mount#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/mount#timeouts Mount#timeouts}
 
 ---
 
@@ -241,7 +241,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/mount#uri Mount#uri}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/mount#uri Mount#uri}.
 
 ---
 
@@ -251,7 +251,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 wasb block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/mount#wasb Mount#wasb}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/mount#wasb Mount#wasb}
 
 ---
 
@@ -674,7 +674,7 @@ def put_abfs(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/mount#client_id Mount#client_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/mount#client_id Mount#client_id}.
 
 ---
 
@@ -682,7 +682,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/mount#client_secret_key Mount#client_secret_key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/mount#client_secret_key Mount#client_secret_key}.
 
 ---
 
@@ -690,7 +690,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/mount#client_secret_scope Mount#client_secret_scope}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/mount#client_secret_scope Mount#client_secret_scope}.
 
 ---
 
@@ -698,7 +698,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* bool | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/mount#initialize_file_system Mount#initialize_file_system}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/mount#initialize_file_system Mount#initialize_file_system}.
 
 ---
 
@@ -706,7 +706,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/mount#container_name Mount#container_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/mount#container_name Mount#container_name}.
 
 ---
 
@@ -714,7 +714,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/mount#directory Mount#directory}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/mount#directory Mount#directory}.
 
 ---
 
@@ -722,7 +722,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/mount#storage_account_name Mount#storage_account_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/mount#storage_account_name Mount#storage_account_name}.
 
 ---
 
@@ -730,7 +730,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/mount#tenant_id Mount#tenant_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/mount#tenant_id Mount#tenant_id}.
 
 ---
 
@@ -752,7 +752,7 @@ def put_adl(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/mount#client_id Mount#client_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/mount#client_id Mount#client_id}.
 
 ---
 
@@ -760,7 +760,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/mount#client_secret_key Mount#client_secret_key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/mount#client_secret_key Mount#client_secret_key}.
 
 ---
 
@@ -768,7 +768,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/mount#client_secret_scope Mount#client_secret_scope}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/mount#client_secret_scope Mount#client_secret_scope}.
 
 ---
 
@@ -776,7 +776,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/mount#directory Mount#directory}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/mount#directory Mount#directory}.
 
 ---
 
@@ -784,7 +784,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/mount#spark_conf_prefix Mount#spark_conf_prefix}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/mount#spark_conf_prefix Mount#spark_conf_prefix}.
 
 ---
 
@@ -792,7 +792,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/mount#storage_resource_name Mount#storage_resource_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/mount#storage_resource_name Mount#storage_resource_name}.
 
 ---
 
@@ -800,7 +800,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/mount#tenant_id Mount#tenant_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/mount#tenant_id Mount#tenant_id}.
 
 ---
 
@@ -817,7 +817,7 @@ def put_gs(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/mount#bucket_name Mount#bucket_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/mount#bucket_name Mount#bucket_name}.
 
 ---
 
@@ -825,7 +825,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/mount#service_account Mount#service_account}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/mount#service_account Mount#service_account}.
 
 ---
 
@@ -841,7 +841,7 @@ def put_provider_config(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/mount#workspace_id Mount#workspace_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/mount#workspace_id Mount#workspace_id}.
 
 ---
 
@@ -858,7 +858,7 @@ def put_s3(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/mount#bucket_name Mount#bucket_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/mount#bucket_name Mount#bucket_name}.
 
 ---
 
@@ -866,7 +866,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/mount#instance_profile Mount#instance_profile}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/mount#instance_profile Mount#instance_profile}.
 
 ---
 
@@ -882,7 +882,7 @@ def put_timeouts(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/mount#default Mount#default}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/mount#default Mount#default}.
 
 ---
 
@@ -903,7 +903,7 @@ def put_wasb(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/mount#auth_type Mount#auth_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/mount#auth_type Mount#auth_type}.
 
 ---
 
@@ -911,7 +911,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/mount#token_secret_key Mount#token_secret_key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/mount#token_secret_key Mount#token_secret_key}.
 
 ---
 
@@ -919,7 +919,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/mount#token_secret_scope Mount#token_secret_scope}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/mount#token_secret_scope Mount#token_secret_scope}.
 
 ---
 
@@ -927,7 +927,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/mount#container_name Mount#container_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/mount#container_name Mount#container_name}.
 
 ---
 
@@ -935,7 +935,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/mount#directory Mount#directory}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/mount#directory Mount#directory}.
 
 ---
 
@@ -943,7 +943,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/mount#storage_account_name Mount#storage_account_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/mount#storage_account_name Mount#storage_account_name}.
 
 ---
 
@@ -1145,7 +1145,7 @@ The construct id used in the generated config for the Mount to import.
 
 The id of the existing Mount that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/mount#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/mount#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1682,14 +1682,14 @@ mount.MountAbfs(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.mount.MountAbfs.property.clientId">client_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/mount#client_id Mount#client_id}. |
-| <code><a href="#@cdktn/provider-databricks.mount.MountAbfs.property.clientSecretKey">client_secret_key</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/mount#client_secret_key Mount#client_secret_key}. |
-| <code><a href="#@cdktn/provider-databricks.mount.MountAbfs.property.clientSecretScope">client_secret_scope</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/mount#client_secret_scope Mount#client_secret_scope}. |
-| <code><a href="#@cdktn/provider-databricks.mount.MountAbfs.property.initializeFileSystem">initialize_file_system</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/mount#initialize_file_system Mount#initialize_file_system}. |
-| <code><a href="#@cdktn/provider-databricks.mount.MountAbfs.property.containerName">container_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/mount#container_name Mount#container_name}. |
-| <code><a href="#@cdktn/provider-databricks.mount.MountAbfs.property.directory">directory</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/mount#directory Mount#directory}. |
-| <code><a href="#@cdktn/provider-databricks.mount.MountAbfs.property.storageAccountName">storage_account_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/mount#storage_account_name Mount#storage_account_name}. |
-| <code><a href="#@cdktn/provider-databricks.mount.MountAbfs.property.tenantId">tenant_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/mount#tenant_id Mount#tenant_id}. |
+| <code><a href="#@cdktn/provider-databricks.mount.MountAbfs.property.clientId">client_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/mount#client_id Mount#client_id}. |
+| <code><a href="#@cdktn/provider-databricks.mount.MountAbfs.property.clientSecretKey">client_secret_key</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/mount#client_secret_key Mount#client_secret_key}. |
+| <code><a href="#@cdktn/provider-databricks.mount.MountAbfs.property.clientSecretScope">client_secret_scope</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/mount#client_secret_scope Mount#client_secret_scope}. |
+| <code><a href="#@cdktn/provider-databricks.mount.MountAbfs.property.initializeFileSystem">initialize_file_system</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/mount#initialize_file_system Mount#initialize_file_system}. |
+| <code><a href="#@cdktn/provider-databricks.mount.MountAbfs.property.containerName">container_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/mount#container_name Mount#container_name}. |
+| <code><a href="#@cdktn/provider-databricks.mount.MountAbfs.property.directory">directory</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/mount#directory Mount#directory}. |
+| <code><a href="#@cdktn/provider-databricks.mount.MountAbfs.property.storageAccountName">storage_account_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/mount#storage_account_name Mount#storage_account_name}. |
+| <code><a href="#@cdktn/provider-databricks.mount.MountAbfs.property.tenantId">tenant_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/mount#tenant_id Mount#tenant_id}. |
 
 ---
 
@@ -1701,7 +1701,7 @@ client_id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/mount#client_id Mount#client_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/mount#client_id Mount#client_id}.
 
 ---
 
@@ -1713,7 +1713,7 @@ client_secret_key: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/mount#client_secret_key Mount#client_secret_key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/mount#client_secret_key Mount#client_secret_key}.
 
 ---
 
@@ -1725,7 +1725,7 @@ client_secret_scope: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/mount#client_secret_scope Mount#client_secret_scope}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/mount#client_secret_scope Mount#client_secret_scope}.
 
 ---
 
@@ -1737,7 +1737,7 @@ initialize_file_system: bool | IResolvable
 
 - *Type:* bool | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/mount#initialize_file_system Mount#initialize_file_system}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/mount#initialize_file_system Mount#initialize_file_system}.
 
 ---
 
@@ -1749,7 +1749,7 @@ container_name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/mount#container_name Mount#container_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/mount#container_name Mount#container_name}.
 
 ---
 
@@ -1761,7 +1761,7 @@ directory: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/mount#directory Mount#directory}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/mount#directory Mount#directory}.
 
 ---
 
@@ -1773,7 +1773,7 @@ storage_account_name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/mount#storage_account_name Mount#storage_account_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/mount#storage_account_name Mount#storage_account_name}.
 
 ---
 
@@ -1785,7 +1785,7 @@ tenant_id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/mount#tenant_id Mount#tenant_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/mount#tenant_id Mount#tenant_id}.
 
 ---
 
@@ -1811,13 +1811,13 @@ mount.MountAdl(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.mount.MountAdl.property.clientId">client_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/mount#client_id Mount#client_id}. |
-| <code><a href="#@cdktn/provider-databricks.mount.MountAdl.property.clientSecretKey">client_secret_key</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/mount#client_secret_key Mount#client_secret_key}. |
-| <code><a href="#@cdktn/provider-databricks.mount.MountAdl.property.clientSecretScope">client_secret_scope</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/mount#client_secret_scope Mount#client_secret_scope}. |
-| <code><a href="#@cdktn/provider-databricks.mount.MountAdl.property.directory">directory</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/mount#directory Mount#directory}. |
-| <code><a href="#@cdktn/provider-databricks.mount.MountAdl.property.sparkConfPrefix">spark_conf_prefix</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/mount#spark_conf_prefix Mount#spark_conf_prefix}. |
-| <code><a href="#@cdktn/provider-databricks.mount.MountAdl.property.storageResourceName">storage_resource_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/mount#storage_resource_name Mount#storage_resource_name}. |
-| <code><a href="#@cdktn/provider-databricks.mount.MountAdl.property.tenantId">tenant_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/mount#tenant_id Mount#tenant_id}. |
+| <code><a href="#@cdktn/provider-databricks.mount.MountAdl.property.clientId">client_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/mount#client_id Mount#client_id}. |
+| <code><a href="#@cdktn/provider-databricks.mount.MountAdl.property.clientSecretKey">client_secret_key</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/mount#client_secret_key Mount#client_secret_key}. |
+| <code><a href="#@cdktn/provider-databricks.mount.MountAdl.property.clientSecretScope">client_secret_scope</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/mount#client_secret_scope Mount#client_secret_scope}. |
+| <code><a href="#@cdktn/provider-databricks.mount.MountAdl.property.directory">directory</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/mount#directory Mount#directory}. |
+| <code><a href="#@cdktn/provider-databricks.mount.MountAdl.property.sparkConfPrefix">spark_conf_prefix</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/mount#spark_conf_prefix Mount#spark_conf_prefix}. |
+| <code><a href="#@cdktn/provider-databricks.mount.MountAdl.property.storageResourceName">storage_resource_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/mount#storage_resource_name Mount#storage_resource_name}. |
+| <code><a href="#@cdktn/provider-databricks.mount.MountAdl.property.tenantId">tenant_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/mount#tenant_id Mount#tenant_id}. |
 
 ---
 
@@ -1829,7 +1829,7 @@ client_id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/mount#client_id Mount#client_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/mount#client_id Mount#client_id}.
 
 ---
 
@@ -1841,7 +1841,7 @@ client_secret_key: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/mount#client_secret_key Mount#client_secret_key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/mount#client_secret_key Mount#client_secret_key}.
 
 ---
 
@@ -1853,7 +1853,7 @@ client_secret_scope: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/mount#client_secret_scope Mount#client_secret_scope}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/mount#client_secret_scope Mount#client_secret_scope}.
 
 ---
 
@@ -1865,7 +1865,7 @@ directory: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/mount#directory Mount#directory}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/mount#directory Mount#directory}.
 
 ---
 
@@ -1877,7 +1877,7 @@ spark_conf_prefix: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/mount#spark_conf_prefix Mount#spark_conf_prefix}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/mount#spark_conf_prefix Mount#spark_conf_prefix}.
 
 ---
 
@@ -1889,7 +1889,7 @@ storage_resource_name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/mount#storage_resource_name Mount#storage_resource_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/mount#storage_resource_name Mount#storage_resource_name}.
 
 ---
 
@@ -1901,7 +1901,7 @@ tenant_id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/mount#tenant_id Mount#tenant_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/mount#tenant_id Mount#tenant_id}.
 
 ---
 
@@ -1950,17 +1950,17 @@ mount.MountConfig(
 | <code><a href="#@cdktn/provider-databricks.mount.MountConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.mount.MountConfig.property.abfs">abfs</a></code> | <code><a href="#@cdktn/provider-databricks.mount.MountAbfs">MountAbfs</a></code> | abfs block. |
 | <code><a href="#@cdktn/provider-databricks.mount.MountConfig.property.adl">adl</a></code> | <code><a href="#@cdktn/provider-databricks.mount.MountAdl">MountAdl</a></code> | adl block. |
-| <code><a href="#@cdktn/provider-databricks.mount.MountConfig.property.clusterId">cluster_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/mount#cluster_id Mount#cluster_id}. |
-| <code><a href="#@cdktn/provider-databricks.mount.MountConfig.property.encryptionType">encryption_type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/mount#encryption_type Mount#encryption_type}. |
-| <code><a href="#@cdktn/provider-databricks.mount.MountConfig.property.extraConfigs">extra_configs</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/mount#extra_configs Mount#extra_configs}. |
+| <code><a href="#@cdktn/provider-databricks.mount.MountConfig.property.clusterId">cluster_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/mount#cluster_id Mount#cluster_id}. |
+| <code><a href="#@cdktn/provider-databricks.mount.MountConfig.property.encryptionType">encryption_type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/mount#encryption_type Mount#encryption_type}. |
+| <code><a href="#@cdktn/provider-databricks.mount.MountConfig.property.extraConfigs">extra_configs</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/mount#extra_configs Mount#extra_configs}. |
 | <code><a href="#@cdktn/provider-databricks.mount.MountConfig.property.gs">gs</a></code> | <code><a href="#@cdktn/provider-databricks.mount.MountGs">MountGs</a></code> | gs block. |
-| <code><a href="#@cdktn/provider-databricks.mount.MountConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/mount#id Mount#id}. |
-| <code><a href="#@cdktn/provider-databricks.mount.MountConfig.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/mount#name Mount#name}. |
+| <code><a href="#@cdktn/provider-databricks.mount.MountConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/mount#id Mount#id}. |
+| <code><a href="#@cdktn/provider-databricks.mount.MountConfig.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/mount#name Mount#name}. |
 | <code><a href="#@cdktn/provider-databricks.mount.MountConfig.property.providerConfig">provider_config</a></code> | <code><a href="#@cdktn/provider-databricks.mount.MountProviderConfig">MountProviderConfig</a></code> | provider_config block. |
-| <code><a href="#@cdktn/provider-databricks.mount.MountConfig.property.resourceId">resource_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/mount#resource_id Mount#resource_id}. |
+| <code><a href="#@cdktn/provider-databricks.mount.MountConfig.property.resourceId">resource_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/mount#resource_id Mount#resource_id}. |
 | <code><a href="#@cdktn/provider-databricks.mount.MountConfig.property.s3">s3</a></code> | <code><a href="#@cdktn/provider-databricks.mount.MountS3">MountS3</a></code> | s3 block. |
 | <code><a href="#@cdktn/provider-databricks.mount.MountConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-databricks.mount.MountTimeouts">MountTimeouts</a></code> | timeouts block. |
-| <code><a href="#@cdktn/provider-databricks.mount.MountConfig.property.uri">uri</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/mount#uri Mount#uri}. |
+| <code><a href="#@cdktn/provider-databricks.mount.MountConfig.property.uri">uri</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/mount#uri Mount#uri}. |
 | <code><a href="#@cdktn/provider-databricks.mount.MountConfig.property.wasb">wasb</a></code> | <code><a href="#@cdktn/provider-databricks.mount.MountWasb">MountWasb</a></code> | wasb block. |
 
 ---
@@ -2045,7 +2045,7 @@ abfs: MountAbfs
 
 abfs block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/mount#abfs Mount#abfs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/mount#abfs Mount#abfs}
 
 ---
 
@@ -2059,7 +2059,7 @@ adl: MountAdl
 
 adl block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/mount#adl Mount#adl}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/mount#adl Mount#adl}
 
 ---
 
@@ -2071,7 +2071,7 @@ cluster_id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/mount#cluster_id Mount#cluster_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/mount#cluster_id Mount#cluster_id}.
 
 ---
 
@@ -2083,7 +2083,7 @@ encryption_type: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/mount#encryption_type Mount#encryption_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/mount#encryption_type Mount#encryption_type}.
 
 ---
 
@@ -2095,7 +2095,7 @@ extra_configs: typing.Mapping[str]
 
 - *Type:* typing.Mapping[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/mount#extra_configs Mount#extra_configs}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/mount#extra_configs Mount#extra_configs}.
 
 ---
 
@@ -2109,7 +2109,7 @@ gs: MountGs
 
 gs block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/mount#gs Mount#gs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/mount#gs Mount#gs}
 
 ---
 
@@ -2121,7 +2121,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/mount#id Mount#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/mount#id Mount#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -2136,7 +2136,7 @@ name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/mount#name Mount#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/mount#name Mount#name}.
 
 ---
 
@@ -2150,7 +2150,7 @@ provider_config: MountProviderConfig
 
 provider_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/mount#provider_config Mount#provider_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/mount#provider_config Mount#provider_config}
 
 ---
 
@@ -2162,7 +2162,7 @@ resource_id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/mount#resource_id Mount#resource_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/mount#resource_id Mount#resource_id}.
 
 ---
 
@@ -2176,7 +2176,7 @@ s3: MountS3
 
 s3 block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/mount#s3 Mount#s3}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/mount#s3 Mount#s3}
 
 ---
 
@@ -2190,7 +2190,7 @@ timeouts: MountTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/mount#timeouts Mount#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/mount#timeouts Mount#timeouts}
 
 ---
 
@@ -2202,7 +2202,7 @@ uri: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/mount#uri Mount#uri}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/mount#uri Mount#uri}.
 
 ---
 
@@ -2216,7 +2216,7 @@ wasb: MountWasb
 
 wasb block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/mount#wasb Mount#wasb}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/mount#wasb Mount#wasb}
 
 ---
 
@@ -2237,8 +2237,8 @@ mount.MountGs(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.mount.MountGs.property.bucketName">bucket_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/mount#bucket_name Mount#bucket_name}. |
-| <code><a href="#@cdktn/provider-databricks.mount.MountGs.property.serviceAccount">service_account</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/mount#service_account Mount#service_account}. |
+| <code><a href="#@cdktn/provider-databricks.mount.MountGs.property.bucketName">bucket_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/mount#bucket_name Mount#bucket_name}. |
+| <code><a href="#@cdktn/provider-databricks.mount.MountGs.property.serviceAccount">service_account</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/mount#service_account Mount#service_account}. |
 
 ---
 
@@ -2250,7 +2250,7 @@ bucket_name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/mount#bucket_name Mount#bucket_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/mount#bucket_name Mount#bucket_name}.
 
 ---
 
@@ -2262,7 +2262,7 @@ service_account: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/mount#service_account Mount#service_account}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/mount#service_account Mount#service_account}.
 
 ---
 
@@ -2282,7 +2282,7 @@ mount.MountProviderConfig(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.mount.MountProviderConfig.property.workspaceId">workspace_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/mount#workspace_id Mount#workspace_id}. |
+| <code><a href="#@cdktn/provider-databricks.mount.MountProviderConfig.property.workspaceId">workspace_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/mount#workspace_id Mount#workspace_id}. |
 
 ---
 
@@ -2294,7 +2294,7 @@ workspace_id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/mount#workspace_id Mount#workspace_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/mount#workspace_id Mount#workspace_id}.
 
 ---
 
@@ -2315,8 +2315,8 @@ mount.MountS3(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.mount.MountS3.property.bucketName">bucket_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/mount#bucket_name Mount#bucket_name}. |
-| <code><a href="#@cdktn/provider-databricks.mount.MountS3.property.instanceProfile">instance_profile</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/mount#instance_profile Mount#instance_profile}. |
+| <code><a href="#@cdktn/provider-databricks.mount.MountS3.property.bucketName">bucket_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/mount#bucket_name Mount#bucket_name}. |
+| <code><a href="#@cdktn/provider-databricks.mount.MountS3.property.instanceProfile">instance_profile</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/mount#instance_profile Mount#instance_profile}. |
 
 ---
 
@@ -2328,7 +2328,7 @@ bucket_name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/mount#bucket_name Mount#bucket_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/mount#bucket_name Mount#bucket_name}.
 
 ---
 
@@ -2340,7 +2340,7 @@ instance_profile: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/mount#instance_profile Mount#instance_profile}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/mount#instance_profile Mount#instance_profile}.
 
 ---
 
@@ -2360,7 +2360,7 @@ mount.MountTimeouts(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.mount.MountTimeouts.property.default">default</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/mount#default Mount#default}. |
+| <code><a href="#@cdktn/provider-databricks.mount.MountTimeouts.property.default">default</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/mount#default Mount#default}. |
 
 ---
 
@@ -2372,7 +2372,7 @@ default: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/mount#default Mount#default}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/mount#default Mount#default}.
 
 ---
 
@@ -2397,12 +2397,12 @@ mount.MountWasb(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.mount.MountWasb.property.authType">auth_type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/mount#auth_type Mount#auth_type}. |
-| <code><a href="#@cdktn/provider-databricks.mount.MountWasb.property.tokenSecretKey">token_secret_key</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/mount#token_secret_key Mount#token_secret_key}. |
-| <code><a href="#@cdktn/provider-databricks.mount.MountWasb.property.tokenSecretScope">token_secret_scope</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/mount#token_secret_scope Mount#token_secret_scope}. |
-| <code><a href="#@cdktn/provider-databricks.mount.MountWasb.property.containerName">container_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/mount#container_name Mount#container_name}. |
-| <code><a href="#@cdktn/provider-databricks.mount.MountWasb.property.directory">directory</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/mount#directory Mount#directory}. |
-| <code><a href="#@cdktn/provider-databricks.mount.MountWasb.property.storageAccountName">storage_account_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/mount#storage_account_name Mount#storage_account_name}. |
+| <code><a href="#@cdktn/provider-databricks.mount.MountWasb.property.authType">auth_type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/mount#auth_type Mount#auth_type}. |
+| <code><a href="#@cdktn/provider-databricks.mount.MountWasb.property.tokenSecretKey">token_secret_key</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/mount#token_secret_key Mount#token_secret_key}. |
+| <code><a href="#@cdktn/provider-databricks.mount.MountWasb.property.tokenSecretScope">token_secret_scope</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/mount#token_secret_scope Mount#token_secret_scope}. |
+| <code><a href="#@cdktn/provider-databricks.mount.MountWasb.property.containerName">container_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/mount#container_name Mount#container_name}. |
+| <code><a href="#@cdktn/provider-databricks.mount.MountWasb.property.directory">directory</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/mount#directory Mount#directory}. |
+| <code><a href="#@cdktn/provider-databricks.mount.MountWasb.property.storageAccountName">storage_account_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/mount#storage_account_name Mount#storage_account_name}. |
 
 ---
 
@@ -2414,7 +2414,7 @@ auth_type: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/mount#auth_type Mount#auth_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/mount#auth_type Mount#auth_type}.
 
 ---
 
@@ -2426,7 +2426,7 @@ token_secret_key: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/mount#token_secret_key Mount#token_secret_key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/mount#token_secret_key Mount#token_secret_key}.
 
 ---
 
@@ -2438,7 +2438,7 @@ token_secret_scope: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/mount#token_secret_scope Mount#token_secret_scope}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/mount#token_secret_scope Mount#token_secret_scope}.
 
 ---
 
@@ -2450,7 +2450,7 @@ container_name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/mount#container_name Mount#container_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/mount#container_name Mount#container_name}.
 
 ---
 
@@ -2462,7 +2462,7 @@ directory: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/mount#directory Mount#directory}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/mount#directory Mount#directory}.
 
 ---
 
@@ -2474,7 +2474,7 @@ storage_account_name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/mount#storage_account_name Mount#storage_account_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/mount#storage_account_name Mount#storage_account_name}.
 
 ---
 
