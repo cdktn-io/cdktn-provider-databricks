@@ -4,7 +4,7 @@
 
 ### Repo <a name="Repo" id="@cdktn/provider-databricks.repo.Repo"></a>
 
-Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/repo databricks_repo}.
+Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/repo databricks_repo}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.repo.Repo.Initializer"></a>
 
@@ -78,6 +78,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktn/provider-databricks.repo.Repo.putSparseCheckout">PutSparseCheckout</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.repo.Repo.resetBranch">ResetBranch</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.repo.Repo.resetCommitHash">ResetCommitHash</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.repo.Repo.resetGitCredentialId">ResetGitCredentialId</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.repo.Repo.resetGitProvider">ResetGitProvider</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.repo.Repo.resetId">ResetId</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.repo.Repo.resetPath">ResetPath</a></code> | *No description.* |
@@ -432,6 +433,12 @@ private void ResetBranch()
 private void ResetCommitHash()
 ```
 
+##### `ResetGitCredentialId` <a name="ResetGitCredentialId" id="@cdktn/provider-databricks.repo.Repo.resetGitCredentialId"></a>
+
+```csharp
+private void ResetGitCredentialId()
+```
+
 ##### `ResetGitProvider` <a name="ResetGitProvider" id="@cdktn/provider-databricks.repo.Repo.resetGitProvider"></a>
 
 ```csharp
@@ -571,7 +578,7 @@ The construct id used in the generated config for the Repo to import.
 
 The id of the existing Repo that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/repo#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/repo#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -606,6 +613,7 @@ Refer to the {@link https://registry.terraform.io/providers/databricks/databrick
 | <code><a href="#@cdktn/provider-databricks.repo.Repo.property.workspacePath">WorkspacePath</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.repo.Repo.property.branchInput">BranchInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.repo.Repo.property.commitHashInput">CommitHashInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.repo.Repo.property.gitCredentialIdInput">GitCredentialIdInput</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.repo.Repo.property.gitProviderInput">GitProviderInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.repo.Repo.property.idInput">IdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.repo.Repo.property.pathInput">PathInput</a></code> | <code>string</code> | *No description.* |
@@ -615,6 +623,7 @@ Refer to the {@link https://registry.terraform.io/providers/databricks/databrick
 | <code><a href="#@cdktn/provider-databricks.repo.Repo.property.urlInput">UrlInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.repo.Repo.property.branch">Branch</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.repo.Repo.property.commitHash">CommitHash</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.repo.Repo.property.gitCredentialId">GitCredentialId</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.repo.Repo.property.gitProvider">GitProvider</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.repo.Repo.property.id">Id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.repo.Repo.property.path">Path</a></code> | <code>string</code> | *No description.* |
@@ -815,6 +824,16 @@ public string CommitHashInput { get; }
 
 ---
 
+##### `GitCredentialIdInput`<sup>Optional</sup> <a name="GitCredentialIdInput" id="@cdktn/provider-databricks.repo.Repo.property.gitCredentialIdInput"></a>
+
+```csharp
+public double GitCredentialIdInput { get; }
+```
+
+- *Type:* double
+
+---
+
 ##### `GitProviderInput`<sup>Optional</sup> <a name="GitProviderInput" id="@cdktn/provider-databricks.repo.Repo.property.gitProviderInput"></a>
 
 ```csharp
@@ -902,6 +921,16 @@ public string CommitHash { get; }
 ```
 
 - *Type:* string
+
+---
+
+##### `GitCredentialId`<sup>Required</sup> <a name="GitCredentialId" id="@cdktn/provider-databricks.repo.Repo.property.gitCredentialId"></a>
+
+```csharp
+public double GitCredentialId { get; }
+```
+
+- *Type:* double
 
 ---
 
@@ -993,6 +1022,7 @@ new RepoConfig {
     string Url,
     string Branch = null,
     string CommitHash = null,
+    double GitCredentialId = null,
     string GitProvider = null,
     string Id = null,
     string Path = null,
@@ -1013,15 +1043,16 @@ new RepoConfig {
 | <code><a href="#@cdktn/provider-databricks.repo.RepoConfig.property.lifecycle">Lifecycle</a></code> | <code>Io.Cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.repo.RepoConfig.property.provider">Provider</a></code> | <code>Io.Cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.repo.RepoConfig.property.provisioners">Provisioners</a></code> | <code>Io.Cdktn.FileProvisioner\|Io.Cdktn.LocalExecProvisioner\|Io.Cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-databricks.repo.RepoConfig.property.url">Url</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/repo#url Repo#url}. |
-| <code><a href="#@cdktn/provider-databricks.repo.RepoConfig.property.branch">Branch</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/repo#branch Repo#branch}. |
-| <code><a href="#@cdktn/provider-databricks.repo.RepoConfig.property.commitHash">CommitHash</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/repo#commit_hash Repo#commit_hash}. |
-| <code><a href="#@cdktn/provider-databricks.repo.RepoConfig.property.gitProvider">GitProvider</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/repo#git_provider Repo#git_provider}. |
-| <code><a href="#@cdktn/provider-databricks.repo.RepoConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/repo#id Repo#id}. |
-| <code><a href="#@cdktn/provider-databricks.repo.RepoConfig.property.path">Path</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/repo#path Repo#path}. |
+| <code><a href="#@cdktn/provider-databricks.repo.RepoConfig.property.url">Url</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/repo#url Repo#url}. |
+| <code><a href="#@cdktn/provider-databricks.repo.RepoConfig.property.branch">Branch</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/repo#branch Repo#branch}. |
+| <code><a href="#@cdktn/provider-databricks.repo.RepoConfig.property.commitHash">CommitHash</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/repo#commit_hash Repo#commit_hash}. |
+| <code><a href="#@cdktn/provider-databricks.repo.RepoConfig.property.gitCredentialId">GitCredentialId</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/repo#git_credential_id Repo#git_credential_id}. |
+| <code><a href="#@cdktn/provider-databricks.repo.RepoConfig.property.gitProvider">GitProvider</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/repo#git_provider Repo#git_provider}. |
+| <code><a href="#@cdktn/provider-databricks.repo.RepoConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/repo#id Repo#id}. |
+| <code><a href="#@cdktn/provider-databricks.repo.RepoConfig.property.path">Path</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/repo#path Repo#path}. |
 | <code><a href="#@cdktn/provider-databricks.repo.RepoConfig.property.providerConfig">ProviderConfig</a></code> | <code><a href="#@cdktn/provider-databricks.repo.RepoProviderConfig">RepoProviderConfig</a></code> | provider_config block. |
 | <code><a href="#@cdktn/provider-databricks.repo.RepoConfig.property.sparseCheckout">SparseCheckout</a></code> | <code><a href="#@cdktn/provider-databricks.repo.RepoSparseCheckout">RepoSparseCheckout</a></code> | sparse_checkout block. |
-| <code><a href="#@cdktn/provider-databricks.repo.RepoConfig.property.tag">Tag</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/repo#tag Repo#tag}. |
+| <code><a href="#@cdktn/provider-databricks.repo.RepoConfig.property.tag">Tag</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/repo#tag Repo#tag}. |
 
 ---
 
@@ -1103,7 +1134,7 @@ public string Url { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/repo#url Repo#url}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/repo#url Repo#url}.
 
 ---
 
@@ -1115,7 +1146,7 @@ public string Branch { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/repo#branch Repo#branch}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/repo#branch Repo#branch}.
 
 ---
 
@@ -1127,7 +1158,19 @@ public string CommitHash { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/repo#commit_hash Repo#commit_hash}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/repo#commit_hash Repo#commit_hash}.
+
+---
+
+##### `GitCredentialId`<sup>Optional</sup> <a name="GitCredentialId" id="@cdktn/provider-databricks.repo.RepoConfig.property.gitCredentialId"></a>
+
+```csharp
+public double GitCredentialId { get; set; }
+```
+
+- *Type:* double
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/repo#git_credential_id Repo#git_credential_id}.
 
 ---
 
@@ -1139,7 +1182,7 @@ public string GitProvider { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/repo#git_provider Repo#git_provider}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/repo#git_provider Repo#git_provider}.
 
 ---
 
@@ -1151,7 +1194,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/repo#id Repo#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/repo#id Repo#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1166,7 +1209,7 @@ public string Path { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/repo#path Repo#path}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/repo#path Repo#path}.
 
 ---
 
@@ -1180,7 +1223,7 @@ public RepoProviderConfig ProviderConfig { get; set; }
 
 provider_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/repo#provider_config Repo#provider_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/repo#provider_config Repo#provider_config}
 
 ---
 
@@ -1194,7 +1237,7 @@ public RepoSparseCheckout SparseCheckout { get; set; }
 
 sparse_checkout block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/repo#sparse_checkout Repo#sparse_checkout}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/repo#sparse_checkout Repo#sparse_checkout}
 
 ---
 
@@ -1206,7 +1249,7 @@ public string Tag { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/repo#tag Repo#tag}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/repo#tag Repo#tag}.
 
 ---
 
@@ -1226,7 +1269,7 @@ new RepoProviderConfig {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.repo.RepoProviderConfig.property.workspaceId">WorkspaceId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/repo#workspace_id Repo#workspace_id}. |
+| <code><a href="#@cdktn/provider-databricks.repo.RepoProviderConfig.property.workspaceId">WorkspaceId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/repo#workspace_id Repo#workspace_id}. |
 
 ---
 
@@ -1238,7 +1281,7 @@ public string WorkspaceId { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/repo#workspace_id Repo#workspace_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/repo#workspace_id Repo#workspace_id}.
 
 ---
 
@@ -1258,7 +1301,7 @@ new RepoSparseCheckout {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.repo.RepoSparseCheckout.property.patterns">Patterns</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/repo#patterns Repo#patterns}. |
+| <code><a href="#@cdktn/provider-databricks.repo.RepoSparseCheckout.property.patterns">Patterns</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/repo#patterns Repo#patterns}. |
 
 ---
 
@@ -1270,7 +1313,7 @@ public string[] Patterns { get; set; }
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/repo#patterns Repo#patterns}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/repo#patterns Repo#patterns}.
 
 ---
 

@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/global_init_script
+// https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/global_init_script
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,52 +13,52 @@ import * as cdktn from 'cdktn';
 
 export interface GlobalInitScriptConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/global_init_script#content_base64 GlobalInitScript#content_base64}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/global_init_script#content_base64 GlobalInitScript#content_base64}
   */
   readonly contentBase64?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/global_init_script#enabled GlobalInitScript#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/global_init_script#enabled GlobalInitScript#enabled}
   */
   readonly enabled?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/global_init_script#id GlobalInitScript#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/global_init_script#id GlobalInitScript#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/global_init_script#md5 GlobalInitScript#md5}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/global_init_script#md5 GlobalInitScript#md5}
   */
   readonly md5?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/global_init_script#name GlobalInitScript#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/global_init_script#name GlobalInitScript#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/global_init_script#position GlobalInitScript#position}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/global_init_script#position GlobalInitScript#position}
   */
   readonly position?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/global_init_script#source GlobalInitScript#source}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/global_init_script#source GlobalInitScript#source}
   */
   readonly source?: string;
   /**
   * provider_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/global_init_script#provider_config GlobalInitScript#provider_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/global_init_script#provider_config GlobalInitScript#provider_config}
   */
   readonly providerConfig?: GlobalInitScriptProviderConfig;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/global_init_script#timeouts GlobalInitScript#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/global_init_script#timeouts GlobalInitScript#timeouts}
   */
   readonly timeouts?: GlobalInitScriptTimeouts;
 }
 export interface GlobalInitScriptProviderConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/global_init_script#workspace_id GlobalInitScript#workspace_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/global_init_script#workspace_id GlobalInitScript#workspace_id}
   */
   readonly workspaceId?: string;
 }
@@ -201,7 +201,7 @@ export class GlobalInitScriptTimeoutsOutputReference extends cdktn.ComplexObject
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/global_init_script databricks_global_init_script}
+* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/global_init_script databricks_global_init_script}
 */
 export class GlobalInitScript extends cdktn.TerraformResource {
 
@@ -217,7 +217,7 @@ export class GlobalInitScript extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a GlobalInitScript resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the GlobalInitScript to import
-  * @param importFromId The id of the existing GlobalInitScript that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/global_init_script#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing GlobalInitScript that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/global_init_script#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the GlobalInitScript to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -229,7 +229,7 @@ export class GlobalInitScript extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/global_init_script databricks_global_init_script} Resource
+  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/global_init_script databricks_global_init_script} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -240,7 +240,7 @@ export class GlobalInitScript extends cdktn.TerraformResource {
       terraformResourceType: 'databricks_global_init_script',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '1.124.0',
+        providerVersion: '1.125.0',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,

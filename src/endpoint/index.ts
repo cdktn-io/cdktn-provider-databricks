@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/endpoint
+// https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/endpoint
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,33 +13,33 @@ import * as cdktn from 'cdktn';
 
 export interface EndpointConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/endpoint#aws_vpc_endpoint_info Endpoint#aws_vpc_endpoint_info}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/endpoint#aws_vpc_endpoint_info Endpoint#aws_vpc_endpoint_info}
   */
   readonly awsVpcEndpointInfo?: EndpointAwsVpcEndpointInfo;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/endpoint#azure_private_endpoint_info Endpoint#azure_private_endpoint_info}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/endpoint#azure_private_endpoint_info Endpoint#azure_private_endpoint_info}
   */
   readonly azurePrivateEndpointInfo?: EndpointAzurePrivateEndpointInfo;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/endpoint#display_name Endpoint#display_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/endpoint#display_name Endpoint#display_name}
   */
   readonly displayName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/endpoint#gcp_psc_endpoint_info Endpoint#gcp_psc_endpoint_info}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/endpoint#gcp_psc_endpoint_info Endpoint#gcp_psc_endpoint_info}
   */
   readonly gcpPscEndpointInfo?: EndpointGcpPscEndpointInfo;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/endpoint#parent Endpoint#parent}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/endpoint#parent Endpoint#parent}
   */
   readonly parent: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/endpoint#region Endpoint#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/endpoint#region Endpoint#region}
   */
   readonly region: string;
 }
 export interface EndpointAwsVpcEndpointInfo {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/endpoint#aws_vpc_endpoint_id Endpoint#aws_vpc_endpoint_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/endpoint#aws_vpc_endpoint_id Endpoint#aws_vpc_endpoint_id}
   */
   readonly awsVpcEndpointId: string;
 }
@@ -140,11 +140,11 @@ export class EndpointAwsVpcEndpointInfoOutputReference extends cdktn.ComplexObje
 }
 export interface EndpointAzurePrivateEndpointInfo {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/endpoint#private_endpoint_name Endpoint#private_endpoint_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/endpoint#private_endpoint_name Endpoint#private_endpoint_name}
   */
   readonly privateEndpointName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/endpoint#private_endpoint_resource_guid Endpoint#private_endpoint_resource_guid}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/endpoint#private_endpoint_resource_guid Endpoint#private_endpoint_resource_guid}
   */
   readonly privateEndpointResourceGuid: string;
 }
@@ -271,15 +271,15 @@ export class EndpointAzurePrivateEndpointInfoOutputReference extends cdktn.Compl
 }
 export interface EndpointGcpPscEndpointInfo {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/endpoint#endpoint_region Endpoint#endpoint_region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/endpoint#endpoint_region Endpoint#endpoint_region}
   */
   readonly endpointRegion: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/endpoint#project_id Endpoint#project_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/endpoint#project_id Endpoint#project_id}
   */
   readonly projectId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/endpoint#psc_endpoint Endpoint#psc_endpoint}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/endpoint#psc_endpoint Endpoint#psc_endpoint}
   */
   readonly pscEndpoint: string;
 }
@@ -432,7 +432,7 @@ export class EndpointGcpPscEndpointInfoOutputReference extends cdktn.ComplexObje
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/endpoint databricks_endpoint}
+* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/endpoint databricks_endpoint}
 */
 export class Endpoint extends cdktn.TerraformResource {
 
@@ -448,7 +448,7 @@ export class Endpoint extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a Endpoint resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the Endpoint to import
-  * @param importFromId The id of the existing Endpoint that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/endpoint#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing Endpoint that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/endpoint#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the Endpoint to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -460,7 +460,7 @@ export class Endpoint extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/endpoint databricks_endpoint} Resource
+  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/endpoint databricks_endpoint} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -471,7 +471,7 @@ export class Endpoint extends cdktn.TerraformResource {
       terraformResourceType: 'databricks_endpoint',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '1.124.0',
+        providerVersion: '1.125.0',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,

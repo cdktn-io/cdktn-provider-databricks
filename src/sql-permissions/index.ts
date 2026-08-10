@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/sql_permissions
+// https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/sql_permissions
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,60 +13,60 @@ import * as cdktn from 'cdktn';
 
 export interface SqlPermissionsConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/sql_permissions#anonymous_function SqlPermissions#anonymous_function}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/sql_permissions#anonymous_function SqlPermissions#anonymous_function}
   */
   readonly anonymousFunction?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/sql_permissions#any_file SqlPermissions#any_file}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/sql_permissions#any_file SqlPermissions#any_file}
   */
   readonly anyFile?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/sql_permissions#catalog SqlPermissions#catalog}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/sql_permissions#catalog SqlPermissions#catalog}
   */
   readonly catalog?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/sql_permissions#cluster_id SqlPermissions#cluster_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/sql_permissions#cluster_id SqlPermissions#cluster_id}
   */
   readonly clusterId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/sql_permissions#database SqlPermissions#database}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/sql_permissions#database SqlPermissions#database}
   */
   readonly database?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/sql_permissions#id SqlPermissions#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/sql_permissions#id SqlPermissions#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/sql_permissions#table SqlPermissions#table}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/sql_permissions#table SqlPermissions#table}
   */
   readonly table?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/sql_permissions#view SqlPermissions#view}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/sql_permissions#view SqlPermissions#view}
   */
   readonly view?: string;
   /**
   * privilege_assignments block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/sql_permissions#privilege_assignments SqlPermissions#privilege_assignments}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/sql_permissions#privilege_assignments SqlPermissions#privilege_assignments}
   */
   readonly privilegeAssignments?: SqlPermissionsPrivilegeAssignments[] | cdktn.IResolvable;
   /**
   * provider_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/sql_permissions#provider_config SqlPermissions#provider_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/sql_permissions#provider_config SqlPermissions#provider_config}
   */
   readonly providerConfig?: SqlPermissionsProviderConfig;
 }
 export interface SqlPermissionsPrivilegeAssignments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/sql_permissions#principal SqlPermissions#principal}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/sql_permissions#principal SqlPermissions#principal}
   */
   readonly principal: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/sql_permissions#privileges SqlPermissions#privileges}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/sql_permissions#privileges SqlPermissions#privileges}
   */
   readonly privileges: string[];
 }
@@ -205,7 +205,7 @@ export class SqlPermissionsPrivilegeAssignmentsList extends cdktn.ComplexList {
 }
 export interface SqlPermissionsProviderConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/sql_permissions#workspace_id SqlPermissions#workspace_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/sql_permissions#workspace_id SqlPermissions#workspace_id}
   */
   readonly workspaceId?: string;
 }
@@ -289,7 +289,7 @@ export class SqlPermissionsProviderConfigOutputReference extends cdktn.ComplexOb
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/sql_permissions databricks_sql_permissions}
+* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/sql_permissions databricks_sql_permissions}
 */
 export class SqlPermissions extends cdktn.TerraformResource {
 
@@ -305,7 +305,7 @@ export class SqlPermissions extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a SqlPermissions resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the SqlPermissions to import
-  * @param importFromId The id of the existing SqlPermissions that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/sql_permissions#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing SqlPermissions that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/sql_permissions#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the SqlPermissions to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -317,7 +317,7 @@ export class SqlPermissions extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/sql_permissions databricks_sql_permissions} Resource
+  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/sql_permissions databricks_sql_permissions} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -328,7 +328,7 @@ export class SqlPermissions extends cdktn.TerraformResource {
       terraformResourceType: 'databricks_sql_permissions',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '1.124.0',
+        providerVersion: '1.125.0',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,

@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/user_instance_profile
+// https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/user_instance_profile
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,34 +15,34 @@ export interface UserInstanceProfileConfig extends cdktn.TerraformMetaArguments 
   /**
   * Specifies whether to use account-level or workspace-level API. Valid values are `account` and `workspace`. When not set, the API level is inferred from the provider host.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/user_instance_profile#api UserInstanceProfile#api}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/user_instance_profile#api UserInstanceProfile#api}
   */
   readonly api?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/user_instance_profile#id UserInstanceProfile#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/user_instance_profile#id UserInstanceProfile#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/user_instance_profile#instance_profile_id UserInstanceProfile#instance_profile_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/user_instance_profile#instance_profile_id UserInstanceProfile#instance_profile_id}
   */
   readonly instanceProfileId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/user_instance_profile#user_id UserInstanceProfile#user_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/user_instance_profile#user_id UserInstanceProfile#user_id}
   */
   readonly userId: string;
   /**
   * provider_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/user_instance_profile#provider_config UserInstanceProfile#provider_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/user_instance_profile#provider_config UserInstanceProfile#provider_config}
   */
   readonly providerConfig?: UserInstanceProfileProviderConfig;
 }
 export interface UserInstanceProfileProviderConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/user_instance_profile#workspace_id UserInstanceProfile#workspace_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/user_instance_profile#workspace_id UserInstanceProfile#workspace_id}
   */
   readonly workspaceId?: string;
 }
@@ -126,7 +126,7 @@ export class UserInstanceProfileProviderConfigOutputReference extends cdktn.Comp
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/user_instance_profile databricks_user_instance_profile}
+* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/user_instance_profile databricks_user_instance_profile}
 */
 export class UserInstanceProfile extends cdktn.TerraformResource {
 
@@ -142,7 +142,7 @@ export class UserInstanceProfile extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a UserInstanceProfile resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the UserInstanceProfile to import
-  * @param importFromId The id of the existing UserInstanceProfile that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/user_instance_profile#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing UserInstanceProfile that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/user_instance_profile#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the UserInstanceProfile to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -154,7 +154,7 @@ export class UserInstanceProfile extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/user_instance_profile databricks_user_instance_profile} Resource
+  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/user_instance_profile databricks_user_instance_profile} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -165,7 +165,7 @@ export class UserInstanceProfile extends cdktn.TerraformResource {
       terraformResourceType: 'databricks_user_instance_profile',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '1.124.0',
+        providerVersion: '1.125.0',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,
