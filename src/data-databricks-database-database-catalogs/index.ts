@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/data-sources/database_database_catalogs
+// https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/data-sources/database_database_catalogs
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,21 +13,21 @@ import * as cdktn from 'cdktn';
 
 export interface DataDatabricksDatabaseDatabaseCatalogsConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/data-sources/database_database_catalogs#instance_name DataDatabricksDatabaseDatabaseCatalogs#instance_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/data-sources/database_database_catalogs#instance_name DataDatabricksDatabaseDatabaseCatalogs#instance_name}
   */
   readonly instanceName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/data-sources/database_database_catalogs#page_size DataDatabricksDatabaseDatabaseCatalogs#page_size}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/data-sources/database_database_catalogs#page_size DataDatabricksDatabaseDatabaseCatalogs#page_size}
   */
   readonly pageSize?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/data-sources/database_database_catalogs#provider_config DataDatabricksDatabaseDatabaseCatalogs#provider_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/data-sources/database_database_catalogs#provider_config DataDatabricksDatabaseDatabaseCatalogs#provider_config}
   */
   readonly providerConfig?: DataDatabricksDatabaseDatabaseCatalogsProviderConfig;
 }
 export interface DataDatabricksDatabaseDatabaseCatalogsDatabaseCatalogsProviderConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/data-sources/database_database_catalogs#workspace_id DataDatabricksDatabaseDatabaseCatalogs#workspace_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/data-sources/database_database_catalogs#workspace_id DataDatabricksDatabaseDatabaseCatalogs#workspace_id}
   */
   readonly workspaceId?: string;
 }
@@ -121,11 +121,11 @@ export class DataDatabricksDatabaseDatabaseCatalogsDatabaseCatalogsProviderConfi
 }
 export interface DataDatabricksDatabaseDatabaseCatalogsDatabaseCatalogs {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/data-sources/database_database_catalogs#name DataDatabricksDatabaseDatabaseCatalogs#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/data-sources/database_database_catalogs#name DataDatabricksDatabaseDatabaseCatalogs#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/data-sources/database_database_catalogs#provider_config DataDatabricksDatabaseDatabaseCatalogs#provider_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/data-sources/database_database_catalogs#provider_config DataDatabricksDatabaseDatabaseCatalogs#provider_config}
   */
   readonly providerConfig?: DataDatabricksDatabaseDatabaseCatalogsDatabaseCatalogsProviderConfig;
 }
@@ -277,7 +277,7 @@ export class DataDatabricksDatabaseDatabaseCatalogsDatabaseCatalogsList extends 
 }
 export interface DataDatabricksDatabaseDatabaseCatalogsProviderConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/data-sources/database_database_catalogs#workspace_id DataDatabricksDatabaseDatabaseCatalogs#workspace_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/data-sources/database_database_catalogs#workspace_id DataDatabricksDatabaseDatabaseCatalogs#workspace_id}
   */
   readonly workspaceId?: string;
 }
@@ -371,7 +371,7 @@ export class DataDatabricksDatabaseDatabaseCatalogsProviderConfigOutputReference
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/data-sources/database_database_catalogs databricks_database_database_catalogs}
+* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/data-sources/database_database_catalogs databricks_database_database_catalogs}
 */
 export class DataDatabricksDatabaseDatabaseCatalogs extends cdktn.TerraformDataSource {
 
@@ -387,7 +387,7 @@ export class DataDatabricksDatabaseDatabaseCatalogs extends cdktn.TerraformDataS
   * Generates CDKTN code for importing a DataDatabricksDatabaseDatabaseCatalogs resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataDatabricksDatabaseDatabaseCatalogs to import
-  * @param importFromId The id of the existing DataDatabricksDatabaseDatabaseCatalogs that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/data-sources/database_database_catalogs#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataDatabricksDatabaseDatabaseCatalogs that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/data-sources/database_database_catalogs#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataDatabricksDatabaseDatabaseCatalogs to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -399,7 +399,7 @@ export class DataDatabricksDatabaseDatabaseCatalogs extends cdktn.TerraformDataS
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/data-sources/database_database_catalogs databricks_database_database_catalogs} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/data-sources/database_database_catalogs databricks_database_database_catalogs} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -410,7 +410,7 @@ export class DataDatabricksDatabaseDatabaseCatalogs extends cdktn.TerraformDataS
       terraformResourceType: 'databricks_database_database_catalogs',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '1.124.0',
+        providerVersion: '1.125.0',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,

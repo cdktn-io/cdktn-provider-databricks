@@ -1,3 +1,3 @@
 # `databricks_postgres_synced_table`
 
-Refer to the Terraform Registry for docs: [`databricks_postgres_synced_table`](https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/resources/postgres_synced_table).
+Refer to the Terraform Registry for docs: [`databricks_postgres_synced_table`](https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/postgres_synced_table).

@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/data-sources/database_instance
+// https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/data-sources/database_instance
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,25 +13,25 @@ import * as cdktn from 'cdktn';
 
 export interface DataDatabricksDatabaseInstanceConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/data-sources/database_instance#name DataDatabricksDatabaseInstance#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/data-sources/database_instance#name DataDatabricksDatabaseInstance#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/data-sources/database_instance#provider_config DataDatabricksDatabaseInstance#provider_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/data-sources/database_instance#provider_config DataDatabricksDatabaseInstance#provider_config}
   */
   readonly providerConfig?: DataDatabricksDatabaseInstanceProviderConfig;
 }
 export interface DataDatabricksDatabaseInstanceChildInstanceRefs {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/data-sources/database_instance#branch_time DataDatabricksDatabaseInstance#branch_time}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/data-sources/database_instance#branch_time DataDatabricksDatabaseInstance#branch_time}
   */
   readonly branchTime?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/data-sources/database_instance#lsn DataDatabricksDatabaseInstance#lsn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/data-sources/database_instance#lsn DataDatabricksDatabaseInstance#lsn}
   */
   readonly lsn?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/data-sources/database_instance#name DataDatabricksDatabaseInstance#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/data-sources/database_instance#name DataDatabricksDatabaseInstance#name}
   */
   readonly name?: string;
 }
@@ -205,11 +205,11 @@ export class DataDatabricksDatabaseInstanceChildInstanceRefsList extends cdktn.C
 }
 export interface DataDatabricksDatabaseInstanceCustomTags {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/data-sources/database_instance#key DataDatabricksDatabaseInstance#key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/data-sources/database_instance#key DataDatabricksDatabaseInstance#key}
   */
   readonly key?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/data-sources/database_instance#value DataDatabricksDatabaseInstance#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/data-sources/database_instance#value DataDatabricksDatabaseInstance#value}
   */
   readonly value?: string;
 }
@@ -344,11 +344,11 @@ export class DataDatabricksDatabaseInstanceCustomTagsList extends cdktn.ComplexL
 }
 export interface DataDatabricksDatabaseInstanceEffectiveCustomTags {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/data-sources/database_instance#key DataDatabricksDatabaseInstance#key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/data-sources/database_instance#key DataDatabricksDatabaseInstance#key}
   */
   readonly key?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/data-sources/database_instance#value DataDatabricksDatabaseInstance#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/data-sources/database_instance#value DataDatabricksDatabaseInstance#value}
   */
   readonly value?: string;
 }
@@ -483,15 +483,15 @@ export class DataDatabricksDatabaseInstanceEffectiveCustomTagsList extends cdktn
 }
 export interface DataDatabricksDatabaseInstanceParentInstanceRef {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/data-sources/database_instance#branch_time DataDatabricksDatabaseInstance#branch_time}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/data-sources/database_instance#branch_time DataDatabricksDatabaseInstance#branch_time}
   */
   readonly branchTime?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/data-sources/database_instance#lsn DataDatabricksDatabaseInstance#lsn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/data-sources/database_instance#lsn DataDatabricksDatabaseInstance#lsn}
   */
   readonly lsn?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/data-sources/database_instance#name DataDatabricksDatabaseInstance#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/data-sources/database_instance#name DataDatabricksDatabaseInstance#name}
   */
   readonly name?: string;
 }
@@ -643,7 +643,7 @@ export class DataDatabricksDatabaseInstanceParentInstanceRefOutputReference exte
 }
 export interface DataDatabricksDatabaseInstanceProviderConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/data-sources/database_instance#workspace_id DataDatabricksDatabaseInstance#workspace_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/data-sources/database_instance#workspace_id DataDatabricksDatabaseInstance#workspace_id}
   */
   readonly workspaceId?: string;
 }
@@ -737,7 +737,7 @@ export class DataDatabricksDatabaseInstanceProviderConfigOutputReference extends
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/data-sources/database_instance databricks_database_instance}
+* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/data-sources/database_instance databricks_database_instance}
 */
 export class DataDatabricksDatabaseInstance extends cdktn.TerraformDataSource {
 
@@ -753,7 +753,7 @@ export class DataDatabricksDatabaseInstance extends cdktn.TerraformDataSource {
   * Generates CDKTN code for importing a DataDatabricksDatabaseInstance resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataDatabricksDatabaseInstance to import
-  * @param importFromId The id of the existing DataDatabricksDatabaseInstance that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/data-sources/database_instance#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataDatabricksDatabaseInstance that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/data-sources/database_instance#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataDatabricksDatabaseInstance to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -765,7 +765,7 @@ export class DataDatabricksDatabaseInstance extends cdktn.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.124.0/docs/data-sources/database_instance databricks_database_instance} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/data-sources/database_instance databricks_database_instance} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -776,7 +776,7 @@ export class DataDatabricksDatabaseInstance extends cdktn.TerraformDataSource {
       terraformResourceType: 'databricks_database_instance',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '1.124.0',
+        providerVersion: '1.125.0',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,
