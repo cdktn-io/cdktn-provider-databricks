@@ -4,7 +4,7 @@
 
 ### EntityTagAssignment <a name="EntityTagAssignment" id="@cdktn/provider-databricks.entityTagAssignment.EntityTagAssignment"></a>
 
-Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/entity_tag_assignment databricks_entity_tag_assignment}.
+Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/entity_tag_assignment databricks_entity_tag_assignment}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.entityTagAssignment.EntityTagAssignment.Initializer"></a>
 
@@ -516,7 +516,7 @@ The construct id used in the generated config for the EntityTagAssignment to imp
 
 The id of the existing EntityTagAssignment that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/entity_tag_assignment#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/entity_tag_assignment#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -875,11 +875,11 @@ const entityTagAssignmentConfig: entityTagAssignment.EntityTagAssignmentConfig =
 | <code><a href="#@cdktn/provider-databricks.entityTagAssignment.EntityTagAssignmentConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.entityTagAssignment.EntityTagAssignmentConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.entityTagAssignment.EntityTagAssignmentConfig.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-databricks.entityTagAssignment.EntityTagAssignmentConfig.property.entityName">entityName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/entity_tag_assignment#entity_name EntityTagAssignment#entity_name}. |
-| <code><a href="#@cdktn/provider-databricks.entityTagAssignment.EntityTagAssignmentConfig.property.entityType">entityType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/entity_tag_assignment#entity_type EntityTagAssignment#entity_type}. |
-| <code><a href="#@cdktn/provider-databricks.entityTagAssignment.EntityTagAssignmentConfig.property.tagKey">tagKey</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/entity_tag_assignment#tag_key EntityTagAssignment#tag_key}. |
-| <code><a href="#@cdktn/provider-databricks.entityTagAssignment.EntityTagAssignmentConfig.property.providerConfig">providerConfig</a></code> | <code><a href="#@cdktn/provider-databricks.entityTagAssignment.EntityTagAssignmentProviderConfig">EntityTagAssignmentProviderConfig</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/entity_tag_assignment#provider_config EntityTagAssignment#provider_config}. |
-| <code><a href="#@cdktn/provider-databricks.entityTagAssignment.EntityTagAssignmentConfig.property.tagValue">tagValue</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/entity_tag_assignment#tag_value EntityTagAssignment#tag_value}. |
+| <code><a href="#@cdktn/provider-databricks.entityTagAssignment.EntityTagAssignmentConfig.property.entityName">entityName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/entity_tag_assignment#entity_name EntityTagAssignment#entity_name}. |
+| <code><a href="#@cdktn/provider-databricks.entityTagAssignment.EntityTagAssignmentConfig.property.entityType">entityType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/entity_tag_assignment#entity_type EntityTagAssignment#entity_type}. |
+| <code><a href="#@cdktn/provider-databricks.entityTagAssignment.EntityTagAssignmentConfig.property.tagKey">tagKey</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/entity_tag_assignment#tag_key EntityTagAssignment#tag_key}. |
+| <code><a href="#@cdktn/provider-databricks.entityTagAssignment.EntityTagAssignmentConfig.property.providerConfig">providerConfig</a></code> | <code><a href="#@cdktn/provider-databricks.entityTagAssignment.EntityTagAssignmentProviderConfig">EntityTagAssignmentProviderConfig</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/entity_tag_assignment#provider_config EntityTagAssignment#provider_config}. |
+| <code><a href="#@cdktn/provider-databricks.entityTagAssignment.EntityTagAssignmentConfig.property.tagValue">tagValue</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/entity_tag_assignment#tag_value EntityTagAssignment#tag_value}. |
 
 ---
 
@@ -961,7 +961,7 @@ public readonly entityName: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/entity_tag_assignment#entity_name EntityTagAssignment#entity_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/entity_tag_assignment#entity_name EntityTagAssignment#entity_name}.
 
 ---
 
@@ -973,7 +973,7 @@ public readonly entityType: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/entity_tag_assignment#entity_type EntityTagAssignment#entity_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/entity_tag_assignment#entity_type EntityTagAssignment#entity_type}.
 
 ---
 
@@ -985,7 +985,7 @@ public readonly tagKey: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/entity_tag_assignment#tag_key EntityTagAssignment#tag_key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/entity_tag_assignment#tag_key EntityTagAssignment#tag_key}.
 
 ---
 
@@ -997,7 +997,7 @@ public readonly providerConfig: EntityTagAssignmentProviderConfig;
 
 - *Type:* <a href="#@cdktn/provider-databricks.entityTagAssignment.EntityTagAssignmentProviderConfig">EntityTagAssignmentProviderConfig</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/entity_tag_assignment#provider_config EntityTagAssignment#provider_config}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/entity_tag_assignment#provider_config EntityTagAssignment#provider_config}.
 
 ---
 
@@ -1009,7 +1009,7 @@ public readonly tagValue: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/entity_tag_assignment#tag_value EntityTagAssignment#tag_value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/entity_tag_assignment#tag_value EntityTagAssignment#tag_value}.
 
 ---
 
@@ -1027,7 +1027,7 @@ const entityTagAssignmentProviderConfig: entityTagAssignment.EntityTagAssignment
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.entityTagAssignment.EntityTagAssignmentProviderConfig.property.workspaceId">workspaceId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/entity_tag_assignment#workspace_id EntityTagAssignment#workspace_id}. |
+| <code><a href="#@cdktn/provider-databricks.entityTagAssignment.EntityTagAssignmentProviderConfig.property.workspaceId">workspaceId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/entity_tag_assignment#workspace_id EntityTagAssignment#workspace_id}. |
 
 ---
 
@@ -1039,7 +1039,7 @@ public readonly workspaceId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/entity_tag_assignment#workspace_id EntityTagAssignment#workspace_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/entity_tag_assignment#workspace_id EntityTagAssignment#workspace_id}.
 
 ---
 

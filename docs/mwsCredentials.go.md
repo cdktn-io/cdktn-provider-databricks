@@ -4,7 +4,7 @@
 
 ### MwsCredentials <a name="MwsCredentials" id="@cdktn/provider-databricks.mwsCredentials.MwsCredentials"></a>
 
-Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/mws_credentials databricks_mws_credentials}.
+Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/mws_credentials databricks_mws_credentials}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.mwsCredentials.MwsCredentials.Initializer"></a>
 
@@ -524,7 +524,7 @@ The construct id used in the generated config for the MwsCredentials to import.
 
 The id of the existing MwsCredentials that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/mws_credentials#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/mws_credentials#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -909,13 +909,13 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/mwscrede
 | <code><a href="#@cdktn/provider-databricks.mwsCredentials.MwsCredentialsConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.mwsCredentials.MwsCredentialsConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.mwsCredentials.MwsCredentialsConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-databricks.mwsCredentials.MwsCredentialsConfig.property.credentialsName">CredentialsName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/mws_credentials#credentials_name MwsCredentials#credentials_name}. |
-| <code><a href="#@cdktn/provider-databricks.mwsCredentials.MwsCredentialsConfig.property.roleArn">RoleArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/mws_credentials#role_arn MwsCredentials#role_arn}. |
-| <code><a href="#@cdktn/provider-databricks.mwsCredentials.MwsCredentialsConfig.property.accountId">AccountId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/mws_credentials#account_id MwsCredentials#account_id}. |
-| <code><a href="#@cdktn/provider-databricks.mwsCredentials.MwsCredentialsConfig.property.creationTime">CreationTime</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/mws_credentials#creation_time MwsCredentials#creation_time}. |
-| <code><a href="#@cdktn/provider-databricks.mwsCredentials.MwsCredentialsConfig.property.credentialsId">CredentialsId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/mws_credentials#credentials_id MwsCredentials#credentials_id}. |
-| <code><a href="#@cdktn/provider-databricks.mwsCredentials.MwsCredentialsConfig.property.externalId">ExternalId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/mws_credentials#external_id MwsCredentials#external_id}. |
-| <code><a href="#@cdktn/provider-databricks.mwsCredentials.MwsCredentialsConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/mws_credentials#id MwsCredentials#id}. |
+| <code><a href="#@cdktn/provider-databricks.mwsCredentials.MwsCredentialsConfig.property.credentialsName">CredentialsName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/mws_credentials#credentials_name MwsCredentials#credentials_name}. |
+| <code><a href="#@cdktn/provider-databricks.mwsCredentials.MwsCredentialsConfig.property.roleArn">RoleArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/mws_credentials#role_arn MwsCredentials#role_arn}. |
+| <code><a href="#@cdktn/provider-databricks.mwsCredentials.MwsCredentialsConfig.property.accountId">AccountId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/mws_credentials#account_id MwsCredentials#account_id}. |
+| <code><a href="#@cdktn/provider-databricks.mwsCredentials.MwsCredentialsConfig.property.creationTime">CreationTime</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/mws_credentials#creation_time MwsCredentials#creation_time}. |
+| <code><a href="#@cdktn/provider-databricks.mwsCredentials.MwsCredentialsConfig.property.credentialsId">CredentialsId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/mws_credentials#credentials_id MwsCredentials#credentials_id}. |
+| <code><a href="#@cdktn/provider-databricks.mwsCredentials.MwsCredentialsConfig.property.externalId">ExternalId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/mws_credentials#external_id MwsCredentials#external_id}. |
+| <code><a href="#@cdktn/provider-databricks.mwsCredentials.MwsCredentialsConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/mws_credentials#id MwsCredentials#id}. |
 
 ---
 
@@ -997,7 +997,7 @@ CredentialsName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/mws_credentials#credentials_name MwsCredentials#credentials_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/mws_credentials#credentials_name MwsCredentials#credentials_name}.
 
 ---
 
@@ -1009,7 +1009,7 @@ RoleArn *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/mws_credentials#role_arn MwsCredentials#role_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/mws_credentials#role_arn MwsCredentials#role_arn}.
 
 ---
 
@@ -1021,7 +1021,7 @@ AccountId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/mws_credentials#account_id MwsCredentials#account_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/mws_credentials#account_id MwsCredentials#account_id}.
 
 ---
 
@@ -1033,7 +1033,7 @@ CreationTime *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/mws_credentials#creation_time MwsCredentials#creation_time}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/mws_credentials#creation_time MwsCredentials#creation_time}.
 
 ---
 
@@ -1045,7 +1045,7 @@ CredentialsId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/mws_credentials#credentials_id MwsCredentials#credentials_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/mws_credentials#credentials_id MwsCredentials#credentials_id}.
 
 ---
 
@@ -1057,7 +1057,7 @@ ExternalId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/mws_credentials#external_id MwsCredentials#external_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/mws_credentials#external_id MwsCredentials#external_id}.
 
 ---
 
@@ -1069,7 +1069,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/mws_credentials#id MwsCredentials#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/mws_credentials#id MwsCredentials#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

@@ -4,7 +4,7 @@
 
 ### Budget <a name="Budget" id="@cdktn/provider-databricks.budget.Budget"></a>
 
-Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/budget databricks_budget}.
+Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/budget databricks_budget}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.budget.Budget.Initializer"></a>
 
@@ -28,6 +28,7 @@ budget.Budget(
   display_name: str = None,
   filter: BudgetFilter = None,
   id: str = None,
+  resource_type: str = None,
   update_time: typing.Union[int, float] = None
 )
 ```
@@ -43,14 +44,15 @@ budget.Budget(
 | <code><a href="#@cdktn/provider-databricks.budget.Budget.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.budget.Budget.Initializer.parameter.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.budget.Budget.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-databricks.budget.Budget.Initializer.parameter.accountId">account_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/budget#account_id Budget#account_id}. |
+| <code><a href="#@cdktn/provider-databricks.budget.Budget.Initializer.parameter.accountId">account_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/budget#account_id Budget#account_id}. |
 | <code><a href="#@cdktn/provider-databricks.budget.Budget.Initializer.parameter.alertConfigurations">alert_configurations</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-databricks.budget.BudgetAlertConfigurations">BudgetAlertConfigurations</a>]</code> | alert_configurations block. |
-| <code><a href="#@cdktn/provider-databricks.budget.Budget.Initializer.parameter.budgetConfigurationId">budget_configuration_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/budget#budget_configuration_id Budget#budget_configuration_id}. |
-| <code><a href="#@cdktn/provider-databricks.budget.Budget.Initializer.parameter.createTime">create_time</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/budget#create_time Budget#create_time}. |
-| <code><a href="#@cdktn/provider-databricks.budget.Budget.Initializer.parameter.displayName">display_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/budget#display_name Budget#display_name}. |
+| <code><a href="#@cdktn/provider-databricks.budget.Budget.Initializer.parameter.budgetConfigurationId">budget_configuration_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/budget#budget_configuration_id Budget#budget_configuration_id}. |
+| <code><a href="#@cdktn/provider-databricks.budget.Budget.Initializer.parameter.createTime">create_time</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/budget#create_time Budget#create_time}. |
+| <code><a href="#@cdktn/provider-databricks.budget.Budget.Initializer.parameter.displayName">display_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/budget#display_name Budget#display_name}. |
 | <code><a href="#@cdktn/provider-databricks.budget.Budget.Initializer.parameter.filter">filter</a></code> | <code><a href="#@cdktn/provider-databricks.budget.BudgetFilter">BudgetFilter</a></code> | filter block. |
-| <code><a href="#@cdktn/provider-databricks.budget.Budget.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/budget#id Budget#id}. |
-| <code><a href="#@cdktn/provider-databricks.budget.Budget.Initializer.parameter.updateTime">update_time</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/budget#update_time Budget#update_time}. |
+| <code><a href="#@cdktn/provider-databricks.budget.Budget.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/budget#id Budget#id}. |
+| <code><a href="#@cdktn/provider-databricks.budget.Budget.Initializer.parameter.resourceType">resource_type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/budget#resource_type Budget#resource_type}. |
+| <code><a href="#@cdktn/provider-databricks.budget.Budget.Initializer.parameter.updateTime">update_time</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/budget#update_time Budget#update_time}. |
 
 ---
 
@@ -118,7 +120,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/budget#account_id Budget#account_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/budget#account_id Budget#account_id}.
 
 ---
 
@@ -128,7 +130,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 alert_configurations block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/budget#alert_configurations Budget#alert_configurations}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/budget#alert_configurations Budget#alert_configurations}
 
 ---
 
@@ -136,7 +138,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/budget#budget_configuration_id Budget#budget_configuration_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/budget#budget_configuration_id Budget#budget_configuration_id}.
 
 ---
 
@@ -144,7 +146,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/budget#create_time Budget#create_time}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/budget#create_time Budget#create_time}.
 
 ---
 
@@ -152,7 +154,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/budget#display_name Budget#display_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/budget#display_name Budget#display_name}.
 
 ---
 
@@ -162,7 +164,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 filter block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/budget#filter Budget#filter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/budget#filter Budget#filter}
 
 ---
 
@@ -170,10 +172,18 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/budget#id Budget#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/budget#id Budget#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
+##### `resource_type`<sup>Optional</sup> <a name="resource_type" id="@cdktn/provider-databricks.budget.Budget.Initializer.parameter.resourceType"></a>
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/budget#resource_type Budget#resource_type}.
 
 ---
 
@@ -181,7 +191,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/budget#update_time Budget#update_time}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/budget#update_time Budget#update_time}.
 
 ---
 
@@ -222,6 +232,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 | <code><a href="#@cdktn/provider-databricks.budget.Budget.resetDisplayName">reset_display_name</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.budget.Budget.resetFilter">reset_filter</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.budget.Budget.resetId">reset_id</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.budget.Budget.resetResourceType">reset_resource_type</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.budget.Budget.resetUpdateTime">reset_update_time</a></code> | *No description.* |
 
 ---
@@ -603,7 +614,7 @@ def put_filter(
 
 tags block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/budget#tags Budget#tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/budget#tags Budget#tags}
 
 ---
 
@@ -613,7 +624,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 workspace_id block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/budget#workspace_id Budget#workspace_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/budget#workspace_id Budget#workspace_id}
 
 ---
 
@@ -657,6 +668,12 @@ def reset_filter() -> None
 
 ```python
 def reset_id() -> None
+```
+
+##### `reset_resource_type` <a name="reset_resource_type" id="@cdktn/provider-databricks.budget.Budget.resetResourceType"></a>
+
+```python
+def reset_resource_type() -> None
 ```
 
 ##### `reset_update_time` <a name="reset_update_time" id="@cdktn/provider-databricks.budget.Budget.resetUpdateTime"></a>
@@ -779,7 +796,7 @@ The construct id used in the generated config for the Budget to import.
 
 The id of the existing Budget that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/budget#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/budget#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -818,12 +835,14 @@ Refer to the {@link https://registry.terraform.io/providers/databricks/databrick
 | <code><a href="#@cdktn/provider-databricks.budget.Budget.property.displayNameInput">display_name_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.budget.Budget.property.filterInput">filter_input</a></code> | <code><a href="#@cdktn/provider-databricks.budget.BudgetFilter">BudgetFilter</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.budget.Budget.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.budget.Budget.property.resourceTypeInput">resource_type_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.budget.Budget.property.updateTimeInput">update_time_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.budget.Budget.property.accountId">account_id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.budget.Budget.property.budgetConfigurationId">budget_configuration_id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.budget.Budget.property.createTime">create_time</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.budget.Budget.property.displayName">display_name</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.budget.Budget.property.id">id</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.budget.Budget.property.resourceType">resource_type</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.budget.Budget.property.updateTime">update_time</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 
 ---
@@ -1060,6 +1079,16 @@ id_input: str
 
 ---
 
+##### `resource_type_input`<sup>Optional</sup> <a name="resource_type_input" id="@cdktn/provider-databricks.budget.Budget.property.resourceTypeInput"></a>
+
+```python
+resource_type_input: str
+```
+
+- *Type:* str
+
+---
+
 ##### `update_time_input`<sup>Optional</sup> <a name="update_time_input" id="@cdktn/provider-databricks.budget.Budget.property.updateTimeInput"></a>
 
 ```python
@@ -1120,6 +1149,16 @@ id: str
 
 ---
 
+##### `resource_type`<sup>Required</sup> <a name="resource_type" id="@cdktn/provider-databricks.budget.Budget.property.resourceType"></a>
+
+```python
+resource_type: str
+```
+
+- *Type:* str
+
+---
+
 ##### `update_time`<sup>Required</sup> <a name="update_time" id="@cdktn/provider-databricks.budget.Budget.property.updateTime"></a>
 
 ```python
@@ -1160,8 +1199,10 @@ from cdktn_provider_databricks import budget
 budget.BudgetAlertConfigurations(
   action_configurations: IResolvable | typing.List[BudgetAlertConfigurationsActionConfigurations] = None,
   alert_configuration_id: str = None,
+  principal_overrides: IResolvable | typing.List[BudgetAlertConfigurationsPrincipalOverrides] = None,
   quantity_threshold: str = None,
   quantity_type: str = None,
+  scope_type: str = None,
   time_period: str = None,
   trigger_type: str = None
 )
@@ -1172,11 +1213,13 @@ budget.BudgetAlertConfigurations(
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-databricks.budget.BudgetAlertConfigurations.property.actionConfigurations">action_configurations</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-databricks.budget.BudgetAlertConfigurationsActionConfigurations">BudgetAlertConfigurationsActionConfigurations</a>]</code> | action_configurations block. |
-| <code><a href="#@cdktn/provider-databricks.budget.BudgetAlertConfigurations.property.alertConfigurationId">alert_configuration_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/budget#alert_configuration_id Budget#alert_configuration_id}. |
-| <code><a href="#@cdktn/provider-databricks.budget.BudgetAlertConfigurations.property.quantityThreshold">quantity_threshold</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/budget#quantity_threshold Budget#quantity_threshold}. |
-| <code><a href="#@cdktn/provider-databricks.budget.BudgetAlertConfigurations.property.quantityType">quantity_type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/budget#quantity_type Budget#quantity_type}. |
-| <code><a href="#@cdktn/provider-databricks.budget.BudgetAlertConfigurations.property.timePeriod">time_period</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/budget#time_period Budget#time_period}. |
-| <code><a href="#@cdktn/provider-databricks.budget.BudgetAlertConfigurations.property.triggerType">trigger_type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/budget#trigger_type Budget#trigger_type}. |
+| <code><a href="#@cdktn/provider-databricks.budget.BudgetAlertConfigurations.property.alertConfigurationId">alert_configuration_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/budget#alert_configuration_id Budget#alert_configuration_id}. |
+| <code><a href="#@cdktn/provider-databricks.budget.BudgetAlertConfigurations.property.principalOverrides">principal_overrides</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-databricks.budget.BudgetAlertConfigurationsPrincipalOverrides">BudgetAlertConfigurationsPrincipalOverrides</a>]</code> | principal_overrides block. |
+| <code><a href="#@cdktn/provider-databricks.budget.BudgetAlertConfigurations.property.quantityThreshold">quantity_threshold</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/budget#quantity_threshold Budget#quantity_threshold}. |
+| <code><a href="#@cdktn/provider-databricks.budget.BudgetAlertConfigurations.property.quantityType">quantity_type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/budget#quantity_type Budget#quantity_type}. |
+| <code><a href="#@cdktn/provider-databricks.budget.BudgetAlertConfigurations.property.scopeType">scope_type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/budget#scope_type Budget#scope_type}. |
+| <code><a href="#@cdktn/provider-databricks.budget.BudgetAlertConfigurations.property.timePeriod">time_period</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/budget#time_period Budget#time_period}. |
+| <code><a href="#@cdktn/provider-databricks.budget.BudgetAlertConfigurations.property.triggerType">trigger_type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/budget#trigger_type Budget#trigger_type}. |
 
 ---
 
@@ -1190,7 +1233,7 @@ action_configurations: IResolvable | typing.List[BudgetAlertConfigurationsAction
 
 action_configurations block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/budget#action_configurations Budget#action_configurations}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/budget#action_configurations Budget#action_configurations}
 
 ---
 
@@ -1202,7 +1245,21 @@ alert_configuration_id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/budget#alert_configuration_id Budget#alert_configuration_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/budget#alert_configuration_id Budget#alert_configuration_id}.
+
+---
+
+##### `principal_overrides`<sup>Optional</sup> <a name="principal_overrides" id="@cdktn/provider-databricks.budget.BudgetAlertConfigurations.property.principalOverrides"></a>
+
+```python
+principal_overrides: IResolvable | typing.List[BudgetAlertConfigurationsPrincipalOverrides]
+```
+
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-databricks.budget.BudgetAlertConfigurationsPrincipalOverrides">BudgetAlertConfigurationsPrincipalOverrides</a>]
+
+principal_overrides block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/budget#principal_overrides Budget#principal_overrides}
 
 ---
 
@@ -1214,7 +1271,7 @@ quantity_threshold: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/budget#quantity_threshold Budget#quantity_threshold}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/budget#quantity_threshold Budget#quantity_threshold}.
 
 ---
 
@@ -1226,7 +1283,19 @@ quantity_type: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/budget#quantity_type Budget#quantity_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/budget#quantity_type Budget#quantity_type}.
+
+---
+
+##### `scope_type`<sup>Optional</sup> <a name="scope_type" id="@cdktn/provider-databricks.budget.BudgetAlertConfigurations.property.scopeType"></a>
+
+```python
+scope_type: str
+```
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/budget#scope_type Budget#scope_type}.
 
 ---
 
@@ -1238,7 +1307,7 @@ time_period: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/budget#time_period Budget#time_period}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/budget#time_period Budget#time_period}.
 
 ---
 
@@ -1250,7 +1319,7 @@ trigger_type: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/budget#trigger_type Budget#trigger_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/budget#trigger_type Budget#trigger_type}.
 
 ---
 
@@ -1272,9 +1341,9 @@ budget.BudgetAlertConfigurationsActionConfigurations(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.budget.BudgetAlertConfigurationsActionConfigurations.property.actionConfigurationId">action_configuration_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/budget#action_configuration_id Budget#action_configuration_id}. |
-| <code><a href="#@cdktn/provider-databricks.budget.BudgetAlertConfigurationsActionConfigurations.property.actionType">action_type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/budget#action_type Budget#action_type}. |
-| <code><a href="#@cdktn/provider-databricks.budget.BudgetAlertConfigurationsActionConfigurations.property.target">target</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/budget#target Budget#target}. |
+| <code><a href="#@cdktn/provider-databricks.budget.BudgetAlertConfigurationsActionConfigurations.property.actionConfigurationId">action_configuration_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/budget#action_configuration_id Budget#action_configuration_id}. |
+| <code><a href="#@cdktn/provider-databricks.budget.BudgetAlertConfigurationsActionConfigurations.property.actionType">action_type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/budget#action_type Budget#action_type}. |
+| <code><a href="#@cdktn/provider-databricks.budget.BudgetAlertConfigurationsActionConfigurations.property.target">target</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/budget#target Budget#target}. |
 
 ---
 
@@ -1286,7 +1355,7 @@ action_configuration_id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/budget#action_configuration_id Budget#action_configuration_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/budget#action_configuration_id Budget#action_configuration_id}.
 
 ---
 
@@ -1298,7 +1367,7 @@ action_type: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/budget#action_type Budget#action_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/budget#action_type Budget#action_type}.
 
 ---
 
@@ -1310,7 +1379,53 @@ target: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/budget#target Budget#target}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/budget#target Budget#target}.
+
+---
+
+### BudgetAlertConfigurationsPrincipalOverrides <a name="BudgetAlertConfigurationsPrincipalOverrides" id="@cdktn/provider-databricks.budget.BudgetAlertConfigurationsPrincipalOverrides"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-databricks.budget.BudgetAlertConfigurationsPrincipalOverrides.Initializer"></a>
+
+```python
+from cdktn_provider_databricks import budget
+
+budget.BudgetAlertConfigurationsPrincipalOverrides(
+  override_threshold: str = None,
+  principal_id: typing.Union[int, float] = None
+)
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-databricks.budget.BudgetAlertConfigurationsPrincipalOverrides.property.overrideThreshold">override_threshold</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/budget#override_threshold Budget#override_threshold}. |
+| <code><a href="#@cdktn/provider-databricks.budget.BudgetAlertConfigurationsPrincipalOverrides.property.principalId">principal_id</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/budget#principal_id Budget#principal_id}. |
+
+---
+
+##### `override_threshold`<sup>Optional</sup> <a name="override_threshold" id="@cdktn/provider-databricks.budget.BudgetAlertConfigurationsPrincipalOverrides.property.overrideThreshold"></a>
+
+```python
+override_threshold: str
+```
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/budget#override_threshold Budget#override_threshold}.
+
+---
+
+##### `principal_id`<sup>Optional</sup> <a name="principal_id" id="@cdktn/provider-databricks.budget.BudgetAlertConfigurationsPrincipalOverrides.property.principalId"></a>
+
+```python
+principal_id: typing.Union[int, float]
+```
+
+- *Type:* typing.Union[int, float]
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/budget#principal_id Budget#principal_id}.
 
 ---
 
@@ -1336,6 +1451,7 @@ budget.BudgetConfig(
   display_name: str = None,
   filter: BudgetFilter = None,
   id: str = None,
+  resource_type: str = None,
   update_time: typing.Union[int, float] = None
 )
 ```
@@ -1351,14 +1467,15 @@ budget.BudgetConfig(
 | <code><a href="#@cdktn/provider-databricks.budget.BudgetConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.budget.BudgetConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.budget.BudgetConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-databricks.budget.BudgetConfig.property.accountId">account_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/budget#account_id Budget#account_id}. |
+| <code><a href="#@cdktn/provider-databricks.budget.BudgetConfig.property.accountId">account_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/budget#account_id Budget#account_id}. |
 | <code><a href="#@cdktn/provider-databricks.budget.BudgetConfig.property.alertConfigurations">alert_configurations</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-databricks.budget.BudgetAlertConfigurations">BudgetAlertConfigurations</a>]</code> | alert_configurations block. |
-| <code><a href="#@cdktn/provider-databricks.budget.BudgetConfig.property.budgetConfigurationId">budget_configuration_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/budget#budget_configuration_id Budget#budget_configuration_id}. |
-| <code><a href="#@cdktn/provider-databricks.budget.BudgetConfig.property.createTime">create_time</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/budget#create_time Budget#create_time}. |
-| <code><a href="#@cdktn/provider-databricks.budget.BudgetConfig.property.displayName">display_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/budget#display_name Budget#display_name}. |
+| <code><a href="#@cdktn/provider-databricks.budget.BudgetConfig.property.budgetConfigurationId">budget_configuration_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/budget#budget_configuration_id Budget#budget_configuration_id}. |
+| <code><a href="#@cdktn/provider-databricks.budget.BudgetConfig.property.createTime">create_time</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/budget#create_time Budget#create_time}. |
+| <code><a href="#@cdktn/provider-databricks.budget.BudgetConfig.property.displayName">display_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/budget#display_name Budget#display_name}. |
 | <code><a href="#@cdktn/provider-databricks.budget.BudgetConfig.property.filter">filter</a></code> | <code><a href="#@cdktn/provider-databricks.budget.BudgetFilter">BudgetFilter</a></code> | filter block. |
-| <code><a href="#@cdktn/provider-databricks.budget.BudgetConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/budget#id Budget#id}. |
-| <code><a href="#@cdktn/provider-databricks.budget.BudgetConfig.property.updateTime">update_time</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/budget#update_time Budget#update_time}. |
+| <code><a href="#@cdktn/provider-databricks.budget.BudgetConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/budget#id Budget#id}. |
+| <code><a href="#@cdktn/provider-databricks.budget.BudgetConfig.property.resourceType">resource_type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/budget#resource_type Budget#resource_type}. |
+| <code><a href="#@cdktn/provider-databricks.budget.BudgetConfig.property.updateTime">update_time</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/budget#update_time Budget#update_time}. |
 
 ---
 
@@ -1440,7 +1557,7 @@ account_id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/budget#account_id Budget#account_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/budget#account_id Budget#account_id}.
 
 ---
 
@@ -1454,7 +1571,7 @@ alert_configurations: IResolvable | typing.List[BudgetAlertConfigurations]
 
 alert_configurations block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/budget#alert_configurations Budget#alert_configurations}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/budget#alert_configurations Budget#alert_configurations}
 
 ---
 
@@ -1466,7 +1583,7 @@ budget_configuration_id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/budget#budget_configuration_id Budget#budget_configuration_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/budget#budget_configuration_id Budget#budget_configuration_id}.
 
 ---
 
@@ -1478,7 +1595,7 @@ create_time: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/budget#create_time Budget#create_time}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/budget#create_time Budget#create_time}.
 
 ---
 
@@ -1490,7 +1607,7 @@ display_name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/budget#display_name Budget#display_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/budget#display_name Budget#display_name}.
 
 ---
 
@@ -1504,7 +1621,7 @@ filter: BudgetFilter
 
 filter block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/budget#filter Budget#filter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/budget#filter Budget#filter}
 
 ---
 
@@ -1516,10 +1633,22 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/budget#id Budget#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/budget#id Budget#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
+##### `resource_type`<sup>Optional</sup> <a name="resource_type" id="@cdktn/provider-databricks.budget.BudgetConfig.property.resourceType"></a>
+
+```python
+resource_type: str
+```
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/budget#resource_type Budget#resource_type}.
 
 ---
 
@@ -1531,7 +1660,7 @@ update_time: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/budget#update_time Budget#update_time}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/budget#update_time Budget#update_time}.
 
 ---
 
@@ -1567,7 +1696,7 @@ tags: IResolvable | typing.List[BudgetFilterTags]
 
 tags block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/budget#tags Budget#tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/budget#tags Budget#tags}
 
 ---
 
@@ -1581,7 +1710,7 @@ workspace_id: BudgetFilterWorkspaceId
 
 workspace_id block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/budget#workspace_id Budget#workspace_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/budget#workspace_id Budget#workspace_id}
 
 ---
 
@@ -1602,7 +1731,7 @@ budget.BudgetFilterTags(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.budget.BudgetFilterTags.property.key">key</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/budget#key Budget#key}. |
+| <code><a href="#@cdktn/provider-databricks.budget.BudgetFilterTags.property.key">key</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/budget#key Budget#key}. |
 | <code><a href="#@cdktn/provider-databricks.budget.BudgetFilterTags.property.value">value</a></code> | <code><a href="#@cdktn/provider-databricks.budget.BudgetFilterTagsValue">BudgetFilterTagsValue</a></code> | value block. |
 
 ---
@@ -1615,7 +1744,7 @@ key: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/budget#key Budget#key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/budget#key Budget#key}.
 
 ---
 
@@ -1629,7 +1758,7 @@ value: BudgetFilterTagsValue
 
 value block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/budget#value Budget#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/budget#value Budget#value}
 
 ---
 
@@ -1650,8 +1779,8 @@ budget.BudgetFilterTagsValue(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.budget.BudgetFilterTagsValue.property.operator">operator</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/budget#operator Budget#operator}. |
-| <code><a href="#@cdktn/provider-databricks.budget.BudgetFilterTagsValue.property.values">values</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/budget#values Budget#values}. |
+| <code><a href="#@cdktn/provider-databricks.budget.BudgetFilterTagsValue.property.operator">operator</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/budget#operator Budget#operator}. |
+| <code><a href="#@cdktn/provider-databricks.budget.BudgetFilterTagsValue.property.values">values</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/budget#values Budget#values}. |
 
 ---
 
@@ -1663,7 +1792,7 @@ operator: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/budget#operator Budget#operator}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/budget#operator Budget#operator}.
 
 ---
 
@@ -1675,7 +1804,7 @@ values: typing.List[str]
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/budget#values Budget#values}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/budget#values Budget#values}.
 
 ---
 
@@ -1696,8 +1825,8 @@ budget.BudgetFilterWorkspaceId(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.budget.BudgetFilterWorkspaceId.property.operator">operator</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/budget#operator Budget#operator}. |
-| <code><a href="#@cdktn/provider-databricks.budget.BudgetFilterWorkspaceId.property.values">values</a></code> | <code>typing.List[typing.Union[int, float]]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/budget#values Budget#values}. |
+| <code><a href="#@cdktn/provider-databricks.budget.BudgetFilterWorkspaceId.property.operator">operator</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/budget#operator Budget#operator}. |
+| <code><a href="#@cdktn/provider-databricks.budget.BudgetFilterWorkspaceId.property.values">values</a></code> | <code>typing.List[typing.Union[int, float]]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/budget#values Budget#values}. |
 
 ---
 
@@ -1709,7 +1838,7 @@ operator: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/budget#operator Budget#operator}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/budget#operator Budget#operator}.
 
 ---
 
@@ -1721,7 +1850,7 @@ values: typing.List[typing.Union[int, float]]
 
 - *Type:* typing.List[typing.Union[int, float]]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/budget#values Budget#values}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/budget#values Budget#values}.
 
 ---
 
@@ -2522,10 +2651,13 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 | <code><a href="#@cdktn/provider-databricks.budget.BudgetAlertConfigurationsOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktn/provider-databricks.budget.BudgetAlertConfigurationsOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktn/provider-databricks.budget.BudgetAlertConfigurationsOutputReference.putActionConfigurations">put_action_configurations</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.budget.BudgetAlertConfigurationsOutputReference.putPrincipalOverrides">put_principal_overrides</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.budget.BudgetAlertConfigurationsOutputReference.resetActionConfigurations">reset_action_configurations</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.budget.BudgetAlertConfigurationsOutputReference.resetAlertConfigurationId">reset_alert_configuration_id</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.budget.BudgetAlertConfigurationsOutputReference.resetPrincipalOverrides">reset_principal_overrides</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.budget.BudgetAlertConfigurationsOutputReference.resetQuantityThreshold">reset_quantity_threshold</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.budget.BudgetAlertConfigurationsOutputReference.resetQuantityType">reset_quantity_type</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.budget.BudgetAlertConfigurationsOutputReference.resetScopeType">reset_scope_type</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.budget.BudgetAlertConfigurationsOutputReference.resetTimePeriod">reset_time_period</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.budget.BudgetAlertConfigurationsOutputReference.resetTriggerType">reset_trigger_type</a></code> | *No description.* |
 
@@ -2717,6 +2849,20 @@ def put_action_configurations(
 
 ---
 
+##### `put_principal_overrides` <a name="put_principal_overrides" id="@cdktn/provider-databricks.budget.BudgetAlertConfigurationsOutputReference.putPrincipalOverrides"></a>
+
+```python
+def put_principal_overrides(
+  value: IResolvable | typing.List[BudgetAlertConfigurationsPrincipalOverrides]
+) -> None
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-databricks.budget.BudgetAlertConfigurationsOutputReference.putPrincipalOverrides.parameter.value"></a>
+
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-databricks.budget.BudgetAlertConfigurationsPrincipalOverrides">BudgetAlertConfigurationsPrincipalOverrides</a>]
+
+---
+
 ##### `reset_action_configurations` <a name="reset_action_configurations" id="@cdktn/provider-databricks.budget.BudgetAlertConfigurationsOutputReference.resetActionConfigurations"></a>
 
 ```python
@@ -2729,6 +2875,12 @@ def reset_action_configurations() -> None
 def reset_alert_configuration_id() -> None
 ```
 
+##### `reset_principal_overrides` <a name="reset_principal_overrides" id="@cdktn/provider-databricks.budget.BudgetAlertConfigurationsOutputReference.resetPrincipalOverrides"></a>
+
+```python
+def reset_principal_overrides() -> None
+```
+
 ##### `reset_quantity_threshold` <a name="reset_quantity_threshold" id="@cdktn/provider-databricks.budget.BudgetAlertConfigurationsOutputReference.resetQuantityThreshold"></a>
 
 ```python
@@ -2739,6 +2891,12 @@ def reset_quantity_threshold() -> None
 
 ```python
 def reset_quantity_type() -> None
+```
+
+##### `reset_scope_type` <a name="reset_scope_type" id="@cdktn/provider-databricks.budget.BudgetAlertConfigurationsOutputReference.resetScopeType"></a>
+
+```python
+def reset_scope_type() -> None
 ```
 
 ##### `reset_time_period` <a name="reset_time_period" id="@cdktn/provider-databricks.budget.BudgetAlertConfigurationsOutputReference.resetTimePeriod"></a>
@@ -2761,15 +2919,19 @@ def reset_trigger_type() -> None
 | <code><a href="#@cdktn/provider-databricks.budget.BudgetAlertConfigurationsOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-databricks.budget.BudgetAlertConfigurationsOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.budget.BudgetAlertConfigurationsOutputReference.property.actionConfigurations">action_configurations</a></code> | <code><a href="#@cdktn/provider-databricks.budget.BudgetAlertConfigurationsActionConfigurationsList">BudgetAlertConfigurationsActionConfigurationsList</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.budget.BudgetAlertConfigurationsOutputReference.property.principalOverrides">principal_overrides</a></code> | <code><a href="#@cdktn/provider-databricks.budget.BudgetAlertConfigurationsPrincipalOverridesList">BudgetAlertConfigurationsPrincipalOverridesList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.budget.BudgetAlertConfigurationsOutputReference.property.actionConfigurationsInput">action_configurations_input</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-databricks.budget.BudgetAlertConfigurationsActionConfigurations">BudgetAlertConfigurationsActionConfigurations</a>]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.budget.BudgetAlertConfigurationsOutputReference.property.alertConfigurationIdInput">alert_configuration_id_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.budget.BudgetAlertConfigurationsOutputReference.property.principalOverridesInput">principal_overrides_input</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-databricks.budget.BudgetAlertConfigurationsPrincipalOverrides">BudgetAlertConfigurationsPrincipalOverrides</a>]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.budget.BudgetAlertConfigurationsOutputReference.property.quantityThresholdInput">quantity_threshold_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.budget.BudgetAlertConfigurationsOutputReference.property.quantityTypeInput">quantity_type_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.budget.BudgetAlertConfigurationsOutputReference.property.scopeTypeInput">scope_type_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.budget.BudgetAlertConfigurationsOutputReference.property.timePeriodInput">time_period_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.budget.BudgetAlertConfigurationsOutputReference.property.triggerTypeInput">trigger_type_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.budget.BudgetAlertConfigurationsOutputReference.property.alertConfigurationId">alert_configuration_id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.budget.BudgetAlertConfigurationsOutputReference.property.quantityThreshold">quantity_threshold</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.budget.BudgetAlertConfigurationsOutputReference.property.quantityType">quantity_type</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.budget.BudgetAlertConfigurationsOutputReference.property.scopeType">scope_type</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.budget.BudgetAlertConfigurationsOutputReference.property.timePeriod">time_period</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.budget.BudgetAlertConfigurationsOutputReference.property.triggerType">trigger_type</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.budget.BudgetAlertConfigurationsOutputReference.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-databricks.budget.BudgetAlertConfigurations">BudgetAlertConfigurations</a></code> | *No description.* |
@@ -2810,6 +2972,16 @@ action_configurations: BudgetAlertConfigurationsActionConfigurationsList
 
 ---
 
+##### `principal_overrides`<sup>Required</sup> <a name="principal_overrides" id="@cdktn/provider-databricks.budget.BudgetAlertConfigurationsOutputReference.property.principalOverrides"></a>
+
+```python
+principal_overrides: BudgetAlertConfigurationsPrincipalOverridesList
+```
+
+- *Type:* <a href="#@cdktn/provider-databricks.budget.BudgetAlertConfigurationsPrincipalOverridesList">BudgetAlertConfigurationsPrincipalOverridesList</a>
+
+---
+
 ##### `action_configurations_input`<sup>Optional</sup> <a name="action_configurations_input" id="@cdktn/provider-databricks.budget.BudgetAlertConfigurationsOutputReference.property.actionConfigurationsInput"></a>
 
 ```python
@@ -2830,6 +3002,16 @@ alert_configuration_id_input: str
 
 ---
 
+##### `principal_overrides_input`<sup>Optional</sup> <a name="principal_overrides_input" id="@cdktn/provider-databricks.budget.BudgetAlertConfigurationsOutputReference.property.principalOverridesInput"></a>
+
+```python
+principal_overrides_input: IResolvable | typing.List[BudgetAlertConfigurationsPrincipalOverrides]
+```
+
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-databricks.budget.BudgetAlertConfigurationsPrincipalOverrides">BudgetAlertConfigurationsPrincipalOverrides</a>]
+
+---
+
 ##### `quantity_threshold_input`<sup>Optional</sup> <a name="quantity_threshold_input" id="@cdktn/provider-databricks.budget.BudgetAlertConfigurationsOutputReference.property.quantityThresholdInput"></a>
 
 ```python
@@ -2844,6 +3026,16 @@ quantity_threshold_input: str
 
 ```python
 quantity_type_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `scope_type_input`<sup>Optional</sup> <a name="scope_type_input" id="@cdktn/provider-databricks.budget.BudgetAlertConfigurationsOutputReference.property.scopeTypeInput"></a>
+
+```python
+scope_type_input: str
 ```
 
 - *Type:* str
@@ -2900,6 +3092,16 @@ quantity_type: str
 
 ---
 
+##### `scope_type`<sup>Required</sup> <a name="scope_type" id="@cdktn/provider-databricks.budget.BudgetAlertConfigurationsOutputReference.property.scopeType"></a>
+
+```python
+scope_type: str
+```
+
+- *Type:* str
+
+---
+
 ##### `time_period`<sup>Required</sup> <a name="time_period" id="@cdktn/provider-databricks.budget.BudgetAlertConfigurationsOutputReference.property.timePeriod"></a>
 
 ```python
@@ -2927,6 +3129,528 @@ internal_value: IResolvable | BudgetAlertConfigurations
 ```
 
 - *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-databricks.budget.BudgetAlertConfigurations">BudgetAlertConfigurations</a>
+
+---
+
+
+### BudgetAlertConfigurationsPrincipalOverridesList <a name="BudgetAlertConfigurationsPrincipalOverridesList" id="@cdktn/provider-databricks.budget.BudgetAlertConfigurationsPrincipalOverridesList"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-databricks.budget.BudgetAlertConfigurationsPrincipalOverridesList.Initializer"></a>
+
+```python
+from cdktn_provider_databricks import budget
+
+budget.BudgetAlertConfigurationsPrincipalOverridesList(
+  terraform_resource: IInterpolatingParent,
+  terraform_attribute: str,
+  wraps_set: bool
+)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-databricks.budget.BudgetAlertConfigurationsPrincipalOverridesList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-databricks.budget.BudgetAlertConfigurationsPrincipalOverridesList.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-databricks.budget.BudgetAlertConfigurationsPrincipalOverridesList.Initializer.parameter.wrapsSet">wraps_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-databricks.budget.BudgetAlertConfigurationsPrincipalOverridesList.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-databricks.budget.BudgetAlertConfigurationsPrincipalOverridesList.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `wraps_set`<sup>Required</sup> <a name="wraps_set" id="@cdktn/provider-databricks.budget.BudgetAlertConfigurationsPrincipalOverridesList.Initializer.parameter.wrapsSet"></a>
+
+- *Type:* bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-databricks.budget.BudgetAlertConfigurationsPrincipalOverridesList.allWithMapKey">all_with_map_key</a></code> | Creating an iterator for this complex list. |
+| <code><a href="#@cdktn/provider-databricks.budget.BudgetAlertConfigurationsPrincipalOverridesList.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.budget.BudgetAlertConfigurationsPrincipalOverridesList.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-databricks.budget.BudgetAlertConfigurationsPrincipalOverridesList.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-databricks.budget.BudgetAlertConfigurationsPrincipalOverridesList.get">get</a></code> | *No description.* |
+
+---
+
+##### `all_with_map_key` <a name="all_with_map_key" id="@cdktn/provider-databricks.budget.BudgetAlertConfigurationsPrincipalOverridesList.allWithMapKey"></a>
+
+```python
+def all_with_map_key(
+  map_key_attribute_name: str
+) -> DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `map_key_attribute_name`<sup>Required</sup> <a name="map_key_attribute_name" id="@cdktn/provider-databricks.budget.BudgetAlertConfigurationsPrincipalOverridesList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* str
+
+---
+
+##### `compute_fqn` <a name="compute_fqn" id="@cdktn/provider-databricks.budget.BudgetAlertConfigurationsPrincipalOverridesList.computeFqn"></a>
+
+```python
+def compute_fqn() -> str
+```
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-databricks.budget.BudgetAlertConfigurationsPrincipalOverridesList.resolve"></a>
+
+```python
+def resolve(
+  _context: IResolveContext
+) -> typing.Any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-databricks.budget.BudgetAlertConfigurationsPrincipalOverridesList.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `to_string` <a name="to_string" id="@cdktn/provider-databricks.budget.BudgetAlertConfigurationsPrincipalOverridesList.toString"></a>
+
+```python
+def to_string() -> str
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `get` <a name="get" id="@cdktn/provider-databricks.budget.BudgetAlertConfigurationsPrincipalOverridesList.get"></a>
+
+```python
+def get(
+  index: typing.Union[int, float]
+) -> BudgetAlertConfigurationsPrincipalOverridesOutputReference
+```
+
+###### `index`<sup>Required</sup> <a name="index" id="@cdktn/provider-databricks.budget.BudgetAlertConfigurationsPrincipalOverridesList.get.parameter.index"></a>
+
+- *Type:* typing.Union[int, float]
+
+the index of the item to return.
+
+---
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-databricks.budget.BudgetAlertConfigurationsPrincipalOverridesList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-databricks.budget.BudgetAlertConfigurationsPrincipalOverridesList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.budget.BudgetAlertConfigurationsPrincipalOverridesList.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-databricks.budget.BudgetAlertConfigurationsPrincipalOverrides">BudgetAlertConfigurationsPrincipalOverrides</a>]</code> | *No description.* |
+
+---
+
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktn/provider-databricks.budget.BudgetAlertConfigurationsPrincipalOverridesList.property.creationStack"></a>
+
+```python
+creation_stack: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-databricks.budget.BudgetAlertConfigurationsPrincipalOverridesList.property.fqn"></a>
+
+```python
+fqn: str
+```
+
+- *Type:* str
+
+---
+
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktn/provider-databricks.budget.BudgetAlertConfigurationsPrincipalOverridesList.property.internalValue"></a>
+
+```python
+internal_value: IResolvable | typing.List[BudgetAlertConfigurationsPrincipalOverrides]
+```
+
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-databricks.budget.BudgetAlertConfigurationsPrincipalOverrides">BudgetAlertConfigurationsPrincipalOverrides</a>]
+
+---
+
+
+### BudgetAlertConfigurationsPrincipalOverridesOutputReference <a name="BudgetAlertConfigurationsPrincipalOverridesOutputReference" id="@cdktn/provider-databricks.budget.BudgetAlertConfigurationsPrincipalOverridesOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-databricks.budget.BudgetAlertConfigurationsPrincipalOverridesOutputReference.Initializer"></a>
+
+```python
+from cdktn_provider_databricks import budget
+
+budget.BudgetAlertConfigurationsPrincipalOverridesOutputReference(
+  terraform_resource: IInterpolatingParent,
+  terraform_attribute: str,
+  complex_object_index: typing.Union[int, float],
+  complex_object_is_from_set: bool
+)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-databricks.budget.BudgetAlertConfigurationsPrincipalOverridesOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-databricks.budget.BudgetAlertConfigurationsPrincipalOverridesOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-databricks.budget.BudgetAlertConfigurationsPrincipalOverridesOutputReference.Initializer.parameter.complexObjectIndex">complex_object_index</a></code> | <code>typing.Union[int, float]</code> | the index of this item in the list. |
+| <code><a href="#@cdktn/provider-databricks.budget.BudgetAlertConfigurationsPrincipalOverridesOutputReference.Initializer.parameter.complexObjectIsFromSet">complex_object_is_from_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-databricks.budget.BudgetAlertConfigurationsPrincipalOverridesOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-databricks.budget.BudgetAlertConfigurationsPrincipalOverridesOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complex_object_index`<sup>Required</sup> <a name="complex_object_index" id="@cdktn/provider-databricks.budget.BudgetAlertConfigurationsPrincipalOverridesOutputReference.Initializer.parameter.complexObjectIndex"></a>
+
+- *Type:* typing.Union[int, float]
+
+the index of this item in the list.
+
+---
+
+##### `complex_object_is_from_set`<sup>Required</sup> <a name="complex_object_is_from_set" id="@cdktn/provider-databricks.budget.BudgetAlertConfigurationsPrincipalOverridesOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-databricks.budget.BudgetAlertConfigurationsPrincipalOverridesOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.budget.BudgetAlertConfigurationsPrincipalOverridesOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.budget.BudgetAlertConfigurationsPrincipalOverridesOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.budget.BudgetAlertConfigurationsPrincipalOverridesOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.budget.BudgetAlertConfigurationsPrincipalOverridesOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.budget.BudgetAlertConfigurationsPrincipalOverridesOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.budget.BudgetAlertConfigurationsPrincipalOverridesOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.budget.BudgetAlertConfigurationsPrincipalOverridesOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.budget.BudgetAlertConfigurationsPrincipalOverridesOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.budget.BudgetAlertConfigurationsPrincipalOverridesOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.budget.BudgetAlertConfigurationsPrincipalOverridesOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.budget.BudgetAlertConfigurationsPrincipalOverridesOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-databricks.budget.BudgetAlertConfigurationsPrincipalOverridesOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-databricks.budget.BudgetAlertConfigurationsPrincipalOverridesOutputReference.resetOverrideThreshold">reset_override_threshold</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.budget.BudgetAlertConfigurationsPrincipalOverridesOutputReference.resetPrincipalId">reset_principal_id</a></code> | *No description.* |
+
+---
+
+##### `compute_fqn` <a name="compute_fqn" id="@cdktn/provider-databricks.budget.BudgetAlertConfigurationsPrincipalOverridesOutputReference.computeFqn"></a>
+
+```python
+def compute_fqn() -> str
+```
+
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktn/provider-databricks.budget.BudgetAlertConfigurationsPrincipalOverridesOutputReference.getAnyMapAttribute"></a>
+
+```python
+def get_any_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Any]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-databricks.budget.BudgetAlertConfigurationsPrincipalOverridesOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktn/provider-databricks.budget.BudgetAlertConfigurationsPrincipalOverridesOutputReference.getBooleanAttribute"></a>
+
+```python
+def get_boolean_attribute(
+  terraform_attribute: str
+) -> IResolvable
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-databricks.budget.BudgetAlertConfigurationsPrincipalOverridesOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktn/provider-databricks.budget.BudgetAlertConfigurationsPrincipalOverridesOutputReference.getBooleanMapAttribute"></a>
+
+```python
+def get_boolean_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[bool]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-databricks.budget.BudgetAlertConfigurationsPrincipalOverridesOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktn/provider-databricks.budget.BudgetAlertConfigurationsPrincipalOverridesOutputReference.getListAttribute"></a>
+
+```python
+def get_list_attribute(
+  terraform_attribute: str
+) -> typing.List[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-databricks.budget.BudgetAlertConfigurationsPrincipalOverridesOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktn/provider-databricks.budget.BudgetAlertConfigurationsPrincipalOverridesOutputReference.getNumberAttribute"></a>
+
+```python
+def get_number_attribute(
+  terraform_attribute: str
+) -> typing.Union[int, float]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-databricks.budget.BudgetAlertConfigurationsPrincipalOverridesOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktn/provider-databricks.budget.BudgetAlertConfigurationsPrincipalOverridesOutputReference.getNumberListAttribute"></a>
+
+```python
+def get_number_list_attribute(
+  terraform_attribute: str
+) -> typing.List[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-databricks.budget.BudgetAlertConfigurationsPrincipalOverridesOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktn/provider-databricks.budget.BudgetAlertConfigurationsPrincipalOverridesOutputReference.getNumberMapAttribute"></a>
+
+```python
+def get_number_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-databricks.budget.BudgetAlertConfigurationsPrincipalOverridesOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktn/provider-databricks.budget.BudgetAlertConfigurationsPrincipalOverridesOutputReference.getStringAttribute"></a>
+
+```python
+def get_string_attribute(
+  terraform_attribute: str
+) -> str
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-databricks.budget.BudgetAlertConfigurationsPrincipalOverridesOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktn/provider-databricks.budget.BudgetAlertConfigurationsPrincipalOverridesOutputReference.getStringMapAttribute"></a>
+
+```python
+def get_string_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-databricks.budget.BudgetAlertConfigurationsPrincipalOverridesOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktn/provider-databricks.budget.BudgetAlertConfigurationsPrincipalOverridesOutputReference.interpolationForAttribute"></a>
+
+```python
+def interpolation_for_attribute(
+  property: str
+) -> IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-databricks.budget.BudgetAlertConfigurationsPrincipalOverridesOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* str
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-databricks.budget.BudgetAlertConfigurationsPrincipalOverridesOutputReference.resolve"></a>
+
+```python
+def resolve(
+  _context: IResolveContext
+) -> typing.Any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-databricks.budget.BudgetAlertConfigurationsPrincipalOverridesOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `to_string` <a name="to_string" id="@cdktn/provider-databricks.budget.BudgetAlertConfigurationsPrincipalOverridesOutputReference.toString"></a>
+
+```python
+def to_string() -> str
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `reset_override_threshold` <a name="reset_override_threshold" id="@cdktn/provider-databricks.budget.BudgetAlertConfigurationsPrincipalOverridesOutputReference.resetOverrideThreshold"></a>
+
+```python
+def reset_override_threshold() -> None
+```
+
+##### `reset_principal_id` <a name="reset_principal_id" id="@cdktn/provider-databricks.budget.BudgetAlertConfigurationsPrincipalOverridesOutputReference.resetPrincipalId"></a>
+
+```python
+def reset_principal_id() -> None
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-databricks.budget.BudgetAlertConfigurationsPrincipalOverridesOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-databricks.budget.BudgetAlertConfigurationsPrincipalOverridesOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.budget.BudgetAlertConfigurationsPrincipalOverridesOutputReference.property.overrideThresholdInput">override_threshold_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.budget.BudgetAlertConfigurationsPrincipalOverridesOutputReference.property.principalIdInput">principal_id_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.budget.BudgetAlertConfigurationsPrincipalOverridesOutputReference.property.overrideThreshold">override_threshold</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.budget.BudgetAlertConfigurationsPrincipalOverridesOutputReference.property.principalId">principal_id</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.budget.BudgetAlertConfigurationsPrincipalOverridesOutputReference.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-databricks.budget.BudgetAlertConfigurationsPrincipalOverrides">BudgetAlertConfigurationsPrincipalOverrides</a></code> | *No description.* |
+
+---
+
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktn/provider-databricks.budget.BudgetAlertConfigurationsPrincipalOverridesOutputReference.property.creationStack"></a>
+
+```python
+creation_stack: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-databricks.budget.BudgetAlertConfigurationsPrincipalOverridesOutputReference.property.fqn"></a>
+
+```python
+fqn: str
+```
+
+- *Type:* str
+
+---
+
+##### `override_threshold_input`<sup>Optional</sup> <a name="override_threshold_input" id="@cdktn/provider-databricks.budget.BudgetAlertConfigurationsPrincipalOverridesOutputReference.property.overrideThresholdInput"></a>
+
+```python
+override_threshold_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `principal_id_input`<sup>Optional</sup> <a name="principal_id_input" id="@cdktn/provider-databricks.budget.BudgetAlertConfigurationsPrincipalOverridesOutputReference.property.principalIdInput"></a>
+
+```python
+principal_id_input: typing.Union[int, float]
+```
+
+- *Type:* typing.Union[int, float]
+
+---
+
+##### `override_threshold`<sup>Required</sup> <a name="override_threshold" id="@cdktn/provider-databricks.budget.BudgetAlertConfigurationsPrincipalOverridesOutputReference.property.overrideThreshold"></a>
+
+```python
+override_threshold: str
+```
+
+- *Type:* str
+
+---
+
+##### `principal_id`<sup>Required</sup> <a name="principal_id" id="@cdktn/provider-databricks.budget.BudgetAlertConfigurationsPrincipalOverridesOutputReference.property.principalId"></a>
+
+```python
+principal_id: typing.Union[int, float]
+```
+
+- *Type:* typing.Union[int, float]
+
+---
+
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktn/provider-databricks.budget.BudgetAlertConfigurationsPrincipalOverridesOutputReference.property.internalValue"></a>
+
+```python
+internal_value: IResolvable | BudgetAlertConfigurationsPrincipalOverrides
+```
+
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-databricks.budget.BudgetAlertConfigurationsPrincipalOverrides">BudgetAlertConfigurationsPrincipalOverrides</a>
 
 ---
 
@@ -3190,7 +3914,7 @@ def put_workspace_id(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/budget#operator Budget#operator}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/budget#operator Budget#operator}.
 
 ---
 
@@ -3198,7 +3922,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* typing.List[typing.Union[int, float]]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/budget#values Budget#values}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/budget#values Budget#values}.
 
 ---
 
@@ -3738,7 +4462,7 @@ def put_value(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/budget#operator Budget#operator}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/budget#operator Budget#operator}.
 
 ---
 
@@ -3746,7 +4470,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/budget#values Budget#values}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/budget#values Budget#values}.
 
 ---
 

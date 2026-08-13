@@ -4,7 +4,7 @@
 
 ### Budget <a name="Budget" id="@cdktn/provider-databricks.budget.Budget"></a>
 
-Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/budget databricks_budget}.
+Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/budget databricks_budget}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.budget.Budget.Initializer"></a>
 
@@ -26,6 +26,7 @@ Budget.Builder.create(Construct scope, java.lang.String id)
 //  .displayName(java.lang.String)
 //  .filter(BudgetFilter)
 //  .id(java.lang.String)
+//  .resourceType(java.lang.String)
 //  .updateTime(java.lang.Number)
     .build();
 ```
@@ -41,14 +42,15 @@ Budget.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktn/provider-databricks.budget.Budget.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>io.cdktn.cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.budget.Budget.Initializer.parameter.provider">provider</a></code> | <code>io.cdktn.cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.budget.Budget.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktn/provider-databricks.budget.Budget.Initializer.parameter.accountId">accountId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/budget#account_id Budget#account_id}. |
+| <code><a href="#@cdktn/provider-databricks.budget.Budget.Initializer.parameter.accountId">accountId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/budget#account_id Budget#account_id}. |
 | <code><a href="#@cdktn/provider-databricks.budget.Budget.Initializer.parameter.alertConfigurations">alertConfigurations</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-databricks.budget.BudgetAlertConfigurations">BudgetAlertConfigurations</a>></code> | alert_configurations block. |
-| <code><a href="#@cdktn/provider-databricks.budget.Budget.Initializer.parameter.budgetConfigurationId">budgetConfigurationId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/budget#budget_configuration_id Budget#budget_configuration_id}. |
-| <code><a href="#@cdktn/provider-databricks.budget.Budget.Initializer.parameter.createTime">createTime</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/budget#create_time Budget#create_time}. |
-| <code><a href="#@cdktn/provider-databricks.budget.Budget.Initializer.parameter.displayName">displayName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/budget#display_name Budget#display_name}. |
+| <code><a href="#@cdktn/provider-databricks.budget.Budget.Initializer.parameter.budgetConfigurationId">budgetConfigurationId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/budget#budget_configuration_id Budget#budget_configuration_id}. |
+| <code><a href="#@cdktn/provider-databricks.budget.Budget.Initializer.parameter.createTime">createTime</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/budget#create_time Budget#create_time}. |
+| <code><a href="#@cdktn/provider-databricks.budget.Budget.Initializer.parameter.displayName">displayName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/budget#display_name Budget#display_name}. |
 | <code><a href="#@cdktn/provider-databricks.budget.Budget.Initializer.parameter.filter">filter</a></code> | <code><a href="#@cdktn/provider-databricks.budget.BudgetFilter">BudgetFilter</a></code> | filter block. |
-| <code><a href="#@cdktn/provider-databricks.budget.Budget.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/budget#id Budget#id}. |
-| <code><a href="#@cdktn/provider-databricks.budget.Budget.Initializer.parameter.updateTime">updateTime</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/budget#update_time Budget#update_time}. |
+| <code><a href="#@cdktn/provider-databricks.budget.Budget.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/budget#id Budget#id}. |
+| <code><a href="#@cdktn/provider-databricks.budget.Budget.Initializer.parameter.resourceType">resourceType</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/budget#resource_type Budget#resource_type}. |
+| <code><a href="#@cdktn/provider-databricks.budget.Budget.Initializer.parameter.updateTime">updateTime</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/budget#update_time Budget#update_time}. |
 
 ---
 
@@ -116,7 +118,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/budget#account_id Budget#account_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/budget#account_id Budget#account_id}.
 
 ---
 
@@ -126,7 +128,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 alert_configurations block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/budget#alert_configurations Budget#alert_configurations}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/budget#alert_configurations Budget#alert_configurations}
 
 ---
 
@@ -134,7 +136,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/budget#budget_configuration_id Budget#budget_configuration_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/budget#budget_configuration_id Budget#budget_configuration_id}.
 
 ---
 
@@ -142,7 +144,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/budget#create_time Budget#create_time}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/budget#create_time Budget#create_time}.
 
 ---
 
@@ -150,7 +152,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/budget#display_name Budget#display_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/budget#display_name Budget#display_name}.
 
 ---
 
@@ -160,7 +162,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 filter block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/budget#filter Budget#filter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/budget#filter Budget#filter}
 
 ---
 
@@ -168,10 +170,18 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/budget#id Budget#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/budget#id Budget#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
+##### `resourceType`<sup>Optional</sup> <a name="resourceType" id="@cdktn/provider-databricks.budget.Budget.Initializer.parameter.resourceType"></a>
+
+- *Type:* java.lang.String
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/budget#resource_type Budget#resource_type}.
 
 ---
 
@@ -179,7 +189,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/budget#update_time Budget#update_time}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/budget#update_time Budget#update_time}.
 
 ---
 
@@ -220,6 +230,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 | <code><a href="#@cdktn/provider-databricks.budget.Budget.resetDisplayName">resetDisplayName</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.budget.Budget.resetFilter">resetFilter</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.budget.Budget.resetId">resetId</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.budget.Budget.resetResourceType">resetResourceType</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.budget.Budget.resetUpdateTime">resetUpdateTime</a></code> | *No description.* |
 
 ---
@@ -601,6 +612,12 @@ public void resetFilter()
 public void resetId()
 ```
 
+##### `resetResourceType` <a name="resetResourceType" id="@cdktn/provider-databricks.budget.Budget.resetResourceType"></a>
+
+```java
+public void resetResourceType()
+```
+
 ##### `resetUpdateTime` <a name="resetUpdateTime" id="@cdktn/provider-databricks.budget.Budget.resetUpdateTime"></a>
 
 ```java
@@ -710,7 +727,7 @@ The construct id used in the generated config for the Budget to import.
 
 The id of the existing Budget that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/budget#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/budget#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -749,12 +766,14 @@ Refer to the {@link https://registry.terraform.io/providers/databricks/databrick
 | <code><a href="#@cdktn/provider-databricks.budget.Budget.property.displayNameInput">displayNameInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.budget.Budget.property.filterInput">filterInput</a></code> | <code><a href="#@cdktn/provider-databricks.budget.BudgetFilter">BudgetFilter</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.budget.Budget.property.idInput">idInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.budget.Budget.property.resourceTypeInput">resourceTypeInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.budget.Budget.property.updateTimeInput">updateTimeInput</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.budget.Budget.property.accountId">accountId</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.budget.Budget.property.budgetConfigurationId">budgetConfigurationId</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.budget.Budget.property.createTime">createTime</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.budget.Budget.property.displayName">displayName</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.budget.Budget.property.id">id</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.budget.Budget.property.resourceType">resourceType</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.budget.Budget.property.updateTime">updateTime</a></code> | <code>java.lang.Number</code> | *No description.* |
 
 ---
@@ -991,6 +1010,16 @@ public java.lang.String getIdInput();
 
 ---
 
+##### `resourceTypeInput`<sup>Optional</sup> <a name="resourceTypeInput" id="@cdktn/provider-databricks.budget.Budget.property.resourceTypeInput"></a>
+
+```java
+public java.lang.String getResourceTypeInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
 ##### `updateTimeInput`<sup>Optional</sup> <a name="updateTimeInput" id="@cdktn/provider-databricks.budget.Budget.property.updateTimeInput"></a>
 
 ```java
@@ -1051,6 +1080,16 @@ public java.lang.String getId();
 
 ---
 
+##### `resourceType`<sup>Required</sup> <a name="resourceType" id="@cdktn/provider-databricks.budget.Budget.property.resourceType"></a>
+
+```java
+public java.lang.String getResourceType();
+```
+
+- *Type:* java.lang.String
+
+---
+
 ##### `updateTime`<sup>Required</sup> <a name="updateTime" id="@cdktn/provider-databricks.budget.Budget.property.updateTime"></a>
 
 ```java
@@ -1091,8 +1130,10 @@ import io.cdktn.providers.databricks.budget.BudgetAlertConfigurations;
 BudgetAlertConfigurations.builder()
 //  .actionConfigurations(IResolvable|java.util.List<BudgetAlertConfigurationsActionConfigurations>)
 //  .alertConfigurationId(java.lang.String)
+//  .principalOverrides(IResolvable|java.util.List<BudgetAlertConfigurationsPrincipalOverrides>)
 //  .quantityThreshold(java.lang.String)
 //  .quantityType(java.lang.String)
+//  .scopeType(java.lang.String)
 //  .timePeriod(java.lang.String)
 //  .triggerType(java.lang.String)
     .build();
@@ -1103,11 +1144,13 @@ BudgetAlertConfigurations.builder()
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-databricks.budget.BudgetAlertConfigurations.property.actionConfigurations">actionConfigurations</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-databricks.budget.BudgetAlertConfigurationsActionConfigurations">BudgetAlertConfigurationsActionConfigurations</a>></code> | action_configurations block. |
-| <code><a href="#@cdktn/provider-databricks.budget.BudgetAlertConfigurations.property.alertConfigurationId">alertConfigurationId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/budget#alert_configuration_id Budget#alert_configuration_id}. |
-| <code><a href="#@cdktn/provider-databricks.budget.BudgetAlertConfigurations.property.quantityThreshold">quantityThreshold</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/budget#quantity_threshold Budget#quantity_threshold}. |
-| <code><a href="#@cdktn/provider-databricks.budget.BudgetAlertConfigurations.property.quantityType">quantityType</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/budget#quantity_type Budget#quantity_type}. |
-| <code><a href="#@cdktn/provider-databricks.budget.BudgetAlertConfigurations.property.timePeriod">timePeriod</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/budget#time_period Budget#time_period}. |
-| <code><a href="#@cdktn/provider-databricks.budget.BudgetAlertConfigurations.property.triggerType">triggerType</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/budget#trigger_type Budget#trigger_type}. |
+| <code><a href="#@cdktn/provider-databricks.budget.BudgetAlertConfigurations.property.alertConfigurationId">alertConfigurationId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/budget#alert_configuration_id Budget#alert_configuration_id}. |
+| <code><a href="#@cdktn/provider-databricks.budget.BudgetAlertConfigurations.property.principalOverrides">principalOverrides</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-databricks.budget.BudgetAlertConfigurationsPrincipalOverrides">BudgetAlertConfigurationsPrincipalOverrides</a>></code> | principal_overrides block. |
+| <code><a href="#@cdktn/provider-databricks.budget.BudgetAlertConfigurations.property.quantityThreshold">quantityThreshold</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/budget#quantity_threshold Budget#quantity_threshold}. |
+| <code><a href="#@cdktn/provider-databricks.budget.BudgetAlertConfigurations.property.quantityType">quantityType</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/budget#quantity_type Budget#quantity_type}. |
+| <code><a href="#@cdktn/provider-databricks.budget.BudgetAlertConfigurations.property.scopeType">scopeType</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/budget#scope_type Budget#scope_type}. |
+| <code><a href="#@cdktn/provider-databricks.budget.BudgetAlertConfigurations.property.timePeriod">timePeriod</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/budget#time_period Budget#time_period}. |
+| <code><a href="#@cdktn/provider-databricks.budget.BudgetAlertConfigurations.property.triggerType">triggerType</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/budget#trigger_type Budget#trigger_type}. |
 
 ---
 
@@ -1121,7 +1164,7 @@ public IResolvable|java.util.List<BudgetAlertConfigurationsActionConfigurations>
 
 action_configurations block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/budget#action_configurations Budget#action_configurations}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/budget#action_configurations Budget#action_configurations}
 
 ---
 
@@ -1133,7 +1176,21 @@ public java.lang.String getAlertConfigurationId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/budget#alert_configuration_id Budget#alert_configuration_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/budget#alert_configuration_id Budget#alert_configuration_id}.
+
+---
+
+##### `principalOverrides`<sup>Optional</sup> <a name="principalOverrides" id="@cdktn/provider-databricks.budget.BudgetAlertConfigurations.property.principalOverrides"></a>
+
+```java
+public IResolvable|java.util.List<BudgetAlertConfigurationsPrincipalOverrides> getPrincipalOverrides();
+```
+
+- *Type:* io.cdktn.cdktn.IResolvable|java.util.List<<a href="#@cdktn/provider-databricks.budget.BudgetAlertConfigurationsPrincipalOverrides">BudgetAlertConfigurationsPrincipalOverrides</a>>
+
+principal_overrides block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/budget#principal_overrides Budget#principal_overrides}
 
 ---
 
@@ -1145,7 +1202,7 @@ public java.lang.String getQuantityThreshold();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/budget#quantity_threshold Budget#quantity_threshold}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/budget#quantity_threshold Budget#quantity_threshold}.
 
 ---
 
@@ -1157,7 +1214,19 @@ public java.lang.String getQuantityType();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/budget#quantity_type Budget#quantity_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/budget#quantity_type Budget#quantity_type}.
+
+---
+
+##### `scopeType`<sup>Optional</sup> <a name="scopeType" id="@cdktn/provider-databricks.budget.BudgetAlertConfigurations.property.scopeType"></a>
+
+```java
+public java.lang.String getScopeType();
+```
+
+- *Type:* java.lang.String
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/budget#scope_type Budget#scope_type}.
 
 ---
 
@@ -1169,7 +1238,7 @@ public java.lang.String getTimePeriod();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/budget#time_period Budget#time_period}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/budget#time_period Budget#time_period}.
 
 ---
 
@@ -1181,7 +1250,7 @@ public java.lang.String getTriggerType();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/budget#trigger_type Budget#trigger_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/budget#trigger_type Budget#trigger_type}.
 
 ---
 
@@ -1203,9 +1272,9 @@ BudgetAlertConfigurationsActionConfigurations.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.budget.BudgetAlertConfigurationsActionConfigurations.property.actionConfigurationId">actionConfigurationId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/budget#action_configuration_id Budget#action_configuration_id}. |
-| <code><a href="#@cdktn/provider-databricks.budget.BudgetAlertConfigurationsActionConfigurations.property.actionType">actionType</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/budget#action_type Budget#action_type}. |
-| <code><a href="#@cdktn/provider-databricks.budget.BudgetAlertConfigurationsActionConfigurations.property.target">target</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/budget#target Budget#target}. |
+| <code><a href="#@cdktn/provider-databricks.budget.BudgetAlertConfigurationsActionConfigurations.property.actionConfigurationId">actionConfigurationId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/budget#action_configuration_id Budget#action_configuration_id}. |
+| <code><a href="#@cdktn/provider-databricks.budget.BudgetAlertConfigurationsActionConfigurations.property.actionType">actionType</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/budget#action_type Budget#action_type}. |
+| <code><a href="#@cdktn/provider-databricks.budget.BudgetAlertConfigurationsActionConfigurations.property.target">target</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/budget#target Budget#target}. |
 
 ---
 
@@ -1217,7 +1286,7 @@ public java.lang.String getActionConfigurationId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/budget#action_configuration_id Budget#action_configuration_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/budget#action_configuration_id Budget#action_configuration_id}.
 
 ---
 
@@ -1229,7 +1298,7 @@ public java.lang.String getActionType();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/budget#action_type Budget#action_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/budget#action_type Budget#action_type}.
 
 ---
 
@@ -1241,7 +1310,53 @@ public java.lang.String getTarget();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/budget#target Budget#target}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/budget#target Budget#target}.
+
+---
+
+### BudgetAlertConfigurationsPrincipalOverrides <a name="BudgetAlertConfigurationsPrincipalOverrides" id="@cdktn/provider-databricks.budget.BudgetAlertConfigurationsPrincipalOverrides"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-databricks.budget.BudgetAlertConfigurationsPrincipalOverrides.Initializer"></a>
+
+```java
+import io.cdktn.providers.databricks.budget.BudgetAlertConfigurationsPrincipalOverrides;
+
+BudgetAlertConfigurationsPrincipalOverrides.builder()
+//  .overrideThreshold(java.lang.String)
+//  .principalId(java.lang.Number)
+    .build();
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-databricks.budget.BudgetAlertConfigurationsPrincipalOverrides.property.overrideThreshold">overrideThreshold</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/budget#override_threshold Budget#override_threshold}. |
+| <code><a href="#@cdktn/provider-databricks.budget.BudgetAlertConfigurationsPrincipalOverrides.property.principalId">principalId</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/budget#principal_id Budget#principal_id}. |
+
+---
+
+##### `overrideThreshold`<sup>Optional</sup> <a name="overrideThreshold" id="@cdktn/provider-databricks.budget.BudgetAlertConfigurationsPrincipalOverrides.property.overrideThreshold"></a>
+
+```java
+public java.lang.String getOverrideThreshold();
+```
+
+- *Type:* java.lang.String
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/budget#override_threshold Budget#override_threshold}.
+
+---
+
+##### `principalId`<sup>Optional</sup> <a name="principalId" id="@cdktn/provider-databricks.budget.BudgetAlertConfigurationsPrincipalOverrides.property.principalId"></a>
+
+```java
+public java.lang.Number getPrincipalId();
+```
+
+- *Type:* java.lang.Number
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/budget#principal_id Budget#principal_id}.
 
 ---
 
@@ -1267,6 +1382,7 @@ BudgetConfig.builder()
 //  .displayName(java.lang.String)
 //  .filter(BudgetFilter)
 //  .id(java.lang.String)
+//  .resourceType(java.lang.String)
 //  .updateTime(java.lang.Number)
     .build();
 ```
@@ -1282,14 +1398,15 @@ BudgetConfig.builder()
 | <code><a href="#@cdktn/provider-databricks.budget.BudgetConfig.property.lifecycle">lifecycle</a></code> | <code>io.cdktn.cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.budget.BudgetConfig.property.provider">provider</a></code> | <code>io.cdktn.cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.budget.BudgetConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktn/provider-databricks.budget.BudgetConfig.property.accountId">accountId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/budget#account_id Budget#account_id}. |
+| <code><a href="#@cdktn/provider-databricks.budget.BudgetConfig.property.accountId">accountId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/budget#account_id Budget#account_id}. |
 | <code><a href="#@cdktn/provider-databricks.budget.BudgetConfig.property.alertConfigurations">alertConfigurations</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-databricks.budget.BudgetAlertConfigurations">BudgetAlertConfigurations</a>></code> | alert_configurations block. |
-| <code><a href="#@cdktn/provider-databricks.budget.BudgetConfig.property.budgetConfigurationId">budgetConfigurationId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/budget#budget_configuration_id Budget#budget_configuration_id}. |
-| <code><a href="#@cdktn/provider-databricks.budget.BudgetConfig.property.createTime">createTime</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/budget#create_time Budget#create_time}. |
-| <code><a href="#@cdktn/provider-databricks.budget.BudgetConfig.property.displayName">displayName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/budget#display_name Budget#display_name}. |
+| <code><a href="#@cdktn/provider-databricks.budget.BudgetConfig.property.budgetConfigurationId">budgetConfigurationId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/budget#budget_configuration_id Budget#budget_configuration_id}. |
+| <code><a href="#@cdktn/provider-databricks.budget.BudgetConfig.property.createTime">createTime</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/budget#create_time Budget#create_time}. |
+| <code><a href="#@cdktn/provider-databricks.budget.BudgetConfig.property.displayName">displayName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/budget#display_name Budget#display_name}. |
 | <code><a href="#@cdktn/provider-databricks.budget.BudgetConfig.property.filter">filter</a></code> | <code><a href="#@cdktn/provider-databricks.budget.BudgetFilter">BudgetFilter</a></code> | filter block. |
-| <code><a href="#@cdktn/provider-databricks.budget.BudgetConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/budget#id Budget#id}. |
-| <code><a href="#@cdktn/provider-databricks.budget.BudgetConfig.property.updateTime">updateTime</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/budget#update_time Budget#update_time}. |
+| <code><a href="#@cdktn/provider-databricks.budget.BudgetConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/budget#id Budget#id}. |
+| <code><a href="#@cdktn/provider-databricks.budget.BudgetConfig.property.resourceType">resourceType</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/budget#resource_type Budget#resource_type}. |
+| <code><a href="#@cdktn/provider-databricks.budget.BudgetConfig.property.updateTime">updateTime</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/budget#update_time Budget#update_time}. |
 
 ---
 
@@ -1371,7 +1488,7 @@ public java.lang.String getAccountId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/budget#account_id Budget#account_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/budget#account_id Budget#account_id}.
 
 ---
 
@@ -1385,7 +1502,7 @@ public IResolvable|java.util.List<BudgetAlertConfigurations> getAlertConfigurati
 
 alert_configurations block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/budget#alert_configurations Budget#alert_configurations}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/budget#alert_configurations Budget#alert_configurations}
 
 ---
 
@@ -1397,7 +1514,7 @@ public java.lang.String getBudgetConfigurationId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/budget#budget_configuration_id Budget#budget_configuration_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/budget#budget_configuration_id Budget#budget_configuration_id}.
 
 ---
 
@@ -1409,7 +1526,7 @@ public java.lang.Number getCreateTime();
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/budget#create_time Budget#create_time}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/budget#create_time Budget#create_time}.
 
 ---
 
@@ -1421,7 +1538,7 @@ public java.lang.String getDisplayName();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/budget#display_name Budget#display_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/budget#display_name Budget#display_name}.
 
 ---
 
@@ -1435,7 +1552,7 @@ public BudgetFilter getFilter();
 
 filter block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/budget#filter Budget#filter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/budget#filter Budget#filter}
 
 ---
 
@@ -1447,10 +1564,22 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/budget#id Budget#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/budget#id Budget#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
+##### `resourceType`<sup>Optional</sup> <a name="resourceType" id="@cdktn/provider-databricks.budget.BudgetConfig.property.resourceType"></a>
+
+```java
+public java.lang.String getResourceType();
+```
+
+- *Type:* java.lang.String
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/budget#resource_type Budget#resource_type}.
 
 ---
 
@@ -1462,7 +1591,7 @@ public java.lang.Number getUpdateTime();
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/budget#update_time Budget#update_time}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/budget#update_time Budget#update_time}.
 
 ---
 
@@ -1498,7 +1627,7 @@ public IResolvable|java.util.List<BudgetFilterTags> getTags();
 
 tags block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/budget#tags Budget#tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/budget#tags Budget#tags}
 
 ---
 
@@ -1512,7 +1641,7 @@ public BudgetFilterWorkspaceId getWorkspaceId();
 
 workspace_id block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/budget#workspace_id Budget#workspace_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/budget#workspace_id Budget#workspace_id}
 
 ---
 
@@ -1533,7 +1662,7 @@ BudgetFilterTags.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.budget.BudgetFilterTags.property.key">key</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/budget#key Budget#key}. |
+| <code><a href="#@cdktn/provider-databricks.budget.BudgetFilterTags.property.key">key</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/budget#key Budget#key}. |
 | <code><a href="#@cdktn/provider-databricks.budget.BudgetFilterTags.property.value">value</a></code> | <code><a href="#@cdktn/provider-databricks.budget.BudgetFilterTagsValue">BudgetFilterTagsValue</a></code> | value block. |
 
 ---
@@ -1546,7 +1675,7 @@ public java.lang.String getKey();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/budget#key Budget#key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/budget#key Budget#key}.
 
 ---
 
@@ -1560,7 +1689,7 @@ public BudgetFilterTagsValue getValue();
 
 value block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/budget#value Budget#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/budget#value Budget#value}
 
 ---
 
@@ -1581,8 +1710,8 @@ BudgetFilterTagsValue.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.budget.BudgetFilterTagsValue.property.operator">operator</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/budget#operator Budget#operator}. |
-| <code><a href="#@cdktn/provider-databricks.budget.BudgetFilterTagsValue.property.values">values</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/budget#values Budget#values}. |
+| <code><a href="#@cdktn/provider-databricks.budget.BudgetFilterTagsValue.property.operator">operator</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/budget#operator Budget#operator}. |
+| <code><a href="#@cdktn/provider-databricks.budget.BudgetFilterTagsValue.property.values">values</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/budget#values Budget#values}. |
 
 ---
 
@@ -1594,7 +1723,7 @@ public java.lang.String getOperator();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/budget#operator Budget#operator}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/budget#operator Budget#operator}.
 
 ---
 
@@ -1606,7 +1735,7 @@ public java.util.List<java.lang.String> getValues();
 
 - *Type:* java.util.List<java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/budget#values Budget#values}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/budget#values Budget#values}.
 
 ---
 
@@ -1627,8 +1756,8 @@ BudgetFilterWorkspaceId.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.budget.BudgetFilterWorkspaceId.property.operator">operator</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/budget#operator Budget#operator}. |
-| <code><a href="#@cdktn/provider-databricks.budget.BudgetFilterWorkspaceId.property.values">values</a></code> | <code>java.util.List<java.lang.Number></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/budget#values Budget#values}. |
+| <code><a href="#@cdktn/provider-databricks.budget.BudgetFilterWorkspaceId.property.operator">operator</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/budget#operator Budget#operator}. |
+| <code><a href="#@cdktn/provider-databricks.budget.BudgetFilterWorkspaceId.property.values">values</a></code> | <code>java.util.List<java.lang.Number></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/budget#values Budget#values}. |
 
 ---
 
@@ -1640,7 +1769,7 @@ public java.lang.String getOperator();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/budget#operator Budget#operator}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/budget#operator Budget#operator}.
 
 ---
 
@@ -1652,7 +1781,7 @@ public java.util.List<java.lang.Number> getValues();
 
 - *Type:* java.util.List<java.lang.Number>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/budget#values Budget#values}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/budget#values Budget#values}.
 
 ---
 
@@ -2401,10 +2530,13 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 | <code><a href="#@cdktn/provider-databricks.budget.BudgetAlertConfigurationsOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktn/provider-databricks.budget.BudgetAlertConfigurationsOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktn/provider-databricks.budget.BudgetAlertConfigurationsOutputReference.putActionConfigurations">putActionConfigurations</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.budget.BudgetAlertConfigurationsOutputReference.putPrincipalOverrides">putPrincipalOverrides</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.budget.BudgetAlertConfigurationsOutputReference.resetActionConfigurations">resetActionConfigurations</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.budget.BudgetAlertConfigurationsOutputReference.resetAlertConfigurationId">resetAlertConfigurationId</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.budget.BudgetAlertConfigurationsOutputReference.resetPrincipalOverrides">resetPrincipalOverrides</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.budget.BudgetAlertConfigurationsOutputReference.resetQuantityThreshold">resetQuantityThreshold</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.budget.BudgetAlertConfigurationsOutputReference.resetQuantityType">resetQuantityType</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.budget.BudgetAlertConfigurationsOutputReference.resetScopeType">resetScopeType</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.budget.BudgetAlertConfigurationsOutputReference.resetTimePeriod">resetTimePeriod</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.budget.BudgetAlertConfigurationsOutputReference.resetTriggerType">resetTriggerType</a></code> | *No description.* |
 
@@ -2572,6 +2704,18 @@ public void putActionConfigurations(IResolvable|java.util.List<BudgetAlertConfig
 
 ---
 
+##### `putPrincipalOverrides` <a name="putPrincipalOverrides" id="@cdktn/provider-databricks.budget.BudgetAlertConfigurationsOutputReference.putPrincipalOverrides"></a>
+
+```java
+public void putPrincipalOverrides(IResolvable|java.util.List<BudgetAlertConfigurationsPrincipalOverrides> value)
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-databricks.budget.BudgetAlertConfigurationsOutputReference.putPrincipalOverrides.parameter.value"></a>
+
+- *Type:* io.cdktn.cdktn.IResolvable|java.util.List<<a href="#@cdktn/provider-databricks.budget.BudgetAlertConfigurationsPrincipalOverrides">BudgetAlertConfigurationsPrincipalOverrides</a>>
+
+---
+
 ##### `resetActionConfigurations` <a name="resetActionConfigurations" id="@cdktn/provider-databricks.budget.BudgetAlertConfigurationsOutputReference.resetActionConfigurations"></a>
 
 ```java
@@ -2584,6 +2728,12 @@ public void resetActionConfigurations()
 public void resetAlertConfigurationId()
 ```
 
+##### `resetPrincipalOverrides` <a name="resetPrincipalOverrides" id="@cdktn/provider-databricks.budget.BudgetAlertConfigurationsOutputReference.resetPrincipalOverrides"></a>
+
+```java
+public void resetPrincipalOverrides()
+```
+
 ##### `resetQuantityThreshold` <a name="resetQuantityThreshold" id="@cdktn/provider-databricks.budget.BudgetAlertConfigurationsOutputReference.resetQuantityThreshold"></a>
 
 ```java
@@ -2594,6 +2744,12 @@ public void resetQuantityThreshold()
 
 ```java
 public void resetQuantityType()
+```
+
+##### `resetScopeType` <a name="resetScopeType" id="@cdktn/provider-databricks.budget.BudgetAlertConfigurationsOutputReference.resetScopeType"></a>
+
+```java
+public void resetScopeType()
 ```
 
 ##### `resetTimePeriod` <a name="resetTimePeriod" id="@cdktn/provider-databricks.budget.BudgetAlertConfigurationsOutputReference.resetTimePeriod"></a>
@@ -2616,15 +2772,19 @@ public void resetTriggerType()
 | <code><a href="#@cdktn/provider-databricks.budget.BudgetAlertConfigurationsOutputReference.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-databricks.budget.BudgetAlertConfigurationsOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.budget.BudgetAlertConfigurationsOutputReference.property.actionConfigurations">actionConfigurations</a></code> | <code><a href="#@cdktn/provider-databricks.budget.BudgetAlertConfigurationsActionConfigurationsList">BudgetAlertConfigurationsActionConfigurationsList</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.budget.BudgetAlertConfigurationsOutputReference.property.principalOverrides">principalOverrides</a></code> | <code><a href="#@cdktn/provider-databricks.budget.BudgetAlertConfigurationsPrincipalOverridesList">BudgetAlertConfigurationsPrincipalOverridesList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.budget.BudgetAlertConfigurationsOutputReference.property.actionConfigurationsInput">actionConfigurationsInput</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-databricks.budget.BudgetAlertConfigurationsActionConfigurations">BudgetAlertConfigurationsActionConfigurations</a>></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.budget.BudgetAlertConfigurationsOutputReference.property.alertConfigurationIdInput">alertConfigurationIdInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.budget.BudgetAlertConfigurationsOutputReference.property.principalOverridesInput">principalOverridesInput</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-databricks.budget.BudgetAlertConfigurationsPrincipalOverrides">BudgetAlertConfigurationsPrincipalOverrides</a>></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.budget.BudgetAlertConfigurationsOutputReference.property.quantityThresholdInput">quantityThresholdInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.budget.BudgetAlertConfigurationsOutputReference.property.quantityTypeInput">quantityTypeInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.budget.BudgetAlertConfigurationsOutputReference.property.scopeTypeInput">scopeTypeInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.budget.BudgetAlertConfigurationsOutputReference.property.timePeriodInput">timePeriodInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.budget.BudgetAlertConfigurationsOutputReference.property.triggerTypeInput">triggerTypeInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.budget.BudgetAlertConfigurationsOutputReference.property.alertConfigurationId">alertConfigurationId</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.budget.BudgetAlertConfigurationsOutputReference.property.quantityThreshold">quantityThreshold</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.budget.BudgetAlertConfigurationsOutputReference.property.quantityType">quantityType</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.budget.BudgetAlertConfigurationsOutputReference.property.scopeType">scopeType</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.budget.BudgetAlertConfigurationsOutputReference.property.timePeriod">timePeriod</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.budget.BudgetAlertConfigurationsOutputReference.property.triggerType">triggerType</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.budget.BudgetAlertConfigurationsOutputReference.property.internalValue">internalValue</a></code> | <code>io.cdktn.cdktn.IResolvable\|<a href="#@cdktn/provider-databricks.budget.BudgetAlertConfigurations">BudgetAlertConfigurations</a></code> | *No description.* |
@@ -2665,6 +2825,16 @@ public BudgetAlertConfigurationsActionConfigurationsList getActionConfigurations
 
 ---
 
+##### `principalOverrides`<sup>Required</sup> <a name="principalOverrides" id="@cdktn/provider-databricks.budget.BudgetAlertConfigurationsOutputReference.property.principalOverrides"></a>
+
+```java
+public BudgetAlertConfigurationsPrincipalOverridesList getPrincipalOverrides();
+```
+
+- *Type:* <a href="#@cdktn/provider-databricks.budget.BudgetAlertConfigurationsPrincipalOverridesList">BudgetAlertConfigurationsPrincipalOverridesList</a>
+
+---
+
 ##### `actionConfigurationsInput`<sup>Optional</sup> <a name="actionConfigurationsInput" id="@cdktn/provider-databricks.budget.BudgetAlertConfigurationsOutputReference.property.actionConfigurationsInput"></a>
 
 ```java
@@ -2685,6 +2855,16 @@ public java.lang.String getAlertConfigurationIdInput();
 
 ---
 
+##### `principalOverridesInput`<sup>Optional</sup> <a name="principalOverridesInput" id="@cdktn/provider-databricks.budget.BudgetAlertConfigurationsOutputReference.property.principalOverridesInput"></a>
+
+```java
+public IResolvable|java.util.List<BudgetAlertConfigurationsPrincipalOverrides> getPrincipalOverridesInput();
+```
+
+- *Type:* io.cdktn.cdktn.IResolvable|java.util.List<<a href="#@cdktn/provider-databricks.budget.BudgetAlertConfigurationsPrincipalOverrides">BudgetAlertConfigurationsPrincipalOverrides</a>>
+
+---
+
 ##### `quantityThresholdInput`<sup>Optional</sup> <a name="quantityThresholdInput" id="@cdktn/provider-databricks.budget.BudgetAlertConfigurationsOutputReference.property.quantityThresholdInput"></a>
 
 ```java
@@ -2699,6 +2879,16 @@ public java.lang.String getQuantityThresholdInput();
 
 ```java
 public java.lang.String getQuantityTypeInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `scopeTypeInput`<sup>Optional</sup> <a name="scopeTypeInput" id="@cdktn/provider-databricks.budget.BudgetAlertConfigurationsOutputReference.property.scopeTypeInput"></a>
+
+```java
+public java.lang.String getScopeTypeInput();
 ```
 
 - *Type:* java.lang.String
@@ -2755,6 +2945,16 @@ public java.lang.String getQuantityType();
 
 ---
 
+##### `scopeType`<sup>Required</sup> <a name="scopeType" id="@cdktn/provider-databricks.budget.BudgetAlertConfigurationsOutputReference.property.scopeType"></a>
+
+```java
+public java.lang.String getScopeType();
+```
+
+- *Type:* java.lang.String
+
+---
+
 ##### `timePeriod`<sup>Required</sup> <a name="timePeriod" id="@cdktn/provider-databricks.budget.BudgetAlertConfigurationsOutputReference.property.timePeriod"></a>
 
 ```java
@@ -2782,6 +2982,491 @@ public IResolvable|BudgetAlertConfigurations getInternalValue();
 ```
 
 - *Type:* io.cdktn.cdktn.IResolvable|<a href="#@cdktn/provider-databricks.budget.BudgetAlertConfigurations">BudgetAlertConfigurations</a>
+
+---
+
+
+### BudgetAlertConfigurationsPrincipalOverridesList <a name="BudgetAlertConfigurationsPrincipalOverridesList" id="@cdktn/provider-databricks.budget.BudgetAlertConfigurationsPrincipalOverridesList"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-databricks.budget.BudgetAlertConfigurationsPrincipalOverridesList.Initializer"></a>
+
+```java
+import io.cdktn.providers.databricks.budget.BudgetAlertConfigurationsPrincipalOverridesList;
+
+new BudgetAlertConfigurationsPrincipalOverridesList(IInterpolatingParent terraformResource, java.lang.String terraformAttribute, java.lang.Boolean wrapsSet);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-databricks.budget.BudgetAlertConfigurationsPrincipalOverridesList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>io.cdktn.cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-databricks.budget.BudgetAlertConfigurationsPrincipalOverridesList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>java.lang.String</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-databricks.budget.BudgetAlertConfigurationsPrincipalOverridesList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>java.lang.Boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-databricks.budget.BudgetAlertConfigurationsPrincipalOverridesList.Initializer.parameter.terraformResource"></a>
+
+- *Type:* io.cdktn.cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.budget.BudgetAlertConfigurationsPrincipalOverridesList.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `wrapsSet`<sup>Required</sup> <a name="wrapsSet" id="@cdktn/provider-databricks.budget.BudgetAlertConfigurationsPrincipalOverridesList.Initializer.parameter.wrapsSet"></a>
+
+- *Type:* java.lang.Boolean
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-databricks.budget.BudgetAlertConfigurationsPrincipalOverridesList.allWithMapKey">allWithMapKey</a></code> | Creating an iterator for this complex list. |
+| <code><a href="#@cdktn/provider-databricks.budget.BudgetAlertConfigurationsPrincipalOverridesList.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.budget.BudgetAlertConfigurationsPrincipalOverridesList.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-databricks.budget.BudgetAlertConfigurationsPrincipalOverridesList.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-databricks.budget.BudgetAlertConfigurationsPrincipalOverridesList.get">get</a></code> | *No description.* |
+
+---
+
+##### `allWithMapKey` <a name="allWithMapKey" id="@cdktn/provider-databricks.budget.BudgetAlertConfigurationsPrincipalOverridesList.allWithMapKey"></a>
+
+```java
+public DynamicListTerraformIterator allWithMapKey(java.lang.String mapKeyAttributeName)
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktn/provider-databricks.budget.BudgetAlertConfigurationsPrincipalOverridesList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-databricks.budget.BudgetAlertConfigurationsPrincipalOverridesList.computeFqn"></a>
+
+```java
+public java.lang.String computeFqn()
+```
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-databricks.budget.BudgetAlertConfigurationsPrincipalOverridesList.resolve"></a>
+
+```java
+public java.lang.Object resolve(IResolveContext _context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-databricks.budget.BudgetAlertConfigurationsPrincipalOverridesList.resolve.parameter._context"></a>
+
+- *Type:* io.cdktn.cdktn.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktn/provider-databricks.budget.BudgetAlertConfigurationsPrincipalOverridesList.toString"></a>
+
+```java
+public java.lang.String toString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `get` <a name="get" id="@cdktn/provider-databricks.budget.BudgetAlertConfigurationsPrincipalOverridesList.get"></a>
+
+```java
+public BudgetAlertConfigurationsPrincipalOverridesOutputReference get(java.lang.Number index)
+```
+
+###### `index`<sup>Required</sup> <a name="index" id="@cdktn/provider-databricks.budget.BudgetAlertConfigurationsPrincipalOverridesList.get.parameter.index"></a>
+
+- *Type:* java.lang.Number
+
+the index of the item to return.
+
+---
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-databricks.budget.BudgetAlertConfigurationsPrincipalOverridesList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-databricks.budget.BudgetAlertConfigurationsPrincipalOverridesList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.budget.BudgetAlertConfigurationsPrincipalOverridesList.property.internalValue">internalValue</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-databricks.budget.BudgetAlertConfigurationsPrincipalOverrides">BudgetAlertConfigurationsPrincipalOverrides</a>></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-databricks.budget.BudgetAlertConfigurationsPrincipalOverridesList.property.creationStack"></a>
+
+```java
+public java.util.List<java.lang.String> getCreationStack();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-databricks.budget.BudgetAlertConfigurationsPrincipalOverridesList.property.fqn"></a>
+
+```java
+public java.lang.String getFqn();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-databricks.budget.BudgetAlertConfigurationsPrincipalOverridesList.property.internalValue"></a>
+
+```java
+public IResolvable|java.util.List<BudgetAlertConfigurationsPrincipalOverrides> getInternalValue();
+```
+
+- *Type:* io.cdktn.cdktn.IResolvable|java.util.List<<a href="#@cdktn/provider-databricks.budget.BudgetAlertConfigurationsPrincipalOverrides">BudgetAlertConfigurationsPrincipalOverrides</a>>
+
+---
+
+
+### BudgetAlertConfigurationsPrincipalOverridesOutputReference <a name="BudgetAlertConfigurationsPrincipalOverridesOutputReference" id="@cdktn/provider-databricks.budget.BudgetAlertConfigurationsPrincipalOverridesOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-databricks.budget.BudgetAlertConfigurationsPrincipalOverridesOutputReference.Initializer"></a>
+
+```java
+import io.cdktn.providers.databricks.budget.BudgetAlertConfigurationsPrincipalOverridesOutputReference;
+
+new BudgetAlertConfigurationsPrincipalOverridesOutputReference(IInterpolatingParent terraformResource, java.lang.String terraformAttribute, java.lang.Number complexObjectIndex, java.lang.Boolean complexObjectIsFromSet);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-databricks.budget.BudgetAlertConfigurationsPrincipalOverridesOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>io.cdktn.cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-databricks.budget.BudgetAlertConfigurationsPrincipalOverridesOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>java.lang.String</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-databricks.budget.BudgetAlertConfigurationsPrincipalOverridesOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>java.lang.Number</code> | the index of this item in the list. |
+| <code><a href="#@cdktn/provider-databricks.budget.BudgetAlertConfigurationsPrincipalOverridesOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>java.lang.Boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-databricks.budget.BudgetAlertConfigurationsPrincipalOverridesOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* io.cdktn.cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.budget.BudgetAlertConfigurationsPrincipalOverridesOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complexObjectIndex`<sup>Required</sup> <a name="complexObjectIndex" id="@cdktn/provider-databricks.budget.BudgetAlertConfigurationsPrincipalOverridesOutputReference.Initializer.parameter.complexObjectIndex"></a>
+
+- *Type:* java.lang.Number
+
+the index of this item in the list.
+
+---
+
+##### `complexObjectIsFromSet`<sup>Required</sup> <a name="complexObjectIsFromSet" id="@cdktn/provider-databricks.budget.BudgetAlertConfigurationsPrincipalOverridesOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* java.lang.Boolean
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-databricks.budget.BudgetAlertConfigurationsPrincipalOverridesOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.budget.BudgetAlertConfigurationsPrincipalOverridesOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.budget.BudgetAlertConfigurationsPrincipalOverridesOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.budget.BudgetAlertConfigurationsPrincipalOverridesOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.budget.BudgetAlertConfigurationsPrincipalOverridesOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.budget.BudgetAlertConfigurationsPrincipalOverridesOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.budget.BudgetAlertConfigurationsPrincipalOverridesOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.budget.BudgetAlertConfigurationsPrincipalOverridesOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.budget.BudgetAlertConfigurationsPrincipalOverridesOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.budget.BudgetAlertConfigurationsPrincipalOverridesOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.budget.BudgetAlertConfigurationsPrincipalOverridesOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.budget.BudgetAlertConfigurationsPrincipalOverridesOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-databricks.budget.BudgetAlertConfigurationsPrincipalOverridesOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-databricks.budget.BudgetAlertConfigurationsPrincipalOverridesOutputReference.resetOverrideThreshold">resetOverrideThreshold</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.budget.BudgetAlertConfigurationsPrincipalOverridesOutputReference.resetPrincipalId">resetPrincipalId</a></code> | *No description.* |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-databricks.budget.BudgetAlertConfigurationsPrincipalOverridesOutputReference.computeFqn"></a>
+
+```java
+public java.lang.String computeFqn()
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktn/provider-databricks.budget.BudgetAlertConfigurationsPrincipalOverridesOutputReference.getAnyMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Object> getAnyMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.budget.BudgetAlertConfigurationsPrincipalOverridesOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktn/provider-databricks.budget.BudgetAlertConfigurationsPrincipalOverridesOutputReference.getBooleanAttribute"></a>
+
+```java
+public IResolvable getBooleanAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.budget.BudgetAlertConfigurationsPrincipalOverridesOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktn/provider-databricks.budget.BudgetAlertConfigurationsPrincipalOverridesOutputReference.getBooleanMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Boolean> getBooleanMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.budget.BudgetAlertConfigurationsPrincipalOverridesOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktn/provider-databricks.budget.BudgetAlertConfigurationsPrincipalOverridesOutputReference.getListAttribute"></a>
+
+```java
+public java.util.List<java.lang.String> getListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.budget.BudgetAlertConfigurationsPrincipalOverridesOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktn/provider-databricks.budget.BudgetAlertConfigurationsPrincipalOverridesOutputReference.getNumberAttribute"></a>
+
+```java
+public java.lang.Number getNumberAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.budget.BudgetAlertConfigurationsPrincipalOverridesOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktn/provider-databricks.budget.BudgetAlertConfigurationsPrincipalOverridesOutputReference.getNumberListAttribute"></a>
+
+```java
+public java.util.List<java.lang.Number> getNumberListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.budget.BudgetAlertConfigurationsPrincipalOverridesOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktn/provider-databricks.budget.BudgetAlertConfigurationsPrincipalOverridesOutputReference.getNumberMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Number> getNumberMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.budget.BudgetAlertConfigurationsPrincipalOverridesOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktn/provider-databricks.budget.BudgetAlertConfigurationsPrincipalOverridesOutputReference.getStringAttribute"></a>
+
+```java
+public java.lang.String getStringAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.budget.BudgetAlertConfigurationsPrincipalOverridesOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktn/provider-databricks.budget.BudgetAlertConfigurationsPrincipalOverridesOutputReference.getStringMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.String> getStringMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.budget.BudgetAlertConfigurationsPrincipalOverridesOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktn/provider-databricks.budget.BudgetAlertConfigurationsPrincipalOverridesOutputReference.interpolationForAttribute"></a>
+
+```java
+public IResolvable interpolationForAttribute(java.lang.String property)
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-databricks.budget.BudgetAlertConfigurationsPrincipalOverridesOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-databricks.budget.BudgetAlertConfigurationsPrincipalOverridesOutputReference.resolve"></a>
+
+```java
+public java.lang.Object resolve(IResolveContext _context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-databricks.budget.BudgetAlertConfigurationsPrincipalOverridesOutputReference.resolve.parameter._context"></a>
+
+- *Type:* io.cdktn.cdktn.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktn/provider-databricks.budget.BudgetAlertConfigurationsPrincipalOverridesOutputReference.toString"></a>
+
+```java
+public java.lang.String toString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `resetOverrideThreshold` <a name="resetOverrideThreshold" id="@cdktn/provider-databricks.budget.BudgetAlertConfigurationsPrincipalOverridesOutputReference.resetOverrideThreshold"></a>
+
+```java
+public void resetOverrideThreshold()
+```
+
+##### `resetPrincipalId` <a name="resetPrincipalId" id="@cdktn/provider-databricks.budget.BudgetAlertConfigurationsPrincipalOverridesOutputReference.resetPrincipalId"></a>
+
+```java
+public void resetPrincipalId()
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-databricks.budget.BudgetAlertConfigurationsPrincipalOverridesOutputReference.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-databricks.budget.BudgetAlertConfigurationsPrincipalOverridesOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.budget.BudgetAlertConfigurationsPrincipalOverridesOutputReference.property.overrideThresholdInput">overrideThresholdInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.budget.BudgetAlertConfigurationsPrincipalOverridesOutputReference.property.principalIdInput">principalIdInput</a></code> | <code>java.lang.Number</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.budget.BudgetAlertConfigurationsPrincipalOverridesOutputReference.property.overrideThreshold">overrideThreshold</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.budget.BudgetAlertConfigurationsPrincipalOverridesOutputReference.property.principalId">principalId</a></code> | <code>java.lang.Number</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.budget.BudgetAlertConfigurationsPrincipalOverridesOutputReference.property.internalValue">internalValue</a></code> | <code>io.cdktn.cdktn.IResolvable\|<a href="#@cdktn/provider-databricks.budget.BudgetAlertConfigurationsPrincipalOverrides">BudgetAlertConfigurationsPrincipalOverrides</a></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-databricks.budget.BudgetAlertConfigurationsPrincipalOverridesOutputReference.property.creationStack"></a>
+
+```java
+public java.util.List<java.lang.String> getCreationStack();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-databricks.budget.BudgetAlertConfigurationsPrincipalOverridesOutputReference.property.fqn"></a>
+
+```java
+public java.lang.String getFqn();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `overrideThresholdInput`<sup>Optional</sup> <a name="overrideThresholdInput" id="@cdktn/provider-databricks.budget.BudgetAlertConfigurationsPrincipalOverridesOutputReference.property.overrideThresholdInput"></a>
+
+```java
+public java.lang.String getOverrideThresholdInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `principalIdInput`<sup>Optional</sup> <a name="principalIdInput" id="@cdktn/provider-databricks.budget.BudgetAlertConfigurationsPrincipalOverridesOutputReference.property.principalIdInput"></a>
+
+```java
+public java.lang.Number getPrincipalIdInput();
+```
+
+- *Type:* java.lang.Number
+
+---
+
+##### `overrideThreshold`<sup>Required</sup> <a name="overrideThreshold" id="@cdktn/provider-databricks.budget.BudgetAlertConfigurationsPrincipalOverridesOutputReference.property.overrideThreshold"></a>
+
+```java
+public java.lang.String getOverrideThreshold();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `principalId`<sup>Required</sup> <a name="principalId" id="@cdktn/provider-databricks.budget.BudgetAlertConfigurationsPrincipalOverridesOutputReference.property.principalId"></a>
+
+```java
+public java.lang.Number getPrincipalId();
+```
+
+- *Type:* java.lang.Number
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-databricks.budget.BudgetAlertConfigurationsPrincipalOverridesOutputReference.property.internalValue"></a>
+
+```java
+public IResolvable|BudgetAlertConfigurationsPrincipalOverrides getInternalValue();
+```
+
+- *Type:* io.cdktn.cdktn.IResolvable|<a href="#@cdktn/provider-databricks.budget.BudgetAlertConfigurationsPrincipalOverrides">BudgetAlertConfigurationsPrincipalOverrides</a>
 
 ---
 

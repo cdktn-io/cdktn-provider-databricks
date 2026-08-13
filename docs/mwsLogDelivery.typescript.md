@@ -4,7 +4,7 @@
 
 ### MwsLogDelivery <a name="MwsLogDelivery" id="@cdktn/provider-databricks.mwsLogDelivery.MwsLogDelivery"></a>
 
-Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/mws_log_delivery databricks_mws_log_delivery}.
+Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/mws_log_delivery databricks_mws_log_delivery}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.mwsLogDelivery.MwsLogDelivery.Initializer"></a>
 
@@ -538,7 +538,7 @@ The construct id used in the generated config for the MwsLogDelivery to import.
 
 The id of the existing MwsLogDelivery that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/mws_log_delivery#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/mws_log_delivery#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1018,18 +1018,18 @@ const mwsLogDeliveryConfig: mwsLogDelivery.MwsLogDeliveryConfig = { ... }
 | <code><a href="#@cdktn/provider-databricks.mwsLogDelivery.MwsLogDeliveryConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.mwsLogDelivery.MwsLogDeliveryConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.mwsLogDelivery.MwsLogDeliveryConfig.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-databricks.mwsLogDelivery.MwsLogDeliveryConfig.property.accountId">accountId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/mws_log_delivery#account_id MwsLogDelivery#account_id}. |
-| <code><a href="#@cdktn/provider-databricks.mwsLogDelivery.MwsLogDeliveryConfig.property.credentialsId">credentialsId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/mws_log_delivery#credentials_id MwsLogDelivery#credentials_id}. |
-| <code><a href="#@cdktn/provider-databricks.mwsLogDelivery.MwsLogDeliveryConfig.property.logType">logType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/mws_log_delivery#log_type MwsLogDelivery#log_type}. |
-| <code><a href="#@cdktn/provider-databricks.mwsLogDelivery.MwsLogDeliveryConfig.property.outputFormat">outputFormat</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/mws_log_delivery#output_format MwsLogDelivery#output_format}. |
-| <code><a href="#@cdktn/provider-databricks.mwsLogDelivery.MwsLogDeliveryConfig.property.storageConfigurationId">storageConfigurationId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/mws_log_delivery#storage_configuration_id MwsLogDelivery#storage_configuration_id}. |
-| <code><a href="#@cdktn/provider-databricks.mwsLogDelivery.MwsLogDeliveryConfig.property.configId">configId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/mws_log_delivery#config_id MwsLogDelivery#config_id}. |
-| <code><a href="#@cdktn/provider-databricks.mwsLogDelivery.MwsLogDeliveryConfig.property.configName">configName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/mws_log_delivery#config_name MwsLogDelivery#config_name}. |
-| <code><a href="#@cdktn/provider-databricks.mwsLogDelivery.MwsLogDeliveryConfig.property.deliveryPathPrefix">deliveryPathPrefix</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/mws_log_delivery#delivery_path_prefix MwsLogDelivery#delivery_path_prefix}. |
-| <code><a href="#@cdktn/provider-databricks.mwsLogDelivery.MwsLogDeliveryConfig.property.deliveryStartTime">deliveryStartTime</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/mws_log_delivery#delivery_start_time MwsLogDelivery#delivery_start_time}. |
-| <code><a href="#@cdktn/provider-databricks.mwsLogDelivery.MwsLogDeliveryConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/mws_log_delivery#id MwsLogDelivery#id}. |
-| <code><a href="#@cdktn/provider-databricks.mwsLogDelivery.MwsLogDeliveryConfig.property.status">status</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/mws_log_delivery#status MwsLogDelivery#status}. |
-| <code><a href="#@cdktn/provider-databricks.mwsLogDelivery.MwsLogDeliveryConfig.property.workspaceIdsFilter">workspaceIdsFilter</a></code> | <code>number[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/mws_log_delivery#workspace_ids_filter MwsLogDelivery#workspace_ids_filter}. |
+| <code><a href="#@cdktn/provider-databricks.mwsLogDelivery.MwsLogDeliveryConfig.property.accountId">accountId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/mws_log_delivery#account_id MwsLogDelivery#account_id}. |
+| <code><a href="#@cdktn/provider-databricks.mwsLogDelivery.MwsLogDeliveryConfig.property.credentialsId">credentialsId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/mws_log_delivery#credentials_id MwsLogDelivery#credentials_id}. |
+| <code><a href="#@cdktn/provider-databricks.mwsLogDelivery.MwsLogDeliveryConfig.property.logType">logType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/mws_log_delivery#log_type MwsLogDelivery#log_type}. |
+| <code><a href="#@cdktn/provider-databricks.mwsLogDelivery.MwsLogDeliveryConfig.property.outputFormat">outputFormat</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/mws_log_delivery#output_format MwsLogDelivery#output_format}. |
+| <code><a href="#@cdktn/provider-databricks.mwsLogDelivery.MwsLogDeliveryConfig.property.storageConfigurationId">storageConfigurationId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/mws_log_delivery#storage_configuration_id MwsLogDelivery#storage_configuration_id}. |
+| <code><a href="#@cdktn/provider-databricks.mwsLogDelivery.MwsLogDeliveryConfig.property.configId">configId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/mws_log_delivery#config_id MwsLogDelivery#config_id}. |
+| <code><a href="#@cdktn/provider-databricks.mwsLogDelivery.MwsLogDeliveryConfig.property.configName">configName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/mws_log_delivery#config_name MwsLogDelivery#config_name}. |
+| <code><a href="#@cdktn/provider-databricks.mwsLogDelivery.MwsLogDeliveryConfig.property.deliveryPathPrefix">deliveryPathPrefix</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/mws_log_delivery#delivery_path_prefix MwsLogDelivery#delivery_path_prefix}. |
+| <code><a href="#@cdktn/provider-databricks.mwsLogDelivery.MwsLogDeliveryConfig.property.deliveryStartTime">deliveryStartTime</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/mws_log_delivery#delivery_start_time MwsLogDelivery#delivery_start_time}. |
+| <code><a href="#@cdktn/provider-databricks.mwsLogDelivery.MwsLogDeliveryConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/mws_log_delivery#id MwsLogDelivery#id}. |
+| <code><a href="#@cdktn/provider-databricks.mwsLogDelivery.MwsLogDeliveryConfig.property.status">status</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/mws_log_delivery#status MwsLogDelivery#status}. |
+| <code><a href="#@cdktn/provider-databricks.mwsLogDelivery.MwsLogDeliveryConfig.property.workspaceIdsFilter">workspaceIdsFilter</a></code> | <code>number[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/mws_log_delivery#workspace_ids_filter MwsLogDelivery#workspace_ids_filter}. |
 
 ---
 
@@ -1111,7 +1111,7 @@ public readonly accountId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/mws_log_delivery#account_id MwsLogDelivery#account_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/mws_log_delivery#account_id MwsLogDelivery#account_id}.
 
 ---
 
@@ -1123,7 +1123,7 @@ public readonly credentialsId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/mws_log_delivery#credentials_id MwsLogDelivery#credentials_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/mws_log_delivery#credentials_id MwsLogDelivery#credentials_id}.
 
 ---
 
@@ -1135,7 +1135,7 @@ public readonly logType: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/mws_log_delivery#log_type MwsLogDelivery#log_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/mws_log_delivery#log_type MwsLogDelivery#log_type}.
 
 ---
 
@@ -1147,7 +1147,7 @@ public readonly outputFormat: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/mws_log_delivery#output_format MwsLogDelivery#output_format}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/mws_log_delivery#output_format MwsLogDelivery#output_format}.
 
 ---
 
@@ -1159,7 +1159,7 @@ public readonly storageConfigurationId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/mws_log_delivery#storage_configuration_id MwsLogDelivery#storage_configuration_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/mws_log_delivery#storage_configuration_id MwsLogDelivery#storage_configuration_id}.
 
 ---
 
@@ -1171,7 +1171,7 @@ public readonly configId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/mws_log_delivery#config_id MwsLogDelivery#config_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/mws_log_delivery#config_id MwsLogDelivery#config_id}.
 
 ---
 
@@ -1183,7 +1183,7 @@ public readonly configName: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/mws_log_delivery#config_name MwsLogDelivery#config_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/mws_log_delivery#config_name MwsLogDelivery#config_name}.
 
 ---
 
@@ -1195,7 +1195,7 @@ public readonly deliveryPathPrefix: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/mws_log_delivery#delivery_path_prefix MwsLogDelivery#delivery_path_prefix}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/mws_log_delivery#delivery_path_prefix MwsLogDelivery#delivery_path_prefix}.
 
 ---
 
@@ -1207,7 +1207,7 @@ public readonly deliveryStartTime: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/mws_log_delivery#delivery_start_time MwsLogDelivery#delivery_start_time}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/mws_log_delivery#delivery_start_time MwsLogDelivery#delivery_start_time}.
 
 ---
 
@@ -1219,7 +1219,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/mws_log_delivery#id MwsLogDelivery#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/mws_log_delivery#id MwsLogDelivery#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1234,7 +1234,7 @@ public readonly status: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/mws_log_delivery#status MwsLogDelivery#status}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/mws_log_delivery#status MwsLogDelivery#status}.
 
 ---
 
@@ -1246,7 +1246,7 @@ public readonly workspaceIdsFilter: number[];
 
 - *Type:* number[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/mws_log_delivery#workspace_ids_filter MwsLogDelivery#workspace_ids_filter}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/mws_log_delivery#workspace_ids_filter MwsLogDelivery#workspace_ids_filter}.
 
 ---
 

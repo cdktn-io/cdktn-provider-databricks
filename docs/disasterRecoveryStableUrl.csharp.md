@@ -4,7 +4,7 @@
 
 ### DisasterRecoveryStableUrl <a name="DisasterRecoveryStableUrl" id="@cdktn/provider-databricks.disasterRecoveryStableUrl.DisasterRecoveryStableUrl"></a>
 
-Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/disaster_recovery_stable_url databricks_disaster_recovery_stable_url}.
+Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/disaster_recovery_stable_url databricks_disaster_recovery_stable_url}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.disasterRecoveryStableUrl.DisasterRecoveryStableUrl.Initializer"></a>
 
@@ -489,7 +489,7 @@ The construct id used in the generated config for the DisasterRecoveryStableUrl 
 
 The id of the existing DisasterRecoveryStableUrl that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/disaster_recovery_stable_url#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/disaster_recovery_stable_url#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -837,9 +837,9 @@ new DisasterRecoveryStableUrlConfig {
 | <code><a href="#@cdktn/provider-databricks.disasterRecoveryStableUrl.DisasterRecoveryStableUrlConfig.property.lifecycle">Lifecycle</a></code> | <code>Io.Cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.disasterRecoveryStableUrl.DisasterRecoveryStableUrlConfig.property.provider">Provider</a></code> | <code>Io.Cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.disasterRecoveryStableUrl.DisasterRecoveryStableUrlConfig.property.provisioners">Provisioners</a></code> | <code>Io.Cdktn.FileProvisioner\|Io.Cdktn.LocalExecProvisioner\|Io.Cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-databricks.disasterRecoveryStableUrl.DisasterRecoveryStableUrlConfig.property.initialWorkspaceId">InitialWorkspaceId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/disaster_recovery_stable_url#initial_workspace_id DisasterRecoveryStableUrl#initial_workspace_id}. |
-| <code><a href="#@cdktn/provider-databricks.disasterRecoveryStableUrl.DisasterRecoveryStableUrlConfig.property.parent">Parent</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/disaster_recovery_stable_url#parent DisasterRecoveryStableUrl#parent}. |
-| <code><a href="#@cdktn/provider-databricks.disasterRecoveryStableUrl.DisasterRecoveryStableUrlConfig.property.stableUrlId">StableUrlId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/disaster_recovery_stable_url#stable_url_id DisasterRecoveryStableUrl#stable_url_id}. |
+| <code><a href="#@cdktn/provider-databricks.disasterRecoveryStableUrl.DisasterRecoveryStableUrlConfig.property.initialWorkspaceId">InitialWorkspaceId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/disaster_recovery_stable_url#initial_workspace_id DisasterRecoveryStableUrl#initial_workspace_id}. |
+| <code><a href="#@cdktn/provider-databricks.disasterRecoveryStableUrl.DisasterRecoveryStableUrlConfig.property.parent">Parent</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/disaster_recovery_stable_url#parent DisasterRecoveryStableUrl#parent}. |
+| <code><a href="#@cdktn/provider-databricks.disasterRecoveryStableUrl.DisasterRecoveryStableUrlConfig.property.stableUrlId">StableUrlId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/disaster_recovery_stable_url#stable_url_id DisasterRecoveryStableUrl#stable_url_id}. |
 
 ---
 
@@ -921,7 +921,7 @@ public string InitialWorkspaceId { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/disaster_recovery_stable_url#initial_workspace_id DisasterRecoveryStableUrl#initial_workspace_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/disaster_recovery_stable_url#initial_workspace_id DisasterRecoveryStableUrl#initial_workspace_id}.
 
 ---
 
@@ -933,7 +933,7 @@ public string Parent { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/disaster_recovery_stable_url#parent DisasterRecoveryStableUrl#parent}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/disaster_recovery_stable_url#parent DisasterRecoveryStableUrl#parent}.
 
 ---
 
@@ -945,7 +945,7 @@ public string StableUrlId { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/disaster_recovery_stable_url#stable_url_id DisasterRecoveryStableUrl#stable_url_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/disaster_recovery_stable_url#stable_url_id DisasterRecoveryStableUrl#stable_url_id}.
 
 ---
 

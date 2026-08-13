@@ -4,7 +4,7 @@
 
 ### DataDatabricksExternalMetadatas <a name="DataDatabricksExternalMetadatas" id="@cdktn/provider-databricks.dataDatabricksExternalMetadatas.DataDatabricksExternalMetadatas"></a>
 
-Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/data-sources/external_metadatas databricks_external_metadatas}.
+Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/data-sources/external_metadatas databricks_external_metadatas}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksExternalMetadatas.DataDatabricksExternalMetadatas.Initializer"></a>
 
@@ -414,7 +414,7 @@ The construct id used in the generated config for the DataDatabricksExternalMeta
 
 The id of the existing DataDatabricksExternalMetadatas that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/data-sources/external_metadatas#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/data-sources/external_metadatas#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -663,8 +663,8 @@ const dataDatabricksExternalMetadatasConfig: dataDatabricksExternalMetadatas.Dat
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksExternalMetadatas.DataDatabricksExternalMetadatasConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksExternalMetadatas.DataDatabricksExternalMetadatasConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksExternalMetadatas.DataDatabricksExternalMetadatasConfig.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksExternalMetadatas.DataDatabricksExternalMetadatasConfig.property.pageSize">pageSize</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/data-sources/external_metadatas#page_size DataDatabricksExternalMetadatas#page_size}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksExternalMetadatas.DataDatabricksExternalMetadatasConfig.property.providerConfig">providerConfig</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksExternalMetadatas.DataDatabricksExternalMetadatasProviderConfig">DataDatabricksExternalMetadatasProviderConfig</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/data-sources/external_metadatas#provider_config DataDatabricksExternalMetadatas#provider_config}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksExternalMetadatas.DataDatabricksExternalMetadatasConfig.property.pageSize">pageSize</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/data-sources/external_metadatas#page_size DataDatabricksExternalMetadatas#page_size}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksExternalMetadatas.DataDatabricksExternalMetadatasConfig.property.providerConfig">providerConfig</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksExternalMetadatas.DataDatabricksExternalMetadatasProviderConfig">DataDatabricksExternalMetadatasProviderConfig</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/data-sources/external_metadatas#provider_config DataDatabricksExternalMetadatas#provider_config}. |
 
 ---
 
@@ -746,7 +746,7 @@ public readonly pageSize: number;
 
 - *Type:* number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/data-sources/external_metadatas#page_size DataDatabricksExternalMetadatas#page_size}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/data-sources/external_metadatas#page_size DataDatabricksExternalMetadatas#page_size}.
 
 ---
 
@@ -758,7 +758,7 @@ public readonly providerConfig: DataDatabricksExternalMetadatasProviderConfig;
 
 - *Type:* <a href="#@cdktn/provider-databricks.dataDatabricksExternalMetadatas.DataDatabricksExternalMetadatasProviderConfig">DataDatabricksExternalMetadatasProviderConfig</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/data-sources/external_metadatas#provider_config DataDatabricksExternalMetadatas#provider_config}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/data-sources/external_metadatas#provider_config DataDatabricksExternalMetadatas#provider_config}.
 
 ---
 
@@ -776,8 +776,8 @@ const dataDatabricksExternalMetadatasExternalMetadata: dataDatabricksExternalMet
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksExternalMetadatas.DataDatabricksExternalMetadatasExternalMetadata.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/data-sources/external_metadatas#name DataDatabricksExternalMetadatas#name}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksExternalMetadatas.DataDatabricksExternalMetadatasExternalMetadata.property.providerConfig">providerConfig</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksExternalMetadatas.DataDatabricksExternalMetadatasExternalMetadataProviderConfig">DataDatabricksExternalMetadatasExternalMetadataProviderConfig</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/data-sources/external_metadatas#provider_config DataDatabricksExternalMetadatas#provider_config}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksExternalMetadatas.DataDatabricksExternalMetadatasExternalMetadata.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/data-sources/external_metadatas#name DataDatabricksExternalMetadatas#name}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksExternalMetadatas.DataDatabricksExternalMetadatasExternalMetadata.property.providerConfig">providerConfig</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksExternalMetadatas.DataDatabricksExternalMetadatasExternalMetadataProviderConfig">DataDatabricksExternalMetadatasExternalMetadataProviderConfig</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/data-sources/external_metadatas#provider_config DataDatabricksExternalMetadatas#provider_config}. |
 
 ---
 
@@ -789,7 +789,7 @@ public readonly name: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/data-sources/external_metadatas#name DataDatabricksExternalMetadatas#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/data-sources/external_metadatas#name DataDatabricksExternalMetadatas#name}.
 
 ---
 
@@ -801,7 +801,7 @@ public readonly providerConfig: DataDatabricksExternalMetadatasExternalMetadataP
 
 - *Type:* <a href="#@cdktn/provider-databricks.dataDatabricksExternalMetadatas.DataDatabricksExternalMetadatasExternalMetadataProviderConfig">DataDatabricksExternalMetadatasExternalMetadataProviderConfig</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/data-sources/external_metadatas#provider_config DataDatabricksExternalMetadatas#provider_config}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/data-sources/external_metadatas#provider_config DataDatabricksExternalMetadatas#provider_config}.
 
 ---
 
@@ -819,7 +819,7 @@ const dataDatabricksExternalMetadatasExternalMetadataProviderConfig: dataDatabri
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksExternalMetadatas.DataDatabricksExternalMetadatasExternalMetadataProviderConfig.property.workspaceId">workspaceId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/data-sources/external_metadatas#workspace_id DataDatabricksExternalMetadatas#workspace_id}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksExternalMetadatas.DataDatabricksExternalMetadatasExternalMetadataProviderConfig.property.workspaceId">workspaceId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/data-sources/external_metadatas#workspace_id DataDatabricksExternalMetadatas#workspace_id}. |
 
 ---
 
@@ -831,7 +831,7 @@ public readonly workspaceId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/data-sources/external_metadatas#workspace_id DataDatabricksExternalMetadatas#workspace_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/data-sources/external_metadatas#workspace_id DataDatabricksExternalMetadatas#workspace_id}.
 
 ---
 
@@ -849,7 +849,7 @@ const dataDatabricksExternalMetadatasProviderConfig: dataDatabricksExternalMetad
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksExternalMetadatas.DataDatabricksExternalMetadatasProviderConfig.property.workspaceId">workspaceId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/data-sources/external_metadatas#workspace_id DataDatabricksExternalMetadatas#workspace_id}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksExternalMetadatas.DataDatabricksExternalMetadatasProviderConfig.property.workspaceId">workspaceId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/data-sources/external_metadatas#workspace_id DataDatabricksExternalMetadatas#workspace_id}. |
 
 ---
 
@@ -861,7 +861,7 @@ public readonly workspaceId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/data-sources/external_metadatas#workspace_id DataDatabricksExternalMetadatas#workspace_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/data-sources/external_metadatas#workspace_id DataDatabricksExternalMetadatas#workspace_id}.
 
 ---
 

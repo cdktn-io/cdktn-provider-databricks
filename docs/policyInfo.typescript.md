@@ -4,7 +4,7 @@
 
 ### PolicyInfo <a name="PolicyInfo" id="@cdktn/provider-databricks.policyInfo.PolicyInfo"></a>
 
-Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/policy_info databricks_policy_info}.
+Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/policy_info databricks_policy_info}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.policyInfo.PolicyInfo.Initializer"></a>
 
@@ -75,12 +75,14 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktn/provider-databricks.policyInfo.PolicyInfo.moveTo">moveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktn/provider-databricks.policyInfo.PolicyInfo.moveToId">moveToId</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktn/provider-databricks.policyInfo.PolicyInfo.putColumnMask">putColumnMask</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.policyInfo.PolicyInfo.putGrant">putGrant</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.policyInfo.PolicyInfo.putMatchColumns">putMatchColumns</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.policyInfo.PolicyInfo.putProviderConfig">putProviderConfig</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.policyInfo.PolicyInfo.putRowFilter">putRowFilter</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.policyInfo.PolicyInfo.resetColumnMask">resetColumnMask</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.policyInfo.PolicyInfo.resetComment">resetComment</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.policyInfo.PolicyInfo.resetExceptPrincipals">resetExceptPrincipals</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.policyInfo.PolicyInfo.resetGrant">resetGrant</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.policyInfo.PolicyInfo.resetMatchColumns">resetMatchColumns</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.policyInfo.PolicyInfo.resetName">resetName</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.policyInfo.PolicyInfo.resetOnSecurableFullname">resetOnSecurableFullname</a></code> | *No description.* |
@@ -412,6 +414,18 @@ public putColumnMask(value: PolicyInfoColumnMask): void
 
 ---
 
+##### `putGrant` <a name="putGrant" id="@cdktn/provider-databricks.policyInfo.PolicyInfo.putGrant"></a>
+
+```typescript
+public putGrant(value: PolicyInfoGrant): void
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-databricks.policyInfo.PolicyInfo.putGrant.parameter.value"></a>
+
+- *Type:* <a href="#@cdktn/provider-databricks.policyInfo.PolicyInfoGrant">PolicyInfoGrant</a>
+
+---
+
 ##### `putMatchColumns` <a name="putMatchColumns" id="@cdktn/provider-databricks.policyInfo.PolicyInfo.putMatchColumns"></a>
 
 ```typescript
@@ -464,6 +478,12 @@ public resetComment(): void
 
 ```typescript
 public resetExceptPrincipals(): void
+```
+
+##### `resetGrant` <a name="resetGrant" id="@cdktn/provider-databricks.policyInfo.PolicyInfo.resetGrant"></a>
+
+```typescript
+public resetGrant(): void
 ```
 
 ##### `resetMatchColumns` <a name="resetMatchColumns" id="@cdktn/provider-databricks.policyInfo.PolicyInfo.resetMatchColumns"></a>
@@ -611,7 +631,7 @@ The construct id used in the generated config for the PolicyInfo to import.
 
 The id of the existing PolicyInfo that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/policy_info#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/policy_info#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -644,6 +664,7 @@ Refer to the {@link https://registry.terraform.io/providers/databricks/databrick
 | <code><a href="#@cdktn/provider-databricks.policyInfo.PolicyInfo.property.columnMask">columnMask</a></code> | <code><a href="#@cdktn/provider-databricks.policyInfo.PolicyInfoColumnMaskOutputReference">PolicyInfoColumnMaskOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.policyInfo.PolicyInfo.property.createdAt">createdAt</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.policyInfo.PolicyInfo.property.createdBy">createdBy</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.policyInfo.PolicyInfo.property.grant">grant</a></code> | <code><a href="#@cdktn/provider-databricks.policyInfo.PolicyInfoGrantOutputReference">PolicyInfoGrantOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.policyInfo.PolicyInfo.property.id">id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.policyInfo.PolicyInfo.property.matchColumns">matchColumns</a></code> | <code><a href="#@cdktn/provider-databricks.policyInfo.PolicyInfoMatchColumnsList">PolicyInfoMatchColumnsList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.policyInfo.PolicyInfo.property.providerConfig">providerConfig</a></code> | <code><a href="#@cdktn/provider-databricks.policyInfo.PolicyInfoProviderConfigOutputReference">PolicyInfoProviderConfigOutputReference</a></code> | *No description.* |
@@ -654,6 +675,7 @@ Refer to the {@link https://registry.terraform.io/providers/databricks/databrick
 | <code><a href="#@cdktn/provider-databricks.policyInfo.PolicyInfo.property.commentInput">commentInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.policyInfo.PolicyInfo.property.exceptPrincipalsInput">exceptPrincipalsInput</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.policyInfo.PolicyInfo.property.forSecurableTypeInput">forSecurableTypeInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.policyInfo.PolicyInfo.property.grantInput">grantInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-databricks.policyInfo.PolicyInfoGrant">PolicyInfoGrant</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.policyInfo.PolicyInfo.property.matchColumnsInput">matchColumnsInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-databricks.policyInfo.PolicyInfoMatchColumns">PolicyInfoMatchColumns</a>[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.policyInfo.PolicyInfo.property.nameInput">nameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.policyInfo.PolicyInfo.property.onSecurableFullnameInput">onSecurableFullnameInput</a></code> | <code>string</code> | *No description.* |
@@ -847,6 +869,16 @@ public readonly createdBy: string;
 
 ---
 
+##### `grant`<sup>Required</sup> <a name="grant" id="@cdktn/provider-databricks.policyInfo.PolicyInfo.property.grant"></a>
+
+```typescript
+public readonly grant: PolicyInfoGrantOutputReference;
+```
+
+- *Type:* <a href="#@cdktn/provider-databricks.policyInfo.PolicyInfoGrantOutputReference">PolicyInfoGrantOutputReference</a>
+
+---
+
 ##### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-databricks.policyInfo.PolicyInfo.property.id"></a>
 
 ```typescript
@@ -944,6 +976,16 @@ public readonly forSecurableTypeInput: string;
 ```
 
 - *Type:* string
+
+---
+
+##### `grantInput`<sup>Optional</sup> <a name="grantInput" id="@cdktn/provider-databricks.policyInfo.PolicyInfo.property.grantInput"></a>
+
+```typescript
+public readonly grantInput: IResolvable | PolicyInfoGrant;
+```
+
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-databricks.policyInfo.PolicyInfoGrant">PolicyInfoGrant</a>
 
 ---
 
@@ -1161,9 +1203,9 @@ const policyInfoColumnMask: policyInfo.PolicyInfoColumnMask = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.policyInfo.PolicyInfoColumnMask.property.functionName">functionName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/policy_info#function_name PolicyInfo#function_name}. |
-| <code><a href="#@cdktn/provider-databricks.policyInfo.PolicyInfoColumnMask.property.onColumn">onColumn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/policy_info#on_column PolicyInfo#on_column}. |
-| <code><a href="#@cdktn/provider-databricks.policyInfo.PolicyInfoColumnMask.property.using">using</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-databricks.policyInfo.PolicyInfoColumnMaskUsing">PolicyInfoColumnMaskUsing</a>[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/policy_info#using PolicyInfo#using}. |
+| <code><a href="#@cdktn/provider-databricks.policyInfo.PolicyInfoColumnMask.property.functionName">functionName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/policy_info#function_name PolicyInfo#function_name}. |
+| <code><a href="#@cdktn/provider-databricks.policyInfo.PolicyInfoColumnMask.property.onColumn">onColumn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/policy_info#on_column PolicyInfo#on_column}. |
+| <code><a href="#@cdktn/provider-databricks.policyInfo.PolicyInfoColumnMask.property.using">using</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-databricks.policyInfo.PolicyInfoColumnMaskUsing">PolicyInfoColumnMaskUsing</a>[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/policy_info#using PolicyInfo#using}. |
 
 ---
 
@@ -1175,7 +1217,7 @@ public readonly functionName: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/policy_info#function_name PolicyInfo#function_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/policy_info#function_name PolicyInfo#function_name}.
 
 ---
 
@@ -1187,7 +1229,7 @@ public readonly onColumn: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/policy_info#on_column PolicyInfo#on_column}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/policy_info#on_column PolicyInfo#on_column}.
 
 ---
 
@@ -1199,7 +1241,7 @@ public readonly using: IResolvable | PolicyInfoColumnMaskUsing[];
 
 - *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-databricks.policyInfo.PolicyInfoColumnMaskUsing">PolicyInfoColumnMaskUsing</a>[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/policy_info#using PolicyInfo#using}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/policy_info#using PolicyInfo#using}.
 
 ---
 
@@ -1217,8 +1259,8 @@ const policyInfoColumnMaskUsing: policyInfo.PolicyInfoColumnMaskUsing = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.policyInfo.PolicyInfoColumnMaskUsing.property.alias">alias</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/policy_info#alias PolicyInfo#alias}. |
-| <code><a href="#@cdktn/provider-databricks.policyInfo.PolicyInfoColumnMaskUsing.property.constant">constant</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/policy_info#constant PolicyInfo#constant}. |
+| <code><a href="#@cdktn/provider-databricks.policyInfo.PolicyInfoColumnMaskUsing.property.alias">alias</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/policy_info#alias PolicyInfo#alias}. |
+| <code><a href="#@cdktn/provider-databricks.policyInfo.PolicyInfoColumnMaskUsing.property.constant">constant</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/policy_info#constant PolicyInfo#constant}. |
 
 ---
 
@@ -1230,7 +1272,7 @@ public readonly alias: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/policy_info#alias PolicyInfo#alias}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/policy_info#alias PolicyInfo#alias}.
 
 ---
 
@@ -1242,7 +1284,7 @@ public readonly constant: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/policy_info#constant PolicyInfo#constant}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/policy_info#constant PolicyInfo#constant}.
 
 ---
 
@@ -1267,19 +1309,20 @@ const policyInfoConfig: policyInfo.PolicyInfoConfig = { ... }
 | <code><a href="#@cdktn/provider-databricks.policyInfo.PolicyInfoConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.policyInfo.PolicyInfoConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.policyInfo.PolicyInfoConfig.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-databricks.policyInfo.PolicyInfoConfig.property.forSecurableType">forSecurableType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/policy_info#for_securable_type PolicyInfo#for_securable_type}. |
-| <code><a href="#@cdktn/provider-databricks.policyInfo.PolicyInfoConfig.property.policyType">policyType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/policy_info#policy_type PolicyInfo#policy_type}. |
-| <code><a href="#@cdktn/provider-databricks.policyInfo.PolicyInfoConfig.property.toPrincipals">toPrincipals</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/policy_info#to_principals PolicyInfo#to_principals}. |
-| <code><a href="#@cdktn/provider-databricks.policyInfo.PolicyInfoConfig.property.columnMask">columnMask</a></code> | <code><a href="#@cdktn/provider-databricks.policyInfo.PolicyInfoColumnMask">PolicyInfoColumnMask</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/policy_info#column_mask PolicyInfo#column_mask}. |
-| <code><a href="#@cdktn/provider-databricks.policyInfo.PolicyInfoConfig.property.comment">comment</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/policy_info#comment PolicyInfo#comment}. |
-| <code><a href="#@cdktn/provider-databricks.policyInfo.PolicyInfoConfig.property.exceptPrincipals">exceptPrincipals</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/policy_info#except_principals PolicyInfo#except_principals}. |
-| <code><a href="#@cdktn/provider-databricks.policyInfo.PolicyInfoConfig.property.matchColumns">matchColumns</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-databricks.policyInfo.PolicyInfoMatchColumns">PolicyInfoMatchColumns</a>[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/policy_info#match_columns PolicyInfo#match_columns}. |
-| <code><a href="#@cdktn/provider-databricks.policyInfo.PolicyInfoConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/policy_info#name PolicyInfo#name}. |
-| <code><a href="#@cdktn/provider-databricks.policyInfo.PolicyInfoConfig.property.onSecurableFullname">onSecurableFullname</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/policy_info#on_securable_fullname PolicyInfo#on_securable_fullname}. |
-| <code><a href="#@cdktn/provider-databricks.policyInfo.PolicyInfoConfig.property.onSecurableType">onSecurableType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/policy_info#on_securable_type PolicyInfo#on_securable_type}. |
-| <code><a href="#@cdktn/provider-databricks.policyInfo.PolicyInfoConfig.property.providerConfig">providerConfig</a></code> | <code><a href="#@cdktn/provider-databricks.policyInfo.PolicyInfoProviderConfig">PolicyInfoProviderConfig</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/policy_info#provider_config PolicyInfo#provider_config}. |
-| <code><a href="#@cdktn/provider-databricks.policyInfo.PolicyInfoConfig.property.rowFilter">rowFilter</a></code> | <code><a href="#@cdktn/provider-databricks.policyInfo.PolicyInfoRowFilter">PolicyInfoRowFilter</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/policy_info#row_filter PolicyInfo#row_filter}. |
-| <code><a href="#@cdktn/provider-databricks.policyInfo.PolicyInfoConfig.property.whenCondition">whenCondition</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/policy_info#when_condition PolicyInfo#when_condition}. |
+| <code><a href="#@cdktn/provider-databricks.policyInfo.PolicyInfoConfig.property.forSecurableType">forSecurableType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/policy_info#for_securable_type PolicyInfo#for_securable_type}. |
+| <code><a href="#@cdktn/provider-databricks.policyInfo.PolicyInfoConfig.property.policyType">policyType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/policy_info#policy_type PolicyInfo#policy_type}. |
+| <code><a href="#@cdktn/provider-databricks.policyInfo.PolicyInfoConfig.property.toPrincipals">toPrincipals</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/policy_info#to_principals PolicyInfo#to_principals}. |
+| <code><a href="#@cdktn/provider-databricks.policyInfo.PolicyInfoConfig.property.columnMask">columnMask</a></code> | <code><a href="#@cdktn/provider-databricks.policyInfo.PolicyInfoColumnMask">PolicyInfoColumnMask</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/policy_info#column_mask PolicyInfo#column_mask}. |
+| <code><a href="#@cdktn/provider-databricks.policyInfo.PolicyInfoConfig.property.comment">comment</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/policy_info#comment PolicyInfo#comment}. |
+| <code><a href="#@cdktn/provider-databricks.policyInfo.PolicyInfoConfig.property.exceptPrincipals">exceptPrincipals</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/policy_info#except_principals PolicyInfo#except_principals}. |
+| <code><a href="#@cdktn/provider-databricks.policyInfo.PolicyInfoConfig.property.grant">grant</a></code> | <code><a href="#@cdktn/provider-databricks.policyInfo.PolicyInfoGrant">PolicyInfoGrant</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/policy_info#grant PolicyInfo#grant}. |
+| <code><a href="#@cdktn/provider-databricks.policyInfo.PolicyInfoConfig.property.matchColumns">matchColumns</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-databricks.policyInfo.PolicyInfoMatchColumns">PolicyInfoMatchColumns</a>[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/policy_info#match_columns PolicyInfo#match_columns}. |
+| <code><a href="#@cdktn/provider-databricks.policyInfo.PolicyInfoConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/policy_info#name PolicyInfo#name}. |
+| <code><a href="#@cdktn/provider-databricks.policyInfo.PolicyInfoConfig.property.onSecurableFullname">onSecurableFullname</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/policy_info#on_securable_fullname PolicyInfo#on_securable_fullname}. |
+| <code><a href="#@cdktn/provider-databricks.policyInfo.PolicyInfoConfig.property.onSecurableType">onSecurableType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/policy_info#on_securable_type PolicyInfo#on_securable_type}. |
+| <code><a href="#@cdktn/provider-databricks.policyInfo.PolicyInfoConfig.property.providerConfig">providerConfig</a></code> | <code><a href="#@cdktn/provider-databricks.policyInfo.PolicyInfoProviderConfig">PolicyInfoProviderConfig</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/policy_info#provider_config PolicyInfo#provider_config}. |
+| <code><a href="#@cdktn/provider-databricks.policyInfo.PolicyInfoConfig.property.rowFilter">rowFilter</a></code> | <code><a href="#@cdktn/provider-databricks.policyInfo.PolicyInfoRowFilter">PolicyInfoRowFilter</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/policy_info#row_filter PolicyInfo#row_filter}. |
+| <code><a href="#@cdktn/provider-databricks.policyInfo.PolicyInfoConfig.property.whenCondition">whenCondition</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/policy_info#when_condition PolicyInfo#when_condition}. |
 
 ---
 
@@ -1361,7 +1404,7 @@ public readonly forSecurableType: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/policy_info#for_securable_type PolicyInfo#for_securable_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/policy_info#for_securable_type PolicyInfo#for_securable_type}.
 
 ---
 
@@ -1373,7 +1416,7 @@ public readonly policyType: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/policy_info#policy_type PolicyInfo#policy_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/policy_info#policy_type PolicyInfo#policy_type}.
 
 ---
 
@@ -1385,7 +1428,7 @@ public readonly toPrincipals: string[];
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/policy_info#to_principals PolicyInfo#to_principals}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/policy_info#to_principals PolicyInfo#to_principals}.
 
 ---
 
@@ -1397,7 +1440,7 @@ public readonly columnMask: PolicyInfoColumnMask;
 
 - *Type:* <a href="#@cdktn/provider-databricks.policyInfo.PolicyInfoColumnMask">PolicyInfoColumnMask</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/policy_info#column_mask PolicyInfo#column_mask}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/policy_info#column_mask PolicyInfo#column_mask}.
 
 ---
 
@@ -1409,7 +1452,7 @@ public readonly comment: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/policy_info#comment PolicyInfo#comment}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/policy_info#comment PolicyInfo#comment}.
 
 ---
 
@@ -1421,7 +1464,19 @@ public readonly exceptPrincipals: string[];
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/policy_info#except_principals PolicyInfo#except_principals}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/policy_info#except_principals PolicyInfo#except_principals}.
+
+---
+
+##### `grant`<sup>Optional</sup> <a name="grant" id="@cdktn/provider-databricks.policyInfo.PolicyInfoConfig.property.grant"></a>
+
+```typescript
+public readonly grant: PolicyInfoGrant;
+```
+
+- *Type:* <a href="#@cdktn/provider-databricks.policyInfo.PolicyInfoGrant">PolicyInfoGrant</a>
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/policy_info#grant PolicyInfo#grant}.
 
 ---
 
@@ -1433,7 +1488,7 @@ public readonly matchColumns: IResolvable | PolicyInfoMatchColumns[];
 
 - *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-databricks.policyInfo.PolicyInfoMatchColumns">PolicyInfoMatchColumns</a>[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/policy_info#match_columns PolicyInfo#match_columns}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/policy_info#match_columns PolicyInfo#match_columns}.
 
 ---
 
@@ -1445,7 +1500,7 @@ public readonly name: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/policy_info#name PolicyInfo#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/policy_info#name PolicyInfo#name}.
 
 ---
 
@@ -1457,7 +1512,7 @@ public readonly onSecurableFullname: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/policy_info#on_securable_fullname PolicyInfo#on_securable_fullname}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/policy_info#on_securable_fullname PolicyInfo#on_securable_fullname}.
 
 ---
 
@@ -1469,7 +1524,7 @@ public readonly onSecurableType: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/policy_info#on_securable_type PolicyInfo#on_securable_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/policy_info#on_securable_type PolicyInfo#on_securable_type}.
 
 ---
 
@@ -1481,7 +1536,7 @@ public readonly providerConfig: PolicyInfoProviderConfig;
 
 - *Type:* <a href="#@cdktn/provider-databricks.policyInfo.PolicyInfoProviderConfig">PolicyInfoProviderConfig</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/policy_info#provider_config PolicyInfo#provider_config}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/policy_info#provider_config PolicyInfo#provider_config}.
 
 ---
 
@@ -1493,7 +1548,7 @@ public readonly rowFilter: PolicyInfoRowFilter;
 
 - *Type:* <a href="#@cdktn/provider-databricks.policyInfo.PolicyInfoRowFilter">PolicyInfoRowFilter</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/policy_info#row_filter PolicyInfo#row_filter}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/policy_info#row_filter PolicyInfo#row_filter}.
 
 ---
 
@@ -1505,7 +1560,37 @@ public readonly whenCondition: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/policy_info#when_condition PolicyInfo#when_condition}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/policy_info#when_condition PolicyInfo#when_condition}.
+
+---
+
+### PolicyInfoGrant <a name="PolicyInfoGrant" id="@cdktn/provider-databricks.policyInfo.PolicyInfoGrant"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-databricks.policyInfo.PolicyInfoGrant.Initializer"></a>
+
+```typescript
+import { policyInfo } from '@cdktn/provider-databricks'
+
+const policyInfoGrant: policyInfo.PolicyInfoGrant = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-databricks.policyInfo.PolicyInfoGrant.property.privileges">privileges</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/policy_info#privileges PolicyInfo#privileges}. |
+
+---
+
+##### `privileges`<sup>Required</sup> <a name="privileges" id="@cdktn/provider-databricks.policyInfo.PolicyInfoGrant.property.privileges"></a>
+
+```typescript
+public readonly privileges: string[];
+```
+
+- *Type:* string[]
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/policy_info#privileges PolicyInfo#privileges}.
 
 ---
 
@@ -1523,8 +1608,8 @@ const policyInfoMatchColumns: policyInfo.PolicyInfoMatchColumns = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.policyInfo.PolicyInfoMatchColumns.property.alias">alias</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/policy_info#alias PolicyInfo#alias}. |
-| <code><a href="#@cdktn/provider-databricks.policyInfo.PolicyInfoMatchColumns.property.condition">condition</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/policy_info#condition PolicyInfo#condition}. |
+| <code><a href="#@cdktn/provider-databricks.policyInfo.PolicyInfoMatchColumns.property.alias">alias</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/policy_info#alias PolicyInfo#alias}. |
+| <code><a href="#@cdktn/provider-databricks.policyInfo.PolicyInfoMatchColumns.property.condition">condition</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/policy_info#condition PolicyInfo#condition}. |
 
 ---
 
@@ -1536,7 +1621,7 @@ public readonly alias: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/policy_info#alias PolicyInfo#alias}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/policy_info#alias PolicyInfo#alias}.
 
 ---
 
@@ -1548,7 +1633,7 @@ public readonly condition: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/policy_info#condition PolicyInfo#condition}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/policy_info#condition PolicyInfo#condition}.
 
 ---
 
@@ -1566,7 +1651,7 @@ const policyInfoProviderConfig: policyInfo.PolicyInfoProviderConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.policyInfo.PolicyInfoProviderConfig.property.workspaceId">workspaceId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/policy_info#workspace_id PolicyInfo#workspace_id}. |
+| <code><a href="#@cdktn/provider-databricks.policyInfo.PolicyInfoProviderConfig.property.workspaceId">workspaceId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/policy_info#workspace_id PolicyInfo#workspace_id}. |
 
 ---
 
@@ -1578,7 +1663,7 @@ public readonly workspaceId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/policy_info#workspace_id PolicyInfo#workspace_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/policy_info#workspace_id PolicyInfo#workspace_id}.
 
 ---
 
@@ -1596,8 +1681,8 @@ const policyInfoRowFilter: policyInfo.PolicyInfoRowFilter = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.policyInfo.PolicyInfoRowFilter.property.functionName">functionName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/policy_info#function_name PolicyInfo#function_name}. |
-| <code><a href="#@cdktn/provider-databricks.policyInfo.PolicyInfoRowFilter.property.using">using</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-databricks.policyInfo.PolicyInfoRowFilterUsing">PolicyInfoRowFilterUsing</a>[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/policy_info#using PolicyInfo#using}. |
+| <code><a href="#@cdktn/provider-databricks.policyInfo.PolicyInfoRowFilter.property.functionName">functionName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/policy_info#function_name PolicyInfo#function_name}. |
+| <code><a href="#@cdktn/provider-databricks.policyInfo.PolicyInfoRowFilter.property.using">using</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-databricks.policyInfo.PolicyInfoRowFilterUsing">PolicyInfoRowFilterUsing</a>[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/policy_info#using PolicyInfo#using}. |
 
 ---
 
@@ -1609,7 +1694,7 @@ public readonly functionName: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/policy_info#function_name PolicyInfo#function_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/policy_info#function_name PolicyInfo#function_name}.
 
 ---
 
@@ -1621,7 +1706,7 @@ public readonly using: IResolvable | PolicyInfoRowFilterUsing[];
 
 - *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-databricks.policyInfo.PolicyInfoRowFilterUsing">PolicyInfoRowFilterUsing</a>[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/policy_info#using PolicyInfo#using}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/policy_info#using PolicyInfo#using}.
 
 ---
 
@@ -1639,8 +1724,8 @@ const policyInfoRowFilterUsing: policyInfo.PolicyInfoRowFilterUsing = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.policyInfo.PolicyInfoRowFilterUsing.property.alias">alias</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/policy_info#alias PolicyInfo#alias}. |
-| <code><a href="#@cdktn/provider-databricks.policyInfo.PolicyInfoRowFilterUsing.property.constant">constant</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/policy_info#constant PolicyInfo#constant}. |
+| <code><a href="#@cdktn/provider-databricks.policyInfo.PolicyInfoRowFilterUsing.property.alias">alias</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/policy_info#alias PolicyInfo#alias}. |
+| <code><a href="#@cdktn/provider-databricks.policyInfo.PolicyInfoRowFilterUsing.property.constant">constant</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/policy_info#constant PolicyInfo#constant}. |
 
 ---
 
@@ -1652,7 +1737,7 @@ public readonly alias: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/policy_info#alias PolicyInfo#alias}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/policy_info#alias PolicyInfo#alias}.
 
 ---
 
@@ -1664,7 +1749,7 @@ public readonly constant: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/policy_info#constant PolicyInfo#constant}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/policy_info#constant PolicyInfo#constant}.
 
 ---
 
@@ -2486,6 +2571,277 @@ public readonly internalValue: IResolvable | PolicyInfoColumnMaskUsing;
 ```
 
 - *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-databricks.policyInfo.PolicyInfoColumnMaskUsing">PolicyInfoColumnMaskUsing</a>
+
+---
+
+
+### PolicyInfoGrantOutputReference <a name="PolicyInfoGrantOutputReference" id="@cdktn/provider-databricks.policyInfo.PolicyInfoGrantOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-databricks.policyInfo.PolicyInfoGrantOutputReference.Initializer"></a>
+
+```typescript
+import { policyInfo } from '@cdktn/provider-databricks'
+
+new policyInfo.PolicyInfoGrantOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-databricks.policyInfo.PolicyInfoGrantOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-databricks.policyInfo.PolicyInfoGrantOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-databricks.policyInfo.PolicyInfoGrantOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.policyInfo.PolicyInfoGrantOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-databricks.policyInfo.PolicyInfoGrantOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.policyInfo.PolicyInfoGrantOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.policyInfo.PolicyInfoGrantOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.policyInfo.PolicyInfoGrantOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.policyInfo.PolicyInfoGrantOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.policyInfo.PolicyInfoGrantOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.policyInfo.PolicyInfoGrantOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.policyInfo.PolicyInfoGrantOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.policyInfo.PolicyInfoGrantOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.policyInfo.PolicyInfoGrantOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.policyInfo.PolicyInfoGrantOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.policyInfo.PolicyInfoGrantOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-databricks.policyInfo.PolicyInfoGrantOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-databricks.policyInfo.PolicyInfoGrantOutputReference.computeFqn"></a>
+
+```typescript
+public computeFqn(): string
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktn/provider-databricks.policyInfo.PolicyInfoGrantOutputReference.getAnyMapAttribute"></a>
+
+```typescript
+public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.policyInfo.PolicyInfoGrantOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktn/provider-databricks.policyInfo.PolicyInfoGrantOutputReference.getBooleanAttribute"></a>
+
+```typescript
+public getBooleanAttribute(terraformAttribute: string): IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.policyInfo.PolicyInfoGrantOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktn/provider-databricks.policyInfo.PolicyInfoGrantOutputReference.getBooleanMapAttribute"></a>
+
+```typescript
+public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.policyInfo.PolicyInfoGrantOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktn/provider-databricks.policyInfo.PolicyInfoGrantOutputReference.getListAttribute"></a>
+
+```typescript
+public getListAttribute(terraformAttribute: string): string[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.policyInfo.PolicyInfoGrantOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktn/provider-databricks.policyInfo.PolicyInfoGrantOutputReference.getNumberAttribute"></a>
+
+```typescript
+public getNumberAttribute(terraformAttribute: string): number
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.policyInfo.PolicyInfoGrantOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktn/provider-databricks.policyInfo.PolicyInfoGrantOutputReference.getNumberListAttribute"></a>
+
+```typescript
+public getNumberListAttribute(terraformAttribute: string): number[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.policyInfo.PolicyInfoGrantOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktn/provider-databricks.policyInfo.PolicyInfoGrantOutputReference.getNumberMapAttribute"></a>
+
+```typescript
+public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.policyInfo.PolicyInfoGrantOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktn/provider-databricks.policyInfo.PolicyInfoGrantOutputReference.getStringAttribute"></a>
+
+```typescript
+public getStringAttribute(terraformAttribute: string): string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.policyInfo.PolicyInfoGrantOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktn/provider-databricks.policyInfo.PolicyInfoGrantOutputReference.getStringMapAttribute"></a>
+
+```typescript
+public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.policyInfo.PolicyInfoGrantOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktn/provider-databricks.policyInfo.PolicyInfoGrantOutputReference.interpolationForAttribute"></a>
+
+```typescript
+public interpolationForAttribute(property: string): IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-databricks.policyInfo.PolicyInfoGrantOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* string
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-databricks.policyInfo.PolicyInfoGrantOutputReference.resolve"></a>
+
+```typescript
+public resolve(_context: IResolveContext): any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-databricks.policyInfo.PolicyInfoGrantOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktn/provider-databricks.policyInfo.PolicyInfoGrantOutputReference.toString"></a>
+
+```typescript
+public toString(): string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-databricks.policyInfo.PolicyInfoGrantOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-databricks.policyInfo.PolicyInfoGrantOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.policyInfo.PolicyInfoGrantOutputReference.property.privilegesInput">privilegesInput</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.policyInfo.PolicyInfoGrantOutputReference.property.privileges">privileges</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.policyInfo.PolicyInfoGrantOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-databricks.policyInfo.PolicyInfoGrant">PolicyInfoGrant</a></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-databricks.policyInfo.PolicyInfoGrantOutputReference.property.creationStack"></a>
+
+```typescript
+public readonly creationStack: string[];
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-databricks.policyInfo.PolicyInfoGrantOutputReference.property.fqn"></a>
+
+```typescript
+public readonly fqn: string;
+```
+
+- *Type:* string
+
+---
+
+##### `privilegesInput`<sup>Optional</sup> <a name="privilegesInput" id="@cdktn/provider-databricks.policyInfo.PolicyInfoGrantOutputReference.property.privilegesInput"></a>
+
+```typescript
+public readonly privilegesInput: string[];
+```
+
+- *Type:* string[]
+
+---
+
+##### `privileges`<sup>Required</sup> <a name="privileges" id="@cdktn/provider-databricks.policyInfo.PolicyInfoGrantOutputReference.property.privileges"></a>
+
+```typescript
+public readonly privileges: string[];
+```
+
+- *Type:* string[]
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-databricks.policyInfo.PolicyInfoGrantOutputReference.property.internalValue"></a>
+
+```typescript
+public readonly internalValue: IResolvable | PolicyInfoGrant;
+```
+
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-databricks.policyInfo.PolicyInfoGrant">PolicyInfoGrant</a>
 
 ---
 
