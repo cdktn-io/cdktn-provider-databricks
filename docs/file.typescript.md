@@ -4,7 +4,7 @@
 
 ### File <a name="File" id="@cdktn/provider-databricks.file.File"></a>
 
-Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/file databricks_file}.
+Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/file databricks_file}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.file.File.Initializer"></a>
 
@@ -544,7 +544,7 @@ The construct id used in the generated config for the File to import.
 
 The id of the existing File that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/file#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/file#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -936,13 +936,13 @@ const fileConfig: file.FileConfig = { ... }
 | <code><a href="#@cdktn/provider-databricks.file.FileConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.file.FileConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.file.FileConfig.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-databricks.file.FileConfig.property.path">path</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/file#path File#path}. |
-| <code><a href="#@cdktn/provider-databricks.file.FileConfig.property.contentBase64">contentBase64</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/file#content_base64 File#content_base64}. |
-| <code><a href="#@cdktn/provider-databricks.file.FileConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/file#id File#id}. |
-| <code><a href="#@cdktn/provider-databricks.file.FileConfig.property.md5">md5</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/file#md5 File#md5}. |
+| <code><a href="#@cdktn/provider-databricks.file.FileConfig.property.path">path</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/file#path File#path}. |
+| <code><a href="#@cdktn/provider-databricks.file.FileConfig.property.contentBase64">contentBase64</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/file#content_base64 File#content_base64}. |
+| <code><a href="#@cdktn/provider-databricks.file.FileConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/file#id File#id}. |
+| <code><a href="#@cdktn/provider-databricks.file.FileConfig.property.md5">md5</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/file#md5 File#md5}. |
 | <code><a href="#@cdktn/provider-databricks.file.FileConfig.property.providerConfig">providerConfig</a></code> | <code><a href="#@cdktn/provider-databricks.file.FileProviderConfig">FileProviderConfig</a></code> | provider_config block. |
-| <code><a href="#@cdktn/provider-databricks.file.FileConfig.property.remoteFileModified">remoteFileModified</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/file#remote_file_modified File#remote_file_modified}. |
-| <code><a href="#@cdktn/provider-databricks.file.FileConfig.property.source">source</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/file#source File#source}. |
+| <code><a href="#@cdktn/provider-databricks.file.FileConfig.property.remoteFileModified">remoteFileModified</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/file#remote_file_modified File#remote_file_modified}. |
+| <code><a href="#@cdktn/provider-databricks.file.FileConfig.property.source">source</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/file#source File#source}. |
 
 ---
 
@@ -1024,7 +1024,7 @@ public readonly path: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/file#path File#path}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/file#path File#path}.
 
 ---
 
@@ -1036,7 +1036,7 @@ public readonly contentBase64: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/file#content_base64 File#content_base64}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/file#content_base64 File#content_base64}.
 
 ---
 
@@ -1048,7 +1048,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/file#id File#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/file#id File#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1063,7 +1063,7 @@ public readonly md5: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/file#md5 File#md5}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/file#md5 File#md5}.
 
 ---
 
@@ -1077,7 +1077,7 @@ public readonly providerConfig: FileProviderConfig;
 
 provider_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/file#provider_config File#provider_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/file#provider_config File#provider_config}
 
 ---
 
@@ -1089,7 +1089,7 @@ public readonly remoteFileModified: boolean | IResolvable;
 
 - *Type:* boolean | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/file#remote_file_modified File#remote_file_modified}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/file#remote_file_modified File#remote_file_modified}.
 
 ---
 
@@ -1101,7 +1101,7 @@ public readonly source: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/file#source File#source}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/file#source File#source}.
 
 ---
 
@@ -1119,7 +1119,7 @@ const fileProviderConfig: file.FileProviderConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.file.FileProviderConfig.property.workspaceId">workspaceId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/file#workspace_id File#workspace_id}. |
+| <code><a href="#@cdktn/provider-databricks.file.FileProviderConfig.property.workspaceId">workspaceId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/file#workspace_id File#workspace_id}. |
 
 ---
 
@@ -1131,7 +1131,7 @@ public readonly workspaceId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/file#workspace_id File#workspace_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/file#workspace_id File#workspace_id}.
 
 ---
 

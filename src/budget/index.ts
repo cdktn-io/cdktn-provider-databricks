@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/budget
+// https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/budget
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,56 +13,60 @@ import * as cdktn from 'cdktn';
 
 export interface BudgetConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/budget#account_id Budget#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/budget#account_id Budget#account_id}
   */
   readonly accountId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/budget#budget_configuration_id Budget#budget_configuration_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/budget#budget_configuration_id Budget#budget_configuration_id}
   */
   readonly budgetConfigurationId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/budget#create_time Budget#create_time}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/budget#create_time Budget#create_time}
   */
   readonly createTime?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/budget#display_name Budget#display_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/budget#display_name Budget#display_name}
   */
   readonly displayName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/budget#id Budget#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/budget#id Budget#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/budget#update_time Budget#update_time}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/budget#resource_type Budget#resource_type}
+  */
+  readonly resourceType?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/budget#update_time Budget#update_time}
   */
   readonly updateTime?: number;
   /**
   * alert_configurations block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/budget#alert_configurations Budget#alert_configurations}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/budget#alert_configurations Budget#alert_configurations}
   */
   readonly alertConfigurations?: BudgetAlertConfigurations[] | cdktn.IResolvable;
   /**
   * filter block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/budget#filter Budget#filter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/budget#filter Budget#filter}
   */
   readonly filter?: BudgetFilter;
 }
 export interface BudgetAlertConfigurationsActionConfigurations {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/budget#action_configuration_id Budget#action_configuration_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/budget#action_configuration_id Budget#action_configuration_id}
   */
   readonly actionConfigurationId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/budget#action_type Budget#action_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/budget#action_type Budget#action_type}
   */
   readonly actionType?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/budget#target Budget#target}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/budget#target Budget#target}
   */
   readonly target?: string;
 }
@@ -234,33 +238,192 @@ export class BudgetAlertConfigurationsActionConfigurationsList extends cdktn.Com
     return new BudgetAlertConfigurationsActionConfigurationsOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
+export interface BudgetAlertConfigurationsPrincipalOverrides {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/budget#override_threshold Budget#override_threshold}
+  */
+  readonly overrideThreshold?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/budget#principal_id Budget#principal_id}
+  */
+  readonly principalId?: number;
+}
+
+export function budgetAlertConfigurationsPrincipalOverridesToTerraform(struct?: BudgetAlertConfigurationsPrincipalOverrides | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  return {
+    override_threshold: cdktn.stringToTerraform(struct!.overrideThreshold),
+    principal_id: cdktn.numberToTerraform(struct!.principalId),
+  }
+}
+
+
+export function budgetAlertConfigurationsPrincipalOverridesToHclTerraform(struct?: BudgetAlertConfigurationsPrincipalOverrides | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  const attrs = {
+    override_threshold: {
+      value: cdktn.stringToHclTerraform(struct!.overrideThreshold),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    principal_id: {
+      value: cdktn.numberToHclTerraform(struct!.principalId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class BudgetAlertConfigurationsPrincipalOverridesOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktn.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): BudgetAlertConfigurationsPrincipalOverrides | cdktn.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._overrideThreshold !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.overrideThreshold = this._overrideThreshold;
+    }
+    if (this._principalId !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.principalId = this._principalId;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: BudgetAlertConfigurationsPrincipalOverrides | cdktn.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._overrideThreshold = undefined;
+      this._principalId = undefined;
+    }
+    else if (cdktn.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._overrideThreshold = value.overrideThreshold;
+      this._principalId = value.principalId;
+    }
+  }
+
+  // override_threshold - computed: false, optional: true, required: false
+  private _overrideThreshold?: string; 
+  public get overrideThreshold() {
+    return this.getStringAttribute('override_threshold');
+  }
+  public set overrideThreshold(value: string) {
+    this._overrideThreshold = value;
+  }
+  public resetOverrideThreshold() {
+    this._overrideThreshold = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get overrideThresholdInput() {
+    return this._overrideThreshold;
+  }
+
+  // principal_id - computed: false, optional: true, required: false
+  private _principalId?: number; 
+  public get principalId() {
+    return this.getNumberAttribute('principal_id');
+  }
+  public set principalId(value: number) {
+    this._principalId = value;
+  }
+  public resetPrincipalId() {
+    this._principalId = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get principalIdInput() {
+    return this._principalId;
+  }
+}
+
+export class BudgetAlertConfigurationsPrincipalOverridesList extends cdktn.ComplexList {
+  public internalValue? : BudgetAlertConfigurationsPrincipalOverrides[] | cdktn.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet);
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): BudgetAlertConfigurationsPrincipalOverridesOutputReference {
+    return new BudgetAlertConfigurationsPrincipalOverridesOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface BudgetAlertConfigurations {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/budget#alert_configuration_id Budget#alert_configuration_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/budget#alert_configuration_id Budget#alert_configuration_id}
   */
   readonly alertConfigurationId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/budget#quantity_threshold Budget#quantity_threshold}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/budget#quantity_threshold Budget#quantity_threshold}
   */
   readonly quantityThreshold?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/budget#quantity_type Budget#quantity_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/budget#quantity_type Budget#quantity_type}
   */
   readonly quantityType?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/budget#time_period Budget#time_period}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/budget#scope_type Budget#scope_type}
+  */
+  readonly scopeType?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/budget#time_period Budget#time_period}
   */
   readonly timePeriod?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/budget#trigger_type Budget#trigger_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/budget#trigger_type Budget#trigger_type}
   */
   readonly triggerType?: string;
   /**
   * action_configurations block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/budget#action_configurations Budget#action_configurations}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/budget#action_configurations Budget#action_configurations}
   */
   readonly actionConfigurations?: BudgetAlertConfigurationsActionConfigurations[] | cdktn.IResolvable;
+  /**
+  * principal_overrides block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/budget#principal_overrides Budget#principal_overrides}
+  */
+  readonly principalOverrides?: BudgetAlertConfigurationsPrincipalOverrides[] | cdktn.IResolvable;
 }
 
 export function budgetAlertConfigurationsToTerraform(struct?: BudgetAlertConfigurations | cdktn.IResolvable): any {
@@ -272,9 +435,11 @@ export function budgetAlertConfigurationsToTerraform(struct?: BudgetAlertConfigu
     alert_configuration_id: cdktn.stringToTerraform(struct!.alertConfigurationId),
     quantity_threshold: cdktn.stringToTerraform(struct!.quantityThreshold),
     quantity_type: cdktn.stringToTerraform(struct!.quantityType),
+    scope_type: cdktn.stringToTerraform(struct!.scopeType),
     time_period: cdktn.stringToTerraform(struct!.timePeriod),
     trigger_type: cdktn.stringToTerraform(struct!.triggerType),
     action_configurations: cdktn.listMapper(budgetAlertConfigurationsActionConfigurationsToTerraform, true)(struct!.actionConfigurations),
+    principal_overrides: cdktn.listMapper(budgetAlertConfigurationsPrincipalOverridesToTerraform, true)(struct!.principalOverrides),
   }
 }
 
@@ -303,6 +468,12 @@ export function budgetAlertConfigurationsToHclTerraform(struct?: BudgetAlertConf
       type: "simple",
       storageClassType: "string",
     },
+    scope_type: {
+      value: cdktn.stringToHclTerraform(struct!.scopeType),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
     time_period: {
       value: cdktn.stringToHclTerraform(struct!.timePeriod),
       isBlock: false,
@@ -320,6 +491,12 @@ export function budgetAlertConfigurationsToHclTerraform(struct?: BudgetAlertConf
       isBlock: true,
       type: "list",
       storageClassType: "BudgetAlertConfigurationsActionConfigurationsList",
+    },
+    principal_overrides: {
+      value: cdktn.listMapperHcl(budgetAlertConfigurationsPrincipalOverridesToHclTerraform, true)(struct!.principalOverrides),
+      isBlock: true,
+      type: "list",
+      storageClassType: "BudgetAlertConfigurationsPrincipalOverridesList",
     },
   };
 
@@ -359,6 +536,10 @@ export class BudgetAlertConfigurationsOutputReference extends cdktn.ComplexObjec
       hasAnyValues = true;
       internalValueResult.quantityType = this._quantityType;
     }
+    if (this._scopeType !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.scopeType = this._scopeType;
+    }
     if (this._timePeriod !== undefined) {
       hasAnyValues = true;
       internalValueResult.timePeriod = this._timePeriod;
@@ -371,6 +552,10 @@ export class BudgetAlertConfigurationsOutputReference extends cdktn.ComplexObjec
       hasAnyValues = true;
       internalValueResult.actionConfigurations = this._actionConfigurations?.internalValue;
     }
+    if (this._principalOverrides?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.principalOverrides = this._principalOverrides?.internalValue;
+    }
     return hasAnyValues ? internalValueResult : undefined;
   }
 
@@ -381,9 +566,11 @@ export class BudgetAlertConfigurationsOutputReference extends cdktn.ComplexObjec
       this._alertConfigurationId = undefined;
       this._quantityThreshold = undefined;
       this._quantityType = undefined;
+      this._scopeType = undefined;
       this._timePeriod = undefined;
       this._triggerType = undefined;
       this._actionConfigurations.internalValue = undefined;
+      this._principalOverrides.internalValue = undefined;
     }
     else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
@@ -395,9 +582,11 @@ export class BudgetAlertConfigurationsOutputReference extends cdktn.ComplexObjec
       this._alertConfigurationId = value.alertConfigurationId;
       this._quantityThreshold = value.quantityThreshold;
       this._quantityType = value.quantityType;
+      this._scopeType = value.scopeType;
       this._timePeriod = value.timePeriod;
       this._triggerType = value.triggerType;
       this._actionConfigurations.internalValue = value.actionConfigurations;
+      this._principalOverrides.internalValue = value.principalOverrides;
     }
   }
 
@@ -449,6 +638,22 @@ export class BudgetAlertConfigurationsOutputReference extends cdktn.ComplexObjec
     return this._quantityType;
   }
 
+  // scope_type - computed: true, optional: true, required: false
+  private _scopeType?: string; 
+  public get scopeType() {
+    return this.getStringAttribute('scope_type');
+  }
+  public set scopeType(value: string) {
+    this._scopeType = value;
+  }
+  public resetScopeType() {
+    this._scopeType = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get scopeTypeInput() {
+    return this._scopeType;
+  }
+
   // time_period - computed: false, optional: true, required: false
   private _timePeriod?: string; 
   public get timePeriod() {
@@ -496,6 +701,22 @@ export class BudgetAlertConfigurationsOutputReference extends cdktn.ComplexObjec
   public get actionConfigurationsInput() {
     return this._actionConfigurations.internalValue;
   }
+
+  // principal_overrides - computed: false, optional: true, required: false
+  private _principalOverrides = new BudgetAlertConfigurationsPrincipalOverridesList(this, "principal_overrides", false);
+  public get principalOverrides() {
+    return this._principalOverrides;
+  }
+  public putPrincipalOverrides(value: BudgetAlertConfigurationsPrincipalOverrides[] | cdktn.IResolvable) {
+    this._principalOverrides.internalValue = value;
+  }
+  public resetPrincipalOverrides() {
+    this._principalOverrides.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get principalOverridesInput() {
+    return this._principalOverrides.internalValue;
+  }
 }
 
 export class BudgetAlertConfigurationsList extends cdktn.ComplexList {
@@ -519,11 +740,11 @@ export class BudgetAlertConfigurationsList extends cdktn.ComplexList {
 }
 export interface BudgetFilterTagsValue {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/budget#operator Budget#operator}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/budget#operator Budget#operator}
   */
   readonly operator?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/budget#values Budget#values}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/budget#values Budget#values}
   */
   readonly values?: string[];
 }
@@ -636,13 +857,13 @@ export class BudgetFilterTagsValueOutputReference extends cdktn.ComplexObject {
 }
 export interface BudgetFilterTags {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/budget#key Budget#key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/budget#key Budget#key}
   */
   readonly key?: string;
   /**
   * value block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/budget#value Budget#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/budget#value Budget#value}
   */
   readonly value?: BudgetFilterTagsValue;
 }
@@ -787,11 +1008,11 @@ export class BudgetFilterTagsList extends cdktn.ComplexList {
 }
 export interface BudgetFilterWorkspaceId {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/budget#operator Budget#operator}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/budget#operator Budget#operator}
   */
   readonly operator?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/budget#values Budget#values}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/budget#values Budget#values}
   */
   readonly values?: number[];
 }
@@ -906,13 +1127,13 @@ export interface BudgetFilter {
   /**
   * tags block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/budget#tags Budget#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/budget#tags Budget#tags}
   */
   readonly tags?: BudgetFilterTags[] | cdktn.IResolvable;
   /**
   * workspace_id block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/budget#workspace_id Budget#workspace_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/budget#workspace_id Budget#workspace_id}
   */
   readonly workspaceId?: BudgetFilterWorkspaceId;
 }
@@ -1025,7 +1246,7 @@ export class BudgetFilterOutputReference extends cdktn.ComplexObject {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/budget databricks_budget}
+* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/budget databricks_budget}
 */
 export class Budget extends cdktn.TerraformResource {
 
@@ -1041,7 +1262,7 @@ export class Budget extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a Budget resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the Budget to import
-  * @param importFromId The id of the existing Budget that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/budget#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing Budget that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/budget#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the Budget to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -1053,7 +1274,7 @@ export class Budget extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/budget databricks_budget} Resource
+  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/budget databricks_budget} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -1064,7 +1285,7 @@ export class Budget extends cdktn.TerraformResource {
       terraformResourceType: 'databricks_budget',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '1.125.0',
+        providerVersion: '1.126.0',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,
@@ -1080,6 +1301,7 @@ export class Budget extends cdktn.TerraformResource {
     this._createTime = config.createTime;
     this._displayName = config.displayName;
     this._id = config.id;
+    this._resourceType = config.resourceType;
     this._updateTime = config.updateTime;
     this._alertConfigurations.internalValue = config.alertConfigurations;
     this._filter.internalValue = config.filter;
@@ -1169,6 +1391,22 @@ export class Budget extends cdktn.TerraformResource {
     return this._id;
   }
 
+  // resource_type - computed: true, optional: true, required: false
+  private _resourceType?: string; 
+  public get resourceType() {
+    return this.getStringAttribute('resource_type');
+  }
+  public set resourceType(value: string) {
+    this._resourceType = value;
+  }
+  public resetResourceType() {
+    this._resourceType = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get resourceTypeInput() {
+    return this._resourceType;
+  }
+
   // update_time - computed: true, optional: true, required: false
   private _updateTime?: number; 
   public get updateTime() {
@@ -1228,6 +1466,7 @@ export class Budget extends cdktn.TerraformResource {
       create_time: cdktn.numberToTerraform(this._createTime),
       display_name: cdktn.stringToTerraform(this._displayName),
       id: cdktn.stringToTerraform(this._id),
+      resource_type: cdktn.stringToTerraform(this._resourceType),
       update_time: cdktn.numberToTerraform(this._updateTime),
       alert_configurations: cdktn.listMapper(budgetAlertConfigurationsToTerraform, true)(this._alertConfigurations.internalValue),
       filter: budgetFilterToTerraform(this._filter.internalValue),
@@ -1262,6 +1501,12 @@ export class Budget extends cdktn.TerraformResource {
       },
       id: {
         value: cdktn.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      resource_type: {
+        value: cdktn.stringToHclTerraform(this._resourceType),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
