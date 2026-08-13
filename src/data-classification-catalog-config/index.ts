@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/data_classification_catalog_config
+// https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/data_classification_catalog_config
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,33 +13,33 @@ import * as cdktn from 'cdktn';
 
 export interface DataClassificationCatalogConfigConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/data_classification_catalog_config#auto_tag_configs DataClassificationCatalogConfig#auto_tag_configs}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/data_classification_catalog_config#auto_tag_configs DataClassificationCatalogConfig#auto_tag_configs}
   */
   readonly autoTagConfigs?: DataClassificationCatalogConfigAutoTagConfigs[] | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/data_classification_catalog_config#excluded_schemas DataClassificationCatalogConfig#excluded_schemas}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/data_classification_catalog_config#excluded_schemas DataClassificationCatalogConfig#excluded_schemas}
   */
   readonly excludedSchemas?: DataClassificationCatalogConfigExcludedSchemas;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/data_classification_catalog_config#included_schemas DataClassificationCatalogConfig#included_schemas}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/data_classification_catalog_config#included_schemas DataClassificationCatalogConfig#included_schemas}
   */
   readonly includedSchemas?: DataClassificationCatalogConfigIncludedSchemas;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/data_classification_catalog_config#parent DataClassificationCatalogConfig#parent}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/data_classification_catalog_config#parent DataClassificationCatalogConfig#parent}
   */
   readonly parent: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/data_classification_catalog_config#provider_config DataClassificationCatalogConfig#provider_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/data_classification_catalog_config#provider_config DataClassificationCatalogConfig#provider_config}
   */
   readonly providerConfig?: DataClassificationCatalogConfigProviderConfig;
 }
 export interface DataClassificationCatalogConfigAutoTagConfigs {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/data_classification_catalog_config#auto_tagging_mode DataClassificationCatalogConfig#auto_tagging_mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/data_classification_catalog_config#auto_tagging_mode DataClassificationCatalogConfig#auto_tagging_mode}
   */
   readonly autoTaggingMode: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/data_classification_catalog_config#classification_tag DataClassificationCatalogConfig#classification_tag}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/data_classification_catalog_config#classification_tag DataClassificationCatalogConfig#classification_tag}
   */
   readonly classificationTag: string;
 }
@@ -178,7 +178,7 @@ export class DataClassificationCatalogConfigAutoTagConfigsList extends cdktn.Com
 }
 export interface DataClassificationCatalogConfigExcludedSchemas {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/data_classification_catalog_config#names DataClassificationCatalogConfig#names}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/data_classification_catalog_config#names DataClassificationCatalogConfig#names}
   */
   readonly names: string[];
 }
@@ -269,7 +269,7 @@ export class DataClassificationCatalogConfigExcludedSchemasOutputReference exten
 }
 export interface DataClassificationCatalogConfigIncludedSchemas {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/data_classification_catalog_config#names DataClassificationCatalogConfig#names}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/data_classification_catalog_config#names DataClassificationCatalogConfig#names}
   */
   readonly names: string[];
 }
@@ -360,7 +360,7 @@ export class DataClassificationCatalogConfigIncludedSchemasOutputReference exten
 }
 export interface DataClassificationCatalogConfigProviderConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/data_classification_catalog_config#workspace_id DataClassificationCatalogConfig#workspace_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/data_classification_catalog_config#workspace_id DataClassificationCatalogConfig#workspace_id}
   */
   readonly workspaceId?: string;
 }
@@ -454,7 +454,7 @@ export class DataClassificationCatalogConfigProviderConfigOutputReference extend
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/data_classification_catalog_config databricks_data_classification_catalog_config}
+* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/data_classification_catalog_config databricks_data_classification_catalog_config}
 */
 export class DataClassificationCatalogConfig extends cdktn.TerraformResource {
 
@@ -470,7 +470,7 @@ export class DataClassificationCatalogConfig extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a DataClassificationCatalogConfig resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataClassificationCatalogConfig to import
-  * @param importFromId The id of the existing DataClassificationCatalogConfig that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/data_classification_catalog_config#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataClassificationCatalogConfig that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/data_classification_catalog_config#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataClassificationCatalogConfig to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -482,7 +482,7 @@ export class DataClassificationCatalogConfig extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/data_classification_catalog_config databricks_data_classification_catalog_config} Resource
+  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/data_classification_catalog_config databricks_data_classification_catalog_config} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -493,7 +493,7 @@ export class DataClassificationCatalogConfig extends cdktn.TerraformResource {
       terraformResourceType: 'databricks_data_classification_catalog_config',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '1.125.0',
+        providerVersion: '1.126.0',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,

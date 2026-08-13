@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/sql_query
+// https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/sql_query
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,70 +13,70 @@ import * as cdktn from 'cdktn';
 
 export interface SqlQueryConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/sql_query#created_at SqlQuery#created_at}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/sql_query#created_at SqlQuery#created_at}
   */
   readonly createdAt?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/sql_query#data_source_id SqlQuery#data_source_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/sql_query#data_source_id SqlQuery#data_source_id}
   */
   readonly dataSourceId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/sql_query#description SqlQuery#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/sql_query#description SqlQuery#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/sql_query#id SqlQuery#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/sql_query#id SqlQuery#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/sql_query#name SqlQuery#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/sql_query#name SqlQuery#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/sql_query#parent SqlQuery#parent}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/sql_query#parent SqlQuery#parent}
   */
   readonly parent?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/sql_query#query SqlQuery#query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/sql_query#query SqlQuery#query}
   */
   readonly query: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/sql_query#run_as_role SqlQuery#run_as_role}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/sql_query#run_as_role SqlQuery#run_as_role}
   */
   readonly runAsRole?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/sql_query#tags SqlQuery#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/sql_query#tags SqlQuery#tags}
   */
   readonly tags?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/sql_query#updated_at SqlQuery#updated_at}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/sql_query#updated_at SqlQuery#updated_at}
   */
   readonly updatedAt?: string;
   /**
   * parameter block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/sql_query#parameter SqlQuery#parameter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/sql_query#parameter SqlQuery#parameter}
   */
   readonly parameter?: SqlQueryParameter[] | cdktn.IResolvable;
   /**
   * provider_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/sql_query#provider_config SqlQuery#provider_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/sql_query#provider_config SqlQuery#provider_config}
   */
   readonly providerConfig?: SqlQueryProviderConfig;
   /**
   * schedule block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/sql_query#schedule SqlQuery#schedule}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/sql_query#schedule SqlQuery#schedule}
   */
   readonly schedule?: SqlQuerySchedule;
 }
 export interface SqlQueryParameterDate {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/sql_query#value SqlQuery#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/sql_query#value SqlQuery#value}
   */
   readonly value: string;
 }
@@ -157,11 +157,11 @@ export class SqlQueryParameterDateOutputReference extends cdktn.ComplexObject {
 }
 export interface SqlQueryParameterDateRangeRange {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/sql_query#end SqlQuery#end}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/sql_query#end SqlQuery#end}
   */
   readonly end: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/sql_query#start SqlQuery#start}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/sql_query#start SqlQuery#start}
   */
   readonly start: string;
 }
@@ -268,13 +268,13 @@ export class SqlQueryParameterDateRangeRangeOutputReference extends cdktn.Comple
 }
 export interface SqlQueryParameterDateRange {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/sql_query#value SqlQuery#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/sql_query#value SqlQuery#value}
   */
   readonly value?: string;
   /**
   * range block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/sql_query#range SqlQuery#range}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/sql_query#range SqlQuery#range}
   */
   readonly range?: SqlQueryParameterDateRangeRange;
 }
@@ -387,7 +387,7 @@ export class SqlQueryParameterDateRangeOutputReference extends cdktn.ComplexObje
 }
 export interface SqlQueryParameterDatetime {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/sql_query#value SqlQuery#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/sql_query#value SqlQuery#value}
   */
   readonly value: string;
 }
@@ -468,11 +468,11 @@ export class SqlQueryParameterDatetimeOutputReference extends cdktn.ComplexObjec
 }
 export interface SqlQueryParameterDatetimeRangeRange {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/sql_query#end SqlQuery#end}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/sql_query#end SqlQuery#end}
   */
   readonly end: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/sql_query#start SqlQuery#start}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/sql_query#start SqlQuery#start}
   */
   readonly start: string;
 }
@@ -579,13 +579,13 @@ export class SqlQueryParameterDatetimeRangeRangeOutputReference extends cdktn.Co
 }
 export interface SqlQueryParameterDatetimeRange {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/sql_query#value SqlQuery#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/sql_query#value SqlQuery#value}
   */
   readonly value?: string;
   /**
   * range block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/sql_query#range SqlQuery#range}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/sql_query#range SqlQuery#range}
   */
   readonly range?: SqlQueryParameterDatetimeRangeRange;
 }
@@ -698,7 +698,7 @@ export class SqlQueryParameterDatetimeRangeOutputReference extends cdktn.Complex
 }
 export interface SqlQueryParameterDatetimesec {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/sql_query#value SqlQuery#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/sql_query#value SqlQuery#value}
   */
   readonly value: string;
 }
@@ -779,11 +779,11 @@ export class SqlQueryParameterDatetimesecOutputReference extends cdktn.ComplexOb
 }
 export interface SqlQueryParameterDatetimesecRangeRange {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/sql_query#end SqlQuery#end}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/sql_query#end SqlQuery#end}
   */
   readonly end: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/sql_query#start SqlQuery#start}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/sql_query#start SqlQuery#start}
   */
   readonly start: string;
 }
@@ -890,13 +890,13 @@ export class SqlQueryParameterDatetimesecRangeRangeOutputReference extends cdktn
 }
 export interface SqlQueryParameterDatetimesecRange {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/sql_query#value SqlQuery#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/sql_query#value SqlQuery#value}
   */
   readonly value?: string;
   /**
   * range block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/sql_query#range SqlQuery#range}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/sql_query#range SqlQuery#range}
   */
   readonly range?: SqlQueryParameterDatetimesecRangeRange;
 }
@@ -1009,15 +1009,15 @@ export class SqlQueryParameterDatetimesecRangeOutputReference extends cdktn.Comp
 }
 export interface SqlQueryParameterEnumMultiple {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/sql_query#prefix SqlQuery#prefix}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/sql_query#prefix SqlQuery#prefix}
   */
   readonly prefix?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/sql_query#separator SqlQuery#separator}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/sql_query#separator SqlQuery#separator}
   */
   readonly separator: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/sql_query#suffix SqlQuery#suffix}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/sql_query#suffix SqlQuery#suffix}
   */
   readonly suffix?: string;
 }
@@ -1156,21 +1156,21 @@ export class SqlQueryParameterEnumMultipleOutputReference extends cdktn.ComplexO
 }
 export interface SqlQueryParameterEnum {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/sql_query#options SqlQuery#options}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/sql_query#options SqlQuery#options}
   */
   readonly options: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/sql_query#value SqlQuery#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/sql_query#value SqlQuery#value}
   */
   readonly value?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/sql_query#values SqlQuery#values}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/sql_query#values SqlQuery#values}
   */
   readonly values?: string[];
   /**
   * multiple block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/sql_query#multiple SqlQuery#multiple}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/sql_query#multiple SqlQuery#multiple}
   */
   readonly multiple?: SqlQueryParameterEnumMultiple;
 }
@@ -1338,7 +1338,7 @@ export class SqlQueryParameterEnumOutputReference extends cdktn.ComplexObject {
 }
 export interface SqlQueryParameterNumber {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/sql_query#value SqlQuery#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/sql_query#value SqlQuery#value}
   */
   readonly value: number;
 }
@@ -1419,15 +1419,15 @@ export class SqlQueryParameterNumberOutputReference extends cdktn.ComplexObject 
 }
 export interface SqlQueryParameterQueryMultiple {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/sql_query#prefix SqlQuery#prefix}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/sql_query#prefix SqlQuery#prefix}
   */
   readonly prefix?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/sql_query#separator SqlQuery#separator}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/sql_query#separator SqlQuery#separator}
   */
   readonly separator: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/sql_query#suffix SqlQuery#suffix}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/sql_query#suffix SqlQuery#suffix}
   */
   readonly suffix?: string;
 }
@@ -1566,21 +1566,21 @@ export class SqlQueryParameterQueryMultipleOutputReference extends cdktn.Complex
 }
 export interface SqlQueryParameterQuery {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/sql_query#query_id SqlQuery#query_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/sql_query#query_id SqlQuery#query_id}
   */
   readonly queryId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/sql_query#value SqlQuery#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/sql_query#value SqlQuery#value}
   */
   readonly value?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/sql_query#values SqlQuery#values}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/sql_query#values SqlQuery#values}
   */
   readonly values?: string[];
   /**
   * multiple block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/sql_query#multiple SqlQuery#multiple}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/sql_query#multiple SqlQuery#multiple}
   */
   readonly multiple?: SqlQueryParameterQueryMultiple;
 }
@@ -1748,7 +1748,7 @@ export class SqlQueryParameterQueryOutputReference extends cdktn.ComplexObject {
 }
 export interface SqlQueryParameterText {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/sql_query#value SqlQuery#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/sql_query#value SqlQuery#value}
   */
   readonly value: string;
 }
@@ -1829,71 +1829,71 @@ export class SqlQueryParameterTextOutputReference extends cdktn.ComplexObject {
 }
 export interface SqlQueryParameter {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/sql_query#name SqlQuery#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/sql_query#name SqlQuery#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/sql_query#title SqlQuery#title}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/sql_query#title SqlQuery#title}
   */
   readonly title?: string;
   /**
   * date block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/sql_query#date SqlQuery#date}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/sql_query#date SqlQuery#date}
   */
   readonly date?: SqlQueryParameterDate;
   /**
   * date_range block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/sql_query#date_range SqlQuery#date_range}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/sql_query#date_range SqlQuery#date_range}
   */
   readonly dateRange?: SqlQueryParameterDateRange;
   /**
   * datetime block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/sql_query#datetime SqlQuery#datetime}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/sql_query#datetime SqlQuery#datetime}
   */
   readonly datetime?: SqlQueryParameterDatetime;
   /**
   * datetime_range block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/sql_query#datetime_range SqlQuery#datetime_range}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/sql_query#datetime_range SqlQuery#datetime_range}
   */
   readonly datetimeRange?: SqlQueryParameterDatetimeRange;
   /**
   * datetimesec block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/sql_query#datetimesec SqlQuery#datetimesec}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/sql_query#datetimesec SqlQuery#datetimesec}
   */
   readonly datetimesec?: SqlQueryParameterDatetimesec;
   /**
   * datetimesec_range block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/sql_query#datetimesec_range SqlQuery#datetimesec_range}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/sql_query#datetimesec_range SqlQuery#datetimesec_range}
   */
   readonly datetimesecRange?: SqlQueryParameterDatetimesecRange;
   /**
   * enum block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/sql_query#enum SqlQuery#enum}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/sql_query#enum SqlQuery#enum}
   */
   readonly enum?: SqlQueryParameterEnum;
   /**
   * number block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/sql_query#number SqlQuery#number}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/sql_query#number SqlQuery#number}
   */
   readonly number?: SqlQueryParameterNumber;
   /**
   * query block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/sql_query#query SqlQuery#query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/sql_query#query SqlQuery#query}
   */
   readonly query?: SqlQueryParameterQuery;
   /**
   * text block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/sql_query#text SqlQuery#text}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/sql_query#text SqlQuery#text}
   */
   readonly text?: SqlQueryParameterText;
 }
@@ -2325,7 +2325,7 @@ export class SqlQueryParameterList extends cdktn.ComplexList {
 }
 export interface SqlQueryProviderConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/sql_query#workspace_id SqlQuery#workspace_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/sql_query#workspace_id SqlQuery#workspace_id}
   */
   readonly workspaceId?: string;
 }
@@ -2409,11 +2409,11 @@ export class SqlQueryProviderConfigOutputReference extends cdktn.ComplexObject {
 }
 export interface SqlQueryScheduleContinuous {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/sql_query#interval_seconds SqlQuery#interval_seconds}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/sql_query#interval_seconds SqlQuery#interval_seconds}
   */
   readonly intervalSeconds: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/sql_query#until_date SqlQuery#until_date}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/sql_query#until_date SqlQuery#until_date}
   */
   readonly untilDate?: string;
 }
@@ -2523,15 +2523,15 @@ export class SqlQueryScheduleContinuousOutputReference extends cdktn.ComplexObje
 }
 export interface SqlQueryScheduleDaily {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/sql_query#interval_days SqlQuery#interval_days}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/sql_query#interval_days SqlQuery#interval_days}
   */
   readonly intervalDays: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/sql_query#time_of_day SqlQuery#time_of_day}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/sql_query#time_of_day SqlQuery#time_of_day}
   */
   readonly timeOfDay: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/sql_query#until_date SqlQuery#until_date}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/sql_query#until_date SqlQuery#until_date}
   */
   readonly untilDate?: string;
 }
@@ -2667,19 +2667,19 @@ export class SqlQueryScheduleDailyOutputReference extends cdktn.ComplexObject {
 }
 export interface SqlQueryScheduleWeekly {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/sql_query#day_of_week SqlQuery#day_of_week}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/sql_query#day_of_week SqlQuery#day_of_week}
   */
   readonly dayOfWeek: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/sql_query#interval_weeks SqlQuery#interval_weeks}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/sql_query#interval_weeks SqlQuery#interval_weeks}
   */
   readonly intervalWeeks: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/sql_query#time_of_day SqlQuery#time_of_day}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/sql_query#time_of_day SqlQuery#time_of_day}
   */
   readonly timeOfDay: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/sql_query#until_date SqlQuery#until_date}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/sql_query#until_date SqlQuery#until_date}
   */
   readonly untilDate?: string;
 }
@@ -2843,19 +2843,19 @@ export interface SqlQuerySchedule {
   /**
   * continuous block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/sql_query#continuous SqlQuery#continuous}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/sql_query#continuous SqlQuery#continuous}
   */
   readonly continuous?: SqlQueryScheduleContinuous;
   /**
   * daily block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/sql_query#daily SqlQuery#daily}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/sql_query#daily SqlQuery#daily}
   */
   readonly daily?: SqlQueryScheduleDaily;
   /**
   * weekly block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/sql_query#weekly SqlQuery#weekly}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/sql_query#weekly SqlQuery#weekly}
   */
   readonly weekly?: SqlQueryScheduleWeekly;
 }
@@ -2997,7 +2997,7 @@ export class SqlQueryScheduleOutputReference extends cdktn.ComplexObject {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/sql_query databricks_sql_query}
+* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/sql_query databricks_sql_query}
 */
 export class SqlQuery extends cdktn.TerraformResource {
 
@@ -3013,7 +3013,7 @@ export class SqlQuery extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a SqlQuery resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the SqlQuery to import
-  * @param importFromId The id of the existing SqlQuery that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/sql_query#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing SqlQuery that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/sql_query#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the SqlQuery to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -3025,7 +3025,7 @@ export class SqlQuery extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/sql_query databricks_sql_query} Resource
+  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/sql_query databricks_sql_query} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -3036,7 +3036,7 @@ export class SqlQuery extends cdktn.TerraformResource {
       terraformResourceType: 'databricks_sql_query',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '1.125.0',
+        providerVersion: '1.126.0',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,

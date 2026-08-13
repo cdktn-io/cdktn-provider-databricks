@@ -1,3 +1,3 @@
 # `databricks_ai_search_endpoint`
 
-Refer to the Terraform Registry for docs: [`databricks_ai_search_endpoint`](https://registry.terraform.io/providers/databricks/databricks/1.125.0/docs/resources/ai_search_endpoint).
+Refer to the Terraform Registry for docs: [`databricks_ai_search_endpoint`](https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/ai_search_endpoint).
