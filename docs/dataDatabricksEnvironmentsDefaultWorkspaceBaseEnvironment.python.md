@@ -4,7 +4,7 @@
 
 ### DataDatabricksEnvironmentsDefaultWorkspaceBaseEnvironment <a name="DataDatabricksEnvironmentsDefaultWorkspaceBaseEnvironment" id="@cdktn/provider-databricks.dataDatabricksEnvironmentsDefaultWorkspaceBaseEnvironment.DataDatabricksEnvironmentsDefaultWorkspaceBaseEnvironment"></a>
 
-Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/data-sources/environments_default_workspace_base_environment databricks_environments_default_workspace_base_environment}.
+Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/data-sources/environments_default_workspace_base_environment databricks_environments_default_workspace_base_environment}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksEnvironmentsDefaultWorkspaceBaseEnvironment.DataDatabricksEnvironmentsDefaultWorkspaceBaseEnvironment.Initializer"></a>
 
@@ -37,8 +37,8 @@ dataDatabricksEnvironmentsDefaultWorkspaceBaseEnvironment.DataDatabricksEnvironm
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksEnvironmentsDefaultWorkspaceBaseEnvironment.DataDatabricksEnvironmentsDefaultWorkspaceBaseEnvironment.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksEnvironmentsDefaultWorkspaceBaseEnvironment.DataDatabricksEnvironmentsDefaultWorkspaceBaseEnvironment.Initializer.parameter.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksEnvironmentsDefaultWorkspaceBaseEnvironment.DataDatabricksEnvironmentsDefaultWorkspaceBaseEnvironment.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksEnvironmentsDefaultWorkspaceBaseEnvironment.DataDatabricksEnvironmentsDefaultWorkspaceBaseEnvironment.Initializer.parameter.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/data-sources/environments_default_workspace_base_environment#name DataDatabricksEnvironmentsDefaultWorkspaceBaseEnvironment#name}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksEnvironmentsDefaultWorkspaceBaseEnvironment.DataDatabricksEnvironmentsDefaultWorkspaceBaseEnvironment.Initializer.parameter.providerConfig">provider_config</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksEnvironmentsDefaultWorkspaceBaseEnvironment.DataDatabricksEnvironmentsDefaultWorkspaceBaseEnvironmentProviderConfig">DataDatabricksEnvironmentsDefaultWorkspaceBaseEnvironmentProviderConfig</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/data-sources/environments_default_workspace_base_environment#provider_config DataDatabricksEnvironmentsDefaultWorkspaceBaseEnvironment#provider_config}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksEnvironmentsDefaultWorkspaceBaseEnvironment.DataDatabricksEnvironmentsDefaultWorkspaceBaseEnvironment.Initializer.parameter.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/data-sources/environments_default_workspace_base_environment#name DataDatabricksEnvironmentsDefaultWorkspaceBaseEnvironment#name}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksEnvironmentsDefaultWorkspaceBaseEnvironment.DataDatabricksEnvironmentsDefaultWorkspaceBaseEnvironment.Initializer.parameter.providerConfig">provider_config</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksEnvironmentsDefaultWorkspaceBaseEnvironment.DataDatabricksEnvironmentsDefaultWorkspaceBaseEnvironmentProviderConfig">DataDatabricksEnvironmentsDefaultWorkspaceBaseEnvironmentProviderConfig</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/data-sources/environments_default_workspace_base_environment#provider_config DataDatabricksEnvironmentsDefaultWorkspaceBaseEnvironment#provider_config}. |
 
 ---
 
@@ -106,7 +106,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/data-sources/environments_default_workspace_base_environment#name DataDatabricksEnvironmentsDefaultWorkspaceBaseEnvironment#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/data-sources/environments_default_workspace_base_environment#name DataDatabricksEnvironmentsDefaultWorkspaceBaseEnvironment#name}.
 
 ---
 
@@ -114,7 +114,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* <a href="#@cdktn/provider-databricks.dataDatabricksEnvironmentsDefaultWorkspaceBaseEnvironment.DataDatabricksEnvironmentsDefaultWorkspaceBaseEnvironmentProviderConfig">DataDatabricksEnvironmentsDefaultWorkspaceBaseEnvironmentProviderConfig</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/data-sources/environments_default_workspace_base_environment#provider_config DataDatabricksEnvironmentsDefaultWorkspaceBaseEnvironment#provider_config}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/data-sources/environments_default_workspace_base_environment#provider_config DataDatabricksEnvironmentsDefaultWorkspaceBaseEnvironment#provider_config}.
 
 ---
 
@@ -397,7 +397,7 @@ def put_provider_config(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/data-sources/environments_default_workspace_base_environment#workspace_id DataDatabricksEnvironmentsDefaultWorkspaceBaseEnvironment#workspace_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/data-sources/environments_default_workspace_base_environment#workspace_id DataDatabricksEnvironmentsDefaultWorkspaceBaseEnvironment#workspace_id}.
 
 ---
 
@@ -521,7 +521,7 @@ The construct id used in the generated config for the DataDatabricksEnvironments
 
 The id of the existing DataDatabricksEnvironmentsDefaultWorkspaceBaseEnvironment that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/data-sources/environments_default_workspace_base_environment#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/data-sources/environments_default_workspace_base_environment#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -791,8 +791,8 @@ dataDatabricksEnvironmentsDefaultWorkspaceBaseEnvironment.DataDatabricksEnvironm
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksEnvironmentsDefaultWorkspaceBaseEnvironment.DataDatabricksEnvironmentsDefaultWorkspaceBaseEnvironmentConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksEnvironmentsDefaultWorkspaceBaseEnvironment.DataDatabricksEnvironmentsDefaultWorkspaceBaseEnvironmentConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksEnvironmentsDefaultWorkspaceBaseEnvironment.DataDatabricksEnvironmentsDefaultWorkspaceBaseEnvironmentConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksEnvironmentsDefaultWorkspaceBaseEnvironment.DataDatabricksEnvironmentsDefaultWorkspaceBaseEnvironmentConfig.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/data-sources/environments_default_workspace_base_environment#name DataDatabricksEnvironmentsDefaultWorkspaceBaseEnvironment#name}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksEnvironmentsDefaultWorkspaceBaseEnvironment.DataDatabricksEnvironmentsDefaultWorkspaceBaseEnvironmentConfig.property.providerConfig">provider_config</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksEnvironmentsDefaultWorkspaceBaseEnvironment.DataDatabricksEnvironmentsDefaultWorkspaceBaseEnvironmentProviderConfig">DataDatabricksEnvironmentsDefaultWorkspaceBaseEnvironmentProviderConfig</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/data-sources/environments_default_workspace_base_environment#provider_config DataDatabricksEnvironmentsDefaultWorkspaceBaseEnvironment#provider_config}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksEnvironmentsDefaultWorkspaceBaseEnvironment.DataDatabricksEnvironmentsDefaultWorkspaceBaseEnvironmentConfig.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/data-sources/environments_default_workspace_base_environment#name DataDatabricksEnvironmentsDefaultWorkspaceBaseEnvironment#name}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksEnvironmentsDefaultWorkspaceBaseEnvironment.DataDatabricksEnvironmentsDefaultWorkspaceBaseEnvironmentConfig.property.providerConfig">provider_config</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksEnvironmentsDefaultWorkspaceBaseEnvironment.DataDatabricksEnvironmentsDefaultWorkspaceBaseEnvironmentProviderConfig">DataDatabricksEnvironmentsDefaultWorkspaceBaseEnvironmentProviderConfig</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/data-sources/environments_default_workspace_base_environment#provider_config DataDatabricksEnvironmentsDefaultWorkspaceBaseEnvironment#provider_config}. |
 
 ---
 
@@ -874,7 +874,7 @@ name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/data-sources/environments_default_workspace_base_environment#name DataDatabricksEnvironmentsDefaultWorkspaceBaseEnvironment#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/data-sources/environments_default_workspace_base_environment#name DataDatabricksEnvironmentsDefaultWorkspaceBaseEnvironment#name}.
 
 ---
 
@@ -886,7 +886,7 @@ provider_config: DataDatabricksEnvironmentsDefaultWorkspaceBaseEnvironmentProvid
 
 - *Type:* <a href="#@cdktn/provider-databricks.dataDatabricksEnvironmentsDefaultWorkspaceBaseEnvironment.DataDatabricksEnvironmentsDefaultWorkspaceBaseEnvironmentProviderConfig">DataDatabricksEnvironmentsDefaultWorkspaceBaseEnvironmentProviderConfig</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/data-sources/environments_default_workspace_base_environment#provider_config DataDatabricksEnvironmentsDefaultWorkspaceBaseEnvironment#provider_config}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/data-sources/environments_default_workspace_base_environment#provider_config DataDatabricksEnvironmentsDefaultWorkspaceBaseEnvironment#provider_config}.
 
 ---
 
@@ -906,7 +906,7 @@ dataDatabricksEnvironmentsDefaultWorkspaceBaseEnvironment.DataDatabricksEnvironm
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksEnvironmentsDefaultWorkspaceBaseEnvironment.DataDatabricksEnvironmentsDefaultWorkspaceBaseEnvironmentProviderConfig.property.workspaceId">workspace_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/data-sources/environments_default_workspace_base_environment#workspace_id DataDatabricksEnvironmentsDefaultWorkspaceBaseEnvironment#workspace_id}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksEnvironmentsDefaultWorkspaceBaseEnvironment.DataDatabricksEnvironmentsDefaultWorkspaceBaseEnvironmentProviderConfig.property.workspaceId">workspace_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/data-sources/environments_default_workspace_base_environment#workspace_id DataDatabricksEnvironmentsDefaultWorkspaceBaseEnvironment#workspace_id}. |
 
 ---
 
@@ -918,7 +918,7 @@ workspace_id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/data-sources/environments_default_workspace_base_environment#workspace_id DataDatabricksEnvironmentsDefaultWorkspaceBaseEnvironment#workspace_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/data-sources/environments_default_workspace_base_environment#workspace_id DataDatabricksEnvironmentsDefaultWorkspaceBaseEnvironment#workspace_id}.
 
 ---
 

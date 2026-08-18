@@ -4,7 +4,7 @@
 
 ### DataDatabricksCatalogs <a name="DataDatabricksCatalogs" id="@cdktn/provider-databricks.dataDatabricksCatalogs.DataDatabricksCatalogs"></a>
 
-Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/data-sources/catalogs databricks_catalogs}.
+Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/data-sources/catalogs databricks_catalogs}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksCatalogs.DataDatabricksCatalogs.Initializer"></a>
 
@@ -36,8 +36,8 @@ DataDatabricksCatalogs.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksCatalogs.DataDatabricksCatalogs.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>io.cdktn.cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksCatalogs.DataDatabricksCatalogs.Initializer.parameter.provider">provider</a></code> | <code>io.cdktn.cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksCatalogs.DataDatabricksCatalogs.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksCatalogs.DataDatabricksCatalogs.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/data-sources/catalogs#id DataDatabricksCatalogs#id}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksCatalogs.DataDatabricksCatalogs.Initializer.parameter.ids">ids</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/data-sources/catalogs#ids DataDatabricksCatalogs#ids}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksCatalogs.DataDatabricksCatalogs.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/data-sources/catalogs#id DataDatabricksCatalogs#id}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksCatalogs.DataDatabricksCatalogs.Initializer.parameter.ids">ids</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/data-sources/catalogs#ids DataDatabricksCatalogs#ids}. |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksCatalogs.DataDatabricksCatalogs.Initializer.parameter.providerConfig">providerConfig</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksCatalogs.DataDatabricksCatalogsProviderConfig">DataDatabricksCatalogsProviderConfig</a></code> | provider_config block. |
 
 ---
@@ -106,7 +106,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/data-sources/catalogs#id DataDatabricksCatalogs#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/data-sources/catalogs#id DataDatabricksCatalogs#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -117,7 +117,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 - *Type:* java.util.List<java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/data-sources/catalogs#ids DataDatabricksCatalogs#ids}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/data-sources/catalogs#ids DataDatabricksCatalogs#ids}.
 
 ---
 
@@ -127,7 +127,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 provider_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/data-sources/catalogs#provider_config DataDatabricksCatalogs#provider_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/data-sources/catalogs#provider_config DataDatabricksCatalogs#provider_config}
 
 ---
 
@@ -506,7 +506,7 @@ The construct id used in the generated config for the DataDatabricksCatalogs to 
 
 The id of the existing DataDatabricksCatalogs that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/data-sources/catalogs#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/data-sources/catalogs#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -777,8 +777,8 @@ DataDatabricksCatalogsConfig.builder()
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksCatalogs.DataDatabricksCatalogsConfig.property.lifecycle">lifecycle</a></code> | <code>io.cdktn.cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksCatalogs.DataDatabricksCatalogsConfig.property.provider">provider</a></code> | <code>io.cdktn.cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksCatalogs.DataDatabricksCatalogsConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksCatalogs.DataDatabricksCatalogsConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/data-sources/catalogs#id DataDatabricksCatalogs#id}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksCatalogs.DataDatabricksCatalogsConfig.property.ids">ids</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/data-sources/catalogs#ids DataDatabricksCatalogs#ids}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksCatalogs.DataDatabricksCatalogsConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/data-sources/catalogs#id DataDatabricksCatalogs#id}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksCatalogs.DataDatabricksCatalogsConfig.property.ids">ids</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/data-sources/catalogs#ids DataDatabricksCatalogs#ids}. |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksCatalogs.DataDatabricksCatalogsConfig.property.providerConfig">providerConfig</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksCatalogs.DataDatabricksCatalogsProviderConfig">DataDatabricksCatalogsProviderConfig</a></code> | provider_config block. |
 
 ---
@@ -861,7 +861,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/data-sources/catalogs#id DataDatabricksCatalogs#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/data-sources/catalogs#id DataDatabricksCatalogs#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -876,7 +876,7 @@ public java.util.List<java.lang.String> getIds();
 
 - *Type:* java.util.List<java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/data-sources/catalogs#ids DataDatabricksCatalogs#ids}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/data-sources/catalogs#ids DataDatabricksCatalogs#ids}.
 
 ---
 
@@ -890,7 +890,7 @@ public DataDatabricksCatalogsProviderConfig getProviderConfig();
 
 provider_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/data-sources/catalogs#provider_config DataDatabricksCatalogs#provider_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/data-sources/catalogs#provider_config DataDatabricksCatalogs#provider_config}
 
 ---
 
@@ -910,7 +910,7 @@ DataDatabricksCatalogsProviderConfig.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksCatalogs.DataDatabricksCatalogsProviderConfig.property.workspaceId">workspaceId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/data-sources/catalogs#workspace_id DataDatabricksCatalogs#workspace_id}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksCatalogs.DataDatabricksCatalogsProviderConfig.property.workspaceId">workspaceId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/data-sources/catalogs#workspace_id DataDatabricksCatalogs#workspace_id}. |
 
 ---
 
@@ -922,7 +922,7 @@ public java.lang.String getWorkspaceId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/data-sources/catalogs#workspace_id DataDatabricksCatalogs#workspace_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/data-sources/catalogs#workspace_id DataDatabricksCatalogs#workspace_id}.
 
 ---
 
