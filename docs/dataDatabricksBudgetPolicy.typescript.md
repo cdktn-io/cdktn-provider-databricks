@@ -4,7 +4,7 @@
 
 ### DataDatabricksBudgetPolicy <a name="DataDatabricksBudgetPolicy" id="@cdktn/provider-databricks.dataDatabricksBudgetPolicy.DataDatabricksBudgetPolicy"></a>
 
-Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/data-sources/budget_policy databricks_budget_policy}.
+Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/data-sources/budget_policy databricks_budget_policy}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksBudgetPolicy.DataDatabricksBudgetPolicy.Initializer"></a>
 
@@ -387,7 +387,7 @@ The construct id used in the generated config for the DataDatabricksBudgetPolicy
 
 The id of the existing DataDatabricksBudgetPolicy that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/data-sources/budget_policy#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/data-sources/budget_policy#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -636,7 +636,7 @@ const dataDatabricksBudgetPolicyConfig: dataDatabricksBudgetPolicy.DataDatabrick
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksBudgetPolicy.DataDatabricksBudgetPolicyConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksBudgetPolicy.DataDatabricksBudgetPolicyConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksBudgetPolicy.DataDatabricksBudgetPolicyConfig.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksBudgetPolicy.DataDatabricksBudgetPolicyConfig.property.policyId">policyId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/data-sources/budget_policy#policy_id DataDatabricksBudgetPolicy#policy_id}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksBudgetPolicy.DataDatabricksBudgetPolicyConfig.property.policyId">policyId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/data-sources/budget_policy#policy_id DataDatabricksBudgetPolicy#policy_id}. |
 
 ---
 
@@ -718,7 +718,7 @@ public readonly policyId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/data-sources/budget_policy#policy_id DataDatabricksBudgetPolicy#policy_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/data-sources/budget_policy#policy_id DataDatabricksBudgetPolicy#policy_id}.
 
 ---
 
@@ -736,8 +736,8 @@ const dataDatabricksBudgetPolicyCustomTags: dataDatabricksBudgetPolicy.DataDatab
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksBudgetPolicy.DataDatabricksBudgetPolicyCustomTags.property.key">key</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/data-sources/budget_policy#key DataDatabricksBudgetPolicy#key}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksBudgetPolicy.DataDatabricksBudgetPolicyCustomTags.property.value">value</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/data-sources/budget_policy#value DataDatabricksBudgetPolicy#value}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksBudgetPolicy.DataDatabricksBudgetPolicyCustomTags.property.key">key</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/data-sources/budget_policy#key DataDatabricksBudgetPolicy#key}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksBudgetPolicy.DataDatabricksBudgetPolicyCustomTags.property.value">value</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/data-sources/budget_policy#value DataDatabricksBudgetPolicy#value}. |
 
 ---
 
@@ -749,7 +749,7 @@ public readonly key: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/data-sources/budget_policy#key DataDatabricksBudgetPolicy#key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/data-sources/budget_policy#key DataDatabricksBudgetPolicy#key}.
 
 ---
 
@@ -761,7 +761,7 @@ public readonly value: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/data-sources/budget_policy#value DataDatabricksBudgetPolicy#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/data-sources/budget_policy#value DataDatabricksBudgetPolicy#value}.
 
 ---
 

@@ -4,7 +4,7 @@
 
 ### KnowledgeAssistantKnowledgeSource <a name="KnowledgeAssistantKnowledgeSource" id="@cdktn/provider-databricks.knowledgeAssistantKnowledgeSource.KnowledgeAssistantKnowledgeSource"></a>
 
-Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/knowledge_assistant_knowledge_source databricks_knowledge_assistant_knowledge_source}.
+Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/resources/knowledge_assistant_knowledge_source databricks_knowledge_assistant_knowledge_source}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.knowledgeAssistantKnowledgeSource.KnowledgeAssistantKnowledgeSource.Initializer"></a>
 
@@ -43,14 +43,14 @@ knowledgeAssistantKnowledgeSource.KnowledgeAssistantKnowledgeSource(
 | <code><a href="#@cdktn/provider-databricks.knowledgeAssistantKnowledgeSource.KnowledgeAssistantKnowledgeSource.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.knowledgeAssistantKnowledgeSource.KnowledgeAssistantKnowledgeSource.Initializer.parameter.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.knowledgeAssistantKnowledgeSource.KnowledgeAssistantKnowledgeSource.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-databricks.knowledgeAssistantKnowledgeSource.KnowledgeAssistantKnowledgeSource.Initializer.parameter.description">description</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/knowledge_assistant_knowledge_source#description KnowledgeAssistantKnowledgeSource#description}. |
-| <code><a href="#@cdktn/provider-databricks.knowledgeAssistantKnowledgeSource.KnowledgeAssistantKnowledgeSource.Initializer.parameter.displayName">display_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/knowledge_assistant_knowledge_source#display_name KnowledgeAssistantKnowledgeSource#display_name}. |
-| <code><a href="#@cdktn/provider-databricks.knowledgeAssistantKnowledgeSource.KnowledgeAssistantKnowledgeSource.Initializer.parameter.parent">parent</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/knowledge_assistant_knowledge_source#parent KnowledgeAssistantKnowledgeSource#parent}. |
-| <code><a href="#@cdktn/provider-databricks.knowledgeAssistantKnowledgeSource.KnowledgeAssistantKnowledgeSource.Initializer.parameter.sourceType">source_type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/knowledge_assistant_knowledge_source#source_type KnowledgeAssistantKnowledgeSource#source_type}. |
-| <code><a href="#@cdktn/provider-databricks.knowledgeAssistantKnowledgeSource.KnowledgeAssistantKnowledgeSource.Initializer.parameter.files">files</a></code> | <code><a href="#@cdktn/provider-databricks.knowledgeAssistantKnowledgeSource.KnowledgeAssistantKnowledgeSourceFiles">KnowledgeAssistantKnowledgeSourceFiles</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/knowledge_assistant_knowledge_source#files KnowledgeAssistantKnowledgeSource#files}. |
-| <code><a href="#@cdktn/provider-databricks.knowledgeAssistantKnowledgeSource.KnowledgeAssistantKnowledgeSource.Initializer.parameter.fileTable">file_table</a></code> | <code><a href="#@cdktn/provider-databricks.knowledgeAssistantKnowledgeSource.KnowledgeAssistantKnowledgeSourceFileTable">KnowledgeAssistantKnowledgeSourceFileTable</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/knowledge_assistant_knowledge_source#file_table KnowledgeAssistantKnowledgeSource#file_table}. |
-| <code><a href="#@cdktn/provider-databricks.knowledgeAssistantKnowledgeSource.KnowledgeAssistantKnowledgeSource.Initializer.parameter.index">index</a></code> | <code><a href="#@cdktn/provider-databricks.knowledgeAssistantKnowledgeSource.KnowledgeAssistantKnowledgeSourceIndex">KnowledgeAssistantKnowledgeSourceIndex</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/knowledge_assistant_knowledge_source#index KnowledgeAssistantKnowledgeSource#index}. |
-| <code><a href="#@cdktn/provider-databricks.knowledgeAssistantKnowledgeSource.KnowledgeAssistantKnowledgeSource.Initializer.parameter.providerConfig">provider_config</a></code> | <code><a href="#@cdktn/provider-databricks.knowledgeAssistantKnowledgeSource.KnowledgeAssistantKnowledgeSourceProviderConfig">KnowledgeAssistantKnowledgeSourceProviderConfig</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/knowledge_assistant_knowledge_source#provider_config KnowledgeAssistantKnowledgeSource#provider_config}. |
+| <code><a href="#@cdktn/provider-databricks.knowledgeAssistantKnowledgeSource.KnowledgeAssistantKnowledgeSource.Initializer.parameter.description">description</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/resources/knowledge_assistant_knowledge_source#description KnowledgeAssistantKnowledgeSource#description}. |
+| <code><a href="#@cdktn/provider-databricks.knowledgeAssistantKnowledgeSource.KnowledgeAssistantKnowledgeSource.Initializer.parameter.displayName">display_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/resources/knowledge_assistant_knowledge_source#display_name KnowledgeAssistantKnowledgeSource#display_name}. |
+| <code><a href="#@cdktn/provider-databricks.knowledgeAssistantKnowledgeSource.KnowledgeAssistantKnowledgeSource.Initializer.parameter.parent">parent</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/resources/knowledge_assistant_knowledge_source#parent KnowledgeAssistantKnowledgeSource#parent}. |
+| <code><a href="#@cdktn/provider-databricks.knowledgeAssistantKnowledgeSource.KnowledgeAssistantKnowledgeSource.Initializer.parameter.sourceType">source_type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/resources/knowledge_assistant_knowledge_source#source_type KnowledgeAssistantKnowledgeSource#source_type}. |
+| <code><a href="#@cdktn/provider-databricks.knowledgeAssistantKnowledgeSource.KnowledgeAssistantKnowledgeSource.Initializer.parameter.files">files</a></code> | <code><a href="#@cdktn/provider-databricks.knowledgeAssistantKnowledgeSource.KnowledgeAssistantKnowledgeSourceFiles">KnowledgeAssistantKnowledgeSourceFiles</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/resources/knowledge_assistant_knowledge_source#files KnowledgeAssistantKnowledgeSource#files}. |
+| <code><a href="#@cdktn/provider-databricks.knowledgeAssistantKnowledgeSource.KnowledgeAssistantKnowledgeSource.Initializer.parameter.fileTable">file_table</a></code> | <code><a href="#@cdktn/provider-databricks.knowledgeAssistantKnowledgeSource.KnowledgeAssistantKnowledgeSourceFileTable">KnowledgeAssistantKnowledgeSourceFileTable</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/resources/knowledge_assistant_knowledge_source#file_table KnowledgeAssistantKnowledgeSource#file_table}. |
+| <code><a href="#@cdktn/provider-databricks.knowledgeAssistantKnowledgeSource.KnowledgeAssistantKnowledgeSource.Initializer.parameter.index">index</a></code> | <code><a href="#@cdktn/provider-databricks.knowledgeAssistantKnowledgeSource.KnowledgeAssistantKnowledgeSourceIndex">KnowledgeAssistantKnowledgeSourceIndex</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/resources/knowledge_assistant_knowledge_source#index KnowledgeAssistantKnowledgeSource#index}. |
+| <code><a href="#@cdktn/provider-databricks.knowledgeAssistantKnowledgeSource.KnowledgeAssistantKnowledgeSource.Initializer.parameter.providerConfig">provider_config</a></code> | <code><a href="#@cdktn/provider-databricks.knowledgeAssistantKnowledgeSource.KnowledgeAssistantKnowledgeSourceProviderConfig">KnowledgeAssistantKnowledgeSourceProviderConfig</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/resources/knowledge_assistant_knowledge_source#provider_config KnowledgeAssistantKnowledgeSource#provider_config}. |
 
 ---
 
@@ -118,7 +118,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/knowledge_assistant_knowledge_source#description KnowledgeAssistantKnowledgeSource#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/resources/knowledge_assistant_knowledge_source#description KnowledgeAssistantKnowledgeSource#description}.
 
 ---
 
@@ -126,7 +126,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/knowledge_assistant_knowledge_source#display_name KnowledgeAssistantKnowledgeSource#display_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/resources/knowledge_assistant_knowledge_source#display_name KnowledgeAssistantKnowledgeSource#display_name}.
 
 ---
 
@@ -134,7 +134,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/knowledge_assistant_knowledge_source#parent KnowledgeAssistantKnowledgeSource#parent}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/resources/knowledge_assistant_knowledge_source#parent KnowledgeAssistantKnowledgeSource#parent}.
 
 ---
 
@@ -142,7 +142,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/knowledge_assistant_knowledge_source#source_type KnowledgeAssistantKnowledgeSource#source_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/resources/knowledge_assistant_knowledge_source#source_type KnowledgeAssistantKnowledgeSource#source_type}.
 
 ---
 
@@ -150,7 +150,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* <a href="#@cdktn/provider-databricks.knowledgeAssistantKnowledgeSource.KnowledgeAssistantKnowledgeSourceFiles">KnowledgeAssistantKnowledgeSourceFiles</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/knowledge_assistant_knowledge_source#files KnowledgeAssistantKnowledgeSource#files}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/resources/knowledge_assistant_knowledge_source#files KnowledgeAssistantKnowledgeSource#files}.
 
 ---
 
@@ -158,7 +158,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* <a href="#@cdktn/provider-databricks.knowledgeAssistantKnowledgeSource.KnowledgeAssistantKnowledgeSourceFileTable">KnowledgeAssistantKnowledgeSourceFileTable</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/knowledge_assistant_knowledge_source#file_table KnowledgeAssistantKnowledgeSource#file_table}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/resources/knowledge_assistant_knowledge_source#file_table KnowledgeAssistantKnowledgeSource#file_table}.
 
 ---
 
@@ -166,7 +166,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* <a href="#@cdktn/provider-databricks.knowledgeAssistantKnowledgeSource.KnowledgeAssistantKnowledgeSourceIndex">KnowledgeAssistantKnowledgeSourceIndex</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/knowledge_assistant_knowledge_source#index KnowledgeAssistantKnowledgeSource#index}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/resources/knowledge_assistant_knowledge_source#index KnowledgeAssistantKnowledgeSource#index}.
 
 ---
 
@@ -174,7 +174,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* <a href="#@cdktn/provider-databricks.knowledgeAssistantKnowledgeSource.KnowledgeAssistantKnowledgeSourceProviderConfig">KnowledgeAssistantKnowledgeSourceProviderConfig</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/knowledge_assistant_knowledge_source#provider_config KnowledgeAssistantKnowledgeSource#provider_config}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/resources/knowledge_assistant_knowledge_source#provider_config KnowledgeAssistantKnowledgeSource#provider_config}.
 
 ---
 
@@ -577,7 +577,7 @@ def put_files(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/knowledge_assistant_knowledge_source#path KnowledgeAssistantKnowledgeSource#path}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/resources/knowledge_assistant_knowledge_source#path KnowledgeAssistantKnowledgeSource#path}.
 
 ---
 
@@ -594,7 +594,7 @@ def put_file_table(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/knowledge_assistant_knowledge_source#file_col KnowledgeAssistantKnowledgeSource#file_col}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/resources/knowledge_assistant_knowledge_source#file_col KnowledgeAssistantKnowledgeSource#file_col}.
 
 ---
 
@@ -602,7 +602,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/knowledge_assistant_knowledge_source#table_name KnowledgeAssistantKnowledgeSource#table_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/resources/knowledge_assistant_knowledge_source#table_name KnowledgeAssistantKnowledgeSource#table_name}.
 
 ---
 
@@ -620,7 +620,7 @@ def put_index(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/knowledge_assistant_knowledge_source#doc_uri_col KnowledgeAssistantKnowledgeSource#doc_uri_col}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/resources/knowledge_assistant_knowledge_source#doc_uri_col KnowledgeAssistantKnowledgeSource#doc_uri_col}.
 
 ---
 
@@ -628,7 +628,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/knowledge_assistant_knowledge_source#index_name KnowledgeAssistantKnowledgeSource#index_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/resources/knowledge_assistant_knowledge_source#index_name KnowledgeAssistantKnowledgeSource#index_name}.
 
 ---
 
@@ -636,7 +636,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/knowledge_assistant_knowledge_source#text_col KnowledgeAssistantKnowledgeSource#text_col}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/resources/knowledge_assistant_knowledge_source#text_col KnowledgeAssistantKnowledgeSource#text_col}.
 
 ---
 
@@ -652,7 +652,7 @@ def put_provider_config(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/knowledge_assistant_knowledge_source#workspace_id KnowledgeAssistantKnowledgeSource#workspace_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/resources/knowledge_assistant_knowledge_source#workspace_id KnowledgeAssistantKnowledgeSource#workspace_id}.
 
 ---
 
@@ -794,7 +794,7 @@ The construct id used in the generated config for the KnowledgeAssistantKnowledg
 
 The id of the existing KnowledgeAssistantKnowledgeSource that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/knowledge_assistant_knowledge_source#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/resources/knowledge_assistant_knowledge_source#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1257,14 +1257,14 @@ knowledgeAssistantKnowledgeSource.KnowledgeAssistantKnowledgeSourceConfig(
 | <code><a href="#@cdktn/provider-databricks.knowledgeAssistantKnowledgeSource.KnowledgeAssistantKnowledgeSourceConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.knowledgeAssistantKnowledgeSource.KnowledgeAssistantKnowledgeSourceConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.knowledgeAssistantKnowledgeSource.KnowledgeAssistantKnowledgeSourceConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-databricks.knowledgeAssistantKnowledgeSource.KnowledgeAssistantKnowledgeSourceConfig.property.description">description</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/knowledge_assistant_knowledge_source#description KnowledgeAssistantKnowledgeSource#description}. |
-| <code><a href="#@cdktn/provider-databricks.knowledgeAssistantKnowledgeSource.KnowledgeAssistantKnowledgeSourceConfig.property.displayName">display_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/knowledge_assistant_knowledge_source#display_name KnowledgeAssistantKnowledgeSource#display_name}. |
-| <code><a href="#@cdktn/provider-databricks.knowledgeAssistantKnowledgeSource.KnowledgeAssistantKnowledgeSourceConfig.property.parent">parent</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/knowledge_assistant_knowledge_source#parent KnowledgeAssistantKnowledgeSource#parent}. |
-| <code><a href="#@cdktn/provider-databricks.knowledgeAssistantKnowledgeSource.KnowledgeAssistantKnowledgeSourceConfig.property.sourceType">source_type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/knowledge_assistant_knowledge_source#source_type KnowledgeAssistantKnowledgeSource#source_type}. |
-| <code><a href="#@cdktn/provider-databricks.knowledgeAssistantKnowledgeSource.KnowledgeAssistantKnowledgeSourceConfig.property.files">files</a></code> | <code><a href="#@cdktn/provider-databricks.knowledgeAssistantKnowledgeSource.KnowledgeAssistantKnowledgeSourceFiles">KnowledgeAssistantKnowledgeSourceFiles</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/knowledge_assistant_knowledge_source#files KnowledgeAssistantKnowledgeSource#files}. |
-| <code><a href="#@cdktn/provider-databricks.knowledgeAssistantKnowledgeSource.KnowledgeAssistantKnowledgeSourceConfig.property.fileTable">file_table</a></code> | <code><a href="#@cdktn/provider-databricks.knowledgeAssistantKnowledgeSource.KnowledgeAssistantKnowledgeSourceFileTable">KnowledgeAssistantKnowledgeSourceFileTable</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/knowledge_assistant_knowledge_source#file_table KnowledgeAssistantKnowledgeSource#file_table}. |
-| <code><a href="#@cdktn/provider-databricks.knowledgeAssistantKnowledgeSource.KnowledgeAssistantKnowledgeSourceConfig.property.index">index</a></code> | <code><a href="#@cdktn/provider-databricks.knowledgeAssistantKnowledgeSource.KnowledgeAssistantKnowledgeSourceIndex">KnowledgeAssistantKnowledgeSourceIndex</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/knowledge_assistant_knowledge_source#index KnowledgeAssistantKnowledgeSource#index}. |
-| <code><a href="#@cdktn/provider-databricks.knowledgeAssistantKnowledgeSource.KnowledgeAssistantKnowledgeSourceConfig.property.providerConfig">provider_config</a></code> | <code><a href="#@cdktn/provider-databricks.knowledgeAssistantKnowledgeSource.KnowledgeAssistantKnowledgeSourceProviderConfig">KnowledgeAssistantKnowledgeSourceProviderConfig</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/knowledge_assistant_knowledge_source#provider_config KnowledgeAssistantKnowledgeSource#provider_config}. |
+| <code><a href="#@cdktn/provider-databricks.knowledgeAssistantKnowledgeSource.KnowledgeAssistantKnowledgeSourceConfig.property.description">description</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/resources/knowledge_assistant_knowledge_source#description KnowledgeAssistantKnowledgeSource#description}. |
+| <code><a href="#@cdktn/provider-databricks.knowledgeAssistantKnowledgeSource.KnowledgeAssistantKnowledgeSourceConfig.property.displayName">display_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/resources/knowledge_assistant_knowledge_source#display_name KnowledgeAssistantKnowledgeSource#display_name}. |
+| <code><a href="#@cdktn/provider-databricks.knowledgeAssistantKnowledgeSource.KnowledgeAssistantKnowledgeSourceConfig.property.parent">parent</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/resources/knowledge_assistant_knowledge_source#parent KnowledgeAssistantKnowledgeSource#parent}. |
+| <code><a href="#@cdktn/provider-databricks.knowledgeAssistantKnowledgeSource.KnowledgeAssistantKnowledgeSourceConfig.property.sourceType">source_type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/resources/knowledge_assistant_knowledge_source#source_type KnowledgeAssistantKnowledgeSource#source_type}. |
+| <code><a href="#@cdktn/provider-databricks.knowledgeAssistantKnowledgeSource.KnowledgeAssistantKnowledgeSourceConfig.property.files">files</a></code> | <code><a href="#@cdktn/provider-databricks.knowledgeAssistantKnowledgeSource.KnowledgeAssistantKnowledgeSourceFiles">KnowledgeAssistantKnowledgeSourceFiles</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/resources/knowledge_assistant_knowledge_source#files KnowledgeAssistantKnowledgeSource#files}. |
+| <code><a href="#@cdktn/provider-databricks.knowledgeAssistantKnowledgeSource.KnowledgeAssistantKnowledgeSourceConfig.property.fileTable">file_table</a></code> | <code><a href="#@cdktn/provider-databricks.knowledgeAssistantKnowledgeSource.KnowledgeAssistantKnowledgeSourceFileTable">KnowledgeAssistantKnowledgeSourceFileTable</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/resources/knowledge_assistant_knowledge_source#file_table KnowledgeAssistantKnowledgeSource#file_table}. |
+| <code><a href="#@cdktn/provider-databricks.knowledgeAssistantKnowledgeSource.KnowledgeAssistantKnowledgeSourceConfig.property.index">index</a></code> | <code><a href="#@cdktn/provider-databricks.knowledgeAssistantKnowledgeSource.KnowledgeAssistantKnowledgeSourceIndex">KnowledgeAssistantKnowledgeSourceIndex</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/resources/knowledge_assistant_knowledge_source#index KnowledgeAssistantKnowledgeSource#index}. |
+| <code><a href="#@cdktn/provider-databricks.knowledgeAssistantKnowledgeSource.KnowledgeAssistantKnowledgeSourceConfig.property.providerConfig">provider_config</a></code> | <code><a href="#@cdktn/provider-databricks.knowledgeAssistantKnowledgeSource.KnowledgeAssistantKnowledgeSourceProviderConfig">KnowledgeAssistantKnowledgeSourceProviderConfig</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/resources/knowledge_assistant_knowledge_source#provider_config KnowledgeAssistantKnowledgeSource#provider_config}. |
 
 ---
 
@@ -1346,7 +1346,7 @@ description: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/knowledge_assistant_knowledge_source#description KnowledgeAssistantKnowledgeSource#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/resources/knowledge_assistant_knowledge_source#description KnowledgeAssistantKnowledgeSource#description}.
 
 ---
 
@@ -1358,7 +1358,7 @@ display_name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/knowledge_assistant_knowledge_source#display_name KnowledgeAssistantKnowledgeSource#display_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/resources/knowledge_assistant_knowledge_source#display_name KnowledgeAssistantKnowledgeSource#display_name}.
 
 ---
 
@@ -1370,7 +1370,7 @@ parent: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/knowledge_assistant_knowledge_source#parent KnowledgeAssistantKnowledgeSource#parent}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/resources/knowledge_assistant_knowledge_source#parent KnowledgeAssistantKnowledgeSource#parent}.
 
 ---
 
@@ -1382,7 +1382,7 @@ source_type: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/knowledge_assistant_knowledge_source#source_type KnowledgeAssistantKnowledgeSource#source_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/resources/knowledge_assistant_knowledge_source#source_type KnowledgeAssistantKnowledgeSource#source_type}.
 
 ---
 
@@ -1394,7 +1394,7 @@ files: KnowledgeAssistantKnowledgeSourceFiles
 
 - *Type:* <a href="#@cdktn/provider-databricks.knowledgeAssistantKnowledgeSource.KnowledgeAssistantKnowledgeSourceFiles">KnowledgeAssistantKnowledgeSourceFiles</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/knowledge_assistant_knowledge_source#files KnowledgeAssistantKnowledgeSource#files}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/resources/knowledge_assistant_knowledge_source#files KnowledgeAssistantKnowledgeSource#files}.
 
 ---
 
@@ -1406,7 +1406,7 @@ file_table: KnowledgeAssistantKnowledgeSourceFileTable
 
 - *Type:* <a href="#@cdktn/provider-databricks.knowledgeAssistantKnowledgeSource.KnowledgeAssistantKnowledgeSourceFileTable">KnowledgeAssistantKnowledgeSourceFileTable</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/knowledge_assistant_knowledge_source#file_table KnowledgeAssistantKnowledgeSource#file_table}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/resources/knowledge_assistant_knowledge_source#file_table KnowledgeAssistantKnowledgeSource#file_table}.
 
 ---
 
@@ -1418,7 +1418,7 @@ index: KnowledgeAssistantKnowledgeSourceIndex
 
 - *Type:* <a href="#@cdktn/provider-databricks.knowledgeAssistantKnowledgeSource.KnowledgeAssistantKnowledgeSourceIndex">KnowledgeAssistantKnowledgeSourceIndex</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/knowledge_assistant_knowledge_source#index KnowledgeAssistantKnowledgeSource#index}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/resources/knowledge_assistant_knowledge_source#index KnowledgeAssistantKnowledgeSource#index}.
 
 ---
 
@@ -1430,7 +1430,7 @@ provider_config: KnowledgeAssistantKnowledgeSourceProviderConfig
 
 - *Type:* <a href="#@cdktn/provider-databricks.knowledgeAssistantKnowledgeSource.KnowledgeAssistantKnowledgeSourceProviderConfig">KnowledgeAssistantKnowledgeSourceProviderConfig</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/knowledge_assistant_knowledge_source#provider_config KnowledgeAssistantKnowledgeSource#provider_config}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/resources/knowledge_assistant_knowledge_source#provider_config KnowledgeAssistantKnowledgeSource#provider_config}.
 
 ---
 
@@ -1450,7 +1450,7 @@ knowledgeAssistantKnowledgeSource.KnowledgeAssistantKnowledgeSourceFiles(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.knowledgeAssistantKnowledgeSource.KnowledgeAssistantKnowledgeSourceFiles.property.path">path</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/knowledge_assistant_knowledge_source#path KnowledgeAssistantKnowledgeSource#path}. |
+| <code><a href="#@cdktn/provider-databricks.knowledgeAssistantKnowledgeSource.KnowledgeAssistantKnowledgeSourceFiles.property.path">path</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/resources/knowledge_assistant_knowledge_source#path KnowledgeAssistantKnowledgeSource#path}. |
 
 ---
 
@@ -1462,7 +1462,7 @@ path: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/knowledge_assistant_knowledge_source#path KnowledgeAssistantKnowledgeSource#path}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/resources/knowledge_assistant_knowledge_source#path KnowledgeAssistantKnowledgeSource#path}.
 
 ---
 
@@ -1483,8 +1483,8 @@ knowledgeAssistantKnowledgeSource.KnowledgeAssistantKnowledgeSourceFileTable(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.knowledgeAssistantKnowledgeSource.KnowledgeAssistantKnowledgeSourceFileTable.property.fileCol">file_col</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/knowledge_assistant_knowledge_source#file_col KnowledgeAssistantKnowledgeSource#file_col}. |
-| <code><a href="#@cdktn/provider-databricks.knowledgeAssistantKnowledgeSource.KnowledgeAssistantKnowledgeSourceFileTable.property.tableName">table_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/knowledge_assistant_knowledge_source#table_name KnowledgeAssistantKnowledgeSource#table_name}. |
+| <code><a href="#@cdktn/provider-databricks.knowledgeAssistantKnowledgeSource.KnowledgeAssistantKnowledgeSourceFileTable.property.fileCol">file_col</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/resources/knowledge_assistant_knowledge_source#file_col KnowledgeAssistantKnowledgeSource#file_col}. |
+| <code><a href="#@cdktn/provider-databricks.knowledgeAssistantKnowledgeSource.KnowledgeAssistantKnowledgeSourceFileTable.property.tableName">table_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/resources/knowledge_assistant_knowledge_source#table_name KnowledgeAssistantKnowledgeSource#table_name}. |
 
 ---
 
@@ -1496,7 +1496,7 @@ file_col: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/knowledge_assistant_knowledge_source#file_col KnowledgeAssistantKnowledgeSource#file_col}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/resources/knowledge_assistant_knowledge_source#file_col KnowledgeAssistantKnowledgeSource#file_col}.
 
 ---
 
@@ -1508,7 +1508,7 @@ table_name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/knowledge_assistant_knowledge_source#table_name KnowledgeAssistantKnowledgeSource#table_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/resources/knowledge_assistant_knowledge_source#table_name KnowledgeAssistantKnowledgeSource#table_name}.
 
 ---
 
@@ -1530,9 +1530,9 @@ knowledgeAssistantKnowledgeSource.KnowledgeAssistantKnowledgeSourceIndex(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.knowledgeAssistantKnowledgeSource.KnowledgeAssistantKnowledgeSourceIndex.property.docUriCol">doc_uri_col</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/knowledge_assistant_knowledge_source#doc_uri_col KnowledgeAssistantKnowledgeSource#doc_uri_col}. |
-| <code><a href="#@cdktn/provider-databricks.knowledgeAssistantKnowledgeSource.KnowledgeAssistantKnowledgeSourceIndex.property.indexName">index_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/knowledge_assistant_knowledge_source#index_name KnowledgeAssistantKnowledgeSource#index_name}. |
-| <code><a href="#@cdktn/provider-databricks.knowledgeAssistantKnowledgeSource.KnowledgeAssistantKnowledgeSourceIndex.property.textCol">text_col</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/knowledge_assistant_knowledge_source#text_col KnowledgeAssistantKnowledgeSource#text_col}. |
+| <code><a href="#@cdktn/provider-databricks.knowledgeAssistantKnowledgeSource.KnowledgeAssistantKnowledgeSourceIndex.property.docUriCol">doc_uri_col</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/resources/knowledge_assistant_knowledge_source#doc_uri_col KnowledgeAssistantKnowledgeSource#doc_uri_col}. |
+| <code><a href="#@cdktn/provider-databricks.knowledgeAssistantKnowledgeSource.KnowledgeAssistantKnowledgeSourceIndex.property.indexName">index_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/resources/knowledge_assistant_knowledge_source#index_name KnowledgeAssistantKnowledgeSource#index_name}. |
+| <code><a href="#@cdktn/provider-databricks.knowledgeAssistantKnowledgeSource.KnowledgeAssistantKnowledgeSourceIndex.property.textCol">text_col</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/resources/knowledge_assistant_knowledge_source#text_col KnowledgeAssistantKnowledgeSource#text_col}. |
 
 ---
 
@@ -1544,7 +1544,7 @@ doc_uri_col: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/knowledge_assistant_knowledge_source#doc_uri_col KnowledgeAssistantKnowledgeSource#doc_uri_col}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/resources/knowledge_assistant_knowledge_source#doc_uri_col KnowledgeAssistantKnowledgeSource#doc_uri_col}.
 
 ---
 
@@ -1556,7 +1556,7 @@ index_name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/knowledge_assistant_knowledge_source#index_name KnowledgeAssistantKnowledgeSource#index_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/resources/knowledge_assistant_knowledge_source#index_name KnowledgeAssistantKnowledgeSource#index_name}.
 
 ---
 
@@ -1568,7 +1568,7 @@ text_col: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/knowledge_assistant_knowledge_source#text_col KnowledgeAssistantKnowledgeSource#text_col}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/resources/knowledge_assistant_knowledge_source#text_col KnowledgeAssistantKnowledgeSource#text_col}.
 
 ---
 
@@ -1588,7 +1588,7 @@ knowledgeAssistantKnowledgeSource.KnowledgeAssistantKnowledgeSourceProviderConfi
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.knowledgeAssistantKnowledgeSource.KnowledgeAssistantKnowledgeSourceProviderConfig.property.workspaceId">workspace_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/knowledge_assistant_knowledge_source#workspace_id KnowledgeAssistantKnowledgeSource#workspace_id}. |
+| <code><a href="#@cdktn/provider-databricks.knowledgeAssistantKnowledgeSource.KnowledgeAssistantKnowledgeSourceProviderConfig.property.workspaceId">workspace_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/resources/knowledge_assistant_knowledge_source#workspace_id KnowledgeAssistantKnowledgeSource#workspace_id}. |
 
 ---
 
@@ -1600,7 +1600,7 @@ workspace_id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/knowledge_assistant_knowledge_source#workspace_id KnowledgeAssistantKnowledgeSource#workspace_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/resources/knowledge_assistant_knowledge_source#workspace_id KnowledgeAssistantKnowledgeSource#workspace_id}.
 
 ---
 

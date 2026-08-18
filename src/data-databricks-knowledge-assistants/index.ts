@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/data-sources/knowledge_assistants
+// https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/data-sources/knowledge_assistants
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,17 +13,17 @@ import * as cdktn from 'cdktn';
 
 export interface DataDatabricksKnowledgeAssistantsConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/data-sources/knowledge_assistants#page_size DataDatabricksKnowledgeAssistants#page_size}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/data-sources/knowledge_assistants#page_size DataDatabricksKnowledgeAssistants#page_size}
   */
   readonly pageSize?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/data-sources/knowledge_assistants#provider_config DataDatabricksKnowledgeAssistants#provider_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/data-sources/knowledge_assistants#provider_config DataDatabricksKnowledgeAssistants#provider_config}
   */
   readonly providerConfig?: DataDatabricksKnowledgeAssistantsProviderConfig;
 }
 export interface DataDatabricksKnowledgeAssistantsKnowledgeAssistantsProviderConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/data-sources/knowledge_assistants#workspace_id DataDatabricksKnowledgeAssistants#workspace_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/data-sources/knowledge_assistants#workspace_id DataDatabricksKnowledgeAssistants#workspace_id}
   */
   readonly workspaceId?: string;
 }
@@ -117,11 +117,11 @@ export class DataDatabricksKnowledgeAssistantsKnowledgeAssistantsProviderConfigO
 }
 export interface DataDatabricksKnowledgeAssistantsKnowledgeAssistants {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/data-sources/knowledge_assistants#name DataDatabricksKnowledgeAssistants#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/data-sources/knowledge_assistants#name DataDatabricksKnowledgeAssistants#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/data-sources/knowledge_assistants#provider_config DataDatabricksKnowledgeAssistants#provider_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/data-sources/knowledge_assistants#provider_config DataDatabricksKnowledgeAssistants#provider_config}
   */
   readonly providerConfig?: DataDatabricksKnowledgeAssistantsKnowledgeAssistantsProviderConfig;
 }
@@ -303,7 +303,7 @@ export class DataDatabricksKnowledgeAssistantsKnowledgeAssistantsList extends cd
 }
 export interface DataDatabricksKnowledgeAssistantsProviderConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/data-sources/knowledge_assistants#workspace_id DataDatabricksKnowledgeAssistants#workspace_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/data-sources/knowledge_assistants#workspace_id DataDatabricksKnowledgeAssistants#workspace_id}
   */
   readonly workspaceId?: string;
 }
@@ -397,7 +397,7 @@ export class DataDatabricksKnowledgeAssistantsProviderConfigOutputReference exte
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/data-sources/knowledge_assistants databricks_knowledge_assistants}
+* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/data-sources/knowledge_assistants databricks_knowledge_assistants}
 */
 export class DataDatabricksKnowledgeAssistants extends cdktn.TerraformDataSource {
 
@@ -413,7 +413,7 @@ export class DataDatabricksKnowledgeAssistants extends cdktn.TerraformDataSource
   * Generates CDKTN code for importing a DataDatabricksKnowledgeAssistants resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataDatabricksKnowledgeAssistants to import
-  * @param importFromId The id of the existing DataDatabricksKnowledgeAssistants that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/data-sources/knowledge_assistants#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataDatabricksKnowledgeAssistants that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/data-sources/knowledge_assistants#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataDatabricksKnowledgeAssistants to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -425,7 +425,7 @@ export class DataDatabricksKnowledgeAssistants extends cdktn.TerraformDataSource
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/data-sources/knowledge_assistants databricks_knowledge_assistants} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/data-sources/knowledge_assistants databricks_knowledge_assistants} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -436,7 +436,7 @@ export class DataDatabricksKnowledgeAssistants extends cdktn.TerraformDataSource
       terraformResourceType: 'databricks_knowledge_assistants',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '1.126.0',
+        providerVersion: '1.127.0',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,

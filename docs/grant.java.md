@@ -4,7 +4,7 @@
 
 ### Grant <a name="Grant" id="@cdktn/provider-databricks.grant.Grant"></a>
 
-Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/grant databricks_grant}.
+Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/resources/grant databricks_grant}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.grant.Grant.Initializer"></a>
 
@@ -27,8 +27,11 @@ Grant.Builder.create(Construct scope, java.lang.String id)
 //  .foreignConnection(java.lang.String)
 //  .function(java.lang.String)
 //  .id(java.lang.String)
+//  .mcpService(java.lang.String)
 //  .metastore(java.lang.String)
 //  .model(java.lang.String)
+//  .modelProviderService(java.lang.String)
+//  .modelService(java.lang.String)
 //  .pipeline(java.lang.String)
 //  .providerConfig(GrantProviderConfig)
 //  .recipient(java.lang.String)
@@ -51,24 +54,27 @@ Grant.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktn/provider-databricks.grant.Grant.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>io.cdktn.cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.grant.Grant.Initializer.parameter.provider">provider</a></code> | <code>io.cdktn.cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.grant.Grant.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktn/provider-databricks.grant.Grant.Initializer.parameter.principal">principal</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/grant#principal Grant#principal}. |
-| <code><a href="#@cdktn/provider-databricks.grant.Grant.Initializer.parameter.privileges">privileges</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/grant#privileges Grant#privileges}. |
-| <code><a href="#@cdktn/provider-databricks.grant.Grant.Initializer.parameter.catalog">catalog</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/grant#catalog Grant#catalog}. |
-| <code><a href="#@cdktn/provider-databricks.grant.Grant.Initializer.parameter.credential">credential</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/grant#credential Grant#credential}. |
-| <code><a href="#@cdktn/provider-databricks.grant.Grant.Initializer.parameter.externalLocation">externalLocation</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/grant#external_location Grant#external_location}. |
-| <code><a href="#@cdktn/provider-databricks.grant.Grant.Initializer.parameter.foreignConnection">foreignConnection</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/grant#foreign_connection Grant#foreign_connection}. |
-| <code><a href="#@cdktn/provider-databricks.grant.Grant.Initializer.parameter.function">function</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/grant#function Grant#function}. |
-| <code><a href="#@cdktn/provider-databricks.grant.Grant.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/grant#id Grant#id}. |
-| <code><a href="#@cdktn/provider-databricks.grant.Grant.Initializer.parameter.metastore">metastore</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/grant#metastore Grant#metastore}. |
-| <code><a href="#@cdktn/provider-databricks.grant.Grant.Initializer.parameter.model">model</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/grant#model Grant#model}. |
-| <code><a href="#@cdktn/provider-databricks.grant.Grant.Initializer.parameter.pipeline">pipeline</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/grant#pipeline Grant#pipeline}. |
+| <code><a href="#@cdktn/provider-databricks.grant.Grant.Initializer.parameter.principal">principal</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/resources/grant#principal Grant#principal}. |
+| <code><a href="#@cdktn/provider-databricks.grant.Grant.Initializer.parameter.privileges">privileges</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/resources/grant#privileges Grant#privileges}. |
+| <code><a href="#@cdktn/provider-databricks.grant.Grant.Initializer.parameter.catalog">catalog</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/resources/grant#catalog Grant#catalog}. |
+| <code><a href="#@cdktn/provider-databricks.grant.Grant.Initializer.parameter.credential">credential</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/resources/grant#credential Grant#credential}. |
+| <code><a href="#@cdktn/provider-databricks.grant.Grant.Initializer.parameter.externalLocation">externalLocation</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/resources/grant#external_location Grant#external_location}. |
+| <code><a href="#@cdktn/provider-databricks.grant.Grant.Initializer.parameter.foreignConnection">foreignConnection</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/resources/grant#foreign_connection Grant#foreign_connection}. |
+| <code><a href="#@cdktn/provider-databricks.grant.Grant.Initializer.parameter.function">function</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/resources/grant#function Grant#function}. |
+| <code><a href="#@cdktn/provider-databricks.grant.Grant.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/resources/grant#id Grant#id}. |
+| <code><a href="#@cdktn/provider-databricks.grant.Grant.Initializer.parameter.mcpService">mcpService</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/resources/grant#mcp_service Grant#mcp_service}. |
+| <code><a href="#@cdktn/provider-databricks.grant.Grant.Initializer.parameter.metastore">metastore</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/resources/grant#metastore Grant#metastore}. |
+| <code><a href="#@cdktn/provider-databricks.grant.Grant.Initializer.parameter.model">model</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/resources/grant#model Grant#model}. |
+| <code><a href="#@cdktn/provider-databricks.grant.Grant.Initializer.parameter.modelProviderService">modelProviderService</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/resources/grant#model_provider_service Grant#model_provider_service}. |
+| <code><a href="#@cdktn/provider-databricks.grant.Grant.Initializer.parameter.modelService">modelService</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/resources/grant#model_service Grant#model_service}. |
+| <code><a href="#@cdktn/provider-databricks.grant.Grant.Initializer.parameter.pipeline">pipeline</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/resources/grant#pipeline Grant#pipeline}. |
 | <code><a href="#@cdktn/provider-databricks.grant.Grant.Initializer.parameter.providerConfig">providerConfig</a></code> | <code><a href="#@cdktn/provider-databricks.grant.GrantProviderConfig">GrantProviderConfig</a></code> | provider_config block. |
-| <code><a href="#@cdktn/provider-databricks.grant.Grant.Initializer.parameter.recipient">recipient</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/grant#recipient Grant#recipient}. |
-| <code><a href="#@cdktn/provider-databricks.grant.Grant.Initializer.parameter.schema">schema</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/grant#schema Grant#schema}. |
-| <code><a href="#@cdktn/provider-databricks.grant.Grant.Initializer.parameter.share">share</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/grant#share Grant#share}. |
-| <code><a href="#@cdktn/provider-databricks.grant.Grant.Initializer.parameter.storageCredential">storageCredential</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/grant#storage_credential Grant#storage_credential}. |
-| <code><a href="#@cdktn/provider-databricks.grant.Grant.Initializer.parameter.table">table</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/grant#table Grant#table}. |
-| <code><a href="#@cdktn/provider-databricks.grant.Grant.Initializer.parameter.volume">volume</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/grant#volume Grant#volume}. |
+| <code><a href="#@cdktn/provider-databricks.grant.Grant.Initializer.parameter.recipient">recipient</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/resources/grant#recipient Grant#recipient}. |
+| <code><a href="#@cdktn/provider-databricks.grant.Grant.Initializer.parameter.schema">schema</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/resources/grant#schema Grant#schema}. |
+| <code><a href="#@cdktn/provider-databricks.grant.Grant.Initializer.parameter.share">share</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/resources/grant#share Grant#share}. |
+| <code><a href="#@cdktn/provider-databricks.grant.Grant.Initializer.parameter.storageCredential">storageCredential</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/resources/grant#storage_credential Grant#storage_credential}. |
+| <code><a href="#@cdktn/provider-databricks.grant.Grant.Initializer.parameter.table">table</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/resources/grant#table Grant#table}. |
+| <code><a href="#@cdktn/provider-databricks.grant.Grant.Initializer.parameter.volume">volume</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/resources/grant#volume Grant#volume}. |
 
 ---
 
@@ -136,7 +142,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/grant#principal Grant#principal}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/resources/grant#principal Grant#principal}.
 
 ---
 
@@ -144,7 +150,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* java.util.List<java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/grant#privileges Grant#privileges}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/resources/grant#privileges Grant#privileges}.
 
 ---
 
@@ -152,7 +158,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/grant#catalog Grant#catalog}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/resources/grant#catalog Grant#catalog}.
 
 ---
 
@@ -160,7 +166,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/grant#credential Grant#credential}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/resources/grant#credential Grant#credential}.
 
 ---
 
@@ -168,7 +174,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/grant#external_location Grant#external_location}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/resources/grant#external_location Grant#external_location}.
 
 ---
 
@@ -176,7 +182,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/grant#foreign_connection Grant#foreign_connection}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/resources/grant#foreign_connection Grant#foreign_connection}.
 
 ---
 
@@ -184,7 +190,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/grant#function Grant#function}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/resources/grant#function Grant#function}.
 
 ---
 
@@ -192,10 +198,18 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/grant#id Grant#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/resources/grant#id Grant#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
+##### `mcpService`<sup>Optional</sup> <a name="mcpService" id="@cdktn/provider-databricks.grant.Grant.Initializer.parameter.mcpService"></a>
+
+- *Type:* java.lang.String
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/resources/grant#mcp_service Grant#mcp_service}.
 
 ---
 
@@ -203,7 +217,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/grant#metastore Grant#metastore}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/resources/grant#metastore Grant#metastore}.
 
 ---
 
@@ -211,7 +225,23 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/grant#model Grant#model}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/resources/grant#model Grant#model}.
+
+---
+
+##### `modelProviderService`<sup>Optional</sup> <a name="modelProviderService" id="@cdktn/provider-databricks.grant.Grant.Initializer.parameter.modelProviderService"></a>
+
+- *Type:* java.lang.String
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/resources/grant#model_provider_service Grant#model_provider_service}.
+
+---
+
+##### `modelService`<sup>Optional</sup> <a name="modelService" id="@cdktn/provider-databricks.grant.Grant.Initializer.parameter.modelService"></a>
+
+- *Type:* java.lang.String
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/resources/grant#model_service Grant#model_service}.
 
 ---
 
@@ -219,7 +249,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/grant#pipeline Grant#pipeline}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/resources/grant#pipeline Grant#pipeline}.
 
 ---
 
@@ -229,7 +259,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 provider_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/grant#provider_config Grant#provider_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/resources/grant#provider_config Grant#provider_config}
 
 ---
 
@@ -237,7 +267,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/grant#recipient Grant#recipient}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/resources/grant#recipient Grant#recipient}.
 
 ---
 
@@ -245,7 +275,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/grant#schema Grant#schema}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/resources/grant#schema Grant#schema}.
 
 ---
 
@@ -253,7 +283,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/grant#share Grant#share}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/resources/grant#share Grant#share}.
 
 ---
 
@@ -261,7 +291,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/grant#storage_credential Grant#storage_credential}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/resources/grant#storage_credential Grant#storage_credential}.
 
 ---
 
@@ -269,7 +299,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/grant#table Grant#table}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/resources/grant#table Grant#table}.
 
 ---
 
@@ -277,7 +307,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/grant#volume Grant#volume}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/resources/grant#volume Grant#volume}.
 
 ---
 
@@ -316,8 +346,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 | <code><a href="#@cdktn/provider-databricks.grant.Grant.resetForeignConnection">resetForeignConnection</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.grant.Grant.resetFunction">resetFunction</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.grant.Grant.resetId">resetId</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.grant.Grant.resetMcpService">resetMcpService</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.grant.Grant.resetMetastore">resetMetastore</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.grant.Grant.resetModel">resetModel</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.grant.Grant.resetModelProviderService">resetModelProviderService</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.grant.Grant.resetModelService">resetModelService</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.grant.Grant.resetPipeline">resetPipeline</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.grant.Grant.resetProviderConfig">resetProviderConfig</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.grant.Grant.resetRecipient">resetRecipient</a></code> | *No description.* |
@@ -688,6 +721,12 @@ public void resetFunction()
 public void resetId()
 ```
 
+##### `resetMcpService` <a name="resetMcpService" id="@cdktn/provider-databricks.grant.Grant.resetMcpService"></a>
+
+```java
+public void resetMcpService()
+```
+
 ##### `resetMetastore` <a name="resetMetastore" id="@cdktn/provider-databricks.grant.Grant.resetMetastore"></a>
 
 ```java
@@ -698,6 +737,18 @@ public void resetMetastore()
 
 ```java
 public void resetModel()
+```
+
+##### `resetModelProviderService` <a name="resetModelProviderService" id="@cdktn/provider-databricks.grant.Grant.resetModelProviderService"></a>
+
+```java
+public void resetModelProviderService()
+```
+
+##### `resetModelService` <a name="resetModelService" id="@cdktn/provider-databricks.grant.Grant.resetModelService"></a>
+
+```java
+public void resetModelService()
 ```
 
 ##### `resetPipeline` <a name="resetPipeline" id="@cdktn/provider-databricks.grant.Grant.resetPipeline"></a>
@@ -851,7 +902,7 @@ The construct id used in the generated config for the Grant to import.
 
 The id of the existing Grant that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/grant#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/resources/grant#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -888,8 +939,11 @@ Refer to the {@link https://registry.terraform.io/providers/databricks/databrick
 | <code><a href="#@cdktn/provider-databricks.grant.Grant.property.foreignConnectionInput">foreignConnectionInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.grant.Grant.property.functionInput">functionInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.grant.Grant.property.idInput">idInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.grant.Grant.property.mcpServiceInput">mcpServiceInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.grant.Grant.property.metastoreInput">metastoreInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.grant.Grant.property.modelInput">modelInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.grant.Grant.property.modelProviderServiceInput">modelProviderServiceInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.grant.Grant.property.modelServiceInput">modelServiceInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.grant.Grant.property.pipelineInput">pipelineInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.grant.Grant.property.principalInput">principalInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.grant.Grant.property.privilegesInput">privilegesInput</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
@@ -906,8 +960,11 @@ Refer to the {@link https://registry.terraform.io/providers/databricks/databrick
 | <code><a href="#@cdktn/provider-databricks.grant.Grant.property.foreignConnection">foreignConnection</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.grant.Grant.property.function">function</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.grant.Grant.property.id">id</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.grant.Grant.property.mcpService">mcpService</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.grant.Grant.property.metastore">metastore</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.grant.Grant.property.model">model</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.grant.Grant.property.modelProviderService">modelProviderService</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.grant.Grant.property.modelService">modelService</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.grant.Grant.property.pipeline">pipeline</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.grant.Grant.property.principal">principal</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.grant.Grant.property.privileges">privileges</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
@@ -1132,6 +1189,16 @@ public java.lang.String getIdInput();
 
 ---
 
+##### `mcpServiceInput`<sup>Optional</sup> <a name="mcpServiceInput" id="@cdktn/provider-databricks.grant.Grant.property.mcpServiceInput"></a>
+
+```java
+public java.lang.String getMcpServiceInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
 ##### `metastoreInput`<sup>Optional</sup> <a name="metastoreInput" id="@cdktn/provider-databricks.grant.Grant.property.metastoreInput"></a>
 
 ```java
@@ -1146,6 +1213,26 @@ public java.lang.String getMetastoreInput();
 
 ```java
 public java.lang.String getModelInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `modelProviderServiceInput`<sup>Optional</sup> <a name="modelProviderServiceInput" id="@cdktn/provider-databricks.grant.Grant.property.modelProviderServiceInput"></a>
+
+```java
+public java.lang.String getModelProviderServiceInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `modelServiceInput`<sup>Optional</sup> <a name="modelServiceInput" id="@cdktn/provider-databricks.grant.Grant.property.modelServiceInput"></a>
+
+```java
+public java.lang.String getModelServiceInput();
 ```
 
 - *Type:* java.lang.String
@@ -1312,6 +1399,16 @@ public java.lang.String getId();
 
 ---
 
+##### `mcpService`<sup>Required</sup> <a name="mcpService" id="@cdktn/provider-databricks.grant.Grant.property.mcpService"></a>
+
+```java
+public java.lang.String getMcpService();
+```
+
+- *Type:* java.lang.String
+
+---
+
 ##### `metastore`<sup>Required</sup> <a name="metastore" id="@cdktn/provider-databricks.grant.Grant.property.metastore"></a>
 
 ```java
@@ -1326,6 +1423,26 @@ public java.lang.String getMetastore();
 
 ```java
 public java.lang.String getModel();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `modelProviderService`<sup>Required</sup> <a name="modelProviderService" id="@cdktn/provider-databricks.grant.Grant.property.modelProviderService"></a>
+
+```java
+public java.lang.String getModelProviderService();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `modelService`<sup>Required</sup> <a name="modelService" id="@cdktn/provider-databricks.grant.Grant.property.modelService"></a>
+
+```java
+public java.lang.String getModelService();
 ```
 
 - *Type:* java.lang.String
@@ -1465,8 +1582,11 @@ GrantConfig.builder()
 //  .foreignConnection(java.lang.String)
 //  .function(java.lang.String)
 //  .id(java.lang.String)
+//  .mcpService(java.lang.String)
 //  .metastore(java.lang.String)
 //  .model(java.lang.String)
+//  .modelProviderService(java.lang.String)
+//  .modelService(java.lang.String)
 //  .pipeline(java.lang.String)
 //  .providerConfig(GrantProviderConfig)
 //  .recipient(java.lang.String)
@@ -1489,24 +1609,27 @@ GrantConfig.builder()
 | <code><a href="#@cdktn/provider-databricks.grant.GrantConfig.property.lifecycle">lifecycle</a></code> | <code>io.cdktn.cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.grant.GrantConfig.property.provider">provider</a></code> | <code>io.cdktn.cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.grant.GrantConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktn/provider-databricks.grant.GrantConfig.property.principal">principal</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/grant#principal Grant#principal}. |
-| <code><a href="#@cdktn/provider-databricks.grant.GrantConfig.property.privileges">privileges</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/grant#privileges Grant#privileges}. |
-| <code><a href="#@cdktn/provider-databricks.grant.GrantConfig.property.catalog">catalog</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/grant#catalog Grant#catalog}. |
-| <code><a href="#@cdktn/provider-databricks.grant.GrantConfig.property.credential">credential</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/grant#credential Grant#credential}. |
-| <code><a href="#@cdktn/provider-databricks.grant.GrantConfig.property.externalLocation">externalLocation</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/grant#external_location Grant#external_location}. |
-| <code><a href="#@cdktn/provider-databricks.grant.GrantConfig.property.foreignConnection">foreignConnection</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/grant#foreign_connection Grant#foreign_connection}. |
-| <code><a href="#@cdktn/provider-databricks.grant.GrantConfig.property.function">function</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/grant#function Grant#function}. |
-| <code><a href="#@cdktn/provider-databricks.grant.GrantConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/grant#id Grant#id}. |
-| <code><a href="#@cdktn/provider-databricks.grant.GrantConfig.property.metastore">metastore</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/grant#metastore Grant#metastore}. |
-| <code><a href="#@cdktn/provider-databricks.grant.GrantConfig.property.model">model</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/grant#model Grant#model}. |
-| <code><a href="#@cdktn/provider-databricks.grant.GrantConfig.property.pipeline">pipeline</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/grant#pipeline Grant#pipeline}. |
+| <code><a href="#@cdktn/provider-databricks.grant.GrantConfig.property.principal">principal</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/resources/grant#principal Grant#principal}. |
+| <code><a href="#@cdktn/provider-databricks.grant.GrantConfig.property.privileges">privileges</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/resources/grant#privileges Grant#privileges}. |
+| <code><a href="#@cdktn/provider-databricks.grant.GrantConfig.property.catalog">catalog</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/resources/grant#catalog Grant#catalog}. |
+| <code><a href="#@cdktn/provider-databricks.grant.GrantConfig.property.credential">credential</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/resources/grant#credential Grant#credential}. |
+| <code><a href="#@cdktn/provider-databricks.grant.GrantConfig.property.externalLocation">externalLocation</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/resources/grant#external_location Grant#external_location}. |
+| <code><a href="#@cdktn/provider-databricks.grant.GrantConfig.property.foreignConnection">foreignConnection</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/resources/grant#foreign_connection Grant#foreign_connection}. |
+| <code><a href="#@cdktn/provider-databricks.grant.GrantConfig.property.function">function</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/resources/grant#function Grant#function}. |
+| <code><a href="#@cdktn/provider-databricks.grant.GrantConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/resources/grant#id Grant#id}. |
+| <code><a href="#@cdktn/provider-databricks.grant.GrantConfig.property.mcpService">mcpService</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/resources/grant#mcp_service Grant#mcp_service}. |
+| <code><a href="#@cdktn/provider-databricks.grant.GrantConfig.property.metastore">metastore</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/resources/grant#metastore Grant#metastore}. |
+| <code><a href="#@cdktn/provider-databricks.grant.GrantConfig.property.model">model</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/resources/grant#model Grant#model}. |
+| <code><a href="#@cdktn/provider-databricks.grant.GrantConfig.property.modelProviderService">modelProviderService</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/resources/grant#model_provider_service Grant#model_provider_service}. |
+| <code><a href="#@cdktn/provider-databricks.grant.GrantConfig.property.modelService">modelService</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/resources/grant#model_service Grant#model_service}. |
+| <code><a href="#@cdktn/provider-databricks.grant.GrantConfig.property.pipeline">pipeline</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/resources/grant#pipeline Grant#pipeline}. |
 | <code><a href="#@cdktn/provider-databricks.grant.GrantConfig.property.providerConfig">providerConfig</a></code> | <code><a href="#@cdktn/provider-databricks.grant.GrantProviderConfig">GrantProviderConfig</a></code> | provider_config block. |
-| <code><a href="#@cdktn/provider-databricks.grant.GrantConfig.property.recipient">recipient</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/grant#recipient Grant#recipient}. |
-| <code><a href="#@cdktn/provider-databricks.grant.GrantConfig.property.schema">schema</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/grant#schema Grant#schema}. |
-| <code><a href="#@cdktn/provider-databricks.grant.GrantConfig.property.share">share</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/grant#share Grant#share}. |
-| <code><a href="#@cdktn/provider-databricks.grant.GrantConfig.property.storageCredential">storageCredential</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/grant#storage_credential Grant#storage_credential}. |
-| <code><a href="#@cdktn/provider-databricks.grant.GrantConfig.property.table">table</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/grant#table Grant#table}. |
-| <code><a href="#@cdktn/provider-databricks.grant.GrantConfig.property.volume">volume</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/grant#volume Grant#volume}. |
+| <code><a href="#@cdktn/provider-databricks.grant.GrantConfig.property.recipient">recipient</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/resources/grant#recipient Grant#recipient}. |
+| <code><a href="#@cdktn/provider-databricks.grant.GrantConfig.property.schema">schema</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/resources/grant#schema Grant#schema}. |
+| <code><a href="#@cdktn/provider-databricks.grant.GrantConfig.property.share">share</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/resources/grant#share Grant#share}. |
+| <code><a href="#@cdktn/provider-databricks.grant.GrantConfig.property.storageCredential">storageCredential</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/resources/grant#storage_credential Grant#storage_credential}. |
+| <code><a href="#@cdktn/provider-databricks.grant.GrantConfig.property.table">table</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/resources/grant#table Grant#table}. |
+| <code><a href="#@cdktn/provider-databricks.grant.GrantConfig.property.volume">volume</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/resources/grant#volume Grant#volume}. |
 
 ---
 
@@ -1588,7 +1711,7 @@ public java.lang.String getPrincipal();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/grant#principal Grant#principal}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/resources/grant#principal Grant#principal}.
 
 ---
 
@@ -1600,7 +1723,7 @@ public java.util.List<java.lang.String> getPrivileges();
 
 - *Type:* java.util.List<java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/grant#privileges Grant#privileges}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/resources/grant#privileges Grant#privileges}.
 
 ---
 
@@ -1612,7 +1735,7 @@ public java.lang.String getCatalog();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/grant#catalog Grant#catalog}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/resources/grant#catalog Grant#catalog}.
 
 ---
 
@@ -1624,7 +1747,7 @@ public java.lang.String getCredential();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/grant#credential Grant#credential}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/resources/grant#credential Grant#credential}.
 
 ---
 
@@ -1636,7 +1759,7 @@ public java.lang.String getExternalLocation();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/grant#external_location Grant#external_location}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/resources/grant#external_location Grant#external_location}.
 
 ---
 
@@ -1648,7 +1771,7 @@ public java.lang.String getForeignConnection();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/grant#foreign_connection Grant#foreign_connection}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/resources/grant#foreign_connection Grant#foreign_connection}.
 
 ---
 
@@ -1660,7 +1783,7 @@ public java.lang.String getFunction();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/grant#function Grant#function}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/resources/grant#function Grant#function}.
 
 ---
 
@@ -1672,10 +1795,22 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/grant#id Grant#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/resources/grant#id Grant#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
+##### `mcpService`<sup>Optional</sup> <a name="mcpService" id="@cdktn/provider-databricks.grant.GrantConfig.property.mcpService"></a>
+
+```java
+public java.lang.String getMcpService();
+```
+
+- *Type:* java.lang.String
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/resources/grant#mcp_service Grant#mcp_service}.
 
 ---
 
@@ -1687,7 +1822,7 @@ public java.lang.String getMetastore();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/grant#metastore Grant#metastore}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/resources/grant#metastore Grant#metastore}.
 
 ---
 
@@ -1699,7 +1834,31 @@ public java.lang.String getModel();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/grant#model Grant#model}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/resources/grant#model Grant#model}.
+
+---
+
+##### `modelProviderService`<sup>Optional</sup> <a name="modelProviderService" id="@cdktn/provider-databricks.grant.GrantConfig.property.modelProviderService"></a>
+
+```java
+public java.lang.String getModelProviderService();
+```
+
+- *Type:* java.lang.String
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/resources/grant#model_provider_service Grant#model_provider_service}.
+
+---
+
+##### `modelService`<sup>Optional</sup> <a name="modelService" id="@cdktn/provider-databricks.grant.GrantConfig.property.modelService"></a>
+
+```java
+public java.lang.String getModelService();
+```
+
+- *Type:* java.lang.String
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/resources/grant#model_service Grant#model_service}.
 
 ---
 
@@ -1711,7 +1870,7 @@ public java.lang.String getPipeline();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/grant#pipeline Grant#pipeline}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/resources/grant#pipeline Grant#pipeline}.
 
 ---
 
@@ -1725,7 +1884,7 @@ public GrantProviderConfig getProviderConfig();
 
 provider_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/grant#provider_config Grant#provider_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/resources/grant#provider_config Grant#provider_config}
 
 ---
 
@@ -1737,7 +1896,7 @@ public java.lang.String getRecipient();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/grant#recipient Grant#recipient}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/resources/grant#recipient Grant#recipient}.
 
 ---
 
@@ -1749,7 +1908,7 @@ public java.lang.String getSchema();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/grant#schema Grant#schema}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/resources/grant#schema Grant#schema}.
 
 ---
 
@@ -1761,7 +1920,7 @@ public java.lang.String getShare();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/grant#share Grant#share}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/resources/grant#share Grant#share}.
 
 ---
 
@@ -1773,7 +1932,7 @@ public java.lang.String getStorageCredential();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/grant#storage_credential Grant#storage_credential}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/resources/grant#storage_credential Grant#storage_credential}.
 
 ---
 
@@ -1785,7 +1944,7 @@ public java.lang.String getTable();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/grant#table Grant#table}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/resources/grant#table Grant#table}.
 
 ---
 
@@ -1797,7 +1956,7 @@ public java.lang.String getVolume();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/grant#volume Grant#volume}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/resources/grant#volume Grant#volume}.
 
 ---
 
@@ -1817,7 +1976,7 @@ GrantProviderConfig.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.grant.GrantProviderConfig.property.workspaceId">workspaceId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/grant#workspace_id Grant#workspace_id}. |
+| <code><a href="#@cdktn/provider-databricks.grant.GrantProviderConfig.property.workspaceId">workspaceId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/resources/grant#workspace_id Grant#workspace_id}. |
 
 ---
 
@@ -1829,7 +1988,7 @@ public java.lang.String getWorkspaceId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/grant#workspace_id Grant#workspace_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/resources/grant#workspace_id Grant#workspace_id}.
 
 ---
 

@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/user_role
+// https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/resources/user_role
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,34 +15,34 @@ export interface UserRoleConfig extends cdktn.TerraformMetaArguments {
   /**
   * Specifies whether to use account-level or workspace-level API. Valid values are `account` and `workspace`. When not set, the API level is inferred from the provider host.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/user_role#api UserRole#api}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/resources/user_role#api UserRole#api}
   */
   readonly api?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/user_role#id UserRole#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/resources/user_role#id UserRole#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/user_role#role UserRole#role}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/resources/user_role#role UserRole#role}
   */
   readonly role: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/user_role#user_id UserRole#user_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/resources/user_role#user_id UserRole#user_id}
   */
   readonly userId: string;
   /**
   * provider_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/user_role#provider_config UserRole#provider_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/resources/user_role#provider_config UserRole#provider_config}
   */
   readonly providerConfig?: UserRoleProviderConfig;
 }
 export interface UserRoleProviderConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/user_role#workspace_id UserRole#workspace_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/resources/user_role#workspace_id UserRole#workspace_id}
   */
   readonly workspaceId?: string;
 }
@@ -126,7 +126,7 @@ export class UserRoleProviderConfigOutputReference extends cdktn.ComplexObject {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/user_role databricks_user_role}
+* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/resources/user_role databricks_user_role}
 */
 export class UserRole extends cdktn.TerraformResource {
 
@@ -142,7 +142,7 @@ export class UserRole extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a UserRole resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the UserRole to import
-  * @param importFromId The id of the existing UserRole that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/user_role#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing UserRole that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/resources/user_role#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the UserRole to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -154,7 +154,7 @@ export class UserRole extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/user_role databricks_user_role} Resource
+  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/resources/user_role databricks_user_role} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -165,7 +165,7 @@ export class UserRole extends cdktn.TerraformResource {
       terraformResourceType: 'databricks_user_role',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '1.126.0',
+        providerVersion: '1.127.0',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,

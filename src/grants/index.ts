@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/grants
+// https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/resources/grants
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,88 +13,100 @@ import * as cdktn from 'cdktn';
 
 export interface GrantsConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/grants#catalog Grants#catalog}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/resources/grants#catalog Grants#catalog}
   */
   readonly catalog?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/grants#credential Grants#credential}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/resources/grants#credential Grants#credential}
   */
   readonly credential?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/grants#external_location Grants#external_location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/resources/grants#external_location Grants#external_location}
   */
   readonly externalLocation?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/grants#foreign_connection Grants#foreign_connection}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/resources/grants#foreign_connection Grants#foreign_connection}
   */
   readonly foreignConnection?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/grants#function Grants#function}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/resources/grants#function Grants#function}
   */
   readonly function?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/grants#id Grants#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/resources/grants#id Grants#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/grants#metastore Grants#metastore}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/resources/grants#mcp_service Grants#mcp_service}
+  */
+  readonly mcpService?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/resources/grants#metastore Grants#metastore}
   */
   readonly metastore?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/grants#model Grants#model}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/resources/grants#model Grants#model}
   */
   readonly model?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/grants#pipeline Grants#pipeline}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/resources/grants#model_provider_service Grants#model_provider_service}
+  */
+  readonly modelProviderService?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/resources/grants#model_service Grants#model_service}
+  */
+  readonly modelService?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/resources/grants#pipeline Grants#pipeline}
   */
   readonly pipeline?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/grants#recipient Grants#recipient}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/resources/grants#recipient Grants#recipient}
   */
   readonly recipient?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/grants#schema Grants#schema}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/resources/grants#schema Grants#schema}
   */
   readonly schema?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/grants#share Grants#share}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/resources/grants#share Grants#share}
   */
   readonly share?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/grants#storage_credential Grants#storage_credential}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/resources/grants#storage_credential Grants#storage_credential}
   */
   readonly storageCredential?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/grants#table Grants#table}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/resources/grants#table Grants#table}
   */
   readonly table?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/grants#volume Grants#volume}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/resources/grants#volume Grants#volume}
   */
   readonly volume?: string;
   /**
   * grant block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/grants#grant Grants#grant}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/resources/grants#grant Grants#grant}
   */
   readonly grant: GrantsGrant[] | cdktn.IResolvable;
   /**
   * provider_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/grants#provider_config Grants#provider_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/resources/grants#provider_config Grants#provider_config}
   */
   readonly providerConfig?: GrantsProviderConfig;
 }
 export interface GrantsGrant {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/grants#principal Grants#principal}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/resources/grants#principal Grants#principal}
   */
   readonly principal: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/grants#privileges Grants#privileges}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/resources/grants#privileges Grants#privileges}
   */
   readonly privileges: string[];
 }
@@ -233,7 +245,7 @@ export class GrantsGrantList extends cdktn.ComplexList {
 }
 export interface GrantsProviderConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/grants#workspace_id Grants#workspace_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/resources/grants#workspace_id Grants#workspace_id}
   */
   readonly workspaceId?: string;
 }
@@ -317,7 +329,7 @@ export class GrantsProviderConfigOutputReference extends cdktn.ComplexObject {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/grants databricks_grants}
+* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/resources/grants databricks_grants}
 */
 export class Grants extends cdktn.TerraformResource {
 
@@ -333,7 +345,7 @@ export class Grants extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a Grants resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the Grants to import
-  * @param importFromId The id of the existing Grants that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/grants#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing Grants that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/resources/grants#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the Grants to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -345,7 +357,7 @@ export class Grants extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/resources/grants databricks_grants} Resource
+  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/resources/grants databricks_grants} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -356,7 +368,7 @@ export class Grants extends cdktn.TerraformResource {
       terraformResourceType: 'databricks_grants',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '1.126.0',
+        providerVersion: '1.127.0',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,
@@ -373,8 +385,11 @@ export class Grants extends cdktn.TerraformResource {
     this._foreignConnection = config.foreignConnection;
     this._function = config.function;
     this._id = config.id;
+    this._mcpService = config.mcpService;
     this._metastore = config.metastore;
     this._model = config.model;
+    this._modelProviderService = config.modelProviderService;
+    this._modelService = config.modelService;
     this._pipeline = config.pipeline;
     this._recipient = config.recipient;
     this._schema = config.schema;
@@ -486,6 +501,22 @@ export class Grants extends cdktn.TerraformResource {
     return this._id;
   }
 
+  // mcp_service - computed: false, optional: true, required: false
+  private _mcpService?: string; 
+  public get mcpService() {
+    return this.getStringAttribute('mcp_service');
+  }
+  public set mcpService(value: string) {
+    this._mcpService = value;
+  }
+  public resetMcpService() {
+    this._mcpService = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get mcpServiceInput() {
+    return this._mcpService;
+  }
+
   // metastore - computed: false, optional: true, required: false
   private _metastore?: string; 
   public get metastore() {
@@ -516,6 +547,38 @@ export class Grants extends cdktn.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get modelInput() {
     return this._model;
+  }
+
+  // model_provider_service - computed: false, optional: true, required: false
+  private _modelProviderService?: string; 
+  public get modelProviderService() {
+    return this.getStringAttribute('model_provider_service');
+  }
+  public set modelProviderService(value: string) {
+    this._modelProviderService = value;
+  }
+  public resetModelProviderService() {
+    this._modelProviderService = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get modelProviderServiceInput() {
+    return this._modelProviderService;
+  }
+
+  // model_service - computed: false, optional: true, required: false
+  private _modelService?: string; 
+  public get modelService() {
+    return this.getStringAttribute('model_service');
+  }
+  public set modelService(value: string) {
+    this._modelService = value;
+  }
+  public resetModelService() {
+    this._modelService = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get modelServiceInput() {
+    return this._modelService;
   }
 
   // pipeline - computed: false, optional: true, required: false
@@ -671,8 +734,11 @@ export class Grants extends cdktn.TerraformResource {
       foreign_connection: cdktn.stringToTerraform(this._foreignConnection),
       function: cdktn.stringToTerraform(this._function),
       id: cdktn.stringToTerraform(this._id),
+      mcp_service: cdktn.stringToTerraform(this._mcpService),
       metastore: cdktn.stringToTerraform(this._metastore),
       model: cdktn.stringToTerraform(this._model),
+      model_provider_service: cdktn.stringToTerraform(this._modelProviderService),
+      model_service: cdktn.stringToTerraform(this._modelService),
       pipeline: cdktn.stringToTerraform(this._pipeline),
       recipient: cdktn.stringToTerraform(this._recipient),
       schema: cdktn.stringToTerraform(this._schema),
@@ -723,6 +789,12 @@ export class Grants extends cdktn.TerraformResource {
         type: "simple",
         storageClassType: "string",
       },
+      mcp_service: {
+        value: cdktn.stringToHclTerraform(this._mcpService),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
       metastore: {
         value: cdktn.stringToHclTerraform(this._metastore),
         isBlock: false,
@@ -731,6 +803,18 @@ export class Grants extends cdktn.TerraformResource {
       },
       model: {
         value: cdktn.stringToHclTerraform(this._model),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      model_provider_service: {
+        value: cdktn.stringToHclTerraform(this._modelProviderService),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      model_service: {
+        value: cdktn.stringToHclTerraform(this._modelService),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

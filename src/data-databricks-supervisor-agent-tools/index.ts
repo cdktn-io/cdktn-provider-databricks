@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/data-sources/supervisor_agent_tools
+// https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/data-sources/supervisor_agent_tools
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,21 +13,21 @@ import * as cdktn from 'cdktn';
 
 export interface DataDatabricksSupervisorAgentToolsConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/data-sources/supervisor_agent_tools#page_size DataDatabricksSupervisorAgentTools#page_size}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/data-sources/supervisor_agent_tools#page_size DataDatabricksSupervisorAgentTools#page_size}
   */
   readonly pageSize?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/data-sources/supervisor_agent_tools#parent DataDatabricksSupervisorAgentTools#parent}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/data-sources/supervisor_agent_tools#parent DataDatabricksSupervisorAgentTools#parent}
   */
   readonly parent: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/data-sources/supervisor_agent_tools#provider_config DataDatabricksSupervisorAgentTools#provider_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/data-sources/supervisor_agent_tools#provider_config DataDatabricksSupervisorAgentTools#provider_config}
   */
   readonly providerConfig?: DataDatabricksSupervisorAgentToolsProviderConfig;
 }
 export interface DataDatabricksSupervisorAgentToolsProviderConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/data-sources/supervisor_agent_tools#workspace_id DataDatabricksSupervisorAgentTools#workspace_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/data-sources/supervisor_agent_tools#workspace_id DataDatabricksSupervisorAgentTools#workspace_id}
   */
   readonly workspaceId?: string;
 }
@@ -121,7 +121,7 @@ export class DataDatabricksSupervisorAgentToolsProviderConfigOutputReference ext
 }
 export interface DataDatabricksSupervisorAgentToolsToolsApp {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/data-sources/supervisor_agent_tools#name DataDatabricksSupervisorAgentTools#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/data-sources/supervisor_agent_tools#name DataDatabricksSupervisorAgentTools#name}
   */
   readonly name: string;
 }
@@ -202,7 +202,7 @@ export class DataDatabricksSupervisorAgentToolsToolsAppOutputReference extends c
 }
 export interface DataDatabricksSupervisorAgentToolsToolsGenieSpace {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/data-sources/supervisor_agent_tools#id DataDatabricksSupervisorAgentTools#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/data-sources/supervisor_agent_tools#id DataDatabricksSupervisorAgentTools#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -286,11 +286,11 @@ export class DataDatabricksSupervisorAgentToolsToolsGenieSpaceOutputReference ex
 }
 export interface DataDatabricksSupervisorAgentToolsToolsKnowledgeAssistant {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/data-sources/supervisor_agent_tools#knowledge_assistant_id DataDatabricksSupervisorAgentTools#knowledge_assistant_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/data-sources/supervisor_agent_tools#knowledge_assistant_id DataDatabricksSupervisorAgentTools#knowledge_assistant_id}
   */
   readonly knowledgeAssistantId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/data-sources/supervisor_agent_tools#serving_endpoint_name DataDatabricksSupervisorAgentTools#serving_endpoint_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/data-sources/supervisor_agent_tools#serving_endpoint_name DataDatabricksSupervisorAgentTools#serving_endpoint_name}
   */
   readonly servingEndpointName?: string;
 }
@@ -400,7 +400,7 @@ export class DataDatabricksSupervisorAgentToolsToolsKnowledgeAssistantOutputRefe
 }
 export interface DataDatabricksSupervisorAgentToolsToolsProviderConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/data-sources/supervisor_agent_tools#workspace_id DataDatabricksSupervisorAgentTools#workspace_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/data-sources/supervisor_agent_tools#workspace_id DataDatabricksSupervisorAgentTools#workspace_id}
   */
   readonly workspaceId?: string;
 }
@@ -494,7 +494,7 @@ export class DataDatabricksSupervisorAgentToolsToolsProviderConfigOutputReferenc
 }
 export interface DataDatabricksSupervisorAgentToolsToolsUcConnection {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/data-sources/supervisor_agent_tools#name DataDatabricksSupervisorAgentTools#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/data-sources/supervisor_agent_tools#name DataDatabricksSupervisorAgentTools#name}
   */
   readonly name: string;
 }
@@ -575,7 +575,7 @@ export class DataDatabricksSupervisorAgentToolsToolsUcConnectionOutputReference 
 }
 export interface DataDatabricksSupervisorAgentToolsToolsUcFunction {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/data-sources/supervisor_agent_tools#name DataDatabricksSupervisorAgentTools#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/data-sources/supervisor_agent_tools#name DataDatabricksSupervisorAgentTools#name}
   */
   readonly name: string;
 }
@@ -656,7 +656,7 @@ export class DataDatabricksSupervisorAgentToolsToolsUcFunctionOutputReference ex
 }
 export interface DataDatabricksSupervisorAgentToolsToolsVolume {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/data-sources/supervisor_agent_tools#name DataDatabricksSupervisorAgentTools#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/data-sources/supervisor_agent_tools#name DataDatabricksSupervisorAgentTools#name}
   */
   readonly name: string;
 }
@@ -737,11 +737,11 @@ export class DataDatabricksSupervisorAgentToolsToolsVolumeOutputReference extend
 }
 export interface DataDatabricksSupervisorAgentToolsTools {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/data-sources/supervisor_agent_tools#name DataDatabricksSupervisorAgentTools#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/data-sources/supervisor_agent_tools#name DataDatabricksSupervisorAgentTools#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/data-sources/supervisor_agent_tools#provider_config DataDatabricksSupervisorAgentTools#provider_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/data-sources/supervisor_agent_tools#provider_config DataDatabricksSupervisorAgentTools#provider_config}
   */
   readonly providerConfig?: DataDatabricksSupervisorAgentToolsToolsProviderConfig;
 }
@@ -929,7 +929,7 @@ export class DataDatabricksSupervisorAgentToolsToolsList extends cdktn.ComplexLi
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/data-sources/supervisor_agent_tools databricks_supervisor_agent_tools}
+* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/data-sources/supervisor_agent_tools databricks_supervisor_agent_tools}
 */
 export class DataDatabricksSupervisorAgentTools extends cdktn.TerraformDataSource {
 
@@ -945,7 +945,7 @@ export class DataDatabricksSupervisorAgentTools extends cdktn.TerraformDataSourc
   * Generates CDKTN code for importing a DataDatabricksSupervisorAgentTools resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataDatabricksSupervisorAgentTools to import
-  * @param importFromId The id of the existing DataDatabricksSupervisorAgentTools that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/data-sources/supervisor_agent_tools#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataDatabricksSupervisorAgentTools that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/data-sources/supervisor_agent_tools#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataDatabricksSupervisorAgentTools to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -957,7 +957,7 @@ export class DataDatabricksSupervisorAgentTools extends cdktn.TerraformDataSourc
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/data-sources/supervisor_agent_tools databricks_supervisor_agent_tools} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/data-sources/supervisor_agent_tools databricks_supervisor_agent_tools} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -968,7 +968,7 @@ export class DataDatabricksSupervisorAgentTools extends cdktn.TerraformDataSourc
       terraformResourceType: 'databricks_supervisor_agent_tools',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '1.126.0',
+        providerVersion: '1.127.0',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,

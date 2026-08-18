@@ -4,7 +4,7 @@
 
 ### DataDatabricksMwsCredentials <a name="DataDatabricksMwsCredentials" id="@cdktn/provider-databricks.dataDatabricksMwsCredentials.DataDatabricksMwsCredentials"></a>
 
-Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/data-sources/mws_credentials databricks_mws_credentials}.
+Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/data-sources/mws_credentials databricks_mws_credentials}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksMwsCredentials.DataDatabricksMwsCredentials.Initializer"></a>
 
@@ -421,7 +421,7 @@ The construct id used in the generated config for the DataDatabricksMwsCredentia
 
 The id of the existing DataDatabricksMwsCredentials that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/data-sources/mws_credentials#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/data-sources/mws_credentials#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -681,8 +681,8 @@ const dataDatabricksMwsCredentialsConfig: dataDatabricksMwsCredentials.DataDatab
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksMwsCredentials.DataDatabricksMwsCredentialsConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksMwsCredentials.DataDatabricksMwsCredentialsConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksMwsCredentials.DataDatabricksMwsCredentialsConfig.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksMwsCredentials.DataDatabricksMwsCredentialsConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/data-sources/mws_credentials#id DataDatabricksMwsCredentials#id}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksMwsCredentials.DataDatabricksMwsCredentialsConfig.property.ids">ids</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/data-sources/mws_credentials#ids DataDatabricksMwsCredentials#ids}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksMwsCredentials.DataDatabricksMwsCredentialsConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/data-sources/mws_credentials#id DataDatabricksMwsCredentials#id}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksMwsCredentials.DataDatabricksMwsCredentialsConfig.property.ids">ids</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/data-sources/mws_credentials#ids DataDatabricksMwsCredentials#ids}. |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksMwsCredentials.DataDatabricksMwsCredentialsConfig.property.providerConfig">providerConfig</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksMwsCredentials.DataDatabricksMwsCredentialsProviderConfig">DataDatabricksMwsCredentialsProviderConfig</a></code> | provider_config block. |
 
 ---
@@ -765,7 +765,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/data-sources/mws_credentials#id DataDatabricksMwsCredentials#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/data-sources/mws_credentials#id DataDatabricksMwsCredentials#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -780,7 +780,7 @@ public readonly ids: {[ key: string ]: string};
 
 - *Type:* {[ key: string ]: string}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/data-sources/mws_credentials#ids DataDatabricksMwsCredentials#ids}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/data-sources/mws_credentials#ids DataDatabricksMwsCredentials#ids}.
 
 ---
 
@@ -794,7 +794,7 @@ public readonly providerConfig: DataDatabricksMwsCredentialsProviderConfig;
 
 provider_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/data-sources/mws_credentials#provider_config DataDatabricksMwsCredentials#provider_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/data-sources/mws_credentials#provider_config DataDatabricksMwsCredentials#provider_config}
 
 ---
 
@@ -812,7 +812,7 @@ const dataDatabricksMwsCredentialsProviderConfig: dataDatabricksMwsCredentials.D
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksMwsCredentials.DataDatabricksMwsCredentialsProviderConfig.property.workspaceId">workspaceId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/data-sources/mws_credentials#workspace_id DataDatabricksMwsCredentials#workspace_id}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksMwsCredentials.DataDatabricksMwsCredentialsProviderConfig.property.workspaceId">workspaceId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/data-sources/mws_credentials#workspace_id DataDatabricksMwsCredentials#workspace_id}. |
 
 ---
 
@@ -824,7 +824,7 @@ public readonly workspaceId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.126.0/docs/data-sources/mws_credentials#workspace_id DataDatabricksMwsCredentials#workspace_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/data-sources/mws_credentials#workspace_id DataDatabricksMwsCredentials#workspace_id}.
 
 ---
 
