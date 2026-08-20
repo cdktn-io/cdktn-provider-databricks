@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/data-sources/ai_gateway_mcp_services
+// https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/data-sources/ai_gateway_mcp_services
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,53 +13,49 @@ import * as cdktn from 'cdktn';
 
 export interface DataDatabricksAiGatewayMcpServicesConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/data-sources/ai_gateway_mcp_services#include_browse DataDatabricksAiGatewayMcpServices#include_browse}
-  */
-  readonly includeBrowse?: boolean | cdktn.IResolvable;
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/data-sources/ai_gateway_mcp_services#page_size DataDatabricksAiGatewayMcpServices#page_size}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/data-sources/ai_gateway_mcp_services#page_size DataDatabricksAiGatewayMcpServices#page_size}
   */
   readonly pageSize?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/data-sources/ai_gateway_mcp_services#parent DataDatabricksAiGatewayMcpServices#parent}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/data-sources/ai_gateway_mcp_services#parent DataDatabricksAiGatewayMcpServices#parent}
   */
   readonly parent?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/data-sources/ai_gateway_mcp_services#provider_config DataDatabricksAiGatewayMcpServices#provider_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/data-sources/ai_gateway_mcp_services#provider_config DataDatabricksAiGatewayMcpServices#provider_config}
   */
   readonly providerConfig?: DataDatabricksAiGatewayMcpServicesProviderConfig;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/data-sources/ai_gateway_mcp_services#view DataDatabricksAiGatewayMcpServices#view}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/data-sources/ai_gateway_mcp_services#view DataDatabricksAiGatewayMcpServices#view}
   */
   readonly view?: string;
 }
 export interface DataDatabricksAiGatewayMcpServicesMcpServicesConfigRateLimits {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/data-sources/ai_gateway_mcp_services#key DataDatabricksAiGatewayMcpServices#key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/data-sources/ai_gateway_mcp_services#key DataDatabricksAiGatewayMcpServices#key}
   */
   readonly key: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/data-sources/ai_gateway_mcp_services#principal DataDatabricksAiGatewayMcpServices#principal}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/data-sources/ai_gateway_mcp_services#principal DataDatabricksAiGatewayMcpServices#principal}
   */
   readonly principal?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/data-sources/ai_gateway_mcp_services#renewal_period DataDatabricksAiGatewayMcpServices#renewal_period}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/data-sources/ai_gateway_mcp_services#renewal_period DataDatabricksAiGatewayMcpServices#renewal_period}
   */
   readonly renewalPeriod: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/data-sources/ai_gateway_mcp_services#request_tag_key DataDatabricksAiGatewayMcpServices#request_tag_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/data-sources/ai_gateway_mcp_services#request_tag_key DataDatabricksAiGatewayMcpServices#request_tag_key}
   */
   readonly requestTagKey?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/data-sources/ai_gateway_mcp_services#request_tag_value DataDatabricksAiGatewayMcpServices#request_tag_value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/data-sources/ai_gateway_mcp_services#request_tag_value DataDatabricksAiGatewayMcpServices#request_tag_value}
   */
   readonly requestTagValue?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/data-sources/ai_gateway_mcp_services#requests DataDatabricksAiGatewayMcpServices#requests}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/data-sources/ai_gateway_mcp_services#requests DataDatabricksAiGatewayMcpServices#requests}
   */
   readonly requests?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/data-sources/ai_gateway_mcp_services#tokens DataDatabricksAiGatewayMcpServices#tokens}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/data-sources/ai_gateway_mcp_services#tokens DataDatabricksAiGatewayMcpServices#tokens}
   */
   readonly tokens?: number;
 }
@@ -343,7 +339,7 @@ export class DataDatabricksAiGatewayMcpServicesMcpServicesConfigRateLimitsList e
 }
 export interface DataDatabricksAiGatewayMcpServicesMcpServicesConfigSourceConnection {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/data-sources/ai_gateway_mcp_services#name DataDatabricksAiGatewayMcpServices#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/data-sources/ai_gateway_mcp_services#name DataDatabricksAiGatewayMcpServices#name}
   */
   readonly name: string;
 }
@@ -439,15 +435,15 @@ export class DataDatabricksAiGatewayMcpServicesMcpServicesConfigSourceConnection
 }
 export interface DataDatabricksAiGatewayMcpServicesMcpServicesConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/data-sources/ai_gateway_mcp_services#include_tool_selectors DataDatabricksAiGatewayMcpServices#include_tool_selectors}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/data-sources/ai_gateway_mcp_services#include_tool_selectors DataDatabricksAiGatewayMcpServices#include_tool_selectors}
   */
   readonly includeToolSelectors?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/data-sources/ai_gateway_mcp_services#rate_limits DataDatabricksAiGatewayMcpServices#rate_limits}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/data-sources/ai_gateway_mcp_services#rate_limits DataDatabricksAiGatewayMcpServices#rate_limits}
   */
   readonly rateLimits?: DataDatabricksAiGatewayMcpServicesMcpServicesConfigRateLimits[] | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/data-sources/ai_gateway_mcp_services#source_connection DataDatabricksAiGatewayMcpServices#source_connection}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/data-sources/ai_gateway_mcp_services#source_connection DataDatabricksAiGatewayMcpServices#source_connection}
   */
   readonly sourceConnection?: DataDatabricksAiGatewayMcpServicesMcpServicesConfigSourceConnection;
 }
@@ -589,7 +585,7 @@ export class DataDatabricksAiGatewayMcpServicesMcpServicesConfigOutputReference 
 }
 export interface DataDatabricksAiGatewayMcpServicesMcpServicesProviderConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/data-sources/ai_gateway_mcp_services#workspace_id DataDatabricksAiGatewayMcpServices#workspace_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/data-sources/ai_gateway_mcp_services#workspace_id DataDatabricksAiGatewayMcpServices#workspace_id}
   */
   readonly workspaceId?: string;
 }
@@ -683,11 +679,11 @@ export class DataDatabricksAiGatewayMcpServicesMcpServicesProviderConfigOutputRe
 }
 export interface DataDatabricksAiGatewayMcpServicesMcpServices {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/data-sources/ai_gateway_mcp_services#name DataDatabricksAiGatewayMcpServices#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/data-sources/ai_gateway_mcp_services#name DataDatabricksAiGatewayMcpServices#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/data-sources/ai_gateway_mcp_services#provider_config DataDatabricksAiGatewayMcpServices#provider_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/data-sources/ai_gateway_mcp_services#provider_config DataDatabricksAiGatewayMcpServices#provider_config}
   */
   readonly providerConfig?: DataDatabricksAiGatewayMcpServicesMcpServicesProviderConfig;
 }
@@ -766,11 +762,6 @@ export class DataDatabricksAiGatewayMcpServicesMcpServicesOutputReference extend
       this._name = value.name;
       this._providerConfig.internalValue = value.providerConfig;
     }
-  }
-
-  // browse_only - computed: true, optional: false, required: false
-  public get browseOnly() {
-    return this.getBooleanAttribute('browse_only');
   }
 
   // comment - computed: true, optional: false, required: false
@@ -875,7 +866,7 @@ export class DataDatabricksAiGatewayMcpServicesMcpServicesList extends cdktn.Com
 }
 export interface DataDatabricksAiGatewayMcpServicesProviderConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/data-sources/ai_gateway_mcp_services#workspace_id DataDatabricksAiGatewayMcpServices#workspace_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/data-sources/ai_gateway_mcp_services#workspace_id DataDatabricksAiGatewayMcpServices#workspace_id}
   */
   readonly workspaceId?: string;
 }
@@ -969,7 +960,7 @@ export class DataDatabricksAiGatewayMcpServicesProviderConfigOutputReference ext
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/data-sources/ai_gateway_mcp_services databricks_ai_gateway_mcp_services}
+* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/data-sources/ai_gateway_mcp_services databricks_ai_gateway_mcp_services}
 */
 export class DataDatabricksAiGatewayMcpServices extends cdktn.TerraformDataSource {
 
@@ -985,7 +976,7 @@ export class DataDatabricksAiGatewayMcpServices extends cdktn.TerraformDataSourc
   * Generates CDKTN code for importing a DataDatabricksAiGatewayMcpServices resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataDatabricksAiGatewayMcpServices to import
-  * @param importFromId The id of the existing DataDatabricksAiGatewayMcpServices that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/data-sources/ai_gateway_mcp_services#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataDatabricksAiGatewayMcpServices that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/data-sources/ai_gateway_mcp_services#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataDatabricksAiGatewayMcpServices to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -997,7 +988,7 @@ export class DataDatabricksAiGatewayMcpServices extends cdktn.TerraformDataSourc
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/data-sources/ai_gateway_mcp_services databricks_ai_gateway_mcp_services} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/data-sources/ai_gateway_mcp_services databricks_ai_gateway_mcp_services} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -1008,7 +999,7 @@ export class DataDatabricksAiGatewayMcpServices extends cdktn.TerraformDataSourc
       terraformResourceType: 'databricks_ai_gateway_mcp_services',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '1.127.0',
+        providerVersion: '1.128.0',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,
@@ -1019,7 +1010,6 @@ export class DataDatabricksAiGatewayMcpServices extends cdktn.TerraformDataSourc
       connection: config.connection,
       forEach: config.forEach
     });
-    this._includeBrowse = config.includeBrowse;
     this._pageSize = config.pageSize;
     this._parent = config.parent;
     this._providerConfig.internalValue = config.providerConfig;
@@ -1029,22 +1019,6 @@ export class DataDatabricksAiGatewayMcpServices extends cdktn.TerraformDataSourc
   // ==========
   // ATTRIBUTES
   // ==========
-
-  // include_browse - computed: false, optional: true, required: false
-  private _includeBrowse?: boolean | cdktn.IResolvable; 
-  public get includeBrowse() {
-    return this.getBooleanAttribute('include_browse');
-  }
-  public set includeBrowse(value: boolean | cdktn.IResolvable) {
-    this._includeBrowse = value;
-  }
-  public resetIncludeBrowse() {
-    this._includeBrowse = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get includeBrowseInput() {
-    return this._includeBrowse;
-  }
 
   // mcp_services - computed: true, optional: false, required: false
   private _mcpServices = new DataDatabricksAiGatewayMcpServicesMcpServicesList(this, "mcp_services", false);
@@ -1122,7 +1096,6 @@ export class DataDatabricksAiGatewayMcpServices extends cdktn.TerraformDataSourc
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      include_browse: cdktn.booleanToTerraform(this._includeBrowse),
       page_size: cdktn.numberToTerraform(this._pageSize),
       parent: cdktn.stringToTerraform(this._parent),
       provider_config: dataDatabricksAiGatewayMcpServicesProviderConfigToTerraform(this._providerConfig.internalValue),
@@ -1132,12 +1105,6 @@ export class DataDatabricksAiGatewayMcpServices extends cdktn.TerraformDataSourc
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
-      include_browse: {
-        value: cdktn.booleanToHclTerraform(this._includeBrowse),
-        isBlock: false,
-        type: "simple",
-        storageClassType: "boolean",
-      },
       page_size: {
         value: cdktn.numberToHclTerraform(this._pageSize),
         isBlock: false,
