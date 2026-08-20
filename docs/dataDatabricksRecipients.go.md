@@ -4,7 +4,7 @@
 
 ### DataDatabricksRecipients <a name="DataDatabricksRecipients" id="@cdktn/provider-databricks.dataDatabricksRecipients.DataDatabricksRecipients"></a>
 
-Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/data-sources/recipients databricks_recipients}.
+Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/data-sources/recipients databricks_recipients}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksRecipients.DataDatabricksRecipients.Initializer"></a>
 
@@ -414,7 +414,7 @@ The construct id used in the generated config for the DataDatabricksRecipients t
 
 The id of the existing DataDatabricksRecipients that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/data-sources/recipients#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/data-sources/recipients#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -662,8 +662,8 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadata
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksRecipients.DataDatabricksRecipientsConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksRecipients.DataDatabricksRecipientsConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksRecipients.DataDatabricksRecipientsConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksRecipients.DataDatabricksRecipientsConfig.property.providerConfig">ProviderConfig</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksRecipients.DataDatabricksRecipientsProviderConfig">DataDatabricksRecipientsProviderConfig</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/data-sources/recipients#provider_config DataDatabricksRecipients#provider_config}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksRecipients.DataDatabricksRecipientsConfig.property.recipients">Recipients</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/data-sources/recipients#recipients DataDatabricksRecipients#recipients}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksRecipients.DataDatabricksRecipientsConfig.property.providerConfig">ProviderConfig</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksRecipients.DataDatabricksRecipientsProviderConfig">DataDatabricksRecipientsProviderConfig</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/data-sources/recipients#provider_config DataDatabricksRecipients#provider_config}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksRecipients.DataDatabricksRecipientsConfig.property.recipients">Recipients</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/data-sources/recipients#recipients DataDatabricksRecipients#recipients}. |
 
 ---
 
@@ -745,7 +745,7 @@ ProviderConfig DataDatabricksRecipientsProviderConfig
 
 - *Type:* <a href="#@cdktn/provider-databricks.dataDatabricksRecipients.DataDatabricksRecipientsProviderConfig">DataDatabricksRecipientsProviderConfig</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/data-sources/recipients#provider_config DataDatabricksRecipients#provider_config}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/data-sources/recipients#provider_config DataDatabricksRecipients#provider_config}.
 
 ---
 
@@ -757,7 +757,7 @@ Recipients *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/data-sources/recipients#recipients DataDatabricksRecipients#recipients}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/data-sources/recipients#recipients DataDatabricksRecipients#recipients}.
 
 ---
 
@@ -777,7 +777,7 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadata
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksRecipients.DataDatabricksRecipientsProviderConfig.property.workspaceId">WorkspaceId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/data-sources/recipients#workspace_id DataDatabricksRecipients#workspace_id}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksRecipients.DataDatabricksRecipientsProviderConfig.property.workspaceId">WorkspaceId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/data-sources/recipients#workspace_id DataDatabricksRecipients#workspace_id}. |
 
 ---
 
@@ -789,7 +789,7 @@ WorkspaceId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/data-sources/recipients#workspace_id DataDatabricksRecipients#workspace_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/data-sources/recipients#workspace_id DataDatabricksRecipients#workspace_id}.
 
 ---
 

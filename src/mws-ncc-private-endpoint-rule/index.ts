@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/resources/mws_ncc_private_endpoint_rule
+// https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/mws_ncc_private_endpoint_rule
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,52 +13,146 @@ import * as cdktn from 'cdktn';
 
 export interface MwsNccPrivateEndpointRuleConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/resources/mws_ncc_private_endpoint_rule#domain_names MwsNccPrivateEndpointRule#domain_names}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/mws_ncc_private_endpoint_rule#domain_names MwsNccPrivateEndpointRule#domain_names}
   */
   readonly domainNames?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/resources/mws_ncc_private_endpoint_rule#enabled MwsNccPrivateEndpointRule#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/mws_ncc_private_endpoint_rule#enabled MwsNccPrivateEndpointRule#enabled}
   */
   readonly enabled?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/resources/mws_ncc_private_endpoint_rule#endpoint_service MwsNccPrivateEndpointRule#endpoint_service}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/mws_ncc_private_endpoint_rule#endpoint_service MwsNccPrivateEndpointRule#endpoint_service}
   */
   readonly endpointService?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/resources/mws_ncc_private_endpoint_rule#group_id MwsNccPrivateEndpointRule#group_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/mws_ncc_private_endpoint_rule#group_id MwsNccPrivateEndpointRule#group_id}
   */
   readonly groupId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/resources/mws_ncc_private_endpoint_rule#id MwsNccPrivateEndpointRule#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/mws_ncc_private_endpoint_rule#id MwsNccPrivateEndpointRule#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/resources/mws_ncc_private_endpoint_rule#network_connectivity_config_id MwsNccPrivateEndpointRule#network_connectivity_config_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/mws_ncc_private_endpoint_rule#network_connectivity_config_id MwsNccPrivateEndpointRule#network_connectivity_config_id}
   */
   readonly networkConnectivityConfigId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/resources/mws_ncc_private_endpoint_rule#resource_id MwsNccPrivateEndpointRule#resource_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/mws_ncc_private_endpoint_rule#resource_id MwsNccPrivateEndpointRule#resource_id}
   */
   readonly resourceId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/resources/mws_ncc_private_endpoint_rule#resource_names MwsNccPrivateEndpointRule#resource_names}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/mws_ncc_private_endpoint_rule#resource_names MwsNccPrivateEndpointRule#resource_names}
   */
   readonly resourceNames?: string[];
   /**
   * gcp_endpoint block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/resources/mws_ncc_private_endpoint_rule#gcp_endpoint MwsNccPrivateEndpointRule#gcp_endpoint}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/mws_ncc_private_endpoint_rule#gcp_endpoint MwsNccPrivateEndpointRule#gcp_endpoint}
   */
   readonly gcpEndpoint?: MwsNccPrivateEndpointRuleGcpEndpoint;
 }
+export interface MwsNccPrivateEndpointRuleGcpEndpointGoogleApiEndpoints {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/mws_ncc_private_endpoint_rule#endpoints MwsNccPrivateEndpointRule#endpoints}
+  */
+  readonly endpoints?: string[];
+}
+
+export function mwsNccPrivateEndpointRuleGcpEndpointGoogleApiEndpointsToTerraform(struct?: MwsNccPrivateEndpointRuleGcpEndpointGoogleApiEndpointsOutputReference | MwsNccPrivateEndpointRuleGcpEndpointGoogleApiEndpoints): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  return {
+    endpoints: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.endpoints),
+  }
+}
+
+
+export function mwsNccPrivateEndpointRuleGcpEndpointGoogleApiEndpointsToHclTerraform(struct?: MwsNccPrivateEndpointRuleGcpEndpointGoogleApiEndpointsOutputReference | MwsNccPrivateEndpointRuleGcpEndpointGoogleApiEndpoints): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  const attrs = {
+    endpoints: {
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.endpoints),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class MwsNccPrivateEndpointRuleGcpEndpointGoogleApiEndpointsOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): MwsNccPrivateEndpointRuleGcpEndpointGoogleApiEndpoints | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._endpoints !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.endpoints = this._endpoints;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: MwsNccPrivateEndpointRuleGcpEndpointGoogleApiEndpoints | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._endpoints = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._endpoints = value.endpoints;
+    }
+  }
+
+  // endpoints - computed: false, optional: true, required: false
+  private _endpoints?: string[]; 
+  public get endpoints() {
+    return this.getListAttribute('endpoints');
+  }
+  public set endpoints(value: string[]) {
+    this._endpoints = value;
+  }
+  public resetEndpoints() {
+    this._endpoints = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get endpointsInput() {
+    return this._endpoints;
+  }
+}
 export interface MwsNccPrivateEndpointRuleGcpEndpoint {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/resources/mws_ncc_private_endpoint_rule#service_attachment MwsNccPrivateEndpointRule#service_attachment}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/mws_ncc_private_endpoint_rule#all_vpc_sc_services MwsNccPrivateEndpointRule#all_vpc_sc_services}
+  */
+  readonly allVpcScServices?: boolean | cdktn.IResolvable;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/mws_ncc_private_endpoint_rule#service_attachment MwsNccPrivateEndpointRule#service_attachment}
   */
   readonly serviceAttachment?: string;
+  /**
+  * google_api_endpoints block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/mws_ncc_private_endpoint_rule#google_api_endpoints MwsNccPrivateEndpointRule#google_api_endpoints}
+  */
+  readonly googleApiEndpoints?: MwsNccPrivateEndpointRuleGcpEndpointGoogleApiEndpoints;
 }
 
 export function mwsNccPrivateEndpointRuleGcpEndpointToTerraform(struct?: MwsNccPrivateEndpointRuleGcpEndpointOutputReference | MwsNccPrivateEndpointRuleGcpEndpoint): any {
@@ -67,7 +161,9 @@ export function mwsNccPrivateEndpointRuleGcpEndpointToTerraform(struct?: MwsNccP
     throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
+    all_vpc_sc_services: cdktn.booleanToTerraform(struct!.allVpcScServices),
     service_attachment: cdktn.stringToTerraform(struct!.serviceAttachment),
+    google_api_endpoints: mwsNccPrivateEndpointRuleGcpEndpointGoogleApiEndpointsToTerraform(struct!.googleApiEndpoints),
   }
 }
 
@@ -78,11 +174,23 @@ export function mwsNccPrivateEndpointRuleGcpEndpointToHclTerraform(struct?: MwsN
     throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
+    all_vpc_sc_services: {
+      value: cdktn.booleanToHclTerraform(struct!.allVpcScServices),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
     service_attachment: {
       value: cdktn.stringToHclTerraform(struct!.serviceAttachment),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
+    },
+    google_api_endpoints: {
+      value: mwsNccPrivateEndpointRuleGcpEndpointGoogleApiEndpointsToHclTerraform(struct!.googleApiEndpoints),
+      isBlock: true,
+      type: "list",
+      storageClassType: "MwsNccPrivateEndpointRuleGcpEndpointGoogleApiEndpointsList",
     },
   };
 
@@ -104,9 +212,17 @@ export class MwsNccPrivateEndpointRuleGcpEndpointOutputReference extends cdktn.C
   public get internalValue(): MwsNccPrivateEndpointRuleGcpEndpoint | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
+    if (this._allVpcScServices !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.allVpcScServices = this._allVpcScServices;
+    }
     if (this._serviceAttachment !== undefined) {
       hasAnyValues = true;
       internalValueResult.serviceAttachment = this._serviceAttachment;
+    }
+    if (this._googleApiEndpoints?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.googleApiEndpoints = this._googleApiEndpoints?.internalValue;
     }
     return hasAnyValues ? internalValueResult : undefined;
   }
@@ -114,12 +230,32 @@ export class MwsNccPrivateEndpointRuleGcpEndpointOutputReference extends cdktn.C
   public set internalValue(value: MwsNccPrivateEndpointRuleGcpEndpoint | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
+      this._allVpcScServices = undefined;
       this._serviceAttachment = undefined;
+      this._googleApiEndpoints.internalValue = undefined;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
+      this._allVpcScServices = value.allVpcScServices;
       this._serviceAttachment = value.serviceAttachment;
+      this._googleApiEndpoints.internalValue = value.googleApiEndpoints;
     }
+  }
+
+  // all_vpc_sc_services - computed: false, optional: true, required: false
+  private _allVpcScServices?: boolean | cdktn.IResolvable; 
+  public get allVpcScServices() {
+    return this.getBooleanAttribute('all_vpc_sc_services');
+  }
+  public set allVpcScServices(value: boolean | cdktn.IResolvable) {
+    this._allVpcScServices = value;
+  }
+  public resetAllVpcScServices() {
+    this._allVpcScServices = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get allVpcScServicesInput() {
+    return this._allVpcScServices;
   }
 
   // psc_endpoint_uri - computed: true, optional: false, required: false
@@ -142,10 +278,26 @@ export class MwsNccPrivateEndpointRuleGcpEndpointOutputReference extends cdktn.C
   public get serviceAttachmentInput() {
     return this._serviceAttachment;
   }
+
+  // google_api_endpoints - computed: false, optional: true, required: false
+  private _googleApiEndpoints = new MwsNccPrivateEndpointRuleGcpEndpointGoogleApiEndpointsOutputReference(this, "google_api_endpoints");
+  public get googleApiEndpoints() {
+    return this._googleApiEndpoints;
+  }
+  public putGoogleApiEndpoints(value: MwsNccPrivateEndpointRuleGcpEndpointGoogleApiEndpoints) {
+    this._googleApiEndpoints.internalValue = value;
+  }
+  public resetGoogleApiEndpoints() {
+    this._googleApiEndpoints.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get googleApiEndpointsInput() {
+    return this._googleApiEndpoints.internalValue;
+  }
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/resources/mws_ncc_private_endpoint_rule databricks_mws_ncc_private_endpoint_rule}
+* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/mws_ncc_private_endpoint_rule databricks_mws_ncc_private_endpoint_rule}
 */
 export class MwsNccPrivateEndpointRule extends cdktn.TerraformResource {
 
@@ -161,7 +313,7 @@ export class MwsNccPrivateEndpointRule extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a MwsNccPrivateEndpointRule resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the MwsNccPrivateEndpointRule to import
-  * @param importFromId The id of the existing MwsNccPrivateEndpointRule that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/resources/mws_ncc_private_endpoint_rule#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing MwsNccPrivateEndpointRule that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/mws_ncc_private_endpoint_rule#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the MwsNccPrivateEndpointRule to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -173,7 +325,7 @@ export class MwsNccPrivateEndpointRule extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/resources/mws_ncc_private_endpoint_rule databricks_mws_ncc_private_endpoint_rule} Resource
+  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/mws_ncc_private_endpoint_rule databricks_mws_ncc_private_endpoint_rule} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -184,7 +336,7 @@ export class MwsNccPrivateEndpointRule extends cdktn.TerraformResource {
       terraformResourceType: 'databricks_mws_ncc_private_endpoint_rule',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '1.127.0',
+        providerVersion: '1.128.0',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,

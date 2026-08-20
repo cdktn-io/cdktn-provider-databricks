@@ -4,7 +4,7 @@
 
 ### App <a name="App" id="@cdktn/provider-databricks.app.App"></a>
 
-Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/resources/app databricks_app}.
+Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/app databricks_app}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.app.App.Initializer"></a>
 
@@ -75,6 +75,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktn/provider-databricks.app.App.moveTo">MoveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktn/provider-databricks.app.App.moveToId">MoveToId</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktn/provider-databricks.app.App.putGitRepository">PutGitRepository</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.app.App.putGitSource">PutGitSource</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.app.App.putProviderConfig">PutProviderConfig</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.app.App.putResources">PutResources</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.app.App.putTelemetryExportDestinations">PutTelemetryExportDestinations</a></code> | *No description.* |
@@ -83,10 +84,13 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktn/provider-databricks.app.App.resetComputeMinInstances">ResetComputeMinInstances</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.app.App.resetComputeSize">ResetComputeSize</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.app.App.resetDescription">ResetDescription</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.app.App.resetForwardUserAccessToken">ResetForwardUserAccessToken</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.app.App.resetGitRepository">ResetGitRepository</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.app.App.resetGitSource">ResetGitSource</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.app.App.resetNoCompute">ResetNoCompute</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.app.App.resetProviderConfig">ResetProviderConfig</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.app.App.resetResources">ResetResources</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.app.App.resetSourceCodePath">ResetSourceCodePath</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.app.App.resetSpace">ResetSpace</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.app.App.resetTelemetryExportDestinations">ResetTelemetryExportDestinations</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.app.App.resetUsagePolicyId">ResetUsagePolicyId</a></code> | *No description.* |
@@ -415,6 +419,18 @@ private void PutGitRepository(AppGitRepository Value)
 
 ---
 
+##### `PutGitSource` <a name="PutGitSource" id="@cdktn/provider-databricks.app.App.putGitSource"></a>
+
+```csharp
+private void PutGitSource(AppGitSource Value)
+```
+
+###### `Value`<sup>Required</sup> <a name="Value" id="@cdktn/provider-databricks.app.App.putGitSource.parameter.value"></a>
+
+- *Type:* <a href="#@cdktn/provider-databricks.app.AppGitSource">AppGitSource</a>
+
+---
+
 ##### `PutProviderConfig` <a name="PutProviderConfig" id="@cdktn/provider-databricks.app.App.putProviderConfig"></a>
 
 ```csharp
@@ -481,10 +497,22 @@ private void ResetComputeSize()
 private void ResetDescription()
 ```
 
+##### `ResetForwardUserAccessToken` <a name="ResetForwardUserAccessToken" id="@cdktn/provider-databricks.app.App.resetForwardUserAccessToken"></a>
+
+```csharp
+private void ResetForwardUserAccessToken()
+```
+
 ##### `ResetGitRepository` <a name="ResetGitRepository" id="@cdktn/provider-databricks.app.App.resetGitRepository"></a>
 
 ```csharp
 private void ResetGitRepository()
+```
+
+##### `ResetGitSource` <a name="ResetGitSource" id="@cdktn/provider-databricks.app.App.resetGitSource"></a>
+
+```csharp
+private void ResetGitSource()
 ```
 
 ##### `ResetNoCompute` <a name="ResetNoCompute" id="@cdktn/provider-databricks.app.App.resetNoCompute"></a>
@@ -503,6 +531,12 @@ private void ResetProviderConfig()
 
 ```csharp
 private void ResetResources()
+```
+
+##### `ResetSourceCodePath` <a name="ResetSourceCodePath" id="@cdktn/provider-databricks.app.App.resetSourceCodePath"></a>
+
+```csharp
+private void ResetSourceCodePath()
 ```
 
 ##### `ResetSpace` <a name="ResetSpace" id="@cdktn/provider-databricks.app.App.resetSpace"></a>
@@ -632,7 +666,7 @@ The construct id used in the generated config for the App to import.
 
 The id of the existing App that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/resources/app#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/app#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -667,11 +701,13 @@ Refer to the {@link https://registry.terraform.io/providers/databricks/databrick
 | <code><a href="#@cdktn/provider-databricks.app.App.property.computeStatus">ComputeStatus</a></code> | <code><a href="#@cdktn/provider-databricks.app.AppComputeStatusOutputReference">AppComputeStatusOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.app.App.property.createTime">CreateTime</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.app.App.property.creator">Creator</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.app.App.property.defaultGitSource">DefaultGitSource</a></code> | <code><a href="#@cdktn/provider-databricks.app.AppDefaultGitSourceOutputReference">AppDefaultGitSourceOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.app.App.property.defaultSourceCodePath">DefaultSourceCodePath</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.app.App.property.effectiveBudgetPolicyId">EffectiveBudgetPolicyId</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.app.App.property.effectiveUsagePolicyId">EffectiveUsagePolicyId</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.app.App.property.effectiveUserApiScopes">EffectiveUserApiScopes</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.app.App.property.gitRepository">GitRepository</a></code> | <code><a href="#@cdktn/provider-databricks.app.AppGitRepositoryOutputReference">AppGitRepositoryOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.app.App.property.gitSource">GitSource</a></code> | <code><a href="#@cdktn/provider-databricks.app.AppGitSourceOutputReference">AppGitSourceOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.app.App.property.id">Id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.app.App.property.oauth2AppClientId">Oauth2AppClientId</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.app.App.property.oauth2AppIntegrationId">Oauth2AppIntegrationId</a></code> | <code>string</code> | *No description.* |
@@ -691,11 +727,14 @@ Refer to the {@link https://registry.terraform.io/providers/databricks/databrick
 | <code><a href="#@cdktn/provider-databricks.app.App.property.computeMinInstancesInput">ComputeMinInstancesInput</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.app.App.property.computeSizeInput">ComputeSizeInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.app.App.property.descriptionInput">DescriptionInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.app.App.property.forwardUserAccessTokenInput">ForwardUserAccessTokenInput</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.app.App.property.gitRepositoryInput">GitRepositoryInput</a></code> | <code>Io.Cdktn.IResolvable\|<a href="#@cdktn/provider-databricks.app.AppGitRepository">AppGitRepository</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.app.App.property.gitSourceInput">GitSourceInput</a></code> | <code>Io.Cdktn.IResolvable\|<a href="#@cdktn/provider-databricks.app.AppGitSource">AppGitSource</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.app.App.property.nameInput">NameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.app.App.property.noComputeInput">NoComputeInput</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.app.App.property.providerConfigInput">ProviderConfigInput</a></code> | <code>Io.Cdktn.IResolvable\|<a href="#@cdktn/provider-databricks.app.AppProviderConfig">AppProviderConfig</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.app.App.property.resourcesInput">ResourcesInput</a></code> | <code>Io.Cdktn.IResolvable\|<a href="#@cdktn/provider-databricks.app.AppResources">AppResources</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.app.App.property.sourceCodePathInput">SourceCodePathInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.app.App.property.spaceInput">SpaceInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.app.App.property.telemetryExportDestinationsInput">TelemetryExportDestinationsInput</a></code> | <code>Io.Cdktn.IResolvable\|<a href="#@cdktn/provider-databricks.app.AppTelemetryExportDestinations">AppTelemetryExportDestinations</a>[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.app.App.property.usagePolicyIdInput">UsagePolicyIdInput</a></code> | <code>string</code> | *No description.* |
@@ -705,8 +744,10 @@ Refer to the {@link https://registry.terraform.io/providers/databricks/databrick
 | <code><a href="#@cdktn/provider-databricks.app.App.property.computeMinInstances">ComputeMinInstances</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.app.App.property.computeSize">ComputeSize</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.app.App.property.description">Description</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.app.App.property.forwardUserAccessToken">ForwardUserAccessToken</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.app.App.property.name">Name</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.app.App.property.noCompute">NoCompute</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.app.App.property.sourceCodePath">SourceCodePath</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.app.App.property.space">Space</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.app.App.property.usagePolicyId">UsagePolicyId</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.app.App.property.userApiScopes">UserApiScopes</a></code> | <code>string[]</code> | *No description.* |
@@ -905,6 +946,16 @@ public string Creator { get; }
 
 ---
 
+##### `DefaultGitSource`<sup>Required</sup> <a name="DefaultGitSource" id="@cdktn/provider-databricks.app.App.property.defaultGitSource"></a>
+
+```csharp
+public AppDefaultGitSourceOutputReference DefaultGitSource { get; }
+```
+
+- *Type:* <a href="#@cdktn/provider-databricks.app.AppDefaultGitSourceOutputReference">AppDefaultGitSourceOutputReference</a>
+
+---
+
 ##### `DefaultSourceCodePath`<sup>Required</sup> <a name="DefaultSourceCodePath" id="@cdktn/provider-databricks.app.App.property.defaultSourceCodePath"></a>
 
 ```csharp
@@ -952,6 +1003,16 @@ public AppGitRepositoryOutputReference GitRepository { get; }
 ```
 
 - *Type:* <a href="#@cdktn/provider-databricks.app.AppGitRepositoryOutputReference">AppGitRepositoryOutputReference</a>
+
+---
+
+##### `GitSource`<sup>Required</sup> <a name="GitSource" id="@cdktn/provider-databricks.app.App.property.gitSource"></a>
+
+```csharp
+public AppGitSourceOutputReference GitSource { get; }
+```
+
+- *Type:* <a href="#@cdktn/provider-databricks.app.AppGitSourceOutputReference">AppGitSourceOutputReference</a>
 
 ---
 
@@ -1145,6 +1206,16 @@ public string DescriptionInput { get; }
 
 ---
 
+##### `ForwardUserAccessTokenInput`<sup>Optional</sup> <a name="ForwardUserAccessTokenInput" id="@cdktn/provider-databricks.app.App.property.forwardUserAccessTokenInput"></a>
+
+```csharp
+public bool|IResolvable ForwardUserAccessTokenInput { get; }
+```
+
+- *Type:* bool|Io.Cdktn.IResolvable
+
+---
+
 ##### `GitRepositoryInput`<sup>Optional</sup> <a name="GitRepositoryInput" id="@cdktn/provider-databricks.app.App.property.gitRepositoryInput"></a>
 
 ```csharp
@@ -1152,6 +1223,16 @@ public IResolvable|AppGitRepository GitRepositoryInput { get; }
 ```
 
 - *Type:* Io.Cdktn.IResolvable|<a href="#@cdktn/provider-databricks.app.AppGitRepository">AppGitRepository</a>
+
+---
+
+##### `GitSourceInput`<sup>Optional</sup> <a name="GitSourceInput" id="@cdktn/provider-databricks.app.App.property.gitSourceInput"></a>
+
+```csharp
+public IResolvable|AppGitSource GitSourceInput { get; }
+```
+
+- *Type:* Io.Cdktn.IResolvable|<a href="#@cdktn/provider-databricks.app.AppGitSource">AppGitSource</a>
 
 ---
 
@@ -1192,6 +1273,16 @@ public IResolvable|AppResources[] ResourcesInput { get; }
 ```
 
 - *Type:* Io.Cdktn.IResolvable|<a href="#@cdktn/provider-databricks.app.AppResources">AppResources</a>[]
+
+---
+
+##### `SourceCodePathInput`<sup>Optional</sup> <a name="SourceCodePathInput" id="@cdktn/provider-databricks.app.App.property.sourceCodePathInput"></a>
+
+```csharp
+public string SourceCodePathInput { get; }
+```
+
+- *Type:* string
 
 ---
 
@@ -1285,6 +1376,16 @@ public string Description { get; }
 
 ---
 
+##### `ForwardUserAccessToken`<sup>Required</sup> <a name="ForwardUserAccessToken" id="@cdktn/provider-databricks.app.App.property.forwardUserAccessToken"></a>
+
+```csharp
+public bool|IResolvable ForwardUserAccessToken { get; }
+```
+
+- *Type:* bool|Io.Cdktn.IResolvable
+
+---
+
 ##### `Name`<sup>Required</sup> <a name="Name" id="@cdktn/provider-databricks.app.App.property.name"></a>
 
 ```csharp
@@ -1302,6 +1403,16 @@ public bool|IResolvable NoCompute { get; }
 ```
 
 - *Type:* bool|Io.Cdktn.IResolvable
+
+---
+
+##### `SourceCodePath`<sup>Required</sup> <a name="SourceCodePath" id="@cdktn/provider-databricks.app.App.property.sourceCodePath"></a>
+
+```csharp
+public string SourceCodePath { get; }
+```
+
+- *Type:* string
 
 ---
 
@@ -1376,12 +1487,12 @@ new AppActiveDeployment {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.app.AppActiveDeployment.property.command">Command</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/resources/app#command App#command}. |
-| <code><a href="#@cdktn/provider-databricks.app.AppActiveDeployment.property.deploymentId">DeploymentId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/resources/app#deployment_id App#deployment_id}. |
-| <code><a href="#@cdktn/provider-databricks.app.AppActiveDeployment.property.envVars">EnvVars</a></code> | <code>Io.Cdktn.IResolvable\|<a href="#@cdktn/provider-databricks.app.AppActiveDeploymentEnvVars">AppActiveDeploymentEnvVars</a>[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/resources/app#env_vars App#env_vars}. |
-| <code><a href="#@cdktn/provider-databricks.app.AppActiveDeployment.property.gitSource">GitSource</a></code> | <code><a href="#@cdktn/provider-databricks.app.AppActiveDeploymentGitSource">AppActiveDeploymentGitSource</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/resources/app#git_source App#git_source}. |
-| <code><a href="#@cdktn/provider-databricks.app.AppActiveDeployment.property.mode">Mode</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/resources/app#mode App#mode}. |
-| <code><a href="#@cdktn/provider-databricks.app.AppActiveDeployment.property.sourceCodePath">SourceCodePath</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/resources/app#source_code_path App#source_code_path}. |
+| <code><a href="#@cdktn/provider-databricks.app.AppActiveDeployment.property.command">Command</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/app#command App#command}. |
+| <code><a href="#@cdktn/provider-databricks.app.AppActiveDeployment.property.deploymentId">DeploymentId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/app#deployment_id App#deployment_id}. |
+| <code><a href="#@cdktn/provider-databricks.app.AppActiveDeployment.property.envVars">EnvVars</a></code> | <code>Io.Cdktn.IResolvable\|<a href="#@cdktn/provider-databricks.app.AppActiveDeploymentEnvVars">AppActiveDeploymentEnvVars</a>[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/app#env_vars App#env_vars}. |
+| <code><a href="#@cdktn/provider-databricks.app.AppActiveDeployment.property.gitSource">GitSource</a></code> | <code><a href="#@cdktn/provider-databricks.app.AppActiveDeploymentGitSource">AppActiveDeploymentGitSource</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/app#git_source App#git_source}. |
+| <code><a href="#@cdktn/provider-databricks.app.AppActiveDeployment.property.mode">Mode</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/app#mode App#mode}. |
+| <code><a href="#@cdktn/provider-databricks.app.AppActiveDeployment.property.sourceCodePath">SourceCodePath</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/app#source_code_path App#source_code_path}. |
 
 ---
 
@@ -1393,7 +1504,7 @@ public string[] Command { get; set; }
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/resources/app#command App#command}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/app#command App#command}.
 
 ---
 
@@ -1405,7 +1516,7 @@ public string DeploymentId { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/resources/app#deployment_id App#deployment_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/app#deployment_id App#deployment_id}.
 
 ---
 
@@ -1417,7 +1528,7 @@ public IResolvable|AppActiveDeploymentEnvVars[] EnvVars { get; set; }
 
 - *Type:* Io.Cdktn.IResolvable|<a href="#@cdktn/provider-databricks.app.AppActiveDeploymentEnvVars">AppActiveDeploymentEnvVars</a>[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/resources/app#env_vars App#env_vars}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/app#env_vars App#env_vars}.
 
 ---
 
@@ -1429,7 +1540,7 @@ public AppActiveDeploymentGitSource GitSource { get; set; }
 
 - *Type:* <a href="#@cdktn/provider-databricks.app.AppActiveDeploymentGitSource">AppActiveDeploymentGitSource</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/resources/app#git_source App#git_source}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/app#git_source App#git_source}.
 
 ---
 
@@ -1441,7 +1552,7 @@ public string Mode { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/resources/app#mode App#mode}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/app#mode App#mode}.
 
 ---
 
@@ -1453,7 +1564,7 @@ public string SourceCodePath { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/resources/app#source_code_path App#source_code_path}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/app#source_code_path App#source_code_path}.
 
 ---
 
@@ -1473,7 +1584,7 @@ new AppActiveDeploymentDeploymentArtifacts {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.app.AppActiveDeploymentDeploymentArtifacts.property.sourceCodePath">SourceCodePath</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/resources/app#source_code_path App#source_code_path}. |
+| <code><a href="#@cdktn/provider-databricks.app.AppActiveDeploymentDeploymentArtifacts.property.sourceCodePath">SourceCodePath</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/app#source_code_path App#source_code_path}. |
 
 ---
 
@@ -1485,7 +1596,7 @@ public string SourceCodePath { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/resources/app#source_code_path App#source_code_path}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/app#source_code_path App#source_code_path}.
 
 ---
 
@@ -1507,9 +1618,9 @@ new AppActiveDeploymentEnvVars {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.app.AppActiveDeploymentEnvVars.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/resources/app#name App#name}. |
-| <code><a href="#@cdktn/provider-databricks.app.AppActiveDeploymentEnvVars.property.value">Value</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/resources/app#value App#value}. |
-| <code><a href="#@cdktn/provider-databricks.app.AppActiveDeploymentEnvVars.property.valueFrom">ValueFrom</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/resources/app#value_from App#value_from}. |
+| <code><a href="#@cdktn/provider-databricks.app.AppActiveDeploymentEnvVars.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/app#name App#name}. |
+| <code><a href="#@cdktn/provider-databricks.app.AppActiveDeploymentEnvVars.property.value">Value</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/app#value App#value}. |
+| <code><a href="#@cdktn/provider-databricks.app.AppActiveDeploymentEnvVars.property.valueFrom">ValueFrom</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/app#value_from App#value_from}. |
 
 ---
 
@@ -1521,7 +1632,7 @@ public string Name { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/resources/app#name App#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/app#name App#name}.
 
 ---
 
@@ -1533,7 +1644,7 @@ public string Value { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/resources/app#value App#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/app#value App#value}.
 
 ---
 
@@ -1545,7 +1656,7 @@ public string ValueFrom { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/resources/app#value_from App#value_from}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/app#value_from App#value_from}.
 
 ---
 
@@ -1568,10 +1679,10 @@ new AppActiveDeploymentGitSource {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.app.AppActiveDeploymentGitSource.property.branch">Branch</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/resources/app#branch App#branch}. |
-| <code><a href="#@cdktn/provider-databricks.app.AppActiveDeploymentGitSource.property.commit">Commit</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/resources/app#commit App#commit}. |
-| <code><a href="#@cdktn/provider-databricks.app.AppActiveDeploymentGitSource.property.sourceCodePath">SourceCodePath</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/resources/app#source_code_path App#source_code_path}. |
-| <code><a href="#@cdktn/provider-databricks.app.AppActiveDeploymentGitSource.property.tag">Tag</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/resources/app#tag App#tag}. |
+| <code><a href="#@cdktn/provider-databricks.app.AppActiveDeploymentGitSource.property.branch">Branch</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/app#branch App#branch}. |
+| <code><a href="#@cdktn/provider-databricks.app.AppActiveDeploymentGitSource.property.commit">Commit</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/app#commit App#commit}. |
+| <code><a href="#@cdktn/provider-databricks.app.AppActiveDeploymentGitSource.property.sourceCodePath">SourceCodePath</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/app#source_code_path App#source_code_path}. |
+| <code><a href="#@cdktn/provider-databricks.app.AppActiveDeploymentGitSource.property.tag">Tag</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/app#tag App#tag}. |
 
 ---
 
@@ -1583,7 +1694,7 @@ public string Branch { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/resources/app#branch App#branch}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/app#branch App#branch}.
 
 ---
 
@@ -1595,7 +1706,7 @@ public string Commit { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/resources/app#commit App#commit}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/app#commit App#commit}.
 
 ---
 
@@ -1607,7 +1718,7 @@ public string SourceCodePath { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/resources/app#source_code_path App#source_code_path}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/app#source_code_path App#source_code_path}.
 
 ---
 
@@ -1619,7 +1730,7 @@ public string Tag { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/resources/app#tag App#tag}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/app#tag App#tag}.
 
 ---
 
@@ -1632,7 +1743,9 @@ using Io.Cdktn.Providers.Databricks;
 
 new AppActiveDeploymentGitSourceGitRepository {
     string Provider,
-    string Url
+    string Url,
+    bool|IResolvable AutoDeploy = null,
+    double CallerCredentialId = null
 };
 ```
 
@@ -1640,8 +1753,10 @@ new AppActiveDeploymentGitSourceGitRepository {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.app.AppActiveDeploymentGitSourceGitRepository.property.provider">Provider</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/resources/app#provider App#provider}. |
-| <code><a href="#@cdktn/provider-databricks.app.AppActiveDeploymentGitSourceGitRepository.property.url">Url</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/resources/app#url App#url}. |
+| <code><a href="#@cdktn/provider-databricks.app.AppActiveDeploymentGitSourceGitRepository.property.provider">Provider</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/app#provider App#provider}. |
+| <code><a href="#@cdktn/provider-databricks.app.AppActiveDeploymentGitSourceGitRepository.property.url">Url</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/app#url App#url}. |
+| <code><a href="#@cdktn/provider-databricks.app.AppActiveDeploymentGitSourceGitRepository.property.autoDeploy">AutoDeploy</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/app#auto_deploy App#auto_deploy}. |
+| <code><a href="#@cdktn/provider-databricks.app.AppActiveDeploymentGitSourceGitRepository.property.callerCredentialId">CallerCredentialId</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/app#caller_credential_id App#caller_credential_id}. |
 
 ---
 
@@ -1653,7 +1768,7 @@ public string Provider { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/resources/app#provider App#provider}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/app#provider App#provider}.
 
 ---
 
@@ -1665,7 +1780,31 @@ public string Url { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/resources/app#url App#url}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/app#url App#url}.
+
+---
+
+##### `AutoDeploy`<sup>Optional</sup> <a name="AutoDeploy" id="@cdktn/provider-databricks.app.AppActiveDeploymentGitSourceGitRepository.property.autoDeploy"></a>
+
+```csharp
+public bool|IResolvable AutoDeploy { get; set; }
+```
+
+- *Type:* bool|Io.Cdktn.IResolvable
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/app#auto_deploy App#auto_deploy}.
+
+---
+
+##### `CallerCredentialId`<sup>Optional</sup> <a name="CallerCredentialId" id="@cdktn/provider-databricks.app.AppActiveDeploymentGitSourceGitRepository.property.callerCredentialId"></a>
+
+```csharp
+public double CallerCredentialId { get; set; }
+```
+
+- *Type:* double
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/app#caller_credential_id App#caller_credential_id}.
 
 ---
 
@@ -1729,10 +1868,13 @@ new AppConfig {
     double ComputeMinInstances = null,
     string ComputeSize = null,
     string Description = null,
+    bool|IResolvable ForwardUserAccessToken = null,
     AppGitRepository GitRepository = null,
+    AppGitSource GitSource = null,
     bool|IResolvable NoCompute = null,
     AppProviderConfig ProviderConfig = null,
     IResolvable|AppResources[] Resources = null,
+    string SourceCodePath = null,
     string Space = null,
     IResolvable|AppTelemetryExportDestinations[] TelemetryExportDestinations = null,
     string UsagePolicyId = null,
@@ -1751,20 +1893,23 @@ new AppConfig {
 | <code><a href="#@cdktn/provider-databricks.app.AppConfig.property.lifecycle">Lifecycle</a></code> | <code>Io.Cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.app.AppConfig.property.provider">Provider</a></code> | <code>Io.Cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.app.AppConfig.property.provisioners">Provisioners</a></code> | <code>Io.Cdktn.FileProvisioner\|Io.Cdktn.LocalExecProvisioner\|Io.Cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-databricks.app.AppConfig.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/resources/app#name App#name}. |
-| <code><a href="#@cdktn/provider-databricks.app.AppConfig.property.budgetPolicyId">BudgetPolicyId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/resources/app#budget_policy_id App#budget_policy_id}. |
-| <code><a href="#@cdktn/provider-databricks.app.AppConfig.property.computeMaxInstances">ComputeMaxInstances</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/resources/app#compute_max_instances App#compute_max_instances}. |
-| <code><a href="#@cdktn/provider-databricks.app.AppConfig.property.computeMinInstances">ComputeMinInstances</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/resources/app#compute_min_instances App#compute_min_instances}. |
-| <code><a href="#@cdktn/provider-databricks.app.AppConfig.property.computeSize">ComputeSize</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/resources/app#compute_size App#compute_size}. |
-| <code><a href="#@cdktn/provider-databricks.app.AppConfig.property.description">Description</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/resources/app#description App#description}. |
-| <code><a href="#@cdktn/provider-databricks.app.AppConfig.property.gitRepository">GitRepository</a></code> | <code><a href="#@cdktn/provider-databricks.app.AppGitRepository">AppGitRepository</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/resources/app#git_repository App#git_repository}. |
-| <code><a href="#@cdktn/provider-databricks.app.AppConfig.property.noCompute">NoCompute</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/resources/app#no_compute App#no_compute}. |
-| <code><a href="#@cdktn/provider-databricks.app.AppConfig.property.providerConfig">ProviderConfig</a></code> | <code><a href="#@cdktn/provider-databricks.app.AppProviderConfig">AppProviderConfig</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/resources/app#provider_config App#provider_config}. |
-| <code><a href="#@cdktn/provider-databricks.app.AppConfig.property.resources">Resources</a></code> | <code>Io.Cdktn.IResolvable\|<a href="#@cdktn/provider-databricks.app.AppResources">AppResources</a>[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/resources/app#resources App#resources}. |
-| <code><a href="#@cdktn/provider-databricks.app.AppConfig.property.space">Space</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/resources/app#space App#space}. |
-| <code><a href="#@cdktn/provider-databricks.app.AppConfig.property.telemetryExportDestinations">TelemetryExportDestinations</a></code> | <code>Io.Cdktn.IResolvable\|<a href="#@cdktn/provider-databricks.app.AppTelemetryExportDestinations">AppTelemetryExportDestinations</a>[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/resources/app#telemetry_export_destinations App#telemetry_export_destinations}. |
-| <code><a href="#@cdktn/provider-databricks.app.AppConfig.property.usagePolicyId">UsagePolicyId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/resources/app#usage_policy_id App#usage_policy_id}. |
-| <code><a href="#@cdktn/provider-databricks.app.AppConfig.property.userApiScopes">UserApiScopes</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/resources/app#user_api_scopes App#user_api_scopes}. |
+| <code><a href="#@cdktn/provider-databricks.app.AppConfig.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/app#name App#name}. |
+| <code><a href="#@cdktn/provider-databricks.app.AppConfig.property.budgetPolicyId">BudgetPolicyId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/app#budget_policy_id App#budget_policy_id}. |
+| <code><a href="#@cdktn/provider-databricks.app.AppConfig.property.computeMaxInstances">ComputeMaxInstances</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/app#compute_max_instances App#compute_max_instances}. |
+| <code><a href="#@cdktn/provider-databricks.app.AppConfig.property.computeMinInstances">ComputeMinInstances</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/app#compute_min_instances App#compute_min_instances}. |
+| <code><a href="#@cdktn/provider-databricks.app.AppConfig.property.computeSize">ComputeSize</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/app#compute_size App#compute_size}. |
+| <code><a href="#@cdktn/provider-databricks.app.AppConfig.property.description">Description</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/app#description App#description}. |
+| <code><a href="#@cdktn/provider-databricks.app.AppConfig.property.forwardUserAccessToken">ForwardUserAccessToken</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/app#forward_user_access_token App#forward_user_access_token}. |
+| <code><a href="#@cdktn/provider-databricks.app.AppConfig.property.gitRepository">GitRepository</a></code> | <code><a href="#@cdktn/provider-databricks.app.AppGitRepository">AppGitRepository</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/app#git_repository App#git_repository}. |
+| <code><a href="#@cdktn/provider-databricks.app.AppConfig.property.gitSource">GitSource</a></code> | <code><a href="#@cdktn/provider-databricks.app.AppGitSource">AppGitSource</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/app#git_source App#git_source}. |
+| <code><a href="#@cdktn/provider-databricks.app.AppConfig.property.noCompute">NoCompute</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/app#no_compute App#no_compute}. |
+| <code><a href="#@cdktn/provider-databricks.app.AppConfig.property.providerConfig">ProviderConfig</a></code> | <code><a href="#@cdktn/provider-databricks.app.AppProviderConfig">AppProviderConfig</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/app#provider_config App#provider_config}. |
+| <code><a href="#@cdktn/provider-databricks.app.AppConfig.property.resources">Resources</a></code> | <code>Io.Cdktn.IResolvable\|<a href="#@cdktn/provider-databricks.app.AppResources">AppResources</a>[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/app#resources App#resources}. |
+| <code><a href="#@cdktn/provider-databricks.app.AppConfig.property.sourceCodePath">SourceCodePath</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/app#source_code_path App#source_code_path}. |
+| <code><a href="#@cdktn/provider-databricks.app.AppConfig.property.space">Space</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/app#space App#space}. |
+| <code><a href="#@cdktn/provider-databricks.app.AppConfig.property.telemetryExportDestinations">TelemetryExportDestinations</a></code> | <code>Io.Cdktn.IResolvable\|<a href="#@cdktn/provider-databricks.app.AppTelemetryExportDestinations">AppTelemetryExportDestinations</a>[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/app#telemetry_export_destinations App#telemetry_export_destinations}. |
+| <code><a href="#@cdktn/provider-databricks.app.AppConfig.property.usagePolicyId">UsagePolicyId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/app#usage_policy_id App#usage_policy_id}. |
+| <code><a href="#@cdktn/provider-databricks.app.AppConfig.property.userApiScopes">UserApiScopes</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/app#user_api_scopes App#user_api_scopes}. |
 
 ---
 
@@ -1846,7 +1991,7 @@ public string Name { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/resources/app#name App#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/app#name App#name}.
 
 ---
 
@@ -1858,7 +2003,7 @@ public string BudgetPolicyId { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/resources/app#budget_policy_id App#budget_policy_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/app#budget_policy_id App#budget_policy_id}.
 
 ---
 
@@ -1870,7 +2015,7 @@ public double ComputeMaxInstances { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/resources/app#compute_max_instances App#compute_max_instances}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/app#compute_max_instances App#compute_max_instances}.
 
 ---
 
@@ -1882,7 +2027,7 @@ public double ComputeMinInstances { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/resources/app#compute_min_instances App#compute_min_instances}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/app#compute_min_instances App#compute_min_instances}.
 
 ---
 
@@ -1894,7 +2039,7 @@ public string ComputeSize { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/resources/app#compute_size App#compute_size}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/app#compute_size App#compute_size}.
 
 ---
 
@@ -1906,7 +2051,19 @@ public string Description { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/resources/app#description App#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/app#description App#description}.
+
+---
+
+##### `ForwardUserAccessToken`<sup>Optional</sup> <a name="ForwardUserAccessToken" id="@cdktn/provider-databricks.app.AppConfig.property.forwardUserAccessToken"></a>
+
+```csharp
+public bool|IResolvable ForwardUserAccessToken { get; set; }
+```
+
+- *Type:* bool|Io.Cdktn.IResolvable
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/app#forward_user_access_token App#forward_user_access_token}.
 
 ---
 
@@ -1918,7 +2075,19 @@ public AppGitRepository GitRepository { get; set; }
 
 - *Type:* <a href="#@cdktn/provider-databricks.app.AppGitRepository">AppGitRepository</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/resources/app#git_repository App#git_repository}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/app#git_repository App#git_repository}.
+
+---
+
+##### `GitSource`<sup>Optional</sup> <a name="GitSource" id="@cdktn/provider-databricks.app.AppConfig.property.gitSource"></a>
+
+```csharp
+public AppGitSource GitSource { get; set; }
+```
+
+- *Type:* <a href="#@cdktn/provider-databricks.app.AppGitSource">AppGitSource</a>
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/app#git_source App#git_source}.
 
 ---
 
@@ -1930,7 +2099,7 @@ public bool|IResolvable NoCompute { get; set; }
 
 - *Type:* bool|Io.Cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/resources/app#no_compute App#no_compute}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/app#no_compute App#no_compute}.
 
 ---
 
@@ -1942,7 +2111,7 @@ public AppProviderConfig ProviderConfig { get; set; }
 
 - *Type:* <a href="#@cdktn/provider-databricks.app.AppProviderConfig">AppProviderConfig</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/resources/app#provider_config App#provider_config}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/app#provider_config App#provider_config}.
 
 ---
 
@@ -1954,7 +2123,19 @@ public IResolvable|AppResources[] Resources { get; set; }
 
 - *Type:* Io.Cdktn.IResolvable|<a href="#@cdktn/provider-databricks.app.AppResources">AppResources</a>[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/resources/app#resources App#resources}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/app#resources App#resources}.
+
+---
+
+##### `SourceCodePath`<sup>Optional</sup> <a name="SourceCodePath" id="@cdktn/provider-databricks.app.AppConfig.property.sourceCodePath"></a>
+
+```csharp
+public string SourceCodePath { get; set; }
+```
+
+- *Type:* string
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/app#source_code_path App#source_code_path}.
 
 ---
 
@@ -1966,7 +2147,7 @@ public string Space { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/resources/app#space App#space}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/app#space App#space}.
 
 ---
 
@@ -1978,7 +2159,7 @@ public IResolvable|AppTelemetryExportDestinations[] TelemetryExportDestinations 
 
 - *Type:* Io.Cdktn.IResolvable|<a href="#@cdktn/provider-databricks.app.AppTelemetryExportDestinations">AppTelemetryExportDestinations</a>[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/resources/app#telemetry_export_destinations App#telemetry_export_destinations}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/app#telemetry_export_destinations App#telemetry_export_destinations}.
 
 ---
 
@@ -1990,7 +2171,7 @@ public string UsagePolicyId { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/resources/app#usage_policy_id App#usage_policy_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/app#usage_policy_id App#usage_policy_id}.
 
 ---
 
@@ -2002,7 +2183,155 @@ public string[] UserApiScopes { get; set; }
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/resources/app#user_api_scopes App#user_api_scopes}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/app#user_api_scopes App#user_api_scopes}.
+
+---
+
+### AppDefaultGitSource <a name="AppDefaultGitSource" id="@cdktn/provider-databricks.app.AppDefaultGitSource"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-databricks.app.AppDefaultGitSource.Initializer"></a>
+
+```csharp
+using Io.Cdktn.Providers.Databricks;
+
+new AppDefaultGitSource {
+    string Branch = null,
+    string Commit = null,
+    string SourceCodePath = null,
+    string Tag = null
+};
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-databricks.app.AppDefaultGitSource.property.branch">Branch</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/app#branch App#branch}. |
+| <code><a href="#@cdktn/provider-databricks.app.AppDefaultGitSource.property.commit">Commit</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/app#commit App#commit}. |
+| <code><a href="#@cdktn/provider-databricks.app.AppDefaultGitSource.property.sourceCodePath">SourceCodePath</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/app#source_code_path App#source_code_path}. |
+| <code><a href="#@cdktn/provider-databricks.app.AppDefaultGitSource.property.tag">Tag</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/app#tag App#tag}. |
+
+---
+
+##### `Branch`<sup>Optional</sup> <a name="Branch" id="@cdktn/provider-databricks.app.AppDefaultGitSource.property.branch"></a>
+
+```csharp
+public string Branch { get; set; }
+```
+
+- *Type:* string
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/app#branch App#branch}.
+
+---
+
+##### `Commit`<sup>Optional</sup> <a name="Commit" id="@cdktn/provider-databricks.app.AppDefaultGitSource.property.commit"></a>
+
+```csharp
+public string Commit { get; set; }
+```
+
+- *Type:* string
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/app#commit App#commit}.
+
+---
+
+##### `SourceCodePath`<sup>Optional</sup> <a name="SourceCodePath" id="@cdktn/provider-databricks.app.AppDefaultGitSource.property.sourceCodePath"></a>
+
+```csharp
+public string SourceCodePath { get; set; }
+```
+
+- *Type:* string
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/app#source_code_path App#source_code_path}.
+
+---
+
+##### `Tag`<sup>Optional</sup> <a name="Tag" id="@cdktn/provider-databricks.app.AppDefaultGitSource.property.tag"></a>
+
+```csharp
+public string Tag { get; set; }
+```
+
+- *Type:* string
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/app#tag App#tag}.
+
+---
+
+### AppDefaultGitSourceGitRepository <a name="AppDefaultGitSourceGitRepository" id="@cdktn/provider-databricks.app.AppDefaultGitSourceGitRepository"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-databricks.app.AppDefaultGitSourceGitRepository.Initializer"></a>
+
+```csharp
+using Io.Cdktn.Providers.Databricks;
+
+new AppDefaultGitSourceGitRepository {
+    string Provider,
+    string Url,
+    bool|IResolvable AutoDeploy = null,
+    double CallerCredentialId = null
+};
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-databricks.app.AppDefaultGitSourceGitRepository.property.provider">Provider</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/app#provider App#provider}. |
+| <code><a href="#@cdktn/provider-databricks.app.AppDefaultGitSourceGitRepository.property.url">Url</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/app#url App#url}. |
+| <code><a href="#@cdktn/provider-databricks.app.AppDefaultGitSourceGitRepository.property.autoDeploy">AutoDeploy</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/app#auto_deploy App#auto_deploy}. |
+| <code><a href="#@cdktn/provider-databricks.app.AppDefaultGitSourceGitRepository.property.callerCredentialId">CallerCredentialId</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/app#caller_credential_id App#caller_credential_id}. |
+
+---
+
+##### `Provider`<sup>Required</sup> <a name="Provider" id="@cdktn/provider-databricks.app.AppDefaultGitSourceGitRepository.property.provider"></a>
+
+```csharp
+public string Provider { get; set; }
+```
+
+- *Type:* string
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/app#provider App#provider}.
+
+---
+
+##### `Url`<sup>Required</sup> <a name="Url" id="@cdktn/provider-databricks.app.AppDefaultGitSourceGitRepository.property.url"></a>
+
+```csharp
+public string Url { get; set; }
+```
+
+- *Type:* string
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/app#url App#url}.
+
+---
+
+##### `AutoDeploy`<sup>Optional</sup> <a name="AutoDeploy" id="@cdktn/provider-databricks.app.AppDefaultGitSourceGitRepository.property.autoDeploy"></a>
+
+```csharp
+public bool|IResolvable AutoDeploy { get; set; }
+```
+
+- *Type:* bool|Io.Cdktn.IResolvable
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/app#auto_deploy App#auto_deploy}.
+
+---
+
+##### `CallerCredentialId`<sup>Optional</sup> <a name="CallerCredentialId" id="@cdktn/provider-databricks.app.AppDefaultGitSourceGitRepository.property.callerCredentialId"></a>
+
+```csharp
+public double CallerCredentialId { get; set; }
+```
+
+- *Type:* double
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/app#caller_credential_id App#caller_credential_id}.
 
 ---
 
@@ -2015,7 +2344,9 @@ using Io.Cdktn.Providers.Databricks;
 
 new AppGitRepository {
     string Provider,
-    string Url
+    string Url,
+    bool|IResolvable AutoDeploy = null,
+    double CallerCredentialId = null
 };
 ```
 
@@ -2023,8 +2354,10 @@ new AppGitRepository {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.app.AppGitRepository.property.provider">Provider</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/resources/app#provider App#provider}. |
-| <code><a href="#@cdktn/provider-databricks.app.AppGitRepository.property.url">Url</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/resources/app#url App#url}. |
+| <code><a href="#@cdktn/provider-databricks.app.AppGitRepository.property.provider">Provider</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/app#provider App#provider}. |
+| <code><a href="#@cdktn/provider-databricks.app.AppGitRepository.property.url">Url</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/app#url App#url}. |
+| <code><a href="#@cdktn/provider-databricks.app.AppGitRepository.property.autoDeploy">AutoDeploy</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/app#auto_deploy App#auto_deploy}. |
+| <code><a href="#@cdktn/provider-databricks.app.AppGitRepository.property.callerCredentialId">CallerCredentialId</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/app#caller_credential_id App#caller_credential_id}. |
 
 ---
 
@@ -2036,7 +2369,7 @@ public string Provider { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/resources/app#provider App#provider}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/app#provider App#provider}.
 
 ---
 
@@ -2048,7 +2381,179 @@ public string Url { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/resources/app#url App#url}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/app#url App#url}.
+
+---
+
+##### `AutoDeploy`<sup>Optional</sup> <a name="AutoDeploy" id="@cdktn/provider-databricks.app.AppGitRepository.property.autoDeploy"></a>
+
+```csharp
+public bool|IResolvable AutoDeploy { get; set; }
+```
+
+- *Type:* bool|Io.Cdktn.IResolvable
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/app#auto_deploy App#auto_deploy}.
+
+---
+
+##### `CallerCredentialId`<sup>Optional</sup> <a name="CallerCredentialId" id="@cdktn/provider-databricks.app.AppGitRepository.property.callerCredentialId"></a>
+
+```csharp
+public double CallerCredentialId { get; set; }
+```
+
+- *Type:* double
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/app#caller_credential_id App#caller_credential_id}.
+
+---
+
+### AppGitSource <a name="AppGitSource" id="@cdktn/provider-databricks.app.AppGitSource"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-databricks.app.AppGitSource.Initializer"></a>
+
+```csharp
+using Io.Cdktn.Providers.Databricks;
+
+new AppGitSource {
+    string Branch = null,
+    string Commit = null,
+    string SourceCodePath = null,
+    string Tag = null
+};
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-databricks.app.AppGitSource.property.branch">Branch</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/app#branch App#branch}. |
+| <code><a href="#@cdktn/provider-databricks.app.AppGitSource.property.commit">Commit</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/app#commit App#commit}. |
+| <code><a href="#@cdktn/provider-databricks.app.AppGitSource.property.sourceCodePath">SourceCodePath</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/app#source_code_path App#source_code_path}. |
+| <code><a href="#@cdktn/provider-databricks.app.AppGitSource.property.tag">Tag</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/app#tag App#tag}. |
+
+---
+
+##### `Branch`<sup>Optional</sup> <a name="Branch" id="@cdktn/provider-databricks.app.AppGitSource.property.branch"></a>
+
+```csharp
+public string Branch { get; set; }
+```
+
+- *Type:* string
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/app#branch App#branch}.
+
+---
+
+##### `Commit`<sup>Optional</sup> <a name="Commit" id="@cdktn/provider-databricks.app.AppGitSource.property.commit"></a>
+
+```csharp
+public string Commit { get; set; }
+```
+
+- *Type:* string
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/app#commit App#commit}.
+
+---
+
+##### `SourceCodePath`<sup>Optional</sup> <a name="SourceCodePath" id="@cdktn/provider-databricks.app.AppGitSource.property.sourceCodePath"></a>
+
+```csharp
+public string SourceCodePath { get; set; }
+```
+
+- *Type:* string
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/app#source_code_path App#source_code_path}.
+
+---
+
+##### `Tag`<sup>Optional</sup> <a name="Tag" id="@cdktn/provider-databricks.app.AppGitSource.property.tag"></a>
+
+```csharp
+public string Tag { get; set; }
+```
+
+- *Type:* string
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/app#tag App#tag}.
+
+---
+
+### AppGitSourceGitRepository <a name="AppGitSourceGitRepository" id="@cdktn/provider-databricks.app.AppGitSourceGitRepository"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-databricks.app.AppGitSourceGitRepository.Initializer"></a>
+
+```csharp
+using Io.Cdktn.Providers.Databricks;
+
+new AppGitSourceGitRepository {
+    string Provider,
+    string Url,
+    bool|IResolvable AutoDeploy = null,
+    double CallerCredentialId = null
+};
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-databricks.app.AppGitSourceGitRepository.property.provider">Provider</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/app#provider App#provider}. |
+| <code><a href="#@cdktn/provider-databricks.app.AppGitSourceGitRepository.property.url">Url</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/app#url App#url}. |
+| <code><a href="#@cdktn/provider-databricks.app.AppGitSourceGitRepository.property.autoDeploy">AutoDeploy</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/app#auto_deploy App#auto_deploy}. |
+| <code><a href="#@cdktn/provider-databricks.app.AppGitSourceGitRepository.property.callerCredentialId">CallerCredentialId</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/app#caller_credential_id App#caller_credential_id}. |
+
+---
+
+##### `Provider`<sup>Required</sup> <a name="Provider" id="@cdktn/provider-databricks.app.AppGitSourceGitRepository.property.provider"></a>
+
+```csharp
+public string Provider { get; set; }
+```
+
+- *Type:* string
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/app#provider App#provider}.
+
+---
+
+##### `Url`<sup>Required</sup> <a name="Url" id="@cdktn/provider-databricks.app.AppGitSourceGitRepository.property.url"></a>
+
+```csharp
+public string Url { get; set; }
+```
+
+- *Type:* string
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/app#url App#url}.
+
+---
+
+##### `AutoDeploy`<sup>Optional</sup> <a name="AutoDeploy" id="@cdktn/provider-databricks.app.AppGitSourceGitRepository.property.autoDeploy"></a>
+
+```csharp
+public bool|IResolvable AutoDeploy { get; set; }
+```
+
+- *Type:* bool|Io.Cdktn.IResolvable
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/app#auto_deploy App#auto_deploy}.
+
+---
+
+##### `CallerCredentialId`<sup>Optional</sup> <a name="CallerCredentialId" id="@cdktn/provider-databricks.app.AppGitSourceGitRepository.property.callerCredentialId"></a>
+
+```csharp
+public double CallerCredentialId { get; set; }
+```
+
+- *Type:* double
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/app#caller_credential_id App#caller_credential_id}.
 
 ---
 
@@ -2073,12 +2578,12 @@ new AppPendingDeployment {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.app.AppPendingDeployment.property.command">Command</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/resources/app#command App#command}. |
-| <code><a href="#@cdktn/provider-databricks.app.AppPendingDeployment.property.deploymentId">DeploymentId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/resources/app#deployment_id App#deployment_id}. |
-| <code><a href="#@cdktn/provider-databricks.app.AppPendingDeployment.property.envVars">EnvVars</a></code> | <code>Io.Cdktn.IResolvable\|<a href="#@cdktn/provider-databricks.app.AppPendingDeploymentEnvVars">AppPendingDeploymentEnvVars</a>[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/resources/app#env_vars App#env_vars}. |
-| <code><a href="#@cdktn/provider-databricks.app.AppPendingDeployment.property.gitSource">GitSource</a></code> | <code><a href="#@cdktn/provider-databricks.app.AppPendingDeploymentGitSource">AppPendingDeploymentGitSource</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/resources/app#git_source App#git_source}. |
-| <code><a href="#@cdktn/provider-databricks.app.AppPendingDeployment.property.mode">Mode</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/resources/app#mode App#mode}. |
-| <code><a href="#@cdktn/provider-databricks.app.AppPendingDeployment.property.sourceCodePath">SourceCodePath</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/resources/app#source_code_path App#source_code_path}. |
+| <code><a href="#@cdktn/provider-databricks.app.AppPendingDeployment.property.command">Command</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/app#command App#command}. |
+| <code><a href="#@cdktn/provider-databricks.app.AppPendingDeployment.property.deploymentId">DeploymentId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/app#deployment_id App#deployment_id}. |
+| <code><a href="#@cdktn/provider-databricks.app.AppPendingDeployment.property.envVars">EnvVars</a></code> | <code>Io.Cdktn.IResolvable\|<a href="#@cdktn/provider-databricks.app.AppPendingDeploymentEnvVars">AppPendingDeploymentEnvVars</a>[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/app#env_vars App#env_vars}. |
+| <code><a href="#@cdktn/provider-databricks.app.AppPendingDeployment.property.gitSource">GitSource</a></code> | <code><a href="#@cdktn/provider-databricks.app.AppPendingDeploymentGitSource">AppPendingDeploymentGitSource</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/app#git_source App#git_source}. |
+| <code><a href="#@cdktn/provider-databricks.app.AppPendingDeployment.property.mode">Mode</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/app#mode App#mode}. |
+| <code><a href="#@cdktn/provider-databricks.app.AppPendingDeployment.property.sourceCodePath">SourceCodePath</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/app#source_code_path App#source_code_path}. |
 
 ---
 
@@ -2090,7 +2595,7 @@ public string[] Command { get; set; }
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/resources/app#command App#command}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/app#command App#command}.
 
 ---
 
@@ -2102,7 +2607,7 @@ public string DeploymentId { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/resources/app#deployment_id App#deployment_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/app#deployment_id App#deployment_id}.
 
 ---
 
@@ -2114,7 +2619,7 @@ public IResolvable|AppPendingDeploymentEnvVars[] EnvVars { get; set; }
 
 - *Type:* Io.Cdktn.IResolvable|<a href="#@cdktn/provider-databricks.app.AppPendingDeploymentEnvVars">AppPendingDeploymentEnvVars</a>[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/resources/app#env_vars App#env_vars}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/app#env_vars App#env_vars}.
 
 ---
 
@@ -2126,7 +2631,7 @@ public AppPendingDeploymentGitSource GitSource { get; set; }
 
 - *Type:* <a href="#@cdktn/provider-databricks.app.AppPendingDeploymentGitSource">AppPendingDeploymentGitSource</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/resources/app#git_source App#git_source}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/app#git_source App#git_source}.
 
 ---
 
@@ -2138,7 +2643,7 @@ public string Mode { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/resources/app#mode App#mode}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/app#mode App#mode}.
 
 ---
 
@@ -2150,7 +2655,7 @@ public string SourceCodePath { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/resources/app#source_code_path App#source_code_path}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/app#source_code_path App#source_code_path}.
 
 ---
 
@@ -2170,7 +2675,7 @@ new AppPendingDeploymentDeploymentArtifacts {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.app.AppPendingDeploymentDeploymentArtifacts.property.sourceCodePath">SourceCodePath</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/resources/app#source_code_path App#source_code_path}. |
+| <code><a href="#@cdktn/provider-databricks.app.AppPendingDeploymentDeploymentArtifacts.property.sourceCodePath">SourceCodePath</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/app#source_code_path App#source_code_path}. |
 
 ---
 
@@ -2182,7 +2687,7 @@ public string SourceCodePath { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/resources/app#source_code_path App#source_code_path}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/app#source_code_path App#source_code_path}.
 
 ---
 
@@ -2204,9 +2709,9 @@ new AppPendingDeploymentEnvVars {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.app.AppPendingDeploymentEnvVars.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/resources/app#name App#name}. |
-| <code><a href="#@cdktn/provider-databricks.app.AppPendingDeploymentEnvVars.property.value">Value</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/resources/app#value App#value}. |
-| <code><a href="#@cdktn/provider-databricks.app.AppPendingDeploymentEnvVars.property.valueFrom">ValueFrom</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/resources/app#value_from App#value_from}. |
+| <code><a href="#@cdktn/provider-databricks.app.AppPendingDeploymentEnvVars.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/app#name App#name}. |
+| <code><a href="#@cdktn/provider-databricks.app.AppPendingDeploymentEnvVars.property.value">Value</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/app#value App#value}. |
+| <code><a href="#@cdktn/provider-databricks.app.AppPendingDeploymentEnvVars.property.valueFrom">ValueFrom</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/app#value_from App#value_from}. |
 
 ---
 
@@ -2218,7 +2723,7 @@ public string Name { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/resources/app#name App#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/app#name App#name}.
 
 ---
 
@@ -2230,7 +2735,7 @@ public string Value { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/resources/app#value App#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/app#value App#value}.
 
 ---
 
@@ -2242,7 +2747,7 @@ public string ValueFrom { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/resources/app#value_from App#value_from}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/app#value_from App#value_from}.
 
 ---
 
@@ -2265,10 +2770,10 @@ new AppPendingDeploymentGitSource {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.app.AppPendingDeploymentGitSource.property.branch">Branch</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/resources/app#branch App#branch}. |
-| <code><a href="#@cdktn/provider-databricks.app.AppPendingDeploymentGitSource.property.commit">Commit</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/resources/app#commit App#commit}. |
-| <code><a href="#@cdktn/provider-databricks.app.AppPendingDeploymentGitSource.property.sourceCodePath">SourceCodePath</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/resources/app#source_code_path App#source_code_path}. |
-| <code><a href="#@cdktn/provider-databricks.app.AppPendingDeploymentGitSource.property.tag">Tag</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/resources/app#tag App#tag}. |
+| <code><a href="#@cdktn/provider-databricks.app.AppPendingDeploymentGitSource.property.branch">Branch</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/app#branch App#branch}. |
+| <code><a href="#@cdktn/provider-databricks.app.AppPendingDeploymentGitSource.property.commit">Commit</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/app#commit App#commit}. |
+| <code><a href="#@cdktn/provider-databricks.app.AppPendingDeploymentGitSource.property.sourceCodePath">SourceCodePath</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/app#source_code_path App#source_code_path}. |
+| <code><a href="#@cdktn/provider-databricks.app.AppPendingDeploymentGitSource.property.tag">Tag</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/app#tag App#tag}. |
 
 ---
 
@@ -2280,7 +2785,7 @@ public string Branch { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/resources/app#branch App#branch}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/app#branch App#branch}.
 
 ---
 
@@ -2292,7 +2797,7 @@ public string Commit { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/resources/app#commit App#commit}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/app#commit App#commit}.
 
 ---
 
@@ -2304,7 +2809,7 @@ public string SourceCodePath { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/resources/app#source_code_path App#source_code_path}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/app#source_code_path App#source_code_path}.
 
 ---
 
@@ -2316,7 +2821,7 @@ public string Tag { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/resources/app#tag App#tag}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/app#tag App#tag}.
 
 ---
 
@@ -2329,7 +2834,9 @@ using Io.Cdktn.Providers.Databricks;
 
 new AppPendingDeploymentGitSourceGitRepository {
     string Provider,
-    string Url
+    string Url,
+    bool|IResolvable AutoDeploy = null,
+    double CallerCredentialId = null
 };
 ```
 
@@ -2337,8 +2844,10 @@ new AppPendingDeploymentGitSourceGitRepository {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.app.AppPendingDeploymentGitSourceGitRepository.property.provider">Provider</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/resources/app#provider App#provider}. |
-| <code><a href="#@cdktn/provider-databricks.app.AppPendingDeploymentGitSourceGitRepository.property.url">Url</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/resources/app#url App#url}. |
+| <code><a href="#@cdktn/provider-databricks.app.AppPendingDeploymentGitSourceGitRepository.property.provider">Provider</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/app#provider App#provider}. |
+| <code><a href="#@cdktn/provider-databricks.app.AppPendingDeploymentGitSourceGitRepository.property.url">Url</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/app#url App#url}. |
+| <code><a href="#@cdktn/provider-databricks.app.AppPendingDeploymentGitSourceGitRepository.property.autoDeploy">AutoDeploy</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/app#auto_deploy App#auto_deploy}. |
+| <code><a href="#@cdktn/provider-databricks.app.AppPendingDeploymentGitSourceGitRepository.property.callerCredentialId">CallerCredentialId</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/app#caller_credential_id App#caller_credential_id}. |
 
 ---
 
@@ -2350,7 +2859,7 @@ public string Provider { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/resources/app#provider App#provider}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/app#provider App#provider}.
 
 ---
 
@@ -2362,7 +2871,31 @@ public string Url { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/resources/app#url App#url}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/app#url App#url}.
+
+---
+
+##### `AutoDeploy`<sup>Optional</sup> <a name="AutoDeploy" id="@cdktn/provider-databricks.app.AppPendingDeploymentGitSourceGitRepository.property.autoDeploy"></a>
+
+```csharp
+public bool|IResolvable AutoDeploy { get; set; }
+```
+
+- *Type:* bool|Io.Cdktn.IResolvable
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/app#auto_deploy App#auto_deploy}.
+
+---
+
+##### `CallerCredentialId`<sup>Optional</sup> <a name="CallerCredentialId" id="@cdktn/provider-databricks.app.AppPendingDeploymentGitSourceGitRepository.property.callerCredentialId"></a>
+
+```csharp
+public double CallerCredentialId { get; set; }
+```
+
+- *Type:* double
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/app#caller_credential_id App#caller_credential_id}.
 
 ---
 
@@ -2395,7 +2928,7 @@ new AppProviderConfig {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.app.AppProviderConfig.property.workspaceId">WorkspaceId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/resources/app#workspace_id App#workspace_id}. |
+| <code><a href="#@cdktn/provider-databricks.app.AppProviderConfig.property.workspaceId">WorkspaceId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/app#workspace_id App#workspace_id}. |
 
 ---
 
@@ -2407,7 +2940,7 @@ public string WorkspaceId { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/resources/app#workspace_id App#workspace_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/app#workspace_id App#workspace_id}.
 
 ---
 
@@ -2438,18 +2971,18 @@ new AppResources {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.app.AppResources.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/resources/app#name App#name}. |
-| <code><a href="#@cdktn/provider-databricks.app.AppResources.property.app">App</a></code> | <code><a href="#@cdktn/provider-databricks.app.AppResourcesApp">AppResourcesApp</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/resources/app#app App#app}. |
-| <code><a href="#@cdktn/provider-databricks.app.AppResources.property.database">Database</a></code> | <code><a href="#@cdktn/provider-databricks.app.AppResourcesDatabase">AppResourcesDatabase</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/resources/app#database App#database}. |
-| <code><a href="#@cdktn/provider-databricks.app.AppResources.property.description">Description</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/resources/app#description App#description}. |
-| <code><a href="#@cdktn/provider-databricks.app.AppResources.property.experiment">Experiment</a></code> | <code><a href="#@cdktn/provider-databricks.app.AppResourcesExperiment">AppResourcesExperiment</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/resources/app#experiment App#experiment}. |
-| <code><a href="#@cdktn/provider-databricks.app.AppResources.property.genieSpace">GenieSpace</a></code> | <code><a href="#@cdktn/provider-databricks.app.AppResourcesGenieSpace">AppResourcesGenieSpace</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/resources/app#genie_space App#genie_space}. |
-| <code><a href="#@cdktn/provider-databricks.app.AppResources.property.job">Job</a></code> | <code><a href="#@cdktn/provider-databricks.app.AppResourcesJob">AppResourcesJob</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/resources/app#job App#job}. |
-| <code><a href="#@cdktn/provider-databricks.app.AppResources.property.postgres">Postgres</a></code> | <code><a href="#@cdktn/provider-databricks.app.AppResourcesPostgres">AppResourcesPostgres</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/resources/app#postgres App#postgres}. |
-| <code><a href="#@cdktn/provider-databricks.app.AppResources.property.secret">Secret</a></code> | <code><a href="#@cdktn/provider-databricks.app.AppResourcesSecret">AppResourcesSecret</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/resources/app#secret App#secret}. |
-| <code><a href="#@cdktn/provider-databricks.app.AppResources.property.servingEndpoint">ServingEndpoint</a></code> | <code><a href="#@cdktn/provider-databricks.app.AppResourcesServingEndpoint">AppResourcesServingEndpoint</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/resources/app#serving_endpoint App#serving_endpoint}. |
-| <code><a href="#@cdktn/provider-databricks.app.AppResources.property.sqlWarehouse">SqlWarehouse</a></code> | <code><a href="#@cdktn/provider-databricks.app.AppResourcesSqlWarehouse">AppResourcesSqlWarehouse</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/resources/app#sql_warehouse App#sql_warehouse}. |
-| <code><a href="#@cdktn/provider-databricks.app.AppResources.property.ucSecurable">UcSecurable</a></code> | <code><a href="#@cdktn/provider-databricks.app.AppResourcesUcSecurable">AppResourcesUcSecurable</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/resources/app#uc_securable App#uc_securable}. |
+| <code><a href="#@cdktn/provider-databricks.app.AppResources.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/app#name App#name}. |
+| <code><a href="#@cdktn/provider-databricks.app.AppResources.property.app">App</a></code> | <code><a href="#@cdktn/provider-databricks.app.AppResourcesApp">AppResourcesApp</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/app#app App#app}. |
+| <code><a href="#@cdktn/provider-databricks.app.AppResources.property.database">Database</a></code> | <code><a href="#@cdktn/provider-databricks.app.AppResourcesDatabase">AppResourcesDatabase</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/app#database App#database}. |
+| <code><a href="#@cdktn/provider-databricks.app.AppResources.property.description">Description</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/app#description App#description}. |
+| <code><a href="#@cdktn/provider-databricks.app.AppResources.property.experiment">Experiment</a></code> | <code><a href="#@cdktn/provider-databricks.app.AppResourcesExperiment">AppResourcesExperiment</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/app#experiment App#experiment}. |
+| <code><a href="#@cdktn/provider-databricks.app.AppResources.property.genieSpace">GenieSpace</a></code> | <code><a href="#@cdktn/provider-databricks.app.AppResourcesGenieSpace">AppResourcesGenieSpace</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/app#genie_space App#genie_space}. |
+| <code><a href="#@cdktn/provider-databricks.app.AppResources.property.job">Job</a></code> | <code><a href="#@cdktn/provider-databricks.app.AppResourcesJob">AppResourcesJob</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/app#job App#job}. |
+| <code><a href="#@cdktn/provider-databricks.app.AppResources.property.postgres">Postgres</a></code> | <code><a href="#@cdktn/provider-databricks.app.AppResourcesPostgres">AppResourcesPostgres</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/app#postgres App#postgres}. |
+| <code><a href="#@cdktn/provider-databricks.app.AppResources.property.secret">Secret</a></code> | <code><a href="#@cdktn/provider-databricks.app.AppResourcesSecret">AppResourcesSecret</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/app#secret App#secret}. |
+| <code><a href="#@cdktn/provider-databricks.app.AppResources.property.servingEndpoint">ServingEndpoint</a></code> | <code><a href="#@cdktn/provider-databricks.app.AppResourcesServingEndpoint">AppResourcesServingEndpoint</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/app#serving_endpoint App#serving_endpoint}. |
+| <code><a href="#@cdktn/provider-databricks.app.AppResources.property.sqlWarehouse">SqlWarehouse</a></code> | <code><a href="#@cdktn/provider-databricks.app.AppResourcesSqlWarehouse">AppResourcesSqlWarehouse</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/app#sql_warehouse App#sql_warehouse}. |
+| <code><a href="#@cdktn/provider-databricks.app.AppResources.property.ucSecurable">UcSecurable</a></code> | <code><a href="#@cdktn/provider-databricks.app.AppResourcesUcSecurable">AppResourcesUcSecurable</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/app#uc_securable App#uc_securable}. |
 
 ---
 
@@ -2461,7 +2994,7 @@ public string Name { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/resources/app#name App#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/app#name App#name}.
 
 ---
 
@@ -2473,7 +3006,7 @@ public AppResourcesApp App { get; set; }
 
 - *Type:* <a href="#@cdktn/provider-databricks.app.AppResourcesApp">AppResourcesApp</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/resources/app#app App#app}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/app#app App#app}.
 
 ---
 
@@ -2485,7 +3018,7 @@ public AppResourcesDatabase Database { get; set; }
 
 - *Type:* <a href="#@cdktn/provider-databricks.app.AppResourcesDatabase">AppResourcesDatabase</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/resources/app#database App#database}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/app#database App#database}.
 
 ---
 
@@ -2497,7 +3030,7 @@ public string Description { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/resources/app#description App#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/app#description App#description}.
 
 ---
 
@@ -2509,7 +3042,7 @@ public AppResourcesExperiment Experiment { get; set; }
 
 - *Type:* <a href="#@cdktn/provider-databricks.app.AppResourcesExperiment">AppResourcesExperiment</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/resources/app#experiment App#experiment}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/app#experiment App#experiment}.
 
 ---
 
@@ -2521,7 +3054,7 @@ public AppResourcesGenieSpace GenieSpace { get; set; }
 
 - *Type:* <a href="#@cdktn/provider-databricks.app.AppResourcesGenieSpace">AppResourcesGenieSpace</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/resources/app#genie_space App#genie_space}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/app#genie_space App#genie_space}.
 
 ---
 
@@ -2533,7 +3066,7 @@ public AppResourcesJob Job { get; set; }
 
 - *Type:* <a href="#@cdktn/provider-databricks.app.AppResourcesJob">AppResourcesJob</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/resources/app#job App#job}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/app#job App#job}.
 
 ---
 
@@ -2545,7 +3078,7 @@ public AppResourcesPostgres Postgres { get; set; }
 
 - *Type:* <a href="#@cdktn/provider-databricks.app.AppResourcesPostgres">AppResourcesPostgres</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/resources/app#postgres App#postgres}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/app#postgres App#postgres}.
 
 ---
 
@@ -2557,7 +3090,7 @@ public AppResourcesSecret Secret { get; set; }
 
 - *Type:* <a href="#@cdktn/provider-databricks.app.AppResourcesSecret">AppResourcesSecret</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/resources/app#secret App#secret}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/app#secret App#secret}.
 
 ---
 
@@ -2569,7 +3102,7 @@ public AppResourcesServingEndpoint ServingEndpoint { get; set; }
 
 - *Type:* <a href="#@cdktn/provider-databricks.app.AppResourcesServingEndpoint">AppResourcesServingEndpoint</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/resources/app#serving_endpoint App#serving_endpoint}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/app#serving_endpoint App#serving_endpoint}.
 
 ---
 
@@ -2581,7 +3114,7 @@ public AppResourcesSqlWarehouse SqlWarehouse { get; set; }
 
 - *Type:* <a href="#@cdktn/provider-databricks.app.AppResourcesSqlWarehouse">AppResourcesSqlWarehouse</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/resources/app#sql_warehouse App#sql_warehouse}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/app#sql_warehouse App#sql_warehouse}.
 
 ---
 
@@ -2593,7 +3126,7 @@ public AppResourcesUcSecurable UcSecurable { get; set; }
 
 - *Type:* <a href="#@cdktn/provider-databricks.app.AppResourcesUcSecurable">AppResourcesUcSecurable</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/resources/app#uc_securable App#uc_securable}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/app#uc_securable App#uc_securable}.
 
 ---
 
@@ -2614,8 +3147,8 @@ new AppResourcesApp {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.app.AppResourcesApp.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/resources/app#name App#name}. |
-| <code><a href="#@cdktn/provider-databricks.app.AppResourcesApp.property.permission">Permission</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/resources/app#permission App#permission}. |
+| <code><a href="#@cdktn/provider-databricks.app.AppResourcesApp.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/app#name App#name}. |
+| <code><a href="#@cdktn/provider-databricks.app.AppResourcesApp.property.permission">Permission</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/app#permission App#permission}. |
 
 ---
 
@@ -2627,7 +3160,7 @@ public string Name { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/resources/app#name App#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/app#name App#name}.
 
 ---
 
@@ -2639,7 +3172,7 @@ public string Permission { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/resources/app#permission App#permission}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/app#permission App#permission}.
 
 ---
 
@@ -2661,9 +3194,9 @@ new AppResourcesDatabase {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.app.AppResourcesDatabase.property.databaseName">DatabaseName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/resources/app#database_name App#database_name}. |
-| <code><a href="#@cdktn/provider-databricks.app.AppResourcesDatabase.property.instanceName">InstanceName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/resources/app#instance_name App#instance_name}. |
-| <code><a href="#@cdktn/provider-databricks.app.AppResourcesDatabase.property.permission">Permission</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/resources/app#permission App#permission}. |
+| <code><a href="#@cdktn/provider-databricks.app.AppResourcesDatabase.property.databaseName">DatabaseName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/app#database_name App#database_name}. |
+| <code><a href="#@cdktn/provider-databricks.app.AppResourcesDatabase.property.instanceName">InstanceName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/app#instance_name App#instance_name}. |
+| <code><a href="#@cdktn/provider-databricks.app.AppResourcesDatabase.property.permission">Permission</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/app#permission App#permission}. |
 
 ---
 
@@ -2675,7 +3208,7 @@ public string DatabaseName { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/resources/app#database_name App#database_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/app#database_name App#database_name}.
 
 ---
 
@@ -2687,7 +3220,7 @@ public string InstanceName { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/resources/app#instance_name App#instance_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/app#instance_name App#instance_name}.
 
 ---
 
@@ -2699,7 +3232,7 @@ public string Permission { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/resources/app#permission App#permission}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/app#permission App#permission}.
 
 ---
 
@@ -2720,8 +3253,8 @@ new AppResourcesExperiment {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.app.AppResourcesExperiment.property.experimentId">ExperimentId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/resources/app#experiment_id App#experiment_id}. |
-| <code><a href="#@cdktn/provider-databricks.app.AppResourcesExperiment.property.permission">Permission</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/resources/app#permission App#permission}. |
+| <code><a href="#@cdktn/provider-databricks.app.AppResourcesExperiment.property.experimentId">ExperimentId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/app#experiment_id App#experiment_id}. |
+| <code><a href="#@cdktn/provider-databricks.app.AppResourcesExperiment.property.permission">Permission</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/app#permission App#permission}. |
 
 ---
 
@@ -2733,7 +3266,7 @@ public string ExperimentId { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/resources/app#experiment_id App#experiment_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/app#experiment_id App#experiment_id}.
 
 ---
 
@@ -2745,7 +3278,7 @@ public string Permission { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/resources/app#permission App#permission}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/app#permission App#permission}.
 
 ---
 
@@ -2767,9 +3300,9 @@ new AppResourcesGenieSpace {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.app.AppResourcesGenieSpace.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/resources/app#name App#name}. |
-| <code><a href="#@cdktn/provider-databricks.app.AppResourcesGenieSpace.property.permission">Permission</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/resources/app#permission App#permission}. |
-| <code><a href="#@cdktn/provider-databricks.app.AppResourcesGenieSpace.property.spaceId">SpaceId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/resources/app#space_id App#space_id}. |
+| <code><a href="#@cdktn/provider-databricks.app.AppResourcesGenieSpace.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/app#name App#name}. |
+| <code><a href="#@cdktn/provider-databricks.app.AppResourcesGenieSpace.property.permission">Permission</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/app#permission App#permission}. |
+| <code><a href="#@cdktn/provider-databricks.app.AppResourcesGenieSpace.property.spaceId">SpaceId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/app#space_id App#space_id}. |
 
 ---
 
@@ -2781,7 +3314,7 @@ public string Name { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/resources/app#name App#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/app#name App#name}.
 
 ---
 
@@ -2793,7 +3326,7 @@ public string Permission { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/resources/app#permission App#permission}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/app#permission App#permission}.
 
 ---
 
@@ -2805,7 +3338,7 @@ public string SpaceId { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/resources/app#space_id App#space_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/app#space_id App#space_id}.
 
 ---
 
@@ -2826,8 +3359,8 @@ new AppResourcesJob {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.app.AppResourcesJob.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/resources/app#id App#id}. |
-| <code><a href="#@cdktn/provider-databricks.app.AppResourcesJob.property.permission">Permission</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/resources/app#permission App#permission}. |
+| <code><a href="#@cdktn/provider-databricks.app.AppResourcesJob.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/app#id App#id}. |
+| <code><a href="#@cdktn/provider-databricks.app.AppResourcesJob.property.permission">Permission</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/app#permission App#permission}. |
 
 ---
 
@@ -2839,7 +3372,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/resources/app#id App#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/app#id App#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -2854,7 +3387,7 @@ public string Permission { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/resources/app#permission App#permission}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/app#permission App#permission}.
 
 ---
 
@@ -2876,9 +3409,9 @@ new AppResourcesPostgres {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.app.AppResourcesPostgres.property.branch">Branch</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/resources/app#branch App#branch}. |
-| <code><a href="#@cdktn/provider-databricks.app.AppResourcesPostgres.property.database">Database</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/resources/app#database App#database}. |
-| <code><a href="#@cdktn/provider-databricks.app.AppResourcesPostgres.property.permission">Permission</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/resources/app#permission App#permission}. |
+| <code><a href="#@cdktn/provider-databricks.app.AppResourcesPostgres.property.branch">Branch</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/app#branch App#branch}. |
+| <code><a href="#@cdktn/provider-databricks.app.AppResourcesPostgres.property.database">Database</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/app#database App#database}. |
+| <code><a href="#@cdktn/provider-databricks.app.AppResourcesPostgres.property.permission">Permission</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/app#permission App#permission}. |
 
 ---
 
@@ -2890,7 +3423,7 @@ public string Branch { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/resources/app#branch App#branch}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/app#branch App#branch}.
 
 ---
 
@@ -2902,7 +3435,7 @@ public string Database { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/resources/app#database App#database}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/app#database App#database}.
 
 ---
 
@@ -2914,7 +3447,7 @@ public string Permission { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/resources/app#permission App#permission}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/app#permission App#permission}.
 
 ---
 
@@ -2936,9 +3469,9 @@ new AppResourcesSecret {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.app.AppResourcesSecret.property.key">Key</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/resources/app#key App#key}. |
-| <code><a href="#@cdktn/provider-databricks.app.AppResourcesSecret.property.permission">Permission</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/resources/app#permission App#permission}. |
-| <code><a href="#@cdktn/provider-databricks.app.AppResourcesSecret.property.scope">Scope</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/resources/app#scope App#scope}. |
+| <code><a href="#@cdktn/provider-databricks.app.AppResourcesSecret.property.key">Key</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/app#key App#key}. |
+| <code><a href="#@cdktn/provider-databricks.app.AppResourcesSecret.property.permission">Permission</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/app#permission App#permission}. |
+| <code><a href="#@cdktn/provider-databricks.app.AppResourcesSecret.property.scope">Scope</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/app#scope App#scope}. |
 
 ---
 
@@ -2950,7 +3483,7 @@ public string Key { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/resources/app#key App#key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/app#key App#key}.
 
 ---
 
@@ -2962,7 +3495,7 @@ public string Permission { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/resources/app#permission App#permission}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/app#permission App#permission}.
 
 ---
 
@@ -2974,7 +3507,7 @@ public string Scope { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/resources/app#scope App#scope}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/app#scope App#scope}.
 
 ---
 
@@ -2995,8 +3528,8 @@ new AppResourcesServingEndpoint {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.app.AppResourcesServingEndpoint.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/resources/app#name App#name}. |
-| <code><a href="#@cdktn/provider-databricks.app.AppResourcesServingEndpoint.property.permission">Permission</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/resources/app#permission App#permission}. |
+| <code><a href="#@cdktn/provider-databricks.app.AppResourcesServingEndpoint.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/app#name App#name}. |
+| <code><a href="#@cdktn/provider-databricks.app.AppResourcesServingEndpoint.property.permission">Permission</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/app#permission App#permission}. |
 
 ---
 
@@ -3008,7 +3541,7 @@ public string Name { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/resources/app#name App#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/app#name App#name}.
 
 ---
 
@@ -3020,7 +3553,7 @@ public string Permission { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/resources/app#permission App#permission}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/app#permission App#permission}.
 
 ---
 
@@ -3041,8 +3574,8 @@ new AppResourcesSqlWarehouse {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.app.AppResourcesSqlWarehouse.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/resources/app#id App#id}. |
-| <code><a href="#@cdktn/provider-databricks.app.AppResourcesSqlWarehouse.property.permission">Permission</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/resources/app#permission App#permission}. |
+| <code><a href="#@cdktn/provider-databricks.app.AppResourcesSqlWarehouse.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/app#id App#id}. |
+| <code><a href="#@cdktn/provider-databricks.app.AppResourcesSqlWarehouse.property.permission">Permission</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/app#permission App#permission}. |
 
 ---
 
@@ -3054,7 +3587,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/resources/app#id App#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/app#id App#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -3069,7 +3602,7 @@ public string Permission { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/resources/app#permission App#permission}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/app#permission App#permission}.
 
 ---
 
@@ -3091,9 +3624,9 @@ new AppResourcesUcSecurable {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.app.AppResourcesUcSecurable.property.permission">Permission</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/resources/app#permission App#permission}. |
-| <code><a href="#@cdktn/provider-databricks.app.AppResourcesUcSecurable.property.securableFullName">SecurableFullName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/resources/app#securable_full_name App#securable_full_name}. |
-| <code><a href="#@cdktn/provider-databricks.app.AppResourcesUcSecurable.property.securableType">SecurableType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/resources/app#securable_type App#securable_type}. |
+| <code><a href="#@cdktn/provider-databricks.app.AppResourcesUcSecurable.property.permission">Permission</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/app#permission App#permission}. |
+| <code><a href="#@cdktn/provider-databricks.app.AppResourcesUcSecurable.property.securableFullName">SecurableFullName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/app#securable_full_name App#securable_full_name}. |
+| <code><a href="#@cdktn/provider-databricks.app.AppResourcesUcSecurable.property.securableType">SecurableType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/app#securable_type App#securable_type}. |
 
 ---
 
@@ -3105,7 +3638,7 @@ public string Permission { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/resources/app#permission App#permission}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/app#permission App#permission}.
 
 ---
 
@@ -3117,7 +3650,7 @@ public string SecurableFullName { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/resources/app#securable_full_name App#securable_full_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/app#securable_full_name App#securable_full_name}.
 
 ---
 
@@ -3129,7 +3662,7 @@ public string SecurableType { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/resources/app#securable_type App#securable_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/app#securable_type App#securable_type}.
 
 ---
 
@@ -3149,7 +3682,7 @@ new AppTelemetryExportDestinations {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.app.AppTelemetryExportDestinations.property.unityCatalog">UnityCatalog</a></code> | <code><a href="#@cdktn/provider-databricks.app.AppTelemetryExportDestinationsUnityCatalog">AppTelemetryExportDestinationsUnityCatalog</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/resources/app#unity_catalog App#unity_catalog}. |
+| <code><a href="#@cdktn/provider-databricks.app.AppTelemetryExportDestinations.property.unityCatalog">UnityCatalog</a></code> | <code><a href="#@cdktn/provider-databricks.app.AppTelemetryExportDestinationsUnityCatalog">AppTelemetryExportDestinationsUnityCatalog</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/app#unity_catalog App#unity_catalog}. |
 
 ---
 
@@ -3161,7 +3694,7 @@ public AppTelemetryExportDestinationsUnityCatalog UnityCatalog { get; set; }
 
 - *Type:* <a href="#@cdktn/provider-databricks.app.AppTelemetryExportDestinationsUnityCatalog">AppTelemetryExportDestinationsUnityCatalog</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/resources/app#unity_catalog App#unity_catalog}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/app#unity_catalog App#unity_catalog}.
 
 ---
 
@@ -3183,9 +3716,9 @@ new AppTelemetryExportDestinationsUnityCatalog {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.app.AppTelemetryExportDestinationsUnityCatalog.property.logsTable">LogsTable</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/resources/app#logs_table App#logs_table}. |
-| <code><a href="#@cdktn/provider-databricks.app.AppTelemetryExportDestinationsUnityCatalog.property.metricsTable">MetricsTable</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/resources/app#metrics_table App#metrics_table}. |
-| <code><a href="#@cdktn/provider-databricks.app.AppTelemetryExportDestinationsUnityCatalog.property.tracesTable">TracesTable</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/resources/app#traces_table App#traces_table}. |
+| <code><a href="#@cdktn/provider-databricks.app.AppTelemetryExportDestinationsUnityCatalog.property.logsTable">LogsTable</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/app#logs_table App#logs_table}. |
+| <code><a href="#@cdktn/provider-databricks.app.AppTelemetryExportDestinationsUnityCatalog.property.metricsTable">MetricsTable</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/app#metrics_table App#metrics_table}. |
+| <code><a href="#@cdktn/provider-databricks.app.AppTelemetryExportDestinationsUnityCatalog.property.tracesTable">TracesTable</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/app#traces_table App#traces_table}. |
 
 ---
 
@@ -3197,7 +3730,7 @@ public string LogsTable { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/resources/app#logs_table App#logs_table}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/app#logs_table App#logs_table}.
 
 ---
 
@@ -3209,7 +3742,7 @@ public string MetricsTable { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/resources/app#metrics_table App#metrics_table}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/app#metrics_table App#metrics_table}.
 
 ---
 
@@ -3221,7 +3754,7 @@ public string TracesTable { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/resources/app#traces_table App#traces_table}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/app#traces_table App#traces_table}.
 
 ---
 
@@ -4069,6 +4602,8 @@ The attribute on the parent resource this class is referencing.
 | <code><a href="#@cdktn/provider-databricks.app.AppActiveDeploymentGitSourceGitRepositoryOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.app.AppActiveDeploymentGitSourceGitRepositoryOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktn/provider-databricks.app.AppActiveDeploymentGitSourceGitRepositoryOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-databricks.app.AppActiveDeploymentGitSourceGitRepositoryOutputReference.resetAutoDeploy">ResetAutoDeploy</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.app.AppActiveDeploymentGitSourceGitRepositoryOutputReference.resetCallerCredentialId">ResetCallerCredentialId</a></code> | *No description.* |
 
 ---
 
@@ -4222,6 +4757,18 @@ Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
 
+##### `ResetAutoDeploy` <a name="ResetAutoDeploy" id="@cdktn/provider-databricks.app.AppActiveDeploymentGitSourceGitRepositoryOutputReference.resetAutoDeploy"></a>
+
+```csharp
+private void ResetAutoDeploy()
+```
+
+##### `ResetCallerCredentialId` <a name="ResetCallerCredentialId" id="@cdktn/provider-databricks.app.AppActiveDeploymentGitSourceGitRepositoryOutputReference.resetCallerCredentialId"></a>
+
+```csharp
+private void ResetCallerCredentialId()
+```
+
 
 #### Properties <a name="Properties" id="Properties"></a>
 
@@ -4229,8 +4776,12 @@ Returns a reversible string representation.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-databricks.app.AppActiveDeploymentGitSourceGitRepositoryOutputReference.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-databricks.app.AppActiveDeploymentGitSourceGitRepositoryOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.app.AppActiveDeploymentGitSourceGitRepositoryOutputReference.property.autoDeployInput">AutoDeployInput</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.app.AppActiveDeploymentGitSourceGitRepositoryOutputReference.property.callerCredentialIdInput">CallerCredentialIdInput</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.app.AppActiveDeploymentGitSourceGitRepositoryOutputReference.property.providerInput">ProviderInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.app.AppActiveDeploymentGitSourceGitRepositoryOutputReference.property.urlInput">UrlInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.app.AppActiveDeploymentGitSourceGitRepositoryOutputReference.property.autoDeploy">AutoDeploy</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.app.AppActiveDeploymentGitSourceGitRepositoryOutputReference.property.callerCredentialId">CallerCredentialId</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.app.AppActiveDeploymentGitSourceGitRepositoryOutputReference.property.provider">Provider</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.app.AppActiveDeploymentGitSourceGitRepositoryOutputReference.property.url">Url</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.app.AppActiveDeploymentGitSourceGitRepositoryOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktn/provider-databricks.app.AppActiveDeploymentGitSourceGitRepository">AppActiveDeploymentGitSourceGitRepository</a></code> | *No description.* |
@@ -4261,6 +4812,26 @@ public string Fqn { get; }
 
 ---
 
+##### `AutoDeployInput`<sup>Optional</sup> <a name="AutoDeployInput" id="@cdktn/provider-databricks.app.AppActiveDeploymentGitSourceGitRepositoryOutputReference.property.autoDeployInput"></a>
+
+```csharp
+public bool|IResolvable AutoDeployInput { get; }
+```
+
+- *Type:* bool|Io.Cdktn.IResolvable
+
+---
+
+##### `CallerCredentialIdInput`<sup>Optional</sup> <a name="CallerCredentialIdInput" id="@cdktn/provider-databricks.app.AppActiveDeploymentGitSourceGitRepositoryOutputReference.property.callerCredentialIdInput"></a>
+
+```csharp
+public double CallerCredentialIdInput { get; }
+```
+
+- *Type:* double
+
+---
+
 ##### `ProviderInput`<sup>Optional</sup> <a name="ProviderInput" id="@cdktn/provider-databricks.app.AppActiveDeploymentGitSourceGitRepositoryOutputReference.property.providerInput"></a>
 
 ```csharp
@@ -4278,6 +4849,26 @@ public string UrlInput { get; }
 ```
 
 - *Type:* string
+
+---
+
+##### `AutoDeploy`<sup>Required</sup> <a name="AutoDeploy" id="@cdktn/provider-databricks.app.AppActiveDeploymentGitSourceGitRepositoryOutputReference.property.autoDeploy"></a>
+
+```csharp
+public bool|IResolvable AutoDeploy { get; }
+```
+
+- *Type:* bool|Io.Cdktn.IResolvable
+
+---
+
+##### `CallerCredentialId`<sup>Required</sup> <a name="CallerCredentialId" id="@cdktn/provider-databricks.app.AppActiveDeploymentGitSourceGitRepositoryOutputReference.property.callerCredentialId"></a>
+
+```csharp
+public double CallerCredentialId { get; }
+```
+
+- *Type:* double
 
 ---
 
@@ -6038,6 +6629,744 @@ public AppComputeStatus InternalValue { get; }
 ---
 
 
+### AppDefaultGitSourceGitRepositoryOutputReference <a name="AppDefaultGitSourceGitRepositoryOutputReference" id="@cdktn/provider-databricks.app.AppDefaultGitSourceGitRepositoryOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-databricks.app.AppDefaultGitSourceGitRepositoryOutputReference.Initializer"></a>
+
+```csharp
+using Io.Cdktn.Providers.Databricks;
+
+new AppDefaultGitSourceGitRepositoryOutputReference(IInterpolatingParent TerraformResource, string TerraformAttribute);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-databricks.app.AppDefaultGitSourceGitRepositoryOutputReference.Initializer.parameter.terraformResource">TerraformResource</a></code> | <code>Io.Cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-databricks.app.AppDefaultGitSourceGitRepositoryOutputReference.Initializer.parameter.terraformAttribute">TerraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `TerraformResource`<sup>Required</sup> <a name="TerraformResource" id="@cdktn/provider-databricks.app.AppDefaultGitSourceGitRepositoryOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* Io.Cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-databricks.app.AppDefaultGitSourceGitRepositoryOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-databricks.app.AppDefaultGitSourceGitRepositoryOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.app.AppDefaultGitSourceGitRepositoryOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.app.AppDefaultGitSourceGitRepositoryOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.app.AppDefaultGitSourceGitRepositoryOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.app.AppDefaultGitSourceGitRepositoryOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.app.AppDefaultGitSourceGitRepositoryOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.app.AppDefaultGitSourceGitRepositoryOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.app.AppDefaultGitSourceGitRepositoryOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.app.AppDefaultGitSourceGitRepositoryOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.app.AppDefaultGitSourceGitRepositoryOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.app.AppDefaultGitSourceGitRepositoryOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.app.AppDefaultGitSourceGitRepositoryOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-databricks.app.AppDefaultGitSourceGitRepositoryOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-databricks.app.AppDefaultGitSourceGitRepositoryOutputReference.resetAutoDeploy">ResetAutoDeploy</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.app.AppDefaultGitSourceGitRepositoryOutputReference.resetCallerCredentialId">ResetCallerCredentialId</a></code> | *No description.* |
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktn/provider-databricks.app.AppDefaultGitSourceGitRepositoryOutputReference.computeFqn"></a>
+
+```csharp
+private string ComputeFqn()
+```
+
+##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktn/provider-databricks.app.AppDefaultGitSourceGitRepositoryOutputReference.getAnyMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, object> GetAnyMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-databricks.app.AppDefaultGitSourceGitRepositoryOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktn/provider-databricks.app.AppDefaultGitSourceGitRepositoryOutputReference.getBooleanAttribute"></a>
+
+```csharp
+private IResolvable GetBooleanAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-databricks.app.AppDefaultGitSourceGitRepositoryOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktn/provider-databricks.app.AppDefaultGitSourceGitRepositoryOutputReference.getBooleanMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, bool> GetBooleanMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-databricks.app.AppDefaultGitSourceGitRepositoryOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetListAttribute` <a name="GetListAttribute" id="@cdktn/provider-databricks.app.AppDefaultGitSourceGitRepositoryOutputReference.getListAttribute"></a>
+
+```csharp
+private string[] GetListAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-databricks.app.AppDefaultGitSourceGitRepositoryOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktn/provider-databricks.app.AppDefaultGitSourceGitRepositoryOutputReference.getNumberAttribute"></a>
+
+```csharp
+private double GetNumberAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-databricks.app.AppDefaultGitSourceGitRepositoryOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktn/provider-databricks.app.AppDefaultGitSourceGitRepositoryOutputReference.getNumberListAttribute"></a>
+
+```csharp
+private double[] GetNumberListAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-databricks.app.AppDefaultGitSourceGitRepositoryOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktn/provider-databricks.app.AppDefaultGitSourceGitRepositoryOutputReference.getNumberMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, double> GetNumberMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-databricks.app.AppDefaultGitSourceGitRepositoryOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktn/provider-databricks.app.AppDefaultGitSourceGitRepositoryOutputReference.getStringAttribute"></a>
+
+```csharp
+private string GetStringAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-databricks.app.AppDefaultGitSourceGitRepositoryOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktn/provider-databricks.app.AppDefaultGitSourceGitRepositoryOutputReference.getStringMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, string> GetStringMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-databricks.app.AppDefaultGitSourceGitRepositoryOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktn/provider-databricks.app.AppDefaultGitSourceGitRepositoryOutputReference.interpolationForAttribute"></a>
+
+```csharp
+private IResolvable InterpolationForAttribute(string Property)
+```
+
+###### `Property`<sup>Required</sup> <a name="Property" id="@cdktn/provider-databricks.app.AppDefaultGitSourceGitRepositoryOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* string
+
+---
+
+##### `Resolve` <a name="Resolve" id="@cdktn/provider-databricks.app.AppDefaultGitSourceGitRepositoryOutputReference.resolve"></a>
+
+```csharp
+private object Resolve(IResolveContext Context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `Context`<sup>Required</sup> <a name="Context" id="@cdktn/provider-databricks.app.AppDefaultGitSourceGitRepositoryOutputReference.resolve.parameter._context"></a>
+
+- *Type:* Io.Cdktn.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktn/provider-databricks.app.AppDefaultGitSourceGitRepositoryOutputReference.toString"></a>
+
+```csharp
+private string ToString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `ResetAutoDeploy` <a name="ResetAutoDeploy" id="@cdktn/provider-databricks.app.AppDefaultGitSourceGitRepositoryOutputReference.resetAutoDeploy"></a>
+
+```csharp
+private void ResetAutoDeploy()
+```
+
+##### `ResetCallerCredentialId` <a name="ResetCallerCredentialId" id="@cdktn/provider-databricks.app.AppDefaultGitSourceGitRepositoryOutputReference.resetCallerCredentialId"></a>
+
+```csharp
+private void ResetCallerCredentialId()
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-databricks.app.AppDefaultGitSourceGitRepositoryOutputReference.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-databricks.app.AppDefaultGitSourceGitRepositoryOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.app.AppDefaultGitSourceGitRepositoryOutputReference.property.autoDeployInput">AutoDeployInput</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.app.AppDefaultGitSourceGitRepositoryOutputReference.property.callerCredentialIdInput">CallerCredentialIdInput</a></code> | <code>double</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.app.AppDefaultGitSourceGitRepositoryOutputReference.property.providerInput">ProviderInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.app.AppDefaultGitSourceGitRepositoryOutputReference.property.urlInput">UrlInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.app.AppDefaultGitSourceGitRepositoryOutputReference.property.autoDeploy">AutoDeploy</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.app.AppDefaultGitSourceGitRepositoryOutputReference.property.callerCredentialId">CallerCredentialId</a></code> | <code>double</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.app.AppDefaultGitSourceGitRepositoryOutputReference.property.provider">Provider</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.app.AppDefaultGitSourceGitRepositoryOutputReference.property.url">Url</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.app.AppDefaultGitSourceGitRepositoryOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktn/provider-databricks.app.AppDefaultGitSourceGitRepository">AppDefaultGitSourceGitRepository</a></code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktn/provider-databricks.app.AppDefaultGitSourceGitRepositoryOutputReference.property.creationStack"></a>
+
+```csharp
+public string[] CreationStack { get; }
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktn/provider-databricks.app.AppDefaultGitSourceGitRepositoryOutputReference.property.fqn"></a>
+
+```csharp
+public string Fqn { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `AutoDeployInput`<sup>Optional</sup> <a name="AutoDeployInput" id="@cdktn/provider-databricks.app.AppDefaultGitSourceGitRepositoryOutputReference.property.autoDeployInput"></a>
+
+```csharp
+public bool|IResolvable AutoDeployInput { get; }
+```
+
+- *Type:* bool|Io.Cdktn.IResolvable
+
+---
+
+##### `CallerCredentialIdInput`<sup>Optional</sup> <a name="CallerCredentialIdInput" id="@cdktn/provider-databricks.app.AppDefaultGitSourceGitRepositoryOutputReference.property.callerCredentialIdInput"></a>
+
+```csharp
+public double CallerCredentialIdInput { get; }
+```
+
+- *Type:* double
+
+---
+
+##### `ProviderInput`<sup>Optional</sup> <a name="ProviderInput" id="@cdktn/provider-databricks.app.AppDefaultGitSourceGitRepositoryOutputReference.property.providerInput"></a>
+
+```csharp
+public string ProviderInput { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `UrlInput`<sup>Optional</sup> <a name="UrlInput" id="@cdktn/provider-databricks.app.AppDefaultGitSourceGitRepositoryOutputReference.property.urlInput"></a>
+
+```csharp
+public string UrlInput { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `AutoDeploy`<sup>Required</sup> <a name="AutoDeploy" id="@cdktn/provider-databricks.app.AppDefaultGitSourceGitRepositoryOutputReference.property.autoDeploy"></a>
+
+```csharp
+public bool|IResolvable AutoDeploy { get; }
+```
+
+- *Type:* bool|Io.Cdktn.IResolvable
+
+---
+
+##### `CallerCredentialId`<sup>Required</sup> <a name="CallerCredentialId" id="@cdktn/provider-databricks.app.AppDefaultGitSourceGitRepositoryOutputReference.property.callerCredentialId"></a>
+
+```csharp
+public double CallerCredentialId { get; }
+```
+
+- *Type:* double
+
+---
+
+##### `Provider`<sup>Required</sup> <a name="Provider" id="@cdktn/provider-databricks.app.AppDefaultGitSourceGitRepositoryOutputReference.property.provider"></a>
+
+```csharp
+public string Provider { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `Url`<sup>Required</sup> <a name="Url" id="@cdktn/provider-databricks.app.AppDefaultGitSourceGitRepositoryOutputReference.property.url"></a>
+
+```csharp
+public string Url { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktn/provider-databricks.app.AppDefaultGitSourceGitRepositoryOutputReference.property.internalValue"></a>
+
+```csharp
+public AppDefaultGitSourceGitRepository InternalValue { get; }
+```
+
+- *Type:* <a href="#@cdktn/provider-databricks.app.AppDefaultGitSourceGitRepository">AppDefaultGitSourceGitRepository</a>
+
+---
+
+
+### AppDefaultGitSourceOutputReference <a name="AppDefaultGitSourceOutputReference" id="@cdktn/provider-databricks.app.AppDefaultGitSourceOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-databricks.app.AppDefaultGitSourceOutputReference.Initializer"></a>
+
+```csharp
+using Io.Cdktn.Providers.Databricks;
+
+new AppDefaultGitSourceOutputReference(IInterpolatingParent TerraformResource, string TerraformAttribute);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-databricks.app.AppDefaultGitSourceOutputReference.Initializer.parameter.terraformResource">TerraformResource</a></code> | <code>Io.Cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-databricks.app.AppDefaultGitSourceOutputReference.Initializer.parameter.terraformAttribute">TerraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `TerraformResource`<sup>Required</sup> <a name="TerraformResource" id="@cdktn/provider-databricks.app.AppDefaultGitSourceOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* Io.Cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-databricks.app.AppDefaultGitSourceOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-databricks.app.AppDefaultGitSourceOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.app.AppDefaultGitSourceOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.app.AppDefaultGitSourceOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.app.AppDefaultGitSourceOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.app.AppDefaultGitSourceOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.app.AppDefaultGitSourceOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.app.AppDefaultGitSourceOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.app.AppDefaultGitSourceOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.app.AppDefaultGitSourceOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.app.AppDefaultGitSourceOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.app.AppDefaultGitSourceOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.app.AppDefaultGitSourceOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-databricks.app.AppDefaultGitSourceOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-databricks.app.AppDefaultGitSourceOutputReference.resetBranch">ResetBranch</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.app.AppDefaultGitSourceOutputReference.resetCommit">ResetCommit</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.app.AppDefaultGitSourceOutputReference.resetSourceCodePath">ResetSourceCodePath</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.app.AppDefaultGitSourceOutputReference.resetTag">ResetTag</a></code> | *No description.* |
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktn/provider-databricks.app.AppDefaultGitSourceOutputReference.computeFqn"></a>
+
+```csharp
+private string ComputeFqn()
+```
+
+##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktn/provider-databricks.app.AppDefaultGitSourceOutputReference.getAnyMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, object> GetAnyMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-databricks.app.AppDefaultGitSourceOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktn/provider-databricks.app.AppDefaultGitSourceOutputReference.getBooleanAttribute"></a>
+
+```csharp
+private IResolvable GetBooleanAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-databricks.app.AppDefaultGitSourceOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktn/provider-databricks.app.AppDefaultGitSourceOutputReference.getBooleanMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, bool> GetBooleanMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-databricks.app.AppDefaultGitSourceOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetListAttribute` <a name="GetListAttribute" id="@cdktn/provider-databricks.app.AppDefaultGitSourceOutputReference.getListAttribute"></a>
+
+```csharp
+private string[] GetListAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-databricks.app.AppDefaultGitSourceOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktn/provider-databricks.app.AppDefaultGitSourceOutputReference.getNumberAttribute"></a>
+
+```csharp
+private double GetNumberAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-databricks.app.AppDefaultGitSourceOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktn/provider-databricks.app.AppDefaultGitSourceOutputReference.getNumberListAttribute"></a>
+
+```csharp
+private double[] GetNumberListAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-databricks.app.AppDefaultGitSourceOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktn/provider-databricks.app.AppDefaultGitSourceOutputReference.getNumberMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, double> GetNumberMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-databricks.app.AppDefaultGitSourceOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktn/provider-databricks.app.AppDefaultGitSourceOutputReference.getStringAttribute"></a>
+
+```csharp
+private string GetStringAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-databricks.app.AppDefaultGitSourceOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktn/provider-databricks.app.AppDefaultGitSourceOutputReference.getStringMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, string> GetStringMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-databricks.app.AppDefaultGitSourceOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktn/provider-databricks.app.AppDefaultGitSourceOutputReference.interpolationForAttribute"></a>
+
+```csharp
+private IResolvable InterpolationForAttribute(string Property)
+```
+
+###### `Property`<sup>Required</sup> <a name="Property" id="@cdktn/provider-databricks.app.AppDefaultGitSourceOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* string
+
+---
+
+##### `Resolve` <a name="Resolve" id="@cdktn/provider-databricks.app.AppDefaultGitSourceOutputReference.resolve"></a>
+
+```csharp
+private object Resolve(IResolveContext Context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `Context`<sup>Required</sup> <a name="Context" id="@cdktn/provider-databricks.app.AppDefaultGitSourceOutputReference.resolve.parameter._context"></a>
+
+- *Type:* Io.Cdktn.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktn/provider-databricks.app.AppDefaultGitSourceOutputReference.toString"></a>
+
+```csharp
+private string ToString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `ResetBranch` <a name="ResetBranch" id="@cdktn/provider-databricks.app.AppDefaultGitSourceOutputReference.resetBranch"></a>
+
+```csharp
+private void ResetBranch()
+```
+
+##### `ResetCommit` <a name="ResetCommit" id="@cdktn/provider-databricks.app.AppDefaultGitSourceOutputReference.resetCommit"></a>
+
+```csharp
+private void ResetCommit()
+```
+
+##### `ResetSourceCodePath` <a name="ResetSourceCodePath" id="@cdktn/provider-databricks.app.AppDefaultGitSourceOutputReference.resetSourceCodePath"></a>
+
+```csharp
+private void ResetSourceCodePath()
+```
+
+##### `ResetTag` <a name="ResetTag" id="@cdktn/provider-databricks.app.AppDefaultGitSourceOutputReference.resetTag"></a>
+
+```csharp
+private void ResetTag()
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-databricks.app.AppDefaultGitSourceOutputReference.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-databricks.app.AppDefaultGitSourceOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.app.AppDefaultGitSourceOutputReference.property.gitRepository">GitRepository</a></code> | <code><a href="#@cdktn/provider-databricks.app.AppDefaultGitSourceGitRepositoryOutputReference">AppDefaultGitSourceGitRepositoryOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.app.AppDefaultGitSourceOutputReference.property.resolvedCommit">ResolvedCommit</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.app.AppDefaultGitSourceOutputReference.property.branchInput">BranchInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.app.AppDefaultGitSourceOutputReference.property.commitInput">CommitInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.app.AppDefaultGitSourceOutputReference.property.sourceCodePathInput">SourceCodePathInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.app.AppDefaultGitSourceOutputReference.property.tagInput">TagInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.app.AppDefaultGitSourceOutputReference.property.branch">Branch</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.app.AppDefaultGitSourceOutputReference.property.commit">Commit</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.app.AppDefaultGitSourceOutputReference.property.sourceCodePath">SourceCodePath</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.app.AppDefaultGitSourceOutputReference.property.tag">Tag</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.app.AppDefaultGitSourceOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktn/provider-databricks.app.AppDefaultGitSource">AppDefaultGitSource</a></code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktn/provider-databricks.app.AppDefaultGitSourceOutputReference.property.creationStack"></a>
+
+```csharp
+public string[] CreationStack { get; }
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktn/provider-databricks.app.AppDefaultGitSourceOutputReference.property.fqn"></a>
+
+```csharp
+public string Fqn { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `GitRepository`<sup>Required</sup> <a name="GitRepository" id="@cdktn/provider-databricks.app.AppDefaultGitSourceOutputReference.property.gitRepository"></a>
+
+```csharp
+public AppDefaultGitSourceGitRepositoryOutputReference GitRepository { get; }
+```
+
+- *Type:* <a href="#@cdktn/provider-databricks.app.AppDefaultGitSourceGitRepositoryOutputReference">AppDefaultGitSourceGitRepositoryOutputReference</a>
+
+---
+
+##### `ResolvedCommit`<sup>Required</sup> <a name="ResolvedCommit" id="@cdktn/provider-databricks.app.AppDefaultGitSourceOutputReference.property.resolvedCommit"></a>
+
+```csharp
+public string ResolvedCommit { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `BranchInput`<sup>Optional</sup> <a name="BranchInput" id="@cdktn/provider-databricks.app.AppDefaultGitSourceOutputReference.property.branchInput"></a>
+
+```csharp
+public string BranchInput { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `CommitInput`<sup>Optional</sup> <a name="CommitInput" id="@cdktn/provider-databricks.app.AppDefaultGitSourceOutputReference.property.commitInput"></a>
+
+```csharp
+public string CommitInput { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `SourceCodePathInput`<sup>Optional</sup> <a name="SourceCodePathInput" id="@cdktn/provider-databricks.app.AppDefaultGitSourceOutputReference.property.sourceCodePathInput"></a>
+
+```csharp
+public string SourceCodePathInput { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `TagInput`<sup>Optional</sup> <a name="TagInput" id="@cdktn/provider-databricks.app.AppDefaultGitSourceOutputReference.property.tagInput"></a>
+
+```csharp
+public string TagInput { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `Branch`<sup>Required</sup> <a name="Branch" id="@cdktn/provider-databricks.app.AppDefaultGitSourceOutputReference.property.branch"></a>
+
+```csharp
+public string Branch { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `Commit`<sup>Required</sup> <a name="Commit" id="@cdktn/provider-databricks.app.AppDefaultGitSourceOutputReference.property.commit"></a>
+
+```csharp
+public string Commit { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `SourceCodePath`<sup>Required</sup> <a name="SourceCodePath" id="@cdktn/provider-databricks.app.AppDefaultGitSourceOutputReference.property.sourceCodePath"></a>
+
+```csharp
+public string SourceCodePath { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `Tag`<sup>Required</sup> <a name="Tag" id="@cdktn/provider-databricks.app.AppDefaultGitSourceOutputReference.property.tag"></a>
+
+```csharp
+public string Tag { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktn/provider-databricks.app.AppDefaultGitSourceOutputReference.property.internalValue"></a>
+
+```csharp
+public AppDefaultGitSource InternalValue { get; }
+```
+
+- *Type:* <a href="#@cdktn/provider-databricks.app.AppDefaultGitSource">AppDefaultGitSource</a>
+
+---
+
+
 ### AppGitRepositoryOutputReference <a name="AppGitRepositoryOutputReference" id="@cdktn/provider-databricks.app.AppGitRepositoryOutputReference"></a>
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.app.AppGitRepositoryOutputReference.Initializer"></a>
@@ -6088,6 +7417,8 @@ The attribute on the parent resource this class is referencing.
 | <code><a href="#@cdktn/provider-databricks.app.AppGitRepositoryOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.app.AppGitRepositoryOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktn/provider-databricks.app.AppGitRepositoryOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-databricks.app.AppGitRepositoryOutputReference.resetAutoDeploy">ResetAutoDeploy</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.app.AppGitRepositoryOutputReference.resetCallerCredentialId">ResetCallerCredentialId</a></code> | *No description.* |
 
 ---
 
@@ -6241,6 +7572,18 @@ Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
 
+##### `ResetAutoDeploy` <a name="ResetAutoDeploy" id="@cdktn/provider-databricks.app.AppGitRepositoryOutputReference.resetAutoDeploy"></a>
+
+```csharp
+private void ResetAutoDeploy()
+```
+
+##### `ResetCallerCredentialId` <a name="ResetCallerCredentialId" id="@cdktn/provider-databricks.app.AppGitRepositoryOutputReference.resetCallerCredentialId"></a>
+
+```csharp
+private void ResetCallerCredentialId()
+```
+
 
 #### Properties <a name="Properties" id="Properties"></a>
 
@@ -6248,8 +7591,12 @@ Returns a reversible string representation.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-databricks.app.AppGitRepositoryOutputReference.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-databricks.app.AppGitRepositoryOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.app.AppGitRepositoryOutputReference.property.autoDeployInput">AutoDeployInput</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.app.AppGitRepositoryOutputReference.property.callerCredentialIdInput">CallerCredentialIdInput</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.app.AppGitRepositoryOutputReference.property.providerInput">ProviderInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.app.AppGitRepositoryOutputReference.property.urlInput">UrlInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.app.AppGitRepositoryOutputReference.property.autoDeploy">AutoDeploy</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.app.AppGitRepositoryOutputReference.property.callerCredentialId">CallerCredentialId</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.app.AppGitRepositoryOutputReference.property.provider">Provider</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.app.AppGitRepositoryOutputReference.property.url">Url</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.app.AppGitRepositoryOutputReference.property.internalValue">InternalValue</a></code> | <code>Io.Cdktn.IResolvable\|<a href="#@cdktn/provider-databricks.app.AppGitRepository">AppGitRepository</a></code> | *No description.* |
@@ -6280,6 +7627,26 @@ public string Fqn { get; }
 
 ---
 
+##### `AutoDeployInput`<sup>Optional</sup> <a name="AutoDeployInput" id="@cdktn/provider-databricks.app.AppGitRepositoryOutputReference.property.autoDeployInput"></a>
+
+```csharp
+public bool|IResolvable AutoDeployInput { get; }
+```
+
+- *Type:* bool|Io.Cdktn.IResolvable
+
+---
+
+##### `CallerCredentialIdInput`<sup>Optional</sup> <a name="CallerCredentialIdInput" id="@cdktn/provider-databricks.app.AppGitRepositoryOutputReference.property.callerCredentialIdInput"></a>
+
+```csharp
+public double CallerCredentialIdInput { get; }
+```
+
+- *Type:* double
+
+---
+
 ##### `ProviderInput`<sup>Optional</sup> <a name="ProviderInput" id="@cdktn/provider-databricks.app.AppGitRepositoryOutputReference.property.providerInput"></a>
 
 ```csharp
@@ -6297,6 +7664,26 @@ public string UrlInput { get; }
 ```
 
 - *Type:* string
+
+---
+
+##### `AutoDeploy`<sup>Required</sup> <a name="AutoDeploy" id="@cdktn/provider-databricks.app.AppGitRepositoryOutputReference.property.autoDeploy"></a>
+
+```csharp
+public bool|IResolvable AutoDeploy { get; }
+```
+
+- *Type:* bool|Io.Cdktn.IResolvable
+
+---
+
+##### `CallerCredentialId`<sup>Required</sup> <a name="CallerCredentialId" id="@cdktn/provider-databricks.app.AppGitRepositoryOutputReference.property.callerCredentialId"></a>
+
+```csharp
+public double CallerCredentialId { get; }
+```
+
+- *Type:* double
 
 ---
 
@@ -6327,6 +7714,744 @@ public IResolvable|AppGitRepository InternalValue { get; }
 ```
 
 - *Type:* Io.Cdktn.IResolvable|<a href="#@cdktn/provider-databricks.app.AppGitRepository">AppGitRepository</a>
+
+---
+
+
+### AppGitSourceGitRepositoryOutputReference <a name="AppGitSourceGitRepositoryOutputReference" id="@cdktn/provider-databricks.app.AppGitSourceGitRepositoryOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-databricks.app.AppGitSourceGitRepositoryOutputReference.Initializer"></a>
+
+```csharp
+using Io.Cdktn.Providers.Databricks;
+
+new AppGitSourceGitRepositoryOutputReference(IInterpolatingParent TerraformResource, string TerraformAttribute);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-databricks.app.AppGitSourceGitRepositoryOutputReference.Initializer.parameter.terraformResource">TerraformResource</a></code> | <code>Io.Cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-databricks.app.AppGitSourceGitRepositoryOutputReference.Initializer.parameter.terraformAttribute">TerraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `TerraformResource`<sup>Required</sup> <a name="TerraformResource" id="@cdktn/provider-databricks.app.AppGitSourceGitRepositoryOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* Io.Cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-databricks.app.AppGitSourceGitRepositoryOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-databricks.app.AppGitSourceGitRepositoryOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.app.AppGitSourceGitRepositoryOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.app.AppGitSourceGitRepositoryOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.app.AppGitSourceGitRepositoryOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.app.AppGitSourceGitRepositoryOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.app.AppGitSourceGitRepositoryOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.app.AppGitSourceGitRepositoryOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.app.AppGitSourceGitRepositoryOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.app.AppGitSourceGitRepositoryOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.app.AppGitSourceGitRepositoryOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.app.AppGitSourceGitRepositoryOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.app.AppGitSourceGitRepositoryOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-databricks.app.AppGitSourceGitRepositoryOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-databricks.app.AppGitSourceGitRepositoryOutputReference.resetAutoDeploy">ResetAutoDeploy</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.app.AppGitSourceGitRepositoryOutputReference.resetCallerCredentialId">ResetCallerCredentialId</a></code> | *No description.* |
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktn/provider-databricks.app.AppGitSourceGitRepositoryOutputReference.computeFqn"></a>
+
+```csharp
+private string ComputeFqn()
+```
+
+##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktn/provider-databricks.app.AppGitSourceGitRepositoryOutputReference.getAnyMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, object> GetAnyMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-databricks.app.AppGitSourceGitRepositoryOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktn/provider-databricks.app.AppGitSourceGitRepositoryOutputReference.getBooleanAttribute"></a>
+
+```csharp
+private IResolvable GetBooleanAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-databricks.app.AppGitSourceGitRepositoryOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktn/provider-databricks.app.AppGitSourceGitRepositoryOutputReference.getBooleanMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, bool> GetBooleanMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-databricks.app.AppGitSourceGitRepositoryOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetListAttribute` <a name="GetListAttribute" id="@cdktn/provider-databricks.app.AppGitSourceGitRepositoryOutputReference.getListAttribute"></a>
+
+```csharp
+private string[] GetListAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-databricks.app.AppGitSourceGitRepositoryOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktn/provider-databricks.app.AppGitSourceGitRepositoryOutputReference.getNumberAttribute"></a>
+
+```csharp
+private double GetNumberAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-databricks.app.AppGitSourceGitRepositoryOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktn/provider-databricks.app.AppGitSourceGitRepositoryOutputReference.getNumberListAttribute"></a>
+
+```csharp
+private double[] GetNumberListAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-databricks.app.AppGitSourceGitRepositoryOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktn/provider-databricks.app.AppGitSourceGitRepositoryOutputReference.getNumberMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, double> GetNumberMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-databricks.app.AppGitSourceGitRepositoryOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktn/provider-databricks.app.AppGitSourceGitRepositoryOutputReference.getStringAttribute"></a>
+
+```csharp
+private string GetStringAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-databricks.app.AppGitSourceGitRepositoryOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktn/provider-databricks.app.AppGitSourceGitRepositoryOutputReference.getStringMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, string> GetStringMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-databricks.app.AppGitSourceGitRepositoryOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktn/provider-databricks.app.AppGitSourceGitRepositoryOutputReference.interpolationForAttribute"></a>
+
+```csharp
+private IResolvable InterpolationForAttribute(string Property)
+```
+
+###### `Property`<sup>Required</sup> <a name="Property" id="@cdktn/provider-databricks.app.AppGitSourceGitRepositoryOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* string
+
+---
+
+##### `Resolve` <a name="Resolve" id="@cdktn/provider-databricks.app.AppGitSourceGitRepositoryOutputReference.resolve"></a>
+
+```csharp
+private object Resolve(IResolveContext Context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `Context`<sup>Required</sup> <a name="Context" id="@cdktn/provider-databricks.app.AppGitSourceGitRepositoryOutputReference.resolve.parameter._context"></a>
+
+- *Type:* Io.Cdktn.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktn/provider-databricks.app.AppGitSourceGitRepositoryOutputReference.toString"></a>
+
+```csharp
+private string ToString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `ResetAutoDeploy` <a name="ResetAutoDeploy" id="@cdktn/provider-databricks.app.AppGitSourceGitRepositoryOutputReference.resetAutoDeploy"></a>
+
+```csharp
+private void ResetAutoDeploy()
+```
+
+##### `ResetCallerCredentialId` <a name="ResetCallerCredentialId" id="@cdktn/provider-databricks.app.AppGitSourceGitRepositoryOutputReference.resetCallerCredentialId"></a>
+
+```csharp
+private void ResetCallerCredentialId()
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-databricks.app.AppGitSourceGitRepositoryOutputReference.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-databricks.app.AppGitSourceGitRepositoryOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.app.AppGitSourceGitRepositoryOutputReference.property.autoDeployInput">AutoDeployInput</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.app.AppGitSourceGitRepositoryOutputReference.property.callerCredentialIdInput">CallerCredentialIdInput</a></code> | <code>double</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.app.AppGitSourceGitRepositoryOutputReference.property.providerInput">ProviderInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.app.AppGitSourceGitRepositoryOutputReference.property.urlInput">UrlInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.app.AppGitSourceGitRepositoryOutputReference.property.autoDeploy">AutoDeploy</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.app.AppGitSourceGitRepositoryOutputReference.property.callerCredentialId">CallerCredentialId</a></code> | <code>double</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.app.AppGitSourceGitRepositoryOutputReference.property.provider">Provider</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.app.AppGitSourceGitRepositoryOutputReference.property.url">Url</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.app.AppGitSourceGitRepositoryOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktn/provider-databricks.app.AppGitSourceGitRepository">AppGitSourceGitRepository</a></code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktn/provider-databricks.app.AppGitSourceGitRepositoryOutputReference.property.creationStack"></a>
+
+```csharp
+public string[] CreationStack { get; }
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktn/provider-databricks.app.AppGitSourceGitRepositoryOutputReference.property.fqn"></a>
+
+```csharp
+public string Fqn { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `AutoDeployInput`<sup>Optional</sup> <a name="AutoDeployInput" id="@cdktn/provider-databricks.app.AppGitSourceGitRepositoryOutputReference.property.autoDeployInput"></a>
+
+```csharp
+public bool|IResolvable AutoDeployInput { get; }
+```
+
+- *Type:* bool|Io.Cdktn.IResolvable
+
+---
+
+##### `CallerCredentialIdInput`<sup>Optional</sup> <a name="CallerCredentialIdInput" id="@cdktn/provider-databricks.app.AppGitSourceGitRepositoryOutputReference.property.callerCredentialIdInput"></a>
+
+```csharp
+public double CallerCredentialIdInput { get; }
+```
+
+- *Type:* double
+
+---
+
+##### `ProviderInput`<sup>Optional</sup> <a name="ProviderInput" id="@cdktn/provider-databricks.app.AppGitSourceGitRepositoryOutputReference.property.providerInput"></a>
+
+```csharp
+public string ProviderInput { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `UrlInput`<sup>Optional</sup> <a name="UrlInput" id="@cdktn/provider-databricks.app.AppGitSourceGitRepositoryOutputReference.property.urlInput"></a>
+
+```csharp
+public string UrlInput { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `AutoDeploy`<sup>Required</sup> <a name="AutoDeploy" id="@cdktn/provider-databricks.app.AppGitSourceGitRepositoryOutputReference.property.autoDeploy"></a>
+
+```csharp
+public bool|IResolvable AutoDeploy { get; }
+```
+
+- *Type:* bool|Io.Cdktn.IResolvable
+
+---
+
+##### `CallerCredentialId`<sup>Required</sup> <a name="CallerCredentialId" id="@cdktn/provider-databricks.app.AppGitSourceGitRepositoryOutputReference.property.callerCredentialId"></a>
+
+```csharp
+public double CallerCredentialId { get; }
+```
+
+- *Type:* double
+
+---
+
+##### `Provider`<sup>Required</sup> <a name="Provider" id="@cdktn/provider-databricks.app.AppGitSourceGitRepositoryOutputReference.property.provider"></a>
+
+```csharp
+public string Provider { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `Url`<sup>Required</sup> <a name="Url" id="@cdktn/provider-databricks.app.AppGitSourceGitRepositoryOutputReference.property.url"></a>
+
+```csharp
+public string Url { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktn/provider-databricks.app.AppGitSourceGitRepositoryOutputReference.property.internalValue"></a>
+
+```csharp
+public AppGitSourceGitRepository InternalValue { get; }
+```
+
+- *Type:* <a href="#@cdktn/provider-databricks.app.AppGitSourceGitRepository">AppGitSourceGitRepository</a>
+
+---
+
+
+### AppGitSourceOutputReference <a name="AppGitSourceOutputReference" id="@cdktn/provider-databricks.app.AppGitSourceOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-databricks.app.AppGitSourceOutputReference.Initializer"></a>
+
+```csharp
+using Io.Cdktn.Providers.Databricks;
+
+new AppGitSourceOutputReference(IInterpolatingParent TerraformResource, string TerraformAttribute);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-databricks.app.AppGitSourceOutputReference.Initializer.parameter.terraformResource">TerraformResource</a></code> | <code>Io.Cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-databricks.app.AppGitSourceOutputReference.Initializer.parameter.terraformAttribute">TerraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `TerraformResource`<sup>Required</sup> <a name="TerraformResource" id="@cdktn/provider-databricks.app.AppGitSourceOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* Io.Cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-databricks.app.AppGitSourceOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-databricks.app.AppGitSourceOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.app.AppGitSourceOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.app.AppGitSourceOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.app.AppGitSourceOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.app.AppGitSourceOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.app.AppGitSourceOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.app.AppGitSourceOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.app.AppGitSourceOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.app.AppGitSourceOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.app.AppGitSourceOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.app.AppGitSourceOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.app.AppGitSourceOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-databricks.app.AppGitSourceOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-databricks.app.AppGitSourceOutputReference.resetBranch">ResetBranch</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.app.AppGitSourceOutputReference.resetCommit">ResetCommit</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.app.AppGitSourceOutputReference.resetSourceCodePath">ResetSourceCodePath</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.app.AppGitSourceOutputReference.resetTag">ResetTag</a></code> | *No description.* |
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktn/provider-databricks.app.AppGitSourceOutputReference.computeFqn"></a>
+
+```csharp
+private string ComputeFqn()
+```
+
+##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktn/provider-databricks.app.AppGitSourceOutputReference.getAnyMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, object> GetAnyMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-databricks.app.AppGitSourceOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktn/provider-databricks.app.AppGitSourceOutputReference.getBooleanAttribute"></a>
+
+```csharp
+private IResolvable GetBooleanAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-databricks.app.AppGitSourceOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktn/provider-databricks.app.AppGitSourceOutputReference.getBooleanMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, bool> GetBooleanMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-databricks.app.AppGitSourceOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetListAttribute` <a name="GetListAttribute" id="@cdktn/provider-databricks.app.AppGitSourceOutputReference.getListAttribute"></a>
+
+```csharp
+private string[] GetListAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-databricks.app.AppGitSourceOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktn/provider-databricks.app.AppGitSourceOutputReference.getNumberAttribute"></a>
+
+```csharp
+private double GetNumberAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-databricks.app.AppGitSourceOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktn/provider-databricks.app.AppGitSourceOutputReference.getNumberListAttribute"></a>
+
+```csharp
+private double[] GetNumberListAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-databricks.app.AppGitSourceOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktn/provider-databricks.app.AppGitSourceOutputReference.getNumberMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, double> GetNumberMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-databricks.app.AppGitSourceOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktn/provider-databricks.app.AppGitSourceOutputReference.getStringAttribute"></a>
+
+```csharp
+private string GetStringAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-databricks.app.AppGitSourceOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktn/provider-databricks.app.AppGitSourceOutputReference.getStringMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, string> GetStringMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-databricks.app.AppGitSourceOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktn/provider-databricks.app.AppGitSourceOutputReference.interpolationForAttribute"></a>
+
+```csharp
+private IResolvable InterpolationForAttribute(string Property)
+```
+
+###### `Property`<sup>Required</sup> <a name="Property" id="@cdktn/provider-databricks.app.AppGitSourceOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* string
+
+---
+
+##### `Resolve` <a name="Resolve" id="@cdktn/provider-databricks.app.AppGitSourceOutputReference.resolve"></a>
+
+```csharp
+private object Resolve(IResolveContext Context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `Context`<sup>Required</sup> <a name="Context" id="@cdktn/provider-databricks.app.AppGitSourceOutputReference.resolve.parameter._context"></a>
+
+- *Type:* Io.Cdktn.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktn/provider-databricks.app.AppGitSourceOutputReference.toString"></a>
+
+```csharp
+private string ToString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `ResetBranch` <a name="ResetBranch" id="@cdktn/provider-databricks.app.AppGitSourceOutputReference.resetBranch"></a>
+
+```csharp
+private void ResetBranch()
+```
+
+##### `ResetCommit` <a name="ResetCommit" id="@cdktn/provider-databricks.app.AppGitSourceOutputReference.resetCommit"></a>
+
+```csharp
+private void ResetCommit()
+```
+
+##### `ResetSourceCodePath` <a name="ResetSourceCodePath" id="@cdktn/provider-databricks.app.AppGitSourceOutputReference.resetSourceCodePath"></a>
+
+```csharp
+private void ResetSourceCodePath()
+```
+
+##### `ResetTag` <a name="ResetTag" id="@cdktn/provider-databricks.app.AppGitSourceOutputReference.resetTag"></a>
+
+```csharp
+private void ResetTag()
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-databricks.app.AppGitSourceOutputReference.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-databricks.app.AppGitSourceOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.app.AppGitSourceOutputReference.property.gitRepository">GitRepository</a></code> | <code><a href="#@cdktn/provider-databricks.app.AppGitSourceGitRepositoryOutputReference">AppGitSourceGitRepositoryOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.app.AppGitSourceOutputReference.property.resolvedCommit">ResolvedCommit</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.app.AppGitSourceOutputReference.property.branchInput">BranchInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.app.AppGitSourceOutputReference.property.commitInput">CommitInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.app.AppGitSourceOutputReference.property.sourceCodePathInput">SourceCodePathInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.app.AppGitSourceOutputReference.property.tagInput">TagInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.app.AppGitSourceOutputReference.property.branch">Branch</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.app.AppGitSourceOutputReference.property.commit">Commit</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.app.AppGitSourceOutputReference.property.sourceCodePath">SourceCodePath</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.app.AppGitSourceOutputReference.property.tag">Tag</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.app.AppGitSourceOutputReference.property.internalValue">InternalValue</a></code> | <code>Io.Cdktn.IResolvable\|<a href="#@cdktn/provider-databricks.app.AppGitSource">AppGitSource</a></code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktn/provider-databricks.app.AppGitSourceOutputReference.property.creationStack"></a>
+
+```csharp
+public string[] CreationStack { get; }
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktn/provider-databricks.app.AppGitSourceOutputReference.property.fqn"></a>
+
+```csharp
+public string Fqn { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `GitRepository`<sup>Required</sup> <a name="GitRepository" id="@cdktn/provider-databricks.app.AppGitSourceOutputReference.property.gitRepository"></a>
+
+```csharp
+public AppGitSourceGitRepositoryOutputReference GitRepository { get; }
+```
+
+- *Type:* <a href="#@cdktn/provider-databricks.app.AppGitSourceGitRepositoryOutputReference">AppGitSourceGitRepositoryOutputReference</a>
+
+---
+
+##### `ResolvedCommit`<sup>Required</sup> <a name="ResolvedCommit" id="@cdktn/provider-databricks.app.AppGitSourceOutputReference.property.resolvedCommit"></a>
+
+```csharp
+public string ResolvedCommit { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `BranchInput`<sup>Optional</sup> <a name="BranchInput" id="@cdktn/provider-databricks.app.AppGitSourceOutputReference.property.branchInput"></a>
+
+```csharp
+public string BranchInput { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `CommitInput`<sup>Optional</sup> <a name="CommitInput" id="@cdktn/provider-databricks.app.AppGitSourceOutputReference.property.commitInput"></a>
+
+```csharp
+public string CommitInput { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `SourceCodePathInput`<sup>Optional</sup> <a name="SourceCodePathInput" id="@cdktn/provider-databricks.app.AppGitSourceOutputReference.property.sourceCodePathInput"></a>
+
+```csharp
+public string SourceCodePathInput { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `TagInput`<sup>Optional</sup> <a name="TagInput" id="@cdktn/provider-databricks.app.AppGitSourceOutputReference.property.tagInput"></a>
+
+```csharp
+public string TagInput { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `Branch`<sup>Required</sup> <a name="Branch" id="@cdktn/provider-databricks.app.AppGitSourceOutputReference.property.branch"></a>
+
+```csharp
+public string Branch { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `Commit`<sup>Required</sup> <a name="Commit" id="@cdktn/provider-databricks.app.AppGitSourceOutputReference.property.commit"></a>
+
+```csharp
+public string Commit { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `SourceCodePath`<sup>Required</sup> <a name="SourceCodePath" id="@cdktn/provider-databricks.app.AppGitSourceOutputReference.property.sourceCodePath"></a>
+
+```csharp
+public string SourceCodePath { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `Tag`<sup>Required</sup> <a name="Tag" id="@cdktn/provider-databricks.app.AppGitSourceOutputReference.property.tag"></a>
+
+```csharp
+public string Tag { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktn/provider-databricks.app.AppGitSourceOutputReference.property.internalValue"></a>
+
+```csharp
+public IResolvable|AppGitSource InternalValue { get; }
+```
+
+- *Type:* Io.Cdktn.IResolvable|<a href="#@cdktn/provider-databricks.app.AppGitSource">AppGitSource</a>
 
 ---
 
@@ -7173,6 +9298,8 @@ The attribute on the parent resource this class is referencing.
 | <code><a href="#@cdktn/provider-databricks.app.AppPendingDeploymentGitSourceGitRepositoryOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.app.AppPendingDeploymentGitSourceGitRepositoryOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktn/provider-databricks.app.AppPendingDeploymentGitSourceGitRepositoryOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-databricks.app.AppPendingDeploymentGitSourceGitRepositoryOutputReference.resetAutoDeploy">ResetAutoDeploy</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.app.AppPendingDeploymentGitSourceGitRepositoryOutputReference.resetCallerCredentialId">ResetCallerCredentialId</a></code> | *No description.* |
 
 ---
 
@@ -7326,6 +9453,18 @@ Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
 
+##### `ResetAutoDeploy` <a name="ResetAutoDeploy" id="@cdktn/provider-databricks.app.AppPendingDeploymentGitSourceGitRepositoryOutputReference.resetAutoDeploy"></a>
+
+```csharp
+private void ResetAutoDeploy()
+```
+
+##### `ResetCallerCredentialId` <a name="ResetCallerCredentialId" id="@cdktn/provider-databricks.app.AppPendingDeploymentGitSourceGitRepositoryOutputReference.resetCallerCredentialId"></a>
+
+```csharp
+private void ResetCallerCredentialId()
+```
+
 
 #### Properties <a name="Properties" id="Properties"></a>
 
@@ -7333,8 +9472,12 @@ Returns a reversible string representation.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-databricks.app.AppPendingDeploymentGitSourceGitRepositoryOutputReference.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-databricks.app.AppPendingDeploymentGitSourceGitRepositoryOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.app.AppPendingDeploymentGitSourceGitRepositoryOutputReference.property.autoDeployInput">AutoDeployInput</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.app.AppPendingDeploymentGitSourceGitRepositoryOutputReference.property.callerCredentialIdInput">CallerCredentialIdInput</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.app.AppPendingDeploymentGitSourceGitRepositoryOutputReference.property.providerInput">ProviderInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.app.AppPendingDeploymentGitSourceGitRepositoryOutputReference.property.urlInput">UrlInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.app.AppPendingDeploymentGitSourceGitRepositoryOutputReference.property.autoDeploy">AutoDeploy</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.app.AppPendingDeploymentGitSourceGitRepositoryOutputReference.property.callerCredentialId">CallerCredentialId</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.app.AppPendingDeploymentGitSourceGitRepositoryOutputReference.property.provider">Provider</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.app.AppPendingDeploymentGitSourceGitRepositoryOutputReference.property.url">Url</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.app.AppPendingDeploymentGitSourceGitRepositoryOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktn/provider-databricks.app.AppPendingDeploymentGitSourceGitRepository">AppPendingDeploymentGitSourceGitRepository</a></code> | *No description.* |
@@ -7365,6 +9508,26 @@ public string Fqn { get; }
 
 ---
 
+##### `AutoDeployInput`<sup>Optional</sup> <a name="AutoDeployInput" id="@cdktn/provider-databricks.app.AppPendingDeploymentGitSourceGitRepositoryOutputReference.property.autoDeployInput"></a>
+
+```csharp
+public bool|IResolvable AutoDeployInput { get; }
+```
+
+- *Type:* bool|Io.Cdktn.IResolvable
+
+---
+
+##### `CallerCredentialIdInput`<sup>Optional</sup> <a name="CallerCredentialIdInput" id="@cdktn/provider-databricks.app.AppPendingDeploymentGitSourceGitRepositoryOutputReference.property.callerCredentialIdInput"></a>
+
+```csharp
+public double CallerCredentialIdInput { get; }
+```
+
+- *Type:* double
+
+---
+
 ##### `ProviderInput`<sup>Optional</sup> <a name="ProviderInput" id="@cdktn/provider-databricks.app.AppPendingDeploymentGitSourceGitRepositoryOutputReference.property.providerInput"></a>
 
 ```csharp
@@ -7382,6 +9545,26 @@ public string UrlInput { get; }
 ```
 
 - *Type:* string
+
+---
+
+##### `AutoDeploy`<sup>Required</sup> <a name="AutoDeploy" id="@cdktn/provider-databricks.app.AppPendingDeploymentGitSourceGitRepositoryOutputReference.property.autoDeploy"></a>
+
+```csharp
+public bool|IResolvable AutoDeploy { get; }
+```
+
+- *Type:* bool|Io.Cdktn.IResolvable
+
+---
+
+##### `CallerCredentialId`<sup>Required</sup> <a name="CallerCredentialId" id="@cdktn/provider-databricks.app.AppPendingDeploymentGitSourceGitRepositoryOutputReference.property.callerCredentialId"></a>
+
+```csharp
+public double CallerCredentialId { get; }
+```
+
+- *Type:* double
 
 ---
 

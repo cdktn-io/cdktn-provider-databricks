@@ -4,7 +4,7 @@
 
 ### MwsStorageConfigurations <a name="MwsStorageConfigurations" id="@cdktn/provider-databricks.mwsStorageConfigurations.MwsStorageConfigurations"></a>
 
-Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/resources/mws_storage_configurations databricks_mws_storage_configurations}.
+Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/mws_storage_configurations databricks_mws_storage_configurations}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.mwsStorageConfigurations.MwsStorageConfigurations.Initializer"></a>
 
@@ -40,11 +40,11 @@ mwsStorageConfigurations.MwsStorageConfigurations(
 | <code><a href="#@cdktn/provider-databricks.mwsStorageConfigurations.MwsStorageConfigurations.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.mwsStorageConfigurations.MwsStorageConfigurations.Initializer.parameter.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.mwsStorageConfigurations.MwsStorageConfigurations.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-databricks.mwsStorageConfigurations.MwsStorageConfigurations.Initializer.parameter.accountId">account_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/resources/mws_storage_configurations#account_id MwsStorageConfigurations#account_id}. |
-| <code><a href="#@cdktn/provider-databricks.mwsStorageConfigurations.MwsStorageConfigurations.Initializer.parameter.bucketName">bucket_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/resources/mws_storage_configurations#bucket_name MwsStorageConfigurations#bucket_name}. |
-| <code><a href="#@cdktn/provider-databricks.mwsStorageConfigurations.MwsStorageConfigurations.Initializer.parameter.storageConfigurationName">storage_configuration_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/resources/mws_storage_configurations#storage_configuration_name MwsStorageConfigurations#storage_configuration_name}. |
-| <code><a href="#@cdktn/provider-databricks.mwsStorageConfigurations.MwsStorageConfigurations.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/resources/mws_storage_configurations#id MwsStorageConfigurations#id}. |
-| <code><a href="#@cdktn/provider-databricks.mwsStorageConfigurations.MwsStorageConfigurations.Initializer.parameter.roleArn">role_arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/resources/mws_storage_configurations#role_arn MwsStorageConfigurations#role_arn}. |
+| <code><a href="#@cdktn/provider-databricks.mwsStorageConfigurations.MwsStorageConfigurations.Initializer.parameter.accountId">account_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/mws_storage_configurations#account_id MwsStorageConfigurations#account_id}. |
+| <code><a href="#@cdktn/provider-databricks.mwsStorageConfigurations.MwsStorageConfigurations.Initializer.parameter.bucketName">bucket_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/mws_storage_configurations#bucket_name MwsStorageConfigurations#bucket_name}. |
+| <code><a href="#@cdktn/provider-databricks.mwsStorageConfigurations.MwsStorageConfigurations.Initializer.parameter.storageConfigurationName">storage_configuration_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/mws_storage_configurations#storage_configuration_name MwsStorageConfigurations#storage_configuration_name}. |
+| <code><a href="#@cdktn/provider-databricks.mwsStorageConfigurations.MwsStorageConfigurations.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/mws_storage_configurations#id MwsStorageConfigurations#id}. |
+| <code><a href="#@cdktn/provider-databricks.mwsStorageConfigurations.MwsStorageConfigurations.Initializer.parameter.roleArn">role_arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/mws_storage_configurations#role_arn MwsStorageConfigurations#role_arn}. |
 
 ---
 
@@ -112,7 +112,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/resources/mws_storage_configurations#account_id MwsStorageConfigurations#account_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/mws_storage_configurations#account_id MwsStorageConfigurations#account_id}.
 
 ---
 
@@ -120,7 +120,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/resources/mws_storage_configurations#bucket_name MwsStorageConfigurations#bucket_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/mws_storage_configurations#bucket_name MwsStorageConfigurations#bucket_name}.
 
 ---
 
@@ -128,7 +128,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/resources/mws_storage_configurations#storage_configuration_name MwsStorageConfigurations#storage_configuration_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/mws_storage_configurations#storage_configuration_name MwsStorageConfigurations#storage_configuration_name}.
 
 ---
 
@@ -136,7 +136,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/resources/mws_storage_configurations#id MwsStorageConfigurations#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/mws_storage_configurations#id MwsStorageConfigurations#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -147,7 +147,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/resources/mws_storage_configurations#role_arn MwsStorageConfigurations#role_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/mws_storage_configurations#role_arn MwsStorageConfigurations#role_arn}.
 
 ---
 
@@ -658,7 +658,7 @@ The construct id used in the generated config for the MwsStorageConfigurations t
 
 The id of the existing MwsStorageConfigurations that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/resources/mws_storage_configurations#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/mws_storage_configurations#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1019,11 +1019,11 @@ mwsStorageConfigurations.MwsStorageConfigurationsConfig(
 | <code><a href="#@cdktn/provider-databricks.mwsStorageConfigurations.MwsStorageConfigurationsConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.mwsStorageConfigurations.MwsStorageConfigurationsConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.mwsStorageConfigurations.MwsStorageConfigurationsConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-databricks.mwsStorageConfigurations.MwsStorageConfigurationsConfig.property.accountId">account_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/resources/mws_storage_configurations#account_id MwsStorageConfigurations#account_id}. |
-| <code><a href="#@cdktn/provider-databricks.mwsStorageConfigurations.MwsStorageConfigurationsConfig.property.bucketName">bucket_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/resources/mws_storage_configurations#bucket_name MwsStorageConfigurations#bucket_name}. |
-| <code><a href="#@cdktn/provider-databricks.mwsStorageConfigurations.MwsStorageConfigurationsConfig.property.storageConfigurationName">storage_configuration_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/resources/mws_storage_configurations#storage_configuration_name MwsStorageConfigurations#storage_configuration_name}. |
-| <code><a href="#@cdktn/provider-databricks.mwsStorageConfigurations.MwsStorageConfigurationsConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/resources/mws_storage_configurations#id MwsStorageConfigurations#id}. |
-| <code><a href="#@cdktn/provider-databricks.mwsStorageConfigurations.MwsStorageConfigurationsConfig.property.roleArn">role_arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/resources/mws_storage_configurations#role_arn MwsStorageConfigurations#role_arn}. |
+| <code><a href="#@cdktn/provider-databricks.mwsStorageConfigurations.MwsStorageConfigurationsConfig.property.accountId">account_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/mws_storage_configurations#account_id MwsStorageConfigurations#account_id}. |
+| <code><a href="#@cdktn/provider-databricks.mwsStorageConfigurations.MwsStorageConfigurationsConfig.property.bucketName">bucket_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/mws_storage_configurations#bucket_name MwsStorageConfigurations#bucket_name}. |
+| <code><a href="#@cdktn/provider-databricks.mwsStorageConfigurations.MwsStorageConfigurationsConfig.property.storageConfigurationName">storage_configuration_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/mws_storage_configurations#storage_configuration_name MwsStorageConfigurations#storage_configuration_name}. |
+| <code><a href="#@cdktn/provider-databricks.mwsStorageConfigurations.MwsStorageConfigurationsConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/mws_storage_configurations#id MwsStorageConfigurations#id}. |
+| <code><a href="#@cdktn/provider-databricks.mwsStorageConfigurations.MwsStorageConfigurationsConfig.property.roleArn">role_arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/mws_storage_configurations#role_arn MwsStorageConfigurations#role_arn}. |
 
 ---
 
@@ -1105,7 +1105,7 @@ account_id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/resources/mws_storage_configurations#account_id MwsStorageConfigurations#account_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/mws_storage_configurations#account_id MwsStorageConfigurations#account_id}.
 
 ---
 
@@ -1117,7 +1117,7 @@ bucket_name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/resources/mws_storage_configurations#bucket_name MwsStorageConfigurations#bucket_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/mws_storage_configurations#bucket_name MwsStorageConfigurations#bucket_name}.
 
 ---
 
@@ -1129,7 +1129,7 @@ storage_configuration_name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/resources/mws_storage_configurations#storage_configuration_name MwsStorageConfigurations#storage_configuration_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/mws_storage_configurations#storage_configuration_name MwsStorageConfigurations#storage_configuration_name}.
 
 ---
 
@@ -1141,7 +1141,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/resources/mws_storage_configurations#id MwsStorageConfigurations#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/mws_storage_configurations#id MwsStorageConfigurations#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1156,7 +1156,7 @@ role_arn: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.127.0/docs/resources/mws_storage_configurations#role_arn MwsStorageConfigurations#role_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/mws_storage_configurations#role_arn MwsStorageConfigurations#role_arn}.
 
 ---
 
