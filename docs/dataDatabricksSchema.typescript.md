@@ -4,7 +4,7 @@
 
 ### DataDatabricksSchema <a name="DataDatabricksSchema" id="@cdktn/provider-databricks.dataDatabricksSchema.DataDatabricksSchema"></a>
 
-Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/data-sources/schema databricks_schema}.
+Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/data-sources/schema databricks_schema}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksSchema.DataDatabricksSchema.Initializer"></a>
 
@@ -434,7 +434,7 @@ The construct id used in the generated config for the DataDatabricksSchema to im
 
 The id of the existing DataDatabricksSchema that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/data-sources/schema#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/data-sources/schema#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -716,8 +716,8 @@ const dataDatabricksSchemaConfig: dataDatabricksSchema.DataDatabricksSchemaConfi
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksSchema.DataDatabricksSchemaConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksSchema.DataDatabricksSchemaConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksSchema.DataDatabricksSchemaConfig.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksSchema.DataDatabricksSchemaConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/data-sources/schema#name DataDatabricksSchema#name}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksSchema.DataDatabricksSchemaConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/data-sources/schema#id DataDatabricksSchema#id}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksSchema.DataDatabricksSchemaConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/data-sources/schema#name DataDatabricksSchema#name}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksSchema.DataDatabricksSchemaConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/data-sources/schema#id DataDatabricksSchema#id}. |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksSchema.DataDatabricksSchemaConfig.property.providerConfig">providerConfig</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksSchema.DataDatabricksSchemaProviderConfig">DataDatabricksSchemaProviderConfig</a></code> | provider_config block. |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksSchema.DataDatabricksSchemaConfig.property.schemaInfo">schemaInfo</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksSchema.DataDatabricksSchemaSchemaInfo">DataDatabricksSchemaSchemaInfo</a></code> | schema_info block. |
 
@@ -801,7 +801,7 @@ public readonly name: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/data-sources/schema#name DataDatabricksSchema#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/data-sources/schema#name DataDatabricksSchema#name}.
 
 ---
 
@@ -813,7 +813,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/data-sources/schema#id DataDatabricksSchema#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/data-sources/schema#id DataDatabricksSchema#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -830,7 +830,7 @@ public readonly providerConfig: DataDatabricksSchemaProviderConfig;
 
 provider_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/data-sources/schema#provider_config DataDatabricksSchema#provider_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/data-sources/schema#provider_config DataDatabricksSchema#provider_config}
 
 ---
 
@@ -844,7 +844,7 @@ public readonly schemaInfo: DataDatabricksSchemaSchemaInfo;
 
 schema_info block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/data-sources/schema#schema_info DataDatabricksSchema#schema_info}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/data-sources/schema#schema_info DataDatabricksSchema#schema_info}
 
 ---
 
@@ -862,7 +862,7 @@ const dataDatabricksSchemaProviderConfig: dataDatabricksSchema.DataDatabricksSch
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksSchema.DataDatabricksSchemaProviderConfig.property.workspaceId">workspaceId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/data-sources/schema#workspace_id DataDatabricksSchema#workspace_id}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksSchema.DataDatabricksSchemaProviderConfig.property.workspaceId">workspaceId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/data-sources/schema#workspace_id DataDatabricksSchema#workspace_id}. |
 
 ---
 
@@ -874,7 +874,7 @@ public readonly workspaceId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/data-sources/schema#workspace_id DataDatabricksSchema#workspace_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/data-sources/schema#workspace_id DataDatabricksSchema#workspace_id}.
 
 ---
 
@@ -892,25 +892,25 @@ const dataDatabricksSchemaSchemaInfo: dataDatabricksSchema.DataDatabricksSchemaS
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksSchema.DataDatabricksSchemaSchemaInfo.property.browseOnly">browseOnly</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/data-sources/schema#browse_only DataDatabricksSchema#browse_only}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksSchema.DataDatabricksSchemaSchemaInfo.property.catalogName">catalogName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/data-sources/schema#catalog_name DataDatabricksSchema#catalog_name}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksSchema.DataDatabricksSchemaSchemaInfo.property.catalogType">catalogType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/data-sources/schema#catalog_type DataDatabricksSchema#catalog_type}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksSchema.DataDatabricksSchemaSchemaInfo.property.comment">comment</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/data-sources/schema#comment DataDatabricksSchema#comment}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksSchema.DataDatabricksSchemaSchemaInfo.property.createdAt">createdAt</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/data-sources/schema#created_at DataDatabricksSchema#created_at}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksSchema.DataDatabricksSchemaSchemaInfo.property.createdBy">createdBy</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/data-sources/schema#created_by DataDatabricksSchema#created_by}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksSchema.DataDatabricksSchemaSchemaInfo.property.customMaxRetentionHours">customMaxRetentionHours</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/data-sources/schema#custom_max_retention_hours DataDatabricksSchema#custom_max_retention_hours}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksSchema.DataDatabricksSchemaSchemaInfo.property.browseOnly">browseOnly</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/data-sources/schema#browse_only DataDatabricksSchema#browse_only}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksSchema.DataDatabricksSchemaSchemaInfo.property.catalogName">catalogName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/data-sources/schema#catalog_name DataDatabricksSchema#catalog_name}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksSchema.DataDatabricksSchemaSchemaInfo.property.catalogType">catalogType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/data-sources/schema#catalog_type DataDatabricksSchema#catalog_type}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksSchema.DataDatabricksSchemaSchemaInfo.property.comment">comment</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/data-sources/schema#comment DataDatabricksSchema#comment}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksSchema.DataDatabricksSchemaSchemaInfo.property.createdAt">createdAt</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/data-sources/schema#created_at DataDatabricksSchema#created_at}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksSchema.DataDatabricksSchemaSchemaInfo.property.createdBy">createdBy</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/data-sources/schema#created_by DataDatabricksSchema#created_by}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksSchema.DataDatabricksSchemaSchemaInfo.property.customMaxRetentionHours">customMaxRetentionHours</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/data-sources/schema#custom_max_retention_hours DataDatabricksSchema#custom_max_retention_hours}. |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksSchema.DataDatabricksSchemaSchemaInfo.property.effectivePredictiveOptimizationFlag">effectivePredictiveOptimizationFlag</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksSchema.DataDatabricksSchemaSchemaInfoEffectivePredictiveOptimizationFlag">DataDatabricksSchemaSchemaInfoEffectivePredictiveOptimizationFlag</a></code> | effective_predictive_optimization_flag block. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksSchema.DataDatabricksSchemaSchemaInfo.property.enablePredictiveOptimization">enablePredictiveOptimization</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/data-sources/schema#enable_predictive_optimization DataDatabricksSchema#enable_predictive_optimization}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksSchema.DataDatabricksSchemaSchemaInfo.property.fullName">fullName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/data-sources/schema#full_name DataDatabricksSchema#full_name}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksSchema.DataDatabricksSchemaSchemaInfo.property.metastoreId">metastoreId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/data-sources/schema#metastore_id DataDatabricksSchema#metastore_id}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksSchema.DataDatabricksSchemaSchemaInfo.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/data-sources/schema#name DataDatabricksSchema#name}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksSchema.DataDatabricksSchemaSchemaInfo.property.owner">owner</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/data-sources/schema#owner DataDatabricksSchema#owner}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksSchema.DataDatabricksSchemaSchemaInfo.property.properties">properties</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/data-sources/schema#properties DataDatabricksSchema#properties}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksSchema.DataDatabricksSchemaSchemaInfo.property.schemaId">schemaId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/data-sources/schema#schema_id DataDatabricksSchema#schema_id}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksSchema.DataDatabricksSchemaSchemaInfo.property.storageLocation">storageLocation</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/data-sources/schema#storage_location DataDatabricksSchema#storage_location}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksSchema.DataDatabricksSchemaSchemaInfo.property.storageRoot">storageRoot</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/data-sources/schema#storage_root DataDatabricksSchema#storage_root}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksSchema.DataDatabricksSchemaSchemaInfo.property.updatedAt">updatedAt</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/data-sources/schema#updated_at DataDatabricksSchema#updated_at}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksSchema.DataDatabricksSchemaSchemaInfo.property.updatedBy">updatedBy</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/data-sources/schema#updated_by DataDatabricksSchema#updated_by}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksSchema.DataDatabricksSchemaSchemaInfo.property.enablePredictiveOptimization">enablePredictiveOptimization</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/data-sources/schema#enable_predictive_optimization DataDatabricksSchema#enable_predictive_optimization}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksSchema.DataDatabricksSchemaSchemaInfo.property.fullName">fullName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/data-sources/schema#full_name DataDatabricksSchema#full_name}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksSchema.DataDatabricksSchemaSchemaInfo.property.metastoreId">metastoreId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/data-sources/schema#metastore_id DataDatabricksSchema#metastore_id}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksSchema.DataDatabricksSchemaSchemaInfo.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/data-sources/schema#name DataDatabricksSchema#name}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksSchema.DataDatabricksSchemaSchemaInfo.property.owner">owner</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/data-sources/schema#owner DataDatabricksSchema#owner}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksSchema.DataDatabricksSchemaSchemaInfo.property.properties">properties</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/data-sources/schema#properties DataDatabricksSchema#properties}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksSchema.DataDatabricksSchemaSchemaInfo.property.schemaId">schemaId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/data-sources/schema#schema_id DataDatabricksSchema#schema_id}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksSchema.DataDatabricksSchemaSchemaInfo.property.storageLocation">storageLocation</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/data-sources/schema#storage_location DataDatabricksSchema#storage_location}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksSchema.DataDatabricksSchemaSchemaInfo.property.storageRoot">storageRoot</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/data-sources/schema#storage_root DataDatabricksSchema#storage_root}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksSchema.DataDatabricksSchemaSchemaInfo.property.updatedAt">updatedAt</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/data-sources/schema#updated_at DataDatabricksSchema#updated_at}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksSchema.DataDatabricksSchemaSchemaInfo.property.updatedBy">updatedBy</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/data-sources/schema#updated_by DataDatabricksSchema#updated_by}. |
 
 ---
 
@@ -922,7 +922,7 @@ public readonly browseOnly: boolean | IResolvable;
 
 - *Type:* boolean | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/data-sources/schema#browse_only DataDatabricksSchema#browse_only}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/data-sources/schema#browse_only DataDatabricksSchema#browse_only}.
 
 ---
 
@@ -934,7 +934,7 @@ public readonly catalogName: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/data-sources/schema#catalog_name DataDatabricksSchema#catalog_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/data-sources/schema#catalog_name DataDatabricksSchema#catalog_name}.
 
 ---
 
@@ -946,7 +946,7 @@ public readonly catalogType: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/data-sources/schema#catalog_type DataDatabricksSchema#catalog_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/data-sources/schema#catalog_type DataDatabricksSchema#catalog_type}.
 
 ---
 
@@ -958,7 +958,7 @@ public readonly comment: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/data-sources/schema#comment DataDatabricksSchema#comment}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/data-sources/schema#comment DataDatabricksSchema#comment}.
 
 ---
 
@@ -970,7 +970,7 @@ public readonly createdAt: number;
 
 - *Type:* number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/data-sources/schema#created_at DataDatabricksSchema#created_at}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/data-sources/schema#created_at DataDatabricksSchema#created_at}.
 
 ---
 
@@ -982,7 +982,7 @@ public readonly createdBy: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/data-sources/schema#created_by DataDatabricksSchema#created_by}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/data-sources/schema#created_by DataDatabricksSchema#created_by}.
 
 ---
 
@@ -994,7 +994,7 @@ public readonly customMaxRetentionHours: number;
 
 - *Type:* number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/data-sources/schema#custom_max_retention_hours DataDatabricksSchema#custom_max_retention_hours}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/data-sources/schema#custom_max_retention_hours DataDatabricksSchema#custom_max_retention_hours}.
 
 ---
 
@@ -1008,7 +1008,7 @@ public readonly effectivePredictiveOptimizationFlag: DataDatabricksSchemaSchemaI
 
 effective_predictive_optimization_flag block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/data-sources/schema#effective_predictive_optimization_flag DataDatabricksSchema#effective_predictive_optimization_flag}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/data-sources/schema#effective_predictive_optimization_flag DataDatabricksSchema#effective_predictive_optimization_flag}
 
 ---
 
@@ -1020,7 +1020,7 @@ public readonly enablePredictiveOptimization: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/data-sources/schema#enable_predictive_optimization DataDatabricksSchema#enable_predictive_optimization}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/data-sources/schema#enable_predictive_optimization DataDatabricksSchema#enable_predictive_optimization}.
 
 ---
 
@@ -1032,7 +1032,7 @@ public readonly fullName: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/data-sources/schema#full_name DataDatabricksSchema#full_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/data-sources/schema#full_name DataDatabricksSchema#full_name}.
 
 ---
 
@@ -1044,7 +1044,7 @@ public readonly metastoreId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/data-sources/schema#metastore_id DataDatabricksSchema#metastore_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/data-sources/schema#metastore_id DataDatabricksSchema#metastore_id}.
 
 ---
 
@@ -1056,7 +1056,7 @@ public readonly name: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/data-sources/schema#name DataDatabricksSchema#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/data-sources/schema#name DataDatabricksSchema#name}.
 
 ---
 
@@ -1068,7 +1068,7 @@ public readonly owner: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/data-sources/schema#owner DataDatabricksSchema#owner}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/data-sources/schema#owner DataDatabricksSchema#owner}.
 
 ---
 
@@ -1080,7 +1080,7 @@ public readonly properties: {[ key: string ]: string};
 
 - *Type:* {[ key: string ]: string}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/data-sources/schema#properties DataDatabricksSchema#properties}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/data-sources/schema#properties DataDatabricksSchema#properties}.
 
 ---
 
@@ -1092,7 +1092,7 @@ public readonly schemaId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/data-sources/schema#schema_id DataDatabricksSchema#schema_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/data-sources/schema#schema_id DataDatabricksSchema#schema_id}.
 
 ---
 
@@ -1104,7 +1104,7 @@ public readonly storageLocation: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/data-sources/schema#storage_location DataDatabricksSchema#storage_location}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/data-sources/schema#storage_location DataDatabricksSchema#storage_location}.
 
 ---
 
@@ -1116,7 +1116,7 @@ public readonly storageRoot: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/data-sources/schema#storage_root DataDatabricksSchema#storage_root}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/data-sources/schema#storage_root DataDatabricksSchema#storage_root}.
 
 ---
 
@@ -1128,7 +1128,7 @@ public readonly updatedAt: number;
 
 - *Type:* number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/data-sources/schema#updated_at DataDatabricksSchema#updated_at}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/data-sources/schema#updated_at DataDatabricksSchema#updated_at}.
 
 ---
 
@@ -1140,7 +1140,7 @@ public readonly updatedBy: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/data-sources/schema#updated_by DataDatabricksSchema#updated_by}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/data-sources/schema#updated_by DataDatabricksSchema#updated_by}.
 
 ---
 
@@ -1158,9 +1158,9 @@ const dataDatabricksSchemaSchemaInfoEffectivePredictiveOptimizationFlag: dataDat
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksSchema.DataDatabricksSchemaSchemaInfoEffectivePredictiveOptimizationFlag.property.value">value</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/data-sources/schema#value DataDatabricksSchema#value}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksSchema.DataDatabricksSchemaSchemaInfoEffectivePredictiveOptimizationFlag.property.inheritedFromName">inheritedFromName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/data-sources/schema#inherited_from_name DataDatabricksSchema#inherited_from_name}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksSchema.DataDatabricksSchemaSchemaInfoEffectivePredictiveOptimizationFlag.property.inheritedFromType">inheritedFromType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/data-sources/schema#inherited_from_type DataDatabricksSchema#inherited_from_type}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksSchema.DataDatabricksSchemaSchemaInfoEffectivePredictiveOptimizationFlag.property.value">value</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/data-sources/schema#value DataDatabricksSchema#value}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksSchema.DataDatabricksSchemaSchemaInfoEffectivePredictiveOptimizationFlag.property.inheritedFromName">inheritedFromName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/data-sources/schema#inherited_from_name DataDatabricksSchema#inherited_from_name}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksSchema.DataDatabricksSchemaSchemaInfoEffectivePredictiveOptimizationFlag.property.inheritedFromType">inheritedFromType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/data-sources/schema#inherited_from_type DataDatabricksSchema#inherited_from_type}. |
 
 ---
 
@@ -1172,7 +1172,7 @@ public readonly value: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/data-sources/schema#value DataDatabricksSchema#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/data-sources/schema#value DataDatabricksSchema#value}.
 
 ---
 
@@ -1184,7 +1184,7 @@ public readonly inheritedFromName: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/data-sources/schema#inherited_from_name DataDatabricksSchema#inherited_from_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/data-sources/schema#inherited_from_name DataDatabricksSchema#inherited_from_name}.
 
 ---
 
@@ -1196,7 +1196,7 @@ public readonly inheritedFromType: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/data-sources/schema#inherited_from_type DataDatabricksSchema#inherited_from_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/data-sources/schema#inherited_from_type DataDatabricksSchema#inherited_from_type}.
 
 ---
 

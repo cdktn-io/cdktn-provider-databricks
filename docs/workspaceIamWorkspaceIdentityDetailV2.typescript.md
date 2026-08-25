@@ -4,7 +4,7 @@
 
 ### WorkspaceIamWorkspaceIdentityDetailV2 <a name="WorkspaceIamWorkspaceIdentityDetailV2" id="@cdktn/provider-databricks.workspaceIamWorkspaceIdentityDetailV2.WorkspaceIamWorkspaceIdentityDetailV2"></a>
 
-Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/workspace_iam_workspace_identity_detail_v2 databricks_workspace_iam_workspace_identity_detail_v2}.
+Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/resources/workspace_iam_workspace_identity_detail_v2 databricks_workspace_iam_workspace_identity_detail_v2}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.workspaceIamWorkspaceIdentityDetailV2.WorkspaceIamWorkspaceIdentityDetailV2.Initializer"></a>
 
@@ -516,7 +516,7 @@ The construct id used in the generated config for the WorkspaceIamWorkspaceIdent
 
 The id of the existing WorkspaceIamWorkspaceIdentityDetailV2 that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/workspace_iam_workspace_identity_detail_v2#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/resources/workspace_iam_workspace_identity_detail_v2#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -809,8 +809,8 @@ const workspaceIamWorkspaceIdentityDetailV2Config: workspaceIamWorkspaceIdentity
 | <code><a href="#@cdktn/provider-databricks.workspaceIamWorkspaceIdentityDetailV2.WorkspaceIamWorkspaceIdentityDetailV2Config.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.workspaceIamWorkspaceIdentityDetailV2.WorkspaceIamWorkspaceIdentityDetailV2Config.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.workspaceIamWorkspaceIdentityDetailV2.WorkspaceIamWorkspaceIdentityDetailV2Config.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-databricks.workspaceIamWorkspaceIdentityDetailV2.WorkspaceIamWorkspaceIdentityDetailV2Config.property.providerConfig">providerConfig</a></code> | <code><a href="#@cdktn/provider-databricks.workspaceIamWorkspaceIdentityDetailV2.WorkspaceIamWorkspaceIdentityDetailV2ProviderConfig">WorkspaceIamWorkspaceIdentityDetailV2ProviderConfig</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/workspace_iam_workspace_identity_detail_v2#provider_config WorkspaceIamWorkspaceIdentityDetailV2#provider_config}. |
-| <code><a href="#@cdktn/provider-databricks.workspaceIamWorkspaceIdentityDetailV2.WorkspaceIamWorkspaceIdentityDetailV2Config.property.workspaceIdentityStatus">workspaceIdentityStatus</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/workspace_iam_workspace_identity_detail_v2#workspace_identity_status WorkspaceIamWorkspaceIdentityDetailV2#workspace_identity_status}. |
+| <code><a href="#@cdktn/provider-databricks.workspaceIamWorkspaceIdentityDetailV2.WorkspaceIamWorkspaceIdentityDetailV2Config.property.providerConfig">providerConfig</a></code> | <code><a href="#@cdktn/provider-databricks.workspaceIamWorkspaceIdentityDetailV2.WorkspaceIamWorkspaceIdentityDetailV2ProviderConfig">WorkspaceIamWorkspaceIdentityDetailV2ProviderConfig</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/resources/workspace_iam_workspace_identity_detail_v2#provider_config WorkspaceIamWorkspaceIdentityDetailV2#provider_config}. |
+| <code><a href="#@cdktn/provider-databricks.workspaceIamWorkspaceIdentityDetailV2.WorkspaceIamWorkspaceIdentityDetailV2Config.property.workspaceIdentityStatus">workspaceIdentityStatus</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/resources/workspace_iam_workspace_identity_detail_v2#workspace_identity_status WorkspaceIamWorkspaceIdentityDetailV2#workspace_identity_status}. |
 
 ---
 
@@ -892,7 +892,7 @@ public readonly providerConfig: WorkspaceIamWorkspaceIdentityDetailV2ProviderCon
 
 - *Type:* <a href="#@cdktn/provider-databricks.workspaceIamWorkspaceIdentityDetailV2.WorkspaceIamWorkspaceIdentityDetailV2ProviderConfig">WorkspaceIamWorkspaceIdentityDetailV2ProviderConfig</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/workspace_iam_workspace_identity_detail_v2#provider_config WorkspaceIamWorkspaceIdentityDetailV2#provider_config}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/resources/workspace_iam_workspace_identity_detail_v2#provider_config WorkspaceIamWorkspaceIdentityDetailV2#provider_config}.
 
 ---
 
@@ -904,7 +904,7 @@ public readonly workspaceIdentityStatus: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/workspace_iam_workspace_identity_detail_v2#workspace_identity_status WorkspaceIamWorkspaceIdentityDetailV2#workspace_identity_status}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/resources/workspace_iam_workspace_identity_detail_v2#workspace_identity_status WorkspaceIamWorkspaceIdentityDetailV2#workspace_identity_status}.
 
 ---
 
@@ -922,7 +922,7 @@ const workspaceIamWorkspaceIdentityDetailV2ProviderConfig: workspaceIamWorkspace
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.workspaceIamWorkspaceIdentityDetailV2.WorkspaceIamWorkspaceIdentityDetailV2ProviderConfig.property.workspaceId">workspaceId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/workspace_iam_workspace_identity_detail_v2#workspace_id WorkspaceIamWorkspaceIdentityDetailV2#workspace_id}. |
+| <code><a href="#@cdktn/provider-databricks.workspaceIamWorkspaceIdentityDetailV2.WorkspaceIamWorkspaceIdentityDetailV2ProviderConfig.property.workspaceId">workspaceId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/resources/workspace_iam_workspace_identity_detail_v2#workspace_id WorkspaceIamWorkspaceIdentityDetailV2#workspace_id}. |
 
 ---
 
@@ -934,7 +934,7 @@ public readonly workspaceId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/workspace_iam_workspace_identity_detail_v2#workspace_id WorkspaceIamWorkspaceIdentityDetailV2#workspace_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/resources/workspace_iam_workspace_identity_detail_v2#workspace_id WorkspaceIamWorkspaceIdentityDetailV2#workspace_id}.
 
 ---
 

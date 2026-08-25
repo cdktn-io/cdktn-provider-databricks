@@ -4,7 +4,7 @@
 
 ### AccountIamDirectGroupMemberV2 <a name="AccountIamDirectGroupMemberV2" id="@cdktn/provider-databricks.accountIamDirectGroupMemberV2.AccountIamDirectGroupMemberV2"></a>
 
-Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/account_iam_direct_group_member_v2 databricks_account_iam_direct_group_member_v2}.
+Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/resources/account_iam_direct_group_member_v2 databricks_account_iam_direct_group_member_v2}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.accountIamDirectGroupMemberV2.AccountIamDirectGroupMemberV2.Initializer"></a>
 
@@ -496,7 +496,7 @@ The construct id used in the generated config for the AccountIamDirectGroupMembe
 
 The id of the existing AccountIamDirectGroupMemberV2 that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/account_iam_direct_group_member_v2#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/resources/account_iam_direct_group_member_v2#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -800,8 +800,8 @@ const accountIamDirectGroupMemberV2Config: accountIamDirectGroupMemberV2.Account
 | <code><a href="#@cdktn/provider-databricks.accountIamDirectGroupMemberV2.AccountIamDirectGroupMemberV2Config.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.accountIamDirectGroupMemberV2.AccountIamDirectGroupMemberV2Config.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.accountIamDirectGroupMemberV2.AccountIamDirectGroupMemberV2Config.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-databricks.accountIamDirectGroupMemberV2.AccountIamDirectGroupMemberV2Config.property.principalId">principalId</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/account_iam_direct_group_member_v2#principal_id AccountIamDirectGroupMemberV2#principal_id}. |
-| <code><a href="#@cdktn/provider-databricks.accountIamDirectGroupMemberV2.AccountIamDirectGroupMemberV2Config.property.groupId">groupId</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/account_iam_direct_group_member_v2#group_id AccountIamDirectGroupMemberV2#group_id}. |
+| <code><a href="#@cdktn/provider-databricks.accountIamDirectGroupMemberV2.AccountIamDirectGroupMemberV2Config.property.principalId">principalId</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/resources/account_iam_direct_group_member_v2#principal_id AccountIamDirectGroupMemberV2#principal_id}. |
+| <code><a href="#@cdktn/provider-databricks.accountIamDirectGroupMemberV2.AccountIamDirectGroupMemberV2Config.property.groupId">groupId</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/resources/account_iam_direct_group_member_v2#group_id AccountIamDirectGroupMemberV2#group_id}. |
 
 ---
 
@@ -883,7 +883,7 @@ public readonly principalId: number;
 
 - *Type:* number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/account_iam_direct_group_member_v2#principal_id AccountIamDirectGroupMemberV2#principal_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/resources/account_iam_direct_group_member_v2#principal_id AccountIamDirectGroupMemberV2#principal_id}.
 
 ---
 
@@ -895,7 +895,7 @@ public readonly groupId: number;
 
 - *Type:* number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/account_iam_direct_group_member_v2#group_id AccountIamDirectGroupMemberV2#group_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/resources/account_iam_direct_group_member_v2#group_id AccountIamDirectGroupMemberV2#group_id}.
 
 ---
 

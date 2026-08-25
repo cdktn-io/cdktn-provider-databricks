@@ -4,7 +4,7 @@
 
 ### ExternalLocation <a name="ExternalLocation" id="@cdktn/provider-databricks.externalLocation.ExternalLocation"></a>
 
-Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/external_location databricks_external_location}.
+Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/resources/external_location databricks_external_location}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.externalLocation.ExternalLocation.Initializer"></a>
 
@@ -646,7 +646,7 @@ The construct id used in the generated config for the ExternalLocation to import
 
 The id of the existing ExternalLocation that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/external_location#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/resources/external_location#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1361,24 +1361,24 @@ new ExternalLocationConfig {
 | <code><a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationConfig.property.lifecycle">Lifecycle</a></code> | <code>Io.Cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationConfig.property.provider">Provider</a></code> | <code>Io.Cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationConfig.property.provisioners">Provisioners</a></code> | <code>Io.Cdktn.FileProvisioner\|Io.Cdktn.LocalExecProvisioner\|Io.Cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationConfig.property.credentialName">CredentialName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/external_location#credential_name ExternalLocation#credential_name}. |
-| <code><a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationConfig.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/external_location#name ExternalLocation#name}. |
-| <code><a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationConfig.property.url">Url</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/external_location#url ExternalLocation#url}. |
-| <code><a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationConfig.property.comment">Comment</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/external_location#comment ExternalLocation#comment}. |
+| <code><a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationConfig.property.credentialName">CredentialName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/resources/external_location#credential_name ExternalLocation#credential_name}. |
+| <code><a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationConfig.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/resources/external_location#name ExternalLocation#name}. |
+| <code><a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationConfig.property.url">Url</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/resources/external_location#url ExternalLocation#url}. |
+| <code><a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationConfig.property.comment">Comment</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/resources/external_location#comment ExternalLocation#comment}. |
 | <code><a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationConfig.property.effectiveFileEventQueue">EffectiveFileEventQueue</a></code> | <code><a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueue">ExternalLocationEffectiveFileEventQueue</a></code> | effective_file_event_queue block. |
-| <code><a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationConfig.property.enableFileEvents">EnableFileEvents</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/external_location#enable_file_events ExternalLocation#enable_file_events}. |
+| <code><a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationConfig.property.enableFileEvents">EnableFileEvents</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/resources/external_location#enable_file_events ExternalLocation#enable_file_events}. |
 | <code><a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationConfig.property.encryptionDetails">EncryptionDetails</a></code> | <code><a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationEncryptionDetails">ExternalLocationEncryptionDetails</a></code> | encryption_details block. |
-| <code><a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationConfig.property.fallback">Fallback</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/external_location#fallback ExternalLocation#fallback}. |
+| <code><a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationConfig.property.fallback">Fallback</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/resources/external_location#fallback ExternalLocation#fallback}. |
 | <code><a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationConfig.property.fileEventQueue">FileEventQueue</a></code> | <code><a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationFileEventQueue">ExternalLocationFileEventQueue</a></code> | file_event_queue block. |
-| <code><a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationConfig.property.forceDestroy">ForceDestroy</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/external_location#force_destroy ExternalLocation#force_destroy}. |
-| <code><a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationConfig.property.forceUpdate">ForceUpdate</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/external_location#force_update ExternalLocation#force_update}. |
-| <code><a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/external_location#id ExternalLocation#id}. |
-| <code><a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationConfig.property.isolationMode">IsolationMode</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/external_location#isolation_mode ExternalLocation#isolation_mode}. |
-| <code><a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationConfig.property.metastoreId">MetastoreId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/external_location#metastore_id ExternalLocation#metastore_id}. |
-| <code><a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationConfig.property.owner">Owner</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/external_location#owner ExternalLocation#owner}. |
+| <code><a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationConfig.property.forceDestroy">ForceDestroy</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/resources/external_location#force_destroy ExternalLocation#force_destroy}. |
+| <code><a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationConfig.property.forceUpdate">ForceUpdate</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/resources/external_location#force_update ExternalLocation#force_update}. |
+| <code><a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/resources/external_location#id ExternalLocation#id}. |
+| <code><a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationConfig.property.isolationMode">IsolationMode</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/resources/external_location#isolation_mode ExternalLocation#isolation_mode}. |
+| <code><a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationConfig.property.metastoreId">MetastoreId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/resources/external_location#metastore_id ExternalLocation#metastore_id}. |
+| <code><a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationConfig.property.owner">Owner</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/resources/external_location#owner ExternalLocation#owner}. |
 | <code><a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationConfig.property.providerConfig">ProviderConfig</a></code> | <code><a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationProviderConfig">ExternalLocationProviderConfig</a></code> | provider_config block. |
-| <code><a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationConfig.property.readOnly">ReadOnly</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/external_location#read_only ExternalLocation#read_only}. |
-| <code><a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationConfig.property.skipValidation">SkipValidation</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/external_location#skip_validation ExternalLocation#skip_validation}. |
+| <code><a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationConfig.property.readOnly">ReadOnly</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/resources/external_location#read_only ExternalLocation#read_only}. |
+| <code><a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationConfig.property.skipValidation">SkipValidation</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/resources/external_location#skip_validation ExternalLocation#skip_validation}. |
 
 ---
 
@@ -1460,7 +1460,7 @@ public string CredentialName { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/external_location#credential_name ExternalLocation#credential_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/resources/external_location#credential_name ExternalLocation#credential_name}.
 
 ---
 
@@ -1472,7 +1472,7 @@ public string Name { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/external_location#name ExternalLocation#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/resources/external_location#name ExternalLocation#name}.
 
 ---
 
@@ -1484,7 +1484,7 @@ public string Url { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/external_location#url ExternalLocation#url}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/resources/external_location#url ExternalLocation#url}.
 
 ---
 
@@ -1496,7 +1496,7 @@ public string Comment { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/external_location#comment ExternalLocation#comment}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/resources/external_location#comment ExternalLocation#comment}.
 
 ---
 
@@ -1510,7 +1510,7 @@ public ExternalLocationEffectiveFileEventQueue EffectiveFileEventQueue { get; se
 
 effective_file_event_queue block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/external_location#effective_file_event_queue ExternalLocation#effective_file_event_queue}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/resources/external_location#effective_file_event_queue ExternalLocation#effective_file_event_queue}
 
 ---
 
@@ -1522,7 +1522,7 @@ public bool|IResolvable EnableFileEvents { get; set; }
 
 - *Type:* bool|Io.Cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/external_location#enable_file_events ExternalLocation#enable_file_events}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/resources/external_location#enable_file_events ExternalLocation#enable_file_events}.
 
 ---
 
@@ -1536,7 +1536,7 @@ public ExternalLocationEncryptionDetails EncryptionDetails { get; set; }
 
 encryption_details block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/external_location#encryption_details ExternalLocation#encryption_details}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/resources/external_location#encryption_details ExternalLocation#encryption_details}
 
 ---
 
@@ -1548,7 +1548,7 @@ public bool|IResolvable Fallback { get; set; }
 
 - *Type:* bool|Io.Cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/external_location#fallback ExternalLocation#fallback}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/resources/external_location#fallback ExternalLocation#fallback}.
 
 ---
 
@@ -1562,7 +1562,7 @@ public ExternalLocationFileEventQueue FileEventQueue { get; set; }
 
 file_event_queue block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/external_location#file_event_queue ExternalLocation#file_event_queue}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/resources/external_location#file_event_queue ExternalLocation#file_event_queue}
 
 ---
 
@@ -1574,7 +1574,7 @@ public bool|IResolvable ForceDestroy { get; set; }
 
 - *Type:* bool|Io.Cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/external_location#force_destroy ExternalLocation#force_destroy}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/resources/external_location#force_destroy ExternalLocation#force_destroy}.
 
 ---
 
@@ -1586,7 +1586,7 @@ public bool|IResolvable ForceUpdate { get; set; }
 
 - *Type:* bool|Io.Cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/external_location#force_update ExternalLocation#force_update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/resources/external_location#force_update ExternalLocation#force_update}.
 
 ---
 
@@ -1598,7 +1598,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/external_location#id ExternalLocation#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/resources/external_location#id ExternalLocation#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1613,7 +1613,7 @@ public string IsolationMode { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/external_location#isolation_mode ExternalLocation#isolation_mode}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/resources/external_location#isolation_mode ExternalLocation#isolation_mode}.
 
 ---
 
@@ -1625,7 +1625,7 @@ public string MetastoreId { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/external_location#metastore_id ExternalLocation#metastore_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/resources/external_location#metastore_id ExternalLocation#metastore_id}.
 
 ---
 
@@ -1637,7 +1637,7 @@ public string Owner { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/external_location#owner ExternalLocation#owner}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/resources/external_location#owner ExternalLocation#owner}.
 
 ---
 
@@ -1651,7 +1651,7 @@ public ExternalLocationProviderConfig ProviderConfig { get; set; }
 
 provider_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/external_location#provider_config ExternalLocation#provider_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/resources/external_location#provider_config ExternalLocation#provider_config}
 
 ---
 
@@ -1663,7 +1663,7 @@ public bool|IResolvable ReadOnly { get; set; }
 
 - *Type:* bool|Io.Cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/external_location#read_only ExternalLocation#read_only}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/resources/external_location#read_only ExternalLocation#read_only}.
 
 ---
 
@@ -1675,7 +1675,7 @@ public bool|IResolvable SkipValidation { get; set; }
 
 - *Type:* bool|Io.Cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/external_location#skip_validation ExternalLocation#skip_validation}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/resources/external_location#skip_validation ExternalLocation#skip_validation}.
 
 ---
 
@@ -1719,7 +1719,7 @@ public ExternalLocationEffectiveFileEventQueueManagedAqs ManagedAqs { get; set; 
 
 managed_aqs block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/external_location#managed_aqs ExternalLocation#managed_aqs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/resources/external_location#managed_aqs ExternalLocation#managed_aqs}
 
 ---
 
@@ -1733,7 +1733,7 @@ public ExternalLocationEffectiveFileEventQueueManagedPubsub ManagedPubsub { get;
 
 managed_pubsub block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/external_location#managed_pubsub ExternalLocation#managed_pubsub}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/resources/external_location#managed_pubsub ExternalLocation#managed_pubsub}
 
 ---
 
@@ -1747,7 +1747,7 @@ public ExternalLocationEffectiveFileEventQueueManagedSqs ManagedSqs { get; set; 
 
 managed_sqs block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/external_location#managed_sqs ExternalLocation#managed_sqs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/resources/external_location#managed_sqs ExternalLocation#managed_sqs}
 
 ---
 
@@ -1761,7 +1761,7 @@ public ExternalLocationEffectiveFileEventQueueProvidedAqs ProvidedAqs { get; set
 
 provided_aqs block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/external_location#provided_aqs ExternalLocation#provided_aqs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/resources/external_location#provided_aqs ExternalLocation#provided_aqs}
 
 ---
 
@@ -1775,7 +1775,7 @@ public ExternalLocationEffectiveFileEventQueueProvidedPubsub ProvidedPubsub { ge
 
 provided_pubsub block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/external_location#provided_pubsub ExternalLocation#provided_pubsub}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/resources/external_location#provided_pubsub ExternalLocation#provided_pubsub}
 
 ---
 
@@ -1789,7 +1789,7 @@ public ExternalLocationEffectiveFileEventQueueProvidedSqs ProvidedSqs { get; set
 
 provided_sqs block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/external_location#provided_sqs ExternalLocation#provided_sqs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/resources/external_location#provided_sqs ExternalLocation#provided_sqs}
 
 ---
 
@@ -1812,10 +1812,10 @@ new ExternalLocationEffectiveFileEventQueueManagedAqs {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueManagedAqs.property.managedResourceId">ManagedResourceId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/external_location#managed_resource_id ExternalLocation#managed_resource_id}. |
-| <code><a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueManagedAqs.property.queueUrl">QueueUrl</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/external_location#queue_url ExternalLocation#queue_url}. |
-| <code><a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueManagedAqs.property.resourceGroup">ResourceGroup</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/external_location#resource_group ExternalLocation#resource_group}. |
-| <code><a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueManagedAqs.property.subscriptionId">SubscriptionId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/external_location#subscription_id ExternalLocation#subscription_id}. |
+| <code><a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueManagedAqs.property.managedResourceId">ManagedResourceId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/resources/external_location#managed_resource_id ExternalLocation#managed_resource_id}. |
+| <code><a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueManagedAqs.property.queueUrl">QueueUrl</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/resources/external_location#queue_url ExternalLocation#queue_url}. |
+| <code><a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueManagedAqs.property.resourceGroup">ResourceGroup</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/resources/external_location#resource_group ExternalLocation#resource_group}. |
+| <code><a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueManagedAqs.property.subscriptionId">SubscriptionId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/resources/external_location#subscription_id ExternalLocation#subscription_id}. |
 
 ---
 
@@ -1827,7 +1827,7 @@ public string ManagedResourceId { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/external_location#managed_resource_id ExternalLocation#managed_resource_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/resources/external_location#managed_resource_id ExternalLocation#managed_resource_id}.
 
 ---
 
@@ -1839,7 +1839,7 @@ public string QueueUrl { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/external_location#queue_url ExternalLocation#queue_url}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/resources/external_location#queue_url ExternalLocation#queue_url}.
 
 ---
 
@@ -1851,7 +1851,7 @@ public string ResourceGroup { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/external_location#resource_group ExternalLocation#resource_group}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/resources/external_location#resource_group ExternalLocation#resource_group}.
 
 ---
 
@@ -1863,7 +1863,7 @@ public string SubscriptionId { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/external_location#subscription_id ExternalLocation#subscription_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/resources/external_location#subscription_id ExternalLocation#subscription_id}.
 
 ---
 
@@ -1884,8 +1884,8 @@ new ExternalLocationEffectiveFileEventQueueManagedPubsub {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueManagedPubsub.property.managedResourceId">ManagedResourceId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/external_location#managed_resource_id ExternalLocation#managed_resource_id}. |
-| <code><a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueManagedPubsub.property.subscriptionName">SubscriptionName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/external_location#subscription_name ExternalLocation#subscription_name}. |
+| <code><a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueManagedPubsub.property.managedResourceId">ManagedResourceId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/resources/external_location#managed_resource_id ExternalLocation#managed_resource_id}. |
+| <code><a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueManagedPubsub.property.subscriptionName">SubscriptionName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/resources/external_location#subscription_name ExternalLocation#subscription_name}. |
 
 ---
 
@@ -1897,7 +1897,7 @@ public string ManagedResourceId { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/external_location#managed_resource_id ExternalLocation#managed_resource_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/resources/external_location#managed_resource_id ExternalLocation#managed_resource_id}.
 
 ---
 
@@ -1909,7 +1909,7 @@ public string SubscriptionName { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/external_location#subscription_name ExternalLocation#subscription_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/resources/external_location#subscription_name ExternalLocation#subscription_name}.
 
 ---
 
@@ -1930,8 +1930,8 @@ new ExternalLocationEffectiveFileEventQueueManagedSqs {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueManagedSqs.property.managedResourceId">ManagedResourceId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/external_location#managed_resource_id ExternalLocation#managed_resource_id}. |
-| <code><a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueManagedSqs.property.queueUrl">QueueUrl</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/external_location#queue_url ExternalLocation#queue_url}. |
+| <code><a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueManagedSqs.property.managedResourceId">ManagedResourceId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/resources/external_location#managed_resource_id ExternalLocation#managed_resource_id}. |
+| <code><a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueManagedSqs.property.queueUrl">QueueUrl</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/resources/external_location#queue_url ExternalLocation#queue_url}. |
 
 ---
 
@@ -1943,7 +1943,7 @@ public string ManagedResourceId { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/external_location#managed_resource_id ExternalLocation#managed_resource_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/resources/external_location#managed_resource_id ExternalLocation#managed_resource_id}.
 
 ---
 
@@ -1955,7 +1955,7 @@ public string QueueUrl { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/external_location#queue_url ExternalLocation#queue_url}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/resources/external_location#queue_url ExternalLocation#queue_url}.
 
 ---
 
@@ -1978,10 +1978,10 @@ new ExternalLocationEffectiveFileEventQueueProvidedAqs {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueProvidedAqs.property.managedResourceId">ManagedResourceId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/external_location#managed_resource_id ExternalLocation#managed_resource_id}. |
-| <code><a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueProvidedAqs.property.queueUrl">QueueUrl</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/external_location#queue_url ExternalLocation#queue_url}. |
-| <code><a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueProvidedAqs.property.resourceGroup">ResourceGroup</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/external_location#resource_group ExternalLocation#resource_group}. |
-| <code><a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueProvidedAqs.property.subscriptionId">SubscriptionId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/external_location#subscription_id ExternalLocation#subscription_id}. |
+| <code><a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueProvidedAqs.property.managedResourceId">ManagedResourceId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/resources/external_location#managed_resource_id ExternalLocation#managed_resource_id}. |
+| <code><a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueProvidedAqs.property.queueUrl">QueueUrl</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/resources/external_location#queue_url ExternalLocation#queue_url}. |
+| <code><a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueProvidedAqs.property.resourceGroup">ResourceGroup</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/resources/external_location#resource_group ExternalLocation#resource_group}. |
+| <code><a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueProvidedAqs.property.subscriptionId">SubscriptionId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/resources/external_location#subscription_id ExternalLocation#subscription_id}. |
 
 ---
 
@@ -1993,7 +1993,7 @@ public string ManagedResourceId { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/external_location#managed_resource_id ExternalLocation#managed_resource_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/resources/external_location#managed_resource_id ExternalLocation#managed_resource_id}.
 
 ---
 
@@ -2005,7 +2005,7 @@ public string QueueUrl { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/external_location#queue_url ExternalLocation#queue_url}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/resources/external_location#queue_url ExternalLocation#queue_url}.
 
 ---
 
@@ -2017,7 +2017,7 @@ public string ResourceGroup { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/external_location#resource_group ExternalLocation#resource_group}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/resources/external_location#resource_group ExternalLocation#resource_group}.
 
 ---
 
@@ -2029,7 +2029,7 @@ public string SubscriptionId { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/external_location#subscription_id ExternalLocation#subscription_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/resources/external_location#subscription_id ExternalLocation#subscription_id}.
 
 ---
 
@@ -2050,8 +2050,8 @@ new ExternalLocationEffectiveFileEventQueueProvidedPubsub {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueProvidedPubsub.property.managedResourceId">ManagedResourceId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/external_location#managed_resource_id ExternalLocation#managed_resource_id}. |
-| <code><a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueProvidedPubsub.property.subscriptionName">SubscriptionName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/external_location#subscription_name ExternalLocation#subscription_name}. |
+| <code><a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueProvidedPubsub.property.managedResourceId">ManagedResourceId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/resources/external_location#managed_resource_id ExternalLocation#managed_resource_id}. |
+| <code><a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueProvidedPubsub.property.subscriptionName">SubscriptionName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/resources/external_location#subscription_name ExternalLocation#subscription_name}. |
 
 ---
 
@@ -2063,7 +2063,7 @@ public string ManagedResourceId { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/external_location#managed_resource_id ExternalLocation#managed_resource_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/resources/external_location#managed_resource_id ExternalLocation#managed_resource_id}.
 
 ---
 
@@ -2075,7 +2075,7 @@ public string SubscriptionName { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/external_location#subscription_name ExternalLocation#subscription_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/resources/external_location#subscription_name ExternalLocation#subscription_name}.
 
 ---
 
@@ -2096,8 +2096,8 @@ new ExternalLocationEffectiveFileEventQueueProvidedSqs {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueProvidedSqs.property.managedResourceId">ManagedResourceId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/external_location#managed_resource_id ExternalLocation#managed_resource_id}. |
-| <code><a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueProvidedSqs.property.queueUrl">QueueUrl</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/external_location#queue_url ExternalLocation#queue_url}. |
+| <code><a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueProvidedSqs.property.managedResourceId">ManagedResourceId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/resources/external_location#managed_resource_id ExternalLocation#managed_resource_id}. |
+| <code><a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueProvidedSqs.property.queueUrl">QueueUrl</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/resources/external_location#queue_url ExternalLocation#queue_url}. |
 
 ---
 
@@ -2109,7 +2109,7 @@ public string ManagedResourceId { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/external_location#managed_resource_id ExternalLocation#managed_resource_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/resources/external_location#managed_resource_id ExternalLocation#managed_resource_id}.
 
 ---
 
@@ -2121,7 +2121,7 @@ public string QueueUrl { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/external_location#queue_url ExternalLocation#queue_url}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/resources/external_location#queue_url ExternalLocation#queue_url}.
 
 ---
 
@@ -2155,7 +2155,7 @@ public ExternalLocationEncryptionDetailsSseEncryptionDetails SseEncryptionDetail
 
 sse_encryption_details block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/external_location#sse_encryption_details ExternalLocation#sse_encryption_details}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/resources/external_location#sse_encryption_details ExternalLocation#sse_encryption_details}
 
 ---
 
@@ -2176,8 +2176,8 @@ new ExternalLocationEncryptionDetailsSseEncryptionDetails {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationEncryptionDetailsSseEncryptionDetails.property.algorithm">Algorithm</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/external_location#algorithm ExternalLocation#algorithm}. |
-| <code><a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationEncryptionDetailsSseEncryptionDetails.property.awsKmsKeyArn">AwsKmsKeyArn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/external_location#aws_kms_key_arn ExternalLocation#aws_kms_key_arn}. |
+| <code><a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationEncryptionDetailsSseEncryptionDetails.property.algorithm">Algorithm</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/resources/external_location#algorithm ExternalLocation#algorithm}. |
+| <code><a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationEncryptionDetailsSseEncryptionDetails.property.awsKmsKeyArn">AwsKmsKeyArn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/resources/external_location#aws_kms_key_arn ExternalLocation#aws_kms_key_arn}. |
 
 ---
 
@@ -2189,7 +2189,7 @@ public string Algorithm { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/external_location#algorithm ExternalLocation#algorithm}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/resources/external_location#algorithm ExternalLocation#algorithm}.
 
 ---
 
@@ -2201,7 +2201,7 @@ public string AwsKmsKeyArn { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/external_location#aws_kms_key_arn ExternalLocation#aws_kms_key_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/resources/external_location#aws_kms_key_arn ExternalLocation#aws_kms_key_arn}.
 
 ---
 
@@ -2245,7 +2245,7 @@ public ExternalLocationFileEventQueueManagedAqs ManagedAqs { get; set; }
 
 managed_aqs block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/external_location#managed_aqs ExternalLocation#managed_aqs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/resources/external_location#managed_aqs ExternalLocation#managed_aqs}
 
 ---
 
@@ -2259,7 +2259,7 @@ public ExternalLocationFileEventQueueManagedPubsub ManagedPubsub { get; set; }
 
 managed_pubsub block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/external_location#managed_pubsub ExternalLocation#managed_pubsub}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/resources/external_location#managed_pubsub ExternalLocation#managed_pubsub}
 
 ---
 
@@ -2273,7 +2273,7 @@ public ExternalLocationFileEventQueueManagedSqs ManagedSqs { get; set; }
 
 managed_sqs block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/external_location#managed_sqs ExternalLocation#managed_sqs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/resources/external_location#managed_sqs ExternalLocation#managed_sqs}
 
 ---
 
@@ -2287,7 +2287,7 @@ public ExternalLocationFileEventQueueProvidedAqs ProvidedAqs { get; set; }
 
 provided_aqs block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/external_location#provided_aqs ExternalLocation#provided_aqs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/resources/external_location#provided_aqs ExternalLocation#provided_aqs}
 
 ---
 
@@ -2301,7 +2301,7 @@ public ExternalLocationFileEventQueueProvidedPubsub ProvidedPubsub { get; set; }
 
 provided_pubsub block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/external_location#provided_pubsub ExternalLocation#provided_pubsub}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/resources/external_location#provided_pubsub ExternalLocation#provided_pubsub}
 
 ---
 
@@ -2315,7 +2315,7 @@ public ExternalLocationFileEventQueueProvidedSqs ProvidedSqs { get; set; }
 
 provided_sqs block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/external_location#provided_sqs ExternalLocation#provided_sqs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/resources/external_location#provided_sqs ExternalLocation#provided_sqs}
 
 ---
 
@@ -2337,9 +2337,9 @@ new ExternalLocationFileEventQueueManagedAqs {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationFileEventQueueManagedAqs.property.resourceGroup">ResourceGroup</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/external_location#resource_group ExternalLocation#resource_group}. |
-| <code><a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationFileEventQueueManagedAqs.property.subscriptionId">SubscriptionId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/external_location#subscription_id ExternalLocation#subscription_id}. |
-| <code><a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationFileEventQueueManagedAqs.property.queueUrl">QueueUrl</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/external_location#queue_url ExternalLocation#queue_url}. |
+| <code><a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationFileEventQueueManagedAqs.property.resourceGroup">ResourceGroup</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/resources/external_location#resource_group ExternalLocation#resource_group}. |
+| <code><a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationFileEventQueueManagedAqs.property.subscriptionId">SubscriptionId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/resources/external_location#subscription_id ExternalLocation#subscription_id}. |
+| <code><a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationFileEventQueueManagedAqs.property.queueUrl">QueueUrl</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/resources/external_location#queue_url ExternalLocation#queue_url}. |
 
 ---
 
@@ -2351,7 +2351,7 @@ public string ResourceGroup { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/external_location#resource_group ExternalLocation#resource_group}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/resources/external_location#resource_group ExternalLocation#resource_group}.
 
 ---
 
@@ -2363,7 +2363,7 @@ public string SubscriptionId { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/external_location#subscription_id ExternalLocation#subscription_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/resources/external_location#subscription_id ExternalLocation#subscription_id}.
 
 ---
 
@@ -2375,7 +2375,7 @@ public string QueueUrl { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/external_location#queue_url ExternalLocation#queue_url}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/resources/external_location#queue_url ExternalLocation#queue_url}.
 
 ---
 
@@ -2395,7 +2395,7 @@ new ExternalLocationFileEventQueueManagedPubsub {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationFileEventQueueManagedPubsub.property.subscriptionName">SubscriptionName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/external_location#subscription_name ExternalLocation#subscription_name}. |
+| <code><a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationFileEventQueueManagedPubsub.property.subscriptionName">SubscriptionName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/resources/external_location#subscription_name ExternalLocation#subscription_name}. |
 
 ---
 
@@ -2407,7 +2407,7 @@ public string SubscriptionName { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/external_location#subscription_name ExternalLocation#subscription_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/resources/external_location#subscription_name ExternalLocation#subscription_name}.
 
 ---
 
@@ -2427,7 +2427,7 @@ new ExternalLocationFileEventQueueManagedSqs {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationFileEventQueueManagedSqs.property.queueUrl">QueueUrl</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/external_location#queue_url ExternalLocation#queue_url}. |
+| <code><a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationFileEventQueueManagedSqs.property.queueUrl">QueueUrl</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/resources/external_location#queue_url ExternalLocation#queue_url}. |
 
 ---
 
@@ -2439,7 +2439,7 @@ public string QueueUrl { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/external_location#queue_url ExternalLocation#queue_url}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/resources/external_location#queue_url ExternalLocation#queue_url}.
 
 ---
 
@@ -2461,9 +2461,9 @@ new ExternalLocationFileEventQueueProvidedAqs {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationFileEventQueueProvidedAqs.property.queueUrl">QueueUrl</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/external_location#queue_url ExternalLocation#queue_url}. |
-| <code><a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationFileEventQueueProvidedAqs.property.resourceGroup">ResourceGroup</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/external_location#resource_group ExternalLocation#resource_group}. |
-| <code><a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationFileEventQueueProvidedAqs.property.subscriptionId">SubscriptionId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/external_location#subscription_id ExternalLocation#subscription_id}. |
+| <code><a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationFileEventQueueProvidedAqs.property.queueUrl">QueueUrl</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/resources/external_location#queue_url ExternalLocation#queue_url}. |
+| <code><a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationFileEventQueueProvidedAqs.property.resourceGroup">ResourceGroup</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/resources/external_location#resource_group ExternalLocation#resource_group}. |
+| <code><a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationFileEventQueueProvidedAqs.property.subscriptionId">SubscriptionId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/resources/external_location#subscription_id ExternalLocation#subscription_id}. |
 
 ---
 
@@ -2475,7 +2475,7 @@ public string QueueUrl { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/external_location#queue_url ExternalLocation#queue_url}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/resources/external_location#queue_url ExternalLocation#queue_url}.
 
 ---
 
@@ -2487,7 +2487,7 @@ public string ResourceGroup { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/external_location#resource_group ExternalLocation#resource_group}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/resources/external_location#resource_group ExternalLocation#resource_group}.
 
 ---
 
@@ -2499,7 +2499,7 @@ public string SubscriptionId { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/external_location#subscription_id ExternalLocation#subscription_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/resources/external_location#subscription_id ExternalLocation#subscription_id}.
 
 ---
 
@@ -2519,7 +2519,7 @@ new ExternalLocationFileEventQueueProvidedPubsub {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationFileEventQueueProvidedPubsub.property.subscriptionName">SubscriptionName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/external_location#subscription_name ExternalLocation#subscription_name}. |
+| <code><a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationFileEventQueueProvidedPubsub.property.subscriptionName">SubscriptionName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/resources/external_location#subscription_name ExternalLocation#subscription_name}. |
 
 ---
 
@@ -2531,7 +2531,7 @@ public string SubscriptionName { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/external_location#subscription_name ExternalLocation#subscription_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/resources/external_location#subscription_name ExternalLocation#subscription_name}.
 
 ---
 
@@ -2551,7 +2551,7 @@ new ExternalLocationFileEventQueueProvidedSqs {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationFileEventQueueProvidedSqs.property.queueUrl">QueueUrl</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/external_location#queue_url ExternalLocation#queue_url}. |
+| <code><a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationFileEventQueueProvidedSqs.property.queueUrl">QueueUrl</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/resources/external_location#queue_url ExternalLocation#queue_url}. |
 
 ---
 
@@ -2563,7 +2563,7 @@ public string QueueUrl { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/external_location#queue_url ExternalLocation#queue_url}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/resources/external_location#queue_url ExternalLocation#queue_url}.
 
 ---
 
@@ -2583,7 +2583,7 @@ new ExternalLocationProviderConfig {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationProviderConfig.property.workspaceId">WorkspaceId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/external_location#workspace_id ExternalLocation#workspace_id}. |
+| <code><a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationProviderConfig.property.workspaceId">WorkspaceId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/resources/external_location#workspace_id ExternalLocation#workspace_id}. |
 
 ---
 
@@ -2595,7 +2595,7 @@ public string WorkspaceId { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/external_location#workspace_id ExternalLocation#workspace_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/resources/external_location#workspace_id ExternalLocation#workspace_id}.
 
 ---
 

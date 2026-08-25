@@ -4,7 +4,7 @@
 
 ### WorkspaceIamGroupV2 <a name="WorkspaceIamGroupV2" id="@cdktn/provider-databricks.workspaceIamGroupV2.WorkspaceIamGroupV2"></a>
 
-Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/workspace_iam_group_v2 databricks_workspace_iam_group_v2}.
+Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/resources/workspace_iam_group_v2 databricks_workspace_iam_group_v2}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.workspaceIamGroupV2.WorkspaceIamGroupV2.Initializer"></a>
 
@@ -523,7 +523,7 @@ The construct id used in the generated config for the WorkspaceIamGroupV2 to imp
 
 The id of the existing WorkspaceIamGroupV2 that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/workspace_iam_group_v2#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/resources/workspace_iam_group_v2#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -827,9 +827,9 @@ const workspaceIamGroupV2Config: workspaceIamGroupV2.WorkspaceIamGroupV2Config =
 | <code><a href="#@cdktn/provider-databricks.workspaceIamGroupV2.WorkspaceIamGroupV2Config.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.workspaceIamGroupV2.WorkspaceIamGroupV2Config.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.workspaceIamGroupV2.WorkspaceIamGroupV2Config.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-databricks.workspaceIamGroupV2.WorkspaceIamGroupV2Config.property.externalId">externalId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/workspace_iam_group_v2#external_id WorkspaceIamGroupV2#external_id}. |
-| <code><a href="#@cdktn/provider-databricks.workspaceIamGroupV2.WorkspaceIamGroupV2Config.property.groupName">groupName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/workspace_iam_group_v2#group_name WorkspaceIamGroupV2#group_name}. |
-| <code><a href="#@cdktn/provider-databricks.workspaceIamGroupV2.WorkspaceIamGroupV2Config.property.providerConfig">providerConfig</a></code> | <code><a href="#@cdktn/provider-databricks.workspaceIamGroupV2.WorkspaceIamGroupV2ProviderConfig">WorkspaceIamGroupV2ProviderConfig</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/workspace_iam_group_v2#provider_config WorkspaceIamGroupV2#provider_config}. |
+| <code><a href="#@cdktn/provider-databricks.workspaceIamGroupV2.WorkspaceIamGroupV2Config.property.externalId">externalId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/resources/workspace_iam_group_v2#external_id WorkspaceIamGroupV2#external_id}. |
+| <code><a href="#@cdktn/provider-databricks.workspaceIamGroupV2.WorkspaceIamGroupV2Config.property.groupName">groupName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/resources/workspace_iam_group_v2#group_name WorkspaceIamGroupV2#group_name}. |
+| <code><a href="#@cdktn/provider-databricks.workspaceIamGroupV2.WorkspaceIamGroupV2Config.property.providerConfig">providerConfig</a></code> | <code><a href="#@cdktn/provider-databricks.workspaceIamGroupV2.WorkspaceIamGroupV2ProviderConfig">WorkspaceIamGroupV2ProviderConfig</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/resources/workspace_iam_group_v2#provider_config WorkspaceIamGroupV2#provider_config}. |
 
 ---
 
@@ -911,7 +911,7 @@ public readonly externalId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/workspace_iam_group_v2#external_id WorkspaceIamGroupV2#external_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/resources/workspace_iam_group_v2#external_id WorkspaceIamGroupV2#external_id}.
 
 ---
 
@@ -923,7 +923,7 @@ public readonly groupName: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/workspace_iam_group_v2#group_name WorkspaceIamGroupV2#group_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/resources/workspace_iam_group_v2#group_name WorkspaceIamGroupV2#group_name}.
 
 ---
 
@@ -935,7 +935,7 @@ public readonly providerConfig: WorkspaceIamGroupV2ProviderConfig;
 
 - *Type:* <a href="#@cdktn/provider-databricks.workspaceIamGroupV2.WorkspaceIamGroupV2ProviderConfig">WorkspaceIamGroupV2ProviderConfig</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/workspace_iam_group_v2#provider_config WorkspaceIamGroupV2#provider_config}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/resources/workspace_iam_group_v2#provider_config WorkspaceIamGroupV2#provider_config}.
 
 ---
 
@@ -953,7 +953,7 @@ const workspaceIamGroupV2ProviderConfig: workspaceIamGroupV2.WorkspaceIamGroupV2
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.workspaceIamGroupV2.WorkspaceIamGroupV2ProviderConfig.property.workspaceId">workspaceId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/workspace_iam_group_v2#workspace_id WorkspaceIamGroupV2#workspace_id}. |
+| <code><a href="#@cdktn/provider-databricks.workspaceIamGroupV2.WorkspaceIamGroupV2ProviderConfig.property.workspaceId">workspaceId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/resources/workspace_iam_group_v2#workspace_id WorkspaceIamGroupV2#workspace_id}. |
 
 ---
 
@@ -965,7 +965,7 @@ public readonly workspaceId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/workspace_iam_group_v2#workspace_id WorkspaceIamGroupV2#workspace_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/resources/workspace_iam_group_v2#workspace_id WorkspaceIamGroupV2#workspace_id}.
 
 ---
 

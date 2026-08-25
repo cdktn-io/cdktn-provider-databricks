@@ -4,7 +4,7 @@
 
 ### AwsS3Mount <a name="AwsS3Mount" id="@cdktn/provider-databricks.awsS3Mount.AwsS3Mount"></a>
 
-Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/aws_s3_mount databricks_aws_s3_mount}.
+Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/resources/aws_s3_mount databricks_aws_s3_mount}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.awsS3Mount.AwsS3Mount.Initializer"></a>
 
@@ -510,7 +510,7 @@ The construct id used in the generated config for the AwsS3Mount to import.
 
 The id of the existing AwsS3Mount that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/aws_s3_mount#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/resources/aws_s3_mount#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -847,11 +847,11 @@ const awsS3MountConfig: awsS3Mount.AwsS3MountConfig = { ... }
 | <code><a href="#@cdktn/provider-databricks.awsS3Mount.AwsS3MountConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.awsS3Mount.AwsS3MountConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.awsS3Mount.AwsS3MountConfig.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-databricks.awsS3Mount.AwsS3MountConfig.property.mountName">mountName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/aws_s3_mount#mount_name AwsS3Mount#mount_name}. |
-| <code><a href="#@cdktn/provider-databricks.awsS3Mount.AwsS3MountConfig.property.s3BucketName">s3BucketName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/aws_s3_mount#s3_bucket_name AwsS3Mount#s3_bucket_name}. |
-| <code><a href="#@cdktn/provider-databricks.awsS3Mount.AwsS3MountConfig.property.clusterId">clusterId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/aws_s3_mount#cluster_id AwsS3Mount#cluster_id}. |
-| <code><a href="#@cdktn/provider-databricks.awsS3Mount.AwsS3MountConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/aws_s3_mount#id AwsS3Mount#id}. |
-| <code><a href="#@cdktn/provider-databricks.awsS3Mount.AwsS3MountConfig.property.instanceProfile">instanceProfile</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/aws_s3_mount#instance_profile AwsS3Mount#instance_profile}. |
+| <code><a href="#@cdktn/provider-databricks.awsS3Mount.AwsS3MountConfig.property.mountName">mountName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/resources/aws_s3_mount#mount_name AwsS3Mount#mount_name}. |
+| <code><a href="#@cdktn/provider-databricks.awsS3Mount.AwsS3MountConfig.property.s3BucketName">s3BucketName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/resources/aws_s3_mount#s3_bucket_name AwsS3Mount#s3_bucket_name}. |
+| <code><a href="#@cdktn/provider-databricks.awsS3Mount.AwsS3MountConfig.property.clusterId">clusterId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/resources/aws_s3_mount#cluster_id AwsS3Mount#cluster_id}. |
+| <code><a href="#@cdktn/provider-databricks.awsS3Mount.AwsS3MountConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/resources/aws_s3_mount#id AwsS3Mount#id}. |
+| <code><a href="#@cdktn/provider-databricks.awsS3Mount.AwsS3MountConfig.property.instanceProfile">instanceProfile</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/resources/aws_s3_mount#instance_profile AwsS3Mount#instance_profile}. |
 
 ---
 
@@ -933,7 +933,7 @@ public readonly mountName: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/aws_s3_mount#mount_name AwsS3Mount#mount_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/resources/aws_s3_mount#mount_name AwsS3Mount#mount_name}.
 
 ---
 
@@ -945,7 +945,7 @@ public readonly s3BucketName: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/aws_s3_mount#s3_bucket_name AwsS3Mount#s3_bucket_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/resources/aws_s3_mount#s3_bucket_name AwsS3Mount#s3_bucket_name}.
 
 ---
 
@@ -957,7 +957,7 @@ public readonly clusterId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/aws_s3_mount#cluster_id AwsS3Mount#cluster_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/resources/aws_s3_mount#cluster_id AwsS3Mount#cluster_id}.
 
 ---
 
@@ -969,7 +969,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/aws_s3_mount#id AwsS3Mount#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/resources/aws_s3_mount#id AwsS3Mount#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -984,7 +984,7 @@ public readonly instanceProfile: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/aws_s3_mount#instance_profile AwsS3Mount#instance_profile}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/resources/aws_s3_mount#instance_profile AwsS3Mount#instance_profile}.
 
 ---
 

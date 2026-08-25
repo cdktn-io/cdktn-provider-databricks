@@ -4,7 +4,7 @@
 
 ### DataDatabricksRecipients <a name="DataDatabricksRecipients" id="@cdktn/provider-databricks.dataDatabricksRecipients.DataDatabricksRecipients"></a>
 
-Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/data-sources/recipients databricks_recipients}.
+Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/data-sources/recipients databricks_recipients}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksRecipients.DataDatabricksRecipients.Initializer"></a>
 
@@ -37,8 +37,8 @@ dataDatabricksRecipients.DataDatabricksRecipients(
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksRecipients.DataDatabricksRecipients.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksRecipients.DataDatabricksRecipients.Initializer.parameter.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksRecipients.DataDatabricksRecipients.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksRecipients.DataDatabricksRecipients.Initializer.parameter.providerConfig">provider_config</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksRecipients.DataDatabricksRecipientsProviderConfig">DataDatabricksRecipientsProviderConfig</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/data-sources/recipients#provider_config DataDatabricksRecipients#provider_config}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksRecipients.DataDatabricksRecipients.Initializer.parameter.recipients">recipients</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/data-sources/recipients#recipients DataDatabricksRecipients#recipients}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksRecipients.DataDatabricksRecipients.Initializer.parameter.providerConfig">provider_config</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksRecipients.DataDatabricksRecipientsProviderConfig">DataDatabricksRecipientsProviderConfig</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/data-sources/recipients#provider_config DataDatabricksRecipients#provider_config}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksRecipients.DataDatabricksRecipients.Initializer.parameter.recipients">recipients</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/data-sources/recipients#recipients DataDatabricksRecipients#recipients}. |
 
 ---
 
@@ -106,7 +106,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* <a href="#@cdktn/provider-databricks.dataDatabricksRecipients.DataDatabricksRecipientsProviderConfig">DataDatabricksRecipientsProviderConfig</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/data-sources/recipients#provider_config DataDatabricksRecipients#provider_config}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/data-sources/recipients#provider_config DataDatabricksRecipients#provider_config}.
 
 ---
 
@@ -114,7 +114,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/data-sources/recipients#recipients DataDatabricksRecipients#recipients}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/data-sources/recipients#recipients DataDatabricksRecipients#recipients}.
 
 ---
 
@@ -398,7 +398,7 @@ def put_provider_config(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/data-sources/recipients#workspace_id DataDatabricksRecipients#workspace_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/data-sources/recipients#workspace_id DataDatabricksRecipients#workspace_id}.
 
 ---
 
@@ -528,7 +528,7 @@ The construct id used in the generated config for the DataDatabricksRecipients t
 
 The id of the existing DataDatabricksRecipients that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/data-sources/recipients#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/data-sources/recipients#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -776,8 +776,8 @@ dataDatabricksRecipients.DataDatabricksRecipientsConfig(
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksRecipients.DataDatabricksRecipientsConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksRecipients.DataDatabricksRecipientsConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksRecipients.DataDatabricksRecipientsConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksRecipients.DataDatabricksRecipientsConfig.property.providerConfig">provider_config</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksRecipients.DataDatabricksRecipientsProviderConfig">DataDatabricksRecipientsProviderConfig</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/data-sources/recipients#provider_config DataDatabricksRecipients#provider_config}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksRecipients.DataDatabricksRecipientsConfig.property.recipients">recipients</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/data-sources/recipients#recipients DataDatabricksRecipients#recipients}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksRecipients.DataDatabricksRecipientsConfig.property.providerConfig">provider_config</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksRecipients.DataDatabricksRecipientsProviderConfig">DataDatabricksRecipientsProviderConfig</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/data-sources/recipients#provider_config DataDatabricksRecipients#provider_config}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksRecipients.DataDatabricksRecipientsConfig.property.recipients">recipients</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/data-sources/recipients#recipients DataDatabricksRecipients#recipients}. |
 
 ---
 
@@ -859,7 +859,7 @@ provider_config: DataDatabricksRecipientsProviderConfig
 
 - *Type:* <a href="#@cdktn/provider-databricks.dataDatabricksRecipients.DataDatabricksRecipientsProviderConfig">DataDatabricksRecipientsProviderConfig</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/data-sources/recipients#provider_config DataDatabricksRecipients#provider_config}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/data-sources/recipients#provider_config DataDatabricksRecipients#provider_config}.
 
 ---
 
@@ -871,7 +871,7 @@ recipients: typing.List[str]
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/data-sources/recipients#recipients DataDatabricksRecipients#recipients}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/data-sources/recipients#recipients DataDatabricksRecipients#recipients}.
 
 ---
 
@@ -891,7 +891,7 @@ dataDatabricksRecipients.DataDatabricksRecipientsProviderConfig(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksRecipients.DataDatabricksRecipientsProviderConfig.property.workspaceId">workspace_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/data-sources/recipients#workspace_id DataDatabricksRecipients#workspace_id}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksRecipients.DataDatabricksRecipientsProviderConfig.property.workspaceId">workspace_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/data-sources/recipients#workspace_id DataDatabricksRecipients#workspace_id}. |
 
 ---
 
@@ -903,7 +903,7 @@ workspace_id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/data-sources/recipients#workspace_id DataDatabricksRecipients#workspace_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/data-sources/recipients#workspace_id DataDatabricksRecipients#workspace_id}.
 
 ---
 

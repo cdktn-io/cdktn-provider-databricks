@@ -4,7 +4,7 @@
 
 ### DataDatabricksAccountIamServicePrincipalV2 <a name="DataDatabricksAccountIamServicePrincipalV2" id="@cdktn/provider-databricks.dataDatabricksAccountIamServicePrincipalV2.DataDatabricksAccountIamServicePrincipalV2"></a>
 
-Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/data-sources/account_iam_service_principal_v2 databricks_account_iam_service_principal_v2}.
+Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/data-sources/account_iam_service_principal_v2 databricks_account_iam_service_principal_v2}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksAccountIamServicePrincipalV2.DataDatabricksAccountIamServicePrincipalV2.Initializer"></a>
 
@@ -387,7 +387,7 @@ The construct id used in the generated config for the DataDatabricksAccountIamSe
 
 The id of the existing DataDatabricksAccountIamServicePrincipalV2 that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/data-sources/account_iam_service_principal_v2#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/data-sources/account_iam_service_principal_v2#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -658,7 +658,7 @@ const dataDatabricksAccountIamServicePrincipalV2Config: dataDatabricksAccountIam
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountIamServicePrincipalV2.DataDatabricksAccountIamServicePrincipalV2Config.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountIamServicePrincipalV2.DataDatabricksAccountIamServicePrincipalV2Config.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountIamServicePrincipalV2.DataDatabricksAccountIamServicePrincipalV2Config.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountIamServicePrincipalV2.DataDatabricksAccountIamServicePrincipalV2Config.property.servicePrincipalId">servicePrincipalId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/data-sources/account_iam_service_principal_v2#service_principal_id DataDatabricksAccountIamServicePrincipalV2#service_principal_id}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountIamServicePrincipalV2.DataDatabricksAccountIamServicePrincipalV2Config.property.servicePrincipalId">servicePrincipalId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/data-sources/account_iam_service_principal_v2#service_principal_id DataDatabricksAccountIamServicePrincipalV2#service_principal_id}. |
 
 ---
 
@@ -740,7 +740,7 @@ public readonly servicePrincipalId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/data-sources/account_iam_service_principal_v2#service_principal_id DataDatabricksAccountIamServicePrincipalV2#service_principal_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/data-sources/account_iam_service_principal_v2#service_principal_id DataDatabricksAccountIamServicePrincipalV2#service_principal_id}.
 
 ---
 
