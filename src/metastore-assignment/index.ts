@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/metastore_assignment
+// https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/resources/metastore_assignment
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,38 +15,38 @@ export interface MetastoreAssignmentConfig extends cdktn.TerraformMetaArguments 
   /**
   * Specifies whether to use account-level or workspace-level API. Valid values are `account` and `workspace`. When not set, the API level is inferred from the provider host.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/metastore_assignment#api MetastoreAssignment#api}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/resources/metastore_assignment#api MetastoreAssignment#api}
   */
   readonly api?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/metastore_assignment#default_catalog_name MetastoreAssignment#default_catalog_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/resources/metastore_assignment#default_catalog_name MetastoreAssignment#default_catalog_name}
   */
   readonly defaultCatalogName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/metastore_assignment#id MetastoreAssignment#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/resources/metastore_assignment#id MetastoreAssignment#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/metastore_assignment#metastore_id MetastoreAssignment#metastore_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/resources/metastore_assignment#metastore_id MetastoreAssignment#metastore_id}
   */
   readonly metastoreId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/metastore_assignment#workspace_id MetastoreAssignment#workspace_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/resources/metastore_assignment#workspace_id MetastoreAssignment#workspace_id}
   */
   readonly workspaceId: number;
   /**
   * provider_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/metastore_assignment#provider_config MetastoreAssignment#provider_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/resources/metastore_assignment#provider_config MetastoreAssignment#provider_config}
   */
   readonly providerConfig?: MetastoreAssignmentProviderConfig;
 }
 export interface MetastoreAssignmentProviderConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/metastore_assignment#workspace_id MetastoreAssignment#workspace_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/resources/metastore_assignment#workspace_id MetastoreAssignment#workspace_id}
   */
   readonly workspaceId?: string;
 }
@@ -130,7 +130,7 @@ export class MetastoreAssignmentProviderConfigOutputReference extends cdktn.Comp
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/metastore_assignment databricks_metastore_assignment}
+* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/resources/metastore_assignment databricks_metastore_assignment}
 */
 export class MetastoreAssignment extends cdktn.TerraformResource {
 
@@ -146,7 +146,7 @@ export class MetastoreAssignment extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a MetastoreAssignment resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the MetastoreAssignment to import
-  * @param importFromId The id of the existing MetastoreAssignment that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/metastore_assignment#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing MetastoreAssignment that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/resources/metastore_assignment#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the MetastoreAssignment to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -158,7 +158,7 @@ export class MetastoreAssignment extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/metastore_assignment databricks_metastore_assignment} Resource
+  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/resources/metastore_assignment databricks_metastore_assignment} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -169,7 +169,7 @@ export class MetastoreAssignment extends cdktn.TerraformResource {
       terraformResourceType: 'databricks_metastore_assignment',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '1.128.0',
+        providerVersion: '1.129.0',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,

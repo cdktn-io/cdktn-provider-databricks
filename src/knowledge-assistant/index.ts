@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/knowledge_assistant
+// https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/resources/knowledge_assistant
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,25 +13,25 @@ import * as cdktn from 'cdktn';
 
 export interface KnowledgeAssistantConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/knowledge_assistant#description KnowledgeAssistant#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/resources/knowledge_assistant#description KnowledgeAssistant#description}
   */
   readonly description: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/knowledge_assistant#display_name KnowledgeAssistant#display_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/resources/knowledge_assistant#display_name KnowledgeAssistant#display_name}
   */
   readonly displayName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/knowledge_assistant#instructions KnowledgeAssistant#instructions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/resources/knowledge_assistant#instructions KnowledgeAssistant#instructions}
   */
   readonly instructions?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/knowledge_assistant#provider_config KnowledgeAssistant#provider_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/resources/knowledge_assistant#provider_config KnowledgeAssistant#provider_config}
   */
   readonly providerConfig?: KnowledgeAssistantProviderConfig;
 }
 export interface KnowledgeAssistantProviderConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/knowledge_assistant#workspace_id KnowledgeAssistant#workspace_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/resources/knowledge_assistant#workspace_id KnowledgeAssistant#workspace_id}
   */
   readonly workspaceId?: string;
 }
@@ -125,7 +125,7 @@ export class KnowledgeAssistantProviderConfigOutputReference extends cdktn.Compl
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/knowledge_assistant databricks_knowledge_assistant}
+* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/resources/knowledge_assistant databricks_knowledge_assistant}
 */
 export class KnowledgeAssistant extends cdktn.TerraformResource {
 
@@ -141,7 +141,7 @@ export class KnowledgeAssistant extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a KnowledgeAssistant resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the KnowledgeAssistant to import
-  * @param importFromId The id of the existing KnowledgeAssistant that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/knowledge_assistant#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing KnowledgeAssistant that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/resources/knowledge_assistant#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the KnowledgeAssistant to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -153,7 +153,7 @@ export class KnowledgeAssistant extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/knowledge_assistant databricks_knowledge_assistant} Resource
+  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/resources/knowledge_assistant databricks_knowledge_assistant} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -164,7 +164,7 @@ export class KnowledgeAssistant extends cdktn.TerraformResource {
       terraformResourceType: 'databricks_knowledge_assistant',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '1.128.0',
+        providerVersion: '1.129.0',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,
