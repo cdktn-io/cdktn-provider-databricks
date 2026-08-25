@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/workspace_iam_user_v2
+// https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/resources/workspace_iam_user_v2
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,33 +13,33 @@ import * as cdktn from 'cdktn';
 
 export interface WorkspaceIamUserV2Config extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/workspace_iam_user_v2#account_user_status WorkspaceIamUserV2#account_user_status}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/resources/workspace_iam_user_v2#account_user_status WorkspaceIamUserV2#account_user_status}
   */
   readonly accountUserStatus: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/workspace_iam_user_v2#external_id WorkspaceIamUserV2#external_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/resources/workspace_iam_user_v2#external_id WorkspaceIamUserV2#external_id}
   */
   readonly externalId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/workspace_iam_user_v2#full_name WorkspaceIamUserV2#full_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/resources/workspace_iam_user_v2#full_name WorkspaceIamUserV2#full_name}
   */
   readonly fullName: WorkspaceIamUserV2FullName;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/workspace_iam_user_v2#provider_config WorkspaceIamUserV2#provider_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/resources/workspace_iam_user_v2#provider_config WorkspaceIamUserV2#provider_config}
   */
   readonly providerConfig?: WorkspaceIamUserV2ProviderConfig;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/workspace_iam_user_v2#username WorkspaceIamUserV2#username}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/resources/workspace_iam_user_v2#username WorkspaceIamUserV2#username}
   */
   readonly username: string;
 }
 export interface WorkspaceIamUserV2FullName {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/workspace_iam_user_v2#family_name WorkspaceIamUserV2#family_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/resources/workspace_iam_user_v2#family_name WorkspaceIamUserV2#family_name}
   */
   readonly familyName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/workspace_iam_user_v2#given_name WorkspaceIamUserV2#given_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/resources/workspace_iam_user_v2#given_name WorkspaceIamUserV2#given_name}
   */
   readonly givenName?: string;
 }
@@ -162,7 +162,7 @@ export class WorkspaceIamUserV2FullNameOutputReference extends cdktn.ComplexObje
 }
 export interface WorkspaceIamUserV2ProviderConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/workspace_iam_user_v2#workspace_id WorkspaceIamUserV2#workspace_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/resources/workspace_iam_user_v2#workspace_id WorkspaceIamUserV2#workspace_id}
   */
   readonly workspaceId?: string;
 }
@@ -256,7 +256,7 @@ export class WorkspaceIamUserV2ProviderConfigOutputReference extends cdktn.Compl
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/workspace_iam_user_v2 databricks_workspace_iam_user_v2}
+* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/resources/workspace_iam_user_v2 databricks_workspace_iam_user_v2}
 */
 export class WorkspaceIamUserV2 extends cdktn.TerraformResource {
 
@@ -272,7 +272,7 @@ export class WorkspaceIamUserV2 extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a WorkspaceIamUserV2 resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the WorkspaceIamUserV2 to import
-  * @param importFromId The id of the existing WorkspaceIamUserV2 that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/workspace_iam_user_v2#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing WorkspaceIamUserV2 that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/resources/workspace_iam_user_v2#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the WorkspaceIamUserV2 to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -284,7 +284,7 @@ export class WorkspaceIamUserV2 extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/workspace_iam_user_v2 databricks_workspace_iam_user_v2} Resource
+  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/resources/workspace_iam_user_v2 databricks_workspace_iam_user_v2} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -295,7 +295,7 @@ export class WorkspaceIamUserV2 extends cdktn.TerraformResource {
       terraformResourceType: 'databricks_workspace_iam_user_v2',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '1.128.0',
+        providerVersion: '1.129.0',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,

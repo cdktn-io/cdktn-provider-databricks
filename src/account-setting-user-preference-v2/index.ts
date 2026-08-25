@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/account_setting_user_preference_v2
+// https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/resources/account_setting_user_preference_v2
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,25 +13,25 @@ import * as cdktn from 'cdktn';
 
 export interface AccountSettingUserPreferenceV2Config extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/account_setting_user_preference_v2#boolean_val AccountSettingUserPreferenceV2#boolean_val}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/resources/account_setting_user_preference_v2#boolean_val AccountSettingUserPreferenceV2#boolean_val}
   */
   readonly booleanVal?: AccountSettingUserPreferenceV2BooleanVal;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/account_setting_user_preference_v2#name AccountSettingUserPreferenceV2#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/resources/account_setting_user_preference_v2#name AccountSettingUserPreferenceV2#name}
   */
   readonly name?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/account_setting_user_preference_v2#string_val AccountSettingUserPreferenceV2#string_val}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/resources/account_setting_user_preference_v2#string_val AccountSettingUserPreferenceV2#string_val}
   */
   readonly stringVal?: AccountSettingUserPreferenceV2StringVal;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/account_setting_user_preference_v2#user_id AccountSettingUserPreferenceV2#user_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/resources/account_setting_user_preference_v2#user_id AccountSettingUserPreferenceV2#user_id}
   */
   readonly userId?: string;
 }
 export interface AccountSettingUserPreferenceV2BooleanVal {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/account_setting_user_preference_v2#value AccountSettingUserPreferenceV2#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/resources/account_setting_user_preference_v2#value AccountSettingUserPreferenceV2#value}
   */
   readonly value?: boolean | cdktn.IResolvable;
 }
@@ -125,7 +125,7 @@ export class AccountSettingUserPreferenceV2BooleanValOutputReference extends cdk
 }
 export interface AccountSettingUserPreferenceV2EffectiveBooleanVal {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/account_setting_user_preference_v2#value AccountSettingUserPreferenceV2#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/resources/account_setting_user_preference_v2#value AccountSettingUserPreferenceV2#value}
   */
   readonly value?: boolean | cdktn.IResolvable;
 }
@@ -209,7 +209,7 @@ export class AccountSettingUserPreferenceV2EffectiveBooleanValOutputReference ex
 }
 export interface AccountSettingUserPreferenceV2EffectiveStringVal {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/account_setting_user_preference_v2#value AccountSettingUserPreferenceV2#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/resources/account_setting_user_preference_v2#value AccountSettingUserPreferenceV2#value}
   */
   readonly value?: string;
 }
@@ -293,7 +293,7 @@ export class AccountSettingUserPreferenceV2EffectiveStringValOutputReference ext
 }
 export interface AccountSettingUserPreferenceV2StringVal {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/account_setting_user_preference_v2#value AccountSettingUserPreferenceV2#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/resources/account_setting_user_preference_v2#value AccountSettingUserPreferenceV2#value}
   */
   readonly value?: string;
 }
@@ -387,7 +387,7 @@ export class AccountSettingUserPreferenceV2StringValOutputReference extends cdkt
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/account_setting_user_preference_v2 databricks_account_setting_user_preference_v2}
+* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/resources/account_setting_user_preference_v2 databricks_account_setting_user_preference_v2}
 */
 export class AccountSettingUserPreferenceV2 extends cdktn.TerraformResource {
 
@@ -403,7 +403,7 @@ export class AccountSettingUserPreferenceV2 extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a AccountSettingUserPreferenceV2 resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the AccountSettingUserPreferenceV2 to import
-  * @param importFromId The id of the existing AccountSettingUserPreferenceV2 that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/account_setting_user_preference_v2#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing AccountSettingUserPreferenceV2 that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/resources/account_setting_user_preference_v2#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the AccountSettingUserPreferenceV2 to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -415,7 +415,7 @@ export class AccountSettingUserPreferenceV2 extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/account_setting_user_preference_v2 databricks_account_setting_user_preference_v2} Resource
+  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/resources/account_setting_user_preference_v2 databricks_account_setting_user_preference_v2} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -426,7 +426,7 @@ export class AccountSettingUserPreferenceV2 extends cdktn.TerraformResource {
       terraformResourceType: 'databricks_account_setting_user_preference_v2',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '1.128.0',
+        providerVersion: '1.129.0',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,

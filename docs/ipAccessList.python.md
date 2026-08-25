@@ -4,7 +4,7 @@
 
 ### IpAccessList <a name="IpAccessList" id="@cdktn/provider-databricks.ipAccessList.IpAccessList"></a>
 
-Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/ip_access_list databricks_ip_access_list}.
+Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/resources/ip_access_list databricks_ip_access_list}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.ipAccessList.IpAccessList.Initializer"></a>
 
@@ -41,11 +41,11 @@ ipAccessList.IpAccessList(
 | <code><a href="#@cdktn/provider-databricks.ipAccessList.IpAccessList.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.ipAccessList.IpAccessList.Initializer.parameter.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.ipAccessList.IpAccessList.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-databricks.ipAccessList.IpAccessList.Initializer.parameter.ipAddresses">ip_addresses</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/ip_access_list#ip_addresses IpAccessList#ip_addresses}. |
-| <code><a href="#@cdktn/provider-databricks.ipAccessList.IpAccessList.Initializer.parameter.label">label</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/ip_access_list#label IpAccessList#label}. |
-| <code><a href="#@cdktn/provider-databricks.ipAccessList.IpAccessList.Initializer.parameter.listType">list_type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/ip_access_list#list_type IpAccessList#list_type}. |
-| <code><a href="#@cdktn/provider-databricks.ipAccessList.IpAccessList.Initializer.parameter.enabled">enabled</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/ip_access_list#enabled IpAccessList#enabled}. |
-| <code><a href="#@cdktn/provider-databricks.ipAccessList.IpAccessList.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/ip_access_list#id IpAccessList#id}. |
+| <code><a href="#@cdktn/provider-databricks.ipAccessList.IpAccessList.Initializer.parameter.ipAddresses">ip_addresses</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/resources/ip_access_list#ip_addresses IpAccessList#ip_addresses}. |
+| <code><a href="#@cdktn/provider-databricks.ipAccessList.IpAccessList.Initializer.parameter.label">label</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/resources/ip_access_list#label IpAccessList#label}. |
+| <code><a href="#@cdktn/provider-databricks.ipAccessList.IpAccessList.Initializer.parameter.listType">list_type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/resources/ip_access_list#list_type IpAccessList#list_type}. |
+| <code><a href="#@cdktn/provider-databricks.ipAccessList.IpAccessList.Initializer.parameter.enabled">enabled</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/resources/ip_access_list#enabled IpAccessList#enabled}. |
+| <code><a href="#@cdktn/provider-databricks.ipAccessList.IpAccessList.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/resources/ip_access_list#id IpAccessList#id}. |
 | <code><a href="#@cdktn/provider-databricks.ipAccessList.IpAccessList.Initializer.parameter.providerConfig">provider_config</a></code> | <code><a href="#@cdktn/provider-databricks.ipAccessList.IpAccessListProviderConfig">IpAccessListProviderConfig</a></code> | provider_config block. |
 
 ---
@@ -114,7 +114,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/ip_access_list#ip_addresses IpAccessList#ip_addresses}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/resources/ip_access_list#ip_addresses IpAccessList#ip_addresses}.
 
 ---
 
@@ -122,7 +122,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/ip_access_list#label IpAccessList#label}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/resources/ip_access_list#label IpAccessList#label}.
 
 ---
 
@@ -130,7 +130,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/ip_access_list#list_type IpAccessList#list_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/resources/ip_access_list#list_type IpAccessList#list_type}.
 
 ---
 
@@ -138,7 +138,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* bool | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/ip_access_list#enabled IpAccessList#enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/resources/ip_access_list#enabled IpAccessList#enabled}.
 
 ---
 
@@ -146,7 +146,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/ip_access_list#id IpAccessList#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/resources/ip_access_list#id IpAccessList#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -159,7 +159,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 provider_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/ip_access_list#provider_config IpAccessList#provider_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/resources/ip_access_list#provider_config IpAccessList#provider_config}
 
 ---
 
@@ -558,7 +558,7 @@ def put_provider_config(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/ip_access_list#workspace_id IpAccessList#workspace_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/resources/ip_access_list#workspace_id IpAccessList#workspace_id}.
 
 ---
 
@@ -694,7 +694,7 @@ The construct id used in the generated config for the IpAccessList to import.
 
 The id of the existing IpAccessList that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/ip_access_list#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/resources/ip_access_list#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1056,11 +1056,11 @@ ipAccessList.IpAccessListConfig(
 | <code><a href="#@cdktn/provider-databricks.ipAccessList.IpAccessListConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.ipAccessList.IpAccessListConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.ipAccessList.IpAccessListConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-databricks.ipAccessList.IpAccessListConfig.property.ipAddresses">ip_addresses</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/ip_access_list#ip_addresses IpAccessList#ip_addresses}. |
-| <code><a href="#@cdktn/provider-databricks.ipAccessList.IpAccessListConfig.property.label">label</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/ip_access_list#label IpAccessList#label}. |
-| <code><a href="#@cdktn/provider-databricks.ipAccessList.IpAccessListConfig.property.listType">list_type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/ip_access_list#list_type IpAccessList#list_type}. |
-| <code><a href="#@cdktn/provider-databricks.ipAccessList.IpAccessListConfig.property.enabled">enabled</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/ip_access_list#enabled IpAccessList#enabled}. |
-| <code><a href="#@cdktn/provider-databricks.ipAccessList.IpAccessListConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/ip_access_list#id IpAccessList#id}. |
+| <code><a href="#@cdktn/provider-databricks.ipAccessList.IpAccessListConfig.property.ipAddresses">ip_addresses</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/resources/ip_access_list#ip_addresses IpAccessList#ip_addresses}. |
+| <code><a href="#@cdktn/provider-databricks.ipAccessList.IpAccessListConfig.property.label">label</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/resources/ip_access_list#label IpAccessList#label}. |
+| <code><a href="#@cdktn/provider-databricks.ipAccessList.IpAccessListConfig.property.listType">list_type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/resources/ip_access_list#list_type IpAccessList#list_type}. |
+| <code><a href="#@cdktn/provider-databricks.ipAccessList.IpAccessListConfig.property.enabled">enabled</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/resources/ip_access_list#enabled IpAccessList#enabled}. |
+| <code><a href="#@cdktn/provider-databricks.ipAccessList.IpAccessListConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/resources/ip_access_list#id IpAccessList#id}. |
 | <code><a href="#@cdktn/provider-databricks.ipAccessList.IpAccessListConfig.property.providerConfig">provider_config</a></code> | <code><a href="#@cdktn/provider-databricks.ipAccessList.IpAccessListProviderConfig">IpAccessListProviderConfig</a></code> | provider_config block. |
 
 ---
@@ -1143,7 +1143,7 @@ ip_addresses: typing.List[str]
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/ip_access_list#ip_addresses IpAccessList#ip_addresses}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/resources/ip_access_list#ip_addresses IpAccessList#ip_addresses}.
 
 ---
 
@@ -1155,7 +1155,7 @@ label: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/ip_access_list#label IpAccessList#label}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/resources/ip_access_list#label IpAccessList#label}.
 
 ---
 
@@ -1167,7 +1167,7 @@ list_type: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/ip_access_list#list_type IpAccessList#list_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/resources/ip_access_list#list_type IpAccessList#list_type}.
 
 ---
 
@@ -1179,7 +1179,7 @@ enabled: bool | IResolvable
 
 - *Type:* bool | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/ip_access_list#enabled IpAccessList#enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/resources/ip_access_list#enabled IpAccessList#enabled}.
 
 ---
 
@@ -1191,7 +1191,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/ip_access_list#id IpAccessList#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/resources/ip_access_list#id IpAccessList#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1208,7 +1208,7 @@ provider_config: IpAccessListProviderConfig
 
 provider_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/ip_access_list#provider_config IpAccessList#provider_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/resources/ip_access_list#provider_config IpAccessList#provider_config}
 
 ---
 
@@ -1228,7 +1228,7 @@ ipAccessList.IpAccessListProviderConfig(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.ipAccessList.IpAccessListProviderConfig.property.workspaceId">workspace_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/ip_access_list#workspace_id IpAccessList#workspace_id}. |
+| <code><a href="#@cdktn/provider-databricks.ipAccessList.IpAccessListProviderConfig.property.workspaceId">workspace_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/resources/ip_access_list#workspace_id IpAccessList#workspace_id}. |
 
 ---
 
@@ -1240,7 +1240,7 @@ workspace_id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/ip_access_list#workspace_id IpAccessList#workspace_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/resources/ip_access_list#workspace_id IpAccessList#workspace_id}.
 
 ---
 

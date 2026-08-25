@@ -4,7 +4,7 @@
 
 ### AccountIamUserV2 <a name="AccountIamUserV2" id="@cdktn/provider-databricks.accountIamUserV2.AccountIamUserV2"></a>
 
-Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/account_iam_user_v2 databricks_account_iam_user_v2}.
+Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/resources/account_iam_user_v2 databricks_account_iam_user_v2}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.accountIamUserV2.AccountIamUserV2.Initializer"></a>
 
@@ -509,7 +509,7 @@ The construct id used in the generated config for the AccountIamUserV2 to import
 
 The id of the existing AccountIamUserV2 that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/account_iam_user_v2#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/resources/account_iam_user_v2#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -847,10 +847,10 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/accounti
 | <code><a href="#@cdktn/provider-databricks.accountIamUserV2.AccountIamUserV2Config.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.accountIamUserV2.AccountIamUserV2Config.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.accountIamUserV2.AccountIamUserV2Config.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-databricks.accountIamUserV2.AccountIamUserV2Config.property.accountUserStatus">AccountUserStatus</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/account_iam_user_v2#account_user_status AccountIamUserV2#account_user_status}. |
-| <code><a href="#@cdktn/provider-databricks.accountIamUserV2.AccountIamUserV2Config.property.fullName">FullName</a></code> | <code><a href="#@cdktn/provider-databricks.accountIamUserV2.AccountIamUserV2FullName">AccountIamUserV2FullName</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/account_iam_user_v2#full_name AccountIamUserV2#full_name}. |
-| <code><a href="#@cdktn/provider-databricks.accountIamUserV2.AccountIamUserV2Config.property.username">Username</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/account_iam_user_v2#username AccountIamUserV2#username}. |
-| <code><a href="#@cdktn/provider-databricks.accountIamUserV2.AccountIamUserV2Config.property.externalId">ExternalId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/account_iam_user_v2#external_id AccountIamUserV2#external_id}. |
+| <code><a href="#@cdktn/provider-databricks.accountIamUserV2.AccountIamUserV2Config.property.accountUserStatus">AccountUserStatus</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/resources/account_iam_user_v2#account_user_status AccountIamUserV2#account_user_status}. |
+| <code><a href="#@cdktn/provider-databricks.accountIamUserV2.AccountIamUserV2Config.property.fullName">FullName</a></code> | <code><a href="#@cdktn/provider-databricks.accountIamUserV2.AccountIamUserV2FullName">AccountIamUserV2FullName</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/resources/account_iam_user_v2#full_name AccountIamUserV2#full_name}. |
+| <code><a href="#@cdktn/provider-databricks.accountIamUserV2.AccountIamUserV2Config.property.username">Username</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/resources/account_iam_user_v2#username AccountIamUserV2#username}. |
+| <code><a href="#@cdktn/provider-databricks.accountIamUserV2.AccountIamUserV2Config.property.externalId">ExternalId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/resources/account_iam_user_v2#external_id AccountIamUserV2#external_id}. |
 
 ---
 
@@ -932,7 +932,7 @@ AccountUserStatus *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/account_iam_user_v2#account_user_status AccountIamUserV2#account_user_status}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/resources/account_iam_user_v2#account_user_status AccountIamUserV2#account_user_status}.
 
 ---
 
@@ -944,7 +944,7 @@ FullName AccountIamUserV2FullName
 
 - *Type:* <a href="#@cdktn/provider-databricks.accountIamUserV2.AccountIamUserV2FullName">AccountIamUserV2FullName</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/account_iam_user_v2#full_name AccountIamUserV2#full_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/resources/account_iam_user_v2#full_name AccountIamUserV2#full_name}.
 
 ---
 
@@ -956,7 +956,7 @@ Username *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/account_iam_user_v2#username AccountIamUserV2#username}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/resources/account_iam_user_v2#username AccountIamUserV2#username}.
 
 ---
 
@@ -968,7 +968,7 @@ ExternalId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/account_iam_user_v2#external_id AccountIamUserV2#external_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/resources/account_iam_user_v2#external_id AccountIamUserV2#external_id}.
 
 ---
 
@@ -989,8 +989,8 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/accounti
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.accountIamUserV2.AccountIamUserV2FullName.property.familyName">FamilyName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/account_iam_user_v2#family_name AccountIamUserV2#family_name}. |
-| <code><a href="#@cdktn/provider-databricks.accountIamUserV2.AccountIamUserV2FullName.property.givenName">GivenName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/account_iam_user_v2#given_name AccountIamUserV2#given_name}. |
+| <code><a href="#@cdktn/provider-databricks.accountIamUserV2.AccountIamUserV2FullName.property.familyName">FamilyName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/resources/account_iam_user_v2#family_name AccountIamUserV2#family_name}. |
+| <code><a href="#@cdktn/provider-databricks.accountIamUserV2.AccountIamUserV2FullName.property.givenName">GivenName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/resources/account_iam_user_v2#given_name AccountIamUserV2#given_name}. |
 
 ---
 
@@ -1002,7 +1002,7 @@ FamilyName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/account_iam_user_v2#family_name AccountIamUserV2#family_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/resources/account_iam_user_v2#family_name AccountIamUserV2#family_name}.
 
 ---
 
@@ -1014,7 +1014,7 @@ GivenName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/account_iam_user_v2#given_name AccountIamUserV2#given_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/resources/account_iam_user_v2#given_name AccountIamUserV2#given_name}.
 
 ---
 

@@ -4,7 +4,7 @@
 
 ### AccountIamGroupV2 <a name="AccountIamGroupV2" id="@cdktn/provider-databricks.accountIamGroupV2.AccountIamGroupV2"></a>
 
-Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/account_iam_group_v2 databricks_account_iam_group_v2}.
+Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/resources/account_iam_group_v2 databricks_account_iam_group_v2}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.accountIamGroupV2.AccountIamGroupV2.Initializer"></a>
 
@@ -35,8 +35,8 @@ AccountIamGroupV2.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktn/provider-databricks.accountIamGroupV2.AccountIamGroupV2.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>io.cdktn.cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.accountIamGroupV2.AccountIamGroupV2.Initializer.parameter.provider">provider</a></code> | <code>io.cdktn.cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.accountIamGroupV2.AccountIamGroupV2.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktn/provider-databricks.accountIamGroupV2.AccountIamGroupV2.Initializer.parameter.externalId">externalId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/account_iam_group_v2#external_id AccountIamGroupV2#external_id}. |
-| <code><a href="#@cdktn/provider-databricks.accountIamGroupV2.AccountIamGroupV2.Initializer.parameter.groupName">groupName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/account_iam_group_v2#group_name AccountIamGroupV2#group_name}. |
+| <code><a href="#@cdktn/provider-databricks.accountIamGroupV2.AccountIamGroupV2.Initializer.parameter.externalId">externalId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/resources/account_iam_group_v2#external_id AccountIamGroupV2#external_id}. |
+| <code><a href="#@cdktn/provider-databricks.accountIamGroupV2.AccountIamGroupV2.Initializer.parameter.groupName">groupName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/resources/account_iam_group_v2#group_name AccountIamGroupV2#group_name}. |
 
 ---
 
@@ -104,7 +104,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/account_iam_group_v2#external_id AccountIamGroupV2#external_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/resources/account_iam_group_v2#external_id AccountIamGroupV2#external_id}.
 
 ---
 
@@ -112,7 +112,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/account_iam_group_v2#group_name AccountIamGroupV2#group_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/resources/account_iam_group_v2#group_name AccountIamGroupV2#group_name}.
 
 ---
 
@@ -575,7 +575,7 @@ The construct id used in the generated config for the AccountIamGroupV2 to impor
 
 The id of the existing AccountIamGroupV2 that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/account_iam_group_v2#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/resources/account_iam_group_v2#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -867,8 +867,8 @@ AccountIamGroupV2Config.builder()
 | <code><a href="#@cdktn/provider-databricks.accountIamGroupV2.AccountIamGroupV2Config.property.lifecycle">lifecycle</a></code> | <code>io.cdktn.cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.accountIamGroupV2.AccountIamGroupV2Config.property.provider">provider</a></code> | <code>io.cdktn.cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.accountIamGroupV2.AccountIamGroupV2Config.property.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktn/provider-databricks.accountIamGroupV2.AccountIamGroupV2Config.property.externalId">externalId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/account_iam_group_v2#external_id AccountIamGroupV2#external_id}. |
-| <code><a href="#@cdktn/provider-databricks.accountIamGroupV2.AccountIamGroupV2Config.property.groupName">groupName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/account_iam_group_v2#group_name AccountIamGroupV2#group_name}. |
+| <code><a href="#@cdktn/provider-databricks.accountIamGroupV2.AccountIamGroupV2Config.property.externalId">externalId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/resources/account_iam_group_v2#external_id AccountIamGroupV2#external_id}. |
+| <code><a href="#@cdktn/provider-databricks.accountIamGroupV2.AccountIamGroupV2Config.property.groupName">groupName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/resources/account_iam_group_v2#group_name AccountIamGroupV2#group_name}. |
 
 ---
 
@@ -950,7 +950,7 @@ public java.lang.String getExternalId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/account_iam_group_v2#external_id AccountIamGroupV2#external_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/resources/account_iam_group_v2#external_id AccountIamGroupV2#external_id}.
 
 ---
 
@@ -962,7 +962,7 @@ public java.lang.String getGroupName();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/account_iam_group_v2#group_name AccountIamGroupV2#group_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/resources/account_iam_group_v2#group_name AccountIamGroupV2#group_name}.
 
 ---
 

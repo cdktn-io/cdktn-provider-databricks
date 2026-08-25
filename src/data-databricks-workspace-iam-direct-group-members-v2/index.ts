@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/data-sources/workspace_iam_direct_group_members_v2
+// https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/data-sources/workspace_iam_direct_group_members_v2
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,21 +13,21 @@ import * as cdktn from 'cdktn';
 
 export interface DataDatabricksWorkspaceIamDirectGroupMembersV2Config extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/data-sources/workspace_iam_direct_group_members_v2#group_id DataDatabricksWorkspaceIamDirectGroupMembersV2#group_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/data-sources/workspace_iam_direct_group_members_v2#group_id DataDatabricksWorkspaceIamDirectGroupMembersV2#group_id}
   */
   readonly groupId: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/data-sources/workspace_iam_direct_group_members_v2#page_size DataDatabricksWorkspaceIamDirectGroupMembersV2#page_size}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/data-sources/workspace_iam_direct_group_members_v2#page_size DataDatabricksWorkspaceIamDirectGroupMembersV2#page_size}
   */
   readonly pageSize?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/data-sources/workspace_iam_direct_group_members_v2#provider_config DataDatabricksWorkspaceIamDirectGroupMembersV2#provider_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/data-sources/workspace_iam_direct_group_members_v2#provider_config DataDatabricksWorkspaceIamDirectGroupMembersV2#provider_config}
   */
   readonly providerConfig?: DataDatabricksWorkspaceIamDirectGroupMembersV2ProviderConfig;
 }
 export interface DataDatabricksWorkspaceIamDirectGroupMembersV2DirectGroupMembersProviderConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/data-sources/workspace_iam_direct_group_members_v2#workspace_id DataDatabricksWorkspaceIamDirectGroupMembersV2#workspace_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/data-sources/workspace_iam_direct_group_members_v2#workspace_id DataDatabricksWorkspaceIamDirectGroupMembersV2#workspace_id}
   */
   readonly workspaceId?: string;
 }
@@ -121,15 +121,15 @@ export class DataDatabricksWorkspaceIamDirectGroupMembersV2DirectGroupMembersPro
 }
 export interface DataDatabricksWorkspaceIamDirectGroupMembersV2DirectGroupMembers {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/data-sources/workspace_iam_direct_group_members_v2#group_id DataDatabricksWorkspaceIamDirectGroupMembersV2#group_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/data-sources/workspace_iam_direct_group_members_v2#group_id DataDatabricksWorkspaceIamDirectGroupMembersV2#group_id}
   */
   readonly groupId: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/data-sources/workspace_iam_direct_group_members_v2#principal_id DataDatabricksWorkspaceIamDirectGroupMembersV2#principal_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/data-sources/workspace_iam_direct_group_members_v2#principal_id DataDatabricksWorkspaceIamDirectGroupMembersV2#principal_id}
   */
   readonly principalId: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/data-sources/workspace_iam_direct_group_members_v2#provider_config DataDatabricksWorkspaceIamDirectGroupMembersV2#provider_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/data-sources/workspace_iam_direct_group_members_v2#provider_config DataDatabricksWorkspaceIamDirectGroupMembersV2#provider_config}
   */
   readonly providerConfig?: DataDatabricksWorkspaceIamDirectGroupMembersV2DirectGroupMembersProviderConfig;
 }
@@ -307,7 +307,7 @@ export class DataDatabricksWorkspaceIamDirectGroupMembersV2DirectGroupMembersLis
 }
 export interface DataDatabricksWorkspaceIamDirectGroupMembersV2ProviderConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/data-sources/workspace_iam_direct_group_members_v2#workspace_id DataDatabricksWorkspaceIamDirectGroupMembersV2#workspace_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/data-sources/workspace_iam_direct_group_members_v2#workspace_id DataDatabricksWorkspaceIamDirectGroupMembersV2#workspace_id}
   */
   readonly workspaceId?: string;
 }
@@ -401,7 +401,7 @@ export class DataDatabricksWorkspaceIamDirectGroupMembersV2ProviderConfigOutputR
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/data-sources/workspace_iam_direct_group_members_v2 databricks_workspace_iam_direct_group_members_v2}
+* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/data-sources/workspace_iam_direct_group_members_v2 databricks_workspace_iam_direct_group_members_v2}
 */
 export class DataDatabricksWorkspaceIamDirectGroupMembersV2 extends cdktn.TerraformDataSource {
 
@@ -417,7 +417,7 @@ export class DataDatabricksWorkspaceIamDirectGroupMembersV2 extends cdktn.Terraf
   * Generates CDKTN code for importing a DataDatabricksWorkspaceIamDirectGroupMembersV2 resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataDatabricksWorkspaceIamDirectGroupMembersV2 to import
-  * @param importFromId The id of the existing DataDatabricksWorkspaceIamDirectGroupMembersV2 that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/data-sources/workspace_iam_direct_group_members_v2#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataDatabricksWorkspaceIamDirectGroupMembersV2 that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/data-sources/workspace_iam_direct_group_members_v2#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataDatabricksWorkspaceIamDirectGroupMembersV2 to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -429,7 +429,7 @@ export class DataDatabricksWorkspaceIamDirectGroupMembersV2 extends cdktn.Terraf
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/data-sources/workspace_iam_direct_group_members_v2 databricks_workspace_iam_direct_group_members_v2} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/data-sources/workspace_iam_direct_group_members_v2 databricks_workspace_iam_direct_group_members_v2} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -440,7 +440,7 @@ export class DataDatabricksWorkspaceIamDirectGroupMembersV2 extends cdktn.Terraf
       terraformResourceType: 'databricks_workspace_iam_direct_group_members_v2',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '1.128.0',
+        providerVersion: '1.129.0',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,

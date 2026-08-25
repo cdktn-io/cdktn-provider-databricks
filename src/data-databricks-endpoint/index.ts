@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/data-sources/endpoint
+// https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/data-sources/endpoint
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,13 +13,13 @@ import * as cdktn from 'cdktn';
 
 export interface DataDatabricksEndpointConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/data-sources/endpoint#name DataDatabricksEndpoint#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/data-sources/endpoint#name DataDatabricksEndpoint#name}
   */
   readonly name: string;
 }
 export interface DataDatabricksEndpointAwsVpcEndpointInfo {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/data-sources/endpoint#aws_vpc_endpoint_id DataDatabricksEndpoint#aws_vpc_endpoint_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/data-sources/endpoint#aws_vpc_endpoint_id DataDatabricksEndpoint#aws_vpc_endpoint_id}
   */
   readonly awsVpcEndpointId: string;
 }
@@ -110,11 +110,11 @@ export class DataDatabricksEndpointAwsVpcEndpointInfoOutputReference extends cdk
 }
 export interface DataDatabricksEndpointAzurePrivateEndpointInfo {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/data-sources/endpoint#private_endpoint_name DataDatabricksEndpoint#private_endpoint_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/data-sources/endpoint#private_endpoint_name DataDatabricksEndpoint#private_endpoint_name}
   */
   readonly privateEndpointName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/data-sources/endpoint#private_endpoint_resource_guid DataDatabricksEndpoint#private_endpoint_resource_guid}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/data-sources/endpoint#private_endpoint_resource_guid DataDatabricksEndpoint#private_endpoint_resource_guid}
   */
   readonly privateEndpointResourceGuid: string;
 }
@@ -231,15 +231,15 @@ export class DataDatabricksEndpointAzurePrivateEndpointInfoOutputReference exten
 }
 export interface DataDatabricksEndpointGcpPscEndpointInfo {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/data-sources/endpoint#endpoint_region DataDatabricksEndpoint#endpoint_region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/data-sources/endpoint#endpoint_region DataDatabricksEndpoint#endpoint_region}
   */
   readonly endpointRegion: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/data-sources/endpoint#project_id DataDatabricksEndpoint#project_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/data-sources/endpoint#project_id DataDatabricksEndpoint#project_id}
   */
   readonly projectId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/data-sources/endpoint#psc_endpoint DataDatabricksEndpoint#psc_endpoint}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/data-sources/endpoint#psc_endpoint DataDatabricksEndpoint#psc_endpoint}
   */
   readonly pscEndpoint: string;
 }
@@ -382,7 +382,7 @@ export class DataDatabricksEndpointGcpPscEndpointInfoOutputReference extends cdk
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/data-sources/endpoint databricks_endpoint}
+* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/data-sources/endpoint databricks_endpoint}
 */
 export class DataDatabricksEndpoint extends cdktn.TerraformDataSource {
 
@@ -398,7 +398,7 @@ export class DataDatabricksEndpoint extends cdktn.TerraformDataSource {
   * Generates CDKTN code for importing a DataDatabricksEndpoint resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataDatabricksEndpoint to import
-  * @param importFromId The id of the existing DataDatabricksEndpoint that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/data-sources/endpoint#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataDatabricksEndpoint that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/data-sources/endpoint#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataDatabricksEndpoint to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -410,7 +410,7 @@ export class DataDatabricksEndpoint extends cdktn.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/data-sources/endpoint databricks_endpoint} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/data-sources/endpoint databricks_endpoint} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -421,7 +421,7 @@ export class DataDatabricksEndpoint extends cdktn.TerraformDataSource {
       terraformResourceType: 'databricks_endpoint',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '1.128.0',
+        providerVersion: '1.129.0',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,

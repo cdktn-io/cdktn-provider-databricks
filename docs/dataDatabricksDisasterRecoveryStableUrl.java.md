@@ -4,7 +4,7 @@
 
 ### DataDatabricksDisasterRecoveryStableUrl <a name="DataDatabricksDisasterRecoveryStableUrl" id="@cdktn/provider-databricks.dataDatabricksDisasterRecoveryStableUrl.DataDatabricksDisasterRecoveryStableUrl"></a>
 
-Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/data-sources/disaster_recovery_stable_url databricks_disaster_recovery_stable_url}.
+Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/data-sources/disaster_recovery_stable_url databricks_disaster_recovery_stable_url}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksDisasterRecoveryStableUrl.DataDatabricksDisasterRecoveryStableUrl.Initializer"></a>
 
@@ -34,7 +34,7 @@ DataDatabricksDisasterRecoveryStableUrl.Builder.create(Construct scope, java.lan
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksDisasterRecoveryStableUrl.DataDatabricksDisasterRecoveryStableUrl.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>io.cdktn.cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksDisasterRecoveryStableUrl.DataDatabricksDisasterRecoveryStableUrl.Initializer.parameter.provider">provider</a></code> | <code>io.cdktn.cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksDisasterRecoveryStableUrl.DataDatabricksDisasterRecoveryStableUrl.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksDisasterRecoveryStableUrl.DataDatabricksDisasterRecoveryStableUrl.Initializer.parameter.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/data-sources/disaster_recovery_stable_url#name DataDatabricksDisasterRecoveryStableUrl#name}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksDisasterRecoveryStableUrl.DataDatabricksDisasterRecoveryStableUrl.Initializer.parameter.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/data-sources/disaster_recovery_stable_url#name DataDatabricksDisasterRecoveryStableUrl#name}. |
 
 ---
 
@@ -102,7 +102,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/data-sources/disaster_recovery_stable_url#name DataDatabricksDisasterRecoveryStableUrl#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/data-sources/disaster_recovery_stable_url#name DataDatabricksDisasterRecoveryStableUrl#name}.
 
 ---
 
@@ -447,7 +447,7 @@ The construct id used in the generated config for the DataDatabricksDisasterReco
 
 The id of the existing DataDatabricksDisasterRecoveryStableUrl that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/data-sources/disaster_recovery_stable_url#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/data-sources/disaster_recovery_stable_url#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -727,7 +727,7 @@ DataDatabricksDisasterRecoveryStableUrlConfig.builder()
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksDisasterRecoveryStableUrl.DataDatabricksDisasterRecoveryStableUrlConfig.property.lifecycle">lifecycle</a></code> | <code>io.cdktn.cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksDisasterRecoveryStableUrl.DataDatabricksDisasterRecoveryStableUrlConfig.property.provider">provider</a></code> | <code>io.cdktn.cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksDisasterRecoveryStableUrl.DataDatabricksDisasterRecoveryStableUrlConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksDisasterRecoveryStableUrl.DataDatabricksDisasterRecoveryStableUrlConfig.property.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/data-sources/disaster_recovery_stable_url#name DataDatabricksDisasterRecoveryStableUrl#name}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksDisasterRecoveryStableUrl.DataDatabricksDisasterRecoveryStableUrlConfig.property.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/data-sources/disaster_recovery_stable_url#name DataDatabricksDisasterRecoveryStableUrl#name}. |
 
 ---
 
@@ -809,7 +809,7 @@ public java.lang.String getName();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/data-sources/disaster_recovery_stable_url#name DataDatabricksDisasterRecoveryStableUrl#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/data-sources/disaster_recovery_stable_url#name DataDatabricksDisasterRecoveryStableUrl#name}.
 
 ---
 

@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/repo
+// https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/resources/repo
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,56 +13,56 @@ import * as cdktn from 'cdktn';
 
 export interface RepoConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/repo#branch Repo#branch}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/resources/repo#branch Repo#branch}
   */
   readonly branch?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/repo#commit_hash Repo#commit_hash}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/resources/repo#commit_hash Repo#commit_hash}
   */
   readonly commitHash?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/repo#git_credential_id Repo#git_credential_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/resources/repo#git_credential_id Repo#git_credential_id}
   */
   readonly gitCredentialId?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/repo#git_provider Repo#git_provider}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/resources/repo#git_provider Repo#git_provider}
   */
   readonly gitProvider?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/repo#id Repo#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/resources/repo#id Repo#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/repo#path Repo#path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/resources/repo#path Repo#path}
   */
   readonly path?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/repo#tag Repo#tag}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/resources/repo#tag Repo#tag}
   */
   readonly tag?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/repo#url Repo#url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/resources/repo#url Repo#url}
   */
   readonly url: string;
   /**
   * provider_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/repo#provider_config Repo#provider_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/resources/repo#provider_config Repo#provider_config}
   */
   readonly providerConfig?: RepoProviderConfig;
   /**
   * sparse_checkout block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/repo#sparse_checkout Repo#sparse_checkout}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/resources/repo#sparse_checkout Repo#sparse_checkout}
   */
   readonly sparseCheckout?: RepoSparseCheckout;
 }
 export interface RepoProviderConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/repo#workspace_id Repo#workspace_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/resources/repo#workspace_id Repo#workspace_id}
   */
   readonly workspaceId?: string;
 }
@@ -146,7 +146,7 @@ export class RepoProviderConfigOutputReference extends cdktn.ComplexObject {
 }
 export interface RepoSparseCheckout {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/repo#patterns Repo#patterns}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/resources/repo#patterns Repo#patterns}
   */
   readonly patterns: string[];
 }
@@ -227,7 +227,7 @@ export class RepoSparseCheckoutOutputReference extends cdktn.ComplexObject {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/repo databricks_repo}
+* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/resources/repo databricks_repo}
 */
 export class Repo extends cdktn.TerraformResource {
 
@@ -243,7 +243,7 @@ export class Repo extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a Repo resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the Repo to import
-  * @param importFromId The id of the existing Repo that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/repo#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing Repo that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/resources/repo#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the Repo to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -255,7 +255,7 @@ export class Repo extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/resources/repo databricks_repo} Resource
+  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/resources/repo databricks_repo} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -266,7 +266,7 @@ export class Repo extends cdktn.TerraformResource {
       terraformResourceType: 'databricks_repo',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '1.128.0',
+        providerVersion: '1.129.0',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,

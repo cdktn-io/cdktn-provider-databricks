@@ -4,7 +4,7 @@
 
 ### DataDatabricksDisasterRecoveryStableUrl <a name="DataDatabricksDisasterRecoveryStableUrl" id="@cdktn/provider-databricks.dataDatabricksDisasterRecoveryStableUrl.DataDatabricksDisasterRecoveryStableUrl"></a>
 
-Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/data-sources/disaster_recovery_stable_url databricks_disaster_recovery_stable_url}.
+Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/data-sources/disaster_recovery_stable_url databricks_disaster_recovery_stable_url}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksDisasterRecoveryStableUrl.DataDatabricksDisasterRecoveryStableUrl.Initializer"></a>
 
@@ -387,7 +387,7 @@ The construct id used in the generated config for the DataDatabricksDisasterReco
 
 The id of the existing DataDatabricksDisasterRecoveryStableUrl that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/data-sources/disaster_recovery_stable_url#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/data-sources/disaster_recovery_stable_url#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -658,7 +658,7 @@ const dataDatabricksDisasterRecoveryStableUrlConfig: dataDatabricksDisasterRecov
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksDisasterRecoveryStableUrl.DataDatabricksDisasterRecoveryStableUrlConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksDisasterRecoveryStableUrl.DataDatabricksDisasterRecoveryStableUrlConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksDisasterRecoveryStableUrl.DataDatabricksDisasterRecoveryStableUrlConfig.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksDisasterRecoveryStableUrl.DataDatabricksDisasterRecoveryStableUrlConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/data-sources/disaster_recovery_stable_url#name DataDatabricksDisasterRecoveryStableUrl#name}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksDisasterRecoveryStableUrl.DataDatabricksDisasterRecoveryStableUrlConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/data-sources/disaster_recovery_stable_url#name DataDatabricksDisasterRecoveryStableUrl#name}. |
 
 ---
 
@@ -740,7 +740,7 @@ public readonly name: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.128.0/docs/data-sources/disaster_recovery_stable_url#name DataDatabricksDisasterRecoveryStableUrl#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/data-sources/disaster_recovery_stable_url#name DataDatabricksDisasterRecoveryStableUrl#name}.
 
 ---
 
