@@ -1,3 +1,3 @@
 # `databricks_dashboard`
 
-Refer to the Terraform Registry for docs: [`databricks_dashboard`](https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/resources/dashboard).
+Refer to the Terraform Registry for docs: [`databricks_dashboard`](https://registry.terraform.io/providers/databricks/databricks/1.130.0/docs/resources/dashboard).

@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/resources/group_instance_profile
+// https://registry.terraform.io/providers/databricks/databricks/1.130.0/docs/resources/group_instance_profile
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,34 +15,34 @@ export interface GroupInstanceProfileConfig extends cdktn.TerraformMetaArguments
   /**
   * Specifies whether to use account-level or workspace-level API. Valid values are `account` and `workspace`. When not set, the API level is inferred from the provider host.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/resources/group_instance_profile#api GroupInstanceProfile#api}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.130.0/docs/resources/group_instance_profile#api GroupInstanceProfile#api}
   */
   readonly api?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/resources/group_instance_profile#group_id GroupInstanceProfile#group_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.130.0/docs/resources/group_instance_profile#group_id GroupInstanceProfile#group_id}
   */
   readonly groupId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/resources/group_instance_profile#id GroupInstanceProfile#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.130.0/docs/resources/group_instance_profile#id GroupInstanceProfile#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/resources/group_instance_profile#instance_profile_id GroupInstanceProfile#instance_profile_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.130.0/docs/resources/group_instance_profile#instance_profile_id GroupInstanceProfile#instance_profile_id}
   */
   readonly instanceProfileId: string;
   /**
   * provider_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/resources/group_instance_profile#provider_config GroupInstanceProfile#provider_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.130.0/docs/resources/group_instance_profile#provider_config GroupInstanceProfile#provider_config}
   */
   readonly providerConfig?: GroupInstanceProfileProviderConfig;
 }
 export interface GroupInstanceProfileProviderConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/resources/group_instance_profile#workspace_id GroupInstanceProfile#workspace_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.130.0/docs/resources/group_instance_profile#workspace_id GroupInstanceProfile#workspace_id}
   */
   readonly workspaceId?: string;
 }
@@ -126,7 +126,7 @@ export class GroupInstanceProfileProviderConfigOutputReference extends cdktn.Com
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/resources/group_instance_profile databricks_group_instance_profile}
+* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.130.0/docs/resources/group_instance_profile databricks_group_instance_profile}
 */
 export class GroupInstanceProfile extends cdktn.TerraformResource {
 
@@ -142,7 +142,7 @@ export class GroupInstanceProfile extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a GroupInstanceProfile resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the GroupInstanceProfile to import
-  * @param importFromId The id of the existing GroupInstanceProfile that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/resources/group_instance_profile#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing GroupInstanceProfile that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.130.0/docs/resources/group_instance_profile#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the GroupInstanceProfile to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -154,7 +154,7 @@ export class GroupInstanceProfile extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/resources/group_instance_profile databricks_group_instance_profile} Resource
+  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.130.0/docs/resources/group_instance_profile databricks_group_instance_profile} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -165,7 +165,7 @@ export class GroupInstanceProfile extends cdktn.TerraformResource {
       terraformResourceType: 'databricks_group_instance_profile',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '1.129.0',
+        providerVersion: '1.130.0',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,

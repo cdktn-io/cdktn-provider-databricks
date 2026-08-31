@@ -4,7 +4,7 @@
 
 ### DataDatabricksSchemas <a name="DataDatabricksSchemas" id="@cdktn/provider-databricks.dataDatabricksSchemas.DataDatabricksSchemas"></a>
 
-Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/data-sources/schemas databricks_schemas}.
+Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.130.0/docs/data-sources/schemas databricks_schemas}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksSchemas.DataDatabricksSchemas.Initializer"></a>
 
@@ -421,7 +421,7 @@ The construct id used in the generated config for the DataDatabricksSchemas to i
 
 The id of the existing DataDatabricksSchemas that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/data-sources/schemas#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.130.0/docs/data-sources/schemas#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -703,9 +703,9 @@ const dataDatabricksSchemasConfig: dataDatabricksSchemas.DataDatabricksSchemasCo
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksSchemas.DataDatabricksSchemasConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksSchemas.DataDatabricksSchemasConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksSchemas.DataDatabricksSchemasConfig.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksSchemas.DataDatabricksSchemasConfig.property.catalogName">catalogName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/data-sources/schemas#catalog_name DataDatabricksSchemas#catalog_name}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksSchemas.DataDatabricksSchemasConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/data-sources/schemas#id DataDatabricksSchemas#id}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksSchemas.DataDatabricksSchemasConfig.property.ids">ids</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/data-sources/schemas#ids DataDatabricksSchemas#ids}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksSchemas.DataDatabricksSchemasConfig.property.catalogName">catalogName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.130.0/docs/data-sources/schemas#catalog_name DataDatabricksSchemas#catalog_name}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksSchemas.DataDatabricksSchemasConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.130.0/docs/data-sources/schemas#id DataDatabricksSchemas#id}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksSchemas.DataDatabricksSchemasConfig.property.ids">ids</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.130.0/docs/data-sources/schemas#ids DataDatabricksSchemas#ids}. |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksSchemas.DataDatabricksSchemasConfig.property.providerConfig">providerConfig</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksSchemas.DataDatabricksSchemasProviderConfig">DataDatabricksSchemasProviderConfig</a></code> | provider_config block. |
 
 ---
@@ -788,7 +788,7 @@ public readonly catalogName: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/data-sources/schemas#catalog_name DataDatabricksSchemas#catalog_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.130.0/docs/data-sources/schemas#catalog_name DataDatabricksSchemas#catalog_name}.
 
 ---
 
@@ -800,7 +800,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/data-sources/schemas#id DataDatabricksSchemas#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.130.0/docs/data-sources/schemas#id DataDatabricksSchemas#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -815,7 +815,7 @@ public readonly ids: string[];
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/data-sources/schemas#ids DataDatabricksSchemas#ids}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.130.0/docs/data-sources/schemas#ids DataDatabricksSchemas#ids}.
 
 ---
 
@@ -829,7 +829,7 @@ public readonly providerConfig: DataDatabricksSchemasProviderConfig;
 
 provider_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/data-sources/schemas#provider_config DataDatabricksSchemas#provider_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.130.0/docs/data-sources/schemas#provider_config DataDatabricksSchemas#provider_config}
 
 ---
 
@@ -847,7 +847,7 @@ const dataDatabricksSchemasProviderConfig: dataDatabricksSchemas.DataDatabricksS
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksSchemas.DataDatabricksSchemasProviderConfig.property.workspaceId">workspaceId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/data-sources/schemas#workspace_id DataDatabricksSchemas#workspace_id}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksSchemas.DataDatabricksSchemasProviderConfig.property.workspaceId">workspaceId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.130.0/docs/data-sources/schemas#workspace_id DataDatabricksSchemas#workspace_id}. |
 
 ---
 
@@ -859,7 +859,7 @@ public readonly workspaceId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/data-sources/schemas#workspace_id DataDatabricksSchemas#workspace_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.130.0/docs/data-sources/schemas#workspace_id DataDatabricksSchemas#workspace_id}.
 
 ---
 

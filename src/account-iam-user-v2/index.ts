@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/resources/account_iam_user_v2
+// https://registry.terraform.io/providers/databricks/databricks/1.130.0/docs/resources/account_iam_user_v2
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,29 +13,29 @@ import * as cdktn from 'cdktn';
 
 export interface AccountIamUserV2Config extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/resources/account_iam_user_v2#account_user_status AccountIamUserV2#account_user_status}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.130.0/docs/resources/account_iam_user_v2#account_user_status AccountIamUserV2#account_user_status}
   */
   readonly accountUserStatus: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/resources/account_iam_user_v2#external_id AccountIamUserV2#external_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.130.0/docs/resources/account_iam_user_v2#external_id AccountIamUserV2#external_id}
   */
   readonly externalId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/resources/account_iam_user_v2#full_name AccountIamUserV2#full_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.130.0/docs/resources/account_iam_user_v2#full_name AccountIamUserV2#full_name}
   */
   readonly fullName: AccountIamUserV2FullName;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/resources/account_iam_user_v2#username AccountIamUserV2#username}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.130.0/docs/resources/account_iam_user_v2#username AccountIamUserV2#username}
   */
   readonly username: string;
 }
 export interface AccountIamUserV2FullName {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/resources/account_iam_user_v2#family_name AccountIamUserV2#family_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.130.0/docs/resources/account_iam_user_v2#family_name AccountIamUserV2#family_name}
   */
   readonly familyName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/resources/account_iam_user_v2#given_name AccountIamUserV2#given_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.130.0/docs/resources/account_iam_user_v2#given_name AccountIamUserV2#given_name}
   */
   readonly givenName?: string;
 }
@@ -158,7 +158,7 @@ export class AccountIamUserV2FullNameOutputReference extends cdktn.ComplexObject
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/resources/account_iam_user_v2 databricks_account_iam_user_v2}
+* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.130.0/docs/resources/account_iam_user_v2 databricks_account_iam_user_v2}
 */
 export class AccountIamUserV2 extends cdktn.TerraformResource {
 
@@ -174,7 +174,7 @@ export class AccountIamUserV2 extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a AccountIamUserV2 resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the AccountIamUserV2 to import
-  * @param importFromId The id of the existing AccountIamUserV2 that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/resources/account_iam_user_v2#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing AccountIamUserV2 that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.130.0/docs/resources/account_iam_user_v2#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the AccountIamUserV2 to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -186,7 +186,7 @@ export class AccountIamUserV2 extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/resources/account_iam_user_v2 databricks_account_iam_user_v2} Resource
+  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.130.0/docs/resources/account_iam_user_v2 databricks_account_iam_user_v2} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -197,7 +197,7 @@ export class AccountIamUserV2 extends cdktn.TerraformResource {
       terraformResourceType: 'databricks_account_iam_user_v2',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '1.129.0',
+        providerVersion: '1.130.0',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,

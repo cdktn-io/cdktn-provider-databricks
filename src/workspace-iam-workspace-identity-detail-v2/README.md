@@ -1,3 +1,3 @@
 # `databricks_workspace_iam_workspace_identity_detail_v2`
 
-Refer to the Terraform Registry for docs: [`databricks_workspace_iam_workspace_identity_detail_v2`](https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/resources/workspace_iam_workspace_identity_detail_v2).
+Refer to the Terraform Registry for docs: [`databricks_workspace_iam_workspace_identity_detail_v2`](https://registry.terraform.io/providers/databricks/databricks/1.130.0/docs/resources/workspace_iam_workspace_identity_detail_v2).
