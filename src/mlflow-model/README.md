@@ -1,3 +1,3 @@
 # `databricks_mlflow_model`
 
-Refer to the Terraform Registry for docs: [`databricks_mlflow_model`](https://registry.terraform.io/providers/databricks/databricks/1.129.0/docs/resources/mlflow_model).
+Refer to the Terraform Registry for docs: [`databricks_mlflow_model`](https://registry.terraform.io/providers/databricks/databricks/1.130.0/docs/resources/mlflow_model).
