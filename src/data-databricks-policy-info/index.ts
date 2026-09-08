@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/databricks/databricks/1.130.0/docs/data-sources/policy_info
+// https://registry.terraform.io/providers/databricks/databricks/1.131.0/docs/data-sources/policy_info
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,31 +13,468 @@ import * as cdktn from 'cdktn';
 
 export interface DataDatabricksPolicyInfoConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.130.0/docs/data-sources/policy_info#name DataDatabricksPolicyInfo#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.131.0/docs/data-sources/policy_info#name DataDatabricksPolicyInfo#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.130.0/docs/data-sources/policy_info#on_securable_fullname DataDatabricksPolicyInfo#on_securable_fullname}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.131.0/docs/data-sources/policy_info#on_securable_fullname DataDatabricksPolicyInfo#on_securable_fullname}
   */
   readonly onSecurableFullname: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.130.0/docs/data-sources/policy_info#on_securable_type DataDatabricksPolicyInfo#on_securable_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.131.0/docs/data-sources/policy_info#on_securable_type DataDatabricksPolicyInfo#on_securable_type}
   */
   readonly onSecurableType: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.130.0/docs/data-sources/policy_info#provider_config DataDatabricksPolicyInfo#provider_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.131.0/docs/data-sources/policy_info#provider_config DataDatabricksPolicyInfo#provider_config}
   */
   readonly providerConfig?: DataDatabricksPolicyInfoProviderConfig;
 }
+export interface DataDatabricksPolicyInfoColumnMaskUsingFunctionArgExpressionTagIntrospectionColumnTagValue {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.131.0/docs/data-sources/policy_info#column_alias DataDatabricksPolicyInfo#column_alias}
+  */
+  readonly columnAlias: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.131.0/docs/data-sources/policy_info#tag_key DataDatabricksPolicyInfo#tag_key}
+  */
+  readonly tagKey: string;
+}
+
+export function dataDatabricksPolicyInfoColumnMaskUsingFunctionArgExpressionTagIntrospectionColumnTagValueToTerraform(struct?: DataDatabricksPolicyInfoColumnMaskUsingFunctionArgExpressionTagIntrospectionColumnTagValue | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  return {
+    column_alias: cdktn.stringToTerraform(struct!.columnAlias),
+    tag_key: cdktn.stringToTerraform(struct!.tagKey),
+  }
+}
+
+
+export function dataDatabricksPolicyInfoColumnMaskUsingFunctionArgExpressionTagIntrospectionColumnTagValueToHclTerraform(struct?: DataDatabricksPolicyInfoColumnMaskUsingFunctionArgExpressionTagIntrospectionColumnTagValue | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  const attrs = {
+    column_alias: {
+      value: cdktn.stringToHclTerraform(struct!.columnAlias),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    tag_key: {
+      value: cdktn.stringToHclTerraform(struct!.tagKey),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class DataDatabricksPolicyInfoColumnMaskUsingFunctionArgExpressionTagIntrospectionColumnTagValueOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktn.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false);
+  }
+
+  public get internalValue(): DataDatabricksPolicyInfoColumnMaskUsingFunctionArgExpressionTagIntrospectionColumnTagValue | cdktn.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._columnAlias !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.columnAlias = this._columnAlias;
+    }
+    if (this._tagKey !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.tagKey = this._tagKey;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataDatabricksPolicyInfoColumnMaskUsingFunctionArgExpressionTagIntrospectionColumnTagValue | cdktn.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._columnAlias = undefined;
+      this._tagKey = undefined;
+    }
+    else if (cdktn.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._columnAlias = value.columnAlias;
+      this._tagKey = value.tagKey;
+    }
+  }
+
+  // column_alias - computed: true, optional: false, required: true
+  private _columnAlias?: string; 
+  public get columnAlias() {
+    return this.getStringAttribute('column_alias');
+  }
+  public set columnAlias(value: string) {
+    this._columnAlias = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get columnAliasInput() {
+    return this._columnAlias;
+  }
+
+  // tag_key - computed: true, optional: false, required: true
+  private _tagKey?: string; 
+  public get tagKey() {
+    return this.getStringAttribute('tag_key');
+  }
+  public set tagKey(value: string) {
+    this._tagKey = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tagKeyInput() {
+    return this._tagKey;
+  }
+}
+export interface DataDatabricksPolicyInfoColumnMaskUsingFunctionArgExpressionTagIntrospectionTagValue {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.131.0/docs/data-sources/policy_info#tag_key DataDatabricksPolicyInfo#tag_key}
+  */
+  readonly tagKey: string;
+}
+
+export function dataDatabricksPolicyInfoColumnMaskUsingFunctionArgExpressionTagIntrospectionTagValueToTerraform(struct?: DataDatabricksPolicyInfoColumnMaskUsingFunctionArgExpressionTagIntrospectionTagValue | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  return {
+    tag_key: cdktn.stringToTerraform(struct!.tagKey),
+  }
+}
+
+
+export function dataDatabricksPolicyInfoColumnMaskUsingFunctionArgExpressionTagIntrospectionTagValueToHclTerraform(struct?: DataDatabricksPolicyInfoColumnMaskUsingFunctionArgExpressionTagIntrospectionTagValue | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  const attrs = {
+    tag_key: {
+      value: cdktn.stringToHclTerraform(struct!.tagKey),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class DataDatabricksPolicyInfoColumnMaskUsingFunctionArgExpressionTagIntrospectionTagValueOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktn.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false);
+  }
+
+  public get internalValue(): DataDatabricksPolicyInfoColumnMaskUsingFunctionArgExpressionTagIntrospectionTagValue | cdktn.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._tagKey !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.tagKey = this._tagKey;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataDatabricksPolicyInfoColumnMaskUsingFunctionArgExpressionTagIntrospectionTagValue | cdktn.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._tagKey = undefined;
+    }
+    else if (cdktn.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._tagKey = value.tagKey;
+    }
+  }
+
+  // tag_key - computed: true, optional: false, required: true
+  private _tagKey?: string; 
+  public get tagKey() {
+    return this.getStringAttribute('tag_key');
+  }
+  public set tagKey(value: string) {
+    this._tagKey = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tagKeyInput() {
+    return this._tagKey;
+  }
+}
+export interface DataDatabricksPolicyInfoColumnMaskUsingFunctionArgExpressionTagIntrospection {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.131.0/docs/data-sources/policy_info#column_tag_value DataDatabricksPolicyInfo#column_tag_value}
+  */
+  readonly columnTagValue?: DataDatabricksPolicyInfoColumnMaskUsingFunctionArgExpressionTagIntrospectionColumnTagValue;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.131.0/docs/data-sources/policy_info#tag_value DataDatabricksPolicyInfo#tag_value}
+  */
+  readonly tagValue?: DataDatabricksPolicyInfoColumnMaskUsingFunctionArgExpressionTagIntrospectionTagValue;
+}
+
+export function dataDatabricksPolicyInfoColumnMaskUsingFunctionArgExpressionTagIntrospectionToTerraform(struct?: DataDatabricksPolicyInfoColumnMaskUsingFunctionArgExpressionTagIntrospection | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  return {
+    column_tag_value: dataDatabricksPolicyInfoColumnMaskUsingFunctionArgExpressionTagIntrospectionColumnTagValueToTerraform(struct!.columnTagValue),
+    tag_value: dataDatabricksPolicyInfoColumnMaskUsingFunctionArgExpressionTagIntrospectionTagValueToTerraform(struct!.tagValue),
+  }
+}
+
+
+export function dataDatabricksPolicyInfoColumnMaskUsingFunctionArgExpressionTagIntrospectionToHclTerraform(struct?: DataDatabricksPolicyInfoColumnMaskUsingFunctionArgExpressionTagIntrospection | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  const attrs = {
+    column_tag_value: {
+      value: dataDatabricksPolicyInfoColumnMaskUsingFunctionArgExpressionTagIntrospectionColumnTagValueToHclTerraform(struct!.columnTagValue),
+      isBlock: true,
+      type: "struct",
+      storageClassType: "DataDatabricksPolicyInfoColumnMaskUsingFunctionArgExpressionTagIntrospectionColumnTagValue",
+    },
+    tag_value: {
+      value: dataDatabricksPolicyInfoColumnMaskUsingFunctionArgExpressionTagIntrospectionTagValueToHclTerraform(struct!.tagValue),
+      isBlock: true,
+      type: "struct",
+      storageClassType: "DataDatabricksPolicyInfoColumnMaskUsingFunctionArgExpressionTagIntrospectionTagValue",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class DataDatabricksPolicyInfoColumnMaskUsingFunctionArgExpressionTagIntrospectionOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktn.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false);
+  }
+
+  public get internalValue(): DataDatabricksPolicyInfoColumnMaskUsingFunctionArgExpressionTagIntrospection | cdktn.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._columnTagValue?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.columnTagValue = this._columnTagValue?.internalValue;
+    }
+    if (this._tagValue?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.tagValue = this._tagValue?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataDatabricksPolicyInfoColumnMaskUsingFunctionArgExpressionTagIntrospection | cdktn.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._columnTagValue.internalValue = undefined;
+      this._tagValue.internalValue = undefined;
+    }
+    else if (cdktn.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._columnTagValue.internalValue = value.columnTagValue;
+      this._tagValue.internalValue = value.tagValue;
+    }
+  }
+
+  // column_tag_value - computed: true, optional: true, required: false
+  private _columnTagValue = new DataDatabricksPolicyInfoColumnMaskUsingFunctionArgExpressionTagIntrospectionColumnTagValueOutputReference(this, "column_tag_value");
+  public get columnTagValue() {
+    return this._columnTagValue;
+  }
+  public putColumnTagValue(value: DataDatabricksPolicyInfoColumnMaskUsingFunctionArgExpressionTagIntrospectionColumnTagValue) {
+    this._columnTagValue.internalValue = value;
+  }
+  public resetColumnTagValue() {
+    this._columnTagValue.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get columnTagValueInput() {
+    return this._columnTagValue.internalValue;
+  }
+
+  // tag_value - computed: true, optional: true, required: false
+  private _tagValue = new DataDatabricksPolicyInfoColumnMaskUsingFunctionArgExpressionTagIntrospectionTagValueOutputReference(this, "tag_value");
+  public get tagValue() {
+    return this._tagValue;
+  }
+  public putTagValue(value: DataDatabricksPolicyInfoColumnMaskUsingFunctionArgExpressionTagIntrospectionTagValue) {
+    this._tagValue.internalValue = value;
+  }
+  public resetTagValue() {
+    this._tagValue.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tagValueInput() {
+    return this._tagValue.internalValue;
+  }
+}
+export interface DataDatabricksPolicyInfoColumnMaskUsingFunctionArgExpression {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.131.0/docs/data-sources/policy_info#tag_introspection DataDatabricksPolicyInfo#tag_introspection}
+  */
+  readonly tagIntrospection?: DataDatabricksPolicyInfoColumnMaskUsingFunctionArgExpressionTagIntrospection;
+}
+
+export function dataDatabricksPolicyInfoColumnMaskUsingFunctionArgExpressionToTerraform(struct?: DataDatabricksPolicyInfoColumnMaskUsingFunctionArgExpression | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  return {
+    tag_introspection: dataDatabricksPolicyInfoColumnMaskUsingFunctionArgExpressionTagIntrospectionToTerraform(struct!.tagIntrospection),
+  }
+}
+
+
+export function dataDatabricksPolicyInfoColumnMaskUsingFunctionArgExpressionToHclTerraform(struct?: DataDatabricksPolicyInfoColumnMaskUsingFunctionArgExpression | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  const attrs = {
+    tag_introspection: {
+      value: dataDatabricksPolicyInfoColumnMaskUsingFunctionArgExpressionTagIntrospectionToHclTerraform(struct!.tagIntrospection),
+      isBlock: true,
+      type: "struct",
+      storageClassType: "DataDatabricksPolicyInfoColumnMaskUsingFunctionArgExpressionTagIntrospection",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class DataDatabricksPolicyInfoColumnMaskUsingFunctionArgExpressionOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktn.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false);
+  }
+
+  public get internalValue(): DataDatabricksPolicyInfoColumnMaskUsingFunctionArgExpression | cdktn.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._tagIntrospection?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.tagIntrospection = this._tagIntrospection?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataDatabricksPolicyInfoColumnMaskUsingFunctionArgExpression | cdktn.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._tagIntrospection.internalValue = undefined;
+    }
+    else if (cdktn.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._tagIntrospection.internalValue = value.tagIntrospection;
+    }
+  }
+
+  // tag_introspection - computed: true, optional: true, required: false
+  private _tagIntrospection = new DataDatabricksPolicyInfoColumnMaskUsingFunctionArgExpressionTagIntrospectionOutputReference(this, "tag_introspection");
+  public get tagIntrospection() {
+    return this._tagIntrospection;
+  }
+  public putTagIntrospection(value: DataDatabricksPolicyInfoColumnMaskUsingFunctionArgExpressionTagIntrospection) {
+    this._tagIntrospection.internalValue = value;
+  }
+  public resetTagIntrospection() {
+    this._tagIntrospection.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tagIntrospectionInput() {
+    return this._tagIntrospection.internalValue;
+  }
+}
 export interface DataDatabricksPolicyInfoColumnMaskUsing {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.130.0/docs/data-sources/policy_info#alias DataDatabricksPolicyInfo#alias}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.131.0/docs/data-sources/policy_info#alias DataDatabricksPolicyInfo#alias}
   */
   readonly alias?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.130.0/docs/data-sources/policy_info#constant DataDatabricksPolicyInfo#constant}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.131.0/docs/data-sources/policy_info#constant DataDatabricksPolicyInfo#constant}
   */
   readonly constant?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.131.0/docs/data-sources/policy_info#function_arg_expression DataDatabricksPolicyInfo#function_arg_expression}
+  */
+  readonly functionArgExpression?: DataDatabricksPolicyInfoColumnMaskUsingFunctionArgExpression;
 }
 
 export function dataDatabricksPolicyInfoColumnMaskUsingToTerraform(struct?: DataDatabricksPolicyInfoColumnMaskUsing | cdktn.IResolvable): any {
@@ -48,6 +485,7 @@ export function dataDatabricksPolicyInfoColumnMaskUsingToTerraform(struct?: Data
   return {
     alias: cdktn.stringToTerraform(struct!.alias),
     constant: cdktn.stringToTerraform(struct!.constant),
+    function_arg_expression: dataDatabricksPolicyInfoColumnMaskUsingFunctionArgExpressionToTerraform(struct!.functionArgExpression),
   }
 }
 
@@ -69,6 +507,12 @@ export function dataDatabricksPolicyInfoColumnMaskUsingToHclTerraform(struct?: D
       isBlock: false,
       type: "simple",
       storageClassType: "string",
+    },
+    function_arg_expression: {
+      value: dataDatabricksPolicyInfoColumnMaskUsingFunctionArgExpressionToHclTerraform(struct!.functionArgExpression),
+      isBlock: true,
+      type: "struct",
+      storageClassType: "DataDatabricksPolicyInfoColumnMaskUsingFunctionArgExpression",
     },
   };
 
@@ -104,6 +548,10 @@ export class DataDatabricksPolicyInfoColumnMaskUsingOutputReference extends cdkt
       hasAnyValues = true;
       internalValueResult.constant = this._constant;
     }
+    if (this._functionArgExpression?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.functionArgExpression = this._functionArgExpression?.internalValue;
+    }
     return hasAnyValues ? internalValueResult : undefined;
   }
 
@@ -113,6 +561,7 @@ export class DataDatabricksPolicyInfoColumnMaskUsingOutputReference extends cdkt
       this.resolvableValue = undefined;
       this._alias = undefined;
       this._constant = undefined;
+      this._functionArgExpression.internalValue = undefined;
     }
     else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
@@ -123,6 +572,7 @@ export class DataDatabricksPolicyInfoColumnMaskUsingOutputReference extends cdkt
       this.resolvableValue = undefined;
       this._alias = value.alias;
       this._constant = value.constant;
+      this._functionArgExpression.internalValue = value.functionArgExpression;
     }
   }
 
@@ -157,6 +607,22 @@ export class DataDatabricksPolicyInfoColumnMaskUsingOutputReference extends cdkt
   public get constantInput() {
     return this._constant;
   }
+
+  // function_arg_expression - computed: true, optional: true, required: false
+  private _functionArgExpression = new DataDatabricksPolicyInfoColumnMaskUsingFunctionArgExpressionOutputReference(this, "function_arg_expression");
+  public get functionArgExpression() {
+    return this._functionArgExpression;
+  }
+  public putFunctionArgExpression(value: DataDatabricksPolicyInfoColumnMaskUsingFunctionArgExpression) {
+    this._functionArgExpression.internalValue = value;
+  }
+  public resetFunctionArgExpression() {
+    this._functionArgExpression.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get functionArgExpressionInput() {
+    return this._functionArgExpression.internalValue;
+  }
 }
 
 export class DataDatabricksPolicyInfoColumnMaskUsingList extends cdktn.ComplexList {
@@ -180,15 +646,15 @@ export class DataDatabricksPolicyInfoColumnMaskUsingList extends cdktn.ComplexLi
 }
 export interface DataDatabricksPolicyInfoColumnMask {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.130.0/docs/data-sources/policy_info#function_name DataDatabricksPolicyInfo#function_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.131.0/docs/data-sources/policy_info#function_name DataDatabricksPolicyInfo#function_name}
   */
   readonly functionName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.130.0/docs/data-sources/policy_info#on_column DataDatabricksPolicyInfo#on_column}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.131.0/docs/data-sources/policy_info#on_column DataDatabricksPolicyInfo#on_column}
   */
   readonly onColumn: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.130.0/docs/data-sources/policy_info#using DataDatabricksPolicyInfo#using}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.131.0/docs/data-sources/policy_info#using DataDatabricksPolicyInfo#using}
   */
   readonly using?: DataDatabricksPolicyInfoColumnMaskUsing[] | cdktn.IResolvable;
 }
@@ -324,7 +790,7 @@ export class DataDatabricksPolicyInfoColumnMaskOutputReference extends cdktn.Com
 }
 export interface DataDatabricksPolicyInfoGrant {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.130.0/docs/data-sources/policy_info#privileges DataDatabricksPolicyInfo#privileges}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.131.0/docs/data-sources/policy_info#privileges DataDatabricksPolicyInfo#privileges}
   */
   readonly privileges: string[];
 }
@@ -405,11 +871,11 @@ export class DataDatabricksPolicyInfoGrantOutputReference extends cdktn.ComplexO
 }
 export interface DataDatabricksPolicyInfoMatchColumns {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.130.0/docs/data-sources/policy_info#alias DataDatabricksPolicyInfo#alias}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.131.0/docs/data-sources/policy_info#alias DataDatabricksPolicyInfo#alias}
   */
   readonly alias?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.130.0/docs/data-sources/policy_info#condition DataDatabricksPolicyInfo#condition}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.131.0/docs/data-sources/policy_info#condition DataDatabricksPolicyInfo#condition}
   */
   readonly condition?: string;
 }
@@ -544,7 +1010,7 @@ export class DataDatabricksPolicyInfoMatchColumnsList extends cdktn.ComplexList 
 }
 export interface DataDatabricksPolicyInfoProviderConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.130.0/docs/data-sources/policy_info#workspace_id DataDatabricksPolicyInfo#workspace_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.131.0/docs/data-sources/policy_info#workspace_id DataDatabricksPolicyInfo#workspace_id}
   */
   readonly workspaceId?: string;
 }
@@ -636,15 +1102,452 @@ export class DataDatabricksPolicyInfoProviderConfigOutputReference extends cdktn
     return this._workspaceId;
   }
 }
+export interface DataDatabricksPolicyInfoRowFilterUsingFunctionArgExpressionTagIntrospectionColumnTagValue {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.131.0/docs/data-sources/policy_info#column_alias DataDatabricksPolicyInfo#column_alias}
+  */
+  readonly columnAlias: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.131.0/docs/data-sources/policy_info#tag_key DataDatabricksPolicyInfo#tag_key}
+  */
+  readonly tagKey: string;
+}
+
+export function dataDatabricksPolicyInfoRowFilterUsingFunctionArgExpressionTagIntrospectionColumnTagValueToTerraform(struct?: DataDatabricksPolicyInfoRowFilterUsingFunctionArgExpressionTagIntrospectionColumnTagValue | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  return {
+    column_alias: cdktn.stringToTerraform(struct!.columnAlias),
+    tag_key: cdktn.stringToTerraform(struct!.tagKey),
+  }
+}
+
+
+export function dataDatabricksPolicyInfoRowFilterUsingFunctionArgExpressionTagIntrospectionColumnTagValueToHclTerraform(struct?: DataDatabricksPolicyInfoRowFilterUsingFunctionArgExpressionTagIntrospectionColumnTagValue | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  const attrs = {
+    column_alias: {
+      value: cdktn.stringToHclTerraform(struct!.columnAlias),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    tag_key: {
+      value: cdktn.stringToHclTerraform(struct!.tagKey),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class DataDatabricksPolicyInfoRowFilterUsingFunctionArgExpressionTagIntrospectionColumnTagValueOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktn.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false);
+  }
+
+  public get internalValue(): DataDatabricksPolicyInfoRowFilterUsingFunctionArgExpressionTagIntrospectionColumnTagValue | cdktn.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._columnAlias !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.columnAlias = this._columnAlias;
+    }
+    if (this._tagKey !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.tagKey = this._tagKey;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataDatabricksPolicyInfoRowFilterUsingFunctionArgExpressionTagIntrospectionColumnTagValue | cdktn.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._columnAlias = undefined;
+      this._tagKey = undefined;
+    }
+    else if (cdktn.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._columnAlias = value.columnAlias;
+      this._tagKey = value.tagKey;
+    }
+  }
+
+  // column_alias - computed: true, optional: false, required: true
+  private _columnAlias?: string; 
+  public get columnAlias() {
+    return this.getStringAttribute('column_alias');
+  }
+  public set columnAlias(value: string) {
+    this._columnAlias = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get columnAliasInput() {
+    return this._columnAlias;
+  }
+
+  // tag_key - computed: true, optional: false, required: true
+  private _tagKey?: string; 
+  public get tagKey() {
+    return this.getStringAttribute('tag_key');
+  }
+  public set tagKey(value: string) {
+    this._tagKey = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tagKeyInput() {
+    return this._tagKey;
+  }
+}
+export interface DataDatabricksPolicyInfoRowFilterUsingFunctionArgExpressionTagIntrospectionTagValue {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.131.0/docs/data-sources/policy_info#tag_key DataDatabricksPolicyInfo#tag_key}
+  */
+  readonly tagKey: string;
+}
+
+export function dataDatabricksPolicyInfoRowFilterUsingFunctionArgExpressionTagIntrospectionTagValueToTerraform(struct?: DataDatabricksPolicyInfoRowFilterUsingFunctionArgExpressionTagIntrospectionTagValue | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  return {
+    tag_key: cdktn.stringToTerraform(struct!.tagKey),
+  }
+}
+
+
+export function dataDatabricksPolicyInfoRowFilterUsingFunctionArgExpressionTagIntrospectionTagValueToHclTerraform(struct?: DataDatabricksPolicyInfoRowFilterUsingFunctionArgExpressionTagIntrospectionTagValue | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  const attrs = {
+    tag_key: {
+      value: cdktn.stringToHclTerraform(struct!.tagKey),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class DataDatabricksPolicyInfoRowFilterUsingFunctionArgExpressionTagIntrospectionTagValueOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktn.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false);
+  }
+
+  public get internalValue(): DataDatabricksPolicyInfoRowFilterUsingFunctionArgExpressionTagIntrospectionTagValue | cdktn.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._tagKey !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.tagKey = this._tagKey;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataDatabricksPolicyInfoRowFilterUsingFunctionArgExpressionTagIntrospectionTagValue | cdktn.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._tagKey = undefined;
+    }
+    else if (cdktn.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._tagKey = value.tagKey;
+    }
+  }
+
+  // tag_key - computed: true, optional: false, required: true
+  private _tagKey?: string; 
+  public get tagKey() {
+    return this.getStringAttribute('tag_key');
+  }
+  public set tagKey(value: string) {
+    this._tagKey = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tagKeyInput() {
+    return this._tagKey;
+  }
+}
+export interface DataDatabricksPolicyInfoRowFilterUsingFunctionArgExpressionTagIntrospection {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.131.0/docs/data-sources/policy_info#column_tag_value DataDatabricksPolicyInfo#column_tag_value}
+  */
+  readonly columnTagValue?: DataDatabricksPolicyInfoRowFilterUsingFunctionArgExpressionTagIntrospectionColumnTagValue;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.131.0/docs/data-sources/policy_info#tag_value DataDatabricksPolicyInfo#tag_value}
+  */
+  readonly tagValue?: DataDatabricksPolicyInfoRowFilterUsingFunctionArgExpressionTagIntrospectionTagValue;
+}
+
+export function dataDatabricksPolicyInfoRowFilterUsingFunctionArgExpressionTagIntrospectionToTerraform(struct?: DataDatabricksPolicyInfoRowFilterUsingFunctionArgExpressionTagIntrospection | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  return {
+    column_tag_value: dataDatabricksPolicyInfoRowFilterUsingFunctionArgExpressionTagIntrospectionColumnTagValueToTerraform(struct!.columnTagValue),
+    tag_value: dataDatabricksPolicyInfoRowFilterUsingFunctionArgExpressionTagIntrospectionTagValueToTerraform(struct!.tagValue),
+  }
+}
+
+
+export function dataDatabricksPolicyInfoRowFilterUsingFunctionArgExpressionTagIntrospectionToHclTerraform(struct?: DataDatabricksPolicyInfoRowFilterUsingFunctionArgExpressionTagIntrospection | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  const attrs = {
+    column_tag_value: {
+      value: dataDatabricksPolicyInfoRowFilterUsingFunctionArgExpressionTagIntrospectionColumnTagValueToHclTerraform(struct!.columnTagValue),
+      isBlock: true,
+      type: "struct",
+      storageClassType: "DataDatabricksPolicyInfoRowFilterUsingFunctionArgExpressionTagIntrospectionColumnTagValue",
+    },
+    tag_value: {
+      value: dataDatabricksPolicyInfoRowFilterUsingFunctionArgExpressionTagIntrospectionTagValueToHclTerraform(struct!.tagValue),
+      isBlock: true,
+      type: "struct",
+      storageClassType: "DataDatabricksPolicyInfoRowFilterUsingFunctionArgExpressionTagIntrospectionTagValue",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class DataDatabricksPolicyInfoRowFilterUsingFunctionArgExpressionTagIntrospectionOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktn.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false);
+  }
+
+  public get internalValue(): DataDatabricksPolicyInfoRowFilterUsingFunctionArgExpressionTagIntrospection | cdktn.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._columnTagValue?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.columnTagValue = this._columnTagValue?.internalValue;
+    }
+    if (this._tagValue?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.tagValue = this._tagValue?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataDatabricksPolicyInfoRowFilterUsingFunctionArgExpressionTagIntrospection | cdktn.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._columnTagValue.internalValue = undefined;
+      this._tagValue.internalValue = undefined;
+    }
+    else if (cdktn.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._columnTagValue.internalValue = value.columnTagValue;
+      this._tagValue.internalValue = value.tagValue;
+    }
+  }
+
+  // column_tag_value - computed: true, optional: true, required: false
+  private _columnTagValue = new DataDatabricksPolicyInfoRowFilterUsingFunctionArgExpressionTagIntrospectionColumnTagValueOutputReference(this, "column_tag_value");
+  public get columnTagValue() {
+    return this._columnTagValue;
+  }
+  public putColumnTagValue(value: DataDatabricksPolicyInfoRowFilterUsingFunctionArgExpressionTagIntrospectionColumnTagValue) {
+    this._columnTagValue.internalValue = value;
+  }
+  public resetColumnTagValue() {
+    this._columnTagValue.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get columnTagValueInput() {
+    return this._columnTagValue.internalValue;
+  }
+
+  // tag_value - computed: true, optional: true, required: false
+  private _tagValue = new DataDatabricksPolicyInfoRowFilterUsingFunctionArgExpressionTagIntrospectionTagValueOutputReference(this, "tag_value");
+  public get tagValue() {
+    return this._tagValue;
+  }
+  public putTagValue(value: DataDatabricksPolicyInfoRowFilterUsingFunctionArgExpressionTagIntrospectionTagValue) {
+    this._tagValue.internalValue = value;
+  }
+  public resetTagValue() {
+    this._tagValue.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tagValueInput() {
+    return this._tagValue.internalValue;
+  }
+}
+export interface DataDatabricksPolicyInfoRowFilterUsingFunctionArgExpression {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.131.0/docs/data-sources/policy_info#tag_introspection DataDatabricksPolicyInfo#tag_introspection}
+  */
+  readonly tagIntrospection?: DataDatabricksPolicyInfoRowFilterUsingFunctionArgExpressionTagIntrospection;
+}
+
+export function dataDatabricksPolicyInfoRowFilterUsingFunctionArgExpressionToTerraform(struct?: DataDatabricksPolicyInfoRowFilterUsingFunctionArgExpression | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  return {
+    tag_introspection: dataDatabricksPolicyInfoRowFilterUsingFunctionArgExpressionTagIntrospectionToTerraform(struct!.tagIntrospection),
+  }
+}
+
+
+export function dataDatabricksPolicyInfoRowFilterUsingFunctionArgExpressionToHclTerraform(struct?: DataDatabricksPolicyInfoRowFilterUsingFunctionArgExpression | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  const attrs = {
+    tag_introspection: {
+      value: dataDatabricksPolicyInfoRowFilterUsingFunctionArgExpressionTagIntrospectionToHclTerraform(struct!.tagIntrospection),
+      isBlock: true,
+      type: "struct",
+      storageClassType: "DataDatabricksPolicyInfoRowFilterUsingFunctionArgExpressionTagIntrospection",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class DataDatabricksPolicyInfoRowFilterUsingFunctionArgExpressionOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktn.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false);
+  }
+
+  public get internalValue(): DataDatabricksPolicyInfoRowFilterUsingFunctionArgExpression | cdktn.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._tagIntrospection?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.tagIntrospection = this._tagIntrospection?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataDatabricksPolicyInfoRowFilterUsingFunctionArgExpression | cdktn.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._tagIntrospection.internalValue = undefined;
+    }
+    else if (cdktn.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._tagIntrospection.internalValue = value.tagIntrospection;
+    }
+  }
+
+  // tag_introspection - computed: true, optional: true, required: false
+  private _tagIntrospection = new DataDatabricksPolicyInfoRowFilterUsingFunctionArgExpressionTagIntrospectionOutputReference(this, "tag_introspection");
+  public get tagIntrospection() {
+    return this._tagIntrospection;
+  }
+  public putTagIntrospection(value: DataDatabricksPolicyInfoRowFilterUsingFunctionArgExpressionTagIntrospection) {
+    this._tagIntrospection.internalValue = value;
+  }
+  public resetTagIntrospection() {
+    this._tagIntrospection.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tagIntrospectionInput() {
+    return this._tagIntrospection.internalValue;
+  }
+}
 export interface DataDatabricksPolicyInfoRowFilterUsing {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.130.0/docs/data-sources/policy_info#alias DataDatabricksPolicyInfo#alias}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.131.0/docs/data-sources/policy_info#alias DataDatabricksPolicyInfo#alias}
   */
   readonly alias?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.130.0/docs/data-sources/policy_info#constant DataDatabricksPolicyInfo#constant}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.131.0/docs/data-sources/policy_info#constant DataDatabricksPolicyInfo#constant}
   */
   readonly constant?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.131.0/docs/data-sources/policy_info#function_arg_expression DataDatabricksPolicyInfo#function_arg_expression}
+  */
+  readonly functionArgExpression?: DataDatabricksPolicyInfoRowFilterUsingFunctionArgExpression;
 }
 
 export function dataDatabricksPolicyInfoRowFilterUsingToTerraform(struct?: DataDatabricksPolicyInfoRowFilterUsing | cdktn.IResolvable): any {
@@ -655,6 +1558,7 @@ export function dataDatabricksPolicyInfoRowFilterUsingToTerraform(struct?: DataD
   return {
     alias: cdktn.stringToTerraform(struct!.alias),
     constant: cdktn.stringToTerraform(struct!.constant),
+    function_arg_expression: dataDatabricksPolicyInfoRowFilterUsingFunctionArgExpressionToTerraform(struct!.functionArgExpression),
   }
 }
 
@@ -676,6 +1580,12 @@ export function dataDatabricksPolicyInfoRowFilterUsingToHclTerraform(struct?: Da
       isBlock: false,
       type: "simple",
       storageClassType: "string",
+    },
+    function_arg_expression: {
+      value: dataDatabricksPolicyInfoRowFilterUsingFunctionArgExpressionToHclTerraform(struct!.functionArgExpression),
+      isBlock: true,
+      type: "struct",
+      storageClassType: "DataDatabricksPolicyInfoRowFilterUsingFunctionArgExpression",
     },
   };
 
@@ -711,6 +1621,10 @@ export class DataDatabricksPolicyInfoRowFilterUsingOutputReference extends cdktn
       hasAnyValues = true;
       internalValueResult.constant = this._constant;
     }
+    if (this._functionArgExpression?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.functionArgExpression = this._functionArgExpression?.internalValue;
+    }
     return hasAnyValues ? internalValueResult : undefined;
   }
 
@@ -720,6 +1634,7 @@ export class DataDatabricksPolicyInfoRowFilterUsingOutputReference extends cdktn
       this.resolvableValue = undefined;
       this._alias = undefined;
       this._constant = undefined;
+      this._functionArgExpression.internalValue = undefined;
     }
     else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
@@ -730,6 +1645,7 @@ export class DataDatabricksPolicyInfoRowFilterUsingOutputReference extends cdktn
       this.resolvableValue = undefined;
       this._alias = value.alias;
       this._constant = value.constant;
+      this._functionArgExpression.internalValue = value.functionArgExpression;
     }
   }
 
@@ -764,6 +1680,22 @@ export class DataDatabricksPolicyInfoRowFilterUsingOutputReference extends cdktn
   public get constantInput() {
     return this._constant;
   }
+
+  // function_arg_expression - computed: true, optional: true, required: false
+  private _functionArgExpression = new DataDatabricksPolicyInfoRowFilterUsingFunctionArgExpressionOutputReference(this, "function_arg_expression");
+  public get functionArgExpression() {
+    return this._functionArgExpression;
+  }
+  public putFunctionArgExpression(value: DataDatabricksPolicyInfoRowFilterUsingFunctionArgExpression) {
+    this._functionArgExpression.internalValue = value;
+  }
+  public resetFunctionArgExpression() {
+    this._functionArgExpression.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get functionArgExpressionInput() {
+    return this._functionArgExpression.internalValue;
+  }
 }
 
 export class DataDatabricksPolicyInfoRowFilterUsingList extends cdktn.ComplexList {
@@ -787,11 +1719,11 @@ export class DataDatabricksPolicyInfoRowFilterUsingList extends cdktn.ComplexLis
 }
 export interface DataDatabricksPolicyInfoRowFilter {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.130.0/docs/data-sources/policy_info#function_name DataDatabricksPolicyInfo#function_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.131.0/docs/data-sources/policy_info#function_name DataDatabricksPolicyInfo#function_name}
   */
   readonly functionName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.130.0/docs/data-sources/policy_info#using DataDatabricksPolicyInfo#using}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.131.0/docs/data-sources/policy_info#using DataDatabricksPolicyInfo#using}
   */
   readonly using?: DataDatabricksPolicyInfoRowFilterUsing[] | cdktn.IResolvable;
 }
@@ -901,7 +1833,7 @@ export class DataDatabricksPolicyInfoRowFilterOutputReference extends cdktn.Comp
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.130.0/docs/data-sources/policy_info databricks_policy_info}
+* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.131.0/docs/data-sources/policy_info databricks_policy_info}
 */
 export class DataDatabricksPolicyInfo extends cdktn.TerraformDataSource {
 
@@ -917,7 +1849,7 @@ export class DataDatabricksPolicyInfo extends cdktn.TerraformDataSource {
   * Generates CDKTN code for importing a DataDatabricksPolicyInfo resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataDatabricksPolicyInfo to import
-  * @param importFromId The id of the existing DataDatabricksPolicyInfo that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.130.0/docs/data-sources/policy_info#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataDatabricksPolicyInfo that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.131.0/docs/data-sources/policy_info#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataDatabricksPolicyInfo to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -929,7 +1861,7 @@ export class DataDatabricksPolicyInfo extends cdktn.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.130.0/docs/data-sources/policy_info databricks_policy_info} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.131.0/docs/data-sources/policy_info databricks_policy_info} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -940,7 +1872,7 @@ export class DataDatabricksPolicyInfo extends cdktn.TerraformDataSource {
       terraformResourceType: 'databricks_policy_info',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '1.130.0',
+        providerVersion: '1.131.0',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,

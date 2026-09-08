@@ -124,6 +124,7 @@ Object.defineProperty(exports, 'postgresDatabase', { get: function () { return r
 Object.defineProperty(exports, 'postgresEndpoint', { get: function () { return require('./postgres-endpoint'); } });
 Object.defineProperty(exports, 'postgresProject', { get: function () { return require('./postgres-project'); } });
 Object.defineProperty(exports, 'postgresRole', { get: function () { return require('./postgres-role'); } });
+Object.defineProperty(exports, 'postgresSnapshotSchedule', { get: function () { return require('./postgres-snapshot-schedule'); } });
 Object.defineProperty(exports, 'postgresSyncedTable', { get: function () { return require('./postgres-synced-table'); } });
 Object.defineProperty(exports, 'providerResource', { get: function () { return require('./provider-resource'); } });
 Object.defineProperty(exports, 'qualityMonitor', { get: function () { return require('./quality-monitor'); } });
@@ -183,6 +184,9 @@ Object.defineProperty(exports, 'dataDatabricksAccountFederationPolicies', { get:
 Object.defineProperty(exports, 'dataDatabricksAccountFederationPolicy', { get: function () { return require('./data-databricks-account-federation-policy'); } });
 Object.defineProperty(exports, 'dataDatabricksAccountIamDirectGroupMemberV2', { get: function () { return require('./data-databricks-account-iam-direct-group-member-v2'); } });
 Object.defineProperty(exports, 'dataDatabricksAccountIamDirectGroupMembersV2', { get: function () { return require('./data-databricks-account-iam-direct-group-members-v2'); } });
+Object.defineProperty(exports, 'dataDatabricksAccountIamExternalGroupV2', { get: function () { return require('./data-databricks-account-iam-external-group-v2'); } });
+Object.defineProperty(exports, 'dataDatabricksAccountIamExternalServicePrincipalV2', { get: function () { return require('./data-databricks-account-iam-external-service-principal-v2'); } });
+Object.defineProperty(exports, 'dataDatabricksAccountIamExternalUserV2', { get: function () { return require('./data-databricks-account-iam-external-user-v2'); } });
 Object.defineProperty(exports, 'dataDatabricksAccountIamGroupV2', { get: function () { return require('./data-databricks-account-iam-group-v2'); } });
 Object.defineProperty(exports, 'dataDatabricksAccountIamGroupsV2', { get: function () { return require('./data-databricks-account-iam-groups-v2'); } });
 Object.defineProperty(exports, 'dataDatabricksAccountIamServicePrincipalV2', { get: function () { return require('./data-databricks-account-iam-service-principal-v2'); } });
@@ -311,6 +315,7 @@ Object.defineProperty(exports, 'dataDatabricksPostgresProject', { get: function 
 Object.defineProperty(exports, 'dataDatabricksPostgresProjects', { get: function () { return require('./data-databricks-postgres-projects'); } });
 Object.defineProperty(exports, 'dataDatabricksPostgresRole', { get: function () { return require('./data-databricks-postgres-role'); } });
 Object.defineProperty(exports, 'dataDatabricksPostgresRoles', { get: function () { return require('./data-databricks-postgres-roles'); } });
+Object.defineProperty(exports, 'dataDatabricksPostgresSnapshotSchedule', { get: function () { return require('./data-databricks-postgres-snapshot-schedule'); } });
 Object.defineProperty(exports, 'dataDatabricksPostgresSyncedTable', { get: function () { return require('./data-databricks-postgres-synced-table'); } });
 Object.defineProperty(exports, 'dataDatabricksQualityMonitorV2', { get: function () { return require('./data-databricks-quality-monitor-v2'); } });
 Object.defineProperty(exports, 'dataDatabricksQualityMonitorsV2', { get: function () { return require('./data-databricks-quality-monitors-v2'); } });
@@ -353,6 +358,9 @@ Object.defineProperty(exports, 'dataDatabricksWorkspaceEntityTagAssignment', { g
 Object.defineProperty(exports, 'dataDatabricksWorkspaceEntityTagAssignments', { get: function () { return require('./data-databricks-workspace-entity-tag-assignments'); } });
 Object.defineProperty(exports, 'dataDatabricksWorkspaceIamDirectGroupMemberV2', { get: function () { return require('./data-databricks-workspace-iam-direct-group-member-v2'); } });
 Object.defineProperty(exports, 'dataDatabricksWorkspaceIamDirectGroupMembersV2', { get: function () { return require('./data-databricks-workspace-iam-direct-group-members-v2'); } });
+Object.defineProperty(exports, 'dataDatabricksWorkspaceIamExternalGroupV2', { get: function () { return require('./data-databricks-workspace-iam-external-group-v2'); } });
+Object.defineProperty(exports, 'dataDatabricksWorkspaceIamExternalServicePrincipalV2', { get: function () { return require('./data-databricks-workspace-iam-external-service-principal-v2'); } });
+Object.defineProperty(exports, 'dataDatabricksWorkspaceIamExternalUserV2', { get: function () { return require('./data-databricks-workspace-iam-external-user-v2'); } });
 Object.defineProperty(exports, 'dataDatabricksWorkspaceIamGroupV2', { get: function () { return require('./data-databricks-workspace-iam-group-v2'); } });
 Object.defineProperty(exports, 'dataDatabricksWorkspaceIamGroupsV2', { get: function () { return require('./data-databricks-workspace-iam-groups-v2'); } });
 Object.defineProperty(exports, 'dataDatabricksWorkspaceIamServicePrincipalV2', { get: function () { return require('./data-databricks-workspace-iam-service-principal-v2'); } });

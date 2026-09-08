@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/databricks/databricks/1.130.0/docs/resources/feature_engineering_kafka_config
+// https://registry.terraform.io/providers/databricks/databricks/1.131.0/docs/resources/feature_engineering_kafka_config
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,49 +13,49 @@ import * as cdktn from 'cdktn';
 
 export interface FeatureEngineeringKafkaConfigConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.130.0/docs/resources/feature_engineering_kafka_config#auth_config FeatureEngineeringKafkaConfig#auth_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.131.0/docs/resources/feature_engineering_kafka_config#auth_config FeatureEngineeringKafkaConfig#auth_config}
   */
   readonly authConfig: FeatureEngineeringKafkaConfigAuthConfig;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.130.0/docs/resources/feature_engineering_kafka_config#backfill_source FeatureEngineeringKafkaConfig#backfill_source}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.131.0/docs/resources/feature_engineering_kafka_config#backfill_source FeatureEngineeringKafkaConfig#backfill_source}
   */
   readonly backfillSource?: FeatureEngineeringKafkaConfigBackfillSource;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.130.0/docs/resources/feature_engineering_kafka_config#bootstrap_servers FeatureEngineeringKafkaConfig#bootstrap_servers}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.131.0/docs/resources/feature_engineering_kafka_config#bootstrap_servers FeatureEngineeringKafkaConfig#bootstrap_servers}
   */
   readonly bootstrapServers: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.130.0/docs/resources/feature_engineering_kafka_config#extra_options FeatureEngineeringKafkaConfig#extra_options}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.131.0/docs/resources/feature_engineering_kafka_config#extra_options FeatureEngineeringKafkaConfig#extra_options}
   */
   readonly extraOptions?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.130.0/docs/resources/feature_engineering_kafka_config#ingestion_config FeatureEngineeringKafkaConfig#ingestion_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.131.0/docs/resources/feature_engineering_kafka_config#ingestion_config FeatureEngineeringKafkaConfig#ingestion_config}
   */
   readonly ingestionConfig?: FeatureEngineeringKafkaConfigIngestionConfig;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.130.0/docs/resources/feature_engineering_kafka_config#key_schema FeatureEngineeringKafkaConfig#key_schema}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.131.0/docs/resources/feature_engineering_kafka_config#key_schema FeatureEngineeringKafkaConfig#key_schema}
   */
   readonly keySchema?: FeatureEngineeringKafkaConfigKeySchema;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.130.0/docs/resources/feature_engineering_kafka_config#provider_config FeatureEngineeringKafkaConfig#provider_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.131.0/docs/resources/feature_engineering_kafka_config#provider_config FeatureEngineeringKafkaConfig#provider_config}
   */
   readonly providerConfig?: FeatureEngineeringKafkaConfigProviderConfig;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.130.0/docs/resources/feature_engineering_kafka_config#subscription_mode FeatureEngineeringKafkaConfig#subscription_mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.131.0/docs/resources/feature_engineering_kafka_config#subscription_mode FeatureEngineeringKafkaConfig#subscription_mode}
   */
   readonly subscriptionMode: FeatureEngineeringKafkaConfigSubscriptionMode;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.130.0/docs/resources/feature_engineering_kafka_config#value_schema FeatureEngineeringKafkaConfig#value_schema}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.131.0/docs/resources/feature_engineering_kafka_config#value_schema FeatureEngineeringKafkaConfig#value_schema}
   */
   readonly valueSchema?: FeatureEngineeringKafkaConfigValueSchema;
 }
 export interface FeatureEngineeringKafkaConfigAuthConfigMtlsConfigKeyPasswordRef {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.130.0/docs/resources/feature_engineering_kafka_config#key FeatureEngineeringKafkaConfig#key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.131.0/docs/resources/feature_engineering_kafka_config#key FeatureEngineeringKafkaConfig#key}
   */
   readonly key: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.130.0/docs/resources/feature_engineering_kafka_config#scope FeatureEngineeringKafkaConfig#scope}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.131.0/docs/resources/feature_engineering_kafka_config#scope FeatureEngineeringKafkaConfig#scope}
   */
   readonly scope: string;
 }
@@ -172,11 +172,11 @@ export class FeatureEngineeringKafkaConfigAuthConfigMtlsConfigKeyPasswordRefOutp
 }
 export interface FeatureEngineeringKafkaConfigAuthConfigMtlsConfigKeystorePasswordRef {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.130.0/docs/resources/feature_engineering_kafka_config#key FeatureEngineeringKafkaConfig#key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.131.0/docs/resources/feature_engineering_kafka_config#key FeatureEngineeringKafkaConfig#key}
   */
   readonly key: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.130.0/docs/resources/feature_engineering_kafka_config#scope FeatureEngineeringKafkaConfig#scope}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.131.0/docs/resources/feature_engineering_kafka_config#scope FeatureEngineeringKafkaConfig#scope}
   */
   readonly scope: string;
 }
@@ -293,11 +293,11 @@ export class FeatureEngineeringKafkaConfigAuthConfigMtlsConfigKeystorePasswordRe
 }
 export interface FeatureEngineeringKafkaConfigAuthConfigMtlsConfigTruststorePasswordRef {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.130.0/docs/resources/feature_engineering_kafka_config#key FeatureEngineeringKafkaConfig#key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.131.0/docs/resources/feature_engineering_kafka_config#key FeatureEngineeringKafkaConfig#key}
   */
   readonly key: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.130.0/docs/resources/feature_engineering_kafka_config#scope FeatureEngineeringKafkaConfig#scope}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.131.0/docs/resources/feature_engineering_kafka_config#scope FeatureEngineeringKafkaConfig#scope}
   */
   readonly scope: string;
 }
@@ -414,27 +414,27 @@ export class FeatureEngineeringKafkaConfigAuthConfigMtlsConfigTruststorePassword
 }
 export interface FeatureEngineeringKafkaConfigAuthConfigMtlsConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.130.0/docs/resources/feature_engineering_kafka_config#disable_hostname_verification FeatureEngineeringKafkaConfig#disable_hostname_verification}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.131.0/docs/resources/feature_engineering_kafka_config#disable_hostname_verification FeatureEngineeringKafkaConfig#disable_hostname_verification}
   */
   readonly disableHostnameVerification?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.130.0/docs/resources/feature_engineering_kafka_config#key_password_ref FeatureEngineeringKafkaConfig#key_password_ref}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.131.0/docs/resources/feature_engineering_kafka_config#key_password_ref FeatureEngineeringKafkaConfig#key_password_ref}
   */
   readonly keyPasswordRef: FeatureEngineeringKafkaConfigAuthConfigMtlsConfigKeyPasswordRef;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.130.0/docs/resources/feature_engineering_kafka_config#keystore_location FeatureEngineeringKafkaConfig#keystore_location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.131.0/docs/resources/feature_engineering_kafka_config#keystore_location FeatureEngineeringKafkaConfig#keystore_location}
   */
   readonly keystoreLocation: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.130.0/docs/resources/feature_engineering_kafka_config#keystore_password_ref FeatureEngineeringKafkaConfig#keystore_password_ref}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.131.0/docs/resources/feature_engineering_kafka_config#keystore_password_ref FeatureEngineeringKafkaConfig#keystore_password_ref}
   */
   readonly keystorePasswordRef: FeatureEngineeringKafkaConfigAuthConfigMtlsConfigKeystorePasswordRef;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.130.0/docs/resources/feature_engineering_kafka_config#truststore_location FeatureEngineeringKafkaConfig#truststore_location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.131.0/docs/resources/feature_engineering_kafka_config#truststore_location FeatureEngineeringKafkaConfig#truststore_location}
   */
   readonly truststoreLocation: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.130.0/docs/resources/feature_engineering_kafka_config#truststore_password_ref FeatureEngineeringKafkaConfig#truststore_password_ref}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.131.0/docs/resources/feature_engineering_kafka_config#truststore_password_ref FeatureEngineeringKafkaConfig#truststore_password_ref}
   */
   readonly truststorePasswordRef: FeatureEngineeringKafkaConfigAuthConfigMtlsConfigTruststorePasswordRef;
 }
@@ -658,11 +658,11 @@ export class FeatureEngineeringKafkaConfigAuthConfigMtlsConfigOutputReference ex
 }
 export interface FeatureEngineeringKafkaConfigAuthConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.130.0/docs/resources/feature_engineering_kafka_config#mtls_config FeatureEngineeringKafkaConfig#mtls_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.131.0/docs/resources/feature_engineering_kafka_config#mtls_config FeatureEngineeringKafkaConfig#mtls_config}
   */
   readonly mtlsConfig?: FeatureEngineeringKafkaConfigAuthConfigMtlsConfig;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.130.0/docs/resources/feature_engineering_kafka_config#uc_service_credential_name FeatureEngineeringKafkaConfig#uc_service_credential_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.131.0/docs/resources/feature_engineering_kafka_config#uc_service_credential_name FeatureEngineeringKafkaConfig#uc_service_credential_name}
   */
   readonly ucServiceCredentialName?: string;
 }
@@ -785,27 +785,19 @@ export class FeatureEngineeringKafkaConfigAuthConfigOutputReference extends cdkt
 }
 export interface FeatureEngineeringKafkaConfigBackfillSourceDeltaTableSource {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.130.0/docs/resources/feature_engineering_kafka_config#dataframe_schema FeatureEngineeringKafkaConfig#dataframe_schema}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.131.0/docs/resources/feature_engineering_kafka_config#dataframe_schema FeatureEngineeringKafkaConfig#dataframe_schema}
   */
   readonly dataframeSchema?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.130.0/docs/resources/feature_engineering_kafka_config#entity_columns FeatureEngineeringKafkaConfig#entity_columns}
-  */
-  readonly entityColumns?: string[];
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.130.0/docs/resources/feature_engineering_kafka_config#filter_condition FeatureEngineeringKafkaConfig#filter_condition}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.131.0/docs/resources/feature_engineering_kafka_config#filter_condition FeatureEngineeringKafkaConfig#filter_condition}
   */
   readonly filterCondition?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.130.0/docs/resources/feature_engineering_kafka_config#full_name FeatureEngineeringKafkaConfig#full_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.131.0/docs/resources/feature_engineering_kafka_config#full_name FeatureEngineeringKafkaConfig#full_name}
   */
   readonly fullName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.130.0/docs/resources/feature_engineering_kafka_config#timeseries_column FeatureEngineeringKafkaConfig#timeseries_column}
-  */
-  readonly timeseriesColumn?: string;
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.130.0/docs/resources/feature_engineering_kafka_config#transformation_sql FeatureEngineeringKafkaConfig#transformation_sql}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.131.0/docs/resources/feature_engineering_kafka_config#transformation_sql FeatureEngineeringKafkaConfig#transformation_sql}
   */
   readonly transformationSql?: string;
 }
@@ -817,10 +809,8 @@ export function featureEngineeringKafkaConfigBackfillSourceDeltaTableSourceToTer
   }
   return {
     dataframe_schema: cdktn.stringToTerraform(struct!.dataframeSchema),
-    entity_columns: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.entityColumns),
     filter_condition: cdktn.stringToTerraform(struct!.filterCondition),
     full_name: cdktn.stringToTerraform(struct!.fullName),
-    timeseries_column: cdktn.stringToTerraform(struct!.timeseriesColumn),
     transformation_sql: cdktn.stringToTerraform(struct!.transformationSql),
   }
 }
@@ -838,12 +828,6 @@ export function featureEngineeringKafkaConfigBackfillSourceDeltaTableSourceToHcl
       type: "simple",
       storageClassType: "string",
     },
-    entity_columns: {
-      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.entityColumns),
-      isBlock: false,
-      type: "list",
-      storageClassType: "stringList",
-    },
     filter_condition: {
       value: cdktn.stringToHclTerraform(struct!.filterCondition),
       isBlock: false,
@@ -852,12 +836,6 @@ export function featureEngineeringKafkaConfigBackfillSourceDeltaTableSourceToHcl
     },
     full_name: {
       value: cdktn.stringToHclTerraform(struct!.fullName),
-      isBlock: false,
-      type: "simple",
-      storageClassType: "string",
-    },
-    timeseries_column: {
-      value: cdktn.stringToHclTerraform(struct!.timeseriesColumn),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -896,10 +874,6 @@ export class FeatureEngineeringKafkaConfigBackfillSourceDeltaTableSourceOutputRe
       hasAnyValues = true;
       internalValueResult.dataframeSchema = this._dataframeSchema;
     }
-    if (this._entityColumns !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.entityColumns = this._entityColumns;
-    }
     if (this._filterCondition !== undefined) {
       hasAnyValues = true;
       internalValueResult.filterCondition = this._filterCondition;
@@ -907,10 +881,6 @@ export class FeatureEngineeringKafkaConfigBackfillSourceDeltaTableSourceOutputRe
     if (this._fullName !== undefined) {
       hasAnyValues = true;
       internalValueResult.fullName = this._fullName;
-    }
-    if (this._timeseriesColumn !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.timeseriesColumn = this._timeseriesColumn;
     }
     if (this._transformationSql !== undefined) {
       hasAnyValues = true;
@@ -924,10 +894,8 @@ export class FeatureEngineeringKafkaConfigBackfillSourceDeltaTableSourceOutputRe
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._dataframeSchema = undefined;
-      this._entityColumns = undefined;
       this._filterCondition = undefined;
       this._fullName = undefined;
-      this._timeseriesColumn = undefined;
       this._transformationSql = undefined;
     }
     else if (cdktn.Tokenization.isResolvable(value)) {
@@ -938,10 +906,8 @@ export class FeatureEngineeringKafkaConfigBackfillSourceDeltaTableSourceOutputRe
       this.isEmptyObject = Object.keys(value).length === 0;
       this.resolvableValue = undefined;
       this._dataframeSchema = value.dataframeSchema;
-      this._entityColumns = value.entityColumns;
       this._filterCondition = value.filterCondition;
       this._fullName = value.fullName;
-      this._timeseriesColumn = value.timeseriesColumn;
       this._transformationSql = value.transformationSql;
     }
   }
@@ -960,22 +926,6 @@ export class FeatureEngineeringKafkaConfigBackfillSourceDeltaTableSourceOutputRe
   // Temporarily expose input value. Use with caution.
   public get dataframeSchemaInput() {
     return this._dataframeSchema;
-  }
-
-  // entity_columns - computed: false, optional: true, required: false
-  private _entityColumns?: string[]; 
-  public get entityColumns() {
-    return this.getListAttribute('entity_columns');
-  }
-  public set entityColumns(value: string[]) {
-    this._entityColumns = value;
-  }
-  public resetEntityColumns() {
-    this._entityColumns = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get entityColumnsInput() {
-    return this._entityColumns;
   }
 
   // filter_condition - computed: false, optional: true, required: false
@@ -1007,22 +957,6 @@ export class FeatureEngineeringKafkaConfigBackfillSourceDeltaTableSourceOutputRe
     return this._fullName;
   }
 
-  // timeseries_column - computed: false, optional: true, required: false
-  private _timeseriesColumn?: string; 
-  public get timeseriesColumn() {
-    return this.getStringAttribute('timeseries_column');
-  }
-  public set timeseriesColumn(value: string) {
-    this._timeseriesColumn = value;
-  }
-  public resetTimeseriesColumn() {
-    this._timeseriesColumn = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get timeseriesColumnInput() {
-    return this._timeseriesColumn;
-  }
-
   // transformation_sql - computed: false, optional: true, required: false
   private _transformationSql?: string; 
   public get transformationSql() {
@@ -1041,11 +975,11 @@ export class FeatureEngineeringKafkaConfigBackfillSourceDeltaTableSourceOutputRe
 }
 export interface FeatureEngineeringKafkaConfigBackfillSource {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.130.0/docs/resources/feature_engineering_kafka_config#delta_table_name FeatureEngineeringKafkaConfig#delta_table_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.131.0/docs/resources/feature_engineering_kafka_config#delta_table_name FeatureEngineeringKafkaConfig#delta_table_name}
   */
   readonly deltaTableName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.130.0/docs/resources/feature_engineering_kafka_config#delta_table_source FeatureEngineeringKafkaConfig#delta_table_source}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.131.0/docs/resources/feature_engineering_kafka_config#delta_table_source FeatureEngineeringKafkaConfig#delta_table_source}
   */
   readonly deltaTableSource?: FeatureEngineeringKafkaConfigBackfillSourceDeltaTableSource;
 }
@@ -1168,27 +1102,19 @@ export class FeatureEngineeringKafkaConfigBackfillSourceOutputReference extends 
 }
 export interface FeatureEngineeringKafkaConfigIngestionConfigBackfillSourceDeltaTableSource {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.130.0/docs/resources/feature_engineering_kafka_config#dataframe_schema FeatureEngineeringKafkaConfig#dataframe_schema}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.131.0/docs/resources/feature_engineering_kafka_config#dataframe_schema FeatureEngineeringKafkaConfig#dataframe_schema}
   */
   readonly dataframeSchema?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.130.0/docs/resources/feature_engineering_kafka_config#entity_columns FeatureEngineeringKafkaConfig#entity_columns}
-  */
-  readonly entityColumns?: string[];
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.130.0/docs/resources/feature_engineering_kafka_config#filter_condition FeatureEngineeringKafkaConfig#filter_condition}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.131.0/docs/resources/feature_engineering_kafka_config#filter_condition FeatureEngineeringKafkaConfig#filter_condition}
   */
   readonly filterCondition?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.130.0/docs/resources/feature_engineering_kafka_config#full_name FeatureEngineeringKafkaConfig#full_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.131.0/docs/resources/feature_engineering_kafka_config#full_name FeatureEngineeringKafkaConfig#full_name}
   */
   readonly fullName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.130.0/docs/resources/feature_engineering_kafka_config#timeseries_column FeatureEngineeringKafkaConfig#timeseries_column}
-  */
-  readonly timeseriesColumn?: string;
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.130.0/docs/resources/feature_engineering_kafka_config#transformation_sql FeatureEngineeringKafkaConfig#transformation_sql}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.131.0/docs/resources/feature_engineering_kafka_config#transformation_sql FeatureEngineeringKafkaConfig#transformation_sql}
   */
   readonly transformationSql?: string;
 }
@@ -1200,10 +1126,8 @@ export function featureEngineeringKafkaConfigIngestionConfigBackfillSourceDeltaT
   }
   return {
     dataframe_schema: cdktn.stringToTerraform(struct!.dataframeSchema),
-    entity_columns: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.entityColumns),
     filter_condition: cdktn.stringToTerraform(struct!.filterCondition),
     full_name: cdktn.stringToTerraform(struct!.fullName),
-    timeseries_column: cdktn.stringToTerraform(struct!.timeseriesColumn),
     transformation_sql: cdktn.stringToTerraform(struct!.transformationSql),
   }
 }
@@ -1221,12 +1145,6 @@ export function featureEngineeringKafkaConfigIngestionConfigBackfillSourceDeltaT
       type: "simple",
       storageClassType: "string",
     },
-    entity_columns: {
-      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.entityColumns),
-      isBlock: false,
-      type: "list",
-      storageClassType: "stringList",
-    },
     filter_condition: {
       value: cdktn.stringToHclTerraform(struct!.filterCondition),
       isBlock: false,
@@ -1235,12 +1153,6 @@ export function featureEngineeringKafkaConfigIngestionConfigBackfillSourceDeltaT
     },
     full_name: {
       value: cdktn.stringToHclTerraform(struct!.fullName),
-      isBlock: false,
-      type: "simple",
-      storageClassType: "string",
-    },
-    timeseries_column: {
-      value: cdktn.stringToHclTerraform(struct!.timeseriesColumn),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1279,10 +1191,6 @@ export class FeatureEngineeringKafkaConfigIngestionConfigBackfillSourceDeltaTabl
       hasAnyValues = true;
       internalValueResult.dataframeSchema = this._dataframeSchema;
     }
-    if (this._entityColumns !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.entityColumns = this._entityColumns;
-    }
     if (this._filterCondition !== undefined) {
       hasAnyValues = true;
       internalValueResult.filterCondition = this._filterCondition;
@@ -1290,10 +1198,6 @@ export class FeatureEngineeringKafkaConfigIngestionConfigBackfillSourceDeltaTabl
     if (this._fullName !== undefined) {
       hasAnyValues = true;
       internalValueResult.fullName = this._fullName;
-    }
-    if (this._timeseriesColumn !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.timeseriesColumn = this._timeseriesColumn;
     }
     if (this._transformationSql !== undefined) {
       hasAnyValues = true;
@@ -1307,10 +1211,8 @@ export class FeatureEngineeringKafkaConfigIngestionConfigBackfillSourceDeltaTabl
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._dataframeSchema = undefined;
-      this._entityColumns = undefined;
       this._filterCondition = undefined;
       this._fullName = undefined;
-      this._timeseriesColumn = undefined;
       this._transformationSql = undefined;
     }
     else if (cdktn.Tokenization.isResolvable(value)) {
@@ -1321,10 +1223,8 @@ export class FeatureEngineeringKafkaConfigIngestionConfigBackfillSourceDeltaTabl
       this.isEmptyObject = Object.keys(value).length === 0;
       this.resolvableValue = undefined;
       this._dataframeSchema = value.dataframeSchema;
-      this._entityColumns = value.entityColumns;
       this._filterCondition = value.filterCondition;
       this._fullName = value.fullName;
-      this._timeseriesColumn = value.timeseriesColumn;
       this._transformationSql = value.transformationSql;
     }
   }
@@ -1343,22 +1243,6 @@ export class FeatureEngineeringKafkaConfigIngestionConfigBackfillSourceDeltaTabl
   // Temporarily expose input value. Use with caution.
   public get dataframeSchemaInput() {
     return this._dataframeSchema;
-  }
-
-  // entity_columns - computed: false, optional: true, required: false
-  private _entityColumns?: string[]; 
-  public get entityColumns() {
-    return this.getListAttribute('entity_columns');
-  }
-  public set entityColumns(value: string[]) {
-    this._entityColumns = value;
-  }
-  public resetEntityColumns() {
-    this._entityColumns = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get entityColumnsInput() {
-    return this._entityColumns;
   }
 
   // filter_condition - computed: false, optional: true, required: false
@@ -1390,22 +1274,6 @@ export class FeatureEngineeringKafkaConfigIngestionConfigBackfillSourceDeltaTabl
     return this._fullName;
   }
 
-  // timeseries_column - computed: false, optional: true, required: false
-  private _timeseriesColumn?: string; 
-  public get timeseriesColumn() {
-    return this.getStringAttribute('timeseries_column');
-  }
-  public set timeseriesColumn(value: string) {
-    this._timeseriesColumn = value;
-  }
-  public resetTimeseriesColumn() {
-    this._timeseriesColumn = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get timeseriesColumnInput() {
-    return this._timeseriesColumn;
-  }
-
   // transformation_sql - computed: false, optional: true, required: false
   private _transformationSql?: string; 
   public get transformationSql() {
@@ -1424,11 +1292,11 @@ export class FeatureEngineeringKafkaConfigIngestionConfigBackfillSourceDeltaTabl
 }
 export interface FeatureEngineeringKafkaConfigIngestionConfigBackfillSource {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.130.0/docs/resources/feature_engineering_kafka_config#delta_table_name FeatureEngineeringKafkaConfig#delta_table_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.131.0/docs/resources/feature_engineering_kafka_config#delta_table_name FeatureEngineeringKafkaConfig#delta_table_name}
   */
   readonly deltaTableName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.130.0/docs/resources/feature_engineering_kafka_config#delta_table_source FeatureEngineeringKafkaConfig#delta_table_source}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.131.0/docs/resources/feature_engineering_kafka_config#delta_table_source FeatureEngineeringKafkaConfig#delta_table_source}
   */
   readonly deltaTableSource?: FeatureEngineeringKafkaConfigIngestionConfigBackfillSourceDeltaTableSource;
 }
@@ -1551,7 +1419,7 @@ export class FeatureEngineeringKafkaConfigIngestionConfigBackfillSourceOutputRef
 }
 export interface FeatureEngineeringKafkaConfigIngestionConfigIngestionDestination {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.130.0/docs/resources/feature_engineering_kafka_config#delta_table_name FeatureEngineeringKafkaConfig#delta_table_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.131.0/docs/resources/feature_engineering_kafka_config#delta_table_name FeatureEngineeringKafkaConfig#delta_table_name}
   */
   readonly deltaTableName?: string;
 }
@@ -1645,15 +1513,15 @@ export class FeatureEngineeringKafkaConfigIngestionConfigIngestionDestinationOut
 }
 export interface FeatureEngineeringKafkaConfigIngestionConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.130.0/docs/resources/feature_engineering_kafka_config#backfill_source FeatureEngineeringKafkaConfig#backfill_source}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.131.0/docs/resources/feature_engineering_kafka_config#backfill_source FeatureEngineeringKafkaConfig#backfill_source}
   */
   readonly backfillSource?: FeatureEngineeringKafkaConfigIngestionConfigBackfillSource;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.130.0/docs/resources/feature_engineering_kafka_config#deduplication_columns FeatureEngineeringKafkaConfig#deduplication_columns}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.131.0/docs/resources/feature_engineering_kafka_config#deduplication_columns FeatureEngineeringKafkaConfig#deduplication_columns}
   */
   readonly deduplicationColumns?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.130.0/docs/resources/feature_engineering_kafka_config#ingestion_destination FeatureEngineeringKafkaConfig#ingestion_destination}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.131.0/docs/resources/feature_engineering_kafka_config#ingestion_destination FeatureEngineeringKafkaConfig#ingestion_destination}
   */
   readonly ingestionDestination: FeatureEngineeringKafkaConfigIngestionConfigIngestionDestination;
 }
@@ -1817,11 +1685,11 @@ export class FeatureEngineeringKafkaConfigIngestionConfigOutputReference extends
 }
 export interface FeatureEngineeringKafkaConfigKeySchemaProtoSchema {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.130.0/docs/resources/feature_engineering_kafka_config#message_name FeatureEngineeringKafkaConfig#message_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.131.0/docs/resources/feature_engineering_kafka_config#message_name FeatureEngineeringKafkaConfig#message_name}
   */
   readonly messageName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.130.0/docs/resources/feature_engineering_kafka_config#schema_text FeatureEngineeringKafkaConfig#schema_text}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.131.0/docs/resources/feature_engineering_kafka_config#schema_text FeatureEngineeringKafkaConfig#schema_text}
   */
   readonly schemaText: string;
 }
@@ -1938,15 +1806,15 @@ export class FeatureEngineeringKafkaConfigKeySchemaProtoSchemaOutputReference ex
 }
 export interface FeatureEngineeringKafkaConfigKeySchema {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.130.0/docs/resources/feature_engineering_kafka_config#avro_schema FeatureEngineeringKafkaConfig#avro_schema}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.131.0/docs/resources/feature_engineering_kafka_config#avro_schema FeatureEngineeringKafkaConfig#avro_schema}
   */
   readonly avroSchema?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.130.0/docs/resources/feature_engineering_kafka_config#json_schema FeatureEngineeringKafkaConfig#json_schema}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.131.0/docs/resources/feature_engineering_kafka_config#json_schema FeatureEngineeringKafkaConfig#json_schema}
   */
   readonly jsonSchema?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.130.0/docs/resources/feature_engineering_kafka_config#proto_schema FeatureEngineeringKafkaConfig#proto_schema}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.131.0/docs/resources/feature_engineering_kafka_config#proto_schema FeatureEngineeringKafkaConfig#proto_schema}
   */
   readonly protoSchema?: FeatureEngineeringKafkaConfigKeySchemaProtoSchema;
 }
@@ -2098,7 +1966,7 @@ export class FeatureEngineeringKafkaConfigKeySchemaOutputReference extends cdktn
 }
 export interface FeatureEngineeringKafkaConfigProviderConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.130.0/docs/resources/feature_engineering_kafka_config#workspace_id FeatureEngineeringKafkaConfig#workspace_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.131.0/docs/resources/feature_engineering_kafka_config#workspace_id FeatureEngineeringKafkaConfig#workspace_id}
   */
   readonly workspaceId?: string;
 }
@@ -2192,15 +2060,15 @@ export class FeatureEngineeringKafkaConfigProviderConfigOutputReference extends 
 }
 export interface FeatureEngineeringKafkaConfigSubscriptionMode {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.130.0/docs/resources/feature_engineering_kafka_config#assign FeatureEngineeringKafkaConfig#assign}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.131.0/docs/resources/feature_engineering_kafka_config#assign FeatureEngineeringKafkaConfig#assign}
   */
   readonly assign?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.130.0/docs/resources/feature_engineering_kafka_config#subscribe FeatureEngineeringKafkaConfig#subscribe}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.131.0/docs/resources/feature_engineering_kafka_config#subscribe FeatureEngineeringKafkaConfig#subscribe}
   */
   readonly subscribe?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.130.0/docs/resources/feature_engineering_kafka_config#subscribe_pattern FeatureEngineeringKafkaConfig#subscribe_pattern}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.131.0/docs/resources/feature_engineering_kafka_config#subscribe_pattern FeatureEngineeringKafkaConfig#subscribe_pattern}
   */
   readonly subscribePattern?: string;
 }
@@ -2352,11 +2220,11 @@ export class FeatureEngineeringKafkaConfigSubscriptionModeOutputReference extend
 }
 export interface FeatureEngineeringKafkaConfigValueSchemaProtoSchema {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.130.0/docs/resources/feature_engineering_kafka_config#message_name FeatureEngineeringKafkaConfig#message_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.131.0/docs/resources/feature_engineering_kafka_config#message_name FeatureEngineeringKafkaConfig#message_name}
   */
   readonly messageName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.130.0/docs/resources/feature_engineering_kafka_config#schema_text FeatureEngineeringKafkaConfig#schema_text}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.131.0/docs/resources/feature_engineering_kafka_config#schema_text FeatureEngineeringKafkaConfig#schema_text}
   */
   readonly schemaText: string;
 }
@@ -2473,15 +2341,15 @@ export class FeatureEngineeringKafkaConfigValueSchemaProtoSchemaOutputReference 
 }
 export interface FeatureEngineeringKafkaConfigValueSchema {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.130.0/docs/resources/feature_engineering_kafka_config#avro_schema FeatureEngineeringKafkaConfig#avro_schema}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.131.0/docs/resources/feature_engineering_kafka_config#avro_schema FeatureEngineeringKafkaConfig#avro_schema}
   */
   readonly avroSchema?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.130.0/docs/resources/feature_engineering_kafka_config#json_schema FeatureEngineeringKafkaConfig#json_schema}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.131.0/docs/resources/feature_engineering_kafka_config#json_schema FeatureEngineeringKafkaConfig#json_schema}
   */
   readonly jsonSchema?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.130.0/docs/resources/feature_engineering_kafka_config#proto_schema FeatureEngineeringKafkaConfig#proto_schema}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.131.0/docs/resources/feature_engineering_kafka_config#proto_schema FeatureEngineeringKafkaConfig#proto_schema}
   */
   readonly protoSchema?: FeatureEngineeringKafkaConfigValueSchemaProtoSchema;
 }
@@ -2633,7 +2501,7 @@ export class FeatureEngineeringKafkaConfigValueSchemaOutputReference extends cdk
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.130.0/docs/resources/feature_engineering_kafka_config databricks_feature_engineering_kafka_config}
+* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.131.0/docs/resources/feature_engineering_kafka_config databricks_feature_engineering_kafka_config}
 */
 export class FeatureEngineeringKafkaConfig extends cdktn.TerraformResource {
 
@@ -2649,7 +2517,7 @@ export class FeatureEngineeringKafkaConfig extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a FeatureEngineeringKafkaConfig resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the FeatureEngineeringKafkaConfig to import
-  * @param importFromId The id of the existing FeatureEngineeringKafkaConfig that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.130.0/docs/resources/feature_engineering_kafka_config#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing FeatureEngineeringKafkaConfig that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.131.0/docs/resources/feature_engineering_kafka_config#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the FeatureEngineeringKafkaConfig to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -2661,7 +2529,7 @@ export class FeatureEngineeringKafkaConfig extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.130.0/docs/resources/feature_engineering_kafka_config databricks_feature_engineering_kafka_config} Resource
+  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.131.0/docs/resources/feature_engineering_kafka_config databricks_feature_engineering_kafka_config} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -2672,7 +2540,7 @@ export class FeatureEngineeringKafkaConfig extends cdktn.TerraformResource {
       terraformResourceType: 'databricks_feature_engineering_kafka_config',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '1.130.0',
+        providerVersion: '1.131.0',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,
