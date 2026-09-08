@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/databricks/databricks/1.130.0/docs/data-sources/postgres_branch
+// https://registry.terraform.io/providers/databricks/databricks/1.131.0/docs/data-sources/postgres_branch
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,17 +13,17 @@ import * as cdktn from 'cdktn';
 
 export interface DataDatabricksPostgresBranchConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.130.0/docs/data-sources/postgres_branch#name DataDatabricksPostgresBranch#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.131.0/docs/data-sources/postgres_branch#name DataDatabricksPostgresBranch#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.130.0/docs/data-sources/postgres_branch#provider_config DataDatabricksPostgresBranch#provider_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.131.0/docs/data-sources/postgres_branch#provider_config DataDatabricksPostgresBranch#provider_config}
   */
   readonly providerConfig?: DataDatabricksPostgresBranchProviderConfig;
 }
 export interface DataDatabricksPostgresBranchProviderConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.130.0/docs/data-sources/postgres_branch#workspace_id DataDatabricksPostgresBranch#workspace_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.131.0/docs/data-sources/postgres_branch#workspace_id DataDatabricksPostgresBranch#workspace_id}
   */
   readonly workspaceId?: string;
 }
@@ -117,31 +117,35 @@ export class DataDatabricksPostgresBranchProviderConfigOutputReference extends c
 }
 export interface DataDatabricksPostgresBranchSpec {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.130.0/docs/data-sources/postgres_branch#expire_time DataDatabricksPostgresBranch#expire_time}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.131.0/docs/data-sources/postgres_branch#expire_time DataDatabricksPostgresBranch#expire_time}
   */
   readonly expireTime?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.130.0/docs/data-sources/postgres_branch#is_protected DataDatabricksPostgresBranch#is_protected}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.131.0/docs/data-sources/postgres_branch#is_protected DataDatabricksPostgresBranch#is_protected}
   */
   readonly isProtected?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.130.0/docs/data-sources/postgres_branch#no_expiry DataDatabricksPostgresBranch#no_expiry}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.131.0/docs/data-sources/postgres_branch#no_expiry DataDatabricksPostgresBranch#no_expiry}
   */
   readonly noExpiry?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.130.0/docs/data-sources/postgres_branch#source_branch DataDatabricksPostgresBranch#source_branch}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.131.0/docs/data-sources/postgres_branch#source_branch DataDatabricksPostgresBranch#source_branch}
   */
   readonly sourceBranch?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.130.0/docs/data-sources/postgres_branch#source_branch_lsn DataDatabricksPostgresBranch#source_branch_lsn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.131.0/docs/data-sources/postgres_branch#source_branch_lsn DataDatabricksPostgresBranch#source_branch_lsn}
   */
   readonly sourceBranchLsn?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.130.0/docs/data-sources/postgres_branch#source_branch_time DataDatabricksPostgresBranch#source_branch_time}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.131.0/docs/data-sources/postgres_branch#source_branch_time DataDatabricksPostgresBranch#source_branch_time}
   */
   readonly sourceBranchTime?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.130.0/docs/data-sources/postgres_branch#ttl DataDatabricksPostgresBranch#ttl}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.131.0/docs/data-sources/postgres_branch#source_snapshot DataDatabricksPostgresBranch#source_snapshot}
+  */
+  readonly sourceSnapshot?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.131.0/docs/data-sources/postgres_branch#ttl DataDatabricksPostgresBranch#ttl}
   */
   readonly ttl?: string;
 }
@@ -158,6 +162,7 @@ export function dataDatabricksPostgresBranchSpecToTerraform(struct?: DataDatabri
     source_branch: cdktn.stringToTerraform(struct!.sourceBranch),
     source_branch_lsn: cdktn.stringToTerraform(struct!.sourceBranchLsn),
     source_branch_time: cdktn.stringToTerraform(struct!.sourceBranchTime),
+    source_snapshot: cdktn.stringToTerraform(struct!.sourceSnapshot),
     ttl: cdktn.stringToTerraform(struct!.ttl),
   }
 }
@@ -201,6 +206,12 @@ export function dataDatabricksPostgresBranchSpecToHclTerraform(struct?: DataData
     },
     source_branch_time: {
       value: cdktn.stringToHclTerraform(struct!.sourceBranchTime),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    source_snapshot: {
+      value: cdktn.stringToHclTerraform(struct!.sourceSnapshot),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -255,6 +266,10 @@ export class DataDatabricksPostgresBranchSpecOutputReference extends cdktn.Compl
       hasAnyValues = true;
       internalValueResult.sourceBranchTime = this._sourceBranchTime;
     }
+    if (this._sourceSnapshot !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.sourceSnapshot = this._sourceSnapshot;
+    }
     if (this._ttl !== undefined) {
       hasAnyValues = true;
       internalValueResult.ttl = this._ttl;
@@ -271,6 +286,7 @@ export class DataDatabricksPostgresBranchSpecOutputReference extends cdktn.Compl
       this._sourceBranch = undefined;
       this._sourceBranchLsn = undefined;
       this._sourceBranchTime = undefined;
+      this._sourceSnapshot = undefined;
       this._ttl = undefined;
     }
     else {
@@ -281,6 +297,7 @@ export class DataDatabricksPostgresBranchSpecOutputReference extends cdktn.Compl
       this._sourceBranch = value.sourceBranch;
       this._sourceBranchLsn = value.sourceBranchLsn;
       this._sourceBranchTime = value.sourceBranchTime;
+      this._sourceSnapshot = value.sourceSnapshot;
       this._ttl = value.ttl;
     }
   }
@@ -379,6 +396,22 @@ export class DataDatabricksPostgresBranchSpecOutputReference extends cdktn.Compl
   // Temporarily expose input value. Use with caution.
   public get sourceBranchTimeInput() {
     return this._sourceBranchTime;
+  }
+
+  // source_snapshot - computed: true, optional: true, required: false
+  private _sourceSnapshot?: string; 
+  public get sourceSnapshot() {
+    return this.getStringAttribute('source_snapshot');
+  }
+  public set sourceSnapshot(value: string) {
+    this._sourceSnapshot = value;
+  }
+  public resetSourceSnapshot() {
+    this._sourceSnapshot = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get sourceSnapshotInput() {
+    return this._sourceSnapshot;
   }
 
   // ttl - computed: true, optional: true, required: false
@@ -506,6 +539,11 @@ export class DataDatabricksPostgresBranchStatusOutputReference extends cdktn.Com
     return this.getStringAttribute('source_branch_time');
   }
 
+  // source_snapshot - computed: true, optional: false, required: false
+  public get sourceSnapshot() {
+    return this.getStringAttribute('source_snapshot');
+  }
+
   // state_change_time - computed: true, optional: false, required: false
   public get stateChangeTime() {
     return this.getStringAttribute('state_change_time');
@@ -513,7 +551,7 @@ export class DataDatabricksPostgresBranchStatusOutputReference extends cdktn.Com
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.130.0/docs/data-sources/postgres_branch databricks_postgres_branch}
+* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.131.0/docs/data-sources/postgres_branch databricks_postgres_branch}
 */
 export class DataDatabricksPostgresBranch extends cdktn.TerraformDataSource {
 
@@ -529,7 +567,7 @@ export class DataDatabricksPostgresBranch extends cdktn.TerraformDataSource {
   * Generates CDKTN code for importing a DataDatabricksPostgresBranch resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataDatabricksPostgresBranch to import
-  * @param importFromId The id of the existing DataDatabricksPostgresBranch that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.130.0/docs/data-sources/postgres_branch#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataDatabricksPostgresBranch that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.131.0/docs/data-sources/postgres_branch#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataDatabricksPostgresBranch to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -541,7 +579,7 @@ export class DataDatabricksPostgresBranch extends cdktn.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.130.0/docs/data-sources/postgres_branch databricks_postgres_branch} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.131.0/docs/data-sources/postgres_branch databricks_postgres_branch} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -552,7 +590,7 @@ export class DataDatabricksPostgresBranch extends cdktn.TerraformDataSource {
       terraformResourceType: 'databricks_postgres_branch',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '1.130.0',
+        providerVersion: '1.131.0',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,

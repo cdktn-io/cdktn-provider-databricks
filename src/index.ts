@@ -124,6 +124,7 @@ export * as postgresDatabase from './postgres-database/index';
 export * as postgresEndpoint from './postgres-endpoint/index';
 export * as postgresProject from './postgres-project/index';
 export * as postgresRole from './postgres-role/index';
+export * as postgresSnapshotSchedule from './postgres-snapshot-schedule/index';
 export * as postgresSyncedTable from './postgres-synced-table/index';
 export * as providerResource from './provider-resource/index';
 export * as qualityMonitor from './quality-monitor/index';
@@ -183,6 +184,9 @@ export * as dataDatabricksAccountFederationPolicies from './data-databricks-acco
 export * as dataDatabricksAccountFederationPolicy from './data-databricks-account-federation-policy/index';
 export * as dataDatabricksAccountIamDirectGroupMemberV2 from './data-databricks-account-iam-direct-group-member-v2/index';
 export * as dataDatabricksAccountIamDirectGroupMembersV2 from './data-databricks-account-iam-direct-group-members-v2/index';
+export * as dataDatabricksAccountIamExternalGroupV2 from './data-databricks-account-iam-external-group-v2/index';
+export * as dataDatabricksAccountIamExternalServicePrincipalV2 from './data-databricks-account-iam-external-service-principal-v2/index';
+export * as dataDatabricksAccountIamExternalUserV2 from './data-databricks-account-iam-external-user-v2/index';
 export * as dataDatabricksAccountIamGroupV2 from './data-databricks-account-iam-group-v2/index';
 export * as dataDatabricksAccountIamGroupsV2 from './data-databricks-account-iam-groups-v2/index';
 export * as dataDatabricksAccountIamServicePrincipalV2 from './data-databricks-account-iam-service-principal-v2/index';
@@ -311,6 +315,7 @@ export * as dataDatabricksPostgresProject from './data-databricks-postgres-proje
 export * as dataDatabricksPostgresProjects from './data-databricks-postgres-projects/index';
 export * as dataDatabricksPostgresRole from './data-databricks-postgres-role/index';
 export * as dataDatabricksPostgresRoles from './data-databricks-postgres-roles/index';
+export * as dataDatabricksPostgresSnapshotSchedule from './data-databricks-postgres-snapshot-schedule/index';
 export * as dataDatabricksPostgresSyncedTable from './data-databricks-postgres-synced-table/index';
 export * as dataDatabricksQualityMonitorV2 from './data-databricks-quality-monitor-v2/index';
 export * as dataDatabricksQualityMonitorsV2 from './data-databricks-quality-monitors-v2/index';
@@ -353,6 +358,9 @@ export * as dataDatabricksWorkspaceEntityTagAssignment from './data-databricks-w
 export * as dataDatabricksWorkspaceEntityTagAssignments from './data-databricks-workspace-entity-tag-assignments/index';
 export * as dataDatabricksWorkspaceIamDirectGroupMemberV2 from './data-databricks-workspace-iam-direct-group-member-v2/index';
 export * as dataDatabricksWorkspaceIamDirectGroupMembersV2 from './data-databricks-workspace-iam-direct-group-members-v2/index';
+export * as dataDatabricksWorkspaceIamExternalGroupV2 from './data-databricks-workspace-iam-external-group-v2/index';
+export * as dataDatabricksWorkspaceIamExternalServicePrincipalV2 from './data-databricks-workspace-iam-external-service-principal-v2/index';
+export * as dataDatabricksWorkspaceIamExternalUserV2 from './data-databricks-workspace-iam-external-user-v2/index';
 export * as dataDatabricksWorkspaceIamGroupV2 from './data-databricks-workspace-iam-group-v2/index';
 export * as dataDatabricksWorkspaceIamGroupsV2 from './data-databricks-workspace-iam-groups-v2/index';
 export * as dataDatabricksWorkspaceIamServicePrincipalV2 from './data-databricks-workspace-iam-service-principal-v2/index';
