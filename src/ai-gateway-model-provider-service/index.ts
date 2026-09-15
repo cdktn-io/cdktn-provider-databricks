@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/databricks/databricks/1.131.0/docs/resources/ai_gateway_model_provider_service
+// https://registry.terraform.io/providers/databricks/databricks/1.132.0/docs/resources/ai_gateway_model_provider_service
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,33 +13,29 @@ import * as cdktn from 'cdktn';
 
 export interface AiGatewayModelProviderServiceConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.131.0/docs/resources/ai_gateway_model_provider_service#comment AiGatewayModelProviderService#comment}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.132.0/docs/resources/ai_gateway_model_provider_service#comment AiGatewayModelProviderService#comment}
   */
   readonly comment?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.131.0/docs/resources/ai_gateway_model_provider_service#config AiGatewayModelProviderService#config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.132.0/docs/resources/ai_gateway_model_provider_service#config AiGatewayModelProviderService#config}
   */
   readonly config?: AiGatewayModelProviderServiceConfigA;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.131.0/docs/resources/ai_gateway_model_provider_service#model_provider_service_id AiGatewayModelProviderService#model_provider_service_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.132.0/docs/resources/ai_gateway_model_provider_service#model_provider_service_id AiGatewayModelProviderService#model_provider_service_id}
   */
   readonly modelProviderServiceId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.131.0/docs/resources/ai_gateway_model_provider_service#owner AiGatewayModelProviderService#owner}
-  */
-  readonly owner?: string;
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.131.0/docs/resources/ai_gateway_model_provider_service#parent AiGatewayModelProviderService#parent}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.132.0/docs/resources/ai_gateway_model_provider_service#parent AiGatewayModelProviderService#parent}
   */
   readonly parent: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.131.0/docs/resources/ai_gateway_model_provider_service#provider_config AiGatewayModelProviderService#provider_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.132.0/docs/resources/ai_gateway_model_provider_service#provider_config AiGatewayModelProviderService#provider_config}
   */
   readonly providerConfig?: AiGatewayModelProviderServiceProviderConfig;
 }
 export interface AiGatewayModelProviderServiceConfigAmazonBedrockDirectAwsAccessKeySecretAccessKey {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.131.0/docs/resources/ai_gateway_model_provider_service#plaintext AiGatewayModelProviderService#plaintext}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.132.0/docs/resources/ai_gateway_model_provider_service#plaintext AiGatewayModelProviderService#plaintext}
   */
   readonly plaintext?: string;
 }
@@ -133,11 +129,11 @@ export class AiGatewayModelProviderServiceConfigAmazonBedrockDirectAwsAccessKeyS
 }
 export interface AiGatewayModelProviderServiceConfigAmazonBedrockDirectAwsAccessKey {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.131.0/docs/resources/ai_gateway_model_provider_service#access_key_id AiGatewayModelProviderService#access_key_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.132.0/docs/resources/ai_gateway_model_provider_service#access_key_id AiGatewayModelProviderService#access_key_id}
   */
   readonly accessKeyId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.131.0/docs/resources/ai_gateway_model_provider_service#secret_access_key AiGatewayModelProviderService#secret_access_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.132.0/docs/resources/ai_gateway_model_provider_service#secret_access_key AiGatewayModelProviderService#secret_access_key}
   */
   readonly secretAccessKey?: AiGatewayModelProviderServiceConfigAmazonBedrockDirectAwsAccessKeySecretAccessKey;
 }
@@ -260,7 +256,7 @@ export class AiGatewayModelProviderServiceConfigAmazonBedrockDirectAwsAccessKeyO
 }
 export interface AiGatewayModelProviderServiceConfigAmazonBedrockDirectServiceCredential {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.131.0/docs/resources/ai_gateway_model_provider_service#name AiGatewayModelProviderService#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.132.0/docs/resources/ai_gateway_model_provider_service#name AiGatewayModelProviderService#name}
   */
   readonly name: string;
 }
@@ -351,15 +347,15 @@ export class AiGatewayModelProviderServiceConfigAmazonBedrockDirectServiceCreden
 }
 export interface AiGatewayModelProviderServiceConfigAmazonBedrockDirect {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.131.0/docs/resources/ai_gateway_model_provider_service#aws_access_key AiGatewayModelProviderService#aws_access_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.132.0/docs/resources/ai_gateway_model_provider_service#aws_access_key AiGatewayModelProviderService#aws_access_key}
   */
   readonly awsAccessKey?: AiGatewayModelProviderServiceConfigAmazonBedrockDirectAwsAccessKey;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.131.0/docs/resources/ai_gateway_model_provider_service#region AiGatewayModelProviderService#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.132.0/docs/resources/ai_gateway_model_provider_service#region AiGatewayModelProviderService#region}
   */
   readonly region?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.131.0/docs/resources/ai_gateway_model_provider_service#service_credential AiGatewayModelProviderService#service_credential}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.132.0/docs/resources/ai_gateway_model_provider_service#service_credential AiGatewayModelProviderService#service_credential}
   */
   readonly serviceCredential?: AiGatewayModelProviderServiceConfigAmazonBedrockDirectServiceCredential;
 }
@@ -511,7 +507,7 @@ export class AiGatewayModelProviderServiceConfigAmazonBedrockDirectOutputReferen
 }
 export interface AiGatewayModelProviderServiceConfigAmazonBedrock {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.131.0/docs/resources/ai_gateway_model_provider_service#direct AiGatewayModelProviderService#direct}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.132.0/docs/resources/ai_gateway_model_provider_service#direct AiGatewayModelProviderService#direct}
   */
   readonly direct?: AiGatewayModelProviderServiceConfigAmazonBedrockDirect;
 }
@@ -605,7 +601,7 @@ export class AiGatewayModelProviderServiceConfigAmazonBedrockOutputReference ext
 }
 export interface AiGatewayModelProviderServiceConfigAnthropicDirectApiKey {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.131.0/docs/resources/ai_gateway_model_provider_service#plaintext AiGatewayModelProviderService#plaintext}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.132.0/docs/resources/ai_gateway_model_provider_service#plaintext AiGatewayModelProviderService#plaintext}
   */
   readonly plaintext?: string;
 }
@@ -699,7 +695,7 @@ export class AiGatewayModelProviderServiceConfigAnthropicDirectApiKeyOutputRefer
 }
 export interface AiGatewayModelProviderServiceConfigAnthropicDirect {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.131.0/docs/resources/ai_gateway_model_provider_service#api_key AiGatewayModelProviderService#api_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.132.0/docs/resources/ai_gateway_model_provider_service#api_key AiGatewayModelProviderService#api_key}
   */
   readonly apiKey?: AiGatewayModelProviderServiceConfigAnthropicDirectApiKey;
 }
@@ -792,10 +788,6 @@ export class AiGatewayModelProviderServiceConfigAnthropicDirectOutputReference e
   }
 }
 export interface AiGatewayModelProviderServiceConfigAnthropicRelayed {
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.131.0/docs/resources/ai_gateway_model_provider_service#plan_type AiGatewayModelProviderService#plan_type}
-  */
-  readonly planType?: string;
 }
 
 export function aiGatewayModelProviderServiceConfigAnthropicRelayedToTerraform(struct?: AiGatewayModelProviderServiceConfigAnthropicRelayed | cdktn.IResolvable): any {
@@ -804,7 +796,6 @@ export function aiGatewayModelProviderServiceConfigAnthropicRelayedToTerraform(s
     throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
-    plan_type: cdktn.stringToTerraform(struct!.planType),
   }
 }
 
@@ -815,16 +806,8 @@ export function aiGatewayModelProviderServiceConfigAnthropicRelayedToHclTerrafor
     throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
-    plan_type: {
-      value: cdktn.stringToHclTerraform(struct!.planType),
-      isBlock: false,
-      type: "simple",
-      storageClassType: "string",
-    },
   };
-
-  // remove undefined attributes
-  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+  return attrs;
 }
 
 export class AiGatewayModelProviderServiceConfigAnthropicRelayedOutputReference extends cdktn.ComplexObject {
@@ -845,10 +828,6 @@ export class AiGatewayModelProviderServiceConfigAnthropicRelayedOutputReference 
     }
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._planType !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.planType = this._planType;
-    }
     return hasAnyValues ? internalValueResult : undefined;
   }
 
@@ -856,7 +835,6 @@ export class AiGatewayModelProviderServiceConfigAnthropicRelayedOutputReference 
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
-      this._planType = undefined;
     }
     else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
@@ -865,33 +843,16 @@ export class AiGatewayModelProviderServiceConfigAnthropicRelayedOutputReference 
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
       this.resolvableValue = undefined;
-      this._planType = value.planType;
     }
-  }
-
-  // plan_type - computed: false, optional: true, required: false
-  private _planType?: string; 
-  public get planType() {
-    return this.getStringAttribute('plan_type');
-  }
-  public set planType(value: string) {
-    this._planType = value;
-  }
-  public resetPlanType() {
-    this._planType = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get planTypeInput() {
-    return this._planType;
   }
 }
 export interface AiGatewayModelProviderServiceConfigAnthropic {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.131.0/docs/resources/ai_gateway_model_provider_service#direct AiGatewayModelProviderService#direct}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.132.0/docs/resources/ai_gateway_model_provider_service#direct AiGatewayModelProviderService#direct}
   */
   readonly direct?: AiGatewayModelProviderServiceConfigAnthropicDirect;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.131.0/docs/resources/ai_gateway_model_provider_service#relayed AiGatewayModelProviderService#relayed}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.132.0/docs/resources/ai_gateway_model_provider_service#relayed AiGatewayModelProviderService#relayed}
   */
   readonly relayed?: AiGatewayModelProviderServiceConfigAnthropicRelayed;
 }
@@ -1014,7 +975,7 @@ export class AiGatewayModelProviderServiceConfigAnthropicOutputReference extends
 }
 export interface AiGatewayModelProviderServiceConfigAzureOpenaiDirectApiKey {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.131.0/docs/resources/ai_gateway_model_provider_service#plaintext AiGatewayModelProviderService#plaintext}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.132.0/docs/resources/ai_gateway_model_provider_service#plaintext AiGatewayModelProviderService#plaintext}
   */
   readonly plaintext?: string;
 }
@@ -1108,7 +1069,7 @@ export class AiGatewayModelProviderServiceConfigAzureOpenaiDirectApiKeyOutputRef
 }
 export interface AiGatewayModelProviderServiceConfigAzureOpenaiDirectEntraServicePrincipalClientSecret {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.131.0/docs/resources/ai_gateway_model_provider_service#plaintext AiGatewayModelProviderService#plaintext}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.132.0/docs/resources/ai_gateway_model_provider_service#plaintext AiGatewayModelProviderService#plaintext}
   */
   readonly plaintext?: string;
 }
@@ -1202,15 +1163,15 @@ export class AiGatewayModelProviderServiceConfigAzureOpenaiDirectEntraServicePri
 }
 export interface AiGatewayModelProviderServiceConfigAzureOpenaiDirectEntraServicePrincipal {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.131.0/docs/resources/ai_gateway_model_provider_service#client_id AiGatewayModelProviderService#client_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.132.0/docs/resources/ai_gateway_model_provider_service#client_id AiGatewayModelProviderService#client_id}
   */
   readonly clientId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.131.0/docs/resources/ai_gateway_model_provider_service#client_secret AiGatewayModelProviderService#client_secret}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.132.0/docs/resources/ai_gateway_model_provider_service#client_secret AiGatewayModelProviderService#client_secret}
   */
   readonly clientSecret?: AiGatewayModelProviderServiceConfigAzureOpenaiDirectEntraServicePrincipalClientSecret;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.131.0/docs/resources/ai_gateway_model_provider_service#tenant_id AiGatewayModelProviderService#tenant_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.132.0/docs/resources/ai_gateway_model_provider_service#tenant_id AiGatewayModelProviderService#tenant_id}
   */
   readonly tenantId?: string;
 }
@@ -1362,7 +1323,7 @@ export class AiGatewayModelProviderServiceConfigAzureOpenaiDirectEntraServicePri
 }
 export interface AiGatewayModelProviderServiceConfigAzureOpenaiDirectServiceCredential {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.131.0/docs/resources/ai_gateway_model_provider_service#name AiGatewayModelProviderService#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.132.0/docs/resources/ai_gateway_model_provider_service#name AiGatewayModelProviderService#name}
   */
   readonly name: string;
 }
@@ -1453,19 +1414,19 @@ export class AiGatewayModelProviderServiceConfigAzureOpenaiDirectServiceCredenti
 }
 export interface AiGatewayModelProviderServiceConfigAzureOpenaiDirect {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.131.0/docs/resources/ai_gateway_model_provider_service#api_key AiGatewayModelProviderService#api_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.132.0/docs/resources/ai_gateway_model_provider_service#api_key AiGatewayModelProviderService#api_key}
   */
   readonly apiKey?: AiGatewayModelProviderServiceConfigAzureOpenaiDirectApiKey;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.131.0/docs/resources/ai_gateway_model_provider_service#base_url AiGatewayModelProviderService#base_url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.132.0/docs/resources/ai_gateway_model_provider_service#base_url AiGatewayModelProviderService#base_url}
   */
   readonly baseUrl?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.131.0/docs/resources/ai_gateway_model_provider_service#entra_service_principal AiGatewayModelProviderService#entra_service_principal}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.132.0/docs/resources/ai_gateway_model_provider_service#entra_service_principal AiGatewayModelProviderService#entra_service_principal}
   */
   readonly entraServicePrincipal?: AiGatewayModelProviderServiceConfigAzureOpenaiDirectEntraServicePrincipal;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.131.0/docs/resources/ai_gateway_model_provider_service#service_credential AiGatewayModelProviderService#service_credential}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.132.0/docs/resources/ai_gateway_model_provider_service#service_credential AiGatewayModelProviderService#service_credential}
   */
   readonly serviceCredential?: AiGatewayModelProviderServiceConfigAzureOpenaiDirectServiceCredential;
 }
@@ -1646,7 +1607,7 @@ export class AiGatewayModelProviderServiceConfigAzureOpenaiDirectOutputReference
 }
 export interface AiGatewayModelProviderServiceConfigAzureOpenai {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.131.0/docs/resources/ai_gateway_model_provider_service#direct AiGatewayModelProviderService#direct}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.132.0/docs/resources/ai_gateway_model_provider_service#direct AiGatewayModelProviderService#direct}
   */
   readonly direct?: AiGatewayModelProviderServiceConfigAzureOpenaiDirect;
 }
@@ -1740,7 +1701,7 @@ export class AiGatewayModelProviderServiceConfigAzureOpenaiOutputReference exten
 }
 export interface AiGatewayModelProviderServiceConfigCustomDirectApiKey {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.131.0/docs/resources/ai_gateway_model_provider_service#plaintext AiGatewayModelProviderService#plaintext}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.132.0/docs/resources/ai_gateway_model_provider_service#plaintext AiGatewayModelProviderService#plaintext}
   */
   readonly plaintext?: string;
 }
@@ -1834,11 +1795,11 @@ export class AiGatewayModelProviderServiceConfigCustomDirectApiKeyOutputReferenc
 }
 export interface AiGatewayModelProviderServiceConfigCustomDirect {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.131.0/docs/resources/ai_gateway_model_provider_service#api_key AiGatewayModelProviderService#api_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.132.0/docs/resources/ai_gateway_model_provider_service#api_key AiGatewayModelProviderService#api_key}
   */
   readonly apiKey?: AiGatewayModelProviderServiceConfigCustomDirectApiKey;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.131.0/docs/resources/ai_gateway_model_provider_service#base_url AiGatewayModelProviderService#base_url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.132.0/docs/resources/ai_gateway_model_provider_service#base_url AiGatewayModelProviderService#base_url}
   */
   readonly baseUrl?: string;
 }
@@ -1961,7 +1922,7 @@ export class AiGatewayModelProviderServiceConfigCustomDirectOutputReference exte
 }
 export interface AiGatewayModelProviderServiceConfigCustom {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.131.0/docs/resources/ai_gateway_model_provider_service#direct AiGatewayModelProviderService#direct}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.132.0/docs/resources/ai_gateway_model_provider_service#direct AiGatewayModelProviderService#direct}
   */
   readonly direct?: AiGatewayModelProviderServiceConfigCustomDirect;
 }
@@ -2055,7 +2016,7 @@ export class AiGatewayModelProviderServiceConfigCustomOutputReference extends cd
 }
 export interface AiGatewayModelProviderServiceConfigGeminiEnterpriseDirectApiKey {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.131.0/docs/resources/ai_gateway_model_provider_service#plaintext AiGatewayModelProviderService#plaintext}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.132.0/docs/resources/ai_gateway_model_provider_service#plaintext AiGatewayModelProviderService#plaintext}
   */
   readonly plaintext?: string;
 }
@@ -2149,15 +2110,15 @@ export class AiGatewayModelProviderServiceConfigGeminiEnterpriseDirectApiKeyOutp
 }
 export interface AiGatewayModelProviderServiceConfigGeminiEnterpriseDirect {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.131.0/docs/resources/ai_gateway_model_provider_service#api_key AiGatewayModelProviderService#api_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.132.0/docs/resources/ai_gateway_model_provider_service#api_key AiGatewayModelProviderService#api_key}
   */
   readonly apiKey?: AiGatewayModelProviderServiceConfigGeminiEnterpriseDirectApiKey;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.131.0/docs/resources/ai_gateway_model_provider_service#project_id AiGatewayModelProviderService#project_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.132.0/docs/resources/ai_gateway_model_provider_service#project_id AiGatewayModelProviderService#project_id}
   */
   readonly projectId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.131.0/docs/resources/ai_gateway_model_provider_service#region AiGatewayModelProviderService#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.132.0/docs/resources/ai_gateway_model_provider_service#region AiGatewayModelProviderService#region}
   */
   readonly region?: string;
 }
@@ -2309,7 +2270,7 @@ export class AiGatewayModelProviderServiceConfigGeminiEnterpriseDirectOutputRefe
 }
 export interface AiGatewayModelProviderServiceConfigGeminiEnterprise {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.131.0/docs/resources/ai_gateway_model_provider_service#direct AiGatewayModelProviderService#direct}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.132.0/docs/resources/ai_gateway_model_provider_service#direct AiGatewayModelProviderService#direct}
   */
   readonly direct?: AiGatewayModelProviderServiceConfigGeminiEnterpriseDirect;
 }
@@ -2403,15 +2364,11 @@ export class AiGatewayModelProviderServiceConfigGeminiEnterpriseOutputReference 
 }
 export interface AiGatewayModelProviderServiceConfigInferenceTable {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.131.0/docs/resources/ai_gateway_model_provider_service#disabled AiGatewayModelProviderService#disabled}
-  */
-  readonly disabled?: boolean | cdktn.IResolvable;
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.131.0/docs/resources/ai_gateway_model_provider_service#parent AiGatewayModelProviderService#parent}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.132.0/docs/resources/ai_gateway_model_provider_service#parent AiGatewayModelProviderService#parent}
   */
   readonly parent: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.131.0/docs/resources/ai_gateway_model_provider_service#table_name_prefix AiGatewayModelProviderService#table_name_prefix}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.132.0/docs/resources/ai_gateway_model_provider_service#table_name_prefix AiGatewayModelProviderService#table_name_prefix}
   */
   readonly tableNamePrefix?: string;
 }
@@ -2422,7 +2379,6 @@ export function aiGatewayModelProviderServiceConfigInferenceTableToTerraform(str
     throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
-    disabled: cdktn.booleanToTerraform(struct!.disabled),
     parent: cdktn.stringToTerraform(struct!.parent),
     table_name_prefix: cdktn.stringToTerraform(struct!.tableNamePrefix),
   }
@@ -2435,12 +2391,6 @@ export function aiGatewayModelProviderServiceConfigInferenceTableToHclTerraform(
     throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
-    disabled: {
-      value: cdktn.booleanToHclTerraform(struct!.disabled),
-      isBlock: false,
-      type: "simple",
-      storageClassType: "boolean",
-    },
     parent: {
       value: cdktn.stringToHclTerraform(struct!.parent),
       isBlock: false,
@@ -2477,10 +2427,6 @@ export class AiGatewayModelProviderServiceConfigInferenceTableOutputReference ex
     }
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._disabled !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.disabled = this._disabled;
-    }
     if (this._parent !== undefined) {
       hasAnyValues = true;
       internalValueResult.parent = this._parent;
@@ -2496,7 +2442,6 @@ export class AiGatewayModelProviderServiceConfigInferenceTableOutputReference ex
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
-      this._disabled = undefined;
       this._parent = undefined;
       this._tableNamePrefix = undefined;
     }
@@ -2507,26 +2452,9 @@ export class AiGatewayModelProviderServiceConfigInferenceTableOutputReference ex
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
       this.resolvableValue = undefined;
-      this._disabled = value.disabled;
       this._parent = value.parent;
       this._tableNamePrefix = value.tableNamePrefix;
     }
-  }
-
-  // disabled - computed: false, optional: true, required: false
-  private _disabled?: boolean | cdktn.IResolvable; 
-  public get disabled() {
-    return this.getBooleanAttribute('disabled');
-  }
-  public set disabled(value: boolean | cdktn.IResolvable) {
-    this._disabled = value;
-  }
-  public resetDisabled() {
-    this._disabled = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get disabledInput() {
-    return this._disabled;
   }
 
   // is_deleted - computed: true, optional: false, required: false
@@ -2570,7 +2498,7 @@ export class AiGatewayModelProviderServiceConfigInferenceTableOutputReference ex
 }
 export interface AiGatewayModelProviderServiceConfigMicrosoftFoundryDirectApiKey {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.131.0/docs/resources/ai_gateway_model_provider_service#plaintext AiGatewayModelProviderService#plaintext}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.132.0/docs/resources/ai_gateway_model_provider_service#plaintext AiGatewayModelProviderService#plaintext}
   */
   readonly plaintext?: string;
 }
@@ -2664,7 +2592,7 @@ export class AiGatewayModelProviderServiceConfigMicrosoftFoundryDirectApiKeyOutp
 }
 export interface AiGatewayModelProviderServiceConfigMicrosoftFoundryDirectEntraServicePrincipalClientSecret {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.131.0/docs/resources/ai_gateway_model_provider_service#plaintext AiGatewayModelProviderService#plaintext}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.132.0/docs/resources/ai_gateway_model_provider_service#plaintext AiGatewayModelProviderService#plaintext}
   */
   readonly plaintext?: string;
 }
@@ -2758,15 +2686,15 @@ export class AiGatewayModelProviderServiceConfigMicrosoftFoundryDirectEntraServi
 }
 export interface AiGatewayModelProviderServiceConfigMicrosoftFoundryDirectEntraServicePrincipal {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.131.0/docs/resources/ai_gateway_model_provider_service#client_id AiGatewayModelProviderService#client_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.132.0/docs/resources/ai_gateway_model_provider_service#client_id AiGatewayModelProviderService#client_id}
   */
   readonly clientId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.131.0/docs/resources/ai_gateway_model_provider_service#client_secret AiGatewayModelProviderService#client_secret}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.132.0/docs/resources/ai_gateway_model_provider_service#client_secret AiGatewayModelProviderService#client_secret}
   */
   readonly clientSecret?: AiGatewayModelProviderServiceConfigMicrosoftFoundryDirectEntraServicePrincipalClientSecret;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.131.0/docs/resources/ai_gateway_model_provider_service#tenant_id AiGatewayModelProviderService#tenant_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.132.0/docs/resources/ai_gateway_model_provider_service#tenant_id AiGatewayModelProviderService#tenant_id}
   */
   readonly tenantId?: string;
 }
@@ -2918,7 +2846,7 @@ export class AiGatewayModelProviderServiceConfigMicrosoftFoundryDirectEntraServi
 }
 export interface AiGatewayModelProviderServiceConfigMicrosoftFoundryDirectServiceCredential {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.131.0/docs/resources/ai_gateway_model_provider_service#name AiGatewayModelProviderService#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.132.0/docs/resources/ai_gateway_model_provider_service#name AiGatewayModelProviderService#name}
   */
   readonly name: string;
 }
@@ -3009,19 +2937,19 @@ export class AiGatewayModelProviderServiceConfigMicrosoftFoundryDirectServiceCre
 }
 export interface AiGatewayModelProviderServiceConfigMicrosoftFoundryDirect {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.131.0/docs/resources/ai_gateway_model_provider_service#api_key AiGatewayModelProviderService#api_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.132.0/docs/resources/ai_gateway_model_provider_service#api_key AiGatewayModelProviderService#api_key}
   */
   readonly apiKey?: AiGatewayModelProviderServiceConfigMicrosoftFoundryDirectApiKey;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.131.0/docs/resources/ai_gateway_model_provider_service#base_url AiGatewayModelProviderService#base_url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.132.0/docs/resources/ai_gateway_model_provider_service#base_url AiGatewayModelProviderService#base_url}
   */
   readonly baseUrl?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.131.0/docs/resources/ai_gateway_model_provider_service#entra_service_principal AiGatewayModelProviderService#entra_service_principal}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.132.0/docs/resources/ai_gateway_model_provider_service#entra_service_principal AiGatewayModelProviderService#entra_service_principal}
   */
   readonly entraServicePrincipal?: AiGatewayModelProviderServiceConfigMicrosoftFoundryDirectEntraServicePrincipal;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.131.0/docs/resources/ai_gateway_model_provider_service#service_credential AiGatewayModelProviderService#service_credential}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.132.0/docs/resources/ai_gateway_model_provider_service#service_credential AiGatewayModelProviderService#service_credential}
   */
   readonly serviceCredential?: AiGatewayModelProviderServiceConfigMicrosoftFoundryDirectServiceCredential;
 }
@@ -3202,7 +3130,7 @@ export class AiGatewayModelProviderServiceConfigMicrosoftFoundryDirectOutputRefe
 }
 export interface AiGatewayModelProviderServiceConfigMicrosoftFoundry {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.131.0/docs/resources/ai_gateway_model_provider_service#direct AiGatewayModelProviderService#direct}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.132.0/docs/resources/ai_gateway_model_provider_service#direct AiGatewayModelProviderService#direct}
   */
   readonly direct?: AiGatewayModelProviderServiceConfigMicrosoftFoundryDirect;
 }
@@ -3296,7 +3224,7 @@ export class AiGatewayModelProviderServiceConfigMicrosoftFoundryOutputReference 
 }
 export interface AiGatewayModelProviderServiceConfigOpenaiDirectApiKey {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.131.0/docs/resources/ai_gateway_model_provider_service#plaintext AiGatewayModelProviderService#plaintext}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.132.0/docs/resources/ai_gateway_model_provider_service#plaintext AiGatewayModelProviderService#plaintext}
   */
   readonly plaintext?: string;
 }
@@ -3390,15 +3318,15 @@ export class AiGatewayModelProviderServiceConfigOpenaiDirectApiKeyOutputReferenc
 }
 export interface AiGatewayModelProviderServiceConfigOpenaiDirect {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.131.0/docs/resources/ai_gateway_model_provider_service#api_key AiGatewayModelProviderService#api_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.132.0/docs/resources/ai_gateway_model_provider_service#api_key AiGatewayModelProviderService#api_key}
   */
   readonly apiKey?: AiGatewayModelProviderServiceConfigOpenaiDirectApiKey;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.131.0/docs/resources/ai_gateway_model_provider_service#base_url AiGatewayModelProviderService#base_url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.132.0/docs/resources/ai_gateway_model_provider_service#base_url AiGatewayModelProviderService#base_url}
   */
   readonly baseUrl?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.131.0/docs/resources/ai_gateway_model_provider_service#organization AiGatewayModelProviderService#organization}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.132.0/docs/resources/ai_gateway_model_provider_service#organization AiGatewayModelProviderService#organization}
   */
   readonly organization?: string;
 }
@@ -3550,7 +3478,7 @@ export class AiGatewayModelProviderServiceConfigOpenaiDirectOutputReference exte
 }
 export interface AiGatewayModelProviderServiceConfigOpenai {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.131.0/docs/resources/ai_gateway_model_provider_service#direct AiGatewayModelProviderService#direct}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.132.0/docs/resources/ai_gateway_model_provider_service#direct AiGatewayModelProviderService#direct}
   */
   readonly direct?: AiGatewayModelProviderServiceConfigOpenaiDirect;
 }
@@ -3644,31 +3572,23 @@ export class AiGatewayModelProviderServiceConfigOpenaiOutputReference extends cd
 }
 export interface AiGatewayModelProviderServiceConfigRateLimits {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.131.0/docs/resources/ai_gateway_model_provider_service#key AiGatewayModelProviderService#key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.132.0/docs/resources/ai_gateway_model_provider_service#key AiGatewayModelProviderService#key}
   */
   readonly key: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.131.0/docs/resources/ai_gateway_model_provider_service#principal AiGatewayModelProviderService#principal}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.132.0/docs/resources/ai_gateway_model_provider_service#principal AiGatewayModelProviderService#principal}
   */
   readonly principal?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.131.0/docs/resources/ai_gateway_model_provider_service#renewal_period AiGatewayModelProviderService#renewal_period}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.132.0/docs/resources/ai_gateway_model_provider_service#renewal_period AiGatewayModelProviderService#renewal_period}
   */
   readonly renewalPeriod: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.131.0/docs/resources/ai_gateway_model_provider_service#request_tag_key AiGatewayModelProviderService#request_tag_key}
-  */
-  readonly requestTagKey?: string;
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.131.0/docs/resources/ai_gateway_model_provider_service#request_tag_value AiGatewayModelProviderService#request_tag_value}
-  */
-  readonly requestTagValue?: string;
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.131.0/docs/resources/ai_gateway_model_provider_service#requests AiGatewayModelProviderService#requests}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.132.0/docs/resources/ai_gateway_model_provider_service#requests AiGatewayModelProviderService#requests}
   */
   readonly requests?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.131.0/docs/resources/ai_gateway_model_provider_service#tokens AiGatewayModelProviderService#tokens}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.132.0/docs/resources/ai_gateway_model_provider_service#tokens AiGatewayModelProviderService#tokens}
   */
   readonly tokens?: number;
 }
@@ -3682,8 +3602,6 @@ export function aiGatewayModelProviderServiceConfigRateLimitsToTerraform(struct?
     key: cdktn.stringToTerraform(struct!.key),
     principal: cdktn.stringToTerraform(struct!.principal),
     renewal_period: cdktn.stringToTerraform(struct!.renewalPeriod),
-    request_tag_key: cdktn.stringToTerraform(struct!.requestTagKey),
-    request_tag_value: cdktn.stringToTerraform(struct!.requestTagValue),
     requests: cdktn.numberToTerraform(struct!.requests),
     tokens: cdktn.numberToTerraform(struct!.tokens),
   }
@@ -3710,18 +3628,6 @@ export function aiGatewayModelProviderServiceConfigRateLimitsToHclTerraform(stru
     },
     renewal_period: {
       value: cdktn.stringToHclTerraform(struct!.renewalPeriod),
-      isBlock: false,
-      type: "simple",
-      storageClassType: "string",
-    },
-    request_tag_key: {
-      value: cdktn.stringToHclTerraform(struct!.requestTagKey),
-      isBlock: false,
-      type: "simple",
-      storageClassType: "string",
-    },
-    request_tag_value: {
-      value: cdktn.stringToHclTerraform(struct!.requestTagValue),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -3776,14 +3682,6 @@ export class AiGatewayModelProviderServiceConfigRateLimitsOutputReference extend
       hasAnyValues = true;
       internalValueResult.renewalPeriod = this._renewalPeriod;
     }
-    if (this._requestTagKey !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.requestTagKey = this._requestTagKey;
-    }
-    if (this._requestTagValue !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.requestTagValue = this._requestTagValue;
-    }
     if (this._requests !== undefined) {
       hasAnyValues = true;
       internalValueResult.requests = this._requests;
@@ -3802,8 +3700,6 @@ export class AiGatewayModelProviderServiceConfigRateLimitsOutputReference extend
       this._key = undefined;
       this._principal = undefined;
       this._renewalPeriod = undefined;
-      this._requestTagKey = undefined;
-      this._requestTagValue = undefined;
       this._requests = undefined;
       this._tokens = undefined;
     }
@@ -3817,8 +3713,6 @@ export class AiGatewayModelProviderServiceConfigRateLimitsOutputReference extend
       this._key = value.key;
       this._principal = value.principal;
       this._renewalPeriod = value.renewalPeriod;
-      this._requestTagKey = value.requestTagKey;
-      this._requestTagValue = value.requestTagValue;
       this._requests = value.requests;
       this._tokens = value.tokens;
     }
@@ -3864,38 +3758,6 @@ export class AiGatewayModelProviderServiceConfigRateLimitsOutputReference extend
   // Temporarily expose input value. Use with caution.
   public get renewalPeriodInput() {
     return this._renewalPeriod;
-  }
-
-  // request_tag_key - computed: false, optional: true, required: false
-  private _requestTagKey?: string; 
-  public get requestTagKey() {
-    return this.getStringAttribute('request_tag_key');
-  }
-  public set requestTagKey(value: string) {
-    this._requestTagKey = value;
-  }
-  public resetRequestTagKey() {
-    this._requestTagKey = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get requestTagKeyInput() {
-    return this._requestTagKey;
-  }
-
-  // request_tag_value - computed: false, optional: true, required: false
-  private _requestTagValue?: string; 
-  public get requestTagValue() {
-    return this.getStringAttribute('request_tag_value');
-  }
-  public set requestTagValue(value: string) {
-    this._requestTagValue = value;
-  }
-  public resetRequestTagValue() {
-    this._requestTagValue = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get requestTagValueInput() {
-    return this._requestTagValue;
   }
 
   // requests - computed: false, optional: true, required: false
@@ -3952,11 +3814,11 @@ export class AiGatewayModelProviderServiceConfigRateLimitsList extends cdktn.Com
 }
 export interface AiGatewayModelProviderServiceConfigTargets {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.131.0/docs/resources/ai_gateway_model_provider_service#model AiGatewayModelProviderService#model}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.132.0/docs/resources/ai_gateway_model_provider_service#model AiGatewayModelProviderService#model}
   */
   readonly model: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.131.0/docs/resources/ai_gateway_model_provider_service#native_api_types AiGatewayModelProviderService#native_api_types}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.132.0/docs/resources/ai_gateway_model_provider_service#native_api_types AiGatewayModelProviderService#native_api_types}
   */
   readonly nativeApiTypes?: string[];
 }
@@ -4098,63 +3960,63 @@ export class AiGatewayModelProviderServiceConfigTargetsList extends cdktn.Comple
 }
 export interface AiGatewayModelProviderServiceConfigA {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.131.0/docs/resources/ai_gateway_model_provider_service#allow_all_targets AiGatewayModelProviderService#allow_all_targets}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.132.0/docs/resources/ai_gateway_model_provider_service#allow_all_targets AiGatewayModelProviderService#allow_all_targets}
   */
   readonly allowAllTargets?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.131.0/docs/resources/ai_gateway_model_provider_service#amazon_bedrock AiGatewayModelProviderService#amazon_bedrock}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.132.0/docs/resources/ai_gateway_model_provider_service#amazon_bedrock AiGatewayModelProviderService#amazon_bedrock}
   */
   readonly amazonBedrock?: AiGatewayModelProviderServiceConfigAmazonBedrock;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.131.0/docs/resources/ai_gateway_model_provider_service#anthropic AiGatewayModelProviderService#anthropic}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.132.0/docs/resources/ai_gateway_model_provider_service#anthropic AiGatewayModelProviderService#anthropic}
   */
   readonly anthropic?: AiGatewayModelProviderServiceConfigAnthropic;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.131.0/docs/resources/ai_gateway_model_provider_service#azure_openai AiGatewayModelProviderService#azure_openai}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.132.0/docs/resources/ai_gateway_model_provider_service#azure_openai AiGatewayModelProviderService#azure_openai}
   */
   readonly azureOpenai?: AiGatewayModelProviderServiceConfigAzureOpenai;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.131.0/docs/resources/ai_gateway_model_provider_service#custom AiGatewayModelProviderService#custom}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.132.0/docs/resources/ai_gateway_model_provider_service#custom AiGatewayModelProviderService#custom}
   */
   readonly custom?: AiGatewayModelProviderServiceConfigCustom;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.131.0/docs/resources/ai_gateway_model_provider_service#forward_headers AiGatewayModelProviderService#forward_headers}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.132.0/docs/resources/ai_gateway_model_provider_service#forward_headers AiGatewayModelProviderService#forward_headers}
   */
   readonly forwardHeaders?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.131.0/docs/resources/ai_gateway_model_provider_service#forward_query_parameters AiGatewayModelProviderService#forward_query_parameters}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.132.0/docs/resources/ai_gateway_model_provider_service#forward_query_parameters AiGatewayModelProviderService#forward_query_parameters}
   */
   readonly forwardQueryParameters?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.131.0/docs/resources/ai_gateway_model_provider_service#forward_unmanaged_paths AiGatewayModelProviderService#forward_unmanaged_paths}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.132.0/docs/resources/ai_gateway_model_provider_service#forward_unmanaged_paths AiGatewayModelProviderService#forward_unmanaged_paths}
   */
   readonly forwardUnmanagedPaths?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.131.0/docs/resources/ai_gateway_model_provider_service#gemini_enterprise AiGatewayModelProviderService#gemini_enterprise}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.132.0/docs/resources/ai_gateway_model_provider_service#gemini_enterprise AiGatewayModelProviderService#gemini_enterprise}
   */
   readonly geminiEnterprise?: AiGatewayModelProviderServiceConfigGeminiEnterprise;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.131.0/docs/resources/ai_gateway_model_provider_service#inference_table AiGatewayModelProviderService#inference_table}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.132.0/docs/resources/ai_gateway_model_provider_service#inference_table AiGatewayModelProviderService#inference_table}
   */
   readonly inferenceTable?: AiGatewayModelProviderServiceConfigInferenceTable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.131.0/docs/resources/ai_gateway_model_provider_service#microsoft_foundry AiGatewayModelProviderService#microsoft_foundry}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.132.0/docs/resources/ai_gateway_model_provider_service#microsoft_foundry AiGatewayModelProviderService#microsoft_foundry}
   */
   readonly microsoftFoundry?: AiGatewayModelProviderServiceConfigMicrosoftFoundry;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.131.0/docs/resources/ai_gateway_model_provider_service#openai AiGatewayModelProviderService#openai}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.132.0/docs/resources/ai_gateway_model_provider_service#openai AiGatewayModelProviderService#openai}
   */
   readonly openai?: AiGatewayModelProviderServiceConfigOpenai;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.131.0/docs/resources/ai_gateway_model_provider_service#provider_type AiGatewayModelProviderService#provider_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.132.0/docs/resources/ai_gateway_model_provider_service#provider_type AiGatewayModelProviderService#provider_type}
   */
   readonly providerType?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.131.0/docs/resources/ai_gateway_model_provider_service#rate_limits AiGatewayModelProviderService#rate_limits}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.132.0/docs/resources/ai_gateway_model_provider_service#rate_limits AiGatewayModelProviderService#rate_limits}
   */
   readonly rateLimits?: AiGatewayModelProviderServiceConfigRateLimits[] | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.131.0/docs/resources/ai_gateway_model_provider_service#targets AiGatewayModelProviderService#targets}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.132.0/docs/resources/ai_gateway_model_provider_service#targets AiGatewayModelProviderService#targets}
   */
   readonly targets?: AiGatewayModelProviderServiceConfigTargets[] | cdktn.IResolvable;
 }
@@ -4654,7 +4516,7 @@ export class AiGatewayModelProviderServiceConfigAOutputReference extends cdktn.C
 }
 export interface AiGatewayModelProviderServiceProviderConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.131.0/docs/resources/ai_gateway_model_provider_service#workspace_id AiGatewayModelProviderService#workspace_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.132.0/docs/resources/ai_gateway_model_provider_service#workspace_id AiGatewayModelProviderService#workspace_id}
   */
   readonly workspaceId?: string;
 }
@@ -4748,7 +4610,7 @@ export class AiGatewayModelProviderServiceProviderConfigOutputReference extends 
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.131.0/docs/resources/ai_gateway_model_provider_service databricks_ai_gateway_model_provider_service}
+* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.132.0/docs/resources/ai_gateway_model_provider_service databricks_ai_gateway_model_provider_service}
 */
 export class AiGatewayModelProviderService extends cdktn.TerraformResource {
 
@@ -4764,7 +4626,7 @@ export class AiGatewayModelProviderService extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a AiGatewayModelProviderService resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the AiGatewayModelProviderService to import
-  * @param importFromId The id of the existing AiGatewayModelProviderService that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.131.0/docs/resources/ai_gateway_model_provider_service#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing AiGatewayModelProviderService that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.132.0/docs/resources/ai_gateway_model_provider_service#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the AiGatewayModelProviderService to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -4776,7 +4638,7 @@ export class AiGatewayModelProviderService extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.131.0/docs/resources/ai_gateway_model_provider_service databricks_ai_gateway_model_provider_service} Resource
+  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.132.0/docs/resources/ai_gateway_model_provider_service databricks_ai_gateway_model_provider_service} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -4787,7 +4649,7 @@ export class AiGatewayModelProviderService extends cdktn.TerraformResource {
       terraformResourceType: 'databricks_ai_gateway_model_provider_service',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '1.131.0',
+        providerVersion: '1.132.0',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,
@@ -4801,7 +4663,6 @@ export class AiGatewayModelProviderService extends cdktn.TerraformResource {
     this._comment = config.comment;
     this._config.internalValue = config.config;
     this._modelProviderServiceId = config.modelProviderServiceId;
-    this._owner = config.owner;
     this._parent = config.parent;
     this._providerConfig.internalValue = config.providerConfig;
   }
@@ -4885,22 +4746,6 @@ export class AiGatewayModelProviderService extends cdktn.TerraformResource {
     return this.getStringAttribute('name');
   }
 
-  // owner - computed: true, optional: true, required: false
-  private _owner?: string; 
-  public get owner() {
-    return this.getStringAttribute('owner');
-  }
-  public set owner(value: string) {
-    this._owner = value;
-  }
-  public resetOwner() {
-    this._owner = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get ownerInput() {
-    return this._owner;
-  }
-
   // parent - computed: false, optional: false, required: true
   private _parent?: string; 
   public get parent() {
@@ -4949,7 +4794,6 @@ export class AiGatewayModelProviderService extends cdktn.TerraformResource {
       comment: cdktn.stringToTerraform(this._comment),
       config: aiGatewayModelProviderServiceConfigAToTerraform(this._config.internalValue),
       model_provider_service_id: cdktn.stringToTerraform(this._modelProviderServiceId),
-      owner: cdktn.stringToTerraform(this._owner),
       parent: cdktn.stringToTerraform(this._parent),
       provider_config: aiGatewayModelProviderServiceProviderConfigToTerraform(this._providerConfig.internalValue),
     };
@@ -4971,12 +4815,6 @@ export class AiGatewayModelProviderService extends cdktn.TerraformResource {
       },
       model_provider_service_id: {
         value: cdktn.stringToHclTerraform(this._modelProviderServiceId),
-        isBlock: false,
-        type: "simple",
-        storageClassType: "string",
-      },
-      owner: {
-        value: cdktn.stringToHclTerraform(this._owner),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

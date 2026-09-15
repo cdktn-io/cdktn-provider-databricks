@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/databricks/databricks/1.131.0/docs/data-sources/workspace_iam_external_service_principal_v2
+// https://registry.terraform.io/providers/databricks/databricks/1.132.0/docs/data-sources/workspace_iam_external_service_principal_v2
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,17 +13,17 @@ import * as cdktn from 'cdktn';
 
 export interface DataDatabricksWorkspaceIamExternalServicePrincipalV2Config extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.131.0/docs/data-sources/workspace_iam_external_service_principal_v2#name DataDatabricksWorkspaceIamExternalServicePrincipalV2#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.132.0/docs/data-sources/workspace_iam_external_service_principal_v2#name DataDatabricksWorkspaceIamExternalServicePrincipalV2#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.131.0/docs/data-sources/workspace_iam_external_service_principal_v2#provider_config DataDatabricksWorkspaceIamExternalServicePrincipalV2#provider_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.132.0/docs/data-sources/workspace_iam_external_service_principal_v2#provider_config DataDatabricksWorkspaceIamExternalServicePrincipalV2#provider_config}
   */
   readonly providerConfig?: DataDatabricksWorkspaceIamExternalServicePrincipalV2ProviderConfig;
 }
 export interface DataDatabricksWorkspaceIamExternalServicePrincipalV2ProviderConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.131.0/docs/data-sources/workspace_iam_external_service_principal_v2#workspace_id DataDatabricksWorkspaceIamExternalServicePrincipalV2#workspace_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.132.0/docs/data-sources/workspace_iam_external_service_principal_v2#workspace_id DataDatabricksWorkspaceIamExternalServicePrincipalV2#workspace_id}
   */
   readonly workspaceId?: string;
 }
@@ -117,7 +117,7 @@ export class DataDatabricksWorkspaceIamExternalServicePrincipalV2ProviderConfigO
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.131.0/docs/data-sources/workspace_iam_external_service_principal_v2 databricks_workspace_iam_external_service_principal_v2}
+* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.132.0/docs/data-sources/workspace_iam_external_service_principal_v2 databricks_workspace_iam_external_service_principal_v2}
 */
 export class DataDatabricksWorkspaceIamExternalServicePrincipalV2 extends cdktn.TerraformDataSource {
 
@@ -133,7 +133,7 @@ export class DataDatabricksWorkspaceIamExternalServicePrincipalV2 extends cdktn.
   * Generates CDKTN code for importing a DataDatabricksWorkspaceIamExternalServicePrincipalV2 resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataDatabricksWorkspaceIamExternalServicePrincipalV2 to import
-  * @param importFromId The id of the existing DataDatabricksWorkspaceIamExternalServicePrincipalV2 that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.131.0/docs/data-sources/workspace_iam_external_service_principal_v2#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataDatabricksWorkspaceIamExternalServicePrincipalV2 that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.132.0/docs/data-sources/workspace_iam_external_service_principal_v2#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataDatabricksWorkspaceIamExternalServicePrincipalV2 to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -145,7 +145,7 @@ export class DataDatabricksWorkspaceIamExternalServicePrincipalV2 extends cdktn.
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.131.0/docs/data-sources/workspace_iam_external_service_principal_v2 databricks_workspace_iam_external_service_principal_v2} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.132.0/docs/data-sources/workspace_iam_external_service_principal_v2 databricks_workspace_iam_external_service_principal_v2} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -156,7 +156,7 @@ export class DataDatabricksWorkspaceIamExternalServicePrincipalV2 extends cdktn.
       terraformResourceType: 'databricks_workspace_iam_external_service_principal_v2',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '1.131.0',
+        providerVersion: '1.132.0',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,
