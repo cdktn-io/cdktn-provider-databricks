@@ -4,7 +4,7 @@
 
 ### DataDatabricksAccountIamExternalServicePrincipalV2 <a name="DataDatabricksAccountIamExternalServicePrincipalV2" id="@cdktn/provider-databricks.dataDatabricksAccountIamExternalServicePrincipalV2.DataDatabricksAccountIamExternalServicePrincipalV2"></a>
 
-Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.132.0/docs/data-sources/account_iam_external_service_principal_v2 databricks_account_iam_external_service_principal_v2}.
+Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_iam_external_service_principal_v2 databricks_account_iam_external_service_principal_v2}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksAccountIamExternalServicePrincipalV2.DataDatabricksAccountIamExternalServicePrincipalV2.Initializer"></a>
 
@@ -36,7 +36,7 @@ dataDatabricksAccountIamExternalServicePrincipalV2.DataDatabricksAccountIamExter
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountIamExternalServicePrincipalV2.DataDatabricksAccountIamExternalServicePrincipalV2.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountIamExternalServicePrincipalV2.DataDatabricksAccountIamExternalServicePrincipalV2.Initializer.parameter.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountIamExternalServicePrincipalV2.DataDatabricksAccountIamExternalServicePrincipalV2.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountIamExternalServicePrincipalV2.DataDatabricksAccountIamExternalServicePrincipalV2.Initializer.parameter.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.132.0/docs/data-sources/account_iam_external_service_principal_v2#name DataDatabricksAccountIamExternalServicePrincipalV2#name}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountIamExternalServicePrincipalV2.DataDatabricksAccountIamExternalServicePrincipalV2.Initializer.parameter.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_iam_external_service_principal_v2#name DataDatabricksAccountIamExternalServicePrincipalV2#name}. |
 
 ---
 
@@ -104,7 +104,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.132.0/docs/data-sources/account_iam_external_service_principal_v2#name DataDatabricksAccountIamExternalServicePrincipalV2#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_iam_external_service_principal_v2#name DataDatabricksAccountIamExternalServicePrincipalV2#name}.
 
 ---
 
@@ -487,7 +487,7 @@ The construct id used in the generated config for the DataDatabricksAccountIamEx
 
 The id of the existing DataDatabricksAccountIamExternalServicePrincipalV2 that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.132.0/docs/data-sources/account_iam_external_service_principal_v2#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_iam_external_service_principal_v2#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -778,7 +778,7 @@ dataDatabricksAccountIamExternalServicePrincipalV2.DataDatabricksAccountIamExter
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountIamExternalServicePrincipalV2.DataDatabricksAccountIamExternalServicePrincipalV2Config.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountIamExternalServicePrincipalV2.DataDatabricksAccountIamExternalServicePrincipalV2Config.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountIamExternalServicePrincipalV2.DataDatabricksAccountIamExternalServicePrincipalV2Config.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountIamExternalServicePrincipalV2.DataDatabricksAccountIamExternalServicePrincipalV2Config.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.132.0/docs/data-sources/account_iam_external_service_principal_v2#name DataDatabricksAccountIamExternalServicePrincipalV2#name}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountIamExternalServicePrincipalV2.DataDatabricksAccountIamExternalServicePrincipalV2Config.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_iam_external_service_principal_v2#name DataDatabricksAccountIamExternalServicePrincipalV2#name}. |
 
 ---
 
@@ -860,7 +860,7 @@ name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.132.0/docs/data-sources/account_iam_external_service_principal_v2#name DataDatabricksAccountIamExternalServicePrincipalV2#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_iam_external_service_principal_v2#name DataDatabricksAccountIamExternalServicePrincipalV2#name}.
 
 ---
 

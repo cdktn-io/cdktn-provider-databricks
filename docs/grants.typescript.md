@@ -4,7 +4,7 @@
 
 ### Grants <a name="Grants" id="@cdktn/provider-databricks.grants.Grants"></a>
 
-Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.132.0/docs/resources/grants databricks_grants}.
+Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/grants databricks_grants}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.grants.Grants.Initializer"></a>
 
@@ -655,7 +655,7 @@ The construct id used in the generated config for the Grants to import.
 
 The id of the existing Grants that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.132.0/docs/resources/grants#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/grants#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1334,26 +1334,26 @@ const grantsConfig: grants.GrantsConfig = { ... }
 | <code><a href="#@cdktn/provider-databricks.grants.GrantsConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.grants.GrantsConfig.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.grants.GrantsConfig.property.grant">grant</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-databricks.grants.GrantsGrant">GrantsGrant</a>[]</code> | grant block. |
-| <code><a href="#@cdktn/provider-databricks.grants.GrantsConfig.property.catalog">catalog</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.132.0/docs/resources/grants#catalog Grants#catalog}. |
-| <code><a href="#@cdktn/provider-databricks.grants.GrantsConfig.property.credential">credential</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.132.0/docs/resources/grants#credential Grants#credential}. |
-| <code><a href="#@cdktn/provider-databricks.grants.GrantsConfig.property.externalLocation">externalLocation</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.132.0/docs/resources/grants#external_location Grants#external_location}. |
-| <code><a href="#@cdktn/provider-databricks.grants.GrantsConfig.property.foreignConnection">foreignConnection</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.132.0/docs/resources/grants#foreign_connection Grants#foreign_connection}. |
-| <code><a href="#@cdktn/provider-databricks.grants.GrantsConfig.property.function">function</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.132.0/docs/resources/grants#function Grants#function}. |
-| <code><a href="#@cdktn/provider-databricks.grants.GrantsConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.132.0/docs/resources/grants#id Grants#id}. |
-| <code><a href="#@cdktn/provider-databricks.grants.GrantsConfig.property.mcpService">mcpService</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.132.0/docs/resources/grants#mcp_service Grants#mcp_service}. |
-| <code><a href="#@cdktn/provider-databricks.grants.GrantsConfig.property.metastore">metastore</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.132.0/docs/resources/grants#metastore Grants#metastore}. |
-| <code><a href="#@cdktn/provider-databricks.grants.GrantsConfig.property.model">model</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.132.0/docs/resources/grants#model Grants#model}. |
-| <code><a href="#@cdktn/provider-databricks.grants.GrantsConfig.property.modelProviderService">modelProviderService</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.132.0/docs/resources/grants#model_provider_service Grants#model_provider_service}. |
-| <code><a href="#@cdktn/provider-databricks.grants.GrantsConfig.property.modelService">modelService</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.132.0/docs/resources/grants#model_service Grants#model_service}. |
-| <code><a href="#@cdktn/provider-databricks.grants.GrantsConfig.property.pipeline">pipeline</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.132.0/docs/resources/grants#pipeline Grants#pipeline}. |
+| <code><a href="#@cdktn/provider-databricks.grants.GrantsConfig.property.catalog">catalog</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/grants#catalog Grants#catalog}. |
+| <code><a href="#@cdktn/provider-databricks.grants.GrantsConfig.property.credential">credential</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/grants#credential Grants#credential}. |
+| <code><a href="#@cdktn/provider-databricks.grants.GrantsConfig.property.externalLocation">externalLocation</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/grants#external_location Grants#external_location}. |
+| <code><a href="#@cdktn/provider-databricks.grants.GrantsConfig.property.foreignConnection">foreignConnection</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/grants#foreign_connection Grants#foreign_connection}. |
+| <code><a href="#@cdktn/provider-databricks.grants.GrantsConfig.property.function">function</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/grants#function Grants#function}. |
+| <code><a href="#@cdktn/provider-databricks.grants.GrantsConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/grants#id Grants#id}. |
+| <code><a href="#@cdktn/provider-databricks.grants.GrantsConfig.property.mcpService">mcpService</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/grants#mcp_service Grants#mcp_service}. |
+| <code><a href="#@cdktn/provider-databricks.grants.GrantsConfig.property.metastore">metastore</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/grants#metastore Grants#metastore}. |
+| <code><a href="#@cdktn/provider-databricks.grants.GrantsConfig.property.model">model</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/grants#model Grants#model}. |
+| <code><a href="#@cdktn/provider-databricks.grants.GrantsConfig.property.modelProviderService">modelProviderService</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/grants#model_provider_service Grants#model_provider_service}. |
+| <code><a href="#@cdktn/provider-databricks.grants.GrantsConfig.property.modelService">modelService</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/grants#model_service Grants#model_service}. |
+| <code><a href="#@cdktn/provider-databricks.grants.GrantsConfig.property.pipeline">pipeline</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/grants#pipeline Grants#pipeline}. |
 | <code><a href="#@cdktn/provider-databricks.grants.GrantsConfig.property.providerConfig">providerConfig</a></code> | <code><a href="#@cdktn/provider-databricks.grants.GrantsProviderConfig">GrantsProviderConfig</a></code> | provider_config block. |
-| <code><a href="#@cdktn/provider-databricks.grants.GrantsConfig.property.recipient">recipient</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.132.0/docs/resources/grants#recipient Grants#recipient}. |
-| <code><a href="#@cdktn/provider-databricks.grants.GrantsConfig.property.schema">schema</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.132.0/docs/resources/grants#schema Grants#schema}. |
-| <code><a href="#@cdktn/provider-databricks.grants.GrantsConfig.property.secret">secret</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.132.0/docs/resources/grants#secret Grants#secret}. |
-| <code><a href="#@cdktn/provider-databricks.grants.GrantsConfig.property.share">share</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.132.0/docs/resources/grants#share Grants#share}. |
-| <code><a href="#@cdktn/provider-databricks.grants.GrantsConfig.property.storageCredential">storageCredential</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.132.0/docs/resources/grants#storage_credential Grants#storage_credential}. |
-| <code><a href="#@cdktn/provider-databricks.grants.GrantsConfig.property.table">table</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.132.0/docs/resources/grants#table Grants#table}. |
-| <code><a href="#@cdktn/provider-databricks.grants.GrantsConfig.property.volume">volume</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.132.0/docs/resources/grants#volume Grants#volume}. |
+| <code><a href="#@cdktn/provider-databricks.grants.GrantsConfig.property.recipient">recipient</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/grants#recipient Grants#recipient}. |
+| <code><a href="#@cdktn/provider-databricks.grants.GrantsConfig.property.schema">schema</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/grants#schema Grants#schema}. |
+| <code><a href="#@cdktn/provider-databricks.grants.GrantsConfig.property.secret">secret</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/grants#secret Grants#secret}. |
+| <code><a href="#@cdktn/provider-databricks.grants.GrantsConfig.property.share">share</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/grants#share Grants#share}. |
+| <code><a href="#@cdktn/provider-databricks.grants.GrantsConfig.property.storageCredential">storageCredential</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/grants#storage_credential Grants#storage_credential}. |
+| <code><a href="#@cdktn/provider-databricks.grants.GrantsConfig.property.table">table</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/grants#table Grants#table}. |
+| <code><a href="#@cdktn/provider-databricks.grants.GrantsConfig.property.volume">volume</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/grants#volume Grants#volume}. |
 
 ---
 
@@ -1437,7 +1437,7 @@ public readonly grant: IResolvable | GrantsGrant[];
 
 grant block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.132.0/docs/resources/grants#grant Grants#grant}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/grants#grant Grants#grant}
 
 ---
 
@@ -1449,7 +1449,7 @@ public readonly catalog: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.132.0/docs/resources/grants#catalog Grants#catalog}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/grants#catalog Grants#catalog}.
 
 ---
 
@@ -1461,7 +1461,7 @@ public readonly credential: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.132.0/docs/resources/grants#credential Grants#credential}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/grants#credential Grants#credential}.
 
 ---
 
@@ -1473,7 +1473,7 @@ public readonly externalLocation: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.132.0/docs/resources/grants#external_location Grants#external_location}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/grants#external_location Grants#external_location}.
 
 ---
 
@@ -1485,7 +1485,7 @@ public readonly foreignConnection: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.132.0/docs/resources/grants#foreign_connection Grants#foreign_connection}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/grants#foreign_connection Grants#foreign_connection}.
 
 ---
 
@@ -1497,7 +1497,7 @@ public readonly function: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.132.0/docs/resources/grants#function Grants#function}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/grants#function Grants#function}.
 
 ---
 
@@ -1509,7 +1509,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.132.0/docs/resources/grants#id Grants#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/grants#id Grants#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1524,7 +1524,7 @@ public readonly mcpService: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.132.0/docs/resources/grants#mcp_service Grants#mcp_service}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/grants#mcp_service Grants#mcp_service}.
 
 ---
 
@@ -1536,7 +1536,7 @@ public readonly metastore: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.132.0/docs/resources/grants#metastore Grants#metastore}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/grants#metastore Grants#metastore}.
 
 ---
 
@@ -1548,7 +1548,7 @@ public readonly model: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.132.0/docs/resources/grants#model Grants#model}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/grants#model Grants#model}.
 
 ---
 
@@ -1560,7 +1560,7 @@ public readonly modelProviderService: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.132.0/docs/resources/grants#model_provider_service Grants#model_provider_service}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/grants#model_provider_service Grants#model_provider_service}.
 
 ---
 
@@ -1572,7 +1572,7 @@ public readonly modelService: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.132.0/docs/resources/grants#model_service Grants#model_service}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/grants#model_service Grants#model_service}.
 
 ---
 
@@ -1584,7 +1584,7 @@ public readonly pipeline: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.132.0/docs/resources/grants#pipeline Grants#pipeline}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/grants#pipeline Grants#pipeline}.
 
 ---
 
@@ -1598,7 +1598,7 @@ public readonly providerConfig: GrantsProviderConfig;
 
 provider_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.132.0/docs/resources/grants#provider_config Grants#provider_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/grants#provider_config Grants#provider_config}
 
 ---
 
@@ -1610,7 +1610,7 @@ public readonly recipient: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.132.0/docs/resources/grants#recipient Grants#recipient}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/grants#recipient Grants#recipient}.
 
 ---
 
@@ -1622,7 +1622,7 @@ public readonly schema: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.132.0/docs/resources/grants#schema Grants#schema}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/grants#schema Grants#schema}.
 
 ---
 
@@ -1634,7 +1634,7 @@ public readonly secret: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.132.0/docs/resources/grants#secret Grants#secret}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/grants#secret Grants#secret}.
 
 ---
 
@@ -1646,7 +1646,7 @@ public readonly share: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.132.0/docs/resources/grants#share Grants#share}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/grants#share Grants#share}.
 
 ---
 
@@ -1658,7 +1658,7 @@ public readonly storageCredential: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.132.0/docs/resources/grants#storage_credential Grants#storage_credential}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/grants#storage_credential Grants#storage_credential}.
 
 ---
 
@@ -1670,7 +1670,7 @@ public readonly table: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.132.0/docs/resources/grants#table Grants#table}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/grants#table Grants#table}.
 
 ---
 
@@ -1682,7 +1682,7 @@ public readonly volume: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.132.0/docs/resources/grants#volume Grants#volume}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/grants#volume Grants#volume}.
 
 ---
 
@@ -1700,8 +1700,8 @@ const grantsGrant: grants.GrantsGrant = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.grants.GrantsGrant.property.principal">principal</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.132.0/docs/resources/grants#principal Grants#principal}. |
-| <code><a href="#@cdktn/provider-databricks.grants.GrantsGrant.property.privileges">privileges</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.132.0/docs/resources/grants#privileges Grants#privileges}. |
+| <code><a href="#@cdktn/provider-databricks.grants.GrantsGrant.property.principal">principal</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/grants#principal Grants#principal}. |
+| <code><a href="#@cdktn/provider-databricks.grants.GrantsGrant.property.privileges">privileges</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/grants#privileges Grants#privileges}. |
 
 ---
 
@@ -1713,7 +1713,7 @@ public readonly principal: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.132.0/docs/resources/grants#principal Grants#principal}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/grants#principal Grants#principal}.
 
 ---
 
@@ -1725,7 +1725,7 @@ public readonly privileges: string[];
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.132.0/docs/resources/grants#privileges Grants#privileges}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/grants#privileges Grants#privileges}.
 
 ---
 
@@ -1743,7 +1743,7 @@ const grantsProviderConfig: grants.GrantsProviderConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.grants.GrantsProviderConfig.property.workspaceId">workspaceId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.132.0/docs/resources/grants#workspace_id Grants#workspace_id}. |
+| <code><a href="#@cdktn/provider-databricks.grants.GrantsProviderConfig.property.workspaceId">workspaceId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/grants#workspace_id Grants#workspace_id}. |
 
 ---
 
@@ -1755,7 +1755,7 @@ public readonly workspaceId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.132.0/docs/resources/grants#workspace_id Grants#workspace_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/grants#workspace_id Grants#workspace_id}.
 
 ---
 

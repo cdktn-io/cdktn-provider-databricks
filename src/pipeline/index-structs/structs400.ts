@@ -6,15 +6,15 @@
 import * as cdktn from 'cdktn';
 export interface PipelineRestartWindow {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.132.0/docs/resources/pipeline#days_of_week Pipeline#days_of_week}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/pipeline#days_of_week Pipeline#days_of_week}
   */
   readonly daysOfWeek?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.132.0/docs/resources/pipeline#start_hour Pipeline#start_hour}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/pipeline#start_hour Pipeline#start_hour}
   */
   readonly startHour: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.132.0/docs/resources/pipeline#time_zone_id Pipeline#time_zone_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/pipeline#time_zone_id Pipeline#time_zone_id}
   */
   readonly timeZoneId?: string;
 }
@@ -153,11 +153,11 @@ export class PipelineRestartWindowOutputReference extends cdktn.ComplexObject {
 }
 export interface PipelineRunAs {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.132.0/docs/resources/pipeline#service_principal_name Pipeline#service_principal_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/pipeline#service_principal_name Pipeline#service_principal_name}
   */
   readonly servicePrincipalName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.132.0/docs/resources/pipeline#user_name Pipeline#user_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/pipeline#user_name Pipeline#user_name}
   */
   readonly userName?: string;
 }
@@ -270,7 +270,7 @@ export class PipelineRunAsOutputReference extends cdktn.ComplexObject {
 }
 export interface PipelineTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.132.0/docs/resources/pipeline#default Pipeline#default}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/pipeline#default Pipeline#default}
   */
   readonly default?: string;
 }
@@ -364,11 +364,11 @@ export class PipelineTimeoutsOutputReference extends cdktn.ComplexObject {
 }
 export interface PipelineTriggerCron {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.132.0/docs/resources/pipeline#quartz_cron_schedule Pipeline#quartz_cron_schedule}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/pipeline#quartz_cron_schedule Pipeline#quartz_cron_schedule}
   */
   readonly quartzCronSchedule?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.132.0/docs/resources/pipeline#timezone_id Pipeline#timezone_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/pipeline#timezone_id Pipeline#timezone_id}
   */
   readonly timezoneId?: string;
 }
@@ -532,13 +532,13 @@ export interface PipelineTrigger {
   /**
   * cron block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.132.0/docs/resources/pipeline#cron Pipeline#cron}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/pipeline#cron Pipeline#cron}
   */
   readonly cron?: PipelineTriggerCron;
   /**
   * manual block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.132.0/docs/resources/pipeline#manual Pipeline#manual}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/pipeline#manual Pipeline#manual}
   */
   readonly manual?: PipelineTriggerManual;
 }
