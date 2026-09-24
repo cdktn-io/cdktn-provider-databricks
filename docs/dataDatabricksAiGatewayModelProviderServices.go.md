@@ -4,7 +4,7 @@
 
 ### DataDatabricksAiGatewayModelProviderServices <a name="DataDatabricksAiGatewayModelProviderServices" id="@cdktn/provider-databricks.dataDatabricksAiGatewayModelProviderServices.DataDatabricksAiGatewayModelProviderServices"></a>
 
-Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/ai_gateway_model_provider_services databricks_ai_gateway_model_provider_services}.
+Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/ai_gateway_model_provider_services databricks_ai_gateway_model_provider_services}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksAiGatewayModelProviderServices.DataDatabricksAiGatewayModelProviderServices.Initializer"></a>
 
@@ -428,7 +428,7 @@ The construct id used in the generated config for the DataDatabricksAiGatewayMod
 
 The id of the existing DataDatabricksAiGatewayModelProviderServices that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/ai_gateway_model_provider_services#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/ai_gateway_model_provider_services#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -733,10 +733,10 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadata
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksAiGatewayModelProviderServices.DataDatabricksAiGatewayModelProviderServicesConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksAiGatewayModelProviderServices.DataDatabricksAiGatewayModelProviderServicesConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksAiGatewayModelProviderServices.DataDatabricksAiGatewayModelProviderServicesConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAiGatewayModelProviderServices.DataDatabricksAiGatewayModelProviderServicesConfig.property.pageSize">PageSize</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/ai_gateway_model_provider_services#page_size DataDatabricksAiGatewayModelProviderServices#page_size}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAiGatewayModelProviderServices.DataDatabricksAiGatewayModelProviderServicesConfig.property.parent">Parent</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/ai_gateway_model_provider_services#parent DataDatabricksAiGatewayModelProviderServices#parent}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAiGatewayModelProviderServices.DataDatabricksAiGatewayModelProviderServicesConfig.property.providerConfig">ProviderConfig</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksAiGatewayModelProviderServices.DataDatabricksAiGatewayModelProviderServicesProviderConfig">DataDatabricksAiGatewayModelProviderServicesProviderConfig</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/ai_gateway_model_provider_services#provider_config DataDatabricksAiGatewayModelProviderServices#provider_config}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAiGatewayModelProviderServices.DataDatabricksAiGatewayModelProviderServicesConfig.property.view">View</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/ai_gateway_model_provider_services#view DataDatabricksAiGatewayModelProviderServices#view}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAiGatewayModelProviderServices.DataDatabricksAiGatewayModelProviderServicesConfig.property.pageSize">PageSize</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/ai_gateway_model_provider_services#page_size DataDatabricksAiGatewayModelProviderServices#page_size}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAiGatewayModelProviderServices.DataDatabricksAiGatewayModelProviderServicesConfig.property.parent">Parent</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/ai_gateway_model_provider_services#parent DataDatabricksAiGatewayModelProviderServices#parent}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAiGatewayModelProviderServices.DataDatabricksAiGatewayModelProviderServicesConfig.property.providerConfig">ProviderConfig</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksAiGatewayModelProviderServices.DataDatabricksAiGatewayModelProviderServicesProviderConfig">DataDatabricksAiGatewayModelProviderServicesProviderConfig</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/ai_gateway_model_provider_services#provider_config DataDatabricksAiGatewayModelProviderServices#provider_config}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAiGatewayModelProviderServices.DataDatabricksAiGatewayModelProviderServicesConfig.property.view">View</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/ai_gateway_model_provider_services#view DataDatabricksAiGatewayModelProviderServices#view}. |
 
 ---
 
@@ -818,7 +818,7 @@ PageSize *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/ai_gateway_model_provider_services#page_size DataDatabricksAiGatewayModelProviderServices#page_size}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/ai_gateway_model_provider_services#page_size DataDatabricksAiGatewayModelProviderServices#page_size}.
 
 ---
 
@@ -830,7 +830,7 @@ Parent *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/ai_gateway_model_provider_services#parent DataDatabricksAiGatewayModelProviderServices#parent}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/ai_gateway_model_provider_services#parent DataDatabricksAiGatewayModelProviderServices#parent}.
 
 ---
 
@@ -842,7 +842,7 @@ ProviderConfig DataDatabricksAiGatewayModelProviderServicesProviderConfig
 
 - *Type:* <a href="#@cdktn/provider-databricks.dataDatabricksAiGatewayModelProviderServices.DataDatabricksAiGatewayModelProviderServicesProviderConfig">DataDatabricksAiGatewayModelProviderServicesProviderConfig</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/ai_gateway_model_provider_services#provider_config DataDatabricksAiGatewayModelProviderServices#provider_config}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/ai_gateway_model_provider_services#provider_config DataDatabricksAiGatewayModelProviderServices#provider_config}.
 
 ---
 
@@ -854,7 +854,7 @@ View *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/ai_gateway_model_provider_services#view DataDatabricksAiGatewayModelProviderServices#view}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/ai_gateway_model_provider_services#view DataDatabricksAiGatewayModelProviderServices#view}.
 
 ---
 
@@ -875,8 +875,8 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadata
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAiGatewayModelProviderServices.DataDatabricksAiGatewayModelProviderServicesModelProviderServices.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/ai_gateway_model_provider_services#name DataDatabricksAiGatewayModelProviderServices#name}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAiGatewayModelProviderServices.DataDatabricksAiGatewayModelProviderServicesModelProviderServices.property.providerConfig">ProviderConfig</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksAiGatewayModelProviderServices.DataDatabricksAiGatewayModelProviderServicesModelProviderServicesProviderConfig">DataDatabricksAiGatewayModelProviderServicesModelProviderServicesProviderConfig</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/ai_gateway_model_provider_services#provider_config DataDatabricksAiGatewayModelProviderServices#provider_config}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAiGatewayModelProviderServices.DataDatabricksAiGatewayModelProviderServicesModelProviderServices.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/ai_gateway_model_provider_services#name DataDatabricksAiGatewayModelProviderServices#name}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAiGatewayModelProviderServices.DataDatabricksAiGatewayModelProviderServicesModelProviderServices.property.providerConfig">ProviderConfig</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksAiGatewayModelProviderServices.DataDatabricksAiGatewayModelProviderServicesModelProviderServicesProviderConfig">DataDatabricksAiGatewayModelProviderServicesModelProviderServicesProviderConfig</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/ai_gateway_model_provider_services#provider_config DataDatabricksAiGatewayModelProviderServices#provider_config}. |
 
 ---
 
@@ -888,7 +888,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/ai_gateway_model_provider_services#name DataDatabricksAiGatewayModelProviderServices#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/ai_gateway_model_provider_services#name DataDatabricksAiGatewayModelProviderServices#name}.
 
 ---
 
@@ -900,7 +900,7 @@ ProviderConfig DataDatabricksAiGatewayModelProviderServicesModelProviderServices
 
 - *Type:* <a href="#@cdktn/provider-databricks.dataDatabricksAiGatewayModelProviderServices.DataDatabricksAiGatewayModelProviderServicesModelProviderServicesProviderConfig">DataDatabricksAiGatewayModelProviderServicesModelProviderServicesProviderConfig</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/ai_gateway_model_provider_services#provider_config DataDatabricksAiGatewayModelProviderServices#provider_config}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/ai_gateway_model_provider_services#provider_config DataDatabricksAiGatewayModelProviderServices#provider_config}.
 
 ---
 
@@ -934,21 +934,21 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadata
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAiGatewayModelProviderServices.DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfig.property.allowAllTargets">AllowAllTargets</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/ai_gateway_model_provider_services#allow_all_targets DataDatabricksAiGatewayModelProviderServices#allow_all_targets}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAiGatewayModelProviderServices.DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfig.property.amazonBedrock">AmazonBedrock</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksAiGatewayModelProviderServices.DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigAmazonBedrock">DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigAmazonBedrock</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/ai_gateway_model_provider_services#amazon_bedrock DataDatabricksAiGatewayModelProviderServices#amazon_bedrock}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAiGatewayModelProviderServices.DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfig.property.anthropic">Anthropic</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksAiGatewayModelProviderServices.DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigAnthropic">DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigAnthropic</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/ai_gateway_model_provider_services#anthropic DataDatabricksAiGatewayModelProviderServices#anthropic}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAiGatewayModelProviderServices.DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfig.property.azureOpenai">AzureOpenai</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksAiGatewayModelProviderServices.DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigAzureOpenai">DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigAzureOpenai</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/ai_gateway_model_provider_services#azure_openai DataDatabricksAiGatewayModelProviderServices#azure_openai}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAiGatewayModelProviderServices.DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfig.property.custom">Custom</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksAiGatewayModelProviderServices.DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigCustom">DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigCustom</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/ai_gateway_model_provider_services#custom DataDatabricksAiGatewayModelProviderServices#custom}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAiGatewayModelProviderServices.DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfig.property.forwardHeaders">ForwardHeaders</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/ai_gateway_model_provider_services#forward_headers DataDatabricksAiGatewayModelProviderServices#forward_headers}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAiGatewayModelProviderServices.DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfig.property.forwardQueryParameters">ForwardQueryParameters</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/ai_gateway_model_provider_services#forward_query_parameters DataDatabricksAiGatewayModelProviderServices#forward_query_parameters}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAiGatewayModelProviderServices.DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfig.property.forwardUnmanagedPaths">ForwardUnmanagedPaths</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/ai_gateway_model_provider_services#forward_unmanaged_paths DataDatabricksAiGatewayModelProviderServices#forward_unmanaged_paths}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAiGatewayModelProviderServices.DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfig.property.geminiEnterprise">GeminiEnterprise</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksAiGatewayModelProviderServices.DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigGeminiEnterprise">DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigGeminiEnterprise</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/ai_gateway_model_provider_services#gemini_enterprise DataDatabricksAiGatewayModelProviderServices#gemini_enterprise}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAiGatewayModelProviderServices.DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfig.property.inferenceTable">InferenceTable</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksAiGatewayModelProviderServices.DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigInferenceTable">DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigInferenceTable</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/ai_gateway_model_provider_services#inference_table DataDatabricksAiGatewayModelProviderServices#inference_table}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAiGatewayModelProviderServices.DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfig.property.microsoftFoundry">MicrosoftFoundry</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksAiGatewayModelProviderServices.DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigMicrosoftFoundry">DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigMicrosoftFoundry</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/ai_gateway_model_provider_services#microsoft_foundry DataDatabricksAiGatewayModelProviderServices#microsoft_foundry}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAiGatewayModelProviderServices.DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfig.property.openai">Openai</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksAiGatewayModelProviderServices.DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigOpenai">DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigOpenai</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/ai_gateway_model_provider_services#openai DataDatabricksAiGatewayModelProviderServices#openai}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAiGatewayModelProviderServices.DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfig.property.providerType">ProviderType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/ai_gateway_model_provider_services#provider_type DataDatabricksAiGatewayModelProviderServices#provider_type}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAiGatewayModelProviderServices.DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfig.property.rateLimits">RateLimits</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/ai_gateway_model_provider_services#rate_limits DataDatabricksAiGatewayModelProviderServices#rate_limits}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAiGatewayModelProviderServices.DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfig.property.targets">Targets</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/ai_gateway_model_provider_services#targets DataDatabricksAiGatewayModelProviderServices#targets}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAiGatewayModelProviderServices.DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfig.property.allowAllTargets">AllowAllTargets</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/ai_gateway_model_provider_services#allow_all_targets DataDatabricksAiGatewayModelProviderServices#allow_all_targets}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAiGatewayModelProviderServices.DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfig.property.amazonBedrock">AmazonBedrock</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksAiGatewayModelProviderServices.DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigAmazonBedrock">DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigAmazonBedrock</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/ai_gateway_model_provider_services#amazon_bedrock DataDatabricksAiGatewayModelProviderServices#amazon_bedrock}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAiGatewayModelProviderServices.DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfig.property.anthropic">Anthropic</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksAiGatewayModelProviderServices.DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigAnthropic">DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigAnthropic</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/ai_gateway_model_provider_services#anthropic DataDatabricksAiGatewayModelProviderServices#anthropic}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAiGatewayModelProviderServices.DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfig.property.azureOpenai">AzureOpenai</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksAiGatewayModelProviderServices.DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigAzureOpenai">DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigAzureOpenai</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/ai_gateway_model_provider_services#azure_openai DataDatabricksAiGatewayModelProviderServices#azure_openai}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAiGatewayModelProviderServices.DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfig.property.custom">Custom</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksAiGatewayModelProviderServices.DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigCustom">DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigCustom</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/ai_gateway_model_provider_services#custom DataDatabricksAiGatewayModelProviderServices#custom}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAiGatewayModelProviderServices.DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfig.property.forwardHeaders">ForwardHeaders</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/ai_gateway_model_provider_services#forward_headers DataDatabricksAiGatewayModelProviderServices#forward_headers}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAiGatewayModelProviderServices.DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfig.property.forwardQueryParameters">ForwardQueryParameters</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/ai_gateway_model_provider_services#forward_query_parameters DataDatabricksAiGatewayModelProviderServices#forward_query_parameters}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAiGatewayModelProviderServices.DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfig.property.forwardUnmanagedPaths">ForwardUnmanagedPaths</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/ai_gateway_model_provider_services#forward_unmanaged_paths DataDatabricksAiGatewayModelProviderServices#forward_unmanaged_paths}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAiGatewayModelProviderServices.DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfig.property.geminiEnterprise">GeminiEnterprise</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksAiGatewayModelProviderServices.DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigGeminiEnterprise">DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigGeminiEnterprise</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/ai_gateway_model_provider_services#gemini_enterprise DataDatabricksAiGatewayModelProviderServices#gemini_enterprise}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAiGatewayModelProviderServices.DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfig.property.inferenceTable">InferenceTable</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksAiGatewayModelProviderServices.DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigInferenceTable">DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigInferenceTable</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/ai_gateway_model_provider_services#inference_table DataDatabricksAiGatewayModelProviderServices#inference_table}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAiGatewayModelProviderServices.DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfig.property.microsoftFoundry">MicrosoftFoundry</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksAiGatewayModelProviderServices.DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigMicrosoftFoundry">DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigMicrosoftFoundry</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/ai_gateway_model_provider_services#microsoft_foundry DataDatabricksAiGatewayModelProviderServices#microsoft_foundry}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAiGatewayModelProviderServices.DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfig.property.openai">Openai</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksAiGatewayModelProviderServices.DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigOpenai">DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigOpenai</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/ai_gateway_model_provider_services#openai DataDatabricksAiGatewayModelProviderServices#openai}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAiGatewayModelProviderServices.DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfig.property.providerType">ProviderType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/ai_gateway_model_provider_services#provider_type DataDatabricksAiGatewayModelProviderServices#provider_type}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAiGatewayModelProviderServices.DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfig.property.rateLimits">RateLimits</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/ai_gateway_model_provider_services#rate_limits DataDatabricksAiGatewayModelProviderServices#rate_limits}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAiGatewayModelProviderServices.DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfig.property.targets">Targets</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/ai_gateway_model_provider_services#targets DataDatabricksAiGatewayModelProviderServices#targets}. |
 
 ---
 
@@ -960,7 +960,7 @@ AllowAllTargets interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/ai_gateway_model_provider_services#allow_all_targets DataDatabricksAiGatewayModelProviderServices#allow_all_targets}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/ai_gateway_model_provider_services#allow_all_targets DataDatabricksAiGatewayModelProviderServices#allow_all_targets}.
 
 ---
 
@@ -972,7 +972,7 @@ AmazonBedrock DataDatabricksAiGatewayModelProviderServicesModelProviderServicesC
 
 - *Type:* <a href="#@cdktn/provider-databricks.dataDatabricksAiGatewayModelProviderServices.DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigAmazonBedrock">DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigAmazonBedrock</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/ai_gateway_model_provider_services#amazon_bedrock DataDatabricksAiGatewayModelProviderServices#amazon_bedrock}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/ai_gateway_model_provider_services#amazon_bedrock DataDatabricksAiGatewayModelProviderServices#amazon_bedrock}.
 
 ---
 
@@ -984,7 +984,7 @@ Anthropic DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfi
 
 - *Type:* <a href="#@cdktn/provider-databricks.dataDatabricksAiGatewayModelProviderServices.DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigAnthropic">DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigAnthropic</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/ai_gateway_model_provider_services#anthropic DataDatabricksAiGatewayModelProviderServices#anthropic}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/ai_gateway_model_provider_services#anthropic DataDatabricksAiGatewayModelProviderServices#anthropic}.
 
 ---
 
@@ -996,7 +996,7 @@ AzureOpenai DataDatabricksAiGatewayModelProviderServicesModelProviderServicesCon
 
 - *Type:* <a href="#@cdktn/provider-databricks.dataDatabricksAiGatewayModelProviderServices.DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigAzureOpenai">DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigAzureOpenai</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/ai_gateway_model_provider_services#azure_openai DataDatabricksAiGatewayModelProviderServices#azure_openai}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/ai_gateway_model_provider_services#azure_openai DataDatabricksAiGatewayModelProviderServices#azure_openai}.
 
 ---
 
@@ -1008,7 +1008,7 @@ Custom DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigCu
 
 - *Type:* <a href="#@cdktn/provider-databricks.dataDatabricksAiGatewayModelProviderServices.DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigCustom">DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigCustom</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/ai_gateway_model_provider_services#custom DataDatabricksAiGatewayModelProviderServices#custom}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/ai_gateway_model_provider_services#custom DataDatabricksAiGatewayModelProviderServices#custom}.
 
 ---
 
@@ -1020,7 +1020,7 @@ ForwardHeaders interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/ai_gateway_model_provider_services#forward_headers DataDatabricksAiGatewayModelProviderServices#forward_headers}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/ai_gateway_model_provider_services#forward_headers DataDatabricksAiGatewayModelProviderServices#forward_headers}.
 
 ---
 
@@ -1032,7 +1032,7 @@ ForwardQueryParameters interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/ai_gateway_model_provider_services#forward_query_parameters DataDatabricksAiGatewayModelProviderServices#forward_query_parameters}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/ai_gateway_model_provider_services#forward_query_parameters DataDatabricksAiGatewayModelProviderServices#forward_query_parameters}.
 
 ---
 
@@ -1044,7 +1044,7 @@ ForwardUnmanagedPaths interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/ai_gateway_model_provider_services#forward_unmanaged_paths DataDatabricksAiGatewayModelProviderServices#forward_unmanaged_paths}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/ai_gateway_model_provider_services#forward_unmanaged_paths DataDatabricksAiGatewayModelProviderServices#forward_unmanaged_paths}.
 
 ---
 
@@ -1056,7 +1056,7 @@ GeminiEnterprise DataDatabricksAiGatewayModelProviderServicesModelProviderServic
 
 - *Type:* <a href="#@cdktn/provider-databricks.dataDatabricksAiGatewayModelProviderServices.DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigGeminiEnterprise">DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigGeminiEnterprise</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/ai_gateway_model_provider_services#gemini_enterprise DataDatabricksAiGatewayModelProviderServices#gemini_enterprise}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/ai_gateway_model_provider_services#gemini_enterprise DataDatabricksAiGatewayModelProviderServices#gemini_enterprise}.
 
 ---
 
@@ -1068,7 +1068,7 @@ InferenceTable DataDatabricksAiGatewayModelProviderServicesModelProviderServices
 
 - *Type:* <a href="#@cdktn/provider-databricks.dataDatabricksAiGatewayModelProviderServices.DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigInferenceTable">DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigInferenceTable</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/ai_gateway_model_provider_services#inference_table DataDatabricksAiGatewayModelProviderServices#inference_table}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/ai_gateway_model_provider_services#inference_table DataDatabricksAiGatewayModelProviderServices#inference_table}.
 
 ---
 
@@ -1080,7 +1080,7 @@ MicrosoftFoundry DataDatabricksAiGatewayModelProviderServicesModelProviderServic
 
 - *Type:* <a href="#@cdktn/provider-databricks.dataDatabricksAiGatewayModelProviderServices.DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigMicrosoftFoundry">DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigMicrosoftFoundry</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/ai_gateway_model_provider_services#microsoft_foundry DataDatabricksAiGatewayModelProviderServices#microsoft_foundry}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/ai_gateway_model_provider_services#microsoft_foundry DataDatabricksAiGatewayModelProviderServices#microsoft_foundry}.
 
 ---
 
@@ -1092,7 +1092,7 @@ Openai DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigOp
 
 - *Type:* <a href="#@cdktn/provider-databricks.dataDatabricksAiGatewayModelProviderServices.DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigOpenai">DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigOpenai</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/ai_gateway_model_provider_services#openai DataDatabricksAiGatewayModelProviderServices#openai}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/ai_gateway_model_provider_services#openai DataDatabricksAiGatewayModelProviderServices#openai}.
 
 ---
 
@@ -1104,7 +1104,7 @@ ProviderType *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/ai_gateway_model_provider_services#provider_type DataDatabricksAiGatewayModelProviderServices#provider_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/ai_gateway_model_provider_services#provider_type DataDatabricksAiGatewayModelProviderServices#provider_type}.
 
 ---
 
@@ -1116,7 +1116,7 @@ RateLimits interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/ai_gateway_model_provider_services#rate_limits DataDatabricksAiGatewayModelProviderServices#rate_limits}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/ai_gateway_model_provider_services#rate_limits DataDatabricksAiGatewayModelProviderServices#rate_limits}.
 
 ---
 
@@ -1128,7 +1128,7 @@ Targets interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/ai_gateway_model_provider_services#targets DataDatabricksAiGatewayModelProviderServices#targets}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/ai_gateway_model_provider_services#targets DataDatabricksAiGatewayModelProviderServices#targets}.
 
 ---
 
@@ -1148,7 +1148,7 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadata
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAiGatewayModelProviderServices.DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigAmazonBedrock.property.direct">Direct</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksAiGatewayModelProviderServices.DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigAmazonBedrockDirect">DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigAmazonBedrockDirect</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/ai_gateway_model_provider_services#direct DataDatabricksAiGatewayModelProviderServices#direct}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAiGatewayModelProviderServices.DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigAmazonBedrock.property.direct">Direct</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksAiGatewayModelProviderServices.DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigAmazonBedrockDirect">DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigAmazonBedrockDirect</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/ai_gateway_model_provider_services#direct DataDatabricksAiGatewayModelProviderServices#direct}. |
 
 ---
 
@@ -1160,7 +1160,7 @@ Direct DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigAm
 
 - *Type:* <a href="#@cdktn/provider-databricks.dataDatabricksAiGatewayModelProviderServices.DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigAmazonBedrockDirect">DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigAmazonBedrockDirect</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/ai_gateway_model_provider_services#direct DataDatabricksAiGatewayModelProviderServices#direct}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/ai_gateway_model_provider_services#direct DataDatabricksAiGatewayModelProviderServices#direct}.
 
 ---
 
@@ -1182,9 +1182,9 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadata
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAiGatewayModelProviderServices.DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigAmazonBedrockDirect.property.awsAccessKey">AwsAccessKey</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksAiGatewayModelProviderServices.DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigAmazonBedrockDirectAwsAccessKey">DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigAmazonBedrockDirectAwsAccessKey</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/ai_gateway_model_provider_services#aws_access_key DataDatabricksAiGatewayModelProviderServices#aws_access_key}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAiGatewayModelProviderServices.DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigAmazonBedrockDirect.property.region">Region</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/ai_gateway_model_provider_services#region DataDatabricksAiGatewayModelProviderServices#region}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAiGatewayModelProviderServices.DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigAmazonBedrockDirect.property.serviceCredential">ServiceCredential</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksAiGatewayModelProviderServices.DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigAmazonBedrockDirectServiceCredential">DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigAmazonBedrockDirectServiceCredential</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/ai_gateway_model_provider_services#service_credential DataDatabricksAiGatewayModelProviderServices#service_credential}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAiGatewayModelProviderServices.DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigAmazonBedrockDirect.property.awsAccessKey">AwsAccessKey</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksAiGatewayModelProviderServices.DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigAmazonBedrockDirectAwsAccessKey">DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigAmazonBedrockDirectAwsAccessKey</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/ai_gateway_model_provider_services#aws_access_key DataDatabricksAiGatewayModelProviderServices#aws_access_key}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAiGatewayModelProviderServices.DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigAmazonBedrockDirect.property.region">Region</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/ai_gateway_model_provider_services#region DataDatabricksAiGatewayModelProviderServices#region}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAiGatewayModelProviderServices.DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigAmazonBedrockDirect.property.serviceCredential">ServiceCredential</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksAiGatewayModelProviderServices.DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigAmazonBedrockDirectServiceCredential">DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigAmazonBedrockDirectServiceCredential</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/ai_gateway_model_provider_services#service_credential DataDatabricksAiGatewayModelProviderServices#service_credential}. |
 
 ---
 
@@ -1196,7 +1196,7 @@ AwsAccessKey DataDatabricksAiGatewayModelProviderServicesModelProviderServicesCo
 
 - *Type:* <a href="#@cdktn/provider-databricks.dataDatabricksAiGatewayModelProviderServices.DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigAmazonBedrockDirectAwsAccessKey">DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigAmazonBedrockDirectAwsAccessKey</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/ai_gateway_model_provider_services#aws_access_key DataDatabricksAiGatewayModelProviderServices#aws_access_key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/ai_gateway_model_provider_services#aws_access_key DataDatabricksAiGatewayModelProviderServices#aws_access_key}.
 
 ---
 
@@ -1208,7 +1208,7 @@ Region *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/ai_gateway_model_provider_services#region DataDatabricksAiGatewayModelProviderServices#region}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/ai_gateway_model_provider_services#region DataDatabricksAiGatewayModelProviderServices#region}.
 
 ---
 
@@ -1220,7 +1220,7 @@ ServiceCredential DataDatabricksAiGatewayModelProviderServicesModelProviderServi
 
 - *Type:* <a href="#@cdktn/provider-databricks.dataDatabricksAiGatewayModelProviderServices.DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigAmazonBedrockDirectServiceCredential">DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigAmazonBedrockDirectServiceCredential</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/ai_gateway_model_provider_services#service_credential DataDatabricksAiGatewayModelProviderServices#service_credential}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/ai_gateway_model_provider_services#service_credential DataDatabricksAiGatewayModelProviderServices#service_credential}.
 
 ---
 
@@ -1241,8 +1241,8 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadata
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAiGatewayModelProviderServices.DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigAmazonBedrockDirectAwsAccessKey.property.accessKeyId">AccessKeyId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/ai_gateway_model_provider_services#access_key_id DataDatabricksAiGatewayModelProviderServices#access_key_id}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAiGatewayModelProviderServices.DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigAmazonBedrockDirectAwsAccessKey.property.secretAccessKey">SecretAccessKey</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksAiGatewayModelProviderServices.DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigAmazonBedrockDirectAwsAccessKeySecretAccessKey">DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigAmazonBedrockDirectAwsAccessKeySecretAccessKey</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/ai_gateway_model_provider_services#secret_access_key DataDatabricksAiGatewayModelProviderServices#secret_access_key}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAiGatewayModelProviderServices.DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigAmazonBedrockDirectAwsAccessKey.property.accessKeyId">AccessKeyId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/ai_gateway_model_provider_services#access_key_id DataDatabricksAiGatewayModelProviderServices#access_key_id}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAiGatewayModelProviderServices.DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigAmazonBedrockDirectAwsAccessKey.property.secretAccessKey">SecretAccessKey</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksAiGatewayModelProviderServices.DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigAmazonBedrockDirectAwsAccessKeySecretAccessKey">DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigAmazonBedrockDirectAwsAccessKeySecretAccessKey</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/ai_gateway_model_provider_services#secret_access_key DataDatabricksAiGatewayModelProviderServices#secret_access_key}. |
 
 ---
 
@@ -1254,7 +1254,7 @@ AccessKeyId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/ai_gateway_model_provider_services#access_key_id DataDatabricksAiGatewayModelProviderServices#access_key_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/ai_gateway_model_provider_services#access_key_id DataDatabricksAiGatewayModelProviderServices#access_key_id}.
 
 ---
 
@@ -1266,7 +1266,7 @@ SecretAccessKey DataDatabricksAiGatewayModelProviderServicesModelProviderService
 
 - *Type:* <a href="#@cdktn/provider-databricks.dataDatabricksAiGatewayModelProviderServices.DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigAmazonBedrockDirectAwsAccessKeySecretAccessKey">DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigAmazonBedrockDirectAwsAccessKeySecretAccessKey</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/ai_gateway_model_provider_services#secret_access_key DataDatabricksAiGatewayModelProviderServices#secret_access_key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/ai_gateway_model_provider_services#secret_access_key DataDatabricksAiGatewayModelProviderServices#secret_access_key}.
 
 ---
 
@@ -1286,7 +1286,7 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadata
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAiGatewayModelProviderServices.DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigAmazonBedrockDirectAwsAccessKeySecretAccessKey.property.plaintext">Plaintext</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/ai_gateway_model_provider_services#plaintext DataDatabricksAiGatewayModelProviderServices#plaintext}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAiGatewayModelProviderServices.DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigAmazonBedrockDirectAwsAccessKeySecretAccessKey.property.plaintext">Plaintext</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/ai_gateway_model_provider_services#plaintext DataDatabricksAiGatewayModelProviderServices#plaintext}. |
 
 ---
 
@@ -1298,7 +1298,7 @@ Plaintext *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/ai_gateway_model_provider_services#plaintext DataDatabricksAiGatewayModelProviderServices#plaintext}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/ai_gateway_model_provider_services#plaintext DataDatabricksAiGatewayModelProviderServices#plaintext}.
 
 ---
 
@@ -1318,7 +1318,7 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadata
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAiGatewayModelProviderServices.DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigAmazonBedrockDirectServiceCredential.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/ai_gateway_model_provider_services#name DataDatabricksAiGatewayModelProviderServices#name}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAiGatewayModelProviderServices.DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigAmazonBedrockDirectServiceCredential.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/ai_gateway_model_provider_services#name DataDatabricksAiGatewayModelProviderServices#name}. |
 
 ---
 
@@ -1330,7 +1330,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/ai_gateway_model_provider_services#name DataDatabricksAiGatewayModelProviderServices#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/ai_gateway_model_provider_services#name DataDatabricksAiGatewayModelProviderServices#name}.
 
 ---
 
@@ -1351,8 +1351,8 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadata
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAiGatewayModelProviderServices.DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigAnthropic.property.direct">Direct</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksAiGatewayModelProviderServices.DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigAnthropicDirect">DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigAnthropicDirect</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/ai_gateway_model_provider_services#direct DataDatabricksAiGatewayModelProviderServices#direct}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAiGatewayModelProviderServices.DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigAnthropic.property.relayed">Relayed</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksAiGatewayModelProviderServices.DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigAnthropicRelayed">DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigAnthropicRelayed</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/ai_gateway_model_provider_services#relayed DataDatabricksAiGatewayModelProviderServices#relayed}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAiGatewayModelProviderServices.DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigAnthropic.property.direct">Direct</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksAiGatewayModelProviderServices.DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigAnthropicDirect">DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigAnthropicDirect</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/ai_gateway_model_provider_services#direct DataDatabricksAiGatewayModelProviderServices#direct}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAiGatewayModelProviderServices.DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigAnthropic.property.relayed">Relayed</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksAiGatewayModelProviderServices.DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigAnthropicRelayed">DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigAnthropicRelayed</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/ai_gateway_model_provider_services#relayed DataDatabricksAiGatewayModelProviderServices#relayed}. |
 
 ---
 
@@ -1364,7 +1364,7 @@ Direct DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigAn
 
 - *Type:* <a href="#@cdktn/provider-databricks.dataDatabricksAiGatewayModelProviderServices.DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigAnthropicDirect">DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigAnthropicDirect</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/ai_gateway_model_provider_services#direct DataDatabricksAiGatewayModelProviderServices#direct}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/ai_gateway_model_provider_services#direct DataDatabricksAiGatewayModelProviderServices#direct}.
 
 ---
 
@@ -1376,7 +1376,7 @@ Relayed DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigA
 
 - *Type:* <a href="#@cdktn/provider-databricks.dataDatabricksAiGatewayModelProviderServices.DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigAnthropicRelayed">DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigAnthropicRelayed</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/ai_gateway_model_provider_services#relayed DataDatabricksAiGatewayModelProviderServices#relayed}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/ai_gateway_model_provider_services#relayed DataDatabricksAiGatewayModelProviderServices#relayed}.
 
 ---
 
@@ -1396,7 +1396,7 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadata
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAiGatewayModelProviderServices.DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigAnthropicDirect.property.apiKey">ApiKey</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksAiGatewayModelProviderServices.DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigAnthropicDirectApiKey">DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigAnthropicDirectApiKey</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/ai_gateway_model_provider_services#api_key DataDatabricksAiGatewayModelProviderServices#api_key}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAiGatewayModelProviderServices.DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigAnthropicDirect.property.apiKey">ApiKey</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksAiGatewayModelProviderServices.DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigAnthropicDirectApiKey">DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigAnthropicDirectApiKey</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/ai_gateway_model_provider_services#api_key DataDatabricksAiGatewayModelProviderServices#api_key}. |
 
 ---
 
@@ -1408,7 +1408,7 @@ ApiKey DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigAn
 
 - *Type:* <a href="#@cdktn/provider-databricks.dataDatabricksAiGatewayModelProviderServices.DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigAnthropicDirectApiKey">DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigAnthropicDirectApiKey</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/ai_gateway_model_provider_services#api_key DataDatabricksAiGatewayModelProviderServices#api_key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/ai_gateway_model_provider_services#api_key DataDatabricksAiGatewayModelProviderServices#api_key}.
 
 ---
 
@@ -1428,7 +1428,7 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadata
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAiGatewayModelProviderServices.DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigAnthropicDirectApiKey.property.plaintext">Plaintext</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/ai_gateway_model_provider_services#plaintext DataDatabricksAiGatewayModelProviderServices#plaintext}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAiGatewayModelProviderServices.DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigAnthropicDirectApiKey.property.plaintext">Plaintext</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/ai_gateway_model_provider_services#plaintext DataDatabricksAiGatewayModelProviderServices#plaintext}. |
 
 ---
 
@@ -1440,7 +1440,7 @@ Plaintext *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/ai_gateway_model_provider_services#plaintext DataDatabricksAiGatewayModelProviderServices#plaintext}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/ai_gateway_model_provider_services#plaintext DataDatabricksAiGatewayModelProviderServices#plaintext}.
 
 ---
 
@@ -1473,7 +1473,7 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadata
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAiGatewayModelProviderServices.DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigAzureOpenai.property.direct">Direct</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksAiGatewayModelProviderServices.DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigAzureOpenaiDirect">DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigAzureOpenaiDirect</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/ai_gateway_model_provider_services#direct DataDatabricksAiGatewayModelProviderServices#direct}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAiGatewayModelProviderServices.DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigAzureOpenai.property.direct">Direct</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksAiGatewayModelProviderServices.DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigAzureOpenaiDirect">DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigAzureOpenaiDirect</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/ai_gateway_model_provider_services#direct DataDatabricksAiGatewayModelProviderServices#direct}. |
 
 ---
 
@@ -1485,7 +1485,7 @@ Direct DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigAz
 
 - *Type:* <a href="#@cdktn/provider-databricks.dataDatabricksAiGatewayModelProviderServices.DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigAzureOpenaiDirect">DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigAzureOpenaiDirect</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/ai_gateway_model_provider_services#direct DataDatabricksAiGatewayModelProviderServices#direct}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/ai_gateway_model_provider_services#direct DataDatabricksAiGatewayModelProviderServices#direct}.
 
 ---
 
@@ -1508,10 +1508,10 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadata
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAiGatewayModelProviderServices.DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigAzureOpenaiDirect.property.apiKey">ApiKey</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksAiGatewayModelProviderServices.DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigAzureOpenaiDirectApiKey">DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigAzureOpenaiDirectApiKey</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/ai_gateway_model_provider_services#api_key DataDatabricksAiGatewayModelProviderServices#api_key}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAiGatewayModelProviderServices.DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigAzureOpenaiDirect.property.baseUrl">BaseUrl</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/ai_gateway_model_provider_services#base_url DataDatabricksAiGatewayModelProviderServices#base_url}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAiGatewayModelProviderServices.DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigAzureOpenaiDirect.property.entraServicePrincipal">EntraServicePrincipal</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksAiGatewayModelProviderServices.DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigAzureOpenaiDirectEntraServicePrincipal">DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigAzureOpenaiDirectEntraServicePrincipal</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/ai_gateway_model_provider_services#entra_service_principal DataDatabricksAiGatewayModelProviderServices#entra_service_principal}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAiGatewayModelProviderServices.DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigAzureOpenaiDirect.property.serviceCredential">ServiceCredential</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksAiGatewayModelProviderServices.DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigAzureOpenaiDirectServiceCredential">DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigAzureOpenaiDirectServiceCredential</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/ai_gateway_model_provider_services#service_credential DataDatabricksAiGatewayModelProviderServices#service_credential}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAiGatewayModelProviderServices.DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigAzureOpenaiDirect.property.apiKey">ApiKey</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksAiGatewayModelProviderServices.DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigAzureOpenaiDirectApiKey">DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigAzureOpenaiDirectApiKey</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/ai_gateway_model_provider_services#api_key DataDatabricksAiGatewayModelProviderServices#api_key}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAiGatewayModelProviderServices.DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigAzureOpenaiDirect.property.baseUrl">BaseUrl</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/ai_gateway_model_provider_services#base_url DataDatabricksAiGatewayModelProviderServices#base_url}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAiGatewayModelProviderServices.DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigAzureOpenaiDirect.property.entraServicePrincipal">EntraServicePrincipal</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksAiGatewayModelProviderServices.DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigAzureOpenaiDirectEntraServicePrincipal">DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigAzureOpenaiDirectEntraServicePrincipal</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/ai_gateway_model_provider_services#entra_service_principal DataDatabricksAiGatewayModelProviderServices#entra_service_principal}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAiGatewayModelProviderServices.DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigAzureOpenaiDirect.property.serviceCredential">ServiceCredential</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksAiGatewayModelProviderServices.DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigAzureOpenaiDirectServiceCredential">DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigAzureOpenaiDirectServiceCredential</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/ai_gateway_model_provider_services#service_credential DataDatabricksAiGatewayModelProviderServices#service_credential}. |
 
 ---
 
@@ -1523,7 +1523,7 @@ ApiKey DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigAz
 
 - *Type:* <a href="#@cdktn/provider-databricks.dataDatabricksAiGatewayModelProviderServices.DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigAzureOpenaiDirectApiKey">DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigAzureOpenaiDirectApiKey</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/ai_gateway_model_provider_services#api_key DataDatabricksAiGatewayModelProviderServices#api_key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/ai_gateway_model_provider_services#api_key DataDatabricksAiGatewayModelProviderServices#api_key}.
 
 ---
 
@@ -1535,7 +1535,7 @@ BaseUrl *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/ai_gateway_model_provider_services#base_url DataDatabricksAiGatewayModelProviderServices#base_url}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/ai_gateway_model_provider_services#base_url DataDatabricksAiGatewayModelProviderServices#base_url}.
 
 ---
 
@@ -1547,7 +1547,7 @@ EntraServicePrincipal DataDatabricksAiGatewayModelProviderServicesModelProviderS
 
 - *Type:* <a href="#@cdktn/provider-databricks.dataDatabricksAiGatewayModelProviderServices.DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigAzureOpenaiDirectEntraServicePrincipal">DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigAzureOpenaiDirectEntraServicePrincipal</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/ai_gateway_model_provider_services#entra_service_principal DataDatabricksAiGatewayModelProviderServices#entra_service_principal}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/ai_gateway_model_provider_services#entra_service_principal DataDatabricksAiGatewayModelProviderServices#entra_service_principal}.
 
 ---
 
@@ -1559,7 +1559,7 @@ ServiceCredential DataDatabricksAiGatewayModelProviderServicesModelProviderServi
 
 - *Type:* <a href="#@cdktn/provider-databricks.dataDatabricksAiGatewayModelProviderServices.DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigAzureOpenaiDirectServiceCredential">DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigAzureOpenaiDirectServiceCredential</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/ai_gateway_model_provider_services#service_credential DataDatabricksAiGatewayModelProviderServices#service_credential}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/ai_gateway_model_provider_services#service_credential DataDatabricksAiGatewayModelProviderServices#service_credential}.
 
 ---
 
@@ -1579,7 +1579,7 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadata
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAiGatewayModelProviderServices.DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigAzureOpenaiDirectApiKey.property.plaintext">Plaintext</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/ai_gateway_model_provider_services#plaintext DataDatabricksAiGatewayModelProviderServices#plaintext}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAiGatewayModelProviderServices.DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigAzureOpenaiDirectApiKey.property.plaintext">Plaintext</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/ai_gateway_model_provider_services#plaintext DataDatabricksAiGatewayModelProviderServices#plaintext}. |
 
 ---
 
@@ -1591,7 +1591,7 @@ Plaintext *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/ai_gateway_model_provider_services#plaintext DataDatabricksAiGatewayModelProviderServices#plaintext}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/ai_gateway_model_provider_services#plaintext DataDatabricksAiGatewayModelProviderServices#plaintext}.
 
 ---
 
@@ -1613,9 +1613,9 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadata
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAiGatewayModelProviderServices.DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigAzureOpenaiDirectEntraServicePrincipal.property.clientId">ClientId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/ai_gateway_model_provider_services#client_id DataDatabricksAiGatewayModelProviderServices#client_id}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAiGatewayModelProviderServices.DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigAzureOpenaiDirectEntraServicePrincipal.property.clientSecret">ClientSecret</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksAiGatewayModelProviderServices.DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigAzureOpenaiDirectEntraServicePrincipalClientSecret">DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigAzureOpenaiDirectEntraServicePrincipalClientSecret</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/ai_gateway_model_provider_services#client_secret DataDatabricksAiGatewayModelProviderServices#client_secret}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAiGatewayModelProviderServices.DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigAzureOpenaiDirectEntraServicePrincipal.property.tenantId">TenantId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/ai_gateway_model_provider_services#tenant_id DataDatabricksAiGatewayModelProviderServices#tenant_id}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAiGatewayModelProviderServices.DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigAzureOpenaiDirectEntraServicePrincipal.property.clientId">ClientId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/ai_gateway_model_provider_services#client_id DataDatabricksAiGatewayModelProviderServices#client_id}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAiGatewayModelProviderServices.DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigAzureOpenaiDirectEntraServicePrincipal.property.clientSecret">ClientSecret</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksAiGatewayModelProviderServices.DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigAzureOpenaiDirectEntraServicePrincipalClientSecret">DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigAzureOpenaiDirectEntraServicePrincipalClientSecret</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/ai_gateway_model_provider_services#client_secret DataDatabricksAiGatewayModelProviderServices#client_secret}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAiGatewayModelProviderServices.DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigAzureOpenaiDirectEntraServicePrincipal.property.tenantId">TenantId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/ai_gateway_model_provider_services#tenant_id DataDatabricksAiGatewayModelProviderServices#tenant_id}. |
 
 ---
 
@@ -1627,7 +1627,7 @@ ClientId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/ai_gateway_model_provider_services#client_id DataDatabricksAiGatewayModelProviderServices#client_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/ai_gateway_model_provider_services#client_id DataDatabricksAiGatewayModelProviderServices#client_id}.
 
 ---
 
@@ -1639,7 +1639,7 @@ ClientSecret DataDatabricksAiGatewayModelProviderServicesModelProviderServicesCo
 
 - *Type:* <a href="#@cdktn/provider-databricks.dataDatabricksAiGatewayModelProviderServices.DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigAzureOpenaiDirectEntraServicePrincipalClientSecret">DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigAzureOpenaiDirectEntraServicePrincipalClientSecret</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/ai_gateway_model_provider_services#client_secret DataDatabricksAiGatewayModelProviderServices#client_secret}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/ai_gateway_model_provider_services#client_secret DataDatabricksAiGatewayModelProviderServices#client_secret}.
 
 ---
 
@@ -1651,7 +1651,7 @@ TenantId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/ai_gateway_model_provider_services#tenant_id DataDatabricksAiGatewayModelProviderServices#tenant_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/ai_gateway_model_provider_services#tenant_id DataDatabricksAiGatewayModelProviderServices#tenant_id}.
 
 ---
 
@@ -1671,7 +1671,7 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadata
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAiGatewayModelProviderServices.DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigAzureOpenaiDirectEntraServicePrincipalClientSecret.property.plaintext">Plaintext</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/ai_gateway_model_provider_services#plaintext DataDatabricksAiGatewayModelProviderServices#plaintext}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAiGatewayModelProviderServices.DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigAzureOpenaiDirectEntraServicePrincipalClientSecret.property.plaintext">Plaintext</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/ai_gateway_model_provider_services#plaintext DataDatabricksAiGatewayModelProviderServices#plaintext}. |
 
 ---
 
@@ -1683,7 +1683,7 @@ Plaintext *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/ai_gateway_model_provider_services#plaintext DataDatabricksAiGatewayModelProviderServices#plaintext}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/ai_gateway_model_provider_services#plaintext DataDatabricksAiGatewayModelProviderServices#plaintext}.
 
 ---
 
@@ -1703,7 +1703,7 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadata
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAiGatewayModelProviderServices.DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigAzureOpenaiDirectServiceCredential.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/ai_gateway_model_provider_services#name DataDatabricksAiGatewayModelProviderServices#name}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAiGatewayModelProviderServices.DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigAzureOpenaiDirectServiceCredential.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/ai_gateway_model_provider_services#name DataDatabricksAiGatewayModelProviderServices#name}. |
 
 ---
 
@@ -1715,7 +1715,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/ai_gateway_model_provider_services#name DataDatabricksAiGatewayModelProviderServices#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/ai_gateway_model_provider_services#name DataDatabricksAiGatewayModelProviderServices#name}.
 
 ---
 
@@ -1735,7 +1735,7 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadata
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAiGatewayModelProviderServices.DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigCustom.property.direct">Direct</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksAiGatewayModelProviderServices.DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigCustomDirect">DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigCustomDirect</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/ai_gateway_model_provider_services#direct DataDatabricksAiGatewayModelProviderServices#direct}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAiGatewayModelProviderServices.DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigCustom.property.direct">Direct</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksAiGatewayModelProviderServices.DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigCustomDirect">DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigCustomDirect</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/ai_gateway_model_provider_services#direct DataDatabricksAiGatewayModelProviderServices#direct}. |
 
 ---
 
@@ -1747,7 +1747,7 @@ Direct DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigCu
 
 - *Type:* <a href="#@cdktn/provider-databricks.dataDatabricksAiGatewayModelProviderServices.DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigCustomDirect">DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigCustomDirect</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/ai_gateway_model_provider_services#direct DataDatabricksAiGatewayModelProviderServices#direct}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/ai_gateway_model_provider_services#direct DataDatabricksAiGatewayModelProviderServices#direct}.
 
 ---
 
@@ -1761,6 +1761,7 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadata
 &datadatabricksaigatewaymodelproviderservices.DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigCustomDirect {
 	ApiKey: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18.dataDatabricksAiGatewayModelProviderServices.DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigCustomDirectApiKey,
 	BaseUrl: *string,
+	HeaderAuth: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18.dataDatabricksAiGatewayModelProviderServices.DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigCustomDirectHeaderAuth,
 }
 ```
 
@@ -1768,8 +1769,9 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadata
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAiGatewayModelProviderServices.DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigCustomDirect.property.apiKey">ApiKey</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksAiGatewayModelProviderServices.DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigCustomDirectApiKey">DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigCustomDirectApiKey</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/ai_gateway_model_provider_services#api_key DataDatabricksAiGatewayModelProviderServices#api_key}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAiGatewayModelProviderServices.DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigCustomDirect.property.baseUrl">BaseUrl</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/ai_gateway_model_provider_services#base_url DataDatabricksAiGatewayModelProviderServices#base_url}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAiGatewayModelProviderServices.DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigCustomDirect.property.apiKey">ApiKey</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksAiGatewayModelProviderServices.DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigCustomDirectApiKey">DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigCustomDirectApiKey</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/ai_gateway_model_provider_services#api_key DataDatabricksAiGatewayModelProviderServices#api_key}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAiGatewayModelProviderServices.DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigCustomDirect.property.baseUrl">BaseUrl</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/ai_gateway_model_provider_services#base_url DataDatabricksAiGatewayModelProviderServices#base_url}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAiGatewayModelProviderServices.DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigCustomDirect.property.headerAuth">HeaderAuth</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksAiGatewayModelProviderServices.DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigCustomDirectHeaderAuth">DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigCustomDirectHeaderAuth</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/ai_gateway_model_provider_services#header_auth DataDatabricksAiGatewayModelProviderServices#header_auth}. |
 
 ---
 
@@ -1781,7 +1783,7 @@ ApiKey DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigCu
 
 - *Type:* <a href="#@cdktn/provider-databricks.dataDatabricksAiGatewayModelProviderServices.DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigCustomDirectApiKey">DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigCustomDirectApiKey</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/ai_gateway_model_provider_services#api_key DataDatabricksAiGatewayModelProviderServices#api_key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/ai_gateway_model_provider_services#api_key DataDatabricksAiGatewayModelProviderServices#api_key}.
 
 ---
 
@@ -1793,7 +1795,19 @@ BaseUrl *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/ai_gateway_model_provider_services#base_url DataDatabricksAiGatewayModelProviderServices#base_url}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/ai_gateway_model_provider_services#base_url DataDatabricksAiGatewayModelProviderServices#base_url}.
+
+---
+
+##### `HeaderAuth`<sup>Optional</sup> <a name="HeaderAuth" id="@cdktn/provider-databricks.dataDatabricksAiGatewayModelProviderServices.DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigCustomDirect.property.headerAuth"></a>
+
+```go
+HeaderAuth DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigCustomDirectHeaderAuth
+```
+
+- *Type:* <a href="#@cdktn/provider-databricks.dataDatabricksAiGatewayModelProviderServices.DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigCustomDirectHeaderAuth">DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigCustomDirectHeaderAuth</a>
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/ai_gateway_model_provider_services#header_auth DataDatabricksAiGatewayModelProviderServices#header_auth}.
 
 ---
 
@@ -1813,7 +1827,7 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadata
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAiGatewayModelProviderServices.DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigCustomDirectApiKey.property.plaintext">Plaintext</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/ai_gateway_model_provider_services#plaintext DataDatabricksAiGatewayModelProviderServices#plaintext}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAiGatewayModelProviderServices.DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigCustomDirectApiKey.property.plaintext">Plaintext</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/ai_gateway_model_provider_services#plaintext DataDatabricksAiGatewayModelProviderServices#plaintext}. |
 
 ---
 
@@ -1825,7 +1839,85 @@ Plaintext *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/ai_gateway_model_provider_services#plaintext DataDatabricksAiGatewayModelProviderServices#plaintext}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/ai_gateway_model_provider_services#plaintext DataDatabricksAiGatewayModelProviderServices#plaintext}.
+
+---
+
+### DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigCustomDirectHeaderAuth <a name="DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigCustomDirectHeaderAuth" id="@cdktn/provider-databricks.dataDatabricksAiGatewayModelProviderServices.DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigCustomDirectHeaderAuth"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksAiGatewayModelProviderServices.DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigCustomDirectHeaderAuth.Initializer"></a>
+
+```go
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksaigatewaymodelproviderservices"
+
+&datadatabricksaigatewaymodelproviderservices.DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigCustomDirectHeaderAuth {
+	ApiKeyName: *string,
+	ApiKeyValue: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18.dataDatabricksAiGatewayModelProviderServices.DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigCustomDirectHeaderAuthApiKeyValue,
+}
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAiGatewayModelProviderServices.DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigCustomDirectHeaderAuth.property.apiKeyName">ApiKeyName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/ai_gateway_model_provider_services#api_key_name DataDatabricksAiGatewayModelProviderServices#api_key_name}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAiGatewayModelProviderServices.DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigCustomDirectHeaderAuth.property.apiKeyValue">ApiKeyValue</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksAiGatewayModelProviderServices.DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigCustomDirectHeaderAuthApiKeyValue">DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigCustomDirectHeaderAuthApiKeyValue</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/ai_gateway_model_provider_services#api_key_value DataDatabricksAiGatewayModelProviderServices#api_key_value}. |
+
+---
+
+##### `ApiKeyName`<sup>Optional</sup> <a name="ApiKeyName" id="@cdktn/provider-databricks.dataDatabricksAiGatewayModelProviderServices.DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigCustomDirectHeaderAuth.property.apiKeyName"></a>
+
+```go
+ApiKeyName *string
+```
+
+- *Type:* *string
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/ai_gateway_model_provider_services#api_key_name DataDatabricksAiGatewayModelProviderServices#api_key_name}.
+
+---
+
+##### `ApiKeyValue`<sup>Optional</sup> <a name="ApiKeyValue" id="@cdktn/provider-databricks.dataDatabricksAiGatewayModelProviderServices.DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigCustomDirectHeaderAuth.property.apiKeyValue"></a>
+
+```go
+ApiKeyValue DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigCustomDirectHeaderAuthApiKeyValue
+```
+
+- *Type:* <a href="#@cdktn/provider-databricks.dataDatabricksAiGatewayModelProviderServices.DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigCustomDirectHeaderAuthApiKeyValue">DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigCustomDirectHeaderAuthApiKeyValue</a>
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/ai_gateway_model_provider_services#api_key_value DataDatabricksAiGatewayModelProviderServices#api_key_value}.
+
+---
+
+### DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigCustomDirectHeaderAuthApiKeyValue <a name="DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigCustomDirectHeaderAuthApiKeyValue" id="@cdktn/provider-databricks.dataDatabricksAiGatewayModelProviderServices.DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigCustomDirectHeaderAuthApiKeyValue"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksAiGatewayModelProviderServices.DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigCustomDirectHeaderAuthApiKeyValue.Initializer"></a>
+
+```go
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksaigatewaymodelproviderservices"
+
+&datadatabricksaigatewaymodelproviderservices.DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigCustomDirectHeaderAuthApiKeyValue {
+	Plaintext: *string,
+}
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAiGatewayModelProviderServices.DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigCustomDirectHeaderAuthApiKeyValue.property.plaintext">Plaintext</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/ai_gateway_model_provider_services#plaintext DataDatabricksAiGatewayModelProviderServices#plaintext}. |
+
+---
+
+##### `Plaintext`<sup>Optional</sup> <a name="Plaintext" id="@cdktn/provider-databricks.dataDatabricksAiGatewayModelProviderServices.DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigCustomDirectHeaderAuthApiKeyValue.property.plaintext"></a>
+
+```go
+Plaintext *string
+```
+
+- *Type:* *string
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/ai_gateway_model_provider_services#plaintext DataDatabricksAiGatewayModelProviderServices#plaintext}.
 
 ---
 
@@ -1845,7 +1937,7 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadata
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAiGatewayModelProviderServices.DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigGeminiEnterprise.property.direct">Direct</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksAiGatewayModelProviderServices.DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigGeminiEnterpriseDirect">DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigGeminiEnterpriseDirect</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/ai_gateway_model_provider_services#direct DataDatabricksAiGatewayModelProviderServices#direct}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAiGatewayModelProviderServices.DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigGeminiEnterprise.property.direct">Direct</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksAiGatewayModelProviderServices.DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigGeminiEnterpriseDirect">DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigGeminiEnterpriseDirect</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/ai_gateway_model_provider_services#direct DataDatabricksAiGatewayModelProviderServices#direct}. |
 
 ---
 
@@ -1857,7 +1949,7 @@ Direct DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigGe
 
 - *Type:* <a href="#@cdktn/provider-databricks.dataDatabricksAiGatewayModelProviderServices.DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigGeminiEnterpriseDirect">DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigGeminiEnterpriseDirect</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/ai_gateway_model_provider_services#direct DataDatabricksAiGatewayModelProviderServices#direct}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/ai_gateway_model_provider_services#direct DataDatabricksAiGatewayModelProviderServices#direct}.
 
 ---
 
@@ -1879,9 +1971,9 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadata
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAiGatewayModelProviderServices.DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigGeminiEnterpriseDirect.property.apiKey">ApiKey</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksAiGatewayModelProviderServices.DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigGeminiEnterpriseDirectApiKey">DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigGeminiEnterpriseDirectApiKey</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/ai_gateway_model_provider_services#api_key DataDatabricksAiGatewayModelProviderServices#api_key}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAiGatewayModelProviderServices.DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigGeminiEnterpriseDirect.property.projectId">ProjectId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/ai_gateway_model_provider_services#project_id DataDatabricksAiGatewayModelProviderServices#project_id}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAiGatewayModelProviderServices.DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigGeminiEnterpriseDirect.property.region">Region</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/ai_gateway_model_provider_services#region DataDatabricksAiGatewayModelProviderServices#region}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAiGatewayModelProviderServices.DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigGeminiEnterpriseDirect.property.apiKey">ApiKey</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksAiGatewayModelProviderServices.DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigGeminiEnterpriseDirectApiKey">DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigGeminiEnterpriseDirectApiKey</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/ai_gateway_model_provider_services#api_key DataDatabricksAiGatewayModelProviderServices#api_key}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAiGatewayModelProviderServices.DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigGeminiEnterpriseDirect.property.projectId">ProjectId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/ai_gateway_model_provider_services#project_id DataDatabricksAiGatewayModelProviderServices#project_id}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAiGatewayModelProviderServices.DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigGeminiEnterpriseDirect.property.region">Region</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/ai_gateway_model_provider_services#region DataDatabricksAiGatewayModelProviderServices#region}. |
 
 ---
 
@@ -1893,7 +1985,7 @@ ApiKey DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigGe
 
 - *Type:* <a href="#@cdktn/provider-databricks.dataDatabricksAiGatewayModelProviderServices.DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigGeminiEnterpriseDirectApiKey">DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigGeminiEnterpriseDirectApiKey</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/ai_gateway_model_provider_services#api_key DataDatabricksAiGatewayModelProviderServices#api_key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/ai_gateway_model_provider_services#api_key DataDatabricksAiGatewayModelProviderServices#api_key}.
 
 ---
 
@@ -1905,7 +1997,7 @@ ProjectId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/ai_gateway_model_provider_services#project_id DataDatabricksAiGatewayModelProviderServices#project_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/ai_gateway_model_provider_services#project_id DataDatabricksAiGatewayModelProviderServices#project_id}.
 
 ---
 
@@ -1917,7 +2009,7 @@ Region *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/ai_gateway_model_provider_services#region DataDatabricksAiGatewayModelProviderServices#region}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/ai_gateway_model_provider_services#region DataDatabricksAiGatewayModelProviderServices#region}.
 
 ---
 
@@ -1937,7 +2029,7 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadata
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAiGatewayModelProviderServices.DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigGeminiEnterpriseDirectApiKey.property.plaintext">Plaintext</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/ai_gateway_model_provider_services#plaintext DataDatabricksAiGatewayModelProviderServices#plaintext}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAiGatewayModelProviderServices.DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigGeminiEnterpriseDirectApiKey.property.plaintext">Plaintext</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/ai_gateway_model_provider_services#plaintext DataDatabricksAiGatewayModelProviderServices#plaintext}. |
 
 ---
 
@@ -1949,7 +2041,7 @@ Plaintext *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/ai_gateway_model_provider_services#plaintext DataDatabricksAiGatewayModelProviderServices#plaintext}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/ai_gateway_model_provider_services#plaintext DataDatabricksAiGatewayModelProviderServices#plaintext}.
 
 ---
 
@@ -1970,8 +2062,8 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadata
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAiGatewayModelProviderServices.DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigInferenceTable.property.parent">Parent</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/ai_gateway_model_provider_services#parent DataDatabricksAiGatewayModelProviderServices#parent}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAiGatewayModelProviderServices.DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigInferenceTable.property.tableNamePrefix">TableNamePrefix</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/ai_gateway_model_provider_services#table_name_prefix DataDatabricksAiGatewayModelProviderServices#table_name_prefix}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAiGatewayModelProviderServices.DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigInferenceTable.property.parent">Parent</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/ai_gateway_model_provider_services#parent DataDatabricksAiGatewayModelProviderServices#parent}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAiGatewayModelProviderServices.DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigInferenceTable.property.tableNamePrefix">TableNamePrefix</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/ai_gateway_model_provider_services#table_name_prefix DataDatabricksAiGatewayModelProviderServices#table_name_prefix}. |
 
 ---
 
@@ -1983,7 +2075,7 @@ Parent *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/ai_gateway_model_provider_services#parent DataDatabricksAiGatewayModelProviderServices#parent}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/ai_gateway_model_provider_services#parent DataDatabricksAiGatewayModelProviderServices#parent}.
 
 ---
 
@@ -1995,7 +2087,7 @@ TableNamePrefix *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/ai_gateway_model_provider_services#table_name_prefix DataDatabricksAiGatewayModelProviderServices#table_name_prefix}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/ai_gateway_model_provider_services#table_name_prefix DataDatabricksAiGatewayModelProviderServices#table_name_prefix}.
 
 ---
 
@@ -2015,7 +2107,7 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadata
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAiGatewayModelProviderServices.DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigMicrosoftFoundry.property.direct">Direct</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksAiGatewayModelProviderServices.DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigMicrosoftFoundryDirect">DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigMicrosoftFoundryDirect</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/ai_gateway_model_provider_services#direct DataDatabricksAiGatewayModelProviderServices#direct}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAiGatewayModelProviderServices.DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigMicrosoftFoundry.property.direct">Direct</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksAiGatewayModelProviderServices.DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigMicrosoftFoundryDirect">DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigMicrosoftFoundryDirect</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/ai_gateway_model_provider_services#direct DataDatabricksAiGatewayModelProviderServices#direct}. |
 
 ---
 
@@ -2027,7 +2119,7 @@ Direct DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigMi
 
 - *Type:* <a href="#@cdktn/provider-databricks.dataDatabricksAiGatewayModelProviderServices.DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigMicrosoftFoundryDirect">DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigMicrosoftFoundryDirect</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/ai_gateway_model_provider_services#direct DataDatabricksAiGatewayModelProviderServices#direct}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/ai_gateway_model_provider_services#direct DataDatabricksAiGatewayModelProviderServices#direct}.
 
 ---
 
@@ -2050,10 +2142,10 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadata
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAiGatewayModelProviderServices.DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigMicrosoftFoundryDirect.property.apiKey">ApiKey</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksAiGatewayModelProviderServices.DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigMicrosoftFoundryDirectApiKey">DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigMicrosoftFoundryDirectApiKey</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/ai_gateway_model_provider_services#api_key DataDatabricksAiGatewayModelProviderServices#api_key}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAiGatewayModelProviderServices.DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigMicrosoftFoundryDirect.property.baseUrl">BaseUrl</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/ai_gateway_model_provider_services#base_url DataDatabricksAiGatewayModelProviderServices#base_url}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAiGatewayModelProviderServices.DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigMicrosoftFoundryDirect.property.entraServicePrincipal">EntraServicePrincipal</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksAiGatewayModelProviderServices.DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigMicrosoftFoundryDirectEntraServicePrincipal">DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigMicrosoftFoundryDirectEntraServicePrincipal</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/ai_gateway_model_provider_services#entra_service_principal DataDatabricksAiGatewayModelProviderServices#entra_service_principal}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAiGatewayModelProviderServices.DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigMicrosoftFoundryDirect.property.serviceCredential">ServiceCredential</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksAiGatewayModelProviderServices.DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigMicrosoftFoundryDirectServiceCredential">DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigMicrosoftFoundryDirectServiceCredential</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/ai_gateway_model_provider_services#service_credential DataDatabricksAiGatewayModelProviderServices#service_credential}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAiGatewayModelProviderServices.DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigMicrosoftFoundryDirect.property.apiKey">ApiKey</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksAiGatewayModelProviderServices.DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigMicrosoftFoundryDirectApiKey">DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigMicrosoftFoundryDirectApiKey</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/ai_gateway_model_provider_services#api_key DataDatabricksAiGatewayModelProviderServices#api_key}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAiGatewayModelProviderServices.DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigMicrosoftFoundryDirect.property.baseUrl">BaseUrl</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/ai_gateway_model_provider_services#base_url DataDatabricksAiGatewayModelProviderServices#base_url}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAiGatewayModelProviderServices.DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigMicrosoftFoundryDirect.property.entraServicePrincipal">EntraServicePrincipal</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksAiGatewayModelProviderServices.DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigMicrosoftFoundryDirectEntraServicePrincipal">DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigMicrosoftFoundryDirectEntraServicePrincipal</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/ai_gateway_model_provider_services#entra_service_principal DataDatabricksAiGatewayModelProviderServices#entra_service_principal}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAiGatewayModelProviderServices.DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigMicrosoftFoundryDirect.property.serviceCredential">ServiceCredential</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksAiGatewayModelProviderServices.DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigMicrosoftFoundryDirectServiceCredential">DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigMicrosoftFoundryDirectServiceCredential</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/ai_gateway_model_provider_services#service_credential DataDatabricksAiGatewayModelProviderServices#service_credential}. |
 
 ---
 
@@ -2065,7 +2157,7 @@ ApiKey DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigMi
 
 - *Type:* <a href="#@cdktn/provider-databricks.dataDatabricksAiGatewayModelProviderServices.DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigMicrosoftFoundryDirectApiKey">DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigMicrosoftFoundryDirectApiKey</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/ai_gateway_model_provider_services#api_key DataDatabricksAiGatewayModelProviderServices#api_key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/ai_gateway_model_provider_services#api_key DataDatabricksAiGatewayModelProviderServices#api_key}.
 
 ---
 
@@ -2077,7 +2169,7 @@ BaseUrl *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/ai_gateway_model_provider_services#base_url DataDatabricksAiGatewayModelProviderServices#base_url}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/ai_gateway_model_provider_services#base_url DataDatabricksAiGatewayModelProviderServices#base_url}.
 
 ---
 
@@ -2089,7 +2181,7 @@ EntraServicePrincipal DataDatabricksAiGatewayModelProviderServicesModelProviderS
 
 - *Type:* <a href="#@cdktn/provider-databricks.dataDatabricksAiGatewayModelProviderServices.DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigMicrosoftFoundryDirectEntraServicePrincipal">DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigMicrosoftFoundryDirectEntraServicePrincipal</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/ai_gateway_model_provider_services#entra_service_principal DataDatabricksAiGatewayModelProviderServices#entra_service_principal}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/ai_gateway_model_provider_services#entra_service_principal DataDatabricksAiGatewayModelProviderServices#entra_service_principal}.
 
 ---
 
@@ -2101,7 +2193,7 @@ ServiceCredential DataDatabricksAiGatewayModelProviderServicesModelProviderServi
 
 - *Type:* <a href="#@cdktn/provider-databricks.dataDatabricksAiGatewayModelProviderServices.DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigMicrosoftFoundryDirectServiceCredential">DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigMicrosoftFoundryDirectServiceCredential</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/ai_gateway_model_provider_services#service_credential DataDatabricksAiGatewayModelProviderServices#service_credential}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/ai_gateway_model_provider_services#service_credential DataDatabricksAiGatewayModelProviderServices#service_credential}.
 
 ---
 
@@ -2121,7 +2213,7 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadata
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAiGatewayModelProviderServices.DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigMicrosoftFoundryDirectApiKey.property.plaintext">Plaintext</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/ai_gateway_model_provider_services#plaintext DataDatabricksAiGatewayModelProviderServices#plaintext}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAiGatewayModelProviderServices.DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigMicrosoftFoundryDirectApiKey.property.plaintext">Plaintext</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/ai_gateway_model_provider_services#plaintext DataDatabricksAiGatewayModelProviderServices#plaintext}. |
 
 ---
 
@@ -2133,7 +2225,7 @@ Plaintext *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/ai_gateway_model_provider_services#plaintext DataDatabricksAiGatewayModelProviderServices#plaintext}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/ai_gateway_model_provider_services#plaintext DataDatabricksAiGatewayModelProviderServices#plaintext}.
 
 ---
 
@@ -2155,9 +2247,9 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadata
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAiGatewayModelProviderServices.DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigMicrosoftFoundryDirectEntraServicePrincipal.property.clientId">ClientId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/ai_gateway_model_provider_services#client_id DataDatabricksAiGatewayModelProviderServices#client_id}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAiGatewayModelProviderServices.DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigMicrosoftFoundryDirectEntraServicePrincipal.property.clientSecret">ClientSecret</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksAiGatewayModelProviderServices.DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigMicrosoftFoundryDirectEntraServicePrincipalClientSecret">DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigMicrosoftFoundryDirectEntraServicePrincipalClientSecret</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/ai_gateway_model_provider_services#client_secret DataDatabricksAiGatewayModelProviderServices#client_secret}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAiGatewayModelProviderServices.DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigMicrosoftFoundryDirectEntraServicePrincipal.property.tenantId">TenantId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/ai_gateway_model_provider_services#tenant_id DataDatabricksAiGatewayModelProviderServices#tenant_id}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAiGatewayModelProviderServices.DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigMicrosoftFoundryDirectEntraServicePrincipal.property.clientId">ClientId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/ai_gateway_model_provider_services#client_id DataDatabricksAiGatewayModelProviderServices#client_id}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAiGatewayModelProviderServices.DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigMicrosoftFoundryDirectEntraServicePrincipal.property.clientSecret">ClientSecret</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksAiGatewayModelProviderServices.DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigMicrosoftFoundryDirectEntraServicePrincipalClientSecret">DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigMicrosoftFoundryDirectEntraServicePrincipalClientSecret</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/ai_gateway_model_provider_services#client_secret DataDatabricksAiGatewayModelProviderServices#client_secret}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAiGatewayModelProviderServices.DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigMicrosoftFoundryDirectEntraServicePrincipal.property.tenantId">TenantId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/ai_gateway_model_provider_services#tenant_id DataDatabricksAiGatewayModelProviderServices#tenant_id}. |
 
 ---
 
@@ -2169,7 +2261,7 @@ ClientId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/ai_gateway_model_provider_services#client_id DataDatabricksAiGatewayModelProviderServices#client_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/ai_gateway_model_provider_services#client_id DataDatabricksAiGatewayModelProviderServices#client_id}.
 
 ---
 
@@ -2181,7 +2273,7 @@ ClientSecret DataDatabricksAiGatewayModelProviderServicesModelProviderServicesCo
 
 - *Type:* <a href="#@cdktn/provider-databricks.dataDatabricksAiGatewayModelProviderServices.DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigMicrosoftFoundryDirectEntraServicePrincipalClientSecret">DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigMicrosoftFoundryDirectEntraServicePrincipalClientSecret</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/ai_gateway_model_provider_services#client_secret DataDatabricksAiGatewayModelProviderServices#client_secret}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/ai_gateway_model_provider_services#client_secret DataDatabricksAiGatewayModelProviderServices#client_secret}.
 
 ---
 
@@ -2193,7 +2285,7 @@ TenantId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/ai_gateway_model_provider_services#tenant_id DataDatabricksAiGatewayModelProviderServices#tenant_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/ai_gateway_model_provider_services#tenant_id DataDatabricksAiGatewayModelProviderServices#tenant_id}.
 
 ---
 
@@ -2213,7 +2305,7 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadata
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAiGatewayModelProviderServices.DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigMicrosoftFoundryDirectEntraServicePrincipalClientSecret.property.plaintext">Plaintext</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/ai_gateway_model_provider_services#plaintext DataDatabricksAiGatewayModelProviderServices#plaintext}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAiGatewayModelProviderServices.DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigMicrosoftFoundryDirectEntraServicePrincipalClientSecret.property.plaintext">Plaintext</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/ai_gateway_model_provider_services#plaintext DataDatabricksAiGatewayModelProviderServices#plaintext}. |
 
 ---
 
@@ -2225,7 +2317,7 @@ Plaintext *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/ai_gateway_model_provider_services#plaintext DataDatabricksAiGatewayModelProviderServices#plaintext}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/ai_gateway_model_provider_services#plaintext DataDatabricksAiGatewayModelProviderServices#plaintext}.
 
 ---
 
@@ -2245,7 +2337,7 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadata
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAiGatewayModelProviderServices.DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigMicrosoftFoundryDirectServiceCredential.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/ai_gateway_model_provider_services#name DataDatabricksAiGatewayModelProviderServices#name}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAiGatewayModelProviderServices.DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigMicrosoftFoundryDirectServiceCredential.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/ai_gateway_model_provider_services#name DataDatabricksAiGatewayModelProviderServices#name}. |
 
 ---
 
@@ -2257,7 +2349,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/ai_gateway_model_provider_services#name DataDatabricksAiGatewayModelProviderServices#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/ai_gateway_model_provider_services#name DataDatabricksAiGatewayModelProviderServices#name}.
 
 ---
 
@@ -2277,7 +2369,7 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadata
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAiGatewayModelProviderServices.DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigOpenai.property.direct">Direct</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksAiGatewayModelProviderServices.DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigOpenaiDirect">DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigOpenaiDirect</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/ai_gateway_model_provider_services#direct DataDatabricksAiGatewayModelProviderServices#direct}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAiGatewayModelProviderServices.DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigOpenai.property.direct">Direct</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksAiGatewayModelProviderServices.DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigOpenaiDirect">DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigOpenaiDirect</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/ai_gateway_model_provider_services#direct DataDatabricksAiGatewayModelProviderServices#direct}. |
 
 ---
 
@@ -2289,7 +2381,7 @@ Direct DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigOp
 
 - *Type:* <a href="#@cdktn/provider-databricks.dataDatabricksAiGatewayModelProviderServices.DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigOpenaiDirect">DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigOpenaiDirect</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/ai_gateway_model_provider_services#direct DataDatabricksAiGatewayModelProviderServices#direct}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/ai_gateway_model_provider_services#direct DataDatabricksAiGatewayModelProviderServices#direct}.
 
 ---
 
@@ -2311,9 +2403,9 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadata
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAiGatewayModelProviderServices.DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigOpenaiDirect.property.apiKey">ApiKey</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksAiGatewayModelProviderServices.DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigOpenaiDirectApiKey">DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigOpenaiDirectApiKey</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/ai_gateway_model_provider_services#api_key DataDatabricksAiGatewayModelProviderServices#api_key}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAiGatewayModelProviderServices.DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigOpenaiDirect.property.baseUrl">BaseUrl</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/ai_gateway_model_provider_services#base_url DataDatabricksAiGatewayModelProviderServices#base_url}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAiGatewayModelProviderServices.DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigOpenaiDirect.property.organization">Organization</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/ai_gateway_model_provider_services#organization DataDatabricksAiGatewayModelProviderServices#organization}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAiGatewayModelProviderServices.DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigOpenaiDirect.property.apiKey">ApiKey</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksAiGatewayModelProviderServices.DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigOpenaiDirectApiKey">DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigOpenaiDirectApiKey</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/ai_gateway_model_provider_services#api_key DataDatabricksAiGatewayModelProviderServices#api_key}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAiGatewayModelProviderServices.DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigOpenaiDirect.property.baseUrl">BaseUrl</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/ai_gateway_model_provider_services#base_url DataDatabricksAiGatewayModelProviderServices#base_url}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAiGatewayModelProviderServices.DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigOpenaiDirect.property.organization">Organization</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/ai_gateway_model_provider_services#organization DataDatabricksAiGatewayModelProviderServices#organization}. |
 
 ---
 
@@ -2325,7 +2417,7 @@ ApiKey DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigOp
 
 - *Type:* <a href="#@cdktn/provider-databricks.dataDatabricksAiGatewayModelProviderServices.DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigOpenaiDirectApiKey">DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigOpenaiDirectApiKey</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/ai_gateway_model_provider_services#api_key DataDatabricksAiGatewayModelProviderServices#api_key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/ai_gateway_model_provider_services#api_key DataDatabricksAiGatewayModelProviderServices#api_key}.
 
 ---
 
@@ -2337,7 +2429,7 @@ BaseUrl *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/ai_gateway_model_provider_services#base_url DataDatabricksAiGatewayModelProviderServices#base_url}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/ai_gateway_model_provider_services#base_url DataDatabricksAiGatewayModelProviderServices#base_url}.
 
 ---
 
@@ -2349,7 +2441,7 @@ Organization *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/ai_gateway_model_provider_services#organization DataDatabricksAiGatewayModelProviderServices#organization}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/ai_gateway_model_provider_services#organization DataDatabricksAiGatewayModelProviderServices#organization}.
 
 ---
 
@@ -2369,7 +2461,7 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadata
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAiGatewayModelProviderServices.DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigOpenaiDirectApiKey.property.plaintext">Plaintext</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/ai_gateway_model_provider_services#plaintext DataDatabricksAiGatewayModelProviderServices#plaintext}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAiGatewayModelProviderServices.DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigOpenaiDirectApiKey.property.plaintext">Plaintext</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/ai_gateway_model_provider_services#plaintext DataDatabricksAiGatewayModelProviderServices#plaintext}. |
 
 ---
 
@@ -2381,7 +2473,7 @@ Plaintext *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/ai_gateway_model_provider_services#plaintext DataDatabricksAiGatewayModelProviderServices#plaintext}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/ai_gateway_model_provider_services#plaintext DataDatabricksAiGatewayModelProviderServices#plaintext}.
 
 ---
 
@@ -2405,11 +2497,11 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadata
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAiGatewayModelProviderServices.DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigRateLimits.property.key">Key</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/ai_gateway_model_provider_services#key DataDatabricksAiGatewayModelProviderServices#key}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAiGatewayModelProviderServices.DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigRateLimits.property.renewalPeriod">RenewalPeriod</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/ai_gateway_model_provider_services#renewal_period DataDatabricksAiGatewayModelProviderServices#renewal_period}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAiGatewayModelProviderServices.DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigRateLimits.property.principal">Principal</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/ai_gateway_model_provider_services#principal DataDatabricksAiGatewayModelProviderServices#principal}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAiGatewayModelProviderServices.DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigRateLimits.property.requests">Requests</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/ai_gateway_model_provider_services#requests DataDatabricksAiGatewayModelProviderServices#requests}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAiGatewayModelProviderServices.DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigRateLimits.property.tokens">Tokens</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/ai_gateway_model_provider_services#tokens DataDatabricksAiGatewayModelProviderServices#tokens}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAiGatewayModelProviderServices.DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigRateLimits.property.key">Key</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/ai_gateway_model_provider_services#key DataDatabricksAiGatewayModelProviderServices#key}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAiGatewayModelProviderServices.DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigRateLimits.property.renewalPeriod">RenewalPeriod</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/ai_gateway_model_provider_services#renewal_period DataDatabricksAiGatewayModelProviderServices#renewal_period}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAiGatewayModelProviderServices.DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigRateLimits.property.principal">Principal</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/ai_gateway_model_provider_services#principal DataDatabricksAiGatewayModelProviderServices#principal}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAiGatewayModelProviderServices.DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigRateLimits.property.requests">Requests</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/ai_gateway_model_provider_services#requests DataDatabricksAiGatewayModelProviderServices#requests}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAiGatewayModelProviderServices.DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigRateLimits.property.tokens">Tokens</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/ai_gateway_model_provider_services#tokens DataDatabricksAiGatewayModelProviderServices#tokens}. |
 
 ---
 
@@ -2421,7 +2513,7 @@ Key *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/ai_gateway_model_provider_services#key DataDatabricksAiGatewayModelProviderServices#key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/ai_gateway_model_provider_services#key DataDatabricksAiGatewayModelProviderServices#key}.
 
 ---
 
@@ -2433,7 +2525,7 @@ RenewalPeriod *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/ai_gateway_model_provider_services#renewal_period DataDatabricksAiGatewayModelProviderServices#renewal_period}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/ai_gateway_model_provider_services#renewal_period DataDatabricksAiGatewayModelProviderServices#renewal_period}.
 
 ---
 
@@ -2445,7 +2537,7 @@ Principal *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/ai_gateway_model_provider_services#principal DataDatabricksAiGatewayModelProviderServices#principal}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/ai_gateway_model_provider_services#principal DataDatabricksAiGatewayModelProviderServices#principal}.
 
 ---
 
@@ -2457,7 +2549,7 @@ Requests *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/ai_gateway_model_provider_services#requests DataDatabricksAiGatewayModelProviderServices#requests}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/ai_gateway_model_provider_services#requests DataDatabricksAiGatewayModelProviderServices#requests}.
 
 ---
 
@@ -2469,7 +2561,7 @@ Tokens *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/ai_gateway_model_provider_services#tokens DataDatabricksAiGatewayModelProviderServices#tokens}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/ai_gateway_model_provider_services#tokens DataDatabricksAiGatewayModelProviderServices#tokens}.
 
 ---
 
@@ -2490,8 +2582,8 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadata
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAiGatewayModelProviderServices.DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigTargets.property.model">Model</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/ai_gateway_model_provider_services#model DataDatabricksAiGatewayModelProviderServices#model}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAiGatewayModelProviderServices.DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigTargets.property.nativeApiTypes">NativeApiTypes</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/ai_gateway_model_provider_services#native_api_types DataDatabricksAiGatewayModelProviderServices#native_api_types}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAiGatewayModelProviderServices.DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigTargets.property.model">Model</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/ai_gateway_model_provider_services#model DataDatabricksAiGatewayModelProviderServices#model}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAiGatewayModelProviderServices.DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigTargets.property.nativeApiTypes">NativeApiTypes</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/ai_gateway_model_provider_services#native_api_types DataDatabricksAiGatewayModelProviderServices#native_api_types}. |
 
 ---
 
@@ -2503,7 +2595,7 @@ Model *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/ai_gateway_model_provider_services#model DataDatabricksAiGatewayModelProviderServices#model}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/ai_gateway_model_provider_services#model DataDatabricksAiGatewayModelProviderServices#model}.
 
 ---
 
@@ -2515,7 +2607,7 @@ NativeApiTypes *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/ai_gateway_model_provider_services#native_api_types DataDatabricksAiGatewayModelProviderServices#native_api_types}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/ai_gateway_model_provider_services#native_api_types DataDatabricksAiGatewayModelProviderServices#native_api_types}.
 
 ---
 
@@ -2535,7 +2627,7 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadata
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAiGatewayModelProviderServices.DataDatabricksAiGatewayModelProviderServicesModelProviderServicesProviderConfig.property.workspaceId">WorkspaceId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/ai_gateway_model_provider_services#workspace_id DataDatabricksAiGatewayModelProviderServices#workspace_id}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAiGatewayModelProviderServices.DataDatabricksAiGatewayModelProviderServicesModelProviderServicesProviderConfig.property.workspaceId">WorkspaceId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/ai_gateway_model_provider_services#workspace_id DataDatabricksAiGatewayModelProviderServices#workspace_id}. |
 
 ---
 
@@ -2547,7 +2639,7 @@ WorkspaceId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/ai_gateway_model_provider_services#workspace_id DataDatabricksAiGatewayModelProviderServices#workspace_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/ai_gateway_model_provider_services#workspace_id DataDatabricksAiGatewayModelProviderServices#workspace_id}.
 
 ---
 
@@ -2567,7 +2659,7 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadata
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAiGatewayModelProviderServices.DataDatabricksAiGatewayModelProviderServicesProviderConfig.property.workspaceId">WorkspaceId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/ai_gateway_model_provider_services#workspace_id DataDatabricksAiGatewayModelProviderServices#workspace_id}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAiGatewayModelProviderServices.DataDatabricksAiGatewayModelProviderServicesProviderConfig.property.workspaceId">WorkspaceId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/ai_gateway_model_provider_services#workspace_id DataDatabricksAiGatewayModelProviderServices#workspace_id}. |
 
 ---
 
@@ -2579,7 +2671,7 @@ WorkspaceId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/ai_gateway_model_provider_services#workspace_id DataDatabricksAiGatewayModelProviderServices#workspace_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/ai_gateway_model_provider_services#workspace_id DataDatabricksAiGatewayModelProviderServices#workspace_id}.
 
 ---
 
@@ -7407,6 +7499,604 @@ func InternalValue() interface{}
 ---
 
 
+### DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigCustomDirectHeaderAuthApiKeyValueOutputReference <a name="DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigCustomDirectHeaderAuthApiKeyValueOutputReference" id="@cdktn/provider-databricks.dataDatabricksAiGatewayModelProviderServices.DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigCustomDirectHeaderAuthApiKeyValueOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksAiGatewayModelProviderServices.DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigCustomDirectHeaderAuthApiKeyValueOutputReference.Initializer"></a>
+
+```go
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksaigatewaymodelproviderservices"
+
+datadatabricksaigatewaymodelproviderservices.NewDataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigCustomDirectHeaderAuthApiKeyValueOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigCustomDirectHeaderAuthApiKeyValueOutputReference
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAiGatewayModelProviderServices.DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigCustomDirectHeaderAuthApiKeyValueOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAiGatewayModelProviderServices.DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigCustomDirectHeaderAuthApiKeyValueOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-databricks.dataDatabricksAiGatewayModelProviderServices.DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigCustomDirectHeaderAuthApiKeyValueOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.dataDatabricksAiGatewayModelProviderServices.DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigCustomDirectHeaderAuthApiKeyValueOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAiGatewayModelProviderServices.DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigCustomDirectHeaderAuthApiKeyValueOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAiGatewayModelProviderServices.DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigCustomDirectHeaderAuthApiKeyValueOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAiGatewayModelProviderServices.DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigCustomDirectHeaderAuthApiKeyValueOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAiGatewayModelProviderServices.DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigCustomDirectHeaderAuthApiKeyValueOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAiGatewayModelProviderServices.DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigCustomDirectHeaderAuthApiKeyValueOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAiGatewayModelProviderServices.DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigCustomDirectHeaderAuthApiKeyValueOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAiGatewayModelProviderServices.DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigCustomDirectHeaderAuthApiKeyValueOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAiGatewayModelProviderServices.DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigCustomDirectHeaderAuthApiKeyValueOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAiGatewayModelProviderServices.DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigCustomDirectHeaderAuthApiKeyValueOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAiGatewayModelProviderServices.DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigCustomDirectHeaderAuthApiKeyValueOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAiGatewayModelProviderServices.DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigCustomDirectHeaderAuthApiKeyValueOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAiGatewayModelProviderServices.DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigCustomDirectHeaderAuthApiKeyValueOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAiGatewayModelProviderServices.DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigCustomDirectHeaderAuthApiKeyValueOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAiGatewayModelProviderServices.DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigCustomDirectHeaderAuthApiKeyValueOutputReference.resetPlaintext">ResetPlaintext</a></code> | *No description.* |
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktn/provider-databricks.dataDatabricksAiGatewayModelProviderServices.DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigCustomDirectHeaderAuthApiKeyValueOutputReference.computeFqn"></a>
+
+```go
+func ComputeFqn() *string
+```
+
+##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktn/provider-databricks.dataDatabricksAiGatewayModelProviderServices.DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigCustomDirectHeaderAuthApiKeyValueOutputReference.getAnyMapAttribute"></a>
+
+```go
+func GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.dataDatabricksAiGatewayModelProviderServices.DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigCustomDirectHeaderAuthApiKeyValueOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktn/provider-databricks.dataDatabricksAiGatewayModelProviderServices.DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigCustomDirectHeaderAuthApiKeyValueOutputReference.getBooleanAttribute"></a>
+
+```go
+func GetBooleanAttribute(terraformAttribute *string) IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.dataDatabricksAiGatewayModelProviderServices.DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigCustomDirectHeaderAuthApiKeyValueOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktn/provider-databricks.dataDatabricksAiGatewayModelProviderServices.DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigCustomDirectHeaderAuthApiKeyValueOutputReference.getBooleanMapAttribute"></a>
+
+```go
+func GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.dataDatabricksAiGatewayModelProviderServices.DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigCustomDirectHeaderAuthApiKeyValueOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetListAttribute` <a name="GetListAttribute" id="@cdktn/provider-databricks.dataDatabricksAiGatewayModelProviderServices.DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigCustomDirectHeaderAuthApiKeyValueOutputReference.getListAttribute"></a>
+
+```go
+func GetListAttribute(terraformAttribute *string) *[]*string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.dataDatabricksAiGatewayModelProviderServices.DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigCustomDirectHeaderAuthApiKeyValueOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktn/provider-databricks.dataDatabricksAiGatewayModelProviderServices.DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigCustomDirectHeaderAuthApiKeyValueOutputReference.getNumberAttribute"></a>
+
+```go
+func GetNumberAttribute(terraformAttribute *string) *f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.dataDatabricksAiGatewayModelProviderServices.DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigCustomDirectHeaderAuthApiKeyValueOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktn/provider-databricks.dataDatabricksAiGatewayModelProviderServices.DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigCustomDirectHeaderAuthApiKeyValueOutputReference.getNumberListAttribute"></a>
+
+```go
+func GetNumberListAttribute(terraformAttribute *string) *[]*f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.dataDatabricksAiGatewayModelProviderServices.DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigCustomDirectHeaderAuthApiKeyValueOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktn/provider-databricks.dataDatabricksAiGatewayModelProviderServices.DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigCustomDirectHeaderAuthApiKeyValueOutputReference.getNumberMapAttribute"></a>
+
+```go
+func GetNumberMapAttribute(terraformAttribute *string) *map[string]*f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.dataDatabricksAiGatewayModelProviderServices.DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigCustomDirectHeaderAuthApiKeyValueOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktn/provider-databricks.dataDatabricksAiGatewayModelProviderServices.DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigCustomDirectHeaderAuthApiKeyValueOutputReference.getStringAttribute"></a>
+
+```go
+func GetStringAttribute(terraformAttribute *string) *string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.dataDatabricksAiGatewayModelProviderServices.DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigCustomDirectHeaderAuthApiKeyValueOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktn/provider-databricks.dataDatabricksAiGatewayModelProviderServices.DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigCustomDirectHeaderAuthApiKeyValueOutputReference.getStringMapAttribute"></a>
+
+```go
+func GetStringMapAttribute(terraformAttribute *string) *map[string]*string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.dataDatabricksAiGatewayModelProviderServices.DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigCustomDirectHeaderAuthApiKeyValueOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktn/provider-databricks.dataDatabricksAiGatewayModelProviderServices.DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigCustomDirectHeaderAuthApiKeyValueOutputReference.interpolationForAttribute"></a>
+
+```go
+func InterpolationForAttribute(property *string) IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-databricks.dataDatabricksAiGatewayModelProviderServices.DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigCustomDirectHeaderAuthApiKeyValueOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* *string
+
+---
+
+##### `Resolve` <a name="Resolve" id="@cdktn/provider-databricks.dataDatabricksAiGatewayModelProviderServices.DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigCustomDirectHeaderAuthApiKeyValueOutputReference.resolve"></a>
+
+```go
+func Resolve(_context IResolveContext) interface{}
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-databricks.dataDatabricksAiGatewayModelProviderServices.DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigCustomDirectHeaderAuthApiKeyValueOutputReference.resolve.parameter._context"></a>
+
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktn/provider-databricks.dataDatabricksAiGatewayModelProviderServices.DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigCustomDirectHeaderAuthApiKeyValueOutputReference.toString"></a>
+
+```go
+func ToString() *string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `ResetPlaintext` <a name="ResetPlaintext" id="@cdktn/provider-databricks.dataDatabricksAiGatewayModelProviderServices.DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigCustomDirectHeaderAuthApiKeyValueOutputReference.resetPlaintext"></a>
+
+```go
+func ResetPlaintext()
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAiGatewayModelProviderServices.DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigCustomDirectHeaderAuthApiKeyValueOutputReference.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAiGatewayModelProviderServices.DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigCustomDirectHeaderAuthApiKeyValueOutputReference.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAiGatewayModelProviderServices.DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigCustomDirectHeaderAuthApiKeyValueOutputReference.property.plaintextInput">PlaintextInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAiGatewayModelProviderServices.DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigCustomDirectHeaderAuthApiKeyValueOutputReference.property.plaintext">Plaintext</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAiGatewayModelProviderServices.DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigCustomDirectHeaderAuthApiKeyValueOutputReference.property.internalValue">InternalValue</a></code> | <code>interface{}</code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktn/provider-databricks.dataDatabricksAiGatewayModelProviderServices.DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigCustomDirectHeaderAuthApiKeyValueOutputReference.property.creationStack"></a>
+
+```go
+func CreationStack() *[]*string
+```
+
+- *Type:* *[]*string
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktn/provider-databricks.dataDatabricksAiGatewayModelProviderServices.DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigCustomDirectHeaderAuthApiKeyValueOutputReference.property.fqn"></a>
+
+```go
+func Fqn() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `PlaintextInput`<sup>Optional</sup> <a name="PlaintextInput" id="@cdktn/provider-databricks.dataDatabricksAiGatewayModelProviderServices.DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigCustomDirectHeaderAuthApiKeyValueOutputReference.property.plaintextInput"></a>
+
+```go
+func PlaintextInput() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `Plaintext`<sup>Required</sup> <a name="Plaintext" id="@cdktn/provider-databricks.dataDatabricksAiGatewayModelProviderServices.DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigCustomDirectHeaderAuthApiKeyValueOutputReference.property.plaintext"></a>
+
+```go
+func Plaintext() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktn/provider-databricks.dataDatabricksAiGatewayModelProviderServices.DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigCustomDirectHeaderAuthApiKeyValueOutputReference.property.internalValue"></a>
+
+```go
+func InternalValue() interface{}
+```
+
+- *Type:* interface{}
+
+---
+
+
+### DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigCustomDirectHeaderAuthOutputReference <a name="DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigCustomDirectHeaderAuthOutputReference" id="@cdktn/provider-databricks.dataDatabricksAiGatewayModelProviderServices.DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigCustomDirectHeaderAuthOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksAiGatewayModelProviderServices.DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigCustomDirectHeaderAuthOutputReference.Initializer"></a>
+
+```go
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksaigatewaymodelproviderservices"
+
+datadatabricksaigatewaymodelproviderservices.NewDataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigCustomDirectHeaderAuthOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigCustomDirectHeaderAuthOutputReference
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAiGatewayModelProviderServices.DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigCustomDirectHeaderAuthOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAiGatewayModelProviderServices.DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigCustomDirectHeaderAuthOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-databricks.dataDatabricksAiGatewayModelProviderServices.DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigCustomDirectHeaderAuthOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.dataDatabricksAiGatewayModelProviderServices.DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigCustomDirectHeaderAuthOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAiGatewayModelProviderServices.DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigCustomDirectHeaderAuthOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAiGatewayModelProviderServices.DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigCustomDirectHeaderAuthOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAiGatewayModelProviderServices.DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigCustomDirectHeaderAuthOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAiGatewayModelProviderServices.DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigCustomDirectHeaderAuthOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAiGatewayModelProviderServices.DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigCustomDirectHeaderAuthOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAiGatewayModelProviderServices.DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigCustomDirectHeaderAuthOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAiGatewayModelProviderServices.DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigCustomDirectHeaderAuthOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAiGatewayModelProviderServices.DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigCustomDirectHeaderAuthOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAiGatewayModelProviderServices.DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigCustomDirectHeaderAuthOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAiGatewayModelProviderServices.DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigCustomDirectHeaderAuthOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAiGatewayModelProviderServices.DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigCustomDirectHeaderAuthOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAiGatewayModelProviderServices.DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigCustomDirectHeaderAuthOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAiGatewayModelProviderServices.DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigCustomDirectHeaderAuthOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAiGatewayModelProviderServices.DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigCustomDirectHeaderAuthOutputReference.putApiKeyValue">PutApiKeyValue</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAiGatewayModelProviderServices.DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigCustomDirectHeaderAuthOutputReference.resetApiKeyName">ResetApiKeyName</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAiGatewayModelProviderServices.DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigCustomDirectHeaderAuthOutputReference.resetApiKeyValue">ResetApiKeyValue</a></code> | *No description.* |
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktn/provider-databricks.dataDatabricksAiGatewayModelProviderServices.DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigCustomDirectHeaderAuthOutputReference.computeFqn"></a>
+
+```go
+func ComputeFqn() *string
+```
+
+##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktn/provider-databricks.dataDatabricksAiGatewayModelProviderServices.DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigCustomDirectHeaderAuthOutputReference.getAnyMapAttribute"></a>
+
+```go
+func GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.dataDatabricksAiGatewayModelProviderServices.DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigCustomDirectHeaderAuthOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktn/provider-databricks.dataDatabricksAiGatewayModelProviderServices.DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigCustomDirectHeaderAuthOutputReference.getBooleanAttribute"></a>
+
+```go
+func GetBooleanAttribute(terraformAttribute *string) IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.dataDatabricksAiGatewayModelProviderServices.DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigCustomDirectHeaderAuthOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktn/provider-databricks.dataDatabricksAiGatewayModelProviderServices.DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigCustomDirectHeaderAuthOutputReference.getBooleanMapAttribute"></a>
+
+```go
+func GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.dataDatabricksAiGatewayModelProviderServices.DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigCustomDirectHeaderAuthOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetListAttribute` <a name="GetListAttribute" id="@cdktn/provider-databricks.dataDatabricksAiGatewayModelProviderServices.DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigCustomDirectHeaderAuthOutputReference.getListAttribute"></a>
+
+```go
+func GetListAttribute(terraformAttribute *string) *[]*string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.dataDatabricksAiGatewayModelProviderServices.DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigCustomDirectHeaderAuthOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktn/provider-databricks.dataDatabricksAiGatewayModelProviderServices.DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigCustomDirectHeaderAuthOutputReference.getNumberAttribute"></a>
+
+```go
+func GetNumberAttribute(terraformAttribute *string) *f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.dataDatabricksAiGatewayModelProviderServices.DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigCustomDirectHeaderAuthOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktn/provider-databricks.dataDatabricksAiGatewayModelProviderServices.DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigCustomDirectHeaderAuthOutputReference.getNumberListAttribute"></a>
+
+```go
+func GetNumberListAttribute(terraformAttribute *string) *[]*f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.dataDatabricksAiGatewayModelProviderServices.DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigCustomDirectHeaderAuthOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktn/provider-databricks.dataDatabricksAiGatewayModelProviderServices.DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigCustomDirectHeaderAuthOutputReference.getNumberMapAttribute"></a>
+
+```go
+func GetNumberMapAttribute(terraformAttribute *string) *map[string]*f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.dataDatabricksAiGatewayModelProviderServices.DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigCustomDirectHeaderAuthOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktn/provider-databricks.dataDatabricksAiGatewayModelProviderServices.DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigCustomDirectHeaderAuthOutputReference.getStringAttribute"></a>
+
+```go
+func GetStringAttribute(terraformAttribute *string) *string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.dataDatabricksAiGatewayModelProviderServices.DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigCustomDirectHeaderAuthOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktn/provider-databricks.dataDatabricksAiGatewayModelProviderServices.DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigCustomDirectHeaderAuthOutputReference.getStringMapAttribute"></a>
+
+```go
+func GetStringMapAttribute(terraformAttribute *string) *map[string]*string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.dataDatabricksAiGatewayModelProviderServices.DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigCustomDirectHeaderAuthOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktn/provider-databricks.dataDatabricksAiGatewayModelProviderServices.DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigCustomDirectHeaderAuthOutputReference.interpolationForAttribute"></a>
+
+```go
+func InterpolationForAttribute(property *string) IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-databricks.dataDatabricksAiGatewayModelProviderServices.DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigCustomDirectHeaderAuthOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* *string
+
+---
+
+##### `Resolve` <a name="Resolve" id="@cdktn/provider-databricks.dataDatabricksAiGatewayModelProviderServices.DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigCustomDirectHeaderAuthOutputReference.resolve"></a>
+
+```go
+func Resolve(_context IResolveContext) interface{}
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-databricks.dataDatabricksAiGatewayModelProviderServices.DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigCustomDirectHeaderAuthOutputReference.resolve.parameter._context"></a>
+
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktn/provider-databricks.dataDatabricksAiGatewayModelProviderServices.DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigCustomDirectHeaderAuthOutputReference.toString"></a>
+
+```go
+func ToString() *string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `PutApiKeyValue` <a name="PutApiKeyValue" id="@cdktn/provider-databricks.dataDatabricksAiGatewayModelProviderServices.DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigCustomDirectHeaderAuthOutputReference.putApiKeyValue"></a>
+
+```go
+func PutApiKeyValue(value DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigCustomDirectHeaderAuthApiKeyValue)
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-databricks.dataDatabricksAiGatewayModelProviderServices.DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigCustomDirectHeaderAuthOutputReference.putApiKeyValue.parameter.value"></a>
+
+- *Type:* <a href="#@cdktn/provider-databricks.dataDatabricksAiGatewayModelProviderServices.DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigCustomDirectHeaderAuthApiKeyValue">DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigCustomDirectHeaderAuthApiKeyValue</a>
+
+---
+
+##### `ResetApiKeyName` <a name="ResetApiKeyName" id="@cdktn/provider-databricks.dataDatabricksAiGatewayModelProviderServices.DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigCustomDirectHeaderAuthOutputReference.resetApiKeyName"></a>
+
+```go
+func ResetApiKeyName()
+```
+
+##### `ResetApiKeyValue` <a name="ResetApiKeyValue" id="@cdktn/provider-databricks.dataDatabricksAiGatewayModelProviderServices.DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigCustomDirectHeaderAuthOutputReference.resetApiKeyValue"></a>
+
+```go
+func ResetApiKeyValue()
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAiGatewayModelProviderServices.DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigCustomDirectHeaderAuthOutputReference.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAiGatewayModelProviderServices.DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigCustomDirectHeaderAuthOutputReference.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAiGatewayModelProviderServices.DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigCustomDirectHeaderAuthOutputReference.property.apiKeyValue">ApiKeyValue</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksAiGatewayModelProviderServices.DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigCustomDirectHeaderAuthApiKeyValueOutputReference">DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigCustomDirectHeaderAuthApiKeyValueOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAiGatewayModelProviderServices.DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigCustomDirectHeaderAuthOutputReference.property.apiKeyNameInput">ApiKeyNameInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAiGatewayModelProviderServices.DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigCustomDirectHeaderAuthOutputReference.property.apiKeyValueInput">ApiKeyValueInput</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAiGatewayModelProviderServices.DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigCustomDirectHeaderAuthOutputReference.property.apiKeyName">ApiKeyName</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAiGatewayModelProviderServices.DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigCustomDirectHeaderAuthOutputReference.property.internalValue">InternalValue</a></code> | <code>interface{}</code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktn/provider-databricks.dataDatabricksAiGatewayModelProviderServices.DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigCustomDirectHeaderAuthOutputReference.property.creationStack"></a>
+
+```go
+func CreationStack() *[]*string
+```
+
+- *Type:* *[]*string
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktn/provider-databricks.dataDatabricksAiGatewayModelProviderServices.DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigCustomDirectHeaderAuthOutputReference.property.fqn"></a>
+
+```go
+func Fqn() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `ApiKeyValue`<sup>Required</sup> <a name="ApiKeyValue" id="@cdktn/provider-databricks.dataDatabricksAiGatewayModelProviderServices.DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigCustomDirectHeaderAuthOutputReference.property.apiKeyValue"></a>
+
+```go
+func ApiKeyValue() DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigCustomDirectHeaderAuthApiKeyValueOutputReference
+```
+
+- *Type:* <a href="#@cdktn/provider-databricks.dataDatabricksAiGatewayModelProviderServices.DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigCustomDirectHeaderAuthApiKeyValueOutputReference">DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigCustomDirectHeaderAuthApiKeyValueOutputReference</a>
+
+---
+
+##### `ApiKeyNameInput`<sup>Optional</sup> <a name="ApiKeyNameInput" id="@cdktn/provider-databricks.dataDatabricksAiGatewayModelProviderServices.DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigCustomDirectHeaderAuthOutputReference.property.apiKeyNameInput"></a>
+
+```go
+func ApiKeyNameInput() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `ApiKeyValueInput`<sup>Optional</sup> <a name="ApiKeyValueInput" id="@cdktn/provider-databricks.dataDatabricksAiGatewayModelProviderServices.DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigCustomDirectHeaderAuthOutputReference.property.apiKeyValueInput"></a>
+
+```go
+func ApiKeyValueInput() interface{}
+```
+
+- *Type:* interface{}
+
+---
+
+##### `ApiKeyName`<sup>Required</sup> <a name="ApiKeyName" id="@cdktn/provider-databricks.dataDatabricksAiGatewayModelProviderServices.DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigCustomDirectHeaderAuthOutputReference.property.apiKeyName"></a>
+
+```go
+func ApiKeyName() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktn/provider-databricks.dataDatabricksAiGatewayModelProviderServices.DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigCustomDirectHeaderAuthOutputReference.property.internalValue"></a>
+
+```go
+func InternalValue() interface{}
+```
+
+- *Type:* interface{}
+
+---
+
+
 ### DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigCustomDirectOutputReference <a name="DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigCustomDirectOutputReference" id="@cdktn/provider-databricks.dataDatabricksAiGatewayModelProviderServices.DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigCustomDirectOutputReference"></a>
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksAiGatewayModelProviderServices.DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigCustomDirectOutputReference.Initializer"></a>
@@ -7458,8 +8148,10 @@ The attribute on the parent resource this class is referencing.
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksAiGatewayModelProviderServices.DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigCustomDirectOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksAiGatewayModelProviderServices.DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigCustomDirectOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksAiGatewayModelProviderServices.DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigCustomDirectOutputReference.putApiKey">PutApiKey</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAiGatewayModelProviderServices.DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigCustomDirectOutputReference.putHeaderAuth">PutHeaderAuth</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksAiGatewayModelProviderServices.DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigCustomDirectOutputReference.resetApiKey">ResetApiKey</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksAiGatewayModelProviderServices.DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigCustomDirectOutputReference.resetBaseUrl">ResetBaseUrl</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAiGatewayModelProviderServices.DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigCustomDirectOutputReference.resetHeaderAuth">ResetHeaderAuth</a></code> | *No description.* |
 
 ---
 
@@ -7625,6 +8317,18 @@ func PutApiKey(value DataDatabricksAiGatewayModelProviderServicesModelProviderSe
 
 ---
 
+##### `PutHeaderAuth` <a name="PutHeaderAuth" id="@cdktn/provider-databricks.dataDatabricksAiGatewayModelProviderServices.DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigCustomDirectOutputReference.putHeaderAuth"></a>
+
+```go
+func PutHeaderAuth(value DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigCustomDirectHeaderAuth)
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-databricks.dataDatabricksAiGatewayModelProviderServices.DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigCustomDirectOutputReference.putHeaderAuth.parameter.value"></a>
+
+- *Type:* <a href="#@cdktn/provider-databricks.dataDatabricksAiGatewayModelProviderServices.DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigCustomDirectHeaderAuth">DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigCustomDirectHeaderAuth</a>
+
+---
+
 ##### `ResetApiKey` <a name="ResetApiKey" id="@cdktn/provider-databricks.dataDatabricksAiGatewayModelProviderServices.DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigCustomDirectOutputReference.resetApiKey"></a>
 
 ```go
@@ -7637,6 +8341,12 @@ func ResetApiKey()
 func ResetBaseUrl()
 ```
 
+##### `ResetHeaderAuth` <a name="ResetHeaderAuth" id="@cdktn/provider-databricks.dataDatabricksAiGatewayModelProviderServices.DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigCustomDirectOutputReference.resetHeaderAuth"></a>
+
+```go
+func ResetHeaderAuth()
+```
+
 
 #### Properties <a name="Properties" id="Properties"></a>
 
@@ -7645,8 +8355,10 @@ func ResetBaseUrl()
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksAiGatewayModelProviderServices.DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigCustomDirectOutputReference.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksAiGatewayModelProviderServices.DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigCustomDirectOutputReference.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksAiGatewayModelProviderServices.DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigCustomDirectOutputReference.property.apiKey">ApiKey</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksAiGatewayModelProviderServices.DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigCustomDirectApiKeyOutputReference">DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigCustomDirectApiKeyOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAiGatewayModelProviderServices.DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigCustomDirectOutputReference.property.headerAuth">HeaderAuth</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksAiGatewayModelProviderServices.DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigCustomDirectHeaderAuthOutputReference">DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigCustomDirectHeaderAuthOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksAiGatewayModelProviderServices.DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigCustomDirectOutputReference.property.apiKeyInput">ApiKeyInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksAiGatewayModelProviderServices.DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigCustomDirectOutputReference.property.baseUrlInput">BaseUrlInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAiGatewayModelProviderServices.DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigCustomDirectOutputReference.property.headerAuthInput">HeaderAuthInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksAiGatewayModelProviderServices.DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigCustomDirectOutputReference.property.baseUrl">BaseUrl</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksAiGatewayModelProviderServices.DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigCustomDirectOutputReference.property.internalValue">InternalValue</a></code> | <code>interface{}</code> | *No description.* |
 
@@ -7686,6 +8398,16 @@ func ApiKey() DataDatabricksAiGatewayModelProviderServicesModelProviderServicesC
 
 ---
 
+##### `HeaderAuth`<sup>Required</sup> <a name="HeaderAuth" id="@cdktn/provider-databricks.dataDatabricksAiGatewayModelProviderServices.DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigCustomDirectOutputReference.property.headerAuth"></a>
+
+```go
+func HeaderAuth() DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigCustomDirectHeaderAuthOutputReference
+```
+
+- *Type:* <a href="#@cdktn/provider-databricks.dataDatabricksAiGatewayModelProviderServices.DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigCustomDirectHeaderAuthOutputReference">DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigCustomDirectHeaderAuthOutputReference</a>
+
+---
+
 ##### `ApiKeyInput`<sup>Optional</sup> <a name="ApiKeyInput" id="@cdktn/provider-databricks.dataDatabricksAiGatewayModelProviderServices.DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigCustomDirectOutputReference.property.apiKeyInput"></a>
 
 ```go
@@ -7703,6 +8425,16 @@ func BaseUrlInput() *string
 ```
 
 - *Type:* *string
+
+---
+
+##### `HeaderAuthInput`<sup>Optional</sup> <a name="HeaderAuthInput" id="@cdktn/provider-databricks.dataDatabricksAiGatewayModelProviderServices.DataDatabricksAiGatewayModelProviderServicesModelProviderServicesConfigCustomDirectOutputReference.property.headerAuthInput"></a>
+
+```go
+func HeaderAuthInput() interface{}
+```
+
+- *Type:* interface{}
 
 ---
 

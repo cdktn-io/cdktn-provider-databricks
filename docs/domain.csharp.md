@@ -4,7 +4,7 @@
 
 ### Domain <a name="Domain" id="@cdktn/provider-databricks.domain.Domain"></a>
 
-Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/domain databricks_domain}.
+Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/domain databricks_domain}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.domain.Domain.Initializer"></a>
 
@@ -578,7 +578,7 @@ The construct id used in the generated config for the Domain to import.
 
 The id of the existing Domain that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/domain#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/domain#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1076,16 +1076,16 @@ new DomainConfig {
 | <code><a href="#@cdktn/provider-databricks.domain.DomainConfig.property.lifecycle">Lifecycle</a></code> | <code>Io.Cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.domain.DomainConfig.property.provider">Provider</a></code> | <code>Io.Cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.domain.DomainConfig.property.provisioners">Provisioners</a></code> | <code>Io.Cdktn.FileProvisioner\|Io.Cdktn.LocalExecProvisioner\|Io.Cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-databricks.domain.DomainConfig.property.tagKey">TagKey</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/domain#tag_key Domain#tag_key}. |
-| <code><a href="#@cdktn/provider-databricks.domain.DomainConfig.property.businessOwnerIds">BusinessOwnerIds</a></code> | <code>double[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/domain#business_owner_ids Domain#business_owner_ids}. |
-| <code><a href="#@cdktn/provider-databricks.domain.DomainConfig.property.description">Description</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/domain#description Domain#description}. |
-| <code><a href="#@cdktn/provider-databricks.domain.DomainConfig.property.domainId">DomainId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/domain#domain_id Domain#domain_id}. |
-| <code><a href="#@cdktn/provider-databricks.domain.DomainConfig.property.draft">Draft</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/domain#draft Domain#draft}. |
-| <code><a href="#@cdktn/provider-databricks.domain.DomainConfig.property.icon">Icon</a></code> | <code><a href="#@cdktn/provider-databricks.domain.DomainIcon">DomainIcon</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/domain#icon Domain#icon}. |
-| <code><a href="#@cdktn/provider-databricks.domain.DomainConfig.property.parentDomainId">ParentDomainId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/domain#parent_domain_id Domain#parent_domain_id}. |
-| <code><a href="#@cdktn/provider-databricks.domain.DomainConfig.property.providerConfig">ProviderConfig</a></code> | <code><a href="#@cdktn/provider-databricks.domain.DomainProviderConfig">DomainProviderConfig</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/domain#provider_config Domain#provider_config}. |
-| <code><a href="#@cdktn/provider-databricks.domain.DomainConfig.property.subtitle">Subtitle</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/domain#subtitle Domain#subtitle}. |
-| <code><a href="#@cdktn/provider-databricks.domain.DomainConfig.property.technicalOwnerIds">TechnicalOwnerIds</a></code> | <code>double[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/domain#technical_owner_ids Domain#technical_owner_ids}. |
+| <code><a href="#@cdktn/provider-databricks.domain.DomainConfig.property.tagKey">TagKey</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/domain#tag_key Domain#tag_key}. |
+| <code><a href="#@cdktn/provider-databricks.domain.DomainConfig.property.businessOwnerIds">BusinessOwnerIds</a></code> | <code>double[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/domain#business_owner_ids Domain#business_owner_ids}. |
+| <code><a href="#@cdktn/provider-databricks.domain.DomainConfig.property.description">Description</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/domain#description Domain#description}. |
+| <code><a href="#@cdktn/provider-databricks.domain.DomainConfig.property.domainId">DomainId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/domain#domain_id Domain#domain_id}. |
+| <code><a href="#@cdktn/provider-databricks.domain.DomainConfig.property.draft">Draft</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/domain#draft Domain#draft}. |
+| <code><a href="#@cdktn/provider-databricks.domain.DomainConfig.property.icon">Icon</a></code> | <code><a href="#@cdktn/provider-databricks.domain.DomainIcon">DomainIcon</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/domain#icon Domain#icon}. |
+| <code><a href="#@cdktn/provider-databricks.domain.DomainConfig.property.parentDomainId">ParentDomainId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/domain#parent_domain_id Domain#parent_domain_id}. |
+| <code><a href="#@cdktn/provider-databricks.domain.DomainConfig.property.providerConfig">ProviderConfig</a></code> | <code><a href="#@cdktn/provider-databricks.domain.DomainProviderConfig">DomainProviderConfig</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/domain#provider_config Domain#provider_config}. |
+| <code><a href="#@cdktn/provider-databricks.domain.DomainConfig.property.subtitle">Subtitle</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/domain#subtitle Domain#subtitle}. |
+| <code><a href="#@cdktn/provider-databricks.domain.DomainConfig.property.technicalOwnerIds">TechnicalOwnerIds</a></code> | <code>double[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/domain#technical_owner_ids Domain#technical_owner_ids}. |
 
 ---
 
@@ -1167,7 +1167,7 @@ public string TagKey { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/domain#tag_key Domain#tag_key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/domain#tag_key Domain#tag_key}.
 
 ---
 
@@ -1179,7 +1179,7 @@ public double[] BusinessOwnerIds { get; set; }
 
 - *Type:* double[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/domain#business_owner_ids Domain#business_owner_ids}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/domain#business_owner_ids Domain#business_owner_ids}.
 
 ---
 
@@ -1191,7 +1191,7 @@ public string Description { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/domain#description Domain#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/domain#description Domain#description}.
 
 ---
 
@@ -1203,7 +1203,7 @@ public string DomainId { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/domain#domain_id Domain#domain_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/domain#domain_id Domain#domain_id}.
 
 ---
 
@@ -1215,7 +1215,7 @@ public bool|IResolvable Draft { get; set; }
 
 - *Type:* bool|Io.Cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/domain#draft Domain#draft}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/domain#draft Domain#draft}.
 
 ---
 
@@ -1227,7 +1227,7 @@ public DomainIcon Icon { get; set; }
 
 - *Type:* <a href="#@cdktn/provider-databricks.domain.DomainIcon">DomainIcon</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/domain#icon Domain#icon}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/domain#icon Domain#icon}.
 
 ---
 
@@ -1239,7 +1239,7 @@ public string ParentDomainId { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/domain#parent_domain_id Domain#parent_domain_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/domain#parent_domain_id Domain#parent_domain_id}.
 
 ---
 
@@ -1251,7 +1251,7 @@ public DomainProviderConfig ProviderConfig { get; set; }
 
 - *Type:* <a href="#@cdktn/provider-databricks.domain.DomainProviderConfig">DomainProviderConfig</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/domain#provider_config Domain#provider_config}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/domain#provider_config Domain#provider_config}.
 
 ---
 
@@ -1263,7 +1263,7 @@ public string Subtitle { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/domain#subtitle Domain#subtitle}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/domain#subtitle Domain#subtitle}.
 
 ---
 
@@ -1275,7 +1275,7 @@ public double[] TechnicalOwnerIds { get; set; }
 
 - *Type:* double[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/domain#technical_owner_ids Domain#technical_owner_ids}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/domain#technical_owner_ids Domain#technical_owner_ids}.
 
 ---
 
@@ -1296,8 +1296,8 @@ new DomainIcon {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.domain.DomainIcon.property.color">Color</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/domain#color Domain#color}. |
-| <code><a href="#@cdktn/provider-databricks.domain.DomainIcon.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/domain#name Domain#name}. |
+| <code><a href="#@cdktn/provider-databricks.domain.DomainIcon.property.color">Color</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/domain#color Domain#color}. |
+| <code><a href="#@cdktn/provider-databricks.domain.DomainIcon.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/domain#name Domain#name}. |
 
 ---
 
@@ -1309,7 +1309,7 @@ public string Color { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/domain#color Domain#color}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/domain#color Domain#color}.
 
 ---
 
@@ -1321,7 +1321,7 @@ public string Name { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/domain#name Domain#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/domain#name Domain#name}.
 
 ---
 
@@ -1341,7 +1341,7 @@ new DomainProviderConfig {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.domain.DomainProviderConfig.property.workspaceId">WorkspaceId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/domain#workspace_id Domain#workspace_id}. |
+| <code><a href="#@cdktn/provider-databricks.domain.DomainProviderConfig.property.workspaceId">WorkspaceId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/domain#workspace_id Domain#workspace_id}. |
 
 ---
 
@@ -1353,7 +1353,7 @@ public string WorkspaceId { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/domain#workspace_id Domain#workspace_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/domain#workspace_id Domain#workspace_id}.
 
 ---
 

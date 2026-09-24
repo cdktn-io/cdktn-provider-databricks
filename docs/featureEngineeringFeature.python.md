@@ -4,7 +4,7 @@
 
 ### FeatureEngineeringFeature <a name="FeatureEngineeringFeature" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeature"></a>
 
-Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/feature_engineering_feature databricks_feature_engineering_feature}.
+Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/feature_engineering_feature databricks_feature_engineering_feature}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeature.Initializer"></a>
 
@@ -46,17 +46,17 @@ featureEngineeringFeature.FeatureEngineeringFeature(
 | <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeature.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeature.Initializer.parameter.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeature.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeature.Initializer.parameter.fullName">full_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/feature_engineering_feature#full_name FeatureEngineeringFeature#full_name}. |
-| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeature.Initializer.parameter.function">function</a></code> | <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunction">FeatureEngineeringFeatureFunction</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/feature_engineering_feature#function FeatureEngineeringFeature#function}. |
-| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeature.Initializer.parameter.source">source</a></code> | <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSource">FeatureEngineeringFeatureSource</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/feature_engineering_feature#source FeatureEngineeringFeature#source}. |
-| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeature.Initializer.parameter.description">description</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/feature_engineering_feature#description FeatureEngineeringFeature#description}. |
-| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeature.Initializer.parameter.entities">entities</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureEntities">FeatureEngineeringFeatureEntities</a>]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/feature_engineering_feature#entities FeatureEngineeringFeature#entities}. |
-| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeature.Initializer.parameter.filterCondition">filter_condition</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/feature_engineering_feature#filter_condition FeatureEngineeringFeature#filter_condition}. |
-| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeature.Initializer.parameter.inputs">inputs</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/feature_engineering_feature#inputs FeatureEngineeringFeature#inputs}. |
-| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeature.Initializer.parameter.lineageContext">lineage_context</a></code> | <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureLineageContext">FeatureEngineeringFeatureLineageContext</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/feature_engineering_feature#lineage_context FeatureEngineeringFeature#lineage_context}. |
-| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeature.Initializer.parameter.providerConfig">provider_config</a></code> | <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureProviderConfig">FeatureEngineeringFeatureProviderConfig</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/feature_engineering_feature#provider_config FeatureEngineeringFeature#provider_config}. |
-| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeature.Initializer.parameter.timeseriesColumn">timeseries_column</a></code> | <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureTimeseriesColumn">FeatureEngineeringFeatureTimeseriesColumn</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/feature_engineering_feature#timeseries_column FeatureEngineeringFeature#timeseries_column}. |
-| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeature.Initializer.parameter.timeWindow">time_window</a></code> | <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureTimeWindow">FeatureEngineeringFeatureTimeWindow</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/feature_engineering_feature#time_window FeatureEngineeringFeature#time_window}. |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeature.Initializer.parameter.fullName">full_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/feature_engineering_feature#full_name FeatureEngineeringFeature#full_name}. |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeature.Initializer.parameter.function">function</a></code> | <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunction">FeatureEngineeringFeatureFunction</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/feature_engineering_feature#function FeatureEngineeringFeature#function}. |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeature.Initializer.parameter.source">source</a></code> | <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSource">FeatureEngineeringFeatureSource</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/feature_engineering_feature#source FeatureEngineeringFeature#source}. |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeature.Initializer.parameter.description">description</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/feature_engineering_feature#description FeatureEngineeringFeature#description}. |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeature.Initializer.parameter.entities">entities</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureEntities">FeatureEngineeringFeatureEntities</a>]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/feature_engineering_feature#entities FeatureEngineeringFeature#entities}. |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeature.Initializer.parameter.filterCondition">filter_condition</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/feature_engineering_feature#filter_condition FeatureEngineeringFeature#filter_condition}. |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeature.Initializer.parameter.inputs">inputs</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/feature_engineering_feature#inputs FeatureEngineeringFeature#inputs}. |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeature.Initializer.parameter.lineageContext">lineage_context</a></code> | <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureLineageContext">FeatureEngineeringFeatureLineageContext</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/feature_engineering_feature#lineage_context FeatureEngineeringFeature#lineage_context}. |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeature.Initializer.parameter.providerConfig">provider_config</a></code> | <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureProviderConfig">FeatureEngineeringFeatureProviderConfig</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/feature_engineering_feature#provider_config FeatureEngineeringFeature#provider_config}. |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeature.Initializer.parameter.timeseriesColumn">timeseries_column</a></code> | <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureTimeseriesColumn">FeatureEngineeringFeatureTimeseriesColumn</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/feature_engineering_feature#timeseries_column FeatureEngineeringFeature#timeseries_column}. |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeature.Initializer.parameter.timeWindow">time_window</a></code> | <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureTimeWindow">FeatureEngineeringFeatureTimeWindow</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/feature_engineering_feature#time_window FeatureEngineeringFeature#time_window}. |
 
 ---
 
@@ -124,7 +124,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/feature_engineering_feature#full_name FeatureEngineeringFeature#full_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/feature_engineering_feature#full_name FeatureEngineeringFeature#full_name}.
 
 ---
 
@@ -132,7 +132,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* <a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunction">FeatureEngineeringFeatureFunction</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/feature_engineering_feature#function FeatureEngineeringFeature#function}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/feature_engineering_feature#function FeatureEngineeringFeature#function}.
 
 ---
 
@@ -140,7 +140,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* <a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSource">FeatureEngineeringFeatureSource</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/feature_engineering_feature#source FeatureEngineeringFeature#source}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/feature_engineering_feature#source FeatureEngineeringFeature#source}.
 
 ---
 
@@ -148,7 +148,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/feature_engineering_feature#description FeatureEngineeringFeature#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/feature_engineering_feature#description FeatureEngineeringFeature#description}.
 
 ---
 
@@ -156,7 +156,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureEntities">FeatureEngineeringFeatureEntities</a>]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/feature_engineering_feature#entities FeatureEngineeringFeature#entities}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/feature_engineering_feature#entities FeatureEngineeringFeature#entities}.
 
 ---
 
@@ -164,7 +164,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/feature_engineering_feature#filter_condition FeatureEngineeringFeature#filter_condition}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/feature_engineering_feature#filter_condition FeatureEngineeringFeature#filter_condition}.
 
 ---
 
@@ -172,7 +172,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/feature_engineering_feature#inputs FeatureEngineeringFeature#inputs}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/feature_engineering_feature#inputs FeatureEngineeringFeature#inputs}.
 
 ---
 
@@ -180,7 +180,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* <a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureLineageContext">FeatureEngineeringFeatureLineageContext</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/feature_engineering_feature#lineage_context FeatureEngineeringFeature#lineage_context}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/feature_engineering_feature#lineage_context FeatureEngineeringFeature#lineage_context}.
 
 ---
 
@@ -188,7 +188,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* <a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureProviderConfig">FeatureEngineeringFeatureProviderConfig</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/feature_engineering_feature#provider_config FeatureEngineeringFeature#provider_config}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/feature_engineering_feature#provider_config FeatureEngineeringFeature#provider_config}.
 
 ---
 
@@ -196,7 +196,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* <a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureTimeseriesColumn">FeatureEngineeringFeatureTimeseriesColumn</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/feature_engineering_feature#timeseries_column FeatureEngineeringFeature#timeseries_column}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/feature_engineering_feature#timeseries_column FeatureEngineeringFeature#timeseries_column}.
 
 ---
 
@@ -204,7 +204,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* <a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureTimeWindow">FeatureEngineeringFeatureTimeWindow</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/feature_engineering_feature#time_window FeatureEngineeringFeature#time_window}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/feature_engineering_feature#time_window FeatureEngineeringFeature#time_window}.
 
 ---
 
@@ -632,7 +632,7 @@ def put_function(
 
 - *Type:* <a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunction">FeatureEngineeringFeatureFunctionAggregationFunction</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/feature_engineering_feature#aggregation_function FeatureEngineeringFeature#aggregation_function}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/feature_engineering_feature#aggregation_function FeatureEngineeringFeature#aggregation_function}.
 
 ---
 
@@ -640,7 +640,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* <a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionColumnSelection">FeatureEngineeringFeatureFunctionColumnSelection</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/feature_engineering_feature#column_selection FeatureEngineeringFeature#column_selection}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/feature_engineering_feature#column_selection FeatureEngineeringFeature#column_selection}.
 
 ---
 
@@ -648,7 +648,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* <a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionCustomUdf">FeatureEngineeringFeatureFunctionCustomUdf</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/feature_engineering_feature#custom_udf FeatureEngineeringFeature#custom_udf}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/feature_engineering_feature#custom_udf FeatureEngineeringFeature#custom_udf}.
 
 ---
 
@@ -656,7 +656,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionExtraParameters">FeatureEngineeringFeatureFunctionExtraParameters</a>]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/feature_engineering_feature#extra_parameters FeatureEngineeringFeature#extra_parameters}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/feature_engineering_feature#extra_parameters FeatureEngineeringFeature#extra_parameters}.
 
 ---
 
@@ -664,7 +664,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/feature_engineering_feature#function_type FeatureEngineeringFeature#function_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/feature_engineering_feature#function_type FeatureEngineeringFeature#function_type}.
 
 ---
 
@@ -681,7 +681,7 @@ def put_lineage_context(
 
 - *Type:* <a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureLineageContextJobContext">FeatureEngineeringFeatureLineageContextJobContext</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/feature_engineering_feature#job_context FeatureEngineeringFeature#job_context}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/feature_engineering_feature#job_context FeatureEngineeringFeature#job_context}.
 
 ---
 
@@ -689,7 +689,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/feature_engineering_feature#notebook_id FeatureEngineeringFeature#notebook_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/feature_engineering_feature#notebook_id FeatureEngineeringFeature#notebook_id}.
 
 ---
 
@@ -705,7 +705,7 @@ def put_provider_config(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/feature_engineering_feature#workspace_id FeatureEngineeringFeature#workspace_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/feature_engineering_feature#workspace_id FeatureEngineeringFeature#workspace_id}.
 
 ---
 
@@ -714,6 +714,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 ```python
 def put_source(
   delta_table_source: FeatureEngineeringFeatureSourceDeltaTableSource = None,
+  feature_view_source: FeatureEngineeringFeatureSourceFeatureViewSource = None,
   kafka_source: FeatureEngineeringFeatureSourceKafkaSource = None,
   lateness: FeatureEngineeringFeatureSourceLateness = None,
   request_source: FeatureEngineeringFeatureSourceRequestSource = None,
@@ -725,7 +726,15 @@ def put_source(
 
 - *Type:* <a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSourceDeltaTableSource">FeatureEngineeringFeatureSourceDeltaTableSource</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/feature_engineering_feature#delta_table_source FeatureEngineeringFeature#delta_table_source}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/feature_engineering_feature#delta_table_source FeatureEngineeringFeature#delta_table_source}.
+
+---
+
+###### `feature_view_source`<sup>Optional</sup> <a name="feature_view_source" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeature.putSource.parameter.featureViewSource"></a>
+
+- *Type:* <a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSourceFeatureViewSource">FeatureEngineeringFeatureSourceFeatureViewSource</a>
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/feature_engineering_feature#feature_view_source FeatureEngineeringFeature#feature_view_source}.
 
 ---
 
@@ -733,7 +742,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* <a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSourceKafkaSource">FeatureEngineeringFeatureSourceKafkaSource</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/feature_engineering_feature#kafka_source FeatureEngineeringFeature#kafka_source}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/feature_engineering_feature#kafka_source FeatureEngineeringFeature#kafka_source}.
 
 ---
 
@@ -741,7 +750,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* <a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSourceLateness">FeatureEngineeringFeatureSourceLateness</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/feature_engineering_feature#lateness FeatureEngineeringFeature#lateness}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/feature_engineering_feature#lateness FeatureEngineeringFeature#lateness}.
 
 ---
 
@@ -749,7 +758,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* <a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSourceRequestSource">FeatureEngineeringFeatureSourceRequestSource</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/feature_engineering_feature#request_source FeatureEngineeringFeature#request_source}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/feature_engineering_feature#request_source FeatureEngineeringFeature#request_source}.
 
 ---
 
@@ -757,7 +766,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* <a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSourceStreamSource">FeatureEngineeringFeatureSourceStreamSource</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/feature_engineering_feature#stream_source FeatureEngineeringFeature#stream_source}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/feature_engineering_feature#stream_source FeatureEngineeringFeature#stream_source}.
 
 ---
 
@@ -773,7 +782,7 @@ def put_timeseries_column(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/feature_engineering_feature#name FeatureEngineeringFeature#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/feature_engineering_feature#name FeatureEngineeringFeature#name}.
 
 ---
 
@@ -794,7 +803,7 @@ def put_time_window(
 
 - *Type:* <a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureTimeWindowContinuous">FeatureEngineeringFeatureTimeWindowContinuous</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/feature_engineering_feature#continuous FeatureEngineeringFeature#continuous}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/feature_engineering_feature#continuous FeatureEngineeringFeature#continuous}.
 
 ---
 
@@ -802,7 +811,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* <a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureTimeWindowRolling">FeatureEngineeringFeatureTimeWindowRolling</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/feature_engineering_feature#rolling FeatureEngineeringFeature#rolling}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/feature_engineering_feature#rolling FeatureEngineeringFeature#rolling}.
 
 ---
 
@@ -810,7 +819,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* <a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureTimeWindowSawtooth">FeatureEngineeringFeatureTimeWindowSawtooth</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/feature_engineering_feature#sawtooth FeatureEngineeringFeature#sawtooth}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/feature_engineering_feature#sawtooth FeatureEngineeringFeature#sawtooth}.
 
 ---
 
@@ -818,7 +827,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* <a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureTimeWindowSliding">FeatureEngineeringFeatureTimeWindowSliding</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/feature_engineering_feature#sliding FeatureEngineeringFeature#sliding}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/feature_engineering_feature#sliding FeatureEngineeringFeature#sliding}.
 
 ---
 
@@ -826,7 +835,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/feature_engineering_feature#start_time FeatureEngineeringFeature#start_time}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/feature_engineering_feature#start_time FeatureEngineeringFeature#start_time}.
 
 ---
 
@@ -834,7 +843,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* <a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureTimeWindowTumbling">FeatureEngineeringFeatureTimeWindowTumbling</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/feature_engineering_feature#tumbling FeatureEngineeringFeature#tumbling}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/feature_engineering_feature#tumbling FeatureEngineeringFeature#tumbling}.
 
 ---
 
@@ -1000,7 +1009,7 @@ The construct id used in the generated config for the FeatureEngineeringFeature 
 
 The id of the existing FeatureEngineeringFeature that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/feature_engineering_feature#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/feature_engineering_feature#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1532,17 +1541,17 @@ featureEngineeringFeature.FeatureEngineeringFeatureConfig(
 | <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureConfig.property.fullName">full_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/feature_engineering_feature#full_name FeatureEngineeringFeature#full_name}. |
-| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureConfig.property.function">function</a></code> | <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunction">FeatureEngineeringFeatureFunction</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/feature_engineering_feature#function FeatureEngineeringFeature#function}. |
-| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureConfig.property.source">source</a></code> | <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSource">FeatureEngineeringFeatureSource</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/feature_engineering_feature#source FeatureEngineeringFeature#source}. |
-| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureConfig.property.description">description</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/feature_engineering_feature#description FeatureEngineeringFeature#description}. |
-| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureConfig.property.entities">entities</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureEntities">FeatureEngineeringFeatureEntities</a>]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/feature_engineering_feature#entities FeatureEngineeringFeature#entities}. |
-| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureConfig.property.filterCondition">filter_condition</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/feature_engineering_feature#filter_condition FeatureEngineeringFeature#filter_condition}. |
-| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureConfig.property.inputs">inputs</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/feature_engineering_feature#inputs FeatureEngineeringFeature#inputs}. |
-| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureConfig.property.lineageContext">lineage_context</a></code> | <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureLineageContext">FeatureEngineeringFeatureLineageContext</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/feature_engineering_feature#lineage_context FeatureEngineeringFeature#lineage_context}. |
-| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureConfig.property.providerConfig">provider_config</a></code> | <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureProviderConfig">FeatureEngineeringFeatureProviderConfig</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/feature_engineering_feature#provider_config FeatureEngineeringFeature#provider_config}. |
-| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureConfig.property.timeseriesColumn">timeseries_column</a></code> | <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureTimeseriesColumn">FeatureEngineeringFeatureTimeseriesColumn</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/feature_engineering_feature#timeseries_column FeatureEngineeringFeature#timeseries_column}. |
-| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureConfig.property.timeWindow">time_window</a></code> | <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureTimeWindow">FeatureEngineeringFeatureTimeWindow</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/feature_engineering_feature#time_window FeatureEngineeringFeature#time_window}. |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureConfig.property.fullName">full_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/feature_engineering_feature#full_name FeatureEngineeringFeature#full_name}. |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureConfig.property.function">function</a></code> | <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunction">FeatureEngineeringFeatureFunction</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/feature_engineering_feature#function FeatureEngineeringFeature#function}. |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureConfig.property.source">source</a></code> | <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSource">FeatureEngineeringFeatureSource</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/feature_engineering_feature#source FeatureEngineeringFeature#source}. |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureConfig.property.description">description</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/feature_engineering_feature#description FeatureEngineeringFeature#description}. |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureConfig.property.entities">entities</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureEntities">FeatureEngineeringFeatureEntities</a>]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/feature_engineering_feature#entities FeatureEngineeringFeature#entities}. |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureConfig.property.filterCondition">filter_condition</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/feature_engineering_feature#filter_condition FeatureEngineeringFeature#filter_condition}. |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureConfig.property.inputs">inputs</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/feature_engineering_feature#inputs FeatureEngineeringFeature#inputs}. |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureConfig.property.lineageContext">lineage_context</a></code> | <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureLineageContext">FeatureEngineeringFeatureLineageContext</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/feature_engineering_feature#lineage_context FeatureEngineeringFeature#lineage_context}. |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureConfig.property.providerConfig">provider_config</a></code> | <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureProviderConfig">FeatureEngineeringFeatureProviderConfig</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/feature_engineering_feature#provider_config FeatureEngineeringFeature#provider_config}. |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureConfig.property.timeseriesColumn">timeseries_column</a></code> | <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureTimeseriesColumn">FeatureEngineeringFeatureTimeseriesColumn</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/feature_engineering_feature#timeseries_column FeatureEngineeringFeature#timeseries_column}. |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureConfig.property.timeWindow">time_window</a></code> | <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureTimeWindow">FeatureEngineeringFeatureTimeWindow</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/feature_engineering_feature#time_window FeatureEngineeringFeature#time_window}. |
 
 ---
 
@@ -1624,7 +1633,7 @@ full_name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/feature_engineering_feature#full_name FeatureEngineeringFeature#full_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/feature_engineering_feature#full_name FeatureEngineeringFeature#full_name}.
 
 ---
 
@@ -1636,7 +1645,7 @@ function: FeatureEngineeringFeatureFunction
 
 - *Type:* <a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunction">FeatureEngineeringFeatureFunction</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/feature_engineering_feature#function FeatureEngineeringFeature#function}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/feature_engineering_feature#function FeatureEngineeringFeature#function}.
 
 ---
 
@@ -1648,7 +1657,7 @@ source: FeatureEngineeringFeatureSource
 
 - *Type:* <a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSource">FeatureEngineeringFeatureSource</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/feature_engineering_feature#source FeatureEngineeringFeature#source}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/feature_engineering_feature#source FeatureEngineeringFeature#source}.
 
 ---
 
@@ -1660,7 +1669,7 @@ description: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/feature_engineering_feature#description FeatureEngineeringFeature#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/feature_engineering_feature#description FeatureEngineeringFeature#description}.
 
 ---
 
@@ -1672,7 +1681,7 @@ entities: IResolvable | typing.List[FeatureEngineeringFeatureEntities]
 
 - *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureEntities">FeatureEngineeringFeatureEntities</a>]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/feature_engineering_feature#entities FeatureEngineeringFeature#entities}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/feature_engineering_feature#entities FeatureEngineeringFeature#entities}.
 
 ---
 
@@ -1684,7 +1693,7 @@ filter_condition: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/feature_engineering_feature#filter_condition FeatureEngineeringFeature#filter_condition}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/feature_engineering_feature#filter_condition FeatureEngineeringFeature#filter_condition}.
 
 ---
 
@@ -1696,7 +1705,7 @@ inputs: typing.List[str]
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/feature_engineering_feature#inputs FeatureEngineeringFeature#inputs}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/feature_engineering_feature#inputs FeatureEngineeringFeature#inputs}.
 
 ---
 
@@ -1708,7 +1717,7 @@ lineage_context: FeatureEngineeringFeatureLineageContext
 
 - *Type:* <a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureLineageContext">FeatureEngineeringFeatureLineageContext</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/feature_engineering_feature#lineage_context FeatureEngineeringFeature#lineage_context}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/feature_engineering_feature#lineage_context FeatureEngineeringFeature#lineage_context}.
 
 ---
 
@@ -1720,7 +1729,7 @@ provider_config: FeatureEngineeringFeatureProviderConfig
 
 - *Type:* <a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureProviderConfig">FeatureEngineeringFeatureProviderConfig</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/feature_engineering_feature#provider_config FeatureEngineeringFeature#provider_config}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/feature_engineering_feature#provider_config FeatureEngineeringFeature#provider_config}.
 
 ---
 
@@ -1732,7 +1741,7 @@ timeseries_column: FeatureEngineeringFeatureTimeseriesColumn
 
 - *Type:* <a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureTimeseriesColumn">FeatureEngineeringFeatureTimeseriesColumn</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/feature_engineering_feature#timeseries_column FeatureEngineeringFeature#timeseries_column}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/feature_engineering_feature#timeseries_column FeatureEngineeringFeature#timeseries_column}.
 
 ---
 
@@ -1744,7 +1753,7 @@ time_window: FeatureEngineeringFeatureTimeWindow
 
 - *Type:* <a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureTimeWindow">FeatureEngineeringFeatureTimeWindow</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/feature_engineering_feature#time_window FeatureEngineeringFeature#time_window}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/feature_engineering_feature#time_window FeatureEngineeringFeature#time_window}.
 
 ---
 
@@ -1764,7 +1773,7 @@ featureEngineeringFeature.FeatureEngineeringFeatureEntities(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureEntities.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/feature_engineering_feature#name FeatureEngineeringFeature#name}. |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureEntities.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/feature_engineering_feature#name FeatureEngineeringFeature#name}. |
 
 ---
 
@@ -1776,7 +1785,7 @@ name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/feature_engineering_feature#name FeatureEngineeringFeature#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/feature_engineering_feature#name FeatureEngineeringFeature#name}.
 
 ---
 
@@ -1800,11 +1809,11 @@ featureEngineeringFeature.FeatureEngineeringFeatureFunction(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunction.property.aggregationFunction">aggregation_function</a></code> | <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunction">FeatureEngineeringFeatureFunctionAggregationFunction</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/feature_engineering_feature#aggregation_function FeatureEngineeringFeature#aggregation_function}. |
-| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunction.property.columnSelection">column_selection</a></code> | <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionColumnSelection">FeatureEngineeringFeatureFunctionColumnSelection</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/feature_engineering_feature#column_selection FeatureEngineeringFeature#column_selection}. |
-| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunction.property.customUdf">custom_udf</a></code> | <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionCustomUdf">FeatureEngineeringFeatureFunctionCustomUdf</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/feature_engineering_feature#custom_udf FeatureEngineeringFeature#custom_udf}. |
-| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunction.property.extraParameters">extra_parameters</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionExtraParameters">FeatureEngineeringFeatureFunctionExtraParameters</a>]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/feature_engineering_feature#extra_parameters FeatureEngineeringFeature#extra_parameters}. |
-| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunction.property.functionType">function_type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/feature_engineering_feature#function_type FeatureEngineeringFeature#function_type}. |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunction.property.aggregationFunction">aggregation_function</a></code> | <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunction">FeatureEngineeringFeatureFunctionAggregationFunction</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/feature_engineering_feature#aggregation_function FeatureEngineeringFeature#aggregation_function}. |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunction.property.columnSelection">column_selection</a></code> | <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionColumnSelection">FeatureEngineeringFeatureFunctionColumnSelection</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/feature_engineering_feature#column_selection FeatureEngineeringFeature#column_selection}. |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunction.property.customUdf">custom_udf</a></code> | <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionCustomUdf">FeatureEngineeringFeatureFunctionCustomUdf</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/feature_engineering_feature#custom_udf FeatureEngineeringFeature#custom_udf}. |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunction.property.extraParameters">extra_parameters</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionExtraParameters">FeatureEngineeringFeatureFunctionExtraParameters</a>]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/feature_engineering_feature#extra_parameters FeatureEngineeringFeature#extra_parameters}. |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunction.property.functionType">function_type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/feature_engineering_feature#function_type FeatureEngineeringFeature#function_type}. |
 
 ---
 
@@ -1816,7 +1825,7 @@ aggregation_function: FeatureEngineeringFeatureFunctionAggregationFunction
 
 - *Type:* <a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunction">FeatureEngineeringFeatureFunctionAggregationFunction</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/feature_engineering_feature#aggregation_function FeatureEngineeringFeature#aggregation_function}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/feature_engineering_feature#aggregation_function FeatureEngineeringFeature#aggregation_function}.
 
 ---
 
@@ -1828,7 +1837,7 @@ column_selection: FeatureEngineeringFeatureFunctionColumnSelection
 
 - *Type:* <a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionColumnSelection">FeatureEngineeringFeatureFunctionColumnSelection</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/feature_engineering_feature#column_selection FeatureEngineeringFeature#column_selection}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/feature_engineering_feature#column_selection FeatureEngineeringFeature#column_selection}.
 
 ---
 
@@ -1840,7 +1849,7 @@ custom_udf: FeatureEngineeringFeatureFunctionCustomUdf
 
 - *Type:* <a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionCustomUdf">FeatureEngineeringFeatureFunctionCustomUdf</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/feature_engineering_feature#custom_udf FeatureEngineeringFeature#custom_udf}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/feature_engineering_feature#custom_udf FeatureEngineeringFeature#custom_udf}.
 
 ---
 
@@ -1852,7 +1861,7 @@ extra_parameters: IResolvable | typing.List[FeatureEngineeringFeatureFunctionExt
 
 - *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionExtraParameters">FeatureEngineeringFeatureFunctionExtraParameters</a>]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/feature_engineering_feature#extra_parameters FeatureEngineeringFeature#extra_parameters}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/feature_engineering_feature#extra_parameters FeatureEngineeringFeature#extra_parameters}.
 
 ---
 
@@ -1864,7 +1873,7 @@ function_type: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/feature_engineering_feature#function_type FeatureEngineeringFeature#function_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/feature_engineering_feature#function_type FeatureEngineeringFeature#function_type}.
 
 ---
 
@@ -1901,24 +1910,24 @@ featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunction(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunction.property.approxCountDistinct">approx_count_distinct</a></code> | <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionApproxCountDistinct">FeatureEngineeringFeatureFunctionAggregationFunctionApproxCountDistinct</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/feature_engineering_feature#approx_count_distinct FeatureEngineeringFeature#approx_count_distinct}. |
-| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunction.property.approxPercentile">approx_percentile</a></code> | <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionApproxPercentile">FeatureEngineeringFeatureFunctionAggregationFunctionApproxPercentile</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/feature_engineering_feature#approx_percentile FeatureEngineeringFeature#approx_percentile}. |
-| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunction.property.avg">avg</a></code> | <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionAvg">FeatureEngineeringFeatureFunctionAggregationFunctionAvg</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/feature_engineering_feature#avg FeatureEngineeringFeature#avg}. |
-| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunction.property.countFunction">count_function</a></code> | <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionCountFunction">FeatureEngineeringFeatureFunctionAggregationFunctionCountFunction</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/feature_engineering_feature#count_function FeatureEngineeringFeature#count_function}. |
-| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunction.property.first">first</a></code> | <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionFirst">FeatureEngineeringFeatureFunctionAggregationFunctionFirst</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/feature_engineering_feature#first FeatureEngineeringFeature#first}. |
-| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunction.property.firstDistinct">first_distinct</a></code> | <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionFirstDistinct">FeatureEngineeringFeatureFunctionAggregationFunctionFirstDistinct</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/feature_engineering_feature#first_distinct FeatureEngineeringFeature#first_distinct}. |
-| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunction.property.firstN">first_n</a></code> | <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionFirstN">FeatureEngineeringFeatureFunctionAggregationFunctionFirstN</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/feature_engineering_feature#first_n FeatureEngineeringFeature#first_n}. |
-| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunction.property.last">last</a></code> | <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionLast">FeatureEngineeringFeatureFunctionAggregationFunctionLast</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/feature_engineering_feature#last FeatureEngineeringFeature#last}. |
-| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunction.property.lastDistinct">last_distinct</a></code> | <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionLastDistinct">FeatureEngineeringFeatureFunctionAggregationFunctionLastDistinct</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/feature_engineering_feature#last_distinct FeatureEngineeringFeature#last_distinct}. |
-| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunction.property.lastN">last_n</a></code> | <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionLastN">FeatureEngineeringFeatureFunctionAggregationFunctionLastN</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/feature_engineering_feature#last_n FeatureEngineeringFeature#last_n}. |
-| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunction.property.max">max</a></code> | <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionMax">FeatureEngineeringFeatureFunctionAggregationFunctionMax</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/feature_engineering_feature#max FeatureEngineeringFeature#max}. |
-| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunction.property.min">min</a></code> | <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionMin">FeatureEngineeringFeatureFunctionAggregationFunctionMin</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/feature_engineering_feature#min FeatureEngineeringFeature#min}. |
-| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunction.property.stddevPop">stddev_pop</a></code> | <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionStddevPop">FeatureEngineeringFeatureFunctionAggregationFunctionStddevPop</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/feature_engineering_feature#stddev_pop FeatureEngineeringFeature#stddev_pop}. |
-| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunction.property.stddevSamp">stddev_samp</a></code> | <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionStddevSamp">FeatureEngineeringFeatureFunctionAggregationFunctionStddevSamp</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/feature_engineering_feature#stddev_samp FeatureEngineeringFeature#stddev_samp}. |
-| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunction.property.sum">sum</a></code> | <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionSum">FeatureEngineeringFeatureFunctionAggregationFunctionSum</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/feature_engineering_feature#sum FeatureEngineeringFeature#sum}. |
-| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunction.property.timeWindow">time_window</a></code> | <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindow">FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindow</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/feature_engineering_feature#time_window FeatureEngineeringFeature#time_window}. |
-| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunction.property.varPop">var_pop</a></code> | <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionVarPop">FeatureEngineeringFeatureFunctionAggregationFunctionVarPop</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/feature_engineering_feature#var_pop FeatureEngineeringFeature#var_pop}. |
-| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunction.property.varSamp">var_samp</a></code> | <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionVarSamp">FeatureEngineeringFeatureFunctionAggregationFunctionVarSamp</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/feature_engineering_feature#var_samp FeatureEngineeringFeature#var_samp}. |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunction.property.approxCountDistinct">approx_count_distinct</a></code> | <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionApproxCountDistinct">FeatureEngineeringFeatureFunctionAggregationFunctionApproxCountDistinct</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/feature_engineering_feature#approx_count_distinct FeatureEngineeringFeature#approx_count_distinct}. |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunction.property.approxPercentile">approx_percentile</a></code> | <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionApproxPercentile">FeatureEngineeringFeatureFunctionAggregationFunctionApproxPercentile</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/feature_engineering_feature#approx_percentile FeatureEngineeringFeature#approx_percentile}. |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunction.property.avg">avg</a></code> | <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionAvg">FeatureEngineeringFeatureFunctionAggregationFunctionAvg</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/feature_engineering_feature#avg FeatureEngineeringFeature#avg}. |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunction.property.countFunction">count_function</a></code> | <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionCountFunction">FeatureEngineeringFeatureFunctionAggregationFunctionCountFunction</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/feature_engineering_feature#count_function FeatureEngineeringFeature#count_function}. |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunction.property.first">first</a></code> | <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionFirst">FeatureEngineeringFeatureFunctionAggregationFunctionFirst</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/feature_engineering_feature#first FeatureEngineeringFeature#first}. |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunction.property.firstDistinct">first_distinct</a></code> | <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionFirstDistinct">FeatureEngineeringFeatureFunctionAggregationFunctionFirstDistinct</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/feature_engineering_feature#first_distinct FeatureEngineeringFeature#first_distinct}. |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunction.property.firstN">first_n</a></code> | <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionFirstN">FeatureEngineeringFeatureFunctionAggregationFunctionFirstN</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/feature_engineering_feature#first_n FeatureEngineeringFeature#first_n}. |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunction.property.last">last</a></code> | <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionLast">FeatureEngineeringFeatureFunctionAggregationFunctionLast</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/feature_engineering_feature#last FeatureEngineeringFeature#last}. |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunction.property.lastDistinct">last_distinct</a></code> | <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionLastDistinct">FeatureEngineeringFeatureFunctionAggregationFunctionLastDistinct</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/feature_engineering_feature#last_distinct FeatureEngineeringFeature#last_distinct}. |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunction.property.lastN">last_n</a></code> | <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionLastN">FeatureEngineeringFeatureFunctionAggregationFunctionLastN</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/feature_engineering_feature#last_n FeatureEngineeringFeature#last_n}. |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunction.property.max">max</a></code> | <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionMax">FeatureEngineeringFeatureFunctionAggregationFunctionMax</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/feature_engineering_feature#max FeatureEngineeringFeature#max}. |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunction.property.min">min</a></code> | <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionMin">FeatureEngineeringFeatureFunctionAggregationFunctionMin</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/feature_engineering_feature#min FeatureEngineeringFeature#min}. |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunction.property.stddevPop">stddev_pop</a></code> | <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionStddevPop">FeatureEngineeringFeatureFunctionAggregationFunctionStddevPop</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/feature_engineering_feature#stddev_pop FeatureEngineeringFeature#stddev_pop}. |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunction.property.stddevSamp">stddev_samp</a></code> | <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionStddevSamp">FeatureEngineeringFeatureFunctionAggregationFunctionStddevSamp</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/feature_engineering_feature#stddev_samp FeatureEngineeringFeature#stddev_samp}. |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunction.property.sum">sum</a></code> | <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionSum">FeatureEngineeringFeatureFunctionAggregationFunctionSum</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/feature_engineering_feature#sum FeatureEngineeringFeature#sum}. |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunction.property.timeWindow">time_window</a></code> | <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindow">FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindow</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/feature_engineering_feature#time_window FeatureEngineeringFeature#time_window}. |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunction.property.varPop">var_pop</a></code> | <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionVarPop">FeatureEngineeringFeatureFunctionAggregationFunctionVarPop</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/feature_engineering_feature#var_pop FeatureEngineeringFeature#var_pop}. |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunction.property.varSamp">var_samp</a></code> | <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionVarSamp">FeatureEngineeringFeatureFunctionAggregationFunctionVarSamp</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/feature_engineering_feature#var_samp FeatureEngineeringFeature#var_samp}. |
 
 ---
 
@@ -1930,7 +1939,7 @@ approx_count_distinct: FeatureEngineeringFeatureFunctionAggregationFunctionAppro
 
 - *Type:* <a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionApproxCountDistinct">FeatureEngineeringFeatureFunctionAggregationFunctionApproxCountDistinct</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/feature_engineering_feature#approx_count_distinct FeatureEngineeringFeature#approx_count_distinct}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/feature_engineering_feature#approx_count_distinct FeatureEngineeringFeature#approx_count_distinct}.
 
 ---
 
@@ -1942,7 +1951,7 @@ approx_percentile: FeatureEngineeringFeatureFunctionAggregationFunctionApproxPer
 
 - *Type:* <a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionApproxPercentile">FeatureEngineeringFeatureFunctionAggregationFunctionApproxPercentile</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/feature_engineering_feature#approx_percentile FeatureEngineeringFeature#approx_percentile}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/feature_engineering_feature#approx_percentile FeatureEngineeringFeature#approx_percentile}.
 
 ---
 
@@ -1954,7 +1963,7 @@ avg: FeatureEngineeringFeatureFunctionAggregationFunctionAvg
 
 - *Type:* <a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionAvg">FeatureEngineeringFeatureFunctionAggregationFunctionAvg</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/feature_engineering_feature#avg FeatureEngineeringFeature#avg}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/feature_engineering_feature#avg FeatureEngineeringFeature#avg}.
 
 ---
 
@@ -1966,7 +1975,7 @@ count_function: FeatureEngineeringFeatureFunctionAggregationFunctionCountFunctio
 
 - *Type:* <a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionCountFunction">FeatureEngineeringFeatureFunctionAggregationFunctionCountFunction</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/feature_engineering_feature#count_function FeatureEngineeringFeature#count_function}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/feature_engineering_feature#count_function FeatureEngineeringFeature#count_function}.
 
 ---
 
@@ -1978,7 +1987,7 @@ first: FeatureEngineeringFeatureFunctionAggregationFunctionFirst
 
 - *Type:* <a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionFirst">FeatureEngineeringFeatureFunctionAggregationFunctionFirst</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/feature_engineering_feature#first FeatureEngineeringFeature#first}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/feature_engineering_feature#first FeatureEngineeringFeature#first}.
 
 ---
 
@@ -1990,7 +1999,7 @@ first_distinct: FeatureEngineeringFeatureFunctionAggregationFunctionFirstDistinc
 
 - *Type:* <a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionFirstDistinct">FeatureEngineeringFeatureFunctionAggregationFunctionFirstDistinct</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/feature_engineering_feature#first_distinct FeatureEngineeringFeature#first_distinct}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/feature_engineering_feature#first_distinct FeatureEngineeringFeature#first_distinct}.
 
 ---
 
@@ -2002,7 +2011,7 @@ first_n: FeatureEngineeringFeatureFunctionAggregationFunctionFirstN
 
 - *Type:* <a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionFirstN">FeatureEngineeringFeatureFunctionAggregationFunctionFirstN</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/feature_engineering_feature#first_n FeatureEngineeringFeature#first_n}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/feature_engineering_feature#first_n FeatureEngineeringFeature#first_n}.
 
 ---
 
@@ -2014,7 +2023,7 @@ last: FeatureEngineeringFeatureFunctionAggregationFunctionLast
 
 - *Type:* <a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionLast">FeatureEngineeringFeatureFunctionAggregationFunctionLast</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/feature_engineering_feature#last FeatureEngineeringFeature#last}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/feature_engineering_feature#last FeatureEngineeringFeature#last}.
 
 ---
 
@@ -2026,7 +2035,7 @@ last_distinct: FeatureEngineeringFeatureFunctionAggregationFunctionLastDistinct
 
 - *Type:* <a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionLastDistinct">FeatureEngineeringFeatureFunctionAggregationFunctionLastDistinct</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/feature_engineering_feature#last_distinct FeatureEngineeringFeature#last_distinct}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/feature_engineering_feature#last_distinct FeatureEngineeringFeature#last_distinct}.
 
 ---
 
@@ -2038,7 +2047,7 @@ last_n: FeatureEngineeringFeatureFunctionAggregationFunctionLastN
 
 - *Type:* <a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionLastN">FeatureEngineeringFeatureFunctionAggregationFunctionLastN</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/feature_engineering_feature#last_n FeatureEngineeringFeature#last_n}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/feature_engineering_feature#last_n FeatureEngineeringFeature#last_n}.
 
 ---
 
@@ -2050,7 +2059,7 @@ max: FeatureEngineeringFeatureFunctionAggregationFunctionMax
 
 - *Type:* <a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionMax">FeatureEngineeringFeatureFunctionAggregationFunctionMax</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/feature_engineering_feature#max FeatureEngineeringFeature#max}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/feature_engineering_feature#max FeatureEngineeringFeature#max}.
 
 ---
 
@@ -2062,7 +2071,7 @@ min: FeatureEngineeringFeatureFunctionAggregationFunctionMin
 
 - *Type:* <a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionMin">FeatureEngineeringFeatureFunctionAggregationFunctionMin</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/feature_engineering_feature#min FeatureEngineeringFeature#min}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/feature_engineering_feature#min FeatureEngineeringFeature#min}.
 
 ---
 
@@ -2074,7 +2083,7 @@ stddev_pop: FeatureEngineeringFeatureFunctionAggregationFunctionStddevPop
 
 - *Type:* <a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionStddevPop">FeatureEngineeringFeatureFunctionAggregationFunctionStddevPop</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/feature_engineering_feature#stddev_pop FeatureEngineeringFeature#stddev_pop}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/feature_engineering_feature#stddev_pop FeatureEngineeringFeature#stddev_pop}.
 
 ---
 
@@ -2086,7 +2095,7 @@ stddev_samp: FeatureEngineeringFeatureFunctionAggregationFunctionStddevSamp
 
 - *Type:* <a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionStddevSamp">FeatureEngineeringFeatureFunctionAggregationFunctionStddevSamp</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/feature_engineering_feature#stddev_samp FeatureEngineeringFeature#stddev_samp}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/feature_engineering_feature#stddev_samp FeatureEngineeringFeature#stddev_samp}.
 
 ---
 
@@ -2098,7 +2107,7 @@ sum: FeatureEngineeringFeatureFunctionAggregationFunctionSum
 
 - *Type:* <a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionSum">FeatureEngineeringFeatureFunctionAggregationFunctionSum</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/feature_engineering_feature#sum FeatureEngineeringFeature#sum}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/feature_engineering_feature#sum FeatureEngineeringFeature#sum}.
 
 ---
 
@@ -2110,7 +2119,7 @@ time_window: FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindow
 
 - *Type:* <a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindow">FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindow</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/feature_engineering_feature#time_window FeatureEngineeringFeature#time_window}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/feature_engineering_feature#time_window FeatureEngineeringFeature#time_window}.
 
 ---
 
@@ -2122,7 +2131,7 @@ var_pop: FeatureEngineeringFeatureFunctionAggregationFunctionVarPop
 
 - *Type:* <a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionVarPop">FeatureEngineeringFeatureFunctionAggregationFunctionVarPop</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/feature_engineering_feature#var_pop FeatureEngineeringFeature#var_pop}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/feature_engineering_feature#var_pop FeatureEngineeringFeature#var_pop}.
 
 ---
 
@@ -2134,7 +2143,7 @@ var_samp: FeatureEngineeringFeatureFunctionAggregationFunctionVarSamp
 
 - *Type:* <a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionVarSamp">FeatureEngineeringFeatureFunctionAggregationFunctionVarSamp</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/feature_engineering_feature#var_samp FeatureEngineeringFeature#var_samp}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/feature_engineering_feature#var_samp FeatureEngineeringFeature#var_samp}.
 
 ---
 
@@ -2155,8 +2164,8 @@ featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionAp
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionApproxCountDistinct.property.input">input</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/feature_engineering_feature#input FeatureEngineeringFeature#input}. |
-| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionApproxCountDistinct.property.relativeSd">relative_sd</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/feature_engineering_feature#relative_sd FeatureEngineeringFeature#relative_sd}. |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionApproxCountDistinct.property.input">input</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/feature_engineering_feature#input FeatureEngineeringFeature#input}. |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionApproxCountDistinct.property.relativeSd">relative_sd</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/feature_engineering_feature#relative_sd FeatureEngineeringFeature#relative_sd}. |
 
 ---
 
@@ -2168,7 +2177,7 @@ input: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/feature_engineering_feature#input FeatureEngineeringFeature#input}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/feature_engineering_feature#input FeatureEngineeringFeature#input}.
 
 ---
 
@@ -2180,7 +2189,7 @@ relative_sd: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/feature_engineering_feature#relative_sd FeatureEngineeringFeature#relative_sd}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/feature_engineering_feature#relative_sd FeatureEngineeringFeature#relative_sd}.
 
 ---
 
@@ -2202,9 +2211,9 @@ featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionAp
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionApproxPercentile.property.input">input</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/feature_engineering_feature#input FeatureEngineeringFeature#input}. |
-| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionApproxPercentile.property.percentile">percentile</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/feature_engineering_feature#percentile FeatureEngineeringFeature#percentile}. |
-| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionApproxPercentile.property.accuracy">accuracy</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/feature_engineering_feature#accuracy FeatureEngineeringFeature#accuracy}. |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionApproxPercentile.property.input">input</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/feature_engineering_feature#input FeatureEngineeringFeature#input}. |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionApproxPercentile.property.percentile">percentile</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/feature_engineering_feature#percentile FeatureEngineeringFeature#percentile}. |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionApproxPercentile.property.accuracy">accuracy</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/feature_engineering_feature#accuracy FeatureEngineeringFeature#accuracy}. |
 
 ---
 
@@ -2216,7 +2225,7 @@ input: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/feature_engineering_feature#input FeatureEngineeringFeature#input}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/feature_engineering_feature#input FeatureEngineeringFeature#input}.
 
 ---
 
@@ -2228,7 +2237,7 @@ percentile: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/feature_engineering_feature#percentile FeatureEngineeringFeature#percentile}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/feature_engineering_feature#percentile FeatureEngineeringFeature#percentile}.
 
 ---
 
@@ -2240,7 +2249,7 @@ accuracy: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/feature_engineering_feature#accuracy FeatureEngineeringFeature#accuracy}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/feature_engineering_feature#accuracy FeatureEngineeringFeature#accuracy}.
 
 ---
 
@@ -2260,7 +2269,7 @@ featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionAv
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionAvg.property.input">input</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/feature_engineering_feature#input FeatureEngineeringFeature#input}. |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionAvg.property.input">input</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/feature_engineering_feature#input FeatureEngineeringFeature#input}. |
 
 ---
 
@@ -2272,7 +2281,7 @@ input: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/feature_engineering_feature#input FeatureEngineeringFeature#input}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/feature_engineering_feature#input FeatureEngineeringFeature#input}.
 
 ---
 
@@ -2292,7 +2301,7 @@ featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionCo
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionCountFunction.property.input">input</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/feature_engineering_feature#input FeatureEngineeringFeature#input}. |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionCountFunction.property.input">input</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/feature_engineering_feature#input FeatureEngineeringFeature#input}. |
 
 ---
 
@@ -2304,7 +2313,7 @@ input: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/feature_engineering_feature#input FeatureEngineeringFeature#input}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/feature_engineering_feature#input FeatureEngineeringFeature#input}.
 
 ---
 
@@ -2324,7 +2333,7 @@ featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionFi
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionFirst.property.input">input</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/feature_engineering_feature#input FeatureEngineeringFeature#input}. |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionFirst.property.input">input</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/feature_engineering_feature#input FeatureEngineeringFeature#input}. |
 
 ---
 
@@ -2336,7 +2345,7 @@ input: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/feature_engineering_feature#input FeatureEngineeringFeature#input}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/feature_engineering_feature#input FeatureEngineeringFeature#input}.
 
 ---
 
@@ -2357,8 +2366,8 @@ featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionFi
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionFirstDistinct.property.input">input</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/feature_engineering_feature#input FeatureEngineeringFeature#input}. |
-| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionFirstDistinct.property.n">n</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/feature_engineering_feature#n FeatureEngineeringFeature#n}. |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionFirstDistinct.property.input">input</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/feature_engineering_feature#input FeatureEngineeringFeature#input}. |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionFirstDistinct.property.n">n</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/feature_engineering_feature#n FeatureEngineeringFeature#n}. |
 
 ---
 
@@ -2370,7 +2379,7 @@ input: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/feature_engineering_feature#input FeatureEngineeringFeature#input}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/feature_engineering_feature#input FeatureEngineeringFeature#input}.
 
 ---
 
@@ -2382,7 +2391,7 @@ n: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/feature_engineering_feature#n FeatureEngineeringFeature#n}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/feature_engineering_feature#n FeatureEngineeringFeature#n}.
 
 ---
 
@@ -2403,8 +2412,8 @@ featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionFi
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionFirstN.property.input">input</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/feature_engineering_feature#input FeatureEngineeringFeature#input}. |
-| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionFirstN.property.n">n</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/feature_engineering_feature#n FeatureEngineeringFeature#n}. |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionFirstN.property.input">input</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/feature_engineering_feature#input FeatureEngineeringFeature#input}. |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionFirstN.property.n">n</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/feature_engineering_feature#n FeatureEngineeringFeature#n}. |
 
 ---
 
@@ -2416,7 +2425,7 @@ input: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/feature_engineering_feature#input FeatureEngineeringFeature#input}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/feature_engineering_feature#input FeatureEngineeringFeature#input}.
 
 ---
 
@@ -2428,7 +2437,7 @@ n: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/feature_engineering_feature#n FeatureEngineeringFeature#n}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/feature_engineering_feature#n FeatureEngineeringFeature#n}.
 
 ---
 
@@ -2448,7 +2457,7 @@ featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionLa
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionLast.property.input">input</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/feature_engineering_feature#input FeatureEngineeringFeature#input}. |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionLast.property.input">input</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/feature_engineering_feature#input FeatureEngineeringFeature#input}. |
 
 ---
 
@@ -2460,7 +2469,7 @@ input: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/feature_engineering_feature#input FeatureEngineeringFeature#input}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/feature_engineering_feature#input FeatureEngineeringFeature#input}.
 
 ---
 
@@ -2481,8 +2490,8 @@ featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionLa
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionLastDistinct.property.input">input</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/feature_engineering_feature#input FeatureEngineeringFeature#input}. |
-| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionLastDistinct.property.n">n</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/feature_engineering_feature#n FeatureEngineeringFeature#n}. |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionLastDistinct.property.input">input</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/feature_engineering_feature#input FeatureEngineeringFeature#input}. |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionLastDistinct.property.n">n</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/feature_engineering_feature#n FeatureEngineeringFeature#n}. |
 
 ---
 
@@ -2494,7 +2503,7 @@ input: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/feature_engineering_feature#input FeatureEngineeringFeature#input}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/feature_engineering_feature#input FeatureEngineeringFeature#input}.
 
 ---
 
@@ -2506,7 +2515,7 @@ n: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/feature_engineering_feature#n FeatureEngineeringFeature#n}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/feature_engineering_feature#n FeatureEngineeringFeature#n}.
 
 ---
 
@@ -2527,8 +2536,8 @@ featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionLa
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionLastN.property.input">input</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/feature_engineering_feature#input FeatureEngineeringFeature#input}. |
-| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionLastN.property.n">n</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/feature_engineering_feature#n FeatureEngineeringFeature#n}. |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionLastN.property.input">input</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/feature_engineering_feature#input FeatureEngineeringFeature#input}. |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionLastN.property.n">n</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/feature_engineering_feature#n FeatureEngineeringFeature#n}. |
 
 ---
 
@@ -2540,7 +2549,7 @@ input: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/feature_engineering_feature#input FeatureEngineeringFeature#input}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/feature_engineering_feature#input FeatureEngineeringFeature#input}.
 
 ---
 
@@ -2552,7 +2561,7 @@ n: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/feature_engineering_feature#n FeatureEngineeringFeature#n}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/feature_engineering_feature#n FeatureEngineeringFeature#n}.
 
 ---
 
@@ -2572,7 +2581,7 @@ featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionMa
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionMax.property.input">input</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/feature_engineering_feature#input FeatureEngineeringFeature#input}. |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionMax.property.input">input</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/feature_engineering_feature#input FeatureEngineeringFeature#input}. |
 
 ---
 
@@ -2584,7 +2593,7 @@ input: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/feature_engineering_feature#input FeatureEngineeringFeature#input}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/feature_engineering_feature#input FeatureEngineeringFeature#input}.
 
 ---
 
@@ -2604,7 +2613,7 @@ featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionMi
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionMin.property.input">input</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/feature_engineering_feature#input FeatureEngineeringFeature#input}. |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionMin.property.input">input</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/feature_engineering_feature#input FeatureEngineeringFeature#input}. |
 
 ---
 
@@ -2616,7 +2625,7 @@ input: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/feature_engineering_feature#input FeatureEngineeringFeature#input}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/feature_engineering_feature#input FeatureEngineeringFeature#input}.
 
 ---
 
@@ -2636,7 +2645,7 @@ featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionSt
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionStddevPop.property.input">input</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/feature_engineering_feature#input FeatureEngineeringFeature#input}. |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionStddevPop.property.input">input</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/feature_engineering_feature#input FeatureEngineeringFeature#input}. |
 
 ---
 
@@ -2648,7 +2657,7 @@ input: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/feature_engineering_feature#input FeatureEngineeringFeature#input}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/feature_engineering_feature#input FeatureEngineeringFeature#input}.
 
 ---
 
@@ -2668,7 +2677,7 @@ featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionSt
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionStddevSamp.property.input">input</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/feature_engineering_feature#input FeatureEngineeringFeature#input}. |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionStddevSamp.property.input">input</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/feature_engineering_feature#input FeatureEngineeringFeature#input}. |
 
 ---
 
@@ -2680,7 +2689,7 @@ input: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/feature_engineering_feature#input FeatureEngineeringFeature#input}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/feature_engineering_feature#input FeatureEngineeringFeature#input}.
 
 ---
 
@@ -2700,7 +2709,7 @@ featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionSu
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionSum.property.input">input</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/feature_engineering_feature#input FeatureEngineeringFeature#input}. |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionSum.property.input">input</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/feature_engineering_feature#input FeatureEngineeringFeature#input}. |
 
 ---
 
@@ -2712,7 +2721,7 @@ input: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/feature_engineering_feature#input FeatureEngineeringFeature#input}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/feature_engineering_feature#input FeatureEngineeringFeature#input}.
 
 ---
 
@@ -2737,12 +2746,12 @@ featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionTi
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindow.property.continuous">continuous</a></code> | <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowContinuous">FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowContinuous</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/feature_engineering_feature#continuous FeatureEngineeringFeature#continuous}. |
-| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindow.property.rolling">rolling</a></code> | <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowRolling">FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowRolling</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/feature_engineering_feature#rolling FeatureEngineeringFeature#rolling}. |
-| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindow.property.sawtooth">sawtooth</a></code> | <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowSawtooth">FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowSawtooth</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/feature_engineering_feature#sawtooth FeatureEngineeringFeature#sawtooth}. |
-| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindow.property.sliding">sliding</a></code> | <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowSliding">FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowSliding</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/feature_engineering_feature#sliding FeatureEngineeringFeature#sliding}. |
-| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindow.property.startTime">start_time</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/feature_engineering_feature#start_time FeatureEngineeringFeature#start_time}. |
-| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindow.property.tumbling">tumbling</a></code> | <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowTumbling">FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowTumbling</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/feature_engineering_feature#tumbling FeatureEngineeringFeature#tumbling}. |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindow.property.continuous">continuous</a></code> | <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowContinuous">FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowContinuous</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/feature_engineering_feature#continuous FeatureEngineeringFeature#continuous}. |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindow.property.rolling">rolling</a></code> | <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowRolling">FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowRolling</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/feature_engineering_feature#rolling FeatureEngineeringFeature#rolling}. |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindow.property.sawtooth">sawtooth</a></code> | <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowSawtooth">FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowSawtooth</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/feature_engineering_feature#sawtooth FeatureEngineeringFeature#sawtooth}. |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindow.property.sliding">sliding</a></code> | <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowSliding">FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowSliding</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/feature_engineering_feature#sliding FeatureEngineeringFeature#sliding}. |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindow.property.startTime">start_time</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/feature_engineering_feature#start_time FeatureEngineeringFeature#start_time}. |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindow.property.tumbling">tumbling</a></code> | <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowTumbling">FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowTumbling</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/feature_engineering_feature#tumbling FeatureEngineeringFeature#tumbling}. |
 
 ---
 
@@ -2754,7 +2763,7 @@ continuous: FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowContin
 
 - *Type:* <a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowContinuous">FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowContinuous</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/feature_engineering_feature#continuous FeatureEngineeringFeature#continuous}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/feature_engineering_feature#continuous FeatureEngineeringFeature#continuous}.
 
 ---
 
@@ -2766,7 +2775,7 @@ rolling: FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowRolling
 
 - *Type:* <a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowRolling">FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowRolling</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/feature_engineering_feature#rolling FeatureEngineeringFeature#rolling}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/feature_engineering_feature#rolling FeatureEngineeringFeature#rolling}.
 
 ---
 
@@ -2778,7 +2787,7 @@ sawtooth: FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowSawtooth
 
 - *Type:* <a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowSawtooth">FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowSawtooth</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/feature_engineering_feature#sawtooth FeatureEngineeringFeature#sawtooth}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/feature_engineering_feature#sawtooth FeatureEngineeringFeature#sawtooth}.
 
 ---
 
@@ -2790,7 +2799,7 @@ sliding: FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowSliding
 
 - *Type:* <a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowSliding">FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowSliding</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/feature_engineering_feature#sliding FeatureEngineeringFeature#sliding}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/feature_engineering_feature#sliding FeatureEngineeringFeature#sliding}.
 
 ---
 
@@ -2802,7 +2811,7 @@ start_time: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/feature_engineering_feature#start_time FeatureEngineeringFeature#start_time}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/feature_engineering_feature#start_time FeatureEngineeringFeature#start_time}.
 
 ---
 
@@ -2814,7 +2823,7 @@ tumbling: FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowTumbling
 
 - *Type:* <a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowTumbling">FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowTumbling</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/feature_engineering_feature#tumbling FeatureEngineeringFeature#tumbling}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/feature_engineering_feature#tumbling FeatureEngineeringFeature#tumbling}.
 
 ---
 
@@ -2835,8 +2844,8 @@ featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionTi
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowContinuous.property.windowDuration">window_duration</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/feature_engineering_feature#window_duration FeatureEngineeringFeature#window_duration}. |
-| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowContinuous.property.offset">offset</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/feature_engineering_feature#offset FeatureEngineeringFeature#offset}. |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowContinuous.property.windowDuration">window_duration</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/feature_engineering_feature#window_duration FeatureEngineeringFeature#window_duration}. |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowContinuous.property.offset">offset</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/feature_engineering_feature#offset FeatureEngineeringFeature#offset}. |
 
 ---
 
@@ -2848,7 +2857,7 @@ window_duration: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/feature_engineering_feature#window_duration FeatureEngineeringFeature#window_duration}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/feature_engineering_feature#window_duration FeatureEngineeringFeature#window_duration}.
 
 ---
 
@@ -2860,7 +2869,7 @@ offset: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/feature_engineering_feature#offset FeatureEngineeringFeature#offset}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/feature_engineering_feature#offset FeatureEngineeringFeature#offset}.
 
 ---
 
@@ -2881,8 +2890,8 @@ featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionTi
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowRolling.property.delay">delay</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/feature_engineering_feature#delay FeatureEngineeringFeature#delay}. |
-| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowRolling.property.windowDuration">window_duration</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/feature_engineering_feature#window_duration FeatureEngineeringFeature#window_duration}. |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowRolling.property.delay">delay</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/feature_engineering_feature#delay FeatureEngineeringFeature#delay}. |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowRolling.property.windowDuration">window_duration</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/feature_engineering_feature#window_duration FeatureEngineeringFeature#window_duration}. |
 
 ---
 
@@ -2894,7 +2903,7 @@ delay: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/feature_engineering_feature#delay FeatureEngineeringFeature#delay}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/feature_engineering_feature#delay FeatureEngineeringFeature#delay}.
 
 ---
 
@@ -2906,7 +2915,7 @@ window_duration: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/feature_engineering_feature#window_duration FeatureEngineeringFeature#window_duration}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/feature_engineering_feature#window_duration FeatureEngineeringFeature#window_duration}.
 
 ---
 
@@ -2927,8 +2936,8 @@ featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionTi
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowSawtooth.property.delay">delay</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/feature_engineering_feature#delay FeatureEngineeringFeature#delay}. |
-| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowSawtooth.property.windowDuration">window_duration</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/feature_engineering_feature#window_duration FeatureEngineeringFeature#window_duration}. |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowSawtooth.property.delay">delay</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/feature_engineering_feature#delay FeatureEngineeringFeature#delay}. |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowSawtooth.property.windowDuration">window_duration</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/feature_engineering_feature#window_duration FeatureEngineeringFeature#window_duration}. |
 
 ---
 
@@ -2940,7 +2949,7 @@ delay: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/feature_engineering_feature#delay FeatureEngineeringFeature#delay}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/feature_engineering_feature#delay FeatureEngineeringFeature#delay}.
 
 ---
 
@@ -2952,7 +2961,7 @@ window_duration: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/feature_engineering_feature#window_duration FeatureEngineeringFeature#window_duration}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/feature_engineering_feature#window_duration FeatureEngineeringFeature#window_duration}.
 
 ---
 
@@ -2975,10 +2984,10 @@ featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionTi
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowSliding.property.slideDuration">slide_duration</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/feature_engineering_feature#slide_duration FeatureEngineeringFeature#slide_duration}. |
-| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowSliding.property.delay">delay</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/feature_engineering_feature#delay FeatureEngineeringFeature#delay}. |
-| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowSliding.property.offset">offset</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/feature_engineering_feature#offset FeatureEngineeringFeature#offset}. |
-| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowSliding.property.windowDuration">window_duration</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/feature_engineering_feature#window_duration FeatureEngineeringFeature#window_duration}. |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowSliding.property.slideDuration">slide_duration</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/feature_engineering_feature#slide_duration FeatureEngineeringFeature#slide_duration}. |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowSliding.property.delay">delay</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/feature_engineering_feature#delay FeatureEngineeringFeature#delay}. |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowSliding.property.offset">offset</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/feature_engineering_feature#offset FeatureEngineeringFeature#offset}. |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowSliding.property.windowDuration">window_duration</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/feature_engineering_feature#window_duration FeatureEngineeringFeature#window_duration}. |
 
 ---
 
@@ -2990,7 +2999,7 @@ slide_duration: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/feature_engineering_feature#slide_duration FeatureEngineeringFeature#slide_duration}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/feature_engineering_feature#slide_duration FeatureEngineeringFeature#slide_duration}.
 
 ---
 
@@ -3002,7 +3011,7 @@ delay: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/feature_engineering_feature#delay FeatureEngineeringFeature#delay}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/feature_engineering_feature#delay FeatureEngineeringFeature#delay}.
 
 ---
 
@@ -3014,7 +3023,7 @@ offset: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/feature_engineering_feature#offset FeatureEngineeringFeature#offset}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/feature_engineering_feature#offset FeatureEngineeringFeature#offset}.
 
 ---
 
@@ -3026,7 +3035,7 @@ window_duration: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/feature_engineering_feature#window_duration FeatureEngineeringFeature#window_duration}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/feature_engineering_feature#window_duration FeatureEngineeringFeature#window_duration}.
 
 ---
 
@@ -3048,9 +3057,9 @@ featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionTi
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowTumbling.property.windowDuration">window_duration</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/feature_engineering_feature#window_duration FeatureEngineeringFeature#window_duration}. |
-| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowTumbling.property.delay">delay</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/feature_engineering_feature#delay FeatureEngineeringFeature#delay}. |
-| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowTumbling.property.offset">offset</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/feature_engineering_feature#offset FeatureEngineeringFeature#offset}. |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowTumbling.property.windowDuration">window_duration</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/feature_engineering_feature#window_duration FeatureEngineeringFeature#window_duration}. |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowTumbling.property.delay">delay</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/feature_engineering_feature#delay FeatureEngineeringFeature#delay}. |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowTumbling.property.offset">offset</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/feature_engineering_feature#offset FeatureEngineeringFeature#offset}. |
 
 ---
 
@@ -3062,7 +3071,7 @@ window_duration: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/feature_engineering_feature#window_duration FeatureEngineeringFeature#window_duration}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/feature_engineering_feature#window_duration FeatureEngineeringFeature#window_duration}.
 
 ---
 
@@ -3074,7 +3083,7 @@ delay: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/feature_engineering_feature#delay FeatureEngineeringFeature#delay}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/feature_engineering_feature#delay FeatureEngineeringFeature#delay}.
 
 ---
 
@@ -3086,7 +3095,7 @@ offset: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/feature_engineering_feature#offset FeatureEngineeringFeature#offset}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/feature_engineering_feature#offset FeatureEngineeringFeature#offset}.
 
 ---
 
@@ -3106,7 +3115,7 @@ featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionVa
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionVarPop.property.input">input</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/feature_engineering_feature#input FeatureEngineeringFeature#input}. |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionVarPop.property.input">input</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/feature_engineering_feature#input FeatureEngineeringFeature#input}. |
 
 ---
 
@@ -3118,7 +3127,7 @@ input: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/feature_engineering_feature#input FeatureEngineeringFeature#input}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/feature_engineering_feature#input FeatureEngineeringFeature#input}.
 
 ---
 
@@ -3138,7 +3147,7 @@ featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionVa
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionVarSamp.property.input">input</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/feature_engineering_feature#input FeatureEngineeringFeature#input}. |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionVarSamp.property.input">input</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/feature_engineering_feature#input FeatureEngineeringFeature#input}. |
 
 ---
 
@@ -3150,7 +3159,7 @@ input: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/feature_engineering_feature#input FeatureEngineeringFeature#input}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/feature_engineering_feature#input FeatureEngineeringFeature#input}.
 
 ---
 
@@ -3170,7 +3179,7 @@ featureEngineeringFeature.FeatureEngineeringFeatureFunctionColumnSelection(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionColumnSelection.property.column">column</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/feature_engineering_feature#column FeatureEngineeringFeature#column}. |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionColumnSelection.property.column">column</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/feature_engineering_feature#column FeatureEngineeringFeature#column}. |
 
 ---
 
@@ -3182,7 +3191,7 @@ column: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/feature_engineering_feature#column FeatureEngineeringFeature#column}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/feature_engineering_feature#column FeatureEngineeringFeature#column}.
 
 ---
 
@@ -3203,8 +3212,8 @@ featureEngineeringFeature.FeatureEngineeringFeatureFunctionCustomUdf(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionCustomUdf.property.functionPath">function_path</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/feature_engineering_feature#function_path FeatureEngineeringFeature#function_path}. |
-| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionCustomUdf.property.inputBindings">input_bindings</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionCustomUdfInputBindings">FeatureEngineeringFeatureFunctionCustomUdfInputBindings</a>]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/feature_engineering_feature#input_bindings FeatureEngineeringFeature#input_bindings}. |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionCustomUdf.property.functionPath">function_path</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/feature_engineering_feature#function_path FeatureEngineeringFeature#function_path}. |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionCustomUdf.property.inputBindings">input_bindings</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionCustomUdfInputBindings">FeatureEngineeringFeatureFunctionCustomUdfInputBindings</a>]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/feature_engineering_feature#input_bindings FeatureEngineeringFeature#input_bindings}. |
 
 ---
 
@@ -3216,7 +3225,7 @@ function_path: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/feature_engineering_feature#function_path FeatureEngineeringFeature#function_path}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/feature_engineering_feature#function_path FeatureEngineeringFeature#function_path}.
 
 ---
 
@@ -3228,7 +3237,7 @@ input_bindings: IResolvable | typing.List[FeatureEngineeringFeatureFunctionCusto
 
 - *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionCustomUdfInputBindings">FeatureEngineeringFeatureFunctionCustomUdfInputBindings</a>]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/feature_engineering_feature#input_bindings FeatureEngineeringFeature#input_bindings}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/feature_engineering_feature#input_bindings FeatureEngineeringFeature#input_bindings}.
 
 ---
 
@@ -3249,8 +3258,8 @@ featureEngineeringFeature.FeatureEngineeringFeatureFunctionCustomUdfInputBinding
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionCustomUdfInputBindings.property.column">column</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/feature_engineering_feature#column FeatureEngineeringFeature#column}. |
-| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionCustomUdfInputBindings.property.parameter">parameter</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/feature_engineering_feature#parameter FeatureEngineeringFeature#parameter}. |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionCustomUdfInputBindings.property.column">column</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/feature_engineering_feature#column FeatureEngineeringFeature#column}. |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionCustomUdfInputBindings.property.parameter">parameter</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/feature_engineering_feature#parameter FeatureEngineeringFeature#parameter}. |
 
 ---
 
@@ -3262,7 +3271,7 @@ column: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/feature_engineering_feature#column FeatureEngineeringFeature#column}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/feature_engineering_feature#column FeatureEngineeringFeature#column}.
 
 ---
 
@@ -3274,7 +3283,7 @@ parameter: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/feature_engineering_feature#parameter FeatureEngineeringFeature#parameter}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/feature_engineering_feature#parameter FeatureEngineeringFeature#parameter}.
 
 ---
 
@@ -3295,8 +3304,8 @@ featureEngineeringFeature.FeatureEngineeringFeatureFunctionExtraParameters(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionExtraParameters.property.key">key</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/feature_engineering_feature#key FeatureEngineeringFeature#key}. |
-| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionExtraParameters.property.value">value</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/feature_engineering_feature#value FeatureEngineeringFeature#value}. |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionExtraParameters.property.key">key</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/feature_engineering_feature#key FeatureEngineeringFeature#key}. |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionExtraParameters.property.value">value</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/feature_engineering_feature#value FeatureEngineeringFeature#value}. |
 
 ---
 
@@ -3308,7 +3317,7 @@ key: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/feature_engineering_feature#key FeatureEngineeringFeature#key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/feature_engineering_feature#key FeatureEngineeringFeature#key}.
 
 ---
 
@@ -3320,7 +3329,7 @@ value: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/feature_engineering_feature#value FeatureEngineeringFeature#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/feature_engineering_feature#value FeatureEngineeringFeature#value}.
 
 ---
 
@@ -3341,8 +3350,8 @@ featureEngineeringFeature.FeatureEngineeringFeatureLineageContext(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureLineageContext.property.jobContext">job_context</a></code> | <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureLineageContextJobContext">FeatureEngineeringFeatureLineageContextJobContext</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/feature_engineering_feature#job_context FeatureEngineeringFeature#job_context}. |
-| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureLineageContext.property.notebookId">notebook_id</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/feature_engineering_feature#notebook_id FeatureEngineeringFeature#notebook_id}. |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureLineageContext.property.jobContext">job_context</a></code> | <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureLineageContextJobContext">FeatureEngineeringFeatureLineageContextJobContext</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/feature_engineering_feature#job_context FeatureEngineeringFeature#job_context}. |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureLineageContext.property.notebookId">notebook_id</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/feature_engineering_feature#notebook_id FeatureEngineeringFeature#notebook_id}. |
 
 ---
 
@@ -3354,7 +3363,7 @@ job_context: FeatureEngineeringFeatureLineageContextJobContext
 
 - *Type:* <a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureLineageContextJobContext">FeatureEngineeringFeatureLineageContextJobContext</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/feature_engineering_feature#job_context FeatureEngineeringFeature#job_context}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/feature_engineering_feature#job_context FeatureEngineeringFeature#job_context}.
 
 ---
 
@@ -3366,7 +3375,7 @@ notebook_id: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/feature_engineering_feature#notebook_id FeatureEngineeringFeature#notebook_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/feature_engineering_feature#notebook_id FeatureEngineeringFeature#notebook_id}.
 
 ---
 
@@ -3387,8 +3396,8 @@ featureEngineeringFeature.FeatureEngineeringFeatureLineageContextJobContext(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureLineageContextJobContext.property.jobId">job_id</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/feature_engineering_feature#job_id FeatureEngineeringFeature#job_id}. |
-| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureLineageContextJobContext.property.jobRunId">job_run_id</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/feature_engineering_feature#job_run_id FeatureEngineeringFeature#job_run_id}. |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureLineageContextJobContext.property.jobId">job_id</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/feature_engineering_feature#job_id FeatureEngineeringFeature#job_id}. |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureLineageContextJobContext.property.jobRunId">job_run_id</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/feature_engineering_feature#job_run_id FeatureEngineeringFeature#job_run_id}. |
 
 ---
 
@@ -3400,7 +3409,7 @@ job_id: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/feature_engineering_feature#job_id FeatureEngineeringFeature#job_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/feature_engineering_feature#job_id FeatureEngineeringFeature#job_id}.
 
 ---
 
@@ -3412,7 +3421,7 @@ job_run_id: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/feature_engineering_feature#job_run_id FeatureEngineeringFeature#job_run_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/feature_engineering_feature#job_run_id FeatureEngineeringFeature#job_run_id}.
 
 ---
 
@@ -3432,7 +3441,7 @@ featureEngineeringFeature.FeatureEngineeringFeatureProviderConfig(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureProviderConfig.property.workspaceId">workspace_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/feature_engineering_feature#workspace_id FeatureEngineeringFeature#workspace_id}. |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureProviderConfig.property.workspaceId">workspace_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/feature_engineering_feature#workspace_id FeatureEngineeringFeature#workspace_id}. |
 
 ---
 
@@ -3444,7 +3453,7 @@ workspace_id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/feature_engineering_feature#workspace_id FeatureEngineeringFeature#workspace_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/feature_engineering_feature#workspace_id FeatureEngineeringFeature#workspace_id}.
 
 ---
 
@@ -3457,6 +3466,7 @@ from cdktn_provider_databricks import feature_engineering_feature
 
 featureEngineeringFeature.FeatureEngineeringFeatureSource(
   delta_table_source: FeatureEngineeringFeatureSourceDeltaTableSource = None,
+  feature_view_source: FeatureEngineeringFeatureSourceFeatureViewSource = None,
   kafka_source: FeatureEngineeringFeatureSourceKafkaSource = None,
   lateness: FeatureEngineeringFeatureSourceLateness = None,
   request_source: FeatureEngineeringFeatureSourceRequestSource = None,
@@ -3468,11 +3478,12 @@ featureEngineeringFeature.FeatureEngineeringFeatureSource(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSource.property.deltaTableSource">delta_table_source</a></code> | <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSourceDeltaTableSource">FeatureEngineeringFeatureSourceDeltaTableSource</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/feature_engineering_feature#delta_table_source FeatureEngineeringFeature#delta_table_source}. |
-| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSource.property.kafkaSource">kafka_source</a></code> | <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSourceKafkaSource">FeatureEngineeringFeatureSourceKafkaSource</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/feature_engineering_feature#kafka_source FeatureEngineeringFeature#kafka_source}. |
-| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSource.property.lateness">lateness</a></code> | <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSourceLateness">FeatureEngineeringFeatureSourceLateness</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/feature_engineering_feature#lateness FeatureEngineeringFeature#lateness}. |
-| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSource.property.requestSource">request_source</a></code> | <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSourceRequestSource">FeatureEngineeringFeatureSourceRequestSource</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/feature_engineering_feature#request_source FeatureEngineeringFeature#request_source}. |
-| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSource.property.streamSource">stream_source</a></code> | <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSourceStreamSource">FeatureEngineeringFeatureSourceStreamSource</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/feature_engineering_feature#stream_source FeatureEngineeringFeature#stream_source}. |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSource.property.deltaTableSource">delta_table_source</a></code> | <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSourceDeltaTableSource">FeatureEngineeringFeatureSourceDeltaTableSource</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/feature_engineering_feature#delta_table_source FeatureEngineeringFeature#delta_table_source}. |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSource.property.featureViewSource">feature_view_source</a></code> | <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSourceFeatureViewSource">FeatureEngineeringFeatureSourceFeatureViewSource</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/feature_engineering_feature#feature_view_source FeatureEngineeringFeature#feature_view_source}. |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSource.property.kafkaSource">kafka_source</a></code> | <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSourceKafkaSource">FeatureEngineeringFeatureSourceKafkaSource</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/feature_engineering_feature#kafka_source FeatureEngineeringFeature#kafka_source}. |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSource.property.lateness">lateness</a></code> | <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSourceLateness">FeatureEngineeringFeatureSourceLateness</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/feature_engineering_feature#lateness FeatureEngineeringFeature#lateness}. |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSource.property.requestSource">request_source</a></code> | <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSourceRequestSource">FeatureEngineeringFeatureSourceRequestSource</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/feature_engineering_feature#request_source FeatureEngineeringFeature#request_source}. |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSource.property.streamSource">stream_source</a></code> | <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSourceStreamSource">FeatureEngineeringFeatureSourceStreamSource</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/feature_engineering_feature#stream_source FeatureEngineeringFeature#stream_source}. |
 
 ---
 
@@ -3484,7 +3495,19 @@ delta_table_source: FeatureEngineeringFeatureSourceDeltaTableSource
 
 - *Type:* <a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSourceDeltaTableSource">FeatureEngineeringFeatureSourceDeltaTableSource</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/feature_engineering_feature#delta_table_source FeatureEngineeringFeature#delta_table_source}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/feature_engineering_feature#delta_table_source FeatureEngineeringFeature#delta_table_source}.
+
+---
+
+##### `feature_view_source`<sup>Optional</sup> <a name="feature_view_source" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSource.property.featureViewSource"></a>
+
+```python
+feature_view_source: FeatureEngineeringFeatureSourceFeatureViewSource
+```
+
+- *Type:* <a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSourceFeatureViewSource">FeatureEngineeringFeatureSourceFeatureViewSource</a>
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/feature_engineering_feature#feature_view_source FeatureEngineeringFeature#feature_view_source}.
 
 ---
 
@@ -3496,7 +3519,7 @@ kafka_source: FeatureEngineeringFeatureSourceKafkaSource
 
 - *Type:* <a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSourceKafkaSource">FeatureEngineeringFeatureSourceKafkaSource</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/feature_engineering_feature#kafka_source FeatureEngineeringFeature#kafka_source}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/feature_engineering_feature#kafka_source FeatureEngineeringFeature#kafka_source}.
 
 ---
 
@@ -3508,7 +3531,7 @@ lateness: FeatureEngineeringFeatureSourceLateness
 
 - *Type:* <a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSourceLateness">FeatureEngineeringFeatureSourceLateness</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/feature_engineering_feature#lateness FeatureEngineeringFeature#lateness}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/feature_engineering_feature#lateness FeatureEngineeringFeature#lateness}.
 
 ---
 
@@ -3520,7 +3543,7 @@ request_source: FeatureEngineeringFeatureSourceRequestSource
 
 - *Type:* <a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSourceRequestSource">FeatureEngineeringFeatureSourceRequestSource</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/feature_engineering_feature#request_source FeatureEngineeringFeature#request_source}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/feature_engineering_feature#request_source FeatureEngineeringFeature#request_source}.
 
 ---
 
@@ -3532,7 +3555,7 @@ stream_source: FeatureEngineeringFeatureSourceStreamSource
 
 - *Type:* <a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSourceStreamSource">FeatureEngineeringFeatureSourceStreamSource</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/feature_engineering_feature#stream_source FeatureEngineeringFeature#stream_source}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/feature_engineering_feature#stream_source FeatureEngineeringFeature#stream_source}.
 
 ---
 
@@ -3557,12 +3580,12 @@ featureEngineeringFeature.FeatureEngineeringFeatureSourceDeltaTableSource(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSourceDeltaTableSource.property.fullName">full_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/feature_engineering_feature#full_name FeatureEngineeringFeature#full_name}. |
-| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSourceDeltaTableSource.property.dataframeSchema">dataframe_schema</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/feature_engineering_feature#dataframe_schema FeatureEngineeringFeature#dataframe_schema}. |
-| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSourceDeltaTableSource.property.entityColumns">entity_columns</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/feature_engineering_feature#entity_columns FeatureEngineeringFeature#entity_columns}. |
-| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSourceDeltaTableSource.property.filterCondition">filter_condition</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/feature_engineering_feature#filter_condition FeatureEngineeringFeature#filter_condition}. |
-| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSourceDeltaTableSource.property.timeseriesColumn">timeseries_column</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/feature_engineering_feature#timeseries_column FeatureEngineeringFeature#timeseries_column}. |
-| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSourceDeltaTableSource.property.transformationSql">transformation_sql</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/feature_engineering_feature#transformation_sql FeatureEngineeringFeature#transformation_sql}. |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSourceDeltaTableSource.property.fullName">full_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/feature_engineering_feature#full_name FeatureEngineeringFeature#full_name}. |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSourceDeltaTableSource.property.dataframeSchema">dataframe_schema</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/feature_engineering_feature#dataframe_schema FeatureEngineeringFeature#dataframe_schema}. |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSourceDeltaTableSource.property.entityColumns">entity_columns</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/feature_engineering_feature#entity_columns FeatureEngineeringFeature#entity_columns}. |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSourceDeltaTableSource.property.filterCondition">filter_condition</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/feature_engineering_feature#filter_condition FeatureEngineeringFeature#filter_condition}. |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSourceDeltaTableSource.property.timeseriesColumn">timeseries_column</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/feature_engineering_feature#timeseries_column FeatureEngineeringFeature#timeseries_column}. |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSourceDeltaTableSource.property.transformationSql">transformation_sql</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/feature_engineering_feature#transformation_sql FeatureEngineeringFeature#transformation_sql}. |
 
 ---
 
@@ -3574,7 +3597,7 @@ full_name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/feature_engineering_feature#full_name FeatureEngineeringFeature#full_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/feature_engineering_feature#full_name FeatureEngineeringFeature#full_name}.
 
 ---
 
@@ -3586,7 +3609,7 @@ dataframe_schema: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/feature_engineering_feature#dataframe_schema FeatureEngineeringFeature#dataframe_schema}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/feature_engineering_feature#dataframe_schema FeatureEngineeringFeature#dataframe_schema}.
 
 ---
 
@@ -3598,7 +3621,7 @@ entity_columns: typing.List[str]
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/feature_engineering_feature#entity_columns FeatureEngineeringFeature#entity_columns}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/feature_engineering_feature#entity_columns FeatureEngineeringFeature#entity_columns}.
 
 ---
 
@@ -3610,7 +3633,7 @@ filter_condition: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/feature_engineering_feature#filter_condition FeatureEngineeringFeature#filter_condition}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/feature_engineering_feature#filter_condition FeatureEngineeringFeature#filter_condition}.
 
 ---
 
@@ -3622,7 +3645,7 @@ timeseries_column: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/feature_engineering_feature#timeseries_column FeatureEngineeringFeature#timeseries_column}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/feature_engineering_feature#timeseries_column FeatureEngineeringFeature#timeseries_column}.
 
 ---
 
@@ -3634,7 +3657,71 @@ transformation_sql: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/feature_engineering_feature#transformation_sql FeatureEngineeringFeature#transformation_sql}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/feature_engineering_feature#transformation_sql FeatureEngineeringFeature#transformation_sql}.
+
+---
+
+### FeatureEngineeringFeatureSourceFeatureViewSource <a name="FeatureEngineeringFeatureSourceFeatureViewSource" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSourceFeatureViewSource"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSourceFeatureViewSource.Initializer"></a>
+
+```python
+from cdktn_provider_databricks import feature_engineering_feature
+
+featureEngineeringFeature.FeatureEngineeringFeatureSourceFeatureViewSource(
+  feature_references: IResolvable | typing.List[FeatureEngineeringFeatureSourceFeatureViewSourceFeatureReferences] = None
+)
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSourceFeatureViewSource.property.featureReferences">feature_references</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSourceFeatureViewSourceFeatureReferences">FeatureEngineeringFeatureSourceFeatureViewSourceFeatureReferences</a>]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/feature_engineering_feature#feature_references FeatureEngineeringFeature#feature_references}. |
+
+---
+
+##### `feature_references`<sup>Optional</sup> <a name="feature_references" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSourceFeatureViewSource.property.featureReferences"></a>
+
+```python
+feature_references: IResolvable | typing.List[FeatureEngineeringFeatureSourceFeatureViewSourceFeatureReferences]
+```
+
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSourceFeatureViewSourceFeatureReferences">FeatureEngineeringFeatureSourceFeatureViewSourceFeatureReferences</a>]
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/feature_engineering_feature#feature_references FeatureEngineeringFeature#feature_references}.
+
+---
+
+### FeatureEngineeringFeatureSourceFeatureViewSourceFeatureReferences <a name="FeatureEngineeringFeatureSourceFeatureViewSourceFeatureReferences" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSourceFeatureViewSourceFeatureReferences"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSourceFeatureViewSourceFeatureReferences.Initializer"></a>
+
+```python
+from cdktn_provider_databricks import feature_engineering_feature
+
+featureEngineeringFeature.FeatureEngineeringFeatureSourceFeatureViewSourceFeatureReferences(
+  feature: str
+)
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSourceFeatureViewSourceFeatureReferences.property.feature">feature</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/feature_engineering_feature#feature FeatureEngineeringFeature#feature}. |
+
+---
+
+##### `feature`<sup>Required</sup> <a name="feature" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSourceFeatureViewSourceFeatureReferences.property.feature"></a>
+
+```python
+feature: str
+```
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/feature_engineering_feature#feature FeatureEngineeringFeature#feature}.
 
 ---
 
@@ -3657,10 +3744,10 @@ featureEngineeringFeature.FeatureEngineeringFeatureSourceKafkaSource(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSourceKafkaSource.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/feature_engineering_feature#name FeatureEngineeringFeature#name}. |
-| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSourceKafkaSource.property.entityColumnIdentifiers">entity_column_identifiers</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSourceKafkaSourceEntityColumnIdentifiers">FeatureEngineeringFeatureSourceKafkaSourceEntityColumnIdentifiers</a>]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/feature_engineering_feature#entity_column_identifiers FeatureEngineeringFeature#entity_column_identifiers}. |
-| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSourceKafkaSource.property.filterCondition">filter_condition</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/feature_engineering_feature#filter_condition FeatureEngineeringFeature#filter_condition}. |
-| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSourceKafkaSource.property.timeseriesColumnIdentifier">timeseries_column_identifier</a></code> | <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSourceKafkaSourceTimeseriesColumnIdentifier">FeatureEngineeringFeatureSourceKafkaSourceTimeseriesColumnIdentifier</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/feature_engineering_feature#timeseries_column_identifier FeatureEngineeringFeature#timeseries_column_identifier}. |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSourceKafkaSource.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/feature_engineering_feature#name FeatureEngineeringFeature#name}. |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSourceKafkaSource.property.entityColumnIdentifiers">entity_column_identifiers</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSourceKafkaSourceEntityColumnIdentifiers">FeatureEngineeringFeatureSourceKafkaSourceEntityColumnIdentifiers</a>]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/feature_engineering_feature#entity_column_identifiers FeatureEngineeringFeature#entity_column_identifiers}. |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSourceKafkaSource.property.filterCondition">filter_condition</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/feature_engineering_feature#filter_condition FeatureEngineeringFeature#filter_condition}. |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSourceKafkaSource.property.timeseriesColumnIdentifier">timeseries_column_identifier</a></code> | <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSourceKafkaSourceTimeseriesColumnIdentifier">FeatureEngineeringFeatureSourceKafkaSourceTimeseriesColumnIdentifier</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/feature_engineering_feature#timeseries_column_identifier FeatureEngineeringFeature#timeseries_column_identifier}. |
 
 ---
 
@@ -3672,7 +3759,7 @@ name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/feature_engineering_feature#name FeatureEngineeringFeature#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/feature_engineering_feature#name FeatureEngineeringFeature#name}.
 
 ---
 
@@ -3684,7 +3771,7 @@ entity_column_identifiers: IResolvable | typing.List[FeatureEngineeringFeatureSo
 
 - *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSourceKafkaSourceEntityColumnIdentifiers">FeatureEngineeringFeatureSourceKafkaSourceEntityColumnIdentifiers</a>]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/feature_engineering_feature#entity_column_identifiers FeatureEngineeringFeature#entity_column_identifiers}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/feature_engineering_feature#entity_column_identifiers FeatureEngineeringFeature#entity_column_identifiers}.
 
 ---
 
@@ -3696,7 +3783,7 @@ filter_condition: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/feature_engineering_feature#filter_condition FeatureEngineeringFeature#filter_condition}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/feature_engineering_feature#filter_condition FeatureEngineeringFeature#filter_condition}.
 
 ---
 
@@ -3708,7 +3795,7 @@ timeseries_column_identifier: FeatureEngineeringFeatureSourceKafkaSourceTimeseri
 
 - *Type:* <a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSourceKafkaSourceTimeseriesColumnIdentifier">FeatureEngineeringFeatureSourceKafkaSourceTimeseriesColumnIdentifier</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/feature_engineering_feature#timeseries_column_identifier FeatureEngineeringFeature#timeseries_column_identifier}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/feature_engineering_feature#timeseries_column_identifier FeatureEngineeringFeature#timeseries_column_identifier}.
 
 ---
 
@@ -3728,7 +3815,7 @@ featureEngineeringFeature.FeatureEngineeringFeatureSourceKafkaSourceEntityColumn
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSourceKafkaSourceEntityColumnIdentifiers.property.variantExprPath">variant_expr_path</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/feature_engineering_feature#variant_expr_path FeatureEngineeringFeature#variant_expr_path}. |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSourceKafkaSourceEntityColumnIdentifiers.property.variantExprPath">variant_expr_path</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/feature_engineering_feature#variant_expr_path FeatureEngineeringFeature#variant_expr_path}. |
 
 ---
 
@@ -3740,7 +3827,7 @@ variant_expr_path: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/feature_engineering_feature#variant_expr_path FeatureEngineeringFeature#variant_expr_path}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/feature_engineering_feature#variant_expr_path FeatureEngineeringFeature#variant_expr_path}.
 
 ---
 
@@ -3760,7 +3847,7 @@ featureEngineeringFeature.FeatureEngineeringFeatureSourceKafkaSourceTimeseriesCo
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSourceKafkaSourceTimeseriesColumnIdentifier.property.variantExprPath">variant_expr_path</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/feature_engineering_feature#variant_expr_path FeatureEngineeringFeature#variant_expr_path}. |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSourceKafkaSourceTimeseriesColumnIdentifier.property.variantExprPath">variant_expr_path</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/feature_engineering_feature#variant_expr_path FeatureEngineeringFeature#variant_expr_path}. |
 
 ---
 
@@ -3772,7 +3859,7 @@ variant_expr_path: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/feature_engineering_feature#variant_expr_path FeatureEngineeringFeature#variant_expr_path}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/feature_engineering_feature#variant_expr_path FeatureEngineeringFeature#variant_expr_path}.
 
 ---
 
@@ -3792,7 +3879,7 @@ featureEngineeringFeature.FeatureEngineeringFeatureSourceLateness(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSourceLateness.property.settlingDelay">settling_delay</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/feature_engineering_feature#settling_delay FeatureEngineeringFeature#settling_delay}. |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSourceLateness.property.settlingDelay">settling_delay</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/feature_engineering_feature#settling_delay FeatureEngineeringFeature#settling_delay}. |
 
 ---
 
@@ -3804,7 +3891,7 @@ settling_delay: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/feature_engineering_feature#settling_delay FeatureEngineeringFeature#settling_delay}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/feature_engineering_feature#settling_delay FeatureEngineeringFeature#settling_delay}.
 
 ---
 
@@ -3824,7 +3911,7 @@ featureEngineeringFeature.FeatureEngineeringFeatureSourceRequestSource(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSourceRequestSource.property.flatSchema">flat_schema</a></code> | <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSourceRequestSourceFlatSchema">FeatureEngineeringFeatureSourceRequestSourceFlatSchema</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/feature_engineering_feature#flat_schema FeatureEngineeringFeature#flat_schema}. |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSourceRequestSource.property.flatSchema">flat_schema</a></code> | <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSourceRequestSourceFlatSchema">FeatureEngineeringFeatureSourceRequestSourceFlatSchema</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/feature_engineering_feature#flat_schema FeatureEngineeringFeature#flat_schema}. |
 
 ---
 
@@ -3836,7 +3923,7 @@ flat_schema: FeatureEngineeringFeatureSourceRequestSourceFlatSchema
 
 - *Type:* <a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSourceRequestSourceFlatSchema">FeatureEngineeringFeatureSourceRequestSourceFlatSchema</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/feature_engineering_feature#flat_schema FeatureEngineeringFeature#flat_schema}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/feature_engineering_feature#flat_schema FeatureEngineeringFeature#flat_schema}.
 
 ---
 
@@ -3856,7 +3943,7 @@ featureEngineeringFeature.FeatureEngineeringFeatureSourceRequestSourceFlatSchema
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSourceRequestSourceFlatSchema.property.fields">fields</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSourceRequestSourceFlatSchemaFields">FeatureEngineeringFeatureSourceRequestSourceFlatSchemaFields</a>]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/feature_engineering_feature#fields FeatureEngineeringFeature#fields}. |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSourceRequestSourceFlatSchema.property.fields">fields</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSourceRequestSourceFlatSchemaFields">FeatureEngineeringFeatureSourceRequestSourceFlatSchemaFields</a>]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/feature_engineering_feature#fields FeatureEngineeringFeature#fields}. |
 
 ---
 
@@ -3868,7 +3955,7 @@ fields: IResolvable | typing.List[FeatureEngineeringFeatureSourceRequestSourceFl
 
 - *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSourceRequestSourceFlatSchemaFields">FeatureEngineeringFeatureSourceRequestSourceFlatSchemaFields</a>]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/feature_engineering_feature#fields FeatureEngineeringFeature#fields}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/feature_engineering_feature#fields FeatureEngineeringFeature#fields}.
 
 ---
 
@@ -3889,8 +3976,8 @@ featureEngineeringFeature.FeatureEngineeringFeatureSourceRequestSourceFlatSchema
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSourceRequestSourceFlatSchemaFields.property.dataType">data_type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/feature_engineering_feature#data_type FeatureEngineeringFeature#data_type}. |
-| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSourceRequestSourceFlatSchemaFields.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/feature_engineering_feature#name FeatureEngineeringFeature#name}. |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSourceRequestSourceFlatSchemaFields.property.dataType">data_type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/feature_engineering_feature#data_type FeatureEngineeringFeature#data_type}. |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSourceRequestSourceFlatSchemaFields.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/feature_engineering_feature#name FeatureEngineeringFeature#name}. |
 
 ---
 
@@ -3902,7 +3989,7 @@ data_type: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/feature_engineering_feature#data_type FeatureEngineeringFeature#data_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/feature_engineering_feature#data_type FeatureEngineeringFeature#data_type}.
 
 ---
 
@@ -3914,7 +4001,7 @@ name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/feature_engineering_feature#name FeatureEngineeringFeature#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/feature_engineering_feature#name FeatureEngineeringFeature#name}.
 
 ---
 
@@ -3937,10 +4024,10 @@ featureEngineeringFeature.FeatureEngineeringFeatureSourceStreamSource(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSourceStreamSource.property.fullName">full_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/feature_engineering_feature#full_name FeatureEngineeringFeature#full_name}. |
-| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSourceStreamSource.property.dataframeSchema">dataframe_schema</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/feature_engineering_feature#dataframe_schema FeatureEngineeringFeature#dataframe_schema}. |
-| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSourceStreamSource.property.filterCondition">filter_condition</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/feature_engineering_feature#filter_condition FeatureEngineeringFeature#filter_condition}. |
-| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSourceStreamSource.property.transformationSql">transformation_sql</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/feature_engineering_feature#transformation_sql FeatureEngineeringFeature#transformation_sql}. |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSourceStreamSource.property.fullName">full_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/feature_engineering_feature#full_name FeatureEngineeringFeature#full_name}. |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSourceStreamSource.property.dataframeSchema">dataframe_schema</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/feature_engineering_feature#dataframe_schema FeatureEngineeringFeature#dataframe_schema}. |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSourceStreamSource.property.filterCondition">filter_condition</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/feature_engineering_feature#filter_condition FeatureEngineeringFeature#filter_condition}. |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSourceStreamSource.property.transformationSql">transformation_sql</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/feature_engineering_feature#transformation_sql FeatureEngineeringFeature#transformation_sql}. |
 
 ---
 
@@ -3952,7 +4039,7 @@ full_name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/feature_engineering_feature#full_name FeatureEngineeringFeature#full_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/feature_engineering_feature#full_name FeatureEngineeringFeature#full_name}.
 
 ---
 
@@ -3964,7 +4051,7 @@ dataframe_schema: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/feature_engineering_feature#dataframe_schema FeatureEngineeringFeature#dataframe_schema}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/feature_engineering_feature#dataframe_schema FeatureEngineeringFeature#dataframe_schema}.
 
 ---
 
@@ -3976,7 +4063,7 @@ filter_condition: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/feature_engineering_feature#filter_condition FeatureEngineeringFeature#filter_condition}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/feature_engineering_feature#filter_condition FeatureEngineeringFeature#filter_condition}.
 
 ---
 
@@ -3988,7 +4075,7 @@ transformation_sql: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/feature_engineering_feature#transformation_sql FeatureEngineeringFeature#transformation_sql}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/feature_engineering_feature#transformation_sql FeatureEngineeringFeature#transformation_sql}.
 
 ---
 
@@ -4008,7 +4095,7 @@ featureEngineeringFeature.FeatureEngineeringFeatureTimeseriesColumn(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureTimeseriesColumn.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/feature_engineering_feature#name FeatureEngineeringFeature#name}. |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureTimeseriesColumn.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/feature_engineering_feature#name FeatureEngineeringFeature#name}. |
 
 ---
 
@@ -4020,7 +4107,7 @@ name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/feature_engineering_feature#name FeatureEngineeringFeature#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/feature_engineering_feature#name FeatureEngineeringFeature#name}.
 
 ---
 
@@ -4045,12 +4132,12 @@ featureEngineeringFeature.FeatureEngineeringFeatureTimeWindow(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureTimeWindow.property.continuous">continuous</a></code> | <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureTimeWindowContinuous">FeatureEngineeringFeatureTimeWindowContinuous</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/feature_engineering_feature#continuous FeatureEngineeringFeature#continuous}. |
-| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureTimeWindow.property.rolling">rolling</a></code> | <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureTimeWindowRolling">FeatureEngineeringFeatureTimeWindowRolling</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/feature_engineering_feature#rolling FeatureEngineeringFeature#rolling}. |
-| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureTimeWindow.property.sawtooth">sawtooth</a></code> | <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureTimeWindowSawtooth">FeatureEngineeringFeatureTimeWindowSawtooth</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/feature_engineering_feature#sawtooth FeatureEngineeringFeature#sawtooth}. |
-| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureTimeWindow.property.sliding">sliding</a></code> | <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureTimeWindowSliding">FeatureEngineeringFeatureTimeWindowSliding</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/feature_engineering_feature#sliding FeatureEngineeringFeature#sliding}. |
-| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureTimeWindow.property.startTime">start_time</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/feature_engineering_feature#start_time FeatureEngineeringFeature#start_time}. |
-| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureTimeWindow.property.tumbling">tumbling</a></code> | <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureTimeWindowTumbling">FeatureEngineeringFeatureTimeWindowTumbling</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/feature_engineering_feature#tumbling FeatureEngineeringFeature#tumbling}. |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureTimeWindow.property.continuous">continuous</a></code> | <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureTimeWindowContinuous">FeatureEngineeringFeatureTimeWindowContinuous</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/feature_engineering_feature#continuous FeatureEngineeringFeature#continuous}. |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureTimeWindow.property.rolling">rolling</a></code> | <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureTimeWindowRolling">FeatureEngineeringFeatureTimeWindowRolling</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/feature_engineering_feature#rolling FeatureEngineeringFeature#rolling}. |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureTimeWindow.property.sawtooth">sawtooth</a></code> | <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureTimeWindowSawtooth">FeatureEngineeringFeatureTimeWindowSawtooth</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/feature_engineering_feature#sawtooth FeatureEngineeringFeature#sawtooth}. |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureTimeWindow.property.sliding">sliding</a></code> | <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureTimeWindowSliding">FeatureEngineeringFeatureTimeWindowSliding</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/feature_engineering_feature#sliding FeatureEngineeringFeature#sliding}. |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureTimeWindow.property.startTime">start_time</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/feature_engineering_feature#start_time FeatureEngineeringFeature#start_time}. |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureTimeWindow.property.tumbling">tumbling</a></code> | <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureTimeWindowTumbling">FeatureEngineeringFeatureTimeWindowTumbling</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/feature_engineering_feature#tumbling FeatureEngineeringFeature#tumbling}. |
 
 ---
 
@@ -4062,7 +4149,7 @@ continuous: FeatureEngineeringFeatureTimeWindowContinuous
 
 - *Type:* <a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureTimeWindowContinuous">FeatureEngineeringFeatureTimeWindowContinuous</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/feature_engineering_feature#continuous FeatureEngineeringFeature#continuous}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/feature_engineering_feature#continuous FeatureEngineeringFeature#continuous}.
 
 ---
 
@@ -4074,7 +4161,7 @@ rolling: FeatureEngineeringFeatureTimeWindowRolling
 
 - *Type:* <a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureTimeWindowRolling">FeatureEngineeringFeatureTimeWindowRolling</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/feature_engineering_feature#rolling FeatureEngineeringFeature#rolling}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/feature_engineering_feature#rolling FeatureEngineeringFeature#rolling}.
 
 ---
 
@@ -4086,7 +4173,7 @@ sawtooth: FeatureEngineeringFeatureTimeWindowSawtooth
 
 - *Type:* <a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureTimeWindowSawtooth">FeatureEngineeringFeatureTimeWindowSawtooth</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/feature_engineering_feature#sawtooth FeatureEngineeringFeature#sawtooth}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/feature_engineering_feature#sawtooth FeatureEngineeringFeature#sawtooth}.
 
 ---
 
@@ -4098,7 +4185,7 @@ sliding: FeatureEngineeringFeatureTimeWindowSliding
 
 - *Type:* <a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureTimeWindowSliding">FeatureEngineeringFeatureTimeWindowSliding</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/feature_engineering_feature#sliding FeatureEngineeringFeature#sliding}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/feature_engineering_feature#sliding FeatureEngineeringFeature#sliding}.
 
 ---
 
@@ -4110,7 +4197,7 @@ start_time: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/feature_engineering_feature#start_time FeatureEngineeringFeature#start_time}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/feature_engineering_feature#start_time FeatureEngineeringFeature#start_time}.
 
 ---
 
@@ -4122,7 +4209,7 @@ tumbling: FeatureEngineeringFeatureTimeWindowTumbling
 
 - *Type:* <a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureTimeWindowTumbling">FeatureEngineeringFeatureTimeWindowTumbling</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/feature_engineering_feature#tumbling FeatureEngineeringFeature#tumbling}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/feature_engineering_feature#tumbling FeatureEngineeringFeature#tumbling}.
 
 ---
 
@@ -4143,8 +4230,8 @@ featureEngineeringFeature.FeatureEngineeringFeatureTimeWindowContinuous(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureTimeWindowContinuous.property.windowDuration">window_duration</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/feature_engineering_feature#window_duration FeatureEngineeringFeature#window_duration}. |
-| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureTimeWindowContinuous.property.offset">offset</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/feature_engineering_feature#offset FeatureEngineeringFeature#offset}. |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureTimeWindowContinuous.property.windowDuration">window_duration</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/feature_engineering_feature#window_duration FeatureEngineeringFeature#window_duration}. |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureTimeWindowContinuous.property.offset">offset</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/feature_engineering_feature#offset FeatureEngineeringFeature#offset}. |
 
 ---
 
@@ -4156,7 +4243,7 @@ window_duration: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/feature_engineering_feature#window_duration FeatureEngineeringFeature#window_duration}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/feature_engineering_feature#window_duration FeatureEngineeringFeature#window_duration}.
 
 ---
 
@@ -4168,7 +4255,7 @@ offset: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/feature_engineering_feature#offset FeatureEngineeringFeature#offset}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/feature_engineering_feature#offset FeatureEngineeringFeature#offset}.
 
 ---
 
@@ -4189,8 +4276,8 @@ featureEngineeringFeature.FeatureEngineeringFeatureTimeWindowRolling(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureTimeWindowRolling.property.delay">delay</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/feature_engineering_feature#delay FeatureEngineeringFeature#delay}. |
-| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureTimeWindowRolling.property.windowDuration">window_duration</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/feature_engineering_feature#window_duration FeatureEngineeringFeature#window_duration}. |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureTimeWindowRolling.property.delay">delay</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/feature_engineering_feature#delay FeatureEngineeringFeature#delay}. |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureTimeWindowRolling.property.windowDuration">window_duration</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/feature_engineering_feature#window_duration FeatureEngineeringFeature#window_duration}. |
 
 ---
 
@@ -4202,7 +4289,7 @@ delay: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/feature_engineering_feature#delay FeatureEngineeringFeature#delay}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/feature_engineering_feature#delay FeatureEngineeringFeature#delay}.
 
 ---
 
@@ -4214,7 +4301,7 @@ window_duration: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/feature_engineering_feature#window_duration FeatureEngineeringFeature#window_duration}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/feature_engineering_feature#window_duration FeatureEngineeringFeature#window_duration}.
 
 ---
 
@@ -4235,8 +4322,8 @@ featureEngineeringFeature.FeatureEngineeringFeatureTimeWindowSawtooth(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureTimeWindowSawtooth.property.delay">delay</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/feature_engineering_feature#delay FeatureEngineeringFeature#delay}. |
-| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureTimeWindowSawtooth.property.windowDuration">window_duration</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/feature_engineering_feature#window_duration FeatureEngineeringFeature#window_duration}. |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureTimeWindowSawtooth.property.delay">delay</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/feature_engineering_feature#delay FeatureEngineeringFeature#delay}. |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureTimeWindowSawtooth.property.windowDuration">window_duration</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/feature_engineering_feature#window_duration FeatureEngineeringFeature#window_duration}. |
 
 ---
 
@@ -4248,7 +4335,7 @@ delay: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/feature_engineering_feature#delay FeatureEngineeringFeature#delay}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/feature_engineering_feature#delay FeatureEngineeringFeature#delay}.
 
 ---
 
@@ -4260,7 +4347,7 @@ window_duration: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/feature_engineering_feature#window_duration FeatureEngineeringFeature#window_duration}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/feature_engineering_feature#window_duration FeatureEngineeringFeature#window_duration}.
 
 ---
 
@@ -4283,10 +4370,10 @@ featureEngineeringFeature.FeatureEngineeringFeatureTimeWindowSliding(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureTimeWindowSliding.property.slideDuration">slide_duration</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/feature_engineering_feature#slide_duration FeatureEngineeringFeature#slide_duration}. |
-| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureTimeWindowSliding.property.delay">delay</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/feature_engineering_feature#delay FeatureEngineeringFeature#delay}. |
-| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureTimeWindowSliding.property.offset">offset</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/feature_engineering_feature#offset FeatureEngineeringFeature#offset}. |
-| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureTimeWindowSliding.property.windowDuration">window_duration</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/feature_engineering_feature#window_duration FeatureEngineeringFeature#window_duration}. |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureTimeWindowSliding.property.slideDuration">slide_duration</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/feature_engineering_feature#slide_duration FeatureEngineeringFeature#slide_duration}. |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureTimeWindowSliding.property.delay">delay</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/feature_engineering_feature#delay FeatureEngineeringFeature#delay}. |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureTimeWindowSliding.property.offset">offset</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/feature_engineering_feature#offset FeatureEngineeringFeature#offset}. |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureTimeWindowSliding.property.windowDuration">window_duration</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/feature_engineering_feature#window_duration FeatureEngineeringFeature#window_duration}. |
 
 ---
 
@@ -4298,7 +4385,7 @@ slide_duration: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/feature_engineering_feature#slide_duration FeatureEngineeringFeature#slide_duration}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/feature_engineering_feature#slide_duration FeatureEngineeringFeature#slide_duration}.
 
 ---
 
@@ -4310,7 +4397,7 @@ delay: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/feature_engineering_feature#delay FeatureEngineeringFeature#delay}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/feature_engineering_feature#delay FeatureEngineeringFeature#delay}.
 
 ---
 
@@ -4322,7 +4409,7 @@ offset: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/feature_engineering_feature#offset FeatureEngineeringFeature#offset}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/feature_engineering_feature#offset FeatureEngineeringFeature#offset}.
 
 ---
 
@@ -4334,7 +4421,7 @@ window_duration: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/feature_engineering_feature#window_duration FeatureEngineeringFeature#window_duration}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/feature_engineering_feature#window_duration FeatureEngineeringFeature#window_duration}.
 
 ---
 
@@ -4356,9 +4443,9 @@ featureEngineeringFeature.FeatureEngineeringFeatureTimeWindowTumbling(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureTimeWindowTumbling.property.windowDuration">window_duration</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/feature_engineering_feature#window_duration FeatureEngineeringFeature#window_duration}. |
-| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureTimeWindowTumbling.property.delay">delay</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/feature_engineering_feature#delay FeatureEngineeringFeature#delay}. |
-| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureTimeWindowTumbling.property.offset">offset</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/feature_engineering_feature#offset FeatureEngineeringFeature#offset}. |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureTimeWindowTumbling.property.windowDuration">window_duration</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/feature_engineering_feature#window_duration FeatureEngineeringFeature#window_duration}. |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureTimeWindowTumbling.property.delay">delay</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/feature_engineering_feature#delay FeatureEngineeringFeature#delay}. |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureTimeWindowTumbling.property.offset">offset</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/feature_engineering_feature#offset FeatureEngineeringFeature#offset}. |
 
 ---
 
@@ -4370,7 +4457,7 @@ window_duration: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/feature_engineering_feature#window_duration FeatureEngineeringFeature#window_duration}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/feature_engineering_feature#window_duration FeatureEngineeringFeature#window_duration}.
 
 ---
 
@@ -4382,7 +4469,7 @@ delay: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/feature_engineering_feature#delay FeatureEngineeringFeature#delay}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/feature_engineering_feature#delay FeatureEngineeringFeature#delay}.
 
 ---
 
@@ -4394,7 +4481,7 @@ offset: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/feature_engineering_feature#offset FeatureEngineeringFeature#offset}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/feature_engineering_feature#offset FeatureEngineeringFeature#offset}.
 
 ---
 
@@ -8883,7 +8970,7 @@ def put_approx_count_distinct(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/feature_engineering_feature#input FeatureEngineeringFeature#input}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/feature_engineering_feature#input FeatureEngineeringFeature#input}.
 
 ---
 
@@ -8891,7 +8978,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/feature_engineering_feature#relative_sd FeatureEngineeringFeature#relative_sd}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/feature_engineering_feature#relative_sd FeatureEngineeringFeature#relative_sd}.
 
 ---
 
@@ -8909,7 +8996,7 @@ def put_approx_percentile(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/feature_engineering_feature#input FeatureEngineeringFeature#input}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/feature_engineering_feature#input FeatureEngineeringFeature#input}.
 
 ---
 
@@ -8917,7 +9004,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/feature_engineering_feature#percentile FeatureEngineeringFeature#percentile}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/feature_engineering_feature#percentile FeatureEngineeringFeature#percentile}.
 
 ---
 
@@ -8925,7 +9012,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/feature_engineering_feature#accuracy FeatureEngineeringFeature#accuracy}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/feature_engineering_feature#accuracy FeatureEngineeringFeature#accuracy}.
 
 ---
 
@@ -8941,7 +9028,7 @@ def put_avg(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/feature_engineering_feature#input FeatureEngineeringFeature#input}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/feature_engineering_feature#input FeatureEngineeringFeature#input}.
 
 ---
 
@@ -8957,7 +9044,7 @@ def put_count_function(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/feature_engineering_feature#input FeatureEngineeringFeature#input}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/feature_engineering_feature#input FeatureEngineeringFeature#input}.
 
 ---
 
@@ -8973,7 +9060,7 @@ def put_first(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/feature_engineering_feature#input FeatureEngineeringFeature#input}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/feature_engineering_feature#input FeatureEngineeringFeature#input}.
 
 ---
 
@@ -8990,7 +9077,7 @@ def put_first_distinct(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/feature_engineering_feature#input FeatureEngineeringFeature#input}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/feature_engineering_feature#input FeatureEngineeringFeature#input}.
 
 ---
 
@@ -8998,7 +9085,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/feature_engineering_feature#n FeatureEngineeringFeature#n}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/feature_engineering_feature#n FeatureEngineeringFeature#n}.
 
 ---
 
@@ -9015,7 +9102,7 @@ def put_first_n(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/feature_engineering_feature#input FeatureEngineeringFeature#input}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/feature_engineering_feature#input FeatureEngineeringFeature#input}.
 
 ---
 
@@ -9023,7 +9110,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/feature_engineering_feature#n FeatureEngineeringFeature#n}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/feature_engineering_feature#n FeatureEngineeringFeature#n}.
 
 ---
 
@@ -9039,7 +9126,7 @@ def put_last(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/feature_engineering_feature#input FeatureEngineeringFeature#input}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/feature_engineering_feature#input FeatureEngineeringFeature#input}.
 
 ---
 
@@ -9056,7 +9143,7 @@ def put_last_distinct(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/feature_engineering_feature#input FeatureEngineeringFeature#input}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/feature_engineering_feature#input FeatureEngineeringFeature#input}.
 
 ---
 
@@ -9064,7 +9151,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/feature_engineering_feature#n FeatureEngineeringFeature#n}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/feature_engineering_feature#n FeatureEngineeringFeature#n}.
 
 ---
 
@@ -9081,7 +9168,7 @@ def put_last_n(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/feature_engineering_feature#input FeatureEngineeringFeature#input}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/feature_engineering_feature#input FeatureEngineeringFeature#input}.
 
 ---
 
@@ -9089,7 +9176,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/feature_engineering_feature#n FeatureEngineeringFeature#n}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/feature_engineering_feature#n FeatureEngineeringFeature#n}.
 
 ---
 
@@ -9105,7 +9192,7 @@ def put_max(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/feature_engineering_feature#input FeatureEngineeringFeature#input}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/feature_engineering_feature#input FeatureEngineeringFeature#input}.
 
 ---
 
@@ -9121,7 +9208,7 @@ def put_min(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/feature_engineering_feature#input FeatureEngineeringFeature#input}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/feature_engineering_feature#input FeatureEngineeringFeature#input}.
 
 ---
 
@@ -9137,7 +9224,7 @@ def put_stddev_pop(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/feature_engineering_feature#input FeatureEngineeringFeature#input}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/feature_engineering_feature#input FeatureEngineeringFeature#input}.
 
 ---
 
@@ -9153,7 +9240,7 @@ def put_stddev_samp(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/feature_engineering_feature#input FeatureEngineeringFeature#input}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/feature_engineering_feature#input FeatureEngineeringFeature#input}.
 
 ---
 
@@ -9169,7 +9256,7 @@ def put_sum(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/feature_engineering_feature#input FeatureEngineeringFeature#input}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/feature_engineering_feature#input FeatureEngineeringFeature#input}.
 
 ---
 
@@ -9190,7 +9277,7 @@ def put_time_window(
 
 - *Type:* <a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowContinuous">FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowContinuous</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/feature_engineering_feature#continuous FeatureEngineeringFeature#continuous}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/feature_engineering_feature#continuous FeatureEngineeringFeature#continuous}.
 
 ---
 
@@ -9198,7 +9285,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* <a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowRolling">FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowRolling</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/feature_engineering_feature#rolling FeatureEngineeringFeature#rolling}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/feature_engineering_feature#rolling FeatureEngineeringFeature#rolling}.
 
 ---
 
@@ -9206,7 +9293,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* <a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowSawtooth">FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowSawtooth</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/feature_engineering_feature#sawtooth FeatureEngineeringFeature#sawtooth}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/feature_engineering_feature#sawtooth FeatureEngineeringFeature#sawtooth}.
 
 ---
 
@@ -9214,7 +9301,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* <a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowSliding">FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowSliding</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/feature_engineering_feature#sliding FeatureEngineeringFeature#sliding}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/feature_engineering_feature#sliding FeatureEngineeringFeature#sliding}.
 
 ---
 
@@ -9222,7 +9309,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/feature_engineering_feature#start_time FeatureEngineeringFeature#start_time}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/feature_engineering_feature#start_time FeatureEngineeringFeature#start_time}.
 
 ---
 
@@ -9230,7 +9317,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* <a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowTumbling">FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowTumbling</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/feature_engineering_feature#tumbling FeatureEngineeringFeature#tumbling}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/feature_engineering_feature#tumbling FeatureEngineeringFeature#tumbling}.
 
 ---
 
@@ -9246,7 +9333,7 @@ def put_var_pop(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/feature_engineering_feature#input FeatureEngineeringFeature#input}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/feature_engineering_feature#input FeatureEngineeringFeature#input}.
 
 ---
 
@@ -9262,7 +9349,7 @@ def put_var_samp(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/feature_engineering_feature#input FeatureEngineeringFeature#input}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/feature_engineering_feature#input FeatureEngineeringFeature#input}.
 
 ---
 
@@ -11281,7 +11368,7 @@ def put_continuous(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/feature_engineering_feature#window_duration FeatureEngineeringFeature#window_duration}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/feature_engineering_feature#window_duration FeatureEngineeringFeature#window_duration}.
 
 ---
 
@@ -11289,7 +11376,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/feature_engineering_feature#offset FeatureEngineeringFeature#offset}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/feature_engineering_feature#offset FeatureEngineeringFeature#offset}.
 
 ---
 
@@ -11306,7 +11393,7 @@ def put_rolling(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/feature_engineering_feature#delay FeatureEngineeringFeature#delay}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/feature_engineering_feature#delay FeatureEngineeringFeature#delay}.
 
 ---
 
@@ -11314,7 +11401,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/feature_engineering_feature#window_duration FeatureEngineeringFeature#window_duration}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/feature_engineering_feature#window_duration FeatureEngineeringFeature#window_duration}.
 
 ---
 
@@ -11331,7 +11418,7 @@ def put_sawtooth(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/feature_engineering_feature#delay FeatureEngineeringFeature#delay}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/feature_engineering_feature#delay FeatureEngineeringFeature#delay}.
 
 ---
 
@@ -11339,7 +11426,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/feature_engineering_feature#window_duration FeatureEngineeringFeature#window_duration}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/feature_engineering_feature#window_duration FeatureEngineeringFeature#window_duration}.
 
 ---
 
@@ -11358,7 +11445,7 @@ def put_sliding(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/feature_engineering_feature#slide_duration FeatureEngineeringFeature#slide_duration}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/feature_engineering_feature#slide_duration FeatureEngineeringFeature#slide_duration}.
 
 ---
 
@@ -11366,7 +11453,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/feature_engineering_feature#delay FeatureEngineeringFeature#delay}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/feature_engineering_feature#delay FeatureEngineeringFeature#delay}.
 
 ---
 
@@ -11374,7 +11461,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/feature_engineering_feature#offset FeatureEngineeringFeature#offset}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/feature_engineering_feature#offset FeatureEngineeringFeature#offset}.
 
 ---
 
@@ -11382,7 +11469,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/feature_engineering_feature#window_duration FeatureEngineeringFeature#window_duration}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/feature_engineering_feature#window_duration FeatureEngineeringFeature#window_duration}.
 
 ---
 
@@ -11400,7 +11487,7 @@ def put_tumbling(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/feature_engineering_feature#window_duration FeatureEngineeringFeature#window_duration}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/feature_engineering_feature#window_duration FeatureEngineeringFeature#window_duration}.
 
 ---
 
@@ -11408,7 +11495,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/feature_engineering_feature#delay FeatureEngineeringFeature#delay}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/feature_engineering_feature#delay FeatureEngineeringFeature#delay}.
 
 ---
 
@@ -11416,7 +11503,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/feature_engineering_feature#offset FeatureEngineeringFeature#offset}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/feature_engineering_feature#offset FeatureEngineeringFeature#offset}.
 
 ---
 
@@ -15545,7 +15632,7 @@ def put_aggregation_function(
 
 - *Type:* <a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionApproxCountDistinct">FeatureEngineeringFeatureFunctionAggregationFunctionApproxCountDistinct</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/feature_engineering_feature#approx_count_distinct FeatureEngineeringFeature#approx_count_distinct}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/feature_engineering_feature#approx_count_distinct FeatureEngineeringFeature#approx_count_distinct}.
 
 ---
 
@@ -15553,7 +15640,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* <a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionApproxPercentile">FeatureEngineeringFeatureFunctionAggregationFunctionApproxPercentile</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/feature_engineering_feature#approx_percentile FeatureEngineeringFeature#approx_percentile}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/feature_engineering_feature#approx_percentile FeatureEngineeringFeature#approx_percentile}.
 
 ---
 
@@ -15561,7 +15648,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* <a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionAvg">FeatureEngineeringFeatureFunctionAggregationFunctionAvg</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/feature_engineering_feature#avg FeatureEngineeringFeature#avg}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/feature_engineering_feature#avg FeatureEngineeringFeature#avg}.
 
 ---
 
@@ -15569,7 +15656,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* <a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionCountFunction">FeatureEngineeringFeatureFunctionAggregationFunctionCountFunction</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/feature_engineering_feature#count_function FeatureEngineeringFeature#count_function}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/feature_engineering_feature#count_function FeatureEngineeringFeature#count_function}.
 
 ---
 
@@ -15577,7 +15664,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* <a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionFirst">FeatureEngineeringFeatureFunctionAggregationFunctionFirst</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/feature_engineering_feature#first FeatureEngineeringFeature#first}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/feature_engineering_feature#first FeatureEngineeringFeature#first}.
 
 ---
 
@@ -15585,7 +15672,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* <a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionFirstDistinct">FeatureEngineeringFeatureFunctionAggregationFunctionFirstDistinct</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/feature_engineering_feature#first_distinct FeatureEngineeringFeature#first_distinct}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/feature_engineering_feature#first_distinct FeatureEngineeringFeature#first_distinct}.
 
 ---
 
@@ -15593,7 +15680,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* <a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionFirstN">FeatureEngineeringFeatureFunctionAggregationFunctionFirstN</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/feature_engineering_feature#first_n FeatureEngineeringFeature#first_n}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/feature_engineering_feature#first_n FeatureEngineeringFeature#first_n}.
 
 ---
 
@@ -15601,7 +15688,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* <a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionLast">FeatureEngineeringFeatureFunctionAggregationFunctionLast</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/feature_engineering_feature#last FeatureEngineeringFeature#last}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/feature_engineering_feature#last FeatureEngineeringFeature#last}.
 
 ---
 
@@ -15609,7 +15696,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* <a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionLastDistinct">FeatureEngineeringFeatureFunctionAggregationFunctionLastDistinct</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/feature_engineering_feature#last_distinct FeatureEngineeringFeature#last_distinct}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/feature_engineering_feature#last_distinct FeatureEngineeringFeature#last_distinct}.
 
 ---
 
@@ -15617,7 +15704,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* <a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionLastN">FeatureEngineeringFeatureFunctionAggregationFunctionLastN</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/feature_engineering_feature#last_n FeatureEngineeringFeature#last_n}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/feature_engineering_feature#last_n FeatureEngineeringFeature#last_n}.
 
 ---
 
@@ -15625,7 +15712,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* <a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionMax">FeatureEngineeringFeatureFunctionAggregationFunctionMax</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/feature_engineering_feature#max FeatureEngineeringFeature#max}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/feature_engineering_feature#max FeatureEngineeringFeature#max}.
 
 ---
 
@@ -15633,7 +15720,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* <a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionMin">FeatureEngineeringFeatureFunctionAggregationFunctionMin</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/feature_engineering_feature#min FeatureEngineeringFeature#min}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/feature_engineering_feature#min FeatureEngineeringFeature#min}.
 
 ---
 
@@ -15641,7 +15728,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* <a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionStddevPop">FeatureEngineeringFeatureFunctionAggregationFunctionStddevPop</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/feature_engineering_feature#stddev_pop FeatureEngineeringFeature#stddev_pop}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/feature_engineering_feature#stddev_pop FeatureEngineeringFeature#stddev_pop}.
 
 ---
 
@@ -15649,7 +15736,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* <a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionStddevSamp">FeatureEngineeringFeatureFunctionAggregationFunctionStddevSamp</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/feature_engineering_feature#stddev_samp FeatureEngineeringFeature#stddev_samp}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/feature_engineering_feature#stddev_samp FeatureEngineeringFeature#stddev_samp}.
 
 ---
 
@@ -15657,7 +15744,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* <a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionSum">FeatureEngineeringFeatureFunctionAggregationFunctionSum</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/feature_engineering_feature#sum FeatureEngineeringFeature#sum}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/feature_engineering_feature#sum FeatureEngineeringFeature#sum}.
 
 ---
 
@@ -15665,7 +15752,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* <a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindow">FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindow</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/feature_engineering_feature#time_window FeatureEngineeringFeature#time_window}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/feature_engineering_feature#time_window FeatureEngineeringFeature#time_window}.
 
 ---
 
@@ -15673,7 +15760,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* <a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionVarPop">FeatureEngineeringFeatureFunctionAggregationFunctionVarPop</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/feature_engineering_feature#var_pop FeatureEngineeringFeature#var_pop}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/feature_engineering_feature#var_pop FeatureEngineeringFeature#var_pop}.
 
 ---
 
@@ -15681,7 +15768,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* <a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionVarSamp">FeatureEngineeringFeatureFunctionAggregationFunctionVarSamp</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/feature_engineering_feature#var_samp FeatureEngineeringFeature#var_samp}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/feature_engineering_feature#var_samp FeatureEngineeringFeature#var_samp}.
 
 ---
 
@@ -15697,7 +15784,7 @@ def put_column_selection(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/feature_engineering_feature#column FeatureEngineeringFeature#column}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/feature_engineering_feature#column FeatureEngineeringFeature#column}.
 
 ---
 
@@ -15714,7 +15801,7 @@ def put_custom_udf(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/feature_engineering_feature#function_path FeatureEngineeringFeature#function_path}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/feature_engineering_feature#function_path FeatureEngineeringFeature#function_path}.
 
 ---
 
@@ -15722,7 +15809,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionCustomUdfInputBindings">FeatureEngineeringFeatureFunctionCustomUdfInputBindings</a>]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/feature_engineering_feature#input_bindings FeatureEngineeringFeature#input_bindings}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/feature_engineering_feature#input_bindings FeatureEngineeringFeature#input_bindings}.
 
 ---
 
@@ -16502,7 +16589,7 @@ def put_job_context(
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/feature_engineering_feature#job_id FeatureEngineeringFeature#job_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/feature_engineering_feature#job_id FeatureEngineeringFeature#job_id}.
 
 ---
 
@@ -16510,7 +16597,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/feature_engineering_feature#job_run_id FeatureEngineeringFeature#job_run_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/feature_engineering_feature#job_run_id FeatureEngineeringFeature#job_run_id}.
 
 ---
 
@@ -17360,6 +17447,810 @@ internal_value: IResolvable | FeatureEngineeringFeatureSourceDeltaTableSource
 ---
 
 
+### FeatureEngineeringFeatureSourceFeatureViewSourceFeatureReferencesList <a name="FeatureEngineeringFeatureSourceFeatureViewSourceFeatureReferencesList" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSourceFeatureViewSourceFeatureReferencesList"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSourceFeatureViewSourceFeatureReferencesList.Initializer"></a>
+
+```python
+from cdktn_provider_databricks import feature_engineering_feature
+
+featureEngineeringFeature.FeatureEngineeringFeatureSourceFeatureViewSourceFeatureReferencesList(
+  terraform_resource: IInterpolatingParent,
+  terraform_attribute: str,
+  wraps_set: bool
+)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSourceFeatureViewSourceFeatureReferencesList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSourceFeatureViewSourceFeatureReferencesList.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSourceFeatureViewSourceFeatureReferencesList.Initializer.parameter.wrapsSet">wraps_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSourceFeatureViewSourceFeatureReferencesList.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSourceFeatureViewSourceFeatureReferencesList.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `wraps_set`<sup>Required</sup> <a name="wraps_set" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSourceFeatureViewSourceFeatureReferencesList.Initializer.parameter.wrapsSet"></a>
+
+- *Type:* bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSourceFeatureViewSourceFeatureReferencesList.allWithMapKey">all_with_map_key</a></code> | Creating an iterator for this complex list. |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSourceFeatureViewSourceFeatureReferencesList.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSourceFeatureViewSourceFeatureReferencesList.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSourceFeatureViewSourceFeatureReferencesList.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSourceFeatureViewSourceFeatureReferencesList.get">get</a></code> | *No description.* |
+
+---
+
+##### `all_with_map_key` <a name="all_with_map_key" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSourceFeatureViewSourceFeatureReferencesList.allWithMapKey"></a>
+
+```python
+def all_with_map_key(
+  map_key_attribute_name: str
+) -> DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `map_key_attribute_name`<sup>Required</sup> <a name="map_key_attribute_name" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSourceFeatureViewSourceFeatureReferencesList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* str
+
+---
+
+##### `compute_fqn` <a name="compute_fqn" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSourceFeatureViewSourceFeatureReferencesList.computeFqn"></a>
+
+```python
+def compute_fqn() -> str
+```
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSourceFeatureViewSourceFeatureReferencesList.resolve"></a>
+
+```python
+def resolve(
+  _context: IResolveContext
+) -> typing.Any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSourceFeatureViewSourceFeatureReferencesList.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `to_string` <a name="to_string" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSourceFeatureViewSourceFeatureReferencesList.toString"></a>
+
+```python
+def to_string() -> str
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `get` <a name="get" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSourceFeatureViewSourceFeatureReferencesList.get"></a>
+
+```python
+def get(
+  index: typing.Union[int, float]
+) -> FeatureEngineeringFeatureSourceFeatureViewSourceFeatureReferencesOutputReference
+```
+
+###### `index`<sup>Required</sup> <a name="index" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSourceFeatureViewSourceFeatureReferencesList.get.parameter.index"></a>
+
+- *Type:* typing.Union[int, float]
+
+the index of the item to return.
+
+---
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSourceFeatureViewSourceFeatureReferencesList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSourceFeatureViewSourceFeatureReferencesList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSourceFeatureViewSourceFeatureReferencesList.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSourceFeatureViewSourceFeatureReferences">FeatureEngineeringFeatureSourceFeatureViewSourceFeatureReferences</a>]</code> | *No description.* |
+
+---
+
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSourceFeatureViewSourceFeatureReferencesList.property.creationStack"></a>
+
+```python
+creation_stack: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSourceFeatureViewSourceFeatureReferencesList.property.fqn"></a>
+
+```python
+fqn: str
+```
+
+- *Type:* str
+
+---
+
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSourceFeatureViewSourceFeatureReferencesList.property.internalValue"></a>
+
+```python
+internal_value: IResolvable | typing.List[FeatureEngineeringFeatureSourceFeatureViewSourceFeatureReferences]
+```
+
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSourceFeatureViewSourceFeatureReferences">FeatureEngineeringFeatureSourceFeatureViewSourceFeatureReferences</a>]
+
+---
+
+
+### FeatureEngineeringFeatureSourceFeatureViewSourceFeatureReferencesOutputReference <a name="FeatureEngineeringFeatureSourceFeatureViewSourceFeatureReferencesOutputReference" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSourceFeatureViewSourceFeatureReferencesOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSourceFeatureViewSourceFeatureReferencesOutputReference.Initializer"></a>
+
+```python
+from cdktn_provider_databricks import feature_engineering_feature
+
+featureEngineeringFeature.FeatureEngineeringFeatureSourceFeatureViewSourceFeatureReferencesOutputReference(
+  terraform_resource: IInterpolatingParent,
+  terraform_attribute: str,
+  complex_object_index: typing.Union[int, float],
+  complex_object_is_from_set: bool
+)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSourceFeatureViewSourceFeatureReferencesOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSourceFeatureViewSourceFeatureReferencesOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSourceFeatureViewSourceFeatureReferencesOutputReference.Initializer.parameter.complexObjectIndex">complex_object_index</a></code> | <code>typing.Union[int, float]</code> | the index of this item in the list. |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSourceFeatureViewSourceFeatureReferencesOutputReference.Initializer.parameter.complexObjectIsFromSet">complex_object_is_from_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSourceFeatureViewSourceFeatureReferencesOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSourceFeatureViewSourceFeatureReferencesOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complex_object_index`<sup>Required</sup> <a name="complex_object_index" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSourceFeatureViewSourceFeatureReferencesOutputReference.Initializer.parameter.complexObjectIndex"></a>
+
+- *Type:* typing.Union[int, float]
+
+the index of this item in the list.
+
+---
+
+##### `complex_object_is_from_set`<sup>Required</sup> <a name="complex_object_is_from_set" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSourceFeatureViewSourceFeatureReferencesOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSourceFeatureViewSourceFeatureReferencesOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSourceFeatureViewSourceFeatureReferencesOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSourceFeatureViewSourceFeatureReferencesOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSourceFeatureViewSourceFeatureReferencesOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSourceFeatureViewSourceFeatureReferencesOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSourceFeatureViewSourceFeatureReferencesOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSourceFeatureViewSourceFeatureReferencesOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSourceFeatureViewSourceFeatureReferencesOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSourceFeatureViewSourceFeatureReferencesOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSourceFeatureViewSourceFeatureReferencesOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSourceFeatureViewSourceFeatureReferencesOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSourceFeatureViewSourceFeatureReferencesOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSourceFeatureViewSourceFeatureReferencesOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+
+---
+
+##### `compute_fqn` <a name="compute_fqn" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSourceFeatureViewSourceFeatureReferencesOutputReference.computeFqn"></a>
+
+```python
+def compute_fqn() -> str
+```
+
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSourceFeatureViewSourceFeatureReferencesOutputReference.getAnyMapAttribute"></a>
+
+```python
+def get_any_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Any]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSourceFeatureViewSourceFeatureReferencesOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSourceFeatureViewSourceFeatureReferencesOutputReference.getBooleanAttribute"></a>
+
+```python
+def get_boolean_attribute(
+  terraform_attribute: str
+) -> IResolvable
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSourceFeatureViewSourceFeatureReferencesOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSourceFeatureViewSourceFeatureReferencesOutputReference.getBooleanMapAttribute"></a>
+
+```python
+def get_boolean_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[bool]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSourceFeatureViewSourceFeatureReferencesOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSourceFeatureViewSourceFeatureReferencesOutputReference.getListAttribute"></a>
+
+```python
+def get_list_attribute(
+  terraform_attribute: str
+) -> typing.List[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSourceFeatureViewSourceFeatureReferencesOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSourceFeatureViewSourceFeatureReferencesOutputReference.getNumberAttribute"></a>
+
+```python
+def get_number_attribute(
+  terraform_attribute: str
+) -> typing.Union[int, float]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSourceFeatureViewSourceFeatureReferencesOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSourceFeatureViewSourceFeatureReferencesOutputReference.getNumberListAttribute"></a>
+
+```python
+def get_number_list_attribute(
+  terraform_attribute: str
+) -> typing.List[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSourceFeatureViewSourceFeatureReferencesOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSourceFeatureViewSourceFeatureReferencesOutputReference.getNumberMapAttribute"></a>
+
+```python
+def get_number_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSourceFeatureViewSourceFeatureReferencesOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSourceFeatureViewSourceFeatureReferencesOutputReference.getStringAttribute"></a>
+
+```python
+def get_string_attribute(
+  terraform_attribute: str
+) -> str
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSourceFeatureViewSourceFeatureReferencesOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSourceFeatureViewSourceFeatureReferencesOutputReference.getStringMapAttribute"></a>
+
+```python
+def get_string_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSourceFeatureViewSourceFeatureReferencesOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSourceFeatureViewSourceFeatureReferencesOutputReference.interpolationForAttribute"></a>
+
+```python
+def interpolation_for_attribute(
+  property: str
+) -> IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSourceFeatureViewSourceFeatureReferencesOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* str
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSourceFeatureViewSourceFeatureReferencesOutputReference.resolve"></a>
+
+```python
+def resolve(
+  _context: IResolveContext
+) -> typing.Any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSourceFeatureViewSourceFeatureReferencesOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `to_string` <a name="to_string" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSourceFeatureViewSourceFeatureReferencesOutputReference.toString"></a>
+
+```python
+def to_string() -> str
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSourceFeatureViewSourceFeatureReferencesOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSourceFeatureViewSourceFeatureReferencesOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSourceFeatureViewSourceFeatureReferencesOutputReference.property.featureInput">feature_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSourceFeatureViewSourceFeatureReferencesOutputReference.property.feature">feature</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSourceFeatureViewSourceFeatureReferencesOutputReference.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSourceFeatureViewSourceFeatureReferences">FeatureEngineeringFeatureSourceFeatureViewSourceFeatureReferences</a></code> | *No description.* |
+
+---
+
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSourceFeatureViewSourceFeatureReferencesOutputReference.property.creationStack"></a>
+
+```python
+creation_stack: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSourceFeatureViewSourceFeatureReferencesOutputReference.property.fqn"></a>
+
+```python
+fqn: str
+```
+
+- *Type:* str
+
+---
+
+##### `feature_input`<sup>Optional</sup> <a name="feature_input" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSourceFeatureViewSourceFeatureReferencesOutputReference.property.featureInput"></a>
+
+```python
+feature_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `feature`<sup>Required</sup> <a name="feature" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSourceFeatureViewSourceFeatureReferencesOutputReference.property.feature"></a>
+
+```python
+feature: str
+```
+
+- *Type:* str
+
+---
+
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSourceFeatureViewSourceFeatureReferencesOutputReference.property.internalValue"></a>
+
+```python
+internal_value: IResolvable | FeatureEngineeringFeatureSourceFeatureViewSourceFeatureReferences
+```
+
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSourceFeatureViewSourceFeatureReferences">FeatureEngineeringFeatureSourceFeatureViewSourceFeatureReferences</a>
+
+---
+
+
+### FeatureEngineeringFeatureSourceFeatureViewSourceOutputReference <a name="FeatureEngineeringFeatureSourceFeatureViewSourceOutputReference" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSourceFeatureViewSourceOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSourceFeatureViewSourceOutputReference.Initializer"></a>
+
+```python
+from cdktn_provider_databricks import feature_engineering_feature
+
+featureEngineeringFeature.FeatureEngineeringFeatureSourceFeatureViewSourceOutputReference(
+  terraform_resource: IInterpolatingParent,
+  terraform_attribute: str
+)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSourceFeatureViewSourceOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSourceFeatureViewSourceOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSourceFeatureViewSourceOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSourceFeatureViewSourceOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSourceFeatureViewSourceOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSourceFeatureViewSourceOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSourceFeatureViewSourceOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSourceFeatureViewSourceOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSourceFeatureViewSourceOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSourceFeatureViewSourceOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSourceFeatureViewSourceOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSourceFeatureViewSourceOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSourceFeatureViewSourceOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSourceFeatureViewSourceOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSourceFeatureViewSourceOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSourceFeatureViewSourceOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSourceFeatureViewSourceOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSourceFeatureViewSourceOutputReference.putFeatureReferences">put_feature_references</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSourceFeatureViewSourceOutputReference.resetFeatureReferences">reset_feature_references</a></code> | *No description.* |
+
+---
+
+##### `compute_fqn` <a name="compute_fqn" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSourceFeatureViewSourceOutputReference.computeFqn"></a>
+
+```python
+def compute_fqn() -> str
+```
+
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSourceFeatureViewSourceOutputReference.getAnyMapAttribute"></a>
+
+```python
+def get_any_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Any]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSourceFeatureViewSourceOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSourceFeatureViewSourceOutputReference.getBooleanAttribute"></a>
+
+```python
+def get_boolean_attribute(
+  terraform_attribute: str
+) -> IResolvable
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSourceFeatureViewSourceOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSourceFeatureViewSourceOutputReference.getBooleanMapAttribute"></a>
+
+```python
+def get_boolean_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[bool]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSourceFeatureViewSourceOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSourceFeatureViewSourceOutputReference.getListAttribute"></a>
+
+```python
+def get_list_attribute(
+  terraform_attribute: str
+) -> typing.List[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSourceFeatureViewSourceOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSourceFeatureViewSourceOutputReference.getNumberAttribute"></a>
+
+```python
+def get_number_attribute(
+  terraform_attribute: str
+) -> typing.Union[int, float]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSourceFeatureViewSourceOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSourceFeatureViewSourceOutputReference.getNumberListAttribute"></a>
+
+```python
+def get_number_list_attribute(
+  terraform_attribute: str
+) -> typing.List[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSourceFeatureViewSourceOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSourceFeatureViewSourceOutputReference.getNumberMapAttribute"></a>
+
+```python
+def get_number_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSourceFeatureViewSourceOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSourceFeatureViewSourceOutputReference.getStringAttribute"></a>
+
+```python
+def get_string_attribute(
+  terraform_attribute: str
+) -> str
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSourceFeatureViewSourceOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSourceFeatureViewSourceOutputReference.getStringMapAttribute"></a>
+
+```python
+def get_string_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSourceFeatureViewSourceOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSourceFeatureViewSourceOutputReference.interpolationForAttribute"></a>
+
+```python
+def interpolation_for_attribute(
+  property: str
+) -> IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSourceFeatureViewSourceOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* str
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSourceFeatureViewSourceOutputReference.resolve"></a>
+
+```python
+def resolve(
+  _context: IResolveContext
+) -> typing.Any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSourceFeatureViewSourceOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `to_string` <a name="to_string" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSourceFeatureViewSourceOutputReference.toString"></a>
+
+```python
+def to_string() -> str
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `put_feature_references` <a name="put_feature_references" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSourceFeatureViewSourceOutputReference.putFeatureReferences"></a>
+
+```python
+def put_feature_references(
+  value: IResolvable | typing.List[FeatureEngineeringFeatureSourceFeatureViewSourceFeatureReferences]
+) -> None
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSourceFeatureViewSourceOutputReference.putFeatureReferences.parameter.value"></a>
+
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSourceFeatureViewSourceFeatureReferences">FeatureEngineeringFeatureSourceFeatureViewSourceFeatureReferences</a>]
+
+---
+
+##### `reset_feature_references` <a name="reset_feature_references" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSourceFeatureViewSourceOutputReference.resetFeatureReferences"></a>
+
+```python
+def reset_feature_references() -> None
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSourceFeatureViewSourceOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSourceFeatureViewSourceOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSourceFeatureViewSourceOutputReference.property.featureReferences">feature_references</a></code> | <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSourceFeatureViewSourceFeatureReferencesList">FeatureEngineeringFeatureSourceFeatureViewSourceFeatureReferencesList</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSourceFeatureViewSourceOutputReference.property.featureReferencesInput">feature_references_input</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSourceFeatureViewSourceFeatureReferences">FeatureEngineeringFeatureSourceFeatureViewSourceFeatureReferences</a>]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSourceFeatureViewSourceOutputReference.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSourceFeatureViewSource">FeatureEngineeringFeatureSourceFeatureViewSource</a></code> | *No description.* |
+
+---
+
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSourceFeatureViewSourceOutputReference.property.creationStack"></a>
+
+```python
+creation_stack: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSourceFeatureViewSourceOutputReference.property.fqn"></a>
+
+```python
+fqn: str
+```
+
+- *Type:* str
+
+---
+
+##### `feature_references`<sup>Required</sup> <a name="feature_references" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSourceFeatureViewSourceOutputReference.property.featureReferences"></a>
+
+```python
+feature_references: FeatureEngineeringFeatureSourceFeatureViewSourceFeatureReferencesList
+```
+
+- *Type:* <a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSourceFeatureViewSourceFeatureReferencesList">FeatureEngineeringFeatureSourceFeatureViewSourceFeatureReferencesList</a>
+
+---
+
+##### `feature_references_input`<sup>Optional</sup> <a name="feature_references_input" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSourceFeatureViewSourceOutputReference.property.featureReferencesInput"></a>
+
+```python
+feature_references_input: IResolvable | typing.List[FeatureEngineeringFeatureSourceFeatureViewSourceFeatureReferences]
+```
+
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSourceFeatureViewSourceFeatureReferences">FeatureEngineeringFeatureSourceFeatureViewSourceFeatureReferences</a>]
+
+---
+
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSourceFeatureViewSourceOutputReference.property.internalValue"></a>
+
+```python
+internal_value: IResolvable | FeatureEngineeringFeatureSourceFeatureViewSource
+```
+
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSourceFeatureViewSource">FeatureEngineeringFeatureSourceFeatureViewSource</a>
+
+---
+
+
 ### FeatureEngineeringFeatureSourceKafkaSourceEntityColumnIdentifiersList <a name="FeatureEngineeringFeatureSourceKafkaSourceEntityColumnIdentifiersList" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSourceKafkaSourceEntityColumnIdentifiersList"></a>
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSourceKafkaSourceEntityColumnIdentifiersList.Initializer"></a>
@@ -18105,7 +18996,7 @@ def put_timeseries_column_identifier(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/feature_engineering_feature#variant_expr_path FeatureEngineeringFeature#variant_expr_path}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/feature_engineering_feature#variant_expr_path FeatureEngineeringFeature#variant_expr_path}.
 
 ---
 
@@ -18914,11 +19805,13 @@ The attribute on the parent resource this class is referencing.
 | <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSourceOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSourceOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSourceOutputReference.putDeltaTableSource">put_delta_table_source</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSourceOutputReference.putFeatureViewSource">put_feature_view_source</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSourceOutputReference.putKafkaSource">put_kafka_source</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSourceOutputReference.putLateness">put_lateness</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSourceOutputReference.putRequestSource">put_request_source</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSourceOutputReference.putStreamSource">put_stream_source</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSourceOutputReference.resetDeltaTableSource">reset_delta_table_source</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSourceOutputReference.resetFeatureViewSource">reset_feature_view_source</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSourceOutputReference.resetKafkaSource">reset_kafka_source</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSourceOutputReference.resetLateness">reset_lateness</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSourceOutputReference.resetRequestSource">reset_request_source</a></code> | *No description.* |
@@ -19115,7 +20008,7 @@ def put_delta_table_source(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/feature_engineering_feature#full_name FeatureEngineeringFeature#full_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/feature_engineering_feature#full_name FeatureEngineeringFeature#full_name}.
 
 ---
 
@@ -19123,7 +20016,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/feature_engineering_feature#dataframe_schema FeatureEngineeringFeature#dataframe_schema}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/feature_engineering_feature#dataframe_schema FeatureEngineeringFeature#dataframe_schema}.
 
 ---
 
@@ -19131,7 +20024,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/feature_engineering_feature#entity_columns FeatureEngineeringFeature#entity_columns}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/feature_engineering_feature#entity_columns FeatureEngineeringFeature#entity_columns}.
 
 ---
 
@@ -19139,7 +20032,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/feature_engineering_feature#filter_condition FeatureEngineeringFeature#filter_condition}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/feature_engineering_feature#filter_condition FeatureEngineeringFeature#filter_condition}.
 
 ---
 
@@ -19147,7 +20040,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/feature_engineering_feature#timeseries_column FeatureEngineeringFeature#timeseries_column}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/feature_engineering_feature#timeseries_column FeatureEngineeringFeature#timeseries_column}.
 
 ---
 
@@ -19155,7 +20048,23 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/feature_engineering_feature#transformation_sql FeatureEngineeringFeature#transformation_sql}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/feature_engineering_feature#transformation_sql FeatureEngineeringFeature#transformation_sql}.
+
+---
+
+##### `put_feature_view_source` <a name="put_feature_view_source" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSourceOutputReference.putFeatureViewSource"></a>
+
+```python
+def put_feature_view_source(
+  feature_references: IResolvable | typing.List[FeatureEngineeringFeatureSourceFeatureViewSourceFeatureReferences] = None
+) -> None
+```
+
+###### `feature_references`<sup>Optional</sup> <a name="feature_references" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSourceOutputReference.putFeatureViewSource.parameter.featureReferences"></a>
+
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSourceFeatureViewSourceFeatureReferences">FeatureEngineeringFeatureSourceFeatureViewSourceFeatureReferences</a>]
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/feature_engineering_feature#feature_references FeatureEngineeringFeature#feature_references}.
 
 ---
 
@@ -19174,7 +20083,7 @@ def put_kafka_source(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/feature_engineering_feature#name FeatureEngineeringFeature#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/feature_engineering_feature#name FeatureEngineeringFeature#name}.
 
 ---
 
@@ -19182,7 +20091,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSourceKafkaSourceEntityColumnIdentifiers">FeatureEngineeringFeatureSourceKafkaSourceEntityColumnIdentifiers</a>]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/feature_engineering_feature#entity_column_identifiers FeatureEngineeringFeature#entity_column_identifiers}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/feature_engineering_feature#entity_column_identifiers FeatureEngineeringFeature#entity_column_identifiers}.
 
 ---
 
@@ -19190,7 +20099,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/feature_engineering_feature#filter_condition FeatureEngineeringFeature#filter_condition}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/feature_engineering_feature#filter_condition FeatureEngineeringFeature#filter_condition}.
 
 ---
 
@@ -19198,7 +20107,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* <a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSourceKafkaSourceTimeseriesColumnIdentifier">FeatureEngineeringFeatureSourceKafkaSourceTimeseriesColumnIdentifier</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/feature_engineering_feature#timeseries_column_identifier FeatureEngineeringFeature#timeseries_column_identifier}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/feature_engineering_feature#timeseries_column_identifier FeatureEngineeringFeature#timeseries_column_identifier}.
 
 ---
 
@@ -19214,7 +20123,7 @@ def put_lateness(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/feature_engineering_feature#settling_delay FeatureEngineeringFeature#settling_delay}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/feature_engineering_feature#settling_delay FeatureEngineeringFeature#settling_delay}.
 
 ---
 
@@ -19230,7 +20139,7 @@ def put_request_source(
 
 - *Type:* <a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSourceRequestSourceFlatSchema">FeatureEngineeringFeatureSourceRequestSourceFlatSchema</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/feature_engineering_feature#flat_schema FeatureEngineeringFeature#flat_schema}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/feature_engineering_feature#flat_schema FeatureEngineeringFeature#flat_schema}.
 
 ---
 
@@ -19249,7 +20158,7 @@ def put_stream_source(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/feature_engineering_feature#full_name FeatureEngineeringFeature#full_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/feature_engineering_feature#full_name FeatureEngineeringFeature#full_name}.
 
 ---
 
@@ -19257,7 +20166,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/feature_engineering_feature#dataframe_schema FeatureEngineeringFeature#dataframe_schema}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/feature_engineering_feature#dataframe_schema FeatureEngineeringFeature#dataframe_schema}.
 
 ---
 
@@ -19265,7 +20174,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/feature_engineering_feature#filter_condition FeatureEngineeringFeature#filter_condition}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/feature_engineering_feature#filter_condition FeatureEngineeringFeature#filter_condition}.
 
 ---
 
@@ -19273,7 +20182,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/feature_engineering_feature#transformation_sql FeatureEngineeringFeature#transformation_sql}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/feature_engineering_feature#transformation_sql FeatureEngineeringFeature#transformation_sql}.
 
 ---
 
@@ -19281,6 +20190,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 ```python
 def reset_delta_table_source() -> None
+```
+
+##### `reset_feature_view_source` <a name="reset_feature_view_source" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSourceOutputReference.resetFeatureViewSource"></a>
+
+```python
+def reset_feature_view_source() -> None
 ```
 
 ##### `reset_kafka_source` <a name="reset_kafka_source" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSourceOutputReference.resetKafkaSource"></a>
@@ -19315,11 +20230,13 @@ def reset_stream_source() -> None
 | <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSourceOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSourceOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSourceOutputReference.property.deltaTableSource">delta_table_source</a></code> | <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSourceDeltaTableSourceOutputReference">FeatureEngineeringFeatureSourceDeltaTableSourceOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSourceOutputReference.property.featureViewSource">feature_view_source</a></code> | <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSourceFeatureViewSourceOutputReference">FeatureEngineeringFeatureSourceFeatureViewSourceOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSourceOutputReference.property.kafkaSource">kafka_source</a></code> | <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSourceKafkaSourceOutputReference">FeatureEngineeringFeatureSourceKafkaSourceOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSourceOutputReference.property.lateness">lateness</a></code> | <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSourceLatenessOutputReference">FeatureEngineeringFeatureSourceLatenessOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSourceOutputReference.property.requestSource">request_source</a></code> | <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSourceRequestSourceOutputReference">FeatureEngineeringFeatureSourceRequestSourceOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSourceOutputReference.property.streamSource">stream_source</a></code> | <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSourceStreamSourceOutputReference">FeatureEngineeringFeatureSourceStreamSourceOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSourceOutputReference.property.deltaTableSourceInput">delta_table_source_input</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSourceDeltaTableSource">FeatureEngineeringFeatureSourceDeltaTableSource</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSourceOutputReference.property.featureViewSourceInput">feature_view_source_input</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSourceFeatureViewSource">FeatureEngineeringFeatureSourceFeatureViewSource</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSourceOutputReference.property.kafkaSourceInput">kafka_source_input</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSourceKafkaSource">FeatureEngineeringFeatureSourceKafkaSource</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSourceOutputReference.property.latenessInput">lateness_input</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSourceLateness">FeatureEngineeringFeatureSourceLateness</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSourceOutputReference.property.requestSourceInput">request_source_input</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSourceRequestSource">FeatureEngineeringFeatureSourceRequestSource</a></code> | *No description.* |
@@ -19359,6 +20276,16 @@ delta_table_source: FeatureEngineeringFeatureSourceDeltaTableSourceOutputReferen
 ```
 
 - *Type:* <a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSourceDeltaTableSourceOutputReference">FeatureEngineeringFeatureSourceDeltaTableSourceOutputReference</a>
+
+---
+
+##### `feature_view_source`<sup>Required</sup> <a name="feature_view_source" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSourceOutputReference.property.featureViewSource"></a>
+
+```python
+feature_view_source: FeatureEngineeringFeatureSourceFeatureViewSourceOutputReference
+```
+
+- *Type:* <a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSourceFeatureViewSourceOutputReference">FeatureEngineeringFeatureSourceFeatureViewSourceOutputReference</a>
 
 ---
 
@@ -19409,6 +20336,16 @@ delta_table_source_input: IResolvable | FeatureEngineeringFeatureSourceDeltaTabl
 ```
 
 - *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSourceDeltaTableSource">FeatureEngineeringFeatureSourceDeltaTableSource</a>
+
+---
+
+##### `feature_view_source_input`<sup>Optional</sup> <a name="feature_view_source_input" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSourceOutputReference.property.featureViewSourceInput"></a>
+
+```python
+feature_view_source_input: IResolvable | FeatureEngineeringFeatureSourceFeatureViewSource
+```
+
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSourceFeatureViewSource">FeatureEngineeringFeatureSourceFeatureViewSource</a>
 
 ---
 
@@ -20524,7 +21461,7 @@ def put_flat_schema(
 
 - *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSourceRequestSourceFlatSchemaFields">FeatureEngineeringFeatureSourceRequestSourceFlatSchemaFields</a>]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/feature_engineering_feature#fields FeatureEngineeringFeature#fields}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/feature_engineering_feature#fields FeatureEngineeringFeature#fields}.
 
 ---
 
@@ -21858,7 +22795,7 @@ def put_continuous(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/feature_engineering_feature#window_duration FeatureEngineeringFeature#window_duration}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/feature_engineering_feature#window_duration FeatureEngineeringFeature#window_duration}.
 
 ---
 
@@ -21866,7 +22803,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/feature_engineering_feature#offset FeatureEngineeringFeature#offset}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/feature_engineering_feature#offset FeatureEngineeringFeature#offset}.
 
 ---
 
@@ -21883,7 +22820,7 @@ def put_rolling(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/feature_engineering_feature#delay FeatureEngineeringFeature#delay}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/feature_engineering_feature#delay FeatureEngineeringFeature#delay}.
 
 ---
 
@@ -21891,7 +22828,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/feature_engineering_feature#window_duration FeatureEngineeringFeature#window_duration}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/feature_engineering_feature#window_duration FeatureEngineeringFeature#window_duration}.
 
 ---
 
@@ -21908,7 +22845,7 @@ def put_sawtooth(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/feature_engineering_feature#delay FeatureEngineeringFeature#delay}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/feature_engineering_feature#delay FeatureEngineeringFeature#delay}.
 
 ---
 
@@ -21916,7 +22853,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/feature_engineering_feature#window_duration FeatureEngineeringFeature#window_duration}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/feature_engineering_feature#window_duration FeatureEngineeringFeature#window_duration}.
 
 ---
 
@@ -21935,7 +22872,7 @@ def put_sliding(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/feature_engineering_feature#slide_duration FeatureEngineeringFeature#slide_duration}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/feature_engineering_feature#slide_duration FeatureEngineeringFeature#slide_duration}.
 
 ---
 
@@ -21943,7 +22880,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/feature_engineering_feature#delay FeatureEngineeringFeature#delay}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/feature_engineering_feature#delay FeatureEngineeringFeature#delay}.
 
 ---
 
@@ -21951,7 +22888,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/feature_engineering_feature#offset FeatureEngineeringFeature#offset}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/feature_engineering_feature#offset FeatureEngineeringFeature#offset}.
 
 ---
 
@@ -21959,7 +22896,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/feature_engineering_feature#window_duration FeatureEngineeringFeature#window_duration}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/feature_engineering_feature#window_duration FeatureEngineeringFeature#window_duration}.
 
 ---
 
@@ -21977,7 +22914,7 @@ def put_tumbling(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/feature_engineering_feature#window_duration FeatureEngineeringFeature#window_duration}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/feature_engineering_feature#window_duration FeatureEngineeringFeature#window_duration}.
 
 ---
 
@@ -21985,7 +22922,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/feature_engineering_feature#delay FeatureEngineeringFeature#delay}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/feature_engineering_feature#delay FeatureEngineeringFeature#delay}.
 
 ---
 
@@ -21993,7 +22930,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/feature_engineering_feature#offset FeatureEngineeringFeature#offset}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/feature_engineering_feature#offset FeatureEngineeringFeature#offset}.
 
 ---
 

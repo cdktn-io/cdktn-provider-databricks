@@ -4,7 +4,7 @@
 
 ### DataDatabricksAccountIamExternalGroupV2 <a name="DataDatabricksAccountIamExternalGroupV2" id="@cdktn/provider-databricks.dataDatabricksAccountIamExternalGroupV2.DataDatabricksAccountIamExternalGroupV2"></a>
 
-Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_iam_external_group_v2 databricks_account_iam_external_group_v2}.
+Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_iam_external_group_v2 databricks_account_iam_external_group_v2}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksAccountIamExternalGroupV2.DataDatabricksAccountIamExternalGroupV2.Initializer"></a>
 
@@ -387,7 +387,7 @@ The construct id used in the generated config for the DataDatabricksAccountIamEx
 
 The id of the existing DataDatabricksAccountIamExternalGroupV2 that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_iam_external_group_v2#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_iam_external_group_v2#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -656,7 +656,7 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadata
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountIamExternalGroupV2.DataDatabricksAccountIamExternalGroupV2Config.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountIamExternalGroupV2.DataDatabricksAccountIamExternalGroupV2Config.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountIamExternalGroupV2.DataDatabricksAccountIamExternalGroupV2Config.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountIamExternalGroupV2.DataDatabricksAccountIamExternalGroupV2Config.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_iam_external_group_v2#name DataDatabricksAccountIamExternalGroupV2#name}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountIamExternalGroupV2.DataDatabricksAccountIamExternalGroupV2Config.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_iam_external_group_v2#name DataDatabricksAccountIamExternalGroupV2#name}. |
 
 ---
 
@@ -738,7 +738,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_iam_external_group_v2#name DataDatabricksAccountIamExternalGroupV2#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_iam_external_group_v2#name DataDatabricksAccountIamExternalGroupV2#name}.
 
 ---
 
