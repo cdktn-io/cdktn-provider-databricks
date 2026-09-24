@@ -4,7 +4,7 @@
 
 ### WorkspaceSettingV2 <a name="WorkspaceSettingV2" id="@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2"></a>
 
-Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/workspace_setting_v2 databricks_workspace_setting_v2}.
+Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/workspace_setting_v2 databricks_workspace_setting_v2}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2.Initializer"></a>
 
@@ -32,13 +32,15 @@ workspaceSettingV2.WorkspaceSettingV2(
   effective_automatic_cluster_update_workspace: WorkspaceSettingV2EffectiveAutomaticClusterUpdateWorkspace = None,
   effective_personal_compute: WorkspaceSettingV2EffectivePersonalCompute = None,
   effective_restrict_workspace_admins: WorkspaceSettingV2EffectiveRestrictWorkspaceAdmins = None,
+  effective_workspace_label: WorkspaceSettingV2EffectiveWorkspaceLabel = None,
   integer_val: WorkspaceSettingV2IntegerVal = None,
   name: str = None,
   operational_email_custom_recipient: WorkspaceSettingV2OperationalEmailCustomRecipient = None,
   personal_compute: WorkspaceSettingV2PersonalCompute = None,
   provider_config: WorkspaceSettingV2ProviderConfig = None,
   restrict_workspace_admins: WorkspaceSettingV2RestrictWorkspaceAdmins = None,
-  string_val: WorkspaceSettingV2StringVal = None
+  string_val: WorkspaceSettingV2StringVal = None,
+  workspace_label: WorkspaceSettingV2WorkspaceLabel = None
 )
 ```
 
@@ -53,24 +55,26 @@ workspaceSettingV2.WorkspaceSettingV2(
 | <code><a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2.Initializer.parameter.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2.Initializer.parameter.aibiDashboardEmbeddingAccessPolicy">aibi_dashboard_embedding_access_policy</a></code> | <code><a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2AibiDashboardEmbeddingAccessPolicy">WorkspaceSettingV2AibiDashboardEmbeddingAccessPolicy</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/workspace_setting_v2#aibi_dashboard_embedding_access_policy WorkspaceSettingV2#aibi_dashboard_embedding_access_policy}. |
-| <code><a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2.Initializer.parameter.aibiDashboardEmbeddingApprovedDomains">aibi_dashboard_embedding_approved_domains</a></code> | <code><a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2AibiDashboardEmbeddingApprovedDomains">WorkspaceSettingV2AibiDashboardEmbeddingApprovedDomains</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/workspace_setting_v2#aibi_dashboard_embedding_approved_domains WorkspaceSettingV2#aibi_dashboard_embedding_approved_domains}. |
-| <code><a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2.Initializer.parameter.allowedAppsUserApiScopes">allowed_apps_user_api_scopes</a></code> | <code><a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2AllowedAppsUserApiScopes">WorkspaceSettingV2AllowedAppsUserApiScopes</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/workspace_setting_v2#allowed_apps_user_api_scopes WorkspaceSettingV2#allowed_apps_user_api_scopes}. |
-| <code><a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2.Initializer.parameter.automaticClusterUpdateWorkspace">automatic_cluster_update_workspace</a></code> | <code><a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2AutomaticClusterUpdateWorkspace">WorkspaceSettingV2AutomaticClusterUpdateWorkspace</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/workspace_setting_v2#automatic_cluster_update_workspace WorkspaceSettingV2#automatic_cluster_update_workspace}. |
-| <code><a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2.Initializer.parameter.booleanVal">boolean_val</a></code> | <code><a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2BooleanVal">WorkspaceSettingV2BooleanVal</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/workspace_setting_v2#boolean_val WorkspaceSettingV2#boolean_val}. |
-| <code><a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2.Initializer.parameter.collaborationPlatformConnectivity">collaboration_platform_connectivity</a></code> | <code><a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2CollaborationPlatformConnectivity">WorkspaceSettingV2CollaborationPlatformConnectivity</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/workspace_setting_v2#collaboration_platform_connectivity WorkspaceSettingV2#collaboration_platform_connectivity}. |
-| <code><a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2.Initializer.parameter.effectiveAibiDashboardEmbeddingAccessPolicy">effective_aibi_dashboard_embedding_access_policy</a></code> | <code><a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2EffectiveAibiDashboardEmbeddingAccessPolicy">WorkspaceSettingV2EffectiveAibiDashboardEmbeddingAccessPolicy</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/workspace_setting_v2#effective_aibi_dashboard_embedding_access_policy WorkspaceSettingV2#effective_aibi_dashboard_embedding_access_policy}. |
-| <code><a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2.Initializer.parameter.effectiveAibiDashboardEmbeddingApprovedDomains">effective_aibi_dashboard_embedding_approved_domains</a></code> | <code><a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2EffectiveAibiDashboardEmbeddingApprovedDomains">WorkspaceSettingV2EffectiveAibiDashboardEmbeddingApprovedDomains</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/workspace_setting_v2#effective_aibi_dashboard_embedding_approved_domains WorkspaceSettingV2#effective_aibi_dashboard_embedding_approved_domains}. |
-| <code><a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2.Initializer.parameter.effectiveAutomaticClusterUpdateWorkspace">effective_automatic_cluster_update_workspace</a></code> | <code><a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2EffectiveAutomaticClusterUpdateWorkspace">WorkspaceSettingV2EffectiveAutomaticClusterUpdateWorkspace</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/workspace_setting_v2#effective_automatic_cluster_update_workspace WorkspaceSettingV2#effective_automatic_cluster_update_workspace}. |
-| <code><a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2.Initializer.parameter.effectivePersonalCompute">effective_personal_compute</a></code> | <code><a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2EffectivePersonalCompute">WorkspaceSettingV2EffectivePersonalCompute</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/workspace_setting_v2#effective_personal_compute WorkspaceSettingV2#effective_personal_compute}. |
-| <code><a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2.Initializer.parameter.effectiveRestrictWorkspaceAdmins">effective_restrict_workspace_admins</a></code> | <code><a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2EffectiveRestrictWorkspaceAdmins">WorkspaceSettingV2EffectiveRestrictWorkspaceAdmins</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/workspace_setting_v2#effective_restrict_workspace_admins WorkspaceSettingV2#effective_restrict_workspace_admins}. |
-| <code><a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2.Initializer.parameter.integerVal">integer_val</a></code> | <code><a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2IntegerVal">WorkspaceSettingV2IntegerVal</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/workspace_setting_v2#integer_val WorkspaceSettingV2#integer_val}. |
-| <code><a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2.Initializer.parameter.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/workspace_setting_v2#name WorkspaceSettingV2#name}. |
-| <code><a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2.Initializer.parameter.operationalEmailCustomRecipient">operational_email_custom_recipient</a></code> | <code><a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2OperationalEmailCustomRecipient">WorkspaceSettingV2OperationalEmailCustomRecipient</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/workspace_setting_v2#operational_email_custom_recipient WorkspaceSettingV2#operational_email_custom_recipient}. |
-| <code><a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2.Initializer.parameter.personalCompute">personal_compute</a></code> | <code><a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2PersonalCompute">WorkspaceSettingV2PersonalCompute</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/workspace_setting_v2#personal_compute WorkspaceSettingV2#personal_compute}. |
-| <code><a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2.Initializer.parameter.providerConfig">provider_config</a></code> | <code><a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2ProviderConfig">WorkspaceSettingV2ProviderConfig</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/workspace_setting_v2#provider_config WorkspaceSettingV2#provider_config}. |
-| <code><a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2.Initializer.parameter.restrictWorkspaceAdmins">restrict_workspace_admins</a></code> | <code><a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2RestrictWorkspaceAdmins">WorkspaceSettingV2RestrictWorkspaceAdmins</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/workspace_setting_v2#restrict_workspace_admins WorkspaceSettingV2#restrict_workspace_admins}. |
-| <code><a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2.Initializer.parameter.stringVal">string_val</a></code> | <code><a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2StringVal">WorkspaceSettingV2StringVal</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/workspace_setting_v2#string_val WorkspaceSettingV2#string_val}. |
+| <code><a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2.Initializer.parameter.aibiDashboardEmbeddingAccessPolicy">aibi_dashboard_embedding_access_policy</a></code> | <code><a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2AibiDashboardEmbeddingAccessPolicy">WorkspaceSettingV2AibiDashboardEmbeddingAccessPolicy</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/workspace_setting_v2#aibi_dashboard_embedding_access_policy WorkspaceSettingV2#aibi_dashboard_embedding_access_policy}. |
+| <code><a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2.Initializer.parameter.aibiDashboardEmbeddingApprovedDomains">aibi_dashboard_embedding_approved_domains</a></code> | <code><a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2AibiDashboardEmbeddingApprovedDomains">WorkspaceSettingV2AibiDashboardEmbeddingApprovedDomains</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/workspace_setting_v2#aibi_dashboard_embedding_approved_domains WorkspaceSettingV2#aibi_dashboard_embedding_approved_domains}. |
+| <code><a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2.Initializer.parameter.allowedAppsUserApiScopes">allowed_apps_user_api_scopes</a></code> | <code><a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2AllowedAppsUserApiScopes">WorkspaceSettingV2AllowedAppsUserApiScopes</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/workspace_setting_v2#allowed_apps_user_api_scopes WorkspaceSettingV2#allowed_apps_user_api_scopes}. |
+| <code><a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2.Initializer.parameter.automaticClusterUpdateWorkspace">automatic_cluster_update_workspace</a></code> | <code><a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2AutomaticClusterUpdateWorkspace">WorkspaceSettingV2AutomaticClusterUpdateWorkspace</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/workspace_setting_v2#automatic_cluster_update_workspace WorkspaceSettingV2#automatic_cluster_update_workspace}. |
+| <code><a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2.Initializer.parameter.booleanVal">boolean_val</a></code> | <code><a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2BooleanVal">WorkspaceSettingV2BooleanVal</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/workspace_setting_v2#boolean_val WorkspaceSettingV2#boolean_val}. |
+| <code><a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2.Initializer.parameter.collaborationPlatformConnectivity">collaboration_platform_connectivity</a></code> | <code><a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2CollaborationPlatformConnectivity">WorkspaceSettingV2CollaborationPlatformConnectivity</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/workspace_setting_v2#collaboration_platform_connectivity WorkspaceSettingV2#collaboration_platform_connectivity}. |
+| <code><a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2.Initializer.parameter.effectiveAibiDashboardEmbeddingAccessPolicy">effective_aibi_dashboard_embedding_access_policy</a></code> | <code><a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2EffectiveAibiDashboardEmbeddingAccessPolicy">WorkspaceSettingV2EffectiveAibiDashboardEmbeddingAccessPolicy</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/workspace_setting_v2#effective_aibi_dashboard_embedding_access_policy WorkspaceSettingV2#effective_aibi_dashboard_embedding_access_policy}. |
+| <code><a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2.Initializer.parameter.effectiveAibiDashboardEmbeddingApprovedDomains">effective_aibi_dashboard_embedding_approved_domains</a></code> | <code><a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2EffectiveAibiDashboardEmbeddingApprovedDomains">WorkspaceSettingV2EffectiveAibiDashboardEmbeddingApprovedDomains</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/workspace_setting_v2#effective_aibi_dashboard_embedding_approved_domains WorkspaceSettingV2#effective_aibi_dashboard_embedding_approved_domains}. |
+| <code><a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2.Initializer.parameter.effectiveAutomaticClusterUpdateWorkspace">effective_automatic_cluster_update_workspace</a></code> | <code><a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2EffectiveAutomaticClusterUpdateWorkspace">WorkspaceSettingV2EffectiveAutomaticClusterUpdateWorkspace</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/workspace_setting_v2#effective_automatic_cluster_update_workspace WorkspaceSettingV2#effective_automatic_cluster_update_workspace}. |
+| <code><a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2.Initializer.parameter.effectivePersonalCompute">effective_personal_compute</a></code> | <code><a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2EffectivePersonalCompute">WorkspaceSettingV2EffectivePersonalCompute</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/workspace_setting_v2#effective_personal_compute WorkspaceSettingV2#effective_personal_compute}. |
+| <code><a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2.Initializer.parameter.effectiveRestrictWorkspaceAdmins">effective_restrict_workspace_admins</a></code> | <code><a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2EffectiveRestrictWorkspaceAdmins">WorkspaceSettingV2EffectiveRestrictWorkspaceAdmins</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/workspace_setting_v2#effective_restrict_workspace_admins WorkspaceSettingV2#effective_restrict_workspace_admins}. |
+| <code><a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2.Initializer.parameter.effectiveWorkspaceLabel">effective_workspace_label</a></code> | <code><a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2EffectiveWorkspaceLabel">WorkspaceSettingV2EffectiveWorkspaceLabel</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/workspace_setting_v2#effective_workspace_label WorkspaceSettingV2#effective_workspace_label}. |
+| <code><a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2.Initializer.parameter.integerVal">integer_val</a></code> | <code><a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2IntegerVal">WorkspaceSettingV2IntegerVal</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/workspace_setting_v2#integer_val WorkspaceSettingV2#integer_val}. |
+| <code><a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2.Initializer.parameter.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/workspace_setting_v2#name WorkspaceSettingV2#name}. |
+| <code><a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2.Initializer.parameter.operationalEmailCustomRecipient">operational_email_custom_recipient</a></code> | <code><a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2OperationalEmailCustomRecipient">WorkspaceSettingV2OperationalEmailCustomRecipient</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/workspace_setting_v2#operational_email_custom_recipient WorkspaceSettingV2#operational_email_custom_recipient}. |
+| <code><a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2.Initializer.parameter.personalCompute">personal_compute</a></code> | <code><a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2PersonalCompute">WorkspaceSettingV2PersonalCompute</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/workspace_setting_v2#personal_compute WorkspaceSettingV2#personal_compute}. |
+| <code><a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2.Initializer.parameter.providerConfig">provider_config</a></code> | <code><a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2ProviderConfig">WorkspaceSettingV2ProviderConfig</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/workspace_setting_v2#provider_config WorkspaceSettingV2#provider_config}. |
+| <code><a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2.Initializer.parameter.restrictWorkspaceAdmins">restrict_workspace_admins</a></code> | <code><a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2RestrictWorkspaceAdmins">WorkspaceSettingV2RestrictWorkspaceAdmins</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/workspace_setting_v2#restrict_workspace_admins WorkspaceSettingV2#restrict_workspace_admins}. |
+| <code><a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2.Initializer.parameter.stringVal">string_val</a></code> | <code><a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2StringVal">WorkspaceSettingV2StringVal</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/workspace_setting_v2#string_val WorkspaceSettingV2#string_val}. |
+| <code><a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2.Initializer.parameter.workspaceLabel">workspace_label</a></code> | <code><a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2WorkspaceLabel">WorkspaceSettingV2WorkspaceLabel</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/workspace_setting_v2#workspace_label WorkspaceSettingV2#workspace_label}. |
 
 ---
 
@@ -138,7 +142,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* <a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2AibiDashboardEmbeddingAccessPolicy">WorkspaceSettingV2AibiDashboardEmbeddingAccessPolicy</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/workspace_setting_v2#aibi_dashboard_embedding_access_policy WorkspaceSettingV2#aibi_dashboard_embedding_access_policy}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/workspace_setting_v2#aibi_dashboard_embedding_access_policy WorkspaceSettingV2#aibi_dashboard_embedding_access_policy}.
 
 ---
 
@@ -146,7 +150,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* <a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2AibiDashboardEmbeddingApprovedDomains">WorkspaceSettingV2AibiDashboardEmbeddingApprovedDomains</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/workspace_setting_v2#aibi_dashboard_embedding_approved_domains WorkspaceSettingV2#aibi_dashboard_embedding_approved_domains}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/workspace_setting_v2#aibi_dashboard_embedding_approved_domains WorkspaceSettingV2#aibi_dashboard_embedding_approved_domains}.
 
 ---
 
@@ -154,7 +158,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* <a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2AllowedAppsUserApiScopes">WorkspaceSettingV2AllowedAppsUserApiScopes</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/workspace_setting_v2#allowed_apps_user_api_scopes WorkspaceSettingV2#allowed_apps_user_api_scopes}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/workspace_setting_v2#allowed_apps_user_api_scopes WorkspaceSettingV2#allowed_apps_user_api_scopes}.
 
 ---
 
@@ -162,7 +166,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* <a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2AutomaticClusterUpdateWorkspace">WorkspaceSettingV2AutomaticClusterUpdateWorkspace</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/workspace_setting_v2#automatic_cluster_update_workspace WorkspaceSettingV2#automatic_cluster_update_workspace}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/workspace_setting_v2#automatic_cluster_update_workspace WorkspaceSettingV2#automatic_cluster_update_workspace}.
 
 ---
 
@@ -170,7 +174,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* <a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2BooleanVal">WorkspaceSettingV2BooleanVal</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/workspace_setting_v2#boolean_val WorkspaceSettingV2#boolean_val}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/workspace_setting_v2#boolean_val WorkspaceSettingV2#boolean_val}.
 
 ---
 
@@ -178,7 +182,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* <a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2CollaborationPlatformConnectivity">WorkspaceSettingV2CollaborationPlatformConnectivity</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/workspace_setting_v2#collaboration_platform_connectivity WorkspaceSettingV2#collaboration_platform_connectivity}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/workspace_setting_v2#collaboration_platform_connectivity WorkspaceSettingV2#collaboration_platform_connectivity}.
 
 ---
 
@@ -186,7 +190,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* <a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2EffectiveAibiDashboardEmbeddingAccessPolicy">WorkspaceSettingV2EffectiveAibiDashboardEmbeddingAccessPolicy</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/workspace_setting_v2#effective_aibi_dashboard_embedding_access_policy WorkspaceSettingV2#effective_aibi_dashboard_embedding_access_policy}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/workspace_setting_v2#effective_aibi_dashboard_embedding_access_policy WorkspaceSettingV2#effective_aibi_dashboard_embedding_access_policy}.
 
 ---
 
@@ -194,7 +198,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* <a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2EffectiveAibiDashboardEmbeddingApprovedDomains">WorkspaceSettingV2EffectiveAibiDashboardEmbeddingApprovedDomains</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/workspace_setting_v2#effective_aibi_dashboard_embedding_approved_domains WorkspaceSettingV2#effective_aibi_dashboard_embedding_approved_domains}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/workspace_setting_v2#effective_aibi_dashboard_embedding_approved_domains WorkspaceSettingV2#effective_aibi_dashboard_embedding_approved_domains}.
 
 ---
 
@@ -202,7 +206,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* <a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2EffectiveAutomaticClusterUpdateWorkspace">WorkspaceSettingV2EffectiveAutomaticClusterUpdateWorkspace</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/workspace_setting_v2#effective_automatic_cluster_update_workspace WorkspaceSettingV2#effective_automatic_cluster_update_workspace}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/workspace_setting_v2#effective_automatic_cluster_update_workspace WorkspaceSettingV2#effective_automatic_cluster_update_workspace}.
 
 ---
 
@@ -210,7 +214,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* <a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2EffectivePersonalCompute">WorkspaceSettingV2EffectivePersonalCompute</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/workspace_setting_v2#effective_personal_compute WorkspaceSettingV2#effective_personal_compute}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/workspace_setting_v2#effective_personal_compute WorkspaceSettingV2#effective_personal_compute}.
 
 ---
 
@@ -218,7 +222,15 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* <a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2EffectiveRestrictWorkspaceAdmins">WorkspaceSettingV2EffectiveRestrictWorkspaceAdmins</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/workspace_setting_v2#effective_restrict_workspace_admins WorkspaceSettingV2#effective_restrict_workspace_admins}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/workspace_setting_v2#effective_restrict_workspace_admins WorkspaceSettingV2#effective_restrict_workspace_admins}.
+
+---
+
+##### `effective_workspace_label`<sup>Optional</sup> <a name="effective_workspace_label" id="@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2.Initializer.parameter.effectiveWorkspaceLabel"></a>
+
+- *Type:* <a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2EffectiveWorkspaceLabel">WorkspaceSettingV2EffectiveWorkspaceLabel</a>
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/workspace_setting_v2#effective_workspace_label WorkspaceSettingV2#effective_workspace_label}.
 
 ---
 
@@ -226,7 +238,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* <a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2IntegerVal">WorkspaceSettingV2IntegerVal</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/workspace_setting_v2#integer_val WorkspaceSettingV2#integer_val}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/workspace_setting_v2#integer_val WorkspaceSettingV2#integer_val}.
 
 ---
 
@@ -234,7 +246,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/workspace_setting_v2#name WorkspaceSettingV2#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/workspace_setting_v2#name WorkspaceSettingV2#name}.
 
 ---
 
@@ -242,7 +254,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* <a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2OperationalEmailCustomRecipient">WorkspaceSettingV2OperationalEmailCustomRecipient</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/workspace_setting_v2#operational_email_custom_recipient WorkspaceSettingV2#operational_email_custom_recipient}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/workspace_setting_v2#operational_email_custom_recipient WorkspaceSettingV2#operational_email_custom_recipient}.
 
 ---
 
@@ -250,7 +262,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* <a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2PersonalCompute">WorkspaceSettingV2PersonalCompute</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/workspace_setting_v2#personal_compute WorkspaceSettingV2#personal_compute}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/workspace_setting_v2#personal_compute WorkspaceSettingV2#personal_compute}.
 
 ---
 
@@ -258,7 +270,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* <a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2ProviderConfig">WorkspaceSettingV2ProviderConfig</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/workspace_setting_v2#provider_config WorkspaceSettingV2#provider_config}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/workspace_setting_v2#provider_config WorkspaceSettingV2#provider_config}.
 
 ---
 
@@ -266,7 +278,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* <a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2RestrictWorkspaceAdmins">WorkspaceSettingV2RestrictWorkspaceAdmins</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/workspace_setting_v2#restrict_workspace_admins WorkspaceSettingV2#restrict_workspace_admins}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/workspace_setting_v2#restrict_workspace_admins WorkspaceSettingV2#restrict_workspace_admins}.
 
 ---
 
@@ -274,7 +286,15 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* <a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2StringVal">WorkspaceSettingV2StringVal</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/workspace_setting_v2#string_val WorkspaceSettingV2#string_val}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/workspace_setting_v2#string_val WorkspaceSettingV2#string_val}.
+
+---
+
+##### `workspace_label`<sup>Optional</sup> <a name="workspace_label" id="@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2.Initializer.parameter.workspaceLabel"></a>
+
+- *Type:* <a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2WorkspaceLabel">WorkspaceSettingV2WorkspaceLabel</a>
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/workspace_setting_v2#workspace_label WorkspaceSettingV2#workspace_label}.
 
 ---
 
@@ -317,12 +337,14 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 | <code><a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2.putEffectiveAutomaticClusterUpdateWorkspace">put_effective_automatic_cluster_update_workspace</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2.putEffectivePersonalCompute">put_effective_personal_compute</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2.putEffectiveRestrictWorkspaceAdmins">put_effective_restrict_workspace_admins</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2.putEffectiveWorkspaceLabel">put_effective_workspace_label</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2.putIntegerVal">put_integer_val</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2.putOperationalEmailCustomRecipient">put_operational_email_custom_recipient</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2.putPersonalCompute">put_personal_compute</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2.putProviderConfig">put_provider_config</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2.putRestrictWorkspaceAdmins">put_restrict_workspace_admins</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2.putStringVal">put_string_val</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2.putWorkspaceLabel">put_workspace_label</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2.resetAibiDashboardEmbeddingAccessPolicy">reset_aibi_dashboard_embedding_access_policy</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2.resetAibiDashboardEmbeddingApprovedDomains">reset_aibi_dashboard_embedding_approved_domains</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2.resetAllowedAppsUserApiScopes">reset_allowed_apps_user_api_scopes</a></code> | *No description.* |
@@ -334,6 +356,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 | <code><a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2.resetEffectiveAutomaticClusterUpdateWorkspace">reset_effective_automatic_cluster_update_workspace</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2.resetEffectivePersonalCompute">reset_effective_personal_compute</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2.resetEffectiveRestrictWorkspaceAdmins">reset_effective_restrict_workspace_admins</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2.resetEffectiveWorkspaceLabel">reset_effective_workspace_label</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2.resetIntegerVal">reset_integer_val</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2.resetName">reset_name</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2.resetOperationalEmailCustomRecipient">reset_operational_email_custom_recipient</a></code> | *No description.* |
@@ -341,6 +364,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 | <code><a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2.resetProviderConfig">reset_provider_config</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2.resetRestrictWorkspaceAdmins">reset_restrict_workspace_admins</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2.resetStringVal">reset_string_val</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2.resetWorkspaceLabel">reset_workspace_label</a></code> | *No description.* |
 
 ---
 
@@ -704,7 +728,7 @@ def put_aibi_dashboard_embedding_access_policy(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/workspace_setting_v2#access_policy_type WorkspaceSettingV2#access_policy_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/workspace_setting_v2#access_policy_type WorkspaceSettingV2#access_policy_type}.
 
 ---
 
@@ -720,7 +744,7 @@ def put_aibi_dashboard_embedding_approved_domains(
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/workspace_setting_v2#approved_domains WorkspaceSettingV2#approved_domains}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/workspace_setting_v2#approved_domains WorkspaceSettingV2#approved_domains}.
 
 ---
 
@@ -736,7 +760,7 @@ def put_allowed_apps_user_api_scopes(
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/workspace_setting_v2#allowed_scopes WorkspaceSettingV2#allowed_scopes}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/workspace_setting_v2#allowed_scopes WorkspaceSettingV2#allowed_scopes}.
 
 ---
 
@@ -756,7 +780,7 @@ def put_automatic_cluster_update_workspace(
 
 - *Type:* bool | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/workspace_setting_v2#can_toggle WorkspaceSettingV2#can_toggle}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/workspace_setting_v2#can_toggle WorkspaceSettingV2#can_toggle}.
 
 ---
 
@@ -764,7 +788,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* bool | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/workspace_setting_v2#enabled WorkspaceSettingV2#enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/workspace_setting_v2#enabled WorkspaceSettingV2#enabled}.
 
 ---
 
@@ -772,7 +796,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* <a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2AutomaticClusterUpdateWorkspaceEnablementDetails">WorkspaceSettingV2AutomaticClusterUpdateWorkspaceEnablementDetails</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/workspace_setting_v2#enablement_details WorkspaceSettingV2#enablement_details}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/workspace_setting_v2#enablement_details WorkspaceSettingV2#enablement_details}.
 
 ---
 
@@ -780,7 +804,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* <a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2AutomaticClusterUpdateWorkspaceMaintenanceWindow">WorkspaceSettingV2AutomaticClusterUpdateWorkspaceMaintenanceWindow</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/workspace_setting_v2#maintenance_window WorkspaceSettingV2#maintenance_window}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/workspace_setting_v2#maintenance_window WorkspaceSettingV2#maintenance_window}.
 
 ---
 
@@ -788,7 +812,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* bool | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/workspace_setting_v2#restart_even_if_no_updates_available WorkspaceSettingV2#restart_even_if_no_updates_available}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/workspace_setting_v2#restart_even_if_no_updates_available WorkspaceSettingV2#restart_even_if_no_updates_available}.
 
 ---
 
@@ -804,7 +828,7 @@ def put_boolean_val(
 
 - *Type:* bool | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/workspace_setting_v2#value WorkspaceSettingV2#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/workspace_setting_v2#value WorkspaceSettingV2#value}.
 
 ---
 
@@ -820,7 +844,7 @@ def put_collaboration_platform_connectivity(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/workspace_setting_v2#connectivity WorkspaceSettingV2#connectivity}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/workspace_setting_v2#connectivity WorkspaceSettingV2#connectivity}.
 
 ---
 
@@ -836,7 +860,7 @@ def put_effective_aibi_dashboard_embedding_access_policy(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/workspace_setting_v2#access_policy_type WorkspaceSettingV2#access_policy_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/workspace_setting_v2#access_policy_type WorkspaceSettingV2#access_policy_type}.
 
 ---
 
@@ -852,7 +876,7 @@ def put_effective_aibi_dashboard_embedding_approved_domains(
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/workspace_setting_v2#approved_domains WorkspaceSettingV2#approved_domains}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/workspace_setting_v2#approved_domains WorkspaceSettingV2#approved_domains}.
 
 ---
 
@@ -872,7 +896,7 @@ def put_effective_automatic_cluster_update_workspace(
 
 - *Type:* bool | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/workspace_setting_v2#can_toggle WorkspaceSettingV2#can_toggle}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/workspace_setting_v2#can_toggle WorkspaceSettingV2#can_toggle}.
 
 ---
 
@@ -880,7 +904,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* bool | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/workspace_setting_v2#enabled WorkspaceSettingV2#enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/workspace_setting_v2#enabled WorkspaceSettingV2#enabled}.
 
 ---
 
@@ -888,7 +912,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* <a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2EffectiveAutomaticClusterUpdateWorkspaceEnablementDetails">WorkspaceSettingV2EffectiveAutomaticClusterUpdateWorkspaceEnablementDetails</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/workspace_setting_v2#enablement_details WorkspaceSettingV2#enablement_details}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/workspace_setting_v2#enablement_details WorkspaceSettingV2#enablement_details}.
 
 ---
 
@@ -896,7 +920,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* <a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2EffectiveAutomaticClusterUpdateWorkspaceMaintenanceWindow">WorkspaceSettingV2EffectiveAutomaticClusterUpdateWorkspaceMaintenanceWindow</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/workspace_setting_v2#maintenance_window WorkspaceSettingV2#maintenance_window}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/workspace_setting_v2#maintenance_window WorkspaceSettingV2#maintenance_window}.
 
 ---
 
@@ -904,7 +928,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* bool | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/workspace_setting_v2#restart_even_if_no_updates_available WorkspaceSettingV2#restart_even_if_no_updates_available}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/workspace_setting_v2#restart_even_if_no_updates_available WorkspaceSettingV2#restart_even_if_no_updates_available}.
 
 ---
 
@@ -920,7 +944,7 @@ def put_effective_personal_compute(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/workspace_setting_v2#value WorkspaceSettingV2#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/workspace_setting_v2#value WorkspaceSettingV2#value}.
 
 ---
 
@@ -937,7 +961,7 @@ def put_effective_restrict_workspace_admins(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/workspace_setting_v2#status WorkspaceSettingV2#status}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/workspace_setting_v2#status WorkspaceSettingV2#status}.
 
 ---
 
@@ -945,7 +969,32 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* bool | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/workspace_setting_v2#disable_gov_tag_creation WorkspaceSettingV2#disable_gov_tag_creation}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/workspace_setting_v2#disable_gov_tag_creation WorkspaceSettingV2#disable_gov_tag_creation}.
+
+---
+
+##### `put_effective_workspace_label` <a name="put_effective_workspace_label" id="@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2.putEffectiveWorkspaceLabel"></a>
+
+```python
+def put_effective_workspace_label(
+  color: str = None,
+  label: str = None
+) -> None
+```
+
+###### `color`<sup>Optional</sup> <a name="color" id="@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2.putEffectiveWorkspaceLabel.parameter.color"></a>
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/workspace_setting_v2#color WorkspaceSettingV2#color}.
+
+---
+
+###### `label`<sup>Optional</sup> <a name="label" id="@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2.putEffectiveWorkspaceLabel.parameter.label"></a>
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/workspace_setting_v2#label WorkspaceSettingV2#label}.
 
 ---
 
@@ -961,7 +1010,7 @@ def put_integer_val(
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/workspace_setting_v2#value WorkspaceSettingV2#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/workspace_setting_v2#value WorkspaceSettingV2#value}.
 
 ---
 
@@ -977,7 +1026,7 @@ def put_operational_email_custom_recipient(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/workspace_setting_v2#email WorkspaceSettingV2#email}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/workspace_setting_v2#email WorkspaceSettingV2#email}.
 
 ---
 
@@ -993,7 +1042,7 @@ def put_personal_compute(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/workspace_setting_v2#value WorkspaceSettingV2#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/workspace_setting_v2#value WorkspaceSettingV2#value}.
 
 ---
 
@@ -1009,7 +1058,7 @@ def put_provider_config(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/workspace_setting_v2#workspace_id WorkspaceSettingV2#workspace_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/workspace_setting_v2#workspace_id WorkspaceSettingV2#workspace_id}.
 
 ---
 
@@ -1026,7 +1075,7 @@ def put_restrict_workspace_admins(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/workspace_setting_v2#status WorkspaceSettingV2#status}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/workspace_setting_v2#status WorkspaceSettingV2#status}.
 
 ---
 
@@ -1034,7 +1083,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* bool | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/workspace_setting_v2#disable_gov_tag_creation WorkspaceSettingV2#disable_gov_tag_creation}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/workspace_setting_v2#disable_gov_tag_creation WorkspaceSettingV2#disable_gov_tag_creation}.
 
 ---
 
@@ -1050,7 +1099,32 @@ def put_string_val(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/workspace_setting_v2#value WorkspaceSettingV2#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/workspace_setting_v2#value WorkspaceSettingV2#value}.
+
+---
+
+##### `put_workspace_label` <a name="put_workspace_label" id="@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2.putWorkspaceLabel"></a>
+
+```python
+def put_workspace_label(
+  color: str = None,
+  label: str = None
+) -> None
+```
+
+###### `color`<sup>Optional</sup> <a name="color" id="@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2.putWorkspaceLabel.parameter.color"></a>
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/workspace_setting_v2#color WorkspaceSettingV2#color}.
+
+---
+
+###### `label`<sup>Optional</sup> <a name="label" id="@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2.putWorkspaceLabel.parameter.label"></a>
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/workspace_setting_v2#label WorkspaceSettingV2#label}.
 
 ---
 
@@ -1120,6 +1194,12 @@ def reset_effective_personal_compute() -> None
 def reset_effective_restrict_workspace_admins() -> None
 ```
 
+##### `reset_effective_workspace_label` <a name="reset_effective_workspace_label" id="@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2.resetEffectiveWorkspaceLabel"></a>
+
+```python
+def reset_effective_workspace_label() -> None
+```
+
 ##### `reset_integer_val` <a name="reset_integer_val" id="@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2.resetIntegerVal"></a>
 
 ```python
@@ -1160,6 +1240,12 @@ def reset_restrict_workspace_admins() -> None
 
 ```python
 def reset_string_val() -> None
+```
+
+##### `reset_workspace_label` <a name="reset_workspace_label" id="@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2.resetWorkspaceLabel"></a>
+
+```python
+def reset_workspace_label() -> None
 ```
 
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
@@ -1276,7 +1362,7 @@ The construct id used in the generated config for the WorkspaceSettingV2 to impo
 
 The id of the existing WorkspaceSettingV2 that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/workspace_setting_v2#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/workspace_setting_v2#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1323,12 +1409,14 @@ Refer to the {@link https://registry.terraform.io/providers/databricks/databrick
 | <code><a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2.property.effectivePersonalCompute">effective_personal_compute</a></code> | <code><a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2EffectivePersonalComputeOutputReference">WorkspaceSettingV2EffectivePersonalComputeOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2.property.effectiveRestrictWorkspaceAdmins">effective_restrict_workspace_admins</a></code> | <code><a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2EffectiveRestrictWorkspaceAdminsOutputReference">WorkspaceSettingV2EffectiveRestrictWorkspaceAdminsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2.property.effectiveStringVal">effective_string_val</a></code> | <code><a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2EffectiveStringValOutputReference">WorkspaceSettingV2EffectiveStringValOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2.property.effectiveWorkspaceLabel">effective_workspace_label</a></code> | <code><a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2EffectiveWorkspaceLabelOutputReference">WorkspaceSettingV2EffectiveWorkspaceLabelOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2.property.integerVal">integer_val</a></code> | <code><a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2IntegerValOutputReference">WorkspaceSettingV2IntegerValOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2.property.operationalEmailCustomRecipient">operational_email_custom_recipient</a></code> | <code><a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2OperationalEmailCustomRecipientOutputReference">WorkspaceSettingV2OperationalEmailCustomRecipientOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2.property.personalCompute">personal_compute</a></code> | <code><a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2PersonalComputeOutputReference">WorkspaceSettingV2PersonalComputeOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2.property.providerConfig">provider_config</a></code> | <code><a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2ProviderConfigOutputReference">WorkspaceSettingV2ProviderConfigOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2.property.restrictWorkspaceAdmins">restrict_workspace_admins</a></code> | <code><a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2RestrictWorkspaceAdminsOutputReference">WorkspaceSettingV2RestrictWorkspaceAdminsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2.property.stringVal">string_val</a></code> | <code><a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2StringValOutputReference">WorkspaceSettingV2StringValOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2.property.workspaceLabel">workspace_label</a></code> | <code><a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2WorkspaceLabelOutputReference">WorkspaceSettingV2WorkspaceLabelOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2.property.aibiDashboardEmbeddingAccessPolicyInput">aibi_dashboard_embedding_access_policy_input</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2AibiDashboardEmbeddingAccessPolicy">WorkspaceSettingV2AibiDashboardEmbeddingAccessPolicy</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2.property.aibiDashboardEmbeddingApprovedDomainsInput">aibi_dashboard_embedding_approved_domains_input</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2AibiDashboardEmbeddingApprovedDomains">WorkspaceSettingV2AibiDashboardEmbeddingApprovedDomains</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2.property.allowedAppsUserApiScopesInput">allowed_apps_user_api_scopes_input</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2AllowedAppsUserApiScopes">WorkspaceSettingV2AllowedAppsUserApiScopes</a></code> | *No description.* |
@@ -1340,6 +1428,7 @@ Refer to the {@link https://registry.terraform.io/providers/databricks/databrick
 | <code><a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2.property.effectiveAutomaticClusterUpdateWorkspaceInput">effective_automatic_cluster_update_workspace_input</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2EffectiveAutomaticClusterUpdateWorkspace">WorkspaceSettingV2EffectiveAutomaticClusterUpdateWorkspace</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2.property.effectivePersonalComputeInput">effective_personal_compute_input</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2EffectivePersonalCompute">WorkspaceSettingV2EffectivePersonalCompute</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2.property.effectiveRestrictWorkspaceAdminsInput">effective_restrict_workspace_admins_input</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2EffectiveRestrictWorkspaceAdmins">WorkspaceSettingV2EffectiveRestrictWorkspaceAdmins</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2.property.effectiveWorkspaceLabelInput">effective_workspace_label_input</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2EffectiveWorkspaceLabel">WorkspaceSettingV2EffectiveWorkspaceLabel</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2.property.integerValInput">integer_val_input</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2IntegerVal">WorkspaceSettingV2IntegerVal</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2.property.nameInput">name_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2.property.operationalEmailCustomRecipientInput">operational_email_custom_recipient_input</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2OperationalEmailCustomRecipient">WorkspaceSettingV2OperationalEmailCustomRecipient</a></code> | *No description.* |
@@ -1347,6 +1436,7 @@ Refer to the {@link https://registry.terraform.io/providers/databricks/databrick
 | <code><a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2.property.providerConfigInput">provider_config_input</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2ProviderConfig">WorkspaceSettingV2ProviderConfig</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2.property.restrictWorkspaceAdminsInput">restrict_workspace_admins_input</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2RestrictWorkspaceAdmins">WorkspaceSettingV2RestrictWorkspaceAdmins</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2.property.stringValInput">string_val_input</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2StringVal">WorkspaceSettingV2StringVal</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2.property.workspaceLabelInput">workspace_label_input</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2WorkspaceLabel">WorkspaceSettingV2WorkspaceLabel</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2.property.name">name</a></code> | <code>str</code> | *No description.* |
 
 ---
@@ -1663,6 +1753,16 @@ effective_string_val: WorkspaceSettingV2EffectiveStringValOutputReference
 
 ---
 
+##### `effective_workspace_label`<sup>Required</sup> <a name="effective_workspace_label" id="@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2.property.effectiveWorkspaceLabel"></a>
+
+```python
+effective_workspace_label: WorkspaceSettingV2EffectiveWorkspaceLabelOutputReference
+```
+
+- *Type:* <a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2EffectiveWorkspaceLabelOutputReference">WorkspaceSettingV2EffectiveWorkspaceLabelOutputReference</a>
+
+---
+
 ##### `integer_val`<sup>Required</sup> <a name="integer_val" id="@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2.property.integerVal"></a>
 
 ```python
@@ -1720,6 +1820,16 @@ string_val: WorkspaceSettingV2StringValOutputReference
 ```
 
 - *Type:* <a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2StringValOutputReference">WorkspaceSettingV2StringValOutputReference</a>
+
+---
+
+##### `workspace_label`<sup>Required</sup> <a name="workspace_label" id="@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2.property.workspaceLabel"></a>
+
+```python
+workspace_label: WorkspaceSettingV2WorkspaceLabelOutputReference
+```
+
+- *Type:* <a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2WorkspaceLabelOutputReference">WorkspaceSettingV2WorkspaceLabelOutputReference</a>
 
 ---
 
@@ -1833,6 +1943,16 @@ effective_restrict_workspace_admins_input: IResolvable | WorkspaceSettingV2Effec
 
 ---
 
+##### `effective_workspace_label_input`<sup>Optional</sup> <a name="effective_workspace_label_input" id="@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2.property.effectiveWorkspaceLabelInput"></a>
+
+```python
+effective_workspace_label_input: IResolvable | WorkspaceSettingV2EffectiveWorkspaceLabel
+```
+
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2EffectiveWorkspaceLabel">WorkspaceSettingV2EffectiveWorkspaceLabel</a>
+
+---
+
 ##### `integer_val_input`<sup>Optional</sup> <a name="integer_val_input" id="@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2.property.integerValInput"></a>
 
 ```python
@@ -1903,6 +2023,16 @@ string_val_input: IResolvable | WorkspaceSettingV2StringVal
 
 ---
 
+##### `workspace_label_input`<sup>Optional</sup> <a name="workspace_label_input" id="@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2.property.workspaceLabelInput"></a>
+
+```python
+workspace_label_input: IResolvable | WorkspaceSettingV2WorkspaceLabel
+```
+
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2WorkspaceLabel">WorkspaceSettingV2WorkspaceLabel</a>
+
+---
+
 ##### `name`<sup>Required</sup> <a name="name" id="@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2.property.name"></a>
 
 ```python
@@ -1949,7 +2079,7 @@ workspaceSettingV2.WorkspaceSettingV2AibiDashboardEmbeddingAccessPolicy(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2AibiDashboardEmbeddingAccessPolicy.property.accessPolicyType">access_policy_type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/workspace_setting_v2#access_policy_type WorkspaceSettingV2#access_policy_type}. |
+| <code><a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2AibiDashboardEmbeddingAccessPolicy.property.accessPolicyType">access_policy_type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/workspace_setting_v2#access_policy_type WorkspaceSettingV2#access_policy_type}. |
 
 ---
 
@@ -1961,7 +2091,7 @@ access_policy_type: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/workspace_setting_v2#access_policy_type WorkspaceSettingV2#access_policy_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/workspace_setting_v2#access_policy_type WorkspaceSettingV2#access_policy_type}.
 
 ---
 
@@ -1981,7 +2111,7 @@ workspaceSettingV2.WorkspaceSettingV2AibiDashboardEmbeddingApprovedDomains(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2AibiDashboardEmbeddingApprovedDomains.property.approvedDomains">approved_domains</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/workspace_setting_v2#approved_domains WorkspaceSettingV2#approved_domains}. |
+| <code><a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2AibiDashboardEmbeddingApprovedDomains.property.approvedDomains">approved_domains</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/workspace_setting_v2#approved_domains WorkspaceSettingV2#approved_domains}. |
 
 ---
 
@@ -1993,7 +2123,7 @@ approved_domains: typing.List[str]
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/workspace_setting_v2#approved_domains WorkspaceSettingV2#approved_domains}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/workspace_setting_v2#approved_domains WorkspaceSettingV2#approved_domains}.
 
 ---
 
@@ -2013,7 +2143,7 @@ workspaceSettingV2.WorkspaceSettingV2AllowedAppsUserApiScopes(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2AllowedAppsUserApiScopes.property.allowedScopes">allowed_scopes</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/workspace_setting_v2#allowed_scopes WorkspaceSettingV2#allowed_scopes}. |
+| <code><a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2AllowedAppsUserApiScopes.property.allowedScopes">allowed_scopes</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/workspace_setting_v2#allowed_scopes WorkspaceSettingV2#allowed_scopes}. |
 
 ---
 
@@ -2025,7 +2155,7 @@ allowed_scopes: typing.List[str]
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/workspace_setting_v2#allowed_scopes WorkspaceSettingV2#allowed_scopes}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/workspace_setting_v2#allowed_scopes WorkspaceSettingV2#allowed_scopes}.
 
 ---
 
@@ -2049,11 +2179,11 @@ workspaceSettingV2.WorkspaceSettingV2AutomaticClusterUpdateWorkspace(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2AutomaticClusterUpdateWorkspace.property.canToggle">can_toggle</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/workspace_setting_v2#can_toggle WorkspaceSettingV2#can_toggle}. |
-| <code><a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2AutomaticClusterUpdateWorkspace.property.enabled">enabled</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/workspace_setting_v2#enabled WorkspaceSettingV2#enabled}. |
-| <code><a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2AutomaticClusterUpdateWorkspace.property.enablementDetails">enablement_details</a></code> | <code><a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2AutomaticClusterUpdateWorkspaceEnablementDetails">WorkspaceSettingV2AutomaticClusterUpdateWorkspaceEnablementDetails</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/workspace_setting_v2#enablement_details WorkspaceSettingV2#enablement_details}. |
-| <code><a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2AutomaticClusterUpdateWorkspace.property.maintenanceWindow">maintenance_window</a></code> | <code><a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2AutomaticClusterUpdateWorkspaceMaintenanceWindow">WorkspaceSettingV2AutomaticClusterUpdateWorkspaceMaintenanceWindow</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/workspace_setting_v2#maintenance_window WorkspaceSettingV2#maintenance_window}. |
-| <code><a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2AutomaticClusterUpdateWorkspace.property.restartEvenIfNoUpdatesAvailable">restart_even_if_no_updates_available</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/workspace_setting_v2#restart_even_if_no_updates_available WorkspaceSettingV2#restart_even_if_no_updates_available}. |
+| <code><a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2AutomaticClusterUpdateWorkspace.property.canToggle">can_toggle</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/workspace_setting_v2#can_toggle WorkspaceSettingV2#can_toggle}. |
+| <code><a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2AutomaticClusterUpdateWorkspace.property.enabled">enabled</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/workspace_setting_v2#enabled WorkspaceSettingV2#enabled}. |
+| <code><a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2AutomaticClusterUpdateWorkspace.property.enablementDetails">enablement_details</a></code> | <code><a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2AutomaticClusterUpdateWorkspaceEnablementDetails">WorkspaceSettingV2AutomaticClusterUpdateWorkspaceEnablementDetails</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/workspace_setting_v2#enablement_details WorkspaceSettingV2#enablement_details}. |
+| <code><a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2AutomaticClusterUpdateWorkspace.property.maintenanceWindow">maintenance_window</a></code> | <code><a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2AutomaticClusterUpdateWorkspaceMaintenanceWindow">WorkspaceSettingV2AutomaticClusterUpdateWorkspaceMaintenanceWindow</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/workspace_setting_v2#maintenance_window WorkspaceSettingV2#maintenance_window}. |
+| <code><a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2AutomaticClusterUpdateWorkspace.property.restartEvenIfNoUpdatesAvailable">restart_even_if_no_updates_available</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/workspace_setting_v2#restart_even_if_no_updates_available WorkspaceSettingV2#restart_even_if_no_updates_available}. |
 
 ---
 
@@ -2065,7 +2195,7 @@ can_toggle: bool | IResolvable
 
 - *Type:* bool | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/workspace_setting_v2#can_toggle WorkspaceSettingV2#can_toggle}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/workspace_setting_v2#can_toggle WorkspaceSettingV2#can_toggle}.
 
 ---
 
@@ -2077,7 +2207,7 @@ enabled: bool | IResolvable
 
 - *Type:* bool | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/workspace_setting_v2#enabled WorkspaceSettingV2#enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/workspace_setting_v2#enabled WorkspaceSettingV2#enabled}.
 
 ---
 
@@ -2089,7 +2219,7 @@ enablement_details: WorkspaceSettingV2AutomaticClusterUpdateWorkspaceEnablementD
 
 - *Type:* <a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2AutomaticClusterUpdateWorkspaceEnablementDetails">WorkspaceSettingV2AutomaticClusterUpdateWorkspaceEnablementDetails</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/workspace_setting_v2#enablement_details WorkspaceSettingV2#enablement_details}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/workspace_setting_v2#enablement_details WorkspaceSettingV2#enablement_details}.
 
 ---
 
@@ -2101,7 +2231,7 @@ maintenance_window: WorkspaceSettingV2AutomaticClusterUpdateWorkspaceMaintenance
 
 - *Type:* <a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2AutomaticClusterUpdateWorkspaceMaintenanceWindow">WorkspaceSettingV2AutomaticClusterUpdateWorkspaceMaintenanceWindow</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/workspace_setting_v2#maintenance_window WorkspaceSettingV2#maintenance_window}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/workspace_setting_v2#maintenance_window WorkspaceSettingV2#maintenance_window}.
 
 ---
 
@@ -2113,7 +2243,7 @@ restart_even_if_no_updates_available: bool | IResolvable
 
 - *Type:* bool | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/workspace_setting_v2#restart_even_if_no_updates_available WorkspaceSettingV2#restart_even_if_no_updates_available}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/workspace_setting_v2#restart_even_if_no_updates_available WorkspaceSettingV2#restart_even_if_no_updates_available}.
 
 ---
 
@@ -2135,9 +2265,9 @@ workspaceSettingV2.WorkspaceSettingV2AutomaticClusterUpdateWorkspaceEnablementDe
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2AutomaticClusterUpdateWorkspaceEnablementDetails.property.forcedForComplianceMode">forced_for_compliance_mode</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/workspace_setting_v2#forced_for_compliance_mode WorkspaceSettingV2#forced_for_compliance_mode}. |
-| <code><a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2AutomaticClusterUpdateWorkspaceEnablementDetails.property.unavailableForDisabledEntitlement">unavailable_for_disabled_entitlement</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/workspace_setting_v2#unavailable_for_disabled_entitlement WorkspaceSettingV2#unavailable_for_disabled_entitlement}. |
-| <code><a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2AutomaticClusterUpdateWorkspaceEnablementDetails.property.unavailableForNonEnterpriseTier">unavailable_for_non_enterprise_tier</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/workspace_setting_v2#unavailable_for_non_enterprise_tier WorkspaceSettingV2#unavailable_for_non_enterprise_tier}. |
+| <code><a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2AutomaticClusterUpdateWorkspaceEnablementDetails.property.forcedForComplianceMode">forced_for_compliance_mode</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/workspace_setting_v2#forced_for_compliance_mode WorkspaceSettingV2#forced_for_compliance_mode}. |
+| <code><a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2AutomaticClusterUpdateWorkspaceEnablementDetails.property.unavailableForDisabledEntitlement">unavailable_for_disabled_entitlement</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/workspace_setting_v2#unavailable_for_disabled_entitlement WorkspaceSettingV2#unavailable_for_disabled_entitlement}. |
+| <code><a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2AutomaticClusterUpdateWorkspaceEnablementDetails.property.unavailableForNonEnterpriseTier">unavailable_for_non_enterprise_tier</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/workspace_setting_v2#unavailable_for_non_enterprise_tier WorkspaceSettingV2#unavailable_for_non_enterprise_tier}. |
 
 ---
 
@@ -2149,7 +2279,7 @@ forced_for_compliance_mode: bool | IResolvable
 
 - *Type:* bool | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/workspace_setting_v2#forced_for_compliance_mode WorkspaceSettingV2#forced_for_compliance_mode}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/workspace_setting_v2#forced_for_compliance_mode WorkspaceSettingV2#forced_for_compliance_mode}.
 
 ---
 
@@ -2161,7 +2291,7 @@ unavailable_for_disabled_entitlement: bool | IResolvable
 
 - *Type:* bool | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/workspace_setting_v2#unavailable_for_disabled_entitlement WorkspaceSettingV2#unavailable_for_disabled_entitlement}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/workspace_setting_v2#unavailable_for_disabled_entitlement WorkspaceSettingV2#unavailable_for_disabled_entitlement}.
 
 ---
 
@@ -2173,7 +2303,7 @@ unavailable_for_non_enterprise_tier: bool | IResolvable
 
 - *Type:* bool | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/workspace_setting_v2#unavailable_for_non_enterprise_tier WorkspaceSettingV2#unavailable_for_non_enterprise_tier}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/workspace_setting_v2#unavailable_for_non_enterprise_tier WorkspaceSettingV2#unavailable_for_non_enterprise_tier}.
 
 ---
 
@@ -2193,7 +2323,7 @@ workspaceSettingV2.WorkspaceSettingV2AutomaticClusterUpdateWorkspaceMaintenanceW
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2AutomaticClusterUpdateWorkspaceMaintenanceWindow.property.weekDayBasedSchedule">week_day_based_schedule</a></code> | <code><a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2AutomaticClusterUpdateWorkspaceMaintenanceWindowWeekDayBasedSchedule">WorkspaceSettingV2AutomaticClusterUpdateWorkspaceMaintenanceWindowWeekDayBasedSchedule</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/workspace_setting_v2#week_day_based_schedule WorkspaceSettingV2#week_day_based_schedule}. |
+| <code><a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2AutomaticClusterUpdateWorkspaceMaintenanceWindow.property.weekDayBasedSchedule">week_day_based_schedule</a></code> | <code><a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2AutomaticClusterUpdateWorkspaceMaintenanceWindowWeekDayBasedSchedule">WorkspaceSettingV2AutomaticClusterUpdateWorkspaceMaintenanceWindowWeekDayBasedSchedule</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/workspace_setting_v2#week_day_based_schedule WorkspaceSettingV2#week_day_based_schedule}. |
 
 ---
 
@@ -2205,7 +2335,7 @@ week_day_based_schedule: WorkspaceSettingV2AutomaticClusterUpdateWorkspaceMainte
 
 - *Type:* <a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2AutomaticClusterUpdateWorkspaceMaintenanceWindowWeekDayBasedSchedule">WorkspaceSettingV2AutomaticClusterUpdateWorkspaceMaintenanceWindowWeekDayBasedSchedule</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/workspace_setting_v2#week_day_based_schedule WorkspaceSettingV2#week_day_based_schedule}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/workspace_setting_v2#week_day_based_schedule WorkspaceSettingV2#week_day_based_schedule}.
 
 ---
 
@@ -2227,9 +2357,9 @@ workspaceSettingV2.WorkspaceSettingV2AutomaticClusterUpdateWorkspaceMaintenanceW
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2AutomaticClusterUpdateWorkspaceMaintenanceWindowWeekDayBasedSchedule.property.dayOfWeek">day_of_week</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/workspace_setting_v2#day_of_week WorkspaceSettingV2#day_of_week}. |
-| <code><a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2AutomaticClusterUpdateWorkspaceMaintenanceWindowWeekDayBasedSchedule.property.frequency">frequency</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/workspace_setting_v2#frequency WorkspaceSettingV2#frequency}. |
-| <code><a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2AutomaticClusterUpdateWorkspaceMaintenanceWindowWeekDayBasedSchedule.property.windowStartTime">window_start_time</a></code> | <code><a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2AutomaticClusterUpdateWorkspaceMaintenanceWindowWeekDayBasedScheduleWindowStartTime">WorkspaceSettingV2AutomaticClusterUpdateWorkspaceMaintenanceWindowWeekDayBasedScheduleWindowStartTime</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/workspace_setting_v2#window_start_time WorkspaceSettingV2#window_start_time}. |
+| <code><a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2AutomaticClusterUpdateWorkspaceMaintenanceWindowWeekDayBasedSchedule.property.dayOfWeek">day_of_week</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/workspace_setting_v2#day_of_week WorkspaceSettingV2#day_of_week}. |
+| <code><a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2AutomaticClusterUpdateWorkspaceMaintenanceWindowWeekDayBasedSchedule.property.frequency">frequency</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/workspace_setting_v2#frequency WorkspaceSettingV2#frequency}. |
+| <code><a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2AutomaticClusterUpdateWorkspaceMaintenanceWindowWeekDayBasedSchedule.property.windowStartTime">window_start_time</a></code> | <code><a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2AutomaticClusterUpdateWorkspaceMaintenanceWindowWeekDayBasedScheduleWindowStartTime">WorkspaceSettingV2AutomaticClusterUpdateWorkspaceMaintenanceWindowWeekDayBasedScheduleWindowStartTime</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/workspace_setting_v2#window_start_time WorkspaceSettingV2#window_start_time}. |
 
 ---
 
@@ -2241,7 +2371,7 @@ day_of_week: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/workspace_setting_v2#day_of_week WorkspaceSettingV2#day_of_week}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/workspace_setting_v2#day_of_week WorkspaceSettingV2#day_of_week}.
 
 ---
 
@@ -2253,7 +2383,7 @@ frequency: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/workspace_setting_v2#frequency WorkspaceSettingV2#frequency}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/workspace_setting_v2#frequency WorkspaceSettingV2#frequency}.
 
 ---
 
@@ -2265,7 +2395,7 @@ window_start_time: WorkspaceSettingV2AutomaticClusterUpdateWorkspaceMaintenanceW
 
 - *Type:* <a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2AutomaticClusterUpdateWorkspaceMaintenanceWindowWeekDayBasedScheduleWindowStartTime">WorkspaceSettingV2AutomaticClusterUpdateWorkspaceMaintenanceWindowWeekDayBasedScheduleWindowStartTime</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/workspace_setting_v2#window_start_time WorkspaceSettingV2#window_start_time}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/workspace_setting_v2#window_start_time WorkspaceSettingV2#window_start_time}.
 
 ---
 
@@ -2286,8 +2416,8 @@ workspaceSettingV2.WorkspaceSettingV2AutomaticClusterUpdateWorkspaceMaintenanceW
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2AutomaticClusterUpdateWorkspaceMaintenanceWindowWeekDayBasedScheduleWindowStartTime.property.hours">hours</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/workspace_setting_v2#hours WorkspaceSettingV2#hours}. |
-| <code><a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2AutomaticClusterUpdateWorkspaceMaintenanceWindowWeekDayBasedScheduleWindowStartTime.property.minutes">minutes</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/workspace_setting_v2#minutes WorkspaceSettingV2#minutes}. |
+| <code><a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2AutomaticClusterUpdateWorkspaceMaintenanceWindowWeekDayBasedScheduleWindowStartTime.property.hours">hours</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/workspace_setting_v2#hours WorkspaceSettingV2#hours}. |
+| <code><a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2AutomaticClusterUpdateWorkspaceMaintenanceWindowWeekDayBasedScheduleWindowStartTime.property.minutes">minutes</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/workspace_setting_v2#minutes WorkspaceSettingV2#minutes}. |
 
 ---
 
@@ -2299,7 +2429,7 @@ hours: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/workspace_setting_v2#hours WorkspaceSettingV2#hours}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/workspace_setting_v2#hours WorkspaceSettingV2#hours}.
 
 ---
 
@@ -2311,7 +2441,7 @@ minutes: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/workspace_setting_v2#minutes WorkspaceSettingV2#minutes}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/workspace_setting_v2#minutes WorkspaceSettingV2#minutes}.
 
 ---
 
@@ -2331,7 +2461,7 @@ workspaceSettingV2.WorkspaceSettingV2BooleanVal(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2BooleanVal.property.value">value</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/workspace_setting_v2#value WorkspaceSettingV2#value}. |
+| <code><a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2BooleanVal.property.value">value</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/workspace_setting_v2#value WorkspaceSettingV2#value}. |
 
 ---
 
@@ -2343,7 +2473,7 @@ value: bool | IResolvable
 
 - *Type:* bool | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/workspace_setting_v2#value WorkspaceSettingV2#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/workspace_setting_v2#value WorkspaceSettingV2#value}.
 
 ---
 
@@ -2363,7 +2493,7 @@ workspaceSettingV2.WorkspaceSettingV2CollaborationPlatformConnectivity(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2CollaborationPlatformConnectivity.property.connectivity">connectivity</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/workspace_setting_v2#connectivity WorkspaceSettingV2#connectivity}. |
+| <code><a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2CollaborationPlatformConnectivity.property.connectivity">connectivity</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/workspace_setting_v2#connectivity WorkspaceSettingV2#connectivity}. |
 
 ---
 
@@ -2375,7 +2505,7 @@ connectivity: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/workspace_setting_v2#connectivity WorkspaceSettingV2#connectivity}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/workspace_setting_v2#connectivity WorkspaceSettingV2#connectivity}.
 
 ---
 
@@ -2405,13 +2535,15 @@ workspaceSettingV2.WorkspaceSettingV2Config(
   effective_automatic_cluster_update_workspace: WorkspaceSettingV2EffectiveAutomaticClusterUpdateWorkspace = None,
   effective_personal_compute: WorkspaceSettingV2EffectivePersonalCompute = None,
   effective_restrict_workspace_admins: WorkspaceSettingV2EffectiveRestrictWorkspaceAdmins = None,
+  effective_workspace_label: WorkspaceSettingV2EffectiveWorkspaceLabel = None,
   integer_val: WorkspaceSettingV2IntegerVal = None,
   name: str = None,
   operational_email_custom_recipient: WorkspaceSettingV2OperationalEmailCustomRecipient = None,
   personal_compute: WorkspaceSettingV2PersonalCompute = None,
   provider_config: WorkspaceSettingV2ProviderConfig = None,
   restrict_workspace_admins: WorkspaceSettingV2RestrictWorkspaceAdmins = None,
-  string_val: WorkspaceSettingV2StringVal = None
+  string_val: WorkspaceSettingV2StringVal = None,
+  workspace_label: WorkspaceSettingV2WorkspaceLabel = None
 )
 ```
 
@@ -2426,24 +2558,26 @@ workspaceSettingV2.WorkspaceSettingV2Config(
 | <code><a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2Config.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2Config.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2Config.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2Config.property.aibiDashboardEmbeddingAccessPolicy">aibi_dashboard_embedding_access_policy</a></code> | <code><a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2AibiDashboardEmbeddingAccessPolicy">WorkspaceSettingV2AibiDashboardEmbeddingAccessPolicy</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/workspace_setting_v2#aibi_dashboard_embedding_access_policy WorkspaceSettingV2#aibi_dashboard_embedding_access_policy}. |
-| <code><a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2Config.property.aibiDashboardEmbeddingApprovedDomains">aibi_dashboard_embedding_approved_domains</a></code> | <code><a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2AibiDashboardEmbeddingApprovedDomains">WorkspaceSettingV2AibiDashboardEmbeddingApprovedDomains</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/workspace_setting_v2#aibi_dashboard_embedding_approved_domains WorkspaceSettingV2#aibi_dashboard_embedding_approved_domains}. |
-| <code><a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2Config.property.allowedAppsUserApiScopes">allowed_apps_user_api_scopes</a></code> | <code><a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2AllowedAppsUserApiScopes">WorkspaceSettingV2AllowedAppsUserApiScopes</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/workspace_setting_v2#allowed_apps_user_api_scopes WorkspaceSettingV2#allowed_apps_user_api_scopes}. |
-| <code><a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2Config.property.automaticClusterUpdateWorkspace">automatic_cluster_update_workspace</a></code> | <code><a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2AutomaticClusterUpdateWorkspace">WorkspaceSettingV2AutomaticClusterUpdateWorkspace</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/workspace_setting_v2#automatic_cluster_update_workspace WorkspaceSettingV2#automatic_cluster_update_workspace}. |
-| <code><a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2Config.property.booleanVal">boolean_val</a></code> | <code><a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2BooleanVal">WorkspaceSettingV2BooleanVal</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/workspace_setting_v2#boolean_val WorkspaceSettingV2#boolean_val}. |
-| <code><a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2Config.property.collaborationPlatformConnectivity">collaboration_platform_connectivity</a></code> | <code><a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2CollaborationPlatformConnectivity">WorkspaceSettingV2CollaborationPlatformConnectivity</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/workspace_setting_v2#collaboration_platform_connectivity WorkspaceSettingV2#collaboration_platform_connectivity}. |
-| <code><a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2Config.property.effectiveAibiDashboardEmbeddingAccessPolicy">effective_aibi_dashboard_embedding_access_policy</a></code> | <code><a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2EffectiveAibiDashboardEmbeddingAccessPolicy">WorkspaceSettingV2EffectiveAibiDashboardEmbeddingAccessPolicy</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/workspace_setting_v2#effective_aibi_dashboard_embedding_access_policy WorkspaceSettingV2#effective_aibi_dashboard_embedding_access_policy}. |
-| <code><a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2Config.property.effectiveAibiDashboardEmbeddingApprovedDomains">effective_aibi_dashboard_embedding_approved_domains</a></code> | <code><a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2EffectiveAibiDashboardEmbeddingApprovedDomains">WorkspaceSettingV2EffectiveAibiDashboardEmbeddingApprovedDomains</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/workspace_setting_v2#effective_aibi_dashboard_embedding_approved_domains WorkspaceSettingV2#effective_aibi_dashboard_embedding_approved_domains}. |
-| <code><a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2Config.property.effectiveAutomaticClusterUpdateWorkspace">effective_automatic_cluster_update_workspace</a></code> | <code><a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2EffectiveAutomaticClusterUpdateWorkspace">WorkspaceSettingV2EffectiveAutomaticClusterUpdateWorkspace</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/workspace_setting_v2#effective_automatic_cluster_update_workspace WorkspaceSettingV2#effective_automatic_cluster_update_workspace}. |
-| <code><a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2Config.property.effectivePersonalCompute">effective_personal_compute</a></code> | <code><a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2EffectivePersonalCompute">WorkspaceSettingV2EffectivePersonalCompute</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/workspace_setting_v2#effective_personal_compute WorkspaceSettingV2#effective_personal_compute}. |
-| <code><a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2Config.property.effectiveRestrictWorkspaceAdmins">effective_restrict_workspace_admins</a></code> | <code><a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2EffectiveRestrictWorkspaceAdmins">WorkspaceSettingV2EffectiveRestrictWorkspaceAdmins</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/workspace_setting_v2#effective_restrict_workspace_admins WorkspaceSettingV2#effective_restrict_workspace_admins}. |
-| <code><a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2Config.property.integerVal">integer_val</a></code> | <code><a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2IntegerVal">WorkspaceSettingV2IntegerVal</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/workspace_setting_v2#integer_val WorkspaceSettingV2#integer_val}. |
-| <code><a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2Config.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/workspace_setting_v2#name WorkspaceSettingV2#name}. |
-| <code><a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2Config.property.operationalEmailCustomRecipient">operational_email_custom_recipient</a></code> | <code><a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2OperationalEmailCustomRecipient">WorkspaceSettingV2OperationalEmailCustomRecipient</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/workspace_setting_v2#operational_email_custom_recipient WorkspaceSettingV2#operational_email_custom_recipient}. |
-| <code><a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2Config.property.personalCompute">personal_compute</a></code> | <code><a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2PersonalCompute">WorkspaceSettingV2PersonalCompute</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/workspace_setting_v2#personal_compute WorkspaceSettingV2#personal_compute}. |
-| <code><a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2Config.property.providerConfig">provider_config</a></code> | <code><a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2ProviderConfig">WorkspaceSettingV2ProviderConfig</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/workspace_setting_v2#provider_config WorkspaceSettingV2#provider_config}. |
-| <code><a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2Config.property.restrictWorkspaceAdmins">restrict_workspace_admins</a></code> | <code><a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2RestrictWorkspaceAdmins">WorkspaceSettingV2RestrictWorkspaceAdmins</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/workspace_setting_v2#restrict_workspace_admins WorkspaceSettingV2#restrict_workspace_admins}. |
-| <code><a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2Config.property.stringVal">string_val</a></code> | <code><a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2StringVal">WorkspaceSettingV2StringVal</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/workspace_setting_v2#string_val WorkspaceSettingV2#string_val}. |
+| <code><a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2Config.property.aibiDashboardEmbeddingAccessPolicy">aibi_dashboard_embedding_access_policy</a></code> | <code><a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2AibiDashboardEmbeddingAccessPolicy">WorkspaceSettingV2AibiDashboardEmbeddingAccessPolicy</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/workspace_setting_v2#aibi_dashboard_embedding_access_policy WorkspaceSettingV2#aibi_dashboard_embedding_access_policy}. |
+| <code><a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2Config.property.aibiDashboardEmbeddingApprovedDomains">aibi_dashboard_embedding_approved_domains</a></code> | <code><a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2AibiDashboardEmbeddingApprovedDomains">WorkspaceSettingV2AibiDashboardEmbeddingApprovedDomains</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/workspace_setting_v2#aibi_dashboard_embedding_approved_domains WorkspaceSettingV2#aibi_dashboard_embedding_approved_domains}. |
+| <code><a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2Config.property.allowedAppsUserApiScopes">allowed_apps_user_api_scopes</a></code> | <code><a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2AllowedAppsUserApiScopes">WorkspaceSettingV2AllowedAppsUserApiScopes</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/workspace_setting_v2#allowed_apps_user_api_scopes WorkspaceSettingV2#allowed_apps_user_api_scopes}. |
+| <code><a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2Config.property.automaticClusterUpdateWorkspace">automatic_cluster_update_workspace</a></code> | <code><a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2AutomaticClusterUpdateWorkspace">WorkspaceSettingV2AutomaticClusterUpdateWorkspace</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/workspace_setting_v2#automatic_cluster_update_workspace WorkspaceSettingV2#automatic_cluster_update_workspace}. |
+| <code><a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2Config.property.booleanVal">boolean_val</a></code> | <code><a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2BooleanVal">WorkspaceSettingV2BooleanVal</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/workspace_setting_v2#boolean_val WorkspaceSettingV2#boolean_val}. |
+| <code><a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2Config.property.collaborationPlatformConnectivity">collaboration_platform_connectivity</a></code> | <code><a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2CollaborationPlatformConnectivity">WorkspaceSettingV2CollaborationPlatformConnectivity</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/workspace_setting_v2#collaboration_platform_connectivity WorkspaceSettingV2#collaboration_platform_connectivity}. |
+| <code><a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2Config.property.effectiveAibiDashboardEmbeddingAccessPolicy">effective_aibi_dashboard_embedding_access_policy</a></code> | <code><a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2EffectiveAibiDashboardEmbeddingAccessPolicy">WorkspaceSettingV2EffectiveAibiDashboardEmbeddingAccessPolicy</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/workspace_setting_v2#effective_aibi_dashboard_embedding_access_policy WorkspaceSettingV2#effective_aibi_dashboard_embedding_access_policy}. |
+| <code><a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2Config.property.effectiveAibiDashboardEmbeddingApprovedDomains">effective_aibi_dashboard_embedding_approved_domains</a></code> | <code><a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2EffectiveAibiDashboardEmbeddingApprovedDomains">WorkspaceSettingV2EffectiveAibiDashboardEmbeddingApprovedDomains</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/workspace_setting_v2#effective_aibi_dashboard_embedding_approved_domains WorkspaceSettingV2#effective_aibi_dashboard_embedding_approved_domains}. |
+| <code><a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2Config.property.effectiveAutomaticClusterUpdateWorkspace">effective_automatic_cluster_update_workspace</a></code> | <code><a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2EffectiveAutomaticClusterUpdateWorkspace">WorkspaceSettingV2EffectiveAutomaticClusterUpdateWorkspace</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/workspace_setting_v2#effective_automatic_cluster_update_workspace WorkspaceSettingV2#effective_automatic_cluster_update_workspace}. |
+| <code><a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2Config.property.effectivePersonalCompute">effective_personal_compute</a></code> | <code><a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2EffectivePersonalCompute">WorkspaceSettingV2EffectivePersonalCompute</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/workspace_setting_v2#effective_personal_compute WorkspaceSettingV2#effective_personal_compute}. |
+| <code><a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2Config.property.effectiveRestrictWorkspaceAdmins">effective_restrict_workspace_admins</a></code> | <code><a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2EffectiveRestrictWorkspaceAdmins">WorkspaceSettingV2EffectiveRestrictWorkspaceAdmins</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/workspace_setting_v2#effective_restrict_workspace_admins WorkspaceSettingV2#effective_restrict_workspace_admins}. |
+| <code><a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2Config.property.effectiveWorkspaceLabel">effective_workspace_label</a></code> | <code><a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2EffectiveWorkspaceLabel">WorkspaceSettingV2EffectiveWorkspaceLabel</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/workspace_setting_v2#effective_workspace_label WorkspaceSettingV2#effective_workspace_label}. |
+| <code><a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2Config.property.integerVal">integer_val</a></code> | <code><a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2IntegerVal">WorkspaceSettingV2IntegerVal</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/workspace_setting_v2#integer_val WorkspaceSettingV2#integer_val}. |
+| <code><a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2Config.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/workspace_setting_v2#name WorkspaceSettingV2#name}. |
+| <code><a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2Config.property.operationalEmailCustomRecipient">operational_email_custom_recipient</a></code> | <code><a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2OperationalEmailCustomRecipient">WorkspaceSettingV2OperationalEmailCustomRecipient</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/workspace_setting_v2#operational_email_custom_recipient WorkspaceSettingV2#operational_email_custom_recipient}. |
+| <code><a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2Config.property.personalCompute">personal_compute</a></code> | <code><a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2PersonalCompute">WorkspaceSettingV2PersonalCompute</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/workspace_setting_v2#personal_compute WorkspaceSettingV2#personal_compute}. |
+| <code><a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2Config.property.providerConfig">provider_config</a></code> | <code><a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2ProviderConfig">WorkspaceSettingV2ProviderConfig</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/workspace_setting_v2#provider_config WorkspaceSettingV2#provider_config}. |
+| <code><a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2Config.property.restrictWorkspaceAdmins">restrict_workspace_admins</a></code> | <code><a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2RestrictWorkspaceAdmins">WorkspaceSettingV2RestrictWorkspaceAdmins</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/workspace_setting_v2#restrict_workspace_admins WorkspaceSettingV2#restrict_workspace_admins}. |
+| <code><a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2Config.property.stringVal">string_val</a></code> | <code><a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2StringVal">WorkspaceSettingV2StringVal</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/workspace_setting_v2#string_val WorkspaceSettingV2#string_val}. |
+| <code><a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2Config.property.workspaceLabel">workspace_label</a></code> | <code><a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2WorkspaceLabel">WorkspaceSettingV2WorkspaceLabel</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/workspace_setting_v2#workspace_label WorkspaceSettingV2#workspace_label}. |
 
 ---
 
@@ -2525,7 +2659,7 @@ aibi_dashboard_embedding_access_policy: WorkspaceSettingV2AibiDashboardEmbedding
 
 - *Type:* <a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2AibiDashboardEmbeddingAccessPolicy">WorkspaceSettingV2AibiDashboardEmbeddingAccessPolicy</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/workspace_setting_v2#aibi_dashboard_embedding_access_policy WorkspaceSettingV2#aibi_dashboard_embedding_access_policy}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/workspace_setting_v2#aibi_dashboard_embedding_access_policy WorkspaceSettingV2#aibi_dashboard_embedding_access_policy}.
 
 ---
 
@@ -2537,7 +2671,7 @@ aibi_dashboard_embedding_approved_domains: WorkspaceSettingV2AibiDashboardEmbedd
 
 - *Type:* <a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2AibiDashboardEmbeddingApprovedDomains">WorkspaceSettingV2AibiDashboardEmbeddingApprovedDomains</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/workspace_setting_v2#aibi_dashboard_embedding_approved_domains WorkspaceSettingV2#aibi_dashboard_embedding_approved_domains}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/workspace_setting_v2#aibi_dashboard_embedding_approved_domains WorkspaceSettingV2#aibi_dashboard_embedding_approved_domains}.
 
 ---
 
@@ -2549,7 +2683,7 @@ allowed_apps_user_api_scopes: WorkspaceSettingV2AllowedAppsUserApiScopes
 
 - *Type:* <a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2AllowedAppsUserApiScopes">WorkspaceSettingV2AllowedAppsUserApiScopes</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/workspace_setting_v2#allowed_apps_user_api_scopes WorkspaceSettingV2#allowed_apps_user_api_scopes}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/workspace_setting_v2#allowed_apps_user_api_scopes WorkspaceSettingV2#allowed_apps_user_api_scopes}.
 
 ---
 
@@ -2561,7 +2695,7 @@ automatic_cluster_update_workspace: WorkspaceSettingV2AutomaticClusterUpdateWork
 
 - *Type:* <a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2AutomaticClusterUpdateWorkspace">WorkspaceSettingV2AutomaticClusterUpdateWorkspace</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/workspace_setting_v2#automatic_cluster_update_workspace WorkspaceSettingV2#automatic_cluster_update_workspace}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/workspace_setting_v2#automatic_cluster_update_workspace WorkspaceSettingV2#automatic_cluster_update_workspace}.
 
 ---
 
@@ -2573,7 +2707,7 @@ boolean_val: WorkspaceSettingV2BooleanVal
 
 - *Type:* <a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2BooleanVal">WorkspaceSettingV2BooleanVal</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/workspace_setting_v2#boolean_val WorkspaceSettingV2#boolean_val}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/workspace_setting_v2#boolean_val WorkspaceSettingV2#boolean_val}.
 
 ---
 
@@ -2585,7 +2719,7 @@ collaboration_platform_connectivity: WorkspaceSettingV2CollaborationPlatformConn
 
 - *Type:* <a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2CollaborationPlatformConnectivity">WorkspaceSettingV2CollaborationPlatformConnectivity</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/workspace_setting_v2#collaboration_platform_connectivity WorkspaceSettingV2#collaboration_platform_connectivity}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/workspace_setting_v2#collaboration_platform_connectivity WorkspaceSettingV2#collaboration_platform_connectivity}.
 
 ---
 
@@ -2597,7 +2731,7 @@ effective_aibi_dashboard_embedding_access_policy: WorkspaceSettingV2EffectiveAib
 
 - *Type:* <a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2EffectiveAibiDashboardEmbeddingAccessPolicy">WorkspaceSettingV2EffectiveAibiDashboardEmbeddingAccessPolicy</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/workspace_setting_v2#effective_aibi_dashboard_embedding_access_policy WorkspaceSettingV2#effective_aibi_dashboard_embedding_access_policy}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/workspace_setting_v2#effective_aibi_dashboard_embedding_access_policy WorkspaceSettingV2#effective_aibi_dashboard_embedding_access_policy}.
 
 ---
 
@@ -2609,7 +2743,7 @@ effective_aibi_dashboard_embedding_approved_domains: WorkspaceSettingV2Effective
 
 - *Type:* <a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2EffectiveAibiDashboardEmbeddingApprovedDomains">WorkspaceSettingV2EffectiveAibiDashboardEmbeddingApprovedDomains</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/workspace_setting_v2#effective_aibi_dashboard_embedding_approved_domains WorkspaceSettingV2#effective_aibi_dashboard_embedding_approved_domains}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/workspace_setting_v2#effective_aibi_dashboard_embedding_approved_domains WorkspaceSettingV2#effective_aibi_dashboard_embedding_approved_domains}.
 
 ---
 
@@ -2621,7 +2755,7 @@ effective_automatic_cluster_update_workspace: WorkspaceSettingV2EffectiveAutomat
 
 - *Type:* <a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2EffectiveAutomaticClusterUpdateWorkspace">WorkspaceSettingV2EffectiveAutomaticClusterUpdateWorkspace</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/workspace_setting_v2#effective_automatic_cluster_update_workspace WorkspaceSettingV2#effective_automatic_cluster_update_workspace}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/workspace_setting_v2#effective_automatic_cluster_update_workspace WorkspaceSettingV2#effective_automatic_cluster_update_workspace}.
 
 ---
 
@@ -2633,7 +2767,7 @@ effective_personal_compute: WorkspaceSettingV2EffectivePersonalCompute
 
 - *Type:* <a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2EffectivePersonalCompute">WorkspaceSettingV2EffectivePersonalCompute</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/workspace_setting_v2#effective_personal_compute WorkspaceSettingV2#effective_personal_compute}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/workspace_setting_v2#effective_personal_compute WorkspaceSettingV2#effective_personal_compute}.
 
 ---
 
@@ -2645,7 +2779,19 @@ effective_restrict_workspace_admins: WorkspaceSettingV2EffectiveRestrictWorkspac
 
 - *Type:* <a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2EffectiveRestrictWorkspaceAdmins">WorkspaceSettingV2EffectiveRestrictWorkspaceAdmins</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/workspace_setting_v2#effective_restrict_workspace_admins WorkspaceSettingV2#effective_restrict_workspace_admins}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/workspace_setting_v2#effective_restrict_workspace_admins WorkspaceSettingV2#effective_restrict_workspace_admins}.
+
+---
+
+##### `effective_workspace_label`<sup>Optional</sup> <a name="effective_workspace_label" id="@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2Config.property.effectiveWorkspaceLabel"></a>
+
+```python
+effective_workspace_label: WorkspaceSettingV2EffectiveWorkspaceLabel
+```
+
+- *Type:* <a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2EffectiveWorkspaceLabel">WorkspaceSettingV2EffectiveWorkspaceLabel</a>
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/workspace_setting_v2#effective_workspace_label WorkspaceSettingV2#effective_workspace_label}.
 
 ---
 
@@ -2657,7 +2803,7 @@ integer_val: WorkspaceSettingV2IntegerVal
 
 - *Type:* <a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2IntegerVal">WorkspaceSettingV2IntegerVal</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/workspace_setting_v2#integer_val WorkspaceSettingV2#integer_val}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/workspace_setting_v2#integer_val WorkspaceSettingV2#integer_val}.
 
 ---
 
@@ -2669,7 +2815,7 @@ name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/workspace_setting_v2#name WorkspaceSettingV2#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/workspace_setting_v2#name WorkspaceSettingV2#name}.
 
 ---
 
@@ -2681,7 +2827,7 @@ operational_email_custom_recipient: WorkspaceSettingV2OperationalEmailCustomReci
 
 - *Type:* <a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2OperationalEmailCustomRecipient">WorkspaceSettingV2OperationalEmailCustomRecipient</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/workspace_setting_v2#operational_email_custom_recipient WorkspaceSettingV2#operational_email_custom_recipient}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/workspace_setting_v2#operational_email_custom_recipient WorkspaceSettingV2#operational_email_custom_recipient}.
 
 ---
 
@@ -2693,7 +2839,7 @@ personal_compute: WorkspaceSettingV2PersonalCompute
 
 - *Type:* <a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2PersonalCompute">WorkspaceSettingV2PersonalCompute</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/workspace_setting_v2#personal_compute WorkspaceSettingV2#personal_compute}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/workspace_setting_v2#personal_compute WorkspaceSettingV2#personal_compute}.
 
 ---
 
@@ -2705,7 +2851,7 @@ provider_config: WorkspaceSettingV2ProviderConfig
 
 - *Type:* <a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2ProviderConfig">WorkspaceSettingV2ProviderConfig</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/workspace_setting_v2#provider_config WorkspaceSettingV2#provider_config}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/workspace_setting_v2#provider_config WorkspaceSettingV2#provider_config}.
 
 ---
 
@@ -2717,7 +2863,7 @@ restrict_workspace_admins: WorkspaceSettingV2RestrictWorkspaceAdmins
 
 - *Type:* <a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2RestrictWorkspaceAdmins">WorkspaceSettingV2RestrictWorkspaceAdmins</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/workspace_setting_v2#restrict_workspace_admins WorkspaceSettingV2#restrict_workspace_admins}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/workspace_setting_v2#restrict_workspace_admins WorkspaceSettingV2#restrict_workspace_admins}.
 
 ---
 
@@ -2729,7 +2875,19 @@ string_val: WorkspaceSettingV2StringVal
 
 - *Type:* <a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2StringVal">WorkspaceSettingV2StringVal</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/workspace_setting_v2#string_val WorkspaceSettingV2#string_val}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/workspace_setting_v2#string_val WorkspaceSettingV2#string_val}.
+
+---
+
+##### `workspace_label`<sup>Optional</sup> <a name="workspace_label" id="@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2Config.property.workspaceLabel"></a>
+
+```python
+workspace_label: WorkspaceSettingV2WorkspaceLabel
+```
+
+- *Type:* <a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2WorkspaceLabel">WorkspaceSettingV2WorkspaceLabel</a>
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/workspace_setting_v2#workspace_label WorkspaceSettingV2#workspace_label}.
 
 ---
 
@@ -2749,7 +2907,7 @@ workspaceSettingV2.WorkspaceSettingV2EffectiveAibiDashboardEmbeddingAccessPolicy
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2EffectiveAibiDashboardEmbeddingAccessPolicy.property.accessPolicyType">access_policy_type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/workspace_setting_v2#access_policy_type WorkspaceSettingV2#access_policy_type}. |
+| <code><a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2EffectiveAibiDashboardEmbeddingAccessPolicy.property.accessPolicyType">access_policy_type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/workspace_setting_v2#access_policy_type WorkspaceSettingV2#access_policy_type}. |
 
 ---
 
@@ -2761,7 +2919,7 @@ access_policy_type: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/workspace_setting_v2#access_policy_type WorkspaceSettingV2#access_policy_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/workspace_setting_v2#access_policy_type WorkspaceSettingV2#access_policy_type}.
 
 ---
 
@@ -2781,7 +2939,7 @@ workspaceSettingV2.WorkspaceSettingV2EffectiveAibiDashboardEmbeddingApprovedDoma
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2EffectiveAibiDashboardEmbeddingApprovedDomains.property.approvedDomains">approved_domains</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/workspace_setting_v2#approved_domains WorkspaceSettingV2#approved_domains}. |
+| <code><a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2EffectiveAibiDashboardEmbeddingApprovedDomains.property.approvedDomains">approved_domains</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/workspace_setting_v2#approved_domains WorkspaceSettingV2#approved_domains}. |
 
 ---
 
@@ -2793,7 +2951,7 @@ approved_domains: typing.List[str]
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/workspace_setting_v2#approved_domains WorkspaceSettingV2#approved_domains}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/workspace_setting_v2#approved_domains WorkspaceSettingV2#approved_domains}.
 
 ---
 
@@ -2813,7 +2971,7 @@ workspaceSettingV2.WorkspaceSettingV2EffectiveAllowedAppsUserApiScopes(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2EffectiveAllowedAppsUserApiScopes.property.allowedScopes">allowed_scopes</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/workspace_setting_v2#allowed_scopes WorkspaceSettingV2#allowed_scopes}. |
+| <code><a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2EffectiveAllowedAppsUserApiScopes.property.allowedScopes">allowed_scopes</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/workspace_setting_v2#allowed_scopes WorkspaceSettingV2#allowed_scopes}. |
 
 ---
 
@@ -2825,7 +2983,7 @@ allowed_scopes: typing.List[str]
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/workspace_setting_v2#allowed_scopes WorkspaceSettingV2#allowed_scopes}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/workspace_setting_v2#allowed_scopes WorkspaceSettingV2#allowed_scopes}.
 
 ---
 
@@ -2849,11 +3007,11 @@ workspaceSettingV2.WorkspaceSettingV2EffectiveAutomaticClusterUpdateWorkspace(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2EffectiveAutomaticClusterUpdateWorkspace.property.canToggle">can_toggle</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/workspace_setting_v2#can_toggle WorkspaceSettingV2#can_toggle}. |
-| <code><a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2EffectiveAutomaticClusterUpdateWorkspace.property.enabled">enabled</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/workspace_setting_v2#enabled WorkspaceSettingV2#enabled}. |
-| <code><a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2EffectiveAutomaticClusterUpdateWorkspace.property.enablementDetails">enablement_details</a></code> | <code><a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2EffectiveAutomaticClusterUpdateWorkspaceEnablementDetails">WorkspaceSettingV2EffectiveAutomaticClusterUpdateWorkspaceEnablementDetails</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/workspace_setting_v2#enablement_details WorkspaceSettingV2#enablement_details}. |
-| <code><a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2EffectiveAutomaticClusterUpdateWorkspace.property.maintenanceWindow">maintenance_window</a></code> | <code><a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2EffectiveAutomaticClusterUpdateWorkspaceMaintenanceWindow">WorkspaceSettingV2EffectiveAutomaticClusterUpdateWorkspaceMaintenanceWindow</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/workspace_setting_v2#maintenance_window WorkspaceSettingV2#maintenance_window}. |
-| <code><a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2EffectiveAutomaticClusterUpdateWorkspace.property.restartEvenIfNoUpdatesAvailable">restart_even_if_no_updates_available</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/workspace_setting_v2#restart_even_if_no_updates_available WorkspaceSettingV2#restart_even_if_no_updates_available}. |
+| <code><a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2EffectiveAutomaticClusterUpdateWorkspace.property.canToggle">can_toggle</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/workspace_setting_v2#can_toggle WorkspaceSettingV2#can_toggle}. |
+| <code><a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2EffectiveAutomaticClusterUpdateWorkspace.property.enabled">enabled</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/workspace_setting_v2#enabled WorkspaceSettingV2#enabled}. |
+| <code><a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2EffectiveAutomaticClusterUpdateWorkspace.property.enablementDetails">enablement_details</a></code> | <code><a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2EffectiveAutomaticClusterUpdateWorkspaceEnablementDetails">WorkspaceSettingV2EffectiveAutomaticClusterUpdateWorkspaceEnablementDetails</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/workspace_setting_v2#enablement_details WorkspaceSettingV2#enablement_details}. |
+| <code><a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2EffectiveAutomaticClusterUpdateWorkspace.property.maintenanceWindow">maintenance_window</a></code> | <code><a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2EffectiveAutomaticClusterUpdateWorkspaceMaintenanceWindow">WorkspaceSettingV2EffectiveAutomaticClusterUpdateWorkspaceMaintenanceWindow</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/workspace_setting_v2#maintenance_window WorkspaceSettingV2#maintenance_window}. |
+| <code><a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2EffectiveAutomaticClusterUpdateWorkspace.property.restartEvenIfNoUpdatesAvailable">restart_even_if_no_updates_available</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/workspace_setting_v2#restart_even_if_no_updates_available WorkspaceSettingV2#restart_even_if_no_updates_available}. |
 
 ---
 
@@ -2865,7 +3023,7 @@ can_toggle: bool | IResolvable
 
 - *Type:* bool | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/workspace_setting_v2#can_toggle WorkspaceSettingV2#can_toggle}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/workspace_setting_v2#can_toggle WorkspaceSettingV2#can_toggle}.
 
 ---
 
@@ -2877,7 +3035,7 @@ enabled: bool | IResolvable
 
 - *Type:* bool | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/workspace_setting_v2#enabled WorkspaceSettingV2#enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/workspace_setting_v2#enabled WorkspaceSettingV2#enabled}.
 
 ---
 
@@ -2889,7 +3047,7 @@ enablement_details: WorkspaceSettingV2EffectiveAutomaticClusterUpdateWorkspaceEn
 
 - *Type:* <a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2EffectiveAutomaticClusterUpdateWorkspaceEnablementDetails">WorkspaceSettingV2EffectiveAutomaticClusterUpdateWorkspaceEnablementDetails</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/workspace_setting_v2#enablement_details WorkspaceSettingV2#enablement_details}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/workspace_setting_v2#enablement_details WorkspaceSettingV2#enablement_details}.
 
 ---
 
@@ -2901,7 +3059,7 @@ maintenance_window: WorkspaceSettingV2EffectiveAutomaticClusterUpdateWorkspaceMa
 
 - *Type:* <a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2EffectiveAutomaticClusterUpdateWorkspaceMaintenanceWindow">WorkspaceSettingV2EffectiveAutomaticClusterUpdateWorkspaceMaintenanceWindow</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/workspace_setting_v2#maintenance_window WorkspaceSettingV2#maintenance_window}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/workspace_setting_v2#maintenance_window WorkspaceSettingV2#maintenance_window}.
 
 ---
 
@@ -2913,7 +3071,7 @@ restart_even_if_no_updates_available: bool | IResolvable
 
 - *Type:* bool | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/workspace_setting_v2#restart_even_if_no_updates_available WorkspaceSettingV2#restart_even_if_no_updates_available}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/workspace_setting_v2#restart_even_if_no_updates_available WorkspaceSettingV2#restart_even_if_no_updates_available}.
 
 ---
 
@@ -2935,9 +3093,9 @@ workspaceSettingV2.WorkspaceSettingV2EffectiveAutomaticClusterUpdateWorkspaceEna
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2EffectiveAutomaticClusterUpdateWorkspaceEnablementDetails.property.forcedForComplianceMode">forced_for_compliance_mode</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/workspace_setting_v2#forced_for_compliance_mode WorkspaceSettingV2#forced_for_compliance_mode}. |
-| <code><a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2EffectiveAutomaticClusterUpdateWorkspaceEnablementDetails.property.unavailableForDisabledEntitlement">unavailable_for_disabled_entitlement</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/workspace_setting_v2#unavailable_for_disabled_entitlement WorkspaceSettingV2#unavailable_for_disabled_entitlement}. |
-| <code><a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2EffectiveAutomaticClusterUpdateWorkspaceEnablementDetails.property.unavailableForNonEnterpriseTier">unavailable_for_non_enterprise_tier</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/workspace_setting_v2#unavailable_for_non_enterprise_tier WorkspaceSettingV2#unavailable_for_non_enterprise_tier}. |
+| <code><a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2EffectiveAutomaticClusterUpdateWorkspaceEnablementDetails.property.forcedForComplianceMode">forced_for_compliance_mode</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/workspace_setting_v2#forced_for_compliance_mode WorkspaceSettingV2#forced_for_compliance_mode}. |
+| <code><a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2EffectiveAutomaticClusterUpdateWorkspaceEnablementDetails.property.unavailableForDisabledEntitlement">unavailable_for_disabled_entitlement</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/workspace_setting_v2#unavailable_for_disabled_entitlement WorkspaceSettingV2#unavailable_for_disabled_entitlement}. |
+| <code><a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2EffectiveAutomaticClusterUpdateWorkspaceEnablementDetails.property.unavailableForNonEnterpriseTier">unavailable_for_non_enterprise_tier</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/workspace_setting_v2#unavailable_for_non_enterprise_tier WorkspaceSettingV2#unavailable_for_non_enterprise_tier}. |
 
 ---
 
@@ -2949,7 +3107,7 @@ forced_for_compliance_mode: bool | IResolvable
 
 - *Type:* bool | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/workspace_setting_v2#forced_for_compliance_mode WorkspaceSettingV2#forced_for_compliance_mode}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/workspace_setting_v2#forced_for_compliance_mode WorkspaceSettingV2#forced_for_compliance_mode}.
 
 ---
 
@@ -2961,7 +3119,7 @@ unavailable_for_disabled_entitlement: bool | IResolvable
 
 - *Type:* bool | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/workspace_setting_v2#unavailable_for_disabled_entitlement WorkspaceSettingV2#unavailable_for_disabled_entitlement}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/workspace_setting_v2#unavailable_for_disabled_entitlement WorkspaceSettingV2#unavailable_for_disabled_entitlement}.
 
 ---
 
@@ -2973,7 +3131,7 @@ unavailable_for_non_enterprise_tier: bool | IResolvable
 
 - *Type:* bool | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/workspace_setting_v2#unavailable_for_non_enterprise_tier WorkspaceSettingV2#unavailable_for_non_enterprise_tier}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/workspace_setting_v2#unavailable_for_non_enterprise_tier WorkspaceSettingV2#unavailable_for_non_enterprise_tier}.
 
 ---
 
@@ -2993,7 +3151,7 @@ workspaceSettingV2.WorkspaceSettingV2EffectiveAutomaticClusterUpdateWorkspaceMai
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2EffectiveAutomaticClusterUpdateWorkspaceMaintenanceWindow.property.weekDayBasedSchedule">week_day_based_schedule</a></code> | <code><a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2EffectiveAutomaticClusterUpdateWorkspaceMaintenanceWindowWeekDayBasedSchedule">WorkspaceSettingV2EffectiveAutomaticClusterUpdateWorkspaceMaintenanceWindowWeekDayBasedSchedule</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/workspace_setting_v2#week_day_based_schedule WorkspaceSettingV2#week_day_based_schedule}. |
+| <code><a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2EffectiveAutomaticClusterUpdateWorkspaceMaintenanceWindow.property.weekDayBasedSchedule">week_day_based_schedule</a></code> | <code><a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2EffectiveAutomaticClusterUpdateWorkspaceMaintenanceWindowWeekDayBasedSchedule">WorkspaceSettingV2EffectiveAutomaticClusterUpdateWorkspaceMaintenanceWindowWeekDayBasedSchedule</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/workspace_setting_v2#week_day_based_schedule WorkspaceSettingV2#week_day_based_schedule}. |
 
 ---
 
@@ -3005,7 +3163,7 @@ week_day_based_schedule: WorkspaceSettingV2EffectiveAutomaticClusterUpdateWorksp
 
 - *Type:* <a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2EffectiveAutomaticClusterUpdateWorkspaceMaintenanceWindowWeekDayBasedSchedule">WorkspaceSettingV2EffectiveAutomaticClusterUpdateWorkspaceMaintenanceWindowWeekDayBasedSchedule</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/workspace_setting_v2#week_day_based_schedule WorkspaceSettingV2#week_day_based_schedule}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/workspace_setting_v2#week_day_based_schedule WorkspaceSettingV2#week_day_based_schedule}.
 
 ---
 
@@ -3027,9 +3185,9 @@ workspaceSettingV2.WorkspaceSettingV2EffectiveAutomaticClusterUpdateWorkspaceMai
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2EffectiveAutomaticClusterUpdateWorkspaceMaintenanceWindowWeekDayBasedSchedule.property.dayOfWeek">day_of_week</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/workspace_setting_v2#day_of_week WorkspaceSettingV2#day_of_week}. |
-| <code><a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2EffectiveAutomaticClusterUpdateWorkspaceMaintenanceWindowWeekDayBasedSchedule.property.frequency">frequency</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/workspace_setting_v2#frequency WorkspaceSettingV2#frequency}. |
-| <code><a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2EffectiveAutomaticClusterUpdateWorkspaceMaintenanceWindowWeekDayBasedSchedule.property.windowStartTime">window_start_time</a></code> | <code><a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2EffectiveAutomaticClusterUpdateWorkspaceMaintenanceWindowWeekDayBasedScheduleWindowStartTime">WorkspaceSettingV2EffectiveAutomaticClusterUpdateWorkspaceMaintenanceWindowWeekDayBasedScheduleWindowStartTime</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/workspace_setting_v2#window_start_time WorkspaceSettingV2#window_start_time}. |
+| <code><a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2EffectiveAutomaticClusterUpdateWorkspaceMaintenanceWindowWeekDayBasedSchedule.property.dayOfWeek">day_of_week</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/workspace_setting_v2#day_of_week WorkspaceSettingV2#day_of_week}. |
+| <code><a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2EffectiveAutomaticClusterUpdateWorkspaceMaintenanceWindowWeekDayBasedSchedule.property.frequency">frequency</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/workspace_setting_v2#frequency WorkspaceSettingV2#frequency}. |
+| <code><a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2EffectiveAutomaticClusterUpdateWorkspaceMaintenanceWindowWeekDayBasedSchedule.property.windowStartTime">window_start_time</a></code> | <code><a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2EffectiveAutomaticClusterUpdateWorkspaceMaintenanceWindowWeekDayBasedScheduleWindowStartTime">WorkspaceSettingV2EffectiveAutomaticClusterUpdateWorkspaceMaintenanceWindowWeekDayBasedScheduleWindowStartTime</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/workspace_setting_v2#window_start_time WorkspaceSettingV2#window_start_time}. |
 
 ---
 
@@ -3041,7 +3199,7 @@ day_of_week: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/workspace_setting_v2#day_of_week WorkspaceSettingV2#day_of_week}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/workspace_setting_v2#day_of_week WorkspaceSettingV2#day_of_week}.
 
 ---
 
@@ -3053,7 +3211,7 @@ frequency: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/workspace_setting_v2#frequency WorkspaceSettingV2#frequency}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/workspace_setting_v2#frequency WorkspaceSettingV2#frequency}.
 
 ---
 
@@ -3065,7 +3223,7 @@ window_start_time: WorkspaceSettingV2EffectiveAutomaticClusterUpdateWorkspaceMai
 
 - *Type:* <a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2EffectiveAutomaticClusterUpdateWorkspaceMaintenanceWindowWeekDayBasedScheduleWindowStartTime">WorkspaceSettingV2EffectiveAutomaticClusterUpdateWorkspaceMaintenanceWindowWeekDayBasedScheduleWindowStartTime</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/workspace_setting_v2#window_start_time WorkspaceSettingV2#window_start_time}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/workspace_setting_v2#window_start_time WorkspaceSettingV2#window_start_time}.
 
 ---
 
@@ -3086,8 +3244,8 @@ workspaceSettingV2.WorkspaceSettingV2EffectiveAutomaticClusterUpdateWorkspaceMai
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2EffectiveAutomaticClusterUpdateWorkspaceMaintenanceWindowWeekDayBasedScheduleWindowStartTime.property.hours">hours</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/workspace_setting_v2#hours WorkspaceSettingV2#hours}. |
-| <code><a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2EffectiveAutomaticClusterUpdateWorkspaceMaintenanceWindowWeekDayBasedScheduleWindowStartTime.property.minutes">minutes</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/workspace_setting_v2#minutes WorkspaceSettingV2#minutes}. |
+| <code><a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2EffectiveAutomaticClusterUpdateWorkspaceMaintenanceWindowWeekDayBasedScheduleWindowStartTime.property.hours">hours</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/workspace_setting_v2#hours WorkspaceSettingV2#hours}. |
+| <code><a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2EffectiveAutomaticClusterUpdateWorkspaceMaintenanceWindowWeekDayBasedScheduleWindowStartTime.property.minutes">minutes</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/workspace_setting_v2#minutes WorkspaceSettingV2#minutes}. |
 
 ---
 
@@ -3099,7 +3257,7 @@ hours: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/workspace_setting_v2#hours WorkspaceSettingV2#hours}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/workspace_setting_v2#hours WorkspaceSettingV2#hours}.
 
 ---
 
@@ -3111,7 +3269,7 @@ minutes: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/workspace_setting_v2#minutes WorkspaceSettingV2#minutes}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/workspace_setting_v2#minutes WorkspaceSettingV2#minutes}.
 
 ---
 
@@ -3131,7 +3289,7 @@ workspaceSettingV2.WorkspaceSettingV2EffectiveBooleanVal(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2EffectiveBooleanVal.property.value">value</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/workspace_setting_v2#value WorkspaceSettingV2#value}. |
+| <code><a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2EffectiveBooleanVal.property.value">value</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/workspace_setting_v2#value WorkspaceSettingV2#value}. |
 
 ---
 
@@ -3143,7 +3301,7 @@ value: bool | IResolvable
 
 - *Type:* bool | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/workspace_setting_v2#value WorkspaceSettingV2#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/workspace_setting_v2#value WorkspaceSettingV2#value}.
 
 ---
 
@@ -3163,7 +3321,7 @@ workspaceSettingV2.WorkspaceSettingV2EffectiveCollaborationPlatformConnectivity(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2EffectiveCollaborationPlatformConnectivity.property.connectivity">connectivity</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/workspace_setting_v2#connectivity WorkspaceSettingV2#connectivity}. |
+| <code><a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2EffectiveCollaborationPlatformConnectivity.property.connectivity">connectivity</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/workspace_setting_v2#connectivity WorkspaceSettingV2#connectivity}. |
 
 ---
 
@@ -3175,7 +3333,7 @@ connectivity: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/workspace_setting_v2#connectivity WorkspaceSettingV2#connectivity}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/workspace_setting_v2#connectivity WorkspaceSettingV2#connectivity}.
 
 ---
 
@@ -3195,7 +3353,7 @@ workspaceSettingV2.WorkspaceSettingV2EffectiveIntegerVal(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2EffectiveIntegerVal.property.value">value</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/workspace_setting_v2#value WorkspaceSettingV2#value}. |
+| <code><a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2EffectiveIntegerVal.property.value">value</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/workspace_setting_v2#value WorkspaceSettingV2#value}. |
 
 ---
 
@@ -3207,7 +3365,7 @@ value: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/workspace_setting_v2#value WorkspaceSettingV2#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/workspace_setting_v2#value WorkspaceSettingV2#value}.
 
 ---
 
@@ -3227,7 +3385,7 @@ workspaceSettingV2.WorkspaceSettingV2EffectiveOperationalEmailCustomRecipient(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2EffectiveOperationalEmailCustomRecipient.property.email">email</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/workspace_setting_v2#email WorkspaceSettingV2#email}. |
+| <code><a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2EffectiveOperationalEmailCustomRecipient.property.email">email</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/workspace_setting_v2#email WorkspaceSettingV2#email}. |
 
 ---
 
@@ -3239,7 +3397,7 @@ email: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/workspace_setting_v2#email WorkspaceSettingV2#email}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/workspace_setting_v2#email WorkspaceSettingV2#email}.
 
 ---
 
@@ -3259,7 +3417,7 @@ workspaceSettingV2.WorkspaceSettingV2EffectivePersonalCompute(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2EffectivePersonalCompute.property.value">value</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/workspace_setting_v2#value WorkspaceSettingV2#value}. |
+| <code><a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2EffectivePersonalCompute.property.value">value</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/workspace_setting_v2#value WorkspaceSettingV2#value}. |
 
 ---
 
@@ -3271,7 +3429,7 @@ value: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/workspace_setting_v2#value WorkspaceSettingV2#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/workspace_setting_v2#value WorkspaceSettingV2#value}.
 
 ---
 
@@ -3292,8 +3450,8 @@ workspaceSettingV2.WorkspaceSettingV2EffectiveRestrictWorkspaceAdmins(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2EffectiveRestrictWorkspaceAdmins.property.status">status</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/workspace_setting_v2#status WorkspaceSettingV2#status}. |
-| <code><a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2EffectiveRestrictWorkspaceAdmins.property.disableGovTagCreation">disable_gov_tag_creation</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/workspace_setting_v2#disable_gov_tag_creation WorkspaceSettingV2#disable_gov_tag_creation}. |
+| <code><a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2EffectiveRestrictWorkspaceAdmins.property.status">status</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/workspace_setting_v2#status WorkspaceSettingV2#status}. |
+| <code><a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2EffectiveRestrictWorkspaceAdmins.property.disableGovTagCreation">disable_gov_tag_creation</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/workspace_setting_v2#disable_gov_tag_creation WorkspaceSettingV2#disable_gov_tag_creation}. |
 
 ---
 
@@ -3305,7 +3463,7 @@ status: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/workspace_setting_v2#status WorkspaceSettingV2#status}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/workspace_setting_v2#status WorkspaceSettingV2#status}.
 
 ---
 
@@ -3317,7 +3475,7 @@ disable_gov_tag_creation: bool | IResolvable
 
 - *Type:* bool | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/workspace_setting_v2#disable_gov_tag_creation WorkspaceSettingV2#disable_gov_tag_creation}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/workspace_setting_v2#disable_gov_tag_creation WorkspaceSettingV2#disable_gov_tag_creation}.
 
 ---
 
@@ -3337,7 +3495,7 @@ workspaceSettingV2.WorkspaceSettingV2EffectiveStringVal(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2EffectiveStringVal.property.value">value</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/workspace_setting_v2#value WorkspaceSettingV2#value}. |
+| <code><a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2EffectiveStringVal.property.value">value</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/workspace_setting_v2#value WorkspaceSettingV2#value}. |
 
 ---
 
@@ -3349,7 +3507,53 @@ value: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/workspace_setting_v2#value WorkspaceSettingV2#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/workspace_setting_v2#value WorkspaceSettingV2#value}.
+
+---
+
+### WorkspaceSettingV2EffectiveWorkspaceLabel <a name="WorkspaceSettingV2EffectiveWorkspaceLabel" id="@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2EffectiveWorkspaceLabel"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2EffectiveWorkspaceLabel.Initializer"></a>
+
+```python
+from cdktn_provider_databricks import workspace_setting_v2
+
+workspaceSettingV2.WorkspaceSettingV2EffectiveWorkspaceLabel(
+  color: str = None,
+  label: str = None
+)
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2EffectiveWorkspaceLabel.property.color">color</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/workspace_setting_v2#color WorkspaceSettingV2#color}. |
+| <code><a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2EffectiveWorkspaceLabel.property.label">label</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/workspace_setting_v2#label WorkspaceSettingV2#label}. |
+
+---
+
+##### `color`<sup>Optional</sup> <a name="color" id="@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2EffectiveWorkspaceLabel.property.color"></a>
+
+```python
+color: str
+```
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/workspace_setting_v2#color WorkspaceSettingV2#color}.
+
+---
+
+##### `label`<sup>Optional</sup> <a name="label" id="@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2EffectiveWorkspaceLabel.property.label"></a>
+
+```python
+label: str
+```
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/workspace_setting_v2#label WorkspaceSettingV2#label}.
 
 ---
 
@@ -3369,7 +3573,7 @@ workspaceSettingV2.WorkspaceSettingV2IntegerVal(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2IntegerVal.property.value">value</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/workspace_setting_v2#value WorkspaceSettingV2#value}. |
+| <code><a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2IntegerVal.property.value">value</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/workspace_setting_v2#value WorkspaceSettingV2#value}. |
 
 ---
 
@@ -3381,7 +3585,7 @@ value: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/workspace_setting_v2#value WorkspaceSettingV2#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/workspace_setting_v2#value WorkspaceSettingV2#value}.
 
 ---
 
@@ -3401,7 +3605,7 @@ workspaceSettingV2.WorkspaceSettingV2OperationalEmailCustomRecipient(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2OperationalEmailCustomRecipient.property.email">email</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/workspace_setting_v2#email WorkspaceSettingV2#email}. |
+| <code><a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2OperationalEmailCustomRecipient.property.email">email</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/workspace_setting_v2#email WorkspaceSettingV2#email}. |
 
 ---
 
@@ -3413,7 +3617,7 @@ email: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/workspace_setting_v2#email WorkspaceSettingV2#email}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/workspace_setting_v2#email WorkspaceSettingV2#email}.
 
 ---
 
@@ -3433,7 +3637,7 @@ workspaceSettingV2.WorkspaceSettingV2PersonalCompute(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2PersonalCompute.property.value">value</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/workspace_setting_v2#value WorkspaceSettingV2#value}. |
+| <code><a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2PersonalCompute.property.value">value</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/workspace_setting_v2#value WorkspaceSettingV2#value}. |
 
 ---
 
@@ -3445,7 +3649,7 @@ value: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/workspace_setting_v2#value WorkspaceSettingV2#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/workspace_setting_v2#value WorkspaceSettingV2#value}.
 
 ---
 
@@ -3465,7 +3669,7 @@ workspaceSettingV2.WorkspaceSettingV2ProviderConfig(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2ProviderConfig.property.workspaceId">workspace_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/workspace_setting_v2#workspace_id WorkspaceSettingV2#workspace_id}. |
+| <code><a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2ProviderConfig.property.workspaceId">workspace_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/workspace_setting_v2#workspace_id WorkspaceSettingV2#workspace_id}. |
 
 ---
 
@@ -3477,7 +3681,7 @@ workspace_id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/workspace_setting_v2#workspace_id WorkspaceSettingV2#workspace_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/workspace_setting_v2#workspace_id WorkspaceSettingV2#workspace_id}.
 
 ---
 
@@ -3498,8 +3702,8 @@ workspaceSettingV2.WorkspaceSettingV2RestrictWorkspaceAdmins(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2RestrictWorkspaceAdmins.property.status">status</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/workspace_setting_v2#status WorkspaceSettingV2#status}. |
-| <code><a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2RestrictWorkspaceAdmins.property.disableGovTagCreation">disable_gov_tag_creation</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/workspace_setting_v2#disable_gov_tag_creation WorkspaceSettingV2#disable_gov_tag_creation}. |
+| <code><a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2RestrictWorkspaceAdmins.property.status">status</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/workspace_setting_v2#status WorkspaceSettingV2#status}. |
+| <code><a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2RestrictWorkspaceAdmins.property.disableGovTagCreation">disable_gov_tag_creation</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/workspace_setting_v2#disable_gov_tag_creation WorkspaceSettingV2#disable_gov_tag_creation}. |
 
 ---
 
@@ -3511,7 +3715,7 @@ status: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/workspace_setting_v2#status WorkspaceSettingV2#status}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/workspace_setting_v2#status WorkspaceSettingV2#status}.
 
 ---
 
@@ -3523,7 +3727,7 @@ disable_gov_tag_creation: bool | IResolvable
 
 - *Type:* bool | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/workspace_setting_v2#disable_gov_tag_creation WorkspaceSettingV2#disable_gov_tag_creation}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/workspace_setting_v2#disable_gov_tag_creation WorkspaceSettingV2#disable_gov_tag_creation}.
 
 ---
 
@@ -3543,7 +3747,7 @@ workspaceSettingV2.WorkspaceSettingV2StringVal(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2StringVal.property.value">value</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/workspace_setting_v2#value WorkspaceSettingV2#value}. |
+| <code><a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2StringVal.property.value">value</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/workspace_setting_v2#value WorkspaceSettingV2#value}. |
 
 ---
 
@@ -3555,7 +3759,53 @@ value: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/workspace_setting_v2#value WorkspaceSettingV2#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/workspace_setting_v2#value WorkspaceSettingV2#value}.
+
+---
+
+### WorkspaceSettingV2WorkspaceLabel <a name="WorkspaceSettingV2WorkspaceLabel" id="@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2WorkspaceLabel"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2WorkspaceLabel.Initializer"></a>
+
+```python
+from cdktn_provider_databricks import workspace_setting_v2
+
+workspaceSettingV2.WorkspaceSettingV2WorkspaceLabel(
+  color: str = None,
+  label: str = None
+)
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2WorkspaceLabel.property.color">color</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/workspace_setting_v2#color WorkspaceSettingV2#color}. |
+| <code><a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2WorkspaceLabel.property.label">label</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/workspace_setting_v2#label WorkspaceSettingV2#label}. |
+
+---
+
+##### `color`<sup>Optional</sup> <a name="color" id="@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2WorkspaceLabel.property.color"></a>
+
+```python
+color: str
+```
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/workspace_setting_v2#color WorkspaceSettingV2#color}.
+
+---
+
+##### `label`<sup>Optional</sup> <a name="label" id="@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2WorkspaceLabel.property.label"></a>
+
+```python
+label: str
+```
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/workspace_setting_v2#label WorkspaceSettingV2#label}.
 
 ---
 
@@ -5068,7 +5318,7 @@ def put_week_day_based_schedule(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/workspace_setting_v2#day_of_week WorkspaceSettingV2#day_of_week}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/workspace_setting_v2#day_of_week WorkspaceSettingV2#day_of_week}.
 
 ---
 
@@ -5076,7 +5326,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/workspace_setting_v2#frequency WorkspaceSettingV2#frequency}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/workspace_setting_v2#frequency WorkspaceSettingV2#frequency}.
 
 ---
 
@@ -5084,7 +5334,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* <a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2AutomaticClusterUpdateWorkspaceMaintenanceWindowWeekDayBasedScheduleWindowStartTime">WorkspaceSettingV2AutomaticClusterUpdateWorkspaceMaintenanceWindowWeekDayBasedScheduleWindowStartTime</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/workspace_setting_v2#window_start_time WorkspaceSettingV2#window_start_time}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/workspace_setting_v2#window_start_time WorkspaceSettingV2#window_start_time}.
 
 ---
 
@@ -5407,7 +5657,7 @@ def put_window_start_time(
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/workspace_setting_v2#hours WorkspaceSettingV2#hours}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/workspace_setting_v2#hours WorkspaceSettingV2#hours}.
 
 ---
 
@@ -5415,7 +5665,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/workspace_setting_v2#minutes WorkspaceSettingV2#minutes}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/workspace_setting_v2#minutes WorkspaceSettingV2#minutes}.
 
 ---
 
@@ -6130,7 +6380,7 @@ def put_enablement_details(
 
 - *Type:* bool | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/workspace_setting_v2#forced_for_compliance_mode WorkspaceSettingV2#forced_for_compliance_mode}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/workspace_setting_v2#forced_for_compliance_mode WorkspaceSettingV2#forced_for_compliance_mode}.
 
 ---
 
@@ -6138,7 +6388,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* bool | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/workspace_setting_v2#unavailable_for_disabled_entitlement WorkspaceSettingV2#unavailable_for_disabled_entitlement}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/workspace_setting_v2#unavailable_for_disabled_entitlement WorkspaceSettingV2#unavailable_for_disabled_entitlement}.
 
 ---
 
@@ -6146,7 +6396,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* bool | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/workspace_setting_v2#unavailable_for_non_enterprise_tier WorkspaceSettingV2#unavailable_for_non_enterprise_tier}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/workspace_setting_v2#unavailable_for_non_enterprise_tier WorkspaceSettingV2#unavailable_for_non_enterprise_tier}.
 
 ---
 
@@ -6162,7 +6412,7 @@ def put_maintenance_window(
 
 - *Type:* <a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2AutomaticClusterUpdateWorkspaceMaintenanceWindowWeekDayBasedSchedule">WorkspaceSettingV2AutomaticClusterUpdateWorkspaceMaintenanceWindowWeekDayBasedSchedule</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/workspace_setting_v2#week_day_based_schedule WorkspaceSettingV2#week_day_based_schedule}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/workspace_setting_v2#week_day_based_schedule WorkspaceSettingV2#week_day_based_schedule}.
 
 ---
 
@@ -8458,7 +8708,7 @@ def put_week_day_based_schedule(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/workspace_setting_v2#day_of_week WorkspaceSettingV2#day_of_week}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/workspace_setting_v2#day_of_week WorkspaceSettingV2#day_of_week}.
 
 ---
 
@@ -8466,7 +8716,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/workspace_setting_v2#frequency WorkspaceSettingV2#frequency}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/workspace_setting_v2#frequency WorkspaceSettingV2#frequency}.
 
 ---
 
@@ -8474,7 +8724,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* <a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2EffectiveAutomaticClusterUpdateWorkspaceMaintenanceWindowWeekDayBasedScheduleWindowStartTime">WorkspaceSettingV2EffectiveAutomaticClusterUpdateWorkspaceMaintenanceWindowWeekDayBasedScheduleWindowStartTime</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/workspace_setting_v2#window_start_time WorkspaceSettingV2#window_start_time}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/workspace_setting_v2#window_start_time WorkspaceSettingV2#window_start_time}.
 
 ---
 
@@ -8797,7 +9047,7 @@ def put_window_start_time(
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/workspace_setting_v2#hours WorkspaceSettingV2#hours}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/workspace_setting_v2#hours WorkspaceSettingV2#hours}.
 
 ---
 
@@ -8805,7 +9055,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/workspace_setting_v2#minutes WorkspaceSettingV2#minutes}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/workspace_setting_v2#minutes WorkspaceSettingV2#minutes}.
 
 ---
 
@@ -9520,7 +9770,7 @@ def put_enablement_details(
 
 - *Type:* bool | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/workspace_setting_v2#forced_for_compliance_mode WorkspaceSettingV2#forced_for_compliance_mode}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/workspace_setting_v2#forced_for_compliance_mode WorkspaceSettingV2#forced_for_compliance_mode}.
 
 ---
 
@@ -9528,7 +9778,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* bool | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/workspace_setting_v2#unavailable_for_disabled_entitlement WorkspaceSettingV2#unavailable_for_disabled_entitlement}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/workspace_setting_v2#unavailable_for_disabled_entitlement WorkspaceSettingV2#unavailable_for_disabled_entitlement}.
 
 ---
 
@@ -9536,7 +9786,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* bool | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/workspace_setting_v2#unavailable_for_non_enterprise_tier WorkspaceSettingV2#unavailable_for_non_enterprise_tier}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/workspace_setting_v2#unavailable_for_non_enterprise_tier WorkspaceSettingV2#unavailable_for_non_enterprise_tier}.
 
 ---
 
@@ -9552,7 +9802,7 @@ def put_maintenance_window(
 
 - *Type:* <a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2EffectiveAutomaticClusterUpdateWorkspaceMaintenanceWindowWeekDayBasedSchedule">WorkspaceSettingV2EffectiveAutomaticClusterUpdateWorkspaceMaintenanceWindowWeekDayBasedSchedule</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/workspace_setting_v2#week_day_based_schedule WorkspaceSettingV2#week_day_based_schedule}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/workspace_setting_v2#week_day_based_schedule WorkspaceSettingV2#week_day_based_schedule}.
 
 ---
 
@@ -11878,6 +12128,338 @@ internal_value: WorkspaceSettingV2EffectiveStringVal
 ---
 
 
+### WorkspaceSettingV2EffectiveWorkspaceLabelOutputReference <a name="WorkspaceSettingV2EffectiveWorkspaceLabelOutputReference" id="@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2EffectiveWorkspaceLabelOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2EffectiveWorkspaceLabelOutputReference.Initializer"></a>
+
+```python
+from cdktn_provider_databricks import workspace_setting_v2
+
+workspaceSettingV2.WorkspaceSettingV2EffectiveWorkspaceLabelOutputReference(
+  terraform_resource: IInterpolatingParent,
+  terraform_attribute: str
+)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2EffectiveWorkspaceLabelOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2EffectiveWorkspaceLabelOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2EffectiveWorkspaceLabelOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2EffectiveWorkspaceLabelOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2EffectiveWorkspaceLabelOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2EffectiveWorkspaceLabelOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2EffectiveWorkspaceLabelOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2EffectiveWorkspaceLabelOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2EffectiveWorkspaceLabelOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2EffectiveWorkspaceLabelOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2EffectiveWorkspaceLabelOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2EffectiveWorkspaceLabelOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2EffectiveWorkspaceLabelOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2EffectiveWorkspaceLabelOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2EffectiveWorkspaceLabelOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2EffectiveWorkspaceLabelOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2EffectiveWorkspaceLabelOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2EffectiveWorkspaceLabelOutputReference.resetColor">reset_color</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2EffectiveWorkspaceLabelOutputReference.resetLabel">reset_label</a></code> | *No description.* |
+
+---
+
+##### `compute_fqn` <a name="compute_fqn" id="@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2EffectiveWorkspaceLabelOutputReference.computeFqn"></a>
+
+```python
+def compute_fqn() -> str
+```
+
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2EffectiveWorkspaceLabelOutputReference.getAnyMapAttribute"></a>
+
+```python
+def get_any_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Any]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2EffectiveWorkspaceLabelOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2EffectiveWorkspaceLabelOutputReference.getBooleanAttribute"></a>
+
+```python
+def get_boolean_attribute(
+  terraform_attribute: str
+) -> IResolvable
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2EffectiveWorkspaceLabelOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2EffectiveWorkspaceLabelOutputReference.getBooleanMapAttribute"></a>
+
+```python
+def get_boolean_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[bool]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2EffectiveWorkspaceLabelOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2EffectiveWorkspaceLabelOutputReference.getListAttribute"></a>
+
+```python
+def get_list_attribute(
+  terraform_attribute: str
+) -> typing.List[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2EffectiveWorkspaceLabelOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2EffectiveWorkspaceLabelOutputReference.getNumberAttribute"></a>
+
+```python
+def get_number_attribute(
+  terraform_attribute: str
+) -> typing.Union[int, float]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2EffectiveWorkspaceLabelOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2EffectiveWorkspaceLabelOutputReference.getNumberListAttribute"></a>
+
+```python
+def get_number_list_attribute(
+  terraform_attribute: str
+) -> typing.List[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2EffectiveWorkspaceLabelOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2EffectiveWorkspaceLabelOutputReference.getNumberMapAttribute"></a>
+
+```python
+def get_number_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2EffectiveWorkspaceLabelOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2EffectiveWorkspaceLabelOutputReference.getStringAttribute"></a>
+
+```python
+def get_string_attribute(
+  terraform_attribute: str
+) -> str
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2EffectiveWorkspaceLabelOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2EffectiveWorkspaceLabelOutputReference.getStringMapAttribute"></a>
+
+```python
+def get_string_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2EffectiveWorkspaceLabelOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2EffectiveWorkspaceLabelOutputReference.interpolationForAttribute"></a>
+
+```python
+def interpolation_for_attribute(
+  property: str
+) -> IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2EffectiveWorkspaceLabelOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* str
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2EffectiveWorkspaceLabelOutputReference.resolve"></a>
+
+```python
+def resolve(
+  _context: IResolveContext
+) -> typing.Any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2EffectiveWorkspaceLabelOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `to_string` <a name="to_string" id="@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2EffectiveWorkspaceLabelOutputReference.toString"></a>
+
+```python
+def to_string() -> str
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `reset_color` <a name="reset_color" id="@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2EffectiveWorkspaceLabelOutputReference.resetColor"></a>
+
+```python
+def reset_color() -> None
+```
+
+##### `reset_label` <a name="reset_label" id="@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2EffectiveWorkspaceLabelOutputReference.resetLabel"></a>
+
+```python
+def reset_label() -> None
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2EffectiveWorkspaceLabelOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2EffectiveWorkspaceLabelOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2EffectiveWorkspaceLabelOutputReference.property.colorInput">color_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2EffectiveWorkspaceLabelOutputReference.property.labelInput">label_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2EffectiveWorkspaceLabelOutputReference.property.color">color</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2EffectiveWorkspaceLabelOutputReference.property.label">label</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2EffectiveWorkspaceLabelOutputReference.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2EffectiveWorkspaceLabel">WorkspaceSettingV2EffectiveWorkspaceLabel</a></code> | *No description.* |
+
+---
+
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2EffectiveWorkspaceLabelOutputReference.property.creationStack"></a>
+
+```python
+creation_stack: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2EffectiveWorkspaceLabelOutputReference.property.fqn"></a>
+
+```python
+fqn: str
+```
+
+- *Type:* str
+
+---
+
+##### `color_input`<sup>Optional</sup> <a name="color_input" id="@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2EffectiveWorkspaceLabelOutputReference.property.colorInput"></a>
+
+```python
+color_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `label_input`<sup>Optional</sup> <a name="label_input" id="@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2EffectiveWorkspaceLabelOutputReference.property.labelInput"></a>
+
+```python
+label_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `color`<sup>Required</sup> <a name="color" id="@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2EffectiveWorkspaceLabelOutputReference.property.color"></a>
+
+```python
+color: str
+```
+
+- *Type:* str
+
+---
+
+##### `label`<sup>Required</sup> <a name="label" id="@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2EffectiveWorkspaceLabelOutputReference.property.label"></a>
+
+```python
+label: str
+```
+
+- *Type:* str
+
+---
+
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2EffectiveWorkspaceLabelOutputReference.property.internalValue"></a>
+
+```python
+internal_value: IResolvable | WorkspaceSettingV2EffectiveWorkspaceLabel
+```
+
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2EffectiveWorkspaceLabel">WorkspaceSettingV2EffectiveWorkspaceLabel</a>
+
+---
+
+
 ### WorkspaceSettingV2IntegerValOutputReference <a name="WorkspaceSettingV2IntegerValOutputReference" id="@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2IntegerValOutputReference"></a>
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2IntegerValOutputReference.Initializer"></a>
@@ -13714,6 +14296,338 @@ internal_value: IResolvable | WorkspaceSettingV2StringVal
 ```
 
 - *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2StringVal">WorkspaceSettingV2StringVal</a>
+
+---
+
+
+### WorkspaceSettingV2WorkspaceLabelOutputReference <a name="WorkspaceSettingV2WorkspaceLabelOutputReference" id="@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2WorkspaceLabelOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2WorkspaceLabelOutputReference.Initializer"></a>
+
+```python
+from cdktn_provider_databricks import workspace_setting_v2
+
+workspaceSettingV2.WorkspaceSettingV2WorkspaceLabelOutputReference(
+  terraform_resource: IInterpolatingParent,
+  terraform_attribute: str
+)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2WorkspaceLabelOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2WorkspaceLabelOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2WorkspaceLabelOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2WorkspaceLabelOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2WorkspaceLabelOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2WorkspaceLabelOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2WorkspaceLabelOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2WorkspaceLabelOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2WorkspaceLabelOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2WorkspaceLabelOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2WorkspaceLabelOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2WorkspaceLabelOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2WorkspaceLabelOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2WorkspaceLabelOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2WorkspaceLabelOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2WorkspaceLabelOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2WorkspaceLabelOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2WorkspaceLabelOutputReference.resetColor">reset_color</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2WorkspaceLabelOutputReference.resetLabel">reset_label</a></code> | *No description.* |
+
+---
+
+##### `compute_fqn` <a name="compute_fqn" id="@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2WorkspaceLabelOutputReference.computeFqn"></a>
+
+```python
+def compute_fqn() -> str
+```
+
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2WorkspaceLabelOutputReference.getAnyMapAttribute"></a>
+
+```python
+def get_any_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Any]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2WorkspaceLabelOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2WorkspaceLabelOutputReference.getBooleanAttribute"></a>
+
+```python
+def get_boolean_attribute(
+  terraform_attribute: str
+) -> IResolvable
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2WorkspaceLabelOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2WorkspaceLabelOutputReference.getBooleanMapAttribute"></a>
+
+```python
+def get_boolean_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[bool]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2WorkspaceLabelOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2WorkspaceLabelOutputReference.getListAttribute"></a>
+
+```python
+def get_list_attribute(
+  terraform_attribute: str
+) -> typing.List[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2WorkspaceLabelOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2WorkspaceLabelOutputReference.getNumberAttribute"></a>
+
+```python
+def get_number_attribute(
+  terraform_attribute: str
+) -> typing.Union[int, float]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2WorkspaceLabelOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2WorkspaceLabelOutputReference.getNumberListAttribute"></a>
+
+```python
+def get_number_list_attribute(
+  terraform_attribute: str
+) -> typing.List[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2WorkspaceLabelOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2WorkspaceLabelOutputReference.getNumberMapAttribute"></a>
+
+```python
+def get_number_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2WorkspaceLabelOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2WorkspaceLabelOutputReference.getStringAttribute"></a>
+
+```python
+def get_string_attribute(
+  terraform_attribute: str
+) -> str
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2WorkspaceLabelOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2WorkspaceLabelOutputReference.getStringMapAttribute"></a>
+
+```python
+def get_string_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2WorkspaceLabelOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2WorkspaceLabelOutputReference.interpolationForAttribute"></a>
+
+```python
+def interpolation_for_attribute(
+  property: str
+) -> IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2WorkspaceLabelOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* str
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2WorkspaceLabelOutputReference.resolve"></a>
+
+```python
+def resolve(
+  _context: IResolveContext
+) -> typing.Any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2WorkspaceLabelOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `to_string` <a name="to_string" id="@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2WorkspaceLabelOutputReference.toString"></a>
+
+```python
+def to_string() -> str
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `reset_color` <a name="reset_color" id="@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2WorkspaceLabelOutputReference.resetColor"></a>
+
+```python
+def reset_color() -> None
+```
+
+##### `reset_label` <a name="reset_label" id="@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2WorkspaceLabelOutputReference.resetLabel"></a>
+
+```python
+def reset_label() -> None
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2WorkspaceLabelOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2WorkspaceLabelOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2WorkspaceLabelOutputReference.property.colorInput">color_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2WorkspaceLabelOutputReference.property.labelInput">label_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2WorkspaceLabelOutputReference.property.color">color</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2WorkspaceLabelOutputReference.property.label">label</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2WorkspaceLabelOutputReference.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2WorkspaceLabel">WorkspaceSettingV2WorkspaceLabel</a></code> | *No description.* |
+
+---
+
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2WorkspaceLabelOutputReference.property.creationStack"></a>
+
+```python
+creation_stack: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2WorkspaceLabelOutputReference.property.fqn"></a>
+
+```python
+fqn: str
+```
+
+- *Type:* str
+
+---
+
+##### `color_input`<sup>Optional</sup> <a name="color_input" id="@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2WorkspaceLabelOutputReference.property.colorInput"></a>
+
+```python
+color_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `label_input`<sup>Optional</sup> <a name="label_input" id="@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2WorkspaceLabelOutputReference.property.labelInput"></a>
+
+```python
+label_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `color`<sup>Required</sup> <a name="color" id="@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2WorkspaceLabelOutputReference.property.color"></a>
+
+```python
+color: str
+```
+
+- *Type:* str
+
+---
+
+##### `label`<sup>Required</sup> <a name="label" id="@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2WorkspaceLabelOutputReference.property.label"></a>
+
+```python
+label: str
+```
+
+- *Type:* str
+
+---
+
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2WorkspaceLabelOutputReference.property.internalValue"></a>
+
+```python
+internal_value: IResolvable | WorkspaceSettingV2WorkspaceLabel
+```
+
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2WorkspaceLabel">WorkspaceSettingV2WorkspaceLabel</a>
 
 ---
 

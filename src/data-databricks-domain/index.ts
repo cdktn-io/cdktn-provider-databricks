@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/domain
+// https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/domain
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,21 +13,21 @@ import * as cdktn from 'cdktn';
 
 export interface DataDatabricksDomainConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/domain#name DataDatabricksDomain#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/domain#name DataDatabricksDomain#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/domain#provider_config DataDatabricksDomain#provider_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/domain#provider_config DataDatabricksDomain#provider_config}
   */
   readonly providerConfig?: DataDatabricksDomainProviderConfig;
 }
 export interface DataDatabricksDomainIcon {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/domain#color DataDatabricksDomain#color}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/domain#color DataDatabricksDomain#color}
   */
   readonly color?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/domain#name DataDatabricksDomain#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/domain#name DataDatabricksDomain#name}
   */
   readonly name?: string;
 }
@@ -140,7 +140,7 @@ export class DataDatabricksDomainIconOutputReference extends cdktn.ComplexObject
 }
 export interface DataDatabricksDomainProviderConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/domain#workspace_id DataDatabricksDomain#workspace_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/domain#workspace_id DataDatabricksDomain#workspace_id}
   */
   readonly workspaceId?: string;
 }
@@ -234,7 +234,7 @@ export class DataDatabricksDomainProviderConfigOutputReference extends cdktn.Com
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/domain databricks_domain}
+* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/domain databricks_domain}
 */
 export class DataDatabricksDomain extends cdktn.TerraformDataSource {
 
@@ -250,7 +250,7 @@ export class DataDatabricksDomain extends cdktn.TerraformDataSource {
   * Generates CDKTN code for importing a DataDatabricksDomain resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataDatabricksDomain to import
-  * @param importFromId The id of the existing DataDatabricksDomain that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/domain#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataDatabricksDomain that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/domain#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataDatabricksDomain to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -262,7 +262,7 @@ export class DataDatabricksDomain extends cdktn.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/domain databricks_domain} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/domain databricks_domain} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -273,7 +273,7 @@ export class DataDatabricksDomain extends cdktn.TerraformDataSource {
       terraformResourceType: 'databricks_domain',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '1.133.0',
+        providerVersion: '1.134.0',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,

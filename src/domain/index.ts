@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/domain
+// https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/domain
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,53 +13,53 @@ import * as cdktn from 'cdktn';
 
 export interface DomainConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/domain#business_owner_ids Domain#business_owner_ids}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/domain#business_owner_ids Domain#business_owner_ids}
   */
   readonly businessOwnerIds?: number[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/domain#description Domain#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/domain#description Domain#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/domain#domain_id Domain#domain_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/domain#domain_id Domain#domain_id}
   */
   readonly domainId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/domain#draft Domain#draft}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/domain#draft Domain#draft}
   */
   readonly draft?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/domain#icon Domain#icon}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/domain#icon Domain#icon}
   */
   readonly icon?: DomainIcon;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/domain#parent_domain_id Domain#parent_domain_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/domain#parent_domain_id Domain#parent_domain_id}
   */
   readonly parentDomainId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/domain#provider_config Domain#provider_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/domain#provider_config Domain#provider_config}
   */
   readonly providerConfig?: DomainProviderConfig;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/domain#subtitle Domain#subtitle}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/domain#subtitle Domain#subtitle}
   */
   readonly subtitle?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/domain#tag_key Domain#tag_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/domain#tag_key Domain#tag_key}
   */
   readonly tagKey: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/domain#technical_owner_ids Domain#technical_owner_ids}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/domain#technical_owner_ids Domain#technical_owner_ids}
   */
   readonly technicalOwnerIds?: number[];
 }
 export interface DomainIcon {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/domain#color Domain#color}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/domain#color Domain#color}
   */
   readonly color?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/domain#name Domain#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/domain#name Domain#name}
   */
   readonly name?: string;
 }
@@ -182,7 +182,7 @@ export class DomainIconOutputReference extends cdktn.ComplexObject {
 }
 export interface DomainProviderConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/domain#workspace_id Domain#workspace_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/domain#workspace_id Domain#workspace_id}
   */
   readonly workspaceId?: string;
 }
@@ -276,7 +276,7 @@ export class DomainProviderConfigOutputReference extends cdktn.ComplexObject {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/domain databricks_domain}
+* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/domain databricks_domain}
 */
 export class Domain extends cdktn.TerraformResource {
 
@@ -292,7 +292,7 @@ export class Domain extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a Domain resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the Domain to import
-  * @param importFromId The id of the existing Domain that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/domain#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing Domain that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/domain#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the Domain to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -304,7 +304,7 @@ export class Domain extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/domain databricks_domain} Resource
+  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/domain databricks_domain} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -315,7 +315,7 @@ export class Domain extends cdktn.TerraformResource {
       terraformResourceType: 'databricks_domain',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '1.133.0',
+        providerVersion: '1.134.0',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,

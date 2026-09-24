@@ -4,7 +4,7 @@
 
 ### DataDatabricksAccountNetworkPolicy <a name="DataDatabricksAccountNetworkPolicy" id="@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicy"></a>
 
-Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy databricks_account_network_policy}.
+Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy databricks_account_network_policy}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicy.Initializer"></a>
 
@@ -34,7 +34,7 @@ DataDatabricksAccountNetworkPolicy.Builder.create(Construct scope, java.lang.Str
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicy.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>io.cdktn.cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicy.Initializer.parameter.provider">provider</a></code> | <code>io.cdktn.cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicy.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicy.Initializer.parameter.networkPolicyId">networkPolicyId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#network_policy_id DataDatabricksAccountNetworkPolicy#network_policy_id}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicy.Initializer.parameter.networkPolicyId">networkPolicyId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#network_policy_id DataDatabricksAccountNetworkPolicy#network_policy_id}. |
 
 ---
 
@@ -102,7 +102,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#network_policy_id DataDatabricksAccountNetworkPolicy#network_policy_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#network_policy_id DataDatabricksAccountNetworkPolicy#network_policy_id}.
 
 ---
 
@@ -447,7 +447,7 @@ The construct id used in the generated config for the DataDatabricksAccountNetwo
 
 The id of the existing DataDatabricksAccountNetworkPolicy that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -716,7 +716,7 @@ DataDatabricksAccountNetworkPolicyConfig.builder()
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyConfig.property.lifecycle">lifecycle</a></code> | <code>io.cdktn.cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyConfig.property.provider">provider</a></code> | <code>io.cdktn.cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyConfig.property.networkPolicyId">networkPolicyId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#network_policy_id DataDatabricksAccountNetworkPolicy#network_policy_id}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyConfig.property.networkPolicyId">networkPolicyId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#network_policy_id DataDatabricksAccountNetworkPolicy#network_policy_id}. |
 
 ---
 
@@ -798,7 +798,7 @@ public java.lang.String getNetworkPolicyId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#network_policy_id DataDatabricksAccountNetworkPolicy#network_policy_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#network_policy_id DataDatabricksAccountNetworkPolicy#network_policy_id}.
 
 ---
 
@@ -818,7 +818,7 @@ DataDatabricksAccountNetworkPolicyEgress.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyEgress.property.networkAccess">networkAccess</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyEgressNetworkAccess">DataDatabricksAccountNetworkPolicyEgressNetworkAccess</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#network_access DataDatabricksAccountNetworkPolicy#network_access}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyEgress.property.networkAccess">networkAccess</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyEgressNetworkAccess">DataDatabricksAccountNetworkPolicyEgressNetworkAccess</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#network_access DataDatabricksAccountNetworkPolicy#network_access}. |
 
 ---
 
@@ -830,7 +830,7 @@ public DataDatabricksAccountNetworkPolicyEgressNetworkAccess getNetworkAccess();
 
 - *Type:* <a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyEgressNetworkAccess">DataDatabricksAccountNetworkPolicyEgressNetworkAccess</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#network_access DataDatabricksAccountNetworkPolicy#network_access}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#network_access DataDatabricksAccountNetworkPolicy#network_access}.
 
 ---
 
@@ -855,12 +855,12 @@ DataDatabricksAccountNetworkPolicyEgressNetworkAccess.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyEgressNetworkAccess.property.restrictionMode">restrictionMode</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#restriction_mode DataDatabricksAccountNetworkPolicy#restriction_mode}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyEgressNetworkAccess.property.allowedDatabricksDestinations">allowedDatabricksDestinations</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyEgressNetworkAccessAllowedDatabricksDestinations">DataDatabricksAccountNetworkPolicyEgressNetworkAccessAllowedDatabricksDestinations</a>></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#allowed_databricks_destinations DataDatabricksAccountNetworkPolicy#allowed_databricks_destinations}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyEgressNetworkAccess.property.allowedInternetDestinations">allowedInternetDestinations</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyEgressNetworkAccessAllowedInternetDestinations">DataDatabricksAccountNetworkPolicyEgressNetworkAccessAllowedInternetDestinations</a>></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#allowed_internet_destinations DataDatabricksAccountNetworkPolicy#allowed_internet_destinations}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyEgressNetworkAccess.property.allowedStorageDestinations">allowedStorageDestinations</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyEgressNetworkAccessAllowedStorageDestinations">DataDatabricksAccountNetworkPolicyEgressNetworkAccessAllowedStorageDestinations</a>></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#allowed_storage_destinations DataDatabricksAccountNetworkPolicy#allowed_storage_destinations}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyEgressNetworkAccess.property.blockedInternetDestinations">blockedInternetDestinations</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyEgressNetworkAccessBlockedInternetDestinations">DataDatabricksAccountNetworkPolicyEgressNetworkAccessBlockedInternetDestinations</a>></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#blocked_internet_destinations DataDatabricksAccountNetworkPolicy#blocked_internet_destinations}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyEgressNetworkAccess.property.policyEnforcement">policyEnforcement</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyEgressNetworkAccessPolicyEnforcement">DataDatabricksAccountNetworkPolicyEgressNetworkAccessPolicyEnforcement</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#policy_enforcement DataDatabricksAccountNetworkPolicy#policy_enforcement}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyEgressNetworkAccess.property.restrictionMode">restrictionMode</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#restriction_mode DataDatabricksAccountNetworkPolicy#restriction_mode}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyEgressNetworkAccess.property.allowedDatabricksDestinations">allowedDatabricksDestinations</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyEgressNetworkAccessAllowedDatabricksDestinations">DataDatabricksAccountNetworkPolicyEgressNetworkAccessAllowedDatabricksDestinations</a>></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#allowed_databricks_destinations DataDatabricksAccountNetworkPolicy#allowed_databricks_destinations}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyEgressNetworkAccess.property.allowedInternetDestinations">allowedInternetDestinations</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyEgressNetworkAccessAllowedInternetDestinations">DataDatabricksAccountNetworkPolicyEgressNetworkAccessAllowedInternetDestinations</a>></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#allowed_internet_destinations DataDatabricksAccountNetworkPolicy#allowed_internet_destinations}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyEgressNetworkAccess.property.allowedStorageDestinations">allowedStorageDestinations</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyEgressNetworkAccessAllowedStorageDestinations">DataDatabricksAccountNetworkPolicyEgressNetworkAccessAllowedStorageDestinations</a>></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#allowed_storage_destinations DataDatabricksAccountNetworkPolicy#allowed_storage_destinations}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyEgressNetworkAccess.property.blockedInternetDestinations">blockedInternetDestinations</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyEgressNetworkAccessBlockedInternetDestinations">DataDatabricksAccountNetworkPolicyEgressNetworkAccessBlockedInternetDestinations</a>></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#blocked_internet_destinations DataDatabricksAccountNetworkPolicy#blocked_internet_destinations}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyEgressNetworkAccess.property.policyEnforcement">policyEnforcement</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyEgressNetworkAccessPolicyEnforcement">DataDatabricksAccountNetworkPolicyEgressNetworkAccessPolicyEnforcement</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#policy_enforcement DataDatabricksAccountNetworkPolicy#policy_enforcement}. |
 
 ---
 
@@ -872,7 +872,7 @@ public java.lang.String getRestrictionMode();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#restriction_mode DataDatabricksAccountNetworkPolicy#restriction_mode}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#restriction_mode DataDatabricksAccountNetworkPolicy#restriction_mode}.
 
 ---
 
@@ -884,7 +884,7 @@ public IResolvable|java.util.List<DataDatabricksAccountNetworkPolicyEgressNetwor
 
 - *Type:* io.cdktn.cdktn.IResolvable|java.util.List<<a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyEgressNetworkAccessAllowedDatabricksDestinations">DataDatabricksAccountNetworkPolicyEgressNetworkAccessAllowedDatabricksDestinations</a>>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#allowed_databricks_destinations DataDatabricksAccountNetworkPolicy#allowed_databricks_destinations}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#allowed_databricks_destinations DataDatabricksAccountNetworkPolicy#allowed_databricks_destinations}.
 
 ---
 
@@ -896,7 +896,7 @@ public IResolvable|java.util.List<DataDatabricksAccountNetworkPolicyEgressNetwor
 
 - *Type:* io.cdktn.cdktn.IResolvable|java.util.List<<a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyEgressNetworkAccessAllowedInternetDestinations">DataDatabricksAccountNetworkPolicyEgressNetworkAccessAllowedInternetDestinations</a>>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#allowed_internet_destinations DataDatabricksAccountNetworkPolicy#allowed_internet_destinations}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#allowed_internet_destinations DataDatabricksAccountNetworkPolicy#allowed_internet_destinations}.
 
 ---
 
@@ -908,7 +908,7 @@ public IResolvable|java.util.List<DataDatabricksAccountNetworkPolicyEgressNetwor
 
 - *Type:* io.cdktn.cdktn.IResolvable|java.util.List<<a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyEgressNetworkAccessAllowedStorageDestinations">DataDatabricksAccountNetworkPolicyEgressNetworkAccessAllowedStorageDestinations</a>>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#allowed_storage_destinations DataDatabricksAccountNetworkPolicy#allowed_storage_destinations}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#allowed_storage_destinations DataDatabricksAccountNetworkPolicy#allowed_storage_destinations}.
 
 ---
 
@@ -920,7 +920,7 @@ public IResolvable|java.util.List<DataDatabricksAccountNetworkPolicyEgressNetwor
 
 - *Type:* io.cdktn.cdktn.IResolvable|java.util.List<<a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyEgressNetworkAccessBlockedInternetDestinations">DataDatabricksAccountNetworkPolicyEgressNetworkAccessBlockedInternetDestinations</a>>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#blocked_internet_destinations DataDatabricksAccountNetworkPolicy#blocked_internet_destinations}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#blocked_internet_destinations DataDatabricksAccountNetworkPolicy#blocked_internet_destinations}.
 
 ---
 
@@ -932,7 +932,7 @@ public DataDatabricksAccountNetworkPolicyEgressNetworkAccessPolicyEnforcement ge
 
 - *Type:* <a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyEgressNetworkAccessPolicyEnforcement">DataDatabricksAccountNetworkPolicyEgressNetworkAccessPolicyEnforcement</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#policy_enforcement DataDatabricksAccountNetworkPolicy#policy_enforcement}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#policy_enforcement DataDatabricksAccountNetworkPolicy#policy_enforcement}.
 
 ---
 
@@ -952,7 +952,7 @@ DataDatabricksAccountNetworkPolicyEgressNetworkAccessAllowedDatabricksDestinatio
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyEgressNetworkAccessAllowedDatabricksDestinations.property.workspaceIds">workspaceIds</a></code> | <code>java.util.List<java.lang.Number></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#workspace_ids DataDatabricksAccountNetworkPolicy#workspace_ids}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyEgressNetworkAccessAllowedDatabricksDestinations.property.workspaceIds">workspaceIds</a></code> | <code>java.util.List<java.lang.Number></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#workspace_ids DataDatabricksAccountNetworkPolicy#workspace_ids}. |
 
 ---
 
@@ -964,7 +964,7 @@ public java.util.List<java.lang.Number> getWorkspaceIds();
 
 - *Type:* java.util.List<java.lang.Number>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#workspace_ids DataDatabricksAccountNetworkPolicy#workspace_ids}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#workspace_ids DataDatabricksAccountNetworkPolicy#workspace_ids}.
 
 ---
 
@@ -985,8 +985,8 @@ DataDatabricksAccountNetworkPolicyEgressNetworkAccessAllowedInternetDestinations
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyEgressNetworkAccessAllowedInternetDestinations.property.destination">destination</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#destination DataDatabricksAccountNetworkPolicy#destination}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyEgressNetworkAccessAllowedInternetDestinations.property.internetDestinationType">internetDestinationType</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#internet_destination_type DataDatabricksAccountNetworkPolicy#internet_destination_type}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyEgressNetworkAccessAllowedInternetDestinations.property.destination">destination</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#destination DataDatabricksAccountNetworkPolicy#destination}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyEgressNetworkAccessAllowedInternetDestinations.property.internetDestinationType">internetDestinationType</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#internet_destination_type DataDatabricksAccountNetworkPolicy#internet_destination_type}. |
 
 ---
 
@@ -998,7 +998,7 @@ public java.lang.String getDestination();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#destination DataDatabricksAccountNetworkPolicy#destination}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#destination DataDatabricksAccountNetworkPolicy#destination}.
 
 ---
 
@@ -1010,7 +1010,7 @@ public java.lang.String getInternetDestinationType();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#internet_destination_type DataDatabricksAccountNetworkPolicy#internet_destination_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#internet_destination_type DataDatabricksAccountNetworkPolicy#internet_destination_type}.
 
 ---
 
@@ -1034,11 +1034,11 @@ DataDatabricksAccountNetworkPolicyEgressNetworkAccessAllowedStorageDestinations.
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyEgressNetworkAccessAllowedStorageDestinations.property.azureStorageAccount">azureStorageAccount</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#azure_storage_account DataDatabricksAccountNetworkPolicy#azure_storage_account}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyEgressNetworkAccessAllowedStorageDestinations.property.azureStorageService">azureStorageService</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#azure_storage_service DataDatabricksAccountNetworkPolicy#azure_storage_service}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyEgressNetworkAccessAllowedStorageDestinations.property.bucketName">bucketName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#bucket_name DataDatabricksAccountNetworkPolicy#bucket_name}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyEgressNetworkAccessAllowedStorageDestinations.property.region">region</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#region DataDatabricksAccountNetworkPolicy#region}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyEgressNetworkAccessAllowedStorageDestinations.property.storageDestinationType">storageDestinationType</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#storage_destination_type DataDatabricksAccountNetworkPolicy#storage_destination_type}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyEgressNetworkAccessAllowedStorageDestinations.property.azureStorageAccount">azureStorageAccount</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#azure_storage_account DataDatabricksAccountNetworkPolicy#azure_storage_account}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyEgressNetworkAccessAllowedStorageDestinations.property.azureStorageService">azureStorageService</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#azure_storage_service DataDatabricksAccountNetworkPolicy#azure_storage_service}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyEgressNetworkAccessAllowedStorageDestinations.property.bucketName">bucketName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#bucket_name DataDatabricksAccountNetworkPolicy#bucket_name}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyEgressNetworkAccessAllowedStorageDestinations.property.region">region</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#region DataDatabricksAccountNetworkPolicy#region}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyEgressNetworkAccessAllowedStorageDestinations.property.storageDestinationType">storageDestinationType</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#storage_destination_type DataDatabricksAccountNetworkPolicy#storage_destination_type}. |
 
 ---
 
@@ -1050,7 +1050,7 @@ public java.lang.String getAzureStorageAccount();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#azure_storage_account DataDatabricksAccountNetworkPolicy#azure_storage_account}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#azure_storage_account DataDatabricksAccountNetworkPolicy#azure_storage_account}.
 
 ---
 
@@ -1062,7 +1062,7 @@ public java.lang.String getAzureStorageService();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#azure_storage_service DataDatabricksAccountNetworkPolicy#azure_storage_service}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#azure_storage_service DataDatabricksAccountNetworkPolicy#azure_storage_service}.
 
 ---
 
@@ -1074,7 +1074,7 @@ public java.lang.String getBucketName();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#bucket_name DataDatabricksAccountNetworkPolicy#bucket_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#bucket_name DataDatabricksAccountNetworkPolicy#bucket_name}.
 
 ---
 
@@ -1086,7 +1086,7 @@ public java.lang.String getRegion();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#region DataDatabricksAccountNetworkPolicy#region}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#region DataDatabricksAccountNetworkPolicy#region}.
 
 ---
 
@@ -1098,7 +1098,7 @@ public java.lang.String getStorageDestinationType();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#storage_destination_type DataDatabricksAccountNetworkPolicy#storage_destination_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#storage_destination_type DataDatabricksAccountNetworkPolicy#storage_destination_type}.
 
 ---
 
@@ -1119,8 +1119,8 @@ DataDatabricksAccountNetworkPolicyEgressNetworkAccessBlockedInternetDestinations
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyEgressNetworkAccessBlockedInternetDestinations.property.destination">destination</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#destination DataDatabricksAccountNetworkPolicy#destination}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyEgressNetworkAccessBlockedInternetDestinations.property.internetDestinationType">internetDestinationType</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#internet_destination_type DataDatabricksAccountNetworkPolicy#internet_destination_type}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyEgressNetworkAccessBlockedInternetDestinations.property.destination">destination</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#destination DataDatabricksAccountNetworkPolicy#destination}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyEgressNetworkAccessBlockedInternetDestinations.property.internetDestinationType">internetDestinationType</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#internet_destination_type DataDatabricksAccountNetworkPolicy#internet_destination_type}. |
 
 ---
 
@@ -1132,7 +1132,7 @@ public java.lang.String getDestination();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#destination DataDatabricksAccountNetworkPolicy#destination}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#destination DataDatabricksAccountNetworkPolicy#destination}.
 
 ---
 
@@ -1144,7 +1144,7 @@ public java.lang.String getInternetDestinationType();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#internet_destination_type DataDatabricksAccountNetworkPolicy#internet_destination_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#internet_destination_type DataDatabricksAccountNetworkPolicy#internet_destination_type}.
 
 ---
 
@@ -1165,8 +1165,8 @@ DataDatabricksAccountNetworkPolicyEgressNetworkAccessPolicyEnforcement.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyEgressNetworkAccessPolicyEnforcement.property.dryRunModeProductFilter">dryRunModeProductFilter</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#dry_run_mode_product_filter DataDatabricksAccountNetworkPolicy#dry_run_mode_product_filter}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyEgressNetworkAccessPolicyEnforcement.property.enforcementMode">enforcementMode</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#enforcement_mode DataDatabricksAccountNetworkPolicy#enforcement_mode}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyEgressNetworkAccessPolicyEnforcement.property.dryRunModeProductFilter">dryRunModeProductFilter</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#dry_run_mode_product_filter DataDatabricksAccountNetworkPolicy#dry_run_mode_product_filter}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyEgressNetworkAccessPolicyEnforcement.property.enforcementMode">enforcementMode</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#enforcement_mode DataDatabricksAccountNetworkPolicy#enforcement_mode}. |
 
 ---
 
@@ -1178,7 +1178,7 @@ public java.util.List<java.lang.String> getDryRunModeProductFilter();
 
 - *Type:* java.util.List<java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#dry_run_mode_product_filter DataDatabricksAccountNetworkPolicy#dry_run_mode_product_filter}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#dry_run_mode_product_filter DataDatabricksAccountNetworkPolicy#dry_run_mode_product_filter}.
 
 ---
 
@@ -1190,7 +1190,7 @@ public java.lang.String getEnforcementMode();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#enforcement_mode DataDatabricksAccountNetworkPolicy#enforcement_mode}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#enforcement_mode DataDatabricksAccountNetworkPolicy#enforcement_mode}.
 
 ---
 
@@ -1212,9 +1212,9 @@ DataDatabricksAccountNetworkPolicyIngress.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngress.property.crossWorkspaceAccess">crossWorkspaceAccess</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressCrossWorkspaceAccess">DataDatabricksAccountNetworkPolicyIngressCrossWorkspaceAccess</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#cross_workspace_access DataDatabricksAccountNetworkPolicy#cross_workspace_access}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngress.property.privateAccess">privateAccess</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPrivateAccess">DataDatabricksAccountNetworkPolicyIngressPrivateAccess</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#private_access DataDatabricksAccountNetworkPolicy#private_access}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngress.property.publicAccess">publicAccess</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPublicAccess">DataDatabricksAccountNetworkPolicyIngressPublicAccess</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#public_access DataDatabricksAccountNetworkPolicy#public_access}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngress.property.crossWorkspaceAccess">crossWorkspaceAccess</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressCrossWorkspaceAccess">DataDatabricksAccountNetworkPolicyIngressCrossWorkspaceAccess</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#cross_workspace_access DataDatabricksAccountNetworkPolicy#cross_workspace_access}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngress.property.privateAccess">privateAccess</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPrivateAccess">DataDatabricksAccountNetworkPolicyIngressPrivateAccess</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#private_access DataDatabricksAccountNetworkPolicy#private_access}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngress.property.publicAccess">publicAccess</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPublicAccess">DataDatabricksAccountNetworkPolicyIngressPublicAccess</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#public_access DataDatabricksAccountNetworkPolicy#public_access}. |
 
 ---
 
@@ -1226,7 +1226,7 @@ public DataDatabricksAccountNetworkPolicyIngressCrossWorkspaceAccess getCrossWor
 
 - *Type:* <a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressCrossWorkspaceAccess">DataDatabricksAccountNetworkPolicyIngressCrossWorkspaceAccess</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#cross_workspace_access DataDatabricksAccountNetworkPolicy#cross_workspace_access}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#cross_workspace_access DataDatabricksAccountNetworkPolicy#cross_workspace_access}.
 
 ---
 
@@ -1238,7 +1238,7 @@ public DataDatabricksAccountNetworkPolicyIngressPrivateAccess getPrivateAccess()
 
 - *Type:* <a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPrivateAccess">DataDatabricksAccountNetworkPolicyIngressPrivateAccess</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#private_access DataDatabricksAccountNetworkPolicy#private_access}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#private_access DataDatabricksAccountNetworkPolicy#private_access}.
 
 ---
 
@@ -1250,7 +1250,7 @@ public DataDatabricksAccountNetworkPolicyIngressPublicAccess getPublicAccess();
 
 - *Type:* <a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPublicAccess">DataDatabricksAccountNetworkPolicyIngressPublicAccess</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#public_access DataDatabricksAccountNetworkPolicy#public_access}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#public_access DataDatabricksAccountNetworkPolicy#public_access}.
 
 ---
 
@@ -1272,9 +1272,9 @@ DataDatabricksAccountNetworkPolicyIngressCrossWorkspaceAccess.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressCrossWorkspaceAccess.property.restrictionMode">restrictionMode</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#restriction_mode DataDatabricksAccountNetworkPolicy#restriction_mode}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressCrossWorkspaceAccess.property.allowRules">allowRules</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressCrossWorkspaceAccessAllowRules">DataDatabricksAccountNetworkPolicyIngressCrossWorkspaceAccessAllowRules</a>></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#allow_rules DataDatabricksAccountNetworkPolicy#allow_rules}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressCrossWorkspaceAccess.property.denyRules">denyRules</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressCrossWorkspaceAccessDenyRules">DataDatabricksAccountNetworkPolicyIngressCrossWorkspaceAccessDenyRules</a>></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#deny_rules DataDatabricksAccountNetworkPolicy#deny_rules}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressCrossWorkspaceAccess.property.restrictionMode">restrictionMode</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#restriction_mode DataDatabricksAccountNetworkPolicy#restriction_mode}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressCrossWorkspaceAccess.property.allowRules">allowRules</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressCrossWorkspaceAccessAllowRules">DataDatabricksAccountNetworkPolicyIngressCrossWorkspaceAccessAllowRules</a>></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#allow_rules DataDatabricksAccountNetworkPolicy#allow_rules}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressCrossWorkspaceAccess.property.denyRules">denyRules</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressCrossWorkspaceAccessDenyRules">DataDatabricksAccountNetworkPolicyIngressCrossWorkspaceAccessDenyRules</a>></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#deny_rules DataDatabricksAccountNetworkPolicy#deny_rules}. |
 
 ---
 
@@ -1286,7 +1286,7 @@ public java.lang.String getRestrictionMode();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#restriction_mode DataDatabricksAccountNetworkPolicy#restriction_mode}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#restriction_mode DataDatabricksAccountNetworkPolicy#restriction_mode}.
 
 ---
 
@@ -1298,7 +1298,7 @@ public IResolvable|java.util.List<DataDatabricksAccountNetworkPolicyIngressCross
 
 - *Type:* io.cdktn.cdktn.IResolvable|java.util.List<<a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressCrossWorkspaceAccessAllowRules">DataDatabricksAccountNetworkPolicyIngressCrossWorkspaceAccessAllowRules</a>>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#allow_rules DataDatabricksAccountNetworkPolicy#allow_rules}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#allow_rules DataDatabricksAccountNetworkPolicy#allow_rules}.
 
 ---
 
@@ -1310,7 +1310,7 @@ public IResolvable|java.util.List<DataDatabricksAccountNetworkPolicyIngressCross
 
 - *Type:* io.cdktn.cdktn.IResolvable|java.util.List<<a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressCrossWorkspaceAccessDenyRules">DataDatabricksAccountNetworkPolicyIngressCrossWorkspaceAccessDenyRules</a>>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#deny_rules DataDatabricksAccountNetworkPolicy#deny_rules}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#deny_rules DataDatabricksAccountNetworkPolicy#deny_rules}.
 
 ---
 
@@ -1333,10 +1333,10 @@ DataDatabricksAccountNetworkPolicyIngressCrossWorkspaceAccessAllowRules.builder(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressCrossWorkspaceAccessAllowRules.property.authentication">authentication</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressCrossWorkspaceAccessAllowRulesAuthentication">DataDatabricksAccountNetworkPolicyIngressCrossWorkspaceAccessAllowRulesAuthentication</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#authentication DataDatabricksAccountNetworkPolicy#authentication}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressCrossWorkspaceAccessAllowRules.property.destination">destination</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressCrossWorkspaceAccessAllowRulesDestination">DataDatabricksAccountNetworkPolicyIngressCrossWorkspaceAccessAllowRulesDestination</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#destination DataDatabricksAccountNetworkPolicy#destination}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressCrossWorkspaceAccessAllowRules.property.label">label</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#label DataDatabricksAccountNetworkPolicy#label}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressCrossWorkspaceAccessAllowRules.property.origin">origin</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressCrossWorkspaceAccessAllowRulesOrigin">DataDatabricksAccountNetworkPolicyIngressCrossWorkspaceAccessAllowRulesOrigin</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#origin DataDatabricksAccountNetworkPolicy#origin}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressCrossWorkspaceAccessAllowRules.property.authentication">authentication</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressCrossWorkspaceAccessAllowRulesAuthentication">DataDatabricksAccountNetworkPolicyIngressCrossWorkspaceAccessAllowRulesAuthentication</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#authentication DataDatabricksAccountNetworkPolicy#authentication}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressCrossWorkspaceAccessAllowRules.property.destination">destination</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressCrossWorkspaceAccessAllowRulesDestination">DataDatabricksAccountNetworkPolicyIngressCrossWorkspaceAccessAllowRulesDestination</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#destination DataDatabricksAccountNetworkPolicy#destination}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressCrossWorkspaceAccessAllowRules.property.label">label</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#label DataDatabricksAccountNetworkPolicy#label}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressCrossWorkspaceAccessAllowRules.property.origin">origin</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressCrossWorkspaceAccessAllowRulesOrigin">DataDatabricksAccountNetworkPolicyIngressCrossWorkspaceAccessAllowRulesOrigin</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#origin DataDatabricksAccountNetworkPolicy#origin}. |
 
 ---
 
@@ -1348,7 +1348,7 @@ public DataDatabricksAccountNetworkPolicyIngressCrossWorkspaceAccessAllowRulesAu
 
 - *Type:* <a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressCrossWorkspaceAccessAllowRulesAuthentication">DataDatabricksAccountNetworkPolicyIngressCrossWorkspaceAccessAllowRulesAuthentication</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#authentication DataDatabricksAccountNetworkPolicy#authentication}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#authentication DataDatabricksAccountNetworkPolicy#authentication}.
 
 ---
 
@@ -1360,7 +1360,7 @@ public DataDatabricksAccountNetworkPolicyIngressCrossWorkspaceAccessAllowRulesDe
 
 - *Type:* <a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressCrossWorkspaceAccessAllowRulesDestination">DataDatabricksAccountNetworkPolicyIngressCrossWorkspaceAccessAllowRulesDestination</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#destination DataDatabricksAccountNetworkPolicy#destination}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#destination DataDatabricksAccountNetworkPolicy#destination}.
 
 ---
 
@@ -1372,7 +1372,7 @@ public java.lang.String getLabel();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#label DataDatabricksAccountNetworkPolicy#label}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#label DataDatabricksAccountNetworkPolicy#label}.
 
 ---
 
@@ -1384,7 +1384,7 @@ public DataDatabricksAccountNetworkPolicyIngressCrossWorkspaceAccessAllowRulesOr
 
 - *Type:* <a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressCrossWorkspaceAccessAllowRulesOrigin">DataDatabricksAccountNetworkPolicyIngressCrossWorkspaceAccessAllowRulesOrigin</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#origin DataDatabricksAccountNetworkPolicy#origin}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#origin DataDatabricksAccountNetworkPolicy#origin}.
 
 ---
 
@@ -1405,8 +1405,8 @@ DataDatabricksAccountNetworkPolicyIngressCrossWorkspaceAccessAllowRulesAuthentic
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressCrossWorkspaceAccessAllowRulesAuthentication.property.identities">identities</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressCrossWorkspaceAccessAllowRulesAuthenticationIdentities">DataDatabricksAccountNetworkPolicyIngressCrossWorkspaceAccessAllowRulesAuthenticationIdentities</a>></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#identities DataDatabricksAccountNetworkPolicy#identities}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressCrossWorkspaceAccessAllowRulesAuthentication.property.identityType">identityType</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#identity_type DataDatabricksAccountNetworkPolicy#identity_type}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressCrossWorkspaceAccessAllowRulesAuthentication.property.identities">identities</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressCrossWorkspaceAccessAllowRulesAuthenticationIdentities">DataDatabricksAccountNetworkPolicyIngressCrossWorkspaceAccessAllowRulesAuthenticationIdentities</a>></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#identities DataDatabricksAccountNetworkPolicy#identities}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressCrossWorkspaceAccessAllowRulesAuthentication.property.identityType">identityType</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#identity_type DataDatabricksAccountNetworkPolicy#identity_type}. |
 
 ---
 
@@ -1418,7 +1418,7 @@ public IResolvable|java.util.List<DataDatabricksAccountNetworkPolicyIngressCross
 
 - *Type:* io.cdktn.cdktn.IResolvable|java.util.List<<a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressCrossWorkspaceAccessAllowRulesAuthenticationIdentities">DataDatabricksAccountNetworkPolicyIngressCrossWorkspaceAccessAllowRulesAuthenticationIdentities</a>>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#identities DataDatabricksAccountNetworkPolicy#identities}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#identities DataDatabricksAccountNetworkPolicy#identities}.
 
 ---
 
@@ -1430,7 +1430,7 @@ public java.lang.String getIdentityType();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#identity_type DataDatabricksAccountNetworkPolicy#identity_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#identity_type DataDatabricksAccountNetworkPolicy#identity_type}.
 
 ---
 
@@ -1451,8 +1451,8 @@ DataDatabricksAccountNetworkPolicyIngressCrossWorkspaceAccessAllowRulesAuthentic
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressCrossWorkspaceAccessAllowRulesAuthenticationIdentities.property.principalId">principalId</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#principal_id DataDatabricksAccountNetworkPolicy#principal_id}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressCrossWorkspaceAccessAllowRulesAuthenticationIdentities.property.principalType">principalType</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#principal_type DataDatabricksAccountNetworkPolicy#principal_type}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressCrossWorkspaceAccessAllowRulesAuthenticationIdentities.property.principalId">principalId</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#principal_id DataDatabricksAccountNetworkPolicy#principal_id}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressCrossWorkspaceAccessAllowRulesAuthenticationIdentities.property.principalType">principalType</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#principal_type DataDatabricksAccountNetworkPolicy#principal_type}. |
 
 ---
 
@@ -1464,7 +1464,7 @@ public java.lang.Number getPrincipalId();
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#principal_id DataDatabricksAccountNetworkPolicy#principal_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#principal_id DataDatabricksAccountNetworkPolicy#principal_id}.
 
 ---
 
@@ -1476,7 +1476,7 @@ public java.lang.String getPrincipalType();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#principal_type DataDatabricksAccountNetworkPolicy#principal_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#principal_type DataDatabricksAccountNetworkPolicy#principal_type}.
 
 ---
 
@@ -1503,14 +1503,14 @@ DataDatabricksAccountNetworkPolicyIngressCrossWorkspaceAccessAllowRulesDestinati
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressCrossWorkspaceAccessAllowRulesDestination.property.accountApi">accountApi</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressCrossWorkspaceAccessAllowRulesDestinationAccountApi">DataDatabricksAccountNetworkPolicyIngressCrossWorkspaceAccessAllowRulesDestinationAccountApi</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#account_api DataDatabricksAccountNetworkPolicy#account_api}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressCrossWorkspaceAccessAllowRulesDestination.property.accountDatabricksOne">accountDatabricksOne</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressCrossWorkspaceAccessAllowRulesDestinationAccountDatabricksOne">DataDatabricksAccountNetworkPolicyIngressCrossWorkspaceAccessAllowRulesDestinationAccountDatabricksOne</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#account_databricks_one DataDatabricksAccountNetworkPolicy#account_databricks_one}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressCrossWorkspaceAccessAllowRulesDestination.property.accountUi">accountUi</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressCrossWorkspaceAccessAllowRulesDestinationAccountUi">DataDatabricksAccountNetworkPolicyIngressCrossWorkspaceAccessAllowRulesDestinationAccountUi</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#account_ui DataDatabricksAccountNetworkPolicy#account_ui}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressCrossWorkspaceAccessAllowRulesDestination.property.allDestinations">allDestinations</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#all_destinations DataDatabricksAccountNetworkPolicy#all_destinations}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressCrossWorkspaceAccessAllowRulesDestination.property.appsRuntime">appsRuntime</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressCrossWorkspaceAccessAllowRulesDestinationAppsRuntime">DataDatabricksAccountNetworkPolicyIngressCrossWorkspaceAccessAllowRulesDestinationAppsRuntime</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#apps_runtime DataDatabricksAccountNetworkPolicy#apps_runtime}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressCrossWorkspaceAccessAllowRulesDestination.property.lakebaseRuntime">lakebaseRuntime</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressCrossWorkspaceAccessAllowRulesDestinationLakebaseRuntime">DataDatabricksAccountNetworkPolicyIngressCrossWorkspaceAccessAllowRulesDestinationLakebaseRuntime</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#lakebase_runtime DataDatabricksAccountNetworkPolicy#lakebase_runtime}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressCrossWorkspaceAccessAllowRulesDestination.property.workspaceApi">workspaceApi</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressCrossWorkspaceAccessAllowRulesDestinationWorkspaceApi">DataDatabricksAccountNetworkPolicyIngressCrossWorkspaceAccessAllowRulesDestinationWorkspaceApi</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#workspace_api DataDatabricksAccountNetworkPolicy#workspace_api}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressCrossWorkspaceAccessAllowRulesDestination.property.workspaceUi">workspaceUi</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressCrossWorkspaceAccessAllowRulesDestinationWorkspaceUi">DataDatabricksAccountNetworkPolicyIngressCrossWorkspaceAccessAllowRulesDestinationWorkspaceUi</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#workspace_ui DataDatabricksAccountNetworkPolicy#workspace_ui}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressCrossWorkspaceAccessAllowRulesDestination.property.accountApi">accountApi</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressCrossWorkspaceAccessAllowRulesDestinationAccountApi">DataDatabricksAccountNetworkPolicyIngressCrossWorkspaceAccessAllowRulesDestinationAccountApi</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#account_api DataDatabricksAccountNetworkPolicy#account_api}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressCrossWorkspaceAccessAllowRulesDestination.property.accountDatabricksOne">accountDatabricksOne</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressCrossWorkspaceAccessAllowRulesDestinationAccountDatabricksOne">DataDatabricksAccountNetworkPolicyIngressCrossWorkspaceAccessAllowRulesDestinationAccountDatabricksOne</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#account_databricks_one DataDatabricksAccountNetworkPolicy#account_databricks_one}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressCrossWorkspaceAccessAllowRulesDestination.property.accountUi">accountUi</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressCrossWorkspaceAccessAllowRulesDestinationAccountUi">DataDatabricksAccountNetworkPolicyIngressCrossWorkspaceAccessAllowRulesDestinationAccountUi</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#account_ui DataDatabricksAccountNetworkPolicy#account_ui}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressCrossWorkspaceAccessAllowRulesDestination.property.allDestinations">allDestinations</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#all_destinations DataDatabricksAccountNetworkPolicy#all_destinations}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressCrossWorkspaceAccessAllowRulesDestination.property.appsRuntime">appsRuntime</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressCrossWorkspaceAccessAllowRulesDestinationAppsRuntime">DataDatabricksAccountNetworkPolicyIngressCrossWorkspaceAccessAllowRulesDestinationAppsRuntime</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#apps_runtime DataDatabricksAccountNetworkPolicy#apps_runtime}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressCrossWorkspaceAccessAllowRulesDestination.property.lakebaseRuntime">lakebaseRuntime</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressCrossWorkspaceAccessAllowRulesDestinationLakebaseRuntime">DataDatabricksAccountNetworkPolicyIngressCrossWorkspaceAccessAllowRulesDestinationLakebaseRuntime</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#lakebase_runtime DataDatabricksAccountNetworkPolicy#lakebase_runtime}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressCrossWorkspaceAccessAllowRulesDestination.property.workspaceApi">workspaceApi</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressCrossWorkspaceAccessAllowRulesDestinationWorkspaceApi">DataDatabricksAccountNetworkPolicyIngressCrossWorkspaceAccessAllowRulesDestinationWorkspaceApi</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#workspace_api DataDatabricksAccountNetworkPolicy#workspace_api}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressCrossWorkspaceAccessAllowRulesDestination.property.workspaceUi">workspaceUi</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressCrossWorkspaceAccessAllowRulesDestinationWorkspaceUi">DataDatabricksAccountNetworkPolicyIngressCrossWorkspaceAccessAllowRulesDestinationWorkspaceUi</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#workspace_ui DataDatabricksAccountNetworkPolicy#workspace_ui}. |
 
 ---
 
@@ -1522,7 +1522,7 @@ public DataDatabricksAccountNetworkPolicyIngressCrossWorkspaceAccessAllowRulesDe
 
 - *Type:* <a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressCrossWorkspaceAccessAllowRulesDestinationAccountApi">DataDatabricksAccountNetworkPolicyIngressCrossWorkspaceAccessAllowRulesDestinationAccountApi</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#account_api DataDatabricksAccountNetworkPolicy#account_api}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#account_api DataDatabricksAccountNetworkPolicy#account_api}.
 
 ---
 
@@ -1534,7 +1534,7 @@ public DataDatabricksAccountNetworkPolicyIngressCrossWorkspaceAccessAllowRulesDe
 
 - *Type:* <a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressCrossWorkspaceAccessAllowRulesDestinationAccountDatabricksOne">DataDatabricksAccountNetworkPolicyIngressCrossWorkspaceAccessAllowRulesDestinationAccountDatabricksOne</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#account_databricks_one DataDatabricksAccountNetworkPolicy#account_databricks_one}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#account_databricks_one DataDatabricksAccountNetworkPolicy#account_databricks_one}.
 
 ---
 
@@ -1546,7 +1546,7 @@ public DataDatabricksAccountNetworkPolicyIngressCrossWorkspaceAccessAllowRulesDe
 
 - *Type:* <a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressCrossWorkspaceAccessAllowRulesDestinationAccountUi">DataDatabricksAccountNetworkPolicyIngressCrossWorkspaceAccessAllowRulesDestinationAccountUi</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#account_ui DataDatabricksAccountNetworkPolicy#account_ui}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#account_ui DataDatabricksAccountNetworkPolicy#account_ui}.
 
 ---
 
@@ -1558,7 +1558,7 @@ public java.lang.Boolean|IResolvable getAllDestinations();
 
 - *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#all_destinations DataDatabricksAccountNetworkPolicy#all_destinations}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#all_destinations DataDatabricksAccountNetworkPolicy#all_destinations}.
 
 ---
 
@@ -1570,7 +1570,7 @@ public DataDatabricksAccountNetworkPolicyIngressCrossWorkspaceAccessAllowRulesDe
 
 - *Type:* <a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressCrossWorkspaceAccessAllowRulesDestinationAppsRuntime">DataDatabricksAccountNetworkPolicyIngressCrossWorkspaceAccessAllowRulesDestinationAppsRuntime</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#apps_runtime DataDatabricksAccountNetworkPolicy#apps_runtime}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#apps_runtime DataDatabricksAccountNetworkPolicy#apps_runtime}.
 
 ---
 
@@ -1582,7 +1582,7 @@ public DataDatabricksAccountNetworkPolicyIngressCrossWorkspaceAccessAllowRulesDe
 
 - *Type:* <a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressCrossWorkspaceAccessAllowRulesDestinationLakebaseRuntime">DataDatabricksAccountNetworkPolicyIngressCrossWorkspaceAccessAllowRulesDestinationLakebaseRuntime</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#lakebase_runtime DataDatabricksAccountNetworkPolicy#lakebase_runtime}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#lakebase_runtime DataDatabricksAccountNetworkPolicy#lakebase_runtime}.
 
 ---
 
@@ -1594,7 +1594,7 @@ public DataDatabricksAccountNetworkPolicyIngressCrossWorkspaceAccessAllowRulesDe
 
 - *Type:* <a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressCrossWorkspaceAccessAllowRulesDestinationWorkspaceApi">DataDatabricksAccountNetworkPolicyIngressCrossWorkspaceAccessAllowRulesDestinationWorkspaceApi</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#workspace_api DataDatabricksAccountNetworkPolicy#workspace_api}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#workspace_api DataDatabricksAccountNetworkPolicy#workspace_api}.
 
 ---
 
@@ -1606,7 +1606,7 @@ public DataDatabricksAccountNetworkPolicyIngressCrossWorkspaceAccessAllowRulesDe
 
 - *Type:* <a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressCrossWorkspaceAccessAllowRulesDestinationWorkspaceUi">DataDatabricksAccountNetworkPolicyIngressCrossWorkspaceAccessAllowRulesDestinationWorkspaceUi</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#workspace_ui DataDatabricksAccountNetworkPolicy#workspace_ui}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#workspace_ui DataDatabricksAccountNetworkPolicy#workspace_ui}.
 
 ---
 
@@ -1627,8 +1627,8 @@ DataDatabricksAccountNetworkPolicyIngressCrossWorkspaceAccessAllowRulesDestinati
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressCrossWorkspaceAccessAllowRulesDestinationAccountApi.property.scopeQualifier">scopeQualifier</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#scope_qualifier DataDatabricksAccountNetworkPolicy#scope_qualifier}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressCrossWorkspaceAccessAllowRulesDestinationAccountApi.property.scopes">scopes</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#scopes DataDatabricksAccountNetworkPolicy#scopes}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressCrossWorkspaceAccessAllowRulesDestinationAccountApi.property.scopeQualifier">scopeQualifier</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#scope_qualifier DataDatabricksAccountNetworkPolicy#scope_qualifier}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressCrossWorkspaceAccessAllowRulesDestinationAccountApi.property.scopes">scopes</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#scopes DataDatabricksAccountNetworkPolicy#scopes}. |
 
 ---
 
@@ -1640,7 +1640,7 @@ public java.lang.String getScopeQualifier();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#scope_qualifier DataDatabricksAccountNetworkPolicy#scope_qualifier}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#scope_qualifier DataDatabricksAccountNetworkPolicy#scope_qualifier}.
 
 ---
 
@@ -1652,7 +1652,7 @@ public java.util.List<java.lang.String> getScopes();
 
 - *Type:* java.util.List<java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#scopes DataDatabricksAccountNetworkPolicy#scopes}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#scopes DataDatabricksAccountNetworkPolicy#scopes}.
 
 ---
 
@@ -1672,7 +1672,7 @@ DataDatabricksAccountNetworkPolicyIngressCrossWorkspaceAccessAllowRulesDestinati
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressCrossWorkspaceAccessAllowRulesDestinationAccountDatabricksOne.property.allDestinations">allDestinations</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#all_destinations DataDatabricksAccountNetworkPolicy#all_destinations}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressCrossWorkspaceAccessAllowRulesDestinationAccountDatabricksOne.property.allDestinations">allDestinations</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#all_destinations DataDatabricksAccountNetworkPolicy#all_destinations}. |
 
 ---
 
@@ -1684,7 +1684,7 @@ public java.lang.Boolean|IResolvable getAllDestinations();
 
 - *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#all_destinations DataDatabricksAccountNetworkPolicy#all_destinations}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#all_destinations DataDatabricksAccountNetworkPolicy#all_destinations}.
 
 ---
 
@@ -1704,7 +1704,7 @@ DataDatabricksAccountNetworkPolicyIngressCrossWorkspaceAccessAllowRulesDestinati
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressCrossWorkspaceAccessAllowRulesDestinationAccountUi.property.allDestinations">allDestinations</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#all_destinations DataDatabricksAccountNetworkPolicy#all_destinations}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressCrossWorkspaceAccessAllowRulesDestinationAccountUi.property.allDestinations">allDestinations</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#all_destinations DataDatabricksAccountNetworkPolicy#all_destinations}. |
 
 ---
 
@@ -1716,7 +1716,7 @@ public java.lang.Boolean|IResolvable getAllDestinations();
 
 - *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#all_destinations DataDatabricksAccountNetworkPolicy#all_destinations}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#all_destinations DataDatabricksAccountNetworkPolicy#all_destinations}.
 
 ---
 
@@ -1736,7 +1736,7 @@ DataDatabricksAccountNetworkPolicyIngressCrossWorkspaceAccessAllowRulesDestinati
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressCrossWorkspaceAccessAllowRulesDestinationAppsRuntime.property.allDestinations">allDestinations</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#all_destinations DataDatabricksAccountNetworkPolicy#all_destinations}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressCrossWorkspaceAccessAllowRulesDestinationAppsRuntime.property.allDestinations">allDestinations</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#all_destinations DataDatabricksAccountNetworkPolicy#all_destinations}. |
 
 ---
 
@@ -1748,7 +1748,7 @@ public java.lang.Boolean|IResolvable getAllDestinations();
 
 - *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#all_destinations DataDatabricksAccountNetworkPolicy#all_destinations}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#all_destinations DataDatabricksAccountNetworkPolicy#all_destinations}.
 
 ---
 
@@ -1768,7 +1768,7 @@ DataDatabricksAccountNetworkPolicyIngressCrossWorkspaceAccessAllowRulesDestinati
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressCrossWorkspaceAccessAllowRulesDestinationLakebaseRuntime.property.allDestinations">allDestinations</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#all_destinations DataDatabricksAccountNetworkPolicy#all_destinations}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressCrossWorkspaceAccessAllowRulesDestinationLakebaseRuntime.property.allDestinations">allDestinations</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#all_destinations DataDatabricksAccountNetworkPolicy#all_destinations}. |
 
 ---
 
@@ -1780,7 +1780,7 @@ public java.lang.Boolean|IResolvable getAllDestinations();
 
 - *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#all_destinations DataDatabricksAccountNetworkPolicy#all_destinations}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#all_destinations DataDatabricksAccountNetworkPolicy#all_destinations}.
 
 ---
 
@@ -1792,6 +1792,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 import io.cdktn.providers.databricks.data_databricks_account_network_policy.DataDatabricksAccountNetworkPolicyIngressCrossWorkspaceAccessAllowRulesDestinationWorkspaceApi;
 
 DataDatabricksAccountNetworkPolicyIngressCrossWorkspaceAccessAllowRulesDestinationWorkspaceApi.builder()
+//  .excludedScopes(java.util.List<java.lang.String>)
 //  .scopeQualifier(java.lang.String)
 //  .scopes(java.util.List<java.lang.String>)
     .build();
@@ -1801,8 +1802,21 @@ DataDatabricksAccountNetworkPolicyIngressCrossWorkspaceAccessAllowRulesDestinati
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressCrossWorkspaceAccessAllowRulesDestinationWorkspaceApi.property.scopeQualifier">scopeQualifier</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#scope_qualifier DataDatabricksAccountNetworkPolicy#scope_qualifier}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressCrossWorkspaceAccessAllowRulesDestinationWorkspaceApi.property.scopes">scopes</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#scopes DataDatabricksAccountNetworkPolicy#scopes}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressCrossWorkspaceAccessAllowRulesDestinationWorkspaceApi.property.excludedScopes">excludedScopes</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#excluded_scopes DataDatabricksAccountNetworkPolicy#excluded_scopes}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressCrossWorkspaceAccessAllowRulesDestinationWorkspaceApi.property.scopeQualifier">scopeQualifier</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#scope_qualifier DataDatabricksAccountNetworkPolicy#scope_qualifier}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressCrossWorkspaceAccessAllowRulesDestinationWorkspaceApi.property.scopes">scopes</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#scopes DataDatabricksAccountNetworkPolicy#scopes}. |
+
+---
+
+##### `excludedScopes`<sup>Optional</sup> <a name="excludedScopes" id="@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressCrossWorkspaceAccessAllowRulesDestinationWorkspaceApi.property.excludedScopes"></a>
+
+```java
+public java.util.List<java.lang.String> getExcludedScopes();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#excluded_scopes DataDatabricksAccountNetworkPolicy#excluded_scopes}.
 
 ---
 
@@ -1814,7 +1828,7 @@ public java.lang.String getScopeQualifier();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#scope_qualifier DataDatabricksAccountNetworkPolicy#scope_qualifier}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#scope_qualifier DataDatabricksAccountNetworkPolicy#scope_qualifier}.
 
 ---
 
@@ -1826,7 +1840,7 @@ public java.util.List<java.lang.String> getScopes();
 
 - *Type:* java.util.List<java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#scopes DataDatabricksAccountNetworkPolicy#scopes}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#scopes DataDatabricksAccountNetworkPolicy#scopes}.
 
 ---
 
@@ -1846,7 +1860,7 @@ DataDatabricksAccountNetworkPolicyIngressCrossWorkspaceAccessAllowRulesDestinati
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressCrossWorkspaceAccessAllowRulesDestinationWorkspaceUi.property.allDestinations">allDestinations</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#all_destinations DataDatabricksAccountNetworkPolicy#all_destinations}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressCrossWorkspaceAccessAllowRulesDestinationWorkspaceUi.property.allDestinations">allDestinations</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#all_destinations DataDatabricksAccountNetworkPolicy#all_destinations}. |
 
 ---
 
@@ -1858,7 +1872,7 @@ public java.lang.Boolean|IResolvable getAllDestinations();
 
 - *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#all_destinations DataDatabricksAccountNetworkPolicy#all_destinations}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#all_destinations DataDatabricksAccountNetworkPolicy#all_destinations}.
 
 ---
 
@@ -1879,8 +1893,8 @@ DataDatabricksAccountNetworkPolicyIngressCrossWorkspaceAccessAllowRulesOrigin.bu
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressCrossWorkspaceAccessAllowRulesOrigin.property.allSourceWorkspaces">allSourceWorkspaces</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#all_source_workspaces DataDatabricksAccountNetworkPolicy#all_source_workspaces}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressCrossWorkspaceAccessAllowRulesOrigin.property.selectedWorkspaces">selectedWorkspaces</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressCrossWorkspaceAccessAllowRulesOriginSelectedWorkspaces">DataDatabricksAccountNetworkPolicyIngressCrossWorkspaceAccessAllowRulesOriginSelectedWorkspaces</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#selected_workspaces DataDatabricksAccountNetworkPolicy#selected_workspaces}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressCrossWorkspaceAccessAllowRulesOrigin.property.allSourceWorkspaces">allSourceWorkspaces</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#all_source_workspaces DataDatabricksAccountNetworkPolicy#all_source_workspaces}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressCrossWorkspaceAccessAllowRulesOrigin.property.selectedWorkspaces">selectedWorkspaces</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressCrossWorkspaceAccessAllowRulesOriginSelectedWorkspaces">DataDatabricksAccountNetworkPolicyIngressCrossWorkspaceAccessAllowRulesOriginSelectedWorkspaces</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#selected_workspaces DataDatabricksAccountNetworkPolicy#selected_workspaces}. |
 
 ---
 
@@ -1892,7 +1906,7 @@ public java.lang.Boolean|IResolvable getAllSourceWorkspaces();
 
 - *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#all_source_workspaces DataDatabricksAccountNetworkPolicy#all_source_workspaces}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#all_source_workspaces DataDatabricksAccountNetworkPolicy#all_source_workspaces}.
 
 ---
 
@@ -1904,7 +1918,7 @@ public DataDatabricksAccountNetworkPolicyIngressCrossWorkspaceAccessAllowRulesOr
 
 - *Type:* <a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressCrossWorkspaceAccessAllowRulesOriginSelectedWorkspaces">DataDatabricksAccountNetworkPolicyIngressCrossWorkspaceAccessAllowRulesOriginSelectedWorkspaces</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#selected_workspaces DataDatabricksAccountNetworkPolicy#selected_workspaces}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#selected_workspaces DataDatabricksAccountNetworkPolicy#selected_workspaces}.
 
 ---
 
@@ -1924,7 +1938,7 @@ DataDatabricksAccountNetworkPolicyIngressCrossWorkspaceAccessAllowRulesOriginSel
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressCrossWorkspaceAccessAllowRulesOriginSelectedWorkspaces.property.workspaceIds">workspaceIds</a></code> | <code>java.util.List<java.lang.Number></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#workspace_ids DataDatabricksAccountNetworkPolicy#workspace_ids}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressCrossWorkspaceAccessAllowRulesOriginSelectedWorkspaces.property.workspaceIds">workspaceIds</a></code> | <code>java.util.List<java.lang.Number></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#workspace_ids DataDatabricksAccountNetworkPolicy#workspace_ids}. |
 
 ---
 
@@ -1936,7 +1950,7 @@ public java.util.List<java.lang.Number> getWorkspaceIds();
 
 - *Type:* java.util.List<java.lang.Number>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#workspace_ids DataDatabricksAccountNetworkPolicy#workspace_ids}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#workspace_ids DataDatabricksAccountNetworkPolicy#workspace_ids}.
 
 ---
 
@@ -1959,10 +1973,10 @@ DataDatabricksAccountNetworkPolicyIngressCrossWorkspaceAccessDenyRules.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressCrossWorkspaceAccessDenyRules.property.authentication">authentication</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressCrossWorkspaceAccessDenyRulesAuthentication">DataDatabricksAccountNetworkPolicyIngressCrossWorkspaceAccessDenyRulesAuthentication</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#authentication DataDatabricksAccountNetworkPolicy#authentication}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressCrossWorkspaceAccessDenyRules.property.destination">destination</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressCrossWorkspaceAccessDenyRulesDestination">DataDatabricksAccountNetworkPolicyIngressCrossWorkspaceAccessDenyRulesDestination</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#destination DataDatabricksAccountNetworkPolicy#destination}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressCrossWorkspaceAccessDenyRules.property.label">label</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#label DataDatabricksAccountNetworkPolicy#label}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressCrossWorkspaceAccessDenyRules.property.origin">origin</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressCrossWorkspaceAccessDenyRulesOrigin">DataDatabricksAccountNetworkPolicyIngressCrossWorkspaceAccessDenyRulesOrigin</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#origin DataDatabricksAccountNetworkPolicy#origin}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressCrossWorkspaceAccessDenyRules.property.authentication">authentication</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressCrossWorkspaceAccessDenyRulesAuthentication">DataDatabricksAccountNetworkPolicyIngressCrossWorkspaceAccessDenyRulesAuthentication</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#authentication DataDatabricksAccountNetworkPolicy#authentication}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressCrossWorkspaceAccessDenyRules.property.destination">destination</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressCrossWorkspaceAccessDenyRulesDestination">DataDatabricksAccountNetworkPolicyIngressCrossWorkspaceAccessDenyRulesDestination</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#destination DataDatabricksAccountNetworkPolicy#destination}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressCrossWorkspaceAccessDenyRules.property.label">label</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#label DataDatabricksAccountNetworkPolicy#label}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressCrossWorkspaceAccessDenyRules.property.origin">origin</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressCrossWorkspaceAccessDenyRulesOrigin">DataDatabricksAccountNetworkPolicyIngressCrossWorkspaceAccessDenyRulesOrigin</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#origin DataDatabricksAccountNetworkPolicy#origin}. |
 
 ---
 
@@ -1974,7 +1988,7 @@ public DataDatabricksAccountNetworkPolicyIngressCrossWorkspaceAccessDenyRulesAut
 
 - *Type:* <a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressCrossWorkspaceAccessDenyRulesAuthentication">DataDatabricksAccountNetworkPolicyIngressCrossWorkspaceAccessDenyRulesAuthentication</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#authentication DataDatabricksAccountNetworkPolicy#authentication}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#authentication DataDatabricksAccountNetworkPolicy#authentication}.
 
 ---
 
@@ -1986,7 +2000,7 @@ public DataDatabricksAccountNetworkPolicyIngressCrossWorkspaceAccessDenyRulesDes
 
 - *Type:* <a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressCrossWorkspaceAccessDenyRulesDestination">DataDatabricksAccountNetworkPolicyIngressCrossWorkspaceAccessDenyRulesDestination</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#destination DataDatabricksAccountNetworkPolicy#destination}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#destination DataDatabricksAccountNetworkPolicy#destination}.
 
 ---
 
@@ -1998,7 +2012,7 @@ public java.lang.String getLabel();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#label DataDatabricksAccountNetworkPolicy#label}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#label DataDatabricksAccountNetworkPolicy#label}.
 
 ---
 
@@ -2010,7 +2024,7 @@ public DataDatabricksAccountNetworkPolicyIngressCrossWorkspaceAccessDenyRulesOri
 
 - *Type:* <a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressCrossWorkspaceAccessDenyRulesOrigin">DataDatabricksAccountNetworkPolicyIngressCrossWorkspaceAccessDenyRulesOrigin</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#origin DataDatabricksAccountNetworkPolicy#origin}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#origin DataDatabricksAccountNetworkPolicy#origin}.
 
 ---
 
@@ -2031,8 +2045,8 @@ DataDatabricksAccountNetworkPolicyIngressCrossWorkspaceAccessDenyRulesAuthentica
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressCrossWorkspaceAccessDenyRulesAuthentication.property.identities">identities</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressCrossWorkspaceAccessDenyRulesAuthenticationIdentities">DataDatabricksAccountNetworkPolicyIngressCrossWorkspaceAccessDenyRulesAuthenticationIdentities</a>></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#identities DataDatabricksAccountNetworkPolicy#identities}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressCrossWorkspaceAccessDenyRulesAuthentication.property.identityType">identityType</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#identity_type DataDatabricksAccountNetworkPolicy#identity_type}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressCrossWorkspaceAccessDenyRulesAuthentication.property.identities">identities</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressCrossWorkspaceAccessDenyRulesAuthenticationIdentities">DataDatabricksAccountNetworkPolicyIngressCrossWorkspaceAccessDenyRulesAuthenticationIdentities</a>></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#identities DataDatabricksAccountNetworkPolicy#identities}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressCrossWorkspaceAccessDenyRulesAuthentication.property.identityType">identityType</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#identity_type DataDatabricksAccountNetworkPolicy#identity_type}. |
 
 ---
 
@@ -2044,7 +2058,7 @@ public IResolvable|java.util.List<DataDatabricksAccountNetworkPolicyIngressCross
 
 - *Type:* io.cdktn.cdktn.IResolvable|java.util.List<<a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressCrossWorkspaceAccessDenyRulesAuthenticationIdentities">DataDatabricksAccountNetworkPolicyIngressCrossWorkspaceAccessDenyRulesAuthenticationIdentities</a>>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#identities DataDatabricksAccountNetworkPolicy#identities}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#identities DataDatabricksAccountNetworkPolicy#identities}.
 
 ---
 
@@ -2056,7 +2070,7 @@ public java.lang.String getIdentityType();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#identity_type DataDatabricksAccountNetworkPolicy#identity_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#identity_type DataDatabricksAccountNetworkPolicy#identity_type}.
 
 ---
 
@@ -2077,8 +2091,8 @@ DataDatabricksAccountNetworkPolicyIngressCrossWorkspaceAccessDenyRulesAuthentica
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressCrossWorkspaceAccessDenyRulesAuthenticationIdentities.property.principalId">principalId</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#principal_id DataDatabricksAccountNetworkPolicy#principal_id}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressCrossWorkspaceAccessDenyRulesAuthenticationIdentities.property.principalType">principalType</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#principal_type DataDatabricksAccountNetworkPolicy#principal_type}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressCrossWorkspaceAccessDenyRulesAuthenticationIdentities.property.principalId">principalId</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#principal_id DataDatabricksAccountNetworkPolicy#principal_id}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressCrossWorkspaceAccessDenyRulesAuthenticationIdentities.property.principalType">principalType</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#principal_type DataDatabricksAccountNetworkPolicy#principal_type}. |
 
 ---
 
@@ -2090,7 +2104,7 @@ public java.lang.Number getPrincipalId();
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#principal_id DataDatabricksAccountNetworkPolicy#principal_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#principal_id DataDatabricksAccountNetworkPolicy#principal_id}.
 
 ---
 
@@ -2102,7 +2116,7 @@ public java.lang.String getPrincipalType();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#principal_type DataDatabricksAccountNetworkPolicy#principal_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#principal_type DataDatabricksAccountNetworkPolicy#principal_type}.
 
 ---
 
@@ -2129,14 +2143,14 @@ DataDatabricksAccountNetworkPolicyIngressCrossWorkspaceAccessDenyRulesDestinatio
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressCrossWorkspaceAccessDenyRulesDestination.property.accountApi">accountApi</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressCrossWorkspaceAccessDenyRulesDestinationAccountApi">DataDatabricksAccountNetworkPolicyIngressCrossWorkspaceAccessDenyRulesDestinationAccountApi</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#account_api DataDatabricksAccountNetworkPolicy#account_api}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressCrossWorkspaceAccessDenyRulesDestination.property.accountDatabricksOne">accountDatabricksOne</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressCrossWorkspaceAccessDenyRulesDestinationAccountDatabricksOne">DataDatabricksAccountNetworkPolicyIngressCrossWorkspaceAccessDenyRulesDestinationAccountDatabricksOne</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#account_databricks_one DataDatabricksAccountNetworkPolicy#account_databricks_one}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressCrossWorkspaceAccessDenyRulesDestination.property.accountUi">accountUi</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressCrossWorkspaceAccessDenyRulesDestinationAccountUi">DataDatabricksAccountNetworkPolicyIngressCrossWorkspaceAccessDenyRulesDestinationAccountUi</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#account_ui DataDatabricksAccountNetworkPolicy#account_ui}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressCrossWorkspaceAccessDenyRulesDestination.property.allDestinations">allDestinations</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#all_destinations DataDatabricksAccountNetworkPolicy#all_destinations}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressCrossWorkspaceAccessDenyRulesDestination.property.appsRuntime">appsRuntime</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressCrossWorkspaceAccessDenyRulesDestinationAppsRuntime">DataDatabricksAccountNetworkPolicyIngressCrossWorkspaceAccessDenyRulesDestinationAppsRuntime</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#apps_runtime DataDatabricksAccountNetworkPolicy#apps_runtime}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressCrossWorkspaceAccessDenyRulesDestination.property.lakebaseRuntime">lakebaseRuntime</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressCrossWorkspaceAccessDenyRulesDestinationLakebaseRuntime">DataDatabricksAccountNetworkPolicyIngressCrossWorkspaceAccessDenyRulesDestinationLakebaseRuntime</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#lakebase_runtime DataDatabricksAccountNetworkPolicy#lakebase_runtime}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressCrossWorkspaceAccessDenyRulesDestination.property.workspaceApi">workspaceApi</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressCrossWorkspaceAccessDenyRulesDestinationWorkspaceApi">DataDatabricksAccountNetworkPolicyIngressCrossWorkspaceAccessDenyRulesDestinationWorkspaceApi</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#workspace_api DataDatabricksAccountNetworkPolicy#workspace_api}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressCrossWorkspaceAccessDenyRulesDestination.property.workspaceUi">workspaceUi</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressCrossWorkspaceAccessDenyRulesDestinationWorkspaceUi">DataDatabricksAccountNetworkPolicyIngressCrossWorkspaceAccessDenyRulesDestinationWorkspaceUi</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#workspace_ui DataDatabricksAccountNetworkPolicy#workspace_ui}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressCrossWorkspaceAccessDenyRulesDestination.property.accountApi">accountApi</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressCrossWorkspaceAccessDenyRulesDestinationAccountApi">DataDatabricksAccountNetworkPolicyIngressCrossWorkspaceAccessDenyRulesDestinationAccountApi</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#account_api DataDatabricksAccountNetworkPolicy#account_api}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressCrossWorkspaceAccessDenyRulesDestination.property.accountDatabricksOne">accountDatabricksOne</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressCrossWorkspaceAccessDenyRulesDestinationAccountDatabricksOne">DataDatabricksAccountNetworkPolicyIngressCrossWorkspaceAccessDenyRulesDestinationAccountDatabricksOne</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#account_databricks_one DataDatabricksAccountNetworkPolicy#account_databricks_one}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressCrossWorkspaceAccessDenyRulesDestination.property.accountUi">accountUi</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressCrossWorkspaceAccessDenyRulesDestinationAccountUi">DataDatabricksAccountNetworkPolicyIngressCrossWorkspaceAccessDenyRulesDestinationAccountUi</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#account_ui DataDatabricksAccountNetworkPolicy#account_ui}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressCrossWorkspaceAccessDenyRulesDestination.property.allDestinations">allDestinations</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#all_destinations DataDatabricksAccountNetworkPolicy#all_destinations}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressCrossWorkspaceAccessDenyRulesDestination.property.appsRuntime">appsRuntime</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressCrossWorkspaceAccessDenyRulesDestinationAppsRuntime">DataDatabricksAccountNetworkPolicyIngressCrossWorkspaceAccessDenyRulesDestinationAppsRuntime</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#apps_runtime DataDatabricksAccountNetworkPolicy#apps_runtime}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressCrossWorkspaceAccessDenyRulesDestination.property.lakebaseRuntime">lakebaseRuntime</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressCrossWorkspaceAccessDenyRulesDestinationLakebaseRuntime">DataDatabricksAccountNetworkPolicyIngressCrossWorkspaceAccessDenyRulesDestinationLakebaseRuntime</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#lakebase_runtime DataDatabricksAccountNetworkPolicy#lakebase_runtime}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressCrossWorkspaceAccessDenyRulesDestination.property.workspaceApi">workspaceApi</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressCrossWorkspaceAccessDenyRulesDestinationWorkspaceApi">DataDatabricksAccountNetworkPolicyIngressCrossWorkspaceAccessDenyRulesDestinationWorkspaceApi</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#workspace_api DataDatabricksAccountNetworkPolicy#workspace_api}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressCrossWorkspaceAccessDenyRulesDestination.property.workspaceUi">workspaceUi</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressCrossWorkspaceAccessDenyRulesDestinationWorkspaceUi">DataDatabricksAccountNetworkPolicyIngressCrossWorkspaceAccessDenyRulesDestinationWorkspaceUi</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#workspace_ui DataDatabricksAccountNetworkPolicy#workspace_ui}. |
 
 ---
 
@@ -2148,7 +2162,7 @@ public DataDatabricksAccountNetworkPolicyIngressCrossWorkspaceAccessDenyRulesDes
 
 - *Type:* <a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressCrossWorkspaceAccessDenyRulesDestinationAccountApi">DataDatabricksAccountNetworkPolicyIngressCrossWorkspaceAccessDenyRulesDestinationAccountApi</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#account_api DataDatabricksAccountNetworkPolicy#account_api}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#account_api DataDatabricksAccountNetworkPolicy#account_api}.
 
 ---
 
@@ -2160,7 +2174,7 @@ public DataDatabricksAccountNetworkPolicyIngressCrossWorkspaceAccessDenyRulesDes
 
 - *Type:* <a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressCrossWorkspaceAccessDenyRulesDestinationAccountDatabricksOne">DataDatabricksAccountNetworkPolicyIngressCrossWorkspaceAccessDenyRulesDestinationAccountDatabricksOne</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#account_databricks_one DataDatabricksAccountNetworkPolicy#account_databricks_one}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#account_databricks_one DataDatabricksAccountNetworkPolicy#account_databricks_one}.
 
 ---
 
@@ -2172,7 +2186,7 @@ public DataDatabricksAccountNetworkPolicyIngressCrossWorkspaceAccessDenyRulesDes
 
 - *Type:* <a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressCrossWorkspaceAccessDenyRulesDestinationAccountUi">DataDatabricksAccountNetworkPolicyIngressCrossWorkspaceAccessDenyRulesDestinationAccountUi</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#account_ui DataDatabricksAccountNetworkPolicy#account_ui}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#account_ui DataDatabricksAccountNetworkPolicy#account_ui}.
 
 ---
 
@@ -2184,7 +2198,7 @@ public java.lang.Boolean|IResolvable getAllDestinations();
 
 - *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#all_destinations DataDatabricksAccountNetworkPolicy#all_destinations}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#all_destinations DataDatabricksAccountNetworkPolicy#all_destinations}.
 
 ---
 
@@ -2196,7 +2210,7 @@ public DataDatabricksAccountNetworkPolicyIngressCrossWorkspaceAccessDenyRulesDes
 
 - *Type:* <a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressCrossWorkspaceAccessDenyRulesDestinationAppsRuntime">DataDatabricksAccountNetworkPolicyIngressCrossWorkspaceAccessDenyRulesDestinationAppsRuntime</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#apps_runtime DataDatabricksAccountNetworkPolicy#apps_runtime}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#apps_runtime DataDatabricksAccountNetworkPolicy#apps_runtime}.
 
 ---
 
@@ -2208,7 +2222,7 @@ public DataDatabricksAccountNetworkPolicyIngressCrossWorkspaceAccessDenyRulesDes
 
 - *Type:* <a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressCrossWorkspaceAccessDenyRulesDestinationLakebaseRuntime">DataDatabricksAccountNetworkPolicyIngressCrossWorkspaceAccessDenyRulesDestinationLakebaseRuntime</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#lakebase_runtime DataDatabricksAccountNetworkPolicy#lakebase_runtime}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#lakebase_runtime DataDatabricksAccountNetworkPolicy#lakebase_runtime}.
 
 ---
 
@@ -2220,7 +2234,7 @@ public DataDatabricksAccountNetworkPolicyIngressCrossWorkspaceAccessDenyRulesDes
 
 - *Type:* <a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressCrossWorkspaceAccessDenyRulesDestinationWorkspaceApi">DataDatabricksAccountNetworkPolicyIngressCrossWorkspaceAccessDenyRulesDestinationWorkspaceApi</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#workspace_api DataDatabricksAccountNetworkPolicy#workspace_api}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#workspace_api DataDatabricksAccountNetworkPolicy#workspace_api}.
 
 ---
 
@@ -2232,7 +2246,7 @@ public DataDatabricksAccountNetworkPolicyIngressCrossWorkspaceAccessDenyRulesDes
 
 - *Type:* <a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressCrossWorkspaceAccessDenyRulesDestinationWorkspaceUi">DataDatabricksAccountNetworkPolicyIngressCrossWorkspaceAccessDenyRulesDestinationWorkspaceUi</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#workspace_ui DataDatabricksAccountNetworkPolicy#workspace_ui}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#workspace_ui DataDatabricksAccountNetworkPolicy#workspace_ui}.
 
 ---
 
@@ -2253,8 +2267,8 @@ DataDatabricksAccountNetworkPolicyIngressCrossWorkspaceAccessDenyRulesDestinatio
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressCrossWorkspaceAccessDenyRulesDestinationAccountApi.property.scopeQualifier">scopeQualifier</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#scope_qualifier DataDatabricksAccountNetworkPolicy#scope_qualifier}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressCrossWorkspaceAccessDenyRulesDestinationAccountApi.property.scopes">scopes</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#scopes DataDatabricksAccountNetworkPolicy#scopes}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressCrossWorkspaceAccessDenyRulesDestinationAccountApi.property.scopeQualifier">scopeQualifier</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#scope_qualifier DataDatabricksAccountNetworkPolicy#scope_qualifier}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressCrossWorkspaceAccessDenyRulesDestinationAccountApi.property.scopes">scopes</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#scopes DataDatabricksAccountNetworkPolicy#scopes}. |
 
 ---
 
@@ -2266,7 +2280,7 @@ public java.lang.String getScopeQualifier();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#scope_qualifier DataDatabricksAccountNetworkPolicy#scope_qualifier}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#scope_qualifier DataDatabricksAccountNetworkPolicy#scope_qualifier}.
 
 ---
 
@@ -2278,7 +2292,7 @@ public java.util.List<java.lang.String> getScopes();
 
 - *Type:* java.util.List<java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#scopes DataDatabricksAccountNetworkPolicy#scopes}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#scopes DataDatabricksAccountNetworkPolicy#scopes}.
 
 ---
 
@@ -2298,7 +2312,7 @@ DataDatabricksAccountNetworkPolicyIngressCrossWorkspaceAccessDenyRulesDestinatio
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressCrossWorkspaceAccessDenyRulesDestinationAccountDatabricksOne.property.allDestinations">allDestinations</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#all_destinations DataDatabricksAccountNetworkPolicy#all_destinations}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressCrossWorkspaceAccessDenyRulesDestinationAccountDatabricksOne.property.allDestinations">allDestinations</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#all_destinations DataDatabricksAccountNetworkPolicy#all_destinations}. |
 
 ---
 
@@ -2310,7 +2324,7 @@ public java.lang.Boolean|IResolvable getAllDestinations();
 
 - *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#all_destinations DataDatabricksAccountNetworkPolicy#all_destinations}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#all_destinations DataDatabricksAccountNetworkPolicy#all_destinations}.
 
 ---
 
@@ -2330,7 +2344,7 @@ DataDatabricksAccountNetworkPolicyIngressCrossWorkspaceAccessDenyRulesDestinatio
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressCrossWorkspaceAccessDenyRulesDestinationAccountUi.property.allDestinations">allDestinations</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#all_destinations DataDatabricksAccountNetworkPolicy#all_destinations}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressCrossWorkspaceAccessDenyRulesDestinationAccountUi.property.allDestinations">allDestinations</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#all_destinations DataDatabricksAccountNetworkPolicy#all_destinations}. |
 
 ---
 
@@ -2342,7 +2356,7 @@ public java.lang.Boolean|IResolvable getAllDestinations();
 
 - *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#all_destinations DataDatabricksAccountNetworkPolicy#all_destinations}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#all_destinations DataDatabricksAccountNetworkPolicy#all_destinations}.
 
 ---
 
@@ -2362,7 +2376,7 @@ DataDatabricksAccountNetworkPolicyIngressCrossWorkspaceAccessDenyRulesDestinatio
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressCrossWorkspaceAccessDenyRulesDestinationAppsRuntime.property.allDestinations">allDestinations</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#all_destinations DataDatabricksAccountNetworkPolicy#all_destinations}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressCrossWorkspaceAccessDenyRulesDestinationAppsRuntime.property.allDestinations">allDestinations</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#all_destinations DataDatabricksAccountNetworkPolicy#all_destinations}. |
 
 ---
 
@@ -2374,7 +2388,7 @@ public java.lang.Boolean|IResolvable getAllDestinations();
 
 - *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#all_destinations DataDatabricksAccountNetworkPolicy#all_destinations}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#all_destinations DataDatabricksAccountNetworkPolicy#all_destinations}.
 
 ---
 
@@ -2394,7 +2408,7 @@ DataDatabricksAccountNetworkPolicyIngressCrossWorkspaceAccessDenyRulesDestinatio
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressCrossWorkspaceAccessDenyRulesDestinationLakebaseRuntime.property.allDestinations">allDestinations</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#all_destinations DataDatabricksAccountNetworkPolicy#all_destinations}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressCrossWorkspaceAccessDenyRulesDestinationLakebaseRuntime.property.allDestinations">allDestinations</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#all_destinations DataDatabricksAccountNetworkPolicy#all_destinations}. |
 
 ---
 
@@ -2406,7 +2420,7 @@ public java.lang.Boolean|IResolvable getAllDestinations();
 
 - *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#all_destinations DataDatabricksAccountNetworkPolicy#all_destinations}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#all_destinations DataDatabricksAccountNetworkPolicy#all_destinations}.
 
 ---
 
@@ -2418,6 +2432,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 import io.cdktn.providers.databricks.data_databricks_account_network_policy.DataDatabricksAccountNetworkPolicyIngressCrossWorkspaceAccessDenyRulesDestinationWorkspaceApi;
 
 DataDatabricksAccountNetworkPolicyIngressCrossWorkspaceAccessDenyRulesDestinationWorkspaceApi.builder()
+//  .excludedScopes(java.util.List<java.lang.String>)
 //  .scopeQualifier(java.lang.String)
 //  .scopes(java.util.List<java.lang.String>)
     .build();
@@ -2427,8 +2442,21 @@ DataDatabricksAccountNetworkPolicyIngressCrossWorkspaceAccessDenyRulesDestinatio
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressCrossWorkspaceAccessDenyRulesDestinationWorkspaceApi.property.scopeQualifier">scopeQualifier</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#scope_qualifier DataDatabricksAccountNetworkPolicy#scope_qualifier}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressCrossWorkspaceAccessDenyRulesDestinationWorkspaceApi.property.scopes">scopes</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#scopes DataDatabricksAccountNetworkPolicy#scopes}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressCrossWorkspaceAccessDenyRulesDestinationWorkspaceApi.property.excludedScopes">excludedScopes</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#excluded_scopes DataDatabricksAccountNetworkPolicy#excluded_scopes}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressCrossWorkspaceAccessDenyRulesDestinationWorkspaceApi.property.scopeQualifier">scopeQualifier</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#scope_qualifier DataDatabricksAccountNetworkPolicy#scope_qualifier}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressCrossWorkspaceAccessDenyRulesDestinationWorkspaceApi.property.scopes">scopes</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#scopes DataDatabricksAccountNetworkPolicy#scopes}. |
+
+---
+
+##### `excludedScopes`<sup>Optional</sup> <a name="excludedScopes" id="@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressCrossWorkspaceAccessDenyRulesDestinationWorkspaceApi.property.excludedScopes"></a>
+
+```java
+public java.util.List<java.lang.String> getExcludedScopes();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#excluded_scopes DataDatabricksAccountNetworkPolicy#excluded_scopes}.
 
 ---
 
@@ -2440,7 +2468,7 @@ public java.lang.String getScopeQualifier();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#scope_qualifier DataDatabricksAccountNetworkPolicy#scope_qualifier}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#scope_qualifier DataDatabricksAccountNetworkPolicy#scope_qualifier}.
 
 ---
 
@@ -2452,7 +2480,7 @@ public java.util.List<java.lang.String> getScopes();
 
 - *Type:* java.util.List<java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#scopes DataDatabricksAccountNetworkPolicy#scopes}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#scopes DataDatabricksAccountNetworkPolicy#scopes}.
 
 ---
 
@@ -2472,7 +2500,7 @@ DataDatabricksAccountNetworkPolicyIngressCrossWorkspaceAccessDenyRulesDestinatio
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressCrossWorkspaceAccessDenyRulesDestinationWorkspaceUi.property.allDestinations">allDestinations</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#all_destinations DataDatabricksAccountNetworkPolicy#all_destinations}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressCrossWorkspaceAccessDenyRulesDestinationWorkspaceUi.property.allDestinations">allDestinations</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#all_destinations DataDatabricksAccountNetworkPolicy#all_destinations}. |
 
 ---
 
@@ -2484,7 +2512,7 @@ public java.lang.Boolean|IResolvable getAllDestinations();
 
 - *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#all_destinations DataDatabricksAccountNetworkPolicy#all_destinations}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#all_destinations DataDatabricksAccountNetworkPolicy#all_destinations}.
 
 ---
 
@@ -2505,8 +2533,8 @@ DataDatabricksAccountNetworkPolicyIngressCrossWorkspaceAccessDenyRulesOrigin.bui
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressCrossWorkspaceAccessDenyRulesOrigin.property.allSourceWorkspaces">allSourceWorkspaces</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#all_source_workspaces DataDatabricksAccountNetworkPolicy#all_source_workspaces}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressCrossWorkspaceAccessDenyRulesOrigin.property.selectedWorkspaces">selectedWorkspaces</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressCrossWorkspaceAccessDenyRulesOriginSelectedWorkspaces">DataDatabricksAccountNetworkPolicyIngressCrossWorkspaceAccessDenyRulesOriginSelectedWorkspaces</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#selected_workspaces DataDatabricksAccountNetworkPolicy#selected_workspaces}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressCrossWorkspaceAccessDenyRulesOrigin.property.allSourceWorkspaces">allSourceWorkspaces</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#all_source_workspaces DataDatabricksAccountNetworkPolicy#all_source_workspaces}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressCrossWorkspaceAccessDenyRulesOrigin.property.selectedWorkspaces">selectedWorkspaces</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressCrossWorkspaceAccessDenyRulesOriginSelectedWorkspaces">DataDatabricksAccountNetworkPolicyIngressCrossWorkspaceAccessDenyRulesOriginSelectedWorkspaces</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#selected_workspaces DataDatabricksAccountNetworkPolicy#selected_workspaces}. |
 
 ---
 
@@ -2518,7 +2546,7 @@ public java.lang.Boolean|IResolvable getAllSourceWorkspaces();
 
 - *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#all_source_workspaces DataDatabricksAccountNetworkPolicy#all_source_workspaces}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#all_source_workspaces DataDatabricksAccountNetworkPolicy#all_source_workspaces}.
 
 ---
 
@@ -2530,7 +2558,7 @@ public DataDatabricksAccountNetworkPolicyIngressCrossWorkspaceAccessDenyRulesOri
 
 - *Type:* <a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressCrossWorkspaceAccessDenyRulesOriginSelectedWorkspaces">DataDatabricksAccountNetworkPolicyIngressCrossWorkspaceAccessDenyRulesOriginSelectedWorkspaces</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#selected_workspaces DataDatabricksAccountNetworkPolicy#selected_workspaces}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#selected_workspaces DataDatabricksAccountNetworkPolicy#selected_workspaces}.
 
 ---
 
@@ -2550,7 +2578,7 @@ DataDatabricksAccountNetworkPolicyIngressCrossWorkspaceAccessDenyRulesOriginSele
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressCrossWorkspaceAccessDenyRulesOriginSelectedWorkspaces.property.workspaceIds">workspaceIds</a></code> | <code>java.util.List<java.lang.Number></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#workspace_ids DataDatabricksAccountNetworkPolicy#workspace_ids}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressCrossWorkspaceAccessDenyRulesOriginSelectedWorkspaces.property.workspaceIds">workspaceIds</a></code> | <code>java.util.List<java.lang.Number></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#workspace_ids DataDatabricksAccountNetworkPolicy#workspace_ids}. |
 
 ---
 
@@ -2562,7 +2590,7 @@ public java.util.List<java.lang.Number> getWorkspaceIds();
 
 - *Type:* java.util.List<java.lang.Number>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#workspace_ids DataDatabricksAccountNetworkPolicy#workspace_ids}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#workspace_ids DataDatabricksAccountNetworkPolicy#workspace_ids}.
 
 ---
 
@@ -2584,9 +2612,9 @@ DataDatabricksAccountNetworkPolicyIngressDryRun.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRun.property.crossWorkspaceAccess">crossWorkspaceAccess</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunCrossWorkspaceAccess">DataDatabricksAccountNetworkPolicyIngressDryRunCrossWorkspaceAccess</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#cross_workspace_access DataDatabricksAccountNetworkPolicy#cross_workspace_access}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRun.property.privateAccess">privateAccess</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPrivateAccess">DataDatabricksAccountNetworkPolicyIngressDryRunPrivateAccess</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#private_access DataDatabricksAccountNetworkPolicy#private_access}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRun.property.publicAccess">publicAccess</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPublicAccess">DataDatabricksAccountNetworkPolicyIngressDryRunPublicAccess</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#public_access DataDatabricksAccountNetworkPolicy#public_access}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRun.property.crossWorkspaceAccess">crossWorkspaceAccess</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunCrossWorkspaceAccess">DataDatabricksAccountNetworkPolicyIngressDryRunCrossWorkspaceAccess</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#cross_workspace_access DataDatabricksAccountNetworkPolicy#cross_workspace_access}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRun.property.privateAccess">privateAccess</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPrivateAccess">DataDatabricksAccountNetworkPolicyIngressDryRunPrivateAccess</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#private_access DataDatabricksAccountNetworkPolicy#private_access}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRun.property.publicAccess">publicAccess</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPublicAccess">DataDatabricksAccountNetworkPolicyIngressDryRunPublicAccess</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#public_access DataDatabricksAccountNetworkPolicy#public_access}. |
 
 ---
 
@@ -2598,7 +2626,7 @@ public DataDatabricksAccountNetworkPolicyIngressDryRunCrossWorkspaceAccess getCr
 
 - *Type:* <a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunCrossWorkspaceAccess">DataDatabricksAccountNetworkPolicyIngressDryRunCrossWorkspaceAccess</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#cross_workspace_access DataDatabricksAccountNetworkPolicy#cross_workspace_access}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#cross_workspace_access DataDatabricksAccountNetworkPolicy#cross_workspace_access}.
 
 ---
 
@@ -2610,7 +2638,7 @@ public DataDatabricksAccountNetworkPolicyIngressDryRunPrivateAccess getPrivateAc
 
 - *Type:* <a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPrivateAccess">DataDatabricksAccountNetworkPolicyIngressDryRunPrivateAccess</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#private_access DataDatabricksAccountNetworkPolicy#private_access}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#private_access DataDatabricksAccountNetworkPolicy#private_access}.
 
 ---
 
@@ -2622,7 +2650,7 @@ public DataDatabricksAccountNetworkPolicyIngressDryRunPublicAccess getPublicAcce
 
 - *Type:* <a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPublicAccess">DataDatabricksAccountNetworkPolicyIngressDryRunPublicAccess</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#public_access DataDatabricksAccountNetworkPolicy#public_access}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#public_access DataDatabricksAccountNetworkPolicy#public_access}.
 
 ---
 
@@ -2644,9 +2672,9 @@ DataDatabricksAccountNetworkPolicyIngressDryRunCrossWorkspaceAccess.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunCrossWorkspaceAccess.property.restrictionMode">restrictionMode</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#restriction_mode DataDatabricksAccountNetworkPolicy#restriction_mode}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunCrossWorkspaceAccess.property.allowRules">allowRules</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunCrossWorkspaceAccessAllowRules">DataDatabricksAccountNetworkPolicyIngressDryRunCrossWorkspaceAccessAllowRules</a>></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#allow_rules DataDatabricksAccountNetworkPolicy#allow_rules}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunCrossWorkspaceAccess.property.denyRules">denyRules</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunCrossWorkspaceAccessDenyRules">DataDatabricksAccountNetworkPolicyIngressDryRunCrossWorkspaceAccessDenyRules</a>></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#deny_rules DataDatabricksAccountNetworkPolicy#deny_rules}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunCrossWorkspaceAccess.property.restrictionMode">restrictionMode</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#restriction_mode DataDatabricksAccountNetworkPolicy#restriction_mode}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunCrossWorkspaceAccess.property.allowRules">allowRules</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunCrossWorkspaceAccessAllowRules">DataDatabricksAccountNetworkPolicyIngressDryRunCrossWorkspaceAccessAllowRules</a>></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#allow_rules DataDatabricksAccountNetworkPolicy#allow_rules}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunCrossWorkspaceAccess.property.denyRules">denyRules</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunCrossWorkspaceAccessDenyRules">DataDatabricksAccountNetworkPolicyIngressDryRunCrossWorkspaceAccessDenyRules</a>></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#deny_rules DataDatabricksAccountNetworkPolicy#deny_rules}. |
 
 ---
 
@@ -2658,7 +2686,7 @@ public java.lang.String getRestrictionMode();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#restriction_mode DataDatabricksAccountNetworkPolicy#restriction_mode}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#restriction_mode DataDatabricksAccountNetworkPolicy#restriction_mode}.
 
 ---
 
@@ -2670,7 +2698,7 @@ public IResolvable|java.util.List<DataDatabricksAccountNetworkPolicyIngressDryRu
 
 - *Type:* io.cdktn.cdktn.IResolvable|java.util.List<<a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunCrossWorkspaceAccessAllowRules">DataDatabricksAccountNetworkPolicyIngressDryRunCrossWorkspaceAccessAllowRules</a>>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#allow_rules DataDatabricksAccountNetworkPolicy#allow_rules}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#allow_rules DataDatabricksAccountNetworkPolicy#allow_rules}.
 
 ---
 
@@ -2682,7 +2710,7 @@ public IResolvable|java.util.List<DataDatabricksAccountNetworkPolicyIngressDryRu
 
 - *Type:* io.cdktn.cdktn.IResolvable|java.util.List<<a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunCrossWorkspaceAccessDenyRules">DataDatabricksAccountNetworkPolicyIngressDryRunCrossWorkspaceAccessDenyRules</a>>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#deny_rules DataDatabricksAccountNetworkPolicy#deny_rules}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#deny_rules DataDatabricksAccountNetworkPolicy#deny_rules}.
 
 ---
 
@@ -2705,10 +2733,10 @@ DataDatabricksAccountNetworkPolicyIngressDryRunCrossWorkspaceAccessAllowRules.bu
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunCrossWorkspaceAccessAllowRules.property.authentication">authentication</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunCrossWorkspaceAccessAllowRulesAuthentication">DataDatabricksAccountNetworkPolicyIngressDryRunCrossWorkspaceAccessAllowRulesAuthentication</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#authentication DataDatabricksAccountNetworkPolicy#authentication}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunCrossWorkspaceAccessAllowRules.property.destination">destination</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunCrossWorkspaceAccessAllowRulesDestination">DataDatabricksAccountNetworkPolicyIngressDryRunCrossWorkspaceAccessAllowRulesDestination</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#destination DataDatabricksAccountNetworkPolicy#destination}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunCrossWorkspaceAccessAllowRules.property.label">label</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#label DataDatabricksAccountNetworkPolicy#label}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunCrossWorkspaceAccessAllowRules.property.origin">origin</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunCrossWorkspaceAccessAllowRulesOrigin">DataDatabricksAccountNetworkPolicyIngressDryRunCrossWorkspaceAccessAllowRulesOrigin</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#origin DataDatabricksAccountNetworkPolicy#origin}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunCrossWorkspaceAccessAllowRules.property.authentication">authentication</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunCrossWorkspaceAccessAllowRulesAuthentication">DataDatabricksAccountNetworkPolicyIngressDryRunCrossWorkspaceAccessAllowRulesAuthentication</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#authentication DataDatabricksAccountNetworkPolicy#authentication}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunCrossWorkspaceAccessAllowRules.property.destination">destination</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunCrossWorkspaceAccessAllowRulesDestination">DataDatabricksAccountNetworkPolicyIngressDryRunCrossWorkspaceAccessAllowRulesDestination</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#destination DataDatabricksAccountNetworkPolicy#destination}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunCrossWorkspaceAccessAllowRules.property.label">label</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#label DataDatabricksAccountNetworkPolicy#label}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunCrossWorkspaceAccessAllowRules.property.origin">origin</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunCrossWorkspaceAccessAllowRulesOrigin">DataDatabricksAccountNetworkPolicyIngressDryRunCrossWorkspaceAccessAllowRulesOrigin</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#origin DataDatabricksAccountNetworkPolicy#origin}. |
 
 ---
 
@@ -2720,7 +2748,7 @@ public DataDatabricksAccountNetworkPolicyIngressDryRunCrossWorkspaceAccessAllowR
 
 - *Type:* <a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunCrossWorkspaceAccessAllowRulesAuthentication">DataDatabricksAccountNetworkPolicyIngressDryRunCrossWorkspaceAccessAllowRulesAuthentication</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#authentication DataDatabricksAccountNetworkPolicy#authentication}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#authentication DataDatabricksAccountNetworkPolicy#authentication}.
 
 ---
 
@@ -2732,7 +2760,7 @@ public DataDatabricksAccountNetworkPolicyIngressDryRunCrossWorkspaceAccessAllowR
 
 - *Type:* <a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunCrossWorkspaceAccessAllowRulesDestination">DataDatabricksAccountNetworkPolicyIngressDryRunCrossWorkspaceAccessAllowRulesDestination</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#destination DataDatabricksAccountNetworkPolicy#destination}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#destination DataDatabricksAccountNetworkPolicy#destination}.
 
 ---
 
@@ -2744,7 +2772,7 @@ public java.lang.String getLabel();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#label DataDatabricksAccountNetworkPolicy#label}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#label DataDatabricksAccountNetworkPolicy#label}.
 
 ---
 
@@ -2756,7 +2784,7 @@ public DataDatabricksAccountNetworkPolicyIngressDryRunCrossWorkspaceAccessAllowR
 
 - *Type:* <a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunCrossWorkspaceAccessAllowRulesOrigin">DataDatabricksAccountNetworkPolicyIngressDryRunCrossWorkspaceAccessAllowRulesOrigin</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#origin DataDatabricksAccountNetworkPolicy#origin}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#origin DataDatabricksAccountNetworkPolicy#origin}.
 
 ---
 
@@ -2777,8 +2805,8 @@ DataDatabricksAccountNetworkPolicyIngressDryRunCrossWorkspaceAccessAllowRulesAut
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunCrossWorkspaceAccessAllowRulesAuthentication.property.identities">identities</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunCrossWorkspaceAccessAllowRulesAuthenticationIdentities">DataDatabricksAccountNetworkPolicyIngressDryRunCrossWorkspaceAccessAllowRulesAuthenticationIdentities</a>></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#identities DataDatabricksAccountNetworkPolicy#identities}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunCrossWorkspaceAccessAllowRulesAuthentication.property.identityType">identityType</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#identity_type DataDatabricksAccountNetworkPolicy#identity_type}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunCrossWorkspaceAccessAllowRulesAuthentication.property.identities">identities</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunCrossWorkspaceAccessAllowRulesAuthenticationIdentities">DataDatabricksAccountNetworkPolicyIngressDryRunCrossWorkspaceAccessAllowRulesAuthenticationIdentities</a>></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#identities DataDatabricksAccountNetworkPolicy#identities}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunCrossWorkspaceAccessAllowRulesAuthentication.property.identityType">identityType</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#identity_type DataDatabricksAccountNetworkPolicy#identity_type}. |
 
 ---
 
@@ -2790,7 +2818,7 @@ public IResolvable|java.util.List<DataDatabricksAccountNetworkPolicyIngressDryRu
 
 - *Type:* io.cdktn.cdktn.IResolvable|java.util.List<<a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunCrossWorkspaceAccessAllowRulesAuthenticationIdentities">DataDatabricksAccountNetworkPolicyIngressDryRunCrossWorkspaceAccessAllowRulesAuthenticationIdentities</a>>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#identities DataDatabricksAccountNetworkPolicy#identities}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#identities DataDatabricksAccountNetworkPolicy#identities}.
 
 ---
 
@@ -2802,7 +2830,7 @@ public java.lang.String getIdentityType();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#identity_type DataDatabricksAccountNetworkPolicy#identity_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#identity_type DataDatabricksAccountNetworkPolicy#identity_type}.
 
 ---
 
@@ -2823,8 +2851,8 @@ DataDatabricksAccountNetworkPolicyIngressDryRunCrossWorkspaceAccessAllowRulesAut
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunCrossWorkspaceAccessAllowRulesAuthenticationIdentities.property.principalId">principalId</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#principal_id DataDatabricksAccountNetworkPolicy#principal_id}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunCrossWorkspaceAccessAllowRulesAuthenticationIdentities.property.principalType">principalType</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#principal_type DataDatabricksAccountNetworkPolicy#principal_type}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunCrossWorkspaceAccessAllowRulesAuthenticationIdentities.property.principalId">principalId</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#principal_id DataDatabricksAccountNetworkPolicy#principal_id}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunCrossWorkspaceAccessAllowRulesAuthenticationIdentities.property.principalType">principalType</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#principal_type DataDatabricksAccountNetworkPolicy#principal_type}. |
 
 ---
 
@@ -2836,7 +2864,7 @@ public java.lang.Number getPrincipalId();
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#principal_id DataDatabricksAccountNetworkPolicy#principal_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#principal_id DataDatabricksAccountNetworkPolicy#principal_id}.
 
 ---
 
@@ -2848,7 +2876,7 @@ public java.lang.String getPrincipalType();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#principal_type DataDatabricksAccountNetworkPolicy#principal_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#principal_type DataDatabricksAccountNetworkPolicy#principal_type}.
 
 ---
 
@@ -2875,14 +2903,14 @@ DataDatabricksAccountNetworkPolicyIngressDryRunCrossWorkspaceAccessAllowRulesDes
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunCrossWorkspaceAccessAllowRulesDestination.property.accountApi">accountApi</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunCrossWorkspaceAccessAllowRulesDestinationAccountApi">DataDatabricksAccountNetworkPolicyIngressDryRunCrossWorkspaceAccessAllowRulesDestinationAccountApi</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#account_api DataDatabricksAccountNetworkPolicy#account_api}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunCrossWorkspaceAccessAllowRulesDestination.property.accountDatabricksOne">accountDatabricksOne</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunCrossWorkspaceAccessAllowRulesDestinationAccountDatabricksOne">DataDatabricksAccountNetworkPolicyIngressDryRunCrossWorkspaceAccessAllowRulesDestinationAccountDatabricksOne</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#account_databricks_one DataDatabricksAccountNetworkPolicy#account_databricks_one}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunCrossWorkspaceAccessAllowRulesDestination.property.accountUi">accountUi</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunCrossWorkspaceAccessAllowRulesDestinationAccountUi">DataDatabricksAccountNetworkPolicyIngressDryRunCrossWorkspaceAccessAllowRulesDestinationAccountUi</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#account_ui DataDatabricksAccountNetworkPolicy#account_ui}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunCrossWorkspaceAccessAllowRulesDestination.property.allDestinations">allDestinations</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#all_destinations DataDatabricksAccountNetworkPolicy#all_destinations}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunCrossWorkspaceAccessAllowRulesDestination.property.appsRuntime">appsRuntime</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunCrossWorkspaceAccessAllowRulesDestinationAppsRuntime">DataDatabricksAccountNetworkPolicyIngressDryRunCrossWorkspaceAccessAllowRulesDestinationAppsRuntime</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#apps_runtime DataDatabricksAccountNetworkPolicy#apps_runtime}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunCrossWorkspaceAccessAllowRulesDestination.property.lakebaseRuntime">lakebaseRuntime</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunCrossWorkspaceAccessAllowRulesDestinationLakebaseRuntime">DataDatabricksAccountNetworkPolicyIngressDryRunCrossWorkspaceAccessAllowRulesDestinationLakebaseRuntime</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#lakebase_runtime DataDatabricksAccountNetworkPolicy#lakebase_runtime}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunCrossWorkspaceAccessAllowRulesDestination.property.workspaceApi">workspaceApi</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunCrossWorkspaceAccessAllowRulesDestinationWorkspaceApi">DataDatabricksAccountNetworkPolicyIngressDryRunCrossWorkspaceAccessAllowRulesDestinationWorkspaceApi</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#workspace_api DataDatabricksAccountNetworkPolicy#workspace_api}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunCrossWorkspaceAccessAllowRulesDestination.property.workspaceUi">workspaceUi</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunCrossWorkspaceAccessAllowRulesDestinationWorkspaceUi">DataDatabricksAccountNetworkPolicyIngressDryRunCrossWorkspaceAccessAllowRulesDestinationWorkspaceUi</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#workspace_ui DataDatabricksAccountNetworkPolicy#workspace_ui}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunCrossWorkspaceAccessAllowRulesDestination.property.accountApi">accountApi</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunCrossWorkspaceAccessAllowRulesDestinationAccountApi">DataDatabricksAccountNetworkPolicyIngressDryRunCrossWorkspaceAccessAllowRulesDestinationAccountApi</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#account_api DataDatabricksAccountNetworkPolicy#account_api}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunCrossWorkspaceAccessAllowRulesDestination.property.accountDatabricksOne">accountDatabricksOne</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunCrossWorkspaceAccessAllowRulesDestinationAccountDatabricksOne">DataDatabricksAccountNetworkPolicyIngressDryRunCrossWorkspaceAccessAllowRulesDestinationAccountDatabricksOne</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#account_databricks_one DataDatabricksAccountNetworkPolicy#account_databricks_one}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunCrossWorkspaceAccessAllowRulesDestination.property.accountUi">accountUi</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunCrossWorkspaceAccessAllowRulesDestinationAccountUi">DataDatabricksAccountNetworkPolicyIngressDryRunCrossWorkspaceAccessAllowRulesDestinationAccountUi</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#account_ui DataDatabricksAccountNetworkPolicy#account_ui}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunCrossWorkspaceAccessAllowRulesDestination.property.allDestinations">allDestinations</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#all_destinations DataDatabricksAccountNetworkPolicy#all_destinations}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunCrossWorkspaceAccessAllowRulesDestination.property.appsRuntime">appsRuntime</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunCrossWorkspaceAccessAllowRulesDestinationAppsRuntime">DataDatabricksAccountNetworkPolicyIngressDryRunCrossWorkspaceAccessAllowRulesDestinationAppsRuntime</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#apps_runtime DataDatabricksAccountNetworkPolicy#apps_runtime}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunCrossWorkspaceAccessAllowRulesDestination.property.lakebaseRuntime">lakebaseRuntime</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunCrossWorkspaceAccessAllowRulesDestinationLakebaseRuntime">DataDatabricksAccountNetworkPolicyIngressDryRunCrossWorkspaceAccessAllowRulesDestinationLakebaseRuntime</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#lakebase_runtime DataDatabricksAccountNetworkPolicy#lakebase_runtime}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunCrossWorkspaceAccessAllowRulesDestination.property.workspaceApi">workspaceApi</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunCrossWorkspaceAccessAllowRulesDestinationWorkspaceApi">DataDatabricksAccountNetworkPolicyIngressDryRunCrossWorkspaceAccessAllowRulesDestinationWorkspaceApi</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#workspace_api DataDatabricksAccountNetworkPolicy#workspace_api}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunCrossWorkspaceAccessAllowRulesDestination.property.workspaceUi">workspaceUi</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunCrossWorkspaceAccessAllowRulesDestinationWorkspaceUi">DataDatabricksAccountNetworkPolicyIngressDryRunCrossWorkspaceAccessAllowRulesDestinationWorkspaceUi</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#workspace_ui DataDatabricksAccountNetworkPolicy#workspace_ui}. |
 
 ---
 
@@ -2894,7 +2922,7 @@ public DataDatabricksAccountNetworkPolicyIngressDryRunCrossWorkspaceAccessAllowR
 
 - *Type:* <a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunCrossWorkspaceAccessAllowRulesDestinationAccountApi">DataDatabricksAccountNetworkPolicyIngressDryRunCrossWorkspaceAccessAllowRulesDestinationAccountApi</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#account_api DataDatabricksAccountNetworkPolicy#account_api}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#account_api DataDatabricksAccountNetworkPolicy#account_api}.
 
 ---
 
@@ -2906,7 +2934,7 @@ public DataDatabricksAccountNetworkPolicyIngressDryRunCrossWorkspaceAccessAllowR
 
 - *Type:* <a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunCrossWorkspaceAccessAllowRulesDestinationAccountDatabricksOne">DataDatabricksAccountNetworkPolicyIngressDryRunCrossWorkspaceAccessAllowRulesDestinationAccountDatabricksOne</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#account_databricks_one DataDatabricksAccountNetworkPolicy#account_databricks_one}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#account_databricks_one DataDatabricksAccountNetworkPolicy#account_databricks_one}.
 
 ---
 
@@ -2918,7 +2946,7 @@ public DataDatabricksAccountNetworkPolicyIngressDryRunCrossWorkspaceAccessAllowR
 
 - *Type:* <a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunCrossWorkspaceAccessAllowRulesDestinationAccountUi">DataDatabricksAccountNetworkPolicyIngressDryRunCrossWorkspaceAccessAllowRulesDestinationAccountUi</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#account_ui DataDatabricksAccountNetworkPolicy#account_ui}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#account_ui DataDatabricksAccountNetworkPolicy#account_ui}.
 
 ---
 
@@ -2930,7 +2958,7 @@ public java.lang.Boolean|IResolvable getAllDestinations();
 
 - *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#all_destinations DataDatabricksAccountNetworkPolicy#all_destinations}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#all_destinations DataDatabricksAccountNetworkPolicy#all_destinations}.
 
 ---
 
@@ -2942,7 +2970,7 @@ public DataDatabricksAccountNetworkPolicyIngressDryRunCrossWorkspaceAccessAllowR
 
 - *Type:* <a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunCrossWorkspaceAccessAllowRulesDestinationAppsRuntime">DataDatabricksAccountNetworkPolicyIngressDryRunCrossWorkspaceAccessAllowRulesDestinationAppsRuntime</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#apps_runtime DataDatabricksAccountNetworkPolicy#apps_runtime}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#apps_runtime DataDatabricksAccountNetworkPolicy#apps_runtime}.
 
 ---
 
@@ -2954,7 +2982,7 @@ public DataDatabricksAccountNetworkPolicyIngressDryRunCrossWorkspaceAccessAllowR
 
 - *Type:* <a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunCrossWorkspaceAccessAllowRulesDestinationLakebaseRuntime">DataDatabricksAccountNetworkPolicyIngressDryRunCrossWorkspaceAccessAllowRulesDestinationLakebaseRuntime</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#lakebase_runtime DataDatabricksAccountNetworkPolicy#lakebase_runtime}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#lakebase_runtime DataDatabricksAccountNetworkPolicy#lakebase_runtime}.
 
 ---
 
@@ -2966,7 +2994,7 @@ public DataDatabricksAccountNetworkPolicyIngressDryRunCrossWorkspaceAccessAllowR
 
 - *Type:* <a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunCrossWorkspaceAccessAllowRulesDestinationWorkspaceApi">DataDatabricksAccountNetworkPolicyIngressDryRunCrossWorkspaceAccessAllowRulesDestinationWorkspaceApi</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#workspace_api DataDatabricksAccountNetworkPolicy#workspace_api}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#workspace_api DataDatabricksAccountNetworkPolicy#workspace_api}.
 
 ---
 
@@ -2978,7 +3006,7 @@ public DataDatabricksAccountNetworkPolicyIngressDryRunCrossWorkspaceAccessAllowR
 
 - *Type:* <a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunCrossWorkspaceAccessAllowRulesDestinationWorkspaceUi">DataDatabricksAccountNetworkPolicyIngressDryRunCrossWorkspaceAccessAllowRulesDestinationWorkspaceUi</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#workspace_ui DataDatabricksAccountNetworkPolicy#workspace_ui}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#workspace_ui DataDatabricksAccountNetworkPolicy#workspace_ui}.
 
 ---
 
@@ -2999,8 +3027,8 @@ DataDatabricksAccountNetworkPolicyIngressDryRunCrossWorkspaceAccessAllowRulesDes
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunCrossWorkspaceAccessAllowRulesDestinationAccountApi.property.scopeQualifier">scopeQualifier</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#scope_qualifier DataDatabricksAccountNetworkPolicy#scope_qualifier}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunCrossWorkspaceAccessAllowRulesDestinationAccountApi.property.scopes">scopes</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#scopes DataDatabricksAccountNetworkPolicy#scopes}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunCrossWorkspaceAccessAllowRulesDestinationAccountApi.property.scopeQualifier">scopeQualifier</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#scope_qualifier DataDatabricksAccountNetworkPolicy#scope_qualifier}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunCrossWorkspaceAccessAllowRulesDestinationAccountApi.property.scopes">scopes</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#scopes DataDatabricksAccountNetworkPolicy#scopes}. |
 
 ---
 
@@ -3012,7 +3040,7 @@ public java.lang.String getScopeQualifier();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#scope_qualifier DataDatabricksAccountNetworkPolicy#scope_qualifier}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#scope_qualifier DataDatabricksAccountNetworkPolicy#scope_qualifier}.
 
 ---
 
@@ -3024,7 +3052,7 @@ public java.util.List<java.lang.String> getScopes();
 
 - *Type:* java.util.List<java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#scopes DataDatabricksAccountNetworkPolicy#scopes}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#scopes DataDatabricksAccountNetworkPolicy#scopes}.
 
 ---
 
@@ -3044,7 +3072,7 @@ DataDatabricksAccountNetworkPolicyIngressDryRunCrossWorkspaceAccessAllowRulesDes
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunCrossWorkspaceAccessAllowRulesDestinationAccountDatabricksOne.property.allDestinations">allDestinations</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#all_destinations DataDatabricksAccountNetworkPolicy#all_destinations}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunCrossWorkspaceAccessAllowRulesDestinationAccountDatabricksOne.property.allDestinations">allDestinations</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#all_destinations DataDatabricksAccountNetworkPolicy#all_destinations}. |
 
 ---
 
@@ -3056,7 +3084,7 @@ public java.lang.Boolean|IResolvable getAllDestinations();
 
 - *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#all_destinations DataDatabricksAccountNetworkPolicy#all_destinations}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#all_destinations DataDatabricksAccountNetworkPolicy#all_destinations}.
 
 ---
 
@@ -3076,7 +3104,7 @@ DataDatabricksAccountNetworkPolicyIngressDryRunCrossWorkspaceAccessAllowRulesDes
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunCrossWorkspaceAccessAllowRulesDestinationAccountUi.property.allDestinations">allDestinations</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#all_destinations DataDatabricksAccountNetworkPolicy#all_destinations}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunCrossWorkspaceAccessAllowRulesDestinationAccountUi.property.allDestinations">allDestinations</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#all_destinations DataDatabricksAccountNetworkPolicy#all_destinations}. |
 
 ---
 
@@ -3088,7 +3116,7 @@ public java.lang.Boolean|IResolvable getAllDestinations();
 
 - *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#all_destinations DataDatabricksAccountNetworkPolicy#all_destinations}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#all_destinations DataDatabricksAccountNetworkPolicy#all_destinations}.
 
 ---
 
@@ -3108,7 +3136,7 @@ DataDatabricksAccountNetworkPolicyIngressDryRunCrossWorkspaceAccessAllowRulesDes
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunCrossWorkspaceAccessAllowRulesDestinationAppsRuntime.property.allDestinations">allDestinations</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#all_destinations DataDatabricksAccountNetworkPolicy#all_destinations}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunCrossWorkspaceAccessAllowRulesDestinationAppsRuntime.property.allDestinations">allDestinations</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#all_destinations DataDatabricksAccountNetworkPolicy#all_destinations}. |
 
 ---
 
@@ -3120,7 +3148,7 @@ public java.lang.Boolean|IResolvable getAllDestinations();
 
 - *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#all_destinations DataDatabricksAccountNetworkPolicy#all_destinations}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#all_destinations DataDatabricksAccountNetworkPolicy#all_destinations}.
 
 ---
 
@@ -3140,7 +3168,7 @@ DataDatabricksAccountNetworkPolicyIngressDryRunCrossWorkspaceAccessAllowRulesDes
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunCrossWorkspaceAccessAllowRulesDestinationLakebaseRuntime.property.allDestinations">allDestinations</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#all_destinations DataDatabricksAccountNetworkPolicy#all_destinations}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunCrossWorkspaceAccessAllowRulesDestinationLakebaseRuntime.property.allDestinations">allDestinations</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#all_destinations DataDatabricksAccountNetworkPolicy#all_destinations}. |
 
 ---
 
@@ -3152,7 +3180,7 @@ public java.lang.Boolean|IResolvable getAllDestinations();
 
 - *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#all_destinations DataDatabricksAccountNetworkPolicy#all_destinations}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#all_destinations DataDatabricksAccountNetworkPolicy#all_destinations}.
 
 ---
 
@@ -3164,6 +3192,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 import io.cdktn.providers.databricks.data_databricks_account_network_policy.DataDatabricksAccountNetworkPolicyIngressDryRunCrossWorkspaceAccessAllowRulesDestinationWorkspaceApi;
 
 DataDatabricksAccountNetworkPolicyIngressDryRunCrossWorkspaceAccessAllowRulesDestinationWorkspaceApi.builder()
+//  .excludedScopes(java.util.List<java.lang.String>)
 //  .scopeQualifier(java.lang.String)
 //  .scopes(java.util.List<java.lang.String>)
     .build();
@@ -3173,8 +3202,21 @@ DataDatabricksAccountNetworkPolicyIngressDryRunCrossWorkspaceAccessAllowRulesDes
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunCrossWorkspaceAccessAllowRulesDestinationWorkspaceApi.property.scopeQualifier">scopeQualifier</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#scope_qualifier DataDatabricksAccountNetworkPolicy#scope_qualifier}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunCrossWorkspaceAccessAllowRulesDestinationWorkspaceApi.property.scopes">scopes</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#scopes DataDatabricksAccountNetworkPolicy#scopes}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunCrossWorkspaceAccessAllowRulesDestinationWorkspaceApi.property.excludedScopes">excludedScopes</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#excluded_scopes DataDatabricksAccountNetworkPolicy#excluded_scopes}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunCrossWorkspaceAccessAllowRulesDestinationWorkspaceApi.property.scopeQualifier">scopeQualifier</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#scope_qualifier DataDatabricksAccountNetworkPolicy#scope_qualifier}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunCrossWorkspaceAccessAllowRulesDestinationWorkspaceApi.property.scopes">scopes</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#scopes DataDatabricksAccountNetworkPolicy#scopes}. |
+
+---
+
+##### `excludedScopes`<sup>Optional</sup> <a name="excludedScopes" id="@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunCrossWorkspaceAccessAllowRulesDestinationWorkspaceApi.property.excludedScopes"></a>
+
+```java
+public java.util.List<java.lang.String> getExcludedScopes();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#excluded_scopes DataDatabricksAccountNetworkPolicy#excluded_scopes}.
 
 ---
 
@@ -3186,7 +3228,7 @@ public java.lang.String getScopeQualifier();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#scope_qualifier DataDatabricksAccountNetworkPolicy#scope_qualifier}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#scope_qualifier DataDatabricksAccountNetworkPolicy#scope_qualifier}.
 
 ---
 
@@ -3198,7 +3240,7 @@ public java.util.List<java.lang.String> getScopes();
 
 - *Type:* java.util.List<java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#scopes DataDatabricksAccountNetworkPolicy#scopes}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#scopes DataDatabricksAccountNetworkPolicy#scopes}.
 
 ---
 
@@ -3218,7 +3260,7 @@ DataDatabricksAccountNetworkPolicyIngressDryRunCrossWorkspaceAccessAllowRulesDes
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunCrossWorkspaceAccessAllowRulesDestinationWorkspaceUi.property.allDestinations">allDestinations</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#all_destinations DataDatabricksAccountNetworkPolicy#all_destinations}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunCrossWorkspaceAccessAllowRulesDestinationWorkspaceUi.property.allDestinations">allDestinations</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#all_destinations DataDatabricksAccountNetworkPolicy#all_destinations}. |
 
 ---
 
@@ -3230,7 +3272,7 @@ public java.lang.Boolean|IResolvable getAllDestinations();
 
 - *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#all_destinations DataDatabricksAccountNetworkPolicy#all_destinations}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#all_destinations DataDatabricksAccountNetworkPolicy#all_destinations}.
 
 ---
 
@@ -3251,8 +3293,8 @@ DataDatabricksAccountNetworkPolicyIngressDryRunCrossWorkspaceAccessAllowRulesOri
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunCrossWorkspaceAccessAllowRulesOrigin.property.allSourceWorkspaces">allSourceWorkspaces</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#all_source_workspaces DataDatabricksAccountNetworkPolicy#all_source_workspaces}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunCrossWorkspaceAccessAllowRulesOrigin.property.selectedWorkspaces">selectedWorkspaces</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunCrossWorkspaceAccessAllowRulesOriginSelectedWorkspaces">DataDatabricksAccountNetworkPolicyIngressDryRunCrossWorkspaceAccessAllowRulesOriginSelectedWorkspaces</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#selected_workspaces DataDatabricksAccountNetworkPolicy#selected_workspaces}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunCrossWorkspaceAccessAllowRulesOrigin.property.allSourceWorkspaces">allSourceWorkspaces</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#all_source_workspaces DataDatabricksAccountNetworkPolicy#all_source_workspaces}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunCrossWorkspaceAccessAllowRulesOrigin.property.selectedWorkspaces">selectedWorkspaces</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunCrossWorkspaceAccessAllowRulesOriginSelectedWorkspaces">DataDatabricksAccountNetworkPolicyIngressDryRunCrossWorkspaceAccessAllowRulesOriginSelectedWorkspaces</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#selected_workspaces DataDatabricksAccountNetworkPolicy#selected_workspaces}. |
 
 ---
 
@@ -3264,7 +3306,7 @@ public java.lang.Boolean|IResolvable getAllSourceWorkspaces();
 
 - *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#all_source_workspaces DataDatabricksAccountNetworkPolicy#all_source_workspaces}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#all_source_workspaces DataDatabricksAccountNetworkPolicy#all_source_workspaces}.
 
 ---
 
@@ -3276,7 +3318,7 @@ public DataDatabricksAccountNetworkPolicyIngressDryRunCrossWorkspaceAccessAllowR
 
 - *Type:* <a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunCrossWorkspaceAccessAllowRulesOriginSelectedWorkspaces">DataDatabricksAccountNetworkPolicyIngressDryRunCrossWorkspaceAccessAllowRulesOriginSelectedWorkspaces</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#selected_workspaces DataDatabricksAccountNetworkPolicy#selected_workspaces}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#selected_workspaces DataDatabricksAccountNetworkPolicy#selected_workspaces}.
 
 ---
 
@@ -3296,7 +3338,7 @@ DataDatabricksAccountNetworkPolicyIngressDryRunCrossWorkspaceAccessAllowRulesOri
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunCrossWorkspaceAccessAllowRulesOriginSelectedWorkspaces.property.workspaceIds">workspaceIds</a></code> | <code>java.util.List<java.lang.Number></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#workspace_ids DataDatabricksAccountNetworkPolicy#workspace_ids}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunCrossWorkspaceAccessAllowRulesOriginSelectedWorkspaces.property.workspaceIds">workspaceIds</a></code> | <code>java.util.List<java.lang.Number></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#workspace_ids DataDatabricksAccountNetworkPolicy#workspace_ids}. |
 
 ---
 
@@ -3308,7 +3350,7 @@ public java.util.List<java.lang.Number> getWorkspaceIds();
 
 - *Type:* java.util.List<java.lang.Number>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#workspace_ids DataDatabricksAccountNetworkPolicy#workspace_ids}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#workspace_ids DataDatabricksAccountNetworkPolicy#workspace_ids}.
 
 ---
 
@@ -3331,10 +3373,10 @@ DataDatabricksAccountNetworkPolicyIngressDryRunCrossWorkspaceAccessDenyRules.bui
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunCrossWorkspaceAccessDenyRules.property.authentication">authentication</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunCrossWorkspaceAccessDenyRulesAuthentication">DataDatabricksAccountNetworkPolicyIngressDryRunCrossWorkspaceAccessDenyRulesAuthentication</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#authentication DataDatabricksAccountNetworkPolicy#authentication}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunCrossWorkspaceAccessDenyRules.property.destination">destination</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunCrossWorkspaceAccessDenyRulesDestination">DataDatabricksAccountNetworkPolicyIngressDryRunCrossWorkspaceAccessDenyRulesDestination</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#destination DataDatabricksAccountNetworkPolicy#destination}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunCrossWorkspaceAccessDenyRules.property.label">label</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#label DataDatabricksAccountNetworkPolicy#label}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunCrossWorkspaceAccessDenyRules.property.origin">origin</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunCrossWorkspaceAccessDenyRulesOrigin">DataDatabricksAccountNetworkPolicyIngressDryRunCrossWorkspaceAccessDenyRulesOrigin</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#origin DataDatabricksAccountNetworkPolicy#origin}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunCrossWorkspaceAccessDenyRules.property.authentication">authentication</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunCrossWorkspaceAccessDenyRulesAuthentication">DataDatabricksAccountNetworkPolicyIngressDryRunCrossWorkspaceAccessDenyRulesAuthentication</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#authentication DataDatabricksAccountNetworkPolicy#authentication}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunCrossWorkspaceAccessDenyRules.property.destination">destination</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunCrossWorkspaceAccessDenyRulesDestination">DataDatabricksAccountNetworkPolicyIngressDryRunCrossWorkspaceAccessDenyRulesDestination</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#destination DataDatabricksAccountNetworkPolicy#destination}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunCrossWorkspaceAccessDenyRules.property.label">label</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#label DataDatabricksAccountNetworkPolicy#label}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunCrossWorkspaceAccessDenyRules.property.origin">origin</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunCrossWorkspaceAccessDenyRulesOrigin">DataDatabricksAccountNetworkPolicyIngressDryRunCrossWorkspaceAccessDenyRulesOrigin</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#origin DataDatabricksAccountNetworkPolicy#origin}. |
 
 ---
 
@@ -3346,7 +3388,7 @@ public DataDatabricksAccountNetworkPolicyIngressDryRunCrossWorkspaceAccessDenyRu
 
 - *Type:* <a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunCrossWorkspaceAccessDenyRulesAuthentication">DataDatabricksAccountNetworkPolicyIngressDryRunCrossWorkspaceAccessDenyRulesAuthentication</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#authentication DataDatabricksAccountNetworkPolicy#authentication}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#authentication DataDatabricksAccountNetworkPolicy#authentication}.
 
 ---
 
@@ -3358,7 +3400,7 @@ public DataDatabricksAccountNetworkPolicyIngressDryRunCrossWorkspaceAccessDenyRu
 
 - *Type:* <a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunCrossWorkspaceAccessDenyRulesDestination">DataDatabricksAccountNetworkPolicyIngressDryRunCrossWorkspaceAccessDenyRulesDestination</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#destination DataDatabricksAccountNetworkPolicy#destination}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#destination DataDatabricksAccountNetworkPolicy#destination}.
 
 ---
 
@@ -3370,7 +3412,7 @@ public java.lang.String getLabel();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#label DataDatabricksAccountNetworkPolicy#label}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#label DataDatabricksAccountNetworkPolicy#label}.
 
 ---
 
@@ -3382,7 +3424,7 @@ public DataDatabricksAccountNetworkPolicyIngressDryRunCrossWorkspaceAccessDenyRu
 
 - *Type:* <a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunCrossWorkspaceAccessDenyRulesOrigin">DataDatabricksAccountNetworkPolicyIngressDryRunCrossWorkspaceAccessDenyRulesOrigin</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#origin DataDatabricksAccountNetworkPolicy#origin}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#origin DataDatabricksAccountNetworkPolicy#origin}.
 
 ---
 
@@ -3403,8 +3445,8 @@ DataDatabricksAccountNetworkPolicyIngressDryRunCrossWorkspaceAccessDenyRulesAuth
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunCrossWorkspaceAccessDenyRulesAuthentication.property.identities">identities</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunCrossWorkspaceAccessDenyRulesAuthenticationIdentities">DataDatabricksAccountNetworkPolicyIngressDryRunCrossWorkspaceAccessDenyRulesAuthenticationIdentities</a>></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#identities DataDatabricksAccountNetworkPolicy#identities}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunCrossWorkspaceAccessDenyRulesAuthentication.property.identityType">identityType</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#identity_type DataDatabricksAccountNetworkPolicy#identity_type}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunCrossWorkspaceAccessDenyRulesAuthentication.property.identities">identities</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunCrossWorkspaceAccessDenyRulesAuthenticationIdentities">DataDatabricksAccountNetworkPolicyIngressDryRunCrossWorkspaceAccessDenyRulesAuthenticationIdentities</a>></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#identities DataDatabricksAccountNetworkPolicy#identities}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunCrossWorkspaceAccessDenyRulesAuthentication.property.identityType">identityType</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#identity_type DataDatabricksAccountNetworkPolicy#identity_type}. |
 
 ---
 
@@ -3416,7 +3458,7 @@ public IResolvable|java.util.List<DataDatabricksAccountNetworkPolicyIngressDryRu
 
 - *Type:* io.cdktn.cdktn.IResolvable|java.util.List<<a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunCrossWorkspaceAccessDenyRulesAuthenticationIdentities">DataDatabricksAccountNetworkPolicyIngressDryRunCrossWorkspaceAccessDenyRulesAuthenticationIdentities</a>>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#identities DataDatabricksAccountNetworkPolicy#identities}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#identities DataDatabricksAccountNetworkPolicy#identities}.
 
 ---
 
@@ -3428,7 +3470,7 @@ public java.lang.String getIdentityType();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#identity_type DataDatabricksAccountNetworkPolicy#identity_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#identity_type DataDatabricksAccountNetworkPolicy#identity_type}.
 
 ---
 
@@ -3449,8 +3491,8 @@ DataDatabricksAccountNetworkPolicyIngressDryRunCrossWorkspaceAccessDenyRulesAuth
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunCrossWorkspaceAccessDenyRulesAuthenticationIdentities.property.principalId">principalId</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#principal_id DataDatabricksAccountNetworkPolicy#principal_id}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunCrossWorkspaceAccessDenyRulesAuthenticationIdentities.property.principalType">principalType</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#principal_type DataDatabricksAccountNetworkPolicy#principal_type}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunCrossWorkspaceAccessDenyRulesAuthenticationIdentities.property.principalId">principalId</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#principal_id DataDatabricksAccountNetworkPolicy#principal_id}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunCrossWorkspaceAccessDenyRulesAuthenticationIdentities.property.principalType">principalType</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#principal_type DataDatabricksAccountNetworkPolicy#principal_type}. |
 
 ---
 
@@ -3462,7 +3504,7 @@ public java.lang.Number getPrincipalId();
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#principal_id DataDatabricksAccountNetworkPolicy#principal_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#principal_id DataDatabricksAccountNetworkPolicy#principal_id}.
 
 ---
 
@@ -3474,7 +3516,7 @@ public java.lang.String getPrincipalType();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#principal_type DataDatabricksAccountNetworkPolicy#principal_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#principal_type DataDatabricksAccountNetworkPolicy#principal_type}.
 
 ---
 
@@ -3501,14 +3543,14 @@ DataDatabricksAccountNetworkPolicyIngressDryRunCrossWorkspaceAccessDenyRulesDest
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunCrossWorkspaceAccessDenyRulesDestination.property.accountApi">accountApi</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunCrossWorkspaceAccessDenyRulesDestinationAccountApi">DataDatabricksAccountNetworkPolicyIngressDryRunCrossWorkspaceAccessDenyRulesDestinationAccountApi</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#account_api DataDatabricksAccountNetworkPolicy#account_api}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunCrossWorkspaceAccessDenyRulesDestination.property.accountDatabricksOne">accountDatabricksOne</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunCrossWorkspaceAccessDenyRulesDestinationAccountDatabricksOne">DataDatabricksAccountNetworkPolicyIngressDryRunCrossWorkspaceAccessDenyRulesDestinationAccountDatabricksOne</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#account_databricks_one DataDatabricksAccountNetworkPolicy#account_databricks_one}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunCrossWorkspaceAccessDenyRulesDestination.property.accountUi">accountUi</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunCrossWorkspaceAccessDenyRulesDestinationAccountUi">DataDatabricksAccountNetworkPolicyIngressDryRunCrossWorkspaceAccessDenyRulesDestinationAccountUi</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#account_ui DataDatabricksAccountNetworkPolicy#account_ui}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunCrossWorkspaceAccessDenyRulesDestination.property.allDestinations">allDestinations</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#all_destinations DataDatabricksAccountNetworkPolicy#all_destinations}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunCrossWorkspaceAccessDenyRulesDestination.property.appsRuntime">appsRuntime</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunCrossWorkspaceAccessDenyRulesDestinationAppsRuntime">DataDatabricksAccountNetworkPolicyIngressDryRunCrossWorkspaceAccessDenyRulesDestinationAppsRuntime</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#apps_runtime DataDatabricksAccountNetworkPolicy#apps_runtime}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunCrossWorkspaceAccessDenyRulesDestination.property.lakebaseRuntime">lakebaseRuntime</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunCrossWorkspaceAccessDenyRulesDestinationLakebaseRuntime">DataDatabricksAccountNetworkPolicyIngressDryRunCrossWorkspaceAccessDenyRulesDestinationLakebaseRuntime</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#lakebase_runtime DataDatabricksAccountNetworkPolicy#lakebase_runtime}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunCrossWorkspaceAccessDenyRulesDestination.property.workspaceApi">workspaceApi</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunCrossWorkspaceAccessDenyRulesDestinationWorkspaceApi">DataDatabricksAccountNetworkPolicyIngressDryRunCrossWorkspaceAccessDenyRulesDestinationWorkspaceApi</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#workspace_api DataDatabricksAccountNetworkPolicy#workspace_api}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunCrossWorkspaceAccessDenyRulesDestination.property.workspaceUi">workspaceUi</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunCrossWorkspaceAccessDenyRulesDestinationWorkspaceUi">DataDatabricksAccountNetworkPolicyIngressDryRunCrossWorkspaceAccessDenyRulesDestinationWorkspaceUi</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#workspace_ui DataDatabricksAccountNetworkPolicy#workspace_ui}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunCrossWorkspaceAccessDenyRulesDestination.property.accountApi">accountApi</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunCrossWorkspaceAccessDenyRulesDestinationAccountApi">DataDatabricksAccountNetworkPolicyIngressDryRunCrossWorkspaceAccessDenyRulesDestinationAccountApi</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#account_api DataDatabricksAccountNetworkPolicy#account_api}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunCrossWorkspaceAccessDenyRulesDestination.property.accountDatabricksOne">accountDatabricksOne</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunCrossWorkspaceAccessDenyRulesDestinationAccountDatabricksOne">DataDatabricksAccountNetworkPolicyIngressDryRunCrossWorkspaceAccessDenyRulesDestinationAccountDatabricksOne</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#account_databricks_one DataDatabricksAccountNetworkPolicy#account_databricks_one}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunCrossWorkspaceAccessDenyRulesDestination.property.accountUi">accountUi</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunCrossWorkspaceAccessDenyRulesDestinationAccountUi">DataDatabricksAccountNetworkPolicyIngressDryRunCrossWorkspaceAccessDenyRulesDestinationAccountUi</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#account_ui DataDatabricksAccountNetworkPolicy#account_ui}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunCrossWorkspaceAccessDenyRulesDestination.property.allDestinations">allDestinations</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#all_destinations DataDatabricksAccountNetworkPolicy#all_destinations}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunCrossWorkspaceAccessDenyRulesDestination.property.appsRuntime">appsRuntime</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunCrossWorkspaceAccessDenyRulesDestinationAppsRuntime">DataDatabricksAccountNetworkPolicyIngressDryRunCrossWorkspaceAccessDenyRulesDestinationAppsRuntime</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#apps_runtime DataDatabricksAccountNetworkPolicy#apps_runtime}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunCrossWorkspaceAccessDenyRulesDestination.property.lakebaseRuntime">lakebaseRuntime</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunCrossWorkspaceAccessDenyRulesDestinationLakebaseRuntime">DataDatabricksAccountNetworkPolicyIngressDryRunCrossWorkspaceAccessDenyRulesDestinationLakebaseRuntime</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#lakebase_runtime DataDatabricksAccountNetworkPolicy#lakebase_runtime}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunCrossWorkspaceAccessDenyRulesDestination.property.workspaceApi">workspaceApi</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunCrossWorkspaceAccessDenyRulesDestinationWorkspaceApi">DataDatabricksAccountNetworkPolicyIngressDryRunCrossWorkspaceAccessDenyRulesDestinationWorkspaceApi</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#workspace_api DataDatabricksAccountNetworkPolicy#workspace_api}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunCrossWorkspaceAccessDenyRulesDestination.property.workspaceUi">workspaceUi</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunCrossWorkspaceAccessDenyRulesDestinationWorkspaceUi">DataDatabricksAccountNetworkPolicyIngressDryRunCrossWorkspaceAccessDenyRulesDestinationWorkspaceUi</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#workspace_ui DataDatabricksAccountNetworkPolicy#workspace_ui}. |
 
 ---
 
@@ -3520,7 +3562,7 @@ public DataDatabricksAccountNetworkPolicyIngressDryRunCrossWorkspaceAccessDenyRu
 
 - *Type:* <a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunCrossWorkspaceAccessDenyRulesDestinationAccountApi">DataDatabricksAccountNetworkPolicyIngressDryRunCrossWorkspaceAccessDenyRulesDestinationAccountApi</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#account_api DataDatabricksAccountNetworkPolicy#account_api}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#account_api DataDatabricksAccountNetworkPolicy#account_api}.
 
 ---
 
@@ -3532,7 +3574,7 @@ public DataDatabricksAccountNetworkPolicyIngressDryRunCrossWorkspaceAccessDenyRu
 
 - *Type:* <a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunCrossWorkspaceAccessDenyRulesDestinationAccountDatabricksOne">DataDatabricksAccountNetworkPolicyIngressDryRunCrossWorkspaceAccessDenyRulesDestinationAccountDatabricksOne</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#account_databricks_one DataDatabricksAccountNetworkPolicy#account_databricks_one}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#account_databricks_one DataDatabricksAccountNetworkPolicy#account_databricks_one}.
 
 ---
 
@@ -3544,7 +3586,7 @@ public DataDatabricksAccountNetworkPolicyIngressDryRunCrossWorkspaceAccessDenyRu
 
 - *Type:* <a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunCrossWorkspaceAccessDenyRulesDestinationAccountUi">DataDatabricksAccountNetworkPolicyIngressDryRunCrossWorkspaceAccessDenyRulesDestinationAccountUi</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#account_ui DataDatabricksAccountNetworkPolicy#account_ui}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#account_ui DataDatabricksAccountNetworkPolicy#account_ui}.
 
 ---
 
@@ -3556,7 +3598,7 @@ public java.lang.Boolean|IResolvable getAllDestinations();
 
 - *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#all_destinations DataDatabricksAccountNetworkPolicy#all_destinations}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#all_destinations DataDatabricksAccountNetworkPolicy#all_destinations}.
 
 ---
 
@@ -3568,7 +3610,7 @@ public DataDatabricksAccountNetworkPolicyIngressDryRunCrossWorkspaceAccessDenyRu
 
 - *Type:* <a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunCrossWorkspaceAccessDenyRulesDestinationAppsRuntime">DataDatabricksAccountNetworkPolicyIngressDryRunCrossWorkspaceAccessDenyRulesDestinationAppsRuntime</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#apps_runtime DataDatabricksAccountNetworkPolicy#apps_runtime}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#apps_runtime DataDatabricksAccountNetworkPolicy#apps_runtime}.
 
 ---
 
@@ -3580,7 +3622,7 @@ public DataDatabricksAccountNetworkPolicyIngressDryRunCrossWorkspaceAccessDenyRu
 
 - *Type:* <a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunCrossWorkspaceAccessDenyRulesDestinationLakebaseRuntime">DataDatabricksAccountNetworkPolicyIngressDryRunCrossWorkspaceAccessDenyRulesDestinationLakebaseRuntime</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#lakebase_runtime DataDatabricksAccountNetworkPolicy#lakebase_runtime}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#lakebase_runtime DataDatabricksAccountNetworkPolicy#lakebase_runtime}.
 
 ---
 
@@ -3592,7 +3634,7 @@ public DataDatabricksAccountNetworkPolicyIngressDryRunCrossWorkspaceAccessDenyRu
 
 - *Type:* <a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunCrossWorkspaceAccessDenyRulesDestinationWorkspaceApi">DataDatabricksAccountNetworkPolicyIngressDryRunCrossWorkspaceAccessDenyRulesDestinationWorkspaceApi</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#workspace_api DataDatabricksAccountNetworkPolicy#workspace_api}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#workspace_api DataDatabricksAccountNetworkPolicy#workspace_api}.
 
 ---
 
@@ -3604,7 +3646,7 @@ public DataDatabricksAccountNetworkPolicyIngressDryRunCrossWorkspaceAccessDenyRu
 
 - *Type:* <a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunCrossWorkspaceAccessDenyRulesDestinationWorkspaceUi">DataDatabricksAccountNetworkPolicyIngressDryRunCrossWorkspaceAccessDenyRulesDestinationWorkspaceUi</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#workspace_ui DataDatabricksAccountNetworkPolicy#workspace_ui}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#workspace_ui DataDatabricksAccountNetworkPolicy#workspace_ui}.
 
 ---
 
@@ -3625,8 +3667,8 @@ DataDatabricksAccountNetworkPolicyIngressDryRunCrossWorkspaceAccessDenyRulesDest
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunCrossWorkspaceAccessDenyRulesDestinationAccountApi.property.scopeQualifier">scopeQualifier</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#scope_qualifier DataDatabricksAccountNetworkPolicy#scope_qualifier}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunCrossWorkspaceAccessDenyRulesDestinationAccountApi.property.scopes">scopes</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#scopes DataDatabricksAccountNetworkPolicy#scopes}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunCrossWorkspaceAccessDenyRulesDestinationAccountApi.property.scopeQualifier">scopeQualifier</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#scope_qualifier DataDatabricksAccountNetworkPolicy#scope_qualifier}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunCrossWorkspaceAccessDenyRulesDestinationAccountApi.property.scopes">scopes</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#scopes DataDatabricksAccountNetworkPolicy#scopes}. |
 
 ---
 
@@ -3638,7 +3680,7 @@ public java.lang.String getScopeQualifier();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#scope_qualifier DataDatabricksAccountNetworkPolicy#scope_qualifier}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#scope_qualifier DataDatabricksAccountNetworkPolicy#scope_qualifier}.
 
 ---
 
@@ -3650,7 +3692,7 @@ public java.util.List<java.lang.String> getScopes();
 
 - *Type:* java.util.List<java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#scopes DataDatabricksAccountNetworkPolicy#scopes}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#scopes DataDatabricksAccountNetworkPolicy#scopes}.
 
 ---
 
@@ -3670,7 +3712,7 @@ DataDatabricksAccountNetworkPolicyIngressDryRunCrossWorkspaceAccessDenyRulesDest
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunCrossWorkspaceAccessDenyRulesDestinationAccountDatabricksOne.property.allDestinations">allDestinations</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#all_destinations DataDatabricksAccountNetworkPolicy#all_destinations}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunCrossWorkspaceAccessDenyRulesDestinationAccountDatabricksOne.property.allDestinations">allDestinations</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#all_destinations DataDatabricksAccountNetworkPolicy#all_destinations}. |
 
 ---
 
@@ -3682,7 +3724,7 @@ public java.lang.Boolean|IResolvable getAllDestinations();
 
 - *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#all_destinations DataDatabricksAccountNetworkPolicy#all_destinations}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#all_destinations DataDatabricksAccountNetworkPolicy#all_destinations}.
 
 ---
 
@@ -3702,7 +3744,7 @@ DataDatabricksAccountNetworkPolicyIngressDryRunCrossWorkspaceAccessDenyRulesDest
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunCrossWorkspaceAccessDenyRulesDestinationAccountUi.property.allDestinations">allDestinations</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#all_destinations DataDatabricksAccountNetworkPolicy#all_destinations}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunCrossWorkspaceAccessDenyRulesDestinationAccountUi.property.allDestinations">allDestinations</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#all_destinations DataDatabricksAccountNetworkPolicy#all_destinations}. |
 
 ---
 
@@ -3714,7 +3756,7 @@ public java.lang.Boolean|IResolvable getAllDestinations();
 
 - *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#all_destinations DataDatabricksAccountNetworkPolicy#all_destinations}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#all_destinations DataDatabricksAccountNetworkPolicy#all_destinations}.
 
 ---
 
@@ -3734,7 +3776,7 @@ DataDatabricksAccountNetworkPolicyIngressDryRunCrossWorkspaceAccessDenyRulesDest
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunCrossWorkspaceAccessDenyRulesDestinationAppsRuntime.property.allDestinations">allDestinations</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#all_destinations DataDatabricksAccountNetworkPolicy#all_destinations}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunCrossWorkspaceAccessDenyRulesDestinationAppsRuntime.property.allDestinations">allDestinations</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#all_destinations DataDatabricksAccountNetworkPolicy#all_destinations}. |
 
 ---
 
@@ -3746,7 +3788,7 @@ public java.lang.Boolean|IResolvable getAllDestinations();
 
 - *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#all_destinations DataDatabricksAccountNetworkPolicy#all_destinations}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#all_destinations DataDatabricksAccountNetworkPolicy#all_destinations}.
 
 ---
 
@@ -3766,7 +3808,7 @@ DataDatabricksAccountNetworkPolicyIngressDryRunCrossWorkspaceAccessDenyRulesDest
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunCrossWorkspaceAccessDenyRulesDestinationLakebaseRuntime.property.allDestinations">allDestinations</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#all_destinations DataDatabricksAccountNetworkPolicy#all_destinations}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunCrossWorkspaceAccessDenyRulesDestinationLakebaseRuntime.property.allDestinations">allDestinations</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#all_destinations DataDatabricksAccountNetworkPolicy#all_destinations}. |
 
 ---
 
@@ -3778,7 +3820,7 @@ public java.lang.Boolean|IResolvable getAllDestinations();
 
 - *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#all_destinations DataDatabricksAccountNetworkPolicy#all_destinations}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#all_destinations DataDatabricksAccountNetworkPolicy#all_destinations}.
 
 ---
 
@@ -3790,6 +3832,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 import io.cdktn.providers.databricks.data_databricks_account_network_policy.DataDatabricksAccountNetworkPolicyIngressDryRunCrossWorkspaceAccessDenyRulesDestinationWorkspaceApi;
 
 DataDatabricksAccountNetworkPolicyIngressDryRunCrossWorkspaceAccessDenyRulesDestinationWorkspaceApi.builder()
+//  .excludedScopes(java.util.List<java.lang.String>)
 //  .scopeQualifier(java.lang.String)
 //  .scopes(java.util.List<java.lang.String>)
     .build();
@@ -3799,8 +3842,21 @@ DataDatabricksAccountNetworkPolicyIngressDryRunCrossWorkspaceAccessDenyRulesDest
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunCrossWorkspaceAccessDenyRulesDestinationWorkspaceApi.property.scopeQualifier">scopeQualifier</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#scope_qualifier DataDatabricksAccountNetworkPolicy#scope_qualifier}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunCrossWorkspaceAccessDenyRulesDestinationWorkspaceApi.property.scopes">scopes</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#scopes DataDatabricksAccountNetworkPolicy#scopes}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunCrossWorkspaceAccessDenyRulesDestinationWorkspaceApi.property.excludedScopes">excludedScopes</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#excluded_scopes DataDatabricksAccountNetworkPolicy#excluded_scopes}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunCrossWorkspaceAccessDenyRulesDestinationWorkspaceApi.property.scopeQualifier">scopeQualifier</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#scope_qualifier DataDatabricksAccountNetworkPolicy#scope_qualifier}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunCrossWorkspaceAccessDenyRulesDestinationWorkspaceApi.property.scopes">scopes</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#scopes DataDatabricksAccountNetworkPolicy#scopes}. |
+
+---
+
+##### `excludedScopes`<sup>Optional</sup> <a name="excludedScopes" id="@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunCrossWorkspaceAccessDenyRulesDestinationWorkspaceApi.property.excludedScopes"></a>
+
+```java
+public java.util.List<java.lang.String> getExcludedScopes();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#excluded_scopes DataDatabricksAccountNetworkPolicy#excluded_scopes}.
 
 ---
 
@@ -3812,7 +3868,7 @@ public java.lang.String getScopeQualifier();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#scope_qualifier DataDatabricksAccountNetworkPolicy#scope_qualifier}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#scope_qualifier DataDatabricksAccountNetworkPolicy#scope_qualifier}.
 
 ---
 
@@ -3824,7 +3880,7 @@ public java.util.List<java.lang.String> getScopes();
 
 - *Type:* java.util.List<java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#scopes DataDatabricksAccountNetworkPolicy#scopes}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#scopes DataDatabricksAccountNetworkPolicy#scopes}.
 
 ---
 
@@ -3844,7 +3900,7 @@ DataDatabricksAccountNetworkPolicyIngressDryRunCrossWorkspaceAccessDenyRulesDest
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunCrossWorkspaceAccessDenyRulesDestinationWorkspaceUi.property.allDestinations">allDestinations</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#all_destinations DataDatabricksAccountNetworkPolicy#all_destinations}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunCrossWorkspaceAccessDenyRulesDestinationWorkspaceUi.property.allDestinations">allDestinations</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#all_destinations DataDatabricksAccountNetworkPolicy#all_destinations}. |
 
 ---
 
@@ -3856,7 +3912,7 @@ public java.lang.Boolean|IResolvable getAllDestinations();
 
 - *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#all_destinations DataDatabricksAccountNetworkPolicy#all_destinations}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#all_destinations DataDatabricksAccountNetworkPolicy#all_destinations}.
 
 ---
 
@@ -3877,8 +3933,8 @@ DataDatabricksAccountNetworkPolicyIngressDryRunCrossWorkspaceAccessDenyRulesOrig
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunCrossWorkspaceAccessDenyRulesOrigin.property.allSourceWorkspaces">allSourceWorkspaces</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#all_source_workspaces DataDatabricksAccountNetworkPolicy#all_source_workspaces}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunCrossWorkspaceAccessDenyRulesOrigin.property.selectedWorkspaces">selectedWorkspaces</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunCrossWorkspaceAccessDenyRulesOriginSelectedWorkspaces">DataDatabricksAccountNetworkPolicyIngressDryRunCrossWorkspaceAccessDenyRulesOriginSelectedWorkspaces</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#selected_workspaces DataDatabricksAccountNetworkPolicy#selected_workspaces}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunCrossWorkspaceAccessDenyRulesOrigin.property.allSourceWorkspaces">allSourceWorkspaces</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#all_source_workspaces DataDatabricksAccountNetworkPolicy#all_source_workspaces}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunCrossWorkspaceAccessDenyRulesOrigin.property.selectedWorkspaces">selectedWorkspaces</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunCrossWorkspaceAccessDenyRulesOriginSelectedWorkspaces">DataDatabricksAccountNetworkPolicyIngressDryRunCrossWorkspaceAccessDenyRulesOriginSelectedWorkspaces</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#selected_workspaces DataDatabricksAccountNetworkPolicy#selected_workspaces}. |
 
 ---
 
@@ -3890,7 +3946,7 @@ public java.lang.Boolean|IResolvable getAllSourceWorkspaces();
 
 - *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#all_source_workspaces DataDatabricksAccountNetworkPolicy#all_source_workspaces}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#all_source_workspaces DataDatabricksAccountNetworkPolicy#all_source_workspaces}.
 
 ---
 
@@ -3902,7 +3958,7 @@ public DataDatabricksAccountNetworkPolicyIngressDryRunCrossWorkspaceAccessDenyRu
 
 - *Type:* <a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunCrossWorkspaceAccessDenyRulesOriginSelectedWorkspaces">DataDatabricksAccountNetworkPolicyIngressDryRunCrossWorkspaceAccessDenyRulesOriginSelectedWorkspaces</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#selected_workspaces DataDatabricksAccountNetworkPolicy#selected_workspaces}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#selected_workspaces DataDatabricksAccountNetworkPolicy#selected_workspaces}.
 
 ---
 
@@ -3922,7 +3978,7 @@ DataDatabricksAccountNetworkPolicyIngressDryRunCrossWorkspaceAccessDenyRulesOrig
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunCrossWorkspaceAccessDenyRulesOriginSelectedWorkspaces.property.workspaceIds">workspaceIds</a></code> | <code>java.util.List<java.lang.Number></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#workspace_ids DataDatabricksAccountNetworkPolicy#workspace_ids}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunCrossWorkspaceAccessDenyRulesOriginSelectedWorkspaces.property.workspaceIds">workspaceIds</a></code> | <code>java.util.List<java.lang.Number></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#workspace_ids DataDatabricksAccountNetworkPolicy#workspace_ids}. |
 
 ---
 
@@ -3934,7 +3990,7 @@ public java.util.List<java.lang.Number> getWorkspaceIds();
 
 - *Type:* java.util.List<java.lang.Number>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#workspace_ids DataDatabricksAccountNetworkPolicy#workspace_ids}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#workspace_ids DataDatabricksAccountNetworkPolicy#workspace_ids}.
 
 ---
 
@@ -3956,9 +4012,9 @@ DataDatabricksAccountNetworkPolicyIngressDryRunPrivateAccess.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPrivateAccess.property.restrictionMode">restrictionMode</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#restriction_mode DataDatabricksAccountNetworkPolicy#restriction_mode}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPrivateAccess.property.allowRules">allowRules</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPrivateAccessAllowRules">DataDatabricksAccountNetworkPolicyIngressDryRunPrivateAccessAllowRules</a>></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#allow_rules DataDatabricksAccountNetworkPolicy#allow_rules}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPrivateAccess.property.denyRules">denyRules</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPrivateAccessDenyRules">DataDatabricksAccountNetworkPolicyIngressDryRunPrivateAccessDenyRules</a>></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#deny_rules DataDatabricksAccountNetworkPolicy#deny_rules}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPrivateAccess.property.restrictionMode">restrictionMode</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#restriction_mode DataDatabricksAccountNetworkPolicy#restriction_mode}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPrivateAccess.property.allowRules">allowRules</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPrivateAccessAllowRules">DataDatabricksAccountNetworkPolicyIngressDryRunPrivateAccessAllowRules</a>></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#allow_rules DataDatabricksAccountNetworkPolicy#allow_rules}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPrivateAccess.property.denyRules">denyRules</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPrivateAccessDenyRules">DataDatabricksAccountNetworkPolicyIngressDryRunPrivateAccessDenyRules</a>></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#deny_rules DataDatabricksAccountNetworkPolicy#deny_rules}. |
 
 ---
 
@@ -3970,7 +4026,7 @@ public java.lang.String getRestrictionMode();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#restriction_mode DataDatabricksAccountNetworkPolicy#restriction_mode}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#restriction_mode DataDatabricksAccountNetworkPolicy#restriction_mode}.
 
 ---
 
@@ -3982,7 +4038,7 @@ public IResolvable|java.util.List<DataDatabricksAccountNetworkPolicyIngressDryRu
 
 - *Type:* io.cdktn.cdktn.IResolvable|java.util.List<<a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPrivateAccessAllowRules">DataDatabricksAccountNetworkPolicyIngressDryRunPrivateAccessAllowRules</a>>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#allow_rules DataDatabricksAccountNetworkPolicy#allow_rules}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#allow_rules DataDatabricksAccountNetworkPolicy#allow_rules}.
 
 ---
 
@@ -3994,7 +4050,7 @@ public IResolvable|java.util.List<DataDatabricksAccountNetworkPolicyIngressDryRu
 
 - *Type:* io.cdktn.cdktn.IResolvable|java.util.List<<a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPrivateAccessDenyRules">DataDatabricksAccountNetworkPolicyIngressDryRunPrivateAccessDenyRules</a>>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#deny_rules DataDatabricksAccountNetworkPolicy#deny_rules}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#deny_rules DataDatabricksAccountNetworkPolicy#deny_rules}.
 
 ---
 
@@ -4017,10 +4073,10 @@ DataDatabricksAccountNetworkPolicyIngressDryRunPrivateAccessAllowRules.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPrivateAccessAllowRules.property.authentication">authentication</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPrivateAccessAllowRulesAuthentication">DataDatabricksAccountNetworkPolicyIngressDryRunPrivateAccessAllowRulesAuthentication</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#authentication DataDatabricksAccountNetworkPolicy#authentication}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPrivateAccessAllowRules.property.destination">destination</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPrivateAccessAllowRulesDestination">DataDatabricksAccountNetworkPolicyIngressDryRunPrivateAccessAllowRulesDestination</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#destination DataDatabricksAccountNetworkPolicy#destination}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPrivateAccessAllowRules.property.label">label</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#label DataDatabricksAccountNetworkPolicy#label}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPrivateAccessAllowRules.property.origin">origin</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPrivateAccessAllowRulesOrigin">DataDatabricksAccountNetworkPolicyIngressDryRunPrivateAccessAllowRulesOrigin</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#origin DataDatabricksAccountNetworkPolicy#origin}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPrivateAccessAllowRules.property.authentication">authentication</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPrivateAccessAllowRulesAuthentication">DataDatabricksAccountNetworkPolicyIngressDryRunPrivateAccessAllowRulesAuthentication</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#authentication DataDatabricksAccountNetworkPolicy#authentication}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPrivateAccessAllowRules.property.destination">destination</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPrivateAccessAllowRulesDestination">DataDatabricksAccountNetworkPolicyIngressDryRunPrivateAccessAllowRulesDestination</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#destination DataDatabricksAccountNetworkPolicy#destination}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPrivateAccessAllowRules.property.label">label</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#label DataDatabricksAccountNetworkPolicy#label}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPrivateAccessAllowRules.property.origin">origin</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPrivateAccessAllowRulesOrigin">DataDatabricksAccountNetworkPolicyIngressDryRunPrivateAccessAllowRulesOrigin</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#origin DataDatabricksAccountNetworkPolicy#origin}. |
 
 ---
 
@@ -4032,7 +4088,7 @@ public DataDatabricksAccountNetworkPolicyIngressDryRunPrivateAccessAllowRulesAut
 
 - *Type:* <a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPrivateAccessAllowRulesAuthentication">DataDatabricksAccountNetworkPolicyIngressDryRunPrivateAccessAllowRulesAuthentication</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#authentication DataDatabricksAccountNetworkPolicy#authentication}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#authentication DataDatabricksAccountNetworkPolicy#authentication}.
 
 ---
 
@@ -4044,7 +4100,7 @@ public DataDatabricksAccountNetworkPolicyIngressDryRunPrivateAccessAllowRulesDes
 
 - *Type:* <a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPrivateAccessAllowRulesDestination">DataDatabricksAccountNetworkPolicyIngressDryRunPrivateAccessAllowRulesDestination</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#destination DataDatabricksAccountNetworkPolicy#destination}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#destination DataDatabricksAccountNetworkPolicy#destination}.
 
 ---
 
@@ -4056,7 +4112,7 @@ public java.lang.String getLabel();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#label DataDatabricksAccountNetworkPolicy#label}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#label DataDatabricksAccountNetworkPolicy#label}.
 
 ---
 
@@ -4068,7 +4124,7 @@ public DataDatabricksAccountNetworkPolicyIngressDryRunPrivateAccessAllowRulesOri
 
 - *Type:* <a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPrivateAccessAllowRulesOrigin">DataDatabricksAccountNetworkPolicyIngressDryRunPrivateAccessAllowRulesOrigin</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#origin DataDatabricksAccountNetworkPolicy#origin}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#origin DataDatabricksAccountNetworkPolicy#origin}.
 
 ---
 
@@ -4089,8 +4145,8 @@ DataDatabricksAccountNetworkPolicyIngressDryRunPrivateAccessAllowRulesAuthentica
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPrivateAccessAllowRulesAuthentication.property.identities">identities</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPrivateAccessAllowRulesAuthenticationIdentities">DataDatabricksAccountNetworkPolicyIngressDryRunPrivateAccessAllowRulesAuthenticationIdentities</a>></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#identities DataDatabricksAccountNetworkPolicy#identities}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPrivateAccessAllowRulesAuthentication.property.identityType">identityType</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#identity_type DataDatabricksAccountNetworkPolicy#identity_type}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPrivateAccessAllowRulesAuthentication.property.identities">identities</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPrivateAccessAllowRulesAuthenticationIdentities">DataDatabricksAccountNetworkPolicyIngressDryRunPrivateAccessAllowRulesAuthenticationIdentities</a>></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#identities DataDatabricksAccountNetworkPolicy#identities}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPrivateAccessAllowRulesAuthentication.property.identityType">identityType</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#identity_type DataDatabricksAccountNetworkPolicy#identity_type}. |
 
 ---
 
@@ -4102,7 +4158,7 @@ public IResolvable|java.util.List<DataDatabricksAccountNetworkPolicyIngressDryRu
 
 - *Type:* io.cdktn.cdktn.IResolvable|java.util.List<<a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPrivateAccessAllowRulesAuthenticationIdentities">DataDatabricksAccountNetworkPolicyIngressDryRunPrivateAccessAllowRulesAuthenticationIdentities</a>>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#identities DataDatabricksAccountNetworkPolicy#identities}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#identities DataDatabricksAccountNetworkPolicy#identities}.
 
 ---
 
@@ -4114,7 +4170,7 @@ public java.lang.String getIdentityType();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#identity_type DataDatabricksAccountNetworkPolicy#identity_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#identity_type DataDatabricksAccountNetworkPolicy#identity_type}.
 
 ---
 
@@ -4135,8 +4191,8 @@ DataDatabricksAccountNetworkPolicyIngressDryRunPrivateAccessAllowRulesAuthentica
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPrivateAccessAllowRulesAuthenticationIdentities.property.principalId">principalId</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#principal_id DataDatabricksAccountNetworkPolicy#principal_id}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPrivateAccessAllowRulesAuthenticationIdentities.property.principalType">principalType</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#principal_type DataDatabricksAccountNetworkPolicy#principal_type}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPrivateAccessAllowRulesAuthenticationIdentities.property.principalId">principalId</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#principal_id DataDatabricksAccountNetworkPolicy#principal_id}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPrivateAccessAllowRulesAuthenticationIdentities.property.principalType">principalType</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#principal_type DataDatabricksAccountNetworkPolicy#principal_type}. |
 
 ---
 
@@ -4148,7 +4204,7 @@ public java.lang.Number getPrincipalId();
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#principal_id DataDatabricksAccountNetworkPolicy#principal_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#principal_id DataDatabricksAccountNetworkPolicy#principal_id}.
 
 ---
 
@@ -4160,7 +4216,7 @@ public java.lang.String getPrincipalType();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#principal_type DataDatabricksAccountNetworkPolicy#principal_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#principal_type DataDatabricksAccountNetworkPolicy#principal_type}.
 
 ---
 
@@ -4187,14 +4243,14 @@ DataDatabricksAccountNetworkPolicyIngressDryRunPrivateAccessAllowRulesDestinatio
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPrivateAccessAllowRulesDestination.property.accountApi">accountApi</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPrivateAccessAllowRulesDestinationAccountApi">DataDatabricksAccountNetworkPolicyIngressDryRunPrivateAccessAllowRulesDestinationAccountApi</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#account_api DataDatabricksAccountNetworkPolicy#account_api}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPrivateAccessAllowRulesDestination.property.accountDatabricksOne">accountDatabricksOne</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPrivateAccessAllowRulesDestinationAccountDatabricksOne">DataDatabricksAccountNetworkPolicyIngressDryRunPrivateAccessAllowRulesDestinationAccountDatabricksOne</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#account_databricks_one DataDatabricksAccountNetworkPolicy#account_databricks_one}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPrivateAccessAllowRulesDestination.property.accountUi">accountUi</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPrivateAccessAllowRulesDestinationAccountUi">DataDatabricksAccountNetworkPolicyIngressDryRunPrivateAccessAllowRulesDestinationAccountUi</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#account_ui DataDatabricksAccountNetworkPolicy#account_ui}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPrivateAccessAllowRulesDestination.property.allDestinations">allDestinations</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#all_destinations DataDatabricksAccountNetworkPolicy#all_destinations}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPrivateAccessAllowRulesDestination.property.appsRuntime">appsRuntime</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPrivateAccessAllowRulesDestinationAppsRuntime">DataDatabricksAccountNetworkPolicyIngressDryRunPrivateAccessAllowRulesDestinationAppsRuntime</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#apps_runtime DataDatabricksAccountNetworkPolicy#apps_runtime}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPrivateAccessAllowRulesDestination.property.lakebaseRuntime">lakebaseRuntime</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPrivateAccessAllowRulesDestinationLakebaseRuntime">DataDatabricksAccountNetworkPolicyIngressDryRunPrivateAccessAllowRulesDestinationLakebaseRuntime</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#lakebase_runtime DataDatabricksAccountNetworkPolicy#lakebase_runtime}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPrivateAccessAllowRulesDestination.property.workspaceApi">workspaceApi</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPrivateAccessAllowRulesDestinationWorkspaceApi">DataDatabricksAccountNetworkPolicyIngressDryRunPrivateAccessAllowRulesDestinationWorkspaceApi</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#workspace_api DataDatabricksAccountNetworkPolicy#workspace_api}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPrivateAccessAllowRulesDestination.property.workspaceUi">workspaceUi</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPrivateAccessAllowRulesDestinationWorkspaceUi">DataDatabricksAccountNetworkPolicyIngressDryRunPrivateAccessAllowRulesDestinationWorkspaceUi</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#workspace_ui DataDatabricksAccountNetworkPolicy#workspace_ui}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPrivateAccessAllowRulesDestination.property.accountApi">accountApi</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPrivateAccessAllowRulesDestinationAccountApi">DataDatabricksAccountNetworkPolicyIngressDryRunPrivateAccessAllowRulesDestinationAccountApi</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#account_api DataDatabricksAccountNetworkPolicy#account_api}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPrivateAccessAllowRulesDestination.property.accountDatabricksOne">accountDatabricksOne</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPrivateAccessAllowRulesDestinationAccountDatabricksOne">DataDatabricksAccountNetworkPolicyIngressDryRunPrivateAccessAllowRulesDestinationAccountDatabricksOne</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#account_databricks_one DataDatabricksAccountNetworkPolicy#account_databricks_one}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPrivateAccessAllowRulesDestination.property.accountUi">accountUi</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPrivateAccessAllowRulesDestinationAccountUi">DataDatabricksAccountNetworkPolicyIngressDryRunPrivateAccessAllowRulesDestinationAccountUi</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#account_ui DataDatabricksAccountNetworkPolicy#account_ui}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPrivateAccessAllowRulesDestination.property.allDestinations">allDestinations</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#all_destinations DataDatabricksAccountNetworkPolicy#all_destinations}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPrivateAccessAllowRulesDestination.property.appsRuntime">appsRuntime</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPrivateAccessAllowRulesDestinationAppsRuntime">DataDatabricksAccountNetworkPolicyIngressDryRunPrivateAccessAllowRulesDestinationAppsRuntime</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#apps_runtime DataDatabricksAccountNetworkPolicy#apps_runtime}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPrivateAccessAllowRulesDestination.property.lakebaseRuntime">lakebaseRuntime</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPrivateAccessAllowRulesDestinationLakebaseRuntime">DataDatabricksAccountNetworkPolicyIngressDryRunPrivateAccessAllowRulesDestinationLakebaseRuntime</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#lakebase_runtime DataDatabricksAccountNetworkPolicy#lakebase_runtime}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPrivateAccessAllowRulesDestination.property.workspaceApi">workspaceApi</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPrivateAccessAllowRulesDestinationWorkspaceApi">DataDatabricksAccountNetworkPolicyIngressDryRunPrivateAccessAllowRulesDestinationWorkspaceApi</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#workspace_api DataDatabricksAccountNetworkPolicy#workspace_api}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPrivateAccessAllowRulesDestination.property.workspaceUi">workspaceUi</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPrivateAccessAllowRulesDestinationWorkspaceUi">DataDatabricksAccountNetworkPolicyIngressDryRunPrivateAccessAllowRulesDestinationWorkspaceUi</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#workspace_ui DataDatabricksAccountNetworkPolicy#workspace_ui}. |
 
 ---
 
@@ -4206,7 +4262,7 @@ public DataDatabricksAccountNetworkPolicyIngressDryRunPrivateAccessAllowRulesDes
 
 - *Type:* <a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPrivateAccessAllowRulesDestinationAccountApi">DataDatabricksAccountNetworkPolicyIngressDryRunPrivateAccessAllowRulesDestinationAccountApi</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#account_api DataDatabricksAccountNetworkPolicy#account_api}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#account_api DataDatabricksAccountNetworkPolicy#account_api}.
 
 ---
 
@@ -4218,7 +4274,7 @@ public DataDatabricksAccountNetworkPolicyIngressDryRunPrivateAccessAllowRulesDes
 
 - *Type:* <a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPrivateAccessAllowRulesDestinationAccountDatabricksOne">DataDatabricksAccountNetworkPolicyIngressDryRunPrivateAccessAllowRulesDestinationAccountDatabricksOne</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#account_databricks_one DataDatabricksAccountNetworkPolicy#account_databricks_one}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#account_databricks_one DataDatabricksAccountNetworkPolicy#account_databricks_one}.
 
 ---
 
@@ -4230,7 +4286,7 @@ public DataDatabricksAccountNetworkPolicyIngressDryRunPrivateAccessAllowRulesDes
 
 - *Type:* <a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPrivateAccessAllowRulesDestinationAccountUi">DataDatabricksAccountNetworkPolicyIngressDryRunPrivateAccessAllowRulesDestinationAccountUi</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#account_ui DataDatabricksAccountNetworkPolicy#account_ui}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#account_ui DataDatabricksAccountNetworkPolicy#account_ui}.
 
 ---
 
@@ -4242,7 +4298,7 @@ public java.lang.Boolean|IResolvable getAllDestinations();
 
 - *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#all_destinations DataDatabricksAccountNetworkPolicy#all_destinations}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#all_destinations DataDatabricksAccountNetworkPolicy#all_destinations}.
 
 ---
 
@@ -4254,7 +4310,7 @@ public DataDatabricksAccountNetworkPolicyIngressDryRunPrivateAccessAllowRulesDes
 
 - *Type:* <a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPrivateAccessAllowRulesDestinationAppsRuntime">DataDatabricksAccountNetworkPolicyIngressDryRunPrivateAccessAllowRulesDestinationAppsRuntime</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#apps_runtime DataDatabricksAccountNetworkPolicy#apps_runtime}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#apps_runtime DataDatabricksAccountNetworkPolicy#apps_runtime}.
 
 ---
 
@@ -4266,7 +4322,7 @@ public DataDatabricksAccountNetworkPolicyIngressDryRunPrivateAccessAllowRulesDes
 
 - *Type:* <a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPrivateAccessAllowRulesDestinationLakebaseRuntime">DataDatabricksAccountNetworkPolicyIngressDryRunPrivateAccessAllowRulesDestinationLakebaseRuntime</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#lakebase_runtime DataDatabricksAccountNetworkPolicy#lakebase_runtime}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#lakebase_runtime DataDatabricksAccountNetworkPolicy#lakebase_runtime}.
 
 ---
 
@@ -4278,7 +4334,7 @@ public DataDatabricksAccountNetworkPolicyIngressDryRunPrivateAccessAllowRulesDes
 
 - *Type:* <a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPrivateAccessAllowRulesDestinationWorkspaceApi">DataDatabricksAccountNetworkPolicyIngressDryRunPrivateAccessAllowRulesDestinationWorkspaceApi</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#workspace_api DataDatabricksAccountNetworkPolicy#workspace_api}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#workspace_api DataDatabricksAccountNetworkPolicy#workspace_api}.
 
 ---
 
@@ -4290,7 +4346,7 @@ public DataDatabricksAccountNetworkPolicyIngressDryRunPrivateAccessAllowRulesDes
 
 - *Type:* <a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPrivateAccessAllowRulesDestinationWorkspaceUi">DataDatabricksAccountNetworkPolicyIngressDryRunPrivateAccessAllowRulesDestinationWorkspaceUi</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#workspace_ui DataDatabricksAccountNetworkPolicy#workspace_ui}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#workspace_ui DataDatabricksAccountNetworkPolicy#workspace_ui}.
 
 ---
 
@@ -4311,8 +4367,8 @@ DataDatabricksAccountNetworkPolicyIngressDryRunPrivateAccessAllowRulesDestinatio
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPrivateAccessAllowRulesDestinationAccountApi.property.scopeQualifier">scopeQualifier</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#scope_qualifier DataDatabricksAccountNetworkPolicy#scope_qualifier}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPrivateAccessAllowRulesDestinationAccountApi.property.scopes">scopes</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#scopes DataDatabricksAccountNetworkPolicy#scopes}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPrivateAccessAllowRulesDestinationAccountApi.property.scopeQualifier">scopeQualifier</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#scope_qualifier DataDatabricksAccountNetworkPolicy#scope_qualifier}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPrivateAccessAllowRulesDestinationAccountApi.property.scopes">scopes</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#scopes DataDatabricksAccountNetworkPolicy#scopes}. |
 
 ---
 
@@ -4324,7 +4380,7 @@ public java.lang.String getScopeQualifier();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#scope_qualifier DataDatabricksAccountNetworkPolicy#scope_qualifier}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#scope_qualifier DataDatabricksAccountNetworkPolicy#scope_qualifier}.
 
 ---
 
@@ -4336,7 +4392,7 @@ public java.util.List<java.lang.String> getScopes();
 
 - *Type:* java.util.List<java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#scopes DataDatabricksAccountNetworkPolicy#scopes}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#scopes DataDatabricksAccountNetworkPolicy#scopes}.
 
 ---
 
@@ -4356,7 +4412,7 @@ DataDatabricksAccountNetworkPolicyIngressDryRunPrivateAccessAllowRulesDestinatio
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPrivateAccessAllowRulesDestinationAccountDatabricksOne.property.allDestinations">allDestinations</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#all_destinations DataDatabricksAccountNetworkPolicy#all_destinations}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPrivateAccessAllowRulesDestinationAccountDatabricksOne.property.allDestinations">allDestinations</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#all_destinations DataDatabricksAccountNetworkPolicy#all_destinations}. |
 
 ---
 
@@ -4368,7 +4424,7 @@ public java.lang.Boolean|IResolvable getAllDestinations();
 
 - *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#all_destinations DataDatabricksAccountNetworkPolicy#all_destinations}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#all_destinations DataDatabricksAccountNetworkPolicy#all_destinations}.
 
 ---
 
@@ -4388,7 +4444,7 @@ DataDatabricksAccountNetworkPolicyIngressDryRunPrivateAccessAllowRulesDestinatio
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPrivateAccessAllowRulesDestinationAccountUi.property.allDestinations">allDestinations</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#all_destinations DataDatabricksAccountNetworkPolicy#all_destinations}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPrivateAccessAllowRulesDestinationAccountUi.property.allDestinations">allDestinations</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#all_destinations DataDatabricksAccountNetworkPolicy#all_destinations}. |
 
 ---
 
@@ -4400,7 +4456,7 @@ public java.lang.Boolean|IResolvable getAllDestinations();
 
 - *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#all_destinations DataDatabricksAccountNetworkPolicy#all_destinations}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#all_destinations DataDatabricksAccountNetworkPolicy#all_destinations}.
 
 ---
 
@@ -4420,7 +4476,7 @@ DataDatabricksAccountNetworkPolicyIngressDryRunPrivateAccessAllowRulesDestinatio
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPrivateAccessAllowRulesDestinationAppsRuntime.property.allDestinations">allDestinations</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#all_destinations DataDatabricksAccountNetworkPolicy#all_destinations}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPrivateAccessAllowRulesDestinationAppsRuntime.property.allDestinations">allDestinations</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#all_destinations DataDatabricksAccountNetworkPolicy#all_destinations}. |
 
 ---
 
@@ -4432,7 +4488,7 @@ public java.lang.Boolean|IResolvable getAllDestinations();
 
 - *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#all_destinations DataDatabricksAccountNetworkPolicy#all_destinations}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#all_destinations DataDatabricksAccountNetworkPolicy#all_destinations}.
 
 ---
 
@@ -4452,7 +4508,7 @@ DataDatabricksAccountNetworkPolicyIngressDryRunPrivateAccessAllowRulesDestinatio
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPrivateAccessAllowRulesDestinationLakebaseRuntime.property.allDestinations">allDestinations</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#all_destinations DataDatabricksAccountNetworkPolicy#all_destinations}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPrivateAccessAllowRulesDestinationLakebaseRuntime.property.allDestinations">allDestinations</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#all_destinations DataDatabricksAccountNetworkPolicy#all_destinations}. |
 
 ---
 
@@ -4464,7 +4520,7 @@ public java.lang.Boolean|IResolvable getAllDestinations();
 
 - *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#all_destinations DataDatabricksAccountNetworkPolicy#all_destinations}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#all_destinations DataDatabricksAccountNetworkPolicy#all_destinations}.
 
 ---
 
@@ -4476,6 +4532,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 import io.cdktn.providers.databricks.data_databricks_account_network_policy.DataDatabricksAccountNetworkPolicyIngressDryRunPrivateAccessAllowRulesDestinationWorkspaceApi;
 
 DataDatabricksAccountNetworkPolicyIngressDryRunPrivateAccessAllowRulesDestinationWorkspaceApi.builder()
+//  .excludedScopes(java.util.List<java.lang.String>)
 //  .scopeQualifier(java.lang.String)
 //  .scopes(java.util.List<java.lang.String>)
     .build();
@@ -4485,8 +4542,21 @@ DataDatabricksAccountNetworkPolicyIngressDryRunPrivateAccessAllowRulesDestinatio
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPrivateAccessAllowRulesDestinationWorkspaceApi.property.scopeQualifier">scopeQualifier</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#scope_qualifier DataDatabricksAccountNetworkPolicy#scope_qualifier}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPrivateAccessAllowRulesDestinationWorkspaceApi.property.scopes">scopes</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#scopes DataDatabricksAccountNetworkPolicy#scopes}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPrivateAccessAllowRulesDestinationWorkspaceApi.property.excludedScopes">excludedScopes</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#excluded_scopes DataDatabricksAccountNetworkPolicy#excluded_scopes}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPrivateAccessAllowRulesDestinationWorkspaceApi.property.scopeQualifier">scopeQualifier</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#scope_qualifier DataDatabricksAccountNetworkPolicy#scope_qualifier}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPrivateAccessAllowRulesDestinationWorkspaceApi.property.scopes">scopes</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#scopes DataDatabricksAccountNetworkPolicy#scopes}. |
+
+---
+
+##### `excludedScopes`<sup>Optional</sup> <a name="excludedScopes" id="@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPrivateAccessAllowRulesDestinationWorkspaceApi.property.excludedScopes"></a>
+
+```java
+public java.util.List<java.lang.String> getExcludedScopes();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#excluded_scopes DataDatabricksAccountNetworkPolicy#excluded_scopes}.
 
 ---
 
@@ -4498,7 +4568,7 @@ public java.lang.String getScopeQualifier();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#scope_qualifier DataDatabricksAccountNetworkPolicy#scope_qualifier}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#scope_qualifier DataDatabricksAccountNetworkPolicy#scope_qualifier}.
 
 ---
 
@@ -4510,7 +4580,7 @@ public java.util.List<java.lang.String> getScopes();
 
 - *Type:* java.util.List<java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#scopes DataDatabricksAccountNetworkPolicy#scopes}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#scopes DataDatabricksAccountNetworkPolicy#scopes}.
 
 ---
 
@@ -4530,7 +4600,7 @@ DataDatabricksAccountNetworkPolicyIngressDryRunPrivateAccessAllowRulesDestinatio
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPrivateAccessAllowRulesDestinationWorkspaceUi.property.allDestinations">allDestinations</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#all_destinations DataDatabricksAccountNetworkPolicy#all_destinations}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPrivateAccessAllowRulesDestinationWorkspaceUi.property.allDestinations">allDestinations</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#all_destinations DataDatabricksAccountNetworkPolicy#all_destinations}. |
 
 ---
 
@@ -4542,7 +4612,7 @@ public java.lang.Boolean|IResolvable getAllDestinations();
 
 - *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#all_destinations DataDatabricksAccountNetworkPolicy#all_destinations}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#all_destinations DataDatabricksAccountNetworkPolicy#all_destinations}.
 
 ---
 
@@ -4565,10 +4635,10 @@ DataDatabricksAccountNetworkPolicyIngressDryRunPrivateAccessAllowRulesOrigin.bui
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPrivateAccessAllowRulesOrigin.property.allPrivateAccess">allPrivateAccess</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#all_private_access DataDatabricksAccountNetworkPolicy#all_private_access}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPrivateAccessAllowRulesOrigin.property.allRegisteredEndpoints">allRegisteredEndpoints</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#all_registered_endpoints DataDatabricksAccountNetworkPolicy#all_registered_endpoints}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPrivateAccessAllowRulesOrigin.property.azureWorkspacePrivateLink">azureWorkspacePrivateLink</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#azure_workspace_private_link DataDatabricksAccountNetworkPolicy#azure_workspace_private_link}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPrivateAccessAllowRulesOrigin.property.endpoints">endpoints</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPrivateAccessAllowRulesOriginEndpoints">DataDatabricksAccountNetworkPolicyIngressDryRunPrivateAccessAllowRulesOriginEndpoints</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#endpoints DataDatabricksAccountNetworkPolicy#endpoints}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPrivateAccessAllowRulesOrigin.property.allPrivateAccess">allPrivateAccess</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#all_private_access DataDatabricksAccountNetworkPolicy#all_private_access}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPrivateAccessAllowRulesOrigin.property.allRegisteredEndpoints">allRegisteredEndpoints</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#all_registered_endpoints DataDatabricksAccountNetworkPolicy#all_registered_endpoints}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPrivateAccessAllowRulesOrigin.property.azureWorkspacePrivateLink">azureWorkspacePrivateLink</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#azure_workspace_private_link DataDatabricksAccountNetworkPolicy#azure_workspace_private_link}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPrivateAccessAllowRulesOrigin.property.endpoints">endpoints</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPrivateAccessAllowRulesOriginEndpoints">DataDatabricksAccountNetworkPolicyIngressDryRunPrivateAccessAllowRulesOriginEndpoints</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#endpoints DataDatabricksAccountNetworkPolicy#endpoints}. |
 
 ---
 
@@ -4580,7 +4650,7 @@ public java.lang.Boolean|IResolvable getAllPrivateAccess();
 
 - *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#all_private_access DataDatabricksAccountNetworkPolicy#all_private_access}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#all_private_access DataDatabricksAccountNetworkPolicy#all_private_access}.
 
 ---
 
@@ -4592,7 +4662,7 @@ public java.lang.Boolean|IResolvable getAllRegisteredEndpoints();
 
 - *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#all_registered_endpoints DataDatabricksAccountNetworkPolicy#all_registered_endpoints}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#all_registered_endpoints DataDatabricksAccountNetworkPolicy#all_registered_endpoints}.
 
 ---
 
@@ -4604,7 +4674,7 @@ public java.lang.Boolean|IResolvable getAzureWorkspacePrivateLink();
 
 - *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#azure_workspace_private_link DataDatabricksAccountNetworkPolicy#azure_workspace_private_link}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#azure_workspace_private_link DataDatabricksAccountNetworkPolicy#azure_workspace_private_link}.
 
 ---
 
@@ -4616,7 +4686,7 @@ public DataDatabricksAccountNetworkPolicyIngressDryRunPrivateAccessAllowRulesOri
 
 - *Type:* <a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPrivateAccessAllowRulesOriginEndpoints">DataDatabricksAccountNetworkPolicyIngressDryRunPrivateAccessAllowRulesOriginEndpoints</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#endpoints DataDatabricksAccountNetworkPolicy#endpoints}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#endpoints DataDatabricksAccountNetworkPolicy#endpoints}.
 
 ---
 
@@ -4636,7 +4706,7 @@ DataDatabricksAccountNetworkPolicyIngressDryRunPrivateAccessAllowRulesOriginEndp
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPrivateAccessAllowRulesOriginEndpoints.property.endpointIds">endpointIds</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#endpoint_ids DataDatabricksAccountNetworkPolicy#endpoint_ids}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPrivateAccessAllowRulesOriginEndpoints.property.endpointIds">endpointIds</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#endpoint_ids DataDatabricksAccountNetworkPolicy#endpoint_ids}. |
 
 ---
 
@@ -4648,7 +4718,7 @@ public java.util.List<java.lang.String> getEndpointIds();
 
 - *Type:* java.util.List<java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#endpoint_ids DataDatabricksAccountNetworkPolicy#endpoint_ids}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#endpoint_ids DataDatabricksAccountNetworkPolicy#endpoint_ids}.
 
 ---
 
@@ -4671,10 +4741,10 @@ DataDatabricksAccountNetworkPolicyIngressDryRunPrivateAccessDenyRules.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPrivateAccessDenyRules.property.authentication">authentication</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPrivateAccessDenyRulesAuthentication">DataDatabricksAccountNetworkPolicyIngressDryRunPrivateAccessDenyRulesAuthentication</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#authentication DataDatabricksAccountNetworkPolicy#authentication}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPrivateAccessDenyRules.property.destination">destination</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPrivateAccessDenyRulesDestination">DataDatabricksAccountNetworkPolicyIngressDryRunPrivateAccessDenyRulesDestination</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#destination DataDatabricksAccountNetworkPolicy#destination}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPrivateAccessDenyRules.property.label">label</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#label DataDatabricksAccountNetworkPolicy#label}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPrivateAccessDenyRules.property.origin">origin</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPrivateAccessDenyRulesOrigin">DataDatabricksAccountNetworkPolicyIngressDryRunPrivateAccessDenyRulesOrigin</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#origin DataDatabricksAccountNetworkPolicy#origin}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPrivateAccessDenyRules.property.authentication">authentication</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPrivateAccessDenyRulesAuthentication">DataDatabricksAccountNetworkPolicyIngressDryRunPrivateAccessDenyRulesAuthentication</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#authentication DataDatabricksAccountNetworkPolicy#authentication}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPrivateAccessDenyRules.property.destination">destination</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPrivateAccessDenyRulesDestination">DataDatabricksAccountNetworkPolicyIngressDryRunPrivateAccessDenyRulesDestination</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#destination DataDatabricksAccountNetworkPolicy#destination}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPrivateAccessDenyRules.property.label">label</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#label DataDatabricksAccountNetworkPolicy#label}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPrivateAccessDenyRules.property.origin">origin</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPrivateAccessDenyRulesOrigin">DataDatabricksAccountNetworkPolicyIngressDryRunPrivateAccessDenyRulesOrigin</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#origin DataDatabricksAccountNetworkPolicy#origin}. |
 
 ---
 
@@ -4686,7 +4756,7 @@ public DataDatabricksAccountNetworkPolicyIngressDryRunPrivateAccessDenyRulesAuth
 
 - *Type:* <a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPrivateAccessDenyRulesAuthentication">DataDatabricksAccountNetworkPolicyIngressDryRunPrivateAccessDenyRulesAuthentication</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#authentication DataDatabricksAccountNetworkPolicy#authentication}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#authentication DataDatabricksAccountNetworkPolicy#authentication}.
 
 ---
 
@@ -4698,7 +4768,7 @@ public DataDatabricksAccountNetworkPolicyIngressDryRunPrivateAccessDenyRulesDest
 
 - *Type:* <a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPrivateAccessDenyRulesDestination">DataDatabricksAccountNetworkPolicyIngressDryRunPrivateAccessDenyRulesDestination</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#destination DataDatabricksAccountNetworkPolicy#destination}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#destination DataDatabricksAccountNetworkPolicy#destination}.
 
 ---
 
@@ -4710,7 +4780,7 @@ public java.lang.String getLabel();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#label DataDatabricksAccountNetworkPolicy#label}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#label DataDatabricksAccountNetworkPolicy#label}.
 
 ---
 
@@ -4722,7 +4792,7 @@ public DataDatabricksAccountNetworkPolicyIngressDryRunPrivateAccessDenyRulesOrig
 
 - *Type:* <a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPrivateAccessDenyRulesOrigin">DataDatabricksAccountNetworkPolicyIngressDryRunPrivateAccessDenyRulesOrigin</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#origin DataDatabricksAccountNetworkPolicy#origin}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#origin DataDatabricksAccountNetworkPolicy#origin}.
 
 ---
 
@@ -4743,8 +4813,8 @@ DataDatabricksAccountNetworkPolicyIngressDryRunPrivateAccessDenyRulesAuthenticat
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPrivateAccessDenyRulesAuthentication.property.identities">identities</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPrivateAccessDenyRulesAuthenticationIdentities">DataDatabricksAccountNetworkPolicyIngressDryRunPrivateAccessDenyRulesAuthenticationIdentities</a>></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#identities DataDatabricksAccountNetworkPolicy#identities}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPrivateAccessDenyRulesAuthentication.property.identityType">identityType</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#identity_type DataDatabricksAccountNetworkPolicy#identity_type}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPrivateAccessDenyRulesAuthentication.property.identities">identities</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPrivateAccessDenyRulesAuthenticationIdentities">DataDatabricksAccountNetworkPolicyIngressDryRunPrivateAccessDenyRulesAuthenticationIdentities</a>></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#identities DataDatabricksAccountNetworkPolicy#identities}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPrivateAccessDenyRulesAuthentication.property.identityType">identityType</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#identity_type DataDatabricksAccountNetworkPolicy#identity_type}. |
 
 ---
 
@@ -4756,7 +4826,7 @@ public IResolvable|java.util.List<DataDatabricksAccountNetworkPolicyIngressDryRu
 
 - *Type:* io.cdktn.cdktn.IResolvable|java.util.List<<a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPrivateAccessDenyRulesAuthenticationIdentities">DataDatabricksAccountNetworkPolicyIngressDryRunPrivateAccessDenyRulesAuthenticationIdentities</a>>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#identities DataDatabricksAccountNetworkPolicy#identities}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#identities DataDatabricksAccountNetworkPolicy#identities}.
 
 ---
 
@@ -4768,7 +4838,7 @@ public java.lang.String getIdentityType();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#identity_type DataDatabricksAccountNetworkPolicy#identity_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#identity_type DataDatabricksAccountNetworkPolicy#identity_type}.
 
 ---
 
@@ -4789,8 +4859,8 @@ DataDatabricksAccountNetworkPolicyIngressDryRunPrivateAccessDenyRulesAuthenticat
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPrivateAccessDenyRulesAuthenticationIdentities.property.principalId">principalId</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#principal_id DataDatabricksAccountNetworkPolicy#principal_id}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPrivateAccessDenyRulesAuthenticationIdentities.property.principalType">principalType</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#principal_type DataDatabricksAccountNetworkPolicy#principal_type}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPrivateAccessDenyRulesAuthenticationIdentities.property.principalId">principalId</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#principal_id DataDatabricksAccountNetworkPolicy#principal_id}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPrivateAccessDenyRulesAuthenticationIdentities.property.principalType">principalType</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#principal_type DataDatabricksAccountNetworkPolicy#principal_type}. |
 
 ---
 
@@ -4802,7 +4872,7 @@ public java.lang.Number getPrincipalId();
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#principal_id DataDatabricksAccountNetworkPolicy#principal_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#principal_id DataDatabricksAccountNetworkPolicy#principal_id}.
 
 ---
 
@@ -4814,7 +4884,7 @@ public java.lang.String getPrincipalType();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#principal_type DataDatabricksAccountNetworkPolicy#principal_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#principal_type DataDatabricksAccountNetworkPolicy#principal_type}.
 
 ---
 
@@ -4841,14 +4911,14 @@ DataDatabricksAccountNetworkPolicyIngressDryRunPrivateAccessDenyRulesDestination
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPrivateAccessDenyRulesDestination.property.accountApi">accountApi</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPrivateAccessDenyRulesDestinationAccountApi">DataDatabricksAccountNetworkPolicyIngressDryRunPrivateAccessDenyRulesDestinationAccountApi</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#account_api DataDatabricksAccountNetworkPolicy#account_api}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPrivateAccessDenyRulesDestination.property.accountDatabricksOne">accountDatabricksOne</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPrivateAccessDenyRulesDestinationAccountDatabricksOne">DataDatabricksAccountNetworkPolicyIngressDryRunPrivateAccessDenyRulesDestinationAccountDatabricksOne</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#account_databricks_one DataDatabricksAccountNetworkPolicy#account_databricks_one}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPrivateAccessDenyRulesDestination.property.accountUi">accountUi</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPrivateAccessDenyRulesDestinationAccountUi">DataDatabricksAccountNetworkPolicyIngressDryRunPrivateAccessDenyRulesDestinationAccountUi</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#account_ui DataDatabricksAccountNetworkPolicy#account_ui}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPrivateAccessDenyRulesDestination.property.allDestinations">allDestinations</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#all_destinations DataDatabricksAccountNetworkPolicy#all_destinations}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPrivateAccessDenyRulesDestination.property.appsRuntime">appsRuntime</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPrivateAccessDenyRulesDestinationAppsRuntime">DataDatabricksAccountNetworkPolicyIngressDryRunPrivateAccessDenyRulesDestinationAppsRuntime</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#apps_runtime DataDatabricksAccountNetworkPolicy#apps_runtime}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPrivateAccessDenyRulesDestination.property.lakebaseRuntime">lakebaseRuntime</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPrivateAccessDenyRulesDestinationLakebaseRuntime">DataDatabricksAccountNetworkPolicyIngressDryRunPrivateAccessDenyRulesDestinationLakebaseRuntime</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#lakebase_runtime DataDatabricksAccountNetworkPolicy#lakebase_runtime}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPrivateAccessDenyRulesDestination.property.workspaceApi">workspaceApi</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPrivateAccessDenyRulesDestinationWorkspaceApi">DataDatabricksAccountNetworkPolicyIngressDryRunPrivateAccessDenyRulesDestinationWorkspaceApi</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#workspace_api DataDatabricksAccountNetworkPolicy#workspace_api}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPrivateAccessDenyRulesDestination.property.workspaceUi">workspaceUi</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPrivateAccessDenyRulesDestinationWorkspaceUi">DataDatabricksAccountNetworkPolicyIngressDryRunPrivateAccessDenyRulesDestinationWorkspaceUi</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#workspace_ui DataDatabricksAccountNetworkPolicy#workspace_ui}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPrivateAccessDenyRulesDestination.property.accountApi">accountApi</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPrivateAccessDenyRulesDestinationAccountApi">DataDatabricksAccountNetworkPolicyIngressDryRunPrivateAccessDenyRulesDestinationAccountApi</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#account_api DataDatabricksAccountNetworkPolicy#account_api}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPrivateAccessDenyRulesDestination.property.accountDatabricksOne">accountDatabricksOne</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPrivateAccessDenyRulesDestinationAccountDatabricksOne">DataDatabricksAccountNetworkPolicyIngressDryRunPrivateAccessDenyRulesDestinationAccountDatabricksOne</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#account_databricks_one DataDatabricksAccountNetworkPolicy#account_databricks_one}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPrivateAccessDenyRulesDestination.property.accountUi">accountUi</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPrivateAccessDenyRulesDestinationAccountUi">DataDatabricksAccountNetworkPolicyIngressDryRunPrivateAccessDenyRulesDestinationAccountUi</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#account_ui DataDatabricksAccountNetworkPolicy#account_ui}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPrivateAccessDenyRulesDestination.property.allDestinations">allDestinations</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#all_destinations DataDatabricksAccountNetworkPolicy#all_destinations}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPrivateAccessDenyRulesDestination.property.appsRuntime">appsRuntime</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPrivateAccessDenyRulesDestinationAppsRuntime">DataDatabricksAccountNetworkPolicyIngressDryRunPrivateAccessDenyRulesDestinationAppsRuntime</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#apps_runtime DataDatabricksAccountNetworkPolicy#apps_runtime}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPrivateAccessDenyRulesDestination.property.lakebaseRuntime">lakebaseRuntime</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPrivateAccessDenyRulesDestinationLakebaseRuntime">DataDatabricksAccountNetworkPolicyIngressDryRunPrivateAccessDenyRulesDestinationLakebaseRuntime</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#lakebase_runtime DataDatabricksAccountNetworkPolicy#lakebase_runtime}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPrivateAccessDenyRulesDestination.property.workspaceApi">workspaceApi</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPrivateAccessDenyRulesDestinationWorkspaceApi">DataDatabricksAccountNetworkPolicyIngressDryRunPrivateAccessDenyRulesDestinationWorkspaceApi</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#workspace_api DataDatabricksAccountNetworkPolicy#workspace_api}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPrivateAccessDenyRulesDestination.property.workspaceUi">workspaceUi</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPrivateAccessDenyRulesDestinationWorkspaceUi">DataDatabricksAccountNetworkPolicyIngressDryRunPrivateAccessDenyRulesDestinationWorkspaceUi</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#workspace_ui DataDatabricksAccountNetworkPolicy#workspace_ui}. |
 
 ---
 
@@ -4860,7 +4930,7 @@ public DataDatabricksAccountNetworkPolicyIngressDryRunPrivateAccessDenyRulesDest
 
 - *Type:* <a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPrivateAccessDenyRulesDestinationAccountApi">DataDatabricksAccountNetworkPolicyIngressDryRunPrivateAccessDenyRulesDestinationAccountApi</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#account_api DataDatabricksAccountNetworkPolicy#account_api}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#account_api DataDatabricksAccountNetworkPolicy#account_api}.
 
 ---
 
@@ -4872,7 +4942,7 @@ public DataDatabricksAccountNetworkPolicyIngressDryRunPrivateAccessDenyRulesDest
 
 - *Type:* <a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPrivateAccessDenyRulesDestinationAccountDatabricksOne">DataDatabricksAccountNetworkPolicyIngressDryRunPrivateAccessDenyRulesDestinationAccountDatabricksOne</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#account_databricks_one DataDatabricksAccountNetworkPolicy#account_databricks_one}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#account_databricks_one DataDatabricksAccountNetworkPolicy#account_databricks_one}.
 
 ---
 
@@ -4884,7 +4954,7 @@ public DataDatabricksAccountNetworkPolicyIngressDryRunPrivateAccessDenyRulesDest
 
 - *Type:* <a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPrivateAccessDenyRulesDestinationAccountUi">DataDatabricksAccountNetworkPolicyIngressDryRunPrivateAccessDenyRulesDestinationAccountUi</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#account_ui DataDatabricksAccountNetworkPolicy#account_ui}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#account_ui DataDatabricksAccountNetworkPolicy#account_ui}.
 
 ---
 
@@ -4896,7 +4966,7 @@ public java.lang.Boolean|IResolvable getAllDestinations();
 
 - *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#all_destinations DataDatabricksAccountNetworkPolicy#all_destinations}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#all_destinations DataDatabricksAccountNetworkPolicy#all_destinations}.
 
 ---
 
@@ -4908,7 +4978,7 @@ public DataDatabricksAccountNetworkPolicyIngressDryRunPrivateAccessDenyRulesDest
 
 - *Type:* <a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPrivateAccessDenyRulesDestinationAppsRuntime">DataDatabricksAccountNetworkPolicyIngressDryRunPrivateAccessDenyRulesDestinationAppsRuntime</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#apps_runtime DataDatabricksAccountNetworkPolicy#apps_runtime}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#apps_runtime DataDatabricksAccountNetworkPolicy#apps_runtime}.
 
 ---
 
@@ -4920,7 +4990,7 @@ public DataDatabricksAccountNetworkPolicyIngressDryRunPrivateAccessDenyRulesDest
 
 - *Type:* <a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPrivateAccessDenyRulesDestinationLakebaseRuntime">DataDatabricksAccountNetworkPolicyIngressDryRunPrivateAccessDenyRulesDestinationLakebaseRuntime</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#lakebase_runtime DataDatabricksAccountNetworkPolicy#lakebase_runtime}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#lakebase_runtime DataDatabricksAccountNetworkPolicy#lakebase_runtime}.
 
 ---
 
@@ -4932,7 +5002,7 @@ public DataDatabricksAccountNetworkPolicyIngressDryRunPrivateAccessDenyRulesDest
 
 - *Type:* <a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPrivateAccessDenyRulesDestinationWorkspaceApi">DataDatabricksAccountNetworkPolicyIngressDryRunPrivateAccessDenyRulesDestinationWorkspaceApi</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#workspace_api DataDatabricksAccountNetworkPolicy#workspace_api}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#workspace_api DataDatabricksAccountNetworkPolicy#workspace_api}.
 
 ---
 
@@ -4944,7 +5014,7 @@ public DataDatabricksAccountNetworkPolicyIngressDryRunPrivateAccessDenyRulesDest
 
 - *Type:* <a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPrivateAccessDenyRulesDestinationWorkspaceUi">DataDatabricksAccountNetworkPolicyIngressDryRunPrivateAccessDenyRulesDestinationWorkspaceUi</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#workspace_ui DataDatabricksAccountNetworkPolicy#workspace_ui}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#workspace_ui DataDatabricksAccountNetworkPolicy#workspace_ui}.
 
 ---
 
@@ -4965,8 +5035,8 @@ DataDatabricksAccountNetworkPolicyIngressDryRunPrivateAccessDenyRulesDestination
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPrivateAccessDenyRulesDestinationAccountApi.property.scopeQualifier">scopeQualifier</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#scope_qualifier DataDatabricksAccountNetworkPolicy#scope_qualifier}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPrivateAccessDenyRulesDestinationAccountApi.property.scopes">scopes</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#scopes DataDatabricksAccountNetworkPolicy#scopes}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPrivateAccessDenyRulesDestinationAccountApi.property.scopeQualifier">scopeQualifier</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#scope_qualifier DataDatabricksAccountNetworkPolicy#scope_qualifier}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPrivateAccessDenyRulesDestinationAccountApi.property.scopes">scopes</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#scopes DataDatabricksAccountNetworkPolicy#scopes}. |
 
 ---
 
@@ -4978,7 +5048,7 @@ public java.lang.String getScopeQualifier();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#scope_qualifier DataDatabricksAccountNetworkPolicy#scope_qualifier}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#scope_qualifier DataDatabricksAccountNetworkPolicy#scope_qualifier}.
 
 ---
 
@@ -4990,7 +5060,7 @@ public java.util.List<java.lang.String> getScopes();
 
 - *Type:* java.util.List<java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#scopes DataDatabricksAccountNetworkPolicy#scopes}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#scopes DataDatabricksAccountNetworkPolicy#scopes}.
 
 ---
 
@@ -5010,7 +5080,7 @@ DataDatabricksAccountNetworkPolicyIngressDryRunPrivateAccessDenyRulesDestination
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPrivateAccessDenyRulesDestinationAccountDatabricksOne.property.allDestinations">allDestinations</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#all_destinations DataDatabricksAccountNetworkPolicy#all_destinations}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPrivateAccessDenyRulesDestinationAccountDatabricksOne.property.allDestinations">allDestinations</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#all_destinations DataDatabricksAccountNetworkPolicy#all_destinations}. |
 
 ---
 
@@ -5022,7 +5092,7 @@ public java.lang.Boolean|IResolvable getAllDestinations();
 
 - *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#all_destinations DataDatabricksAccountNetworkPolicy#all_destinations}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#all_destinations DataDatabricksAccountNetworkPolicy#all_destinations}.
 
 ---
 
@@ -5042,7 +5112,7 @@ DataDatabricksAccountNetworkPolicyIngressDryRunPrivateAccessDenyRulesDestination
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPrivateAccessDenyRulesDestinationAccountUi.property.allDestinations">allDestinations</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#all_destinations DataDatabricksAccountNetworkPolicy#all_destinations}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPrivateAccessDenyRulesDestinationAccountUi.property.allDestinations">allDestinations</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#all_destinations DataDatabricksAccountNetworkPolicy#all_destinations}. |
 
 ---
 
@@ -5054,7 +5124,7 @@ public java.lang.Boolean|IResolvable getAllDestinations();
 
 - *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#all_destinations DataDatabricksAccountNetworkPolicy#all_destinations}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#all_destinations DataDatabricksAccountNetworkPolicy#all_destinations}.
 
 ---
 
@@ -5074,7 +5144,7 @@ DataDatabricksAccountNetworkPolicyIngressDryRunPrivateAccessDenyRulesDestination
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPrivateAccessDenyRulesDestinationAppsRuntime.property.allDestinations">allDestinations</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#all_destinations DataDatabricksAccountNetworkPolicy#all_destinations}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPrivateAccessDenyRulesDestinationAppsRuntime.property.allDestinations">allDestinations</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#all_destinations DataDatabricksAccountNetworkPolicy#all_destinations}. |
 
 ---
 
@@ -5086,7 +5156,7 @@ public java.lang.Boolean|IResolvable getAllDestinations();
 
 - *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#all_destinations DataDatabricksAccountNetworkPolicy#all_destinations}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#all_destinations DataDatabricksAccountNetworkPolicy#all_destinations}.
 
 ---
 
@@ -5106,7 +5176,7 @@ DataDatabricksAccountNetworkPolicyIngressDryRunPrivateAccessDenyRulesDestination
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPrivateAccessDenyRulesDestinationLakebaseRuntime.property.allDestinations">allDestinations</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#all_destinations DataDatabricksAccountNetworkPolicy#all_destinations}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPrivateAccessDenyRulesDestinationLakebaseRuntime.property.allDestinations">allDestinations</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#all_destinations DataDatabricksAccountNetworkPolicy#all_destinations}. |
 
 ---
 
@@ -5118,7 +5188,7 @@ public java.lang.Boolean|IResolvable getAllDestinations();
 
 - *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#all_destinations DataDatabricksAccountNetworkPolicy#all_destinations}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#all_destinations DataDatabricksAccountNetworkPolicy#all_destinations}.
 
 ---
 
@@ -5130,6 +5200,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 import io.cdktn.providers.databricks.data_databricks_account_network_policy.DataDatabricksAccountNetworkPolicyIngressDryRunPrivateAccessDenyRulesDestinationWorkspaceApi;
 
 DataDatabricksAccountNetworkPolicyIngressDryRunPrivateAccessDenyRulesDestinationWorkspaceApi.builder()
+//  .excludedScopes(java.util.List<java.lang.String>)
 //  .scopeQualifier(java.lang.String)
 //  .scopes(java.util.List<java.lang.String>)
     .build();
@@ -5139,8 +5210,21 @@ DataDatabricksAccountNetworkPolicyIngressDryRunPrivateAccessDenyRulesDestination
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPrivateAccessDenyRulesDestinationWorkspaceApi.property.scopeQualifier">scopeQualifier</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#scope_qualifier DataDatabricksAccountNetworkPolicy#scope_qualifier}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPrivateAccessDenyRulesDestinationWorkspaceApi.property.scopes">scopes</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#scopes DataDatabricksAccountNetworkPolicy#scopes}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPrivateAccessDenyRulesDestinationWorkspaceApi.property.excludedScopes">excludedScopes</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#excluded_scopes DataDatabricksAccountNetworkPolicy#excluded_scopes}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPrivateAccessDenyRulesDestinationWorkspaceApi.property.scopeQualifier">scopeQualifier</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#scope_qualifier DataDatabricksAccountNetworkPolicy#scope_qualifier}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPrivateAccessDenyRulesDestinationWorkspaceApi.property.scopes">scopes</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#scopes DataDatabricksAccountNetworkPolicy#scopes}. |
+
+---
+
+##### `excludedScopes`<sup>Optional</sup> <a name="excludedScopes" id="@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPrivateAccessDenyRulesDestinationWorkspaceApi.property.excludedScopes"></a>
+
+```java
+public java.util.List<java.lang.String> getExcludedScopes();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#excluded_scopes DataDatabricksAccountNetworkPolicy#excluded_scopes}.
 
 ---
 
@@ -5152,7 +5236,7 @@ public java.lang.String getScopeQualifier();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#scope_qualifier DataDatabricksAccountNetworkPolicy#scope_qualifier}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#scope_qualifier DataDatabricksAccountNetworkPolicy#scope_qualifier}.
 
 ---
 
@@ -5164,7 +5248,7 @@ public java.util.List<java.lang.String> getScopes();
 
 - *Type:* java.util.List<java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#scopes DataDatabricksAccountNetworkPolicy#scopes}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#scopes DataDatabricksAccountNetworkPolicy#scopes}.
 
 ---
 
@@ -5184,7 +5268,7 @@ DataDatabricksAccountNetworkPolicyIngressDryRunPrivateAccessDenyRulesDestination
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPrivateAccessDenyRulesDestinationWorkspaceUi.property.allDestinations">allDestinations</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#all_destinations DataDatabricksAccountNetworkPolicy#all_destinations}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPrivateAccessDenyRulesDestinationWorkspaceUi.property.allDestinations">allDestinations</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#all_destinations DataDatabricksAccountNetworkPolicy#all_destinations}. |
 
 ---
 
@@ -5196,7 +5280,7 @@ public java.lang.Boolean|IResolvable getAllDestinations();
 
 - *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#all_destinations DataDatabricksAccountNetworkPolicy#all_destinations}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#all_destinations DataDatabricksAccountNetworkPolicy#all_destinations}.
 
 ---
 
@@ -5219,10 +5303,10 @@ DataDatabricksAccountNetworkPolicyIngressDryRunPrivateAccessDenyRulesOrigin.buil
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPrivateAccessDenyRulesOrigin.property.allPrivateAccess">allPrivateAccess</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#all_private_access DataDatabricksAccountNetworkPolicy#all_private_access}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPrivateAccessDenyRulesOrigin.property.allRegisteredEndpoints">allRegisteredEndpoints</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#all_registered_endpoints DataDatabricksAccountNetworkPolicy#all_registered_endpoints}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPrivateAccessDenyRulesOrigin.property.azureWorkspacePrivateLink">azureWorkspacePrivateLink</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#azure_workspace_private_link DataDatabricksAccountNetworkPolicy#azure_workspace_private_link}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPrivateAccessDenyRulesOrigin.property.endpoints">endpoints</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPrivateAccessDenyRulesOriginEndpoints">DataDatabricksAccountNetworkPolicyIngressDryRunPrivateAccessDenyRulesOriginEndpoints</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#endpoints DataDatabricksAccountNetworkPolicy#endpoints}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPrivateAccessDenyRulesOrigin.property.allPrivateAccess">allPrivateAccess</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#all_private_access DataDatabricksAccountNetworkPolicy#all_private_access}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPrivateAccessDenyRulesOrigin.property.allRegisteredEndpoints">allRegisteredEndpoints</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#all_registered_endpoints DataDatabricksAccountNetworkPolicy#all_registered_endpoints}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPrivateAccessDenyRulesOrigin.property.azureWorkspacePrivateLink">azureWorkspacePrivateLink</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#azure_workspace_private_link DataDatabricksAccountNetworkPolicy#azure_workspace_private_link}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPrivateAccessDenyRulesOrigin.property.endpoints">endpoints</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPrivateAccessDenyRulesOriginEndpoints">DataDatabricksAccountNetworkPolicyIngressDryRunPrivateAccessDenyRulesOriginEndpoints</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#endpoints DataDatabricksAccountNetworkPolicy#endpoints}. |
 
 ---
 
@@ -5234,7 +5318,7 @@ public java.lang.Boolean|IResolvable getAllPrivateAccess();
 
 - *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#all_private_access DataDatabricksAccountNetworkPolicy#all_private_access}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#all_private_access DataDatabricksAccountNetworkPolicy#all_private_access}.
 
 ---
 
@@ -5246,7 +5330,7 @@ public java.lang.Boolean|IResolvable getAllRegisteredEndpoints();
 
 - *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#all_registered_endpoints DataDatabricksAccountNetworkPolicy#all_registered_endpoints}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#all_registered_endpoints DataDatabricksAccountNetworkPolicy#all_registered_endpoints}.
 
 ---
 
@@ -5258,7 +5342,7 @@ public java.lang.Boolean|IResolvable getAzureWorkspacePrivateLink();
 
 - *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#azure_workspace_private_link DataDatabricksAccountNetworkPolicy#azure_workspace_private_link}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#azure_workspace_private_link DataDatabricksAccountNetworkPolicy#azure_workspace_private_link}.
 
 ---
 
@@ -5270,7 +5354,7 @@ public DataDatabricksAccountNetworkPolicyIngressDryRunPrivateAccessDenyRulesOrig
 
 - *Type:* <a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPrivateAccessDenyRulesOriginEndpoints">DataDatabricksAccountNetworkPolicyIngressDryRunPrivateAccessDenyRulesOriginEndpoints</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#endpoints DataDatabricksAccountNetworkPolicy#endpoints}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#endpoints DataDatabricksAccountNetworkPolicy#endpoints}.
 
 ---
 
@@ -5290,7 +5374,7 @@ DataDatabricksAccountNetworkPolicyIngressDryRunPrivateAccessDenyRulesOriginEndpo
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPrivateAccessDenyRulesOriginEndpoints.property.endpointIds">endpointIds</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#endpoint_ids DataDatabricksAccountNetworkPolicy#endpoint_ids}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPrivateAccessDenyRulesOriginEndpoints.property.endpointIds">endpointIds</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#endpoint_ids DataDatabricksAccountNetworkPolicy#endpoint_ids}. |
 
 ---
 
@@ -5302,7 +5386,7 @@ public java.util.List<java.lang.String> getEndpointIds();
 
 - *Type:* java.util.List<java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#endpoint_ids DataDatabricksAccountNetworkPolicy#endpoint_ids}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#endpoint_ids DataDatabricksAccountNetworkPolicy#endpoint_ids}.
 
 ---
 
@@ -5324,9 +5408,9 @@ DataDatabricksAccountNetworkPolicyIngressDryRunPublicAccess.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPublicAccess.property.restrictionMode">restrictionMode</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#restriction_mode DataDatabricksAccountNetworkPolicy#restriction_mode}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPublicAccess.property.allowRules">allowRules</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPublicAccessAllowRules">DataDatabricksAccountNetworkPolicyIngressDryRunPublicAccessAllowRules</a>></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#allow_rules DataDatabricksAccountNetworkPolicy#allow_rules}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPublicAccess.property.denyRules">denyRules</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPublicAccessDenyRules">DataDatabricksAccountNetworkPolicyIngressDryRunPublicAccessDenyRules</a>></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#deny_rules DataDatabricksAccountNetworkPolicy#deny_rules}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPublicAccess.property.restrictionMode">restrictionMode</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#restriction_mode DataDatabricksAccountNetworkPolicy#restriction_mode}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPublicAccess.property.allowRules">allowRules</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPublicAccessAllowRules">DataDatabricksAccountNetworkPolicyIngressDryRunPublicAccessAllowRules</a>></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#allow_rules DataDatabricksAccountNetworkPolicy#allow_rules}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPublicAccess.property.denyRules">denyRules</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPublicAccessDenyRules">DataDatabricksAccountNetworkPolicyIngressDryRunPublicAccessDenyRules</a>></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#deny_rules DataDatabricksAccountNetworkPolicy#deny_rules}. |
 
 ---
 
@@ -5338,7 +5422,7 @@ public java.lang.String getRestrictionMode();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#restriction_mode DataDatabricksAccountNetworkPolicy#restriction_mode}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#restriction_mode DataDatabricksAccountNetworkPolicy#restriction_mode}.
 
 ---
 
@@ -5350,7 +5434,7 @@ public IResolvable|java.util.List<DataDatabricksAccountNetworkPolicyIngressDryRu
 
 - *Type:* io.cdktn.cdktn.IResolvable|java.util.List<<a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPublicAccessAllowRules">DataDatabricksAccountNetworkPolicyIngressDryRunPublicAccessAllowRules</a>>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#allow_rules DataDatabricksAccountNetworkPolicy#allow_rules}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#allow_rules DataDatabricksAccountNetworkPolicy#allow_rules}.
 
 ---
 
@@ -5362,7 +5446,7 @@ public IResolvable|java.util.List<DataDatabricksAccountNetworkPolicyIngressDryRu
 
 - *Type:* io.cdktn.cdktn.IResolvable|java.util.List<<a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPublicAccessDenyRules">DataDatabricksAccountNetworkPolicyIngressDryRunPublicAccessDenyRules</a>>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#deny_rules DataDatabricksAccountNetworkPolicy#deny_rules}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#deny_rules DataDatabricksAccountNetworkPolicy#deny_rules}.
 
 ---
 
@@ -5385,10 +5469,10 @@ DataDatabricksAccountNetworkPolicyIngressDryRunPublicAccessAllowRules.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPublicAccessAllowRules.property.authentication">authentication</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPublicAccessAllowRulesAuthentication">DataDatabricksAccountNetworkPolicyIngressDryRunPublicAccessAllowRulesAuthentication</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#authentication DataDatabricksAccountNetworkPolicy#authentication}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPublicAccessAllowRules.property.destination">destination</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestination">DataDatabricksAccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestination</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#destination DataDatabricksAccountNetworkPolicy#destination}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPublicAccessAllowRules.property.label">label</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#label DataDatabricksAccountNetworkPolicy#label}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPublicAccessAllowRules.property.origin">origin</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPublicAccessAllowRulesOrigin">DataDatabricksAccountNetworkPolicyIngressDryRunPublicAccessAllowRulesOrigin</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#origin DataDatabricksAccountNetworkPolicy#origin}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPublicAccessAllowRules.property.authentication">authentication</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPublicAccessAllowRulesAuthentication">DataDatabricksAccountNetworkPolicyIngressDryRunPublicAccessAllowRulesAuthentication</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#authentication DataDatabricksAccountNetworkPolicy#authentication}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPublicAccessAllowRules.property.destination">destination</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestination">DataDatabricksAccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestination</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#destination DataDatabricksAccountNetworkPolicy#destination}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPublicAccessAllowRules.property.label">label</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#label DataDatabricksAccountNetworkPolicy#label}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPublicAccessAllowRules.property.origin">origin</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPublicAccessAllowRulesOrigin">DataDatabricksAccountNetworkPolicyIngressDryRunPublicAccessAllowRulesOrigin</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#origin DataDatabricksAccountNetworkPolicy#origin}. |
 
 ---
 
@@ -5400,7 +5484,7 @@ public DataDatabricksAccountNetworkPolicyIngressDryRunPublicAccessAllowRulesAuth
 
 - *Type:* <a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPublicAccessAllowRulesAuthentication">DataDatabricksAccountNetworkPolicyIngressDryRunPublicAccessAllowRulesAuthentication</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#authentication DataDatabricksAccountNetworkPolicy#authentication}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#authentication DataDatabricksAccountNetworkPolicy#authentication}.
 
 ---
 
@@ -5412,7 +5496,7 @@ public DataDatabricksAccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDest
 
 - *Type:* <a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestination">DataDatabricksAccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestination</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#destination DataDatabricksAccountNetworkPolicy#destination}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#destination DataDatabricksAccountNetworkPolicy#destination}.
 
 ---
 
@@ -5424,7 +5508,7 @@ public java.lang.String getLabel();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#label DataDatabricksAccountNetworkPolicy#label}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#label DataDatabricksAccountNetworkPolicy#label}.
 
 ---
 
@@ -5436,7 +5520,7 @@ public DataDatabricksAccountNetworkPolicyIngressDryRunPublicAccessAllowRulesOrig
 
 - *Type:* <a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPublicAccessAllowRulesOrigin">DataDatabricksAccountNetworkPolicyIngressDryRunPublicAccessAllowRulesOrigin</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#origin DataDatabricksAccountNetworkPolicy#origin}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#origin DataDatabricksAccountNetworkPolicy#origin}.
 
 ---
 
@@ -5457,8 +5541,8 @@ DataDatabricksAccountNetworkPolicyIngressDryRunPublicAccessAllowRulesAuthenticat
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPublicAccessAllowRulesAuthentication.property.identities">identities</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPublicAccessAllowRulesAuthenticationIdentities">DataDatabricksAccountNetworkPolicyIngressDryRunPublicAccessAllowRulesAuthenticationIdentities</a>></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#identities DataDatabricksAccountNetworkPolicy#identities}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPublicAccessAllowRulesAuthentication.property.identityType">identityType</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#identity_type DataDatabricksAccountNetworkPolicy#identity_type}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPublicAccessAllowRulesAuthentication.property.identities">identities</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPublicAccessAllowRulesAuthenticationIdentities">DataDatabricksAccountNetworkPolicyIngressDryRunPublicAccessAllowRulesAuthenticationIdentities</a>></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#identities DataDatabricksAccountNetworkPolicy#identities}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPublicAccessAllowRulesAuthentication.property.identityType">identityType</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#identity_type DataDatabricksAccountNetworkPolicy#identity_type}. |
 
 ---
 
@@ -5470,7 +5554,7 @@ public IResolvable|java.util.List<DataDatabricksAccountNetworkPolicyIngressDryRu
 
 - *Type:* io.cdktn.cdktn.IResolvable|java.util.List<<a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPublicAccessAllowRulesAuthenticationIdentities">DataDatabricksAccountNetworkPolicyIngressDryRunPublicAccessAllowRulesAuthenticationIdentities</a>>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#identities DataDatabricksAccountNetworkPolicy#identities}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#identities DataDatabricksAccountNetworkPolicy#identities}.
 
 ---
 
@@ -5482,7 +5566,7 @@ public java.lang.String getIdentityType();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#identity_type DataDatabricksAccountNetworkPolicy#identity_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#identity_type DataDatabricksAccountNetworkPolicy#identity_type}.
 
 ---
 
@@ -5503,8 +5587,8 @@ DataDatabricksAccountNetworkPolicyIngressDryRunPublicAccessAllowRulesAuthenticat
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPublicAccessAllowRulesAuthenticationIdentities.property.principalId">principalId</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#principal_id DataDatabricksAccountNetworkPolicy#principal_id}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPublicAccessAllowRulesAuthenticationIdentities.property.principalType">principalType</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#principal_type DataDatabricksAccountNetworkPolicy#principal_type}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPublicAccessAllowRulesAuthenticationIdentities.property.principalId">principalId</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#principal_id DataDatabricksAccountNetworkPolicy#principal_id}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPublicAccessAllowRulesAuthenticationIdentities.property.principalType">principalType</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#principal_type DataDatabricksAccountNetworkPolicy#principal_type}. |
 
 ---
 
@@ -5516,7 +5600,7 @@ public java.lang.Number getPrincipalId();
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#principal_id DataDatabricksAccountNetworkPolicy#principal_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#principal_id DataDatabricksAccountNetworkPolicy#principal_id}.
 
 ---
 
@@ -5528,7 +5612,7 @@ public java.lang.String getPrincipalType();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#principal_type DataDatabricksAccountNetworkPolicy#principal_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#principal_type DataDatabricksAccountNetworkPolicy#principal_type}.
 
 ---
 
@@ -5555,14 +5639,14 @@ DataDatabricksAccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestination
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestination.property.accountApi">accountApi</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestinationAccountApi">DataDatabricksAccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestinationAccountApi</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#account_api DataDatabricksAccountNetworkPolicy#account_api}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestination.property.accountDatabricksOne">accountDatabricksOne</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestinationAccountDatabricksOne">DataDatabricksAccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestinationAccountDatabricksOne</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#account_databricks_one DataDatabricksAccountNetworkPolicy#account_databricks_one}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestination.property.accountUi">accountUi</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestinationAccountUi">DataDatabricksAccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestinationAccountUi</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#account_ui DataDatabricksAccountNetworkPolicy#account_ui}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestination.property.allDestinations">allDestinations</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#all_destinations DataDatabricksAccountNetworkPolicy#all_destinations}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestination.property.appsRuntime">appsRuntime</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestinationAppsRuntime">DataDatabricksAccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestinationAppsRuntime</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#apps_runtime DataDatabricksAccountNetworkPolicy#apps_runtime}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestination.property.lakebaseRuntime">lakebaseRuntime</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestinationLakebaseRuntime">DataDatabricksAccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestinationLakebaseRuntime</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#lakebase_runtime DataDatabricksAccountNetworkPolicy#lakebase_runtime}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestination.property.workspaceApi">workspaceApi</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestinationWorkspaceApi">DataDatabricksAccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestinationWorkspaceApi</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#workspace_api DataDatabricksAccountNetworkPolicy#workspace_api}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestination.property.workspaceUi">workspaceUi</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestinationWorkspaceUi">DataDatabricksAccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestinationWorkspaceUi</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#workspace_ui DataDatabricksAccountNetworkPolicy#workspace_ui}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestination.property.accountApi">accountApi</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestinationAccountApi">DataDatabricksAccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestinationAccountApi</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#account_api DataDatabricksAccountNetworkPolicy#account_api}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestination.property.accountDatabricksOne">accountDatabricksOne</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestinationAccountDatabricksOne">DataDatabricksAccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestinationAccountDatabricksOne</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#account_databricks_one DataDatabricksAccountNetworkPolicy#account_databricks_one}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestination.property.accountUi">accountUi</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestinationAccountUi">DataDatabricksAccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestinationAccountUi</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#account_ui DataDatabricksAccountNetworkPolicy#account_ui}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestination.property.allDestinations">allDestinations</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#all_destinations DataDatabricksAccountNetworkPolicy#all_destinations}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestination.property.appsRuntime">appsRuntime</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestinationAppsRuntime">DataDatabricksAccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestinationAppsRuntime</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#apps_runtime DataDatabricksAccountNetworkPolicy#apps_runtime}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestination.property.lakebaseRuntime">lakebaseRuntime</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestinationLakebaseRuntime">DataDatabricksAccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestinationLakebaseRuntime</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#lakebase_runtime DataDatabricksAccountNetworkPolicy#lakebase_runtime}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestination.property.workspaceApi">workspaceApi</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestinationWorkspaceApi">DataDatabricksAccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestinationWorkspaceApi</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#workspace_api DataDatabricksAccountNetworkPolicy#workspace_api}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestination.property.workspaceUi">workspaceUi</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestinationWorkspaceUi">DataDatabricksAccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestinationWorkspaceUi</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#workspace_ui DataDatabricksAccountNetworkPolicy#workspace_ui}. |
 
 ---
 
@@ -5574,7 +5658,7 @@ public DataDatabricksAccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDest
 
 - *Type:* <a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestinationAccountApi">DataDatabricksAccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestinationAccountApi</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#account_api DataDatabricksAccountNetworkPolicy#account_api}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#account_api DataDatabricksAccountNetworkPolicy#account_api}.
 
 ---
 
@@ -5586,7 +5670,7 @@ public DataDatabricksAccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDest
 
 - *Type:* <a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestinationAccountDatabricksOne">DataDatabricksAccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestinationAccountDatabricksOne</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#account_databricks_one DataDatabricksAccountNetworkPolicy#account_databricks_one}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#account_databricks_one DataDatabricksAccountNetworkPolicy#account_databricks_one}.
 
 ---
 
@@ -5598,7 +5682,7 @@ public DataDatabricksAccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDest
 
 - *Type:* <a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestinationAccountUi">DataDatabricksAccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestinationAccountUi</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#account_ui DataDatabricksAccountNetworkPolicy#account_ui}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#account_ui DataDatabricksAccountNetworkPolicy#account_ui}.
 
 ---
 
@@ -5610,7 +5694,7 @@ public java.lang.Boolean|IResolvable getAllDestinations();
 
 - *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#all_destinations DataDatabricksAccountNetworkPolicy#all_destinations}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#all_destinations DataDatabricksAccountNetworkPolicy#all_destinations}.
 
 ---
 
@@ -5622,7 +5706,7 @@ public DataDatabricksAccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDest
 
 - *Type:* <a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestinationAppsRuntime">DataDatabricksAccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestinationAppsRuntime</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#apps_runtime DataDatabricksAccountNetworkPolicy#apps_runtime}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#apps_runtime DataDatabricksAccountNetworkPolicy#apps_runtime}.
 
 ---
 
@@ -5634,7 +5718,7 @@ public DataDatabricksAccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDest
 
 - *Type:* <a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestinationLakebaseRuntime">DataDatabricksAccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestinationLakebaseRuntime</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#lakebase_runtime DataDatabricksAccountNetworkPolicy#lakebase_runtime}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#lakebase_runtime DataDatabricksAccountNetworkPolicy#lakebase_runtime}.
 
 ---
 
@@ -5646,7 +5730,7 @@ public DataDatabricksAccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDest
 
 - *Type:* <a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestinationWorkspaceApi">DataDatabricksAccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestinationWorkspaceApi</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#workspace_api DataDatabricksAccountNetworkPolicy#workspace_api}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#workspace_api DataDatabricksAccountNetworkPolicy#workspace_api}.
 
 ---
 
@@ -5658,7 +5742,7 @@ public DataDatabricksAccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDest
 
 - *Type:* <a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestinationWorkspaceUi">DataDatabricksAccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestinationWorkspaceUi</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#workspace_ui DataDatabricksAccountNetworkPolicy#workspace_ui}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#workspace_ui DataDatabricksAccountNetworkPolicy#workspace_ui}.
 
 ---
 
@@ -5679,8 +5763,8 @@ DataDatabricksAccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestination
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestinationAccountApi.property.scopeQualifier">scopeQualifier</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#scope_qualifier DataDatabricksAccountNetworkPolicy#scope_qualifier}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestinationAccountApi.property.scopes">scopes</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#scopes DataDatabricksAccountNetworkPolicy#scopes}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestinationAccountApi.property.scopeQualifier">scopeQualifier</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#scope_qualifier DataDatabricksAccountNetworkPolicy#scope_qualifier}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestinationAccountApi.property.scopes">scopes</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#scopes DataDatabricksAccountNetworkPolicy#scopes}. |
 
 ---
 
@@ -5692,7 +5776,7 @@ public java.lang.String getScopeQualifier();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#scope_qualifier DataDatabricksAccountNetworkPolicy#scope_qualifier}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#scope_qualifier DataDatabricksAccountNetworkPolicy#scope_qualifier}.
 
 ---
 
@@ -5704,7 +5788,7 @@ public java.util.List<java.lang.String> getScopes();
 
 - *Type:* java.util.List<java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#scopes DataDatabricksAccountNetworkPolicy#scopes}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#scopes DataDatabricksAccountNetworkPolicy#scopes}.
 
 ---
 
@@ -5724,7 +5808,7 @@ DataDatabricksAccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestination
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestinationAccountDatabricksOne.property.allDestinations">allDestinations</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#all_destinations DataDatabricksAccountNetworkPolicy#all_destinations}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestinationAccountDatabricksOne.property.allDestinations">allDestinations</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#all_destinations DataDatabricksAccountNetworkPolicy#all_destinations}. |
 
 ---
 
@@ -5736,7 +5820,7 @@ public java.lang.Boolean|IResolvable getAllDestinations();
 
 - *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#all_destinations DataDatabricksAccountNetworkPolicy#all_destinations}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#all_destinations DataDatabricksAccountNetworkPolicy#all_destinations}.
 
 ---
 
@@ -5756,7 +5840,7 @@ DataDatabricksAccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestination
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestinationAccountUi.property.allDestinations">allDestinations</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#all_destinations DataDatabricksAccountNetworkPolicy#all_destinations}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestinationAccountUi.property.allDestinations">allDestinations</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#all_destinations DataDatabricksAccountNetworkPolicy#all_destinations}. |
 
 ---
 
@@ -5768,7 +5852,7 @@ public java.lang.Boolean|IResolvable getAllDestinations();
 
 - *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#all_destinations DataDatabricksAccountNetworkPolicy#all_destinations}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#all_destinations DataDatabricksAccountNetworkPolicy#all_destinations}.
 
 ---
 
@@ -5788,7 +5872,7 @@ DataDatabricksAccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestination
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestinationAppsRuntime.property.allDestinations">allDestinations</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#all_destinations DataDatabricksAccountNetworkPolicy#all_destinations}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestinationAppsRuntime.property.allDestinations">allDestinations</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#all_destinations DataDatabricksAccountNetworkPolicy#all_destinations}. |
 
 ---
 
@@ -5800,7 +5884,7 @@ public java.lang.Boolean|IResolvable getAllDestinations();
 
 - *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#all_destinations DataDatabricksAccountNetworkPolicy#all_destinations}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#all_destinations DataDatabricksAccountNetworkPolicy#all_destinations}.
 
 ---
 
@@ -5820,7 +5904,7 @@ DataDatabricksAccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestination
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestinationLakebaseRuntime.property.allDestinations">allDestinations</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#all_destinations DataDatabricksAccountNetworkPolicy#all_destinations}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestinationLakebaseRuntime.property.allDestinations">allDestinations</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#all_destinations DataDatabricksAccountNetworkPolicy#all_destinations}. |
 
 ---
 
@@ -5832,7 +5916,7 @@ public java.lang.Boolean|IResolvable getAllDestinations();
 
 - *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#all_destinations DataDatabricksAccountNetworkPolicy#all_destinations}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#all_destinations DataDatabricksAccountNetworkPolicy#all_destinations}.
 
 ---
 
@@ -5844,6 +5928,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 import io.cdktn.providers.databricks.data_databricks_account_network_policy.DataDatabricksAccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestinationWorkspaceApi;
 
 DataDatabricksAccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestinationWorkspaceApi.builder()
+//  .excludedScopes(java.util.List<java.lang.String>)
 //  .scopeQualifier(java.lang.String)
 //  .scopes(java.util.List<java.lang.String>)
     .build();
@@ -5853,8 +5938,21 @@ DataDatabricksAccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestination
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestinationWorkspaceApi.property.scopeQualifier">scopeQualifier</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#scope_qualifier DataDatabricksAccountNetworkPolicy#scope_qualifier}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestinationWorkspaceApi.property.scopes">scopes</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#scopes DataDatabricksAccountNetworkPolicy#scopes}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestinationWorkspaceApi.property.excludedScopes">excludedScopes</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#excluded_scopes DataDatabricksAccountNetworkPolicy#excluded_scopes}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestinationWorkspaceApi.property.scopeQualifier">scopeQualifier</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#scope_qualifier DataDatabricksAccountNetworkPolicy#scope_qualifier}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestinationWorkspaceApi.property.scopes">scopes</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#scopes DataDatabricksAccountNetworkPolicy#scopes}. |
+
+---
+
+##### `excludedScopes`<sup>Optional</sup> <a name="excludedScopes" id="@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestinationWorkspaceApi.property.excludedScopes"></a>
+
+```java
+public java.util.List<java.lang.String> getExcludedScopes();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#excluded_scopes DataDatabricksAccountNetworkPolicy#excluded_scopes}.
 
 ---
 
@@ -5866,7 +5964,7 @@ public java.lang.String getScopeQualifier();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#scope_qualifier DataDatabricksAccountNetworkPolicy#scope_qualifier}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#scope_qualifier DataDatabricksAccountNetworkPolicy#scope_qualifier}.
 
 ---
 
@@ -5878,7 +5976,7 @@ public java.util.List<java.lang.String> getScopes();
 
 - *Type:* java.util.List<java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#scopes DataDatabricksAccountNetworkPolicy#scopes}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#scopes DataDatabricksAccountNetworkPolicy#scopes}.
 
 ---
 
@@ -5898,7 +5996,7 @@ DataDatabricksAccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestination
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestinationWorkspaceUi.property.allDestinations">allDestinations</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#all_destinations DataDatabricksAccountNetworkPolicy#all_destinations}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestinationWorkspaceUi.property.allDestinations">allDestinations</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#all_destinations DataDatabricksAccountNetworkPolicy#all_destinations}. |
 
 ---
 
@@ -5910,7 +6008,7 @@ public java.lang.Boolean|IResolvable getAllDestinations();
 
 - *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#all_destinations DataDatabricksAccountNetworkPolicy#all_destinations}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#all_destinations DataDatabricksAccountNetworkPolicy#all_destinations}.
 
 ---
 
@@ -5932,9 +6030,9 @@ DataDatabricksAccountNetworkPolicyIngressDryRunPublicAccessAllowRulesOrigin.buil
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPublicAccessAllowRulesOrigin.property.allIpRanges">allIpRanges</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#all_ip_ranges DataDatabricksAccountNetworkPolicy#all_ip_ranges}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPublicAccessAllowRulesOrigin.property.excludedIpRanges">excludedIpRanges</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPublicAccessAllowRulesOriginExcludedIpRanges">DataDatabricksAccountNetworkPolicyIngressDryRunPublicAccessAllowRulesOriginExcludedIpRanges</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#excluded_ip_ranges DataDatabricksAccountNetworkPolicy#excluded_ip_ranges}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPublicAccessAllowRulesOrigin.property.includedIpRanges">includedIpRanges</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPublicAccessAllowRulesOriginIncludedIpRanges">DataDatabricksAccountNetworkPolicyIngressDryRunPublicAccessAllowRulesOriginIncludedIpRanges</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#included_ip_ranges DataDatabricksAccountNetworkPolicy#included_ip_ranges}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPublicAccessAllowRulesOrigin.property.allIpRanges">allIpRanges</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#all_ip_ranges DataDatabricksAccountNetworkPolicy#all_ip_ranges}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPublicAccessAllowRulesOrigin.property.excludedIpRanges">excludedIpRanges</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPublicAccessAllowRulesOriginExcludedIpRanges">DataDatabricksAccountNetworkPolicyIngressDryRunPublicAccessAllowRulesOriginExcludedIpRanges</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#excluded_ip_ranges DataDatabricksAccountNetworkPolicy#excluded_ip_ranges}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPublicAccessAllowRulesOrigin.property.includedIpRanges">includedIpRanges</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPublicAccessAllowRulesOriginIncludedIpRanges">DataDatabricksAccountNetworkPolicyIngressDryRunPublicAccessAllowRulesOriginIncludedIpRanges</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#included_ip_ranges DataDatabricksAccountNetworkPolicy#included_ip_ranges}. |
 
 ---
 
@@ -5946,7 +6044,7 @@ public java.lang.Boolean|IResolvable getAllIpRanges();
 
 - *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#all_ip_ranges DataDatabricksAccountNetworkPolicy#all_ip_ranges}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#all_ip_ranges DataDatabricksAccountNetworkPolicy#all_ip_ranges}.
 
 ---
 
@@ -5958,7 +6056,7 @@ public DataDatabricksAccountNetworkPolicyIngressDryRunPublicAccessAllowRulesOrig
 
 - *Type:* <a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPublicAccessAllowRulesOriginExcludedIpRanges">DataDatabricksAccountNetworkPolicyIngressDryRunPublicAccessAllowRulesOriginExcludedIpRanges</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#excluded_ip_ranges DataDatabricksAccountNetworkPolicy#excluded_ip_ranges}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#excluded_ip_ranges DataDatabricksAccountNetworkPolicy#excluded_ip_ranges}.
 
 ---
 
@@ -5970,7 +6068,7 @@ public DataDatabricksAccountNetworkPolicyIngressDryRunPublicAccessAllowRulesOrig
 
 - *Type:* <a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPublicAccessAllowRulesOriginIncludedIpRanges">DataDatabricksAccountNetworkPolicyIngressDryRunPublicAccessAllowRulesOriginIncludedIpRanges</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#included_ip_ranges DataDatabricksAccountNetworkPolicy#included_ip_ranges}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#included_ip_ranges DataDatabricksAccountNetworkPolicy#included_ip_ranges}.
 
 ---
 
@@ -5990,7 +6088,7 @@ DataDatabricksAccountNetworkPolicyIngressDryRunPublicAccessAllowRulesOriginExclu
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPublicAccessAllowRulesOriginExcludedIpRanges.property.ipRanges">ipRanges</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#ip_ranges DataDatabricksAccountNetworkPolicy#ip_ranges}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPublicAccessAllowRulesOriginExcludedIpRanges.property.ipRanges">ipRanges</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#ip_ranges DataDatabricksAccountNetworkPolicy#ip_ranges}. |
 
 ---
 
@@ -6002,7 +6100,7 @@ public java.util.List<java.lang.String> getIpRanges();
 
 - *Type:* java.util.List<java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#ip_ranges DataDatabricksAccountNetworkPolicy#ip_ranges}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#ip_ranges DataDatabricksAccountNetworkPolicy#ip_ranges}.
 
 ---
 
@@ -6022,7 +6120,7 @@ DataDatabricksAccountNetworkPolicyIngressDryRunPublicAccessAllowRulesOriginInclu
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPublicAccessAllowRulesOriginIncludedIpRanges.property.ipRanges">ipRanges</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#ip_ranges DataDatabricksAccountNetworkPolicy#ip_ranges}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPublicAccessAllowRulesOriginIncludedIpRanges.property.ipRanges">ipRanges</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#ip_ranges DataDatabricksAccountNetworkPolicy#ip_ranges}. |
 
 ---
 
@@ -6034,7 +6132,7 @@ public java.util.List<java.lang.String> getIpRanges();
 
 - *Type:* java.util.List<java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#ip_ranges DataDatabricksAccountNetworkPolicy#ip_ranges}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#ip_ranges DataDatabricksAccountNetworkPolicy#ip_ranges}.
 
 ---
 
@@ -6057,10 +6155,10 @@ DataDatabricksAccountNetworkPolicyIngressDryRunPublicAccessDenyRules.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPublicAccessDenyRules.property.authentication">authentication</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPublicAccessDenyRulesAuthentication">DataDatabricksAccountNetworkPolicyIngressDryRunPublicAccessDenyRulesAuthentication</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#authentication DataDatabricksAccountNetworkPolicy#authentication}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPublicAccessDenyRules.property.destination">destination</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestination">DataDatabricksAccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestination</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#destination DataDatabricksAccountNetworkPolicy#destination}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPublicAccessDenyRules.property.label">label</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#label DataDatabricksAccountNetworkPolicy#label}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPublicAccessDenyRules.property.origin">origin</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPublicAccessDenyRulesOrigin">DataDatabricksAccountNetworkPolicyIngressDryRunPublicAccessDenyRulesOrigin</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#origin DataDatabricksAccountNetworkPolicy#origin}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPublicAccessDenyRules.property.authentication">authentication</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPublicAccessDenyRulesAuthentication">DataDatabricksAccountNetworkPolicyIngressDryRunPublicAccessDenyRulesAuthentication</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#authentication DataDatabricksAccountNetworkPolicy#authentication}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPublicAccessDenyRules.property.destination">destination</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestination">DataDatabricksAccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestination</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#destination DataDatabricksAccountNetworkPolicy#destination}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPublicAccessDenyRules.property.label">label</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#label DataDatabricksAccountNetworkPolicy#label}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPublicAccessDenyRules.property.origin">origin</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPublicAccessDenyRulesOrigin">DataDatabricksAccountNetworkPolicyIngressDryRunPublicAccessDenyRulesOrigin</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#origin DataDatabricksAccountNetworkPolicy#origin}. |
 
 ---
 
@@ -6072,7 +6170,7 @@ public DataDatabricksAccountNetworkPolicyIngressDryRunPublicAccessDenyRulesAuthe
 
 - *Type:* <a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPublicAccessDenyRulesAuthentication">DataDatabricksAccountNetworkPolicyIngressDryRunPublicAccessDenyRulesAuthentication</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#authentication DataDatabricksAccountNetworkPolicy#authentication}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#authentication DataDatabricksAccountNetworkPolicy#authentication}.
 
 ---
 
@@ -6084,7 +6182,7 @@ public DataDatabricksAccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDesti
 
 - *Type:* <a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestination">DataDatabricksAccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestination</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#destination DataDatabricksAccountNetworkPolicy#destination}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#destination DataDatabricksAccountNetworkPolicy#destination}.
 
 ---
 
@@ -6096,7 +6194,7 @@ public java.lang.String getLabel();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#label DataDatabricksAccountNetworkPolicy#label}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#label DataDatabricksAccountNetworkPolicy#label}.
 
 ---
 
@@ -6108,7 +6206,7 @@ public DataDatabricksAccountNetworkPolicyIngressDryRunPublicAccessDenyRulesOrigi
 
 - *Type:* <a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPublicAccessDenyRulesOrigin">DataDatabricksAccountNetworkPolicyIngressDryRunPublicAccessDenyRulesOrigin</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#origin DataDatabricksAccountNetworkPolicy#origin}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#origin DataDatabricksAccountNetworkPolicy#origin}.
 
 ---
 
@@ -6129,8 +6227,8 @@ DataDatabricksAccountNetworkPolicyIngressDryRunPublicAccessDenyRulesAuthenticati
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPublicAccessDenyRulesAuthentication.property.identities">identities</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPublicAccessDenyRulesAuthenticationIdentities">DataDatabricksAccountNetworkPolicyIngressDryRunPublicAccessDenyRulesAuthenticationIdentities</a>></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#identities DataDatabricksAccountNetworkPolicy#identities}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPublicAccessDenyRulesAuthentication.property.identityType">identityType</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#identity_type DataDatabricksAccountNetworkPolicy#identity_type}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPublicAccessDenyRulesAuthentication.property.identities">identities</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPublicAccessDenyRulesAuthenticationIdentities">DataDatabricksAccountNetworkPolicyIngressDryRunPublicAccessDenyRulesAuthenticationIdentities</a>></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#identities DataDatabricksAccountNetworkPolicy#identities}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPublicAccessDenyRulesAuthentication.property.identityType">identityType</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#identity_type DataDatabricksAccountNetworkPolicy#identity_type}. |
 
 ---
 
@@ -6142,7 +6240,7 @@ public IResolvable|java.util.List<DataDatabricksAccountNetworkPolicyIngressDryRu
 
 - *Type:* io.cdktn.cdktn.IResolvable|java.util.List<<a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPublicAccessDenyRulesAuthenticationIdentities">DataDatabricksAccountNetworkPolicyIngressDryRunPublicAccessDenyRulesAuthenticationIdentities</a>>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#identities DataDatabricksAccountNetworkPolicy#identities}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#identities DataDatabricksAccountNetworkPolicy#identities}.
 
 ---
 
@@ -6154,7 +6252,7 @@ public java.lang.String getIdentityType();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#identity_type DataDatabricksAccountNetworkPolicy#identity_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#identity_type DataDatabricksAccountNetworkPolicy#identity_type}.
 
 ---
 
@@ -6175,8 +6273,8 @@ DataDatabricksAccountNetworkPolicyIngressDryRunPublicAccessDenyRulesAuthenticati
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPublicAccessDenyRulesAuthenticationIdentities.property.principalId">principalId</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#principal_id DataDatabricksAccountNetworkPolicy#principal_id}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPublicAccessDenyRulesAuthenticationIdentities.property.principalType">principalType</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#principal_type DataDatabricksAccountNetworkPolicy#principal_type}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPublicAccessDenyRulesAuthenticationIdentities.property.principalId">principalId</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#principal_id DataDatabricksAccountNetworkPolicy#principal_id}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPublicAccessDenyRulesAuthenticationIdentities.property.principalType">principalType</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#principal_type DataDatabricksAccountNetworkPolicy#principal_type}. |
 
 ---
 
@@ -6188,7 +6286,7 @@ public java.lang.Number getPrincipalId();
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#principal_id DataDatabricksAccountNetworkPolicy#principal_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#principal_id DataDatabricksAccountNetworkPolicy#principal_id}.
 
 ---
 
@@ -6200,7 +6298,7 @@ public java.lang.String getPrincipalType();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#principal_type DataDatabricksAccountNetworkPolicy#principal_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#principal_type DataDatabricksAccountNetworkPolicy#principal_type}.
 
 ---
 
@@ -6227,14 +6325,14 @@ DataDatabricksAccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestination.
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestination.property.accountApi">accountApi</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationAccountApi">DataDatabricksAccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationAccountApi</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#account_api DataDatabricksAccountNetworkPolicy#account_api}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestination.property.accountDatabricksOne">accountDatabricksOne</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationAccountDatabricksOne">DataDatabricksAccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationAccountDatabricksOne</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#account_databricks_one DataDatabricksAccountNetworkPolicy#account_databricks_one}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestination.property.accountUi">accountUi</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationAccountUi">DataDatabricksAccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationAccountUi</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#account_ui DataDatabricksAccountNetworkPolicy#account_ui}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestination.property.allDestinations">allDestinations</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#all_destinations DataDatabricksAccountNetworkPolicy#all_destinations}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestination.property.appsRuntime">appsRuntime</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationAppsRuntime">DataDatabricksAccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationAppsRuntime</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#apps_runtime DataDatabricksAccountNetworkPolicy#apps_runtime}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestination.property.lakebaseRuntime">lakebaseRuntime</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationLakebaseRuntime">DataDatabricksAccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationLakebaseRuntime</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#lakebase_runtime DataDatabricksAccountNetworkPolicy#lakebase_runtime}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestination.property.workspaceApi">workspaceApi</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationWorkspaceApi">DataDatabricksAccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationWorkspaceApi</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#workspace_api DataDatabricksAccountNetworkPolicy#workspace_api}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestination.property.workspaceUi">workspaceUi</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationWorkspaceUi">DataDatabricksAccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationWorkspaceUi</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#workspace_ui DataDatabricksAccountNetworkPolicy#workspace_ui}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestination.property.accountApi">accountApi</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationAccountApi">DataDatabricksAccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationAccountApi</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#account_api DataDatabricksAccountNetworkPolicy#account_api}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestination.property.accountDatabricksOne">accountDatabricksOne</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationAccountDatabricksOne">DataDatabricksAccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationAccountDatabricksOne</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#account_databricks_one DataDatabricksAccountNetworkPolicy#account_databricks_one}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestination.property.accountUi">accountUi</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationAccountUi">DataDatabricksAccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationAccountUi</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#account_ui DataDatabricksAccountNetworkPolicy#account_ui}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestination.property.allDestinations">allDestinations</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#all_destinations DataDatabricksAccountNetworkPolicy#all_destinations}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestination.property.appsRuntime">appsRuntime</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationAppsRuntime">DataDatabricksAccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationAppsRuntime</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#apps_runtime DataDatabricksAccountNetworkPolicy#apps_runtime}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestination.property.lakebaseRuntime">lakebaseRuntime</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationLakebaseRuntime">DataDatabricksAccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationLakebaseRuntime</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#lakebase_runtime DataDatabricksAccountNetworkPolicy#lakebase_runtime}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestination.property.workspaceApi">workspaceApi</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationWorkspaceApi">DataDatabricksAccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationWorkspaceApi</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#workspace_api DataDatabricksAccountNetworkPolicy#workspace_api}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestination.property.workspaceUi">workspaceUi</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationWorkspaceUi">DataDatabricksAccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationWorkspaceUi</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#workspace_ui DataDatabricksAccountNetworkPolicy#workspace_ui}. |
 
 ---
 
@@ -6246,7 +6344,7 @@ public DataDatabricksAccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDesti
 
 - *Type:* <a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationAccountApi">DataDatabricksAccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationAccountApi</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#account_api DataDatabricksAccountNetworkPolicy#account_api}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#account_api DataDatabricksAccountNetworkPolicy#account_api}.
 
 ---
 
@@ -6258,7 +6356,7 @@ public DataDatabricksAccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDesti
 
 - *Type:* <a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationAccountDatabricksOne">DataDatabricksAccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationAccountDatabricksOne</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#account_databricks_one DataDatabricksAccountNetworkPolicy#account_databricks_one}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#account_databricks_one DataDatabricksAccountNetworkPolicy#account_databricks_one}.
 
 ---
 
@@ -6270,7 +6368,7 @@ public DataDatabricksAccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDesti
 
 - *Type:* <a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationAccountUi">DataDatabricksAccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationAccountUi</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#account_ui DataDatabricksAccountNetworkPolicy#account_ui}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#account_ui DataDatabricksAccountNetworkPolicy#account_ui}.
 
 ---
 
@@ -6282,7 +6380,7 @@ public java.lang.Boolean|IResolvable getAllDestinations();
 
 - *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#all_destinations DataDatabricksAccountNetworkPolicy#all_destinations}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#all_destinations DataDatabricksAccountNetworkPolicy#all_destinations}.
 
 ---
 
@@ -6294,7 +6392,7 @@ public DataDatabricksAccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDesti
 
 - *Type:* <a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationAppsRuntime">DataDatabricksAccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationAppsRuntime</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#apps_runtime DataDatabricksAccountNetworkPolicy#apps_runtime}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#apps_runtime DataDatabricksAccountNetworkPolicy#apps_runtime}.
 
 ---
 
@@ -6306,7 +6404,7 @@ public DataDatabricksAccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDesti
 
 - *Type:* <a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationLakebaseRuntime">DataDatabricksAccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationLakebaseRuntime</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#lakebase_runtime DataDatabricksAccountNetworkPolicy#lakebase_runtime}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#lakebase_runtime DataDatabricksAccountNetworkPolicy#lakebase_runtime}.
 
 ---
 
@@ -6318,7 +6416,7 @@ public DataDatabricksAccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDesti
 
 - *Type:* <a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationWorkspaceApi">DataDatabricksAccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationWorkspaceApi</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#workspace_api DataDatabricksAccountNetworkPolicy#workspace_api}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#workspace_api DataDatabricksAccountNetworkPolicy#workspace_api}.
 
 ---
 
@@ -6330,7 +6428,7 @@ public DataDatabricksAccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDesti
 
 - *Type:* <a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationWorkspaceUi">DataDatabricksAccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationWorkspaceUi</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#workspace_ui DataDatabricksAccountNetworkPolicy#workspace_ui}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#workspace_ui DataDatabricksAccountNetworkPolicy#workspace_ui}.
 
 ---
 
@@ -6351,8 +6449,8 @@ DataDatabricksAccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationA
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationAccountApi.property.scopeQualifier">scopeQualifier</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#scope_qualifier DataDatabricksAccountNetworkPolicy#scope_qualifier}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationAccountApi.property.scopes">scopes</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#scopes DataDatabricksAccountNetworkPolicy#scopes}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationAccountApi.property.scopeQualifier">scopeQualifier</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#scope_qualifier DataDatabricksAccountNetworkPolicy#scope_qualifier}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationAccountApi.property.scopes">scopes</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#scopes DataDatabricksAccountNetworkPolicy#scopes}. |
 
 ---
 
@@ -6364,7 +6462,7 @@ public java.lang.String getScopeQualifier();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#scope_qualifier DataDatabricksAccountNetworkPolicy#scope_qualifier}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#scope_qualifier DataDatabricksAccountNetworkPolicy#scope_qualifier}.
 
 ---
 
@@ -6376,7 +6474,7 @@ public java.util.List<java.lang.String> getScopes();
 
 - *Type:* java.util.List<java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#scopes DataDatabricksAccountNetworkPolicy#scopes}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#scopes DataDatabricksAccountNetworkPolicy#scopes}.
 
 ---
 
@@ -6396,7 +6494,7 @@ DataDatabricksAccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationA
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationAccountDatabricksOne.property.allDestinations">allDestinations</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#all_destinations DataDatabricksAccountNetworkPolicy#all_destinations}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationAccountDatabricksOne.property.allDestinations">allDestinations</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#all_destinations DataDatabricksAccountNetworkPolicy#all_destinations}. |
 
 ---
 
@@ -6408,7 +6506,7 @@ public java.lang.Boolean|IResolvable getAllDestinations();
 
 - *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#all_destinations DataDatabricksAccountNetworkPolicy#all_destinations}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#all_destinations DataDatabricksAccountNetworkPolicy#all_destinations}.
 
 ---
 
@@ -6428,7 +6526,7 @@ DataDatabricksAccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationA
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationAccountUi.property.allDestinations">allDestinations</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#all_destinations DataDatabricksAccountNetworkPolicy#all_destinations}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationAccountUi.property.allDestinations">allDestinations</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#all_destinations DataDatabricksAccountNetworkPolicy#all_destinations}. |
 
 ---
 
@@ -6440,7 +6538,7 @@ public java.lang.Boolean|IResolvable getAllDestinations();
 
 - *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#all_destinations DataDatabricksAccountNetworkPolicy#all_destinations}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#all_destinations DataDatabricksAccountNetworkPolicy#all_destinations}.
 
 ---
 
@@ -6460,7 +6558,7 @@ DataDatabricksAccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationA
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationAppsRuntime.property.allDestinations">allDestinations</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#all_destinations DataDatabricksAccountNetworkPolicy#all_destinations}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationAppsRuntime.property.allDestinations">allDestinations</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#all_destinations DataDatabricksAccountNetworkPolicy#all_destinations}. |
 
 ---
 
@@ -6472,7 +6570,7 @@ public java.lang.Boolean|IResolvable getAllDestinations();
 
 - *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#all_destinations DataDatabricksAccountNetworkPolicy#all_destinations}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#all_destinations DataDatabricksAccountNetworkPolicy#all_destinations}.
 
 ---
 
@@ -6492,7 +6590,7 @@ DataDatabricksAccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationL
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationLakebaseRuntime.property.allDestinations">allDestinations</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#all_destinations DataDatabricksAccountNetworkPolicy#all_destinations}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationLakebaseRuntime.property.allDestinations">allDestinations</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#all_destinations DataDatabricksAccountNetworkPolicy#all_destinations}. |
 
 ---
 
@@ -6504,7 +6602,7 @@ public java.lang.Boolean|IResolvable getAllDestinations();
 
 - *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#all_destinations DataDatabricksAccountNetworkPolicy#all_destinations}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#all_destinations DataDatabricksAccountNetworkPolicy#all_destinations}.
 
 ---
 
@@ -6516,6 +6614,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 import io.cdktn.providers.databricks.data_databricks_account_network_policy.DataDatabricksAccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationWorkspaceApi;
 
 DataDatabricksAccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationWorkspaceApi.builder()
+//  .excludedScopes(java.util.List<java.lang.String>)
 //  .scopeQualifier(java.lang.String)
 //  .scopes(java.util.List<java.lang.String>)
     .build();
@@ -6525,8 +6624,21 @@ DataDatabricksAccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationW
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationWorkspaceApi.property.scopeQualifier">scopeQualifier</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#scope_qualifier DataDatabricksAccountNetworkPolicy#scope_qualifier}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationWorkspaceApi.property.scopes">scopes</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#scopes DataDatabricksAccountNetworkPolicy#scopes}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationWorkspaceApi.property.excludedScopes">excludedScopes</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#excluded_scopes DataDatabricksAccountNetworkPolicy#excluded_scopes}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationWorkspaceApi.property.scopeQualifier">scopeQualifier</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#scope_qualifier DataDatabricksAccountNetworkPolicy#scope_qualifier}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationWorkspaceApi.property.scopes">scopes</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#scopes DataDatabricksAccountNetworkPolicy#scopes}. |
+
+---
+
+##### `excludedScopes`<sup>Optional</sup> <a name="excludedScopes" id="@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationWorkspaceApi.property.excludedScopes"></a>
+
+```java
+public java.util.List<java.lang.String> getExcludedScopes();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#excluded_scopes DataDatabricksAccountNetworkPolicy#excluded_scopes}.
 
 ---
 
@@ -6538,7 +6650,7 @@ public java.lang.String getScopeQualifier();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#scope_qualifier DataDatabricksAccountNetworkPolicy#scope_qualifier}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#scope_qualifier DataDatabricksAccountNetworkPolicy#scope_qualifier}.
 
 ---
 
@@ -6550,7 +6662,7 @@ public java.util.List<java.lang.String> getScopes();
 
 - *Type:* java.util.List<java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#scopes DataDatabricksAccountNetworkPolicy#scopes}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#scopes DataDatabricksAccountNetworkPolicy#scopes}.
 
 ---
 
@@ -6570,7 +6682,7 @@ DataDatabricksAccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationW
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationWorkspaceUi.property.allDestinations">allDestinations</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#all_destinations DataDatabricksAccountNetworkPolicy#all_destinations}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationWorkspaceUi.property.allDestinations">allDestinations</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#all_destinations DataDatabricksAccountNetworkPolicy#all_destinations}. |
 
 ---
 
@@ -6582,7 +6694,7 @@ public java.lang.Boolean|IResolvable getAllDestinations();
 
 - *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#all_destinations DataDatabricksAccountNetworkPolicy#all_destinations}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#all_destinations DataDatabricksAccountNetworkPolicy#all_destinations}.
 
 ---
 
@@ -6604,9 +6716,9 @@ DataDatabricksAccountNetworkPolicyIngressDryRunPublicAccessDenyRulesOrigin.build
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPublicAccessDenyRulesOrigin.property.allIpRanges">allIpRanges</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#all_ip_ranges DataDatabricksAccountNetworkPolicy#all_ip_ranges}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPublicAccessDenyRulesOrigin.property.excludedIpRanges">excludedIpRanges</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPublicAccessDenyRulesOriginExcludedIpRanges">DataDatabricksAccountNetworkPolicyIngressDryRunPublicAccessDenyRulesOriginExcludedIpRanges</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#excluded_ip_ranges DataDatabricksAccountNetworkPolicy#excluded_ip_ranges}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPublicAccessDenyRulesOrigin.property.includedIpRanges">includedIpRanges</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPublicAccessDenyRulesOriginIncludedIpRanges">DataDatabricksAccountNetworkPolicyIngressDryRunPublicAccessDenyRulesOriginIncludedIpRanges</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#included_ip_ranges DataDatabricksAccountNetworkPolicy#included_ip_ranges}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPublicAccessDenyRulesOrigin.property.allIpRanges">allIpRanges</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#all_ip_ranges DataDatabricksAccountNetworkPolicy#all_ip_ranges}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPublicAccessDenyRulesOrigin.property.excludedIpRanges">excludedIpRanges</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPublicAccessDenyRulesOriginExcludedIpRanges">DataDatabricksAccountNetworkPolicyIngressDryRunPublicAccessDenyRulesOriginExcludedIpRanges</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#excluded_ip_ranges DataDatabricksAccountNetworkPolicy#excluded_ip_ranges}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPublicAccessDenyRulesOrigin.property.includedIpRanges">includedIpRanges</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPublicAccessDenyRulesOriginIncludedIpRanges">DataDatabricksAccountNetworkPolicyIngressDryRunPublicAccessDenyRulesOriginIncludedIpRanges</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#included_ip_ranges DataDatabricksAccountNetworkPolicy#included_ip_ranges}. |
 
 ---
 
@@ -6618,7 +6730,7 @@ public java.lang.Boolean|IResolvable getAllIpRanges();
 
 - *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#all_ip_ranges DataDatabricksAccountNetworkPolicy#all_ip_ranges}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#all_ip_ranges DataDatabricksAccountNetworkPolicy#all_ip_ranges}.
 
 ---
 
@@ -6630,7 +6742,7 @@ public DataDatabricksAccountNetworkPolicyIngressDryRunPublicAccessDenyRulesOrigi
 
 - *Type:* <a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPublicAccessDenyRulesOriginExcludedIpRanges">DataDatabricksAccountNetworkPolicyIngressDryRunPublicAccessDenyRulesOriginExcludedIpRanges</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#excluded_ip_ranges DataDatabricksAccountNetworkPolicy#excluded_ip_ranges}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#excluded_ip_ranges DataDatabricksAccountNetworkPolicy#excluded_ip_ranges}.
 
 ---
 
@@ -6642,7 +6754,7 @@ public DataDatabricksAccountNetworkPolicyIngressDryRunPublicAccessDenyRulesOrigi
 
 - *Type:* <a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPublicAccessDenyRulesOriginIncludedIpRanges">DataDatabricksAccountNetworkPolicyIngressDryRunPublicAccessDenyRulesOriginIncludedIpRanges</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#included_ip_ranges DataDatabricksAccountNetworkPolicy#included_ip_ranges}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#included_ip_ranges DataDatabricksAccountNetworkPolicy#included_ip_ranges}.
 
 ---
 
@@ -6662,7 +6774,7 @@ DataDatabricksAccountNetworkPolicyIngressDryRunPublicAccessDenyRulesOriginExclud
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPublicAccessDenyRulesOriginExcludedIpRanges.property.ipRanges">ipRanges</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#ip_ranges DataDatabricksAccountNetworkPolicy#ip_ranges}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPublicAccessDenyRulesOriginExcludedIpRanges.property.ipRanges">ipRanges</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#ip_ranges DataDatabricksAccountNetworkPolicy#ip_ranges}. |
 
 ---
 
@@ -6674,7 +6786,7 @@ public java.util.List<java.lang.String> getIpRanges();
 
 - *Type:* java.util.List<java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#ip_ranges DataDatabricksAccountNetworkPolicy#ip_ranges}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#ip_ranges DataDatabricksAccountNetworkPolicy#ip_ranges}.
 
 ---
 
@@ -6694,7 +6806,7 @@ DataDatabricksAccountNetworkPolicyIngressDryRunPublicAccessDenyRulesOriginInclud
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPublicAccessDenyRulesOriginIncludedIpRanges.property.ipRanges">ipRanges</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#ip_ranges DataDatabricksAccountNetworkPolicy#ip_ranges}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPublicAccessDenyRulesOriginIncludedIpRanges.property.ipRanges">ipRanges</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#ip_ranges DataDatabricksAccountNetworkPolicy#ip_ranges}. |
 
 ---
 
@@ -6706,7 +6818,7 @@ public java.util.List<java.lang.String> getIpRanges();
 
 - *Type:* java.util.List<java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#ip_ranges DataDatabricksAccountNetworkPolicy#ip_ranges}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#ip_ranges DataDatabricksAccountNetworkPolicy#ip_ranges}.
 
 ---
 
@@ -6728,9 +6840,9 @@ DataDatabricksAccountNetworkPolicyIngressPrivateAccess.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPrivateAccess.property.restrictionMode">restrictionMode</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#restriction_mode DataDatabricksAccountNetworkPolicy#restriction_mode}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPrivateAccess.property.allowRules">allowRules</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPrivateAccessAllowRules">DataDatabricksAccountNetworkPolicyIngressPrivateAccessAllowRules</a>></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#allow_rules DataDatabricksAccountNetworkPolicy#allow_rules}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPrivateAccess.property.denyRules">denyRules</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPrivateAccessDenyRules">DataDatabricksAccountNetworkPolicyIngressPrivateAccessDenyRules</a>></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#deny_rules DataDatabricksAccountNetworkPolicy#deny_rules}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPrivateAccess.property.restrictionMode">restrictionMode</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#restriction_mode DataDatabricksAccountNetworkPolicy#restriction_mode}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPrivateAccess.property.allowRules">allowRules</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPrivateAccessAllowRules">DataDatabricksAccountNetworkPolicyIngressPrivateAccessAllowRules</a>></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#allow_rules DataDatabricksAccountNetworkPolicy#allow_rules}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPrivateAccess.property.denyRules">denyRules</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPrivateAccessDenyRules">DataDatabricksAccountNetworkPolicyIngressPrivateAccessDenyRules</a>></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#deny_rules DataDatabricksAccountNetworkPolicy#deny_rules}. |
 
 ---
 
@@ -6742,7 +6854,7 @@ public java.lang.String getRestrictionMode();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#restriction_mode DataDatabricksAccountNetworkPolicy#restriction_mode}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#restriction_mode DataDatabricksAccountNetworkPolicy#restriction_mode}.
 
 ---
 
@@ -6754,7 +6866,7 @@ public IResolvable|java.util.List<DataDatabricksAccountNetworkPolicyIngressPriva
 
 - *Type:* io.cdktn.cdktn.IResolvable|java.util.List<<a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPrivateAccessAllowRules">DataDatabricksAccountNetworkPolicyIngressPrivateAccessAllowRules</a>>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#allow_rules DataDatabricksAccountNetworkPolicy#allow_rules}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#allow_rules DataDatabricksAccountNetworkPolicy#allow_rules}.
 
 ---
 
@@ -6766,7 +6878,7 @@ public IResolvable|java.util.List<DataDatabricksAccountNetworkPolicyIngressPriva
 
 - *Type:* io.cdktn.cdktn.IResolvable|java.util.List<<a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPrivateAccessDenyRules">DataDatabricksAccountNetworkPolicyIngressPrivateAccessDenyRules</a>>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#deny_rules DataDatabricksAccountNetworkPolicy#deny_rules}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#deny_rules DataDatabricksAccountNetworkPolicy#deny_rules}.
 
 ---
 
@@ -6789,10 +6901,10 @@ DataDatabricksAccountNetworkPolicyIngressPrivateAccessAllowRules.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPrivateAccessAllowRules.property.authentication">authentication</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPrivateAccessAllowRulesAuthentication">DataDatabricksAccountNetworkPolicyIngressPrivateAccessAllowRulesAuthentication</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#authentication DataDatabricksAccountNetworkPolicy#authentication}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPrivateAccessAllowRules.property.destination">destination</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPrivateAccessAllowRulesDestination">DataDatabricksAccountNetworkPolicyIngressPrivateAccessAllowRulesDestination</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#destination DataDatabricksAccountNetworkPolicy#destination}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPrivateAccessAllowRules.property.label">label</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#label DataDatabricksAccountNetworkPolicy#label}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPrivateAccessAllowRules.property.origin">origin</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPrivateAccessAllowRulesOrigin">DataDatabricksAccountNetworkPolicyIngressPrivateAccessAllowRulesOrigin</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#origin DataDatabricksAccountNetworkPolicy#origin}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPrivateAccessAllowRules.property.authentication">authentication</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPrivateAccessAllowRulesAuthentication">DataDatabricksAccountNetworkPolicyIngressPrivateAccessAllowRulesAuthentication</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#authentication DataDatabricksAccountNetworkPolicy#authentication}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPrivateAccessAllowRules.property.destination">destination</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPrivateAccessAllowRulesDestination">DataDatabricksAccountNetworkPolicyIngressPrivateAccessAllowRulesDestination</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#destination DataDatabricksAccountNetworkPolicy#destination}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPrivateAccessAllowRules.property.label">label</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#label DataDatabricksAccountNetworkPolicy#label}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPrivateAccessAllowRules.property.origin">origin</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPrivateAccessAllowRulesOrigin">DataDatabricksAccountNetworkPolicyIngressPrivateAccessAllowRulesOrigin</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#origin DataDatabricksAccountNetworkPolicy#origin}. |
 
 ---
 
@@ -6804,7 +6916,7 @@ public DataDatabricksAccountNetworkPolicyIngressPrivateAccessAllowRulesAuthentic
 
 - *Type:* <a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPrivateAccessAllowRulesAuthentication">DataDatabricksAccountNetworkPolicyIngressPrivateAccessAllowRulesAuthentication</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#authentication DataDatabricksAccountNetworkPolicy#authentication}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#authentication DataDatabricksAccountNetworkPolicy#authentication}.
 
 ---
 
@@ -6816,7 +6928,7 @@ public DataDatabricksAccountNetworkPolicyIngressPrivateAccessAllowRulesDestinati
 
 - *Type:* <a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPrivateAccessAllowRulesDestination">DataDatabricksAccountNetworkPolicyIngressPrivateAccessAllowRulesDestination</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#destination DataDatabricksAccountNetworkPolicy#destination}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#destination DataDatabricksAccountNetworkPolicy#destination}.
 
 ---
 
@@ -6828,7 +6940,7 @@ public java.lang.String getLabel();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#label DataDatabricksAccountNetworkPolicy#label}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#label DataDatabricksAccountNetworkPolicy#label}.
 
 ---
 
@@ -6840,7 +6952,7 @@ public DataDatabricksAccountNetworkPolicyIngressPrivateAccessAllowRulesOrigin ge
 
 - *Type:* <a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPrivateAccessAllowRulesOrigin">DataDatabricksAccountNetworkPolicyIngressPrivateAccessAllowRulesOrigin</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#origin DataDatabricksAccountNetworkPolicy#origin}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#origin DataDatabricksAccountNetworkPolicy#origin}.
 
 ---
 
@@ -6861,8 +6973,8 @@ DataDatabricksAccountNetworkPolicyIngressPrivateAccessAllowRulesAuthentication.b
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPrivateAccessAllowRulesAuthentication.property.identities">identities</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPrivateAccessAllowRulesAuthenticationIdentities">DataDatabricksAccountNetworkPolicyIngressPrivateAccessAllowRulesAuthenticationIdentities</a>></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#identities DataDatabricksAccountNetworkPolicy#identities}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPrivateAccessAllowRulesAuthentication.property.identityType">identityType</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#identity_type DataDatabricksAccountNetworkPolicy#identity_type}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPrivateAccessAllowRulesAuthentication.property.identities">identities</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPrivateAccessAllowRulesAuthenticationIdentities">DataDatabricksAccountNetworkPolicyIngressPrivateAccessAllowRulesAuthenticationIdentities</a>></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#identities DataDatabricksAccountNetworkPolicy#identities}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPrivateAccessAllowRulesAuthentication.property.identityType">identityType</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#identity_type DataDatabricksAccountNetworkPolicy#identity_type}. |
 
 ---
 
@@ -6874,7 +6986,7 @@ public IResolvable|java.util.List<DataDatabricksAccountNetworkPolicyIngressPriva
 
 - *Type:* io.cdktn.cdktn.IResolvable|java.util.List<<a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPrivateAccessAllowRulesAuthenticationIdentities">DataDatabricksAccountNetworkPolicyIngressPrivateAccessAllowRulesAuthenticationIdentities</a>>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#identities DataDatabricksAccountNetworkPolicy#identities}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#identities DataDatabricksAccountNetworkPolicy#identities}.
 
 ---
 
@@ -6886,7 +6998,7 @@ public java.lang.String getIdentityType();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#identity_type DataDatabricksAccountNetworkPolicy#identity_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#identity_type DataDatabricksAccountNetworkPolicy#identity_type}.
 
 ---
 
@@ -6907,8 +7019,8 @@ DataDatabricksAccountNetworkPolicyIngressPrivateAccessAllowRulesAuthenticationId
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPrivateAccessAllowRulesAuthenticationIdentities.property.principalId">principalId</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#principal_id DataDatabricksAccountNetworkPolicy#principal_id}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPrivateAccessAllowRulesAuthenticationIdentities.property.principalType">principalType</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#principal_type DataDatabricksAccountNetworkPolicy#principal_type}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPrivateAccessAllowRulesAuthenticationIdentities.property.principalId">principalId</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#principal_id DataDatabricksAccountNetworkPolicy#principal_id}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPrivateAccessAllowRulesAuthenticationIdentities.property.principalType">principalType</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#principal_type DataDatabricksAccountNetworkPolicy#principal_type}. |
 
 ---
 
@@ -6920,7 +7032,7 @@ public java.lang.Number getPrincipalId();
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#principal_id DataDatabricksAccountNetworkPolicy#principal_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#principal_id DataDatabricksAccountNetworkPolicy#principal_id}.
 
 ---
 
@@ -6932,7 +7044,7 @@ public java.lang.String getPrincipalType();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#principal_type DataDatabricksAccountNetworkPolicy#principal_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#principal_type DataDatabricksAccountNetworkPolicy#principal_type}.
 
 ---
 
@@ -6959,14 +7071,14 @@ DataDatabricksAccountNetworkPolicyIngressPrivateAccessAllowRulesDestination.buil
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPrivateAccessAllowRulesDestination.property.accountApi">accountApi</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPrivateAccessAllowRulesDestinationAccountApi">DataDatabricksAccountNetworkPolicyIngressPrivateAccessAllowRulesDestinationAccountApi</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#account_api DataDatabricksAccountNetworkPolicy#account_api}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPrivateAccessAllowRulesDestination.property.accountDatabricksOne">accountDatabricksOne</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPrivateAccessAllowRulesDestinationAccountDatabricksOne">DataDatabricksAccountNetworkPolicyIngressPrivateAccessAllowRulesDestinationAccountDatabricksOne</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#account_databricks_one DataDatabricksAccountNetworkPolicy#account_databricks_one}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPrivateAccessAllowRulesDestination.property.accountUi">accountUi</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPrivateAccessAllowRulesDestinationAccountUi">DataDatabricksAccountNetworkPolicyIngressPrivateAccessAllowRulesDestinationAccountUi</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#account_ui DataDatabricksAccountNetworkPolicy#account_ui}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPrivateAccessAllowRulesDestination.property.allDestinations">allDestinations</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#all_destinations DataDatabricksAccountNetworkPolicy#all_destinations}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPrivateAccessAllowRulesDestination.property.appsRuntime">appsRuntime</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPrivateAccessAllowRulesDestinationAppsRuntime">DataDatabricksAccountNetworkPolicyIngressPrivateAccessAllowRulesDestinationAppsRuntime</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#apps_runtime DataDatabricksAccountNetworkPolicy#apps_runtime}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPrivateAccessAllowRulesDestination.property.lakebaseRuntime">lakebaseRuntime</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPrivateAccessAllowRulesDestinationLakebaseRuntime">DataDatabricksAccountNetworkPolicyIngressPrivateAccessAllowRulesDestinationLakebaseRuntime</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#lakebase_runtime DataDatabricksAccountNetworkPolicy#lakebase_runtime}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPrivateAccessAllowRulesDestination.property.workspaceApi">workspaceApi</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPrivateAccessAllowRulesDestinationWorkspaceApi">DataDatabricksAccountNetworkPolicyIngressPrivateAccessAllowRulesDestinationWorkspaceApi</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#workspace_api DataDatabricksAccountNetworkPolicy#workspace_api}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPrivateAccessAllowRulesDestination.property.workspaceUi">workspaceUi</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPrivateAccessAllowRulesDestinationWorkspaceUi">DataDatabricksAccountNetworkPolicyIngressPrivateAccessAllowRulesDestinationWorkspaceUi</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#workspace_ui DataDatabricksAccountNetworkPolicy#workspace_ui}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPrivateAccessAllowRulesDestination.property.accountApi">accountApi</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPrivateAccessAllowRulesDestinationAccountApi">DataDatabricksAccountNetworkPolicyIngressPrivateAccessAllowRulesDestinationAccountApi</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#account_api DataDatabricksAccountNetworkPolicy#account_api}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPrivateAccessAllowRulesDestination.property.accountDatabricksOne">accountDatabricksOne</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPrivateAccessAllowRulesDestinationAccountDatabricksOne">DataDatabricksAccountNetworkPolicyIngressPrivateAccessAllowRulesDestinationAccountDatabricksOne</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#account_databricks_one DataDatabricksAccountNetworkPolicy#account_databricks_one}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPrivateAccessAllowRulesDestination.property.accountUi">accountUi</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPrivateAccessAllowRulesDestinationAccountUi">DataDatabricksAccountNetworkPolicyIngressPrivateAccessAllowRulesDestinationAccountUi</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#account_ui DataDatabricksAccountNetworkPolicy#account_ui}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPrivateAccessAllowRulesDestination.property.allDestinations">allDestinations</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#all_destinations DataDatabricksAccountNetworkPolicy#all_destinations}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPrivateAccessAllowRulesDestination.property.appsRuntime">appsRuntime</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPrivateAccessAllowRulesDestinationAppsRuntime">DataDatabricksAccountNetworkPolicyIngressPrivateAccessAllowRulesDestinationAppsRuntime</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#apps_runtime DataDatabricksAccountNetworkPolicy#apps_runtime}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPrivateAccessAllowRulesDestination.property.lakebaseRuntime">lakebaseRuntime</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPrivateAccessAllowRulesDestinationLakebaseRuntime">DataDatabricksAccountNetworkPolicyIngressPrivateAccessAllowRulesDestinationLakebaseRuntime</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#lakebase_runtime DataDatabricksAccountNetworkPolicy#lakebase_runtime}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPrivateAccessAllowRulesDestination.property.workspaceApi">workspaceApi</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPrivateAccessAllowRulesDestinationWorkspaceApi">DataDatabricksAccountNetworkPolicyIngressPrivateAccessAllowRulesDestinationWorkspaceApi</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#workspace_api DataDatabricksAccountNetworkPolicy#workspace_api}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPrivateAccessAllowRulesDestination.property.workspaceUi">workspaceUi</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPrivateAccessAllowRulesDestinationWorkspaceUi">DataDatabricksAccountNetworkPolicyIngressPrivateAccessAllowRulesDestinationWorkspaceUi</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#workspace_ui DataDatabricksAccountNetworkPolicy#workspace_ui}. |
 
 ---
 
@@ -6978,7 +7090,7 @@ public DataDatabricksAccountNetworkPolicyIngressPrivateAccessAllowRulesDestinati
 
 - *Type:* <a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPrivateAccessAllowRulesDestinationAccountApi">DataDatabricksAccountNetworkPolicyIngressPrivateAccessAllowRulesDestinationAccountApi</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#account_api DataDatabricksAccountNetworkPolicy#account_api}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#account_api DataDatabricksAccountNetworkPolicy#account_api}.
 
 ---
 
@@ -6990,7 +7102,7 @@ public DataDatabricksAccountNetworkPolicyIngressPrivateAccessAllowRulesDestinati
 
 - *Type:* <a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPrivateAccessAllowRulesDestinationAccountDatabricksOne">DataDatabricksAccountNetworkPolicyIngressPrivateAccessAllowRulesDestinationAccountDatabricksOne</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#account_databricks_one DataDatabricksAccountNetworkPolicy#account_databricks_one}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#account_databricks_one DataDatabricksAccountNetworkPolicy#account_databricks_one}.
 
 ---
 
@@ -7002,7 +7114,7 @@ public DataDatabricksAccountNetworkPolicyIngressPrivateAccessAllowRulesDestinati
 
 - *Type:* <a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPrivateAccessAllowRulesDestinationAccountUi">DataDatabricksAccountNetworkPolicyIngressPrivateAccessAllowRulesDestinationAccountUi</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#account_ui DataDatabricksAccountNetworkPolicy#account_ui}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#account_ui DataDatabricksAccountNetworkPolicy#account_ui}.
 
 ---
 
@@ -7014,7 +7126,7 @@ public java.lang.Boolean|IResolvable getAllDestinations();
 
 - *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#all_destinations DataDatabricksAccountNetworkPolicy#all_destinations}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#all_destinations DataDatabricksAccountNetworkPolicy#all_destinations}.
 
 ---
 
@@ -7026,7 +7138,7 @@ public DataDatabricksAccountNetworkPolicyIngressPrivateAccessAllowRulesDestinati
 
 - *Type:* <a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPrivateAccessAllowRulesDestinationAppsRuntime">DataDatabricksAccountNetworkPolicyIngressPrivateAccessAllowRulesDestinationAppsRuntime</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#apps_runtime DataDatabricksAccountNetworkPolicy#apps_runtime}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#apps_runtime DataDatabricksAccountNetworkPolicy#apps_runtime}.
 
 ---
 
@@ -7038,7 +7150,7 @@ public DataDatabricksAccountNetworkPolicyIngressPrivateAccessAllowRulesDestinati
 
 - *Type:* <a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPrivateAccessAllowRulesDestinationLakebaseRuntime">DataDatabricksAccountNetworkPolicyIngressPrivateAccessAllowRulesDestinationLakebaseRuntime</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#lakebase_runtime DataDatabricksAccountNetworkPolicy#lakebase_runtime}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#lakebase_runtime DataDatabricksAccountNetworkPolicy#lakebase_runtime}.
 
 ---
 
@@ -7050,7 +7162,7 @@ public DataDatabricksAccountNetworkPolicyIngressPrivateAccessAllowRulesDestinati
 
 - *Type:* <a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPrivateAccessAllowRulesDestinationWorkspaceApi">DataDatabricksAccountNetworkPolicyIngressPrivateAccessAllowRulesDestinationWorkspaceApi</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#workspace_api DataDatabricksAccountNetworkPolicy#workspace_api}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#workspace_api DataDatabricksAccountNetworkPolicy#workspace_api}.
 
 ---
 
@@ -7062,7 +7174,7 @@ public DataDatabricksAccountNetworkPolicyIngressPrivateAccessAllowRulesDestinati
 
 - *Type:* <a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPrivateAccessAllowRulesDestinationWorkspaceUi">DataDatabricksAccountNetworkPolicyIngressPrivateAccessAllowRulesDestinationWorkspaceUi</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#workspace_ui DataDatabricksAccountNetworkPolicy#workspace_ui}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#workspace_ui DataDatabricksAccountNetworkPolicy#workspace_ui}.
 
 ---
 
@@ -7083,8 +7195,8 @@ DataDatabricksAccountNetworkPolicyIngressPrivateAccessAllowRulesDestinationAccou
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPrivateAccessAllowRulesDestinationAccountApi.property.scopeQualifier">scopeQualifier</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#scope_qualifier DataDatabricksAccountNetworkPolicy#scope_qualifier}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPrivateAccessAllowRulesDestinationAccountApi.property.scopes">scopes</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#scopes DataDatabricksAccountNetworkPolicy#scopes}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPrivateAccessAllowRulesDestinationAccountApi.property.scopeQualifier">scopeQualifier</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#scope_qualifier DataDatabricksAccountNetworkPolicy#scope_qualifier}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPrivateAccessAllowRulesDestinationAccountApi.property.scopes">scopes</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#scopes DataDatabricksAccountNetworkPolicy#scopes}. |
 
 ---
 
@@ -7096,7 +7208,7 @@ public java.lang.String getScopeQualifier();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#scope_qualifier DataDatabricksAccountNetworkPolicy#scope_qualifier}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#scope_qualifier DataDatabricksAccountNetworkPolicy#scope_qualifier}.
 
 ---
 
@@ -7108,7 +7220,7 @@ public java.util.List<java.lang.String> getScopes();
 
 - *Type:* java.util.List<java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#scopes DataDatabricksAccountNetworkPolicy#scopes}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#scopes DataDatabricksAccountNetworkPolicy#scopes}.
 
 ---
 
@@ -7128,7 +7240,7 @@ DataDatabricksAccountNetworkPolicyIngressPrivateAccessAllowRulesDestinationAccou
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPrivateAccessAllowRulesDestinationAccountDatabricksOne.property.allDestinations">allDestinations</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#all_destinations DataDatabricksAccountNetworkPolicy#all_destinations}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPrivateAccessAllowRulesDestinationAccountDatabricksOne.property.allDestinations">allDestinations</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#all_destinations DataDatabricksAccountNetworkPolicy#all_destinations}. |
 
 ---
 
@@ -7140,7 +7252,7 @@ public java.lang.Boolean|IResolvable getAllDestinations();
 
 - *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#all_destinations DataDatabricksAccountNetworkPolicy#all_destinations}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#all_destinations DataDatabricksAccountNetworkPolicy#all_destinations}.
 
 ---
 
@@ -7160,7 +7272,7 @@ DataDatabricksAccountNetworkPolicyIngressPrivateAccessAllowRulesDestinationAccou
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPrivateAccessAllowRulesDestinationAccountUi.property.allDestinations">allDestinations</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#all_destinations DataDatabricksAccountNetworkPolicy#all_destinations}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPrivateAccessAllowRulesDestinationAccountUi.property.allDestinations">allDestinations</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#all_destinations DataDatabricksAccountNetworkPolicy#all_destinations}. |
 
 ---
 
@@ -7172,7 +7284,7 @@ public java.lang.Boolean|IResolvable getAllDestinations();
 
 - *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#all_destinations DataDatabricksAccountNetworkPolicy#all_destinations}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#all_destinations DataDatabricksAccountNetworkPolicy#all_destinations}.
 
 ---
 
@@ -7192,7 +7304,7 @@ DataDatabricksAccountNetworkPolicyIngressPrivateAccessAllowRulesDestinationAppsR
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPrivateAccessAllowRulesDestinationAppsRuntime.property.allDestinations">allDestinations</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#all_destinations DataDatabricksAccountNetworkPolicy#all_destinations}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPrivateAccessAllowRulesDestinationAppsRuntime.property.allDestinations">allDestinations</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#all_destinations DataDatabricksAccountNetworkPolicy#all_destinations}. |
 
 ---
 
@@ -7204,7 +7316,7 @@ public java.lang.Boolean|IResolvable getAllDestinations();
 
 - *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#all_destinations DataDatabricksAccountNetworkPolicy#all_destinations}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#all_destinations DataDatabricksAccountNetworkPolicy#all_destinations}.
 
 ---
 
@@ -7224,7 +7336,7 @@ DataDatabricksAccountNetworkPolicyIngressPrivateAccessAllowRulesDestinationLakeb
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPrivateAccessAllowRulesDestinationLakebaseRuntime.property.allDestinations">allDestinations</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#all_destinations DataDatabricksAccountNetworkPolicy#all_destinations}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPrivateAccessAllowRulesDestinationLakebaseRuntime.property.allDestinations">allDestinations</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#all_destinations DataDatabricksAccountNetworkPolicy#all_destinations}. |
 
 ---
 
@@ -7236,7 +7348,7 @@ public java.lang.Boolean|IResolvable getAllDestinations();
 
 - *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#all_destinations DataDatabricksAccountNetworkPolicy#all_destinations}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#all_destinations DataDatabricksAccountNetworkPolicy#all_destinations}.
 
 ---
 
@@ -7248,6 +7360,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 import io.cdktn.providers.databricks.data_databricks_account_network_policy.DataDatabricksAccountNetworkPolicyIngressPrivateAccessAllowRulesDestinationWorkspaceApi;
 
 DataDatabricksAccountNetworkPolicyIngressPrivateAccessAllowRulesDestinationWorkspaceApi.builder()
+//  .excludedScopes(java.util.List<java.lang.String>)
 //  .scopeQualifier(java.lang.String)
 //  .scopes(java.util.List<java.lang.String>)
     .build();
@@ -7257,8 +7370,21 @@ DataDatabricksAccountNetworkPolicyIngressPrivateAccessAllowRulesDestinationWorks
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPrivateAccessAllowRulesDestinationWorkspaceApi.property.scopeQualifier">scopeQualifier</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#scope_qualifier DataDatabricksAccountNetworkPolicy#scope_qualifier}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPrivateAccessAllowRulesDestinationWorkspaceApi.property.scopes">scopes</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#scopes DataDatabricksAccountNetworkPolicy#scopes}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPrivateAccessAllowRulesDestinationWorkspaceApi.property.excludedScopes">excludedScopes</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#excluded_scopes DataDatabricksAccountNetworkPolicy#excluded_scopes}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPrivateAccessAllowRulesDestinationWorkspaceApi.property.scopeQualifier">scopeQualifier</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#scope_qualifier DataDatabricksAccountNetworkPolicy#scope_qualifier}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPrivateAccessAllowRulesDestinationWorkspaceApi.property.scopes">scopes</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#scopes DataDatabricksAccountNetworkPolicy#scopes}. |
+
+---
+
+##### `excludedScopes`<sup>Optional</sup> <a name="excludedScopes" id="@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPrivateAccessAllowRulesDestinationWorkspaceApi.property.excludedScopes"></a>
+
+```java
+public java.util.List<java.lang.String> getExcludedScopes();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#excluded_scopes DataDatabricksAccountNetworkPolicy#excluded_scopes}.
 
 ---
 
@@ -7270,7 +7396,7 @@ public java.lang.String getScopeQualifier();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#scope_qualifier DataDatabricksAccountNetworkPolicy#scope_qualifier}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#scope_qualifier DataDatabricksAccountNetworkPolicy#scope_qualifier}.
 
 ---
 
@@ -7282,7 +7408,7 @@ public java.util.List<java.lang.String> getScopes();
 
 - *Type:* java.util.List<java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#scopes DataDatabricksAccountNetworkPolicy#scopes}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#scopes DataDatabricksAccountNetworkPolicy#scopes}.
 
 ---
 
@@ -7302,7 +7428,7 @@ DataDatabricksAccountNetworkPolicyIngressPrivateAccessAllowRulesDestinationWorks
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPrivateAccessAllowRulesDestinationWorkspaceUi.property.allDestinations">allDestinations</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#all_destinations DataDatabricksAccountNetworkPolicy#all_destinations}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPrivateAccessAllowRulesDestinationWorkspaceUi.property.allDestinations">allDestinations</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#all_destinations DataDatabricksAccountNetworkPolicy#all_destinations}. |
 
 ---
 
@@ -7314,7 +7440,7 @@ public java.lang.Boolean|IResolvable getAllDestinations();
 
 - *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#all_destinations DataDatabricksAccountNetworkPolicy#all_destinations}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#all_destinations DataDatabricksAccountNetworkPolicy#all_destinations}.
 
 ---
 
@@ -7337,10 +7463,10 @@ DataDatabricksAccountNetworkPolicyIngressPrivateAccessAllowRulesOrigin.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPrivateAccessAllowRulesOrigin.property.allPrivateAccess">allPrivateAccess</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#all_private_access DataDatabricksAccountNetworkPolicy#all_private_access}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPrivateAccessAllowRulesOrigin.property.allRegisteredEndpoints">allRegisteredEndpoints</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#all_registered_endpoints DataDatabricksAccountNetworkPolicy#all_registered_endpoints}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPrivateAccessAllowRulesOrigin.property.azureWorkspacePrivateLink">azureWorkspacePrivateLink</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#azure_workspace_private_link DataDatabricksAccountNetworkPolicy#azure_workspace_private_link}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPrivateAccessAllowRulesOrigin.property.endpoints">endpoints</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPrivateAccessAllowRulesOriginEndpoints">DataDatabricksAccountNetworkPolicyIngressPrivateAccessAllowRulesOriginEndpoints</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#endpoints DataDatabricksAccountNetworkPolicy#endpoints}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPrivateAccessAllowRulesOrigin.property.allPrivateAccess">allPrivateAccess</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#all_private_access DataDatabricksAccountNetworkPolicy#all_private_access}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPrivateAccessAllowRulesOrigin.property.allRegisteredEndpoints">allRegisteredEndpoints</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#all_registered_endpoints DataDatabricksAccountNetworkPolicy#all_registered_endpoints}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPrivateAccessAllowRulesOrigin.property.azureWorkspacePrivateLink">azureWorkspacePrivateLink</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#azure_workspace_private_link DataDatabricksAccountNetworkPolicy#azure_workspace_private_link}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPrivateAccessAllowRulesOrigin.property.endpoints">endpoints</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPrivateAccessAllowRulesOriginEndpoints">DataDatabricksAccountNetworkPolicyIngressPrivateAccessAllowRulesOriginEndpoints</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#endpoints DataDatabricksAccountNetworkPolicy#endpoints}. |
 
 ---
 
@@ -7352,7 +7478,7 @@ public java.lang.Boolean|IResolvable getAllPrivateAccess();
 
 - *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#all_private_access DataDatabricksAccountNetworkPolicy#all_private_access}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#all_private_access DataDatabricksAccountNetworkPolicy#all_private_access}.
 
 ---
 
@@ -7364,7 +7490,7 @@ public java.lang.Boolean|IResolvable getAllRegisteredEndpoints();
 
 - *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#all_registered_endpoints DataDatabricksAccountNetworkPolicy#all_registered_endpoints}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#all_registered_endpoints DataDatabricksAccountNetworkPolicy#all_registered_endpoints}.
 
 ---
 
@@ -7376,7 +7502,7 @@ public java.lang.Boolean|IResolvable getAzureWorkspacePrivateLink();
 
 - *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#azure_workspace_private_link DataDatabricksAccountNetworkPolicy#azure_workspace_private_link}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#azure_workspace_private_link DataDatabricksAccountNetworkPolicy#azure_workspace_private_link}.
 
 ---
 
@@ -7388,7 +7514,7 @@ public DataDatabricksAccountNetworkPolicyIngressPrivateAccessAllowRulesOriginEnd
 
 - *Type:* <a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPrivateAccessAllowRulesOriginEndpoints">DataDatabricksAccountNetworkPolicyIngressPrivateAccessAllowRulesOriginEndpoints</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#endpoints DataDatabricksAccountNetworkPolicy#endpoints}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#endpoints DataDatabricksAccountNetworkPolicy#endpoints}.
 
 ---
 
@@ -7408,7 +7534,7 @@ DataDatabricksAccountNetworkPolicyIngressPrivateAccessAllowRulesOriginEndpoints.
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPrivateAccessAllowRulesOriginEndpoints.property.endpointIds">endpointIds</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#endpoint_ids DataDatabricksAccountNetworkPolicy#endpoint_ids}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPrivateAccessAllowRulesOriginEndpoints.property.endpointIds">endpointIds</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#endpoint_ids DataDatabricksAccountNetworkPolicy#endpoint_ids}. |
 
 ---
 
@@ -7420,7 +7546,7 @@ public java.util.List<java.lang.String> getEndpointIds();
 
 - *Type:* java.util.List<java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#endpoint_ids DataDatabricksAccountNetworkPolicy#endpoint_ids}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#endpoint_ids DataDatabricksAccountNetworkPolicy#endpoint_ids}.
 
 ---
 
@@ -7443,10 +7569,10 @@ DataDatabricksAccountNetworkPolicyIngressPrivateAccessDenyRules.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPrivateAccessDenyRules.property.authentication">authentication</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPrivateAccessDenyRulesAuthentication">DataDatabricksAccountNetworkPolicyIngressPrivateAccessDenyRulesAuthentication</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#authentication DataDatabricksAccountNetworkPolicy#authentication}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPrivateAccessDenyRules.property.destination">destination</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPrivateAccessDenyRulesDestination">DataDatabricksAccountNetworkPolicyIngressPrivateAccessDenyRulesDestination</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#destination DataDatabricksAccountNetworkPolicy#destination}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPrivateAccessDenyRules.property.label">label</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#label DataDatabricksAccountNetworkPolicy#label}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPrivateAccessDenyRules.property.origin">origin</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPrivateAccessDenyRulesOrigin">DataDatabricksAccountNetworkPolicyIngressPrivateAccessDenyRulesOrigin</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#origin DataDatabricksAccountNetworkPolicy#origin}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPrivateAccessDenyRules.property.authentication">authentication</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPrivateAccessDenyRulesAuthentication">DataDatabricksAccountNetworkPolicyIngressPrivateAccessDenyRulesAuthentication</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#authentication DataDatabricksAccountNetworkPolicy#authentication}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPrivateAccessDenyRules.property.destination">destination</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPrivateAccessDenyRulesDestination">DataDatabricksAccountNetworkPolicyIngressPrivateAccessDenyRulesDestination</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#destination DataDatabricksAccountNetworkPolicy#destination}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPrivateAccessDenyRules.property.label">label</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#label DataDatabricksAccountNetworkPolicy#label}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPrivateAccessDenyRules.property.origin">origin</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPrivateAccessDenyRulesOrigin">DataDatabricksAccountNetworkPolicyIngressPrivateAccessDenyRulesOrigin</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#origin DataDatabricksAccountNetworkPolicy#origin}. |
 
 ---
 
@@ -7458,7 +7584,7 @@ public DataDatabricksAccountNetworkPolicyIngressPrivateAccessDenyRulesAuthentica
 
 - *Type:* <a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPrivateAccessDenyRulesAuthentication">DataDatabricksAccountNetworkPolicyIngressPrivateAccessDenyRulesAuthentication</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#authentication DataDatabricksAccountNetworkPolicy#authentication}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#authentication DataDatabricksAccountNetworkPolicy#authentication}.
 
 ---
 
@@ -7470,7 +7596,7 @@ public DataDatabricksAccountNetworkPolicyIngressPrivateAccessDenyRulesDestinatio
 
 - *Type:* <a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPrivateAccessDenyRulesDestination">DataDatabricksAccountNetworkPolicyIngressPrivateAccessDenyRulesDestination</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#destination DataDatabricksAccountNetworkPolicy#destination}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#destination DataDatabricksAccountNetworkPolicy#destination}.
 
 ---
 
@@ -7482,7 +7608,7 @@ public java.lang.String getLabel();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#label DataDatabricksAccountNetworkPolicy#label}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#label DataDatabricksAccountNetworkPolicy#label}.
 
 ---
 
@@ -7494,7 +7620,7 @@ public DataDatabricksAccountNetworkPolicyIngressPrivateAccessDenyRulesOrigin get
 
 - *Type:* <a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPrivateAccessDenyRulesOrigin">DataDatabricksAccountNetworkPolicyIngressPrivateAccessDenyRulesOrigin</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#origin DataDatabricksAccountNetworkPolicy#origin}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#origin DataDatabricksAccountNetworkPolicy#origin}.
 
 ---
 
@@ -7515,8 +7641,8 @@ DataDatabricksAccountNetworkPolicyIngressPrivateAccessDenyRulesAuthentication.bu
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPrivateAccessDenyRulesAuthentication.property.identities">identities</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPrivateAccessDenyRulesAuthenticationIdentities">DataDatabricksAccountNetworkPolicyIngressPrivateAccessDenyRulesAuthenticationIdentities</a>></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#identities DataDatabricksAccountNetworkPolicy#identities}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPrivateAccessDenyRulesAuthentication.property.identityType">identityType</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#identity_type DataDatabricksAccountNetworkPolicy#identity_type}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPrivateAccessDenyRulesAuthentication.property.identities">identities</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPrivateAccessDenyRulesAuthenticationIdentities">DataDatabricksAccountNetworkPolicyIngressPrivateAccessDenyRulesAuthenticationIdentities</a>></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#identities DataDatabricksAccountNetworkPolicy#identities}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPrivateAccessDenyRulesAuthentication.property.identityType">identityType</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#identity_type DataDatabricksAccountNetworkPolicy#identity_type}. |
 
 ---
 
@@ -7528,7 +7654,7 @@ public IResolvable|java.util.List<DataDatabricksAccountNetworkPolicyIngressPriva
 
 - *Type:* io.cdktn.cdktn.IResolvable|java.util.List<<a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPrivateAccessDenyRulesAuthenticationIdentities">DataDatabricksAccountNetworkPolicyIngressPrivateAccessDenyRulesAuthenticationIdentities</a>>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#identities DataDatabricksAccountNetworkPolicy#identities}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#identities DataDatabricksAccountNetworkPolicy#identities}.
 
 ---
 
@@ -7540,7 +7666,7 @@ public java.lang.String getIdentityType();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#identity_type DataDatabricksAccountNetworkPolicy#identity_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#identity_type DataDatabricksAccountNetworkPolicy#identity_type}.
 
 ---
 
@@ -7561,8 +7687,8 @@ DataDatabricksAccountNetworkPolicyIngressPrivateAccessDenyRulesAuthenticationIde
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPrivateAccessDenyRulesAuthenticationIdentities.property.principalId">principalId</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#principal_id DataDatabricksAccountNetworkPolicy#principal_id}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPrivateAccessDenyRulesAuthenticationIdentities.property.principalType">principalType</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#principal_type DataDatabricksAccountNetworkPolicy#principal_type}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPrivateAccessDenyRulesAuthenticationIdentities.property.principalId">principalId</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#principal_id DataDatabricksAccountNetworkPolicy#principal_id}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPrivateAccessDenyRulesAuthenticationIdentities.property.principalType">principalType</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#principal_type DataDatabricksAccountNetworkPolicy#principal_type}. |
 
 ---
 
@@ -7574,7 +7700,7 @@ public java.lang.Number getPrincipalId();
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#principal_id DataDatabricksAccountNetworkPolicy#principal_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#principal_id DataDatabricksAccountNetworkPolicy#principal_id}.
 
 ---
 
@@ -7586,7 +7712,7 @@ public java.lang.String getPrincipalType();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#principal_type DataDatabricksAccountNetworkPolicy#principal_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#principal_type DataDatabricksAccountNetworkPolicy#principal_type}.
 
 ---
 
@@ -7613,14 +7739,14 @@ DataDatabricksAccountNetworkPolicyIngressPrivateAccessDenyRulesDestination.build
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPrivateAccessDenyRulesDestination.property.accountApi">accountApi</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPrivateAccessDenyRulesDestinationAccountApi">DataDatabricksAccountNetworkPolicyIngressPrivateAccessDenyRulesDestinationAccountApi</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#account_api DataDatabricksAccountNetworkPolicy#account_api}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPrivateAccessDenyRulesDestination.property.accountDatabricksOne">accountDatabricksOne</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPrivateAccessDenyRulesDestinationAccountDatabricksOne">DataDatabricksAccountNetworkPolicyIngressPrivateAccessDenyRulesDestinationAccountDatabricksOne</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#account_databricks_one DataDatabricksAccountNetworkPolicy#account_databricks_one}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPrivateAccessDenyRulesDestination.property.accountUi">accountUi</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPrivateAccessDenyRulesDestinationAccountUi">DataDatabricksAccountNetworkPolicyIngressPrivateAccessDenyRulesDestinationAccountUi</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#account_ui DataDatabricksAccountNetworkPolicy#account_ui}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPrivateAccessDenyRulesDestination.property.allDestinations">allDestinations</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#all_destinations DataDatabricksAccountNetworkPolicy#all_destinations}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPrivateAccessDenyRulesDestination.property.appsRuntime">appsRuntime</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPrivateAccessDenyRulesDestinationAppsRuntime">DataDatabricksAccountNetworkPolicyIngressPrivateAccessDenyRulesDestinationAppsRuntime</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#apps_runtime DataDatabricksAccountNetworkPolicy#apps_runtime}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPrivateAccessDenyRulesDestination.property.lakebaseRuntime">lakebaseRuntime</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPrivateAccessDenyRulesDestinationLakebaseRuntime">DataDatabricksAccountNetworkPolicyIngressPrivateAccessDenyRulesDestinationLakebaseRuntime</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#lakebase_runtime DataDatabricksAccountNetworkPolicy#lakebase_runtime}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPrivateAccessDenyRulesDestination.property.workspaceApi">workspaceApi</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPrivateAccessDenyRulesDestinationWorkspaceApi">DataDatabricksAccountNetworkPolicyIngressPrivateAccessDenyRulesDestinationWorkspaceApi</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#workspace_api DataDatabricksAccountNetworkPolicy#workspace_api}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPrivateAccessDenyRulesDestination.property.workspaceUi">workspaceUi</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPrivateAccessDenyRulesDestinationWorkspaceUi">DataDatabricksAccountNetworkPolicyIngressPrivateAccessDenyRulesDestinationWorkspaceUi</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#workspace_ui DataDatabricksAccountNetworkPolicy#workspace_ui}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPrivateAccessDenyRulesDestination.property.accountApi">accountApi</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPrivateAccessDenyRulesDestinationAccountApi">DataDatabricksAccountNetworkPolicyIngressPrivateAccessDenyRulesDestinationAccountApi</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#account_api DataDatabricksAccountNetworkPolicy#account_api}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPrivateAccessDenyRulesDestination.property.accountDatabricksOne">accountDatabricksOne</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPrivateAccessDenyRulesDestinationAccountDatabricksOne">DataDatabricksAccountNetworkPolicyIngressPrivateAccessDenyRulesDestinationAccountDatabricksOne</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#account_databricks_one DataDatabricksAccountNetworkPolicy#account_databricks_one}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPrivateAccessDenyRulesDestination.property.accountUi">accountUi</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPrivateAccessDenyRulesDestinationAccountUi">DataDatabricksAccountNetworkPolicyIngressPrivateAccessDenyRulesDestinationAccountUi</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#account_ui DataDatabricksAccountNetworkPolicy#account_ui}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPrivateAccessDenyRulesDestination.property.allDestinations">allDestinations</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#all_destinations DataDatabricksAccountNetworkPolicy#all_destinations}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPrivateAccessDenyRulesDestination.property.appsRuntime">appsRuntime</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPrivateAccessDenyRulesDestinationAppsRuntime">DataDatabricksAccountNetworkPolicyIngressPrivateAccessDenyRulesDestinationAppsRuntime</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#apps_runtime DataDatabricksAccountNetworkPolicy#apps_runtime}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPrivateAccessDenyRulesDestination.property.lakebaseRuntime">lakebaseRuntime</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPrivateAccessDenyRulesDestinationLakebaseRuntime">DataDatabricksAccountNetworkPolicyIngressPrivateAccessDenyRulesDestinationLakebaseRuntime</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#lakebase_runtime DataDatabricksAccountNetworkPolicy#lakebase_runtime}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPrivateAccessDenyRulesDestination.property.workspaceApi">workspaceApi</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPrivateAccessDenyRulesDestinationWorkspaceApi">DataDatabricksAccountNetworkPolicyIngressPrivateAccessDenyRulesDestinationWorkspaceApi</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#workspace_api DataDatabricksAccountNetworkPolicy#workspace_api}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPrivateAccessDenyRulesDestination.property.workspaceUi">workspaceUi</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPrivateAccessDenyRulesDestinationWorkspaceUi">DataDatabricksAccountNetworkPolicyIngressPrivateAccessDenyRulesDestinationWorkspaceUi</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#workspace_ui DataDatabricksAccountNetworkPolicy#workspace_ui}. |
 
 ---
 
@@ -7632,7 +7758,7 @@ public DataDatabricksAccountNetworkPolicyIngressPrivateAccessDenyRulesDestinatio
 
 - *Type:* <a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPrivateAccessDenyRulesDestinationAccountApi">DataDatabricksAccountNetworkPolicyIngressPrivateAccessDenyRulesDestinationAccountApi</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#account_api DataDatabricksAccountNetworkPolicy#account_api}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#account_api DataDatabricksAccountNetworkPolicy#account_api}.
 
 ---
 
@@ -7644,7 +7770,7 @@ public DataDatabricksAccountNetworkPolicyIngressPrivateAccessDenyRulesDestinatio
 
 - *Type:* <a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPrivateAccessDenyRulesDestinationAccountDatabricksOne">DataDatabricksAccountNetworkPolicyIngressPrivateAccessDenyRulesDestinationAccountDatabricksOne</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#account_databricks_one DataDatabricksAccountNetworkPolicy#account_databricks_one}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#account_databricks_one DataDatabricksAccountNetworkPolicy#account_databricks_one}.
 
 ---
 
@@ -7656,7 +7782,7 @@ public DataDatabricksAccountNetworkPolicyIngressPrivateAccessDenyRulesDestinatio
 
 - *Type:* <a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPrivateAccessDenyRulesDestinationAccountUi">DataDatabricksAccountNetworkPolicyIngressPrivateAccessDenyRulesDestinationAccountUi</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#account_ui DataDatabricksAccountNetworkPolicy#account_ui}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#account_ui DataDatabricksAccountNetworkPolicy#account_ui}.
 
 ---
 
@@ -7668,7 +7794,7 @@ public java.lang.Boolean|IResolvable getAllDestinations();
 
 - *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#all_destinations DataDatabricksAccountNetworkPolicy#all_destinations}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#all_destinations DataDatabricksAccountNetworkPolicy#all_destinations}.
 
 ---
 
@@ -7680,7 +7806,7 @@ public DataDatabricksAccountNetworkPolicyIngressPrivateAccessDenyRulesDestinatio
 
 - *Type:* <a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPrivateAccessDenyRulesDestinationAppsRuntime">DataDatabricksAccountNetworkPolicyIngressPrivateAccessDenyRulesDestinationAppsRuntime</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#apps_runtime DataDatabricksAccountNetworkPolicy#apps_runtime}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#apps_runtime DataDatabricksAccountNetworkPolicy#apps_runtime}.
 
 ---
 
@@ -7692,7 +7818,7 @@ public DataDatabricksAccountNetworkPolicyIngressPrivateAccessDenyRulesDestinatio
 
 - *Type:* <a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPrivateAccessDenyRulesDestinationLakebaseRuntime">DataDatabricksAccountNetworkPolicyIngressPrivateAccessDenyRulesDestinationLakebaseRuntime</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#lakebase_runtime DataDatabricksAccountNetworkPolicy#lakebase_runtime}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#lakebase_runtime DataDatabricksAccountNetworkPolicy#lakebase_runtime}.
 
 ---
 
@@ -7704,7 +7830,7 @@ public DataDatabricksAccountNetworkPolicyIngressPrivateAccessDenyRulesDestinatio
 
 - *Type:* <a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPrivateAccessDenyRulesDestinationWorkspaceApi">DataDatabricksAccountNetworkPolicyIngressPrivateAccessDenyRulesDestinationWorkspaceApi</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#workspace_api DataDatabricksAccountNetworkPolicy#workspace_api}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#workspace_api DataDatabricksAccountNetworkPolicy#workspace_api}.
 
 ---
 
@@ -7716,7 +7842,7 @@ public DataDatabricksAccountNetworkPolicyIngressPrivateAccessDenyRulesDestinatio
 
 - *Type:* <a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPrivateAccessDenyRulesDestinationWorkspaceUi">DataDatabricksAccountNetworkPolicyIngressPrivateAccessDenyRulesDestinationWorkspaceUi</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#workspace_ui DataDatabricksAccountNetworkPolicy#workspace_ui}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#workspace_ui DataDatabricksAccountNetworkPolicy#workspace_ui}.
 
 ---
 
@@ -7737,8 +7863,8 @@ DataDatabricksAccountNetworkPolicyIngressPrivateAccessDenyRulesDestinationAccoun
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPrivateAccessDenyRulesDestinationAccountApi.property.scopeQualifier">scopeQualifier</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#scope_qualifier DataDatabricksAccountNetworkPolicy#scope_qualifier}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPrivateAccessDenyRulesDestinationAccountApi.property.scopes">scopes</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#scopes DataDatabricksAccountNetworkPolicy#scopes}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPrivateAccessDenyRulesDestinationAccountApi.property.scopeQualifier">scopeQualifier</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#scope_qualifier DataDatabricksAccountNetworkPolicy#scope_qualifier}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPrivateAccessDenyRulesDestinationAccountApi.property.scopes">scopes</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#scopes DataDatabricksAccountNetworkPolicy#scopes}. |
 
 ---
 
@@ -7750,7 +7876,7 @@ public java.lang.String getScopeQualifier();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#scope_qualifier DataDatabricksAccountNetworkPolicy#scope_qualifier}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#scope_qualifier DataDatabricksAccountNetworkPolicy#scope_qualifier}.
 
 ---
 
@@ -7762,7 +7888,7 @@ public java.util.List<java.lang.String> getScopes();
 
 - *Type:* java.util.List<java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#scopes DataDatabricksAccountNetworkPolicy#scopes}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#scopes DataDatabricksAccountNetworkPolicy#scopes}.
 
 ---
 
@@ -7782,7 +7908,7 @@ DataDatabricksAccountNetworkPolicyIngressPrivateAccessDenyRulesDestinationAccoun
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPrivateAccessDenyRulesDestinationAccountDatabricksOne.property.allDestinations">allDestinations</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#all_destinations DataDatabricksAccountNetworkPolicy#all_destinations}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPrivateAccessDenyRulesDestinationAccountDatabricksOne.property.allDestinations">allDestinations</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#all_destinations DataDatabricksAccountNetworkPolicy#all_destinations}. |
 
 ---
 
@@ -7794,7 +7920,7 @@ public java.lang.Boolean|IResolvable getAllDestinations();
 
 - *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#all_destinations DataDatabricksAccountNetworkPolicy#all_destinations}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#all_destinations DataDatabricksAccountNetworkPolicy#all_destinations}.
 
 ---
 
@@ -7814,7 +7940,7 @@ DataDatabricksAccountNetworkPolicyIngressPrivateAccessDenyRulesDestinationAccoun
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPrivateAccessDenyRulesDestinationAccountUi.property.allDestinations">allDestinations</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#all_destinations DataDatabricksAccountNetworkPolicy#all_destinations}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPrivateAccessDenyRulesDestinationAccountUi.property.allDestinations">allDestinations</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#all_destinations DataDatabricksAccountNetworkPolicy#all_destinations}. |
 
 ---
 
@@ -7826,7 +7952,7 @@ public java.lang.Boolean|IResolvable getAllDestinations();
 
 - *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#all_destinations DataDatabricksAccountNetworkPolicy#all_destinations}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#all_destinations DataDatabricksAccountNetworkPolicy#all_destinations}.
 
 ---
 
@@ -7846,7 +7972,7 @@ DataDatabricksAccountNetworkPolicyIngressPrivateAccessDenyRulesDestinationAppsRu
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPrivateAccessDenyRulesDestinationAppsRuntime.property.allDestinations">allDestinations</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#all_destinations DataDatabricksAccountNetworkPolicy#all_destinations}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPrivateAccessDenyRulesDestinationAppsRuntime.property.allDestinations">allDestinations</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#all_destinations DataDatabricksAccountNetworkPolicy#all_destinations}. |
 
 ---
 
@@ -7858,7 +7984,7 @@ public java.lang.Boolean|IResolvable getAllDestinations();
 
 - *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#all_destinations DataDatabricksAccountNetworkPolicy#all_destinations}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#all_destinations DataDatabricksAccountNetworkPolicy#all_destinations}.
 
 ---
 
@@ -7878,7 +8004,7 @@ DataDatabricksAccountNetworkPolicyIngressPrivateAccessDenyRulesDestinationLakeba
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPrivateAccessDenyRulesDestinationLakebaseRuntime.property.allDestinations">allDestinations</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#all_destinations DataDatabricksAccountNetworkPolicy#all_destinations}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPrivateAccessDenyRulesDestinationLakebaseRuntime.property.allDestinations">allDestinations</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#all_destinations DataDatabricksAccountNetworkPolicy#all_destinations}. |
 
 ---
 
@@ -7890,7 +8016,7 @@ public java.lang.Boolean|IResolvable getAllDestinations();
 
 - *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#all_destinations DataDatabricksAccountNetworkPolicy#all_destinations}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#all_destinations DataDatabricksAccountNetworkPolicy#all_destinations}.
 
 ---
 
@@ -7902,6 +8028,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 import io.cdktn.providers.databricks.data_databricks_account_network_policy.DataDatabricksAccountNetworkPolicyIngressPrivateAccessDenyRulesDestinationWorkspaceApi;
 
 DataDatabricksAccountNetworkPolicyIngressPrivateAccessDenyRulesDestinationWorkspaceApi.builder()
+//  .excludedScopes(java.util.List<java.lang.String>)
 //  .scopeQualifier(java.lang.String)
 //  .scopes(java.util.List<java.lang.String>)
     .build();
@@ -7911,8 +8038,21 @@ DataDatabricksAccountNetworkPolicyIngressPrivateAccessDenyRulesDestinationWorksp
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPrivateAccessDenyRulesDestinationWorkspaceApi.property.scopeQualifier">scopeQualifier</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#scope_qualifier DataDatabricksAccountNetworkPolicy#scope_qualifier}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPrivateAccessDenyRulesDestinationWorkspaceApi.property.scopes">scopes</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#scopes DataDatabricksAccountNetworkPolicy#scopes}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPrivateAccessDenyRulesDestinationWorkspaceApi.property.excludedScopes">excludedScopes</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#excluded_scopes DataDatabricksAccountNetworkPolicy#excluded_scopes}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPrivateAccessDenyRulesDestinationWorkspaceApi.property.scopeQualifier">scopeQualifier</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#scope_qualifier DataDatabricksAccountNetworkPolicy#scope_qualifier}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPrivateAccessDenyRulesDestinationWorkspaceApi.property.scopes">scopes</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#scopes DataDatabricksAccountNetworkPolicy#scopes}. |
+
+---
+
+##### `excludedScopes`<sup>Optional</sup> <a name="excludedScopes" id="@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPrivateAccessDenyRulesDestinationWorkspaceApi.property.excludedScopes"></a>
+
+```java
+public java.util.List<java.lang.String> getExcludedScopes();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#excluded_scopes DataDatabricksAccountNetworkPolicy#excluded_scopes}.
 
 ---
 
@@ -7924,7 +8064,7 @@ public java.lang.String getScopeQualifier();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#scope_qualifier DataDatabricksAccountNetworkPolicy#scope_qualifier}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#scope_qualifier DataDatabricksAccountNetworkPolicy#scope_qualifier}.
 
 ---
 
@@ -7936,7 +8076,7 @@ public java.util.List<java.lang.String> getScopes();
 
 - *Type:* java.util.List<java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#scopes DataDatabricksAccountNetworkPolicy#scopes}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#scopes DataDatabricksAccountNetworkPolicy#scopes}.
 
 ---
 
@@ -7956,7 +8096,7 @@ DataDatabricksAccountNetworkPolicyIngressPrivateAccessDenyRulesDestinationWorksp
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPrivateAccessDenyRulesDestinationWorkspaceUi.property.allDestinations">allDestinations</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#all_destinations DataDatabricksAccountNetworkPolicy#all_destinations}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPrivateAccessDenyRulesDestinationWorkspaceUi.property.allDestinations">allDestinations</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#all_destinations DataDatabricksAccountNetworkPolicy#all_destinations}. |
 
 ---
 
@@ -7968,7 +8108,7 @@ public java.lang.Boolean|IResolvable getAllDestinations();
 
 - *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#all_destinations DataDatabricksAccountNetworkPolicy#all_destinations}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#all_destinations DataDatabricksAccountNetworkPolicy#all_destinations}.
 
 ---
 
@@ -7991,10 +8131,10 @@ DataDatabricksAccountNetworkPolicyIngressPrivateAccessDenyRulesOrigin.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPrivateAccessDenyRulesOrigin.property.allPrivateAccess">allPrivateAccess</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#all_private_access DataDatabricksAccountNetworkPolicy#all_private_access}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPrivateAccessDenyRulesOrigin.property.allRegisteredEndpoints">allRegisteredEndpoints</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#all_registered_endpoints DataDatabricksAccountNetworkPolicy#all_registered_endpoints}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPrivateAccessDenyRulesOrigin.property.azureWorkspacePrivateLink">azureWorkspacePrivateLink</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#azure_workspace_private_link DataDatabricksAccountNetworkPolicy#azure_workspace_private_link}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPrivateAccessDenyRulesOrigin.property.endpoints">endpoints</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPrivateAccessDenyRulesOriginEndpoints">DataDatabricksAccountNetworkPolicyIngressPrivateAccessDenyRulesOriginEndpoints</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#endpoints DataDatabricksAccountNetworkPolicy#endpoints}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPrivateAccessDenyRulesOrigin.property.allPrivateAccess">allPrivateAccess</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#all_private_access DataDatabricksAccountNetworkPolicy#all_private_access}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPrivateAccessDenyRulesOrigin.property.allRegisteredEndpoints">allRegisteredEndpoints</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#all_registered_endpoints DataDatabricksAccountNetworkPolicy#all_registered_endpoints}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPrivateAccessDenyRulesOrigin.property.azureWorkspacePrivateLink">azureWorkspacePrivateLink</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#azure_workspace_private_link DataDatabricksAccountNetworkPolicy#azure_workspace_private_link}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPrivateAccessDenyRulesOrigin.property.endpoints">endpoints</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPrivateAccessDenyRulesOriginEndpoints">DataDatabricksAccountNetworkPolicyIngressPrivateAccessDenyRulesOriginEndpoints</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#endpoints DataDatabricksAccountNetworkPolicy#endpoints}. |
 
 ---
 
@@ -8006,7 +8146,7 @@ public java.lang.Boolean|IResolvable getAllPrivateAccess();
 
 - *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#all_private_access DataDatabricksAccountNetworkPolicy#all_private_access}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#all_private_access DataDatabricksAccountNetworkPolicy#all_private_access}.
 
 ---
 
@@ -8018,7 +8158,7 @@ public java.lang.Boolean|IResolvable getAllRegisteredEndpoints();
 
 - *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#all_registered_endpoints DataDatabricksAccountNetworkPolicy#all_registered_endpoints}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#all_registered_endpoints DataDatabricksAccountNetworkPolicy#all_registered_endpoints}.
 
 ---
 
@@ -8030,7 +8170,7 @@ public java.lang.Boolean|IResolvable getAzureWorkspacePrivateLink();
 
 - *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#azure_workspace_private_link DataDatabricksAccountNetworkPolicy#azure_workspace_private_link}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#azure_workspace_private_link DataDatabricksAccountNetworkPolicy#azure_workspace_private_link}.
 
 ---
 
@@ -8042,7 +8182,7 @@ public DataDatabricksAccountNetworkPolicyIngressPrivateAccessDenyRulesOriginEndp
 
 - *Type:* <a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPrivateAccessDenyRulesOriginEndpoints">DataDatabricksAccountNetworkPolicyIngressPrivateAccessDenyRulesOriginEndpoints</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#endpoints DataDatabricksAccountNetworkPolicy#endpoints}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#endpoints DataDatabricksAccountNetworkPolicy#endpoints}.
 
 ---
 
@@ -8062,7 +8202,7 @@ DataDatabricksAccountNetworkPolicyIngressPrivateAccessDenyRulesOriginEndpoints.b
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPrivateAccessDenyRulesOriginEndpoints.property.endpointIds">endpointIds</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#endpoint_ids DataDatabricksAccountNetworkPolicy#endpoint_ids}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPrivateAccessDenyRulesOriginEndpoints.property.endpointIds">endpointIds</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#endpoint_ids DataDatabricksAccountNetworkPolicy#endpoint_ids}. |
 
 ---
 
@@ -8074,7 +8214,7 @@ public java.util.List<java.lang.String> getEndpointIds();
 
 - *Type:* java.util.List<java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#endpoint_ids DataDatabricksAccountNetworkPolicy#endpoint_ids}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#endpoint_ids DataDatabricksAccountNetworkPolicy#endpoint_ids}.
 
 ---
 
@@ -8096,9 +8236,9 @@ DataDatabricksAccountNetworkPolicyIngressPublicAccess.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPublicAccess.property.restrictionMode">restrictionMode</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#restriction_mode DataDatabricksAccountNetworkPolicy#restriction_mode}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPublicAccess.property.allowRules">allowRules</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPublicAccessAllowRules">DataDatabricksAccountNetworkPolicyIngressPublicAccessAllowRules</a>></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#allow_rules DataDatabricksAccountNetworkPolicy#allow_rules}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPublicAccess.property.denyRules">denyRules</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPublicAccessDenyRules">DataDatabricksAccountNetworkPolicyIngressPublicAccessDenyRules</a>></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#deny_rules DataDatabricksAccountNetworkPolicy#deny_rules}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPublicAccess.property.restrictionMode">restrictionMode</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#restriction_mode DataDatabricksAccountNetworkPolicy#restriction_mode}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPublicAccess.property.allowRules">allowRules</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPublicAccessAllowRules">DataDatabricksAccountNetworkPolicyIngressPublicAccessAllowRules</a>></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#allow_rules DataDatabricksAccountNetworkPolicy#allow_rules}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPublicAccess.property.denyRules">denyRules</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPublicAccessDenyRules">DataDatabricksAccountNetworkPolicyIngressPublicAccessDenyRules</a>></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#deny_rules DataDatabricksAccountNetworkPolicy#deny_rules}. |
 
 ---
 
@@ -8110,7 +8250,7 @@ public java.lang.String getRestrictionMode();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#restriction_mode DataDatabricksAccountNetworkPolicy#restriction_mode}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#restriction_mode DataDatabricksAccountNetworkPolicy#restriction_mode}.
 
 ---
 
@@ -8122,7 +8262,7 @@ public IResolvable|java.util.List<DataDatabricksAccountNetworkPolicyIngressPubli
 
 - *Type:* io.cdktn.cdktn.IResolvable|java.util.List<<a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPublicAccessAllowRules">DataDatabricksAccountNetworkPolicyIngressPublicAccessAllowRules</a>>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#allow_rules DataDatabricksAccountNetworkPolicy#allow_rules}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#allow_rules DataDatabricksAccountNetworkPolicy#allow_rules}.
 
 ---
 
@@ -8134,7 +8274,7 @@ public IResolvable|java.util.List<DataDatabricksAccountNetworkPolicyIngressPubli
 
 - *Type:* io.cdktn.cdktn.IResolvable|java.util.List<<a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPublicAccessDenyRules">DataDatabricksAccountNetworkPolicyIngressPublicAccessDenyRules</a>>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#deny_rules DataDatabricksAccountNetworkPolicy#deny_rules}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#deny_rules DataDatabricksAccountNetworkPolicy#deny_rules}.
 
 ---
 
@@ -8157,10 +8297,10 @@ DataDatabricksAccountNetworkPolicyIngressPublicAccessAllowRules.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPublicAccessAllowRules.property.authentication">authentication</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPublicAccessAllowRulesAuthentication">DataDatabricksAccountNetworkPolicyIngressPublicAccessAllowRulesAuthentication</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#authentication DataDatabricksAccountNetworkPolicy#authentication}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPublicAccessAllowRules.property.destination">destination</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPublicAccessAllowRulesDestination">DataDatabricksAccountNetworkPolicyIngressPublicAccessAllowRulesDestination</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#destination DataDatabricksAccountNetworkPolicy#destination}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPublicAccessAllowRules.property.label">label</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#label DataDatabricksAccountNetworkPolicy#label}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPublicAccessAllowRules.property.origin">origin</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPublicAccessAllowRulesOrigin">DataDatabricksAccountNetworkPolicyIngressPublicAccessAllowRulesOrigin</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#origin DataDatabricksAccountNetworkPolicy#origin}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPublicAccessAllowRules.property.authentication">authentication</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPublicAccessAllowRulesAuthentication">DataDatabricksAccountNetworkPolicyIngressPublicAccessAllowRulesAuthentication</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#authentication DataDatabricksAccountNetworkPolicy#authentication}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPublicAccessAllowRules.property.destination">destination</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPublicAccessAllowRulesDestination">DataDatabricksAccountNetworkPolicyIngressPublicAccessAllowRulesDestination</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#destination DataDatabricksAccountNetworkPolicy#destination}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPublicAccessAllowRules.property.label">label</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#label DataDatabricksAccountNetworkPolicy#label}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPublicAccessAllowRules.property.origin">origin</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPublicAccessAllowRulesOrigin">DataDatabricksAccountNetworkPolicyIngressPublicAccessAllowRulesOrigin</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#origin DataDatabricksAccountNetworkPolicy#origin}. |
 
 ---
 
@@ -8172,7 +8312,7 @@ public DataDatabricksAccountNetworkPolicyIngressPublicAccessAllowRulesAuthentica
 
 - *Type:* <a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPublicAccessAllowRulesAuthentication">DataDatabricksAccountNetworkPolicyIngressPublicAccessAllowRulesAuthentication</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#authentication DataDatabricksAccountNetworkPolicy#authentication}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#authentication DataDatabricksAccountNetworkPolicy#authentication}.
 
 ---
 
@@ -8184,7 +8324,7 @@ public DataDatabricksAccountNetworkPolicyIngressPublicAccessAllowRulesDestinatio
 
 - *Type:* <a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPublicAccessAllowRulesDestination">DataDatabricksAccountNetworkPolicyIngressPublicAccessAllowRulesDestination</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#destination DataDatabricksAccountNetworkPolicy#destination}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#destination DataDatabricksAccountNetworkPolicy#destination}.
 
 ---
 
@@ -8196,7 +8336,7 @@ public java.lang.String getLabel();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#label DataDatabricksAccountNetworkPolicy#label}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#label DataDatabricksAccountNetworkPolicy#label}.
 
 ---
 
@@ -8208,7 +8348,7 @@ public DataDatabricksAccountNetworkPolicyIngressPublicAccessAllowRulesOrigin get
 
 - *Type:* <a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPublicAccessAllowRulesOrigin">DataDatabricksAccountNetworkPolicyIngressPublicAccessAllowRulesOrigin</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#origin DataDatabricksAccountNetworkPolicy#origin}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#origin DataDatabricksAccountNetworkPolicy#origin}.
 
 ---
 
@@ -8229,8 +8369,8 @@ DataDatabricksAccountNetworkPolicyIngressPublicAccessAllowRulesAuthentication.bu
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPublicAccessAllowRulesAuthentication.property.identities">identities</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPublicAccessAllowRulesAuthenticationIdentities">DataDatabricksAccountNetworkPolicyIngressPublicAccessAllowRulesAuthenticationIdentities</a>></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#identities DataDatabricksAccountNetworkPolicy#identities}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPublicAccessAllowRulesAuthentication.property.identityType">identityType</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#identity_type DataDatabricksAccountNetworkPolicy#identity_type}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPublicAccessAllowRulesAuthentication.property.identities">identities</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPublicAccessAllowRulesAuthenticationIdentities">DataDatabricksAccountNetworkPolicyIngressPublicAccessAllowRulesAuthenticationIdentities</a>></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#identities DataDatabricksAccountNetworkPolicy#identities}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPublicAccessAllowRulesAuthentication.property.identityType">identityType</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#identity_type DataDatabricksAccountNetworkPolicy#identity_type}. |
 
 ---
 
@@ -8242,7 +8382,7 @@ public IResolvable|java.util.List<DataDatabricksAccountNetworkPolicyIngressPubli
 
 - *Type:* io.cdktn.cdktn.IResolvable|java.util.List<<a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPublicAccessAllowRulesAuthenticationIdentities">DataDatabricksAccountNetworkPolicyIngressPublicAccessAllowRulesAuthenticationIdentities</a>>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#identities DataDatabricksAccountNetworkPolicy#identities}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#identities DataDatabricksAccountNetworkPolicy#identities}.
 
 ---
 
@@ -8254,7 +8394,7 @@ public java.lang.String getIdentityType();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#identity_type DataDatabricksAccountNetworkPolicy#identity_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#identity_type DataDatabricksAccountNetworkPolicy#identity_type}.
 
 ---
 
@@ -8275,8 +8415,8 @@ DataDatabricksAccountNetworkPolicyIngressPublicAccessAllowRulesAuthenticationIde
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPublicAccessAllowRulesAuthenticationIdentities.property.principalId">principalId</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#principal_id DataDatabricksAccountNetworkPolicy#principal_id}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPublicAccessAllowRulesAuthenticationIdentities.property.principalType">principalType</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#principal_type DataDatabricksAccountNetworkPolicy#principal_type}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPublicAccessAllowRulesAuthenticationIdentities.property.principalId">principalId</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#principal_id DataDatabricksAccountNetworkPolicy#principal_id}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPublicAccessAllowRulesAuthenticationIdentities.property.principalType">principalType</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#principal_type DataDatabricksAccountNetworkPolicy#principal_type}. |
 
 ---
 
@@ -8288,7 +8428,7 @@ public java.lang.Number getPrincipalId();
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#principal_id DataDatabricksAccountNetworkPolicy#principal_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#principal_id DataDatabricksAccountNetworkPolicy#principal_id}.
 
 ---
 
@@ -8300,7 +8440,7 @@ public java.lang.String getPrincipalType();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#principal_type DataDatabricksAccountNetworkPolicy#principal_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#principal_type DataDatabricksAccountNetworkPolicy#principal_type}.
 
 ---
 
@@ -8327,14 +8467,14 @@ DataDatabricksAccountNetworkPolicyIngressPublicAccessAllowRulesDestination.build
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPublicAccessAllowRulesDestination.property.accountApi">accountApi</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPublicAccessAllowRulesDestinationAccountApi">DataDatabricksAccountNetworkPolicyIngressPublicAccessAllowRulesDestinationAccountApi</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#account_api DataDatabricksAccountNetworkPolicy#account_api}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPublicAccessAllowRulesDestination.property.accountDatabricksOne">accountDatabricksOne</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPublicAccessAllowRulesDestinationAccountDatabricksOne">DataDatabricksAccountNetworkPolicyIngressPublicAccessAllowRulesDestinationAccountDatabricksOne</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#account_databricks_one DataDatabricksAccountNetworkPolicy#account_databricks_one}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPublicAccessAllowRulesDestination.property.accountUi">accountUi</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPublicAccessAllowRulesDestinationAccountUi">DataDatabricksAccountNetworkPolicyIngressPublicAccessAllowRulesDestinationAccountUi</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#account_ui DataDatabricksAccountNetworkPolicy#account_ui}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPublicAccessAllowRulesDestination.property.allDestinations">allDestinations</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#all_destinations DataDatabricksAccountNetworkPolicy#all_destinations}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPublicAccessAllowRulesDestination.property.appsRuntime">appsRuntime</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPublicAccessAllowRulesDestinationAppsRuntime">DataDatabricksAccountNetworkPolicyIngressPublicAccessAllowRulesDestinationAppsRuntime</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#apps_runtime DataDatabricksAccountNetworkPolicy#apps_runtime}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPublicAccessAllowRulesDestination.property.lakebaseRuntime">lakebaseRuntime</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPublicAccessAllowRulesDestinationLakebaseRuntime">DataDatabricksAccountNetworkPolicyIngressPublicAccessAllowRulesDestinationLakebaseRuntime</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#lakebase_runtime DataDatabricksAccountNetworkPolicy#lakebase_runtime}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPublicAccessAllowRulesDestination.property.workspaceApi">workspaceApi</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPublicAccessAllowRulesDestinationWorkspaceApi">DataDatabricksAccountNetworkPolicyIngressPublicAccessAllowRulesDestinationWorkspaceApi</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#workspace_api DataDatabricksAccountNetworkPolicy#workspace_api}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPublicAccessAllowRulesDestination.property.workspaceUi">workspaceUi</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPublicAccessAllowRulesDestinationWorkspaceUi">DataDatabricksAccountNetworkPolicyIngressPublicAccessAllowRulesDestinationWorkspaceUi</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#workspace_ui DataDatabricksAccountNetworkPolicy#workspace_ui}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPublicAccessAllowRulesDestination.property.accountApi">accountApi</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPublicAccessAllowRulesDestinationAccountApi">DataDatabricksAccountNetworkPolicyIngressPublicAccessAllowRulesDestinationAccountApi</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#account_api DataDatabricksAccountNetworkPolicy#account_api}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPublicAccessAllowRulesDestination.property.accountDatabricksOne">accountDatabricksOne</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPublicAccessAllowRulesDestinationAccountDatabricksOne">DataDatabricksAccountNetworkPolicyIngressPublicAccessAllowRulesDestinationAccountDatabricksOne</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#account_databricks_one DataDatabricksAccountNetworkPolicy#account_databricks_one}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPublicAccessAllowRulesDestination.property.accountUi">accountUi</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPublicAccessAllowRulesDestinationAccountUi">DataDatabricksAccountNetworkPolicyIngressPublicAccessAllowRulesDestinationAccountUi</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#account_ui DataDatabricksAccountNetworkPolicy#account_ui}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPublicAccessAllowRulesDestination.property.allDestinations">allDestinations</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#all_destinations DataDatabricksAccountNetworkPolicy#all_destinations}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPublicAccessAllowRulesDestination.property.appsRuntime">appsRuntime</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPublicAccessAllowRulesDestinationAppsRuntime">DataDatabricksAccountNetworkPolicyIngressPublicAccessAllowRulesDestinationAppsRuntime</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#apps_runtime DataDatabricksAccountNetworkPolicy#apps_runtime}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPublicAccessAllowRulesDestination.property.lakebaseRuntime">lakebaseRuntime</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPublicAccessAllowRulesDestinationLakebaseRuntime">DataDatabricksAccountNetworkPolicyIngressPublicAccessAllowRulesDestinationLakebaseRuntime</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#lakebase_runtime DataDatabricksAccountNetworkPolicy#lakebase_runtime}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPublicAccessAllowRulesDestination.property.workspaceApi">workspaceApi</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPublicAccessAllowRulesDestinationWorkspaceApi">DataDatabricksAccountNetworkPolicyIngressPublicAccessAllowRulesDestinationWorkspaceApi</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#workspace_api DataDatabricksAccountNetworkPolicy#workspace_api}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPublicAccessAllowRulesDestination.property.workspaceUi">workspaceUi</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPublicAccessAllowRulesDestinationWorkspaceUi">DataDatabricksAccountNetworkPolicyIngressPublicAccessAllowRulesDestinationWorkspaceUi</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#workspace_ui DataDatabricksAccountNetworkPolicy#workspace_ui}. |
 
 ---
 
@@ -8346,7 +8486,7 @@ public DataDatabricksAccountNetworkPolicyIngressPublicAccessAllowRulesDestinatio
 
 - *Type:* <a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPublicAccessAllowRulesDestinationAccountApi">DataDatabricksAccountNetworkPolicyIngressPublicAccessAllowRulesDestinationAccountApi</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#account_api DataDatabricksAccountNetworkPolicy#account_api}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#account_api DataDatabricksAccountNetworkPolicy#account_api}.
 
 ---
 
@@ -8358,7 +8498,7 @@ public DataDatabricksAccountNetworkPolicyIngressPublicAccessAllowRulesDestinatio
 
 - *Type:* <a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPublicAccessAllowRulesDestinationAccountDatabricksOne">DataDatabricksAccountNetworkPolicyIngressPublicAccessAllowRulesDestinationAccountDatabricksOne</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#account_databricks_one DataDatabricksAccountNetworkPolicy#account_databricks_one}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#account_databricks_one DataDatabricksAccountNetworkPolicy#account_databricks_one}.
 
 ---
 
@@ -8370,7 +8510,7 @@ public DataDatabricksAccountNetworkPolicyIngressPublicAccessAllowRulesDestinatio
 
 - *Type:* <a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPublicAccessAllowRulesDestinationAccountUi">DataDatabricksAccountNetworkPolicyIngressPublicAccessAllowRulesDestinationAccountUi</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#account_ui DataDatabricksAccountNetworkPolicy#account_ui}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#account_ui DataDatabricksAccountNetworkPolicy#account_ui}.
 
 ---
 
@@ -8382,7 +8522,7 @@ public java.lang.Boolean|IResolvable getAllDestinations();
 
 - *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#all_destinations DataDatabricksAccountNetworkPolicy#all_destinations}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#all_destinations DataDatabricksAccountNetworkPolicy#all_destinations}.
 
 ---
 
@@ -8394,7 +8534,7 @@ public DataDatabricksAccountNetworkPolicyIngressPublicAccessAllowRulesDestinatio
 
 - *Type:* <a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPublicAccessAllowRulesDestinationAppsRuntime">DataDatabricksAccountNetworkPolicyIngressPublicAccessAllowRulesDestinationAppsRuntime</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#apps_runtime DataDatabricksAccountNetworkPolicy#apps_runtime}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#apps_runtime DataDatabricksAccountNetworkPolicy#apps_runtime}.
 
 ---
 
@@ -8406,7 +8546,7 @@ public DataDatabricksAccountNetworkPolicyIngressPublicAccessAllowRulesDestinatio
 
 - *Type:* <a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPublicAccessAllowRulesDestinationLakebaseRuntime">DataDatabricksAccountNetworkPolicyIngressPublicAccessAllowRulesDestinationLakebaseRuntime</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#lakebase_runtime DataDatabricksAccountNetworkPolicy#lakebase_runtime}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#lakebase_runtime DataDatabricksAccountNetworkPolicy#lakebase_runtime}.
 
 ---
 
@@ -8418,7 +8558,7 @@ public DataDatabricksAccountNetworkPolicyIngressPublicAccessAllowRulesDestinatio
 
 - *Type:* <a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPublicAccessAllowRulesDestinationWorkspaceApi">DataDatabricksAccountNetworkPolicyIngressPublicAccessAllowRulesDestinationWorkspaceApi</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#workspace_api DataDatabricksAccountNetworkPolicy#workspace_api}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#workspace_api DataDatabricksAccountNetworkPolicy#workspace_api}.
 
 ---
 
@@ -8430,7 +8570,7 @@ public DataDatabricksAccountNetworkPolicyIngressPublicAccessAllowRulesDestinatio
 
 - *Type:* <a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPublicAccessAllowRulesDestinationWorkspaceUi">DataDatabricksAccountNetworkPolicyIngressPublicAccessAllowRulesDestinationWorkspaceUi</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#workspace_ui DataDatabricksAccountNetworkPolicy#workspace_ui}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#workspace_ui DataDatabricksAccountNetworkPolicy#workspace_ui}.
 
 ---
 
@@ -8451,8 +8591,8 @@ DataDatabricksAccountNetworkPolicyIngressPublicAccessAllowRulesDestinationAccoun
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPublicAccessAllowRulesDestinationAccountApi.property.scopeQualifier">scopeQualifier</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#scope_qualifier DataDatabricksAccountNetworkPolicy#scope_qualifier}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPublicAccessAllowRulesDestinationAccountApi.property.scopes">scopes</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#scopes DataDatabricksAccountNetworkPolicy#scopes}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPublicAccessAllowRulesDestinationAccountApi.property.scopeQualifier">scopeQualifier</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#scope_qualifier DataDatabricksAccountNetworkPolicy#scope_qualifier}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPublicAccessAllowRulesDestinationAccountApi.property.scopes">scopes</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#scopes DataDatabricksAccountNetworkPolicy#scopes}. |
 
 ---
 
@@ -8464,7 +8604,7 @@ public java.lang.String getScopeQualifier();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#scope_qualifier DataDatabricksAccountNetworkPolicy#scope_qualifier}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#scope_qualifier DataDatabricksAccountNetworkPolicy#scope_qualifier}.
 
 ---
 
@@ -8476,7 +8616,7 @@ public java.util.List<java.lang.String> getScopes();
 
 - *Type:* java.util.List<java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#scopes DataDatabricksAccountNetworkPolicy#scopes}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#scopes DataDatabricksAccountNetworkPolicy#scopes}.
 
 ---
 
@@ -8496,7 +8636,7 @@ DataDatabricksAccountNetworkPolicyIngressPublicAccessAllowRulesDestinationAccoun
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPublicAccessAllowRulesDestinationAccountDatabricksOne.property.allDestinations">allDestinations</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#all_destinations DataDatabricksAccountNetworkPolicy#all_destinations}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPublicAccessAllowRulesDestinationAccountDatabricksOne.property.allDestinations">allDestinations</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#all_destinations DataDatabricksAccountNetworkPolicy#all_destinations}. |
 
 ---
 
@@ -8508,7 +8648,7 @@ public java.lang.Boolean|IResolvable getAllDestinations();
 
 - *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#all_destinations DataDatabricksAccountNetworkPolicy#all_destinations}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#all_destinations DataDatabricksAccountNetworkPolicy#all_destinations}.
 
 ---
 
@@ -8528,7 +8668,7 @@ DataDatabricksAccountNetworkPolicyIngressPublicAccessAllowRulesDestinationAccoun
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPublicAccessAllowRulesDestinationAccountUi.property.allDestinations">allDestinations</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#all_destinations DataDatabricksAccountNetworkPolicy#all_destinations}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPublicAccessAllowRulesDestinationAccountUi.property.allDestinations">allDestinations</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#all_destinations DataDatabricksAccountNetworkPolicy#all_destinations}. |
 
 ---
 
@@ -8540,7 +8680,7 @@ public java.lang.Boolean|IResolvable getAllDestinations();
 
 - *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#all_destinations DataDatabricksAccountNetworkPolicy#all_destinations}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#all_destinations DataDatabricksAccountNetworkPolicy#all_destinations}.
 
 ---
 
@@ -8560,7 +8700,7 @@ DataDatabricksAccountNetworkPolicyIngressPublicAccessAllowRulesDestinationAppsRu
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPublicAccessAllowRulesDestinationAppsRuntime.property.allDestinations">allDestinations</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#all_destinations DataDatabricksAccountNetworkPolicy#all_destinations}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPublicAccessAllowRulesDestinationAppsRuntime.property.allDestinations">allDestinations</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#all_destinations DataDatabricksAccountNetworkPolicy#all_destinations}. |
 
 ---
 
@@ -8572,7 +8712,7 @@ public java.lang.Boolean|IResolvable getAllDestinations();
 
 - *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#all_destinations DataDatabricksAccountNetworkPolicy#all_destinations}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#all_destinations DataDatabricksAccountNetworkPolicy#all_destinations}.
 
 ---
 
@@ -8592,7 +8732,7 @@ DataDatabricksAccountNetworkPolicyIngressPublicAccessAllowRulesDestinationLakeba
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPublicAccessAllowRulesDestinationLakebaseRuntime.property.allDestinations">allDestinations</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#all_destinations DataDatabricksAccountNetworkPolicy#all_destinations}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPublicAccessAllowRulesDestinationLakebaseRuntime.property.allDestinations">allDestinations</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#all_destinations DataDatabricksAccountNetworkPolicy#all_destinations}. |
 
 ---
 
@@ -8604,7 +8744,7 @@ public java.lang.Boolean|IResolvable getAllDestinations();
 
 - *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#all_destinations DataDatabricksAccountNetworkPolicy#all_destinations}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#all_destinations DataDatabricksAccountNetworkPolicy#all_destinations}.
 
 ---
 
@@ -8616,6 +8756,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 import io.cdktn.providers.databricks.data_databricks_account_network_policy.DataDatabricksAccountNetworkPolicyIngressPublicAccessAllowRulesDestinationWorkspaceApi;
 
 DataDatabricksAccountNetworkPolicyIngressPublicAccessAllowRulesDestinationWorkspaceApi.builder()
+//  .excludedScopes(java.util.List<java.lang.String>)
 //  .scopeQualifier(java.lang.String)
 //  .scopes(java.util.List<java.lang.String>)
     .build();
@@ -8625,8 +8766,21 @@ DataDatabricksAccountNetworkPolicyIngressPublicAccessAllowRulesDestinationWorksp
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPublicAccessAllowRulesDestinationWorkspaceApi.property.scopeQualifier">scopeQualifier</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#scope_qualifier DataDatabricksAccountNetworkPolicy#scope_qualifier}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPublicAccessAllowRulesDestinationWorkspaceApi.property.scopes">scopes</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#scopes DataDatabricksAccountNetworkPolicy#scopes}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPublicAccessAllowRulesDestinationWorkspaceApi.property.excludedScopes">excludedScopes</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#excluded_scopes DataDatabricksAccountNetworkPolicy#excluded_scopes}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPublicAccessAllowRulesDestinationWorkspaceApi.property.scopeQualifier">scopeQualifier</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#scope_qualifier DataDatabricksAccountNetworkPolicy#scope_qualifier}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPublicAccessAllowRulesDestinationWorkspaceApi.property.scopes">scopes</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#scopes DataDatabricksAccountNetworkPolicy#scopes}. |
+
+---
+
+##### `excludedScopes`<sup>Optional</sup> <a name="excludedScopes" id="@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPublicAccessAllowRulesDestinationWorkspaceApi.property.excludedScopes"></a>
+
+```java
+public java.util.List<java.lang.String> getExcludedScopes();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#excluded_scopes DataDatabricksAccountNetworkPolicy#excluded_scopes}.
 
 ---
 
@@ -8638,7 +8792,7 @@ public java.lang.String getScopeQualifier();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#scope_qualifier DataDatabricksAccountNetworkPolicy#scope_qualifier}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#scope_qualifier DataDatabricksAccountNetworkPolicy#scope_qualifier}.
 
 ---
 
@@ -8650,7 +8804,7 @@ public java.util.List<java.lang.String> getScopes();
 
 - *Type:* java.util.List<java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#scopes DataDatabricksAccountNetworkPolicy#scopes}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#scopes DataDatabricksAccountNetworkPolicy#scopes}.
 
 ---
 
@@ -8670,7 +8824,7 @@ DataDatabricksAccountNetworkPolicyIngressPublicAccessAllowRulesDestinationWorksp
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPublicAccessAllowRulesDestinationWorkspaceUi.property.allDestinations">allDestinations</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#all_destinations DataDatabricksAccountNetworkPolicy#all_destinations}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPublicAccessAllowRulesDestinationWorkspaceUi.property.allDestinations">allDestinations</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#all_destinations DataDatabricksAccountNetworkPolicy#all_destinations}. |
 
 ---
 
@@ -8682,7 +8836,7 @@ public java.lang.Boolean|IResolvable getAllDestinations();
 
 - *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#all_destinations DataDatabricksAccountNetworkPolicy#all_destinations}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#all_destinations DataDatabricksAccountNetworkPolicy#all_destinations}.
 
 ---
 
@@ -8704,9 +8858,9 @@ DataDatabricksAccountNetworkPolicyIngressPublicAccessAllowRulesOrigin.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPublicAccessAllowRulesOrigin.property.allIpRanges">allIpRanges</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#all_ip_ranges DataDatabricksAccountNetworkPolicy#all_ip_ranges}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPublicAccessAllowRulesOrigin.property.excludedIpRanges">excludedIpRanges</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPublicAccessAllowRulesOriginExcludedIpRanges">DataDatabricksAccountNetworkPolicyIngressPublicAccessAllowRulesOriginExcludedIpRanges</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#excluded_ip_ranges DataDatabricksAccountNetworkPolicy#excluded_ip_ranges}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPublicAccessAllowRulesOrigin.property.includedIpRanges">includedIpRanges</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPublicAccessAllowRulesOriginIncludedIpRanges">DataDatabricksAccountNetworkPolicyIngressPublicAccessAllowRulesOriginIncludedIpRanges</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#included_ip_ranges DataDatabricksAccountNetworkPolicy#included_ip_ranges}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPublicAccessAllowRulesOrigin.property.allIpRanges">allIpRanges</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#all_ip_ranges DataDatabricksAccountNetworkPolicy#all_ip_ranges}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPublicAccessAllowRulesOrigin.property.excludedIpRanges">excludedIpRanges</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPublicAccessAllowRulesOriginExcludedIpRanges">DataDatabricksAccountNetworkPolicyIngressPublicAccessAllowRulesOriginExcludedIpRanges</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#excluded_ip_ranges DataDatabricksAccountNetworkPolicy#excluded_ip_ranges}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPublicAccessAllowRulesOrigin.property.includedIpRanges">includedIpRanges</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPublicAccessAllowRulesOriginIncludedIpRanges">DataDatabricksAccountNetworkPolicyIngressPublicAccessAllowRulesOriginIncludedIpRanges</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#included_ip_ranges DataDatabricksAccountNetworkPolicy#included_ip_ranges}. |
 
 ---
 
@@ -8718,7 +8872,7 @@ public java.lang.Boolean|IResolvable getAllIpRanges();
 
 - *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#all_ip_ranges DataDatabricksAccountNetworkPolicy#all_ip_ranges}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#all_ip_ranges DataDatabricksAccountNetworkPolicy#all_ip_ranges}.
 
 ---
 
@@ -8730,7 +8884,7 @@ public DataDatabricksAccountNetworkPolicyIngressPublicAccessAllowRulesOriginExcl
 
 - *Type:* <a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPublicAccessAllowRulesOriginExcludedIpRanges">DataDatabricksAccountNetworkPolicyIngressPublicAccessAllowRulesOriginExcludedIpRanges</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#excluded_ip_ranges DataDatabricksAccountNetworkPolicy#excluded_ip_ranges}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#excluded_ip_ranges DataDatabricksAccountNetworkPolicy#excluded_ip_ranges}.
 
 ---
 
@@ -8742,7 +8896,7 @@ public DataDatabricksAccountNetworkPolicyIngressPublicAccessAllowRulesOriginIncl
 
 - *Type:* <a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPublicAccessAllowRulesOriginIncludedIpRanges">DataDatabricksAccountNetworkPolicyIngressPublicAccessAllowRulesOriginIncludedIpRanges</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#included_ip_ranges DataDatabricksAccountNetworkPolicy#included_ip_ranges}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#included_ip_ranges DataDatabricksAccountNetworkPolicy#included_ip_ranges}.
 
 ---
 
@@ -8762,7 +8916,7 @@ DataDatabricksAccountNetworkPolicyIngressPublicAccessAllowRulesOriginExcludedIpR
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPublicAccessAllowRulesOriginExcludedIpRanges.property.ipRanges">ipRanges</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#ip_ranges DataDatabricksAccountNetworkPolicy#ip_ranges}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPublicAccessAllowRulesOriginExcludedIpRanges.property.ipRanges">ipRanges</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#ip_ranges DataDatabricksAccountNetworkPolicy#ip_ranges}. |
 
 ---
 
@@ -8774,7 +8928,7 @@ public java.util.List<java.lang.String> getIpRanges();
 
 - *Type:* java.util.List<java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#ip_ranges DataDatabricksAccountNetworkPolicy#ip_ranges}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#ip_ranges DataDatabricksAccountNetworkPolicy#ip_ranges}.
 
 ---
 
@@ -8794,7 +8948,7 @@ DataDatabricksAccountNetworkPolicyIngressPublicAccessAllowRulesOriginIncludedIpR
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPublicAccessAllowRulesOriginIncludedIpRanges.property.ipRanges">ipRanges</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#ip_ranges DataDatabricksAccountNetworkPolicy#ip_ranges}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPublicAccessAllowRulesOriginIncludedIpRanges.property.ipRanges">ipRanges</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#ip_ranges DataDatabricksAccountNetworkPolicy#ip_ranges}. |
 
 ---
 
@@ -8806,7 +8960,7 @@ public java.util.List<java.lang.String> getIpRanges();
 
 - *Type:* java.util.List<java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#ip_ranges DataDatabricksAccountNetworkPolicy#ip_ranges}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#ip_ranges DataDatabricksAccountNetworkPolicy#ip_ranges}.
 
 ---
 
@@ -8829,10 +8983,10 @@ DataDatabricksAccountNetworkPolicyIngressPublicAccessDenyRules.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPublicAccessDenyRules.property.authentication">authentication</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPublicAccessDenyRulesAuthentication">DataDatabricksAccountNetworkPolicyIngressPublicAccessDenyRulesAuthentication</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#authentication DataDatabricksAccountNetworkPolicy#authentication}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPublicAccessDenyRules.property.destination">destination</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPublicAccessDenyRulesDestination">DataDatabricksAccountNetworkPolicyIngressPublicAccessDenyRulesDestination</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#destination DataDatabricksAccountNetworkPolicy#destination}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPublicAccessDenyRules.property.label">label</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#label DataDatabricksAccountNetworkPolicy#label}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPublicAccessDenyRules.property.origin">origin</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPublicAccessDenyRulesOrigin">DataDatabricksAccountNetworkPolicyIngressPublicAccessDenyRulesOrigin</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#origin DataDatabricksAccountNetworkPolicy#origin}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPublicAccessDenyRules.property.authentication">authentication</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPublicAccessDenyRulesAuthentication">DataDatabricksAccountNetworkPolicyIngressPublicAccessDenyRulesAuthentication</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#authentication DataDatabricksAccountNetworkPolicy#authentication}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPublicAccessDenyRules.property.destination">destination</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPublicAccessDenyRulesDestination">DataDatabricksAccountNetworkPolicyIngressPublicAccessDenyRulesDestination</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#destination DataDatabricksAccountNetworkPolicy#destination}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPublicAccessDenyRules.property.label">label</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#label DataDatabricksAccountNetworkPolicy#label}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPublicAccessDenyRules.property.origin">origin</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPublicAccessDenyRulesOrigin">DataDatabricksAccountNetworkPolicyIngressPublicAccessDenyRulesOrigin</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#origin DataDatabricksAccountNetworkPolicy#origin}. |
 
 ---
 
@@ -8844,7 +8998,7 @@ public DataDatabricksAccountNetworkPolicyIngressPublicAccessDenyRulesAuthenticat
 
 - *Type:* <a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPublicAccessDenyRulesAuthentication">DataDatabricksAccountNetworkPolicyIngressPublicAccessDenyRulesAuthentication</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#authentication DataDatabricksAccountNetworkPolicy#authentication}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#authentication DataDatabricksAccountNetworkPolicy#authentication}.
 
 ---
 
@@ -8856,7 +9010,7 @@ public DataDatabricksAccountNetworkPolicyIngressPublicAccessDenyRulesDestination
 
 - *Type:* <a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPublicAccessDenyRulesDestination">DataDatabricksAccountNetworkPolicyIngressPublicAccessDenyRulesDestination</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#destination DataDatabricksAccountNetworkPolicy#destination}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#destination DataDatabricksAccountNetworkPolicy#destination}.
 
 ---
 
@@ -8868,7 +9022,7 @@ public java.lang.String getLabel();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#label DataDatabricksAccountNetworkPolicy#label}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#label DataDatabricksAccountNetworkPolicy#label}.
 
 ---
 
@@ -8880,7 +9034,7 @@ public DataDatabricksAccountNetworkPolicyIngressPublicAccessDenyRulesOrigin getO
 
 - *Type:* <a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPublicAccessDenyRulesOrigin">DataDatabricksAccountNetworkPolicyIngressPublicAccessDenyRulesOrigin</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#origin DataDatabricksAccountNetworkPolicy#origin}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#origin DataDatabricksAccountNetworkPolicy#origin}.
 
 ---
 
@@ -8901,8 +9055,8 @@ DataDatabricksAccountNetworkPolicyIngressPublicAccessDenyRulesAuthentication.bui
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPublicAccessDenyRulesAuthentication.property.identities">identities</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPublicAccessDenyRulesAuthenticationIdentities">DataDatabricksAccountNetworkPolicyIngressPublicAccessDenyRulesAuthenticationIdentities</a>></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#identities DataDatabricksAccountNetworkPolicy#identities}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPublicAccessDenyRulesAuthentication.property.identityType">identityType</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#identity_type DataDatabricksAccountNetworkPolicy#identity_type}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPublicAccessDenyRulesAuthentication.property.identities">identities</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPublicAccessDenyRulesAuthenticationIdentities">DataDatabricksAccountNetworkPolicyIngressPublicAccessDenyRulesAuthenticationIdentities</a>></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#identities DataDatabricksAccountNetworkPolicy#identities}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPublicAccessDenyRulesAuthentication.property.identityType">identityType</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#identity_type DataDatabricksAccountNetworkPolicy#identity_type}. |
 
 ---
 
@@ -8914,7 +9068,7 @@ public IResolvable|java.util.List<DataDatabricksAccountNetworkPolicyIngressPubli
 
 - *Type:* io.cdktn.cdktn.IResolvable|java.util.List<<a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPublicAccessDenyRulesAuthenticationIdentities">DataDatabricksAccountNetworkPolicyIngressPublicAccessDenyRulesAuthenticationIdentities</a>>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#identities DataDatabricksAccountNetworkPolicy#identities}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#identities DataDatabricksAccountNetworkPolicy#identities}.
 
 ---
 
@@ -8926,7 +9080,7 @@ public java.lang.String getIdentityType();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#identity_type DataDatabricksAccountNetworkPolicy#identity_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#identity_type DataDatabricksAccountNetworkPolicy#identity_type}.
 
 ---
 
@@ -8947,8 +9101,8 @@ DataDatabricksAccountNetworkPolicyIngressPublicAccessDenyRulesAuthenticationIden
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPublicAccessDenyRulesAuthenticationIdentities.property.principalId">principalId</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#principal_id DataDatabricksAccountNetworkPolicy#principal_id}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPublicAccessDenyRulesAuthenticationIdentities.property.principalType">principalType</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#principal_type DataDatabricksAccountNetworkPolicy#principal_type}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPublicAccessDenyRulesAuthenticationIdentities.property.principalId">principalId</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#principal_id DataDatabricksAccountNetworkPolicy#principal_id}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPublicAccessDenyRulesAuthenticationIdentities.property.principalType">principalType</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#principal_type DataDatabricksAccountNetworkPolicy#principal_type}. |
 
 ---
 
@@ -8960,7 +9114,7 @@ public java.lang.Number getPrincipalId();
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#principal_id DataDatabricksAccountNetworkPolicy#principal_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#principal_id DataDatabricksAccountNetworkPolicy#principal_id}.
 
 ---
 
@@ -8972,7 +9126,7 @@ public java.lang.String getPrincipalType();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#principal_type DataDatabricksAccountNetworkPolicy#principal_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#principal_type DataDatabricksAccountNetworkPolicy#principal_type}.
 
 ---
 
@@ -8999,14 +9153,14 @@ DataDatabricksAccountNetworkPolicyIngressPublicAccessDenyRulesDestination.builde
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPublicAccessDenyRulesDestination.property.accountApi">accountApi</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPublicAccessDenyRulesDestinationAccountApi">DataDatabricksAccountNetworkPolicyIngressPublicAccessDenyRulesDestinationAccountApi</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#account_api DataDatabricksAccountNetworkPolicy#account_api}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPublicAccessDenyRulesDestination.property.accountDatabricksOne">accountDatabricksOne</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPublicAccessDenyRulesDestinationAccountDatabricksOne">DataDatabricksAccountNetworkPolicyIngressPublicAccessDenyRulesDestinationAccountDatabricksOne</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#account_databricks_one DataDatabricksAccountNetworkPolicy#account_databricks_one}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPublicAccessDenyRulesDestination.property.accountUi">accountUi</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPublicAccessDenyRulesDestinationAccountUi">DataDatabricksAccountNetworkPolicyIngressPublicAccessDenyRulesDestinationAccountUi</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#account_ui DataDatabricksAccountNetworkPolicy#account_ui}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPublicAccessDenyRulesDestination.property.allDestinations">allDestinations</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#all_destinations DataDatabricksAccountNetworkPolicy#all_destinations}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPublicAccessDenyRulesDestination.property.appsRuntime">appsRuntime</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPublicAccessDenyRulesDestinationAppsRuntime">DataDatabricksAccountNetworkPolicyIngressPublicAccessDenyRulesDestinationAppsRuntime</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#apps_runtime DataDatabricksAccountNetworkPolicy#apps_runtime}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPublicAccessDenyRulesDestination.property.lakebaseRuntime">lakebaseRuntime</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPublicAccessDenyRulesDestinationLakebaseRuntime">DataDatabricksAccountNetworkPolicyIngressPublicAccessDenyRulesDestinationLakebaseRuntime</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#lakebase_runtime DataDatabricksAccountNetworkPolicy#lakebase_runtime}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPublicAccessDenyRulesDestination.property.workspaceApi">workspaceApi</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPublicAccessDenyRulesDestinationWorkspaceApi">DataDatabricksAccountNetworkPolicyIngressPublicAccessDenyRulesDestinationWorkspaceApi</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#workspace_api DataDatabricksAccountNetworkPolicy#workspace_api}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPublicAccessDenyRulesDestination.property.workspaceUi">workspaceUi</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPublicAccessDenyRulesDestinationWorkspaceUi">DataDatabricksAccountNetworkPolicyIngressPublicAccessDenyRulesDestinationWorkspaceUi</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#workspace_ui DataDatabricksAccountNetworkPolicy#workspace_ui}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPublicAccessDenyRulesDestination.property.accountApi">accountApi</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPublicAccessDenyRulesDestinationAccountApi">DataDatabricksAccountNetworkPolicyIngressPublicAccessDenyRulesDestinationAccountApi</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#account_api DataDatabricksAccountNetworkPolicy#account_api}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPublicAccessDenyRulesDestination.property.accountDatabricksOne">accountDatabricksOne</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPublicAccessDenyRulesDestinationAccountDatabricksOne">DataDatabricksAccountNetworkPolicyIngressPublicAccessDenyRulesDestinationAccountDatabricksOne</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#account_databricks_one DataDatabricksAccountNetworkPolicy#account_databricks_one}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPublicAccessDenyRulesDestination.property.accountUi">accountUi</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPublicAccessDenyRulesDestinationAccountUi">DataDatabricksAccountNetworkPolicyIngressPublicAccessDenyRulesDestinationAccountUi</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#account_ui DataDatabricksAccountNetworkPolicy#account_ui}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPublicAccessDenyRulesDestination.property.allDestinations">allDestinations</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#all_destinations DataDatabricksAccountNetworkPolicy#all_destinations}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPublicAccessDenyRulesDestination.property.appsRuntime">appsRuntime</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPublicAccessDenyRulesDestinationAppsRuntime">DataDatabricksAccountNetworkPolicyIngressPublicAccessDenyRulesDestinationAppsRuntime</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#apps_runtime DataDatabricksAccountNetworkPolicy#apps_runtime}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPublicAccessDenyRulesDestination.property.lakebaseRuntime">lakebaseRuntime</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPublicAccessDenyRulesDestinationLakebaseRuntime">DataDatabricksAccountNetworkPolicyIngressPublicAccessDenyRulesDestinationLakebaseRuntime</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#lakebase_runtime DataDatabricksAccountNetworkPolicy#lakebase_runtime}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPublicAccessDenyRulesDestination.property.workspaceApi">workspaceApi</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPublicAccessDenyRulesDestinationWorkspaceApi">DataDatabricksAccountNetworkPolicyIngressPublicAccessDenyRulesDestinationWorkspaceApi</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#workspace_api DataDatabricksAccountNetworkPolicy#workspace_api}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPublicAccessDenyRulesDestination.property.workspaceUi">workspaceUi</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPublicAccessDenyRulesDestinationWorkspaceUi">DataDatabricksAccountNetworkPolicyIngressPublicAccessDenyRulesDestinationWorkspaceUi</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#workspace_ui DataDatabricksAccountNetworkPolicy#workspace_ui}. |
 
 ---
 
@@ -9018,7 +9172,7 @@ public DataDatabricksAccountNetworkPolicyIngressPublicAccessDenyRulesDestination
 
 - *Type:* <a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPublicAccessDenyRulesDestinationAccountApi">DataDatabricksAccountNetworkPolicyIngressPublicAccessDenyRulesDestinationAccountApi</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#account_api DataDatabricksAccountNetworkPolicy#account_api}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#account_api DataDatabricksAccountNetworkPolicy#account_api}.
 
 ---
 
@@ -9030,7 +9184,7 @@ public DataDatabricksAccountNetworkPolicyIngressPublicAccessDenyRulesDestination
 
 - *Type:* <a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPublicAccessDenyRulesDestinationAccountDatabricksOne">DataDatabricksAccountNetworkPolicyIngressPublicAccessDenyRulesDestinationAccountDatabricksOne</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#account_databricks_one DataDatabricksAccountNetworkPolicy#account_databricks_one}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#account_databricks_one DataDatabricksAccountNetworkPolicy#account_databricks_one}.
 
 ---
 
@@ -9042,7 +9196,7 @@ public DataDatabricksAccountNetworkPolicyIngressPublicAccessDenyRulesDestination
 
 - *Type:* <a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPublicAccessDenyRulesDestinationAccountUi">DataDatabricksAccountNetworkPolicyIngressPublicAccessDenyRulesDestinationAccountUi</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#account_ui DataDatabricksAccountNetworkPolicy#account_ui}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#account_ui DataDatabricksAccountNetworkPolicy#account_ui}.
 
 ---
 
@@ -9054,7 +9208,7 @@ public java.lang.Boolean|IResolvable getAllDestinations();
 
 - *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#all_destinations DataDatabricksAccountNetworkPolicy#all_destinations}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#all_destinations DataDatabricksAccountNetworkPolicy#all_destinations}.
 
 ---
 
@@ -9066,7 +9220,7 @@ public DataDatabricksAccountNetworkPolicyIngressPublicAccessDenyRulesDestination
 
 - *Type:* <a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPublicAccessDenyRulesDestinationAppsRuntime">DataDatabricksAccountNetworkPolicyIngressPublicAccessDenyRulesDestinationAppsRuntime</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#apps_runtime DataDatabricksAccountNetworkPolicy#apps_runtime}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#apps_runtime DataDatabricksAccountNetworkPolicy#apps_runtime}.
 
 ---
 
@@ -9078,7 +9232,7 @@ public DataDatabricksAccountNetworkPolicyIngressPublicAccessDenyRulesDestination
 
 - *Type:* <a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPublicAccessDenyRulesDestinationLakebaseRuntime">DataDatabricksAccountNetworkPolicyIngressPublicAccessDenyRulesDestinationLakebaseRuntime</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#lakebase_runtime DataDatabricksAccountNetworkPolicy#lakebase_runtime}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#lakebase_runtime DataDatabricksAccountNetworkPolicy#lakebase_runtime}.
 
 ---
 
@@ -9090,7 +9244,7 @@ public DataDatabricksAccountNetworkPolicyIngressPublicAccessDenyRulesDestination
 
 - *Type:* <a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPublicAccessDenyRulesDestinationWorkspaceApi">DataDatabricksAccountNetworkPolicyIngressPublicAccessDenyRulesDestinationWorkspaceApi</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#workspace_api DataDatabricksAccountNetworkPolicy#workspace_api}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#workspace_api DataDatabricksAccountNetworkPolicy#workspace_api}.
 
 ---
 
@@ -9102,7 +9256,7 @@ public DataDatabricksAccountNetworkPolicyIngressPublicAccessDenyRulesDestination
 
 - *Type:* <a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPublicAccessDenyRulesDestinationWorkspaceUi">DataDatabricksAccountNetworkPolicyIngressPublicAccessDenyRulesDestinationWorkspaceUi</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#workspace_ui DataDatabricksAccountNetworkPolicy#workspace_ui}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#workspace_ui DataDatabricksAccountNetworkPolicy#workspace_ui}.
 
 ---
 
@@ -9123,8 +9277,8 @@ DataDatabricksAccountNetworkPolicyIngressPublicAccessDenyRulesDestinationAccount
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPublicAccessDenyRulesDestinationAccountApi.property.scopeQualifier">scopeQualifier</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#scope_qualifier DataDatabricksAccountNetworkPolicy#scope_qualifier}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPublicAccessDenyRulesDestinationAccountApi.property.scopes">scopes</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#scopes DataDatabricksAccountNetworkPolicy#scopes}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPublicAccessDenyRulesDestinationAccountApi.property.scopeQualifier">scopeQualifier</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#scope_qualifier DataDatabricksAccountNetworkPolicy#scope_qualifier}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPublicAccessDenyRulesDestinationAccountApi.property.scopes">scopes</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#scopes DataDatabricksAccountNetworkPolicy#scopes}. |
 
 ---
 
@@ -9136,7 +9290,7 @@ public java.lang.String getScopeQualifier();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#scope_qualifier DataDatabricksAccountNetworkPolicy#scope_qualifier}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#scope_qualifier DataDatabricksAccountNetworkPolicy#scope_qualifier}.
 
 ---
 
@@ -9148,7 +9302,7 @@ public java.util.List<java.lang.String> getScopes();
 
 - *Type:* java.util.List<java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#scopes DataDatabricksAccountNetworkPolicy#scopes}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#scopes DataDatabricksAccountNetworkPolicy#scopes}.
 
 ---
 
@@ -9168,7 +9322,7 @@ DataDatabricksAccountNetworkPolicyIngressPublicAccessDenyRulesDestinationAccount
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPublicAccessDenyRulesDestinationAccountDatabricksOne.property.allDestinations">allDestinations</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#all_destinations DataDatabricksAccountNetworkPolicy#all_destinations}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPublicAccessDenyRulesDestinationAccountDatabricksOne.property.allDestinations">allDestinations</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#all_destinations DataDatabricksAccountNetworkPolicy#all_destinations}. |
 
 ---
 
@@ -9180,7 +9334,7 @@ public java.lang.Boolean|IResolvable getAllDestinations();
 
 - *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#all_destinations DataDatabricksAccountNetworkPolicy#all_destinations}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#all_destinations DataDatabricksAccountNetworkPolicy#all_destinations}.
 
 ---
 
@@ -9200,7 +9354,7 @@ DataDatabricksAccountNetworkPolicyIngressPublicAccessDenyRulesDestinationAccount
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPublicAccessDenyRulesDestinationAccountUi.property.allDestinations">allDestinations</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#all_destinations DataDatabricksAccountNetworkPolicy#all_destinations}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPublicAccessDenyRulesDestinationAccountUi.property.allDestinations">allDestinations</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#all_destinations DataDatabricksAccountNetworkPolicy#all_destinations}. |
 
 ---
 
@@ -9212,7 +9366,7 @@ public java.lang.Boolean|IResolvable getAllDestinations();
 
 - *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#all_destinations DataDatabricksAccountNetworkPolicy#all_destinations}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#all_destinations DataDatabricksAccountNetworkPolicy#all_destinations}.
 
 ---
 
@@ -9232,7 +9386,7 @@ DataDatabricksAccountNetworkPolicyIngressPublicAccessDenyRulesDestinationAppsRun
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPublicAccessDenyRulesDestinationAppsRuntime.property.allDestinations">allDestinations</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#all_destinations DataDatabricksAccountNetworkPolicy#all_destinations}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPublicAccessDenyRulesDestinationAppsRuntime.property.allDestinations">allDestinations</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#all_destinations DataDatabricksAccountNetworkPolicy#all_destinations}. |
 
 ---
 
@@ -9244,7 +9398,7 @@ public java.lang.Boolean|IResolvable getAllDestinations();
 
 - *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#all_destinations DataDatabricksAccountNetworkPolicy#all_destinations}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#all_destinations DataDatabricksAccountNetworkPolicy#all_destinations}.
 
 ---
 
@@ -9264,7 +9418,7 @@ DataDatabricksAccountNetworkPolicyIngressPublicAccessDenyRulesDestinationLakebas
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPublicAccessDenyRulesDestinationLakebaseRuntime.property.allDestinations">allDestinations</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#all_destinations DataDatabricksAccountNetworkPolicy#all_destinations}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPublicAccessDenyRulesDestinationLakebaseRuntime.property.allDestinations">allDestinations</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#all_destinations DataDatabricksAccountNetworkPolicy#all_destinations}. |
 
 ---
 
@@ -9276,7 +9430,7 @@ public java.lang.Boolean|IResolvable getAllDestinations();
 
 - *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#all_destinations DataDatabricksAccountNetworkPolicy#all_destinations}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#all_destinations DataDatabricksAccountNetworkPolicy#all_destinations}.
 
 ---
 
@@ -9288,6 +9442,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 import io.cdktn.providers.databricks.data_databricks_account_network_policy.DataDatabricksAccountNetworkPolicyIngressPublicAccessDenyRulesDestinationWorkspaceApi;
 
 DataDatabricksAccountNetworkPolicyIngressPublicAccessDenyRulesDestinationWorkspaceApi.builder()
+//  .excludedScopes(java.util.List<java.lang.String>)
 //  .scopeQualifier(java.lang.String)
 //  .scopes(java.util.List<java.lang.String>)
     .build();
@@ -9297,8 +9452,21 @@ DataDatabricksAccountNetworkPolicyIngressPublicAccessDenyRulesDestinationWorkspa
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPublicAccessDenyRulesDestinationWorkspaceApi.property.scopeQualifier">scopeQualifier</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#scope_qualifier DataDatabricksAccountNetworkPolicy#scope_qualifier}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPublicAccessDenyRulesDestinationWorkspaceApi.property.scopes">scopes</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#scopes DataDatabricksAccountNetworkPolicy#scopes}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPublicAccessDenyRulesDestinationWorkspaceApi.property.excludedScopes">excludedScopes</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#excluded_scopes DataDatabricksAccountNetworkPolicy#excluded_scopes}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPublicAccessDenyRulesDestinationWorkspaceApi.property.scopeQualifier">scopeQualifier</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#scope_qualifier DataDatabricksAccountNetworkPolicy#scope_qualifier}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPublicAccessDenyRulesDestinationWorkspaceApi.property.scopes">scopes</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#scopes DataDatabricksAccountNetworkPolicy#scopes}. |
+
+---
+
+##### `excludedScopes`<sup>Optional</sup> <a name="excludedScopes" id="@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPublicAccessDenyRulesDestinationWorkspaceApi.property.excludedScopes"></a>
+
+```java
+public java.util.List<java.lang.String> getExcludedScopes();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#excluded_scopes DataDatabricksAccountNetworkPolicy#excluded_scopes}.
 
 ---
 
@@ -9310,7 +9478,7 @@ public java.lang.String getScopeQualifier();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#scope_qualifier DataDatabricksAccountNetworkPolicy#scope_qualifier}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#scope_qualifier DataDatabricksAccountNetworkPolicy#scope_qualifier}.
 
 ---
 
@@ -9322,7 +9490,7 @@ public java.util.List<java.lang.String> getScopes();
 
 - *Type:* java.util.List<java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#scopes DataDatabricksAccountNetworkPolicy#scopes}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#scopes DataDatabricksAccountNetworkPolicy#scopes}.
 
 ---
 
@@ -9342,7 +9510,7 @@ DataDatabricksAccountNetworkPolicyIngressPublicAccessDenyRulesDestinationWorkspa
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPublicAccessDenyRulesDestinationWorkspaceUi.property.allDestinations">allDestinations</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#all_destinations DataDatabricksAccountNetworkPolicy#all_destinations}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPublicAccessDenyRulesDestinationWorkspaceUi.property.allDestinations">allDestinations</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#all_destinations DataDatabricksAccountNetworkPolicy#all_destinations}. |
 
 ---
 
@@ -9354,7 +9522,7 @@ public java.lang.Boolean|IResolvable getAllDestinations();
 
 - *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#all_destinations DataDatabricksAccountNetworkPolicy#all_destinations}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#all_destinations DataDatabricksAccountNetworkPolicy#all_destinations}.
 
 ---
 
@@ -9376,9 +9544,9 @@ DataDatabricksAccountNetworkPolicyIngressPublicAccessDenyRulesOrigin.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPublicAccessDenyRulesOrigin.property.allIpRanges">allIpRanges</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#all_ip_ranges DataDatabricksAccountNetworkPolicy#all_ip_ranges}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPublicAccessDenyRulesOrigin.property.excludedIpRanges">excludedIpRanges</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPublicAccessDenyRulesOriginExcludedIpRanges">DataDatabricksAccountNetworkPolicyIngressPublicAccessDenyRulesOriginExcludedIpRanges</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#excluded_ip_ranges DataDatabricksAccountNetworkPolicy#excluded_ip_ranges}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPublicAccessDenyRulesOrigin.property.includedIpRanges">includedIpRanges</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPublicAccessDenyRulesOriginIncludedIpRanges">DataDatabricksAccountNetworkPolicyIngressPublicAccessDenyRulesOriginIncludedIpRanges</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#included_ip_ranges DataDatabricksAccountNetworkPolicy#included_ip_ranges}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPublicAccessDenyRulesOrigin.property.allIpRanges">allIpRanges</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#all_ip_ranges DataDatabricksAccountNetworkPolicy#all_ip_ranges}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPublicAccessDenyRulesOrigin.property.excludedIpRanges">excludedIpRanges</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPublicAccessDenyRulesOriginExcludedIpRanges">DataDatabricksAccountNetworkPolicyIngressPublicAccessDenyRulesOriginExcludedIpRanges</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#excluded_ip_ranges DataDatabricksAccountNetworkPolicy#excluded_ip_ranges}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPublicAccessDenyRulesOrigin.property.includedIpRanges">includedIpRanges</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPublicAccessDenyRulesOriginIncludedIpRanges">DataDatabricksAccountNetworkPolicyIngressPublicAccessDenyRulesOriginIncludedIpRanges</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#included_ip_ranges DataDatabricksAccountNetworkPolicy#included_ip_ranges}. |
 
 ---
 
@@ -9390,7 +9558,7 @@ public java.lang.Boolean|IResolvable getAllIpRanges();
 
 - *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#all_ip_ranges DataDatabricksAccountNetworkPolicy#all_ip_ranges}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#all_ip_ranges DataDatabricksAccountNetworkPolicy#all_ip_ranges}.
 
 ---
 
@@ -9402,7 +9570,7 @@ public DataDatabricksAccountNetworkPolicyIngressPublicAccessDenyRulesOriginExclu
 
 - *Type:* <a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPublicAccessDenyRulesOriginExcludedIpRanges">DataDatabricksAccountNetworkPolicyIngressPublicAccessDenyRulesOriginExcludedIpRanges</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#excluded_ip_ranges DataDatabricksAccountNetworkPolicy#excluded_ip_ranges}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#excluded_ip_ranges DataDatabricksAccountNetworkPolicy#excluded_ip_ranges}.
 
 ---
 
@@ -9414,7 +9582,7 @@ public DataDatabricksAccountNetworkPolicyIngressPublicAccessDenyRulesOriginInclu
 
 - *Type:* <a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPublicAccessDenyRulesOriginIncludedIpRanges">DataDatabricksAccountNetworkPolicyIngressPublicAccessDenyRulesOriginIncludedIpRanges</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#included_ip_ranges DataDatabricksAccountNetworkPolicy#included_ip_ranges}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#included_ip_ranges DataDatabricksAccountNetworkPolicy#included_ip_ranges}.
 
 ---
 
@@ -9434,7 +9602,7 @@ DataDatabricksAccountNetworkPolicyIngressPublicAccessDenyRulesOriginExcludedIpRa
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPublicAccessDenyRulesOriginExcludedIpRanges.property.ipRanges">ipRanges</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#ip_ranges DataDatabricksAccountNetworkPolicy#ip_ranges}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPublicAccessDenyRulesOriginExcludedIpRanges.property.ipRanges">ipRanges</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#ip_ranges DataDatabricksAccountNetworkPolicy#ip_ranges}. |
 
 ---
 
@@ -9446,7 +9614,7 @@ public java.util.List<java.lang.String> getIpRanges();
 
 - *Type:* java.util.List<java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#ip_ranges DataDatabricksAccountNetworkPolicy#ip_ranges}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#ip_ranges DataDatabricksAccountNetworkPolicy#ip_ranges}.
 
 ---
 
@@ -9466,7 +9634,7 @@ DataDatabricksAccountNetworkPolicyIngressPublicAccessDenyRulesOriginIncludedIpRa
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPublicAccessDenyRulesOriginIncludedIpRanges.property.ipRanges">ipRanges</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#ip_ranges DataDatabricksAccountNetworkPolicy#ip_ranges}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPublicAccessDenyRulesOriginIncludedIpRanges.property.ipRanges">ipRanges</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#ip_ranges DataDatabricksAccountNetworkPolicy#ip_ranges}. |
 
 ---
 
@@ -9478,7 +9646,7 @@ public java.util.List<java.lang.String> getIpRanges();
 
 - *Type:* java.util.List<java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/account_network_policy#ip_ranges DataDatabricksAccountNetworkPolicy#ip_ranges}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/account_network_policy#ip_ranges DataDatabricksAccountNetworkPolicy#ip_ranges}.
 
 ---
 
@@ -15407,6 +15575,7 @@ The attribute on the parent resource this class is referencing.
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressCrossWorkspaceAccessAllowRulesDestinationWorkspaceApiOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressCrossWorkspaceAccessAllowRulesDestinationWorkspaceApiOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressCrossWorkspaceAccessAllowRulesDestinationWorkspaceApiOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressCrossWorkspaceAccessAllowRulesDestinationWorkspaceApiOutputReference.resetExcludedScopes">resetExcludedScopes</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressCrossWorkspaceAccessAllowRulesDestinationWorkspaceApiOutputReference.resetScopeQualifier">resetScopeQualifier</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressCrossWorkspaceAccessAllowRulesDestinationWorkspaceApiOutputReference.resetScopes">resetScopes</a></code> | *No description.* |
 
@@ -15562,6 +15731,12 @@ Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
 
+##### `resetExcludedScopes` <a name="resetExcludedScopes" id="@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressCrossWorkspaceAccessAllowRulesDestinationWorkspaceApiOutputReference.resetExcludedScopes"></a>
+
+```java
+public void resetExcludedScopes()
+```
+
 ##### `resetScopeQualifier` <a name="resetScopeQualifier" id="@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressCrossWorkspaceAccessAllowRulesDestinationWorkspaceApiOutputReference.resetScopeQualifier"></a>
 
 ```java
@@ -15581,8 +15756,10 @@ public void resetScopes()
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressCrossWorkspaceAccessAllowRulesDestinationWorkspaceApiOutputReference.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressCrossWorkspaceAccessAllowRulesDestinationWorkspaceApiOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressCrossWorkspaceAccessAllowRulesDestinationWorkspaceApiOutputReference.property.excludedScopesInput">excludedScopesInput</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressCrossWorkspaceAccessAllowRulesDestinationWorkspaceApiOutputReference.property.scopeQualifierInput">scopeQualifierInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressCrossWorkspaceAccessAllowRulesDestinationWorkspaceApiOutputReference.property.scopesInput">scopesInput</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressCrossWorkspaceAccessAllowRulesDestinationWorkspaceApiOutputReference.property.excludedScopes">excludedScopes</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressCrossWorkspaceAccessAllowRulesDestinationWorkspaceApiOutputReference.property.scopeQualifier">scopeQualifier</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressCrossWorkspaceAccessAllowRulesDestinationWorkspaceApiOutputReference.property.scopes">scopes</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressCrossWorkspaceAccessAllowRulesDestinationWorkspaceApiOutputReference.property.internalValue">internalValue</a></code> | <code>io.cdktn.cdktn.IResolvable\|<a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressCrossWorkspaceAccessAllowRulesDestinationWorkspaceApi">DataDatabricksAccountNetworkPolicyIngressCrossWorkspaceAccessAllowRulesDestinationWorkspaceApi</a></code> | *No description.* |
@@ -15613,6 +15790,16 @@ public java.lang.String getFqn();
 
 ---
 
+##### `excludedScopesInput`<sup>Optional</sup> <a name="excludedScopesInput" id="@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressCrossWorkspaceAccessAllowRulesDestinationWorkspaceApiOutputReference.property.excludedScopesInput"></a>
+
+```java
+public java.util.List<java.lang.String> getExcludedScopesInput();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+---
+
 ##### `scopeQualifierInput`<sup>Optional</sup> <a name="scopeQualifierInput" id="@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressCrossWorkspaceAccessAllowRulesDestinationWorkspaceApiOutputReference.property.scopeQualifierInput"></a>
 
 ```java
@@ -15627,6 +15814,16 @@ public java.lang.String getScopeQualifierInput();
 
 ```java
 public java.util.List<java.lang.String> getScopesInput();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+---
+
+##### `excludedScopes`<sup>Required</sup> <a name="excludedScopes" id="@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressCrossWorkspaceAccessAllowRulesDestinationWorkspaceApiOutputReference.property.excludedScopes"></a>
+
+```java
+public java.util.List<java.lang.String> getExcludedScopes();
 ```
 
 - *Type:* java.util.List<java.lang.String>
@@ -19968,6 +20165,7 @@ The attribute on the parent resource this class is referencing.
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressCrossWorkspaceAccessDenyRulesDestinationWorkspaceApiOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressCrossWorkspaceAccessDenyRulesDestinationWorkspaceApiOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressCrossWorkspaceAccessDenyRulesDestinationWorkspaceApiOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressCrossWorkspaceAccessDenyRulesDestinationWorkspaceApiOutputReference.resetExcludedScopes">resetExcludedScopes</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressCrossWorkspaceAccessDenyRulesDestinationWorkspaceApiOutputReference.resetScopeQualifier">resetScopeQualifier</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressCrossWorkspaceAccessDenyRulesDestinationWorkspaceApiOutputReference.resetScopes">resetScopes</a></code> | *No description.* |
 
@@ -20123,6 +20321,12 @@ Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
 
+##### `resetExcludedScopes` <a name="resetExcludedScopes" id="@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressCrossWorkspaceAccessDenyRulesDestinationWorkspaceApiOutputReference.resetExcludedScopes"></a>
+
+```java
+public void resetExcludedScopes()
+```
+
 ##### `resetScopeQualifier` <a name="resetScopeQualifier" id="@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressCrossWorkspaceAccessDenyRulesDestinationWorkspaceApiOutputReference.resetScopeQualifier"></a>
 
 ```java
@@ -20142,8 +20346,10 @@ public void resetScopes()
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressCrossWorkspaceAccessDenyRulesDestinationWorkspaceApiOutputReference.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressCrossWorkspaceAccessDenyRulesDestinationWorkspaceApiOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressCrossWorkspaceAccessDenyRulesDestinationWorkspaceApiOutputReference.property.excludedScopesInput">excludedScopesInput</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressCrossWorkspaceAccessDenyRulesDestinationWorkspaceApiOutputReference.property.scopeQualifierInput">scopeQualifierInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressCrossWorkspaceAccessDenyRulesDestinationWorkspaceApiOutputReference.property.scopesInput">scopesInput</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressCrossWorkspaceAccessDenyRulesDestinationWorkspaceApiOutputReference.property.excludedScopes">excludedScopes</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressCrossWorkspaceAccessDenyRulesDestinationWorkspaceApiOutputReference.property.scopeQualifier">scopeQualifier</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressCrossWorkspaceAccessDenyRulesDestinationWorkspaceApiOutputReference.property.scopes">scopes</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressCrossWorkspaceAccessDenyRulesDestinationWorkspaceApiOutputReference.property.internalValue">internalValue</a></code> | <code>io.cdktn.cdktn.IResolvable\|<a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressCrossWorkspaceAccessDenyRulesDestinationWorkspaceApi">DataDatabricksAccountNetworkPolicyIngressCrossWorkspaceAccessDenyRulesDestinationWorkspaceApi</a></code> | *No description.* |
@@ -20174,6 +20380,16 @@ public java.lang.String getFqn();
 
 ---
 
+##### `excludedScopesInput`<sup>Optional</sup> <a name="excludedScopesInput" id="@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressCrossWorkspaceAccessDenyRulesDestinationWorkspaceApiOutputReference.property.excludedScopesInput"></a>
+
+```java
+public java.util.List<java.lang.String> getExcludedScopesInput();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+---
+
 ##### `scopeQualifierInput`<sup>Optional</sup> <a name="scopeQualifierInput" id="@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressCrossWorkspaceAccessDenyRulesDestinationWorkspaceApiOutputReference.property.scopeQualifierInput"></a>
 
 ```java
@@ -20188,6 +20404,16 @@ public java.lang.String getScopeQualifierInput();
 
 ```java
 public java.util.List<java.lang.String> getScopesInput();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+---
+
+##### `excludedScopes`<sup>Required</sup> <a name="excludedScopes" id="@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressCrossWorkspaceAccessDenyRulesDestinationWorkspaceApiOutputReference.property.excludedScopes"></a>
+
+```java
+public java.util.List<java.lang.String> getExcludedScopes();
 ```
 
 - *Type:* java.util.List<java.lang.String>
@@ -24884,6 +25110,7 @@ The attribute on the parent resource this class is referencing.
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunCrossWorkspaceAccessAllowRulesDestinationWorkspaceApiOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunCrossWorkspaceAccessAllowRulesDestinationWorkspaceApiOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunCrossWorkspaceAccessAllowRulesDestinationWorkspaceApiOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunCrossWorkspaceAccessAllowRulesDestinationWorkspaceApiOutputReference.resetExcludedScopes">resetExcludedScopes</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunCrossWorkspaceAccessAllowRulesDestinationWorkspaceApiOutputReference.resetScopeQualifier">resetScopeQualifier</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunCrossWorkspaceAccessAllowRulesDestinationWorkspaceApiOutputReference.resetScopes">resetScopes</a></code> | *No description.* |
 
@@ -25039,6 +25266,12 @@ Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
 
+##### `resetExcludedScopes` <a name="resetExcludedScopes" id="@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunCrossWorkspaceAccessAllowRulesDestinationWorkspaceApiOutputReference.resetExcludedScopes"></a>
+
+```java
+public void resetExcludedScopes()
+```
+
 ##### `resetScopeQualifier` <a name="resetScopeQualifier" id="@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunCrossWorkspaceAccessAllowRulesDestinationWorkspaceApiOutputReference.resetScopeQualifier"></a>
 
 ```java
@@ -25058,8 +25291,10 @@ public void resetScopes()
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunCrossWorkspaceAccessAllowRulesDestinationWorkspaceApiOutputReference.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunCrossWorkspaceAccessAllowRulesDestinationWorkspaceApiOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunCrossWorkspaceAccessAllowRulesDestinationWorkspaceApiOutputReference.property.excludedScopesInput">excludedScopesInput</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunCrossWorkspaceAccessAllowRulesDestinationWorkspaceApiOutputReference.property.scopeQualifierInput">scopeQualifierInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunCrossWorkspaceAccessAllowRulesDestinationWorkspaceApiOutputReference.property.scopesInput">scopesInput</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunCrossWorkspaceAccessAllowRulesDestinationWorkspaceApiOutputReference.property.excludedScopes">excludedScopes</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunCrossWorkspaceAccessAllowRulesDestinationWorkspaceApiOutputReference.property.scopeQualifier">scopeQualifier</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunCrossWorkspaceAccessAllowRulesDestinationWorkspaceApiOutputReference.property.scopes">scopes</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunCrossWorkspaceAccessAllowRulesDestinationWorkspaceApiOutputReference.property.internalValue">internalValue</a></code> | <code>io.cdktn.cdktn.IResolvable\|<a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunCrossWorkspaceAccessAllowRulesDestinationWorkspaceApi">DataDatabricksAccountNetworkPolicyIngressDryRunCrossWorkspaceAccessAllowRulesDestinationWorkspaceApi</a></code> | *No description.* |
@@ -25090,6 +25325,16 @@ public java.lang.String getFqn();
 
 ---
 
+##### `excludedScopesInput`<sup>Optional</sup> <a name="excludedScopesInput" id="@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunCrossWorkspaceAccessAllowRulesDestinationWorkspaceApiOutputReference.property.excludedScopesInput"></a>
+
+```java
+public java.util.List<java.lang.String> getExcludedScopesInput();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+---
+
 ##### `scopeQualifierInput`<sup>Optional</sup> <a name="scopeQualifierInput" id="@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunCrossWorkspaceAccessAllowRulesDestinationWorkspaceApiOutputReference.property.scopeQualifierInput"></a>
 
 ```java
@@ -25104,6 +25349,16 @@ public java.lang.String getScopeQualifierInput();
 
 ```java
 public java.util.List<java.lang.String> getScopesInput();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+---
+
+##### `excludedScopes`<sup>Required</sup> <a name="excludedScopes" id="@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunCrossWorkspaceAccessAllowRulesDestinationWorkspaceApiOutputReference.property.excludedScopes"></a>
+
+```java
+public java.util.List<java.lang.String> getExcludedScopes();
 ```
 
 - *Type:* java.util.List<java.lang.String>
@@ -29445,6 +29700,7 @@ The attribute on the parent resource this class is referencing.
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunCrossWorkspaceAccessDenyRulesDestinationWorkspaceApiOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunCrossWorkspaceAccessDenyRulesDestinationWorkspaceApiOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunCrossWorkspaceAccessDenyRulesDestinationWorkspaceApiOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunCrossWorkspaceAccessDenyRulesDestinationWorkspaceApiOutputReference.resetExcludedScopes">resetExcludedScopes</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunCrossWorkspaceAccessDenyRulesDestinationWorkspaceApiOutputReference.resetScopeQualifier">resetScopeQualifier</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunCrossWorkspaceAccessDenyRulesDestinationWorkspaceApiOutputReference.resetScopes">resetScopes</a></code> | *No description.* |
 
@@ -29600,6 +29856,12 @@ Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
 
+##### `resetExcludedScopes` <a name="resetExcludedScopes" id="@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunCrossWorkspaceAccessDenyRulesDestinationWorkspaceApiOutputReference.resetExcludedScopes"></a>
+
+```java
+public void resetExcludedScopes()
+```
+
 ##### `resetScopeQualifier` <a name="resetScopeQualifier" id="@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunCrossWorkspaceAccessDenyRulesDestinationWorkspaceApiOutputReference.resetScopeQualifier"></a>
 
 ```java
@@ -29619,8 +29881,10 @@ public void resetScopes()
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunCrossWorkspaceAccessDenyRulesDestinationWorkspaceApiOutputReference.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunCrossWorkspaceAccessDenyRulesDestinationWorkspaceApiOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunCrossWorkspaceAccessDenyRulesDestinationWorkspaceApiOutputReference.property.excludedScopesInput">excludedScopesInput</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunCrossWorkspaceAccessDenyRulesDestinationWorkspaceApiOutputReference.property.scopeQualifierInput">scopeQualifierInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunCrossWorkspaceAccessDenyRulesDestinationWorkspaceApiOutputReference.property.scopesInput">scopesInput</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunCrossWorkspaceAccessDenyRulesDestinationWorkspaceApiOutputReference.property.excludedScopes">excludedScopes</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunCrossWorkspaceAccessDenyRulesDestinationWorkspaceApiOutputReference.property.scopeQualifier">scopeQualifier</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunCrossWorkspaceAccessDenyRulesDestinationWorkspaceApiOutputReference.property.scopes">scopes</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunCrossWorkspaceAccessDenyRulesDestinationWorkspaceApiOutputReference.property.internalValue">internalValue</a></code> | <code>io.cdktn.cdktn.IResolvable\|<a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunCrossWorkspaceAccessDenyRulesDestinationWorkspaceApi">DataDatabricksAccountNetworkPolicyIngressDryRunCrossWorkspaceAccessDenyRulesDestinationWorkspaceApi</a></code> | *No description.* |
@@ -29651,6 +29915,16 @@ public java.lang.String getFqn();
 
 ---
 
+##### `excludedScopesInput`<sup>Optional</sup> <a name="excludedScopesInput" id="@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunCrossWorkspaceAccessDenyRulesDestinationWorkspaceApiOutputReference.property.excludedScopesInput"></a>
+
+```java
+public java.util.List<java.lang.String> getExcludedScopesInput();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+---
+
 ##### `scopeQualifierInput`<sup>Optional</sup> <a name="scopeQualifierInput" id="@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunCrossWorkspaceAccessDenyRulesDestinationWorkspaceApiOutputReference.property.scopeQualifierInput"></a>
 
 ```java
@@ -29665,6 +29939,16 @@ public java.lang.String getScopeQualifierInput();
 
 ```java
 public java.util.List<java.lang.String> getScopesInput();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+---
+
+##### `excludedScopes`<sup>Required</sup> <a name="excludedScopes" id="@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunCrossWorkspaceAccessDenyRulesDestinationWorkspaceApiOutputReference.property.excludedScopes"></a>
+
+```java
+public java.util.List<java.lang.String> getExcludedScopes();
 ```
 
 - *Type:* java.util.List<java.lang.String>
@@ -34736,6 +35020,7 @@ The attribute on the parent resource this class is referencing.
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPrivateAccessAllowRulesDestinationWorkspaceApiOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPrivateAccessAllowRulesDestinationWorkspaceApiOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPrivateAccessAllowRulesDestinationWorkspaceApiOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPrivateAccessAllowRulesDestinationWorkspaceApiOutputReference.resetExcludedScopes">resetExcludedScopes</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPrivateAccessAllowRulesDestinationWorkspaceApiOutputReference.resetScopeQualifier">resetScopeQualifier</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPrivateAccessAllowRulesDestinationWorkspaceApiOutputReference.resetScopes">resetScopes</a></code> | *No description.* |
 
@@ -34891,6 +35176,12 @@ Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
 
+##### `resetExcludedScopes` <a name="resetExcludedScopes" id="@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPrivateAccessAllowRulesDestinationWorkspaceApiOutputReference.resetExcludedScopes"></a>
+
+```java
+public void resetExcludedScopes()
+```
+
 ##### `resetScopeQualifier` <a name="resetScopeQualifier" id="@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPrivateAccessAllowRulesDestinationWorkspaceApiOutputReference.resetScopeQualifier"></a>
 
 ```java
@@ -34910,8 +35201,10 @@ public void resetScopes()
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPrivateAccessAllowRulesDestinationWorkspaceApiOutputReference.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPrivateAccessAllowRulesDestinationWorkspaceApiOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPrivateAccessAllowRulesDestinationWorkspaceApiOutputReference.property.excludedScopesInput">excludedScopesInput</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPrivateAccessAllowRulesDestinationWorkspaceApiOutputReference.property.scopeQualifierInput">scopeQualifierInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPrivateAccessAllowRulesDestinationWorkspaceApiOutputReference.property.scopesInput">scopesInput</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPrivateAccessAllowRulesDestinationWorkspaceApiOutputReference.property.excludedScopes">excludedScopes</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPrivateAccessAllowRulesDestinationWorkspaceApiOutputReference.property.scopeQualifier">scopeQualifier</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPrivateAccessAllowRulesDestinationWorkspaceApiOutputReference.property.scopes">scopes</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPrivateAccessAllowRulesDestinationWorkspaceApiOutputReference.property.internalValue">internalValue</a></code> | <code>io.cdktn.cdktn.IResolvable\|<a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPrivateAccessAllowRulesDestinationWorkspaceApi">DataDatabricksAccountNetworkPolicyIngressDryRunPrivateAccessAllowRulesDestinationWorkspaceApi</a></code> | *No description.* |
@@ -34942,6 +35235,16 @@ public java.lang.String getFqn();
 
 ---
 
+##### `excludedScopesInput`<sup>Optional</sup> <a name="excludedScopesInput" id="@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPrivateAccessAllowRulesDestinationWorkspaceApiOutputReference.property.excludedScopesInput"></a>
+
+```java
+public java.util.List<java.lang.String> getExcludedScopesInput();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+---
+
 ##### `scopeQualifierInput`<sup>Optional</sup> <a name="scopeQualifierInput" id="@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPrivateAccessAllowRulesDestinationWorkspaceApiOutputReference.property.scopeQualifierInput"></a>
 
 ```java
@@ -34956,6 +35259,16 @@ public java.lang.String getScopeQualifierInput();
 
 ```java
 public java.util.List<java.lang.String> getScopesInput();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+---
+
+##### `excludedScopes`<sup>Required</sup> <a name="excludedScopes" id="@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPrivateAccessAllowRulesDestinationWorkspaceApiOutputReference.property.excludedScopes"></a>
+
+```java
+public java.util.List<java.lang.String> getExcludedScopes();
 ```
 
 - *Type:* java.util.List<java.lang.String>
@@ -39355,6 +39668,7 @@ The attribute on the parent resource this class is referencing.
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPrivateAccessDenyRulesDestinationWorkspaceApiOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPrivateAccessDenyRulesDestinationWorkspaceApiOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPrivateAccessDenyRulesDestinationWorkspaceApiOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPrivateAccessDenyRulesDestinationWorkspaceApiOutputReference.resetExcludedScopes">resetExcludedScopes</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPrivateAccessDenyRulesDestinationWorkspaceApiOutputReference.resetScopeQualifier">resetScopeQualifier</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPrivateAccessDenyRulesDestinationWorkspaceApiOutputReference.resetScopes">resetScopes</a></code> | *No description.* |
 
@@ -39510,6 +39824,12 @@ Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
 
+##### `resetExcludedScopes` <a name="resetExcludedScopes" id="@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPrivateAccessDenyRulesDestinationWorkspaceApiOutputReference.resetExcludedScopes"></a>
+
+```java
+public void resetExcludedScopes()
+```
+
 ##### `resetScopeQualifier` <a name="resetScopeQualifier" id="@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPrivateAccessDenyRulesDestinationWorkspaceApiOutputReference.resetScopeQualifier"></a>
 
 ```java
@@ -39529,8 +39849,10 @@ public void resetScopes()
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPrivateAccessDenyRulesDestinationWorkspaceApiOutputReference.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPrivateAccessDenyRulesDestinationWorkspaceApiOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPrivateAccessDenyRulesDestinationWorkspaceApiOutputReference.property.excludedScopesInput">excludedScopesInput</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPrivateAccessDenyRulesDestinationWorkspaceApiOutputReference.property.scopeQualifierInput">scopeQualifierInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPrivateAccessDenyRulesDestinationWorkspaceApiOutputReference.property.scopesInput">scopesInput</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPrivateAccessDenyRulesDestinationWorkspaceApiOutputReference.property.excludedScopes">excludedScopes</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPrivateAccessDenyRulesDestinationWorkspaceApiOutputReference.property.scopeQualifier">scopeQualifier</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPrivateAccessDenyRulesDestinationWorkspaceApiOutputReference.property.scopes">scopes</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPrivateAccessDenyRulesDestinationWorkspaceApiOutputReference.property.internalValue">internalValue</a></code> | <code>io.cdktn.cdktn.IResolvable\|<a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPrivateAccessDenyRulesDestinationWorkspaceApi">DataDatabricksAccountNetworkPolicyIngressDryRunPrivateAccessDenyRulesDestinationWorkspaceApi</a></code> | *No description.* |
@@ -39561,6 +39883,16 @@ public java.lang.String getFqn();
 
 ---
 
+##### `excludedScopesInput`<sup>Optional</sup> <a name="excludedScopesInput" id="@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPrivateAccessDenyRulesDestinationWorkspaceApiOutputReference.property.excludedScopesInput"></a>
+
+```java
+public java.util.List<java.lang.String> getExcludedScopesInput();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+---
+
 ##### `scopeQualifierInput`<sup>Optional</sup> <a name="scopeQualifierInput" id="@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPrivateAccessDenyRulesDestinationWorkspaceApiOutputReference.property.scopeQualifierInput"></a>
 
 ```java
@@ -39575,6 +39907,16 @@ public java.lang.String getScopeQualifierInput();
 
 ```java
 public java.util.List<java.lang.String> getScopesInput();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+---
+
+##### `excludedScopes`<sup>Required</sup> <a name="excludedScopes" id="@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPrivateAccessDenyRulesDestinationWorkspaceApiOutputReference.property.excludedScopes"></a>
+
+```java
+public java.util.List<java.lang.String> getExcludedScopes();
 ```
 
 - *Type:* java.util.List<java.lang.String>
@@ -44329,6 +44671,7 @@ The attribute on the parent resource this class is referencing.
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestinationWorkspaceApiOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestinationWorkspaceApiOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestinationWorkspaceApiOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestinationWorkspaceApiOutputReference.resetExcludedScopes">resetExcludedScopes</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestinationWorkspaceApiOutputReference.resetScopeQualifier">resetScopeQualifier</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestinationWorkspaceApiOutputReference.resetScopes">resetScopes</a></code> | *No description.* |
 
@@ -44484,6 +44827,12 @@ Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
 
+##### `resetExcludedScopes` <a name="resetExcludedScopes" id="@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestinationWorkspaceApiOutputReference.resetExcludedScopes"></a>
+
+```java
+public void resetExcludedScopes()
+```
+
 ##### `resetScopeQualifier` <a name="resetScopeQualifier" id="@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestinationWorkspaceApiOutputReference.resetScopeQualifier"></a>
 
 ```java
@@ -44503,8 +44852,10 @@ public void resetScopes()
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestinationWorkspaceApiOutputReference.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestinationWorkspaceApiOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestinationWorkspaceApiOutputReference.property.excludedScopesInput">excludedScopesInput</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestinationWorkspaceApiOutputReference.property.scopeQualifierInput">scopeQualifierInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestinationWorkspaceApiOutputReference.property.scopesInput">scopesInput</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestinationWorkspaceApiOutputReference.property.excludedScopes">excludedScopes</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestinationWorkspaceApiOutputReference.property.scopeQualifier">scopeQualifier</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestinationWorkspaceApiOutputReference.property.scopes">scopes</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestinationWorkspaceApiOutputReference.property.internalValue">internalValue</a></code> | <code>io.cdktn.cdktn.IResolvable\|<a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestinationWorkspaceApi">DataDatabricksAccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestinationWorkspaceApi</a></code> | *No description.* |
@@ -44535,6 +44886,16 @@ public java.lang.String getFqn();
 
 ---
 
+##### `excludedScopesInput`<sup>Optional</sup> <a name="excludedScopesInput" id="@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestinationWorkspaceApiOutputReference.property.excludedScopesInput"></a>
+
+```java
+public java.util.List<java.lang.String> getExcludedScopesInput();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+---
+
 ##### `scopeQualifierInput`<sup>Optional</sup> <a name="scopeQualifierInput" id="@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestinationWorkspaceApiOutputReference.property.scopeQualifierInput"></a>
 
 ```java
@@ -44549,6 +44910,16 @@ public java.lang.String getScopeQualifierInput();
 
 ```java
 public java.util.List<java.lang.String> getScopesInput();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+---
+
+##### `excludedScopes`<sup>Required</sup> <a name="excludedScopes" id="@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestinationWorkspaceApiOutputReference.property.excludedScopes"></a>
+
+```java
+public java.util.List<java.lang.String> getExcludedScopes();
 ```
 
 - *Type:* java.util.List<java.lang.String>
@@ -49210,6 +49581,7 @@ The attribute on the parent resource this class is referencing.
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationWorkspaceApiOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationWorkspaceApiOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationWorkspaceApiOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationWorkspaceApiOutputReference.resetExcludedScopes">resetExcludedScopes</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationWorkspaceApiOutputReference.resetScopeQualifier">resetScopeQualifier</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationWorkspaceApiOutputReference.resetScopes">resetScopes</a></code> | *No description.* |
 
@@ -49365,6 +49737,12 @@ Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
 
+##### `resetExcludedScopes` <a name="resetExcludedScopes" id="@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationWorkspaceApiOutputReference.resetExcludedScopes"></a>
+
+```java
+public void resetExcludedScopes()
+```
+
 ##### `resetScopeQualifier` <a name="resetScopeQualifier" id="@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationWorkspaceApiOutputReference.resetScopeQualifier"></a>
 
 ```java
@@ -49384,8 +49762,10 @@ public void resetScopes()
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationWorkspaceApiOutputReference.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationWorkspaceApiOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationWorkspaceApiOutputReference.property.excludedScopesInput">excludedScopesInput</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationWorkspaceApiOutputReference.property.scopeQualifierInput">scopeQualifierInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationWorkspaceApiOutputReference.property.scopesInput">scopesInput</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationWorkspaceApiOutputReference.property.excludedScopes">excludedScopes</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationWorkspaceApiOutputReference.property.scopeQualifier">scopeQualifier</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationWorkspaceApiOutputReference.property.scopes">scopes</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationWorkspaceApiOutputReference.property.internalValue">internalValue</a></code> | <code>io.cdktn.cdktn.IResolvable\|<a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationWorkspaceApi">DataDatabricksAccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationWorkspaceApi</a></code> | *No description.* |
@@ -49416,6 +49796,16 @@ public java.lang.String getFqn();
 
 ---
 
+##### `excludedScopesInput`<sup>Optional</sup> <a name="excludedScopesInput" id="@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationWorkspaceApiOutputReference.property.excludedScopesInput"></a>
+
+```java
+public java.util.List<java.lang.String> getExcludedScopesInput();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+---
+
 ##### `scopeQualifierInput`<sup>Optional</sup> <a name="scopeQualifierInput" id="@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationWorkspaceApiOutputReference.property.scopeQualifierInput"></a>
 
 ```java
@@ -49430,6 +49820,16 @@ public java.lang.String getScopeQualifierInput();
 
 ```java
 public java.util.List<java.lang.String> getScopesInput();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+---
+
+##### `excludedScopes`<sup>Required</sup> <a name="excludedScopes" id="@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationWorkspaceApiOutputReference.property.excludedScopes"></a>
+
+```java
+public java.util.List<java.lang.String> getExcludedScopes();
 ```
 
 - *Type:* java.util.List<java.lang.String>
@@ -54821,6 +55221,7 @@ The attribute on the parent resource this class is referencing.
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPrivateAccessAllowRulesDestinationWorkspaceApiOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPrivateAccessAllowRulesDestinationWorkspaceApiOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPrivateAccessAllowRulesDestinationWorkspaceApiOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPrivateAccessAllowRulesDestinationWorkspaceApiOutputReference.resetExcludedScopes">resetExcludedScopes</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPrivateAccessAllowRulesDestinationWorkspaceApiOutputReference.resetScopeQualifier">resetScopeQualifier</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPrivateAccessAllowRulesDestinationWorkspaceApiOutputReference.resetScopes">resetScopes</a></code> | *No description.* |
 
@@ -54976,6 +55377,12 @@ Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
 
+##### `resetExcludedScopes` <a name="resetExcludedScopes" id="@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPrivateAccessAllowRulesDestinationWorkspaceApiOutputReference.resetExcludedScopes"></a>
+
+```java
+public void resetExcludedScopes()
+```
+
 ##### `resetScopeQualifier` <a name="resetScopeQualifier" id="@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPrivateAccessAllowRulesDestinationWorkspaceApiOutputReference.resetScopeQualifier"></a>
 
 ```java
@@ -54995,8 +55402,10 @@ public void resetScopes()
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPrivateAccessAllowRulesDestinationWorkspaceApiOutputReference.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPrivateAccessAllowRulesDestinationWorkspaceApiOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPrivateAccessAllowRulesDestinationWorkspaceApiOutputReference.property.excludedScopesInput">excludedScopesInput</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPrivateAccessAllowRulesDestinationWorkspaceApiOutputReference.property.scopeQualifierInput">scopeQualifierInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPrivateAccessAllowRulesDestinationWorkspaceApiOutputReference.property.scopesInput">scopesInput</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPrivateAccessAllowRulesDestinationWorkspaceApiOutputReference.property.excludedScopes">excludedScopes</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPrivateAccessAllowRulesDestinationWorkspaceApiOutputReference.property.scopeQualifier">scopeQualifier</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPrivateAccessAllowRulesDestinationWorkspaceApiOutputReference.property.scopes">scopes</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPrivateAccessAllowRulesDestinationWorkspaceApiOutputReference.property.internalValue">internalValue</a></code> | <code>io.cdktn.cdktn.IResolvable\|<a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPrivateAccessAllowRulesDestinationWorkspaceApi">DataDatabricksAccountNetworkPolicyIngressPrivateAccessAllowRulesDestinationWorkspaceApi</a></code> | *No description.* |
@@ -55027,6 +55436,16 @@ public java.lang.String getFqn();
 
 ---
 
+##### `excludedScopesInput`<sup>Optional</sup> <a name="excludedScopesInput" id="@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPrivateAccessAllowRulesDestinationWorkspaceApiOutputReference.property.excludedScopesInput"></a>
+
+```java
+public java.util.List<java.lang.String> getExcludedScopesInput();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+---
+
 ##### `scopeQualifierInput`<sup>Optional</sup> <a name="scopeQualifierInput" id="@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPrivateAccessAllowRulesDestinationWorkspaceApiOutputReference.property.scopeQualifierInput"></a>
 
 ```java
@@ -55041,6 +55460,16 @@ public java.lang.String getScopeQualifierInput();
 
 ```java
 public java.util.List<java.lang.String> getScopesInput();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+---
+
+##### `excludedScopes`<sup>Required</sup> <a name="excludedScopes" id="@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPrivateAccessAllowRulesDestinationWorkspaceApiOutputReference.property.excludedScopes"></a>
+
+```java
+public java.util.List<java.lang.String> getExcludedScopes();
 ```
 
 - *Type:* java.util.List<java.lang.String>
@@ -59440,6 +59869,7 @@ The attribute on the parent resource this class is referencing.
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPrivateAccessDenyRulesDestinationWorkspaceApiOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPrivateAccessDenyRulesDestinationWorkspaceApiOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPrivateAccessDenyRulesDestinationWorkspaceApiOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPrivateAccessDenyRulesDestinationWorkspaceApiOutputReference.resetExcludedScopes">resetExcludedScopes</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPrivateAccessDenyRulesDestinationWorkspaceApiOutputReference.resetScopeQualifier">resetScopeQualifier</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPrivateAccessDenyRulesDestinationWorkspaceApiOutputReference.resetScopes">resetScopes</a></code> | *No description.* |
 
@@ -59595,6 +60025,12 @@ Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
 
+##### `resetExcludedScopes` <a name="resetExcludedScopes" id="@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPrivateAccessDenyRulesDestinationWorkspaceApiOutputReference.resetExcludedScopes"></a>
+
+```java
+public void resetExcludedScopes()
+```
+
 ##### `resetScopeQualifier` <a name="resetScopeQualifier" id="@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPrivateAccessDenyRulesDestinationWorkspaceApiOutputReference.resetScopeQualifier"></a>
 
 ```java
@@ -59614,8 +60050,10 @@ public void resetScopes()
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPrivateAccessDenyRulesDestinationWorkspaceApiOutputReference.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPrivateAccessDenyRulesDestinationWorkspaceApiOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPrivateAccessDenyRulesDestinationWorkspaceApiOutputReference.property.excludedScopesInput">excludedScopesInput</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPrivateAccessDenyRulesDestinationWorkspaceApiOutputReference.property.scopeQualifierInput">scopeQualifierInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPrivateAccessDenyRulesDestinationWorkspaceApiOutputReference.property.scopesInput">scopesInput</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPrivateAccessDenyRulesDestinationWorkspaceApiOutputReference.property.excludedScopes">excludedScopes</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPrivateAccessDenyRulesDestinationWorkspaceApiOutputReference.property.scopeQualifier">scopeQualifier</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPrivateAccessDenyRulesDestinationWorkspaceApiOutputReference.property.scopes">scopes</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPrivateAccessDenyRulesDestinationWorkspaceApiOutputReference.property.internalValue">internalValue</a></code> | <code>io.cdktn.cdktn.IResolvable\|<a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPrivateAccessDenyRulesDestinationWorkspaceApi">DataDatabricksAccountNetworkPolicyIngressPrivateAccessDenyRulesDestinationWorkspaceApi</a></code> | *No description.* |
@@ -59646,6 +60084,16 @@ public java.lang.String getFqn();
 
 ---
 
+##### `excludedScopesInput`<sup>Optional</sup> <a name="excludedScopesInput" id="@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPrivateAccessDenyRulesDestinationWorkspaceApiOutputReference.property.excludedScopesInput"></a>
+
+```java
+public java.util.List<java.lang.String> getExcludedScopesInput();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+---
+
 ##### `scopeQualifierInput`<sup>Optional</sup> <a name="scopeQualifierInput" id="@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPrivateAccessDenyRulesDestinationWorkspaceApiOutputReference.property.scopeQualifierInput"></a>
 
 ```java
@@ -59660,6 +60108,16 @@ public java.lang.String getScopeQualifierInput();
 
 ```java
 public java.util.List<java.lang.String> getScopesInput();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+---
+
+##### `excludedScopes`<sup>Required</sup> <a name="excludedScopes" id="@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPrivateAccessDenyRulesDestinationWorkspaceApiOutputReference.property.excludedScopes"></a>
+
+```java
+public java.util.List<java.lang.String> getExcludedScopes();
 ```
 
 - *Type:* java.util.List<java.lang.String>
@@ -64414,6 +64872,7 @@ The attribute on the parent resource this class is referencing.
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPublicAccessAllowRulesDestinationWorkspaceApiOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPublicAccessAllowRulesDestinationWorkspaceApiOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPublicAccessAllowRulesDestinationWorkspaceApiOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPublicAccessAllowRulesDestinationWorkspaceApiOutputReference.resetExcludedScopes">resetExcludedScopes</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPublicAccessAllowRulesDestinationWorkspaceApiOutputReference.resetScopeQualifier">resetScopeQualifier</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPublicAccessAllowRulesDestinationWorkspaceApiOutputReference.resetScopes">resetScopes</a></code> | *No description.* |
 
@@ -64569,6 +65028,12 @@ Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
 
+##### `resetExcludedScopes` <a name="resetExcludedScopes" id="@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPublicAccessAllowRulesDestinationWorkspaceApiOutputReference.resetExcludedScopes"></a>
+
+```java
+public void resetExcludedScopes()
+```
+
 ##### `resetScopeQualifier` <a name="resetScopeQualifier" id="@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPublicAccessAllowRulesDestinationWorkspaceApiOutputReference.resetScopeQualifier"></a>
 
 ```java
@@ -64588,8 +65053,10 @@ public void resetScopes()
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPublicAccessAllowRulesDestinationWorkspaceApiOutputReference.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPublicAccessAllowRulesDestinationWorkspaceApiOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPublicAccessAllowRulesDestinationWorkspaceApiOutputReference.property.excludedScopesInput">excludedScopesInput</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPublicAccessAllowRulesDestinationWorkspaceApiOutputReference.property.scopeQualifierInput">scopeQualifierInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPublicAccessAllowRulesDestinationWorkspaceApiOutputReference.property.scopesInput">scopesInput</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPublicAccessAllowRulesDestinationWorkspaceApiOutputReference.property.excludedScopes">excludedScopes</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPublicAccessAllowRulesDestinationWorkspaceApiOutputReference.property.scopeQualifier">scopeQualifier</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPublicAccessAllowRulesDestinationWorkspaceApiOutputReference.property.scopes">scopes</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPublicAccessAllowRulesDestinationWorkspaceApiOutputReference.property.internalValue">internalValue</a></code> | <code>io.cdktn.cdktn.IResolvable\|<a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPublicAccessAllowRulesDestinationWorkspaceApi">DataDatabricksAccountNetworkPolicyIngressPublicAccessAllowRulesDestinationWorkspaceApi</a></code> | *No description.* |
@@ -64620,6 +65087,16 @@ public java.lang.String getFqn();
 
 ---
 
+##### `excludedScopesInput`<sup>Optional</sup> <a name="excludedScopesInput" id="@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPublicAccessAllowRulesDestinationWorkspaceApiOutputReference.property.excludedScopesInput"></a>
+
+```java
+public java.util.List<java.lang.String> getExcludedScopesInput();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+---
+
 ##### `scopeQualifierInput`<sup>Optional</sup> <a name="scopeQualifierInput" id="@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPublicAccessAllowRulesDestinationWorkspaceApiOutputReference.property.scopeQualifierInput"></a>
 
 ```java
@@ -64634,6 +65111,16 @@ public java.lang.String getScopeQualifierInput();
 
 ```java
 public java.util.List<java.lang.String> getScopesInput();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+---
+
+##### `excludedScopes`<sup>Required</sup> <a name="excludedScopes" id="@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPublicAccessAllowRulesDestinationWorkspaceApiOutputReference.property.excludedScopes"></a>
+
+```java
+public java.util.List<java.lang.String> getExcludedScopes();
 ```
 
 - *Type:* java.util.List<java.lang.String>
@@ -69295,6 +69782,7 @@ The attribute on the parent resource this class is referencing.
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPublicAccessDenyRulesDestinationWorkspaceApiOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPublicAccessDenyRulesDestinationWorkspaceApiOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPublicAccessDenyRulesDestinationWorkspaceApiOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPublicAccessDenyRulesDestinationWorkspaceApiOutputReference.resetExcludedScopes">resetExcludedScopes</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPublicAccessDenyRulesDestinationWorkspaceApiOutputReference.resetScopeQualifier">resetScopeQualifier</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPublicAccessDenyRulesDestinationWorkspaceApiOutputReference.resetScopes">resetScopes</a></code> | *No description.* |
 
@@ -69450,6 +69938,12 @@ Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
 
+##### `resetExcludedScopes` <a name="resetExcludedScopes" id="@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPublicAccessDenyRulesDestinationWorkspaceApiOutputReference.resetExcludedScopes"></a>
+
+```java
+public void resetExcludedScopes()
+```
+
 ##### `resetScopeQualifier` <a name="resetScopeQualifier" id="@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPublicAccessDenyRulesDestinationWorkspaceApiOutputReference.resetScopeQualifier"></a>
 
 ```java
@@ -69469,8 +69963,10 @@ public void resetScopes()
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPublicAccessDenyRulesDestinationWorkspaceApiOutputReference.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPublicAccessDenyRulesDestinationWorkspaceApiOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPublicAccessDenyRulesDestinationWorkspaceApiOutputReference.property.excludedScopesInput">excludedScopesInput</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPublicAccessDenyRulesDestinationWorkspaceApiOutputReference.property.scopeQualifierInput">scopeQualifierInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPublicAccessDenyRulesDestinationWorkspaceApiOutputReference.property.scopesInput">scopesInput</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPublicAccessDenyRulesDestinationWorkspaceApiOutputReference.property.excludedScopes">excludedScopes</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPublicAccessDenyRulesDestinationWorkspaceApiOutputReference.property.scopeQualifier">scopeQualifier</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPublicAccessDenyRulesDestinationWorkspaceApiOutputReference.property.scopes">scopes</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPublicAccessDenyRulesDestinationWorkspaceApiOutputReference.property.internalValue">internalValue</a></code> | <code>io.cdktn.cdktn.IResolvable\|<a href="#@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPublicAccessDenyRulesDestinationWorkspaceApi">DataDatabricksAccountNetworkPolicyIngressPublicAccessDenyRulesDestinationWorkspaceApi</a></code> | *No description.* |
@@ -69501,6 +69997,16 @@ public java.lang.String getFqn();
 
 ---
 
+##### `excludedScopesInput`<sup>Optional</sup> <a name="excludedScopesInput" id="@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPublicAccessDenyRulesDestinationWorkspaceApiOutputReference.property.excludedScopesInput"></a>
+
+```java
+public java.util.List<java.lang.String> getExcludedScopesInput();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+---
+
 ##### `scopeQualifierInput`<sup>Optional</sup> <a name="scopeQualifierInput" id="@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPublicAccessDenyRulesDestinationWorkspaceApiOutputReference.property.scopeQualifierInput"></a>
 
 ```java
@@ -69515,6 +70021,16 @@ public java.lang.String getScopeQualifierInput();
 
 ```java
 public java.util.List<java.lang.String> getScopesInput();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+---
+
+##### `excludedScopes`<sup>Required</sup> <a name="excludedScopes" id="@cdktn/provider-databricks.dataDatabricksAccountNetworkPolicy.DataDatabricksAccountNetworkPolicyIngressPublicAccessDenyRulesDestinationWorkspaceApiOutputReference.property.excludedScopes"></a>
+
+```java
+public java.util.List<java.lang.String> getExcludedScopes();
 ```
 
 - *Type:* java.util.List<java.lang.String>

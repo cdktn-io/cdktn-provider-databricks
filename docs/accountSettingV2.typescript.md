@@ -4,7 +4,7 @@
 
 ### AccountSettingV2 <a name="AccountSettingV2" id="@cdktn/provider-databricks.accountSettingV2.AccountSettingV2"></a>
 
-Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/account_setting_v2 databricks_account_setting_v2}.
+Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/account_setting_v2 databricks_account_setting_v2}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.accountSettingV2.AccountSettingV2.Initializer"></a>
 
@@ -85,11 +85,13 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2.putEffectiveAutomaticClusterUpdateWorkspace">putEffectiveAutomaticClusterUpdateWorkspace</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2.putEffectivePersonalCompute">putEffectivePersonalCompute</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2.putEffectiveRestrictWorkspaceAdmins">putEffectiveRestrictWorkspaceAdmins</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2.putEffectiveWorkspaceLabel">putEffectiveWorkspaceLabel</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2.putIntegerVal">putIntegerVal</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2.putOperationalEmailCustomRecipient">putOperationalEmailCustomRecipient</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2.putPersonalCompute">putPersonalCompute</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2.putRestrictWorkspaceAdmins">putRestrictWorkspaceAdmins</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2.putStringVal">putStringVal</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2.putWorkspaceLabel">putWorkspaceLabel</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2.resetAibiDashboardEmbeddingAccessPolicy">resetAibiDashboardEmbeddingAccessPolicy</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2.resetAibiDashboardEmbeddingApprovedDomains">resetAibiDashboardEmbeddingApprovedDomains</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2.resetAllowedAppsUserApiScopes">resetAllowedAppsUserApiScopes</a></code> | *No description.* |
@@ -101,12 +103,14 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2.resetEffectiveAutomaticClusterUpdateWorkspace">resetEffectiveAutomaticClusterUpdateWorkspace</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2.resetEffectivePersonalCompute">resetEffectivePersonalCompute</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2.resetEffectiveRestrictWorkspaceAdmins">resetEffectiveRestrictWorkspaceAdmins</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2.resetEffectiveWorkspaceLabel">resetEffectiveWorkspaceLabel</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2.resetIntegerVal">resetIntegerVal</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2.resetName">resetName</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2.resetOperationalEmailCustomRecipient">resetOperationalEmailCustomRecipient</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2.resetPersonalCompute">resetPersonalCompute</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2.resetRestrictWorkspaceAdmins">resetRestrictWorkspaceAdmins</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2.resetStringVal">resetStringVal</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2.resetWorkspaceLabel">resetWorkspaceLabel</a></code> | *No description.* |
 
 ---
 
@@ -551,6 +555,18 @@ public putEffectiveRestrictWorkspaceAdmins(value: AccountSettingV2EffectiveRestr
 
 ---
 
+##### `putEffectiveWorkspaceLabel` <a name="putEffectiveWorkspaceLabel" id="@cdktn/provider-databricks.accountSettingV2.AccountSettingV2.putEffectiveWorkspaceLabel"></a>
+
+```typescript
+public putEffectiveWorkspaceLabel(value: AccountSettingV2EffectiveWorkspaceLabel): void
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-databricks.accountSettingV2.AccountSettingV2.putEffectiveWorkspaceLabel.parameter.value"></a>
+
+- *Type:* <a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceLabel">AccountSettingV2EffectiveWorkspaceLabel</a>
+
+---
+
 ##### `putIntegerVal` <a name="putIntegerVal" id="@cdktn/provider-databricks.accountSettingV2.AccountSettingV2.putIntegerVal"></a>
 
 ```typescript
@@ -608,6 +624,18 @@ public putStringVal(value: AccountSettingV2StringVal): void
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-databricks.accountSettingV2.AccountSettingV2.putStringVal.parameter.value"></a>
 
 - *Type:* <a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2StringVal">AccountSettingV2StringVal</a>
+
+---
+
+##### `putWorkspaceLabel` <a name="putWorkspaceLabel" id="@cdktn/provider-databricks.accountSettingV2.AccountSettingV2.putWorkspaceLabel"></a>
+
+```typescript
+public putWorkspaceLabel(value: AccountSettingV2WorkspaceLabel): void
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-databricks.accountSettingV2.AccountSettingV2.putWorkspaceLabel.parameter.value"></a>
+
+- *Type:* <a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceLabel">AccountSettingV2WorkspaceLabel</a>
 
 ---
 
@@ -677,6 +705,12 @@ public resetEffectivePersonalCompute(): void
 public resetEffectiveRestrictWorkspaceAdmins(): void
 ```
 
+##### `resetEffectiveWorkspaceLabel` <a name="resetEffectiveWorkspaceLabel" id="@cdktn/provider-databricks.accountSettingV2.AccountSettingV2.resetEffectiveWorkspaceLabel"></a>
+
+```typescript
+public resetEffectiveWorkspaceLabel(): void
+```
+
 ##### `resetIntegerVal` <a name="resetIntegerVal" id="@cdktn/provider-databricks.accountSettingV2.AccountSettingV2.resetIntegerVal"></a>
 
 ```typescript
@@ -711,6 +745,12 @@ public resetRestrictWorkspaceAdmins(): void
 
 ```typescript
 public resetStringVal(): void
+```
+
+##### `resetWorkspaceLabel` <a name="resetWorkspaceLabel" id="@cdktn/provider-databricks.accountSettingV2.AccountSettingV2.resetWorkspaceLabel"></a>
+
+```typescript
+public resetWorkspaceLabel(): void
 ```
 
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
@@ -816,7 +856,7 @@ The construct id used in the generated config for the AccountSettingV2 to import
 
 The id of the existing AccountSettingV2 that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/account_setting_v2#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/account_setting_v2#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -863,11 +903,13 @@ Refer to the {@link https://registry.terraform.io/providers/databricks/databrick
 | <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2.property.effectivePersonalCompute">effectivePersonalCompute</a></code> | <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectivePersonalComputeOutputReference">AccountSettingV2EffectivePersonalComputeOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2.property.effectiveRestrictWorkspaceAdmins">effectiveRestrictWorkspaceAdmins</a></code> | <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveRestrictWorkspaceAdminsOutputReference">AccountSettingV2EffectiveRestrictWorkspaceAdminsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2.property.effectiveStringVal">effectiveStringVal</a></code> | <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveStringValOutputReference">AccountSettingV2EffectiveStringValOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2.property.effectiveWorkspaceLabel">effectiveWorkspaceLabel</a></code> | <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceLabelOutputReference">AccountSettingV2EffectiveWorkspaceLabelOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2.property.integerVal">integerVal</a></code> | <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2IntegerValOutputReference">AccountSettingV2IntegerValOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2.property.operationalEmailCustomRecipient">operationalEmailCustomRecipient</a></code> | <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2OperationalEmailCustomRecipientOutputReference">AccountSettingV2OperationalEmailCustomRecipientOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2.property.personalCompute">personalCompute</a></code> | <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2PersonalComputeOutputReference">AccountSettingV2PersonalComputeOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2.property.restrictWorkspaceAdmins">restrictWorkspaceAdmins</a></code> | <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2RestrictWorkspaceAdminsOutputReference">AccountSettingV2RestrictWorkspaceAdminsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2.property.stringVal">stringVal</a></code> | <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2StringValOutputReference">AccountSettingV2StringValOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2.property.workspaceLabel">workspaceLabel</a></code> | <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceLabelOutputReference">AccountSettingV2WorkspaceLabelOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2.property.aibiDashboardEmbeddingAccessPolicyInput">aibiDashboardEmbeddingAccessPolicyInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2AibiDashboardEmbeddingAccessPolicy">AccountSettingV2AibiDashboardEmbeddingAccessPolicy</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2.property.aibiDashboardEmbeddingApprovedDomainsInput">aibiDashboardEmbeddingApprovedDomainsInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2AibiDashboardEmbeddingApprovedDomains">AccountSettingV2AibiDashboardEmbeddingApprovedDomains</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2.property.allowedAppsUserApiScopesInput">allowedAppsUserApiScopesInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2AllowedAppsUserApiScopes">AccountSettingV2AllowedAppsUserApiScopes</a></code> | *No description.* |
@@ -879,12 +921,14 @@ Refer to the {@link https://registry.terraform.io/providers/databricks/databrick
 | <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2.property.effectiveAutomaticClusterUpdateWorkspaceInput">effectiveAutomaticClusterUpdateWorkspaceInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveAutomaticClusterUpdateWorkspace">AccountSettingV2EffectiveAutomaticClusterUpdateWorkspace</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2.property.effectivePersonalComputeInput">effectivePersonalComputeInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectivePersonalCompute">AccountSettingV2EffectivePersonalCompute</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2.property.effectiveRestrictWorkspaceAdminsInput">effectiveRestrictWorkspaceAdminsInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveRestrictWorkspaceAdmins">AccountSettingV2EffectiveRestrictWorkspaceAdmins</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2.property.effectiveWorkspaceLabelInput">effectiveWorkspaceLabelInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceLabel">AccountSettingV2EffectiveWorkspaceLabel</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2.property.integerValInput">integerValInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2IntegerVal">AccountSettingV2IntegerVal</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2.property.nameInput">nameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2.property.operationalEmailCustomRecipientInput">operationalEmailCustomRecipientInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2OperationalEmailCustomRecipient">AccountSettingV2OperationalEmailCustomRecipient</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2.property.personalComputeInput">personalComputeInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2PersonalCompute">AccountSettingV2PersonalCompute</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2.property.restrictWorkspaceAdminsInput">restrictWorkspaceAdminsInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2RestrictWorkspaceAdmins">AccountSettingV2RestrictWorkspaceAdmins</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2.property.stringValInput">stringValInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2StringVal">AccountSettingV2StringVal</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2.property.workspaceLabelInput">workspaceLabelInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceLabel">AccountSettingV2WorkspaceLabel</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2.property.name">name</a></code> | <code>string</code> | *No description.* |
 
 ---
@@ -1201,6 +1245,16 @@ public readonly effectiveStringVal: AccountSettingV2EffectiveStringValOutputRefe
 
 ---
 
+##### `effectiveWorkspaceLabel`<sup>Required</sup> <a name="effectiveWorkspaceLabel" id="@cdktn/provider-databricks.accountSettingV2.AccountSettingV2.property.effectiveWorkspaceLabel"></a>
+
+```typescript
+public readonly effectiveWorkspaceLabel: AccountSettingV2EffectiveWorkspaceLabelOutputReference;
+```
+
+- *Type:* <a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceLabelOutputReference">AccountSettingV2EffectiveWorkspaceLabelOutputReference</a>
+
+---
+
 ##### `integerVal`<sup>Required</sup> <a name="integerVal" id="@cdktn/provider-databricks.accountSettingV2.AccountSettingV2.property.integerVal"></a>
 
 ```typescript
@@ -1248,6 +1302,16 @@ public readonly stringVal: AccountSettingV2StringValOutputReference;
 ```
 
 - *Type:* <a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2StringValOutputReference">AccountSettingV2StringValOutputReference</a>
+
+---
+
+##### `workspaceLabel`<sup>Required</sup> <a name="workspaceLabel" id="@cdktn/provider-databricks.accountSettingV2.AccountSettingV2.property.workspaceLabel"></a>
+
+```typescript
+public readonly workspaceLabel: AccountSettingV2WorkspaceLabelOutputReference;
+```
+
+- *Type:* <a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceLabelOutputReference">AccountSettingV2WorkspaceLabelOutputReference</a>
 
 ---
 
@@ -1361,6 +1425,16 @@ public readonly effectiveRestrictWorkspaceAdminsInput: IResolvable | AccountSett
 
 ---
 
+##### `effectiveWorkspaceLabelInput`<sup>Optional</sup> <a name="effectiveWorkspaceLabelInput" id="@cdktn/provider-databricks.accountSettingV2.AccountSettingV2.property.effectiveWorkspaceLabelInput"></a>
+
+```typescript
+public readonly effectiveWorkspaceLabelInput: IResolvable | AccountSettingV2EffectiveWorkspaceLabel;
+```
+
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceLabel">AccountSettingV2EffectiveWorkspaceLabel</a>
+
+---
+
 ##### `integerValInput`<sup>Optional</sup> <a name="integerValInput" id="@cdktn/provider-databricks.accountSettingV2.AccountSettingV2.property.integerValInput"></a>
 
 ```typescript
@@ -1421,6 +1495,16 @@ public readonly stringValInput: IResolvable | AccountSettingV2StringVal;
 
 ---
 
+##### `workspaceLabelInput`<sup>Optional</sup> <a name="workspaceLabelInput" id="@cdktn/provider-databricks.accountSettingV2.AccountSettingV2.property.workspaceLabelInput"></a>
+
+```typescript
+public readonly workspaceLabelInput: IResolvable | AccountSettingV2WorkspaceLabel;
+```
+
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceLabel">AccountSettingV2WorkspaceLabel</a>
+
+---
+
 ##### `name`<sup>Required</sup> <a name="name" id="@cdktn/provider-databricks.accountSettingV2.AccountSettingV2.property.name"></a>
 
 ```typescript
@@ -1465,7 +1549,7 @@ const accountSettingV2AibiDashboardEmbeddingAccessPolicy: accountSettingV2.Accou
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2AibiDashboardEmbeddingAccessPolicy.property.accessPolicyType">accessPolicyType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/account_setting_v2#access_policy_type AccountSettingV2#access_policy_type}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2AibiDashboardEmbeddingAccessPolicy.property.accessPolicyType">accessPolicyType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/account_setting_v2#access_policy_type AccountSettingV2#access_policy_type}. |
 
 ---
 
@@ -1477,7 +1561,7 @@ public readonly accessPolicyType: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/account_setting_v2#access_policy_type AccountSettingV2#access_policy_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/account_setting_v2#access_policy_type AccountSettingV2#access_policy_type}.
 
 ---
 
@@ -1495,7 +1579,7 @@ const accountSettingV2AibiDashboardEmbeddingApprovedDomains: accountSettingV2.Ac
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2AibiDashboardEmbeddingApprovedDomains.property.approvedDomains">approvedDomains</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/account_setting_v2#approved_domains AccountSettingV2#approved_domains}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2AibiDashboardEmbeddingApprovedDomains.property.approvedDomains">approvedDomains</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/account_setting_v2#approved_domains AccountSettingV2#approved_domains}. |
 
 ---
 
@@ -1507,7 +1591,7 @@ public readonly approvedDomains: string[];
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/account_setting_v2#approved_domains AccountSettingV2#approved_domains}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/account_setting_v2#approved_domains AccountSettingV2#approved_domains}.
 
 ---
 
@@ -1525,7 +1609,7 @@ const accountSettingV2AllowedAppsUserApiScopes: accountSettingV2.AccountSettingV
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2AllowedAppsUserApiScopes.property.allowedScopes">allowedScopes</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/account_setting_v2#allowed_scopes AccountSettingV2#allowed_scopes}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2AllowedAppsUserApiScopes.property.allowedScopes">allowedScopes</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/account_setting_v2#allowed_scopes AccountSettingV2#allowed_scopes}. |
 
 ---
 
@@ -1537,7 +1621,7 @@ public readonly allowedScopes: string[];
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/account_setting_v2#allowed_scopes AccountSettingV2#allowed_scopes}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/account_setting_v2#allowed_scopes AccountSettingV2#allowed_scopes}.
 
 ---
 
@@ -1555,11 +1639,11 @@ const accountSettingV2AutomaticClusterUpdateWorkspace: accountSettingV2.AccountS
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2AutomaticClusterUpdateWorkspace.property.canToggle">canToggle</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/account_setting_v2#can_toggle AccountSettingV2#can_toggle}. |
-| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2AutomaticClusterUpdateWorkspace.property.enabled">enabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/account_setting_v2#enabled AccountSettingV2#enabled}. |
-| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2AutomaticClusterUpdateWorkspace.property.enablementDetails">enablementDetails</a></code> | <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2AutomaticClusterUpdateWorkspaceEnablementDetails">AccountSettingV2AutomaticClusterUpdateWorkspaceEnablementDetails</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/account_setting_v2#enablement_details AccountSettingV2#enablement_details}. |
-| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2AutomaticClusterUpdateWorkspace.property.maintenanceWindow">maintenanceWindow</a></code> | <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2AutomaticClusterUpdateWorkspaceMaintenanceWindow">AccountSettingV2AutomaticClusterUpdateWorkspaceMaintenanceWindow</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/account_setting_v2#maintenance_window AccountSettingV2#maintenance_window}. |
-| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2AutomaticClusterUpdateWorkspace.property.restartEvenIfNoUpdatesAvailable">restartEvenIfNoUpdatesAvailable</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/account_setting_v2#restart_even_if_no_updates_available AccountSettingV2#restart_even_if_no_updates_available}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2AutomaticClusterUpdateWorkspace.property.canToggle">canToggle</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/account_setting_v2#can_toggle AccountSettingV2#can_toggle}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2AutomaticClusterUpdateWorkspace.property.enabled">enabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/account_setting_v2#enabled AccountSettingV2#enabled}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2AutomaticClusterUpdateWorkspace.property.enablementDetails">enablementDetails</a></code> | <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2AutomaticClusterUpdateWorkspaceEnablementDetails">AccountSettingV2AutomaticClusterUpdateWorkspaceEnablementDetails</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/account_setting_v2#enablement_details AccountSettingV2#enablement_details}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2AutomaticClusterUpdateWorkspace.property.maintenanceWindow">maintenanceWindow</a></code> | <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2AutomaticClusterUpdateWorkspaceMaintenanceWindow">AccountSettingV2AutomaticClusterUpdateWorkspaceMaintenanceWindow</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/account_setting_v2#maintenance_window AccountSettingV2#maintenance_window}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2AutomaticClusterUpdateWorkspace.property.restartEvenIfNoUpdatesAvailable">restartEvenIfNoUpdatesAvailable</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/account_setting_v2#restart_even_if_no_updates_available AccountSettingV2#restart_even_if_no_updates_available}. |
 
 ---
 
@@ -1571,7 +1655,7 @@ public readonly canToggle: boolean | IResolvable;
 
 - *Type:* boolean | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/account_setting_v2#can_toggle AccountSettingV2#can_toggle}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/account_setting_v2#can_toggle AccountSettingV2#can_toggle}.
 
 ---
 
@@ -1583,7 +1667,7 @@ public readonly enabled: boolean | IResolvable;
 
 - *Type:* boolean | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/account_setting_v2#enabled AccountSettingV2#enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/account_setting_v2#enabled AccountSettingV2#enabled}.
 
 ---
 
@@ -1595,7 +1679,7 @@ public readonly enablementDetails: AccountSettingV2AutomaticClusterUpdateWorkspa
 
 - *Type:* <a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2AutomaticClusterUpdateWorkspaceEnablementDetails">AccountSettingV2AutomaticClusterUpdateWorkspaceEnablementDetails</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/account_setting_v2#enablement_details AccountSettingV2#enablement_details}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/account_setting_v2#enablement_details AccountSettingV2#enablement_details}.
 
 ---
 
@@ -1607,7 +1691,7 @@ public readonly maintenanceWindow: AccountSettingV2AutomaticClusterUpdateWorkspa
 
 - *Type:* <a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2AutomaticClusterUpdateWorkspaceMaintenanceWindow">AccountSettingV2AutomaticClusterUpdateWorkspaceMaintenanceWindow</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/account_setting_v2#maintenance_window AccountSettingV2#maintenance_window}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/account_setting_v2#maintenance_window AccountSettingV2#maintenance_window}.
 
 ---
 
@@ -1619,7 +1703,7 @@ public readonly restartEvenIfNoUpdatesAvailable: boolean | IResolvable;
 
 - *Type:* boolean | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/account_setting_v2#restart_even_if_no_updates_available AccountSettingV2#restart_even_if_no_updates_available}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/account_setting_v2#restart_even_if_no_updates_available AccountSettingV2#restart_even_if_no_updates_available}.
 
 ---
 
@@ -1637,9 +1721,9 @@ const accountSettingV2AutomaticClusterUpdateWorkspaceEnablementDetails: accountS
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2AutomaticClusterUpdateWorkspaceEnablementDetails.property.forcedForComplianceMode">forcedForComplianceMode</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/account_setting_v2#forced_for_compliance_mode AccountSettingV2#forced_for_compliance_mode}. |
-| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2AutomaticClusterUpdateWorkspaceEnablementDetails.property.unavailableForDisabledEntitlement">unavailableForDisabledEntitlement</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/account_setting_v2#unavailable_for_disabled_entitlement AccountSettingV2#unavailable_for_disabled_entitlement}. |
-| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2AutomaticClusterUpdateWorkspaceEnablementDetails.property.unavailableForNonEnterpriseTier">unavailableForNonEnterpriseTier</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/account_setting_v2#unavailable_for_non_enterprise_tier AccountSettingV2#unavailable_for_non_enterprise_tier}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2AutomaticClusterUpdateWorkspaceEnablementDetails.property.forcedForComplianceMode">forcedForComplianceMode</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/account_setting_v2#forced_for_compliance_mode AccountSettingV2#forced_for_compliance_mode}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2AutomaticClusterUpdateWorkspaceEnablementDetails.property.unavailableForDisabledEntitlement">unavailableForDisabledEntitlement</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/account_setting_v2#unavailable_for_disabled_entitlement AccountSettingV2#unavailable_for_disabled_entitlement}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2AutomaticClusterUpdateWorkspaceEnablementDetails.property.unavailableForNonEnterpriseTier">unavailableForNonEnterpriseTier</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/account_setting_v2#unavailable_for_non_enterprise_tier AccountSettingV2#unavailable_for_non_enterprise_tier}. |
 
 ---
 
@@ -1651,7 +1735,7 @@ public readonly forcedForComplianceMode: boolean | IResolvable;
 
 - *Type:* boolean | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/account_setting_v2#forced_for_compliance_mode AccountSettingV2#forced_for_compliance_mode}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/account_setting_v2#forced_for_compliance_mode AccountSettingV2#forced_for_compliance_mode}.
 
 ---
 
@@ -1663,7 +1747,7 @@ public readonly unavailableForDisabledEntitlement: boolean | IResolvable;
 
 - *Type:* boolean | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/account_setting_v2#unavailable_for_disabled_entitlement AccountSettingV2#unavailable_for_disabled_entitlement}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/account_setting_v2#unavailable_for_disabled_entitlement AccountSettingV2#unavailable_for_disabled_entitlement}.
 
 ---
 
@@ -1675,7 +1759,7 @@ public readonly unavailableForNonEnterpriseTier: boolean | IResolvable;
 
 - *Type:* boolean | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/account_setting_v2#unavailable_for_non_enterprise_tier AccountSettingV2#unavailable_for_non_enterprise_tier}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/account_setting_v2#unavailable_for_non_enterprise_tier AccountSettingV2#unavailable_for_non_enterprise_tier}.
 
 ---
 
@@ -1693,7 +1777,7 @@ const accountSettingV2AutomaticClusterUpdateWorkspaceMaintenanceWindow: accountS
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2AutomaticClusterUpdateWorkspaceMaintenanceWindow.property.weekDayBasedSchedule">weekDayBasedSchedule</a></code> | <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2AutomaticClusterUpdateWorkspaceMaintenanceWindowWeekDayBasedSchedule">AccountSettingV2AutomaticClusterUpdateWorkspaceMaintenanceWindowWeekDayBasedSchedule</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/account_setting_v2#week_day_based_schedule AccountSettingV2#week_day_based_schedule}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2AutomaticClusterUpdateWorkspaceMaintenanceWindow.property.weekDayBasedSchedule">weekDayBasedSchedule</a></code> | <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2AutomaticClusterUpdateWorkspaceMaintenanceWindowWeekDayBasedSchedule">AccountSettingV2AutomaticClusterUpdateWorkspaceMaintenanceWindowWeekDayBasedSchedule</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/account_setting_v2#week_day_based_schedule AccountSettingV2#week_day_based_schedule}. |
 
 ---
 
@@ -1705,7 +1789,7 @@ public readonly weekDayBasedSchedule: AccountSettingV2AutomaticClusterUpdateWork
 
 - *Type:* <a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2AutomaticClusterUpdateWorkspaceMaintenanceWindowWeekDayBasedSchedule">AccountSettingV2AutomaticClusterUpdateWorkspaceMaintenanceWindowWeekDayBasedSchedule</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/account_setting_v2#week_day_based_schedule AccountSettingV2#week_day_based_schedule}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/account_setting_v2#week_day_based_schedule AccountSettingV2#week_day_based_schedule}.
 
 ---
 
@@ -1723,9 +1807,9 @@ const accountSettingV2AutomaticClusterUpdateWorkspaceMaintenanceWindowWeekDayBas
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2AutomaticClusterUpdateWorkspaceMaintenanceWindowWeekDayBasedSchedule.property.dayOfWeek">dayOfWeek</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/account_setting_v2#day_of_week AccountSettingV2#day_of_week}. |
-| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2AutomaticClusterUpdateWorkspaceMaintenanceWindowWeekDayBasedSchedule.property.frequency">frequency</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/account_setting_v2#frequency AccountSettingV2#frequency}. |
-| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2AutomaticClusterUpdateWorkspaceMaintenanceWindowWeekDayBasedSchedule.property.windowStartTime">windowStartTime</a></code> | <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2AutomaticClusterUpdateWorkspaceMaintenanceWindowWeekDayBasedScheduleWindowStartTime">AccountSettingV2AutomaticClusterUpdateWorkspaceMaintenanceWindowWeekDayBasedScheduleWindowStartTime</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/account_setting_v2#window_start_time AccountSettingV2#window_start_time}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2AutomaticClusterUpdateWorkspaceMaintenanceWindowWeekDayBasedSchedule.property.dayOfWeek">dayOfWeek</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/account_setting_v2#day_of_week AccountSettingV2#day_of_week}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2AutomaticClusterUpdateWorkspaceMaintenanceWindowWeekDayBasedSchedule.property.frequency">frequency</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/account_setting_v2#frequency AccountSettingV2#frequency}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2AutomaticClusterUpdateWorkspaceMaintenanceWindowWeekDayBasedSchedule.property.windowStartTime">windowStartTime</a></code> | <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2AutomaticClusterUpdateWorkspaceMaintenanceWindowWeekDayBasedScheduleWindowStartTime">AccountSettingV2AutomaticClusterUpdateWorkspaceMaintenanceWindowWeekDayBasedScheduleWindowStartTime</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/account_setting_v2#window_start_time AccountSettingV2#window_start_time}. |
 
 ---
 
@@ -1737,7 +1821,7 @@ public readonly dayOfWeek: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/account_setting_v2#day_of_week AccountSettingV2#day_of_week}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/account_setting_v2#day_of_week AccountSettingV2#day_of_week}.
 
 ---
 
@@ -1749,7 +1833,7 @@ public readonly frequency: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/account_setting_v2#frequency AccountSettingV2#frequency}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/account_setting_v2#frequency AccountSettingV2#frequency}.
 
 ---
 
@@ -1761,7 +1845,7 @@ public readonly windowStartTime: AccountSettingV2AutomaticClusterUpdateWorkspace
 
 - *Type:* <a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2AutomaticClusterUpdateWorkspaceMaintenanceWindowWeekDayBasedScheduleWindowStartTime">AccountSettingV2AutomaticClusterUpdateWorkspaceMaintenanceWindowWeekDayBasedScheduleWindowStartTime</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/account_setting_v2#window_start_time AccountSettingV2#window_start_time}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/account_setting_v2#window_start_time AccountSettingV2#window_start_time}.
 
 ---
 
@@ -1779,8 +1863,8 @@ const accountSettingV2AutomaticClusterUpdateWorkspaceMaintenanceWindowWeekDayBas
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2AutomaticClusterUpdateWorkspaceMaintenanceWindowWeekDayBasedScheduleWindowStartTime.property.hours">hours</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/account_setting_v2#hours AccountSettingV2#hours}. |
-| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2AutomaticClusterUpdateWorkspaceMaintenanceWindowWeekDayBasedScheduleWindowStartTime.property.minutes">minutes</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/account_setting_v2#minutes AccountSettingV2#minutes}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2AutomaticClusterUpdateWorkspaceMaintenanceWindowWeekDayBasedScheduleWindowStartTime.property.hours">hours</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/account_setting_v2#hours AccountSettingV2#hours}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2AutomaticClusterUpdateWorkspaceMaintenanceWindowWeekDayBasedScheduleWindowStartTime.property.minutes">minutes</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/account_setting_v2#minutes AccountSettingV2#minutes}. |
 
 ---
 
@@ -1792,7 +1876,7 @@ public readonly hours: number;
 
 - *Type:* number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/account_setting_v2#hours AccountSettingV2#hours}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/account_setting_v2#hours AccountSettingV2#hours}.
 
 ---
 
@@ -1804,7 +1888,7 @@ public readonly minutes: number;
 
 - *Type:* number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/account_setting_v2#minutes AccountSettingV2#minutes}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/account_setting_v2#minutes AccountSettingV2#minutes}.
 
 ---
 
@@ -1822,7 +1906,7 @@ const accountSettingV2BooleanVal: accountSettingV2.AccountSettingV2BooleanVal = 
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2BooleanVal.property.value">value</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/account_setting_v2#value AccountSettingV2#value}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2BooleanVal.property.value">value</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/account_setting_v2#value AccountSettingV2#value}. |
 
 ---
 
@@ -1834,7 +1918,7 @@ public readonly value: boolean | IResolvable;
 
 - *Type:* boolean | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/account_setting_v2#value AccountSettingV2#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/account_setting_v2#value AccountSettingV2#value}.
 
 ---
 
@@ -1852,7 +1936,7 @@ const accountSettingV2CollaborationPlatformConnectivity: accountSettingV2.Accoun
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2CollaborationPlatformConnectivity.property.connectivity">connectivity</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/account_setting_v2#connectivity AccountSettingV2#connectivity}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2CollaborationPlatformConnectivity.property.connectivity">connectivity</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/account_setting_v2#connectivity AccountSettingV2#connectivity}. |
 
 ---
 
@@ -1864,7 +1948,7 @@ public readonly connectivity: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/account_setting_v2#connectivity AccountSettingV2#connectivity}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/account_setting_v2#connectivity AccountSettingV2#connectivity}.
 
 ---
 
@@ -1889,23 +1973,25 @@ const accountSettingV2Config: accountSettingV2.AccountSettingV2Config = { ... }
 | <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2Config.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2Config.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2Config.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2Config.property.aibiDashboardEmbeddingAccessPolicy">aibiDashboardEmbeddingAccessPolicy</a></code> | <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2AibiDashboardEmbeddingAccessPolicy">AccountSettingV2AibiDashboardEmbeddingAccessPolicy</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/account_setting_v2#aibi_dashboard_embedding_access_policy AccountSettingV2#aibi_dashboard_embedding_access_policy}. |
-| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2Config.property.aibiDashboardEmbeddingApprovedDomains">aibiDashboardEmbeddingApprovedDomains</a></code> | <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2AibiDashboardEmbeddingApprovedDomains">AccountSettingV2AibiDashboardEmbeddingApprovedDomains</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/account_setting_v2#aibi_dashboard_embedding_approved_domains AccountSettingV2#aibi_dashboard_embedding_approved_domains}. |
-| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2Config.property.allowedAppsUserApiScopes">allowedAppsUserApiScopes</a></code> | <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2AllowedAppsUserApiScopes">AccountSettingV2AllowedAppsUserApiScopes</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/account_setting_v2#allowed_apps_user_api_scopes AccountSettingV2#allowed_apps_user_api_scopes}. |
-| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2Config.property.automaticClusterUpdateWorkspace">automaticClusterUpdateWorkspace</a></code> | <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2AutomaticClusterUpdateWorkspace">AccountSettingV2AutomaticClusterUpdateWorkspace</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/account_setting_v2#automatic_cluster_update_workspace AccountSettingV2#automatic_cluster_update_workspace}. |
-| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2Config.property.booleanVal">booleanVal</a></code> | <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2BooleanVal">AccountSettingV2BooleanVal</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/account_setting_v2#boolean_val AccountSettingV2#boolean_val}. |
-| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2Config.property.collaborationPlatformConnectivity">collaborationPlatformConnectivity</a></code> | <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2CollaborationPlatformConnectivity">AccountSettingV2CollaborationPlatformConnectivity</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/account_setting_v2#collaboration_platform_connectivity AccountSettingV2#collaboration_platform_connectivity}. |
-| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2Config.property.effectiveAibiDashboardEmbeddingAccessPolicy">effectiveAibiDashboardEmbeddingAccessPolicy</a></code> | <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveAibiDashboardEmbeddingAccessPolicy">AccountSettingV2EffectiveAibiDashboardEmbeddingAccessPolicy</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/account_setting_v2#effective_aibi_dashboard_embedding_access_policy AccountSettingV2#effective_aibi_dashboard_embedding_access_policy}. |
-| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2Config.property.effectiveAibiDashboardEmbeddingApprovedDomains">effectiveAibiDashboardEmbeddingApprovedDomains</a></code> | <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveAibiDashboardEmbeddingApprovedDomains">AccountSettingV2EffectiveAibiDashboardEmbeddingApprovedDomains</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/account_setting_v2#effective_aibi_dashboard_embedding_approved_domains AccountSettingV2#effective_aibi_dashboard_embedding_approved_domains}. |
-| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2Config.property.effectiveAutomaticClusterUpdateWorkspace">effectiveAutomaticClusterUpdateWorkspace</a></code> | <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveAutomaticClusterUpdateWorkspace">AccountSettingV2EffectiveAutomaticClusterUpdateWorkspace</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/account_setting_v2#effective_automatic_cluster_update_workspace AccountSettingV2#effective_automatic_cluster_update_workspace}. |
-| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2Config.property.effectivePersonalCompute">effectivePersonalCompute</a></code> | <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectivePersonalCompute">AccountSettingV2EffectivePersonalCompute</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/account_setting_v2#effective_personal_compute AccountSettingV2#effective_personal_compute}. |
-| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2Config.property.effectiveRestrictWorkspaceAdmins">effectiveRestrictWorkspaceAdmins</a></code> | <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveRestrictWorkspaceAdmins">AccountSettingV2EffectiveRestrictWorkspaceAdmins</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/account_setting_v2#effective_restrict_workspace_admins AccountSettingV2#effective_restrict_workspace_admins}. |
-| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2Config.property.integerVal">integerVal</a></code> | <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2IntegerVal">AccountSettingV2IntegerVal</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/account_setting_v2#integer_val AccountSettingV2#integer_val}. |
-| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2Config.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/account_setting_v2#name AccountSettingV2#name}. |
-| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2Config.property.operationalEmailCustomRecipient">operationalEmailCustomRecipient</a></code> | <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2OperationalEmailCustomRecipient">AccountSettingV2OperationalEmailCustomRecipient</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/account_setting_v2#operational_email_custom_recipient AccountSettingV2#operational_email_custom_recipient}. |
-| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2Config.property.personalCompute">personalCompute</a></code> | <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2PersonalCompute">AccountSettingV2PersonalCompute</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/account_setting_v2#personal_compute AccountSettingV2#personal_compute}. |
-| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2Config.property.restrictWorkspaceAdmins">restrictWorkspaceAdmins</a></code> | <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2RestrictWorkspaceAdmins">AccountSettingV2RestrictWorkspaceAdmins</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/account_setting_v2#restrict_workspace_admins AccountSettingV2#restrict_workspace_admins}. |
-| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2Config.property.stringVal">stringVal</a></code> | <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2StringVal">AccountSettingV2StringVal</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/account_setting_v2#string_val AccountSettingV2#string_val}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2Config.property.aibiDashboardEmbeddingAccessPolicy">aibiDashboardEmbeddingAccessPolicy</a></code> | <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2AibiDashboardEmbeddingAccessPolicy">AccountSettingV2AibiDashboardEmbeddingAccessPolicy</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/account_setting_v2#aibi_dashboard_embedding_access_policy AccountSettingV2#aibi_dashboard_embedding_access_policy}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2Config.property.aibiDashboardEmbeddingApprovedDomains">aibiDashboardEmbeddingApprovedDomains</a></code> | <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2AibiDashboardEmbeddingApprovedDomains">AccountSettingV2AibiDashboardEmbeddingApprovedDomains</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/account_setting_v2#aibi_dashboard_embedding_approved_domains AccountSettingV2#aibi_dashboard_embedding_approved_domains}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2Config.property.allowedAppsUserApiScopes">allowedAppsUserApiScopes</a></code> | <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2AllowedAppsUserApiScopes">AccountSettingV2AllowedAppsUserApiScopes</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/account_setting_v2#allowed_apps_user_api_scopes AccountSettingV2#allowed_apps_user_api_scopes}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2Config.property.automaticClusterUpdateWorkspace">automaticClusterUpdateWorkspace</a></code> | <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2AutomaticClusterUpdateWorkspace">AccountSettingV2AutomaticClusterUpdateWorkspace</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/account_setting_v2#automatic_cluster_update_workspace AccountSettingV2#automatic_cluster_update_workspace}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2Config.property.booleanVal">booleanVal</a></code> | <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2BooleanVal">AccountSettingV2BooleanVal</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/account_setting_v2#boolean_val AccountSettingV2#boolean_val}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2Config.property.collaborationPlatformConnectivity">collaborationPlatformConnectivity</a></code> | <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2CollaborationPlatformConnectivity">AccountSettingV2CollaborationPlatformConnectivity</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/account_setting_v2#collaboration_platform_connectivity AccountSettingV2#collaboration_platform_connectivity}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2Config.property.effectiveAibiDashboardEmbeddingAccessPolicy">effectiveAibiDashboardEmbeddingAccessPolicy</a></code> | <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveAibiDashboardEmbeddingAccessPolicy">AccountSettingV2EffectiveAibiDashboardEmbeddingAccessPolicy</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/account_setting_v2#effective_aibi_dashboard_embedding_access_policy AccountSettingV2#effective_aibi_dashboard_embedding_access_policy}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2Config.property.effectiveAibiDashboardEmbeddingApprovedDomains">effectiveAibiDashboardEmbeddingApprovedDomains</a></code> | <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveAibiDashboardEmbeddingApprovedDomains">AccountSettingV2EffectiveAibiDashboardEmbeddingApprovedDomains</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/account_setting_v2#effective_aibi_dashboard_embedding_approved_domains AccountSettingV2#effective_aibi_dashboard_embedding_approved_domains}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2Config.property.effectiveAutomaticClusterUpdateWorkspace">effectiveAutomaticClusterUpdateWorkspace</a></code> | <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveAutomaticClusterUpdateWorkspace">AccountSettingV2EffectiveAutomaticClusterUpdateWorkspace</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/account_setting_v2#effective_automatic_cluster_update_workspace AccountSettingV2#effective_automatic_cluster_update_workspace}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2Config.property.effectivePersonalCompute">effectivePersonalCompute</a></code> | <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectivePersonalCompute">AccountSettingV2EffectivePersonalCompute</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/account_setting_v2#effective_personal_compute AccountSettingV2#effective_personal_compute}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2Config.property.effectiveRestrictWorkspaceAdmins">effectiveRestrictWorkspaceAdmins</a></code> | <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveRestrictWorkspaceAdmins">AccountSettingV2EffectiveRestrictWorkspaceAdmins</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/account_setting_v2#effective_restrict_workspace_admins AccountSettingV2#effective_restrict_workspace_admins}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2Config.property.effectiveWorkspaceLabel">effectiveWorkspaceLabel</a></code> | <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceLabel">AccountSettingV2EffectiveWorkspaceLabel</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/account_setting_v2#effective_workspace_label AccountSettingV2#effective_workspace_label}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2Config.property.integerVal">integerVal</a></code> | <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2IntegerVal">AccountSettingV2IntegerVal</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/account_setting_v2#integer_val AccountSettingV2#integer_val}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2Config.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/account_setting_v2#name AccountSettingV2#name}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2Config.property.operationalEmailCustomRecipient">operationalEmailCustomRecipient</a></code> | <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2OperationalEmailCustomRecipient">AccountSettingV2OperationalEmailCustomRecipient</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/account_setting_v2#operational_email_custom_recipient AccountSettingV2#operational_email_custom_recipient}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2Config.property.personalCompute">personalCompute</a></code> | <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2PersonalCompute">AccountSettingV2PersonalCompute</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/account_setting_v2#personal_compute AccountSettingV2#personal_compute}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2Config.property.restrictWorkspaceAdmins">restrictWorkspaceAdmins</a></code> | <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2RestrictWorkspaceAdmins">AccountSettingV2RestrictWorkspaceAdmins</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/account_setting_v2#restrict_workspace_admins AccountSettingV2#restrict_workspace_admins}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2Config.property.stringVal">stringVal</a></code> | <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2StringVal">AccountSettingV2StringVal</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/account_setting_v2#string_val AccountSettingV2#string_val}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2Config.property.workspaceLabel">workspaceLabel</a></code> | <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceLabel">AccountSettingV2WorkspaceLabel</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/account_setting_v2#workspace_label AccountSettingV2#workspace_label}. |
 
 ---
 
@@ -1987,7 +2073,7 @@ public readonly aibiDashboardEmbeddingAccessPolicy: AccountSettingV2AibiDashboar
 
 - *Type:* <a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2AibiDashboardEmbeddingAccessPolicy">AccountSettingV2AibiDashboardEmbeddingAccessPolicy</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/account_setting_v2#aibi_dashboard_embedding_access_policy AccountSettingV2#aibi_dashboard_embedding_access_policy}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/account_setting_v2#aibi_dashboard_embedding_access_policy AccountSettingV2#aibi_dashboard_embedding_access_policy}.
 
 ---
 
@@ -1999,7 +2085,7 @@ public readonly aibiDashboardEmbeddingApprovedDomains: AccountSettingV2AibiDashb
 
 - *Type:* <a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2AibiDashboardEmbeddingApprovedDomains">AccountSettingV2AibiDashboardEmbeddingApprovedDomains</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/account_setting_v2#aibi_dashboard_embedding_approved_domains AccountSettingV2#aibi_dashboard_embedding_approved_domains}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/account_setting_v2#aibi_dashboard_embedding_approved_domains AccountSettingV2#aibi_dashboard_embedding_approved_domains}.
 
 ---
 
@@ -2011,7 +2097,7 @@ public readonly allowedAppsUserApiScopes: AccountSettingV2AllowedAppsUserApiScop
 
 - *Type:* <a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2AllowedAppsUserApiScopes">AccountSettingV2AllowedAppsUserApiScopes</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/account_setting_v2#allowed_apps_user_api_scopes AccountSettingV2#allowed_apps_user_api_scopes}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/account_setting_v2#allowed_apps_user_api_scopes AccountSettingV2#allowed_apps_user_api_scopes}.
 
 ---
 
@@ -2023,7 +2109,7 @@ public readonly automaticClusterUpdateWorkspace: AccountSettingV2AutomaticCluste
 
 - *Type:* <a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2AutomaticClusterUpdateWorkspace">AccountSettingV2AutomaticClusterUpdateWorkspace</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/account_setting_v2#automatic_cluster_update_workspace AccountSettingV2#automatic_cluster_update_workspace}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/account_setting_v2#automatic_cluster_update_workspace AccountSettingV2#automatic_cluster_update_workspace}.
 
 ---
 
@@ -2035,7 +2121,7 @@ public readonly booleanVal: AccountSettingV2BooleanVal;
 
 - *Type:* <a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2BooleanVal">AccountSettingV2BooleanVal</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/account_setting_v2#boolean_val AccountSettingV2#boolean_val}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/account_setting_v2#boolean_val AccountSettingV2#boolean_val}.
 
 ---
 
@@ -2047,7 +2133,7 @@ public readonly collaborationPlatformConnectivity: AccountSettingV2Collaboration
 
 - *Type:* <a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2CollaborationPlatformConnectivity">AccountSettingV2CollaborationPlatformConnectivity</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/account_setting_v2#collaboration_platform_connectivity AccountSettingV2#collaboration_platform_connectivity}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/account_setting_v2#collaboration_platform_connectivity AccountSettingV2#collaboration_platform_connectivity}.
 
 ---
 
@@ -2059,7 +2145,7 @@ public readonly effectiveAibiDashboardEmbeddingAccessPolicy: AccountSettingV2Eff
 
 - *Type:* <a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveAibiDashboardEmbeddingAccessPolicy">AccountSettingV2EffectiveAibiDashboardEmbeddingAccessPolicy</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/account_setting_v2#effective_aibi_dashboard_embedding_access_policy AccountSettingV2#effective_aibi_dashboard_embedding_access_policy}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/account_setting_v2#effective_aibi_dashboard_embedding_access_policy AccountSettingV2#effective_aibi_dashboard_embedding_access_policy}.
 
 ---
 
@@ -2071,7 +2157,7 @@ public readonly effectiveAibiDashboardEmbeddingApprovedDomains: AccountSettingV2
 
 - *Type:* <a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveAibiDashboardEmbeddingApprovedDomains">AccountSettingV2EffectiveAibiDashboardEmbeddingApprovedDomains</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/account_setting_v2#effective_aibi_dashboard_embedding_approved_domains AccountSettingV2#effective_aibi_dashboard_embedding_approved_domains}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/account_setting_v2#effective_aibi_dashboard_embedding_approved_domains AccountSettingV2#effective_aibi_dashboard_embedding_approved_domains}.
 
 ---
 
@@ -2083,7 +2169,7 @@ public readonly effectiveAutomaticClusterUpdateWorkspace: AccountSettingV2Effect
 
 - *Type:* <a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveAutomaticClusterUpdateWorkspace">AccountSettingV2EffectiveAutomaticClusterUpdateWorkspace</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/account_setting_v2#effective_automatic_cluster_update_workspace AccountSettingV2#effective_automatic_cluster_update_workspace}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/account_setting_v2#effective_automatic_cluster_update_workspace AccountSettingV2#effective_automatic_cluster_update_workspace}.
 
 ---
 
@@ -2095,7 +2181,7 @@ public readonly effectivePersonalCompute: AccountSettingV2EffectivePersonalCompu
 
 - *Type:* <a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectivePersonalCompute">AccountSettingV2EffectivePersonalCompute</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/account_setting_v2#effective_personal_compute AccountSettingV2#effective_personal_compute}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/account_setting_v2#effective_personal_compute AccountSettingV2#effective_personal_compute}.
 
 ---
 
@@ -2107,7 +2193,19 @@ public readonly effectiveRestrictWorkspaceAdmins: AccountSettingV2EffectiveRestr
 
 - *Type:* <a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveRestrictWorkspaceAdmins">AccountSettingV2EffectiveRestrictWorkspaceAdmins</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/account_setting_v2#effective_restrict_workspace_admins AccountSettingV2#effective_restrict_workspace_admins}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/account_setting_v2#effective_restrict_workspace_admins AccountSettingV2#effective_restrict_workspace_admins}.
+
+---
+
+##### `effectiveWorkspaceLabel`<sup>Optional</sup> <a name="effectiveWorkspaceLabel" id="@cdktn/provider-databricks.accountSettingV2.AccountSettingV2Config.property.effectiveWorkspaceLabel"></a>
+
+```typescript
+public readonly effectiveWorkspaceLabel: AccountSettingV2EffectiveWorkspaceLabel;
+```
+
+- *Type:* <a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceLabel">AccountSettingV2EffectiveWorkspaceLabel</a>
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/account_setting_v2#effective_workspace_label AccountSettingV2#effective_workspace_label}.
 
 ---
 
@@ -2119,7 +2217,7 @@ public readonly integerVal: AccountSettingV2IntegerVal;
 
 - *Type:* <a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2IntegerVal">AccountSettingV2IntegerVal</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/account_setting_v2#integer_val AccountSettingV2#integer_val}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/account_setting_v2#integer_val AccountSettingV2#integer_val}.
 
 ---
 
@@ -2131,7 +2229,7 @@ public readonly name: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/account_setting_v2#name AccountSettingV2#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/account_setting_v2#name AccountSettingV2#name}.
 
 ---
 
@@ -2143,7 +2241,7 @@ public readonly operationalEmailCustomRecipient: AccountSettingV2OperationalEmai
 
 - *Type:* <a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2OperationalEmailCustomRecipient">AccountSettingV2OperationalEmailCustomRecipient</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/account_setting_v2#operational_email_custom_recipient AccountSettingV2#operational_email_custom_recipient}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/account_setting_v2#operational_email_custom_recipient AccountSettingV2#operational_email_custom_recipient}.
 
 ---
 
@@ -2155,7 +2253,7 @@ public readonly personalCompute: AccountSettingV2PersonalCompute;
 
 - *Type:* <a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2PersonalCompute">AccountSettingV2PersonalCompute</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/account_setting_v2#personal_compute AccountSettingV2#personal_compute}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/account_setting_v2#personal_compute AccountSettingV2#personal_compute}.
 
 ---
 
@@ -2167,7 +2265,7 @@ public readonly restrictWorkspaceAdmins: AccountSettingV2RestrictWorkspaceAdmins
 
 - *Type:* <a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2RestrictWorkspaceAdmins">AccountSettingV2RestrictWorkspaceAdmins</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/account_setting_v2#restrict_workspace_admins AccountSettingV2#restrict_workspace_admins}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/account_setting_v2#restrict_workspace_admins AccountSettingV2#restrict_workspace_admins}.
 
 ---
 
@@ -2179,7 +2277,19 @@ public readonly stringVal: AccountSettingV2StringVal;
 
 - *Type:* <a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2StringVal">AccountSettingV2StringVal</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/account_setting_v2#string_val AccountSettingV2#string_val}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/account_setting_v2#string_val AccountSettingV2#string_val}.
+
+---
+
+##### `workspaceLabel`<sup>Optional</sup> <a name="workspaceLabel" id="@cdktn/provider-databricks.accountSettingV2.AccountSettingV2Config.property.workspaceLabel"></a>
+
+```typescript
+public readonly workspaceLabel: AccountSettingV2WorkspaceLabel;
+```
+
+- *Type:* <a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceLabel">AccountSettingV2WorkspaceLabel</a>
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/account_setting_v2#workspace_label AccountSettingV2#workspace_label}.
 
 ---
 
@@ -2197,7 +2307,7 @@ const accountSettingV2EffectiveAibiDashboardEmbeddingAccessPolicy: accountSettin
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveAibiDashboardEmbeddingAccessPolicy.property.accessPolicyType">accessPolicyType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/account_setting_v2#access_policy_type AccountSettingV2#access_policy_type}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveAibiDashboardEmbeddingAccessPolicy.property.accessPolicyType">accessPolicyType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/account_setting_v2#access_policy_type AccountSettingV2#access_policy_type}. |
 
 ---
 
@@ -2209,7 +2319,7 @@ public readonly accessPolicyType: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/account_setting_v2#access_policy_type AccountSettingV2#access_policy_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/account_setting_v2#access_policy_type AccountSettingV2#access_policy_type}.
 
 ---
 
@@ -2227,7 +2337,7 @@ const accountSettingV2EffectiveAibiDashboardEmbeddingApprovedDomains: accountSet
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveAibiDashboardEmbeddingApprovedDomains.property.approvedDomains">approvedDomains</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/account_setting_v2#approved_domains AccountSettingV2#approved_domains}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveAibiDashboardEmbeddingApprovedDomains.property.approvedDomains">approvedDomains</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/account_setting_v2#approved_domains AccountSettingV2#approved_domains}. |
 
 ---
 
@@ -2239,7 +2349,7 @@ public readonly approvedDomains: string[];
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/account_setting_v2#approved_domains AccountSettingV2#approved_domains}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/account_setting_v2#approved_domains AccountSettingV2#approved_domains}.
 
 ---
 
@@ -2257,7 +2367,7 @@ const accountSettingV2EffectiveAllowedAppsUserApiScopes: accountSettingV2.Accoun
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveAllowedAppsUserApiScopes.property.allowedScopes">allowedScopes</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/account_setting_v2#allowed_scopes AccountSettingV2#allowed_scopes}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveAllowedAppsUserApiScopes.property.allowedScopes">allowedScopes</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/account_setting_v2#allowed_scopes AccountSettingV2#allowed_scopes}. |
 
 ---
 
@@ -2269,7 +2379,7 @@ public readonly allowedScopes: string[];
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/account_setting_v2#allowed_scopes AccountSettingV2#allowed_scopes}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/account_setting_v2#allowed_scopes AccountSettingV2#allowed_scopes}.
 
 ---
 
@@ -2287,11 +2397,11 @@ const accountSettingV2EffectiveAutomaticClusterUpdateWorkspace: accountSettingV2
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveAutomaticClusterUpdateWorkspace.property.canToggle">canToggle</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/account_setting_v2#can_toggle AccountSettingV2#can_toggle}. |
-| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveAutomaticClusterUpdateWorkspace.property.enabled">enabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/account_setting_v2#enabled AccountSettingV2#enabled}. |
-| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveAutomaticClusterUpdateWorkspace.property.enablementDetails">enablementDetails</a></code> | <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveAutomaticClusterUpdateWorkspaceEnablementDetails">AccountSettingV2EffectiveAutomaticClusterUpdateWorkspaceEnablementDetails</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/account_setting_v2#enablement_details AccountSettingV2#enablement_details}. |
-| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveAutomaticClusterUpdateWorkspace.property.maintenanceWindow">maintenanceWindow</a></code> | <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveAutomaticClusterUpdateWorkspaceMaintenanceWindow">AccountSettingV2EffectiveAutomaticClusterUpdateWorkspaceMaintenanceWindow</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/account_setting_v2#maintenance_window AccountSettingV2#maintenance_window}. |
-| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveAutomaticClusterUpdateWorkspace.property.restartEvenIfNoUpdatesAvailable">restartEvenIfNoUpdatesAvailable</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/account_setting_v2#restart_even_if_no_updates_available AccountSettingV2#restart_even_if_no_updates_available}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveAutomaticClusterUpdateWorkspace.property.canToggle">canToggle</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/account_setting_v2#can_toggle AccountSettingV2#can_toggle}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveAutomaticClusterUpdateWorkspace.property.enabled">enabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/account_setting_v2#enabled AccountSettingV2#enabled}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveAutomaticClusterUpdateWorkspace.property.enablementDetails">enablementDetails</a></code> | <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveAutomaticClusterUpdateWorkspaceEnablementDetails">AccountSettingV2EffectiveAutomaticClusterUpdateWorkspaceEnablementDetails</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/account_setting_v2#enablement_details AccountSettingV2#enablement_details}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveAutomaticClusterUpdateWorkspace.property.maintenanceWindow">maintenanceWindow</a></code> | <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveAutomaticClusterUpdateWorkspaceMaintenanceWindow">AccountSettingV2EffectiveAutomaticClusterUpdateWorkspaceMaintenanceWindow</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/account_setting_v2#maintenance_window AccountSettingV2#maintenance_window}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveAutomaticClusterUpdateWorkspace.property.restartEvenIfNoUpdatesAvailable">restartEvenIfNoUpdatesAvailable</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/account_setting_v2#restart_even_if_no_updates_available AccountSettingV2#restart_even_if_no_updates_available}. |
 
 ---
 
@@ -2303,7 +2413,7 @@ public readonly canToggle: boolean | IResolvable;
 
 - *Type:* boolean | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/account_setting_v2#can_toggle AccountSettingV2#can_toggle}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/account_setting_v2#can_toggle AccountSettingV2#can_toggle}.
 
 ---
 
@@ -2315,7 +2425,7 @@ public readonly enabled: boolean | IResolvable;
 
 - *Type:* boolean | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/account_setting_v2#enabled AccountSettingV2#enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/account_setting_v2#enabled AccountSettingV2#enabled}.
 
 ---
 
@@ -2327,7 +2437,7 @@ public readonly enablementDetails: AccountSettingV2EffectiveAutomaticClusterUpda
 
 - *Type:* <a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveAutomaticClusterUpdateWorkspaceEnablementDetails">AccountSettingV2EffectiveAutomaticClusterUpdateWorkspaceEnablementDetails</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/account_setting_v2#enablement_details AccountSettingV2#enablement_details}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/account_setting_v2#enablement_details AccountSettingV2#enablement_details}.
 
 ---
 
@@ -2339,7 +2449,7 @@ public readonly maintenanceWindow: AccountSettingV2EffectiveAutomaticClusterUpda
 
 - *Type:* <a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveAutomaticClusterUpdateWorkspaceMaintenanceWindow">AccountSettingV2EffectiveAutomaticClusterUpdateWorkspaceMaintenanceWindow</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/account_setting_v2#maintenance_window AccountSettingV2#maintenance_window}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/account_setting_v2#maintenance_window AccountSettingV2#maintenance_window}.
 
 ---
 
@@ -2351,7 +2461,7 @@ public readonly restartEvenIfNoUpdatesAvailable: boolean | IResolvable;
 
 - *Type:* boolean | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/account_setting_v2#restart_even_if_no_updates_available AccountSettingV2#restart_even_if_no_updates_available}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/account_setting_v2#restart_even_if_no_updates_available AccountSettingV2#restart_even_if_no_updates_available}.
 
 ---
 
@@ -2369,9 +2479,9 @@ const accountSettingV2EffectiveAutomaticClusterUpdateWorkspaceEnablementDetails:
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveAutomaticClusterUpdateWorkspaceEnablementDetails.property.forcedForComplianceMode">forcedForComplianceMode</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/account_setting_v2#forced_for_compliance_mode AccountSettingV2#forced_for_compliance_mode}. |
-| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveAutomaticClusterUpdateWorkspaceEnablementDetails.property.unavailableForDisabledEntitlement">unavailableForDisabledEntitlement</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/account_setting_v2#unavailable_for_disabled_entitlement AccountSettingV2#unavailable_for_disabled_entitlement}. |
-| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveAutomaticClusterUpdateWorkspaceEnablementDetails.property.unavailableForNonEnterpriseTier">unavailableForNonEnterpriseTier</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/account_setting_v2#unavailable_for_non_enterprise_tier AccountSettingV2#unavailable_for_non_enterprise_tier}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveAutomaticClusterUpdateWorkspaceEnablementDetails.property.forcedForComplianceMode">forcedForComplianceMode</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/account_setting_v2#forced_for_compliance_mode AccountSettingV2#forced_for_compliance_mode}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveAutomaticClusterUpdateWorkspaceEnablementDetails.property.unavailableForDisabledEntitlement">unavailableForDisabledEntitlement</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/account_setting_v2#unavailable_for_disabled_entitlement AccountSettingV2#unavailable_for_disabled_entitlement}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveAutomaticClusterUpdateWorkspaceEnablementDetails.property.unavailableForNonEnterpriseTier">unavailableForNonEnterpriseTier</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/account_setting_v2#unavailable_for_non_enterprise_tier AccountSettingV2#unavailable_for_non_enterprise_tier}. |
 
 ---
 
@@ -2383,7 +2493,7 @@ public readonly forcedForComplianceMode: boolean | IResolvable;
 
 - *Type:* boolean | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/account_setting_v2#forced_for_compliance_mode AccountSettingV2#forced_for_compliance_mode}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/account_setting_v2#forced_for_compliance_mode AccountSettingV2#forced_for_compliance_mode}.
 
 ---
 
@@ -2395,7 +2505,7 @@ public readonly unavailableForDisabledEntitlement: boolean | IResolvable;
 
 - *Type:* boolean | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/account_setting_v2#unavailable_for_disabled_entitlement AccountSettingV2#unavailable_for_disabled_entitlement}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/account_setting_v2#unavailable_for_disabled_entitlement AccountSettingV2#unavailable_for_disabled_entitlement}.
 
 ---
 
@@ -2407,7 +2517,7 @@ public readonly unavailableForNonEnterpriseTier: boolean | IResolvable;
 
 - *Type:* boolean | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/account_setting_v2#unavailable_for_non_enterprise_tier AccountSettingV2#unavailable_for_non_enterprise_tier}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/account_setting_v2#unavailable_for_non_enterprise_tier AccountSettingV2#unavailable_for_non_enterprise_tier}.
 
 ---
 
@@ -2425,7 +2535,7 @@ const accountSettingV2EffectiveAutomaticClusterUpdateWorkspaceMaintenanceWindow:
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveAutomaticClusterUpdateWorkspaceMaintenanceWindow.property.weekDayBasedSchedule">weekDayBasedSchedule</a></code> | <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveAutomaticClusterUpdateWorkspaceMaintenanceWindowWeekDayBasedSchedule">AccountSettingV2EffectiveAutomaticClusterUpdateWorkspaceMaintenanceWindowWeekDayBasedSchedule</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/account_setting_v2#week_day_based_schedule AccountSettingV2#week_day_based_schedule}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveAutomaticClusterUpdateWorkspaceMaintenanceWindow.property.weekDayBasedSchedule">weekDayBasedSchedule</a></code> | <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveAutomaticClusterUpdateWorkspaceMaintenanceWindowWeekDayBasedSchedule">AccountSettingV2EffectiveAutomaticClusterUpdateWorkspaceMaintenanceWindowWeekDayBasedSchedule</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/account_setting_v2#week_day_based_schedule AccountSettingV2#week_day_based_schedule}. |
 
 ---
 
@@ -2437,7 +2547,7 @@ public readonly weekDayBasedSchedule: AccountSettingV2EffectiveAutomaticClusterU
 
 - *Type:* <a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveAutomaticClusterUpdateWorkspaceMaintenanceWindowWeekDayBasedSchedule">AccountSettingV2EffectiveAutomaticClusterUpdateWorkspaceMaintenanceWindowWeekDayBasedSchedule</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/account_setting_v2#week_day_based_schedule AccountSettingV2#week_day_based_schedule}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/account_setting_v2#week_day_based_schedule AccountSettingV2#week_day_based_schedule}.
 
 ---
 
@@ -2455,9 +2565,9 @@ const accountSettingV2EffectiveAutomaticClusterUpdateWorkspaceMaintenanceWindowW
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveAutomaticClusterUpdateWorkspaceMaintenanceWindowWeekDayBasedSchedule.property.dayOfWeek">dayOfWeek</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/account_setting_v2#day_of_week AccountSettingV2#day_of_week}. |
-| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveAutomaticClusterUpdateWorkspaceMaintenanceWindowWeekDayBasedSchedule.property.frequency">frequency</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/account_setting_v2#frequency AccountSettingV2#frequency}. |
-| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveAutomaticClusterUpdateWorkspaceMaintenanceWindowWeekDayBasedSchedule.property.windowStartTime">windowStartTime</a></code> | <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveAutomaticClusterUpdateWorkspaceMaintenanceWindowWeekDayBasedScheduleWindowStartTime">AccountSettingV2EffectiveAutomaticClusterUpdateWorkspaceMaintenanceWindowWeekDayBasedScheduleWindowStartTime</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/account_setting_v2#window_start_time AccountSettingV2#window_start_time}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveAutomaticClusterUpdateWorkspaceMaintenanceWindowWeekDayBasedSchedule.property.dayOfWeek">dayOfWeek</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/account_setting_v2#day_of_week AccountSettingV2#day_of_week}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveAutomaticClusterUpdateWorkspaceMaintenanceWindowWeekDayBasedSchedule.property.frequency">frequency</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/account_setting_v2#frequency AccountSettingV2#frequency}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveAutomaticClusterUpdateWorkspaceMaintenanceWindowWeekDayBasedSchedule.property.windowStartTime">windowStartTime</a></code> | <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveAutomaticClusterUpdateWorkspaceMaintenanceWindowWeekDayBasedScheduleWindowStartTime">AccountSettingV2EffectiveAutomaticClusterUpdateWorkspaceMaintenanceWindowWeekDayBasedScheduleWindowStartTime</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/account_setting_v2#window_start_time AccountSettingV2#window_start_time}. |
 
 ---
 
@@ -2469,7 +2579,7 @@ public readonly dayOfWeek: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/account_setting_v2#day_of_week AccountSettingV2#day_of_week}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/account_setting_v2#day_of_week AccountSettingV2#day_of_week}.
 
 ---
 
@@ -2481,7 +2591,7 @@ public readonly frequency: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/account_setting_v2#frequency AccountSettingV2#frequency}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/account_setting_v2#frequency AccountSettingV2#frequency}.
 
 ---
 
@@ -2493,7 +2603,7 @@ public readonly windowStartTime: AccountSettingV2EffectiveAutomaticClusterUpdate
 
 - *Type:* <a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveAutomaticClusterUpdateWorkspaceMaintenanceWindowWeekDayBasedScheduleWindowStartTime">AccountSettingV2EffectiveAutomaticClusterUpdateWorkspaceMaintenanceWindowWeekDayBasedScheduleWindowStartTime</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/account_setting_v2#window_start_time AccountSettingV2#window_start_time}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/account_setting_v2#window_start_time AccountSettingV2#window_start_time}.
 
 ---
 
@@ -2511,8 +2621,8 @@ const accountSettingV2EffectiveAutomaticClusterUpdateWorkspaceMaintenanceWindowW
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveAutomaticClusterUpdateWorkspaceMaintenanceWindowWeekDayBasedScheduleWindowStartTime.property.hours">hours</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/account_setting_v2#hours AccountSettingV2#hours}. |
-| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveAutomaticClusterUpdateWorkspaceMaintenanceWindowWeekDayBasedScheduleWindowStartTime.property.minutes">minutes</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/account_setting_v2#minutes AccountSettingV2#minutes}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveAutomaticClusterUpdateWorkspaceMaintenanceWindowWeekDayBasedScheduleWindowStartTime.property.hours">hours</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/account_setting_v2#hours AccountSettingV2#hours}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveAutomaticClusterUpdateWorkspaceMaintenanceWindowWeekDayBasedScheduleWindowStartTime.property.minutes">minutes</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/account_setting_v2#minutes AccountSettingV2#minutes}. |
 
 ---
 
@@ -2524,7 +2634,7 @@ public readonly hours: number;
 
 - *Type:* number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/account_setting_v2#hours AccountSettingV2#hours}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/account_setting_v2#hours AccountSettingV2#hours}.
 
 ---
 
@@ -2536,7 +2646,7 @@ public readonly minutes: number;
 
 - *Type:* number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/account_setting_v2#minutes AccountSettingV2#minutes}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/account_setting_v2#minutes AccountSettingV2#minutes}.
 
 ---
 
@@ -2554,7 +2664,7 @@ const accountSettingV2EffectiveBooleanVal: accountSettingV2.AccountSettingV2Effe
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveBooleanVal.property.value">value</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/account_setting_v2#value AccountSettingV2#value}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveBooleanVal.property.value">value</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/account_setting_v2#value AccountSettingV2#value}. |
 
 ---
 
@@ -2566,7 +2676,7 @@ public readonly value: boolean | IResolvable;
 
 - *Type:* boolean | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/account_setting_v2#value AccountSettingV2#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/account_setting_v2#value AccountSettingV2#value}.
 
 ---
 
@@ -2584,7 +2694,7 @@ const accountSettingV2EffectiveCollaborationPlatformConnectivity: accountSetting
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveCollaborationPlatformConnectivity.property.connectivity">connectivity</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/account_setting_v2#connectivity AccountSettingV2#connectivity}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveCollaborationPlatformConnectivity.property.connectivity">connectivity</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/account_setting_v2#connectivity AccountSettingV2#connectivity}. |
 
 ---
 
@@ -2596,7 +2706,7 @@ public readonly connectivity: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/account_setting_v2#connectivity AccountSettingV2#connectivity}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/account_setting_v2#connectivity AccountSettingV2#connectivity}.
 
 ---
 
@@ -2614,7 +2724,7 @@ const accountSettingV2EffectiveIntegerVal: accountSettingV2.AccountSettingV2Effe
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveIntegerVal.property.value">value</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/account_setting_v2#value AccountSettingV2#value}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveIntegerVal.property.value">value</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/account_setting_v2#value AccountSettingV2#value}. |
 
 ---
 
@@ -2626,7 +2736,7 @@ public readonly value: number;
 
 - *Type:* number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/account_setting_v2#value AccountSettingV2#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/account_setting_v2#value AccountSettingV2#value}.
 
 ---
 
@@ -2644,7 +2754,7 @@ const accountSettingV2EffectiveOperationalEmailCustomRecipient: accountSettingV2
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveOperationalEmailCustomRecipient.property.email">email</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/account_setting_v2#email AccountSettingV2#email}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveOperationalEmailCustomRecipient.property.email">email</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/account_setting_v2#email AccountSettingV2#email}. |
 
 ---
 
@@ -2656,7 +2766,7 @@ public readonly email: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/account_setting_v2#email AccountSettingV2#email}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/account_setting_v2#email AccountSettingV2#email}.
 
 ---
 
@@ -2674,7 +2784,7 @@ const accountSettingV2EffectivePersonalCompute: accountSettingV2.AccountSettingV
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectivePersonalCompute.property.value">value</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/account_setting_v2#value AccountSettingV2#value}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectivePersonalCompute.property.value">value</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/account_setting_v2#value AccountSettingV2#value}. |
 
 ---
 
@@ -2686,7 +2796,7 @@ public readonly value: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/account_setting_v2#value AccountSettingV2#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/account_setting_v2#value AccountSettingV2#value}.
 
 ---
 
@@ -2704,8 +2814,8 @@ const accountSettingV2EffectiveRestrictWorkspaceAdmins: accountSettingV2.Account
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveRestrictWorkspaceAdmins.property.status">status</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/account_setting_v2#status AccountSettingV2#status}. |
-| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveRestrictWorkspaceAdmins.property.disableGovTagCreation">disableGovTagCreation</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/account_setting_v2#disable_gov_tag_creation AccountSettingV2#disable_gov_tag_creation}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveRestrictWorkspaceAdmins.property.status">status</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/account_setting_v2#status AccountSettingV2#status}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveRestrictWorkspaceAdmins.property.disableGovTagCreation">disableGovTagCreation</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/account_setting_v2#disable_gov_tag_creation AccountSettingV2#disable_gov_tag_creation}. |
 
 ---
 
@@ -2717,7 +2827,7 @@ public readonly status: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/account_setting_v2#status AccountSettingV2#status}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/account_setting_v2#status AccountSettingV2#status}.
 
 ---
 
@@ -2729,7 +2839,7 @@ public readonly disableGovTagCreation: boolean | IResolvable;
 
 - *Type:* boolean | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/account_setting_v2#disable_gov_tag_creation AccountSettingV2#disable_gov_tag_creation}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/account_setting_v2#disable_gov_tag_creation AccountSettingV2#disable_gov_tag_creation}.
 
 ---
 
@@ -2747,7 +2857,7 @@ const accountSettingV2EffectiveStringVal: accountSettingV2.AccountSettingV2Effec
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveStringVal.property.value">value</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/account_setting_v2#value AccountSettingV2#value}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveStringVal.property.value">value</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/account_setting_v2#value AccountSettingV2#value}. |
 
 ---
 
@@ -2759,7 +2869,50 @@ public readonly value: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/account_setting_v2#value AccountSettingV2#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/account_setting_v2#value AccountSettingV2#value}.
+
+---
+
+### AccountSettingV2EffectiveWorkspaceLabel <a name="AccountSettingV2EffectiveWorkspaceLabel" id="@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceLabel"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceLabel.Initializer"></a>
+
+```typescript
+import { accountSettingV2 } from '@cdktn/provider-databricks'
+
+const accountSettingV2EffectiveWorkspaceLabel: accountSettingV2.AccountSettingV2EffectiveWorkspaceLabel = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceLabel.property.color">color</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/account_setting_v2#color AccountSettingV2#color}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceLabel.property.label">label</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/account_setting_v2#label AccountSettingV2#label}. |
+
+---
+
+##### `color`<sup>Optional</sup> <a name="color" id="@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceLabel.property.color"></a>
+
+```typescript
+public readonly color: string;
+```
+
+- *Type:* string
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/account_setting_v2#color AccountSettingV2#color}.
+
+---
+
+##### `label`<sup>Optional</sup> <a name="label" id="@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceLabel.property.label"></a>
+
+```typescript
+public readonly label: string;
+```
+
+- *Type:* string
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/account_setting_v2#label AccountSettingV2#label}.
 
 ---
 
@@ -2777,7 +2930,7 @@ const accountSettingV2IntegerVal: accountSettingV2.AccountSettingV2IntegerVal = 
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2IntegerVal.property.value">value</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/account_setting_v2#value AccountSettingV2#value}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2IntegerVal.property.value">value</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/account_setting_v2#value AccountSettingV2#value}. |
 
 ---
 
@@ -2789,7 +2942,7 @@ public readonly value: number;
 
 - *Type:* number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/account_setting_v2#value AccountSettingV2#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/account_setting_v2#value AccountSettingV2#value}.
 
 ---
 
@@ -2807,7 +2960,7 @@ const accountSettingV2OperationalEmailCustomRecipient: accountSettingV2.AccountS
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2OperationalEmailCustomRecipient.property.email">email</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/account_setting_v2#email AccountSettingV2#email}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2OperationalEmailCustomRecipient.property.email">email</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/account_setting_v2#email AccountSettingV2#email}. |
 
 ---
 
@@ -2819,7 +2972,7 @@ public readonly email: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/account_setting_v2#email AccountSettingV2#email}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/account_setting_v2#email AccountSettingV2#email}.
 
 ---
 
@@ -2837,7 +2990,7 @@ const accountSettingV2PersonalCompute: accountSettingV2.AccountSettingV2Personal
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2PersonalCompute.property.value">value</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/account_setting_v2#value AccountSettingV2#value}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2PersonalCompute.property.value">value</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/account_setting_v2#value AccountSettingV2#value}. |
 
 ---
 
@@ -2849,7 +3002,7 @@ public readonly value: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/account_setting_v2#value AccountSettingV2#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/account_setting_v2#value AccountSettingV2#value}.
 
 ---
 
@@ -2867,8 +3020,8 @@ const accountSettingV2RestrictWorkspaceAdmins: accountSettingV2.AccountSettingV2
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2RestrictWorkspaceAdmins.property.status">status</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/account_setting_v2#status AccountSettingV2#status}. |
-| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2RestrictWorkspaceAdmins.property.disableGovTagCreation">disableGovTagCreation</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/account_setting_v2#disable_gov_tag_creation AccountSettingV2#disable_gov_tag_creation}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2RestrictWorkspaceAdmins.property.status">status</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/account_setting_v2#status AccountSettingV2#status}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2RestrictWorkspaceAdmins.property.disableGovTagCreation">disableGovTagCreation</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/account_setting_v2#disable_gov_tag_creation AccountSettingV2#disable_gov_tag_creation}. |
 
 ---
 
@@ -2880,7 +3033,7 @@ public readonly status: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/account_setting_v2#status AccountSettingV2#status}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/account_setting_v2#status AccountSettingV2#status}.
 
 ---
 
@@ -2892,7 +3045,7 @@ public readonly disableGovTagCreation: boolean | IResolvable;
 
 - *Type:* boolean | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/account_setting_v2#disable_gov_tag_creation AccountSettingV2#disable_gov_tag_creation}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/account_setting_v2#disable_gov_tag_creation AccountSettingV2#disable_gov_tag_creation}.
 
 ---
 
@@ -2910,7 +3063,7 @@ const accountSettingV2StringVal: accountSettingV2.AccountSettingV2StringVal = { 
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2StringVal.property.value">value</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/account_setting_v2#value AccountSettingV2#value}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2StringVal.property.value">value</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/account_setting_v2#value AccountSettingV2#value}. |
 
 ---
 
@@ -2922,7 +3075,50 @@ public readonly value: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/account_setting_v2#value AccountSettingV2#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/account_setting_v2#value AccountSettingV2#value}.
+
+---
+
+### AccountSettingV2WorkspaceLabel <a name="AccountSettingV2WorkspaceLabel" id="@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceLabel"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceLabel.Initializer"></a>
+
+```typescript
+import { accountSettingV2 } from '@cdktn/provider-databricks'
+
+const accountSettingV2WorkspaceLabel: accountSettingV2.AccountSettingV2WorkspaceLabel = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceLabel.property.color">color</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/account_setting_v2#color AccountSettingV2#color}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceLabel.property.label">label</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/account_setting_v2#label AccountSettingV2#label}. |
+
+---
+
+##### `color`<sup>Optional</sup> <a name="color" id="@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceLabel.property.color"></a>
+
+```typescript
+public readonly color: string;
+```
+
+- *Type:* string
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/account_setting_v2#color AccountSettingV2#color}.
+
+---
+
+##### `label`<sup>Optional</sup> <a name="label" id="@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceLabel.property.label"></a>
+
+```typescript
+public readonly label: string;
+```
+
+- *Type:* string
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/account_setting_v2#label AccountSettingV2#label}.
 
 ---
 
@@ -10498,6 +10694,313 @@ public readonly internalValue: AccountSettingV2EffectiveStringVal;
 ---
 
 
+### AccountSettingV2EffectiveWorkspaceLabelOutputReference <a name="AccountSettingV2EffectiveWorkspaceLabelOutputReference" id="@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceLabelOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceLabelOutputReference.Initializer"></a>
+
+```typescript
+import { accountSettingV2 } from '@cdktn/provider-databricks'
+
+new accountSettingV2.AccountSettingV2EffectiveWorkspaceLabelOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceLabelOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceLabelOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceLabelOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceLabelOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceLabelOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceLabelOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceLabelOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceLabelOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceLabelOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceLabelOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceLabelOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceLabelOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceLabelOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceLabelOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceLabelOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceLabelOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceLabelOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceLabelOutputReference.resetColor">resetColor</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceLabelOutputReference.resetLabel">resetLabel</a></code> | *No description.* |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceLabelOutputReference.computeFqn"></a>
+
+```typescript
+public computeFqn(): string
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceLabelOutputReference.getAnyMapAttribute"></a>
+
+```typescript
+public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceLabelOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceLabelOutputReference.getBooleanAttribute"></a>
+
+```typescript
+public getBooleanAttribute(terraformAttribute: string): IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceLabelOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceLabelOutputReference.getBooleanMapAttribute"></a>
+
+```typescript
+public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceLabelOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceLabelOutputReference.getListAttribute"></a>
+
+```typescript
+public getListAttribute(terraformAttribute: string): string[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceLabelOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceLabelOutputReference.getNumberAttribute"></a>
+
+```typescript
+public getNumberAttribute(terraformAttribute: string): number
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceLabelOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceLabelOutputReference.getNumberListAttribute"></a>
+
+```typescript
+public getNumberListAttribute(terraformAttribute: string): number[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceLabelOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceLabelOutputReference.getNumberMapAttribute"></a>
+
+```typescript
+public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceLabelOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceLabelOutputReference.getStringAttribute"></a>
+
+```typescript
+public getStringAttribute(terraformAttribute: string): string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceLabelOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceLabelOutputReference.getStringMapAttribute"></a>
+
+```typescript
+public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceLabelOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceLabelOutputReference.interpolationForAttribute"></a>
+
+```typescript
+public interpolationForAttribute(property: string): IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceLabelOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* string
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceLabelOutputReference.resolve"></a>
+
+```typescript
+public resolve(_context: IResolveContext): any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceLabelOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceLabelOutputReference.toString"></a>
+
+```typescript
+public toString(): string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `resetColor` <a name="resetColor" id="@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceLabelOutputReference.resetColor"></a>
+
+```typescript
+public resetColor(): void
+```
+
+##### `resetLabel` <a name="resetLabel" id="@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceLabelOutputReference.resetLabel"></a>
+
+```typescript
+public resetLabel(): void
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceLabelOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceLabelOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceLabelOutputReference.property.colorInput">colorInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceLabelOutputReference.property.labelInput">labelInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceLabelOutputReference.property.color">color</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceLabelOutputReference.property.label">label</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceLabelOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceLabel">AccountSettingV2EffectiveWorkspaceLabel</a></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceLabelOutputReference.property.creationStack"></a>
+
+```typescript
+public readonly creationStack: string[];
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceLabelOutputReference.property.fqn"></a>
+
+```typescript
+public readonly fqn: string;
+```
+
+- *Type:* string
+
+---
+
+##### `colorInput`<sup>Optional</sup> <a name="colorInput" id="@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceLabelOutputReference.property.colorInput"></a>
+
+```typescript
+public readonly colorInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `labelInput`<sup>Optional</sup> <a name="labelInput" id="@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceLabelOutputReference.property.labelInput"></a>
+
+```typescript
+public readonly labelInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `color`<sup>Required</sup> <a name="color" id="@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceLabelOutputReference.property.color"></a>
+
+```typescript
+public readonly color: string;
+```
+
+- *Type:* string
+
+---
+
+##### `label`<sup>Required</sup> <a name="label" id="@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceLabelOutputReference.property.label"></a>
+
+```typescript
+public readonly label: string;
+```
+
+- *Type:* string
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceLabelOutputReference.property.internalValue"></a>
+
+```typescript
+public readonly internalValue: IResolvable | AccountSettingV2EffectiveWorkspaceLabel;
+```
+
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceLabel">AccountSettingV2EffectiveWorkspaceLabel</a>
+
+---
+
+
 ### AccountSettingV2IntegerValOutputReference <a name="AccountSettingV2IntegerValOutputReference" id="@cdktn/provider-databricks.accountSettingV2.AccountSettingV2IntegerValOutputReference"></a>
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.accountSettingV2.AccountSettingV2IntegerValOutputReference.Initializer"></a>
@@ -11906,6 +12409,313 @@ public readonly internalValue: IResolvable | AccountSettingV2StringVal;
 ```
 
 - *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2StringVal">AccountSettingV2StringVal</a>
+
+---
+
+
+### AccountSettingV2WorkspaceLabelOutputReference <a name="AccountSettingV2WorkspaceLabelOutputReference" id="@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceLabelOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceLabelOutputReference.Initializer"></a>
+
+```typescript
+import { accountSettingV2 } from '@cdktn/provider-databricks'
+
+new accountSettingV2.AccountSettingV2WorkspaceLabelOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceLabelOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceLabelOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceLabelOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceLabelOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceLabelOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceLabelOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceLabelOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceLabelOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceLabelOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceLabelOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceLabelOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceLabelOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceLabelOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceLabelOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceLabelOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceLabelOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceLabelOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceLabelOutputReference.resetColor">resetColor</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceLabelOutputReference.resetLabel">resetLabel</a></code> | *No description.* |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceLabelOutputReference.computeFqn"></a>
+
+```typescript
+public computeFqn(): string
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceLabelOutputReference.getAnyMapAttribute"></a>
+
+```typescript
+public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceLabelOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceLabelOutputReference.getBooleanAttribute"></a>
+
+```typescript
+public getBooleanAttribute(terraformAttribute: string): IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceLabelOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceLabelOutputReference.getBooleanMapAttribute"></a>
+
+```typescript
+public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceLabelOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceLabelOutputReference.getListAttribute"></a>
+
+```typescript
+public getListAttribute(terraformAttribute: string): string[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceLabelOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceLabelOutputReference.getNumberAttribute"></a>
+
+```typescript
+public getNumberAttribute(terraformAttribute: string): number
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceLabelOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceLabelOutputReference.getNumberListAttribute"></a>
+
+```typescript
+public getNumberListAttribute(terraformAttribute: string): number[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceLabelOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceLabelOutputReference.getNumberMapAttribute"></a>
+
+```typescript
+public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceLabelOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceLabelOutputReference.getStringAttribute"></a>
+
+```typescript
+public getStringAttribute(terraformAttribute: string): string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceLabelOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceLabelOutputReference.getStringMapAttribute"></a>
+
+```typescript
+public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceLabelOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceLabelOutputReference.interpolationForAttribute"></a>
+
+```typescript
+public interpolationForAttribute(property: string): IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceLabelOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* string
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceLabelOutputReference.resolve"></a>
+
+```typescript
+public resolve(_context: IResolveContext): any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceLabelOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceLabelOutputReference.toString"></a>
+
+```typescript
+public toString(): string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `resetColor` <a name="resetColor" id="@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceLabelOutputReference.resetColor"></a>
+
+```typescript
+public resetColor(): void
+```
+
+##### `resetLabel` <a name="resetLabel" id="@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceLabelOutputReference.resetLabel"></a>
+
+```typescript
+public resetLabel(): void
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceLabelOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceLabelOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceLabelOutputReference.property.colorInput">colorInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceLabelOutputReference.property.labelInput">labelInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceLabelOutputReference.property.color">color</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceLabelOutputReference.property.label">label</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceLabelOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceLabel">AccountSettingV2WorkspaceLabel</a></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceLabelOutputReference.property.creationStack"></a>
+
+```typescript
+public readonly creationStack: string[];
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceLabelOutputReference.property.fqn"></a>
+
+```typescript
+public readonly fqn: string;
+```
+
+- *Type:* string
+
+---
+
+##### `colorInput`<sup>Optional</sup> <a name="colorInput" id="@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceLabelOutputReference.property.colorInput"></a>
+
+```typescript
+public readonly colorInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `labelInput`<sup>Optional</sup> <a name="labelInput" id="@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceLabelOutputReference.property.labelInput"></a>
+
+```typescript
+public readonly labelInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `color`<sup>Required</sup> <a name="color" id="@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceLabelOutputReference.property.color"></a>
+
+```typescript
+public readonly color: string;
+```
+
+- *Type:* string
+
+---
+
+##### `label`<sup>Required</sup> <a name="label" id="@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceLabelOutputReference.property.label"></a>
+
+```typescript
+public readonly label: string;
+```
+
+- *Type:* string
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceLabelOutputReference.property.internalValue"></a>
+
+```typescript
+public readonly internalValue: IResolvable | AccountSettingV2WorkspaceLabel;
+```
+
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceLabel">AccountSettingV2WorkspaceLabel</a>
 
 ---
 

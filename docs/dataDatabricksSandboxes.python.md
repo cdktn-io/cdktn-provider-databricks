@@ -4,7 +4,7 @@
 
 ### DataDatabricksSandboxes <a name="DataDatabricksSandboxes" id="@cdktn/provider-databricks.dataDatabricksSandboxes.DataDatabricksSandboxes"></a>
 
-Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/sandboxes databricks_sandboxes}.
+Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/sandboxes databricks_sandboxes}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksSandboxes.DataDatabricksSandboxes.Initializer"></a>
 
@@ -37,8 +37,8 @@ dataDatabricksSandboxes.DataDatabricksSandboxes(
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksSandboxes.DataDatabricksSandboxes.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksSandboxes.DataDatabricksSandboxes.Initializer.parameter.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksSandboxes.DataDatabricksSandboxes.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksSandboxes.DataDatabricksSandboxes.Initializer.parameter.pageSize">page_size</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/sandboxes#page_size DataDatabricksSandboxes#page_size}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksSandboxes.DataDatabricksSandboxes.Initializer.parameter.providerConfig">provider_config</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksSandboxes.DataDatabricksSandboxesProviderConfig">DataDatabricksSandboxesProviderConfig</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/sandboxes#provider_config DataDatabricksSandboxes#provider_config}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksSandboxes.DataDatabricksSandboxes.Initializer.parameter.pageSize">page_size</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/sandboxes#page_size DataDatabricksSandboxes#page_size}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksSandboxes.DataDatabricksSandboxes.Initializer.parameter.providerConfig">provider_config</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksSandboxes.DataDatabricksSandboxesProviderConfig">DataDatabricksSandboxesProviderConfig</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/sandboxes#provider_config DataDatabricksSandboxes#provider_config}. |
 
 ---
 
@@ -106,7 +106,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/sandboxes#page_size DataDatabricksSandboxes#page_size}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/sandboxes#page_size DataDatabricksSandboxes#page_size}.
 
 ---
 
@@ -114,7 +114,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* <a href="#@cdktn/provider-databricks.dataDatabricksSandboxes.DataDatabricksSandboxesProviderConfig">DataDatabricksSandboxesProviderConfig</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/sandboxes#provider_config DataDatabricksSandboxes#provider_config}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/sandboxes#provider_config DataDatabricksSandboxes#provider_config}.
 
 ---
 
@@ -398,7 +398,7 @@ def put_provider_config(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/sandboxes#workspace_id DataDatabricksSandboxes#workspace_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/sandboxes#workspace_id DataDatabricksSandboxes#workspace_id}.
 
 ---
 
@@ -528,7 +528,7 @@ The construct id used in the generated config for the DataDatabricksSandboxes to
 
 The id of the existing DataDatabricksSandboxes that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/sandboxes#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/sandboxes#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -787,8 +787,8 @@ dataDatabricksSandboxes.DataDatabricksSandboxesConfig(
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksSandboxes.DataDatabricksSandboxesConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksSandboxes.DataDatabricksSandboxesConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksSandboxes.DataDatabricksSandboxesConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksSandboxes.DataDatabricksSandboxesConfig.property.pageSize">page_size</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/sandboxes#page_size DataDatabricksSandboxes#page_size}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksSandboxes.DataDatabricksSandboxesConfig.property.providerConfig">provider_config</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksSandboxes.DataDatabricksSandboxesProviderConfig">DataDatabricksSandboxesProviderConfig</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/sandboxes#provider_config DataDatabricksSandboxes#provider_config}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksSandboxes.DataDatabricksSandboxesConfig.property.pageSize">page_size</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/sandboxes#page_size DataDatabricksSandboxes#page_size}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksSandboxes.DataDatabricksSandboxesConfig.property.providerConfig">provider_config</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksSandboxes.DataDatabricksSandboxesProviderConfig">DataDatabricksSandboxesProviderConfig</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/sandboxes#provider_config DataDatabricksSandboxes#provider_config}. |
 
 ---
 
@@ -870,7 +870,7 @@ page_size: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/sandboxes#page_size DataDatabricksSandboxes#page_size}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/sandboxes#page_size DataDatabricksSandboxes#page_size}.
 
 ---
 
@@ -882,7 +882,7 @@ provider_config: DataDatabricksSandboxesProviderConfig
 
 - *Type:* <a href="#@cdktn/provider-databricks.dataDatabricksSandboxes.DataDatabricksSandboxesProviderConfig">DataDatabricksSandboxesProviderConfig</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/sandboxes#provider_config DataDatabricksSandboxes#provider_config}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/sandboxes#provider_config DataDatabricksSandboxes#provider_config}.
 
 ---
 
@@ -902,7 +902,7 @@ dataDatabricksSandboxes.DataDatabricksSandboxesProviderConfig(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksSandboxes.DataDatabricksSandboxesProviderConfig.property.workspaceId">workspace_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/sandboxes#workspace_id DataDatabricksSandboxes#workspace_id}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksSandboxes.DataDatabricksSandboxesProviderConfig.property.workspaceId">workspace_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/sandboxes#workspace_id DataDatabricksSandboxes#workspace_id}. |
 
 ---
 
@@ -914,7 +914,7 @@ workspace_id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/sandboxes#workspace_id DataDatabricksSandboxes#workspace_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/sandboxes#workspace_id DataDatabricksSandboxes#workspace_id}.
 
 ---
 
@@ -935,8 +935,8 @@ dataDatabricksSandboxes.DataDatabricksSandboxesSandboxes(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksSandboxes.DataDatabricksSandboxesSandboxes.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/sandboxes#name DataDatabricksSandboxes#name}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksSandboxes.DataDatabricksSandboxesSandboxes.property.providerConfig">provider_config</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksSandboxes.DataDatabricksSandboxesSandboxesProviderConfig">DataDatabricksSandboxesSandboxesProviderConfig</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/sandboxes#provider_config DataDatabricksSandboxes#provider_config}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksSandboxes.DataDatabricksSandboxesSandboxes.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/sandboxes#name DataDatabricksSandboxes#name}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksSandboxes.DataDatabricksSandboxesSandboxes.property.providerConfig">provider_config</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksSandboxes.DataDatabricksSandboxesSandboxesProviderConfig">DataDatabricksSandboxesSandboxesProviderConfig</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/sandboxes#provider_config DataDatabricksSandboxes#provider_config}. |
 
 ---
 
@@ -948,7 +948,7 @@ name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/sandboxes#name DataDatabricksSandboxes#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/sandboxes#name DataDatabricksSandboxes#name}.
 
 ---
 
@@ -960,7 +960,7 @@ provider_config: DataDatabricksSandboxesSandboxesProviderConfig
 
 - *Type:* <a href="#@cdktn/provider-databricks.dataDatabricksSandboxes.DataDatabricksSandboxesSandboxesProviderConfig">DataDatabricksSandboxesSandboxesProviderConfig</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/sandboxes#provider_config DataDatabricksSandboxes#provider_config}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/sandboxes#provider_config DataDatabricksSandboxes#provider_config}.
 
 ---
 
@@ -980,7 +980,7 @@ dataDatabricksSandboxes.DataDatabricksSandboxesSandboxesProviderConfig(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksSandboxes.DataDatabricksSandboxesSandboxesProviderConfig.property.workspaceId">workspace_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/sandboxes#workspace_id DataDatabricksSandboxes#workspace_id}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksSandboxes.DataDatabricksSandboxesSandboxesProviderConfig.property.workspaceId">workspace_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/sandboxes#workspace_id DataDatabricksSandboxes#workspace_id}. |
 
 ---
 
@@ -992,7 +992,7 @@ workspace_id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/sandboxes#workspace_id DataDatabricksSandboxes#workspace_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/sandboxes#workspace_id DataDatabricksSandboxes#workspace_id}.
 
 ---
 
@@ -1012,7 +1012,7 @@ dataDatabricksSandboxes.DataDatabricksSandboxesSandboxesSpec(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksSandboxes.DataDatabricksSandboxesSandboxesSpec.property.compute">compute</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksSandboxes.DataDatabricksSandboxesSandboxesSpecCompute">DataDatabricksSandboxesSandboxesSpecCompute</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/sandboxes#compute DataDatabricksSandboxes#compute}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksSandboxes.DataDatabricksSandboxesSandboxesSpec.property.compute">compute</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksSandboxes.DataDatabricksSandboxesSandboxesSpecCompute">DataDatabricksSandboxesSandboxesSpecCompute</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/sandboxes#compute DataDatabricksSandboxes#compute}. |
 
 ---
 
@@ -1024,7 +1024,7 @@ compute: DataDatabricksSandboxesSandboxesSpecCompute
 
 - *Type:* <a href="#@cdktn/provider-databricks.dataDatabricksSandboxes.DataDatabricksSandboxesSandboxesSpecCompute">DataDatabricksSandboxesSandboxesSpecCompute</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/sandboxes#compute DataDatabricksSandboxes#compute}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/sandboxes#compute DataDatabricksSandboxes#compute}.
 
 ---
 
@@ -1044,7 +1044,7 @@ dataDatabricksSandboxes.DataDatabricksSandboxesSandboxesSpecCompute(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksSandboxes.DataDatabricksSandboxesSandboxesSpecCompute.property.inactivityTimeout">inactivity_timeout</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/sandboxes#inactivity_timeout DataDatabricksSandboxes#inactivity_timeout}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksSandboxes.DataDatabricksSandboxesSandboxesSpecCompute.property.inactivityTimeout">inactivity_timeout</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/sandboxes#inactivity_timeout DataDatabricksSandboxes#inactivity_timeout}. |
 
 ---
 
@@ -1056,7 +1056,7 @@ inactivity_timeout: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/sandboxes#inactivity_timeout DataDatabricksSandboxes#inactivity_timeout}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/sandboxes#inactivity_timeout DataDatabricksSandboxes#inactivity_timeout}.
 
 ---
 
@@ -1808,7 +1808,7 @@ def put_provider_config(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/sandboxes#workspace_id DataDatabricksSandboxes#workspace_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/sandboxes#workspace_id DataDatabricksSandboxes#workspace_id}.
 
 ---
 
@@ -2811,7 +2811,7 @@ def put_compute(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/sandboxes#inactivity_timeout DataDatabricksSandboxes#inactivity_timeout}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/sandboxes#inactivity_timeout DataDatabricksSandboxes#inactivity_timeout}.
 
 ---
 

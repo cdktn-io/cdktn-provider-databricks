@@ -4,7 +4,7 @@
 
 ### Sandbox <a name="Sandbox" id="@cdktn/provider-databricks.sandbox.Sandbox"></a>
 
-Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/sandbox databricks_sandbox}.
+Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/sandbox databricks_sandbox}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.sandbox.Sandbox.Initializer"></a>
 
@@ -536,7 +536,7 @@ The construct id used in the generated config for the Sandbox to import.
 
 The id of the existing Sandbox that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/sandbox#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/sandbox#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -896,10 +896,10 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/sandbox"
 | <code><a href="#@cdktn/provider-databricks.sandbox.SandboxConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.sandbox.SandboxConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.sandbox.SandboxConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-databricks.sandbox.SandboxConfig.property.sandboxId">SandboxId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/sandbox#sandbox_id Sandbox#sandbox_id}. |
-| <code><a href="#@cdktn/provider-databricks.sandbox.SandboxConfig.property.displayName">DisplayName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/sandbox#display_name Sandbox#display_name}. |
-| <code><a href="#@cdktn/provider-databricks.sandbox.SandboxConfig.property.providerConfig">ProviderConfig</a></code> | <code><a href="#@cdktn/provider-databricks.sandbox.SandboxProviderConfig">SandboxProviderConfig</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/sandbox#provider_config Sandbox#provider_config}. |
-| <code><a href="#@cdktn/provider-databricks.sandbox.SandboxConfig.property.spec">Spec</a></code> | <code><a href="#@cdktn/provider-databricks.sandbox.SandboxSpec">SandboxSpec</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/sandbox#spec Sandbox#spec}. |
+| <code><a href="#@cdktn/provider-databricks.sandbox.SandboxConfig.property.sandboxId">SandboxId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/sandbox#sandbox_id Sandbox#sandbox_id}. |
+| <code><a href="#@cdktn/provider-databricks.sandbox.SandboxConfig.property.displayName">DisplayName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/sandbox#display_name Sandbox#display_name}. |
+| <code><a href="#@cdktn/provider-databricks.sandbox.SandboxConfig.property.providerConfig">ProviderConfig</a></code> | <code><a href="#@cdktn/provider-databricks.sandbox.SandboxProviderConfig">SandboxProviderConfig</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/sandbox#provider_config Sandbox#provider_config}. |
+| <code><a href="#@cdktn/provider-databricks.sandbox.SandboxConfig.property.spec">Spec</a></code> | <code><a href="#@cdktn/provider-databricks.sandbox.SandboxSpec">SandboxSpec</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/sandbox#spec Sandbox#spec}. |
 
 ---
 
@@ -981,7 +981,7 @@ SandboxId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/sandbox#sandbox_id Sandbox#sandbox_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/sandbox#sandbox_id Sandbox#sandbox_id}.
 
 ---
 
@@ -993,7 +993,7 @@ DisplayName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/sandbox#display_name Sandbox#display_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/sandbox#display_name Sandbox#display_name}.
 
 ---
 
@@ -1005,7 +1005,7 @@ ProviderConfig SandboxProviderConfig
 
 - *Type:* <a href="#@cdktn/provider-databricks.sandbox.SandboxProviderConfig">SandboxProviderConfig</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/sandbox#provider_config Sandbox#provider_config}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/sandbox#provider_config Sandbox#provider_config}.
 
 ---
 
@@ -1017,7 +1017,7 @@ Spec SandboxSpec
 
 - *Type:* <a href="#@cdktn/provider-databricks.sandbox.SandboxSpec">SandboxSpec</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/sandbox#spec Sandbox#spec}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/sandbox#spec Sandbox#spec}.
 
 ---
 
@@ -1037,7 +1037,7 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/sandbox"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.sandbox.SandboxProviderConfig.property.workspaceId">WorkspaceId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/sandbox#workspace_id Sandbox#workspace_id}. |
+| <code><a href="#@cdktn/provider-databricks.sandbox.SandboxProviderConfig.property.workspaceId">WorkspaceId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/sandbox#workspace_id Sandbox#workspace_id}. |
 
 ---
 
@@ -1049,7 +1049,7 @@ WorkspaceId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/sandbox#workspace_id Sandbox#workspace_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/sandbox#workspace_id Sandbox#workspace_id}.
 
 ---
 
@@ -1069,7 +1069,7 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/sandbox"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.sandbox.SandboxSpec.property.compute">Compute</a></code> | <code><a href="#@cdktn/provider-databricks.sandbox.SandboxSpecCompute">SandboxSpecCompute</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/sandbox#compute Sandbox#compute}. |
+| <code><a href="#@cdktn/provider-databricks.sandbox.SandboxSpec.property.compute">Compute</a></code> | <code><a href="#@cdktn/provider-databricks.sandbox.SandboxSpecCompute">SandboxSpecCompute</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/sandbox#compute Sandbox#compute}. |
 
 ---
 
@@ -1081,7 +1081,7 @@ Compute SandboxSpecCompute
 
 - *Type:* <a href="#@cdktn/provider-databricks.sandbox.SandboxSpecCompute">SandboxSpecCompute</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/sandbox#compute Sandbox#compute}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/sandbox#compute Sandbox#compute}.
 
 ---
 
@@ -1101,7 +1101,7 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/sandbox"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.sandbox.SandboxSpecCompute.property.inactivityTimeout">InactivityTimeout</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/sandbox#inactivity_timeout Sandbox#inactivity_timeout}. |
+| <code><a href="#@cdktn/provider-databricks.sandbox.SandboxSpecCompute.property.inactivityTimeout">InactivityTimeout</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/sandbox#inactivity_timeout Sandbox#inactivity_timeout}. |
 
 ---
 
@@ -1113,7 +1113,7 @@ InactivityTimeout *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/resources/sandbox#inactivity_timeout Sandbox#inactivity_timeout}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/sandbox#inactivity_timeout Sandbox#inactivity_timeout}.
 
 ---
 

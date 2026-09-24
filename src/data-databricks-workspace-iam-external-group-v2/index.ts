@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/workspace_iam_external_group_v2
+// https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/workspace_iam_external_group_v2
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,17 +13,17 @@ import * as cdktn from 'cdktn';
 
 export interface DataDatabricksWorkspaceIamExternalGroupV2Config extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/workspace_iam_external_group_v2#name DataDatabricksWorkspaceIamExternalGroupV2#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/workspace_iam_external_group_v2#name DataDatabricksWorkspaceIamExternalGroupV2#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/workspace_iam_external_group_v2#provider_config DataDatabricksWorkspaceIamExternalGroupV2#provider_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/workspace_iam_external_group_v2#provider_config DataDatabricksWorkspaceIamExternalGroupV2#provider_config}
   */
   readonly providerConfig?: DataDatabricksWorkspaceIamExternalGroupV2ProviderConfig;
 }
 export interface DataDatabricksWorkspaceIamExternalGroupV2ProviderConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/workspace_iam_external_group_v2#workspace_id DataDatabricksWorkspaceIamExternalGroupV2#workspace_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/workspace_iam_external_group_v2#workspace_id DataDatabricksWorkspaceIamExternalGroupV2#workspace_id}
   */
   readonly workspaceId?: string;
 }
@@ -117,7 +117,7 @@ export class DataDatabricksWorkspaceIamExternalGroupV2ProviderConfigOutputRefere
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/workspace_iam_external_group_v2 databricks_workspace_iam_external_group_v2}
+* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/workspace_iam_external_group_v2 databricks_workspace_iam_external_group_v2}
 */
 export class DataDatabricksWorkspaceIamExternalGroupV2 extends cdktn.TerraformDataSource {
 
@@ -133,7 +133,7 @@ export class DataDatabricksWorkspaceIamExternalGroupV2 extends cdktn.TerraformDa
   * Generates CDKTN code for importing a DataDatabricksWorkspaceIamExternalGroupV2 resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataDatabricksWorkspaceIamExternalGroupV2 to import
-  * @param importFromId The id of the existing DataDatabricksWorkspaceIamExternalGroupV2 that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/workspace_iam_external_group_v2#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataDatabricksWorkspaceIamExternalGroupV2 that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/workspace_iam_external_group_v2#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataDatabricksWorkspaceIamExternalGroupV2 to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -145,7 +145,7 @@ export class DataDatabricksWorkspaceIamExternalGroupV2 extends cdktn.TerraformDa
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/workspace_iam_external_group_v2 databricks_workspace_iam_external_group_v2} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/workspace_iam_external_group_v2 databricks_workspace_iam_external_group_v2} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -156,7 +156,7 @@ export class DataDatabricksWorkspaceIamExternalGroupV2 extends cdktn.TerraformDa
       terraformResourceType: 'databricks_workspace_iam_external_group_v2',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '1.133.0',
+        providerVersion: '1.134.0',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,
