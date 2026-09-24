@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/sandboxes
+// https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/sandboxes
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,17 +13,17 @@ import * as cdktn from 'cdktn';
 
 export interface DataDatabricksSandboxesConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/sandboxes#page_size DataDatabricksSandboxes#page_size}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/sandboxes#page_size DataDatabricksSandboxes#page_size}
   */
   readonly pageSize?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/sandboxes#provider_config DataDatabricksSandboxes#provider_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/sandboxes#provider_config DataDatabricksSandboxes#provider_config}
   */
   readonly providerConfig?: DataDatabricksSandboxesProviderConfig;
 }
 export interface DataDatabricksSandboxesProviderConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/sandboxes#workspace_id DataDatabricksSandboxes#workspace_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/sandboxes#workspace_id DataDatabricksSandboxes#workspace_id}
   */
   readonly workspaceId?: string;
 }
@@ -117,7 +117,7 @@ export class DataDatabricksSandboxesProviderConfigOutputReference extends cdktn.
 }
 export interface DataDatabricksSandboxesSandboxesProviderConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/sandboxes#workspace_id DataDatabricksSandboxes#workspace_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/sandboxes#workspace_id DataDatabricksSandboxes#workspace_id}
   */
   readonly workspaceId?: string;
 }
@@ -211,7 +211,7 @@ export class DataDatabricksSandboxesSandboxesProviderConfigOutputReference exten
 }
 export interface DataDatabricksSandboxesSandboxesSpecCompute {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/sandboxes#inactivity_timeout DataDatabricksSandboxes#inactivity_timeout}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/sandboxes#inactivity_timeout DataDatabricksSandboxes#inactivity_timeout}
   */
   readonly inactivityTimeout?: string;
 }
@@ -305,7 +305,7 @@ export class DataDatabricksSandboxesSandboxesSpecComputeOutputReference extends 
 }
 export interface DataDatabricksSandboxesSandboxesSpec {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/sandboxes#compute DataDatabricksSandboxes#compute}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/sandboxes#compute DataDatabricksSandboxes#compute}
   */
   readonly compute?: DataDatabricksSandboxesSandboxesSpecCompute;
 }
@@ -443,11 +443,11 @@ export class DataDatabricksSandboxesSandboxesStatusOutputReference extends cdktn
 }
 export interface DataDatabricksSandboxesSandboxes {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/sandboxes#name DataDatabricksSandboxes#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/sandboxes#name DataDatabricksSandboxes#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/sandboxes#provider_config DataDatabricksSandboxes#provider_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/sandboxes#provider_config DataDatabricksSandboxes#provider_config}
   */
   readonly providerConfig?: DataDatabricksSandboxesSandboxesProviderConfig;
 }
@@ -606,7 +606,7 @@ export class DataDatabricksSandboxesSandboxesList extends cdktn.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/sandboxes databricks_sandboxes}
+* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/sandboxes databricks_sandboxes}
 */
 export class DataDatabricksSandboxes extends cdktn.TerraformDataSource {
 
@@ -622,7 +622,7 @@ export class DataDatabricksSandboxes extends cdktn.TerraformDataSource {
   * Generates CDKTN code for importing a DataDatabricksSandboxes resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataDatabricksSandboxes to import
-  * @param importFromId The id of the existing DataDatabricksSandboxes that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/sandboxes#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataDatabricksSandboxes that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/sandboxes#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataDatabricksSandboxes to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -634,7 +634,7 @@ export class DataDatabricksSandboxes extends cdktn.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.133.0/docs/data-sources/sandboxes databricks_sandboxes} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/data-sources/sandboxes databricks_sandboxes} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -645,7 +645,7 @@ export class DataDatabricksSandboxes extends cdktn.TerraformDataSource {
       terraformResourceType: 'databricks_sandboxes',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '1.133.0',
+        providerVersion: '1.134.0',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,
