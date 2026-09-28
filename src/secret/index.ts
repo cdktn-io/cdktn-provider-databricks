@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/secret
+// https://registry.terraform.io/providers/databricks/databricks/1.135.0/docs/resources/secret
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,34 +13,42 @@ import * as cdktn from 'cdktn';
 
 export interface SecretConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/secret#id Secret#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.135.0/docs/resources/secret#id Secret#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/secret#key Secret#key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.135.0/docs/resources/secret#key Secret#key}
   */
   readonly key: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/secret#scope Secret#scope}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.135.0/docs/resources/secret#scope Secret#scope}
   */
   readonly scope: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/secret#string_value Secret#string_value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.135.0/docs/resources/secret#string_value Secret#string_value}
   */
-  readonly stringValue: string;
+  readonly stringValue?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.135.0/docs/resources/secret#string_value_wo Secret#string_value_wo}
+  */
+  readonly stringValueWo?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.135.0/docs/resources/secret#string_value_wo_version Secret#string_value_wo_version}
+  */
+  readonly stringValueWoVersion?: number;
   /**
   * provider_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/secret#provider_config Secret#provider_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.135.0/docs/resources/secret#provider_config Secret#provider_config}
   */
   readonly providerConfig?: SecretProviderConfig;
 }
 export interface SecretProviderConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/secret#workspace_id Secret#workspace_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.135.0/docs/resources/secret#workspace_id Secret#workspace_id}
   */
   readonly workspaceId?: string;
 }
@@ -124,7 +132,7 @@ export class SecretProviderConfigOutputReference extends cdktn.ComplexObject {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/secret databricks_secret}
+* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.135.0/docs/resources/secret databricks_secret}
 */
 export class Secret extends cdktn.TerraformResource {
 
@@ -140,7 +148,7 @@ export class Secret extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a Secret resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the Secret to import
-  * @param importFromId The id of the existing Secret that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/secret#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing Secret that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.135.0/docs/resources/secret#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the Secret to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -152,7 +160,7 @@ export class Secret extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/secret databricks_secret} Resource
+  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.135.0/docs/resources/secret databricks_secret} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -163,7 +171,7 @@ export class Secret extends cdktn.TerraformResource {
       terraformResourceType: 'databricks_secret',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '1.134.0',
+        providerVersion: '1.135.0',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,
@@ -178,6 +186,8 @@ export class Secret extends cdktn.TerraformResource {
     this._key = config.key;
     this._scope = config.scope;
     this._stringValue = config.stringValue;
+    this._stringValueWo = config.stringValueWo;
+    this._stringValueWoVersion = config.stringValueWoVersion;
     this._providerConfig.internalValue = config.providerConfig;
   }
 
@@ -237,7 +247,7 @@ export class Secret extends cdktn.TerraformResource {
     return this._scope;
   }
 
-  // string_value - computed: false, optional: false, required: true
+  // string_value - computed: false, optional: true, required: false
   private _stringValue?: string; 
   public get stringValue() {
     return this.getStringAttribute('string_value');
@@ -245,9 +255,47 @@ export class Secret extends cdktn.TerraformResource {
   public set stringValue(value: string) {
     this._stringValue = value;
   }
+  public resetStringValue() {
+    this._stringValue = undefined;
+  }
   // Temporarily expose input value. Use with caution.
   public get stringValueInput() {
     return this._stringValue;
+  }
+
+  // string_value_wo - computed: false, optional: true, required: false
+  private _stringValueWo?: string; 
+  /**
+  * @deprecated Write-only: the provider never returns this value; reading it always yields null by protocol contract. The getter remains for compatibility and will be removed in a future prebuilt-provider major.
+  */
+  public get stringValueWo() {
+    return this.getStringAttribute('string_value_wo');
+  }
+  public set stringValueWo(value: string) {
+    this._stringValueWo = value;
+  }
+  public resetStringValueWo() {
+    this._stringValueWo = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get stringValueWoInput() {
+    return this._stringValueWo;
+  }
+
+  // string_value_wo_version - computed: false, optional: true, required: false
+  private _stringValueWoVersion?: number; 
+  public get stringValueWoVersion() {
+    return this.getNumberAttribute('string_value_wo_version');
+  }
+  public set stringValueWoVersion(value: number) {
+    this._stringValueWoVersion = value;
+  }
+  public resetStringValueWoVersion() {
+    this._stringValueWoVersion = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get stringValueWoVersionInput() {
+    return this._stringValueWoVersion;
   }
 
   // provider_config - computed: false, optional: true, required: false
@@ -276,6 +324,8 @@ export class Secret extends cdktn.TerraformResource {
       key: cdktn.stringToTerraform(this._key),
       scope: cdktn.stringToTerraform(this._scope),
       string_value: cdktn.stringToTerraform(this._stringValue),
+      string_value_wo: this.markWriteOnlyAttribute(cdktn.stringToTerraform(this._stringValueWo)),
+      string_value_wo_version: cdktn.numberToTerraform(this._stringValueWoVersion),
       provider_config: secretProviderConfigToTerraform(this._providerConfig.internalValue),
     };
   }
@@ -305,6 +355,18 @@ export class Secret extends cdktn.TerraformResource {
         isBlock: false,
         type: "simple",
         storageClassType: "string",
+      },
+      string_value_wo: {
+        value: this.markWriteOnlyAttribute(cdktn.stringToHclTerraform(this._stringValueWo)),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      string_value_wo_version: {
+        value: cdktn.numberToHclTerraform(this._stringValueWoVersion),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
       },
       provider_config: {
         value: secretProviderConfigToHclTerraform(this._providerConfig.internalValue),
