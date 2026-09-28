@@ -4,7 +4,7 @@
 
 ### Secret <a name="Secret" id="@cdktn/provider-databricks.secret.Secret"></a>
 
-Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/secret databricks_secret}.
+Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.135.0/docs/resources/secret databricks_secret}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.secret.Secret.Initializer"></a>
 
@@ -77,6 +77,9 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktn/provider-databricks.secret.Secret.putProviderConfig">PutProviderConfig</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.secret.Secret.resetId">ResetId</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.secret.Secret.resetProviderConfig">ResetProviderConfig</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.secret.Secret.resetStringValue">ResetStringValue</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.secret.Secret.resetStringValueWo">ResetStringValueWo</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.secret.Secret.resetStringValueWoVersion">ResetStringValueWoVersion</a></code> | *No description.* |
 
 ---
 
@@ -413,6 +416,24 @@ private void ResetId()
 private void ResetProviderConfig()
 ```
 
+##### `ResetStringValue` <a name="ResetStringValue" id="@cdktn/provider-databricks.secret.Secret.resetStringValue"></a>
+
+```csharp
+private void ResetStringValue()
+```
+
+##### `ResetStringValueWo` <a name="ResetStringValueWo" id="@cdktn/provider-databricks.secret.Secret.resetStringValueWo"></a>
+
+```csharp
+private void ResetStringValueWo()
+```
+
+##### `ResetStringValueWoVersion` <a name="ResetStringValueWoVersion" id="@cdktn/provider-databricks.secret.Secret.resetStringValueWoVersion"></a>
+
+```csharp
+private void ResetStringValueWoVersion()
+```
+
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
 
 | **Name** | **Description** |
@@ -516,7 +537,7 @@ The construct id used in the generated config for the Secret to import.
 
 The id of the existing Secret that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/secret#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.135.0/docs/resources/secret#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -554,10 +575,14 @@ Refer to the {@link https://registry.terraform.io/providers/databricks/databrick
 | <code><a href="#@cdktn/provider-databricks.secret.Secret.property.providerConfigInput">ProviderConfigInput</a></code> | <code><a href="#@cdktn/provider-databricks.secret.SecretProviderConfig">SecretProviderConfig</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.secret.Secret.property.scopeInput">ScopeInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.secret.Secret.property.stringValueInput">StringValueInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.secret.Secret.property.stringValueWoInput">StringValueWoInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.secret.Secret.property.stringValueWoVersionInput">StringValueWoVersionInput</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.secret.Secret.property.id">Id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.secret.Secret.property.key">Key</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.secret.Secret.property.scope">Scope</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.secret.Secret.property.stringValue">StringValue</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.secret.Secret.property.stringValueWo">StringValueWo</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.secret.Secret.property.stringValueWoVersion">StringValueWoVersion</a></code> | <code>double</code> | *No description.* |
 
 ---
 
@@ -783,6 +808,26 @@ public string StringValueInput { get; }
 
 ---
 
+##### `StringValueWoInput`<sup>Optional</sup> <a name="StringValueWoInput" id="@cdktn/provider-databricks.secret.Secret.property.stringValueWoInput"></a>
+
+```csharp
+public string StringValueWoInput { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `StringValueWoVersionInput`<sup>Optional</sup> <a name="StringValueWoVersionInput" id="@cdktn/provider-databricks.secret.Secret.property.stringValueWoVersionInput"></a>
+
+```csharp
+public double StringValueWoVersionInput { get; }
+```
+
+- *Type:* double
+
+---
+
 ##### `Id`<sup>Required</sup> <a name="Id" id="@cdktn/provider-databricks.secret.Secret.property.id"></a>
 
 ```csharp
@@ -823,6 +868,28 @@ public string StringValue { get; }
 
 ---
 
+##### ~~`StringValueWo`~~<sup>Required</sup> <a name="StringValueWo" id="@cdktn/provider-databricks.secret.Secret.property.stringValueWo"></a>
+
+- *Deprecated:* Write-only: the provider never returns this value; reading it always yields null by protocol contract. The getter remains for compatibility and will be removed in a future prebuilt-provider major.
+
+```csharp
+public string StringValueWo { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `StringValueWoVersion`<sup>Required</sup> <a name="StringValueWoVersion" id="@cdktn/provider-databricks.secret.Secret.property.stringValueWoVersion"></a>
+
+```csharp
+public double StringValueWoVersion { get; }
+```
+
+- *Type:* double
+
+---
+
 #### Constants <a name="Constants" id="Constants"></a>
 
 | **Name** | **Type** | **Description** |
@@ -860,9 +927,11 @@ new SecretConfig {
     (FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner)[] Provisioners = null,
     string Key,
     string Scope,
-    string StringValue,
     string Id = null,
-    SecretProviderConfig ProviderConfig = null
+    SecretProviderConfig ProviderConfig = null,
+    string StringValue = null,
+    string StringValueWo = null,
+    double StringValueWoVersion = null
 };
 ```
 
@@ -877,11 +946,13 @@ new SecretConfig {
 | <code><a href="#@cdktn/provider-databricks.secret.SecretConfig.property.lifecycle">Lifecycle</a></code> | <code>Io.Cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.secret.SecretConfig.property.provider">Provider</a></code> | <code>Io.Cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.secret.SecretConfig.property.provisioners">Provisioners</a></code> | <code>Io.Cdktn.FileProvisioner\|Io.Cdktn.LocalExecProvisioner\|Io.Cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-databricks.secret.SecretConfig.property.key">Key</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/secret#key Secret#key}. |
-| <code><a href="#@cdktn/provider-databricks.secret.SecretConfig.property.scope">Scope</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/secret#scope Secret#scope}. |
-| <code><a href="#@cdktn/provider-databricks.secret.SecretConfig.property.stringValue">StringValue</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/secret#string_value Secret#string_value}. |
-| <code><a href="#@cdktn/provider-databricks.secret.SecretConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/secret#id Secret#id}. |
+| <code><a href="#@cdktn/provider-databricks.secret.SecretConfig.property.key">Key</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.135.0/docs/resources/secret#key Secret#key}. |
+| <code><a href="#@cdktn/provider-databricks.secret.SecretConfig.property.scope">Scope</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.135.0/docs/resources/secret#scope Secret#scope}. |
+| <code><a href="#@cdktn/provider-databricks.secret.SecretConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.135.0/docs/resources/secret#id Secret#id}. |
 | <code><a href="#@cdktn/provider-databricks.secret.SecretConfig.property.providerConfig">ProviderConfig</a></code> | <code><a href="#@cdktn/provider-databricks.secret.SecretProviderConfig">SecretProviderConfig</a></code> | provider_config block. |
+| <code><a href="#@cdktn/provider-databricks.secret.SecretConfig.property.stringValue">StringValue</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.135.0/docs/resources/secret#string_value Secret#string_value}. |
+| <code><a href="#@cdktn/provider-databricks.secret.SecretConfig.property.stringValueWo">StringValueWo</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.135.0/docs/resources/secret#string_value_wo Secret#string_value_wo}. |
+| <code><a href="#@cdktn/provider-databricks.secret.SecretConfig.property.stringValueWoVersion">StringValueWoVersion</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.135.0/docs/resources/secret#string_value_wo_version Secret#string_value_wo_version}. |
 
 ---
 
@@ -963,7 +1034,7 @@ public string Key { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/secret#key Secret#key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.135.0/docs/resources/secret#key Secret#key}.
 
 ---
 
@@ -975,19 +1046,7 @@ public string Scope { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/secret#scope Secret#scope}.
-
----
-
-##### `StringValue`<sup>Required</sup> <a name="StringValue" id="@cdktn/provider-databricks.secret.SecretConfig.property.stringValue"></a>
-
-```csharp
-public string StringValue { get; set; }
-```
-
-- *Type:* string
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/secret#string_value Secret#string_value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.135.0/docs/resources/secret#scope Secret#scope}.
 
 ---
 
@@ -999,7 +1058,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/secret#id Secret#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.135.0/docs/resources/secret#id Secret#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1016,7 +1075,43 @@ public SecretProviderConfig ProviderConfig { get; set; }
 
 provider_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/secret#provider_config Secret#provider_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.135.0/docs/resources/secret#provider_config Secret#provider_config}
+
+---
+
+##### `StringValue`<sup>Optional</sup> <a name="StringValue" id="@cdktn/provider-databricks.secret.SecretConfig.property.stringValue"></a>
+
+```csharp
+public string StringValue { get; set; }
+```
+
+- *Type:* string
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.135.0/docs/resources/secret#string_value Secret#string_value}.
+
+---
+
+##### `StringValueWo`<sup>Optional</sup> <a name="StringValueWo" id="@cdktn/provider-databricks.secret.SecretConfig.property.stringValueWo"></a>
+
+```csharp
+public string StringValueWo { get; set; }
+```
+
+- *Type:* string
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.135.0/docs/resources/secret#string_value_wo Secret#string_value_wo}.
+
+---
+
+##### `StringValueWoVersion`<sup>Optional</sup> <a name="StringValueWoVersion" id="@cdktn/provider-databricks.secret.SecretConfig.property.stringValueWoVersion"></a>
+
+```csharp
+public double StringValueWoVersion { get; set; }
+```
+
+- *Type:* double
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.135.0/docs/resources/secret#string_value_wo_version Secret#string_value_wo_version}.
 
 ---
 
@@ -1036,7 +1131,7 @@ new SecretProviderConfig {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.secret.SecretProviderConfig.property.workspaceId">WorkspaceId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/secret#workspace_id Secret#workspace_id}. |
+| <code><a href="#@cdktn/provider-databricks.secret.SecretProviderConfig.property.workspaceId">WorkspaceId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.135.0/docs/resources/secret#workspace_id Secret#workspace_id}. |
 
 ---
 
@@ -1048,7 +1143,7 @@ public string WorkspaceId { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.134.0/docs/resources/secret#workspace_id Secret#workspace_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.135.0/docs/resources/secret#workspace_id Secret#workspace_id}.
 
 ---
 
