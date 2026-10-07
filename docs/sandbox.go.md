@@ -4,7 +4,7 @@
 
 ### Sandbox <a name="Sandbox" id="@cdktn/provider-databricks.sandbox.Sandbox"></a>
 
-Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.135.0/docs/resources/sandbox databricks_sandbox}.
+Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.137.0/docs/resources/sandbox databricks_sandbox}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.sandbox.Sandbox.Initializer"></a>
 
@@ -536,7 +536,7 @@ The construct id used in the generated config for the Sandbox to import.
 
 The id of the existing Sandbox that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.135.0/docs/resources/sandbox#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.137.0/docs/resources/sandbox#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -896,10 +896,10 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/sandbox"
 | <code><a href="#@cdktn/provider-databricks.sandbox.SandboxConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.sandbox.SandboxConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.sandbox.SandboxConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-databricks.sandbox.SandboxConfig.property.sandboxId">SandboxId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.135.0/docs/resources/sandbox#sandbox_id Sandbox#sandbox_id}. |
-| <code><a href="#@cdktn/provider-databricks.sandbox.SandboxConfig.property.displayName">DisplayName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.135.0/docs/resources/sandbox#display_name Sandbox#display_name}. |
-| <code><a href="#@cdktn/provider-databricks.sandbox.SandboxConfig.property.providerConfig">ProviderConfig</a></code> | <code><a href="#@cdktn/provider-databricks.sandbox.SandboxProviderConfig">SandboxProviderConfig</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.135.0/docs/resources/sandbox#provider_config Sandbox#provider_config}. |
-| <code><a href="#@cdktn/provider-databricks.sandbox.SandboxConfig.property.spec">Spec</a></code> | <code><a href="#@cdktn/provider-databricks.sandbox.SandboxSpec">SandboxSpec</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.135.0/docs/resources/sandbox#spec Sandbox#spec}. |
+| <code><a href="#@cdktn/provider-databricks.sandbox.SandboxConfig.property.sandboxId">SandboxId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.137.0/docs/resources/sandbox#sandbox_id Sandbox#sandbox_id}. |
+| <code><a href="#@cdktn/provider-databricks.sandbox.SandboxConfig.property.displayName">DisplayName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.137.0/docs/resources/sandbox#display_name Sandbox#display_name}. |
+| <code><a href="#@cdktn/provider-databricks.sandbox.SandboxConfig.property.providerConfig">ProviderConfig</a></code> | <code><a href="#@cdktn/provider-databricks.sandbox.SandboxProviderConfig">SandboxProviderConfig</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.137.0/docs/resources/sandbox#provider_config Sandbox#provider_config}. |
+| <code><a href="#@cdktn/provider-databricks.sandbox.SandboxConfig.property.spec">Spec</a></code> | <code><a href="#@cdktn/provider-databricks.sandbox.SandboxSpec">SandboxSpec</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.137.0/docs/resources/sandbox#spec Sandbox#spec}. |
 
 ---
 
@@ -981,7 +981,7 @@ SandboxId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.135.0/docs/resources/sandbox#sandbox_id Sandbox#sandbox_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.137.0/docs/resources/sandbox#sandbox_id Sandbox#sandbox_id}.
 
 ---
 
@@ -993,7 +993,7 @@ DisplayName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.135.0/docs/resources/sandbox#display_name Sandbox#display_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.137.0/docs/resources/sandbox#display_name Sandbox#display_name}.
 
 ---
 
@@ -1005,7 +1005,7 @@ ProviderConfig SandboxProviderConfig
 
 - *Type:* <a href="#@cdktn/provider-databricks.sandbox.SandboxProviderConfig">SandboxProviderConfig</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.135.0/docs/resources/sandbox#provider_config Sandbox#provider_config}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.137.0/docs/resources/sandbox#provider_config Sandbox#provider_config}.
 
 ---
 
@@ -1017,7 +1017,7 @@ Spec SandboxSpec
 
 - *Type:* <a href="#@cdktn/provider-databricks.sandbox.SandboxSpec">SandboxSpec</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.135.0/docs/resources/sandbox#spec Sandbox#spec}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.137.0/docs/resources/sandbox#spec Sandbox#spec}.
 
 ---
 
@@ -1037,7 +1037,7 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/sandbox"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.sandbox.SandboxProviderConfig.property.workspaceId">WorkspaceId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.135.0/docs/resources/sandbox#workspace_id Sandbox#workspace_id}. |
+| <code><a href="#@cdktn/provider-databricks.sandbox.SandboxProviderConfig.property.workspaceId">WorkspaceId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.137.0/docs/resources/sandbox#workspace_id Sandbox#workspace_id}. |
 
 ---
 
@@ -1049,7 +1049,7 @@ WorkspaceId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.135.0/docs/resources/sandbox#workspace_id Sandbox#workspace_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.137.0/docs/resources/sandbox#workspace_id Sandbox#workspace_id}.
 
 ---
 
@@ -1062,6 +1062,7 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/sandbox"
 
 &sandbox.SandboxSpec {
 	Compute: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18.sandbox.SandboxSpecCompute,
+	Environment: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18.sandbox.SandboxSpecEnvironment,
 }
 ```
 
@@ -1069,7 +1070,8 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/sandbox"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.sandbox.SandboxSpec.property.compute">Compute</a></code> | <code><a href="#@cdktn/provider-databricks.sandbox.SandboxSpecCompute">SandboxSpecCompute</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.135.0/docs/resources/sandbox#compute Sandbox#compute}. |
+| <code><a href="#@cdktn/provider-databricks.sandbox.SandboxSpec.property.compute">Compute</a></code> | <code><a href="#@cdktn/provider-databricks.sandbox.SandboxSpecCompute">SandboxSpecCompute</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.137.0/docs/resources/sandbox#compute Sandbox#compute}. |
+| <code><a href="#@cdktn/provider-databricks.sandbox.SandboxSpec.property.environment">Environment</a></code> | <code><a href="#@cdktn/provider-databricks.sandbox.SandboxSpecEnvironment">SandboxSpecEnvironment</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.137.0/docs/resources/sandbox#environment Sandbox#environment}. |
 
 ---
 
@@ -1081,7 +1083,19 @@ Compute SandboxSpecCompute
 
 - *Type:* <a href="#@cdktn/provider-databricks.sandbox.SandboxSpecCompute">SandboxSpecCompute</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.135.0/docs/resources/sandbox#compute Sandbox#compute}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.137.0/docs/resources/sandbox#compute Sandbox#compute}.
+
+---
+
+##### `Environment`<sup>Optional</sup> <a name="Environment" id="@cdktn/provider-databricks.sandbox.SandboxSpec.property.environment"></a>
+
+```go
+Environment SandboxSpecEnvironment
+```
+
+- *Type:* <a href="#@cdktn/provider-databricks.sandbox.SandboxSpecEnvironment">SandboxSpecEnvironment</a>
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.137.0/docs/resources/sandbox#environment Sandbox#environment}.
 
 ---
 
@@ -1101,7 +1115,7 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/sandbox"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.sandbox.SandboxSpecCompute.property.inactivityTimeout">InactivityTimeout</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.135.0/docs/resources/sandbox#inactivity_timeout Sandbox#inactivity_timeout}. |
+| <code><a href="#@cdktn/provider-databricks.sandbox.SandboxSpecCompute.property.inactivityTimeout">InactivityTimeout</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.137.0/docs/resources/sandbox#inactivity_timeout Sandbox#inactivity_timeout}. |
 
 ---
 
@@ -1113,7 +1127,39 @@ InactivityTimeout *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.135.0/docs/resources/sandbox#inactivity_timeout Sandbox#inactivity_timeout}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.137.0/docs/resources/sandbox#inactivity_timeout Sandbox#inactivity_timeout}.
+
+---
+
+### SandboxSpecEnvironment <a name="SandboxSpecEnvironment" id="@cdktn/provider-databricks.sandbox.SandboxSpecEnvironment"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-databricks.sandbox.SandboxSpecEnvironment.Initializer"></a>
+
+```go
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/sandbox"
+
+&sandbox.SandboxSpecEnvironment {
+	ImageUri: *string,
+}
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-databricks.sandbox.SandboxSpecEnvironment.property.imageUri">ImageUri</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.137.0/docs/resources/sandbox#image_uri Sandbox#image_uri}. |
+
+---
+
+##### `ImageUri`<sup>Optional</sup> <a name="ImageUri" id="@cdktn/provider-databricks.sandbox.SandboxSpecEnvironment.property.imageUri"></a>
+
+```go
+ImageUri *string
+```
+
+- *Type:* *string
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.137.0/docs/resources/sandbox#image_uri Sandbox#image_uri}.
 
 ---
 
@@ -1688,6 +1734,284 @@ func InternalValue() interface{}
 ---
 
 
+### SandboxSpecEnvironmentOutputReference <a name="SandboxSpecEnvironmentOutputReference" id="@cdktn/provider-databricks.sandbox.SandboxSpecEnvironmentOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-databricks.sandbox.SandboxSpecEnvironmentOutputReference.Initializer"></a>
+
+```go
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/sandbox"
+
+sandbox.NewSandboxSpecEnvironmentOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SandboxSpecEnvironmentOutputReference
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-databricks.sandbox.SandboxSpecEnvironmentOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-databricks.sandbox.SandboxSpecEnvironmentOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-databricks.sandbox.SandboxSpecEnvironmentOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.sandbox.SandboxSpecEnvironmentOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-databricks.sandbox.SandboxSpecEnvironmentOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.sandbox.SandboxSpecEnvironmentOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.sandbox.SandboxSpecEnvironmentOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.sandbox.SandboxSpecEnvironmentOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.sandbox.SandboxSpecEnvironmentOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.sandbox.SandboxSpecEnvironmentOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.sandbox.SandboxSpecEnvironmentOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.sandbox.SandboxSpecEnvironmentOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.sandbox.SandboxSpecEnvironmentOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.sandbox.SandboxSpecEnvironmentOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.sandbox.SandboxSpecEnvironmentOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.sandbox.SandboxSpecEnvironmentOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-databricks.sandbox.SandboxSpecEnvironmentOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-databricks.sandbox.SandboxSpecEnvironmentOutputReference.resetImageUri">ResetImageUri</a></code> | *No description.* |
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktn/provider-databricks.sandbox.SandboxSpecEnvironmentOutputReference.computeFqn"></a>
+
+```go
+func ComputeFqn() *string
+```
+
+##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktn/provider-databricks.sandbox.SandboxSpecEnvironmentOutputReference.getAnyMapAttribute"></a>
+
+```go
+func GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.sandbox.SandboxSpecEnvironmentOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktn/provider-databricks.sandbox.SandboxSpecEnvironmentOutputReference.getBooleanAttribute"></a>
+
+```go
+func GetBooleanAttribute(terraformAttribute *string) IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.sandbox.SandboxSpecEnvironmentOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktn/provider-databricks.sandbox.SandboxSpecEnvironmentOutputReference.getBooleanMapAttribute"></a>
+
+```go
+func GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.sandbox.SandboxSpecEnvironmentOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetListAttribute` <a name="GetListAttribute" id="@cdktn/provider-databricks.sandbox.SandboxSpecEnvironmentOutputReference.getListAttribute"></a>
+
+```go
+func GetListAttribute(terraformAttribute *string) *[]*string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.sandbox.SandboxSpecEnvironmentOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktn/provider-databricks.sandbox.SandboxSpecEnvironmentOutputReference.getNumberAttribute"></a>
+
+```go
+func GetNumberAttribute(terraformAttribute *string) *f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.sandbox.SandboxSpecEnvironmentOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktn/provider-databricks.sandbox.SandboxSpecEnvironmentOutputReference.getNumberListAttribute"></a>
+
+```go
+func GetNumberListAttribute(terraformAttribute *string) *[]*f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.sandbox.SandboxSpecEnvironmentOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktn/provider-databricks.sandbox.SandboxSpecEnvironmentOutputReference.getNumberMapAttribute"></a>
+
+```go
+func GetNumberMapAttribute(terraformAttribute *string) *map[string]*f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.sandbox.SandboxSpecEnvironmentOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktn/provider-databricks.sandbox.SandboxSpecEnvironmentOutputReference.getStringAttribute"></a>
+
+```go
+func GetStringAttribute(terraformAttribute *string) *string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.sandbox.SandboxSpecEnvironmentOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktn/provider-databricks.sandbox.SandboxSpecEnvironmentOutputReference.getStringMapAttribute"></a>
+
+```go
+func GetStringMapAttribute(terraformAttribute *string) *map[string]*string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.sandbox.SandboxSpecEnvironmentOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktn/provider-databricks.sandbox.SandboxSpecEnvironmentOutputReference.interpolationForAttribute"></a>
+
+```go
+func InterpolationForAttribute(property *string) IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-databricks.sandbox.SandboxSpecEnvironmentOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* *string
+
+---
+
+##### `Resolve` <a name="Resolve" id="@cdktn/provider-databricks.sandbox.SandboxSpecEnvironmentOutputReference.resolve"></a>
+
+```go
+func Resolve(_context IResolveContext) interface{}
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-databricks.sandbox.SandboxSpecEnvironmentOutputReference.resolve.parameter._context"></a>
+
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktn/provider-databricks.sandbox.SandboxSpecEnvironmentOutputReference.toString"></a>
+
+```go
+func ToString() *string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `ResetImageUri` <a name="ResetImageUri" id="@cdktn/provider-databricks.sandbox.SandboxSpecEnvironmentOutputReference.resetImageUri"></a>
+
+```go
+func ResetImageUri()
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-databricks.sandbox.SandboxSpecEnvironmentOutputReference.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-databricks.sandbox.SandboxSpecEnvironmentOutputReference.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.sandbox.SandboxSpecEnvironmentOutputReference.property.imageUriInput">ImageUriInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.sandbox.SandboxSpecEnvironmentOutputReference.property.imageUri">ImageUri</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.sandbox.SandboxSpecEnvironmentOutputReference.property.internalValue">InternalValue</a></code> | <code>interface{}</code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktn/provider-databricks.sandbox.SandboxSpecEnvironmentOutputReference.property.creationStack"></a>
+
+```go
+func CreationStack() *[]*string
+```
+
+- *Type:* *[]*string
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktn/provider-databricks.sandbox.SandboxSpecEnvironmentOutputReference.property.fqn"></a>
+
+```go
+func Fqn() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `ImageUriInput`<sup>Optional</sup> <a name="ImageUriInput" id="@cdktn/provider-databricks.sandbox.SandboxSpecEnvironmentOutputReference.property.imageUriInput"></a>
+
+```go
+func ImageUriInput() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `ImageUri`<sup>Required</sup> <a name="ImageUri" id="@cdktn/provider-databricks.sandbox.SandboxSpecEnvironmentOutputReference.property.imageUri"></a>
+
+```go
+func ImageUri() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktn/provider-databricks.sandbox.SandboxSpecEnvironmentOutputReference.property.internalValue"></a>
+
+```go
+func InternalValue() interface{}
+```
+
+- *Type:* interface{}
+
+---
+
+
 ### SandboxSpecOutputReference <a name="SandboxSpecOutputReference" id="@cdktn/provider-databricks.sandbox.SandboxSpecOutputReference"></a>
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.sandbox.SandboxSpecOutputReference.Initializer"></a>
@@ -1739,7 +2063,9 @@ The attribute on the parent resource this class is referencing.
 | <code><a href="#@cdktn/provider-databricks.sandbox.SandboxSpecOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktn/provider-databricks.sandbox.SandboxSpecOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktn/provider-databricks.sandbox.SandboxSpecOutputReference.putCompute">PutCompute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.sandbox.SandboxSpecOutputReference.putEnvironment">PutEnvironment</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.sandbox.SandboxSpecOutputReference.resetCompute">ResetCompute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.sandbox.SandboxSpecOutputReference.resetEnvironment">ResetEnvironment</a></code> | *No description.* |
 
 ---
 
@@ -1905,10 +2231,28 @@ func PutCompute(value SandboxSpecCompute)
 
 ---
 
+##### `PutEnvironment` <a name="PutEnvironment" id="@cdktn/provider-databricks.sandbox.SandboxSpecOutputReference.putEnvironment"></a>
+
+```go
+func PutEnvironment(value SandboxSpecEnvironment)
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-databricks.sandbox.SandboxSpecOutputReference.putEnvironment.parameter.value"></a>
+
+- *Type:* <a href="#@cdktn/provider-databricks.sandbox.SandboxSpecEnvironment">SandboxSpecEnvironment</a>
+
+---
+
 ##### `ResetCompute` <a name="ResetCompute" id="@cdktn/provider-databricks.sandbox.SandboxSpecOutputReference.resetCompute"></a>
 
 ```go
 func ResetCompute()
+```
+
+##### `ResetEnvironment` <a name="ResetEnvironment" id="@cdktn/provider-databricks.sandbox.SandboxSpecOutputReference.resetEnvironment"></a>
+
+```go
+func ResetEnvironment()
 ```
 
 
@@ -1919,7 +2263,9 @@ func ResetCompute()
 | <code><a href="#@cdktn/provider-databricks.sandbox.SandboxSpecOutputReference.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-databricks.sandbox.SandboxSpecOutputReference.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.sandbox.SandboxSpecOutputReference.property.compute">Compute</a></code> | <code><a href="#@cdktn/provider-databricks.sandbox.SandboxSpecComputeOutputReference">SandboxSpecComputeOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.sandbox.SandboxSpecOutputReference.property.environment">Environment</a></code> | <code><a href="#@cdktn/provider-databricks.sandbox.SandboxSpecEnvironmentOutputReference">SandboxSpecEnvironmentOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.sandbox.SandboxSpecOutputReference.property.computeInput">ComputeInput</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.sandbox.SandboxSpecOutputReference.property.environmentInput">EnvironmentInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.sandbox.SandboxSpecOutputReference.property.internalValue">InternalValue</a></code> | <code>interface{}</code> | *No description.* |
 
 ---
@@ -1958,10 +2304,30 @@ func Compute() SandboxSpecComputeOutputReference
 
 ---
 
+##### `Environment`<sup>Required</sup> <a name="Environment" id="@cdktn/provider-databricks.sandbox.SandboxSpecOutputReference.property.environment"></a>
+
+```go
+func Environment() SandboxSpecEnvironmentOutputReference
+```
+
+- *Type:* <a href="#@cdktn/provider-databricks.sandbox.SandboxSpecEnvironmentOutputReference">SandboxSpecEnvironmentOutputReference</a>
+
+---
+
 ##### `ComputeInput`<sup>Optional</sup> <a name="ComputeInput" id="@cdktn/provider-databricks.sandbox.SandboxSpecOutputReference.property.computeInput"></a>
 
 ```go
 func ComputeInput() interface{}
+```
+
+- *Type:* interface{}
+
+---
+
+##### `EnvironmentInput`<sup>Optional</sup> <a name="EnvironmentInput" id="@cdktn/provider-databricks.sandbox.SandboxSpecOutputReference.property.environmentInput"></a>
+
+```go
+func EnvironmentInput() interface{}
 ```
 
 - *Type:* interface{}

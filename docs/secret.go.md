@@ -4,7 +4,7 @@
 
 ### Secret <a name="Secret" id="@cdktn/provider-databricks.secret.Secret"></a>
 
-Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.135.0/docs/resources/secret databricks_secret}.
+Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.137.0/docs/resources/secret databricks_secret}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.secret.Secret.Initializer"></a>
 
@@ -537,7 +537,7 @@ The construct id used in the generated config for the Secret to import.
 
 The id of the existing Secret that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.135.0/docs/resources/secret#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.137.0/docs/resources/secret#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -946,13 +946,13 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/secret"
 | <code><a href="#@cdktn/provider-databricks.secret.SecretConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.secret.SecretConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.secret.SecretConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-databricks.secret.SecretConfig.property.key">Key</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.135.0/docs/resources/secret#key Secret#key}. |
-| <code><a href="#@cdktn/provider-databricks.secret.SecretConfig.property.scope">Scope</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.135.0/docs/resources/secret#scope Secret#scope}. |
-| <code><a href="#@cdktn/provider-databricks.secret.SecretConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.135.0/docs/resources/secret#id Secret#id}. |
+| <code><a href="#@cdktn/provider-databricks.secret.SecretConfig.property.key">Key</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.137.0/docs/resources/secret#key Secret#key}. |
+| <code><a href="#@cdktn/provider-databricks.secret.SecretConfig.property.scope">Scope</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.137.0/docs/resources/secret#scope Secret#scope}. |
+| <code><a href="#@cdktn/provider-databricks.secret.SecretConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.137.0/docs/resources/secret#id Secret#id}. |
 | <code><a href="#@cdktn/provider-databricks.secret.SecretConfig.property.providerConfig">ProviderConfig</a></code> | <code><a href="#@cdktn/provider-databricks.secret.SecretProviderConfig">SecretProviderConfig</a></code> | provider_config block. |
-| <code><a href="#@cdktn/provider-databricks.secret.SecretConfig.property.stringValue">StringValue</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.135.0/docs/resources/secret#string_value Secret#string_value}. |
-| <code><a href="#@cdktn/provider-databricks.secret.SecretConfig.property.stringValueWo">StringValueWo</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.135.0/docs/resources/secret#string_value_wo Secret#string_value_wo}. |
-| <code><a href="#@cdktn/provider-databricks.secret.SecretConfig.property.stringValueWoVersion">StringValueWoVersion</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.135.0/docs/resources/secret#string_value_wo_version Secret#string_value_wo_version}. |
+| <code><a href="#@cdktn/provider-databricks.secret.SecretConfig.property.stringValue">StringValue</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.137.0/docs/resources/secret#string_value Secret#string_value}. |
+| <code><a href="#@cdktn/provider-databricks.secret.SecretConfig.property.stringValueWo">StringValueWo</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.137.0/docs/resources/secret#string_value_wo Secret#string_value_wo}. |
+| <code><a href="#@cdktn/provider-databricks.secret.SecretConfig.property.stringValueWoVersion">StringValueWoVersion</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.137.0/docs/resources/secret#string_value_wo_version Secret#string_value_wo_version}. |
 
 ---
 
@@ -1034,7 +1034,7 @@ Key *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.135.0/docs/resources/secret#key Secret#key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.137.0/docs/resources/secret#key Secret#key}.
 
 ---
 
@@ -1046,7 +1046,7 @@ Scope *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.135.0/docs/resources/secret#scope Secret#scope}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.137.0/docs/resources/secret#scope Secret#scope}.
 
 ---
 
@@ -1058,7 +1058,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.135.0/docs/resources/secret#id Secret#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.137.0/docs/resources/secret#id Secret#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1075,7 +1075,7 @@ ProviderConfig SecretProviderConfig
 
 provider_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.135.0/docs/resources/secret#provider_config Secret#provider_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.137.0/docs/resources/secret#provider_config Secret#provider_config}
 
 ---
 
@@ -1087,7 +1087,7 @@ StringValue *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.135.0/docs/resources/secret#string_value Secret#string_value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.137.0/docs/resources/secret#string_value Secret#string_value}.
 
 ---
 
@@ -1099,7 +1099,7 @@ StringValueWo *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.135.0/docs/resources/secret#string_value_wo Secret#string_value_wo}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.137.0/docs/resources/secret#string_value_wo Secret#string_value_wo}.
 
 ---
 
@@ -1111,7 +1111,7 @@ StringValueWoVersion *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.135.0/docs/resources/secret#string_value_wo_version Secret#string_value_wo_version}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.137.0/docs/resources/secret#string_value_wo_version Secret#string_value_wo_version}.
 
 ---
 
@@ -1131,7 +1131,7 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/secret"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.secret.SecretProviderConfig.property.workspaceId">WorkspaceId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.135.0/docs/resources/secret#workspace_id Secret#workspace_id}. |
+| <code><a href="#@cdktn/provider-databricks.secret.SecretProviderConfig.property.workspaceId">WorkspaceId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.137.0/docs/resources/secret#workspace_id Secret#workspace_id}. |
 
 ---
 
@@ -1143,7 +1143,7 @@ WorkspaceId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.135.0/docs/resources/secret#workspace_id Secret#workspace_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.137.0/docs/resources/secret#workspace_id Secret#workspace_id}.
 
 ---
 
