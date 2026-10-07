@@ -1,3 +1,3 @@
 # `databricks_domain`
 
-Refer to the Terraform Registry for docs: [`databricks_domain`](https://registry.terraform.io/providers/databricks/databricks/1.135.0/docs/resources/domain).
+Refer to the Terraform Registry for docs: [`databricks_domain`](https://registry.terraform.io/providers/databricks/databricks/1.137.0/docs/resources/domain).

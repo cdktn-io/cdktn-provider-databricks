@@ -86,6 +86,10 @@ Object.defineProperty(exports, 'knowledgeAssistant', { get: function () { return
 Object.defineProperty(exports, 'knowledgeAssistantKnowledgeSource', { get: function () { return require('./knowledge-assistant-knowledge-source'); } });
 Object.defineProperty(exports, 'lakehouseMonitor', { get: function () { return require('./lakehouse-monitor'); } });
 Object.defineProperty(exports, 'library', { get: function () { return require('./library'); } });
+Object.defineProperty(exports, 'masonManagedMemoryEntry', { get: function () { return require('./mason-managed-memory-entry'); } });
+Object.defineProperty(exports, 'masonManagedMemoryStore', { get: function () { return require('./mason-managed-memory-store'); } });
+Object.defineProperty(exports, 'masonSession', { get: function () { return require('./mason-session'); } });
+Object.defineProperty(exports, 'masonSessionStore', { get: function () { return require('./mason-session-store'); } });
 Object.defineProperty(exports, 'materializedFeaturesFeatureTag', { get: function () { return require('./materialized-features-feature-tag'); } });
 Object.defineProperty(exports, 'metastore', { get: function () { return require('./metastore'); } });
 Object.defineProperty(exports, 'metastoreAssignment', { get: function () { return require('./metastore-assignment'); } });
@@ -127,6 +131,7 @@ Object.defineProperty(exports, 'postgresProject', { get: function () { return re
 Object.defineProperty(exports, 'postgresRole', { get: function () { return require('./postgres-role'); } });
 Object.defineProperty(exports, 'postgresSnapshotSchedule', { get: function () { return require('./postgres-snapshot-schedule'); } });
 Object.defineProperty(exports, 'postgresSyncedTable', { get: function () { return require('./postgres-synced-table'); } });
+Object.defineProperty(exports, 'privateNetworkGateway', { get: function () { return require('./private-network-gateway'); } });
 Object.defineProperty(exports, 'providerResource', { get: function () { return require('./provider-resource'); } });
 Object.defineProperty(exports, 'qualityMonitor', { get: function () { return require('./quality-monitor'); } });
 Object.defineProperty(exports, 'qualityMonitorV2', { get: function () { return require('./quality-monitor-v2'); } });
@@ -283,6 +288,14 @@ Object.defineProperty(exports, 'dataDatabricksKnowledgeAssistant', { get: functi
 Object.defineProperty(exports, 'dataDatabricksKnowledgeAssistantKnowledgeSource', { get: function () { return require('./data-databricks-knowledge-assistant-knowledge-source'); } });
 Object.defineProperty(exports, 'dataDatabricksKnowledgeAssistantKnowledgeSources', { get: function () { return require('./data-databricks-knowledge-assistant-knowledge-sources'); } });
 Object.defineProperty(exports, 'dataDatabricksKnowledgeAssistants', { get: function () { return require('./data-databricks-knowledge-assistants'); } });
+Object.defineProperty(exports, 'dataDatabricksMasonManagedMemoryEntries', { get: function () { return require('./data-databricks-mason-managed-memory-entries'); } });
+Object.defineProperty(exports, 'dataDatabricksMasonManagedMemoryEntry', { get: function () { return require('./data-databricks-mason-managed-memory-entry'); } });
+Object.defineProperty(exports, 'dataDatabricksMasonManagedMemoryStore', { get: function () { return require('./data-databricks-mason-managed-memory-store'); } });
+Object.defineProperty(exports, 'dataDatabricksMasonManagedMemoryStores', { get: function () { return require('./data-databricks-mason-managed-memory-stores'); } });
+Object.defineProperty(exports, 'dataDatabricksMasonSession', { get: function () { return require('./data-databricks-mason-session'); } });
+Object.defineProperty(exports, 'dataDatabricksMasonSessionStore', { get: function () { return require('./data-databricks-mason-session-store'); } });
+Object.defineProperty(exports, 'dataDatabricksMasonSessionStores', { get: function () { return require('./data-databricks-mason-session-stores'); } });
+Object.defineProperty(exports, 'dataDatabricksMasonSessions', { get: function () { return require('./data-databricks-mason-sessions'); } });
 Object.defineProperty(exports, 'dataDatabricksMaterializedFeaturesFeatureTag', { get: function () { return require('./data-databricks-materialized-features-feature-tag'); } });
 Object.defineProperty(exports, 'dataDatabricksMaterializedFeaturesFeatureTags', { get: function () { return require('./data-databricks-materialized-features-feature-tags'); } });
 Object.defineProperty(exports, 'dataDatabricksMetastore', { get: function () { return require('./data-databricks-metastore'); } });
@@ -321,6 +334,8 @@ Object.defineProperty(exports, 'dataDatabricksPostgresRole', { get: function () 
 Object.defineProperty(exports, 'dataDatabricksPostgresRoles', { get: function () { return require('./data-databricks-postgres-roles'); } });
 Object.defineProperty(exports, 'dataDatabricksPostgresSnapshotSchedule', { get: function () { return require('./data-databricks-postgres-snapshot-schedule'); } });
 Object.defineProperty(exports, 'dataDatabricksPostgresSyncedTable', { get: function () { return require('./data-databricks-postgres-synced-table'); } });
+Object.defineProperty(exports, 'dataDatabricksPrivateNetworkGateway', { get: function () { return require('./data-databricks-private-network-gateway'); } });
+Object.defineProperty(exports, 'dataDatabricksPrivateNetworkGateways', { get: function () { return require('./data-databricks-private-network-gateways'); } });
 Object.defineProperty(exports, 'dataDatabricksQualityMonitorV2', { get: function () { return require('./data-databricks-quality-monitor-v2'); } });
 Object.defineProperty(exports, 'dataDatabricksQualityMonitorsV2', { get: function () { return require('./data-databricks-quality-monitors-v2'); } });
 Object.defineProperty(exports, 'dataDatabricksRecipients', { get: function () { return require('./data-databricks-recipients'); } });
