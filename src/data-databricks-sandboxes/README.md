@@ -1,3 +1,3 @@
 # `data_databricks_sandboxes`
 
-Refer to the Terraform Registry for docs: [`data_databricks_sandboxes`](https://registry.terraform.io/providers/databricks/databricks/1.135.0/docs/data-sources/sandboxes).
+Refer to the Terraform Registry for docs: [`data_databricks_sandboxes`](https://registry.terraform.io/providers/databricks/databricks/1.137.0/docs/data-sources/sandboxes).
