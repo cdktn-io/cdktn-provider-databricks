@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/databricks/databricks/1.135.0/docs/resources/sandbox
+// https://registry.terraform.io/providers/databricks/databricks/1.137.0/docs/resources/sandbox
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,25 +13,25 @@ import * as cdktn from 'cdktn';
 
 export interface SandboxConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.135.0/docs/resources/sandbox#display_name Sandbox#display_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.137.0/docs/resources/sandbox#display_name Sandbox#display_name}
   */
   readonly displayName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.135.0/docs/resources/sandbox#provider_config Sandbox#provider_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.137.0/docs/resources/sandbox#provider_config Sandbox#provider_config}
   */
   readonly providerConfig?: SandboxProviderConfig;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.135.0/docs/resources/sandbox#sandbox_id Sandbox#sandbox_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.137.0/docs/resources/sandbox#sandbox_id Sandbox#sandbox_id}
   */
   readonly sandboxId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.135.0/docs/resources/sandbox#spec Sandbox#spec}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.137.0/docs/resources/sandbox#spec Sandbox#spec}
   */
   readonly spec?: SandboxSpec;
 }
 export interface SandboxProviderConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.135.0/docs/resources/sandbox#workspace_id Sandbox#workspace_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.137.0/docs/resources/sandbox#workspace_id Sandbox#workspace_id}
   */
   readonly workspaceId?: string;
 }
@@ -125,7 +125,7 @@ export class SandboxProviderConfigOutputReference extends cdktn.ComplexObject {
 }
 export interface SandboxSpecCompute {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.135.0/docs/resources/sandbox#inactivity_timeout Sandbox#inactivity_timeout}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.137.0/docs/resources/sandbox#inactivity_timeout Sandbox#inactivity_timeout}
   */
   readonly inactivityTimeout?: string;
 }
@@ -217,11 +217,109 @@ export class SandboxSpecComputeOutputReference extends cdktn.ComplexObject {
     return this._inactivityTimeout;
   }
 }
+export interface SandboxSpecEnvironment {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.137.0/docs/resources/sandbox#image_uri Sandbox#image_uri}
+  */
+  readonly imageUri?: string;
+}
+
+export function sandboxSpecEnvironmentToTerraform(struct?: SandboxSpecEnvironment | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  return {
+    image_uri: cdktn.stringToTerraform(struct!.imageUri),
+  }
+}
+
+
+export function sandboxSpecEnvironmentToHclTerraform(struct?: SandboxSpecEnvironment | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  const attrs = {
+    image_uri: {
+      value: cdktn.stringToHclTerraform(struct!.imageUri),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class SandboxSpecEnvironmentOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktn.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false);
+  }
+
+  public get internalValue(): SandboxSpecEnvironment | cdktn.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._imageUri !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.imageUri = this._imageUri;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: SandboxSpecEnvironment | cdktn.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._imageUri = undefined;
+    }
+    else if (cdktn.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._imageUri = value.imageUri;
+    }
+  }
+
+  // image_uri - computed: false, optional: true, required: false
+  private _imageUri?: string; 
+  public get imageUri() {
+    return this.getStringAttribute('image_uri');
+  }
+  public set imageUri(value: string) {
+    this._imageUri = value;
+  }
+  public resetImageUri() {
+    this._imageUri = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get imageUriInput() {
+    return this._imageUri;
+  }
+}
 export interface SandboxSpec {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.135.0/docs/resources/sandbox#compute Sandbox#compute}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.137.0/docs/resources/sandbox#compute Sandbox#compute}
   */
   readonly compute?: SandboxSpecCompute;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.137.0/docs/resources/sandbox#environment Sandbox#environment}
+  */
+  readonly environment?: SandboxSpecEnvironment;
 }
 
 export function sandboxSpecToTerraform(struct?: SandboxSpec | cdktn.IResolvable): any {
@@ -231,6 +329,7 @@ export function sandboxSpecToTerraform(struct?: SandboxSpec | cdktn.IResolvable)
   }
   return {
     compute: sandboxSpecComputeToTerraform(struct!.compute),
+    environment: sandboxSpecEnvironmentToTerraform(struct!.environment),
   }
 }
 
@@ -246,6 +345,12 @@ export function sandboxSpecToHclTerraform(struct?: SandboxSpec | cdktn.IResolvab
       isBlock: true,
       type: "struct",
       storageClassType: "SandboxSpecCompute",
+    },
+    environment: {
+      value: sandboxSpecEnvironmentToHclTerraform(struct!.environment),
+      isBlock: true,
+      type: "struct",
+      storageClassType: "SandboxSpecEnvironment",
     },
   };
 
@@ -275,6 +380,10 @@ export class SandboxSpecOutputReference extends cdktn.ComplexObject {
       hasAnyValues = true;
       internalValueResult.compute = this._compute?.internalValue;
     }
+    if (this._environment?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.environment = this._environment?.internalValue;
+    }
     return hasAnyValues ? internalValueResult : undefined;
   }
 
@@ -283,6 +392,7 @@ export class SandboxSpecOutputReference extends cdktn.ComplexObject {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._compute.internalValue = undefined;
+      this._environment.internalValue = undefined;
     }
     else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
@@ -292,6 +402,7 @@ export class SandboxSpecOutputReference extends cdktn.ComplexObject {
       this.isEmptyObject = Object.keys(value).length === 0;
       this.resolvableValue = undefined;
       this._compute.internalValue = value.compute;
+      this._environment.internalValue = value.environment;
     }
   }
 
@@ -309,6 +420,22 @@ export class SandboxSpecOutputReference extends cdktn.ComplexObject {
   // Temporarily expose input value. Use with caution.
   public get computeInput() {
     return this._compute.internalValue;
+  }
+
+  // environment - computed: false, optional: true, required: false
+  private _environment = new SandboxSpecEnvironmentOutputReference(this, "environment");
+  public get environment() {
+    return this._environment;
+  }
+  public putEnvironment(value: SandboxSpecEnvironment) {
+    this._environment.internalValue = value;
+  }
+  public resetEnvironment() {
+    this._environment.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get environmentInput() {
+    return this._environment.internalValue;
   }
 }
 export interface SandboxStatus {
@@ -367,7 +494,7 @@ export class SandboxStatusOutputReference extends cdktn.ComplexObject {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.135.0/docs/resources/sandbox databricks_sandbox}
+* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.137.0/docs/resources/sandbox databricks_sandbox}
 */
 export class Sandbox extends cdktn.TerraformResource {
 
@@ -383,7 +510,7 @@ export class Sandbox extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a Sandbox resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the Sandbox to import
-  * @param importFromId The id of the existing Sandbox that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.135.0/docs/resources/sandbox#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing Sandbox that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.137.0/docs/resources/sandbox#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the Sandbox to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -395,7 +522,7 @@ export class Sandbox extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.135.0/docs/resources/sandbox databricks_sandbox} Resource
+  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.137.0/docs/resources/sandbox databricks_sandbox} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -406,7 +533,7 @@ export class Sandbox extends cdktn.TerraformResource {
       terraformResourceType: 'databricks_sandbox',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '1.135.0',
+        providerVersion: '1.137.0',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,
