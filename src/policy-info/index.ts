@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/policy_info
+// https://registry.terraform.io/providers/databricks/databricks/1.139.0/docs/resources/policy_info
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,73 +13,73 @@ import * as cdktn from 'cdktn';
 
 export interface PolicyInfoConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/policy_info#column_mask PolicyInfo#column_mask}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.139.0/docs/resources/policy_info#column_mask PolicyInfo#column_mask}
   */
   readonly columnMask?: PolicyInfoColumnMask;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/policy_info#comment PolicyInfo#comment}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.139.0/docs/resources/policy_info#comment PolicyInfo#comment}
   */
   readonly comment?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/policy_info#deny PolicyInfo#deny}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.139.0/docs/resources/policy_info#deny PolicyInfo#deny}
   */
   readonly deny?: PolicyInfoDeny;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/policy_info#except_principals PolicyInfo#except_principals}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.139.0/docs/resources/policy_info#except_principals PolicyInfo#except_principals}
   */
   readonly exceptPrincipals?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/policy_info#for_securable_type PolicyInfo#for_securable_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.139.0/docs/resources/policy_info#for_securable_type PolicyInfo#for_securable_type}
   */
   readonly forSecurableType: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/policy_info#grant PolicyInfo#grant}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.139.0/docs/resources/policy_info#grant PolicyInfo#grant}
   */
   readonly grant?: PolicyInfoGrant;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/policy_info#match_columns PolicyInfo#match_columns}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.139.0/docs/resources/policy_info#match_columns PolicyInfo#match_columns}
   */
   readonly matchColumns?: PolicyInfoMatchColumns[] | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/policy_info#name PolicyInfo#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.139.0/docs/resources/policy_info#name PolicyInfo#name}
   */
   readonly name?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/policy_info#on_securable_fullname PolicyInfo#on_securable_fullname}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.139.0/docs/resources/policy_info#on_securable_fullname PolicyInfo#on_securable_fullname}
   */
   readonly onSecurableFullname?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/policy_info#on_securable_type PolicyInfo#on_securable_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.139.0/docs/resources/policy_info#on_securable_type PolicyInfo#on_securable_type}
   */
   readonly onSecurableType?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/policy_info#policy_type PolicyInfo#policy_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.139.0/docs/resources/policy_info#policy_type PolicyInfo#policy_type}
   */
   readonly policyType: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/policy_info#provider_config PolicyInfo#provider_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.139.0/docs/resources/policy_info#provider_config PolicyInfo#provider_config}
   */
   readonly providerConfig?: PolicyInfoProviderConfig;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/policy_info#row_filter PolicyInfo#row_filter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.139.0/docs/resources/policy_info#row_filter PolicyInfo#row_filter}
   */
   readonly rowFilter?: PolicyInfoRowFilter;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/policy_info#to_principals PolicyInfo#to_principals}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.139.0/docs/resources/policy_info#to_principals PolicyInfo#to_principals}
   */
   readonly toPrincipals: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/policy_info#when_condition PolicyInfo#when_condition}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.139.0/docs/resources/policy_info#when_condition PolicyInfo#when_condition}
   */
   readonly whenCondition?: string;
 }
 export interface PolicyInfoColumnMaskUsingFunctionArgExpressionTagIntrospectionColumnTagValue {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/policy_info#column_alias PolicyInfo#column_alias}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.139.0/docs/resources/policy_info#column_alias PolicyInfo#column_alias}
   */
   readonly columnAlias: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/policy_info#tag_key PolicyInfo#tag_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.139.0/docs/resources/policy_info#tag_key PolicyInfo#tag_key}
   */
   readonly tagKey: string;
 }
@@ -196,7 +196,7 @@ export class PolicyInfoColumnMaskUsingFunctionArgExpressionTagIntrospectionColum
 }
 export interface PolicyInfoColumnMaskUsingFunctionArgExpressionTagIntrospectionTagValue {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/policy_info#tag_key PolicyInfo#tag_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.139.0/docs/resources/policy_info#tag_key PolicyInfo#tag_key}
   */
   readonly tagKey: string;
 }
@@ -287,11 +287,11 @@ export class PolicyInfoColumnMaskUsingFunctionArgExpressionTagIntrospectionTagVa
 }
 export interface PolicyInfoColumnMaskUsingFunctionArgExpressionTagIntrospection {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/policy_info#column_tag_value PolicyInfo#column_tag_value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.139.0/docs/resources/policy_info#column_tag_value PolicyInfo#column_tag_value}
   */
   readonly columnTagValue?: PolicyInfoColumnMaskUsingFunctionArgExpressionTagIntrospectionColumnTagValue;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/policy_info#tag_value PolicyInfo#tag_value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.139.0/docs/resources/policy_info#tag_value PolicyInfo#tag_value}
   */
   readonly tagValue?: PolicyInfoColumnMaskUsingFunctionArgExpressionTagIntrospectionTagValue;
 }
@@ -414,7 +414,7 @@ export class PolicyInfoColumnMaskUsingFunctionArgExpressionTagIntrospectionOutpu
 }
 export interface PolicyInfoColumnMaskUsingFunctionArgExpression {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/policy_info#tag_introspection PolicyInfo#tag_introspection}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.139.0/docs/resources/policy_info#tag_introspection PolicyInfo#tag_introspection}
   */
   readonly tagIntrospection?: PolicyInfoColumnMaskUsingFunctionArgExpressionTagIntrospection;
 }
@@ -508,15 +508,15 @@ export class PolicyInfoColumnMaskUsingFunctionArgExpressionOutputReference exten
 }
 export interface PolicyInfoColumnMaskUsing {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/policy_info#alias PolicyInfo#alias}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.139.0/docs/resources/policy_info#alias PolicyInfo#alias}
   */
   readonly alias?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/policy_info#constant PolicyInfo#constant}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.139.0/docs/resources/policy_info#constant PolicyInfo#constant}
   */
   readonly constant?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/policy_info#function_arg_expression PolicyInfo#function_arg_expression}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.139.0/docs/resources/policy_info#function_arg_expression PolicyInfo#function_arg_expression}
   */
   readonly functionArgExpression?: PolicyInfoColumnMaskUsingFunctionArgExpression;
 }
@@ -690,15 +690,15 @@ export class PolicyInfoColumnMaskUsingList extends cdktn.ComplexList {
 }
 export interface PolicyInfoColumnMask {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/policy_info#function_name PolicyInfo#function_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.139.0/docs/resources/policy_info#function_name PolicyInfo#function_name}
   */
   readonly functionName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/policy_info#on_column PolicyInfo#on_column}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.139.0/docs/resources/policy_info#on_column PolicyInfo#on_column}
   */
   readonly onColumn: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/policy_info#using PolicyInfo#using}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.139.0/docs/resources/policy_info#using PolicyInfo#using}
   */
   readonly using?: PolicyInfoColumnMaskUsing[] | cdktn.IResolvable;
 }
@@ -844,7 +844,7 @@ export class PolicyInfoColumnMaskOutputReference extends cdktn.ComplexObject {
 }
 export interface PolicyInfoDeny {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/policy_info#privileges PolicyInfo#privileges}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.139.0/docs/resources/policy_info#privileges PolicyInfo#privileges}
   */
   readonly privileges: string[];
 }
@@ -933,9 +933,145 @@ export class PolicyInfoDenyOutputReference extends cdktn.ComplexObject {
     return this._privileges;
   }
 }
+export interface PolicyInfoGovernedTags {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.139.0/docs/resources/policy_info#tag_key PolicyInfo#tag_key}
+  */
+  readonly tagKey: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.139.0/docs/resources/policy_info#tag_value PolicyInfo#tag_value}
+  */
+  readonly tagValue?: string;
+}
+
+export function policyInfoGovernedTagsToTerraform(struct?: PolicyInfoGovernedTags): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  return {
+    tag_key: cdktn.stringToTerraform(struct!.tagKey),
+    tag_value: cdktn.stringToTerraform(struct!.tagValue),
+  }
+}
+
+
+export function policyInfoGovernedTagsToHclTerraform(struct?: PolicyInfoGovernedTags): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  const attrs = {
+    tag_key: {
+      value: cdktn.stringToHclTerraform(struct!.tagKey),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    tag_value: {
+      value: cdktn.stringToHclTerraform(struct!.tagValue),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class PolicyInfoGovernedTagsOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): PolicyInfoGovernedTags | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._tagKey !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.tagKey = this._tagKey;
+    }
+    if (this._tagValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.tagValue = this._tagValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: PolicyInfoGovernedTags | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._tagKey = undefined;
+      this._tagValue = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._tagKey = value.tagKey;
+      this._tagValue = value.tagValue;
+    }
+  }
+
+  // tag_key - computed: true, optional: false, required: true
+  private _tagKey?: string; 
+  public get tagKey() {
+    return this.getStringAttribute('tag_key');
+  }
+  public set tagKey(value: string) {
+    this._tagKey = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tagKeyInput() {
+    return this._tagKey;
+  }
+
+  // tag_value - computed: true, optional: true, required: false
+  private _tagValue?: string; 
+  public get tagValue() {
+    return this.getStringAttribute('tag_value');
+  }
+  public set tagValue(value: string) {
+    this._tagValue = value;
+  }
+  public resetTagValue() {
+    this._tagValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tagValueInput() {
+    return this._tagValue;
+  }
+}
+
+export class PolicyInfoGovernedTagsList extends cdktn.ComplexList {
+  public internalValue? : PolicyInfoGovernedTags[] | cdktn.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet);
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): PolicyInfoGovernedTagsOutputReference {
+    return new PolicyInfoGovernedTagsOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface PolicyInfoGrant {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/policy_info#privileges PolicyInfo#privileges}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.139.0/docs/resources/policy_info#privileges PolicyInfo#privileges}
   */
   readonly privileges: string[];
 }
@@ -1026,11 +1162,11 @@ export class PolicyInfoGrantOutputReference extends cdktn.ComplexObject {
 }
 export interface PolicyInfoMatchColumns {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/policy_info#alias PolicyInfo#alias}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.139.0/docs/resources/policy_info#alias PolicyInfo#alias}
   */
   readonly alias?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/policy_info#condition PolicyInfo#condition}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.139.0/docs/resources/policy_info#condition PolicyInfo#condition}
   */
   readonly condition?: string;
 }
@@ -1175,7 +1311,7 @@ export class PolicyInfoMatchColumnsList extends cdktn.ComplexList {
 }
 export interface PolicyInfoProviderConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/policy_info#workspace_id PolicyInfo#workspace_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.139.0/docs/resources/policy_info#workspace_id PolicyInfo#workspace_id}
   */
   readonly workspaceId?: string;
 }
@@ -1269,11 +1405,11 @@ export class PolicyInfoProviderConfigOutputReference extends cdktn.ComplexObject
 }
 export interface PolicyInfoRowFilterUsingFunctionArgExpressionTagIntrospectionColumnTagValue {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/policy_info#column_alias PolicyInfo#column_alias}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.139.0/docs/resources/policy_info#column_alias PolicyInfo#column_alias}
   */
   readonly columnAlias: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/policy_info#tag_key PolicyInfo#tag_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.139.0/docs/resources/policy_info#tag_key PolicyInfo#tag_key}
   */
   readonly tagKey: string;
 }
@@ -1390,7 +1526,7 @@ export class PolicyInfoRowFilterUsingFunctionArgExpressionTagIntrospectionColumn
 }
 export interface PolicyInfoRowFilterUsingFunctionArgExpressionTagIntrospectionTagValue {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/policy_info#tag_key PolicyInfo#tag_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.139.0/docs/resources/policy_info#tag_key PolicyInfo#tag_key}
   */
   readonly tagKey: string;
 }
@@ -1481,11 +1617,11 @@ export class PolicyInfoRowFilterUsingFunctionArgExpressionTagIntrospectionTagVal
 }
 export interface PolicyInfoRowFilterUsingFunctionArgExpressionTagIntrospection {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/policy_info#column_tag_value PolicyInfo#column_tag_value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.139.0/docs/resources/policy_info#column_tag_value PolicyInfo#column_tag_value}
   */
   readonly columnTagValue?: PolicyInfoRowFilterUsingFunctionArgExpressionTagIntrospectionColumnTagValue;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/policy_info#tag_value PolicyInfo#tag_value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.139.0/docs/resources/policy_info#tag_value PolicyInfo#tag_value}
   */
   readonly tagValue?: PolicyInfoRowFilterUsingFunctionArgExpressionTagIntrospectionTagValue;
 }
@@ -1608,7 +1744,7 @@ export class PolicyInfoRowFilterUsingFunctionArgExpressionTagIntrospectionOutput
 }
 export interface PolicyInfoRowFilterUsingFunctionArgExpression {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/policy_info#tag_introspection PolicyInfo#tag_introspection}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.139.0/docs/resources/policy_info#tag_introspection PolicyInfo#tag_introspection}
   */
   readonly tagIntrospection?: PolicyInfoRowFilterUsingFunctionArgExpressionTagIntrospection;
 }
@@ -1702,15 +1838,15 @@ export class PolicyInfoRowFilterUsingFunctionArgExpressionOutputReference extend
 }
 export interface PolicyInfoRowFilterUsing {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/policy_info#alias PolicyInfo#alias}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.139.0/docs/resources/policy_info#alias PolicyInfo#alias}
   */
   readonly alias?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/policy_info#constant PolicyInfo#constant}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.139.0/docs/resources/policy_info#constant PolicyInfo#constant}
   */
   readonly constant?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/policy_info#function_arg_expression PolicyInfo#function_arg_expression}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.139.0/docs/resources/policy_info#function_arg_expression PolicyInfo#function_arg_expression}
   */
   readonly functionArgExpression?: PolicyInfoRowFilterUsingFunctionArgExpression;
 }
@@ -1884,11 +2020,11 @@ export class PolicyInfoRowFilterUsingList extends cdktn.ComplexList {
 }
 export interface PolicyInfoRowFilter {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/policy_info#function_name PolicyInfo#function_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.139.0/docs/resources/policy_info#function_name PolicyInfo#function_name}
   */
   readonly functionName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/policy_info#using PolicyInfo#using}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.139.0/docs/resources/policy_info#using PolicyInfo#using}
   */
   readonly using?: PolicyInfoRowFilterUsing[] | cdktn.IResolvable;
 }
@@ -2008,7 +2144,7 @@ export class PolicyInfoRowFilterOutputReference extends cdktn.ComplexObject {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/policy_info databricks_policy_info}
+* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.139.0/docs/resources/policy_info databricks_policy_info}
 */
 export class PolicyInfo extends cdktn.TerraformResource {
 
@@ -2024,7 +2160,7 @@ export class PolicyInfo extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a PolicyInfo resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the PolicyInfo to import
-  * @param importFromId The id of the existing PolicyInfo that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/policy_info#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing PolicyInfo that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.139.0/docs/resources/policy_info#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the PolicyInfo to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -2036,7 +2172,7 @@ export class PolicyInfo extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/policy_info databricks_policy_info} Resource
+  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.139.0/docs/resources/policy_info databricks_policy_info} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -2047,7 +2183,7 @@ export class PolicyInfo extends cdktn.TerraformResource {
       terraformResourceType: 'databricks_policy_info',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '1.138.0',
+        providerVersion: '1.139.0',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,
@@ -2164,6 +2300,12 @@ export class PolicyInfo extends cdktn.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get forSecurableTypeInput() {
     return this._forSecurableType;
+  }
+
+  // governed_tags - computed: true, optional: false, required: false
+  private _governedTags = new PolicyInfoGovernedTagsList(this, "governed_tags", false);
+  public get governedTags() {
+    return this._governedTags;
   }
 
   // grant - computed: false, optional: true, required: false

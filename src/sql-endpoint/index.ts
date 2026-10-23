@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/sql_endpoint
+// https://registry.terraform.io/providers/databricks/databricks/1.139.0/docs/resources/sql_endpoint
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,84 +13,100 @@ import * as cdktn from 'cdktn';
 
 export interface SqlEndpointConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/sql_endpoint#auto_stop_mins SqlEndpoint#auto_stop_mins}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.139.0/docs/resources/sql_endpoint#auto_stop_mins SqlEndpoint#auto_stop_mins}
   */
   readonly autoStopMins?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/sql_endpoint#cluster_size SqlEndpoint#cluster_size}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.139.0/docs/resources/sql_endpoint#cluster_size SqlEndpoint#cluster_size}
   */
   readonly clusterSize: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/sql_endpoint#data_source_id SqlEndpoint#data_source_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.139.0/docs/resources/sql_endpoint#customer_version_label SqlEndpoint#customer_version_label}
+  */
+  readonly customerVersionLabel?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.139.0/docs/resources/sql_endpoint#data_source_id SqlEndpoint#data_source_id}
   */
   readonly dataSourceId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/sql_endpoint#enable_photon SqlEndpoint#enable_photon}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.139.0/docs/resources/sql_endpoint#enable_photon SqlEndpoint#enable_photon}
   */
   readonly enablePhoton?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/sql_endpoint#enable_serverless_compute SqlEndpoint#enable_serverless_compute}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.139.0/docs/resources/sql_endpoint#enable_serverless_compute SqlEndpoint#enable_serverless_compute}
   */
   readonly enableServerlessCompute?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/sql_endpoint#id SqlEndpoint#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.139.0/docs/resources/sql_endpoint#id SqlEndpoint#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/sql_endpoint#instance_profile_arn SqlEndpoint#instance_profile_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.139.0/docs/resources/sql_endpoint#instance_profile_arn SqlEndpoint#instance_profile_arn}
   */
   readonly instanceProfileArn?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/sql_endpoint#max_num_clusters SqlEndpoint#max_num_clusters}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.139.0/docs/resources/sql_endpoint#max_dbu SqlEndpoint#max_dbu}
+  */
+  readonly maxDbu?: number;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.139.0/docs/resources/sql_endpoint#max_num_clusters SqlEndpoint#max_num_clusters}
   */
   readonly maxNumClusters?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/sql_endpoint#min_num_clusters SqlEndpoint#min_num_clusters}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.139.0/docs/resources/sql_endpoint#min_num_clusters SqlEndpoint#min_num_clusters}
   */
   readonly minNumClusters?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/sql_endpoint#name SqlEndpoint#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.139.0/docs/resources/sql_endpoint#name SqlEndpoint#name}
   */
   readonly name: string;
   /**
   * If true, skip waiting for the warehouse to start after creation.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/sql_endpoint#no_wait SqlEndpoint#no_wait}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.139.0/docs/resources/sql_endpoint#no_wait SqlEndpoint#no_wait}
   */
   readonly noWait?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/sql_endpoint#spot_instance_policy SqlEndpoint#spot_instance_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.139.0/docs/resources/sql_endpoint#reyden_cluster_size_multiplier SqlEndpoint#reyden_cluster_size_multiplier}
+  */
+  readonly reydenClusterSizeMultiplier?: number;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.139.0/docs/resources/sql_endpoint#spot_instance_policy SqlEndpoint#spot_instance_policy}
   */
   readonly spotInstancePolicy?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/sql_endpoint#warehouse_type SqlEndpoint#warehouse_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.139.0/docs/resources/sql_endpoint#statement_timeout SqlEndpoint#statement_timeout}
+  */
+  readonly statementTimeout?: number;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.139.0/docs/resources/sql_endpoint#warehouse_type SqlEndpoint#warehouse_type}
   */
   readonly warehouseType?: string;
   /**
   * channel block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/sql_endpoint#channel SqlEndpoint#channel}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.139.0/docs/resources/sql_endpoint#channel SqlEndpoint#channel}
   */
   readonly channel?: SqlEndpointChannel;
   /**
   * provider_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/sql_endpoint#provider_config SqlEndpoint#provider_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.139.0/docs/resources/sql_endpoint#provider_config SqlEndpoint#provider_config}
   */
   readonly providerConfig?: SqlEndpointProviderConfig;
   /**
   * tags block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/sql_endpoint#tags SqlEndpoint#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.139.0/docs/resources/sql_endpoint#tags SqlEndpoint#tags}
   */
   readonly tags?: SqlEndpointTags;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/sql_endpoint#timeouts SqlEndpoint#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.139.0/docs/resources/sql_endpoint#timeouts SqlEndpoint#timeouts}
   */
   readonly timeouts?: SqlEndpointTimeouts;
 }
@@ -368,11 +384,11 @@ export class SqlEndpointOdbcParamsList extends cdktn.ComplexList {
 }
 export interface SqlEndpointChannel {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/sql_endpoint#dbsql_version SqlEndpoint#dbsql_version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.139.0/docs/resources/sql_endpoint#dbsql_version SqlEndpoint#dbsql_version}
   */
   readonly dbsqlVersion?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/sql_endpoint#name SqlEndpoint#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.139.0/docs/resources/sql_endpoint#name SqlEndpoint#name}
   */
   readonly name?: string;
 }
@@ -485,7 +501,7 @@ export class SqlEndpointChannelOutputReference extends cdktn.ComplexObject {
 }
 export interface SqlEndpointProviderConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/sql_endpoint#workspace_id SqlEndpoint#workspace_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.139.0/docs/resources/sql_endpoint#workspace_id SqlEndpoint#workspace_id}
   */
   readonly workspaceId?: string;
 }
@@ -569,11 +585,11 @@ export class SqlEndpointProviderConfigOutputReference extends cdktn.ComplexObjec
 }
 export interface SqlEndpointTagsCustomTags {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/sql_endpoint#key SqlEndpoint#key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.139.0/docs/resources/sql_endpoint#key SqlEndpoint#key}
   */
   readonly key: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/sql_endpoint#value SqlEndpoint#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.139.0/docs/resources/sql_endpoint#value SqlEndpoint#value}
   */
   readonly value: string;
 }
@@ -714,7 +730,7 @@ export interface SqlEndpointTags {
   /**
   * custom_tags block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/sql_endpoint#custom_tags SqlEndpoint#custom_tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.139.0/docs/resources/sql_endpoint#custom_tags SqlEndpoint#custom_tags}
   */
   readonly customTags?: SqlEndpointTagsCustomTags[] | cdktn.IResolvable;
 }
@@ -798,7 +814,7 @@ export class SqlEndpointTagsOutputReference extends cdktn.ComplexObject {
 }
 export interface SqlEndpointTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/sql_endpoint#create SqlEndpoint#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.139.0/docs/resources/sql_endpoint#create SqlEndpoint#create}
   */
   readonly create?: string;
 }
@@ -892,7 +908,7 @@ export class SqlEndpointTimeoutsOutputReference extends cdktn.ComplexObject {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/sql_endpoint databricks_sql_endpoint}
+* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.139.0/docs/resources/sql_endpoint databricks_sql_endpoint}
 */
 export class SqlEndpoint extends cdktn.TerraformResource {
 
@@ -908,7 +924,7 @@ export class SqlEndpoint extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a SqlEndpoint resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the SqlEndpoint to import
-  * @param importFromId The id of the existing SqlEndpoint that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/sql_endpoint#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing SqlEndpoint that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.139.0/docs/resources/sql_endpoint#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the SqlEndpoint to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -920,7 +936,7 @@ export class SqlEndpoint extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/sql_endpoint databricks_sql_endpoint} Resource
+  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.139.0/docs/resources/sql_endpoint databricks_sql_endpoint} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -931,7 +947,7 @@ export class SqlEndpoint extends cdktn.TerraformResource {
       terraformResourceType: 'databricks_sql_endpoint',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '1.138.0',
+        providerVersion: '1.139.0',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,
@@ -944,16 +960,20 @@ export class SqlEndpoint extends cdktn.TerraformResource {
     });
     this._autoStopMins = config.autoStopMins;
     this._clusterSize = config.clusterSize;
+    this._customerVersionLabel = config.customerVersionLabel;
     this._dataSourceId = config.dataSourceId;
     this._enablePhoton = config.enablePhoton;
     this._enableServerlessCompute = config.enableServerlessCompute;
     this._id = config.id;
     this._instanceProfileArn = config.instanceProfileArn;
+    this._maxDbu = config.maxDbu;
     this._maxNumClusters = config.maxNumClusters;
     this._minNumClusters = config.minNumClusters;
     this._name = config.name;
     this._noWait = config.noWait;
+    this._reydenClusterSizeMultiplier = config.reydenClusterSizeMultiplier;
     this._spotInstancePolicy = config.spotInstancePolicy;
+    this._statementTimeout = config.statementTimeout;
     this._warehouseType = config.warehouseType;
     this._channel.internalValue = config.channel;
     this._providerConfig.internalValue = config.providerConfig;
@@ -997,6 +1017,22 @@ export class SqlEndpoint extends cdktn.TerraformResource {
   // creator_name - computed: true, optional: false, required: false
   public get creatorName() {
     return this.getStringAttribute('creator_name');
+  }
+
+  // customer_version_label - computed: false, optional: true, required: false
+  private _customerVersionLabel?: string; 
+  public get customerVersionLabel() {
+    return this.getStringAttribute('customer_version_label');
+  }
+  public set customerVersionLabel(value: string) {
+    this._customerVersionLabel = value;
+  }
+  public resetCustomerVersionLabel() {
+    this._customerVersionLabel = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get customerVersionLabelInput() {
+    return this._customerVersionLabel;
   }
 
   // data_source_id - computed: true, optional: true, required: false
@@ -1090,6 +1126,22 @@ export class SqlEndpoint extends cdktn.TerraformResource {
     return this.getStringAttribute('jdbc_url');
   }
 
+  // max_dbu - computed: false, optional: true, required: false
+  private _maxDbu?: number; 
+  public get maxDbu() {
+    return this.getNumberAttribute('max_dbu');
+  }
+  public set maxDbu(value: number) {
+    this._maxDbu = value;
+  }
+  public resetMaxDbu() {
+    this._maxDbu = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get maxDbuInput() {
+    return this._maxDbu;
+  }
+
   // max_num_clusters - computed: false, optional: true, required: false
   private _maxNumClusters?: number; 
   public get maxNumClusters() {
@@ -1167,6 +1219,22 @@ export class SqlEndpoint extends cdktn.TerraformResource {
     return this._odbcParams;
   }
 
+  // reyden_cluster_size_multiplier - computed: false, optional: true, required: false
+  private _reydenClusterSizeMultiplier?: number; 
+  public get reydenClusterSizeMultiplier() {
+    return this.getNumberAttribute('reyden_cluster_size_multiplier');
+  }
+  public set reydenClusterSizeMultiplier(value: number) {
+    this._reydenClusterSizeMultiplier = value;
+  }
+  public resetReydenClusterSizeMultiplier() {
+    this._reydenClusterSizeMultiplier = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get reydenClusterSizeMultiplierInput() {
+    return this._reydenClusterSizeMultiplier;
+  }
+
   // spot_instance_policy - computed: false, optional: true, required: false
   private _spotInstancePolicy?: string; 
   public get spotInstancePolicy() {
@@ -1186,6 +1254,22 @@ export class SqlEndpoint extends cdktn.TerraformResource {
   // state - computed: true, optional: false, required: false
   public get state() {
     return this.getStringAttribute('state');
+  }
+
+  // statement_timeout - computed: false, optional: true, required: false
+  private _statementTimeout?: number; 
+  public get statementTimeout() {
+    return this.getNumberAttribute('statement_timeout');
+  }
+  public set statementTimeout(value: number) {
+    this._statementTimeout = value;
+  }
+  public resetStatementTimeout() {
+    this._statementTimeout = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get statementTimeoutInput() {
+    return this._statementTimeout;
   }
 
   // warehouse_type - computed: false, optional: true, required: false
@@ -1276,16 +1360,20 @@ export class SqlEndpoint extends cdktn.TerraformResource {
     return {
       auto_stop_mins: cdktn.numberToTerraform(this._autoStopMins),
       cluster_size: cdktn.stringToTerraform(this._clusterSize),
+      customer_version_label: cdktn.stringToTerraform(this._customerVersionLabel),
       data_source_id: cdktn.stringToTerraform(this._dataSourceId),
       enable_photon: cdktn.booleanToTerraform(this._enablePhoton),
       enable_serverless_compute: cdktn.booleanToTerraform(this._enableServerlessCompute),
       id: cdktn.stringToTerraform(this._id),
       instance_profile_arn: cdktn.stringToTerraform(this._instanceProfileArn),
+      max_dbu: cdktn.numberToTerraform(this._maxDbu),
       max_num_clusters: cdktn.numberToTerraform(this._maxNumClusters),
       min_num_clusters: cdktn.numberToTerraform(this._minNumClusters),
       name: cdktn.stringToTerraform(this._name),
       no_wait: cdktn.booleanToTerraform(this._noWait),
+      reyden_cluster_size_multiplier: cdktn.numberToTerraform(this._reydenClusterSizeMultiplier),
       spot_instance_policy: cdktn.stringToTerraform(this._spotInstancePolicy),
+      statement_timeout: cdktn.numberToTerraform(this._statementTimeout),
       warehouse_type: cdktn.stringToTerraform(this._warehouseType),
       channel: sqlEndpointChannelToTerraform(this._channel.internalValue),
       provider_config: sqlEndpointProviderConfigToTerraform(this._providerConfig.internalValue),
@@ -1304,6 +1392,12 @@ export class SqlEndpoint extends cdktn.TerraformResource {
       },
       cluster_size: {
         value: cdktn.stringToHclTerraform(this._clusterSize),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      customer_version_label: {
+        value: cdktn.stringToHclTerraform(this._customerVersionLabel),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
@@ -1338,6 +1432,12 @@ export class SqlEndpoint extends cdktn.TerraformResource {
         type: "simple",
         storageClassType: "string",
       },
+      max_dbu: {
+        value: cdktn.numberToHclTerraform(this._maxDbu),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
       max_num_clusters: {
         value: cdktn.numberToHclTerraform(this._maxNumClusters),
         isBlock: false,
@@ -1362,11 +1462,23 @@ export class SqlEndpoint extends cdktn.TerraformResource {
         type: "simple",
         storageClassType: "boolean",
       },
+      reyden_cluster_size_multiplier: {
+        value: cdktn.numberToHclTerraform(this._reydenClusterSizeMultiplier),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
       spot_instance_policy: {
         value: cdktn.stringToHclTerraform(this._spotInstancePolicy),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
+      },
+      statement_timeout: {
+        value: cdktn.numberToHclTerraform(this._statementTimeout),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
       },
       warehouse_type: {
         value: cdktn.stringToHclTerraform(this._warehouseType),
