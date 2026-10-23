@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/data-sources/private_network_gateway
+// https://registry.terraform.io/providers/databricks/databricks/1.139.0/docs/data-sources/private_network_gateway
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,13 +13,13 @@ import * as cdktn from 'cdktn';
 
 export interface DataDatabricksPrivateNetworkGatewayConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/data-sources/private_network_gateway#name DataDatabricksPrivateNetworkGateway#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.139.0/docs/data-sources/private_network_gateway#name DataDatabricksPrivateNetworkGateway#name}
   */
   readonly name: string;
 }
 export interface DataDatabricksPrivateNetworkGatewayAwsCloudConnectionCrossAccountRole {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/data-sources/private_network_gateway#role_arn DataDatabricksPrivateNetworkGateway#role_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.139.0/docs/data-sources/private_network_gateway#role_arn DataDatabricksPrivateNetworkGateway#role_arn}
   */
   readonly roleArn: string;
 }
@@ -100,7 +100,7 @@ export class DataDatabricksPrivateNetworkGatewayAwsCloudConnectionCrossAccountRo
 }
 export interface DataDatabricksPrivateNetworkGatewayAwsCloudConnectionGatewaySubnets {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/data-sources/private_network_gateway#subnet_id DataDatabricksPrivateNetworkGateway#subnet_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.139.0/docs/data-sources/private_network_gateway#subnet_id DataDatabricksPrivateNetworkGateway#subnet_id}
   */
   readonly subnetId: string;
 }
@@ -203,15 +203,15 @@ export class DataDatabricksPrivateNetworkGatewayAwsCloudConnectionGatewaySubnets
 }
 export interface DataDatabricksPrivateNetworkGatewayAwsCloudConnection {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/data-sources/private_network_gateway#cross_account_role DataDatabricksPrivateNetworkGateway#cross_account_role}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.139.0/docs/data-sources/private_network_gateway#cross_account_role DataDatabricksPrivateNetworkGateway#cross_account_role}
   */
   readonly crossAccountRole: DataDatabricksPrivateNetworkGatewayAwsCloudConnectionCrossAccountRole;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/data-sources/private_network_gateway#gateway_subnets DataDatabricksPrivateNetworkGateway#gateway_subnets}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.139.0/docs/data-sources/private_network_gateway#gateway_subnets DataDatabricksPrivateNetworkGateway#gateway_subnets}
   */
   readonly gatewaySubnets: DataDatabricksPrivateNetworkGatewayAwsCloudConnectionGatewaySubnets[] | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/data-sources/private_network_gateway#security_group_ids DataDatabricksPrivateNetworkGateway#security_group_ids}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.139.0/docs/data-sources/private_network_gateway#security_group_ids DataDatabricksPrivateNetworkGateway#security_group_ids}
   */
   readonly securityGroupIds: string[];
 }
@@ -344,7 +344,7 @@ export class DataDatabricksPrivateNetworkGatewayAwsCloudConnectionOutputReferenc
 }
 export interface DataDatabricksPrivateNetworkGatewayAzureCloudConnectionGatewaySubnet {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/data-sources/private_network_gateway#resource_id DataDatabricksPrivateNetworkGateway#resource_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.139.0/docs/data-sources/private_network_gateway#resource_id DataDatabricksPrivateNetworkGateway#resource_id}
   */
   readonly resourceId: string;
 }
@@ -425,7 +425,7 @@ export class DataDatabricksPrivateNetworkGatewayAzureCloudConnectionGatewaySubne
 }
 export interface DataDatabricksPrivateNetworkGatewayAzureCloudConnection {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/data-sources/private_network_gateway#gateway_subnet DataDatabricksPrivateNetworkGateway#gateway_subnet}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.139.0/docs/data-sources/private_network_gateway#gateway_subnet DataDatabricksPrivateNetworkGateway#gateway_subnet}
   */
   readonly gatewaySubnet: DataDatabricksPrivateNetworkGatewayAzureCloudConnectionGatewaySubnet;
 }
@@ -506,11 +506,11 @@ export class DataDatabricksPrivateNetworkGatewayAzureCloudConnectionOutputRefere
 }
 export interface DataDatabricksPrivateNetworkGatewayDestinations {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/data-sources/private_network_gateway#destination_type DataDatabricksPrivateNetworkGateway#destination_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.139.0/docs/data-sources/private_network_gateway#destination_type DataDatabricksPrivateNetworkGateway#destination_type}
   */
   readonly destinationType: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/data-sources/private_network_gateway#value DataDatabricksPrivateNetworkGateway#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.139.0/docs/data-sources/private_network_gateway#value DataDatabricksPrivateNetworkGateway#value}
   */
   readonly value: string;
 }
@@ -639,11 +639,11 @@ export class DataDatabricksPrivateNetworkGatewayDestinationsList extends cdktn.C
 }
 export interface DataDatabricksPrivateNetworkGatewayPrivateDnsResolvers {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/data-sources/private_network_gateway#resolver_type DataDatabricksPrivateNetworkGateway#resolver_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.139.0/docs/data-sources/private_network_gateway#resolver_type DataDatabricksPrivateNetworkGateway#resolver_type}
   */
   readonly resolverType: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/data-sources/private_network_gateway#value DataDatabricksPrivateNetworkGateway#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.139.0/docs/data-sources/private_network_gateway#value DataDatabricksPrivateNetworkGateway#value}
   */
   readonly value: string;
 }
@@ -772,7 +772,7 @@ export class DataDatabricksPrivateNetworkGatewayPrivateDnsResolversList extends 
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/data-sources/private_network_gateway databricks_private_network_gateway}
+* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.139.0/docs/data-sources/private_network_gateway databricks_private_network_gateway}
 */
 export class DataDatabricksPrivateNetworkGateway extends cdktn.TerraformDataSource {
 
@@ -788,7 +788,7 @@ export class DataDatabricksPrivateNetworkGateway extends cdktn.TerraformDataSour
   * Generates CDKTN code for importing a DataDatabricksPrivateNetworkGateway resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataDatabricksPrivateNetworkGateway to import
-  * @param importFromId The id of the existing DataDatabricksPrivateNetworkGateway that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/data-sources/private_network_gateway#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataDatabricksPrivateNetworkGateway that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.139.0/docs/data-sources/private_network_gateway#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataDatabricksPrivateNetworkGateway to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -800,7 +800,7 @@ export class DataDatabricksPrivateNetworkGateway extends cdktn.TerraformDataSour
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/data-sources/private_network_gateway databricks_private_network_gateway} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.139.0/docs/data-sources/private_network_gateway databricks_private_network_gateway} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -811,7 +811,7 @@ export class DataDatabricksPrivateNetworkGateway extends cdktn.TerraformDataSour
       terraformResourceType: 'databricks_private_network_gateway',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '1.138.0',
+        providerVersion: '1.139.0',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,

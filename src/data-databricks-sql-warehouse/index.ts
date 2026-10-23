@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/data-sources/sql_warehouse
+// https://registry.terraform.io/providers/databricks/databricks/1.139.0/docs/data-sources/sql_warehouse
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,114 +13,130 @@ import * as cdktn from 'cdktn';
 
 export interface DataDatabricksSqlWarehouseConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/data-sources/sql_warehouse#auto_stop_mins DataDatabricksSqlWarehouse#auto_stop_mins}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.139.0/docs/data-sources/sql_warehouse#auto_stop_mins DataDatabricksSqlWarehouse#auto_stop_mins}
   */
   readonly autoStopMins?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/data-sources/sql_warehouse#cluster_size DataDatabricksSqlWarehouse#cluster_size}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.139.0/docs/data-sources/sql_warehouse#cluster_size DataDatabricksSqlWarehouse#cluster_size}
   */
   readonly clusterSize?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/data-sources/sql_warehouse#creator_name DataDatabricksSqlWarehouse#creator_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.139.0/docs/data-sources/sql_warehouse#creator_name DataDatabricksSqlWarehouse#creator_name}
   */
   readonly creatorName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/data-sources/sql_warehouse#data_source_id DataDatabricksSqlWarehouse#data_source_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.139.0/docs/data-sources/sql_warehouse#customer_version_label DataDatabricksSqlWarehouse#customer_version_label}
+  */
+  readonly customerVersionLabel?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.139.0/docs/data-sources/sql_warehouse#data_source_id DataDatabricksSqlWarehouse#data_source_id}
   */
   readonly dataSourceId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/data-sources/sql_warehouse#enable_photon DataDatabricksSqlWarehouse#enable_photon}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.139.0/docs/data-sources/sql_warehouse#enable_photon DataDatabricksSqlWarehouse#enable_photon}
   */
   readonly enablePhoton?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/data-sources/sql_warehouse#enable_serverless_compute DataDatabricksSqlWarehouse#enable_serverless_compute}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.139.0/docs/data-sources/sql_warehouse#enable_serverless_compute DataDatabricksSqlWarehouse#enable_serverless_compute}
   */
   readonly enableServerlessCompute?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/data-sources/sql_warehouse#id DataDatabricksSqlWarehouse#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.139.0/docs/data-sources/sql_warehouse#id DataDatabricksSqlWarehouse#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/data-sources/sql_warehouse#instance_profile_arn DataDatabricksSqlWarehouse#instance_profile_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.139.0/docs/data-sources/sql_warehouse#instance_profile_arn DataDatabricksSqlWarehouse#instance_profile_arn}
   */
   readonly instanceProfileArn?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/data-sources/sql_warehouse#jdbc_url DataDatabricksSqlWarehouse#jdbc_url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.139.0/docs/data-sources/sql_warehouse#jdbc_url DataDatabricksSqlWarehouse#jdbc_url}
   */
   readonly jdbcUrl?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/data-sources/sql_warehouse#max_num_clusters DataDatabricksSqlWarehouse#max_num_clusters}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.139.0/docs/data-sources/sql_warehouse#max_dbu DataDatabricksSqlWarehouse#max_dbu}
+  */
+  readonly maxDbu?: number;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.139.0/docs/data-sources/sql_warehouse#max_num_clusters DataDatabricksSqlWarehouse#max_num_clusters}
   */
   readonly maxNumClusters?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/data-sources/sql_warehouse#min_num_clusters DataDatabricksSqlWarehouse#min_num_clusters}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.139.0/docs/data-sources/sql_warehouse#min_num_clusters DataDatabricksSqlWarehouse#min_num_clusters}
   */
   readonly minNumClusters?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/data-sources/sql_warehouse#name DataDatabricksSqlWarehouse#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.139.0/docs/data-sources/sql_warehouse#name DataDatabricksSqlWarehouse#name}
   */
   readonly name?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/data-sources/sql_warehouse#num_active_sessions DataDatabricksSqlWarehouse#num_active_sessions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.139.0/docs/data-sources/sql_warehouse#num_active_sessions DataDatabricksSqlWarehouse#num_active_sessions}
   */
   readonly numActiveSessions?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/data-sources/sql_warehouse#num_clusters DataDatabricksSqlWarehouse#num_clusters}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.139.0/docs/data-sources/sql_warehouse#num_clusters DataDatabricksSqlWarehouse#num_clusters}
   */
   readonly numClusters?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/data-sources/sql_warehouse#spot_instance_policy DataDatabricksSqlWarehouse#spot_instance_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.139.0/docs/data-sources/sql_warehouse#reyden_cluster_size_multiplier DataDatabricksSqlWarehouse#reyden_cluster_size_multiplier}
+  */
+  readonly reydenClusterSizeMultiplier?: number;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.139.0/docs/data-sources/sql_warehouse#spot_instance_policy DataDatabricksSqlWarehouse#spot_instance_policy}
   */
   readonly spotInstancePolicy?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/data-sources/sql_warehouse#state DataDatabricksSqlWarehouse#state}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.139.0/docs/data-sources/sql_warehouse#state DataDatabricksSqlWarehouse#state}
   */
   readonly state?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/data-sources/sql_warehouse#warehouse_type DataDatabricksSqlWarehouse#warehouse_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.139.0/docs/data-sources/sql_warehouse#statement_timeout DataDatabricksSqlWarehouse#statement_timeout}
+  */
+  readonly statementTimeout?: number;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.139.0/docs/data-sources/sql_warehouse#warehouse_type DataDatabricksSqlWarehouse#warehouse_type}
   */
   readonly warehouseType?: string;
   /**
   * channel block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/data-sources/sql_warehouse#channel DataDatabricksSqlWarehouse#channel}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.139.0/docs/data-sources/sql_warehouse#channel DataDatabricksSqlWarehouse#channel}
   */
   readonly channel?: DataDatabricksSqlWarehouseChannel;
   /**
   * health block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/data-sources/sql_warehouse#health DataDatabricksSqlWarehouse#health}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.139.0/docs/data-sources/sql_warehouse#health DataDatabricksSqlWarehouse#health}
   */
   readonly health?: DataDatabricksSqlWarehouseHealth;
   /**
   * odbc_params block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/data-sources/sql_warehouse#odbc_params DataDatabricksSqlWarehouse#odbc_params}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.139.0/docs/data-sources/sql_warehouse#odbc_params DataDatabricksSqlWarehouse#odbc_params}
   */
   readonly odbcParams?: DataDatabricksSqlWarehouseOdbcParams;
   /**
   * provider_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/data-sources/sql_warehouse#provider_config DataDatabricksSqlWarehouse#provider_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.139.0/docs/data-sources/sql_warehouse#provider_config DataDatabricksSqlWarehouse#provider_config}
   */
   readonly providerConfig?: DataDatabricksSqlWarehouseProviderConfig;
   /**
   * tags block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/data-sources/sql_warehouse#tags DataDatabricksSqlWarehouse#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.139.0/docs/data-sources/sql_warehouse#tags DataDatabricksSqlWarehouse#tags}
   */
   readonly tags?: DataDatabricksSqlWarehouseTags;
 }
 export interface DataDatabricksSqlWarehouseChannel {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/data-sources/sql_warehouse#dbsql_version DataDatabricksSqlWarehouse#dbsql_version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.139.0/docs/data-sources/sql_warehouse#dbsql_version DataDatabricksSqlWarehouse#dbsql_version}
   */
   readonly dbsqlVersion?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/data-sources/sql_warehouse#name DataDatabricksSqlWarehouse#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.139.0/docs/data-sources/sql_warehouse#name DataDatabricksSqlWarehouse#name}
   */
   readonly name?: string;
 }
@@ -233,15 +249,15 @@ export class DataDatabricksSqlWarehouseChannelOutputReference extends cdktn.Comp
 }
 export interface DataDatabricksSqlWarehouseHealthFailureReason {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/data-sources/sql_warehouse#code DataDatabricksSqlWarehouse#code}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.139.0/docs/data-sources/sql_warehouse#code DataDatabricksSqlWarehouse#code}
   */
   readonly code?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/data-sources/sql_warehouse#parameters DataDatabricksSqlWarehouse#parameters}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.139.0/docs/data-sources/sql_warehouse#parameters DataDatabricksSqlWarehouse#parameters}
   */
   readonly parameters?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/data-sources/sql_warehouse#type DataDatabricksSqlWarehouse#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.139.0/docs/data-sources/sql_warehouse#type DataDatabricksSqlWarehouse#type}
   */
   readonly type?: string;
 }
@@ -383,25 +399,25 @@ export class DataDatabricksSqlWarehouseHealthFailureReasonOutputReference extend
 }
 export interface DataDatabricksSqlWarehouseHealth {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/data-sources/sql_warehouse#details DataDatabricksSqlWarehouse#details}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.139.0/docs/data-sources/sql_warehouse#details DataDatabricksSqlWarehouse#details}
   */
   readonly details?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/data-sources/sql_warehouse#message DataDatabricksSqlWarehouse#message}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.139.0/docs/data-sources/sql_warehouse#message DataDatabricksSqlWarehouse#message}
   */
   readonly message?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/data-sources/sql_warehouse#status DataDatabricksSqlWarehouse#status}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.139.0/docs/data-sources/sql_warehouse#status DataDatabricksSqlWarehouse#status}
   */
   readonly status?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/data-sources/sql_warehouse#summary DataDatabricksSqlWarehouse#summary}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.139.0/docs/data-sources/sql_warehouse#summary DataDatabricksSqlWarehouse#summary}
   */
   readonly summary?: string;
   /**
   * failure_reason block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/data-sources/sql_warehouse#failure_reason DataDatabricksSqlWarehouse#failure_reason}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.139.0/docs/data-sources/sql_warehouse#failure_reason DataDatabricksSqlWarehouse#failure_reason}
   */
   readonly failureReason?: DataDatabricksSqlWarehouseHealthFailureReason;
 }
@@ -601,19 +617,19 @@ export class DataDatabricksSqlWarehouseHealthOutputReference extends cdktn.Compl
 }
 export interface DataDatabricksSqlWarehouseOdbcParams {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/data-sources/sql_warehouse#hostname DataDatabricksSqlWarehouse#hostname}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.139.0/docs/data-sources/sql_warehouse#hostname DataDatabricksSqlWarehouse#hostname}
   */
   readonly hostname?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/data-sources/sql_warehouse#path DataDatabricksSqlWarehouse#path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.139.0/docs/data-sources/sql_warehouse#path DataDatabricksSqlWarehouse#path}
   */
   readonly path?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/data-sources/sql_warehouse#port DataDatabricksSqlWarehouse#port}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.139.0/docs/data-sources/sql_warehouse#port DataDatabricksSqlWarehouse#port}
   */
   readonly port?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/data-sources/sql_warehouse#protocol DataDatabricksSqlWarehouse#protocol}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.139.0/docs/data-sources/sql_warehouse#protocol DataDatabricksSqlWarehouse#protocol}
   */
   readonly protocol?: string;
 }
@@ -784,7 +800,7 @@ export class DataDatabricksSqlWarehouseOdbcParamsOutputReference extends cdktn.C
 }
 export interface DataDatabricksSqlWarehouseProviderConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/data-sources/sql_warehouse#workspace_id DataDatabricksSqlWarehouse#workspace_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.139.0/docs/data-sources/sql_warehouse#workspace_id DataDatabricksSqlWarehouse#workspace_id}
   */
   readonly workspaceId?: string;
 }
@@ -868,11 +884,11 @@ export class DataDatabricksSqlWarehouseProviderConfigOutputReference extends cdk
 }
 export interface DataDatabricksSqlWarehouseTagsCustomTags {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/data-sources/sql_warehouse#key DataDatabricksSqlWarehouse#key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.139.0/docs/data-sources/sql_warehouse#key DataDatabricksSqlWarehouse#key}
   */
   readonly key?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/data-sources/sql_warehouse#value DataDatabricksSqlWarehouse#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.139.0/docs/data-sources/sql_warehouse#value DataDatabricksSqlWarehouse#value}
   */
   readonly value?: string;
 }
@@ -1019,7 +1035,7 @@ export interface DataDatabricksSqlWarehouseTags {
   /**
   * custom_tags block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/data-sources/sql_warehouse#custom_tags DataDatabricksSqlWarehouse#custom_tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.139.0/docs/data-sources/sql_warehouse#custom_tags DataDatabricksSqlWarehouse#custom_tags}
   */
   readonly customTags?: DataDatabricksSqlWarehouseTagsCustomTags[] | cdktn.IResolvable;
 }
@@ -1103,7 +1119,7 @@ export class DataDatabricksSqlWarehouseTagsOutputReference extends cdktn.Complex
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/data-sources/sql_warehouse databricks_sql_warehouse}
+* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.139.0/docs/data-sources/sql_warehouse databricks_sql_warehouse}
 */
 export class DataDatabricksSqlWarehouse extends cdktn.TerraformDataSource {
 
@@ -1119,7 +1135,7 @@ export class DataDatabricksSqlWarehouse extends cdktn.TerraformDataSource {
   * Generates CDKTN code for importing a DataDatabricksSqlWarehouse resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataDatabricksSqlWarehouse to import
-  * @param importFromId The id of the existing DataDatabricksSqlWarehouse that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/data-sources/sql_warehouse#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataDatabricksSqlWarehouse that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.139.0/docs/data-sources/sql_warehouse#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataDatabricksSqlWarehouse to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -1131,7 +1147,7 @@ export class DataDatabricksSqlWarehouse extends cdktn.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/data-sources/sql_warehouse databricks_sql_warehouse} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.139.0/docs/data-sources/sql_warehouse databricks_sql_warehouse} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -1142,7 +1158,7 @@ export class DataDatabricksSqlWarehouse extends cdktn.TerraformDataSource {
       terraformResourceType: 'databricks_sql_warehouse',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '1.138.0',
+        providerVersion: '1.139.0',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,
@@ -1156,19 +1172,23 @@ export class DataDatabricksSqlWarehouse extends cdktn.TerraformDataSource {
     this._autoStopMins = config.autoStopMins;
     this._clusterSize = config.clusterSize;
     this._creatorName = config.creatorName;
+    this._customerVersionLabel = config.customerVersionLabel;
     this._dataSourceId = config.dataSourceId;
     this._enablePhoton = config.enablePhoton;
     this._enableServerlessCompute = config.enableServerlessCompute;
     this._id = config.id;
     this._instanceProfileArn = config.instanceProfileArn;
     this._jdbcUrl = config.jdbcUrl;
+    this._maxDbu = config.maxDbu;
     this._maxNumClusters = config.maxNumClusters;
     this._minNumClusters = config.minNumClusters;
     this._name = config.name;
     this._numActiveSessions = config.numActiveSessions;
     this._numClusters = config.numClusters;
+    this._reydenClusterSizeMultiplier = config.reydenClusterSizeMultiplier;
     this._spotInstancePolicy = config.spotInstancePolicy;
     this._state = config.state;
+    this._statementTimeout = config.statementTimeout;
     this._warehouseType = config.warehouseType;
     this._channel.internalValue = config.channel;
     this._health.internalValue = config.health;
@@ -1227,6 +1247,22 @@ export class DataDatabricksSqlWarehouse extends cdktn.TerraformDataSource {
   // Temporarily expose input value. Use with caution.
   public get creatorNameInput() {
     return this._creatorName;
+  }
+
+  // customer_version_label - computed: true, optional: true, required: false
+  private _customerVersionLabel?: string; 
+  public get customerVersionLabel() {
+    return this.getStringAttribute('customer_version_label');
+  }
+  public set customerVersionLabel(value: string) {
+    this._customerVersionLabel = value;
+  }
+  public resetCustomerVersionLabel() {
+    this._customerVersionLabel = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get customerVersionLabelInput() {
+    return this._customerVersionLabel;
   }
 
   // data_source_id - computed: true, optional: true, required: false
@@ -1325,6 +1361,22 @@ export class DataDatabricksSqlWarehouse extends cdktn.TerraformDataSource {
     return this._jdbcUrl;
   }
 
+  // max_dbu - computed: true, optional: true, required: false
+  private _maxDbu?: number; 
+  public get maxDbu() {
+    return this.getNumberAttribute('max_dbu');
+  }
+  public set maxDbu(value: number) {
+    this._maxDbu = value;
+  }
+  public resetMaxDbu() {
+    this._maxDbu = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get maxDbuInput() {
+    return this._maxDbu;
+  }
+
   // max_num_clusters - computed: true, optional: true, required: false
   private _maxNumClusters?: number; 
   public get maxNumClusters() {
@@ -1405,6 +1457,22 @@ export class DataDatabricksSqlWarehouse extends cdktn.TerraformDataSource {
     return this._numClusters;
   }
 
+  // reyden_cluster_size_multiplier - computed: true, optional: true, required: false
+  private _reydenClusterSizeMultiplier?: number; 
+  public get reydenClusterSizeMultiplier() {
+    return this.getNumberAttribute('reyden_cluster_size_multiplier');
+  }
+  public set reydenClusterSizeMultiplier(value: number) {
+    this._reydenClusterSizeMultiplier = value;
+  }
+  public resetReydenClusterSizeMultiplier() {
+    this._reydenClusterSizeMultiplier = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get reydenClusterSizeMultiplierInput() {
+    return this._reydenClusterSizeMultiplier;
+  }
+
   // spot_instance_policy - computed: true, optional: true, required: false
   private _spotInstancePolicy?: string; 
   public get spotInstancePolicy() {
@@ -1435,6 +1503,22 @@ export class DataDatabricksSqlWarehouse extends cdktn.TerraformDataSource {
   // Temporarily expose input value. Use with caution.
   public get stateInput() {
     return this._state;
+  }
+
+  // statement_timeout - computed: true, optional: true, required: false
+  private _statementTimeout?: number; 
+  public get statementTimeout() {
+    return this.getNumberAttribute('statement_timeout');
+  }
+  public set statementTimeout(value: number) {
+    this._statementTimeout = value;
+  }
+  public resetStatementTimeout() {
+    this._statementTimeout = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get statementTimeoutInput() {
+    return this._statementTimeout;
   }
 
   // warehouse_type - computed: true, optional: true, required: false
@@ -1542,19 +1626,23 @@ export class DataDatabricksSqlWarehouse extends cdktn.TerraformDataSource {
       auto_stop_mins: cdktn.numberToTerraform(this._autoStopMins),
       cluster_size: cdktn.stringToTerraform(this._clusterSize),
       creator_name: cdktn.stringToTerraform(this._creatorName),
+      customer_version_label: cdktn.stringToTerraform(this._customerVersionLabel),
       data_source_id: cdktn.stringToTerraform(this._dataSourceId),
       enable_photon: cdktn.booleanToTerraform(this._enablePhoton),
       enable_serverless_compute: cdktn.booleanToTerraform(this._enableServerlessCompute),
       id: cdktn.stringToTerraform(this._id),
       instance_profile_arn: cdktn.stringToTerraform(this._instanceProfileArn),
       jdbc_url: cdktn.stringToTerraform(this._jdbcUrl),
+      max_dbu: cdktn.numberToTerraform(this._maxDbu),
       max_num_clusters: cdktn.numberToTerraform(this._maxNumClusters),
       min_num_clusters: cdktn.numberToTerraform(this._minNumClusters),
       name: cdktn.stringToTerraform(this._name),
       num_active_sessions: cdktn.numberToTerraform(this._numActiveSessions),
       num_clusters: cdktn.numberToTerraform(this._numClusters),
+      reyden_cluster_size_multiplier: cdktn.numberToTerraform(this._reydenClusterSizeMultiplier),
       spot_instance_policy: cdktn.stringToTerraform(this._spotInstancePolicy),
       state: cdktn.stringToTerraform(this._state),
+      statement_timeout: cdktn.numberToTerraform(this._statementTimeout),
       warehouse_type: cdktn.stringToTerraform(this._warehouseType),
       channel: dataDatabricksSqlWarehouseChannelToTerraform(this._channel.internalValue),
       health: dataDatabricksSqlWarehouseHealthToTerraform(this._health.internalValue),
@@ -1580,6 +1668,12 @@ export class DataDatabricksSqlWarehouse extends cdktn.TerraformDataSource {
       },
       creator_name: {
         value: cdktn.stringToHclTerraform(this._creatorName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      customer_version_label: {
+        value: cdktn.stringToHclTerraform(this._customerVersionLabel),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
@@ -1620,6 +1714,12 @@ export class DataDatabricksSqlWarehouse extends cdktn.TerraformDataSource {
         type: "simple",
         storageClassType: "string",
       },
+      max_dbu: {
+        value: cdktn.numberToHclTerraform(this._maxDbu),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
       max_num_clusters: {
         value: cdktn.numberToHclTerraform(this._maxNumClusters),
         isBlock: false,
@@ -1650,6 +1750,12 @@ export class DataDatabricksSqlWarehouse extends cdktn.TerraformDataSource {
         type: "simple",
         storageClassType: "number",
       },
+      reyden_cluster_size_multiplier: {
+        value: cdktn.numberToHclTerraform(this._reydenClusterSizeMultiplier),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
       spot_instance_policy: {
         value: cdktn.stringToHclTerraform(this._spotInstancePolicy),
         isBlock: false,
@@ -1661,6 +1767,12 @@ export class DataDatabricksSqlWarehouse extends cdktn.TerraformDataSource {
         isBlock: false,
         type: "simple",
         storageClassType: "string",
+      },
+      statement_timeout: {
+        value: cdktn.numberToHclTerraform(this._statementTimeout),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
       },
       warehouse_type: {
         value: cdktn.stringToHclTerraform(this._warehouseType),

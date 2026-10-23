@@ -14,6 +14,10 @@ export * as accountIamWorkspaceAssignmentV2 from './account-iam-workspace-assign
 export * as accountNetworkPolicy from './account-network-policy/index';
 export * as accountSettingUserPreferenceV2 from './account-setting-user-preference-v2/index';
 export * as accountSettingV2 from './account-setting-v2/index';
+export * as agentKitManagedMemoryEntry from './agent-kit-managed-memory-entry/index';
+export * as agentKitManagedMemoryStore from './agent-kit-managed-memory-store/index';
+export * as agentKitSession from './agent-kit-session/index';
+export * as agentKitSessionStore from './agent-kit-session-store/index';
 export * as aiGatewayMcpService from './ai-gateway-mcp-service/index';
 export * as aiGatewayModelProviderService from './ai-gateway-model-provider-service/index';
 export * as aiGatewayModelService from './ai-gateway-model-service/index';
@@ -200,6 +204,14 @@ export * as dataDatabricksAccountNetworkPolicies from './data-databricks-account
 export * as dataDatabricksAccountNetworkPolicy from './data-databricks-account-network-policy/index';
 export * as dataDatabricksAccountSettingUserPreferenceV2 from './data-databricks-account-setting-user-preference-v2/index';
 export * as dataDatabricksAccountSettingV2 from './data-databricks-account-setting-v2/index';
+export * as dataDatabricksAgentKitManagedMemoryEntries from './data-databricks-agent-kit-managed-memory-entries/index';
+export * as dataDatabricksAgentKitManagedMemoryEntry from './data-databricks-agent-kit-managed-memory-entry/index';
+export * as dataDatabricksAgentKitManagedMemoryStore from './data-databricks-agent-kit-managed-memory-store/index';
+export * as dataDatabricksAgentKitManagedMemoryStores from './data-databricks-agent-kit-managed-memory-stores/index';
+export * as dataDatabricksAgentKitSession from './data-databricks-agent-kit-session/index';
+export * as dataDatabricksAgentKitSessionStore from './data-databricks-agent-kit-session-store/index';
+export * as dataDatabricksAgentKitSessionStores from './data-databricks-agent-kit-session-stores/index';
+export * as dataDatabricksAgentKitSessions from './data-databricks-agent-kit-sessions/index';
 export * as dataDatabricksAiGatewayMcpService from './data-databricks-ai-gateway-mcp-service/index';
 export * as dataDatabricksAiGatewayMcpServices from './data-databricks-ai-gateway-mcp-services/index';
 export * as dataDatabricksAiGatewayModelProviderService from './data-databricks-ai-gateway-model-provider-service/index';

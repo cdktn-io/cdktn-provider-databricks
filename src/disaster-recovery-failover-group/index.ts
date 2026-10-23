@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/disaster_recovery_failover_group
+// https://registry.terraform.io/providers/databricks/databricks/1.139.0/docs/resources/disaster_recovery_failover_group
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,33 +13,87 @@ import * as cdktn from 'cdktn';
 
 export interface DisasterRecoveryFailoverGroupConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/disaster_recovery_failover_group#failover_group_id DisasterRecoveryFailoverGroup#failover_group_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.139.0/docs/resources/disaster_recovery_failover_group#failover_group_id DisasterRecoveryFailoverGroup#failover_group_id}
   */
   readonly failoverGroupId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/disaster_recovery_failover_group#initial_primary_region DisasterRecoveryFailoverGroup#initial_primary_region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.139.0/docs/resources/disaster_recovery_failover_group#initial_primary_region DisasterRecoveryFailoverGroup#initial_primary_region}
   */
   readonly initialPrimaryRegion: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/disaster_recovery_failover_group#parent DisasterRecoveryFailoverGroup#parent}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.139.0/docs/resources/disaster_recovery_failover_group#parent DisasterRecoveryFailoverGroup#parent}
   */
   readonly parent: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/disaster_recovery_failover_group#regions DisasterRecoveryFailoverGroup#regions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.139.0/docs/resources/disaster_recovery_failover_group#regions DisasterRecoveryFailoverGroup#regions}
   */
   readonly regions: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/disaster_recovery_failover_group#unity_catalog_assets DisasterRecoveryFailoverGroup#unity_catalog_assets}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.139.0/docs/resources/disaster_recovery_failover_group#unity_catalog_assets DisasterRecoveryFailoverGroup#unity_catalog_assets}
   */
   readonly unityCatalogAssets?: DisasterRecoveryFailoverGroupUnityCatalogAssets;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/disaster_recovery_failover_group#workspace_sets DisasterRecoveryFailoverGroup#workspace_sets}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.139.0/docs/resources/disaster_recovery_failover_group#workspace_sets DisasterRecoveryFailoverGroup#workspace_sets}
   */
   readonly workspaceSets: DisasterRecoveryFailoverGroupWorkspaceSets[] | cdktn.IResolvable;
 }
+export interface DisasterRecoveryFailoverGroupInitialReplicationProgress {
+}
+
+export function disasterRecoveryFailoverGroupInitialReplicationProgressToTerraform(struct?: DisasterRecoveryFailoverGroupInitialReplicationProgress): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  return {
+  }
+}
+
+
+export function disasterRecoveryFailoverGroupInitialReplicationProgressToHclTerraform(struct?: DisasterRecoveryFailoverGroupInitialReplicationProgress): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
+export class DisasterRecoveryFailoverGroupInitialReplicationProgressOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false);
+  }
+
+  public get internalValue(): DisasterRecoveryFailoverGroupInitialReplicationProgress | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DisasterRecoveryFailoverGroupInitialReplicationProgress | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
+
+  // completed - computed: true, optional: false, required: false
+  public get completed() {
+    return this.getNumberAttribute('completed');
+  }
+}
 export interface DisasterRecoveryFailoverGroupUnityCatalogAssetsCatalogs {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/disaster_recovery_failover_group#name DisasterRecoveryFailoverGroup#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.139.0/docs/resources/disaster_recovery_failover_group#name DisasterRecoveryFailoverGroup#name}
   */
   readonly name: string;
 }
@@ -152,11 +206,11 @@ export class DisasterRecoveryFailoverGroupUnityCatalogAssetsCatalogsList extends
 }
 export interface DisasterRecoveryFailoverGroupUnityCatalogAssetsLocationMappingsUriByRegion {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/disaster_recovery_failover_group#region DisasterRecoveryFailoverGroup#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.139.0/docs/resources/disaster_recovery_failover_group#region DisasterRecoveryFailoverGroup#region}
   */
   readonly region: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/disaster_recovery_failover_group#uri DisasterRecoveryFailoverGroup#uri}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.139.0/docs/resources/disaster_recovery_failover_group#uri DisasterRecoveryFailoverGroup#uri}
   */
   readonly uri: string;
 }
@@ -295,11 +349,11 @@ export class DisasterRecoveryFailoverGroupUnityCatalogAssetsLocationMappingsUriB
 }
 export interface DisasterRecoveryFailoverGroupUnityCatalogAssetsLocationMappings {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/disaster_recovery_failover_group#name DisasterRecoveryFailoverGroup#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.139.0/docs/resources/disaster_recovery_failover_group#name DisasterRecoveryFailoverGroup#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/disaster_recovery_failover_group#uri_by_region DisasterRecoveryFailoverGroup#uri_by_region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.139.0/docs/resources/disaster_recovery_failover_group#uri_by_region DisasterRecoveryFailoverGroup#uri_by_region}
   */
   readonly uriByRegion: DisasterRecoveryFailoverGroupUnityCatalogAssetsLocationMappingsUriByRegion[] | cdktn.IResolvable;
 }
@@ -438,15 +492,15 @@ export class DisasterRecoveryFailoverGroupUnityCatalogAssetsLocationMappingsList
 }
 export interface DisasterRecoveryFailoverGroupUnityCatalogAssets {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/disaster_recovery_failover_group#catalogs DisasterRecoveryFailoverGroup#catalogs}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.139.0/docs/resources/disaster_recovery_failover_group#catalogs DisasterRecoveryFailoverGroup#catalogs}
   */
   readonly catalogs: DisasterRecoveryFailoverGroupUnityCatalogAssetsCatalogs[] | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/disaster_recovery_failover_group#data_replication_workspace_set DisasterRecoveryFailoverGroup#data_replication_workspace_set}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.139.0/docs/resources/disaster_recovery_failover_group#data_replication_workspace_set DisasterRecoveryFailoverGroup#data_replication_workspace_set}
   */
   readonly dataReplicationWorkspaceSet: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/disaster_recovery_failover_group#location_mappings DisasterRecoveryFailoverGroup#location_mappings}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.139.0/docs/resources/disaster_recovery_failover_group#location_mappings DisasterRecoveryFailoverGroup#location_mappings}
   */
   readonly locationMappings?: DisasterRecoveryFailoverGroupUnityCatalogAssetsLocationMappings[] | cdktn.IResolvable;
 }
@@ -592,19 +646,19 @@ export class DisasterRecoveryFailoverGroupUnityCatalogAssetsOutputReference exte
 }
 export interface DisasterRecoveryFailoverGroupWorkspaceSets {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/disaster_recovery_failover_group#name DisasterRecoveryFailoverGroup#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.139.0/docs/resources/disaster_recovery_failover_group#name DisasterRecoveryFailoverGroup#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/disaster_recovery_failover_group#replicate_workspace_assets DisasterRecoveryFailoverGroup#replicate_workspace_assets}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.139.0/docs/resources/disaster_recovery_failover_group#replicate_workspace_assets DisasterRecoveryFailoverGroup#replicate_workspace_assets}
   */
   readonly replicateWorkspaceAssets?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/disaster_recovery_failover_group#stable_url_names DisasterRecoveryFailoverGroup#stable_url_names}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.139.0/docs/resources/disaster_recovery_failover_group#stable_url_names DisasterRecoveryFailoverGroup#stable_url_names}
   */
   readonly stableUrlNames?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/disaster_recovery_failover_group#workspace_ids DisasterRecoveryFailoverGroup#workspace_ids}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.139.0/docs/resources/disaster_recovery_failover_group#workspace_ids DisasterRecoveryFailoverGroup#workspace_ids}
   */
   readonly workspaceIds: string[];
 }
@@ -801,7 +855,7 @@ export class DisasterRecoveryFailoverGroupWorkspaceSetsList extends cdktn.Comple
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/disaster_recovery_failover_group databricks_disaster_recovery_failover_group}
+* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.139.0/docs/resources/disaster_recovery_failover_group databricks_disaster_recovery_failover_group}
 */
 export class DisasterRecoveryFailoverGroup extends cdktn.TerraformResource {
 
@@ -817,7 +871,7 @@ export class DisasterRecoveryFailoverGroup extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a DisasterRecoveryFailoverGroup resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DisasterRecoveryFailoverGroup to import
-  * @param importFromId The id of the existing DisasterRecoveryFailoverGroup that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/disaster_recovery_failover_group#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DisasterRecoveryFailoverGroup that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.139.0/docs/resources/disaster_recovery_failover_group#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DisasterRecoveryFailoverGroup to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -829,7 +883,7 @@ export class DisasterRecoveryFailoverGroup extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/disaster_recovery_failover_group databricks_disaster_recovery_failover_group} Resource
+  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.139.0/docs/resources/disaster_recovery_failover_group databricks_disaster_recovery_failover_group} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -840,7 +894,7 @@ export class DisasterRecoveryFailoverGroup extends cdktn.TerraformResource {
       terraformResourceType: 'databricks_disaster_recovery_failover_group',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '1.138.0',
+        providerVersion: '1.139.0',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,
@@ -891,6 +945,11 @@ export class DisasterRecoveryFailoverGroup extends cdktn.TerraformResource {
     return this._failoverGroupId;
   }
 
+  // has_replication_point_blocking_errors - computed: true, optional: false, required: false
+  public get hasReplicationPointBlockingErrors() {
+    return this.getBooleanAttribute('has_replication_point_blocking_errors');
+  }
+
   // initial_primary_region - computed: false, optional: false, required: true
   private _initialPrimaryRegion?: string; 
   public get initialPrimaryRegion() {
@@ -902,6 +961,12 @@ export class DisasterRecoveryFailoverGroup extends cdktn.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get initialPrimaryRegionInput() {
     return this._initialPrimaryRegion;
+  }
+
+  // initial_replication_progress - computed: true, optional: false, required: false
+  private _initialReplicationProgress = new DisasterRecoveryFailoverGroupInitialReplicationProgressOutputReference(this, "initial_replication_progress");
+  public get initialReplicationProgress() {
+    return this._initialReplicationProgress;
   }
 
   // name - computed: true, optional: false, required: false
