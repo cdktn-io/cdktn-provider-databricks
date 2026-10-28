@@ -4,7 +4,7 @@
 
 ### NotificationDestination <a name="NotificationDestination" id="@cdktn/provider-databricks.notificationDestination.NotificationDestination"></a>
 
-Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/notification_destination databricks_notification_destination}.
+Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/notification_destination databricks_notification_destination}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.notificationDestination.NotificationDestination.Initializer"></a>
 
@@ -38,10 +38,10 @@ NotificationDestination.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktn/provider-databricks.notificationDestination.NotificationDestination.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>io.cdktn.cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.notificationDestination.NotificationDestination.Initializer.parameter.provider">provider</a></code> | <code>io.cdktn.cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.notificationDestination.NotificationDestination.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktn/provider-databricks.notificationDestination.NotificationDestination.Initializer.parameter.displayName">displayName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/notification_destination#display_name NotificationDestination#display_name}. |
+| <code><a href="#@cdktn/provider-databricks.notificationDestination.NotificationDestination.Initializer.parameter.displayName">displayName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/notification_destination#display_name NotificationDestination#display_name}. |
 | <code><a href="#@cdktn/provider-databricks.notificationDestination.NotificationDestination.Initializer.parameter.config">config</a></code> | <code><a href="#@cdktn/provider-databricks.notificationDestination.NotificationDestinationConfigA">NotificationDestinationConfigA</a></code> | config block. |
-| <code><a href="#@cdktn/provider-databricks.notificationDestination.NotificationDestination.Initializer.parameter.destinationType">destinationType</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/notification_destination#destination_type NotificationDestination#destination_type}. |
-| <code><a href="#@cdktn/provider-databricks.notificationDestination.NotificationDestination.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/notification_destination#id NotificationDestination#id}. |
+| <code><a href="#@cdktn/provider-databricks.notificationDestination.NotificationDestination.Initializer.parameter.destinationType">destinationType</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/notification_destination#destination_type NotificationDestination#destination_type}. |
+| <code><a href="#@cdktn/provider-databricks.notificationDestination.NotificationDestination.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/notification_destination#id NotificationDestination#id}. |
 | <code><a href="#@cdktn/provider-databricks.notificationDestination.NotificationDestination.Initializer.parameter.providerConfig">providerConfig</a></code> | <code><a href="#@cdktn/provider-databricks.notificationDestination.NotificationDestinationProviderConfig">NotificationDestinationProviderConfig</a></code> | provider_config block. |
 
 ---
@@ -110,7 +110,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/notification_destination#display_name NotificationDestination#display_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/notification_destination#display_name NotificationDestination#display_name}.
 
 ---
 
@@ -120,7 +120,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/notification_destination#config NotificationDestination#config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/notification_destination#config NotificationDestination#config}
 
 ---
 
@@ -128,7 +128,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/notification_destination#destination_type NotificationDestination#destination_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/notification_destination#destination_type NotificationDestination#destination_type}.
 
 ---
 
@@ -136,7 +136,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/notification_destination#id NotificationDestination#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/notification_destination#id NotificationDestination#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -149,7 +149,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 provider_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/notification_destination#provider_config NotificationDestination#provider_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/notification_destination#provider_config NotificationDestination#provider_config}
 
 ---
 
@@ -652,7 +652,7 @@ The construct id used in the generated config for the NotificationDestination to
 
 The id of the existing NotificationDestination that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/notification_destination#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/notification_destination#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -991,10 +991,10 @@ NotificationDestinationConfig.builder()
 | <code><a href="#@cdktn/provider-databricks.notificationDestination.NotificationDestinationConfig.property.lifecycle">lifecycle</a></code> | <code>io.cdktn.cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.notificationDestination.NotificationDestinationConfig.property.provider">provider</a></code> | <code>io.cdktn.cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.notificationDestination.NotificationDestinationConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktn/provider-databricks.notificationDestination.NotificationDestinationConfig.property.displayName">displayName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/notification_destination#display_name NotificationDestination#display_name}. |
+| <code><a href="#@cdktn/provider-databricks.notificationDestination.NotificationDestinationConfig.property.displayName">displayName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/notification_destination#display_name NotificationDestination#display_name}. |
 | <code><a href="#@cdktn/provider-databricks.notificationDestination.NotificationDestinationConfig.property.config">config</a></code> | <code><a href="#@cdktn/provider-databricks.notificationDestination.NotificationDestinationConfigA">NotificationDestinationConfigA</a></code> | config block. |
-| <code><a href="#@cdktn/provider-databricks.notificationDestination.NotificationDestinationConfig.property.destinationType">destinationType</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/notification_destination#destination_type NotificationDestination#destination_type}. |
-| <code><a href="#@cdktn/provider-databricks.notificationDestination.NotificationDestinationConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/notification_destination#id NotificationDestination#id}. |
+| <code><a href="#@cdktn/provider-databricks.notificationDestination.NotificationDestinationConfig.property.destinationType">destinationType</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/notification_destination#destination_type NotificationDestination#destination_type}. |
+| <code><a href="#@cdktn/provider-databricks.notificationDestination.NotificationDestinationConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/notification_destination#id NotificationDestination#id}. |
 | <code><a href="#@cdktn/provider-databricks.notificationDestination.NotificationDestinationConfig.property.providerConfig">providerConfig</a></code> | <code><a href="#@cdktn/provider-databricks.notificationDestination.NotificationDestinationProviderConfig">NotificationDestinationProviderConfig</a></code> | provider_config block. |
 
 ---
@@ -1077,7 +1077,7 @@ public java.lang.String getDisplayName();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/notification_destination#display_name NotificationDestination#display_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/notification_destination#display_name NotificationDestination#display_name}.
 
 ---
 
@@ -1091,7 +1091,7 @@ public NotificationDestinationConfigA getConfig();
 
 config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/notification_destination#config NotificationDestination#config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/notification_destination#config NotificationDestination#config}
 
 ---
 
@@ -1103,7 +1103,7 @@ public java.lang.String getDestinationType();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/notification_destination#destination_type NotificationDestination#destination_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/notification_destination#destination_type NotificationDestination#destination_type}.
 
 ---
 
@@ -1115,7 +1115,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/notification_destination#id NotificationDestination#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/notification_destination#id NotificationDestination#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1132,7 +1132,7 @@ public NotificationDestinationProviderConfig getProviderConfig();
 
 provider_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/notification_destination#provider_config NotificationDestination#provider_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/notification_destination#provider_config NotificationDestination#provider_config}
 
 ---
 
@@ -1144,6 +1144,8 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 import io.cdktn.providers.databricks.notification_destination.NotificationDestinationConfigA;
 
 NotificationDestinationConfigA.builder()
+//  .databricksAppSlack(NotificationDestinationConfigDatabricksAppSlack)
+//  .databricksAppTeams(NotificationDestinationConfigDatabricksAppTeams)
 //  .email(NotificationDestinationConfigEmail)
 //  .genericWebhook(NotificationDestinationConfigGenericWebhook)
 //  .microsoftTeams(NotificationDestinationConfigMicrosoftTeams)
@@ -1156,11 +1158,41 @@ NotificationDestinationConfigA.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
+| <code><a href="#@cdktn/provider-databricks.notificationDestination.NotificationDestinationConfigA.property.databricksAppSlack">databricksAppSlack</a></code> | <code><a href="#@cdktn/provider-databricks.notificationDestination.NotificationDestinationConfigDatabricksAppSlack">NotificationDestinationConfigDatabricksAppSlack</a></code> | databricks_app_slack block. |
+| <code><a href="#@cdktn/provider-databricks.notificationDestination.NotificationDestinationConfigA.property.databricksAppTeams">databricksAppTeams</a></code> | <code><a href="#@cdktn/provider-databricks.notificationDestination.NotificationDestinationConfigDatabricksAppTeams">NotificationDestinationConfigDatabricksAppTeams</a></code> | databricks_app_teams block. |
 | <code><a href="#@cdktn/provider-databricks.notificationDestination.NotificationDestinationConfigA.property.email">email</a></code> | <code><a href="#@cdktn/provider-databricks.notificationDestination.NotificationDestinationConfigEmail">NotificationDestinationConfigEmail</a></code> | email block. |
 | <code><a href="#@cdktn/provider-databricks.notificationDestination.NotificationDestinationConfigA.property.genericWebhook">genericWebhook</a></code> | <code><a href="#@cdktn/provider-databricks.notificationDestination.NotificationDestinationConfigGenericWebhook">NotificationDestinationConfigGenericWebhook</a></code> | generic_webhook block. |
 | <code><a href="#@cdktn/provider-databricks.notificationDestination.NotificationDestinationConfigA.property.microsoftTeams">microsoftTeams</a></code> | <code><a href="#@cdktn/provider-databricks.notificationDestination.NotificationDestinationConfigMicrosoftTeams">NotificationDestinationConfigMicrosoftTeams</a></code> | microsoft_teams block. |
 | <code><a href="#@cdktn/provider-databricks.notificationDestination.NotificationDestinationConfigA.property.pagerduty">pagerduty</a></code> | <code><a href="#@cdktn/provider-databricks.notificationDestination.NotificationDestinationConfigPagerduty">NotificationDestinationConfigPagerduty</a></code> | pagerduty block. |
 | <code><a href="#@cdktn/provider-databricks.notificationDestination.NotificationDestinationConfigA.property.slack">slack</a></code> | <code><a href="#@cdktn/provider-databricks.notificationDestination.NotificationDestinationConfigSlack">NotificationDestinationConfigSlack</a></code> | slack block. |
+
+---
+
+##### `databricksAppSlack`<sup>Optional</sup> <a name="databricksAppSlack" id="@cdktn/provider-databricks.notificationDestination.NotificationDestinationConfigA.property.databricksAppSlack"></a>
+
+```java
+public NotificationDestinationConfigDatabricksAppSlack getDatabricksAppSlack();
+```
+
+- *Type:* <a href="#@cdktn/provider-databricks.notificationDestination.NotificationDestinationConfigDatabricksAppSlack">NotificationDestinationConfigDatabricksAppSlack</a>
+
+databricks_app_slack block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/notification_destination#databricks_app_slack NotificationDestination#databricks_app_slack}
+
+---
+
+##### `databricksAppTeams`<sup>Optional</sup> <a name="databricksAppTeams" id="@cdktn/provider-databricks.notificationDestination.NotificationDestinationConfigA.property.databricksAppTeams"></a>
+
+```java
+public NotificationDestinationConfigDatabricksAppTeams getDatabricksAppTeams();
+```
+
+- *Type:* <a href="#@cdktn/provider-databricks.notificationDestination.NotificationDestinationConfigDatabricksAppTeams">NotificationDestinationConfigDatabricksAppTeams</a>
+
+databricks_app_teams block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/notification_destination#databricks_app_teams NotificationDestination#databricks_app_teams}
 
 ---
 
@@ -1174,7 +1206,7 @@ public NotificationDestinationConfigEmail getEmail();
 
 email block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/notification_destination#email NotificationDestination#email}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/notification_destination#email NotificationDestination#email}
 
 ---
 
@@ -1188,7 +1220,7 @@ public NotificationDestinationConfigGenericWebhook getGenericWebhook();
 
 generic_webhook block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/notification_destination#generic_webhook NotificationDestination#generic_webhook}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/notification_destination#generic_webhook NotificationDestination#generic_webhook}
 
 ---
 
@@ -1202,7 +1234,7 @@ public NotificationDestinationConfigMicrosoftTeams getMicrosoftTeams();
 
 microsoft_teams block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/notification_destination#microsoft_teams NotificationDestination#microsoft_teams}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/notification_destination#microsoft_teams NotificationDestination#microsoft_teams}
 
 ---
 
@@ -1216,7 +1248,7 @@ public NotificationDestinationConfigPagerduty getPagerduty();
 
 pagerduty block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/notification_destination#pagerduty NotificationDestination#pagerduty}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/notification_destination#pagerduty NotificationDestination#pagerduty}
 
 ---
 
@@ -1230,7 +1262,183 @@ public NotificationDestinationConfigSlack getSlack();
 
 slack block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/notification_destination#slack NotificationDestination#slack}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/notification_destination#slack NotificationDestination#slack}
+
+---
+
+### NotificationDestinationConfigDatabricksAppSlack <a name="NotificationDestinationConfigDatabricksAppSlack" id="@cdktn/provider-databricks.notificationDestination.NotificationDestinationConfigDatabricksAppSlack"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-databricks.notificationDestination.NotificationDestinationConfigDatabricksAppSlack.Initializer"></a>
+
+```java
+import io.cdktn.providers.databricks.notification_destination.NotificationDestinationConfigDatabricksAppSlack;
+
+NotificationDestinationConfigDatabricksAppSlack.builder()
+//  .channelId(java.lang.String)
+//  .channelIdSet(java.lang.Boolean|IResolvable)
+//  .teamId(java.lang.String)
+//  .teamIdSet(java.lang.Boolean|IResolvable)
+    .build();
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-databricks.notificationDestination.NotificationDestinationConfigDatabricksAppSlack.property.channelId">channelId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/notification_destination#channel_id NotificationDestination#channel_id}. |
+| <code><a href="#@cdktn/provider-databricks.notificationDestination.NotificationDestinationConfigDatabricksAppSlack.property.channelIdSet">channelIdSet</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/notification_destination#channel_id_set NotificationDestination#channel_id_set}. |
+| <code><a href="#@cdktn/provider-databricks.notificationDestination.NotificationDestinationConfigDatabricksAppSlack.property.teamId">teamId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/notification_destination#team_id NotificationDestination#team_id}. |
+| <code><a href="#@cdktn/provider-databricks.notificationDestination.NotificationDestinationConfigDatabricksAppSlack.property.teamIdSet">teamIdSet</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/notification_destination#team_id_set NotificationDestination#team_id_set}. |
+
+---
+
+##### `channelId`<sup>Optional</sup> <a name="channelId" id="@cdktn/provider-databricks.notificationDestination.NotificationDestinationConfigDatabricksAppSlack.property.channelId"></a>
+
+```java
+public java.lang.String getChannelId();
+```
+
+- *Type:* java.lang.String
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/notification_destination#channel_id NotificationDestination#channel_id}.
+
+---
+
+##### `channelIdSet`<sup>Optional</sup> <a name="channelIdSet" id="@cdktn/provider-databricks.notificationDestination.NotificationDestinationConfigDatabricksAppSlack.property.channelIdSet"></a>
+
+```java
+public java.lang.Boolean|IResolvable getChannelIdSet();
+```
+
+- *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/notification_destination#channel_id_set NotificationDestination#channel_id_set}.
+
+---
+
+##### `teamId`<sup>Optional</sup> <a name="teamId" id="@cdktn/provider-databricks.notificationDestination.NotificationDestinationConfigDatabricksAppSlack.property.teamId"></a>
+
+```java
+public java.lang.String getTeamId();
+```
+
+- *Type:* java.lang.String
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/notification_destination#team_id NotificationDestination#team_id}.
+
+---
+
+##### `teamIdSet`<sup>Optional</sup> <a name="teamIdSet" id="@cdktn/provider-databricks.notificationDestination.NotificationDestinationConfigDatabricksAppSlack.property.teamIdSet"></a>
+
+```java
+public java.lang.Boolean|IResolvable getTeamIdSet();
+```
+
+- *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/notification_destination#team_id_set NotificationDestination#team_id_set}.
+
+---
+
+### NotificationDestinationConfigDatabricksAppTeams <a name="NotificationDestinationConfigDatabricksAppTeams" id="@cdktn/provider-databricks.notificationDestination.NotificationDestinationConfigDatabricksAppTeams"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-databricks.notificationDestination.NotificationDestinationConfigDatabricksAppTeams.Initializer"></a>
+
+```java
+import io.cdktn.providers.databricks.notification_destination.NotificationDestinationConfigDatabricksAppTeams;
+
+NotificationDestinationConfigDatabricksAppTeams.builder()
+//  .channelId(java.lang.String)
+//  .channelIdSet(java.lang.Boolean|IResolvable)
+//  .teamId(java.lang.String)
+//  .teamIdSet(java.lang.Boolean|IResolvable)
+//  .tenantId(java.lang.String)
+//  .tenantIdSet(java.lang.Boolean|IResolvable)
+    .build();
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-databricks.notificationDestination.NotificationDestinationConfigDatabricksAppTeams.property.channelId">channelId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/notification_destination#channel_id NotificationDestination#channel_id}. |
+| <code><a href="#@cdktn/provider-databricks.notificationDestination.NotificationDestinationConfigDatabricksAppTeams.property.channelIdSet">channelIdSet</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/notification_destination#channel_id_set NotificationDestination#channel_id_set}. |
+| <code><a href="#@cdktn/provider-databricks.notificationDestination.NotificationDestinationConfigDatabricksAppTeams.property.teamId">teamId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/notification_destination#team_id NotificationDestination#team_id}. |
+| <code><a href="#@cdktn/provider-databricks.notificationDestination.NotificationDestinationConfigDatabricksAppTeams.property.teamIdSet">teamIdSet</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/notification_destination#team_id_set NotificationDestination#team_id_set}. |
+| <code><a href="#@cdktn/provider-databricks.notificationDestination.NotificationDestinationConfigDatabricksAppTeams.property.tenantId">tenantId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/notification_destination#tenant_id NotificationDestination#tenant_id}. |
+| <code><a href="#@cdktn/provider-databricks.notificationDestination.NotificationDestinationConfigDatabricksAppTeams.property.tenantIdSet">tenantIdSet</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/notification_destination#tenant_id_set NotificationDestination#tenant_id_set}. |
+
+---
+
+##### `channelId`<sup>Optional</sup> <a name="channelId" id="@cdktn/provider-databricks.notificationDestination.NotificationDestinationConfigDatabricksAppTeams.property.channelId"></a>
+
+```java
+public java.lang.String getChannelId();
+```
+
+- *Type:* java.lang.String
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/notification_destination#channel_id NotificationDestination#channel_id}.
+
+---
+
+##### `channelIdSet`<sup>Optional</sup> <a name="channelIdSet" id="@cdktn/provider-databricks.notificationDestination.NotificationDestinationConfigDatabricksAppTeams.property.channelIdSet"></a>
+
+```java
+public java.lang.Boolean|IResolvable getChannelIdSet();
+```
+
+- *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/notification_destination#channel_id_set NotificationDestination#channel_id_set}.
+
+---
+
+##### `teamId`<sup>Optional</sup> <a name="teamId" id="@cdktn/provider-databricks.notificationDestination.NotificationDestinationConfigDatabricksAppTeams.property.teamId"></a>
+
+```java
+public java.lang.String getTeamId();
+```
+
+- *Type:* java.lang.String
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/notification_destination#team_id NotificationDestination#team_id}.
+
+---
+
+##### `teamIdSet`<sup>Optional</sup> <a name="teamIdSet" id="@cdktn/provider-databricks.notificationDestination.NotificationDestinationConfigDatabricksAppTeams.property.teamIdSet"></a>
+
+```java
+public java.lang.Boolean|IResolvable getTeamIdSet();
+```
+
+- *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/notification_destination#team_id_set NotificationDestination#team_id_set}.
+
+---
+
+##### `tenantId`<sup>Optional</sup> <a name="tenantId" id="@cdktn/provider-databricks.notificationDestination.NotificationDestinationConfigDatabricksAppTeams.property.tenantId"></a>
+
+```java
+public java.lang.String getTenantId();
+```
+
+- *Type:* java.lang.String
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/notification_destination#tenant_id NotificationDestination#tenant_id}.
+
+---
+
+##### `tenantIdSet`<sup>Optional</sup> <a name="tenantIdSet" id="@cdktn/provider-databricks.notificationDestination.NotificationDestinationConfigDatabricksAppTeams.property.tenantIdSet"></a>
+
+```java
+public java.lang.Boolean|IResolvable getTenantIdSet();
+```
+
+- *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/notification_destination#tenant_id_set NotificationDestination#tenant_id_set}.
 
 ---
 
@@ -1250,7 +1458,7 @@ NotificationDestinationConfigEmail.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.notificationDestination.NotificationDestinationConfigEmail.property.addresses">addresses</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/notification_destination#addresses NotificationDestination#addresses}. |
+| <code><a href="#@cdktn/provider-databricks.notificationDestination.NotificationDestinationConfigEmail.property.addresses">addresses</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/notification_destination#addresses NotificationDestination#addresses}. |
 
 ---
 
@@ -1262,7 +1470,7 @@ public java.util.List<java.lang.String> getAddresses();
 
 - *Type:* java.util.List<java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/notification_destination#addresses NotificationDestination#addresses}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/notification_destination#addresses NotificationDestination#addresses}.
 
 ---
 
@@ -1287,12 +1495,12 @@ NotificationDestinationConfigGenericWebhook.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.notificationDestination.NotificationDestinationConfigGenericWebhook.property.password">password</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/notification_destination#password NotificationDestination#password}. |
-| <code><a href="#@cdktn/provider-databricks.notificationDestination.NotificationDestinationConfigGenericWebhook.property.passwordSet">passwordSet</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/notification_destination#password_set NotificationDestination#password_set}. |
-| <code><a href="#@cdktn/provider-databricks.notificationDestination.NotificationDestinationConfigGenericWebhook.property.url">url</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/notification_destination#url NotificationDestination#url}. |
-| <code><a href="#@cdktn/provider-databricks.notificationDestination.NotificationDestinationConfigGenericWebhook.property.urlSet">urlSet</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/notification_destination#url_set NotificationDestination#url_set}. |
-| <code><a href="#@cdktn/provider-databricks.notificationDestination.NotificationDestinationConfigGenericWebhook.property.username">username</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/notification_destination#username NotificationDestination#username}. |
-| <code><a href="#@cdktn/provider-databricks.notificationDestination.NotificationDestinationConfigGenericWebhook.property.usernameSet">usernameSet</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/notification_destination#username_set NotificationDestination#username_set}. |
+| <code><a href="#@cdktn/provider-databricks.notificationDestination.NotificationDestinationConfigGenericWebhook.property.password">password</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/notification_destination#password NotificationDestination#password}. |
+| <code><a href="#@cdktn/provider-databricks.notificationDestination.NotificationDestinationConfigGenericWebhook.property.passwordSet">passwordSet</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/notification_destination#password_set NotificationDestination#password_set}. |
+| <code><a href="#@cdktn/provider-databricks.notificationDestination.NotificationDestinationConfigGenericWebhook.property.url">url</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/notification_destination#url NotificationDestination#url}. |
+| <code><a href="#@cdktn/provider-databricks.notificationDestination.NotificationDestinationConfigGenericWebhook.property.urlSet">urlSet</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/notification_destination#url_set NotificationDestination#url_set}. |
+| <code><a href="#@cdktn/provider-databricks.notificationDestination.NotificationDestinationConfigGenericWebhook.property.username">username</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/notification_destination#username NotificationDestination#username}. |
+| <code><a href="#@cdktn/provider-databricks.notificationDestination.NotificationDestinationConfigGenericWebhook.property.usernameSet">usernameSet</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/notification_destination#username_set NotificationDestination#username_set}. |
 
 ---
 
@@ -1304,7 +1512,7 @@ public java.lang.String getPassword();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/notification_destination#password NotificationDestination#password}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/notification_destination#password NotificationDestination#password}.
 
 ---
 
@@ -1316,7 +1524,7 @@ public java.lang.Boolean|IResolvable getPasswordSet();
 
 - *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/notification_destination#password_set NotificationDestination#password_set}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/notification_destination#password_set NotificationDestination#password_set}.
 
 ---
 
@@ -1328,7 +1536,7 @@ public java.lang.String getUrl();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/notification_destination#url NotificationDestination#url}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/notification_destination#url NotificationDestination#url}.
 
 ---
 
@@ -1340,7 +1548,7 @@ public java.lang.Boolean|IResolvable getUrlSet();
 
 - *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/notification_destination#url_set NotificationDestination#url_set}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/notification_destination#url_set NotificationDestination#url_set}.
 
 ---
 
@@ -1352,7 +1560,7 @@ public java.lang.String getUsername();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/notification_destination#username NotificationDestination#username}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/notification_destination#username NotificationDestination#username}.
 
 ---
 
@@ -1364,7 +1572,7 @@ public java.lang.Boolean|IResolvable getUsernameSet();
 
 - *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/notification_destination#username_set NotificationDestination#username_set}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/notification_destination#username_set NotificationDestination#username_set}.
 
 ---
 
@@ -1393,16 +1601,16 @@ NotificationDestinationConfigMicrosoftTeams.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.notificationDestination.NotificationDestinationConfigMicrosoftTeams.property.appId">appId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/notification_destination#app_id NotificationDestination#app_id}. |
-| <code><a href="#@cdktn/provider-databricks.notificationDestination.NotificationDestinationConfigMicrosoftTeams.property.appIdSet">appIdSet</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/notification_destination#app_id_set NotificationDestination#app_id_set}. |
-| <code><a href="#@cdktn/provider-databricks.notificationDestination.NotificationDestinationConfigMicrosoftTeams.property.authSecret">authSecret</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/notification_destination#auth_secret NotificationDestination#auth_secret}. |
-| <code><a href="#@cdktn/provider-databricks.notificationDestination.NotificationDestinationConfigMicrosoftTeams.property.authSecretSet">authSecretSet</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/notification_destination#auth_secret_set NotificationDestination#auth_secret_set}. |
-| <code><a href="#@cdktn/provider-databricks.notificationDestination.NotificationDestinationConfigMicrosoftTeams.property.channelUrl">channelUrl</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/notification_destination#channel_url NotificationDestination#channel_url}. |
-| <code><a href="#@cdktn/provider-databricks.notificationDestination.NotificationDestinationConfigMicrosoftTeams.property.channelUrlSet">channelUrlSet</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/notification_destination#channel_url_set NotificationDestination#channel_url_set}. |
-| <code><a href="#@cdktn/provider-databricks.notificationDestination.NotificationDestinationConfigMicrosoftTeams.property.tenantId">tenantId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/notification_destination#tenant_id NotificationDestination#tenant_id}. |
-| <code><a href="#@cdktn/provider-databricks.notificationDestination.NotificationDestinationConfigMicrosoftTeams.property.tenantIdSet">tenantIdSet</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/notification_destination#tenant_id_set NotificationDestination#tenant_id_set}. |
-| <code><a href="#@cdktn/provider-databricks.notificationDestination.NotificationDestinationConfigMicrosoftTeams.property.url">url</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/notification_destination#url NotificationDestination#url}. |
-| <code><a href="#@cdktn/provider-databricks.notificationDestination.NotificationDestinationConfigMicrosoftTeams.property.urlSet">urlSet</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/notification_destination#url_set NotificationDestination#url_set}. |
+| <code><a href="#@cdktn/provider-databricks.notificationDestination.NotificationDestinationConfigMicrosoftTeams.property.appId">appId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/notification_destination#app_id NotificationDestination#app_id}. |
+| <code><a href="#@cdktn/provider-databricks.notificationDestination.NotificationDestinationConfigMicrosoftTeams.property.appIdSet">appIdSet</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/notification_destination#app_id_set NotificationDestination#app_id_set}. |
+| <code><a href="#@cdktn/provider-databricks.notificationDestination.NotificationDestinationConfigMicrosoftTeams.property.authSecret">authSecret</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/notification_destination#auth_secret NotificationDestination#auth_secret}. |
+| <code><a href="#@cdktn/provider-databricks.notificationDestination.NotificationDestinationConfigMicrosoftTeams.property.authSecretSet">authSecretSet</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/notification_destination#auth_secret_set NotificationDestination#auth_secret_set}. |
+| <code><a href="#@cdktn/provider-databricks.notificationDestination.NotificationDestinationConfigMicrosoftTeams.property.channelUrl">channelUrl</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/notification_destination#channel_url NotificationDestination#channel_url}. |
+| <code><a href="#@cdktn/provider-databricks.notificationDestination.NotificationDestinationConfigMicrosoftTeams.property.channelUrlSet">channelUrlSet</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/notification_destination#channel_url_set NotificationDestination#channel_url_set}. |
+| <code><a href="#@cdktn/provider-databricks.notificationDestination.NotificationDestinationConfigMicrosoftTeams.property.tenantId">tenantId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/notification_destination#tenant_id NotificationDestination#tenant_id}. |
+| <code><a href="#@cdktn/provider-databricks.notificationDestination.NotificationDestinationConfigMicrosoftTeams.property.tenantIdSet">tenantIdSet</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/notification_destination#tenant_id_set NotificationDestination#tenant_id_set}. |
+| <code><a href="#@cdktn/provider-databricks.notificationDestination.NotificationDestinationConfigMicrosoftTeams.property.url">url</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/notification_destination#url NotificationDestination#url}. |
+| <code><a href="#@cdktn/provider-databricks.notificationDestination.NotificationDestinationConfigMicrosoftTeams.property.urlSet">urlSet</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/notification_destination#url_set NotificationDestination#url_set}. |
 
 ---
 
@@ -1414,7 +1622,7 @@ public java.lang.String getAppId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/notification_destination#app_id NotificationDestination#app_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/notification_destination#app_id NotificationDestination#app_id}.
 
 ---
 
@@ -1426,7 +1634,7 @@ public java.lang.Boolean|IResolvable getAppIdSet();
 
 - *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/notification_destination#app_id_set NotificationDestination#app_id_set}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/notification_destination#app_id_set NotificationDestination#app_id_set}.
 
 ---
 
@@ -1438,7 +1646,7 @@ public java.lang.String getAuthSecret();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/notification_destination#auth_secret NotificationDestination#auth_secret}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/notification_destination#auth_secret NotificationDestination#auth_secret}.
 
 ---
 
@@ -1450,7 +1658,7 @@ public java.lang.Boolean|IResolvable getAuthSecretSet();
 
 - *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/notification_destination#auth_secret_set NotificationDestination#auth_secret_set}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/notification_destination#auth_secret_set NotificationDestination#auth_secret_set}.
 
 ---
 
@@ -1462,7 +1670,7 @@ public java.lang.String getChannelUrl();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/notification_destination#channel_url NotificationDestination#channel_url}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/notification_destination#channel_url NotificationDestination#channel_url}.
 
 ---
 
@@ -1474,7 +1682,7 @@ public java.lang.Boolean|IResolvable getChannelUrlSet();
 
 - *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/notification_destination#channel_url_set NotificationDestination#channel_url_set}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/notification_destination#channel_url_set NotificationDestination#channel_url_set}.
 
 ---
 
@@ -1486,7 +1694,7 @@ public java.lang.String getTenantId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/notification_destination#tenant_id NotificationDestination#tenant_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/notification_destination#tenant_id NotificationDestination#tenant_id}.
 
 ---
 
@@ -1498,7 +1706,7 @@ public java.lang.Boolean|IResolvable getTenantIdSet();
 
 - *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/notification_destination#tenant_id_set NotificationDestination#tenant_id_set}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/notification_destination#tenant_id_set NotificationDestination#tenant_id_set}.
 
 ---
 
@@ -1510,7 +1718,7 @@ public java.lang.String getUrl();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/notification_destination#url NotificationDestination#url}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/notification_destination#url NotificationDestination#url}.
 
 ---
 
@@ -1522,7 +1730,7 @@ public java.lang.Boolean|IResolvable getUrlSet();
 
 - *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/notification_destination#url_set NotificationDestination#url_set}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/notification_destination#url_set NotificationDestination#url_set}.
 
 ---
 
@@ -1543,8 +1751,8 @@ NotificationDestinationConfigPagerduty.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.notificationDestination.NotificationDestinationConfigPagerduty.property.integrationKey">integrationKey</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/notification_destination#integration_key NotificationDestination#integration_key}. |
-| <code><a href="#@cdktn/provider-databricks.notificationDestination.NotificationDestinationConfigPagerduty.property.integrationKeySet">integrationKeySet</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/notification_destination#integration_key_set NotificationDestination#integration_key_set}. |
+| <code><a href="#@cdktn/provider-databricks.notificationDestination.NotificationDestinationConfigPagerduty.property.integrationKey">integrationKey</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/notification_destination#integration_key NotificationDestination#integration_key}. |
+| <code><a href="#@cdktn/provider-databricks.notificationDestination.NotificationDestinationConfigPagerduty.property.integrationKeySet">integrationKeySet</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/notification_destination#integration_key_set NotificationDestination#integration_key_set}. |
 
 ---
 
@@ -1556,7 +1764,7 @@ public java.lang.String getIntegrationKey();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/notification_destination#integration_key NotificationDestination#integration_key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/notification_destination#integration_key NotificationDestination#integration_key}.
 
 ---
 
@@ -1568,7 +1776,7 @@ public java.lang.Boolean|IResolvable getIntegrationKeySet();
 
 - *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/notification_destination#integration_key_set NotificationDestination#integration_key_set}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/notification_destination#integration_key_set NotificationDestination#integration_key_set}.
 
 ---
 
@@ -1593,12 +1801,12 @@ NotificationDestinationConfigSlack.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.notificationDestination.NotificationDestinationConfigSlack.property.channelId">channelId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/notification_destination#channel_id NotificationDestination#channel_id}. |
-| <code><a href="#@cdktn/provider-databricks.notificationDestination.NotificationDestinationConfigSlack.property.channelIdSet">channelIdSet</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/notification_destination#channel_id_set NotificationDestination#channel_id_set}. |
-| <code><a href="#@cdktn/provider-databricks.notificationDestination.NotificationDestinationConfigSlack.property.oauthToken">oauthToken</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/notification_destination#oauth_token NotificationDestination#oauth_token}. |
-| <code><a href="#@cdktn/provider-databricks.notificationDestination.NotificationDestinationConfigSlack.property.oauthTokenSet">oauthTokenSet</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/notification_destination#oauth_token_set NotificationDestination#oauth_token_set}. |
-| <code><a href="#@cdktn/provider-databricks.notificationDestination.NotificationDestinationConfigSlack.property.url">url</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/notification_destination#url NotificationDestination#url}. |
-| <code><a href="#@cdktn/provider-databricks.notificationDestination.NotificationDestinationConfigSlack.property.urlSet">urlSet</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/notification_destination#url_set NotificationDestination#url_set}. |
+| <code><a href="#@cdktn/provider-databricks.notificationDestination.NotificationDestinationConfigSlack.property.channelId">channelId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/notification_destination#channel_id NotificationDestination#channel_id}. |
+| <code><a href="#@cdktn/provider-databricks.notificationDestination.NotificationDestinationConfigSlack.property.channelIdSet">channelIdSet</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/notification_destination#channel_id_set NotificationDestination#channel_id_set}. |
+| <code><a href="#@cdktn/provider-databricks.notificationDestination.NotificationDestinationConfigSlack.property.oauthToken">oauthToken</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/notification_destination#oauth_token NotificationDestination#oauth_token}. |
+| <code><a href="#@cdktn/provider-databricks.notificationDestination.NotificationDestinationConfigSlack.property.oauthTokenSet">oauthTokenSet</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/notification_destination#oauth_token_set NotificationDestination#oauth_token_set}. |
+| <code><a href="#@cdktn/provider-databricks.notificationDestination.NotificationDestinationConfigSlack.property.url">url</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/notification_destination#url NotificationDestination#url}. |
+| <code><a href="#@cdktn/provider-databricks.notificationDestination.NotificationDestinationConfigSlack.property.urlSet">urlSet</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/notification_destination#url_set NotificationDestination#url_set}. |
 
 ---
 
@@ -1610,7 +1818,7 @@ public java.lang.String getChannelId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/notification_destination#channel_id NotificationDestination#channel_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/notification_destination#channel_id NotificationDestination#channel_id}.
 
 ---
 
@@ -1622,7 +1830,7 @@ public java.lang.Boolean|IResolvable getChannelIdSet();
 
 - *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/notification_destination#channel_id_set NotificationDestination#channel_id_set}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/notification_destination#channel_id_set NotificationDestination#channel_id_set}.
 
 ---
 
@@ -1634,7 +1842,7 @@ public java.lang.String getOauthToken();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/notification_destination#oauth_token NotificationDestination#oauth_token}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/notification_destination#oauth_token NotificationDestination#oauth_token}.
 
 ---
 
@@ -1646,7 +1854,7 @@ public java.lang.Boolean|IResolvable getOauthTokenSet();
 
 - *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/notification_destination#oauth_token_set NotificationDestination#oauth_token_set}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/notification_destination#oauth_token_set NotificationDestination#oauth_token_set}.
 
 ---
 
@@ -1658,7 +1866,7 @@ public java.lang.String getUrl();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/notification_destination#url NotificationDestination#url}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/notification_destination#url NotificationDestination#url}.
 
 ---
 
@@ -1670,7 +1878,7 @@ public java.lang.Boolean|IResolvable getUrlSet();
 
 - *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/notification_destination#url_set NotificationDestination#url_set}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/notification_destination#url_set NotificationDestination#url_set}.
 
 ---
 
@@ -1690,7 +1898,7 @@ NotificationDestinationProviderConfig.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.notificationDestination.NotificationDestinationProviderConfig.property.workspaceId">workspaceId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/notification_destination#workspace_id NotificationDestination#workspace_id}. |
+| <code><a href="#@cdktn/provider-databricks.notificationDestination.NotificationDestinationProviderConfig.property.workspaceId">workspaceId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/notification_destination#workspace_id NotificationDestination#workspace_id}. |
 
 ---
 
@@ -1702,7 +1910,7 @@ public java.lang.String getWorkspaceId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/notification_destination#workspace_id NotificationDestination#workspace_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/notification_destination#workspace_id NotificationDestination#workspace_id}.
 
 ---
 
@@ -1758,11 +1966,15 @@ The attribute on the parent resource this class is referencing.
 | <code><a href="#@cdktn/provider-databricks.notificationDestination.NotificationDestinationConfigAOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.notificationDestination.NotificationDestinationConfigAOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktn/provider-databricks.notificationDestination.NotificationDestinationConfigAOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-databricks.notificationDestination.NotificationDestinationConfigAOutputReference.putDatabricksAppSlack">putDatabricksAppSlack</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.notificationDestination.NotificationDestinationConfigAOutputReference.putDatabricksAppTeams">putDatabricksAppTeams</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.notificationDestination.NotificationDestinationConfigAOutputReference.putEmail">putEmail</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.notificationDestination.NotificationDestinationConfigAOutputReference.putGenericWebhook">putGenericWebhook</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.notificationDestination.NotificationDestinationConfigAOutputReference.putMicrosoftTeams">putMicrosoftTeams</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.notificationDestination.NotificationDestinationConfigAOutputReference.putPagerduty">putPagerduty</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.notificationDestination.NotificationDestinationConfigAOutputReference.putSlack">putSlack</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.notificationDestination.NotificationDestinationConfigAOutputReference.resetDatabricksAppSlack">resetDatabricksAppSlack</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.notificationDestination.NotificationDestinationConfigAOutputReference.resetDatabricksAppTeams">resetDatabricksAppTeams</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.notificationDestination.NotificationDestinationConfigAOutputReference.resetEmail">resetEmail</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.notificationDestination.NotificationDestinationConfigAOutputReference.resetGenericWebhook">resetGenericWebhook</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.notificationDestination.NotificationDestinationConfigAOutputReference.resetMicrosoftTeams">resetMicrosoftTeams</a></code> | *No description.* |
@@ -1921,6 +2133,30 @@ Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
 
+##### `putDatabricksAppSlack` <a name="putDatabricksAppSlack" id="@cdktn/provider-databricks.notificationDestination.NotificationDestinationConfigAOutputReference.putDatabricksAppSlack"></a>
+
+```java
+public void putDatabricksAppSlack(NotificationDestinationConfigDatabricksAppSlack value)
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-databricks.notificationDestination.NotificationDestinationConfigAOutputReference.putDatabricksAppSlack.parameter.value"></a>
+
+- *Type:* <a href="#@cdktn/provider-databricks.notificationDestination.NotificationDestinationConfigDatabricksAppSlack">NotificationDestinationConfigDatabricksAppSlack</a>
+
+---
+
+##### `putDatabricksAppTeams` <a name="putDatabricksAppTeams" id="@cdktn/provider-databricks.notificationDestination.NotificationDestinationConfigAOutputReference.putDatabricksAppTeams"></a>
+
+```java
+public void putDatabricksAppTeams(NotificationDestinationConfigDatabricksAppTeams value)
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-databricks.notificationDestination.NotificationDestinationConfigAOutputReference.putDatabricksAppTeams.parameter.value"></a>
+
+- *Type:* <a href="#@cdktn/provider-databricks.notificationDestination.NotificationDestinationConfigDatabricksAppTeams">NotificationDestinationConfigDatabricksAppTeams</a>
+
+---
+
 ##### `putEmail` <a name="putEmail" id="@cdktn/provider-databricks.notificationDestination.NotificationDestinationConfigAOutputReference.putEmail"></a>
 
 ```java
@@ -1981,6 +2217,18 @@ public void putSlack(NotificationDestinationConfigSlack value)
 
 ---
 
+##### `resetDatabricksAppSlack` <a name="resetDatabricksAppSlack" id="@cdktn/provider-databricks.notificationDestination.NotificationDestinationConfigAOutputReference.resetDatabricksAppSlack"></a>
+
+```java
+public void resetDatabricksAppSlack()
+```
+
+##### `resetDatabricksAppTeams` <a name="resetDatabricksAppTeams" id="@cdktn/provider-databricks.notificationDestination.NotificationDestinationConfigAOutputReference.resetDatabricksAppTeams"></a>
+
+```java
+public void resetDatabricksAppTeams()
+```
+
 ##### `resetEmail` <a name="resetEmail" id="@cdktn/provider-databricks.notificationDestination.NotificationDestinationConfigAOutputReference.resetEmail"></a>
 
 ```java
@@ -2018,11 +2266,15 @@ public void resetSlack()
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-databricks.notificationDestination.NotificationDestinationConfigAOutputReference.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-databricks.notificationDestination.NotificationDestinationConfigAOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.notificationDestination.NotificationDestinationConfigAOutputReference.property.databricksAppSlack">databricksAppSlack</a></code> | <code><a href="#@cdktn/provider-databricks.notificationDestination.NotificationDestinationConfigDatabricksAppSlackOutputReference">NotificationDestinationConfigDatabricksAppSlackOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.notificationDestination.NotificationDestinationConfigAOutputReference.property.databricksAppTeams">databricksAppTeams</a></code> | <code><a href="#@cdktn/provider-databricks.notificationDestination.NotificationDestinationConfigDatabricksAppTeamsOutputReference">NotificationDestinationConfigDatabricksAppTeamsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.notificationDestination.NotificationDestinationConfigAOutputReference.property.email">email</a></code> | <code><a href="#@cdktn/provider-databricks.notificationDestination.NotificationDestinationConfigEmailOutputReference">NotificationDestinationConfigEmailOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.notificationDestination.NotificationDestinationConfigAOutputReference.property.genericWebhook">genericWebhook</a></code> | <code><a href="#@cdktn/provider-databricks.notificationDestination.NotificationDestinationConfigGenericWebhookOutputReference">NotificationDestinationConfigGenericWebhookOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.notificationDestination.NotificationDestinationConfigAOutputReference.property.microsoftTeams">microsoftTeams</a></code> | <code><a href="#@cdktn/provider-databricks.notificationDestination.NotificationDestinationConfigMicrosoftTeamsOutputReference">NotificationDestinationConfigMicrosoftTeamsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.notificationDestination.NotificationDestinationConfigAOutputReference.property.pagerduty">pagerduty</a></code> | <code><a href="#@cdktn/provider-databricks.notificationDestination.NotificationDestinationConfigPagerdutyOutputReference">NotificationDestinationConfigPagerdutyOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.notificationDestination.NotificationDestinationConfigAOutputReference.property.slack">slack</a></code> | <code><a href="#@cdktn/provider-databricks.notificationDestination.NotificationDestinationConfigSlackOutputReference">NotificationDestinationConfigSlackOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.notificationDestination.NotificationDestinationConfigAOutputReference.property.databricksAppSlackInput">databricksAppSlackInput</a></code> | <code><a href="#@cdktn/provider-databricks.notificationDestination.NotificationDestinationConfigDatabricksAppSlack">NotificationDestinationConfigDatabricksAppSlack</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.notificationDestination.NotificationDestinationConfigAOutputReference.property.databricksAppTeamsInput">databricksAppTeamsInput</a></code> | <code><a href="#@cdktn/provider-databricks.notificationDestination.NotificationDestinationConfigDatabricksAppTeams">NotificationDestinationConfigDatabricksAppTeams</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.notificationDestination.NotificationDestinationConfigAOutputReference.property.emailInput">emailInput</a></code> | <code><a href="#@cdktn/provider-databricks.notificationDestination.NotificationDestinationConfigEmail">NotificationDestinationConfigEmail</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.notificationDestination.NotificationDestinationConfigAOutputReference.property.genericWebhookInput">genericWebhookInput</a></code> | <code><a href="#@cdktn/provider-databricks.notificationDestination.NotificationDestinationConfigGenericWebhook">NotificationDestinationConfigGenericWebhook</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.notificationDestination.NotificationDestinationConfigAOutputReference.property.microsoftTeamsInput">microsoftTeamsInput</a></code> | <code><a href="#@cdktn/provider-databricks.notificationDestination.NotificationDestinationConfigMicrosoftTeams">NotificationDestinationConfigMicrosoftTeams</a></code> | *No description.* |
@@ -2053,6 +2305,26 @@ public java.lang.String getFqn();
 ```
 
 - *Type:* java.lang.String
+
+---
+
+##### `databricksAppSlack`<sup>Required</sup> <a name="databricksAppSlack" id="@cdktn/provider-databricks.notificationDestination.NotificationDestinationConfigAOutputReference.property.databricksAppSlack"></a>
+
+```java
+public NotificationDestinationConfigDatabricksAppSlackOutputReference getDatabricksAppSlack();
+```
+
+- *Type:* <a href="#@cdktn/provider-databricks.notificationDestination.NotificationDestinationConfigDatabricksAppSlackOutputReference">NotificationDestinationConfigDatabricksAppSlackOutputReference</a>
+
+---
+
+##### `databricksAppTeams`<sup>Required</sup> <a name="databricksAppTeams" id="@cdktn/provider-databricks.notificationDestination.NotificationDestinationConfigAOutputReference.property.databricksAppTeams"></a>
+
+```java
+public NotificationDestinationConfigDatabricksAppTeamsOutputReference getDatabricksAppTeams();
+```
+
+- *Type:* <a href="#@cdktn/provider-databricks.notificationDestination.NotificationDestinationConfigDatabricksAppTeamsOutputReference">NotificationDestinationConfigDatabricksAppTeamsOutputReference</a>
 
 ---
 
@@ -2103,6 +2375,26 @@ public NotificationDestinationConfigSlackOutputReference getSlack();
 ```
 
 - *Type:* <a href="#@cdktn/provider-databricks.notificationDestination.NotificationDestinationConfigSlackOutputReference">NotificationDestinationConfigSlackOutputReference</a>
+
+---
+
+##### `databricksAppSlackInput`<sup>Optional</sup> <a name="databricksAppSlackInput" id="@cdktn/provider-databricks.notificationDestination.NotificationDestinationConfigAOutputReference.property.databricksAppSlackInput"></a>
+
+```java
+public NotificationDestinationConfigDatabricksAppSlack getDatabricksAppSlackInput();
+```
+
+- *Type:* <a href="#@cdktn/provider-databricks.notificationDestination.NotificationDestinationConfigDatabricksAppSlack">NotificationDestinationConfigDatabricksAppSlack</a>
+
+---
+
+##### `databricksAppTeamsInput`<sup>Optional</sup> <a name="databricksAppTeamsInput" id="@cdktn/provider-databricks.notificationDestination.NotificationDestinationConfigAOutputReference.property.databricksAppTeamsInput"></a>
+
+```java
+public NotificationDestinationConfigDatabricksAppTeams getDatabricksAppTeamsInput();
+```
+
+- *Type:* <a href="#@cdktn/provider-databricks.notificationDestination.NotificationDestinationConfigDatabricksAppTeams">NotificationDestinationConfigDatabricksAppTeams</a>
 
 ---
 
@@ -2163,6 +2455,794 @@ public NotificationDestinationConfigA getInternalValue();
 ```
 
 - *Type:* <a href="#@cdktn/provider-databricks.notificationDestination.NotificationDestinationConfigA">NotificationDestinationConfigA</a>
+
+---
+
+
+### NotificationDestinationConfigDatabricksAppSlackOutputReference <a name="NotificationDestinationConfigDatabricksAppSlackOutputReference" id="@cdktn/provider-databricks.notificationDestination.NotificationDestinationConfigDatabricksAppSlackOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-databricks.notificationDestination.NotificationDestinationConfigDatabricksAppSlackOutputReference.Initializer"></a>
+
+```java
+import io.cdktn.providers.databricks.notification_destination.NotificationDestinationConfigDatabricksAppSlackOutputReference;
+
+new NotificationDestinationConfigDatabricksAppSlackOutputReference(IInterpolatingParent terraformResource, java.lang.String terraformAttribute);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-databricks.notificationDestination.NotificationDestinationConfigDatabricksAppSlackOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>io.cdktn.cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-databricks.notificationDestination.NotificationDestinationConfigDatabricksAppSlackOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>java.lang.String</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-databricks.notificationDestination.NotificationDestinationConfigDatabricksAppSlackOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* io.cdktn.cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.notificationDestination.NotificationDestinationConfigDatabricksAppSlackOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-databricks.notificationDestination.NotificationDestinationConfigDatabricksAppSlackOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.notificationDestination.NotificationDestinationConfigDatabricksAppSlackOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.notificationDestination.NotificationDestinationConfigDatabricksAppSlackOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.notificationDestination.NotificationDestinationConfigDatabricksAppSlackOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.notificationDestination.NotificationDestinationConfigDatabricksAppSlackOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.notificationDestination.NotificationDestinationConfigDatabricksAppSlackOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.notificationDestination.NotificationDestinationConfigDatabricksAppSlackOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.notificationDestination.NotificationDestinationConfigDatabricksAppSlackOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.notificationDestination.NotificationDestinationConfigDatabricksAppSlackOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.notificationDestination.NotificationDestinationConfigDatabricksAppSlackOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.notificationDestination.NotificationDestinationConfigDatabricksAppSlackOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.notificationDestination.NotificationDestinationConfigDatabricksAppSlackOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-databricks.notificationDestination.NotificationDestinationConfigDatabricksAppSlackOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-databricks.notificationDestination.NotificationDestinationConfigDatabricksAppSlackOutputReference.resetChannelId">resetChannelId</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.notificationDestination.NotificationDestinationConfigDatabricksAppSlackOutputReference.resetChannelIdSet">resetChannelIdSet</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.notificationDestination.NotificationDestinationConfigDatabricksAppSlackOutputReference.resetTeamId">resetTeamId</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.notificationDestination.NotificationDestinationConfigDatabricksAppSlackOutputReference.resetTeamIdSet">resetTeamIdSet</a></code> | *No description.* |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-databricks.notificationDestination.NotificationDestinationConfigDatabricksAppSlackOutputReference.computeFqn"></a>
+
+```java
+public java.lang.String computeFqn()
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktn/provider-databricks.notificationDestination.NotificationDestinationConfigDatabricksAppSlackOutputReference.getAnyMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Object> getAnyMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.notificationDestination.NotificationDestinationConfigDatabricksAppSlackOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktn/provider-databricks.notificationDestination.NotificationDestinationConfigDatabricksAppSlackOutputReference.getBooleanAttribute"></a>
+
+```java
+public IResolvable getBooleanAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.notificationDestination.NotificationDestinationConfigDatabricksAppSlackOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktn/provider-databricks.notificationDestination.NotificationDestinationConfigDatabricksAppSlackOutputReference.getBooleanMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Boolean> getBooleanMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.notificationDestination.NotificationDestinationConfigDatabricksAppSlackOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktn/provider-databricks.notificationDestination.NotificationDestinationConfigDatabricksAppSlackOutputReference.getListAttribute"></a>
+
+```java
+public java.util.List<java.lang.String> getListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.notificationDestination.NotificationDestinationConfigDatabricksAppSlackOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktn/provider-databricks.notificationDestination.NotificationDestinationConfigDatabricksAppSlackOutputReference.getNumberAttribute"></a>
+
+```java
+public java.lang.Number getNumberAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.notificationDestination.NotificationDestinationConfigDatabricksAppSlackOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktn/provider-databricks.notificationDestination.NotificationDestinationConfigDatabricksAppSlackOutputReference.getNumberListAttribute"></a>
+
+```java
+public java.util.List<java.lang.Number> getNumberListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.notificationDestination.NotificationDestinationConfigDatabricksAppSlackOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktn/provider-databricks.notificationDestination.NotificationDestinationConfigDatabricksAppSlackOutputReference.getNumberMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Number> getNumberMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.notificationDestination.NotificationDestinationConfigDatabricksAppSlackOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktn/provider-databricks.notificationDestination.NotificationDestinationConfigDatabricksAppSlackOutputReference.getStringAttribute"></a>
+
+```java
+public java.lang.String getStringAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.notificationDestination.NotificationDestinationConfigDatabricksAppSlackOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktn/provider-databricks.notificationDestination.NotificationDestinationConfigDatabricksAppSlackOutputReference.getStringMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.String> getStringMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.notificationDestination.NotificationDestinationConfigDatabricksAppSlackOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktn/provider-databricks.notificationDestination.NotificationDestinationConfigDatabricksAppSlackOutputReference.interpolationForAttribute"></a>
+
+```java
+public IResolvable interpolationForAttribute(java.lang.String property)
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-databricks.notificationDestination.NotificationDestinationConfigDatabricksAppSlackOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-databricks.notificationDestination.NotificationDestinationConfigDatabricksAppSlackOutputReference.resolve"></a>
+
+```java
+public java.lang.Object resolve(IResolveContext _context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-databricks.notificationDestination.NotificationDestinationConfigDatabricksAppSlackOutputReference.resolve.parameter._context"></a>
+
+- *Type:* io.cdktn.cdktn.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktn/provider-databricks.notificationDestination.NotificationDestinationConfigDatabricksAppSlackOutputReference.toString"></a>
+
+```java
+public java.lang.String toString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `resetChannelId` <a name="resetChannelId" id="@cdktn/provider-databricks.notificationDestination.NotificationDestinationConfigDatabricksAppSlackOutputReference.resetChannelId"></a>
+
+```java
+public void resetChannelId()
+```
+
+##### `resetChannelIdSet` <a name="resetChannelIdSet" id="@cdktn/provider-databricks.notificationDestination.NotificationDestinationConfigDatabricksAppSlackOutputReference.resetChannelIdSet"></a>
+
+```java
+public void resetChannelIdSet()
+```
+
+##### `resetTeamId` <a name="resetTeamId" id="@cdktn/provider-databricks.notificationDestination.NotificationDestinationConfigDatabricksAppSlackOutputReference.resetTeamId"></a>
+
+```java
+public void resetTeamId()
+```
+
+##### `resetTeamIdSet` <a name="resetTeamIdSet" id="@cdktn/provider-databricks.notificationDestination.NotificationDestinationConfigDatabricksAppSlackOutputReference.resetTeamIdSet"></a>
+
+```java
+public void resetTeamIdSet()
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-databricks.notificationDestination.NotificationDestinationConfigDatabricksAppSlackOutputReference.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-databricks.notificationDestination.NotificationDestinationConfigDatabricksAppSlackOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.notificationDestination.NotificationDestinationConfigDatabricksAppSlackOutputReference.property.channelIdInput">channelIdInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.notificationDestination.NotificationDestinationConfigDatabricksAppSlackOutputReference.property.channelIdSetInput">channelIdSetInput</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.notificationDestination.NotificationDestinationConfigDatabricksAppSlackOutputReference.property.teamIdInput">teamIdInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.notificationDestination.NotificationDestinationConfigDatabricksAppSlackOutputReference.property.teamIdSetInput">teamIdSetInput</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.notificationDestination.NotificationDestinationConfigDatabricksAppSlackOutputReference.property.channelId">channelId</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.notificationDestination.NotificationDestinationConfigDatabricksAppSlackOutputReference.property.channelIdSet">channelIdSet</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.notificationDestination.NotificationDestinationConfigDatabricksAppSlackOutputReference.property.teamId">teamId</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.notificationDestination.NotificationDestinationConfigDatabricksAppSlackOutputReference.property.teamIdSet">teamIdSet</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.notificationDestination.NotificationDestinationConfigDatabricksAppSlackOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-databricks.notificationDestination.NotificationDestinationConfigDatabricksAppSlack">NotificationDestinationConfigDatabricksAppSlack</a></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-databricks.notificationDestination.NotificationDestinationConfigDatabricksAppSlackOutputReference.property.creationStack"></a>
+
+```java
+public java.util.List<java.lang.String> getCreationStack();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-databricks.notificationDestination.NotificationDestinationConfigDatabricksAppSlackOutputReference.property.fqn"></a>
+
+```java
+public java.lang.String getFqn();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `channelIdInput`<sup>Optional</sup> <a name="channelIdInput" id="@cdktn/provider-databricks.notificationDestination.NotificationDestinationConfigDatabricksAppSlackOutputReference.property.channelIdInput"></a>
+
+```java
+public java.lang.String getChannelIdInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `channelIdSetInput`<sup>Optional</sup> <a name="channelIdSetInput" id="@cdktn/provider-databricks.notificationDestination.NotificationDestinationConfigDatabricksAppSlackOutputReference.property.channelIdSetInput"></a>
+
+```java
+public java.lang.Boolean|IResolvable getChannelIdSetInput();
+```
+
+- *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
+
+---
+
+##### `teamIdInput`<sup>Optional</sup> <a name="teamIdInput" id="@cdktn/provider-databricks.notificationDestination.NotificationDestinationConfigDatabricksAppSlackOutputReference.property.teamIdInput"></a>
+
+```java
+public java.lang.String getTeamIdInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `teamIdSetInput`<sup>Optional</sup> <a name="teamIdSetInput" id="@cdktn/provider-databricks.notificationDestination.NotificationDestinationConfigDatabricksAppSlackOutputReference.property.teamIdSetInput"></a>
+
+```java
+public java.lang.Boolean|IResolvable getTeamIdSetInput();
+```
+
+- *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
+
+---
+
+##### `channelId`<sup>Required</sup> <a name="channelId" id="@cdktn/provider-databricks.notificationDestination.NotificationDestinationConfigDatabricksAppSlackOutputReference.property.channelId"></a>
+
+```java
+public java.lang.String getChannelId();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `channelIdSet`<sup>Required</sup> <a name="channelIdSet" id="@cdktn/provider-databricks.notificationDestination.NotificationDestinationConfigDatabricksAppSlackOutputReference.property.channelIdSet"></a>
+
+```java
+public java.lang.Boolean|IResolvable getChannelIdSet();
+```
+
+- *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
+
+---
+
+##### `teamId`<sup>Required</sup> <a name="teamId" id="@cdktn/provider-databricks.notificationDestination.NotificationDestinationConfigDatabricksAppSlackOutputReference.property.teamId"></a>
+
+```java
+public java.lang.String getTeamId();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `teamIdSet`<sup>Required</sup> <a name="teamIdSet" id="@cdktn/provider-databricks.notificationDestination.NotificationDestinationConfigDatabricksAppSlackOutputReference.property.teamIdSet"></a>
+
+```java
+public java.lang.Boolean|IResolvable getTeamIdSet();
+```
+
+- *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-databricks.notificationDestination.NotificationDestinationConfigDatabricksAppSlackOutputReference.property.internalValue"></a>
+
+```java
+public NotificationDestinationConfigDatabricksAppSlack getInternalValue();
+```
+
+- *Type:* <a href="#@cdktn/provider-databricks.notificationDestination.NotificationDestinationConfigDatabricksAppSlack">NotificationDestinationConfigDatabricksAppSlack</a>
+
+---
+
+
+### NotificationDestinationConfigDatabricksAppTeamsOutputReference <a name="NotificationDestinationConfigDatabricksAppTeamsOutputReference" id="@cdktn/provider-databricks.notificationDestination.NotificationDestinationConfigDatabricksAppTeamsOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-databricks.notificationDestination.NotificationDestinationConfigDatabricksAppTeamsOutputReference.Initializer"></a>
+
+```java
+import io.cdktn.providers.databricks.notification_destination.NotificationDestinationConfigDatabricksAppTeamsOutputReference;
+
+new NotificationDestinationConfigDatabricksAppTeamsOutputReference(IInterpolatingParent terraformResource, java.lang.String terraformAttribute);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-databricks.notificationDestination.NotificationDestinationConfigDatabricksAppTeamsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>io.cdktn.cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-databricks.notificationDestination.NotificationDestinationConfigDatabricksAppTeamsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>java.lang.String</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-databricks.notificationDestination.NotificationDestinationConfigDatabricksAppTeamsOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* io.cdktn.cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.notificationDestination.NotificationDestinationConfigDatabricksAppTeamsOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-databricks.notificationDestination.NotificationDestinationConfigDatabricksAppTeamsOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.notificationDestination.NotificationDestinationConfigDatabricksAppTeamsOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.notificationDestination.NotificationDestinationConfigDatabricksAppTeamsOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.notificationDestination.NotificationDestinationConfigDatabricksAppTeamsOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.notificationDestination.NotificationDestinationConfigDatabricksAppTeamsOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.notificationDestination.NotificationDestinationConfigDatabricksAppTeamsOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.notificationDestination.NotificationDestinationConfigDatabricksAppTeamsOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.notificationDestination.NotificationDestinationConfigDatabricksAppTeamsOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.notificationDestination.NotificationDestinationConfigDatabricksAppTeamsOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.notificationDestination.NotificationDestinationConfigDatabricksAppTeamsOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.notificationDestination.NotificationDestinationConfigDatabricksAppTeamsOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.notificationDestination.NotificationDestinationConfigDatabricksAppTeamsOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-databricks.notificationDestination.NotificationDestinationConfigDatabricksAppTeamsOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-databricks.notificationDestination.NotificationDestinationConfigDatabricksAppTeamsOutputReference.resetChannelId">resetChannelId</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.notificationDestination.NotificationDestinationConfigDatabricksAppTeamsOutputReference.resetChannelIdSet">resetChannelIdSet</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.notificationDestination.NotificationDestinationConfigDatabricksAppTeamsOutputReference.resetTeamId">resetTeamId</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.notificationDestination.NotificationDestinationConfigDatabricksAppTeamsOutputReference.resetTeamIdSet">resetTeamIdSet</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.notificationDestination.NotificationDestinationConfigDatabricksAppTeamsOutputReference.resetTenantId">resetTenantId</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.notificationDestination.NotificationDestinationConfigDatabricksAppTeamsOutputReference.resetTenantIdSet">resetTenantIdSet</a></code> | *No description.* |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-databricks.notificationDestination.NotificationDestinationConfigDatabricksAppTeamsOutputReference.computeFqn"></a>
+
+```java
+public java.lang.String computeFqn()
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktn/provider-databricks.notificationDestination.NotificationDestinationConfigDatabricksAppTeamsOutputReference.getAnyMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Object> getAnyMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.notificationDestination.NotificationDestinationConfigDatabricksAppTeamsOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktn/provider-databricks.notificationDestination.NotificationDestinationConfigDatabricksAppTeamsOutputReference.getBooleanAttribute"></a>
+
+```java
+public IResolvable getBooleanAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.notificationDestination.NotificationDestinationConfigDatabricksAppTeamsOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktn/provider-databricks.notificationDestination.NotificationDestinationConfigDatabricksAppTeamsOutputReference.getBooleanMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Boolean> getBooleanMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.notificationDestination.NotificationDestinationConfigDatabricksAppTeamsOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktn/provider-databricks.notificationDestination.NotificationDestinationConfigDatabricksAppTeamsOutputReference.getListAttribute"></a>
+
+```java
+public java.util.List<java.lang.String> getListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.notificationDestination.NotificationDestinationConfigDatabricksAppTeamsOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktn/provider-databricks.notificationDestination.NotificationDestinationConfigDatabricksAppTeamsOutputReference.getNumberAttribute"></a>
+
+```java
+public java.lang.Number getNumberAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.notificationDestination.NotificationDestinationConfigDatabricksAppTeamsOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktn/provider-databricks.notificationDestination.NotificationDestinationConfigDatabricksAppTeamsOutputReference.getNumberListAttribute"></a>
+
+```java
+public java.util.List<java.lang.Number> getNumberListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.notificationDestination.NotificationDestinationConfigDatabricksAppTeamsOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktn/provider-databricks.notificationDestination.NotificationDestinationConfigDatabricksAppTeamsOutputReference.getNumberMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Number> getNumberMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.notificationDestination.NotificationDestinationConfigDatabricksAppTeamsOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktn/provider-databricks.notificationDestination.NotificationDestinationConfigDatabricksAppTeamsOutputReference.getStringAttribute"></a>
+
+```java
+public java.lang.String getStringAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.notificationDestination.NotificationDestinationConfigDatabricksAppTeamsOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktn/provider-databricks.notificationDestination.NotificationDestinationConfigDatabricksAppTeamsOutputReference.getStringMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.String> getStringMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.notificationDestination.NotificationDestinationConfigDatabricksAppTeamsOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktn/provider-databricks.notificationDestination.NotificationDestinationConfigDatabricksAppTeamsOutputReference.interpolationForAttribute"></a>
+
+```java
+public IResolvable interpolationForAttribute(java.lang.String property)
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-databricks.notificationDestination.NotificationDestinationConfigDatabricksAppTeamsOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-databricks.notificationDestination.NotificationDestinationConfigDatabricksAppTeamsOutputReference.resolve"></a>
+
+```java
+public java.lang.Object resolve(IResolveContext _context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-databricks.notificationDestination.NotificationDestinationConfigDatabricksAppTeamsOutputReference.resolve.parameter._context"></a>
+
+- *Type:* io.cdktn.cdktn.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktn/provider-databricks.notificationDestination.NotificationDestinationConfigDatabricksAppTeamsOutputReference.toString"></a>
+
+```java
+public java.lang.String toString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `resetChannelId` <a name="resetChannelId" id="@cdktn/provider-databricks.notificationDestination.NotificationDestinationConfigDatabricksAppTeamsOutputReference.resetChannelId"></a>
+
+```java
+public void resetChannelId()
+```
+
+##### `resetChannelIdSet` <a name="resetChannelIdSet" id="@cdktn/provider-databricks.notificationDestination.NotificationDestinationConfigDatabricksAppTeamsOutputReference.resetChannelIdSet"></a>
+
+```java
+public void resetChannelIdSet()
+```
+
+##### `resetTeamId` <a name="resetTeamId" id="@cdktn/provider-databricks.notificationDestination.NotificationDestinationConfigDatabricksAppTeamsOutputReference.resetTeamId"></a>
+
+```java
+public void resetTeamId()
+```
+
+##### `resetTeamIdSet` <a name="resetTeamIdSet" id="@cdktn/provider-databricks.notificationDestination.NotificationDestinationConfigDatabricksAppTeamsOutputReference.resetTeamIdSet"></a>
+
+```java
+public void resetTeamIdSet()
+```
+
+##### `resetTenantId` <a name="resetTenantId" id="@cdktn/provider-databricks.notificationDestination.NotificationDestinationConfigDatabricksAppTeamsOutputReference.resetTenantId"></a>
+
+```java
+public void resetTenantId()
+```
+
+##### `resetTenantIdSet` <a name="resetTenantIdSet" id="@cdktn/provider-databricks.notificationDestination.NotificationDestinationConfigDatabricksAppTeamsOutputReference.resetTenantIdSet"></a>
+
+```java
+public void resetTenantIdSet()
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-databricks.notificationDestination.NotificationDestinationConfigDatabricksAppTeamsOutputReference.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-databricks.notificationDestination.NotificationDestinationConfigDatabricksAppTeamsOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.notificationDestination.NotificationDestinationConfigDatabricksAppTeamsOutputReference.property.channelIdInput">channelIdInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.notificationDestination.NotificationDestinationConfigDatabricksAppTeamsOutputReference.property.channelIdSetInput">channelIdSetInput</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.notificationDestination.NotificationDestinationConfigDatabricksAppTeamsOutputReference.property.teamIdInput">teamIdInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.notificationDestination.NotificationDestinationConfigDatabricksAppTeamsOutputReference.property.teamIdSetInput">teamIdSetInput</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.notificationDestination.NotificationDestinationConfigDatabricksAppTeamsOutputReference.property.tenantIdInput">tenantIdInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.notificationDestination.NotificationDestinationConfigDatabricksAppTeamsOutputReference.property.tenantIdSetInput">tenantIdSetInput</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.notificationDestination.NotificationDestinationConfigDatabricksAppTeamsOutputReference.property.channelId">channelId</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.notificationDestination.NotificationDestinationConfigDatabricksAppTeamsOutputReference.property.channelIdSet">channelIdSet</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.notificationDestination.NotificationDestinationConfigDatabricksAppTeamsOutputReference.property.teamId">teamId</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.notificationDestination.NotificationDestinationConfigDatabricksAppTeamsOutputReference.property.teamIdSet">teamIdSet</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.notificationDestination.NotificationDestinationConfigDatabricksAppTeamsOutputReference.property.tenantId">tenantId</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.notificationDestination.NotificationDestinationConfigDatabricksAppTeamsOutputReference.property.tenantIdSet">tenantIdSet</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.notificationDestination.NotificationDestinationConfigDatabricksAppTeamsOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-databricks.notificationDestination.NotificationDestinationConfigDatabricksAppTeams">NotificationDestinationConfigDatabricksAppTeams</a></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-databricks.notificationDestination.NotificationDestinationConfigDatabricksAppTeamsOutputReference.property.creationStack"></a>
+
+```java
+public java.util.List<java.lang.String> getCreationStack();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-databricks.notificationDestination.NotificationDestinationConfigDatabricksAppTeamsOutputReference.property.fqn"></a>
+
+```java
+public java.lang.String getFqn();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `channelIdInput`<sup>Optional</sup> <a name="channelIdInput" id="@cdktn/provider-databricks.notificationDestination.NotificationDestinationConfigDatabricksAppTeamsOutputReference.property.channelIdInput"></a>
+
+```java
+public java.lang.String getChannelIdInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `channelIdSetInput`<sup>Optional</sup> <a name="channelIdSetInput" id="@cdktn/provider-databricks.notificationDestination.NotificationDestinationConfigDatabricksAppTeamsOutputReference.property.channelIdSetInput"></a>
+
+```java
+public java.lang.Boolean|IResolvable getChannelIdSetInput();
+```
+
+- *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
+
+---
+
+##### `teamIdInput`<sup>Optional</sup> <a name="teamIdInput" id="@cdktn/provider-databricks.notificationDestination.NotificationDestinationConfigDatabricksAppTeamsOutputReference.property.teamIdInput"></a>
+
+```java
+public java.lang.String getTeamIdInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `teamIdSetInput`<sup>Optional</sup> <a name="teamIdSetInput" id="@cdktn/provider-databricks.notificationDestination.NotificationDestinationConfigDatabricksAppTeamsOutputReference.property.teamIdSetInput"></a>
+
+```java
+public java.lang.Boolean|IResolvable getTeamIdSetInput();
+```
+
+- *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
+
+---
+
+##### `tenantIdInput`<sup>Optional</sup> <a name="tenantIdInput" id="@cdktn/provider-databricks.notificationDestination.NotificationDestinationConfigDatabricksAppTeamsOutputReference.property.tenantIdInput"></a>
+
+```java
+public java.lang.String getTenantIdInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `tenantIdSetInput`<sup>Optional</sup> <a name="tenantIdSetInput" id="@cdktn/provider-databricks.notificationDestination.NotificationDestinationConfigDatabricksAppTeamsOutputReference.property.tenantIdSetInput"></a>
+
+```java
+public java.lang.Boolean|IResolvable getTenantIdSetInput();
+```
+
+- *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
+
+---
+
+##### `channelId`<sup>Required</sup> <a name="channelId" id="@cdktn/provider-databricks.notificationDestination.NotificationDestinationConfigDatabricksAppTeamsOutputReference.property.channelId"></a>
+
+```java
+public java.lang.String getChannelId();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `channelIdSet`<sup>Required</sup> <a name="channelIdSet" id="@cdktn/provider-databricks.notificationDestination.NotificationDestinationConfigDatabricksAppTeamsOutputReference.property.channelIdSet"></a>
+
+```java
+public java.lang.Boolean|IResolvable getChannelIdSet();
+```
+
+- *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
+
+---
+
+##### `teamId`<sup>Required</sup> <a name="teamId" id="@cdktn/provider-databricks.notificationDestination.NotificationDestinationConfigDatabricksAppTeamsOutputReference.property.teamId"></a>
+
+```java
+public java.lang.String getTeamId();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `teamIdSet`<sup>Required</sup> <a name="teamIdSet" id="@cdktn/provider-databricks.notificationDestination.NotificationDestinationConfigDatabricksAppTeamsOutputReference.property.teamIdSet"></a>
+
+```java
+public java.lang.Boolean|IResolvable getTeamIdSet();
+```
+
+- *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
+
+---
+
+##### `tenantId`<sup>Required</sup> <a name="tenantId" id="@cdktn/provider-databricks.notificationDestination.NotificationDestinationConfigDatabricksAppTeamsOutputReference.property.tenantId"></a>
+
+```java
+public java.lang.String getTenantId();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `tenantIdSet`<sup>Required</sup> <a name="tenantIdSet" id="@cdktn/provider-databricks.notificationDestination.NotificationDestinationConfigDatabricksAppTeamsOutputReference.property.tenantIdSet"></a>
+
+```java
+public java.lang.Boolean|IResolvable getTenantIdSet();
+```
+
+- *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-databricks.notificationDestination.NotificationDestinationConfigDatabricksAppTeamsOutputReference.property.internalValue"></a>
+
+```java
+public NotificationDestinationConfigDatabricksAppTeams getInternalValue();
+```
+
+- *Type:* <a href="#@cdktn/provider-databricks.notificationDestination.NotificationDestinationConfigDatabricksAppTeams">NotificationDestinationConfigDatabricksAppTeams</a>
 
 ---
 

@@ -4,12 +4,12 @@
 
 ### SecretScope <a name="SecretScope" id="@cdktn/provider-databricks.secretScope.SecretScope"></a>
 
-Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/secret_scope databricks_secret_scope}.
+Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/secret_scope databricks_secret_scope}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.secretScope.SecretScope.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/secretscope"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/secretscope"
 
 secretscope.NewSecretScope(scope Construct, id *string, config SecretScopeConfig) SecretScope
 ```
@@ -461,7 +461,7 @@ func ResetProviderConfig()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-databricks.secretScope.SecretScope.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/secretscope"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/secretscope"
 
 secretscope.SecretScope_IsConstruct(x interface{}) *bool
 ```
@@ -493,7 +493,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-databricks.secretScope.SecretScope.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/secretscope"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/secretscope"
 
 secretscope.SecretScope_IsTerraformElement(x interface{}) *bool
 ```
@@ -507,7 +507,7 @@ secretscope.SecretScope_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-databricks.secretScope.SecretScope.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/secretscope"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/secretscope"
 
 secretscope.SecretScope_IsTerraformResource(x interface{}) *bool
 ```
@@ -521,7 +521,7 @@ secretscope.SecretScope_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-databricks.secretScope.SecretScope.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/secretscope"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/secretscope"
 
 secretscope.SecretScope_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -550,7 +550,7 @@ The construct id used in the generated config for the SecretScope to import.
 
 The id of the existing SecretScope that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/secret_scope#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/secret_scope#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -882,7 +882,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.secretScope.SecretScopeConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/secretscope"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/secretscope"
 
 &secretscope.SecretScopeConfig {
 	Connection: interface{},
@@ -896,8 +896,8 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/secretsc
 	BackendType: *string,
 	Id: *string,
 	InitialManagePrincipal: *string,
-	KeyvaultMetadata: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18.secretScope.SecretScopeKeyvaultMetadata,
-	ProviderConfig: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18.secretScope.SecretScopeProviderConfig,
+	KeyvaultMetadata: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19.secretScope.SecretScopeKeyvaultMetadata,
+	ProviderConfig: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19.secretScope.SecretScopeProviderConfig,
 }
 ```
 
@@ -912,10 +912,10 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/secretsc
 | <code><a href="#@cdktn/provider-databricks.secretScope.SecretScopeConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.secretScope.SecretScopeConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.secretScope.SecretScopeConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-databricks.secretScope.SecretScopeConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/secret_scope#name SecretScope#name}. |
-| <code><a href="#@cdktn/provider-databricks.secretScope.SecretScopeConfig.property.backendType">BackendType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/secret_scope#backend_type SecretScope#backend_type}. |
-| <code><a href="#@cdktn/provider-databricks.secretScope.SecretScopeConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/secret_scope#id SecretScope#id}. |
-| <code><a href="#@cdktn/provider-databricks.secretScope.SecretScopeConfig.property.initialManagePrincipal">InitialManagePrincipal</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/secret_scope#initial_manage_principal SecretScope#initial_manage_principal}. |
+| <code><a href="#@cdktn/provider-databricks.secretScope.SecretScopeConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/secret_scope#name SecretScope#name}. |
+| <code><a href="#@cdktn/provider-databricks.secretScope.SecretScopeConfig.property.backendType">BackendType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/secret_scope#backend_type SecretScope#backend_type}. |
+| <code><a href="#@cdktn/provider-databricks.secretScope.SecretScopeConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/secret_scope#id SecretScope#id}. |
+| <code><a href="#@cdktn/provider-databricks.secretScope.SecretScopeConfig.property.initialManagePrincipal">InitialManagePrincipal</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/secret_scope#initial_manage_principal SecretScope#initial_manage_principal}. |
 | <code><a href="#@cdktn/provider-databricks.secretScope.SecretScopeConfig.property.keyvaultMetadata">KeyvaultMetadata</a></code> | <code><a href="#@cdktn/provider-databricks.secretScope.SecretScopeKeyvaultMetadata">SecretScopeKeyvaultMetadata</a></code> | keyvault_metadata block. |
 | <code><a href="#@cdktn/provider-databricks.secretScope.SecretScopeConfig.property.providerConfig">ProviderConfig</a></code> | <code><a href="#@cdktn/provider-databricks.secretScope.SecretScopeProviderConfig">SecretScopeProviderConfig</a></code> | provider_config block. |
 
@@ -999,7 +999,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/secret_scope#name SecretScope#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/secret_scope#name SecretScope#name}.
 
 ---
 
@@ -1011,7 +1011,7 @@ BackendType *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/secret_scope#backend_type SecretScope#backend_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/secret_scope#backend_type SecretScope#backend_type}.
 
 ---
 
@@ -1023,7 +1023,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/secret_scope#id SecretScope#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/secret_scope#id SecretScope#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1038,7 +1038,7 @@ InitialManagePrincipal *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/secret_scope#initial_manage_principal SecretScope#initial_manage_principal}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/secret_scope#initial_manage_principal SecretScope#initial_manage_principal}.
 
 ---
 
@@ -1052,7 +1052,7 @@ KeyvaultMetadata SecretScopeKeyvaultMetadata
 
 keyvault_metadata block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/secret_scope#keyvault_metadata SecretScope#keyvault_metadata}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/secret_scope#keyvault_metadata SecretScope#keyvault_metadata}
 
 ---
 
@@ -1066,7 +1066,7 @@ ProviderConfig SecretScopeProviderConfig
 
 provider_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/secret_scope#provider_config SecretScope#provider_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/secret_scope#provider_config SecretScope#provider_config}
 
 ---
 
@@ -1075,7 +1075,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.secretScope.SecretScopeKeyvaultMetadata.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/secretscope"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/secretscope"
 
 &secretscope.SecretScopeKeyvaultMetadata {
 	DnsName: *string,
@@ -1087,8 +1087,8 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/secretsc
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.secretScope.SecretScopeKeyvaultMetadata.property.dnsName">DnsName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/secret_scope#dns_name SecretScope#dns_name}. |
-| <code><a href="#@cdktn/provider-databricks.secretScope.SecretScopeKeyvaultMetadata.property.resourceId">ResourceId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/secret_scope#resource_id SecretScope#resource_id}. |
+| <code><a href="#@cdktn/provider-databricks.secretScope.SecretScopeKeyvaultMetadata.property.dnsName">DnsName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/secret_scope#dns_name SecretScope#dns_name}. |
+| <code><a href="#@cdktn/provider-databricks.secretScope.SecretScopeKeyvaultMetadata.property.resourceId">ResourceId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/secret_scope#resource_id SecretScope#resource_id}. |
 
 ---
 
@@ -1100,7 +1100,7 @@ DnsName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/secret_scope#dns_name SecretScope#dns_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/secret_scope#dns_name SecretScope#dns_name}.
 
 ---
 
@@ -1112,7 +1112,7 @@ ResourceId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/secret_scope#resource_id SecretScope#resource_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/secret_scope#resource_id SecretScope#resource_id}.
 
 ---
 
@@ -1121,7 +1121,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.secretScope.SecretScopeProviderConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/secretscope"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/secretscope"
 
 &secretscope.SecretScopeProviderConfig {
 	WorkspaceId: *string,
@@ -1132,7 +1132,7 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/secretsc
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.secretScope.SecretScopeProviderConfig.property.workspaceId">WorkspaceId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/secret_scope#workspace_id SecretScope#workspace_id}. |
+| <code><a href="#@cdktn/provider-databricks.secretScope.SecretScopeProviderConfig.property.workspaceId">WorkspaceId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/secret_scope#workspace_id SecretScope#workspace_id}. |
 
 ---
 
@@ -1144,7 +1144,7 @@ WorkspaceId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/secret_scope#workspace_id SecretScope#workspace_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/secret_scope#workspace_id SecretScope#workspace_id}.
 
 ---
 
@@ -1155,7 +1155,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.secretScope.SecretScopeKeyvaultMetadataOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/secretscope"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/secretscope"
 
 secretscope.NewSecretScopeKeyvaultMetadataOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SecretScopeKeyvaultMetadataOutputReference
 ```
@@ -1448,7 +1448,7 @@ func InternalValue() SecretScopeKeyvaultMetadata
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.secretScope.SecretScopeProviderConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/secretscope"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/secretscope"
 
 secretscope.NewSecretScopeProviderConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SecretScopeProviderConfigOutputReference
 ```

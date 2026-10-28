@@ -4,12 +4,12 @@
 
 ### OboToken <a name="OboToken" id="@cdktn/provider-databricks.oboToken.OboToken"></a>
 
-Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/obo_token databricks_obo_token}.
+Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/obo_token databricks_obo_token}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.oboToken.OboToken.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/obotoken"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/obotoken"
 
 obotoken.NewOboToken(scope Construct, id *string, config OboTokenConfig) OboToken
 ```
@@ -441,7 +441,7 @@ func ResetProviderConfig()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-databricks.oboToken.OboToken.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/obotoken"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/obotoken"
 
 obotoken.OboToken_IsConstruct(x interface{}) *bool
 ```
@@ -473,7 +473,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-databricks.oboToken.OboToken.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/obotoken"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/obotoken"
 
 obotoken.OboToken_IsTerraformElement(x interface{}) *bool
 ```
@@ -487,7 +487,7 @@ obotoken.OboToken_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-databricks.oboToken.OboToken.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/obotoken"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/obotoken"
 
 obotoken.OboToken_IsTerraformResource(x interface{}) *bool
 ```
@@ -501,7 +501,7 @@ obotoken.OboToken_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-databricks.oboToken.OboToken.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/obotoken"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/obotoken"
 
 obotoken.OboToken_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -530,7 +530,7 @@ The construct id used in the generated config for the OboToken to import.
 
 The id of the existing OboToken that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/obo_token#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/obo_token#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -851,7 +851,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.oboToken.OboTokenConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/obotoken"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/obotoken"
 
 &obotoken.OboTokenConfig {
 	Connection: interface{},
@@ -865,7 +865,7 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/obotoken
 	Comment: *string,
 	Id: *string,
 	LifetimeSeconds: *f64,
-	ProviderConfig: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18.oboToken.OboTokenProviderConfig,
+	ProviderConfig: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19.oboToken.OboTokenProviderConfig,
 }
 ```
 
@@ -880,10 +880,10 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/obotoken
 | <code><a href="#@cdktn/provider-databricks.oboToken.OboTokenConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.oboToken.OboTokenConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.oboToken.OboTokenConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-databricks.oboToken.OboTokenConfig.property.applicationId">ApplicationId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/obo_token#application_id OboToken#application_id}. |
-| <code><a href="#@cdktn/provider-databricks.oboToken.OboTokenConfig.property.comment">Comment</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/obo_token#comment OboToken#comment}. |
-| <code><a href="#@cdktn/provider-databricks.oboToken.OboTokenConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/obo_token#id OboToken#id}. |
-| <code><a href="#@cdktn/provider-databricks.oboToken.OboTokenConfig.property.lifetimeSeconds">LifetimeSeconds</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/obo_token#lifetime_seconds OboToken#lifetime_seconds}. |
+| <code><a href="#@cdktn/provider-databricks.oboToken.OboTokenConfig.property.applicationId">ApplicationId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/obo_token#application_id OboToken#application_id}. |
+| <code><a href="#@cdktn/provider-databricks.oboToken.OboTokenConfig.property.comment">Comment</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/obo_token#comment OboToken#comment}. |
+| <code><a href="#@cdktn/provider-databricks.oboToken.OboTokenConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/obo_token#id OboToken#id}. |
+| <code><a href="#@cdktn/provider-databricks.oboToken.OboTokenConfig.property.lifetimeSeconds">LifetimeSeconds</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/obo_token#lifetime_seconds OboToken#lifetime_seconds}. |
 | <code><a href="#@cdktn/provider-databricks.oboToken.OboTokenConfig.property.providerConfig">ProviderConfig</a></code> | <code><a href="#@cdktn/provider-databricks.oboToken.OboTokenProviderConfig">OboTokenProviderConfig</a></code> | provider_config block. |
 
 ---
@@ -966,7 +966,7 @@ ApplicationId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/obo_token#application_id OboToken#application_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/obo_token#application_id OboToken#application_id}.
 
 ---
 
@@ -978,7 +978,7 @@ Comment *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/obo_token#comment OboToken#comment}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/obo_token#comment OboToken#comment}.
 
 ---
 
@@ -990,7 +990,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/obo_token#id OboToken#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/obo_token#id OboToken#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1005,7 +1005,7 @@ LifetimeSeconds *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/obo_token#lifetime_seconds OboToken#lifetime_seconds}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/obo_token#lifetime_seconds OboToken#lifetime_seconds}.
 
 ---
 
@@ -1019,7 +1019,7 @@ ProviderConfig OboTokenProviderConfig
 
 provider_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/obo_token#provider_config OboToken#provider_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/obo_token#provider_config OboToken#provider_config}
 
 ---
 
@@ -1028,7 +1028,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.oboToken.OboTokenProviderConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/obotoken"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/obotoken"
 
 &obotoken.OboTokenProviderConfig {
 	WorkspaceId: *string,
@@ -1039,7 +1039,7 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/obotoken
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.oboToken.OboTokenProviderConfig.property.workspaceId">WorkspaceId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/obo_token#workspace_id OboToken#workspace_id}. |
+| <code><a href="#@cdktn/provider-databricks.oboToken.OboTokenProviderConfig.property.workspaceId">WorkspaceId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/obo_token#workspace_id OboToken#workspace_id}. |
 
 ---
 
@@ -1051,7 +1051,7 @@ WorkspaceId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/obo_token#workspace_id OboToken#workspace_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/obo_token#workspace_id OboToken#workspace_id}.
 
 ---
 
@@ -1062,7 +1062,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.oboToken.OboTokenProviderConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/obotoken"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/obotoken"
 
 obotoken.NewOboTokenProviderConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) OboTokenProviderConfigOutputReference
 ```

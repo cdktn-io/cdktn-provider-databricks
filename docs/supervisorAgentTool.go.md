@@ -4,12 +4,12 @@
 
 ### SupervisorAgentTool <a name="SupervisorAgentTool" id="@cdktn/provider-databricks.supervisorAgentTool.SupervisorAgentTool"></a>
 
-Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/supervisor_agent_tool databricks_supervisor_agent_tool}.
+Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/supervisor_agent_tool databricks_supervisor_agent_tool}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.supervisorAgentTool.SupervisorAgentTool.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/supervisoragenttool"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/supervisoragenttool"
 
 supervisoragenttool.NewSupervisorAgentTool(scope Construct, id *string, config SupervisorAgentToolConfig) SupervisorAgentTool
 ```
@@ -547,7 +547,7 @@ func ResetVolume()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-databricks.supervisorAgentTool.SupervisorAgentTool.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/supervisoragenttool"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/supervisoragenttool"
 
 supervisoragenttool.SupervisorAgentTool_IsConstruct(x interface{}) *bool
 ```
@@ -579,7 +579,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-databricks.supervisorAgentTool.SupervisorAgentTool.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/supervisoragenttool"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/supervisoragenttool"
 
 supervisoragenttool.SupervisorAgentTool_IsTerraformElement(x interface{}) *bool
 ```
@@ -593,7 +593,7 @@ supervisoragenttool.SupervisorAgentTool_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-databricks.supervisorAgentTool.SupervisorAgentTool.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/supervisoragenttool"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/supervisoragenttool"
 
 supervisoragenttool.SupervisorAgentTool_IsTerraformResource(x interface{}) *bool
 ```
@@ -607,7 +607,7 @@ supervisoragenttool.SupervisorAgentTool_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-databricks.supervisorAgentTool.SupervisorAgentTool.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/supervisoragenttool"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/supervisoragenttool"
 
 supervisoragenttool.SupervisorAgentTool_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -636,7 +636,7 @@ The construct id used in the generated config for the SupervisorAgentTool to imp
 
 The id of the existing SupervisorAgentTool that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/supervisor_agent_tool#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/supervisor_agent_tool#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1100,7 +1100,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.supervisorAgentTool.SupervisorAgentToolApp.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/supervisoragenttool"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/supervisoragenttool"
 
 &supervisoragenttool.SupervisorAgentToolApp {
 	Name: *string,
@@ -1111,7 +1111,7 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/supervis
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.supervisorAgentTool.SupervisorAgentToolApp.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/supervisor_agent_tool#name SupervisorAgentTool#name}. |
+| <code><a href="#@cdktn/provider-databricks.supervisorAgentTool.SupervisorAgentToolApp.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/supervisor_agent_tool#name SupervisorAgentTool#name}. |
 
 ---
 
@@ -1123,7 +1123,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/supervisor_agent_tool#name SupervisorAgentTool#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/supervisor_agent_tool#name SupervisorAgentTool#name}.
 
 ---
 
@@ -1132,7 +1132,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.supervisorAgentTool.SupervisorAgentToolConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/supervisoragenttool"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/supervisoragenttool"
 
 &supervisoragenttool.SupervisorAgentToolConfig {
 	Connection: interface{},
@@ -1145,14 +1145,14 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/supervis
 	Parent: *string,
 	ToolId: *string,
 	ToolType: *string,
-	App: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18.supervisorAgentTool.SupervisorAgentToolApp,
+	App: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19.supervisorAgentTool.SupervisorAgentToolApp,
 	Description: *string,
-	GenieSpace: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18.supervisorAgentTool.SupervisorAgentToolGenieSpace,
-	KnowledgeAssistant: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18.supervisorAgentTool.SupervisorAgentToolKnowledgeAssistant,
-	ProviderConfig: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18.supervisorAgentTool.SupervisorAgentToolProviderConfig,
-	UcConnection: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18.supervisorAgentTool.SupervisorAgentToolUcConnection,
-	UcFunction: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18.supervisorAgentTool.SupervisorAgentToolUcFunction,
-	Volume: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18.supervisorAgentTool.SupervisorAgentToolVolume,
+	GenieSpace: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19.supervisorAgentTool.SupervisorAgentToolGenieSpace,
+	KnowledgeAssistant: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19.supervisorAgentTool.SupervisorAgentToolKnowledgeAssistant,
+	ProviderConfig: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19.supervisorAgentTool.SupervisorAgentToolProviderConfig,
+	UcConnection: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19.supervisorAgentTool.SupervisorAgentToolUcConnection,
+	UcFunction: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19.supervisorAgentTool.SupervisorAgentToolUcFunction,
+	Volume: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19.supervisorAgentTool.SupervisorAgentToolVolume,
 }
 ```
 
@@ -1167,17 +1167,17 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/supervis
 | <code><a href="#@cdktn/provider-databricks.supervisorAgentTool.SupervisorAgentToolConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.supervisorAgentTool.SupervisorAgentToolConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.supervisorAgentTool.SupervisorAgentToolConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-databricks.supervisorAgentTool.SupervisorAgentToolConfig.property.parent">Parent</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/supervisor_agent_tool#parent SupervisorAgentTool#parent}. |
-| <code><a href="#@cdktn/provider-databricks.supervisorAgentTool.SupervisorAgentToolConfig.property.toolId">ToolId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/supervisor_agent_tool#tool_id SupervisorAgentTool#tool_id}. |
-| <code><a href="#@cdktn/provider-databricks.supervisorAgentTool.SupervisorAgentToolConfig.property.toolType">ToolType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/supervisor_agent_tool#tool_type SupervisorAgentTool#tool_type}. |
-| <code><a href="#@cdktn/provider-databricks.supervisorAgentTool.SupervisorAgentToolConfig.property.app">App</a></code> | <code><a href="#@cdktn/provider-databricks.supervisorAgentTool.SupervisorAgentToolApp">SupervisorAgentToolApp</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/supervisor_agent_tool#app SupervisorAgentTool#app}. |
-| <code><a href="#@cdktn/provider-databricks.supervisorAgentTool.SupervisorAgentToolConfig.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/supervisor_agent_tool#description SupervisorAgentTool#description}. |
-| <code><a href="#@cdktn/provider-databricks.supervisorAgentTool.SupervisorAgentToolConfig.property.genieSpace">GenieSpace</a></code> | <code><a href="#@cdktn/provider-databricks.supervisorAgentTool.SupervisorAgentToolGenieSpace">SupervisorAgentToolGenieSpace</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/supervisor_agent_tool#genie_space SupervisorAgentTool#genie_space}. |
-| <code><a href="#@cdktn/provider-databricks.supervisorAgentTool.SupervisorAgentToolConfig.property.knowledgeAssistant">KnowledgeAssistant</a></code> | <code><a href="#@cdktn/provider-databricks.supervisorAgentTool.SupervisorAgentToolKnowledgeAssistant">SupervisorAgentToolKnowledgeAssistant</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/supervisor_agent_tool#knowledge_assistant SupervisorAgentTool#knowledge_assistant}. |
-| <code><a href="#@cdktn/provider-databricks.supervisorAgentTool.SupervisorAgentToolConfig.property.providerConfig">ProviderConfig</a></code> | <code><a href="#@cdktn/provider-databricks.supervisorAgentTool.SupervisorAgentToolProviderConfig">SupervisorAgentToolProviderConfig</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/supervisor_agent_tool#provider_config SupervisorAgentTool#provider_config}. |
-| <code><a href="#@cdktn/provider-databricks.supervisorAgentTool.SupervisorAgentToolConfig.property.ucConnection">UcConnection</a></code> | <code><a href="#@cdktn/provider-databricks.supervisorAgentTool.SupervisorAgentToolUcConnection">SupervisorAgentToolUcConnection</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/supervisor_agent_tool#uc_connection SupervisorAgentTool#uc_connection}. |
-| <code><a href="#@cdktn/provider-databricks.supervisorAgentTool.SupervisorAgentToolConfig.property.ucFunction">UcFunction</a></code> | <code><a href="#@cdktn/provider-databricks.supervisorAgentTool.SupervisorAgentToolUcFunction">SupervisorAgentToolUcFunction</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/supervisor_agent_tool#uc_function SupervisorAgentTool#uc_function}. |
-| <code><a href="#@cdktn/provider-databricks.supervisorAgentTool.SupervisorAgentToolConfig.property.volume">Volume</a></code> | <code><a href="#@cdktn/provider-databricks.supervisorAgentTool.SupervisorAgentToolVolume">SupervisorAgentToolVolume</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/supervisor_agent_tool#volume SupervisorAgentTool#volume}. |
+| <code><a href="#@cdktn/provider-databricks.supervisorAgentTool.SupervisorAgentToolConfig.property.parent">Parent</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/supervisor_agent_tool#parent SupervisorAgentTool#parent}. |
+| <code><a href="#@cdktn/provider-databricks.supervisorAgentTool.SupervisorAgentToolConfig.property.toolId">ToolId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/supervisor_agent_tool#tool_id SupervisorAgentTool#tool_id}. |
+| <code><a href="#@cdktn/provider-databricks.supervisorAgentTool.SupervisorAgentToolConfig.property.toolType">ToolType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/supervisor_agent_tool#tool_type SupervisorAgentTool#tool_type}. |
+| <code><a href="#@cdktn/provider-databricks.supervisorAgentTool.SupervisorAgentToolConfig.property.app">App</a></code> | <code><a href="#@cdktn/provider-databricks.supervisorAgentTool.SupervisorAgentToolApp">SupervisorAgentToolApp</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/supervisor_agent_tool#app SupervisorAgentTool#app}. |
+| <code><a href="#@cdktn/provider-databricks.supervisorAgentTool.SupervisorAgentToolConfig.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/supervisor_agent_tool#description SupervisorAgentTool#description}. |
+| <code><a href="#@cdktn/provider-databricks.supervisorAgentTool.SupervisorAgentToolConfig.property.genieSpace">GenieSpace</a></code> | <code><a href="#@cdktn/provider-databricks.supervisorAgentTool.SupervisorAgentToolGenieSpace">SupervisorAgentToolGenieSpace</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/supervisor_agent_tool#genie_space SupervisorAgentTool#genie_space}. |
+| <code><a href="#@cdktn/provider-databricks.supervisorAgentTool.SupervisorAgentToolConfig.property.knowledgeAssistant">KnowledgeAssistant</a></code> | <code><a href="#@cdktn/provider-databricks.supervisorAgentTool.SupervisorAgentToolKnowledgeAssistant">SupervisorAgentToolKnowledgeAssistant</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/supervisor_agent_tool#knowledge_assistant SupervisorAgentTool#knowledge_assistant}. |
+| <code><a href="#@cdktn/provider-databricks.supervisorAgentTool.SupervisorAgentToolConfig.property.providerConfig">ProviderConfig</a></code> | <code><a href="#@cdktn/provider-databricks.supervisorAgentTool.SupervisorAgentToolProviderConfig">SupervisorAgentToolProviderConfig</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/supervisor_agent_tool#provider_config SupervisorAgentTool#provider_config}. |
+| <code><a href="#@cdktn/provider-databricks.supervisorAgentTool.SupervisorAgentToolConfig.property.ucConnection">UcConnection</a></code> | <code><a href="#@cdktn/provider-databricks.supervisorAgentTool.SupervisorAgentToolUcConnection">SupervisorAgentToolUcConnection</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/supervisor_agent_tool#uc_connection SupervisorAgentTool#uc_connection}. |
+| <code><a href="#@cdktn/provider-databricks.supervisorAgentTool.SupervisorAgentToolConfig.property.ucFunction">UcFunction</a></code> | <code><a href="#@cdktn/provider-databricks.supervisorAgentTool.SupervisorAgentToolUcFunction">SupervisorAgentToolUcFunction</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/supervisor_agent_tool#uc_function SupervisorAgentTool#uc_function}. |
+| <code><a href="#@cdktn/provider-databricks.supervisorAgentTool.SupervisorAgentToolConfig.property.volume">Volume</a></code> | <code><a href="#@cdktn/provider-databricks.supervisorAgentTool.SupervisorAgentToolVolume">SupervisorAgentToolVolume</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/supervisor_agent_tool#volume SupervisorAgentTool#volume}. |
 
 ---
 
@@ -1259,7 +1259,7 @@ Parent *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/supervisor_agent_tool#parent SupervisorAgentTool#parent}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/supervisor_agent_tool#parent SupervisorAgentTool#parent}.
 
 ---
 
@@ -1271,7 +1271,7 @@ ToolId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/supervisor_agent_tool#tool_id SupervisorAgentTool#tool_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/supervisor_agent_tool#tool_id SupervisorAgentTool#tool_id}.
 
 ---
 
@@ -1283,7 +1283,7 @@ ToolType *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/supervisor_agent_tool#tool_type SupervisorAgentTool#tool_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/supervisor_agent_tool#tool_type SupervisorAgentTool#tool_type}.
 
 ---
 
@@ -1295,7 +1295,7 @@ App SupervisorAgentToolApp
 
 - *Type:* <a href="#@cdktn/provider-databricks.supervisorAgentTool.SupervisorAgentToolApp">SupervisorAgentToolApp</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/supervisor_agent_tool#app SupervisorAgentTool#app}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/supervisor_agent_tool#app SupervisorAgentTool#app}.
 
 ---
 
@@ -1307,7 +1307,7 @@ Description *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/supervisor_agent_tool#description SupervisorAgentTool#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/supervisor_agent_tool#description SupervisorAgentTool#description}.
 
 ---
 
@@ -1319,7 +1319,7 @@ GenieSpace SupervisorAgentToolGenieSpace
 
 - *Type:* <a href="#@cdktn/provider-databricks.supervisorAgentTool.SupervisorAgentToolGenieSpace">SupervisorAgentToolGenieSpace</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/supervisor_agent_tool#genie_space SupervisorAgentTool#genie_space}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/supervisor_agent_tool#genie_space SupervisorAgentTool#genie_space}.
 
 ---
 
@@ -1331,7 +1331,7 @@ KnowledgeAssistant SupervisorAgentToolKnowledgeAssistant
 
 - *Type:* <a href="#@cdktn/provider-databricks.supervisorAgentTool.SupervisorAgentToolKnowledgeAssistant">SupervisorAgentToolKnowledgeAssistant</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/supervisor_agent_tool#knowledge_assistant SupervisorAgentTool#knowledge_assistant}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/supervisor_agent_tool#knowledge_assistant SupervisorAgentTool#knowledge_assistant}.
 
 ---
 
@@ -1343,7 +1343,7 @@ ProviderConfig SupervisorAgentToolProviderConfig
 
 - *Type:* <a href="#@cdktn/provider-databricks.supervisorAgentTool.SupervisorAgentToolProviderConfig">SupervisorAgentToolProviderConfig</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/supervisor_agent_tool#provider_config SupervisorAgentTool#provider_config}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/supervisor_agent_tool#provider_config SupervisorAgentTool#provider_config}.
 
 ---
 
@@ -1355,7 +1355,7 @@ UcConnection SupervisorAgentToolUcConnection
 
 - *Type:* <a href="#@cdktn/provider-databricks.supervisorAgentTool.SupervisorAgentToolUcConnection">SupervisorAgentToolUcConnection</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/supervisor_agent_tool#uc_connection SupervisorAgentTool#uc_connection}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/supervisor_agent_tool#uc_connection SupervisorAgentTool#uc_connection}.
 
 ---
 
@@ -1367,7 +1367,7 @@ UcFunction SupervisorAgentToolUcFunction
 
 - *Type:* <a href="#@cdktn/provider-databricks.supervisorAgentTool.SupervisorAgentToolUcFunction">SupervisorAgentToolUcFunction</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/supervisor_agent_tool#uc_function SupervisorAgentTool#uc_function}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/supervisor_agent_tool#uc_function SupervisorAgentTool#uc_function}.
 
 ---
 
@@ -1379,7 +1379,7 @@ Volume SupervisorAgentToolVolume
 
 - *Type:* <a href="#@cdktn/provider-databricks.supervisorAgentTool.SupervisorAgentToolVolume">SupervisorAgentToolVolume</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/supervisor_agent_tool#volume SupervisorAgentTool#volume}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/supervisor_agent_tool#volume SupervisorAgentTool#volume}.
 
 ---
 
@@ -1388,7 +1388,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.supervisorAgentTool.SupervisorAgentToolGenieSpace.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/supervisoragenttool"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/supervisoragenttool"
 
 &supervisoragenttool.SupervisorAgentToolGenieSpace {
 	Id: *string,
@@ -1399,7 +1399,7 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/supervis
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.supervisorAgentTool.SupervisorAgentToolGenieSpace.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/supervisor_agent_tool#id SupervisorAgentTool#id}. |
+| <code><a href="#@cdktn/provider-databricks.supervisorAgentTool.SupervisorAgentToolGenieSpace.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/supervisor_agent_tool#id SupervisorAgentTool#id}. |
 
 ---
 
@@ -1411,7 +1411,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/supervisor_agent_tool#id SupervisorAgentTool#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/supervisor_agent_tool#id SupervisorAgentTool#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1423,7 +1423,7 @@ If you experience problems setting this value it might not be settable. Please t
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.supervisorAgentTool.SupervisorAgentToolKnowledgeAssistant.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/supervisoragenttool"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/supervisoragenttool"
 
 &supervisoragenttool.SupervisorAgentToolKnowledgeAssistant {
 	KnowledgeAssistantId: *string,
@@ -1435,8 +1435,8 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/supervis
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.supervisorAgentTool.SupervisorAgentToolKnowledgeAssistant.property.knowledgeAssistantId">KnowledgeAssistantId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/supervisor_agent_tool#knowledge_assistant_id SupervisorAgentTool#knowledge_assistant_id}. |
-| <code><a href="#@cdktn/provider-databricks.supervisorAgentTool.SupervisorAgentToolKnowledgeAssistant.property.servingEndpointName">ServingEndpointName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/supervisor_agent_tool#serving_endpoint_name SupervisorAgentTool#serving_endpoint_name}. |
+| <code><a href="#@cdktn/provider-databricks.supervisorAgentTool.SupervisorAgentToolKnowledgeAssistant.property.knowledgeAssistantId">KnowledgeAssistantId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/supervisor_agent_tool#knowledge_assistant_id SupervisorAgentTool#knowledge_assistant_id}. |
+| <code><a href="#@cdktn/provider-databricks.supervisorAgentTool.SupervisorAgentToolKnowledgeAssistant.property.servingEndpointName">ServingEndpointName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/supervisor_agent_tool#serving_endpoint_name SupervisorAgentTool#serving_endpoint_name}. |
 
 ---
 
@@ -1448,7 +1448,7 @@ KnowledgeAssistantId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/supervisor_agent_tool#knowledge_assistant_id SupervisorAgentTool#knowledge_assistant_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/supervisor_agent_tool#knowledge_assistant_id SupervisorAgentTool#knowledge_assistant_id}.
 
 ---
 
@@ -1460,7 +1460,7 @@ ServingEndpointName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/supervisor_agent_tool#serving_endpoint_name SupervisorAgentTool#serving_endpoint_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/supervisor_agent_tool#serving_endpoint_name SupervisorAgentTool#serving_endpoint_name}.
 
 ---
 
@@ -1469,7 +1469,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.supervisorAgentTool.SupervisorAgentToolProviderConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/supervisoragenttool"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/supervisoragenttool"
 
 &supervisoragenttool.SupervisorAgentToolProviderConfig {
 	WorkspaceId: *string,
@@ -1480,7 +1480,7 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/supervis
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.supervisorAgentTool.SupervisorAgentToolProviderConfig.property.workspaceId">WorkspaceId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/supervisor_agent_tool#workspace_id SupervisorAgentTool#workspace_id}. |
+| <code><a href="#@cdktn/provider-databricks.supervisorAgentTool.SupervisorAgentToolProviderConfig.property.workspaceId">WorkspaceId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/supervisor_agent_tool#workspace_id SupervisorAgentTool#workspace_id}. |
 
 ---
 
@@ -1492,7 +1492,7 @@ WorkspaceId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/supervisor_agent_tool#workspace_id SupervisorAgentTool#workspace_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/supervisor_agent_tool#workspace_id SupervisorAgentTool#workspace_id}.
 
 ---
 
@@ -1501,7 +1501,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.supervisorAgentTool.SupervisorAgentToolUcConnection.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/supervisoragenttool"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/supervisoragenttool"
 
 &supervisoragenttool.SupervisorAgentToolUcConnection {
 	Name: *string,
@@ -1512,7 +1512,7 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/supervis
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.supervisorAgentTool.SupervisorAgentToolUcConnection.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/supervisor_agent_tool#name SupervisorAgentTool#name}. |
+| <code><a href="#@cdktn/provider-databricks.supervisorAgentTool.SupervisorAgentToolUcConnection.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/supervisor_agent_tool#name SupervisorAgentTool#name}. |
 
 ---
 
@@ -1524,7 +1524,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/supervisor_agent_tool#name SupervisorAgentTool#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/supervisor_agent_tool#name SupervisorAgentTool#name}.
 
 ---
 
@@ -1533,7 +1533,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.supervisorAgentTool.SupervisorAgentToolUcFunction.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/supervisoragenttool"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/supervisoragenttool"
 
 &supervisoragenttool.SupervisorAgentToolUcFunction {
 	Name: *string,
@@ -1544,7 +1544,7 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/supervis
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.supervisorAgentTool.SupervisorAgentToolUcFunction.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/supervisor_agent_tool#name SupervisorAgentTool#name}. |
+| <code><a href="#@cdktn/provider-databricks.supervisorAgentTool.SupervisorAgentToolUcFunction.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/supervisor_agent_tool#name SupervisorAgentTool#name}. |
 
 ---
 
@@ -1556,7 +1556,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/supervisor_agent_tool#name SupervisorAgentTool#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/supervisor_agent_tool#name SupervisorAgentTool#name}.
 
 ---
 
@@ -1565,7 +1565,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.supervisorAgentTool.SupervisorAgentToolVolume.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/supervisoragenttool"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/supervisoragenttool"
 
 &supervisoragenttool.SupervisorAgentToolVolume {
 	Name: *string,
@@ -1576,7 +1576,7 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/supervis
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.supervisorAgentTool.SupervisorAgentToolVolume.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/supervisor_agent_tool#name SupervisorAgentTool#name}. |
+| <code><a href="#@cdktn/provider-databricks.supervisorAgentTool.SupervisorAgentToolVolume.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/supervisor_agent_tool#name SupervisorAgentTool#name}. |
 
 ---
 
@@ -1588,7 +1588,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/supervisor_agent_tool#name SupervisorAgentTool#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/supervisor_agent_tool#name SupervisorAgentTool#name}.
 
 ---
 
@@ -1599,7 +1599,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.supervisorAgentTool.SupervisorAgentToolAppOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/supervisoragenttool"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/supervisoragenttool"
 
 supervisoragenttool.NewSupervisorAgentToolAppOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SupervisorAgentToolAppOutputReference
 ```
@@ -1870,7 +1870,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.supervisorAgentTool.SupervisorAgentToolGenieSpaceOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/supervisoragenttool"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/supervisoragenttool"
 
 supervisoragenttool.NewSupervisorAgentToolGenieSpaceOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SupervisorAgentToolGenieSpaceOutputReference
 ```
@@ -2141,7 +2141,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.supervisorAgentTool.SupervisorAgentToolKnowledgeAssistantOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/supervisoragenttool"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/supervisoragenttool"
 
 supervisoragenttool.NewSupervisorAgentToolKnowledgeAssistantOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SupervisorAgentToolKnowledgeAssistantOutputReference
 ```
@@ -2441,7 +2441,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.supervisorAgentTool.SupervisorAgentToolProviderConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/supervisoragenttool"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/supervisoragenttool"
 
 supervisoragenttool.NewSupervisorAgentToolProviderConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SupervisorAgentToolProviderConfigOutputReference
 ```
@@ -2719,7 +2719,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.supervisorAgentTool.SupervisorAgentToolUcConnectionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/supervisoragenttool"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/supervisoragenttool"
 
 supervisoragenttool.NewSupervisorAgentToolUcConnectionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SupervisorAgentToolUcConnectionOutputReference
 ```
@@ -2990,7 +2990,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.supervisorAgentTool.SupervisorAgentToolUcFunctionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/supervisoragenttool"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/supervisoragenttool"
 
 supervisoragenttool.NewSupervisorAgentToolUcFunctionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SupervisorAgentToolUcFunctionOutputReference
 ```
@@ -3261,7 +3261,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.supervisorAgentTool.SupervisorAgentToolVolumeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/supervisoragenttool"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/supervisoragenttool"
 
 supervisoragenttool.NewSupervisorAgentToolVolumeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SupervisorAgentToolVolumeOutputReference
 ```

@@ -4,12 +4,12 @@
 
 ### PostgresRole <a name="PostgresRole" id="@cdktn/provider-databricks.postgresRole.PostgresRole"></a>
 
-Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/postgres_role databricks_postgres_role}.
+Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/postgres_role databricks_postgres_role}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.postgresRole.PostgresRole.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/postgresrole"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/postgresrole"
 
 postgresrole.NewPostgresRole(scope Construct, id *string, config PostgresRoleConfig) PostgresRole
 ```
@@ -454,7 +454,7 @@ func ResetSpec()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-databricks.postgresRole.PostgresRole.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/postgresrole"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/postgresrole"
 
 postgresrole.PostgresRole_IsConstruct(x interface{}) *bool
 ```
@@ -486,7 +486,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-databricks.postgresRole.PostgresRole.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/postgresrole"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/postgresrole"
 
 postgresrole.PostgresRole_IsTerraformElement(x interface{}) *bool
 ```
@@ -500,7 +500,7 @@ postgresrole.PostgresRole_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-databricks.postgresRole.PostgresRole.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/postgresrole"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/postgresrole"
 
 postgresrole.PostgresRole_IsTerraformResource(x interface{}) *bool
 ```
@@ -514,7 +514,7 @@ postgresrole.PostgresRole_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-databricks.postgresRole.PostgresRole.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/postgresrole"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/postgresrole"
 
 postgresrole.PostgresRole_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -543,7 +543,7 @@ The construct id used in the generated config for the PostgresRole to import.
 
 The id of the existing PostgresRole that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/postgres_role#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/postgres_role#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -897,7 +897,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.postgresRole.PostgresRoleConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/postgresrole"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/postgresrole"
 
 &postgresrole.PostgresRoleConfig {
 	Connection: interface{},
@@ -908,10 +908,10 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/postgres
 	Provider: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider,
 	Provisioners: *[]interface{},
 	Parent: *string,
-	ProviderConfig: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18.postgresRole.PostgresRoleProviderConfig,
+	ProviderConfig: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19.postgresRole.PostgresRoleProviderConfig,
 	ReplaceExisting: interface{},
 	RoleId: *string,
-	Spec: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18.postgresRole.PostgresRoleSpec,
+	Spec: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19.postgresRole.PostgresRoleSpec,
 }
 ```
 
@@ -926,11 +926,11 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/postgres
 | <code><a href="#@cdktn/provider-databricks.postgresRole.PostgresRoleConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.postgresRole.PostgresRoleConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.postgresRole.PostgresRoleConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-databricks.postgresRole.PostgresRoleConfig.property.parent">Parent</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/postgres_role#parent PostgresRole#parent}. |
-| <code><a href="#@cdktn/provider-databricks.postgresRole.PostgresRoleConfig.property.providerConfig">ProviderConfig</a></code> | <code><a href="#@cdktn/provider-databricks.postgresRole.PostgresRoleProviderConfig">PostgresRoleProviderConfig</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/postgres_role#provider_config PostgresRole#provider_config}. |
-| <code><a href="#@cdktn/provider-databricks.postgresRole.PostgresRoleConfig.property.replaceExisting">ReplaceExisting</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/postgres_role#replace_existing PostgresRole#replace_existing}. |
-| <code><a href="#@cdktn/provider-databricks.postgresRole.PostgresRoleConfig.property.roleId">RoleId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/postgres_role#role_id PostgresRole#role_id}. |
-| <code><a href="#@cdktn/provider-databricks.postgresRole.PostgresRoleConfig.property.spec">Spec</a></code> | <code><a href="#@cdktn/provider-databricks.postgresRole.PostgresRoleSpec">PostgresRoleSpec</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/postgres_role#spec PostgresRole#spec}. |
+| <code><a href="#@cdktn/provider-databricks.postgresRole.PostgresRoleConfig.property.parent">Parent</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/postgres_role#parent PostgresRole#parent}. |
+| <code><a href="#@cdktn/provider-databricks.postgresRole.PostgresRoleConfig.property.providerConfig">ProviderConfig</a></code> | <code><a href="#@cdktn/provider-databricks.postgresRole.PostgresRoleProviderConfig">PostgresRoleProviderConfig</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/postgres_role#provider_config PostgresRole#provider_config}. |
+| <code><a href="#@cdktn/provider-databricks.postgresRole.PostgresRoleConfig.property.replaceExisting">ReplaceExisting</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/postgres_role#replace_existing PostgresRole#replace_existing}. |
+| <code><a href="#@cdktn/provider-databricks.postgresRole.PostgresRoleConfig.property.roleId">RoleId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/postgres_role#role_id PostgresRole#role_id}. |
+| <code><a href="#@cdktn/provider-databricks.postgresRole.PostgresRoleConfig.property.spec">Spec</a></code> | <code><a href="#@cdktn/provider-databricks.postgresRole.PostgresRoleSpec">PostgresRoleSpec</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/postgres_role#spec PostgresRole#spec}. |
 
 ---
 
@@ -1012,7 +1012,7 @@ Parent *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/postgres_role#parent PostgresRole#parent}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/postgres_role#parent PostgresRole#parent}.
 
 ---
 
@@ -1024,7 +1024,7 @@ ProviderConfig PostgresRoleProviderConfig
 
 - *Type:* <a href="#@cdktn/provider-databricks.postgresRole.PostgresRoleProviderConfig">PostgresRoleProviderConfig</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/postgres_role#provider_config PostgresRole#provider_config}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/postgres_role#provider_config PostgresRole#provider_config}.
 
 ---
 
@@ -1036,7 +1036,7 @@ ReplaceExisting interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/postgres_role#replace_existing PostgresRole#replace_existing}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/postgres_role#replace_existing PostgresRole#replace_existing}.
 
 ---
 
@@ -1048,7 +1048,7 @@ RoleId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/postgres_role#role_id PostgresRole#role_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/postgres_role#role_id PostgresRole#role_id}.
 
 ---
 
@@ -1060,7 +1060,7 @@ Spec PostgresRoleSpec
 
 - *Type:* <a href="#@cdktn/provider-databricks.postgresRole.PostgresRoleSpec">PostgresRoleSpec</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/postgres_role#spec PostgresRole#spec}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/postgres_role#spec PostgresRole#spec}.
 
 ---
 
@@ -1069,7 +1069,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.postgresRole.PostgresRoleProviderConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/postgresrole"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/postgresrole"
 
 &postgresrole.PostgresRoleProviderConfig {
 	WorkspaceId: *string,
@@ -1080,7 +1080,7 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/postgres
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.postgresRole.PostgresRoleProviderConfig.property.workspaceId">WorkspaceId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/postgres_role#workspace_id PostgresRole#workspace_id}. |
+| <code><a href="#@cdktn/provider-databricks.postgresRole.PostgresRoleProviderConfig.property.workspaceId">WorkspaceId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/postgres_role#workspace_id PostgresRole#workspace_id}. |
 
 ---
 
@@ -1092,7 +1092,7 @@ WorkspaceId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/postgres_role#workspace_id PostgresRole#workspace_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/postgres_role#workspace_id PostgresRole#workspace_id}.
 
 ---
 
@@ -1101,10 +1101,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.postgresRole.PostgresRoleSpec.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/postgresrole"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/postgresrole"
 
 &postgresrole.PostgresRoleSpec {
-	Attributes: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18.postgresRole.PostgresRoleSpecAttributes,
+	Attributes: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19.postgresRole.PostgresRoleSpecAttributes,
 	AuthMethod: *string,
 	IdentityType: *string,
 	MembershipRoles: *[]*string,
@@ -1116,11 +1116,11 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/postgres
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.postgresRole.PostgresRoleSpec.property.attributes">Attributes</a></code> | <code><a href="#@cdktn/provider-databricks.postgresRole.PostgresRoleSpecAttributes">PostgresRoleSpecAttributes</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/postgres_role#attributes PostgresRole#attributes}. |
-| <code><a href="#@cdktn/provider-databricks.postgresRole.PostgresRoleSpec.property.authMethod">AuthMethod</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/postgres_role#auth_method PostgresRole#auth_method}. |
-| <code><a href="#@cdktn/provider-databricks.postgresRole.PostgresRoleSpec.property.identityType">IdentityType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/postgres_role#identity_type PostgresRole#identity_type}. |
-| <code><a href="#@cdktn/provider-databricks.postgresRole.PostgresRoleSpec.property.membershipRoles">MembershipRoles</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/postgres_role#membership_roles PostgresRole#membership_roles}. |
-| <code><a href="#@cdktn/provider-databricks.postgresRole.PostgresRoleSpec.property.postgresRole">PostgresRole</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/postgres_role#postgres_role PostgresRole#postgres_role}. |
+| <code><a href="#@cdktn/provider-databricks.postgresRole.PostgresRoleSpec.property.attributes">Attributes</a></code> | <code><a href="#@cdktn/provider-databricks.postgresRole.PostgresRoleSpecAttributes">PostgresRoleSpecAttributes</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/postgres_role#attributes PostgresRole#attributes}. |
+| <code><a href="#@cdktn/provider-databricks.postgresRole.PostgresRoleSpec.property.authMethod">AuthMethod</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/postgres_role#auth_method PostgresRole#auth_method}. |
+| <code><a href="#@cdktn/provider-databricks.postgresRole.PostgresRoleSpec.property.identityType">IdentityType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/postgres_role#identity_type PostgresRole#identity_type}. |
+| <code><a href="#@cdktn/provider-databricks.postgresRole.PostgresRoleSpec.property.membershipRoles">MembershipRoles</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/postgres_role#membership_roles PostgresRole#membership_roles}. |
+| <code><a href="#@cdktn/provider-databricks.postgresRole.PostgresRoleSpec.property.postgresRole">PostgresRole</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/postgres_role#postgres_role PostgresRole#postgres_role}. |
 
 ---
 
@@ -1132,7 +1132,7 @@ Attributes PostgresRoleSpecAttributes
 
 - *Type:* <a href="#@cdktn/provider-databricks.postgresRole.PostgresRoleSpecAttributes">PostgresRoleSpecAttributes</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/postgres_role#attributes PostgresRole#attributes}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/postgres_role#attributes PostgresRole#attributes}.
 
 ---
 
@@ -1144,7 +1144,7 @@ AuthMethod *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/postgres_role#auth_method PostgresRole#auth_method}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/postgres_role#auth_method PostgresRole#auth_method}.
 
 ---
 
@@ -1156,7 +1156,7 @@ IdentityType *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/postgres_role#identity_type PostgresRole#identity_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/postgres_role#identity_type PostgresRole#identity_type}.
 
 ---
 
@@ -1168,7 +1168,7 @@ MembershipRoles *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/postgres_role#membership_roles PostgresRole#membership_roles}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/postgres_role#membership_roles PostgresRole#membership_roles}.
 
 ---
 
@@ -1180,7 +1180,7 @@ PostgresRole *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/postgres_role#postgres_role PostgresRole#postgres_role}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/postgres_role#postgres_role PostgresRole#postgres_role}.
 
 ---
 
@@ -1189,7 +1189,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.postgresRole.PostgresRoleSpecAttributes.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/postgresrole"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/postgresrole"
 
 &postgresrole.PostgresRoleSpecAttributes {
 	Bypassrls: interface{},
@@ -1202,9 +1202,9 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/postgres
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.postgresRole.PostgresRoleSpecAttributes.property.bypassrls">Bypassrls</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/postgres_role#bypassrls PostgresRole#bypassrls}. |
-| <code><a href="#@cdktn/provider-databricks.postgresRole.PostgresRoleSpecAttributes.property.createdb">Createdb</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/postgres_role#createdb PostgresRole#createdb}. |
-| <code><a href="#@cdktn/provider-databricks.postgresRole.PostgresRoleSpecAttributes.property.createrole">Createrole</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/postgres_role#createrole PostgresRole#createrole}. |
+| <code><a href="#@cdktn/provider-databricks.postgresRole.PostgresRoleSpecAttributes.property.bypassrls">Bypassrls</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/postgres_role#bypassrls PostgresRole#bypassrls}. |
+| <code><a href="#@cdktn/provider-databricks.postgresRole.PostgresRoleSpecAttributes.property.createdb">Createdb</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/postgres_role#createdb PostgresRole#createdb}. |
+| <code><a href="#@cdktn/provider-databricks.postgresRole.PostgresRoleSpecAttributes.property.createrole">Createrole</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/postgres_role#createrole PostgresRole#createrole}. |
 
 ---
 
@@ -1216,7 +1216,7 @@ Bypassrls interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/postgres_role#bypassrls PostgresRole#bypassrls}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/postgres_role#bypassrls PostgresRole#bypassrls}.
 
 ---
 
@@ -1228,7 +1228,7 @@ Createdb interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/postgres_role#createdb PostgresRole#createdb}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/postgres_role#createdb PostgresRole#createdb}.
 
 ---
 
@@ -1240,7 +1240,7 @@ Createrole interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/postgres_role#createrole PostgresRole#createrole}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/postgres_role#createrole PostgresRole#createrole}.
 
 ---
 
@@ -1249,10 +1249,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.postgresRole.PostgresRoleStatus.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/postgresrole"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/postgresrole"
 
 &postgresrole.PostgresRoleStatus {
-	Attributes: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18.postgresRole.PostgresRoleStatusAttributes,
+	Attributes: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19.postgresRole.PostgresRoleStatusAttributes,
 	AuthMethod: *string,
 	IdentityType: *string,
 	MembershipRoles: *[]*string,
@@ -1264,11 +1264,11 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/postgres
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.postgresRole.PostgresRoleStatus.property.attributes">Attributes</a></code> | <code><a href="#@cdktn/provider-databricks.postgresRole.PostgresRoleStatusAttributes">PostgresRoleStatusAttributes</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/postgres_role#attributes PostgresRole#attributes}. |
-| <code><a href="#@cdktn/provider-databricks.postgresRole.PostgresRoleStatus.property.authMethod">AuthMethod</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/postgres_role#auth_method PostgresRole#auth_method}. |
-| <code><a href="#@cdktn/provider-databricks.postgresRole.PostgresRoleStatus.property.identityType">IdentityType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/postgres_role#identity_type PostgresRole#identity_type}. |
-| <code><a href="#@cdktn/provider-databricks.postgresRole.PostgresRoleStatus.property.membershipRoles">MembershipRoles</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/postgres_role#membership_roles PostgresRole#membership_roles}. |
-| <code><a href="#@cdktn/provider-databricks.postgresRole.PostgresRoleStatus.property.postgresRole">PostgresRole</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/postgres_role#postgres_role PostgresRole#postgres_role}. |
+| <code><a href="#@cdktn/provider-databricks.postgresRole.PostgresRoleStatus.property.attributes">Attributes</a></code> | <code><a href="#@cdktn/provider-databricks.postgresRole.PostgresRoleStatusAttributes">PostgresRoleStatusAttributes</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/postgres_role#attributes PostgresRole#attributes}. |
+| <code><a href="#@cdktn/provider-databricks.postgresRole.PostgresRoleStatus.property.authMethod">AuthMethod</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/postgres_role#auth_method PostgresRole#auth_method}. |
+| <code><a href="#@cdktn/provider-databricks.postgresRole.PostgresRoleStatus.property.identityType">IdentityType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/postgres_role#identity_type PostgresRole#identity_type}. |
+| <code><a href="#@cdktn/provider-databricks.postgresRole.PostgresRoleStatus.property.membershipRoles">MembershipRoles</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/postgres_role#membership_roles PostgresRole#membership_roles}. |
+| <code><a href="#@cdktn/provider-databricks.postgresRole.PostgresRoleStatus.property.postgresRole">PostgresRole</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/postgres_role#postgres_role PostgresRole#postgres_role}. |
 
 ---
 
@@ -1280,7 +1280,7 @@ Attributes PostgresRoleStatusAttributes
 
 - *Type:* <a href="#@cdktn/provider-databricks.postgresRole.PostgresRoleStatusAttributes">PostgresRoleStatusAttributes</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/postgres_role#attributes PostgresRole#attributes}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/postgres_role#attributes PostgresRole#attributes}.
 
 ---
 
@@ -1292,7 +1292,7 @@ AuthMethod *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/postgres_role#auth_method PostgresRole#auth_method}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/postgres_role#auth_method PostgresRole#auth_method}.
 
 ---
 
@@ -1304,7 +1304,7 @@ IdentityType *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/postgres_role#identity_type PostgresRole#identity_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/postgres_role#identity_type PostgresRole#identity_type}.
 
 ---
 
@@ -1316,7 +1316,7 @@ MembershipRoles *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/postgres_role#membership_roles PostgresRole#membership_roles}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/postgres_role#membership_roles PostgresRole#membership_roles}.
 
 ---
 
@@ -1328,7 +1328,7 @@ PostgresRole *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/postgres_role#postgres_role PostgresRole#postgres_role}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/postgres_role#postgres_role PostgresRole#postgres_role}.
 
 ---
 
@@ -1337,7 +1337,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.postgresRole.PostgresRoleStatusAttributes.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/postgresrole"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/postgresrole"
 
 &postgresrole.PostgresRoleStatusAttributes {
 	Bypassrls: interface{},
@@ -1350,9 +1350,9 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/postgres
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.postgresRole.PostgresRoleStatusAttributes.property.bypassrls">Bypassrls</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/postgres_role#bypassrls PostgresRole#bypassrls}. |
-| <code><a href="#@cdktn/provider-databricks.postgresRole.PostgresRoleStatusAttributes.property.createdb">Createdb</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/postgres_role#createdb PostgresRole#createdb}. |
-| <code><a href="#@cdktn/provider-databricks.postgresRole.PostgresRoleStatusAttributes.property.createrole">Createrole</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/postgres_role#createrole PostgresRole#createrole}. |
+| <code><a href="#@cdktn/provider-databricks.postgresRole.PostgresRoleStatusAttributes.property.bypassrls">Bypassrls</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/postgres_role#bypassrls PostgresRole#bypassrls}. |
+| <code><a href="#@cdktn/provider-databricks.postgresRole.PostgresRoleStatusAttributes.property.createdb">Createdb</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/postgres_role#createdb PostgresRole#createdb}. |
+| <code><a href="#@cdktn/provider-databricks.postgresRole.PostgresRoleStatusAttributes.property.createrole">Createrole</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/postgres_role#createrole PostgresRole#createrole}. |
 
 ---
 
@@ -1364,7 +1364,7 @@ Bypassrls interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/postgres_role#bypassrls PostgresRole#bypassrls}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/postgres_role#bypassrls PostgresRole#bypassrls}.
 
 ---
 
@@ -1376,7 +1376,7 @@ Createdb interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/postgres_role#createdb PostgresRole#createdb}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/postgres_role#createdb PostgresRole#createdb}.
 
 ---
 
@@ -1388,7 +1388,7 @@ Createrole interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/postgres_role#createrole PostgresRole#createrole}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/postgres_role#createrole PostgresRole#createrole}.
 
 ---
 
@@ -1399,7 +1399,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.postgresRole.PostgresRoleProviderConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/postgresrole"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/postgresrole"
 
 postgresrole.NewPostgresRoleProviderConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PostgresRoleProviderConfigOutputReference
 ```
@@ -1677,7 +1677,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.postgresRole.PostgresRoleSpecAttributesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/postgresrole"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/postgresrole"
 
 postgresrole.NewPostgresRoleSpecAttributesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PostgresRoleSpecAttributesOutputReference
 ```
@@ -2013,7 +2013,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.postgresRole.PostgresRoleSpecOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/postgresrole"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/postgresrole"
 
 postgresrole.NewPostgresRoleSpecOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PostgresRoleSpecOutputReference
 ```
@@ -2420,7 +2420,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.postgresRole.PostgresRoleStatusAttributesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/postgresrole"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/postgresrole"
 
 postgresrole.NewPostgresRoleStatusAttributesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PostgresRoleStatusAttributesOutputReference
 ```
@@ -2756,7 +2756,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.postgresRole.PostgresRoleStatusOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/postgresrole"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/postgresrole"
 
 postgresrole.NewPostgresRoleStatusOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PostgresRoleStatusOutputReference
 ```

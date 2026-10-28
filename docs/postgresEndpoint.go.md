@@ -4,12 +4,12 @@
 
 ### PostgresEndpoint <a name="PostgresEndpoint" id="@cdktn/provider-databricks.postgresEndpoint.PostgresEndpoint"></a>
 
-Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/postgres_endpoint databricks_postgres_endpoint}.
+Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/postgres_endpoint databricks_postgres_endpoint}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.postgresEndpoint.PostgresEndpoint.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/postgresendpoint"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/postgresendpoint"
 
 postgresendpoint.NewPostgresEndpoint(scope Construct, id *string, config PostgresEndpointConfig) PostgresEndpoint
 ```
@@ -447,7 +447,7 @@ func ResetSpec()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-databricks.postgresEndpoint.PostgresEndpoint.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/postgresendpoint"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/postgresendpoint"
 
 postgresendpoint.PostgresEndpoint_IsConstruct(x interface{}) *bool
 ```
@@ -479,7 +479,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-databricks.postgresEndpoint.PostgresEndpoint.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/postgresendpoint"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/postgresendpoint"
 
 postgresendpoint.PostgresEndpoint_IsTerraformElement(x interface{}) *bool
 ```
@@ -493,7 +493,7 @@ postgresendpoint.PostgresEndpoint_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-databricks.postgresEndpoint.PostgresEndpoint.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/postgresendpoint"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/postgresendpoint"
 
 postgresendpoint.PostgresEndpoint_IsTerraformResource(x interface{}) *bool
 ```
@@ -507,7 +507,7 @@ postgresendpoint.PostgresEndpoint_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-databricks.postgresEndpoint.PostgresEndpoint.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/postgresendpoint"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/postgresendpoint"
 
 postgresendpoint.PostgresEndpoint_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -536,7 +536,7 @@ The construct id used in the generated config for the PostgresEndpoint to import
 
 The id of the existing PostgresEndpoint that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/postgres_endpoint#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/postgres_endpoint#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -901,7 +901,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.postgresEndpoint.PostgresEndpointConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/postgresendpoint"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/postgresendpoint"
 
 &postgresendpoint.PostgresEndpointConfig {
 	Connection: interface{},
@@ -913,9 +913,9 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/postgres
 	Provisioners: *[]interface{},
 	EndpointId: *string,
 	Parent: *string,
-	ProviderConfig: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18.postgresEndpoint.PostgresEndpointProviderConfig,
+	ProviderConfig: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19.postgresEndpoint.PostgresEndpointProviderConfig,
 	ReplaceExisting: interface{},
-	Spec: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18.postgresEndpoint.PostgresEndpointSpec,
+	Spec: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19.postgresEndpoint.PostgresEndpointSpec,
 }
 ```
 
@@ -930,11 +930,11 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/postgres
 | <code><a href="#@cdktn/provider-databricks.postgresEndpoint.PostgresEndpointConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.postgresEndpoint.PostgresEndpointConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.postgresEndpoint.PostgresEndpointConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-databricks.postgresEndpoint.PostgresEndpointConfig.property.endpointId">EndpointId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/postgres_endpoint#endpoint_id PostgresEndpoint#endpoint_id}. |
-| <code><a href="#@cdktn/provider-databricks.postgresEndpoint.PostgresEndpointConfig.property.parent">Parent</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/postgres_endpoint#parent PostgresEndpoint#parent}. |
-| <code><a href="#@cdktn/provider-databricks.postgresEndpoint.PostgresEndpointConfig.property.providerConfig">ProviderConfig</a></code> | <code><a href="#@cdktn/provider-databricks.postgresEndpoint.PostgresEndpointProviderConfig">PostgresEndpointProviderConfig</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/postgres_endpoint#provider_config PostgresEndpoint#provider_config}. |
-| <code><a href="#@cdktn/provider-databricks.postgresEndpoint.PostgresEndpointConfig.property.replaceExisting">ReplaceExisting</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/postgres_endpoint#replace_existing PostgresEndpoint#replace_existing}. |
-| <code><a href="#@cdktn/provider-databricks.postgresEndpoint.PostgresEndpointConfig.property.spec">Spec</a></code> | <code><a href="#@cdktn/provider-databricks.postgresEndpoint.PostgresEndpointSpec">PostgresEndpointSpec</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/postgres_endpoint#spec PostgresEndpoint#spec}. |
+| <code><a href="#@cdktn/provider-databricks.postgresEndpoint.PostgresEndpointConfig.property.endpointId">EndpointId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/postgres_endpoint#endpoint_id PostgresEndpoint#endpoint_id}. |
+| <code><a href="#@cdktn/provider-databricks.postgresEndpoint.PostgresEndpointConfig.property.parent">Parent</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/postgres_endpoint#parent PostgresEndpoint#parent}. |
+| <code><a href="#@cdktn/provider-databricks.postgresEndpoint.PostgresEndpointConfig.property.providerConfig">ProviderConfig</a></code> | <code><a href="#@cdktn/provider-databricks.postgresEndpoint.PostgresEndpointProviderConfig">PostgresEndpointProviderConfig</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/postgres_endpoint#provider_config PostgresEndpoint#provider_config}. |
+| <code><a href="#@cdktn/provider-databricks.postgresEndpoint.PostgresEndpointConfig.property.replaceExisting">ReplaceExisting</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/postgres_endpoint#replace_existing PostgresEndpoint#replace_existing}. |
+| <code><a href="#@cdktn/provider-databricks.postgresEndpoint.PostgresEndpointConfig.property.spec">Spec</a></code> | <code><a href="#@cdktn/provider-databricks.postgresEndpoint.PostgresEndpointSpec">PostgresEndpointSpec</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/postgres_endpoint#spec PostgresEndpoint#spec}. |
 
 ---
 
@@ -1016,7 +1016,7 @@ EndpointId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/postgres_endpoint#endpoint_id PostgresEndpoint#endpoint_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/postgres_endpoint#endpoint_id PostgresEndpoint#endpoint_id}.
 
 ---
 
@@ -1028,7 +1028,7 @@ Parent *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/postgres_endpoint#parent PostgresEndpoint#parent}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/postgres_endpoint#parent PostgresEndpoint#parent}.
 
 ---
 
@@ -1040,7 +1040,7 @@ ProviderConfig PostgresEndpointProviderConfig
 
 - *Type:* <a href="#@cdktn/provider-databricks.postgresEndpoint.PostgresEndpointProviderConfig">PostgresEndpointProviderConfig</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/postgres_endpoint#provider_config PostgresEndpoint#provider_config}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/postgres_endpoint#provider_config PostgresEndpoint#provider_config}.
 
 ---
 
@@ -1052,7 +1052,7 @@ ReplaceExisting interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/postgres_endpoint#replace_existing PostgresEndpoint#replace_existing}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/postgres_endpoint#replace_existing PostgresEndpoint#replace_existing}.
 
 ---
 
@@ -1064,7 +1064,7 @@ Spec PostgresEndpointSpec
 
 - *Type:* <a href="#@cdktn/provider-databricks.postgresEndpoint.PostgresEndpointSpec">PostgresEndpointSpec</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/postgres_endpoint#spec PostgresEndpoint#spec}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/postgres_endpoint#spec PostgresEndpoint#spec}.
 
 ---
 
@@ -1073,7 +1073,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.postgresEndpoint.PostgresEndpointProviderConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/postgresendpoint"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/postgresendpoint"
 
 &postgresendpoint.PostgresEndpointProviderConfig {
 	WorkspaceId: *string,
@@ -1084,7 +1084,7 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/postgres
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.postgresEndpoint.PostgresEndpointProviderConfig.property.workspaceId">WorkspaceId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/postgres_endpoint#workspace_id PostgresEndpoint#workspace_id}. |
+| <code><a href="#@cdktn/provider-databricks.postgresEndpoint.PostgresEndpointProviderConfig.property.workspaceId">WorkspaceId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/postgres_endpoint#workspace_id PostgresEndpoint#workspace_id}. |
 
 ---
 
@@ -1096,7 +1096,7 @@ WorkspaceId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/postgres_endpoint#workspace_id PostgresEndpoint#workspace_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/postgres_endpoint#workspace_id PostgresEndpoint#workspace_id}.
 
 ---
 
@@ -1105,16 +1105,16 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.postgresEndpoint.PostgresEndpointSpec.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/postgresendpoint"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/postgresendpoint"
 
 &postgresendpoint.PostgresEndpointSpec {
 	EndpointType: *string,
 	AutoscalingLimitMaxCu: *f64,
 	AutoscalingLimitMinCu: *f64,
 	Disabled: interface{},
-	Group: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18.postgresEndpoint.PostgresEndpointSpecGroup,
+	Group: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19.postgresEndpoint.PostgresEndpointSpecGroup,
 	NoSuspension: interface{},
-	Settings: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18.postgresEndpoint.PostgresEndpointSpecSettings,
+	Settings: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19.postgresEndpoint.PostgresEndpointSpecSettings,
 	SuspendTimeoutDuration: *string,
 }
 ```
@@ -1123,14 +1123,14 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/postgres
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.postgresEndpoint.PostgresEndpointSpec.property.endpointType">EndpointType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/postgres_endpoint#endpoint_type PostgresEndpoint#endpoint_type}. |
-| <code><a href="#@cdktn/provider-databricks.postgresEndpoint.PostgresEndpointSpec.property.autoscalingLimitMaxCu">AutoscalingLimitMaxCu</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/postgres_endpoint#autoscaling_limit_max_cu PostgresEndpoint#autoscaling_limit_max_cu}. |
-| <code><a href="#@cdktn/provider-databricks.postgresEndpoint.PostgresEndpointSpec.property.autoscalingLimitMinCu">AutoscalingLimitMinCu</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/postgres_endpoint#autoscaling_limit_min_cu PostgresEndpoint#autoscaling_limit_min_cu}. |
-| <code><a href="#@cdktn/provider-databricks.postgresEndpoint.PostgresEndpointSpec.property.disabled">Disabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/postgres_endpoint#disabled PostgresEndpoint#disabled}. |
-| <code><a href="#@cdktn/provider-databricks.postgresEndpoint.PostgresEndpointSpec.property.group">Group</a></code> | <code><a href="#@cdktn/provider-databricks.postgresEndpoint.PostgresEndpointSpecGroup">PostgresEndpointSpecGroup</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/postgres_endpoint#group PostgresEndpoint#group}. |
-| <code><a href="#@cdktn/provider-databricks.postgresEndpoint.PostgresEndpointSpec.property.noSuspension">NoSuspension</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/postgres_endpoint#no_suspension PostgresEndpoint#no_suspension}. |
-| <code><a href="#@cdktn/provider-databricks.postgresEndpoint.PostgresEndpointSpec.property.settings">Settings</a></code> | <code><a href="#@cdktn/provider-databricks.postgresEndpoint.PostgresEndpointSpecSettings">PostgresEndpointSpecSettings</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/postgres_endpoint#settings PostgresEndpoint#settings}. |
-| <code><a href="#@cdktn/provider-databricks.postgresEndpoint.PostgresEndpointSpec.property.suspendTimeoutDuration">SuspendTimeoutDuration</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/postgres_endpoint#suspend_timeout_duration PostgresEndpoint#suspend_timeout_duration}. |
+| <code><a href="#@cdktn/provider-databricks.postgresEndpoint.PostgresEndpointSpec.property.endpointType">EndpointType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/postgres_endpoint#endpoint_type PostgresEndpoint#endpoint_type}. |
+| <code><a href="#@cdktn/provider-databricks.postgresEndpoint.PostgresEndpointSpec.property.autoscalingLimitMaxCu">AutoscalingLimitMaxCu</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/postgres_endpoint#autoscaling_limit_max_cu PostgresEndpoint#autoscaling_limit_max_cu}. |
+| <code><a href="#@cdktn/provider-databricks.postgresEndpoint.PostgresEndpointSpec.property.autoscalingLimitMinCu">AutoscalingLimitMinCu</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/postgres_endpoint#autoscaling_limit_min_cu PostgresEndpoint#autoscaling_limit_min_cu}. |
+| <code><a href="#@cdktn/provider-databricks.postgresEndpoint.PostgresEndpointSpec.property.disabled">Disabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/postgres_endpoint#disabled PostgresEndpoint#disabled}. |
+| <code><a href="#@cdktn/provider-databricks.postgresEndpoint.PostgresEndpointSpec.property.group">Group</a></code> | <code><a href="#@cdktn/provider-databricks.postgresEndpoint.PostgresEndpointSpecGroup">PostgresEndpointSpecGroup</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/postgres_endpoint#group PostgresEndpoint#group}. |
+| <code><a href="#@cdktn/provider-databricks.postgresEndpoint.PostgresEndpointSpec.property.noSuspension">NoSuspension</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/postgres_endpoint#no_suspension PostgresEndpoint#no_suspension}. |
+| <code><a href="#@cdktn/provider-databricks.postgresEndpoint.PostgresEndpointSpec.property.settings">Settings</a></code> | <code><a href="#@cdktn/provider-databricks.postgresEndpoint.PostgresEndpointSpecSettings">PostgresEndpointSpecSettings</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/postgres_endpoint#settings PostgresEndpoint#settings}. |
+| <code><a href="#@cdktn/provider-databricks.postgresEndpoint.PostgresEndpointSpec.property.suspendTimeoutDuration">SuspendTimeoutDuration</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/postgres_endpoint#suspend_timeout_duration PostgresEndpoint#suspend_timeout_duration}. |
 
 ---
 
@@ -1142,7 +1142,7 @@ EndpointType *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/postgres_endpoint#endpoint_type PostgresEndpoint#endpoint_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/postgres_endpoint#endpoint_type PostgresEndpoint#endpoint_type}.
 
 ---
 
@@ -1154,7 +1154,7 @@ AutoscalingLimitMaxCu *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/postgres_endpoint#autoscaling_limit_max_cu PostgresEndpoint#autoscaling_limit_max_cu}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/postgres_endpoint#autoscaling_limit_max_cu PostgresEndpoint#autoscaling_limit_max_cu}.
 
 ---
 
@@ -1166,7 +1166,7 @@ AutoscalingLimitMinCu *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/postgres_endpoint#autoscaling_limit_min_cu PostgresEndpoint#autoscaling_limit_min_cu}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/postgres_endpoint#autoscaling_limit_min_cu PostgresEndpoint#autoscaling_limit_min_cu}.
 
 ---
 
@@ -1178,7 +1178,7 @@ Disabled interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/postgres_endpoint#disabled PostgresEndpoint#disabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/postgres_endpoint#disabled PostgresEndpoint#disabled}.
 
 ---
 
@@ -1190,7 +1190,7 @@ Group PostgresEndpointSpecGroup
 
 - *Type:* <a href="#@cdktn/provider-databricks.postgresEndpoint.PostgresEndpointSpecGroup">PostgresEndpointSpecGroup</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/postgres_endpoint#group PostgresEndpoint#group}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/postgres_endpoint#group PostgresEndpoint#group}.
 
 ---
 
@@ -1202,7 +1202,7 @@ NoSuspension interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/postgres_endpoint#no_suspension PostgresEndpoint#no_suspension}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/postgres_endpoint#no_suspension PostgresEndpoint#no_suspension}.
 
 ---
 
@@ -1214,7 +1214,7 @@ Settings PostgresEndpointSpecSettings
 
 - *Type:* <a href="#@cdktn/provider-databricks.postgresEndpoint.PostgresEndpointSpecSettings">PostgresEndpointSpecSettings</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/postgres_endpoint#settings PostgresEndpoint#settings}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/postgres_endpoint#settings PostgresEndpoint#settings}.
 
 ---
 
@@ -1226,7 +1226,7 @@ SuspendTimeoutDuration *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/postgres_endpoint#suspend_timeout_duration PostgresEndpoint#suspend_timeout_duration}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/postgres_endpoint#suspend_timeout_duration PostgresEndpoint#suspend_timeout_duration}.
 
 ---
 
@@ -1235,7 +1235,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.postgresEndpoint.PostgresEndpointSpecGroup.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/postgresendpoint"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/postgresendpoint"
 
 &postgresendpoint.PostgresEndpointSpecGroup {
 	Max: *f64,
@@ -1248,9 +1248,9 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/postgres
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.postgresEndpoint.PostgresEndpointSpecGroup.property.max">Max</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/postgres_endpoint#max PostgresEndpoint#max}. |
-| <code><a href="#@cdktn/provider-databricks.postgresEndpoint.PostgresEndpointSpecGroup.property.min">Min</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/postgres_endpoint#min PostgresEndpoint#min}. |
-| <code><a href="#@cdktn/provider-databricks.postgresEndpoint.PostgresEndpointSpecGroup.property.enableReadableSecondaries">EnableReadableSecondaries</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/postgres_endpoint#enable_readable_secondaries PostgresEndpoint#enable_readable_secondaries}. |
+| <code><a href="#@cdktn/provider-databricks.postgresEndpoint.PostgresEndpointSpecGroup.property.max">Max</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/postgres_endpoint#max PostgresEndpoint#max}. |
+| <code><a href="#@cdktn/provider-databricks.postgresEndpoint.PostgresEndpointSpecGroup.property.min">Min</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/postgres_endpoint#min PostgresEndpoint#min}. |
+| <code><a href="#@cdktn/provider-databricks.postgresEndpoint.PostgresEndpointSpecGroup.property.enableReadableSecondaries">EnableReadableSecondaries</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/postgres_endpoint#enable_readable_secondaries PostgresEndpoint#enable_readable_secondaries}. |
 
 ---
 
@@ -1262,7 +1262,7 @@ Max *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/postgres_endpoint#max PostgresEndpoint#max}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/postgres_endpoint#max PostgresEndpoint#max}.
 
 ---
 
@@ -1274,7 +1274,7 @@ Min *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/postgres_endpoint#min PostgresEndpoint#min}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/postgres_endpoint#min PostgresEndpoint#min}.
 
 ---
 
@@ -1286,7 +1286,7 @@ EnableReadableSecondaries interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/postgres_endpoint#enable_readable_secondaries PostgresEndpoint#enable_readable_secondaries}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/postgres_endpoint#enable_readable_secondaries PostgresEndpoint#enable_readable_secondaries}.
 
 ---
 
@@ -1295,7 +1295,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.postgresEndpoint.PostgresEndpointSpecSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/postgresendpoint"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/postgresendpoint"
 
 &postgresendpoint.PostgresEndpointSpecSettings {
 	PgSettings: *map[string]*string,
@@ -1306,7 +1306,7 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/postgres
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.postgresEndpoint.PostgresEndpointSpecSettings.property.pgSettings">PgSettings</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/postgres_endpoint#pg_settings PostgresEndpoint#pg_settings}. |
+| <code><a href="#@cdktn/provider-databricks.postgresEndpoint.PostgresEndpointSpecSettings.property.pgSettings">PgSettings</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/postgres_endpoint#pg_settings PostgresEndpoint#pg_settings}. |
 
 ---
 
@@ -1318,7 +1318,7 @@ PgSettings *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/postgres_endpoint#pg_settings PostgresEndpoint#pg_settings}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/postgres_endpoint#pg_settings PostgresEndpoint#pg_settings}.
 
 ---
 
@@ -1327,7 +1327,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.postgresEndpoint.PostgresEndpointStatus.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/postgresendpoint"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/postgresendpoint"
 
 &postgresendpoint.PostgresEndpointStatus {
 
@@ -1340,7 +1340,7 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/postgres
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.postgresEndpoint.PostgresEndpointStatusGroup.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/postgresendpoint"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/postgresendpoint"
 
 &postgresendpoint.PostgresEndpointStatusGroup {
 	Max: *f64,
@@ -1352,8 +1352,8 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/postgres
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.postgresEndpoint.PostgresEndpointStatusGroup.property.max">Max</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/postgres_endpoint#max PostgresEndpoint#max}. |
-| <code><a href="#@cdktn/provider-databricks.postgresEndpoint.PostgresEndpointStatusGroup.property.min">Min</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/postgres_endpoint#min PostgresEndpoint#min}. |
+| <code><a href="#@cdktn/provider-databricks.postgresEndpoint.PostgresEndpointStatusGroup.property.max">Max</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/postgres_endpoint#max PostgresEndpoint#max}. |
+| <code><a href="#@cdktn/provider-databricks.postgresEndpoint.PostgresEndpointStatusGroup.property.min">Min</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/postgres_endpoint#min PostgresEndpoint#min}. |
 
 ---
 
@@ -1365,7 +1365,7 @@ Max *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/postgres_endpoint#max PostgresEndpoint#max}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/postgres_endpoint#max PostgresEndpoint#max}.
 
 ---
 
@@ -1377,7 +1377,7 @@ Min *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/postgres_endpoint#min PostgresEndpoint#min}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/postgres_endpoint#min PostgresEndpoint#min}.
 
 ---
 
@@ -1386,7 +1386,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.postgresEndpoint.PostgresEndpointStatusHosts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/postgresendpoint"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/postgresendpoint"
 
 &postgresendpoint.PostgresEndpointStatusHosts {
 
@@ -1399,7 +1399,7 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/postgres
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.postgresEndpoint.PostgresEndpointStatusSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/postgresendpoint"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/postgresendpoint"
 
 &postgresendpoint.PostgresEndpointStatusSettings {
 	PgSettings: *map[string]*string,
@@ -1410,7 +1410,7 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/postgres
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.postgresEndpoint.PostgresEndpointStatusSettings.property.pgSettings">PgSettings</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/postgres_endpoint#pg_settings PostgresEndpoint#pg_settings}. |
+| <code><a href="#@cdktn/provider-databricks.postgresEndpoint.PostgresEndpointStatusSettings.property.pgSettings">PgSettings</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/postgres_endpoint#pg_settings PostgresEndpoint#pg_settings}. |
 
 ---
 
@@ -1422,7 +1422,7 @@ PgSettings *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/postgres_endpoint#pg_settings PostgresEndpoint#pg_settings}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/postgres_endpoint#pg_settings PostgresEndpoint#pg_settings}.
 
 ---
 
@@ -1433,7 +1433,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.postgresEndpoint.PostgresEndpointProviderConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/postgresendpoint"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/postgresendpoint"
 
 postgresendpoint.NewPostgresEndpointProviderConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PostgresEndpointProviderConfigOutputReference
 ```
@@ -1711,7 +1711,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.postgresEndpoint.PostgresEndpointSpecGroupOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/postgresendpoint"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/postgresendpoint"
 
 postgresendpoint.NewPostgresEndpointSpecGroupOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PostgresEndpointSpecGroupOutputReference
 ```
@@ -2033,7 +2033,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.postgresEndpoint.PostgresEndpointSpecOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/postgresendpoint"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/postgresendpoint"
 
 postgresendpoint.NewPostgresEndpointSpecOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PostgresEndpointSpecOutputReference
 ```
@@ -2533,7 +2533,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.postgresEndpoint.PostgresEndpointSpecSettingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/postgresendpoint"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/postgresendpoint"
 
 postgresendpoint.NewPostgresEndpointSpecSettingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PostgresEndpointSpecSettingsOutputReference
 ```
@@ -2811,7 +2811,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.postgresEndpoint.PostgresEndpointStatusGroupOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/postgresendpoint"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/postgresendpoint"
 
 postgresendpoint.NewPostgresEndpointStatusGroupOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PostgresEndpointStatusGroupOutputReference
 ```
@@ -3115,7 +3115,7 @@ func InternalValue() PostgresEndpointStatusGroup
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.postgresEndpoint.PostgresEndpointStatusHostsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/postgresendpoint"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/postgresendpoint"
 
 postgresendpoint.NewPostgresEndpointStatusHostsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PostgresEndpointStatusHostsOutputReference
 ```
@@ -3408,7 +3408,7 @@ func InternalValue() PostgresEndpointStatusHosts
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.postgresEndpoint.PostgresEndpointStatusOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/postgresendpoint"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/postgresendpoint"
 
 postgresendpoint.NewPostgresEndpointStatusOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PostgresEndpointStatusOutputReference
 ```
@@ -3789,7 +3789,7 @@ func InternalValue() PostgresEndpointStatus
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.postgresEndpoint.PostgresEndpointStatusSettingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/postgresendpoint"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/postgresendpoint"
 
 postgresendpoint.NewPostgresEndpointStatusSettingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PostgresEndpointStatusSettingsOutputReference
 ```

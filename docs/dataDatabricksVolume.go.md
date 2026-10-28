@@ -4,12 +4,12 @@
 
 ### DataDatabricksVolume <a name="DataDatabricksVolume" id="@cdktn/provider-databricks.dataDatabricksVolume.DataDatabricksVolume"></a>
 
-Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/data-sources/volume databricks_volume}.
+Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/volume databricks_volume}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksVolume.DataDatabricksVolume.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksvolume"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/datadatabricksvolume"
 
 datadatabricksvolume.NewDataDatabricksVolume(scope Construct, id *string, config DataDatabricksVolumeConfig) DataDatabricksVolume
 ```
@@ -345,7 +345,7 @@ func ResetVolumeInfo()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-databricks.dataDatabricksVolume.DataDatabricksVolume.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksvolume"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/datadatabricksvolume"
 
 datadatabricksvolume.DataDatabricksVolume_IsConstruct(x interface{}) *bool
 ```
@@ -377,7 +377,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-databricks.dataDatabricksVolume.DataDatabricksVolume.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksvolume"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/datadatabricksvolume"
 
 datadatabricksvolume.DataDatabricksVolume_IsTerraformElement(x interface{}) *bool
 ```
@@ -391,7 +391,7 @@ datadatabricksvolume.DataDatabricksVolume_IsTerraformElement(x interface{}) *boo
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-databricks.dataDatabricksVolume.DataDatabricksVolume.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksvolume"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/datadatabricksvolume"
 
 datadatabricksvolume.DataDatabricksVolume_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -405,7 +405,7 @@ datadatabricksvolume.DataDatabricksVolume_IsTerraformDataSource(x interface{}) *
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-databricks.dataDatabricksVolume.DataDatabricksVolume.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksvolume"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/datadatabricksvolume"
 
 datadatabricksvolume.DataDatabricksVolume_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -434,7 +434,7 @@ The construct id used in the generated config for the DataDatabricksVolume to im
 
 The id of the existing DataDatabricksVolume that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/data-sources/volume#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/volume#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -700,7 +700,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksVolume.DataDatabricksVolumeConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksvolume"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/datadatabricksvolume"
 
 &datadatabricksvolume.DataDatabricksVolumeConfig {
 	Connection: interface{},
@@ -712,8 +712,8 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadata
 	Provisioners: *[]interface{},
 	Name: *string,
 	Id: *string,
-	ProviderConfig: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18.dataDatabricksVolume.DataDatabricksVolumeProviderConfig,
-	VolumeInfo: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18.dataDatabricksVolume.DataDatabricksVolumeVolumeInfo,
+	ProviderConfig: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19.dataDatabricksVolume.DataDatabricksVolumeProviderConfig,
+	VolumeInfo: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19.dataDatabricksVolume.DataDatabricksVolumeVolumeInfo,
 }
 ```
 
@@ -728,8 +728,8 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadata
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksVolume.DataDatabricksVolumeConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksVolume.DataDatabricksVolumeConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksVolume.DataDatabricksVolumeConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksVolume.DataDatabricksVolumeConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/data-sources/volume#name DataDatabricksVolume#name}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksVolume.DataDatabricksVolumeConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/data-sources/volume#id DataDatabricksVolume#id}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksVolume.DataDatabricksVolumeConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/volume#name DataDatabricksVolume#name}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksVolume.DataDatabricksVolumeConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/volume#id DataDatabricksVolume#id}. |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksVolume.DataDatabricksVolumeConfig.property.providerConfig">ProviderConfig</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksVolume.DataDatabricksVolumeProviderConfig">DataDatabricksVolumeProviderConfig</a></code> | provider_config block. |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksVolume.DataDatabricksVolumeConfig.property.volumeInfo">VolumeInfo</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksVolume.DataDatabricksVolumeVolumeInfo">DataDatabricksVolumeVolumeInfo</a></code> | volume_info block. |
 
@@ -813,7 +813,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/data-sources/volume#name DataDatabricksVolume#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/volume#name DataDatabricksVolume#name}.
 
 ---
 
@@ -825,7 +825,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/data-sources/volume#id DataDatabricksVolume#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/volume#id DataDatabricksVolume#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -842,7 +842,7 @@ ProviderConfig DataDatabricksVolumeProviderConfig
 
 provider_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/data-sources/volume#provider_config DataDatabricksVolume#provider_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/volume#provider_config DataDatabricksVolume#provider_config}
 
 ---
 
@@ -856,7 +856,7 @@ VolumeInfo DataDatabricksVolumeVolumeInfo
 
 volume_info block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/data-sources/volume#volume_info DataDatabricksVolume#volume_info}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/volume#volume_info DataDatabricksVolume#volume_info}
 
 ---
 
@@ -865,7 +865,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksVolume.DataDatabricksVolumeProviderConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksvolume"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/datadatabricksvolume"
 
 &datadatabricksvolume.DataDatabricksVolumeProviderConfig {
 	WorkspaceId: *string,
@@ -876,7 +876,7 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadata
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksVolume.DataDatabricksVolumeProviderConfig.property.workspaceId">WorkspaceId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/data-sources/volume#workspace_id DataDatabricksVolume#workspace_id}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksVolume.DataDatabricksVolumeProviderConfig.property.workspaceId">WorkspaceId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/volume#workspace_id DataDatabricksVolume#workspace_id}. |
 
 ---
 
@@ -888,7 +888,7 @@ WorkspaceId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/data-sources/volume#workspace_id DataDatabricksVolume#workspace_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/volume#workspace_id DataDatabricksVolume#workspace_id}.
 
 ---
 
@@ -897,7 +897,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksVolume.DataDatabricksVolumeVolumeInfo.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksvolume"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/datadatabricksvolume"
 
 &datadatabricksvolume.DataDatabricksVolumeVolumeInfo {
 	AccessPoint: *string,
@@ -906,7 +906,7 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadata
 	Comment: *string,
 	CreatedAt: *f64,
 	CreatedBy: *string,
-	EncryptionDetails: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18.dataDatabricksVolume.DataDatabricksVolumeVolumeInfoEncryptionDetails,
+	EncryptionDetails: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19.dataDatabricksVolume.DataDatabricksVolumeVolumeInfoEncryptionDetails,
 	FullName: *string,
 	MetastoreId: *string,
 	Name: *string,
@@ -924,23 +924,23 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadata
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksVolume.DataDatabricksVolumeVolumeInfo.property.accessPoint">AccessPoint</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/data-sources/volume#access_point DataDatabricksVolume#access_point}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksVolume.DataDatabricksVolumeVolumeInfo.property.browseOnly">BrowseOnly</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/data-sources/volume#browse_only DataDatabricksVolume#browse_only}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksVolume.DataDatabricksVolumeVolumeInfo.property.catalogName">CatalogName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/data-sources/volume#catalog_name DataDatabricksVolume#catalog_name}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksVolume.DataDatabricksVolumeVolumeInfo.property.comment">Comment</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/data-sources/volume#comment DataDatabricksVolume#comment}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksVolume.DataDatabricksVolumeVolumeInfo.property.createdAt">CreatedAt</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/data-sources/volume#created_at DataDatabricksVolume#created_at}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksVolume.DataDatabricksVolumeVolumeInfo.property.createdBy">CreatedBy</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/data-sources/volume#created_by DataDatabricksVolume#created_by}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksVolume.DataDatabricksVolumeVolumeInfo.property.accessPoint">AccessPoint</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/volume#access_point DataDatabricksVolume#access_point}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksVolume.DataDatabricksVolumeVolumeInfo.property.browseOnly">BrowseOnly</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/volume#browse_only DataDatabricksVolume#browse_only}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksVolume.DataDatabricksVolumeVolumeInfo.property.catalogName">CatalogName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/volume#catalog_name DataDatabricksVolume#catalog_name}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksVolume.DataDatabricksVolumeVolumeInfo.property.comment">Comment</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/volume#comment DataDatabricksVolume#comment}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksVolume.DataDatabricksVolumeVolumeInfo.property.createdAt">CreatedAt</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/volume#created_at DataDatabricksVolume#created_at}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksVolume.DataDatabricksVolumeVolumeInfo.property.createdBy">CreatedBy</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/volume#created_by DataDatabricksVolume#created_by}. |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksVolume.DataDatabricksVolumeVolumeInfo.property.encryptionDetails">EncryptionDetails</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksVolume.DataDatabricksVolumeVolumeInfoEncryptionDetails">DataDatabricksVolumeVolumeInfoEncryptionDetails</a></code> | encryption_details block. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksVolume.DataDatabricksVolumeVolumeInfo.property.fullName">FullName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/data-sources/volume#full_name DataDatabricksVolume#full_name}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksVolume.DataDatabricksVolumeVolumeInfo.property.metastoreId">MetastoreId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/data-sources/volume#metastore_id DataDatabricksVolume#metastore_id}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksVolume.DataDatabricksVolumeVolumeInfo.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/data-sources/volume#name DataDatabricksVolume#name}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksVolume.DataDatabricksVolumeVolumeInfo.property.owner">Owner</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/data-sources/volume#owner DataDatabricksVolume#owner}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksVolume.DataDatabricksVolumeVolumeInfo.property.schemaName">SchemaName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/data-sources/volume#schema_name DataDatabricksVolume#schema_name}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksVolume.DataDatabricksVolumeVolumeInfo.property.storageLocation">StorageLocation</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/data-sources/volume#storage_location DataDatabricksVolume#storage_location}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksVolume.DataDatabricksVolumeVolumeInfo.property.updatedAt">UpdatedAt</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/data-sources/volume#updated_at DataDatabricksVolume#updated_at}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksVolume.DataDatabricksVolumeVolumeInfo.property.updatedBy">UpdatedBy</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/data-sources/volume#updated_by DataDatabricksVolume#updated_by}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksVolume.DataDatabricksVolumeVolumeInfo.property.volumeId">VolumeId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/data-sources/volume#volume_id DataDatabricksVolume#volume_id}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksVolume.DataDatabricksVolumeVolumeInfo.property.volumeType">VolumeType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/data-sources/volume#volume_type DataDatabricksVolume#volume_type}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksVolume.DataDatabricksVolumeVolumeInfo.property.fullName">FullName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/volume#full_name DataDatabricksVolume#full_name}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksVolume.DataDatabricksVolumeVolumeInfo.property.metastoreId">MetastoreId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/volume#metastore_id DataDatabricksVolume#metastore_id}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksVolume.DataDatabricksVolumeVolumeInfo.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/volume#name DataDatabricksVolume#name}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksVolume.DataDatabricksVolumeVolumeInfo.property.owner">Owner</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/volume#owner DataDatabricksVolume#owner}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksVolume.DataDatabricksVolumeVolumeInfo.property.schemaName">SchemaName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/volume#schema_name DataDatabricksVolume#schema_name}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksVolume.DataDatabricksVolumeVolumeInfo.property.storageLocation">StorageLocation</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/volume#storage_location DataDatabricksVolume#storage_location}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksVolume.DataDatabricksVolumeVolumeInfo.property.updatedAt">UpdatedAt</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/volume#updated_at DataDatabricksVolume#updated_at}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksVolume.DataDatabricksVolumeVolumeInfo.property.updatedBy">UpdatedBy</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/volume#updated_by DataDatabricksVolume#updated_by}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksVolume.DataDatabricksVolumeVolumeInfo.property.volumeId">VolumeId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/volume#volume_id DataDatabricksVolume#volume_id}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksVolume.DataDatabricksVolumeVolumeInfo.property.volumeType">VolumeType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/volume#volume_type DataDatabricksVolume#volume_type}. |
 
 ---
 
@@ -952,7 +952,7 @@ AccessPoint *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/data-sources/volume#access_point DataDatabricksVolume#access_point}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/volume#access_point DataDatabricksVolume#access_point}.
 
 ---
 
@@ -964,7 +964,7 @@ BrowseOnly interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/data-sources/volume#browse_only DataDatabricksVolume#browse_only}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/volume#browse_only DataDatabricksVolume#browse_only}.
 
 ---
 
@@ -976,7 +976,7 @@ CatalogName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/data-sources/volume#catalog_name DataDatabricksVolume#catalog_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/volume#catalog_name DataDatabricksVolume#catalog_name}.
 
 ---
 
@@ -988,7 +988,7 @@ Comment *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/data-sources/volume#comment DataDatabricksVolume#comment}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/volume#comment DataDatabricksVolume#comment}.
 
 ---
 
@@ -1000,7 +1000,7 @@ CreatedAt *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/data-sources/volume#created_at DataDatabricksVolume#created_at}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/volume#created_at DataDatabricksVolume#created_at}.
 
 ---
 
@@ -1012,7 +1012,7 @@ CreatedBy *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/data-sources/volume#created_by DataDatabricksVolume#created_by}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/volume#created_by DataDatabricksVolume#created_by}.
 
 ---
 
@@ -1026,7 +1026,7 @@ EncryptionDetails DataDatabricksVolumeVolumeInfoEncryptionDetails
 
 encryption_details block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/data-sources/volume#encryption_details DataDatabricksVolume#encryption_details}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/volume#encryption_details DataDatabricksVolume#encryption_details}
 
 ---
 
@@ -1038,7 +1038,7 @@ FullName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/data-sources/volume#full_name DataDatabricksVolume#full_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/volume#full_name DataDatabricksVolume#full_name}.
 
 ---
 
@@ -1050,7 +1050,7 @@ MetastoreId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/data-sources/volume#metastore_id DataDatabricksVolume#metastore_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/volume#metastore_id DataDatabricksVolume#metastore_id}.
 
 ---
 
@@ -1062,7 +1062,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/data-sources/volume#name DataDatabricksVolume#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/volume#name DataDatabricksVolume#name}.
 
 ---
 
@@ -1074,7 +1074,7 @@ Owner *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/data-sources/volume#owner DataDatabricksVolume#owner}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/volume#owner DataDatabricksVolume#owner}.
 
 ---
 
@@ -1086,7 +1086,7 @@ SchemaName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/data-sources/volume#schema_name DataDatabricksVolume#schema_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/volume#schema_name DataDatabricksVolume#schema_name}.
 
 ---
 
@@ -1098,7 +1098,7 @@ StorageLocation *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/data-sources/volume#storage_location DataDatabricksVolume#storage_location}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/volume#storage_location DataDatabricksVolume#storage_location}.
 
 ---
 
@@ -1110,7 +1110,7 @@ UpdatedAt *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/data-sources/volume#updated_at DataDatabricksVolume#updated_at}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/volume#updated_at DataDatabricksVolume#updated_at}.
 
 ---
 
@@ -1122,7 +1122,7 @@ UpdatedBy *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/data-sources/volume#updated_by DataDatabricksVolume#updated_by}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/volume#updated_by DataDatabricksVolume#updated_by}.
 
 ---
 
@@ -1134,7 +1134,7 @@ VolumeId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/data-sources/volume#volume_id DataDatabricksVolume#volume_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/volume#volume_id DataDatabricksVolume#volume_id}.
 
 ---
 
@@ -1146,7 +1146,7 @@ VolumeType *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/data-sources/volume#volume_type DataDatabricksVolume#volume_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/volume#volume_type DataDatabricksVolume#volume_type}.
 
 ---
 
@@ -1155,10 +1155,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksVolume.DataDatabricksVolumeVolumeInfoEncryptionDetails.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksvolume"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/datadatabricksvolume"
 
 &datadatabricksvolume.DataDatabricksVolumeVolumeInfoEncryptionDetails {
-	SseEncryptionDetails: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18.dataDatabricksVolume.DataDatabricksVolumeVolumeInfoEncryptionDetailsSseEncryptionDetails,
+	SseEncryptionDetails: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19.dataDatabricksVolume.DataDatabricksVolumeVolumeInfoEncryptionDetailsSseEncryptionDetails,
 }
 ```
 
@@ -1180,7 +1180,7 @@ SseEncryptionDetails DataDatabricksVolumeVolumeInfoEncryptionDetailsSseEncryptio
 
 sse_encryption_details block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/data-sources/volume#sse_encryption_details DataDatabricksVolume#sse_encryption_details}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/volume#sse_encryption_details DataDatabricksVolume#sse_encryption_details}
 
 ---
 
@@ -1189,7 +1189,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksVolume.DataDatabricksVolumeVolumeInfoEncryptionDetailsSseEncryptionDetails.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksvolume"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/datadatabricksvolume"
 
 &datadatabricksvolume.DataDatabricksVolumeVolumeInfoEncryptionDetailsSseEncryptionDetails {
 	Algorithm: *string,
@@ -1201,8 +1201,8 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadata
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksVolume.DataDatabricksVolumeVolumeInfoEncryptionDetailsSseEncryptionDetails.property.algorithm">Algorithm</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/data-sources/volume#algorithm DataDatabricksVolume#algorithm}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksVolume.DataDatabricksVolumeVolumeInfoEncryptionDetailsSseEncryptionDetails.property.awsKmsKeyArn">AwsKmsKeyArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/data-sources/volume#aws_kms_key_arn DataDatabricksVolume#aws_kms_key_arn}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksVolume.DataDatabricksVolumeVolumeInfoEncryptionDetailsSseEncryptionDetails.property.algorithm">Algorithm</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/volume#algorithm DataDatabricksVolume#algorithm}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksVolume.DataDatabricksVolumeVolumeInfoEncryptionDetailsSseEncryptionDetails.property.awsKmsKeyArn">AwsKmsKeyArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/volume#aws_kms_key_arn DataDatabricksVolume#aws_kms_key_arn}. |
 
 ---
 
@@ -1214,7 +1214,7 @@ Algorithm *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/data-sources/volume#algorithm DataDatabricksVolume#algorithm}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/volume#algorithm DataDatabricksVolume#algorithm}.
 
 ---
 
@@ -1226,7 +1226,7 @@ AwsKmsKeyArn *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/data-sources/volume#aws_kms_key_arn DataDatabricksVolume#aws_kms_key_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/volume#aws_kms_key_arn DataDatabricksVolume#aws_kms_key_arn}.
 
 ---
 
@@ -1237,7 +1237,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksVolume.DataDatabricksVolumeProviderConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksvolume"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/datadatabricksvolume"
 
 datadatabricksvolume.NewDataDatabricksVolumeProviderConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksVolumeProviderConfigOutputReference
 ```
@@ -1515,7 +1515,7 @@ func InternalValue() DataDatabricksVolumeProviderConfig
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksVolume.DataDatabricksVolumeVolumeInfoEncryptionDetailsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksvolume"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/datadatabricksvolume"
 
 datadatabricksvolume.NewDataDatabricksVolumeVolumeInfoEncryptionDetailsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksVolumeVolumeInfoEncryptionDetailsOutputReference
 ```
@@ -1806,7 +1806,7 @@ func InternalValue() DataDatabricksVolumeVolumeInfoEncryptionDetails
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksVolume.DataDatabricksVolumeVolumeInfoEncryptionDetailsSseEncryptionDetailsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksvolume"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/datadatabricksvolume"
 
 datadatabricksvolume.NewDataDatabricksVolumeVolumeInfoEncryptionDetailsSseEncryptionDetailsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksVolumeVolumeInfoEncryptionDetailsSseEncryptionDetailsOutputReference
 ```
@@ -2113,7 +2113,7 @@ func InternalValue() DataDatabricksVolumeVolumeInfoEncryptionDetailsSseEncryptio
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksVolume.DataDatabricksVolumeVolumeInfoOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksvolume"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/datadatabricksvolume"
 
 datadatabricksvolume.NewDataDatabricksVolumeVolumeInfoOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksVolumeVolumeInfoOutputReference
 ```

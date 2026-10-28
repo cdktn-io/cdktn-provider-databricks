@@ -4,12 +4,12 @@
 
 ### AppSpace <a name="AppSpace" id="@cdktn/provider-databricks.appSpace.AppSpace"></a>
 
-Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/app_space databricks_app_space}.
+Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/app_space databricks_app_space}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.appSpace.AppSpace.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/appspace"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/appspace"
 
 appspace.NewAppSpace(scope Construct, id *string, config AppSpaceConfig) AppSpace
 ```
@@ -468,7 +468,7 @@ func ResetUserApiScopes()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-databricks.appSpace.AppSpace.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/appspace"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/appspace"
 
 appspace.AppSpace_IsConstruct(x interface{}) *bool
 ```
@@ -500,7 +500,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-databricks.appSpace.AppSpace.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/appspace"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/appspace"
 
 appspace.AppSpace_IsTerraformElement(x interface{}) *bool
 ```
@@ -514,7 +514,7 @@ appspace.AppSpace_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-databricks.appSpace.AppSpace.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/appspace"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/appspace"
 
 appspace.AppSpace_IsTerraformResource(x interface{}) *bool
 ```
@@ -528,7 +528,7 @@ appspace.AppSpace_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-databricks.appSpace.AppSpace.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/appspace"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/appspace"
 
 appspace.AppSpace_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -557,7 +557,7 @@ The construct id used in the generated config for the AppSpace to import.
 
 The id of the existing AppSpace that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/app_space#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/app_space#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1032,7 +1032,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.appSpace.AppSpaceConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/appspace"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/appspace"
 
 &appspace.AppSpaceConfig {
 	Connection: interface{},
@@ -1045,7 +1045,7 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/appspace
 	Name: *string,
 	AssumeGroupId: *string,
 	Description: *string,
-	ProviderConfig: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18.appSpace.AppSpaceProviderConfig,
+	ProviderConfig: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19.appSpace.AppSpaceProviderConfig,
 	Resources: interface{},
 	UsagePolicyId: *string,
 	UserApiScopes: *[]*string,
@@ -1063,13 +1063,13 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/appspace
 | <code><a href="#@cdktn/provider-databricks.appSpace.AppSpaceConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.appSpace.AppSpaceConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.appSpace.AppSpaceConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-databricks.appSpace.AppSpaceConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/app_space#name AppSpace#name}. |
-| <code><a href="#@cdktn/provider-databricks.appSpace.AppSpaceConfig.property.assumeGroupId">AssumeGroupId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/app_space#assume_group_id AppSpace#assume_group_id}. |
-| <code><a href="#@cdktn/provider-databricks.appSpace.AppSpaceConfig.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/app_space#description AppSpace#description}. |
-| <code><a href="#@cdktn/provider-databricks.appSpace.AppSpaceConfig.property.providerConfig">ProviderConfig</a></code> | <code><a href="#@cdktn/provider-databricks.appSpace.AppSpaceProviderConfig">AppSpaceProviderConfig</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/app_space#provider_config AppSpace#provider_config}. |
-| <code><a href="#@cdktn/provider-databricks.appSpace.AppSpaceConfig.property.resources">Resources</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/app_space#resources AppSpace#resources}. |
-| <code><a href="#@cdktn/provider-databricks.appSpace.AppSpaceConfig.property.usagePolicyId">UsagePolicyId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/app_space#usage_policy_id AppSpace#usage_policy_id}. |
-| <code><a href="#@cdktn/provider-databricks.appSpace.AppSpaceConfig.property.userApiScopes">UserApiScopes</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/app_space#user_api_scopes AppSpace#user_api_scopes}. |
+| <code><a href="#@cdktn/provider-databricks.appSpace.AppSpaceConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/app_space#name AppSpace#name}. |
+| <code><a href="#@cdktn/provider-databricks.appSpace.AppSpaceConfig.property.assumeGroupId">AssumeGroupId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/app_space#assume_group_id AppSpace#assume_group_id}. |
+| <code><a href="#@cdktn/provider-databricks.appSpace.AppSpaceConfig.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/app_space#description AppSpace#description}. |
+| <code><a href="#@cdktn/provider-databricks.appSpace.AppSpaceConfig.property.providerConfig">ProviderConfig</a></code> | <code><a href="#@cdktn/provider-databricks.appSpace.AppSpaceProviderConfig">AppSpaceProviderConfig</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/app_space#provider_config AppSpace#provider_config}. |
+| <code><a href="#@cdktn/provider-databricks.appSpace.AppSpaceConfig.property.resources">Resources</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/app_space#resources AppSpace#resources}. |
+| <code><a href="#@cdktn/provider-databricks.appSpace.AppSpaceConfig.property.usagePolicyId">UsagePolicyId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/app_space#usage_policy_id AppSpace#usage_policy_id}. |
+| <code><a href="#@cdktn/provider-databricks.appSpace.AppSpaceConfig.property.userApiScopes">UserApiScopes</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/app_space#user_api_scopes AppSpace#user_api_scopes}. |
 
 ---
 
@@ -1151,7 +1151,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/app_space#name AppSpace#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/app_space#name AppSpace#name}.
 
 ---
 
@@ -1163,7 +1163,7 @@ AssumeGroupId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/app_space#assume_group_id AppSpace#assume_group_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/app_space#assume_group_id AppSpace#assume_group_id}.
 
 ---
 
@@ -1175,7 +1175,7 @@ Description *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/app_space#description AppSpace#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/app_space#description AppSpace#description}.
 
 ---
 
@@ -1187,7 +1187,7 @@ ProviderConfig AppSpaceProviderConfig
 
 - *Type:* <a href="#@cdktn/provider-databricks.appSpace.AppSpaceProviderConfig">AppSpaceProviderConfig</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/app_space#provider_config AppSpace#provider_config}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/app_space#provider_config AppSpace#provider_config}.
 
 ---
 
@@ -1199,7 +1199,7 @@ Resources interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/app_space#resources AppSpace#resources}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/app_space#resources AppSpace#resources}.
 
 ---
 
@@ -1211,7 +1211,7 @@ UsagePolicyId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/app_space#usage_policy_id AppSpace#usage_policy_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/app_space#usage_policy_id AppSpace#usage_policy_id}.
 
 ---
 
@@ -1223,7 +1223,7 @@ UserApiScopes *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/app_space#user_api_scopes AppSpace#user_api_scopes}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/app_space#user_api_scopes AppSpace#user_api_scopes}.
 
 ---
 
@@ -1232,7 +1232,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.appSpace.AppSpaceProviderConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/appspace"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/appspace"
 
 &appspace.AppSpaceProviderConfig {
 	WorkspaceId: *string,
@@ -1243,7 +1243,7 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/appspace
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.appSpace.AppSpaceProviderConfig.property.workspaceId">WorkspaceId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/app_space#workspace_id AppSpace#workspace_id}. |
+| <code><a href="#@cdktn/provider-databricks.appSpace.AppSpaceProviderConfig.property.workspaceId">WorkspaceId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/app_space#workspace_id AppSpace#workspace_id}. |
 
 ---
 
@@ -1255,7 +1255,7 @@ WorkspaceId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/app_space#workspace_id AppSpace#workspace_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/app_space#workspace_id AppSpace#workspace_id}.
 
 ---
 
@@ -1264,21 +1264,21 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.appSpace.AppSpaceResources.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/appspace"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/appspace"
 
 &appspace.AppSpaceResources {
 	Name: *string,
-	App: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18.appSpace.AppSpaceResourcesApp,
-	Database: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18.appSpace.AppSpaceResourcesDatabase,
+	App: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19.appSpace.AppSpaceResourcesApp,
+	Database: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19.appSpace.AppSpaceResourcesDatabase,
 	Description: *string,
-	Experiment: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18.appSpace.AppSpaceResourcesExperiment,
-	GenieSpace: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18.appSpace.AppSpaceResourcesGenieSpace,
-	Job: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18.appSpace.AppSpaceResourcesJob,
-	Postgres: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18.appSpace.AppSpaceResourcesPostgres,
-	Secret: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18.appSpace.AppSpaceResourcesSecret,
-	ServingEndpoint: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18.appSpace.AppSpaceResourcesServingEndpoint,
-	SqlWarehouse: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18.appSpace.AppSpaceResourcesSqlWarehouse,
-	UcSecurable: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18.appSpace.AppSpaceResourcesUcSecurable,
+	Experiment: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19.appSpace.AppSpaceResourcesExperiment,
+	GenieSpace: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19.appSpace.AppSpaceResourcesGenieSpace,
+	Job: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19.appSpace.AppSpaceResourcesJob,
+	Postgres: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19.appSpace.AppSpaceResourcesPostgres,
+	Secret: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19.appSpace.AppSpaceResourcesSecret,
+	ServingEndpoint: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19.appSpace.AppSpaceResourcesServingEndpoint,
+	SqlWarehouse: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19.appSpace.AppSpaceResourcesSqlWarehouse,
+	UcSecurable: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19.appSpace.AppSpaceResourcesUcSecurable,
 }
 ```
 
@@ -1286,18 +1286,18 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/appspace
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.appSpace.AppSpaceResources.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/app_space#name AppSpace#name}. |
-| <code><a href="#@cdktn/provider-databricks.appSpace.AppSpaceResources.property.app">App</a></code> | <code><a href="#@cdktn/provider-databricks.appSpace.AppSpaceResourcesApp">AppSpaceResourcesApp</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/app_space#app AppSpace#app}. |
-| <code><a href="#@cdktn/provider-databricks.appSpace.AppSpaceResources.property.database">Database</a></code> | <code><a href="#@cdktn/provider-databricks.appSpace.AppSpaceResourcesDatabase">AppSpaceResourcesDatabase</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/app_space#database AppSpace#database}. |
-| <code><a href="#@cdktn/provider-databricks.appSpace.AppSpaceResources.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/app_space#description AppSpace#description}. |
-| <code><a href="#@cdktn/provider-databricks.appSpace.AppSpaceResources.property.experiment">Experiment</a></code> | <code><a href="#@cdktn/provider-databricks.appSpace.AppSpaceResourcesExperiment">AppSpaceResourcesExperiment</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/app_space#experiment AppSpace#experiment}. |
-| <code><a href="#@cdktn/provider-databricks.appSpace.AppSpaceResources.property.genieSpace">GenieSpace</a></code> | <code><a href="#@cdktn/provider-databricks.appSpace.AppSpaceResourcesGenieSpace">AppSpaceResourcesGenieSpace</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/app_space#genie_space AppSpace#genie_space}. |
-| <code><a href="#@cdktn/provider-databricks.appSpace.AppSpaceResources.property.job">Job</a></code> | <code><a href="#@cdktn/provider-databricks.appSpace.AppSpaceResourcesJob">AppSpaceResourcesJob</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/app_space#job AppSpace#job}. |
-| <code><a href="#@cdktn/provider-databricks.appSpace.AppSpaceResources.property.postgres">Postgres</a></code> | <code><a href="#@cdktn/provider-databricks.appSpace.AppSpaceResourcesPostgres">AppSpaceResourcesPostgres</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/app_space#postgres AppSpace#postgres}. |
-| <code><a href="#@cdktn/provider-databricks.appSpace.AppSpaceResources.property.secret">Secret</a></code> | <code><a href="#@cdktn/provider-databricks.appSpace.AppSpaceResourcesSecret">AppSpaceResourcesSecret</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/app_space#secret AppSpace#secret}. |
-| <code><a href="#@cdktn/provider-databricks.appSpace.AppSpaceResources.property.servingEndpoint">ServingEndpoint</a></code> | <code><a href="#@cdktn/provider-databricks.appSpace.AppSpaceResourcesServingEndpoint">AppSpaceResourcesServingEndpoint</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/app_space#serving_endpoint AppSpace#serving_endpoint}. |
-| <code><a href="#@cdktn/provider-databricks.appSpace.AppSpaceResources.property.sqlWarehouse">SqlWarehouse</a></code> | <code><a href="#@cdktn/provider-databricks.appSpace.AppSpaceResourcesSqlWarehouse">AppSpaceResourcesSqlWarehouse</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/app_space#sql_warehouse AppSpace#sql_warehouse}. |
-| <code><a href="#@cdktn/provider-databricks.appSpace.AppSpaceResources.property.ucSecurable">UcSecurable</a></code> | <code><a href="#@cdktn/provider-databricks.appSpace.AppSpaceResourcesUcSecurable">AppSpaceResourcesUcSecurable</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/app_space#uc_securable AppSpace#uc_securable}. |
+| <code><a href="#@cdktn/provider-databricks.appSpace.AppSpaceResources.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/app_space#name AppSpace#name}. |
+| <code><a href="#@cdktn/provider-databricks.appSpace.AppSpaceResources.property.app">App</a></code> | <code><a href="#@cdktn/provider-databricks.appSpace.AppSpaceResourcesApp">AppSpaceResourcesApp</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/app_space#app AppSpace#app}. |
+| <code><a href="#@cdktn/provider-databricks.appSpace.AppSpaceResources.property.database">Database</a></code> | <code><a href="#@cdktn/provider-databricks.appSpace.AppSpaceResourcesDatabase">AppSpaceResourcesDatabase</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/app_space#database AppSpace#database}. |
+| <code><a href="#@cdktn/provider-databricks.appSpace.AppSpaceResources.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/app_space#description AppSpace#description}. |
+| <code><a href="#@cdktn/provider-databricks.appSpace.AppSpaceResources.property.experiment">Experiment</a></code> | <code><a href="#@cdktn/provider-databricks.appSpace.AppSpaceResourcesExperiment">AppSpaceResourcesExperiment</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/app_space#experiment AppSpace#experiment}. |
+| <code><a href="#@cdktn/provider-databricks.appSpace.AppSpaceResources.property.genieSpace">GenieSpace</a></code> | <code><a href="#@cdktn/provider-databricks.appSpace.AppSpaceResourcesGenieSpace">AppSpaceResourcesGenieSpace</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/app_space#genie_space AppSpace#genie_space}. |
+| <code><a href="#@cdktn/provider-databricks.appSpace.AppSpaceResources.property.job">Job</a></code> | <code><a href="#@cdktn/provider-databricks.appSpace.AppSpaceResourcesJob">AppSpaceResourcesJob</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/app_space#job AppSpace#job}. |
+| <code><a href="#@cdktn/provider-databricks.appSpace.AppSpaceResources.property.postgres">Postgres</a></code> | <code><a href="#@cdktn/provider-databricks.appSpace.AppSpaceResourcesPostgres">AppSpaceResourcesPostgres</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/app_space#postgres AppSpace#postgres}. |
+| <code><a href="#@cdktn/provider-databricks.appSpace.AppSpaceResources.property.secret">Secret</a></code> | <code><a href="#@cdktn/provider-databricks.appSpace.AppSpaceResourcesSecret">AppSpaceResourcesSecret</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/app_space#secret AppSpace#secret}. |
+| <code><a href="#@cdktn/provider-databricks.appSpace.AppSpaceResources.property.servingEndpoint">ServingEndpoint</a></code> | <code><a href="#@cdktn/provider-databricks.appSpace.AppSpaceResourcesServingEndpoint">AppSpaceResourcesServingEndpoint</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/app_space#serving_endpoint AppSpace#serving_endpoint}. |
+| <code><a href="#@cdktn/provider-databricks.appSpace.AppSpaceResources.property.sqlWarehouse">SqlWarehouse</a></code> | <code><a href="#@cdktn/provider-databricks.appSpace.AppSpaceResourcesSqlWarehouse">AppSpaceResourcesSqlWarehouse</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/app_space#sql_warehouse AppSpace#sql_warehouse}. |
+| <code><a href="#@cdktn/provider-databricks.appSpace.AppSpaceResources.property.ucSecurable">UcSecurable</a></code> | <code><a href="#@cdktn/provider-databricks.appSpace.AppSpaceResourcesUcSecurable">AppSpaceResourcesUcSecurable</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/app_space#uc_securable AppSpace#uc_securable}. |
 
 ---
 
@@ -1309,7 +1309,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/app_space#name AppSpace#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/app_space#name AppSpace#name}.
 
 ---
 
@@ -1321,7 +1321,7 @@ App AppSpaceResourcesApp
 
 - *Type:* <a href="#@cdktn/provider-databricks.appSpace.AppSpaceResourcesApp">AppSpaceResourcesApp</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/app_space#app AppSpace#app}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/app_space#app AppSpace#app}.
 
 ---
 
@@ -1333,7 +1333,7 @@ Database AppSpaceResourcesDatabase
 
 - *Type:* <a href="#@cdktn/provider-databricks.appSpace.AppSpaceResourcesDatabase">AppSpaceResourcesDatabase</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/app_space#database AppSpace#database}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/app_space#database AppSpace#database}.
 
 ---
 
@@ -1345,7 +1345,7 @@ Description *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/app_space#description AppSpace#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/app_space#description AppSpace#description}.
 
 ---
 
@@ -1357,7 +1357,7 @@ Experiment AppSpaceResourcesExperiment
 
 - *Type:* <a href="#@cdktn/provider-databricks.appSpace.AppSpaceResourcesExperiment">AppSpaceResourcesExperiment</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/app_space#experiment AppSpace#experiment}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/app_space#experiment AppSpace#experiment}.
 
 ---
 
@@ -1369,7 +1369,7 @@ GenieSpace AppSpaceResourcesGenieSpace
 
 - *Type:* <a href="#@cdktn/provider-databricks.appSpace.AppSpaceResourcesGenieSpace">AppSpaceResourcesGenieSpace</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/app_space#genie_space AppSpace#genie_space}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/app_space#genie_space AppSpace#genie_space}.
 
 ---
 
@@ -1381,7 +1381,7 @@ Job AppSpaceResourcesJob
 
 - *Type:* <a href="#@cdktn/provider-databricks.appSpace.AppSpaceResourcesJob">AppSpaceResourcesJob</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/app_space#job AppSpace#job}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/app_space#job AppSpace#job}.
 
 ---
 
@@ -1393,7 +1393,7 @@ Postgres AppSpaceResourcesPostgres
 
 - *Type:* <a href="#@cdktn/provider-databricks.appSpace.AppSpaceResourcesPostgres">AppSpaceResourcesPostgres</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/app_space#postgres AppSpace#postgres}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/app_space#postgres AppSpace#postgres}.
 
 ---
 
@@ -1405,7 +1405,7 @@ Secret AppSpaceResourcesSecret
 
 - *Type:* <a href="#@cdktn/provider-databricks.appSpace.AppSpaceResourcesSecret">AppSpaceResourcesSecret</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/app_space#secret AppSpace#secret}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/app_space#secret AppSpace#secret}.
 
 ---
 
@@ -1417,7 +1417,7 @@ ServingEndpoint AppSpaceResourcesServingEndpoint
 
 - *Type:* <a href="#@cdktn/provider-databricks.appSpace.AppSpaceResourcesServingEndpoint">AppSpaceResourcesServingEndpoint</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/app_space#serving_endpoint AppSpace#serving_endpoint}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/app_space#serving_endpoint AppSpace#serving_endpoint}.
 
 ---
 
@@ -1429,7 +1429,7 @@ SqlWarehouse AppSpaceResourcesSqlWarehouse
 
 - *Type:* <a href="#@cdktn/provider-databricks.appSpace.AppSpaceResourcesSqlWarehouse">AppSpaceResourcesSqlWarehouse</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/app_space#sql_warehouse AppSpace#sql_warehouse}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/app_space#sql_warehouse AppSpace#sql_warehouse}.
 
 ---
 
@@ -1441,7 +1441,7 @@ UcSecurable AppSpaceResourcesUcSecurable
 
 - *Type:* <a href="#@cdktn/provider-databricks.appSpace.AppSpaceResourcesUcSecurable">AppSpaceResourcesUcSecurable</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/app_space#uc_securable AppSpace#uc_securable}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/app_space#uc_securable AppSpace#uc_securable}.
 
 ---
 
@@ -1450,7 +1450,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.appSpace.AppSpaceResourcesApp.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/appspace"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/appspace"
 
 &appspace.AppSpaceResourcesApp {
 	Name: *string,
@@ -1462,8 +1462,8 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/appspace
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.appSpace.AppSpaceResourcesApp.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/app_space#name AppSpace#name}. |
-| <code><a href="#@cdktn/provider-databricks.appSpace.AppSpaceResourcesApp.property.permission">Permission</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/app_space#permission AppSpace#permission}. |
+| <code><a href="#@cdktn/provider-databricks.appSpace.AppSpaceResourcesApp.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/app_space#name AppSpace#name}. |
+| <code><a href="#@cdktn/provider-databricks.appSpace.AppSpaceResourcesApp.property.permission">Permission</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/app_space#permission AppSpace#permission}. |
 
 ---
 
@@ -1475,7 +1475,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/app_space#name AppSpace#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/app_space#name AppSpace#name}.
 
 ---
 
@@ -1487,7 +1487,7 @@ Permission *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/app_space#permission AppSpace#permission}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/app_space#permission AppSpace#permission}.
 
 ---
 
@@ -1496,7 +1496,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.appSpace.AppSpaceResourcesDatabase.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/appspace"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/appspace"
 
 &appspace.AppSpaceResourcesDatabase {
 	DatabaseName: *string,
@@ -1509,9 +1509,9 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/appspace
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.appSpace.AppSpaceResourcesDatabase.property.databaseName">DatabaseName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/app_space#database_name AppSpace#database_name}. |
-| <code><a href="#@cdktn/provider-databricks.appSpace.AppSpaceResourcesDatabase.property.instanceName">InstanceName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/app_space#instance_name AppSpace#instance_name}. |
-| <code><a href="#@cdktn/provider-databricks.appSpace.AppSpaceResourcesDatabase.property.permission">Permission</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/app_space#permission AppSpace#permission}. |
+| <code><a href="#@cdktn/provider-databricks.appSpace.AppSpaceResourcesDatabase.property.databaseName">DatabaseName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/app_space#database_name AppSpace#database_name}. |
+| <code><a href="#@cdktn/provider-databricks.appSpace.AppSpaceResourcesDatabase.property.instanceName">InstanceName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/app_space#instance_name AppSpace#instance_name}. |
+| <code><a href="#@cdktn/provider-databricks.appSpace.AppSpaceResourcesDatabase.property.permission">Permission</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/app_space#permission AppSpace#permission}. |
 
 ---
 
@@ -1523,7 +1523,7 @@ DatabaseName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/app_space#database_name AppSpace#database_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/app_space#database_name AppSpace#database_name}.
 
 ---
 
@@ -1535,7 +1535,7 @@ InstanceName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/app_space#instance_name AppSpace#instance_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/app_space#instance_name AppSpace#instance_name}.
 
 ---
 
@@ -1547,7 +1547,7 @@ Permission *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/app_space#permission AppSpace#permission}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/app_space#permission AppSpace#permission}.
 
 ---
 
@@ -1556,7 +1556,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.appSpace.AppSpaceResourcesExperiment.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/appspace"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/appspace"
 
 &appspace.AppSpaceResourcesExperiment {
 	ExperimentId: *string,
@@ -1568,8 +1568,8 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/appspace
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.appSpace.AppSpaceResourcesExperiment.property.experimentId">ExperimentId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/app_space#experiment_id AppSpace#experiment_id}. |
-| <code><a href="#@cdktn/provider-databricks.appSpace.AppSpaceResourcesExperiment.property.permission">Permission</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/app_space#permission AppSpace#permission}. |
+| <code><a href="#@cdktn/provider-databricks.appSpace.AppSpaceResourcesExperiment.property.experimentId">ExperimentId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/app_space#experiment_id AppSpace#experiment_id}. |
+| <code><a href="#@cdktn/provider-databricks.appSpace.AppSpaceResourcesExperiment.property.permission">Permission</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/app_space#permission AppSpace#permission}. |
 
 ---
 
@@ -1581,7 +1581,7 @@ ExperimentId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/app_space#experiment_id AppSpace#experiment_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/app_space#experiment_id AppSpace#experiment_id}.
 
 ---
 
@@ -1593,7 +1593,7 @@ Permission *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/app_space#permission AppSpace#permission}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/app_space#permission AppSpace#permission}.
 
 ---
 
@@ -1602,7 +1602,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.appSpace.AppSpaceResourcesGenieSpace.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/appspace"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/appspace"
 
 &appspace.AppSpaceResourcesGenieSpace {
 	Name: *string,
@@ -1615,9 +1615,9 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/appspace
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.appSpace.AppSpaceResourcesGenieSpace.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/app_space#name AppSpace#name}. |
-| <code><a href="#@cdktn/provider-databricks.appSpace.AppSpaceResourcesGenieSpace.property.permission">Permission</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/app_space#permission AppSpace#permission}. |
-| <code><a href="#@cdktn/provider-databricks.appSpace.AppSpaceResourcesGenieSpace.property.spaceId">SpaceId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/app_space#space_id AppSpace#space_id}. |
+| <code><a href="#@cdktn/provider-databricks.appSpace.AppSpaceResourcesGenieSpace.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/app_space#name AppSpace#name}. |
+| <code><a href="#@cdktn/provider-databricks.appSpace.AppSpaceResourcesGenieSpace.property.permission">Permission</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/app_space#permission AppSpace#permission}. |
+| <code><a href="#@cdktn/provider-databricks.appSpace.AppSpaceResourcesGenieSpace.property.spaceId">SpaceId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/app_space#space_id AppSpace#space_id}. |
 
 ---
 
@@ -1629,7 +1629,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/app_space#name AppSpace#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/app_space#name AppSpace#name}.
 
 ---
 
@@ -1641,7 +1641,7 @@ Permission *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/app_space#permission AppSpace#permission}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/app_space#permission AppSpace#permission}.
 
 ---
 
@@ -1653,7 +1653,7 @@ SpaceId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/app_space#space_id AppSpace#space_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/app_space#space_id AppSpace#space_id}.
 
 ---
 
@@ -1662,7 +1662,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.appSpace.AppSpaceResourcesJob.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/appspace"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/appspace"
 
 &appspace.AppSpaceResourcesJob {
 	Id: *string,
@@ -1674,8 +1674,8 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/appspace
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.appSpace.AppSpaceResourcesJob.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/app_space#id AppSpace#id}. |
-| <code><a href="#@cdktn/provider-databricks.appSpace.AppSpaceResourcesJob.property.permission">Permission</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/app_space#permission AppSpace#permission}. |
+| <code><a href="#@cdktn/provider-databricks.appSpace.AppSpaceResourcesJob.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/app_space#id AppSpace#id}. |
+| <code><a href="#@cdktn/provider-databricks.appSpace.AppSpaceResourcesJob.property.permission">Permission</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/app_space#permission AppSpace#permission}. |
 
 ---
 
@@ -1687,7 +1687,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/app_space#id AppSpace#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/app_space#id AppSpace#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1702,7 +1702,7 @@ Permission *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/app_space#permission AppSpace#permission}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/app_space#permission AppSpace#permission}.
 
 ---
 
@@ -1711,7 +1711,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.appSpace.AppSpaceResourcesPostgres.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/appspace"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/appspace"
 
 &appspace.AppSpaceResourcesPostgres {
 	Branch: *string,
@@ -1724,9 +1724,9 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/appspace
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.appSpace.AppSpaceResourcesPostgres.property.branch">Branch</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/app_space#branch AppSpace#branch}. |
-| <code><a href="#@cdktn/provider-databricks.appSpace.AppSpaceResourcesPostgres.property.database">Database</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/app_space#database AppSpace#database}. |
-| <code><a href="#@cdktn/provider-databricks.appSpace.AppSpaceResourcesPostgres.property.permission">Permission</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/app_space#permission AppSpace#permission}. |
+| <code><a href="#@cdktn/provider-databricks.appSpace.AppSpaceResourcesPostgres.property.branch">Branch</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/app_space#branch AppSpace#branch}. |
+| <code><a href="#@cdktn/provider-databricks.appSpace.AppSpaceResourcesPostgres.property.database">Database</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/app_space#database AppSpace#database}. |
+| <code><a href="#@cdktn/provider-databricks.appSpace.AppSpaceResourcesPostgres.property.permission">Permission</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/app_space#permission AppSpace#permission}. |
 
 ---
 
@@ -1738,7 +1738,7 @@ Branch *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/app_space#branch AppSpace#branch}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/app_space#branch AppSpace#branch}.
 
 ---
 
@@ -1750,7 +1750,7 @@ Database *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/app_space#database AppSpace#database}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/app_space#database AppSpace#database}.
 
 ---
 
@@ -1762,7 +1762,7 @@ Permission *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/app_space#permission AppSpace#permission}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/app_space#permission AppSpace#permission}.
 
 ---
 
@@ -1771,7 +1771,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.appSpace.AppSpaceResourcesSecret.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/appspace"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/appspace"
 
 &appspace.AppSpaceResourcesSecret {
 	Key: *string,
@@ -1784,9 +1784,9 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/appspace
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.appSpace.AppSpaceResourcesSecret.property.key">Key</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/app_space#key AppSpace#key}. |
-| <code><a href="#@cdktn/provider-databricks.appSpace.AppSpaceResourcesSecret.property.permission">Permission</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/app_space#permission AppSpace#permission}. |
-| <code><a href="#@cdktn/provider-databricks.appSpace.AppSpaceResourcesSecret.property.scope">Scope</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/app_space#scope AppSpace#scope}. |
+| <code><a href="#@cdktn/provider-databricks.appSpace.AppSpaceResourcesSecret.property.key">Key</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/app_space#key AppSpace#key}. |
+| <code><a href="#@cdktn/provider-databricks.appSpace.AppSpaceResourcesSecret.property.permission">Permission</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/app_space#permission AppSpace#permission}. |
+| <code><a href="#@cdktn/provider-databricks.appSpace.AppSpaceResourcesSecret.property.scope">Scope</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/app_space#scope AppSpace#scope}. |
 
 ---
 
@@ -1798,7 +1798,7 @@ Key *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/app_space#key AppSpace#key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/app_space#key AppSpace#key}.
 
 ---
 
@@ -1810,7 +1810,7 @@ Permission *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/app_space#permission AppSpace#permission}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/app_space#permission AppSpace#permission}.
 
 ---
 
@@ -1822,7 +1822,7 @@ Scope *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/app_space#scope AppSpace#scope}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/app_space#scope AppSpace#scope}.
 
 ---
 
@@ -1831,7 +1831,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.appSpace.AppSpaceResourcesServingEndpoint.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/appspace"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/appspace"
 
 &appspace.AppSpaceResourcesServingEndpoint {
 	Name: *string,
@@ -1843,8 +1843,8 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/appspace
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.appSpace.AppSpaceResourcesServingEndpoint.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/app_space#name AppSpace#name}. |
-| <code><a href="#@cdktn/provider-databricks.appSpace.AppSpaceResourcesServingEndpoint.property.permission">Permission</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/app_space#permission AppSpace#permission}. |
+| <code><a href="#@cdktn/provider-databricks.appSpace.AppSpaceResourcesServingEndpoint.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/app_space#name AppSpace#name}. |
+| <code><a href="#@cdktn/provider-databricks.appSpace.AppSpaceResourcesServingEndpoint.property.permission">Permission</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/app_space#permission AppSpace#permission}. |
 
 ---
 
@@ -1856,7 +1856,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/app_space#name AppSpace#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/app_space#name AppSpace#name}.
 
 ---
 
@@ -1868,7 +1868,7 @@ Permission *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/app_space#permission AppSpace#permission}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/app_space#permission AppSpace#permission}.
 
 ---
 
@@ -1877,7 +1877,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.appSpace.AppSpaceResourcesSqlWarehouse.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/appspace"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/appspace"
 
 &appspace.AppSpaceResourcesSqlWarehouse {
 	Id: *string,
@@ -1889,8 +1889,8 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/appspace
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.appSpace.AppSpaceResourcesSqlWarehouse.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/app_space#id AppSpace#id}. |
-| <code><a href="#@cdktn/provider-databricks.appSpace.AppSpaceResourcesSqlWarehouse.property.permission">Permission</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/app_space#permission AppSpace#permission}. |
+| <code><a href="#@cdktn/provider-databricks.appSpace.AppSpaceResourcesSqlWarehouse.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/app_space#id AppSpace#id}. |
+| <code><a href="#@cdktn/provider-databricks.appSpace.AppSpaceResourcesSqlWarehouse.property.permission">Permission</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/app_space#permission AppSpace#permission}. |
 
 ---
 
@@ -1902,7 +1902,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/app_space#id AppSpace#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/app_space#id AppSpace#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1917,7 +1917,7 @@ Permission *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/app_space#permission AppSpace#permission}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/app_space#permission AppSpace#permission}.
 
 ---
 
@@ -1926,7 +1926,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.appSpace.AppSpaceResourcesUcSecurable.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/appspace"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/appspace"
 
 &appspace.AppSpaceResourcesUcSecurable {
 	Permission: *string,
@@ -1939,9 +1939,9 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/appspace
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.appSpace.AppSpaceResourcesUcSecurable.property.permission">Permission</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/app_space#permission AppSpace#permission}. |
-| <code><a href="#@cdktn/provider-databricks.appSpace.AppSpaceResourcesUcSecurable.property.securableFullName">SecurableFullName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/app_space#securable_full_name AppSpace#securable_full_name}. |
-| <code><a href="#@cdktn/provider-databricks.appSpace.AppSpaceResourcesUcSecurable.property.securableType">SecurableType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/app_space#securable_type AppSpace#securable_type}. |
+| <code><a href="#@cdktn/provider-databricks.appSpace.AppSpaceResourcesUcSecurable.property.permission">Permission</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/app_space#permission AppSpace#permission}. |
+| <code><a href="#@cdktn/provider-databricks.appSpace.AppSpaceResourcesUcSecurable.property.securableFullName">SecurableFullName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/app_space#securable_full_name AppSpace#securable_full_name}. |
+| <code><a href="#@cdktn/provider-databricks.appSpace.AppSpaceResourcesUcSecurable.property.securableType">SecurableType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/app_space#securable_type AppSpace#securable_type}. |
 
 ---
 
@@ -1953,7 +1953,7 @@ Permission *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/app_space#permission AppSpace#permission}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/app_space#permission AppSpace#permission}.
 
 ---
 
@@ -1965,7 +1965,7 @@ SecurableFullName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/app_space#securable_full_name AppSpace#securable_full_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/app_space#securable_full_name AppSpace#securable_full_name}.
 
 ---
 
@@ -1977,7 +1977,7 @@ SecurableType *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/app_space#securable_type AppSpace#securable_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/app_space#securable_type AppSpace#securable_type}.
 
 ---
 
@@ -1986,7 +1986,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.appSpace.AppSpaceStatus.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/appspace"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/appspace"
 
 &appspace.AppSpaceStatus {
 
@@ -2001,7 +2001,7 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/appspace
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.appSpace.AppSpaceProviderConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/appspace"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/appspace"
 
 appspace.NewAppSpaceProviderConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppSpaceProviderConfigOutputReference
 ```
@@ -2279,7 +2279,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.appSpace.AppSpaceResourcesAppOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/appspace"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/appspace"
 
 appspace.NewAppSpaceResourcesAppOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppSpaceResourcesAppOutputReference
 ```
@@ -2586,7 +2586,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.appSpace.AppSpaceResourcesDatabaseOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/appspace"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/appspace"
 
 appspace.NewAppSpaceResourcesDatabaseOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppSpaceResourcesDatabaseOutputReference
 ```
@@ -2901,7 +2901,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.appSpace.AppSpaceResourcesExperimentOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/appspace"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/appspace"
 
 appspace.NewAppSpaceResourcesExperimentOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppSpaceResourcesExperimentOutputReference
 ```
@@ -3194,7 +3194,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.appSpace.AppSpaceResourcesGenieSpaceOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/appspace"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/appspace"
 
 appspace.NewAppSpaceResourcesGenieSpaceOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppSpaceResourcesGenieSpaceOutputReference
 ```
@@ -3509,7 +3509,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.appSpace.AppSpaceResourcesJobOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/appspace"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/appspace"
 
 appspace.NewAppSpaceResourcesJobOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppSpaceResourcesJobOutputReference
 ```
@@ -3802,7 +3802,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.appSpace.AppSpaceResourcesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/appspace"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/appspace"
 
 appspace.NewAppSpaceResourcesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AppSpaceResourcesList
 ```
@@ -3962,7 +3962,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.appSpace.AppSpaceResourcesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/appspace"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/appspace"
 
 appspace.NewAppSpaceResourcesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) AppSpaceResourcesOutputReference
 ```
@@ -4700,7 +4700,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.appSpace.AppSpaceResourcesPostgresOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/appspace"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/appspace"
 
 appspace.NewAppSpaceResourcesPostgresOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppSpaceResourcesPostgresOutputReference
 ```
@@ -5036,7 +5036,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.appSpace.AppSpaceResourcesSecretOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/appspace"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/appspace"
 
 appspace.NewAppSpaceResourcesSecretOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppSpaceResourcesSecretOutputReference
 ```
@@ -5351,7 +5351,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.appSpace.AppSpaceResourcesServingEndpointOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/appspace"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/appspace"
 
 appspace.NewAppSpaceResourcesServingEndpointOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppSpaceResourcesServingEndpointOutputReference
 ```
@@ -5644,7 +5644,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.appSpace.AppSpaceResourcesSqlWarehouseOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/appspace"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/appspace"
 
 appspace.NewAppSpaceResourcesSqlWarehouseOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppSpaceResourcesSqlWarehouseOutputReference
 ```
@@ -5937,7 +5937,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.appSpace.AppSpaceResourcesUcSecurableOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/appspace"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/appspace"
 
 appspace.NewAppSpaceResourcesUcSecurableOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppSpaceResourcesUcSecurableOutputReference
 ```
@@ -6263,7 +6263,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.appSpace.AppSpaceStatusOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/appspace"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/appspace"
 
 appspace.NewAppSpaceStatusOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppSpaceStatusOutputReference
 ```

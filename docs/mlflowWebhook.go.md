@@ -4,12 +4,12 @@
 
 ### MlflowWebhook <a name="MlflowWebhook" id="@cdktn/provider-databricks.mlflowWebhook.MlflowWebhook"></a>
 
-Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/mlflow_webhook databricks_mlflow_webhook}.
+Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/mlflow_webhook databricks_mlflow_webhook}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.mlflowWebhook.MlflowWebhook.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/mlflowwebhook"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/mlflowwebhook"
 
 mlflowwebhook.NewMlflowWebhook(scope Construct, id *string, config MlflowWebhookConfig) MlflowWebhook
 ```
@@ -488,7 +488,7 @@ func ResetStatus()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-databricks.mlflowWebhook.MlflowWebhook.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/mlflowwebhook"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/mlflowwebhook"
 
 mlflowwebhook.MlflowWebhook_IsConstruct(x interface{}) *bool
 ```
@@ -520,7 +520,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-databricks.mlflowWebhook.MlflowWebhook.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/mlflowwebhook"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/mlflowwebhook"
 
 mlflowwebhook.MlflowWebhook_IsTerraformElement(x interface{}) *bool
 ```
@@ -534,7 +534,7 @@ mlflowwebhook.MlflowWebhook_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-databricks.mlflowWebhook.MlflowWebhook.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/mlflowwebhook"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/mlflowwebhook"
 
 mlflowwebhook.MlflowWebhook_IsTerraformResource(x interface{}) *bool
 ```
@@ -548,7 +548,7 @@ mlflowwebhook.MlflowWebhook_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-databricks.mlflowWebhook.MlflowWebhook.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/mlflowwebhook"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/mlflowwebhook"
 
 mlflowwebhook.MlflowWebhook_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -577,7 +577,7 @@ The construct id used in the generated config for the MlflowWebhook to import.
 
 The id of the existing MlflowWebhook that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/mlflow_webhook#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/mlflow_webhook#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -953,7 +953,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.mlflowWebhook.MlflowWebhookConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/mlflowwebhook"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/mlflowwebhook"
 
 &mlflowwebhook.MlflowWebhookConfig {
 	Connection: interface{},
@@ -965,11 +965,11 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/mlflowwe
 	Provisioners: *[]interface{},
 	Events: *[]*string,
 	Description: *string,
-	HttpUrlSpec: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18.mlflowWebhook.MlflowWebhookHttpUrlSpec,
+	HttpUrlSpec: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19.mlflowWebhook.MlflowWebhookHttpUrlSpec,
 	Id: *string,
-	JobSpec: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18.mlflowWebhook.MlflowWebhookJobSpec,
+	JobSpec: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19.mlflowWebhook.MlflowWebhookJobSpec,
 	ModelName: *string,
-	ProviderConfig: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18.mlflowWebhook.MlflowWebhookProviderConfig,
+	ProviderConfig: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19.mlflowWebhook.MlflowWebhookProviderConfig,
 	Status: *string,
 }
 ```
@@ -985,14 +985,14 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/mlflowwe
 | <code><a href="#@cdktn/provider-databricks.mlflowWebhook.MlflowWebhookConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.mlflowWebhook.MlflowWebhookConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.mlflowWebhook.MlflowWebhookConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-databricks.mlflowWebhook.MlflowWebhookConfig.property.events">Events</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/mlflow_webhook#events MlflowWebhook#events}. |
-| <code><a href="#@cdktn/provider-databricks.mlflowWebhook.MlflowWebhookConfig.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/mlflow_webhook#description MlflowWebhook#description}. |
+| <code><a href="#@cdktn/provider-databricks.mlflowWebhook.MlflowWebhookConfig.property.events">Events</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/mlflow_webhook#events MlflowWebhook#events}. |
+| <code><a href="#@cdktn/provider-databricks.mlflowWebhook.MlflowWebhookConfig.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/mlflow_webhook#description MlflowWebhook#description}. |
 | <code><a href="#@cdktn/provider-databricks.mlflowWebhook.MlflowWebhookConfig.property.httpUrlSpec">HttpUrlSpec</a></code> | <code><a href="#@cdktn/provider-databricks.mlflowWebhook.MlflowWebhookHttpUrlSpec">MlflowWebhookHttpUrlSpec</a></code> | http_url_spec block. |
-| <code><a href="#@cdktn/provider-databricks.mlflowWebhook.MlflowWebhookConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/mlflow_webhook#id MlflowWebhook#id}. |
+| <code><a href="#@cdktn/provider-databricks.mlflowWebhook.MlflowWebhookConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/mlflow_webhook#id MlflowWebhook#id}. |
 | <code><a href="#@cdktn/provider-databricks.mlflowWebhook.MlflowWebhookConfig.property.jobSpec">JobSpec</a></code> | <code><a href="#@cdktn/provider-databricks.mlflowWebhook.MlflowWebhookJobSpec">MlflowWebhookJobSpec</a></code> | job_spec block. |
-| <code><a href="#@cdktn/provider-databricks.mlflowWebhook.MlflowWebhookConfig.property.modelName">ModelName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/mlflow_webhook#model_name MlflowWebhook#model_name}. |
+| <code><a href="#@cdktn/provider-databricks.mlflowWebhook.MlflowWebhookConfig.property.modelName">ModelName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/mlflow_webhook#model_name MlflowWebhook#model_name}. |
 | <code><a href="#@cdktn/provider-databricks.mlflowWebhook.MlflowWebhookConfig.property.providerConfig">ProviderConfig</a></code> | <code><a href="#@cdktn/provider-databricks.mlflowWebhook.MlflowWebhookProviderConfig">MlflowWebhookProviderConfig</a></code> | provider_config block. |
-| <code><a href="#@cdktn/provider-databricks.mlflowWebhook.MlflowWebhookConfig.property.status">Status</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/mlflow_webhook#status MlflowWebhook#status}. |
+| <code><a href="#@cdktn/provider-databricks.mlflowWebhook.MlflowWebhookConfig.property.status">Status</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/mlflow_webhook#status MlflowWebhook#status}. |
 
 ---
 
@@ -1074,7 +1074,7 @@ Events *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/mlflow_webhook#events MlflowWebhook#events}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/mlflow_webhook#events MlflowWebhook#events}.
 
 ---
 
@@ -1086,7 +1086,7 @@ Description *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/mlflow_webhook#description MlflowWebhook#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/mlflow_webhook#description MlflowWebhook#description}.
 
 ---
 
@@ -1100,7 +1100,7 @@ HttpUrlSpec MlflowWebhookHttpUrlSpec
 
 http_url_spec block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/mlflow_webhook#http_url_spec MlflowWebhook#http_url_spec}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/mlflow_webhook#http_url_spec MlflowWebhook#http_url_spec}
 
 ---
 
@@ -1112,7 +1112,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/mlflow_webhook#id MlflowWebhook#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/mlflow_webhook#id MlflowWebhook#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1129,7 +1129,7 @@ JobSpec MlflowWebhookJobSpec
 
 job_spec block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/mlflow_webhook#job_spec MlflowWebhook#job_spec}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/mlflow_webhook#job_spec MlflowWebhook#job_spec}
 
 ---
 
@@ -1141,7 +1141,7 @@ ModelName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/mlflow_webhook#model_name MlflowWebhook#model_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/mlflow_webhook#model_name MlflowWebhook#model_name}.
 
 ---
 
@@ -1155,7 +1155,7 @@ ProviderConfig MlflowWebhookProviderConfig
 
 provider_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/mlflow_webhook#provider_config MlflowWebhook#provider_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/mlflow_webhook#provider_config MlflowWebhook#provider_config}
 
 ---
 
@@ -1167,7 +1167,7 @@ Status *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/mlflow_webhook#status MlflowWebhook#status}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/mlflow_webhook#status MlflowWebhook#status}.
 
 ---
 
@@ -1176,7 +1176,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.mlflowWebhook.MlflowWebhookHttpUrlSpec.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/mlflowwebhook"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/mlflowwebhook"
 
 &mlflowwebhook.MlflowWebhookHttpUrlSpec {
 	Url: *string,
@@ -1190,10 +1190,10 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/mlflowwe
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.mlflowWebhook.MlflowWebhookHttpUrlSpec.property.url">Url</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/mlflow_webhook#url MlflowWebhook#url}. |
-| <code><a href="#@cdktn/provider-databricks.mlflowWebhook.MlflowWebhookHttpUrlSpec.property.authorization">Authorization</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/mlflow_webhook#authorization MlflowWebhook#authorization}. |
-| <code><a href="#@cdktn/provider-databricks.mlflowWebhook.MlflowWebhookHttpUrlSpec.property.enableSslVerification">EnableSslVerification</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/mlflow_webhook#enable_ssl_verification MlflowWebhook#enable_ssl_verification}. |
-| <code><a href="#@cdktn/provider-databricks.mlflowWebhook.MlflowWebhookHttpUrlSpec.property.secret">Secret</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/mlflow_webhook#secret MlflowWebhook#secret}. |
+| <code><a href="#@cdktn/provider-databricks.mlflowWebhook.MlflowWebhookHttpUrlSpec.property.url">Url</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/mlflow_webhook#url MlflowWebhook#url}. |
+| <code><a href="#@cdktn/provider-databricks.mlflowWebhook.MlflowWebhookHttpUrlSpec.property.authorization">Authorization</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/mlflow_webhook#authorization MlflowWebhook#authorization}. |
+| <code><a href="#@cdktn/provider-databricks.mlflowWebhook.MlflowWebhookHttpUrlSpec.property.enableSslVerification">EnableSslVerification</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/mlflow_webhook#enable_ssl_verification MlflowWebhook#enable_ssl_verification}. |
+| <code><a href="#@cdktn/provider-databricks.mlflowWebhook.MlflowWebhookHttpUrlSpec.property.secret">Secret</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/mlflow_webhook#secret MlflowWebhook#secret}. |
 
 ---
 
@@ -1205,7 +1205,7 @@ Url *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/mlflow_webhook#url MlflowWebhook#url}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/mlflow_webhook#url MlflowWebhook#url}.
 
 ---
 
@@ -1217,7 +1217,7 @@ Authorization *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/mlflow_webhook#authorization MlflowWebhook#authorization}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/mlflow_webhook#authorization MlflowWebhook#authorization}.
 
 ---
 
@@ -1229,7 +1229,7 @@ EnableSslVerification interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/mlflow_webhook#enable_ssl_verification MlflowWebhook#enable_ssl_verification}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/mlflow_webhook#enable_ssl_verification MlflowWebhook#enable_ssl_verification}.
 
 ---
 
@@ -1241,7 +1241,7 @@ Secret *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/mlflow_webhook#secret MlflowWebhook#secret}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/mlflow_webhook#secret MlflowWebhook#secret}.
 
 ---
 
@@ -1250,7 +1250,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.mlflowWebhook.MlflowWebhookJobSpec.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/mlflowwebhook"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/mlflowwebhook"
 
 &mlflowwebhook.MlflowWebhookJobSpec {
 	AccessToken: *string,
@@ -1263,9 +1263,9 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/mlflowwe
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.mlflowWebhook.MlflowWebhookJobSpec.property.accessToken">AccessToken</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/mlflow_webhook#access_token MlflowWebhook#access_token}. |
-| <code><a href="#@cdktn/provider-databricks.mlflowWebhook.MlflowWebhookJobSpec.property.jobId">JobId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/mlflow_webhook#job_id MlflowWebhook#job_id}. |
-| <code><a href="#@cdktn/provider-databricks.mlflowWebhook.MlflowWebhookJobSpec.property.workspaceUrl">WorkspaceUrl</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/mlflow_webhook#workspace_url MlflowWebhook#workspace_url}. |
+| <code><a href="#@cdktn/provider-databricks.mlflowWebhook.MlflowWebhookJobSpec.property.accessToken">AccessToken</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/mlflow_webhook#access_token MlflowWebhook#access_token}. |
+| <code><a href="#@cdktn/provider-databricks.mlflowWebhook.MlflowWebhookJobSpec.property.jobId">JobId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/mlflow_webhook#job_id MlflowWebhook#job_id}. |
+| <code><a href="#@cdktn/provider-databricks.mlflowWebhook.MlflowWebhookJobSpec.property.workspaceUrl">WorkspaceUrl</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/mlflow_webhook#workspace_url MlflowWebhook#workspace_url}. |
 
 ---
 
@@ -1277,7 +1277,7 @@ AccessToken *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/mlflow_webhook#access_token MlflowWebhook#access_token}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/mlflow_webhook#access_token MlflowWebhook#access_token}.
 
 ---
 
@@ -1289,7 +1289,7 @@ JobId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/mlflow_webhook#job_id MlflowWebhook#job_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/mlflow_webhook#job_id MlflowWebhook#job_id}.
 
 ---
 
@@ -1301,7 +1301,7 @@ WorkspaceUrl *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/mlflow_webhook#workspace_url MlflowWebhook#workspace_url}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/mlflow_webhook#workspace_url MlflowWebhook#workspace_url}.
 
 ---
 
@@ -1310,7 +1310,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.mlflowWebhook.MlflowWebhookProviderConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/mlflowwebhook"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/mlflowwebhook"
 
 &mlflowwebhook.MlflowWebhookProviderConfig {
 	WorkspaceId: *string,
@@ -1321,7 +1321,7 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/mlflowwe
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.mlflowWebhook.MlflowWebhookProviderConfig.property.workspaceId">WorkspaceId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/mlflow_webhook#workspace_id MlflowWebhook#workspace_id}. |
+| <code><a href="#@cdktn/provider-databricks.mlflowWebhook.MlflowWebhookProviderConfig.property.workspaceId">WorkspaceId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/mlflow_webhook#workspace_id MlflowWebhook#workspace_id}. |
 
 ---
 
@@ -1333,7 +1333,7 @@ WorkspaceId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/mlflow_webhook#workspace_id MlflowWebhook#workspace_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/mlflow_webhook#workspace_id MlflowWebhook#workspace_id}.
 
 ---
 
@@ -1344,7 +1344,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.mlflowWebhook.MlflowWebhookHttpUrlSpecOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/mlflowwebhook"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/mlflowwebhook"
 
 mlflowwebhook.NewMlflowWebhookHttpUrlSpecOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MlflowWebhookHttpUrlSpecOutputReference
 ```
@@ -1702,7 +1702,7 @@ func InternalValue() MlflowWebhookHttpUrlSpec
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.mlflowWebhook.MlflowWebhookJobSpecOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/mlflowwebhook"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/mlflowwebhook"
 
 mlflowwebhook.NewMlflowWebhookJobSpecOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MlflowWebhookJobSpecOutputReference
 ```
@@ -2024,7 +2024,7 @@ func InternalValue() MlflowWebhookJobSpec
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.mlflowWebhook.MlflowWebhookProviderConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/mlflowwebhook"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/mlflowwebhook"
 
 mlflowwebhook.NewMlflowWebhookProviderConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MlflowWebhookProviderConfigOutputReference
 ```
