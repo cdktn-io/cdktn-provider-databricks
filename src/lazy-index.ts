@@ -14,6 +14,10 @@ Object.defineProperty(exports, 'accountIamWorkspaceAssignmentV2', { get: functio
 Object.defineProperty(exports, 'accountNetworkPolicy', { get: function () { return require('./account-network-policy'); } });
 Object.defineProperty(exports, 'accountSettingUserPreferenceV2', { get: function () { return require('./account-setting-user-preference-v2'); } });
 Object.defineProperty(exports, 'accountSettingV2', { get: function () { return require('./account-setting-v2'); } });
+Object.defineProperty(exports, 'agentKitManagedMemoryEntry', { get: function () { return require('./agent-kit-managed-memory-entry'); } });
+Object.defineProperty(exports, 'agentKitManagedMemoryStore', { get: function () { return require('./agent-kit-managed-memory-store'); } });
+Object.defineProperty(exports, 'agentKitSession', { get: function () { return require('./agent-kit-session'); } });
+Object.defineProperty(exports, 'agentKitSessionStore', { get: function () { return require('./agent-kit-session-store'); } });
 Object.defineProperty(exports, 'aiGatewayMcpService', { get: function () { return require('./ai-gateway-mcp-service'); } });
 Object.defineProperty(exports, 'aiGatewayModelProviderService', { get: function () { return require('./ai-gateway-model-provider-service'); } });
 Object.defineProperty(exports, 'aiGatewayModelService', { get: function () { return require('./ai-gateway-model-service'); } });
@@ -200,6 +204,14 @@ Object.defineProperty(exports, 'dataDatabricksAccountNetworkPolicies', { get: fu
 Object.defineProperty(exports, 'dataDatabricksAccountNetworkPolicy', { get: function () { return require('./data-databricks-account-network-policy'); } });
 Object.defineProperty(exports, 'dataDatabricksAccountSettingUserPreferenceV2', { get: function () { return require('./data-databricks-account-setting-user-preference-v2'); } });
 Object.defineProperty(exports, 'dataDatabricksAccountSettingV2', { get: function () { return require('./data-databricks-account-setting-v2'); } });
+Object.defineProperty(exports, 'dataDatabricksAgentKitManagedMemoryEntries', { get: function () { return require('./data-databricks-agent-kit-managed-memory-entries'); } });
+Object.defineProperty(exports, 'dataDatabricksAgentKitManagedMemoryEntry', { get: function () { return require('./data-databricks-agent-kit-managed-memory-entry'); } });
+Object.defineProperty(exports, 'dataDatabricksAgentKitManagedMemoryStore', { get: function () { return require('./data-databricks-agent-kit-managed-memory-store'); } });
+Object.defineProperty(exports, 'dataDatabricksAgentKitManagedMemoryStores', { get: function () { return require('./data-databricks-agent-kit-managed-memory-stores'); } });
+Object.defineProperty(exports, 'dataDatabricksAgentKitSession', { get: function () { return require('./data-databricks-agent-kit-session'); } });
+Object.defineProperty(exports, 'dataDatabricksAgentKitSessionStore', { get: function () { return require('./data-databricks-agent-kit-session-store'); } });
+Object.defineProperty(exports, 'dataDatabricksAgentKitSessionStores', { get: function () { return require('./data-databricks-agent-kit-session-stores'); } });
+Object.defineProperty(exports, 'dataDatabricksAgentKitSessions', { get: function () { return require('./data-databricks-agent-kit-sessions'); } });
 Object.defineProperty(exports, 'dataDatabricksAiGatewayMcpService', { get: function () { return require('./data-databricks-ai-gateway-mcp-service'); } });
 Object.defineProperty(exports, 'dataDatabricksAiGatewayMcpServices', { get: function () { return require('./data-databricks-ai-gateway-mcp-services'); } });
 Object.defineProperty(exports, 'dataDatabricksAiGatewayModelProviderService', { get: function () { return require('./data-databricks-ai-gateway-model-provider-service'); } });
