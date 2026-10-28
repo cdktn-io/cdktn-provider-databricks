@@ -4,12 +4,12 @@
 
 ### UserRole <a name="UserRole" id="@cdktn/provider-databricks.userRole.UserRole"></a>
 
-Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/user_role databricks_user_role}.
+Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/user_role databricks_user_role}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.userRole.UserRole.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/userrole"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/userrole"
 
 userrole.NewUserRole(scope Construct, id *string, config UserRoleConfig) UserRole
 ```
@@ -434,7 +434,7 @@ func ResetProviderConfig()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-databricks.userRole.UserRole.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/userrole"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/userrole"
 
 userrole.UserRole_IsConstruct(x interface{}) *bool
 ```
@@ -466,7 +466,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-databricks.userRole.UserRole.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/userrole"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/userrole"
 
 userrole.UserRole_IsTerraformElement(x interface{}) *bool
 ```
@@ -480,7 +480,7 @@ userrole.UserRole_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-databricks.userRole.UserRole.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/userrole"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/userrole"
 
 userrole.UserRole_IsTerraformResource(x interface{}) *bool
 ```
@@ -494,7 +494,7 @@ userrole.UserRole_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-databricks.userRole.UserRole.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/userrole"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/userrole"
 
 userrole.UserRole_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -523,7 +523,7 @@ The construct id used in the generated config for the UserRole to import.
 
 The id of the existing UserRole that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/user_role#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/user_role#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -833,7 +833,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.userRole.UserRoleConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/userrole"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/userrole"
 
 &userrole.UserRoleConfig {
 	Connection: interface{},
@@ -847,7 +847,7 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/userrole
 	UserId: *string,
 	Api: *string,
 	Id: *string,
-	ProviderConfig: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18.userRole.UserRoleProviderConfig,
+	ProviderConfig: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19.userRole.UserRoleProviderConfig,
 }
 ```
 
@@ -862,10 +862,10 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/userrole
 | <code><a href="#@cdktn/provider-databricks.userRole.UserRoleConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.userRole.UserRoleConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.userRole.UserRoleConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-databricks.userRole.UserRoleConfig.property.role">Role</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/user_role#role UserRole#role}. |
-| <code><a href="#@cdktn/provider-databricks.userRole.UserRoleConfig.property.userId">UserId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/user_role#user_id UserRole#user_id}. |
+| <code><a href="#@cdktn/provider-databricks.userRole.UserRoleConfig.property.role">Role</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/user_role#role UserRole#role}. |
+| <code><a href="#@cdktn/provider-databricks.userRole.UserRoleConfig.property.userId">UserId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/user_role#user_id UserRole#user_id}. |
 | <code><a href="#@cdktn/provider-databricks.userRole.UserRoleConfig.property.api">Api</a></code> | <code>*string</code> | Specifies whether to use account-level or workspace-level API. |
-| <code><a href="#@cdktn/provider-databricks.userRole.UserRoleConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/user_role#id UserRole#id}. |
+| <code><a href="#@cdktn/provider-databricks.userRole.UserRoleConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/user_role#id UserRole#id}. |
 | <code><a href="#@cdktn/provider-databricks.userRole.UserRoleConfig.property.providerConfig">ProviderConfig</a></code> | <code><a href="#@cdktn/provider-databricks.userRole.UserRoleProviderConfig">UserRoleProviderConfig</a></code> | provider_config block. |
 
 ---
@@ -948,7 +948,7 @@ Role *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/user_role#role UserRole#role}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/user_role#role UserRole#role}.
 
 ---
 
@@ -960,7 +960,7 @@ UserId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/user_role#user_id UserRole#user_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/user_role#user_id UserRole#user_id}.
 
 ---
 
@@ -976,7 +976,7 @@ Specifies whether to use account-level or workspace-level API.
 
 Valid values are `account` and `workspace`. When not set, the API level is inferred from the provider host.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/user_role#api UserRole#api}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/user_role#api UserRole#api}
 
 ---
 
@@ -988,7 +988,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/user_role#id UserRole#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/user_role#id UserRole#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1005,7 +1005,7 @@ ProviderConfig UserRoleProviderConfig
 
 provider_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/user_role#provider_config UserRole#provider_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/user_role#provider_config UserRole#provider_config}
 
 ---
 
@@ -1014,7 +1014,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.userRole.UserRoleProviderConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/userrole"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/userrole"
 
 &userrole.UserRoleProviderConfig {
 	WorkspaceId: *string,
@@ -1025,7 +1025,7 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/userrole
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.userRole.UserRoleProviderConfig.property.workspaceId">WorkspaceId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/user_role#workspace_id UserRole#workspace_id}. |
+| <code><a href="#@cdktn/provider-databricks.userRole.UserRoleProviderConfig.property.workspaceId">WorkspaceId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/user_role#workspace_id UserRole#workspace_id}. |
 
 ---
 
@@ -1037,7 +1037,7 @@ WorkspaceId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/user_role#workspace_id UserRole#workspace_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/user_role#workspace_id UserRole#workspace_id}.
 
 ---
 
@@ -1048,7 +1048,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.userRole.UserRoleProviderConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/userrole"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/userrole"
 
 userrole.NewUserRoleProviderConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) UserRoleProviderConfigOutputReference
 ```

@@ -4,12 +4,12 @@
 
 ### DataDatabricksPipelines <a name="DataDatabricksPipelines" id="@cdktn/provider-databricks.dataDatabricksPipelines.DataDatabricksPipelines"></a>
 
-Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/data-sources/pipelines databricks_pipelines}.
+Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/pipelines databricks_pipelines}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksPipelines.DataDatabricksPipelines.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabrickspipelines"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/datadatabrickspipelines"
 
 datadatabrickspipelines.NewDataDatabricksPipelines(scope Construct, id *string, config DataDatabricksPipelinesConfig) DataDatabricksPipelines
 ```
@@ -339,7 +339,7 @@ func ResetProviderConfig()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-databricks.dataDatabricksPipelines.DataDatabricksPipelines.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabrickspipelines"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/datadatabrickspipelines"
 
 datadatabrickspipelines.DataDatabricksPipelines_IsConstruct(x interface{}) *bool
 ```
@@ -371,7 +371,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-databricks.dataDatabricksPipelines.DataDatabricksPipelines.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabrickspipelines"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/datadatabrickspipelines"
 
 datadatabrickspipelines.DataDatabricksPipelines_IsTerraformElement(x interface{}) *bool
 ```
@@ -385,7 +385,7 @@ datadatabrickspipelines.DataDatabricksPipelines_IsTerraformElement(x interface{}
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-databricks.dataDatabricksPipelines.DataDatabricksPipelines.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabrickspipelines"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/datadatabrickspipelines"
 
 datadatabrickspipelines.DataDatabricksPipelines_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -399,7 +399,7 @@ datadatabrickspipelines.DataDatabricksPipelines_IsTerraformDataSource(x interfac
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-databricks.dataDatabricksPipelines.DataDatabricksPipelines.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabrickspipelines"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/datadatabrickspipelines"
 
 datadatabrickspipelines.DataDatabricksPipelines_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -428,7 +428,7 @@ The construct id used in the generated config for the DataDatabricksPipelines to
 
 The id of the existing DataDatabricksPipelines that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/data-sources/pipelines#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/pipelines#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -694,7 +694,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksPipelines.DataDatabricksPipelinesConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabrickspipelines"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/datadatabrickspipelines"
 
 &datadatabrickspipelines.DataDatabricksPipelinesConfig {
 	Connection: interface{},
@@ -707,7 +707,7 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadata
 	Id: *string,
 	Ids: *[]*string,
 	PipelineName: *string,
-	ProviderConfig: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18.dataDatabricksPipelines.DataDatabricksPipelinesProviderConfig,
+	ProviderConfig: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19.dataDatabricksPipelines.DataDatabricksPipelinesProviderConfig,
 }
 ```
 
@@ -722,9 +722,9 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadata
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksPipelines.DataDatabricksPipelinesConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksPipelines.DataDatabricksPipelinesConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksPipelines.DataDatabricksPipelinesConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksPipelines.DataDatabricksPipelinesConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/data-sources/pipelines#id DataDatabricksPipelines#id}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksPipelines.DataDatabricksPipelinesConfig.property.ids">Ids</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/data-sources/pipelines#ids DataDatabricksPipelines#ids}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksPipelines.DataDatabricksPipelinesConfig.property.pipelineName">PipelineName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/data-sources/pipelines#pipeline_name DataDatabricksPipelines#pipeline_name}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksPipelines.DataDatabricksPipelinesConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/pipelines#id DataDatabricksPipelines#id}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksPipelines.DataDatabricksPipelinesConfig.property.ids">Ids</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/pipelines#ids DataDatabricksPipelines#ids}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksPipelines.DataDatabricksPipelinesConfig.property.pipelineName">PipelineName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/pipelines#pipeline_name DataDatabricksPipelines#pipeline_name}. |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksPipelines.DataDatabricksPipelinesConfig.property.providerConfig">ProviderConfig</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksPipelines.DataDatabricksPipelinesProviderConfig">DataDatabricksPipelinesProviderConfig</a></code> | provider_config block. |
 
 ---
@@ -807,7 +807,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/data-sources/pipelines#id DataDatabricksPipelines#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/pipelines#id DataDatabricksPipelines#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -822,7 +822,7 @@ Ids *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/data-sources/pipelines#ids DataDatabricksPipelines#ids}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/pipelines#ids DataDatabricksPipelines#ids}.
 
 ---
 
@@ -834,7 +834,7 @@ PipelineName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/data-sources/pipelines#pipeline_name DataDatabricksPipelines#pipeline_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/pipelines#pipeline_name DataDatabricksPipelines#pipeline_name}.
 
 ---
 
@@ -848,7 +848,7 @@ ProviderConfig DataDatabricksPipelinesProviderConfig
 
 provider_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/data-sources/pipelines#provider_config DataDatabricksPipelines#provider_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/pipelines#provider_config DataDatabricksPipelines#provider_config}
 
 ---
 
@@ -857,7 +857,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksPipelines.DataDatabricksPipelinesProviderConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabrickspipelines"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/datadatabrickspipelines"
 
 &datadatabrickspipelines.DataDatabricksPipelinesProviderConfig {
 	WorkspaceId: *string,
@@ -868,7 +868,7 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadata
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksPipelines.DataDatabricksPipelinesProviderConfig.property.workspaceId">WorkspaceId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/data-sources/pipelines#workspace_id DataDatabricksPipelines#workspace_id}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksPipelines.DataDatabricksPipelinesProviderConfig.property.workspaceId">WorkspaceId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/pipelines#workspace_id DataDatabricksPipelines#workspace_id}. |
 
 ---
 
@@ -880,7 +880,7 @@ WorkspaceId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/data-sources/pipelines#workspace_id DataDatabricksPipelines#workspace_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/pipelines#workspace_id DataDatabricksPipelines#workspace_id}.
 
 ---
 
@@ -891,7 +891,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksPipelines.DataDatabricksPipelinesProviderConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabrickspipelines"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/datadatabrickspipelines"
 
 datadatabrickspipelines.NewDataDatabricksPipelinesProviderConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksPipelinesProviderConfigOutputReference
 ```

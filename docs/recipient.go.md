@@ -4,12 +4,12 @@
 
 ### Recipient <a name="Recipient" id="@cdktn/provider-databricks.recipient.Recipient"></a>
 
-Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/recipient databricks_recipient}.
+Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/recipient databricks_recipient}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.recipient.Recipient.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/recipient"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/recipient"
 
 recipient.NewRecipient(scope Construct, id *string, config RecipientConfig) Recipient
 ```
@@ -522,7 +522,7 @@ func ResetTokens()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-databricks.recipient.Recipient.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/recipient"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/recipient"
 
 recipient.Recipient_IsConstruct(x interface{}) *bool
 ```
@@ -554,7 +554,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-databricks.recipient.Recipient.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/recipient"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/recipient"
 
 recipient.Recipient_IsTerraformElement(x interface{}) *bool
 ```
@@ -568,7 +568,7 @@ recipient.Recipient_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-databricks.recipient.Recipient.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/recipient"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/recipient"
 
 recipient.Recipient_IsTerraformResource(x interface{}) *bool
 ```
@@ -582,7 +582,7 @@ recipient.Recipient_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-databricks.recipient.Recipient.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/recipient"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/recipient"
 
 recipient.Recipient_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -611,7 +611,7 @@ The construct id used in the generated config for the Recipient to import.
 
 The id of the existing Recipient that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/recipient#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/recipient#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1174,7 +1174,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.recipient.RecipientConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/recipient"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/recipient"
 
 &recipient.RecipientConfig {
 	Connection: interface{},
@@ -1190,10 +1190,10 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/recipien
 	DataRecipientGlobalMetastoreId: *string,
 	ExpirationTime: *f64,
 	Id: *string,
-	IpAccessList: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18.recipient.RecipientIpAccessListStruct,
+	IpAccessList: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19.recipient.RecipientIpAccessListStruct,
 	Owner: *string,
-	PropertiesKvpairs: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18.recipient.RecipientPropertiesKvpairs,
-	ProviderConfig: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18.recipient.RecipientProviderConfig,
+	PropertiesKvpairs: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19.recipient.RecipientPropertiesKvpairs,
+	ProviderConfig: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19.recipient.RecipientProviderConfig,
 	SharingCode: *string,
 	Tokens: interface{},
 }
@@ -1210,17 +1210,17 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/recipien
 | <code><a href="#@cdktn/provider-databricks.recipient.RecipientConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.recipient.RecipientConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.recipient.RecipientConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-databricks.recipient.RecipientConfig.property.authenticationType">AuthenticationType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/recipient#authentication_type Recipient#authentication_type}. |
-| <code><a href="#@cdktn/provider-databricks.recipient.RecipientConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/recipient#name Recipient#name}. |
-| <code><a href="#@cdktn/provider-databricks.recipient.RecipientConfig.property.comment">Comment</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/recipient#comment Recipient#comment}. |
-| <code><a href="#@cdktn/provider-databricks.recipient.RecipientConfig.property.dataRecipientGlobalMetastoreId">DataRecipientGlobalMetastoreId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/recipient#data_recipient_global_metastore_id Recipient#data_recipient_global_metastore_id}. |
-| <code><a href="#@cdktn/provider-databricks.recipient.RecipientConfig.property.expirationTime">ExpirationTime</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/recipient#expiration_time Recipient#expiration_time}. |
-| <code><a href="#@cdktn/provider-databricks.recipient.RecipientConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/recipient#id Recipient#id}. |
+| <code><a href="#@cdktn/provider-databricks.recipient.RecipientConfig.property.authenticationType">AuthenticationType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/recipient#authentication_type Recipient#authentication_type}. |
+| <code><a href="#@cdktn/provider-databricks.recipient.RecipientConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/recipient#name Recipient#name}. |
+| <code><a href="#@cdktn/provider-databricks.recipient.RecipientConfig.property.comment">Comment</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/recipient#comment Recipient#comment}. |
+| <code><a href="#@cdktn/provider-databricks.recipient.RecipientConfig.property.dataRecipientGlobalMetastoreId">DataRecipientGlobalMetastoreId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/recipient#data_recipient_global_metastore_id Recipient#data_recipient_global_metastore_id}. |
+| <code><a href="#@cdktn/provider-databricks.recipient.RecipientConfig.property.expirationTime">ExpirationTime</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/recipient#expiration_time Recipient#expiration_time}. |
+| <code><a href="#@cdktn/provider-databricks.recipient.RecipientConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/recipient#id Recipient#id}. |
 | <code><a href="#@cdktn/provider-databricks.recipient.RecipientConfig.property.ipAccessList">IpAccessList</a></code> | <code><a href="#@cdktn/provider-databricks.recipient.RecipientIpAccessListStruct">RecipientIpAccessListStruct</a></code> | ip_access_list block. |
-| <code><a href="#@cdktn/provider-databricks.recipient.RecipientConfig.property.owner">Owner</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/recipient#owner Recipient#owner}. |
+| <code><a href="#@cdktn/provider-databricks.recipient.RecipientConfig.property.owner">Owner</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/recipient#owner Recipient#owner}. |
 | <code><a href="#@cdktn/provider-databricks.recipient.RecipientConfig.property.propertiesKvpairs">PropertiesKvpairs</a></code> | <code><a href="#@cdktn/provider-databricks.recipient.RecipientPropertiesKvpairs">RecipientPropertiesKvpairs</a></code> | properties_kvpairs block. |
 | <code><a href="#@cdktn/provider-databricks.recipient.RecipientConfig.property.providerConfig">ProviderConfig</a></code> | <code><a href="#@cdktn/provider-databricks.recipient.RecipientProviderConfig">RecipientProviderConfig</a></code> | provider_config block. |
-| <code><a href="#@cdktn/provider-databricks.recipient.RecipientConfig.property.sharingCode">SharingCode</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/recipient#sharing_code Recipient#sharing_code}. |
+| <code><a href="#@cdktn/provider-databricks.recipient.RecipientConfig.property.sharingCode">SharingCode</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/recipient#sharing_code Recipient#sharing_code}. |
 | <code><a href="#@cdktn/provider-databricks.recipient.RecipientConfig.property.tokens">Tokens</a></code> | <code>interface{}</code> | tokens block. |
 
 ---
@@ -1303,7 +1303,7 @@ AuthenticationType *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/recipient#authentication_type Recipient#authentication_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/recipient#authentication_type Recipient#authentication_type}.
 
 ---
 
@@ -1315,7 +1315,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/recipient#name Recipient#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/recipient#name Recipient#name}.
 
 ---
 
@@ -1327,7 +1327,7 @@ Comment *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/recipient#comment Recipient#comment}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/recipient#comment Recipient#comment}.
 
 ---
 
@@ -1339,7 +1339,7 @@ DataRecipientGlobalMetastoreId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/recipient#data_recipient_global_metastore_id Recipient#data_recipient_global_metastore_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/recipient#data_recipient_global_metastore_id Recipient#data_recipient_global_metastore_id}.
 
 ---
 
@@ -1351,7 +1351,7 @@ ExpirationTime *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/recipient#expiration_time Recipient#expiration_time}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/recipient#expiration_time Recipient#expiration_time}.
 
 ---
 
@@ -1363,7 +1363,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/recipient#id Recipient#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/recipient#id Recipient#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1380,7 +1380,7 @@ IpAccessList RecipientIpAccessListStruct
 
 ip_access_list block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/recipient#ip_access_list Recipient#ip_access_list}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/recipient#ip_access_list Recipient#ip_access_list}
 
 ---
 
@@ -1392,7 +1392,7 @@ Owner *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/recipient#owner Recipient#owner}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/recipient#owner Recipient#owner}.
 
 ---
 
@@ -1406,7 +1406,7 @@ PropertiesKvpairs RecipientPropertiesKvpairs
 
 properties_kvpairs block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/recipient#properties_kvpairs Recipient#properties_kvpairs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/recipient#properties_kvpairs Recipient#properties_kvpairs}
 
 ---
 
@@ -1420,7 +1420,7 @@ ProviderConfig RecipientProviderConfig
 
 provider_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/recipient#provider_config Recipient#provider_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/recipient#provider_config Recipient#provider_config}
 
 ---
 
@@ -1432,7 +1432,7 @@ SharingCode *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/recipient#sharing_code Recipient#sharing_code}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/recipient#sharing_code Recipient#sharing_code}.
 
 ---
 
@@ -1446,7 +1446,7 @@ Tokens interface{}
 
 tokens block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/recipient#tokens Recipient#tokens}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/recipient#tokens Recipient#tokens}
 
 ---
 
@@ -1455,7 +1455,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.recipient.RecipientIpAccessListStruct.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/recipient"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/recipient"
 
 &recipient.RecipientIpAccessListStruct {
 	AllowedIpAddresses: *[]*string,
@@ -1466,7 +1466,7 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/recipien
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.recipient.RecipientIpAccessListStruct.property.allowedIpAddresses">AllowedIpAddresses</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/recipient#allowed_ip_addresses Recipient#allowed_ip_addresses}. |
+| <code><a href="#@cdktn/provider-databricks.recipient.RecipientIpAccessListStruct.property.allowedIpAddresses">AllowedIpAddresses</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/recipient#allowed_ip_addresses Recipient#allowed_ip_addresses}. |
 
 ---
 
@@ -1478,7 +1478,7 @@ AllowedIpAddresses *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/recipient#allowed_ip_addresses Recipient#allowed_ip_addresses}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/recipient#allowed_ip_addresses Recipient#allowed_ip_addresses}.
 
 ---
 
@@ -1487,7 +1487,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.recipient.RecipientPropertiesKvpairs.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/recipient"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/recipient"
 
 &recipient.RecipientPropertiesKvpairs {
 	Properties: *map[string]*string,
@@ -1498,7 +1498,7 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/recipien
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.recipient.RecipientPropertiesKvpairs.property.properties">Properties</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/recipient#properties Recipient#properties}. |
+| <code><a href="#@cdktn/provider-databricks.recipient.RecipientPropertiesKvpairs.property.properties">Properties</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/recipient#properties Recipient#properties}. |
 
 ---
 
@@ -1510,7 +1510,7 @@ Properties *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/recipient#properties Recipient#properties}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/recipient#properties Recipient#properties}.
 
 ---
 
@@ -1519,7 +1519,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.recipient.RecipientProviderConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/recipient"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/recipient"
 
 &recipient.RecipientProviderConfig {
 	WorkspaceId: *string,
@@ -1530,7 +1530,7 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/recipien
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.recipient.RecipientProviderConfig.property.workspaceId">WorkspaceId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/recipient#workspace_id Recipient#workspace_id}. |
+| <code><a href="#@cdktn/provider-databricks.recipient.RecipientProviderConfig.property.workspaceId">WorkspaceId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/recipient#workspace_id Recipient#workspace_id}. |
 
 ---
 
@@ -1542,7 +1542,7 @@ WorkspaceId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/recipient#workspace_id Recipient#workspace_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/recipient#workspace_id Recipient#workspace_id}.
 
 ---
 
@@ -1551,7 +1551,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.recipient.RecipientTokens.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/recipient"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/recipient"
 
 &recipient.RecipientTokens {
 
@@ -1566,7 +1566,7 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/recipien
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.recipient.RecipientIpAccessListStructOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/recipient"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/recipient"
 
 recipient.NewRecipientIpAccessListStructOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) RecipientIpAccessListStructOutputReference
 ```
@@ -1844,7 +1844,7 @@ func InternalValue() RecipientIpAccessListStruct
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.recipient.RecipientPropertiesKvpairsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/recipient"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/recipient"
 
 recipient.NewRecipientPropertiesKvpairsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) RecipientPropertiesKvpairsOutputReference
 ```
@@ -2115,7 +2115,7 @@ func InternalValue() RecipientPropertiesKvpairs
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.recipient.RecipientProviderConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/recipient"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/recipient"
 
 recipient.NewRecipientProviderConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) RecipientProviderConfigOutputReference
 ```
@@ -2393,7 +2393,7 @@ func InternalValue() RecipientProviderConfig
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.recipient.RecipientTokensList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/recipient"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/recipient"
 
 recipient.NewRecipientTokensList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) RecipientTokensList
 ```
@@ -2553,7 +2553,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.recipient.RecipientTokensOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/recipient"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/recipient"
 
 recipient.NewRecipientTokensOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) RecipientTokensOutputReference
 ```

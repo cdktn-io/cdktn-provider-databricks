@@ -4,7 +4,7 @@
 
 ### SqlEndpoint <a name="SqlEndpoint" id="@cdktn/provider-databricks.sqlEndpoint.SqlEndpoint"></a>
 
-Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/sql_endpoint databricks_sql_endpoint}.
+Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/sql_endpoint databricks_sql_endpoint}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.sqlEndpoint.SqlEndpoint.Initializer"></a>
 
@@ -80,16 +80,20 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktn/provider-databricks.sqlEndpoint.SqlEndpoint.putTimeouts">putTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.sqlEndpoint.SqlEndpoint.resetAutoStopMins">resetAutoStopMins</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.sqlEndpoint.SqlEndpoint.resetChannel">resetChannel</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.sqlEndpoint.SqlEndpoint.resetCustomerVersionLabel">resetCustomerVersionLabel</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.sqlEndpoint.SqlEndpoint.resetDataSourceId">resetDataSourceId</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.sqlEndpoint.SqlEndpoint.resetEnablePhoton">resetEnablePhoton</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.sqlEndpoint.SqlEndpoint.resetEnableServerlessCompute">resetEnableServerlessCompute</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.sqlEndpoint.SqlEndpoint.resetId">resetId</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.sqlEndpoint.SqlEndpoint.resetInstanceProfileArn">resetInstanceProfileArn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.sqlEndpoint.SqlEndpoint.resetMaxDbu">resetMaxDbu</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.sqlEndpoint.SqlEndpoint.resetMaxNumClusters">resetMaxNumClusters</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.sqlEndpoint.SqlEndpoint.resetMinNumClusters">resetMinNumClusters</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.sqlEndpoint.SqlEndpoint.resetNoWait">resetNoWait</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.sqlEndpoint.SqlEndpoint.resetProviderConfig">resetProviderConfig</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.sqlEndpoint.SqlEndpoint.resetReydenClusterSizeMultiplier">resetReydenClusterSizeMultiplier</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.sqlEndpoint.SqlEndpoint.resetSpotInstancePolicy">resetSpotInstancePolicy</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.sqlEndpoint.SqlEndpoint.resetStatementTimeout">resetStatementTimeout</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.sqlEndpoint.SqlEndpoint.resetTags">resetTags</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.sqlEndpoint.SqlEndpoint.resetTimeouts">resetTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.sqlEndpoint.SqlEndpoint.resetWarehouseType">resetWarehouseType</a></code> | *No description.* |
@@ -465,6 +469,12 @@ public resetAutoStopMins(): void
 public resetChannel(): void
 ```
 
+##### `resetCustomerVersionLabel` <a name="resetCustomerVersionLabel" id="@cdktn/provider-databricks.sqlEndpoint.SqlEndpoint.resetCustomerVersionLabel"></a>
+
+```typescript
+public resetCustomerVersionLabel(): void
+```
+
 ##### `resetDataSourceId` <a name="resetDataSourceId" id="@cdktn/provider-databricks.sqlEndpoint.SqlEndpoint.resetDataSourceId"></a>
 
 ```typescript
@@ -495,6 +505,12 @@ public resetId(): void
 public resetInstanceProfileArn(): void
 ```
 
+##### `resetMaxDbu` <a name="resetMaxDbu" id="@cdktn/provider-databricks.sqlEndpoint.SqlEndpoint.resetMaxDbu"></a>
+
+```typescript
+public resetMaxDbu(): void
+```
+
 ##### `resetMaxNumClusters` <a name="resetMaxNumClusters" id="@cdktn/provider-databricks.sqlEndpoint.SqlEndpoint.resetMaxNumClusters"></a>
 
 ```typescript
@@ -519,10 +535,22 @@ public resetNoWait(): void
 public resetProviderConfig(): void
 ```
 
+##### `resetReydenClusterSizeMultiplier` <a name="resetReydenClusterSizeMultiplier" id="@cdktn/provider-databricks.sqlEndpoint.SqlEndpoint.resetReydenClusterSizeMultiplier"></a>
+
+```typescript
+public resetReydenClusterSizeMultiplier(): void
+```
+
 ##### `resetSpotInstancePolicy` <a name="resetSpotInstancePolicy" id="@cdktn/provider-databricks.sqlEndpoint.SqlEndpoint.resetSpotInstancePolicy"></a>
 
 ```typescript
 public resetSpotInstancePolicy(): void
+```
+
+##### `resetStatementTimeout` <a name="resetStatementTimeout" id="@cdktn/provider-databricks.sqlEndpoint.SqlEndpoint.resetStatementTimeout"></a>
+
+```typescript
+public resetStatementTimeout(): void
 ```
 
 ##### `resetTags` <a name="resetTags" id="@cdktn/provider-databricks.sqlEndpoint.SqlEndpoint.resetTags"></a>
@@ -646,7 +674,7 @@ The construct id used in the generated config for the SqlEndpoint to import.
 
 The id of the existing SqlEndpoint that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/sql_endpoint#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/sql_endpoint#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -690,32 +718,40 @@ Refer to the {@link https://registry.terraform.io/providers/databricks/databrick
 | <code><a href="#@cdktn/provider-databricks.sqlEndpoint.SqlEndpoint.property.autoStopMinsInput">autoStopMinsInput</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.sqlEndpoint.SqlEndpoint.property.channelInput">channelInput</a></code> | <code><a href="#@cdktn/provider-databricks.sqlEndpoint.SqlEndpointChannel">SqlEndpointChannel</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.sqlEndpoint.SqlEndpoint.property.clusterSizeInput">clusterSizeInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.sqlEndpoint.SqlEndpoint.property.customerVersionLabelInput">customerVersionLabelInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.sqlEndpoint.SqlEndpoint.property.dataSourceIdInput">dataSourceIdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.sqlEndpoint.SqlEndpoint.property.enablePhotonInput">enablePhotonInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.sqlEndpoint.SqlEndpoint.property.enableServerlessComputeInput">enableServerlessComputeInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.sqlEndpoint.SqlEndpoint.property.idInput">idInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.sqlEndpoint.SqlEndpoint.property.instanceProfileArnInput">instanceProfileArnInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.sqlEndpoint.SqlEndpoint.property.maxDbuInput">maxDbuInput</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.sqlEndpoint.SqlEndpoint.property.maxNumClustersInput">maxNumClustersInput</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.sqlEndpoint.SqlEndpoint.property.minNumClustersInput">minNumClustersInput</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.sqlEndpoint.SqlEndpoint.property.nameInput">nameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.sqlEndpoint.SqlEndpoint.property.noWaitInput">noWaitInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.sqlEndpoint.SqlEndpoint.property.providerConfigInput">providerConfigInput</a></code> | <code><a href="#@cdktn/provider-databricks.sqlEndpoint.SqlEndpointProviderConfig">SqlEndpointProviderConfig</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.sqlEndpoint.SqlEndpoint.property.reydenClusterSizeMultiplierInput">reydenClusterSizeMultiplierInput</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.sqlEndpoint.SqlEndpoint.property.spotInstancePolicyInput">spotInstancePolicyInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.sqlEndpoint.SqlEndpoint.property.statementTimeoutInput">statementTimeoutInput</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.sqlEndpoint.SqlEndpoint.property.tagsInput">tagsInput</a></code> | <code><a href="#@cdktn/provider-databricks.sqlEndpoint.SqlEndpointTags">SqlEndpointTags</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.sqlEndpoint.SqlEndpoint.property.timeoutsInput">timeoutsInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-databricks.sqlEndpoint.SqlEndpointTimeouts">SqlEndpointTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.sqlEndpoint.SqlEndpoint.property.warehouseTypeInput">warehouseTypeInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.sqlEndpoint.SqlEndpoint.property.autoStopMins">autoStopMins</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.sqlEndpoint.SqlEndpoint.property.clusterSize">clusterSize</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.sqlEndpoint.SqlEndpoint.property.customerVersionLabel">customerVersionLabel</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.sqlEndpoint.SqlEndpoint.property.dataSourceId">dataSourceId</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.sqlEndpoint.SqlEndpoint.property.enablePhoton">enablePhoton</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.sqlEndpoint.SqlEndpoint.property.enableServerlessCompute">enableServerlessCompute</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.sqlEndpoint.SqlEndpoint.property.id">id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.sqlEndpoint.SqlEndpoint.property.instanceProfileArn">instanceProfileArn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.sqlEndpoint.SqlEndpoint.property.maxDbu">maxDbu</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.sqlEndpoint.SqlEndpoint.property.maxNumClusters">maxNumClusters</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.sqlEndpoint.SqlEndpoint.property.minNumClusters">minNumClusters</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.sqlEndpoint.SqlEndpoint.property.name">name</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.sqlEndpoint.SqlEndpoint.property.noWait">noWait</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.sqlEndpoint.SqlEndpoint.property.reydenClusterSizeMultiplier">reydenClusterSizeMultiplier</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.sqlEndpoint.SqlEndpoint.property.spotInstancePolicy">spotInstancePolicy</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.sqlEndpoint.SqlEndpoint.property.statementTimeout">statementTimeout</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.sqlEndpoint.SqlEndpoint.property.warehouseType">warehouseType</a></code> | <code>string</code> | *No description.* |
 
 ---
@@ -1002,6 +1038,16 @@ public readonly clusterSizeInput: string;
 
 ---
 
+##### `customerVersionLabelInput`<sup>Optional</sup> <a name="customerVersionLabelInput" id="@cdktn/provider-databricks.sqlEndpoint.SqlEndpoint.property.customerVersionLabelInput"></a>
+
+```typescript
+public readonly customerVersionLabelInput: string;
+```
+
+- *Type:* string
+
+---
+
 ##### `dataSourceIdInput`<sup>Optional</sup> <a name="dataSourceIdInput" id="@cdktn/provider-databricks.sqlEndpoint.SqlEndpoint.property.dataSourceIdInput"></a>
 
 ```typescript
@@ -1049,6 +1095,16 @@ public readonly instanceProfileArnInput: string;
 ```
 
 - *Type:* string
+
+---
+
+##### `maxDbuInput`<sup>Optional</sup> <a name="maxDbuInput" id="@cdktn/provider-databricks.sqlEndpoint.SqlEndpoint.property.maxDbuInput"></a>
+
+```typescript
+public readonly maxDbuInput: number;
+```
+
+- *Type:* number
 
 ---
 
@@ -1102,6 +1158,16 @@ public readonly providerConfigInput: SqlEndpointProviderConfig;
 
 ---
 
+##### `reydenClusterSizeMultiplierInput`<sup>Optional</sup> <a name="reydenClusterSizeMultiplierInput" id="@cdktn/provider-databricks.sqlEndpoint.SqlEndpoint.property.reydenClusterSizeMultiplierInput"></a>
+
+```typescript
+public readonly reydenClusterSizeMultiplierInput: number;
+```
+
+- *Type:* number
+
+---
+
 ##### `spotInstancePolicyInput`<sup>Optional</sup> <a name="spotInstancePolicyInput" id="@cdktn/provider-databricks.sqlEndpoint.SqlEndpoint.property.spotInstancePolicyInput"></a>
 
 ```typescript
@@ -1109,6 +1175,16 @@ public readonly spotInstancePolicyInput: string;
 ```
 
 - *Type:* string
+
+---
+
+##### `statementTimeoutInput`<sup>Optional</sup> <a name="statementTimeoutInput" id="@cdktn/provider-databricks.sqlEndpoint.SqlEndpoint.property.statementTimeoutInput"></a>
+
+```typescript
+public readonly statementTimeoutInput: number;
+```
+
+- *Type:* number
 
 ---
 
@@ -1156,6 +1232,16 @@ public readonly autoStopMins: number;
 
 ```typescript
 public readonly clusterSize: string;
+```
+
+- *Type:* string
+
+---
+
+##### `customerVersionLabel`<sup>Required</sup> <a name="customerVersionLabel" id="@cdktn/provider-databricks.sqlEndpoint.SqlEndpoint.property.customerVersionLabel"></a>
+
+```typescript
+public readonly customerVersionLabel: string;
 ```
 
 - *Type:* string
@@ -1212,6 +1298,16 @@ public readonly instanceProfileArn: string;
 
 ---
 
+##### `maxDbu`<sup>Required</sup> <a name="maxDbu" id="@cdktn/provider-databricks.sqlEndpoint.SqlEndpoint.property.maxDbu"></a>
+
+```typescript
+public readonly maxDbu: number;
+```
+
+- *Type:* number
+
+---
+
 ##### `maxNumClusters`<sup>Required</sup> <a name="maxNumClusters" id="@cdktn/provider-databricks.sqlEndpoint.SqlEndpoint.property.maxNumClusters"></a>
 
 ```typescript
@@ -1252,6 +1348,16 @@ public readonly noWait: boolean | IResolvable;
 
 ---
 
+##### `reydenClusterSizeMultiplier`<sup>Required</sup> <a name="reydenClusterSizeMultiplier" id="@cdktn/provider-databricks.sqlEndpoint.SqlEndpoint.property.reydenClusterSizeMultiplier"></a>
+
+```typescript
+public readonly reydenClusterSizeMultiplier: number;
+```
+
+- *Type:* number
+
+---
+
 ##### `spotInstancePolicy`<sup>Required</sup> <a name="spotInstancePolicy" id="@cdktn/provider-databricks.sqlEndpoint.SqlEndpoint.property.spotInstancePolicy"></a>
 
 ```typescript
@@ -1259,6 +1365,16 @@ public readonly spotInstancePolicy: string;
 ```
 
 - *Type:* string
+
+---
+
+##### `statementTimeout`<sup>Required</sup> <a name="statementTimeout" id="@cdktn/provider-databricks.sqlEndpoint.SqlEndpoint.property.statementTimeout"></a>
+
+```typescript
+public readonly statementTimeout: number;
+```
+
+- *Type:* number
 
 ---
 
@@ -1306,8 +1422,8 @@ const sqlEndpointChannel: sqlEndpoint.SqlEndpointChannel = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.sqlEndpoint.SqlEndpointChannel.property.dbsqlVersion">dbsqlVersion</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/sql_endpoint#dbsql_version SqlEndpoint#dbsql_version}. |
-| <code><a href="#@cdktn/provider-databricks.sqlEndpoint.SqlEndpointChannel.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/sql_endpoint#name SqlEndpoint#name}. |
+| <code><a href="#@cdktn/provider-databricks.sqlEndpoint.SqlEndpointChannel.property.dbsqlVersion">dbsqlVersion</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/sql_endpoint#dbsql_version SqlEndpoint#dbsql_version}. |
+| <code><a href="#@cdktn/provider-databricks.sqlEndpoint.SqlEndpointChannel.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/sql_endpoint#name SqlEndpoint#name}. |
 
 ---
 
@@ -1319,7 +1435,7 @@ public readonly dbsqlVersion: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/sql_endpoint#dbsql_version SqlEndpoint#dbsql_version}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/sql_endpoint#dbsql_version SqlEndpoint#dbsql_version}.
 
 ---
 
@@ -1331,7 +1447,7 @@ public readonly name: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/sql_endpoint#name SqlEndpoint#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/sql_endpoint#name SqlEndpoint#name}.
 
 ---
 
@@ -1356,23 +1472,27 @@ const sqlEndpointConfig: sqlEndpoint.SqlEndpointConfig = { ... }
 | <code><a href="#@cdktn/provider-databricks.sqlEndpoint.SqlEndpointConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.sqlEndpoint.SqlEndpointConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.sqlEndpoint.SqlEndpointConfig.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-databricks.sqlEndpoint.SqlEndpointConfig.property.clusterSize">clusterSize</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/sql_endpoint#cluster_size SqlEndpoint#cluster_size}. |
-| <code><a href="#@cdktn/provider-databricks.sqlEndpoint.SqlEndpointConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/sql_endpoint#name SqlEndpoint#name}. |
-| <code><a href="#@cdktn/provider-databricks.sqlEndpoint.SqlEndpointConfig.property.autoStopMins">autoStopMins</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/sql_endpoint#auto_stop_mins SqlEndpoint#auto_stop_mins}. |
+| <code><a href="#@cdktn/provider-databricks.sqlEndpoint.SqlEndpointConfig.property.clusterSize">clusterSize</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/sql_endpoint#cluster_size SqlEndpoint#cluster_size}. |
+| <code><a href="#@cdktn/provider-databricks.sqlEndpoint.SqlEndpointConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/sql_endpoint#name SqlEndpoint#name}. |
+| <code><a href="#@cdktn/provider-databricks.sqlEndpoint.SqlEndpointConfig.property.autoStopMins">autoStopMins</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/sql_endpoint#auto_stop_mins SqlEndpoint#auto_stop_mins}. |
 | <code><a href="#@cdktn/provider-databricks.sqlEndpoint.SqlEndpointConfig.property.channel">channel</a></code> | <code><a href="#@cdktn/provider-databricks.sqlEndpoint.SqlEndpointChannel">SqlEndpointChannel</a></code> | channel block. |
-| <code><a href="#@cdktn/provider-databricks.sqlEndpoint.SqlEndpointConfig.property.dataSourceId">dataSourceId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/sql_endpoint#data_source_id SqlEndpoint#data_source_id}. |
-| <code><a href="#@cdktn/provider-databricks.sqlEndpoint.SqlEndpointConfig.property.enablePhoton">enablePhoton</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/sql_endpoint#enable_photon SqlEndpoint#enable_photon}. |
-| <code><a href="#@cdktn/provider-databricks.sqlEndpoint.SqlEndpointConfig.property.enableServerlessCompute">enableServerlessCompute</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/sql_endpoint#enable_serverless_compute SqlEndpoint#enable_serverless_compute}. |
-| <code><a href="#@cdktn/provider-databricks.sqlEndpoint.SqlEndpointConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/sql_endpoint#id SqlEndpoint#id}. |
-| <code><a href="#@cdktn/provider-databricks.sqlEndpoint.SqlEndpointConfig.property.instanceProfileArn">instanceProfileArn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/sql_endpoint#instance_profile_arn SqlEndpoint#instance_profile_arn}. |
-| <code><a href="#@cdktn/provider-databricks.sqlEndpoint.SqlEndpointConfig.property.maxNumClusters">maxNumClusters</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/sql_endpoint#max_num_clusters SqlEndpoint#max_num_clusters}. |
-| <code><a href="#@cdktn/provider-databricks.sqlEndpoint.SqlEndpointConfig.property.minNumClusters">minNumClusters</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/sql_endpoint#min_num_clusters SqlEndpoint#min_num_clusters}. |
+| <code><a href="#@cdktn/provider-databricks.sqlEndpoint.SqlEndpointConfig.property.customerVersionLabel">customerVersionLabel</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/sql_endpoint#customer_version_label SqlEndpoint#customer_version_label}. |
+| <code><a href="#@cdktn/provider-databricks.sqlEndpoint.SqlEndpointConfig.property.dataSourceId">dataSourceId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/sql_endpoint#data_source_id SqlEndpoint#data_source_id}. |
+| <code><a href="#@cdktn/provider-databricks.sqlEndpoint.SqlEndpointConfig.property.enablePhoton">enablePhoton</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/sql_endpoint#enable_photon SqlEndpoint#enable_photon}. |
+| <code><a href="#@cdktn/provider-databricks.sqlEndpoint.SqlEndpointConfig.property.enableServerlessCompute">enableServerlessCompute</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/sql_endpoint#enable_serverless_compute SqlEndpoint#enable_serverless_compute}. |
+| <code><a href="#@cdktn/provider-databricks.sqlEndpoint.SqlEndpointConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/sql_endpoint#id SqlEndpoint#id}. |
+| <code><a href="#@cdktn/provider-databricks.sqlEndpoint.SqlEndpointConfig.property.instanceProfileArn">instanceProfileArn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/sql_endpoint#instance_profile_arn SqlEndpoint#instance_profile_arn}. |
+| <code><a href="#@cdktn/provider-databricks.sqlEndpoint.SqlEndpointConfig.property.maxDbu">maxDbu</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/sql_endpoint#max_dbu SqlEndpoint#max_dbu}. |
+| <code><a href="#@cdktn/provider-databricks.sqlEndpoint.SqlEndpointConfig.property.maxNumClusters">maxNumClusters</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/sql_endpoint#max_num_clusters SqlEndpoint#max_num_clusters}. |
+| <code><a href="#@cdktn/provider-databricks.sqlEndpoint.SqlEndpointConfig.property.minNumClusters">minNumClusters</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/sql_endpoint#min_num_clusters SqlEndpoint#min_num_clusters}. |
 | <code><a href="#@cdktn/provider-databricks.sqlEndpoint.SqlEndpointConfig.property.noWait">noWait</a></code> | <code>boolean \| cdktn.IResolvable</code> | If true, skip waiting for the warehouse to start after creation. |
 | <code><a href="#@cdktn/provider-databricks.sqlEndpoint.SqlEndpointConfig.property.providerConfig">providerConfig</a></code> | <code><a href="#@cdktn/provider-databricks.sqlEndpoint.SqlEndpointProviderConfig">SqlEndpointProviderConfig</a></code> | provider_config block. |
-| <code><a href="#@cdktn/provider-databricks.sqlEndpoint.SqlEndpointConfig.property.spotInstancePolicy">spotInstancePolicy</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/sql_endpoint#spot_instance_policy SqlEndpoint#spot_instance_policy}. |
+| <code><a href="#@cdktn/provider-databricks.sqlEndpoint.SqlEndpointConfig.property.reydenClusterSizeMultiplier">reydenClusterSizeMultiplier</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/sql_endpoint#reyden_cluster_size_multiplier SqlEndpoint#reyden_cluster_size_multiplier}. |
+| <code><a href="#@cdktn/provider-databricks.sqlEndpoint.SqlEndpointConfig.property.spotInstancePolicy">spotInstancePolicy</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/sql_endpoint#spot_instance_policy SqlEndpoint#spot_instance_policy}. |
+| <code><a href="#@cdktn/provider-databricks.sqlEndpoint.SqlEndpointConfig.property.statementTimeout">statementTimeout</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/sql_endpoint#statement_timeout SqlEndpoint#statement_timeout}. |
 | <code><a href="#@cdktn/provider-databricks.sqlEndpoint.SqlEndpointConfig.property.tags">tags</a></code> | <code><a href="#@cdktn/provider-databricks.sqlEndpoint.SqlEndpointTags">SqlEndpointTags</a></code> | tags block. |
 | <code><a href="#@cdktn/provider-databricks.sqlEndpoint.SqlEndpointConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-databricks.sqlEndpoint.SqlEndpointTimeouts">SqlEndpointTimeouts</a></code> | timeouts block. |
-| <code><a href="#@cdktn/provider-databricks.sqlEndpoint.SqlEndpointConfig.property.warehouseType">warehouseType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/sql_endpoint#warehouse_type SqlEndpoint#warehouse_type}. |
+| <code><a href="#@cdktn/provider-databricks.sqlEndpoint.SqlEndpointConfig.property.warehouseType">warehouseType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/sql_endpoint#warehouse_type SqlEndpoint#warehouse_type}. |
 
 ---
 
@@ -1454,7 +1574,7 @@ public readonly clusterSize: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/sql_endpoint#cluster_size SqlEndpoint#cluster_size}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/sql_endpoint#cluster_size SqlEndpoint#cluster_size}.
 
 ---
 
@@ -1466,7 +1586,7 @@ public readonly name: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/sql_endpoint#name SqlEndpoint#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/sql_endpoint#name SqlEndpoint#name}.
 
 ---
 
@@ -1478,7 +1598,7 @@ public readonly autoStopMins: number;
 
 - *Type:* number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/sql_endpoint#auto_stop_mins SqlEndpoint#auto_stop_mins}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/sql_endpoint#auto_stop_mins SqlEndpoint#auto_stop_mins}.
 
 ---
 
@@ -1492,7 +1612,19 @@ public readonly channel: SqlEndpointChannel;
 
 channel block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/sql_endpoint#channel SqlEndpoint#channel}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/sql_endpoint#channel SqlEndpoint#channel}
+
+---
+
+##### `customerVersionLabel`<sup>Optional</sup> <a name="customerVersionLabel" id="@cdktn/provider-databricks.sqlEndpoint.SqlEndpointConfig.property.customerVersionLabel"></a>
+
+```typescript
+public readonly customerVersionLabel: string;
+```
+
+- *Type:* string
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/sql_endpoint#customer_version_label SqlEndpoint#customer_version_label}.
 
 ---
 
@@ -1504,7 +1636,7 @@ public readonly dataSourceId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/sql_endpoint#data_source_id SqlEndpoint#data_source_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/sql_endpoint#data_source_id SqlEndpoint#data_source_id}.
 
 ---
 
@@ -1516,7 +1648,7 @@ public readonly enablePhoton: boolean | IResolvable;
 
 - *Type:* boolean | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/sql_endpoint#enable_photon SqlEndpoint#enable_photon}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/sql_endpoint#enable_photon SqlEndpoint#enable_photon}.
 
 ---
 
@@ -1528,7 +1660,7 @@ public readonly enableServerlessCompute: boolean | IResolvable;
 
 - *Type:* boolean | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/sql_endpoint#enable_serverless_compute SqlEndpoint#enable_serverless_compute}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/sql_endpoint#enable_serverless_compute SqlEndpoint#enable_serverless_compute}.
 
 ---
 
@@ -1540,7 +1672,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/sql_endpoint#id SqlEndpoint#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/sql_endpoint#id SqlEndpoint#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1555,7 +1687,19 @@ public readonly instanceProfileArn: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/sql_endpoint#instance_profile_arn SqlEndpoint#instance_profile_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/sql_endpoint#instance_profile_arn SqlEndpoint#instance_profile_arn}.
+
+---
+
+##### `maxDbu`<sup>Optional</sup> <a name="maxDbu" id="@cdktn/provider-databricks.sqlEndpoint.SqlEndpointConfig.property.maxDbu"></a>
+
+```typescript
+public readonly maxDbu: number;
+```
+
+- *Type:* number
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/sql_endpoint#max_dbu SqlEndpoint#max_dbu}.
 
 ---
 
@@ -1567,7 +1711,7 @@ public readonly maxNumClusters: number;
 
 - *Type:* number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/sql_endpoint#max_num_clusters SqlEndpoint#max_num_clusters}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/sql_endpoint#max_num_clusters SqlEndpoint#max_num_clusters}.
 
 ---
 
@@ -1579,7 +1723,7 @@ public readonly minNumClusters: number;
 
 - *Type:* number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/sql_endpoint#min_num_clusters SqlEndpoint#min_num_clusters}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/sql_endpoint#min_num_clusters SqlEndpoint#min_num_clusters}.
 
 ---
 
@@ -1593,7 +1737,7 @@ public readonly noWait: boolean | IResolvable;
 
 If true, skip waiting for the warehouse to start after creation.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/sql_endpoint#no_wait SqlEndpoint#no_wait}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/sql_endpoint#no_wait SqlEndpoint#no_wait}
 
 ---
 
@@ -1607,7 +1751,19 @@ public readonly providerConfig: SqlEndpointProviderConfig;
 
 provider_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/sql_endpoint#provider_config SqlEndpoint#provider_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/sql_endpoint#provider_config SqlEndpoint#provider_config}
+
+---
+
+##### `reydenClusterSizeMultiplier`<sup>Optional</sup> <a name="reydenClusterSizeMultiplier" id="@cdktn/provider-databricks.sqlEndpoint.SqlEndpointConfig.property.reydenClusterSizeMultiplier"></a>
+
+```typescript
+public readonly reydenClusterSizeMultiplier: number;
+```
+
+- *Type:* number
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/sql_endpoint#reyden_cluster_size_multiplier SqlEndpoint#reyden_cluster_size_multiplier}.
 
 ---
 
@@ -1619,7 +1775,19 @@ public readonly spotInstancePolicy: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/sql_endpoint#spot_instance_policy SqlEndpoint#spot_instance_policy}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/sql_endpoint#spot_instance_policy SqlEndpoint#spot_instance_policy}.
+
+---
+
+##### `statementTimeout`<sup>Optional</sup> <a name="statementTimeout" id="@cdktn/provider-databricks.sqlEndpoint.SqlEndpointConfig.property.statementTimeout"></a>
+
+```typescript
+public readonly statementTimeout: number;
+```
+
+- *Type:* number
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/sql_endpoint#statement_timeout SqlEndpoint#statement_timeout}.
 
 ---
 
@@ -1633,7 +1801,7 @@ public readonly tags: SqlEndpointTags;
 
 tags block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/sql_endpoint#tags SqlEndpoint#tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/sql_endpoint#tags SqlEndpoint#tags}
 
 ---
 
@@ -1647,7 +1815,7 @@ public readonly timeouts: SqlEndpointTimeouts;
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/sql_endpoint#timeouts SqlEndpoint#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/sql_endpoint#timeouts SqlEndpoint#timeouts}
 
 ---
 
@@ -1659,7 +1827,7 @@ public readonly warehouseType: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/sql_endpoint#warehouse_type SqlEndpoint#warehouse_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/sql_endpoint#warehouse_type SqlEndpoint#warehouse_type}.
 
 ---
 
@@ -1710,7 +1878,7 @@ const sqlEndpointProviderConfig: sqlEndpoint.SqlEndpointProviderConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.sqlEndpoint.SqlEndpointProviderConfig.property.workspaceId">workspaceId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/sql_endpoint#workspace_id SqlEndpoint#workspace_id}. |
+| <code><a href="#@cdktn/provider-databricks.sqlEndpoint.SqlEndpointProviderConfig.property.workspaceId">workspaceId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/sql_endpoint#workspace_id SqlEndpoint#workspace_id}. |
 
 ---
 
@@ -1722,7 +1890,7 @@ public readonly workspaceId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/sql_endpoint#workspace_id SqlEndpoint#workspace_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/sql_endpoint#workspace_id SqlEndpoint#workspace_id}.
 
 ---
 
@@ -1754,7 +1922,7 @@ public readonly customTags: IResolvable | SqlEndpointTagsCustomTags[];
 
 custom_tags block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/sql_endpoint#custom_tags SqlEndpoint#custom_tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/sql_endpoint#custom_tags SqlEndpoint#custom_tags}
 
 ---
 
@@ -1772,8 +1940,8 @@ const sqlEndpointTagsCustomTags: sqlEndpoint.SqlEndpointTagsCustomTags = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.sqlEndpoint.SqlEndpointTagsCustomTags.property.key">key</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/sql_endpoint#key SqlEndpoint#key}. |
-| <code><a href="#@cdktn/provider-databricks.sqlEndpoint.SqlEndpointTagsCustomTags.property.value">value</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/sql_endpoint#value SqlEndpoint#value}. |
+| <code><a href="#@cdktn/provider-databricks.sqlEndpoint.SqlEndpointTagsCustomTags.property.key">key</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/sql_endpoint#key SqlEndpoint#key}. |
+| <code><a href="#@cdktn/provider-databricks.sqlEndpoint.SqlEndpointTagsCustomTags.property.value">value</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/sql_endpoint#value SqlEndpoint#value}. |
 
 ---
 
@@ -1785,7 +1953,7 @@ public readonly key: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/sql_endpoint#key SqlEndpoint#key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/sql_endpoint#key SqlEndpoint#key}.
 
 ---
 
@@ -1797,7 +1965,7 @@ public readonly value: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/sql_endpoint#value SqlEndpoint#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/sql_endpoint#value SqlEndpoint#value}.
 
 ---
 
@@ -1815,7 +1983,7 @@ const sqlEndpointTimeouts: sqlEndpoint.SqlEndpointTimeouts = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.sqlEndpoint.SqlEndpointTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/sql_endpoint#create SqlEndpoint#create}. |
+| <code><a href="#@cdktn/provider-databricks.sqlEndpoint.SqlEndpointTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/sql_endpoint#create SqlEndpoint#create}. |
 
 ---
 
@@ -1827,7 +1995,7 @@ public readonly create: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/sql_endpoint#create SqlEndpoint#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/sql_endpoint#create SqlEndpoint#create}.
 
 ---
 

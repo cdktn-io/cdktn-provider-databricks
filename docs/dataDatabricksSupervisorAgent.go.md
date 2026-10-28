@@ -4,12 +4,12 @@
 
 ### DataDatabricksSupervisorAgent <a name="DataDatabricksSupervisorAgent" id="@cdktn/provider-databricks.dataDatabricksSupervisorAgent.DataDatabricksSupervisorAgent"></a>
 
-Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/data-sources/supervisor_agent databricks_supervisor_agent}.
+Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/supervisor_agent databricks_supervisor_agent}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksSupervisorAgent.DataDatabricksSupervisorAgent.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabrickssupervisoragent"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/datadatabrickssupervisoragent"
 
 datadatabrickssupervisoragent.NewDataDatabricksSupervisorAgent(scope Construct, id *string, config DataDatabricksSupervisorAgentConfig) DataDatabricksSupervisorAgent
 ```
@@ -318,7 +318,7 @@ func ResetProviderConfig()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-databricks.dataDatabricksSupervisorAgent.DataDatabricksSupervisorAgent.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabrickssupervisoragent"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/datadatabrickssupervisoragent"
 
 datadatabrickssupervisoragent.DataDatabricksSupervisorAgent_IsConstruct(x interface{}) *bool
 ```
@@ -350,7 +350,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-databricks.dataDatabricksSupervisorAgent.DataDatabricksSupervisorAgent.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabrickssupervisoragent"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/datadatabrickssupervisoragent"
 
 datadatabrickssupervisoragent.DataDatabricksSupervisorAgent_IsTerraformElement(x interface{}) *bool
 ```
@@ -364,7 +364,7 @@ datadatabrickssupervisoragent.DataDatabricksSupervisorAgent_IsTerraformElement(x
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-databricks.dataDatabricksSupervisorAgent.DataDatabricksSupervisorAgent.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabrickssupervisoragent"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/datadatabrickssupervisoragent"
 
 datadatabrickssupervisoragent.DataDatabricksSupervisorAgent_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -378,7 +378,7 @@ datadatabrickssupervisoragent.DataDatabricksSupervisorAgent_IsTerraformDataSourc
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-databricks.dataDatabricksSupervisorAgent.DataDatabricksSupervisorAgent.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabrickssupervisoragent"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/datadatabrickssupervisoragent"
 
 datadatabrickssupervisoragent.DataDatabricksSupervisorAgent_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -407,7 +407,7 @@ The construct id used in the generated config for the DataDatabricksSupervisorAg
 
 The id of the existing DataDatabricksSupervisorAgent that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/data-sources/supervisor_agent#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/supervisor_agent#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -728,7 +728,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksSupervisorAgent.DataDatabricksSupervisorAgentConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabrickssupervisoragent"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/datadatabrickssupervisoragent"
 
 &datadatabrickssupervisoragent.DataDatabricksSupervisorAgentConfig {
 	Connection: interface{},
@@ -739,7 +739,7 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadata
 	Provider: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider,
 	Provisioners: *[]interface{},
 	Name: *string,
-	ProviderConfig: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18.dataDatabricksSupervisorAgent.DataDatabricksSupervisorAgentProviderConfig,
+	ProviderConfig: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19.dataDatabricksSupervisorAgent.DataDatabricksSupervisorAgentProviderConfig,
 }
 ```
 
@@ -754,8 +754,8 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadata
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksSupervisorAgent.DataDatabricksSupervisorAgentConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksSupervisorAgent.DataDatabricksSupervisorAgentConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksSupervisorAgent.DataDatabricksSupervisorAgentConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksSupervisorAgent.DataDatabricksSupervisorAgentConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/data-sources/supervisor_agent#name DataDatabricksSupervisorAgent#name}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksSupervisorAgent.DataDatabricksSupervisorAgentConfig.property.providerConfig">ProviderConfig</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksSupervisorAgent.DataDatabricksSupervisorAgentProviderConfig">DataDatabricksSupervisorAgentProviderConfig</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/data-sources/supervisor_agent#provider_config DataDatabricksSupervisorAgent#provider_config}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksSupervisorAgent.DataDatabricksSupervisorAgentConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/supervisor_agent#name DataDatabricksSupervisorAgent#name}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksSupervisorAgent.DataDatabricksSupervisorAgentConfig.property.providerConfig">ProviderConfig</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksSupervisorAgent.DataDatabricksSupervisorAgentProviderConfig">DataDatabricksSupervisorAgentProviderConfig</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/supervisor_agent#provider_config DataDatabricksSupervisorAgent#provider_config}. |
 
 ---
 
@@ -837,7 +837,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/data-sources/supervisor_agent#name DataDatabricksSupervisorAgent#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/supervisor_agent#name DataDatabricksSupervisorAgent#name}.
 
 ---
 
@@ -849,7 +849,7 @@ ProviderConfig DataDatabricksSupervisorAgentProviderConfig
 
 - *Type:* <a href="#@cdktn/provider-databricks.dataDatabricksSupervisorAgent.DataDatabricksSupervisorAgentProviderConfig">DataDatabricksSupervisorAgentProviderConfig</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/data-sources/supervisor_agent#provider_config DataDatabricksSupervisorAgent#provider_config}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/supervisor_agent#provider_config DataDatabricksSupervisorAgent#provider_config}.
 
 ---
 
@@ -858,7 +858,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksSupervisorAgent.DataDatabricksSupervisorAgentProviderConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabrickssupervisoragent"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/datadatabrickssupervisoragent"
 
 &datadatabrickssupervisoragent.DataDatabricksSupervisorAgentProviderConfig {
 	WorkspaceId: *string,
@@ -869,7 +869,7 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadata
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksSupervisorAgent.DataDatabricksSupervisorAgentProviderConfig.property.workspaceId">WorkspaceId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/data-sources/supervisor_agent#workspace_id DataDatabricksSupervisorAgent#workspace_id}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksSupervisorAgent.DataDatabricksSupervisorAgentProviderConfig.property.workspaceId">WorkspaceId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/supervisor_agent#workspace_id DataDatabricksSupervisorAgent#workspace_id}. |
 
 ---
 
@@ -881,7 +881,7 @@ WorkspaceId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/data-sources/supervisor_agent#workspace_id DataDatabricksSupervisorAgent#workspace_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/supervisor_agent#workspace_id DataDatabricksSupervisorAgent#workspace_id}.
 
 ---
 
@@ -892,7 +892,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksSupervisorAgent.DataDatabricksSupervisorAgentProviderConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabrickssupervisoragent"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/datadatabrickssupervisoragent"
 
 datadatabrickssupervisoragent.NewDataDatabricksSupervisorAgentProviderConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksSupervisorAgentProviderConfigOutputReference
 ```

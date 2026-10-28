@@ -4,12 +4,12 @@
 
 ### DisableLegacyAccessSetting <a name="DisableLegacyAccessSetting" id="@cdktn/provider-databricks.disableLegacyAccessSetting.DisableLegacyAccessSetting"></a>
 
-Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/disable_legacy_access_setting databricks_disable_legacy_access_setting}.
+Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/disable_legacy_access_setting databricks_disable_legacy_access_setting}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.disableLegacyAccessSetting.DisableLegacyAccessSetting.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/disablelegacyaccesssetting"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/disablelegacyaccesssetting"
 
 disablelegacyaccesssetting.NewDisableLegacyAccessSetting(scope Construct, id *string, config DisableLegacyAccessSettingConfig) DisableLegacyAccessSetting
 ```
@@ -454,7 +454,7 @@ func ResetSettingName()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-databricks.disableLegacyAccessSetting.DisableLegacyAccessSetting.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/disablelegacyaccesssetting"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/disablelegacyaccesssetting"
 
 disablelegacyaccesssetting.DisableLegacyAccessSetting_IsConstruct(x interface{}) *bool
 ```
@@ -486,7 +486,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-databricks.disableLegacyAccessSetting.DisableLegacyAccessSetting.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/disablelegacyaccesssetting"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/disablelegacyaccesssetting"
 
 disablelegacyaccesssetting.DisableLegacyAccessSetting_IsTerraformElement(x interface{}) *bool
 ```
@@ -500,7 +500,7 @@ disablelegacyaccesssetting.DisableLegacyAccessSetting_IsTerraformElement(x inter
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-databricks.disableLegacyAccessSetting.DisableLegacyAccessSetting.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/disablelegacyaccesssetting"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/disablelegacyaccesssetting"
 
 disablelegacyaccesssetting.DisableLegacyAccessSetting_IsTerraformResource(x interface{}) *bool
 ```
@@ -514,7 +514,7 @@ disablelegacyaccesssetting.DisableLegacyAccessSetting_IsTerraformResource(x inte
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-databricks.disableLegacyAccessSetting.DisableLegacyAccessSetting.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/disablelegacyaccesssetting"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/disablelegacyaccesssetting"
 
 disablelegacyaccesssetting.DisableLegacyAccessSetting_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -543,7 +543,7 @@ The construct id used in the generated config for the DisableLegacyAccessSetting
 
 The id of the existing DisableLegacyAccessSetting that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/disable_legacy_access_setting#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/disable_legacy_access_setting#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -853,7 +853,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.disableLegacyAccessSetting.DisableLegacyAccessSettingConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/disablelegacyaccesssetting"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/disablelegacyaccesssetting"
 
 &disablelegacyaccesssetting.DisableLegacyAccessSettingConfig {
 	Connection: interface{},
@@ -863,10 +863,10 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/disablel
 	Lifecycle: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle,
 	Provider: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider,
 	Provisioners: *[]interface{},
-	DisableLegacyAccess: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18.disableLegacyAccessSetting.DisableLegacyAccessSettingDisableLegacyAccess,
+	DisableLegacyAccess: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19.disableLegacyAccessSetting.DisableLegacyAccessSettingDisableLegacyAccess,
 	Etag: *string,
 	Id: *string,
-	ProviderConfig: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18.disableLegacyAccessSetting.DisableLegacyAccessSettingProviderConfig,
+	ProviderConfig: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19.disableLegacyAccessSetting.DisableLegacyAccessSettingProviderConfig,
 	SettingName: *string,
 }
 ```
@@ -883,10 +883,10 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/disablel
 | <code><a href="#@cdktn/provider-databricks.disableLegacyAccessSetting.DisableLegacyAccessSettingConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.disableLegacyAccessSetting.DisableLegacyAccessSettingConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.disableLegacyAccessSetting.DisableLegacyAccessSettingConfig.property.disableLegacyAccess">DisableLegacyAccess</a></code> | <code><a href="#@cdktn/provider-databricks.disableLegacyAccessSetting.DisableLegacyAccessSettingDisableLegacyAccess">DisableLegacyAccessSettingDisableLegacyAccess</a></code> | disable_legacy_access block. |
-| <code><a href="#@cdktn/provider-databricks.disableLegacyAccessSetting.DisableLegacyAccessSettingConfig.property.etag">Etag</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/disable_legacy_access_setting#etag DisableLegacyAccessSetting#etag}. |
-| <code><a href="#@cdktn/provider-databricks.disableLegacyAccessSetting.DisableLegacyAccessSettingConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/disable_legacy_access_setting#id DisableLegacyAccessSetting#id}. |
+| <code><a href="#@cdktn/provider-databricks.disableLegacyAccessSetting.DisableLegacyAccessSettingConfig.property.etag">Etag</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/disable_legacy_access_setting#etag DisableLegacyAccessSetting#etag}. |
+| <code><a href="#@cdktn/provider-databricks.disableLegacyAccessSetting.DisableLegacyAccessSettingConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/disable_legacy_access_setting#id DisableLegacyAccessSetting#id}. |
 | <code><a href="#@cdktn/provider-databricks.disableLegacyAccessSetting.DisableLegacyAccessSettingConfig.property.providerConfig">ProviderConfig</a></code> | <code><a href="#@cdktn/provider-databricks.disableLegacyAccessSetting.DisableLegacyAccessSettingProviderConfig">DisableLegacyAccessSettingProviderConfig</a></code> | provider_config block. |
-| <code><a href="#@cdktn/provider-databricks.disableLegacyAccessSetting.DisableLegacyAccessSettingConfig.property.settingName">SettingName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/disable_legacy_access_setting#setting_name DisableLegacyAccessSetting#setting_name}. |
+| <code><a href="#@cdktn/provider-databricks.disableLegacyAccessSetting.DisableLegacyAccessSettingConfig.property.settingName">SettingName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/disable_legacy_access_setting#setting_name DisableLegacyAccessSetting#setting_name}. |
 
 ---
 
@@ -970,7 +970,7 @@ DisableLegacyAccess DisableLegacyAccessSettingDisableLegacyAccess
 
 disable_legacy_access block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/disable_legacy_access_setting#disable_legacy_access DisableLegacyAccessSetting#disable_legacy_access}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/disable_legacy_access_setting#disable_legacy_access DisableLegacyAccessSetting#disable_legacy_access}
 
 ---
 
@@ -982,7 +982,7 @@ Etag *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/disable_legacy_access_setting#etag DisableLegacyAccessSetting#etag}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/disable_legacy_access_setting#etag DisableLegacyAccessSetting#etag}.
 
 ---
 
@@ -994,7 +994,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/disable_legacy_access_setting#id DisableLegacyAccessSetting#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/disable_legacy_access_setting#id DisableLegacyAccessSetting#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1011,7 +1011,7 @@ ProviderConfig DisableLegacyAccessSettingProviderConfig
 
 provider_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/disable_legacy_access_setting#provider_config DisableLegacyAccessSetting#provider_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/disable_legacy_access_setting#provider_config DisableLegacyAccessSetting#provider_config}
 
 ---
 
@@ -1023,7 +1023,7 @@ SettingName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/disable_legacy_access_setting#setting_name DisableLegacyAccessSetting#setting_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/disable_legacy_access_setting#setting_name DisableLegacyAccessSetting#setting_name}.
 
 ---
 
@@ -1032,7 +1032,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.disableLegacyAccessSetting.DisableLegacyAccessSettingDisableLegacyAccess.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/disablelegacyaccesssetting"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/disablelegacyaccesssetting"
 
 &disablelegacyaccesssetting.DisableLegacyAccessSettingDisableLegacyAccess {
 	Value: interface{},
@@ -1043,7 +1043,7 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/disablel
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.disableLegacyAccessSetting.DisableLegacyAccessSettingDisableLegacyAccess.property.value">Value</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/disable_legacy_access_setting#value DisableLegacyAccessSetting#value}. |
+| <code><a href="#@cdktn/provider-databricks.disableLegacyAccessSetting.DisableLegacyAccessSettingDisableLegacyAccess.property.value">Value</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/disable_legacy_access_setting#value DisableLegacyAccessSetting#value}. |
 
 ---
 
@@ -1055,7 +1055,7 @@ Value interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/disable_legacy_access_setting#value DisableLegacyAccessSetting#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/disable_legacy_access_setting#value DisableLegacyAccessSetting#value}.
 
 ---
 
@@ -1064,7 +1064,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.disableLegacyAccessSetting.DisableLegacyAccessSettingProviderConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/disablelegacyaccesssetting"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/disablelegacyaccesssetting"
 
 &disablelegacyaccesssetting.DisableLegacyAccessSettingProviderConfig {
 	WorkspaceId: *string,
@@ -1075,7 +1075,7 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/disablel
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.disableLegacyAccessSetting.DisableLegacyAccessSettingProviderConfig.property.workspaceId">WorkspaceId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/disable_legacy_access_setting#workspace_id DisableLegacyAccessSetting#workspace_id}. |
+| <code><a href="#@cdktn/provider-databricks.disableLegacyAccessSetting.DisableLegacyAccessSettingProviderConfig.property.workspaceId">WorkspaceId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/disable_legacy_access_setting#workspace_id DisableLegacyAccessSetting#workspace_id}. |
 
 ---
 
@@ -1087,7 +1087,7 @@ WorkspaceId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/disable_legacy_access_setting#workspace_id DisableLegacyAccessSetting#workspace_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/disable_legacy_access_setting#workspace_id DisableLegacyAccessSetting#workspace_id}.
 
 ---
 
@@ -1098,7 +1098,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.disableLegacyAccessSetting.DisableLegacyAccessSettingDisableLegacyAccessOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/disablelegacyaccesssetting"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/disablelegacyaccesssetting"
 
 disablelegacyaccesssetting.NewDisableLegacyAccessSettingDisableLegacyAccessOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DisableLegacyAccessSettingDisableLegacyAccessOutputReference
 ```
@@ -1369,7 +1369,7 @@ func InternalValue() DisableLegacyAccessSettingDisableLegacyAccess
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.disableLegacyAccessSetting.DisableLegacyAccessSettingProviderConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/disablelegacyaccesssetting"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/disablelegacyaccesssetting"
 
 disablelegacyaccesssetting.NewDisableLegacyAccessSettingProviderConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DisableLegacyAccessSettingProviderConfigOutputReference
 ```

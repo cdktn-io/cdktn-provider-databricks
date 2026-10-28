@@ -4,12 +4,12 @@
 
 ### WorkspaceIamDirectGroupMemberV2 <a name="WorkspaceIamDirectGroupMemberV2" id="@cdktn/provider-databricks.workspaceIamDirectGroupMemberV2.WorkspaceIamDirectGroupMemberV2"></a>
 
-Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/workspace_iam_direct_group_member_v2 databricks_workspace_iam_direct_group_member_v2}.
+Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/workspace_iam_direct_group_member_v2 databricks_workspace_iam_direct_group_member_v2}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.workspaceIamDirectGroupMemberV2.WorkspaceIamDirectGroupMemberV2.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/workspaceiamdirectgroupmemberv2"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/workspaceiamdirectgroupmemberv2"
 
 workspaceiamdirectgroupmemberv2.NewWorkspaceIamDirectGroupMemberV2(scope Construct, id *string, config WorkspaceIamDirectGroupMemberV2Config) WorkspaceIamDirectGroupMemberV2
 ```
@@ -427,7 +427,7 @@ func ResetProviderConfig()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-databricks.workspaceIamDirectGroupMemberV2.WorkspaceIamDirectGroupMemberV2.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/workspaceiamdirectgroupmemberv2"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/workspaceiamdirectgroupmemberv2"
 
 workspaceiamdirectgroupmemberv2.WorkspaceIamDirectGroupMemberV2_IsConstruct(x interface{}) *bool
 ```
@@ -459,7 +459,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-databricks.workspaceIamDirectGroupMemberV2.WorkspaceIamDirectGroupMemberV2.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/workspaceiamdirectgroupmemberv2"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/workspaceiamdirectgroupmemberv2"
 
 workspaceiamdirectgroupmemberv2.WorkspaceIamDirectGroupMemberV2_IsTerraformElement(x interface{}) *bool
 ```
@@ -473,7 +473,7 @@ workspaceiamdirectgroupmemberv2.WorkspaceIamDirectGroupMemberV2_IsTerraformEleme
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-databricks.workspaceIamDirectGroupMemberV2.WorkspaceIamDirectGroupMemberV2.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/workspaceiamdirectgroupmemberv2"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/workspaceiamdirectgroupmemberv2"
 
 workspaceiamdirectgroupmemberv2.WorkspaceIamDirectGroupMemberV2_IsTerraformResource(x interface{}) *bool
 ```
@@ -487,7 +487,7 @@ workspaceiamdirectgroupmemberv2.WorkspaceIamDirectGroupMemberV2_IsTerraformResou
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-databricks.workspaceIamDirectGroupMemberV2.WorkspaceIamDirectGroupMemberV2.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/workspaceiamdirectgroupmemberv2"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/workspaceiamdirectgroupmemberv2"
 
 workspaceiamdirectgroupmemberv2.WorkspaceIamDirectGroupMemberV2_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -516,7 +516,7 @@ The construct id used in the generated config for the WorkspaceIamDirectGroupMem
 
 The id of the existing WorkspaceIamDirectGroupMemberV2 that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/workspace_iam_direct_group_member_v2#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/workspace_iam_direct_group_member_v2#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -826,7 +826,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.workspaceIamDirectGroupMemberV2.WorkspaceIamDirectGroupMemberV2Config.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/workspaceiamdirectgroupmemberv2"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/workspaceiamdirectgroupmemberv2"
 
 &workspaceiamdirectgroupmemberv2.WorkspaceIamDirectGroupMemberV2Config {
 	Connection: interface{},
@@ -838,7 +838,7 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/workspac
 	Provisioners: *[]interface{},
 	PrincipalId: *f64,
 	GroupId: *f64,
-	ProviderConfig: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18.workspaceIamDirectGroupMemberV2.WorkspaceIamDirectGroupMemberV2ProviderConfig,
+	ProviderConfig: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19.workspaceIamDirectGroupMemberV2.WorkspaceIamDirectGroupMemberV2ProviderConfig,
 }
 ```
 
@@ -853,9 +853,9 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/workspac
 | <code><a href="#@cdktn/provider-databricks.workspaceIamDirectGroupMemberV2.WorkspaceIamDirectGroupMemberV2Config.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.workspaceIamDirectGroupMemberV2.WorkspaceIamDirectGroupMemberV2Config.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.workspaceIamDirectGroupMemberV2.WorkspaceIamDirectGroupMemberV2Config.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-databricks.workspaceIamDirectGroupMemberV2.WorkspaceIamDirectGroupMemberV2Config.property.principalId">PrincipalId</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/workspace_iam_direct_group_member_v2#principal_id WorkspaceIamDirectGroupMemberV2#principal_id}. |
-| <code><a href="#@cdktn/provider-databricks.workspaceIamDirectGroupMemberV2.WorkspaceIamDirectGroupMemberV2Config.property.groupId">GroupId</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/workspace_iam_direct_group_member_v2#group_id WorkspaceIamDirectGroupMemberV2#group_id}. |
-| <code><a href="#@cdktn/provider-databricks.workspaceIamDirectGroupMemberV2.WorkspaceIamDirectGroupMemberV2Config.property.providerConfig">ProviderConfig</a></code> | <code><a href="#@cdktn/provider-databricks.workspaceIamDirectGroupMemberV2.WorkspaceIamDirectGroupMemberV2ProviderConfig">WorkspaceIamDirectGroupMemberV2ProviderConfig</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/workspace_iam_direct_group_member_v2#provider_config WorkspaceIamDirectGroupMemberV2#provider_config}. |
+| <code><a href="#@cdktn/provider-databricks.workspaceIamDirectGroupMemberV2.WorkspaceIamDirectGroupMemberV2Config.property.principalId">PrincipalId</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/workspace_iam_direct_group_member_v2#principal_id WorkspaceIamDirectGroupMemberV2#principal_id}. |
+| <code><a href="#@cdktn/provider-databricks.workspaceIamDirectGroupMemberV2.WorkspaceIamDirectGroupMemberV2Config.property.groupId">GroupId</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/workspace_iam_direct_group_member_v2#group_id WorkspaceIamDirectGroupMemberV2#group_id}. |
+| <code><a href="#@cdktn/provider-databricks.workspaceIamDirectGroupMemberV2.WorkspaceIamDirectGroupMemberV2Config.property.providerConfig">ProviderConfig</a></code> | <code><a href="#@cdktn/provider-databricks.workspaceIamDirectGroupMemberV2.WorkspaceIamDirectGroupMemberV2ProviderConfig">WorkspaceIamDirectGroupMemberV2ProviderConfig</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/workspace_iam_direct_group_member_v2#provider_config WorkspaceIamDirectGroupMemberV2#provider_config}. |
 
 ---
 
@@ -937,7 +937,7 @@ PrincipalId *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/workspace_iam_direct_group_member_v2#principal_id WorkspaceIamDirectGroupMemberV2#principal_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/workspace_iam_direct_group_member_v2#principal_id WorkspaceIamDirectGroupMemberV2#principal_id}.
 
 ---
 
@@ -949,7 +949,7 @@ GroupId *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/workspace_iam_direct_group_member_v2#group_id WorkspaceIamDirectGroupMemberV2#group_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/workspace_iam_direct_group_member_v2#group_id WorkspaceIamDirectGroupMemberV2#group_id}.
 
 ---
 
@@ -961,7 +961,7 @@ ProviderConfig WorkspaceIamDirectGroupMemberV2ProviderConfig
 
 - *Type:* <a href="#@cdktn/provider-databricks.workspaceIamDirectGroupMemberV2.WorkspaceIamDirectGroupMemberV2ProviderConfig">WorkspaceIamDirectGroupMemberV2ProviderConfig</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/workspace_iam_direct_group_member_v2#provider_config WorkspaceIamDirectGroupMemberV2#provider_config}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/workspace_iam_direct_group_member_v2#provider_config WorkspaceIamDirectGroupMemberV2#provider_config}.
 
 ---
 
@@ -970,7 +970,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.workspaceIamDirectGroupMemberV2.WorkspaceIamDirectGroupMemberV2ProviderConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/workspaceiamdirectgroupmemberv2"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/workspaceiamdirectgroupmemberv2"
 
 &workspaceiamdirectgroupmemberv2.WorkspaceIamDirectGroupMemberV2ProviderConfig {
 	WorkspaceId: *string,
@@ -981,7 +981,7 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/workspac
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.workspaceIamDirectGroupMemberV2.WorkspaceIamDirectGroupMemberV2ProviderConfig.property.workspaceId">WorkspaceId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/workspace_iam_direct_group_member_v2#workspace_id WorkspaceIamDirectGroupMemberV2#workspace_id}. |
+| <code><a href="#@cdktn/provider-databricks.workspaceIamDirectGroupMemberV2.WorkspaceIamDirectGroupMemberV2ProviderConfig.property.workspaceId">WorkspaceId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/workspace_iam_direct_group_member_v2#workspace_id WorkspaceIamDirectGroupMemberV2#workspace_id}. |
 
 ---
 
@@ -993,7 +993,7 @@ WorkspaceId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/workspace_iam_direct_group_member_v2#workspace_id WorkspaceIamDirectGroupMemberV2#workspace_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/workspace_iam_direct_group_member_v2#workspace_id WorkspaceIamDirectGroupMemberV2#workspace_id}.
 
 ---
 
@@ -1004,7 +1004,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.workspaceIamDirectGroupMemberV2.WorkspaceIamDirectGroupMemberV2ProviderConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/workspaceiamdirectgroupmemberv2"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/workspaceiamdirectgroupmemberv2"
 
 workspaceiamdirectgroupmemberv2.NewWorkspaceIamDirectGroupMemberV2ProviderConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) WorkspaceIamDirectGroupMemberV2ProviderConfigOutputReference
 ```

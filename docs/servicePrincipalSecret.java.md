@@ -4,7 +4,7 @@
 
 ### ServicePrincipalSecret <a name="ServicePrincipalSecret" id="@cdktn/provider-databricks.servicePrincipalSecret.ServicePrincipalSecret"></a>
 
-Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/service_principal_secret databricks_service_principal_secret}.
+Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/service_principal_secret databricks_service_principal_secret}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.servicePrincipalSecret.ServicePrincipalSecret.Initializer"></a>
 
@@ -26,6 +26,7 @@ ServicePrincipalSecret.Builder.create(Construct scope, java.lang.String id)
 //  .id(java.lang.String)
 //  .lifetime(java.lang.String)
 //  .providerConfig(ServicePrincipalSecretProviderConfig)
+//  .scopes(java.util.List<java.lang.String>)
 //  .secret(java.lang.String)
 //  .secretHash(java.lang.String)
 //  .status(java.lang.String)
@@ -45,18 +46,19 @@ ServicePrincipalSecret.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktn/provider-databricks.servicePrincipalSecret.ServicePrincipalSecret.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>io.cdktn.cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.servicePrincipalSecret.ServicePrincipalSecret.Initializer.parameter.provider">provider</a></code> | <code>io.cdktn.cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.servicePrincipalSecret.ServicePrincipalSecret.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktn/provider-databricks.servicePrincipalSecret.ServicePrincipalSecret.Initializer.parameter.servicePrincipalId">servicePrincipalId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/service_principal_secret#service_principal_id ServicePrincipalSecret#service_principal_id}. |
+| <code><a href="#@cdktn/provider-databricks.servicePrincipalSecret.ServicePrincipalSecret.Initializer.parameter.servicePrincipalId">servicePrincipalId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/service_principal_secret#service_principal_id ServicePrincipalSecret#service_principal_id}. |
 | <code><a href="#@cdktn/provider-databricks.servicePrincipalSecret.ServicePrincipalSecret.Initializer.parameter.api">api</a></code> | <code>java.lang.String</code> | Specifies whether to use account-level or workspace-level API. |
-| <code><a href="#@cdktn/provider-databricks.servicePrincipalSecret.ServicePrincipalSecret.Initializer.parameter.createTime">createTime</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/service_principal_secret#create_time ServicePrincipalSecret#create_time}. |
-| <code><a href="#@cdktn/provider-databricks.servicePrincipalSecret.ServicePrincipalSecret.Initializer.parameter.expireTime">expireTime</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/service_principal_secret#expire_time ServicePrincipalSecret#expire_time}. |
-| <code><a href="#@cdktn/provider-databricks.servicePrincipalSecret.ServicePrincipalSecret.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/service_principal_secret#id ServicePrincipalSecret#id}. |
-| <code><a href="#@cdktn/provider-databricks.servicePrincipalSecret.ServicePrincipalSecret.Initializer.parameter.lifetime">lifetime</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/service_principal_secret#lifetime ServicePrincipalSecret#lifetime}. |
+| <code><a href="#@cdktn/provider-databricks.servicePrincipalSecret.ServicePrincipalSecret.Initializer.parameter.createTime">createTime</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/service_principal_secret#create_time ServicePrincipalSecret#create_time}. |
+| <code><a href="#@cdktn/provider-databricks.servicePrincipalSecret.ServicePrincipalSecret.Initializer.parameter.expireTime">expireTime</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/service_principal_secret#expire_time ServicePrincipalSecret#expire_time}. |
+| <code><a href="#@cdktn/provider-databricks.servicePrincipalSecret.ServicePrincipalSecret.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/service_principal_secret#id ServicePrincipalSecret#id}. |
+| <code><a href="#@cdktn/provider-databricks.servicePrincipalSecret.ServicePrincipalSecret.Initializer.parameter.lifetime">lifetime</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/service_principal_secret#lifetime ServicePrincipalSecret#lifetime}. |
 | <code><a href="#@cdktn/provider-databricks.servicePrincipalSecret.ServicePrincipalSecret.Initializer.parameter.providerConfig">providerConfig</a></code> | <code><a href="#@cdktn/provider-databricks.servicePrincipalSecret.ServicePrincipalSecretProviderConfig">ServicePrincipalSecretProviderConfig</a></code> | provider_config block. |
-| <code><a href="#@cdktn/provider-databricks.servicePrincipalSecret.ServicePrincipalSecret.Initializer.parameter.secret">secret</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/service_principal_secret#secret ServicePrincipalSecret#secret}. |
-| <code><a href="#@cdktn/provider-databricks.servicePrincipalSecret.ServicePrincipalSecret.Initializer.parameter.secretHash">secretHash</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/service_principal_secret#secret_hash ServicePrincipalSecret#secret_hash}. |
-| <code><a href="#@cdktn/provider-databricks.servicePrincipalSecret.ServicePrincipalSecret.Initializer.parameter.status">status</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/service_principal_secret#status ServicePrincipalSecret#status}. |
-| <code><a href="#@cdktn/provider-databricks.servicePrincipalSecret.ServicePrincipalSecret.Initializer.parameter.timeRotating">timeRotating</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/service_principal_secret#time_rotating ServicePrincipalSecret#time_rotating}. |
-| <code><a href="#@cdktn/provider-databricks.servicePrincipalSecret.ServicePrincipalSecret.Initializer.parameter.updateTime">updateTime</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/service_principal_secret#update_time ServicePrincipalSecret#update_time}. |
+| <code><a href="#@cdktn/provider-databricks.servicePrincipalSecret.ServicePrincipalSecret.Initializer.parameter.scopes">scopes</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/service_principal_secret#scopes ServicePrincipalSecret#scopes}. |
+| <code><a href="#@cdktn/provider-databricks.servicePrincipalSecret.ServicePrincipalSecret.Initializer.parameter.secret">secret</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/service_principal_secret#secret ServicePrincipalSecret#secret}. |
+| <code><a href="#@cdktn/provider-databricks.servicePrincipalSecret.ServicePrincipalSecret.Initializer.parameter.secretHash">secretHash</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/service_principal_secret#secret_hash ServicePrincipalSecret#secret_hash}. |
+| <code><a href="#@cdktn/provider-databricks.servicePrincipalSecret.ServicePrincipalSecret.Initializer.parameter.status">status</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/service_principal_secret#status ServicePrincipalSecret#status}. |
+| <code><a href="#@cdktn/provider-databricks.servicePrincipalSecret.ServicePrincipalSecret.Initializer.parameter.timeRotating">timeRotating</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/service_principal_secret#time_rotating ServicePrincipalSecret#time_rotating}. |
+| <code><a href="#@cdktn/provider-databricks.servicePrincipalSecret.ServicePrincipalSecret.Initializer.parameter.updateTime">updateTime</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/service_principal_secret#update_time ServicePrincipalSecret#update_time}. |
 
 ---
 
@@ -124,7 +126,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/service_principal_secret#service_principal_id ServicePrincipalSecret#service_principal_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/service_principal_secret#service_principal_id ServicePrincipalSecret#service_principal_id}.
 
 ---
 
@@ -136,7 +138,7 @@ Specifies whether to use account-level or workspace-level API.
 
 Valid values are `account` and `workspace`. When not set, the API level is inferred from the provider host.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/service_principal_secret#api ServicePrincipalSecret#api}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/service_principal_secret#api ServicePrincipalSecret#api}
 
 ---
 
@@ -144,7 +146,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/service_principal_secret#create_time ServicePrincipalSecret#create_time}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/service_principal_secret#create_time ServicePrincipalSecret#create_time}.
 
 ---
 
@@ -152,7 +154,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/service_principal_secret#expire_time ServicePrincipalSecret#expire_time}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/service_principal_secret#expire_time ServicePrincipalSecret#expire_time}.
 
 ---
 
@@ -160,7 +162,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/service_principal_secret#id ServicePrincipalSecret#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/service_principal_secret#id ServicePrincipalSecret#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -171,7 +173,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/service_principal_secret#lifetime ServicePrincipalSecret#lifetime}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/service_principal_secret#lifetime ServicePrincipalSecret#lifetime}.
 
 ---
 
@@ -181,7 +183,15 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 provider_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/service_principal_secret#provider_config ServicePrincipalSecret#provider_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/service_principal_secret#provider_config ServicePrincipalSecret#provider_config}
+
+---
+
+##### `scopes`<sup>Optional</sup> <a name="scopes" id="@cdktn/provider-databricks.servicePrincipalSecret.ServicePrincipalSecret.Initializer.parameter.scopes"></a>
+
+- *Type:* java.util.List<java.lang.String>
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/service_principal_secret#scopes ServicePrincipalSecret#scopes}.
 
 ---
 
@@ -189,7 +199,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/service_principal_secret#secret ServicePrincipalSecret#secret}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/service_principal_secret#secret ServicePrincipalSecret#secret}.
 
 ---
 
@@ -197,7 +207,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/service_principal_secret#secret_hash ServicePrincipalSecret#secret_hash}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/service_principal_secret#secret_hash ServicePrincipalSecret#secret_hash}.
 
 ---
 
@@ -205,7 +215,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/service_principal_secret#status ServicePrincipalSecret#status}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/service_principal_secret#status ServicePrincipalSecret#status}.
 
 ---
 
@@ -213,7 +223,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/service_principal_secret#time_rotating ServicePrincipalSecret#time_rotating}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/service_principal_secret#time_rotating ServicePrincipalSecret#time_rotating}.
 
 ---
 
@@ -221,7 +231,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/service_principal_secret#update_time ServicePrincipalSecret#update_time}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/service_principal_secret#update_time ServicePrincipalSecret#update_time}.
 
 ---
 
@@ -260,6 +270,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 | <code><a href="#@cdktn/provider-databricks.servicePrincipalSecret.ServicePrincipalSecret.resetId">resetId</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.servicePrincipalSecret.ServicePrincipalSecret.resetLifetime">resetLifetime</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.servicePrincipalSecret.ServicePrincipalSecret.resetProviderConfig">resetProviderConfig</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.servicePrincipalSecret.ServicePrincipalSecret.resetScopes">resetScopes</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.servicePrincipalSecret.ServicePrincipalSecret.resetSecret">resetSecret</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.servicePrincipalSecret.ServicePrincipalSecret.resetSecretHash">resetSecretHash</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.servicePrincipalSecret.ServicePrincipalSecret.resetStatus">resetStatus</a></code> | *No description.* |
@@ -627,6 +638,12 @@ public void resetLifetime()
 public void resetProviderConfig()
 ```
 
+##### `resetScopes` <a name="resetScopes" id="@cdktn/provider-databricks.servicePrincipalSecret.ServicePrincipalSecret.resetScopes"></a>
+
+```java
+public void resetScopes()
+```
+
 ##### `resetSecret` <a name="resetSecret" id="@cdktn/provider-databricks.servicePrincipalSecret.ServicePrincipalSecret.resetSecret"></a>
 
 ```java
@@ -760,7 +777,7 @@ The construct id used in the generated config for the ServicePrincipalSecret to 
 
 The id of the existing ServicePrincipalSecret that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/service_principal_secret#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/service_principal_secret#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -797,6 +814,7 @@ Refer to the {@link https://registry.terraform.io/providers/databricks/databrick
 | <code><a href="#@cdktn/provider-databricks.servicePrincipalSecret.ServicePrincipalSecret.property.idInput">idInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.servicePrincipalSecret.ServicePrincipalSecret.property.lifetimeInput">lifetimeInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.servicePrincipalSecret.ServicePrincipalSecret.property.providerConfigInput">providerConfigInput</a></code> | <code><a href="#@cdktn/provider-databricks.servicePrincipalSecret.ServicePrincipalSecretProviderConfig">ServicePrincipalSecretProviderConfig</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.servicePrincipalSecret.ServicePrincipalSecret.property.scopesInput">scopesInput</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.servicePrincipalSecret.ServicePrincipalSecret.property.secretHashInput">secretHashInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.servicePrincipalSecret.ServicePrincipalSecret.property.secretInput">secretInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.servicePrincipalSecret.ServicePrincipalSecret.property.servicePrincipalIdInput">servicePrincipalIdInput</a></code> | <code>java.lang.String</code> | *No description.* |
@@ -808,6 +826,7 @@ Refer to the {@link https://registry.terraform.io/providers/databricks/databrick
 | <code><a href="#@cdktn/provider-databricks.servicePrincipalSecret.ServicePrincipalSecret.property.expireTime">expireTime</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.servicePrincipalSecret.ServicePrincipalSecret.property.id">id</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.servicePrincipalSecret.ServicePrincipalSecret.property.lifetime">lifetime</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.servicePrincipalSecret.ServicePrincipalSecret.property.scopes">scopes</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.servicePrincipalSecret.ServicePrincipalSecret.property.secret">secret</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.servicePrincipalSecret.ServicePrincipalSecret.property.secretHash">secretHash</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.servicePrincipalSecret.ServicePrincipalSecret.property.servicePrincipalId">servicePrincipalId</a></code> | <code>java.lang.String</code> | *No description.* |
@@ -1029,6 +1048,16 @@ public ServicePrincipalSecretProviderConfig getProviderConfigInput();
 
 ---
 
+##### `scopesInput`<sup>Optional</sup> <a name="scopesInput" id="@cdktn/provider-databricks.servicePrincipalSecret.ServicePrincipalSecret.property.scopesInput"></a>
+
+```java
+public java.util.List<java.lang.String> getScopesInput();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+---
+
 ##### `secretHashInput`<sup>Optional</sup> <a name="secretHashInput" id="@cdktn/provider-databricks.servicePrincipalSecret.ServicePrincipalSecret.property.secretHashInput"></a>
 
 ```java
@@ -1139,6 +1168,16 @@ public java.lang.String getLifetime();
 
 ---
 
+##### `scopes`<sup>Required</sup> <a name="scopes" id="@cdktn/provider-databricks.servicePrincipalSecret.ServicePrincipalSecret.property.scopes"></a>
+
+```java
+public java.util.List<java.lang.String> getScopes();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+---
+
 ##### `secret`<sup>Required</sup> <a name="secret" id="@cdktn/provider-databricks.servicePrincipalSecret.ServicePrincipalSecret.property.secret"></a>
 
 ```java
@@ -1241,6 +1280,7 @@ ServicePrincipalSecretConfig.builder()
 //  .id(java.lang.String)
 //  .lifetime(java.lang.String)
 //  .providerConfig(ServicePrincipalSecretProviderConfig)
+//  .scopes(java.util.List<java.lang.String>)
 //  .secret(java.lang.String)
 //  .secretHash(java.lang.String)
 //  .status(java.lang.String)
@@ -1260,18 +1300,19 @@ ServicePrincipalSecretConfig.builder()
 | <code><a href="#@cdktn/provider-databricks.servicePrincipalSecret.ServicePrincipalSecretConfig.property.lifecycle">lifecycle</a></code> | <code>io.cdktn.cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.servicePrincipalSecret.ServicePrincipalSecretConfig.property.provider">provider</a></code> | <code>io.cdktn.cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.servicePrincipalSecret.ServicePrincipalSecretConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktn/provider-databricks.servicePrincipalSecret.ServicePrincipalSecretConfig.property.servicePrincipalId">servicePrincipalId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/service_principal_secret#service_principal_id ServicePrincipalSecret#service_principal_id}. |
+| <code><a href="#@cdktn/provider-databricks.servicePrincipalSecret.ServicePrincipalSecretConfig.property.servicePrincipalId">servicePrincipalId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/service_principal_secret#service_principal_id ServicePrincipalSecret#service_principal_id}. |
 | <code><a href="#@cdktn/provider-databricks.servicePrincipalSecret.ServicePrincipalSecretConfig.property.api">api</a></code> | <code>java.lang.String</code> | Specifies whether to use account-level or workspace-level API. |
-| <code><a href="#@cdktn/provider-databricks.servicePrincipalSecret.ServicePrincipalSecretConfig.property.createTime">createTime</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/service_principal_secret#create_time ServicePrincipalSecret#create_time}. |
-| <code><a href="#@cdktn/provider-databricks.servicePrincipalSecret.ServicePrincipalSecretConfig.property.expireTime">expireTime</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/service_principal_secret#expire_time ServicePrincipalSecret#expire_time}. |
-| <code><a href="#@cdktn/provider-databricks.servicePrincipalSecret.ServicePrincipalSecretConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/service_principal_secret#id ServicePrincipalSecret#id}. |
-| <code><a href="#@cdktn/provider-databricks.servicePrincipalSecret.ServicePrincipalSecretConfig.property.lifetime">lifetime</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/service_principal_secret#lifetime ServicePrincipalSecret#lifetime}. |
+| <code><a href="#@cdktn/provider-databricks.servicePrincipalSecret.ServicePrincipalSecretConfig.property.createTime">createTime</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/service_principal_secret#create_time ServicePrincipalSecret#create_time}. |
+| <code><a href="#@cdktn/provider-databricks.servicePrincipalSecret.ServicePrincipalSecretConfig.property.expireTime">expireTime</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/service_principal_secret#expire_time ServicePrincipalSecret#expire_time}. |
+| <code><a href="#@cdktn/provider-databricks.servicePrincipalSecret.ServicePrincipalSecretConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/service_principal_secret#id ServicePrincipalSecret#id}. |
+| <code><a href="#@cdktn/provider-databricks.servicePrincipalSecret.ServicePrincipalSecretConfig.property.lifetime">lifetime</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/service_principal_secret#lifetime ServicePrincipalSecret#lifetime}. |
 | <code><a href="#@cdktn/provider-databricks.servicePrincipalSecret.ServicePrincipalSecretConfig.property.providerConfig">providerConfig</a></code> | <code><a href="#@cdktn/provider-databricks.servicePrincipalSecret.ServicePrincipalSecretProviderConfig">ServicePrincipalSecretProviderConfig</a></code> | provider_config block. |
-| <code><a href="#@cdktn/provider-databricks.servicePrincipalSecret.ServicePrincipalSecretConfig.property.secret">secret</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/service_principal_secret#secret ServicePrincipalSecret#secret}. |
-| <code><a href="#@cdktn/provider-databricks.servicePrincipalSecret.ServicePrincipalSecretConfig.property.secretHash">secretHash</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/service_principal_secret#secret_hash ServicePrincipalSecret#secret_hash}. |
-| <code><a href="#@cdktn/provider-databricks.servicePrincipalSecret.ServicePrincipalSecretConfig.property.status">status</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/service_principal_secret#status ServicePrincipalSecret#status}. |
-| <code><a href="#@cdktn/provider-databricks.servicePrincipalSecret.ServicePrincipalSecretConfig.property.timeRotating">timeRotating</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/service_principal_secret#time_rotating ServicePrincipalSecret#time_rotating}. |
-| <code><a href="#@cdktn/provider-databricks.servicePrincipalSecret.ServicePrincipalSecretConfig.property.updateTime">updateTime</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/service_principal_secret#update_time ServicePrincipalSecret#update_time}. |
+| <code><a href="#@cdktn/provider-databricks.servicePrincipalSecret.ServicePrincipalSecretConfig.property.scopes">scopes</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/service_principal_secret#scopes ServicePrincipalSecret#scopes}. |
+| <code><a href="#@cdktn/provider-databricks.servicePrincipalSecret.ServicePrincipalSecretConfig.property.secret">secret</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/service_principal_secret#secret ServicePrincipalSecret#secret}. |
+| <code><a href="#@cdktn/provider-databricks.servicePrincipalSecret.ServicePrincipalSecretConfig.property.secretHash">secretHash</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/service_principal_secret#secret_hash ServicePrincipalSecret#secret_hash}. |
+| <code><a href="#@cdktn/provider-databricks.servicePrincipalSecret.ServicePrincipalSecretConfig.property.status">status</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/service_principal_secret#status ServicePrincipalSecret#status}. |
+| <code><a href="#@cdktn/provider-databricks.servicePrincipalSecret.ServicePrincipalSecretConfig.property.timeRotating">timeRotating</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/service_principal_secret#time_rotating ServicePrincipalSecret#time_rotating}. |
+| <code><a href="#@cdktn/provider-databricks.servicePrincipalSecret.ServicePrincipalSecretConfig.property.updateTime">updateTime</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/service_principal_secret#update_time ServicePrincipalSecret#update_time}. |
 
 ---
 
@@ -1353,7 +1394,7 @@ public java.lang.String getServicePrincipalId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/service_principal_secret#service_principal_id ServicePrincipalSecret#service_principal_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/service_principal_secret#service_principal_id ServicePrincipalSecret#service_principal_id}.
 
 ---
 
@@ -1369,7 +1410,7 @@ Specifies whether to use account-level or workspace-level API.
 
 Valid values are `account` and `workspace`. When not set, the API level is inferred from the provider host.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/service_principal_secret#api ServicePrincipalSecret#api}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/service_principal_secret#api ServicePrincipalSecret#api}
 
 ---
 
@@ -1381,7 +1422,7 @@ public java.lang.String getCreateTime();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/service_principal_secret#create_time ServicePrincipalSecret#create_time}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/service_principal_secret#create_time ServicePrincipalSecret#create_time}.
 
 ---
 
@@ -1393,7 +1434,7 @@ public java.lang.String getExpireTime();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/service_principal_secret#expire_time ServicePrincipalSecret#expire_time}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/service_principal_secret#expire_time ServicePrincipalSecret#expire_time}.
 
 ---
 
@@ -1405,7 +1446,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/service_principal_secret#id ServicePrincipalSecret#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/service_principal_secret#id ServicePrincipalSecret#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1420,7 +1461,7 @@ public java.lang.String getLifetime();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/service_principal_secret#lifetime ServicePrincipalSecret#lifetime}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/service_principal_secret#lifetime ServicePrincipalSecret#lifetime}.
 
 ---
 
@@ -1434,7 +1475,19 @@ public ServicePrincipalSecretProviderConfig getProviderConfig();
 
 provider_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/service_principal_secret#provider_config ServicePrincipalSecret#provider_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/service_principal_secret#provider_config ServicePrincipalSecret#provider_config}
+
+---
+
+##### `scopes`<sup>Optional</sup> <a name="scopes" id="@cdktn/provider-databricks.servicePrincipalSecret.ServicePrincipalSecretConfig.property.scopes"></a>
+
+```java
+public java.util.List<java.lang.String> getScopes();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/service_principal_secret#scopes ServicePrincipalSecret#scopes}.
 
 ---
 
@@ -1446,7 +1499,7 @@ public java.lang.String getSecret();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/service_principal_secret#secret ServicePrincipalSecret#secret}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/service_principal_secret#secret ServicePrincipalSecret#secret}.
 
 ---
 
@@ -1458,7 +1511,7 @@ public java.lang.String getSecretHash();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/service_principal_secret#secret_hash ServicePrincipalSecret#secret_hash}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/service_principal_secret#secret_hash ServicePrincipalSecret#secret_hash}.
 
 ---
 
@@ -1470,7 +1523,7 @@ public java.lang.String getStatus();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/service_principal_secret#status ServicePrincipalSecret#status}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/service_principal_secret#status ServicePrincipalSecret#status}.
 
 ---
 
@@ -1482,7 +1535,7 @@ public java.lang.String getTimeRotating();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/service_principal_secret#time_rotating ServicePrincipalSecret#time_rotating}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/service_principal_secret#time_rotating ServicePrincipalSecret#time_rotating}.
 
 ---
 
@@ -1494,7 +1547,7 @@ public java.lang.String getUpdateTime();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/service_principal_secret#update_time ServicePrincipalSecret#update_time}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/service_principal_secret#update_time ServicePrincipalSecret#update_time}.
 
 ---
 
@@ -1514,7 +1567,7 @@ ServicePrincipalSecretProviderConfig.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.servicePrincipalSecret.ServicePrincipalSecretProviderConfig.property.workspaceId">workspaceId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/service_principal_secret#workspace_id ServicePrincipalSecret#workspace_id}. |
+| <code><a href="#@cdktn/provider-databricks.servicePrincipalSecret.ServicePrincipalSecretProviderConfig.property.workspaceId">workspaceId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/service_principal_secret#workspace_id ServicePrincipalSecret#workspace_id}. |
 
 ---
 
@@ -1526,7 +1579,7 @@ public java.lang.String getWorkspaceId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/service_principal_secret#workspace_id ServicePrincipalSecret#workspace_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/service_principal_secret#workspace_id ServicePrincipalSecret#workspace_id}.
 
 ---
 

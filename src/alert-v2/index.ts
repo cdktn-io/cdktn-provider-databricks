@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/alert_v2
+// https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/alert_v2
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,65 +13,69 @@ import * as cdktn from 'cdktn';
 
 export interface AlertV2Config extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/alert_v2#custom_description AlertV2#custom_description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/alert_v2#custom_description AlertV2#custom_description}
   */
   readonly customDescription?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/alert_v2#custom_summary AlertV2#custom_summary}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/alert_v2#custom_summary AlertV2#custom_summary}
   */
   readonly customSummary?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/alert_v2#display_name AlertV2#display_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/alert_v2#custom_template_format AlertV2#custom_template_format}
+  */
+  readonly customTemplateFormat?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/alert_v2#display_name AlertV2#display_name}
   */
   readonly displayName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/alert_v2#evaluation AlertV2#evaluation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/alert_v2#evaluation AlertV2#evaluation}
   */
   readonly evaluation: AlertV2Evaluation;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/alert_v2#parameters AlertV2#parameters}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/alert_v2#parameters AlertV2#parameters}
   */
   readonly parameters?: AlertV2Parameters[] | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/alert_v2#parent_path AlertV2#parent_path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/alert_v2#parent_path AlertV2#parent_path}
   */
   readonly parentPath?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/alert_v2#provider_config AlertV2#provider_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/alert_v2#provider_config AlertV2#provider_config}
   */
   readonly providerConfig?: AlertV2ProviderConfig;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/alert_v2#purge_on_delete AlertV2#purge_on_delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/alert_v2#purge_on_delete AlertV2#purge_on_delete}
   */
   readonly purgeOnDelete?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/alert_v2#query_text AlertV2#query_text}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/alert_v2#query_text AlertV2#query_text}
   */
   readonly queryText: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/alert_v2#run_as AlertV2#run_as}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/alert_v2#run_as AlertV2#run_as}
   */
   readonly runAs?: AlertV2RunAs;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/alert_v2#run_as_user_name AlertV2#run_as_user_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/alert_v2#run_as_user_name AlertV2#run_as_user_name}
   */
   readonly runAsUserName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/alert_v2#schedule AlertV2#schedule}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/alert_v2#schedule AlertV2#schedule}
   */
   readonly schedule: AlertV2Schedule;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/alert_v2#warehouse_id AlertV2#warehouse_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/alert_v2#warehouse_id AlertV2#warehouse_id}
   */
   readonly warehouseId: string;
 }
 export interface AlertV2EffectiveRunAs {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/alert_v2#service_principal_name AlertV2#service_principal_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/alert_v2#service_principal_name AlertV2#service_principal_name}
   */
   readonly servicePrincipalName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/alert_v2#user_name AlertV2#user_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/alert_v2#user_name AlertV2#user_name}
   */
   readonly userName?: string;
 }
@@ -184,11 +188,11 @@ export class AlertV2EffectiveRunAsOutputReference extends cdktn.ComplexObject {
 }
 export interface AlertV2EvaluationNotificationSubscriptions {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/alert_v2#destination_id AlertV2#destination_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/alert_v2#destination_id AlertV2#destination_id}
   */
   readonly destinationId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/alert_v2#user_email AlertV2#user_email}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/alert_v2#user_email AlertV2#user_email}
   */
   readonly userEmail?: string;
 }
@@ -333,15 +337,15 @@ export class AlertV2EvaluationNotificationSubscriptionsList extends cdktn.Comple
 }
 export interface AlertV2EvaluationNotification {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/alert_v2#notify_on_ok AlertV2#notify_on_ok}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/alert_v2#notify_on_ok AlertV2#notify_on_ok}
   */
   readonly notifyOnOk?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/alert_v2#retrigger_seconds AlertV2#retrigger_seconds}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/alert_v2#retrigger_seconds AlertV2#retrigger_seconds}
   */
   readonly retriggerSeconds?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/alert_v2#subscriptions AlertV2#subscriptions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/alert_v2#subscriptions AlertV2#subscriptions}
   */
   readonly subscriptions?: AlertV2EvaluationNotificationSubscriptions[] | cdktn.IResolvable;
 }
@@ -503,15 +507,15 @@ export class AlertV2EvaluationNotificationOutputReference extends cdktn.ComplexO
 }
 export interface AlertV2EvaluationSource {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/alert_v2#aggregation AlertV2#aggregation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/alert_v2#aggregation AlertV2#aggregation}
   */
   readonly aggregation?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/alert_v2#display AlertV2#display}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/alert_v2#display AlertV2#display}
   */
   readonly display?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/alert_v2#name AlertV2#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/alert_v2#name AlertV2#name}
   */
   readonly name: string;
 }
@@ -660,15 +664,15 @@ export class AlertV2EvaluationSourceOutputReference extends cdktn.ComplexObject 
 }
 export interface AlertV2EvaluationThresholdColumn {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/alert_v2#aggregation AlertV2#aggregation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/alert_v2#aggregation AlertV2#aggregation}
   */
   readonly aggregation?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/alert_v2#display AlertV2#display}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/alert_v2#display AlertV2#display}
   */
   readonly display?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/alert_v2#name AlertV2#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/alert_v2#name AlertV2#name}
   */
   readonly name: string;
 }
@@ -817,15 +821,15 @@ export class AlertV2EvaluationThresholdColumnOutputReference extends cdktn.Compl
 }
 export interface AlertV2EvaluationThresholdValue {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/alert_v2#bool_value AlertV2#bool_value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/alert_v2#bool_value AlertV2#bool_value}
   */
   readonly boolValue?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/alert_v2#double_value AlertV2#double_value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/alert_v2#double_value AlertV2#double_value}
   */
   readonly doubleValue?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/alert_v2#string_value AlertV2#string_value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/alert_v2#string_value AlertV2#string_value}
   */
   readonly stringValue?: string;
 }
@@ -977,11 +981,11 @@ export class AlertV2EvaluationThresholdValueOutputReference extends cdktn.Comple
 }
 export interface AlertV2EvaluationThreshold {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/alert_v2#column AlertV2#column}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/alert_v2#column AlertV2#column}
   */
   readonly column?: AlertV2EvaluationThresholdColumn;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/alert_v2#value AlertV2#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/alert_v2#value AlertV2#value}
   */
   readonly value?: AlertV2EvaluationThresholdValue;
 }
@@ -1104,23 +1108,23 @@ export class AlertV2EvaluationThresholdOutputReference extends cdktn.ComplexObje
 }
 export interface AlertV2Evaluation {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/alert_v2#comparison_operator AlertV2#comparison_operator}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/alert_v2#comparison_operator AlertV2#comparison_operator}
   */
   readonly comparisonOperator: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/alert_v2#empty_result_state AlertV2#empty_result_state}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/alert_v2#empty_result_state AlertV2#empty_result_state}
   */
   readonly emptyResultState?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/alert_v2#notification AlertV2#notification}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/alert_v2#notification AlertV2#notification}
   */
   readonly notification?: AlertV2EvaluationNotification;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/alert_v2#source AlertV2#source}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/alert_v2#source AlertV2#source}
   */
   readonly source: AlertV2EvaluationSource;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/alert_v2#threshold AlertV2#threshold}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/alert_v2#threshold AlertV2#threshold}
   */
   readonly threshold?: AlertV2EvaluationThreshold;
 }
@@ -1334,15 +1338,15 @@ export class AlertV2EvaluationOutputReference extends cdktn.ComplexObject {
 }
 export interface AlertV2Parameters {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/alert_v2#name AlertV2#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/alert_v2#name AlertV2#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/alert_v2#type AlertV2#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/alert_v2#type AlertV2#type}
   */
   readonly type?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/alert_v2#value AlertV2#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/alert_v2#value AlertV2#value}
   */
   readonly value?: string;
 }
@@ -1513,7 +1517,7 @@ export class AlertV2ParametersList extends cdktn.ComplexList {
 }
 export interface AlertV2ProviderConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/alert_v2#workspace_id AlertV2#workspace_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/alert_v2#workspace_id AlertV2#workspace_id}
   */
   readonly workspaceId?: string;
 }
@@ -1607,11 +1611,11 @@ export class AlertV2ProviderConfigOutputReference extends cdktn.ComplexObject {
 }
 export interface AlertV2RunAs {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/alert_v2#service_principal_name AlertV2#service_principal_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/alert_v2#service_principal_name AlertV2#service_principal_name}
   */
   readonly servicePrincipalName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/alert_v2#user_name AlertV2#user_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/alert_v2#user_name AlertV2#user_name}
   */
   readonly userName?: string;
 }
@@ -1734,15 +1738,15 @@ export class AlertV2RunAsOutputReference extends cdktn.ComplexObject {
 }
 export interface AlertV2Schedule {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/alert_v2#pause_status AlertV2#pause_status}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/alert_v2#pause_status AlertV2#pause_status}
   */
   readonly pauseStatus?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/alert_v2#quartz_cron_schedule AlertV2#quartz_cron_schedule}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/alert_v2#quartz_cron_schedule AlertV2#quartz_cron_schedule}
   */
   readonly quartzCronSchedule: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/alert_v2#timezone_id AlertV2#timezone_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/alert_v2#timezone_id AlertV2#timezone_id}
   */
   readonly timezoneId: string;
 }
@@ -1888,7 +1892,7 @@ export class AlertV2ScheduleOutputReference extends cdktn.ComplexObject {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/alert_v2 databricks_alert_v2}
+* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/alert_v2 databricks_alert_v2}
 */
 export class AlertV2 extends cdktn.TerraformResource {
 
@@ -1904,7 +1908,7 @@ export class AlertV2 extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a AlertV2 resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the AlertV2 to import
-  * @param importFromId The id of the existing AlertV2 that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/alert_v2#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing AlertV2 that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/alert_v2#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the AlertV2 to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -1916,7 +1920,7 @@ export class AlertV2 extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/alert_v2 databricks_alert_v2} Resource
+  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/alert_v2 databricks_alert_v2} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -1927,7 +1931,7 @@ export class AlertV2 extends cdktn.TerraformResource {
       terraformResourceType: 'databricks_alert_v2',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '1.138.0',
+        providerVersion: '1.140.0',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,
@@ -1940,6 +1944,7 @@ export class AlertV2 extends cdktn.TerraformResource {
     });
     this._customDescription = config.customDescription;
     this._customSummary = config.customSummary;
+    this._customTemplateFormat = config.customTemplateFormat;
     this._displayName = config.displayName;
     this._evaluation.internalValue = config.evaluation;
     this._parameters.internalValue = config.parameters;
@@ -1992,6 +1997,22 @@ export class AlertV2 extends cdktn.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get customSummaryInput() {
     return this._customSummary;
+  }
+
+  // custom_template_format - computed: false, optional: true, required: false
+  private _customTemplateFormat?: string; 
+  public get customTemplateFormat() {
+    return this.getStringAttribute('custom_template_format');
+  }
+  public set customTemplateFormat(value: string) {
+    this._customTemplateFormat = value;
+  }
+  public resetCustomTemplateFormat() {
+    this._customTemplateFormat = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get customTemplateFormatInput() {
+    return this._customTemplateFormat;
   }
 
   // display_name - computed: false, optional: false, required: true
@@ -2189,6 +2210,7 @@ export class AlertV2 extends cdktn.TerraformResource {
     return {
       custom_description: cdktn.stringToTerraform(this._customDescription),
       custom_summary: cdktn.stringToTerraform(this._customSummary),
+      custom_template_format: cdktn.stringToTerraform(this._customTemplateFormat),
       display_name: cdktn.stringToTerraform(this._displayName),
       evaluation: alertV2EvaluationToTerraform(this._evaluation.internalValue),
       parameters: cdktn.listMapper(alertV2ParametersToTerraform, false)(this._parameters.internalValue),
@@ -2213,6 +2235,12 @@ export class AlertV2 extends cdktn.TerraformResource {
       },
       custom_summary: {
         value: cdktn.stringToHclTerraform(this._customSummary),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      custom_template_format: {
+        value: cdktn.stringToHclTerraform(this._customTemplateFormat),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

@@ -4,12 +4,12 @@
 
 ### VectorSearchEndpoint <a name="VectorSearchEndpoint" id="@cdktn/provider-databricks.vectorSearchEndpoint.VectorSearchEndpoint"></a>
 
-Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/vector_search_endpoint databricks_vector_search_endpoint}.
+Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/vector_search_endpoint databricks_vector_search_endpoint}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.vectorSearchEndpoint.VectorSearchEndpoint.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/vectorsearchendpoint"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/vectorsearchendpoint"
 
 vectorsearchendpoint.NewVectorSearchEndpoint(scope Construct, id *string, config VectorSearchEndpointConfig) VectorSearchEndpoint
 ```
@@ -474,7 +474,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-databricks.vectorSearchEndpoint.VectorSearchEndpoint.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/vectorsearchendpoint"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/vectorsearchendpoint"
 
 vectorsearchendpoint.VectorSearchEndpoint_IsConstruct(x interface{}) *bool
 ```
@@ -506,7 +506,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-databricks.vectorSearchEndpoint.VectorSearchEndpoint.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/vectorsearchendpoint"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/vectorsearchendpoint"
 
 vectorsearchendpoint.VectorSearchEndpoint_IsTerraformElement(x interface{}) *bool
 ```
@@ -520,7 +520,7 @@ vectorsearchendpoint.VectorSearchEndpoint_IsTerraformElement(x interface{}) *boo
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-databricks.vectorSearchEndpoint.VectorSearchEndpoint.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/vectorsearchendpoint"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/vectorsearchendpoint"
 
 vectorsearchendpoint.VectorSearchEndpoint_IsTerraformResource(x interface{}) *bool
 ```
@@ -534,7 +534,7 @@ vectorsearchendpoint.VectorSearchEndpoint_IsTerraformResource(x interface{}) *bo
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-databricks.vectorSearchEndpoint.VectorSearchEndpoint.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/vectorsearchendpoint"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/vectorsearchendpoint"
 
 vectorsearchendpoint.VectorSearchEndpoint_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -563,7 +563,7 @@ The construct id used in the generated config for the VectorSearchEndpoint to im
 
 The id of the existing VectorSearchEndpoint that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/vector_search_endpoint#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/vector_search_endpoint#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1005,7 +1005,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.vectorSearchEndpoint.VectorSearchEndpointConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/vectorsearchendpoint"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/vectorsearchendpoint"
 
 &vectorsearchendpoint.VectorSearchEndpointConfig {
 	Connection: interface{},
@@ -1019,9 +1019,9 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/vectorse
 	Name: *string,
 	BudgetPolicyId: *string,
 	Id: *string,
-	ProviderConfig: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18.vectorSearchEndpoint.VectorSearchEndpointProviderConfig,
-	ScalingInfo: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18.vectorSearchEndpoint.VectorSearchEndpointScalingInfo,
-	Timeouts: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18.vectorSearchEndpoint.VectorSearchEndpointTimeouts,
+	ProviderConfig: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19.vectorSearchEndpoint.VectorSearchEndpointProviderConfig,
+	ScalingInfo: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19.vectorSearchEndpoint.VectorSearchEndpointScalingInfo,
+	Timeouts: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19.vectorSearchEndpoint.VectorSearchEndpointTimeouts,
 }
 ```
 
@@ -1036,10 +1036,10 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/vectorse
 | <code><a href="#@cdktn/provider-databricks.vectorSearchEndpoint.VectorSearchEndpointConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.vectorSearchEndpoint.VectorSearchEndpointConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.vectorSearchEndpoint.VectorSearchEndpointConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-databricks.vectorSearchEndpoint.VectorSearchEndpointConfig.property.endpointType">EndpointType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/vector_search_endpoint#endpoint_type VectorSearchEndpoint#endpoint_type}. |
-| <code><a href="#@cdktn/provider-databricks.vectorSearchEndpoint.VectorSearchEndpointConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/vector_search_endpoint#name VectorSearchEndpoint#name}. |
-| <code><a href="#@cdktn/provider-databricks.vectorSearchEndpoint.VectorSearchEndpointConfig.property.budgetPolicyId">BudgetPolicyId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/vector_search_endpoint#budget_policy_id VectorSearchEndpoint#budget_policy_id}. |
-| <code><a href="#@cdktn/provider-databricks.vectorSearchEndpoint.VectorSearchEndpointConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/vector_search_endpoint#id VectorSearchEndpoint#id}. |
+| <code><a href="#@cdktn/provider-databricks.vectorSearchEndpoint.VectorSearchEndpointConfig.property.endpointType">EndpointType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/vector_search_endpoint#endpoint_type VectorSearchEndpoint#endpoint_type}. |
+| <code><a href="#@cdktn/provider-databricks.vectorSearchEndpoint.VectorSearchEndpointConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/vector_search_endpoint#name VectorSearchEndpoint#name}. |
+| <code><a href="#@cdktn/provider-databricks.vectorSearchEndpoint.VectorSearchEndpointConfig.property.budgetPolicyId">BudgetPolicyId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/vector_search_endpoint#budget_policy_id VectorSearchEndpoint#budget_policy_id}. |
+| <code><a href="#@cdktn/provider-databricks.vectorSearchEndpoint.VectorSearchEndpointConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/vector_search_endpoint#id VectorSearchEndpoint#id}. |
 | <code><a href="#@cdktn/provider-databricks.vectorSearchEndpoint.VectorSearchEndpointConfig.property.providerConfig">ProviderConfig</a></code> | <code><a href="#@cdktn/provider-databricks.vectorSearchEndpoint.VectorSearchEndpointProviderConfig">VectorSearchEndpointProviderConfig</a></code> | provider_config block. |
 | <code><a href="#@cdktn/provider-databricks.vectorSearchEndpoint.VectorSearchEndpointConfig.property.scalingInfo">ScalingInfo</a></code> | <code><a href="#@cdktn/provider-databricks.vectorSearchEndpoint.VectorSearchEndpointScalingInfo">VectorSearchEndpointScalingInfo</a></code> | scaling_info block. |
 | <code><a href="#@cdktn/provider-databricks.vectorSearchEndpoint.VectorSearchEndpointConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-databricks.vectorSearchEndpoint.VectorSearchEndpointTimeouts">VectorSearchEndpointTimeouts</a></code> | timeouts block. |
@@ -1124,7 +1124,7 @@ EndpointType *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/vector_search_endpoint#endpoint_type VectorSearchEndpoint#endpoint_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/vector_search_endpoint#endpoint_type VectorSearchEndpoint#endpoint_type}.
 
 ---
 
@@ -1136,7 +1136,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/vector_search_endpoint#name VectorSearchEndpoint#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/vector_search_endpoint#name VectorSearchEndpoint#name}.
 
 ---
 
@@ -1148,7 +1148,7 @@ BudgetPolicyId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/vector_search_endpoint#budget_policy_id VectorSearchEndpoint#budget_policy_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/vector_search_endpoint#budget_policy_id VectorSearchEndpoint#budget_policy_id}.
 
 ---
 
@@ -1160,7 +1160,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/vector_search_endpoint#id VectorSearchEndpoint#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/vector_search_endpoint#id VectorSearchEndpoint#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1177,7 +1177,7 @@ ProviderConfig VectorSearchEndpointProviderConfig
 
 provider_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/vector_search_endpoint#provider_config VectorSearchEndpoint#provider_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/vector_search_endpoint#provider_config VectorSearchEndpoint#provider_config}
 
 ---
 
@@ -1191,7 +1191,7 @@ ScalingInfo VectorSearchEndpointScalingInfo
 
 scaling_info block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/vector_search_endpoint#scaling_info VectorSearchEndpoint#scaling_info}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/vector_search_endpoint#scaling_info VectorSearchEndpoint#scaling_info}
 
 ---
 
@@ -1205,7 +1205,7 @@ Timeouts VectorSearchEndpointTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/vector_search_endpoint#timeouts VectorSearchEndpoint#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/vector_search_endpoint#timeouts VectorSearchEndpoint#timeouts}
 
 ---
 
@@ -1214,7 +1214,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.vectorSearchEndpoint.VectorSearchEndpointEndpointStatus.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/vectorsearchendpoint"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/vectorsearchendpoint"
 
 &vectorsearchendpoint.VectorSearchEndpointEndpointStatus {
 
@@ -1227,7 +1227,7 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/vectorse
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.vectorSearchEndpoint.VectorSearchEndpointProviderConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/vectorsearchendpoint"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/vectorsearchendpoint"
 
 &vectorsearchendpoint.VectorSearchEndpointProviderConfig {
 	WorkspaceId: *string,
@@ -1238,7 +1238,7 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/vectorse
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.vectorSearchEndpoint.VectorSearchEndpointProviderConfig.property.workspaceId">WorkspaceId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/vector_search_endpoint#workspace_id VectorSearchEndpoint#workspace_id}. |
+| <code><a href="#@cdktn/provider-databricks.vectorSearchEndpoint.VectorSearchEndpointProviderConfig.property.workspaceId">WorkspaceId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/vector_search_endpoint#workspace_id VectorSearchEndpoint#workspace_id}. |
 
 ---
 
@@ -1250,7 +1250,7 @@ WorkspaceId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/vector_search_endpoint#workspace_id VectorSearchEndpoint#workspace_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/vector_search_endpoint#workspace_id VectorSearchEndpoint#workspace_id}.
 
 ---
 
@@ -1259,7 +1259,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.vectorSearchEndpoint.VectorSearchEndpointScalingInfo.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/vectorsearchendpoint"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/vectorsearchendpoint"
 
 &vectorsearchendpoint.VectorSearchEndpointScalingInfo {
 	RequestedTargetQps: *f64,
@@ -1271,8 +1271,8 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/vectorse
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.vectorSearchEndpoint.VectorSearchEndpointScalingInfo.property.requestedTargetQps">RequestedTargetQps</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/vector_search_endpoint#requested_target_qps VectorSearchEndpoint#requested_target_qps}. |
-| <code><a href="#@cdktn/provider-databricks.vectorSearchEndpoint.VectorSearchEndpointScalingInfo.property.state">State</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/vector_search_endpoint#state VectorSearchEndpoint#state}. |
+| <code><a href="#@cdktn/provider-databricks.vectorSearchEndpoint.VectorSearchEndpointScalingInfo.property.requestedTargetQps">RequestedTargetQps</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/vector_search_endpoint#requested_target_qps VectorSearchEndpoint#requested_target_qps}. |
+| <code><a href="#@cdktn/provider-databricks.vectorSearchEndpoint.VectorSearchEndpointScalingInfo.property.state">State</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/vector_search_endpoint#state VectorSearchEndpoint#state}. |
 
 ---
 
@@ -1284,7 +1284,7 @@ RequestedTargetQps *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/vector_search_endpoint#requested_target_qps VectorSearchEndpoint#requested_target_qps}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/vector_search_endpoint#requested_target_qps VectorSearchEndpoint#requested_target_qps}.
 
 ---
 
@@ -1296,7 +1296,7 @@ State *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/vector_search_endpoint#state VectorSearchEndpoint#state}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/vector_search_endpoint#state VectorSearchEndpoint#state}.
 
 ---
 
@@ -1305,7 +1305,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.vectorSearchEndpoint.VectorSearchEndpointTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/vectorsearchendpoint"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/vectorsearchendpoint"
 
 &vectorsearchendpoint.VectorSearchEndpointTimeouts {
 	Create: *string,
@@ -1316,7 +1316,7 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/vectorse
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.vectorSearchEndpoint.VectorSearchEndpointTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/vector_search_endpoint#create VectorSearchEndpoint#create}. |
+| <code><a href="#@cdktn/provider-databricks.vectorSearchEndpoint.VectorSearchEndpointTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/vector_search_endpoint#create VectorSearchEndpoint#create}. |
 
 ---
 
@@ -1328,7 +1328,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/vector_search_endpoint#create VectorSearchEndpoint#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/vector_search_endpoint#create VectorSearchEndpoint#create}.
 
 ---
 
@@ -1339,7 +1339,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.vectorSearchEndpoint.VectorSearchEndpointEndpointStatusList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/vectorsearchendpoint"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/vectorsearchendpoint"
 
 vectorsearchendpoint.NewVectorSearchEndpointEndpointStatusList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) VectorSearchEndpointEndpointStatusList
 ```
@@ -1488,7 +1488,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.vectorSearchEndpoint.VectorSearchEndpointEndpointStatusOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/vectorsearchendpoint"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/vectorsearchendpoint"
 
 vectorsearchendpoint.NewVectorSearchEndpointEndpointStatusOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) VectorSearchEndpointEndpointStatusOutputReference
 ```
@@ -1777,7 +1777,7 @@ func InternalValue() VectorSearchEndpointEndpointStatus
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.vectorSearchEndpoint.VectorSearchEndpointProviderConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/vectorsearchendpoint"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/vectorsearchendpoint"
 
 vectorsearchendpoint.NewVectorSearchEndpointProviderConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) VectorSearchEndpointProviderConfigOutputReference
 ```
@@ -2055,7 +2055,7 @@ func InternalValue() VectorSearchEndpointProviderConfig
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.vectorSearchEndpoint.VectorSearchEndpointScalingInfoOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/vectorsearchendpoint"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/vectorsearchendpoint"
 
 vectorsearchendpoint.NewVectorSearchEndpointScalingInfoOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) VectorSearchEndpointScalingInfoOutputReference
 ```
@@ -2362,7 +2362,7 @@ func InternalValue() VectorSearchEndpointScalingInfo
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.vectorSearchEndpoint.VectorSearchEndpointTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/vectorsearchendpoint"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/vectorsearchendpoint"
 
 vectorsearchendpoint.NewVectorSearchEndpointTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) VectorSearchEndpointTimeoutsOutputReference
 ```

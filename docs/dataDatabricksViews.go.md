@@ -4,12 +4,12 @@
 
 ### DataDatabricksViews <a name="DataDatabricksViews" id="@cdktn/provider-databricks.dataDatabricksViews.DataDatabricksViews"></a>
 
-Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/data-sources/views databricks_views}.
+Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/views databricks_views}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksViews.DataDatabricksViews.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksviews"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/datadatabricksviews"
 
 datadatabricksviews.NewDataDatabricksViews(scope Construct, id *string, config DataDatabricksViewsConfig) DataDatabricksViews
 ```
@@ -332,7 +332,7 @@ func ResetProviderConfig()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-databricks.dataDatabricksViews.DataDatabricksViews.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksviews"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/datadatabricksviews"
 
 datadatabricksviews.DataDatabricksViews_IsConstruct(x interface{}) *bool
 ```
@@ -364,7 +364,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-databricks.dataDatabricksViews.DataDatabricksViews.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksviews"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/datadatabricksviews"
 
 datadatabricksviews.DataDatabricksViews_IsTerraformElement(x interface{}) *bool
 ```
@@ -378,7 +378,7 @@ datadatabricksviews.DataDatabricksViews_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-databricks.dataDatabricksViews.DataDatabricksViews.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksviews"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/datadatabricksviews"
 
 datadatabricksviews.DataDatabricksViews_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -392,7 +392,7 @@ datadatabricksviews.DataDatabricksViews_IsTerraformDataSource(x interface{}) *bo
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-databricks.dataDatabricksViews.DataDatabricksViews.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksviews"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/datadatabricksviews"
 
 datadatabricksviews.DataDatabricksViews_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -421,7 +421,7 @@ The construct id used in the generated config for the DataDatabricksViews to imp
 
 The id of the existing DataDatabricksViews that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/data-sources/views#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/views#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -709,7 +709,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksViews.DataDatabricksViewsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksviews"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/datadatabricksviews"
 
 &datadatabricksviews.DataDatabricksViewsConfig {
 	Connection: interface{},
@@ -723,7 +723,7 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadata
 	SchemaName: *string,
 	Id: *string,
 	Ids: *[]*string,
-	ProviderConfig: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18.dataDatabricksViews.DataDatabricksViewsProviderConfig,
+	ProviderConfig: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19.dataDatabricksViews.DataDatabricksViewsProviderConfig,
 }
 ```
 
@@ -738,10 +738,10 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadata
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksViews.DataDatabricksViewsConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksViews.DataDatabricksViewsConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksViews.DataDatabricksViewsConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksViews.DataDatabricksViewsConfig.property.catalogName">CatalogName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/data-sources/views#catalog_name DataDatabricksViews#catalog_name}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksViews.DataDatabricksViewsConfig.property.schemaName">SchemaName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/data-sources/views#schema_name DataDatabricksViews#schema_name}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksViews.DataDatabricksViewsConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/data-sources/views#id DataDatabricksViews#id}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksViews.DataDatabricksViewsConfig.property.ids">Ids</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/data-sources/views#ids DataDatabricksViews#ids}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksViews.DataDatabricksViewsConfig.property.catalogName">CatalogName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/views#catalog_name DataDatabricksViews#catalog_name}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksViews.DataDatabricksViewsConfig.property.schemaName">SchemaName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/views#schema_name DataDatabricksViews#schema_name}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksViews.DataDatabricksViewsConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/views#id DataDatabricksViews#id}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksViews.DataDatabricksViewsConfig.property.ids">Ids</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/views#ids DataDatabricksViews#ids}. |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksViews.DataDatabricksViewsConfig.property.providerConfig">ProviderConfig</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksViews.DataDatabricksViewsProviderConfig">DataDatabricksViewsProviderConfig</a></code> | provider_config block. |
 
 ---
@@ -824,7 +824,7 @@ CatalogName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/data-sources/views#catalog_name DataDatabricksViews#catalog_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/views#catalog_name DataDatabricksViews#catalog_name}.
 
 ---
 
@@ -836,7 +836,7 @@ SchemaName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/data-sources/views#schema_name DataDatabricksViews#schema_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/views#schema_name DataDatabricksViews#schema_name}.
 
 ---
 
@@ -848,7 +848,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/data-sources/views#id DataDatabricksViews#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/views#id DataDatabricksViews#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -863,7 +863,7 @@ Ids *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/data-sources/views#ids DataDatabricksViews#ids}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/views#ids DataDatabricksViews#ids}.
 
 ---
 
@@ -877,7 +877,7 @@ ProviderConfig DataDatabricksViewsProviderConfig
 
 provider_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/data-sources/views#provider_config DataDatabricksViews#provider_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/views#provider_config DataDatabricksViews#provider_config}
 
 ---
 
@@ -886,7 +886,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksViews.DataDatabricksViewsProviderConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksviews"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/datadatabricksviews"
 
 &datadatabricksviews.DataDatabricksViewsProviderConfig {
 	WorkspaceId: *string,
@@ -897,7 +897,7 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadata
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksViews.DataDatabricksViewsProviderConfig.property.workspaceId">WorkspaceId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/data-sources/views#workspace_id DataDatabricksViews#workspace_id}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksViews.DataDatabricksViewsProviderConfig.property.workspaceId">WorkspaceId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/views#workspace_id DataDatabricksViews#workspace_id}. |
 
 ---
 
@@ -909,7 +909,7 @@ WorkspaceId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/data-sources/views#workspace_id DataDatabricksViews#workspace_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/views#workspace_id DataDatabricksViews#workspace_id}.
 
 ---
 
@@ -920,7 +920,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksViews.DataDatabricksViewsProviderConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksviews"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/datadatabricksviews"
 
 datadatabricksviews.NewDataDatabricksViewsProviderConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksViewsProviderConfigOutputReference
 ```

@@ -4,12 +4,12 @@
 
 ### DataDatabricksDashboards <a name="DataDatabricksDashboards" id="@cdktn/provider-databricks.dataDatabricksDashboards.DataDatabricksDashboards"></a>
 
-Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/data-sources/dashboards databricks_dashboards}.
+Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/dashboards databricks_dashboards}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksDashboards.DataDatabricksDashboards.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksdashboards"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/datadatabricksdashboards"
 
 datadatabricksdashboards.NewDataDatabricksDashboards(scope Construct, id *string, config DataDatabricksDashboardsConfig) DataDatabricksDashboards
 ```
@@ -325,7 +325,7 @@ func ResetProviderConfig()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-databricks.dataDatabricksDashboards.DataDatabricksDashboards.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksdashboards"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/datadatabricksdashboards"
 
 datadatabricksdashboards.DataDatabricksDashboards_IsConstruct(x interface{}) *bool
 ```
@@ -357,7 +357,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-databricks.dataDatabricksDashboards.DataDatabricksDashboards.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksdashboards"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/datadatabricksdashboards"
 
 datadatabricksdashboards.DataDatabricksDashboards_IsTerraformElement(x interface{}) *bool
 ```
@@ -371,7 +371,7 @@ datadatabricksdashboards.DataDatabricksDashboards_IsTerraformElement(x interface
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-databricks.dataDatabricksDashboards.DataDatabricksDashboards.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksdashboards"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/datadatabricksdashboards"
 
 datadatabricksdashboards.DataDatabricksDashboards_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -385,7 +385,7 @@ datadatabricksdashboards.DataDatabricksDashboards_IsTerraformDataSource(x interf
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-databricks.dataDatabricksDashboards.DataDatabricksDashboards.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksdashboards"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/datadatabricksdashboards"
 
 datadatabricksdashboards.DataDatabricksDashboards_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -414,7 +414,7 @@ The construct id used in the generated config for the DataDatabricksDashboards t
 
 The id of the existing DataDatabricksDashboards that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/data-sources/dashboards#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/dashboards#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -647,7 +647,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksDashboards.DataDatabricksDashboardsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksdashboards"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/datadatabricksdashboards"
 
 &datadatabricksdashboards.DataDatabricksDashboardsConfig {
 	Connection: interface{},
@@ -658,7 +658,7 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadata
 	Provider: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider,
 	Provisioners: *[]interface{},
 	DashboardNameContains: *string,
-	ProviderConfig: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18.dataDatabricksDashboards.DataDatabricksDashboardsProviderConfig,
+	ProviderConfig: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19.dataDatabricksDashboards.DataDatabricksDashboardsProviderConfig,
 }
 ```
 
@@ -673,8 +673,8 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadata
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksDashboards.DataDatabricksDashboardsConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksDashboards.DataDatabricksDashboardsConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksDashboards.DataDatabricksDashboardsConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksDashboards.DataDatabricksDashboardsConfig.property.dashboardNameContains">DashboardNameContains</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/data-sources/dashboards#dashboard_name_contains DataDatabricksDashboards#dashboard_name_contains}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksDashboards.DataDatabricksDashboardsConfig.property.providerConfig">ProviderConfig</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksDashboards.DataDatabricksDashboardsProviderConfig">DataDatabricksDashboardsProviderConfig</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/data-sources/dashboards#provider_config DataDatabricksDashboards#provider_config}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksDashboards.DataDatabricksDashboardsConfig.property.dashboardNameContains">DashboardNameContains</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/dashboards#dashboard_name_contains DataDatabricksDashboards#dashboard_name_contains}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksDashboards.DataDatabricksDashboardsConfig.property.providerConfig">ProviderConfig</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksDashboards.DataDatabricksDashboardsProviderConfig">DataDatabricksDashboardsProviderConfig</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/dashboards#provider_config DataDatabricksDashboards#provider_config}. |
 
 ---
 
@@ -756,7 +756,7 @@ DashboardNameContains *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/data-sources/dashboards#dashboard_name_contains DataDatabricksDashboards#dashboard_name_contains}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/dashboards#dashboard_name_contains DataDatabricksDashboards#dashboard_name_contains}.
 
 ---
 
@@ -768,7 +768,7 @@ ProviderConfig DataDatabricksDashboardsProviderConfig
 
 - *Type:* <a href="#@cdktn/provider-databricks.dataDatabricksDashboards.DataDatabricksDashboardsProviderConfig">DataDatabricksDashboardsProviderConfig</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/data-sources/dashboards#provider_config DataDatabricksDashboards#provider_config}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/dashboards#provider_config DataDatabricksDashboards#provider_config}.
 
 ---
 
@@ -777,7 +777,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksDashboards.DataDatabricksDashboardsDashboards.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksdashboards"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/datadatabricksdashboards"
 
 &datadatabricksdashboards.DataDatabricksDashboardsDashboards {
 	DisplayName: *string,
@@ -790,9 +790,9 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadata
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksDashboards.DataDatabricksDashboardsDashboards.property.displayName">DisplayName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/data-sources/dashboards#display_name DataDatabricksDashboards#display_name}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksDashboards.DataDatabricksDashboardsDashboards.property.serializedDashboard">SerializedDashboard</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/data-sources/dashboards#serialized_dashboard DataDatabricksDashboards#serialized_dashboard}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksDashboards.DataDatabricksDashboardsDashboards.property.warehouseId">WarehouseId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/data-sources/dashboards#warehouse_id DataDatabricksDashboards#warehouse_id}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksDashboards.DataDatabricksDashboardsDashboards.property.displayName">DisplayName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/dashboards#display_name DataDatabricksDashboards#display_name}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksDashboards.DataDatabricksDashboardsDashboards.property.serializedDashboard">SerializedDashboard</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/dashboards#serialized_dashboard DataDatabricksDashboards#serialized_dashboard}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksDashboards.DataDatabricksDashboardsDashboards.property.warehouseId">WarehouseId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/dashboards#warehouse_id DataDatabricksDashboards#warehouse_id}. |
 
 ---
 
@@ -804,7 +804,7 @@ DisplayName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/data-sources/dashboards#display_name DataDatabricksDashboards#display_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/dashboards#display_name DataDatabricksDashboards#display_name}.
 
 ---
 
@@ -816,7 +816,7 @@ SerializedDashboard *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/data-sources/dashboards#serialized_dashboard DataDatabricksDashboards#serialized_dashboard}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/dashboards#serialized_dashboard DataDatabricksDashboards#serialized_dashboard}.
 
 ---
 
@@ -828,7 +828,7 @@ WarehouseId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/data-sources/dashboards#warehouse_id DataDatabricksDashboards#warehouse_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/dashboards#warehouse_id DataDatabricksDashboards#warehouse_id}.
 
 ---
 
@@ -837,7 +837,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksDashboards.DataDatabricksDashboardsProviderConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksdashboards"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/datadatabricksdashboards"
 
 &datadatabricksdashboards.DataDatabricksDashboardsProviderConfig {
 	WorkspaceId: *string,
@@ -848,7 +848,7 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadata
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksDashboards.DataDatabricksDashboardsProviderConfig.property.workspaceId">WorkspaceId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/data-sources/dashboards#workspace_id DataDatabricksDashboards#workspace_id}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksDashboards.DataDatabricksDashboardsProviderConfig.property.workspaceId">WorkspaceId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/dashboards#workspace_id DataDatabricksDashboards#workspace_id}. |
 
 ---
 
@@ -860,7 +860,7 @@ WorkspaceId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/data-sources/dashboards#workspace_id DataDatabricksDashboards#workspace_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/dashboards#workspace_id DataDatabricksDashboards#workspace_id}.
 
 ---
 
@@ -871,7 +871,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksDashboards.DataDatabricksDashboardsDashboardsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksdashboards"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/datadatabricksdashboards"
 
 datadatabricksdashboards.NewDataDatabricksDashboardsDashboardsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDatabricksDashboardsDashboardsList
 ```
@@ -1031,7 +1031,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksDashboards.DataDatabricksDashboardsDashboardsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksdashboards"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/datadatabricksdashboards"
 
 datadatabricksdashboards.NewDataDatabricksDashboardsDashboardsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataDatabricksDashboardsDashboardsOutputReference
 ```
@@ -1462,7 +1462,7 @@ func InternalValue() DataDatabricksDashboardsDashboards
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksDashboards.DataDatabricksDashboardsProviderConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksdashboards"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/datadatabricksdashboards"
 
 datadatabricksdashboards.NewDataDatabricksDashboardsProviderConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksDashboardsProviderConfigOutputReference
 ```

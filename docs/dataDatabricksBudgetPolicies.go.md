@@ -4,12 +4,12 @@
 
 ### DataDatabricksBudgetPolicies <a name="DataDatabricksBudgetPolicies" id="@cdktn/provider-databricks.dataDatabricksBudgetPolicies.DataDatabricksBudgetPolicies"></a>
 
-Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/data-sources/budget_policies databricks_budget_policies}.
+Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/budget_policies databricks_budget_policies}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksBudgetPolicies.DataDatabricksBudgetPolicies.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksbudgetpolicies"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/datadatabricksbudgetpolicies"
 
 datadatabricksbudgetpolicies.NewDataDatabricksBudgetPolicies(scope Construct, id *string, config DataDatabricksBudgetPoliciesConfig) DataDatabricksBudgetPolicies
 ```
@@ -345,7 +345,7 @@ func ResetSortSpec()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-databricks.dataDatabricksBudgetPolicies.DataDatabricksBudgetPolicies.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksbudgetpolicies"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/datadatabricksbudgetpolicies"
 
 datadatabricksbudgetpolicies.DataDatabricksBudgetPolicies_IsConstruct(x interface{}) *bool
 ```
@@ -377,7 +377,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-databricks.dataDatabricksBudgetPolicies.DataDatabricksBudgetPolicies.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksbudgetpolicies"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/datadatabricksbudgetpolicies"
 
 datadatabricksbudgetpolicies.DataDatabricksBudgetPolicies_IsTerraformElement(x interface{}) *bool
 ```
@@ -391,7 +391,7 @@ datadatabricksbudgetpolicies.DataDatabricksBudgetPolicies_IsTerraformElement(x i
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-databricks.dataDatabricksBudgetPolicies.DataDatabricksBudgetPolicies.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksbudgetpolicies"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/datadatabricksbudgetpolicies"
 
 datadatabricksbudgetpolicies.DataDatabricksBudgetPolicies_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -405,7 +405,7 @@ datadatabricksbudgetpolicies.DataDatabricksBudgetPolicies_IsTerraformDataSource(
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-databricks.dataDatabricksBudgetPolicies.DataDatabricksBudgetPolicies.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksbudgetpolicies"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/datadatabricksbudgetpolicies"
 
 datadatabricksbudgetpolicies.DataDatabricksBudgetPolicies_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -434,7 +434,7 @@ The construct id used in the generated config for the DataDatabricksBudgetPolici
 
 The id of the existing DataDatabricksBudgetPolicies that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/data-sources/budget_policies#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/budget_policies#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -689,7 +689,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksBudgetPolicies.DataDatabricksBudgetPoliciesConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksbudgetpolicies"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/datadatabricksbudgetpolicies"
 
 &datadatabricksbudgetpolicies.DataDatabricksBudgetPoliciesConfig {
 	Connection: interface{},
@@ -699,9 +699,9 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadata
 	Lifecycle: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle,
 	Provider: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider,
 	Provisioners: *[]interface{},
-	FilterBy: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18.dataDatabricksBudgetPolicies.DataDatabricksBudgetPoliciesFilterBy,
+	FilterBy: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19.dataDatabricksBudgetPolicies.DataDatabricksBudgetPoliciesFilterBy,
 	PageSize: *f64,
-	SortSpec: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18.dataDatabricksBudgetPolicies.DataDatabricksBudgetPoliciesSortSpec,
+	SortSpec: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19.dataDatabricksBudgetPolicies.DataDatabricksBudgetPoliciesSortSpec,
 }
 ```
 
@@ -716,9 +716,9 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadata
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksBudgetPolicies.DataDatabricksBudgetPoliciesConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksBudgetPolicies.DataDatabricksBudgetPoliciesConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksBudgetPolicies.DataDatabricksBudgetPoliciesConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksBudgetPolicies.DataDatabricksBudgetPoliciesConfig.property.filterBy">FilterBy</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksBudgetPolicies.DataDatabricksBudgetPoliciesFilterBy">DataDatabricksBudgetPoliciesFilterBy</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/data-sources/budget_policies#filter_by DataDatabricksBudgetPolicies#filter_by}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksBudgetPolicies.DataDatabricksBudgetPoliciesConfig.property.pageSize">PageSize</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/data-sources/budget_policies#page_size DataDatabricksBudgetPolicies#page_size}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksBudgetPolicies.DataDatabricksBudgetPoliciesConfig.property.sortSpec">SortSpec</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksBudgetPolicies.DataDatabricksBudgetPoliciesSortSpec">DataDatabricksBudgetPoliciesSortSpec</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/data-sources/budget_policies#sort_spec DataDatabricksBudgetPolicies#sort_spec}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksBudgetPolicies.DataDatabricksBudgetPoliciesConfig.property.filterBy">FilterBy</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksBudgetPolicies.DataDatabricksBudgetPoliciesFilterBy">DataDatabricksBudgetPoliciesFilterBy</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/budget_policies#filter_by DataDatabricksBudgetPolicies#filter_by}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksBudgetPolicies.DataDatabricksBudgetPoliciesConfig.property.pageSize">PageSize</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/budget_policies#page_size DataDatabricksBudgetPolicies#page_size}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksBudgetPolicies.DataDatabricksBudgetPoliciesConfig.property.sortSpec">SortSpec</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksBudgetPolicies.DataDatabricksBudgetPoliciesSortSpec">DataDatabricksBudgetPoliciesSortSpec</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/budget_policies#sort_spec DataDatabricksBudgetPolicies#sort_spec}. |
 
 ---
 
@@ -800,7 +800,7 @@ FilterBy DataDatabricksBudgetPoliciesFilterBy
 
 - *Type:* <a href="#@cdktn/provider-databricks.dataDatabricksBudgetPolicies.DataDatabricksBudgetPoliciesFilterBy">DataDatabricksBudgetPoliciesFilterBy</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/data-sources/budget_policies#filter_by DataDatabricksBudgetPolicies#filter_by}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/budget_policies#filter_by DataDatabricksBudgetPolicies#filter_by}.
 
 ---
 
@@ -812,7 +812,7 @@ PageSize *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/data-sources/budget_policies#page_size DataDatabricksBudgetPolicies#page_size}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/budget_policies#page_size DataDatabricksBudgetPolicies#page_size}.
 
 ---
 
@@ -824,7 +824,7 @@ SortSpec DataDatabricksBudgetPoliciesSortSpec
 
 - *Type:* <a href="#@cdktn/provider-databricks.dataDatabricksBudgetPolicies.DataDatabricksBudgetPoliciesSortSpec">DataDatabricksBudgetPoliciesSortSpec</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/data-sources/budget_policies#sort_spec DataDatabricksBudgetPolicies#sort_spec}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/budget_policies#sort_spec DataDatabricksBudgetPolicies#sort_spec}.
 
 ---
 
@@ -833,7 +833,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksBudgetPolicies.DataDatabricksBudgetPoliciesFilterBy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksbudgetpolicies"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/datadatabricksbudgetpolicies"
 
 &datadatabricksbudgetpolicies.DataDatabricksBudgetPoliciesFilterBy {
 	CreatorUserId: *f64,
@@ -846,9 +846,9 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadata
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksBudgetPolicies.DataDatabricksBudgetPoliciesFilterBy.property.creatorUserId">CreatorUserId</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/data-sources/budget_policies#creator_user_id DataDatabricksBudgetPolicies#creator_user_id}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksBudgetPolicies.DataDatabricksBudgetPoliciesFilterBy.property.creatorUserName">CreatorUserName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/data-sources/budget_policies#creator_user_name DataDatabricksBudgetPolicies#creator_user_name}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksBudgetPolicies.DataDatabricksBudgetPoliciesFilterBy.property.policyName">PolicyName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/data-sources/budget_policies#policy_name DataDatabricksBudgetPolicies#policy_name}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksBudgetPolicies.DataDatabricksBudgetPoliciesFilterBy.property.creatorUserId">CreatorUserId</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/budget_policies#creator_user_id DataDatabricksBudgetPolicies#creator_user_id}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksBudgetPolicies.DataDatabricksBudgetPoliciesFilterBy.property.creatorUserName">CreatorUserName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/budget_policies#creator_user_name DataDatabricksBudgetPolicies#creator_user_name}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksBudgetPolicies.DataDatabricksBudgetPoliciesFilterBy.property.policyName">PolicyName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/budget_policies#policy_name DataDatabricksBudgetPolicies#policy_name}. |
 
 ---
 
@@ -860,7 +860,7 @@ CreatorUserId *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/data-sources/budget_policies#creator_user_id DataDatabricksBudgetPolicies#creator_user_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/budget_policies#creator_user_id DataDatabricksBudgetPolicies#creator_user_id}.
 
 ---
 
@@ -872,7 +872,7 @@ CreatorUserName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/data-sources/budget_policies#creator_user_name DataDatabricksBudgetPolicies#creator_user_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/budget_policies#creator_user_name DataDatabricksBudgetPolicies#creator_user_name}.
 
 ---
 
@@ -884,7 +884,7 @@ PolicyName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/data-sources/budget_policies#policy_name DataDatabricksBudgetPolicies#policy_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/budget_policies#policy_name DataDatabricksBudgetPolicies#policy_name}.
 
 ---
 
@@ -893,7 +893,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksBudgetPolicies.DataDatabricksBudgetPoliciesPolicies.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksbudgetpolicies"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/datadatabricksbudgetpolicies"
 
 &datadatabricksbudgetpolicies.DataDatabricksBudgetPoliciesPolicies {
 	PolicyId: *string,
@@ -904,7 +904,7 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadata
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksBudgetPolicies.DataDatabricksBudgetPoliciesPolicies.property.policyId">PolicyId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/data-sources/budget_policies#policy_id DataDatabricksBudgetPolicies#policy_id}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksBudgetPolicies.DataDatabricksBudgetPoliciesPolicies.property.policyId">PolicyId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/budget_policies#policy_id DataDatabricksBudgetPolicies#policy_id}. |
 
 ---
 
@@ -916,7 +916,7 @@ PolicyId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/data-sources/budget_policies#policy_id DataDatabricksBudgetPolicies#policy_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/budget_policies#policy_id DataDatabricksBudgetPolicies#policy_id}.
 
 ---
 
@@ -925,7 +925,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksBudgetPolicies.DataDatabricksBudgetPoliciesPoliciesCustomTags.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksbudgetpolicies"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/datadatabricksbudgetpolicies"
 
 &datadatabricksbudgetpolicies.DataDatabricksBudgetPoliciesPoliciesCustomTags {
 	Key: *string,
@@ -937,8 +937,8 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadata
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksBudgetPolicies.DataDatabricksBudgetPoliciesPoliciesCustomTags.property.key">Key</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/data-sources/budget_policies#key DataDatabricksBudgetPolicies#key}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksBudgetPolicies.DataDatabricksBudgetPoliciesPoliciesCustomTags.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/data-sources/budget_policies#value DataDatabricksBudgetPolicies#value}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksBudgetPolicies.DataDatabricksBudgetPoliciesPoliciesCustomTags.property.key">Key</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/budget_policies#key DataDatabricksBudgetPolicies#key}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksBudgetPolicies.DataDatabricksBudgetPoliciesPoliciesCustomTags.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/budget_policies#value DataDatabricksBudgetPolicies#value}. |
 
 ---
 
@@ -950,7 +950,7 @@ Key *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/data-sources/budget_policies#key DataDatabricksBudgetPolicies#key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/budget_policies#key DataDatabricksBudgetPolicies#key}.
 
 ---
 
@@ -962,7 +962,7 @@ Value *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/data-sources/budget_policies#value DataDatabricksBudgetPolicies#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/budget_policies#value DataDatabricksBudgetPolicies#value}.
 
 ---
 
@@ -971,7 +971,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksBudgetPolicies.DataDatabricksBudgetPoliciesSortSpec.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksbudgetpolicies"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/datadatabricksbudgetpolicies"
 
 &datadatabricksbudgetpolicies.DataDatabricksBudgetPoliciesSortSpec {
 	Descending: interface{},
@@ -983,8 +983,8 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadata
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksBudgetPolicies.DataDatabricksBudgetPoliciesSortSpec.property.descending">Descending</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/data-sources/budget_policies#descending DataDatabricksBudgetPolicies#descending}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksBudgetPolicies.DataDatabricksBudgetPoliciesSortSpec.property.field">Field</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/data-sources/budget_policies#field DataDatabricksBudgetPolicies#field}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksBudgetPolicies.DataDatabricksBudgetPoliciesSortSpec.property.descending">Descending</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/budget_policies#descending DataDatabricksBudgetPolicies#descending}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksBudgetPolicies.DataDatabricksBudgetPoliciesSortSpec.property.field">Field</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/budget_policies#field DataDatabricksBudgetPolicies#field}. |
 
 ---
 
@@ -996,7 +996,7 @@ Descending interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/data-sources/budget_policies#descending DataDatabricksBudgetPolicies#descending}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/budget_policies#descending DataDatabricksBudgetPolicies#descending}.
 
 ---
 
@@ -1008,7 +1008,7 @@ Field *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/data-sources/budget_policies#field DataDatabricksBudgetPolicies#field}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/budget_policies#field DataDatabricksBudgetPolicies#field}.
 
 ---
 
@@ -1019,7 +1019,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksBudgetPolicies.DataDatabricksBudgetPoliciesFilterByOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksbudgetpolicies"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/datadatabricksbudgetpolicies"
 
 datadatabricksbudgetpolicies.NewDataDatabricksBudgetPoliciesFilterByOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksBudgetPoliciesFilterByOutputReference
 ```
@@ -1355,7 +1355,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksBudgetPolicies.DataDatabricksBudgetPoliciesPoliciesCustomTagsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksbudgetpolicies"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/datadatabricksbudgetpolicies"
 
 datadatabricksbudgetpolicies.NewDataDatabricksBudgetPoliciesPoliciesCustomTagsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDatabricksBudgetPoliciesPoliciesCustomTagsList
 ```
@@ -1515,7 +1515,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksBudgetPolicies.DataDatabricksBudgetPoliciesPoliciesCustomTagsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksbudgetpolicies"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/datadatabricksbudgetpolicies"
 
 datadatabricksbudgetpolicies.NewDataDatabricksBudgetPoliciesPoliciesCustomTagsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataDatabricksBudgetPoliciesPoliciesCustomTagsOutputReference
 ```
@@ -1833,7 +1833,7 @@ func InternalValue() DataDatabricksBudgetPoliciesPoliciesCustomTags
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksBudgetPolicies.DataDatabricksBudgetPoliciesPoliciesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksbudgetpolicies"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/datadatabricksbudgetpolicies"
 
 datadatabricksbudgetpolicies.NewDataDatabricksBudgetPoliciesPoliciesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDatabricksBudgetPoliciesPoliciesList
 ```
@@ -1993,7 +1993,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksBudgetPolicies.DataDatabricksBudgetPoliciesPoliciesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksbudgetpolicies"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/datadatabricksbudgetpolicies"
 
 datadatabricksbudgetpolicies.NewDataDatabricksBudgetPoliciesPoliciesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataDatabricksBudgetPoliciesPoliciesOutputReference
 ```
@@ -2315,7 +2315,7 @@ func InternalValue() DataDatabricksBudgetPoliciesPolicies
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksBudgetPolicies.DataDatabricksBudgetPoliciesSortSpecOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksbudgetpolicies"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/datadatabricksbudgetpolicies"
 
 datadatabricksbudgetpolicies.NewDataDatabricksBudgetPoliciesSortSpecOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksBudgetPoliciesSortSpecOutputReference
 ```

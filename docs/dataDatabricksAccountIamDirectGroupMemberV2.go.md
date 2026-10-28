@@ -4,12 +4,12 @@
 
 ### DataDatabricksAccountIamDirectGroupMemberV2 <a name="DataDatabricksAccountIamDirectGroupMemberV2" id="@cdktn/provider-databricks.dataDatabricksAccountIamDirectGroupMemberV2.DataDatabricksAccountIamDirectGroupMemberV2"></a>
 
-Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/data-sources/account_iam_direct_group_member_v2 databricks_account_iam_direct_group_member_v2}.
+Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/account_iam_direct_group_member_v2 databricks_account_iam_direct_group_member_v2}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksAccountIamDirectGroupMemberV2.DataDatabricksAccountIamDirectGroupMemberV2.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksaccountiamdirectgroupmemberv2"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/datadatabricksaccountiamdirectgroupmemberv2"
 
 datadatabricksaccountiamdirectgroupmemberv2.NewDataDatabricksAccountIamDirectGroupMemberV2(scope Construct, id *string, config DataDatabricksAccountIamDirectGroupMemberV2Config) DataDatabricksAccountIamDirectGroupMemberV2
 ```
@@ -298,7 +298,7 @@ func InterpolationForAttribute(terraformAttribute *string) IResolvable
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-databricks.dataDatabricksAccountIamDirectGroupMemberV2.DataDatabricksAccountIamDirectGroupMemberV2.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksaccountiamdirectgroupmemberv2"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/datadatabricksaccountiamdirectgroupmemberv2"
 
 datadatabricksaccountiamdirectgroupmemberv2.DataDatabricksAccountIamDirectGroupMemberV2_IsConstruct(x interface{}) *bool
 ```
@@ -330,7 +330,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-databricks.dataDatabricksAccountIamDirectGroupMemberV2.DataDatabricksAccountIamDirectGroupMemberV2.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksaccountiamdirectgroupmemberv2"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/datadatabricksaccountiamdirectgroupmemberv2"
 
 datadatabricksaccountiamdirectgroupmemberv2.DataDatabricksAccountIamDirectGroupMemberV2_IsTerraformElement(x interface{}) *bool
 ```
@@ -344,7 +344,7 @@ datadatabricksaccountiamdirectgroupmemberv2.DataDatabricksAccountIamDirectGroupM
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-databricks.dataDatabricksAccountIamDirectGroupMemberV2.DataDatabricksAccountIamDirectGroupMemberV2.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksaccountiamdirectgroupmemberv2"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/datadatabricksaccountiamdirectgroupmemberv2"
 
 datadatabricksaccountiamdirectgroupmemberv2.DataDatabricksAccountIamDirectGroupMemberV2_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -358,7 +358,7 @@ datadatabricksaccountiamdirectgroupmemberv2.DataDatabricksAccountIamDirectGroupM
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-databricks.dataDatabricksAccountIamDirectGroupMemberV2.DataDatabricksAccountIamDirectGroupMemberV2.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksaccountiamdirectgroupmemberv2"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/datadatabricksaccountiamdirectgroupmemberv2"
 
 datadatabricksaccountiamdirectgroupmemberv2.DataDatabricksAccountIamDirectGroupMemberV2_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -387,7 +387,7 @@ The construct id used in the generated config for the DataDatabricksAccountIamDi
 
 The id of the existing DataDatabricksAccountIamDirectGroupMemberV2 that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/data-sources/account_iam_direct_group_member_v2#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/account_iam_direct_group_member_v2#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -653,7 +653,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksAccountIamDirectGroupMemberV2.DataDatabricksAccountIamDirectGroupMemberV2Config.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksaccountiamdirectgroupmemberv2"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/datadatabricksaccountiamdirectgroupmemberv2"
 
 &datadatabricksaccountiamdirectgroupmemberv2.DataDatabricksAccountIamDirectGroupMemberV2Config {
 	Connection: interface{},
@@ -679,8 +679,8 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadata
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountIamDirectGroupMemberV2.DataDatabricksAccountIamDirectGroupMemberV2Config.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountIamDirectGroupMemberV2.DataDatabricksAccountIamDirectGroupMemberV2Config.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountIamDirectGroupMemberV2.DataDatabricksAccountIamDirectGroupMemberV2Config.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountIamDirectGroupMemberV2.DataDatabricksAccountIamDirectGroupMemberV2Config.property.groupId">GroupId</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/data-sources/account_iam_direct_group_member_v2#group_id DataDatabricksAccountIamDirectGroupMemberV2#group_id}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountIamDirectGroupMemberV2.DataDatabricksAccountIamDirectGroupMemberV2Config.property.principalId">PrincipalId</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/data-sources/account_iam_direct_group_member_v2#principal_id DataDatabricksAccountIamDirectGroupMemberV2#principal_id}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountIamDirectGroupMemberV2.DataDatabricksAccountIamDirectGroupMemberV2Config.property.groupId">GroupId</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/account_iam_direct_group_member_v2#group_id DataDatabricksAccountIamDirectGroupMemberV2#group_id}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountIamDirectGroupMemberV2.DataDatabricksAccountIamDirectGroupMemberV2Config.property.principalId">PrincipalId</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/account_iam_direct_group_member_v2#principal_id DataDatabricksAccountIamDirectGroupMemberV2#principal_id}. |
 
 ---
 
@@ -762,7 +762,7 @@ GroupId *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/data-sources/account_iam_direct_group_member_v2#group_id DataDatabricksAccountIamDirectGroupMemberV2#group_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/account_iam_direct_group_member_v2#group_id DataDatabricksAccountIamDirectGroupMemberV2#group_id}.
 
 ---
 
@@ -774,7 +774,7 @@ PrincipalId *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/data-sources/account_iam_direct_group_member_v2#principal_id DataDatabricksAccountIamDirectGroupMemberV2#principal_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/account_iam_direct_group_member_v2#principal_id DataDatabricksAccountIamDirectGroupMemberV2#principal_id}.
 
 ---
 

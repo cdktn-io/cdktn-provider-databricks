@@ -4,12 +4,12 @@
 
 ### DataDatabricksWorkspaceIamExternalGroupV2 <a name="DataDatabricksWorkspaceIamExternalGroupV2" id="@cdktn/provider-databricks.dataDatabricksWorkspaceIamExternalGroupV2.DataDatabricksWorkspaceIamExternalGroupV2"></a>
 
-Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/data-sources/workspace_iam_external_group_v2 databricks_workspace_iam_external_group_v2}.
+Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/workspace_iam_external_group_v2 databricks_workspace_iam_external_group_v2}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksWorkspaceIamExternalGroupV2.DataDatabricksWorkspaceIamExternalGroupV2.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksworkspaceiamexternalgroupv2"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/datadatabricksworkspaceiamexternalgroupv2"
 
 datadatabricksworkspaceiamexternalgroupv2.NewDataDatabricksWorkspaceIamExternalGroupV2(scope Construct, id *string, config DataDatabricksWorkspaceIamExternalGroupV2Config) DataDatabricksWorkspaceIamExternalGroupV2
 ```
@@ -318,7 +318,7 @@ func ResetProviderConfig()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-databricks.dataDatabricksWorkspaceIamExternalGroupV2.DataDatabricksWorkspaceIamExternalGroupV2.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksworkspaceiamexternalgroupv2"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/datadatabricksworkspaceiamexternalgroupv2"
 
 datadatabricksworkspaceiamexternalgroupv2.DataDatabricksWorkspaceIamExternalGroupV2_IsConstruct(x interface{}) *bool
 ```
@@ -350,7 +350,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-databricks.dataDatabricksWorkspaceIamExternalGroupV2.DataDatabricksWorkspaceIamExternalGroupV2.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksworkspaceiamexternalgroupv2"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/datadatabricksworkspaceiamexternalgroupv2"
 
 datadatabricksworkspaceiamexternalgroupv2.DataDatabricksWorkspaceIamExternalGroupV2_IsTerraformElement(x interface{}) *bool
 ```
@@ -364,7 +364,7 @@ datadatabricksworkspaceiamexternalgroupv2.DataDatabricksWorkspaceIamExternalGrou
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-databricks.dataDatabricksWorkspaceIamExternalGroupV2.DataDatabricksWorkspaceIamExternalGroupV2.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksworkspaceiamexternalgroupv2"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/datadatabricksworkspaceiamexternalgroupv2"
 
 datadatabricksworkspaceiamexternalgroupv2.DataDatabricksWorkspaceIamExternalGroupV2_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -378,7 +378,7 @@ datadatabricksworkspaceiamexternalgroupv2.DataDatabricksWorkspaceIamExternalGrou
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-databricks.dataDatabricksWorkspaceIamExternalGroupV2.DataDatabricksWorkspaceIamExternalGroupV2.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksworkspaceiamexternalgroupv2"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/datadatabricksworkspaceiamexternalgroupv2"
 
 datadatabricksworkspaceiamexternalgroupv2.DataDatabricksWorkspaceIamExternalGroupV2_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -407,7 +407,7 @@ The construct id used in the generated config for the DataDatabricksWorkspaceIam
 
 The id of the existing DataDatabricksWorkspaceIamExternalGroupV2 that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/data-sources/workspace_iam_external_group_v2#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/workspace_iam_external_group_v2#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -673,7 +673,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksWorkspaceIamExternalGroupV2.DataDatabricksWorkspaceIamExternalGroupV2Config.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksworkspaceiamexternalgroupv2"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/datadatabricksworkspaceiamexternalgroupv2"
 
 &datadatabricksworkspaceiamexternalgroupv2.DataDatabricksWorkspaceIamExternalGroupV2Config {
 	Connection: interface{},
@@ -684,7 +684,7 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadata
 	Provider: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider,
 	Provisioners: *[]interface{},
 	Name: *string,
-	ProviderConfig: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18.dataDatabricksWorkspaceIamExternalGroupV2.DataDatabricksWorkspaceIamExternalGroupV2ProviderConfig,
+	ProviderConfig: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19.dataDatabricksWorkspaceIamExternalGroupV2.DataDatabricksWorkspaceIamExternalGroupV2ProviderConfig,
 }
 ```
 
@@ -699,8 +699,8 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadata
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceIamExternalGroupV2.DataDatabricksWorkspaceIamExternalGroupV2Config.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceIamExternalGroupV2.DataDatabricksWorkspaceIamExternalGroupV2Config.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceIamExternalGroupV2.DataDatabricksWorkspaceIamExternalGroupV2Config.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceIamExternalGroupV2.DataDatabricksWorkspaceIamExternalGroupV2Config.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/data-sources/workspace_iam_external_group_v2#name DataDatabricksWorkspaceIamExternalGroupV2#name}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceIamExternalGroupV2.DataDatabricksWorkspaceIamExternalGroupV2Config.property.providerConfig">ProviderConfig</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceIamExternalGroupV2.DataDatabricksWorkspaceIamExternalGroupV2ProviderConfig">DataDatabricksWorkspaceIamExternalGroupV2ProviderConfig</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/data-sources/workspace_iam_external_group_v2#provider_config DataDatabricksWorkspaceIamExternalGroupV2#provider_config}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceIamExternalGroupV2.DataDatabricksWorkspaceIamExternalGroupV2Config.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/workspace_iam_external_group_v2#name DataDatabricksWorkspaceIamExternalGroupV2#name}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceIamExternalGroupV2.DataDatabricksWorkspaceIamExternalGroupV2Config.property.providerConfig">ProviderConfig</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceIamExternalGroupV2.DataDatabricksWorkspaceIamExternalGroupV2ProviderConfig">DataDatabricksWorkspaceIamExternalGroupV2ProviderConfig</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/workspace_iam_external_group_v2#provider_config DataDatabricksWorkspaceIamExternalGroupV2#provider_config}. |
 
 ---
 
@@ -782,7 +782,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/data-sources/workspace_iam_external_group_v2#name DataDatabricksWorkspaceIamExternalGroupV2#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/workspace_iam_external_group_v2#name DataDatabricksWorkspaceIamExternalGroupV2#name}.
 
 ---
 
@@ -794,7 +794,7 @@ ProviderConfig DataDatabricksWorkspaceIamExternalGroupV2ProviderConfig
 
 - *Type:* <a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceIamExternalGroupV2.DataDatabricksWorkspaceIamExternalGroupV2ProviderConfig">DataDatabricksWorkspaceIamExternalGroupV2ProviderConfig</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/data-sources/workspace_iam_external_group_v2#provider_config DataDatabricksWorkspaceIamExternalGroupV2#provider_config}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/workspace_iam_external_group_v2#provider_config DataDatabricksWorkspaceIamExternalGroupV2#provider_config}.
 
 ---
 
@@ -803,7 +803,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksWorkspaceIamExternalGroupV2.DataDatabricksWorkspaceIamExternalGroupV2ProviderConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksworkspaceiamexternalgroupv2"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/datadatabricksworkspaceiamexternalgroupv2"
 
 &datadatabricksworkspaceiamexternalgroupv2.DataDatabricksWorkspaceIamExternalGroupV2ProviderConfig {
 	WorkspaceId: *string,
@@ -814,7 +814,7 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadata
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceIamExternalGroupV2.DataDatabricksWorkspaceIamExternalGroupV2ProviderConfig.property.workspaceId">WorkspaceId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/data-sources/workspace_iam_external_group_v2#workspace_id DataDatabricksWorkspaceIamExternalGroupV2#workspace_id}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceIamExternalGroupV2.DataDatabricksWorkspaceIamExternalGroupV2ProviderConfig.property.workspaceId">WorkspaceId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/workspace_iam_external_group_v2#workspace_id DataDatabricksWorkspaceIamExternalGroupV2#workspace_id}. |
 
 ---
 
@@ -826,7 +826,7 @@ WorkspaceId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/data-sources/workspace_iam_external_group_v2#workspace_id DataDatabricksWorkspaceIamExternalGroupV2#workspace_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/workspace_iam_external_group_v2#workspace_id DataDatabricksWorkspaceIamExternalGroupV2#workspace_id}.
 
 ---
 
@@ -837,7 +837,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksWorkspaceIamExternalGroupV2.DataDatabricksWorkspaceIamExternalGroupV2ProviderConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksworkspaceiamexternalgroupv2"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/datadatabricksworkspaceiamexternalgroupv2"
 
 datadatabricksworkspaceiamexternalgroupv2.NewDataDatabricksWorkspaceIamExternalGroupV2ProviderConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksWorkspaceIamExternalGroupV2ProviderConfigOutputReference
 ```

@@ -4,12 +4,12 @@
 
 ### MlflowExperiment <a name="MlflowExperiment" id="@cdktn/provider-databricks.mlflowExperiment.MlflowExperiment"></a>
 
-Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/mlflow_experiment databricks_mlflow_experiment}.
+Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/mlflow_experiment databricks_mlflow_experiment}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.mlflowExperiment.MlflowExperiment.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/mlflowexperiment"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/mlflowexperiment"
 
 mlflowexperiment.NewMlflowExperiment(scope Construct, id *string, config MlflowExperimentConfig) MlflowExperiment
 ```
@@ -522,7 +522,7 @@ func ResetTraceLocation()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-databricks.mlflowExperiment.MlflowExperiment.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/mlflowexperiment"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/mlflowexperiment"
 
 mlflowexperiment.MlflowExperiment_IsConstruct(x interface{}) *bool
 ```
@@ -554,7 +554,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-databricks.mlflowExperiment.MlflowExperiment.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/mlflowexperiment"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/mlflowexperiment"
 
 mlflowexperiment.MlflowExperiment_IsTerraformElement(x interface{}) *bool
 ```
@@ -568,7 +568,7 @@ mlflowexperiment.MlflowExperiment_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-databricks.mlflowExperiment.MlflowExperiment.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/mlflowexperiment"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/mlflowexperiment"
 
 mlflowexperiment.MlflowExperiment_IsTerraformResource(x interface{}) *bool
 ```
@@ -582,7 +582,7 @@ mlflowexperiment.MlflowExperiment_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-databricks.mlflowExperiment.MlflowExperiment.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/mlflowexperiment"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/mlflowexperiment"
 
 mlflowexperiment.MlflowExperiment_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -611,7 +611,7 @@ The construct id used in the generated config for the MlflowExperiment to import
 
 The id of the existing MlflowExperiment that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/mlflow_experiment#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/mlflow_experiment#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1075,7 +1075,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.mlflowExperiment.MlflowExperimentConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/mlflowexperiment"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/mlflowexperiment"
 
 &mlflowexperiment.MlflowExperimentConfig {
 	Connection: interface{},
@@ -1093,10 +1093,10 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/mlflowex
 	Id: *string,
 	LastUpdateTime: *f64,
 	LifecycleStage: *string,
-	ProviderConfig: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18.mlflowExperiment.MlflowExperimentProviderConfig,
+	ProviderConfig: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19.mlflowExperiment.MlflowExperimentProviderConfig,
 	Tags: interface{},
-	Timeouts: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18.mlflowExperiment.MlflowExperimentTimeouts,
-	TraceLocation: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18.mlflowExperiment.MlflowExperimentTraceLocation,
+	Timeouts: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19.mlflowExperiment.MlflowExperimentTimeouts,
+	TraceLocation: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19.mlflowExperiment.MlflowExperimentTraceLocation,
 }
 ```
 
@@ -1111,14 +1111,14 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/mlflowex
 | <code><a href="#@cdktn/provider-databricks.mlflowExperiment.MlflowExperimentConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.mlflowExperiment.MlflowExperimentConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.mlflowExperiment.MlflowExperimentConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-databricks.mlflowExperiment.MlflowExperimentConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/mlflow_experiment#name MlflowExperiment#name}. |
-| <code><a href="#@cdktn/provider-databricks.mlflowExperiment.MlflowExperimentConfig.property.artifactLocation">ArtifactLocation</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/mlflow_experiment#artifact_location MlflowExperiment#artifact_location}. |
-| <code><a href="#@cdktn/provider-databricks.mlflowExperiment.MlflowExperimentConfig.property.creationTime">CreationTime</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/mlflow_experiment#creation_time MlflowExperiment#creation_time}. |
-| <code><a href="#@cdktn/provider-databricks.mlflowExperiment.MlflowExperimentConfig.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/mlflow_experiment#description MlflowExperiment#description}. |
-| <code><a href="#@cdktn/provider-databricks.mlflowExperiment.MlflowExperimentConfig.property.experimentId">ExperimentId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/mlflow_experiment#experiment_id MlflowExperiment#experiment_id}. |
-| <code><a href="#@cdktn/provider-databricks.mlflowExperiment.MlflowExperimentConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/mlflow_experiment#id MlflowExperiment#id}. |
-| <code><a href="#@cdktn/provider-databricks.mlflowExperiment.MlflowExperimentConfig.property.lastUpdateTime">LastUpdateTime</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/mlflow_experiment#last_update_time MlflowExperiment#last_update_time}. |
-| <code><a href="#@cdktn/provider-databricks.mlflowExperiment.MlflowExperimentConfig.property.lifecycleStage">LifecycleStage</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/mlflow_experiment#lifecycle_stage MlflowExperiment#lifecycle_stage}. |
+| <code><a href="#@cdktn/provider-databricks.mlflowExperiment.MlflowExperimentConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/mlflow_experiment#name MlflowExperiment#name}. |
+| <code><a href="#@cdktn/provider-databricks.mlflowExperiment.MlflowExperimentConfig.property.artifactLocation">ArtifactLocation</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/mlflow_experiment#artifact_location MlflowExperiment#artifact_location}. |
+| <code><a href="#@cdktn/provider-databricks.mlflowExperiment.MlflowExperimentConfig.property.creationTime">CreationTime</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/mlflow_experiment#creation_time MlflowExperiment#creation_time}. |
+| <code><a href="#@cdktn/provider-databricks.mlflowExperiment.MlflowExperimentConfig.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/mlflow_experiment#description MlflowExperiment#description}. |
+| <code><a href="#@cdktn/provider-databricks.mlflowExperiment.MlflowExperimentConfig.property.experimentId">ExperimentId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/mlflow_experiment#experiment_id MlflowExperiment#experiment_id}. |
+| <code><a href="#@cdktn/provider-databricks.mlflowExperiment.MlflowExperimentConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/mlflow_experiment#id MlflowExperiment#id}. |
+| <code><a href="#@cdktn/provider-databricks.mlflowExperiment.MlflowExperimentConfig.property.lastUpdateTime">LastUpdateTime</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/mlflow_experiment#last_update_time MlflowExperiment#last_update_time}. |
+| <code><a href="#@cdktn/provider-databricks.mlflowExperiment.MlflowExperimentConfig.property.lifecycleStage">LifecycleStage</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/mlflow_experiment#lifecycle_stage MlflowExperiment#lifecycle_stage}. |
 | <code><a href="#@cdktn/provider-databricks.mlflowExperiment.MlflowExperimentConfig.property.providerConfig">ProviderConfig</a></code> | <code><a href="#@cdktn/provider-databricks.mlflowExperiment.MlflowExperimentProviderConfig">MlflowExperimentProviderConfig</a></code> | provider_config block. |
 | <code><a href="#@cdktn/provider-databricks.mlflowExperiment.MlflowExperimentConfig.property.tags">Tags</a></code> | <code>interface{}</code> | tags block. |
 | <code><a href="#@cdktn/provider-databricks.mlflowExperiment.MlflowExperimentConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-databricks.mlflowExperiment.MlflowExperimentTimeouts">MlflowExperimentTimeouts</a></code> | timeouts block. |
@@ -1204,7 +1204,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/mlflow_experiment#name MlflowExperiment#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/mlflow_experiment#name MlflowExperiment#name}.
 
 ---
 
@@ -1216,7 +1216,7 @@ ArtifactLocation *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/mlflow_experiment#artifact_location MlflowExperiment#artifact_location}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/mlflow_experiment#artifact_location MlflowExperiment#artifact_location}.
 
 ---
 
@@ -1228,7 +1228,7 @@ CreationTime *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/mlflow_experiment#creation_time MlflowExperiment#creation_time}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/mlflow_experiment#creation_time MlflowExperiment#creation_time}.
 
 ---
 
@@ -1240,7 +1240,7 @@ Description *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/mlflow_experiment#description MlflowExperiment#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/mlflow_experiment#description MlflowExperiment#description}.
 
 ---
 
@@ -1252,7 +1252,7 @@ ExperimentId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/mlflow_experiment#experiment_id MlflowExperiment#experiment_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/mlflow_experiment#experiment_id MlflowExperiment#experiment_id}.
 
 ---
 
@@ -1264,7 +1264,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/mlflow_experiment#id MlflowExperiment#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/mlflow_experiment#id MlflowExperiment#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1279,7 +1279,7 @@ LastUpdateTime *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/mlflow_experiment#last_update_time MlflowExperiment#last_update_time}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/mlflow_experiment#last_update_time MlflowExperiment#last_update_time}.
 
 ---
 
@@ -1291,7 +1291,7 @@ LifecycleStage *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/mlflow_experiment#lifecycle_stage MlflowExperiment#lifecycle_stage}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/mlflow_experiment#lifecycle_stage MlflowExperiment#lifecycle_stage}.
 
 ---
 
@@ -1305,7 +1305,7 @@ ProviderConfig MlflowExperimentProviderConfig
 
 provider_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/mlflow_experiment#provider_config MlflowExperiment#provider_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/mlflow_experiment#provider_config MlflowExperiment#provider_config}
 
 ---
 
@@ -1319,7 +1319,7 @@ Tags interface{}
 
 tags block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/mlflow_experiment#tags MlflowExperiment#tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/mlflow_experiment#tags MlflowExperiment#tags}
 
 ---
 
@@ -1333,7 +1333,7 @@ Timeouts MlflowExperimentTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/mlflow_experiment#timeouts MlflowExperiment#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/mlflow_experiment#timeouts MlflowExperiment#timeouts}
 
 ---
 
@@ -1347,7 +1347,7 @@ TraceLocation MlflowExperimentTraceLocation
 
 trace_location block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/mlflow_experiment#trace_location MlflowExperiment#trace_location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/mlflow_experiment#trace_location MlflowExperiment#trace_location}
 
 ---
 
@@ -1356,7 +1356,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.mlflowExperiment.MlflowExperimentProviderConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/mlflowexperiment"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/mlflowexperiment"
 
 &mlflowexperiment.MlflowExperimentProviderConfig {
 	WorkspaceId: *string,
@@ -1367,7 +1367,7 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/mlflowex
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.mlflowExperiment.MlflowExperimentProviderConfig.property.workspaceId">WorkspaceId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/mlflow_experiment#workspace_id MlflowExperiment#workspace_id}. |
+| <code><a href="#@cdktn/provider-databricks.mlflowExperiment.MlflowExperimentProviderConfig.property.workspaceId">WorkspaceId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/mlflow_experiment#workspace_id MlflowExperiment#workspace_id}. |
 
 ---
 
@@ -1379,7 +1379,7 @@ WorkspaceId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/mlflow_experiment#workspace_id MlflowExperiment#workspace_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/mlflow_experiment#workspace_id MlflowExperiment#workspace_id}.
 
 ---
 
@@ -1388,7 +1388,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.mlflowExperiment.MlflowExperimentTags.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/mlflowexperiment"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/mlflowexperiment"
 
 &mlflowexperiment.MlflowExperimentTags {
 	Key: *string,
@@ -1400,8 +1400,8 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/mlflowex
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.mlflowExperiment.MlflowExperimentTags.property.key">Key</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/mlflow_experiment#key MlflowExperiment#key}. |
-| <code><a href="#@cdktn/provider-databricks.mlflowExperiment.MlflowExperimentTags.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/mlflow_experiment#value MlflowExperiment#value}. |
+| <code><a href="#@cdktn/provider-databricks.mlflowExperiment.MlflowExperimentTags.property.key">Key</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/mlflow_experiment#key MlflowExperiment#key}. |
+| <code><a href="#@cdktn/provider-databricks.mlflowExperiment.MlflowExperimentTags.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/mlflow_experiment#value MlflowExperiment#value}. |
 
 ---
 
@@ -1413,7 +1413,7 @@ Key *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/mlflow_experiment#key MlflowExperiment#key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/mlflow_experiment#key MlflowExperiment#key}.
 
 ---
 
@@ -1425,7 +1425,7 @@ Value *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/mlflow_experiment#value MlflowExperiment#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/mlflow_experiment#value MlflowExperiment#value}.
 
 ---
 
@@ -1434,7 +1434,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.mlflowExperiment.MlflowExperimentTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/mlflowexperiment"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/mlflowexperiment"
 
 &mlflowexperiment.MlflowExperimentTimeouts {
 
@@ -1447,10 +1447,10 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/mlflowex
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.mlflowExperiment.MlflowExperimentTraceLocation.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/mlflowexperiment"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/mlflowexperiment"
 
 &mlflowexperiment.MlflowExperimentTraceLocation {
-	UcTraceLocation: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18.mlflowExperiment.MlflowExperimentTraceLocationUcTraceLocation,
+	UcTraceLocation: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19.mlflowExperiment.MlflowExperimentTraceLocationUcTraceLocation,
 }
 ```
 
@@ -1472,7 +1472,7 @@ UcTraceLocation MlflowExperimentTraceLocationUcTraceLocation
 
 uc_trace_location block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/mlflow_experiment#uc_trace_location MlflowExperiment#uc_trace_location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/mlflow_experiment#uc_trace_location MlflowExperiment#uc_trace_location}
 
 ---
 
@@ -1481,7 +1481,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.mlflowExperiment.MlflowExperimentTraceLocationUcTraceLocation.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/mlflowexperiment"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/mlflowexperiment"
 
 &mlflowexperiment.MlflowExperimentTraceLocationUcTraceLocation {
 	Catalog: *string,
@@ -1495,10 +1495,10 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/mlflowex
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.mlflowExperiment.MlflowExperimentTraceLocationUcTraceLocation.property.catalog">Catalog</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/mlflow_experiment#catalog MlflowExperiment#catalog}. |
-| <code><a href="#@cdktn/provider-databricks.mlflowExperiment.MlflowExperimentTraceLocationUcTraceLocation.property.schema">Schema</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/mlflow_experiment#schema MlflowExperiment#schema}. |
-| <code><a href="#@cdktn/provider-databricks.mlflowExperiment.MlflowExperimentTraceLocationUcTraceLocation.property.effectiveTablePrefix">EffectiveTablePrefix</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/mlflow_experiment#effective_table_prefix MlflowExperiment#effective_table_prefix}. |
-| <code><a href="#@cdktn/provider-databricks.mlflowExperiment.MlflowExperimentTraceLocationUcTraceLocation.property.tablePrefix">TablePrefix</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/mlflow_experiment#table_prefix MlflowExperiment#table_prefix}. |
+| <code><a href="#@cdktn/provider-databricks.mlflowExperiment.MlflowExperimentTraceLocationUcTraceLocation.property.catalog">Catalog</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/mlflow_experiment#catalog MlflowExperiment#catalog}. |
+| <code><a href="#@cdktn/provider-databricks.mlflowExperiment.MlflowExperimentTraceLocationUcTraceLocation.property.schema">Schema</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/mlflow_experiment#schema MlflowExperiment#schema}. |
+| <code><a href="#@cdktn/provider-databricks.mlflowExperiment.MlflowExperimentTraceLocationUcTraceLocation.property.effectiveTablePrefix">EffectiveTablePrefix</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/mlflow_experiment#effective_table_prefix MlflowExperiment#effective_table_prefix}. |
+| <code><a href="#@cdktn/provider-databricks.mlflowExperiment.MlflowExperimentTraceLocationUcTraceLocation.property.tablePrefix">TablePrefix</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/mlflow_experiment#table_prefix MlflowExperiment#table_prefix}. |
 
 ---
 
@@ -1510,7 +1510,7 @@ Catalog *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/mlflow_experiment#catalog MlflowExperiment#catalog}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/mlflow_experiment#catalog MlflowExperiment#catalog}.
 
 ---
 
@@ -1522,7 +1522,7 @@ Schema *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/mlflow_experiment#schema MlflowExperiment#schema}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/mlflow_experiment#schema MlflowExperiment#schema}.
 
 ---
 
@@ -1534,7 +1534,7 @@ EffectiveTablePrefix *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/mlflow_experiment#effective_table_prefix MlflowExperiment#effective_table_prefix}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/mlflow_experiment#effective_table_prefix MlflowExperiment#effective_table_prefix}.
 
 ---
 
@@ -1546,7 +1546,7 @@ TablePrefix *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/mlflow_experiment#table_prefix MlflowExperiment#table_prefix}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/mlflow_experiment#table_prefix MlflowExperiment#table_prefix}.
 
 ---
 
@@ -1557,7 +1557,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.mlflowExperiment.MlflowExperimentProviderConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/mlflowexperiment"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/mlflowexperiment"
 
 mlflowexperiment.NewMlflowExperimentProviderConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MlflowExperimentProviderConfigOutputReference
 ```
@@ -1835,7 +1835,7 @@ func InternalValue() MlflowExperimentProviderConfig
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.mlflowExperiment.MlflowExperimentTagsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/mlflowexperiment"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/mlflowexperiment"
 
 mlflowexperiment.NewMlflowExperimentTagsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) MlflowExperimentTagsList
 ```
@@ -1995,7 +1995,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.mlflowExperiment.MlflowExperimentTagsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/mlflowexperiment"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/mlflowexperiment"
 
 mlflowexperiment.NewMlflowExperimentTagsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) MlflowExperimentTagsOutputReference
 ```
@@ -2320,7 +2320,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.mlflowExperiment.MlflowExperimentTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/mlflowexperiment"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/mlflowexperiment"
 
 mlflowexperiment.NewMlflowExperimentTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MlflowExperimentTimeoutsOutputReference
 ```
@@ -2569,7 +2569,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.mlflowExperiment.MlflowExperimentTraceLocationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/mlflowexperiment"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/mlflowexperiment"
 
 mlflowexperiment.NewMlflowExperimentTraceLocationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MlflowExperimentTraceLocationOutputReference
 ```
@@ -2860,7 +2860,7 @@ func InternalValue() MlflowExperimentTraceLocation
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.mlflowExperiment.MlflowExperimentTraceLocationUcTraceLocationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/mlflowexperiment"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/mlflowexperiment"
 
 mlflowexperiment.NewMlflowExperimentTraceLocationUcTraceLocationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MlflowExperimentTraceLocationUcTraceLocationOutputReference
 ```

@@ -4,12 +4,12 @@
 
 ### DataDatabricksWorkspaceIamWorkspaceIdentityDetailV2 <a name="DataDatabricksWorkspaceIamWorkspaceIdentityDetailV2" id="@cdktn/provider-databricks.dataDatabricksWorkspaceIamWorkspaceIdentityDetailV2.DataDatabricksWorkspaceIamWorkspaceIdentityDetailV2"></a>
 
-Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/data-sources/workspace_iam_workspace_identity_detail_v2 databricks_workspace_iam_workspace_identity_detail_v2}.
+Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/workspace_iam_workspace_identity_detail_v2 databricks_workspace_iam_workspace_identity_detail_v2}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksWorkspaceIamWorkspaceIdentityDetailV2.DataDatabricksWorkspaceIamWorkspaceIdentityDetailV2.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksworkspaceiamworkspaceidentitydetailv2"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/datadatabricksworkspaceiamworkspaceidentitydetailv2"
 
 datadatabricksworkspaceiamworkspaceidentitydetailv2.NewDataDatabricksWorkspaceIamWorkspaceIdentityDetailV2(scope Construct, id *string, config DataDatabricksWorkspaceIamWorkspaceIdentityDetailV2Config) DataDatabricksWorkspaceIamWorkspaceIdentityDetailV2
 ```
@@ -318,7 +318,7 @@ func ResetProviderConfig()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-databricks.dataDatabricksWorkspaceIamWorkspaceIdentityDetailV2.DataDatabricksWorkspaceIamWorkspaceIdentityDetailV2.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksworkspaceiamworkspaceidentitydetailv2"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/datadatabricksworkspaceiamworkspaceidentitydetailv2"
 
 datadatabricksworkspaceiamworkspaceidentitydetailv2.DataDatabricksWorkspaceIamWorkspaceIdentityDetailV2_IsConstruct(x interface{}) *bool
 ```
@@ -350,7 +350,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-databricks.dataDatabricksWorkspaceIamWorkspaceIdentityDetailV2.DataDatabricksWorkspaceIamWorkspaceIdentityDetailV2.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksworkspaceiamworkspaceidentitydetailv2"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/datadatabricksworkspaceiamworkspaceidentitydetailv2"
 
 datadatabricksworkspaceiamworkspaceidentitydetailv2.DataDatabricksWorkspaceIamWorkspaceIdentityDetailV2_IsTerraformElement(x interface{}) *bool
 ```
@@ -364,7 +364,7 @@ datadatabricksworkspaceiamworkspaceidentitydetailv2.DataDatabricksWorkspaceIamWo
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-databricks.dataDatabricksWorkspaceIamWorkspaceIdentityDetailV2.DataDatabricksWorkspaceIamWorkspaceIdentityDetailV2.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksworkspaceiamworkspaceidentitydetailv2"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/datadatabricksworkspaceiamworkspaceidentitydetailv2"
 
 datadatabricksworkspaceiamworkspaceidentitydetailv2.DataDatabricksWorkspaceIamWorkspaceIdentityDetailV2_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -378,7 +378,7 @@ datadatabricksworkspaceiamworkspaceidentitydetailv2.DataDatabricksWorkspaceIamWo
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-databricks.dataDatabricksWorkspaceIamWorkspaceIdentityDetailV2.DataDatabricksWorkspaceIamWorkspaceIdentityDetailV2.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksworkspaceiamworkspaceidentitydetailv2"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/datadatabricksworkspaceiamworkspaceidentitydetailv2"
 
 datadatabricksworkspaceiamworkspaceidentitydetailv2.DataDatabricksWorkspaceIamWorkspaceIdentityDetailV2_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -407,7 +407,7 @@ The construct id used in the generated config for the DataDatabricksWorkspaceIam
 
 The id of the existing DataDatabricksWorkspaceIamWorkspaceIdentityDetailV2 that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/data-sources/workspace_iam_workspace_identity_detail_v2#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/workspace_iam_workspace_identity_detail_v2#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -662,7 +662,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksWorkspaceIamWorkspaceIdentityDetailV2.DataDatabricksWorkspaceIamWorkspaceIdentityDetailV2Config.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksworkspaceiamworkspaceidentitydetailv2"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/datadatabricksworkspaceiamworkspaceidentitydetailv2"
 
 &datadatabricksworkspaceiamworkspaceidentitydetailv2.DataDatabricksWorkspaceIamWorkspaceIdentityDetailV2Config {
 	Connection: interface{},
@@ -673,7 +673,7 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadata
 	Provider: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider,
 	Provisioners: *[]interface{},
 	PrincipalId: *f64,
-	ProviderConfig: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18.dataDatabricksWorkspaceIamWorkspaceIdentityDetailV2.DataDatabricksWorkspaceIamWorkspaceIdentityDetailV2ProviderConfig,
+	ProviderConfig: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19.dataDatabricksWorkspaceIamWorkspaceIdentityDetailV2.DataDatabricksWorkspaceIamWorkspaceIdentityDetailV2ProviderConfig,
 }
 ```
 
@@ -688,8 +688,8 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadata
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceIamWorkspaceIdentityDetailV2.DataDatabricksWorkspaceIamWorkspaceIdentityDetailV2Config.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceIamWorkspaceIdentityDetailV2.DataDatabricksWorkspaceIamWorkspaceIdentityDetailV2Config.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceIamWorkspaceIdentityDetailV2.DataDatabricksWorkspaceIamWorkspaceIdentityDetailV2Config.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceIamWorkspaceIdentityDetailV2.DataDatabricksWorkspaceIamWorkspaceIdentityDetailV2Config.property.principalId">PrincipalId</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/data-sources/workspace_iam_workspace_identity_detail_v2#principal_id DataDatabricksWorkspaceIamWorkspaceIdentityDetailV2#principal_id}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceIamWorkspaceIdentityDetailV2.DataDatabricksWorkspaceIamWorkspaceIdentityDetailV2Config.property.providerConfig">ProviderConfig</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceIamWorkspaceIdentityDetailV2.DataDatabricksWorkspaceIamWorkspaceIdentityDetailV2ProviderConfig">DataDatabricksWorkspaceIamWorkspaceIdentityDetailV2ProviderConfig</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/data-sources/workspace_iam_workspace_identity_detail_v2#provider_config DataDatabricksWorkspaceIamWorkspaceIdentityDetailV2#provider_config}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceIamWorkspaceIdentityDetailV2.DataDatabricksWorkspaceIamWorkspaceIdentityDetailV2Config.property.principalId">PrincipalId</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/workspace_iam_workspace_identity_detail_v2#principal_id DataDatabricksWorkspaceIamWorkspaceIdentityDetailV2#principal_id}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceIamWorkspaceIdentityDetailV2.DataDatabricksWorkspaceIamWorkspaceIdentityDetailV2Config.property.providerConfig">ProviderConfig</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceIamWorkspaceIdentityDetailV2.DataDatabricksWorkspaceIamWorkspaceIdentityDetailV2ProviderConfig">DataDatabricksWorkspaceIamWorkspaceIdentityDetailV2ProviderConfig</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/workspace_iam_workspace_identity_detail_v2#provider_config DataDatabricksWorkspaceIamWorkspaceIdentityDetailV2#provider_config}. |
 
 ---
 
@@ -771,7 +771,7 @@ PrincipalId *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/data-sources/workspace_iam_workspace_identity_detail_v2#principal_id DataDatabricksWorkspaceIamWorkspaceIdentityDetailV2#principal_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/workspace_iam_workspace_identity_detail_v2#principal_id DataDatabricksWorkspaceIamWorkspaceIdentityDetailV2#principal_id}.
 
 ---
 
@@ -783,7 +783,7 @@ ProviderConfig DataDatabricksWorkspaceIamWorkspaceIdentityDetailV2ProviderConfig
 
 - *Type:* <a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceIamWorkspaceIdentityDetailV2.DataDatabricksWorkspaceIamWorkspaceIdentityDetailV2ProviderConfig">DataDatabricksWorkspaceIamWorkspaceIdentityDetailV2ProviderConfig</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/data-sources/workspace_iam_workspace_identity_detail_v2#provider_config DataDatabricksWorkspaceIamWorkspaceIdentityDetailV2#provider_config}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/workspace_iam_workspace_identity_detail_v2#provider_config DataDatabricksWorkspaceIamWorkspaceIdentityDetailV2#provider_config}.
 
 ---
 
@@ -792,7 +792,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksWorkspaceIamWorkspaceIdentityDetailV2.DataDatabricksWorkspaceIamWorkspaceIdentityDetailV2ProviderConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksworkspaceiamworkspaceidentitydetailv2"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/datadatabricksworkspaceiamworkspaceidentitydetailv2"
 
 &datadatabricksworkspaceiamworkspaceidentitydetailv2.DataDatabricksWorkspaceIamWorkspaceIdentityDetailV2ProviderConfig {
 	WorkspaceId: *string,
@@ -803,7 +803,7 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadata
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceIamWorkspaceIdentityDetailV2.DataDatabricksWorkspaceIamWorkspaceIdentityDetailV2ProviderConfig.property.workspaceId">WorkspaceId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/data-sources/workspace_iam_workspace_identity_detail_v2#workspace_id DataDatabricksWorkspaceIamWorkspaceIdentityDetailV2#workspace_id}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceIamWorkspaceIdentityDetailV2.DataDatabricksWorkspaceIamWorkspaceIdentityDetailV2ProviderConfig.property.workspaceId">WorkspaceId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/workspace_iam_workspace_identity_detail_v2#workspace_id DataDatabricksWorkspaceIamWorkspaceIdentityDetailV2#workspace_id}. |
 
 ---
 
@@ -815,7 +815,7 @@ WorkspaceId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/data-sources/workspace_iam_workspace_identity_detail_v2#workspace_id DataDatabricksWorkspaceIamWorkspaceIdentityDetailV2#workspace_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/workspace_iam_workspace_identity_detail_v2#workspace_id DataDatabricksWorkspaceIamWorkspaceIdentityDetailV2#workspace_id}.
 
 ---
 
@@ -826,7 +826,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksWorkspaceIamWorkspaceIdentityDetailV2.DataDatabricksWorkspaceIamWorkspaceIdentityDetailV2ProviderConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/datadatabricksworkspaceiamworkspaceidentitydetailv2"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/datadatabricksworkspaceiamworkspaceidentitydetailv2"
 
 datadatabricksworkspaceiamworkspaceidentitydetailv2.NewDataDatabricksWorkspaceIamWorkspaceIdentityDetailV2ProviderConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksWorkspaceIamWorkspaceIdentityDetailV2ProviderConfigOutputReference
 ```

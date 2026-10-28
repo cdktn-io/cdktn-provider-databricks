@@ -4,12 +4,12 @@
 
 ### AccountIamGroupV2 <a name="AccountIamGroupV2" id="@cdktn/provider-databricks.accountIamGroupV2.AccountIamGroupV2"></a>
 
-Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/account_iam_group_v2 databricks_account_iam_group_v2}.
+Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/account_iam_group_v2 databricks_account_iam_group_v2}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.accountIamGroupV2.AccountIamGroupV2.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/accountiamgroupv2"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/accountiamgroupv2"
 
 accountiamgroupv2.NewAccountIamGroupV2(scope Construct, id *string, config AccountIamGroupV2Config) AccountIamGroupV2
 ```
@@ -414,7 +414,7 @@ func ResetGroupName()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-databricks.accountIamGroupV2.AccountIamGroupV2.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/accountiamgroupv2"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/accountiamgroupv2"
 
 accountiamgroupv2.AccountIamGroupV2_IsConstruct(x interface{}) *bool
 ```
@@ -446,7 +446,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-databricks.accountIamGroupV2.AccountIamGroupV2.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/accountiamgroupv2"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/accountiamgroupv2"
 
 accountiamgroupv2.AccountIamGroupV2_IsTerraformElement(x interface{}) *bool
 ```
@@ -460,7 +460,7 @@ accountiamgroupv2.AccountIamGroupV2_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-databricks.accountIamGroupV2.AccountIamGroupV2.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/accountiamgroupv2"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/accountiamgroupv2"
 
 accountiamgroupv2.AccountIamGroupV2_IsTerraformResource(x interface{}) *bool
 ```
@@ -474,7 +474,7 @@ accountiamgroupv2.AccountIamGroupV2_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-databricks.accountIamGroupV2.AccountIamGroupV2.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/accountiamgroupv2"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/accountiamgroupv2"
 
 accountiamgroupv2.AccountIamGroupV2_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -503,7 +503,7 @@ The construct id used in the generated config for the AccountIamGroupV2 to impor
 
 The id of the existing AccountIamGroupV2 that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/account_iam_group_v2#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/account_iam_group_v2#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -769,7 +769,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.accountIamGroupV2.AccountIamGroupV2Config.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/accountiamgroupv2"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/accountiamgroupv2"
 
 &accountiamgroupv2.AccountIamGroupV2Config {
 	Connection: interface{},
@@ -795,8 +795,8 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/accounti
 | <code><a href="#@cdktn/provider-databricks.accountIamGroupV2.AccountIamGroupV2Config.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.accountIamGroupV2.AccountIamGroupV2Config.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.accountIamGroupV2.AccountIamGroupV2Config.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-databricks.accountIamGroupV2.AccountIamGroupV2Config.property.externalId">ExternalId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/account_iam_group_v2#external_id AccountIamGroupV2#external_id}. |
-| <code><a href="#@cdktn/provider-databricks.accountIamGroupV2.AccountIamGroupV2Config.property.groupName">GroupName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/account_iam_group_v2#group_name AccountIamGroupV2#group_name}. |
+| <code><a href="#@cdktn/provider-databricks.accountIamGroupV2.AccountIamGroupV2Config.property.externalId">ExternalId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/account_iam_group_v2#external_id AccountIamGroupV2#external_id}. |
+| <code><a href="#@cdktn/provider-databricks.accountIamGroupV2.AccountIamGroupV2Config.property.groupName">GroupName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/account_iam_group_v2#group_name AccountIamGroupV2#group_name}. |
 
 ---
 
@@ -878,7 +878,7 @@ ExternalId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/account_iam_group_v2#external_id AccountIamGroupV2#external_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/account_iam_group_v2#external_id AccountIamGroupV2#external_id}.
 
 ---
 
@@ -890,7 +890,7 @@ GroupName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/account_iam_group_v2#group_name AccountIamGroupV2#group_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/account_iam_group_v2#group_name AccountIamGroupV2#group_name}.
 
 ---
 

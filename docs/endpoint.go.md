@@ -4,12 +4,12 @@
 
 ### Endpoint <a name="Endpoint" id="@cdktn/provider-databricks.endpoint.Endpoint"></a>
 
-Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/endpoint databricks_endpoint}.
+Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/endpoint databricks_endpoint}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.endpoint.Endpoint.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/endpoint"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/endpoint"
 
 endpoint.NewEndpoint(scope Construct, id *string, config EndpointConfig) Endpoint
 ```
@@ -460,7 +460,7 @@ func ResetGcpPscEndpointInfo()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-databricks.endpoint.Endpoint.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/endpoint"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/endpoint"
 
 endpoint.Endpoint_IsConstruct(x interface{}) *bool
 ```
@@ -492,7 +492,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-databricks.endpoint.Endpoint.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/endpoint"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/endpoint"
 
 endpoint.Endpoint_IsTerraformElement(x interface{}) *bool
 ```
@@ -506,7 +506,7 @@ endpoint.Endpoint_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-databricks.endpoint.Endpoint.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/endpoint"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/endpoint"
 
 endpoint.Endpoint_IsTerraformResource(x interface{}) *bool
 ```
@@ -520,7 +520,7 @@ endpoint.Endpoint_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-databricks.endpoint.Endpoint.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/endpoint"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/endpoint"
 
 endpoint.Endpoint_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -549,7 +549,7 @@ The construct id used in the generated config for the Endpoint to import.
 
 The id of the existing Endpoint that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/endpoint#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/endpoint#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -947,7 +947,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.endpoint.EndpointAwsVpcEndpointInfo.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/endpoint"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/endpoint"
 
 &endpoint.EndpointAwsVpcEndpointInfo {
 	AwsVpcEndpointId: *string,
@@ -958,7 +958,7 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/endpoint
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.endpoint.EndpointAwsVpcEndpointInfo.property.awsVpcEndpointId">AwsVpcEndpointId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/endpoint#aws_vpc_endpoint_id Endpoint#aws_vpc_endpoint_id}. |
+| <code><a href="#@cdktn/provider-databricks.endpoint.EndpointAwsVpcEndpointInfo.property.awsVpcEndpointId">AwsVpcEndpointId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/endpoint#aws_vpc_endpoint_id Endpoint#aws_vpc_endpoint_id}. |
 
 ---
 
@@ -970,7 +970,7 @@ AwsVpcEndpointId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/endpoint#aws_vpc_endpoint_id Endpoint#aws_vpc_endpoint_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/endpoint#aws_vpc_endpoint_id Endpoint#aws_vpc_endpoint_id}.
 
 ---
 
@@ -979,7 +979,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.endpoint.EndpointAzurePrivateEndpointInfo.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/endpoint"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/endpoint"
 
 &endpoint.EndpointAzurePrivateEndpointInfo {
 	PrivateEndpointName: *string,
@@ -991,8 +991,8 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/endpoint
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.endpoint.EndpointAzurePrivateEndpointInfo.property.privateEndpointName">PrivateEndpointName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/endpoint#private_endpoint_name Endpoint#private_endpoint_name}. |
-| <code><a href="#@cdktn/provider-databricks.endpoint.EndpointAzurePrivateEndpointInfo.property.privateEndpointResourceGuid">PrivateEndpointResourceGuid</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/endpoint#private_endpoint_resource_guid Endpoint#private_endpoint_resource_guid}. |
+| <code><a href="#@cdktn/provider-databricks.endpoint.EndpointAzurePrivateEndpointInfo.property.privateEndpointName">PrivateEndpointName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/endpoint#private_endpoint_name Endpoint#private_endpoint_name}. |
+| <code><a href="#@cdktn/provider-databricks.endpoint.EndpointAzurePrivateEndpointInfo.property.privateEndpointResourceGuid">PrivateEndpointResourceGuid</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/endpoint#private_endpoint_resource_guid Endpoint#private_endpoint_resource_guid}. |
 
 ---
 
@@ -1004,7 +1004,7 @@ PrivateEndpointName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/endpoint#private_endpoint_name Endpoint#private_endpoint_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/endpoint#private_endpoint_name Endpoint#private_endpoint_name}.
 
 ---
 
@@ -1016,7 +1016,7 @@ PrivateEndpointResourceGuid *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/endpoint#private_endpoint_resource_guid Endpoint#private_endpoint_resource_guid}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/endpoint#private_endpoint_resource_guid Endpoint#private_endpoint_resource_guid}.
 
 ---
 
@@ -1025,7 +1025,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.endpoint.EndpointConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/endpoint"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/endpoint"
 
 &endpoint.EndpointConfig {
 	Connection: interface{},
@@ -1038,9 +1038,9 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/endpoint
 	DisplayName: *string,
 	Parent: *string,
 	Region: *string,
-	AwsVpcEndpointInfo: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18.endpoint.EndpointAwsVpcEndpointInfo,
-	AzurePrivateEndpointInfo: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18.endpoint.EndpointAzurePrivateEndpointInfo,
-	GcpPscEndpointInfo: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18.endpoint.EndpointGcpPscEndpointInfo,
+	AwsVpcEndpointInfo: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19.endpoint.EndpointAwsVpcEndpointInfo,
+	AzurePrivateEndpointInfo: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19.endpoint.EndpointAzurePrivateEndpointInfo,
+	GcpPscEndpointInfo: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19.endpoint.EndpointGcpPscEndpointInfo,
 }
 ```
 
@@ -1055,12 +1055,12 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/endpoint
 | <code><a href="#@cdktn/provider-databricks.endpoint.EndpointConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.endpoint.EndpointConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.endpoint.EndpointConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-databricks.endpoint.EndpointConfig.property.displayName">DisplayName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/endpoint#display_name Endpoint#display_name}. |
-| <code><a href="#@cdktn/provider-databricks.endpoint.EndpointConfig.property.parent">Parent</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/endpoint#parent Endpoint#parent}. |
-| <code><a href="#@cdktn/provider-databricks.endpoint.EndpointConfig.property.region">Region</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/endpoint#region Endpoint#region}. |
-| <code><a href="#@cdktn/provider-databricks.endpoint.EndpointConfig.property.awsVpcEndpointInfo">AwsVpcEndpointInfo</a></code> | <code><a href="#@cdktn/provider-databricks.endpoint.EndpointAwsVpcEndpointInfo">EndpointAwsVpcEndpointInfo</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/endpoint#aws_vpc_endpoint_info Endpoint#aws_vpc_endpoint_info}. |
-| <code><a href="#@cdktn/provider-databricks.endpoint.EndpointConfig.property.azurePrivateEndpointInfo">AzurePrivateEndpointInfo</a></code> | <code><a href="#@cdktn/provider-databricks.endpoint.EndpointAzurePrivateEndpointInfo">EndpointAzurePrivateEndpointInfo</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/endpoint#azure_private_endpoint_info Endpoint#azure_private_endpoint_info}. |
-| <code><a href="#@cdktn/provider-databricks.endpoint.EndpointConfig.property.gcpPscEndpointInfo">GcpPscEndpointInfo</a></code> | <code><a href="#@cdktn/provider-databricks.endpoint.EndpointGcpPscEndpointInfo">EndpointGcpPscEndpointInfo</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/endpoint#gcp_psc_endpoint_info Endpoint#gcp_psc_endpoint_info}. |
+| <code><a href="#@cdktn/provider-databricks.endpoint.EndpointConfig.property.displayName">DisplayName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/endpoint#display_name Endpoint#display_name}. |
+| <code><a href="#@cdktn/provider-databricks.endpoint.EndpointConfig.property.parent">Parent</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/endpoint#parent Endpoint#parent}. |
+| <code><a href="#@cdktn/provider-databricks.endpoint.EndpointConfig.property.region">Region</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/endpoint#region Endpoint#region}. |
+| <code><a href="#@cdktn/provider-databricks.endpoint.EndpointConfig.property.awsVpcEndpointInfo">AwsVpcEndpointInfo</a></code> | <code><a href="#@cdktn/provider-databricks.endpoint.EndpointAwsVpcEndpointInfo">EndpointAwsVpcEndpointInfo</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/endpoint#aws_vpc_endpoint_info Endpoint#aws_vpc_endpoint_info}. |
+| <code><a href="#@cdktn/provider-databricks.endpoint.EndpointConfig.property.azurePrivateEndpointInfo">AzurePrivateEndpointInfo</a></code> | <code><a href="#@cdktn/provider-databricks.endpoint.EndpointAzurePrivateEndpointInfo">EndpointAzurePrivateEndpointInfo</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/endpoint#azure_private_endpoint_info Endpoint#azure_private_endpoint_info}. |
+| <code><a href="#@cdktn/provider-databricks.endpoint.EndpointConfig.property.gcpPscEndpointInfo">GcpPscEndpointInfo</a></code> | <code><a href="#@cdktn/provider-databricks.endpoint.EndpointGcpPscEndpointInfo">EndpointGcpPscEndpointInfo</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/endpoint#gcp_psc_endpoint_info Endpoint#gcp_psc_endpoint_info}. |
 
 ---
 
@@ -1142,7 +1142,7 @@ DisplayName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/endpoint#display_name Endpoint#display_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/endpoint#display_name Endpoint#display_name}.
 
 ---
 
@@ -1154,7 +1154,7 @@ Parent *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/endpoint#parent Endpoint#parent}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/endpoint#parent Endpoint#parent}.
 
 ---
 
@@ -1166,7 +1166,7 @@ Region *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/endpoint#region Endpoint#region}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/endpoint#region Endpoint#region}.
 
 ---
 
@@ -1178,7 +1178,7 @@ AwsVpcEndpointInfo EndpointAwsVpcEndpointInfo
 
 - *Type:* <a href="#@cdktn/provider-databricks.endpoint.EndpointAwsVpcEndpointInfo">EndpointAwsVpcEndpointInfo</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/endpoint#aws_vpc_endpoint_info Endpoint#aws_vpc_endpoint_info}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/endpoint#aws_vpc_endpoint_info Endpoint#aws_vpc_endpoint_info}.
 
 ---
 
@@ -1190,7 +1190,7 @@ AzurePrivateEndpointInfo EndpointAzurePrivateEndpointInfo
 
 - *Type:* <a href="#@cdktn/provider-databricks.endpoint.EndpointAzurePrivateEndpointInfo">EndpointAzurePrivateEndpointInfo</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/endpoint#azure_private_endpoint_info Endpoint#azure_private_endpoint_info}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/endpoint#azure_private_endpoint_info Endpoint#azure_private_endpoint_info}.
 
 ---
 
@@ -1202,7 +1202,7 @@ GcpPscEndpointInfo EndpointGcpPscEndpointInfo
 
 - *Type:* <a href="#@cdktn/provider-databricks.endpoint.EndpointGcpPscEndpointInfo">EndpointGcpPscEndpointInfo</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/endpoint#gcp_psc_endpoint_info Endpoint#gcp_psc_endpoint_info}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/endpoint#gcp_psc_endpoint_info Endpoint#gcp_psc_endpoint_info}.
 
 ---
 
@@ -1211,7 +1211,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.endpoint.EndpointGcpPscEndpointInfo.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/endpoint"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/endpoint"
 
 &endpoint.EndpointGcpPscEndpointInfo {
 	EndpointRegion: *string,
@@ -1224,9 +1224,9 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/endpoint
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.endpoint.EndpointGcpPscEndpointInfo.property.endpointRegion">EndpointRegion</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/endpoint#endpoint_region Endpoint#endpoint_region}. |
-| <code><a href="#@cdktn/provider-databricks.endpoint.EndpointGcpPscEndpointInfo.property.projectId">ProjectId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/endpoint#project_id Endpoint#project_id}. |
-| <code><a href="#@cdktn/provider-databricks.endpoint.EndpointGcpPscEndpointInfo.property.pscEndpoint">PscEndpoint</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/endpoint#psc_endpoint Endpoint#psc_endpoint}. |
+| <code><a href="#@cdktn/provider-databricks.endpoint.EndpointGcpPscEndpointInfo.property.endpointRegion">EndpointRegion</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/endpoint#endpoint_region Endpoint#endpoint_region}. |
+| <code><a href="#@cdktn/provider-databricks.endpoint.EndpointGcpPscEndpointInfo.property.projectId">ProjectId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/endpoint#project_id Endpoint#project_id}. |
+| <code><a href="#@cdktn/provider-databricks.endpoint.EndpointGcpPscEndpointInfo.property.pscEndpoint">PscEndpoint</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/endpoint#psc_endpoint Endpoint#psc_endpoint}. |
 
 ---
 
@@ -1238,7 +1238,7 @@ EndpointRegion *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/endpoint#endpoint_region Endpoint#endpoint_region}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/endpoint#endpoint_region Endpoint#endpoint_region}.
 
 ---
 
@@ -1250,7 +1250,7 @@ ProjectId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/endpoint#project_id Endpoint#project_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/endpoint#project_id Endpoint#project_id}.
 
 ---
 
@@ -1262,7 +1262,7 @@ PscEndpoint *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/endpoint#psc_endpoint Endpoint#psc_endpoint}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/endpoint#psc_endpoint Endpoint#psc_endpoint}.
 
 ---
 
@@ -1273,7 +1273,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.endpoint.EndpointAwsVpcEndpointInfoOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/endpoint"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/endpoint"
 
 endpoint.NewEndpointAwsVpcEndpointInfoOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) EndpointAwsVpcEndpointInfoOutputReference
 ```
@@ -1566,7 +1566,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.endpoint.EndpointAzurePrivateEndpointInfoOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/endpoint"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/endpoint"
 
 endpoint.NewEndpointAzurePrivateEndpointInfoOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) EndpointAzurePrivateEndpointInfoOutputReference
 ```
@@ -1881,7 +1881,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.endpoint.EndpointGcpPscEndpointInfoOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/endpoint"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/endpoint"
 
 endpoint.NewEndpointGcpPscEndpointInfoOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) EndpointGcpPscEndpointInfoOutputReference
 ```

@@ -4,12 +4,12 @@
 
 ### GlobalInitScript <a name="GlobalInitScript" id="@cdktn/provider-databricks.globalInitScript.GlobalInitScript"></a>
 
-Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/global_init_script databricks_global_init_script}.
+Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/global_init_script databricks_global_init_script}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.globalInitScript.GlobalInitScript.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/globalinitscript"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/globalinitscript"
 
 globalinitscript.NewGlobalInitScript(scope Construct, id *string, config GlobalInitScriptConfig) GlobalInitScript
 ```
@@ -475,7 +475,7 @@ func ResetSource()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-databricks.globalInitScript.GlobalInitScript.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/globalinitscript"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/globalinitscript"
 
 globalinitscript.GlobalInitScript_IsConstruct(x interface{}) *bool
 ```
@@ -507,7 +507,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-databricks.globalInitScript.GlobalInitScript.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/globalinitscript"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/globalinitscript"
 
 globalinitscript.GlobalInitScript_IsTerraformElement(x interface{}) *bool
 ```
@@ -521,7 +521,7 @@ globalinitscript.GlobalInitScript_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-databricks.globalInitScript.GlobalInitScript.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/globalinitscript"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/globalinitscript"
 
 globalinitscript.GlobalInitScript_IsTerraformResource(x interface{}) *bool
 ```
@@ -535,7 +535,7 @@ globalinitscript.GlobalInitScript_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-databricks.globalInitScript.GlobalInitScript.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/globalinitscript"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/globalinitscript"
 
 globalinitscript.GlobalInitScript_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -564,7 +564,7 @@ The construct id used in the generated config for the GlobalInitScript to import
 
 The id of the existing GlobalInitScript that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/global_init_script#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/global_init_script#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -962,7 +962,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.globalInitScript.GlobalInitScriptConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/globalinitscript"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/globalinitscript"
 
 &globalinitscript.GlobalInitScriptConfig {
 	Connection: interface{},
@@ -978,9 +978,9 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/globalin
 	Id: *string,
 	Md5: *string,
 	Position: *f64,
-	ProviderConfig: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18.globalInitScript.GlobalInitScriptProviderConfig,
+	ProviderConfig: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19.globalInitScript.GlobalInitScriptProviderConfig,
 	Source: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18.globalInitScript.GlobalInitScriptTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19.globalInitScript.GlobalInitScriptTimeouts,
 }
 ```
 
@@ -995,14 +995,14 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/globalin
 | <code><a href="#@cdktn/provider-databricks.globalInitScript.GlobalInitScriptConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.globalInitScript.GlobalInitScriptConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.globalInitScript.GlobalInitScriptConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-databricks.globalInitScript.GlobalInitScriptConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/global_init_script#name GlobalInitScript#name}. |
-| <code><a href="#@cdktn/provider-databricks.globalInitScript.GlobalInitScriptConfig.property.contentBase64">ContentBase64</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/global_init_script#content_base64 GlobalInitScript#content_base64}. |
-| <code><a href="#@cdktn/provider-databricks.globalInitScript.GlobalInitScriptConfig.property.enabled">Enabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/global_init_script#enabled GlobalInitScript#enabled}. |
-| <code><a href="#@cdktn/provider-databricks.globalInitScript.GlobalInitScriptConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/global_init_script#id GlobalInitScript#id}. |
-| <code><a href="#@cdktn/provider-databricks.globalInitScript.GlobalInitScriptConfig.property.md5">Md5</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/global_init_script#md5 GlobalInitScript#md5}. |
-| <code><a href="#@cdktn/provider-databricks.globalInitScript.GlobalInitScriptConfig.property.position">Position</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/global_init_script#position GlobalInitScript#position}. |
+| <code><a href="#@cdktn/provider-databricks.globalInitScript.GlobalInitScriptConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/global_init_script#name GlobalInitScript#name}. |
+| <code><a href="#@cdktn/provider-databricks.globalInitScript.GlobalInitScriptConfig.property.contentBase64">ContentBase64</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/global_init_script#content_base64 GlobalInitScript#content_base64}. |
+| <code><a href="#@cdktn/provider-databricks.globalInitScript.GlobalInitScriptConfig.property.enabled">Enabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/global_init_script#enabled GlobalInitScript#enabled}. |
+| <code><a href="#@cdktn/provider-databricks.globalInitScript.GlobalInitScriptConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/global_init_script#id GlobalInitScript#id}. |
+| <code><a href="#@cdktn/provider-databricks.globalInitScript.GlobalInitScriptConfig.property.md5">Md5</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/global_init_script#md5 GlobalInitScript#md5}. |
+| <code><a href="#@cdktn/provider-databricks.globalInitScript.GlobalInitScriptConfig.property.position">Position</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/global_init_script#position GlobalInitScript#position}. |
 | <code><a href="#@cdktn/provider-databricks.globalInitScript.GlobalInitScriptConfig.property.providerConfig">ProviderConfig</a></code> | <code><a href="#@cdktn/provider-databricks.globalInitScript.GlobalInitScriptProviderConfig">GlobalInitScriptProviderConfig</a></code> | provider_config block. |
-| <code><a href="#@cdktn/provider-databricks.globalInitScript.GlobalInitScriptConfig.property.source">Source</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/global_init_script#source GlobalInitScript#source}. |
+| <code><a href="#@cdktn/provider-databricks.globalInitScript.GlobalInitScriptConfig.property.source">Source</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/global_init_script#source GlobalInitScript#source}. |
 | <code><a href="#@cdktn/provider-databricks.globalInitScript.GlobalInitScriptConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-databricks.globalInitScript.GlobalInitScriptTimeouts">GlobalInitScriptTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1085,7 +1085,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/global_init_script#name GlobalInitScript#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/global_init_script#name GlobalInitScript#name}.
 
 ---
 
@@ -1097,7 +1097,7 @@ ContentBase64 *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/global_init_script#content_base64 GlobalInitScript#content_base64}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/global_init_script#content_base64 GlobalInitScript#content_base64}.
 
 ---
 
@@ -1109,7 +1109,7 @@ Enabled interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/global_init_script#enabled GlobalInitScript#enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/global_init_script#enabled GlobalInitScript#enabled}.
 
 ---
 
@@ -1121,7 +1121,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/global_init_script#id GlobalInitScript#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/global_init_script#id GlobalInitScript#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1136,7 +1136,7 @@ Md5 *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/global_init_script#md5 GlobalInitScript#md5}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/global_init_script#md5 GlobalInitScript#md5}.
 
 ---
 
@@ -1148,7 +1148,7 @@ Position *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/global_init_script#position GlobalInitScript#position}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/global_init_script#position GlobalInitScript#position}.
 
 ---
 
@@ -1162,7 +1162,7 @@ ProviderConfig GlobalInitScriptProviderConfig
 
 provider_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/global_init_script#provider_config GlobalInitScript#provider_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/global_init_script#provider_config GlobalInitScript#provider_config}
 
 ---
 
@@ -1174,7 +1174,7 @@ Source *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/global_init_script#source GlobalInitScript#source}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/global_init_script#source GlobalInitScript#source}.
 
 ---
 
@@ -1188,7 +1188,7 @@ Timeouts GlobalInitScriptTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/global_init_script#timeouts GlobalInitScript#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/global_init_script#timeouts GlobalInitScript#timeouts}
 
 ---
 
@@ -1197,7 +1197,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.globalInitScript.GlobalInitScriptProviderConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/globalinitscript"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/globalinitscript"
 
 &globalinitscript.GlobalInitScriptProviderConfig {
 	WorkspaceId: *string,
@@ -1208,7 +1208,7 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/globalin
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.globalInitScript.GlobalInitScriptProviderConfig.property.workspaceId">WorkspaceId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/global_init_script#workspace_id GlobalInitScript#workspace_id}. |
+| <code><a href="#@cdktn/provider-databricks.globalInitScript.GlobalInitScriptProviderConfig.property.workspaceId">WorkspaceId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/global_init_script#workspace_id GlobalInitScript#workspace_id}. |
 
 ---
 
@@ -1220,7 +1220,7 @@ WorkspaceId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.138.0/docs/resources/global_init_script#workspace_id GlobalInitScript#workspace_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/global_init_script#workspace_id GlobalInitScript#workspace_id}.
 
 ---
 
@@ -1229,7 +1229,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.globalInitScript.GlobalInitScriptTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/globalinitscript"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/globalinitscript"
 
 &globalinitscript.GlobalInitScriptTimeouts {
 
@@ -1244,7 +1244,7 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/globalin
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.globalInitScript.GlobalInitScriptProviderConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/globalinitscript"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/globalinitscript"
 
 globalinitscript.NewGlobalInitScriptProviderConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GlobalInitScriptProviderConfigOutputReference
 ```
@@ -1522,7 +1522,7 @@ func InternalValue() GlobalInitScriptProviderConfig
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.globalInitScript.GlobalInitScriptTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18/globalinitscript"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/globalinitscript"
 
 globalinitscript.NewGlobalInitScriptTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GlobalInitScriptTimeoutsOutputReference
 ```
