@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/account_iam_service_principal_v2
+// https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/account_iam_service_principal_v2
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,25 +13,29 @@ import * as cdktn from 'cdktn';
 
 export interface AccountIamServicePrincipalV2Config extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/account_iam_service_principal_v2#account_sp_status AccountIamServicePrincipalV2#account_sp_status}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/account_iam_service_principal_v2#account_sp_status AccountIamServicePrincipalV2#account_sp_status}
   */
   readonly accountSpStatus: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/account_iam_service_principal_v2#application_id AccountIamServicePrincipalV2#application_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/account_iam_service_principal_v2#application_id AccountIamServicePrincipalV2#application_id}
   */
   readonly applicationId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/account_iam_service_principal_v2#display_name AccountIamServicePrincipalV2#display_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/account_iam_service_principal_v2#display_name AccountIamServicePrincipalV2#display_name}
   */
   readonly displayName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/account_iam_service_principal_v2#external_id AccountIamServicePrincipalV2#external_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/account_iam_service_principal_v2#external_id AccountIamServicePrincipalV2#external_id}
   */
   readonly externalId?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/account_iam_service_principal_v2#parent AccountIamServicePrincipalV2#parent}
+  */
+  readonly parent: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/account_iam_service_principal_v2 databricks_account_iam_service_principal_v2}
+* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/account_iam_service_principal_v2 databricks_account_iam_service_principal_v2}
 */
 export class AccountIamServicePrincipalV2 extends cdktn.TerraformResource {
 
@@ -47,7 +51,7 @@ export class AccountIamServicePrincipalV2 extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a AccountIamServicePrincipalV2 resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the AccountIamServicePrincipalV2 to import
-  * @param importFromId The id of the existing AccountIamServicePrincipalV2 that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/account_iam_service_principal_v2#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing AccountIamServicePrincipalV2 that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/account_iam_service_principal_v2#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the AccountIamServicePrincipalV2 to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -59,7 +63,7 @@ export class AccountIamServicePrincipalV2 extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/account_iam_service_principal_v2 databricks_account_iam_service_principal_v2} Resource
+  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/account_iam_service_principal_v2 databricks_account_iam_service_principal_v2} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -70,7 +74,7 @@ export class AccountIamServicePrincipalV2 extends cdktn.TerraformResource {
       terraformResourceType: 'databricks_account_iam_service_principal_v2',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '1.140.0',
+        providerVersion: '1.142.0',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,
@@ -85,6 +89,7 @@ export class AccountIamServicePrincipalV2 extends cdktn.TerraformResource {
     this._applicationId = config.applicationId;
     this._displayName = config.displayName;
     this._externalId = config.externalId;
+    this._parent = config.parent;
   }
 
   // ==========
@@ -154,6 +159,24 @@ export class AccountIamServicePrincipalV2 extends cdktn.TerraformResource {
     return this._externalId;
   }
 
+  // name - computed: true, optional: false, required: false
+  public get name() {
+    return this.getStringAttribute('name');
+  }
+
+  // parent - computed: false, optional: false, required: true
+  private _parent?: string; 
+  public get parent() {
+    return this.getStringAttribute('parent');
+  }
+  public set parent(value: string) {
+    this._parent = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get parentInput() {
+    return this._parent;
+  }
+
   // service_principal_id - computed: true, optional: false, required: false
   public get servicePrincipalId() {
     return this.getStringAttribute('service_principal_id');
@@ -169,6 +192,7 @@ export class AccountIamServicePrincipalV2 extends cdktn.TerraformResource {
       application_id: cdktn.stringToTerraform(this._applicationId),
       display_name: cdktn.stringToTerraform(this._displayName),
       external_id: cdktn.stringToTerraform(this._externalId),
+      parent: cdktn.stringToTerraform(this._parent),
     };
   }
 
@@ -194,6 +218,12 @@ export class AccountIamServicePrincipalV2 extends cdktn.TerraformResource {
       },
       external_id: {
         value: cdktn.stringToHclTerraform(this._externalId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      parent: {
+        value: cdktn.stringToHclTerraform(this._parent),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

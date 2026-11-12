@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/account_iam_workspace_assignment_v2
+// https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/account_iam_workspace_assignment_v2
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,21 +13,25 @@ import * as cdktn from 'cdktn';
 
 export interface AccountIamWorkspaceAssignmentV2Config extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/account_iam_workspace_assignment_v2#entitlements AccountIamWorkspaceAssignmentV2#entitlements}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/account_iam_workspace_assignment_v2#entitlements AccountIamWorkspaceAssignmentV2#entitlements}
   */
   readonly entitlements?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/account_iam_workspace_assignment_v2#principal_id AccountIamWorkspaceAssignmentV2#principal_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/account_iam_workspace_assignment_v2#parent AccountIamWorkspaceAssignmentV2#parent}
+  */
+  readonly parent: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/account_iam_workspace_assignment_v2#principal_id AccountIamWorkspaceAssignmentV2#principal_id}
   */
   readonly principalId: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/account_iam_workspace_assignment_v2#workspace_id AccountIamWorkspaceAssignmentV2#workspace_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/account_iam_workspace_assignment_v2#workspace_id AccountIamWorkspaceAssignmentV2#workspace_id}
   */
   readonly workspaceId?: number;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/account_iam_workspace_assignment_v2 databricks_account_iam_workspace_assignment_v2}
+* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/account_iam_workspace_assignment_v2 databricks_account_iam_workspace_assignment_v2}
 */
 export class AccountIamWorkspaceAssignmentV2 extends cdktn.TerraformResource {
 
@@ -43,7 +47,7 @@ export class AccountIamWorkspaceAssignmentV2 extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a AccountIamWorkspaceAssignmentV2 resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the AccountIamWorkspaceAssignmentV2 to import
-  * @param importFromId The id of the existing AccountIamWorkspaceAssignmentV2 that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/account_iam_workspace_assignment_v2#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing AccountIamWorkspaceAssignmentV2 that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/account_iam_workspace_assignment_v2#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the AccountIamWorkspaceAssignmentV2 to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -55,7 +59,7 @@ export class AccountIamWorkspaceAssignmentV2 extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/account_iam_workspace_assignment_v2 databricks_account_iam_workspace_assignment_v2} Resource
+  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/account_iam_workspace_assignment_v2 databricks_account_iam_workspace_assignment_v2} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -66,7 +70,7 @@ export class AccountIamWorkspaceAssignmentV2 extends cdktn.TerraformResource {
       terraformResourceType: 'databricks_account_iam_workspace_assignment_v2',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '1.140.0',
+        providerVersion: '1.142.0',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,
@@ -78,6 +82,7 @@ export class AccountIamWorkspaceAssignmentV2 extends cdktn.TerraformResource {
       forEach: config.forEach
     });
     this._entitlements = config.entitlements;
+    this._parent = config.parent;
     this._principalId = config.principalId;
     this._workspaceId = config.workspaceId;
   }
@@ -110,6 +115,24 @@ export class AccountIamWorkspaceAssignmentV2 extends cdktn.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get entitlementsInput() {
     return this._entitlements;
+  }
+
+  // name - computed: true, optional: false, required: false
+  public get name() {
+    return this.getStringAttribute('name');
+  }
+
+  // parent - computed: false, optional: false, required: true
+  private _parent?: string; 
+  public get parent() {
+    return this.getStringAttribute('parent');
+  }
+  public set parent(value: string) {
+    this._parent = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get parentInput() {
+    return this._parent;
   }
 
   // principal_id - computed: false, optional: false, required: true
@@ -153,6 +176,7 @@ export class AccountIamWorkspaceAssignmentV2 extends cdktn.TerraformResource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       entitlements: cdktn.listMapper(cdktn.stringToTerraform, false)(this._entitlements),
+      parent: cdktn.stringToTerraform(this._parent),
       principal_id: cdktn.numberToTerraform(this._principalId),
       workspace_id: cdktn.numberToTerraform(this._workspaceId),
     };
@@ -165,6 +189,12 @@ export class AccountIamWorkspaceAssignmentV2 extends cdktn.TerraformResource {
         isBlock: false,
         type: "set",
         storageClassType: "stringList",
+      },
+      parent: {
+        value: cdktn.stringToHclTerraform(this._parent),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
       },
       principal_id: {
         value: cdktn.numberToHclTerraform(this._principalId),

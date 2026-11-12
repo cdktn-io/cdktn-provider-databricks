@@ -72,6 +72,7 @@ Object.defineProperty(exports, 'externalLocation', { get: function () { return r
 Object.defineProperty(exports, 'externalMetadata', { get: function () { return require('./external-metadata'); } });
 Object.defineProperty(exports, 'featureEngineeringFeature', { get: function () { return require('./feature-engineering-feature'); } });
 Object.defineProperty(exports, 'file', { get: function () { return require('./file'); } });
+Object.defineProperty(exports, 'genieAgent', { get: function () { return require('./genie-agent'); } });
 Object.defineProperty(exports, 'gitCredential', { get: function () { return require('./git-credential'); } });
 Object.defineProperty(exports, 'globalInitScript', { get: function () { return require('./global-init-script'); } });
 Object.defineProperty(exports, 'grant', { get: function () { return require('./grant'); } });
@@ -87,6 +88,12 @@ Object.defineProperty(exports, 'job', { get: function () { return require('./job
 Object.defineProperty(exports, 'knowledgeAssistant', { get: function () { return require('./knowledge-assistant'); } });
 Object.defineProperty(exports, 'knowledgeAssistantKnowledgeSource', { get: function () { return require('./knowledge-assistant-knowledge-source'); } });
 Object.defineProperty(exports, 'lakehouseMonitor', { get: function () { return require('./lakehouse-monitor'); } });
+Object.defineProperty(exports, 'lakewatchAlertConfig', { get: function () { return require('./lakewatch-alert-config'); } });
+Object.defineProperty(exports, 'lakewatchCommonConfig', { get: function () { return require('./lakewatch-common-config'); } });
+Object.defineProperty(exports, 'lakewatchDatasource', { get: function () { return require('./lakewatch-datasource'); } });
+Object.defineProperty(exports, 'lakewatchDatasourceConfig', { get: function () { return require('./lakewatch-datasource-config'); } });
+Object.defineProperty(exports, 'lakewatchRule', { get: function () { return require('./lakewatch-rule'); } });
+Object.defineProperty(exports, 'lakewatchRuleConfig', { get: function () { return require('./lakewatch-rule-config'); } });
 Object.defineProperty(exports, 'library', { get: function () { return require('./library'); } });
 Object.defineProperty(exports, 'materializedFeaturesFeatureTag', { get: function () { return require('./materialized-features-feature-tag'); } });
 Object.defineProperty(exports, 'metastore', { get: function () { return require('./metastore'); } });
@@ -281,6 +288,8 @@ Object.defineProperty(exports, 'dataDatabricksExternalMetadatas', { get: functio
 Object.defineProperty(exports, 'dataDatabricksFeatureEngineeringFeature', { get: function () { return require('./data-databricks-feature-engineering-feature'); } });
 Object.defineProperty(exports, 'dataDatabricksFeatureEngineeringFeatures', { get: function () { return require('./data-databricks-feature-engineering-features'); } });
 Object.defineProperty(exports, 'dataDatabricksFunctions', { get: function () { return require('./data-databricks-functions'); } });
+Object.defineProperty(exports, 'dataDatabricksGenieAgent', { get: function () { return require('./data-databricks-genie-agent'); } });
+Object.defineProperty(exports, 'dataDatabricksGenieAgents', { get: function () { return require('./data-databricks-genie-agents'); } });
 Object.defineProperty(exports, 'dataDatabricksGroup', { get: function () { return require('./data-databricks-group'); } });
 Object.defineProperty(exports, 'dataDatabricksInstancePool', { get: function () { return require('./data-databricks-instance-pool'); } });
 Object.defineProperty(exports, 'dataDatabricksInstanceProfiles', { get: function () { return require('./data-databricks-instance-profiles'); } });
@@ -290,6 +299,14 @@ Object.defineProperty(exports, 'dataDatabricksKnowledgeAssistant', { get: functi
 Object.defineProperty(exports, 'dataDatabricksKnowledgeAssistantKnowledgeSource', { get: function () { return require('./data-databricks-knowledge-assistant-knowledge-source'); } });
 Object.defineProperty(exports, 'dataDatabricksKnowledgeAssistantKnowledgeSources', { get: function () { return require('./data-databricks-knowledge-assistant-knowledge-sources'); } });
 Object.defineProperty(exports, 'dataDatabricksKnowledgeAssistants', { get: function () { return require('./data-databricks-knowledge-assistants'); } });
+Object.defineProperty(exports, 'dataDatabricksLakewatchAlertConfig', { get: function () { return require('./data-databricks-lakewatch-alert-config'); } });
+Object.defineProperty(exports, 'dataDatabricksLakewatchCommonConfig', { get: function () { return require('./data-databricks-lakewatch-common-config'); } });
+Object.defineProperty(exports, 'dataDatabricksLakewatchDatasource', { get: function () { return require('./data-databricks-lakewatch-datasource'); } });
+Object.defineProperty(exports, 'dataDatabricksLakewatchDatasourceConfig', { get: function () { return require('./data-databricks-lakewatch-datasource-config'); } });
+Object.defineProperty(exports, 'dataDatabricksLakewatchDatasources', { get: function () { return require('./data-databricks-lakewatch-datasources'); } });
+Object.defineProperty(exports, 'dataDatabricksLakewatchRule', { get: function () { return require('./data-databricks-lakewatch-rule'); } });
+Object.defineProperty(exports, 'dataDatabricksLakewatchRuleConfig', { get: function () { return require('./data-databricks-lakewatch-rule-config'); } });
+Object.defineProperty(exports, 'dataDatabricksLakewatchRules', { get: function () { return require('./data-databricks-lakewatch-rules'); } });
 Object.defineProperty(exports, 'dataDatabricksMaterializedFeaturesFeatureTag', { get: function () { return require('./data-databricks-materialized-features-feature-tag'); } });
 Object.defineProperty(exports, 'dataDatabricksMaterializedFeaturesFeatureTags', { get: function () { return require('./data-databricks-materialized-features-feature-tags'); } });
 Object.defineProperty(exports, 'dataDatabricksMetastore', { get: function () { return require('./data-databricks-metastore'); } });

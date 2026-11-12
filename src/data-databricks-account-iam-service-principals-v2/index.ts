@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/account_iam_service_principals_v2
+// https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/data-sources/account_iam_service_principals_v2
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,19 +13,23 @@ import * as cdktn from 'cdktn';
 
 export interface DataDatabricksAccountIamServicePrincipalsV2Config extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/account_iam_service_principals_v2#filter DataDatabricksAccountIamServicePrincipalsV2#filter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/data-sources/account_iam_service_principals_v2#filter DataDatabricksAccountIamServicePrincipalsV2#filter}
   */
   readonly filter?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/account_iam_service_principals_v2#page_size DataDatabricksAccountIamServicePrincipalsV2#page_size}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/data-sources/account_iam_service_principals_v2#page_size DataDatabricksAccountIamServicePrincipalsV2#page_size}
   */
   readonly pageSize?: number;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/data-sources/account_iam_service_principals_v2#parent DataDatabricksAccountIamServicePrincipalsV2#parent}
+  */
+  readonly parent: string;
 }
 export interface DataDatabricksAccountIamServicePrincipalsV2ServicePrincipals {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/account_iam_service_principals_v2#service_principal_id DataDatabricksAccountIamServicePrincipalsV2#service_principal_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/data-sources/account_iam_service_principals_v2#name DataDatabricksAccountIamServicePrincipalsV2#name}
   */
-  readonly servicePrincipalId: string;
+  readonly name: string;
 }
 
 export function dataDatabricksAccountIamServicePrincipalsV2ServicePrincipalsToTerraform(struct?: DataDatabricksAccountIamServicePrincipalsV2ServicePrincipals): any {
@@ -34,7 +38,7 @@ export function dataDatabricksAccountIamServicePrincipalsV2ServicePrincipalsToTe
     throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
-    service_principal_id: cdktn.stringToTerraform(struct!.servicePrincipalId),
+    name: cdktn.stringToTerraform(struct!.name),
   }
 }
 
@@ -45,8 +49,8 @@ export function dataDatabricksAccountIamServicePrincipalsV2ServicePrincipalsToHc
     throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
-    service_principal_id: {
-      value: cdktn.stringToHclTerraform(struct!.servicePrincipalId),
+    name: {
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -73,9 +77,9 @@ export class DataDatabricksAccountIamServicePrincipalsV2ServicePrincipalsOutputR
   public get internalValue(): DataDatabricksAccountIamServicePrincipalsV2ServicePrincipals | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._servicePrincipalId !== undefined) {
+    if (this._name !== undefined) {
       hasAnyValues = true;
-      internalValueResult.servicePrincipalId = this._servicePrincipalId;
+      internalValueResult.name = this._name;
     }
     return hasAnyValues ? internalValueResult : undefined;
   }
@@ -83,11 +87,11 @@ export class DataDatabricksAccountIamServicePrincipalsV2ServicePrincipalsOutputR
   public set internalValue(value: DataDatabricksAccountIamServicePrincipalsV2ServicePrincipals | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
-      this._servicePrincipalId = undefined;
+      this._name = undefined;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
-      this._servicePrincipalId = value.servicePrincipalId;
+      this._name = value.name;
     }
   }
 
@@ -116,17 +120,27 @@ export class DataDatabricksAccountIamServicePrincipalsV2ServicePrincipalsOutputR
     return this.getStringAttribute('external_id');
   }
 
-  // service_principal_id - computed: true, optional: false, required: true
-  private _servicePrincipalId?: string; 
-  public get servicePrincipalId() {
-    return this.getStringAttribute('service_principal_id');
+  // name - computed: true, optional: false, required: true
+  private _name?: string; 
+  public get name() {
+    return this.getStringAttribute('name');
   }
-  public set servicePrincipalId(value: string) {
-    this._servicePrincipalId = value;
+  public set name(value: string) {
+    this._name = value;
   }
   // Temporarily expose input value. Use with caution.
-  public get servicePrincipalIdInput() {
-    return this._servicePrincipalId;
+  public get nameInput() {
+    return this._name;
+  }
+
+  // parent - computed: true, optional: false, required: false
+  public get parent() {
+    return this.getStringAttribute('parent');
+  }
+
+  // service_principal_id - computed: true, optional: false, required: false
+  public get servicePrincipalId() {
+    return this.getStringAttribute('service_principal_id');
   }
 }
 
@@ -151,7 +165,7 @@ export class DataDatabricksAccountIamServicePrincipalsV2ServicePrincipalsList ex
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/account_iam_service_principals_v2 databricks_account_iam_service_principals_v2}
+* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/data-sources/account_iam_service_principals_v2 databricks_account_iam_service_principals_v2}
 */
 export class DataDatabricksAccountIamServicePrincipalsV2 extends cdktn.TerraformDataSource {
 
@@ -167,7 +181,7 @@ export class DataDatabricksAccountIamServicePrincipalsV2 extends cdktn.Terraform
   * Generates CDKTN code for importing a DataDatabricksAccountIamServicePrincipalsV2 resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataDatabricksAccountIamServicePrincipalsV2 to import
-  * @param importFromId The id of the existing DataDatabricksAccountIamServicePrincipalsV2 that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/account_iam_service_principals_v2#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataDatabricksAccountIamServicePrincipalsV2 that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/data-sources/account_iam_service_principals_v2#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataDatabricksAccountIamServicePrincipalsV2 to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -179,18 +193,18 @@ export class DataDatabricksAccountIamServicePrincipalsV2 extends cdktn.Terraform
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/account_iam_service_principals_v2 databricks_account_iam_service_principals_v2} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/data-sources/account_iam_service_principals_v2 databricks_account_iam_service_principals_v2} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
-  * @param options DataDatabricksAccountIamServicePrincipalsV2Config = {}
+  * @param options DataDatabricksAccountIamServicePrincipalsV2Config
   */
-  public constructor(scope: Construct, id: string, config: DataDatabricksAccountIamServicePrincipalsV2Config = {}) {
+  public constructor(scope: Construct, id: string, config: DataDatabricksAccountIamServicePrincipalsV2Config) {
     super(scope, id, {
       terraformResourceType: 'databricks_account_iam_service_principals_v2',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '1.140.0',
+        providerVersion: '1.142.0',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,
@@ -203,6 +217,7 @@ export class DataDatabricksAccountIamServicePrincipalsV2 extends cdktn.Terraform
     });
     this._filter = config.filter;
     this._pageSize = config.pageSize;
+    this._parent = config.parent;
   }
 
   // ==========
@@ -241,6 +256,19 @@ export class DataDatabricksAccountIamServicePrincipalsV2 extends cdktn.Terraform
     return this._pageSize;
   }
 
+  // parent - computed: false, optional: false, required: true
+  private _parent?: string; 
+  public get parent() {
+    return this.getStringAttribute('parent');
+  }
+  public set parent(value: string) {
+    this._parent = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get parentInput() {
+    return this._parent;
+  }
+
   // service_principals - computed: true, optional: false, required: false
   private _servicePrincipals = new DataDatabricksAccountIamServicePrincipalsV2ServicePrincipalsList(this, "service_principals", false);
   public get servicePrincipals() {
@@ -255,6 +283,7 @@ export class DataDatabricksAccountIamServicePrincipalsV2 extends cdktn.Terraform
     return {
       filter: cdktn.stringToTerraform(this._filter),
       page_size: cdktn.numberToTerraform(this._pageSize),
+      parent: cdktn.stringToTerraform(this._parent),
     };
   }
 
@@ -271,6 +300,12 @@ export class DataDatabricksAccountIamServicePrincipalsV2 extends cdktn.Terraform
         isBlock: false,
         type: "simple",
         storageClassType: "number",
+      },
+      parent: {
+        value: cdktn.stringToHclTerraform(this._parent),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
       },
     };
 

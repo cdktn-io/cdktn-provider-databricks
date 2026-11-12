@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/account_iam_group_v2
+// https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/account_iam_group_v2
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,17 +13,21 @@ import * as cdktn from 'cdktn';
 
 export interface AccountIamGroupV2Config extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/account_iam_group_v2#external_id AccountIamGroupV2#external_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/account_iam_group_v2#external_id AccountIamGroupV2#external_id}
   */
   readonly externalId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/account_iam_group_v2#group_name AccountIamGroupV2#group_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/account_iam_group_v2#group_name AccountIamGroupV2#group_name}
   */
   readonly groupName?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/account_iam_group_v2#parent AccountIamGroupV2#parent}
+  */
+  readonly parent: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/account_iam_group_v2 databricks_account_iam_group_v2}
+* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/account_iam_group_v2 databricks_account_iam_group_v2}
 */
 export class AccountIamGroupV2 extends cdktn.TerraformResource {
 
@@ -39,7 +43,7 @@ export class AccountIamGroupV2 extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a AccountIamGroupV2 resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the AccountIamGroupV2 to import
-  * @param importFromId The id of the existing AccountIamGroupV2 that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/account_iam_group_v2#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing AccountIamGroupV2 that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/account_iam_group_v2#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the AccountIamGroupV2 to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -51,18 +55,18 @@ export class AccountIamGroupV2 extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/account_iam_group_v2 databricks_account_iam_group_v2} Resource
+  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/account_iam_group_v2 databricks_account_iam_group_v2} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
-  * @param options AccountIamGroupV2Config = {}
+  * @param options AccountIamGroupV2Config
   */
-  public constructor(scope: Construct, id: string, config: AccountIamGroupV2Config = {}) {
+  public constructor(scope: Construct, id: string, config: AccountIamGroupV2Config) {
     super(scope, id, {
       terraformResourceType: 'databricks_account_iam_group_v2',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '1.140.0',
+        providerVersion: '1.142.0',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,
@@ -75,6 +79,7 @@ export class AccountIamGroupV2 extends cdktn.TerraformResource {
     });
     this._externalId = config.externalId;
     this._groupName = config.groupName;
+    this._parent = config.parent;
   }
 
   // ==========
@@ -123,6 +128,24 @@ export class AccountIamGroupV2 extends cdktn.TerraformResource {
     return this._groupName;
   }
 
+  // name - computed: true, optional: false, required: false
+  public get name() {
+    return this.getStringAttribute('name');
+  }
+
+  // parent - computed: false, optional: false, required: true
+  private _parent?: string; 
+  public get parent() {
+    return this.getStringAttribute('parent');
+  }
+  public set parent(value: string) {
+    this._parent = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get parentInput() {
+    return this._parent;
+  }
+
   // =========
   // SYNTHESIS
   // =========
@@ -131,6 +154,7 @@ export class AccountIamGroupV2 extends cdktn.TerraformResource {
     return {
       external_id: cdktn.stringToTerraform(this._externalId),
       group_name: cdktn.stringToTerraform(this._groupName),
+      parent: cdktn.stringToTerraform(this._parent),
     };
   }
 
@@ -144,6 +168,12 @@ export class AccountIamGroupV2 extends cdktn.TerraformResource {
       },
       group_name: {
         value: cdktn.stringToHclTerraform(this._groupName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      parent: {
+        value: cdktn.stringToHclTerraform(this._parent),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/account_iam_direct_group_member_v2
+// https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/data-sources/account_iam_direct_group_member_v2
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,17 +13,13 @@ import * as cdktn from 'cdktn';
 
 export interface DataDatabricksAccountIamDirectGroupMemberV2Config extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/account_iam_direct_group_member_v2#group_id DataDatabricksAccountIamDirectGroupMemberV2#group_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/data-sources/account_iam_direct_group_member_v2#name DataDatabricksAccountIamDirectGroupMemberV2#name}
   */
-  readonly groupId: number;
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/account_iam_direct_group_member_v2#principal_id DataDatabricksAccountIamDirectGroupMemberV2#principal_id}
-  */
-  readonly principalId: number;
+  readonly name: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/account_iam_direct_group_member_v2 databricks_account_iam_direct_group_member_v2}
+* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/data-sources/account_iam_direct_group_member_v2 databricks_account_iam_direct_group_member_v2}
 */
 export class DataDatabricksAccountIamDirectGroupMemberV2 extends cdktn.TerraformDataSource {
 
@@ -39,7 +35,7 @@ export class DataDatabricksAccountIamDirectGroupMemberV2 extends cdktn.Terraform
   * Generates CDKTN code for importing a DataDatabricksAccountIamDirectGroupMemberV2 resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataDatabricksAccountIamDirectGroupMemberV2 to import
-  * @param importFromId The id of the existing DataDatabricksAccountIamDirectGroupMemberV2 that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/account_iam_direct_group_member_v2#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataDatabricksAccountIamDirectGroupMemberV2 that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/data-sources/account_iam_direct_group_member_v2#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataDatabricksAccountIamDirectGroupMemberV2 to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -51,7 +47,7 @@ export class DataDatabricksAccountIamDirectGroupMemberV2 extends cdktn.Terraform
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/account_iam_direct_group_member_v2 databricks_account_iam_direct_group_member_v2} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/data-sources/account_iam_direct_group_member_v2 databricks_account_iam_direct_group_member_v2} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -62,7 +58,7 @@ export class DataDatabricksAccountIamDirectGroupMemberV2 extends cdktn.Terraform
       terraformResourceType: 'databricks_account_iam_direct_group_member_v2',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '1.140.0',
+        providerVersion: '1.142.0',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,
@@ -73,8 +69,7 @@ export class DataDatabricksAccountIamDirectGroupMemberV2 extends cdktn.Terraform
       connection: config.connection,
       forEach: config.forEach
     });
-    this._groupId = config.groupId;
-    this._principalId = config.principalId;
+    this._name = config.name;
   }
 
   // ==========
@@ -91,17 +86,9 @@ export class DataDatabricksAccountIamDirectGroupMemberV2 extends cdktn.Terraform
     return this.getStringAttribute('external_id');
   }
 
-  // group_id - computed: false, optional: false, required: true
-  private _groupId?: number; 
+  // group_id - computed: true, optional: false, required: false
   public get groupId() {
     return this.getNumberAttribute('group_id');
-  }
-  public set groupId(value: number) {
-    this._groupId = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get groupIdInput() {
-    return this._groupId;
   }
 
   // membership_source - computed: true, optional: false, required: false
@@ -109,17 +96,27 @@ export class DataDatabricksAccountIamDirectGroupMemberV2 extends cdktn.Terraform
     return this.getStringAttribute('membership_source');
   }
 
-  // principal_id - computed: false, optional: false, required: true
-  private _principalId?: number; 
-  public get principalId() {
-    return this.getNumberAttribute('principal_id');
+  // name - computed: false, optional: false, required: true
+  private _name?: string; 
+  public get name() {
+    return this.getStringAttribute('name');
   }
-  public set principalId(value: number) {
-    this._principalId = value;
+  public set name(value: string) {
+    this._name = value;
   }
   // Temporarily expose input value. Use with caution.
-  public get principalIdInput() {
-    return this._principalId;
+  public get nameInput() {
+    return this._name;
+  }
+
+  // parent - computed: true, optional: false, required: false
+  public get parent() {
+    return this.getStringAttribute('parent');
+  }
+
+  // principal_id - computed: true, optional: false, required: false
+  public get principalId() {
+    return this.getNumberAttribute('principal_id');
   }
 
   // principal_type - computed: true, optional: false, required: false
@@ -133,24 +130,17 @@ export class DataDatabricksAccountIamDirectGroupMemberV2 extends cdktn.Terraform
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      group_id: cdktn.numberToTerraform(this._groupId),
-      principal_id: cdktn.numberToTerraform(this._principalId),
+      name: cdktn.stringToTerraform(this._name),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
-      group_id: {
-        value: cdktn.numberToHclTerraform(this._groupId),
+      name: {
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
-        storageClassType: "number",
-      },
-      principal_id: {
-        value: cdktn.numberToHclTerraform(this._principalId),
-        isBlock: false,
-        type: "simple",
-        storageClassType: "number",
+        storageClassType: "string",
       },
     };
 

@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/sandbox
+// https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/sandbox
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,25 +13,123 @@ import * as cdktn from 'cdktn';
 
 export interface SandboxConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/sandbox#display_name Sandbox#display_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/sandbox#display_name Sandbox#display_name}
   */
   readonly displayName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/sandbox#provider_config Sandbox#provider_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/sandbox#metadata Sandbox#metadata}
+  */
+  readonly metadata?: SandboxMetadata;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/sandbox#provider_config Sandbox#provider_config}
   */
   readonly providerConfig?: SandboxProviderConfig;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/sandbox#sandbox_id Sandbox#sandbox_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/sandbox#sandbox_id Sandbox#sandbox_id}
   */
   readonly sandboxId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/sandbox#spec Sandbox#spec}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/sandbox#spec Sandbox#spec}
   */
   readonly spec?: SandboxSpec;
 }
+export interface SandboxMetadata {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/sandbox#custom_tags Sandbox#custom_tags}
+  */
+  readonly customTags?: { [key: string]: string };
+}
+
+export function sandboxMetadataToTerraform(struct?: SandboxMetadata | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  return {
+    custom_tags: cdktn.hashMapper(cdktn.stringToTerraform)(struct!.customTags),
+  }
+}
+
+
+export function sandboxMetadataToHclTerraform(struct?: SandboxMetadata | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  const attrs = {
+    custom_tags: {
+      value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(struct!.customTags),
+      isBlock: false,
+      type: "map",
+      storageClassType: "stringMap",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class SandboxMetadataOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktn.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false);
+  }
+
+  public get internalValue(): SandboxMetadata | cdktn.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._customTags !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.customTags = this._customTags;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: SandboxMetadata | cdktn.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._customTags = undefined;
+    }
+    else if (cdktn.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._customTags = value.customTags;
+    }
+  }
+
+  // custom_tags - computed: false, optional: true, required: false
+  private _customTags?: { [key: string]: string }; 
+  public get customTags() {
+    return this.getStringMapAttribute('custom_tags');
+  }
+  public set customTags(value: { [key: string]: string }) {
+    this._customTags = value;
+  }
+  public resetCustomTags() {
+    this._customTags = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get customTagsInput() {
+    return this._customTags;
+  }
+}
 export interface SandboxProviderConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/sandbox#workspace_id Sandbox#workspace_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/sandbox#workspace_id Sandbox#workspace_id}
   */
   readonly workspaceId?: string;
 }
@@ -125,7 +223,7 @@ export class SandboxProviderConfigOutputReference extends cdktn.ComplexObject {
 }
 export interface SandboxSpecCompute {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/sandbox#inactivity_timeout Sandbox#inactivity_timeout}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/sandbox#inactivity_timeout Sandbox#inactivity_timeout}
   */
   readonly inactivityTimeout?: string;
 }
@@ -219,7 +317,7 @@ export class SandboxSpecComputeOutputReference extends cdktn.ComplexObject {
 }
 export interface SandboxSpecEnvironment {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/sandbox#image_uri Sandbox#image_uri}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/sandbox#image_uri Sandbox#image_uri}
   */
   readonly imageUri?: string;
 }
@@ -313,11 +411,11 @@ export class SandboxSpecEnvironmentOutputReference extends cdktn.ComplexObject {
 }
 export interface SandboxSpec {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/sandbox#compute Sandbox#compute}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/sandbox#compute Sandbox#compute}
   */
   readonly compute?: SandboxSpecCompute;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/sandbox#environment Sandbox#environment}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/sandbox#environment Sandbox#environment}
   */
   readonly environment?: SandboxSpecEnvironment;
 }
@@ -494,7 +592,7 @@ export class SandboxStatusOutputReference extends cdktn.ComplexObject {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/sandbox databricks_sandbox}
+* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/sandbox databricks_sandbox}
 */
 export class Sandbox extends cdktn.TerraformResource {
 
@@ -510,7 +608,7 @@ export class Sandbox extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a Sandbox resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the Sandbox to import
-  * @param importFromId The id of the existing Sandbox that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/sandbox#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing Sandbox that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/sandbox#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the Sandbox to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -522,7 +620,7 @@ export class Sandbox extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/sandbox databricks_sandbox} Resource
+  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/sandbox databricks_sandbox} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -533,7 +631,7 @@ export class Sandbox extends cdktn.TerraformResource {
       terraformResourceType: 'databricks_sandbox',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '1.140.0',
+        providerVersion: '1.142.0',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,
@@ -545,6 +643,7 @@ export class Sandbox extends cdktn.TerraformResource {
       forEach: config.forEach
     });
     this._displayName = config.displayName;
+    this._metadata.internalValue = config.metadata;
     this._providerConfig.internalValue = config.providerConfig;
     this._sandboxId = config.sandboxId;
     this._spec.internalValue = config.spec;
@@ -573,6 +672,22 @@ export class Sandbox extends cdktn.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get displayNameInput() {
     return this._displayName;
+  }
+
+  // metadata - computed: false, optional: true, required: false
+  private _metadata = new SandboxMetadataOutputReference(this, "metadata");
+  public get metadata() {
+    return this._metadata;
+  }
+  public putMetadata(value: SandboxMetadata) {
+    this._metadata.internalValue = value;
+  }
+  public resetMetadata() {
+    this._metadata.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get metadataInput() {
+    return this._metadata.internalValue;
   }
 
   // name - computed: true, optional: false, required: false
@@ -643,6 +758,7 @@ export class Sandbox extends cdktn.TerraformResource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       display_name: cdktn.stringToTerraform(this._displayName),
+      metadata: sandboxMetadataToTerraform(this._metadata.internalValue),
       provider_config: sandboxProviderConfigToTerraform(this._providerConfig.internalValue),
       sandbox_id: cdktn.stringToTerraform(this._sandboxId),
       spec: sandboxSpecToTerraform(this._spec.internalValue),
@@ -656,6 +772,12 @@ export class Sandbox extends cdktn.TerraformResource {
         isBlock: false,
         type: "simple",
         storageClassType: "string",
+      },
+      metadata: {
+        value: sandboxMetadataToHclTerraform(this._metadata.internalValue),
+        isBlock: true,
+        type: "struct",
+        storageClassType: "SandboxMetadata",
       },
       provider_config: {
         value: sandboxProviderConfigToHclTerraform(this._providerConfig.internalValue),
