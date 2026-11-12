@@ -4,7 +4,7 @@
 
 ### DataDatabricksWorkspaceIamDirectGroupMembersV2 <a name="DataDatabricksWorkspaceIamDirectGroupMembersV2" id="@cdktn/provider-databricks.dataDatabricksWorkspaceIamDirectGroupMembersV2.DataDatabricksWorkspaceIamDirectGroupMembersV2"></a>
 
-Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/workspace_iam_direct_group_members_v2 databricks_workspace_iam_direct_group_members_v2}.
+Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/data-sources/workspace_iam_direct_group_members_v2 databricks_workspace_iam_direct_group_members_v2}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksWorkspaceIamDirectGroupMembersV2.DataDatabricksWorkspaceIamDirectGroupMembersV2.Initializer"></a>
 
@@ -19,7 +19,7 @@ DataDatabricksWorkspaceIamDirectGroupMembersV2.Builder.create(Construct scope, j
 //  .lifecycle(TerraformResourceLifecycle)
 //  .provider(TerraformProvider)
 //  .provisioners(java.util.List<FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner>)
-    .groupId(java.lang.Number)
+    .parent(java.lang.String)
 //  .pageSize(java.lang.Number)
 //  .providerConfig(DataDatabricksWorkspaceIamDirectGroupMembersV2ProviderConfig)
     .build();
@@ -36,9 +36,9 @@ DataDatabricksWorkspaceIamDirectGroupMembersV2.Builder.create(Construct scope, j
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceIamDirectGroupMembersV2.DataDatabricksWorkspaceIamDirectGroupMembersV2.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>io.cdktn.cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceIamDirectGroupMembersV2.DataDatabricksWorkspaceIamDirectGroupMembersV2.Initializer.parameter.provider">provider</a></code> | <code>io.cdktn.cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceIamDirectGroupMembersV2.DataDatabricksWorkspaceIamDirectGroupMembersV2.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceIamDirectGroupMembersV2.DataDatabricksWorkspaceIamDirectGroupMembersV2.Initializer.parameter.groupId">groupId</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/workspace_iam_direct_group_members_v2#group_id DataDatabricksWorkspaceIamDirectGroupMembersV2#group_id}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceIamDirectGroupMembersV2.DataDatabricksWorkspaceIamDirectGroupMembersV2.Initializer.parameter.pageSize">pageSize</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/workspace_iam_direct_group_members_v2#page_size DataDatabricksWorkspaceIamDirectGroupMembersV2#page_size}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceIamDirectGroupMembersV2.DataDatabricksWorkspaceIamDirectGroupMembersV2.Initializer.parameter.providerConfig">providerConfig</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceIamDirectGroupMembersV2.DataDatabricksWorkspaceIamDirectGroupMembersV2ProviderConfig">DataDatabricksWorkspaceIamDirectGroupMembersV2ProviderConfig</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/workspace_iam_direct_group_members_v2#provider_config DataDatabricksWorkspaceIamDirectGroupMembersV2#provider_config}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceIamDirectGroupMembersV2.DataDatabricksWorkspaceIamDirectGroupMembersV2.Initializer.parameter.parent">parent</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/data-sources/workspace_iam_direct_group_members_v2#parent DataDatabricksWorkspaceIamDirectGroupMembersV2#parent}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceIamDirectGroupMembersV2.DataDatabricksWorkspaceIamDirectGroupMembersV2.Initializer.parameter.pageSize">pageSize</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/data-sources/workspace_iam_direct_group_members_v2#page_size DataDatabricksWorkspaceIamDirectGroupMembersV2#page_size}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceIamDirectGroupMembersV2.DataDatabricksWorkspaceIamDirectGroupMembersV2.Initializer.parameter.providerConfig">providerConfig</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceIamDirectGroupMembersV2.DataDatabricksWorkspaceIamDirectGroupMembersV2ProviderConfig">DataDatabricksWorkspaceIamDirectGroupMembersV2ProviderConfig</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/data-sources/workspace_iam_direct_group_members_v2#provider_config DataDatabricksWorkspaceIamDirectGroupMembersV2#provider_config}. |
 
 ---
 
@@ -102,11 +102,11 @@ Must be unique amongst siblings in the same scope
 
 ---
 
-##### `groupId`<sup>Required</sup> <a name="groupId" id="@cdktn/provider-databricks.dataDatabricksWorkspaceIamDirectGroupMembersV2.DataDatabricksWorkspaceIamDirectGroupMembersV2.Initializer.parameter.groupId"></a>
+##### `parent`<sup>Required</sup> <a name="parent" id="@cdktn/provider-databricks.dataDatabricksWorkspaceIamDirectGroupMembersV2.DataDatabricksWorkspaceIamDirectGroupMembersV2.Initializer.parameter.parent"></a>
 
-- *Type:* java.lang.Number
+- *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/workspace_iam_direct_group_members_v2#group_id DataDatabricksWorkspaceIamDirectGroupMembersV2#group_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/data-sources/workspace_iam_direct_group_members_v2#parent DataDatabricksWorkspaceIamDirectGroupMembersV2#parent}.
 
 ---
 
@@ -114,7 +114,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/workspace_iam_direct_group_members_v2#page_size DataDatabricksWorkspaceIamDirectGroupMembersV2#page_size}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/data-sources/workspace_iam_direct_group_members_v2#page_size DataDatabricksWorkspaceIamDirectGroupMembersV2#page_size}.
 
 ---
 
@@ -122,7 +122,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* <a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceIamDirectGroupMembersV2.DataDatabricksWorkspaceIamDirectGroupMembersV2ProviderConfig">DataDatabricksWorkspaceIamDirectGroupMembersV2ProviderConfig</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/workspace_iam_direct_group_members_v2#provider_config DataDatabricksWorkspaceIamDirectGroupMembersV2#provider_config}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/data-sources/workspace_iam_direct_group_members_v2#provider_config DataDatabricksWorkspaceIamDirectGroupMembersV2#provider_config}.
 
 ---
 
@@ -494,7 +494,7 @@ The construct id used in the generated config for the DataDatabricksWorkspaceIam
 
 The id of the existing DataDatabricksWorkspaceIamDirectGroupMembersV2 that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/workspace_iam_direct_group_members_v2#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/data-sources/workspace_iam_direct_group_members_v2#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -524,11 +524,11 @@ Refer to the {@link https://registry.terraform.io/providers/databricks/databrick
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceIamDirectGroupMembersV2.DataDatabricksWorkspaceIamDirectGroupMembersV2.property.provider">provider</a></code> | <code>io.cdktn.cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceIamDirectGroupMembersV2.DataDatabricksWorkspaceIamDirectGroupMembersV2.property.directGroupMembers">directGroupMembers</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceIamDirectGroupMembersV2.DataDatabricksWorkspaceIamDirectGroupMembersV2DirectGroupMembersList">DataDatabricksWorkspaceIamDirectGroupMembersV2DirectGroupMembersList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceIamDirectGroupMembersV2.DataDatabricksWorkspaceIamDirectGroupMembersV2.property.providerConfig">providerConfig</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceIamDirectGroupMembersV2.DataDatabricksWorkspaceIamDirectGroupMembersV2ProviderConfigOutputReference">DataDatabricksWorkspaceIamDirectGroupMembersV2ProviderConfigOutputReference</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceIamDirectGroupMembersV2.DataDatabricksWorkspaceIamDirectGroupMembersV2.property.groupIdInput">groupIdInput</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceIamDirectGroupMembersV2.DataDatabricksWorkspaceIamDirectGroupMembersV2.property.pageSizeInput">pageSizeInput</a></code> | <code>java.lang.Number</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceIamDirectGroupMembersV2.DataDatabricksWorkspaceIamDirectGroupMembersV2.property.parentInput">parentInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceIamDirectGroupMembersV2.DataDatabricksWorkspaceIamDirectGroupMembersV2.property.providerConfigInput">providerConfigInput</a></code> | <code>io.cdktn.cdktn.IResolvable\|<a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceIamDirectGroupMembersV2.DataDatabricksWorkspaceIamDirectGroupMembersV2ProviderConfig">DataDatabricksWorkspaceIamDirectGroupMembersV2ProviderConfig</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceIamDirectGroupMembersV2.DataDatabricksWorkspaceIamDirectGroupMembersV2.property.groupId">groupId</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceIamDirectGroupMembersV2.DataDatabricksWorkspaceIamDirectGroupMembersV2.property.pageSize">pageSize</a></code> | <code>java.lang.Number</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceIamDirectGroupMembersV2.DataDatabricksWorkspaceIamDirectGroupMembersV2.property.parent">parent</a></code> | <code>java.lang.String</code> | *No description.* |
 
 ---
 
@@ -674,16 +674,6 @@ public DataDatabricksWorkspaceIamDirectGroupMembersV2ProviderConfigOutputReferen
 
 ---
 
-##### `groupIdInput`<sup>Optional</sup> <a name="groupIdInput" id="@cdktn/provider-databricks.dataDatabricksWorkspaceIamDirectGroupMembersV2.DataDatabricksWorkspaceIamDirectGroupMembersV2.property.groupIdInput"></a>
-
-```java
-public java.lang.Number getGroupIdInput();
-```
-
-- *Type:* java.lang.Number
-
----
-
 ##### `pageSizeInput`<sup>Optional</sup> <a name="pageSizeInput" id="@cdktn/provider-databricks.dataDatabricksWorkspaceIamDirectGroupMembersV2.DataDatabricksWorkspaceIamDirectGroupMembersV2.property.pageSizeInput"></a>
 
 ```java
@@ -691,6 +681,16 @@ public java.lang.Number getPageSizeInput();
 ```
 
 - *Type:* java.lang.Number
+
+---
+
+##### `parentInput`<sup>Optional</sup> <a name="parentInput" id="@cdktn/provider-databricks.dataDatabricksWorkspaceIamDirectGroupMembersV2.DataDatabricksWorkspaceIamDirectGroupMembersV2.property.parentInput"></a>
+
+```java
+public java.lang.String getParentInput();
+```
+
+- *Type:* java.lang.String
 
 ---
 
@@ -704,16 +704,6 @@ public IResolvable|DataDatabricksWorkspaceIamDirectGroupMembersV2ProviderConfig 
 
 ---
 
-##### `groupId`<sup>Required</sup> <a name="groupId" id="@cdktn/provider-databricks.dataDatabricksWorkspaceIamDirectGroupMembersV2.DataDatabricksWorkspaceIamDirectGroupMembersV2.property.groupId"></a>
-
-```java
-public java.lang.Number getGroupId();
-```
-
-- *Type:* java.lang.Number
-
----
-
 ##### `pageSize`<sup>Required</sup> <a name="pageSize" id="@cdktn/provider-databricks.dataDatabricksWorkspaceIamDirectGroupMembersV2.DataDatabricksWorkspaceIamDirectGroupMembersV2.property.pageSize"></a>
 
 ```java
@@ -721,6 +711,16 @@ public java.lang.Number getPageSize();
 ```
 
 - *Type:* java.lang.Number
+
+---
+
+##### `parent`<sup>Required</sup> <a name="parent" id="@cdktn/provider-databricks.dataDatabricksWorkspaceIamDirectGroupMembersV2.DataDatabricksWorkspaceIamDirectGroupMembersV2.property.parent"></a>
+
+```java
+public java.lang.String getParent();
+```
+
+- *Type:* java.lang.String
 
 ---
 
@@ -759,7 +759,7 @@ DataDatabricksWorkspaceIamDirectGroupMembersV2Config.builder()
 //  .lifecycle(TerraformResourceLifecycle)
 //  .provider(TerraformProvider)
 //  .provisioners(java.util.List<FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner>)
-    .groupId(java.lang.Number)
+    .parent(java.lang.String)
 //  .pageSize(java.lang.Number)
 //  .providerConfig(DataDatabricksWorkspaceIamDirectGroupMembersV2ProviderConfig)
     .build();
@@ -776,9 +776,9 @@ DataDatabricksWorkspaceIamDirectGroupMembersV2Config.builder()
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceIamDirectGroupMembersV2.DataDatabricksWorkspaceIamDirectGroupMembersV2Config.property.lifecycle">lifecycle</a></code> | <code>io.cdktn.cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceIamDirectGroupMembersV2.DataDatabricksWorkspaceIamDirectGroupMembersV2Config.property.provider">provider</a></code> | <code>io.cdktn.cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceIamDirectGroupMembersV2.DataDatabricksWorkspaceIamDirectGroupMembersV2Config.property.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceIamDirectGroupMembersV2.DataDatabricksWorkspaceIamDirectGroupMembersV2Config.property.groupId">groupId</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/workspace_iam_direct_group_members_v2#group_id DataDatabricksWorkspaceIamDirectGroupMembersV2#group_id}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceIamDirectGroupMembersV2.DataDatabricksWorkspaceIamDirectGroupMembersV2Config.property.pageSize">pageSize</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/workspace_iam_direct_group_members_v2#page_size DataDatabricksWorkspaceIamDirectGroupMembersV2#page_size}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceIamDirectGroupMembersV2.DataDatabricksWorkspaceIamDirectGroupMembersV2Config.property.providerConfig">providerConfig</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceIamDirectGroupMembersV2.DataDatabricksWorkspaceIamDirectGroupMembersV2ProviderConfig">DataDatabricksWorkspaceIamDirectGroupMembersV2ProviderConfig</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/workspace_iam_direct_group_members_v2#provider_config DataDatabricksWorkspaceIamDirectGroupMembersV2#provider_config}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceIamDirectGroupMembersV2.DataDatabricksWorkspaceIamDirectGroupMembersV2Config.property.parent">parent</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/data-sources/workspace_iam_direct_group_members_v2#parent DataDatabricksWorkspaceIamDirectGroupMembersV2#parent}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceIamDirectGroupMembersV2.DataDatabricksWorkspaceIamDirectGroupMembersV2Config.property.pageSize">pageSize</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/data-sources/workspace_iam_direct_group_members_v2#page_size DataDatabricksWorkspaceIamDirectGroupMembersV2#page_size}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceIamDirectGroupMembersV2.DataDatabricksWorkspaceIamDirectGroupMembersV2Config.property.providerConfig">providerConfig</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceIamDirectGroupMembersV2.DataDatabricksWorkspaceIamDirectGroupMembersV2ProviderConfig">DataDatabricksWorkspaceIamDirectGroupMembersV2ProviderConfig</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/data-sources/workspace_iam_direct_group_members_v2#provider_config DataDatabricksWorkspaceIamDirectGroupMembersV2#provider_config}. |
 
 ---
 
@@ -852,15 +852,15 @@ public java.util.List<FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner
 
 ---
 
-##### `groupId`<sup>Required</sup> <a name="groupId" id="@cdktn/provider-databricks.dataDatabricksWorkspaceIamDirectGroupMembersV2.DataDatabricksWorkspaceIamDirectGroupMembersV2Config.property.groupId"></a>
+##### `parent`<sup>Required</sup> <a name="parent" id="@cdktn/provider-databricks.dataDatabricksWorkspaceIamDirectGroupMembersV2.DataDatabricksWorkspaceIamDirectGroupMembersV2Config.property.parent"></a>
 
 ```java
-public java.lang.Number getGroupId();
+public java.lang.String getParent();
 ```
 
-- *Type:* java.lang.Number
+- *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/workspace_iam_direct_group_members_v2#group_id DataDatabricksWorkspaceIamDirectGroupMembersV2#group_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/data-sources/workspace_iam_direct_group_members_v2#parent DataDatabricksWorkspaceIamDirectGroupMembersV2#parent}.
 
 ---
 
@@ -872,7 +872,7 @@ public java.lang.Number getPageSize();
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/workspace_iam_direct_group_members_v2#page_size DataDatabricksWorkspaceIamDirectGroupMembersV2#page_size}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/data-sources/workspace_iam_direct_group_members_v2#page_size DataDatabricksWorkspaceIamDirectGroupMembersV2#page_size}.
 
 ---
 
@@ -884,7 +884,7 @@ public DataDatabricksWorkspaceIamDirectGroupMembersV2ProviderConfig getProviderC
 
 - *Type:* <a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceIamDirectGroupMembersV2.DataDatabricksWorkspaceIamDirectGroupMembersV2ProviderConfig">DataDatabricksWorkspaceIamDirectGroupMembersV2ProviderConfig</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/workspace_iam_direct_group_members_v2#provider_config DataDatabricksWorkspaceIamDirectGroupMembersV2#provider_config}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/data-sources/workspace_iam_direct_group_members_v2#provider_config DataDatabricksWorkspaceIamDirectGroupMembersV2#provider_config}.
 
 ---
 
@@ -896,8 +896,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 import io.cdktn.providers.databricks.data_databricks_workspace_iam_direct_group_members_v2.DataDatabricksWorkspaceIamDirectGroupMembersV2DirectGroupMembers;
 
 DataDatabricksWorkspaceIamDirectGroupMembersV2DirectGroupMembers.builder()
-    .groupId(java.lang.Number)
-    .principalId(java.lang.Number)
+    .name(java.lang.String)
 //  .providerConfig(DataDatabricksWorkspaceIamDirectGroupMembersV2DirectGroupMembersProviderConfig)
     .build();
 ```
@@ -906,33 +905,20 @@ DataDatabricksWorkspaceIamDirectGroupMembersV2DirectGroupMembers.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceIamDirectGroupMembersV2.DataDatabricksWorkspaceIamDirectGroupMembersV2DirectGroupMembers.property.groupId">groupId</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/workspace_iam_direct_group_members_v2#group_id DataDatabricksWorkspaceIamDirectGroupMembersV2#group_id}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceIamDirectGroupMembersV2.DataDatabricksWorkspaceIamDirectGroupMembersV2DirectGroupMembers.property.principalId">principalId</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/workspace_iam_direct_group_members_v2#principal_id DataDatabricksWorkspaceIamDirectGroupMembersV2#principal_id}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceIamDirectGroupMembersV2.DataDatabricksWorkspaceIamDirectGroupMembersV2DirectGroupMembers.property.providerConfig">providerConfig</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceIamDirectGroupMembersV2.DataDatabricksWorkspaceIamDirectGroupMembersV2DirectGroupMembersProviderConfig">DataDatabricksWorkspaceIamDirectGroupMembersV2DirectGroupMembersProviderConfig</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/workspace_iam_direct_group_members_v2#provider_config DataDatabricksWorkspaceIamDirectGroupMembersV2#provider_config}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceIamDirectGroupMembersV2.DataDatabricksWorkspaceIamDirectGroupMembersV2DirectGroupMembers.property.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/data-sources/workspace_iam_direct_group_members_v2#name DataDatabricksWorkspaceIamDirectGroupMembersV2#name}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceIamDirectGroupMembersV2.DataDatabricksWorkspaceIamDirectGroupMembersV2DirectGroupMembers.property.providerConfig">providerConfig</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceIamDirectGroupMembersV2.DataDatabricksWorkspaceIamDirectGroupMembersV2DirectGroupMembersProviderConfig">DataDatabricksWorkspaceIamDirectGroupMembersV2DirectGroupMembersProviderConfig</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/data-sources/workspace_iam_direct_group_members_v2#provider_config DataDatabricksWorkspaceIamDirectGroupMembersV2#provider_config}. |
 
 ---
 
-##### `groupId`<sup>Required</sup> <a name="groupId" id="@cdktn/provider-databricks.dataDatabricksWorkspaceIamDirectGroupMembersV2.DataDatabricksWorkspaceIamDirectGroupMembersV2DirectGroupMembers.property.groupId"></a>
+##### `name`<sup>Required</sup> <a name="name" id="@cdktn/provider-databricks.dataDatabricksWorkspaceIamDirectGroupMembersV2.DataDatabricksWorkspaceIamDirectGroupMembersV2DirectGroupMembers.property.name"></a>
 
 ```java
-public java.lang.Number getGroupId();
+public java.lang.String getName();
 ```
 
-- *Type:* java.lang.Number
+- *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/workspace_iam_direct_group_members_v2#group_id DataDatabricksWorkspaceIamDirectGroupMembersV2#group_id}.
-
----
-
-##### `principalId`<sup>Required</sup> <a name="principalId" id="@cdktn/provider-databricks.dataDatabricksWorkspaceIamDirectGroupMembersV2.DataDatabricksWorkspaceIamDirectGroupMembersV2DirectGroupMembers.property.principalId"></a>
-
-```java
-public java.lang.Number getPrincipalId();
-```
-
-- *Type:* java.lang.Number
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/workspace_iam_direct_group_members_v2#principal_id DataDatabricksWorkspaceIamDirectGroupMembersV2#principal_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/data-sources/workspace_iam_direct_group_members_v2#name DataDatabricksWorkspaceIamDirectGroupMembersV2#name}.
 
 ---
 
@@ -944,7 +930,7 @@ public DataDatabricksWorkspaceIamDirectGroupMembersV2DirectGroupMembersProviderC
 
 - *Type:* <a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceIamDirectGroupMembersV2.DataDatabricksWorkspaceIamDirectGroupMembersV2DirectGroupMembersProviderConfig">DataDatabricksWorkspaceIamDirectGroupMembersV2DirectGroupMembersProviderConfig</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/workspace_iam_direct_group_members_v2#provider_config DataDatabricksWorkspaceIamDirectGroupMembersV2#provider_config}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/data-sources/workspace_iam_direct_group_members_v2#provider_config DataDatabricksWorkspaceIamDirectGroupMembersV2#provider_config}.
 
 ---
 
@@ -964,7 +950,7 @@ DataDatabricksWorkspaceIamDirectGroupMembersV2DirectGroupMembersProviderConfig.b
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceIamDirectGroupMembersV2.DataDatabricksWorkspaceIamDirectGroupMembersV2DirectGroupMembersProviderConfig.property.workspaceId">workspaceId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/workspace_iam_direct_group_members_v2#workspace_id DataDatabricksWorkspaceIamDirectGroupMembersV2#workspace_id}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceIamDirectGroupMembersV2.DataDatabricksWorkspaceIamDirectGroupMembersV2DirectGroupMembersProviderConfig.property.workspaceId">workspaceId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/data-sources/workspace_iam_direct_group_members_v2#workspace_id DataDatabricksWorkspaceIamDirectGroupMembersV2#workspace_id}. |
 
 ---
 
@@ -976,7 +962,7 @@ public java.lang.String getWorkspaceId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/workspace_iam_direct_group_members_v2#workspace_id DataDatabricksWorkspaceIamDirectGroupMembersV2#workspace_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/data-sources/workspace_iam_direct_group_members_v2#workspace_id DataDatabricksWorkspaceIamDirectGroupMembersV2#workspace_id}.
 
 ---
 
@@ -996,7 +982,7 @@ DataDatabricksWorkspaceIamDirectGroupMembersV2ProviderConfig.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceIamDirectGroupMembersV2.DataDatabricksWorkspaceIamDirectGroupMembersV2ProviderConfig.property.workspaceId">workspaceId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/workspace_iam_direct_group_members_v2#workspace_id DataDatabricksWorkspaceIamDirectGroupMembersV2#workspace_id}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceIamDirectGroupMembersV2.DataDatabricksWorkspaceIamDirectGroupMembersV2ProviderConfig.property.workspaceId">workspaceId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/data-sources/workspace_iam_direct_group_members_v2#workspace_id DataDatabricksWorkspaceIamDirectGroupMembersV2#workspace_id}. |
 
 ---
 
@@ -1008,7 +994,7 @@ public java.lang.String getWorkspaceId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/workspace_iam_direct_group_members_v2#workspace_id DataDatabricksWorkspaceIamDirectGroupMembersV2#workspace_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/data-sources/workspace_iam_direct_group_members_v2#workspace_id DataDatabricksWorkspaceIamDirectGroupMembersV2#workspace_id}.
 
 ---
 
@@ -1424,14 +1410,15 @@ public void resetProviderConfig()
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceIamDirectGroupMembersV2.DataDatabricksWorkspaceIamDirectGroupMembersV2DirectGroupMembersOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceIamDirectGroupMembersV2.DataDatabricksWorkspaceIamDirectGroupMembersV2DirectGroupMembersOutputReference.property.displayName">displayName</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceIamDirectGroupMembersV2.DataDatabricksWorkspaceIamDirectGroupMembersV2DirectGroupMembersOutputReference.property.externalId">externalId</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceIamDirectGroupMembersV2.DataDatabricksWorkspaceIamDirectGroupMembersV2DirectGroupMembersOutputReference.property.groupId">groupId</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceIamDirectGroupMembersV2.DataDatabricksWorkspaceIamDirectGroupMembersV2DirectGroupMembersOutputReference.property.membershipSource">membershipSource</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceIamDirectGroupMembersV2.DataDatabricksWorkspaceIamDirectGroupMembersV2DirectGroupMembersOutputReference.property.parent">parent</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceIamDirectGroupMembersV2.DataDatabricksWorkspaceIamDirectGroupMembersV2DirectGroupMembersOutputReference.property.principalId">principalId</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceIamDirectGroupMembersV2.DataDatabricksWorkspaceIamDirectGroupMembersV2DirectGroupMembersOutputReference.property.principalType">principalType</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceIamDirectGroupMembersV2.DataDatabricksWorkspaceIamDirectGroupMembersV2DirectGroupMembersOutputReference.property.providerConfig">providerConfig</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceIamDirectGroupMembersV2.DataDatabricksWorkspaceIamDirectGroupMembersV2DirectGroupMembersProviderConfigOutputReference">DataDatabricksWorkspaceIamDirectGroupMembersV2DirectGroupMembersProviderConfigOutputReference</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceIamDirectGroupMembersV2.DataDatabricksWorkspaceIamDirectGroupMembersV2DirectGroupMembersOutputReference.property.groupIdInput">groupIdInput</a></code> | <code>java.lang.Number</code> | *No description.* |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceIamDirectGroupMembersV2.DataDatabricksWorkspaceIamDirectGroupMembersV2DirectGroupMembersOutputReference.property.principalIdInput">principalIdInput</a></code> | <code>java.lang.Number</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceIamDirectGroupMembersV2.DataDatabricksWorkspaceIamDirectGroupMembersV2DirectGroupMembersOutputReference.property.nameInput">nameInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceIamDirectGroupMembersV2.DataDatabricksWorkspaceIamDirectGroupMembersV2DirectGroupMembersOutputReference.property.providerConfigInput">providerConfigInput</a></code> | <code>io.cdktn.cdktn.IResolvable\|<a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceIamDirectGroupMembersV2.DataDatabricksWorkspaceIamDirectGroupMembersV2DirectGroupMembersProviderConfig">DataDatabricksWorkspaceIamDirectGroupMembersV2DirectGroupMembersProviderConfig</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceIamDirectGroupMembersV2.DataDatabricksWorkspaceIamDirectGroupMembersV2DirectGroupMembersOutputReference.property.groupId">groupId</a></code> | <code>java.lang.Number</code> | *No description.* |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceIamDirectGroupMembersV2.DataDatabricksWorkspaceIamDirectGroupMembersV2DirectGroupMembersOutputReference.property.principalId">principalId</a></code> | <code>java.lang.Number</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceIamDirectGroupMembersV2.DataDatabricksWorkspaceIamDirectGroupMembersV2DirectGroupMembersOutputReference.property.name">name</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceIamDirectGroupMembersV2.DataDatabricksWorkspaceIamDirectGroupMembersV2DirectGroupMembersOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceIamDirectGroupMembersV2.DataDatabricksWorkspaceIamDirectGroupMembersV2DirectGroupMembers">DataDatabricksWorkspaceIamDirectGroupMembersV2DirectGroupMembers</a></code> | *No description.* |
 
 ---
@@ -1480,6 +1467,16 @@ public java.lang.String getExternalId();
 
 ---
 
+##### `groupId`<sup>Required</sup> <a name="groupId" id="@cdktn/provider-databricks.dataDatabricksWorkspaceIamDirectGroupMembersV2.DataDatabricksWorkspaceIamDirectGroupMembersV2DirectGroupMembersOutputReference.property.groupId"></a>
+
+```java
+public java.lang.Number getGroupId();
+```
+
+- *Type:* java.lang.Number
+
+---
+
 ##### `membershipSource`<sup>Required</sup> <a name="membershipSource" id="@cdktn/provider-databricks.dataDatabricksWorkspaceIamDirectGroupMembersV2.DataDatabricksWorkspaceIamDirectGroupMembersV2DirectGroupMembersOutputReference.property.membershipSource"></a>
 
 ```java
@@ -1487,6 +1484,26 @@ public java.lang.String getMembershipSource();
 ```
 
 - *Type:* java.lang.String
+
+---
+
+##### `parent`<sup>Required</sup> <a name="parent" id="@cdktn/provider-databricks.dataDatabricksWorkspaceIamDirectGroupMembersV2.DataDatabricksWorkspaceIamDirectGroupMembersV2DirectGroupMembersOutputReference.property.parent"></a>
+
+```java
+public java.lang.String getParent();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `principalId`<sup>Required</sup> <a name="principalId" id="@cdktn/provider-databricks.dataDatabricksWorkspaceIamDirectGroupMembersV2.DataDatabricksWorkspaceIamDirectGroupMembersV2DirectGroupMembersOutputReference.property.principalId"></a>
+
+```java
+public java.lang.Number getPrincipalId();
+```
+
+- *Type:* java.lang.Number
 
 ---
 
@@ -1510,23 +1527,13 @@ public DataDatabricksWorkspaceIamDirectGroupMembersV2DirectGroupMembersProviderC
 
 ---
 
-##### `groupIdInput`<sup>Optional</sup> <a name="groupIdInput" id="@cdktn/provider-databricks.dataDatabricksWorkspaceIamDirectGroupMembersV2.DataDatabricksWorkspaceIamDirectGroupMembersV2DirectGroupMembersOutputReference.property.groupIdInput"></a>
+##### `nameInput`<sup>Optional</sup> <a name="nameInput" id="@cdktn/provider-databricks.dataDatabricksWorkspaceIamDirectGroupMembersV2.DataDatabricksWorkspaceIamDirectGroupMembersV2DirectGroupMembersOutputReference.property.nameInput"></a>
 
 ```java
-public java.lang.Number getGroupIdInput();
+public java.lang.String getNameInput();
 ```
 
-- *Type:* java.lang.Number
-
----
-
-##### `principalIdInput`<sup>Optional</sup> <a name="principalIdInput" id="@cdktn/provider-databricks.dataDatabricksWorkspaceIamDirectGroupMembersV2.DataDatabricksWorkspaceIamDirectGroupMembersV2DirectGroupMembersOutputReference.property.principalIdInput"></a>
-
-```java
-public java.lang.Number getPrincipalIdInput();
-```
-
-- *Type:* java.lang.Number
+- *Type:* java.lang.String
 
 ---
 
@@ -1540,23 +1547,13 @@ public IResolvable|DataDatabricksWorkspaceIamDirectGroupMembersV2DirectGroupMemb
 
 ---
 
-##### `groupId`<sup>Required</sup> <a name="groupId" id="@cdktn/provider-databricks.dataDatabricksWorkspaceIamDirectGroupMembersV2.DataDatabricksWorkspaceIamDirectGroupMembersV2DirectGroupMembersOutputReference.property.groupId"></a>
+##### `name`<sup>Required</sup> <a name="name" id="@cdktn/provider-databricks.dataDatabricksWorkspaceIamDirectGroupMembersV2.DataDatabricksWorkspaceIamDirectGroupMembersV2DirectGroupMembersOutputReference.property.name"></a>
 
 ```java
-public java.lang.Number getGroupId();
+public java.lang.String getName();
 ```
 
-- *Type:* java.lang.Number
-
----
-
-##### `principalId`<sup>Required</sup> <a name="principalId" id="@cdktn/provider-databricks.dataDatabricksWorkspaceIamDirectGroupMembersV2.DataDatabricksWorkspaceIamDirectGroupMembersV2DirectGroupMembersOutputReference.property.principalId"></a>
-
-```java
-public java.lang.Number getPrincipalId();
-```
-
-- *Type:* java.lang.Number
+- *Type:* java.lang.String
 
 ---
 

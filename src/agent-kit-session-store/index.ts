@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/agent_kit_session_store
+// https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/agent_kit_session_store
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,25 +13,25 @@ import * as cdktn from 'cdktn';
 
 export interface AgentKitSessionStoreConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/agent_kit_session_store#description AgentKitSessionStore#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/agent_kit_session_store#description AgentKitSessionStore#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/agent_kit_session_store#metadata AgentKitSessionStore#metadata}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/agent_kit_session_store#metadata AgentKitSessionStore#metadata}
   */
   readonly metadata?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/agent_kit_session_store#provider_config AgentKitSessionStore#provider_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/agent_kit_session_store#provider_config AgentKitSessionStore#provider_config}
   */
   readonly providerConfig?: AgentKitSessionStoreProviderConfig;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/agent_kit_session_store#session_store_id AgentKitSessionStore#session_store_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/agent_kit_session_store#session_store_id AgentKitSessionStore#session_store_id}
   */
   readonly sessionStoreId: string;
 }
 export interface AgentKitSessionStoreProviderConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/agent_kit_session_store#workspace_id AgentKitSessionStore#workspace_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/agent_kit_session_store#workspace_id AgentKitSessionStore#workspace_id}
   */
   readonly workspaceId?: string;
 }
@@ -125,7 +125,7 @@ export class AgentKitSessionStoreProviderConfigOutputReference extends cdktn.Com
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/agent_kit_session_store databricks_agent_kit_session_store}
+* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/agent_kit_session_store databricks_agent_kit_session_store}
 */
 export class AgentKitSessionStore extends cdktn.TerraformResource {
 
@@ -141,7 +141,7 @@ export class AgentKitSessionStore extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a AgentKitSessionStore resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the AgentKitSessionStore to import
-  * @param importFromId The id of the existing AgentKitSessionStore that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/agent_kit_session_store#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing AgentKitSessionStore that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/agent_kit_session_store#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the AgentKitSessionStore to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -153,7 +153,7 @@ export class AgentKitSessionStore extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/agent_kit_session_store databricks_agent_kit_session_store} Resource
+  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/agent_kit_session_store databricks_agent_kit_session_store} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -164,7 +164,7 @@ export class AgentKitSessionStore extends cdktn.TerraformResource {
       terraformResourceType: 'databricks_agent_kit_session_store',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '1.140.0',
+        providerVersion: '1.142.0',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,

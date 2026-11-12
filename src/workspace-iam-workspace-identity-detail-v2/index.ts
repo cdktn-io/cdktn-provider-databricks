@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/workspace_iam_workspace_identity_detail_v2
+// https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/workspace_iam_workspace_identity_detail_v2
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,17 +13,21 @@ import * as cdktn from 'cdktn';
 
 export interface WorkspaceIamWorkspaceIdentityDetailV2Config extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/workspace_iam_workspace_identity_detail_v2#provider_config WorkspaceIamWorkspaceIdentityDetailV2#provider_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/workspace_iam_workspace_identity_detail_v2#parent WorkspaceIamWorkspaceIdentityDetailV2#parent}
+  */
+  readonly parent: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/workspace_iam_workspace_identity_detail_v2#provider_config WorkspaceIamWorkspaceIdentityDetailV2#provider_config}
   */
   readonly providerConfig?: WorkspaceIamWorkspaceIdentityDetailV2ProviderConfig;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/workspace_iam_workspace_identity_detail_v2#workspace_identity_status WorkspaceIamWorkspaceIdentityDetailV2#workspace_identity_status}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/workspace_iam_workspace_identity_detail_v2#workspace_identity_status WorkspaceIamWorkspaceIdentityDetailV2#workspace_identity_status}
   */
   readonly workspaceIdentityStatus?: string;
 }
 export interface WorkspaceIamWorkspaceIdentityDetailV2ProviderConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/workspace_iam_workspace_identity_detail_v2#workspace_id WorkspaceIamWorkspaceIdentityDetailV2#workspace_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/workspace_iam_workspace_identity_detail_v2#workspace_id WorkspaceIamWorkspaceIdentityDetailV2#workspace_id}
   */
   readonly workspaceId?: string;
 }
@@ -117,7 +121,7 @@ export class WorkspaceIamWorkspaceIdentityDetailV2ProviderConfigOutputReference 
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/workspace_iam_workspace_identity_detail_v2 databricks_workspace_iam_workspace_identity_detail_v2}
+* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/workspace_iam_workspace_identity_detail_v2 databricks_workspace_iam_workspace_identity_detail_v2}
 */
 export class WorkspaceIamWorkspaceIdentityDetailV2 extends cdktn.TerraformResource {
 
@@ -133,7 +137,7 @@ export class WorkspaceIamWorkspaceIdentityDetailV2 extends cdktn.TerraformResour
   * Generates CDKTN code for importing a WorkspaceIamWorkspaceIdentityDetailV2 resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the WorkspaceIamWorkspaceIdentityDetailV2 to import
-  * @param importFromId The id of the existing WorkspaceIamWorkspaceIdentityDetailV2 that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/workspace_iam_workspace_identity_detail_v2#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing WorkspaceIamWorkspaceIdentityDetailV2 that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/workspace_iam_workspace_identity_detail_v2#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the WorkspaceIamWorkspaceIdentityDetailV2 to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -145,18 +149,18 @@ export class WorkspaceIamWorkspaceIdentityDetailV2 extends cdktn.TerraformResour
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/workspace_iam_workspace_identity_detail_v2 databricks_workspace_iam_workspace_identity_detail_v2} Resource
+  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/workspace_iam_workspace_identity_detail_v2 databricks_workspace_iam_workspace_identity_detail_v2} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
-  * @param options WorkspaceIamWorkspaceIdentityDetailV2Config = {}
+  * @param options WorkspaceIamWorkspaceIdentityDetailV2Config
   */
-  public constructor(scope: Construct, id: string, config: WorkspaceIamWorkspaceIdentityDetailV2Config = {}) {
+  public constructor(scope: Construct, id: string, config: WorkspaceIamWorkspaceIdentityDetailV2Config) {
     super(scope, id, {
       terraformResourceType: 'databricks_workspace_iam_workspace_identity_detail_v2',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '1.140.0',
+        providerVersion: '1.142.0',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,
@@ -167,6 +171,7 @@ export class WorkspaceIamWorkspaceIdentityDetailV2 extends cdktn.TerraformResour
       connection: config.connection,
       forEach: config.forEach
     });
+    this._parent = config.parent;
     this._providerConfig.internalValue = config.providerConfig;
     this._workspaceIdentityStatus = config.workspaceIdentityStatus;
   }
@@ -178,6 +183,24 @@ export class WorkspaceIamWorkspaceIdentityDetailV2 extends cdktn.TerraformResour
   // assignment_type - computed: true, optional: false, required: false
   public get assignmentType() {
     return this.getStringAttribute('assignment_type');
+  }
+
+  // name - computed: true, optional: false, required: false
+  public get name() {
+    return this.getStringAttribute('name');
+  }
+
+  // parent - computed: false, optional: false, required: true
+  private _parent?: string; 
+  public get parent() {
+    return this.getStringAttribute('parent');
+  }
+  public set parent(value: string) {
+    this._parent = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get parentInput() {
+    return this._parent;
   }
 
   // principal_id - computed: true, optional: false, required: false
@@ -228,6 +251,7 @@ export class WorkspaceIamWorkspaceIdentityDetailV2 extends cdktn.TerraformResour
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
+      parent: cdktn.stringToTerraform(this._parent),
       provider_config: workspaceIamWorkspaceIdentityDetailV2ProviderConfigToTerraform(this._providerConfig.internalValue),
       workspace_identity_status: cdktn.stringToTerraform(this._workspaceIdentityStatus),
     };
@@ -235,6 +259,12 @@ export class WorkspaceIamWorkspaceIdentityDetailV2 extends cdktn.TerraformResour
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
+      parent: {
+        value: cdktn.stringToHclTerraform(this._parent),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
       provider_config: {
         value: workspaceIamWorkspaceIdentityDetailV2ProviderConfigToHclTerraform(this._providerConfig.internalValue),
         isBlock: true,

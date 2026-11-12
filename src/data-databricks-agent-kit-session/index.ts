@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/agent_kit_session
+// https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/data-sources/agent_kit_session
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,17 +13,17 @@ import * as cdktn from 'cdktn';
 
 export interface DataDatabricksAgentKitSessionConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/agent_kit_session#name DataDatabricksAgentKitSession#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/data-sources/agent_kit_session#name DataDatabricksAgentKitSession#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/agent_kit_session#provider_config DataDatabricksAgentKitSession#provider_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/data-sources/agent_kit_session#provider_config DataDatabricksAgentKitSession#provider_config}
   */
   readonly providerConfig?: DataDatabricksAgentKitSessionProviderConfig;
 }
 export interface DataDatabricksAgentKitSessionProviderConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/agent_kit_session#workspace_id DataDatabricksAgentKitSession#workspace_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/data-sources/agent_kit_session#workspace_id DataDatabricksAgentKitSession#workspace_id}
   */
   readonly workspaceId?: string;
 }
@@ -117,7 +117,7 @@ export class DataDatabricksAgentKitSessionProviderConfigOutputReference extends 
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/agent_kit_session databricks_agent_kit_session}
+* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/data-sources/agent_kit_session databricks_agent_kit_session}
 */
 export class DataDatabricksAgentKitSession extends cdktn.TerraformDataSource {
 
@@ -133,7 +133,7 @@ export class DataDatabricksAgentKitSession extends cdktn.TerraformDataSource {
   * Generates CDKTN code for importing a DataDatabricksAgentKitSession resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataDatabricksAgentKitSession to import
-  * @param importFromId The id of the existing DataDatabricksAgentKitSession that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/agent_kit_session#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataDatabricksAgentKitSession that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/data-sources/agent_kit_session#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataDatabricksAgentKitSession to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -145,7 +145,7 @@ export class DataDatabricksAgentKitSession extends cdktn.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/agent_kit_session databricks_agent_kit_session} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/data-sources/agent_kit_session databricks_agent_kit_session} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -156,7 +156,7 @@ export class DataDatabricksAgentKitSession extends cdktn.TerraformDataSource {
       terraformResourceType: 'databricks_agent_kit_session',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '1.140.0',
+        providerVersion: '1.142.0',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,

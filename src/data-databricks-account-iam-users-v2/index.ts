@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/account_iam_users_v2
+// https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/data-sources/account_iam_users_v2
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,21 +13,25 @@ import * as cdktn from 'cdktn';
 
 export interface DataDatabricksAccountIamUsersV2Config extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/account_iam_users_v2#filter DataDatabricksAccountIamUsersV2#filter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/data-sources/account_iam_users_v2#filter DataDatabricksAccountIamUsersV2#filter}
   */
   readonly filter?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/account_iam_users_v2#page_size DataDatabricksAccountIamUsersV2#page_size}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/data-sources/account_iam_users_v2#page_size DataDatabricksAccountIamUsersV2#page_size}
   */
   readonly pageSize?: number;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/data-sources/account_iam_users_v2#parent DataDatabricksAccountIamUsersV2#parent}
+  */
+  readonly parent: string;
 }
 export interface DataDatabricksAccountIamUsersV2UsersFullName {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/account_iam_users_v2#family_name DataDatabricksAccountIamUsersV2#family_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/data-sources/account_iam_users_v2#family_name DataDatabricksAccountIamUsersV2#family_name}
   */
   readonly familyName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/account_iam_users_v2#given_name DataDatabricksAccountIamUsersV2#given_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/data-sources/account_iam_users_v2#given_name DataDatabricksAccountIamUsersV2#given_name}
   */
   readonly givenName?: string;
 }
@@ -140,9 +144,9 @@ export class DataDatabricksAccountIamUsersV2UsersFullNameOutputReference extends
 }
 export interface DataDatabricksAccountIamUsersV2Users {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/account_iam_users_v2#user_id DataDatabricksAccountIamUsersV2#user_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/data-sources/account_iam_users_v2#name DataDatabricksAccountIamUsersV2#name}
   */
-  readonly userId: string;
+  readonly name: string;
 }
 
 export function dataDatabricksAccountIamUsersV2UsersToTerraform(struct?: DataDatabricksAccountIamUsersV2Users): any {
@@ -151,7 +155,7 @@ export function dataDatabricksAccountIamUsersV2UsersToTerraform(struct?: DataDat
     throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
-    user_id: cdktn.stringToTerraform(struct!.userId),
+    name: cdktn.stringToTerraform(struct!.name),
   }
 }
 
@@ -162,8 +166,8 @@ export function dataDatabricksAccountIamUsersV2UsersToHclTerraform(struct?: Data
     throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
-    user_id: {
-      value: cdktn.stringToHclTerraform(struct!.userId),
+    name: {
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -190,9 +194,9 @@ export class DataDatabricksAccountIamUsersV2UsersOutputReference extends cdktn.C
   public get internalValue(): DataDatabricksAccountIamUsersV2Users | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._userId !== undefined) {
+    if (this._name !== undefined) {
       hasAnyValues = true;
-      internalValueResult.userId = this._userId;
+      internalValueResult.name = this._name;
     }
     return hasAnyValues ? internalValueResult : undefined;
   }
@@ -200,11 +204,11 @@ export class DataDatabricksAccountIamUsersV2UsersOutputReference extends cdktn.C
   public set internalValue(value: DataDatabricksAccountIamUsersV2Users | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
-      this._userId = undefined;
+      this._name = undefined;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
-      this._userId = value.userId;
+      this._name = value.name;
     }
   }
 
@@ -229,17 +233,27 @@ export class DataDatabricksAccountIamUsersV2UsersOutputReference extends cdktn.C
     return this._fullName;
   }
 
-  // user_id - computed: true, optional: false, required: true
-  private _userId?: string; 
-  public get userId() {
-    return this.getStringAttribute('user_id');
+  // name - computed: true, optional: false, required: true
+  private _name?: string; 
+  public get name() {
+    return this.getStringAttribute('name');
   }
-  public set userId(value: string) {
-    this._userId = value;
+  public set name(value: string) {
+    this._name = value;
   }
   // Temporarily expose input value. Use with caution.
-  public get userIdInput() {
-    return this._userId;
+  public get nameInput() {
+    return this._name;
+  }
+
+  // parent - computed: true, optional: false, required: false
+  public get parent() {
+    return this.getStringAttribute('parent');
+  }
+
+  // user_id - computed: true, optional: false, required: false
+  public get userId() {
+    return this.getStringAttribute('user_id');
   }
 
   // username - computed: true, optional: false, required: false
@@ -269,7 +283,7 @@ export class DataDatabricksAccountIamUsersV2UsersList extends cdktn.ComplexList 
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/account_iam_users_v2 databricks_account_iam_users_v2}
+* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/data-sources/account_iam_users_v2 databricks_account_iam_users_v2}
 */
 export class DataDatabricksAccountIamUsersV2 extends cdktn.TerraformDataSource {
 
@@ -285,7 +299,7 @@ export class DataDatabricksAccountIamUsersV2 extends cdktn.TerraformDataSource {
   * Generates CDKTN code for importing a DataDatabricksAccountIamUsersV2 resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataDatabricksAccountIamUsersV2 to import
-  * @param importFromId The id of the existing DataDatabricksAccountIamUsersV2 that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/account_iam_users_v2#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataDatabricksAccountIamUsersV2 that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/data-sources/account_iam_users_v2#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataDatabricksAccountIamUsersV2 to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -297,18 +311,18 @@ export class DataDatabricksAccountIamUsersV2 extends cdktn.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/account_iam_users_v2 databricks_account_iam_users_v2} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/data-sources/account_iam_users_v2 databricks_account_iam_users_v2} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
-  * @param options DataDatabricksAccountIamUsersV2Config = {}
+  * @param options DataDatabricksAccountIamUsersV2Config
   */
-  public constructor(scope: Construct, id: string, config: DataDatabricksAccountIamUsersV2Config = {}) {
+  public constructor(scope: Construct, id: string, config: DataDatabricksAccountIamUsersV2Config) {
     super(scope, id, {
       terraformResourceType: 'databricks_account_iam_users_v2',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '1.140.0',
+        providerVersion: '1.142.0',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,
@@ -321,6 +335,7 @@ export class DataDatabricksAccountIamUsersV2 extends cdktn.TerraformDataSource {
     });
     this._filter = config.filter;
     this._pageSize = config.pageSize;
+    this._parent = config.parent;
   }
 
   // ==========
@@ -359,6 +374,19 @@ export class DataDatabricksAccountIamUsersV2 extends cdktn.TerraformDataSource {
     return this._pageSize;
   }
 
+  // parent - computed: false, optional: false, required: true
+  private _parent?: string; 
+  public get parent() {
+    return this.getStringAttribute('parent');
+  }
+  public set parent(value: string) {
+    this._parent = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get parentInput() {
+    return this._parent;
+  }
+
   // users - computed: true, optional: false, required: false
   private _users = new DataDatabricksAccountIamUsersV2UsersList(this, "users", false);
   public get users() {
@@ -373,6 +401,7 @@ export class DataDatabricksAccountIamUsersV2 extends cdktn.TerraformDataSource {
     return {
       filter: cdktn.stringToTerraform(this._filter),
       page_size: cdktn.numberToTerraform(this._pageSize),
+      parent: cdktn.stringToTerraform(this._parent),
     };
   }
 
@@ -389,6 +418,12 @@ export class DataDatabricksAccountIamUsersV2 extends cdktn.TerraformDataSource {
         isBlock: false,
         type: "simple",
         storageClassType: "number",
+      },
+      parent: {
+        value: cdktn.stringToHclTerraform(this._parent),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
       },
     };
 

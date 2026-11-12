@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/workspace_iam_direct_group_members_v2
+// https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/data-sources/workspace_iam_direct_group_members_v2
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,21 +13,21 @@ import * as cdktn from 'cdktn';
 
 export interface DataDatabricksWorkspaceIamDirectGroupMembersV2Config extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/workspace_iam_direct_group_members_v2#group_id DataDatabricksWorkspaceIamDirectGroupMembersV2#group_id}
-  */
-  readonly groupId: number;
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/workspace_iam_direct_group_members_v2#page_size DataDatabricksWorkspaceIamDirectGroupMembersV2#page_size}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/data-sources/workspace_iam_direct_group_members_v2#page_size DataDatabricksWorkspaceIamDirectGroupMembersV2#page_size}
   */
   readonly pageSize?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/workspace_iam_direct_group_members_v2#provider_config DataDatabricksWorkspaceIamDirectGroupMembersV2#provider_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/data-sources/workspace_iam_direct_group_members_v2#parent DataDatabricksWorkspaceIamDirectGroupMembersV2#parent}
+  */
+  readonly parent: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/data-sources/workspace_iam_direct_group_members_v2#provider_config DataDatabricksWorkspaceIamDirectGroupMembersV2#provider_config}
   */
   readonly providerConfig?: DataDatabricksWorkspaceIamDirectGroupMembersV2ProviderConfig;
 }
 export interface DataDatabricksWorkspaceIamDirectGroupMembersV2DirectGroupMembersProviderConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/workspace_iam_direct_group_members_v2#workspace_id DataDatabricksWorkspaceIamDirectGroupMembersV2#workspace_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/data-sources/workspace_iam_direct_group_members_v2#workspace_id DataDatabricksWorkspaceIamDirectGroupMembersV2#workspace_id}
   */
   readonly workspaceId?: string;
 }
@@ -121,15 +121,11 @@ export class DataDatabricksWorkspaceIamDirectGroupMembersV2DirectGroupMembersPro
 }
 export interface DataDatabricksWorkspaceIamDirectGroupMembersV2DirectGroupMembers {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/workspace_iam_direct_group_members_v2#group_id DataDatabricksWorkspaceIamDirectGroupMembersV2#group_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/data-sources/workspace_iam_direct_group_members_v2#name DataDatabricksWorkspaceIamDirectGroupMembersV2#name}
   */
-  readonly groupId: number;
+  readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/workspace_iam_direct_group_members_v2#principal_id DataDatabricksWorkspaceIamDirectGroupMembersV2#principal_id}
-  */
-  readonly principalId: number;
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/workspace_iam_direct_group_members_v2#provider_config DataDatabricksWorkspaceIamDirectGroupMembersV2#provider_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/data-sources/workspace_iam_direct_group_members_v2#provider_config DataDatabricksWorkspaceIamDirectGroupMembersV2#provider_config}
   */
   readonly providerConfig?: DataDatabricksWorkspaceIamDirectGroupMembersV2DirectGroupMembersProviderConfig;
 }
@@ -140,8 +136,7 @@ export function dataDatabricksWorkspaceIamDirectGroupMembersV2DirectGroupMembers
     throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
-    group_id: cdktn.numberToTerraform(struct!.groupId),
-    principal_id: cdktn.numberToTerraform(struct!.principalId),
+    name: cdktn.stringToTerraform(struct!.name),
     provider_config: dataDatabricksWorkspaceIamDirectGroupMembersV2DirectGroupMembersProviderConfigToTerraform(struct!.providerConfig),
   }
 }
@@ -153,17 +148,11 @@ export function dataDatabricksWorkspaceIamDirectGroupMembersV2DirectGroupMembers
     throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
-    group_id: {
-      value: cdktn.numberToHclTerraform(struct!.groupId),
+    name: {
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
-      storageClassType: "number",
-    },
-    principal_id: {
-      value: cdktn.numberToHclTerraform(struct!.principalId),
-      isBlock: false,
-      type: "simple",
-      storageClassType: "number",
+      storageClassType: "string",
     },
     provider_config: {
       value: dataDatabricksWorkspaceIamDirectGroupMembersV2DirectGroupMembersProviderConfigToHclTerraform(struct!.providerConfig),
@@ -193,13 +182,9 @@ export class DataDatabricksWorkspaceIamDirectGroupMembersV2DirectGroupMembersOut
   public get internalValue(): DataDatabricksWorkspaceIamDirectGroupMembersV2DirectGroupMembers | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._groupId !== undefined) {
+    if (this._name !== undefined) {
       hasAnyValues = true;
-      internalValueResult.groupId = this._groupId;
-    }
-    if (this._principalId !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.principalId = this._principalId;
+      internalValueResult.name = this._name;
     }
     if (this._providerConfig?.internalValue !== undefined) {
       hasAnyValues = true;
@@ -211,14 +196,12 @@ export class DataDatabricksWorkspaceIamDirectGroupMembersV2DirectGroupMembersOut
   public set internalValue(value: DataDatabricksWorkspaceIamDirectGroupMembersV2DirectGroupMembers | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
-      this._groupId = undefined;
-      this._principalId = undefined;
+      this._name = undefined;
       this._providerConfig.internalValue = undefined;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
-      this._groupId = value.groupId;
-      this._principalId = value.principalId;
+      this._name = value.name;
       this._providerConfig.internalValue = value.providerConfig;
     }
   }
@@ -233,17 +216,9 @@ export class DataDatabricksWorkspaceIamDirectGroupMembersV2DirectGroupMembersOut
     return this.getStringAttribute('external_id');
   }
 
-  // group_id - computed: true, optional: false, required: true
-  private _groupId?: number; 
+  // group_id - computed: true, optional: false, required: false
   public get groupId() {
     return this.getNumberAttribute('group_id');
-  }
-  public set groupId(value: number) {
-    this._groupId = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get groupIdInput() {
-    return this._groupId;
   }
 
   // membership_source - computed: true, optional: false, required: false
@@ -251,17 +226,27 @@ export class DataDatabricksWorkspaceIamDirectGroupMembersV2DirectGroupMembersOut
     return this.getStringAttribute('membership_source');
   }
 
-  // principal_id - computed: true, optional: false, required: true
-  private _principalId?: number; 
-  public get principalId() {
-    return this.getNumberAttribute('principal_id');
+  // name - computed: true, optional: false, required: true
+  private _name?: string; 
+  public get name() {
+    return this.getStringAttribute('name');
   }
-  public set principalId(value: number) {
-    this._principalId = value;
+  public set name(value: string) {
+    this._name = value;
   }
   // Temporarily expose input value. Use with caution.
-  public get principalIdInput() {
-    return this._principalId;
+  public get nameInput() {
+    return this._name;
+  }
+
+  // parent - computed: true, optional: false, required: false
+  public get parent() {
+    return this.getStringAttribute('parent');
+  }
+
+  // principal_id - computed: true, optional: false, required: false
+  public get principalId() {
+    return this.getNumberAttribute('principal_id');
   }
 
   // principal_type - computed: true, optional: false, required: false
@@ -307,7 +292,7 @@ export class DataDatabricksWorkspaceIamDirectGroupMembersV2DirectGroupMembersLis
 }
 export interface DataDatabricksWorkspaceIamDirectGroupMembersV2ProviderConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/workspace_iam_direct_group_members_v2#workspace_id DataDatabricksWorkspaceIamDirectGroupMembersV2#workspace_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/data-sources/workspace_iam_direct_group_members_v2#workspace_id DataDatabricksWorkspaceIamDirectGroupMembersV2#workspace_id}
   */
   readonly workspaceId?: string;
 }
@@ -401,7 +386,7 @@ export class DataDatabricksWorkspaceIamDirectGroupMembersV2ProviderConfigOutputR
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/workspace_iam_direct_group_members_v2 databricks_workspace_iam_direct_group_members_v2}
+* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/data-sources/workspace_iam_direct_group_members_v2 databricks_workspace_iam_direct_group_members_v2}
 */
 export class DataDatabricksWorkspaceIamDirectGroupMembersV2 extends cdktn.TerraformDataSource {
 
@@ -417,7 +402,7 @@ export class DataDatabricksWorkspaceIamDirectGroupMembersV2 extends cdktn.Terraf
   * Generates CDKTN code for importing a DataDatabricksWorkspaceIamDirectGroupMembersV2 resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataDatabricksWorkspaceIamDirectGroupMembersV2 to import
-  * @param importFromId The id of the existing DataDatabricksWorkspaceIamDirectGroupMembersV2 that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/workspace_iam_direct_group_members_v2#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataDatabricksWorkspaceIamDirectGroupMembersV2 that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/data-sources/workspace_iam_direct_group_members_v2#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataDatabricksWorkspaceIamDirectGroupMembersV2 to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -429,7 +414,7 @@ export class DataDatabricksWorkspaceIamDirectGroupMembersV2 extends cdktn.Terraf
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/workspace_iam_direct_group_members_v2 databricks_workspace_iam_direct_group_members_v2} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/data-sources/workspace_iam_direct_group_members_v2 databricks_workspace_iam_direct_group_members_v2} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -440,7 +425,7 @@ export class DataDatabricksWorkspaceIamDirectGroupMembersV2 extends cdktn.Terraf
       terraformResourceType: 'databricks_workspace_iam_direct_group_members_v2',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '1.140.0',
+        providerVersion: '1.142.0',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,
@@ -451,8 +436,8 @@ export class DataDatabricksWorkspaceIamDirectGroupMembersV2 extends cdktn.Terraf
       connection: config.connection,
       forEach: config.forEach
     });
-    this._groupId = config.groupId;
     this._pageSize = config.pageSize;
+    this._parent = config.parent;
     this._providerConfig.internalValue = config.providerConfig;
   }
 
@@ -464,19 +449,6 @@ export class DataDatabricksWorkspaceIamDirectGroupMembersV2 extends cdktn.Terraf
   private _directGroupMembers = new DataDatabricksWorkspaceIamDirectGroupMembersV2DirectGroupMembersList(this, "direct_group_members", false);
   public get directGroupMembers() {
     return this._directGroupMembers;
-  }
-
-  // group_id - computed: false, optional: false, required: true
-  private _groupId?: number; 
-  public get groupId() {
-    return this.getNumberAttribute('group_id');
-  }
-  public set groupId(value: number) {
-    this._groupId = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get groupIdInput() {
-    return this._groupId;
   }
 
   // page_size - computed: false, optional: true, required: false
@@ -493,6 +465,19 @@ export class DataDatabricksWorkspaceIamDirectGroupMembersV2 extends cdktn.Terraf
   // Temporarily expose input value. Use with caution.
   public get pageSizeInput() {
     return this._pageSize;
+  }
+
+  // parent - computed: false, optional: false, required: true
+  private _parent?: string; 
+  public get parent() {
+    return this.getStringAttribute('parent');
+  }
+  public set parent(value: string) {
+    this._parent = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get parentInput() {
+    return this._parent;
   }
 
   // provider_config - computed: false, optional: true, required: false
@@ -517,25 +502,25 @@ export class DataDatabricksWorkspaceIamDirectGroupMembersV2 extends cdktn.Terraf
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      group_id: cdktn.numberToTerraform(this._groupId),
       page_size: cdktn.numberToTerraform(this._pageSize),
+      parent: cdktn.stringToTerraform(this._parent),
       provider_config: dataDatabricksWorkspaceIamDirectGroupMembersV2ProviderConfigToTerraform(this._providerConfig.internalValue),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
-      group_id: {
-        value: cdktn.numberToHclTerraform(this._groupId),
-        isBlock: false,
-        type: "simple",
-        storageClassType: "number",
-      },
       page_size: {
         value: cdktn.numberToHclTerraform(this._pageSize),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
+      },
+      parent: {
+        value: cdktn.stringToHclTerraform(this._parent),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
       },
       provider_config: {
         value: dataDatabricksWorkspaceIamDirectGroupMembersV2ProviderConfigToHclTerraform(this._providerConfig.internalValue),

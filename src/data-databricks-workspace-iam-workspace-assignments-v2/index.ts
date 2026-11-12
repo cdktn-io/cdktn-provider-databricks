@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/workspace_iam_workspace_assignments_v2
+// https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/data-sources/workspace_iam_workspace_assignments_v2
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,17 +13,21 @@ import * as cdktn from 'cdktn';
 
 export interface DataDatabricksWorkspaceIamWorkspaceAssignmentsV2Config extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/workspace_iam_workspace_assignments_v2#page_size DataDatabricksWorkspaceIamWorkspaceAssignmentsV2#page_size}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/data-sources/workspace_iam_workspace_assignments_v2#page_size DataDatabricksWorkspaceIamWorkspaceAssignmentsV2#page_size}
   */
   readonly pageSize?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/workspace_iam_workspace_assignments_v2#provider_config DataDatabricksWorkspaceIamWorkspaceAssignmentsV2#provider_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/data-sources/workspace_iam_workspace_assignments_v2#parent DataDatabricksWorkspaceIamWorkspaceAssignmentsV2#parent}
+  */
+  readonly parent?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/data-sources/workspace_iam_workspace_assignments_v2#provider_config DataDatabricksWorkspaceIamWorkspaceAssignmentsV2#provider_config}
   */
   readonly providerConfig?: DataDatabricksWorkspaceIamWorkspaceAssignmentsV2ProviderConfig;
 }
 export interface DataDatabricksWorkspaceIamWorkspaceAssignmentsV2ProviderConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/workspace_iam_workspace_assignments_v2#workspace_id DataDatabricksWorkspaceIamWorkspaceAssignmentsV2#workspace_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/data-sources/workspace_iam_workspace_assignments_v2#workspace_id DataDatabricksWorkspaceIamWorkspaceAssignmentsV2#workspace_id}
   */
   readonly workspaceId?: string;
 }
@@ -117,7 +121,7 @@ export class DataDatabricksWorkspaceIamWorkspaceAssignmentsV2ProviderConfigOutpu
 }
 export interface DataDatabricksWorkspaceIamWorkspaceAssignmentsV2WorkspaceAssignmentsProviderConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/workspace_iam_workspace_assignments_v2#workspace_id DataDatabricksWorkspaceIamWorkspaceAssignmentsV2#workspace_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/data-sources/workspace_iam_workspace_assignments_v2#workspace_id DataDatabricksWorkspaceIamWorkspaceAssignmentsV2#workspace_id}
   */
   readonly workspaceId?: string;
 }
@@ -211,11 +215,11 @@ export class DataDatabricksWorkspaceIamWorkspaceAssignmentsV2WorkspaceAssignment
 }
 export interface DataDatabricksWorkspaceIamWorkspaceAssignmentsV2WorkspaceAssignments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/workspace_iam_workspace_assignments_v2#principal_id DataDatabricksWorkspaceIamWorkspaceAssignmentsV2#principal_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/data-sources/workspace_iam_workspace_assignments_v2#name DataDatabricksWorkspaceIamWorkspaceAssignmentsV2#name}
   */
-  readonly principalId: number;
+  readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/workspace_iam_workspace_assignments_v2#provider_config DataDatabricksWorkspaceIamWorkspaceAssignmentsV2#provider_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/data-sources/workspace_iam_workspace_assignments_v2#provider_config DataDatabricksWorkspaceIamWorkspaceAssignmentsV2#provider_config}
   */
   readonly providerConfig?: DataDatabricksWorkspaceIamWorkspaceAssignmentsV2WorkspaceAssignmentsProviderConfig;
 }
@@ -226,7 +230,7 @@ export function dataDatabricksWorkspaceIamWorkspaceAssignmentsV2WorkspaceAssignm
     throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
-    principal_id: cdktn.numberToTerraform(struct!.principalId),
+    name: cdktn.stringToTerraform(struct!.name),
     provider_config: dataDatabricksWorkspaceIamWorkspaceAssignmentsV2WorkspaceAssignmentsProviderConfigToTerraform(struct!.providerConfig),
   }
 }
@@ -238,11 +242,11 @@ export function dataDatabricksWorkspaceIamWorkspaceAssignmentsV2WorkspaceAssignm
     throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
-    principal_id: {
-      value: cdktn.numberToHclTerraform(struct!.principalId),
+    name: {
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
-      storageClassType: "number",
+      storageClassType: "string",
     },
     provider_config: {
       value: dataDatabricksWorkspaceIamWorkspaceAssignmentsV2WorkspaceAssignmentsProviderConfigToHclTerraform(struct!.providerConfig),
@@ -272,9 +276,9 @@ export class DataDatabricksWorkspaceIamWorkspaceAssignmentsV2WorkspaceAssignment
   public get internalValue(): DataDatabricksWorkspaceIamWorkspaceAssignmentsV2WorkspaceAssignments | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._principalId !== undefined) {
+    if (this._name !== undefined) {
       hasAnyValues = true;
-      internalValueResult.principalId = this._principalId;
+      internalValueResult.name = this._name;
     }
     if (this._providerConfig?.internalValue !== undefined) {
       hasAnyValues = true;
@@ -286,12 +290,12 @@ export class DataDatabricksWorkspaceIamWorkspaceAssignmentsV2WorkspaceAssignment
   public set internalValue(value: DataDatabricksWorkspaceIamWorkspaceAssignmentsV2WorkspaceAssignments | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
-      this._principalId = undefined;
+      this._name = undefined;
       this._providerConfig.internalValue = undefined;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
-      this._principalId = value.principalId;
+      this._name = value.name;
       this._providerConfig.internalValue = value.providerConfig;
     }
   }
@@ -311,17 +315,27 @@ export class DataDatabricksWorkspaceIamWorkspaceAssignmentsV2WorkspaceAssignment
     return cdktn.Fn.tolist(this.getListAttribute('entitlements'));
   }
 
-  // principal_id - computed: true, optional: false, required: true
-  private _principalId?: number; 
-  public get principalId() {
-    return this.getNumberAttribute('principal_id');
+  // name - computed: true, optional: false, required: true
+  private _name?: string; 
+  public get name() {
+    return this.getStringAttribute('name');
   }
-  public set principalId(value: number) {
-    this._principalId = value;
+  public set name(value: string) {
+    this._name = value;
   }
   // Temporarily expose input value. Use with caution.
-  public get principalIdInput() {
-    return this._principalId;
+  public get nameInput() {
+    return this._name;
+  }
+
+  // parent - computed: true, optional: false, required: false
+  public get parent() {
+    return this.getStringAttribute('parent');
+  }
+
+  // principal_id - computed: true, optional: false, required: false
+  public get principalId() {
+    return this.getNumberAttribute('principal_id');
   }
 
   // principal_type - computed: true, optional: false, required: false
@@ -372,7 +386,7 @@ export class DataDatabricksWorkspaceIamWorkspaceAssignmentsV2WorkspaceAssignment
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/workspace_iam_workspace_assignments_v2 databricks_workspace_iam_workspace_assignments_v2}
+* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/data-sources/workspace_iam_workspace_assignments_v2 databricks_workspace_iam_workspace_assignments_v2}
 */
 export class DataDatabricksWorkspaceIamWorkspaceAssignmentsV2 extends cdktn.TerraformDataSource {
 
@@ -388,7 +402,7 @@ export class DataDatabricksWorkspaceIamWorkspaceAssignmentsV2 extends cdktn.Terr
   * Generates CDKTN code for importing a DataDatabricksWorkspaceIamWorkspaceAssignmentsV2 resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataDatabricksWorkspaceIamWorkspaceAssignmentsV2 to import
-  * @param importFromId The id of the existing DataDatabricksWorkspaceIamWorkspaceAssignmentsV2 that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/workspace_iam_workspace_assignments_v2#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataDatabricksWorkspaceIamWorkspaceAssignmentsV2 that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/data-sources/workspace_iam_workspace_assignments_v2#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataDatabricksWorkspaceIamWorkspaceAssignmentsV2 to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -400,7 +414,7 @@ export class DataDatabricksWorkspaceIamWorkspaceAssignmentsV2 extends cdktn.Terr
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/workspace_iam_workspace_assignments_v2 databricks_workspace_iam_workspace_assignments_v2} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/data-sources/workspace_iam_workspace_assignments_v2 databricks_workspace_iam_workspace_assignments_v2} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -411,7 +425,7 @@ export class DataDatabricksWorkspaceIamWorkspaceAssignmentsV2 extends cdktn.Terr
       terraformResourceType: 'databricks_workspace_iam_workspace_assignments_v2',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '1.140.0',
+        providerVersion: '1.142.0',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,
@@ -423,6 +437,7 @@ export class DataDatabricksWorkspaceIamWorkspaceAssignmentsV2 extends cdktn.Terr
       forEach: config.forEach
     });
     this._pageSize = config.pageSize;
+    this._parent = config.parent;
     this._providerConfig.internalValue = config.providerConfig;
   }
 
@@ -444,6 +459,22 @@ export class DataDatabricksWorkspaceIamWorkspaceAssignmentsV2 extends cdktn.Terr
   // Temporarily expose input value. Use with caution.
   public get pageSizeInput() {
     return this._pageSize;
+  }
+
+  // parent - computed: false, optional: true, required: false
+  private _parent?: string; 
+  public get parent() {
+    return this.getStringAttribute('parent');
+  }
+  public set parent(value: string) {
+    this._parent = value;
+  }
+  public resetParent() {
+    this._parent = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get parentInput() {
+    return this._parent;
   }
 
   // provider_config - computed: false, optional: true, required: false
@@ -475,6 +506,7 @@ export class DataDatabricksWorkspaceIamWorkspaceAssignmentsV2 extends cdktn.Terr
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       page_size: cdktn.numberToTerraform(this._pageSize),
+      parent: cdktn.stringToTerraform(this._parent),
       provider_config: dataDatabricksWorkspaceIamWorkspaceAssignmentsV2ProviderConfigToTerraform(this._providerConfig.internalValue),
     };
   }
@@ -486,6 +518,12 @@ export class DataDatabricksWorkspaceIamWorkspaceAssignmentsV2 extends cdktn.Terr
         isBlock: false,
         type: "simple",
         storageClassType: "number",
+      },
+      parent: {
+        value: cdktn.stringToHclTerraform(this._parent),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
       },
       provider_config: {
         value: dataDatabricksWorkspaceIamWorkspaceAssignmentsV2ProviderConfigToHclTerraform(this._providerConfig.internalValue),

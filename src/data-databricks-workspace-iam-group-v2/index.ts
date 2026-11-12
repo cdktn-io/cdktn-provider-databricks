@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/workspace_iam_group_v2
+// https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/data-sources/workspace_iam_group_v2
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,17 +13,17 @@ import * as cdktn from 'cdktn';
 
 export interface DataDatabricksWorkspaceIamGroupV2Config extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/workspace_iam_group_v2#group_id DataDatabricksWorkspaceIamGroupV2#group_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/data-sources/workspace_iam_group_v2#name DataDatabricksWorkspaceIamGroupV2#name}
   */
-  readonly groupId: string;
+  readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/workspace_iam_group_v2#provider_config DataDatabricksWorkspaceIamGroupV2#provider_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/data-sources/workspace_iam_group_v2#provider_config DataDatabricksWorkspaceIamGroupV2#provider_config}
   */
   readonly providerConfig?: DataDatabricksWorkspaceIamGroupV2ProviderConfig;
 }
 export interface DataDatabricksWorkspaceIamGroupV2ProviderConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/workspace_iam_group_v2#workspace_id DataDatabricksWorkspaceIamGroupV2#workspace_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/data-sources/workspace_iam_group_v2#workspace_id DataDatabricksWorkspaceIamGroupV2#workspace_id}
   */
   readonly workspaceId?: string;
 }
@@ -117,7 +117,7 @@ export class DataDatabricksWorkspaceIamGroupV2ProviderConfigOutputReference exte
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/workspace_iam_group_v2 databricks_workspace_iam_group_v2}
+* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/data-sources/workspace_iam_group_v2 databricks_workspace_iam_group_v2}
 */
 export class DataDatabricksWorkspaceIamGroupV2 extends cdktn.TerraformDataSource {
 
@@ -133,7 +133,7 @@ export class DataDatabricksWorkspaceIamGroupV2 extends cdktn.TerraformDataSource
   * Generates CDKTN code for importing a DataDatabricksWorkspaceIamGroupV2 resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataDatabricksWorkspaceIamGroupV2 to import
-  * @param importFromId The id of the existing DataDatabricksWorkspaceIamGroupV2 that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/workspace_iam_group_v2#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataDatabricksWorkspaceIamGroupV2 that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/data-sources/workspace_iam_group_v2#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataDatabricksWorkspaceIamGroupV2 to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -145,7 +145,7 @@ export class DataDatabricksWorkspaceIamGroupV2 extends cdktn.TerraformDataSource
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/workspace_iam_group_v2 databricks_workspace_iam_group_v2} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/data-sources/workspace_iam_group_v2 databricks_workspace_iam_group_v2} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -156,7 +156,7 @@ export class DataDatabricksWorkspaceIamGroupV2 extends cdktn.TerraformDataSource
       terraformResourceType: 'databricks_workspace_iam_group_v2',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '1.140.0',
+        providerVersion: '1.142.0',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,
@@ -167,7 +167,7 @@ export class DataDatabricksWorkspaceIamGroupV2 extends cdktn.TerraformDataSource
       connection: config.connection,
       forEach: config.forEach
     });
-    this._groupId = config.groupId;
+    this._name = config.name;
     this._providerConfig.internalValue = config.providerConfig;
   }
 
@@ -185,22 +185,32 @@ export class DataDatabricksWorkspaceIamGroupV2 extends cdktn.TerraformDataSource
     return this.getStringAttribute('external_id');
   }
 
-  // group_id - computed: false, optional: false, required: true
-  private _groupId?: string; 
+  // group_id - computed: true, optional: false, required: false
   public get groupId() {
     return this.getStringAttribute('group_id');
-  }
-  public set groupId(value: string) {
-    this._groupId = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get groupIdInput() {
-    return this._groupId;
   }
 
   // group_name - computed: true, optional: false, required: false
   public get groupName() {
     return this.getStringAttribute('group_name');
+  }
+
+  // name - computed: false, optional: false, required: true
+  private _name?: string; 
+  public get name() {
+    return this.getStringAttribute('name');
+  }
+  public set name(value: string) {
+    this._name = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nameInput() {
+    return this._name;
+  }
+
+  // parent - computed: true, optional: false, required: false
+  public get parent() {
+    return this.getStringAttribute('parent');
   }
 
   // provider_config - computed: false, optional: true, required: false
@@ -225,15 +235,15 @@ export class DataDatabricksWorkspaceIamGroupV2 extends cdktn.TerraformDataSource
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      group_id: cdktn.stringToTerraform(this._groupId),
+      name: cdktn.stringToTerraform(this._name),
       provider_config: dataDatabricksWorkspaceIamGroupV2ProviderConfigToTerraform(this._providerConfig.internalValue),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
-      group_id: {
-        value: cdktn.stringToHclTerraform(this._groupId),
+      name: {
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

@@ -4,7 +4,7 @@
 
 ### AccountIamDirectGroupMemberV2 <a name="AccountIamDirectGroupMemberV2" id="@cdktn/provider-databricks.accountIamDirectGroupMemberV2.AccountIamDirectGroupMemberV2"></a>
 
-Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/account_iam_direct_group_member_v2 databricks_account_iam_direct_group_member_v2}.
+Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/account_iam_direct_group_member_v2 databricks_account_iam_direct_group_member_v2}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.accountIamDirectGroupMemberV2.AccountIamDirectGroupMemberV2.Initializer"></a>
 
@@ -21,6 +21,7 @@ accountIamDirectGroupMemberV2.AccountIamDirectGroupMemberV2(
   lifecycle: TerraformResourceLifecycle = None,
   provider: TerraformProvider = None,
   provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner] = None,
+  parent: str,
   principal_id: typing.Union[int, float],
   group_id: typing.Union[int, float] = None
 )
@@ -37,8 +38,9 @@ accountIamDirectGroupMemberV2.AccountIamDirectGroupMemberV2(
 | <code><a href="#@cdktn/provider-databricks.accountIamDirectGroupMemberV2.AccountIamDirectGroupMemberV2.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.accountIamDirectGroupMemberV2.AccountIamDirectGroupMemberV2.Initializer.parameter.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.accountIamDirectGroupMemberV2.AccountIamDirectGroupMemberV2.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-databricks.accountIamDirectGroupMemberV2.AccountIamDirectGroupMemberV2.Initializer.parameter.principalId">principal_id</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/account_iam_direct_group_member_v2#principal_id AccountIamDirectGroupMemberV2#principal_id}. |
-| <code><a href="#@cdktn/provider-databricks.accountIamDirectGroupMemberV2.AccountIamDirectGroupMemberV2.Initializer.parameter.groupId">group_id</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/account_iam_direct_group_member_v2#group_id AccountIamDirectGroupMemberV2#group_id}. |
+| <code><a href="#@cdktn/provider-databricks.accountIamDirectGroupMemberV2.AccountIamDirectGroupMemberV2.Initializer.parameter.parent">parent</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/account_iam_direct_group_member_v2#parent AccountIamDirectGroupMemberV2#parent}. |
+| <code><a href="#@cdktn/provider-databricks.accountIamDirectGroupMemberV2.AccountIamDirectGroupMemberV2.Initializer.parameter.principalId">principal_id</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/account_iam_direct_group_member_v2#principal_id AccountIamDirectGroupMemberV2#principal_id}. |
+| <code><a href="#@cdktn/provider-databricks.accountIamDirectGroupMemberV2.AccountIamDirectGroupMemberV2.Initializer.parameter.groupId">group_id</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/account_iam_direct_group_member_v2#group_id AccountIamDirectGroupMemberV2#group_id}. |
 
 ---
 
@@ -102,11 +104,19 @@ Must be unique amongst siblings in the same scope
 
 ---
 
+##### `parent`<sup>Required</sup> <a name="parent" id="@cdktn/provider-databricks.accountIamDirectGroupMemberV2.AccountIamDirectGroupMemberV2.Initializer.parameter.parent"></a>
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/account_iam_direct_group_member_v2#parent AccountIamDirectGroupMemberV2#parent}.
+
+---
+
 ##### `principal_id`<sup>Required</sup> <a name="principal_id" id="@cdktn/provider-databricks.accountIamDirectGroupMemberV2.AccountIamDirectGroupMemberV2.Initializer.parameter.principalId"></a>
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/account_iam_direct_group_member_v2#principal_id AccountIamDirectGroupMemberV2#principal_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/account_iam_direct_group_member_v2#principal_id AccountIamDirectGroupMemberV2#principal_id}.
 
 ---
 
@@ -114,7 +124,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/account_iam_direct_group_member_v2#group_id AccountIamDirectGroupMemberV2#group_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/account_iam_direct_group_member_v2#group_id AccountIamDirectGroupMemberV2#group_id}.
 
 ---
 
@@ -618,7 +628,7 @@ The construct id used in the generated config for the AccountIamDirectGroupMembe
 
 The id of the existing AccountIamDirectGroupMemberV2 that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/account_iam_direct_group_member_v2#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/account_iam_direct_group_member_v2#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -651,10 +661,13 @@ Refer to the {@link https://registry.terraform.io/providers/databricks/databrick
 | <code><a href="#@cdktn/provider-databricks.accountIamDirectGroupMemberV2.AccountIamDirectGroupMemberV2.property.displayName">display_name</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.accountIamDirectGroupMemberV2.AccountIamDirectGroupMemberV2.property.externalId">external_id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.accountIamDirectGroupMemberV2.AccountIamDirectGroupMemberV2.property.membershipSource">membership_source</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountIamDirectGroupMemberV2.AccountIamDirectGroupMemberV2.property.name">name</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.accountIamDirectGroupMemberV2.AccountIamDirectGroupMemberV2.property.principalType">principal_type</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.accountIamDirectGroupMemberV2.AccountIamDirectGroupMemberV2.property.groupIdInput">group_id_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountIamDirectGroupMemberV2.AccountIamDirectGroupMemberV2.property.parentInput">parent_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.accountIamDirectGroupMemberV2.AccountIamDirectGroupMemberV2.property.principalIdInput">principal_id_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.accountIamDirectGroupMemberV2.AccountIamDirectGroupMemberV2.property.groupId">group_id</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountIamDirectGroupMemberV2.AccountIamDirectGroupMemberV2.property.parent">parent</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.accountIamDirectGroupMemberV2.AccountIamDirectGroupMemberV2.property.principalId">principal_id</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 
 ---
@@ -831,6 +844,16 @@ membership_source: str
 
 ---
 
+##### `name`<sup>Required</sup> <a name="name" id="@cdktn/provider-databricks.accountIamDirectGroupMemberV2.AccountIamDirectGroupMemberV2.property.name"></a>
+
+```python
+name: str
+```
+
+- *Type:* str
+
+---
+
 ##### `principal_type`<sup>Required</sup> <a name="principal_type" id="@cdktn/provider-databricks.accountIamDirectGroupMemberV2.AccountIamDirectGroupMemberV2.property.principalType"></a>
 
 ```python
@@ -851,6 +874,16 @@ group_id_input: typing.Union[int, float]
 
 ---
 
+##### `parent_input`<sup>Optional</sup> <a name="parent_input" id="@cdktn/provider-databricks.accountIamDirectGroupMemberV2.AccountIamDirectGroupMemberV2.property.parentInput"></a>
+
+```python
+parent_input: str
+```
+
+- *Type:* str
+
+---
+
 ##### `principal_id_input`<sup>Optional</sup> <a name="principal_id_input" id="@cdktn/provider-databricks.accountIamDirectGroupMemberV2.AccountIamDirectGroupMemberV2.property.principalIdInput"></a>
 
 ```python
@@ -868,6 +901,16 @@ group_id: typing.Union[int, float]
 ```
 
 - *Type:* typing.Union[int, float]
+
+---
+
+##### `parent`<sup>Required</sup> <a name="parent" id="@cdktn/provider-databricks.accountIamDirectGroupMemberV2.AccountIamDirectGroupMemberV2.property.parent"></a>
+
+```python
+parent: str
+```
+
+- *Type:* str
 
 ---
 
@@ -916,6 +959,7 @@ accountIamDirectGroupMemberV2.AccountIamDirectGroupMemberV2Config(
   lifecycle: TerraformResourceLifecycle = None,
   provider: TerraformProvider = None,
   provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner] = None,
+  parent: str,
   principal_id: typing.Union[int, float],
   group_id: typing.Union[int, float] = None
 )
@@ -932,8 +976,9 @@ accountIamDirectGroupMemberV2.AccountIamDirectGroupMemberV2Config(
 | <code><a href="#@cdktn/provider-databricks.accountIamDirectGroupMemberV2.AccountIamDirectGroupMemberV2Config.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.accountIamDirectGroupMemberV2.AccountIamDirectGroupMemberV2Config.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.accountIamDirectGroupMemberV2.AccountIamDirectGroupMemberV2Config.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-databricks.accountIamDirectGroupMemberV2.AccountIamDirectGroupMemberV2Config.property.principalId">principal_id</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/account_iam_direct_group_member_v2#principal_id AccountIamDirectGroupMemberV2#principal_id}. |
-| <code><a href="#@cdktn/provider-databricks.accountIamDirectGroupMemberV2.AccountIamDirectGroupMemberV2Config.property.groupId">group_id</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/account_iam_direct_group_member_v2#group_id AccountIamDirectGroupMemberV2#group_id}. |
+| <code><a href="#@cdktn/provider-databricks.accountIamDirectGroupMemberV2.AccountIamDirectGroupMemberV2Config.property.parent">parent</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/account_iam_direct_group_member_v2#parent AccountIamDirectGroupMemberV2#parent}. |
+| <code><a href="#@cdktn/provider-databricks.accountIamDirectGroupMemberV2.AccountIamDirectGroupMemberV2Config.property.principalId">principal_id</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/account_iam_direct_group_member_v2#principal_id AccountIamDirectGroupMemberV2#principal_id}. |
+| <code><a href="#@cdktn/provider-databricks.accountIamDirectGroupMemberV2.AccountIamDirectGroupMemberV2Config.property.groupId">group_id</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/account_iam_direct_group_member_v2#group_id AccountIamDirectGroupMemberV2#group_id}. |
 
 ---
 
@@ -1007,6 +1052,18 @@ provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecPro
 
 ---
 
+##### `parent`<sup>Required</sup> <a name="parent" id="@cdktn/provider-databricks.accountIamDirectGroupMemberV2.AccountIamDirectGroupMemberV2Config.property.parent"></a>
+
+```python
+parent: str
+```
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/account_iam_direct_group_member_v2#parent AccountIamDirectGroupMemberV2#parent}.
+
+---
+
 ##### `principal_id`<sup>Required</sup> <a name="principal_id" id="@cdktn/provider-databricks.accountIamDirectGroupMemberV2.AccountIamDirectGroupMemberV2Config.property.principalId"></a>
 
 ```python
@@ -1015,7 +1072,7 @@ principal_id: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/account_iam_direct_group_member_v2#principal_id AccountIamDirectGroupMemberV2#principal_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/account_iam_direct_group_member_v2#principal_id AccountIamDirectGroupMemberV2#principal_id}.
 
 ---
 
@@ -1027,7 +1084,7 @@ group_id: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/account_iam_direct_group_member_v2#group_id AccountIamDirectGroupMemberV2#group_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/account_iam_direct_group_member_v2#group_id AccountIamDirectGroupMemberV2#group_id}.
 
 ---
 

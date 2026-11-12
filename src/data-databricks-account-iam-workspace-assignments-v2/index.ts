@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/account_iam_workspace_assignments_v2
+// https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/data-sources/account_iam_workspace_assignments_v2
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,23 +13,19 @@ import * as cdktn from 'cdktn';
 
 export interface DataDatabricksAccountIamWorkspaceAssignmentsV2Config extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/account_iam_workspace_assignments_v2#page_size DataDatabricksAccountIamWorkspaceAssignmentsV2#page_size}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/data-sources/account_iam_workspace_assignments_v2#page_size DataDatabricksAccountIamWorkspaceAssignmentsV2#page_size}
   */
   readonly pageSize?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/account_iam_workspace_assignments_v2#workspace_id DataDatabricksAccountIamWorkspaceAssignmentsV2#workspace_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/data-sources/account_iam_workspace_assignments_v2#parent DataDatabricksAccountIamWorkspaceAssignmentsV2#parent}
   */
-  readonly workspaceId: number;
+  readonly parent: string;
 }
 export interface DataDatabricksAccountIamWorkspaceAssignmentsV2WorkspaceAssignments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/account_iam_workspace_assignments_v2#principal_id DataDatabricksAccountIamWorkspaceAssignmentsV2#principal_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/data-sources/account_iam_workspace_assignments_v2#name DataDatabricksAccountIamWorkspaceAssignmentsV2#name}
   */
-  readonly principalId: number;
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/account_iam_workspace_assignments_v2#workspace_id DataDatabricksAccountIamWorkspaceAssignmentsV2#workspace_id}
-  */
-  readonly workspaceId: number;
+  readonly name: string;
 }
 
 export function dataDatabricksAccountIamWorkspaceAssignmentsV2WorkspaceAssignmentsToTerraform(struct?: DataDatabricksAccountIamWorkspaceAssignmentsV2WorkspaceAssignments): any {
@@ -38,8 +34,7 @@ export function dataDatabricksAccountIamWorkspaceAssignmentsV2WorkspaceAssignmen
     throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
-    principal_id: cdktn.numberToTerraform(struct!.principalId),
-    workspace_id: cdktn.numberToTerraform(struct!.workspaceId),
+    name: cdktn.stringToTerraform(struct!.name),
   }
 }
 
@@ -50,17 +45,11 @@ export function dataDatabricksAccountIamWorkspaceAssignmentsV2WorkspaceAssignmen
     throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
-    principal_id: {
-      value: cdktn.numberToHclTerraform(struct!.principalId),
+    name: {
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
-      storageClassType: "number",
-    },
-    workspace_id: {
-      value: cdktn.numberToHclTerraform(struct!.workspaceId),
-      isBlock: false,
-      type: "simple",
-      storageClassType: "number",
+      storageClassType: "string",
     },
   };
 
@@ -84,13 +73,9 @@ export class DataDatabricksAccountIamWorkspaceAssignmentsV2WorkspaceAssignmentsO
   public get internalValue(): DataDatabricksAccountIamWorkspaceAssignmentsV2WorkspaceAssignments | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._principalId !== undefined) {
+    if (this._name !== undefined) {
       hasAnyValues = true;
-      internalValueResult.principalId = this._principalId;
-    }
-    if (this._workspaceId !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.workspaceId = this._workspaceId;
+      internalValueResult.name = this._name;
     }
     return hasAnyValues ? internalValueResult : undefined;
   }
@@ -98,13 +83,11 @@ export class DataDatabricksAccountIamWorkspaceAssignmentsV2WorkspaceAssignmentsO
   public set internalValue(value: DataDatabricksAccountIamWorkspaceAssignmentsV2WorkspaceAssignments | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
-      this._principalId = undefined;
-      this._workspaceId = undefined;
+      this._name = undefined;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
-      this._principalId = value.principalId;
-      this._workspaceId = value.workspaceId;
+      this._name = value.name;
     }
   }
 
@@ -123,17 +106,27 @@ export class DataDatabricksAccountIamWorkspaceAssignmentsV2WorkspaceAssignmentsO
     return cdktn.Fn.tolist(this.getListAttribute('entitlements'));
   }
 
-  // principal_id - computed: true, optional: false, required: true
-  private _principalId?: number; 
-  public get principalId() {
-    return this.getNumberAttribute('principal_id');
+  // name - computed: true, optional: false, required: true
+  private _name?: string; 
+  public get name() {
+    return this.getStringAttribute('name');
   }
-  public set principalId(value: number) {
-    this._principalId = value;
+  public set name(value: string) {
+    this._name = value;
   }
   // Temporarily expose input value. Use with caution.
-  public get principalIdInput() {
-    return this._principalId;
+  public get nameInput() {
+    return this._name;
+  }
+
+  // parent - computed: true, optional: false, required: false
+  public get parent() {
+    return this.getStringAttribute('parent');
+  }
+
+  // principal_id - computed: true, optional: false, required: false
+  public get principalId() {
+    return this.getNumberAttribute('principal_id');
   }
 
   // principal_type - computed: true, optional: false, required: false
@@ -141,17 +134,9 @@ export class DataDatabricksAccountIamWorkspaceAssignmentsV2WorkspaceAssignmentsO
     return this.getStringAttribute('principal_type');
   }
 
-  // workspace_id - computed: true, optional: false, required: true
-  private _workspaceId?: number; 
+  // workspace_id - computed: true, optional: false, required: false
   public get workspaceId() {
     return this.getNumberAttribute('workspace_id');
-  }
-  public set workspaceId(value: number) {
-    this._workspaceId = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get workspaceIdInput() {
-    return this._workspaceId;
   }
 }
 
@@ -176,7 +161,7 @@ export class DataDatabricksAccountIamWorkspaceAssignmentsV2WorkspaceAssignmentsL
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/account_iam_workspace_assignments_v2 databricks_account_iam_workspace_assignments_v2}
+* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/data-sources/account_iam_workspace_assignments_v2 databricks_account_iam_workspace_assignments_v2}
 */
 export class DataDatabricksAccountIamWorkspaceAssignmentsV2 extends cdktn.TerraformDataSource {
 
@@ -192,7 +177,7 @@ export class DataDatabricksAccountIamWorkspaceAssignmentsV2 extends cdktn.Terraf
   * Generates CDKTN code for importing a DataDatabricksAccountIamWorkspaceAssignmentsV2 resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataDatabricksAccountIamWorkspaceAssignmentsV2 to import
-  * @param importFromId The id of the existing DataDatabricksAccountIamWorkspaceAssignmentsV2 that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/account_iam_workspace_assignments_v2#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataDatabricksAccountIamWorkspaceAssignmentsV2 that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/data-sources/account_iam_workspace_assignments_v2#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataDatabricksAccountIamWorkspaceAssignmentsV2 to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -204,7 +189,7 @@ export class DataDatabricksAccountIamWorkspaceAssignmentsV2 extends cdktn.Terraf
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/account_iam_workspace_assignments_v2 databricks_account_iam_workspace_assignments_v2} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/data-sources/account_iam_workspace_assignments_v2 databricks_account_iam_workspace_assignments_v2} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -215,7 +200,7 @@ export class DataDatabricksAccountIamWorkspaceAssignmentsV2 extends cdktn.Terraf
       terraformResourceType: 'databricks_account_iam_workspace_assignments_v2',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '1.140.0',
+        providerVersion: '1.142.0',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,
@@ -227,7 +212,7 @@ export class DataDatabricksAccountIamWorkspaceAssignmentsV2 extends cdktn.Terraf
       forEach: config.forEach
     });
     this._pageSize = config.pageSize;
-    this._workspaceId = config.workspaceId;
+    this._parent = config.parent;
   }
 
   // ==========
@@ -250,23 +235,23 @@ export class DataDatabricksAccountIamWorkspaceAssignmentsV2 extends cdktn.Terraf
     return this._pageSize;
   }
 
+  // parent - computed: false, optional: false, required: true
+  private _parent?: string; 
+  public get parent() {
+    return this.getStringAttribute('parent');
+  }
+  public set parent(value: string) {
+    this._parent = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get parentInput() {
+    return this._parent;
+  }
+
   // workspace_assignments - computed: true, optional: false, required: false
   private _workspaceAssignments = new DataDatabricksAccountIamWorkspaceAssignmentsV2WorkspaceAssignmentsList(this, "workspace_assignments", false);
   public get workspaceAssignments() {
     return this._workspaceAssignments;
-  }
-
-  // workspace_id - computed: false, optional: false, required: true
-  private _workspaceId?: number; 
-  public get workspaceId() {
-    return this.getNumberAttribute('workspace_id');
-  }
-  public set workspaceId(value: number) {
-    this._workspaceId = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get workspaceIdInput() {
-    return this._workspaceId;
   }
 
   // =========
@@ -276,7 +261,7 @@ export class DataDatabricksAccountIamWorkspaceAssignmentsV2 extends cdktn.Terraf
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       page_size: cdktn.numberToTerraform(this._pageSize),
-      workspace_id: cdktn.numberToTerraform(this._workspaceId),
+      parent: cdktn.stringToTerraform(this._parent),
     };
   }
 
@@ -288,11 +273,11 @@ export class DataDatabricksAccountIamWorkspaceAssignmentsV2 extends cdktn.Terraf
         type: "simple",
         storageClassType: "number",
       },
-      workspace_id: {
-        value: cdktn.numberToHclTerraform(this._workspaceId),
+      parent: {
+        value: cdktn.stringToHclTerraform(this._parent),
         isBlock: false,
         type: "simple",
-        storageClassType: "number",
+        storageClassType: "string",
       },
     };
 
